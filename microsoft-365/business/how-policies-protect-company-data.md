@@ -1,0 +1,44 @@
+---
+title: Comment les stratégies dans Microsoft 365 Entreprise protègent les données d'entreprise
+ms.author: sirkkuw
+author: sirkkuw
+manager: scotv
+ms.audience: Admin
+ms.topic: overview
+f1_keywords:
+- O365E_ESPoliciesLM
+- ESPoliciesLM
+- BCS365_ESPoliciesLM
+ms.service: o365-administration
+localization_priority: Normal
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
+description: Découvrez les stratégies qui ciblent des appareils spécifiques et les groupes de sécurité pour protéger les données d’entreprise sur les périphériques personnels de l’utilisateur.
+ms.openlocfilehash: e52026ccc96e032bbccb7334992a447e14b2cc05
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26866867"
+---
+# <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>Comment les stratégies dans Microsoft 365 Entreprise protègent les données d'entreprise
+
+[] Les stratégies que vous créez sont spécifiques au type d'appareil et peuvent être appliquées à des groupes d'utilisateurs spécifiques. Cela signifie que vous pouvez créer une stratégie qui s'applique à vos cadres et une autre qui s'applique à tous les autres utilisateurs.
+  
+Pour les appareils Android et iOS, vous pouvez ajouter ou modifier des stratégies d'application qui protègent les applications Office et les fichiers professionnels utilisés par les applications Office. Nous sommes en mesure de contrôler davantage les appareils Windows 10, afin que les stratégies d'application puissent inclure des paramètres supplémentaires, comme le chiffrement et la protection des emplacements réseau et cloud. Vous pouvez également créer des stratégies d'appareil pour les appareils Windows 10 qui appliquent des paramètres comme la protection contre les virus et les mises à jour automatiques. Nous vous recommandons de conserver les stratégies créées pendant l'installation, mais si vous voulez ajuster vos stratégies ou en ajouter d'autres, consultez les articles suivants :
+  
+[Définir des configurations d'application pour les appareils Android ou iOS](app-protection-settings-for-android-and-ios.md)
+  
+[Définir des configurations d'application pour les PC Windows 10](protection-settings-for-windows-10-pcs.md)
+  
+[Définir des paramètres de protection des applications pour les appareils Windows 10](protection-settings-for-windows-10-devices.md)
+  
+
