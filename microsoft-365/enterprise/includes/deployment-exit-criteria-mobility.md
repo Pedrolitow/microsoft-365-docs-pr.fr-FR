@@ -1,0 +1,5 @@
+- Intune est configuré, y compris la création des utilisateurs et des groupes Azure AD, pour appliquer les règles de votre organisation à vos appareils.
+- Vous avez inscrit des appareils dans Intune pour qu’ils reçoivent les stratégies que vous créez.
+- Les applications sont ajoutées aux appareils pour permettre à vos utilisateurs d’accéder aux services cloud Microsoft 365 de votre organisation, comme Exchange Online et SharePoint Online.
+- Les fonctionnalités et les paramètres sont configurés et appliqués à vos appareils à l’aide des utilisateurs et des groupes Azure AD créés. Parmi ces fonctionnalités et paramètres peuvent figurer l’activation de l’antivirus et la limitation de certaines applications.
+- Des stratégies de conformité sont implémentées pour exiger un pare-feu ou une longueur de mot de passe sur un appareil. Si des appareils ne sont pas conformes, l’accès conditionnel bloque l’accès aux données de votre organisation.
