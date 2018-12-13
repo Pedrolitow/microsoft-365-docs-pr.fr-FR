@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
 ms.openlocfilehash: 748ccaf8601d9e9564d176f2368e3cc71f926208
-ms.sourcegitcommit: fec2c756121006069dc3e5b8dbd6c4abe7a3c63c
+ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27214432"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27241977"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
