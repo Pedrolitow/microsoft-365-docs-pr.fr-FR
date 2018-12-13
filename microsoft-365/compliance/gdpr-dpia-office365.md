@@ -3,18 +3,18 @@ title: Conseils pour les contrôleurs de données à l’aide d’Office 365
 description: Ce document fournit des contrôleurs de données avec des informations sur les Services professionnels qui vous aideront à déterminer si une DPIA est nécessaire et que des informations à inclure.
 keywords: Documentation Microsoft 365 DPIA, Office 365, PIBR
 author: BrendaCarter
-ms.localizationpriority: high
+ms.localizationpriority: Priority
 audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
 manager: laurawi
 ms.collection: GDPR
-ms.openlocfilehash: 4b96a80d0817a180d9a1400fa347d5345ecdec74
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9ef2d1a91c00cbaa52282c27cf047e380dbf8249
+ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 12/12/2018
 ms.locfileid: "26867466"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>Protection des données Impact évaluations : Conseils pour les contrôleurs de données à l’aide de Microsoft Office 365 
