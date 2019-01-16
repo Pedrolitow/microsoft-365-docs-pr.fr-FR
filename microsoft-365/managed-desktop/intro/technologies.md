@@ -3,14 +3,14 @@ title: Technologies de bureau Microsoft
 description: Cette rubrique répertorie les technologies et les applications utilisées dans l’ordinateur de bureau Microsoft.
 keywords: Service Microsoft de bureau, Microsoft 365, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: da0268c6b0eddbd44cf62de2a95b963a443c3278
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4b26ec88e1f4ca95fee6f7c4c927fc06cab32135
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867044"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies de bureau Microsoft
@@ -38,7 +38,7 @@ Skype pour Business Cloud Online PBX | Cette fonctionnalité est disponible via 
  |
  --- | ---
 Protection des informations d’identification |  Ordinateur de bureau Microsoft sera fournissent des instructions et gérer les aspects du nuage de cette fonctionnalité
-Module de protection du périphérique (contrôle d’Application Windows Defender)   | Ordinateur de bureau Microsoft créera la stratégie. Client gérer les signatures
+Module de protection du périphérique (contrôle d’Application Windows Defender) | Ordinateur de bureau Microsoft créera la stratégie. Client gérer les signatures
 Gestion AppLocker |  Ordinateur de bureau Microsoft créera la stratégie. Client gérer les signatures
 Application Virtualization (App-V) |    Ordinateur de bureau Microsoft ne gère pas ce type de déploiement tel qu’il n’est pas pris en charge sur Intune.
 Virtualisation d’expérience utilisateur (UE-V) | Il n’est pas utilisé avec les appareils Microsoft de bureau géré

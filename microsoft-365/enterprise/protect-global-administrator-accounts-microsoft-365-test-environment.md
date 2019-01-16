@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Suivez ces étapes pour protéger les comptes d’administrateur global dans votre environnement de test Microsoft 365 pour entreprises.
-ms.openlocfilehash: 233e2178b060df4950c340e034d5f51216fac8fb
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4d444e217c5a232811701f6519c2eb3ebe86df70
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866862"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Protéger les comptes d’administrateur global dans votre environnement de test Microsoft 365 pour entreprises
@@ -29,7 +29,7 @@ Il existe deux phases à protéger les comptes d’administrateur global dans vo
 1.  Créer l’environnement de test Microsoft 365 pour entreprises.
 2.  Protéger votre compte d’administrateur global dédié.
 
-![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
@@ -48,7 +48,7 @@ Si vous souhaitez tester la protection des comptes d’administrateur global dan
 
 Tout d’abord, créez une stratégie de sécurité d’application Office 365 dans le nuage pour surveiller l’activité de compte d’administrateur global et envoyer des alertes à l’adresse de messagerie de votre compte d’administrateur global. 
 
-1. Connectez-vous au portail Office 365 à [http://portal.office.com](http://portal.office.com) à l’aide de votre compte d’administrateur global.
+1. Connectez-vous au portail Office au [http://portal.office.com](http://portal.office.com) à l’aide de votre compte d’administrateur global.
 2. Cliquez sur la vignette de **l’administrateur** . Dans l’onglet **Centre d’administration d’Office** , cliquez sur **centres d’administration > sécurité et conformité**.
 3. Dans le volet de navigation de gauche, cliquez sur **Alertes > Gérer les alertes avancées**.
 4. Sur la page **Gérer les alertes avancées**, cliquez sur **Activer Sécurité des applications cloud Office 365**, puis sur **Atteindre Sécurité des applications cloud Office 365**.

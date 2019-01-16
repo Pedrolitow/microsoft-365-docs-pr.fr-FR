@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité qui sont fournis avec Microsoft 365 Business.
-ms.openlocfilehash: bfddb419dbe5db441741a73ecb49e3d52649e382
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 17bcc57d57e837f18b05f66cfd54185324f3cad8
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867151"
 ---
 # <a name="microsoft-365-business-security-features"></a>Fonctionnalités de sécurité Microsoft 365 entreprise
@@ -69,7 +69,7 @@ Les fonctionnalités avancées dans Microsoft 365 Business sont disponibles pour
     
     Vous pouvez configurer DLP pour détecter automatiquement les informations sensibles, telles que les numéros de carte de crédit, les numéros de sécurité sociale, etc. afin d’empêcher leur par inadvertance dans partage en dehors de votre société.
     
-- **[L’archivage Exchange Online](https://products.office.com/exchange/microsoft-exchange-online-archiving-email)**
+- **[Archivage Exchange Online](https://products.office.com/exchange/microsoft-exchange-online-archiving-email)**
     
     Licence d’archivage Exchange Online permet de messages à archiver facilement avec la sauvegarde des données en continu. Il stocke tous les messages électroniques d’un utilisateur, y compris les éléments supprimés, au cas où ils sont nécessaires ultérieurement pour la découverte ou de restauration. En outre, vous pouvez utiliser des stratégies de rétention différentes pour conserver les données de messagerie pour le blocage pour litige, eDiscovery, ou pour répondre aux exigences de conformité.
     
@@ -130,9 +130,7 @@ La possibilité d’appliquer les restrictions suivantes lors de l’envoi de me
 
 Pour vérifier que le point d’installation administrative est activée :
 
-1. Connectez-vous à un [Centre d’administration Azure Active Directory](https://portal.azure.com/).
-
-    Vous pouvez également à l’aide d’en recherchant le **Centre d’administration** \> **Azure Active Directory** dans la centre d’administration de navigation de gauche.
+1. Connectez-vous au [portail Azure](https://portal.azure.com/).
 
 2. Sélectionnez **tous les services** et le type de *Protection des informations Azure* dans la **Zone de recherche**.
 
@@ -144,7 +142,7 @@ Pour vérifier que le point d’installation administrative est activée :
 
 Pour afficher et modifier, existant étiquettes :
 
-1. Azure la Protection des informations du tableau de bord, sélectionnez **Classifications** \> ** étiquettes. <br/>![Étiquettes standard pour la Protection des informations Azure.](media/AIPLabels.png)
+1. Azure la Protection des informations du tableau de bord, sélectionnez **Classifications** \> **étiquettes**. <br/>![Étiquettes standard pour la Protection des informations Azure.](media/AIPLabels.png)
 
 2. Vous pouvez choisir une étiquette pour afficher les options, vous pouvez modifier le nom complet, les couleurs, etc..
  
@@ -159,6 +157,16 @@ Pour installer manuellement le client du point d’installation administrative 
 2. Vous pouvez vérifier que l’installation a fonctionné en affichant un document Word et en veillant à ce que l’option **protéger** est disponible sous l’onglet **accueil** . <br/>![Protection, onglet liste déroulante dans un document Word.](media/Word_Protect.png)
 
 Pour plus d’informations, consultez [installation du client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
+
+## <a name="go-to-intune-admin-center"></a>Accédez au centre d’administration Intune
+
+1. Connectez-vous au [portail Azure](https://portal.azure.com/).
+
+2. Sélectionnez **tous les services** et tapez *Intune* dans la **Zone de recherche**.
+
+3. Une fois que les résultats s’affichent, cliquez sur Démarrer suivante pour **Microsoft Intune** à ajouter aux Favoris et facile à trouver ultérieurement.
+ 
+Vous pouvez utiliser Intune pour inscrire et gérer les périphériques de votre organisation. Pour plus d’informations, voir [fonctionnalités par la méthode d’inscription pour appareils Windows](https://docs.microsoft.com/intune/enrollment-method-capabs) et les [options de l’inscription de périphériques gérés par Intune](https://docs.microsoft.com/intune/enrollment-options).
     
 ## <a name="faq"></a>FAQ
 
@@ -174,15 +182,4 @@ Oui, ces fonctionnalités sont disponibles sur tous les marchés où Microsoft 3
     
     ![Dans la navigation de gauche dans le centre d’administration Microsoft 365, choisissez centres d’administration.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Choisissez **sécurité &amp; conformité** pour accéder à la sécurité &amp; centre de conformité. 
-    
- ### <a name="how-do-i-find-the-intune-admin-center"></a>Comment trouver le centre d’administration Intune ?
-  
-  
-1. [Se connecter à Microsoft 365 Business](https://portal.microsoft.com/) à l’aide de vos informations d’identification d’administration. 
-    
-2. Dans la navigation de gauche, recherchez le **Centre d’administration** et la développer. 
-    
-3. Choisissez **Intune** pour accéder au centre d’administration de Intune. 
-    
-
+3. Choisissez **sécurité &amp; conformité** pour accéder à la sécurité &amp; centre de conformité.

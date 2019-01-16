@@ -3,14 +3,14 @@ title: Ajouter des contacts d’administration dans le portail d’administratio
 description: Indiquez les personnes à contacter pour chaque zone de focus.
 keywords: Service Microsoft de bureau, Microsoft 365, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 65dd8709c469826e2696015c13823c58eb10e342
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 31984609681b6e3b1b6de9996eb8fb0fcf6f5624
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867018"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Ajouter des contacts d’administration dans le portail d’administration de bureau géré Microsoft
@@ -25,11 +25,11 @@ Portail d’administration de bureau géré Microsoft nécessite que personnes l
 - Administrateur de facturation
 - Administrateur de service prise en charge
 
-Pour plus d’informations sur ces rôles et leur affectation dans Azure AD, voir [autorisations de rôle administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+L’administrateur Global doit être celui pour inscrire le client de bureau Microsoft.  Les cinq rôles ont le même accès au sein du portail d’administration pour lancer et afficher les tâches.  Pour plus d’informations sur l’attribution de ces rôles dans Azure AD, voir [autorisations de rôle administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
 ## <a name="admin-contact-focus-areas"></a>Domaines contact d’administration
 
-Contacts d’administration doivent être la meilleure personne ou un groupe qui peut répondre aux questions et prendre des décisions de différents domaines. Ces domaines sont les suivantes :
+Contacts d’administration doivent être la meilleure personne ou un groupe qui peut répondre aux questions et prendre des décisions de différents domaines.  Opérations de bureau géré Microsoft contacte ces contacts d’administration pour toute question concernant les demandes de prise en charge par le client.  Ces contacts Admin reçoivent des notifications pour les mises à jour de demande de prise en charge et de nouveaux messages.  Ces domaines sont les suivantes :
 
 Zone de focus | Pour toute question concernant
 --- | ---

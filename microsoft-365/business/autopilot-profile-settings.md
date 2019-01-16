@@ -24,10 +24,10 @@ search.appverid:
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Profils de pilote vous aider à contrôler la façon dont Windows est installé sur les périphériques de l’utilisateur. Les profils contiennent par défaut et les paramètres facultatifs comme ignorer l’installation du Cortana.
 ms.openlocfilehash: 5440286f1363780c87ab60514584c4addfeea0b2
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866865"
 ---
 # <a name="about-autopilot-profile-settings"></a>À propos des paramètres du profil AutoPilot

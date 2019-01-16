@@ -3,80 +3,65 @@ title: Sécurité dans le bureau géré Microsoft
 description: ''
 keywords: Service Microsoft de bureau, Microsoft 365, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 0ea0bbc6a8055ee8459fadd85a6fa4ddac14bdb7
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 928d01e7386bedc500e984b9c2a3240c6229bb43
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867464"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sécurité dans le bureau géré Microsoft
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-À l’aide de nombreuses technologies Microsoft, nous pouvons prévoir que les périphériques de bureau Microsoft sont sécurisés et que l’équipe les opérations de sécurité de bureau Microsoft peut empêcher, détecter et répondre aux menaces. Produits de sécurité tiers, applications et services ne sont pas autorisés. Microsoft s’appliquera une planification standard de stratégie pour vous assurer de périphériques, identité, réseau, et les données d’entreprise sont sécurisées et protégées.
+Ordinateur de bureau Microsoft applique un ensemble de stratégies standard et utilise de nombreuses technologies Microsoft pour vous aider à des périphériques de bureau Microsoft sécurisés et données de l’entreprise stockées. Les domaines répertoriés ci-dessous sont détaillés plus loin :  
 
-Ces catégories de sécurité sont documentées dans les sections suivantes :
-
-- [Sécurité des données](#data-security) - comment nous assurer que vos données sont stockée et répond aux exigences de sécurité Azure positionnement
-- [Sécurité des périphériques](#device-security) – comment nous assurer que les périphériques de bureau Microsoft sont sécurisés
-- [Sécurité de l’identité](#identity-security) – comment nous assurer que les utilisateurs de l’espace de travail moderne ne sont pas compromis
-- [Sécurité du réseau](#network-security) – comment nous assurer un accès sécurisé aux ressources d’entreprise
-- [Sécurité de l’information](#information-security) – comment nous assurer que les données d’entreprise est sécurisé
-- [Accès de compte privilégié](#privileged-account-access) - comment nous restreindre l’accès
+- [Sécurité des données](#data-security) - types de données collectées par Microsoft de bureau et où il est stocké en toute sécurité
+- [Sécurité des périphériques](#device-security) – sécurité et protection sur les périphériques de bureau Microsoft
+- [Gestion des accès et identité](#identity-and-access-management) – gestion sécurisée utilisent des périphériques via les services d’identité Azure Active Directory
+- [Sécurité du réseau](#network-security) – informations de réseau privé virtuel et de bureau Microsoft recommandé de solution et les paramètres
+- [Sécurité des informations](#information-security) – facultatifs services disponibles pour renforcer la protection des informations sensibles 
 
 ## <a name="data-security"></a>Sécurité des données
 
-Données transmises à partir de votre client sont stockées dans des bases de données SQL Azure dans le client Microsoft hébergés aux États-Unis. Vos données sont stockées et répond aux exigences de sécurité Azure positionnement. 
+Les données collectées à partir de clients de client (ce qui permet les opérations et des services informatiques de bureau géré Microsoft) sont stockées dans des bases de données SQL Azure dans le client Microsoft hébergées dans les États-Unis d’Amérique.
 
-Pour plus d’informations, voir [sécurité Microsoft Azure](https://www.microsoft.com/TrustCenter/Security/azure-security).
+Pour plus d’informations, voir [sécurité Microsoft Azure](https://docs.microsoft.com/azure/security/azure-database-security-overview).
 
-Cette liste répertorie les types de données transmises entre Microsoft et votre client. 
+Vous trouverez ci-dessous les types de données transmises à partir de votre client :
 
-- À partir de Microsoft de votre client
-    - Noms de groupe
-    - Configuration de stratégie de sécurité
-    - Commandes de périphérique
-    - Comptes d’utilisateurs (msadmin, mstest, Microsoft gérées Desktop_soc_ro, Microsoft gérées Desktop_wdgsoc)
-    - Affectation de licence E5 à 4 utilisateurs
-    - Stratégies pour les sonneries de mise à jour de la mise à jour Windows
-    - À l’avenir, autres fonctionnalités seront développées pour permettre la validation d’autres types de contenu, y compris des applications, des stratégies et paramètres de la configuration.
-- À partir de votre client à Microsoft
-    - Données de mise à jour, l’utilisation et la fiabilité des périphériques
-    - Données de déploiement et la fiabilité d’application
-    - Données de déploiement de stratégie de sécurité et de mise à jour
-    - Utilisateurs affectés à des périphériques
+- Données de mise à jour, l’utilisation et la fiabilité des périphériques
+- Données de déploiement et la fiabilité d’application
+- Données de déploiement de stratégie de sécurité et de mise à jour
+- Utilisateurs affectés à des périphériques
 
 
 
 ## <a name="device-security"></a>Sécurité des périphériques
 
-Pour empêcher les failles de sécurité, il est important de vérifier que tous les périphériques de bureau Microsoft sont sain et sécurisé. Il est également important pour nous pouvons détecter les périphériques défectueux et réduire le risque dès que possible.
-
-Le tableau suivant répertorie les services fournis afin de périphériques de bureau Microsoft sont approuvés, sain et sécurisé.
+Ordinateur de bureau Microsoft s’assure que tous les périphériques gérés sont sécurisés et protégé et détecte les menaces dès que possible à l’aide des services suivants :
 
 Service | Description
 --- | ---
-Antivirus | Nous permet de garantir que :<br>-Windows Defender antivirus est installé et configuré<br>-Définitions Windows Defender antivirus sont à jour
-Chiffrement de Volume complet |    Windows BitLocker est la solution de chiffrement des données pour les périphériques de bureau Microsoft.<br><br>Une fois qu’une organisation est onboarded dans le service, périphériques seront chiffrés à l’aide de Windows BitLocker avec intégrés Trust Platform Module (TPM) pour interdire l’accès aux données locales lorsque le périphérique est en mode veille ou inactif. 
-Analyse |    Windows Defender avancée contre les menaces (Windows Defender DAV) est la solution pour tous les périphériques de bureau Microsoft de surveillance de menace de sécurité. Windows Defender DAV pour les entreprises à détecter, examiner et répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, voir [contre les menaces avancées Windows Defender.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
-Mises à jour logicielles |  Microsoft permet de garantir que les périphériques de bureau Microsoft sont toujours sécurisés avec la dernière mise à jour de sécurité, pour Windows et Office, à l’aide de Windows Update pour les entreprises.
-Récupération |  Données d’entreprise sont stockées sur OneDrive entreprise et peuvent être facilement restaurées pour les périphériques de bureau Microsoft. Pour plus d’informations, voir [OneDrive for Business.](https://support.office.com/article/Restore-a-previous-version-of-a-file-in-OneDrive-159cad6d-d76e-4981-88ef-de6e96c93893?ui=en-US&rs=en-US&ad=US) 
+Antivirus | Windows Defender antivirus est installé et configuré<br>Les définitions de Windows Defender AV sont à jour
+Chiffrement de Volume complet |    Windows BitLocker est la solution de chiffrement de volume pour les périphériques de bureau Microsoft.<br><br>Une fois qu’une organisation est onboarded dans le service, périphériques seront chiffrés à l’aide de Windows BitLocker avec intégrés Trust Platform Module (TPM) pour interdire l’accès aux données locales lorsque le périphérique est en mode veille ou inactif. 
+Analyse |    Windows Defender avancée contre les menaces (Windows Defender DAV) est utilisé pour la surveillance des menaces de sécurité sur tous les périphériques de bureau Microsoft. Windows Defender DAV pour les entreprises à détecter, examiner et répondre aux menaces dans leur réseau d’entreprise. Pour plus d’informations, voir [contre les menaces avancées Windows Defender.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Mises à jour logicielles |  Périphériques de bureau Microsoft sont toujours sécurisés avec les dernières mises à jour de sécurité.
+Configuration du périphérique d’informations sécurisé |   Ordinateur de bureau Microsoft implémente le Guide de sécurité de Microsoft. Pour plus d’informations, voir [des bases de sécurité Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
 
 
-## <a name="identity-security"></a>Sécurité d’identité
+## <a name="identity-and-access-management"></a>Gestion des identités et des accès
 
-Gestion des identités et l’accès protège les actifs de l’entreprise et les données critiques. Azure Active Directory (AD Azure) fournit des services d’identité dans le nuage et authentification basée sur le cloud activer qui garantit que seules les personnes approuvés peut accéder à des ressources d’entreprise à partir de périphériques de bureau Microsoft.
+Gestion des identités et l’accès protège les actifs de l’entreprise et les données critiques. Ordinateur de bureau Microsoft configure les périphériques afin d’assurer une utilisation sécurisée avec Azure Active Directory (AD Azure) gestion des identités. Il est de la responsabilité du client pour conserver les informations exactes dans leur client Azure AD. 
 
 Service | Description
 --- | ---
-Fournisseur d’authentification de niveau entreprise |  Les éditions AD Premium Azure utilisées par Microsoft vous fournissent un service de haute disponibilité hébergé dans les centres de données dispersés géographiquement. Le service gère les milliards d’authentifications chaque jour à partir de plus de 200 millions d’utilisateurs actifs et vous donne un SLA de 99,9 %.
-Authentification biométrique |  Hello Windows permet aux utilisateurs d’ouvrir une session à l’aide de leur image ou un code confidentiel, rendant les mots de passe plus difficile à oubliez ou voler. Cela peut nécessiter un travail supplémentaire pour configurer. Pour plus d’informations, voir [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-Authentification à plusieurs facteurs | L’authentification multifacteur Azure empêche l’accès non autorisé à locaux et en nuage des applications en fournissant un niveau supplémentaire de l’authentification à l’aide d’un téléphone mobile, ainsi que libre-service de réinitialisation de mot de passe. 
+Authentification biométrique |  Hello Windows permet aux utilisateurs d’ouvrir une session à l’aide de leur image ou un code confidentiel, rendant les mots de passe plus difficile à oubliez ou voler. Pour plus d’informations, voir [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
+	Authentification multifacteur | L’authentification multifacteur Azure plus étroitement contrôle l’accès aux fonctions sensibles du service Microsoft de bureau en fournissant un niveau supplémentaire de l’authentification à l’aide d’un téléphone mobile, comme la réinitialisation du mot de passe bien en libre-service. 
 Autorisation de l’utilisateur standard |  Pour protéger le système et rendre plus sécurisé, l’utilisateur sera attribué des autorisations utilisateur Standard. Il est affecté dans le cadre de l’expérience d’out-of-box pilote Windows.
 
 
@@ -87,7 +72,7 @@ Les clients sont responsables de la sécurité réseau.
 
 Service | Description
 --- | ---
-VPN | Clients possèdent leur infrastructure VPN, afin de garantir des ressources d’entreprise limitées peuvent être exposés à l’extérieur de l’intranet.<br><br>Configuration minimale requise : bureau Microsoft Managed requiert une solution VPN pris en charge et compatible Windows 10. Si votre organisation a besoin d’une solution VPN, il doit prendre en charge Windows 10 et package et déployer via Intune. Pour plus d’informations, contactez votre éditeur de logiciels.<br><br>Recommandation :<br>-Microsoft recommande une solution VPN moderne qui peut être facilement déployée via Intune aux profils VPN de type push. Cela offre un moyen de-on, transparent, fiable et sécurisé pour l’accès réseau d’entreprise. Pour plus d’informations, consultez Paramètres VPN dans Intune.<br>-Les clients VPN épais ou des clients hérités VPN, ne sont pas recommandées par Microsoft lors de l’utilisation de bureau Microsoft comme il peut avoir un impact sur l’environnement de l’utilisateur final.<br>-Microsoft recommande que le trafic web sortant accède directement à Internet sans passer par le réseau VPN pour éviter les problèmes de performances.<br>-Dans l’idéal, Microsoft recommande l’utilisation d’Azure Active Directory Application Proxy au lieu d’un réseau privé virtuel.
+VPN | Clients possèdent leur infrastructure VPN, afin de garantir des ressources d’entreprise limitées peuvent être exposés à l’extérieur de l’intranet.<br><br>Configuration minimale requise : bureau Microsoft Managed requiert une solution VPN pris en charge et compatible Windows 10. Si votre organisation a besoin d’une solution VPN, il doit prendre en charge Windows 10 et package et déployer via Intune. Pour plus d’informations, contactez votre éditeur de logiciels.<br><br>Recommandation :<br>-Microsoft recommande une solution VPN moderne qui peut être facilement déployée via Intune aux profils VPN de type push. Cela offre un moyen de-on, transparent, fiable et sécurisé pour l’accès réseau d’entreprise. Pour plus d’informations, voir [[paramètres VPN dans Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-Les clients VPN épais ou des clients hérités VPN, ne sont pas recommandées par Microsoft lors de l’utilisation de bureau Microsoft comme il peut avoir un impact sur l’environnement de l’utilisateur final.<br>-Microsoft recommande que le trafic web sortant accède directement à Internet sans passer par le réseau VPN pour éviter les problèmes de performances.<br>-Dans l’idéal, Microsoft recommande l’utilisation d’Azure Active Directory Application Proxy au lieu d’un réseau privé virtuel.
 
 
 ## <a name="information-security"></a>Sécurité des informations
@@ -96,16 +81,6 @@ Les clients peuvent configurer ces services facultatifs pour protéger les resso
 
 Service | Description
 --- | ---
-Accès conditionnel |    Autoriser l’accès aux ressources d’entreprise et des services uniquement lorsque le périphérique est compatible.
-Récupération des données  | Les informations stockées dans les dossiers de clés sur l’appareil sont sauvegardées vers OneDrive pour Bbusiness. Ordinateur de bureau Microsoft n’est pas chargé de données n’est pas synchronisée avec OneDrive entreprise. 
+Récupération des données  | Les informations stockées dans les dossiers de clés sur l’appareil sont sauvegardées vers OneDrive entreprise. Ordinateur de bureau Microsoft n’est pas chargé de données n’est pas synchronisée avec OneDrive entreprise. 
 Protection des informations Windows |    Pour les entreprises qui nécessitent des hauts niveaux de sécurité de l’information, nous vous recommandons de [Protection des informations](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) et [Azure la Protection des informations.](https://www.microsoft.com/cloud-platform/azure-information-protection). 
-
-
-## <a name="privileged-account-access"></a>Accès de compte privilégié
-
-Aujourd'hui, nous restreindre l’accès pour les informations d’identification de client MSAdmin et l’application par le biais de ces mécanismes :
-
-- **Opérateurs** – Microsoft plein-temps-employés situé dans le fuseau horaire est terminé une vérification périodique d’arrière-plan et de sécurité.
-- **Identité de l’opérateur** – protégée conformément aux normes définies par Microsoft. Pour plus d’informations, voir [Gestion des identités d’utilisateur et sécuriser l’accès à Microsoft](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft). 
-- **La journalisation** est effectuée dans l’environnement de l’opérateur et dans le client du client. Journaliser les données et les informations personnelles sont conservées dans les environnements respectifs et ne traversent pas les environnements. 
 

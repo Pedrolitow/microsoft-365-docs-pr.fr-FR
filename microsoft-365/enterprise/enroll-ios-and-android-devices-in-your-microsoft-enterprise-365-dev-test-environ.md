@@ -12,18 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Utilisez ce Guide de laboratoire de Test pour inscrire des périphériques dans votre environnement de test Microsoft 365 et les gérer à distance.
-ms.openlocfilehash: 98696104ee8453adb7449980cf439eeb152aeea9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: a78db19099ccacd1b2f62e8438d1749f28d22f52
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866976"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Inscription d’appareils iOS et Android dans votre environnement de test Microsoft 365 Entreprise
 
 En suivant les instructions fournies dans cet article, vous serez en mesure de s’inscrire et tester les fonctionnalités de gestion de base des périphériques mobiles pour les périphériques iOS ou Android dans votre environnement de test Microsoft 365 pour entreprises.
 
-![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
@@ -76,7 +76,7 @@ Explorez des fonctionnalités de [Gestion des appareils mobiles](m365-enterprise
 
 [Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
   
-[Stratégies GAM pour votre environnement de test Microsoft 365 Entreprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Environnement de test des stratégies de conformité de périphérique pour votre entreprise 365 de Microsoft](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Déployer Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
 

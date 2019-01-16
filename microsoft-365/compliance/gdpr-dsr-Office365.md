@@ -240,9 +240,9 @@ Cet exemple renvoie les messages électroniques qui contiennent les numéros d�
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Utilisation des éléments partiellement indexés dans la recherche de contenu
 
-Les éléments partiellement indexés (également appelés *éléments non indexés*) sont des éléments de boîtes aux lettres Exchange Online et des documents sur SharePoint Online et des sites OneDrive Entreprise qui, pour une raison quelconque, n’ont pas été complètement indexés pour la recherche, ce qui signifie qu’ils ne sont pas utilisables dans une requête à l’aide de la recherche de contenu. La plupart des messages électroniques et des documents de sites sont indexés correctement, car ils restent dans les [limites l’indexation pour Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??). Les raisons pour lesquelles des messages électroniques ou des fichiers ne sont pas indexés pour la recherche sont, entre autres, les suivantes :
+Les éléments partiellement indexés (également appelés *éléments non indexés*) sont des éléments de boîtes aux lettres Exchange Online et des documents sur SharePoint Online et des sites OneDrive Entreprise qui, pour une raison quelconque, n’ont pas été complètement indexés pour la recherche, ce qui signifie qu’ils ne sont pas utilisables dans une requête à l’aide de la recherche de contenu. La plupart des messages électroniques et des documents de sites sont indexés correctement, car ils restent dans les [limites l’indexation pour Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??d??). Les raisons pour lesquelles des messages électroniques ou des fichiers ne sont pas indexés pour la recherche sont, entre autres, les suivantes :
 
--   Le type de fichier est un type de fichier [non reconnu ou non pris en charge pour l’indexation](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??) ; s’il peut arriver que le type de fichier soit pris en charge pour l’indexation, une erreur d’indexation est survenue pour un fichier spécifique
+-   Le type de fichier est un type de fichier [non reconnu ou non pris en charge pour l’indexation](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??) ; s’il peut arriver que le type de fichier soit pris en charge pour l’indexation, une erreur d’indexation est survenue pour un fichier spécifique
 
 -   Les messages électroniques ont un fichier joint sans gestionnaire valide, tel que le fichier image (c’est la cause la plus courante d’éléments de messagerie partiellement indexés)
 
@@ -250,7 +250,7 @@ Les éléments partiellement indexés (également appelés *éléments non index
 
 Nous vous recommandons de vous renseigner sur les éléments partiellement indexés afin que vous puissiez les utiliser lorsque vous répondez à des demandes de DSR. Pour obtenir plus d’informations, consultez les articles suivants :
 
--   [Éléments partiellement indexés dans la recherche de contenu dans Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
+-   [Éléments partiellement indexés dans la recherche de contenu dans Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??)
 
 -   [Examen d’éléments partiellement indexés dans eDiscovery Office 365](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 

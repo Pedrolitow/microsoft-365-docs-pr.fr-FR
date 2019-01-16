@@ -12,18 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce Guide de laboratoire de Test pour activer les paramètres de sécurité Office 365 supplémentaires à votre environnement de test Microsoft 365 pour entreprises.
-ms.openlocfilehash: 18e7b682d20c2212ae73783d668250d28b04075f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867106"
 ---
 # <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Sécurité Office 365 accrue pour votre environnement de test Microsoft 365 Entreprise
 
 Les instructions de cet article, configurer les paramètres Office 365 supplémentaires pour renforcer la sécurité dans votre environnement de test Microsoft 365 pour entreprises.
 
-![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
@@ -46,7 +46,7 @@ Durant cette phase, vous activez une meilleure sécurité Office 365 pour votre 
 
 Les applications qui ne prennent pas en charge l’authentification moderne ne peut pas avoir d' [identité et périphérique d’accès aux configurations](microsoft-365-policies-configurations.md) appliquée, qui est un élément important de sécuriser votre abonnement Microsoft 365 et ses actifs numériques. 
 
-1. Accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et se connecter à votre abonnement d’évaluation d’Office 365 avec votre compte d’administrateur global.
+1. Accédez au portail Office ([https://office.com](https://office.com)) et se connecter à votre abonnement d’évaluation d’Office 365 avec votre compte d’administrateur global.
     
   - Si vous utilisez l’environnement de test Microsoft 365 léger, connectez-vous à partir de votre ordinateur local.
     
@@ -55,12 +55,12 @@ Les applications qui ne prennent pas en charge l’authentification moderne ne p
 2. Sous l’onglet **Centre d’administration Microsoft 365** , cliquez sur **Admin**.
 3. Dans l’onglet **Centre d’administration Microsoft 365** nouveau, cliquez sur **centres d’administration > SharePoint**.
 4. Dans l’onglet nouveau **Centre d’administration SharePoint** , cliquez sur **le contrôle d’accès**.
-5. Les **applications qui ne prennent en charge l’authentification moderne**, cliquez sur **Bloc > OK**.
+5. Sous **applications qui ne prennent en charge l’authentification moderne**, cliquez sur **Bloquer**, puis cliquez sur **OK**.
 
 
-### <a name="enable-advanced-threat-protection-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer les avancées de protection contre les menaces (DAV) pour SharePoint, OneDrive et les équipes de Microsoft
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Activer les avancées de protection contre les menaces) pour SharePoint, OneDrive entreprise et les équipes Microsoft
 
-Office 365 Advanced Threat Protection (DAV) est une fonctionnalité d’Exchange Online Protection (EOP) qui permet de conserver des programmes malveillants en dehors de votre courrier électronique. Avec DAV, vous créez des stratégies dans le centre d’administration Exchange (EAC) ou de la sécurité & centre de conformité qui permettent de garantir vos utilisateurs accéder uniquement des liens ou des pièces jointes dans les messages électroniques qui sont identifiés comme non malveillantes. Pour plus d’informations, voir [protection contre les menaces avancées pour les pièces jointes fiables et les liens sécurisés](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
+Office 365 Advanced Threat Protection (DAV) est une fonctionnalité d’Exchange Online Protection (EOP) qui permet de conserver des programmes malveillants en dehors de votre courrier électronique. Avec DAV, vous créez des stratégies dans le centre d’administration Exchange (CAE) ou de la sécurité & centre de conformité qui permettent de garantir vos utilisateurs accéder uniquement des liens ou des pièces jointes dans les messages électroniques qui sont identifiés comme non malveillant. Pour plus d’informations, voir [protection contre les menaces avancées pour les pièces jointes fiables et les liens sécurisés](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
 
 1. Dans l’onglet **Centre d’administration Microsoft 365** de votre navigateur, cliquez sur **centres d’administration > sécurité et conformité**.
 2. Dans l’onglet **sécurité et conformité** nouveau, cliquez sur **Gestion des menaces > stratégie**.

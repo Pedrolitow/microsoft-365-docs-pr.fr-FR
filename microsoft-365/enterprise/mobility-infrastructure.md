@@ -13,11 +13,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 ms.custom: microsoft-intune
-ms.openlocfilehash: 8d048ec6628cb8f7cb9c5e0d4c7960481bc69de1
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 3afc28f0d21918c027a6a1622a40318e333f7ab4
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867496"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5 : Gestion des appareils mobiles Microsoft 365 entreprise
@@ -92,7 +92,7 @@ L’inscription est une étape clée lors de l’utilisation Intune. [Inscrire l
 
 |||
 |:-------|:-----|
-|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : iOS et inscription de l’appareil Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : iOS et inscription de l’appareil Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -110,7 +110,7 @@ Lorsque les utilisateurs obtiennent un appareil mobile, une des premières tâch
 
 |||
 |:-------|:-----|
-|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : Stratégies de gestion des applications mobiles](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : Stratégies de conformité d’appareil](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Étape 6 : Activer la conformité et l’accès conditionnel
@@ -153,7 +153,7 @@ Intune est un service puissant et inclut de nombreuses fonctionnalités. Voici d
 - Surveiller des [applications](https://docs.microsoft.com/intune/apps-monitor), surveiller [la conformité du périphérique](https://docs.microsoft.com/intune/compliance-policy-monitor), de surveiller [les profils de configuration](https://docs.microsoft.com/intune/compliance-policy-monitor)et télémétrie plus à l’aide des journaux d’audit. Vous pouvez également vous connecter à l' [Entrepôt de données Intune](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) et utiliser Power BI pour les besoins en matière de création de rapports encore plus.
 
 
-## <a name="identity-and-device-access-recommendations"></a>Recommandations d’accès aux identités et des périphériques
+## <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
 
 Microsoft propose un ensemble de recommandations pour l' [accès identité et de périphérique](microsoft-365-policies-configurations.md) garantir un personnel sécurisé et efficace. Accès des appareils, utilisez les recommandations et les paramètres dans les articles suivants, ainsi que les étapes de cette phase :
 

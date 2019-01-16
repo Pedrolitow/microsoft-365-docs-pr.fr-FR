@@ -5,17 +5,17 @@ keywords: Service Microsoft de bureau, Microsoft 365, documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 11/1/2018
-ms.openlocfilehash: 7e551e51c3ea972f69c24bcb1994e13f0f7342f0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 11/7/2018
+ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867230"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Aide pour le bureau géré Microsoft
 
-Périphériques de bureau Microsoft sont gérés par et seront réparés ou remplacés par Microsoft si nécessaire. Microsoft fournira une gestion proactive et réactive des incidents. Microsoft effectue le suivi des incidents dans le portail d’administration de bureau Microsoft. Ils sont classés en fonction des [définitions des priorités](#severity-definitions). 
+Périphériques de bureau Microsoft sont gérés par et seront réparés ou remplacés par Microsoft comme garantie. Microsoft fournira une gestion proactive et réactive des incidents. Microsoft effectue le suivi des incidents dans le portail d’administration de bureau Microsoft. Ils sont classés en fonction des [définitions des priorités](../working-with-managed-desktop/admin-support.md#sev).
 
 Opérations de bureau Microsoft pour les clients peuvent contacter :
 - Demandes d’informations sur le poste de travail moderne en tant que client de Service ou configuration
@@ -39,10 +39,10 @@ Produits pris en charge :
 
 Détails de la prise en charge :
 
-- Actif : Amérique du Nord et Royaume-Uni uniquement (24 x 7 x 365) 
+- En cours : Amérique du Nord, Royaume-Uni et Australie (24 x 7 x 365) 
 - L’anglais est la langue prise en charge uniquement pour les conversations téléphoniques et de conversation avec les clients 
 - Nous effectuons un partenariat avec, ne pas en remplaçant le support technique d’entreprise ; Applications de métier (LOB), les ressources réseau, etc. sont toujours traités par le support technique 
-- Périphériques de bureau non Microsoft sont hors de portée 
+- Microsoft équipements qui résident dans les périphériques de test anneau et non - Microsoft de bureau sont hors de portée 
 
 ## <a name="hardware-replacement"></a>Remplacement du matériel
 

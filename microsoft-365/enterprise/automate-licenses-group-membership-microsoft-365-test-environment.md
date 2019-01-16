@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurer basée sur le groupe gestion des licences et l’appartenance au groupe dynamique dans votre environnement de test Microsoft 365 pour entreprises.
-ms.openlocfilehash: 46d2f0ca063b387d1a4a51b4ea97bd5d60c03fe5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 45a78af202f2d9ab029683aae4d95ed9a3370b08
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867227"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatiser l’appartenance de groupe et de licence pour votre environnement de test Microsoft 365 pour entreprises
@@ -29,7 +29,7 @@ Il existe deux phases à définir l’appartenance à un groupe de licences auto
 1. Créer l’environnement de test Microsoft 365 pour entreprises.
 2. Configurer et tester l’appartenance au groupe dynamique et la gestion des licences automatique.
 
-![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
@@ -47,7 +47,7 @@ Si vous souhaitez tester les licences automatisé et l’appartenance au groupe 
 
 Tout d’abord, vous créez un nouveau groupe de ventes et ajoutez une règle d’appartenance au groupe dynamique afin que les comptes d’utilisateurs avec le service des ventes la valeur sont automatiquement ajoutés au groupe de ventes.
 
-1. À l’aide d’une instance privée de votre navigateur Internet, connectez-vous au portail Office 365 à [https://portal.office.com](https://portal.office.com) avec le compte d’administrateur global de votre abonnement d’évaluation Office 365 E5.
+1. À l’aide d’une instance privée de votre navigateur Internet, connectez-vous au portail Office à [https://office.com](https://office.com) avec le compte d’administrateur global de votre abonnement d’évaluation Office 365 E5.
 2. Sur un onglet séparé de votre navigateur, accédez au portail Azure à [https://portal.azure.com](https://portal.azure.com).
 3. Dans le portail Azure, cliquez sur **Azure Active Directory > Utilisateurs et groupes > Tous les groupes**.
 4. Sur le serveur lame **tous les groupes** , cliquez sur **Nouveau groupe**.

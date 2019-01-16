@@ -10,11 +10,11 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: dd1504ac11f0e2eefa56572af24de14b5f87830e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f3d3d72ddf9129997dd4232a578e1f101f113a53
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866849"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
@@ -34,20 +34,20 @@ Si vous avez inclus Exchange Online et Outlook dans l’étendue des stratégies
 
 |Niveau de protection|Policies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Exiger MFA lors de la connexion risque est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans les affectations d’applications dans le nuage.|
-|        |[Blocage des clients qui ne prennent pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inclure Exchange Online dans les affectations d’applications dans le nuage.|
-|        |[Définir des stratégies de protection des applications](identity-access-policies.md#high-risk-users-must-change-password)|N’oubliez pas Qu'outlook est inclus dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows).|
-|        |[Exiger des applications approuvées](identity-access-policies.md#require-approved-apps)|Inclure Exchange Online dans la liste des applications dans le nuage.|
-|        |[Exiger compatible PC](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure Exchange Online dans la liste des applications dans le nuage.|
-|        |[Clients bloc ActiveSync](#block-activesync)|Ajoutez cette nouvelle stratégie. 
-|**Sensible**|[Exiger MFA lors de la connexion risque est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Inclure Exchange Online dans les affectations d’applications dans le nuage.|
-|         |[Exiger compatible PC *et* appareils mobiles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inclure Exchange Online dans la liste des applications dans le nuage.|
-|**Hautement réglementé**|[*Toujours* nécessitent MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans les affectations d’applications cloud |
+|**Baseline**|[Exiger MFA lors de la connexion risque est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation des applications dans le nuage|
+|        |[Blocage des clients qui ne prennent pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inclure Exchange Online dans l’affectation des applications dans le nuage|
+|        |[Définir des stratégies de protection des applications](identity-access-policies.md#high-risk-users-must-change-password)|N’oubliez pas Qu'outlook est inclus dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
+|        |[Exiger des applications approuvées](identity-access-policies.md#require-approved-apps)|Inclure Exchange Online dans la liste des applications dans le nuage|
+|        |[Exiger compatible PC](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure Exchange Online dans la liste des applications dans le nuage|
+|        |[Clients bloc ActiveSync](#block-activesync-clients)|Ajouter cette nouvelle stratégie| 
+|**Sensible**|[Exiger MFA lors de la connexion risque est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Inclure Exchange Online dans l’affectation des applications dans le nuage|
+|         |[Exiger compatible PC *et* appareils mobiles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inclure Exchange Online dans la liste des applications dans le nuage|
+|**Hautement réglementé**|[*Toujours* nécessitent MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation des applications dans le nuage|
 
 ## <a name="block-activesync-clients"></a>Clients bloc ActiveSync
 Cette stratégie empêche les clients ActiveSync de contourner les autres règles d’accès conditionnel. La configuration de la règle s’applique uniquement aux clients ActiveSync. En sélectionnant **Exiger l’approbation de l’application cliente**, cette stratégie empêche les clients de ActiveSync. Pour configurer cette stratégie :
 
-1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois que vous êtes connecté, vous voyez le tableau de bord Azure.
+1. Accédez au [portail Azure](https://portal.azure.com)et connectez-vous avec vos informations d’identification. Une fois que vous avez correctement connecté, vous voyez le tableau de bord Azure.
 
 2. Dans le menu de gauche, choisissez **Azure Active Directory**.
 
@@ -59,15 +59,17 @@ Cette stratégie empêche les clients ActiveSync de contourner les autres règle
 
 6. Choisissez **Applications cloud**.
 
-7. Choisissez **Sélectionner des applications**, sélectionnez Office 365 Exchange Online. Cliquez sur **Sélectionnez** **terminé**.
+7. Choisissez **Sélectionner des applications**, sélectionnez **Office 365 Exchange Online**. Choisissez **Sélectionnez** **terminé**.
+
 8. Sélectionnez les **Conditions**, puis **applications clientes**.
+
 9. Pour **configurer**, sélectionnez **Oui**. Vérifiez que les éléments suivants : **applications mobiles et les clients de bureau** et des **clients Exchange ActiveSync**. Cliquez sur **terminé**.
 
 10. Choisissez **Accorder** dans la section **Contrôles d’accès**.
 
 11. Cliquez sur **accorder l’accès**, sélectionnez **Exiger l’approbation de l’application cliente**.  Pour plusieurs contrôles, sélectionnez **Exiger les contrôles sélectionnés**, puis choisissez **Sélectionner**. 
 
-12. Cliquez sur **Créer**.
+12. Sélectionnez **Create (Créer)**.
 
 ## <a name="setup-office-365-message-encryption"></a>Configuration du chiffrement de messages Office 365
 Avec les nouvelles fonctionnalités d’Office 365 Message Encryption (OME), qui exploitent les fonctionnalités de protection de la Protection des informations Azure, votre organisation peut partager facilement électronique protégé avec tout le monde sur n’importe quel appareil. Les utilisateurs peuvent envoyer et recevoir des messages protégés avec d’autres organisations Office 365, ainsi que les clients Office 365 à l’aide de Outlook.com, Gmail et autres services de messagerie.
