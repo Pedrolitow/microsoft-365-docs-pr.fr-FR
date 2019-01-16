@@ -5,12 +5,12 @@ keywords: Service Microsoft de bureau, Microsoft 365, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 71952a8b073f002890cc95883e717aeb04c0cd68
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 01/08/2019
+ms.openlocfilehash: 6b6c6f6a2e719496578ac1d15c9b94a92a2ab492
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866823"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise de bureau Microsoft
@@ -33,14 +33,19 @@ Ordinateur de bureau Microsoft utilise Intune, Microsoft Store et Microsoft Stor
 
 Certains types d’applications ne sont pas autorisés sur les périphériques de bureau Microsoft :
 - logiciel d’audit, de sécurité ou antivirus 3ème partie
+- navigateurs web de 3ème partie
 - Versions de Microsoft Office avant d’Office 365 Pro Plus
 - Applications qui installent ou regroupent les autres logiciels tiers 3
 
 ## <a name="restricted-app-behaviors"></a>Comportements d’application restreinte
 
-Certains comportements d’application peuvent être être préjudiciable que l’expérience utilisateur ou représenter un risque de sécurité pour les périphériques de bureau Microsoft. Les applications ne doivent pas comporter les comportements ou les caractéristiques suivantes : 
+Certains comportements d’application peuvent être préjudiciable que l’expérience utilisateur ou représenter un risque de sécurité pour les périphériques de bureau Microsoft. Les applications ne doivent pas comporter les comportements ou les caractéristiques suivantes : 
+
+Expérience utilisateur :
 - Installer les services d’arrière-plan ou de lancer le processus de longue durée en arrière-plan
 - Ajouter le chemin d’accès de démarrage de Windows
+
+Sécurité :
 - Appeler proposait Windows ou API Office ou prendre de dépendances sur les structures de données internes Windows ou Office
 - Agir comme un magasin d’applications ou gestionnaire d’extension intégrés
 - Élever les privilèges de l’utilisateur final

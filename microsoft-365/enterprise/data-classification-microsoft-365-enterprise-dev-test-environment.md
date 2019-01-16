@@ -3,7 +3,7 @@ title: Environnement de test de classification des données pour votre entrepris
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 12/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce Guide de laboratoire de Test pour créer et utiliser des étiquettes de Office 365 sur des documents dans votre environnement de test Microsoft 365 pour entreprises.
-ms.openlocfilehash: 718cf038d88f1431ec6ca6fce1554d4f44dc1cb7
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 33ac1fa8e26c0037882e6c240cc04ec19e6a6a7b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867453"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Environnement de test de classification des données pour votre entreprise 365 de Microsoft
 
-Les instructions de cet article, vous permet de configurer la classification des données à l’aide d’Office 365 étiquettes dans votre environnement de test Microsoft 365 pour entreprises.
+Les instructions de cet article, vous permet de configurer la classification des données à l’aide des étiquettes de rétention d’Office 365 dans votre environnement de test Microsoft 365 pour entreprises.
 
-![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
@@ -39,17 +39,17 @@ Si vous souhaitez configurer des étiquettes d’Office 365 dans une entreprise 
 
 ## <a name="phase-2-create-office-365-labels"></a>Phase 2 : Création d’étiquettes Office 365
 
-Dans cette phase, vous créez les étiquettes pour les différents niveaux de sécurité pour les dossiers de documents SharePoint Online.
+Dans cette phase, vous créez les étiquettes pour les différents niveaux de rétention pour les dossiers de documents SharePoint Online.
   
-1. Si nécessaire, utilisez une instance privée de votre navigateur Internet et connectez-vous au portail Office 365 avec votre compte d’administrateur global. Pour une assistance, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, utilisez une instance privée de votre navigateur Internet et connectez-vous au portail Office avec votre compte d’administrateur global. Pour une assistance, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Sous l’onglet **Accueil Microsoft Office**, cliquez sur la vignette **Administration**.
     
 3. Sous le nouvel onglet **Centre d’administration Office** de votre navigateur, cliquez sur **Centres d’administration > Sécurité &amp; conformité**.
     
-4. Sous le nouvel onglet **Accueil - Sécurité &amp; conformité de votre navigateur**, cliquez sur **Classifications > Étiquettes**.
+4. À partir du nouveau **Accueil - sécurité &amp; conformité** onglet de votre navigateur, cliquez sur **Classifications > étiquettes**. À partir de le **Accueil > étiquettes** volet, cliquez sur l’onglet de **rétention** .
     
-5. Dans le volet **Accueil > Étiquettes**, cliquez sur **Créer une étiquette**.
+5. Cliquez sur **créer une étiquette**.
     
 6. Dans le volet **Nom de l’étiquette**, saisissez **Interne public** et cliquez sur **Suivant**.
     
@@ -83,13 +83,13 @@ Dans cette phase, vous créez les étiquettes pour les différents niveaux de s�
 
 Notez qu’il peut prendre quelques minutes pour les étiquettes à publier.
 
-## <a name="phase-3-apply-office-365-labels-to-documents"></a>Phase 3 : Appliquer des étiquettes d’Office 365 à des documents
+## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>Phase 3 : Appliquer des étiquettes de rétention d’Office 365 à des documents
 
 Durant cette phase, vous découvrez le comportement d’étiquette par défaut pour les fichiers dans le dossier Documents d’un site SharePoint Online et modifiez manuellement l’étiquette d’un document.
 
 Tout d’abord, créez un site d’équipe SharePoint Online niveau critiques :
   
-1. En utilisant un navigateur sur votre ordinateur local, connectez-vous au portail Office 365 avec votre compte d’administrateur général. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. À l’aide d’un navigateur sur votre ordinateur local, connectez-vous au portail Office à l’aide de votre compte d’administrateur global. Pour une assistance, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -125,13 +125,13 @@ Ensuite, créez un nouveau document dans le site SensitiveFiles et modifier son 
     
 4. Cliquez sur l’icône en regard du nom de fichier **Document.docx** Word.
     
-5. Dans le volet droit, dans la section **Propriétés** , sous l' **étiquette de l’appliquer**, notez que le document a été l’étiquette **sensibles** appliquée automatiquement.
+5. Dans le volet droit, dans la section **Propriétés** , sous l' **étiquette de rétention appliquer**, notez que le document a été l’étiquette **sensibles** appliquée automatiquement.
     
 6. Cliquez sur **Modifier tous les**.
     
 7. Dans le volet **Document.docx** , sous l' **étiquette de l’appliquer**, sélectionnez l’étiquette **Hautement confidentielles** , puis cliquez sur **Enregistrer**.
 
-Dans la phase de **protection des informations** pour des informations et des liens vers les étiquettes d’Office 365 en production, voir l’étape de [classification configurer pour votre environnement](data-classification-microsoft-365-enterprise-dev-test-environment.md) .
+Dans la phase de **protection des informations** pour des informations et des liens vers les étiquettes de rétention d’Office 365 en production, voir l’étape de [classification configurer pour votre environnement](infoprotect-configure-classification.md) .
 
 ## <a name="next-step"></a>Étape suivante
 

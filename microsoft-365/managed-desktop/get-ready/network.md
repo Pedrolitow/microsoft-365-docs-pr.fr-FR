@@ -3,14 +3,14 @@ title: Configuration réseau pour ordinateur de bureau Microsoft
 description: ''
 keywords: Service Microsoft de bureau, Microsoft 365, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 3eab9237b177ea76faa1296fec2bfda739c78534
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867394"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration réseau pour ordinateur de bureau Microsoft
@@ -45,10 +45,10 @@ Service Microsoft | Autoriser les URL requis sur la source de documentation - li
 Mise à jour de Windows pour les entreprises (WUfB) | [Mise à jour de Windows pour les impératifs de pare-feu et proxy](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
 Optimisation de la remise | [Exigences relatives au proxy Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
 Microsoft Store pour Entreprises | [Liste verte de Microsoft Store](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Plages d’adresses IP et les adresses URL dans Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Office 365 | [Office 365 URL et plages d’adresses IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) , y compris \*. apibasic.diagnostics.office.com
 Azure Active Directory | [Identité hybride requis ports et protocoles](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports) et [Active Directory et Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Exigences de configuration réseau Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
-OneDrive Entreprise <br> | [Requis URL et les ports pour OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports)
+OneDrive Entreprise <br> | [Requis URL et les ports pour OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports)
 Windows Defender avancées de protection contre les menaces (DAV) | [Points de terminaison Windows Defender DAV](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
 SharePoint Online  | [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#bkmk_teams)
 Power BI | [OneNote](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)

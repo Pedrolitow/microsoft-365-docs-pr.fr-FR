@@ -3,14 +3,14 @@ title: Gestion des mises à jour dans le bureau géré Microsoft
 description: Mise à jour de bureau Microsoft est un équilibre entre la vitesse et la stabilité.
 keywords: Service Microsoft de bureau, Microsoft 365, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 513e03b7d703e0a9f78281ddac764d8a29ed5c8f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 01/09/2019
+ms.openlocfilehash: bee6381b0f2b7b1e2d929329c3cf628ab7657678
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866945"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Gestion des mises à jour dans le bureau géré Microsoft
@@ -22,44 +22,42 @@ ms.locfileid: "26866945"
 
 Ordinateur de bureau Microsoft se connecte à tous les périphériques à une infrastructure moderne basée sur le cloud. Windows, Office, les pilotes, microprogrammes et Microsoft Store pour les mises à jour des applications métiers mise à jour est un équilibre entre la vitesse et la stabilité. Sonneries de déploiement seront utilisés pour s’assurer du système d’exploitation et de déploiement des stratégies de manière sûre. 
 
-## <a name="update-rings"></a>Mise à jour sonne
+## <a name="update-groups"></a>Mettre à jour des groupes
 
 Ordinateur de bureau Microsoft utilise quatre groupes Azure AD pour gérer les mises à jour :
 
-- Test : L’anneau test est conçu uniquement pour le test et validation des modifications apportées dans le client du client.  
-- Premier : Premier est destiné à être un anneau de test au plus tôt avec les utilisateurs expérimentés tech limité qui sont prêts à installer le logiciel au début et être soumis à certaines mises à jour de la version préliminaire.
-- Rapide : L’anneau rapide est où nous pouvons prévoir un vaste ensemble d’utilisateurs.  L’objectif de cet anneau consiste à conserver les périphériques mis à jour et de sécurité avec un rythme rapide de distribution de logiciels.  
-- Étendue : L’anneau lente est un déploiement estime équilibré de qualité et les fonctionnalités mises à jour.  Mises à jour de la qualité sont toujours remis à un rapide rythme, mais pas immédiatement. 
+- Test : Périphériques de non-production destinées à valider les modifications avant de déployer les modifications sur le reste du client. Périphériques de cet anneau sont hors de portée de prise en charge de l’utilisateur final documentée. 
+- Premier : Contient des premiers logiciels, et les périphériques peuvent être soumis à des mises à jour de la version préliminaire.
+- Rapide : Hiérarchise vitesse sur la stabilité. Utile pour détecter les problèmes de qualité avant d’être au groupe de large. 
+- Large : Dernier groupe pour la fonctionnalité et la qualité des mises à jour sont disponibles. Ce groupe contient la majorité des utilisateurs dans le client et par conséquent favorisant stabilité la vitesse de déploiement.
 
-Les mises à jour dans le système de sonnerie d’appel sont considérés comme qualité ou fonctionnalités mises à jour :
-- Mises à jour de qualité incluent la sécurité, critique et mises à jour.  Il s’agit généralement mensuels mises à jour. 
-- Mises à jour de la fonctionnalité contiennent non seulement la sécurité révisions de qualité, mais également les ajouts de fonctionnalité significative et modifications ; elles sont publiées semestrielle. 
+Mises à jour publiées par Microsoft sont cumulatifs et peuvent être classées en tant que la qualité ou la fonctionnalité mises à jour. Pour plus d’informations, voir [mise à jour Windows : Forum aux questions sur](https://support.microsoft.com/help/12373/windows-update-faq). 
 
-Fonctionne de la promotion de la sonnerie :
+Comment mettre à jour les travaux de déploiement :
 - Ordinateur de bureau Microsoft déploie une nouvelle fonctionnalité ou la qualité mise à jour en fonction de la planification spécifiée ci-dessous.
-- Au cours du déploiement de bureau Microsoft surveille des signes de défaillance ou de toute autre interruption (via les signaux de télémétrie et de notre système de prise en charge de l’utilisateur final) ; Si les sont détectés, le déploiement à tous les sonneries actuelles et futures est immédiatement suspendu.
-    - Exemple : si un problème est détecté lors du déploiement d’une mise à jour de qualité à la première sonnerie, puis tout d’abord, rapide et large seront tous être suspendue jusqu'à ce que le problème est résolu.
+- Au cours du déploiement de bureau Microsoft surveille des signes de défaillance ou d’interruption (basé sur des signaux de télémétrie et système de prise en charge de l’utilisateur final). Si les sont détectés, le déploiement à tous les groupes actuels et futurs est immédiatement suspendu.
+    - Exemple : si un problème est détecté lors du déploiement d’une mise à jour de la qualité au premier groupe, puis les déploiements de mise à jour préalable, rapide et large seront tous être suspendues jusqu'à ce que le problème est résolu.
     - Problèmes de compatibilité peuvent être signalés par un ticket de classement dans le portail Microsoft gérées bureau IT Admin.
-- Fonctionnalité et la qualité des mises à jour sont suspendues indépendamment.  Pause est en vigueur pour 35 jours par défaut, mais peut être réduit ou étendue selon si le problème est résolue.
-- Une fois les sonneries reprises, déploiement reprend en fonction de la planification ci-dessous.
-- Ce processus de promotion s’applique aux mises à jour de fonctionnalité et de qualité, bien que la chronologie varie pour chacun.
+- Fonctionnalité et la qualité des mises à jour sont suspendues indépendamment. Pause est en vigueur pour 35 jours par défaut, mais peut être réduit ou étendue selon si le problème est résolue.
+- Une fois que les groupes sont non suspendus, déploiement reprend en fonction de la planification ci-dessous.
+- Ce processus de déploiement s’applique aux mises à jour de fonctionnalité et de qualité, bien que la chronologie varie pour chacun.
 
 <table>
-<tr><th colspan="5">Sonneries et les paramètres de report</th></tr>
-<tr><th>Type de mise à jour</th><th>Sonnerie d’appel test</th><th>Premier</th><th>Rapide</th><th>Large</th></tr>
-<tr><td>Mises à jour de la qualité pour le système d’exploitation</td><td>0 jours</td><td>0 jours</td><td>1 jour</td><td>5 jours</td></tr>
-<tr><td>Mises à jour de la fonctionnalité de système d’exploitation</td><td>Canal semestrielle (ciblés) + 0 jours</td><td>Canal semestrielle (ciblés) + 30 jours</td><td>Canal semestrielle (ciblés) + 60 jours</td><td>Canal semestrielle + 30 jours</td></tr>
+<tr><th colspan="5">Mettre à jour les paramètres de déploiement</th></tr>
+<tr><th>Type de mise à jour</th><th>Tester</th><th>Premier</th><th>Rapide</th><th>Large</th></tr>
+<tr><td>Mises à jour de la qualité pour le système d’exploitation</td><td>0 jours</td><td>0 jours</td><td>0 jours</td><td>3 jours</td></tr>
+<tr><td>Mises à jour de la fonctionnalité de système d’exploitation</td><td>0 jours</td><td>30 jours</td><td>60 jours</td><td>90 jours</td></tr>
 <tr><td>Pilotes/microprogrammes</td><td colspan="4">Suit la planification des mises à jour de la qualité</td></tr>
 <tr><td>Définition de virus</td><td colspan="4">Mise à jour avec chaque analyse</td></tr>
-<tr><td>Cliquez sur Office Plus proactive exécuter</td><td colspan="4">Aligné sur le canal semestrielle</td></tr>
 </table>
 
+Ces périodes d’exclusion sont conçues pour garantir une haute sécurité et les normes de performance pour tous les utilisateurs. En outre, basé sur les données collectées sur tous les périphériques de bureau Microsoft et l’étendue et l’impact des mises à jour différentes, de bureau Microsoft réserve flexibilité pour modifier la longueur des périodes report ci-dessus pour les groupes de tout déploiement sur une annonce base hoc.
 
 ## <a name="windows-insider-program"></a>Programme internes de Windows
 
-Ordinateur de bureau Microsoft ne gère pas les périphériques qui font partie du programme Windows internes. Ce programme est utilisé pour valider la version préliminaire du logiciel Windows et est destiné aux périphériques critiques non stratégiques. Alors que c’est une initiative Microsoft importante, elle n’est pas destinée pour le déploiement dans les environnements de production. 
+Ordinateur de bureau Microsoft ne gère pas les périphériques qui font partie du programme Windows internes. Le programme Windows interne est utilisé pour valider la version préliminaire du logiciel Windows et est destiné aux périphériques critiques non stratégiques. Alors que c’est une initiative Microsoft importante, elle n’est pas destinée pour le déploiement dans les environnements de production. 
 
-Tous les périphériques avec les versions de Windows initiés seront placées dans l’anneau de Test et ne pas être inclus dans la mise à jour SLA.
+Tous les périphériques avec les versions de Windows initiés figureront dans le groupe de tests et ne pas être inclus dans la mise à jour les contrats de niveau de service (SLA.
 
 ## <a name="bandwidth-management"></a>Gestion de bande passante
 

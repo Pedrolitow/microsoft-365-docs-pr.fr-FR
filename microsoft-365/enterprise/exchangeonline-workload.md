@@ -11,11 +11,11 @@ ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 description: Parcourez le processus de planification, présentant et la valeur d’Exchange Online de conduite dans Microsoft 365 entreprise au sein de votre organisation.
-ms.openlocfilehash: 36b24290acd4467400eab86b4c2760ccad65deab
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: aafa1b28546eb77938bb3e4a5ebe9ccd60b9a60b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26867461"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Déployer Exchange Online pour Microsoft 365 Entreprise
@@ -29,7 +29,7 @@ Si vous êtes novice en matière vers Exchange Online, voir [Microsoft Exchange 
 Phases et étapes suivantes vous guideront dans le processus de prévision le rôle d’Exchange Online dans votre organisation, l’intégration de votre organisation vers Exchange Online à travers une série de déploiements progressifs et pour l’utilisation d’Exchange Online et son valeur à vos utilisateurs finaux.
 
 >[!Note]
->Ces instructions de déploiement doivent être appliquées uniquement après avoir effectué votre [infrastructure de](deploy-foundation-infrastructure.md) Microsoft 365 entreprise.
+>Ces instructions de déploiement doivent être suivies uniquement une fois que vous avez terminé [Phase 2-Identity](identity-infrastructure.md) de l’infrastructure de base Microsoft 365 pour entreprises.
 >
 
 ## <a name="phase-1-envision"></a>Phase 1 : comprendre
@@ -38,7 +38,7 @@ Durant cette phase, vous rassemblez les personnes de votre déploiement Exchange
 
 ### <a name="step-1-gather-your-exchange-online-deployment-members"></a>Étape 1 : Collecter des membres de votre déploiement Exchange Online
 
-Pour réussir le déploiement d’Exchange Online sur [l’infrastructure de base](deploy-foundation-infrastructure.md)Microsoft 365, vous devez obtenir les personnes appropriées pour les commentaires. Personnes clés sont les décideurs d’entreprise, les ressources informatiques nécessaires telles que les architectes et les implémenteurs et préconise pour vos utilisateurs finaux. 
+Pour réussir le déploiement d’Exchange Online en haut de [Phase 2-Identity](identity-infrastructure.md) de l’infrastructure de base Microsoft 365 pour entreprises, vous devez obtenir les personnes appropriées pour les commentaires. Personnes clés sont les décideurs d’entreprise, les ressources informatiques nécessaires telles que les architectes et les implémenteurs et préconise pour vos utilisateurs finaux. 
 
 Ces trois groupes de vous assurer que votre déploiement Exchange Online contient des observations sur qui traitent les besoins de l’entreprise, les aspects techniques de migration de boîtes aux lettres et de sécurité et que le résultat sera quelque chose que les utilisateurs classiques utilisera.
 
@@ -70,11 +70,11 @@ Pour plus d’informations, reportez-vous à la page relative à la [transformat
 #### <a name="result"></a>Résultat
 Une liste de scénarios Exchange Online qui répondent aux besoins de votre organisation pour la communication, la planification et la collaboration de courte durée.
 
-## <a name="phase-2-onboard"></a>Phase 2 : intégrer
+## <a name="phase-2-onboard"></a>Phase 2 : intégration
 
 Durant cette phase, vous planifiez les aspects techniques d’un déploiement Exchange Online et lancer le déploiement à certains groupes d’utilisateurs.
 
-### <a name="prerequisites-identity-and-device-access-configuration"></a>Conditions préalables : Identité et appareil accéder à la configuration
+### <a name="prerequisites-identity-and-device-access-configuration"></a>Conditions préalables : configuration des identités et de l’accès aux appareils
 
 Pour protéger l’accès aux boîtes aux lettres Exchange Online, assurez-vous que vous avez configuré des [identités et des périphériques accès stratégies](identity-access-policies.md) et la [recommandé des stratégies d’accès Exchange Online](secure-email-recommended-policies.md).
 
@@ -86,7 +86,7 @@ Si vous effectuez votre propre planification ou en association avec FastTrack, v
 
 Utilisez ces ressources pour préparer les aspects techniques d’un déploiement Exchange Online : 
 
-- [Méthodes de migration des comptes de courrier vers Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- [Méthodes de migration des comptes de courrier vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Gestionnaire de migration de messagerie Office 365](https://portal.office.com/onboarding/mailsetupadvisor#/) (doit être connecté à votre abonnement Office 365)
 - [Collaboration dans Exchange Online](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Destinataires dans Exchange Online](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
@@ -107,7 +107,7 @@ Ensuite, utilisez ces ressources pour apprendre à gérer les boîtes aux lettre
 
 Vous comprenez la gestion, la sécurité et migration de boîtes aux lettres et vous êtes prêt à commencer le déploiement d’Exchange Online à des groupes sélectionnés dans votre organisation.
 
-### <a name="step-2-run-an-it-pilot"></a>Étape 2 : exécuter une session pilote
+### <a name="step-2-run-an-it-pilot"></a>Étape 2 : exécuter une session pilote
 
 Dans la plupart des moyennes et grandes organisations, nous vous conseillons d’exécuter une session pilote avec vos parties prenantes de la phase 1, les adeptes précoces et les amateurs de technique. Pendant la session pilote :
 
@@ -121,7 +121,7 @@ Dans la plupart des moyennes et grandes organisations, nous vous conseillons d�
 
 Votre pilote Exchange Online IT est terminée et que les documents de gestion du changement initial développés, révisées et affinées.
 
-### <a name="step-3-roll-out-to-a-business-group"></a>Étape 3 : déployer pour un groupe d’entreprise
+### <a name="step-3-roll-out-to-a-business-group"></a>Étape 3 : déployer pour un groupe d’entreprise
 
 Une fois votre pilote informatique, déployer Exchange Online à un groupe d’entreprise ou un service dans votre organisation. Si votre organisation utilise un service de messagerie locaux tels que Exchange Server, ce déploiement se compose de migration de boîtes aux lettres. Ce déploiement doit inclure :
 
@@ -137,7 +137,7 @@ Pendant le déploiement, vous pouvez améliorer vos supports de gestion des modi
 
 Est un groupe et en cours d’exécution avec Exchange Online et les documents de gestion des modifications ont été testés et affinées.
 
-## <a name="phase-3-drive-value"></a>Phase 3 : créer de la valeur
+## <a name="phase-3-drive-value"></a>Phase 3 : créer de la valeur
 
 Durant cette phase, vous effectuez le déploiement d’Exchange Online et prend en charge les utilisateurs pour leur permettre de bénéficier de ses avantages.
 
@@ -155,7 +155,7 @@ Le processus de déploiement dans le reste de votre organisation doit inclure le
 
 Votre organisation est actif et en cours d’exécution et votre stratégie de gestion du changement est en place pour informer, former et permettre aux utilisateurs d’utiliser Exchange Online.
 
-### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a>Étape 2 : mesurer l’utilisation, gérer la satisfaction et favoriser l’adoption
+### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a>Étape 2 : mesurer l’utilisation, gérer la satisfaction et favoriser l’adoption
 
 Après le déploiement d’Exchange Online dans toute l’organisation, vous devez continuer à utiliser votre stratégie de gestion des modifications pour :
 
@@ -165,7 +165,7 @@ Après le déploiement d’Exchange Online dans toute l’organisation, vous dev
 Voici des suggestions d’activités :
 
 - Consultez la page [Conseils sur l’adoption d’Office 365](https://aka.ms/successfactors) pour en savoir plus sur les meilleures pratiques générales relatives à l’adoption du service cloud. 
-- Consultez l’article [Rapports d’activité Office 365](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263) pour comprendre l’utilisation des services Office 365 au sein de votre organisation. Si vous n’êtes pas administrateur général Office 365 pour votre organisation, demandez à la personne habilitée de vous accorder les autorisations d’accès en lecture aux rapports pour que vous puissiez accéder aux rapports d’activité.
+- Consultez l’article [Rapports d’activité Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) pour comprendre l’utilisation des services Office 365 au sein de votre organisation. Si vous n’êtes pas administrateur général Office 365 pour votre organisation, demandez à la personne habilitée de vous accorder les autorisations d’accès en lecture aux rapports pour que vous puissiez accéder aux rapports d’activité.
 - Surveiller votre lieu de commentaires (un canal public d’une équipe d’équipes ou d’Yammer central) pour les problèmes et les commentaires des utilisateurs sur leurs expériences avec Exchange Online. Résoudre les questions et problèmes aussi rapidement que vous pouvez empêcher les personnes frustration et de démonstration de la prise en charge pour le déploiement.
 - Identifier et entretenir champions dans chaque groupe d’entreprise et mettre en surbrillance les réalisations et les meilleures pratiques à l’aide d’Exchange Online. Refléter leurs succès out à l’organisation pour afficher d’adoption et de la réussite du projet. Implique par les responsables techniques au sein d’un groupe d’entreprises peut avoir une puissante influence sur leaders et des homologues.
 

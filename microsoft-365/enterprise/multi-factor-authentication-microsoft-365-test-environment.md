@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurer l’authentification multifacteur à l’aide de messages texte envoyés vers un téléphone actif dans votre environnement de test Microsoft 365 pour entreprises.
-ms.openlocfilehash: aae493e79a197635b2e14fa7f238a3189ed695ae
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 353f09253794670e8107e084acb3a01cd309fd60
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866841"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Environnement de test de l’authentification multifacteur pour votre entreprise 365 de Microsoft
@@ -32,7 +32,7 @@ Il existe deux phases de configuration de l’authentification multifacteur pour
     
 2. Activez et testez l’authentification multifacteur pour le compte d’utilisateur 2.
 
-![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
@@ -50,7 +50,7 @@ Si vous souhaitez tester l’authentification multifacteur dans une entreprise s
 
 Activez l’authentification multifacteur pour le compte d’utilisateur 2 en procédant comme suit :
   
-1. Ouvrez une instance distincte, privée de votre navigateur, accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)), puis connectez-vous avec votre compte d’administrateur global.
+1. Ouvrez une instance distincte, privée de votre navigateur, accédez au portail Office ([https://office.com](https://office.com)), puis connectez-vous avec votre compte d’administrateur global.
     
 2. Sur la page principale du portail, cliquez sur **Administrateur**.
     
@@ -74,7 +74,7 @@ Terminez la configuration pour que le compte d’utilisateur 2 utilise un messag
   
 1. Ouvrez une nouvelle instance privée de votre navigateur.
     
-2. Accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et la connexion avec le compte d’utilisateur 2 (user2 @\<nom de l’organisation >. onmicrosoft.com) et le mot de passe.
+2. Accédez au portail Office ([https://office.com](https://office.com)) et la connexion avec le compte d’utilisateur 2 (user2 @\<nom de l’organisation >. onmicrosoft.com) et le mot de passe.
     
 3. Après la connexion, vous êtes invité à configurer le compte pour plus d’informations. Cliquez sur **suivant**.
     
@@ -94,7 +94,7 @@ Terminez la configuration pour que le compte d’utilisateur 2 utilise un messag
     
 8. Si c’est la première fois que vous vous connectez avec le compte d’utilisateur 2, vous êtes invité à modifier le mot de passe. Tapez le mot de passe d’origine et un nouveau mot de passe à deux reprises, puis cliquez sur **Mettre à jour le mot de passe et se connecter**. Enregistrez le nouveau mot de passe dans un endroit sûr.
     
-    Vous devez voir le portail Office 365 pour l’utilisateur 2 sous l’onglet **Accueil de Microsoft Office** de votre navigateur.
+    Vous devez voir le portail Office pour l’utilisateur 2 sous l’onglet **Accueil de Microsoft Office** de votre navigateur.
 
 
 Voir l’étape [configurer l’authentification multifacteur](identity-multi-factor-authentication.md) lors de la phase d’identité pour des informations et des liens pour déployer l’authentification multifacteur en production.
