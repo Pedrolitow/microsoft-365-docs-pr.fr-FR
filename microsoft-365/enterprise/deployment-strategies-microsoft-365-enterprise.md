@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment vous pouvez déployer les phases de l’infrastructure de base de Microsoft 365 Entreprise.
-ms.openlocfilehash: 5ffe00c9eb975a0f8c2d193a71d8b613e827cc70
-ms.sourcegitcommit: f2eae6ec367f7b69043105d117a2a7e3da4153aa
+ms.openlocfilehash: 909526fb4938c8da142b4f667140f10dda660877
+ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29538937"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29993235"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Stratégies de déploiement de l’infrastructure de base de Microsoft 365 Entreprise
 
@@ -53,7 +53,7 @@ Voici comment ces deux lancements sont représentés dans cet article :
 
 ![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
-Le dégradé utilisé pour illustrer le lancement utilisateur représente un lancement progressif (de 0 % à 100 %) au sein de votre organisation, qui est réalisé de façon méthodique ou structurée (par groupe, département ou région, par exemple).
+Le dégradé utilisé pour illustrer le lancement utilisateur représente le pourcentage de 0 % à 100 % au sein de votre organisation, qui est réalisé de façon méthodique ou structurée par groupe, département ou région.
 
 ## <a name="deployment-strategies"></a>Stratégies de déploiement
 
