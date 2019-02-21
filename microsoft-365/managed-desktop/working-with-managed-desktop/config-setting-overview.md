@@ -6,12 +6,12 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 54d986f37b3981200bdead30a2c232143b9dd49d
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.openlocfilehash: 64560a1eb597072dd99c1538b0131e3cd807899c
+ms.sourcegitcommit: 1942a860d1b65e1f8062564ec4703b953e0c2fd7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051085"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30122244"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Paramètres configurables-bureau géré Microsoft
 
@@ -64,7 +64,7 @@ Tous les paramètres configurables sont gérés à l'aide du portail d'administr
 - **Suivre l'avancement** : suivre l'état après le déploiement de la modification. L'État prend la valeur **en cours**, puis **terminé**ou **échec**. En cas d'échec d'un déploiement, une demande de support est automatiquement ouverte pour les opérations de bureau géré Microsoft pour examiner le problème.  
 - **Voir version déployée** : chaque modification déployée possède un numéro de version.
 - **Rétablir les modifications** : la restauration d'une modification arrête le déploiement actuel et rétablit les dernières modifications qui ont été déployées sur toutes les sonneries. Vous revenez à la dernière valeur de paramètre correcte.
-- **Validate cahnges** -une fois le déploiement terminé, vérifiez que les modifications ont été appliquées comme prévu.  
+- **Valider les modifications** -une fois le déploiement terminé, vérifiez que les modifications ont été appliquées comme prévu.  
 
 Si un déploiement a échoué ou si vous ne pouvez pas annuler une modification, [ouvrez une demande de support](admin-support.md) avec Microsoft maNaged Desktop Operations. 
 
