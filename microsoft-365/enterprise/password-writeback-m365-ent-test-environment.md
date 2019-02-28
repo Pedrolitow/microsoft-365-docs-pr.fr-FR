@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
-ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
+ms.openlocfilehash: 7593da41d51d85c0f73d01450bb67306f82c7a1e
+ms.sourcegitcommit: 15c60addeaa51e0601c580665e8316ece75d3abc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29993225"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303639"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
@@ -106,11 +106,11 @@ Ensuite, configurez de la Connexion Azure AD Connect sur APP1 pour écriture d
 
 4. Sur la page**Tâches supplémentaires**, sélectionnez sur**Personnaliser les options de synchronisation**, puis cliquez sur**Suivant**.
 
-5. Sur la page**Connexion à Azure AD**, tapez vos informations d’identification de l’utilisateur1, puis cliquez sur **Suivant**.
+5. Sur la page **Connexion à Azure AD**, tapez vos informations d’identification d’administrateur général, puis cliquez sur **Suivant**.
 
 6. Sur les pages**Connecter les répertoires** et **Domaine/Filtrage**, cliquez sur**Suivant**.
 
-7. Sur la page**Fonctionnalités facultatives**, sélectionnez **Écriture différée de mot de passe** et cliquez sur Suivant. 
+7. Sur la page** Fonctionnalités facultatives**, sélectionnez **Écriture différée de mot de passe** et cliquez sur **Suivan**t. 
 
 8. Sur la page**Prêt à configurer**, cliquez sur**Configurer** et attendez que le processus se termine.
 
@@ -129,7 +129,7 @@ Cette configuration se compose des éléments suivants :
 - Azure AD Connect s’exécute sur APP1 pour synchroniser la liste des comptes et des groupes du client Azure AD de vos abonnements Office 365 et EMS E5 au domaine Windows Server AD TESTLAB. 
 - L’écriture différée de mot de passe est activée afin que les utilisateurs puissent modifier leur mot de passe via Azure AD sans avoir à se connecter à l’intranet simplifiée.
 
-Consultez l’étape [Simplifier les réinitialisations de mot de passe](identity-password-writeback.md) de la phase d’identification pour obtenir des informations et des liens qui vous permettront de configurer l’écriture différée de mot de passe en production.
+Consultez l’étape [Simplifier les réinitialisations de mot de passe](identity-password-reset.md#identity-pw-writeback) de la phase d’identification pour obtenir des informations et des liens qui vous permettront de configurer l’écriture différée de mot de passe en production.
 
 ## <a name="next-step"></a>Étape suivante
 
