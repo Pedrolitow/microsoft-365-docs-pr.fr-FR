@@ -6,12 +6,13 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/17/2019
-ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
-ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 62a17c95f5dc6b11f446a27684c507d7aaa95b7b
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175776"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414166"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables-bureau géré Microsoft
 
@@ -21,12 +22,12 @@ Après avoir apporté des modifications à vos catégories de paramètres et à 
 
 Voici les statues que vous verrez pour chaque déploiement.
 
-État  | Explication 
+Status  | Explication 
 --- | --- 
 Déployer | Votre modification attend d'être déployée sur cette sonnerie.
 En cours | La modification est appliquée aux appareils actifs dans cette sonnerie. 
-Complète | Modification effectuée sur tous les périphériques actifs de cette sonnerie. 
-Échec | La modification a échoué sur 10% des appareils actifs dans l'anneau, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
+Exécuter | Modification effectuée sur tous les périphériques actifs de cette sonnerie. 
+Failed | La modification a échoué sur 10% des appareils actifs dans l'anneau, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
 Retrouveront | La modification a été rétablie à la dernière modification qui a été correctement déployée sur toutes les sonneries de déploiement.
 
 ## <a name="deploy-changes"></a>Déployer les modifications

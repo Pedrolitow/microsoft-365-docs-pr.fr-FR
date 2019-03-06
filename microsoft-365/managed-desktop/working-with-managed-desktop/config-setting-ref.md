@@ -6,12 +6,13 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 1f0301f8660fd7ff60bd347d0d7b88c629d79453
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 8839be023844ae4de17972790ec9d02b82c75244
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051095"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414192"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Référence des paramètres configurables-bureau géré Microsoft
 
@@ -83,7 +84,7 @@ Ces meilleures pratiques sont proposées pour aider les clients à prendre des d
 4.  Entrez l'emplacement https de votre liste de sites. 
 5.  Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer sur l'anneau de test.
 
-## <a name="trusted-sites"></a>Sites de confiance
+## <a name="trusted-sites"></a>Sites approuvés
 
 Les sites de confiance vous permettent de personnaliser les zones de sécurité ou d'utiliser un site, pour différents sites. Les zones de sécurité sont les suivantes: 
 - Zone 1 – zone Intranet local
@@ -115,7 +116,7 @@ Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet 
 5. Répétez les étapes 1-4 pour chaque site approuvé à supprimer. 
 6. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer sur l'anneau de test.
 
-## <a name="proxy"></a>Proxy.
+## <a name="proxy"></a>Établir
 Vous pouvez gérer les paramètres de proxy réseau pour votre organisation. Ajoutez votre serveur proxy et votre numéro de port, puis ajoutez les exceptions de votre site proxy. Microsoft maNaged Desktop inclut un ensemble d'exceptions de proxy par défaut qui sont requises pour le fonctionnement du service. La liste d'exclusion par défaut ne peut être modifiée que par le service bureau géré Microsoft.  Pour plus d'informations, consultez la rubrique [Configuration réseau pour Microsoft Managed Desktop](../get-ready/network.md). 
 
 Les exceptions de site proxy que vous ajoutez dans le portail de bureau géré Microsoft sont ajoutées aux exceptions de proxy par défaut fournies avec le service bureau géré Microsoft. 
