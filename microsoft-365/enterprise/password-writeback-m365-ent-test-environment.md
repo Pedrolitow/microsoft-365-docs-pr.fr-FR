@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 51ac9caf1cbc2edd979d9529301388a30981ee44
-ms.sourcegitcommit: e749e2db2a15bb52b1a2857dbccdf55c31cff3d7
+ms.openlocfilehash: 6dada4734798d0e30b50e271520742f3b170ebaf
+ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340104"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573428"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
@@ -47,7 +47,7 @@ Suivez les instructions fournies dans l’article [Synchronisation de hachage de
   
 Cette configuration se compose des éléments suivants :  
   
-- Les abonnements à la version permanente ou d’évaluation Office 365 E5 et EMS E5.
+- Les abonnements à la version payante ou d’évaluation Office 365 E5 et EMS E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
 - Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Windows Server AD TESTLAB avec le client Azure AD de vos abonnements Office 365 et EMS E5.
 
@@ -124,7 +124,7 @@ Voici la configuration obtenue :
 
 Cette configuration se compose des éléments suivants : 
 
-- Les abonnements à la version permanente ou d’évaluation Office 365 E5 et EMS E5 avec le domaine DNS TESTLAB.\<votre nom de domaine> enregistré.
+- Les abonnements à la version payante ou d’évaluation Office 365 E5 et EMS E5 avec le domaine DNS TESTLAB.\<votre nom de domaine> enregistré.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
 - Azure AD Connect s’exécute sur APP1 pour synchroniser la liste des comptes et des groupes du client Azure AD de vos abonnements Office 365 et EMS E5 au domaine Windows Server AD TESTLAB. 
 - L’écriture différée de mot de passe est activée afin que les utilisateurs puissent modifier leur mot de passe via Azure AD sans avoir à se connecter à l’intranet simplifiée.
