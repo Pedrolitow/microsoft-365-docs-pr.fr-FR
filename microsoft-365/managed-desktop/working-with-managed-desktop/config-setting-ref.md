@@ -7,19 +7,19 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8839be023844ae4de17972790ec9d02b82c75244
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414192"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900273"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Référence des paramètres configurables-bureau géré Microsoft
 
 Cette rubrique répertorie les catégories de paramètres que les clients peuvent configurer avec le bureau géré Microsoft. Chaque catégorie de paramètres comprend des informations sur les exigences, les meilleures pratiques et la personnalisation de la catégorie de paramètres. 
 
 ## <a name="desktop-background-picture"></a>Image d'arrière-plan du Bureau
-Vous pouvez personnaliser l'image d'arrière-plan du Bureau pour les appareils de bureau gérés Microsoft dans votre organisation. Vous pouvez l'utiliser pour appliquer une marque de société ou une promotion 
+Vous pouvez personnaliser l'image d'arrière-plan du Bureau pour les appareils de bureau gérés Microsoft dans votre organisation. Vous pouvez l'utiliser pour appliquer une marque de société ou une documentation marketing. 
 
 ### <a name="requirements"></a>Configuration requise
 
@@ -35,7 +35,7 @@ Ces conditions doivent être remplies pour une image d'arrière-plan de bureau:
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans espace de travail **configurable** , sélectionnez **image d'arrière-plan du Bureau**. 
 4. Entrez l'emplacement de l'image que vous souhaitez utiliser. 
-5. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer sur l'anneau de test. 
+5. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test. 
 
 ## <a name="browser-start-pages"></a>Pages de démarrage du navigateur
 Les pages de démarrage de navigateur s'ouvrent dans des onglets individuels lorsque les utilisateurs démarrent Microsoft Edge. Si vous souhaitez que vos utilisateurs puissent facilement ouvrir un ensemble de sites qu'ils utilisent fréquemment, ajoutez une page de démarrage de navigateur pour chaque site. 
@@ -53,7 +53,7 @@ Vous devez indiquer le nom de domaine complet (FQDN) pour les sites intranet ou 
 4. Sélectionnez **Ajouter une page de démarrage**.
 5. Dans **Ajouter la page de démarrage du navigateur**, entrez l'URL du site que vous souhaitez utiliser, puis sélectionnez **Ajouter une page de démarrage**. 
 6. Répétez les étapes 1-5 pour les pages de démarrage de navigateur supplémentaires. 
-7. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer sur l'anneau de test.
+7. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test.
 
 ## <a name="enterprise-mode-site-list-location"></a>Emplacement de la liste de sites en mode entreprise
 
@@ -82,7 +82,7 @@ Ces meilleures pratiques sont proposées pour aider les clients à prendre des d
 2.  Sous **paramètres**, sélectionnez **configurable**.
 3.  Dans espace de travail **configurable** , sélectionnez l'emplacement de la **liste de sites en mode entreprise**. 
 4.  Entrez l'emplacement https de votre liste de sites. 
-5.  Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer sur l'anneau de test.
+5.  Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test.
 
 ## <a name="trusted-sites"></a>Sites approuvés
 
@@ -105,7 +105,7 @@ Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet 
 3. Dans espace de travail **configurable** , sélectionnez **sites de confiance**, puis **Ajouter un site approuvé**. 
 4. Sur **Ajouter un site approuvé**, entrez l'URL, choisissez une zone de sécurité, puis sélectionnez **Ajouter un site approuvé**. 
 5. Répétez les étapes 1-4 pour chaque site approuvé que vous souhaitez ajouter. 
-6. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer sur l'anneau de test.
+6. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test.
 
 **Pour supprimer un site approuvé**
 
@@ -114,7 +114,7 @@ Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet 
 3. Dans espace de travail **configurable** , sélectionnez **sites de confiance**. 
 4. Sélectionnez le site que vous souhaitez supprimer, puis sélectionnez **supprimer**. 
 5. Répétez les étapes 1-4 pour chaque site approuvé à supprimer. 
-6. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer sur l'anneau de test.
+6. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test.
 
 ## <a name="proxy"></a>Établir
 Vous pouvez gérer les paramètres de proxy réseau pour votre organisation. Ajoutez votre serveur proxy et votre numéro de port, puis ajoutez les exceptions de votre site proxy. Microsoft maNaged Desktop inclut un ensemble d'exceptions de proxy par défaut qui sont requises pour le fonctionnement du service. La liste d'exclusion par défaut ne peut être modifiée que par le service bureau géré Microsoft.  Pour plus d'informations, consultez la rubrique [Configuration réseau pour Microsoft Managed Desktop](../get-ready/network.md). 
@@ -140,7 +140,7 @@ Ces exigences doivent être satisfaites pour les exceptions de serveur proxy et 
 4. Entrez l' **adresse** et le **numéro de port** de votre serveur proxy, puis sélectionnez Ajouter une exception de **proxy**. 
 5. Entrez l'URL d'un site http valide, puis sélectionnez **Ajouter une exception de proxy**. 
 6. Répétez les étapes 1-5 pour chaque site approuvé que vous souhaitez ajouter. 
-7. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer sur l'anneau de test.
+7. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test.
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Vue d'ensemble des paramètres configurables](config-setting-overview.md) 

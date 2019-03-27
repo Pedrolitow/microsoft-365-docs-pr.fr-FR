@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea957d02484eac9a2e8b51f53d6e2c34f2b3d711
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 0d30e92eb9747079a7edc5a8fd198298508f342e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414182"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900263"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Paramètres configurables-bureau géré Microsoft
 
@@ -20,7 +20,7 @@ Microsoft maNaged Desktop déploie les paramètres et les stratégies qui sont a
 
 Configurable Settings in Microsoft maNaged Desktop offre aux administrateurs informatiques un moyen de personnaliser et de déployer des paramètres propres à leur organisation et leurs besoins professionnels. Ces paramètres s'ajoutent aux stratégies et aux paramètres de configuration des appareils qui sont gérés par le bureau géré Microsoft.  
 
-Les modifications de paramètres configurables sont apportées dans le Cloud et appliquées à vos appareils de bureau gérés par Microsoft dans des sonneries de déploiement définies. Ce processus est similaire à la façon dont Microsoft maNaged Desktop gère les modifications apportées aux stratégies et paramètres de l'appareil configuruation qui sont définis et gérés par le service. À l'aide de la même procédure que celle utilisée par Microsoft maNaged Desktop pour le déploiement des modifications, vous continuez à faire avancer votre organisation à l'aide des pratiques modernes de gestion informatique.
+Les modifications de paramètres configurables sont apportées dans le Cloud et appliquées à vos appareils de bureau gérés par Microsoft dans des groupes de déploiement définis. Ce processus est similaire à la façon dont Microsoft maNaged Desktop gère les modifications apportées aux stratégies et paramètres de l'appareil configuruation qui sont définis et gérés par le service. À l'aide de la même procédure que celle utilisée par Microsoft maNaged Desktop pour le déploiement des modifications, vous continuez à faire avancer votre organisation à l'aide des pratiques modernes de gestion informatique.
 
 ## <a name="when-to-use-configurable-settings"></a>Quand utiliser des paramètres configurables?
 
@@ -47,9 +47,9 @@ Par exemple :
 
 ## <a name="configurable-setting-process"></a>Processus de définition configurable
 
-Le processus global se présente comme suit. 
+Microsoft maNaged Desktop recommande de suivre un processus similaire à celui-ci lors de l'utilisation de paramètres configurables pour votre organisation:
 
-**Étape 1-plan** : Découvrez les paramètres configurables et déterminez les catégories de paramètres que vous souhaitez configurer pour votre organisation. Planifiez la communication avec vos utilisateurs qui répond à vos processus de gestion des modifications internes. Par exemple, si vous ajoutez des pages de démarrage de navigateur, indiquez à vos utilisateurs qu'ils disposeront d'un nouveau jeu de pages de démarrage dans leur navigateur après le déploiement.  
+**Étape 1-plan** : Découvrez les paramètres configurables et déterminez les catégories de paramètres que vous souhaitez configurer pour votre organisation. Créez une chronologie pour le moment où vous prévoyez de déployer les modifications apportées à chaque groupe. Planifiez la communication avec vos utilisateurs qui répond à vos processus de gestion des modifications internes. Par exemple, si vous ajoutez des pages de démarrage de navigateur, indiquez à vos utilisateurs qu'ils disposeront d'un nouveau jeu de pages de démarrage dans leur navigateur après le déploiement.  
 
 **Étape 2: configurer et déployer le déploiement** : modifiez les paramètres configurables dans le portail d'administration de bureau géré Microsoft. Préparez les modifications de sorte qu'elles soient prêtes à être déployées. N'oubliez pas de donner aux utilisateurs des informations sur les modifications, ainsi que la façon dont les modifications modifieront leur expérience de l'appareil.   
 
@@ -57,14 +57,14 @@ Vous configurez et modifiez les étapes dans le portail d'administration de bure
 
 **Étape 3-communiquer les modifications** Communiquer des informations sur les modifications à venir à vos utilisateurs. Pour chaque déploiement, effectuez la communication qui fait partie de vos processus de gestion des modifications. Vous devez communiquer clairement toute modification qui influe sur le fonctionnement d'un utilisateur ou sur ses appareils.
 
-**Étape 4: déployer les modifications** – déployez vos modifications, en commençant par le Ring test. L'anneau de test vous permet de valider et de résoudre les problèmes liés à un anneau avec moins de périphériques, avant de déployer des modifications sur des groupes plus importants d'appareils. Si vous rencontrez des problèmes, vous pouvez annuler la modification, mettre à jour le paramètre et déployer un nouveau déploiement. Microsoft maNaged Desktop recommande de suivre l'approche structurée et de la déployer sur les anneaux dans cet ordre: test, First, Fast, puis large.   
+**Étape 4-déployer les modifications** – déployez vos modifications, en commençant par le groupe de test. Le groupe de test vous permet de valider et de résoudre les problèmes rencontrés dans un groupe avec moins d'appareils, avant de déployer des modifications sur des groupes plus importants d'appareils. Si vous rencontrez des problèmes, vous pouvez annuler la modification, mettre à jour le paramètre et déployer un nouveau déploiement. Microsoft maNaged Desktop recommande de suivre l'approche structurée et de déployer des groupes dans cet ordre: test, First, Fast, puis large.   
 
 Tous les paramètres configurables sont gérés à l'aide du portail d'administration de bureau géré Microsoft. Pour plus d'informations, consultez la rubrique [Deploy changes](config-setting-deploy.md). 
 
 **Étape 5-suivi des modifications** – suivez la progression de vos modifications sur l'état du déploiement. Pour chaque paramètre, vous pouvez:
 - **Suivre l'avancement** : suivre l'état après le déploiement de la modification. L'État prend la valeur **en cours**, puis **terminé**ou **échec**. En cas d'échec d'un déploiement, une demande de support est automatiquement ouverte pour les opérations de bureau géré Microsoft pour examiner le problème.  
 - **Voir version déployée** : chaque modification déployée possède un numéro de version.
-- **Rétablir les modifications** : la restauration d'une modification arrête le déploiement actuel et rétablit les dernières modifications qui ont été déployées sur toutes les sonneries. Vous revenez à la dernière valeur de paramètre correcte.
+- **Rétablir les modifications** : la restauration d'une modification arrête le déploiement actuel et rétablit tous les groupes avec les dernières modifications qui ont été déployées sur tous les groupes. Vous revenez à la dernière valeur de paramètre correcte.
 - **Valider les modifications** -une fois le déploiement terminé, vérifiez que les modifications ont été appliquées comme prévu.  
 
 Si un déploiement a échoué ou si vous ne pouvez pas annuler une modification, [ouvrez une demande de support](admin-support.md) avec Microsoft maNaged Desktop Operations. 

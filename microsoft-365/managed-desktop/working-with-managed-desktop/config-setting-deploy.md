@@ -7,53 +7,53 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 62a17c95f5dc6b11f446a27684c507d7aaa95b7b
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 4662373b926d07558ecedd05c9dfcf472ceb6357
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414166"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900283"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables-bureau géré Microsoft
 
-Après avoir apporté des modifications à vos catégories de paramètres et à déployer un déploiement, vous pouvez déployer et suivre la progression du déploiement sur l'état du déploiement. Cette page affiche un résumé de chaque paramètre configurable. Ouvrez une catégorie de paramètres pour afficher chaque déploiement et ses détails, afin de déployer les modifications. 
+Une fois que vous avez apporté des modifications à vos catégories de paramètres et que vous déployez un déploiement, la page État du déploiement vous permet de commencer à déployer vos paramètres dans des groupes. Cette page affiche un résumé de chaque paramètre configurable. En ouvrant une catégorie de paramètres, vous pouvez déployer des paramètres dans des groupes et suivre la progression de ces déploiements.
 
 ## <a name="deployment-statuses"></a>Statuts de déploiement 
 
 Voici les statues que vous verrez pour chaque déploiement.
 
-Status  | Explication 
+Statut  | Explication 
 --- | --- 
-Déployer | Votre modification attend d'être déployée sur cette sonnerie.
-En cours | La modification est appliquée aux appareils actifs dans cette sonnerie. 
-Exécuter | Modification effectuée sur tous les périphériques actifs de cette sonnerie. 
-Failed | La modification a échoué sur 10% des appareils actifs dans l'anneau, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
-Retrouveront | La modification a été rétablie à la dernière modification qui a été correctement déployée sur toutes les sonneries de déploiement.
+Déployer | Votre modification attend d'être déployée sur ce groupe.
+En cours | La modification est appliquée aux appareils actifs de ce groupe. 
+Exécuter | Modification effectuée sur tous les appareils actifs de ce groupe. 
+Failed | La modification a échoué sur 10% des appareils actifs dans le groupe, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
+Retrouveront | Le changement a été rétabli sur la dernière modification qui a été déployée avec succès sur tous les groupes de déploiement.
 
 ## <a name="deploy-changes"></a>Déployer les modifications
 
-Nous allons afficher l'image d'arrière-plan du bureau dans ces instructions. Une fois que vous avez déployé un déploiement, vous déployez les modifications à partir de l'état du déploiement. 
+Nous allons afficher l'image d'arrière-plan du bureau dans ces instructions. Une fois que vous avez déployé un déploiement, vous déployez les modifications à partir de la page État du déploiement. 
 
 **Pour déployer les modifications**
 
 1. Se connecter au [portail d'administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans l'espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez déployer, puis sélectionnez le déploiement intermédiaire à déployer.
-4. Sélectionnez **déployer** pour déployer la modification vers l'une des sonneries de déploiement.
+4. Sélectionnez **déployer** pour déployer la modification dans l'un des groupes de déploiement.
 
 ![Vue d'ensemble du statut de déploiement des paramètres configurables](images/deploy-cs-overview.png)
 
-Microsoft maNaged Desktop recommande le déploiement aux sonneries de déploiement dans cet ordre: test, First, Fast, puis large. 
+Microsoft maNaged Desktop recommande le déploiement aux groupes de déploiement dans cet ordre: test, First, Fast, puis large. 
 
-Lorsque les modifications sont terminées dans chaque sonnerie, l'État devient **terminé**.
+Lorsque les modifications sont terminées dans chaque groupe, l'État devient **terminé**.
 
 ![Déploiement des paramètres configurables terminé](images/config-setting-complete.png)
 
 ## <a name="revert-deployment"></a>Rétablir le déploiement
 
-Nous allons afficher l'image d'arrière-plan du bureau dans ces instructions. 
+Une fois que vous avez déployé une modification, vous pouvez revenir à l' **État de déploiement**. Lorsque vous rétablissez une modification qui est **en cours** ou **terminée**, le déploiement actuel s'arrête. Le paramètre reprendra la dernière version qui a été déployée sur tous les groupes. 
 
-Une fois que vous avez déployé une modification, vous pouvez revenir à l' **État de déploiement**. Lorsque vous rétablissez une modification qui est **en cours** ou **terminée**, le déploiement actuel s'arrête. Le paramètre reprendra la dernière version qui a été déployée sur toutes les sonneries. 
+Nous allons vous montrer les étapes permettant de rétablir une modification à l'aide de l'image d'arrière-plan du Bureau à titre d'exemple. 
 
 **Pour annuler une modification**
 1. Se connecter au [portail d'administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
