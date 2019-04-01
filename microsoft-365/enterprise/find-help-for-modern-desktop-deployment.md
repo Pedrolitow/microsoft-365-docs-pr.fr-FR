@@ -1,5 +1,5 @@
 ---
-title: Trouver de l’aide pour votre déploiement Modern Desktop
+title: Assistance pour votre déploiement de Windows 10 et Office 365 ProPlus
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,19 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Où trouver des ressources d’aide et support pour votre déploiement Modern Desktop.
-ms.openlocfilehash: 7c6f68320165abdfd131a84e84345bd6ff6d47c1
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+description: Où trouver de l’aide et une assistance pour votre déploiement de Windows 10 et Office 365 ProPlus.
+ms.openlocfilehash: 78d231dbcb5f965e2b4233bc7980da31fbfcbc2e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241967"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900253"
 ---
-# <a name="find-help-for-your-modern-desktop-deployment"></a>Trouver de l’aide pour votre déploiement Modern Desktop 
+# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Assistance pour votre déploiement de Windows 10 et Office 365 ProPlus 
 
 Si vous planifiez votre déploiement de Windows 10 avec Office 365 ProPlus, il existe plusieurs options pour obtenir une aide supplémentaire de partenaires certifiés Microsoft et [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
-Voici une carte des services disponibles alignée au processus[déploiement Modern Desktop](http://www.aka.ms/howtoshift) pour Windows 10, Office 365 ProPlus et Enterprise Mobility + Security avec partenaire existants et offres FastTrack. Dans de nombreux cas, ces services sont inclus dans votre abonnement éligible à Microsoft 365, Office 365 ou Windows 10 Entreprise. Pour les services menés par les partenaires tels que l’évaluation Modern Desktop, en tant qu’organisation qualifiée, Microsoft fournit un coupon pour les services effectués par le partenaire. Les détails de chaque offre sont disponibles dans les liens ci-dessous.
+Voici une carte des services disponibles alignés sur le processus de [déploiement de bureau](http://www.aka.ms/howtoshift) pour Windows 10, Office 365 ProPlus et Enterprise Mobility + Security avec des partenaire existants et des offres FastTrack. Dans de nombreux cas, ces services sont inclus dans votre abonnement Microsoft 365, Office 365 ou Windows 10 Entreprise éligible. Pour les services gérés par un partenaire tels que l’évaluation de bureau Windows 10 et Office 365 ProPlus, en tant qu’organisation éligible, Microsoft fournit un bon d'échange pour les services rendus par le partenaire. Chaque offre est présentée en détail dans les liens ci-dessous.
 
 <br>
 
@@ -104,8 +104,8 @@ Pour participer à des questions spécifiques lorsque vous envisagez ou commence
 
 ## <a name="related-resources"></a>**Ressources connexes**
 
-  - [Centre de déploiement de Modern Desktop](http://www.aka.ms/howtoshift)
+  - [Centre de déploiement de Desktop](http://www.aka.ms/howtoshift)
 
-  - [Vidéos de la série de déploiement de Modern Desktop de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Vidéos de la série de déploiement des ordinateurs de bureau de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - [Déploiement de Modern Desktop et kit lab de gestion](https://aka.ms/howtoshiftlabs)
+  - [Déploiement de Desktop et du kit Lab de gestion](https://aka.ms/howtoshiftlabs)
