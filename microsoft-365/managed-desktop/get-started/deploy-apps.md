@@ -5,14 +5,13 @@ keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation, appl
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 01/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: febb3198c434e638f83c412a3f8a3b688d9f5bd1
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 5ccb240460958d5978f4fd19e08652123790784e
+ms.sourcegitcommit: 2211f57c268754d242d6331c188143f818f5a9f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414165"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31039593"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>Déployer des applications sur des appareils de bureau gérés Microsoft
 L'intégration à Microsoft maNaged Desktop inclut l'ajout et le déploiement d'applications sur les appareils de vos utilisateurs. Une fois que vous utilisez le portail de bureau géré Microsoft, vous pouvez ajouter et déployer vos applications. 
@@ -83,7 +82,7 @@ Créez trois groupes Azure AD pour chaque application. Ce tableau décrit les gr
 Type d'affectation d'application |   Utilisation de groupe   | Exemple de nom Azure AD
 --- | --- | ---
 Available |  L'application sera disponible à partir de l'application ou du site Web du portail d'entreprise. | MMD – *nom* de l'application – disponible
-Requis |  L'application est installée sur les appareils dans les groupes sélectionnés. | MMD – *nom* de l'application – obligatoire
+Obligatoire |  L'application est installée sur les appareils dans les groupes sélectionnés. | MMD – *nom* de l'application – obligatoire
 Uninstall |  L'application est désinstallée des appareils dans les groupes sélectionnés. | MMD – *nom* de l'application – Uninstall
 
 Ajoutez vos utilisateurs à ces groupes pour que l'application soit disponible, installez l'application ou supprimez l'application de son appareil de bureau géré Microsoft. 
