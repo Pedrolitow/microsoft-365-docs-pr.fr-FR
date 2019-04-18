@@ -6,16 +6,16 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2317a0581b356dadbde2042920ed2542f0e2203c
-ms.sourcegitcommit: 392b906e64d27366b47931e8285b625e5e2f884e
+ms.openlocfilehash: c4ebe0c7ad3d1e197cf90cc975366df61d3b0cb5
+ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31838165"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901208"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Préparation de l'accès aux ressources locales pour le bureau géré Microsoft
 
-Dans Microsoft maNaged Desktop, les appareils sont automatiquement joints à Azure Active Directory. Cela signifie que si vous utilisez un annuaire Active Directory local, vous devrez vérifier certaines choses pour vous assurer que les appareils joints à Azure AD peuvent communiquer avec votre Active Directory local. 
+Dans le bureau géré Microsoft, les appareils sont automatiquement joints à Azure Active Directory (Azure AD). Cela signifie que si vous utilisez un annuaire Active Directory local, vous devrez vérifier certaines choses pour vous assurer que les appareils joints à Azure AD peuvent communiquer avec votre Active Directory local. 
 
 > [!NOTE]  
 > *Hybride* La participation à Azure AD n'est pas prise en charge par le bureau géré Microsoft.
@@ -30,22 +30,22 @@ Cette rubrique décrit les éléments que vous devez vérifier afin de vous assu
 
 ## <a name="single-sign-on-for-on-premises-resources"></a>Authentification unique pour les ressources locales
 
-L'authentification unique (SSO) à l'aide de l'UPN et des mots de passe est activée par défaut sur les appareils de bureau géré Microsoft. Toutefois, vos utilisateurs peuvent également utiliser Windows Hello entreprise, ce qui nécessite des étapes de configuration supplémentaires. 
+L'authentification unique (SSO) à l'aide de l'UPN et du mot de passe est activée par défaut sur les appareils de bureau géré Microsoft. Toutefois, vos utilisateurs peuvent également utiliser Windows Hello entreprise, ce qui nécessite des étapes de configuration supplémentaires. 
 
-### <a name="single-sign-on-by-using-upn-and-passwords"></a>Authentification unique à l'aide de l'UPN et des mots de passe
+### <a name="single-sign-on-by-using-upn-and-password"></a>Authentification unique à l'aide de l'UPN et du mot de passe
 
 Dans la plupart des organisations, vos utilisateurs peuvent utiliser l'authentification unique pour s'authentifier par nom d'utilisateur et mot de passe sur les appareils de bureau gérés Microsoft. Toutefois, pour vous assurer que cela fonctionne, vous devez vérifier les points suivants:
 
-- Vérifiez que la connexion à Azure Active Directory (AAD) est configurée et qu'elle utilise un serveur Active Directory local exécutant Windows Server 2008 R2 ou une version ultérieure.
-- Vérifiez que AAD Connect exécute une version prise en charge et qu'il est configuré pour synchroniser ces trois attributs avec Azure AD: 
+- Vérifiez qu'Azure AD Connect est configuré et qu'il utilise un serveur Active Directory local exécutant Windows Server 2008 R2 ou une version ultérieure.
+- Vérifiez qu'Azure AD Connect exécute une version prise en charge et qu'il est configuré pour synchroniser ces trois attributs avec Azure AD: 
     - Nom de domaine DNS de l'annuaire Active Directory local (où se trouvent les utilisateurs finaux)
-    - NetBIOS de yor Active Directory local (où se trouvent les utilisateurs finaux)
+    - NetBIOS de votre Active Directory local (où se trouvent les utilisateurs finaux)
     - Nom de compte SAM de l'utilisateur
 
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Authentification unique à l'aide de Windows Hello entreprise
 
-Les appareils de bureau gérés par Microsoft offrent également à vos utilisateurs une expérience rapide et avec mot de passe en utilisant Windows Hello entreprise. Pour vous assurer que Windows Hello entreprise fonctionnera sans que vos utilisateurs aient à fournir un nom d'utilisateur principal et des mots de passe, rendez-vous [sur configurer des appareils joints Azure AD pour l'authentification unique locale à l'aide de Windows Hello entreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) pour vérifier la configuration requise, puis suivez les étapes fournies.
+Les appareils de bureau gérés par Microsoft offrent également à vos utilisateurs une expérience rapide et avec mot de passe en utilisant Windows Hello entreprise. Pour vous assurer que Windows Hello entreprise fonctionnera sans que vos utilisateurs aient à fournir un nom d'utilisateur principal et un mot de passe respectifs, rendez-vous [sur configurer des appareils joints Azure AD pour l'authentification unique locale à l'aide de Windows Hello entreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) pour vérifier la configuration requise, puis Suivez les étapes fournies.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>Applications et ressources qui utilisent l'authentification
