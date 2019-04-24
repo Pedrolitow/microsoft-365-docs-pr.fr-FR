@@ -3,22 +3,22 @@ title: Critères de sortie du déploiement d’Office 365 ProPlus
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2018
+ms.date: 03/06/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure Office 365 ProPlus.
-ms.openlocfilehash: c38539d85e1c826667b7a8a177a15ab75350aa5f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c9a2afeae8d28170f4e8a15531a08e6b94cb48c2
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291072"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Critères de sortie du déploiement d’Office 365 ProPlus
 
@@ -26,7 +26,7 @@ ms.locfileid: "26866826"
 
 *Cela s’applique aux versions E3 et E5 de Microsoft 365 Entreprise et Microsoft 365 Éducation*
 
-Avant de passer à la phase suivante dans le processus de déploiement, vérifiez que votre configuration répond aux critères requis suivants pour l’infrastructure Office 365 ProPlus.
+Assurez-vous que votre configuration répond aux critères de l’infrastructure Microsoft Office 365 ProPlus.
 
 - L’évaluation de l’infrastructure et de l’environnement est terminée, notamment :
 
@@ -52,9 +52,12 @@ Avant de passer à la phase suivante dans le processus de déploiement, vérifie
     - Tous les appareils clients sont dans le canal de mise à jour approprié et reçoivent les mises à jour
     - Les langues appropriées sont installées ou disponibles sur tous les appareils clients
 
-## <a name="next-phase"></a>Phase suivante 
 
+
+## <a name="results-and-next-steps"></a>Tests et étapes suivantes
+
+Vos appareils client des dernières disposent des versions Office 365 ProPlus les plus récentes et recevront les mises à jour en continu.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Votre phase suivante dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise est la [gestion des appareils mobiles](mobility-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Si vous suivez les phases suivantes dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est la [gestion des appareils mobiles](mobility-infrastructure.md). |

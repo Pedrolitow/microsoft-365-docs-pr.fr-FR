@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les considérations importantes relatives à la sécurité et à la conformité de Windows et d’Office.
-ms.openlocfilehash: 3b0e9ae38f988b8c148fe67eeeb629a9fce23037
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ff3adb5ef517c3b3115b867b585c090329ed6ac6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290028"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Étape 5 : considérations relatives à la sécurité et à la conformité
-
-Examinez les options de ciblage de nouvelles fonctionnalités de sécurité et de conformité dans le cadre du déploiement de bureaux moderne, ainsi que les considérations et les obstacles courants lors de la migration des versions précédentes de Windows et d’Office.
 
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
@@ -36,10 +34,10 @@ Examinez les options de ciblage de nouvelles fonctionnalités de sécurité et d
 </table>
 
 >[!NOTE]
->La partie relative à la sécurité et à la conformité est la cinquième étape de notre processus de déploiement recommandé couvrant les considérations relatives à la sécurité et à la conformité de Windows 10 et d’Office 365 ProPlus. Pour afficher l’ensemble du processus de déploiement de bureaux, visitez le [centre de déploiement de bureaux moderne](https://aka.ms/HowToShift).
+>La partie relative à la sécurité et à la conformité est la cinquième étape de notre processus de déploiement recommandé couvrant les considérations relatives à la sécurité et à la conformité de Windows 10 et d’Office 365 ProPlus. Pour afficher le processus de déploiement de bureau complet, visitez le [Centre de déploiement de Bureau](https://aka.ms/HowToShift).
 >
 
-De nombreuses fonctionnalités de sécurité dans Windows 10 mènent à elles seules la migration vers la plateforme la plus récente. Par ailleurs, l’intégration avec les services cloud dans Office 365 et les options d’identité utilisant Azure Active Directory donnent accès à de nouvelles protections mises à jour en continu pour vos données, vos périphériques et vos utilisateurs.
+Examinez les options de ciblage de nouvelles fonctionnalités de sécurité et de conformité dans le cadre du déploiement de Windows 10 et Office 365 ProPlus, ainsi que les considérations et les obstacles courants lors de la migration des versions précédentes de Windows et d’Office. Bon nombre des fonctionnalités de sécurité dans Windows 10 seul façonne l’évolution vers la plateforme la plus récente. Par ailleurs, l’intégration avec les services cloud dans Office 365 et les options d’identité utilisant Azure Active Directory donnent accès à de nouvelles protections mises à jour en continu pour vos données, vos périphériques et vos utilisateurs.
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>Surmonter les blocages potentiels du déploiement liés à la sécurité
 
