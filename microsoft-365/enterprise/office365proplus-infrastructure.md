@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Étapes du déploiement de l’infrastructure Office 365 ProPlus pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 3f6630d4c120609cbb1737ad96644d43eb2fda3c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290939"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4 : Office 365 ProPlus
 
@@ -89,7 +89,6 @@ Si votre organisation utilise Configuration Manager, nous vous recommandons de p
 
 Découvrez comment les experts Microsoft ont planifié et déployé Office 365 ProPlus dans Microsoft 365 Entreprise avec les ressources suivantes :
 
-- [Préparation de votre organisation pour un déploiement en douceur d’Office 365 ProPlus 2016](https://www.microsoft.com/itshowcase/Office365adoption)
 - [Déploiement et mise à jour de Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Les canaux d’automatisation et de mise à jour facilitent le déploiement de Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (vidéo)
 

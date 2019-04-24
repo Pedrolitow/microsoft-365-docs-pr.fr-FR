@@ -3,7 +3,7 @@ title: Écriture différée de mot de passe pour votre environnement de test Mic
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 11a0efbae09c36098a19725187cd43b53850f4fc
-ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
+ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291449"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
@@ -39,7 +39,7 @@ Il existe deux phases de configuration :
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
   
-## <a name="phase-1-configure-password-hash-synchronization-and-password-reset-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe et réinitialisation du mot de passe pour votre environnement de test Microsoft 365
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
 Tout d’abord, suivez les instructions fournies dans l’article [Synchronisation de hachage de mot de passe](password-hash-sync-m365-ent-test-environment.md). Voici la configuration que vous obtenez.
   
@@ -50,10 +50,6 @@ Cette configuration se compose des éléments suivants :
 - Les abonnements à la version payante ou d’évaluation Office 365 E5 et EMS E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
 - Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Windows Server AD DS avec le client Azure AD, le client de vos abonnements Office 365 et EMS E5.
-
-Ensuite, suivez les instructions du Guide de laboratoire de Test dans la [Phase 2 de la réinitialisation de mot de passe](password-reset-m365-ent-test-environment.md#phase-2-configure-and-test-password-reset).
-
-La fonction de réinitialisation du mot de passe doit être activée pour utiliser l’écriture différée du mot de passe.
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>Phase 2 : Activer l’écriture différée de mot de passe pour le domaine TESTLAB AD DS.
 

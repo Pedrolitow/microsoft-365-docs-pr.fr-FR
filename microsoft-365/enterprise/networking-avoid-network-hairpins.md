@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez le fonctionnement des épingles de réseau et supprimez-les pour obtenir de meilleures performances.
-ms.openlocfilehash: 7277b8f5c07bc156599f946e032c3345da3316e9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: eef8770dff6c54da51650b0fb70077fdd125f981
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291518"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>Étape 3 : Éviter les épingles de réseau
 

@@ -2,21 +2,21 @@
 title: Notification de violation dans Office 365 dans le cadre du RGPD
 description: Protection de Microsoft vis-à-vis des violations de données personnelles, et réponse et notification de Microsoft en cas de violation.
 keywords: Office 365, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: c2ee959aad883516f03e903d34f517b4e76e4864
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 6b91b489d8d69faffa0852c3e352a6b2e9e9d496
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286364"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Notification de violation dans Office 365 dans le cadre du RGPD
 
