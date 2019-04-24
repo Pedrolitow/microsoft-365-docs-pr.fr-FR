@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -15,41 +16,29 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: 'Découvrez comment mettre à niveau des périphériques Windows à mettre à jour les créateurs Pro Windows 10. '
-ms.openlocfilehash: 5a9d232ffa50b642bdeab2dea391895e759e118b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Découvrez comment mettre à niveau les appareils Windows vers Windows 10 professionnel Creators Update. '
+ms.openlocfilehash: ec1ef0462cc1ba1cd1ae01ee28795096097e01a9
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279862"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Mettre à niveau les appareils Windows vers Windows Professionnel Creators Update
 
-## <a name="upgrade-to-windows-10-pro-creators-update"></a>Mettre à jour Pro créateurs de mise à niveau vers Windows 10
-
-1. Connectez-vous au [Centre d’administration de Microsoft](https://portal.office.com/adminportal/home) et recherchez la carte de **Mise à niveau de 10 Windows** . 
-    
-    ![Carte de mise à niveau de 10 Windows dans le centre d’administration.](media/066f47bf-7b88-4fea-8fd0-82798ea66716.png)
+## <a name="upgrade-to-windows-10-pro-creators-update"></a>Mise à niveau vers Windows 10 professionnel Creators Update
   
-2. Pour mettre à niveau vers Windows 10 Pro créateurs Update, vous disposez de plusieurs options. Vous pouvez :
+1. Pour effectuer une mise à niveau vers Windows 10 Pro Creators Update, plusieurs options s'offrent à vous. Vous pouvez :
     
-- Installer la mise à niveau à partir du site de téléchargement du logiciel Microsoft : sélectionnez cette option si le périphérique que vous êtes connecté est sur le même périphérique que celui que vous souhaitez mettre à jour.
+    - Installer la mise à niveau à partir du [site de téléchargement de logiciels de Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951 ) : sélectionnez cette option si l'appareil auquel vous êtes connecté se trouve sur le même appareil que celui que vous souhaitez mettre à jour.
     
-  a. Sélectionnez **installer la mise à niveau**.
+      a. À partir du site de téléchargement de logiciels, cliquez sur **mettre à jour maintenant** pour commencer la mise à niveau de l'appareil vers Windows 10 professionnel Creators Update. 
     
-  b. du logiciel du site de téléchargement, cliquez sur **mettre à jour maintenant** pour démarrer la mise à niveau de l’appareil à mettre à jour les créateurs Pro Windows 10. 
+     - Créer un support d'installation à l'aide de l' [outil de création de médias](https://go.microsoft.com/fwlink/?LinkID=836960) : sélectionnez cette option pour créer un support d'installation Windows 10 professionnel Creators Update (lecteur flash USB ou fichier ISO) pour installer Windows 10 sur un PC différent de celui que vous utilisez.
     
-- Partager le lien de téléchargement : sélectionnez cette option si vous souhaitez envoyer un message électronique aux personnes de votre organisation afin qu’ils peuvent mettre à niveau vers Windows 10 Pro par eux-mêmes.
- 
-   a. site de téléchargement sélectionnez **partager le téléchargement du** lien pour ouvrir un message électronique contenant un lien vers le logiciel Windows. 
+        a. Lisez les instructions relatives à l'utilisation de l'outil et à la création de votre support d'installation. 
     
- - Créer un support d’installation à l’aide de l’outil de création multimédia : sélectionnez cette option pour créer un support d’installation Windows 10 Pro créateurs Update (disque mémoire flash USB ou fichier ISO) pour installer Windows 10 sur un ordinateur qui est différent de celui que vous utilisez.
-    
-    a. Sélectionnez **créer support d’installation**.
-    
-    b. Lisez les instructions sur l’utilisation de l’outil et créer votre support d’installation. 
-    
-Voir [configurer les périphériques de Windows pour les utilisateurs Microsoft 365 Business](set-up-windows-devices.md) pour terminer la configuration des périphériques Windows 10. 
+Pour terminer la configuration des appareils Windows 10, rePortez-vous à la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365](set-up-windows-devices.md) . 
   
-Pour terminer la configuration des appareils Android et iOS, voir [configurer les appareils mobiles pour les utilisateurs professionnels 365 de Microsoft](set-up-mobile-devices.md) . 
+Pour terminer la configuration des appareils Android et iOS, consultez la rubrique [configurer des appareils mobiles pour les utilisateurs professionnels de Microsoft 365](set-up-mobile-devices.md) . 
   

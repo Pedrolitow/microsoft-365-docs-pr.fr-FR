@@ -11,6 +11,9 @@ f1_keywords:
 - BCS365_Win10AppPolicy
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -20,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Découvrez comment créer une stratégie de gestion d’application et de protection des fichiers de travail sur les appareils Windows 10.
-ms.openlocfilehash: acf19a72d994185a35b2e425f8334a73a121ee10
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Découvrez comment créer une stratégie de gestion des applications et protéger les fichiers de travail sur les appareils Windows 10.
+ms.openlocfilehash: 289c6a74f6ccb53f6a833612a7b4a5bcddd3ea56
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278167"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Définir les paramètres de protection des applications pour les appareils Windows 10
 
@@ -34,23 +37,21 @@ ms.locfileid: "26867041"
 
 Si vos utilisateurs disposent d'appareils Windows 10 sur lesquels ils effectuent des tâches professionnelles, vous pouvez également protéger vos données sur ces appareils.
   
-1. Connectez-vous à [Microsoft 365 Business](https://portal.office.com) avec des informations d'identification d'administrateur général. Sélectionnez la vignette **Administrateur** pour accéder au Centre d'administration. 
+1. Connectez-vous au [Centre d'administration](https://go.microsoft.com/fwlink/p/?linkid=837890) avec des informations d'identification d'administrateur général. Sélectionnez la vignette **Administrateur** pour accéder au Centre d'administration. 
     
-2. Dans la carte **Stratégies d'appareil** du portail d'administration, sélectionnez **Ajouter une stratégie**.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
-  
+2. Dans le volet de navigation de gauche, choisissez **Ajout**de **stratégies** \> de **périphériques** \> .
+
 3. Dans le volet **Ajouter une stratégie**, entrez un nom unique pour cette stratégie. 
     
 4. Sous **Type de stratégie**, sélectionnez **Gestion des applications pour Windows 10**.
     
-5. Sous ** type d’appareil **, choisissez **personnel** ou **Propriétaire de la société**.
+5. Under ** Device type **, choose either **Personal** or **Company Owned**.
     
 6. L'option **Chiffrer les fichiers de travail** est activée automatiquement. 
     
 7. Définissez **Empêcher les utilisateurs de copier des données d'entreprise dans leurs fichiers personnels et les obliger à enregistrer les fichiers professionnels dans OneDrive Entreprise** sur **Activé** si vous ne souhaitez pas que les utilisateurs enregistrent des fichiers professionnels sur leur PC. 
     
-8. Développez **gérer comment les utilisateurs d’accès aux fichiers Office sur des appareils** \> configurer les paramètres des manière dont vous souhaitez. **Gérer les dont les utilisateurs accèdent les périphériques Office sur des appareils mobiles** est **désactivée** par défaut, mais il est recommandé que vous **allumez** et acceptez les valeurs par défaut. Pour plus d’informations, voir [paramètres disponibles](protection-settings-for-windows-10-devices.md#bkmk_settings) . 
+8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. Pour plus d'informations, consultez la section [paramètres disponibles](#available-settings). 
     
     Vous pouvez toujours utiliser le lien **Réinitialiser les paramètres par défaut** pour rétablir la valeur par défaut. 
     

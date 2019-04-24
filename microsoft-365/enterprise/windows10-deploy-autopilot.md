@@ -4,17 +4,18 @@ description: Fournit des instructions sur la configuration et le déploiement de
 keywords: Microsoft 365, Microsoft 365 Entreprise, documentation Microsoft 365, Windows 10 Entreprise, déploiement, Windows Autopilot
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: ed3d21091acd5b54dfdc2917fca85ed0535c3332
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: f173bd2357d445b502a4b28b60399d5cdb087cd0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289254"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Étape 3 : Déployer Windows 10 Entreprise pour les nouveaux appareils avec Windows Autopilot
 

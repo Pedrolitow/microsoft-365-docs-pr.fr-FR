@@ -1,56 +1,57 @@
 ---
-title: Périphériques de commande dans l’ordinateur de bureau Microsoft
+title: Commander des appareils dans le bureau géré Microsoft
 description: ''
-keywords: Service Microsoft de bureau, Microsoft 365, documentation
+keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/25/2018
-ms.openlocfilehash: 75098621f505513f6855b08e9cd9816992e95a86
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 88efccaf3970f58281338e436edbb7110df2a7de
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289488"
 ---
-# <a name="order-microsoft-managed-desktop-devices"></a>Périphériques de bureau Microsoft de commande
+# <a name="order-microsoft-managed-desktop-devices"></a>Commander des appareils de bureau gérés Microsoft
 
-Microsoft est actuellement pilote d’une expérience d’achat à petite échelle dans les États-Unis (États-Unis), comme indiqué ci-dessous. Si vous êtes en dehors des États-Unis ou l’ordre de votre périphérique est pour les périphériques de plus de 50, il est recommandé de travailler avec un de ses partenaires périphérique approuvé. Vous pouvez atteindre votre contact de compte Microsoft pour plus d’aide pour configurer un partenariat de périphérique.
+Microsoft pilote actuellement une expérience de vente à petite taille aux États-Unis (É.U.), comme décrit ci-dessous. Si vous êtes en dehors des États-Unis ou si la commande de votre appareil est de plus de 50 appareils, nous vous recommandons de travailler avec l'un de nos partenaires d'appareils approuvés. Vous pouvez contacter votre contact de compte Microsoft pour plus d'informations sur la configuration d'un partenariat d'appareil.
 
-Comment dois-je commander des périphériques pour ordinateur de bureau Microsoft ?
+Comment dois-je commander des appareils pour le bureau géré Microsoft?
 
   |   
  --- | ---
-À partir d’aux États-Unis, l’ordre des périphériques moins de 50 | [Commande à partir du portail d’administration de bureau géré Microsoft](https://aka.ms/mmdportal)
-En dehors des États-Unis | Contactez votre équipe de Account Microsoft
-Classement de plus de 50 périphériques | Contactez votre équipe de Account Microsoft
+Depuis les États-Unis, en commandant moins de 50 appareils | [Commande à partir du portail d'administration de bureau géré Microsoft](https://aka.ms/mmdportal)
+En dehors des États-Unis | Contacter votre équipe de compte Microsoft
+Commande de plus de 50 appareils | Contacter votre équipe de compte Microsoft
 
 ## <a name="order-devices"></a>Commander des appareils
-Utilisez ces instructions pour les périphériques de commande aux États-Unis. Vous allez démarrer dans le **portail d’administration de bureau géré**de Microsoft, mais vous allez effectuer les achats par le biais de **Microsoft Store for Business**. 
+Suivez ces instructions pour commander des appareils aux États-Unis. Vous allez commencer dans le **portail d'administration de bureau géré**Microsoft, mais vous effectuerez les achats via **Microsoft Store pour les entreprises**. 
 
- **Sur les périphériques de commande**
- 1. Connectez-vous au [portail d’administration de bureau géré Microsoft](https://aka.ms/mmdportal)
- 2. Sur la mise en route, sous ordre de périphériques, sélectionnez **Ouvrir banque Microsoft pour les entreprises aux périphériques de commande**.
+ **Pour commander des appareils**
+ 1. Se connecter au [portail d'administration de bureau géré Microsoft](https://aka.ms/mmdportal)
+ 2. Sous prise en main, sous Order deVices, sélectionnez **Open Microsoft Store for Business to Order**Devices.
  
-    ![Mise en route, commander des périphériques](images/mmd-order-devices.png)
+    ![Mise en route, commandes appareils](images/mmd-order-devices.png)
     
-3. Dans Microsoft Store pour les entreprises, vous pouvez consulter les informations sur l’ordinateur de bureau Microsoft et un graphique de comparaison des périphériques disponibles. Cliquez sur **acheter** pour choisir un périphérique. 
+3. Dans Microsoft Store pour les entreprises, vous pouvez consulter des informations sur le bureau géré Microsoft et un tableau comparatif des périphériques disponibles. Cliquez sur **acheter** pour choisir un appareil. 
 
-    ![Magasin pour les entreprises, acheter](images/msfb-buy.png)
+    ![Stocker des affaires, acheter](images/msfb-buy.png)
 
-4. Dans **sélectionner votre périphérique**, sélectionnez le périphérique. 
+4. Sur **choisir votre appareil**, sélectionnez l'appareil de votre choix. 
 
-    ![Magasin pour les entreprises, appareil suggérés](images/msfb-pick-device.png)
+    ![Store for Business, Pick Device](images/msfb-pick-device.png)
 
-5. **Choisir les fonctionnalités de périphérique**, sélectionnez un **Plan de Service**, tapez le nombre de périphériques, puis cliquez sur **Ajouter au panier**.
+5. Dans **choisir les fonctionnalités du périphérique**, sélectionnez un **plan de service**, tapez le nombre d'appareils, puis cliquez sur **Ajouter au panier**.
 
-6. Passez en revue votre panier, puis sélectionnez **extraction**ou **Ajouter un autre périphérique**. 
+6. Examinez votre panier, puis sélectionnez **Checkout**, ou **Ajoutez un autre appareil**. 
 
-7. Continuer le processus de validation, passez en revue vos prix, acceptez les termes du contrat de licence et sélectionnez **se connecter et passer la commande**. 
+7. Poursuivez le processus de validation, vérifiez vos tarifs, acceptez les termes du contrat de licence, puis sélectionnez **signer et passer une commande**. 
 
-Les périphériques sont livrés généralement dans les trois jours. 
+Les appareils sont généralement expédiés dans les trois jours. 
 
-Lorsque vous avez terminé les périphériques de commandes, vous pouvez vérifier les périphériques commandée sur le [portail d’administration de bureau géré Microsoft](https://aka.ms/mmdportal). Dans le menu **inventaire**, sélectionnez **périphériques**. 
+Lorsque vous avez fini de commander des appareils, vous pouvez vérifier les périphériques que vous avez commandés dans le [portail d'administration de bureau géré Microsoft](https://aka.ms/mmdportal). Sous **inventaire**, sélectionnez **appareils**. 
 
-Lors de l’arrivent de périphériques, les distribuer à vos employés. Il n’existe aucune configuration ou la configuration requise. 
+Lorsque les appareils arrivent, les distribuent à vos employés. Il n'y a pas de configuration supplémentaire ou de configuration requise. 
 

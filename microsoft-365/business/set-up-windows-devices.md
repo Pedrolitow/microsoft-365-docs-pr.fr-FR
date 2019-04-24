@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Découvrez comment configurer les périphériques Windows exécutant Windows 10 professionnels de l’informatique pour les utilisateurs professionnels 365 de Microsoft. '
-ms.openlocfilehash: 482199b175c568bfae420619aa02024303894789
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Découvrez comment configurer des appareils Windows exécutant Windows 10 professionnel pour les utilisateurs professionnels de Microsoft 365. '
+ms.openlocfilehash: f93257bd9a68385fca4f178a2e09c5c11506ee2c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284321"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business
 
@@ -33,7 +36,7 @@ Si vous avez des appareils Windows exécutant Windows 7 Professionnel, Windows 8
   
 Pour plus d'informations sur la mise à niveau des appareils Windows vers Windows 10 Professionnel Creators Update, suivez les étapes décrites dans cette rubrique : [Mettre à niveau des appareils Windows vers Windows Professionnel Creators Update](upgrade-to-windows-pro-creators-update.md)
   
-Pour vérifier que vous disposez de la mise à niveau ou pour vous assurer que la mise à niveau a été effectuée, voir [Vérifier qu'un appareil a été mis à niveau vers Windows 10 Business](set-up-windows-devices.md#bkmk_verifywin10). 
+Consultez [vérifier que l'appareil est connecté à Azure ad](#verify-the-device-is-connected-to-azure-ad) pour vérifier que vous disposez de la mise à niveau ou pour vous assurer que la mise à niveau a fonctionné. 
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Joindre des appareils Windows 10 au service Azure AD de votre organisation
 
@@ -51,7 +54,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
     
 3. Terminez la configuration de l'appareil Windows 10.
     
-   Une fois cette opération terminée, l'utilisateur est connecté au domaine Azure AD de votre organisation. Pour vous en assurer, voir [Vérifier qu'un appareil est connecté à Azure AD](set-up-windows-devices.md#bkmk_verifyaad). 
+   Une fois cette opération terminée, l'utilisateur est connecté au domaine Azure AD de votre organisation. Pour vous en assurer, voir [Vérifier qu'un appareil est connecté à Azure AD](#verify-the-device-is-connected-to-azure-ad). 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>Pour un appareil qui a déjà été configuré et qui exécute Windows 10 Professionnel
 
@@ -79,7 +82,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
   
    ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. Sur la ** Assurez-vous qu’il s’agit de votre organisation ** page, vérifiez que les informations sont correctes, puis cliquez sur **joindre**.
+6. Sur la page vérifier qu' **il s'agit de votre organisation** , vérifiez que les informations sont correctes, puis cliquez sur **rejoindre**.
   
    À la page **Vous avez terminé.**, cliquez sur **Terminé**.
   
@@ -87,7 +90,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
   
 Si vous avez chargé des fichiers vers OneDrive Entreprise, synchronisez-les vers votre ordinateur. Si vous avez utilisé un outil tiers pour migrer un profil et des fichiers, synchronisez-les également avec le nouveau profil.
   
-## <a name="verify-the-device-is-connected-to-azure-ad"></a>Vérifier qu'un appareil est connecté à Azure AD
+## <a name="verify-the-device-is-connected-to-azure-ad"></a>Vérifiez que l’appareil est connecté à Azure AD
 
 Pour vérifier votre état de synchronisation, dans la page **Accès Professionnel ou Scolaire**, sous **Paramètres**, cliquez dans la zone **Connecté à** _ \<organization name\> _ pour afficher les boutons **Informations** et **Déconnexion**. Cliquez sur **Informations** pour obtenir votre état de synchronisation. 
   

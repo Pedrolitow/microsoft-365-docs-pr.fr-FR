@@ -1,60 +1,58 @@
 ---
-title: Aide administrateur pour le bureau géré Microsoft
+title: Prise en charge des administrateurs pour le bureau géré Microsoft
 description: ''
-keywords: Service Microsoft de bureau, Microsoft 365, documentation
+keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 12/18/2018
-ms.openlocfilehash: 0a9d76c402419922e423eeda639f78ca8083bc17
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 1b5708438813feb9b7086f80e3f3d28b6beacaad
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278444"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour le bureau géré Microsoft
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Prise en charge des administrateurs pour le bureau géré Microsoft
 
-Vous pouvez soumettre des demandes de commentaires à Microsoft à l’aide de gérées bureau d’administration portail Microsoft ou de tickets de Support. Prise en charge des demandes sont toujours prioritaires sur les envois de commentaires. Prise en charge des demandes sont triés et gérés en fonction de la gravité, comme indiqué dans le [tableau de définition du niveau de gravité](#sev). Commentaires sont examinés et une réponse fourni où vous avez demandé. 
+Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Microsoft à l'aide du portail d'administration de bureau géré Microsoft. Les demandes de support sont toujours prioritaires sur les envois de commentaires. Les demandes de support sont triées et gérées en fonction de leur gravité, comme indiqué dans le [tableau définition](#sev)de la gravité. Les commentaires sont vérifiés et une réponse vous est proposée. 
 
 >[!IMPORTANT]
->Assurez-vous que vous [configurer un contact d’administration](../get-started/add-admin-contacts.md) pour l’empaquetage de l’application, périphériques, sécurité et autres. Vous ne parvenez pas à soumettre une demande de prise en charge dans ces zones si un contact d’administration n’est pas configuré.
+>Assurez-vous que vous configurez [un contact administrateur pour l'](../get-started/add-admin-contacts.md) empaquetage, les appareils, la sécurité et les autres. Vous ne pouvez pas soumettre une demande de support dans l'un de ces domaines si aucun contact administrateur n'est configuré.
 
-Pour soumettre une demande de Support, ouvrez le portail d’administration de bureau Microsoft, puis sélectionnez **+ nouveau ticket de prise en charge** dans l’onglet demande de prise en charge. Les informations suivantes vous aideront à votre choix, en fonction de votre scénario. Lorsque vous sélectionnez un niveau de gravité, examinez les attentes de **réponse du client attendu**.
+**Pour envoyer une demande de support**
+1. Connectez-vous au [portail d'administration de bureau géré Microsoft](http://aka.ms/mwaasportal). 
+2. Sur **demandes de support**, sélectionnez **+ nouveau ticket de support**.
+3. Sélectionnez le **type de demande de support** correspondant à l'aide dont vous avez besoin. Le tableau ci-dessous présente les options. 
+4. Sélectionnez le **niveau de gravité**. Pour plus d'informations, voir [prise en charge des définitions de gravité des demandes](#sev). 
 
-Lorsque vous créez votre demande de support, choisissez le type qui correspond au type d’aide dont vous avez besoin.
-
-Prise en charge le type de demande | Champs d’utilisation
+Type de demande d'assistance | Champs d’utilisation
 --- | ---
-Incident | Vous avez besoin de Microsoft gérées Bureau à l’équipe étudier, comme les plus répandus d’impact d’un incident de sécurité ou de modification.
-Demande d’informations | Vous planifiez une modification de mise en réseau, les configurations de proxy, systèmes VPN, expiration du certificat, ou juste besoin des informations sur le service. Une réponse de l’équipe des opérations bureau géré Microsoft est fortement recommandée lors de la communication d’une modification au sein de votre organisation.
-Demande de modification | Vous avez besoin de Microsoft gérées Bureau à l’équipe apportez une modification, telles que déplacer entre les sonneries de mise à jour des périphériques.
+Accessoire | Vous avez besoin de l'équipe Microsoft maNaged Desktop Operations pour effectuer des recherches, comme l'impact d'un changement ou d'un incident de sécurité.
+Demande d'informations | Vous planifiez une modification de la mise en réseau, de la configuration du proxy, des systèmes VPN, de l'expiration du certificat ou vous avez besoin d'informations sur le service. Une réponse de l'équipe des opérations de bureau géré Microsoft est vivement conseillée lors de la communication d'une modification au sein de votre organisation.
+Demande de modification | Vous avez besoin de l'équipe des opérations de bureau géré Microsoft pour effectuer une modification, telle que le transfert des appareils entre les groupes de mise à jour.
 
 <span id="sev" />
 
-## <a name="support-request-severity-definitions"></a>Définitions des priorités demande prise en charge
+## <a name="support-request-severity-definitions"></a>Prendre en charge les définitions de gravité des demandes
 
-Temps de réponse initial est la période à partir de lorsque vous envoyez la demande de prise en charge lorsqu’un ingénieur du bureau Microsoft contacts vous et commence à travailler sur votre demande de support. Le temps de réponse initiaux varie en fonction de l’impact de la demande, selon la gravité de la demande.
+Le temps de réponse initial est la période comprise entre le moment où vous envoyez votre demande de support lorsque l'ingénieur de bureau géré Microsoft vous contacte et commence à travailler sur votre demande de support technique. Le temps de réponse initial varie en fonction de l'impact commercial de la demande, en fonction de la gravité de la demande.
 
-Niveau de gravité  | Situation du client |  Temps de réponse initial   | Réponse attendue
+Niveau de gravité  | Situation client |  Temps de réponse initial   | Réponse attendue du client
 --- | --- | --- | ---
-**Niveau de gravité A – Impact majeur** |  **Impact critiques**<br><br>L’entreprise du client a une perte importante ou la dégradation des services et exige une attention immédiate.<br><br>**Impact de compatibilité des applications principales**<br><br>Entreprise du client connaît l’impact financier en raison de la défaillance ou de perte de fonctionnalité critique | Initial : < 1 heure<br>Mise à jour : 60 minutes<br>disponible 24 x 7 | Lorsque vous sélectionnez le niveau de gravité A, vous vérifiez que le problème a impact avec perte grave et dégradation des services critiques. <br><br>Les demandes de problème une réponse immédiate et vous engager à 24 x 7 de fonctionnement en continu tous les jours avec l’équipe Microsoft jusqu'à résolution du problème, dans le cas contraire, Microsoft peut à son diminuer discrétion la gravité au niveau B.<br><br> Vous vérifiez également que Microsoft a vos informations de contact précises. 
-**Niveau de gravité B – Impact modéré** |  **Impact économique modéré**<br><br>L’entreprise du client a une perte modérée ou dégradation des services, mais travail peut se poursuivre raisonnablement d’une manière compromise.<br><br>**Impact de compatibilité des applications principales**<br><br>Un département spécifique n’est plus productif, en raison de blocage de comportement ou perte de fonctionnalité critique. | Initial : < 4 heures<br>Mise à jour : 12 heures<br>Heures (disponibles 24 x 7) | Lorsque vous sélectionnez le niveau de gravité B, vous vérifiez que le problème a un impact modéré à votre entreprise grâce à la perte et la dégradation des services, mais que les solutions de contournement Activer raisonnable, bien que cela temporaire, continuité de l’entreprise. <br><br>Le problème exige une réponse d’urgence. Si vous avez choisi 24 x 7 pour soumettre la demande de prise en charge, vous valider à une opération de 24 x 7 au quotidien avec l’équipe Microsoft continue jusqu'à résolution du problème, dans le cas contraire, Microsoft peut à sa discrétion diminuer la gravité au niveau C. Si vous avez choisi de prendre en charge des heures lorsque vous envoyez un incident de gravité B, Microsoft vous contacter pendant les heures ouvrées uniquement.<br><br>Vous vérifiez également que Microsoft a vos informations de contact précises.
-**Niveau de gravité C – Impact Minimal** |   **Impact sur l’activité minimale**<br><br> L’entreprise du client fonctionne avec des problèmes mineurs de services.<br><br>**Impact de compatibilité d’application secondaire**<br><br>Les utilisateurs sont susceptibles de ne rencontrer des problèmes de compatibilité mineurs qui ne pas empêchent la productivité |    Initial : < 8 heures<br>Mise à jour : 24 heures<br>Heures d'ouverture  | Lorsque vous sélectionnez le niveau de gravité C, vous vérifiez que le problème a un impact minimal à votre entreprise grâce à secondaire d’interruption de service.<br><br>Pour un incident de gravité C, Microsoft vous contactera pendant les heures ouvrées uniquement.<br><br>Vous vérifiez également que Microsoft a vos informations de contact précises
+**Gravité A – impact critique** |  **Impact critique sur l'activité**<br><br>L'activité du client a une perte ou une dégradation importante des services et nécessite une attention immédiate.<br><br>**Impact majeur de la compatibilité des applications**<br><br>L'ensemble de l'entreprise du client connaît un impact financier en raison du blocage ou de la perte de fonctionnalités critiques | Initial: < 1 heure<br>Mise à jour: 60 minutes<br>disponible 24h/24, 7j/7 | Lorsque vous sélectionnez la gravité A, vous confirmez que le problème a un impact important sur l'activité, avec une perte et une dégradation importantes des services. <br><br>Le problème demande une réponse immédiate et vous vous engagez à effectuer une opération continue 24h/24, 7j/7 chaque jour avec l'équipe de Microsoft jusqu'à la résolution, sinon, Microsoft peut, à sa discrétion, réduire la gravité au niveau B.<br><br> Vous devez également vous assurer que Microsoft dispose de vos coordonnées précises. 
+**Gravité B – impact modéré** |  **Impact modéré sur l'activité**<br><br>L'activité du client a une perte ou une dégradation modérée des services, mais le travail peut raisonnablement se poursuivre de manière dégradée.<br><br>**Impact modéré de la compatibilité des applications**<br><br>Un groupe d'entreprise spécifique n'est plus productif en raison du blocage du comportement ou de la perte de fonctionnalités critiques. |  Initial: < 4 heures<br>Mise à jour: 12 heures<br>Heures d'ouverture (24x7) | Lorsque vous sélectionnez la gravité B, vous confirmez que le problème a un impact modéré sur votre entreprise en matière de perte et de dégradation des services, mais les solutions de contournement permettent une continuité des activités raisonnable, bien qu'temporaire. <br><br>Le problème exige une réponse urgente. Si vous avez choisi 24h/24, 7j/7 lorsque vous soumettez la demande d'assistance, vous vous engagez à effectuer une opération permanente 24h/24, 7j/7 chaque jour avec l'équipe de Microsoft jusqu'à la résolution, dans le cas contraire, Microsoft peut réduire la gravité au niveau C. Si vous avez choisi la prise en charge des heures d'ouverture lors de l'envoi d'un incident de gravité B, Microsoft vous contactera pendant les heures d'ouverture uniquement.<br><br>Vous devez également vous assurer que Microsoft dispose de vos coordonnées précises.
+**Gravité C – impact minimal** |   **Impact minimal sur l'entreprise**<br><br> L'activité du client fonctionne avec des obstacles mineurs de services.<br><br>**Impact de la compatibilité des applications mineures**<br><br>Des utilisateurs potentiellement non liés connaissent des problèmes de compatibilité mineurs qui n'empêchent pas la productivité |    Initial: < 8 heures<br>Mise à jour: 24 heures<br>Heures d'ouverture  | Lorsque vous sélectionnez gravité C, vous confirmez que le problème a un impact minimal sur votre entreprise avec un obstacle de service mineur.<br><br>Pour un incident C de gravité, Microsoft vous contactera pendant les heures d'ouverture uniquement.<br><br>Vous êtes également assuré que Microsoft dispose de vos coordonnées précises
 
-Détails supplémentaires :
-- Prise en charge des langues : prise en charge toutes les est fournie en anglais.
-- Modifications au niveau de gravité - Microsoft peut abaisser le niveau de gravité si le client n’est pas en mesure de fournir suffisamment de ressources ou de réponses pour permettre à Microsoft poursuivre les efforts de résolution de problème. 
-- Groupe d’heures - pour la plupart des pays, business heures sont à partir de 9 h 00 à 17 h 00, Pacifique.
-- Pour un problème de compatibilité d’application à prendre en considération, il doit exister une erreur reproduceable, de la même version de l’application, entre la version précédente et actuelle de Windows ou Office.
-- Pour résoudre les problèmes de compatibilité des applications, Microsoft requiert un point de contact pour fonctionner avec client. La personne est nécessaire pour fonctionner directement avec notre équipe simple d’analyser et de résoudre le problème.
-- Si un client ne parvient pas à répondre aux exigences de réponse attendue, Microsoft sera Déclasser la demande par niveau d’une gravité, à un minimum de gravité c
-- Si un client ne répond pas aux demandes d’action, Microsoft réduire et fermer la demande de prise en charge dans les 48 heures de la dernière demande.
+Détails supplémentaires:
+- **Langues de prise en charge** : toutes les prises en charge sont fournies en anglais.
+- **Modifications de niveau de gravité** : Microsoft peut rétrograder le niveau de gravité si le client ne peut pas fournir des ressources ou des réponses appropriées pour permettre à Microsoft de continuer à résoudre les problèmes. 
+- **Heures** d'ouverture: pour la plupart des pays, les heures d'ouverture sont comprises entre 9:00 AM et 5:00 h, heure normale du Pacifique.
+- **Compatibilité des applications** : pour qu'un problème de compatibilité d'application soit pris en considération, il doit y avoir une erreur reproduite de la même version de l'application, entre la version précédente et la version actuelle de Windows ou Office. Pour résoudre les problèmes de compatibilité des applications, Microsoft demande au client un point de contact à utiliser. L'individu doit travailler directement avec notre équipe de suivi rapide pour examiner et résoudre le problème.
+- **Temps de réponse client** Si un client n'est pas en mesure de répondre aux exigences de réponse attendues, Microsoft déclassera la demande d'un niveau de gravité vers un minimum de la gravité C. Si un client ne répond pas aux demandes d'action, Microsoft limite et ferme la demande de support dans les 48 heures de la dernière demande.
  
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
-- [Prise en charge de l’utilisateur final pour ordinateur de bureau Microsoft](end-user-support.md). 
-- [Prise en charge de l’ordinateur de bureau géré Microsoft](../service-description/support.md). 
-
-
-
+- [Prise en charge de l'utilisateur final pour le bureau géré Microsoft](end-user-support.md). 
+- [Prise en charge du bureau géré Microsoft](../service-description/support.md). 

@@ -1,6 +1,6 @@
 ---
-title: Protéger les documents d’entreprise exécutant des compléments Microsoft Office - Microsoft 365 entreprise | Documents Microsoft
-description: Décrit comment utiliser les travaux en cours et Intune pour protéger les données d’entreprise dans les documents en cours d’exécution des compléments Office.
+title: Protéger des documents d'entreprise exécutant des compléments Microsoft Office-Microsoft 365 Enterprise | Microsoft docs
+description: Indique comment utiliser les travaux en cours et Intune pour protéger les données d'entreprise dans les documents exécutant des compléments Office.
 author: barlanmsft
 manager: angrobe
 ms.prod: microsoft-365-enterprise
@@ -10,11 +10,11 @@ ms.author: barlan
 ms.reviewer: jsnow
 ms.custom: it-pro
 ms.openlocfilehash: 6871f288a7e5849b147cbf0aedb056f84575f376
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290759"
 ---
 # <a name="use-wip-and-intune-to-protect-enterprise-data-in-documents-running-office-add-ins"></a>Utiliser la Protection des informations Windows et Intune pour protéger les données d’entreprise dans des documents en exécutant des compléments Office
 Quand les utilisateurs d’une organisation utilisent des compléments Office pour interagir avec les données de l’organisation, ceci introduit un risque potentiel de divulgation de certaines données. Vous pouvez utiliser la Protection des informations Windows et Microsoft Intune pour protéger les données d’entreprise quand des utilisateurs exécutent des compléments Office.
@@ -78,7 +78,7 @@ Le tableau suivant répertorie les comportements attendus des compléments dans 
 |**Type de document ou de boîte aux lettres**|**Complément dans un contexte personnel**|**Complément dans un contexte d’entreprise**|
 |:----------------|:-------------------------------------------------|:---------------------------------------------------|
 |**Personnel**     |Le complément se charge dans un contexte personnel.<br><br>La navigation vers les URL de l’entreprise n’est pas autorisée (même si elles sont dans son propre domaine d’application).<br><br>La navigation vers les URL personnelles est autorisée.|Le chargement ou l’activation du complément échoue.<br><br>Si le contexte du document est élevé (par exemple s’il est enregistré à un emplacement d’entreprise) :<br><br>- La navigation vers les URL d’entreprise est autorisée.<br><br>- La navigation vers les URL personnelles est autorisée.|
-|**Entreprise**   |Le complément se charge dans un contexte d’entreprise.<br><br>La navigation vers les URL d’entreprise est autorisée.<br><br>La navigation vers les URL personnelles est autorisée.|Le complément se charge dans un contexte d’entreprise.<br><br>La navigation vers les URL d’entreprise est autorisée.<br><br>La navigation vers les URL personnelles est autorisée.|
+|**Enterprise**   |Le complément se charge dans un contexte d’entreprise.<br><br>La navigation vers les URL d’entreprise est autorisée.<br><br>La navigation vers les URL personnelles est autorisée.|Le complément se charge dans un contexte d’entreprise.<br><br>La navigation vers les URL d’entreprise est autorisée.<br><br>La navigation vers les URL personnelles est autorisée.|
 |**Non enregistré**      |Le complément se charge dans un contexte personnel.<br><br>La navigation vers les URL de l’entreprise n’est pas autorisée (même si elles sont dans son propre domaine d’application).<br><br>La navigation vers les URL personnelles est autorisée.|Le complément se charge dans le contexte d’entreprise, et le document est converti en mode silencieux au contexte d’entreprise. Cela signifie que le document doit être enregistré à un emplacement d’entreprise.<br><br>La navigation vers les URL d’entreprise est autorisée. La navigation vers les URL personnelles est autorisée.            |
 
 

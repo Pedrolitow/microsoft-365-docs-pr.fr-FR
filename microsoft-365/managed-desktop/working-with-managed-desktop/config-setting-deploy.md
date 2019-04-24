@@ -8,11 +8,11 @@ ms.localizationpriority: normal
 ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 4662373b926d07558ecedd05c9dfcf472ceb6357
-ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278418"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables-bureau géré Microsoft
 
@@ -27,7 +27,7 @@ Statut  | Explication
 Déployer | Votre modification attend d'être déployée sur ce groupe.
 En cours | La modification est appliquée aux appareils actifs de ce groupe. 
 Exécuter | Modification effectuée sur tous les appareils actifs de ce groupe. 
-Failed | La modification a échoué sur 10% des appareils actifs dans le groupe, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
+Échec | La modification a échoué sur 10% des appareils actifs dans le groupe, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
 Retrouveront | Le changement a été rétabli sur la dernière modification qui a été déployée avec succès sur tous les groupes de déploiement.
 
 ## <a name="deploy-changes"></a>Déployer les modifications

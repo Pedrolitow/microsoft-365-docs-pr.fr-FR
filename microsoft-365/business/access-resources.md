@@ -1,11 +1,12 @@
 ---
-title: Accès aux ressources à partir d’un périphérique joint à AD Azure dans Microsoft 365 Business sur site
+title: Accéder aux ressources locales à partir d'un appareil joint à Azure AD dans Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
+ms.collection: M365-subscription-management
 localization_priority: Normal
 ms.custom:
 - Core_O365Admin_Migration
@@ -15,42 +16,42 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
-description: Découvrez comment accéder aux ressources locales telles que les applications métier, des partages de fichiers et des imprimantes à partir d’Azure Active Directory joint périphérique Windows 10.
-ms.openlocfilehash: 0a5d4b0828888fcb99676223000c446479f84ddc
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d'un appareil Azure Active Directory joint à Windows 10.
+ms.openlocfilehash: 212685bc229f519152e69b09d0a745bfac7a38cd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276878"
 ---
-# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Accès aux ressources à partir d’un périphérique joint à AD Azure dans Microsoft 365 Business sur site
+# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Accéder aux ressources locales à partir d'un appareil joint à Azure AD dans Microsoft 365 Business
 
-Tout périphérique 10 Windows Azure Active Directory joint auront accès à toutes les ressources en nuage tels que vos applications Office 365 et peut être protégé par Microsoft 365 Business. Pour également autoriser l’accès aux ressources locales telles que des applications, des partages de fichiers et des imprimantes ligne de métier (LOB), vous devez synchroniser Active Directory local avec Azure Active Directory à l’aide [d’Azure AD se connecter](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). Voir [Introduction à la gestion des périphériques dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) pour en savoir plus. 
+Tous les appareils Windows 10 qui sont joints à Azure Active Directory auront accès à toutes les ressources basées sur le Cloud, telles que vos applications Office 365, et peuvent être protégées par Microsoft 365 Business. Pour autoriser également l'accès aux ressources locales telles que les applications métier, les partages de fichiers et les imprimantes, vous devez synchroniser votre annuaire Active Directory local avec Azure Active Directory à l'aide d' [Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). Pour en savoir plus, consultez la rubrique [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) . 
   
-## <a name="run-azure-ad-connect"></a>Exécuter Azure AD
+## <a name="run-azure-ad-connect"></a>Exécuter Azure AD Connect
 
-Effectuez les étapes suivantes pour permettre aux appareils Azure AD joint de votre organisation d’accéder aux ressources locales.
+Procédez comme suit pour activer les appareils Azure AD joints de votre organisation pour accéder aux ressources locales.
   
-1. Pour synchroniser vos utilisateurs, groupes et des contacts à partir d’Active Directory local dans Azure Active Directory, exécutez l’Assistant synchronisation d’annuaires et Azure AD se connecter en tant que décrit dans [configurer la synchronisation d’annuaires pour Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
+1. Pour synchroniser vos utilisateurs, groupes et contacts à partir d'Active Directory local avec Azure Active Directory, exécutez l'Assistant synchronisation d'annuaires et Azure AD Connect comme décrit dans [set up Directory Synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
     
-2. À l’issue de la synchronisation d’annuaires, assurez-vous que les périphériques Windows 10 de votre organisation sont Azure AD lié. Cette étape est effectuée individuellement sur chaque périphérique Windows 10. Pour plus d’informations, voir [configurer les périphériques de Windows pour les utilisateurs professionnels 365 de Microsoft](set-up-windows-devices.md) . 
+2. Une fois la synchronisation d'annuaires terminée, assurez-vous que les appareils Windows 10 de votre organisation sont joints à Azure AD. Cette étape est effectuée individuellement sur chaque appareil Windows 10. Pour plus d'informations, consultez la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365](set-up-windows-devices.md) . 
     
-3. Une fois les périphériques 10 Windows Azure AD lié, chaque utilisateur doit redémarrer leurs périphériques et la connexion avec leurs informations d’identification Microsoft 365 Business. Tous les périphériques maintenant auront accès à ainsi que les ressources locales.
+3. Une fois que les appareils Windows 10 sont joints à Azure AD, chaque utilisateur doit redémarrer ses appareils et se connecter avec leurs informations d'identification de l'entreprise Microsoft 365. Tous les périphériques auront également accès aux ressources locales.
     
-Des étapes supplémentaires sont nécessaires pour accéder aux ressources pour Azure AD joint périphériques sur site. Il s’agit des fonctionnalités intégrées dans Windows 10. 
+Aucune étape supplémentaire n'est requise pour accéder aux ressources locales pour les appareils joints à Azure AD. Il s'agit d'une fonctionnalité intégrée disponible dans Windows 10. 
   
-Si votre organisation n’est pas prête à déployer dans la Azure AD joints périphérique Configuration décrite ci-dessus, pensez à configurer [configuration hybride Azure AD joint du périphérique](manage-windows-devices.md).
+Si votre organisation n'est pas prête à être déployée dans la configuration d'appareil joint Azure AD décrite ci-dessus, envisagez de configurer la [configuration hybride Azure ad jointe](manage-windows-devices.md)de l'appareil.
   
-### <a name="considerations-when-joining-your-windows-devices-to-azure-ad"></a>Considérations relatives à la participation à vos périphériques Windows pour Azure AD
+### <a name="considerations-when-joining-your-windows-devices-to-azure-ad"></a>Éléments à prendre en compte lors de la participation à des appareils Windows sur Azure AD
 
-Si vous êtes Azure AD joindre un appareil Windows qui a été précédemment à un domaine ou un groupe de travail, vous devez prendre en compte les limitations suivantes :
+Si vous joignez Azure AD à un appareil Windows qui a déjà été joint à un domaine ou dans un groupe de travail, vous devez tenir compte des limitations suivantes:
   
-- Lorsqu’un périphérique Azure AD joint, il crée un nouvel utilisateur sans faire référence à un profil existant. Pour résoudre ce problème, les profils doivent être migrées manuellement. Un profil utilisateur contient des informations telles que des Favoris, les fichiers locaux, les paramètres du navigateur, les paramètres du menu Démarrer, etc.. Une meilleure approche consiste à trouver un outil tiers pour mapper les fichiers et paramètres existants dans le nouveau profil
+- Lorsqu'un appareil Azure AD rejoint une jointure, il crée un utilisateur sans référence à un profil existant. Pour résoudre ce problème, les profils doivent être migrés manuellement. Un profil utilisateur contient des informations comme les favoris, les fichiers locaux, les paramètres du navigateur, les paramètres du menu Démarrer, etc. Une meilleure approche consiste à trouver un outil tiers pour mapper des fichiers et des paramètres existants sur le nouveau profil.
     
-- Si le périphérique est à l’aide des objets de stratégie de groupe (GPO), certains objets de stratégie de groupe peut-être pas un comparables de [Fournisseur de services de Configuration](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) Intune. Exécutez l' [outil MMAT](https://www.microsoft.com/download/details.aspx?id=45520) pour rechercher les fournisseurs comparables pour les objets GPO existants. 
+- Si l'appareil utilise des objets de stratégie de groupe (GPO), certains objets de stratégie de groupe ne disposent pas nécessairement d'un [fournisseur de services de configuration](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) comparable dans Intune. Exécutez l' [outil mmat](https://www.microsoft.com/download/details.aspx?id=45520) pour rechercher des fournisseurs de services cryptographiques comparables pour les objets de stratégie de groupe existants. 
     
-- Les utilisateurs ne pourront pas s’authentifier sur les applications qui dépendent de l’authentification Active Directory. Pour traiter cette évaluation de l’utilisation d’une application héritée et prendre en compte la mise à jour vers une application qui utilise une authentification moderne si possible.
+- Les utilisateurs ne peuvent pas s'authentifier aux applications qui dépendent de l'authentification Active Directory. Pour traiter cette évaluation à l'aide d'une application héritée et envisager d'effectuer une mise à jour vers une application qui utilise l'authentification moderne dans la mesure du possible.
     
-- Recherche d’imprimante Active Directory ne fonctionne pas. Pour résoudre ce problème, fournir des chemins d’accès de l’imprimante directe pour tous les utilisateurs ou tirer parti [d’Impression de nuage hybride](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- La découverte des imprimantes Active Directory ne fonctionnera pas. Pour résoudre ce problème, fournissez des chemins d'accès directs aux imprimantes pour tous les utilisateurs ou utilisez l' [impression Cloud hybride](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
     
 

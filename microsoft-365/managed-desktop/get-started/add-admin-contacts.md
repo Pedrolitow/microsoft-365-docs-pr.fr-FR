@@ -1,62 +1,63 @@
 ---
-title: Ajouter des contacts d’administration dans le portail d’administration d’ordinateur de bureau Microsoft
-description: Indiquez les personnes à contacter pour chaque zone de focus.
-keywords: Service Microsoft de bureau, Microsoft 365, documentation
+title: Ajouter des contacts d'administration dans le portail d'administration de bureau géré Microsoft
+description: Dites-nous qui contacter pour chaque zone de focus.
+keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 31984609681b6e3b1b6de9996eb8fb0fcf6f5624
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 014404ab38ff5871289be186dec150115c3be6ec
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277533"
 ---
-# <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Ajouter des contacts d’administration dans le portail d’administration de bureau géré Microsoft
+# <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Ajouter des contacts d'administration dans le portail d'administration de bureau géré Microsoft
 
-Il existe plusieurs manières de service de l’ordinateur de bureau Microsoft communique avec les clients. Pour simplifier la communication et garantir que nous vérifions avec les contacts meilleures, vous devez fournir un ensemble de contacts d’administration. Les opérations informatiques de bureau géré Microsoft contacte ces personnes pour obtenir une assistance de résolution des problèmes pour votre client. 
+Le service de bureau géré Microsoft communique de plusieurs façons avec les clients. Pour simplifier la communication et vérifier que nous vérifions les meilleurs contacts, vous devez fournir un ensemble de contacts d'administration. Les opérations informatiques de bureau gérées par Microsoft contacteront ces personnes pour résoudre les problèmes de résolution des problèmes pour votre client. 
 
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Accès à Active Directory pour le portail d’administration de bureau géré Microsoft Azure
+## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Accès Azure Active Directory pour le portail d'administration de bureau géré Microsoft
 
-Portail d’administration de bureau géré Microsoft nécessite que personnes l’accès au portail un de ces rôles d’Azure Active Directory (AD) :
+Le portail d'administration de bureau géré Microsoft exige que les utilisateurs qui accèdent au portail disposent de l'un de ces rôles Azure Active Directory (AD):
 - Administrateur général
-- Administrateur de Service Intune
+- Administrateur du service Intune
 - Administrateur de facturation
-- Administrateur de service prise en charge
+- Administrateur de support de service
 
-L’administrateur Global doit être celui pour inscrire le client de bureau Microsoft.  Les cinq rôles ont le même accès au sein du portail d’administration pour lancer et afficher les tâches.  Pour plus d’informations sur l’attribution de ces rôles dans Azure AD, voir [autorisations de rôle administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+L'administrateur général doit être celui pour inscrire le client dans le bureau géré Microsoft.  Les cinq rôles ont le même accès dans le portail d'administration pour lancer et afficher les tâches.  Pour plus d'informations sur l'affectation de ces rôles dans Azure AD, reportez-vous à la rubrique [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
-## <a name="admin-contact-focus-areas"></a>Domaines contact d’administration
+## <a name="admin-contact-focus-areas"></a>Zones ciblées des contacts administratifs
 
-Contacts d’administration doivent être la meilleure personne ou un groupe qui peut répondre aux questions et prendre des décisions de différents domaines.  Opérations de bureau géré Microsoft contacte ces contacts d’administration pour toute question concernant les demandes de prise en charge par le client.  Ces contacts Admin reçoivent des notifications pour les mises à jour de demande de prise en charge et de nouveaux messages.  Ces domaines sont les suivantes :
+Les contacts d'administration doivent être la personne ou le groupe le mieux adapté pour répondre aux questions et prendre des décisions concernant différentes priorités.  Les opérations de bureau géré Microsoft contacteront ces contacts d'administration pour les questions portant sur les demandes de support déposées par le client.  Ces contacts d'administration recevront des notifications pour les mises à jour des demandes de support et les nouveaux messages.  Ces domaines sont les suivants:
 
-Zone de focus | Pour toute question concernant
+Zone de focus | Pour obtenir des questions sur
 --- | ---
-Applications | Résolution des problèmes d’empaquetage de l’application
- Appareils  | État de santé, résolution des problèmes avec les périphériques de bureau Microsoft
-Sécurité | Résolution des problèmes de sécurité avec des périphériques de bureau Microsoft
-Autre | Pour les problèmes non couverts par les autres domaines
+Applications | Résolution des problèmes d'emPaquetage d'applications
+Appareils | Intégrité de l'appareil, résolution des problèmes avec les appareils de bureau gérés Microsoft
+Sécurité | Résolution des problèmes de sécurité avec les appareils de bureau gérés Microsoft
+Autre | Pour les problèmes non couverts par d'autres domaines
 
-Toute personne que vous choisissez pour ces contacts doit disposer de la base de connaissances et l’autorité de prendre des décisions pour votre environnement de bureau Microsoft. Lorsque vous intégrée de Microsoft géré environnement de bureau, vous êtes invité à ajouter des contacts de votre support technique et de sécurité locale. 
+Les personnes que vous choisissez pour ces contacts doivent disposer des connaissances et des pouvoirs nécessaires pour prendre des décisions concernant votre environnement de bureau géré Microsoft. Lorsque vous intégrez votre environnement de bureau géré Microsoft, vous êtes invité à ajouter des contacts pour votre service d'assistance et sécurité locaux. 
 
-Contacts d’administration sont requis lorsque vous [soumettre une demande de prise en charge](../working-with-managed-desktop/support.md). Vous devez disposer d’un contact de l’administrateur de la zone de focus de la demande de prise en charge. 
+Les contacts d'administration sont requis lorsque vous [envoyez une demande de support](../working-with-managed-desktop/support.md). Vous devez disposer d'un contact administrateur pour la zone de sélection de la demande de support. 
 
-**Pour ajouter des contacts d’administration**
+**Pour ajouter des contacts d'administration**
 
-1.  Connectez-vous au [portail d’administration d’ordinateur de bureau Microsoft](http://aka.ms/mwaasportal). 
+1.  Connectez-vous au [portail d'administration de bureau géré Microsoft](http://aka.ms/mwaasportal). 
 
-2.  Sous **prise en charge**, sélectionnez **les contacts d’administration**. 
+2.  Sous **support**, sélectionnez **contacts d'administration**. 
 
-    ![Menu de prise en charge, les contacts d’administration](images/admincontacts.png)
+    ![Menu support, contacts administrateur](images/admincontacts.png)
 
-3. Sélectionnez **Ajouter**.
+3. Cliquez sur **Ajouter**.
 
-    ![Bouton Ajouter un portail d’administration](images/adminadd.png)
+    ![Bouton Ajouter du portail d'administration](images/adminadd.png)
 
-4.  Sélectionnez une **zone du focus** , entrez les informations du contact. 
+4.  Sélectionnez une **zone de** sélection, puis entrez les informations du contact. 
 
-    ![la liste de domaines](images/areaoffocus.png)
+    ![Liste des zones ciblées](images/areaoffocus.png)
 
-5. Répétez pour chaque zone de focus. 
+5. Répétez l'opération pour chaque zone de focus. 
 

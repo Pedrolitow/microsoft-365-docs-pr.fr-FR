@@ -3,90 +3,112 @@ title: Vue d’ensemble de Microsoft 365 Entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/23/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: Fournit une introduction aux composants, plans et chemins de déploiement Microsoft 365 entreprise.
-ms.openlocfilehash: 842355f8467965824116dc244430ad06d19f7f87
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 Enterprise.
+ms.openlocfilehash: 24aacc1a992e2dfdc683e5e4c4405b105eea7bf5
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291301"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 Entreprise
 
-Microsoft 365 Enterprise est une solution complète et intelligente qui permet à tout le monde creative et collaborer en toute sécurité. 
+Microsoft 365 Enterprise est une solution complète et intelligente qui permet à chacun d'être créatif et de collaborer en toute sécurité. 
 
-Bien que conçu pour les grandes organisations, Microsoft 365 entreprise peut également servir pour les petites et moyennes entreprises nécessitant des fonctions de sécurité et de productivité les plus avancées. 
+Bien que conçu pour les grandes entreprises, Microsoft 365 Enterprise peut également être utilisé pour les petites et moyennes entreprises qui ont besoin des fonctionnalités de sécurité et de productivité les plus avancées. 
 
-## <a name="components"></a>Composants
+## <a name="components"></a>Components
 
-Microsoft 365 entreprise se compose de :
+Microsoft 365 Enterprise se compose des éléments suivants:
 
 |||
 |:-------|:-----|
-| Office 365 pour entreprises | Inclut les deux applications Office le plus récent pour une suite complète de services en ligne pour le courrier électronique, le stockage de fichiers et collaboration, réunions, etc., votre PC et Mac (telles que Word, Excel, PowerPoint, Outlook et d’autres personnes) de Office 365 ProPlus. |
-| Windows 10 Entreprise | Répond aux besoins des moyennes et grandes entreprises, offrant aux utilisateurs de la version la plus productive et sécurisée de Windows et les professionnels de l’informatique et la gestion des périphériques, déploiement et d’application complète. |
-| Mobilité d’entreprise + sécurité (EMS) | Inclut Microsoft Intune, qui est un service de gestion (EMM) de mobilité de contenu d’entreprise basée sur le cloud qui permet à votre personnel d’être productifs lors de la protection des données d’entreprise. |
+| Office 365 pour entreprises | Inclut Office 365 proPlus, les dernières applications Office pour votre PC et Mac (par exemple, Word, Excel, PowerPoint, Outlook, etc.) et une suite complète de services en ligne pour la messagerie, le stockage de fichiers et la collaboration, les réunions et bien plus encore. |
+| Windows 10 Entreprise | Répond aux besoins des organisations de grande et moyenne envergure, offrant aux utilisateurs la version de Windows et des professionnels de l'informatique la plus productive et la plus sécurisée avec un déploiement complet, des appareils et la gestion des applications. |
+| Enterprise Mobility + Security (EMS) | Inclut Microsoft Intune, un service de gestion de la mobilité d'entreprise (EMM) basé sur le Cloud qui permet à vos employés d'être productifs tout en maintenant la protection des données de votre entreprise. |
 |||
 
 ## <a name="plans"></a>Plans
 
-Microsoft 365 entreprise est disponible dans les trois plans.
+Microsoft 365 Enterprise est disponible en trois plans.
 
 |||
 |:-------|:-----|
-| E3 | Inclut Office 365 pour entreprises, Windows 10 entreprise et mobilité d’entreprise + sécurité (EMS). |
-| E5 | Inclut toutes les fonctionnalités de E3 plus avancées de sécurité, voix et outils d’analyse de données. |
-| F1 | Conçue spécialement pour se connecter aux travailleurs firstline vers les outils et les ressources nécessaires pour effectuer leur travail meilleures. Les travailleurs Firstline sont à prendre part à vos clients et représentent la marque de votre société et la valeur, la première ligne |
+| E3 | Inclut Office 365 entreprise, Windows 10 entreprise et Enterprise Mobility + Security (EMS). |
+| E5 | Comprend toutes les fonctionnalités E3's, ainsi que les outils de sécurité, vocaux et d'analyse de données avancés. |
+| F1 | Conçu spécialement pour connecter les travailleurs terrain aux outils et aux ressources nécessaires au bon fonctionnement. Les travailleurs terrain sont les premiers à prendre en main avec vos clients et représentent la valeur et la marque de votre entreprise, |
 |||
 
-Pour plus d’informations, consultez [fonctionnalités et capacités pour chaque plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Pour plus d'informations, reportez-vous à la rubrique [features and Capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
-## <a name="at-a-glance"></a>Un coup de œil
+## <a name="at-a-glance"></a>En un clin d'œil
 
-Le [poster Microsoft 365 Enterprise](http://aka.ms/m365eposter) est un emplacement central pour afficher :
+L' [affiche de Microsoft 365 entreprise](http://aka.ms/m365eposter) est un emplacement central où vous pouvez voir:
 
-- Les produits et fonctionnalités de Microsoft 365 pour entreprises et comment ils correspondent aux piliers de sa valeur
-- Plans Microsoft 365 entreprise et les composants qu’ils contiennent 
-- Les composants clés de l’espace de travail moderne, qui permet à Microsoft 365 pour entreprises
-- Les scénarios de valeur professionnelles de Microsoft 365 pour entreprises et les produits et services faire les
-- La feuille de route d’adoption qui met en évidence le [Guide de déploiement](deploy-microsoft-365-enterprise.md) de Microsoft 365 pour entreprises
+- Les produits et les fonctionnalités de Microsoft 365 Enterprise et la façon dont ils sont mappés sur les piliers de leur valeur
+- Plans d'entreprise Microsoft 365 et les composants qu'ils contiennent 
+- Les principaux composants de l'espace de travail moderne, que Microsoft 365 entreprise active.
+- Les principaux scénarios de valeur commerciale de Microsoft 365 Enterprise et les services et produits qui les rendent possibles
+- Feuille de route d'adoption qui met en évidence le [Guide de déploiement](deploy-microsoft-365-enterprise.md) d'entreprise Microsoft 365
 
 ![](./media/m365-poster/m365e-poster.png)
 
-Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf).
+Pour télécharger une copie de l'affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf).
 
 ## <a name="deploying"></a>Déploiement
 
-Il existe deux manières de déployer les produits, les fonctionnalités et les composants de Microsoft 365 pour entreprises :
+Il existe deux façons de déployer les produits, les fonctionnalités et les composants de Microsoft 365 Enterprise:
 
 1. En partenariat avec FastTrack
   
-   Avec FastTrack, ingénieurs Microsoft vous aident à déplacer vers le nuage à votre rythme. Voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+   Avec FastTrack, les ingénieurs Microsoft vous aident à passer au Cloud à votre rythme. Voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Faites-le vous-même
+2. Le faire vous-même
 
-   Le [guide de déploiement de contenu d’entreprise Microsoft 365](deploy-microsoft-365-enterprise.md) prend étape par étape Création de l’infrastructure et la productivité des charges de travail. 
+   Le [Guide de déploiement de Microsoft 365 Enterprise vous guide](deploy-microsoft-365-enterprise.md) pas à pas tout au long de la création des charges de travail de l'infrastructure et de la productivité. 
 
-Pour plus d’informations sur le déploiement, voir comment :
+Pour plus d'informations sur le déploiement, voir How:
 
-- [Les clients](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise) utilisent Microsoft 365 pour entreprises.
-- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) utilise Microsoft 365 pour entreprises.
-- [La société Contoso](contoso-overview.md) a déployé Microsoft 365 pour entreprises.
+- [Les clients](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise) utilisent Microsoft 365 Enterprise.
+- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) utilise Microsoft 365 entreprise.
+- [La société Contoso Corporation](contoso-overview.md), une organisation multinationale fictive mais représentative, a déployé Microsoft 365 entreprise.
 
-## <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
+## <a name="additional-microsoft-365-solutions"></a>Autres solutions Microsoft 365
 
-Bien qu’il n’existe aucune recommandation meilleures unique pour les environnements de client, la documentation [d’identité et périphérique d’accès aux configurations](microsoft-365-policies-configurations.md) explique comment appliquer des stratégies et la configuration au sein du cloud Microsoft pour vous assurer que vos employés sont sécurisé et leur productivité.
+- [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)
+ 
+  Rassemblez les performances de pointe d’Office 365 en matière de productivité et de collaboration avec des solutions de sécurité et de gestion des appareils pour protéger les données professionnelles dans les petites et moyennes entreprises (SMB).
+
+- [Microsoft 365 Éducation](https://docs.microsoft.com/education)
+ 
+  Permet aux instructeurs de révéler leur créativité, promouvoir le travail en équipe et offrir une expérience simple et sécurisée dans une solution unique et abordable, conçue pour l’éducation.
+
+- [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
+ 
+  Permettre aux employés du secteur public américain de collaborer en toute sécurité.
+
+
+
+## <a name="microsoft-365-training"></a>Formation Microsoft 365
+
+|||
+|:-------|:-----|
+![](./media/m365-poster/m365-fundamentals.svg)| Demandez-vous et travaillez sur une certification Microsoft 365. <BR> Commencez par [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+
+
+
+
 
 ## <a name="next-step"></a>Étape suivante
 
-Démarrez votre [voyage au pays de déploiement Microsoft 365 pour entreprises](deploy-microsoft-365-enterprise.md).
+Démarrez votre [déploiement d'entreprise Microsoft 365](deploy-microsoft-365-enterprise.md).
 
 ## <a name="see-also"></a>Voir aussi
 

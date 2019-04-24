@@ -1,5 +1,5 @@
 ---
-title: Identité et périphérique courants accéder aux stratégies - Microsoft 365 entreprise | Documents Microsoft
+title: Stratégies d'identité et d'accès aux appareils courantes-Microsoft 365 Enterprise | Microsoft docs
 description: Décrit les recommandations de Microsoft liées à l’application de stratégies et de configurations de l’accès aux identités et aux appareils.
 author: BrendaCarter
 manager: Laurawi
@@ -10,68 +10,71 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: ab8454c27cd57b6bd5cc8df6e1526ee2950ac998
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection:
+- M365-identity-device-management
+- M365-security-compliance
+ms.openlocfilehash: 9912b05c07599c5ad0c0ed7fec91ae2572bd2ead
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289320"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
-Cet article décrit commun recommandé de stratégies pour sécuriser l’accès pour le cloud services, y compris les applications locales publiés avec le Proxy d’Application Azure AD. 
+Cet article décrit les stratégies recommandées courantes pour sécuriser l'accès aux services Cloud, notamment les applications locales publiées avec le proxy d'application Azure AD. 
 
-Ce guide explique comment déployer les stratégies recommandées dans un environnement nouvellement mis en service. Configuration de ces stratégies dans un environnement de laboratoire distinct vous permet de comprendre et d’évaluer les stratégies recommandées avant le déploiement sur votre environnement de préproduction et de production de zone de transit. Votre environnement nouvellement mis en service peut être uniquement en nuage ou hybrides.  
+Ce guide explique comment déployer les stratégies recommandées dans un environnement nouvellement mis en service. La configuration de ces stratégies dans un environnement de laboratoire distinct vous permet de comprendre et d'évaluer les stratégies recommandées avant de mettre en place le déploiement dans vos environnements de pré-production et de production. Votre environnement nouvellement configuré peut être en nuage seul ou hybride.  
 
 ## <a name="policy-set"></a>Jeu de stratégie 
 
-Le diagramme suivant illustre le jeu de stratégies recommandé. Il indique le niveau de protection chaque stratégie s’applique à et si les stratégies s’appliquent à PC, téléphones et tablettes ou les deux catégories de périphériques. Il indique également où ces stratégies sont configurées.
+Le diagramme suivant illustre l'ensemble de stratégies recommandé. Elle indique le niveau de protection auquel chaque stratégie s'applique et indique si les stratégies s'appliquent aux PC, téléphones et tablettes, ou aux deux catégories d'appareils. Il indique également où ces stratégies sont configurées.
 
-![Stratégies courantes pour configurer l’accès d’identité et de périphérique](../images/Identity_device_access_policies_byplan.png)
+![Stratégies courantes de configuration de l'accès aux appareils et aux identités](../images/Identity_device_access_policies_byplan.png)
 
 
 Le reste de cet article explique comment configurer ces stratégies. 
 
-À l’aide de l’authentification multifacteur est recommandé avant inscription périphériques Intune pour l’assurance que le périphérique est en possession de l’utilisateur concerné. Vous devez également inscrire appareils dans Intune avant d’appliquer des stratégies de conformité de périphérique.
+L'utilisation de l'authentification multifacteur est recommandée avant l'inscriptions de périphériques dans Intune pour garantir que l'appareil est en possession de l'utilisateur prévu. Vous devez également inscrire les appareils dans Intune avant d'appliquer les stratégies de conformité des appareils.
 
-Pour donner à temps pour accomplir ces tâches, nous vous recommandons d’implémenter les stratégies de base dans l’ordre indiqué dans ce tableau. Toutefois, les stratégies MFA pour la protection de données sensible et réglementation peuvent être implémentés à tout moment.
+Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de mettre en œuvre les stratégies de base dans l'ordre indiqué dans le tableau ci-dessous. Toutefois, les stratégies de MFA pour une protection sensible et hautement réglementée peuvent être mises en œuvre à tout moment.
 
 
-|Niveau de protection|Policies|Plus d’informations|
+|Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Exiger MFA lors de la connexion risque est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
-|        |[Blocage des clients qui ne prennent pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les règles d’accès conditionnel, il est important de bloquer les messages|
-|        |[Utilisateurs à haut risque doivent changer le mot de passe](#high-risk-users-must-change-password)|Oblige les utilisateurs à modifier leur mot de passe lors de la connexion en cas de détection d’activités à haut risque pour leur compte|
-|        |[Définir des stratégies de protection des applications](#define-app-protection-policies)|Une stratégie par la plate-forme (iOS, Android, Windows).|
-|        |[Exiger des applications approuvées](#require-approved-apps)|Applique la protection des applications mobiles pour les téléphones et les tablettes|
-|        |[Définir des stratégies de conformité de périphérique](#define-device-compliance-policies)|Une stratégie pour chaque plateforme|
-|        |[Exiger compatible PC](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applique une gestion Intune de PC|
-|**Sensible**|[Exiger MFA lors de la connexion risque est *faible*, *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
-|         |[Exiger compatible PC *et* appareils mobiles](#require-compliant-pcs-and-mobile-devices)|Applique la gestion Intune pour PC et téléphone/tablettes|
-|**Hautement réglementé**|[*Toujours* nécessitent MFA](#require-mfa-based-on-sign-in-risk)|
+|**Baseline**|[Exiger l'authentification multiFACTEUR lorsque le risque de connexion est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
+|        |[Bloquer les clients qui ne prennent pas en charge l'authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n'utilisent pas l'authentification moderne peuvent contourner les règles d'accès conditionnel, c'est pourquoi il est important de bloquer ces|
+|        |[Les utilisateurs à haut risque doivent changer leur mot de passe](#high-risk-users-must-change-password)|Force les utilisateurs à modifier leur mot de passe lors de la connexion en cas de détection d'une activité à haut risque pour leur compte.|
+|        |[Définir les stratégies de protection des applications](#define-app-protection-policies)|Une stratégie par plateforme (iOS, Android, Windows).|
+|        |[Exiger les applications approuvées](#require-approved-apps)|Applique la protection des applications mobiles pour les téléphones et les tablettes|
+|        |[Définir les stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme|
+|        |[Exiger des PC conformes](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applique la gestion Intune des PC|
+|**Sensible**|[Exiger l'authentification multiFACTEUR lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
+|         |[Exiger des PC conformes *et des* appareils mobiles](#require-compliant-pcs-and-mobile-devices)|Applique la gestion Intune pour les PC et les téléphones/tablettes|
+|**Hautement réglementé**|[*Toujours* exiger l'authentification multifacteur](#require-mfa-based-on-sign-in-risk)|
 | | |
 
-## <a name="assigning-policies-to-users"></a>Attribution de stratégies pour les utilisateurs
-Avant de configurer des stratégies, identifier les groupes d’Azure Active Directory que vous utilisez pour chaque niveau de protection. En règle générale, la protection planifié s’applique à tout le monde dans l’organisation. Un utilisateur qui est inclus dans la ligne de base et protection sensible comportera toutes les stratégies de base appliqués ainsi que les stratégies sensibles. Protection est cumulative et la stratégie la plus restrictive est appliquée. 
+## <a name="assigning-policies-to-users"></a>Affectation de stratégies aux utilisateurs
+Avant de configurer des stratégies, identifiez les groupes Azure AD que vous utilisez pour chaque niveau de protection. En règle générale, la protection de base s'applique à tous les employés de l'organisation. Toutes les stratégies de base, ainsi que les stratégies sensibles, sont appliquées à un utilisateur qui est inclus à la fois pour la protection de référence et la protection sensible. La protection est cumulative et la stratégie la plus restrictive est appliquée. 
 
-Une pratique recommandée consiste à créer un groupe d’Azure AD à l’exclusion d’accès conditionnel. Ajoutez ce groupe à toutes les règles d’accès conditionnelle sous « Exclure ». Cela vous donne une méthode pour fournir l’accès à un utilisateur pendant que vous résoudre les problèmes d’accès. Il est recommandé comme solution temporaire. Contrôler ce groupe pour que les modifications et vérifiez que le groupe d’exclusion est utilisé uniquement comme prévu. 
+Une pratique recommandée consiste à créer un groupe Azure AD pour l'exclusion d'accès conditionnel. Ajoutez ce groupe à toutes vos règles d'accès conditionnel sous «exclure». Cela vous permet de fournir un accès à un utilisateur pendant que vous dépannez les problèmes d'accès. Il s'agit d'une solution temporaire uniquement. SurVeillez ce groupe pour les modifications et assurez-vous que le groupe d'exclusion n'est utilisé que comme prévu. 
 
-Le diagramme suivant fournit un exemple d’affectation de l’utilisateur et d’exclusions.
+Le diagramme suivant fournit un exemple d'affectations et d'exclusions d'utilisateurs.
 
-![Affectation d’utilisateur exemple et des exclusions pour les règles MFA](../images/identity-access-policies-assignment.png)
+![Exemple d'affectations et d'exclusions d'utilisateurs pour les règles MFA](../images/identity-access-policies-assignment.png)
 
-Dans l’illustration le « équipe de projet secrète supérieure X » est affectée à une stratégie d’accès conditionnel nécessitant MFA *toujours*. Être judicieux lors de l’application des niveaux de protection supérieurs aux utilisateurs. Les membres de l’équipe du projet devront fournir deux formes d’authentification chaque fois qu’ils ouvrent une session, même si elles ne voient pas très régulé de contenu.  
+Dans l'illustration, l'équipe «top secret Project X Team» est affectée à une stratégie d'accès ** conditionnel qui requiert la MFA Always. Soyez judicieuses lorsque vous appliquez des niveaux de protection plus élevés aux utilisateurs. Les membres de cette équipe de projet devront fournir deux formulaires d'authentification à chaque fois qu'ils se connectent, même s'ils n'affichent pas de contenu hautement réglementé.  
 
-Tous les groupes créés dans le cadre de ces recommandations d’Azure AD doivent être créés en tant que groupes d’Office 365. Il s’agit plus particulièrement important pour le déploiement de la Protection d’informations Azure (AIP) lors de la sécurisation des documents dans SharePoint Online.
+Tous les groupes Azure AD créés dans le cadre de ces recommandations doivent être créés en tant que groupes Office 365. C’est particulièrement important pour le déploiement d’Azure Information Protection lors de la sécurisation des documents dans SharePoint Online.
 
-![Capture d’écran de création de groupes d’Office 365](../images/identity-device-AAD-groups.png)
+![Capture d'écran pour la création de groupes Office 365](../images/identity-device-AAD-groups.png)
 
 
-## <a name="require-mfa-based-on-sign-in-risk"></a>Exiger MFA basée sur les risques de connexion
-Avant d’obliger MFA, utiliser une stratégie d’inscription MFA de Protection d’identité pour enregistrer les utilisateurs pour MFA. Une fois que les utilisateurs sont inscrits, vous pouvez appliquer MFA pour la connexion. Le [travail requis](identity-access-prerequisites.md) inclut l’inscription de tous les utilisateurs avec MFA.
+## <a name="require-mfa-based-on-sign-in-risk"></a>Exiger une authentification multiFACTEUR basée sur le risque de connexion
+Avant d'exiger MFA, utilisez d'abord une stratégie d'inscription MFA de protection des identités pour inscrire les utilisateurs pour MFA. Une fois que les utilisateurs sont inscrits, vous pouvez appliquer l'authentification multiFACTEUR à la connexion. Le [travail requis](identity-access-prerequisites.md) inclut l'inscription de tous les utilisateurs avec authentification multifacteur.
 
 Pour créer une stratégie d’accès conditionnel : 
 
-1. Accédez au [portail Azure](https://portal.azure.com)et connectez-vous avec vos informations d’identification. Une fois que vous avez correctement connecté, vous voyez le tableau de bord Azure.
+1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s'affiche.
 
 2. Dans le menu de gauche, choisissez **Azure Active Directory**.
 
@@ -81,27 +84,27 @@ Pour créer une stratégie d’accès conditionnel :
 
 ![Stratégie d’accès conditionnel de base de référence](./media/secure-email/CA-EXO-policy-1.png)
 
- Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel à implémenter pour cette stratégie.
+ Le tableau suivant décrit les paramètres de stratégie d'accès conditionnel à implémenter pour cette stratégie.
 
-**Affectations**
+**Assignments**
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
 |Utilisateurs et groupes|Inclure|Sélectionner des utilisateurs et des groupes : sélectionnez un groupe de sécurité spécifique contenant les utilisateurs ciblés|Commencer avec un groupe de sécurité comprenant les utilisateurs pilotes|
-||Exclure|Groupe de sécurité d’exception ; comptes de service (identités d’application)|Appartenance modifié de manière temporaire selon les besoins|
-|Applications cloud|Inclure|Sélectionnez les applications que vous souhaitez appliquer à cette règle. Par exemple, sélectionnez Office 365 Exchange Online||
+||Exclure|Groupe de sécurité d’exception ; comptes de service (identités d’application)|Appartenance modifiée en fonction de vos besoins temporaires|
+|Applications cloud|Inclure|Sélectionnez les applications auxquelles cette règle doit s'appliquer. Par exemple, sélectionnez Office 365 Exchange Online||
 |Conditions|Configuré|Oui|Les configurer en fonction de votre environnement et de vos besoins spécifiques|
-|Risque de connexion|Niveau de risque||Voir les instructions dans le tableau suivant|
+|Risque de connexion|Niveau de risque||Consultez les conseils dans le tableau suivant.|
 
 **Risque de connexion**
 
-Appliquer les paramètres en fonction du niveau de protection que vous ciblez.
+Appliquez les paramètres en fonction du niveau de protection que vous ciblez.
 
 |Propriété|Niveau de protection|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
 |Niveau de risque|Baseline|Élevé, moyen|Cocher les deux|
 | |Sensible|Élevé, moyen, faible|Cocher les trois|
-| |Hautement réglementé| |Laissez toutes les options désactivée pour toujours appliquer MFA|
+| |Hautement réglementé| |Laissez toutes les options désactivées pour toujours appliquer l'authentification multiFACTEUR|
 
 **Contrôles d’accès**
 
@@ -109,18 +112,18 @@ Appliquer les paramètres en fonction du niveau de protection que vous ciblez.
 |:---|:---------|:-----|:----|
 |Accorder|Accorder l'accès|True|Sélectionné|
 ||Exiger MFA|True|Check|
-||Exiger l’appareil doit être marqué comme conforme|False||
-||Exiger hybride Azure périphérique joint à AD|False||
-||Exiger l’application cliente approuvée|False||
+||Exiger que l'appareil soit marqué comme conforme|False||
+||Exiger un appareil joint Azure AD hybride|False||
+||Exiger une application client approuvée|False||
 ||Demander tous les contrôles sélectionnés|True|Sélectionné|
 
 > [!NOTE]
-> Veillez à activer cette stratégie, en cliquant **sur**. Considérez également à l’aide de l’outil [que se passe-t-il si](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
+> N'oubliez pas d'activer cette stratégie en sélectionnant **activé**. Vous pouvez également utiliser l'outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
 
 
 
-## <a name="block-clients-that-dont-support-modern-authentication"></a>Blocage des clients qui ne prennent pas en charge l’authentification moderne
-1. Accédez au [portail Azure](https://portal.azure.com)et connectez-vous avec vos informations d’identification. Une fois que vous avez correctement connecté, vous voyez le tableau de bord Azure.
+## <a name="block-clients-that-dont-support-modern-authentication"></a>Bloquer les clients qui ne prennent pas en charge l'authentification moderne
+1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s'affiche.
 
 2. Dans le menu de gauche, choisissez **Azure Active Directory**.
 
@@ -128,17 +131,17 @@ Appliquer les paramètres en fonction du niveau de protection que vous ciblez.
 
 4. Choisissez **Nouvelle stratégie**.
 
-Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel à implémenter pour cette stratégie.
+Le tableau suivant décrit les paramètres de stratégie d'accès conditionnel à implémenter pour cette stratégie.
 
-**Affectations**
+**Assignments**
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Utilisateurs et groupes|Inclure|Sélectionner des utilisateurs et des groupes : sélectionnez un groupe de sécurité spécifique contenant les utilisateurs ciblés|Commencer avec un groupe de sécurité comprenant les utilisateurs pilotes|
+|Utilisateurs et groupes|Include|Sélectionner des utilisateurs et des groupes : sélectionnez un groupe de sécurité spécifique contenant les utilisateurs ciblés|Commencer avec un groupe de sécurité comprenant les utilisateurs pilotes|
 ||Exclure|Groupe de sécurité d’exception ; comptes de service (identités d’application)|Appartenance modifiée de manière temporaire selon les besoins|
-|Applications cloud|Inclure|Sélectionnez les applications que vous souhaitez appliquer à cette règle. Par exemple, sélectionnez Office 365 Exchange Online||
-|Conditions|Configuré|Oui|Configurer des applications clientes|
-|Applications clientes|Configuré|Oui|Les applications mobiles et les clients de bureau, autres clients (Sélectionner les deux)|
+|Applications cloud|Include|Sélectionnez les applications auxquelles cette règle doit s'appliquer. Par exemple, sélectionnez Office 365 Exchange Online||
+|Conditions|Configuré|Oui|Configurer les applications clientes|
+|Applications clientes|Configuré|Oui|Applications mobiles et clients de bureau, autres clients (sélectionnez les deux)|
 
 **Contrôles d’accès**
 
@@ -146,22 +149,22 @@ Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel
 |:---|:---------|:-----|:----|
 |Accorder|Bloquer l’accès|True|Sélectionné|
 ||Exiger MFA|False||
-||Exiger l’appareil doit être marqué comme conforme|False||
-||Exiger hybride Azure périphérique joint à AD|False||
-||Exiger l’application cliente approuvée|False||
+||Exiger que l'appareil soit marqué comme conforme|False||
+||Exiger un appareil joint Azure AD hybride|False||
+||Exiger une application client approuvée|False||
 ||Demander tous les contrôles sélectionnés|True|Sélectionné|
 
 > [!NOTE]
-> Veillez à activer cette stratégie, en cliquant **sur**. Considérez également à l’aide de l’outil [que se passe-t-il si](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
+> N'oubliez pas d'activer cette stratégie en sélectionnant **activé**. Vous pouvez également utiliser l'outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
 
 
 
-## <a name="high-risk-users-must-change-password"></a>Utilisateurs à haut risque doivent changer le mot de passe
-Pour vous assurer que les comptes des compromis tous les utilisateurs à haut risque sont obligés pour effectuer une modification de mot de passe lors de la connexion, vous devez appliquer la stratégie suivante.
+## <a name="high-risk-users-must-change-password"></a>Les utilisateurs à haut risque doivent changer leur mot de passe
+Pour vous assurer que tous les comptes compromis par les utilisateurs à haut risque sont obligés d'effectuer une modification de mot de passe lors de la connexion, vous devez appliquer la stratégie suivante.
 
-Connectez-vous à le [portail Microsoft Azure (http://portal.azure.com) ](http://portal.azure.com/) avec vos informations d’identification d’administrateur, puis accédez à **Azure AD identité Protection > stratégie risque de l’utilisateur**.
+Connectez-vous au [portail Microsoft Azure (http://portal.azure.com)](http://portal.azure.com/) avec vos informations d’identification d’administrateur, puis accédez à **Azure AD Identity Protection > Stratégie d’utilisateur à risque**.
 
-**Affectations**
+**Assignments**
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
@@ -173,27 +176,27 @@ Connectez-vous à le [portail Microsoft Azure (http://portal.azure.com) ](http:/
 
 | Type | Propriétés | Valeurs                  | Remarques |
 |:-----|:-----------|:------------------------|:------|
-|      | Accès     | Autoriser l'accès            | True  |
-|      | Accès     | Exiger le changement du mot de passe | True  |
+|      | Access     | Autoriser l'accès            | True  |
+|      | Access     | Exiger le changement du mot de passe | True  |
 
-**Révision :** non applicable
+**Révision:** non applicable
 
 > [!NOTE]
-> Veillez à activer cette stratégie, en cliquant **sur**. Également prendre en compte à l’aide de l’outil [que se passe-t-il si](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie
+> N'oubliez pas d'activer cette stratégie en sélectionnant **activé**. Vous pouvez également utiliser l'outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
 
-## <a name="define-app-protection-policies"></a>Définir des stratégies de protection des applications
-Stratégies de protection des applications permet de définir les applications qui sont autorisées et les actions qu’elle peut prendre des données de votre organisation. Créer des stratégies de protection à partir du portail Azure Intune application. 
+## <a name="define-app-protection-policies"></a>Définir les stratégies de protection des applications
+Les stratégies de protection des applications définissent les applications autorisées et les actions qu'elles peuvent effectuer sur les données de votre organisation. Créez des stratégies Intune App protection à partir du portail Azure. 
 
-Créer une stratégie pour chaque plateforme :
+Créez une stratégie pour chaque plateforme:
 - iOS
 - Android
 - Windows 10
 
-Pour créer une nouvelle stratégie de protection d’application, connectez-vous au portail Microsoft Azure avec vos informations d’identification d’administration, puis accédez à **applications mobiles > stratégies de protection des applications**. Cliquez sur **Ajouter une stratégie**.
+Pour créer une stratégie de protection des applications, connectez-vous au portail Microsoft Azure avec vos informations d'identification d'administration, puis accédez à **applications mobiles > stratégies de protection**des applications. Sélectionnez **Ajouter une stratégie**.
 
-Il existe de légères différences dans la protection de l’application options de stratégie entre iOS et Android. L’au-dessous stratégie est spécifiquement conçu pour Android. Utilisez cette classe comme un guide pour vos autres stratégies.
+Les options de stratégie de protection des applications présentent de légères différences entre iOS et Android. La stratégie ci-dessous est conçue spécifiquement pour Android. Utilisez-le comme guide pour vos autres stratégies.
 
-La liste des applications recommandée inclut les éléments suivants :
+La liste d'applications recommandée inclut les éléments suivants:
 - PowerPoint
 - Excel
 - Word
@@ -204,7 +207,7 @@ La liste des applications recommandée inclut les éléments suivants :
 - OneNote
 - Outlook
 
-Les tableaux suivants décrivent les paramètres recommandés :
+Les tableaux suivants décrivent les paramètres recommandés:
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
@@ -213,34 +216,34 @@ Les tableaux suivants décrivent les paramètres recommandés :
 ||Autoriser l'application à recevoir des données d'autres applications|Applications gérées par la stratégie||
 ||Interdire l’option Enregistrer sous|Oui||
 ||Sélectionnez dans quels services de stockage les données d'entreprise peuvent être enregistrées|OneDrive entreprise, SharePoint||
-||Restreindre les opérations Couper, Copier et Coller avec d’autres applications|Applications avec coller dans géré de stratégie||
+||Restreindre les opérations Couper, Copier et Coller avec d’autres applications|Applications gérées par une stratégie avec l'application de collage||
 ||Afficher le contenu web uniquement dans Managed Browser|Non||
 ||Chiffrer les données de l'application|Oui|Sur iOS, sélectionner l’option Quand l’appareil est verrouillé|
-||Désactiver le chiffrement de l’application lorsque le périphérique est activé.|Oui|Désactivez ce paramètre pour éviter la double chiffrement|
+||Désactiver le chiffrement d'application lorsque l'appareil est activé|Oui|DésActivez ce paramètre pour éviter le double chiffrement|
 ||Désactiver la synchronisation des contacts|Non||
-||Désactiver l’impression|Non||
+||Désactiver l'impression|Non||
 |Accès|Exiger un code confidentiel d’accès|Oui||
-||Sélectionnez Type|Numérique||
+||Sélectionner un type|Numérique||
 ||Autoriser un code PIN simple|Non||
-||Longueur du code PIN|6||
+||Longueur du code PIN|6.x||
 ||Autoriser une empreinte digitale à la place du code confidentiel|Oui||
-||Désactiver le code confidentiel d’application lorsque le code confidentiel du périphérique est géré|Oui||
-||Exiger des informations d’identification d’entreprise pour l’accès|Non||
-||Revérifier l’exigence d’accès après (minutes)|30||
+||Désactiver le code confidentiel de l'application lorsque le code confidentiel de l'appareil est géré|Oui||
+||Exiger des informations d'identification d'entreprise pour l'accès|Non||
+||Revérifier l’exigence d’accès après (minutes)|0,30||
 ||Bloquer la capture d’écran et l’Assistant Android|Non|Sur iOS, cette option n’est pas disponible|
-|Exigences de sécurité de connexion|Tente de code confidentiel max|5|Réinitialiser le code confidentiel|
+|Exigences en matière de sécurité de connexion|Nombre maximal de tentatives de code confidentiel|disque|Réinitialiser le code confidentiel|
 ||Période de grâce hors connexion|720|Bloquer l’accès|
 ||Intervalle hors connexion (jours) avant la réinitialisation des données d'application|90|Effacer les données|
-||Jailbroken/fait en sorte que les périphériques| |Effacer les données|
+||Un jailbreak/périphériques enracinés| |Effacer les données|
 
-Lorsque vous avez terminé, pensez à sélectionner « Créer ». Répétez les étapes ci-dessus en remplaçant la plate-forme sélectionnée (liste déroulante) iOS. Cette opération crée deux stratégies d’application, donc une fois que vous créez la stratégie, puis affecter des groupes à la stratégie et la déployer.
+Lorsque vous avez terminé, n'oubliez pas de sélectionner «créer». Répétez les étapes ci-dessus et remplacez la plateforme sélectionnée (dropdown) par iOS. Cela crée deux stratégies d'application, de sorte qu'une fois la stratégie créée, affectez des groupes à la stratégie et déployez-la.
 
 Pour modifier les stratégies et affecter ces stratégies aux utilisateurs, voir [comment créer et affecter des stratégies de protection des applications](https://docs.microsoft.com/intune/app-protection-policies). 
 
-## <a name="require-approved-apps"></a>Exiger des applications approuvées
-Pour exiger que les applications approuvées :
+## <a name="require-approved-apps"></a>Exiger les applications approuvées
+Pour exiger des applications approuvées:
 
-1. Accédez au [portail Azure](https://portal.azure.com)et connectez-vous avec vos informations d’identification. Une fois que vous avez correctement connecté, vous voyez le tableau de bord Azure.
+1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s'affiche.
 
 2. Dans le menu de gauche, choisissez **Azure Active Directory**.
 
@@ -252,38 +255,38 @@ Pour exiger que les applications approuvées :
 
 6. Choisissez **Applications cloud**.
 
-7. Choisissez **Sélectionner les applications**, sélectionnez les applications de votre choix dans la liste des **applications dans le nuage** . Par exemple, sélectionnez Office 365 Exchange Online. Choisissez **Sélectionnez** **terminé**.
+7. Sélectionnez **Sélectionner les applications**, sélectionnez les applications souhaitées dans la liste **applications Cloud** . Par exemple, sélectionnez Office 365 Exchange Online. Choisissez **Sélectionner** et **Terminer**.
 
 8. Choisissez **Accorder** dans la section **Contrôles d’accès**.
 
-9. Cliquez sur **accorder l’accès**, sélectionnez **Exiger l’approbation de l’application cliente**. Pour plusieurs contrôles, sélectionnez **Exiger les contrôles sélectionnés**, puis choisissez **Sélectionner**. 
+9. Sélectionnez **accorder l'accès**, sélectionnez **demander une application client approuvée**. Pour plusieurs contrôles, sélectionnez **exiger les contrôles sélectionnés**, puis choisissez **Sélectionner**. 
 
-10. Sélectionnez **Create (Créer)**.
+10. Sélectionnez **Créer**.
 
-## <a name="define-device-compliance-policies"></a>Définir des stratégies de conformité de l’appareil
+## <a name="define-device-compliance-policies"></a>Définir des stratégies de conformité des appareils
 
-Stratégies de conformité de l’appareil définissent les exigences qui doivent respecter les appareils afin d’être marqué comme conforme. Créer des stratégies de conformité à partir du portail Azure Intune périphérique. 
+Les stratégies de conformité des appareils définissent les exigences auxquelles les appareils doivent adhérer afin d'être marqués comme étant conformes. Créez des stratégies de conformité d'appareil Intune à partir du portail Azure. 
 
-Créer une stratégie pour chaque plateforme :
+Créez une stratégie pour chaque plateforme:
 - Android
-- Entreprise Android
+- Android Enterprise
 - iOS
-- Mac OS
-- Windows Phone 8.1
-- Windows 8.1 et versions ultérieures
+- OS
+- Ce paramètre est disponible sur les types d’appareils suivants :
+- Windows 8,1 et versions ultérieures
 - Windows 10 et versions ultérieures
 
-Pour créer des stratégies de conformité appareil, connectez-vous au portail Microsoft Azure avec vos informations d’identification d’administration, puis accédez à **Intune > conformité périphérique**. Sélectionnez **créer une stratégie**.
+Pour créer des stratégies de conformité des appareils, connectez-vous au portail Microsoft Azure avec vos informations d'identification d'administrateur, puis accédez à **Intune > de conformité des appareils**. Sélectionnez **créer une stratégie**.
 
 Les paramètres suivants sont recommandés pour Windows 10.
 
-**État de santé : règles d’évaluation de Service de Attestation d’intégrité de Windows**
+**Intégrité de l'appareil: règles d'évaluation du service d'attestation d'intégrité Windows**
 
 |Propriétés|Valeurs|Remarques|
 |:---------|:-----|:----|
 |Exiger BitLocker|Require (Rendre obligatoire)||
-|Exiger Secure au démarrage être activé sur l’appareil|Require (Rendre obligatoire)||
-|Exiger l’intégrité du code|Require (Rendre obligatoire)||
+|Exiger l'activation du démarrage sécurisé sur l'appareil|Require (Rendre obligatoire)||
+|Exiger l'intégrité du code|Require (Rendre obligatoire)||
 
 
 **Propriétés des appareils**
@@ -292,7 +295,7 @@ Les paramètres suivants sont recommandés pour Windows 10.
 |:---|:---------|:-----|:----|
 |Version du système d'exploitation|Tous|Non configuré||
 
-Pour toutes les stratégies à prendre en considération ci-dessus déployés, ils doivent être ciblés à des groupes d’utilisateurs. Vous pouvez le faire en créant la stratégie (lors de l’enregistrement) ou version ultérieure en sélectionnant **Gérer un déploiement** dans la section **stratégie** (même niveau qu’Ajouter).
+Pour que toutes les stratégies ci-dessus soient considérées comme déployées, elles doivent cibler des groupes d’utilisateurs. Pour ce faire, vous pouvez créer la stratégie (à l'enregistrement) ou une version ultérieure en sélectionnant **gérer le déploiement** dans la section **stratégie** (même niveau que ajouter).
 
 **Sécurité système**
 
@@ -300,33 +303,33 @@ Pour toutes les stratégies à prendre en considération ci-dessus déployés, i
 |:---|:---------|:-----|:----|
 |Mot de passe|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
 ||Mots de passe simples|Bloc||
-||Type de mot de passe|Périphérique par défaut||
-||Longueur minimale du mot de passe|6||
-||Nombre maximal de minutes d’inactivité avant que le mot de passe|15 |Ce paramètre est pris en charge pour Android versions 4.0 et ultérieure ou KNOX 4.0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8.0 et ci-dessus|
+||Type de mot de passe|Valeur par défaut du périphérique||
+||Longueur minimale du mot de passe|6.x||
+||Nombre maximal de minutes d'inactivité avant que le mot de passe ne soit requis|0,15|Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
 ||Expiration du mot de passe (jours)|41||
-||Nombre de mots de passe précédents pour empêcher la réutilisation|5||
-||Demander le mot de passe lorsque le périphérique retourne à partir de l’état est inactif (Mobile et HOLOGRAPHIQUE)|Require (Rendre obligatoire)|Disponibles pour Windows 10 et versions ultérieures|
-|Chiffrement|Chiffrement de stockage des données sur le périphérique|Require (Rendre obligatoire)||
-|Sécurité des périphériques|Pare-feu|Require (Rendre obligatoire)||
+||Nombre de mots de passe précédents pour empêcher la réutilisation|disque||
+||Exiger un mot de passe lorsque l'appareil revient de l'état inactif (mobile et holographique)|Require (Rendre obligatoire)|Disponible pour Windows 10 et versions ultérieures|
+|Chiffrement|Chiffrement du stockage des données sur l'appareil|Require (Rendre obligatoire)||
+|Sécurité de l'appareil|-|Require (Rendre obligatoire)||
 ||Antivirus|Require (Rendre obligatoire)||
-||AntiSpyware|Require (Rendre obligatoire)|Ce paramètre nécessite une solution contre les logiciels espions inscrit avec le centre de sécurité Windows|
-|Defender|Windows Defender contre les logiciels malveillants|Require (Rendre obligatoire)||
-||Version minimale de Windows Defender contre les logiciels malveillants||Uniquement pris en charge pour le bureau Windows 10. Microsoft ne recommande de versions aucuns plus de cinq derrière à partir de la version la plus récente|
-||Signature contre les logiciels malveillants Windows Defender à jour|Require (Rendre obligatoire)||
-||Protection en temps réel|Require (Rendre obligatoire)|Uniquement pris en charge pour le bureau Windows 10|
+||Logiciel anti-espion|Require (Rendre obligatoire)|Ce paramètre nécessite une solution de protection contre les logiciels espions inscrite auprès du centre de sécurité Windows|
+|Defender|Logiciel anti-programme malveillant Windows Defender|Require (Rendre obligatoire)||
+||Version minimale du logiciel anti-programme malveillant Windows Defender||Uniquement pris en charge pour les ordinateurs de bureau Windows 10. Microsoft recommande une version qui n'est pas plus de cinq par rapport à la version la plus récente.|
+||Mise à jour de la signature du logiciel anti-programme malveillant Windows Defender|Require (Rendre obligatoire)||
+||Protection en temps réel|Require (Rendre obligatoire)|Prise en charge uniquement pour les ordinateurs de bureau Windows 10|
 
 **Windows Defender ATP**
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Règles contre les menaces avancées Windows Defender|Exiger le périphérique soit au niveau ou sous le score de risque de l’ordinateur|Moyenne||
+|Règles de protection avancée contre les menaces Windows Defender|Exiger que l'appareil soit au ou sous le score de risque machine|Moyenne||
 
-## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Exiger des PC compatible (mais n’est pas compatibles téléphones et tablettes)
-Avant d’ajouter une stratégie pour exiger que les ordinateurs conformes, veillez à inscrire des périphériques pour la gestion de Intune. À l’aide de l’authentification multifacteur est recommandé avant inscription périphériques Intune pour l’assurance que le périphérique est en possession de l’utilisateur concerné. 
+## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Exiger des PC conformes (mais pas les téléphones et les tablettes conformes)
+Avant d'ajouter une stratégie pour exiger des PC conformes, veillez à inscrire les appareils pour la gestion dans Intune. L'utilisation de l'authentification multifacteur est recommandée avant l'inscriptions de périphériques dans Intune pour garantir que l'appareil est en possession de l'utilisateur prévu. 
 
-Pour exiger que les PC compatible :
+Pour exiger des PC conformes:
 
-1. Accédez au [portail Azure](https://portal.azure.com)et connectez-vous avec vos informations d’identification. Une fois que vous avez correctement connecté, vous voyez le tableau de bord Azure.
+1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s'affiche.
 
 2. Dans le menu de gauche, choisissez **Azure Active Directory**.
 
@@ -338,23 +341,23 @@ Pour exiger que les PC compatible :
 
 6. Choisissez **Applications cloud**.
 
-7. Choisissez **Sélectionner les applications**, sélectionnez les applications de votre choix dans la liste des **applications dans le nuage** . Par exemple, sélectionnez Office 365 Exchange Online. Choisissez **Sélectionnez** **terminé**.
+7. Sélectionnez **Sélectionner les applications**, sélectionnez les applications souhaitées dans la liste **applications Cloud** . Par exemple, sélectionnez Office 365 Exchange Online. Choisissez **Sélectionner** et **Terminer**.
 
-8. Pour exiger que les PC compatible, mais n’est pas compatibles téléphones et tablettes, choisissez **Conditions** et **plateformes d’appareils**. Choisissez **Sélectionner les plateformes d’appareils** et sélectionnez **Windows** et **Mac OS**.
+8. Pour exiger des PC conformes, mais pas des téléphones et des tablettes conformes, choisissez des **conditions** et des plateformes d' **appareil**. Sélectionnez **Sélectionner** les plateformes de l'appareil, puis **Windows** et **MacOS**.
 
 9. Choisissez **Accorder** dans la section **Contrôles d’accès**.
 
-10. Choisissez **accorder l’accès**, sélectionnez **Exiger le périphérique doit être marqué comme conforme**. Pour plusieurs contrôles, sélectionnez **exiger de tous les contrôles sélectionnés**, puis choisissez **Sélectionner**. 
+10. Sélectionnez **accorder l'accès**, sélectionnez **exiger la conformité de l'appareil pour être marqué comme conforme**. Pour plusieurs contrôles, sélectionnez **exiger tous les contrôles sélectionnés**, puis choisissez **Sélectionner**. 
 
-11. Sélectionnez **Create (Créer)**.
+11. Sélectionnez **Créer**.
 
-Si votre objectif est d’exiger compatible PC *et* appareils mobiles, n’activez pas les plateformes. Il met en œuvre la conformité pour tous les périphériques. 
+Si votre objectif est d'exiger des PC conformes *et des* appareils mobiles, ne sélectionnez pas de plateformes. Cela garantit la conformité de tous les appareils. 
 
-## <a name="require-compliant-pcs-and-mobile-devices"></a>Exiger compatible PC *et* appareils mobiles
+## <a name="require-compliant-pcs-and-mobile-devices"></a>Exiger des PC conformes *et des* appareils mobiles
 
-Pour exiger la conformité pour tous les périphériques :
+Pour exiger la conformité de tous les périphériques, procédez comme suit:
 
-1. Accédez au [portail Azure](https://portal.azure.com)et connectez-vous avec vos informations d’identification. Une fois que vous avez correctement connecté, vous voyez le tableau de bord Azure.
+1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s'affiche.
 
 2. Dans le menu de gauche, choisissez **Azure Active Directory**.
 
@@ -366,115 +369,17 @@ Pour exiger la conformité pour tous les périphériques :
 
 6. Choisissez **Applications cloud**.
 
-7. Choisissez **Sélectionner les applications**, sélectionnez les applications de votre choix dans la liste des **applications dans le nuage** . Par exemple, sélectionnez Office 365 Exchange Online. Choisissez **Sélectionnez** **terminé**.
+7. Sélectionnez **Sélectionner les applications**, sélectionnez les applications souhaitées dans la liste **applications Cloud** . Par exemple, sélectionnez Office 365 Exchange Online. Choisissez **Sélectionner** et **Terminer**.
 
 8. Choisissez **Accorder** dans la section **Contrôles d’accès**.
 
-9. Choisissez **accorder l’accès**, sélectionnez **Exiger le périphérique doit être marqué comme conforme**. Pour plusieurs contrôles, sélectionnez **exiger de tous les contrôles sélectionnés**, puis choisissez **Sélectionner**. 
+9. Sélectionnez **accorder l'accès**, sélectionnez **exiger la conformité de l'appareil pour être marqué comme conforme**. Pour plusieurs contrôles, sélectionnez **exiger tous les contrôles sélectionnés**, puis choisissez **Sélectionner**. 
 
-10. Sélectionnez **Create (Créer)**.
+10. Sélectionnez **Créer**.
 
-Lorsque vous créez cette stratégie, n’activez pas les plateformes. Il met en œuvre des périphériques compatibles.
-
-
+Lors de la création de cette stratégie, ne sélectionnez pas de plateformes. Cela met en place des appareils conformes.
 
 
-<!---
-#### Data loss prevention
-The goal for your device and app management policies is to protect data loss in the event of a lost or stolen device. You can do this by ensuring that access to data is protected by a PIN, that the data is encrypted on the device, and that the device is not compromised.
-
-|Policy recommendation|Description|
-|:--------------------|:----------|
-|**Require user PC management**|Require users to join their Windows PCs to an Active Directory Domain or enroll their PCs into management with Microsoft Intune or System Center Configuration Manager.|
-|**Apply security settings via group policy objects (GPO) or Configuration Manager policies for domain joined PCs**|Deploy policies that configure managed PCs to enable BitLocker, enable anti-virus, and enable firewall.|
-|**Require user mobile device management**|Require that user devices used to access email are managed by Intune **or** company email is accessed only through mobile email apps protected by Intune App Protection policies such as Outlook for iOS or Android.|
-|**Apply an Intune Device Compliance Policy on managed devices**|Apply an Intune Device Compliance Policy for managed corporate mobile devices and Intune-managed PCs that requires: a PIN with minimum length 6, device encryption, a healthy device (is not jailbroken, rooted; passes health attestation), and, if available, require devices that are **low** risk as determined by a third-party MTP like Lookout or SkyCure.|
-|**Apply an Intune App Protection Policy for managed apps running on unmanaged devices**|Apply an Intune App Protection Policy for managed apps running on unmanaged, personal mobile devices to require: a PIN with minimum length 6, device encryption, and that the device is healthy (is not jailbroken, rooted; passes health attestation).|
-
-### User impact
-
-For most organizations, it is important to be able to set user expectations around when and for which conditions they will be expected to sign into Office 365 to access their email.  
-
-Users typically benefit from single sign-on (SSO) except during the following situations:
-* When requesting authentication tokens for Exchange Online:
-  * Users may be asked to MFA whenever a **medium or above** sign-in risk is detected and users has not yet performed MFA in their current sessions.  
-  * Users will be required to either use email apps that support the Intune App Protection SDK or access emails from Intune compliant or AD domain-joined devices.
-* When users at risk sign-in, and successfully complete MFA, they will be asked to change their password.
-
-## Sensitive
-This section describes the recommendations for the sensitive tier of data, identity, and device protection. These recommendations are for customers who have a subset of data that must be protected at higher levels or require all data to be protected at these higher levels.
-
-You can apply increased protection to all or specific data sets in your Office 365 environment. For example, you can apply policies to ensure sensitive data is only shared between protected apps to prevent data loss. We recommend protecting identities and devices that access sensitive data with comparable levels of security.
-
-### Conditional access policy settings
-#### Identity protection
-
-You can give users single sign-on (SSO) experience as described in earlier sections. You only need to intervene when necessary based on [risk events](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-risk-events).   
-
-* Require MFA on **low or above** risk sessions
-* Require secure password change for high risk users
-
->[!IMPORTANT]
->[Password synchronization](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) and [self-service password reset](https://docs.microsoft.com/azure/active-directory/active-directory-passwords) are required for this policy recommendation.
->
-
-#### Data loss prevention
-
-The goal for these device and app management policies is to protect data loss in the event of a lost or stolen device. You can do this by ensuring that access to data is protected by a PIN, that the data is encrypted on the device, and that the device is not compromised.
-
-|Policy recommendation|Description|
-|:--------------------|:----------|
-|**Require user PC management**|Require users to join their PCs to an Active Directory Domain or enroll their PCs into management with Intune or Configuration Manager and ensure those devices are compliant with policies before allowing email access.|
-|**Apply security settings via group policy objects (GPO) or Configuration Manager policies for domain joined PCs**|Deploy policies that configure managed PCs to enable BitLocker, enable anti-virus, and enable firewall.|
-|**Require user mobile device management**|Require that user devices used to access email are managed by Intune **or** company email is accessed only through mobile email apps protected by Intune App Protection policies such as Outlook for iOS or Android.|
-|**Apply an Intune Device Compliance Policy on managed devices**|Apply an Intune Device Compliance Policy for managed corporate mobile devices and Intune-managed PCs that requires: a PIN with minimum length 6, device encryption, a healthy device (is not jailbroken, rooted; passes health attestation), and if available, require devices that are **low** risk as determined by a third-party MTP like Lookout or SkyCure.|
-|**Apply an Intune App Protection Policy for managed apps running on unmanaged devices**|Apply an Intune App Protection Policy for managed apps running on unmanaged, personal mobile devices to require: a PIN with minimum length 6, device encryption, and that the device is healthy (is not jailbroken, rooted; passes health attestation).|
-
-### User impact
-For most organizations, it is important to be able to set expectations for users specific to when and under what conditions they will be expected to sign into Office 365 email.
-
-Users typically benefit from single sign-on (SSO) except under the following situations:
-* When requesting authentication tokens for Exchange Online:
-  * Users will be asked to MFA whenever a **low or above** sign-in risk is detected and users has not yet performed MFA in their current sessions.  
-  * Users will be required to either use email apps that support the Intune App Protection SDK or access emails from Intune compliant or AD domain-joined devices.
-* When users at risk sign-in, and successfully complete MFA, they will be asked to change their password.
-
-## Highly regulated
-This section describes the recommendations for the highly regulated tier of data, identity, and device protection. These recommendations are for customers who may have a very small amount of data that is highly classified, trade secret, or regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
-
-### Conditional access policy settings
-#### Identity protection
-
-For the highly regulated tier Microsoft recommends enforcing MFA for all new sessions.
-* Require MFA for all new sessions
-* Require secure password change for **high** risk users
-
->[!IMPORTANT]
->[Password synchronization](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) and [self-service password reset](https://docs.microsoft.com/azure/active-directory/active-directory-passwords) are required for this policy recommendation.
->
-
-#### Data Loss Prevention
-The goal for these device and app management policies is to prevent data loss in the event of a lost or stolen device. This is done by ensuring that access to data is protected by a PIN, that the data is encrypted on the device, and that the device is not compromised.
-
-For the highly regulated tier, we recommend requiring apps that support Intune App Protection policy running only on Intune compliant or domain-joined devices.
-
-|Policy recommendation|Description|
-|:--------------------|:----------|
-|**Require user PC management**|Require users to join their Windows PCs to an Active Directory Domain, **or** enroll their PCs into management with Intune or Configuration Manager and ensure those devices are compliant with policies before allowing email access.|
-|**Apply security settings via group policy objects (GPO) or Configuration Manager policies for domain joined PCs**|Deploy policies that configure managed PCs to enable BitLocker, enable anti-virus, and enable firewall.|
-|**Require user mobile device management**|Require that devices used to access Office 365 email and files are managed by Intune or company email is accessed only through mobile email apps protected by Intune App Protection policies such as Outlook for iOS or Android.|
-|**Apply an Intune Device Compliance Policy on managed devices**|Apply an Intune Device Compliance Policy for managed corporate mobile devices and Intune-managed PCs that requires: a PIN with minimum length 6, device encryption, a healthy device (is not jailbroken, rooted; passes health attestation), and, if available, require devices that are Low risk as determined by a third-party MTP like Lookout or SkyCure.|
-
-### User impact
-For most organizations, it is important to be able to set expectations for users specific to when and under what conditions they will be expected to sign into Office 365 files.
-
-* Users configured as highly regulated will be required to re-authenticate with MFA after their session expires.
-* When users at risk sign-in they will be asked to change their password after completing MFA.
-* When requesting authentication tokens for Exchange Online:
-  * Users will be asked to perform MFA whenever they begin a new session.  
-  * Users will be required to use email apps that support the Intune App Protection SDK
-  * Users will be required to access emails from Intune compliant or AD domain-joined devices.
---->
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Découvrir les recommandations de stratégies pour sécuriser les e-mails](secure-email-recommended-policies.md)

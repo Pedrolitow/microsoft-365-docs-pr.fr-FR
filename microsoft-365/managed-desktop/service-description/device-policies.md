@@ -1,58 +1,59 @@
 ---
-title: Configuration du périphérique
-description: Découvrez les stratégies par défaut appliqués aux périphériques de bureau Microsoft.
-keywords: Service Microsoft de bureau, Microsoft 365, documentation
+title: Configuration des périphériques
+description: Découvrez les stratégies par défaut appliquées aux appareils de bureau gérés par Microsoft.
+keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: e36c65bab3fa78fc27ee6228e78461b2e6b318dd
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 9a080c044939dfde223c231dfebdd248861d5f9f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278623"
 ---
-# <a name="device-configuration"></a>Configuration du périphérique
+# <a name="device-configuration"></a>Configuration des périphériques
 
 
 <!--This topic is the target for a "Learn more" link in the Enterprise Agreement (aka.ms/dev-config); do not delete.-->
 
 <!-- Device configuration and Security Addendum-->
 
-Lorsqu’un nouveau périphérique de bureau Microsoft est mise en service, nous assurer que la configuration, optimisée pour Microsoft de bureau, est en place. Cela inclut un ensemble de stratégies par défaut qui sont définies dans le cadre du processus d’intégration. Pour éviter les conflits de ces stratégies ne doivent pas être modifiés. 
+Lors de la mise en service d'un nouveau périphérique de bureau géré Microsoft, nous nous assurons que la bonne configuration, optimisée pour Microsoft maNaged Desktop, est en place. Cela inclut un ensemble de stratégies par défaut qui sont définies dans le cadre du processus d'intégration. Pour éviter les conflits, ces stratégies ne doivent pas être modifiées. 
 
-Appareils seront arrivent avec une image de signature, puis rejoindre le domaine Azure Active Directory lorsque le premier utilisateur se connecte. Le périphérique installe automatiquement stratégies requises et les applications sans aucune intervention de l’informatique nécessaire.
+Les appareils arrivent avec une image de signature, puis rejoignent le domaine Azure Active Directory lorsque le premier utilisateur se connecte. L'appareil installe automatiquement les stratégies et applications requises sans intervention informatique requise.
 
-## <a name="why-mdm-over-group-policy"></a>Pourquoi Mobile Device Manager sur la stratégie de groupe
+## <a name="why-mdm-over-group-policy"></a>Pourquoi MDM via la stratégie de groupe
 
-Il existe quelques raisons d’utiliser la gestion des appareils mobiles (Mobile Device Manager) au lieu de la stratégie de groupe :
+Il existe quelques raisons d'utiliser MDM (Mobile Device Management) au lieu de la stratégie de groupe:
 
-- Sécurité - Stratégies Mobile Device Manager sont plus sécurisés dans le monde moderne. Stratégie de groupe est conçue pour un fonctionnement optimal avec l’identité locale Mobile Device Manager est conçu pour un fonctionnement optimal avec la gestion des identités cloud (Azure Active Directory).
-- Fiabilité - stratégies de Mobile Device Manager permettent de déploiement de stratégie plus fiable. En outre, Paramètres Mobile Device Manager écraser les stratégies de l’objet de stratégie de groupe (GPO). Démarrage avec Windows 10, version 1803, Paramètres Mobile Device Manager auront la priorité sur les valeurs de la stratégie de groupe, qui prend en charge les clients de passer à la gestion moderne. 
-- Aligner avec vision de bureau Microsoft - fournit une analyse plus complète sur le déploiement de la stratégie et prend en charge approche basée sur le groupe progressivement les modifications de stratégie de déploiement avec la possibilité de suspendre / reprendre déploiement lorsque cela est nécessaire.
+- Sécurité: les stratégies MDM sont plus sécurisées dans le monde moderne. La stratégie de groupe est conçue pour fonctionner de façon optimale avec l'identité locale, tandis que MDM est conçu pour fonctionner de manière optimale avec le Cloud Identity Management (Azure Active Directory).
+- Fiabilité: les stratégies MDM fournissent un déploiement de stratégie plus fiable. En outre, les paramètres MDM remplacent les stratégies d'objets de stratégie de groupe (GPO). À partir de Windows 10, version 1803, les paramètres MDM seront classés par ordre de priorité sur les valeurs de stratégie de groupe, qui prend en charge les clients qui migrent vers une gestion moderne. 
+- Aligner avec Microsoft maNaged Desktop vision: fournit une surveillance plus complète sur le déploiement de stratégie et prend en charge l'approche basée sur les groupes pour déployer progressivement des modifications de stratégie avec la possibilité de suspendre/reprendre le déploiement si nécessaire.
 
-Pour plus d’informations, voir [Gestion des périphériques mobiles](https://docs.microsoft.com/windows/client-management/mdm/). 
+Pour plus d'informations, consultez la rubrique [gestion des appareils mobiles](https://docs.microsoft.com/windows/client-management/mdm/). 
 
 ## <a name="default-policies"></a>Stratégies par défaut
 
-Ce tableau présente les stratégies par défaut qui sont appliqués à tous les périphériques de bureau Microsoft au cours de la configuration du périphérique. Tous les détectés reprend les modifications non approuvées par l’équipe Microsoft gérées bureau opérations aux objets gérés par Microsoft de bureau.
+Ce tableau met en évidence les stratégies par défaut appliquées à tous les appareils de bureau gérés par Microsoft lors de la mise en service des appareils. Toutes les modifications détectées qui ne sont pas approuvées par l'équipe des opérations de bureau géré Microsoft sur les objets gérés par Microsoft maNaged Desktop seront rétablies.
 
 Stratégie | Description
 --- | ---
-Guide de sécurité | [Guide de sécurité Microsoft](https://docs.microsoft.com/windows/device-security/windows-security-baselines) pour Mobile Device Manager est configuré pour tous les périphériques de bureau Microsoft. Cette ligne de base est la configuration standard de l’industrie. Il sera diffusé commercialement, bien testé, a été révisé par des experts de sécurité de Microsoft pour que les périphériques de bureau Microsoft et sécuriser les applications dans l’espace de travail moderne.<br><br>Afin d’atténuer les menaces dans le paysage des menaces de sécurité en constante évolution, le Guide de sécurité Microsoft sera mis à jour et déployé sur les périphériques de bureau Microsoft à chaque mise à jour de la fonctionnalité Windows 10.<br><br>Pour plus d’informations, voir le [Guide de sécurité pour Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
-Ordinateur de bureau Microsoft recommandé de modèle de sécurité | Un ensemble de modifications recommandées pour la sécurité de base permettant d’optimiser l’expérience utilisateur.  Ces modifications sont documentées dans [L’Addendum de sécurité](#security-addendum). Mises à jour à l’addendum stratégie se produisent sur selon vos besoins.  
-Conformité de périphérique | Ces stratégies sont configurés par défaut pour tous les périphériques de bureau Microsoft. Un périphérique est indiqué comme non conformes lors d’une des conditions de sécurité suivantes n’est pas remplie :<br>-Le chiffrement BitLocker périphérique activé, pour protéger les données sur les périphériques. Pour plus d’informations, voir [vue d’ensemble de périphérique chiffrement BitLocker dans Windows 10.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10)<br>-Initialisation sécurisée activée et appliquée, pour valider les images du microprogramme sur les périphériques avant qu’ils peuvent exécuter. Pour plus d’informations, voir [sécurisée présentation du chiffrement de démarrage et des périphériques.](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview)<br>-Périphérique de bureau Microsoft requiert le mot de passe pour la connexion.
-Déploiement de la mise à jour | Utilisez Windows Update pour les entreprises (WUfB) pour effectuer un déploiement progressif des mises à jour logicielles. Les administrateurs informatiques ne peuvent pas modifier les paramètres pour les stratégies de groupe de déploiement. Pour plus d’informations sur le déploiement basé sur un groupe, voir [la gestion des mises à jour](../working-with-managed-desktop/updates.md).
-Télémétrie | Périphériques seront définis pour fournir des données de diagnostics améliorées à Microsoft sous un identificateur commercial connu. Dans le cadre de l’ordinateur de bureau Microsoft, les administrateurs informatiques ne peuvent pas modifier ces paramètres. Pour les clients en général régions règlement de Protection de données (PIBR), les utilisateurs finaux peuvent réduire le niveau de données de diagnostic qui sont fournis, mais il y aura une réduction de service. Par exemple, de bureau Microsoft ne pourront pas collecter les données nécessaires pour effectuer une itération sur les stratégies et paramètres pour mieux répondre aux besoins de performances et la sécurité. Pour plus d’informations, voir [des données de diagnostic configurer Windows dans votre organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+Base de sécurité | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) pour MDM est configuré pour tous les appareils de bureau gérés par Microsoft. Il s'agit de la configuration standard. Elle est publiée, bien testée, et a été examinée par des experts en sécurité Microsoft afin de maintenir la sécurité des applications et des appareils de bureau gérés Microsoft dans l'espace de travail moderne. <br><br>Pour atténuer les menaces dans le contexte de sécurité en perpétuelle évolution, la base de sécurité Microsoft est mise à jour et déployée sur les appareils de bureau gérés Microsoft avec chaque mise à jour de la fonctionnalité Windows 10.<br><br>Pour plus d'informations, consultez la rubrique [Security Baseline for Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
+Modèle de sécurité Microsoft maNaged Desktop recommandé | Un ensemble de modifications recommandées à la base de sécurité qui optimisent l'expérience utilisateur.  Ces modifications sont documentées dans [l'Addendum sur la sécurité](#security-addendum). Les mises à jour apportées à l'addenda de la stratégie ont lieu le cas échéant.  
+Conformité des appareils | Ces stratégies sont configurées par défaut pour tous les appareils de bureau gérés par Microsoft. Un appareil est signalé comme non conforme lorsque l'une des conditions de sécurité suivantes n'est pas remplie:<br>-Chiffrement de périphérique BitLocker activé, pour protéger les données sur les appareils. Pour plus d'informations, consultez la rubrique [vue d'ensemble du chiffrement de périphérique BitLocker dans Windows 10.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10)<br>-Démarrage sécurisé activé et appliqué, pour valider les images du microprogramme sur les appareils avant qu'elles ne puissent s'exécuter. Pour plus d'informations, consultez la rubrique [Secure Boot and Device Encryption Overview.](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview)<br>-L'appareil de bureau géré Microsoft requiert un mot de passe pour la connexion.
+Mettre à jour le déploiement | Utilisez Windows Update for Business (WUfB) pour effectuer un déploiement progressif des mises à jour logicielles. Les administrateurs informatiques ne peuvent pas modifier les paramètres des stratégies de groupe de déploiement. Pour plus d'informations sur le déploiement basé sur un groupe, consultez [la rubrique How updates handle](../working-with-managed-desktop/updates.md).
+Données de diagnostic | Les appareils seront configurés pour fournir des données de diagnostic améliorées à Microsoft sous un identificateur commercial connu. Dans le cadre du bureau géré Microsoft, les administrateurs informatiques ne peuvent pas modifier ces paramètres. Pour les clients qui utilisent des régions générales de protection des données (RGPD), les utilisateurs finaux peuvent réduire le niveau de données de diagnostic fourni, mais une réduction du service est possible. Par exemple, le bureau géré Microsoft ne pourra pas collecter les données nécessaires pour effectuer une itération sur les paramètres et les stratégies afin de mieux répondre aux exigences de performances et de sécurité. Pour plus d'informations, reportez-vous à [la rubrique Configurer les données de diagnostic Windows dans votre organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
- ## <a name="security-addendum"></a>Addendum de sécurité
+ ## <a name="security-addendum"></a>Addendum sur la sécurité
 
- Cette section présente les stratégies qui seront déployés comme supplémentaires aux stratégies de bureau Microsoft standards. Stratégies standards sont répertoriés dans [les stratégies par défaut](#default-policies). Cette configuration est conçue avec les Services financiers et hautement régulé secteurs d’activité à l’esprit : optimisation de la position la plus sécurisée, tout en maintenant la productivité des utilisateurs.
+ Cette section décrit les stratégies qui seront déployées comme complément aux stratégies de bureau géré standard de Microsoft. Les stratégies standard sont répertoriées dans [stratégies par défaut](#default-policies). Cette configuration est conçue avec des services financiers et des secteurs hautement réglementés à l'esprit: optimisation de l'attitude la plus sécurisée, tout en maintenant la productivité des utilisateurs.
 
  ### <a name="additional-security-policies"></a>Stratégies de sécurité supplémentaires
 
- Ces stratégies sont ajoutées pour renforcer la sécurité pour les secteurs hautement régulé. 
- - **Application de liste verte**: applications doivent être approuvées par l’organisation à exécuter sur les périphériques de bureau Microsoft. Il fournit un environnement verrouillé. Les applications qui doivent être onboarded doivent être communiquées à l’équipe des opérations Microsoft géré du bureau. Pour plus d’informations, voir [Windows Defender périphérique Guard](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
- - **Surveillance de la sécurité**: Microsoft surveillera périphériques à l’aide de [Windows Defender avancée protection contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Si une menace est détectée, Microsoft avertir le client, isoler le périphérique et corriger le problème à distance. 
+ Ces stratégies sont ajoutées pour renforcer la sécurité des industries hautement réglementées. 
+ - **Liste**d'applications autorisées: les applications doivent être approuvées par l'Organisation pour s'exécuter sur des appareils de bureau gérés par Microsoft. Cela fournit un environnement verrouillé. Toutes les applications qui doivent être intégrées doivent être communiquées à l'équipe des opérations de bureau géré Microsoft. Pour plus d'informations, consultez la rubrique [Windows Defender Device Guard](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+ - **Surveillance**de la sécurité: Microsoft surveille les appareils à l'aide de la [protection avancée contre les menaces Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Si une menace est détectée, Microsoft avertit le client, isole l'appareil et corrige le problème à distance. 
 

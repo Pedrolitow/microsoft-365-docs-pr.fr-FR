@@ -1,5 +1,5 @@
 ---
-title: Sous constructions de contenu
+title: Contenu sous constructions
 ms.author: elizapo
 author: lizap
 ms.date: 07/25/2018
@@ -9,12 +9,12 @@ localization_priority: low
 description: Contenu en construction
 robots: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 21811794f1b4f24064e695447dd8293a66074624
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276761"
 ---
 # <a name="content-under-construction"></a>Contenu en construction
 
-Cette version préliminaire n’est pas prêt encore. 
+Ces informations préliminaires ne sont pas encore prêtes. 

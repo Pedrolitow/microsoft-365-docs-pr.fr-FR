@@ -1,37 +1,36 @@
 ---
-title: Configuration requise pour le bureau géré Microsoft
+title: Conditions préalables pour le bureau géré Microsoft
 description: ''
-keywords: Service Microsoft de bureau, Microsoft 365, documentation
+keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 11/1/2018
-ms.openlocfilehash: 303765d6804071b3a3de18ee412304566cbbe089
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 8d9c008af9531bc5b829d248665dc5b58ac6034b
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277385"
 ---
-# <a name="prerequisites-for-microsoft-managed-desktop"></a>Configuration requise pour le bureau géré Microsoft
+# <a name="prerequisites-for-microsoft-managed-desktop"></a>Conditions préalables pour le bureau géré Microsoft
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
 <!--from Prerequisites -->
 
-Réussite avec l’ordinateur de bureau Microsoft commence par connues, documentée et convenus requise pour l’infrastructure du client. Cette section décrit les conditions préalables. 
+Le succès avec le bureau géré Microsoft commence par des exigences connues, documentées et convenues pour l'infrastructure du client. Cette section décrit ces exigences infastructure. 
 
-Microsoft FastTrack est disponible pour aider les clients à répondre à ces exigences et vous aider à prendre part à l’espace de travail moderne en tant que Service. Pour plus d’informations, voir [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
+Microsoft FastTrack est disponible pour aider les clients à répondre à ces exigences et vous aider à vous préparer à participer au bureau géré Microsoft. Pour plus d'informations, consultez la rubrique [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
 
-Domaine | Détails requis
+Domaine | Détails des éléments prérequis
 --- | ---
-Gestion des licences | Une licence Microsoft 365 E5 ou équivalentes licences sont requis.<br><br>Cette licence inclut Office 365 E5, Windows 10 entreprise E5 & mobilité d’entreprise + E5 de sécurité (EMS). Pour plus d’informations, voir [Gestion des licences de Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
-Connectivité |  Tous les périphériques de bureau Microsoft requièrent une connectivité à nombreux points de terminaison de service Microsoft à partir du réseau interne d’organisation, y compris :<br>-Mise à jour Windows<br>-Banque Microsoft pour les entreprises<br>-Azure Active Directory<br>-Rapport d’erreurs Windows<br>-Analyse des incidents en ligne<br>-Connecté l’expérience utilisateur et télémétrie<br>-Application OneDrive pour Windows 10<br><br>La liste complète des requis à l’adresse IP et URL sont accessibles dans la [Configuration du serveur Proxy](../get-ready/network.md). 
-Azure Active Directory |    Azure Active Directory (AD Azure) doit être la source d’autorité pour tous les comptes d’utilisateurs ou de comptes d’utilisateurs doivent être synchronisées à partir de sur site Active Directory à l’aide d’Azure AD se connecter, version 1.1.654.0 ou version ultérieure. Pour plus d’informations, voir [Azure AD se connecter](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
-Authentification |    Si Azure AD n’est pas la source d’autorité pour les comptes d’utilisateur, vous devez configurer une de ces dans Azure AD se connecter :<br>-Synchronisation de hachage mot de passe (recommandée)<br>-Authentification pass-through<br>-Fédération avec ADFS<br><br>Lorsque la définition des options d’authentification avec écriture différée Azure AD connecter le mot de passe est également requis. Pour plus d’informations, voir [écriture différée de mot de passe](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback).<br><br>Pour plus d’informations sur les options d’authentification Azure AD, voir [options de connexion utilisateur Azure AD se connecter](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
-Office 365 |    Il est vivement recommandé de migrer vers le nuage que les services suivants :<br>-E-mail - migrer vers le nuage boîtes aux lettres Exchange online ou être configuré avec Exchange Online hybride avec Exchange 2013 ou version ultérieure, sur site.<br>Fichiers et dossiers à-migrer vers SharePoint Online/Office 365.<br>-Skype pour les entreprises – migration à Skype pour les entreprises en ligne.
-Gestion des périphériques | Microsoft Intune - une solution Mobile Device Manager en nuage uniquement (non hybrides) est nécessaire, qui autorise les administrateurs informatiques à gérer les périphériques de bureau Microsoft à l’aide d’une console web qui est accessible à partir de n’importe où dans le monde. Microsoft Intune est la solution Mobile Device Manager requise.<br><br>Pour plus d’informations, voir [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
-Sauvegarde et récupération | Ordinateur de bureau Microsoft requiert synchronisé avec OneDrive entreprise pour la protection des fichiers. Tous les fichiers non synchronisés vers OneDrive entreprise ne sont pas garantis par Microsoft de bureau et peuvent être perdues au cours d’échanges de périphériques ou appels au support technique nécessitant une réinitialisation du périphérique. Ordinateur de bureau Microsoft ne gère pas les lecteurs réseau mappés.  
+Gestion des licences | L'une des options de licence suivantes doit être attribuée à chaque utilisateur MMD:<br>-Microsoft 365 E5<br>-Microsoft 365 E3, Enterprise Mobility + Security E5 et Windows 10 entreprise E5<br>-Office 365 E3, Enterprise Mobility + Security E5 et Windows 10 entreprise E5<br><br>Les clients d'accord entreprise existants peuvent avoir besoin de conseils pour activer l'activation d'abonnement Windows 10 entreprise dans le client Azure AD. Pour plus d'informations, consultez la rubrique [deploy Windows 10 Enterprise licenses](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses#enabling-subscription-activation-with-an-existing-ea).<br><br>Les licences de produit peuvent être affectées à l'aide de groupes de sécurité en configurant des licences Azure AD Group. Pour plus d'informations, consultez la rubrique [What is Group-based Licensing in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).<br><br>Pour plus d'informations sur les licences disponibles, consultez la rubrique [Microsoft 365 Licensing](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Connectivité |  Tous les périphériques de bureau gérés Microsoft nécessitent une connectivité à de nombreux points de terminaison de service Microsoft à partir du réseau d'entreprise.<br><br>Pour obtenir la liste complète des adresses IP et des URL requises, voir [Configuration réseau](../get-ready/network.md). 
+Azure Active Directory |    Azure Active Directory (Azure AD) doit être la source d'autorité pour tous les comptes d'utilisateur, ou les comptes d'utilisateur doivent être synchronisés à partir d'Active Directory local à l'aide de la dernière version prise en charge d'Azure AD Connect.<br><br>Pour plus d'informations sur Azure AD Connect, reportez-vous à la rubrique [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Pour plus d'informations sur les versions Azure AD Connect prises en charge, reportez-vous à la rubrique [Azure ad Connect: version Release History](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history).
+Authentification |    Si Azure AD n'est pas la source d'autorité pour les comptes d'utilisateur, vous devez configurer l'un des éléments suivants dans Azure AD Connect:<br>-Synchronisation de hachage de mot de passe<br>-Authentification directe<br>-Fédération avec ADFS<br><br>Lors de la configuration des options d'authentification avec Azure AD Connect, l'écriture différée du mot de passe est également requise. Pour plus d'informations, consultez la rubrique [écriture différée du mot de passe](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). <br><br>Pour plus d'informations sur les options d'authentification avec Azure AD, reportez-vous à la rubrique [options de connexion de l'utilisateur Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
+Office 365 |    Bien qu'il ne soit pas nécessaire de s'inscrire avec Microsoft maNaged Desktop, il est vivement recommandé de migrer les services suivants vers le Cloud:<br>-Courrier électronique: migrez vers des boîtes aux lettres en nuage, Exchange Online ou configurez Exchange Online hybride avec Exchange 2013 ou une version ultérieure, en local.<br>-Fichiers et dossiers: migrez vers OneDrive entreprise/SharePoint Online.<br>-Outils de collaboration en ligne: migrer vers Teams.
+Gestion des périphériques | Les périphériques de bureau gérés Microsoft nécessitent une gestion à l'aide de Microsoft Intune. Intune doit être défini en tant qu'autorité de gestion des appareils mobiles.<br><br>Pour plus d'informations, consultez la rubrique [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
+Sauvegarde et récupération des données | Le bureau géré Microsoft requiert la synchronisation des fichiers avec OneDrive entreprise pour la protection. Les fichiers qui ne sont pas synchronisés avec OneDrive entreprise ne sont pas assurés par le bureau géré Microsoft et peuvent être perdus pendant les échanges d'appareils, ou les appels de prise en charge qui nécessitent une réinitialisation de l'appareil.<br><br>Bien que cela ne soit pas obligatoire, le bureau géré Microsoft recommande vivement la migration des lecteurs réseau mappés vers la solution cloud appropriée.  
 
-[Découvrez comment remplir les conditions préalables pour l’inscription de l’ordinateur de bureau Microsoft.](../get-ready/index.md)
-
-Lorsque vous êtes prêt à prendre en main de bureau Microsoft, contactez votre responsable de compte Microsoft. 
+Lorsque vous êtes prêt à commencer à utiliser Microsoft maNaged Desktop, contactez votre gestionnaire de compte Microsoft. 

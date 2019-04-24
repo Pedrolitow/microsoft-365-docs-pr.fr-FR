@@ -11,6 +11,9 @@ f1_keywords:
 - BCS365_ZTDTroubleshootDeviceErrors
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -20,26 +23,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: Découvrez comment résoudre les erreurs de fichier de périphérique en pilote automatique.
-ms.openlocfilehash: 9b8d8ab424dd3189ff5c228dab8f5c513ff5dafc
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Découvrez comment dépanner les erreurs de fichier d'appareil autoPilot.
+ms.openlocfilehash: 9d4a47f78c38d8c076f5b3876a36b6bf46eaaaf3
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279835"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Résoudre les erreurs des appareils AutoPilot
 
-## <a name="device-file-error-messages"></a>Messages d’erreur de fichier de périphérique
+## <a name="device-file-error-messages"></a>Messages d'erreur de fichier d'appareil
 
-Info Voici certaines des erreurs que vous pouvez rencontrer lorsque vous travaillez avec des fichiers de périphérique en pilote automatique dans Microsoft 365 Business. 
+Voici des informations sur certaines des erreurs que vous pouvez voir lors de l'utilisation de fichiers d'appareil autoPilot dans Microsoft 365 Business. 
   
-|**Code d’erreur**|**Solution pour l’essayer**|
+|**Code d’erreur**|**Correctif à essayer**|
 |:-----|:-----|
-|Corps de la demande non valide  <br/> |Cette erreur doit se produire rarement, si vous voyez cette erreur, réessayez l’opération.  <br/> |
-|Valeur de hachage du matériel pour un périphérique n’est pas correct.  <br/> |Si vous voyez cette erreur, cela signifie que la valeur fournie dans votre fichier CSV pour le hachage du matériel d’un périphérique n’est pas correcte. Tout d’abord, vérifiez que la valeur a été correctement tapée. Si vous pensez que la valeur est correcte, mais cette erreur qui se passe, demandez à votre fournisseur de matériel pour une assistance.  <br/> |
-|Périphérique affecté à un autre client  <br/> |Si vous voyez cette erreur, cela signifie que la valeur fournie pour le numéro de série ou la clé de produit d’un ou plusieurs périphériques dans votre fichier CSV n’est pas correcte. Tout d’abord, vérifiez que la valeur a été correctement tapée. Si vous pensez que la valeur est correcte, mais cette erreur qui se passe, demandez à votre fournisseur de matériel pour une assistance.  <br/> |
-|Le fichier CSV contient un numéro de série ou de la clé de produit  <br/> |Si vous rencontrez cette erreur, cela signifie que le périphérique que vous êtes lors de la tentative d’enregistrer est déjà enregistré par une autre organisation. Pour résoudre ce problème, demandez à votre fournisseur de matériel pour une assistance.  <br/> |
-|Ce périphérique n’est pas pris en charge pour le programme d’installation à l’aide de pilote  <br/> | Cette erreur signifie que le périphérique ne répond pas aux besoins de déploiement pilote automatique. Périphériques doivent répondre aux exigences suivantes :  <br/>  Windows 10, version 1703 ou supérieure.  <br/>  Nouveaux appareils qui ne sont pas issus d'une expérience Windows prête à l'emploi.  <br/> |
-|Périphérique non trouvé  <br/> |Cette erreur signifie qu’un ou plusieurs périphériques dans votre fichier CSV n’est pas inscrit à votre organisation. Pour résoudre ce problème, demandez à votre fournisseur de matériel pour une assistance.  <br/> |
+|Corps de la requête non valide  <br/> |Cette erreur devrait se produire rarement, si vous voyez cette erreur, renouvelez l'opération.  <br/> |
+|La valeur de hachage de matériel pour un périphérique est incorrecte.  <br/> |Si cette erreur apparaît, cela signifie que la valeur que vous avez fournie dans votre fichier CSV pour le hachage matériel d'un périphérique est incorrecte. Tout d'abord, vérifiez que la valeur a été tapée correctement. Si vous pensez que la valeur est correcte, mais que cette erreur persiste, demandez de l'aide à votre fournisseur de matériel.  <br/> |
+|Appareil affecté à un autre client  <br/> |Si cette erreur apparaît, cela signifie que la valeur que vous avez fournie dans votre fichier CSV pour le numéro de série ou la clé de produit d'un ou plusieurs périphériques est incorrecte. Tout d'abord, vérifiez que la valeur a été tapée correctement. Si vous pensez que la valeur est correcte, mais que cette erreur persiste, demandez de l'aide à votre fournisseur de matériel.  <br/> |
+|Le fichier CSV contient un numéro de série ou une clé de produit non valide  <br/> |Si cette erreur s'affiche, cela signifie que l'appareil que vous êtes Tyring d'enregistrer est déjà enregistré par une autre organisation. Pour résoudre ce problème, demandez de l'aide à votre fournisseur de matériel.  <br/> |
+|Ce périphérique n'est pas pris en charge pour l'installation à l'aide de autoPilot  <br/> | Cette erreur signifie que l'appareil ne répond pas à la configuration requise pour le déploiement de autoPilot. Les appareils doivent respecter ces exigences :  <br/>  Windows 10, version 1703 ou supérieure.  <br/>  Nouveaux appareils qui ne sont pas issus d'une expérience Windows prête à l'emploi.  <br/> |
+|Appareil introuvable  <br/> |Cette erreur signifie qu'un ou plusieurs périphériques de votre fichier CSV ne sont pas enregistrés dans votre organisation. Pour résoudre ce problème, demandez de l'aide à votre fournisseur de matériel.  <br/> |
    

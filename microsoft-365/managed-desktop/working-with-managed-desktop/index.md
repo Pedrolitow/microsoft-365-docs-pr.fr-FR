@@ -1,24 +1,25 @@
 ---
-title: Utilisation du bureau géré Microsoft
+title: Utilisation de Microsoft maNaged Desktop
 description: ''
-keywords: Service Microsoft de bureau, Microsoft 365, documentation
+keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 06/06/2018
-ms.openlocfilehash: b7ac8944235112ebd88bcbe4e35b971912b656e7
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 23d9b5fe38eac94d12a3dc293acaeda5e3e22f88
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278277"
 ---
-# <a name="working-with-microsoft-managed-desktop"></a>Utilisation du bureau géré Microsoft
+# <a name="working-with-microsoft-managed-desktop"></a>Utilisation de Microsoft maNaged Desktop
 
-Après avoir travaillé avec votre équipe Account Microsoft intégré à Microsoft de bureau, vous pouvez utiliser le [portail d’administration](https://aka.ms/mmdportal) pour gérer votre environnement. 
+Après avoir travaillé avec votre équipe de compte Microsoft pour intégrer le bureau géré Microsoft, vous pouvez utiliser le [portail d'administration](https://aka.ms/mmdportal) pour gérer votre environnement. 
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
-- [Aide utilisateurs finaux pour le bureau géré Microsoft](end-user-support.md)
-- [Aide administrateur pour le bureau géré Microsoft](admin-support.md)
+- [Prise en charge de l'utilisateur final pour le bureau géré Microsoft](end-user-support.md)
+- [Prise en charge des administrateurs pour le bureau géré Microsoft](admin-support.md)
 - [Gérer les applications dans le bureau géré Microsoft](manage-apps.md)

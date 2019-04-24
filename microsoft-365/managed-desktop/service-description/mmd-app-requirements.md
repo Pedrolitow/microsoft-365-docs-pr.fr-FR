@@ -1,59 +1,60 @@
 ---
-title: Configuration requise de bureau Microsoft
+title: Configuration requise pour les applications de bureau géré Microsoft
 description: ''
-keywords: Service Microsoft de bureau, Microsoft 365, documentation
+keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 01/08/2019
-ms.openlocfilehash: 6b6c6f6a2e719496578ac1d15c9b94a92a2ab492
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: de6cc7d77e023a9d41961e5fbcce060f1bb659ae
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278334"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise de bureau Microsoft
+# <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise pour les applications de bureau géré Microsoft
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreeement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-Line-of-business applications que vous souhaitez déployer sur les périphériques de bureau Microsoft doivent respecter les spécifications indiquées dans cette rubrique. 
+Les applications métier que vous souhaitez déployer sur des appareils de bureau gérés Microsoft doivent répondre aux exigences de cette rubrique. 
 
-## <a name="application-condition"></a>Condition d’application
+## <a name="application-condition"></a>Condition de l'application
 
-Il est important que les applications ne pas avoir un impact sur l’environnement de bureau Microsoft. Voici la configuration requise qu’une application dans l’ordre pour déployer Microsoft. Pour une application donnée ou le pilote, Microsoft renoncer à toutes les exigences fournies dans le présent document. Microsoft peut décider de supprimer une application ou un pilote qui affecte les performances et la fiabilité des périphériques de bureau Microsoft.
+Il est important que les applications n'aient pas d'impact négatif sur l'environnement de bureau géré Microsoft. Les conditions suivantes doivent être satisfaites pour que Microsoft puisse le déployer. Pour une application ou un pilote donné, Microsoft peut renoncer aux exigences fournies dans le présent document. Microsoft peut décider de supprimer une application ou un pilote qui a un impact négatif sur les performances et la fiabilité des appareils de bureau gérés par Microsoft.
 
-## <a name="deployable-using-microsoft-technologies"></a>Peut être déployé à l’aide des technologies Microsoft
+## <a name="deployable-using-microsoft-technologies"></a>Déployable à l'aide des technologies Microsoft
 
-Ordinateur de bureau Microsoft utilise Intune, Microsoft Store et Microsoft Store for Business pour déployer des applications. Par conséquent, les applications doivent être empaquetées sous forme peuvent être déployés par la version en cours de ces services.
+Microsoft maNaged Desktop utilise Intune, Microsoft Store et Microsoft Store pour les entreprises pour déployer des applications. Par conséquent, les applications doivent être empaquetées de manière à pouvoir être déployées par la version actuelle de ces services.
 
-## <a name="prohibited-app-classes"></a>Classes d’application interdite
+## <a name="prohibited-app-classes"></a>Classes d'application interDites
 
-Certains types d’applications ne sont pas autorisés sur les périphériques de bureau Microsoft :
-- logiciel d’audit, de sécurité ou antivirus 3ème partie
-- navigateurs web de 3ème partie
-- Versions de Microsoft Office avant d’Office 365 Pro Plus
-- Applications qui installent ou regroupent les autres logiciels tiers 3
+Certains types d'application ne sont pas autorisés sur les appareils de bureau géré Microsoft:
+- logiciels antivirus, de sécurité ou d'audit tiers
+- navigateurs Web tiers
+- Versions de Microsoft Office antérieures à Office 365 Pro plus
+- Applications qui installent ou regroupent d'autres logiciels tiers
 
-## <a name="restricted-app-behaviors"></a>Comportements d’application restreinte
+## <a name="restricted-app-behaviors"></a>Comportements d'application restreinte
 
-Certains comportements d’application peuvent être préjudiciable que l’expérience utilisateur ou représenter un risque de sécurité pour les périphériques de bureau Microsoft. Les applications ne doivent pas comporter les comportements ou les caractéristiques suivantes : 
+Certains comportements d'application peuvent être préjudiciables à l'expérience utilisateur ou présenter un risque de sécurité aux appareils de bureau gérés par Microsoft. Les applications ne doivent pas présenter les comportements ou caractéristiques suivants: 
 
-Expérience utilisateur :
-- Installer les services d’arrière-plan ou de lancer le processus de longue durée en arrière-plan
-- Ajouter le chemin d’accès de démarrage de Windows
+Expérience utilisateur:
+- Installer des services d'arrière-plan ou générer des processus d'arrière-plan de longue durée d'exécution
+- S'ajouter au chemin de démarrage de Windows
 
 Sécurité :
-- Appeler proposait Windows ou API Office ou prendre de dépendances sur les structures de données internes Windows ou Office
-- Agir comme un magasin d’applications ou gestionnaire d’extension intégrés
-- Élever les privilèges de l’utilisateur final
-- Failles de sécurité connus
-- Signé à l’aide d’un certificat qui ne reportés sur une racine de confiance
-- Chiffrer ou restreindre l’accès aux données de l’utilisateur final
-- Modifier le code du système d’exploitation en cours d’exécution
+- Appeler des API Windows ou Office ou prendre des dépendances sur des structures de données Windows ou Office internes
+- Agir en tant que magasin d'applications ou disposer d'un gestionnaire d'extensions intégré
+- Élever les privilèges de l'utilisateur final
+- Ont des failles de sécurité connues
+- Signé à l'aide d'un certificat qui ne se cumule pas vers une racine approuvée
+- Chiffrer ou restreindre l'accès aux données de l'utilisateur final
+- Modifier le code du système d'exploitation au moment de l'exécution
 
-## <a name="driver-deployment"></a>Déploiement pilote
+## <a name="driver-deployment"></a>Déploiement de pilotes
 
-Sauf si un pilote est disponible dans Windows Update ou est signé séparément par Windows matériel qualité (WHQL), Microsoft doit approuver un pilote avant que Microsoft déploierez le pilote aux périphériques de bureau Microsoft.
+À moins qu'un pilote ne soit disponible dans Windows Update ou qu'il soit signé séparément par le laboratoire de la qualité du matériel Windows (WHQL), Microsoft doit approuver un pilote pour que Microsoft déploie le pilote sur les appareils de bureau gérés par Microsoft.

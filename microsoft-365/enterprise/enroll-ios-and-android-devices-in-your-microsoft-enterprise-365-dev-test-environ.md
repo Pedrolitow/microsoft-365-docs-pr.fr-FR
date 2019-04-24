@@ -1,5 +1,5 @@
 ---
-title: Inscription d’appareils iOS et Android dans votre environnement de test Microsoft 365 Entreprise
+title: Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,76 +8,76 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
-description: Utilisez ce Guide de laboratoire de Test pour inscrire des périphériques dans votre environnement de test Microsoft 365 et les gérer à distance.
-ms.openlocfilehash: a78db19099ccacd1b2f62e8438d1749f28d22f52
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Utilisez ce guide de laboratoire de test pour inscrire des appareils dans votre environnement de test Microsoft 365 et les gérer à distance.
+ms.openlocfilehash: e653b3e6cafb6ee2eb492709a2d060c7b92a6904
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281246"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Inscription d’appareils iOS et Android dans votre environnement de test Microsoft 365 Entreprise
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 Enterprise
 
-En suivant les instructions fournies dans cet article, vous serez en mesure de s’inscrire et tester les fonctionnalités de gestion de base des périphériques mobiles pour les périphériques iOS ou Android dans votre environnement de test Microsoft 365 pour entreprises.
+En suivant les instructions fournies dans cet article, vous serez en mesure d'inscrire et de tester des fonctionnalités de gestion des appareils mobiles de base pour les appareils iOS et Android dans votre environnement de test Microsoft 365 Enterprise.
 
 ![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Création de votre environnement de test Microsoft 365 pour entreprises
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: créer votre environnement de test Microsoft 365 Enterprise
 
-Si vous souhaitez simplement inscrire les périphériques iOS ou Android de manière léger avec la configuration minimale requise, suivez les instructions de [configuration de base léger](lightweight-base-configuration-microsoft-365-enterprise.md).
+Si vous souhaitez simplement inscrire des appareils iOS et Android de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si vous souhaitez inscrire les périphériques iOS ou Android dans une entreprise simulée, suivez les instructions de [l’authentification directe](pass-through-auth-m365-ent-test-environment.md).
+Si vous souhaitez inscrire des appareils iOS et Android dans une entreprise simulée, suivez les instructions de l' [authentification directe](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Test automatisé de gestion des licences et l’appartenance au groupe ne nécessite pas de l’environnement de test simulé entreprise, qui comprend un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt Windows Server Active Directory. Il est fourni ici en tant qu’option afin que vous puissiez licences automatisé et l’appartenance au groupe de test et tester dans un environnement qui représente une organisation classique. 
+> Le test des licences automatisées et l'appartenance aux groupes ne nécessitent pas l'environnement de test d'entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d'annuaires pour une forêt des services de domaine Active Directory (AD DS). Elle est fournie ici en tant qu'option pour vous permettre de tester les licences automatiques et les appartenances aux groupes et de les tester dans un environnement qui représente une organisation typique. 
 >  
 
-## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Phase 2 : Inscrire vos périphériques iOS ou Android
+## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Phase 2: inscrire vos appareils iOS et Android
 
-Tout d’abord, suivez les instructions fournies dans [installer et se connecter à l’application de portail d’entreprise](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) pour personnaliser l’application de portail d’entreprise Microsoft Intune pour votre environnement de test.
+Tout d'abord, suivez les instructions de la procédure d' [installation et connectez-vous à l'application portail d'entreprise](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) pour personnaliser l'application portail d'entreprise Microsoft Intune pour votre environnement de test.
 
-Ensuite, suivez les instructions de [configurer l’accès aux ressources de votre société](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) à inscrire un périphérique iOS.
+Ensuite, suivez les instructions de la procédure [configurer l'accès aux ressources de votre entreprise](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) pour inscrire un appareil iOS.
 
-Ensuite, suivez les instructions dans [l’inscription de votre appareil Android dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android) pour inscrire un appareil Android.
+Ensuite, suivez les instructions de la procédure [inscrire votre appareil Android dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android) pour inscrire un appareil Android.
 
-## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Phase 3 : Gérer vos périphériques iOS ou Android à distance
+## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Phase 3: gérer les appareils iOS et Android à distance
 
-Intune Microsoft fournit à distance verrouillage et code secret réinitialisation de fonctionnalités. Si une personne perd leur appareil, vous pouvez verrouiller le périphérique à distance. Si une personne oublie son code confidentiel, vous pouvez le réinitialiser à distance.
+Microsoft Intune fournit des fonctionnalités de verrouillage à distance et de réinitialisation du code secret. Si une personne perd son appareil, vous pouvez le verrouiller à distance. Si une personne oublie son mot de passe, vous pouvez le réinitialiser à distance.
   
-Pour verrouiller une iOS ou un appareil Android à distance :
+Pour verrouiller un appareil iOS ou Android à distance:
 
-1. Connectez-vous au portail Azure à [https://portal.azure.com](https://portal.azure.com) avec les informations d’identification de votre compte d’administrateur global.
+1. Connectez-vous au portail Azure à [https://portal.azure.com](https://portal.azure.com) l'aide des informations d'identification de votre compte d'administrateur général.
 2. Cliquez sur **tous les services**, tapez **Intune**, puis cliquez sur **Intune**.
-3. Cliquez sur **périphériques > tous les périphériques**.
-4. Dans la liste des périphériques, cliquez sur un appareil Android ou sur iOS, puis cliquez sur l’action **Verrouiller à distance** .
+3. Cliquez sur **périphériques _GT_ tous les appareils**.
+4. Dans la liste des périphériques, cliquez sur un appareil iOS ou Android, puis sur l'action de **verrouillage à distance** .
 
     
 Pour réinitialiser le code secret à distance, procédez comme suit :
 
-1. Si nécessaire, connectez-vous au portail Azure à [https://portal.azure.com](https://portal.azure.com) avec les informations d’identification de votre compte d’administrateur global.
+1. Si nécessaire, connectez-vous au portail Azure à [https://portal.azure.com](https://portal.azure.com) l'aide des informations d'identification de votre compte d'administrateur général.
 2. Cliquez sur **tous les services**, tapez **Intune**, puis cliquez sur **Intune**.
-3. Cliquez sur **périphériques > tous les périphériques**.
-4. Dans la liste des périphériques gérer, cliquez sur un appareil Android ou sur iOS et choisissez **... Plus**. Puis sélectionnez l’action **Supprimer le code secret** périphérique à distance.
+3. Cliquez sur **périphériques _GT_ tous les appareils**.
+4. Dans la liste des appareils gérés, cliquez sur un appareil iOS ou Android, puis choisissez **... Plus encore**. Ensuite, sélectionnez l'action de **suppression** de l'appareil à distance.
 
-Pour une expérimentation supplémentaire, voir [actions de périphérique disponible](https://docs.microsoft.com/intune/device-management#available-device-actions).
+Pour une expérience supplémentaire, consultez la rubrique [available Device actions](https://docs.microsoft.com/intune/device-management#available-device-actions).
 
     
 ## <a name="next-step"></a>Étape suivante
 
-Explorez des fonctionnalités de [Gestion des appareils mobiles](m365-enterprise-test-lab-guides.md#mobile-device-management) dans votre environnement de test.
+Explorez les fonctionnalités supplémentaires de [gestion des appareils mobiles](m365-enterprise-test-lab-guides.md#mobile-device-management) dans votre environnement de test.
 
 ## <a name="see-also"></a>Voir aussi
 
 [Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
   
-[Environnement de test des stratégies de conformité de périphérique pour votre entreprise 365 de Microsoft](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Déployer Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
 
-[Mobilité d’entreprise + sécurité (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+[Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

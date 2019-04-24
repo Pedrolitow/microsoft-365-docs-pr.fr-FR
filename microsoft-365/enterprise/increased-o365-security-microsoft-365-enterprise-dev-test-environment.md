@@ -1,121 +1,117 @@
 ---
-title: Sécurité Office 365 accrue pour votre environnement de test Microsoft 365 Entreprise
+title: Amélioration de la sécurité Microsoft 365 pour votre environnement de test Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Utilisez ce Guide de laboratoire de Test pour activer les paramètres de sécurité Office 365 supplémentaires à votre environnement de test Microsoft 365 pour entreprises.
-ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Utilisez ce guide de laboratoire de test pour activer des paramètres de sécurité Microsoft 365 supplémentaires pour votre environnement de test Microsoft 365 Enterprise.
+ms.openlocfilehash: 54e05122dcbe5d4e24f092536897f2a8ad449e05
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283654"
 ---
-# <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Sécurité Office 365 accrue pour votre environnement de test Microsoft 365 Entreprise
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Amélioration de la sécurité Microsoft 365 pour votre environnement de test Microsoft 365 Enterprise
 
-Les instructions de cet article, configurer les paramètres Office 365 supplémentaires pour renforcer la sécurité dans votre environnement de test Microsoft 365 pour entreprises.
+Les instructions de cet article vous permettent de configurer des paramètres supplémentaires de Microsoft 365 pour renforcer la sécurité dans votre environnement de test Microsoft 365 Enterprise.
 
 ![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Création de votre environnement de test Microsoft 365 pour entreprises
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: créer votre environnement de test Microsoft 365 Enterprise
 
-Si vous souhaitez simplement configurer une meilleure sécurité Office 365 dans une solution légère avec la configuration minimale requise, suivez les instructions de [configuration de base léger](lightweight-base-configuration-microsoft-365-enterprise.md).
+Si vous souhaitez simplement configurer une sécurité Microsoft 365 accrue de façon légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si vous souhaitez configurer une meilleure sécurité Office 365 dans une entreprise simulée, suivez les instructions de [l’authentification directe](pass-through-auth-m365-ent-test-environment.md).
+Si vous souhaitez configurer la sécurité Microsoft 365 améliorée dans une entreprise simulée, suivez les instructions de l' [authentification directe](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Test de renforcement de la sécurité Office 365 ne nécessite pas l’environnement de test simulé entreprise, qui comprend un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt Windows Server Active Directory. Il est fourni ici en tant qu’option afin que vous puissiez licences automatisé et l’appartenance au groupe de test et tester dans un environnement qui représente une organisation classique. 
+> Test la sécurité améliorée de Microsoft 365 ne nécessite pas l'environnement de test d'entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d'annuaires pour une forêt des services de domaine Active Directory (AD DS). Elle est fournie ici en tant qu'option pour vous permettre de tester les licences automatiques et les appartenances aux groupes et de les tester dans un environnement qui représente une organisation typique. 
 
 
-## <a name="phase-2-configure-increased-office-365-security"></a>Phase 2 : Configurer une meilleure sécurité Office 365
+## <a name="phase-2-configure-increased-microsoft-365-security"></a>Phase 2: configuration de la sécurité Microsoft 365 améliorée
 
-Durant cette phase, vous activez une meilleure sécurité Office 365 pour votre environnement de test Microsoft 365 pour entreprises. Pour plus d’informations et les paramètres, consultez [configurer votre client Office 365 pour accroître la sécurité](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+Dans cette phase, vous allez activer la sécurité Microsoft 365 améliorée pour votre environnement de test Microsoft 365 Enterprise. Pour plus d'informations et de paramètres, voir [Configure Your Office 365 client for major Security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
-### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurer SharePoint Online pour bloquer les applications qui ne prennent pas en charge l’authentification moderne
+### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurer SharePoint Online pour bloquer les applications qui ne prennent pas en charge l'authentification moderne
 
-Les applications qui ne prennent pas en charge l’authentification moderne ne peut pas avoir d' [identité et périphérique d’accès aux configurations](microsoft-365-policies-configurations.md) appliquée, qui est un élément important de sécuriser votre abonnement Microsoft 365 et ses actifs numériques. 
+Les applications qui ne prennent pas en charge l'authentification moderne ne peuvent pas avoir de [configurations d'identité et d'accès aux appareils](microsoft-365-policies-configurations.md) appliquées, ce qui est un élément important de la sécurisation de votre abonnement Microsoft 365 et de ses biens numériques. 
 
-1. Accédez au portail Office ([https://office.com](https://office.com)) et se connecter à votre abonnement d’évaluation d’Office 365 avec votre compte d’administrateur global.
+1. Accédez au portail Office ([https://office.com](https://office.com)) et connectez-vous à votre abonnement d'évaluation Office 365 avec votre compte d'administrateur général.
     
-  - Si vous utilisez l’environnement de test Microsoft 365 léger, connectez-vous à partir de votre ordinateur local.
+  - Si vous utilisez l'environnement de test Microsoft 365 léger, connectez-vous à partir de votre ordinateur local.
     
-  - Si vous utilisez l’environnement de test simulé entreprise Microsoft 365, utilisez le [portail Azure](https://portal.azure.com) pour se connecter à l’ordinateur virtuel CLIENT1 et puis se connecter à partir de CLIENT1.
+  - Si vous utilisez l'environnement de test d'entreprise simulé de Microsoft 365, utilisez le [portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de client1.
  
-2. Sous l’onglet **Centre d’administration Microsoft 365** , cliquez sur **Admin**.
-3. Dans l’onglet **Centre d’administration Microsoft 365** nouveau, cliquez sur **centres d’administration > SharePoint**.
-4. Dans l’onglet nouveau **Centre d’administration SharePoint** , cliquez sur **le contrôle d’accès**.
-5. Sous **applications qui ne prennent en charge l’authentification moderne**, cliquez sur **Bloquer**, puis cliquez sur **OK**.
+2. À partir de l'onglet **Centre d'administration Microsoft 365** , cliquez sur **administrateur**.
+3. Dans le nouvel onglet **Centre d'administration Microsoft 365** , cliquez sur **centres d'administration > SharePoint**.
+4. Dans le nouvel onglet **Centre d'administration SharePoint** , cliquez sur **contrôle d'accès**.
+5. Sous **applications qui ne prennent pas en charge l'authentification moderne**, cliquez sur **bloquer**, puis sur **OK**.
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Activer les avancées de protection contre les menaces) pour SharePoint, OneDrive entreprise et les équipes Microsoft
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Activer la protection avancée contre les menaces pour SharePoint, OneDrive entreprise et Microsoft teams
 
-Office 365 Advanced Threat Protection (DAV) est une fonctionnalité d’Exchange Online Protection (EOP) qui permet de conserver des programmes malveillants en dehors de votre courrier électronique. Avec DAV, vous créez des stratégies dans le centre d’administration Exchange (CAE) ou de la sécurité & centre de conformité qui permettent de garantir vos utilisateurs accéder uniquement des liens ou des pièces jointes dans les messages électroniques qui sont identifiés comme non malveillant. Pour plus d’informations, voir [protection contre les menaces avancées pour les pièces jointes fiables et les liens sécurisés](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
+Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive et Microsoft teams protège votre organisation contre le partage accidentel de fichiers malveillants.
 
-1. Dans l’onglet **Centre d’administration Microsoft 365** de votre navigateur, cliquez sur **centres d’administration > sécurité et conformité**.
-2. Dans l’onglet **sécurité et conformité** nouveau, cliquez sur **Gestion des menaces > stratégie**.
-3. Cliquez sur **les pièces jointes fiables DAV**.
-4. Dans le volet **pièces jointes fiables** , sélectionnez **Activer DAV pour SharePoint, OneDrive et les équipes Microsoft**, puis cliquez sur **Enregistrer**.
+1. Accédez au [Centre de sécurité & de sécurité Office 365](https://protection.office.com) et connectez-vous avec votre compte d'administrateur général.
 
-### <a name="enable-anti-malware"></a>Activer les programmes malveillants
+2. Dans le volet de navigation de gauche, sous **gestion des menaces**, choisissez **stratégie _GT_ les pièces jointes fiables**. 
 
-Programme malveillant est composé des virus et logiciels espions. Virus infectent autres programmes et des données, et ils répandent dans votre ordinateur que vous recherchez des programmes d’infection. Logiciels espions fait référence aux logiciels malveillants qui rassemble vos informations personnelles, telles que des données personnelles et les informations de connexion et l’envoie à l’auteur de programmes malveillants. 
+3. Sélectionnez Activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**.
 
-Office 365 offre des programmes malveillants intégrée et les fonctionnalités qui permettent de protéger les messages entrants et sortants contre les logiciels malveillants et vous protéger contre le courrier indésirable de filtrage du courrier indésirable. Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable et anti-programme malveillant dans Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
+4. Cliquez sur **Enregistrer**.
 
-Pour vous assurer que traitement anti-programme malveillant est en cours d’exécution sur les fichiers de types de fichiers courants :
 
-1. Cliquez sur le bouton de retour de votre navigateur pour revenir à la page de **stratégie** .
-2. Cliquez sur **contre les programmes malveillants**.
-3. Double-cliquez sur la stratégie **par défaut**.
+### <a name="enable-anti-malware"></a>Activer le blocage des programmes malveillants
+
+Les programmes malveillants sont constitués de virus et de logiciels espions. Les virus contaminent d'autres programmes et données, et ils se propagent dans votre ordinateur à la recherche de programmes à infecter. Les logiciels espions font référence aux programmes malveillants qui recueillent vos informations personnelles, telles que les informations de connexion et les données personnelles, et les renvoient à l'auteur de programmes malveillants. 
+
+Office 365 dispose de fonctionnalités intégrées de filtrage des courriers indésirables et des programmes malveillants qui permettent de protéger les messages entrants et sortants des logiciels malveillants et de vous protéger contre le courrier indésirable. Pour plus d'informations, consultez la rubrique [anti-spam & protection contre les programmes malveillants dans Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
+
+Pour vérifier que le traitement anti-programme malveillant est effectué sur des fichiers avec des types de fichiers de pièces jointes courants:
+
+1. Cliquez sur le bouton précédent de votre navigateur pour revenir à la page **stratégie** .
+2. Cliquez sur **anti-programme malveillant**.
+3. Double-cliquez sur la stratégie nommée **default**.
 4. Dans la fenêtre **stratégie anti-programme malveillant** , cliquez sur **paramètres**.
-4. Sous **filtre de pièce jointe courants**, cliquez sur **sur > Enregistrer**.
+4. Sous **Common attachMent types Filter**, cliquez sur **> Save**.
 
 
-## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>Phase 3 : Examiner les journaux et les outils de sécurité Office 365
+## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>Phase 3: examiner les journaux et les outils de sécurité Office 365
 
-Durant cette phase, vous examinez les services intégrés qui vous informent sur les événements de sécurité et mesurent vos défenses globale.
+Dans cette phase, vous examinez les services intégrés qui vous informent des événements de sécurité et Mesurez votre position de sécurité globale.
 
 ### <a name="threat-management-dashboard"></a>Tableau de bord de gestion des menaces
 
-Gestion des menaces Office 365 peut vous aider à contrôler et gérer l’accès d’appareil mobile aux données de votre organisation, protéger votre organisation contre la perte de données et protéger les messages entrants et sortants à partir du courrier indésirable et les logiciels malveillants. Vous utilisez également threat management pour protéger la réputation de votre domaine et pour déterminer si les expéditeurs sont à des fins malveillantes usurpation de comptes à partir de votre domaine. Pour plus d’informations, voir [Gestion des menaces de la sécurité pour Microsoft Office 365 et le centre de conformité](https://docs.microsoft.com/office365/securitycompliance/threat-management).
+Office 365 Threat Management peut vous aider à contrôler et à gérer l'accès des appareils mobiles aux données de votre organisation, à protéger votre organisation contre la perte de données et à protéger les messages entrants et sortants contre les logiciels malveillants et le courrier indésirable. Vous pouvez également utiliser la gestion des menaces pour protéger la réputation de votre domaine et déterminer si les expéditeurs sont ou non usurpés de manière malveillante les comptes de votre domaine. Pour plus d'informations, consultez [la rubrique gestion des menaces dans le centre de sécurité Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/threat-management).
 
-Utilisez ces étapes pour afficher le tableau de bord de gestion Office 365 menace :
 
-1. Dans l’onglet **Centre d’administration Microsoft 365** de votre navigateur, cliquez sur **centres d’administration > sécurité et conformité**.
-2. Dans l’onglet **sécurité et conformité** nouveau, cliquez sur **Gestion des menaces > tableau de bord**.
-3. Dans l’onglet nouveau **tableau de bord** dans votre navigateur, notez l’évolution des programmes malveillants, insights et autres sections du tableau de bord.
+### <a name="office-365-cloud-app-security-dashboard"></a>Tableau de bord de sécurité des applications Cloud Office 365
 
-### <a name="office-365-cloud-app-security-dashboard"></a>Tableau de bord de sécurité des applications dans le nuage Office 365
+La sécurité des applications cloud Office 365, anciennement connue sous le nom de gestion de la sécurité avancée Office 365, permet de créer des stratégies qui surveillent les activités suspectes dans votre abonnement Office 365 et vous en informent, afin que vous puissiez rechercher le problème et prendre des mesures correctives. Pour plus d'informations, consultez la rubrique [vue d'ensemble de la sécurité des applications Cloud Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
 
-Office 365 Cloud application sécurité, anciennement appelé Office 365 gestion avancée de sécurité, vous permet de créer des stratégies pour surveiller et vous informent des activités suspectes dans votre abonnement Office 365, afin que vous pouvez examiner et prendre possibles mesures correctives. Pour plus d’informations, voir [Vue d’ensemble d’Office 365 Cloud Application Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
+<!--
+### Microsoft 365 Secure Score
 
-1. Dans l’onglet **Centre d’administration Microsoft 365** de votre navigateur, cliquez sur **centres d’administration > sécurité et conformité**.
-2. Dans l’onglet **sécurité et conformité** nouveau, cliquez sur **alertes > Gestion avancée des alertes > accédez à la sécurité d’application Office 365 dans le nuage**.
-3. Sous l’onglet **Sécurité du nuage application** nouvelle, notez l’affichage de tableau de bord et la liste des stratégies par défaut qui analyser pour les différentes activités dans votre abonnement Office 365.
-4. Cliquez sur l’icône de tableau de bord pour consulter un résumé des activités de sécurité des applications dans le nuage sont suivis.
-5. Cliquez sur **examiner** (l’icône LUNETTES), puis sur **journal d’activité** pour voir la liste des connexions récentes et autres activités.
+1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.
+2. On the **Dashboard tab**, note your current Secure Score and the list of actions in the queue to increase your score.
+!-->
 
-### <a name="secure-score"></a>Sécuriser le Score
 
-1. Créer un nouvel onglet dans votre navigateur et accédez à **securescore.office.com**.
-2. Sous l' **onglet tableau de bord**, notez votre Score Secure actuel et la liste des actions dans la file d’attente pour augmenter votre score.
+## <a name="next-steps"></a>Étapes suivantes
 
-Voir l’étape de [configuration d’accroître la sécurité pour Office 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) dans la phase de **protection des informations** pour des informations et des liens pour configurer ces paramètres en production.
+Pour plus d'informations et de liens sur la configuration de ces paramètres en production, voir l'étape [configurer la sécurité accrue pour Microsoft 365](infoprotect-configure-increased-security-office-365.md) de la phase de **protection des informations** .
 
-## <a name="next-step"></a>Étape suivante
-
-Explorez les fonctionnalités supplémentaires de [protection des informations](m365-enterprise-test-lab-guides.md#information-protection) et fonctionnalités dans votre environnement de test.
+Découvrez les fonctionnalités et les fonctionnalités de [protection des informations](m365-enterprise-test-lab-guides.md#information-protection) supplémentaires dans votre environnement de test.
 
 ## <a name="see-also"></a>Voir aussi
 

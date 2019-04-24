@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Afficher les stratégies d’appareil et les actions en vous connectant à Microsoft 365 entreprise avec credintials administrateur global.
-ms.openlocfilehash: 0018abc6dcf2163dc50c6c792793c9f5d9e29d45
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Affichez les stratégies et les actions de l'appareil en vous connectant à Microsoft 365 entreprise avec l'administrateur général credintials.
+ms.openlocfilehash: 524e5382fb242ea6b77abd72191073ce4df14f0c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285803"
 ---
 # <a name="view-policies-and-devices"></a>Afficher les stratégies et les appareils
 
@@ -29,7 +32,7 @@ ms.locfileid: "26866839"
 
 1. Connectez-vous à [Microsoft 365 Business](https://portal.office.com) avec des informations d'identification d'administrateur général. 
     
-2. Dans la carte **Stratégies d'appareil** du Centre d'administration, sélectionnez **Stratégies d'appareil** pour ouvrir la page **Stratégies d'appareil**. 
+2. Dans le volet de navigation de gauche, choisissez **Ajout**de **stratégies** \> de **périphériques** \> .
     
     Cette page vous permet de créer, de modifier ou de supprimer une stratégie ou d'en changer le groupe cible.
     

@@ -1,5 +1,5 @@
 ---
-title: Migration vers Microsoft 365 Business à partir d’Office 365 entreprise Premium
+title: Migrer vers Microsoft 365 entreprise à partir d'Office 365 Business Premium
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,81 +18,81 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: Découvrez comment déplacer de votre entreprise à Microsoft 365 Business.
-ms.openlocfilehash: fd6f18c02453e6751d6163ab79e726eae9c951a9
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business.
+ms.openlocfilehash: 3e45ba13e4cfe772829f545219bf86a9a3317d59
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285652"
 ---
-# <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migration vers Microsoft 365 Business à partir d’Office 365 entreprise Premium
+# <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migrer vers Microsoft 365 entreprise à partir d'Office 365 Business Premium
 
-Si vous avez déjà un Office 365 pour l’abonnement d’entreprise, par exemple, Office 365 entreprise Premium, vous pourrez facilement ajouter des licences Microsoft 365 Business et les affecter à certains ou tous les utilisateurs.
+Si vous disposez déjà d'un abonnement Office 365 pour les entreprises, par exemple, Office 365 Business Premium, vous pouvez facilement ajouter des licences à Microsoft 365 Business, et les affecter à certains ou à tous les utilisateurs.
   
 > [!NOTE]
-> Vous ne pouvez pas utiliser le bouton [plans commutateur](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton) mise à niveau vers Microsoft 365 Business encore. 
+> Vous ne pouvez pas utiliser le bouton [changer de plan](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton) pour effectuer une mise à niveau vers Microsoft 365 Business. 
   
-## <a name="add-microsoft-365-business-licenses"></a>Ajouter des licences Microsoft 365 entreprise
+## <a name="add-microsoft-365-business-licenses"></a>Ajouter des licences professionnelles Microsoft 365
 
-Vous disposez de deux façons d’obtenir Microsoft 365 Business. Si vous avez un partenaire, qu’il peut acheter Microsoft 365 Business pour vous à partir du [Centre de partenaires Microsoft](get-microsoft-365-business.md). Votre partenaire peut également vous aider à transition vers Microsoft 365 Business.
+Vous disposez de deux méthodes pour obtenir Microsoft 365 Business. Si vous avez un partenaire, il peut acheter Microsoft 365 Business pour vous dans le [Centre partenaires de Microsoft](get-microsoft-365-business.md). Votre partenaire peut également vous aider à passer à Microsoft 365 Business.
   
-Si vous gérez votre abonnement, vous pouvez [contacter ventes](https://www.microsoft.com/microsoft-365/business) pour acheter des licences Microsoft 365 Business. 
+Si vous gérez votre propre abonnement, vous pouvez [contacter](https://www.microsoft.com/microsoft-365/business) le service des ventes pour acheter des licences Microsoft 365 Business. 
   
-Voir [Ajouter, modifier ou supprimer un partenaire de conseiller d’abonnement](https://support.office.com/article/f86e8177-936e-491e-9024-44dea2b296ff) pour savoir comment vous pouvez commencer à utiliser avec un partenaire. 
+Pour savoir comment commencer à travailler avec un partenaire, voir [Ajouter, modifier ou supprimer un partenaire conseiller en abonnement](https://support.office.com/article/f86e8177-936e-491e-9024-44dea2b296ff) . 
   
-Si vous donne un lien vers l’achat de vos licences, vous découvrirez un Assistant similaire à celle-ci. Cliquez sur **Oui, ajoutez-le à mon compte**. Vous pouvez également choisir le nombre de licences et le mode de paiement.
+Si vous disposez d'un lien pour acheter vos licences, vous allez parcourir un Assistant tel que celui ci-dessous. Sélectionnez **Oui, puis ajoutez-le à mon compte**. Vous pouvez également choisir le nombre de licences et le mode de paiement.
   
-![Sur les activités de 365 Microsoft direct acheter lien, choisissez d’ajouter votre compte actuel, ou de s’inscrire pour un nouveau compte.](media/8bc54fd1-9cab-44d5-af91-c471e89aea46.png)
+![Sur le lien acheter Microsoft 365 Business direct, choisissez d'ajouter à votre compte actuel ou inscrivez-vous pour créer un compte.](media/8bc54fd1-9cab-44d5-af91-c471e89aea46.png)
   
-## <a name="assign-microsoft-365-licenses"></a>Affecter des licences Microsoft 365
+## <a name="assign-microsoft-365-licenses"></a>Attribuer des licences Microsoft 365
 
-1. Une fois que vous avez acheté les nouvelles licences et il s’agit de la première fois que vous l’avez fait, la bannière du programme d’installation pour Microsoft 365 Business affichera par-dessus le centre d’administration.
+1. Une fois que vous avez acheté de nouvelles licences et qu'il s'agit de la première fois que vous l'avez fait, la bannière de configuration de Microsoft 365 Business s'affiche en haut du centre d'administration.
     
     > [!NOTE]
-    > La bannière du programme d’installation est la possibilité d’ajouter de nouveaux utilisateurs, un nouveau domaine et la migration de messagerie pour les nouveaux utilisateurs. Si vous n’envisagez pas effectuer les opérations, vous devez toujours accéder par le biais de l’Assistant et choisissez les options par défaut pour faire disparaître à partir de la page d’accueil d’administration. 
+    > La bannière de configuration permet d'ajouter de nouveaux utilisateurs, un nouveau domaine et de migrer des courriers électroniques pour les nouveaux utilisateurs. Si vous n'envisagez pas d'effectuer une action, vous devez toujours parcourir l'Assistant et choisir les options par défaut pour qu'il disparaisse de la page d'accueil de l'administrateur. 
   
-   ![Cliquez sur Démarrer le programme d’installation sur les activités de 365 Microsoft est prêt à configurer la bannière.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
+   ![Choisissez Démarrer le programme d'installation sur la bannière Microsoft 365 Business est prêt à configurer la bannière.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
   
     Choisissez **Démarrer la configuration**.
     
-2. Dans la page **Personnaliser votre connexion dans et au courrier électronique** , vous pouvez ajouter un domaine en sélectionnant **se connecter un domaine déjà, vous êtes propriétaire** si vous souhaitez utiliser cette occasion pour ajouter un autre domaine à votre abonnement. 
+2. Sur la page **Personnalisez votre connexion et votre messagerie** , vous pouvez ajouter un domaine en choisissant **connecter un domaine que vous possédez déjà** si vous souhaitez utiliser cette opportunité pour ajouter un autre domaine à votre abonnement. 
     
-    Si vous avez déjà configuré un domaine, le deuxième champ indiquera qu’et indique **à l’aide de continuer** \< _votre nom de domaine_ \> **pour la messagerie et de la connexion**. Si vous n’avez pas configuré un domaine avec abonnement vous, il indique **à l’aide de continuer** \< _nom.onmicrosoft.com de votre société_ \> **pour la messagerie et de la connexion**.    
+    Si vous avez déjà configuré un domaine, le deuxième champ indiquera que et indiquera **continuer à utiliser** \< _votre nom_ \> **de domaine pour la messagerie et la connexion**.   si vous n'avez pas configuré de domaine avec votre abonnement, vous devez **continuer à utiliser** \< _votre société name.onmicrosoft.com_ \> **pour la messagerie et vous connecter**.  
     
-    Sélectionnez **Suivant**.
+    Cliquez sur **Suivant**.
     
-    ![Sur la personnaliser votre connexion dans et une page de messagerie électronique, choisissez d’ajouter un domaine, ou utilisez celui que vous avez utilisé.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
+    ![Sur la page Personnalisez votre connexion et votre messagerie, sélectionnez Ajouter un domaine ou utiliser celui que vous avez utilisé.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
   
-3. Dans la page **Ajouter de nouveaux utilisateurs** , vous pouvez ajouter des utilisateurs, si vous disposez de nouveaux employés que vous souhaitez attribuer les licences Microsoft 365 Business à. 
+3. Sur la page **ajouter de nouveaux utilisateurs** , vous pouvez ajouter de nouveaux utilisateurs, si vous avez de nouveaux employés auxquels vous voulez attribuer les licences professionnelles Microsoft 365. 
     
-    Si vous ne disposez pas nouveaux employés pour ajouter et attribuer des licences aux utilisateurs existants, cliquez sur **suivant**.
+    Si vous n'avez pas de nouveaux employés à ajouter et que vous souhaitez attribuer des licences à des utilisateurs existants, choisissez **suivant**.
     
-4. Sur la ** e-mails Migrate ** page que vous pouvez choisir de migration de messagerie pour tous les nouveaux utilisateurs que vous avez ajouté à l’étape 3. Vous pouvez ignorer cette étape également. Cliquez sur **suivant**.
+4. Dans la page * * migrer les messages électroniques * *, vous pouvez choisir de migrer le courrier de tous les nouveaux utilisateurs ajoutés à l'étape 3. Vous pouvez également ignorer cette étape. Cliquez sur **Suivant**.
     
-5. Dans la dernière page, cliquez sur **Atteindre le centre d’administration**et continue le programme d’installation.
+5. Sur la dernière page, sélectionnez **accéder au centre d'administration**, puis poursuivez l'installation.
     
-6. Dans le centre d’administration, consultez la rubrique **utilisateurs** \> **utilisateurs actifs**.
+6. Dans le centre d'administration, accédez **** \> à utilisateurs **actifs**.
     
-7. Sélectionnez l’utilisateur auquel vous voulez attribuer la licence **Microsoft 365 Business** , puis cliquez sur **Modifier** en regard de **Licences de produits**.
+7. Sélectionnez l'utilisateur auquel vous souhaitez attribuer la licence d' **entreprise Microsoft 365** , puis cliquez sur **modifier** en regard de **licences de produit**.
     
-    ![Dans la carte de l’utilisateur, choisissez Modifier en regard de licences de produits.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
+    ![Dans la carte utilisateur, sélectionnez Modifier en regard de licences de produit.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
   
-8. Dans les **licences des produits** de diapositives **Microsoft 365 Business** **on** \> **Enregistrer**, puis sur **Fermer**.
+8. dans la diapositive **licences de produit** , cliquez **sur** \> **Microsoft 365 entreprise** sur **enregistrer**, puis sur **fermer**.
     
-Une fois que vous avez acheté la licence initiale pour Microsoft 365 Business, vous pouvez également ajouter plus de **facturation** \> **services d’achat**. Dans la page **services d’achat** , vous pouvez cliquez sur le bouton de sélection sur la carte de **Visite 365 de Microsoft** et choisissez **Modifier les quantités de licences** à acheter plus. 
+une fois que vous avez acheté la licence initiale pour Microsoft 365 Business, vous pouvez également ajouter des **** \> **services d'achat**de facturation. Sur la page **acheter des services** , vous pouvez cliquer sur les ellipses de la carte de **visite Microsoft 365** , puis choisir modifier la quantité de **licence** pour acheter plus. 
   
-## <a name="protect-user-devices-and-files"></a>Protéger les fichiers et les périphériques de l’utilisateur
+## <a name="protect-user-devices-and-files"></a>Protéger les appareils et les fichiers des utilisateurs
 
-Une fois que vous avez affecté des licences pour Microsoft 365 Business, vous pouvez commencer à protéger les périphériques et les fichiers des utilisateurs.
+Une fois que vous avez attribué des licences à Microsoft 365 Business, vous pouvez commencer à protéger les appareils et les fichiers des utilisateurs.
   
-1. Dans le centre d’administration, dans la navigation de gauche, accédez à des **périphériques** \> **stratégies**.
+1. Dans le centre d'administration, dans le volet de navigation de gauche, accédez à **stratégies**de **périphériques** \> .
     
-2. Dans la page **stratégies d’appareil** , cliquez sur **Ajouter**.
+2. Sur la page **stratégies d'appareil** , sélectionnez **Ajouter**.
     
-3. Dans le volet **Ajouter une stratégie** donnez un nom à la stratégie, puis choisissez un **type de stratégie** à partir de la liste déroulante. 
+3. Dans le volet **Ajouter une stratégie** , donnez un nom à la stratégie, puis choisissez un type de **stratégie** dans la liste déroulante. 
     
-    Vous pouvez définir des stratégies d’application pour la protection des fichiers sur Android et périphériques iPhone, ainsi que Windows 10, et vous pouvez définir des stratégies de configuration de périphérique pour la société qui les appareils Windows 10. Consultez les liens suivants pour plus d’informations :
+    Vous pouvez configurer des stratégies d'application pour protéger les fichiers sur les appareils Android et iPhone, ainsi que Windows 10, et vous pouvez configurer des stratégies de configuration d'appareil pour les appareils Windows 10 appartenant à une société. Pour plus d'informations, consultez les liens suivants:
     
   - [Définir les paramètres de protection des applications pour les appareils Android ou iOS](app-protection-settings-for-android-and-ios.md)
     
@@ -97,17 +100,17 @@ Une fois que vous avez affecté des licences pour Microsoft 365 Business, vous p
     
   - [Définir les paramètres de protection des appareils pour les PC Windows 10](protection-settings-for-windows-10-pcs.md)
     
-   ![Dans le volet de stratégie Ajouter, entrez un nom et choisissez le type de stratégie dans le menu déroulant.](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
+   ![Dans le volet ajouter une stratégie, entrez un nom, puis choisissez le type de stratégie dans le menu déroulant.](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
   
-4. Une fois que vous définissez des stratégies, vous et vos employés peuvent configurer les périphériques :
+4. Une fois que vous avez configuré les stratégies, vous et vos employés pouvez configurer des appareils:
     
-  - Si votre Windows ne sont pas déjà sur la mise à jour Windows Pro Creator, vous devrez [mettre à niveau les créateurs Pro Windows Update](upgrade-to-windows-pro-creators-update.md).
+  - Si votre Windows ne se trouve pas déjà sur la mise à jour du créateur Windows professionnel, vous devrez [les mettre à niveau vers Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
     
-  - Pour obtenir la procédure pour les périphériques Windows, voir [configurer les périphériques de Windows pour les utilisateurs professionnels 365 de Microsoft](set-up-windows-devices.md) . 
+  - Consultez la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365 pour les](set-up-windows-devices.md) étapes des appareils Windows. 
     
-  - Pour connaître les étapes pour iPhone et les téléphones Android, consultez [configurer des appareils mobiles pour les utilisateurs professionnels 365 de Microsoft](set-up-mobile-devices.md) . 
+  - Pour plus d'informations sur les téléphones Android et les iPhone, consultez la rubrique [configurer des appareils mobiles pour les utilisateurs professionnels de Microsoft 365](set-up-mobile-devices.md) . 
     
-5. Pour installer automatiquement les applications clientes Office, voir [préparer pour le déploiement du client Office 365 par Microsoft](prepare-for-office-client-deployment.md) et [installer ou désinstaller Office sur des appareils Windows 10 automatiquement](auto-install-or-uninstall-office.md).
+5. Pour installer automatiquement les applications clientes Office, consultez la rubrique [Prepare for Office client Deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md) et [installer ou désinstaller automatiquement Office sur les appareils Windows 10](auto-install-or-uninstall-office.md).
     
 
 

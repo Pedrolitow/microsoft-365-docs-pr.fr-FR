@@ -4,14 +4,17 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ZTDProfileSettings
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -22,32 +25,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Profils de pilote vous aider à contrôler la façon dont Windows est installé sur les périphériques de l’utilisateur. Les profils contiennent par défaut et les paramètres facultatifs comme ignorer l’installation du Cortana.
-ms.openlocfilehash: 5440286f1363780c87ab60514584c4addfeea0b2
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Les profils autoPilot vous permettent de contrôler la manière dont Windows est installé sur les appareils utilisateur. Les profils contiennent des paramètres par défaut et facultatifs, comme ignorer l'installation de Cortana.
+ms.openlocfilehash: d43a15e5f3dc83596b5c23dd0ceb416b24810298
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276938"
 ---
 # <a name="about-autopilot-profile-settings"></a>À propos des paramètres du profil AutoPilot
 
-## <a name="autopilot-profile-settings"></a>Paramètres de profil pilote
+## <a name="autopilot-profile-settings"></a>Paramètres du profil autoPilot
 
-Vous pouvez contrôler la façon dont Windows est installé sur les périphériques de l’utilisateur en utilisant les profils de pilote. Les profils contiennent les paramètres suivants.
+Vous pouvez contrôler la façon dont Windows est installé sur les appareils utilisateur à l'aide des profils autoPilot. Les profils contiennent les paramètres suivants.
   
- **Pilote fonctionnalités par défaut (requis) qui sont définies automatiquement :**
+ **Les fonctionnalités de autoPilot par défaut (obligatoires) qui sont définies automatiquement:**
   
 |**Paramètre**|**Description**|
 |:-----|:-----|
-|Ignorer l’enregistrement OEM, OneDrive et Cortana  <br/> |Ignore l’installation des applications consommateur, telles que Cortana et OneDrive personnel. L’utilisateur de l’appareil peut installer ultérieurement tant qu’il est un administrateur local sur l’appareil. L’inscription du fabricant d’origine est ignorée car le périphérique sera géré par Microsoft 365 Business.  <br/> |
-|Connecter l’expérience avec la marque de votre société  <br/> |Si votre société possède une [personnalisation d’ajouter votre société pour Office 365 page de connexion](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), l’utilisateur d’appareil obtenez cette expérience lors de la connexion.  <br/> |
-|Mobile Device Manager l’inscription automatique avec des comptes DAS configurés.  <br/> |Identité de l’utilisateur est gérée par Azure Active directory et les utilisateurs seront vous connecter à Windows et Office 365 avec leurs informations d’identification Microsoft 365 Business.  <br/> |
+|Ignorer Cortana, enregistrement OneDrive et OEM  <br/> |Ignore l'installation des applications grand public telles que Cortana et OneDrive personnel. L'utilisateur de l'appareil peut l'installer ultérieurement tant qu'il est administrateur local sur l'appareil. L'enregistrement du fabricant d'origine est ignoré car le périphérique sera géré par Microsoft 365 entreprise.  <br/> |
+|Expérience de connexion avec la marque de votre entreprise  <br/> |Si votre société dispose d'une [page de connexion Add Your Company to Office 365 Signing](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), l'utilisateur de l'appareil obtiendra cette expérience lors de la connexion.  <br/> |
+|Auto-inscriptions MDM avec comptes AAD configurés.  <br/> |L'identité de l'utilisateur sera gérée par Azure Active Directory, et les utilisateurs se connecteront à Windows et Office 365 avec leurs informations d'identification d'entreprise Microsoft 365.  <br/> |
    
- **Paramètres facultatifs :**
+ **Paramètres facultatifs:**
   
 |**Paramètre**|**Description**|
 |:-----|:-----|
-|Ignorer les paramètres de confidentialité (désactivé par défaut)  <br/> |Si cette option est définie sur **activé**, l’utilisateur d’appareil verrez pas le contrat de licence pour le périphérique et Windows lorsqu’il se connecte tout d’abord en.  <br/> |
-|Ne pas autoriser l’utilisateur de devenir l’administrateur local  <br/> |Si cette option est définie sur **activé**, l’utilisateur du périphérique ne sera pas en mesure d’installer des applications personnelles, telles que Cortana.  <br/> |
+|Ignorer les paramètres de confidentialité (désActivés par défaut)  <br/> |Si cette option est **activée**, l'utilisateur de l'appareil ne verra pas le contrat de licence du périphérique et de Windows lorsqu'il se connecte pour la première fois.  <br/> |
+|Ne pas autoriser l'utilisateur à devenir l'administrateur local  <br/> |Si cette option est **activée**, l'utilisateur de l'appareil ne peut pas installer d'applications personnelles, telles que Cortana.  <br/> |
    

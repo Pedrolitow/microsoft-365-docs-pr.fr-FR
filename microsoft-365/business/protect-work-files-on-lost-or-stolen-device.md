@@ -4,11 +4,14 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4StolenDevice
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: Obtenir des informations sur les paramètres disponibles pour protéger les fichiers de travail, si le périphérique d’un utilisateur est perdu ou volé.
-ms.openlocfilehash: 4fafae2dfd25e44dce7083307b3432bcaa25c22b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Découvrez les paramètres disponibles pour protéger les fichiers de travail en cas de perte ou de vol de l'appareil d'un utilisateur.
+ms.openlocfilehash: 1256f54b2ff626ea7b85d91020e355c8b611a8c0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285347"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Protéger les fichiers professionnels en cas de perte ou de vol de l'appareil mobile
 
@@ -39,6 +42,6 @@ Les paramètres suivants sont disponibles pour protéger les fichiers profession
 |Paramètre  <br/> |Description  <br/> |
 |Supprimer les fichiers professionnels d'un appareil inactif après tant de jours  <br/> |Si un appareil n'est pas utilisé pendant le nombre de jours que vous spécifiez ici, les fichiers professionnels stockés sur l'appareil sont automatiquement supprimés.  <br/> |
 |Obliger les utilisateurs à enregistrer tous les fichiers de travail dans OneDrive Entreprise  <br/> |Si ce paramètre est **activé**, le seul emplacement d'enregistrement accessible pour les fichiers professionnels sera OneDrive Entreprise.  <br/> |
-|Chiffrer les fichiers professionnels  <br/> |Laissez ce paramètre **activé** afin que les fichiers professionnels soient protégés par chiffrement. Même si l'appareil est perdu ou volé, personne ne sera en mesure de lire vos données d'entreprise.  <br/> |
+|Chiffrer les fichiers professionnels  <br/> |Laissez ce paramètre **activé** afin que les fichiers professionnels soient protégés par chiffrement. Même si l'appareil est perdu ou volé, personne ne sera en mesure de lire les données de votre société.  <br/> |
    
 

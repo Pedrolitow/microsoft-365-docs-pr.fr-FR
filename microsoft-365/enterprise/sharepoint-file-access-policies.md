@@ -11,82 +11,74 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: 72dd50649dba9e290d50c2831557c06db3cb7586
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection:
+- M365-identity-device-management
+- M365-security-compliance
+ms.openlocfilehash: dde6da008f9a7b6457c9ed4a01d88a8ab284511d
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290730"
 ---
-# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour la sécurisation des fichiers et des sites SharePoint
-Cet article décrit comment implémenter les stratégies d’accès au périphérique pour protéger SharePoint Online et OneDrive entreprise identité recommandée. Ce guide s’appuie sur l' [identité commune et des stratégies d’accès de périphérique](identity-access-policies.md). 
+# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour sécuriser les sites et les fichiers SharePoint
+Cet article explique comment implémenter les stratégies d'identité et d'accès aux appareils recommandées pour protéger SharePoint Online et OneDrive entreprise. Ce guide s'appuie sur les [stratégies courantes d'identité et d'accès aux appareils](identity-access-policies.md). 
 
-Ces recommandations sont basées sur trois différents niveaux de sécurité et protection pour les fichiers SharePoint qui peut être appliqué en fonction de la granularité de vos besoins : **planifié**, **sensibles**et **hautement régulé**. Pour plus d’informations sur les niveaux de sécurité et les systèmes d’exploitation client recommandé, référencés par ces recommandations dans [vue d’ensemble](microsoft-365-policies-configurations.md).
+Ces recommandations sont basées sur trois niveaux de sécurité et de protection pour les fichiers SharePoint qui peuvent être appliqués en fonction de la granularité de vos besoins: **ligne de base**, **sensibles**et **hautement réglementés**. Pour en savoir plus sur ces niveaux de sécurité et sur les systèmes d'exploitation clients recommandés, ces recommandations sont indiquées dans la [vue d'ensemble](microsoft-365-policies-configurations.md).
 
-Outre l’implémentation de ce guide, veillez à configurer des sites SharePoint à la quantité de protection, y compris la définition des autorisations appropriées pour du contenu sensible et hautement régulé droite. Pour plus d’informations sur la création de sites pour la protection sensibles et hautement régulé de planification, voir [fichiers et des sites d’informations sécurisé SharePoint Online](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
+En plus de mettre en œuvre ces instructions, veillez à configurer les sites SharePoint avec le bon niveau de protection, notamment en définissant les autorisations appropriées pour le contenu sensible et hautement réglementé. Pour plus d'informations sur la création de sites pour une protection à la base, sensibles et hautement réglementée, consultez la rubrique sécuriser des [sites et des fichiers SharePoint Online](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
 
-## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Mise à jour des stratégies courantes pour inclure SharePoint et OneDrive entreprise
-Le diagramme suivant illustre le jeu de stratégies recommandées pour la protection des fichiers dans SharePoint Online et OneDrive for Business. Il indique les stratégies doivent être mis à jour ou nouvellement créés pour ajouter une protection pour SharePoint Online et OneDrive for Business.
+## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Mise à jour de stratégies communes pour inclure SharePoint et OneDrive entreprise
+Le diagramme suivant illustre l'ensemble des stratégies recommandées pour la protection des fichiers dans SharePoint Online et OneDrive entreprise. Il indique les stratégies qui doivent être mises à jour ou nouvellement créées pour ajouter la protection pour SharePoint Online et OneDrive entreprise.
 
-![Résumé des stratégies de SharePoint Online et OneDrive](../images/identity-access-ruleset-sharepoint.png)
+![Résumé des stratégies pour SharePoint Online et OneDrive](../images/identity-access-ruleset-sharepoint.png)
 
-Si vous avez inclus SharePoint Online lorsque vous avez créé les stratégies courantes, vous devez créer uniquement les nouvelles stratégies. Lorsque vous configurez les règles d’accès conditionnel, SharePoint Online inclut OneDrive for Business.
+Si vous avez inclus SharePoint Online lorsque vous avez créé les stratégies courantes, il vous suffit de créer les nouvelles stratégies. Lors de la configuration des règles d'accès conditionnel, SharePoint Online inclut OneDrive entreprise.
 
-Les nouvelles stratégies implémentent la protection de périphérique pour du contenu sensible et hautement régulé en appliquant les exigences d’accès spécifiques aux sites SharePoint que vous spécifiez. 
+Les nouvelles stratégies mettent en œuvre la protection des appareils pour le contenu sensible et hautement réglementé en appliquant des exigences d'accès spécifiques aux sites SharePoint que vous spécifiez. 
 
-Le tableau suivant répertorie les stratégies que vous devez vérifier et mettre à jour ou créer de nouveaux pour SharePoint Online. Les stratégies courantes lien vers les instructions de configuration associée dans l’article [courantes des stratégies d’accès identity et votre appareil](identity-access-policies.md) .
+Le tableau suivant répertorie les stratégies dont vous avez besoin pour vérifier et mettre à jour ou créer de nouvelles pour SharePoint Online. Les stratégies courantes lient aux instructions de configuration associées dans l'article [Common Identity and Device Access Policies](identity-access-policies.md) .
 
 
-|Niveau de protection|Policies|Plus d’informations|
+|Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Exiger MFA lors de la connexion risque est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online dans l’affectation des applications dans le nuage|
-|        |[Blocage des clients qui ne prennent pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inclure SharePoint Online dans l’affectation des applications dans le nuage|
-|        |[Définir des stratégies de protection des applications](identity-access-policies.md#define-app-protection-policies)|Assurez-vous que toutes les applications recommandées sont incluses dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
-|        |[Exiger compatible PC](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure SharePoint Online dans la liste des applications dans le nuage|
-|        |[Utiliser les restrictions de l’application appliquée dans SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Ajoutez cette nouvelle stratégie. Ceci indique à Azure AD pour utiliser les paramètres spécifiés dans SharePoint Online. Cette règle s’applique à tous les utilisateurs, mais n’affecte que l’accès aux sites inclus dans les stratégies d’accès SharePoint Online|
-|**Sensible**|[Exiger MFA lors de la connexion risque est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online dans les affectations d’applications cloud|
-|         |[Exiger compatible PC *et* appareils mobiles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inclure SharePoint Online dans la liste des applications dans le nuage|
-||[Stratégie de contrôle d’accès SharePoint Online](#sharepoint-online-access-control-policies): autoriser l’accès navigateur uniquement à des sites SharePoint spécifiques à partir des périphériques non gérés|Ainsi, modifier et télécharger des fichiers. Utilisation de PowerShell pour spécifier les sites|
-|**Hautement réglementé**|[*Toujours* nécessitent MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online dans l’affectation des applications dans le nuage|
-||[Stratégie de contrôle d’accès SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online): Bloquez l’accès à des sites SharePoint spécifiques à partir des périphériques non gérés|Utilisation de PowerShell pour spécifier les sites|
+|**Baseline**|[Exiger l'authentification multiFACTEUR lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online lors de l'affectation d'applications Cloud|
+|        |[Bloquer les clients qui ne prennent pas en charge l'authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inclure SharePoint Online lors de l'affectation d'applications Cloud|
+|        |[Définir les stratégies de protection des applications](identity-access-policies.md#define-app-protection-policies)|Assurez-vous que toutes les applications recommandées sont incluses dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
+|        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure SharePoint Online dans la liste des applications Cloud|
+|        |[Utiliser des restrictions appliquées par l'application dans SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Ajoutez cette nouvelle stratégie. Cette option indique à Azure AD d'utiliser les paramètres spécifiés dans SharePoint Online. Cette règle s'applique à tous les utilisateurs, mais affecte uniquement l'accès aux sites inclus dans les stratégies d'accès SharePoint Online.|
+|**Sensible**|[Exiger l'authentification multiFACTEUR lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online dans les affectations d'applications Cloud|
+|         |[Exiger des PC conformes *et des* appareils mobiles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inclure SharePoint Online dans la liste des applications Cloud|
+||[Stratégie de contrôle d'accès SharePoint Online](#sharepoint-online-access-control-policies): autoriser uniquement le navigateur à accéder à des sites SharePoint spécifiques à partir d'appareils non gérés|Cela empêche la modification et le téléchargement de fichiers. Utiliser PowerShell pour spécifier des sites|
+|**Hautement réglementé**|[*Toujours* exiger l'authentification multifacteur](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online lors de l'affectation d'applications Cloud|
+||[Stratégie de contrôle d'accès SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online): bloquer l'accès à des sites SharePoint spécifiques à partir d'appareils non gérés|Utiliser PowerShell pour spécifier des sites|
 
-## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Utilisez des restrictions appliquées d’application dans SharePoint Online
-Si vous implémentez des contrôles d’accès dans SharePoint Online, vous devez créer cette stratégie d’accès conditionnel dans Azure AD pour indiquer à Azure AD pour appliquer les stratégies que vous configurez dans SharePoint Online. Cette règle s’applique à tous les utilisateurs, mais n’affecte que l’accès aux sites que vous spécifiez à l’aide de PowerShell lorsque vous créez les contrôles d’accès dans SharePoint Online.
+## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Utiliser des restrictions appliquées par l'application dans SharePoint Online
+Si vous implémentez des contrôles d'accès dans SharePoint Online, vous devez créer cette stratégie d'accès conditionnel dans Azure AD pour indiquer à Azure AD d'appliquer les stratégies que vous configurez dans SharePoint Online. Cette règle s'applique à tous les utilisateurs, mais affecte uniquement l'accès aux sites que vous spécifiez à l'aide de PowerShell lorsque vous créez les contrôles d'accès dans SharePoint Online.
 
-Pour configurer cette, consultez stratégie « bloquer ou limiter l’accès à des collections de sites SharePoint spécifiques ou de comptes OneDrive » dans cet article : [contrôler l’accès à partir des périphériques non gérés](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
+Pour configurer cette stratégie, voir «bloquer ou limiter l'accès à des collections de sites SharePoint ou des comptes OneDrive spécifiques» dans cet article: [contrôler l'accès à partir d'appareils non gérés](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
 
 
-## <a name="sharepoint-online-access-control-policies"></a>Stratégies de contrôle d’accès SharePoint Online
-Microsoft recommande de que vous protégez le contenu dans des sites SharePoint avec un contenu sensible et hautement régulé avec les contrôles d’accès aux périphériques. Pour cela, en créant une stratégie qui spécifie le niveau de protection et des sites pour appliquer la protection. 
-- Sites sensibles : autoriser l’accès navigateur uniquement. Cela empêche les utilisateurs de modifier et de télécharger des fichiers.
-- Hautement régulé sites : Bloquez l’accès à partir des périphériques non gérés.
+## <a name="sharepoint-online-access-control-policies"></a>Stratégies de contrôle d'accès SharePoint Online
+Microsoft vous recommande de protéger le contenu des sites SharePoint avec du contenu sensible et hautement réglementé avec des contrôles d'accès aux appareils. Pour ce faire, vous devez créer une stratégie qui spécifie le niveau de protection et les sites auxquels appliquer la protection. 
+- Sites sensibles: autoriser l'accès au navigateur uniquement. Cela empêche les utilisateurs de modifier et de télécharger des fichiers.
+- Sites hautement réglementés: bloquer l'accès à partir des appareils non gérés.
 
-Voir « bloquer ou limiter l’accès à des collections de sites SharePoint spécifiques ou de comptes OneDrive » dans cet article : [contrôler l’accès à partir des périphériques non gérés](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622) . 
+Voir «bloquer ou limiter l'accès à des collections de sites SharePoint ou des comptes OneDrive spécifiques» dans cet article: [contrôler l'accès à partir d'appareils non gérés](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622) . 
 
-## <a name="how-these-policies-work-together"></a>Comment ces stratégies fonctionnent ensemble
-Il est important de comprendre que les autorisations de site SharePoint sont généralement basées sur les besoins de l’entreprise pour accéder aux sites. Ces autorisations sont gérées par les propriétaires de site et peuvent être très dynamiques. À l’aide de SharePoint, des stratégies d’accès périphérique assure la protection pour ces sites, quelle que soit si les utilisateurs sont affectés à un groupe d’Azure AD associé planifié, sensible, ou hautement régulé protection. 
+## <a name="how-these-policies-work-together"></a>Collaboration de ces stratégies
+Il est important de comprendre que les autorisations de site SharePoint sont généralement basées sur les besoins de l'entreprise en matière d'accès aux sites. Ces autorisations sont gérées par les propriétaires de site et peuvent être hautement dynamiques. L'utilisation des stratégies d'accès aux appareils SharePoint assure la protection de ces sites, que les utilisateurs soient affectés à un groupe Azure AD associé à une protection de base, sensible ou hautement réglementée. 
 
-L’illustration suivante fournit un exemple de protègent des accès aux sites SharePoint des stratégies d’accès périphérique.
+L'illustration suivante fournit un exemple de la façon dont les stratégies d'accès aux appareils SharePoint protègent l'accès aux sites.
 
-![Comment protègent les sites SharePoint des stratégies d’accès périphérique](../images/SharePoint-rules-scenario.png)
+![Protection des sites par les stratégies d'accès aux appareils SharePoint](../images/SharePoint-rules-scenario.png)
 
 Dans cette illustration :
-- James est affecté aux stratégies d’accès conditionnel liés à la protection de base, mais il peut être indiquée accès aux sites SharePoint liés à la protection sensible ou hautement régulé. 
-- Si James accède à un site sensible ou hautement régulé il appartient à l’aide de son PC, son accès est accordé tant que son ordinateur est conforme.
-- Si James accède à un site sensible, qu'il est un membre de l’utilisation de son téléphone non géré, qui est autorisé pour les utilisateurs de base, il reçoit l’accès navigateur uniquement au site sensible en raison de la stratégie d’accès de périphériques configuré pour ce site. 
-- Si James accède à un site réglementation il appartient à l’aide de son téléphone non managé, il sera bloqué en raison de la stratégie d’accès configurée pour ce site. Il peut uniquement accéder à ce site à l’aide de son PC géré et de conformité.
+- James est affecté aux stratégies d'accès conditionnel associées à la protection de base, mais il peut être autorisé à accéder à des sites SharePoint associés à une protection sensible ou hautement réglementée. 
+- Si James accède à un site sensible ou hautement réglementé qu'il est membre de son PC, son accès est accordé tant que son PC est conforme.
+- Si Jean accède à un site sensible qu'il est membre de l'utilisation de son téléphone non géré, qui est autorisé pour les utilisateurs de base, il bénéficiera d'un accès navigateur uniquement au site sensible en raison de la stratégie d'accès aux appareils configurée pour ce site. 
+- Si Jean accède à un site hautement réglementé qu'il est membre de l'utilisation de son téléphone non géré, il sera bloqué en raison de la stratégie d'accès configurée pour ce site. Il peut accéder à ce site uniquement à l'aide de son PC géré et conforme.
 
-
-<!---
-##Block access to content from unmanaged devices (SharePoint admin center)
-In the case of SharePoint Online, when a conditional access policy is applied to enforce Intune app protection policies, this might not apply to all applications that access SharePoint Online. Some applications, such as Exchange, have access to some SharePoint resources. For example, Exchange allows attaching SharePoint files by default. Conditional access policies applied to SharePoint Online will not restrict this access. 
-
-To ensure baseline protection is applied uniformly, regardless of which service is accessing SharePoint Online and OneDrive for Business, configure access controls directly in SharePoint admin center. We recommend you configure the following:
-- Block access from unmanaged devices. This includes devices that aren't compliant or joined to a domain. 
-- Block access from app that don't use modern authentication.
-
-See [Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
--->
 
 
 

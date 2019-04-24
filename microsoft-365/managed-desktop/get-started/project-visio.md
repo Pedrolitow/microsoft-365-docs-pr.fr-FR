@@ -8,17 +8,17 @@ ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 5c820e36b7b397fe770216ee229e38a1da5b034d
-ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288995"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft
 
 Microsoft Project et Microsoft Visio nécessitent l'installation de procédures spécifiques sur les appareils de bureau gérés par Microsoft. Cette rubrique décrit les conditions préalables et le processus d'installation de ces applications.
 
-## <a name="prerequisites"></a>Conditions requises
+## <a name="prerequisites"></a>Conditions préalables
 
 Les administrateurs doivent vérifier qu'ils satisfont aux conditions préalables suivantes:
 - **Quantités de licences** : la quantité correcte de licences Microsoft Project et Microsoft Visio doit être disponible pour vos utilisateurs. Microsoft maNaged Desktop ne prend actuellement en charge que les versions 64 bits de ces applications. 
@@ -46,7 +46,7 @@ Microsoft-Office-Project et installation de Visio | Utilisateurs ayant besoin à
 Une fois affectées à ces groupes, les applications sont disponibles dans le portail de l'entreprise. La synchronisation peut prendre quelques minutes, mais les utilisateurs peuvent alors installer les applications à partir du portail d'entreprise. 
 
 ## <a name="communicate-changes"></a>Communication des modifications
-Il est important que les administrateurs informatiques sachent comment installer Project et Visio. Celles-ci incluent les valeurs suivantes : 
+Il est important que les administrateurs informatiques sachent comment installer Project et Visio. Cela inclut les opérations suivantes : 
 - Avertir les utilisateurs lorsque ces applications sont disponibles. 
 - Instructions sur l'installation de ces applications à partir du portail de l'entreprise.
 

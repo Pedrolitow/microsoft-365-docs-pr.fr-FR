@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Découvrez comment acheter et vous inscrire pour Microsoft 365 Business.
 ms.openlocfilehash: 5e8bdb9121f2b567ef4faced2b960feaab49d923
-ms.sourcegitcommit: 913564997dbba42a448865a8913e07e6f203c736
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31504080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283588"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>S'inscrire à Microsoft 365 Business
 
@@ -41,7 +41,7 @@ Accédez à la rubrique [Découvrez l'avantage commercial de microsoft 365](http
 
     - **Nom d'utilisateur**: entrez le nom (appelé alias) que vous utiliserez pour votre propre courrier électronique professionnel. Par exemple, Robert Young peut utiliser RobY ou RobYoung comme alias de travail.
     - **Votre entreprise**: Entrez votre nom d'entreprise unique. Il s'agit du nom que votre site Web professionnel utilise si vous en avez un, et est également le nom que vous souhaitez inclure après le signe @ lorsque vous recevez un courrier électronique professionnel. Ce nom est appelé domaine. Par exemple, si votre entreprise est appelée «ski» contoso, entrez ContosoSkis après le signe @.
-    - **Sélectionnez un domaine**: Si vous possédez déjà votre nom de domaine, sélectionnez. onmicrosoft.com dans le menu déroulant hommes et nous vous demanderons de le configurer plus tard. Dans le cas contraire, il est facile d'acheter un nom de domaine qui représente votre entreprise. Pour ce faire, dans le menu déroulant, sélectionnez le domaine de votre choix. Par exemple, votre adresse de messagerie complète peut *Teresa@ContosoSkis.net*être. Nous vous informerons immédiatement si le nom de domaine est disponible. Si c'est le cas, nous ajoutons le coût de votre domaine au coût de votre abonnement Microsoft 365 Business. Le nouveau domaine sera également configuré et prêt à être utilisé dans Microsoft 365 si vous l'achetez ici. Pour plus d'informations sur les domaines, consultez la rubrique [Domains FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq).
+    - **Sélectionnez un domaine**: Si vous possédez déjà votre nom de domaine, sélectionnez. onmicrosoft.com dans le menu déroulant hommes et nous vous demanderons de le configurer plus tard. Dans le cas contraire, il est facile d'acheter un nom de domaine qui représente votre entreprise. Pour ce faire, dans le menu déroulant, sélectionnez le domaine de votre choix. Par exemple, votre adresse de messagerie complète peut être *Teresa@ContosoSkis.net*. Nous vous informerons immédiatement si le nom de domaine est disponible. Si c'est le cas, nous ajoutons le coût de votre domaine au coût de votre abonnement Microsoft 365 Business. Le nouveau domaine sera également configuré et prêt à être utilisé dans Microsoft 365 si vous l'achetez ici. Pour plus d'informations sur les domaines, consultez la rubrique [Domains FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq).
     
     ![Capture d'écran de la page créer votre ID d'utilisateur.](media/signinuserid.png)
 

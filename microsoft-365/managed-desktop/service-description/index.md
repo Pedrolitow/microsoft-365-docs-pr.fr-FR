@@ -1,22 +1,26 @@
 ---
-title: Description du service Bureau géré Microsoft
-description: Description du service de bureau Microsoft inclut des périphériques en tant que service et informatiques en tant que service
-keywords: Service Microsoft de bureau, Microsoft 365, documentation
+title: Description du service Microsoft maNaged Desktop
+description: La description de Microsoft maNaged Desktop service inclut l'appareil en tant que service et en tant que service
+keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: f17b07acb1ff6beaa0125f6faa4894fe6565214c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.date: 02/06/2019
+ms.openlocfilehash: abce237a7e9608d50c79f8676033a1362fd9931e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26867262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283436"
 ---
-# <a name="microsoft-managed-desktop-service-description"></a>Description du service Bureau géré Microsoft
-Ordinateur de bureau Microsoft comprend *informatique en tant que service*et des *périphériques en tant que service* . 
+# <a name="microsoft-managed-desktop-service-description"></a>Description du service Microsoft maNaged Desktop
+Microsoft maNaged Desktop inclut les services suivants: 
 
-## <a name="in-this-section"></a>Dans cette section
-
-- [Appareil en tant que service](daas.md)
-- [TI en tant que service](itaas.md)
+- [Appareils de programme](device-list.md)
+- [Services d'appareil](device-services.md)
+- [Configuration des appareils](device-policies.md)
+- [Sécurité](security.md)
+- [Mises à jour](updates.md)
+- [Support](support.md)
+- [Opérations et surveillance](operations-and-monitoring.md)
+- [Exigences de l'application](mmd-app-requirements.md)

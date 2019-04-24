@@ -4,17 +4,18 @@ description: Fournit des instructions sur l’utilisation de Windows Analytics p
 keywords: Microsoft 365, Microsoft 365 Entreprise, documentation Microsoft 365, Windows 10 Entreprise, Windows Analytics
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 45bf1b222501dd7564d6a619d992d6adfc03242f
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 28cf3325dcb3551148d20defad0be88482554a7c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289396"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>Étape 4 : surveillance de la conformité et de l’état du périphérique
 
