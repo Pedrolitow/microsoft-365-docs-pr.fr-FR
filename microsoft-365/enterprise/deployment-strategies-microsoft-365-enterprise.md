@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: Découvrez comment vous pouvez déployer les phases de l’infrastructure de base de Microsoft 365 Entreprise.
 ms.openlocfilehash: fb4cf301f1e450cd5db9b392c0ca2d8e3767242a
-ms.sourcegitcommit: e749e2db2a15bb52b1a2857dbccdf55c31cff3d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289546"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Stratégies de déploiement de l’infrastructure de base de Microsoft 365 Entreprise
 
@@ -87,7 +87,7 @@ Pour simplifier notre exposé, nous partons du principe que les phases et les se
 Exemple simplifié d’une expérience utilisateur pilote :
 
 - En décembre, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
-- En mars, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
+- En mars, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise). (Windows 10 Entreprise)
 - En juin, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
 - En septembre, il faut réaliser l’inscription des appareils. Les stratégies d’accès conditionnel et des applications entrent en vigueur. (Gestion des périphériques mobiles)
 - En décembre, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)

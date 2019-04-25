@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les options dédiées au déploiement de système d’exploitation et aux mises à jour des fonctionnalités.
-ms.openlocfilehash: 6aae2fb39937bec1eebfdc11e403f3835cb895cd
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: b860a56ba2ed163311a8a92d8dd408dcb8983821
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290080"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Étape 6 : déploiement de système d’exploitation et mises à jour des fonctionnalités
-
-Découvrez les options et préparez-vous au déploiement de système d’exploitation à l’aide de la mise à niveau et les approches d’imagerie avec System Center Configuration Manager ou Microsoft Deployment Toolkit.
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
@@ -36,7 +34,7 @@ Découvrez les options et préparez-vous au déploiement de système d’exploit
 </table>
 
 >[!NOTE]
->Le déploiement de système d’exploitation et les mises à jour des fonctionnalités sont la sixième étape de notre processus de déploiement recommandé couvrant le déploiement de système d’exploitation Windows 10, les mises à niveau et les mises à jour de fonctionnalités. Pour afficher l’ensemble du processus de déploiement de bureau, visitez le [centre de déploiement de bureau moderne](https://aka.ms/HowToShift).
+>Le déploiement de système d’exploitation et les mises à jour des fonctionnalités sont la sixième étape de notre processus de déploiement recommandé couvrant le déploiement de système d’exploitation Windows 10, les mises à niveau et les mises à jour de fonctionnalités. Pour afficher le processus de déploiement de bureau complet, visitez le [Centre de déploiement de Bureau](https://aka.ms/HowToShift).
 >
 
 Si vous avez suivi le processus de déploiement jusqu’ici, vous avez effectué (au moins en partie) la procédure relative à la disponibilité des applications et des périphériques, vous avez préparé votre infrastructure, configuré et collecté les packages d’application, mis en place un plan pour migrer les fichiers utilisateur et configurer les paramètres par défaut et mis en place des plans pour conserver vos contrôles de sécurité existants et, éventuellement, en déployer d’autres.
@@ -109,7 +107,7 @@ Quel que soit le type de déploiement que vous choisissez, il est préférable q
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 
-Une des nouvelles options de Windows 10 consiste à configurer de nouveaux PC dans le cadre de votre cycle d’actualisation de matériel à l’aide de Windows Autopilot. Ici, vous pouvez travailler avec des fournisseurs de matériel pour personnaliser l’expérience d’installation de Windows par défaut, par exemple en éliminant des options présentées aux utilisateurs, comme les contrats de licence ou les paramètres de télémétrie.
+Une nouvelle option avec Windows 10 consiste à configurer de nouveaux PC dans le cadre de votre cycle d’actualisation de matériel à l’aide de Windows Autopilot. Ici, vous pouvez travailler avec des fournisseurs de matériel pour personnaliser l’expérience de configuration Windows par défaut-par exemple en éliminant les options présentées aux utilisateurs, par exemple, le cadre de contrats de licence ou les paramètres de données de diagnostic de prise en charge.
 
 Ensuite, lorsqu’un utilisateur se connecte au PC lors de l’installation à l’aide de ses informations d’identification Azure AD, l’appareil s’inscrit dans Microsoft Intune, qui peut ensuite prendre le pas sur le processus de déploiement et appliquer des applications, des configurations de mises à jour logicielles et des stratégies de conformité. Windows Autopilot peut également empêcher l’utilisateur d’accéder à la première session jusqu’à ce que la configuration soit terminée (facultatif).
 
@@ -117,9 +115,21 @@ Ensuite, lorsqu’un utilisateur se connecte au PC lors de l’installation à l
 
 [Conditions requises pour Windows Autopilot](https://docs.microsoft.com/fr-FR/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
+## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update pour Entreprise -Mises à jour de fonctionnalité
+
+Windows Update pour Entreprise est un service gratuit qui permet aux professionnels informatiques de laisser les appareils Windows 10 toujours à jour en connectant directement les périphériques au service Windows Update. Windows Update pour Entreprise peut être configuré via une stratégie de groupe ou par le biais des solutions de gestion des appareils mobiles telles que Microsoft Intune et permet aux professionnels informatiques de créer les[anneaux de déploiement](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-deployment-rings-windows-10-updates) pour valider les nouvelles builds. Il est intégré dans les outils de gestion existants tels que Windows Server Update Services (WSUS), System Center Configuration Manager (version de la branche actuelle) et Microsoft Intune. Par ailleurs, Windows Update pour Entreprise prend en charge la remise paire à paire pour vous aider à optimiser l’efficacité de la bande passante et de réduire l’encombrement du réseau.
+
+Pour plus d’informations sur Windows Update pour Entreprise, veuillez consulter les documents suivants :
+
+- [Déployer les Mises à Jour utilisant Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-manage-updates-wufb)
+- [ Configurer Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-configure-wufb)
+- [Intégrer Windows Update pour Entreprise avec des outils de gestion existants](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-integrate-wufb)
+- [ Utiliser la Stratégie de Groupe afin de configurer Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-wufb-group-policy)
+- [ Utiliser Microsoft Intune afin de configurer Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/intune/windows-update-for-business-configure)
+
 ## <a name="next-step"></a>Étape suivante 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[Étape 7 : Windows et Office as a Service](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Étape 7 : Windows et Office Servicing](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>Étape précédente
 

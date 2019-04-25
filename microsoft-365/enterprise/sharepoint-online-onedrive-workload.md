@@ -1,5 +1,5 @@
 ---
-title: Déploiement de SharePoint Online pour Microsoft 365 Entreprise
+title: Déploiement de SharePoint Online et de OneDrive Entreprise pour Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/19/2018
@@ -8,19 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de planification, de déploiement et de création de valeur de SharePoint Online dans Microsoft 365 Entreprise au sein de votre organisation.
-ms.openlocfilehash: 7a9fc1733c64b3f639d2de0b5b64e20df60e04a9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 30fe3a971a869a4609d6b8ef2809692b4d4e5420
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290898"
 ---
-# <a name="deploy-sharepoint-online-for-microsoft-365-enterprise"></a>Déploiement de SharePoint Online pour Microsoft 365 Entreprise
+# <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>Déploiement de SharePoint Online et de OneDrive Entreprise pour Microsoft 365 Entreprise
 
+*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
 SharePoint Online et Microsoft Teams vous permettent de stocker et partager des fichiers, de gérer le contenu et de travailler en collaboration. Il s’agit d’un élément clé de la valeur du travail d’équipe de Microsoft 365 Entreprise. 
 
@@ -28,11 +29,9 @@ SharePoint Online offre également des fonctionnalités avancées de sécurité
 
 Si vous débutez sur SharePoint Online, consultez les articles [SharePoint Online](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) et [Prise en main de SharePoint](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics).
 
-Les phases et les étapes suivantes vous permettent de comprendre le rôle de SharePoint Online dans votre organisation, d’intégrer votre organisation à travers une série de déploiements progressifs, et de sensibiliser vos utilisateurs finaux à son utilisation et à sa valeur. Ces instructions de déploiement doivent être suivies uniquement après avoir terminé votre [infrastructure de base](deploy-foundation-infrastructure.md). 
+Les phases et les étapes suivantes vous permettent de comprendre le rôle de SharePoint Online et de OneDrive Entreprise dans votre organisation, d’intégrer votre organisation à travers une série de déploiements progressifs, et de sensibiliser vos utilisateurs finaux à son utilisation et à sa valeur. Avant de commencer, vérifiez que vous avez configuré les bonnes phases [Base infrastructure](deploy-foundation-infrastructure.md)de telle sorte que vos sites SharePoint Online disposent des fonctionnalités de sécurité utiles. 
 
->[!Note]
->Pour déployer OneDrive Entreprise pour Microsoft 365 Entreprise, consultez la rubrique relative au [guide OneDrive pour les entreprises](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise).
->
+Pour déployer OneDrive Entreprise pour Microsoft 365 Entreprise, consultez la rubrique relative au [guide OneDrive pour les entreprises](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise).
 
 ## <a name="phase-1-envision"></a>Phase 1 : Comprendre
 Dans cette phase, vous rassemblerez les personnes pour effectuer votre déploiement de SharePoint Online, ainsi que pour déterminer comment votre organisation les utilisera afin de traiter les besoins d’entreprise.

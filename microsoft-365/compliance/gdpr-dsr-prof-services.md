@@ -2,20 +2,20 @@
 title: Demandes des personnes concernées du support Microsoft et des services professionnels concernant le RGPD
 description: Comment le support Microsoft et les services professionnels gèrent les demandes des personnes concernées.
 keywords: Services professionnels, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: dd86914c0b3931f0cddc762db3f5916a34853eff
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278244"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées du support Microsoft et des services professionnels concernant le RGPD
 
@@ -23,7 +23,7 @@ ms.locfileid: "26867120"
 
 Les services professionnels Microsoft sont constitués d’un groupe divers d’architectes techniques, d’ingénieurs, de consultants et de professionnels du support qui se consacrent à remplir la mission de Microsoft consistant à donner aux clients les moyens de faire et accomplir plus de choses. Notre équipe des services professionnels comprend plus de 21 000 consultants au total (conseillers numériques, Support Premier, ingénieurs et commerciaux) qui travaillent dans 191 régions et 46 langues différentes, gèrent plusieurs millions d’engagements par mois et ont des interactions avec les clients et les partenaires à l’aide d’outils locaux automatisés basés sur le téléphone, le web et la communauté. L’organisation apporte une grande expertise dans le portefeuille Microsoft, tirant parti d’un important réseau de partenaires, de communautés techniques, d’outils, de diagnostics et de canaux qui nous connectent à nos clients professionnels.
 
-Cliquez ici (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) pour en savoir plus sur les services professionnels Microsoft et en accédant à la section des services professionnels Microsoft du Centre de gestion de la confidentialité Microsoft (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>). Les services professionnels Microsoft prennent au sérieux leurs obligations en vertu du Règlement général sur la protection des données (RGPD). Les informations contenues dans ce document sont conçues pour répondre aux questions des clients sur la façon dont le support Microsoft et les offres de conseil aideront les clients à répondre aux obligations des demandes des personnes concernées (DSR) en vertu du RGPD.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
+Suivez ce lien pour en savoir plus sur les Services professionnels Microsoft, ou accédez à la section sur les services professionnels Microsoft dans le Centre de gestion de la confidentialité (<https://www.microsoft.com/trustcenter/professional-services>). Le Support Microsoft et les Services professionnels Microsoft prennent au sérieux les obligations imposées par le Règlement général sur la protection des données (RGPD). Les informations contenues dans ce document sont conçues pour répondre aux questions des clients sur la prise en charge de Microsoft et les offres conseils qui répondront aux clients et les aideront en réponse aux obligations de données objet (DSR) sous RGPD.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
 ### <a name="introduction-to-dsrs"></a>Présentation des DSR 
 
@@ -76,20 +76,21 @@ Vous trouverez ci-dessous les définitions des termes du RGPD utiles pour ce gui
 Ce guide décrit quatre scénarios qu’un client peut rencontrer s’il a utilisé les services professionnels Microsoft.
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>DSR pour un contact client impliquant Microsoft
+- **DSR pour un contact client impliquant Microsoft**
+
 Explication de la manière dont Microsoft répondra aux demandes provenant d’un contact client ou d’un administrateur informatique d’exercer leurs droits de personnes concernées.
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-## <a name="dsr-for-an-end-user-engaging-microsoft"></a>DSR pour un utilisateur final impliquant Microsoft
+- **DSR pour un utilisateur final impliquant Microsoft**
 
 Explication de la manière dont Microsoft répondra aux demandes provenant des employés d’un client ou d’autres personnes concernées d’exercer leurs droits.
 
-## <a name="dsr-for-customer-provided-data-commercial-support"></a>DSR pour des données fournies par un client : support commercial
+- **DSR pour des données fournies par un client : support commercial**
 
 Explication de la manière de recevoir une assistance de Microsoft lorsqu’un client a reçu une demande de son employé ou d’une autre personne concernée d’exercer ses droits, et que les données personnelles de cette personne concernée ont été collectées par le support Microsoft pendant un engagement du support.
 
 <span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-## <a name="dsr-for-customer-provided-data-consulting-services-including-fasttrack-migration-services"></a>DSR pour des données fournies par un client : services de conseil incluant les services de migration FastTrack 
+- **DSR pour des données fournies par un client : services de conseil incluant les services de migration FastTrack** 
 
 <span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
 

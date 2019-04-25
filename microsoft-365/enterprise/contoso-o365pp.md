@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise System Center Configuration Manager pour déployer Office 365 ProPlus.
-ms.openlocfilehash: 5b98f72561d7a431a4ca4a0b0241c6105c87026f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 0fa0ca1d268dbfd57891804e20959147cd6385e4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283547"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Déploiement d’Office 365 ProPlus pour Contoso
 
@@ -71,7 +71,7 @@ Pour effectuer le déploiement d’Office, Contoso a implémenté le processus s
 7. Dans le gestionnaire de configuration, Contoso a déployé les packages Windows et Office aux points de distribution au sein de son réseau, et a exécuté les séquences de tâches de déploiement du gestionnaire de configuration pour déployer le package Office 365 ProPlus pilote pour le groupe pilote.
 8. Après avoir résolu tous les problèmes de compatibilité avec le groupe pilote, Contoso a exécuté les séquences de tâches pour déployer le package Office 365 ProPlus large au groupe large.
 
-Étant donné que Contoso a choisi de mettre à jour les périphériques à partir du cloud, il n’était pas nécessaire de gérer le processus dans le gestionnaire de configuration. Ses périphériques sont automatiquement mis à jour directement à partir du cloud en fonction du canal de mise à jour défini dans le cadre du déploiement initial. 
+Étant donné que Contoso a choisi de mettre à jour automatiquement les appareils à partir du cloud, il n’était pas nécessaire de gérer le processus dans le Gestionnaire de Configuration. Les appareils clients sont mis à jour automatiquement directement à partir du CDN d’Office en fonction du canal de mise à jour que vous définissez dans le cadre du déploiement initial. 
 
 ## <a name="next-step"></a>Étape suivante
 
