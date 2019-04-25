@@ -3,28 +3,28 @@ title: 'Phase 3 : Critères de sortie pour l’infrastructure Windows 10 Entr
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
-ms.date: 06/01/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour Windows 10 Entreprise.
-ms.openlocfilehash: 7ac79fec93e4b4aae0b075891917e2f88432b80f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 1e8a2e748f42431465c027acbc468f4c5891d320
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289515"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Phase 3 : Critères de sortie pour l’infrastructure Windows 10 Entreprise
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Si votre infrastructure Windows 10 Entreprise respecte les conditions suivantes, vous pouvez passer à la phase 4.
+Vérifiez que votre infrastructure Windows 10 Entreprise répond aux critères suivants requis et que vous avez décidé ceux qui sont facultatifs.
 
 <a name="crit-windows10-step1"></a>
 ## <a name="required-your-microsoft-365-domains-are-added-and-verified"></a>Obligatoire : ajout et vérification de vos domaines Microsoft 365
@@ -37,7 +37,7 @@ Si nécessaire, l’[Étape 1](windows10-prepare-your-org.md) peut vous aider �
 
 ## <a name="optional-your-users-are-added-and-licensed"></a>Facultatif : ajout de vos utilisateurs et obtention de licence
 
-Les comptes correspondant à vos utilisateurs sont ajoutés, soit directement dans votre locataire Azure AD pour vos abonnements Office 365 et Intune, soit à partir de la synchronisation d’annuaires de votre version locale de Windows Server AD.
+Les comptes correspondant à vos utilisateurs sont ajoutés, soit directement dans votre locataire Azure AD pour vos abonnements Office 365 et Intune, soit à partir de la synchronisation d’annuaires de votre version locale de Windows Server ( Active Directory Domain Services: AD DS).
 
 Une fois que les utilisateurs sont ajoutés, vous pouvez leur attribuer des licences Microsoft 365 Entreprise, soit directement en tant qu’administrateur d’utilisateurs ou administrateur général, soit automatiquement via l’appartenance à un groupe.
 
@@ -54,9 +54,9 @@ Si nécessaire, l’[Étape 1](windows10-prepare-your-org.md) peut vous aider av
 
 Pour démarrer une séquence de tâches du Gestionnaire de configuration afin d’effectuer une mise à niveau sur place sur un périphérique exécutant Windows 7 ou Windows 8.1, vous devez avoir :
 
-- défini le niveau de données de diagnostic Windows approprié ;
-- vérifié la préparation de la mise à niveau Windows ; et
-- créé une séquence de tâches du Gestionnaire de configuration qui inclut une collection de périphériques et le déploiement d’un système d’exploitation avec une image de système d’exploitation Windows 10.
+- définir le niveau de données de diagnostic Windows approprié ; et
+- Vérifié la préparation de la mise à niveau Windows
+- Créé une séquence de tâches du Gestionnaire de configuration qui inclut une collection de périphériques et le déploiement d’un système d’exploitation avec une image de système d’exploitation Windows 10.
 
 Une fois ces éléments en place, vous pouvez effectuer des mises à niveau sur place sur les périphériques qui sont prêts à recevoir la mise à niveau de Windows. Pour optimiser Microsoft 365 Entreprise, mettez à niveau autant de périphériques exécutant Windows 7 et Windows 8.1 que possible. 
 
@@ -69,12 +69,12 @@ Si nécessaire, l’[Étape 2](windows10-deploy-inplaceupgrade.md) peut vous ai
 
 Pour utiliser Windows Autopilot afin de déployer et de personnaliser Windows 10 Entreprise sur un nouveau périphérique, vous devez :
 
-- définir le niveau de données de diagnostic Windows approprié ; et
-- remplir les conditions préalables pour Windows Autopilot, qui incluent les éléments suivants :
-- Inscription du périphérique et personnalisation OOBE
-- Insertion de la marque de votre entreprise pour OOBE
-- Inscription automatique de la gestion des appareils mobiles dans Microsoft Intune
-- Connectivité réseau aux services cloud utilisés par Windows Autopilot
+- Configurer le niveau de données de diagnostic Windows approprié
+- Remplir les conditions préalables pour Windows Autopilot, qui incluent les éléments suivants :
+   - Inscription du périphérique et personnalisation OOBE
+   - Insertion de la marque de votre entreprise pour OOBE
+   - Inscription automatique de la gestion des appareils mobiles dans Microsoft Intune
+   - Connectivité réseau aux services cloud utilisés par Windows Autopilot
 - Pré-installation de Windows 10 version 1703 ou ultérieure sur les périphériques
 - Sélection du programme de déploiement Windows Autopilot pour votre organisation
 
@@ -117,11 +117,12 @@ Vous avez déployé le service Protection avancée contre les menaces Windows De
 
 Vous avez éventuellement intégré Windows Defender ATP à d’autres outils pour développer ses fonctionnalités.
 
-Si nécessaire, l’[Étape 5](windows10-enable-security-features.md#windows10-sec-atp) peut vous aider à répondre à cette exigence.
+Si nécessaire, l’[étape 5](windows10-enable-security-features.md#windows10-sec-atp) peut vous aider à répondre à cette exigence.
 
+## <a name="results-and-next-steps"></a>Tests et étapes suivantes
 
-## <a name="next-phase"></a>Phase suivante
+Votre infrastructure Windows 10 Entreprise est prêt à commencer l’installation sur les nouveaux appareils et les mises à niveau sur place sur des appareils exécutant les versions précédentes de Windows et que vous utilisez les fonctionnalités de sécurité clés de Windows 10 Entreprise.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| La phase suivante dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise est [Office 365 ProPlus](office365proplus-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Si vous suivez les phases suivantes dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est la [Office 365 ProPlus](office365proplus-infrastructure.md). |
