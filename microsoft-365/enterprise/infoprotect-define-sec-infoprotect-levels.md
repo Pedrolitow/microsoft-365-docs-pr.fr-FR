@@ -3,22 +3,22 @@ title: 'Étape 1 : Définir les niveaux de protection des informations et de s�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez les niveaux de protection des informations et de sécurité pour votre organisation.
-ms.openlocfilehash: bc55fab7b450685268ae89648ae18292e5494ce8
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 91274ec2bcd4e4472969a7cd65660742daaef5bd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286997"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Étape 1 : Définir les niveaux de protection des informations et de sécurité
 
@@ -26,17 +26,15 @@ ms.locfileid: "26867080"
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Dans cette étape, vous devez définir les niveaux de sécurité et protection pour votre organisation. Par exemple, votre service des ventes n’a peut-être besoin que d’un niveau de sécurité faible, alors que votre service de recherche et sa propriété intellectuelle très importante peuvent nécessiter un niveau de sécurité élevé qui chiffre des fichiers et limite l’accès au personnel de recherche uniquement.
+Lors de cette étape, vous allez définir les niveaux de sécurité et de protection de votre organisation. Par exemple, un niveau de sécurité relativement faible peut suffire à votre service commercial. En revanche, votre service de recherche et sa précieuse propriété intellectuelle nécessitent probablement un niveau de sécurité élevé avec chiffrage des fichiers et limitation d’accès au seul personnel de recherche.
 
-Bien que vous puissiez définir vos propres niveaux de sécurité et même si vous en avez déjà définis, Microsoft recommande de développer un plan pour utiliser au moins trois niveaux de sécurité et de protection différents qui peuvent être appliqués. Voici une liste pour commencer : 
+Bien que vous puissiez définir vos propres niveaux de sécurité et même si vous en avez déjà définis, Microsoft recommande d’élaborer un plan pour utiliser au moins trois niveaux de sécurité et de protection différents. Voici une liste pour commencer : 
 
 - **De base :** il s’agit d’un minimum standard pour la protection des données et pour les identités et les appareils qui accèdent à vos données. Vous pouvez suivre des recommandations de base en matière de sécurité et de protection pour fournir une protection par défaut forte qui répond aux besoins de nombreuses organisations ou de leurs services.
 - **Sensible :** il s’agit d’une protection supplémentaire pour un sous-ensemble de vos données qui doivent être protégées au-delà du niveau de base. Vous pouvez appliquer cette protection accrue à des ensembles de données spécifiques dans votre environnement Office 365. Microsoft recommande également d’appliquer le niveau de sécurité sensible aux identités et appareils qui accèdent aux données sensibles.
 - **Hautement réglementée :** il s’agit du niveau de protection le plus élevé pour les organisations qui ont généralement une très petite quantité de données hautement classées, considérées comme étant la propriété intellectuelle ou des secrets commerciaux, ou des données devant respecter des réglementations de sécurité strictes. Microsoft 365 Entreprise dispose de fonctionnalités pour aider les organisations à respecter ces exigences de sécurité élevé, avec notamment une protection équivalente pour les appareils et identités.
 
 Pour en savoir plus, consultez la rubrique sur les [trois niveaux de protection](microsoft-365-policies-configurations.md#three-tiers-of-protection).
-
-Le résultat est une détermination de vos niveaux de protection des informations et de sécurité.
 
 Comme point de contrôle intermédiaire, consultez les [critères de sortie](infoprotect-exit-criteria.md#crit-infoprotect-step1) correspondant à cette étape.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Prise en main : déploiement du bureau moderne'
+title: Prise en main - Déploiement Bureau
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,96 +12,92 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Présentation du processus de déploiement du bureau moderne.
-ms.openlocfilehash: bb5c1433554e984676884fd2bac4fa5120c76996
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Présentation du processus de déploiement du Bureau.
+ms.openlocfilehash: cd8b46189616ac4c981fa83ac097a9bbe01bfb90
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280239"
 ---
-# <a name="getting-started---modern-desktop-deployment"></a>Prise en main : déploiement du bureau moderne
+# <a name="getting-started---desktop-deployment"></a>Prise en main - Déploiement Bureau
 
-Le cloud révolutionne la gestion des PC : le cloud intelligent de Microsoft met à la disposition des informaticiens des connaissances actionnables pour les aider à déployer un bureau moderne. Cette série d’articles a pour but de vous aider à planifier et à migrer vers un bureau moderne basé sur Windows 10 et Office 365 ProPlus.
-
-<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" style="background-color: #fff;" />
+![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
 
 <table>
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>Prise en main : aide relative aux technologies, aux processus et aux utilisateurs</strong></p>
-<p>Découvrez les avantages d’un bureau moderne, les modifications majeures et les aspects à prendre en compte par rapport aux déploiements précédents, ainsi que les bonnes pratiques à adopter pour assurer une transition fluide vers Windows 10 et Office 365 ProPlus.</p></td>
+<p>Découvrez les avantages de Windows 10 et Office 365 ProPlus, les modifications majeures et les aspects à prendre en compte par rapport aux déploiements précédents, ainsi que les bonnes pratiques à adopter pour assurer une transition fluide vers Windows 10 et Office 365 ProPlus.</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->Dans cette série d’articles, nous allons expliquer comment faire bon usage des outils existants, et vous présenter les nouvelles technologies, les nouveaux services et les nouvelles méthodes accessibles via le cloud. Pour consulter l’ensemble du processus de déploiement du bureau, visitez le [centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
+>Dans cette série d’articles, nous allons expliquer comment faire bon usage des outils existants, et vous présenter les nouvelles technologies, les nouveaux services et les nouvelles méthodes accessibles via le cloud.   Pour afficher le processus de déploiement de bureau complet, visitez le [Centre de déploiement de Bureau](https://aka.ms/HowToShift).
 >
 
-Bienvenue au centre de déploiement du bureau moderne, notre plateforme centralisée où vous pourrez découvrir comment planifier et mettre en œuvre votre migration vers un bureau moderne. Vous pourrez ainsi profiter d’un espace de travail sécurisé qui vous offrira les expériences les plus récentes en matière de productivité, de travail d’équipe et de collaboration.
+Bienvenue dans le centre de déploiement de bureau, notre emplacement central pour découvrir comment vous aider à planifier et vérifier le passage à Windows 10 et Office 365 ProPlus. Cela vous permettra de tirer parti d’un espace de travail sécurisé, optimisé par les dernières expériences de productivité, de travail en équipe et de collaboration.
 
-Si vous n’avez pas déployé un nouvel environnement de bureau depuis un certain temps, vous serez heureux d’apprendre que le processus de déploiement a été optimisé. Les difficultés rencontrées par le passé, comme la compatibilité des applications, sont beaucoup moins problématiques aujourd’hui, et les nouveaux outils et les connaissances issues du cloud vous permettent d’agir en toute confiance, plus rapidement et plus efficacement que jamais.
+Si vous n’avez pas déployé de nouvel environnement bureau depuis un certain temps, la bonne nouvelle est que le processus de déploiement a été amélioré. Les défis du passé, par exemple, la compatibilité des applications, sont beaucoup moins un problème aujourd'hui. Les nouveaux outils, mais aussi les informations délivrées à partir du Cloud, vous aident à avancer plus rapidement et plus efficacement que jamais.
 
 Au cours de cette présentation, nous allons expliquer les changements qui ont eu lieu et présenter le processus de déploiement du bureau. Ainsi, vous connaîtrez les étapes recommandées à suivre pour migrer vers Windows 10 et Office 365 ProPlus, et apprendrez à tirer parti de vos processus et outils existants quand vous adopterez des approches et des technologies de gestion modernes à l’avenir.
 
 ## <a name="why-upgrade"></a>Pourquoi mettre à niveau ?
 
-Windows 10 et le cloud intelligent de Microsoft vous permettent d’offrir à vos utilisateurs l’espace de travail le plus stimulant, puissant et sécurisé possible, tout en simplifiant votre infrastructure de support.
+Combinés, Windows 10 et le cloud intelligent de Microsoft vous permettent d’offrir à vos utilisateurs l’espace de travail le plus stimulant, puissant et sécurisé possible, tout en simplifiant votre infrastructure de support.
 
-La mise à jour régulière des appareils est importante pour adopter une gestion moderne de votre bureau. Grâce à cette série d’articles, vous allez découvrir les nouvelles fonctionnalités qui vous aideront à passer à Windows 10 et Office 365 ProPlus et à accéder aux versions semestrielles de ces deux logiciels.
+Un des clients clés des pratiques de gestion moderne est des appareils qui sont toujours à jour. Dans cette série vous serez informés sur les nouvelles fonctionnalités qui sont délivrées pour vous aider à passer à Windows 10 et Office 365 ProPlus en restant à jour avec les publications semi-annuelles des deux.
 
 [Windows 10 pour les professionnels de l’informatique](https://www.microsoft.com/fr-FR/itpro/windows-10)
+
+[À propos d'Office 365 ProPlus en entreprise](https://docs.microsoft.com/fr-FR/deployoffice/about-office-365-proplus-in-the-enterprise)
 
 ## <a name="what-has-changed"></a>Qu’est-ce qui a changé ?
 
 Examinons les modifications et les améliorations apportées depuis votre dernier déploiement de bureau. Si vous n’avez pas migré votre environnement de bureau récemment, vous utilisez probablement Windows 7 et Office 2010 ou Office 2013. Dans ce cas, vous remarquerez que certains éléments ont évolué depuis votre dernière mise à niveau majeure. Voici quelques exemples de ces changements :
 
-**Gestion des identités et des accès** Le bureau moderne, connecté aux services de gestion, de sécurité et de productivité dans le cloud, propose un nouveau service de base pour gérer les identités et les accès : Azure Active Directory. Il vous permet d’utiliser l’authentification unique et une connexion sécurisée dans vos services cloud. Pour l’utiliser, nous vous conseillons d’installer Azure AD. Ce service vous permettra de bénéficier des services de Microsoft 365 tels qu’Office 365, Intune ou Windows Autopilot.
+**Identité et accès :** Windows 10 et Office 365 ProPlus, avec sa connectivité aux services de gestion, de sécurité et de productivité dans le cloud a un nouveau service de gestion des identités et accès : Azure Active Directory (Azure AD). Cela permet une connectivité à authentification unique et en toute sécurité au sein de vos services cloud, ce qui signifie que vous allez avoir besoin d’Azure AD pour tirer parti des services Microsoft 365 tels qu’Office 365, Intune ou Windows Autopilot.
 
 [Microsoft 365](https://www.microsoft.com/fr-FR/microsoft-365/default.aspx)
 
-**Environnement sécurisé préalable au démarrage** Le microprogramme UEFI 64 bits remplace BIOS. Votre environnement se met en route plus vite et la plupart des fonctionnalités de sécurité modernes doivent être activées dans Windows 10. Windows 10 s’exécute sur BIOS mais l’utilisation d’UEFI est fortement recommandée. Si vous n’avez pas encore installé le microprogramme UEFI 64 bits, nous vous conseillons vivement de le faire. Il existe des outils pour vous aider dans cette transition, que ce soit pendant une mise à niveau Windows 10 ou après celle-ci.
+**Environnement sécurisé préalable au démarrage :** microprogramme UEFI 64 bits remplace BIOS. En plus d’accélérer les temps de démarrage, il est indispensable pour activer bon nombre des fonctionnalités de sécurité modernes de Windows 10. Tandis que Windows 10 s’exécute sur BIOS, UEFI est fortement recommandé. Si vous n'avez pas basculé à partir du BIOS vers UEFI et exploité le 64 bits, il est temps. Il existe des outils pour vous aider à faire ce changement pendant une mise à niveau Windows 10 ou après celle-ci.
 
-[Passer de BIOS à UEFI avec MBR2GPT](https://technet.microsoft.com/fr-FR/windows/mt782786.aspx)
-
-**Gestion informatique des appareils** Les services tels que Microsoft Intune vous permettent de centraliser la gestion de vos appareils Windows 10 et d’autres appareils mobiles en un seul endroit. Microsoft Intune est capable de cogérer vos appareils Windows 10 avec le System Center Configuration Manager. Vous pouvez utiliser ce logiciel pour vous aider à migrer vers Windows 10, puis ajouter Microsoft Intune. Le System Center Configuration Manager forme un périmètre intelligent au sein de votre organisation connectée au cloud intelligent de Microsoft. Ainsi, vous pouvez gérer les appareils de vos utilisateurs en toute sécurité, quel que soit l’endroit où ils se trouvent, qu’ils soient connectés au cloud de votre organisation ou au cloud public.
+**Gestion des appareils basée sur le cloud : ** des services comme Microsoft Intune vous permettent de gérer vos appareils Windows 10 comme d’autres appareils mobiles, à partir d’un seul emplacement. Ce qui rend Microsoft Intune unique est que vous pouvez également cogérer des appareils Windows 10 avec System Center configuration Manager. Vous pouvez utiliser System Center Configuration Manager pour vous aider à votre passage vers Windows 10, puis ajouter Microsoft Intune. En travaillant ensemble, le System Center Configuration Manager devient le périmètre intelligent au sein de votre organisation connectée au cloud intelligent de Microsoft. Cela vous permet de gérer les appareils de vos utilisateurs en toute sécurité où qu’ils soient, qu’ils soient connectés sur l’infrastructure de votre organisation ou dans le cloud public.
 
 [Cogestion des appareils Windows 10](https://docs.microsoft.com/fr-FR/sccm/core/clients/manage/co-management-overview)
 
-**Service de déploiement informatique** Nous vous proposons un nouveau service cloud pour vous aider à déployer les appareils Microsoft 365 sur vos nouveaux PC. Il s’agit du service de déploiement Windows Autopilot. AutoPilot est intégré directement par les fournisseurs de votre matériel et enregistre automatiquement les nouveaux PC. Ainsi, le fournisseur peut expédier le nouveau PC directement à l’utilisateur final. Quand le PC est mis en route pour la première fois, il est rapidement configuré selon les paramètres de votre organisation, et répond aux besoins spécifiques de l’utilisateur.
+**Service de déploiement basé sur le cloud :** lorsque vous acquérez de nouveaux PC, nous avons introduit un nouveau service cloud pour vous aider à déployer Microsoft 365 aux appareils, appelé le service de déploiement Windows Autopilot. AutoPilot est intégré avec vos fournisseurs de matériel et les nouveaux PC sont automatiquement enregistrés dans Autopilot, permettant au nouveau PC d’être expédié directement à l’utilisateur final. Lorsque le PC est allumé pour la première fois, il est rapidement configuré selon les préférences de votre organisation et personnalisé pour les besoins spécifiques de l’utilisateur.
 
 [Windows Autopilot](https://www.microsoft.com/fr-FR/windowsforbusiness/windows-autopilot)
 
-**Déploiements pour Démarrer en un clic** Pendant la configuration des applications de bureau Office, Office 365 ProPlus est l’option sélectionnée par défaut. Ainsi, vous avez accès aux dernières innovations apportées dans Office dès qu’elles sont développées. Vous n’attendrez plus des années avant de recevoir de nouvelles fonctionnalités. Vous allez également utiliser une nouvelle installation appelée Démarrer en un clic.
+**Les déploiements en un clic :** lors de la configuration des applications de bureau Office, Office 365 ProPlus est l’option par défaut. Cela vous donne accès aux innovations dans Office en temps réel, afin que vous n’ayez pas besoin d’attendre des années avant d’avoir accès aux nouvelles fonctionnalités. Vous pouvez également utiliser une nouvelle installation appelée En un clic.
 
-L’installation Démarrer en un clic est différente des packages antérieurs basés sur MSI. Démarrer en un clic est plus rapide, plus claire et utilise la diffusion des programmes en continu qui permet aux utilisateurs d’être opérationnels en quelques minutes et d’exécuter les mises à jour en arrière-plan. Il s’agit toujours d’une copie locale d’Office ; vous pouvez continuer à utiliser vos outils de déploiement existants, tels que le System Center Configuration Manager, pour configurer les applications.
+En un clic est relativement différent des anciens packages basés sur MSI. En un clic est plus rapide, plus léger et prend en charge des mises à jour en arrière-plan pour permettre aux utilisateurs d’être opérationnels. C’est toujours une copie locale d’Office et vous pouvez continuer à utiliser vos outils de déploiement existants, tels que System Center Configuration Manager, pour approvisionner et configurer les applications.
 
 [Guide de déploiement pour Office 365 ProPlus](https://docs.microsoft.com/fr-FR/DeployOffice/deployment-guide-for-office-365-proplus)
 
-**Mises à jour semestrielles** Une fois que vous avez migré vers Windows 10 et Office 365 ProPlus, les mises à jour sont mises en production tous les six mois avec de nouvelles fonctionnalités. Microsoft met des connaissances du cloud à votre disposition pour vous aider à déployer rapidement et sereinement ces mises à jour sur des centaines voire des milliers d’appareils. Tout comme les mises à niveau sur place, les mises à jour de fonctionnalité conservent les applications, les données et les configurations de la version précédente.
+**Mises à jour semestrielles :** une fois que vous êtes passé vers Windows 10 et Office 365 ProPlus, les mises à jour sont effectuées semestriellement avec de nouvelles fonctionnalités. Mais comme Microsoft peut délivrer des informations à partir du cloud pour vous aider, vous pouvez rapidement déployer sereinement ces mises à jour à des centaines voire des milliers d’appareils. Comme une mise à niveau locale, la mise à jour de fonctionnalité conserve les applications, données et configurations à partir de la version précédente.
 
-## <a name="the-deployment-process-wheel"></a>Processus de déploiement
+## <a name="the-deployment-process-wheel"></a>Roue de processus de déploiement
 
-Avant de commencer, planifiez votre déploiement et sollicitez la participation des commanditaires appropriés. Notre processus de déploiement présente les étapes importantes à suivre pour vous aider à identifier les membres du noyau dur de votre équipe et les ressources à gérer dans les zones de déploiement suivantes.
+Avant de commencer, vous souhaitez créer un plan de haut-niveau et obtenir les sponsors nécessaires. La roue de nos processus de déploiement décrit les étapes critiques pour vous aider à identifier les membres de l’équipe essentiels et les ressources pour gérer dans les zones de déploiement suivantes.
 
-**[Étape 1 : préparation des applications et des appareils](https://aka.ms/mdd1)** Pour réussir votre déploiement, il est important de savoir ce dont vous disposez. Nous vous conseillons donc de réaliser un inventaire de vos appareils et applications et de vérifier leur compatibilité.
-
-Pour cela, vous pouvez utiliser les outils disponibles dans notre service informatique Windows Analytics. Windows Analytics vous permet de puiser dans les informations relatives à la compatibilité et la télémétrie provenant de centaines de millions de PC, pour évaluer les applications et les pilotes exécutés sur votre appareil et déterminer l’état de préparation de votre parc d’ordinateurs de bureau. Vous pouvez même exporter une liste de « PC prêts pour le déploiement » à partir de Windows Analytics vers le System Center Configuration Manager si vous l’utilisez, pour créer des collections de PC ciblés dès qu’ils sont prêts.
+**[Étape 1 : Disponibilité des applications et appareils](https://aka.ms/mdd1) ** pour un déploiement réussi vous devez d’abord connaître ce que vous avez. Cela signifie tenir un inventaire de vos appareils et applications et vérifier la compatibilité. Pour vous aider, vous pouvez tirer parti des outils disponibles dans notre service basé sur le cloud, Windows Analytics. Windows Analytics vous permet de puiser dans les ressources de compatibilité et données de diagnostic collectées sur des centaines de millions de PC, afin d’évaluer les applications et les pilotes en cours d’exécution sur votre appareil pour que vous puissiez établir la préparation de votre bureau. Vous pouvez même exporter une liste de « PC prêts pour le déploiement » à partir de Windows Analytics vers System Center Configuration Manager si vous l’utilisez, vous permettant de créer des collections de PCs basées sur les données dès qu’ils sont prêts.
 
 [Prise en main de Upgrade Readiness](https://docs.microsoft.com/fr-FR/windows/deployment/upgrade/upgrade-readiness-get-started)
 
-**[Étape 2 : préparation des répertoires et du réseau](https://aka.ms/mdd2)** Si vous ne l’avez pas encore installé, nous vous conseillons d’implémenter Azure Active Directory pour gérer les identités et les accès. Préparez également votre réseau au déplacement des images système, des packages d’application, des fichiers utilisateur et des mises à jour. Ce processus implique un volume massif de données supplémentaires ; votre réseau doit être capable de gérer cette charge supplémentaire sans que cela se répercute sur le travail quotidien de votre organisation. Nous vous proposons une gamme d’optimisations de mise en réseau incluant des options de pair à pair, de limitation de la bande passante, de nettoyage dynamique de la bande passante et de mise à jour différentielle.
+**[Étape 2 : disponibilité annuaire et réseau](https://aka.ms/mdd2) ** si vous ne l’avez pas encore fait, vous souhaiterez implémenter Azure Active Directory pour la gestion de l’identité et accès. Vous souhaiterez également préparer votre réseau pour le déplacement des images système, des packages d’applications, fichiers utilisateur et mises à jour. Cela signifie une grande quantité de données supplémentaires ; votre réseau doit avoir la capacité disponible pour gérer cette charge supplémentaire sans impact sur le travail quotidien de votre organisation. Nous vous proposons une plage d’optimisations de mise en réseau disponibles pour la limitation de bande passante pair à pair au nettoyage de bande passante dynamique et mise à jour différentielle.
 
 [BranchCache et cache d’homologue](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**[Étape 3 : distribution d’Office et des applications métiers](https://aka.ms/mdd3)** Alors que Windows continue à prendre en charge les installations basées sur MSI, il prend désormais en charge les mécanismes d’installation plus récents, optimisés pour le déploiement automatisé et les mises à jour continues. Comme les clients Office 365 ProPlus et Windows 2019 utilisent Démarrer en un clic, nous vous recommandons de mettre à leur disposition une gamme d’applications UWP, et de déployer progressivement des applications tierces et des applications métiers développées en interne qui utilisent les nouvelles applications d’empaquetage basées sur MSIX. En suivant cette étape, vous vous assurez que vos applications sont prêtes pour les déploiements automatisés et que votre configuration réussisse, que vos applications soient déployées à l’aide de Démarrer en un clic, MSIX, MSI conventionnel, ou qu’il s’agisse d’applications UWP déployées à partir d’une Boutique Microsoft dans une application métier que vous avez configurée.
+**[Étape 3 : Office et ligne d’entreprise de remise d’application ](https://aka.ms/mdd3) ** tandis que Windows continue à prendre en charge les installations basées sur MSI, il prend également désormais en charge les plus récents mécanismes d’installations, optimisés pour les déploiements automatisés et mises à jour continues. Les clients Office 365 ProPlus et Office 2019 utilisent des technologies d’installation en un clic. Vous voudrez peut-être effectuer une plage UWP d’applications disponibles et vous pourrez vous apercevoir que vous déployez progressivement vous-même des applications tierces et internes basées sur la ligne d’entreprise qui utilisent les nouvelles applications MSIX. Cette étape garantit que vos applications sont prêtes pour les déploiements automatisés vers et que vous êtes prêts pour la réussite, que vos applications se déploient à l’aide de En un clic, MSIX conventionnels basée sur MSI, ou que ce soient des applications UWP déployées à partir d’un Microsoft Store configuré pour Entreprise.
 
 [Présentation de MSIX](https://blogs.msdn.microsoft.com/sgern/2018/06/15/msix-intro/)
 
-**[Étape 4 : migration des fichiers et des paramètres utilisateur](https://aka.ms/mdd4)** Cette étape joue un rôle important dans n’importe quel cycle d’actualisation ou de remplacement de PC : assurez-vous que les fichiers, les données et les paramètres des utilisateurs sont déplacés correctement et conservés tout au long de la migration. Cette étape présente les options disponibles (nouvelles options et options déjà connues) pour effectuer des migrations manuelles ou automatiques.
+**[Étape 4 : migration des fichiers et des paramètres utilisateur](https://aka.ms/mdd4)** Cette étape joue un rôle important dans n’importe quel cycle d’actualisation ou de remplacement de PC : assurez-vous que les fichiers, les données et les paramètres des utilisateurs sont déplacés correctement et conservés tout au long de la migration.  Cette étape présente les options disponibles pour les migrations manuelles ou automatiques, y compris les options connues et nouvelles.
 
-Comme dans les mises à niveau précédentes, l’outil de migration utilisateur reste un outil pratique pour automatiser ce processus et demeure une partie intégrante des migrations orchestrées avec le System Center Configuration Manager ou Microsoft Deployment Toolkit. Le fait de déplacer ces données pendant la migration peut générer un goulot d’étranglement qui influe sur le calendrier de remplacement des PC, étant donné le double transfert de centaines de gigaoctets par PC (la première fois, à partir du bureau existant, la deuxième fois vers la nouvelle version du bureau). La nouvelle option « Known Folder Move » de OneDrive vous permet de synchroniser les documents, les images et les fichiers du bureau d’un utilisateur, à l’échelle, dans le cloud, préalablement au déploiement.
+Comme dans les mises à jour précédentes, l’outil de Migration état utilisateur continue d’être un outil précieux pour automatiser ce processus et reste partie intégrante des migrations orchestrées à l’aide de System Center Configuration Manager ou Microsoft Deployment Toolkit. Mais déplacer ces données en migration peut être fastidieux pour le remplacement de PC en raison de physiques impliquées dans le transfert de centaines de gigaoctets par PC à deux reprises : tout d’abord à partir du bureau existant, puis vers la nouvelle version de bureau. Une nouvelle option activée par OneDrive est Déplacement de Dossier connu, utilisé pour synchroniser des documents de l’utilisateur, des images et des fichiers du Bureau à l’échelle, dans le cloud et avant le déploiement.
 
 [Rediriger et déplacer les dossiers connus de Windows vers OneDrive](https://docs.microsoft.com/fr-FR/onedrive/redirect-known-folders)
 
@@ -113,17 +109,18 @@ Comme dans les mises à niveau précédentes, l’outil de migration utilisateur
 
 [Présentation du déploiement du système d’exploitation dans le System Center Configuration Manager](https://docs.microsoft.com/fr-FR/sccm/osd/understand/introduction-to-operating-system-deployment)
 
-**[Étape 7 : Windows et Office as a Service](https://aka.ms/mdd7)** Cette étape révolutionne la maintenance du parc d’ordinateurs de bureau des utilisateurs. En migrant les PC vers Windows 10 (et Office 365 ProPlus), vous pouvez adopter une gestion de Windows (et d’Office) « as a service ». Au lieu de migrer vers une nouvelle technologie tous les ans, vous fournirez à vos utilisateurs de nouvelles fonctionnalités, expériences et protections. Les mises à jour de fonctionnalité semestrielles proposent de nouvelles fonctionnalités en automne et au printemps, tandis que les mises à jour de qualité cumulatives mensuelles contiennent des correctifs de bogue, de sécurité et de fiabilité. Même si vous pouvez choisir de déployer des clients Office 2019, nous vous recommandons vivement de migrer vers Office ProPlus. Il adopte le même plan de service que Windows pour que vos utilisateurs reçoivent régulièrement les mises à jour des applications Office.
+**[Étape 7 : Windows et Office en tant que Service](https://aka.ms/mdd7) ** cette valeur représente un changement majeur dans la façon de maintenir à jour le bureau des utilisateurs. Avec ce déplacement à Windows 10 et Office 365 ProPlus, vous pouvez passer à la gestion de Windows et Office en tant que service. À la place d’un changement massif de technologies tous les ans, vous aurez continuellement de nouvelles fonctionnalités et expériences, et des protections fiables pour vos utilisateurs. Les mises à jour semestrielles des fonctionnalités offrent de nouvelles fonctionnalités chaque automne et printemps, tandis que les mises à jour mensuelles de qualité cumulées contiendront sécurité, fiabilité et correctifs. Même si vous pouvez choisir de déployer le client Office 2019, nous vous recommandons vivement de passer à Office 365 ProPlus. Cela suit un plan de service similaire à Windows afin que vos utilisateurs reçoivent les mises à jour aux applications Office régulièrement.
 
 ![](media/getting-started-media/getting-started-media-2.png)
 
-[Vue d’ensemble de Windows as a service](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-overview)
+[Vue d’ensemble de Windows en tant que service](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-overview)
+[vue d’ensemble d’Office en tant que service](https://docs.microsoft.com/fr-FR/DeployOffice/overview-of-update-channels-for-office-365-proplus)
 
-**[Étape 8 : Communications et formation des utilisateurs](https://aka.ms/mdd8)** Cette dernière étape vous permet d’encourager vos utilisateurs à faire appel aux nouvelles fonctionnalités pour améliorer le travail d’équipe, les communications, la sécurité, entre autres. Avant d’étendre le déploiement aux utilisateurs extérieurs au cercle d’utilisateurs de la première heure, nous vous recommandons de mener une campagne de communication et de proposer aux utilisateurs des formations. Cela vous permettra d’inciter les utilisateurs à utiliser les nouvelles fonctionnalités disponibles dans Office, Windows ou d’autres applications et services métiers. Pour vous y aider, nous proposons une formation en ligne gratuite via Microsoft FastTrack. De plus, nous avons publié des plans et des calendriers de communication gratuits, ainsi que des modèles de messages à diffuser par e-mail, sur les réseaux sociaux et l’intranet pour vous aider à déployer Windows 10. En tant qu’organisation Microsoft 365 ou Office 365, vous pouvez également bénéficier d’un support direct.
+**[Étape 8 : Communications et formation des utilisateurs ](https://aka.ms/mdd8) ** cette dernière étape est critique pour mener l’utilisation des nouvelles fonctionnalités pour optimiser le travail d’équipe, communications, sécurité et autres aspects. Avant que le déploiement à grande échelle ne soit appliqué aux utilisateurs hors premiers utilisateurs, nous vous recommandons de mettre en place la formation et communication utilisateur. Cela vous aidera à apporter les modifications souhaités dans comment les personnes utilisent les nouvelles fonctionnalités disponibles dans Office, Windows ou autres applications et services d’entreprise . Pour aider, nous fournissons une formation en ligne gratuite via Microsoft FastTrack. De plus, nous avons publié des échantillons de plans de communication gratuits et chronologies avec messagerie électronique, réseaux sociaux et modèles intranet pour vous aider avec votre déploiement de Windows 10. En tant qu’entreprise Microsoft 365 ou Office 365, votre organisation peut également être éligible pour un service clientèle direct.
 
 ## <a name="next-step"></a>Étape suivante
 
-Désormais, le processus de déploiement n’a plus aucun secret pour vous. Lancez-vous !
+Vous savez maintenant ce qui est nouveau et différent dans Windows 10 et Office 365 ProPlus et nous vous avons guidé dans notre roue de processus de déploiement recommandé. Avec cette introduction pour l’aide bout à bout et outils disponibles pour passer à Windows 10 et Office 365 ProPlus, c’est parti.
 
 ## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[Étape 1 : préparation des applications et des appareils](https://aka.ms/mdd1)
 
