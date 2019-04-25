@@ -3,25 +3,25 @@ title: Réinitialisation de mot de passe pour votre environnement de test Micros
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/30/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLGS
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez la réinitialisation de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: a90cb362a2831bf0bcf3fe05932e3a4345d52b2e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5fc8d68493464d6b4a6ffdcda64ed9a0d8c7cdd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289460"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
@@ -29,26 +29,30 @@ La réinitialisation de mot de passe en libre-service (SSPR) d’Azure AD perme
 
 Cet article vous explique comment configurer et tester les réinitialisations de mot de passe dans votre environnement de test Microsoft 365 en deux étapes :
 
-1.  Création de l’environnement de test Microsoft 365 de l’entreprise simulée avec la synchronisation de hachage de mot de passe.
+1.  Créer l’environnement de test Microsoft 365 Entreprise.
 2.  Configuration et test de la réinitialisation de mot de passe pour le compte Utilisateur 2.
     
 ![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
-  
-## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
-Suivez les instructions fournies dans l’article [Synchronisation de hachage de mot de passe pour Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Voici la configuration que vous obtenez.
+## <a name="phase-1-configure-password-hash-synchronization-and-password-writebback-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe et réinitialisation du mot de passe pour votre environnement de test Microsoft 365
+
+Tout d’abord, suivez les instructions fournies dans l’article [Synchronisation de hachage de mot de passe](password-hash-sync-m365-ent-test-environment.md). Voici la configuration que vous obtenez.
   
-![Environnement de test de l’entreprise simulée avec l’authentification directe](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Cette configuration se compose des éléments suivants :  
   
-- Les abonnements à la version permanente ou d’évaluation Office 365 E5 et EMS E5.
+- Les abonnements à la version payante ou d’évaluation Office 365 E5 et EMS E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
-- Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Windows Server AD TESTLAB avec le client Azure AD de vos abonnements Office 365 et EMS E5.
+- Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Windows Server AD DS avec le client Azure AD, le client de vos abonnements Office 365 et EMS E5.
 
+Ensuite, suivez les instructions du Guide de laboratoire de Test dans la [Phase 2 de la réinitialisation de mot de passe](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
+
+La fonction de réinitialisation du mot de passe doit être activée pour utiliser l’écriture différée du mot de passe.
+  
 ## <a name="phase-2-configure-and-test-password-reset"></a>Étape 2 : Configuration et test de la réinitialisation de mot de passe
 
 Lors de cette étape, vous configurez la réinitialisation de votre mot de passe dans le client Azure AD en fonction de l’appartenance de groupe, puis vous vérifiez qu’elle fonctionne.
@@ -75,9 +79,9 @@ Ensuite, testez la réinitialisation de mot de passe pour le compte Utilisateur�
 6. Connectez-vous avec les informations d’identification du compte Utilisateur 2, saisissez les caractères de la CAPTCHA, puis cliquez sur **Suivant**.
 8. Pour **la première étape de vérification**, cliquez sur **Envoyer un e-mail à mon autre adresse électronique**, puis cliquez sur **Envoyer**. Lorsque vous recevez l’e-mail, saisissez le code de vérification, puis cliquez sur **Suivant**.
 9. Dans **Revenir à votre compte**, saisissez un nouveau mot de passe pour le compte Utilisateur 2, puis cliquez sur **Terminer**. Notez le mot de passe modifié du compte Utilisateur 2 et conservez-le dans un endroit sûr.
-10. Dans un nouvel onglet du même navigateur, accédez à [https://portal.office.com](https://portal.office.com), puis connectez-vous avec le nom de compte Utilisateur 2 et son nouveau mot de passe. Vous devriez voir s’afficher la page d’accueil **Office**.
+10. Dans un nouvel onglet du même navigateur, accédez à [https://office.com](https://office.com), puis connectez-vous avec le nom de compte Utilisateur 2 et son nouveau mot de passe. Vous devriez voir s’afficher la page d’accueil **Office**.
 
-Consultez l’étape [Simplifier les réinitialisations de mot de passe](identity-password-reset.md) de la phase d’identification pour obtenir des informations et des liens qui vous permettront de configurer des réinitialisations de mot de passe en production.
+Consultez l’étape [Simplifier les réinitialisations de mot de passe](identity-password-reset.md#identity-pw-reset) de la phase d’identification pour obtenir des informations et des liens qui vous permettront de configurer des réinitialisations de mot de passe en production.
 
 ## <a name="next-step"></a>Étape suivante
 

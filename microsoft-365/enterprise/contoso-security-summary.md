@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Utilisation des fonctionnalités de sécurité sur Microsoft 365 Entreprise par Contoso.
-ms.openlocfilehash: 2cbabb04c79816684f4c566b92003bb64471d22b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 55ee8ff88490a82a9438b076bcebfab976f8baf6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289032"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Résumé de la sécurité de Microsoft 365 Entreprise pour Contoso Corporation
 
@@ -40,7 +40,7 @@ Contoso a suivi la procédure suivante pour préparer la sécurité pour son dé
 
 1. Limitation des comptes Administrateur pour le cloud
 
-   Contoso a effectué une révision complète des comptes Administrateur Windows Server AD existants et a configuré une série de groupes et de comptes Administrateurs dans le cloud.
+   Contoso a effectué une révision complète des comptes de services de domaine Active Directory d’administrateur(AD DS)existants et configuré une série de groupes et de comptes d’administrateurs du cloud.
 
 2. Analyse de la classification des données effectuée selon trois niveaux
 
@@ -62,7 +62,7 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
   Les administrateurs de la sécurité de Contoso ont attribué des rôles d’administrateur inférieurs aux comptes selon la fonction et les responsabilités du membre du service informatique en question.
 
-  Pour obtenir plus d’informations, consultez l’article [À propos des rôles d’administrateur Office 365](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+  Pour obtenir plus d’informations, consultez l’article [À propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 - Authentification multifacteur pour tous les comptes d’utilisateur
 
@@ -81,7 +81,7 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
 - Windows Defender Credential Guard
 
-  Pour bloquer les attaques ciblées et les programmes malveillants en cours d’exécution dans le système d’exploitation grâce à des privilèges administratifs, Contoso a activé [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)par le biais de la stratégie de groupe Windows Server AD.
+  Pour bloquer les attaques ciblées et les programmes malveillants en cours d’exécution dans le système d’exploitation grâce à des privilèges administratifs, Contoso a activé [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)par le biais de la stratégie de groupe AD DS.
 
 ## <a name="threat-protection"></a>Protection contre les menaces
 
@@ -95,9 +95,9 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
   Contoso a également activé l’enregistrement d’audit des boîtes aux lettres pour déterminer qui s’est connecté à des boîtes aux lettres utilisateur, a envoyé des messages, et les autres activités effectuées par le propriétaire de la boîte aux lettres, un utilisateur délégué ou un administrateur.
 
-- Surveillance et prévention des attaques avec Office 365 Threat Intelligence
+- Surveillance et prévention des attaques avec l’examen et réponse contre les menaces Office 365
 
-  Contoso utilise [Office 365 Threat Intelligence](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) pour protéger ses utilisateurs Office 365 en simplifiant l’identification et le traitement des attaques, et pour empêcher des attaques futures.
+  Contoso utilise [examen et réponse contre les menaces Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) pour protéger ses utilisateurs Office 365 en simplifiant l’identification et le traitement des attaques, et pour empêcher des attaques futures.
 
 - Protection contre les attaques sophistiquées avec Advanced Threat Analytics
 

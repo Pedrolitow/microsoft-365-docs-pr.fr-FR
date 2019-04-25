@@ -2,21 +2,21 @@
 title: Liste de vérification de préparation sur la responsabilité Dynamics 365 concernant le RGPD
 description: Permet d’accéder en toute simplicité aux informations dont vous pouvez avoir besoin pour prendre en charge le RGPD lorsque vous utilisez Dynamics 365.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 05/24/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: b358776da0d2cdd676ac79736efea1908cd2a961
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c175e10e15bb35993b5234a76b6f7ca61e03dd3a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283567"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Liste de vérification de préparation sur la responsabilité Dynamics 365 concernant le RGPD
 
@@ -99,7 +99,7 @@ Pour obtenir d’autres documents relatifs au RGPD, visitez la page https://aka.
 | Pays et organisations vers lesquels des données personnelles peuvent être transférées (7.5.2)         | Le client doit comprendre, et être en mesure de communiquer aux personnes concernées, les pays et les régions vers lesquels les données personnelles sont ou peuvent être transférées. Lorsqu’un tiers/responsable de traitement effectue ce transfert, le client doit obtenir ces informations du responsable de traitement.                                                                                                                                                  | Description des types de données personnelles transférées par les services Microsoft, des emplacements intermédiaires où elles sont transférées et des dispositifs de protection légaux utilisés pour le transfert.<br>- Informations clés de Dynamics 365 relatives aux analyses d’impact sur la protection des données client [2]                                                       | (30)(1)(e)                                      |
 | Enregistrements des transferts de données personnelles (7.5.3)                           | Le client doit tenir à jour l’ensemble des enregistrements nécessaires et requis en lien avec les transferts de données personnelles. Lorsque le transfert est réalisé par un tiers/responsable de traitement, le client doit s’assurer qu’il tient à jour les enregistrements appropriés et qu’il peut les obtenir si nécessaire.                                                                                                                                                    | Description des types de données personnelles transférées par les services Microsoft, des emplacements intermédiaires où elles sont transférées et des dispositifs de protection légaux utilisés pour le transfert.<br>- Informations clés de Dynamics 365 relatives aux analyses d’impact sur la protection des données client [2]                                                       | (30)(1)(e)                                      |
 | Enregistrements de divulgation de données personnelles à des tiers (7.5.4)                            | Le client doit comprendre les exigences relatives à l’enregistrement des personnes auxquelles des données personnelles ont été révélées. Cela peut inclure des informations divulguées aux autorités, etc. Lorsqu’un tiers/responsable de traitement divulgue des données, le client doit s’assurer que ce dernier conserve les enregistrements appropriés, et doit les obtenir, le cas échéant.                                                                                                 | Documentation fournie relative aux catégories de bénéficiaires des divulgations des informations personnelles, dont les enregistrements de divulgation disponibles.<br>- Qui peut accéder à vos données et dans quelles conditions [[7](gdpr-arc-Dynamics365.md#7)]                                                                                                              | (30)(1)(d)                                      |
-| Co-responsable du traitement (7.5.5)                                                      | Le client doit déterminer s’il est co-responsable du traitement avec une autre organisation, et documenter et définir correctement les responsabilités.                                                                                                                                                                                                                                                           | Dynamics 365 est un responsable de traitement de données personnelles.<br>- Conditions des services en ligne [1] <!-- look at this one -->consultez *Rôles et responsabilités du responsable de traitement et du contrôleur [1]*                                                                                                                                        | (26)(1), (26)(2), (26)(3)                       |
+| Co-responsable du traitement (7.5.5)                                                      | Le client doit déterminer s’il est co-responsable du traitement avec une autre organisation, et documenter et définir correctement les responsabilités.                                                                                                                                                                                                                                                           | Dynamics 365 est un responsable de traitement de données personnelles.<br>-Termes du contrat de Services en ligne [1] <!-- look at this one -->Consultez *Rôles et responsabilités du responsable de traitement et du contrôleur [1]*                                                                                                                                        | (26)(1), (26)(2), (26)(3)                       |
 |                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                    |                                                 |
 
 <br>

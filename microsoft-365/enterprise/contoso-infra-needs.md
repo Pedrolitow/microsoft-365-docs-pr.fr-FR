@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et les besoins métier pouvant être satisfaits par Microsoft 365 Entreprise.
-ms.openlocfilehash: b507d1a44edc0b31b2ac5a3f949ecd8a72913311
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: bd259f367cdf3417e32671457f248029c853b6f8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283675"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastructure informatique et besoins métier de Contoso
 
@@ -126,8 +126,8 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 |  | Accroître la créativité et l’innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sécurité |  |  |
 |  | Gestion des identités et des accès | Comptes Administrateur général dédiés avec l’authentification multifacteur (MFA) et Azure AD Privileged Identity Management (PIM) <BR> Authentification multifacteur pour tous les comptes d’utilisateur <BR> Accès conditionnel <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Protection avancée contre les menaces <BR> Office 365 - Protection avancée contre les menaces <BR> Intelligence des menaces d’Office 365 <BR> |
-|  | Protection des informations | Azure Information Protection (AIP) <BR> Protection contre la perte de données Office 365 (DLP) <BR> Protection des informations Windows <BR> Microsoft Cloud App Security <BR> Sécurité des applications cloud Office 365 (CAS) <BR> Microsoft Intune |
+|  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Protection avancée contre les menaces <BR> Office 365-Protection avancée contre les menaces <BR> Examen et réponse contre les menaces Office 365 <BR> |
+|  | Protection des informations | Azure Information Protection <BR> Protection contre la perte de données Office 365 (DLP) <BR> Protection des informations Windows <BR> Microsoft Cloud App Security <BR> Sécurité des applications cloud Office 365 (CAS) <BR> Microsoft Intune |
 |  | Gestion de la sécurité | Azure Security Center  <BR> Centre de sécurité Windows Defender |
 | Accès mobile et à distance, et partenaires professionnels |  |  |
 |  | Meilleure sécurité pour les travailleurs mobiles et à distance | Microsoft Intune |
