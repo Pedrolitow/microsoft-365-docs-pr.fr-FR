@@ -1,5 +1,5 @@
 ---
-title: Kit de laboratoire pour le déploiement et la gestion des ordinateurs de bureau modernes
+title: Kit laboratoire de déploiement Windows et Office
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,35 +12,35 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Découvrez le kit de laboratoire pour le déploiement et la gestion des ordinateurs de bureau modernes et comment y accéder.
-ms.openlocfilehash: 1423b0deb74d306cbbc0dc088fed9827ec01782c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
+ms.openlocfilehash: 2db50816f4a87007ce74fef934d3a4211cf4e905
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291099"
 ---
-# <a name="modern-desktop-deployment-and-management-lab-kit"></a>Kit de laboratoire pour le déploiement et la gestion des ordinateurs de bureau modernes
+# <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
 Ces laboratoires pratiques téléchargeables décrivent le déploiement de Windows 10 et le déploiement d’Office 365, ainsi que les éléments de gestion et de configuration connexes après le déploiement. Cette formation est vivement recommandée pour les organisations se préparant à la fin de vie de Windows 7, mais s’applique également si vous utilisez actuellement Windows 10 et Office 365 Plus ou Office 2019. Vous trouverez des guides pour Windows 10, Office 365 ProPlus, Enterprise Mobility + Security et des produits et services connexes.
 
-Ces laboratoires sont conçus pour vous aider à planifier, tester et valider le déploiement et la gestion de vos ordinateurs de bureau modernes exécutant Windows 10 Entreprise et Office 365 ProPlus. Les laboratoires décrivent les étapes et les outils présentés dans la solution de déploiement des ordinateurs de bureau modernes, couvrant Windows Analytics, Office Customization Tool, OneDrive, Windows Autopilot, etc.
+Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Office 365 ProPlus. Les ateliers couvrent les étapes et les outils décrites dans la roulette de déploiement de bureau, couvrant System Center Configuration Manager, Windows Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot et les autres aspects.
 
-Dans le cadre du processus de [déploiement des ordinateurs de bureau modernes](http://www.aka.ms/howtoshift) pour Windows 10 et Office 365 ProPlus, la création d’un environnement isolé ou bac à sable est le point de départ recommandé lorsque vous commencez à explorer les mises à jour de l’outil de déploiement et à tester l’automatisation liée au déploiement.
+Dans le cadre du processus du[déploiement des ordinateurs de bureau modernes](http://www.aka.ms/howtoshift) pour Windows 10 et Office 365 ProPlus, la création d’un environnement isolé ou bac à sable est le point de départ recommandé lorsque vous commencez à explorer les mises à jour de l’outil de déploiement et à tester l’automatisation liée au déploiement.
 
 Le kit de laboratoire est téléchargeable gratuitement et utilise un logiciel d’évaluation.
 
-[**TÉLÉCHARGER**](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[** Kit laboratoire de déploiement Windows et Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-**Un environnement complet de laboratoire**
+## <a name="a-complete-lab-environment"></a>**Un environnement complet de laboratoire**
 
 Le laboratoire offre un environnement de laboratoire virtuel automatiquement configuré, constitué de clients de bureau associés au domaine, d’un contrôleur de domaine, d’une passerelle Internet et d’une instance ConfigMgr entièrement configurée. Le laboratoire contient des versions d’évaluation des produits suivants :
 
-  - Windows 10 Entreprise, Version 1803
+  - Windows 10 Entreprise, Version 1809
   - Windows 7
-  - Office 365 ProPlus, Version 1807
+  - Office 365 ProPlus, Version 1901
   - System Center Configuration Manager, Version 1802
-  - Kit de déploiement et d’évaluation Windows 10, Version 1803
+  - Kit de déploiement et d’évaluation Windows 10, Version 1809
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Microsoft BitLocker Administration and Monitoring 2.5 SP1
@@ -55,39 +55,39 @@ Ou
   - Office 365 Entreprise E5
   - Enterprise Mobility + Security
 
-**Laboratoires détaillés**
+## <a name="step-by-step-labs"></a>**Laboratoires détaillés**
 
 Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion, notamment :
 
-**Préparation des applications et des appareils**
+### <a name="device-and-app-readiness"></a>**Préparation des applications et des appareils**
 
   - Windows Analytics
   - Mode Entreprise et liste des sites en mode Entreprise d’Internet Explorer
 
-**Préparation des répertoires et du réseau**
+### <a name="directory-and-network-readiness"></a>**Préparation des répertoires et du réseau**
 
   - Configuration de base pour Azure Active Directory et Microsoft 365
   - Optimisation du réseau à l’aide de l’optimisation de la distribution, cache d’homologue dans ConfigMgr et LEDBAT
-  - **NOUVEAUTÉ** Cogestion de ConfigMgr et de Microsoft Intune
-  - **NOUVEAUTÉ** Accès distant (VPN)
+  - Cogestion de ConfigMgr et de Microsoft Intune
+  - Accès distant (VPN)
 
-**Distribution d’Office et des applications métier**
+### <a name="office-and-lob-app-delivery"></a>**Distribution d’Office et des applications métier**
 
   - Déploiement d’Office 365 ProPlus à l’aide de System Center Configuration Manager
   - Déploiement d’Office 365 ProPlus à l’aide de Microsoft Intune
   - Gestion et déploiement de l’application à l’aide de Microsoft Intune
   - Déploiement de l’application et installation en libre-service à l’aide de Microsoft Store pour Entreprises
   - Conversion de l’application Pont du bureau en UWP
-  - **NOUVEAUTÉ** Kit de certification de l’application Windows
+  - Kit de certification des applications Windows
   - Correction de la compatibilité du navigateur à l’aide du Mode Entreprise pour IE
 
-**Migration des paramètres et du fichier utilisateur**
+### <a name="user-file-and-settings-migration"></a>**Migration des paramètres et du fichier utilisateur**
 
   - Outil de Migration du statut de l’utilisateur dans le cadre des séquences de tâches de remplacement et d’actualisation du PC dans ConfigMgr et MDT
   - Fonctionnalité Known Folder Move de OneDrive
   - Itinérance du statut Entreprise
 
-**Sécurité et conformité**
+### <a name="security-and-compliance"></a>**Sécurité et conformité**
 
   - Chiffrement de l’appareil BitLocker
   - Antivirus Windows Defender
@@ -99,7 +99,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
   - Windows Defender Application Control
   - Windows Defender Advanced Threat Protection
 
-**Déploiement du système d’exploitation et mises à jour des fonctionnalités**
+### <a name="os-deployment-and-feature-updates"></a>**Déploiement du système d’exploitation et mises à jour des fonctionnalités**
 
   - Création d’image du système d’exploitation
   - Séquences de tâches de déploiement du système d’exploitation dans ConfigMgr
@@ -111,21 +111,21 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
   - Mises à jour des fonctionnalités à l’aide des séquences de tâches de mise à niveau dans ConfigMgr
   - Windows Autopilot
 
-**Office et Windows as a Service**
+### <a name="windows-and-office-servicing"></a>**Maintenance de Windows et Office Servicing**
 
   - Gestion des mises à jour logicielles à l’aide du Gestionnaire de configuration
   - Gestion des mises à jour d’Office 365 ProPlus dans le Gestionnaire de configuration
   - Gestion des appareils mobiles appliquée à Windows 10 à l’aide de Microsoft Intune
 
-[**TÉLÉCHARGER**](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[** Kit laboratoire de déploiement Windows et Office**](https://aka.ms/mddlabs_evalcenter)
 
-*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et bénéficier d’une configuration automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go libres sont recommandés. Le laboratoire arrive à expiration le 9 décembre 2018. Une nouvelle version sera publiée avant l’expiration.*
+*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et bénéficier d’une configuration automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go libres sont recommandés. Le laboratoire arrive à expiration le 13 mai 2019. Une nouvelle version sera publiée avant l’expiration.*
 
-**Conseils supplémentaires**
+## <a name="additional-guidance"></a>**Conseils supplémentaires**
 
-  - [Centre de déploiement de bureau moderne](http://www.aka.ms/howtoshift)
+  - [Centre de déploiement du bureau moderne](http://www.aka.ms/howtoshift)
 
-  - [Vidéos de la série de déploiement des ordinateurs de bureau modernes de Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](http://www.aka.ms/watchhowtoshift)
 
   - [Déploiement du système d’exploitation de System Center Configuration Manager](https://docs.microsoft.com/fr-FR/sccm/osd/understand/introduction-to-operating-system-deployment)
 
@@ -135,7 +135,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
   - [<span class="underline">Mise en route d’Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
-> **Ressources connexes**
+## <a name="related-resources"></a>**Ressources connexes**
 
   - [<span class="underline">Présentation de Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
 

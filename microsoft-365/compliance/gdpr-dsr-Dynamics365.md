@@ -2,21 +2,21 @@
 title: Demandes des personnes concernées pour Dynamics 365 concernant le RGPD
 description: Le guide décrit comment utiliser les produits, les services et les outils d’administration de Microsoft pour aider les clients de notre contrôleur à rechercher des données personnelles et à prendre des mesures pour répondre aux demandes DSR.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: bcarter
+ms.date: 04/10/2019
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: e1c79ae466264e302b282244f477dafcc6b49afe
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5a7f347dc9b26b54cf6bc1fd3a6bdb55d46fe63
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285213"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées pour Dynamics 365 concernant le RGPD
 
@@ -78,7 +78,7 @@ Dans les articles ci-dessous, vous trouverez des informations qui vous aideront 
 
 Dynamics 365 est un service en ligne qui propose plusieurs fonctionnalités de traitement des données comme un service SaaS. Ainsi, Dynamics 365 offre un large éventail de fonctionnalités conçues pour traiter une collection diversifiée de données, pouvant varier par nature, objectif ou autres attributs spécifiques (données de ventes, transactions, données financières, informations de RH, etc.). Compte tenu de cette diversité, Dynamics 365 propose plusieurs formulaires, champs, schémas, points de terminaison et logiques pour traiter les données client, et ceci se reflète aussi dans les différentes façons qui permettent de traiter des demandes DSR dans chaque application. Lorsque des applications Dynamics 365 proposent plusieurs méthodes pour traiter des demandes DSR spécifiques, nous les noterons dans ce guide en pointant sur les descriptions techniques offertes par chaque application.
 
-### <a name="microsoft-dynamics-365"></a>Microsoft Dynamics 365
+### <a name="dynamics-365"></a>Dynamics 365
 #### <a name="finding-customer-data"></a>Consultation des données client
 
 La première étape pour répondre à une demande de droits de la personne concernée consiste à rechercher et identifier les données client faisant l’objet de la demande.
@@ -101,6 +101,8 @@ Dans Dynamics 365 for Marketing, vous disposez des fonctionnalités supplément
 
 2.  Utilisez les affichages Insight sur les contacts et les objets de l’exécution marketing pour identifier des points de données supplémentaires pouvant contenir des données client.
 
+La solution Dynamics 365 Customer Service Insights vous permet de répondre à des demandes de copie de données personnelles, de supprimer des données personnelles et de rechercher les données personnelles faisant l’objet de demandes de découverte d’objet de données (DSR). Pour plus d’informations, voir [Vue d’ensemble de la conformité au RGPD pour Dynamics 365 Customer Service Insights](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary).
+
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 Finance and Operations*** propose plusieurs méthodes qui vous permettent de rechercher des données client. En tant qu’administrateur client, vous pouvez effectuer les opérations suivantes pour rechercher des données client :
 
 -   Organisez vos données client de façon à découvrir rapidement des données personnelles, apprenez à [classer l’inventaire des données](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory) dans cet objectif.
@@ -114,6 +116,7 @@ Dans Dynamics 365 for Marketing, vous disposez des fonctionnalités supplément
 -   Créez un formulaire personnalisé qui localise et exporte les données personnelles.
 
 -   Créez un portail externe ou un site web qui permet à un client authentifié d’afficher ses données personnelles.
+
 
 ***Dynamics for Business Central*** propose plusieurs méthodes vous permettant de rechercher des données client. Pour obtenir plus d’informations, consultez l’article [Recherche, filtrage et tri des données](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters).
 

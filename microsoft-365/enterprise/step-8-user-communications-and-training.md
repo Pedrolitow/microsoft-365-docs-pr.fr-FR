@@ -12,17 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Découvrez comment préparer vos utilisateurs finaux à l’utilisation du bureau moderne à l’aide de la formation et des communications.
-ms.openlocfilehash: 7737828600a9708b0b422a1fada6e0296de67f0f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Découvrez comment préparer vos utilisateurs finaux à l’utilisation de Windows 10 et d’Office 365 ProPlus au travers d’une formation et de communications.
+ms.openlocfilehash: fb0dc2dfc571d61c9d480204d0e3e12c58cf3aca
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289908"
 ---
 # <a name="step-8-user-communications-and-training"></a>Étape 8 : formation et communications des utilisateurs
-
-Informez vos utilisateurs et préparez-les à l’utilisation des expériences proposées par l’espace de travail moderne sur Office 365 et Windows 10, et des nouveaux contrôles de sécurité et de conformité avec Azure Active Directory, entre autres.
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
@@ -31,21 +29,21 @@ Informez vos utilisateurs et préparez-les à l’utilisation des expériences p
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Étape 8 : formation et communication des utilisateurs</strong></p>
 <p>Pensez à informer vos utilisateurs des nouvelles expériences et nouveaux modes de travail avant de migrer vos PC vers Windows 10 et Office 365 ProPlus. Découvrez comment tirer parti de l’assistance à l’adoption utilisateur avec Microsoft FastTrack, des supports de formation et des modèles de communication, ainsi que des nouveaux moyens pour surveiller l’usage et l’acceptation des utilisateurs.</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->La formation et la communication des utilisateurs est la huitième étape de notre processus de déploiement recommandé. Elle propose des conseils pour informer et préparer les utilisateurs. Pour connaître l’ensemble du processus de déploiement de bureau, visitez le [centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
+>La formation et la communication des utilisateurs est la huitième étape de notre processus de déploiement recommandé. Elle propose des conseils pour informer et préparer les utilisateurs. Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
 >
 
-Tout l’art est de déterminer comment introduire des mises à jour quand certains utilisateurs peuvent se demander si elles affecteront leur productivité, si elles changeront leur flux de travail ou s’ils devront se former.
+Pour faciliter l’adoption, il est essentiel d’informer vos utilisateurs et de les préparer aux expériences proposées par l’espace de travail moderne sur Office 365 et Windows 10, ainsi qu’aux nouveaux contrôles de sécurité et de conformité avec Azure Active Directory. Tout l’art est de déterminer comment introduire des mises à jour quand certains utilisateurs peuvent se demander si elles affecteront leur productivité, si elles changeront leur flux de travail ou s’ils devront se former.
 
 La bonne nouvelle, c’est que si vous migrez de Windows 7 et d’Office 2010 ou 2013, un grand nombre de personnes seront déjà familiarisées avec Windows 10 et les versions plus récentes d’Office sur leurs appareils personnels. Les effets de ce changement seront ainsi moins importants.
 
 ## <a name="getting-ready-for-new-experiences"></a>Préparation aux nouvelles expériences
 
-Commençons par Office : si vous déployez Office 365 ProPlus pour la première fois, nous vous conseillons de communiquer les avantages dont peuvent profiter les utilisateurs en se connectant aux applications Office et en enregistrant des fichiers sur des emplacements OneDrive ou SharePoint, au niveau du partage et de la co-création en temps réel, et de la création de branche pour les fichiers.
+Commençons par Office : si vous déployez Office 365 ProPlus pour la première fois, nous vous conseillons de communiquer les avantages dont peuvent profiter les utilisateurs en se connectant aux applications Office et en enregistrant des fichiers sur des emplacements OneDrive ou SharePoint, au niveau du partage et de la co-édition en temps réel, ainsi que de la création de branche pour les fichiers.
 
 Des modèles de communication et de formation détaillés sont disponibles pour ces applications locales ou basées sur navigateur, à l’instar de Teams et du Planificateur.
 
@@ -91,7 +89,7 @@ Pendant la phase pilote initiale, il est important de pouvoir compter sur des me
 
 Quand le déroulement de la première phase devient satisfaisant, vous pouvez cibler un groupe d’utilisateurs plus important pour lancer votre deuxième phase pilote. Ce groupe devrait être composé de différents rôles utilisateurs, types d’appareils, applications Windows et compléments Office. Les données collectées auprès de ces groupes serviront à Analytics pour cibler les changements initiaux de la phase 3 du déploiement à grande échelle.
 
-Pendant cette phase et les phases futures, n’oubliez pas que tous les PC doivent être connectés au service Analytics, pour collecter des données de télémétrie sur l’état des applications et des appareils, ainsi que sur les économies de bande passante obtenus grâce à l’Optimisation de la distribution et à l’utilisation de la connexion Windows Hello.
+Pendant cette phase et les phases futures, n’oubliez pas que tous les PC doivent être connectés au service Analytics pour collecter des données de diagnostic sur l’état des applications et des appareils, ainsi que sur les économies de bande passante obtenues grâce à l’Optimisation de la distribution et à l’utilisation de la connexion Windows Hello.
 
 Pendant cette phase, il est particulièrement important de communiquer les changements et d’aider les utilisateurs à tirer parti des nouvelles fonctionnalités. Les utilisateurs peuvent souvent accorder une priorité moins importante aux e-mails ou aux autres communications provenant de l’équipe informatique, voire les ignorer. Il peut être utile de rencontrer les responsables d’équipe pour qu’ils vous aident à communiquer les changements et à encourager l’utilisation des nouveaux outils et technologies auprès des utilisateurs.
 
@@ -123,14 +121,14 @@ Ces services et composants peuvent être peaufinés pendant la phase pilote. Qua
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>Phase 3 et plus : déploiement de production à grande échelle 
 
-Quand vous aurez atteint les phases de déploiement à grande échelle, vos processus, votre communication, votre formation et vos outils libre-service devraient être bien peaufinés. Alors, vous pourrez utiliser les données de télémétrie collectées pour cibler d’autres PC.
+Avant d’atteindre les phases de déploiement à grande échelle, vous aurez affiné vos processus, votre communication, votre formation et vos outils en libre-service. Vous pourrez ensuite utiliser les données de diagnostic collectées pour cibler de plus en plus de PC.
 
 Nous vous recommandons d’adopter un rythme de déploiement gérable par votre service informatique, votre support technique, vos utilisateurs et votre capacité réseau. Vous pouvez toujours revenir à l’étape 2 du processus de déploiement pour mieux optimiser votre réseau à l’aide du cache d’homologue, de LEDBAT et d’autres techniques pour transférer plus rapidement les données liées au déploiement.
 
-En plus des données de télémétrie surveillées via les outils d’analyse, vous pouvez également surveiller l’utilisation des services Office 365 et Microsoft 365 de manière précise en lisant les rapports d’utilisation détaillées par charge de travail dans le centre d’administration et en consultant les tableaux de bord d’administration via Power BI. Ce sont des outils pratiques pour définir et poursuivre des objectifs pendant le déploiement de nouveaux outils de collaboration, comme Microsoft Teams, ou de partage de fichiers, comme OneDrive.
+En plus des données de diagnostic que vous surveillez via les outils d’analyse, vous pouvez surveiller l’utilisation des services Office 365 et Microsoft 365 de manière granulaire, avec les rapports d’utilisation détaillés par charge de travail du centre d’administration et à l’aide des tableaux de bord d’administration accessibles via Power BI. Ces excellents outils vous aident à définir et à suivre vos objectifs lorsque vous déployez de nouveaux outils de collaboration, tels que Microsoft Teams, ou de nouvelles méthodes de partage de fichiers, telles que OneDrive.
 
 L’acceptation et l’adoption de la nouvelle technologie prendra du temps, une fois que Windows 10 et Office 365 ProPlus seront installés sur tous les PC de votre organisation. De plus, les utilisateurs ne changeront pas forcément leurs habitudes de travail si vous ne prenez pas le temps de les informer et de les former à l’utilisation des nouvelles fonctionnalités. Enfin, la communication devra être continue dans la mesure où les nouveaux modèles de service fournissent des nouvelles fonctionnalités deux fois par an pour Windows et, facultativement, tous les mois pour Office.
 
 ## <a name="previous-step"></a>Étape précédente 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[Étape 7 : Windows et Office as a Service](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Étape 7 : maintenance de Windows et d’Office](https://aka.ms/mdd7)

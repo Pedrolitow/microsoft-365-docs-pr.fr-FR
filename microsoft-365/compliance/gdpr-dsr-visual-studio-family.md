@@ -4,21 +4,21 @@ description: Demandes des personnes associées aux données pour Visual Studio F
 keywords: Visual Studio, Visual Studio Code, Visual Studio pour Mac, documentation Visual Studio, confidentialité, RGPD
 localization_priority: Priority
 audience: itpro
-ms.prod: visual-studio
+ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
 author: PoulChapman
-ms.author: pchapman
-manager: scalla
+ms.author: olholder
+manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bba28648cbee6dd32c2005bcb584e97a4c534e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286922"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Demandes des personnes associées aux données pour Visual Studio Family concernant le RGPD
 
@@ -101,7 +101,7 @@ Les commentaires publics incluent les problèmes signalés, les commentaires et 
 
 Pour afficher les données liées à vos commentaires, procédez comme suit :
 
-1. Connectez-vous à [Communauté des développeurs](https://developercommunity.visualstudio.com). Dans le coin supérieur droit, cliquez sur votre profil, puis sélectionnez **Profil et préférences**.
+1. Connectez-vous à [Communauté de développeurs](https://developercommunity.visualstudio.com). Dans l’angle supérieur droit, cliquez sur votre profil, puis sélectionnez **Profil et préférences**.
 2. Cliquez sur les onglets **Profil**, **Notifications**, **Activité** et **Pièces jointes** pour afficher les données envoyées aux systèmes de commentaires.
    1. **Profil** fait référence à votre profil [Communauté des développeurs](https://developercommunity.visualstudio.com), notamment le nom d’utilisateur, l’adresse e-mail, les informations générales, etc.
    2. **Notifications** vous permet de contrôler les notifications électroniques que vous recevez.
@@ -121,7 +121,7 @@ Vous pouvez exporter vos données de commentaires dans le cadre de la DSR. Nous 
 
 Pour commencer une exportation, procédez comme suit :
 
-1. Connectez-vous à [Communauté des développeurs](https://developercommunity.visualstudio.com). Dans le coin supérieur droit, cliquez sur votre profil, puis sélectionnez **Profil et préférences**.
+1. Connectez-vous à [Communauté de développeurs](https://developercommunity.visualstudio.com). Dans l’angle supérieur droit, cliquez sur votre profil, puis sélectionnez **Profil et préférences**.
 2. Cliquez sur l’onglet **Confidentialité**, puis cliquez sur **Créer une archive** pour demander l’exportation de vos données.
 3. **État d’archivage** est actualisé pour montrer que nous préparons les données. Le délai avant que les données soient disponibles dépend de la quantité de données à exporter.
 4. Une fois que les données sont prêtes, nous vous envoyons un e-mail.

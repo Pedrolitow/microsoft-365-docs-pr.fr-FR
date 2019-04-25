@@ -3,36 +3,35 @@ title: 'Phase 1 : Critères de sortie de l’infrastructure réseau'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure réseau.
-ms.openlocfilehash: 8161fa2b92ffb4c7c4713e9356c0bc1bfec39d07
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9ea601d66ef2df0d7a4efde188a70c51e3fb9f60
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291366"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Phase 1 : Critères de sortie de l’infrastructure réseau
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Si votre infrastructure réseau respecte les conditions suivantes, vous pouvez passer à l’étape 2.
+Vérifiez que votre infrastructure réseau répond aux critères requis suivants et que vous avez pris en considération les critères facultatifs.
 
 <a name="crit-networking-step1"></a>
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatoire : votre réseau est prêt pour Microsoft 365 Entreprise
 
-- Vos bureaux ont une bande passante Internet adéquate pour le trafic Microsoft 365, y compris les mises à jour et l’installation d’Office 365, Microsoft Intune, Windows 10 Entreprise
-- Bureaux centraux pour tout le trafic Internet général
-- Succursales pour le trafic de point de terminaison de catégorie Optimiser
+- Vos bureaux ont une bande passante Internet adéquate pour le trafic Microsoft 365, y compris les mises à jour et l’installation d’Office 365, de Microsoft Intune et de Windows 10 Entreprise
 - Votre réseau général est aligné avec une architecture de référence Office 365
+- Les modifications de votre réseau ont été testées et répondent aux exigences en matière de latence du trafic 
 
 Si nécessaire, l’[Étape 1](networking-provide-bandwidth-cloud-services.md) peut vous aider à répondre à cette exigence.
 
@@ -76,10 +75,12 @@ Si nécessaire, l’[Étape 4](networking-configure-proxies-firewalls.md) peut v
 
 Vous avez optimisé les paramètres TCP sur vos appareils client et pour les services Exchange Online, Skype Entreprise Online, SharePoint Online et Project Online.
 
-Si nécessaire, l’[Étape 5](networking-optimize-tcp-performance.md) peut vous aider avec cette option.
+Si nécessaire, l’[Étape 5](networking-optimize-tcp-performance.md) peut vous aider avec cette option.
 
-## <a name="next-phase"></a>Phase suivante
+## <a name="results-and-next-steps"></a>Résultats et étapes suivantes
+
+Les utilisateurs de votre intranet sont désormais prêts à utiliser les services de cloud computing de Microsoft 365 via un chemin de mise en réseau efficace vers et sur Internet.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Votre phase suivante dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise est [identité](identity-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Si vous suivez les phases de déploiement de bout en bout de Microsoft 365 Entreprise, la prochaine phase est l’[identité](identity-infrastructure.md). |

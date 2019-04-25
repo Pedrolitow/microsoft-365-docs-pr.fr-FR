@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment migrer des paramètres et des fichiers utilisateur.
-ms.openlocfilehash: 51811cf972328cc26687b45fb65e2bdd6d58af1f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: cb5d670d06b284bb9191447ce461835728223f27
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291731"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Étape 4 : migration des paramètres et des fichiers utilisateur
 
-Transférer des paramètres et des fichiers utilisateur vers son nouveau PC ou son PC mis à jour est un processus critique, l’échec est exclu. Vous pouvez migrer chaque PC manuellement ou choisir l’une des manières suivantes pour automatiser le processus. Quelle que soit la méthode de migration sélectionnée, choisissez trois éléments à traiter : le transfert des fichiers utilisateur, leurs paramètres et la gestion des mises en page de la barre des tâches et du démarrage de Windows 10.
+Le déplacement de fichiers et paramètres d’utilisateurs vers des ordinateurs nouveaux ou actualisés est un processus critique. Tout échec est exclu. Vous pouvez migrer chaque PC manuellement ou choisir l’un des modes d’automatisation du processus. Quelle que soit la méthode de migration choisie, vous devez prendre en compte trois grands aspects : le transfert des fichiers et paramètres des utilisateurs, la gestion du démarrage de Windows 10 et la disposition de la barre des tâches.
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
@@ -36,7 +36,7 @@ Transférer des paramètres et des fichiers utilisateur vers son nouveau PC ou s
 </table>
 
 >[!NOTE]
->Même si vous pouvez continuer à utiliser le processus de migration que vous avez utilisé dans le passé, en raison de votre migration vers Office 365 ProPlus, nous vous recommandons d’utiliser la fonction « Known Folder Move » de OneDrive (voir ci-après). Pour afficher l’ensemble du processus de déploiement de bureau, visitez le [centre de déploiement de bureau moderne](https://aka.ms/HowToShift).
+>Même si vous pouvez continuer à utiliser le processus de migration que vous avez utilisé dans le passé, en raison de votre migration vers Office 365 ProPlus, nous vous recommandons d’utiliser la fonction « Known Folder Move » de OneDrive (voir ci-après). Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
 >
 
 L’une des tâches les plus délicates et souvent les plus manuelles d’un déploiement à grande échelle est le transfert des fichiers et des paramètres de vos utilisateurs. Dans cet article, nous allons aborder les options disponibles pour migrer les utilisateurs vers de nouveaux PC, des PC actualisés et remis en image.

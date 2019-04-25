@@ -3,22 +3,22 @@ title: Protection des informations de Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise les fonctionnalités de protection des informations dans Microsoft 365 Entreprise pour sécuriser ses biens numériques dans le cloud.
-ms.openlocfilehash: 2f6619aa3c6051696644b055e6c766525ad3a26d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f0869dfd661ae4dbaed74fdfd660c863deb20175
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276112"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
@@ -45,9 +45,9 @@ Le tableau suivant répertorie les stratégies de traitement des informations de
 |||||
 |:-------|:-----|:-----|:-----|
 |  | **Accès** | **Rétention des données** | **Protection des informations** |
-| Niveau 1 : valeur commerciale faible (ligne de base) | Autoriser l’accès pour tous  | 6 mois | Utiliser le chiffrement |
-| Niveau 2 : valeur commerciale moyenne (sensible) | Autoriser l’accès aux collaborateurs, aux sous-traitants et aux partenaires de Contoso <BR> <BR> Utiliser l’authentification multifacteur (MFA), le protocole TLS (Transport Layer Security) et la gestion des applications mobiles (MAM) | 2 ans  | Utiliser les valeurs de hachage pour l’intégrité des données  |
-| Niveau 3 : valeur commerciale élevée (hautement réglementé) | Autoriser l’accès aux cadres et aux responsables des équipes techniques et de fabrication <BR> <BR> Système RMS avec les périphériques réseau gérés uniquement  | 7 ans  | Utiliser des signatures numériques pour la non-répudiation des données  |
+| Valeur commerciale faible (Niveau 1: Ligne de base) | Autoriser l’accès pour tous  | 6 mois | Utiliser le chiffrement |
+| Valeur commerciale moyenne (Niveau 2: Sensible) | Autoriser l’accès aux collaborateurs, aux sous-traitants et aux partenaires de Contoso <BR> <BR> Utiliser l’authentification multifacteur (MFA), le protocole TLS (Transport Layer Security) et la gestion des applications mobiles (MAM) | 2 ans  | Utiliser les valeurs de hachage pour l’intégrité des données  |
+| Valeur commerciale élevée (Niveau 3 : hautement réglementé) | Autoriser l’accès aux cadres et aux responsables des équipes techniques et de fabrication <BR> <BR> Système RMS avec les périphériques réseau gérés uniquement  | 7 ans  | Utiliser des signatures numériques pour la non-répudiation des données  |
 |||||
 
 ## <a name="contosos-path-to-information-protection-with-microsoft-365-enterprise"></a>Chemin d’accès de Contoso vers la protection des informations avec Microsoft 365 Entreprise
@@ -64,19 +64,19 @@ Contoso a utilisé les étapes suivantes pour préparer Microsoft 365 Entrepris
 
 3. Création des étiquettes Azure Information Protection et de leurs paramètres pour différents niveaux d’informations
 
-   Contoso a modifié les étiquettes Azure Information Protection par défaut avec les titres correspondant à leurs niveaux de données, et a configuré les étiquettes Sensible et Hautement réglementé pour chiffrer avec la clé cloud Azure. La société a créé des sous-étiquettes de l’étiquette Hautement réglementé pour des types spécifiques de données commerciales secrètes, et a limité leur accès aux recherches et aux groupes de développement spécifiques. Contoso a également déployé le client Azure Information Protection sur tous les périphériques et PC Windows.
+   Contoso a créé les étiquettes sensibilité pour leurs niveaux de données sensibles et l’étiquette hautement rigoureuses, y compris le chiffrement, les autorisations et les filigranes.
 
 4. Création de sites SharePoint Online protégés pour les données sensibles et hautement réglementés avec des autorisations qui verrouillent l’accès
 
-   Les sites sensibles et hautement réglementés ont été configurés comme [sites isolés](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites), dans lesquels les autorisations de site d’équipe SharePoint Online par défaut ont été personnalisées en groupes Azure AD. Les sites SharePoint Online sensibles et hautement réglementés ont aussi été configurés avec une étiquette Office 365 par défaut. Les fichiers stockés sur des sites SharePoint Online hautement réglementés sont protégés avec une sous-étiquette Azure Information Protection (AIP) d’une stratégie étendue. Pour plus d’informations, consultez le scénario [Sites SharePoint Online et Microsoft Teams pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md).
+   Les sites sensibles et hautement réglementés ont été configurés en tant que [sites isolés](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites) dans lesquels les autorisations de site d’équipe SharePoint Online par défaut ont été personnalisées à des groupes Azure Active Directory Domain Service (Azure AD).  Les sites SharePoint Online sensibles et hautement rigoureuses ont été également configurés avec une étiquette de rétention correspondante. Les fichiers stockés sur des sites SharePoint Online hautement rigoureuses sont protégés avec l’étiquette de la sensibilité hautement rigoureuses. Pour plus d’informations, consultez le scénario[Sites SharePoint Online et Microsoft Teams pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 5.  Migration des données de partages de fichiers et de sites SharePoint locaux vers leurs nouveaux sites SharePoint Online
 
-    Les fichiers migrés vers les nouveaux sites SharePoint Online ont hérité des étiquettes Office 365 par défaut attribuées au site.
+    Les fichiers migrés vers les nouveaux sites SharePoint Online ont hérité des étiquettes de rétention par défaut attribuées au site.
 
 6.  Formation des employés sur la façon d’utiliser les étiquettes Azure Information Protection pour les nouveaux documents, d’interagir avec les services informatiques Contoso lors de la création de nouveaux sites SharePoint Online, et de toujours stocker les biens numériques sur les sites SharePoint Online
 
-    Cette partie étant considérée comme la plus difficile de la transition en protection des informations pour le cloud, les services informatiques et de gestion de Contoso ont dû modifier les mauvaises habitudes de stockage des informations des employés de l’organisation pour toujours étiqueter leurs biens numériques et ne jamais utiliser de partages de fichiers locaux.
+    Cette partie étant considérée comme la plus difficile de la transition en protection des informations pour le cloud, les services informatiques et de gestion de Contoso ont dû modifier les mauvaises habitudes de stockage des informations des employés de l’organisation pour toujours étiqueter leurs biens numériques et ne jamais utiliser de partages de fichiers locaux tiers ou de clés USB.
 
 ## <a name="conditional-access-policies-for-information-protection"></a>Stratégies d’accès conditionnel régissant la protection des informations
 
@@ -98,7 +98,7 @@ La figure 1 indique le jeu de résultats des stratégies de protection des info
 
 Ces stratégies vous assurent que :
 
-- les stratégies de protection des applications définissent les applications autorisées et les actions qu’elles peuvent effectuer avec les données de votre organisation ;
+- Les applications sont permises et les stratégies de protection des applications définissent les applications autorisées et les actions qu’elles peuvent effectuer avec les données de votre organisation.
 - les PC et les périphériques mobiles sont conformes ;
 - Exchange Online utilise le chiffrement de messages Office 365 pour Exchange Online ;
 - SharePoint Online utilise des restrictions d’application appliquées ;
@@ -111,9 +111,9 @@ Le tableau suivant décrit le mappage des niveaux de données de Contoso aux fon
 |||||
 |:-------|:-----|:-----|:-----|
 | | **Office 365** | **Windows 10 et Office 365 ProPlus** | **EMS** |
-| Niveau 1 : ligne de base  | Stratégies d’accès conditionnel à SharePoint Online et à Exchange Online <BR> Autorisations sur les sites SharePoint Online | Client Azure Information Protection <BR> BitLocker <BR> Protection des informations Windows | Stratégies d’accès conditionnel aux périphériques et stratégies de gestion des applications mobiles |
-| Niveau 2 : hautement sensible | Niveau 1 : ligne de base plus : <BR> <BR> Étiquettes Azure Information Protection <BR> Étiquettes Office 365 sur les sites SharePoint Online <BR> Protection contre la perte de données Office 365 pour SharePoint Online et Exchange Online <BR> Sites SharePoint Online isolés  | Niveau 1 : ligne de base plus : <BR> <BR> Étiquettes Azure Information Protection sur les biens numériques <BR> Gouvernance des données avancée Office 365 | Niveau 1 : ligne de base |
-| Niveau 3 : hautement réglementé | Niveau 2 : hautement sensible plus : <BR><BR> Chiffrement Bring Your Own Key (BYOK) et protection des informations commerciales secrètes <BR> Azure Key Vault pour les applications métier qui interagissent avec les services Office 365 | Niveau 2 : hautement sensible | Niveau 1 : ligne de base |
+| Niveau 1 : ligne de base  | Stratégies d’accès conditionnel à SharePoint Online et à Exchange Online <BR> Autorisations sur les sites SharePoint Online | Étiquettes de niveau de confidentialité <BR> BitLocker <BR> Protection des informations Windows | Stratégies d’accès conditionnel aux périphériques et stratégies de gestion des applications mobiles |
+| Niveau 2 : Sensible | Niveau 1 plus : <BR> <BR> Étiquettes de niveau de confidentialité <BR> Étiquettes Office 365 sur les sites SharePoint Online <BR> Protection contre la perte de données Office 365 pour SharePoint Online et Exchange Online <BR> Sites SharePoint Online isolés  | Niveau 1 plus : <BR> <BR> Étiquettes de sensibilité sur les biens numériques <BR> Gouvernance des données avancée Office 365 | Niveau 1 |
+| Niveau 3 : hautement réglementé | Niveau 2 plus : <BR><BR> Chiffrement Bring Your Own Key (BYOK) et protection des informations commerciales secrètes <BR> Azure Key Vault pour les applications métier qui interagissent avec les services Office 365 | Niveau 2 | Niveau 1 |
 |||||
 
 

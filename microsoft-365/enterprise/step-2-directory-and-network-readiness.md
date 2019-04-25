@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment évaluer l’état de préparation des répertoires et du réseau dans votre environnement.
-ms.openlocfilehash: e690e99110e647ffc06c9ff7d40b789d8670e571
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 93a0e66159a4d9ea275765beec42ea92bff63feb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290669"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Étape 2 : préparation des répertoires et du réseau
 
@@ -36,7 +36,7 @@ Vérifiez que votre répertoire et le réseau sont configurés et prêts pour la
 </table>
 
 >[!NOTE]
->La préparation des répertoires et du réseau est la deuxième étape de notre processus de déploiement recommandé. Elle s’articule autour d’Azure Active Directory et l’optimisation du réseau. Pour connaître l’ensemble du processus de déploiement de bureau, accédez au [centre de déploiement de bureau moderne](https://aka.ms/HowToShift).
+>La préparation des répertoires et du réseau est la deuxième étape de notre processus de déploiement recommandé. Elle s’articule autour d’Azure Active Directory et l’optimisation du réseau.  Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement de bureau](https://aka.ms/HowToShift).
 >
 
 La préparation des répertoires et du réseau est fondamentale pour garantir un déploiement fluide du système d’exploitation et du bureau. Comme dans tout déploiement automatisé, il est important de vérifier que vos partages de fichiers sont accessibles et que votre réseau pourra supporter le transfert de fichiers très volumineux vers des centaines voire des milliers de PC en même temps.
@@ -47,25 +47,25 @@ Dans cet article, nous allons explorer les outils et les options pour préparer 
 
 ## <a name="adding-azure-active-directory"></a>Ajout d’Azure Active Directory
 
-Si votre organisation utilise Office 365, Exchange Online, Microsoft Intune ou d’autres services Microsoft Online, vous utilisez probablement déjà Azure Active Directory. Dans ce cas, vérifiez que les utilisateurs ciblés pour le déploiement du bureau figurent dans votre répertoire Azure Active Directory et que les licences ont été affectées.
+Si votre organisation utilise déjà Office 365, Exchange Online, Microsoft Intune ou les autres services Microsoft Online, la bonne nouvelle est que vous utilisez déjà Azure Active Directory. Si c’est le cas, vous devez vous assurer que les utilisateurs que vous ciblez pour le déploiement Bureau soient dans votre Azure Active Directory et disposent de licences.
 
-Si vous n’utilisez pas Azure Active Directory, il existe [un grand nombre de ressources](https://docs.microsoft.com/fr-FR/azure/active-directory/) pour vous aider à le configurer. Vous pouvez également bénéficier d’une aide personnalisée via Microsoft FastTrack, comprise dans votre licence Office 365. Pour en savoir plus sur Microsoft Fastrack, cliquez [ici](https://fasttrack.microsoft.com).
+Si vous n’utilisez pas actuellement Azure Active Directory, il existe des[nombreux ressources ](https://docs.microsoft.com/fr-FR/azure/active-directory/) pour vous aider à le configurer. Vous pouvez également bénéficier d’une assistance personnalisée via Microsoft FastTrack, dans le cadre de votre licence Office 365. Vous pouvez vérifier plus d’informations sur Microsoft Fastrack [ici](https://fasttrack.microsoft.com).
 
 Une fois Azure Active Directory configuré, vos utilisateurs peuvent se connecter aux applications Office 365 ProPlus et les activer. Vous pouvez aussi utiliser le déploiement Microsoft Intune ou Windows Autopilot pour déployer automatiquement des applications et des stratégies.
 
 ## <a name="network-readiness"></a>Préparation du réseau
 
-Il est crucial d’évaluer les besoins en bande passante quand vous planifiez vos déploiements. Lors d’un déploiement, vous devez prendre en comptre trois composants clés qui influeront sur votre réseau : l’imagerie PC, les mises à jour logicielles et la personnalisation utilisateur. Au total, ces trois composants peuvent représenter plus de 20 Go par PC pour la migration initiale, et 1 Go ou plus par mois par PC pour les mises à jour.
+Vous devez envisager les besoins en bande passante lorsque vous planifiez vos déploiements. Il existe trois composants principaux dans un déploiement qui a également un impact sur votre réseau – IMAGERIE PC, les mises à jour logicielles et la personnalisation de l’utilisateur. Entre eux, cela peut signifier plus 20 Go par PC pour la migration initiale et souvent 1 Go ou plus, le paiement mensuel par PC pour rester informé.
 
 Penchons-nous quelques instants sur la configuration requise pour chacun de ces trois composants :
 
 ### <a name="pc-imaging"></a>Imagerie PC
 
-Le graphique ci-dessous vous permet de définir votre planification en fonction de la taille de l’image. Pour les images Windows sans personnalisation, prévoyez 3 Go par PC, tandis que pour les images personnalisées avec des applications, envisagez 6 Go voire plus. Prenez également en compte les packages de pilotes ; ils peuvent représenter quelques centaines de mégaoctets par PC, parfois jusqu’à 1 Go.
+Pour les Images Windows sans personnalisation, vous devez planifier généralement pour 3 Go par PC, tandis que pour les images avec des applications personnalisées, vous devez autoriser 6 Go ou plus. Vous devrez peut-être également prendre en considération les packages de pilote ; Il peuvent être quelques centaines mégaoctets par PC, parfois jusqu'à 1 Go.
 
 ### <a name="software-updates"></a>Mises à jour logicielles
 
-Il est important de planifier la bande passante réseau requise pour les mises à jour logicielles. Windows 10 et Office 365 ProPlus utilisent un nouveau modèle de service qui fournit des mises à jour mensuelles et semestrielles. Si vous ne connaissez pas ce modèle, vous pouvez en apprendre davantage sur son fonctionnement [ici](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-overview).
+Vous devez planifier la bande passante de réseau pour les mises à jour de logiciel. Windows 10 et Office 365 ProPlus utilisent un nouveau modèle de service fournissant des mises à jour mensuelles et semestrielles. Si vous utilisez ce modèle, vous pouvez en apprendre davantage sur le fonctionnement [ici](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-overview).
 
 Le nouveau modèle de service propose des mises à jour de fonctionnalité semestrielles pour Windows, des mises à jour de canal semestrielles et des mises à jour de qualité mensuelles. Les mises à jour de fonctionnalité représentent généralement 2-4 Go et les mises à jour de canal Office semestrielles correspondent à 300-400 Mo par mise à jour. Quant aux mises à jour de qualité mensuelles, elles peuvent représenter entre quelques centaines de mégaoctets et un gigaoctet ou plus. Comme ces mises à jour mensuelles sont cumulatives, leur taille augmente pendant toute la durée de service de chaque version de Windows 10. Des outils peuvent vous aider à réduire le volume de données qui transitent sur le réseau pour implémenter les mises à jour. Nous aborderons ce sujet plus en détail plus loin dans cet article.
 
@@ -103,29 +103,29 @@ Les options pair à pair sont progressivement utilisées dans les migrations de 
 
 **BranchCache** peut vous aider à télécharger du contenu dans des environnements distribués sans saturer le réseau. Il propose deux options : le mode Cache hébergé, qui vous permet d’utiliser des serveurs locaux pour mettre en cache du contenu, et le mode Cache distribué (mode pris en charge dans le System Center Configuration Manager), qui permet aux clients de partager du contenu déjà téléchargé entre eux.
 
-**Cache d’homologue** Les clients pris en charge par le System Center Configuration Manager peuvent également utiliser le Cache d’homologue. Ainsi, les PC fiables disponibles sur le réseau peuvent héberger la source du contenu pour la distribuer. Nous vous conseillons de ne pas activer cette option sur tous vos PC. (Ciblez uniquement les PC avec des connexions réseau fiables, tels que des ordinateurs de bureau, des tours ou des minitours). Le Cache d’homologue peut même travailler sur les tâches de déploiement exécutées dans les phases de l’environnement de préinstallation Windows (WinPE) pendant la configuration.
+**Cache de l’homologue**les clients pris en charge par System Center Configuration Manager peuvent également établir l’utilisation de Cache homologue. Cela permet aux PC fiable disponibles sur le réseau pour un source hôte pour la distribution de contenu. Vous ne voulez pas activer ceci à tous vos PC : ciblez uniquement les appareils avec des connexions de réseau fiable comme hôtes (par exemple, ordinateur de bureau, mini tour ou tour PC). Le Cache homologue peut travailler même pour les tâches de déploiement en cours d’exécution en phases de l’environnement de pré-installation Windows (WinPE) pendant l’installation.
 
 Remarque : BranchCache et le cache d’homologue sont complémentaires et peuvent travailler ensemble dans le même environnement.
 
 [BranchCache et cache d’homologue](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Optimisation de la distribution** L’Optimisation de la distribution est une autre technologie de mise en cache pair à pair, qui fournit des contrôles réseau pour les déploiements de Windows. L’Optimisation de distribution Windows 10 vous permet de mettre à jour les applications UWP intégrées et d’installer les applications provenant de la Boutique Microsoft et les mises à jour logicielles à l’aide des mises à jour expresses. Cette technologie est disponible depuis les versions antérieures de Windows 10, même si elle a récemment été intégrée avec le System Center Configuration Manager. Depuis la publication des nouvelles options de configuration de la version 1803 de Windows 10, vous pouvez définir séparément des limites de bande passante pour les mises à jour en arrière-plan et les tâches de premier plan, telles que l’installation d’une application à partir de la Boutique.
+**Optimisation de la remise** l’optimisation de remise est une autre technologie paire à paire de mise en cache, en fournissant les contrôles de réseau pour les déploiements. Optimisation de remise Windows 10 pour mettre à jour les applications intégrées UWP, également pour installer les applications sur le Microsoft Store et les mises à jour du logiciel à l’aide des mises à jour Express. Il a été disponible depuis les versions antérieures de Windows 10, même si elle a récemment intégré avec System Center Configuration Manager. Étant donné que les nouvelles options de configuration Windows 10 version 1803 signifie que vous pouvez désormais séparément des limites de bande passante pour les mises à jour en arrière-plan et les travaux de premier plan par exemple, une installation d’application à partir du Store. Désormais, l’optimisation de la remise Windows prend en charge également Office 365 ProPlus pendant client mises à jour, disponibles dans l’ensemble des canaux de mise à jour pris en charge du client Office 365. La prise en charge pour l’optimisation de remise Windows pendant l’installation initiale du client Office 365 sera prochainement disponible.  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
 **Autres considérations liées à Office 365 ProPlus**
 
-Voici trois éléments qui réduiront votre charge réseau pendant les déploiements d’Office 365 ProPlus.
+Outre l’optimisation de la remise en exploitant, Voici trois éléments qui vous aideront à réduire la charge votre réseau en raison de déploiements d’Office 365 ProPlus.
 
 **Compression Delta binaire** Office 365 ProPlus utilise la Compression Delta binaire pour réduire la bande passante consommée par les mises à jour logicielles de la version la plus récente d’Office 365 ProPlus vers la version suivante. En chargeant uniquement les modifications au niveau binaire à partir de la version précédente, vous réduisez l’impact des mises à jour cumulatives qui s’enrichissent de mois en mois. Ainsi, vous économisez plusieurs centaines de mégaoctets de données par PC tous les mois. Cependant, pour utiliser cette fonctionnalité, vous ne pouvez pas sauter une version sinon la mise à jour cumulative complète doit être téléchargée.
 
 [Téléchargement des mises à jour pour Office 365](https://docs.microsoft.com/fr-FR/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
-**Fichiers de données Outlook** Outlook est souvent configuré pour mettre en cache toute la boîte aux lettres des utilisateurs en local, pour pouvoir l’utiliser en mode hors connexion. Dans tout déploiement Windows, à l’exception d’une mise à niveau sur place, les fichiers de données Outlook des utilisateurs doivent se reconstruire après la mise à niveau. Ce processus est automatisé, mais les boîtes aux lettres Outlook ne peuvent généralement pas contenir plus de 100 Go de données, et la remise en cache de la boîte aux lettres entière, en local, pour tous les utilisateurs, représente un transfert volumineux de données. Pour réduire la charge réseau, nous vous recommandons d’utiliser une stratégie de groupe pour réduire le paramètre « Courrier à conserver hors connexion ». Dans Outlook d’Office 365 ProPlus ou Outlook 2016, la valeur par défaut est définie sur 12 mois. Nous vous conseillons de définir la durée du cache en mode hors connexion entre 1 à 6 mois. Le fait de modifier ce paramètre n’affecte pas la taille de la boîte aux lettres en ligne, et vous pouvez toujours faire des recherches dans la boîte aux lettres entière via Outlook quand vous êtes connecté.
+**Fichiers de données Outlook** Outlook est souvent configuré pour la boîte aux lettres entière des utilisateurs en locale pour une utilisation en mode hors connexion. Dans tout déploiement de Windows, à l’exception d’une mise à niveau inaltérable, il nécessite des fichiers de données Outlook que les utilisateurs reconstruisent eux-mêmes après la mise à niveau. Il s’agit d’un processus automatisé, mais avec des limites de boîtes aux lettres Outlook généralement attribuées à 100 Go, la nouvelle mise en cache de boîte aux lettres entièrement en local pour tous les utilisateurs signifie un grand nombre de transfert de données. À réduire la charge de réseau, vous souhaiterez peut-être prendre en considération l’utilisation d’une stratégie de groupe pour réduire le paramètre « Courrier à conserver hors connexion ». Dans Office 365 ProPlus ou Office 2016, la valeur par défaut pour Outlook est définie sur 12 mois. Afin de réduire l’impact sur réseau, envisagez de définir la durée du cache en mode hors connexion entre 1 à 6 mois. La modification de ce paramètre n’affecte pas la taille de la boîte aux lettres en ligne et la boîte aux lettres entière peut toujours être recherchée via Outlook lorsqu’il en ligne.
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
-**Fichiers à la demande et fonctionnalité « Known Folder Move » de OneDrive** OneDrive vous permet de synchroniser et de protéger les fichiers utilisateur de différents PC et appareils dans le cloud. Avec la fonctionnalité « Known Folder Move », vous pouvez également synchroniser des fichiers à partir des dossiers Bureau, Documents et Images d’un utilisateur avec OneDrive, pour faciliter l’accès de ces fichiers quand vous vous connectez à un nouvel appareil ou à un PC remis en image. Cependant, en raison de la taille et du nombre de fichiers conservés dans les dossiers Bureau, Documents et Images, nous vous conseillons de planifier le déploiement des stratégies d’activation et d’application de OneDrive sur vos PC. Pour cela, vous pouvez utiliser les contrôles réseau de la stratégie de groupe pour limiter la bande passante utilisée par le service de synchronisation OneDrive.
+**Fichiers OneDrive à la demande et déplacement des dossiers connus** OneDrive est un excellent moyen pour synchroniser et protéger les fichiers d’utilisateur depuis un ordinateur et d’autres appareils dans le cloud. Avec le déplacement des dossiers connus, vous pouvez également appliquer la synchronisation de fichiers à partir du bureau d’un utilisateur, les Documents, et les dossiers des images sur OneDrive rendant les fichiers disponibles lors de votre connexion à un nouvel appareil ou d’une reconfiguration PC. N’oubliez pas que, en raison de la taille des parois et le nombre de fichiers stockés dans des emplacements de bureau, des documents et des images, vous souhaiterez être organisé avec le déploiement des stratégies de l’activation et l’application OneDrive sur vos PCs. Une option consiste à utiliser les contrôles de réseau de stratégie de groupe pour limiter la bande passante utilisée par le service de synchronisation OneDrive.
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-7.png)
 
@@ -133,7 +133,7 @@ Voici trois éléments qui réduiront votre charge réseau pendant les déploiem
 
 [Fichiers à la demande OneDrive](https://www.microsoft.com/fr-FR/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
-Si vous n’avez pas encore déployé OneDrive, la migration de Windows 7 vers Windows 10 est l’occasion idéale pour activer OneDrive qui s’intègre parfaitement avec Office 365 ProPlus. Nous vous conseillons de commencer ce déploiement au moment de la préparation de vos applications et de vos appareils. Ainsi, la synchronisation des fichiers pourra démarrer avant que vous ne déplaciez les images de Windows et ne déployiez des applications sur votre réseau.
+Si vous n’avez pas déjà déployé OneDrive, la mission de Windows 7 vers Windows 10 est une opportunité idéale pour activer OneDrive et que celui-ci intègre parfaitement Office 365 ProPlus. Envisagez de commencer ce déploiement tandis que vous travaillez via votre disponibilité d’application et d’appareil. Cela donne ne longueur d’avance à la synchronisation de fichiers avant de commencer le déplacement des images de Windows et du déploiement d’applications sur votre réseau.
 
 ## <a name="next-step"></a>Étape suivante 
 

@@ -3,22 +3,22 @@ title: 'Phase 2 : Identité'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/16/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes de déploiement de l’infrastructure d’identités pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 7b5d62f5c09a1ea6d46449b113bff59dbf07ebad
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 932b6fb2cfeb86edcf708bdfdea55cdd8b580838
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288734"
 ---
 # <a name="phase-2-identity"></a>Phase 2 : Identité
 
@@ -32,25 +32,20 @@ Dans Microsoft 365 Entreprise, une infrastructure d’identités bien planifiée
 
 ## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a>Planifier et déployer votre infrastructure d’identités de Microsoft 365 Entreprise 
 
+Avant de commencer, regardez cette vidéo pour obtenir une vue d’ensemble des modèles d’identité et de l’authentification pour Microsoft 365.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+
 Procédez comme suit pour planifier et déployer votre nouvelle infrastructure d’identités dans le cloud. Vous pouvez également utiliser ces étapes pour adapter votre infrastructure d’identités locale ou hybride et l’utiliser avec Microsoft 365 Entreprise. 
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Planifiez les utilisateurs et les groupes](identity-plan-users-groups.md) |
-|![](./media/stepnumbers/Step2.png)| [Protéger des comptes Administrateur général](identity-designate-protect-admin-accounts.md) |
-|![](./media/stepnumbers/Step3.png)| [Configurez des administrateurs généraux à la demande](identity-privileged-identity-management.md) |
-|![](./media/stepnumbers/Step4.png)| [Simplifiez les réinitialisations du mot de passe](identity-password-reset.md) |
-|![](./media/stepnumbers/Step5.png)| [Configurer l’authentification multifacteur](identity-multi-factor-authentication.md) |
-|![](./media/stepnumbers/Step6.png)| [Protégez-vous contre la compromission de confidentialité](identity-azure-ad-identity-protection.md) |
-|![](./media/stepnumbers/Step7.png)| [Synchronisez des annuaires](identity-azure-ad-connect.md) |
-|![](./media/stepnumbers/Step8.png)| [Surveillez l’état de la synchronisation](identity-azure-ad-connect-health.md) |
-|![](./media/stepnumbers/Step9.png)| [Simplifiez les mises à jour du mot de passe](identity-password-writeback.md) |
-|![](./media/stepnumbers/Step10.png)| [Simplifiez la connexion de l’utilisateur](identity-single-sign-on.md) |
-|![](./media/stepnumbers/Step11.png)| [Personnaliser la page de connexion à Office 365](identity-customize-office-365-sign-in.md) |
-|![](./media/stepnumbers/Step12.png)| [Configurez la gestion des licences automatique](identity-group-based-licensing.md) |
-|![](./media/stepnumbers/Step13.png)| [Surveillez l’activité de connexion et du client](identity-azure-ad-access-usage-reporting.md) |
-|![](./media/stepnumbers/Step14.png)| [Autorisez les utilisateurs à créer et gérer leurs propres groupes](identity-self-service-group-management.md) |
-|![](./media/stepnumbers/Step15.png)| [Configurez l’appartenance à un groupe dynamique](identity-automatic-group-membership.md) |
+|![](./media/stepnumbers/Step1.png)| [Planifier les utilisateurs et les groupes](identity-plan-users-groups.md) |
+|![](./media/stepnumbers/Step2.png)| [Sécuriser vos identités privilégiées](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step3.png)| [Configurer une identité hybride](identity-azure-ad-connect.md) |
+|![](./media/stepnumbers/Step4.png)| [Configurer l’authentification utilisateur sécurisée](identity-multi-factor-authentication.md) |
+|![](./media/stepnumbers/Step5.png)| [Simplifier l’accès pour les utilisateurs](identity-password-reset.md) |
+|![](./media/stepnumbers/Step6.png)| [Utiliser des groupes pour faciliter la gestion](identity-self-service-group-management.md) |
 
 Lorsque vous avez terminé ces étapes, accédez aux [critères de sortie](identity-exit-criteria.md) de cette phase pour vous assurer que vous répondez aux conditions requises et facultatives pour Microsoft 365 Entreprise.
 

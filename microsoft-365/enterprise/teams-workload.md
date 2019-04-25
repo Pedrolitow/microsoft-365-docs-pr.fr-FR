@@ -8,18 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de planification, de déploiement et de création de valeur de Microsoft Teams dans Microsoft 365 Entreprise au sein de votre organisation.
-ms.openlocfilehash: 25329c7024f267983a83c4e719f18df6ad613bf5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26867484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291658"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Déploiement de Microsoft Teams pour Microsoft 365 Entreprise
+
+*Cette charge de travail est incluse dans les versions E3 et E5 de Microsoft 365 Entreprise*
 
 Microsoft Teams réunit la conversation instantanée, les conférences, le partage de documents et les conversations thématiques de façon à simplifier la création et le partage de contenu au sein de groupes. Microsoft Teams vous permet de travailler en équipe et de collaborer pour Microsoft 365 Entreprise, et constitue un élément clé de la valeur Built for Teamwork de Microsoft 365. Si vous débutez avec Microsoft Teams, consultez l’article [Présentation de Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).
  
@@ -27,11 +29,9 @@ Si vous utilisez actuellement Skype Entreprise, sachez que nous sommes en train 
 
 Les phases et les étapes suivantes vous permettent de comprendre le rôle de Microsoft Teams dans votre organisation, d’intégrer votre organisation à Microsoft Teams à travers une série de déploiements progressifs, et de sensibiliser vos utilisateurs finaux à l’utilisation de Microsoft Teams et de sa valeur. 
 
->[!Note]
->Ces instructions de déploiement doivent être suivies uniquement après que vous avez terminé votre [infrastructure de base ](deploy-foundation-infrastructure.md) pour Microsoft 365 Entreprise.
->
+Avant de commencer, vérifiez que vous avez configuré les phases d’[infrastructure de base](deploy-foundation-infrastructure.md) appropriées pour que vos équipes disposent des fonctionnalités de sécurité nécessaires.
 
-## <a name="phase-1-envision"></a>Phase 1 : comprendre
+## <a name="phase-1-envision"></a>Phase 1 : Comprendre
 
 Dans cette phase, vous allez rassembler les personnes pour effectuer votre déploiement de Microsoft Teams et déterminer comment votre organisation utilisera Microsoft Teams afin de traiter les besoins d’entreprise.
 
@@ -45,7 +45,7 @@ Ces trois groupes veillent à ce que votre déploiement de Microsoft Teams inclu
 Liste des personnes qui représentent les aspects professionnels, techniques et des utilisateurs finaux de votre organisation.
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>Étape 2 : déterminer et définir les priorités des scénarios d’entreprise Microsoft Teams
-Microsoft Teams peut être utilisé pour de nombreux objectifs différents. Vous devez déterminer les objectifs qui correspondent à vos besoins professionnels à chacun des niveaux de votre organisation, de vos groupes d’entreprise, de vos services, ainsi qu’au travail individuel et aux équipes de projets. Consultez l’article [Bibliothèque de productivité Microsoft 365](https://www.microsoft.com/microsoft-365/success) pour obtenir des exemples afin de vous aider à définir des scénarios Teams. 
+Microsoft Teams peut être utilisé pour de nombreux objectifs différents. Vous devez déterminer les objectifs qui correspondent à vos besoins professionnels à chacun des niveaux de votre organisation, de vos groupes d’entreprise, de vos services, ainsi qu’au travail individuel et aux équipes de projets. Consultez l’article [Bibliothèque de productivité Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1) pour obtenir des exemples afin de vous aider à définir des scénarios Teams. 
 
 Vous devez cibler Microsoft Teams pour traiter les équipes particulièrement collaboratives et à évolution rapide qui travaillent étroitement ensemble et nécessitent bien plus de fonctionnalités que ce que peut fournir la messagerie électronique avec Exchange Online. Il peut s’agir, par exemple, de conversations instantanées de groupes en direct avec un historique enregistré et un emplacement commun et facile à trouver pour stocker des fichiers et des notes. 
 
