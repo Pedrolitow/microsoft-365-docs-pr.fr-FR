@@ -3,7 +3,7 @@
 
 Vous avez planifié et défini les niveaux de sécurité dont votre organisation a besoin. Ces niveaux définissent un niveau minimal de sécurité et des niveaux supplémentaires pour les informations de plus en plus sensibles et la sécurité requise de leurs données.
 
-Vous utilisez au moins trois niveaux de protection des informations :
+Vous utilisez au moins trois niveaux de sécurité :
 
 - Baseline
 - Sensible
@@ -12,26 +12,29 @@ Vous utilisez au moins trois niveaux de protection des informations :
 Si nécessaire, l’[Étape 1](../infoprotect-define-sec-infoprotect-levels.md) peut vous aider à répondre à cette exigence. 
 
 <a name="crit-infoprotect-step4"></a>
-### <a name="required-increased-security-for-office-365-is-configured"></a>Obligatoire : renforcer la sécurité d’Office 365
+### <a name="required-increased-security-for-microsoft-365-is-configured"></a>Obligatoire : le paramètre Sécurité accrue de Microsoft 365 est configuré
 
-Vous avez configuré les paramètres suivants afin de renforcer la sécurité en fonction des informations figurant dans l’article [Configurer votre client Office 365 pour renforcer la sécurité](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355) :
+Vous avez configuré les paramètres de [Sécurité accrue d’Office 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) suivants :
 
-- Stratégies de gestion des menaces dans le Centre de sécurité et conformité Office 365
+- Stratégies de gestion des menaces dans le Centre de sécurité Microsoft 365
 - Autres paramètres à l’échelle du client Exchange Online
 - Stratégies de partage à l’échelle du client dans le Centre d’administration SharePoint
-- Paramètres dans Azure Active Directory
+- Paramètres d’Azure Active Directory (Azure AD)
 
-Vous avez également [activé Office 365 – Protection avancée contre les menaces (ATP)](https://support.office.com/article/Office-365-ATP-for-SharePoint-OneDrive-and-Microsoft-Teams-26261670-db33-4c53-b125-af0662c34607#turniton).
+Vous avez également [activé Office 365 - Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams](https://docs.microsoft.com/fr-FR/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams).
 
 Si nécessaire, l’[Étape 3](../infoprotect-configure-increased-security-office-365.md) peut vous aider à répondre à cette exigence. 
 
 <a name="crit-infoprotect-step3"></a>
 ### <a name="optional-classification-is-configured-across-your-environment"></a>Facultatif : configurer la classification au sein de votre environnement
 
-Vous avez travaillé avec vos équipes juridiques et de conformité pour développer une classification et un système d’étiquetage des données de votre organisation, qui peuvent inclure les éléments suivants :
+Vous avez travaillé avec vos équipes juridiques et de conformité afin de développer une classification et un système d’étiquetage appropriés pour les stratégies de sécurité et de gouvernance des données de votre organisation. 
+
+Ces stratégies correspondent à la configuration et au déploiement de ce qui suit :
 
 - Types de données sensibles
-- Étiquettes Office 365
+- Étiquettes de rétention
+- Étiquettes de niveau de confidentialité
 - Étiquettes Azure Information Protection
 
 Si nécessaire, l’[Étape 2](../infoprotect-configure-classification.md) peut vous aider à répondre à cette exigence. 
@@ -39,6 +42,6 @@ Si nécessaire, l’[Étape 2](../infoprotect-configure-classification.md) peut
 <a name="crit-infoprotect-step5"></a>
 ### <a name="optional-configure-privileged-access-management-in-office-365"></a>Facultatif : configurer la gestion des accès privilégiés pour Office 365
 
-Vous avez utilisé les informations contenues dans la rubrique [Configurer la gestion des accès privilégié dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) pour activer l’accès privilégié et créer une ou plusieurs stratégies d’accès privilégiés dans votre organisation Office 365. Ces stratégies sont configurés, et l’accès juste-à-temps est activé pour l’accès aux paramètres de configuration critiques et aux données sensibles.
+Vous avez utilisé les informations de la rubrique [Configurer la gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) pour activer l’accès privilégié et créer une ou plusieurs stratégies d’accès privilégié au sein de votre organisation. Vous avez configuré ces stratégies et l’accès juste-à-temps est activé pour l’accès aux données sensibles ou aux paramètres de configuration critiques.
 
 Si nécessaire, l’[Étape 4](../infoprotect-configure-privileged-access-management.md) peut vous aider à répondre à cette exigence. 
