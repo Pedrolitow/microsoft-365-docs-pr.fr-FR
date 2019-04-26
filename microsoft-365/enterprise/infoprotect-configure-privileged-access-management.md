@@ -1,5 +1,5 @@
 ---
-title: 'Étape 4 : Configurer la gestion des accès privilégiés pour Office 365'
+title: 'Étape 6: configurer la gestion des accès privilégiés pour Office 365'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Familiarisez-vous avec la gestion des accès privilégiés pour Office 365 et apprenez à la configurer.
-ms.openlocfilehash: 297d8e042c2a22c93b4ea566081d258e7ca0a5ab
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 60b52825ead068cd0f068f78c1bbce263e8d7720
+ms.sourcegitcommit: 9d4319a015e493fb88c7e1855bca0121654eb39d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286947"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33304154"
 ---
-# <a name="step-4-configure-privileged-access-management-for-office-365"></a>Étape 4 : Configurer la gestion des accès privilégiés pour Office 365
+# <a name="step-6-configure-privileged-access-management-for-office-365"></a>Étape 6: configurer la gestion des accès privilégiés pour Office 365
 
 *Cette étape est facultative et s’applique uniquement à la version E5 et à la version Conformité avancée de Microsoft 365 Entreprise*
 
@@ -43,7 +43,7 @@ Pour plus d’informations, reportez-vous à la rubrique relative à la [gestion
 
 À la fin de cette étape, vous aurez renforcé la sécurité d’Office 365 en activant le contrôle d’accès juste-à-temps pour les données clés et les paramètres de configuration pour votre organisation.
 
-Comme point de contrôle intermédiaire, consultez les [critères de sortie](infoprotect-exit-criteria.md#crit-infoprotect-step5) correspondant à cette étape.
+Comme point de contrôle intermédiaire, consultez les [critères de sortie](infoprotect-exit-criteria.md#crit-infoprotect-step6) correspondant à cette étape.
 
 ## <a name="next-step"></a>Étape suivante
 
