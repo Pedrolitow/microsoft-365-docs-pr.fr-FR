@@ -3,26 +3,26 @@ title: Sites SharePoint Online et Microsoft Teams pour les données hautement r�
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 04/03/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un site d’équipe SharePoint Online sécurisé ou une équipe Microsoft Teams pour stocker vos biens numériques les plus précieux et sensibles.
-ms.openlocfilehash: fa1a57d898e4822d0c96d6eb807d0a14a815e29a
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4342ba5e5d1c83ed0c9d26100afd86afa1e62723
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289805"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Sites SharePoint Online et Microsoft Teams pour les données hautement réglementées
 
-**Résumé :** Créer un site d’équipe SharePoint Online sécurisé ou une équipe Microsoft Teams pour stocker vos biens numériques les plus précieux et sensibles.
+*Ce scénario s’applique à la fois aux versions E3 et E5 de Microsoft 365 Entreprise*
 
 Microsoft 365 Entreprise comprend une suite complète de services informatiques pour que vous puissiez créer, stocker et sécuriser vos données hautement réglementées, notamment les données qui sont :
 
@@ -33,10 +33,10 @@ Dans le cadre d’une solution informatique Microsoft 365 Entreprise qui répon
 
 - Stockez les biens numériques (documents, diapositives, tableurs, etc.) dans un site d’équipe SharePoint Online ou dans l’onglet **Fichiers** d’une équipe Microsoft Teams.
 - Verrouillez le site ou l’équipe pour empêcher :
-   - l’accès à tous les comptes d’utilisateur (à l’exception d’un ensemble spécifique) via l’appartenance au groupe comprenant les personnes qui peuvent accéder au site d’équipe SharePoint Online et le niveau d’autorisation, et ceux qui peuvent le gérer ;
+   - l’accès à un ensemble spécifique de comptes d’utilisateur via l’appartenance à un groupe, ce qui inclut les personnes qui peuvent accéder au site d’équipe SharePoint Online et à quel niveau d’autorisation, et les personnes qui peuvent l’administrer ;
    - les membres du site d’octroyer l’accès à d’autres personnes ;
    - l’accès au site par les personnes non membres.
-- Configurez une étiquette Office 365 pour vos équipes ou sites SharePoint Online comme un mode de classification par défaut des biens numériques sur le site.
+- Configurez une étiquette de rétention Office 365 pour vos équipes ou sites SharePoint Online comme moyen par défaut de définir des stratégies de rétention sur les documents de l’équipe ou du site.
 - Empêchez les utilisateurs d’envoyer des fichiers à l’extérieur de l’organisation.
 - Chiffrez les biens numériques les plus sensibles du site ou de l’équipe.
 - Ajoutez des autorisations aux biens numériques les plus sensibles : même si les biens sont partagés en dehors du site, leur ouverture nécessite toujours les informations d’identification valides d’un compte d’utilisateur autorisé.
@@ -48,7 +48,7 @@ Le tableau suivant mappe les conditions requises de cette solution à une foncti
 | **Configuration requise** | **Fonctionnalité Microsoft 365 Entreprise** |
 | Stocker les biens numériques | Équipes et sites d’équipe SharePoint Online dans Office 365 |
 | Verrouiller le site | Autorisations de sites d’équipe SharePoint Online et de groupes Azure AD |
-| Étiqueter les biens numériques du site | Étiquettes Office 365 |
+| Étiqueter les biens numériques du site | Étiquettes de rétention Office 365 |
 | Bloquer les utilisateurs lors de l’envoi de fichiers à l’extérieur de l’organisation | Stratégies de protection contre la perte de données (DLP) dans Office 365 |
 | Chiffrer tous les biens numériques du site | Sous-étiquettes Azure Information Protection dans Enterprise Mobility + Security (EMS) |
 | Ajouter des autorisations aux biens numériques du site | Sous-étiquettes Azure Information Protection dans EMS |
@@ -56,7 +56,7 @@ Le tableau suivant mappe les conditions requises de cette solution à une foncti
 
 Cette solution implique que vous ayez déjà déployé les éléments suivants :
 
-- Votre [infrastructure de base](deploy-foundation-infrastructure.md) 
+- La phase [Identité](identity-infrastructure.md) et les étapes 1 et 2 de la phase [Protection des informations](infoprotect-infrastructure.md) de l’infrastructure de base. 
 - [SharePoint Online](sharepoint-online-onedrive-workload.md) pour les données hautement réglementées dans des sites d’équipe SharePoint Online
 - [Microsoft Teams](teams-workload.md) pour les données hautement réglementées dans des équipes Microsoft Teams
 
@@ -80,7 +80,7 @@ Cet objectif va permettre de déterminer les éléments de configuration essenti
 
 - L’ensemble des séries d’autorisations SharePoint Online et les groupes SharePoint
 - L’ensemble des groupes d’accès, les groupes de sécurité Azure AD et leurs membres à ajouter aux groupes SharePoint
-- L’étiquette Office 365 à affecter au site et l’ensemble de stratégies DLP pour l’étiquette
+- L’étiquette de rétention Office 365 à affecter au site et l’ensemble de stratégies DLP liées à l’étiquette
 - Les paramètres d’une sous-étiquette Azure Information Protection que les utilisateurs appliquent aux biens numériques hautement sensibles stockés dans le site
 
 Une fois ces paramètres déterminés, utilisez-les pour configurer le site à la phase 2. 
@@ -98,17 +98,17 @@ La sécurité des sites d’équipe SharePoint Online qui contiennent des biens 
 
 Consultez l’article [Conception d’un site d’équipe isolé SharePoint Online](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site) pour obtenir des informations et déterminer l’ensemble des niveaux d’autorisation, les groupes SharePoint, les groupes d’accès et les membres des groupes.
 
-### <a name="step-2-office-365-labels-and-dlp-policies"></a>Étape 2 : étiquettes Office 365 et stratégies DLP
+### <a name="step-2-office-365-retention-labels-and-dlp-policies"></a>Étape 2 : étiquettes de rétention Office 365 et stratégies DLP
 
-Lorsqu’elles sont appliquées à un site d’équipe SharePoint Online, les étiquettes Office 365 fournissent une méthode de classification par défaut de tous les biens numériques stockés sur le site.
+Lorsqu’elles sont appliquées à un site d’équipe SharePoint Online, les étiquettes de rétention Office 365 fournissent une méthode par défaut de classification de toutes les ressources numériques stockées sur le site.
  
-En ce qui concerne les sites SharePoint Online pour les données hautement réglementées, vous devez déterminer les étiquettes Office 365 à utiliser.
+En ce qui concerne les sites SharePoint Online pour les données hautement réglementées, vous devez déterminer les étiquettes de rétention Office 365 à utiliser.
 
-Concernant les considérations relatives à la conception d’étiquettes Office 365, consultez la rubrique [Classification et étiquettes Office 365](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#office-365-classification-and-labels).
+Concernant les considérations relatives à la conception d’étiquettes Office 365, consultez la rubrique [Classification et étiquettes Office 365](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 Pour protéger les informations sensibles et empêcher leur divulgation accidentelle ou intentionnelle, vous pouvez utiliser des stratégies DLP. Pour obtenir plus d’informations, consultez cette [vue d’ensemble](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
-En ce qui concerne les sites SharePoint Online pour les données hautement réglementées, vous devez configurer une stratégie DLP pour l’étiquette Office 365 affectée au site afin de bloquer les utilisateurs quand ils essaient de partager les biens numériques avec des utilisateurs externes. 
+En ce qui concerne les sites SharePoint Online pour les données hautement réglementées, vous devez configurer une stratégie DLP pour l’étiquette de rétention Office 365 affectée au site afin de bloquer les utilisateurs lorsqu’ils essaient de partager des ressources numériques avec des utilisateurs externes. 
 
 ### <a name="step-3-your-azure-information-protection-sub-label"></a>Étapes 3 : sous-étiquette Azure Information Protection
 
@@ -118,15 +118,13 @@ Une sous-étiquette existe sous une étiquette existante. Par exemple, vous pouv
 
 Les paramètres de la sous-étiquette appliquée se déplacent avec le bien. Même s’il est téléchargé et partagé en dehors du site, seuls les comptes d’utilisateurs authentifiés qui disposent des autorisations peuvent l’ouvrir.
 
-En ce qui concerne les considérations relatives à la conception des étiquettes Azure Information Protection, consultez la rubrique [Azure Information Protection](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#azure-information-protection).
-
 ### <a name="design-results"></a>Résultats de conception
 
 Vous avez déterminé les éléments suivants:
 
 - L’ensemble de groupes SharePoint et les niveaux d’autorisation
 - L’ensemble de groupes d’accès et leurs membres pour chaque niveau d’autorisation
-- L’étiquette Office 365 appropriée et la stratégie DLP associée à l’étiquette
+- L’étiquette de rétention Office 365 appropriée et la stratégie DLP associée à l’étiquette
 - Les paramètres de la sous-étiquette Azure Information Protection comprenant le chiffrement et les autorisations
 
 ## <a name="phase-2-configure"></a>Phase 2 : configuration
@@ -140,11 +138,11 @@ Suivez les instructions indiquées dans l’article [Déploiement d’un site d�
 - Créer et remplir les groupes d’accès pour chaque niveau d’autorisation SharePoint utilisé sur le site.
 - Créer et configurer le site d’équipe isolé.
 
-### <a name="step-2-configure-the-site-for-an-office-365-label-dlp-policy"></a>Étape 2 : configurer le site pour la stratégie DLP des étiquettes Office 365
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>Étape 2 : configurer le site pour une stratégie DLP d’étiquettes de rétention Office 365
 
-Suivez les instructions indiquées dans [Protéger les fichiers SharePoint Online avec des étiquettes Office 365 et la protection contre la perte de données](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) pour effectuer les actions suivantes :
+Suivez les instructions mentionnées dans [Protéger les fichiers SharePoint Online avec des étiquettes Office 365 et la protection contre la perte de données (DLP)](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) pour :
 
-- Identifier ou créer l’étiquette Office 365 et l’appliquer à votre site isolé SharePoint Online.
+- Identifier ou créer l’étiquette de rétention Office 365 et l’appliquer à votre site isolé SharePoint Online.
 - Créer et configurer la stratégie DLP qui empêchent les utilisateurs de partager un bien numérique de votre site SharePoint Online en dehors de l’organisation.
 
 ### <a name="step-3-create-an-azure-information-protection-sub-label-for-the-site"></a>Étape 3 : créer une sous-étiquette Azure Information Protection pour le site
@@ -173,8 +171,8 @@ L’onglet **Fichiers** de la nouvelle équipe répertorie le contenu du dossier
 Vous avez configuré les éléments suivants :
 
 - Un site isolé SharePoint Online
-- Une étiquette Office 365 affectée au site isolé SharePoint Online
-- Une stratégie DLP pour l’étiquette Office 365
+- Une étiquette de rétention Office 365 affectée au site isolé SharePoint Online
+- Une stratégie DLP pour l’étiquette de rétention Office 365
 - Une sous-étiquette Azure Information Protection d’une stratégie limitée que les utilisateurs peuvent appliquer aux biens numériques les plus sensibles stockés dans le site, qui chiffre le bien et applique des autorisations
 - Le cas échéant, une équipe pour les données hautement réglementées basée sur le site SharePoint Online
 
