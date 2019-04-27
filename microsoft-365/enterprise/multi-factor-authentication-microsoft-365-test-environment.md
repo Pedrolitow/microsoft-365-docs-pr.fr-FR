@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: ConFigurez l'authentification multifacteur à l'aide de messages texte envoyés à un téléphone intelligent dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 8e202936451030718c0c86601c2c621c50f78e1a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291139"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353176"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Authentification multifacteur pour votre environnement de test Microsoft 365 Enterprise
 
@@ -28,7 +28,7 @@ Cet article explique comment activer et tester l'authentification par message te
   
 Il existe deux phases de configuration de l'authentification multifacteur pour un compte dans votre environnement de test Microsoft 365 entreprise:
   
-1. Créez l'environnement de test Microsoft 365 entreprise.
+1. Créer l’environnement de test Microsoft 365 Entreprise.
     
 2. Activez et testez l’authentification multifacteur pour le compte d’utilisateur 2.
 
@@ -50,31 +50,29 @@ Si vous souhaitez tester l'authentification multifacteur dans une entreprise sim
 
 Activez l’authentification multifacteur pour le compte d’utilisateur 2 en procédant comme suit :
   
-1. Ouvrez une instance distincte privée de votre navigateur, accédez au portail Office ([https://office.com](https://office.com)), puis connectez-vous avec votre compte d'administrateur général.
+1. Ouvrez une instance distincte privée de votre navigateur, accédez au centre d'administration 365 de Microsoft ([https://portal.microsoft.com](https://portal.microsoft.com)), puis connectez-vous avec votre compte d'administrateur général.
     
-2. Sur la page principale du portail, cliquez sur **Administrateur**.
+2. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
-3. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
+3. Dans le volet utilisateurs actifs, cliquez sur **plus d' > d'authentification multifacteur**.
     
-4. Dans le volet utilisateurs actifs, cliquez sur **plus d' > d'authentification multifacteur**.
+4. Dans la liste, sélectionnez le compte **utilisateur 2** .
     
-5. Dans la liste, sélectionnez le compte **utilisateur 2** .
+5. Dans la section **Utilisateur 2**, sous **Étapes rapides**, cliquez sur **Activer**.
     
-6. Dans la section **Utilisateur 2**, sous **Étapes rapides**, cliquez sur **Activer**.
+6. Dans la boîte de dialogue **À propos de l’activation de l’authentification multifacteur**, cliquez sur **Activer Multi-Factor Authentication**.
     
-7. Dans la boîte de dialogue **À propos de l’activation de l’authentification multifacteur**, cliquez sur **Activer Multi-Factor Authentication**.
+7. Dans la boîte de dialogue **mises à jour réussies** , cliquez sur **Fermer**.
     
-8. Dans la boîte de dialogue **mises à jour réussies** , cliquez sur **Fermer**.
+8. Dans l'onglet **Centre d'administration Microsoft 365** , cliquez sur l'icône du compte d'utilisateur dans le coin supérieur droit, puis cliquez sur Déconnexion. ****
     
-9. Dans l’onglet **Microsoft Office Famille**, cliquez sur l’icône du compte utilisateur en haut à droite, puis cliquez sur **Déconnexion**.
-    
-10. Fermez l’instance de navigateur.
+9. Fermez l’instance de navigateur.
    
 Terminez la configuration pour que le compte d’utilisateur 2 utilise un message texte pour la validation et testez-le en procédant comme suit :
   
 1. Ouvrez une nouvelle instance privée de votre navigateur.
     
-2. Accédez au portail Office ([https://office.com](https://office.com)) et connectez-vous avec le compte utilisateur 2 (utilisateur2 @\<organisation name>. onmicrosoft. com) et le mot de passe.
+2. Accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et connectez-vous avec le nom de compte et le mot de passe de l'utilisateur 2.
     
 3. Une fois connecté, vous êtes invité à configurer le compte pour obtenir plus d'informations. Cliquez sur **Suivant**.
     

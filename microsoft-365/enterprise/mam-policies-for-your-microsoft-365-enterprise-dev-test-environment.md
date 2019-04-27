@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d'appareil Intune à votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 5b587bd702071f325310ebd9979cf611f20e3205
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d20b050bfc56776656bf1d485b2e107a9debe2f7
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279062"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353186"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 Enterprise
 
@@ -42,7 +42,7 @@ Si vous souhaitez configurer des stratégies MAM dans une entreprise simulée, s
 
 Au cours de cette phase, vous allez créer une stratégie de conformité des appareils pour les appareils Windows 10.
   
-1. Accédez au portail Office à l'adresse[https://office.com](https://office.com)() et connectez-vous à votre abonnement d'évaluation Office 365 avec votre compte d'administrateur général.
+1. Accédez au portail Office 365 à l'adresse[https://portal.office.com](https://portal.office.com)() et connectez-vous à votre abonnement de laboratoire de test Office 365 avec votre compte d'administrateur général.
     
 2. Dans un nouvel onglet de votre navigateur, ouvrez le portail Azure à [https://portal.azure.com](https://portal.azure.com)l'adresse.
 

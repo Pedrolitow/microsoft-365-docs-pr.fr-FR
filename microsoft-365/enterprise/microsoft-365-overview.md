@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 Enterprise.
-ms.openlocfilehash: 24aacc1a992e2dfdc683e5e4c4405b105eea7bf5
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291301"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353200"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 Entreprise
 
@@ -64,13 +64,17 @@ Pour télécharger une copie de l'affiche, cliquez [ici](https://github.com/Micr
 
 ## <a name="deploying"></a>Déploiement
 
-Il existe deux façons de déployer les produits, les fonctionnalités et les composants de Microsoft 365 Enterprise:
+Il existe trois façons de déployer les produits, les fonctionnalités et les composants de Microsoft 365 Enterprise:
 
 1. En partenariat avec FastTrack
   
    Avec FastTrack, les ingénieurs Microsoft vous aident à passer au Cloud à votre rythme. Voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Le faire vous-même
+2. À l'aide de Microsoft Consulting Services ou d'un [partenaire Microsoft](https://partner.microsoft.com/).
+
+   Les consultants peuvent analyser votre infrastructure actuelle et vous aider à développer un plan d'incorporation de tous les logiciels et services de Microsoft 365 Enterprise.
+
+3. Le faire vous-même
 
    Le [Guide de déploiement de Microsoft 365 Enterprise vous guide](deploy-microsoft-365-enterprise.md) pas à pas tout au long de la création des charges de travail de l'infrastructure et de la productivité. 
 
@@ -108,7 +112,7 @@ Pour plus d'informations sur le déploiement, voir How:
 
 ## <a name="next-step"></a>Étape suivante
 
-Démarrez votre [déploiement d'entreprise Microsoft 365](deploy-microsoft-365-enterprise.md).
+Si vous effectuez le déploiement vous-même, lancez votre [déploiement d'entreprise Microsoft 365](deploy-microsoft-365-enterprise.md).
 
 ## <a name="see-also"></a>Voir aussi
 

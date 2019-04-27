@@ -13,29 +13,26 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Suivez ces étapes pour protéger les comptes d'administrateur général dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: cded424188447f96e5614f31d3e207bb541d438e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290857"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353056"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Protéger les comptes d'administrateur général dans votre environnement de test Microsoft 365 Enterprise
 
-Vous pouvez empêcher les attaques numériques sur votre organisation en vous assurant que les comptes administrateurs sont aussi sécurisés que possible. Cet article explique comment utiliser la sécurité des applications Cloud Office 365 et les stratégies d'accès conditionnel Azure AD pour protéger les comptes d'administrateur général.
+Vous pouvez empêcher les attaques numériques sur votre organisation en vous assurant que les comptes administrateurs sont aussi sécurisés que possible. Cet article explique comment utiliser les stratégies d'accès conditionnel Azure Active Directory (Azure AD) pour protéger les comptes d'administrateur général.
 
 Il existe deux phases pour la protection des comptes d'administrateur général dans votre environnement de test Microsoft 365 Enterprise:
 
-1.  Créez l'environnement de test Microsoft 365 entreprise.
+1.  Créer l’environnement de test Microsoft 365 Entreprise.
 2.  Protégez votre compte d'administrateur général dédié.
 
 ![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
-
-> [!NOTE]
-> L'environnement de test Microsoft 365 entreprise utilise les versions E5 d'Office 365 et Enterprise Management + Security (EMS). La fonctionnalité de sécurité des applications Cloud Office 365 est uniquement disponible dans la version E5 Office 365. 
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: créer votre environnement de test Microsoft 365 Enterprise
 
@@ -47,24 +44,9 @@ Si vous souhaitez tester la protection des comptes d'administrateur général da
 > [!NOTE]
 > Le test de la protection de compte d'administrateur général ne nécessite pas l'environnement de test d'entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d'annuaires pour les services de domaine Active Directory (AD DS). Elle est fournie ici en tant qu'option pour vous permettre de tester la protection des comptes d'administrateur général et de l'expérimenter dans un environnement qui représente une organisation typique. 
   
-## <a name="phase-2-configure-cloud-app-security-and-conditional-access-policies"></a>Phase 2: configurer la sécurité des applications Cloud et les stratégies d'accès conditionnel
+## <a name="phase-2-configure-conditional-access-policies"></a>Phase 2: configurer les stratégies d'accès conditionnel
 
-Tout d'abord, créez une stratégie de sécurité d'application Cloud Office 365 pour surveiller l'activité de compte d'administrateur général et envoyer des alertes à l'adresse de messagerie de votre compte d'administrateur général. 
-
-1. Connectez-vous au [portail de conformité d'Office 365 Security &](https://protection.office.com/) à l'aide de votre compte d'administrateur général.
-2. Dans le volet de navigation de gauche, cliquez sur **Alertes > Gérer les alertes avancées**.
-3. Sur la page **Gérer les alertes avancées**, cliquez sur **Activer Sécurité des applications cloud Office 365**, puis sur **Atteindre Sécurité des applications cloud Office 365**.
-4. Sur le nouvel onglet **Tableau de bord**, cliquez sur **Contrôle > Stratégies**.
-5. Sur la page **Stratégies**, cliquez sur **Créer une stratégie**, puis sur **Stratégie d’activité**.
-6. Dans **Nom de la stratégie**, saisissez **Activité administrative**.
-7. Dans **Gravité de la stratégie**, cliquez sur **Élevée**.
-8. Dans **Catégorie**, cliquez sur **Comptes privilégiés**.
-9. Dans **Créer des filtres pour la stratégie**, dans **Activités correspondant à tous les critères suivants**, cliquez sur **Activité administrative**.
-10. Dans **Alertes**, cliquez sur **Envoyer une alerte par e-mail**. Dans **À**, entrez l’adresse de messagerie de votre compte d’administrateur général.
-11. Au bas de la page, cliquez sur **Créer**.
-12. Fermez l'onglet **tableau de bord** .
-    
-Ensuite, créez un compte d'utilisateur en tant qu'administrateur global dédié.
+Tout d'abord, créez un compte d'utilisateur en tant qu'administrateur global dédié.
 
 1. Sous un onglet séparé, ouvrez le [Centre d'administration Microsoft 365](https://admin.microsoft.com/).
 2. Sous **utilisateurs actifs**, cliquez sur **Ajouter un utilisateur**.

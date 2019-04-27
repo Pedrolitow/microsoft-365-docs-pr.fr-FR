@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour activer des paramètres de sécurité Microsoft 365 supplémentaires pour votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 54e05122dcbe5d4e24f092536897f2a8ad449e05
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 583d815d9f413df8aeb5ec7abaf68cf79a6cc8b9
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283654"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353116"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Amélioration de la sécurité Microsoft 365 pour votre environnement de test Microsoft 365 Enterprise
 
@@ -46,16 +46,15 @@ Dans cette phase, vous allez activer la sécurité Microsoft 365 améliorée pou
 
 Les applications qui ne prennent pas en charge l'authentification moderne ne peuvent pas avoir de [configurations d'identité et d'accès aux appareils](microsoft-365-policies-configurations.md) appliquées, ce qui est un élément important de la sécurisation de votre abonnement Microsoft 365 et de ses biens numériques. 
 
-1. Accédez au portail Office ([https://office.com](https://office.com)) et connectez-vous à votre abonnement d'évaluation Office 365 avec votre compte d'administrateur général.
+1. Accédez au centre d'administration Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)) et connectez-vous à votre abonnement de laboratoire de test Office 365 avec votre compte d'administrateur général.
     
   - Si vous utilisez l'environnement de test Microsoft 365 léger, connectez-vous à partir de votre ordinateur local.
     
   - Si vous utilisez l'environnement de test d'entreprise simulé de Microsoft 365, utilisez le [portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de client1.
  
-2. À partir de l'onglet **Centre d'administration Microsoft 365** , cliquez sur **administrateur**.
-3. Dans le nouvel onglet **Centre d'administration Microsoft 365** , cliquez sur **centres d'administration > SharePoint**.
-4. Dans le nouvel onglet **Centre d'administration SharePoint** , cliquez sur **contrôle d'accès**.
-5. Sous **applications qui ne prennent pas en charge l'authentification moderne**, cliquez sur **bloquer**, puis sur **OK**.
+2. Dans le nouvel onglet **Centre d'administration Microsoft 365** , cliquez sur **centres d'administration > SharePoint**.
+3. Dans le nouvel onglet **Centre d'administration SharePoint** , cliquez sur **contrôle d'accès**.
+4. Sous **applications qui ne prennent pas en charge l'authentification moderne**, cliquez sur **bloquer**, puis sur **OK**.
 
 
 ### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Activer la protection avancée contre les menaces pour SharePoint, OneDrive entreprise et Microsoft teams
@@ -86,20 +85,15 @@ Pour vérifier que le traitement anti-programme malveillant est effectué sur de
 4. Sous **Common attachMent types Filter**, cliquez sur **> Save**.
 
 
-## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>Phase 3: examiner les journaux et les outils de sécurité Office 365
-
-Dans cette phase, vous examinez les services intégrés qui vous informent des événements de sécurité et Mesurez votre position de sécurité globale.
-
-### <a name="threat-management-dashboard"></a>Tableau de bord de gestion des menaces
+## <a name="phase-3-examine-the-threat-management-dashboard"></a>Phase 3: examiner le tableau de bord de gestion des menaces
 
 Office 365 Threat Management peut vous aider à contrôler et à gérer l'accès des appareils mobiles aux données de votre organisation, à protéger votre organisation contre la perte de données et à protéger les messages entrants et sortants contre les logiciels malveillants et le courrier indésirable. Vous pouvez également utiliser la gestion des menaces pour protéger la réputation de votre domaine et déterminer si les expéditeurs sont ou non usurpés de manière malveillante les comptes de votre domaine. Pour plus d'informations, consultez [la rubrique gestion des menaces dans le centre de sécurité Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/threat-management).
 
-
-### <a name="office-365-cloud-app-security-dashboard"></a>Tableau de bord de sécurité des applications Cloud Office 365
-
-La sécurité des applications cloud Office 365, anciennement connue sous le nom de gestion de la sécurité avancée Office 365, permet de créer des stratégies qui surveillent les activités suspectes dans votre abonnement Office 365 et vous en informent, afin que vous puissiez rechercher le problème et prendre des mesures correctives. Pour plus d'informations, consultez la rubrique [vue d'ensemble de la sécurité des applications Cloud Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
-
 <!--
+### Office 365 Cloud App Security dashboard
+
+Office 365 Cloud App Security, previously known as Office 365 Advanced Security Management, allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription, so that you can investigate and take possible remediation action. For more information, see [Overview of Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
+
 ### Microsoft 365 Secure Score
 
 1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.
