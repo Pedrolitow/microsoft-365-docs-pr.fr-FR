@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez vos comptes d’administrateur pour une protection maximale.
-ms.openlocfilehash: 4b4a8d01cdf71e30139fa448813a3ff7c43855c7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0be82fc6f431001c69e79a0a26007c54a87424c3
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285156"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353086"
 ---
 # <a name="step-2-secure-your-privileged-identities"></a>Étape 2 : sécuriser vos identités privilégiées
 
@@ -39,7 +39,6 @@ Pour vos comptes Administrateur général dédiés, vous devez aussi effectuer l
 1. Testez les paramètres d’authentification multifacteur par compte d’utilisateur ou par accès conditionnel sur un compte d’utilisateur test afin de vérifier que l’authentification multifacteur fonctionne correctement et de manière prévisible. L’authentification multifacteur nécessite une forme secondaire d’authentification (par exemple, un code de vérification envoyé à un smartphone).
 2. Configurez l’authentification multifacteur pour chacun des comptes Administrateur général d’Office 365 dédiés et utilisez la forme d’authentification secondaire disponible la plus forte dans votre organisation. Reportez-vous à la rubrique relative à l’[authentification multifacteur](identity-multi-factor-authentication.md#identity-mfa) pour plus d’informations.
 2. Utiliser une stratégie d’accès conditionnel pour exiger l’authentification multifacteur pour les comptes d’administrateur général. Voir [Protection des comptes d’administrateur](identity-access-prerequisites.md#protecting-administrator-accounts) pour plus d’informations.
-4. Utiliser une stratégie Office 365 Cloud App Security pour surveiller l’activité du compte Administrateur général. Reportez-vous à la rubrique [Configurez une sécurité accrue pour Office 365](infoprotect-configure-increased-security-office-365.md) pour plus d’informations.
 
 Reportez-vous à la rubrique [Protéger vos comptes d’administrateur général Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) pour plus d’informations sur la configuration.
 
