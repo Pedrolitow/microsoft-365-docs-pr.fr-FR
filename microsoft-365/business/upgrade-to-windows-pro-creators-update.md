@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 'Découvrez comment mettre à niveau les appareils Windows vers Windows 10 professionnel Creators Update. '
-ms.openlocfilehash: ec1ef0462cc1ba1cd1ae01ee28795096097e01a9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 13a964b19b1fbd43e9c255a90161ca6b48099305
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279862"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399971"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Mettre à niveau les appareils Windows vers Windows Professionnel Creators Update
 
@@ -37,6 +37,9 @@ ms.locfileid: "32279862"
      - Créer un support d'installation à l'aide de l' [outil de création de médias](https://go.microsoft.com/fwlink/?LinkID=836960) : sélectionnez cette option pour créer un support d'installation Windows 10 professionnel Creators Update (lecteur flash USB ou fichier ISO) pour installer Windows 10 sur un PC différent de celui que vous utilisez.
     
         a. Lisez les instructions relatives à l'utilisation de l'outil et à la création de votre support d'installation. 
+
+> [!Note]
+> Si vous avez des appareils Windows exécutant Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement professionnel Microsoft 365 vous donne droit à une mise à niveau vers Windows 10-vous n'avez pas besoin d'une clé de produit.
     
 Pour terminer la configuration des appareils Windows 10, rePortez-vous à la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365](set-up-windows-devices.md) . 
   

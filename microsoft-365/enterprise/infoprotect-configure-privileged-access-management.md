@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: Familiarisez-vous avec la gestion des accès privilégiés pour Office 365 et apprenez à la configurer.
 ms.openlocfilehash: 60b52825ead068cd0f068f78c1bbce263e8d7720
-ms.sourcegitcommit: 9d4319a015e493fb88c7e1855bca0121654eb39d
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33304154"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399948"
 ---
 # <a name="step-6-configure-privileged-access-management-for-office-365"></a>Étape 6: configurer la gestion des accès privilégiés pour Office 365
 
