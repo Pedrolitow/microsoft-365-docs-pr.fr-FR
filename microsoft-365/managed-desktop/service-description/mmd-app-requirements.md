@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 01/08/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de6cc7d77e023a9d41961e5fbcce060f1bb659ae
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 07e4719d87cb11910a90665ce9beb95edf6641a4
+ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278334"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33467742"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise pour les applications de bureau géré Microsoft
 
@@ -20,41 +20,44 @@ ms.locfileid: "32278334"
 
 <!--Application addendum -->
  
-Les applications métier que vous souhaitez déployer sur des appareils de bureau gérés Microsoft doivent répondre aux exigences de cette rubrique. 
+Afin de garantir les performances, la fiabilité et la maintenance des périphériques de bureau géré Microsoft, les applications métier d'un client ne doivent pas sérieusement influer sur l'expérience de l'utilisateur final ou modifier l'attitude de la sécurité. Par conséquent, les applications métier que vous souhaitez déployer sur des appareils de bureau gérés Microsoft doivent répondre aux exigences de cette rubrique.
 
 ## <a name="application-condition"></a>Condition de l'application
 
-Il est important que les applications n'aient pas d'impact négatif sur l'environnement de bureau géré Microsoft. Les conditions suivantes doivent être satisfaites pour que Microsoft puisse le déployer. Pour une application ou un pilote donné, Microsoft peut renoncer aux exigences fournies dans le présent document. Microsoft peut décider de supprimer une application ou un pilote qui a un impact négatif sur les performances et la fiabilité des appareils de bureau gérés par Microsoft.
+Il est important que les applications n'aient pas d'impact négatif sur l'environnement de bureau géré Microsoft. Voici les conditions requises qu'une application doit respecter pour qu'une application soit déployée. Pour une application ou un pilote donné, Microsoft peut renoncer aux exigences fournies dans le présent document. Microsoft peut décider de supprimer une application ou un pilote qui a un impact négatif sur les performances et la fiabilité des appareils de bureau gérés par Microsoft.
 
-## <a name="deployable-using-microsoft-technologies"></a>Déployable à l'aide des technologies Microsoft
+## <a name="centrally-managed-apps"></a>Applications gérées de manière centralisée
 
-Microsoft maNaged Desktop utilise Intune, Microsoft Store et Microsoft Store pour les entreprises pour déployer des applications. Par conséquent, les applications doivent être empaquetées de manière à pouvoir être déployées par la version actuelle de ces services.
+Toutes les applications et tous les pilotes installés sur les appareils gérés par Microsoft doivent être déployés via Intune, le Microsoft Store ou Microsoft Store pour les entreprises; s'ils sont disponibles, les pilotes seront également déployés via le service Windows Update. 
 
 ## <a name="prohibited-app-classes"></a>Classes d'application interDites
 
 Certains types d'application ne sont pas autorisés sur les appareils de bureau géré Microsoft:
 - logiciels antivirus, de sécurité ou d'audit tiers
-- navigateurs Web tiers
 - Versions de Microsoft Office antérieures à Office 365 Pro plus
 - Applications qui installent ou regroupent d'autres logiciels tiers
 
 ## <a name="restricted-app-behaviors"></a>Comportements d'application restreinte
 
-Certains comportements d'application peuvent être préjudiciables à l'expérience utilisateur ou présenter un risque de sécurité aux appareils de bureau gérés par Microsoft. Les applications ne doivent pas présenter les comportements ou caractéristiques suivants: 
+Certains comportements d'application peuvent avoir un impact négatif sur l'expérience utilisateur ou présenter un risque de sécurité aux appareils de bureau gérés par Microsoft. Les applications présentant les comportements suivants ne sont pas autorisées à s'exécuter dans l'environnement de bureau géré Microsoft sans dérogation particulière de Microsoft.
 
 Expérience utilisateur:
-- Installer des services d'arrière-plan ou générer des processus d'arrière-plan de longue durée d'exécution
+- Installer les services d'arrière-plan
 - S'ajouter au chemin de démarrage de Windows
+- Applications dépendant des pilotes
+- navigateurs Web tiers
 
 Sécurité :
-- Appeler des API Windows ou Office ou prendre des dépendances sur des structures de données Windows ou Office internes
-- Agir en tant que magasin d'applications ou disposer d'un gestionnaire d'extensions intégré
 - Élever les privilèges de l'utilisateur final
+- Agir en tant que magasin d'applications ou disposer d'un gestionnaire d'extensions intégré
 - Ont des failles de sécurité connues
-- Signé à l'aide d'un certificat qui ne se cumule pas vers une racine approuvée
 - Chiffrer ou restreindre l'accès aux données de l'utilisateur final
-- Modifier le code du système d'exploitation au moment de l'exécution
+- Non signé ou signé à l'aide d'un certificat qui ne se cumule pas vers une racine approuvée
+
 
 ## <a name="driver-deployment"></a>Déploiement de pilotes
 
-À moins qu'un pilote ne soit disponible dans Windows Update ou qu'il soit signé séparément par le laboratoire de la qualité du matériel Windows (WHQL), Microsoft doit approuver un pilote pour que Microsoft déploie le pilote sur les appareils de bureau gérés par Microsoft.
+Microsoft maNaged Desktop prend en charge uniquement les pilotes de périphériques disponibles via Windows Update ou la boîte de réception installée avec l'appareil géré Microsoft. 
+
+Si une application requiert un ou plusieurs pilotes pour l'exécuter, elle est considérée comme une application restreinte et nécessite le déploiement de l'exemption sur le bureau géré Microsoft. 
+

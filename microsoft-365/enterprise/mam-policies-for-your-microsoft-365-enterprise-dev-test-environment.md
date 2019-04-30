@@ -12,18 +12,18 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d'appareil Intune à votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: d20b050bfc56776656bf1d485b2e107a9debe2f7
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: b8c2fbe437362f72effd5ba550817f847ccbbf74
+ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353186"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33467732"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 Enterprise
 
 À l'aide des instructions fournies dans cet article, vous ajoutez une stratégie Intune Device Compliance à votre environnement de test Microsoft 365 Enterprise.
 
-![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
@@ -54,7 +54,7 @@ Au cours de cette phase, vous allez créer une stratégie de conformité des app
     
 6. Dans le panneau **groupes-tous les groupes** , cliquez sur **+ nouveau groupe**.
     
-7. Dans le volet **groupe** , sélectionnez **Office 365** pour **type de groupe?**, entrez **utilisateurs d'appareils Windows 10 gérés** dans **nom**, sélectionnez **attribué** dans **type d'appartenance**, puis cliquez sur **créer**. 
+7. Dans le **volet groupe** , sélectionnez **Office 365** ou **sécurité** pour **type de groupe?**, entrez **utilisateurs d'appareils Windows 10 gérés** dans **nom**, sélectionnez **attribué** dans **type d'appartenance**, puis cliquez sur **créer**. 
     
 8. Fermez le volet **Groupe**.
     
@@ -90,7 +90,7 @@ Au cours de cette phase, vous allez créer une stratégie de conformité des app
 
 26. Dans le panneau **Ajouter une application** , cliquez sur **Ajouter**.
 
-Vous disposez maintenant d'une stratégie de conformité de l'appareil pour tester les applications sélectionnées dans la stratégie de conformité des appareils **Windows 10** et pour les membres du groupe **utilisateurs d'appareils Windows 10 gérés** . 
+Vous disposez maintenant d'une stratégie de conformité de l'appareil pour tester les applications sélectionnées dans la stratégie de conformité des appareils **Windows 10** et pour les membres du groupe **utilisateurs d'appareils Windows 10 gérés** . Notez que si vous sélectionnez Office 365 comme type de groupe, des ressources supplémentaires seront créées. 
   
 ## <a name="next-step"></a>Étape suivante
 
