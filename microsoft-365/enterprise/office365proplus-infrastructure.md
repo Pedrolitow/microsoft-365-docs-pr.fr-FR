@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Étapes du déploiement de l’infrastructure Office 365 ProPlus pour Microsoft 365 Entreprise.
-ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7905bcf37f2cda0e81208a9666c257e2c871110e
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290939"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400228"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4 : Office 365 ProPlus
 
@@ -51,7 +51,7 @@ Pour plus d’informations, reportez-vous à la page relative à la [transformat
 Si vous avez déjà déployé Office 365 ProPlus, consultez les [critères de sortie](office365proplus-exit-criteria.md) de cette phase pour vous assurer que vous répondez aux conditions requises pour Microsoft 365 Entreprise.
 
 >[!Note]
->Pour déployer Windows 10 Entreprise et Office 365 ProPlus ensemble, puis passer à un [bureau moderne](https://www.microsoft.com/microsoft-365/modern-desktop), reportez-vous au [centre de déploiement de bureau moderne](http://aka.ms/howtoshift).
+>Pour déployer ensemble Windows 10 Entreprise et Office 365 ProPlus, voir le [Centre de déploiement du bureau moderne](desktop-deployment-center-home.md).
 >
 
 ## <a name="step-1-assess-your-environment"></a>Étape 1 : évaluer votre environnement

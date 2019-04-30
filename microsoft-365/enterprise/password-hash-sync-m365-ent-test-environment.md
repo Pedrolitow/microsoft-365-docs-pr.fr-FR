@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer la connexion et la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 9a907894d4f842b334403d047cabbdeb42217744
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290974"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353141"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -103,19 +103,17 @@ Tout d’abord, installez et configurez Azure AD Connect sur APP1.
     
 10. Sur la page **Configuration terminée**, cliquez sur **Quitter**.
     
-11. Dans Internet Explorer, accédez au portail Office ([https://office.com](https://office.com)).
+11. Dans Internet Explorer, accédez au Centre d’administration Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)).
     
-12. Sur la page principale du portail, cliquez sur **Administrateur**.
-    
-13. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
+12. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
     Notez le compte nommé **Utilisateur 1**. Ce compte provient du domaine TESTLAB AD DS et prouve que la synchronisation d’annuaires a fonctionné.
     
-14. Cliquez sur le compte **Utilisateur1**. Pour les licences de produits, cliquez sur **Modifier**.
+13. Cliquez sur le compte **Utilisateur1**. Pour les licences de produits, cliquez sur **Modifier**.
     
-15. Dans **Licences de produits**, sélectionnez votre pays, puis cliquez sur le contrôle **Inactif** pour **Office 365 Entreprise E5** (en le définissant sur **Actif**). Faites de même avec la licence **Enterprise Mobility + Security E5**. 
+14. Dans **Licences de produits**, sélectionnez votre pays, puis cliquez sur le contrôle **Inactif** pour **Office 365 Entreprise E5** (en le définissant sur **Actif**). Faites de même avec la licence **Enterprise Mobility + Security E5**. 
 
-16. Cliquez sur **Enregistrer** en bas de la page, puis sur **Fermer**.
+15. Cliquez sur **Enregistrer** en bas de la page, puis sur **Fermer**.
     
 Ensuite, vérifiez si vous pouvez vous connecter à votre abonnement Office 365 avec le <strong>nom d’utilisateur utilisateur1@testlab.</strong>\<votre nom de domaine> du compte Utilisateur1.
 

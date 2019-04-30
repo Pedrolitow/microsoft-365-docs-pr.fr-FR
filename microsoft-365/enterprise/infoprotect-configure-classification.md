@@ -3,7 +3,7 @@ title: 'Étape 2 : Configurer la classification pour votre environnement'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez différentes méthodes pour classer les données de votre organisation.
-ms.openlocfilehash: ca64b98bceb6f969adc964e93a6a1cc872763199
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5323e4f682e8a530601308877423502f64878a4c
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286973"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400088"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Étape 2 : Configurer la classification pour votre environnement
 
@@ -47,38 +47,31 @@ Les types d’informations sensibles sont particulièrement utiles pour se plier
 
 Une partie de définir une stratégie de gouvernance des données consiste à décider combien de temps des types spécifiques de documents ou des documents avec contenu spécifique doivent être conservés, conformément aux stratégies de l’organisation et aux réglementations régionales. Par exemple, certains types de documents doivent être conservés pendant une durée définie avant d’être supprimés et d’autres doivent être conservés indéfiniment.
 
-Pour les documents stockés dans Microsoft 365, définir et appliquer des étiquettes de rétention à des documents et données stockées dans la messagerie Exchange, SharePoint Online, OneDrive Entreprise et messages de conversation et canal Teams. Pour plus d’informations, notamment comment les créer, voir [vue d’ensemble des étiquettes de rétention](https://docs.microsoft.com/office365/securitycompliance/labels).
+Pour les documents stockés dans Microsoft 365, définir et appliquer des étiquettes de rétention à des documents et données stockées dans la messagerie Exchange, SharePoint Online, OneDrive Entreprise et messages de conversation et canal Teams. 
 
 Si vous utilisez des étiquettes de rétention, vous devez configurer une étiquette pour chaque catégorie de fichier qui doit disposer d’une stratégie de rétention appliquée. Au sein de l’étiquette de rétention, vous pouvez spécifier :
 
 - Un ensemble de descriptifs pour les fichiers (par exemple, par département d’entreprise, catégorie de fichier ou règlement).
-
 - Les paramètres de rétention pour les fichiers qui ont l’étiquette de rétention, tels que les heures de conservation et comportements après que la durée de conservation a été atteinte.
 
 Vous pouvez également appliquer automatiquement une étiquette de rétention aux fichiers en configurant un site SharePoint Online pour appliquer une étiquette de rétention par défaut pour tous les nouveaux documents dans le site. 
 
-Pour plus d’informations, voir[Vue d’ensemble d’étiquettes de rétention](https://docs.microsoft.com/office365/securitycompliance/labels).
+Pour plus d’informations, voir[Vue d’ensemble des étiquettes de rétention](https://docs.microsoft.com/office365/securitycompliance/labels).
 
 ### <a name="sensitivity-labels"></a>Étiquettes de niveau de confidentialité
 
 Une partie de protection et implémentation de sécurité pour des types de documents ou des documents avec contenu spécifique consiste en les marquer d’une étiquette de sorte que la sécurité supplémentaire puisse être appliquée. Avec des étiquettes de niveau de confidentialité dans Microsoft 365, vous pouvez :
 
 - Appliquer des paramètres de protection comme le chiffrement, autorisations ou ajouter un filigrane.
-
 - Empêcher les contenus sensibles de sortir de votre organisation sur les appareils exécutant Windows, à l’aide de la protection de point de terminaison dans Microsoft Intune. 
-
 - Utiliser la protection de point de terminaison Protection des Informations Windows (WIP) permet d’empêcher que le contenu soit copié à une application tierce, par exemple, Twitter ou Gmail, ou copié sur un stockage amovible, par exemple, un lecteur USB.
-
 - Utiliser Microsoft Cloud App Security pour protéger le contenu dans les services tiers et les applications tierces. 
-
 - Classifier du contenu sans utiliser les paramètres de protection.
 
 Si vous utilisez des étiquettes de niveau de confidentialité, vous devez configurer une étiquette pour chaque niveau de protection d’information et de sécurité. Par exemple, créer trois étiquettes sensibilité pour :
 
 - Baseline
-
 - Sensible
-
 - Hautement réglementé
 
 Pour plus d’informations, voir[Vue d’ensemble des étiquettes de sensibilité](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
@@ -102,12 +95,14 @@ Si vous avez des étiquettes sensibilité et Azure Information Protection, vous 
 
 Pour consulter un exemple de système de classification qui comprend des données personnelles pour le RGPD, reportez-vous à la rubrique [Création d’un schéma de classification pour les données personnelles](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
 
+## <a name="take-it-for-a-test-drive"></a>Obtenir la version d’évaluation
+
 |||
 |:-------|:-----|
 |![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de Laboratoire de Test : Classification des données](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-Comme point de contrôle intermédiaire, consultez les [critères de sortie](infoprotect-exit-criteria.md#crit-infoprotect-step3) correspondant à cette étape.
+Comme point de contrôle intermédiaire, consultez les [critères de sortie](infoprotect-exit-criteria.md#crit-infoprotect-step2) correspondant à cette étape.
 
 ## <a name="next-step"></a>Étape suivante
 

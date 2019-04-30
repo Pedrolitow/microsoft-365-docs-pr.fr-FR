@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e80c169a8aefa60c9e7b3be874a1fb26c86078b6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291449"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353166"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
@@ -55,9 +55,9 @@ Cette configuration se compose des éléments suivants :
 
 Tout d’abord, configurez le compte utilisateur 1 avec le rôle d’administrateur général.
 
-1. À partir du[portail Office](https://office.com), connectez-vous avec votre compte Administrateur général.
+1. À partir du [Centre d’administration Microsoft 365](https://portal.microsoft.com), connectez-vous avec votre compte d’administrateur général.
 
-2. Cliquez sur la vignette**administrateur**. À partir du nouvel onglet **centre d’administration Microsoft 365**de votre navigateur, cliquez sur **Utilisateurs actifs**.
+2. Cliquez sur **Utilisateurs actifs**.
  
 3. Sur la page**Activer les utilisateurs**, cliquez sur le compte**Utilisateur1**,
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: 3112589a023a563ff599535e1e9045a3d3db3bce
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289187"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400058"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
@@ -41,13 +41,13 @@ Il existe trois méthodes principales pour déployer Microsoft 365 Entreprise :
 
 FastTrack est un avantage continu et renouvelable, disponible dans le cadre de votre abonnement, qui est remis par les ingénieurs Microsoft pour vous aider à migrer vers le cloud à votre rythme. FastTrack permet également d’accéder à des partenaires qualifiés pour des services supplémentaires. Avec plus de 40 000 clients activés à ce jour, FastTrack vous aide à optimiser votre retour sur investissement, accélérer le déploiement et augmenter l’adoption au sein de votre organisation. Voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-Si vous souhaitez tirer parti de FastTrack pour déployer Microsoft 365 Entreprise, vous pouvez utiliser le [conseiller de déploiement de Microsoft 365](https://aka.ms/microsoft365setupguide) FastTrack pour obtenir des instructions sur la façon de déployer et configurer votre infrastructure de base. Notez que vous devez être connecté en tant qu’administrateur général dans un client Office 365 ou Microsoft 365 afin d’accéder à cette page.
+Si vous souhaitez tirer parti de FastTrack pour déployer Microsoft 365 Entreprise, vous pouvez utiliser le [conseiller de déploiement de Microsoft 365](https://aka.ms/microsoft365setupguide) FastTrack pour obtenir des instructions sur la façon de déployer et configurer votre infrastructure de base. Pour accéder à cette page, vous devez être connecté en tant qu’administrateur général dans un client Office 365 ou Microsoft 365.
 
 Commencer votre route de déploiement de bout à bout avec FastTrack[ici](https://fasttrack.microsoft.com/microsoft365).
 
 ## <a name="microsoft-365-enterprise-deployment-guide"></a>Guide de déploiement de Microsoft 365 Entreprise
 
-Le Guide de déploiement de Microsoft 365 Entreprise vous guide dans la configuration correcte des produits et fonctionnalités Microsoft 365 Entreprise.
+Le Guide de déploiement de Microsoft 365 Entreprise vous accompagne dans la configuration correcte des produits et fonctionnalités Microsoft 365 Entreprise.
 
 Pour déployer Microsoft 365 Entreprise vous-même, vous pouvez :
 

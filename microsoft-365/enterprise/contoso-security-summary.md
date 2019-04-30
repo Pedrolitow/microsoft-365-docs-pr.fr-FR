@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Utilisation des fonctionnalités de sécurité sur Microsoft 365 Entreprise par Contoso.
-ms.openlocfilehash: 55ee8ff88490a82a9438b076bcebfab976f8baf6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 1aade29c8a4f9348b749025818e433981ec19091
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289032"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353100"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Résumé de la sécurité de Microsoft 365 Entreprise pour Contoso Corporation
 
@@ -56,7 +56,7 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
 - Comptes d’administrateur général dédiés avec l’authentification multifacteur (MFA) et Azure AD Privileged Identity Management (PIM)
 
-  Au lieu d’attribuer le rôle d’administrateur général aux comptes d’utilisateurs ordinaires, Contoso a créé trois comptes d’administrateur général dédiés avec des mots de passe très forts et les a protégés avec l’authentification multifacteur (MFA) et la gestion des identités Azure AD Privileged Identity Management (PIM). 
+  Au lieu d’attribuer le rôle d’administrateur général aux comptes d’utilisateurs ordinaires, Contoso a créé trois comptes d’administrateur général dédiés avec des mots de passe très forts et les a protégés avec l’authentification multifacteur (MFA) et la gestion des identités Azure AD Privileged Identity Management (PIM).  PIM est disponible uniquement avec Microsoft 365 Entreprise E5.
 
   La connexion par le biais d’un compte d’administrateur général se fait uniquement pour des tâches d’administration spécifiques ; les mots de passe ne sont connus que par le personnel désigné et ne peuvent être utilisés que dans le temps configuré dans Azure AD PIM. 
 
@@ -105,7 +105,7 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
 ## <a name="information-protection"></a>Protection des informations
 
-- Protection des biens numériques sensibles et hautement réglementés avec Azure Information Protection
+- Protection des biens numériques sensibles et hautement réglementés avec des étiquettes Azure Information Protection
 
   Contoso a défini trois niveaux de protection des données et déployé les étiquettes [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) que les utilisateurs appliquent aux biens numériques. Pour ses secrets commerciaux et autres propriétés intellectuelles, Contoso utilise les sous-étiquettes Azure Information Protection dans une stratégie limitée pour les données hautement réglementées qui chiffre du contenu et limite l’accès à des groupes de sécurité spécifiques.
 
@@ -119,11 +119,7 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
 - Surveillance du cloud avec Microsoft Cloud App Security
 
-  Contoso utilise [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) pour mapper son environnement cloud, surveiller son utilisation et détecter les événements de sécurité et les incidents. 
-
-- Surveillance de la sécurité Office 365 avec le service Sécurité des applications cloud Office 365
-
-  Les administrateurs de sécurité de Contoso configurent des alertes à l’aide du service [Sécurité des applications cloud Office 365 (CAS)](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview) afin d’être avertis des activités inhabituelles ou risquées des utilisateurs, telles que le téléchargement de grandes quantités de données à partir de SharePoint Online ou OneDrive Entreprise, plusieurs tentatives de connexion ratées ou des connexions à partir d’adresses IP inconnues ou dangereuses.
+  Contoso utilise [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) pour mapper son environnement cloud, surveiller son utilisation et détecter les événements de sécurité et les incidents. Microsoft Cloud App Security est disponible uniquement avec Microsoft 365 Entreprise E5.
 
 - Gestion des périphériques avec Microsoft Intune
 

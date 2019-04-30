@@ -12,17 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenez les phases principales du déploiement de l’infrastructure de base pour Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: 668775097eeffff569b99cc9fe4cd259f5d25c22
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Comprenez les phases principales du déploiement de l’infrastructure de base pour Microsoft 365 Entreprise au sein de votre organisation, également appelé déploiement de base.
+ms.openlocfilehash: e6b8a71f59f20633e323c71e931b930198bc4deb
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287111"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400048"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastructure de base de Microsoft 365 Entreprise
 
-Si vous faites le déploiement de bout à bout de Microsoft 365 Entreprise vous-même, vous devez tout d’abord créer une base solide sur laquelle les applications et services reposent et peuvent déverrouiller la créativité et le travail d’équipe dans un environnement sécurisé. 
+Si vous faites le déploiement de bout à bout de Microsoft 365 Entreprise vous-même, vous devez tout d’abord créer une base solide sur laquelle les applications et services reposent et peuvent déverrouiller la créativité et le travail d’équipe dans un environnement sécurisé. Cette base est parfois appelée déploiement de base.
 
 Pour une trajectoire définie pour le déploiement bout à bout, vous pouvez utiliser chacune de ces phases pour planifier et déployer l’infrastructure de base de Microsoft 365 Entreprise :
 
