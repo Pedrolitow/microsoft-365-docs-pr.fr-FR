@@ -3,7 +3,7 @@ title: Critères de sortie de l’infrastructure de protection des informations
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Examinez les critères de l’infrastructure et des services de protection des informations pour vérifier que votre configuration remplit les conditions requises de Microsoft 365 Entreprise.
-ms.openlocfilehash: 681b3bb2500680b4f5d5801486347aec1b801714
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 9c74a3994a1a404583326f65f1cec579fccbe659
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283694"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400038"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Critères de sortie de l’infrastructure de protection des informations
 
@@ -39,21 +39,21 @@ Vous utilisez au moins trois niveaux de sécurité :
 
 Si nécessaire, l’[Étape 1](infoprotect-define-sec-infoprotect-levels.md) peut vous aider à répondre à cette exigence. 
 
-<a name="crit-infoprotect-step4"></a>
+<a name="crit-infoprotect-step3"></a>
 ## <a name="required-increased-security-for-microsoft-365-is-configured"></a>Obligatoire : le paramètre Sécurité accrue de Microsoft 365 est configuré
 
 Vous avez configuré les paramètres de [Sécurité accrue d’Office 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) suivants :
 
 - Stratégies de gestion des menaces dans le Centre de sécurité Microsoft 365
 - Autres paramètres à l’échelle du client Exchange Online
-- Stratégies de partage à l’échelle du client dans le Centre d’administration SharePoint
+- Stratégies de partage à l’échelle du client dans le Centre d’administration SharePoint Online
 - Paramètres d’Azure Active Directory (Azure AD)
 
-Vous avez également [activé Office 365 - Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams](https://docs.microsoft.com/fr-FR/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams).
+Vous avez également [activé Office 365 - Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams).
 
 Si nécessaire, l’[Étape 3](infoprotect-configure-increased-security-office-365.md) peut vous aider à répondre à cette exigence. 
 
-<a name="crit-infoprotect-step3"></a>
+<a name="crit-infoprotect-step2"></a>
 ## <a name="optional-classification-is-configured-across-your-environment"></a>Facultatif : configurer la classification au sein de votre environnement
 
 Vous avez travaillé avec vos équipes juridiques et de conformité afin de développer une classification et un système d’étiquetage appropriés pour les stratégies de sécurité et de gouvernance des données de votre organisation. 
@@ -67,15 +67,37 @@ Ces stratégies correspondent à la configuration et au déploiement de ce qui s
 
 Si nécessaire, l’[Étape 2](infoprotect-configure-classification.md) peut vous aider à répondre à cette exigence. 
 
+
+<a name="crit-infoprotect-step4"></a>
+## <a name="optional-windows-information-protection-is-deployed-across-your-environment"></a>Facultatif : la Protection des informations Windows est déployée dans votre environnement
+
+Une stratégie Intune est déployée et appliquée sur vos appareils Windows 10 Entreprise inscrits, qui définit les aspects suivants :
+
+- Applications à protéger.
+- Niveau de protection.
+- Étendue de la protection.
+
+Si nécessaire, l’[Étape 4](infoprotect-deploy-windows-information-protection.md) peut vous aider à respecter cette exigence. 
+
 <a name="crit-infoprotect-step5"></a>
+## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>Facultatif : la protection contre la perte de données Office 365 (DLP) est déployée.
+
+Vous avez analysé, testé, puis déployé l’ensemble des stratégies DLP (avec des emplacements et des règles assortis de conditions et d’actions) que votre organisation exige pour protéger les données des clients et d’autres types de données privées, ainsi que pour se conformer aux réglementations et exigences sectorielles et régionales.
+
+Votre personnel chargé de la conformité et de la sécurité des données utilise le tableau de bord de sécurité et conformité Office 365 pour surveiller les incidents DLP.
+
+Si nécessaire, l’[Étape 5](infoprotect-data-loss-prevention.md) peut vous aider à respecter cette exigence. 
+
+
+<a name="crit-infoprotect-step6"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>Facultatif : configurer la gestion des accès privilégiés pour Office 365
 
 Vous avez utilisé les informations de la rubrique [Configurer la gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) pour activer l’accès privilégié et créer une ou plusieurs stratégies d’accès privilégié au sein de votre organisation. Vous avez configuré ces stratégies et l’accès juste-à-temps est activé pour l’accès aux données sensibles ou aux paramètres de configuration critiques.
 
-Si nécessaire, l’[Étape 4](infoprotect-configure-privileged-access-management.md) peut vous aider à répondre à cette exigence. 
+Si nécessaire, l’[Étape 6](infoprotect-configure-privileged-access-management.md) peut vous aider à respecter cette exigence. 
 
 ## <a name="results-and-next-steps"></a>Résultats et étapes suivantes
 
-Votre infrastructure de protection des informations Microsoft 365 Entreprise utilise des niveaux de sécurité définis, une sécurité renforcée pour Office 365, une classification à l’aide d’étiquettes et de types de données sensibles, ainsi qu’une gestion des accès privilégiés.
+Votre infrastructure de protection des informations pour Microsoft 365 Entreprise utilise des niveaux de sécurité définis, une sécurité renforcée pour Office 365, une classification à l’aide d’étiquettes et de types de données sensibles, la Protection des informations Windows ainsi qu’une gestion des accès privilégiés.
 
 Si vous suivez le déploiement de bout en bout de Microsoft 365 Entreprise, vous êtes maintenant prêt à tirer parti de l’ensemble des fonctionnalités et de la configuration de votre infrastructure de base pour vos [charges de travail et scénarios](deploy-workloads.md).
