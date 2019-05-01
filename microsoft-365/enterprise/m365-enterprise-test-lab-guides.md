@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Servez-vous des guides de laboratoire de test pour configurer les environnements de développement/test, de preuve de concept et de démonstration pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 027386f9b44d09d2927c2473d1ef27381f82f969
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283644"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353133"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Guides de laboratoire de test Microsoft 365 Entreprise
 
@@ -65,7 +65,7 @@ Pour obtenir une description des fonctionnalités liées à l’identité, repor
 
 - [Protéger des comptes Administrateur général](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   Verrouiller vos comptes d’administrateur général avec la sécurité des applications cloud Office 365 et les stratégies d’accès conditionnel.
+   Verrouillez vos comptes d’administrateur général avec des stratégies d’accès conditionnel.
 
 - [Écriture différée de mot de passe](password-writeback-m365-ent-test-environment.md)
 
@@ -82,6 +82,11 @@ Pour obtenir une description des fonctionnalités liées à l’identité, repor
 - [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 
    Recherchez des vulnérabilités dans vos comptes utilisateur actuel.
+
+- [Accès aux identités et appareils](identity-device-access-m365-test-environment.md)
+
+   Créez un environnement pour tester les configurations recommandées pour l’accès aux identités aux appareils et les stratégies d’accès conditionnel.
+
 
 ## <a name="mobile-device-management"></a>Gestion des appareils mobiles
 
