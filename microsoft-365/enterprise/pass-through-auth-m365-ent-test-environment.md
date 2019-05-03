@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer l’authentification directe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: e925f0b48194c94993e7bf3e08f1f18650b19a23
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: b92700d28a758842d3754bb2b359181b9ee59d2e
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400108"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553353"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Authentification directe pour votre environnement de test Microsoft 365
 
@@ -48,7 +48,7 @@ Suivez les instructions fournies dans l’article [Synchronisation de hachage de
 Cette configuration se compose des éléments suivants :  
   
 - Les abonnements à la version payante ou d’évaluation Office 365 E5 et EMS E5.
-- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser régulièrement le domaine Windows Server AD TESTLAB (Active Directory Domain Services :AD DS) avec le client Azure AD de vos abonnements Office 365 et EMS E5 de manière périodique.
+- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine TESTLAB AD DS avec le client Azure AD, le client de vos abonnements Office 365 et EMS E5.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Phase 2 : Configuration de l’authentification directe pour Azure AD Connect sur APP1
 
