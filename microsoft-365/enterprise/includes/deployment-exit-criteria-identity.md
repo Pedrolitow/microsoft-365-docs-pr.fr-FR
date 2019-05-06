@@ -65,7 +65,7 @@ Pour vérifier que l’authentification avec les informations d’identification
 
 Pour vérifier que la synchronisation d’annuaires fonctionne correctement, procédez comme suit :
 
-1.  Créer un nouveau groupe test dans Active Directory Domain Services (AD DS).
+1.  Créez un groupe de test dans AD DS.
 2.  Attendez l’heure de synchronisation.
 3.  Vérifiez votre client Azure AD pour vous assurer que le nouveau nom du groupe de test apparaît.
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Planifiez l’ensemble des utilisateurs et des groupes qui travailleront pour votre organisation.
-ms.openlocfilehash: f8b3df73518e33c7750c0b72b2cb9f36bc8e9745
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c74ff672ce84a5609c11eb4fa7a0405d350349ab
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283789"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553293"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>Étape 1 : Planifier les utilisateurs et les groupes
 
@@ -42,7 +42,7 @@ Lorsque votre organisation adopte Microsoft 365 Entreprise, votre fournisseur d�
 - **Active Directory Domain Services (AD DS)**, fournisseur d’identité intranet hébergé sur des ordinateurs exécutant Windows Server. Celui-ci est généralement utilisé par les organisations qui disposent déjà d’un fournisseur d’identité localement.
 - **Azure Active Directory (Azure AD**), solution de gestion des identités et des accès en tant que service (IDaaS) qui fournit un large éventail de fonctionnalités pour la gestion et la protection de votre environnement. Celle-ci est généralement utilisée par les organisations qui n’ont aucune infrastructure locale existante.
 
-Si votre organisation dispose déjà d’un fournisseur d’identité local, vous devez synchroniser vos groupes et comptes d’utilisateur Active Directory Domain Services (AD DS) avec Azure AD pour fournir un accès plus transparent aux services basés sur le cloud de Microsoft 365 Entreprise. Vous pouvez également utiliser Azure AD pour créer et gérer des groupes qui existent uniquement dans le cloud Microsoft.
+Si votre organisation dispose déjà d’un fournisseur d’identité local, vous devez synchroniser vos groupes et comptes d’utilisateur AD DS avec Azure AD pour fournir un accès plus transparent aux services basés sur le cloud de Microsoft 365 Entreprise. Vous pouvez également utiliser Azure AD pour créer et gérer des groupes qui existent uniquement dans le cloud Microsoft.
 
 Une fois que vous avez vos utilisateurs et groupes dans Azure AD, vous pouvez :
 

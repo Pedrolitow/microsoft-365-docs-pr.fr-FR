@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure et les services d’identités.
-ms.openlocfilehash: e36f6e88c41454a951f6c6da4253c4bac07f2fb8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0f2d1cbeef87301729b23a6290277b28466c9770
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285547"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553303"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2 : Critères de sortie de l’infrastructure d’identités
 
@@ -93,7 +93,7 @@ Pour vérifier que l’authentification avec les informations d’identification
 
 Pour vérifier que la synchronisation d’annuaires fonctionne correctement, procédez comme suit :
 
-1.  Créer un nouveau groupe test dans Active Directory Domain Services (AD DS).
+1.  Créez un groupe de test dans AD DS.
 2.  Attendez l’heure de synchronisation.
 3.  Vérifiez votre client Azure AD pour vous assurer que le nouveau nom du groupe de test apparaît.
 

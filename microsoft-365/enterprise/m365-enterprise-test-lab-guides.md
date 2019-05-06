@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Servez-vous des guides de laboratoire de test pour configurer les environnements de développement/test, de preuve de concept et de démonstration pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: e45a4c903932116a54f0660f08b394d8d2f91307
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353133"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553283"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Guides de laboratoire de test Microsoft 365 Entreprise
 
@@ -49,7 +49,7 @@ Pour obtenir une description des fonctionnalités liées à l’identité, repor
 
 - [Synchronisation de hachage de mot de passe](password-hash-sync-m365-ent-test-environment.md)
   
-   Permet d’activer et de tester la synchronisation d’annuaires basée sur le hachage de mot de passe à partir d’un contrôleur de domaine Windows Server AD (Active Directory Domain Services :AD DS).
+   Activez et testez la synchronisation d’annuaires basée sur le hachage de mots de passe à partir d’un contrôleur de domaine AD DS.
 
 - [Authentification directe](pass-through-auth-m365-ent-test-environment.md)
   
