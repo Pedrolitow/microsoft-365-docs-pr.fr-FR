@@ -3,7 +3,7 @@ title: Configuration de base légère
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 05/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test léger destiné aux tests Microsoft 365 Entreprise.
-ms.openlocfilehash: 26109f6237ad2eaeb2ac323c190a885031c03a04
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7ad6d5bcf4e53b918af2c06f81c2744cec7c1b35
+ms.sourcegitcommit: 1b77b699b8e23df8b98530dfad3a29b4aaa0753c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289276"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867994"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuration de base légère
 
-Cet article vous fournit des instructions étape par étape pour créer un environnement simplifié qui comprend Office 365 E5, Enterprise Mobility + Security (EMS) E5 et un ordinateur exécutant Windows 10 Entreprise. 
+Cet article vous fournit des instructions étape par étape pour créer un environnement simplifié avec un abonnement Microsoft 365 E5 et un ordinateur exécutant Windows 10 Entreprise. 
 
-![Environnement de test Microsoft 3656 Entreprise léger](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Environnement de test Microsoft 365 Entreprise léger](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 Utilisez l’environnement que vous aurez créé pour tester les fonctionnalités et le bon fonctionnement de [Microsoft 365 Entreprise](https://www.microsoft.com/microsoft-365/enterprise).
 
@@ -37,52 +37,51 @@ Utilisez l’environnement que vous aurez créé pour tester les fonctionnalité
 
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>Phase 1 : Création de votre abonnement Office 365 E5
 
-Suivez les étapes des phases 2 et 3 de l’article sur l’[environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) pour créer un environnement de développement/test Office 365 léger, comme illustré à la Figure 1.
-  
-**Figure 1 : Votre abonnement Office 365 E5 avec son client et ses comptes d’utilisateur Azure Active Directory (AD)**
+Suivez les étapes des phases 2 et 3 de l’article sur l’[environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) pour créer un environnement de développement/test Office 365 léger.
 
-![Phase 1 de l’environnement de test Microsoft 365 Entreprise](media/lightweight-base-configuration-microsoft-365-enterprise/Phase1.png)
+>[!Note]
+>Vous avez créé un abonnement d’évaluation d’Office 365 pour que votre environnement de développement/test ait un client Azure AD distinct de tout abonnement payant que vous utilisez actuellement. Cette séparation signifie que vous pouvez ajouter et supprimer des utilisateurs et groupes dans le client test sans incidence sur vos abonnements de production.
+>
+  
+## <a name="phase-2-add-a-microsoft-365-e5-trial-subscription"></a>Phase 2 : Ajoutez un abonnement d’évaluation Microsoft 365 E5.
 
-> [!NOTE]
-> L’abonnement à la version d’évaluation d’Office 365 E5 est valide pendant 30 jours. Vous pouvez facilement l’étendre jusqu’à 60 jours. Pour un environnement de test permanent, créez un abonnement payant avec un nombre réduit de licences. 
+Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation Microsoft 365 E5 et l’ajoutez à la même organisation que votre abonnement d’évaluation d’Office 365 E5.
   
-## <a name="phase-2-add-ems"></a>Phase 2 : Ajout d’EMS
+Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attribuez une licence Microsoft 365 à votre compte d’administrateur général.
+  
+1. Utilisez une instance privée d’un navigateur Internet pour vous connecter au centre d’administration Microsoft 365 sur [http://admin.microsoft.com](http://admin.microsoft.com)à l’aide de vos informations d’identification de compte d’administrateur général.
+    
+2. Sur la page **Centre d’administration Microsoft 365**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
+    
+3. Sur la page**acheter des services**, recherchez l’élément **Microsoft 365 E5**. Pointez votre souris dessus et cliquez sur **Démarrer l’essai gratuit**.
 
-Dans cette phase, vous vous inscrivez pour l’abonnement à la version d’évaluation d’EMS E5 et l’ajoutez à la même organisation que votre abonnement à la version d’évaluation d’Office 365 E5.
-  
-Tout d’abord, ajoutez l’abonnement d’évaluation EMS E5 et attribuez une licence EMS à votre compte Administrateur général.
-  
-1. Utilisez une instance privée d’un navigateur Internet pour vous connecter au portail Office à l’aide de vos informations d’identification de compte d’administrateur général. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
-    
-2. Cliquez sur la vignette **Administration**.
-    
-3. Sous l’onglet **Centre d’administration Microsoft 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Facturation > Acheter des services**.
-    
-4. Dans la page **Acheter des services**, recherchez l’élément **Enterprise Mobility + Security E5**. Pointez votre souris dessus et cliquez sur **Démarrer l’essai gratuit**.
-    
+4. Sur la page **version d’évaluation de Microsoft 365 E5**, choisissez de recevoir un SMS ou un appel, entrez votre numéro de téléphone, puis cliquez sur **envoyer un SMS** ou **m’appeler**.
+
 5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
-    
+
 6. Dans la page **Réception de la commande**, cliquez sur **Continuer**.
-    
-7. Sous l’onglet **Centre d’administration Office 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
-    
-8. Cliquez sur votre compte Administrateur général, puis cliquez sur **Modifier** pour les **licences de produit**.
-    
-9. Dans le volet **Licences de produit**, activez la licence de produit pour **Enterprise Mobility + Security E5** en sélectionnant **Activer**, cliquez sur **Enregistrer**, cliquez deux fois sur **Fermer**.
-    
-> [!NOTE]
-> L’abonnement à la version d’évaluation d’Enterprise Mobility + Security E5 est de 90 jours. Pour un environnement de test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences. 
+
+7. Dans le centre d’administration Microsoft 365, cliquez sur **utilisateurs actifs**et votre compte d’administrateur.
+
+8. Cliquez sur **modifier** pour **licences de produits**.
+
+9. Désactivez la licence pour Office 365 Entreprise E5 et activer la licence pour Microsoft 365 E5.
+
+10. Cliquez sur **Enregistrer > Fermer > Fermer**.
+
+***Si vous avez terminé la Phase 3 de l’*** [environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), répétez les étapes 8 et 11 de la procédure précédente pour tous vos autres comptes (Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5).
   
- ***Si vous avez terminé la Phase 3 de l’*** [environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), répétez les étapes 8 et 9 de la procédure précédente pour tous vos autres comptes (Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5).
+> [!NOTE]
+> L’abonnement d’évaluation de Microsoft 365 E5 est de 30 jours. Pour un environnement de test permanent, convertissez cet abonnement en abonnement payant avec un nombre réduit de licences. 
   
 Votre environnement de test comporte maintenant :
   
-- Des abonnements d’évaluation Office 365 E5 Entreprise et EMS E5 qui partagent le même client Azure AD avec votre liste des comptes d’utilisateur.
-- Tous vos comptes d’utilisateur appropriés (l’administrateur général ou tous les cinq comptes d’utilisateur) sont activés pour utiliser Office 365 E5 et EMS E5.
+- Un abonnement d’évaluation de Microsoft 365 E5.
+- Tous vos comptes d’utilisateur appropriés (l’administrateur général ou tous les cinq comptes d’utilisateur) sont activés pour utiliser Microsoft 365 E5.
     
-La figure 2 montre la configuration obtenue, qui ajoute EMS.
+La figure 1 illustre la configuration qui en résulte, avec ajout de Microsoft 365 E5, qui inclut Office 365 et Enterprise Security + Management (EMS).
   
-**Figure 2 : Ajout de l’abonnement à la version d’évaluation d’EMS**
+**Figure 1 : Ajout de l’abonnement d’évaluation Microsoft 365**
 
 ![Phase 2 de l’environnement de test Microsoft 365 Entreprise](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -150,6 +149,7 @@ New-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName -Location $l
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "M365Ent-TestLab"
 $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 $pip=New-AzPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
 $vm=New-AzVMConfig -VMName WIN10 -VMSize Standard_D1_V2
@@ -168,13 +168,13 @@ Lorsque l’ordinateur physique ou la machine virtuelle avec Windows 10 Entrep
 > [!NOTE]
 > Suivez [ces instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon) pour vous connecter à une machine virtuelle dans Azure.
   
-Ensuite, associez l’ordinateur WIN10 au client Azure AD de vos abonnements Office 365 et EMS.
+Ensuite, associez l’ordinateur WIN10 au client Azure AD de votre abonnement Microsoft 365 E5.
   
 1. Sur le bureau de l’ordinateur WIN10, cliquez sur **Démarrer > Paramètres > Comptes > Accès Professionnel ou Scolaire > Se connecter**.
     
 2. Dans la boîte de dialogue **Configurer un compte professionnel ou scolaire**, cliquez sur **Joindre cet appareil à Azure Active Directory**.
     
-3. Dans **Compte professionnel ou scolaire**, saisissez le nom de compte Administrateur général de votre abonnement Office 365, puis cliquez sur **Suivant**.
+3. Dans **Compte professionnel ou scolaire**, saisissez le nom de compte Administrateur général de votre abonnement Microsoft 365 E5, puis cliquez sur **Suivant**.
     
 4. Dans **Saisie du mot de passe**, saisissez le mot de passe de votre compte Administrateur général, puis cliquez sur **Se connecter**.
     
@@ -186,7 +186,7 @@ Ensuite, installez Office 365 ProPlus sur l’ordinateur WIN10.
   
 1. Ouvrez le navigateur Microsoft Edge et connectez-vous au portail Office à l’aide de vos informations d’identification de compte d’administrateur général. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Dans l’onglet **Accueil Microsoft Office**, cliquez sur **Installer Office 2016**.
+2. Dans l’onglet **Accueil Microsoft Office**, cliquez sur **Installer Office**.
     
 3. Lorsque vous êtes invité à décider de l’action à effectuer, cliquez sur **Exécuter**, puis sur **Oui** pour **Contrôle de compte d’utilisateur**.
     
@@ -194,12 +194,11 @@ Ensuite, installez Office 365 ProPlus sur l’ordinateur WIN10.
     
 La figure 3 indique l’environnement obtenu, incluant l’ordinateur WIN10 qui a :
 
-- rejoint le client Azure AD de vos abonnements Office 365 et EMS ;
-- été inscrit en tant que périphérique Azure AD dans Intune (EMS) ;
+- rejoint le client Azure AD de votre abonnement Microsoft 365 E5 ;
+- été inscrit en tant que périphérique Azure AD dans Microsoft Intune (EMS) ;
 - installé Office 365 ProPlus.
   
-**Figure 3 : Configuration finale de l’environnement de test Microsoft 365**
-
+**Figure 2 : Configuration finale de l’environnement de test Microsoft 365**
 
 ![Phase 4 de l’environnement de test Microsoft 365 Entreprise](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
   

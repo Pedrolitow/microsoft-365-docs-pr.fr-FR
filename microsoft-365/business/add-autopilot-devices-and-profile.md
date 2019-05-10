@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: Découvrez comment utiliser Windows autoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise.
-ms.openlocfilehash: e0802ddcc0964d0b8d102f7dbdb9116b33cdcf58
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Découvrez comment utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise.
+ms.openlocfilehash: 8c4a14b4b9dcbf7a30c1e6e0bdd53418a1ab8a03
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660663"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot
 
-[] Vous pouvez utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu'ils soient prêts à être utilisés par vos employés dès que vous les leur attribuez.
+Vous pouvez utiliser Windows AutoPilot pour configurer de **nouveaux** appareils Windows 10 pour votre entreprise afin qu’ils soient prêts à être utilisés dès que vous les fournissez à vos employés.
   
 ## <a name="device-requirements"></a>Configuration requise de l’appareil
 
@@ -41,13 +41,17 @@ Les appareils doivent respecter ces exigences :
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Utiliser le guide de configuration pour créer des appareils et des profils
 
+![Bannière pointant vers https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 Si vous n'avez pas encore créé de groupes d'appareils et de profils, la meilleure façon de commencer consiste à utiliser le guide détaillé, mais vous pouvez également [ajouter des appareils](create-and-edit-autopilot-devices.md) et leur [attribuer des profils](create-and-edit-autopilot-profiles.md) sans utiliser le guide. 
   
-1. Dans le Centre d'administration Microsoft 365 Entreprise, recherchez la carte **Actions de l'appareil** et sélectionnez **Déployer Windows avec AutoPilot**.
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>l’adresse.
+
+2. Sur le côté gauche, sélectionnez **périphériques** \> **AutoPilot**.
+
+    ![Dans le centre d’administration, sélectionnez périphériques, puis AutoPilot.](media/AutoPilot.png)
   
-2. Sur la page **Préparer Windows**, cliquez ou appuyez sur **Guide de démarrage**.
+2. Sur la **** page AutoPilot, cliquez ou appuyez sur **Guide de démarrage**.
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   

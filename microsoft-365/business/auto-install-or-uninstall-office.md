@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: "Installez ou désinstallez Office sur des appareils Windows 10 à partir du centre d'administration de Microsoft 365 Business. "
-ms.openlocfilehash: fef4a543aed489202bf05dfb1e8cafbb784ca819
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: 'Installez ou désinstallez Office sur des appareils Windows 10 à partir du centre d’administration de Microsoft 365 Business. '
+ms.openlocfilehash: 94e5761b516c150caa11048be73d97f468b09fb5
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277272"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660567"
 ---
 # <a name="automatically-install-or-uninstall-office-on-windows-10-devices"></a>Automatiquement installer ou désinstaller Office sur les appareils Windows 10
+
+![Bannière pointant vers https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
 [] Vous pouvez rapidement et facilement installer Office sur les ordinateurs Windows 10 à partir du centre d'administration Microsoft 365 Entreprise.
   
@@ -38,7 +40,7 @@ Pour mieux comprendre comment cela fonctionne avec les applications Office déj�
 1. Connectez-vous au [centre d'administration](https://aka.ms/bcsportal) avec les informations d'identification de l'administrateur général. 
     
 2. Dans la carte **Appareils**, sélectionnez **Gérer le déploiement d'Office**.
-      Si vous ne voyez pas la carte actions de l' **appareil** , dans la page d' **Accueil** du centre d'administration, cliquez sur **Ajouter** (+) pour l'ajouter à votre domicile d'administration.
+      Si vous ne voyez pas la carte actions de l' **appareil** , dans la page d' **Accueil** du centre d’administration, cliquez sur **Ajouter** (+) pour l’ajouter à votre domicile d’administration.
     
     ![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   

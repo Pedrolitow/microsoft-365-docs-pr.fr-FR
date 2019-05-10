@@ -20,15 +20,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: Découvrez maintenant comment déployer automatiquement Office sur les appareils Windows 10 lors de l'installation.
-ms.openlocfilehash: 3b702f2a57fcd0ebffc51e17ed6af00e8f1c485b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Découvrez maintenant comment déployer automatiquement Office sur les appareils Windows 10 lors de l’installation.
+ms.openlocfilehash: b4359a18d93800def558121cdfd7c97ead058180
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278300"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660655"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installer Office sur les appareils Windows 10 lors de l'installation
+
+![Bannière pointant vers https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
 [] Ce paramètre est désactivé par défaut. Vous pouvez l'activer pour vous assurer que les utilisateurs exécutent la dernière version d'Office sur tous leurs appareils Windows 10. Nous vous recommandons cependant de commencer par vérifier que toutes les conditions préalables sont remplies. Les utilisateurs doivent disposer d'une licence pour Microsoft 365 Entreprise pour que ce paramètre installe le logiciel sur l'appareil en plus des autres exigences décrites dans [Se préparer pour le déploiement du client Office par Microsoft 365 Business](prepare-for-office-client-deployment.md). 
   

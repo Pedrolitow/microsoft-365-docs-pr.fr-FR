@@ -19,22 +19,24 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 'Découvrez comment utiliser Microsoft 365 Business to Factory pour réinitialiser vos appareils Windows 10. '
-ms.openlocfilehash: 8340bd6a24f3b4d875f6482c03a69275a9a48f33
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c125cdb72bf3ca7077b1c283b698ae92ef454b88
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283720"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660538"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Rétablir les paramètres par défaut des appareils Windows 10
 
+![Bannière pointant vers https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 [] La réinitialisation aux paramètres d'usine rétablit les paramètres d'origine d'un appareil (ceux qu'il avait lorsque vous l'avez acheté). Toutes les applications et données qui ont été installées ou enregistrées sur l'appareil après l'achat sont supprimées. Vous pouvez utiliser Microsoft 365 Entreprise pour réinitialiser les appareils Windows 10 que vous gérez aux paramètres d'usine.
   
-1. Connectez-vous au [Centre d'administration](https://aka.ms/bcsportal) avec des informations d'identification d'administrateur général. 
+1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>l’adresse.. 
     
-2. Dans le centre d'administration, dans le volet de navigation de gauche, sélectionnez **périphériques** \> **gérés**.
+2. Dans le volet de navigation de gauche, choisissez **gestion**des **périphériques** \> .
 
-3. Sur la page **gérer** , activez la case à cocher en regard de l'appareil à partir duquel vous souhaitez supprimer les données, puis, dans la liste déroulante **gérer** , sélectionnez Réinitialisation **usine**.
+3. Sur la page **gérer** , activez la case à cocher en regard de l’appareil à partir duquel vous souhaitez supprimer les données, puis, dans la liste déroulante **gérer** , sélectionnez Réinitialisation **usine**.
     
 4. Dans le volet **Voulez-vous vraiment réinitialiser les appareils ci-dessous aux paramètres d'entreprise**, sélectionnez **Confirmer** \> **Fermer**.
     

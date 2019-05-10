@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Découvrez les paramètres par défaut et d'autres paramètres disponibles dans Microsoft 365 Business pour sécuriser les appareils Windows 10.
-ms.openlocfilehash: f9e890cde7a8290a9a8e81720d32a6a2889c312f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Découvrez les paramètres par défaut et d’autres paramètres disponibles dans Microsoft 365 Business pour sécuriser les appareils Windows 10.
+ms.openlocfilehash: 5dc6ede8f31f5837d59c200e0b76083dcf419e05
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285914"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660342"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Définir les paramètres de protection des appareils pour les PC Windows 10
 
@@ -34,7 +34,7 @@ Visionnez une vidéo sur la sécurisation des appareils Windows 10 avec Microsof
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. Connectez-vous au [Centre d'administration](https://go.microsoft.com/fwlink/p/?linkid=837890) avec des informations d'identification d'administrateur général. 
+1. SGo vers le centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>à l’adresse. 
     
 2. Dans le volet de navigation de gauche, choisissez **Ajout**de **stratégies** \> de **périphériques** \> .
   
@@ -60,7 +60,7 @@ Pour plus d'informations, voir [Correspondance entre les fonctionnalités de pro
   
 |||
 |:-----|:-----|
-|Paramètre  <br/> |Description  <br/> |
+|Setting  <br/> |Description  <br/> |
 |Protéger les ordinateurs des virus et d'autres menaces à l'aide de l'antivirus Windows Defender  <br/> |L'antivirus Windows Defender doit être activé pour protéger les ordinateurs contre les risques liés à la connexion à internet.  <br/> |
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  <br/> |Active les paramètres Microsoft Edge qui protègent les utilisateurs contre les sites et téléchargements malveillants.  <br/> |
 |Utiliser des règles qui réduisent la surface d'attaque des appareils  <br/> |Quand elle est activée, la réduction de la surface d'attaque aide à bloquer les actions et applications que les logiciels malveillants utilisent généralement pour contaminer des appareils. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour en savoir plus, voir [Réduire les surfaces d'attaque](https://go.microsoft.com/fwlink/?linkid=870417).  <br/> |
