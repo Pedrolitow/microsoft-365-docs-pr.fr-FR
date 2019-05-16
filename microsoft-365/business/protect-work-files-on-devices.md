@@ -3,7 +3,7 @@ title: Protéger les fichiers de travail sur les appareils
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4MobileData
@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
-description: "Découvrez la configuration par défaut et l'ajout de stratégies de gestion des applications pour protéger les données d'entreprise sur les appareils mobiles personnels des utilisateurs. "
-ms.openlocfilehash: 8c534723f8d7ef903612ab637484891b1e21166e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: 'Découvrez la configuration par défaut et l’ajout de stratégies de gestion des applications pour protéger les données d’entreprise sur les appareils mobiles personnels des utilisateurs. '
+ms.openlocfilehash: 1cb2f8079fafd6d3bba153eafcc07d071fd9ccbd
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285283"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072597"
 ---
 # <a name="protect-work-files-on-devices"></a>Protéger les fichiers de travail sur les appareils
 

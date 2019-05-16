@@ -3,7 +3,7 @@ title: Créer et modifier des profils AutoPilot
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: 'Apprenez à créer, modifier, supprimer ou supprimer des profils autoPilot. '
-ms.openlocfilehash: 85fc897b2f428afae8d55feeb577021adaa30f72
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: 'Apprenez à créer, modifier, supprimer ou supprimer des profils AutoPilot. '
+ms.openlocfilehash: 7987cafb3ea234d81be72c79aee8e584a3770875
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277103"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073487"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
 
@@ -35,7 +35,7 @@ ms.locfileid: "32277103"
 
 Un profil s'applique à un appareil ou à un groupe d'appareils,
   
-1. dans le centre d'administration de Microsoft 365 Business, sélectionnez **périphériques** \> **autopilot**.
+1. Dans le centre d’administration de Microsoft 365 Business, sélectionnez **périphériques** \> **AutoPilot**.
   
 2. Sur la **** page AutoPilot, sélectionnez l' **** onglet \> profils **Create Profile**.
     
