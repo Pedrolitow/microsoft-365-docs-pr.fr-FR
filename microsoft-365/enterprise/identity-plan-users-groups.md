@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Planifiez l’ensemble des utilisateurs et des groupes qui travailleront pour votre organisation.
-ms.openlocfilehash: c74ff672ce84a5609c11eb4fa7a0405d350349ab
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: 1f879c789e6b531dec7163fa252e0f85459c823d
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553293"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072174"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>Étape 1 : Planifier les utilisateurs et les groupes
 

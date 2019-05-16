@@ -1,0 +1,121 @@
+---
+title: Conditions préalables à l’accès aux identités et appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
+author: JoeDavies-MSFT
+ms.author: josephd
+manager: laurawi
+ms.date: 04/23/2019
+audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- M365-subscription-management
+- Strat_O365_Enterprise
+ms.custom: ''
+description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables pour l’authentification uniquement dans le cloud.
+ms.openlocfilehash: 9721d2972990998ca345f1d48d96494096f9190e
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072564"
+---
+# <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès aux identités et appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
+
+Les [Configurations d’accès aux identités et appareils](microsoft-365-policies-configurations.md) sont un ensemble de configurations et stratégies d’accès conditionnel pour protéger l’accès à tous les services qui sont intégrés avec Azure Active Directory (Azure AD), dont Office 365 et Enterprise Mobility + Security dans Microsoft 365 Entreprise.
+
+Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte les exigences de [configuration préalable uniquement pour le cloud](identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils.
+
+La configuration de cet environnement de test comprend sept étapes :
+
+1.  Créer de votre environnement de test léger
+2.  Configurer des emplacements nommés
+3.  Configurer la réécriture du mot de passe
+4.  Configurer la réinitialisation du mot de passe en libre-service
+5.  Configurer l’authentification multifacteur
+6.  Activer Azure AD Identity Protection
+7.  Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
+
+## <a name="phase-1-build-out-your-lightweight-microsoft-365-test-environment"></a>Étape 1 : Créer de votre environnement de test Microsoft 365 léger
+
+Suivez les instructions de [Configuration base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
+Voici la configuration obtenue.
+
+![Environnement de test Microsoft 365 Entreprise léger](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+ 
+
+## <a name="phase-2-configure-named-locations"></a>Étape 2 : Configurer des emplacements nommés
+
+Commencez par déterminer les adresses IP publiques ou les plages d’adresses que votre organisation utilise.
+
+Ensuite, suivez les instructions de [Configurer des emplacements nommés dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) pour ajouter les adresses ou plages d’adresses en tant qu’emplacements nommés. 
+
+## <a name="phase-3-configure-password-writeback"></a>Étape 3 : Configurer la réécriture du mot de passe
+
+Suivez les instructions de l’[Étape 2 du Guide de laboratoire de Test Réécriture du mot de passe](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
+
+## <a name="phase-4-configure-self-service-password-reset"></a>Étape 4 : Configurer la réinitialisation du mot de passe en libre-service
+
+Suivez les instructions de l’[Étape 3 du Guide de laboratoire de Test Réinitialisation de mot de passe](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
+
+Lors de l’activation de réinitialisation de mot de passe pour les comptes dans un groupe Azure AD spécifique, ajoutez ces comptes au groupe **réinitialiser le mot de passe**:
+
+- Utilisateur 2
+- Utilisateur 3
+- Utilisateur 4
+- Utilisateur 5
+
+Testez la réinitialisation de mot de passe pour le compte Utilisateur 2.
+
+## <a name="phase-5-configure-multi-factor-authentication"></a>Étape 5 : Configurer l’authentification multifacteur
+
+Suivez les instructions de [Étape 2 de Guide de laboratoire de Test Authentification multifacteur ](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) pour les comptes d’utilisateurs :
+
+- Utilisateur 2
+- Utilisateur 3
+- Utilisateur 4
+- Utilisateur 5
+
+Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
+
+## <a name="phase-6-enable-azure-ad-identity-protection"></a>Étape 6 : Activer Azure AD Identity Protection
+
+Suivez les instructions de [Étape 2 du Guide de laboratoire de Test Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection). 
+
+## <a name="phase-7-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Étape 7 : Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
+
+Pour Exchange Online, suivez [ces instructions](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
+
+Pour Skype Entreprise Online :
+
+1. Se connecter à [Skype Entreprise Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
+
+2. Exécutez cette commande.
+
+  ```
+  Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
+  ```
+
+3. Vérifiez que la commande a correctement appliqué la modification.
+
+  ```
+  Get-CsOAuthConfiguration
+  ```
+
+Le résultat est un environnement de test qui respecte les exigences de [configuration préalable uniquement pour le cloud](identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils. 
+
+## <a name="next-step"></a>Étape suivante
+
+Utilisez [Stratégies d’accès courantes identité et appareil](identity-access-policies.md) pour configurer les stratégies qui se basent sur les conditions préalables et protègent identités et appareils.
+
+## <a name="see-also"></a>Voir aussi
+
+[Guides de laboratoire de Test Autres identités](m365-enterprise-test-lab-guides.md#identity)
+
+[Étape 2 : Identité](identity-infrastructure.md)
+
+[Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
+
+[Déploiement de Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
+
+[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)

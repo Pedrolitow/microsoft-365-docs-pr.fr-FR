@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/17/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez l’authentification multifacteur pour les comptes d’utilisateur.
-ms.openlocfilehash: 44d878a347e7b01263f9ba3a82f6443f5710dc43
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 73e884802329765fd6a89cfb7d0e04116c17968c
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285464"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072084"
 ---
 # <a name="step-4-configure-secure-user-authentication"></a>Étape 4 : configurer l’authentification d’utilisateur sécurisée
 
