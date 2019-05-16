@@ -3,7 +3,7 @@ title: Configurer les appareils Windows 10
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4PushSoftware
@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Découvrez les stratégies d'appareil pour Windows 10 qui s'appliquent à tous les utilisateurs de votre organisation.
-ms.openlocfilehash: 73a1e59704eb5f261d425cdc58894d824214b4fa
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Découvrez les stratégies d’appareil pour Windows 10 qui s’appliquent à tous les utilisateurs de votre organisation.
+ms.openlocfilehash: ad7c58bd96a40ac7f91e6bbad1a394aeae70e49e
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276851"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071687"
 ---
 # <a name="configure-windows-10-devices"></a>Configurer les appareils Windows 10
 
