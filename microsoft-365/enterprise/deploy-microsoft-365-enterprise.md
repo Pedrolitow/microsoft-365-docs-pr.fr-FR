@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 04/23/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: ac3e023f6a9364f6b9de23cd5b91d0d6fb6dbf1b
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400058"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072494"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
@@ -136,60 +136,23 @@ Consultez ces ressources pour savoir comment les clients utilisent Microsoft 36
   
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Comment Microsoft utilise Microsoft 365 Entreprise
 
-Découvrez comment le service informatique de Microsoft a déployé Microsoft 365 Entreprise et comment les employés de Microsoft l’utilisent au quotidien.
+La mise en place d’une culture numérique est une priorité majeure pour tout responsable soucieux à de promouvoir un espace de travail moderne. Microsoft 365 a été conçu pour prendre en charge ce genre de changement de culture, afin de stimuler la créativité et la collaboration. Chez Microsoft, la mise en place de notre infrastructure de base a précisément déclenché ce changement de culture numérique. L’implémentation de Microsoft 365 Entreprise nous a permis de déployer des technologies de collaboration telles que Microsoft Teams et Exchange Online, ainsi que de partager des données sensibles en ligne sur des sites intranet SharePoint sécurisés.
 
-#### <a name="networking"></a>Réseau
+En même temps, les fonctionnalités de sécurité intelligente et l’intégration des produits simplifient la gestion des besoins et réduisent le coût total de possession tout au long du cycle de vie des ressources informatiques. 
 
-- [Optimisation des performances réseau pour Microsoft Office 365](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)
+Découvrez comment les départements d’ingénierie et d’exploitation de Core Services (anciennement Microsoft IT) ont [planifié et déployé la base](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365) nécessaire pour prendre en charge les applications et services qui stimulent la créativité et le travail en équipe dans un environnement sécurisé.
 
-#### <a name="identity"></a>Identité
-
-- [Gestion des identités d’utilisateur et accès sécurisé à Microsoft](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
-- [Utilisation d’Azure AD Privileged Identity Management pour un accès privilégié](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
-
-#### <a name="windows-10-enterprise"></a>Windows 10 Entreprise
-
-- [Préparation de votre organisation pour un déploiement en douceur de Windows 10](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [Adoption de Windows as a service chez Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [Déploiement de Windows 10 chez Microsoft en tant que mise à niveau sur place](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Implémentation d’une authentification utilisateur forte avec Windows Hello Entreprise](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Déploiement de Windows 10 : conseils et astuces de Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (vidéo)
-- [Windows Defender ATP facilite la détection des menaces complexes](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [Sécurisation de l’entreprise moderne avec Windows Defender et Windows Defender ATP](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (vidéo)
-
-#### <a name="office-365-proplus"></a>Office 365 ProPlus
-
-- [Déploiement et mise à jour de Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [Les canaux d’automatisation et de mise à jour facilitent le déploiement de Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (vidéo)
-
-#### <a name="mobility-and-device-management"></a>Mobilité et gestion des appareils
-
-- [Gérer la productivité à l’ère mobile avec Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
-- [Connexion pour travailler sur votre appareil Windows 10 avec Microsoft Intune](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
-- [Optimisation de la productivité mobile pour les appareils Android, iOS et OS X chez Microsoft](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
-
-#### <a name="security-and-information-protection"></a>Sécurité et protection des informations
-
-- [Protection des fichiers dans le cloud grâce à Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
-- [Microsoft utilise l’intelligence des menaces pour se protéger contre les menaces, les détecter et y faire face](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
-- [Microsoft déjoue les tentatives d’hameçonnage grâce à Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
-
-#### <a name="microsoft-teams"></a>Microsoft Teams
-
-- [Le déploiement de Microsoft Teams facilite la collaboration et améliore le travail d’équipe](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
-- [Microsoft Teams améliore la collaboration dans l’espace de travail moderne chez Microsoft](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
-
-#### <a name="data-migration"></a>Migration des données
-
-- [Microsoft migre 150 000 boîtes aux lettres vers Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
-- [SharePoint dans le cloud : découvrez comment Microsoft a mis en œuvre sa propre migration](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
+> [!Note]
+> Cette page web n’est disponible qu’en anglais.
 
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Comment Contoso Corporation a déployé Microsoft 365 Entreprise
 
 Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif avec son siège à Paris en France. Découvrez comment [Contoso a déployé Microsoft 365 Entreprise](contoso-case-study.md) et abordé les décisions de conception majeures, ainsi que les détails d’implémentation pour la mise en réseau, la gestion des identités, Windows 10 Entreprise, Office 365 ProPlus, la gestion des appareils mobiles, la protection des informations et la sécurité. 
 
-## <a name="next-step"></a>Étape suivante
+## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>Étape suivante pour déployer Microsoft 365 Entreprise
 
-Pour le faire avec l’aide Microsoft direct, utilisez [FastTrack](https://fasttrack.microsoft.com/microsoft365).
+Pour le faire avec l’assistance directe de Microsoft, utilisez [FastTrack](https://fasttrack.microsoft.com/microsoft365).
+
+Pour le faire avec l’aide d’un conseiller, contactez Microsoft Consulting Services ou un [partenaire Microsoft](https://partner.microsoft.com/).
 
 Pour le faire vous-même, voir [infrastructure de base](deploy-foundation-infrastructure.md).
