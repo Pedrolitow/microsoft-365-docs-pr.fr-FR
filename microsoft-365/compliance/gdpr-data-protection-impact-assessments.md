@@ -2,20 +2,20 @@
 title: Analyses d’impact sur la protection des données
 description: Ces documents visent à fournir les informations qui permettront aux contrôleurs de données de déterminer si une analyse d’impact sur la protection des données est nécessaire et, le cas échéant, les informations à inclure.
 keywords: Analyse d’impact sur la protection des données, DPIA, Dynamics 365, Microsoft Professional Services, services professionnels Microsoft, Microsoft 365, documentation Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: d05c99daaaeadd42714b7df752b5d560e95538bb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 049d12f5e8cb738fc7f1d53f6d08c592c8c52c46
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285587"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431817"
 ---
 # <a name="data-protection-impact-assessments"></a>Analyses d’impact sur la protection des données
 
