@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b8d41e3747ad1e844e8d8f51412366d1c58efbe4
-ms.sourcegitcommit: 82a5c9a1f0f9627264f6f488dedb03f9092451fd
+ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
+ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34163443"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34391265"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Préparer les certificats et les profils réseau pour le bureau géré Microsoft  
  
@@ -71,7 +71,7 @@ Une fois que votre profil de réseau local a été exporté, vous pouvez prépar
     - OMA-URI (respecte la casse): Enter *./Device/Vendor/msft/WiredNetwork/LanXML*
     - Type de données: sélectionnez **chaîne (fichier XML)**. 
     - XML personnalisé: Téléchargez le fichier XML exporté.
-2. Soumettez une demande de service à Microsoft Managed Desktop Operations à l’aide du portail d’administration de bureau géré Microsoft pour passer en revue et déployer le profil de configuration sur «ordinateurs de l’espace de travail moderne – test». Les opérations de bureau géré Microsoft vous informent de la fin de la demande à l’aide du portail d’administration.
+2. Soumettez une demande de support aux opérations informatiques de bureau gérées par Microsoft à l’aide du portail d’administration de bureau géré Microsoft pour passer en revue et déployer le profil de configuration sur «ordinateurs à espace de travail moderne – test». Les opérations informatiques de bureau gérées par Microsoft vous informent lorsque la demande est effectuée par le biais de la demande de support dans le portail d’administration.
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Déployer des certificats et un profil Wi-Fi/VPN 
  
@@ -82,6 +82,6 @@ Pour déployer des certificats et des profils, procédez comme suit:
 2. Créez un profil pour chaque certificat SCEP ou PKCS (voir [création d’un profil de certificat SCEP](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile) ou [création d’un profil de certificat PKCS](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)) chacun de ces profils doit avoir une description qui inclut une date d’expiration au format jj/mm/aaaa. **Les profils de certificat sans date d’expiration ne seront pas déployés.**
 3. Créez un profil pour chaque réseau WiFi d’entreprise (voir [paramètres Wi-Fi pour les appareils Windows 10 et versions ultérieures](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
 4. Créez un profil pour chaque VPN d’entreprise (voir [paramètres d’appareil holographique Windows 10 et Windows pour ajouter des connexions VPN à l’aide de Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
-5. Soumettez une demande de service intitulée «déploiement de certificat» ou «déploiement de profil Wi-Fi» aux opérations de bureau géré Microsoft à l’aide du portail d’administration de bureau géré Microsoft pour passer en revue et déployer le profil de configuration sur «ordinateurs de travail modernes – test». Les opérations de bureau géré Microsoft vous informent de la fin de la demande à l’aide du portail d’administration. 
+5. Soumettez une demande de support intitulée «déploiement de certificat» ou «déploiement de profil Wi-Fi» aux opérations informatiques Microsoft gérées à l’aide du portail d’administration de bureau géré Microsoft pour passer en revue et déployer le profil de configuration sur «ordinateurs de travail modernes – test ". Les opérations informatiques de bureau gérées par Microsoft vous informent lorsque la demande a été effectuée par le biais de la demande de support dans le portail d’administration. 
  
  
