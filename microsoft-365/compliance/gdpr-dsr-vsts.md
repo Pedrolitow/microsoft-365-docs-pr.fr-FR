@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: b3711e0a68600152750d85e6287be735e204a92d
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285092"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431775"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées par les données Azure DevOps Services pour le RGPD
 
@@ -33,11 +33,11 @@ Les articles [Déclaration de confidentialité Microsoft](https://privacy.micros
 
 ## <a name="personal-data-we-collect"></a>Données personnelles collectées
 
-Microsoft collecte des données auprès des utilisateurs pour faire fonctionner et améliorer Azure DevOps Services. Azure DevOps Services collecte deux catégories de données&mdash;les données client et les journaux générés par le système. Les données client incluent des données transactionnelles et interactionnelles permettant l’identification des utilisateurs, qui sont indispensables au fonctionnement d’Azure DevOps Services. Les journaux générés par le système incluent des données sur l’utilisation des services qui sont agrégées pour chaque section et fonctionnalité du produit.
+Microsoft collecte des données auprès des utilisateurs pour faire fonctionner et améliorer Azure DevOps Services. Azure DevOps Services collecte deux catégories de données : les données client et les journaux générés par le système. Les données client incluent des données transactionnelles et interactionnelles permettant l’identification des utilisateurs, qui sont indispensables au fonctionnement d’Azure DevOps Services. Les journaux générés par le système incluent des données sur l’utilisation des services, qui sont agrégées pour chaque section et fonctionnalité du produit.
 
 ## <a name="delete-azure-devops-data"></a>Supprimer des données Azure DevOps
 
-La première chose à faire pour supprimer les données client Azure DevOps Services qui vous sont associées et pour anonymiser les données personnelles trouvées dans les journaux générés par le système est de fermer votre compte d’identité Azure Active Directory (AAD) ou votre compte Microsoft (MSA). Azure DevOps Services est un système d’enregistrement régi selon des règles d’intégrité, de traçabilité et d’audit stricte. Ces obligations préexistantes ont une influence sur nos obligations de suppression et de conservation en vertu du RGPD. Le fait de fermer votre compte d’identité n’altère, ne supprime et ne modifie en rien les artefacts et les enregistrements associés à l’identité individuelle dans l’organisation Azure DevOps Services. Nous avons veillé à ce que, lorsqu’une organisation Azure DevOps Services entière est supprimée, l’ensemble des données personnelles associées et des journaux générés par le système détectés dans cette organisation soient supprimés de notre système (une fois passée la période de suppression réversible de 30 jours associée à l’organisation Azure DevOps Services).
+La première chose à faire pour supprimer des données client Azure DevOps Services associées et pour anonymiser des données d’identification personnelle trouvées dans les journaux générés par le système est de fermer votre compte d’identité Azure Active Directory (AAD) ou votre compte Microsoft (MSA). Azure DevOps Services est un système d’enregistrement régi par des règles d’intégrité, de traçabilité et d’audit strictes. Ces obligations préexistantes ont une influence sur nos obligations de suppression et de conservation en vertu du RGPD. Le fait de fermer votre compte d’identité n’altère, ne supprime et ne modifie en rien les artefacts et les enregistrements associés à l’identité individuelle dans l’organisation Azure DevOps Services. Nous avons veillé à ce que, quand une organisation Azure DevOps Services entière est supprimée, l’ensemble des données à caractère personnel associées et des journaux générés par le système détectés dans cette organisation soient supprimés de notre système (à l’issue de la période de suppression réversible de 30 jours associée à l’organisation Azure DevOps Services).
 
 ## <a name="export-azure-devops-data"></a>Exporter des données Azure DevOps
 

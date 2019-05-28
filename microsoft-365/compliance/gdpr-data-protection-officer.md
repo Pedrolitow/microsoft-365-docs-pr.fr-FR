@@ -2,21 +2,20 @@
 title: Délégué à la protection des données de Microsoft
 description: Informations relatives au délégué à la protection des données de Microsoft de l’Union européenne concernant le RGPD
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: ''
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2401613de3c57bc02af67ed527eb37c314528930
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 3e7950872a1af8abaa34725756f157f8645da637
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286594"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431821"
 ---
 # <a name="microsofts-data-protection-officer"></a>Délégué à la protection des données de Microsoft
 
@@ -44,7 +43,7 @@ D18 P521<br>
 Irlande<br>
 Téléphone : + 353 (0) 1 295-3826<br>
 
-Les coordonnées du délégué à la protection des données ont été communiquées à l’autorité de surveillance de Microsoft.   
+Les coordonnées du délégué à la protection des données ont été communiquées à l’autorité de surveillance de Microsoft.
 
 ## <a name="learn-more"></a>En savoir plus
 

@@ -2,21 +2,21 @@
 title: Notification de violation dans Office 365 dans le cadre du RGPD
 description: Protection de Microsoft vis-à-vis des violations de données personnelles, et réponse et notification de Microsoft en cas de violation.
 keywords: Office 365, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 6b91b489d8d69faffa0852c3e352a6b2e9e9d496
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 69c626d874e0afd59e1447c494ec1b84c7a4cb7a
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286364"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431865"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Notification de violation dans Office 365 dans le cadre du RGPD
 
@@ -36,7 +36,7 @@ En plus de nous engager à notifier les clients d’une violation dans les meill
 
 Voici quelques exemples d’investissements que nous avons réalisés dans ce domaine :
 
--   **Systèmes de contrôle d’accès.** Office 365 poursuit une politique d’« accès non permanent ». En effet, les ingénieurs n’ont pas accès au service, sauf s’ils en ont obtenu l’autorisation en réponse à un incident spécifique qui nécessite des accès plus élevés. Chaque accès est accordé selon le principe de moindre privilège : une autorisation accordée pour une demande spécifique permet à l’ingénieur d’entreprendre un nombre limité d’actions pour répondre à cette demande. Ainsi, Office 365 maintient une séparation nette entre les « rôles d’élévation », qui autorisent les ingénieurs concernés à n’entreprendre que certaines actions prédéfinies. Le rôle « Accès aux données client » est différent des autres rôles les plus fréquemment utilisés pour administrer le service et fait l’objet d’un examen poussé avant d’être approuvé. Tous nos investissements réalisés dans le domaine du contrôle des accès réduisent considérablement le risque qu’un ingénieur accède indûment aux données client dans Office 365.
+-   **Systèmes de contrôle d’accès.** Office 365 poursuit une politique d’« accès non permanent ». Ainsi, les ingénieurs n’ont pas accès au service, sauf s’ils y sont autorisés en réponse à un incident spécifique nécessitant un accès plus élevé. Chaque accès est accordé selon le principe du moindre privilège : une autorisation accordée pour une demande spécifique permet à l’ingénieur d’entreprendre un nombre limité d’actions pour répondre à celle-ci. À cette fin, Office 365 maintient une séparation nette entre les « rôles d’élévation », qui n’autorisent à entreprendre que certaines actions prédéfinies. Le rôle « Accès aux données client » est différent des autres rôles les plus fréquemment utilisés pour administrer le service et fait l’objet d’un examen poussé avant d’être approuvé. Tous nos investissements réalisés dans le domaine du contrôle des accès réduisent considérablement le risque qu’un ingénieur accède indûment à des données client dans Office 365.
 
 -   **Systèmes de surveillance de la sécurité et automatisation :** Office 365 gère des systèmes robustes de surveillance de la sécurité en temps réel. À titre d’exemple, ces systèmes déclenchent des alertes en cas de tentative d’accès illicite aux données client ou de transfert illicite des données en dehors de notre service. Pour en revenir au contrôle des accès, nos systèmes de surveillance de la sécurité créent des rapports détaillés des demandes d’élévation envoyées et des mesures prises pour chaque demande d’élévation. Office 365 investit également dans la résolution automatique des problèmes pour parer aux menaces en réponse aux problèmes détectés, ainsi que dans des équipes dédiées pour répondre aux alertes qui ne peuvent pas être résolues automatiquement. Pour nous assurer de la performance de nos systèmes de surveillance de la sécurité, Office 365 réalise régulièrement des exercices de mise en situation au cours desquels une équipe de test interne reproduit le comportement d’un utilisateur malveillant dans l’environnement réel. Ces exercices nous permettent d’améliorer constamment nos fonctionnalités de surveillance de la sécurité et d’intervention.
 

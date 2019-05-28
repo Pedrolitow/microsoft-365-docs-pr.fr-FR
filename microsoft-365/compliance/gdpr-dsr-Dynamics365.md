@@ -1,40 +1,40 @@
 ---
 title: Demandes des personnes concernées pour Dynamics 365 concernant le RGPD
-description: Guide expliquant comment utiliser les produits, services et outils d’administration Microsoft pour aider les clients de notre contrôleur à rechercher des données personnelles et à prendre des mesures pour répondre aux demandes DSR.
+description: Guide expliquant comment utiliser les produits, services et outils d’administration Microsoft pour aider les clients de notre responsable du traitement à rechercher des données à caractère personnel et à prendre des mesures pour répondre aux demandes DSR.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/30/2019
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 4e1597e658b0ac6de0c4805b77660e6c47424aa2
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 3c394df956801beed63b5e31c4a1579bf5324eba
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497736"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431755"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées pour Dynamics 365 concernant le RGPD
 
 Le Règlement général sur la protection des données (RGPD) de l’UE permet aux utilisateurs (désignés dans le règlement comme étant les *personnes concernées*) de gérer les données personnelles collectées par un employeur ou tout autre type d’agence ou organisation (le *contrôleur des données* ou le *contrôleur* uniquement). Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données personnelles, les demandes de changements de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à un autre contrôleur. Toute demande formelle effectuée par une personne concernée à un contrôleur au sujet de la prise de mesure sur ses données personnelles est appelée dans ce document *demande de droits de personne concernée* ou demande DSR.<span id="_Toc510437912" class="anchor"><span id="_Toc508792504" class="anchor"></span></span>
 
-Le guide explique comment utiliser les outils d’administration, les services et les produits de Microsoft pour aider nos clients contrôleurs à rechercher des données personnelles et à agir dessus pour répondre à des demandes DSR. Plus précisément, il décrit comment rechercher des données personnelles stockées dans le cloud de Microsoft, y accéder et agir dessus. Voici un bref aperçu des processus décrits dans ce guide :
+Le guide explique comment utiliser les outils d’administration, les services et les produits Microsoft pour aider nos clients responsables du traitement à rechercher des données à caractère personnel et à agir dessus pour répondre à des DSR. Plus précisément, il décrit comment rechercher des données à caractère personnel stockées dans le cloud Microsoft, y accéder et agir dessus. Voici un bref aperçu des processus décrits dans ce guide :
 
-1. ***Découvrir*** : utilisez les outils de recherche et de découverte pour rechercher plus facilement des données client qui peuvent faire l’objet d’une demande DSR. Une fois que vous avez collecté les documents pouvant être utiles, vous pouvez effectuer une ou plusieurs des actions DSR décrites dans les étapes suivantes pour répondre à la demande. Par ailleurs, vous pouvez déterminer que la demande ne respecte pas les instructions de votre organisation pour répondre à des demandes DSR.
+1. ***Découvrir : utilisez les outils de recherche et de découverte pour rechercher plus facilement des données client qui peuvent faire l’objet d’une demande DSR. Une fois que vous avez collecté les documents pouvant être utiles, vous pouvez effectuer une ou plusieurs des actions DSR décrites dans les étapes suivantes pour répondre à la demande. Par ailleurs, vous pouvez déterminer que la demande ne respecte pas les instructions de votre organisation pour répondre à des demandes DSR.
 
-2. ***Accéder*** : récupérez des données personnelles qui résident dans le cloud Microsoft et, si nécessaire, effectuez-en une copie pour la personne concernée.
+2. ***Accéder : récupérez des données à caractère personnel qui résident dans le cloud Microsoft et, si nécessaire, effectuez-en une copie pour la personne concernée.
 
-3. ***Rectifier*** : modifiez ou mettez en œuvre d’autres actions demandées sur les données personnelles, le cas échéant.
+3. ***Rectifier : modifiez ou mettez en œuvre d’autres actions demandées sur les données à caractère personnel, le cas échéant.
 
-4.  ***Limiter :*** limitez le traitement des données personnelles, soit en supprimant des licences pour différents services en ligne, soit en désactivant les services souhaités, lorsque cela est possible. Vous pouvez également supprimer des données du cloud Microsoft et les conserver en local ou à un autre emplacement.
+4.  ***Limiter : limitez le traitement des données à caractère personnel, soit en supprimant des licences pour différents services en ligne, soit en désactivant les services souhaités, lorsque cela est possible. Vous pouvez également supprimer des données du cloud Microsoft et les conserver en local ou à un autre emplacement.
 
-5. ***Supprimer*** : supprimez définitivement des données personnelles qui résidaient dans le cloud de Microsoft.
+5. ***Supprimer : supprimez définitivement des données à caractère personnel qui résidaient dans le cloud de Microsoft.
 
-6. ***Exporter*** : fournissez une copie électronique (dans un format lisible par une machine) des données personnelles à la personne concernée.
+6. ***Exporter : fournissez une copie électronique (dans un format lisible par un ordinateur) des données à caractère personnel à la personne concernée.
 
 Chaque section de ce guide décrit les procédures techniques qu’une organisation de contrôleur des données peut suivre pour répondre à une demande DSR pour des données personnelles dans le cloud de Microsoft.
 
@@ -42,15 +42,15 @@ Chaque section de ce guide décrit les procédures techniques qu’une organisat
 
 Vous trouverez ci-dessous des définitions de termes utilisés dans ce guide :
 
-- <em>Contrôleur</em> : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement des données personnelles ; lorsque les finalités et les moyens du traitement sont déterminés par la législation de l’Union ou des États membres, le contrôleur peut être désigné, ou les critères spécifiques relatifs à sa nomination peuvent être définis, par la législation de l’Union ou des États membres.
+- <em>Responsable du traitement : personne physique ou morale, autorité publique, service ou autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement des données à caractère personnel. Lorsque les finalités et les moyens du traitement sont déterminés par la législation de l’Union ou des États membres, le responsable du traitement ou des critères spécifiques relatifs à sa nomination peuvent être spécifies par la législation de l’Union ou des États membres.
 
-- *Données personnelles* et <em>personne concernée</em> : informations relatives à une personne physique identifiée ou identifiable (« la personne concernée ») ; une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identificateur par exemple, un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou un ou plusieurs facteurs spécifiques de l’identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale de cette personne physique.
+- *Données à caractère personnel* et <em>personne concernée : informations relatives à une personne naturelle identifiée ou identifiable (« personne concernée »). Une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identifiant tel qu’un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou à un ou plusieurs facteurs spécifiques de son identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale.
 
-- <em>Processeur</em> : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données personnelles pour le compte du contrôleur.
+- <em>Sous-traitant : personne physique ou morale, autorité publique, service ou tout autre organisme qui traite des données à caractère personnel pour le compte du responsable du traitement.
 
 - *Données client* : toutes les données, y compris tous les fichiers texte, son, vidéo ou image et les logiciels qui ont été fournis à Microsoft par le client ou pour son compte dans le cadre du service d’entreprise, comme défini dans les conditions d’utilisation des services en ligne Microsoft.
 
-- *Journaux*-*générés par le système* : les journaux et les données connexes générés par Microsoft qui aident Microsoft à fournir les services d’entreprise aux utilisateurs. Les journaux générés par le système contiennent principalement des données de pseudonymes comme des identificateurs uniques : généralement, un numéro généré par le système qui ne peut pas, en soi, identifier une personne individuelle, mais est utilisé pour fournir les services d’entreprise aux utilisateurs. Les journaux générés par le système peuvent aussi contenir des informations d’identification personnelle sur les utilisateurs finaux comme, par exemple, un nom d’utilisateur.  
+- Journaux *générés par le *système* : journaux et données connexes générés par Microsoft qui aident Microsoft à fournir les services d’entreprise aux utilisateurs. Les journaux générés par le système contiennent principalement des données pseudonymes comme des identificateurs uniques : généralement, un numéro généré par le système qui ne peut pas, en soi, identifier une personne individuelle, mais est utilisé pour fournir les services d’entreprise aux utilisateurs. Les journaux générés par le système peuvent aussi contenir des informations d’identification personnelle sur les utilisateurs finaux comme, par exemple, un nom d’utilisateur.  
 
 ### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>Assumer vos responsabilités de contrôleur grâce à ce guide
 
@@ -64,7 +64,7 @@ Le guide, composé de deux parties, explique comment utiliser les outils d’adm
 
 Lorsque des personnes associées aux données exercent leurs droits et effectuent des demandes, tenez compte des points suivants :
 
-- Identifiez correctement la personne et le rôle (par exemple, employé, client, fournisseur) à l’aide des informations fournies par la personne concernée dans le cadre de sa demande. Ces informations peuvent être un nom, un ID d’employé ou un numéro de client, ou un autre identificateur.
+- Identifiez correctement la personne et le rôle (par exemple, employé, client, fournisseur) à l’aide des informations fournies par la personne concernée dans le cadre de sa demande. Ces informations peuvent être un nom, un ID d’employé, un numéro de client, ou un autre identificateur.
 
 - Enregistrez la date et l’heure de la demande. (Vous avez 30 jours pour effectuer la demande.)
 
@@ -103,7 +103,7 @@ Dans Dynamics 365 for Marketing, vous disposez des fonctionnalités supplément
 
 ***Dynamics 365 Customer Service Insights*** propose une liste de ressources destinée à vous aider à [trouver des données client](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery) afin de répondre aux demandes RGPD des clients. 
 
-<span id="_Toc511225658" class="anchor"></span>***Dynamics 365 Finance and Operations*** offre plusieurs façons de rechercher des données client. En tant qu’administrateur client, vous pouvez rechercher des données client en effectuant les opérations suivantes :
+<span id="_Toc511225658" class="anchor"></span>***Dynamics 365 for Finance and Operations*** de rechercher des données client de plusieurs façons. En tant qu’administrateur client, vous pouvez rechercher des données client en effectuant les opérations suivantes :
 
 -   Organisez vos données client de façon à découvrir rapidement des données personnelles ; à cette fin, apprenez à [classifier l’inventaire des données](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory).
 
@@ -165,7 +165,7 @@ Dans ***Dynamics 365 for Finance and Operations***, vous pouvez aussi utiliser 
 
 Pour modifier en bloc plusieurs enregistrements Business Central, vous pouvez exporter des listes vers Excel à l’aide du [complément Excel de Business Central](https://docs.microsoft.com/fr-FR/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) afin de corriger plusieurs enregistrements, puis publier les données modifiées dans Excel dans Business Central. Pour plus d’informations, consultez la section [Exportation de vos données métiers dans Excel](https://docs.microsoft.com/fr-FR/dynamics365/business-central/about-export-data).
 
-- Vous pouvez modifier les données client stockées dans un champ (par exemple, les informations sur un client dans sa fiche) en modifiant manuellement l’élément de données contenant les données personnelles cibles. Pour plus d’informations, consultez [Entrée de données](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
+- Vous pouvez modifier les données client stockées dans un champ (par exemple, les informations sur un client dans sa fiche) en changeant manuellement l’élément de données contenant les données à caractère personnel cibles. Pour plus d’informations, consultez [Entrée de données](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 
 #### <a name="brief-note-about-modifying-entries-in-business-transactions"></a>Remarque sur la modification des entrées dans les transactions commerciales
 Les enregistrements de transaction tels que les entrées de comptabilité grand livre, client et générale sont essentiels pour l’intégrité du système de planification des ressources d’une entreprise. Les données personnelles faisant partie d’une transaction financière ou autre sont conservées « telles quelles » à des fins de conformité avec les lois financières (législation fiscale, par exemple), prévention contre les fraudes (piste d’audit de sécurité) ou conformité avec les certifications de l’industrie. Par conséquent, Dynamics 365 for Finance and Operations et Dynamics 365 Business Central limitent la modification des données dans les enregistrements de ce type.
@@ -174,7 +174,7 @@ Si vous stockez des données personnelles dans des enregistrements de transactio
 
 ### <a name="restricting-the-processing-of-customer-data"></a>Restriction du traitement des données client
 
-Quand vous recevez une demande de la part d’une personne concernée pour limiter le traitement des données client, vous pouvez facilement extraire les données client en question du service en ligne et les stocker dans un conteneur distinct (stockage local ou service web distinct doté de fonctionnalités d’isolation des données) isolé des fonctions de traitement offertes par les applications cloud.
+Quand vous recevez une demande d’une personne concernée pour limiter le traitement de données client, vous pouvez facilement extraire les données client en question du service en ligne et les stocker dans un conteneur distinct (stockage local ou service web distinct doté de fonctionnalités d’isolation des données) isolé des fonctions de traitement offertes par les applications cloud.
 
 Un mécanisme de substitution comme le blocage du traitement des données est proposé par ***Dynamics 365 Business Central***, qui permet aux utilisateurs de bloquer l’enregistrement d’une personne concernée par le traitement des données. Pour plus d’informations, consultez [Restreindre le traitement des données pour un sujet données](https://docs.microsoft.com/dynamics365/business-central/admin-responding-to-requests-about-personal-data#restrict-data-processing-for-a-data-subject). Quand un enregistrement est marqué comme étant bloqué, Dynamics 365 Business Central interrompt le traitement des données de la personne concernée. Vous ne pouvez pas créer des transactions qui utilisent un enregistrement bloqué ; par exemple, vous ne pouvez pas créer une facture pour un client, du moment que ledit client ou le commercial est bloqué.
 
@@ -224,7 +224,7 @@ Vous pouvez exporter les données client dans un fichier Excel. Dans Excel, vous
 
 ### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
 
-<span id="_Toc511166412" class="anchor"></span>Étant donné que Microsoft Social Engagement traite des données personnelles qui sont susceptibles de figurer parmi des données client et du contenu de réseaux sociaux, cette application offre un moyen unique de répondre aux demandes DSR, car elle a un rapport avec les données personnelles récupérées sur les réseaux sociaux. Le contenu des réseaux sociaux est du contenu disponible publiquement collecté à partir de réseaux sociaux (par exemple, Twitter, Facebook et YouTube) et de services d’agrégation et d’indexation de données en réponse aux requêtes de recherche que le client a exécutées dans Microsoft Social Engagement. Le contenu des réseaux sociaux ne correspond pas à des données client. Des restrictions supplémentaires sur le traitement, l’utilisation et le stockage de contenu de réseaux sociaux sont décrites dans les Conditions d’utilisation des services en ligne Microsoft.
+<span id="_Toc511166412" class="anchor"></span>Étant donné que Microsoft Social Engagement traite des données personnelles qui sont susceptibles de figurer parmi des données client et du contenu de réseaux sociaux, cette application offre un moyen unique de répondre aux demandes DSR, car elle a un rapport avec les données personnelles récupérées sur les réseaux sociaux. Le contenu social est du contenu disponible publiquement collecté à partir de réseaux sociaux (par exemple, Twitter, Facebook et YouTube) et de services d’agrégation et d’indexation de données en réponse aux requêtes de recherche du client exécutées dans Microsoft Social Engagement. Le contenu des réseaux sociaux ne correspond pas à des données client. Des restrictions supplémentaires sur le traitement, l’utilisation et le stockage de contenu de réseaux sociaux sont décrites dans les Conditions d’utilisation des services en ligne Microsoft.
 
 ### <a name="finding-personal-data"></a>Recherche de données personnelles
 
@@ -246,7 +246,7 @@ La première étape pour répondre à la demande d’une personne concernée con
 
 - Noms d’utilisateur dans Power BI si votre organisation utilise le [pack de contenu Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) pour Power BI pour analyser les performances de l’équipe sur les médias sociaux.
 
-La première étape (rechercher et passer en revue les données personnelles en question) vous aidera à déterminer si la demande la personne concernée répond aux exigences de votre organisation pour l’honorer ou la refuser. Par exemple, après avoir recherché et passé en revue les données personnelles, vous pouvez déterminer que la demande ne répond pas aux exigences de votre organisation, car cette action peut avoir une incidence défavorabl sur les droits et libertés d’autres personnes.
+La première étape (recherche et examen des données à caractère personnel en question) vous aidera à déterminer si la demande la personne concernée répond aux exigences de votre organisation pour l’honorer ou la refuser. Par exemple, après avoir recherché et examiné les données à caractère personnel, vous pouvez déterminer que la demande ne répond pas aux exigences de votre organisation, car cette action peut avoir une incidence défavorable sur les droits et libertés d’autres personnes.
 
 #### <a name="social-media-users-authors"></a>Utilisateurs de réseaux sociaux (auteurs)
 
@@ -385,7 +385,7 @@ Les administrateurs peuvent accéder aux journaux générés par le système ass
 
 2.  Dans la liste déroulante **Confidentialité** en haut de la page, cliquez sur **Demande des personnes concernées**.
 
-3.  Sur la page **Demande des personnes concernées**, sous **Journaux générés par le système**, cliquez sur **Exportation des journaux de données**.
+3.  Dans la page **Demande des personnes concernées**, sous **Journaux générés par le système**, cliquez sur **Exportation des journaux de données**.
 
 > L’**Exportation des journaux de données** s’affiche. Notez que la liste des demandes de données d’exportation transmises par votre organisation s’affiche.
 
@@ -411,7 +411,7 @@ Le tableau suivant récapitule la consultation et l’exportation des journaux g
 </tr>
 <tr class="even">
 <td align="left"><strong>Quelles données l’outil d’exportation des journaux de données renvoie-t-il ?</strong></td>
-<td align="left">L’outil d’exportation des journaux de données renvoie des journaux générés par le système et stockés par Microsoft. Les données exportées englobent les différents services Microsoft, y compris Office 365, Azure et Dynamics.</td>
+<td align="left">L’outil d’exportation des journaux de données renvoie des journaux générés par le système et stockés par Microsoft. Les données exportées englobent les différents services Microsoft, dont Office 365, Azure et Dynamics.</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Qui a accès à l’outil d’exportation des journaux de données pour envoyer des demandes d’accès pour des journaux générés par le système ?</strong></td>
@@ -435,7 +435,8 @@ Le tableau suivant récapitule la consultation et l’exportation des journaux g
 </tbody>
 </table>
 
-[Remarque] Certaines fonctionnalités empêchent d’exporter ou de modifier des journaux générés par le système avec des informations personnelles afin de préserver l’intégrité de ces informations pour des raisons de sécurité et d’audit.
+> [!Note]
+> Certaines fonctionnalités empêchent d’exporter ou de supprimer des journaux générés par le système contenant des informations personnelles afin de préserver l’intégrité de ces informations pour des raisons de sécurité et d’audit.
 
 ### <a name="deleting-system-generated-logs"></a>Suppression des journaux générés par le système
 Pour supprimer des journaux générés par le système et récupérés via une demande d’accès, vous devez supprimer l’utilisateur du service et supprimer définitivement son compte Azure Active Directory. Pour obtenir des instructions sur comment supprimer définitivement un utilisateur, consultez la section [Suppression d’un utilisateur](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user) de ce guide. Il est important de noter que la suppression définitive d’un compte d’utilisateur est irréversible une fois amorcée.
@@ -444,4 +445,4 @@ La suppression définitive d’un compte d’utilisateur supprimera les données
 
 #### <a name="learn-more"></a>En savoir plus
 
-[Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/fr-FR/TrustCenter/Privacy/gdpr/default.aspx)
+[Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

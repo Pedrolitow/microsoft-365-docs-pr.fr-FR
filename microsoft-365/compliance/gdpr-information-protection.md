@@ -2,23 +2,23 @@
 title: Protection des informations
 description: Protection des informations concernant le Règlement général sur la protection des données (RGPD)
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
-author: BrendaCarter
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: bcarter
+author: BrendaCarter
 manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 94ec13437ff297381b4ea8aca0e9370f295f249e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e62244fd35a50f4110c5a6e7ce1591d0466263f1
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285186"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431785"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protection des informations concernant le RGPD avec les fonctionnalités Microsoft 365
 
@@ -28,32 +28,33 @@ Pour plus d’informations sur la manière dont Microsoft peut vous aider avec l
 
 ## <a name="information-protection"></a>Protection des informations
 
-Office 365 offre un vaste ensemble de fonctionnalités de gouvernance. Pour obtenir de l’aide à propos de la recherche, de la classification, de la protection et de la surveillance des données personnelles, reportez-vous à l’article [Protection des informations Office 365 concernant le RGPD](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr). 
+Office 365 offre un vaste ensemble de fonctionnalités de gouvernance. Pour obtenir de l’aide à propos de la recherche, de la classification, de la protection et de la surveillance des données personnelles, reportez-vous à l’article [Protection des informations Office 365 concernant le RGPD](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr).
 
 Pour obtenir de l’aide avec les serveurs locaux, notamment les partages de fichiers, SharePoint Server, Exchange Server, Skype Entreprise Server, Project Server et Office Online Server, consultez le [RGPD concernant les serveurs Office locaux](https://docs.microsoft.com/office365/enterprise/gdpr-for-office-servers). 
 
 ## <a name="identity-and-access-management"></a>Gestion des identités et des accès
 
 Azure Active Directory et d’autres fonctionnalités Microsoft 365 fournissent un ensemble complet de fonctionnalités permettant de protéger l’accès à vos données à partir d’identités et d’appareils :
+
 - Authentification multifacteur (MFA)
 - Accès conditionnel
 - Privileged identity management
 - Gestion des appareils mobiles
 - Gestion des applications mobiles
-- Protection matérielle pour les informations d’identification
+- Protection matérielle des informations d’identification
 
 Microsoft propose une configuration recommandée que vous pouvez utiliser comme point de départ :
-- [Configurations des identités et de l’accès aux appareils :](../enterprise/microsoft-365-policies-configurations.md): configurations de stratégie recommandées pour obtenir trois niveaux de protection (référence, sensible, hautement réglementée). Ces conseils incluent des stratégies recommandées pour Exchange Online et SharePoint Online (y compris OneDrive Entreprise).
-- [Conseils de sécurité pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles :](https://docs.microsoft.com/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) cela inclut le même ensemble de stratégies, mais fournit des recommandations supplémentaires pour les environnements BYOD et les comptes B2B.
 
+- [Configurations des identités et de l’accès aux appareils :](../enterprise/microsoft-365-policies-configurations.md): configurations de stratégie recommandées pour obtenir trois niveaux de protection (référence, sensible, hautement réglementée). Ces conseils incluent des stratégies recommandées pour Exchange Online et SharePoint Online (y compris OneDrive Entreprise).
+- [Conseils de sécurité pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](https://docs.microsoft.com/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) : incluent le même ensemble de stratégies, mais fournissent des recommandations supplémentaires pour les environnements BYOD et les comptes B2B.
 
 ## <a name="threat-protection"></a>Protection contre les menaces
 
 La protection contre les menaces est intégrée aux services Microsoft 365. Voici quelques ressources pour vous aider à démarrer :
+
 - [Feuille de route sur la sécurité Office 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352). Cette feuille de route comprend des recommandations pour l’implémentation des fonctionnalités. 
 - [Protégez-vous contre les menaces dans Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Découvrez les mesures de protection que vous pouvez prendre dans le Centre de sécurité Microsoft 365.
 - [Protection contre les menaces Windows](https://docs.microsoft.com/windows/security/threat-protection/). En savoir plus sur Windows Defender - Protection avancée contre les menaces et d’autres fonctionnalités dans Windows 10.
-
 
 ## <a name="learn-more"></a>En savoir plus
 [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
