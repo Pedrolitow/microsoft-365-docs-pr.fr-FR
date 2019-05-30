@@ -1,6 +1,6 @@
 ---
-title: Demandes des personnes associées aux données pour Visual Studio Family concernant le RGPD
-description: Demandes des personnes associées aux données pour Visual Studio Family concernant le RGPD
+title: Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD
+description: Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD
 keywords: Visual Studio, Visual Studio Code, Visual Studio pour Mac, documentation Visual Studio, confidentialité, RGPD
 localization_priority: Priority
 audience: itpro
@@ -13,20 +13,20 @@ manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286922"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431545"
 ---
-# <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Demandes des personnes associées aux données pour Visual Studio Family concernant le RGPD
+# <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD
 
-Le [Règlement général sur la protection des données (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’Union européenne permet aux utilisateurs (désignés dans le règlement comme étant les _personnes associées aux données)_ de gérer leurs données personnelles. Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes associées aux données des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données personnelles, les demandes de corrections de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique. Toute demande formelle effectuée par une personne associée aux données à un contrôleur de données (un employeur ou tout autre type d’agence ou d’organisation qui contrôle les données personnelles) au sujet de la prise de mesure sur ses données personnelles est appelée _demande de personne associée aux données_ ou DSR. Pour obtenir des informations générales relatives au RGPD, consultez la section [RGPD du portail d’approbation de services](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+Le [Règlement général sur la protection des données (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’Union européenne permet aux utilisateurs (désignés dans le règlement comme étant les _personnes concernées par le traitement des données_) de gérer leurs données personnelles. Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées par le traitement des données des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données personnelles, les demandes de corrections de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique. Toute demande formelle effectuée par une personne concernée par le traitement des données à une entité de contrôle des données (un employeur ou tout autre type d’agence ou d’organisation qui contrôle les données personnelles) au sujet de la prise de mesure sur ses données personnelles est appelée _demande de la personne concernée par le traitement des données_ ou « DPC ». Pour obtenir des informations générales relatives au RGPD, consultez la section [RGPD du portail d’approbation de services](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## <a name="products-covered-by-this-guide"></a>Produits couverts par ce guide
 
-Ce guide décrit comment utiliser les outils de Microsoft pour exporter ou supprimer des données personnelles collectées pendant l’utilisation de la session authentifiée (connexion) de Visual Studio, de Visual Studio pour Mac et des extensions Microsoft de ces produits, ainsi que de celles de Visual Studio Code. Ce guide explique également comment effectuer des demandes des personnes associées aux données pour des données personnelles collectées lors de l’utilisation de la communauté de développeurs Visual Studio, NuGet.org et le site web ASP.NET. Ces produits peuvent permettre l’utilisation d’outils et d’extensions autres que Microsoft, pour lesquels Microsoft n’agit pas en qualité de responsable du traitement ou contrôleur des données. Les utilisateurs doivent contacter le fournisseur de ces outils et extensions pour comprendre les stratégies relatives à la collecte et aux données personnelles pour les outils et extensions en question.
+Ce guide décrit comment utiliser les outils de Microsoft pour exporter ou supprimer des données personnelles collectées pendant l’utilisation de la session authentifiée (connexion) de Visual Studio, de Visual Studio pour Mac et des extensions Microsoft de ces produits, ainsi que de celles de Visual Studio Code. Ce guide explique également comment effectuer des demandes des personnes concernées par le traitement des données pour des données personnelles collectées lors de l’utilisation de la communauté de développeurs Visual Studio, NuGet.org et le site web ASP.NET. Ces produits peuvent permettre l’utilisation d’outils et d’extensions autres que Microsoft, pour lesquels Microsoft n’agit pas en qualité de responsable du traitement des données ou d’entité de contrôle des données. Les utilisateurs doivent contacter le fournisseur de ces outils et extensions pour comprendre les stratégies relatives à la collecte et aux données personnelles pour les outils et extensions en question.
 
 ## <a name="additional-privacy-information"></a>Informations supplémentaires sur la confidentialité
 
@@ -54,11 +54,11 @@ En qualité de responsable du traitement de données en vertu du RGPD, Microsoft
 
 Pour obtenir plus d’informations, consultez l’article relatif aux [journaux générés par le système et collectés par Visual Studio](https://docs.microsoft.com/visualstudio/ide/diagnostic-data-collection).
 
-Seules les données personnelles associées aux identités authentifiées peuvent être traitées par une DSR. Par conséquent, étant donné que Visual Studio Code ne permet pas de s’identifier, les journaux générés par le système à partir de ce produit ne sont pas associés à une identité authentifiée et ne peuvent pas être pris en charge. Toutefois, certaines extensions Microsoft de Visual Studio Code peuvent fournir des données authentifiées, qui peuvent être traitées par une DSR. Pour obtenir plus d’informations, consultez [RGPD et Visual Studio Code](https://code.visualstudio.com/docs/supporting/faq#_gdpr-and-vs-code). En règle générale, nous ne stockons pas de données pour Visual Studio 2013 et les versions antérieures. Cependant, certaines extensions et certains composants peuvent fournir des données associées à des identités authentifiées pouvant être traitées par une DSR, comme indiqué ci-dessous.
+Seules les données personnelles associées aux identités authentifiées peuvent être traitées par une DPC. Par conséquent, étant donné que Visual Studio Code ne permet pas de s’identifier, les journaux générés par le système à partir de ce produit ne sont pas associés à une identité authentifiée et ne peuvent pas être pris en charge. Toutefois, certaines extensions Microsoft de Visual Studio Code peuvent fournir des données authentifiées, qui peuvent être traitées par une DPC. Pour obtenir plus d’informations, consultez [RGPD et Visual Studio Code](https://code.visualstudio.com/docs/supporting/faq#_gdpr-and-vs-code). En règle générale, nous ne stockons pas de données pour Visual Studio 2013 et les versions antérieures. Cependant, certaines extensions et certains composants peuvent fournir des données associées à des identités authentifiées pouvant être traitées par une DPC, comme indiqué ci-dessous.
 
 ### <a name="how-users-can-control-personal-data"></a>Contrôle des utilisateurs sur leurs données personnelles
 
-Visual Studio 2015 et les versions ultérieures, Visual Studio pour Mac et Visual Studio Code permettent à vos utilisateurs d’arrêter la collecte de données, et vous permettent, en qualité de contrôleur, d’exporter ou de supprimer des données qui ont déjà été collectées.
+Visual Studio 2015 et les versions ultérieures, Visual Studio pour Mac et Visual Studio Code permettent à vos utilisateurs d’arrêter la collecte de données, et vous permettent, en qualité d’entité de contrôle, d’exporter ou de supprimer des données qui ont déjà été collectées.
 
 #### <a name="in-app-settings"></a>Paramètres intégrés à l’application
 
@@ -70,7 +70,7 @@ Les utilisateurs peuvent contrôler les paramètres de confidentialité pour ces
 
 #### <a name="exporting-or-deleting-data"></a>Exportation ou suppression des données
 
-Les contrôleurs peuvent gérer les données client et les journaux générés par le système collectés auprès des personnes associées aux données de deux méthodes distinctes, selon la façon dont le produit Visual Studio Family ou les extensions Microsoft ont été enregistrés. Dans certains cas, les deux méthodes doivent être utilisées. Les deux méthodes permettent aux contrôleurs de télécharger une copie de l’historique de leurs activités gérées par cette méthode. La fermeture d’un compte AAD ou de service Microsoft entraîne la suppression des données client Visual Studio connexes, et l’anonymisation des données d’identification personnelle contenues dans les journaux générés par le système se rapportant à ces produits. Les journaux générés par le système rendus anonymes sont conservés pendant 18 mois maximum.
+Les contrôleurs peuvent utiliser deux méthodes distinctes pour gérer les données client et les journaux générés par le système collectés auprès des personnes concernées par le traitement des données, selon la façon dont le produit Visual Studio Family ou les extensions Microsoft ont été enregistrés. Dans certains cas, les deux méthodes doivent être utilisées. Elles permettent aux entités de contrôle de télécharger une copie de l’historique de leurs activités gérées par cette méthode. La fermeture d’un compte AAD ou de service Microsoft entraîne la suppression des données client Visual Studio connexes, et l’anonymisation des données d’identification personnelle contenues dans les journaux générés par le système se rapportant à ces produits. Les journaux générés par le système rendus anonymes sont conservés pendant 18 mois maximum.
 
 - Les utilisateurs ayant enregistré un produit Visual Studio Family à l’aide d’un compte lié à un client Azure, par exemple, un compte AAD ou un compte de service Microsoft associé à un abonnement Azure, peuvent suivre les instructions indiquées dans [Demandes des personnes associées aux données pour Azure concernant le RGPD](gdpr-dsr-azure.md).
 - Les utilisateurs ayant enregistré un produit Visual Studio Family sans utiliser de compte lié à un client Azure, par exemple de nombreux comptes à l’aide d’un compte de service Microsoft (MSA), peuvent utiliser le [Centre de réponse de confidentialité Microsoft basé sur le web](https://aka.ms/userprivacysite) disponible via leur compte Microsoft afin d’afficher, de contrôler et de supprimer des données d’activité liées à leur compte Microsoft sur plusieurs services Microsoft. Dans ce scénario, l’utilisateur agit en qualité de contrôleur de ses données personnelles.
@@ -104,13 +104,13 @@ Pour afficher les données liées à vos commentaires, procédez comme suit :
 1. Connectez-vous à [Communauté de développeurs](https://developercommunity.visualstudio.com). Dans l’angle supérieur droit, cliquez sur votre profil, puis sélectionnez **Profil et préférences**.
 2. Cliquez sur les onglets **Profil**, **Notifications**, **Activité** et **Pièces jointes** pour afficher les données envoyées aux systèmes de commentaires.
    1. **Profil** fait référence à votre profil [Communauté des développeurs](https://developercommunity.visualstudio.com), notamment le nom d’utilisateur, l’adresse e-mail, les informations générales, etc.
-   2. **Notifications** vous permet de contrôler les notifications électroniques que vous recevez.
+   2. **Les notifications vous permettent de contrôler les notifications électroniques que vous recevez.
    3. **Activité** vous fournit les éléments de commentaires que vous avez utilisés (publiés, commentés, etc.) et les activités effectuées.
    4. **Pièces jointes** est une liste de l’historique de vos pièces jointes dans un format comme `FileName was attached to the problem "ProblemName" Tue, Apr 10, 18 2:27 PM`.
 
 #### <a name="export"></a>Exporter
 
-Vous pouvez exporter vos données de commentaires dans le cadre de la DSR. Nous allons créer une ou plusieurs archives .zip qui incluent :
+Vous pouvez exporter vos données de commentaires dans le cadre de la DPC. Nous allons créer une ou plusieurs archives .zip qui incluent :
 
 - les informations de votre profil [Communauté des développeurs](https://developercommunity.visualstudio.com) ;
 - les préférences et les paramètres de notification ;
@@ -200,31 +200,31 @@ Pour demander la suppression des données personnelles utilisées avec le site w
 
 ## <a name="nuget"></a>NuGet
 
-Pour obtenir plus d’informations relatives aux DSR pour NuGet.org, consultez l’article [Demandes de données utilisateur NuGet](https://docs.microsoft.com/nuget/policies/data-requests).
+Pour obtenir plus d’informations relatives aux DPC pour NuGet.org, consultez l’article [Demandes de données utilisateur NuGet](https://docs.microsoft.com/nuget/policies/data-requests).
 
 ## <a name="aspnet"></a>ASP.NET
 
-Pour obtenir plus d’informations relatives aux DSR pour le site web ASP.NET, consultez l’article relatif au [traitement des demandes de personnes associées aux données pour le RGPD et le site web ASP.NET](https://www.asp.net/gdpr).
+Pour obtenir plus d’informations relatives aux DPC pour le site web ASP.NET, consultez l’article relatif au [traitement des demandes de personnes concernées pour le RGPD et le site web ASP.NET](https://www.asp.net/gdpr).
 
 ## <a name="iisnet"></a>IIS.NET
 
-Pour obtenir plus d’informations relatives aux DSR pour le site web IIS.NET, consultez l’article relatif au [traitement des demandes de personnes associées aux données pour le RGPD et le site web IIS.NET](https://www.iis.net/gdpr).
+Pour obtenir plus d’informations relatives aux DPC pour le site web IIS.NET, consultez l’article relatif au [traitement des demandes de personnes concernées pour le RGPD et le site web IIS.NET](https://www.iis.net/gdpr).
 
 ## <a name="other-visual-studio-family-services"></a>Autres services Visual Studio Family
 
 ### <a name="surveymonkey"></a>SurveyMonkey
 
-De temps à autre, nous invitons des clients à fournir des commentaires sur ces produits par l’intermédiaire de SurveyMonkey. Ces données sont supprimées dans un délai de 28 jours. Lors du traitement des demandes des personnes associées aux données pour ces produits, si nous avons des réponses de sondage authentifiées, nous les incluons dans l’exportation et la suppression desdites demandes.
+De temps à autre, nous invitons des clients à fournir des commentaires sur ces produits par l’intermédiaire de SurveyMonkey. Ces données sont supprimées dans un délai de 28 jours. Lors du traitement des demandes des personnes concernées par le traitement des données pour ces produits, si nous avons des réponses de sondage authentifiées, nous les incluons dans l’exportation et la suppression desdites demandes.
 
 ### <a name="uservoice"></a>UserVoice
 
-Nous invitons les clients à formuler des suggestions de produit sur les sites UserVoice.com pour ces produits. Ces sites sont gérés indépendamment par UserVoice, et les demandes des personnes associées aux données sont gérées par UserVoice.
+Nous invitons les clients à formuler des suggestions de produit sur les sites UserVoice.com pour ces produits. Ces sites sont gérés indépendamment par UserVoice, et les demandes des personnes concernées par le traitement des données sont gérées par UserVoice.
 
 - [https://visualstudio.uservoice.com/](https://visualstudio.uservoice.com/)
 - [https://aspnet.uservoice.com/](https://aspnet.uservoice.com/)
 - [https://xamarin.uservoice.com/](https://xamarin.uservoice.com/)
 
-En ce qui concerne les demandes des personnes concernées relatives à ces données, consultez les instructions d’UserVoice sur [Exporter vos données](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) ou sur [Supprimer vos données](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
+En ce qui concerne les demandes des personnes concernées par le traitement des données, consultez les instructions d’UserVoice sur [Exporter vos données](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) ou sur [Supprimer vos données](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
 
 ## <a name="learn-more"></a>En savoir plus
 
@@ -233,4 +233,4 @@ En ce qui concerne les demandes des personnes concernées relatives à ces donn�
 - [Portail d’approbation de service](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Tableau de bord de confidentialité Microsoft](https://account.microsoft.com/privacy)
 - [Centre de réponse de confidentialité Microsoft](https://aka.ms/userprivacysite)
-- [Demandes des personnes associées aux données pour Azure concernant le RGPD](gdpr-dsr-azure.md)
+- [Demandes des personnes concernées par le traitement des données pour Azure concernant le RGPD](gdpr-dsr-azure.md)

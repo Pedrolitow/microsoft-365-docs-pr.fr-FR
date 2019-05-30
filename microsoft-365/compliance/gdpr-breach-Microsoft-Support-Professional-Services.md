@@ -2,32 +2,32 @@
 title: Support Microsoft, services professionnels et notification des violations dans le cadre du RGPD
 description: Protection du support Microsoft et des services professionnels vis-à-vis des violations de données personnelles, et réponse et notification de Microsoft en cas de violation.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: a17752773304272938c305649ff6e511ab0d1b0b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8a0f0c5c173fbee6a865d2c9a7afb0f61b388507
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285741"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431595"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Support Microsoft, services professionnels et notification des violations dans le cadre du RGPD
 
 Le Support Microsoft et les services professionnels prennent au sérieux les obligations imposées par le Règlement général sur la protection des données (RGPD).
 
-Les services professionnels Microsoft sont constitués d’un groupe divers d’architectes techniques, d’ingénieurs, de consultants et de professionnels du support qui se consacrent à remplir la mission de Microsoft consistant à donner aux clients les moyens de faire et accomplir plus de choses. Notre équipe des services professionnels comprend plus de 21 000 consultants au total (conseillers numériques, Support Premier, ingénieurs et commerciaux) qui travaillent dans 191 régions et 46 langues différentes, gèrent plusieurs millions d’engagements par mois et ont des interactions avec les clients et les partenaires à l’aide d’outils locaux automatisés basés sur le téléphone, le web et la communauté. L’organisation apporte une grande expertise dans le portefeuille Microsoft, tirant parti d’un important réseau de partenaires, de communautés techniques, d’outils, de diagnostics et de canaux qui nous connectent à nos clients professionnels.
+Les services professionnels Microsoft sont constitués d’un groupe divers d’architectes techniques, d’ingénieurs, de consultants et de professionnels du support qui se consacrent à remplir la mission de Microsoft consistant à donner aux clients les moyens d’être plus productifs. Notre équipe des services professionnels comprend plus de 21 000 consultants, conseillers numériques, agents de support, ingénieurs et autres commerciaux, opérant dans 191 pays et 46 langues différentes, gérant plusieurs millions d’engagements par mois et interagissant avec les clients et partenaires à l’aide d’outils locaux automatisés basés sur le téléphone, le web et la communauté. L’organisation apporte une grande expertise dans le portefeuille Microsoft, tirant parti d’un important réseau de partenaires, de communautés techniques, d’outils, de diagnostics et de canaux qui nous connectent à nos clients professionnels.
 
-Les objectifs de l’équipe de réponse aux incidents de protection des données globales des services professionnels Microsoft sont les suivants : (a) utiliser des opérations et des processus rigoureux en vue d’éviter la survenue d’incidents de protection des données, (b) les gérer de façon professionnelle et efficace lorsqu’ils se produisent et (c) tirer des leçons de ces incidents de protection des données via des post-mortem réguliers et des améliorations du programme. Les processus et les résultats de l’équipe de réponse aux incidents de protection des données des services professionnels Microsoft sont vérifiés et confirmés par plusieurs audits de sécurité et de conformité (par exemple, ISO/IEC 27001).
+Les objectifs de l’équipe de réponse aux incidents de protection des données globales des Services professionnels Microsoft sont les suivants : (a) utiliser des opérations et des processus rigoureux en vue d’éviter la survenue d’incidents de protection des données, (b) les gérer de façon professionnelle et efficace lorsqu’ils se produisent et (c) tirer des leçons de ces incidents de protection des données via des post-mortem réguliers et des améliorations du programme. Les processus et les résultats de l’équipe de réponse aux incidents de protection des données des Services professionnels Microsoft sont vérifiés et confirmés par plusieurs audits de sécurité et de conformité (par exemple, ISO/IEC 27001).
 
 ### <a name="data-protection-incident-response-overview"></a>Présentation de la réponse aux incidents de protection des données 
 
-Les services professionnels Microsoft s’impliquent dans la protection de leurs clients et prennent toutes les mesures nécessaires pour empêcher les incidents de protection des données de survenir, dans une optique de maintien de la confiance des clients. Un incident de protection des données dans l’organisation des services professionnels est une violation de sécurité entraînant, de manière accidentelle ou illégale, la destruction, la perte, l’altération, la divulgation non autorisée de données personnelles ou de données de support ou de conseil, ou l’accès à ces données, lors de leur traitement par Microsoft. Les clients commerciaux abonnés au support Premier, au support Unifié ou aux services de conseil Microsoft doivent se reporter à la réponse aux incidents de protection des données dans leur langue dans l’addendum sur la protection des données des services professionnels, à l’adresse <http://aka.ms/professionalservicesdpa/>.
+La division Services professionnels Microsoft s’implique dans la protection de ses clients et prend toutes les mesures nécessaires pour empêcher les incidents de protection des données de survenir, dans une optique de maintien de la confiance des clients. Pour la division Services professionnels, un incident de protection des données correspond à une violation de sécurité entraînant, de manière accidentelle ou illégale, la destruction, la perte, l’altération, la divulgation non autorisée de données personnelles ou de données de support ou de conseil, ou l’accès à ces données, lors de leur traitement par Microsoft. Les clients commerciaux abonnés au support Premier, au support Unifié ou aux services de conseil Microsoft doivent se reporter à la réponse aux incidents de protection des données dans leur langue dans l’addenda sur la protection des données des services professionnels, à l’adresse <http://aka.ms/professionalservicesdpa/>.
 
 ### <a name="scope--limits-of-data-protection-incident-response-process"></a>Étendue et limites du processus de réponse aux incidents de protection des données
 
@@ -99,7 +99,7 @@ Lors de la notification aux clients d’une violation de données personnelles, 
 
 -   Volume d’enregistrements de données concerné/exposé, si connu
 
--   Détails sur le sous-processeur/fournisseur, si associé à la violation
+-   Détails sur le responsable du traitement/fournisseur, si associé à la violation
 
 #### <a name="learn-more"></a>En savoir plus
 Apprenez-en davantage sur les Services professionnels Microsoft en visitant le Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>). 

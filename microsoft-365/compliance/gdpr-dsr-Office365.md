@@ -1,7 +1,7 @@
 ---
 title: Demandes de service de données Office 365 en vertu du RGPD
-description: Comprendre les droits d’utilisateur en vertu du RGPD et comment Office 365 permet aux entreprises de rechercher et de traiter des données en réponse à des DSR.
-keywords: Office 365, DSR, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
+description: Comprendre les droits d’utilisateur en vertu du RGPD et comment Office 365 permet aux entreprises de rechercher et de traiter des données en réponse à des DPC.
+keywords: Office 365, DPC, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -17,21 +17,21 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/09/2019
 ms.locfileid: "33835448"
 ---
-# <a name="office-365-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées pour Office 365 concernant le RGPD
+# <a name="office-365-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées par le traitement des données pour Office 365 concernant le RGPD
 
-## <a name="introduction-to-dsrs"></a>Présentation des DSR
+## <a name="introduction-to-dsrs"></a>Présentation des DPC
 
-Le Règlement général sur la protection des données (RGPD) permet aux utilisateurs (désignés dans le règlement comme étant les *personnes concernées*) de gérer les données personnelles collectées par un employeur ou tout autre type d’agence ou organisation (le *responsable du traitement des données* ou le *responsable du traitement* uniquement). Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données, les demandes de modification de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à un autre responsable du traitement. Toute demande formelle effectuée par une personne concernée à un responsable du traitement au sujet de la prise de mesure sur ses données personnelles est appelée *Demande de la personne concernée* ou DSR (Data Subject Request). Le responsable du traitement est obligé de prendre rapidement en compte chaque DSR et de fournir une réponse substantielle en prenant la mesure demandée ou en fournissant une explication s’il n’a pas la capacité de le faire. Un responsable du traitement des données doit consulter son conseiller juridique ou en matière de conformité à propos des dispositions appropriées pour toute DSR donnée.
+Le Règlement général sur la protection des données (RGPD) permet aux utilisateurs (désignés dans le règlement comme étant les *personnes concernées par le traitement des données*) de gérer les données personnelles collectées par un employeur ou tout autre type d’agence ou organisation (le *entité de contrôle des données* ou le *entité de contrôle* uniquement). Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées par le traitement des données des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données, les demandes de modification de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à un autre responsable du traitement. Toute demande formelle effectuée par une personne concernée par le traitement des données à une entité de contrôle des données au sujet de la prise de mesure sur ses données personnelles est appelée *Demande de la personne concernée* ou DPC. L’entité de contrôle des données est obligée de prendre rapidement en compte chaque DPC et de fournir une réponse substantielle en prenant la mesure demandée ou en fournissant une explication si elle n’a pas la capacité de le faire. Une entité de contrôle des données doit consulter son conseiller juridique ou en matière de conformité à propos des dispositions appropriées pour toute DPC donnée.
 
-Le guide explique comment utiliser les outils d’administration, les services et les produits Office 365 pour vous aider à rechercher et à traiter des données personnelles pour répondre à des DSR. Plus précisément, il explique comment rechercher, consulter et traiter des données personnelles stockées dans le cloud Microsoft. Voici un bref aperçu des processus décrits dans ce guide :
+Le guide explique comment utiliser les outils d’administration, les services et les produits Office 365 pour vous aider à rechercher et à traiter des données personnelles pour répondre à des DPC. Plus précisément, il explique comment rechercher, consulter et traiter des données personnelles stockées dans le cloud Microsoft. Voici un aperçu des processus décrits dans ce guide :
 
-1.  ***Découvrir*** : utilisez les outils de recherche et de découverte, tels que ceux proposés par le Centre de sécurité et conformité Microsoft pour rechercher plus facilement du contenu client qui peut faire l’objet d’une DSR. Une fois que vous avez collecté les documents pouvant être utiles, vous pouvez effectuer une ou plusieurs des actions de DSR décrites dans les étapes suivantes pour répondre à la demande de DSR. Par ailleurs, vous pouvez décider que la demande ne respecte pas les instructions de votre organisation pour répondre à des DSR.
+1.  ***Découvrir*** : utilisez les outils de recherche et de découverte, tels que ceux proposés par le Centre de sécurité et conformité Microsoft pour rechercher plus facilement du contenu client qui peut faire l’objet d’une DPC. Une fois que vous avez collecté les documents pouvant être utiles, vous pouvez effectuer une ou plusieurs des actions relatives aux DPC décrites dans les étapes suivantes pour répondre aux DPC. Par ailleurs, vous pouvez décider que la demande ne respecte pas les instructions de votre organisation pour répondre à des DPC.
 
 2.  ***Consulter*** : récupérez des données personnelles qui résident dans le cloud Microsoft et, si nécessaire, effectuez-en une copie pour la personne concernée.
 
 3.  ***Rectifier*** : modifiez ou mettez en œuvre d’autres actions demandées sur les données personnelles, le cas échéant.
 
-4.  ***Limiter*** : limitez le traitement des données personnelles, soit en supprimant des licences pour différents services Office 365, soit en désactivant les services ou les fonctionnalités souhaitées, lorsque cela est possible. Vous pouvez également supprimer des données du cloud Microsoft et les conserver en local ou à un autre emplacement.
+4.  ***Restreindre*** : restreignez le traitement des données personnelles, soit en supprimant des licences pour différents services Office 365, soit en désactivant les services ou les fonctionnalités souhaitées, lorsque cela est possible. Vous pouvez également supprimer des données du cloud Microsoft et les conserver en local ou à un autre emplacement.
 
 5.  ***Supprimer*** : supprimez définitivement des données personnelles qui résident dans le cloud Microsoft.
 
@@ -41,31 +41,31 @@ Le guide explique comment utiliser les outils d’administration, les services e
 
 Voici des définitions de termes du RGPD utilisés dans ce guide.
 
-- *Contrôleur* : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement des données personnelles ; lorsque les finalités et les moyens du traitement sont déterminés par la législation de l’Union ou des États membres, le contrôleur peut être désigné, ou les critères spécifiques relatifs à sa nomination peuvent être définis, par la législation de l’Union ou des États membres.
+- *Entité de contrôle* : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement des données personnelles ; lorsque les finalités et les moyens du traitement sont déterminés par la législation de l’Union ou des États membres, l’entité de contrôle peut être désignée, ou les critères spécifiques relatifs à sa nomination peuvent être définis, par la législation de l’Union ou des États membres.
 
--   *Données personnelles* et *personne concernée* : elles correspondent aux informations relatives à une personne naturelle identifiée ou identifiable (« la personne concernée ») ; une personne naturelle identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identificateur par exemple, un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou un ou plusieurs facteurs spécifiques de l’identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale de cette personne naturelle.
+-   *Données personnelles* et *personne concernée par le traitement des données* : elles correspondent aux informations relatives à une personne naturelle identifiée ou identifiable (« la personne concernée par le traitement des données ») ; une personne naturelle identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identificateur par exemple, un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou un ou plusieurs facteurs spécifiques de l’identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale de cette personne naturelle.
 
--   *Sous-traitant* : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données personnelles pour le compte du contrôleur.
+-   *Responsable du traitement* : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données personnelles pour le compte de l’entité de contrôle.
 
 ### <a name="how-to-use-this-guide"></a>Comment utiliser ce guide
 
 Pour vous aider à trouver des informations pertinentes pour votre cas d’utilisation, ce guide est divisé en quatre parties.
 
-[Partie 1 : Répondre à des DSR pour les données client](#part-1-responding-to-dsrs-for-customer-data) - *Les données client*sont des données produites et stockées dans Office 365 lors des opérations quotidiennes d’exploitation de votre entreprise. Les applications Office 365 les plus fréquemment utilisées qui vous permettent de rédiger des données incluent Word, Excel, PowerPoint, Outlook et OneNote. Office 365 comprend également des applications telles que SharePoint Online, Teams et Forms qui vous permettent de mieux collaborer avec d’autres personnes. La partie 1 de ce guide explique comment découvrir, consulter, rectifier, limiter, supprimer et exporter des données à partir des applications Office 365 utilisées pour créer et stocker des données dans des services en ligne Office 365. Elle présente des produits et des services pour lesquels Microsoft agit en tant que processeur de données pour votre organisation, mettant ainsi les fonctionnalités de DSR à disposition de votre administrateur client.
+[Partie 1 : Répondre à des DPC pour les données client](#part-1-responding-to-dsrs-for-customer-data) - *Les données client*sont des données produites et stockées dans Office 365 lors des opérations quotidiennes d’exploitation de votre entreprise. Les applications Office 365 les plus fréquemment utilisées qui vous permettent de rédiger des données incluent Word, Excel, PowerPoint, Outlook et OneNote. Office 365 comprend également des applications telles que SharePoint Online, Teams et Forms qui vous permettent de mieux collaborer avec d’autres personnes. La partie 1 de ce guide explique comment découvrir, consulter, rectifier, restreindre, supprimer et exporter des données à partir des applications Office 365 utilisées pour créer et stocker des données dans des services en ligne Office 365. Elle présente des produits et des services pour lesquels Microsoft agit en tant que responsable du traitement des données pour votre organisation, mettant ainsi les fonctionnalités de DPC à disposition de votre administrateur client.
 
-[Partie 2 : Répondre à des DSR dans le respect des informations générées par Office 365](#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) : Office 365 fournit certaines informations par l’intermédiaire de services tels que Delve, MyAnalytics et Workplace Analytics. La partie 2 de ce guide explique comment ces informations sont générées et comment répondre à des DSR qui s’y rapportent.
+[Partie 2 : Répondre à des DPC dans le respect des informations générées par Office 365](#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) : Office 365 fournit certaines informations par l’intermédiaire de services tels que Delve, MyAnalytics et le service Analyse du temps de travail. La partie 2 de ce guide explique comment ces informations sont générées et comment répondre à des DPC qui s’y rapportent.
 
-[Partie 3 : Répondre à des DSR pour les journaux générés par le système](#part-3-responding-to-dsrs-for-system-generated-logs) : lorsque vous utilisez les services Office 365 Enterprise, Microsoft génère des informations telles que des journaux de service qui enregistrent l’utilisation ou les performances des fonctionnalités sur les services en ligne. La plupart des données générées par des services contiennent des identificateurs pseudonymes générés par Microsoft et, au sein de ce document, cette catégorie est généralement appelée *journaux générés par le système*. Bien que ces données ne peuvent pas être attribuées à une personne concernée spécifique sans utiliser d’informations supplémentaires, certaines d’entre elles peuvent être considérées comme personnelles en vertu de la définition des « données personnelles » du RGPD. La partie 3 de ce guide explique comment consulter, supprimer et exporter des journaux générés par le système.
+[Partie 3 : Répondre à des DPC pour les journaux générés par le système](#part-3-responding-to-dsrs-for-system-generated-logs) : lorsque vous utilisez les services Office 365 Enterprise, Microsoft génère des informations telles que des journaux de service qui enregistrent l’utilisation ou les performances des fonctionnalités sur les services en ligne. La plupart des données générées par des services contiennent des identificateurs pseudonymes générés par Microsoft et, au sein de ce document, cette catégorie est généralement appelée *journaux générés par le système*. Bien que ces données ne peuvent pas être attribuées à une personne concernée par le traitement des données spécifique sans utiliser d’informations supplémentaires, certaines d’entre elles peuvent être considérées comme personnelles en vertu de la définition des « données personnelles » du RGPD. La partie 3 de ce guide explique comment consulter, supprimer et exporter des journaux générés par le système.
 
-[Partie 4 : Ressources supplémentaires pour vous aider avec des DSR](#part-4-additional-resources-to-assist-you-with-dsrs): la partie 4 de ce guide répertorie les scénarios limités dans lesquels Microsoft est le responsable du traitement des données lorsque certains produits et services Office 365 sont utilisés.
+[Partie 4 : Ressources supplémentaires pour vous aider avec des DPC](#part-4-additional-resources-to-assist-you-with-dsrs): la partie 4 de ce guide répertorie les scénarios limités dans lesquels Microsoft est l’entité de contrôle des données lorsque certains produits et services Office 365 sont utilisés.
 
 > [!NOTE]
-> Dans la plupart des cas, quand les utilisateurs de votre organisation utilisent les produits et les services Microsoft Office 365, vous êtes le responsable du traitement des données et Microsoft est le sous-traitant. En tant que responsable du traitement des données, vous êtes tenu de répondre à la personne concernée directement. Pour vous aider dans cette tâche, les parties 1 à 3 de ce guide expliquent le détail des fonctionnalités techniques disponibles pour votre organisation afin de répondre à une demande de DSR. Cependant, dans certains cas de figure plus rares, Microsoft agit en qualité de responsable du traitement des données lorsque les clients utilisent certains produits et services Office 365. Dans ce cas, les informations indiquées dans la partie 4 fournissent des instructions sur la manière dont les personnes concernées peuvent envoyer des demandes de DSR à Microsoft.
+> Dans la plupart des cas, lorsque les utilisateurs de votre organisation utilisent les produits et les services Microsoft Office 365, vous êtes l’entité de contrôle des données et Microsoft est le responsable de leur traitement. En tant qu’entité de contrôle des données, vous êtes tenu de répondre directement à la personne concernée par le traitement des données. Pour vous aider dans cette tâche, les parties 1 à 3 de ce guide expliquent le détail des fonctionnalités techniques disponibles pour votre organisation afin de répondre à une DPC. Cependant, dans certains cas de figure plus rares, Microsoft agit en qualité d’entité de contrôle des données lorsque les clients utilisent certains produits et services Office 365. Dans ce cas, les informations indiquées dans la partie 4 fournissent des instructions sur la manière dont les personnes concernées par le traitement des données peuvent envoyer des DPC à Microsoft.
 
 
 ### <a name="office-365-national-clouds"></a>Clouds nationaux Office 365
 
-Les services Microsoft Office 365 sont également disponibles dans les environnements de cloud national suivants : [Office 365 Allemagne](https://support.office.com/article/learn-about-office-365-germany-8a5a4bbc-667a-4cac-8769-d8ac9015db4c), [Office 365 géré par 21Vianet (Chine)](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE) et [Office 365 Secteur Public](https://technet.microsoft.com/library/mt774581.aspx). La plupart des instructions relatives à la gestion des demandes des personnes concernées décrites dans ce document s’applique à ces environnements de cloud national. Cependant, en raison de la nature isolée de ces environnements, il existe quelques exceptions. Quand il y a lieu pour une sous-section donnée, ces exceptions sont mises en évidence dans une note correspondante.
+Les services Microsoft Office 365 sont également disponibles dans les environnements de cloud national suivants : [Office 365 Allemagne](https://support.office.com/article/learn-about-office-365-germany-8a5a4bbc-667a-4cac-8769-d8ac9015db4c), [Office 365 géré par 21Vianet (Chine)](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE) et [Office 365 Secteur Public](https://technet.microsoft.com/library/mt774581.aspx). La plupart des instructions relatives à la gestion des demandes des personnes concernées par le traitement des données décrites dans ce document s’appliquent à ces environnements de cloud national. Cependant, en raison de la nature isolée de ces environnements, il existe quelques exceptions. Quand il y a lieu pour une sous-section donnée, ces exceptions sont mises en évidence dans une note correspondante.
 
 ### <a name="hybrid-deployments"></a>Déploiements hybrides
 
@@ -74,32 +74,32 @@ Votre organisation Office 365 se compose peut-être d’offres Microsoft qui so
 - Les déploiements SharePoint hybrides, où les serveurs de sites et de fichiers sont en local et les comptes OneDrive Entreprise sont dans Office 365.
 - Le système local de gestion des identités (Active Directory) synchronisé avec Azure Activity Directory, correspondant au service d’annuaire sous-jacent dans Office 365.
 
-Lorsque vous répondez à une demande de DSR, vous devez parfois déterminer si les données répondant à une demande de DSR figurent dans le cloud de Microsoft ou en local dans votre organisation, puis suivre la procédure appropriée pour répondre à la demande en question. Le guide sur les demandes des personnes concernées Office 365 fournit des instructions pour répondre aux données informatiques. Pour obtenir des instructions relatives aux données figurant en local dans votre organisation, consultez l’article [RGPD pour les serveurs Office locaux](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers). 
+Lorsque vous répondez à une DPC, vous devez parfois déterminer si les données répondant à une DPC figurent dans le cloud de Microsoft ou en local dans votre organisation, puis suivre la procédure appropriée pour répondre à la demande en question. Le guide sur les demandes des personnes concernées Office 365 fournit des instructions pour répondre aux données informatiques. Pour obtenir des instructions relatives aux données figurant en local dans votre organisation, consultez l’article [RGPD pour les serveurs Office locaux](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers). 
 
 
-## <a name="part-1-responding-to-dsrs-for-customer-data"></a>Partie 1 : Répondre à des DSR pour les données client
+## <a name="part-1-responding-to-dsrs-for-customer-data"></a>Partie 1 : Répondre à des DPC pour les données client
 
-Les instructions pour répondre aux DSR pour les données client sont divisées dans les quatre sections suivantes :
+Les instructions pour répondre aux DPC pour les données client sont divisées dans les quatre sections suivantes :
 
-- [Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DSR](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)
+- [Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DPC](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)
 
-- [Utilisation des fonctionnalités intégrées à l’application pour répondre aux DSR](#using-in-app-functionality-to-respond-to-dsrs)
+- [Utilisation des fonctionnalités intégrées à l’application pour répondre aux DPC](#using-in-app-functionality-to-respond-to-dsrs)
 
-- [Réponse aux demandes de rectification de DSR](#responding-to-dsr-rectification-requests)
+- [Réponse aux demandes de rectification de DPC](#responding-to-dsr-rectification-requests)
 
-- [Réponse aux demandes de restriction de DSR](#responding-to-dsr-restriction-requests)
+- [Réponse aux demandes de restriction de DPC](#responding-to-dsr-restriction-requests)
 
-### <a name="how-to-determine-the-office-365-applications-that-may-be-in-scope-for-a-dsr-for-customer-data"></a>Comment identifier les applications Office 365 qu’il est possible d’utiliser pour une DSR pour les données client
+### <a name="how-to-determine-the-office-365-applications-that-may-be-in-scope-for-a-dsr-for-customer-data"></a>Comment identifier les applications Office 365 qu’il est possible d’utiliser pour une DPC pour les données client
 
-Pour vous aider à déterminer l’emplacement où rechercher des données personnelles ou comment effectuer une recherche, il convient d’identifier les applications Office 365 que les membres de votre organisation peuvent utiliser pour créer et stocker des données dans Office 365. Le fait de connaître ces applications permet de limiter les applications Office 365 pertinentes pour une DSR et vous aide à déterminer comment rechercher et consulter des données personnelles liées à une DSR. Plus précisément, cela signifie que vous pouvez utiliser l’outil de recherche de contenu ou si vous devez utiliser les fonctionnalités intégrées à l’application dans laquelle les données ont été créées.
+Pour vous aider à déterminer l’emplacement où rechercher des données personnelles ou comment effectuer une recherche, il convient d’identifier les applications Office 365 que les membres de votre organisation peuvent utiliser pour créer et stocker des données dans Office 365. Le fait de connaître ces applications permet de restreindre les applications Office 365 pertinentes pour une DPC et vous aide à déterminer comment rechercher et consulter des données personnelles liées à une DPC. Plus précisément, cela signifie que vous pouvez utiliser l’outil de recherche de contenu ou si vous devez utiliser les fonctionnalités intégrées à l’application dans laquelle les données ont été créées.
 
 Une méthode rapide pour identifier les applications Office 365 que les membres de votre organisation utilisent pour créer des données client consiste à connaître les applications incluses dans l’abonnement Office 365 de votre organisation. Pour ce faire, vous pouvez accéder aux comptes d’utilisateurs dans le portail d’administration Office 365 et examiner les informations de licence du produit. Consultez la section [Attribuer des licences aux utilisateurs dans Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
 
-## <a name="using-the-content-search-ediscovery-tool-to-respond-to-dsrs"></a>Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DSR
+## <a name="using-the-content-search-ediscovery-tool-to-respond-to-dsrs"></a>Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DPC
 
-Lorsque vous recherchez des données personnelles dans l’ensemble de données le plus volumineux que votre organisation crée et stocke à l’aide d’Office 365, il convient peut-être d’abord de réfléchir aux applications les plus fréquemment utilisées pour créer les données que vous recherchez. Microsoft estime que plus de 90 % des données d’une organisation stockées dans Office 365 sont créées dans Word, Excel, PowerPoint, OneNote et Outlook. Les documents créés dans ces applications Office, même si ces applications ont été achetées avec Office 365 ProPlus ou une licence perpétuelle Office, sont généralement stockés sur un site SharePoint Online, sur un compte utilisateur OneDrive Entreprise ou dans la boîte aux lettres Exchange Online d’un utilisateur. Cela signifie que vous pouvez utiliser l’outil de recherche de contenu eDiscovery pour effectuer une recherche (et effectuer d’autres actions liées aux DSR) sur des sites SharePoint Online, des comptes OneDrive Entreprise et dans des boîtes aux lettres Exchange Online (y compris les sites et boîtes aux lettres associés aux Groupes Office 365, Microsoft Teams, Affectations EDU et StaffHub) pour rechercher des éléments dans des documents et des boîtes aux lettres qui peuvent être pertinents pour les DSR que vous étudiez. Vous pouvez également utiliser l’outil de recherche de contenu pour découvrir les données client créées dans d’autres applications Office 365.
+Lorsque vous recherchez des données personnelles dans l’ensemble de données le plus volumineux que votre organisation crée et stocke à l’aide d’Office 365, il convient peut-être d’abord de réfléchir aux applications les plus fréquemment utilisées pour créer les données que vous recherchez. Microsoft estime que plus de 90 % des données d’une organisation stockées dans Office 365 sont créées dans Word, Excel, PowerPoint, OneNote et Outlook. Les documents créés dans ces applications Office, même si ces applications ont été achetées avec Office 365 ProPlus ou une licence perpétuelle Office, sont généralement stockés sur un site SharePoint Online, sur un compte utilisateur OneDrive Entreprise ou dans la boîte aux lettres Exchange Online d’un utilisateur. Cela signifie que vous pouvez utiliser l’outil de recherche de contenu eDiscovery pour effectuer une recherche (et effectuer d’autres actions liées aux DPC) sur des sites SharePoint Online, des comptes OneDrive Entreprise et dans des boîtes aux lettres Exchange Online (y compris les sites et boîtes aux lettres associés aux Groupes Office 365, Microsoft Teams, Affectations EDU et StaffHub) pour rechercher des éléments dans des documents et des boîtes aux lettres qui peuvent être pertinents pour les DPC que vous étudiez. Vous pouvez également utiliser l’outil de recherche de contenu pour découvrir les données client créées dans d’autres applications Office 365.
 
-Le tableau suivant répertorie les applications Office 365 qui permettent de créer du contenu créé par le client et qui peuvent être identifiées à l’aide de la recherche de contenu. Cette section du guide relatif aux DSR fournit des instructions sur la façon de découvrir, de consulter, d’exporter et de supprimer des données créées avec ces applications Office 365.
+Le tableau suivant répertorie les applications Office 365 qui permettent de créer du contenu créé par le client et qui peuvent être identifiées à l’aide de la recherche de contenu. Cette section du guide relatif aux DPC fournit des instructions sur la façon de découvrir, de consulter, d’exporter et de supprimer des données créées avec ces applications Office 365.
 
 ***Tableau 1 : Applications permettant l’utilisation de la recherche de contenu pour trouver des données client***
 
@@ -122,13 +122,13 @@ Le tableau suivant répertorie les applications Office 365 qui permettent de cr
 
 ### <a name="using-content-search-to-find-personal-data"></a>Utilisation de la recherche de contenu pour rechercher des données personnelles
 
-La première étape du traitement d’une DSR consiste à trouver les données personnelles qui concernent la DSR. Pour ce faire, il convient d’utiliser les outils eDiscovery Office 365 pour rechercher des données personnelles (parmi toutes les données de votre organisation dans Office 365) ou d’accéder directement à l’application native dans laquelle les données ont été créées. Cette première étape (rechercher et examiner les données personnelles en question) vous aide à déterminer si une DSR répond aux exigences de votre organisation afin de satisfaire ou de refuser une demande de la personne concernée. Par exemple, après avoir trouvé et examiné les données personnelles en question, vous pouvez décider que la demande ne répond pas aux exigences de votre organisation, car cette action peut nuire aux droits et aux libertés d’autrui ou parce que les données personnelles sont contenues dans un enregistrement professionnel que votre organisation souhaite conserver pour des raisons commerciales.
+La première étape du traitement d’une DPC consiste à trouver les données personnelles qui concernent la DPC. Pour ce faire, il convient d’utiliser les outils eDiscovery Office 365 pour rechercher des données personnelles (parmi toutes les données de votre organisation dans Office 365) ou d’accéder directement à l’application native dans laquelle les données ont été créées. Cette première étape (rechercher et examiner les données personnelles en question) vous aide à déterminer si une DPC répond aux exigences de votre organisation afin de satisfaire ou de refuser une demande de la personne concernée par le traitement des données. Par exemple, après avoir trouvé et examiné les données personnelles en question, vous pouvez décider que la demande ne répond pas aux exigences de votre organisation, car cette action peut nuire aux droits et aux libertés d’autrui ou parce que les données personnelles sont contenues dans un enregistrement professionnel que votre organisation souhaite conserver pour des raisons commerciales.
 
-Comme indiqué précédemment, Microsoft estime que plus de 90 % des données d’une organisation sont créées avec les applications Office, telles que Word et Excel. Cela signifie que vous pouvez utiliser la recherche de contenu dans le Centre de sécurité et conformité pour rechercher la plupart des données liées aux DSR.
+Comme indiqué précédemment, Microsoft estime que plus de 90 % des données d’une organisation sont créées avec les applications Office, telles que Word et Excel. Cela signifie que vous pouvez utiliser la recherche de contenu dans le Centre de sécurité et conformité pour rechercher la plupart des données liées aux DPC.
 
-Ce guide part du principe que vous ou la personne recherchant des données personnelles pouvant répondre à une demande de DSR êtes familiarisés avec l’outil de recherche de contenu dans le Centre de sécurité et conformité ou savez vous en servir. Pour obtenir des instructions générales sur l’utilisation de la recherche de contenu, consultez l’article [Recherche de contenu dans Office 365](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Veillez à ce que la personne qui lance les recherches ait reçu les autorisations nécessaires dans le Centre de sécurité et conformité. Cette personne doit être ajoutée en tant que membre du groupe de rôles de gestionnaire eDiscovery dans le Centre de sécurité et conformité Office 365 ; consultez l’article [Attribuer des autorisations eDiscovery dans le centre de sécurité et conformité Office 365](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Songez à ajouter d’autres personnes dans votre organisation qui sont concernées par l’examen de DSR au groupe de rôles de gestionnaire eDiscovery afin qu’elles puissent effectuer les actions nécessaires dans l’outil de recherche de contenu telles que la consultation préalable et l’exportation des résultats de recherche. Toutefois, sauf si vous définissez des limites de conformité (comme décrit [ici](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)), n’oubliez pas qu’un gestionnaire eDiscovery peut effectuer des recherches dans tous les emplacements de contenu de votre organisation, y compris ceux qui ne sont pas liés à l’examen d’une DSR.
+Ce guide part du principe que vous ou la personne recherchant des données personnelles pouvant répondre à une demande de DPC êtes familiarisés avec l’outil de recherche de contenu dans le Centre de sécurité et conformité ou savez vous en servir. Pour obtenir des instructions générales sur l’utilisation de la recherche de contenu, consultez l’article [Recherche de contenu dans Office 365](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Veillez à ce que la personne qui lance les recherches ait reçu les autorisations nécessaires dans le Centre de sécurité et conformité. Cette personne doit être ajoutée en tant que membre du groupe de rôles de gestionnaire eDiscovery dans le Centre de sécurité et conformité Office 365 ; consultez l’article [Attribuer des autorisations eDiscovery dans le centre de sécurité et conformité Office 365](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Songez à ajouter d’autres personnes dans votre organisation qui sont concernées par l’examen de DPC au groupe de rôles de gestionnaire eDiscovery afin qu’elles puissent effectuer les actions nécessaires dans l’outil de recherche de contenu telles que la consultation préalable et l’exportation des résultats de recherche. Toutefois, sauf si vous définissez des limites de conformité (comme décrit [ici](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)), n’oubliez pas qu’un gestionnaire eDiscovery peut effectuer des recherches dans tous les emplacements de contenu de votre organisation, y compris ceux qui ne sont pas liés à l’examen d’une DPC.
 
-Une fois que vous avez trouvé les données, vous pouvez ensuite effectuer l’action spécifique pour satisfaire la demande par la personne concernée.
+Lorsque vous avez trouvé les données, vous pouvez ensuite effectuer l’action spécifique pour satisfaire la demande de la personne concernée.
 
 > [!NOTE]
 > Dans Office 365 Allemagne, le Centre de sécurité et conformité se trouve à l’adresse https://protection.office.de.
@@ -147,7 +147,7 @@ Vous pouvez rechercher les types d’emplacements de contenu suivants avec l’o
 -   Les comptes OneDrive Entreprise
 
 > [!NOTE]
-> Ce guide part du principe que toutes les données susceptibles d’être pertinentes pour l’examen d’une DSR sont stockées dans Office 365. En d’autres termes, stockées dans le cloud Microsoft. Les données stockées sur l’ordinateur local d’un utilisateur ou en local sur les serveurs de fichiers de votre organisation ne rentrent pas dans le champ d’application de l’examen d’une DSR pour les données stockées dans Office 365. Pour obtenir des instructions expliquant comment répondre à des demandes de DSR pour les données contenues dans des organisations locales, consultez l’article [RGPD pour les serveurs Office locaux](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers).
+> Ce guide part du principe que toutes les données susceptibles d’être pertinentes pour l’examen d’une DPC sont stockées dans Office 365. En d’autres termes, elles sont stockées dans le cloud Microsoft. Les données stockées sur l’ordinateur local d’un utilisateur ou en local sur les serveurs de fichiers de votre organisation ne rentrent pas dans le champ d’application de l’examen d’une DPC pour les données stockées dans Office 365. Pour obtenir des instructions expliquant comment répondre à des demandes de DPC pour les données contenues dans des organisations locales, consultez l’article [RGPD pour les serveurs Office locaux](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers).
 
 
 #### <a name="tips-for-searching-content-locations"></a>Conseils de recherche d’emplacements de contenu
@@ -156,11 +156,11 @@ Vous pouvez rechercher les types d’emplacements de contenu suivants avec l’o
 
 -   Utilisez les statistiques de recherche pour identifier les principaux emplacements qui contiennent les éléments correspondant à votre requête de recherche. Consultez l’article [Afficher les statistiques de mot clé pour les résultats de recherche de contenu](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 
--   Consultez le journal d’audit Office 365 pour rechercher les activités récentes de fichiers et de dossiers effectuées par l’utilisateur qui est l’auteur de la DSR. Consulter le journal d’audit permet de renvoyer une liste d’enregistrements d’audit contenant le nom et l’emplacement des ressources avec lesquelles l’utilisateur a interagi récemment. Il est possible que vous puissiez utiliser ces informations pour créer une requête de recherche de contenu. Consultez l’article [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et conformité Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
+-   Consultez le journal d’audit Office 365 pour rechercher les activités récentes de fichiers et de dossiers effectuées par l’utilisateur qui est l’auteur de la DPC. Consulter le journal d’audit permet de renvoyer une liste d’enregistrements d’audit contenant le nom et l’emplacement des ressources avec lesquelles l’utilisateur a interagi récemment. Il est possible que vous puissiez utiliser ces informations pour créer une requête de recherche de contenu. Consultez l’article [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et conformité Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 #### <a name="building-search-queries-to-find-personal-data"></a>Création des requêtes de recherche pour trouver des données personnelles
 
-La DSR que vous examinez contient probablement des identificateurs que vous pouvez utiliser dans la requête de recherche de mots clés afin de rechercher des données personnelles. Voici certains identificateurs courants qui peuvent être utilisés dans une requête de recherche pour trouver des données personnelles :
+La DPC que vous examinez contient probablement des identificateurs que vous pouvez utiliser dans la requête de recherche de mots clés afin de rechercher des données personnelles. Voici certains identificateurs courants qui peuvent être utilisés dans une requête de recherche pour trouver des données personnelles :
 
 -   Adresse e-mail ou alias
 
@@ -172,9 +172,9 @@ La DSR que vous examinez contient probablement des identificateurs que vous pouv
 
 -   Numéro d’identification national ou version membre de l’UE d’un numéro de sécurité sociale
 
-La DSR que vous examinez comporte probablement un identificateur et d’autres informations sur les données personnelles concernant la demande que vous pouvez utiliser dans une requête de recherche.
+La DPC que vous examinez comporte probablement un identificateur et d’autres informations sur les données personnelles concernant la demande que vous pouvez utiliser dans une requête de recherche.
 
-Rechercher juste une adresse e-mail ou un ID d’employé renverra probablement un grand nombre de résultats. Pour limiter l’étendue de votre recherche, pour qu’elle ne renvoie que le contenu le plus pertinent pour la DSR, vous pouvez ajouter des conditions à la requête de recherche. Lorsque vous ajoutez une condition, le mot clé et une condition de recherche sont connectés logiquement par l’opérateur booléen **AND**. Cela signifie que seuls les éléments correspondant *à la fois* au mot clé et à la condition sont renvoyés dans les résultats de recherche.
+Rechercher uniquement une adresse e-mail ou un ID d’employé renverra probablement un grand nombre de résultats. Pour restreindre l’étendue de votre recherche, afin qu’elle ne renvoie que le contenu le plus pertinent pour la DPC, vous pouvez ajouter des conditions à la requête de recherche. Lorsque vous ajoutez une condition, le mot clé et une condition de recherche sont connectés logiquement par l’opérateur booléen **AND**. Cela signifie que seuls les éléments correspondant *à la fois* au mot clé et à la condition sont renvoyés dans les résultats de recherche.
 
 Le tableau suivant répertorie certaines conditions que vous pouvez utiliser pour limiter l’étendue d’une recherche. Le tableau répertorie également les valeurs que vous pouvez utiliser pour chaque condition afin de rechercher des types de documents spécifiques et des éléments de boîte aux lettres.
 
@@ -186,7 +186,7 @@ Le tableau suivant répertorie certaines conditions que vous pouvez utiliser pou
 |**Condition**|**Description** |**Exemple de valeurs de condition**|
 | Type de fichier | Extension d’un document ou d’un fichier. Utilisez cette condition pour rechercher des documents Office et des fichiers créés par les applications Office 365. Utilisez cette condition lorsque vous recherchez des documents situés sur des sites SharePoint Online et OneDrive Entreprise.<br/>Notez que la propriété du document correspondante est Filetype. <br/>Pour obtenir une liste complète des extensions de fichiers que vous pouvez rechercher, consultez l’article relatif aux [extensions de nom de fichier analysées par défaut et types de fichiers étudiés dans SharePoint](https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&bull;&nbsp;&nbsp;csv : recherches de fichiers de valeurs séparées par virgule (CSV) ; les fichiers Excel peuvent être enregistrés au format CSV et fichier CSV peut facilement être importé dans Excel<br><br>&bull;&nbsp;&nbsp;docx : recherches de fichiers Word <br><br>&bull;&nbsp;&nbsp;mpp : recherches pour fichiers Project<br/><br>&bull;&nbsp;&nbsp;one : recherches pour fichiers OneNote <br><br>&bull;&nbsp;&nbsp;pdf : recherches de fichiers enregistrés au format PDF <br><br>&bull;&nbsp;&nbsp;pptx : recherches de fichiers PowerPoint <br><br>&bull;&nbsp;&nbsp;xlxs : recherches de fichiers Excel <br><br>&bull;&nbsp;&nbsp;vsd : recherches de fichiers Visio <br><br>&bull;&nbsp;&nbsp;wmv : recherches de fichiers vidéo Windows Media <br>|
 | Type de message | Le type de messages électroniques à rechercher. Utilisez cette condition pour rechercher des contacts (Contacts), des réunions (Calendrier), des tâches ou des conversations Skype Entreprise dans les boîtes aux lettres. Notez que la propriété de messagerie correspondante est *kind*.|&bull;&nbsp;&nbsp;*contacts* : recherches dans la liste Mes contacts (Contacts) d’une boîte aux lettres <br><br>&bull;&nbsp;&nbsp;*email* : recherches de messages électroniques <br><br>&bull;&nbsp;&nbsp;*im* : recherches de conversations Skype Entreprise<br><br>&bull;&nbsp;&nbsp;*meetings* : recherches de demandes de rendez-vous et de réunions (Calendrier) <br><br>&bull;&nbsp;&nbsp;*tasks* : recherches dans la liste Mes tâches (Tâches) ; utiliser cette valeur permet également de renvoyer des tâches créées dans Microsoft To-Do.<br>|
-| Balise de conformité |L’étiquette affectée à un message électronique ou à un document. Les étiquettes sont utilisées pour classer les e-mails et les documents dans le cadre de la gouvernance des données et pour appliquer des règles de rétention basées sur la classification définie par l’étiquette. Utilisez cette condition pour rechercher des éléments auxquels une étiquette a été manuellement ou automatiquement affectée.<br/>Il s’agit d’une condition utile pour examiner des DSR, car votre organisation utilise peut-être des étiquettes pour classer du contenu relatif à la confidentialité des données ou qui contient des données personnelles ou des informations sensibles. Consultez la section « Recherche de contenu pour trouver tous les éléments portant une étiquette spécifique » dans [Vue d’ensemble des étiquettes dans Office 365.](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)|compliancetag="personal data"|
+| Balise de conformité |L’étiquette affectée à un message électronique ou à un document. Les étiquettes sont utilisées pour classer les e-mails et les documents dans le cadre de la gouvernance des données et pour appliquer des règles de rétention basées sur la classification définie par l’étiquette. Utilisez cette condition pour rechercher des éléments auxquels une étiquette a été manuellement ou automatiquement affectée.<br/>Il s’agit d’une condition utile pour examiner des DPC, car votre organisation utilise peut-être des étiquettes pour classer du contenu relatif à la confidentialité des données ou qui contient des données personnelles ou des informations sensibles. Consultez la section « Recherche de contenu pour trouver tous les éléments portant une étiquette spécifique » dans [Vue d’ensemble des étiquettes dans Office 365.](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)|compliancetag="personal data"|
 ||||
 
   <!-- table ends here -->                                                                                           
@@ -204,7 +204,7 @@ En plus de rechercher des données personnelles dans des documents, vous pouvez 
 
 ##### <a name="examples-of-search-queries"></a>Exemples de requêtes de recherche
 
-Voici quelques exemples de requêtes de recherche qui utilisent des mots clés et des conditions pour rechercher des données personnelles en réponse à une DSR : un exemple de la syntaxe de mot clé (où la condition est incluse dans la zone de mot clé) et un exemple affichant la version de la requête affichée dans l’interface graphique avec des conditions.
+Voici quelques exemples de requêtes de recherche qui utilisent des mots clés et des conditions pour rechercher des données personnelles en réponse à une DPC: un exemple de la syntaxe de mot clé (où la condition est incluse dans la zone de mot clé) et un exemple affichant la version de la requête affichée dans l’interface graphique avec des conditions.
 
 ##### <a name="example-1"></a>Exemple 1
 
@@ -248,7 +248,7 @@ Les éléments partiellement indexés (également appelés *éléments non index
 
 -   Les fichiers joints aux messages électroniques sont trop volumineux ou il y a trop de fichiers joints
 
-Nous vous recommandons de vous renseigner sur les éléments partiellement indexés afin que vous puissiez les utiliser lorsque vous répondez à des demandes de DSR. Pour obtenir plus d’informations, consultez les articles suivants :
+Nous vous recommandons de vous renseigner sur les éléments partiellement indexés afin que vous puissiez les utiliser lorsque vous répondez à des DPC. Pour obtenir plus d’informations, consultez les articles suivants :
 
 -   [Éléments partiellement indexés dans la recherche de contenu dans Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
 
@@ -258,13 +258,13 @@ Nous vous recommandons de vous renseigner sur les éléments partiellement index
 
 #### <a name="tips-for-working-with-partially-indexed-items"></a>Conseils pour utiliser des éléments partiellement indexés
 
-Il est possible que les données répondant à l’examen d’une DSR se trouvent dans un élément partiellement indexé. Voici quelques suggestions permettant d’utiliser les éléments partiellement indexés :
+Il est possible que les données répondant à l’examen d’une DPC se trouvent dans un élément partiellement indexé. Voici quelques suggestions permettant d’utiliser les éléments partiellement indexés :
 
 -   Une fois que vous lancez une recherche, le nombre estimé d’éléments partiellement indexés s’affiche dans les statistiques de recherche ; cette estimation n’inclut pas les éléments partiellement indexés de SharePoint Online et OneDrive Entreprise. Exportez les rapports d’une recherche de contenu pour obtenir des informations sur les éléments partiellement indexés. Le rapport **Éléments non indexés.csv** contient des informations sur les éléments non indexés, notamment l’emplacement de l’élément, l’URL si l’élément se trouve dans SharePoint Online ou OneDrive Entreprise et la ligne d’objet (pour les messages) ou le nom du document. Pour obtenir plus d’informations, consultez l’article [Exporter un rapport de recherche de contenu](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9).
 
 -   Les statistiques et la liste d’éléments partiellement indexés renvoyés avec les résultats d’une recherche de contenu sont tous les éléments partiellement indexés à partir d’emplacements de contenu consultés.
 
--   Pour récupérer les éléments partiellement indexés pouvant répondre à l’examen d’une DSR, vous pouvez effectuer l’une des actions suivantes :
+-   Pour récupérer les éléments partiellement indexés pouvant répondre à l’examen d’une DPC, vous pouvez effectuer l’une des actions suivantes :
 
 ##### <a name="export-all-partially-indexed-items"></a>Exporter tous les éléments partiellement indexés
 
@@ -277,7 +277,7 @@ Au lieu d’exporter tous les éléments de boîte aux lettres partiellement ind
 
 ### <a name="next-steps"></a>Étapes suivantes
 
-Lorsque vous avez trouvé les données personnelles pertinentes pour la DSR, veillez à conserver la recherche de contenu spécifique que vous avez utilisée pour rechercher les données. Vous réutiliserez probablement cette recherche pour effectuer d’autres étapes du processus de réponse à la DSR, comme [obtenir une copie de ces données](#providing-a-copy-of-personal-data), [les exporter](#exporting-personal-data) ou [les supprimer définitivement](#deleting-personal-data).
+Lorsque vous avez trouvé les données personnelles pertinentes pour la DPC, veillez à conserver la recherche de contenu spécifique que vous avez utilisée pour rechercher les données. Vous réutiliserez probablement cette recherche pour effectuer d’autres étapes du processus de réponse à la DPC, comme [obtenir une copie de ces données](#providing-a-copy-of-personal-data), [les exporter](#exporting-personal-data) ou [les supprimer définitivement](#deleting-personal-data).
 
 ### <a name="additional-considerations-for-selected-applications"></a>Considérations supplémentaires pour les applications sélectionnées
 
@@ -363,7 +363,7 @@ Microsoft Teams pour l’éducation propose deux fonctionnalités de collaborat
 
 ##### <a name="assignments"></a>Affectations
 
-Les fichiers des étudiants associés à un devoir sont stockés dans une bibliothèque de documents dans le site Microsoft Teams SharePoint Online correspondant. Les administrateurs informatiques peuvent utiliser l’outil recherche de contenu pour rechercher des fichiers d’étudiants liés aux devoirs. Par exemple, un administrateur peut effectuer une recherche dans tous les sites SharePoint Online de l’organisation et utiliser le nom et la classe de l’étudiant ou le nom d’un devoir dans la requête de recherche pour trouver des données pertinentes pour une DSR.
+Les fichiers des étudiants associés à un devoir sont stockés dans une bibliothèque de documents dans le site Microsoft Teams SharePoint Online correspondant. Les administrateurs informatiques peuvent utiliser l’outil de recherche de contenu pour rechercher des fichiers d’étudiants liés aux devoirs. Par exemple, un administrateur peut effectuer une recherche dans tous les sites SharePoint Online de l’organisation et utiliser le nom et la classe de l’étudiant ou le nom d’un devoir dans la requête de recherche pour trouver des données pertinentes pour une DPC.
 
 Voici d’autres données liées aux devoirs qui ne sont pas enregistrées dans le site SharePoint Online de l’équipe de la classe, ce qui signifie qu’elles ne sont pas détectables avec la recherche de contenu. Elles incluent :
 
@@ -375,7 +375,7 @@ Voici d’autres données liées aux devoirs qui ne sont pas enregistrées dans 
 
 -   Métadonnées des devoirs
 
-Pour ce type de données, un administrateur informatique ou le propriétaire des données (par exemple, un enseignant) devra peut-être accéder à Devoir dans l’équipe de la classe pour trouver les données pertinentes pour une DSR.
+Pour ce type de données, un administrateur informatique ou le propriétaire des données (par exemple, un enseignant) devra peut-être accéder à Devoir dans l’équipe de la classe pour trouver les données pertinentes pour une DPC.
 
 ##### <a name="onenote-class-notebook"></a>Bloc-notes OneNote pour la classe
 
@@ -415,15 +415,15 @@ Voici quelques informations supplémentaires expliquant comment consulter, affic
 
 -   Les conversations dans Skype Entreprise sont conservées dans le dossier Historique des conversations dans les boîtes aux lettres utilisateur. Vous pouvez utiliser la recherche de contenu pour rechercher des données de conversations Skype dans les boîtes aux lettres.
 
--   Une personne concernée peut exporter ses contacts dans Skype Entreprise. Pour ce faire, elle doit cliquer avec le bouton droit sur un groupe de contacts dans Skype Entreprise et cliquer sur **Copier**. Ensuite, elle peut coller la liste d’adresses e-mail dans un document texte ou Word.
+-   Une personne concernée par le traitement des données peut exporter ses contacts dans Skype Entreprise. Pour ce faire, elle doit cliquer avec le bouton droit sur un groupe de contacts dans Skype Entreprise et cliquer sur **Copier**. Ensuite, elle peut coller la liste d’adresses e-mail dans un document texte ou Word.
 
 -   Si la boîte aux lettres Exchange Online d’un participant à une réunion est placée en conservation pour litige ou attribuée à une stratégie de rétention Office 365, les fichiers joints à cette réunion sont conservés dans la boîte aux lettres du participant. Vous pouvez utiliser la recherche de contenu pour rechercher ces fichiers dans la boîte aux lettres du participant si la période de rétention du fichier n’a pas expiré. Pour obtenir plus d’informations relatives à la conservation des fichiers, consultez l’article [Conserver des fichiers volumineux associés à une réunion](https://docs.microsoft.com/skypeforbusiness/set-up-policies-in-your-organization/retaining-large-files-attached-to-a-meeting).
 
 ## <a name="providing-a-copy-of-personal-data"></a>Fourniture d’une copie des données personnelles
 
-Une fois que vous avez trouvé les données personnelles pouvant répondre à une DSR, vous et votre organisation devez décider quelles données fournir à la personne concernée. Par exemple, vous pouvez les fournir avec une copie du document en question, une version correctement rédigée ou une capture d’écran des parties que vous jugez approprié de partager. Pour chacune de ces réponses à une demande d’accès, vous devrez récupérer une copie du document ou de tout autre élément contenant les données pertinentes.
+Une fois que vous avez trouvé les données personnelles pouvant répondre à une DPC, vous et votre organisation devez décider quelles données fournir à la personne concernée par le traitement des données. Par exemple, vous pouvez les fournir avec une copie du document en question, une version correctement rédigée ou une capture d’écran des parties que vous jugez approprié de partager. Pour chacune de ces réponses à une demande d’accès, vous devrez récupérer une copie du document ou de tout autre élément contenant les données pertinentes.
 
-Lorsque vous fournissez une copie à la personne concernée, vous devrez peut-être supprimer ou modifier des informations personnelles sur d’autres personnes concernées et des informations confidentielles.
+Lorsque vous fournissez une copie à la personne concernée par le traitement des données, vous devrez peut-être supprimer ou modifier des informations personnelles sur d’autres personnes concernées par le traitement des données et des informations confidentielles.
 
 
 ### <a name="using-content-search-to-get-a-copy-of-personal-data"></a>Utilisation de la recherche de contenu pour obtenir une copie des données personnelles
@@ -432,11 +432,11 @@ Il y a deux façons d’utiliser l’outil de recherche de contenu pour obtenir 
 
 -   Afficher un aperçu des résultats de la recherche, puis télécharger une copie du document ou de l’élément. C’est un bon moyen pour télécharger plusieurs éléments ou fichiers.
 
--   Exportez les résultats de recherche, puis téléchargez une copie de tous les éléments renvoyés par la recherche. Cette méthode est plus complexe, mais elle permet de télécharger de nombreux éléments pertinents pour une DRS. Les rapports utiles sont également inclus lorsque vous exportez les résultats de recherche. Vous pouvez utiliser ces rapports pour obtenir des informations supplémentaires sur chaque élément. Le rapport **Results.csv** est particulièrement utile, car il contient de nombreuses informations concernant les éléments exportés, tels que l’emplacement exact de l’élément (par exemple, la boîte aux lettres pour les messages électroniques ou l’URL des documents ou des listes situés sur des sites SharePoint Online et OneDrive Entreprise). Ces informations vous aideront à identifier le propriétaire de l’élément, au cas où vous auriez besoin de le contacter pendant le processus d’examen de la DSR. Pour obtenir plus d’informations sur les rapports inclus lorsque vous exportez les résultats de recherche, consultez l’article [Exporter un rapport de recherche de contenu](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9).
+-   Exportez les résultats de recherche, puis téléchargez une copie de tous les éléments renvoyés par la recherche. Cette méthode est plus complexe, mais elle permet de télécharger de nombreux éléments pertinents pour une DPC. Les rapports utiles sont également inclus lorsque vous exportez les résultats de recherche. Vous pouvez utiliser ces rapports pour obtenir des informations supplémentaires sur chaque élément. Le rapport **Results.csv** est particulièrement utile, car il contient de nombreuses informations concernant les éléments exportés, tels que l’emplacement exact de l’élément (par exemple, la boîte aux lettres pour les messages électroniques ou l’URL des documents ou des listes situées sur des sites SharePoint Online et OneDrive Entreprise). Ces informations vous aideront à identifier le propriétaire de l’élément, au cas où vous auriez besoin de le contacter pendant le processus d’examen de la DPC. Pour obtenir plus d’informations sur les rapports inclus lorsque vous exportez les résultats de recherche, consultez l’article [Exporter un rapport de recherche de contenu](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9).
 
 #### <a name="preview-and-download-items"></a>Afficher un aperçu et télécharger des éléments
 
-Lorsque vous lancez une nouvelle recherche ou ouvrez une recherche existante, vous pouvez afficher un aperçu de chaque élément correspondant à la requête de recherche pour vérifier qu’il est lié à la DSR que vous examinez. Cela inclut également des listes et des pages web SharePoint renvoyées dans les résultats de recherche. Vous pouvez aussi télécharger le fichier d’origine si vous devez le fournir à la personne concernée. Dans les deux cas, vous pouvez prendre une capture d’écran afin de satisfaire la demande d’informations de la personne concernée.
+Lorsque vous lancez une nouvelle recherche ou ouvrez une recherche existante, vous pouvez afficher un aperçu de chaque élément correspondant à la requête de recherche pour vérifier qu’il est lié à la DPC que vous examinez. Cela inclut également des listes et des pages web SharePoint renvoyées dans les résultats de recherche. Vous pouvez aussi télécharger le fichier d’origine si vous devez le fournir à la personne concernée par le traitement des données. Dans les deux cas, vous pouvez prendre une capture d’écran afin de satisfaire la demande d’informations de la personne concernée par le traitement des données.
 
 Notez que certains types d’éléments ne peuvent pas être affichés. Si l’affichage d’un élément ou d’un type de fichier n’est pas pris en charge, vous pouvez télécharger un élément individuel sur votre ordinateur local, un lecteur réseau mappé ou un autre emplacement réseau. Vous pouvez afficher un aperçu uniquement des [types de fichiers pris en charge](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4).
 
@@ -458,11 +458,11 @@ Vous pouvez également exporter les résultats d’une recherche de contenu pour
 
 ## <a name="exporting-personal-data"></a>Exportation de données personnelles
 
-Le « droit à la portabilité des données » permet à la personne concernée de demander une copie électronique des données personnelles dans un « format lisible par machine, fréquemment utilisé et structuré » et demander à votre organisation de transmettre ces fichiers électroniques à un autre contrôleur des données. Microsoft prend en charge ce droit de deux façons :
+Le « droit à la portabilité des données » permet à la personne concernée par le traitement des données de demander une copie électronique des données personnelles dans un « format lisible par machine, fréquemment utilisé et structuré » et demander à votre organisation de transmettre ces fichiers électroniques à une autre entité de contrôle des données. Microsoft prend en charge ce droit de deux façons :
 - Il propose des applications Office 365 qui enregistrent les données dans un format électronique natif, lisible par machine et fréquemment utilisé. Pour obtenir plus d’informations sur les formats de fichier Office, consultez la section [Documents techniques aux formats de fichier Office](https://msdn.microsoft.com/library/office/cc313105(v=office.12).aspx).
 - Permettre à votre organisation d’exporter les données au format de fichier natif ou dans un format (par exemple, CSV, TXT et JSON) qui peut être facilement importé dans une autre application.
 
-Pour répondre à une demande d’exportation de DSR, vous pouvez exporter des documents Office dans leur format de fichier natif et exporter les données à partir d’autres applications Office 365.
+Pour répondre à une demande d’exportation de DPC, vous pouvez exporter des documents Office dans leur format de fichier natif et exporter les données à partir d’autres applications Office 365.
 
 ### <a name="export-and-download-content-using-content-search"></a>Exporter et télécharger du contenu avec la recherche de contenu
 
@@ -510,7 +510,7 @@ Une autre méthode pour exporter des données à partir de SharePoint Online et 
 
 -   [Exporter vers Excel à partir de SharePoint](https://support.office.com/article/export-to-excel-from-sharepoint-bfb2ea48-6118-4fa9-abb6-cced9424e5d9)
 
-Pour certaines requêtes d’exportation de DSR, il est préférable d’autoriser la personne concernée à télécharger le contenu elle-même. Cela lui permet d’accéder à un site ou à un dossier partagé SharePoint Online et de cliquer sur **Synchroniser** pour synchroniser tout le contenu de la bibliothèque de documents ou des dossiers sélectionnés. Consultez les articles suivants :
+Pour certaines requêtes d’exportation de DPC, il est préférable d’autoriser la personne concernée par le traitement des données à télécharger le contenu elle-même. Cela lui permet d’accéder à un site ou à un dossier partagé SharePoint Online et de cliquer sur **Synchroniser** pour synchroniser tout le contenu de la bibliothèque de documents ou des dossiers sélectionnés. Consultez les articles suivants :
 
 -   [Permettre aux utilisateurs de synchroniser des fichiers SharePoint avec le nouveau client de synchronisation OneDrive](https://support.office.com/article/Enable-users-to-sync-SharePoint-files-with-the-new-OneDrive-sync-client-22e1f635-fb89-49e0-a176-edab26f69614)
 
@@ -520,7 +520,7 @@ Pour certaines requêtes d’exportation de DSR, il est préférable d’autoris
 
 Le « droit à l’effacement » par la suppression des données personnelles des données client d’une organisation est une protection essentielle dans le RGPD. La suppression des données personnelles inclut la suppression de documents ou de fichiers entiers ou la suppression de données spécifiques contenues dans un document ou un fichier (une action et un processus semblables à ceux décrits dans la section Rectifier de ce guide).
 
-Voici quelques points importants à comprendre sur le fonctionnement de la suppression (et la rétention) de données dans Office 365 lorsque vous examinez des données personnelles ou que vous vous préparez à les supprimer en réponse à une DSR.
+Voici quelques points importants à comprendre sur le fonctionnement de la suppression (et la rétention) de données dans Office 365 lorsque vous examinez des données personnelles ou que vous vous préparez à les supprimer en réponse à une DPC.
 
 -   **Suppression temporaire vs suppression définitive** : dans les services Office 365 telles que Exchange Online, SharePoint Online et OneDrive Entreprise est le concept de *suppression temporaire* et *suppression définitive*, qui associe des éléments supprimés à la récupération (généralement pendant une période limitée) avant que celui-ci soit supprimé définitivement à partir du cloud Microsoft avec aucune chance de récupération. Dans ce contexte, un élément de menu supprimé peut être récupéré par un utilisateur et/ou un administrateur pour une durée limitée avant la suppression de son disque. Lorsqu’un élément a été supprimé définitivement, il a été marqué comme une suppression permanente et éliminé dès qu’ils sont traités par le service Office 365 correspondant. Voici comment la suppression souple et la suppression de disque fonctionnent pour les éléments de boîtes aux lettres et les sites (que ce soit le propriétaire de données ou l’administrateur qui supprime un élément) :
 
@@ -531,7 +531,7 @@ Voici quelques points importants à comprendre sur le fonctionnement de la suppr
 > [!NOTE]
 > Comprendre les actions qui entraînent la suppression réversible ou définitive d’un élément vous aide à déterminer comment supprimer des données de manière à répondre aux exigences du RGPD lorsque vous répondez à une demande de suppression.
 
--   **Conservation légale et stratégies de rétention** : dans Office 365, les boîtes aux lettres et les sites peuvent être placés en « conservation » ; en d’autres termes, cela signifie que rien ne sera éliminé de manière définitive (suppression définitive) si une boîte aux lettres ou un site est placé en conservation jusqu’à l’expiration de la durée de conservation d’un élément ou jusqu’à ce que la conservation soit retirée. Ceci est important dans le cadre de la suppression du contenu client en réponse à une DSR : si un élément est supprimé définitivement de l’emplacement du contenu placé en conservation, l’élément n’est pas supprimé définitivement d’Office 365. Cela signifie que celui-ci peut en théorie être récupéré par un administrateur informatique. Si votre organisation a une exigence ou une stratégie stipulant que les données doivent être définitivement supprimées et irrécupérables dans Office 365 en réponse aux DSR, la conservation doit alors être retirée d’une boîte aux lettres ou d’un site pour supprimer définitivement des données dans Office 365. Il est probable que les instructions de votre organisation pour répondre aux DSR comprennent un processus pour déterminer si une demande de suppression de DSR spécifique ou une conservation légale est prioritaire. Si une conservation est retirée pour supprimer des éléments, elle peut être appliquée de nouveau après la suppression de l’élément.
+-   **Conservation légale et stratégies de rétention** : dans Office 365, les boîtes aux lettres et les sites peuvent être placés en « conservation » ; en d’autres termes, cela signifie que rien ne sera éliminé de manière définitive (suppression définitive) si une boîte aux lettres ou un site est placé en conservation jusqu’à l’expiration de la durée de conservation d’un élément ou jusqu’à ce que la conservation soit retirée. Ceci est important dans le cadre de la suppression du contenu client en réponse à une DPC : si un élément est supprimé définitivement de l’emplacement du contenu placé en conservation, l’élément n’est pas supprimé définitivement d’Office 365. Cela signifie que celui-ci peut en théorie être récupéré par un administrateur informatique. Si votre organisation a une exigence ou une stratégie stipulant que les données doivent être définitivement supprimées et irrécupérables dans Office 365 en réponse aux DPC, la conservation doit alors être retirée d’une boîte aux lettres ou d’un site pour supprimer définitivement des données dans Office 365. Il est probable que les instructions de votre organisation pour répondre aux DPC comprennent un processus pour déterminer si une demande de suppression de DPC spécifique ou une conservation légale est prioritaire. Si une conservation est retirée pour supprimer des éléments, elle peut être appliquée de nouveau après la suppression de l’élément.
 
 ### <a name="deleting-documents-in-sharepoint-online-and-onedrive-for-business"></a>Suppression de documents dans SharePoint Online et OneDrive Entreprise
 
@@ -548,7 +548,7 @@ Voici le processus de haut niveau permettant de supprimer des documents de sites
 4.  Accédez à la Corbeille second niveau (la Corbeille de collection de sites) et supprimez le document que vous avez supprimé de la Corbeille premier niveau. **À ce stade, le document est supprimé définitivement.**
 
 > [!IMPORTANT]
-> Vous ne pouvez pas supprimer un document qui se trouve sur un site placé en conservation (avec l’une des fonctionnalités de conservation légale ou de rétention dans Office 365). Dans le cas où une demande de suppression DSR prévaudrait sur une conservation légale, la conservation doit être éliminée du site avant de pouvoir définitivement supprimer un document.
+> Vous ne pouvez pas supprimer un document qui se trouve sur un site placé en conservation (avec l’une des fonctionnalités de conservation légale ou de rétention dans Office 365). Dans le cas où une demande de suppression corrélative à la DPC prévaudrait sur une conservation légale, la conservation doit être éliminée du site avant de pouvoir définitivement supprimer un document.
 
 Consultez les rubriques suivantes pour obtenir des procédures détaillées.
 
@@ -568,7 +568,7 @@ Consultez les rubriques suivantes pour obtenir des procédures détaillées.
 
 ### <a name="deleting-a-sharepoint-site"></a>Suppression d’un site SharePoint
 
-Vous pouvez décider que la meilleure façon de répondre à une demande de suppression de DSR est de supprimer un site SharePoint tout entier, permettant de supprimer toutes les données situées dans le site. Pour y parvenir, exécutez des cmdlets dans SharePoint Online PowerShell.
+Vous pouvez décider que la meilleure façon de répondre à une demande de suppression corrélative à une DPC est de supprimer un site SharePoint tout entier, permettant de supprimer toutes les données situées dans le site. Pour y parvenir, exécutez des cmdlets dans SharePoint Online PowerShell.
 
 -   Utilisez la cmdlet [Remove-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-sposite?view=sharepoint-ps) pour supprimer le site et le déplacer vers la Corbeille SharePoint Online (suppression réversible).
 
@@ -578,11 +578,11 @@ Notez que vous ne pouvez pas supprimer un site placé en conservation eDiscovery
 
 ### <a name="deleting-a-onedrive-for-business-site"></a>Suppression d’un site OneDrive Entreprise
 
-De même, vous pouvez décider de supprimer le site OneDrive Entreprise d’un utilisateur en réponse à une demande de suppression de DSR. Si vous supprimez le compte Office 365 de l’utilisateur, son site OneDrive Entreprise est conservé (et peut être restauré) pendant 30 jours. Après 30 jours, il est déplacé vers la Corbeille SharePoint Online (suppression réversible), puis après 93 jours, il est définitivement supprimé (suppression définitive). Pour accélérer ce processus, vous pouvez utiliser la cmdlet [Remove-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-sposite?view=sharepoint-ps) pour déplacer le site OneDrive Entreprise vers la Corbeille, puis utiliser la cmdlet [Remove-SPODeletedSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spodeletedsite?view=sharepoint-ps) pour le supprimer définitivement. Comme pour les sites dans SharePoint Online, vous ne pouvez pas supprimer le site OneDrive Entreprise d’un utilisateur s’il a été placé en conservation eDiscovery ou rattaché à une stratégie de rétention avant que le compte de l’utilisateur ne soit supprimé.
+De même, vous pouvez décider de supprimer le site OneDrive Entreprise d’un utilisateur en réponse à une demande de suppression corrélative à une DPC. Si vous supprimez le compte Office 365 de l’utilisateur, son site OneDrive Entreprise est conservé (et peut être restauré) pendant 30 jours. Après 30 jours, il est déplacé vers la Corbeille SharePoint Online (suppression réversible), puis après 93 jours, il est définitivement supprimé (suppression définitive). Pour accélérer ce processus, vous pouvez utiliser la cmdlet [Remove-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-sposite?view=sharepoint-ps) pour déplacer le site OneDrive Entreprise vers la Corbeille, puis utiliser la cmdlet [Remove-SPODeletedSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spodeletedsite?view=sharepoint-ps) pour le supprimer définitivement. Comme pour les sites dans SharePoint Online, vous ne pouvez pas supprimer le site OneDrive Entreprise d’un utilisateur s’il a été placé en conservation eDiscovery ou rattaché à une stratégie de rétention avant que le compte de l’utilisateur ne soit supprimé.
 
 ### <a name="deleting-onedrive-for-business-and-sharepoint-online-experience-settings"></a>Suppression de paramètres d’expérience OneDrive Entreprise et SharePoint Online
 
-Outre les fichiers créés par l’utilisateur stockés sur des comptes OneDrive Entreprise et des sites SharePoint Online, ces services stockent des informations concernant l’utilisateur, qui sont utilisées pour permettre diverses expériences. Celles-ci étaient précédemment présentées dans ce document. Pour plus d’informations sur la procédure d’accès, de consultation et d’exportation de données d’application OneDrive Entreprise et SharePoint Online, dans la rubrique [Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DSR](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs), voir la section [Considérations supplémentaires pour les applications sélectionnées](#additional-considerations-for-selected-applications).
+Outre les fichiers créés par l’utilisateur stockés sur des comptes OneDrive Entreprise et des sites SharePoint Online, ces services stockent des informations concernant l’utilisateur, qui sont utilisées pour permettre diverses expériences. Celles-ci étaient précédemment présentées dans ce document. Pour plus d’informations sur la procédure d’accès, de consultation et d’exportation de données d’application OneDrive Entreprise et SharePoint Online, dans la rubrique [Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DPC](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs), voir la section [Considérations supplémentaires pour les applications sélectionnées](#additional-considerations-for-selected-applications).
 
 #### <a name="deleting-a-sharepoint-user-profile"></a>Suppression d’un profil utilisateur SharePoint
 
@@ -608,7 +608,7 @@ Les requêtes de recherche d’un utilisateur créées dans l’expérience de r
 
 ### <a name="deleting-items-in-exchange-online-mailboxes"></a>Suppression des éléments dans les boîtes aux lettres Exchange Online
 
-Vous devrez peut-être supprimer des éléments dans les boîtes aux lettres Exchange Online pour satisfaire une demande de suppression de DSR. Il existe deux manières pour un administrateur informatique de supprimer des éléments dans des boîtes aux lettres, selon qu’il souhaite supprimer les éléments cible de façon réversible ou définitive. Tout comme pour les documents sur les sites SharePoint Online ou OneDrive Entreprise, les éléments dans une boîte aux lettres placée en conservation ne peuvent pas être définitivement supprimés d’Office 365. La conservation doit être retirée avant que l’élément puisse être éliminé. Là encore, vous devez déterminer si la conservation appliquée sur la boîte aux lettres ou la demande de suppression de DSR est prioritaire.
+Vous devrez peut-être supprimer des éléments dans les boîtes aux lettres Exchange Online pour satisfaire une demande de suppression de DPC. Il existe deux manières pour un administrateur informatique de supprimer des éléments dans des boîtes aux lettres, selon qu’il souhaite supprimer les éléments cibles de façon réversible ou définitive. Tout comme pour les documents sur les sites SharePoint Online ou OneDrive Entreprise, les éléments dans une boîte aux lettres placée en conservation ne peuvent pas être définitivement supprimés d’Office 365. La conservation doit être retirée avant que l’élément puisse être éliminé. Là encore, vous devez déterminer si la conservation appliquée sur la boîte aux lettres ou la demande de suppression corrélative à la DPC est prioritaire.
 
 #### <a name="soft-delete-mailbox-items"></a>Supprimer des éléments de boîte aux lettres (récupération possible)
 
@@ -624,7 +624,7 @@ Pour obtenir des instructions détaillées, consultez l’article [Recherche et 
 
 #### <a name="hard-delete-mailbox-items"></a>Supprimer définitivement des éléments de boîte aux lettres
 
-Si vous devez supprimer définitivement des éléments de boîte aux lettres en réponse à la demande de suppression de DSR, vous pouvez utiliser la commande **Search-Mailbox -DeleteContent** dans Exchange Online PowerShell. Si vous utilisez cette méthode, pensez à utiliser la recherche de contenu pour développer et affiner une requête de recherche afin que seuls les éléments à supprimer soient renvoyés dans la recherche. Vous pouvez ensuite utiliser cette syntaxe de requête lorsque vous exécutez la commande **Search-Mailbox -DeleteContent**.
+Si vous devez supprimer définitivement des éléments de boîte aux lettres en réponse à la demande de suppression corrélative à la DPC, vous pouvez utiliser la commande **Search-Mailbox -DeleteContent** dans Exchange Online PowerShell. Si vous utilisez cette méthode, pensez à utiliser la recherche de contenu pour développer et affiner une requête de recherche afin que seuls les éléments à supprimer soient renvoyés dans la recherche. Vous pouvez ensuite utiliser cette syntaxe de requête lorsque vous exécutez la commande **Search-Mailbox -DeleteContent**.
 
 Pour obtenir des instructions détaillées, consultez l’article [Recherche et suppression de messages](https://technet.microsoft.com/library/ff459253(v=exchg.150).aspx).
 
@@ -632,20 +632,20 @@ Pour obtenir des instructions détaillées, consultez l’article [Recherche et 
 
 Comme indiqué précédemment, si vous supprimez définitivement des éléments d’une boîte aux lettres placée en conservation, les éléments ne sont pas éliminés de la boîte aux lettres. Ceux-ci sont déplacés vers un dossier masqué dans le dossier Éléments récupérables (le dossier **Purges**) et y sont conservés jusqu’à l’expiration de la durée de conservation pour l’élément ou jusqu’à ce que la conservation soit retirée de la boîte aux lettres. Si l’un de ces événements se produit, les éléments seront purgés d’Office 365 lors du prochain traitement de la boîte aux lettres.
 
-Votre organisation peut décider que les éléments supprimés définitivement à l’issue de la durée de conservation répondent aux exigences d’une demande de suppression de DSR. Toutefois, si vous choisissez que les éléments de boîte aux lettres doivent être immédiatement purgés d’Office 365, vous devez retirer la conservation appliquée sur la boîte aux lettres, puis supprimer définitivement les éléments de la boîte aux lettres. Pour obtenir des instructions détaillées, consultez l’article relatif à la [suppression d’éléments dans le dossier Éléments récupérables des boîtes aux lettres sur le cloud placées en conservation](https://support.office.com/article/Delete-items-in-the-Recoverable-Items-folder-of-cloud-based-mailboxes-on-hold-Admin-Help-a85e1c87-a48e-4715-bfa9-d5275cde67b0).
+Votre organisation peut décider que les éléments supprimés définitivement à l’issue de la durée de conservation répondent aux exigences d’une demande de suppression corrélative à une DPC. Toutefois, si vous choisissez que les éléments de boîte aux lettres doivent être immédiatement purgés d’Office 365, vous devez retirer la conservation appliquée sur la boîte aux lettres, puis supprimer définitivement les éléments de la boîte aux lettres. Pour obtenir des instructions détaillées, consultez l’article relatif à la [suppression d’éléments dans le dossier Éléments récupérables des boîtes aux lettres sur le cloud placées en conservation](https://support.office.com/article/Delete-items-in-the-Recoverable-Items-folder-of-cloud-based-mailboxes-on-hold-Admin-Help-a85e1c87-a48e-4715-bfa9-d5275cde67b0).
 
 > [!NOTE]
-> Pour supprimer définitivement des éléments de boîte aux lettres afin de satisfaire une demande de suppression de DSR en suivant la procédure décrite dans la rubrique précédente, vous devrez peut-être supprimer (récupération possible) ces éléments pendant que la boîte aux lettres est toujours placée en conservation afin que ceux-ci soient déplacés vers le dossier Éléments récupérables.
+> Pour supprimer définitivement des éléments de boîte aux lettres afin de satisfaire une demande de suppression corrélative à une DPC en suivant la procédure décrite dans la rubrique précédente, vous devrez peut-être supprimer (récupération possible) ces éléments pendant que la boîte aux lettres est toujours placée en conservation afin que ceux-ci soient déplacés vers le dossier Éléments récupérables.
 
 ## <a name="deleting-a-user"></a>Suppression d’un utilisateur
 
-En plus de supprimer des données personnelles en réponse à une demande de suppression de DSR, le « droit à être oublié » de la personne concernée peut aussi être respecté en supprimant son compte d’utilisateur Office 365. Voici quelques raisons pour lesquelles vous souhaiterez peut-être supprimer un utilisateur :
+En plus de supprimer des données personnelles en réponse à une demande de suppression corrélative à une DPC, le « droit à être oublié » de la personne concernée par le traitement des données peut aussi être respecté en supprimant son compte d’utilisateur Office 365. Voici quelques raisons pour lesquelles vous souhaiterez peut-être supprimer le compte d’un utilisateur :
 
--   La personne concernée a quitté votre organisation (ou est sur le point de partir).
+-   La personne concernée par le traitement des données a quitté votre organisation (ou est sur le point de partir).
 
--   La personne concernée a demandé la suppression des journaux générés par le système collectés à son sujet. Les exemples de données contenues dans les journaux générés par le système incluent les données relatives à l’utilisation de services et d’applications Office 365, les informations sur les requêtes de recherche effectuées par la personne concernée et les données générées par les produits et les services comme étant un produit des fonctionnalités du système et de l’interaction par les utilisateurs ou d’autres systèmes. Pour obtenir plus d’informations, consultez la section [Partie 3 : Répondre aux DSR pour les journaux générés par le système](#part-3-responding-to-dsrs-for-system-generated-logs) de ce guide.
+-   La personne concernée par le traitement des données a demandé la suppression des journaux générés par le système collectés à son sujet. Les exemples de données contenues dans les journaux générés par le système incluent les données relatives à l’utilisation de services et d’applications Office 365, les informations sur les requêtes de recherche effectuées par la personne concernée par le traitement des données et les données générées par les produits et les services comme étant un produit des fonctionnalités du système et de l’interaction par les utilisateurs ou d’autres systèmes. Pour obtenir plus d’informations, consultez la section [Partie 3 : Répondre aux DPC pour les journaux générés par le système](#part-3-responding-to-dsrs-for-system-generated-logs) de ce guide.
 
--   Empêcher définitivement la personne concernée de consulter ou de traiter des données dans Office 365 (par opposition à restreindre temporairement l’accès par les méthodes décrites dans la section [Réponse aux demandes de restriction de DSR](#responding-to-dsr-restriction-requests)).
+-   Empêcher définitivement la personne concernée par le traitement des données de consulter ou de traiter des données dans Office 365 (par opposition à restreindre temporairement l’accès par les méthodes décrites dans la section [Réponse aux demandes de restriction de DPC](#responding-to-dsr-restriction-requests)).
 
 Après avoir supprimé un compte d’utilisateur Office 365 :
 
@@ -655,10 +655,10 @@ Après avoir supprimé un compte d’utilisateur Office 365 :
 
 -   Certaines applications Office 365 suppriment les informations relatives à l’utilisateur. Par exemple, dans Microsoft Flow, un utilisateur supprimé est retiré de la liste des propriétaires pour un flux partagé.
 
--   Les journaux générés par le système relatifs à la personne concernée sont supprimés 30 jours après la suppression du compte d’utilisateur. Pour obtenir plus d’informations, consultez la section [Suppression des journaux générés par le système](#deleting-system-generated-logs) de ce guide.
+-   Les journaux générés par le système relatifs à la personne concernée par le traitement des données sont supprimés 30 jours après la suppression du compte d’utilisateur. Pour obtenir plus d’informations, consultez la section [Suppression des journaux générés par le système](#deleting-system-generated-logs) de ce guide.
 
 > [!IMPORTANT] 
-> Une fois que vous supprimez le compte d’un utilisateur, cette personne perd la possibilité de se connecter à Office 365 ou à des produits ou à des services dont elle dépendait antérieurement pour un compte professionnel ou scolaire. Cette personne n’est également plus en mesure de créer des demandes de DSR auprès de Microsoft directement dans les instances où Microsoft agit en qualité de responsable du traitement des données. Pour obtenir plus d’informations, consultez la section [Produits et services authentifiés avec un ID d’organisation pour lesquels Microsoft est responsable du traitement des données](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) dans la partie 4 de ce guide.
+> Une fois que vous supprimez le compte d’un utilisateur, cette personne perd la possibilité de se connecter à Office 365 ou à des produits ou à des services dont elle dépendait antérieurement pour un compte professionnel ou scolaire. Cette personne n’est également plus en mesure de créer des DPC auprès de Microsoft directement dans les instances où Microsoft agit en qualité d’entité de contrôle des données. Pour obtenir plus d’informations, consultez la section [Produits et services authentifiés avec un ID d’organisation pour lesquels Microsoft est l’entité de contrôle des données](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) dans la partie 4 de ce guide.
 
 > [!NOTE]
 > Si vous êtes un client actuellement engagé dans des migrations FastTrack, la suppression du compte d’utilisateur Office 365 n’entraîne pas la suppression de la copie des données détenue par l’équipe Microsoft FastTrack, conservée dans le seul but d’exécuter la migration. Si, lors de la migration, vous souhaitez que l’équipe Microsoft FastTrack supprime également la copie des données, vous pouvez [envoyer une demande](https://go.microsoft.com/fwlink/?linkid=874544). Dans le cours normal des activités, Microsoft FastTrack supprimera toutes les copies de données une fois la migration terminée.
@@ -667,7 +667,7 @@ Tout comme pour la suppression réversible et la suppression définitive de donn
 
 -   Lorsque vous supprimez initialement un compte d’utilisateur (en supprimant l’utilisateur dans le Centre d’administration Office 365 ou dans le portail Azure), le compte d’utilisateur est supprimé (récupérable) et déplacé de la Corbeille dans Azure pendant 30 jours maximum. À ce stade, le compte d’utilisateur peut être restauré.
 
--   Si vous avez supprimé définitivement le compte d’utilisateur, celui-ci est supprimé définitivement et supprimé de la Corbeille dans Azure. À ce stade, le compte d’utilisateur ne peut pas être restauré et toutes les données associées au compte d’utilisateur sont supprimées définitivement du cloud Microsoft. Les journaux générés par le système relatifs à la personne concernée sont supprimés une fois que le compte d’utilisateur est supprimé définitivement.
+-   Si vous avez supprimé définitivement le compte d’utilisateur, celui-ci est supprimé définitivement et supprimé de la Corbeille dans Azure. À ce stade, le compte d’utilisateur ne peut pas être restauré et toutes les données associées au compte d’utilisateur sont supprimées définitivement du cloud Microsoft. Les journaux générés par le système relatifs à la personne concernée par le traitement des données sont supprimés une fois que le compte d’utilisateur est supprimé définitivement.
 
 Voici le processus de haut niveau permettant de supprimer un utilisateur de votre organisation Office 365 :
 
@@ -692,11 +692,11 @@ Une chose à comprendre lorsque vous supprimez un utilisateur est ce qu’il arr
 
 -   **Jour 61 à jour 90** : aucun administrateur ne peut plus récupérer les données dans la boîte aux lettres. Les données de boîte aux lettres sont marquées pour la suppression permanente et vous devrez patienter jusqu’à 30 jours de plus pour qu’elles soient purgées d’Office 365.
 
-Si vous déterminez que ce cycle de vie de boîte aux lettres ne répond pas aux exigences de votre organisation dans le cadre du processus de réponse à une demande de suppression de DSR, vous pouvez [contacter le Support Microsoft](https://support.microsoft.com/) *après* avoir supprimé définitivement le compte d’utilisateur, et demandez à Microsoft de déclencher manuellement le processus pour supprimer définitivement les données de boîte aux lettres. Notez que cette procédure pour supprimer définitivement les données de boîte aux lettres démarre automatiquement après le jour 61 du cycle de vie. Il n’y a donc aucune raison de contacter Microsoft après cette date dans le cycle de vie.
+Si vous déterminez que ce cycle de vie de boîte aux lettres ne répond pas aux exigences de votre organisation dans le cadre du processus de réponse à une demande de suppression corrélative à une DPC, vous pouvez [contacter le Support Microsoft](https://support.microsoft.com/) *après* avoir supprimé définitivement le compte d’utilisateur, et demander à Microsoft de déclencher manuellement le processus pour supprimer définitivement les données de boîte aux lettres. Notez que cette procédure pour supprimer définitivement les données de boîte aux lettres démarre automatiquement après le jour 61 du cycle de vie. Il n’y a donc aucune raison de contacter Microsoft après cette date dans le cycle de vie.
 
-## <a name="using-in-app-functionality-to-respond-to-dsrs"></a>Utilisation des fonctionnalités intégrées à l’application pour répondre aux DSR
+## <a name="using-in-app-functionality-to-respond-to-dsrs"></a>Utilisation des fonctionnalités intégrées à l’application pour répondre aux DPC
 
-Tandis que la plupart des données client sont créées et produites à l’aide des applications décrites dans la section précédente, Office 365 propose aussi de nombreuses autres applications que les clients peuvent utiliser pour produire et stocker des données client. Toutefois, la recherche de contenu n’est actuellement pas en mesure de trouver des données créées dans les autres applications Office 365. Pour rechercher des données générées par ces applications, vous ou le propriétaire des données devez utiliser des fonctionnalités intégrées au produit pour trouver les données pertinentes pour une DSR. Le tableau suivant répertorie ces applications Office 365. Cliquez sur l’icône d’application pour accéder à la section de ce guide qui explique comment répondre aux demandes de DSR pour les données créées dans l’application.
+Tandis que la plupart des données client sont créées et produites à l’aide des applications décrites dans la section précédente, Office 365 propose aussi de nombreuses autres applications que les clients peuvent utiliser pour produire et stocker des données client. Toutefois, la recherche de contenu n’est actuellement pas en mesure de trouver des données créées dans les autres applications Office 365. Pour rechercher des données générées par ces applications, vous ou le propriétaire des données devez utiliser des fonctionnalités intégrées au produit pour trouver les données pertinentes pour une DPC. Le tableau suivant répertorie ces applications Office 365. Cliquez sur l’icône d’application pour accéder à la section de ce guide qui explique comment répondre aux DPC pour les données créées dans l’application.
 
 ***Tableau 3 : Applications dont les fonctionnalités intégrées permettent de trouver des données client***
 
@@ -720,7 +720,7 @@ Les sections suivantes expliquent comment utiliser les fonctionnalités intégr�
 
 ##### <a name="discover"></a>Découvrir
 
-Il existe plusieurs méthodes qui vous permettent de rechercher des enregistrements dans une base de données Access pouvant répondre à une demande de DSR. Dans le cadre d’un examen de DSR, vous pouvez rechercher des enregistrements liés à la personne concernée ou rechercher des enregistrements qui contiennent des données spécifiques. Par exemple, vous pouvez rechercher ou consulter un enregistrement qui correspond à la personne concernée, ou rechercher des enregistrements qui contiennent des données spécifiques, telles que des données personnelles sur la personne concernée. Pour obtenir plus d’informations, consultez les articles suivants :
+Il existe plusieurs méthodes qui vous permettent de rechercher des enregistrements dans une base de données Access pouvant répondre à une DPC. Dans le cadre d’un examen de DPC, vous pouvez rechercher des enregistrements liés à la personne concernée par le traitement des données ou rechercher des enregistrements qui contiennent des données spécifiques. Par exemple, vous pouvez rechercher ou consulter un enregistrement qui correspond à la personne concernée par le traitement des données, ou rechercher des enregistrements qui contiennent des données spécifiques, telles que des données personnelles sur la personne concernée par le traitement des données. Pour obtenir plus d’informations, consultez les articles suivants :
 
 - [Rechercher des enregistrements dans une base de données Access](https://support.office.com/article/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
 
@@ -728,7 +728,7 @@ Il existe plusieurs méthodes qui vous permettent de rechercher des enregistreme
 
 ##### <a name="access"></a>Access
 
-Lorsque vous avez trouvé les enregistrements ou les champs pertinents à la demande de DSR, vous pouvez faire une capture d’écran des données ou les exporter vers un fichier Excel, Word ou un fichier texte. Vous pouvez également créer et imprimer un rapport créé à partir d’une source d’enregistrements ou d’une requête de sélection créée pour trouver les données. Consultez les articles suivants :
+Lorsque vous avez trouvé les enregistrements ou les champs pertinents à la DPC, vous pouvez faire une capture d’écran des données ou les exporter vers un fichier Excel, Word ou un fichier texte. Vous pouvez également créer et imprimer un rapport créé à partir d’une source d’enregistrements ou d’une requête de sélection créée pour trouver les données. Consultez les articles suivants :
 
 - [Présentation des rapports dans Access](https://support.office.com/article/introduction-to-reports-in-access-e0869f59-7536-4d19-8e05-7158dcd3681c)
 
@@ -740,7 +740,7 @@ Lorsque vous avez trouvé les enregistrements ou les champs pertinents à la dem
 
 ##### <a name="export"></a>Exporter
 
-Comme indiqué précédemment, vous pouvez exporter des données d’une base de données Access sous différents formats de fichier. Le format de fichier sous lequel vous choisissez d’exporter les données peut dépendre de la demande d’exportation de DSR spécifique de la personne concernée. Consultez l’article [Importer et exporter](https://support.office.com/article/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f) pour obtenir la liste des rubriques qui expliquent comment exporter des données Access sous différents formats de fichier.
+Comme indiqué précédemment, vous pouvez exporter des données d’une base de données Access sous différents formats de fichier. Le format de fichier sous lequel vous choisissez d’exporter les données peut dépendre de la demande d’exportation de DPC spécifique de la personne concernée par le traitement des données. Consultez l’article [Importer et exporter](https://support.office.com/article/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f) pour obtenir la liste des rubriques qui expliquent comment exporter des données Access sous différents formats de fichier.
 
 ##### <a name="delete"></a>Supprimer
 
@@ -752,7 +752,7 @@ Vous pouvez supprimer un enregistrement entier ou simplement un champ d’une ba
 
 ### <a name="business-apps-for-office-365"></a>Applications professionnelles pour Office 365
 
-Cette section explique comment utiliser les fonctionnalités intégrées de chacune des applications professionnelles suivantes pour Office 365 afin de répondre aux demandes de DSR.
+Cette section explique comment utiliser les fonctionnalités intégrées de chacune des applications professionnelles suivantes pour Office 365 afin de répondre aux DPC.
 - [Réservations](#bookings)
 
 - [Référencements](#listings)
@@ -810,7 +810,7 @@ Bookings recueille et stocke les types de données suivants :
 Pour exporter des données correspondant au chef d’entreprise, aux employés et aux clients, utilisez le portail de confidentialité du Business center. Consultez l’article relatif à l’[exportation ou à la suppression des données utilisateur à l’aide du portail de confidentialité du Business center](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
 
 ##### <a name="delete"></a>Supprimer
-Vous pouvez supprimer les types de données Bookings suivants en réponse à une demande de suppression de DSR :
+Vous pouvez supprimer les types de données Bookings suivants en réponse à une demande de suppression corrélative à une DPC :
 
 - **Informations de profil métier et contacts** : vous pouvez supprimer la boîte aux lettres Bookings dans le Centre d’administration Office 365. Après avoir supprimé la boîte aux lettres, vous pouvez la restaurer pendant 30 jours. Passé ce délai, le compte et la boîte aux lettres correspondante sont supprimés définitivement. Pour plus d’informations sur la suppression d’un compte d’utilisateur, voir la section [Suppression d’un utilisateur](#deleting-a-user).
 
@@ -912,7 +912,7 @@ Une fois créée et envoyée, une facture ne peut pas être supprimée en raison
 Par ailleurs, vous pouvez supprimer le compte d’utilisateur propriétaire de facturation dans Office 365. Consultez la rubrique [Suppression d’un utilisateur](#deleting-a-user).
 
 ### <a name="education"></a>Éducation
-Cette section explique comment utiliser les fonctionnalités intégrées de Microsoft Éducation suivantes afin de répondre aux demandes de DSR.
+Cette section explique comment utiliser les fonctionnalités intégrées de Microsoft Éducation suivantes afin de répondre aux DPC.
 
 - Affectations
 
@@ -928,11 +928,11 @@ Affectations stocke des informations générées par les enseignants et les étu
 
 Les fichiers des étudiants associés à une Soumission pour affectation sont stockés dans une bibliothèque de documents (appelée **Travaux des étudiants**) et les fichiers associés aux Affectations créés par les enseignants et accessibles par les étudiants sont stockés dans une autre bibliothèque de documents (appelée **Fichiers de la classe**). Les deux bibliothèques de documents figurent dans le site SharePoint d’équipe de la classe correspondant.
 
-Un administrateur peut utiliser l’outil de recherche de contenu dans le Centre de sécurité et conformité Office 365 pour rechercher les fichiers des étudiants (dans les bibliothèques Travaux des étudiants et Fichiers de la classe) comprenant des soumissions pour les affectations, ainsi que des fichiers liés aux affectations. Par exemple, un administrateur peut effectuer une recherche dans tous les sites SharePoint Online de l’organisation et utiliser le nom et la classe de l’étudiant ou le nom d’une affectation dans la requête de recherche pour trouver des données pertinentes pour une DSR. 
+Un administrateur peut utiliser l’outil de recherche de contenu dans le Centre de sécurité et conformité Office 365 pour rechercher les fichiers des étudiants (dans les bibliothèques Travaux des étudiants et Fichiers de la classe) comprenant des soumissions pour les affectations, ainsi que des fichiers liés aux affectations. Par exemple, un administrateur peut effectuer une recherche dans tous les sites SharePoint Online de l’organisation et utiliser le nom et la classe de l’étudiant ou le nom d’une affectation dans la requête de recherche pour trouver des données pertinentes pour une DPC. 
 
-De même, un administrateur peut rechercher les fichiers des enseignants liés aux affectations de fichiers distribuées par un enseignant aux étudiants. Par exemple, un administrateur peut rechercher tous les sites SharePoint de l’organisation et utiliser le nom de l’enseignant et le nom de la classe ou de l’affectation dans la requête de recherche pour trouver des données pertinentes à une demande de DSR.
+De même, un administrateur peut rechercher les fichiers des enseignants liés aux affectations de fichiers distribuées par un enseignant aux étudiants. Par exemple, un administrateur peut rechercher tous les sites SharePoint de l’organisation et utiliser le nom de l’enseignant et le nom de la classe ou de l’affectation dans la requête de recherche pour trouver des données pertinentes pour une DPC.
 
-Consultez la section[Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DSR](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) de ce guide.
+Consultez la section[Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DPC](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) de ce guide.
 
 ##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>Recherche des données Affectations non stockées dans SharePoint
 Les types suivants de données Affectations ne sont pas stockés dans le site SharePoint d’équipe de la classe et, par conséquent, ne sont pas détectables à l’aide de la recherche de contenu. Ces données incluent les éléments suivants :
@@ -943,9 +943,9 @@ Les types suivants de données Affectations ne sont pas stockés dans le site Sh
 
 - Détails de l’affectation, tels que la date d’échéance de l’affectation
 
-Pour rechercher des données, un administrateur ou un enseignant doit accéder à l’affectation dans le site d’équipe de la classe pour trouver des données pouvant être pertinentes pour une demande de DSR. Un administrateur peut s’ajouter en tant que propriétaire pour la classe et afficher toutes les affectations pour cette équipe de la classe.
+Pour rechercher des données, un administrateur ou un enseignant doit accéder à l’affectation dans le site d’équipe de la classe pour trouver des données pouvant être pertinentes pour une DPC. Un administrateur peut s’ajouter en tant que propriétaire pour la classe et afficher toutes les affectations pour cette équipe de la classe.
 
-Notez que même si un étudiant ne fait plus partie d’une classe, ses données peuvent toujours être présentes dans la classe et marquées comme « n’est plus inscrit(e) ». Dans ce cas, un étudiant qui envoie une demande de DSR doit fournir à l’administrateur la liste des classes auxquelles il était officiellement inscrit.
+Notez que même si un étudiant ne fait plus partie d’une classe, ses données peuvent toujours être présentes dans la classe et marquées comme « n’est plus inscrit(e) ». Dans ce cas, un étudiant qui envoie une DPC doit fournir à l’administrateur la liste des classes auxquelles il était officiellement inscrit.
 
 ##### <a name="export"></a>Exporter
 Vous pouvez exporter les données Affectations d’un étudiant spécifique pour toutes les classes dans lesquelles l’étudiant est actuellement inscrit à l’aide d’un script PowerShell. Consultez les articles suivants :
@@ -965,7 +965,7 @@ Vous pouvez supprimer les données Affectations d’un étudiant spécifique pou
 
 Si l’étudiant a été supprimé du site d’équipe de la classe, l’administrateur peut réintégrer l’étudiant au site avant d’exécuter le script d’exportation. Sinon, l’administrateur peut utiliser le fichier d’entrée du script pour identifier chaque classe à laquelle l’étudiant n’a jamais été inscrit. Vous ne pouvez pas utiliser le script de suppression Affectation pour supprimer les données des enseignants, car toutes les affectations sont partagées au sein du site d’équipe de la classe. Un administrateur peut également s’ajouter au site d’équipe de la classe, puis supprimer une affectation spécifique.
 
-La consultation du bloc-notes pour la classe afin de rechercher du contenu dans le bloc-notes de la classe est décrite précédemment dans ce guide. Consultez la rubrique [Bloc-notes OneNote pour la classe](#onenote-class-notebook). Vous pouvez également utiliser l’outil recherche de contenu pour exporter des données à partir d’un bloc-notes pour la classe. Par ailleurs, un administrateur ou la personne concernée peut exporter des données d’un bloc-notes OneNote pour la classe. Consultez l’article[Enregistrement d’une copie d’un bloc-notes pour la classe](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
+La consultation du bloc-notes pour la classe afin de rechercher du contenu dans le bloc-notes de la classe est décrite précédemment dans ce guide. Consultez la rubrique [Bloc-notes OneNote pour la classe](#onenote-class-notebook). Vous pouvez également utiliser l’outil recherche de contenu pour exporter des données à partir d’un bloc-notes pour la classe. Par ailleurs, un administrateur ou la personne concernée par le traitement des données peut exporter des données d’un bloc-notes OneNote pour la classe. Pour en savoir plus, veuillez consulter l’article[Enregistrement d’une copie d’un bloc-notes pour la classe](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
 
 ### <a name="flow"></a>Flow
 
@@ -975,9 +975,9 @@ Les sections suivantes expliquent comment utiliser les fonctionnalités intégr�
 
 Il est possible d’utiliser Flow pour effectuer des tâches liées aux données telles que la synchronisation de fichiers entre les applications, la copie de fichiers d’un service Office 365 vers un autre service, la collecte de données d’une application Office 365 et leur stockage dans une autre application. Par exemple, un utilisateur peut configurer un flux pour enregistrer des pièces jointes de courrier électronique Outlook sur son compte OneDrive Entreprise. Dans cet exemple, vous pouvez utiliser l’outil de recherche de contenu pour consulter la boîte aux lettres de l’utilisateur afin de rechercher le courrier électronique qui contient la pièce jointe ou consulter son compte OneDrive Entreprise pour rechercher le fichier. Ceci est un exemple où les données gérées par Flow peuvent être détectables dans les services Office 365 connectés à un flux de travail Flow.
 
-En outre, il est possible d’utiliser Microsoft Flow pour copier ou charger des fichiers à partir d’Office 365 sur un service externe, tel que Dropbox. Dans ce cas, les demandes de DSR concernant les données dans un service externe doivent être envoyées au service externe chargé du traitement des données dans ce type de scénario.
+En outre, il est possible d’utiliser Microsoft Flow pour copier ou charger des fichiers à partir d’Office 365 sur un service externe, tel que Dropbox. Dans ce cas, les DPC concernant les données dans un service externe doivent être envoyées au service externe chargé du traitement des données dans ce type de scénario.
 
-Si un administrateur reçoit une demande de DSR, il peut s’ajouter en tant que propriétaire de flux d’un utilisateur. Cela permet à un administrateur d’exécuter des fonctions, notamment l’exportation de définitions de flux, d’historiques d’exécution et l’exécution d’affectations d’autorisations de flux. Consultez l’article [Gérer les flux dans le Centre d’administration](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/).
+Si un administrateur reçoit une DPC, il peut s’ajouter en tant que propriétaire de flux d’un utilisateur. Cela permet à un administrateur d’exécuter des fonctions, notamment l’exportation de définitions de flux, d’historiques d’exécution et l’exécution d’affectations d’autorisations de flux. Pour en savoir plus, veuillez consulter l’article [Gérer les flux dans le Centre d’administration](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/).
 
 Pour être en mesure de s’ajouter en tant que propriétaire d’un flux, l’administrateur a besoin d’un compte disposant des autorisations suivantes :
 
@@ -1039,22 +1039,22 @@ Un administrateur peut exporter la définition et l’historique d’exécution 
 
 Pour se connecter aux API, aux applications SaaS et aux systèmes développés sur mesure, les utilisateurs doivent fournir leurs identifiants. Ces connexions sont détenues par l’utilisateur qui a créé la connexion et peuvent être [gérées](https://docs.microsoft.com/flow/add-manage-connections) dans le produit. Après que des flux ont été réattribués, un administrateur peut utiliser des cmdlets PowerShell pour répertorier et supprimer ces connexions dans le cadre de la suppression de données utilisateur.
 
-Les connecteurs personnalisés permettent aux organisations d’étendre les fonctionnalités de Flow en se connectant aux systèmes où aucun connecteur prêt à l’emploi n’est disponible. L’auteur d’un connecteur personnalisé peut [partager](https://docs.microsoft.com/flow/register-custom-api) son connecteur avec d’autres personnes d’une organisation. Après la réception d’une demande de suppression de DSR, un administrateur doit envisager de réattribuer la propriété de ces connecteurs pour éviter toute interruption des activités. Pour accélérer ce processus, un administrateur peut utiliser des cmdlets PowerShell afin de répertorier, de réattribuer ou de supprimer des connecteurs personnalisés.
+Les connecteurs personnalisés permettent aux organisations d’étendre les fonctionnalités de Flow en se connectant aux systèmes où aucun connecteur prêt à l’emploi n’est disponible. L’auteur d’un connecteur personnalisé peut [partager](https://docs.microsoft.com/flow/register-custom-api) son connecteur avec d’autres personnes d’une organisation. Après la réception d’une demande de suppression corrélative à une DPC, un administrateur doit envisager de réattribuer la propriété de ces connecteurs pour éviter toute interruption des activités. Pour accélérer ce processus, un administrateur peut utiliser des cmdlets PowerShell afin de répertorier, de réattribuer ou de supprimer des connecteurs personnalisés.
 
 ### <a name="forms"></a>Formulaires
 Les sections suivantes expliquent comment utiliser les fonctionnalités intégrées à l’application dans Microsoft Forms pour rechercher, consulter, exporter et supprimer des données personnelles.
 
 #### <a name="discover"></a>Découvrir
 
-Les utilisateurs de Forms peuvent aller sur <https://forms.office.com> et sélectionner **Mes formulaires** pour afficher les formulaires qu’ils ont créés. Ils peuvent également sélectionner **Partagés avec moi** pour afficher les formulaires que d’autres personnes ont partagés via un lien. S’il y a beaucoup de formulaires à trier, les utilisateurs peuvent utiliser la barre de recherche intégrée au produit pour rechercher des formulaires par titre ou par auteur. Pour déterminer si Microsoft Forms détient des données personnelles pertinentes pour votre DSR, vous pouvez demander à la personne concernée d’effectuer une recherche dans sa liste **Partagés avec moi** afin d’identifier les utilisateurs (« propriétaires de formulaires ») qui ont envoyé des formulaires à la personne concernée. Vous pouvez ensuite demander aux propriétaires des formulaires de sélectionner **Partager** dans la barre de navigation supérieure et de vous envoyer le lien vers un formulaire spécifique afin de pouvoir l’afficher et de déterminer s’il s’agit d’un support pertinent pour votre DSR.
+Les utilisateurs de Forms peuvent aller sur <https://forms.office.com> et sélectionner **Mes formulaires** pour afficher les formulaires qu’ils ont créés. Ils peuvent également sélectionner **Partagés avec moi** pour afficher les formulaires que d’autres personnes ont partagés via un lien. S’il y a beaucoup de formulaires à trier, les utilisateurs peuvent utiliser la barre de recherche intégrée au produit pour rechercher des formulaires par titre ou par auteur. Pour déterminer si Microsoft Forms détient des données personnelles pertinentes pour votre DPC, vous pouvez demander à la personne concernée par le traitement des données d’effectuer une recherche dans sa liste **Partagés avec moi** afin d’identifier les utilisateurs (« propriétaires de formulaires ») qui ont envoyé des formulaires à la personne concernée par le traitement des données. Vous pouvez ensuite demander aux propriétaires des formulaires de sélectionner **Partager** dans la barre de navigation supérieure et de vous envoyer le lien vers un formulaire spécifique afin de pouvoir l’afficher et de déterminer s’il s’agit d’un support pertinent pour votre DPC.
 
 #### <a name="access"></a>Access
 
-Après avoir trouvé les formulaires pertinents, vous pouvez accéder aux réponses au formulaire en cliquant sur l’onglet **Réponses**. Découvrez plus d’informations expliquant comment [vérifier vos résultats au questionnaire](https://support.office.com/article/c4a9b45c-d62f-4eb7-b5db-ad81892c7c07) ou [vos résultats de formulaire](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). Pour examiner les résultats des réponses dans Excel, sélectionnez l’onglet **Réponses**, puis cliquez sur **Ouvrir dans Excel**. Si vous voulez envoyer une copie du formulaire à la personne concernée, vous pouvez soit faire des captures d’écran des questions et des réponses pertinentes affichées dans l’application au format RTF ou lui envoyer une copie Excel des résultats. Si vous utilisez Excel et que vous ne voulez partager que des parties des résultats de l’étude à la personne concernée, vous pouvez supprimer certaines lignes ou colonnes, ou modifier les parties restantes avant de partager les résultats. Par ailleurs, vous pouvez accéder à **Partager \> Obtenir un lien vers la copie** (sous Partager en tant que modèle) pour fournir une copie de l’ensemble du formulaire à la personne concernée.
+Après avoir trouvé les formulaires pertinents, vous pouvez accéder aux réponses au formulaire en cliquant sur l’onglet **Réponses**. Découvrez plus d’informations expliquant comment [vérifier vos résultats au questionnaire](https://support.office.com/article/c4a9b45c-d62f-4eb7-b5db-ad81892c7c07) ou [vos résultats de formulaire](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). Pour examiner les résultats des réponses dans Excel, sélectionnez l’onglet **Réponses**, puis cliquez sur **Ouvrir dans Excel**. Si vous voulez envoyer une copie du formulaire à la personne concernée par le traitement des données, vous pouvez soit faire des captures d’écran des questions et des réponses pertinentes affichées dans l’application au format RTF ou lui envoyer une copie Excel des résultats. Si vous utilisez Excel et que vous ne voulez partager que des parties des résultats de l’étude à la personne concernée par le traitement des données, vous pouvez supprimer certaines lignes ou colonnes, ou modifier les parties restantes avant de partager les résultats. Par ailleurs, vous pouvez accéder à **Partager \> Obtenir un lien vers la copie** (sous Partager en tant que modèle) pour fournir une copie de l’ensemble du formulaire à la personne concernée par le traitement des données.
 
 #### <a name="delete"></a>Supprimer
 
-Chaque enquête, questionnaire ou sondage peut être définitivement supprimé par son propriétaire. Si vous voulez respecter la demande « m’oublier » de DSR et supprimer un formulaire dans son intégralité, recherchez le formulaire dans la liste connexe, sélectionnez la série de points (ellipse) dans le coin supérieur droit de la fenêtre d’aperçu du formulaire, puis cliquez sur **Supprimer**. Une fois que le formulaire a été supprimé, il n’est pas possible de le récupérer. Pour obtenir plus d’informations, consultez l’article [Supprimer un formulaire](https://support.office.com/article/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
+Chaque enquête, questionnaire ou sondage peut être définitivement supprimé par son propriétaire. Si vous voulez respecter une demande de « droit à l’oubli » corrélative à une DPC et supprimer un formulaire dans son intégralité, recherchez le formulaire dans la liste connexe, sélectionnez la série de points (ellipse) dans le coin supérieur droit de la fenêtre d’aperçu du formulaire, puis cliquez sur **Supprimer**. Lorsque le formulaire a été supprimé, il n’est pas possible de le récupérer. Pour obtenir plus d’informations, consultez l’article [Supprimer un formulaire](https://support.office.com/article/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
 
 #### <a name="export"></a>Exporter
 
@@ -1079,7 +1079,7 @@ Les données organisationnelles d’un utilisateur, c’est-à-dire les données
 
 - Données des connecteurs Kaizala
 
-Les données consommateur d’un utilisateur sont accessibles par la personne concernée à l’aide de l’application mobile Kaizala pour les données consommateur. Les données consommateur incluent les types de données suivants :
+Les données de consommateur d’un utilisateur sont accessibles par la personne concernée par le traitement des données à l’aide de l’application mobile Kaizala pour les données de consommateur. Les données de consommateur incluent les types de données suivants :
 
 - Données appartenant à des groupes privés sur Kaizala (stockées sur des serveurs Kaizala pendant 90 jours)
 
@@ -1096,7 +1096,7 @@ Les données consommateur d’un utilisateur sont accessibles par la personne co
 - Données d’utilisation des produits et des services de l’utilisateur
 
 #### <a name="access"></a>Access
-Les utilisateurs Kaizala peuvent accéder à leur appareil mobile pour afficher le contenu Kaizala qu’ils ont créé sur leur appareil. Pour déterminer si les applications mobiles Kaizala contiennent peut-être des données personnelles répondant à une DSR, vous pouvez demander à la personne concernée de rechercher les informations demandées dans leur application Kaizala.
+Les utilisateurs Kaizala peuvent accéder à leur appareil mobile pour afficher le contenu Kaizala qu’ils ont créé sur leur appareil. Pour déterminer si les applications mobiles Kaizala contiennent peut-être des données personnelles répondant à une DPC, vous pouvez demander à la personne concernée par le traitement des données de rechercher les informations demandées dans leur application Kaizala.
 
 #### <a name="export"></a>Exporter
 Quand les utilisateurs de votre organisation utilisent Kaizala, des données consommateur sont générées et les données organisationnelles peuvent être générées si l’utilisateur participe à un groupe de l’organisation. Les administrateurs peuvent exporter les données organisationnelles d’un utilisateur à partir du portail de gestion Kaizala. Les utilisateurs Kaizala peuvent exporter leurs données privées à partir de l’application mobile Kaizala. Dans les deux cas, notez que les données d’utilisation des produits et des services sont également exportées lorsqu’un administrateur ou un utilisateur exporte les données Kaizala. Pour obtenir plus d’informations, consultez les articles suivants :
@@ -1171,7 +1171,7 @@ Les sections suivantes expliquent comment utiliser les fonctionnalités intégr�
 
 PowerApps est un service permettant de créer des applications pouvant être partagées et utilisées au sein de votre organisation. Dans le cadre du processus de création ou d’exécution d’une application, un utilisateur finit par stocker plusieurs types de ressources et de données dans le service PowerApps, y compris les applications, les environnements, les connexions, les connecteurs personnalisés et les autorisations.
 
-Pour contribuer à faciliter une demande de DSR liée à PowerApps, vous pouvez exploiter les opérations d’administration exposées dans le [Centre d’administration PowerApps](https://admin.powerapps.com/) et les [cmdlets PowerApps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804). L’accès à ces outils nécessite un compte disposant des autorisations suivantes :
+Pour contribuer à faciliter une DPC liée à PowerApps, vous pouvez exploiter les opérations d’administration exposées dans le [Centre d’administration PowerApps](https://admin.powerapps.com/) et les [cmdlets PowerApps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804). L’accès à ces outils nécessite un compte disposant des autorisations suivantes :
 
 - Une licence PowerApps Plan 2 payante ou d’évaluation. Vous pouvez vous inscrire pour une licence d’évaluation de 30 jours [ici](http://web.powerapps.com/trial).
 
@@ -1208,7 +1208,7 @@ Vous pouvez également utiliser les fonctionnalités de [Recherche avancée](htt
 
 Pour se connecter aux API, aux applications SaaS et aux systèmes développés sur mesure, les utilisateurs doivent fournir leurs identifiants. Ces connexions sont détenues par l’utilisateur qui a créé la connexion et peuvent être [gérées](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection) dans le produit. Après que PowerApps a été réattribué, un administrateur peut utiliser des cmdlets PowerShell pour répertorier et supprimer ces connexions dans le cadre de la suppression de données utilisateur.
 
-Les connecteurs personnalisés permettent aux organisations d’étendre les fonctionnalités de PowerApps en se connectant aux systèmes où aucun connecteur prêt à l’emploi n’est disponible. L’auteur d’un connecteur personnalisé peut [partager](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-powerapps) son connecteur avec d’autres personnes d’une organisation. Après la réception d’une demande de suppression de DSR, un administrateur doit envisager de réattribuer la propriété de ces connecteurs pour éviter toute interruption des activités. Pour accélérer ce processus, un administrateur peut utiliser des cmdlets PowerShell afin de répertorier, de réattribuer ou de supprimer des connecteurs personnalisés.
+Les connecteurs personnalisés permettent aux organisations d’étendre les fonctionnalités de PowerApps en se connectant aux systèmes où aucun connecteur prêt à l’emploi n’est disponible. L’auteur d’un connecteur personnalisé peut [partager](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-powerapps) son connecteur avec d’autres personnes d’une organisation. Après la réception d’une demande de suppression corrélative à une DPC, un administrateur doit envisager de réattribuer la propriété de ces connecteurs pour éviter toute interruption des activités. Pour accélérer ce processus, un administrateur peut utiliser des cmdlets PowerShell afin de répertorier, de réattribuer ou de supprimer des connecteurs personnalisés.
 
 ### <a name="project-online"></a>Project Online
 
@@ -1216,7 +1216,7 @@ Les sections suivantes expliquent comment utiliser les fonctionnalités intégr�
 
 #### <a name="discover-and-access"></a>Découvrir et consulter
 
-Vous pouvez utiliser la recherche de contenu pour rechercher le site SharePoint Online associé à un projet (lors de la création d’un projet, il est proposé en option de créer un site SharePoint Online associé) ; la recherche de contenu ne permet pas de rechercher des données dans le projet en question dans Microsoft Project Online, seulement celles du site associé (même si la recherche de contenu permet de rechercher les métadonnées relatives aux projets telles que les personnes mentionnées dans l’objet). Cependant, cela peut vous aider à rechercher (et à consulter) le projet qui contient les données liées à la DSR.
+Vous pouvez utiliser la recherche de contenu pour rechercher le site SharePoint Online associé à un projet (lors de la création d’un projet, il est proposé en option de créer un site SharePoint Online associé) ; la recherche de contenu ne permet pas de rechercher des données dans le projet en question dans Microsoft Project Online, seulement celles du site associé (même si la recherche de contenu permet de rechercher les métadonnées relatives aux projets telles que les personnes mentionnées dans l’objet). Cependant, cela peut vous aider à rechercher (et à consulter) le projet qui contient les données liées à la DPC.
 
 > [!TIP]
 > L’URL de la collection de sites de votre organisation où se trouvent les sites associés aux projets est **https://\<votre organisation\>.sharepoint.com/sites/pwa** ; par exemple, **https://contoso.sharepoint.com/pwa**. Vous pouvez utiliser cette collection de sites spécifique comme emplacement de votre recherche de contenu, puis utiliser le nom du projet dans la requête de recherche. En outre, un administrateur informatique peut utiliser la page Collections de sites dans le Centre d’administration SharePoint pour obtenir la liste des collections de sites Project Web App dans l’organisation.
@@ -1239,7 +1239,7 @@ Vous pouvez utiliser la fonctionnalité de recherche intégrée dans l’applica
 
 #### <a name="access"></a>Access
 
-Après avoir trouvé les données, vous pouvez en prendre une capture d’écran ou les copier-coller dans un fichier Word ou un fichier texte, puis les fournir à la personne concernée. Vous pouvez également enregistrer une publication sous forme de fichier Word, PDF ou XPS. Voir :
+Après avoir trouvé les données, vous pouvez en prendre une capture d’écran ou les copier-coller dans un fichier Word ou un fichier texte, puis les fournir à la personne concernée par le traitement des données. Vous pouvez également enregistrer une publication sous forme de fichier Word, PDF ou XPS. Voir :
 
   - [Enregistrer une publication en tant que document Word](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
 
@@ -1247,7 +1247,7 @@ Après avoir trouvé les données, vous pouvez en prendre une capture d’écran
 
 #### <a name="export"></a>Exporter
 
-Vous pouvez fournir à une personne concernée le fichier Publisher ou, comme expliqué précédemment, vous pouvez enregistrer une publication au format de fichier Word, PDF ou XPS. Voir :
+Vous pouvez fournir à une personne concernée par le traitement des données le fichier Publisher ou, comme expliqué précédemment, vous pouvez enregistrer une publication au format de fichier Word, PDF ou XPS. Voir :
 
   - [Enregistrer une publication en tant que document Word](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
 
@@ -1263,11 +1263,11 @@ Les sections suivantes expliquent comment utiliser les fonctionnalités intégr�
 
 #### <a name="discover"></a>Découvrir
 
-La plupart des données contenues dans StaffHub sont disponibles pour tous les responsables et les membres d’équipe de StaffHub. Pour examiner des données dans StaffHub, demandez à un responsable ou à un membre d’équipe d’accéder à <https://staffhub.office.com> pour rechercher des données potentiellement pertinentes pour la demande de DSR ou demandez-lui de vous ajouter en tant que membre de son équipe afin que vous puissiez directement examiner les informations de StaffHub pour rechercher les données susceptibles d’être pertinentes.
+La plupart des données contenues dans StaffHub sont disponibles pour tous les responsables et les membres d’équipe de StaffHub. Pour examiner des données dans StaffHub, demandez à un responsable ou à un membre d’équipe d’accéder à <https://staffhub.office.com> pour rechercher des données potentiellement pertinentes pour la DPC ou demandez-lui de vous ajouter en tant que membre de son équipe afin que vous puissiez directement examiner les informations de StaffHub pour rechercher les données susceptibles d’être pertinentes.
 
 #### <a name="access"></a>Access
 
-Après avoir trouvé du contenu pertinent dans StaffHub, vous pouvez afficher les données et prendre des captures d’écran des données pertinentes que vous souhaitez fournir à la personne concernée depuis l’application, ou les télécharger.
+Après avoir trouvé du contenu pertinent dans StaffHub, vous pouvez afficher les données et prendre des captures d’écran des données pertinentes que vous souhaitez fournir à la personne concernée par le traitement des données depuis l’application, ou les télécharger.
 
 -   **Informations de planification** : l’onglet **Planification** dans StaffHub propose le **Mode Personnes** et le **Mode Équipes** qui vous permet d’afficher la planification quotidienne, hebdomadaire et mensuelle par membre d’équipe ou par équipe. Ces affichages peuvent être imprimés ou téléchargés vers Excel en sélectionnant les trois points (ellipse) dans le coin supérieur gauche de l’application web StaffHub, et en cliquant sur **Exporter planification**.
 
@@ -1275,9 +1275,9 @@ Après avoir trouvé du contenu pertinent dans StaffHub, vous pouvez afficher le
 
 -   **Messages** : pour l’instant, les messages sont accessibles en suivant les étapes relatives à l’accès aux données spécifiques de l’utilisateur dans la section suivante. À l’avenir, tous les messages contenus dans StaffHub seront stockés dans Microsoft Teams, ce qui signifie que vous pourrez utiliser l’outil de recherche de contenu pour y accéder.
 
--   **Données spécifiques de l’utilisateur** : les données spécifiques de l’utilisateur se composent de paramètres utilisateur, de flux d’activités utilisateur et de l’historique de demandes de l’équipe de l’utilisateur. Aucune de ces données n’est accessible aux membres d’équipe ou aux administrateurs. Pour consulter ou exporter des données spécifiques de l’utilisateur, demandez à la personne concernée de se connecter à son compte StaffHub pour les obtenir. Par ailleurs, si la personne concernée a quitté votre organisation, vous pouvez obtenir ces données en demandant à votre administrateur de réinitialiser le mot de passe utilisateur de la personne concernée pour vous permettre à vous ou à l’administrateur de se connecter au compte.
+-   **Données spécifiques de l’utilisateur** : les données spécifiques de l’utilisateur se composent de paramètres utilisateur, de flux d’activités utilisateur et de l’historique de demandes de l’équipe de l’utilisateur. Aucune de ces données n’est accessible aux membres d’équipe ou aux administrateurs. Pour consulter ou exporter des données spécifiques de l’utilisateur, demandez à la personne concernée par le traitement des données de se connecter à son compte StaffHub pour les obtenir. Par ailleurs, si la personne concernée par le traitement des données a quitté votre organisation, vous pouvez obtenir ces données en demandant à votre administrateur de réinitialiser le mot de passe utilisateur de la personne concernée par le traitement des données. Par la suite, soit vous vous connectez au compte, soit l’administrateur s’en charge.
 
--   **Kronos** : StaffHub prend en charge les connexions à [Kronos](http://www.kronos.com/), un outil de gestion du personnel tiers. StaffHub et Kronos sont des processeurs indépendants et traitent les données de votre organisation conformément à des conditions que vous avez signées avec chaque partie. Si votre DSR est liée aux données détenues par Kronos, vous devrez contacter Kronos pour obtenir une assistance de DSR et vice-versa.
+-   **Kronos** : StaffHub prend en charge les connexions à [Kronos](http://www.kronos.com/), un outil de gestion du personnel tiers. StaffHub et Kronos sont responsables du traitement des données indépendants. Ils traitent les données de votre organisation conformément aux conditions que vous avez signées avec chaque partie. Si votre DPC est liée aux données détenues par Kronos, vous devrez contacter Kronos pour obtenir une assistance de DPC et vice-versa.
 
 #### <a name="delete"></a>Supprimer
 
@@ -1294,11 +1294,11 @@ Les sections suivantes expliquent comment utiliser les fonctionnalités intégr�
 
 #### <a name="discover"></a>Découvrir
 
-Pour découvrir le contenu généré ou téléchargé vers Stream pouvant être pertinent pour une demande de personne concernée, un administrateur Stream peut exécuter un rapport d’utilisateur pour déterminer les vidéos, les descriptions de vidéo, les groupes, les canaux ou les commentaires que l’utilisateur Stream peut avoir chargés, créés ou publiés. Pour obtenir des instructions sur la façon de générer un rapport, consultez l’article [Gestion des données utilisateur dans Microsoft Stream](https://docs.microsoft.com/stream/managing-user-data). La sortie du rapport est au format HTML et contient des liens hypertextes qui permettent d’accéder à des vidéos intéressantes. Si vous voulez regarder une vidéo qui requiert un ensemble personnalisé d’autorisations et que vous ne faites pas partie des utilisateurs d’origine pour lesquels la vidéo a été conçue, vous pouvez la regarder en mode administrateur. Consultez l’article [Fonctionnalités d’administration dans Microsoft Stream](https://docs.microsoft.com/stream/manage-content-permissions).  
+Pour découvrir le contenu généré ou téléchargé vers Stream pouvant être pertinent pour une demande de personne concernée, un administrateur Stream peut exécuter un rapport d’utilisateur pour déterminer les vidéos, les descriptions de vidéo, les groupes, les canaux ou les commentaires que l’utilisateur Stream peut avoir chargés, créés ou publiés. Pour obtenir des instructions sur la façon de générer un rapport, consultez l’article [Gestion des données utilisateur dans Microsoft Stream](https://docs.microsoft.com/stream/managing-user-data). Le rapport est généré au format HTML et contient des liens hypertextes qui permettent d’accéder à des vidéos intéressantes. Si vous voulez regarder une vidéo qui requiert un ensemble personnalisé d’autorisations et que vous ne faites pas partie des utilisateurs d’origine pour lesquels la vidéo a été conçue, vous pouvez la regarder en mode Administrateur. Consultez l’article [Fonctionnalités d’administration dans Microsoft Stream](https://docs.microsoft.com/stream/manage-content-permissions).  
 
 #### <a name="access"></a>Access
 
-Selon la nature de la demande de la personne concernée, une copie du rapport décrit ci-dessus peut être utilisée pour aider à satisfaire une demande de personne concernée. Le rapport utilisateur inclut le nom et l’ID unique de l’utilisateur Stream, une liste de vidéos chargées par l’utilisateur, une liste de vidéos auxquelles l’utilisateur a accès, une liste des canaux créés par l’utilisateur, une liste de tous les groupes dont fait partie l’utilisateur et une liste de tous les commentaires laissés par l’utilisateur sur les vidéos. Le rapport indique aussi si l’utilisateur a consulté chaque vidéo indiqué dans le rapport utilisateur. Si vous voulez fournir à la personne concernée l’accès à une vidéo afin de satisfaire une demande de DSR, vous pouvez partager la vidéo.
+Selon la nature de la demande de la personne concernée, une copie du rapport décrit ci-dessus peut être utilisée pour aider à satisfaire une demande de personne concernée. Le rapport utilisateur inclut le nom et l’ID unique de l’utilisateur Stream, une liste de vidéos chargées par l’utilisateur, une liste de vidéos auxquelles l’utilisateur a accès, une liste des canaux créés par l’utilisateur, une liste de tous les groupes dont fait partie l’utilisateur et une liste de tous les commentaires laissés par l’utilisateur sur les vidéos. Le rapport indique aussi si l’utilisateur a consulté chaque vidéo indiqué dans le rapport utilisateur. Si vous voulez fournir à la personne concernée par le traitement des données l’accès à une vidéo afin de répondre à une DPC, vous pouvez partager la vidéo.
 
 #### <a name="export"></a>Exporter
 
@@ -1312,11 +1312,11 @@ Pour supprimer ou modifier des vidéos ou tout autre contenu Stream, un administ
 Les sections suivantes expliquent comment utiliser les fonctionnalités intégrées à l’application dans Microsoft Sway pour rechercher, consulter, exporter et supprimer des données personnelles.
 
 #### <a name="discover"></a>Découvrir
-Le contenu créé à l’aide de Sway (disponible sur [www.sway.com](http://www.sway.com)) peut uniquement être consulté par le propriétaire et ceux autorisés par l’auteur à afficher le Sway. Consultez l’article [Paramètres de confidentialité dans Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Pour déterminer si Sway détient des données personnelles répondant à votre DSR, demandez à la personne concernée et aux utilisateurs de l’organisation susceptibles d’avoir créé du contenu sur la personne concernée de consulter leurs Sways et de partager avec vous les Sways pouvant contenir des données personnelles répondant à la demande de la personne concernée. Pour obtenir plus d’informations expliquant comment partager un Sway, consultez la section « Partager un Sway à partir de votre compte professionnel » dans l’article [Partager votre Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
+Le contenu créé à l’aide de Sway (disponible sur [www.sway.com](http://www.sway.com)) peut uniquement être consulté par le propriétaire et ceux autorisés par l’auteur à afficher le Sway. Consultez l’article [Paramètres de confidentialité dans Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Pour déterminer si Sway détient des données personnelles répondant à votre DPC, demandez à la personne concernée par le traitement des données et aux utilisateurs de l’organisation susceptibles d’avoir créé du contenu sur la personne concernée par le traitement des données de consulter leurs Sways et de partager avec vous les Sways pouvant contenir des données personnelles répondant à la demande de la personne concernée. Pour obtenir plus d’informations expliquant comment partager un Sway, consultez la section « Partager un Sway à partir de votre compte professionnel » dans l’article [Partager votre Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
 
 #### <a name="access"></a>Access
 
-Si vous avez trouvé des données personnelles dans un Sway que vous souhaitez partager avec la personne concernée, vous pouvez lui donner accès aux données de plusieurs façons. Vous pouvez fournir à la personne concernée une copie de la version en ligne de Sway (comme décrit ci-dessus) ; vous pouvez prendre des captures d’écran de la partie pertinente du Sway que vous voulez partager ; ou vous pouvez imprimer ou télécharger le Sway sur Word ou le convertir au format PDF. Dans la section « Exporter » ci-après, vous trouvez des instructions expliquant comment télécharger un Sway.
+Si vous avez trouvé des données personnelles dans un Sway que vous souhaitez partager avec la personne concernée par le traitement des données, vous pouvez lui donner accès aux données de plusieurs façons. Vous pouvez fournir à la personne concernée une copie de la version en ligne de Sway (comme décrit ci-dessus) ; vous pouvez prendre des captures d’écran de la partie pertinente du Sway que vous voulez partager ; ou vous pouvez imprimer ou télécharger le Sway sur Word ou le convertir au format PDF. Dans la section « Exporter » ci-après, vous trouvez des instructions expliquant comment télécharger un Sway.
 
 #### <a name="delete"></a>Supprimer
 
@@ -1336,12 +1336,12 @@ Les sections suivantes expliquent comment utiliser les fonctionnalités intégr�
 
 #### <a name="whiteboard-2016-on-surface-hub"></a>Whiteboard 2016 sur Surface Hub
 
-Cette section explique comment répondre aux demandes de DSR pour des données créées à l’aide de l’application intégrée Tableau blanc collaboratif 2016 sur Surface Hub.
+Cette section explique comment répondre aux DPC pour des données créées à l’aide de l’application intégrée Tableau blanc collaboratif 2016 sur Surface Hub.
 
 
 ##### <a name="discover"></a>Découvrir
 
-Les fichiers Tableau blanc collaboratif (fichiers .wbx) sont stockés dans le compte OneDrive Entreprise de l’utilisateur. Vous pouvez demander à la personne concernée ou à d’autres utilisateurs si les tableaux blancs qu’ils ont créés contiennent des données personnelles répondant à une demande de DSR. Ils peuvent partager un tableau blanc avec vous, ou vous pouvez acquérir une copie de celui-ci pour la donner à la personne concernée.
+Les fichiers Tableau blanc collaboratif (fichiers .wbx) sont stockés dans le compte OneDrive Entreprise de l’utilisateur. Vous pouvez demander à la personne concernée par le traitement des données ou à d’autres utilisateurs si les tableaux blancs qu’ils ont créés contiennent des données personnelles répondant à une DPC. Ils peuvent partager un tableau blanc avec vous, ou vous pouvez acquérir une copie de celui-ci pour la donner à la personne concernée par le traitement des données.
 
 Pour consulter et transférer les tableaux blancs, procédez comme suit : 
 
@@ -1349,17 +1349,17 @@ Pour consulter et transférer les tableaux blancs, procédez comme suit :
 
 2. Accédez au dossier des données de l’application Tableau blanc collaboratif dans le compte OneDrive Entreprise de l’utilisateur et copiez les fichiers .wbx des tableaux blancs que vous voulez transférer.
 
-3. Accordez-vous l’accès aux données du compte OneDrive Entreprise de la personne concernée, puis accédez au dossier des données de l’application Tableau blanc collaboratif.
+3. Accordez-vous l’accès aux données du compte OneDrive Entreprise de la personne concernée par le traitement des données, puis accédez au dossier des données de l’application Tableau blanc collaboratif.
 
 4. Collez les fichiers .wbx que vous avez copiés à l’étape précédente.
 
 ##### <a name="access"></a>Access
 
-Si vous trouvez des données personnelles dans un tableau blanc répondant à une demande d’accès de DSR, vous pouvez accorder à la personne concernée l’accès à un tableau blanc de différentes façons :
+Si vous trouvez des données personnelles dans un tableau blanc répondant à une demande d’accès corrélative à une DPC, vous pouvez accorder à la personne concernée par le traitement des données l’accès à un tableau blanc de différentes façons :
 
 - Prenez des captures d’écran des parties pertinentes d’un tableau blanc.
 
-- Importez une copie du fichier .wbx sur le compte OneDrive Entreprise de la personne concernée. Consultez la section précédente pour obtenir la procédure expliquant comment consulter et transférer des fichiers .wbx.
+- Importez une copie du fichier .wbx sur le compte OneDrive Entreprise de la personne concernée par le traitement des données. Consultez la section précédente pour obtenir la procédure expliquant comment consulter et transférer des fichiers .wbx.
 
 - Exportez une copie du tableau blanc dans un fichier .png.
 
@@ -1375,13 +1375,13 @@ Si vous avez obtenu une copie d’un tableau blanc, vous pouvez l’exporter.
 
 Vous pouvez vous accorder l’accès au compte OneDrive Entreprise de l’utilisateur, puis supprimer les tableaux blancs.
 
-1. Accordez-vous l’accès au compte OneDrive Entreprise de la personne concernée. Consultez la section « Obtenir l’accès aux documents OneDrive Entreprise de l’ancien employé » dans l’article relatif à la [consultation et à la sauvegarde des données d’un ancien utilisateur](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604).
+1. Accordez-vous l’accès au compte OneDrive Entreprise de la personne concernée par le traitement des données. Consultez la section « Obtenir l’accès aux documents OneDrive Entreprise de l’ancien employé » dans l’article relatif à la [consultation et à la sauvegarde des données d’un ancien utilisateur](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604).
 
 2. Accédez au dossier des données de l’application Tableau blanc collaboratif, puis supprimez le contenu de ce dossier.
 
 ####  <a name="whiteboard-for-pc-surface-hub-and-other-platforms"></a>Tableau blanc collaboratif pour PC, Surface Hub et autres plateformes
 
-Si un administrateur reçoit une demande de DSR pour les données dans la nouvelle application Tableau blanc collaboratif, il peut utiliser Whiteboard PowerShell pour s’ajouter (ou ajouter d’autres utilisateurs) en tant que propriétaire de tableaux blancs d’un utilisateur. Cela permet à un administrateur d’effectuer des actions telles que consulter, exporter et supprimer des tableaux blancs. Utilisez soit la cmdlet **Set-WhiteboardOwner** pour vous ajouter ou ajouter un autre utilisateur en tant que propriétaire d’un tableau blanc, soit la cmdlet **Invoke-TransferAllWhiteboards** pour transférer la propriété de tous les tableaux blancs d’un utilisateur spécifique à un nouveau propriétaire. Pour obtenir plus d’informations sur l’utilisation de ces cmdlets et l’installation du module Whiteboard PowerShell, consultez l’article de référence des cmdlets Tableau blanc collaboratif Microsoft. Une fois que vous ou une autre personne avez obtenu la propriété d’un tableau blanc, consultez l’article de [référence des cmdlets Tableau blanc collaboratif Microsoft](https://docs.microsoft.com/powershell/module/whiteboard/?view=whiteboard-ps).
+Si un administrateur reçoit une DPC pour les données dans la nouvelle application Tableau blanc collaboratif, il peut utiliser Whiteboard PowerShell pour s’ajouter (ou ajouter d’autres utilisateurs) en tant que propriétaire de tableaux blancs d’un utilisateur. Cela permet à un administrateur d’effectuer des actions telles que consulter, exporter et supprimer des tableaux blancs. Utilisez soit la cmdlet **Set-WhiteboardOwner** pour vous ajouter ou ajouter un autre utilisateur en tant que propriétaire d’un tableau blanc, soit la cmdlet **Invoke-TransferAllWhiteboards** pour transférer la propriété de tous les tableaux blancs d’un utilisateur spécifique à un nouveau propriétaire. Pour obtenir plus d’informations sur l’utilisation de ces cmdlets et l’installation du module Whiteboard PowerShell, consultez l’article de référence des cmdlets Tableau blanc collaboratif Microsoft. Une fois que vous ou une autre personne avez obtenu la propriété d’un tableau blanc, consultez l’article de [référence des cmdlets Tableau blanc collaboratif Microsoft](https://docs.microsoft.com/powershell/module/whiteboard/?view=whiteboard-ps).
 
 Une fois que vous ou une autre personne avez obtenu la propriété d’un tableau blanc, consultez l’article du [support technique Tableau blanc collaboratif](https://go.microsoft.com/fwlink/?linkid=872780) pour obtenir des instructions détaillées sur l’accès aux tableaux blancs, leur exportation et leur suppression.
 
@@ -1416,35 +1416,35 @@ L’exportation des données par utilisateur n’inclut pas les éléments suiva
     - L’utilisateur peut afficher ces informations. Pour obtenir des informations expliquant comment les afficher, consultez l’article [Conseils pour rester organisé dans Yammer](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380). Un administrateur peut afficher ces informations et prendre des captures d’écran, mais ne peut pas les modifier. Accédez aux paramètres Yammer \> **Contacts**, puis cliquez sur le nom de l’utilisateur.
 
 #### <a name="export"></a>Exporter
-Pour obtenir des instructions pour savoir comment exporter des données, voir [demandes d’objet RGPD gérer les données dans Yammer Enterprise](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf). Vous devez exécuter une exportation pour chaque réseau Yammer dont l’utilisateur est membre.
+Pour obtenir des instructions sur l’exportation des données, consultez la page [Gérer les demandes de personnes concernées par des données liées au RGPD dans Yammer Entreprise](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf). Vous devez exécuter une exportation pour chaque réseau Yammer dont l’utilisateur est membre.
 
 Notez que Yammer dispose de paramètres de rétention des données permettant de supprimer (récupération possible) ou de supprimer définitivement des données lorsqu’un utilisateur supprime un message ou un fichier. Si la suppression réversible est activée, les données supprimées par l’utilisateur seront incluses dans l’exportation. Si le paramètre de conservation des données Yammer est défini sur la suppression définitive, les informations supprimées ne sont plus stockées dans Yammer, ni incluses dans l’exportation.
 
 #### <a name="delete"></a>Supprimer
-Yammer permet aux administrateurs vérifiés d’exécuter une suppression conformément au RGDP via le Centre d’administration Yammer. Cette option est appelée Effacer l’utilisateur. Elle bloque l’utilisateur pendant 14 jours, puis supprime toutes ses données personnelles, à l’exception des fichiers et des messages. Si l’utilisateur est un utilisateur invité, cela doit être effectué pour chaque réseau externe dont il est membre.
+Yammer permet aux administrateurs vérifiés ayant reçu une DPC d’exécuter une suppression conformément au RGDP via le Centre d’administration Yammer. Cette option est appelée Effacer l’utilisateur. Elle bloque l’utilisateur pendant 14 jours, puis supprime toutes ses données personnelles, à l’exception des fichiers et des messages. Si l’utilisateur est un utilisateur invité, cela doit être effectué pour chaque réseau externe dont il est membre.
 
 > [!NOTE]
 > Si un administrateur souhaite supprimer les fichiers et messages d’un utilisateur pendant la fenêtre de 14 jours, il doit effectuer une exportation au niveau de l’utilisateur afin d’identifier les fichiers et les messages, puis décider lesquels sont à supprimer par l’intermédiaire de la suppression intégrée au produit ou à l’aide d’un script PowerShell. À l’issue de la période de 14 jours, l’administrateur ne peut plus associer l’utilisateur à ses fichiers ou messages.
 
 Lorsqu’un utilisateur est supprimé avec l’option Effacer l’utilisateur, une notification est envoyée dans la boîte de réception Yammer de tous les administrateurs réseau et administrateurs vérifiés. L’option Effacer l’utilisateur supprime le profil Yammer de l’utilisateur, mais pas son profil Office 365 ou Azure Active Directory.
 
-Pour la procédure détaillée supprimer un utilisateur, voir [demandes d’objet RGPD gérer les données dans Yammer Enterprise](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
+Pour apprendre la procédure détaillée de suppression d’un compte d’utilisateur, veuillez consulter [Gérer les demandes de personnes concernées par des données liées au RGPD dans Yammer Entreprise](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
 
-## <a name="responding-to-dsr-rectification-requests"></a>Réponse aux demandes de rectification DSR
+## <a name="responding-to-dsr-rectification-requests"></a>Réponse aux demandes de rectification corrélatives aux DPC
 
-Si la personne concernée vous a demandé de rectifier les données personnelles figurant dans les données de votre organisation stockées dans Office 365, vous et votre organisation devez décider s’il convient d’honorer cette demande. Si vous décidez d’honorer cette demande, vous devrez peut-être effectuer des actions telles que modifier ou supprimer des données personnelles d’un document ou d’un autre type d’élément au moment de rectifier les données. La meilleure façon de s’y prendre est de demander au propriétaire des données/du document d’utiliser l’application Office 365 appropriée pour apporter les modifications demandées. Une autre façon est de demander à un administrateur informatique de votre organisation d’effectuer les modifications. L’administrateur informatique (ou d’autres personnes de votre organisation disposant des privilèges appropriés, comme l’administrateur de collection de sites SharePoint Online) devra certainement s’attribuer, ou attribuer à toute personne travaillant sur la DSR, les autorisations nécessaires afin d’accéder à l’emplacement du document ou du contenu afin d’apporter les modifications directement dans le document.
+Si la personne concernée vous a demandé de rectifier les données personnelles figurant dans les données de votre organisation stockées dans Office 365, vous et votre organisation devez décider s’il convient d’honorer cette demande. Si vous décidez d’honorer cette demande, vous devrez peut-être effectuer des actions telles que modifier ou supprimer des données personnelles d’un document ou d’un autre type d’élément au moment de rectifier les données. La meilleure façon de s’y prendre est de demander au propriétaire des données/du document d’utiliser l’application Office 365 appropriée pour apporter les modifications demandées. Une autre façon est de demander à un administrateur informatique de votre organisation d’effectuer les modifications. L’administrateur informatique (ou d’autres personnes de votre organisation disposant des privilèges appropriés, comme l’administrateur de collection de sites SharePoint Online) devra certainement s’attribuer, ou attribuer à toute personne travaillant sur la DPC, les autorisations nécessaires afin d’accéder à l’emplacement du document ou du contenu afin d’apporter les modifications directement dans le document.
 
 ### <a name="requesting-that-the-data-owner-to-make-the-approved-change"></a>Demander au propriétaire des données d’apporter les modifications approuvées
-La façon la plus directe de rectifier des données personnelles est de demander au propriétaire des données d’apporter les modifications. Après avoir localisé les données faisant l’objet d’une DRS, vous pouvez fournir les informations suivantes pour que le propriétaire puisse effectuer les changements :
+La façon la plus directe de rectifier des données personnelles est de demander au propriétaire des données d’effectuer les modifications. Après avoir localisé les données faisant l’objet d’une DPC, vous pouvez fournir les informations suivantes pour que le propriétaire puisse effectuer les modifications :
 
 -   L’emplacement et le nom de fichier (pour les documents et autres fichiers) de l’élément qui doit être modifié ; localiser les données en question fait partie du [processus de découverte](#using-content-search-to-find-personal-data) expliqué précédemment.
 
 -   Les modifications approuvées que le propriétaire des données doit apporter
 
-Il convient peut-être de mettre en œuvre un processus de confirmation pendant lequel vous, ou une autre personne concernée par l’examen de la DSR, vérifiez que les modifications demandées ont bien été apportées.
+Il convient peut-être de mettre en œuvre un processus de confirmation pendant lequel vous, ou une autre personne concernée par l’examen de la DPC, vérifiez que les modifications demandées ont bien été effectuées.
 
 ### <a name="gaining-access-to-a-sharepoint-online-site-or-onedrive-for-business-account-to-make-changes"></a>Obtenir l’accès à un site SharePoint Online ou à un compte OneDrive Entreprise pour apporter des modifications
-Si le propriétaire des données ne peut pas exécuter la demande de rectification de la personne concernée, un administrateur informatique ou l’administrateur SharePoint de votre organisation peut obtenir l’accès à l’emplacement du contenu et apporter les modifications requises. Un administrateur peut également vous attribuer, ou attribuer à un autre responsable de confidentialité des données, les autorisations nécessaires.
+Si le propriétaire des données ne peut pas exécuter la demande de rectification de la personne concernée par le traitement des données, un administrateur informatique ou l’administrateur SharePoint de votre organisation peut obtenir l’accès à l’emplacement du contenu et apporter les modifications requises. Un administrateur peut également vous attribuer, ou attribuer à un autre responsable de confidentialité des données, les autorisations nécessaires.
 
 #### <a name="sharepoint-online"></a>SharePoint Online
 
@@ -1476,15 +1476,15 @@ Un administrateur général Office 365 peut s’attribuer les autorisations né
 
 -   [Accéder à la boîte aux lettres d’un autre utilisateur](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081)
 
-Notez que si la boîte aux lettres de l’utilisateur est placée en conservation légale ou a été attribuée à une stratégie de rétention, toutes les versions de la boîte aux lettres en question sont conservées jusqu’à ce que la période de rétention expire ou que la conservation soit retirée de la boîte aux lettres. Cela signifie que si un élément de boite aux lettres est modifié en réponse à une demande de rectification de DSR, une copie de l’élément d’origine (avant que les modifications ne soient apportées) est conservée et stockée dans un dossier masqué dans le dossier Éléments récupérables dans la boîte aux lettres de l’utilisateur.
+Notez que si la boîte aux lettres de l’utilisateur est placée en conservation légale ou a été attribuée à une stratégie de rétention, toutes les versions de la boîte aux lettres en question sont conservées jusqu’à ce que la période de rétention expire ou que la conservation soit retirée de la boîte aux lettres. Cela signifie que si un élément de boîte aux lettres est modifié en réponse à une demande de rectification corrélative à une DPC, une copie de l’élément d’origine (avant que les modifications ne soient apportées) est conservée et stockée dans un dossier masqué dans le dossier Éléments récupérables dans la boîte aux lettres de l’utilisateur.
 
 ### <a name="making-changes-to-content-in-onedrive-for-business-and-sharepoint-online"></a>Modification du contenu dans OneDrive Entreprise et SharePoint Online
 
 Les administrateurs ou les propriétaires des données peuvent modifier les documents, les listes et les pages SharePoint Online. Lorsque vous apportez des modifications au contenu SharePoint, gardez les points suivants à l’esprit :
 
--   Mettre à jour un document permet d’enregistrer une nouvelle version du document, contenant la révision. Les anciennes versions du document ne sont pas mises à jour. Cela signifie qu’il est possible que les données faisant l’objet d’une demande de rectification de DSR figurent toujours dans les anciennes versions du sujet. Notez que les anciennes versions d’un sujet peuvent être supprimées, puis supprimées définitivement d’Office 365. Consultez la section [Suppression de documents dans SharePoint Online et OneDrive Entreprise](#deleting-documents-in-sharepoint-online-and-onedrive-for-business) de ce guide.
+-   Mettre à jour un document permet d’enregistrer une nouvelle version du document, contenant la révision. Les anciennes versions du document ne sont pas mises à jour. Cela signifie qu’il est possible que les données faisant l’objet d’une demande de rectification corrélative à une DPC figurent toujours dans les anciennes versions du sujet. Notez que les anciennes versions d’un sujet peuvent être supprimées, puis supprimées définitivement d’Office 365. Consultez la section [Suppression de documents dans SharePoint Online et OneDrive Entreprise](#deleting-documents-in-sharepoint-online-and-onedrive-for-business) de ce guide.
 
--   Pour modifier entièrement un fichier SharePoint afin de supprimer toutes traces de la personne concernée du fichier, y compris toutes les versions du fichier et toutes les activités enregistrées et effectuées par la personne concernée, vous devez suivre les étapes suivantes :
+-   Pour modifier entièrement un fichier SharePoint afin de supprimer du fichier toutes traces de la personne concernée par le traitement des données, y compris toutes les versions du fichier et toutes les activités enregistrées et effectuées par la personne concernée par le traitement des données, vous devez suivre les étapes suivantes :
 
     1.  Télécharger une copie du fichier sur votre ordinateur local.
 
@@ -1535,9 +1535,9 @@ En ce qui concerne les données auxquelles l’utilisateur peut accéder via son
 
     - L’appartenance à un groupe de l’utilisateur, les messages ajoutés à un signet, les utilisateurs suivis et les sujets suivis. L’utilisateur peut modifier ces informations ; consultez l’article [Conseils pour rester organisé dans Yammer](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380).
 
-## <a name="responding-to-dsr-restriction-requests"></a>Réponse aux demandes de restriction de DSR
+## <a name="responding-to-dsr-restriction-requests"></a>Réponse aux demandes de restriction corrélatives aux DPC
 
-Voici les méthodes pour limiter le traitement de données dans Office 365 :
+Voici les méthodes pour restreindre le traitement de données dans Office 365 :
 
 - Supprimer une licence d’application Office 365 pour empêcher les utilisateurs d’accéder aux données via une application
 
@@ -1547,21 +1547,21 @@ Voici les méthodes pour limiter le traitement de données dans Office 365 :
 
 - Supprimer temporairement les données de SharePoint Online et OneDrive Entreprise et les conserver en local
 
-- Limiter temporairement tout accès à un site SharePoint Online
+- Restreindre temporairement tout accès à un site SharePoint Online
 
 - Empêcher un utilisateur de se connecter à Office 365
 
-Si votre organisation détermine ultérieurement qu’une restriction ne s’applique plus, vous pouvez mettre fin à la restriction en effectuant les étapes suivies pour appliquer la restriction dans l’ordre inverse, par exemple, réattribuer des licences, réactiver un service ou autoriser un utilisateur à se connecter à Office 365.
+Si votre organisation détermine ultérieurement qu’une restriction ne s’applique plus, vous pouvez mettre fin à celle-ci en effectuant à rebours les étapes suivies pour appliquer la restriction, par exemple, réattribuer des licences, réactiver un service ou autoriser un utilisateur à se connecter à Office 365.
 
 ### <a name="removing-the-license-for-an-office-365-application"></a>Retrait de la licence pour une application Office 365
 
-Comme indiqué précédemment, les licences pour toutes les applications Office 365 incluses dans l’abonnement Office 365 de votre organisation sont attribuées à tous les utilisateurs par défaut. Le cas échéant, pour restreindre l’accès aux données faisant l’objet d’une DS, un administrateur informatique peut utiliser le portail d’administration Office 365 pour désactiver temporairement la licence d’un utilisateur pour une application. Si un utilisateur tente ensuite d’utiliser l’application en question, il reçoit une notification ou un message de produit sans licence indiquant qu’il n’y a plus accès. Pour obtenir plus d’informations, consultez l’article [Retirer des licences à des utilisateurs dans Office 365 pour les entreprises](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
+Comme indiqué précédemment, les licences pour toutes les applications Office 365 incluses dans l’abonnement Office 365 de votre organisation sont attribuées à tous les utilisateurs par défaut. Le cas échéant, pour restreindre l’accès aux données faisant l’objet d’une DPC, un administrateur informatique peut utiliser le portail d’administration Office 365 pour désactiver temporairement la licence d’un utilisateur pour une application. Si un utilisateur tente ensuite d’utiliser l’application en question, il reçoit une notification ou un message de produit sans licence indiquant qu’il n’y a plus accès. Pour obtenir plus d’informations, consultez l’article [Retirer des licences à des utilisateurs dans Office 365 pour les entreprises](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
 
 **Remarques :**
 
-- Pour empêcher un utilisateur d’accéder à Yammer, vous devez d’abord [appliquer l’identité Office 365 d’un utilisateur Yammer](https://support.office.com/article/Enforce-office-365-identity-for-Yammer-users-008f940b-6bec-47fc-bcc6-9c6133467562), puis supprimer la licence de l’utilisateur Yammer.
+- Pour restreindre l’accès d’un utilisateur à Yammer, vous devez d’abord [appliquer l’identité Office 365 d’un utilisateur Yammer](https://support.office.com/article/Enforce-office-365-identity-for-Yammer-users-008f940b-6bec-47fc-bcc6-9c6133467562), puis supprimer la licence de l’utilisateur Yammer.
 
-- Pour les scénarios qui exploitent Power BI Embedded, vous pouvez restreindre l’accès à l’application du fournisseur de logiciels indépendants où figure le contenu.
+- Dans les scénarios impliquant Power BI Embedded, vous pouvez restreindre l’accès à l’application du fournisseur de logiciels indépendants où figure le contenu.
 
 ### <a name="preventing-users-from-accessing-their-onedrive-for-business-account"></a>Empêcher les utilisateurs d’accéder à leur compte OneDrive Entreprise
 
@@ -1569,16 +1569,16 @@ Retirer la licence SharePoint Online d’un utilisateur ne l’empêche pas d’
 
 ### <a name="turning-off-an-office-365-service"></a>Désactiver un service Office 365
 
-Une autre façon de traiter une demande de DSR pour limiter le traitement des données consiste à désactiver un service Office 365. Bien entendu, cette action a un impact sur tous les utilisateurs de l’ensemble de votre organisation, et empêche tout le monde d’utiliser le service ou d’accéder aux données dans le service.
+Une autre façon de traiter une DPC pour restreindre le traitement des données consiste à désactiver un service Office 365. Bien entendu, cette action a un impact sur tous les utilisateurs de l’ensemble de votre organisation, et empêche tout le monde d’utiliser le service ou d’accéder aux données dans le service.
 
-Pour désactiver un service, la meilleure façon consiste à utiliser Office 365 PowerShell et à supprimer la licence utilisateur correspondante de tous les utilisateurs de l’organisation. Cela aura pour effet d’empêcher tout le monde d’accéder aux données dans ce service. Pour obtenir des instructions détaillées, consultez l’article [Désactiver l’accès aux services Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell) et suivez les procédures pour désactiver les services Office 365 pour les utilisateurs appartenant à un même plan de licence.
+Pour désactiver un service, la meilleure façon consiste à utiliser Office 365 PowerShell et à supprimer la licence utilisateur correspondante de tous les utilisateurs de l’organisation. Cela aura pour effet de restreindre l’accès aux données de ce service pour tout le monde. Pour obtenir des instructions détaillées, consultez l’article [Désactiver l’accès aux services Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell) et suivez les procédures pour désactiver les services Office 365 pour les utilisateurs appartenant à un même plan de licence.
 
 > [!NOTE]
 > Pour Yammer, en plus de supprimer la licence Yammer des comptes d’utilisateur, vous devez également désactiver la capacité des utilisateurs à se connecter à Yammer avec les identifiants Yammer (en appliquant l’utilisation de leurs identifiants Office 365 lors de la connexion). Pour obtenir des instructions détaillées, consultez l’article [Désactiver l’accès à Yammer pour des utilisateurs Office 365](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a).
 
 ### <a name="temporarily-removing-data-from-sharepoint-online-or-onedrive-for-business-sites"></a>Suppression temporaire des données des sites SharePoint Online ou OneDrive Entreprise
 
-Une autre méthode pour limiter le traitement des données personnelles consiste à les supprimer temporairement d’Office 365 en réponse à une DSR. Lorsque votre organisation décide que la restriction ne s’applique plus, vous pouvez réimporter les données dans Office 365.
+Une autre méthode pour restreindre le traitement des données personnelles consiste à les supprimer temporairement d’Office 365 en réponse à une DPC. Lorsque votre organisation décide que la restriction ne s’applique plus, vous pouvez réimporter les données dans Office 365.
 
 Étant donné que la plupart des documents Office sont situés sur un site SharePoint Online ou OneDrive Entreprise, voici un processus pour supprimer des documents de sites, puis les réimporter.
 
@@ -1597,9 +1597,9 @@ Une autre méthode pour limiter le traitement des données personnelles consiste
 4.  Lorsque la restriction ne s’applique plus, la copie du document stocké en local peut être rechargée sur le site dans Office 365.
 
 > [!IMPORTANT] 
-> La procédure précédente ne fonctionnera pas si le document se trouve sur un site placé en conservation (avec l’une des fonctionnalités de rétention ou de conservation légale dans Office 365). Dans le cas où une demande de restriction pour une DSR est prioritaire sur une conservation légale, la conservation doit être retirée du site avant qu’un document ne puisse être supprimé définitivement. Par ailleurs, l’historique des documents pour les documents supprimés est éliminé définitivement.
+> La procédure précédente ne fonctionnera pas si le document se trouve sur un site placé en conservation (avec l’une des fonctionnalités de rétention ou de conservation légale dans Office 365). Dans le cas où une demande de restriction pour une DPC est prioritaire sur une conservation légale, la conservation doit être retirée du site avant qu’un document ne puisse être supprimé définitivement. Par ailleurs, l’historique des documents pour les documents supprimés est éliminé définitivement.
 
-### <a name="temporarily-restricting-access-to-sharepoint-online-sites"></a>Limiter temporairement tout accès aux sites SharePoint Online
+### <a name="temporarily-restricting-access-to-sharepoint-online-sites"></a>Restreindre temporairement tout accès aux sites SharePoint Online
 
 Un administrateur SharePoint Online peut empêcher temporairement tous les utilisateurs d’accéder à une collection de sites SharePoint Online en verrouillant la collection de sites en question (à l’aide de la commande **Set-SPOSite - LockState** dans SharePoint Online PowerShell). Cela permet d’empêcher les utilisateurs d’accéder à la collection de sites et au contenu ou aux données figurant sur le site. Si vous décidez ensuite que les utilisateurs doivent pouvoir accéder au site, l’administrateur peut déverrouiller le site. Consultez l’article [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) pour obtenir plus d’informations sur l’exécution de cette cmdlet PowerShell.
 
@@ -1607,7 +1607,7 @@ Un administrateur SharePoint Online peut empêcher temporairement tous les utili
 
 Un administrateur informatique peut également empêcher un utilisateur de se connecter à Office 365, ce qui empêcherait l’utilisateur d’accéder aux services en ligne Office 365 ou de traiter des données stockées dans Office 365. Consultez la section [Bloquer l’accès d’un ancien employé aux données Office 365](https://support.office.com/article/Remove-a-former-employee-from-Office-365-44d96212-4d90-4027-9aa9-a95eddb367d1).
 
-## <a name="part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365"></a>Partie 2 : Répondre aux DSR relatives aux informations générées par Office 365
+## <a name="part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365"></a>Partie 2 : Répondre aux DPC relatives aux informations générées par Office 365
 
 La suite de services Office 365 Microsoft inclut des services en ligne qui fournissent des informations aux utilisateurs et aux organisations ayant choisi de les utiliser.
 - Delve et MyAnalytics fournissent des informations à des utilisateurs individuels.
@@ -1675,7 +1675,7 @@ Les utilisateurs peuvent supprimer les informations suivantes dans Delve :
 MyAnalytics fournit des statistiques aux utilisateurs pour les aider à comprendre la manière dont ils organisent leur temps de travail. Pour aider vos utilisateurs à mieux comprendre les données qui leur sont présentées dans leur tableau de bord personnel et comment ces données sont calculées, orientez vos utilisateurs vers la rubrique d’aide [tableau de bord personnel MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard).
 
 #### <a name="access-and-export"></a>Consulter et exporter
-Si votre organisation utilise MyAnalytics, Microsoft génère des informations pour tous les utilisateurs, qu’ils disposent ou non d’une licence utilisateur MyAnalytics, pour fournir des résultats explicites à vos utilisateurs titulaires d’une licence. Toutes les informations de MyAnalytics proviennent des en-têtes d’e-mails et de réunions figurant dans la boîte aux lettres de l’utilisateur. Microsoft vous permet d’exporter des données que MyAnalytics utilise pour générer ces informations en utilisant l’outil de dossier de DSR dans le Centre de sécurité et conformité. Pour obtenir des instructions détaillées. Consultez la rubrique [Exportation de données à partir de MyAnalytics et le Service d’itinérance Office](https://docs.microsoft.com/office365/securitycompliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool#exporting-data-from-myanalytics-and-the-office-roaming-service).
+Si votre organisation utilise MyAnalytics, Microsoft génère des informations pour tous les utilisateurs, qu’ils disposent ou non d’une licence utilisateur MyAnalytics, pour fournir des résultats explicites à vos utilisateurs titulaires d’une licence. Toutes les informations de MyAnalytics proviennent des en-têtes d’e-mails et de réunions figurant dans la boîte aux lettres de l’utilisateur. Microsoft vous permet d’exporter des données que MyAnalytics utilise pour générer ces informations en utilisant l’outil de dossier de DPC dans le Centre de sécurité et conformité. Pour obtenir des instructions détaillées. Consultez la rubrique [Exportation de données à partir de MyAnalytics et le Service d’itinérance Office](https://docs.microsoft.com/office365/securitycompliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool#exporting-data-from-myanalytics-and-the-office-roaming-service).
 
 En plus des données que vous pouvez exporter à l’aide du Centre de sécurité et conformité, les utilisateurs titulaires d’une licence MyAnalytics peuvent accéder au [tableau de bord MyAnalytics](https://delve.office.com) lorsqu’ils sont connectés à leur compte Office 365 afin d’afficher les informations générées sur la façon dont ils organisent leur temps de travail. Ils peuvent prendre des captures d’écran des informations MyAnalytics s’ils souhaitent avoir des copies permanentes de leurs informations.
 
@@ -1686,7 +1686,7 @@ Toutes les informations générées par MyAnalytics sont extraites des élément
 
 #### <a name="restrict"></a>Restreindre
 
-Pour limiter le traitement pour un utilisateur spécifique, vous pouvez choisir de le déconnecter de MyAnalytics. Pour découvrir comment procéder, consultez la section relative à la [configuration des paramètres utilisateur MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-mya-user-settings).
+Pour restreindre le traitement pour un utilisateur spécifique, vous pouvez choisir de le déconnecter de MyAnalytics. Pour découvrir comment procéder, consultez la section relative à la [configuration des paramètres utilisateur MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-mya-user-settings).
 
 #### <a name="delete"></a>Supprimer
 
@@ -1696,11 +1696,11 @@ Tout le contenu de la boîte aux lettres, y compris les données de MyAnalytics,
 
 Workplace Analytics permet aux organisations d’enrichir les données Office 365 avec leurs propres données métiers pour obtenir des informations sur la productivité organisationnelle, les modèles de collaboration et l’implication des employés. [Cet article](https://docs.microsoft.com/workplace-analytics/overview/privacy-and-data-access) décrit le contrôle détenu par votre organisation sur les données traitées par Workplace Analytics et ceux qui ont accès à ces données.
 
-Pour vous aider avec les DSR dans Workplace Analytics : 
+Pour vous aider avec les DPC dans le service Analyse du temps de travail : 
 
 1. Déterminez d’abord si votre organisation utilise Workplace Analytics. Pour obtenir plus d’informations sur la façon de procéder, consultez l’article [Attribuer des licences aux utilisateurs dans Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users). Si votre organisation n’utilise pas Workplace Analytics, il n’existe aucune action supplémentaire.
 
-2. Si votre organisation utilise Workplace Analytics, identifiez les membres de votre organisation ayant reçu le rôle d’administrateur de Workplace Analytics. Vous devez également déterminer si la boîte aux lettres de la personne concernée fait l’objet d’une licence pour Workplace Analytics. Le cas échéant, demandez à votre administrateur Workplace Analytics de contacter le Support Microsoft dans le cadre du traitement des DSR suivantes. 
+2. Si votre organisation utilise le service Analyse du temps de travail, identifiez les membres de votre organisation ayant reçu le rôle d’administrateur du service Analyse du temps de travail. Vous devez également déterminer si la boîte aux lettres de la personne concernée par le traitement des données fait l’objet d’une licence pour le service Analyse du temps de travail. Le cas échéant, demandez à votre administrateur Analyse du temps de travail de contacter le Support Microsoft dans le cadre du traitement des DPC suivantes. 
 
 #### <a name="access-and-export"></a>Consulter et exporter
 
@@ -1711,22 +1711,22 @@ Les informations indiquées dans les rapports Workplace Analytics que vous avez 
 Comme expliqué ci-dessus, Workplace Analytics utilise des données Office 365 en combinaison avec les données organisationnelles que vous fournissez pour générer des rapports pertinents pour vous. Les données Office 365 ne peuvent pas être rectifiées : elles reflètent les activités de courrier et le calendrier d’un utilisateur. Cependant, les données organisationnelles que vous avez chargées dans Workplace Analytics afin de générer le rapport peuvent être rectifiées. Pour ce faire, vous devez corriger les données source, les télécharger et réexécuter le rapport pour générer un nouveau rapport Workplace Analytics.
 
 #### <a name="restrict"></a>Restreindre
-Pour limiter le traitement pour un utilisateur spécifique, vous pouvez supprimer sa licence Workplace Analytics.
+Pour restreindre le traitement pour un utilisateur spécifique, vous pouvez supprimer sa licence Analyse du temps de travail.
 
 #### <a name="delete"></a>Supprimer
-Si une personne concernée souhaite être supprimée d’un rapport Workplace Analytics ou d’un ensemble de rapports, supprimez le rapport. Il est de votre responsabilité de supprimer les utilisateurs de toutes les données organisationnelles que vous avez utilisées pour générer le rapport, et de recharger les données. Toutes les données relatives à l’utilisateur sont supprimées lorsqu’un compte d’utilisateur est « supprimé définitivement » d’Azure Active Directory. 
+Si une personne concernée par le traitement des données souhaite être supprimée d’un rapport du service Analyse du temps de travail ou d’un ensemble de rapports, supprimez le rapport. Il est de votre responsabilité de supprimer les utilisateurs de toutes les données organisationnelles que vous avez utilisées pour générer le rapport, et de recharger les données. Toutes les données relatives à l’utilisateur sont supprimées lorsqu’un compte d’utilisateur est « supprimé définitivement » d’Azure Active Directory. 
 
-Pour supprimer les données personnelles d’un objet de données, un administrateur général Office 365 peut procéder comme suit : 
+Pour supprimer les données personnelles d’une personne concernée par le traitement des données, un administrateur général Office 365 peut procéder comme suit : 
 
-1. Supprimer la licence Workplace Analytique à partir de l’objet de données.
+1. Supprimez la licence Analyse du temps de travail depuis le compte de la personne concernée par le traitement des données.
 
-2. Supprimer l’entrée Azure Active Directory (AAD) pour l’objet de données. (Pour plus d’informations, voir [supprimer un utilisateur](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)
+2. Supprimer l’entrée Azure Active Directory (AAD) pour la personne concernée par le traitement des données. (Pour plus d’informations, consultez la section [Supprimer un utilisateur](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)
 
-3. Contacter le support technique pour qu’ils ouvrent un ticket pour une demande de droit de suppression données utilisateur (DSR). Dans ce ticket, identifier l’objet de données à l’aide de leur nom d’utilisateur principal (UPN).
+3. Contactez l’équipe du support technique pour qu’elle ouvre un ticket pour une demande de la personne concernée (DPC). Dans ce ticket, identifiez la personne concernée par le traitement des données à l’aide de son nom d’utilisateur principal (UPN).
 
-4. Exportez une copie des données RH à partir du système RH de l’entreprise (voir [Exporter des données](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data)), supprimer les informations de l’objet de données de ce fichier de données RH, puis charger le fichier de données RH modifié au format .csv dans Workplace Analytics (voir [Charger données organisationnelles](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
+4. Exportez une copie des données RH à partir du système RH de l’entreprise (voir [Exporter des données](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data)), supprimez de ce fichier de données RH les informations de la personne concernée par le traitement des données, puis chargez le fichier de données RH modifié au format .csv dans le service Analyse du temps de travail (voir [Charger données organisationnelles](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
 
-## <a name="part-3-responding-to-dsrs-for-system-generated-logs"></a>Partie 3 : Répondre aux demandes d’accès aux données des personnes concernées pour les journaux générés par le système
+## <a name="part-3-responding-to-dsrs-for-system-generated-logs"></a>Partie 3 : Répondre aux demandes d’accès aux données des personnes concernées par le traitement des données pour les journaux générés par le système
 
 Microsoft permet également de consulter, d’exporter et de supprimer les journaux générés par le système qui peuvent être considérés personnels en vertu de la définition large des « données personnelles » du RGPD. Voici des exemples de journaux générés par le système qui peuvent être considérés comme personnels en vertu du RGPD :
 
@@ -1736,7 +1736,7 @@ Microsoft permet également de consulter, d’exporter et de supprimer les journ
 
 -   Données générées par les produits et services comme étant un produit des fonctionnalités du système et de l’interaction par les utilisateurs ou d’autres systèmes
 
-Notez qu’il n’est pas possible de limiter ni de rectifier les données contenues dans des journaux générés par le système. Les données contenues dans des journaux générés par le système forment des actions factuelles effectuées dans le cloud Microsoft et les données de diagnostic, et des modifications apportées à ces données compromettraient l’enregistrement historique des actions, augmentant ainsi les risques de fraude et de sécurité.
+Notez qu’il n’est pas possible de restreindre ni de rectifier les données contenues dans des journaux générés par le système. Les données contenues dans des journaux générés par le système forment des actions factuelles effectuées dans le cloud Microsoft et les données de diagnostic, et des modifications apportées à ces données compromettraient l’enregistrement historique des actions, augmentant ainsi les risques de fraude et de sécurité.
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>Consultation et exportation des journaux générés par le système
 
@@ -1789,7 +1789,7 @@ Les éléments suivants récapitulent la consultation et l’exportation des jou
 > [!NOTE]
 > Certaines fonctionnalités empêchent d’exporter ou de supprimer des journaux générés par le système contenant des informations personnelles afin de préserver l’intégrité de ces informations pour des raisons de sécurité et d’audit.
 
-Les données relatives à l’utilisation de produits et de services pour certains des services de Microsoft les plus souvent utilisés, tels que Exchange Online, SharePoint Online, Skype Entreprise, Yammer et les groupes Office 365 peuvent également être récupérées en effectuant une recherche dans le journal d’audit Office 365 dans le Centre de sécurité et conformité. Pour obtenir plus d’informations, consultez la section [Utiliser l’outil de recherche de journal d’audit Office 365 lors d’examens de DSR](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) dans l’annexe A. Utiliser le journal d’audit peut vous être utile, car il est possible d’attribuer des autorisations à d’autres personnes de votre organisation (comme votre responsable de la mise en conformité) pour rechercher le journal d’audit afin d’accéder à ces données.
+Les données relatives à l’utilisation de produits et de services pour certains des services de Microsoft les plus souvent utilisés, tels que Exchange Online, SharePoint Online, Skype Entreprise, Yammer et les groupes Office 365 peuvent également être récupérées en effectuant une recherche dans le journal d’audit Office 365 dans le Centre de sécurité et conformité. Pour obtenir plus d’informations, consultez la section [Utiliser l’outil de recherche de journal d’audit Office 365 lors d’examens de DPC](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) dans l’annexe A. Utiliser le journal d’audit peut vous être utile, car il est possible d’attribuer des autorisations à d’autres personnes de votre organisation (comme votre responsable de la mise en conformité) pour rechercher le journal d’audit afin d’accéder à ces données.
 
 #### <a name="national-clouds"></a>Clouds nationaux
 Un administrateur informatique général doit procéder comme suit pour exporter les données de journaux générés par le système dans les clouds nationaux suivants :
@@ -1807,7 +1807,7 @@ La suppression définitive d’un compte d’utilisateur permet d’éliminer le
 
 La suppression d’un compte d’utilisateur ne supprime pas les journaux générées par le système pour Yammer et Kaizala. Pour supprimer les données de ces applications, voir une des opérations suivantes :
 
-- Yammer : [gérer les demandes RGPD objet de données dans Yammer Entreprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
+- Yammer : [Gérer les demandes de personnes concernées par des données liées au RGPD dans Yammer Entreprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - Kaizala : [Exporter ou supprimer les données organisationnelles d’un utilisateur dans Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
 
 #### <a name="national-clouds"></a>Clouds nationaux
@@ -1820,54 +1820,54 @@ Un administrateur informatique général doit procéder comme suit pour supprime
 
 - Office 365 géré par 21Vianet (Chine) : envoyez une demande au support Microsoft par le biais du portail d’administration Office 365 à cette [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Accédez à **Commerce**, puis sélectionnez **Abonnement** -> **Confidentialité** -> **RGPD** et saisissez les informations requises.
 
-## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>Partie 4 : Ressources supplémentaires pour vous aider avec les DSR
+## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>Partie 4 : Ressources supplémentaires pour vous aider avec les DPC
 
-### <a name="dsr-guides-for-other-microsoft-enterprise-services"></a>Guide relatif aux DSR pour les autres services d’entreprise Microsoft
+### <a name="dsr-guides-for-other-microsoft-enterprise-services"></a>Guide relatif aux DPC pour les autres services d’entreprise Microsoft
 
-Ce guide a été conçu pour expliquer comment trouver et traiter des données personnelles afin de répondre à des DSR lors de l’utilisation des produits, des services et des outils d’administration Office 365. Accédez au portail [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) pour consulter des guides semblables pour d’autres services d’entreprise Microsoft.
+Ce guide a été conçu pour expliquer comment trouver et traiter des données personnelles afin de répondre à des DPC lors de l’utilisation des produits, des services et des outils d’administration Office 365. Accédez au portail [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) pour consulter des guides semblables pour d’autres services d’entreprise Microsoft.
 
 ### <a name="microsoft-support"></a>Support technique Microsoft
-Les « données de support » sont les données que vous et vos utilisateurs fournissez à Microsoft si votre organisation ou vos utilisateurs contactent Microsoft en vue de recevoir un support technique pour Office 365 ou d’autres produits et services Microsoft (par exemple, pour corriger un comportement inattendu du produit). Certaines de ces données peuvent contenir des données personnelles. Pour obtenir plus d’informations, consultez l’article [Demandes des personnes concernées du Support Microsoft et des services professionnels concernant le RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services).
+Les « données de support » sont les données que vous et vos utilisateurs fournissez à Microsoft si votre organisation ou vos utilisateurs contactent Microsoft en vue de recevoir un support technique pour Office 365 ou d’autres produits et services Microsoft (par exemple, pour corriger un comportement inattendu du produit). Certaines de ces données peuvent contenir des données personnelles. Pour obtenir plus d’informations, consultez l’article [Demandes des personnes concernées par le traitement des données du Support Microsoft et des services professionnels concernant le RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services).
 
-### <a name="product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller"></a>Produits et services authentifiés avec un ID d’organisation pour lesquels Microsoft est responsable du traitement des données
+### <a name="product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller"></a>Produits et services authentifiés avec un ID d’organisation pour lesquels Microsoft est l’entité de contrôle des données
 
-Les parties 1 à 3 de ce guide couvrent les produits et services pour lesquels Microsoft agit en qualité de sous-traitant des données pour votre organisation. Par conséquent, la fonctionnalité de DSR est mise à disposition de votre administrateur client. Il existe de nombreuses circonstances où les utilisateurs de votre organisation peuvent utiliser leur compte professionnel ou scolaire (également appelé « Azure Active Directory ID » ou « AAD ») pour se connecter à des produits et à des services pour lesquels Microsoft agit en qualité de responsable du traitement des données. Pour tous ces produits et services, vos utilisateurs doivent présenter leurs propres demandes en tant que personne concernée directement à Microsoft, qui répondra aux demandes directement à l’utilisateur. Notez que, par conception, les produits et les services de stockage de contenu créé par l’utilisateur permettent aux utilisateurs de consulter, d’exporter, de rectifier et de supprimer le contenu qu’ils ont créé dans le cadre de la fonctionnalité fondamentale des produits. Voici des exemples de scénarios où cela peut s’appliquer :
+Les parties 1 à 3 de ce guide couvrent les produits et services pour lesquels Microsoft agit en qualité de responsable du traitement des données pour votre organisation. Par conséquent, la fonctionnalité de DPC est mise à disposition de votre administrateur client. Il existe de nombreuses circonstances où les utilisateurs de votre organisation peuvent utiliser leur compte professionnel ou scolaire (également appelé « Azure Active Directory ID » ou « AAD ») pour se connecter à des produits et à des services pour lesquels Microsoft agit en qualité d’entité de contrôle des données. Pour tous ces produits et services, vos utilisateurs doivent présenter leurs propres demandes en tant que personnes concernées par le traitement des données directement à Microsoft, qui répondra aux demandes directement à l’utilisateur. Notez que, par conception, les produits et les services de stockage de contenu créé par l’utilisateur permettent aux utilisateurs de consulter, d’exporter, de rectifier et de supprimer le contenu qu’ils ont créé dans le cadre de la fonctionnalité fondamentale des produits. Voici des exemples de scénarios où cela peut s’appliquer :
 
-- **Services en ligne connectés facultatifs** : Office 365 ProPlus met certains services en ligne connectés facultatifs à disposition de l’utilisateur. La liste de ces services et des contrôles utilisateur connexes est indiquée[ici](https://support.office.com/article/microsoft-s-other-connected-services-92c234f1-dc91-4dc1-925d-6c90fc3816d8). Vous pouvez décider d’autoriser vos utilisateurs finaux à utiliser ces services. Pour obtenir plus d’informations, consultez l’article [Comment les administrateurs peuvent gérer les services du contrôleur dans Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/manage-controller-services-office-365-proplus). Dans la mesure où ces services facultatifs traitent des données personnelles, Microsoft agit en qualité de responsable du traitement des données pour ces services.
+- **Services en ligne connectés facultatifs** : Office 365 ProPlus met certains services en ligne connectés facultatifs à disposition de l’utilisateur. La liste de ces services et des contrôles utilisateur connexes est indiquée[ici](https://support.office.com/article/microsoft-s-other-connected-services-92c234f1-dc91-4dc1-925d-6c90fc3816d8). Vous pouvez décider d’autoriser vos utilisateurs finaux à utiliser ces services. Pour obtenir plus d’informations, consultez l’article [Comment les administrateurs peuvent gérer les services d’entité de contrôle dans Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/manage-controller-services-office-365-proplus). Dans la mesure où ces services facultatifs traitent des données personnelles, Microsoft agit en qualité d’entité de contrôle des données pour ces services.
 
-- **Commentaires des utilisateurs** : si vos utilisateurs décident de transmettre des commentaires sur les produits et services Microsoft, Microsoft est responsable du traitement des données pour ces commentaires dans la mesure où ils contiennent des données personnelles. Microsoft traite toutes les demandes d’accès aux données personnelles figurant dans les commentaires collectés par Microsoft (y compris les commentaires gérés par les sous-traitants de Microsoft), sauf dans les cas où Microsoft a demandé aux utilisateurs de ne pas inclure de données personnelles pendant le processus de collecte des commentaires. Exceptions : si Microsoft a demandé aux utilisateurs de ne pas inclure de données personnelles pendant le processus de collecte des commentaires, Microsoft se base sur cette instruction et part du principe qu’aucune donnée personnelle n’a été fournie. Les utilisateurs ayant créé un compte séparé auprès de fournisseurs de services de commentaires tiers doivent envoyer leur demande d’accès aux données personnelles directement à ces fournisseurs.
+- **Commentaires des utilisateurs** : si vos utilisateurs décident de transmettre des commentaires sur les produits et services Microsoft, Microsoft assume le rôle d’entité de contrôle des données pour ces commentaires dans la mesure où ils contiennent des données personnelles. Microsoft traite toutes les demandes d’accès aux données personnelles figurant dans les commentaires collectés par Microsoft (y compris les commentaires gérés par les sous-traitants de Microsoft), sauf dans les cas où Microsoft a demandé aux utilisateurs de ne pas inclure de données personnelles pendant le processus de collecte des commentaires. Exceptions : si Microsoft a demandé aux utilisateurs de ne pas inclure de données personnelles pendant le processus de collecte des commentaires, Microsoft se base sur cette instruction et part du principe qu’aucune donnée personnelle n’a été fournie. Les utilisateurs ayant créé un compte distinct auprès de fournisseurs de services de commentaires tiers doivent envoyer leur demande d’accès aux données personnelles directement à ces fournisseurs.
 
-- **Authentification Windows via un compte professionnel ou scolaire**: si votre organisation a acheté des licences de Windows et que vos utilisateurs s’authentifient à Windows fourni par l’organisation avec leur compte professionnel ou scolaire, Microsoft agit en qualité de responsable du traitement des données. Pour obtenir plus d’informations, consultez l’article [Demandes des personnes concernées pour Windows concernant le RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-windows).
+- **Authentification Windows via un compte professionnel ou scolaire**: si votre organisation a acheté des licences de Windows et que vos utilisateurs s’authentifient à Windows fourni par l’organisation avec leur compte professionnel ou scolaire, Microsoft agit en qualité d’entité de contrôle des données. Pour obtenir plus d’informations, consultez l’article [Demandes des personnes concernées pour Windows concernant le RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-windows).
 
-- **Produits ou services acquis par l’utilisateur**: si vous autorisez vos utilisateurs, agissant à titre personnel, à acquérir des produits ou des services Microsoft qui utilisent AAD pour l’authentification, par exemple, des compléments Office ou des applications disponibles dans une Boutique Microsoft, Microsoft peut agir en tant que responsable du traitement des données. Pour ces produits ou services Microsoft, les utilisateurs doivent contacter Microsoft directement pour toute demande d’accès à leurs données personnelles.
+- **Produits ou services acquis par l’utilisateur**: si vous autorisez vos utilisateurs, agissant à titre personnel, à acquérir des produits ou des services Microsoft qui utilisent AAD pour l’authentification, par exemple, des compléments Office ou des applications disponibles dans une Boutique Microsoft, Microsoft peut agir en tant qu’entité de contrôle des données. Pour ces produits ou services Microsoft, les utilisateurs doivent contacter Microsoft directement pour toute demande d’accès à leurs données personnelles.
 
 > [!IMPORTANT]
-> Si vous supprimez un utilisateur activé via Azure Active Directory, votre (ancien) utilisateur ne peut plus se connecter aux produits ou aux services dont il dépendait antérieurement pour un compte professionnel ou scolaire. Par ailleurs, Microsoft n’est plus en mesure d’authentifier l’utilisateur à l’origine d’une demande d’accès aux données personnelles pour les produits ou les services pour lesquels Microsoft agit en qualité de responsable du traitement des données. Si vous souhaitez autoriser un utilisateur à créer des demandes d’accès aux données personnelles pour ces services, il est important de demander à vos utilisateurs de le faire avant de supprimer le compte AAD de l’utilisateur.
+> Si vous supprimez un utilisateur activé via Azure Active Directory, votre (ancien) utilisateur ne peut plus se connecter aux produits ou aux services dont il dépendait antérieurement pour un compte professionnel ou scolaire. Par ailleurs, Microsoft n’est plus en mesure d’authentifier l’utilisateur à l’origine d’une demande d’accès aux données personnelles pour les produits ou les services pour lesquels Microsoft agit en qualité d’entité de contrôle des données. Si vous souhaitez autoriser un utilisateur à créer des demandes d’accès aux données personnelles pour ces services, il est important de demander à vos utilisateurs de le faire avant de supprimer le compte AAD de l’utilisateur.
 
 ### <a name="personal-accounts"></a>Comptes personnels
-Si vos utilisateurs ont utilisé des comptes Microsoft (par exemple, des comptes personnels) pour acquérir des produits et des services Microsoft pour leur propre utilisation, et pour lesquels Microsoft agit en qualité de responsable du traitement des données, ils peuvent créer des demandes de DSR à l’aide du [Tableau de bord de confidentialité de Microsoft](https://account.microsoft.com/account/privacy).
+Si vos utilisateurs ont utilisé des comptes Microsoft (par exemple, des comptes personnels) pour acquérir des produits et des services Microsoft pour leur propre utilisation, et pour lesquels Microsoft agit en qualité d’entité de contrôle des données, ils peuvent créer des DPC à l’aide du [Tableau de bord de confidentialité de Microsoft](https://account.microsoft.com/account/privacy).
 
 ### <a name="third-party-products"></a>Produits tiers
 
 Si votre organisation ou vos utilisateurs, agissant à titre personnel, ont acquis des produits ou des services de tiers et utilisent leur compte professionnel ou scolaire Microsoft pour l’authentification, les demandes des personnes concernées doivent être redirigées vers le tiers applicable.
 
-## <a name="appendix-a-preparing-for-dsr-investigations"></a>Annexe A : Préparation des examens de DSR
+## <a name="appendix-a-preparing-for-dsr-investigations"></a>Annexe A : Préparation des examens de DPC
 
-Pour vous aider à préparer votre organisation à effectuer des examens de DSR à l’aide des services Office 365, prenez en compte les recommandations suivantes :
+Pour vous aider à préparer votre organisation à effectuer des examens de DPC à l’aide des services Office 365, prenez en compte les recommandations suivantes :
 
-- Utiliser l’outil de cas eDiscovery de DSR dans le Centre de conformité et sécurité Office 365 pour gérer les examens de DSR
+- Utiliser l’outil de cas eDiscovery de DPC dans le Centre de conformité et sécurité Office 365 pour gérer les examens de DPC
 
 - Configurer des limites de conformité pour restreindre l’étendue des recherches de contenu
 
-- Utiliser l’outil de recherche de journal d’audit Office 365 lors d’examens de DSR
+- Utiliser l’outil de recherche de journal d’audit Office 365 lors d’examens de DPC
 
-### <a name="use-the-dsr-case-tool-to-manage-dsr-investigations"></a>Utiliser l’outil de cas de DSR pour gérer les examens de DSR
+### <a name="use-the-dsr-case-tool-to-manage-dsr-investigations"></a>Utiliser l’outil de dossier de DPC pour gérer les examens de DPC
 
-Nous vous recommandons d’utiliser l’outil de cas de DSR dans le Centre de sécurité et conformité pour gérer les examens de DSR. En utilisant l’outil de cas de DSR, vous pouvez effectuer les actions suivantes :
+Nous vous recommandons d’utiliser l’outil de dossier de DPC dans le Centre de sécurité et conformité pour gérer les examens de DPC. En utilisant l’outil de cas de DPC, vous pouvez effectuer les actions suivantes :
 
-- Créer un dossier distinct pour chaque examen de DSR.
+- Créer un dossier distinct pour chaque examen de DPC.
 
-- Utiliser l’option intégrée pour rechercher tout le contenu lié à la personne concernée spécifique. Lorsque vous créez un dossier et commencez la recherche, les emplacements de contenu suivants sont consultés :
+- Utiliser l’option intégrée pour rechercher tout le contenu lié à une personne concernée par le traitement des données. Lorsque vous créez un dossier et commencez la recherche, les emplacements de contenu suivants sont consultés :
     
    - Toutes les boîtes aux lettres de votre organisation (y compris les boîtes aux lettres associées à Microsoft Teams et aux Groupes Office 365)
     
@@ -1879,26 +1879,26 @@ Nous vous recommandons d’utiliser l’outil de cas de DSR dans le Centre de s�
 
 - Réviser la requête de recherche par défaut, puis relancer la recherche pour limiter les résultats de recherche.
 
-- Contrôler les personnes autorisées à accéder au cas en ajoutant des personnes en tant que membres du cas ; seuls les membres peuvent accéder au cas et ils pourront consulter uniquement leurs cas dans la liste des cas sur la page des cas de DSR dans le Centre de sécurité et conformité. En outre, vous pouvez attribuer des autorisations différentes à chaque membre du même cas. Par exemple, vous pouvez autoriser certains membres à n’afficher que le cas et les résultats d’une recherche de contenu et autoriser d’autres membres à créer des recherches et à exporter les résultats de recherche.
+- Contrôlez les personnes autorisées à accéder au dossier en ajoutant des personnes en tant que membres du dossier. Seuls les membres peuvent accéder au dossier et ils pourront consulter uniquement leurs dossiers dans la liste des dossiers sur la page des dossiers de DPC dans le Centre de sécurité et conformité. En outre, vous pouvez attribuer des autorisations différentes à chaque membre du même dossier. Par exemple, vous pouvez autoriser certains membres à n’afficher que le dossier et les résultats d’une recherche de contenu et autoriser d’autres membres à créer des recherches et à exporter les résultats de recherche.
 
-- Créer des tâches d’exportation pour exporter les résultats de recherche en réponse à une demande d’exportation de DSR. Vous pouvez exporter tout le contenu renvoyé par la recherche de contenu. En outre, d’autres données Office 365 relatives à la personne concernée sont également exportées.
+- Créez des tâches d’exportation pour exporter les résultats de recherche en réponse à une demande d’exportation corrélative à une DPC. Vous pouvez exporter tout le contenu renvoyé par la recherche de contenu. En outre, d’autres données Office 365 relatives à la personne concernée par le traitement des données sont également exportées.
 
-- Créer des tâches d’exportation pour exporter les résultats de recherche en réponse à une demande d’exportation de DSR. Vous pouvez exporter tout le contenu renvoyé par la recherche de contenu. De plus, vous pouvez exporter les journaux générés par le système pour My Analytics et le Service d’itinérance Office.
+- Créez des tâches d’exportation pour exporter les résultats de recherche en réponse à une demande d’exportation corrélative à une DPC. Vous pouvez exporter tout le contenu renvoyé par la recherche de contenu. De plus, vous pouvez exporter les journaux générés par le système pour MyAnalytics et le Service d’itinérance Office.
 
-- Supprimer des dossiers une fois le processus d’examen de DSR terminé. Cette action permet de supprimer toutes les recherches de contenu et d’exporter des tâches associées au dossier.
+- Supprimer des dossiers une fois le processus d’examen des DPC terminé. Cette action permet de supprimer toutes les recherches de contenu et d’exporter des tâches associées au dossier.
 
-Pour savoir comment utiliser les cas de demandes d’accès aux données personnelles, consultez l’article relatif à la [gestion des demandes d’accès aux données personnelles selon le RGPD avec l’outil des cas de demande dans le Centre de sécurité et conformité Office 365](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c).
+Pour savoir comment utiliser les dossiers de demandes d’accès aux données personnelles, consultez l’article [Gérer les demandes des personnes associées aux données RGPD avec l’outil de dossier de DPC dans le Centre de sécurité et conformité Office 365](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c).
 
 > [!IMPORTANT]
-> Un administrateur eDiscovery peut afficher et gérer tous les dossiers de demande de DSR dans votre organisation. Pour en savoir plus sur les différents rôles liés à eDiscovery, consultez la section relative à l’[affectation des autorisations eDiscovery à des membres de cas potentiels](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions).
+> Un administrateur eDiscovery peut afficher et gérer tous les dossiers de DPC dans votre organisation. Pour en savoir plus sur les différents rôles liés à eDiscovery, consultez la section relative à l’[affectation des autorisations eDiscovery à des membres de dossiers potentiels](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions).
 
 ### <a name="set-up-compliance-boundaries-to-limit-the-scope-of-content-searches"></a>Configurer des limites de conformité pour restreindre l’étendue des recherches de contenu
 
-Les limites de conformité sont implémentées à l’aide des fonctionnalités de filtrage d’autorisations de recherche dans le Centre de sécurité et conformité. Les limites de conformité créent des limites de recherche logique au sein d’une organisation qui limite/contrôle les emplacements de contenu (par exemple, les boîtes aux lettres Exchange Online et les sites SharePoint Online) dans lesquels un administrateur informatique ou un responsable de la mise en conformité peut effectuer une recherche. Les limites de conformité sont utiles pour les organisations multinationales qui doivent respecter des frontières géographiques, les organisations gouvernementales qui ont besoin de séparer différentes agences et les organisations commerciales réparties en divisions ou en services. Pour ces scénarios, les limites de conformité peuvent être utilisées dans les examens de DSR pour limiter les boîtes aux lettres et les sites dans lesquels les personnes concernées par cet examen peuvent effectuer une recherche.
+Les limites de conformité sont implémentées à l’aide des fonctionnalités de filtrage d’autorisations de recherche dans le Centre de sécurité et conformité. Les limites de conformité créent des limites de recherche logique au sein d’une organisation qui limite/contrôle les emplacements de contenu (par exemple, les boîtes aux lettres Exchange Online et les sites SharePoint Online) dans lesquels un administrateur informatique ou un responsable de la mise en conformité peut effectuer une recherche. Les limites de conformité sont utiles pour les organisations multinationales qui doivent respecter des frontières géographiques, les organisations gouvernementales qui ont besoin de séparer différentes agences et les organisations commerciales réparties en divisions ou en services. Pour ces scénarios, les limites de conformité peuvent être utilisées dans les examens de DPC pour restreindre les boîtes aux lettres et les sites dans lesquels les personnes concernées par cet examen peuvent effectuer une recherche.
 
 Vous pouvez utiliser des limites de conformité de concert avec des cas eDiscovery pour limiter les emplacements de contenu pouvant être consultés dans le cadre d’un examen aux emplacements figurant exclusivement au sein de l’agence ou de la division.
 
-Voici une vue d’ensemble de la méthode d’implémentation des limites de conformité (de concert avec des cas eDiscovery) dans le cadre d’examens de DSR.
+Voici une vue d’ensemble de la méthode d’implémentation des limites de conformité (de concert avec des cas eDiscovery) dans le cadre d’examens de DPC.
 
 1. Choisissez les agences de votre organisation à désigner comme limite de conformité.
 
@@ -1909,15 +1909,15 @@ Voici une vue d’ensemble de la méthode d’implémentation des limites de con
 
 4. Créez un groupe de rôles d’administrateur dans le Centre de sécurité et conformité Office 365 pour chaque limite de conformité. Nous vous recommandons de créer ces groupes de rôles en copiant le groupe de rôles du gestionnaire eDiscovery intégré et en supprimant tous les rôles, le cas échéant.
 
-5. Ajoutez des membres à chacun des groupes de rôles spécifiques en tant que gestionnaires eDiscovery. Les membres sont les personnes responsables de l’examen et de la résolution des DSR. Ce sont généralement des administrateurs informatiques, des responsables de confidentialité de données, des responsables de conformité et des représentants des ressources humaines.
+5. Ajoutez des membres à chacun des groupes de rôles spécifiques en tant que gestionnaires eDiscovery. Les membres sont les personnes responsables de l’examen et de la résolution des DPC. Ce sont généralement des administrateurs informatiques, des responsables de confidentialité de données, des responsables de conformité et des représentants des ressources humaines.
 
 6. Créez un filtre d’autorisations de recherche pour chaque limite de conformité afin que les membres du groupe de rôles d’administrateurs correspondant puissent rechercher uniquement les boîtes aux lettres et les sites pour les utilisateurs compris dans cette agence/limite de conformité. Le filtre d’autorisations de recherche autorise les membres du groupe de rôles correspondant à rechercher uniquement les emplacements de contenu avec la valeur d’attribut d’un objet utilisateur qui correspond à l’agence/la limite de conformité.
 
 Pour obtenir des instructions étape par étape, consultez l’article relatif à la [configuration des limites de conformité pour les examens eDiscovery dans Office 365](https://support.office.com/article/1b45c82f-26c8-44fb-9f3b-b45436fe2271).
 
-### <a name="use-the-office-365-audit-log-search-tool-in-dsr-investigations"></a>Utiliser l’outil de recherche de journal d’audit Office 365 lors d’examens de DSR
+### <a name="use-the-office-365-audit-log-search-tool-in-dsr-investigations"></a>Utiliser l’outil de recherche de journal d’audit Office 365 lors d’examens de DPC
 
-Les administrateurs informatiques peuvent utiliser l’outil de recherche de journal d’audit dans le Centre de sécurité et conformité pour identifier des documents, des fichiers et d’autres ressources Office 365 que les utilisateurs ont créés, consultés, modifiés ou supprimés. Rechercher ce type d’activité peut être utile dans le cadre d’examens de DSR. Par exemple, dans SharePoint Online et OneDrive Entreprise, les événements d’audit sont consignés lorsque des utilisateurs effectuent les activités suivantes :
+Les administrateurs informatiques peuvent utiliser l’outil de recherche de journal d’audit dans le Centre de sécurité et conformité pour identifier des documents, des fichiers et d’autres ressources Office 365 que les utilisateurs ont créés, consultés, modifiés ou supprimés. Rechercher ce type d’activité peut être utile dans le cadre d’examens de DPC. Par exemple, dans SharePoint Online et OneDrive Entreprise, les événements d’audit sont consignés lorsque des utilisateurs effectuent les activités suivantes :
 
 - Accès à un fichier
 - Modification d’un fichier
@@ -1931,13 +1931,13 @@ Vous pouvez consulter le journal d’audit pour rechercher des activités spéci
 
 ## <a name="appendix-b-change-log"></a>Annexe B : Journal des modifications
 
-Le tableau suivant indique les modifications apportées au guide relatif aux DSR pour Office 365 depuis sa publication initiale, le 25 mai 2018.
+Le tableau suivant indique les modifications apportées au guide relatif aux DPC pour Office 365 depuis sa publication initiale, le 25 mai 2018.
 
 |Date  |Section/Application |Modification  |
 |:---------|:---------|:---------|
 |18/09/14     |   [Tableau blanc collaboratif](#whiteboard)      |La version d’évaluation de Tableau blanc collaboratif n’est plus en phase d’évaluation et a été rendue publique. La section précédemment dédiée à cette version a donc été renommée « Tableau blanc collaboratif pour PC, Surface Hub et autres plateformes ». Les procédures d’accès aux données, ainsi que d’exportation et de suppression ont été retirées de cette section et remplacées par un lien menant à l’article de support pour Tableau blanc collaboratif.|
-|11/08/2018     |    [ Workplace Analytics](#workplace-analytics)     |Instructions détaillées ajoutée à la section sur la suppression d’un objet de données à partir de Workplace Analytics et suppression des informations sur un objet de données à partir d’un rapport Workplace Analytics.|
+|11/08/2018     |    [ Workplace Analytics](#workplace-analytics)     |Nous avons ajouté des instructions détaillées à la section Supprimer. Elles expliquent comment supprimer les données personnelles d’une personne concernée par le traitement des données du service Analyse du temps de travail et comment supprimer les informations sur une personne concernée par le traitement des données dans un rapport Analyse du temps de travail.|
 |11/12/2018| Tout| Correction des signets incorrects et liens rompus vers des rubriques externes.|
 |9/1/2019|[StaffHub](#staffhub)|Dans la section Supprimer, la description mise à jour de ce qui se passe lorsqu’un compte d’utilisateur est supprimé définitivement.|
-|8/5/2019| [Publisher](#publisher)|Contenu ajouté en réponse à des demandes de service de données pour Publisher.|
+|8/5/2019| [Publisher](#publisher)|Nous avons ajouté du contenu pour vous aider à répondre aux DPC concernant Publisher.|
 ||||
