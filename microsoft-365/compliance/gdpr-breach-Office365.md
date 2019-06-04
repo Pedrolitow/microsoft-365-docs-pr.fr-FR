@@ -11,22 +11,20 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 0bacc6341ac143a8f2b3dcb066709c951d2f1cbb
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: f30bdc4aec20a69c18405b6f69a14fc919f57554
+ms.sourcegitcommit: 651a1c583021a7122a9487be2f32330aff161467
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544951"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34675629"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Notification de violation dans Office 365 dans le cadre du RGPD
 
 Conformément à son rôle de responsable du traitement des données, Office 365 veille à ce que nos clients puissent remplir leur rôle d’entité de contrôle des données en répondant aux obligations du RGPD concernant la notification des violations de données. À cet effet, nous nous engageons à :
 
--   permettre aux clients de spécifier un contact dédié à la protection des données personnelles qui sera informé en cas de violation de données. Les clients pourront spécifier ce contact dans Azure Active Directory (AAD) ;
-
--   notifier les clients d’une violation de données personnelles dans les 72 heures qui suivent la violation. Cette notification sera envoyée par e-mail au contact spécifié par le client ;
-
--   préciser, au minimum, dans la notification initiale la nature de la violation, une estimation de l’impact de cette violation sur les utilisateurs et les mesures d’atténuation des risques à prendre (le cas échéant). Si notre enquête n’est pas terminée au moment de la notification initiale, nous indiquerons dans cette notification quelles seront les prochaines étapes et quand nous vous recontacterons.
+- permettre aux clients de spécifier un contact dédié à la protection des données personnelles qui sera informé en cas de violation de données. Les clients pourront spécifier ce contact dans Azure Active Directory (AAD) ;
+- notifier les clients d’une violation de données personnelles dans les 72 heures qui suivent la violation. Cette notification sera envoyée par e-mail au contact spécifié par le client ;
+- préciser, au minimum, dans la notification initiale la nature de la violation, une estimation de l’impact de cette violation sur les utilisateurs et les mesures d’atténuation des risques à prendre (le cas échéant). Si notre enquête n’est pas terminée au moment de la notification initiale, nous indiquerons dans cette notification quelles seront les prochaines étapes et quand nous vous recontacterons.
 
 Microsoft reconnaît que les entités de contrôle des données doivent réaliser des évaluations des risques et déterminer si l’autorité de régulation dont dépend le client doit être informée d’une violation de données. Par conséquent, les notifications que nous enverrons aux clients comporteront les informations nécessaires à la réalisation de ces évaluations. Microsoft notifiera donc les clients d’une violation de données personnelles, sauf dans les cas où il a été vérifié que les données personnelles sont illisibles (par exemple, dans le cas de données protégées par un chiffrement fort où l’intégrité des clés a été vérifiée).
 
@@ -62,11 +60,8 @@ La section ci-dessus décrit les investissements engagés par Office 365 pour r
 Les clients doivent également savoir qu’Office 365, conformément à son rôle de responsable du traitement des données, ne déterminera pas le niveau de risque de violation de données. Quand une violation de données personnelles est détectée, nous notifierons nos clients et leur communiquerons toutes les informations dont ils ont besoin pour déterminer avec précision le niveau de risque pour les utilisateurs concernés et pour déterminer s’ils doivent signaler l’incident aux autorités de régulation compétentes. À cet effet, les entités de contrôle des données doivent déterminer :
 
 - la gravité de la violation (autrement dit, le niveau de risque) ;
-
 - si les utilisateurs finaux doivent en être informés ;
-
 - si l’autorité de régulation doit en être informée ;
-
 - les mesures spécifiques qui seront prises par l’entité de contrôle des données pour atténuer les conséquences de la violation.
 
 ## <a name="contacting-microsoft"></a>Contacter Microsoft
