@@ -5,18 +5,17 @@ keywords: Dynamics 365, Microsoft 365, Microsoft 365 Éducation, documentatio
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: c69bc0a0ac665fbcac68e3ba45abc7bf8f7e0ded
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: 7fbe7f277825905326a1234249e5bccf7082658d
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544941"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698316"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 et notification de violation dans le cadre du RGPD
 
@@ -49,11 +48,11 @@ Dynamics 365 répond à une violation des données potentielle selon le process
 
 |**Stade**|**Description**|
 |:-----|:-----|
-| ***1 - Détecter*** | Première indication d’un incident potentiel. |
-| ***2 - Évaluer*** | Un membre de l’équipe de garde de réponse aux incidents de sécurité évalue les conséquences et la gravité de l’événement. En fonction des données probantes, l’évaluation peut ou non aboutir à un signalement supplémentaire à l’équipe de réponse aux incidents de sécurité. |
-| ***3 - Diagnostiquer*** | Des spécialistes de la réponse aux incidents de sécurité effectuent des examens techniques et mènent une enquête judiciaire, identifient des stratégies de limitation, d’atténuation et de contournement. Si l’équipe de sécurité pense que les données client ont peut-être été exposées à un individu non autorisé ou ayant commis des actes illicites, l’exécution du processus de notification des incidents du client débute en parallèle.|
-| ***4 - Stabiliser et récupérer*** | L’équipe de réponse aux incidents de sécurité crée un plan de récupération pour atténuer le problème. Les étapes de limitation de la crise telles que la mise en quarantaine des systèmes concernés peuvent avoir lieu immédiatement et parallèlement au diagnostic. Des enquêtes à plus long terme peuvent être planifiées et se produire une fois que le risque immédiat est passé. |
-| ***5 - Fermeture et post-mortem*** | L’équipe de réponse aux incidents de sécurité crée un post-mortem décrivant les détails de l’incident, avec l’intention de réviser les stratégies, procédures et processus afin d’éviter que l’événement se reproduise. |
+| ***1 : Détecter*** | Première indication d’un incident potentiel. |
+| ***2 : Évaluer*** | Un membre de l’équipe de garde de réponse aux incidents de sécurité évalue les conséquences et la gravité de l’événement. En fonction des données probantes, l’évaluation peut ou non aboutir à un signalement supplémentaire à l’équipe de réponse aux incidents de sécurité. |
+| ***3 : Diagnostiquer*** | Des spécialistes de la réponse aux incidents de sécurité effectuent des examens techniques et mènent une enquête judiciaire, identifient des stratégies de limitation, d’atténuation et de contournement. Si l’équipe de sécurité pense que les données client ont peut-être été exposées à un individu non autorisé ou ayant commis des actes illicites, l’exécution du processus de notification des incidents du client débute en parallèle.|
+| ***4 : Stabiliser et récupérer*** | L’équipe de réponse aux incidents de sécurité crée un plan de récupération pour atténuer le problème. Les étapes de limitation de la crise telles que la mise en quarantaine des systèmes concernés peuvent avoir lieu immédiatement et parallèlement au diagnostic. Des enquêtes à plus long terme peuvent être planifiées et se produire une fois que le risque immédiat est passé. |
+| ***5 : Fermeture et post-mortem*** | L’équipe de réponse aux incidents de sécurité crée un post-mortem décrivant les détails de l’incident, avec l’intention de réviser les stratégies, procédures et processus afin d’éviter que l’événement se reproduise. |
 
 Le livre blanc intitulé [Dynamics Security Incident Management](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=266d445f-ea95-42de-9124-4b2118a639ee&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) donne des détails supplémentaires sur la façon dont Microsoft examine, gère et répond aux incidents de sécurité dans Dynamics 365.
 
@@ -77,7 +76,7 @@ L’équipe de réponse de sécurité collabore avec des ingénieurs de sécurit
 - **Incident de sécurité déclarable au client :** accès illégal ou non autorisé aux systèmes, équipements ou installations de Microsoft, ou utilisation illégale ou non autorisée de ceux-ci, provoquant la divulgation, la modification ou la perte de données client.
 - **Incident de confidentialité :** un sous-type d’incident de sécurité impliquant des données personnelles. Les procédures de gestion sont les mêmes que celles qui concernent les incidents de sécurité.
 
-Pour qu’un CRSI soit déclaré, Microsoft doit déterminer que l’accès non autorisé aux données client a ou a probablement eu lieu et/ou qu’une notification juridique ou contractuelle doit être envoyée. Il est possible, mais ce n’est pas obligatoire, de connaître l’impact de certains clients, l’accès aux ressources et les étapes de réparation. Un incident est généralement déclaré comme CRSI à la fin de l’étape de diagnostic d’un incident de sécurité. Toutefois, la déclaration peut arriver à tout moment lorsque toutes les informations pertinentes soient disponibles. Le responsable des incidents de sécurité doit établir des preuves au-delà d’un certain temps qu’un événement signalable a eu lieu pour commencer l’exécution du processus de notification d’incident client.
+Pour qu’un CRSI soit déclaré, Microsoft doit déterminer que l’accès non autorisé aux données client a ou a probablement eu lieu et/ou qu’une notification juridique ou contractuelle doit être envoyée. Il est possible, mais ce n’est pas obligatoire, de connaître l’impact de certains clients, l’accès aux ressources et les étapes de réparation. Un incident est généralement déclaré comme CRSI à la fin de l’étape de diagnostic d’un incident de sécurité. Toutefois, la déclaration peut arriver à tout moment lorsque toutes les informations pertinentes soient disponibles. Le responsable des incidents de sécurité doit établir des preuves irréfutables qu’un événement signalable a eu lieu pour commencer l’exécution du processus de notification d’incident client.
 
 Tout au long de l’enquête, l’équipe de réponse de sécurité collabore étroitement avec des conseillers juridiques pour vérifier que l’enquête judiciaire est menée conformément aux obligations juridiques et aux engagements vis-à-vis des clients. Il existe également des restrictions importantes sur la gestion et l’affichage des données client et système dans différents environnements d’exploitation. Les données sensibles ou confidentielles, ainsi que les données client, ne sont pas transférées en dehors de l’environnement de production sans l’approbation écrite explicite du gestionnaire des incidents enregistrée dans le ticket des incidents correspondant.
 
