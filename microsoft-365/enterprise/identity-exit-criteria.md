@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure et les services d’identités.
-ms.openlocfilehash: aabd9f5db223b4b1aba0173dcfb739fe27553555
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 19eefe3cd153668239d9cf15f71c90e8ac9571e1
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072124"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681041"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2 : Critères de sortie de l’infrastructure d’identités
 
@@ -51,7 +51,7 @@ Si nécessaire, l’[Étape 2](identity-designate-protect-admin-accounts.md#ide
 
 Suivez ces étapes pour vérifier que vous avez protégé vos comptes d’administrateur général :
 
-1. Exécutez la commande Azure AD V2 suivante à l’invite de commandes PowerShell. Vous devriez voir uniquement la liste des comptes administrateur général dédiés.
+1. Exécutez la commande Azure Active Directory PowerShell pour Graph suivante à l’invite de commandes PowerShell. Vous devriez voir uniquement la liste des comptes d’administrateur général dédiés.
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```

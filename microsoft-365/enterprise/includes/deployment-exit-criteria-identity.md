@@ -23,7 +23,7 @@ Si nécessaire, l’[Étape 2](../identity-designate-protect-admin-accounts.md#
 
 Suivez ces étapes pour vérifier que vous avez protégé vos comptes d’administrateur général :
 
-1. Exécutez la commande Azure AD V2 suivante à l’invite de commandes PowerShell. Vous devriez voir uniquement la liste des comptes administrateur général dédiés.
+1. Exécutez la commande Azure Active Directory PowerShell pour Graph suivante à l’invite de commandes PowerShell. Vous devriez voir uniquement la liste des comptes d’administrateur général dédiés.
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```

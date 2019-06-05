@@ -3,8 +3,8 @@ title: Sites SharePoint Online et Microsoft Teams pour les données hautement r�
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/03/2019
-ms.audience: ITPro
+ms.date: 06/03/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un site d’équipe SharePoint Online sécurisé ou une équipe Microsoft Teams pour stocker vos biens numériques les plus précieux et sensibles.
-ms.openlocfilehash: d80be334f692f905ec70ae43f851d2b73801f4a0
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553323"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681059"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Sites SharePoint Online et Microsoft Teams pour les données hautement réglementées
 
@@ -29,7 +29,7 @@ Microsoft 365 Entreprise comprend une suite complète de services informatiques
 - sujettes à des réglementations régionales ;
 - les plus précieuses de votre organisation comme les secrets commerciaux, les informations sur les ressources humaines ou financières et la stratégie de l’organisation.
 
-Dans le cadre d’une solution informatique Microsoft 365 Entreprise qui répond à ce besoin professionnel, vous êtes tenu de suivre les instructions suivantes :
+Dans le cadre d’un scénario Microsoft 365 Entreprise basé sur le cloud qui répond à ce besoin métier, vous êtes tenu de suivre les instructions suivantes :
 
 - Stockez les biens numériques (documents, diapositives, tableurs, etc.) dans un site d’équipe SharePoint Online ou dans l’onglet **Fichiers** d’une équipe Microsoft Teams.
 - Verrouillez le site ou l’équipe pour empêcher :
@@ -41,7 +41,7 @@ Dans le cadre d’une solution informatique Microsoft 365 Entreprise qui répon
 - Chiffrez les biens numériques les plus sensibles du site ou de l’équipe.
 - Ajoutez des autorisations aux biens numériques les plus sensibles : même si les biens sont partagés en dehors du site, leur ouverture nécessite toujours les informations d’identification valides d’un compte d’utilisateur autorisé.
 
-Le tableau suivant mappe les conditions requises de cette solution à une fonctionnalité de Microsoft 365 Entreprise.
+Le tableau suivant mappe les conditions requises de ce scénario à une fonctionnalité de Microsoft 365 Entreprise.
 
 |||
 |:-------|:-----|
@@ -54,7 +54,11 @@ Le tableau suivant mappe les conditions requises de cette solution à une foncti
 | Ajouter des autorisations aux biens numériques du site | Sous-étiquettes Azure Information Protection dans EMS |
 |||
 
-Cette solution implique que vous ayez déjà déployé les éléments suivants :
+Voici la configuration d’un site SharePoint Online.
+
+![Les sites SharePoint Online et Microsoft Teams pour un scénario de données hautement réglementées](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+
+Ce scénario implique que vous ayez déjà déployé les éléments suivants :
 
 - La phase [Identité](identity-infrastructure.md) et les étapes 1 et 2 de la phase [Protection des informations](infoprotect-infrastructure.md) de l’infrastructure de base. 
 - [SharePoint Online](sharepoint-online-onedrive-workload.md) pour les données hautement réglementées dans des sites d’équipe SharePoint Online
@@ -64,9 +68,13 @@ Les phases suivantes vous guident à travers toute la conception, la configurati
 
 Pour découvrir comment Contoso Corporation, une organisation multinationale fictive mais représentative, a conçu un site SharePoint Online pour ses équipes de recherche, consultez cet [exemple de configuration](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
->[!Note]
->Dans le cadre d’une équipe dédiée aux données hautement réglementées, vous devez tout d’abord créer un site d’équipe SharePoint Online pour les données hautement réglementées. Ensuite, vous créez une équipe qui utilise le groupe Office 365 du site d’équipe SharePoint Online. Consultez la phase 2, étape 4 pour obtenir plus d’informations.
->
+
+Dans le cadre d’une équipe dédiée aux données hautement réglementées, vous devez tout d’abord créer un site d’équipe SharePoint Online pour les données hautement réglementées. Ensuite, vous créez une équipe qui utilise le groupe Office 365 du site d’équipe SharePoint Online. Consultez la phase 2, étape 4 pour obtenir plus d’informations.
+
+Voici la configuration pour une équipe.
+
+![Les sites SharePoint Online et Microsoft Teams pour un scénario de données hautement réglementées](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
+
 
 ## <a name="identity-and-device-access-prerequisites"></a>Conditions préalables pour les identités et l’accès aux appareils
 
@@ -207,6 +215,10 @@ Former à nouveau vos utilisateurs, le cas échéant.
 ### <a name="user-adoption-results"></a>Résultats de l’adoption par les utilisateurs
 
 Les biens numériques sensibles sont stockés exclusivement sur les équipes ou les sites SharePoint Online pour les données hautement réglementées, et les biens les plus sensibles portent la sous-étiquette Azure Information Protection configurée.
+
+## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Comment Contoso Corporation a déployé Microsoft 365 Entreprise
+
+Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif avec son siège à Paris en France. Découvrez comment Contoso a conçu, configuré, puis promu un [site SharePoint Online sécurisé](contoso-sharepoint-online-site-for-highly-confidential-assets.md) pour ses équipes de recherche basées à Paris, Moscou, New York, Pékin et Bangalore. 
 
 ## <a name="see-also"></a>Voir aussi
 
