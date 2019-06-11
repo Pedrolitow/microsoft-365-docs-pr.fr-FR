@@ -3,8 +3,8 @@ title: 'Étape 5 : considérations relatives à la sécurité et à la conformi
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
-audience: ITPro
+ms.date: 05/20/2019
+ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les considérations importantes relatives à la sécurité et à la conformité de Windows et d’Office.
-ms.openlocfilehash: ceb6a8e54c99a89cb969c0118de9151cb35314ce
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 791006a6a836f28adb8d71b20e0e887b903752ba
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073034"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814585"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Étape 5 : considérations relatives à la sécurité et à la conformité
 
