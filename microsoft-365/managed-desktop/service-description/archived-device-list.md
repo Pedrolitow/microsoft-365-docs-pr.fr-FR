@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0eabd3c90e0aae2812b2ee9fd6fb4d1768e90c1e
-ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
+ms.openlocfilehash: c3674df0bfd797b9076bbf52379444665b1ce4d8
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34104213"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857307"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés Microsoft Managed Desktop
 
@@ -40,7 +40,7 @@ En outre, l’appareil doit également:
 
 - Disposer d’une image approuvée par le bureau géré Microsoft. Lorsque vous commandez des appareils, vérifiez que vous spécifiez qu’ils sont utilisés avec Microsoft Managed Desktop.
 - N’ont pas terminé l’expérience de première exécution de Windows.
-- S’inscrire à [Windows AutoPilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad) et que le profil AutoPilot de bureau géré Microsoft est affecté.
+- Être inscrit auprès de Microsoft Managed destkop à l’aide de la fonctionnalité [d’inscription](https://aka.ms/mmddrhelp) de l’appareil.
 
 #### <a name="additional-help"></a>Aide supplémentaire
 
