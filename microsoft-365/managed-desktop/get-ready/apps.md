@@ -1,91 +1,80 @@
 ---
-title: Préparation des applications pour le bureau géré Microsoft
+title: Applications dans le bureau géré Microsoft
 description: ''
-keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: be28760fc3facdb21643943ace11deda378d437c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: db89e3b1f8b5b8073eab62e4b4d38087e1e73fa4
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289063"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913045"
 ---
-# <a name="preparing-apps-for-microsoft-managed-desktop"></a>Préparation des applications pour le bureau géré Microsoft
+# <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le bureau géré Microsoft
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
 <!--Applications: supported/onboard/deployment -->
  
-Microsoft et les clients de bureau gérés Microsoft ont des responsabilités aussi importantes que les applications utilisées avec le bureau géré Microsoft.
+## <a name="apps-generally"></a>Applications généralement
 
-## <a name="microsoft-responsibilities"></a>Responsabilités de Microsoft
-**Applications Office 365** Microsoft fournira un service complet pour le déploiement, la mise à jour et la prise en charge d'applications Office 365 spécifiques. Tous les utilisateurs recevront le jeu de base d'Office 365 Click to Run, 64 bit version des applications incluses dans l'image de l'appareil afin qu'un utilisateur puisse devenir rapidement productif. Le projet et les applications Visio de la suite Office 365 sont titulaires d'une licence distincte.  Microsoft maNaged Desktop fournit des groupes de déploiement qui permettent à l'administrateur informatique de gérer des licences et de déployer ces applications de manière appropriée pour leur organisation. Microsoft prend en charge les utilisateurs finaux de ces applications par le biais des canaux de support de bureau géré Microsoft.
+Microsoft inclut certaines applications clés, ainsi que la licence Microsoft 365 E3 ou E5 requise pour participer au bureau géré Microsoft. Toutefois, même si nous fournissons ces applications, vous avez toujours certaines responsabilités et actions à effectuer.
 
-**Applications métiers** Microsoft offre aux administrateurs informatiques des outils permettant de gérer et de déployer leurs applications métiers (LOB) pour les utilisateurs finaux dans le cadre du produit Intune. Microsoft prend en charge les problèmes de déploiement d'applications, comme indiqué dans les [applications métiers](#line-of-business-applications) . 
-
-**Déployer avec Intune** Intune sera lié à **Microsoft Store pour les entreprises lors de** l'intégration de bureau géré Microsoft, ce qui permet le déploiement d'applications achetées via Intune. Microsoft déploiera également l'application portail d'entreprise de Microsoft Store vers les utilisateurs finaux pour permettre aux administrateurs informatiques de fournir une expérience en libre-service pour leurs utilisateurs finaux.
-
-**Gestion des applications** Microsoft peut identifier les applications restreintes qui ne conviennent pas à l'espace de travail moderne en raison de leur impact sur le système. Lorsqu'une telle application est identifiée, Microsoft avertit le client et cette application doit être supprimée du client. 
-
-Pour plus d'informations sur les comportements d'application restreinte et les exigences des applications, voir [Microsoft Managed Desktop App Requirements](../service-description/mmd-app-requirements.md) .
-
-## <a name="customer-responsibilities"></a>Responsabilités du client
-La suite Office 365 est essentielle aux offres de productivité de Microsoft et est incluse dans la licence Microsoft 365 pour tous les utilisateurs de bureau géré Microsoft. Pendant que Microsoft déploie, met à jour et prend en charge les applications Office sur des appareils de bureau gérés par Microsoft, il existe toujours des zones dont le client est responsable.
-- **Attribuer des licences** : les clients sont responsables de l'attribution des licences appropriées aux utilisateurs finaux pour Office 365. 
-- **Ajouter des utilisateurs à des groupes de sécurité** : pour les clients avec des utilisateurs qui ont besoin de Project ou de Visio, l'administrateur informatique doit ajouter ces utilisateurs aux groupes de déploiement appropriés. Les administrateurs informatiques sont également responsables de la gestion de la fin de vie de ces utilisateurs. 
-- **Deploy office 365 Add ons** : les clients sont responsables du déploiement de tous les plug-ins dans la suite Office 365 jugés nécessaires. 
-
-Étant donné que les applications métier sont uniques pour chaque client, les clients sont responsables de la gestion de toutes les applications de leur organisation qui ne sont pas déployées par Microsoft. Cela inclut les opérations suivantes :
-- Choisir les applications nécessaires et celles qui en ont besoin
-- Affectation d'applications à ces utilisateurs
-- Créer et gérer des groupes Azure Active Directory (AD) pour la gestion des affectations d'application 
-
-Le client doit charger les applications métier vers Intune. Ils sont ensuite responsables du déploiement, de la mise à jour et de la mise en service de ces applications par rapport à leurs cycles de vie respectifs, ainsi que la gestion de la prise en charge de ces applications pour leurs utilisateurs.
-
-## <a name="office-applications"></a>Applications Office
-Dans le cadre de la licence Microsoft 365 E5, Office 365 standard suite (64 bits) est déployé par Microsoft. 
-
-Pour plus d'informations, consultez la rubrique [Microsoft Managed Desktop Technologies](../intro/technologies.md) <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
-
-## <a name="line-of-business-applications"></a>Applications métiers
-Ce tableau résume les responsabilités dans les différentes phases pour les applications métiers (LOB). 
-
-Éléments de travail de l'application |    Client    | Microsoft
---- | --- | ---
-**Applications d'intégration** |  |
-Identifier les applications nécessaires pour les groupes d'utilisateurs ciblés   | ![Oui](images/checkmark.png)  |
-Créer et gérer des groupes Azure AD pour le déploiement d'applications | ![Oui](images/checkmark.png) |   
-**EmPaquetage d'applications** |  |
-Applications de package pour répondre aux normes de déploiement Intune |  ![Oui](images/checkmark.png) |  
-Télécharger des applications vers Intune | ![Oui](images/checkmark.png)     |
-Applications de test dans un environnement de bureau géré Microsoft |    ![Oui](images/checkmark.png) |  
-Applications de test avec les utilisateurs finaux    | ![Oui](images/checkmark.png) |    
-**Déploiement** | |
-Gérer les utilisateurs et les affecter aux applications  | ![Oui](images/checkmark.png)  |
-Les outils de déploiement Intune fournissent une application à des clients distants| |   ![Oui](images/checkmark.png)
-Identifier et déployer les mises à jour des applications via Intune | ![Oui](images/checkmark.png)    |
-Désinstaller et supprimer les applications lorsqu'elles ont été retirées    | ![Oui](images/checkmark.png) |    
-**Gestion** | |
-Obtention et attribution de licences |   ![Oui](images/checkmark.png)     |
-Fournir une assistance aux utilisateurs finaux pour les applications métiers  | ![Oui](images/checkmark.png) |
-Gérer les paramètres de l'application à distance    | ![Oui](images/checkmark.png) |
-
-Pour plus d'informations sur les exigences de l'application métier, voir [Microsoft Managed Desktop application Requirements](../service-description/mmd-app-requirements.md) .
+Vous pouvez également déployer des applications supplémentaires non-Microsoft pour les utilisateurs finaux en libre-service via le portail de l’entreprise ou une installation en arrière-plan requise, tout en utilisant le pipeline de déploiement de Microsoft Intune. Si vous disposez de l’expertise, vous pouvez migrer les applications dont vous avez besoin. Si ni Microsoft Consulting Services (MCS) ni un fournisseur non-Microsoft ne seront heureux de vous aider dans un projet d’empaquetage et de migration. Pour plus d’informations sur l’utilisation de MCS, voir [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
-## <a name="intune-application-deployment"></a>Déploiement d'applications Intune
-La gestion des applications peut être gérée via le portail d'administration de bureau géré Microsoft ou via le portail Intune. Le portail de gestion des applications Intune affiche les applications déployées pour Windows, Android et iOS. Le portail d'administration de bureau géré Microsoft limite l'affichage aux applications Windows 10. Les deux sont disponibles via le portail Azure. 
-* [Notions de base sur la gestion des applications Intune](https://docs.microsoft.com/intune/app-management)
-* [Ajouter des applications à Intune](https://docs.microsoft.com/intune/app-management)
-   * [Ajouter une application métier](https://docs.microsoft.com/intune/lob-apps-windows)
-   * [Ajouter des applications Win32 à Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
-   * [Ajouter des applications Web](https://docs.microsoft.com/intune/web-app)
-* [Déployer des applications](https://docs.microsoft.com/intune/apps-deploy)
-   * [Déployer des applications vers Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
-* Portail d'entreprise
-   * [Déployer le portail d'entreprise](https://docs.microsoft.com/intune/store-apps-company-portal-app)
-   * [Configurer l'application portail d'entreprise](https://docs.microsoft.com/intune/company-portal-app)
+## <a name="apps-provided-by-microsoft"></a>Applications fournies par Microsoft
+
+Les versions 64 bits des applications de la suite Office 365 ProPlus standard (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype entreprise et OneNote) sont incluses dans votre licence de bureau géré Microsoft. Les versions «démarrer en un clic» de Microsoft Project et Visio *ne sont pas* incluses par défaut, mais vous pouvez les demander pour qu’elles soient ajoutées. Pour plus d’informations sur ces applications, voir [installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft](../get-started/project-visio.md).
+
+### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Éléments pris en charge par Microsoft pour prendre en charge les applications que nous fournissons
+
+Microsoft fournira un service complet pour le déploiement, la mise à jour et la prise en charge des applications Office 365 ProPlus incluses. Les versions «démarrer en un clic» de Microsoft Project et Visio ne sont *pas* incluses par défaut, mais le bureau géré Microsoft fournit des groupes de déploiement qui permettent à votre administrateur informatique de gérer des licences et de déployer ces applications de manière appropriée pour votre Département. Microsoft prend en charge les utilisateurs finaux de ces applications par le biais des canaux de support de bureau géré Microsoft.
+
+### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Ce que vous devez faire pour prendre en charge les applications que nous fournissons
+
+Il reste certaines choses que vous devez faire avec ces applications:
+
+- **Attribuer des licences** : vous êtes responsable de l’obtention et de l’affectation des licences appropriées aux utilisateurs finaux pour Office 365 ProPlus.
+- **Ajouter des utilisateurs à des groupes de sécurité** : Si vous utilisez Microsoft Project ou Visio, votre administrateur informatique doit ajouter ces utilisateurs aux groupes de déploiement appropriés. Les administrateurs informatiques sont également chargés de récupérer les licences de ces utilisateurs s’ils quittent la société.
+- **Deploy office 365 addons** -si vous avez besoin d’addons pour l’une des applications Office 365 ProPlus, déployez-les de manière centralisée comme n’importe quelle autre application Windows 32. 
+
+## <a name="apps-you-provide"></a>Applications que vous fournissez
+
+Bien entendu, vous disposez probablement d’un certain nombre d’autres applications dont vous avez besoin pour vos opérations professionnelles. Ces éléments peuvent uniquement être déployés sur des appareils de bureau gérés par Microsoft à l’aide du pipeline de déploiement de Microsoft Intune. Si l’application en a besoin, vous pouvez les présenter à un fournisseur (qui peut être un fournisseur non-Microsoft ou un service MCS) ou, si vous le faites, vous pouvez les empaqueter vous-même. Ajoutez ensuite ces packages au portail de bureau géré Microsoft et affectez-les à des groupes Azure Active Directory pour déclencher le déploiement. 
+
+Si vous déployez actuellement vos applications à l’aide de System Center Configuration Manager, Microsoft Managed Desktop peut vous fournir une requête pour évaluer vos applications et découvrir celles que vous êtes prêt à migrer vers Microsoft Intune et celles qui peuvent nécessiter un ajustement. .
+
+
+### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Préparation de vos propres applications pour l’inclusion dans le bureau géré Microsoft
+Passez en revue vos applications, en vérifiant les éléments suivants:
+
+- Aucune des applications n’est interdite ou a un comportement restreint, comme décrit dans [Microsoft Managed Desktop App Requirements](https://aka.ms/app-req).
+- Les applications doivent être prêtes pour la gestion par Microsoft Intune. Pour plus d’informations à ce sujet, voir [Windows 10 App Deployment Using Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) et [Add Apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
+- Autres conditions préalables à l’empaquetage, telles que la fourniture de clés de licence, l’accord avec les termes de licence et la prédéfinition des connexions serveur.
+
+### <a name="decide-how-to-package-apps"></a>Décider comment empaqueter les applications
+
+Certains fournisseurs de logiciels indépendants peuvent exiger que vos applications soient empaquetées avant d’être déployées de manière centralisée. «Packaging» signifie que le programme d’installation de l’application est configuré avec des paramètres tels que des clés de licence, des emplacements de serveur distant ou des raccourcis de bureau, afin que l’application puisse être installée en arrière-plan.
+
+Vous disposez de trois options pour obtenir le package de vos applications: 
+
+
+- Vous pouvez empaqueter les applications vous-même
+- Vous pouvez travailler avec un fournisseur non-Microsoft
+- Vous pouvez vous engager avec MCS pour empaqueter vos applications. Travaillez avec votre responsable de compte Microsoft. Pour plus d’informations, consultez la rubrique [Working with Microsoft Consulting Services](apps-MCS.md).
+
+
+
+
+
+
+
+## <a name="deploying-apps"></a>Déploiement d’applications
+
+Quelle que soit la méthode que vous utilisez pour obtenir un package d’applications, une fois cette opération terminée, vous êtes prêt à suivre les étapes décrites dans [Deploy Apps to Microsoft Managed Desktop](../get-started/deploy-apps.md)Devices.
+
+
