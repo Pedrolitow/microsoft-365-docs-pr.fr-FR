@@ -1,9 +1,9 @@
 ---
-title: Fonctionnalités de sécurité d’entreprise Microsoft 365
+title: Fonctionnalités de sécurité et de conformité de Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité fournies avec Microsoft 365 Business.
-ms.openlocfilehash: adf1cf183022f3d2c19364b9f60868e285f78637
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: bd61ad3bf1b34635a7b80f1c9ccf63fa98d31915
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660558"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017519"
 ---
-# <a name="microsoft-365-business-security-features"></a>Fonctionnalités de sécurité d’entreprise Microsoft 365
+# <a name="microsoft-365-business-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business
 
 Microsoft 365 Business propose des fonctionnalités de sécurité simplifiées pour vous aider à protéger vos données sur des PC, des téléphones et des tablettes.
     
@@ -36,7 +36,6 @@ Microsoft 365 Business propose des fonctionnalités de sécurité simplifiées p
 
 Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise Microsoft 365 dans le centre d’administration, ce qui vous offre un moyen simple d’activer ou de désactiver ces fonctionnalités. Dans le centre d’administration, vous pouvez effectuer les opérations suivantes:
   
-![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   
 - [Définir les paramètres de gestion des applications pour les appareils Android ou iOS](app-protection-settings-for-android-and-ios.md) . 
     
@@ -62,14 +61,38 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise M
 
 Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour vous aider à protéger votre entreprise contre les menaces et protéger les informations sensibles.
   
-- **[Office 365-Protection avancée contre les menaces](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 protection avancée contre les menaces](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
     La protection avancée contre les menaces (ATP) permet de protéger votre activité contre le hameçonnage et les attaques par ransomware sophistiqués conçus pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
     
   - Analyse avancée des pièces jointes et analyse anti-puissance pour détecter et rejeter les messages dangereux.
     
-  - Vérifications automatiques des liens Web dans les courriers électroniques pour évaluer s’ils font partie d’un schéma de hameçonnage. Cela vous permet d’accéder en toute sécurité aux sites Web non sécurisés.
+  - Vérifications automatiques des liens dans les messages électroniques pour évaluer s’ils font partie d’un schéma de hameçonnage. Cela vous permet d’accéder en toute sécurité aux sites Web non sécurisés.
+
+- **[Fonctionnalités complètes d’Intune dans le portail Azure](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
+    L’accès au centre d’administration Intune dans le portail Azure vous permet de configurer des fonctionnalités de sécurité supplémentaires, telles que la gestion des appareils MacOS, iPhone et appareils Android, ainsi que la gestion avancée des appareils pour Windows, qui ne sont pas disponibles via Microsoft Centre d’administration de l’entreprise 365.
+- **Même [accès conditionnel](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) que le plan Azure ad P1**
+
+    L’accès conditionnel peut protéger votre organisation contre les risques de connexion, les tentatives d’accès à partir d’un réseau ou d’un paramètre régional inattendus, les tentatives d’accès aux types d’appareils à risque, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée, et les signaux de l’événement First Authentication sont utilisés pour déterminer si l’accès tenté doit être approuvé, refusé ou si une preuve plus marquée (par exemple une seconde forme d’identification) est Obligatoire.
+
+    Les fonctionnalités d’accès conditionnel sont les suivantes:
+
+    - Accès basé sur le nom d’utilisateur, le groupe et le rôle
+    - Accès [basé sur une application](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 
+    - [Accès en fonction de l’emplacement](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration);  autoriser uniquement l’accès à partir de plages d’adresses IP approuvées ou de pays spécifiques 
+    - Exiger MFA pour Access
+    - Bloquer l’accès aux applications qui utilisent [l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
+    - Exiger les applications TP utiliser la [protection des applications Intune](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+    - Authentification personnalisée, telle que l’authentification multifacteur (MFA) avec des fournisseurs tiers, par exemple DUO.
+   
+    Autres fonctionnalités :
+    - Réinitialisation du [mot de passe en libre-service](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) pour Azure ad hybride
+    
+## <a name="compliance-features"></a>Fonctionnalités de conformité
+
+Votre abonnement professionnel Microsoft 365 inclut des fonctionnalités qui vous aident à respecter les normes de conformité et de réglementation.
+
 - **[Vue d’ensemble des stratégies de protection contre la perte de données](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
     
     Vous pouvez configurer DLP pour qu’il détecte automatiquement les informations sensibles, telles que les numéros de carte de crédit, les numéros de sécurité sociale, etc., afin d’empêcher leur partage par inadvertance à l’extérieur de votre entreprise.
@@ -80,13 +103,9 @@ Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour v
     
 - **[Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
     
-    La protection des informations vous permet de contrôler l’accès aux informations sensibles dans les e-mails et les documents avec des contrôles tels que «ne pas transférer» et «ne pas copier». Vous pouvez également classer les informations sensibles comme «confidentielles» et spécifier le mode de partage des informations confidentielles à l’extérieur et à l’intérieur de l’entreprise. Le chiffrement au niveau de l’entreprise est facile à appliquer aux e-mails et aux documents afin de garantir la confidentialité de vos informations. Microsoft 365 Business inclut toutes les fonctionnalités d' [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Vous pouvez également installer le complément client Azure information protection pour les applications Office. Pour plus d’informations, voir [Azure information protection client administrateur Guide](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
-    
-- **[Fonctionnalités complètes d’Intune dans le portail Azure](https://go.microsoft.com/fwlink/p/?linkid=871403)**
-    
-    L’accès au centre d’administration Intune dans le portail Azure vous permet de configurer des fonctionnalités de sécurité supplémentaires, telles que la gestion des appareils MacOS, iPhone et appareils Android, ainsi que la gestion avancée des appareils pour Windows, qui ne sont pas disponibles via Microsoft Centre d’administration de l’entreprise 365.
-    
-Les sections suivantes décrivent comment gérer ces fonctionnalités dans le centre d' &amp; administration et de sécurité et dans le centre d’administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration de Microsoft 365 Business.
+    La protection des informations vous permet de contrôler l’accès aux informations sensibles dans les e-mails et les documents avec des contrôles tels que «ne pas transférer» et «ne pas copier». Vous pouvez également classer les informations sensibles comme «confidentielles» et spécifier le mode de partage des informations confidentielles à l’extérieur et à l’intérieur de l’entreprise. Le chiffrement au niveau de l’entreprise est facile à appliquer aux e-mails et aux documents afin de garantir la confidentialité de vos informations. Microsoft 365 Business inclut toutes les fonctionnalités d' [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Vous pouvez également installer le complément client Azure information protection pour les applications Office. Pour plus d’informations, reportez-vous au Guide de l' [administrateur client Azure information protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+
+Vous pouvez gérer ces fonctionnalités dans le centre &amp; d’administration et de sécurité et dans le centre d’administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration de Microsoft 365 Business.
   
     
 ## <a name="faq"></a>FAQ
