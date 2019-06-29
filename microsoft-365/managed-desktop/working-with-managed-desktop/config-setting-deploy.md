@@ -1,18 +1,18 @@
 ---
 title: Déployer des paramètres configurables dans le bureau géré Microsoft
 description: Déployer et suivre les modifications de paramètres configurables dans le bureau géré Microsoft.
-keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation, Deploy, Staging Deployment, configurable Settings
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Deploy, Staging Deployment, configurable Settings
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4662373b926d07558ecedd05c9dfcf472ceb6357
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfa769cab9f8d812fa2533232f66b0d4f8a4edb7
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278418"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390511"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables-bureau géré Microsoft
 
@@ -24,45 +24,45 @@ Voici les statues que vous verrez pour chaque déploiement.
 
 Statut  | Explication 
 --- | --- 
-Déployer | Votre modification attend d'être déployée sur ce groupe.
+Déployer | Votre modification attend d’être déployée sur ce groupe.
 En cours | La modification est appliquée aux appareils actifs de ce groupe. 
 Exécuter | Modification effectuée sur tous les appareils actifs de ce groupe. 
-Échec | La modification a échoué sur 10% des appareils actifs dans le groupe, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
+Failed | La modification a échoué sur 10% des appareils actifs dans le groupe, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
 Retrouveront | Le changement a été rétabli sur la dernière modification qui a été déployée avec succès sur tous les groupes de déploiement.
 
 ## <a name="deploy-changes"></a>Déployer les modifications
 
-Nous allons afficher l'image d'arrière-plan du bureau dans ces instructions. Une fois que vous avez déployé un déploiement, vous déployez les modifications à partir de la page État du déploiement. 
+Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions. Une fois que vous avez déployé un déploiement, vous déployez les modifications à partir de la page État du déploiement. 
 
 **Pour déployer les modifications**
 
-1. Se connecter au [portail d'administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1. Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
-3. Dans l'espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez déployer, puis sélectionnez le déploiement intermédiaire à déployer.
-4. Sélectionnez **déployer** pour déployer la modification dans l'un des groupes de déploiement.
+3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez déployer, puis sélectionnez le déploiement intermédiaire à déployer.
+4. Sélectionnez **déployer** pour déployer la modification dans l’un des groupes de déploiement.
 
-![Vue d'ensemble du statut de déploiement des paramètres configurables](images/deploy-cs-overview.png)
+![Vue d’ensemble du statut de déploiement des paramètres configurables](images/deploy-cs-overview.png)
 
-Microsoft maNaged Desktop recommande le déploiement aux groupes de déploiement dans cet ordre: test, First, Fast, puis large. 
+Microsoft Managed Desktop recommande le déploiement aux groupes de déploiement dans cet ordre: test, First, Fast, puis large. 
 
-Lorsque les modifications sont terminées dans chaque groupe, l'État devient **terminé**.
+Lorsque les modifications sont terminées dans chaque groupe, l’État devient **terminé**.
 
 ![Déploiement des paramètres configurables terminé](images/config-setting-complete.png)
 
 ## <a name="revert-deployment"></a>Rétablir le déploiement
 
-Une fois que vous avez déployé une modification, vous pouvez revenir à l' **État de déploiement**. Lorsque vous rétablissez une modification qui est **en cours** ou **terminée**, le déploiement actuel s'arrête. Le paramètre reprendra la dernière version qui a été déployée sur tous les groupes. 
+Une fois que vous avez déployé une modification, vous pouvez revenir à l' **État de déploiement**. Lorsque vous rétablissez une modification qui est **en cours** ou **terminée**, le déploiement actuel s’arrête. Le paramètre reprendra la dernière version qui a été déployée sur tous les groupes. 
 
-Nous allons vous montrer les étapes permettant de rétablir une modification à l'aide de l'image d'arrière-plan du Bureau à titre d'exemple. 
+Nous allons vous montrer les étapes permettant de rétablir une modification à l’aide de l’image d’arrière-plan du Bureau à titre d’exemple. 
 
 **Pour annuler une modification**
-1. Se connecter au [portail d'administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1. Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
-3. Dans l'espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez rétablir, puis sélectionnez le déploiement intermédiaire à rétablir.
+3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez rétablir, puis sélectionnez le déploiement intermédiaire à rétablir.
 4. Sous **nécessité de rétablir cette modification**, sélectionnez **rétablir le déploiement**.
 
 ![Rétablissement du déploiement des paramètres configurables](images/config-setting-revert.png) 
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
-- [Vue d'ensemble des paramètres configurables](config-setting-overview.md)
+- [Vue d’ensemble des paramètres configurables](config-setting-overview.md)
 - [Référence des paramètres configurables](config-setting-ref.md) 

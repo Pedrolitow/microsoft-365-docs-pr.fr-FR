@@ -8,12 +8,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 4cd61e333773ddeddc866481be7e1cfa283e4386
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 65602cb3175f8a930537746d831bb85f26de0383
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913025"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390361"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications pour la documentation du bureau géré Microsoft
 
@@ -25,6 +25,8 @@ Rubrique nouvelle ou modifiée | Description
 [Applications dans le bureau géré Microsoft](get-ready/apps.md) | Rubrique mise à jour
 [Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Nouvelle rubrique
 [Rôles et responsabilités du bureau géré Microsoft](intro/roles-and-responsibilities.md) | Rubrique mise à jour
+[Cycle de vie des produits bureau géré Microsoft](service-description/device-lifecycle.md) | Nouvelle rubrique
+
 
 
 ## <a name="may-2019"></a>Mai 2019
