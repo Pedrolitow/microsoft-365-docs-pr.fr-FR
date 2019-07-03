@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 40927b18b0d047eae848b5a2a938d98fa6de3119
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 06ec98ebc7ea44a1bf3d8039e3a3ab7102521d3e
+ms.sourcegitcommit: ef749c44d72b5258706be86a4af1aeca4154ead2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857319"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35447526"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Inscrire des appareils dans le bureau géré Microsoft pour les partenaires
 
@@ -20,7 +20,7 @@ Cette rubrique décrit les étapes à suivre par les partenaires pour inscrire d
 
 
 ## <a name="prepare-for-registration"></a>Préparer l’inscription 
-Avant de terminer l’enregistrement d’un client, vous devez d’abord établir une relation avec ceux-ci dans le [Centre partenaires](https://partner.microsoft.com/dashboard). Pour plus d’informations, consultez [l’aide du centre de partenaires](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer).
+Avant de terminer l’enregistrement d’un client, vous devez d’abord établir une relation avec ceux-ci dans le [Centre partenaires](https://partner.microsoft.com/dashboard). Veillez à sélectionner **inclure les privilèges d’administration déléguée pour Azure Active Directory et Office 365**. Pour plus d’informations, consultez [l’aide du centre de partenaires](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer).
 
 Pour terminer l’inscription de votre client, commencez par créer un fichier CSV.
 
