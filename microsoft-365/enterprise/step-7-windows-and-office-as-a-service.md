@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment préparer la maintenance de Windows et d’Office au sein de votre environnement.
-ms.openlocfilehash: 9cc550ca87c1c71ef4a01030ce93b6300fcc019d
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 6f3f5faf4c45829cdb4d2f9ac48ef0c9988ec270
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814595"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584560"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Étape 7 : maintenance de Windows et d’Office
 
@@ -79,7 +79,7 @@ De plus, dans la mesure où les builds d’Insider Office 365 ProPlus reflète
 
 ### <a name="supporting-management-tools"></a>Prise en charge des outils de gestion
 
-Nous avons également réfléchi à une méthode pour simplifier le déploiement des mises à jour. L’option Current Branch de System Center Configuration Manager est régulièrement mise à jour pour prendre en charge le déploiement de ces mises à jour pour Windows et Office et de nouvelles fonctionnalités.
+Nous avons également réfléchi à une méthode pour simplifier le déploiement des mises à jour. L’option System Center Configuration Manager (Current Branch) est régulièrement mise à jour pour prendre en charge le déploiement de ces mises à jour pour Windows et Office et de nouvelles fonctionnalités.
 
 
   [Déploiement des mises à jour de Windows 10 avec System Center Configuration Manager](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-manage-updates-configuration-manager)
@@ -127,7 +127,7 @@ Grâce à la technologie « Mises à jour rapides » de Windows (appelée Comp
 
 [Explication des mises à jour de qualité Windows 10 et fin des mises à jour delta](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
-Windows Update pour Entreprise et Windows Server Update Services ont pris en charge les mises à jour rapides pendant un certain temps. Désormais, les mises à jour rapides sont aussi prises en charge dans System Center Configuration Manager.
+Windows Update pour Entreprise et Windows Server Update Services ont pris en charge les mises à jour rapides pendant un certain temps. Désormais, les mises à jour rapides sont aussi prises en charge dans System Center Configuration Manager (Current Branch).
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
@@ -143,7 +143,7 @@ Vous savez tout sur les mises à jour mensuelles. Maintenant, nous allons nous p
 
 Comme nous l’avons abordé dans l’article sur la préparation des applications et des appareils, nous vous recommandons de commencer à préparer le déploiement de ces mises à jour volumineuses en utilisant les mêmes outils de préparation configurés à l’étape 1 du processus de déploiement.
 
-Concernant les outils, vous pouvez utiliser les paramètres de stratégie avec Windows Update pour Entreprise, la gestion des mises à jour logicielles via System Center Configuration Manager, Windows Server Update Services (WSUS), ou les stratégies de mise à jour définies par Microsoft Intune. Si l’utilisation de la bande passante réseau vous préoccupe, reportez-vous à l’étape 2 sur la préparation des répertoires et du réseau pour savoir comment vous pouvez réduire le trafic réseau via l’Optimisation de la distribution et d’autres technologies de mise en cache pair à pair.
+Concernant les outils, vous pouvez utiliser les paramètres de stratégie avec Windows Update pour Entreprise, la gestion des mises à jour logicielles via System Center Configuration Manager (Current Branch), Windows Server Update Services (WSUS), ou les stratégies de mise à jour définies par Microsoft Intune. Si l’utilisation de la bande passante réseau vous préoccupe, reportez-vous à l’étape 2 sur la préparation des répertoires et du réseau pour savoir comment vous pouvez réduire le trafic réseau via l’Optimisation de la distribution et d’autres technologies de mise en cache pair à pair.
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -155,7 +155,7 @@ Concernant les outils, vous pouvez utiliser les paramètres de stratégie avec W
 
 #### <a name="upgrade-task-sequences"></a>Séquences de tâches de mise à niveau
 
-L’installation des mises à jour de fonctionnalité volumineuses en utilisant des méthodes de gestion de mise à jour logicielle standard est prise en charge, mais bon nombre d’organisations choisiront d’utiliser une séquence de tâches de mise à niveau avec System Center Configuration Manager ou Microsoft Deployment Toolkit.
+L’installation des mises à jour de fonctionnalité volumineuses en utilisant des méthodes de gestion de mise à jour logicielle standard est prise en charge, mais bon nombre d’organisations choisiront d’utiliser une séquence de tâches de mise à niveau avec System Center Configuration Manager (Current Branch) ou Microsoft Deployment Toolkit.
 
 Une séquence de tâches vous permet de créer des vérifications ou des tâches personnalisées AVANT d’installer la mise à jour de fonctionnalité et d’exécuter des tâches personnalisées APRÈS l’installation de la mise à jour. Les tâches postérieures à la mise à jour peuvent inclure des services de suspension temporaire si besoin pendant la mise à jour, l’installation et le remplacement du pilote, les mises à niveau ou la barre des tâches de l’application, et les paramètres de personnalisation du démarrage de Windows 10.
 
