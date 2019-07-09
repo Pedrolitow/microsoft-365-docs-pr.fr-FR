@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Mises à niveau automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
-ms.openlocfilehash: 4e07ae23f063bdc714d5dddd8cdb8d8c41e25eac
-ms.sourcegitcommit: 12c4d5444d6e0e8825fc85e3e8453fa376746495
+ms.openlocfilehash: 6fc22ad7ae8b0a34384818bc77813c6802609b89
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35395286"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584510"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Mises à niveau locales automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
 
 À partir du 14 janvier 2020, les mises à jour de sécurité ou la prise en charge des PC exécutant Windows 7 ne seront plus fournies. Avec quelques mois pour passer de Windows 7 vers Windows 10 et face à plusieurs options de déploiement, une question fréquente dans la communauté informatique est la suivante : «quel est le moyen le plus rapide de migrer Windows 7 vers Windows 10 ?» La réponse est d’effectuer des mises à niveau locales pour les PC existants, vous pouvez ainsi réduire le focus sur plusieurs aspects du processus de déploiement de bureau.
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png)
+<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 En utilisant les mises à niveau locales, l’étendue de plusieurs processus de déploiement de bureau se réduisent considérablement, notamment :
 
@@ -40,7 +40,7 @@ Les mises à niveau sur place vers Windows 10 constituent une approche fiable po
 
 Par défaut, le processus de mise à niveau sauvegarde votre installation précédente de Windows dans le cadre de la mise à niveau, par conséquent, en cas d’échec de la mise à niveau ou si un appareil ou une application ne fonctionne pas correctement après la mise à niveau, l’ordinateur peut revenir à Windows 7. Les Pc mis à jour par défaut disposent de 10 jours pour vous permettre de relancer manuellement une restauration vers Windows 7 si nécessaire.
 
-Les mises à niveau sur place peuvent être automatisées à l’aide d’outils de déploiement de système d’exploitation tels que [System Center Configuration Manager](https://docs.microsoft.com/fr-FR/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) ou Microsoft Deployment Toolkit](https://docs.microsoft.com/fr-FR/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).  Cet article souligne les approches et optimisations automatisées, ainsi que des liens vers des ressources associées pour obtenir une aide supplémentaire.
+Les mises à niveau sur place peuvent être automatisées à l’aide d’outils de déploiement de système d’exploitation tels que [System Center Configuration Manager](https://docs.microsoft.com/fr-FR/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) ou [Microsoft Deployment Toolkit](https://docs.microsoft.com/fr-FR/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).  Cet article souligne les approches et optimisations automatisées, ainsi que des liens vers des ressources associées pour obtenir une aide supplémentaire.
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Mise à niveau d’un petit nombre d’ordinateurs
 
