@@ -8,16 +8,21 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 65602cb3175f8a930537746d831bb85f26de0383
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 4915bf5d1b89720c65a5134b23d9d837febff357
+ms.sourcegitcommit: 184957e2878388e0d427a7ee47577d29c4e3c483
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390361"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605963"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications pour la documentation du bureau géré Microsoft
 
 Cette rubrique répertorie les rubriques nouvelles et mises à jour dans la [documentation du bureau géré Microsoft](index.yml).
+
+## <a name="july-2019"></a>Juillet 2019
+Rubrique nouvelle ou modifiée | Description
+--- | ---
+[Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Rubrique mise à jour
 
 ## <a name="june-2019"></a>2019 juin
 Rubrique nouvelle ou modifiée | Description
