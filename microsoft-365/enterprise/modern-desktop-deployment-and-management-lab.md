@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: c056aba81edc079f0577dea8d4ef535d7e6cc32a
-ms.sourcegitcommit: a84cf473bc61a7bb1cfca221cf435e0a418305b2
+ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576504"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584530"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
 Ces laboratoires pratiques téléchargeables décrivent le déploiement de Windows 10 et le déploiement d’Office 365, ainsi que les éléments de gestion et de configuration connexes après le déploiement. Cette formation est vivement recommandée pour les organisations se préparant à la fin de vie de Windows 7, mais s’applique également si vous utilisez actuellement Windows 10 et Office 365 Plus ou Office 2019. Vous trouverez des guides pour Windows 10, Office 365 ProPlus, Enterprise Mobility + Security et des produits et services connexes.
 
-Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Office 365 ProPlus. Les ateliers couvrent les étapes et les outils décrites dans la roulette de déploiement de bureau, couvrant System Center Configuration Manager, Windows Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot et les autres aspects.
+Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Office 365 ProPlus. Les ateliers abordent les étapes et les outils décrits dans la roue Déploiement du bureau, couvrant System Center Configuration Manager, Analyses du bureau, Outil de personnalisation Office, OneDrive, Windows Autopilot et autres.
 
 Dans le cadre du processus du[déploiement des ordinateurs de bureau modernes](http://www.aka.ms/howtoshift) pour Windows 10 et Office 365 ProPlus, la création d’un environnement isolé ou bac à sable est le point de départ recommandé lorsque vous commencez à explorer les mises à jour de l’outil de déploiement et à tester l’automatisation liée au déploiement.
 
@@ -60,7 +60,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 ### <a name="device-and-app-readiness"></a>**Préparation des applications et des appareils**
 
-  - Windows Analytics
+  - Analyses du bureau
   - Mode Entreprise et liste des sites en mode Entreprise d’Internet Explorer
 
 ### <a name="directory-and-network-readiness"></a>**Préparation des répertoires et du réseau**
