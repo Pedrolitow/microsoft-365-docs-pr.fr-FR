@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Présentation du processus de déploiement du Bureau.
-ms.openlocfilehash: b9264f8d9232bf1b88372694d43e2d2c70c8cb70
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 60389149e286bca8e27f50dabee8aaf03f52c90c
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814655"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584520"
 ---
 # <a name="getting-started---desktop-deployment"></a>Prise en main - Déploiement Bureau
 
@@ -86,7 +86,7 @@ En un clic est relativement différent des anciens packages basés sur MSI. En u
 
 Avant de commencer, vous souhaitez créer un plan de haut-niveau et obtenir les sponsors nécessaires. La roue de nos processus de déploiement décrit les étapes critiques pour vous aider à identifier les membres de l’équipe essentiels et les ressources pour gérer dans les zones de déploiement suivantes.
 
-**[Étape 1 : Disponibilité des applications et appareils](https://aka.ms/mdd1) ** pour un déploiement réussi vous devez d’abord connaître ce que vous avez. Cela signifie tenir un inventaire de vos appareils et applications et vérifier la compatibilité. Pour vous aider, vous pouvez tirer parti des outils disponibles dans notre service basé sur le cloud, Windows Analytics. Windows Analytics vous permet de puiser dans les ressources de compatibilité et données de diagnostic collectées sur des centaines de millions de PC, afin d’évaluer les applications et les pilotes en cours d’exécution sur votre appareil pour que vous puissiez établir la préparation de votre bureau. Vous pouvez même exporter une liste de « PC prêts pour le déploiement » à partir de Windows Analytics vers System Center Configuration Manager si vous l’utilisez, vous permettant de créer des collections de PCs basées sur les données dès qu’ils sont prêts.
+**[Étape 1 : Disponibilité des applications et appareils](https://aka.ms/mdd1) ** pour un déploiement réussi vous devez d’abord connaître ce que vous avez. Cela signifie tenir un inventaire de vos appareils et applications et vérifier la compatibilité. Pour vous aider, vous pouvez tirer parti des outils disponibles dans notre service basé sur le cloud, Desktop Analytics. Desktop Analytics vous permet de puiser dans les ressources de compatibilité et données de diagnostic collectées sur des centaines de millions de PC, afin d’évaluer les applications et les pilotes en cours d’exécution sur votre appareil pour que vous puissiez établir la préparation de votre bureau. Vous pouvez même exporter une liste de « PC prêts pour le déploiement » à partir de Desktop Analytics vers System Center Configuration Manager si vous l’utilisez, vous permettant de créer des collections de PCs basées sur les données dès qu’ils sont prêts.
 
 
   [Prise en main de Upgrade Readiness](https://docs.microsoft.com/fr-FR/windows/deployment/upgrade/upgrade-readiness-get-started)
