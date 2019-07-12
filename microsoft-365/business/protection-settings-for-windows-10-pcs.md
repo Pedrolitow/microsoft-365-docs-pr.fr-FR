@@ -3,7 +3,7 @@ title: Définir les paramètres de protection des appareils pour les PC Windows 
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres par défaut et d’autres paramètres disponibles dans Microsoft 365 Business pour sécuriser les appareils Windows 10.
-ms.openlocfilehash: 5dc6ede8f31f5837d59c200e0b76083dcf419e05
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 844bddc4b93c7dc543ad6c6a79f5cf92c96ceff0
+ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660342"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630606"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Définir les paramètres de protection des appareils pour les PC Windows 10
 
@@ -34,7 +34,7 @@ Visionnez une vidéo sur la sécurisation des appareils Windows 10 avec Microsof
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. SGo vers le centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>à l’adresse. 
+1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>l’adresse. 
     
 2. Dans le volet de navigation de gauche, choisissez **Ajout**de **stratégies** \> de **périphériques** \> .
   
