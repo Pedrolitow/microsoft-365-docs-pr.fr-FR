@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment configurer et protéger vos comptes d’administrateur.
-ms.openlocfilehash: 857c24ac0ec134e119b3de083afe8dc3269bdbe2
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 33bf7f8a2a1e666a7822be1d52ac2d81fc681230
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183282"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772471"
 ---
 # <a name="protect-your-administrator-accounts"></a>Protéger vos comptes d’administrateur
 
@@ -38,7 +38,7 @@ Lorsque vous vous inscrivez à Microsoft 365 Business et que vous entrez vos inf
 
 ## <a name="create-additional-admin-accounts"></a>Créer des comptes d’administration supplémentaires
 
-Utilisez les comptes administrateur uniquement pour l’administration. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour utiliser régulièrement les applications Office et utiliser uniquement leur compte administratif si nécessaire pour gérer les comptes, les appareils et les autres fonctions d’administration.  Il est également recommandé de supprimer la licence d’entreprise Microsoft 365 des comptes administrateur afin de ne pas avoir à les payer.
+Utilisez les comptes administrateur uniquement pour l’administration. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour utiliser régulièrement les applications Office et utiliser uniquement leur compte administratif si nécessaire pour gérer les comptes, les appareils et les autres fonctions d’administration. Il est également recommandé de supprimer la licence d’entreprise Microsoft 365 des comptes administrateur afin de ne pas avoir à les payer.
 
 Vous devez configurer au moins un compte d’administrateur global supplémentaire pour accorder un accès administrateur à un autre employé approuvé. Vous pouvez également créer des comptes d’administration distincts pour la gestion des utilisateurs (ce rôle est appelé **administrateur de gestion des utilisateurs**). Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .
 

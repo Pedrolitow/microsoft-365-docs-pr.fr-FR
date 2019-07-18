@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Vous inscrire pas à pas pour les campagnes Microsoft 365. Protégez votre campagne contre les menaces Cybersecurity pour la messagerie, les données et la communication.
-ms.openlocfilehash: b1af4138da6f935fc2745444eea4ad82f9f128d6
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183279"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772461"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>S’inscrire à Microsoft 365 pour les campagnes 
 
@@ -47,7 +47,7 @@ Voici comment effectuer votre inscription pour les campagnes Microsoft 365.
     > Si vous disposez déjà d’un abonnement Office 365 pour les entreprises et que vous souhaitez ajouter les offres Microsoft 365 pour les campagnes, accédez à [Ajouter microsoft 365 pour les campagnes à un abonnement existant](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
 1. **Dans la page Microsoft 365 Business**, entrez les détails de votre entreprise. Pour l' **adresse de messagerie professionnelle**, utilisez une adresse de messagerie actuelle. Nous avons seulement besoin de cette adresse pour rester en contact avec vous pendant le processus d’installation. Sélectionnez **Suivant**.
 1. **Sur la page créer votre ID d’utilisateur**:
-    1. Dans **nom d’utilisateur**, entrez le nom ou l’alias de votre choix pour votre adresse de messagerie. Par exemple, vous pouvez simplement être appelé Alice ou Rob. Dans une campagne plus grande, AliceC ou AliceChavez peut être plus judicieux.
+    1. Dans **nom d’utilisateur**, entrez le nom ou l’alias de votre choix pour votre adresse de messagerie. Par exemple, il se peut que vous vouliez être appelé simplement Alice ou Rob. Dans une campagne plus grande, AliceC ou AliceChavez peut être plus judicieux.
     2. Dans **votre entreprise**, entrez le nom de la campagne pour laquelle vous travaillez. Par exemple, ContosoCampaign. Si vous possédez déjà un domaine, utilisez ce nom ici. 
     3. Dans **Sélectionner un domaine**, sélectionnez **. onmicrosoft.com** pour le moment. Nous pouvons vous configurer avec un domaine plus tard ou vous aider à obtenir Microsoft 365 connecté à un domaine que vous possédez déjà.
     4. Créez un mot de passe et sélectionnez **créer mon compte**. 
@@ -63,7 +63,7 @@ Voici comment effectuer votre inscription pour les campagnes Microsoft 365.
     1. Vérifiez que le coût par utilisateur est de $5,00. 
     2. Si vous souhaitez seulement vous configurer pour l’instant, sélectionnez **suivant**. 
     3. Facultatif: ajoutez des licences supplémentaires maintenant en modifiant le numéro dans le champ **utilisateur** . [Le personnel avec lequel vous travaillez peut recevoir des licences pour Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) à tout moment.
-7. **Comment souhaitez-vous payer? page**: sélectionnez **nouvelle carte de crédit**, entrez les informations de votre carte de crédit professionnelle, puis sélectionnez **passer une commande**. Si vous le souhaitez, vous pouvez également utiliser un compte bancaire.
+7. **Comment souhaitez-vous payer? page**: sélectionnez **nouvelle carte de crédit**, entrez les informations de votre carte de crédit professionnelle, puis sélectionnez **passer une commande**. Si vous préférez, il est également possible d’utiliser un compte bancaire.
 8. **Cette page peut prendre quelques instants**: vous trouverez des détails sur l’emplacement de connexion et votre ID d’utilisateur. Nous allons également envoyer ces informations à l’adresse de messagerie que vous avez entrée au cours de l’étape 2 ci-dessus.
 
 Vos étapes d’inscription sont terminées! Si vous souhaitez passer aux étapes suivantes, sélectionnez Démarrer le **programme d’installation**ou revenez plus tard pour terminer les étapes. Lorsque vous êtes prêt, consultez votre courrier électronique (de l’étape 2) pour rechercher votre nom d’utilisateur et votre mot de passe afin de pouvoir vous connecter la prochaine fois. Il s’agit des informations d’identification d’administrateur ou d’administrateur général.

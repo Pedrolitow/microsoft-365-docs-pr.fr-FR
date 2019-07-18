@@ -22,26 +22,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez des réunions en ligne avec Microsoft Teams.
-ms.openlocfilehash: 2b17ee8abb2758f7042147fda6ac7b9da68acc78
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 67a58b17d3e5153d8e0f36788f68ca7c0e204d6f
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080771"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772301"
 ---
 # <a name="set-up-meetings"></a>Configurer des réunions
 
 Les réunions dans Microsoft teams incluent l’audio, la vidéo et le partage. Étant donné qu’ils sont en ligne, vous disposez toujours d’un espace de réunion et vous n’avez jamais besoin d’une salle ou d’un projecteur pour votre campagne.Les réunions Microsoft teams constituent un excellent moyen de collaborer avec votre personnel et des volontaires à l’intérieur et à l’extérieur de votre organisation. Vous n’avez pas besoin d’être membre de votre organisation ou de disposer d’un compte pour participer à une réunion. Pour votre campagne politique, vous pouvez planifier et exécuter des réunions en ligne à l’aide de Microsoft Teams. Vous pouvez inclure du personnel, des volontaires et des invités à l’extérieur de votre organisation. Lors d’une réunion, vous pouvez partager votre écran, partager des fichiers, affecter des tâches, et bien plus encore.
 
-[![Illustration de deux utilisateurs ayant une réunion à partir d’un ordinateur de bureau et d’un téléphone mobile](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![Illustration de deux utilisateurs dans une réunion](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Téléchargez un infographie au [format PDF](https://go.microsoft.com/fwlink/?linkid=2078712) ou [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) pour obtenir une vue d’ensemble rapide de la façon de joindre ou d’héberger une réunion en ligne avec Microsoft Teams.
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
 Suivez ces meilleures pratiques pour vos réunions en ligne:
-1. Planifiez vos réunions en ligne directement dans Microsoft Teams. Vous pouvez choisir une équipe et un canal pour inviter automatiquement les participants à cette équipe ou à ce canal.
-2. Vous avez besoin d’une réunion impromptue? Si vous êtes dans une conversation en un seul, choisissez **Conférence maintenant** pour démarrer un appel vidéo ou audio avec la personne avec laquelle vous discutez. 
+1. Planifiez vos réunions en ligne directement dans Microsoft Teams. Vous pouvez choisir une équipe et un canal, et teams va inviter automatiquement les participants à cette équipe ou à ce canal.
+2. Vous avez besoin d’une réunion impromptue? Si vous êtes dans une conversation en un seul, sélectionnez **Conférence maintenant** pour démarrer une vidéo ou un appel audio avec la personne avec laquelle vous discutez. 
 
 
 ## <a name="schedule-a-meeting"></a>Planifier une réunion

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble de la configuration de Microsoft 365 pour les campagnes
-ms.openlocfilehash: 40894a15efd486ec1e5052725acc46f63cd811b1
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 882ca516d0e06658e24f675d5a1fe2b21a3c98b3
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183283"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772331"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Configurer Microsoft 365 pour les campagnes
 
@@ -38,7 +38,7 @@ Le diagramme suivant décrit comment les administrateurs configurent Microsoft 3
 
 ![Étapes de configuration de Microsoft 365 pour les campagnes](media/M365-democracy-SetUpProcess.png)
 
-Pour les campagnes qui bénéficient d’une tarification spéciale, commencez par [demander une invitation de Microsoft](https://m365forcampaigns.microsoft.com/), puis inscrivez-vous à [Microsoft 365 pour les campagnes](m365-campaigns-sign-up.md). Pour terminer le programme d’installation, [Exécutez l’Assistant Installation](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) pour configurer les paramètres principaux.
+Pour les campagnes qui bénéficient d’une tarification spéciale, commencez par [demander une invitation de Microsoft](https://m365forcampaigns.microsoft.com/), puis inscrivez-vous à [Microsoft 365 pour les campagnes](m365-campaigns-sign-up.md). Pour terminer l’installation, [Exécutez l’Assistant Installation](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) pour configurer les paramètres principaux.
 
 Pour toutes les autres organisations, une fois que vous vous êtes [inscrit à Microsoft 365 Business](../business/sign-up.md), exécutez le programme d’installation en [exécutant l’Assistant Installation](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) pour configurer les paramètres principaux.
 

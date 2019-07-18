@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Connectez-vous à Microsoft 365 pour les campagnes. Protégez votre campagne contre les menaces Cybersecurity pour la messagerie, les données et la communication.
-ms.openlocfilehash: 2bf147f1d062ecbccabade355e50cff16bf30089
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: be24db2a7614e312bff96e5689f58a439de224a6
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183276"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772441"
 ---
 # <a name="sign-in-to-microsoft-365-for-campaigns"></a>Se connecter à Microsoft 365 pour les campagnes
 

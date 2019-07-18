@@ -21,21 +21,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Partagez des fichiers et des vidéos à l’intérieur de votre campagne avec Microsoft teams et SharePoint..
-ms.openlocfilehash: bcc81b65661e113083705c6536f6de4d030a3de7
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+description: Partagez des fichiers et des vidéos à l’intérieur de votre campagne avec Microsoft teams et SharePoint.
+ms.openlocfilehash: c554ba2b4e7945cefa9a1e7114b3726efa58561e
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080782"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772341"
 ---
 # <a name="share-files-and-videos"></a>Partager des fichiers et des vidéos
 
 Lorsque vous avez besoin de contrôler les personnes autorisées à consulter, ainsi que les personnes qui peuvent modifier, vos fichiers, vous devez stocker les fichiers dans un emplacement sécurisé, où vous pouvez vous assurer que les autorisations sont appliquées de manière appropriée. Vous pouvez utiliser Microsoft teams pour stocker vos fichiers, puis partager les fichiers à l’intérieur ou à l’extérieur de votre campagne avec Microsoft teams ou en envoyant des liens SharePoint. L’envoi d’un lien plutôt que d’une pièce jointe à un message signifie que vous pouvez identifier les personnes qui visualisent et modifier les fichiers et qu’elles ne peuvent pas être affichées ou modifiées sans votre autorisation. 
 
-![Diagramme d’une fenêtre Microsoft teams avec l’onglet fichiers ouvert et obtenir un lien dans le menu](media/m365-democracy-teams-sharefiles.png)
+![Diagramme d’une fenêtre Microsoft Teams, affichant l’onglet fichiers et obtenir un lien dans le menu](media/m365-democracy-teams-sharefiles.png)
 
-Avec vos fichiers dans Microsoft teams et SharePoint, vous pouvez également travailler sur les fichiers et passer en revue les modifications apportées par chacun d’eux. Utiliser Microsoft teams pour partager des fichiers au sein d’une campagne politique, vous pouvez le faire à l’aide de Microsoft Teams. Si vous devez partager de manière externe avec des personnes en dehors de la campagne, vous pouvez les ajouter en tant qu’invités à une équipe ou leur envoyer un lien SharePoint sécurisé.
+Avec vos fichiers dans Microsoft teams et SharePoint, vous pouvez également travailler sur les fichiers et passer en revue les modifications apportées par chacun d’eux. Utiliser Microsoft teams pour partager des fichiers au sein d’une campagne politique. Si vous devez partager de manière externe avec des personnes en dehors de la campagne, vous pouvez les ajouter en tant qu’invités à une équipe ou leur envoyer un lien SharePoint sécurisé.
 
 Vous pouvez également utiliser Microsoft Stream pour stocker et partager des vidéos pour votre campagne. Ces vidéos ne sont pas consultables par le public afin d’être idéales pour la messagerie de campagne interne.
 

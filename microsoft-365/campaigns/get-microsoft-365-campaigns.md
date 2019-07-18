@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenez Microsoft 365 pour les campagnes afin de protéger votre campagne contre les menaces Cybersecurity pour la messagerie, les données et les communications.
-ms.openlocfilehash: 21131707d88168f8886472f3ef0b42603229d8c5
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 0e038f3b33db957d3503ee091b075b767c30eeda
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183281"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772511"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtenir Microsoft 365 pour les campagnes
 
@@ -53,7 +53,7 @@ Il n’y a pas d’engagement de délai minimal lorsque vous vous inscrivez à M
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>Comment puis-je bénéficier d’une tarification spéciale?
 
-1. Accédez à https://m365forcampaigns.microsoft.com/ et fournissez quelques détails sur votre organisation. Les détails que vous fournissez nous aideront à vérifier que vous êtes une campagne ou une partie de niveau national. Il n’y a aucun engagement lorsque vous remplissez ce formulaire. 
+1. Accédez à https://m365forcampaigns.microsoft.com/ et fournissez quelques détails sur votre organisation. Les détails que vous fournissez nous aident à vérifier que vous êtes un fournisseur de campagne ou de partie aux États-Unis. Il n’y a aucun engagement lorsque vous remplissez ce formulaire. 
 2. Une fois que vous avez terminé le formulaire, il nous faut quelques jours pour vérifier vos informations. 
 3. Une fois que nous avons vérifié que vous êtes le représentant d’une campagne ou d’une partie de niveau national, vous recevrez une invitation par courrier électronique de Microsoft. Votre invitation comprend un lien d’abonnement spécifique à votre organisation. 
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business
-ms.openlocfilehash: 2ebf6994cc7ba4026c5985e6b7accfc832ab003c
-ms.sourcegitcommit: c7ea55e36484d64db3f3af8e111a83cfc634143e
+ms.openlocfilehash: 5a3a9aada60875a7ee1f43a870e4d2731f84d4c1
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35192651"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772551"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -279,7 +279,7 @@ Une fois que la fonctionnalité est activée, vous pouvez rechercher des fichier
 
 ## <a name="activity-alerts"></a>Alertes d’activité
 
-Vous pouvez utiliser des alertes d’activité pour effectuer le suivi des activités de l’administrateur et des utilisateurs et détecter les incidents de protection contre les menaces et les logiciels malveillants dans votre organisation. Votre abonnement inclut un ensemble de stratégies par défaut, mais vous pouvez également en créer d’autres. Pour plus d’informations, consultez la rubrique [Alert Policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Par exemple, si vous stockez un fichier important dans SharePoint que vous ne voulez pas que quiconque partage en externe, vous pouvez créer une notification qui vous avertit si une personne ne la partage pas.
+Vous pouvez utiliser des alertes d’activité pour effectuer le suivi des activités de l’administrateur et des utilisateurs et détecter les incidents de protection contre les menaces et les logiciels malveillants dans votre organisation. Votre abonnement inclut un ensemble de stratégies par défaut, mais vous pouvez également créer des stratégies personnalisées. Pour plus d’informations, consultez la rubrique [Alert Policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Par exemple, si vous stockez un fichier important dans SharePoint que vous ne voulez pas que quiconque partage en externe, vous pouvez créer une notification qui vous avertit si une personne ne la partage pas.
 
 La figure suivante illustre les stratégies par défaut incluses dans Microsoft 365 Business. <br/><br/>
     ![Stratégies d’alerte par défaut incluses avec Microsoft 365 Business.](media/alertpolicies.png)
@@ -289,8 +289,8 @@ La figure suivante illustre les stratégies par défaut incluses dans Microsoft 
 Vous pouvez empêcher les membres de votre organisation de partager leurs calendriers, ou vous pouvez également gérer ce qu’ils peuvent partager. Par exemple, vous pouvez limiter le partage aux heures de disponibilité uniquement.
 
 1. Accédez au centre d’administration sur <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> et sélectionnez **paramètres** \> **services & compléments**
-2. Sur la page des **compléments & services** , choisissez **calendrier**, puis choisissez si les personnes de votre organisation peuvent partager leurs calendriers avec des personnes extérieures à Office 365 ou Exchange, ou avec n’importe qui. 
-    Si vous choisissez le partage avec quelqu’un, vous pouvez également décider de partager uniquement les informations de disponibilité.
+2. Sur la page des **compléments & services** , choisissez **calendrier**, puis indiquez si les personnes de votre organisation peuvent partager leurs calendriers avec des personnes extérieures à Office 365 ou Exchange, ou avec n’importe qui. 
+    Si vous choisissez le partage avec quiconque, vous pouvez également décider de partager uniquement les informations de disponibilité.
 
 3. Choisissez **enregistrer les modifications** au bas de la page.
 

@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez-vous contre le hameçonnage et les autres attaques à l’aide de Microsoft 365 pour les campagnes.
-ms.openlocfilehash: a0e5876d0b1a3b454a00df79f3d0808b26ef8e1e
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 4902a2273eef110ced9ae16c3b91f39ac990a736
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080794"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772481"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protégez-vous contre le hameçonnage et les autres attaques
 
-Microsoft 365 inclut un grand nombre de protections pour vous protéger contre les attaques, mais il existe des actions que vous pouvez effectuer pour limiter et réduire le risque d’attaques en ligne.
+Microsoft 365 inclut de nombreuses protections pour vous protéger contre les attaques, mais vous pouvez limiter et réduire le risque d’attaques en ligne.
 
 - Courrier indésirable **ou** courrier indésirable Il existe de nombreuses raisons pour lesquelles vous pouvez recevoir du courrier indésirable et non pas l’ensemble du courrier indésirable. Toutefois, vous pouvez réduire ce qui vous parcourez et réduire ainsi les risques d’attaques en filtrant le courrier indésirable.
 - **Hameçonnage** Une escroquerie de type phishing est un message électronique qui semble légitime mais qui tente d’obtenir vos informations personnelles ou de voler votre argent.
@@ -46,7 +46,7 @@ Suivez ces [10 conseils sur la façon de réduire le courrier](https://support.o
 
 **Rapport.**
 
-Signaler tout hameçonnage ou autre courrier frauduleux que vous recevez. Sélectionnez le message, puis cliquez sur **signaler un message** sur le ruban pour signaler l’expéditeur du message, puis bloquer le message.
+Signaler tout hameçonnage ou autre courrier frauduleux que vous recevez. Sélectionnez le message, puis choisissez **message de rapport** dans le ruban.
 Voici plus d’informations sur la [création de rapports de courrier indésirable et de hameçonnage](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 **Éviter le hameçonnage**
@@ -60,13 +60,13 @@ Découvrez cinq types d’arnaques courants en matière d' [abus, de hameçonnag
 
 **Vérifier que vos courriers électroniques semblent légitimes à d’autres personnes**
 
-Aidez vos clients à faire confiance à vos communications: ajoutez une signature numérique pour prouver qu’elle provient de vous. Consultez [la rubrique sécuriser les messages à l’aide d’une signature numérique](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
+Aidez vos clients à faire confiance à vos communications en ajoutant une signature numérique pour prouver qu’elles proviennent de vous. Consultez [la rubrique sécuriser les messages à l’aide d’une signature numérique](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
 ## <a name="help-protect-your-campaign-from-online-threats"></a>Protéger votre campagne contre les menaces en ligne
 
 Téléchargez cette infographie avec des conseils pour vous et les membres de votre équipe de campagne:
 
-[![Image pour vous aider à protéger votre graphique d’informations sur la campagne](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[! Graphique de l’aide sur la protection de votre campagne](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)] (téléchargements/M365CampaignsWhatCanUsersDoToSecure. pdf)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

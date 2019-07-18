@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment envoyer des messages chiffrés à l’aide d’Outlook.
-ms.openlocfilehash: 16e6a6977d7cd8ec4d6bf59adbcd196b14995752
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183275"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772321"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Chiffrer ou étiqueter votre courrier électronique sensible
 
@@ -54,7 +54,7 @@ Vous pouvez en savoir plus sur la configuration du chiffrement du courrier élec
 
 ### <a name="automatically-encrypt-email-messages"></a>Chiffrer automatiquement les messages électroniques
 
-Les administrateurs peuvent créer des règles de flux de messagerie pour protéger automatiquement les messages électroniques qui sont envoyés et reçus de votre campagne. Configurez des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement des messages chiffrés provenant de votre organisation ou des réponses aux messages chiffrés envoyés à partir de votre organisation. 
+Les administrateurs peuvent créer des règles de flux de messagerie pour protéger automatiquement les messages électroniques qui sont envoyés et reçus de votre campagne. Configurez des règles pour chiffrer les messages électroniques sortants et supprimez le chiffrement des messages chiffrés provenant de votre organisation ou des réponses aux messages chiffrés envoyés par votre organisation. 
 
 Vous créez des règles de flux de messagerie pour chiffrer les messages électroniques avec les nouvelles fonctionnalités de chiffrement de messages Office 365 (OME). Définir des règles de flux de messagerie pour déclencher le chiffrement des messages avec les nouvelles fonctionnalités de OME à l’aide du centre d’administration Exchange. 
 

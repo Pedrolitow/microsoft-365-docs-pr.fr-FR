@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez-vous contre le hameçonnage et les autres attaques à l’aide de Microsoft 365 pour les campagnes.
-ms.openlocfilehash: 8b83fa9c145f2c17347fc4c2983c64d4003f46c8
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 686a69a7e712e80c4f58cade24a69465fb4e7d33
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183278"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772451"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Protection des ordinateurs Windows 10 et Mac non gérés
 
-Vous pouvez gérer des PC Windows 10 et des Mac en les inscrivant dans Microsoft Intune, ce qui vous permet de vous assurer que ces derniers sont sains et sécurisés avant d’accéder aux données de votre environnement. Toutefois, de nombreuses campagnes et petites entreprises incluent des personnes qui apportent leurs propres appareils (BYOD) qui ne seront pas gérés par l’organisation. Pour ces PC et Mac non gérés, utilisez cet article pour vous assurer que les fonctionnalités de sécurité minimales sont configurées. 
+Vous pouvez gérer des PC Windows 10 et des Mac en les inscrivant dans Microsoft Intune, ce qui vous permet de vous assurer qu’ils sont sains et sécurisés avant d’accéder aux données de votre environnement. Toutefois, de nombreuses campagnes et petites entreprises incluent des personnes qui apportent leurs propres appareils (BYOD), qui ne seront pas gérées par l’organisation. Pour ces PC et Mac non gérés, utilisez cet article pour vous assurer que les fonctionnalités de sécurité minimales sont configurées. 
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 

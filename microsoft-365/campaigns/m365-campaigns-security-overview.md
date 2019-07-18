@@ -21,13 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment protéger votre campagne en renforçant votre sécurité avec Microsoft 365 pour les campagnes.
-ms.openlocfilehash: f5a021e8c13f261ea0faf5dec5e463bfa8454277
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 74c7d5f5836fd77b591389dd467114c93b8ab14e
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080793"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772411"
 ---
+# <a name="bump-up-security-protection-for-your-campaign"></a>Renforcement de la protection de sécurité pour votre campagne
+
+
 ## <a name="overview"></a>Vue d’ensemble 
 Regardez cette vidéo pour découvrir comment vous pouvez protéger votre campagne:
 
