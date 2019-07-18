@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment envoyer des messages chiffrés à l’aide d’Outlook.
-ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772321"
+ms.locfileid: "35778139"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Chiffrer ou étiqueter votre courrier électronique sensible
 
@@ -60,7 +60,7 @@ Vous créez des règles de flux de messagerie pour chiffrer les messages électr
 
 1. Dans un navigateur Web, à l’aide d’un compte professionnel ou scolaire auquel des autorisations d’administrateur général ont été accordées, connectez-vous à Office 365. 
 2. Sélectionnez la vignette admin. 
-3. Dans le centre d’administration Office 365, sélectionnez **centres d’administration > Exchange**. 
+3. Dans le centre d’administration, sélectionnez **centres d’administration > Exchange**. 
 
 Pour plus d’informations, consultez la rubrique [définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
 

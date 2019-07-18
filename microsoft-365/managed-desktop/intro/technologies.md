@@ -3,16 +3,16 @@ title: Technologies de bureau géré Microsoft
 description: Cette rubrique répertorie les technologies et les applications utilisées dans le bureau géré Microsoft.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9c0e6481d0dc80e7cf03de2b748935c2f59f132a
-ms.sourcegitcommit: e54ec86310a18101f4688890cd5a9fc16bbe6f55
+ms.openlocfilehash: 914a90b4267132c9cb942740ceb974b084bcdf82
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35257817"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778089"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies de bureau géré Microsoft
 
@@ -31,7 +31,7 @@ Vous trouverez ci-dessous tous les composants inclus dans les licences d’entre
 Office 365 standard suite (64 bits) * | La suite d’applications Office standard sera livrée avec le périphérique: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype entreprise, OneNote.<br><br>Le complément 64 bits Click to Run (C2R) versions complètes de Microsoft Project et Microsoft Visio ne sont pas inclus dans la suite Office 365 standard.  Toutefois, étant donné que l’installation de ces applications dépend de l’installation de la suite Office standard, le bureau géré Microsoft a créé des déploiements Intune et des groupes de sécurité par défaut que le client utilisera pour déployer ces applications sur utilisateurs finaux sous licence.  
 Applications du Store |    Microsoft Sway, Power BI Desktop n’est pas fourni avec le périphérique. Ces applications peuvent être téléchargées à partir du Microsoft Store.
 Applications Win32 |    Power BI Pro, Azure information protection client et le planificateur Microsoft ne sont pas fournis avec le périphérique et peuvent être empaquetés pour être déployés par le client. 
-Applications Web |  Yammer, Office Online, Delve, Flow, StaffHub, PowerApp ne sont pas fournis avec l’appareil. Les utilisateurs peuvent accéder à la version Web de ces applications à l’aide d’un navigateur.
+Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, PowerApp ne sont pas livrés avec l’appareil. Les utilisateurs peuvent accéder à la version Web de ces applications à l’aide d’un navigateur.
 PBX Cloud Skype entreprise Online | Cette fonctionnalité est disponible via Office 365. Microsoft Managed Desktop ne configure aucun aspect de ce service.
 
 ## <a name="windows-10-enterprise-e5"></a>Windows 10 entreprise E5
@@ -42,7 +42,7 @@ Credential Guard |  Microsoft fournira des conseils et gérera les aspects de Cl
 Virtualisation d’application (App-V) |    Microsoft Managed Desktop ne prend pas en charge ce type de déploiement car il n’est pas pris en charge sur Intune.
 Virtualisation de l’expérience utilisateur (UE-V) | Cela n’est pas utilisé avec les appareils gérés de bureau géré Microsoft.
 Expérience utilisateur gérée  | Cela n’est pas utilisé avec les appareils gérés de bureau géré Microsoft. MDM est utilisé comme solution pour la gestion des appareils.
-Windows Defender Advanced Threat Protection |   Cette fonctionnalité est utilisée par le bureau géré Microsoft pour gérer les stratégies de sécurité des appareils. 
+Protection avancée contre les menaces Microsoft Defender | Cette fonctionnalité est utilisée par le bureau géré Microsoft pour gérer les stratégies de sécurité des appareils. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
