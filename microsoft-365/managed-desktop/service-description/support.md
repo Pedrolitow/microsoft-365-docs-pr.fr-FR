@@ -3,16 +3,16 @@ title: Prise en charge du bureau géré Microsoft
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 97637f28f5a5de292385a36472966f3272b2f09a
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 83f4d8b6fb9f2938151db8dfea37b3c9f18124c9
+ms.sourcegitcommit: 8f57be80955cd374d418c7e1a78849ff3e1d630f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970461"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907545"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Prise en charge du bureau géré Microsoft
 
@@ -25,15 +25,15 @@ Les clients peuvent contacter Microsoft Managed Desktop Operations pour:
 
 ## <a name="whats-included"></a>Qu’est-ce qui est inclus?
 
-Prise en charge du bureau géré Microsoft:
+La prise en charge de Microsoft Managed Desktop inclut:
 
-- Fournit une équipe d’ingénieurs de support dédiés aux appareils de bureau gérés Microsoft
-- Prend en charge les appareils de bureau gérés Microsoft et les utilisateurs finaux affectés à ces appareils
-- Octroie un accès administratif limité aux appareils de bureau gérés Microsoft pour les ingénieurs de support technique de gestion des appareils de bureau gérés Microsoft 
+- Une équipe d’ingénieurs dédiée aux appareils de bureau gérés Microsoft
+- Options de prise en charge pour les utilisateurs finaux avec les appareils de bureau gérés Microsoft
+- Octroie un accès administratif limité aux appareils de bureau gérés Microsoft pour les ingénieurs gérant les appareils de bureau gérés Microsoft 
 
 Produits pris en charge:
 
-- Windows 10 avec Windows Defender-protection avancée contre les menaces (WDATP) 
+- Windows 10 avec Microsoft Defender-protection avancée contre les menaces 
 - Sous-ensemble de la suite Office 365: Outlook, Word, PowerPoint, Excel, Skype entreprise client, Microsoft teams 
 - Microsoft Store pour Entreprises 
 - Client OneDrive entreprise 
@@ -46,7 +46,7 @@ Informations de support technique:
 - Les appareils gérés par Microsoft résidant dans le groupe de test et les appareils de bureau gérés non-Microsoft ne sont pas dans l’étendue 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Découvrez comment les administrateurs informatiques peuvent obtenir de l’aide](../working-with-managed-desktop/admin-support.md)
 - [Découvrez comment les utilisateurs finals peuvent obtenir de l’aide](../working-with-managed-desktop/end-user-support.md)
