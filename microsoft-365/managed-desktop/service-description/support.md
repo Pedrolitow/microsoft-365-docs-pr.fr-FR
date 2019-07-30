@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 83f4d8b6fb9f2938151db8dfea37b3c9f18124c9
-ms.sourcegitcommit: 8f57be80955cd374d418c7e1a78849ff3e1d630f
+ms.openlocfilehash: 69e8463ce6bfffcd2ee5e8dd0f7f724910b13802
+ms.sourcegitcommit: d137cb1bd67a79d8af84357dc156824830d35aa7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907545"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "35924877"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Prise en charge du bureau géré Microsoft
 
@@ -40,7 +40,7 @@ Produits pris en charge:
 
 Informations de support technique:
 
-- Actuel: Amérique du Nord, Canada (hors Québec), Royaume-Uni et Australie uniquement (24 x 7) 
+- Actuel: Amérique du Nord, Canada (à l’exclusion du Québec), le Royaume-Uni, l’Australie et la Nouvelle-Zélande uniquement (24 h) 
 - L’anglais est la seule langue prise en charge pour les conversations téléphoniques et de conversation avec les clients 
 - Nous travaillons en partenariat avec le support technique de votre entreprise, mais sans le remplacer; Les applications métier, les ressources réseau, etc., sont toujours gérées par votre support technique 
 - Les appareils gérés par Microsoft résidant dans le groupe de test et les appareils de bureau gérés non-Microsoft ne sont pas dans l’étendue 
