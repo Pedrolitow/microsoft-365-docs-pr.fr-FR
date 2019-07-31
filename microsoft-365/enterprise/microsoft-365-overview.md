@@ -3,20 +3,20 @@ title: Vue d’ensemble de Microsoft 365 Entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2019
-ms.audience: ITPro
+ms.date: 07/30/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 Enterprise.
-ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: ec2a8f0d60f50503f8f5cf457c2999598e248053
+ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553333"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35937419"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 Entreprise
 
@@ -30,9 +30,9 @@ Microsoft 365 Enterprise se compose des éléments suivants:
 
 |||
 |:-------|:-----|
-| Office 365 pour entreprises | Inclut Office 365 ProPlus, les dernières applications Office pour votre PC et Mac (par exemple, Word, Excel, PowerPoint, Outlook, etc.) et une suite complète de services en ligne pour la messagerie, le stockage de fichiers et la collaboration, les réunions et bien plus encore. |
+| Services de productivité et applications locales et en nuage | Inclut Office 365 ProPlus, les dernières applications Office pour votre PC et Mac (par exemple, Word, Excel, PowerPoint, Outlook, etc.) et une suite complète de services en ligne pour la messagerie, le stockage de fichiers et la collaboration, les réunions et bien plus encore. |
 | Windows 10 Entreprise | Répond aux besoins des organisations de grande et moyenne envergure, offrant aux utilisateurs la version de Windows et des professionnels de l’informatique la plus productive et la plus sécurisée avec un déploiement complet, des appareils et la gestion des applications. |
-| Enterprise Mobility + Security (EMS) | Inclut Microsoft Intune, un service de gestion de la mobilité d’entreprise (EMM) basé sur le Cloud qui permet à vos employés d’être productifs tout en maintenant la protection des données de votre entreprise. |
+| Services de gestion des appareils et de sécurité avancée | Inclut Microsoft Intune, un service de gestion de la mobilité d’entreprise (EMM) basé sur le Cloud qui permet à vos employés d’être productifs tout en maintenant la protection des données de votre entreprise. |
 |||
 
 ## <a name="plans"></a>Plans
@@ -41,10 +41,17 @@ Microsoft 365 Enterprise est disponible en trois plans.
 
 |||
 |:-------|:-----|
-| E3 | Inclut Office 365 entreprise, Windows 10 entreprise et Enterprise Mobility + Security (EMS). |
-| E5 | Comprend toutes les fonctionnalités E3's, ainsi que les outils de sécurité, vocaux et d’analyse de données avancés. |
-| F1 | Conçu spécialement pour connecter les travailleurs terrain aux outils et aux ressources nécessaires au bon fonctionnement. Les travailleurs terrain sont les premiers à prendre en main avec vos clients et représentent la valeur et la marque de votre entreprise, |
+| E3 | Accédez aux produits et fonctionnalités principaux dans Microsoft 365 afin d’améliorer la productivité de l’espace de travail et de favoriser l’innovation, en toute sécurité. |
+| E5 | Accédez aux derniers produits et fonctionnalités de Microsoft 365, y compris les outils de protection avancée contre les menaces, de sécurité et de collaboration.. Comprend toutes les fonctionnalités E3's, ainsi que les outils de sécurité, vocaux et d’analyse de données avancés. |
+| F1 | Connectez-vous à vos collaborateurs terrain par le biais d’outils et de ressources spécialisés qui leur permettent d’effectuer leur travail. |
 |||
+
+Si vous avez Microsoft 365 Enterprise E3, vous pouvez également obtenir ces [offres](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
+
+- Identité & protection contre les menaces
+- Protection des informations & conformité
+
+Ces offres contiennent des fonctionnalités supplémentaires incluses dans Microsoft 365 entreprise E5.
 
 Pour plus d’informations, reportez-vous à la rubrique [features and Capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
@@ -52,7 +59,7 @@ Pour plus d’informations, reportez-vous à la rubrique [features and Capabilit
 
 L' [affiche de Microsoft 365 entreprise](http://aka.ms/m365eposter) est un emplacement central où vous pouvez voir:
 
-- Les produits et les fonctionnalités de Microsoft 365 Enterprise et la façon dont ils sont mappés sur les piliers de leur valeur
+- Les avantages de Microsoft 365 Enterprise et la façon dont ils sont mappés sur ses piliers de valeur
 - Plans d’entreprise Microsoft 365 et les composants qu’ils contiennent 
 - Les principaux composants de l’espace de travail moderne, que Microsoft 365 entreprise active.
 - Les principaux scénarios de valeur commerciale de Microsoft 365 Enterprise et les services et produits qui les rendent possibles
@@ -103,6 +110,7 @@ Pour plus d’informations sur le déploiement, voir How:
 |||
 |:-------|:-----|
 ![](./media/m365-poster/m365-fundamentals.svg)| Demandez-vous et travaillez sur une certification Microsoft 365. <BR> Commencez par [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+|||
 
 
 ## <a name="next-step"></a>Étape suivante
