@@ -3,7 +3,7 @@ title: Déployer Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: ac3e023f6a9364f6b9de23cd5b91d0d6fb6dbf1b
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9f67c8b6ac28557e8a37a31ec8ca9e0b318cb79a
+ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072494"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35937406"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
@@ -91,49 +91,15 @@ Utilisez ces ressources pour comprendre comment d’autres personnes ont déploy
 
 ### <a name="how-customers-use-microsoft-365-enterprise"></a>Utilisation de Microsoft 365 Entreprise par les clients
 
-Consultez ces ressources pour savoir comment les clients utilisent Microsoft 365 Entreprise, une solution complète et intelligente qui permet à chacun d’être créatif et de travailler en équipe en toute sécurité :
+Le site Témoignages clients vous permet de voir comment les clients Microsoft utilisent Microsoft 365 Entreprise.
 
-- Construction
-  - [La recherche d’une solution de protection des données révèle les nouvelles fonctionnalités de collaboration de Microsoft 365 dans une entreprise de construction](https://aka.ms/Transbluecasestudy)
-  - [Groupe EMCOR passe au cloud, construit un environnement de travail intelligent avec Microsoft 365](https://aka.ms/EMCOR)
-- Consulting
-  - [ERM contribue à un avenir plus durable avec Microsoft 365](https://aka.ms/ERM_CS)
-- Services énergétiques
-  - [Schlumberger renforce le travail d’équipe avec Microsoft 365](https://aka.ms/Schlumberger_)
-- Ingénierie
-   - [Comment accroître les cadences de production grâce aux outils de collaboration mobiles](https://customers.microsoft.com/story/cadence-partner-professional-services-microsoft-365)
-- Services financiers
-  - [TD Bank dote les employés de technologies d’assistance dans Office 365 et Windows 10](https://aka.ms/tdbankgroup)
-  - [Une start-up de préparation des déclarations de revenus choisit une solution tout-en-un pour développer son activité](https://aka.ms/SOSCaseStudy)
-- Jeux vidéo
-  - [Entreprise de jeux améliore la productivité et les communications avec les appareils Surface et Microsoft 365](https://aka.ms/PlaynGO)
-  - [Razer jouer pour gagner, prend l’avantage dans l’industrie des jeux avec Microsoft 365](https://aka.ms/Razer_)
-- Services de santé
-  - [Lilly conçoit un espace de travail où la collaboration interne et externe favorise l’innovation et accélère la commercialisation des nouveaux médicaments](https://aka.ms/Eli_CLS)
-  - [Une technologie médicale novatrice accélère la prévention du diabète dans le cloud ](https://aka.ms/Soleracasestudy)
-  - [Le système de santé Adventist améliore les soins prodigués à l’aide de Microsoft 365](https://aka.ms/adventisthealth)
-  - [Abrona accélère la mise en conformité au RGPD et augmente la productivité grâce à Microsoft 365](https://aka.ms/Abrona)
-  - [Centra s’engage sur la voie de la transformation et améliore les soins prodigués aux patients grâce aux outils professionnels intelligents signés Microsoft 365](https://aka.ms/Centra_Health)
-  - [Advocate Aurora Health améliore la vie des patients en s’appuyant sur une solution de coordination des soins Microsoft pour renforcer la collaboration](https://aka.ms/Advocate_)
-- Importation
-  - [Entreprise de ventes, marketing et importation augmente la sécurité des données et les coûts de dimensions d’exploitation avec Microsoft 365](https://aka.ms/MvmtGroupNordic)
-- Fabrication
-  - [Une entreprise sidérurgique élimine les coûts liés au matériel, rationalise ses processus informatiques et améliore sa productivité mobile dans le cloud](https://aka.ms/Steeledalecasestudy)
-  - [Un fournisseur d’équipements de broderie adopte des services cloud et en parle à d’autres petites entreprises](https://aka.ms/PriorityLLCCaseStudy)
-  - [Une entreprise familiale montre au monde entier ce que les personnes présentant un handicap peuvent accomplir](https://aka.ms/JCSCaseStudy)
-  - [Un spécialiste de la noix de coco a amélioré la mobilité, ses statistiques de mesure et sa productivité en modernisant ses outils de collaboration](https://aka.ms/SilvermillCS)
-  - [Une entreprise japonaise novatrice met en œuvre une flexibilité et une sécurité renforcée avec Microsoft 365 Business](https://aka.ms/DreamFactoryCaseStudy)
-- Organisations à but non lucratif
-  - [La migration vers le cloud permet aux organisations à but non lucratif d’économiser quelques 500 000 $ tout en améliorant la sécurité, la mobilité et la collaboration ](https://aka.ms/MOWCaseStudy)
-- Services professionnels
-  - [Un cabinet d’avocats spécialisé en droit immobilier et en développement marketing adopte une plateforme cloud pour accompagner son développement ](https://aka.ms/Lieserskaffcasestudy)
-  - [Une entreprise spécialisée dans les technologies du sport aide les athlètes à dépasser leurs performances via le biofeedback et les données ](https://aka.ms/KMOTIONCasestudy)
-  - [La transformation numérique et le cloud permettent à une association d’entreprises de mieux servir ses membres ](https://aka.ms/AIMCS)
-- Transports
-  - [Qantas permet à ses employés de donner le meilleur d’eux-mêmes avec Microsoft 365, pour une expérience client optimale](https://aka.ms/Qantas_CS)
-  - [L’entreprise mobile Amtrak a toujours un temps d’avance grâce à Microsoft 365](https://aka.ms/Amtrak_)
-  - [Amtrak utilise la modernisation de l’espace de travail, permettant de réduire les coûts de main-d’œuvre et d’améliorer la transparence de portefeuille à l’aide de Microsoft 365](https://aka.ms/Amtrak_CS)
+1. Accédez à [https://customers.microsoft.com/](https://customers.microsoft.com/),puis cliquez sur **Rechercher**.
+2. Dans le volet gauche, sélectionnez la **Langue** de votre choix.
+3. Sélectionnez le secteur de votre organisation dans **Secteur d’activité**.
+4. Sélectionnez **Microsoft 365** dans **Produit**.
+5. Cliquez sur une carte pour afficher l’étude de cas du client.
   
+
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Comment Microsoft utilise Microsoft 365 Entreprise
 
 La mise en place d’une culture numérique est une priorité majeure pour tout responsable soucieux à de promouvoir un espace de travail moderne. Microsoft 365 a été conçu pour prendre en charge ce genre de changement de culture, afin de stimuler la créativité et la collaboration. Chez Microsoft, la mise en place de notre infrastructure de base a précisément déclenché ce changement de culture numérique. L’implémentation de Microsoft 365 Entreprise nous a permis de déployer des technologies de collaboration telles que Microsoft Teams et Exchange Online, ainsi que de partager des données sensibles en ligne sur des sites intranet SharePoint sécurisés.
