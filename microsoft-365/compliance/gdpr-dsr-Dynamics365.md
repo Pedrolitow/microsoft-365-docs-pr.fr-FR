@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fc2d978b50a433249e016c25b4c234de6c7f46b8
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 72277ec2dfe7681aa5f596e655d5e275bbb64dd1
+ms.sourcegitcommit: 5615e790dc53ccc74f3c475ca43d69ca56be348a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778129"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36041178"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées par le traitement des données pour Dynamics 365 concernant le RGPD
 
@@ -87,7 +87,7 @@ Dans Dynamics 365 for Marketing, vous disposez des fonctionnalités supplément
 
 ***Dynamics 365 Customer Service Insights*** propose une liste de ressources destinée à vous aider à [trouver des données client](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery) afin de répondre aux demandes RGPD des clients. 
 
-L’offre ***Dynamics 365 for Finance and Operations*** permet de rechercher des données client de plusieurs façons. En tant qu’administrateur client, vous pouvez rechercher des données client en effectuant les opérations suivantes :
+L’offre ***Dynamics 365 for Finance and Operations*** permet de rechercher des données client de plusieurs façons. En tant qu’administrateur client, vous pouvez rechercher des données client en effectuant les opérations suivantes :
 
 - Organisez vos données client de façon à découvrir rapidement des données personnelles ; à cette fin, apprenez à [classifier l’inventaire des données](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory).
 - Utilisez le [rapport de recherche de données personnelles](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#the-person-search-report) pour rechercher et collecter des données personnelles.
@@ -96,7 +96,7 @@ L’offre ***Dynamics 365 for Finance and Operations*** permet de rechercher des
 - Créez un formulaire personnalisé qui localise et exporte les données personnelles.
 - Créez un portail externe ou un site web qui permet à un client authentifié d’afficher ses données personnelles.
 
-***Dynamics for Business Central*** offre plusieurs façons de rechercher des données client. Pour plus d’informations, consultez [Recherche, filtrage et tri de données](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters).
+***Dynamics 365 Business Central*** offre plusieurs façons de rechercher des données client. Pour plus d’informations, consultez [Recherche, filtrage et tri de données](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters).
 
 ****** Dynamics 365 for Talent fournit des fonctionnalités de recherche et de filtre avancées permettant de rechercher des données personnelles spécifiques ainsi que la fonctionnalité Exporter de Microsoft Office pour exporter ou imprimer ces informations dans un fichier .pdf à l’aide d’extensions de navigateur.
 
@@ -189,7 +189,7 @@ Dynamics 365 for Finance and Operations et ***Dynamics 365 for Talent*** fourn
 
 L’offre ***Dynamics 365 Business Central*** propose les fonctionnalités suivantes :
 
-- Vous pouvez exporter les données client dans un fichier Excel. Dans Excel, vous pouvez ensuite modifier les données client à inclure dans la demande de portabilité et les enregistrer dans un format courant lisible par un ordinateur comme .csv ou .xml. Pour plus d’informations, consultez [Exportation de vos données métier dans Excel](https://docs.microsoft.com/dynamics-nav-app/about-export-data).
+- Vous pouvez exporter les données client dans un fichier Excel. Dans Excel, vous pouvez ensuite modifier les données client à inclure dans la demande de portabilité et les enregistrer dans un format courant lisible par un ordinateur comme .csv ou .xml. Pour plus d’informations, consultez [Exportation de vos données métier dans Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 - Vous pouvez exporter les données client dans un fichier Excel. Dans Excel, vous pouvez ensuite modifier les données client à inclure dans la demande de portabilité et les enregistrer dans un format courant lisible par un ordinateur comme .csv ou .xml. Pour plus d’informations, consultez [Exportation de vos données métier dans Excel](https://docs.microsoft.com/fr-FR/dynamics365/business-central/about-export-data).
 
 ### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
