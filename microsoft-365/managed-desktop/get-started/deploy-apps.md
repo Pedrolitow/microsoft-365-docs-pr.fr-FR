@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5eac2e8c3023015bd034c51ad7e16a669a484772
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5e842849afbedd506689caa9ffc0953a58e18fed
+ms.sourcegitcommit: f5c9aff5700f7824bf71f4a7e8c7236f7d91043e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390421"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36059584"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>Déployer des applications sur des appareils de bureau gérés Microsoft
 L’intégration à Microsoft Managed Desktop inclut l’ajout et le déploiement d’applications sur les appareils de vos utilisateurs. Une fois que vous utilisez le portail de bureau géré Microsoft, vous pouvez ajouter et déployer vos applications. 
@@ -41,9 +41,9 @@ Vous pouvez vous connecter à Microsoft Managed Desktop Portal ou vous connecter
 1.  Connectez-vous au [portail d’administration de bureau géré Microsoft](http://aka.ms/mmdportal). 
 2.  Sous **inventaire**, sélectionnez **applications**.
 3.  Dans la charge de travail applications, sélectionnez **Ajouter**.
-4.  Dans **Ajouter une application**, sélectionnez **application métier** ou **application Windows (Win32)-Aperçu**.
+4.  Dans **Ajouter une application**, sélectionnez **application métier** ou **application Windows (Win32)**.
     - Si vous avez sélectionné **application métier**, voir [Add a Windows Line of Business app to Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) pour obtenir des instructions sur l’ajout et la configuration d’applications métiers.
-    - Si vous avez sélectionné **Windows App (Win32)-Preview**, voir [Win32 App Management](https://docs.microsoft.com/intune/apps-win32-app-management) pour obtenir des instructions sur l’ajout et la configuration d’applications Windows.
+    - Si vous avez sélectionné **Windows App (Win32)**, voir [Win32 App Management](https://docs.microsoft.com/intune/apps-win32-app-management) pour obtenir des instructions sur l’ajout et la configuration d’applications Windows.
 
 <span id="msfb-apps">
 
