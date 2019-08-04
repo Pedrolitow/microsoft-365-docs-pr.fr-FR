@@ -1,18 +1,18 @@
 ---
 title: Forum Aux Questions
 description: ''
-keywords: Microsoft maNaged Desktop, Microsoft 365, service, documentation
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: efb6710c73223b21a7fabf73132526a721a73e7c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b7acc4a145f4eda34a30bfd5ba83e05869254046
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289042"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390741"
 ---
 # <a name="faq-for-microsoft-managed-desktop"></a>Forum aux questions sur le bureau géré Microsoft
 

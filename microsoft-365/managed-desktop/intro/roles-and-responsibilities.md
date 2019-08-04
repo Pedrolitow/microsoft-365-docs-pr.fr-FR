@@ -3,16 +3,16 @@ title: Rôles et responsabilités du bureau géré Microsoft
 description: Cette rubrique décrit les rôles et les responsabilités fournis par Microsoft pour le bureau géré Microsoft.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a51738b993a8a3683769d10882877b3b42d34ddf
-ms.sourcegitcommit: 7edeea1311ebb79a8c72418d2c6451b94fb788cb
+ms.openlocfilehash: 9eedd9b6ca9995595c75044b7877ed6eaca21127
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35061847"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425688"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Rôles et responsabilités du bureau géré Microsoft
 
@@ -31,7 +31,7 @@ Rôle ou responsabilité | Description
 Gestion des stratégies MDM | Microsoft appliquera les stratégies MDM conformément aux meilleures pratiques et envisagez de demander des modifications de stratégie. Nous allons également modifier votre client comme indiqué dans stratégies de [périphérique](../service-description/device-policies.md).
 Prise en charge de l’utilisateur final | Microsoft fournit la prise en charge de l’utilisateur final pour les appareils, les fenêtres et la suite de produits Office pour tous les utilisateurs dans l’application d’aide qui est préinstallée sur tous les appareils de bureau gérés par Microsoft. 
 Prise en charge du service bureau géré Microsoft | Microsoft fournira une assistance aux services informatiques des clients par le biais d’une équipe Microsoft Managed Desktop Operations. Cette équipe prend en charge la résolution des problèmes techniques, les demandes de modification et la gestion des incidents pour l’environnement de bureau géré Microsoft du client. Pour plus d’informations, consultez la rubrique [administrateur pris en charge pour Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
-Surveillance de la sécurité | Microsoft analysera les périphériques de bureau gérés par le client à l’aide de Windows Defender ATP. Si une menace est détectée par le centre d’opérations de sécurité du bureau géré Microsoft, Microsoft avertit le client, isole l’appareil et corrige le problème à distance. Pour plus d’informations, consultez la rubrique [sécurité](../service-description/security.md).
+Surveillance de la sécurité | Microsoft analysera le client les appareils de bureau gérés par Microsoft à l’aide de Microsoft Defender ATP. Si une menace est détectée par le centre d’opérations de sécurité du bureau géré Microsoft, Microsoft avertit le client, isole l’appareil et corrige le problème à distance. Pour plus d’informations, consultez la rubrique [sécurité](../service-description/security.md).
 Mise à jour de la surveillance et de la gestion | Microsoft analysera activement les périphériques de bureau gérés par le client pour s’assurer que les dernières mises à jour de qualité et de fonctionnalité sont installées pour Microsoft Windows et Microsoft Office. Pour plus d’informations, voir [Comment les mises à jour sont gérées](../service-description/updates.md).
 Groupement d’utilisateurs et d’appareils | Microsoft Managed Desktop Operations Team créera et gérera les groupes d’utilisateurs et d’appareils requis dans le cadre des opérations informatiques. Aucune modification de l’appartenance ou de la configuration n’est autorisée pour ces groupes. La modification de ces groupes peut entraîner une configuration inattendue des appareils et une perte de fonctionnalité. Pour tout problème ou question concernant ces groupes une fois établi, les administrateurs informatiques peuvent contacter les opérations de bureau géré Microsoft. Pour plus d’informations, consultez la rubrique [administrateur pris en charge pour Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
 

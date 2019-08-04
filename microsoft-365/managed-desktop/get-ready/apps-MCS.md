@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39a5102d045d9ed79b631a3b477bd1c72dea76de
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 3687966fd49db3fd58c4ecbb3917e45ec6dfa3c3
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34918723"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425737"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilisation de Microsoft Consulting Services
 
@@ -22,7 +22,7 @@ Vous pouvez vous exercer avec Microsoft Consulting Services (MCS) pour obtenir l
 Pour utiliser l’empaquetage d’applications MCS, **vous devez fournir les éléments**suivants:
 
 - Fichiers du programme d’installation source (par exemple, Setup. exe ou. msi).
-- Les instructions d’installation, spécifiant des détails sur la façon dont l’installation finale doit ressembler. Par exemple, un raccourci Bureau doit-il exister vers l’application? Quelle doit être la visibilité de l’application? L’application doit-elle se connecter à un serveur et, le cas échéant, laquelle? <!--For details, see the [application packaging request template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx). -->
+- Les instructions d’installation, spécifiant des détails sur la façon dont l’installation finale doit ressembler. Par exemple, un raccourci Bureau doit-il exister vers l’application? Quelle doit être la visibilité de l’application? L’application doit-elle se connecter à un serveur et, le cas échéant, laquelle? Pour plus d’informations, consultez le [modèle de demande](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)d’empaquetage d’application.
 - Vous devez effectuer vos propres tests d’acceptation pour vérifier que l’application fonctionne comme vous le souhaitez dans votre environnement.
 
 **MCS se chargera des actions suivantes:**

@@ -3,7 +3,7 @@ title: Supprimer des données d'entreprise sur des appareils
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 'Découvrez comment utiliser Microsoft 365 Business pour supprimer les données d’entreprise des appareils utilisateur ou des PC Windows. '
-ms.openlocfilehash: 903b99af5f75531b8187b789510c370f7859f689
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 804c8104dca4c9203f603346da2a746e36c23dcd
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660603"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074567"
 ---
 # <a name="remove-company-data-from-devices"></a>Supprimer des données d'entreprise sur des appareils
 

@@ -8,12 +8,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 4915bf5d1b89720c65a5134b23d9d837febff357
-ms.sourcegitcommit: 184957e2878388e0d427a7ee47577d29c4e3c483
+ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
+ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605963"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795620"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications pour la documentation du bureau géré Microsoft
 
@@ -23,6 +23,9 @@ Cette rubrique répertorie les rubriques nouvelles et mises à jour dans la [doc
 Rubrique nouvelle ou modifiée | Description
 --- | ---
 [Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Rubrique mise à jour
+[Bureau géré Microsoft et ITIL](MMD-and-ITSM.md) | Nouvelle rubrique
+[Configuration des appareils](service-description/device-policies.md) | Rubrique mise à jour
+
 
 ## <a name="june-2019"></a>2019 juin
 Rubrique nouvelle ou modifiée | Description

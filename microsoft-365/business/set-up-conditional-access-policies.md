@@ -1,5 +1,5 @@
 ---
-title: Configurer des stratégies d’accès conditionnel
+title: Configurer des stratégies d’accès conditionnel pour les campagnes Microsoft 365
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,15 +19,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment configurer des stratégies d’accès conditionnel pour Microsoft 365 Business.
-ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+description: Découvrez comment configurer des stratégies d’accès conditionnel pour les campagnes Microsoft 365.
+ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
+ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913005"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35076308"
 ---
-# <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>Configurer des stratégies d’accès conditionnel pour Microsoft 365 Business
+# <a name="set-up-conditional-access-policies"></a>Configurer des stratégies d’accès conditionnel
 
 Les stratégies d' [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) ajoutent une sécurité supplémentaire substancial. Microsoft fournit un ensemble de stratégies d’accès conditionnel de base qui sont recommandées pour tous les clients. Les stratégies de référence sont un ensemble de stratégies prédéfinies qui permettent de protéger les organisations contre de nombreuses attaques courantes. Ces attaques courantes peuvent inclure le pulvérisation de mot de passe, la relecture et le hameçonnage.
 

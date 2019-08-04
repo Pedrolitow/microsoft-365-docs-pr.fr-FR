@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 8/13/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
-description: Découvrez les fonctionnalités de protection de Microsoft 365 Business Map aux paramètres Intune. L'abonnement vous offre une licence pour modifier les paramètres Intune.
-ms.openlocfilehash: ddd520cd059c84e5d64e967fe5631fe2f6bce0d4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Découvrez les fonctionnalités de protection de Microsoft 365 Business Map aux paramètres Intune. L’abonnement vous offre une licence pour modifier les paramètres Intune.
+ms.openlocfilehash: a6aaf6cc06c31b870eb85582f5aa47699919d75d
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278552"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074257"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Correspondance entre les fonctionnalités de protection de Microsoft 365 Business et les paramètres Intune
 
@@ -35,7 +35,7 @@ ms.locfileid: "32278552"
 
 Le tableau suivant décrit en détail comment les paramètres de stratégie d'application Android et iOS sont mis en correspondance avec les paramètres Intune.
   
-Pour rechercher le paramètre Intune, alors que vous êtes connecté avec vos informations d'identification d'administrateur professionnel Microsoft 365, accédez à **centres d'administration**, puis **Intune**.
+Pour rechercher le paramètre Intune, alors que vous êtes connecté avec vos informations d’identification d’administrateur professionnel Microsoft 365, accédez à **centres d’administration**, puis **Intune**.
   
  **Important:** Un abonnement Microsoft 365 Business vous offre une licence pour modifier tous les paramètres Intune. Voir [Introduction to Intune pour commencer.](https://docs.microsoft.com/intune/introduction-intune)
   
@@ -68,7 +68,7 @@ Sous **Gérer la façon dont les utilisateurs accèdent aux fichiers Office sur 
 
 Le tableau suivant décrit en détail comment les paramètres de stratégie d'application Windows 10 sont mis en correspondance avec les paramètres Intune.
   
-Pour rechercher le paramètre Intune, alors que vous êtes connecté avec vos informations d'identification d'administrateur professionnel Microsoft 365, accédez à [portail Azure](https://portal.azure.com), sélectionnez **plus de services**, puis tapez Intune dans le **filtre**, sélectionnez **protection** \> **des applications Intune Stratégie d'application**.
+Pour rechercher le paramètre Intune, alors que vous êtes connecté avec vos informations d’identification d’administrateur professionnel Microsoft 365, accédez à [portail Azure](https://portal.azure.com), sélectionnez **plus de services**, puis tapez Intune dans le **filtre**, sélectionnez **protection** \> **des applications Intune Stratégie d’application**.
   
  **Important**: Un abonnement à Microsoft 365 Business fournit une licence qui vous permet uniquement de modifier les paramètres Intune correspondant aux paramètres disponibles dans Microsoft 365 Business. 
   
@@ -77,7 +77,7 @@ Cliquez sur le nom de la stratégie que vous souhaitez sélectionner, puis chois
 |**Paramètre de stratégie des applications Windows 10**|**Paramètre(s) Intune**|
 |:-----|:-----|
 |Chiffrer les fichiers professionnels  <br/> |**Paramètres avancés** \> **Protection des données**: **Révoquer les clés de chiffrement lors de la désinscription** et **Révoquer l'accès aux données protégées quand l'appareil s'inscrit à MDM** sont tous deux **activés**.  <br/> |
-|Empêcher les utilisateurs de copier des données d'entreprise dans des fichiers personnels.  <br/> |**Paramètres requis** \> **Mode Protection des informations Windows**. **Activé** dans Microsoft 365 Entreprise établit une correspondance avec : **Masquer le choix d'ignorer les avertissements**, **Désactivé** dans Microsoft 365 Entreprise établit une correspondance avec : **Désactivé**.  <br/> |
+|Empêcher les utilisateurs de copier des données d’entreprise dans des fichiers personnels.  <br/> |**Paramètres requis** \> **Mode Protection des informations Windows**. **Activé** dans Microsoft 365 Entreprise établit une correspondance avec : **Masquer le choix d'ignorer les avertissements**, **Désactivé** dans Microsoft 365 Entreprise établit une correspondance avec : **Désactivé**.  <br/> |
 |Contrôle de l'accès aux documents Office  <br/> | Si ce champ est **Activé** dans Microsoft 365 Entreprise,  <br/> **Paramètres avancés** \> **Accès**, **Utiliser Windows Hello Entreprise comme mode de connexion à Windows** est **Activé**, avec les paramètres supplémentaires suivants :  <br/> **Définir le nombre minimal de caractères obligatoires dans le code confidentiel** est défini sur **4**.  <br/> **Configurer l'utilisation des lettres majuscules dans le code confidentiel Windows Hello Entreprise** est défini sur **Ne pas autoriser l'utilisation des majuscules pour le code confidentiel**.  <br/> **Configurer l'utilisation des lettres minuscules dans le code confidentiel Windows Hello Entreprise** est défini sur **Ne pas autoriser l'utilisation des minuscules pour le code confidentiel**.  <br/> **Configurer l'utilisation des caractères spéciaux dans le code confidentiel Windows Hello Entreprise** est défini sur **Ne pas autoriser l'utilisation de caractères spéciaux dans le code confidentiel**.  <br/> **Spécifier la durée (en jours) pendant laquelle un code confidentiel peut être utilisé avant que le système demande à l'utilisateur de le changer** est défini sur **0**.  <br/> **Spécifier le nombre d'anciens codes confidentiels associés à un compte d'utilisateur qui peuvent être réutilisés** est défini sur **0**.  <br/> **Nombre d'échecs d'authentification autorisés avant la réinitialisation de l'appareil** est défini comme dans Microsoft 365 Entreprise (5 par défaut).  <br/> **Durée maximale (en minutes) autorisée pendant laquelle l'appareil peut rester inactif avant d'être verrouillé par un mot de passe ou un code confidentiel** est défini comme dans Microsoft 365 Entreprise.  <br/> |
 |Activer la récupération des données protégées  <br/> |**Paramètres avancés** \> **Protection des données**: **Afficher l'icône de protection des données d'entreprise** et **Utiliser Azure RMS pour WIP** sont définis sur **Activé**.  <br/> |
 |Protéger les autres emplacements cloud de l'entreprise  <br/> |**Paramètres avancés** \> **Domaines protégés** et **Ressources cloud** affichent les domaines et les sites SharePoint.  <br/> |
@@ -88,7 +88,7 @@ Cliquez sur le nom de la stratégie que vous souhaitez sélectionner, puis chois
 
 Le tableau suivant décrit en détail comment les paramètres de configuration des appareils Windows 10 sont mis en correspondance avec les paramètres Intune.
   
-pour rechercher le paramètre Intune, alors que vous êtes connecté avec vos informations d'identification d'administrateur professionnel Microsoft 365, accédez à [portail Azure](https://portal.azure.com), sélectionnez **plus de services**, puis tapez intune dans le **filtre**, sélectionnez appareil **intune** \> ** ** \> **profils**de configuration. Sélectionnez ensuite **Stratégie d'appareils pour Windows 10** \> **Propriétés** \> **Paramètres**.
+Pour rechercher le paramètre Intune, alors que vous êtes connecté avec vos informations d’identification d’administrateur professionnel Microsoft 365, accédez à [portail Azure](https://portal.azure.com), sélectionnez **plus de services**, puis tapez Intune dans le **filtre**, sélectionnez appareil **Intune** \> ** ** \> **profils**de configuration. Sélectionnez ensuite **Stratégie d'appareils pour Windows 10** \> **Propriétés** \> **Paramètres**.
   
 |**Paramètre de stratégie d'appareil Windows 10**|**Paramètre(s) Intune**|
 |:-----|:-----|

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b3fc4a4ed82c01188f348d2e494a0dbf7effc77a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: e4c2dbe8f1cae12aa1b10c6cd43f295a9a6062d0
+ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34079267"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34100710"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Préparer les lecteurs mappés pour le bureau géré Microsoft
 
@@ -25,7 +25,7 @@ La modernisation de ces services permettra aux utilisateurs finaux les plus perf
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Lecteurs mappés sur le bureau géré Microsoft
  
-Si vous ne pouvez pas supprimer ou remplacer des lecteurs mappés dans certains cas d’utilisation, vous devez soumettre une demande de support dans le portail de bureau géré Microsoft afin de les déployer sur les utilisateurs de bureau géré Microsoft.
+Si vous ne pouvez pas supprimer ou remplacer des lecteurs mappés dans certains cas d’utilisation, vous devez soumettre une demande de support dans le portail d’administration de bureau géré Microsoft pour les déployer sur les utilisateurs de bureau géré Microsoft.
     
 Pour une demande de ce type, vous devez fournir les informations suivantes dans la demande de support: 
 
@@ -47,6 +47,6 @@ Assurez-vous que les lecteurs mappés ne peuvent pas être évités et que vous 
 
 1. Accédez au [portail de bureau géré Microsoft](https://aka.ms/mmdportal).  
 2. Soumettez une demande de support intitulée «déploiement de lecteurs mappés» via la section prise en charge des **demandes de support >** et fournissez tous les détails de partage de fichiers requis.  
-3. Les opérations de bureau géré Microsoft conseilleront, à l’aide de mises à jour de demande de support, une fois la demande terminée. Cette configuration sera initialement déployée sur les appareils dans le groupe de déploiement de test.  
-4. Vous devez tester et confirmer que la configuration déployée par l’équipe des opérations de bureau géré Microsoft fonctionne comme prévu. Utilisez la demande de support pour mettre à jour les opérations de bureau géré Microsoft une fois que vous avez terminé les tests.  
-5. L’équipe des opérations de bureau géré Microsoft déploiera la configuration sur les autres groupes de déploiement. 
+3. Les opérations informatiques de bureau gérées par Microsoft conseilleront, à l’aide de mises à jour de demande de support, une fois la demande terminée. Cette configuration sera initialement déployée sur les appareils dans le groupe de déploiement de test.  
+4. Vous devez tester et confirmer que la configuration déployée par le service informatique de bureau géré Microsoft fonctionne comme prévu. Répondez à l’aide de l’onglet discussion de la demande de support pour informer les opérations informatiques gérées par Microsoft une fois que vous avez terminé vos tests.  
+5. L’équipe des opérations de bureau géré par Microsoft déploiera la configuration sur les autres groupes de déploiement. 

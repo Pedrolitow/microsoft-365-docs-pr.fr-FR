@@ -3,7 +3,7 @@ title: Protéger les fichiers professionnels en cas de perte ou de vol de l'appa
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4StolenDevice
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: Découvrez les paramètres disponibles pour protéger les fichiers de travail en cas de perte ou de vol de l'appareil d'un utilisateur.
-ms.openlocfilehash: 1256f54b2ff626ea7b85d91020e355c8b611a8c0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Découvrez les paramètres disponibles pour protéger les fichiers de travail en cas de perte ou de vol de l’appareil d’un utilisateur.
+ms.openlocfilehash: 505b85dabfdd27a9da8b7bcfdf7741dbb22b0ba3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285347"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074447"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Protéger les fichiers professionnels en cas de perte ou de vol de l'appareil mobile
 
@@ -39,7 +39,7 @@ Les paramètres suivants sont disponibles pour protéger les fichiers profession
   
 |||
 |:-----|:-----|
-|Paramètre  <br/> |Description  <br/> |
+|Setting  <br/> |Description  <br/> |
 |Supprimer les fichiers professionnels d'un appareil inactif après tant de jours  <br/> |Si un appareil n'est pas utilisé pendant le nombre de jours que vous spécifiez ici, les fichiers professionnels stockés sur l'appareil sont automatiquement supprimés.  <br/> |
 |Obliger les utilisateurs à enregistrer tous les fichiers de travail dans OneDrive Entreprise  <br/> |Si ce paramètre est **activé**, le seul emplacement d'enregistrement accessible pour les fichiers professionnels sera OneDrive Entreprise.  <br/> |
 |Chiffrer les fichiers professionnels  <br/> |Laissez ce paramètre **activé** afin que les fichiers professionnels soient protégés par chiffrement. Même si l'appareil est perdu ou volé, personne ne sera en mesure de lire les données de votre société.  <br/> |
