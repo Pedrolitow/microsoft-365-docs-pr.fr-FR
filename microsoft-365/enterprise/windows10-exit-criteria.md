@@ -4,7 +4,7 @@ ms.author: greglin
 author: greg-lindsay
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour Windows 10 Entreprise.
-ms.openlocfilehash: 1e8a2e748f42431465c027acbc468f4c5891d320
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 29ab2373321485d8de892a29132d1af07a318b7b
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289515"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074104"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Phase 3 : Critères de sortie pour l’infrastructure Windows 10 Entreprise
 
@@ -37,7 +37,7 @@ Si nécessaire, l’[Étape 1](windows10-prepare-your-org.md) peut vous aider �
 
 ## <a name="optional-your-users-are-added-and-licensed"></a>Facultatif : ajout de vos utilisateurs et obtention de licence
 
-Les comptes correspondant à vos utilisateurs sont ajoutés, soit directement dans votre locataire Azure AD pour vos abonnements Office 365 et Intune, soit à partir de la synchronisation d’annuaires de votre version locale de Windows Server ( Active Directory Domain Services: AD DS).
+Les comptes correspondant à vos utilisateurs sont ajoutés, soit directement dans votre locataire Azure AD pour vos abonnements Office 365 et Intune, soit à partir de la synchronisation d’annuaires de votre instance locale d’Active Directory Domain Services (AD DS).
 
 Une fois que les utilisateurs sont ajoutés, vous pouvez leur attribuer des licences Microsoft 365 Entreprise, soit directement en tant qu’administrateur d’utilisateurs ou administrateur général, soit automatiquement via l’appartenance à un groupe.
 
@@ -54,9 +54,9 @@ Si nécessaire, l’[Étape 1](windows10-prepare-your-org.md) peut vous aider av
 
 Pour démarrer une séquence de tâches du Gestionnaire de configuration afin d’effectuer une mise à niveau sur place sur un périphérique exécutant Windows 7 ou Windows 8.1, vous devez avoir :
 
-- définir le niveau de données de diagnostic Windows approprié ; et
-- Vérifié la préparation de la mise à niveau Windows
-- Créé une séquence de tâches du Gestionnaire de configuration qui inclut une collection de périphériques et le déploiement d’un système d’exploitation avec une image de système d’exploitation Windows 10.
+- défini le niveau de données de diagnostic Windows approprié ;
+- vérifié l’état de préparation à la mise à niveau de Windows ;
+- créé une séquence de tâches du Gestionnaire de configuration qui inclut une collection d’appareils et le déploiement d’un système d’exploitation avec une image de Windows 10.
 
 Une fois ces éléments en place, vous pouvez effectuer des mises à niveau sur place sur les périphériques qui sont prêts à recevoir la mise à niveau de Windows. Pour optimiser Microsoft 365 Entreprise, mettez à niveau autant de périphériques exécutant Windows 7 et Windows 8.1 que possible. 
 
@@ -70,12 +70,12 @@ Si nécessaire, l’[Étape 2](windows10-deploy-inplaceupgrade.md) peut vous ai
 Pour utiliser Windows Autopilot afin de déployer et de personnaliser Windows 10 Entreprise sur un nouveau périphérique, vous devez :
 
 - Configurer le niveau de données de diagnostic Windows approprié
-- Remplir les conditions préalables pour Windows Autopilot, qui incluent les éléments suivants :
+- Remplir les conditions préalables pour Windows Autopilot, notamment :
    - Inscription du périphérique et personnalisation OOBE
    - Insertion de la marque de votre entreprise pour OOBE
    - Inscription automatique de la gestion des appareils mobiles dans Microsoft Intune
    - Connectivité réseau aux services cloud utilisés par Windows Autopilot
-- Pré-installation de Windows 10 version 1703 ou ultérieure sur les périphériques
+- Pré-installation de Windows 10 version 1703 ou ultérieure sur les appareils
 - Sélection du programme de déploiement Windows Autopilot pour votre organisation
 
 Une fois la configuration de Windows Autopilot terminée, vous pouvez l’utiliser pour configurer et personnaliser Windows 10 Entreprise pour OOBE (out-of-the-box experience) pour :

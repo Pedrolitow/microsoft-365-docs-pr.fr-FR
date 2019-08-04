@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: a19c9d2de0cb4cb5436a8c3364bab0e24bb866ee
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584530"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830502"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
@@ -116,7 +116,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
   - Gestion des mises à jour d’Office 365 ProPlus dans le Gestionnaire de configuration
   - Gestion des appareils mobiles appliquée à Windows 10 à l’aide de Microsoft Intune
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[** Kit laboratoire de déploiement Windows et Office**](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[** Kit laboratoire de déploiement Windows et Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 *Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et de bénéficier d’un approvisionnement automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et de 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible sont recommandés. Le laboratoire arrivera à expiration le 27 août 2019. Une nouvelle version sera publiée avant l’expiration.*
 
