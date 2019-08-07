@@ -13,14 +13,68 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Présentation du Centre de déploiement du bureau moderne.
-ms.openlocfilehash: 659ea39fc4ccd1c06d79c8a5c39ff2c4e85ba9ce
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 222a7a565a48a39aa7701ab4a737cf404ebaa548
+ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814645"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35853173"
 ---
 # <a name="desktop-deployment-center"></a>Centre de déploiement du bureau moderne
+
+<strong>Mise à niveau de Windows 7 vers Windows 10</strong>
+<p>Le support étendu de Windows 7 prendra fin le 14 janvier 2020. La mise à niveau sur place de Windows 7 vers Windows 10 constitue la méthode de déploiement la plus rapide. System Center Configuration Manager vous permet de <a href="https://docs.microsoft.com/fr-FR/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">mettre à niveau un PC</a> ou <a href="https://docs.microsoft.com/fr-FR/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">des milliers de PC</a>. Avec les mises à niveau sur place, vous n’avez pas à vous occuper de la distribution des applications, de la migration des fichiers, de la création d’images personnalisées ou de l’activation des services cloud. Vous pouvez utiliser les outils que vous avez déjà pour mettre à niveau des PC existants et vous concentrer sur les étapes de déploiement suivantes pour les mises à niveau : </p>
+
+<p>
+<table>
+     <tr>
+     <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="100" width="100" />
+              </td>
+              <td>
+              <strong>Mettre à niveau Configuration Manager vers la branche actuelle</strong>
+                  </td>
+                 </tr>
+                </table>
+    </td>
+        <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="100" width="100" />
+              </td>
+              <td>
+              <strong>Validation de la préparation des appareils et applications</strong>
+                  </td>
+                 </tr>
+                </table>
+    </td>
+        <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="100" width="100" />
+              </td>
+              <td>
+              <strong>Mise à niveau des PC Windows 7 vers Windows 10</strong>
+                  </td>
+                 </tr>
+                </table>
+    </td>
+    </tr>
+    <tr>
+    <td>
+Partie de l’étape de préparation des répertoires et du réseau pour les organisations utilisant le gestionnaire de configuration SCCM (System Center Configuration Manager) </td>
+    <td>
+Partie de l’étape de préparation des appareils et des applications. Une aide est disponible via le service Soutien aux applications du bureau </td>
+    <td>
+Partie de l’étape de déploiement du système d’exploitation et de mise à jour des fonctionnalités pour les PC conservés par les utilisateurs </td>
+    </tr>
+</table>
+</p>
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
