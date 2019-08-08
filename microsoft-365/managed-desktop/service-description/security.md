@@ -6,18 +6,18 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 5987dcaf717ecb2907f02db675a77c3e1d2d2220
-ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
+ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35425667"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243935"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sécurité dans le bureau géré Microsoft
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop applique un ensemble standard de stratégies et utilise de nombreuses technologies Microsoft pour sécuriser les appareils de bureau gérés par Microsoft, les données d’entreprise stockées, et bien plus encore. Les zones répertoriées ci-dessous sont détaillées plus en détail:  
+Microsoft Managed Desktop utilise plusieurs technologies Microsoft pour sécuriser les appareils et les données gérés. Notamment : 
 
 - [Sécurité des données](#data-security) : types de données collectées par le bureau géré Microsoft et emplacement de stockage sécurisé
 - [Sécurité des appareils](#device-security) – sécurité et protection sur les appareils de bureau gérés Microsoft
@@ -37,6 +37,7 @@ Voici les types de données transmis par votre client:
 - Données de fiabilité et de déploiement d’application
 - Mise à jour et données de déploiement de stratégie de sécurité
 - Utilisateurs affectés aux appareils
+- Journaux de sécurité de votre client liés aux comptes utilisés par Microsoft Managed Desktop pour gérer le service
 
 
 
@@ -60,8 +61,7 @@ La gestion des identités et des accès protège les ressources d’entreprise e
 
 Service | Description
 --- | ---
-Authentification biométrique |  Windows Hello permet aux utilisateurs de se connecter à l’aide de leur face ou d’un code confidentiel, ce qui rend les mots de passe plus difficiles à oublier ou à voler. Pour plus d’informations, consultez la rubrique [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-	Authentification multifacteur | L’authentification multifacteur Azure contrôle plus étroitement l’accès aux fonctions sensibles du service bureau géré Microsoft en fournissant un niveau supplémentaire d’authentification à l’aide d’un téléphone mobile, ainsi qu’une réinitialisation du mot de passe en libre-service. 
+Authentification biométrique |  Windows Hello permet aux utilisateurs de se connecter à l’aide de leur face ou d’un code confidentiel, ce qui rend les mots de passe plus difficiles à oublier ou à voler. Les clients sont responsables de la mise en œuvre des conditions préalables requises pour l’utilisation d’Active Directory sur site pour l’utilisation de ce service dans une configuration hybride. Pour plus d’informations, consultez la rubrique [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Autorisation utilisateur standard |  Pour protéger le système et le sécuriser, l’utilisateur reçoit des autorisations d’utilisateur standard. Cela est affecté dans le cadre de l’expérience utilisateur Windows AutoPilot.
 
 

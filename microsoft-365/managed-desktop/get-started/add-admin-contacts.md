@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 68f5d5cb46d4aa643b1b09f9204b24dea3d77eb1
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 2178b871da412d12bf20dae9b72d7562e2bc4654
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390531"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243945"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Ajouter des contacts d’administration dans le portail d’administration de bureau géré Microsoft
 
@@ -28,13 +28,13 @@ Le portail d’administration de bureau géré Microsoft exige que les utilisate
 
 L’administrateur général doit être celui pour inscrire le client dans le bureau géré Microsoft. Les cinq rôles ont le même accès dans le portail d’administration pour lancer et afficher les tâches. Pour plus d’informations sur l’affectation de ces rôles dans Azure AD, reportez-vous à la rubrique [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
-## <a name="admin-contact-focus-areas"></a>Zones ciblées des contacts administratifs
+## <a name="admin-contact-areas-of-focus"></a>Zones de contact de l’administrateur
 
-Les contacts d’administration doivent être la personne ou le groupe le mieux adapté pour répondre aux questions et prendre des décisions concernant différentes priorités. Les opérations de bureau géré Microsoft contacteront ces contacts d’administration pour les questions portant sur les demandes de support déposées par le client. Ces contacts d’administration recevront des notifications pour les mises à jour des demandes de support et les nouveaux messages. Ces domaines sont les suivants:
+Les contacts d’administration doivent être la personne ou le groupe le mieux adapté pour répondre aux questions et prendre des décisions pour différentes zones de focus. Les opérations de bureau géré Microsoft contacteront ces contacts d’administration pour les questions portant sur les demandes de support déposées par le client. Ces contacts d’administration recevront des notifications pour les mises à jour des demandes de support et les nouveaux messages. Ces domaines sont les suivants:
 
 Zone de focus | Pour obtenir des questions sur
 --- | ---
-Applications | Résolution des problèmes d’empaquetage d’applications
+Empaquetage d’applications | Résolution des problèmes d’empaquetage d’applications
 Appareils | Intégrité de l’appareil, résolution des problèmes avec les appareils de bureau gérés Microsoft
 Sécurité | Résolution des problèmes de sécurité avec les appareils de bureau gérés Microsoft
 Support technique informatique | dans les cas où Microsoft Managed Desktop prend en charge les tickets des utilisateurs finaux en dehors des zones de prise en charge de MMD 
