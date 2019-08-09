@@ -3,7 +3,7 @@ title: Infrastructure de base de Microsoft 365 Entreprise pour les non-entrepris
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez les phases simplifiées de l’infrastructure de base pour Microsoft 365 Entreprise pour les organisations tierces.
-ms.openlocfilehash: 64d911a9d59d5b9b1a450a9a122463699ec8eab8
-ms.sourcegitcommit: 2cf0d57b1771b37db773c3eaabac8456a6fa9195
+ms.openlocfilehash: 8e2c254bf352baa14ff62dad500e5cdfa0af4563
+ms.sourcegitcommit: 639607bbf02bdedd3fa5cd7b0984b422fe6c874e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34419813"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35624632"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>Infrastructure de base de Microsoft 365 Entreprise pour les non-entreprises
 
@@ -42,16 +42,18 @@ Vous devez ensuite configurer une sécurité supplémentaire pour Microsoft 365.
 
 ## <a name="phase-1-networking"></a>Phase 1 : Mise en réseau
 
-Les organisations qui ne sont pas des organisations d’entreprise ont généralement une connexion Internet locale dans chaque bureau et n’utilisent pas de serveur proxy, de pare-feu ou d’autres appareils d’inspection par paquets. Le fournisseur de services Internet (ISP) de chaque bureau possède un serveur DNS local de sorte que le trafic est dirigé vers les serveurs Cloud Microsoft 365 les plus proches de vos bureaux et de leurs utilisateurs locaux.
+Les organisations qui ne sont pas des organisations d’entreprise ont généralement une connexion Internet locale dans chaque bureau et n’utilisent pas de serveur proxy, de pare-feu ou d’autres appareils d’inspection par paquets. Le fournisseur de services Internet (ISP) de chaque bureau possède un serveur DNS local de sorte que le trafic est dirigé vers les réseaux Microsoft 365 les plus proches de vos bureaux et de leurs utilisateurs locaux.
 
 Par conséquent, il vous suffit de vérifier auprès de votre fournisseur de services Internet que la connexion à chaque emplacement de bureau :
 
 - Utilise un serveur DNS local.
 - Est appropriée pour les besoins actuels et futurs au fur et à mesure que vos utilisateurs commencent à utiliser d’autres services Cloud Microsoft 365.
 
+Si vous utilisez des serveurs proxy, des pare-feu ou des appareils d’inspection par paquets, voir[infrastructure de mise en réseau pour Microsoft 365 Entreprise](networking-infrastructure.md) pour plus d’informations.
+
 ### <a name="your-configuration-so-far"></a>Votre configuration jusqu’à présent
 
-Voici un résumé visuel avec l’élément phase 1 mis en surbrillance. **Votre organisation** peut être plusieurs bureaux, chacun d’eux disposant d’une connexion Internet locale avec un fournisseur de services Internet qui utilise un serveur DNS local. Grâce au fournisseur de services Internet, les utilisateurs de chaque bureau peuvent accéder à l’emplacement réseau Microsoft le plus proche et aux ressources de votre abonnement Microsoft 365.
+Voici un résumé visuel avec l’élément phase 1 mis en surbrillance. **Votre organisation** peut être plusieurs bureaux, chacun d’eux disposant d’une connexion Internet locale avec un fournisseur de services Internet qui utilise un serveur DNS local. Grâce au fournisseur de services Internet, les utilisateurs de chaque bureau peuvent accéder à l’emplacement réseau Microsoft 365 le plus proche et aux ressources de votre abonnement Microsoft 365.
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
@@ -75,11 +77,12 @@ Si vous n’avez pas de domaine AD DS local, créez des groupes de sécurité da
 |:-------|:-----|:-----|
 | Base de référence | Il s’agit d’une norme minimale pour la protection des données, ainsi que les identités et les appareils qui accèdent à vos données. <BR><BR> Il s’agit généralement de la plupart des données de votre organisation gérées par la plupart de vos utilisateurs. | Groupes pour les travailleurs de premier rang, tels ventes, marketing, service clientèle, administration et fabrication. |
 | Sensible | Il s’agit d’une protection supplémentaire pour un sous-ensemble de vos données qui doivent être protégées au-delà du niveau de base. Ces groupes contiennent des utilisateurs qui utilisent et créent des données sensibles propres aux services et projets qui ne sont pas destinés à être mis à la disposition de tout le monde. | Équipes produit ou marketing qui développent de futurs produits |
-| Hautement réglementé | Il s’agit du niveau de protection le plus élevé pour un petit nombre de données très classifiées, considérées comme des secrets de propriété intellectuelle ou des secrets commerciaux ou des données qui doivent respecter les réglementations en matière de sécurité. |  Équipes de recherche, juridiques et financières. <BR><BR> Les équipes stockent ou utilisent les données des clients ou des partenaires. |
+| Hautement réglementé | Il s’agit du niveau de protection le plus élevé pour un petit nombre de données très classifiées, considérées comme des secrets de propriété intellectuelle ou des secrets commerciaux ou des données qui doivent respecter les réglementations en matière de sécurité. |  Les équipes de recherche, les équipes juridiques et financières, ou les équipes qui stockent ou utilisent les données des clients ou des partenaires. |
+||||
 
 ### <a name="hybrid-identity"></a>Identité hybride
 
-Si vous avez un domaine AD DS local, configurez Azure AD Connect sur un serveur avec la synchronisation de hachage de mot de passe (PHS). Pour plus d'informations, voir [synchroniser les identités](identity-azure-ad-connect.md).
+Si vous avez un domaine AD DS local, vous devez synchroniser l’ensemble de comptes d’utilisateurs, de groupes et de contacts de votre domaine avec le locataire Azure AD de votre abonnement Microsoft 365 Entreprise. Pour votre entité non-entreprise, configurez Azure AD Connect sur un serveur avec la synchronisation de hachage de mot de passe (PHS). Pour plus d'informations, voir [synchroniser les identités](identity-azure-ad-connect.md).
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>Plus d’accès utilisateur sécurisé avec stratégies d’accès conditionnel
 
@@ -149,7 +152,7 @@ Voici un résumé visuel de la phase identité pour l’identité hybride, avec 
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
-Les éléments d’identité nouveaux et mis en surbrillance incluent :
+Les éléments d’identité hybride nouveaux et mis en surbrillance incluent :
  
 |||
 |:------:|:-----|
@@ -160,15 +163,23 @@ Les éléments d’identité nouveaux et mis en surbrillance incluent :
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Stratégies d’accès conditionnel Azure AD. |
 |||
 
+Voici un résumé visuel de la phase identité pour l’identité sur cloud, avec les nouveaux éléments mis en surbrillance.
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+ 
+Les éléments d’identité sur Cloud uniquement nouveaux et mis en surbrillance incluent :
+ 
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Les paramètres Azure AD pour l’authentification, sécurisation des comptes généraux et simplification de la gestion des groupes et des licences. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Stratégies d’accès conditionnel Azure AD. |
+|||
+
+
+
 ## <a name="phase-3-windows-10-enterprise"></a>Phase 3 : Windows 10 Entreprise
 
 Pour vous assurer que vos appareils Windows 10 Entreprise sont intégrés à l’infrastructure d’identité et de sécurité de Microsoft 365, voici les options disponibles :
-
-- Uniquement dans le Cloud (vous n’avez pas de domaine AD DS local)
-
-  Joignez chaque appareil Windows 10 Entreprise au client Azure AD de votre abonnement.
-
-  Pour plus d’informations, consultez [Joindre votre appareil professionnel au réseau de votre organisation](https://docs.microsoft.com/fr-FR/azure/active-directory/user-help/user-help-join-device-on-network).
 
 - Hybride (vous avez un domaine AD DS local)
 
@@ -178,7 +189,14 @@ Pour vous assurer que vos appareils Windows 10 Entreprise sont intégrés à l�
 
   Pour chaque appareil Windows 10 Entreprise, inscrivez-les pour la gestion des appareils mobiles. Pour plus d’informations, voir [inscrire un appareil Windows 10 avec Intune à l’aide d’une stratégie de groupe](https://go.microsoft.com/fwlink/p/?linkid=872871).
 
-Une fois installé et joint, chaque appareil Windows 10 Entreprise installe automatiquement les mises à jour à partir du service Cloud Windows Update pour les entreprises. Il n’est généralement pas nécessaire dans une organisation autre qu’entreprise de configurer une infrastructure pour distribuer et installer les mises à jour.
+- Uniquement dans le Cloud (vous n’avez pas de domaine AD DS local)
+
+  Joignez chaque appareil Windows 10 Entreprise au client Azure AD de votre abonnement.
+
+  Pour plus d’informations, consultez [Joindre votre appareil professionnel au réseau de votre organisation](https://docs.microsoft.com/fr-FR/azure/active-directory/user-help/user-help-join-device-on-network).
+
+
+Une fois installé et joint, chaque appareil Windows 10 Entreprise installe automatiquement les mises à jour à partir du service Cloud Windows Update pour les entreprises. Il n’est généralement pas nécessaire dans une organisation autre qu’entreprise de configurer une infrastructure pour distribuer et installer les mises à jour de Windows 10.
 
 ### <a name="your-configuration-so-far"></a>Votre configuration jusqu’à présent
 
@@ -196,9 +214,9 @@ Les éléments nouveaux et mis en surbrillance dans Windows 10 Entreprise sont l
 
 ## <a name="phase-4-office-365-proplus"></a>Phase 4 : Office 365 ProPlus
 
-Microsoft 365 Entreprise inclut Office 365 ProPlus, la version d’abonnement de Microsoft Office. Comme Office 2016 ou Office 2019, Office 365 ProPlus est installé directement sur vos appareils clients. Office 365 ProPlus reçoit toutefois de nouvelles fonctionnalités régulièrement. Voir[À propos d'Office 365 ProPlus en entreprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) pour plus d’informations.
+Microsoft 365 Entreprise inclut Office 365 ProPlus, la version d’abonnement de Microsoft Office. Comme Office 2016 ou Office 2019, Office 365 ProPlus est installé directement sur vos appareils clients. Office 365 ProPlus reçoit toutefois de nouvelles mises à jour qui incluent de nouvelles fonctionnalités régulièrement. Voir[À propos d'Office 365 ProPlus en entreprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) pour plus d’informations.
 
-Pour votre organisation non-entreprise, installez manuellement Office 365 ProPlus sur vos appareils. Cette opération peut être effectuée dans le cadre de la préparation d’un nouvel appareil, ou peut être effectuée par l’utilisateur dans le cadre de leur processus d’intégration.
+Pour votre organisation non-entreprise, installez manuellement Office 365 ProPlus sur vos appareils. Cette opération peut être effectuée dans le cadre de la préparation d’un nouvel appareil, ou par l’utilisateur dans le cadre de leur processus d’intégration.
 
 Dans les deux cas, l’administrateur ou l’utilisateur se connecte au portail Office 365 surhttps://portal.office.com. Sous l'onglet **Accueil de Microsoft Office**, cliquez sur **installer Office** et exécutez le processus d’installation.
 
@@ -220,13 +238,13 @@ Les éléments Office 365 ProPlus nouveaux et mis en surbrillance incluent :
 
 ## <a name="phase-5-mobile-device-management"></a>Phase 5 : Gestion des appareils mobiles
 
-Microsoft 365 Entreprise inclut Microsoft Intune pour la gestion des appareils mobiles. Avec Intune, vous pouvez gérer les appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris vos données. Intune s’intègre avec les utilisateurs, les groupes et les comptes d’ordinateurs d’Azure AD.
+Microsoft 365 Entreprise inclut Microsoft Intune pour la gestion des appareils mobiles. Avec Intune, vous pouvez gérer les appareils Windows, iOS, Android, macOS pour protéger l’accès aux ressources de votre organisation, y compris vos données. Intune utilise les comptes d’utilisateurs, de groupes et d’ordinateurs d’Azure AD.
 
 Intune fournit deux types de gestion des appareils mobiles :
 
 - La gestion des périphériques mobiles (MDM) s’avère lorsque les appareils sont inscrits dans Intune. Une fois inscrits, il s’agit de périphériques gérés qui peuvent recevoir les stratégies, règles et paramètres utilisés par votre organisation. Ces types d’appareils sont généralement détenus par votre organisation et émis pour vos employés.
 
-- Les utilisateurs possédant leur propre appareil personnel peuvent ne pas vouloir inscrire leurs appareils ou être gérés par Intune avec vos stratégies et paramètres. Toutefois, vous devez encore protéger les ressources et les données de votre organisation. Pour ce scénario, vous pouvez protéger vos applications à l’aide de la gestion des applications mobiles (GAM). Ces types d’appareils sont appelés «intégrer vos propres appareils (BYOD)» et sont généralement détenus par vos employés. 
+- Les utilisateurs possédant leur propre appareil personnel peuvent ne pas vouloir inscrire leurs appareils ou être gérés par Intune avec vos stratégies et paramètres. Toutefois, vous devez encore protéger les ressources et les données de votre organisation. Pour ce scénario, vous pouvez protéger vos applications à l’aide de la gestion des applications mobiles (GAM).  
 
 Les stratégies Intune peuvent renforcer la conformité des appareils et la protection des applications. Voici la liste des stratégies Intune à créer.
 
@@ -275,13 +293,13 @@ La première étape de la stratégie en matière de protection des informations 
 
 - Hautement réglementé
 
-  Les exemples incluent les informations d’identification personnelle des clients et partenaires ainsi que la propriété intellectuelle de votre organisation.
+  Les exemples incluent les informations d’identification personnelle des clients et partenaires ainsi que la propriété financière ou intellectuelle de votre organisation.
 
 En fonction de ces niveaux de sécurité des données, l’étape suivante consiste à identifier et implémenter :
 
 - Types d’informations sensibles personnalisés
 
-  Microsoft 365 fournit une large sélection de types d’informations sensibles, tels que les numéros de sécurité sociale et de carte bancaire. Si vous ne trouvez pas celui dont vous avez besoin dans la liste fournie par Microsoft 365, vous pouvez en créer un.
+  Microsoft 365 fournit une large sélection de types d’informations sensibles, tels que les numéros de sécurité sociale et de carte bancaire. Si vous ne trouvez pas celui dont vous avez besoin dans la liste fournie, vous pouvez en créer un.
 
 - Étiquettes de rétention
 
@@ -295,7 +313,12 @@ Pour plus d’informations, voir [types de classification Microsoft 365](infopro
 
 Si vous utilisez des étiquettes de confidentialité avec des autorisations, vous devrez peut-être créer des groupes de sécurité Azure AD supplémentaires pour définir les personnes autorisées à effectuer des tâches dans les messages électroniques et les documents. 
 
-Par exemple, vous devez créer une étiquette de confidentialité de RECHERCHE pour protéger les messages électroniques et les documents de votre équipe de recherche. Vous constatez que certains chercheurs doivent avoir la possibilité de modifier les documents signalés par l’étiquette de confidentialité RECHERCHE et que d’autres employés hors équipe recherche ont la possibilité uniquement d’afficher les documents signalés par l’étiquette de confidentialité de la RECHERCHE. Cela signifie que vous devez créer et gérer deux groupes supplémentaires :
+Par exemple, vous devez créer une étiquette de confidentialité de RECHERCHE pour protéger les messages électroniques et les documents de votre équipe de recherche. Vous déterminez les éléments suivants :
+
+- Les chercheurs doivent avoir la possibilité de modifier les documents signalés par l’étiquette de confidentialité de la recherche.
+- Les employés non chercheurs doivent uniquement avoir la possibilité de voir les documents signalés par l’étiquette de confidentialité de la recherche. 
+
+Cela signifie que vous devez créer et gérer deux groupes supplémentaires :
 
 - RECHERCHE-TOUT
 - RECHERCHE-LECTURE
@@ -321,19 +344,19 @@ Les étiquettes de rétention et les types d’informations personnalisées ne s
 
 ## <a name="onboarding"></a>Intégration
 
-Cette infrastructure vous permet d’intégrer un employé pour Microsoft 365 Entreprise à l’aide de ces processus.
+Avec votre infrastructure Microsoft 365 Entreprise en place, vous pouvez facilement intégrer vos employés.
 
 ### <a name="a-new-windows-10-enterprise-device"></a>Un nouvel appareil Windows 10 Entreprise
 
 Avant d’attribuer à un employé un nouvel appareil Windows 10 Entreprise, procédez comme suit :
 
-- Pour l’identité Cloud uniquement
-
-  Joignez l’appareil au client Azure AD de votre abonnement Microsoft 365 Entreprise.
-
 - Pour l’identité hybride
 
   Joignez l’appareil à votre AD DS, joignez l’appareil à votre client Azure AD, puis inscrivez l’appareil dans Intune.
+
+- Pour l’identité Cloud uniquement
+
+  Joignez l’appareil au client Azure AD de votre abonnement Microsoft 365 Entreprise.
 
 ### <a name="existing-employee-with-an-ad-ds-user-account"></a>Employé existant avec un compte d’utilisateur AD DS
 
@@ -345,7 +368,11 @@ Dans le cadre de l’intégration initiale de votre organisation lors de l’uti
 
 L’employé existant doit déjà être ajouté aux groupes de travail appropriés, département et AD DS régional.
 
-### <a name="new-employee-with-cloud-only-user-account"></a>Nouvel employé avec un compte d’utilisateur Cloud uniquement
+Vous pouvez ajouter un compte d’utilisateur à plusieurs groupes Azure AD dans le centre d’administration Microsoft 365. Dans les propriétés du compte d’utilisateur, cliquez sur **gérer les groupes > ajouter des appartenances**.
+
+Si vous voulez utiliser PowerShell, consultez ce [classeur Excel téléchargeable](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true)qui génère les commandes PowerShell sur la base d’un compte d’utilisateur spécifié et des noms de groupes sélectionnés.
+
+### <a name="new-employee-with-a-cloud-only-user-account"></a>Nouvel employé avec un compte d’utilisateur Cloud uniquement
 
 Dans le cadre de l’intégration initiale de votre organisation lors de l’utilisation de l’identité cloud uniquement, ajoutez le compte d’utilisateur à ces groupes :
 
@@ -356,7 +383,7 @@ Dans le cadre de l’intégration initiale de votre organisation lors de l’uti
 
 ### <a name="initial-sign-in-to-microsoft-365"></a>Connexion initiale à Microsoft 365
 
-Pour la première connexion à Microsoft 365 des nouveaux employés ou des employés existants disposant d’un compte d’utilisateur AD DS, indiquez-leur les éléments suivants :
+Pour la première fois que les employés se connectent à Microsoft 365, donnez-leur l’instruction suivante :
 
 1. Connectez-vous à leurs appareils à l’aide de leurs informations d’identification de compte d’utilisateur.
 2. À l’aide d’un navigateur, connectez-vous au portail Office 365 surhttps://portal.office.com.
@@ -410,4 +437,4 @@ Après leur intégration, chaque employé doit avoir :
 
 ## <a name="next-step"></a>Étape suivante
 
-Déployer vos [charges de travail et scénarios](deploy-workloads.md) pour tirer parti des fonctionnalités et de la configuration de votre infrastructure de base.
+Déployer vos [charges de travail et scénarios](deploy-workloads.md) pour tirer parti des fonctionnalités et de la configuration de votre infrastructure de base Microsoft 365 Entreprise.
