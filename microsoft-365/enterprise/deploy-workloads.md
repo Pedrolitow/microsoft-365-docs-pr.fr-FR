@@ -2,7 +2,7 @@
 title: Scénarios et charges de travail Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/15/2019
+ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Intégrez les utilisateurs de votre organisation aux charges de travail productivité de Microsoft 365 Entreprise.
-ms.openlocfilehash: 06dc8683c471de9de7067a3d84673687cddc76c6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 0c81f93b117645974e93870f20d4dfb469dae3ac
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072404"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054926"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
 
@@ -39,6 +39,10 @@ Pour protéger ces données contre des menaces internes et externes, suivez les 
 Les charges de travail et les scénarios décrits dans le guide de déploiement global de Microsoft 365 Entreprise sont les suivants :
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+
+Pour obtenir d’autres scénarios, reportez-vous à la [bibliothèque de productivité Microsoft 365](https://www.microsoft.com/microsoft-365/success/). Sur cette page web, saisissez une chaîne de recherche ou cliquez sur **Filtrer par**, puis indiquez un secteur, des rôles (services) et des produits au sein de Microsoft 365.
+
+Dans les résultats, cliquez sur une fiche pour voir les étapes de mise en route.
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Conditions préalables pour l’infrastructure de base
 

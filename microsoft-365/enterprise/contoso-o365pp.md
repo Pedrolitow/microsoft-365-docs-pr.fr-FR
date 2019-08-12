@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise System Center Configuration Manager pour déployer Office 365 ProPlus.
-ms.openlocfilehash: 0fa0ca1d268dbfd57891804e20959147cd6385e4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8367f6456b6e32c62e03f611114177f4dbe6622f
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283547"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054996"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Déploiement d’Office 365 ProPlus pour Contoso
 
@@ -75,7 +75,7 @@ Pour effectuer le déploiement d’Office, Contoso a implémenté le processus s
 
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-mdm.md) comment Contoso utilise Enterprise Mobility + Security (EMS) dans Microsoft 365 Entreprise pour gérer ses appareils et les applications qui y sont exécutées au sein de son organisation.
+[En savoir plus](contoso-mdm.md) sur la façon dont Contoso utilise Microsoft 365 Entreprise pour gérer ses appareils et les applications qui y sont exécutées au sein de son organisation.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -12,19 +12,19 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Découvrez comment Contoso utilise EMS dans Microsoft 365 Entreprise pour gérer ses appareils et les applications qu’ils exécutent.
-ms.openlocfilehash: f47d6a1ee608d33802f1c523d3b954af3771f212
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Découvrez comment Contoso utilise Intune dans Microsoft 365 Entreprise pour gérer ses appareils et les applications exécutées sur ces derniers.
+ms.openlocfilehash: 9f3db160b01a54afa3457703b0333be1ff3a02ec
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278041"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054986"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestion des appareils mobiles pour Contoso
 
-**Résumé :** Découvrez comment Contoso utilise EMS dans Microsoft 365 Entreprise pour gérer ses appareils et les applications qu’ils exécutent.
+**Résumé :** Découvrez comment Contoso utilise Intune dans Microsoft 365 Entreprise pour gérer ses appareils et les applications exécutées sur ces derniers.
 
-Enterprise Mobility + Security (EMS) dans Microsoft 365 Entreprise comprend Microsoft Intune et un ensemble de services Azure pour prendre en charge la gestion et la sécurité des appareils mobiles et des applications.
+Microsoft 365 Entreprise comprend Microsoft Intune et un ensemble de services Azure pour prendre en charge la gestion et la sécurité des appareils mobiles et des applications.
 
 Chez Contoso, de nombreux employés sont équipés d’appareils mobiles. Certains d’entre eux ont leur bureau sur les sites de Contoso et d’autres n’ont pas de bureau. Contoso cherchait une solution pour renforcer la productivité des employés, tout en garantissant la sécurité des appareils, des données Contoso stockées sur ces appareils et du comportement des applications.
 

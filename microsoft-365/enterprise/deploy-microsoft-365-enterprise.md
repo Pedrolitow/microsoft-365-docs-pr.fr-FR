@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: 9f67c8b6ac28557e8a37a31ec8ca9e0b318cb79a
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937406"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054946"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
-Microsoft 365 Entreprise est une combinaison d’Office 365, Enterprise Mobility + Security (EMS), et Windows 10 Entreprise qui présente les caractéristiques suivantes : 
+Microsoft 365 Entreprise associe les applications et services de productivité locaux et basés sur le cloud à Windows 10 Entreprise qui :  
 
 - possède une sécurité intelligente ;
 - est intégré à des fins de simplicité ;

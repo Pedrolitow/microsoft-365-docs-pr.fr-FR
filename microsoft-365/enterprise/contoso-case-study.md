@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,18 +13,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment une multinationale fictive mais représentative a mis en œuvre Microsoft 365 Entreprise.
-ms.openlocfilehash: 559e1af8a344fea2863c528eeaa99de718d2eeed
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e587a2c6588faf32aa6882ef1659472365611517
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276671"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054916"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Entreprise pour Contoso Corporation
 
 **Résumé :** comment une organisation globale fictive mais représentative a adopté Microsoft 365 entreprise.
 
-Microsoft 365 Entreprise est le premier cloud de Microsoft qui combine Office 365, Windows 10 entreprise et Enterprise Mobility + Security (EMS) en une solution complète et intelligente qui permet à chacun d’être créatif et de collaborer en toute sécurité. 
+Microsoft 365 Entreprise est la première offre cloud de Microsoft qui allie les applications et services de productivité locaux et basés sur le cloud à Windows 10 Entreprise et aux fonctionnalités de sécurité avancées dans une solution complète et intelligente, qui permet à chacun d’être créatif et de collaborer en toute sécurité. 
 
 Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif ayant son siège à Paris, en France. Contoso a déployé Microsoft 365 Entreprise et adressé des décisions de conception majeures et les détails d’implémentation pour la mise en réseau, l’identité, Windows 10 Entreprise, Office 365 ProPlus, la gestion des appareils mobiles, la protection des informations et la sécurité. 
 

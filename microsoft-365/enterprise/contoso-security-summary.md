@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Utilisation des fonctionnalités de sécurité sur Microsoft 365 Entreprise par Contoso.
-ms.openlocfilehash: 1aade29c8a4f9348b749025818e433981ec19091
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 3de3b748659d713d4db8375d4bcc51ce89573d79
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353100"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054966"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Résumé de la sécurité de Microsoft 365 Entreprise pour Contoso Corporation
 
@@ -123,7 +123,7 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
 - Gestion des périphériques avec Microsoft Intune
 
-  Dans le cadre de la suite Enterprise Management + Security (EMS), Contoso utilise [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) pour s’inscrire, gérer et configurer l’accès aux appareils mobiles et les applications qui s’exécutent sur ces derniers. Les stratégies d’accès conditionnel basé sur l’appareil nécessitent également des applications approuvées et des PC et des appareils mobiles compatibles.
+  Contoso utilise [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) pour inscrire, gérer et configurer l’accès aux appareils mobiles et aux applications qui s’exécutent sur ces derniers. Les stratégies d’accès conditionnel basé sur l’appareil nécessitent également des applications approuvées et des PC et des appareils mobiles compatibles.
 
 ## <a name="security-management"></a>Gestion de la sécurité
 
