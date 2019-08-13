@@ -3,7 +3,7 @@ title: Vue d’ensemble de Microsoft 365 Entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 Enterprise.
-ms.openlocfilehash: ec2a8f0d60f50503f8f5cf457c2999598e248053
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: de67f9e99fbb7a3a6e85001ec675f16672f4ef22
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937419"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297894"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 Entreprise
 
@@ -59,15 +59,26 @@ Pour plus d’informations, reportez-vous à la rubrique [features and Capabilit
 
 L' [affiche de Microsoft 365 entreprise](http://aka.ms/m365eposter) est un emplacement central où vous pouvez voir:
 
-- Les avantages de Microsoft 365 Enterprise et la façon dont ils sont mappés sur ses piliers de valeur
+- Avantages de Microsoft 365 Enterprise et mode de correspondance entre les applications et les services et leur valeur pilier
 - Plans d’entreprise Microsoft 365 et les composants qu’ils contiennent 
 - Les principaux composants de l’espace de travail moderne, que Microsoft 365 entreprise active.
-- Les principaux scénarios de valeur commerciale de Microsoft 365 Enterprise et les services et produits qui les rendent possibles
+- La [bibliothèque de productivité Microsoft 365](https://www.microsoft.com/microsoft-365/success/) et les scénarios représentatifs pour certains services d’organisation courants
 - Feuille de route d’adoption qui met en évidence le [Guide de déploiement](deploy-microsoft-365-enterprise.md) d’entreprise Microsoft 365
 
 ![](./media/m365-poster/m365e-poster.png)
 
 Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf).
+
+
+## <a name="transition-your-entire-organization"></a>Transition de l’ensemble de votre organisation
+
+Pour obtenir une meilleure idée de la façon de déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 Enterprise, téléchargez l' [affiche de transition](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+Cette affiche de deux pages est un moyen rapide d’inventorier votre infrastructure existante et d’accéder aux conseils pour passer au produit ou service correspondant dans Microsoft 365 entreprise. Elle inclut des produits Windows et Office, ainsi que d’autres éléments d’infrastructure et de sécurité, tels que la gestion des appareils, l’identité, la protection des informations et des menaces.
+
+Vous pouvez imprimer cette affiche aux formats letter, Legal ou tabloïd (11 x 17).
 
 ## <a name="deploying"></a>Déploiement
 
