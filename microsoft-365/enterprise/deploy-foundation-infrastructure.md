@@ -3,8 +3,8 @@ title: Infrastructure de base de Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 03/05/2019
-ms.audience: ITPro
+ms.date: 08/09/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez les phases principales du déploiement de l’infrastructure de base pour Microsoft 365 Entreprise au sein de votre organisation, également appelé déploiement de base.
-ms.openlocfilehash: e6b8a71f59f20633e323c71e931b930198bc4deb
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400048"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297914"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastructure de base de Microsoft 365 Entreprise
 
-Si vous faites le déploiement de bout à bout de Microsoft 365 Entreprise vous-même, vous devez tout d’abord créer une base solide sur laquelle les applications et services reposent et peuvent déverrouiller la créativité et le travail d’équipe dans un environnement sécurisé. Cette base est parfois appelée déploiement de base.
+Si vous faites le déploiement de bout à bout de Microsoft 365 Entreprise vous-même, vous devez tout d’abord créer une base solide sur laquelle les applications et services reposent et peuvent déverrouiller la créativité et le travail d’équipe dans un environnement sécurisé. Cette base est parfois appelée *déploiement de base*.
 
 Pour une trajectoire définie pour le déploiement bout à bout, vous pouvez utiliser chacune de ces phases pour planifier et déployer l’infrastructure de base de Microsoft 365 Entreprise :
 
@@ -37,14 +37,14 @@ Pour une trajectoire définie pour le déploiement bout à bout, vous pouvez uti
 
 Les phases commencent avec le plus fondamental (mise en réseau et identité), puis créer des couches de paramètres d’infrastructure et des groupes :
 
-- Installer la version la plus actuelle et sécurisée de Windows sur vos appareils.
-- Installer la version la plus actuelle d’Office sur vos appareils.
-- Gérez les appareils de votre organisation.
+- Installer la version la plus actuelle et sécurisée de Windows sur vos appareils et la tenir à jour.
+- Installer la version la plus actuelle et sécurisée de Microsoft Office sur vos appareils et la tenir à jour.
+- Gérer les appareils de votre organisation et leur accès aux applications.
 - Protéger les informations sur ces appareils et dans le cloud.
 
 Toutefois, vous avez la possibilité de configurer et déployer les phases ou étapes en phases pour les adapter à vos ressources informatiques et aux besoins de votre entreprise.
 
-- **Si vous êtes une entreprise de petite taille ou jeune**, suivez les phases selon vos besoins pour assembler votre infrastructure méthodiquement.
+- **Si vous êtes une entreprise de petite taille ou jeune**, suivez les phases selon vos besoins pour assembler votre infrastructure méthodiquement. Pour un déploiement simplifié pour structures autres que les entreprises, cliquez [ici](deploy-foundation-infrastructure-non-enterprises.md).
 
 -  **Si vous êtes une organisation d’entreprise**, envisagez les phases comme des couches de l’infrastructure informatique, plutôt qu’une trajectoire définie et déterminez comment mieux travailler sur pour une adhérence finale à la configuration requise pour chaque couche au sein de votre organisation.
 
@@ -58,13 +58,29 @@ Voici l’infrastructure de base dans le guide de déploiement global de Micros
 
 ![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
+## <a name="at-a-glance"></a>En un coup d’œil
+
+L’[affiche Microsoft 365 Enterprise Foundation infrastructure](http://aka.ms/m365efoundinfraposter) est un emplacement central où vous pouvez voir, pour chaque phase :
+
+- Les objectifs généraux de la phase pour les administrateurs et les utilisateurs
+- Les services, les fonctionnalités et les outils
+- Les décisions clés de la conception pour la planification
+- Les résultats de la configuration
+- Le processus d’intégration des nouveaux utilisateurs
+- Comment assurer la surveillance et la mise à jour
+
+![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+
+Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
+
+
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>Configuration de l’infrastructure vs processus de déploiement utilisateur
 
 L’infrastructure de base est un ensemble de logiciels et services configurés qui, lorsqu’ils sont combinés ensemble pour un utilisateur, lui permet de tirer parti du spectre entier de compétences et protections que propose Microsoft 365 Entreprise. La destination finale de votre route de déploiement de bout en bout est que cette infrastructure s’applique à tous vos utilisateurs et leurs appareils Windows. 
 
 Toutefois, il est important de noter que l’infrastructure de base Microsoft 365 Entreprise est indépendante du déploiement de logiciels et services à vos utilisateurs. ***Vous pouvez configurer les couches de l’infrastructure de base sans avoir à mettre en place ces couches à l’ensemble de vos utilisateurs.***
 
-Par conséquent, il est possible de configurer, tester et piloter les éléments de l’infrastructure de base bien avant le processus de déploiement de ces éléments à la diversité de vos utilisateurs dans les bureaux, les régions ou les divisions de votre organisation.
+Il est possible de configurer, tester et piloter les éléments de l’infrastructure de base bien avant le processus de déploiement de ces éléments à la diversité de vos utilisateurs dans les bureaux, les régions ou les divisions de votre organisation.
 
 Par exemple, vous créez les paramètres pour :
 
@@ -86,16 +102,21 @@ Lorsque vous êtes prêt à déployer des éléments de cette infrastructure à 
 | Gestion des appareils mobiles | Ajouter des comptes aux groupes pour l’inscription des appareils et stratégies d’accès conditionnel basé sur l’appareil. |
 | Protection des informations | Ajouter des comptes d’utilisateurs à des groupes pour les étiquettes de Protection des informations. |
 
-Une fois l’infrastructure de base terminée, testée et pilotée, vous pouvez mettre en place des logiciels installés, comme Windows 10 Entreprise et Office 365 ProPlus et les services et protections basés sur le cloud, tels que l’inscription des appareils et stratégies d’accès conditionnel, à vos utilisateurs de la manière la mieux adaptée à vos objectifs professionnels et ressources informatiques.
+Une fois les phases ou les éléments de l’infrastructure de base terminés, testés et pilotés, vous pouvez mettre en place des logiciels installés, comme Windows 10 Entreprise et Office 365 ProPlus et les services et protections basés sur le cloud, tels que l’inscription des appareils et stratégies d’accès conditionnel, à vos utilisateurs de la manière la mieux adaptée à vos objectifs professionnels et ressources informatiques.
 
 ## <a name="deployment-and-project-management-strategies"></a>Stratégies de gestion de projet et déploiement
 
 Pour vous donner quelques idées sur la façon de s’essayer à la gestion de projet des différentes phases de l’infrastructure de base pour les utilisateurs pilotes et le reste de votre organisation, voir [stratégies de déploiement](deployment-strategies-microsoft-365-enterprise.md).
 
+## <a name="deployment-for-non-enterprises"></a>Déploiement pour les structures autres que les entreprises
+
+Si votre organisation est plus petite et que Microsoft 365 Entreprise n’est pas adapté à vos besoins, consultez la section [Déploiement pour les structures autres que les entreprises](deploy-foundation-infrastructure-non-enterprises.md).
+
 
 ## <a name="next-step"></a>Étape suivante
 
-- J’ai une infrastructure existante pour Office 365, Enterprise Mobility + Security (EMS) ou Windows 10 Entreprise :
-  - Voir [Déployer l’infrastructure existante](deploy-with-existing-infrastructure.md). Cet article vous guide dans les critères de sortie pour chaque phase.
-- Je démarre de zéro : 
-   - Commencer votre route de déploiement de bout à bout avec [Phase 1 : mise en réseau](networking-infrastructure.md).
+| Où je suis | Où je dois aller |
+|:-------|:-----|
+| J’ai une infrastructure existante pour Office 365, Enterprise Mobility + Security (EMS) ou Windows 10 Entreprise | Commencez par [Déployer l’infrastructure existante](deploy-with-existing-infrastructure.md), qui vous guide dans les critères de sortie de chaque phase. |
+| Je commence à zéro dans une entreprise | Commencer votre route de déploiement de bout à bout avec [Phase 1 : mise en réseau](networking-infrastructure.md). |
+| Je commence à zéro ailleurs que dans une entreprise | Commencer votre route de déploiement de bout à bout avec [Déploiement pour les structures autres que les entreprises](deploy-foundation-infrastructure-non-enterprises.md). |

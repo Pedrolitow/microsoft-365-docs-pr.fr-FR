@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Intégrez les utilisateurs de votre organisation aux charges de travail productivité de Microsoft 365 Entreprise.
-ms.openlocfilehash: 0c81f93b117645974e93870f20d4dfb469dae3ac
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054926"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297864"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
 
@@ -77,3 +77,4 @@ La phase **Identité** garantit que votre identité basée sur le cloud, qu’el
 Bien que fondamentale et essentielle pour les performances globales, la phase **Mise en réseau** sur votre réseau peut être en cours lorsque vous intégrez vos utilisateurs à des charges de travail, sachant que les performances des applications et services Microsoft 365 s’amélioreront au fil du temps.
 
 Cela vaut en particulier pour les organisations disposant de plusieurs sites et d’une grande diversité d’appareils périphériques et de connexions Internet.
+

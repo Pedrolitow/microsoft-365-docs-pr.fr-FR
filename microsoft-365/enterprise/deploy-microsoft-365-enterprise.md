@@ -3,7 +3,7 @@ title: Déployer Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054946"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297904"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
@@ -29,13 +29,13 @@ Microsoft 365 Entreprise associe les applications et services de productivité
 - révèle la créativité ;
 - est conçu pour le travail d’équipe.
 
-Ces bénéfices ne sont pas réalisés uniquement en obtenant des licences pour les trois produits, mais en les déployant ainsi que leurs fonctionnalités d’une manière spécifique qui inclut l’intégration et la sécurité de pointe.
+Vous pouvez bénéficier de ces avantages en déployant les charges de travail de productivité et l’infrastructure de façon intégrée en incluant des services de sécurité et des fonctionnalités de pointe.
 
 Il existe trois méthodes principales pour déployer Microsoft 365 Entreprise :
 
-- Faites-le avec les ingénieurs Microsoft à l’aide de FastTrack pour Microsoft 365.
+- Faites-le avec les ingénieurs Microsoft à l’aide de [FastTrack pour Microsoft 365](#fasttrack-for-microsoft-365).
 - Faites-le avec l’aide de Microsoft Consulting Services ou d’un [partenaire Microsoft](https://partner.microsoft.com/).
-- Faites-le vous-même avec le guide de déploiement de Microsoft 365 Entreprise.
+- Faites-le vous-même avec le [Guide de déploiement de Microsoft 365 Entreprise](#microsoft-365-enterprise-deployment-guide).
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack pour Microsoft 365
 
@@ -57,7 +57,7 @@ Pour déployer Microsoft 365 Entreprise vous-même, vous pouvez :
 
   **Si vous êtes une entreprise de petite taille ou jeune**, suivez les phases selon vos besoins pour assembler votre infrastructure méthodiquement.
 
-  Toutefois, vous pouvez déployer les phases ou portions de différentes phases de cette infrastructure dans n’importe quel ordre selon vos besoins, [l’une après l’autre ou en parallèle](deployment-strategies-microsoft-365-enterprise.md), pour s’intégrer avec votre infrastructure actuelle, s’adapter à vos ressources et plans informatique et répondre à votre besoins professionnels. 
+  Toutefois, vous pouvez déployer les phases ou portions de différentes phases de cette infrastructure dans n’importe quel ordre selon vos besoins, [l’une après l’autre ou en parallèle](deployment-strategies-microsoft-365-enterprise.md), pour s’intégrer avec votre infrastructure actuelle, s’adapter à vos ressources et plans informatique et répondre à votre besoins professionnels. Pour un déploiement simplifié pour structures autres que les entreprises, cliquez [ici](deploy-foundation-infrastructure-non-enterprises.md).
 
   **Si vous êtes une organisation d’entreprise**, envisagez les phases comme des couches de l’infrastructure informatique, plutôt qu’une trajectoire définie et déterminez comment mieux travailler pour une adhérence finale à la configuration requise pour chaque couche au sein de votre organisation.
 
@@ -85,6 +85,16 @@ Pour plus d’informations, consultez les [guides de laboratoire de test Microso
 
 ![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
+## <a name="transition-your-entire-organization"></a>Migration de l’ensemble de votre organisation
+
+Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, téléchargez l’[affiche de transition](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 Entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
+
+Vous pouvez imprimer cet affiche au format lettre, légal ou tabloïd (11 x 17).
+
 ## <a name="how-did-others-do-it"></a>Comment d’autres ont-ils procédé ?
 
 Utilisez ces ressources pour comprendre comment d’autres personnes ont déployé et utilisent Microsoft 365 Entreprise.
@@ -98,11 +108,10 @@ Le site Témoignages clients vous permet de voir comment les clients Microsoft u
 3. Sélectionnez le secteur de votre organisation dans **Secteur d’activité**.
 4. Sélectionnez **Microsoft 365** dans **Produit**.
 5. Cliquez sur une carte pour afficher l’étude de cas du client.
-  
 
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Comment Microsoft utilise Microsoft 365 Entreprise
 
-La mise en place d’une culture numérique est une priorité majeure pour tout responsable soucieux à de promouvoir un espace de travail moderne. Microsoft 365 a été conçu pour prendre en charge ce genre de changement de culture, afin de stimuler la créativité et la collaboration. Chez Microsoft, la mise en place de notre infrastructure de base a précisément déclenché ce changement de culture numérique. L’implémentation de Microsoft 365 Entreprise nous a permis de déployer des technologies de collaboration telles que Microsoft Teams et Exchange Online, ainsi que de partager des données sensibles en ligne sur des sites intranet SharePoint sécurisés.
+La mise en place d’une culture numérique est une priorité majeure pour tout responsable soucieux à de promouvoir un espace de travail moderne. Microsoft 365 a été conçu pour prendre en charge ce genre de changement de culture, afin de stimuler la créativité et la collaboration. La mise en place de l’infrastructure de base chez Microsoft a précisément déclenché ce changement de culture numérique. L’implémentation de Microsoft 365 Entreprise nous a permis de déployer des technologies de collaboration telles que Microsoft Teams et Exchange Online, ainsi que de partager des données sensibles en ligne sur des sites intranet SharePoint sécurisés.
 
 En même temps, les fonctionnalités de sécurité intelligente et l’intégration des produits simplifient la gestion des besoins et réduisent le coût total de possession tout au long du cycle de vie des ressources informatiques. 
 
@@ -115,7 +124,7 @@ Découvrez comment les départements d’ingénierie et d’exploitation de Core
 
 Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif avec son siège à Paris en France. Découvrez comment [Contoso a déployé Microsoft 365 Entreprise](contoso-case-study.md) et abordé les décisions de conception majeures, ainsi que les détails d’implémentation pour la mise en réseau, la gestion des identités, Windows 10 Entreprise, Office 365 ProPlus, la gestion des appareils mobiles, la protection des informations et la sécurité. 
 
-## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>Étape suivante pour déployer Microsoft 365 Entreprise
+## <a name="next-step"></a>Étape suivante
 
 Pour le faire avec l’assistance directe de Microsoft, utilisez [FastTrack](https://fasttrack.microsoft.com/microsoft365).
 
