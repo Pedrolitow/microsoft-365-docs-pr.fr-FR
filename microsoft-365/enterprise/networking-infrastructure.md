@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes de déploiement de l’infrastructure réseau pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 9b8c23d543eca97147801d70e42de7105266c52d
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 4c1ea87e243d72920a3a56df270fab33bd722834
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33399958"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074314"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>Phase 1 : Infrastructure réseau pour Microsoft 365 Entreprise
 
@@ -48,11 +48,11 @@ Lorsque vous avez terminé ces étapes, accédez aux [critères de sortie](netwo
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Jetez un œil aux coulisses de Microsoft et découvrez comment l’entreprise a mis en place et a amélioré le réseau Microsoft pour les services cloud Office 365 en lisant l’article relatif à l’[optimisation des performances réseau pour Microsoft Office 365](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+Découvrez Microsoft et découvrez comment cette entreprise a [optimisé le réseau Microsoft pour les services Cloud](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 
-Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, [a optimisé son réseau](contoso-networking.md) pour les services cloud Microsoft 365.
+Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, [a optimisé ses appareils réseau et ses connexions Internet](contoso-networking.md) pour les services cloud Microsoft 365.
 
 ![](./media/contoso-overview/contoso-icon.png)
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes du déploiement de l’infrastructure de protection des informations pour Microsoft 365 Entreprise.
-ms.openlocfilehash: a0d2c485b05e0969fe45cfd79c86e4e7dcb1d5ff
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: a00f61cbf2f8d00929a67dae6d401fd99014ec26
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33399998"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073684"
 ---
 # <a name="phase-6-information-protection"></a>Phase 6 : Protection des informations
 
@@ -50,11 +50,7 @@ Lorsque vous avez terminé ces étapes, accédez aux [critères de sortie](infop
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Découvrez comment les experts informatiques de Microsoft utilisent les fonctionnalités de protection de l’information de Microsoft 356 Entreprise pour protéger l’information et faire face aux cyberattaques :
-
-- [Protection des fichiers dans le cloud grâce à Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
-- [Microsoft utilise l’intelligence des menaces pour se protéger contre les menaces, les détecter et y faire face](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
-- [Microsoft déjoue les tentatives d’hameçonnage grâce à Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
+Découvrez comment les experts informatiques Microsoft utilisent [Azure Information Protection et protègent les données](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 

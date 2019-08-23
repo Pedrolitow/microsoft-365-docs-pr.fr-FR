@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/18/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Étapes du déploiement de l’infrastructure Office 365 ProPlus pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 7905bcf37f2cda0e81208a9666c257e2c871110e
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: cf698e4dbee17a811a4d2bc01d08d4d97d1961c1
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074174"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4 : Office 365 ProPlus
 
@@ -87,10 +87,7 @@ Si votre organisation utilise Configuration Manager, nous vous recommandons de p
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Découvrez comment les experts Microsoft ont planifié et déployé Office 365 ProPlus dans Microsoft 365 Entreprise avec les ressources suivantes :
-
-- [Déploiement et mise à jour de Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [Les canaux d’automatisation et de mise à jour facilitent le déploiement de Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (vidéo)
+Découvrez comment les experts Microsoft [déploient et gèrent les mises à jour d’Office 365 ProPlus](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 
