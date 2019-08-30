@@ -10,25 +10,67 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 52436050d95935833dbfbeb1655c57ed9cfdad68
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 7c4e66988c57754324fbc18de95e97d409ab0a53
+ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698206"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35078914"
 ---
-# <a name="data-protection-impact-assessments"></a>Analyses d’impact sur la protection des données
+# <a name="data-protection-impact-assessment-for-the-gdpr"></a>Analyses d’impact sur la protection des données pour le RGPD
 
-Dans le cadre du Règlement général sur la protection des données (RGPD), les contrôleurs de données doivent préparer une analyse d’impact sur la protection des données (DPIA) pour les opérations de traitement qui sont « susceptible(s) d’engendrer un risque élevé pour les droits et libertés des personnes physiques. » Par conception, aucun élément inhérent à Microsoft Azure ou à Dynamics 365 n’exige la création d’une DPIA par un contrôleur de données qui utilise le logiciel. Au contraire, le caractère obligatoire d’une DPIA dépend des détails et du contexte de la *méthode* de déploiement, de configuration et d’utilisation du produit par le contrôleur de données.
+Le règlement général sur la protection des données (RGPD) présente de nouvelles règles pour les organisations qui offrent des produits et des services aux membres de l’Union européenne (UE), ou qui collectent et analysent des données pour les résidents de l’UE quel que soit l’endroit où vous vous trouvez et celui où se trouve votre entreprise. Pour plus de détails, consultez la [rubrique Synthèse RGPD](gdpr.md). <br><br>
 
-Ce document vise à fournir les informations qui permettront aux contrôleurs de données de déterminer si une analyse d’impact sur la protection des données est nécessaire et, le cas échéant, les informations à inclure.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
 
-- [Office 365](gdpr-dpia-office365.md)
-- [Azure](gdpr-dpia-azure.md)
-- [Dynamics 365](gdpr-dpia-dynamics.md)
-- [Support de Microsoft et services professionnels](gdpr-dpia-prof-services.md)
+Ce document vous apporte des informations concernant les analyses d’impact sur la protection des données (DPIA) en vertu du RGPD lorsque vous utilisez les produits et services Microsoft.
 
-Pour plus d’informations sur la conformité au RGPD de la protection des données de Microsoft, reportez-vous à la section [Conformité](https://servicetrust.microsoft.com/ComplianceManager) sur le ***portail d’approbation de services***.
+## <a name="terminology"></a>Terminologie
+
+Définitions utiles pour les termes RGPD utilisés dans ce document :
+
+- *Contrôleur de données (contrôleur)*  : la personne morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres entités, détermine les finalités et les moyens de traitement des données personnelles.  
+- *Données personnelles* et *personne concernée* : toutes les informations relatives à une personne physique identifiée ou identifiable (personne concernée); une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement.  
+- *Responsable du traitement* : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données à caractère personnel pour le compte de l’entité de contrôle.  
+- *Données client* : les données produites et stockées dans les opérations quotidiennes dans le cadre du fonctionnement de votre entreprise.
+
+## <a name="what-is-a-dpia"></a>Qu'est-ce qu’une DPIA ?
+
+Le RGPD requiert des contrôleurs de préparer une analyse d’impact sur la protection des données (DPIA) pour les opérations « susceptibles de générer un risque élevé pour les droits et libertés des personnes physiques ». Il n’existe aucun élément inhérent aux produits et services Microsoft nécessitant la création d’une DPIA. Toutefois, étant donné que les produits et services Microsoft sont hautement personnalisables, une DPIA peut être nécessaire selon les détails de votre configuration Microsoft. Microsoft ne contrôle pas et n’a pas ou peu de connaissances sur les informations de ce type. En tant que contrôleur de données, vous devez déterminer les utilisations appropriées de ces données.
+
+## <a name="dpia-in-action"></a>DPIA en action
+
+Les recommandations DPIA s’appliquent à Office 365, Azure, Dynamics 365, au support Microsoft et aux services professionnels. Ces recommandations incluent les éléments suivants :
+
+1. **Quand une DPIA est-elle nécessaire ?**  : les facteurs de risque répertoriés ci-dessous doivent être traités lorsque vous envisagez d’effectuer une DPIA. D’autres facteurs potentiels et des informations supplémentaires sont disponibles dans la partie 1 de chacune des instructions.  
+
+    - Analyse systématique et approfondie des données sur la base d’un traitement automatisé.  
+    - Traitement à grande échelle de catégories spéciales de données (données révélant des informations uniques identifiant une personne physique) ou de données à caractère personnel relatives aux condamnations pénales et aux délits commis.
+    - Surveillance systématique d’une zone publiquement accessible à grande échelle.
+
+    Le RGPD précise « Le traitement des données à caractère personnel ne doit pas être considéré comme un traitement à grande échelle s'il concerne des données à caractère personnel de patients ou de clients par un médecin, un autre professionnel de la santé ou un avocat. Dans ce cas, une évaluation de l’impact de la protection des données ne doit pas être obligatoire. »
+
+2. **Qu’est-ce qui est requis pour effectuer une DPIA ?**  : une DPIA doit fournir des informations spécifiques sur le traitement prévu, qui sont détaillées dans la partie 2 de l’aide. Ces informations sont les suivantes :
+
+    - Évaluation du besoin et de la proportionnalité du traitement des données par rapport aux finalités prévues de la DPIA.  
+    - Évaluation des risques concernant les droits et les libertés des personnes physiques.
+    - Les mesures envisagées pour lutter contre les risques, notamment les garanties, les mesures de sécurité et les mécanismes pour assurer la protection des données à caractère personnel et prouver la conformité avec le RGPD.
+    - Finalités de traitement  
+    - Catégories de données à caractère personnel traitées  
+    - Rétention des données  
+    - Emplacement et transferts de données à caractère personnel  
+    - Partage de données avec des sous-processeurs tiers  
+    - Partage de données avec des tiers indépendants  
+    - Droits des personnes concernées par les données
+
+## <a name="additional-considerations"></a>Considérations supplémentaires
+
+Vous trouverez ci-dessous des détails spécifiques pouvant être utiles à votre implémentation Microsoft.
+
+- [Office 365](gdpr-dpia-office365.md) : ce document s’applique aux applications et services Office 365, y compris, mais sans s’y limiter, à Exchange Online, SharePoint Online, Yammer, Skype Entreprise et Power BI. Pour plus d'informations, reportez-vous aux tableaux [1](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-1--determining-whether-a-dpia-is-needed) et [2](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia).  
+- [Azure](gdpr-dpia-azure.md) : les clients sont encouragés à collaborer avec leurs responsables de la confidentialité et leur conseiller juridique pour déterminer la nécessité et le contenu de toute DPIA relative à l’utilisation de Microsoft Azure.  
+- [Dynamics 365](gdpr-dpia-dynamics.md) : le contenu d’une analyse d’impact sur la protection des données peut varier en fonction des outils Dynamics 365 que vous utilisez. Pour des détails spécifiques, reportez-vous à [Partie 2 : contenu d’une analyse d’impact sur la protection des données](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-dynamics#part-2--contents-of-a-dpia).
+- [Support Microsoft et services professionnels](gdpr-dpia-prof-services.md) : les services professionnels ne procèdent pas à un traitement de données de routine ou automatisées et ne sont pas destinés à traiter des catégories spéciales ou à effectuer des tâches qui facilitent ou nécessitent la surveillance de données accessibles au public. Pour plus d’informations, reportez-vous à [Partie 1 : déterminer si une analyse d’impact sur la protection des données est nécessaire](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services#part-1--determining-whether-a-dpia-is-needed). Les contrôleurs doivent prendre en considération les éléments de l’analyse d’impact sur la protection des données décrits ci-dessus, ainsi que d’autres facteurs pertinents, dans le contexte des implémentations spécifiques du contrôleur et des utilisations des services professionnels. Pour plus d’informations sur les services professionnels, reportez-vous à [Partie 2 : contenu d’une analyse d’impact sur la protection des données (DPIA)](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services#part-2--contents-of-a-dpia).
 
 ## <a name="learn-more"></a>En savoir plus
 

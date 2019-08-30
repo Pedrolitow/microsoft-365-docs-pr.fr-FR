@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Apprenez à évaluer la disponibilité des applications et des périphériques et dans l’environnement.
-ms.openlocfilehash: eb619cf807c2bd4ad3644dbb26e72b62e30320c7
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 9898090171d9e009a4f43f5362c363f71f08072e
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584550"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830527"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Étape 1 : disponibilité des applications et des périphériques
 
@@ -41,7 +41,7 @@ La compatibilité du matériel et des applications était autrefois un obstacle 
 
 Cela étant dit, selon la taille et l’âge de votre organisation, vérifier la compatibilité du matériel et des applications est probablement toujours une étape essentielle initiale de notre processus de déploiement de 8 étapes recommandé.
 
-Dans cet article, nous vous présentons cette première phase (disponibilité des applications et des périphériques) utilisant le nouvel outil de préparation de mise à niveau Desktop Analytics, une solution informatique intelligente basée sur le cloud livrée avec votre licence Windows.
+Dans cet article, nous vous présentons cette première phase (disponibilité des applications et des périphériques) utilisant les outils d’évaluation de la préparation Microsoft incluant Desktop Analytics, une solution informatique intelligente basée sur le cloud livrée avec votre licence Windows.
 
 ## <a name="windows-10-compatibility-scan"></a>Analyse de compatibilité Windows 10  
 
@@ -53,13 +53,13 @@ Un exemple de ligne de commande ScanOnly qui termine l’analyse de compatibilit
 
 Pour plus d’informations sur ScanOnly et les autres commutateurs de commande de configuration Windows, voir [Options de ligne de commande de configuration Windows](https://aka.ms/setupswitches).
 
-## <a name="recommended-tool-desktop-analytics-upgrade-readiness"></a>Outil recommandé : préparation de mise à niveau Desktop Analytics
+## <a name="recommended-tool-desktop-analytics"></a>Outil recommandé : Desktop Analytics
 
-Préparation de mise à niveau Desktop Analytics offre plusieurs avantages par rapport aux systèmes de gestion de bureau traditionnels et est notre outil recommandé. Il est sans agent et vous guide à travers les activités devant être effectuées en utilisant les informations de compatibilité d’application et de pilote recueillies via la mise à niveau de centaines de millions de PC de consommateurs. Cette information vous donne une évaluation détaillée identifiant les problèmes de compatibilité qui peuvent empêcher la mise à niveau, avec des liens vers des correctifs suggérées connus par Microsoft.
+Desktop Analytics offre plusieurs avantages par rapport aux systèmes de gestion de bureau traditionnels et est notre outil recommandé. Il est sans agent et vous guide à travers les activités devant être effectuées en utilisant les informations de compatibilité d’application et de pilote recueillies via la mise à niveau de centaines de millions de PC de consommateurs. Cette information vous donne une évaluation détaillée identifiant les problèmes de compatibilité qui peuvent empêcher la mise à niveau, avec des liens vers des correctifs suggérées connus par Microsoft.
 
-Pour configurer la préparation de mise à niveau Windows Analytics, vous devez tout d’abord configurer un abonnement Azure et inclure un espace de travail Azure Log Analytics à celui-ci. Une fois le service de disponibilité de mise à niveau Desktop Analytics en cours d’exécution, vous pouvez inscrire n’importe quel appareil Windows 7 SP1 ou plus récent connecté à Internet via les paramètres de stratégie de groupe ; c’est aussi simple que cela. Il n’y a aucune agent à déployer et le flux de travail visuel de la préparation de mise à niveau de Desktop Analytics vous guide à partir du pilote au déploiement en production. Si vous le souhaitez, vous pouvez exporter des données de disponibilité de mise à niveau Desktop Analytics à des outils de déploiement de logiciels tels que System Center Configuration Manager (Current Branch), pour cibler des PC directement et créer des collections de sites dès que celles-ci sont prêtes pour le déploiement.
+Pour configurer Desktop Analytics, vous devez tout d’abord configurer un abonnement Azure et inclure un espace de travail Azure Log Analytics à celui-ci. Une fois le service Desktop Analytics en cours d’exécution, vous pouvez inscrire n’importe quel appareil Windows 7 SP1 ou plus récent connecté à Internet via les paramètres de stratégie de groupe ; c’est aussi simple que cela. Il n’y a aucune agent à déployer et le flux de travail visuel de Desktop Analytics vous guide à partir du pilote au déploiement en production. Si vous le souhaitez, vous pouvez exporter des données de Desktop Analytics à des outils de déploiement de logiciels tels que System Center Configuration Manager (Current Branch), pour cibler des PC directement et créer des collections de sites dès que celles-ci sont prêtes pour le déploiement.
 
-Si Desktop Analytics n’est actuellement pas configuré pour votre environnement ou si vous souhaitez télécharger une version d’évaluation, accédez à la page Desktop Analytics(http://www.aka.ms/desktopanalytics) et lancez-vous.
+Si Desktop Analytics n’est actuellement pas configuré pour votre environnement ou si vous souhaitez télécharger une version d’évaluation, accédez à la page Desktop Analyticshttp://www.aka.ms/desktopanalytics) et lancez-vous.
 
 ## <a name="device-and-app-readiness-process"></a>Processus de disponibilité des applications et des périphériques
 
@@ -67,17 +67,15 @@ Disponibilité des applications et des périphériques comprend quatre étapes 
 
 ### <a name="1-inventory"></a>1\. Inventaire
 
-Le service de préparation de mise à niveau Desktop Analytics utilise un processus sans agent pour faire l’inventaire des ordinateurs et des applications au sein de votre parc d’ordinateurs de bureau.
+Desktop Analytics utilise un processus sans agent pour faire l’inventaire des ordinateurs et des applications au sein de votre parc d’ordinateurs de bureau. Il fournit également des rapports sur les applications et les sites Internet très régulièrement consultés, et les emplacements intranet pour vous aider avec les tests de compatibilité ultérieurement.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
-
-Il fournit également des rapports sur les applications et les sites Internet très régulièrement consultés, et les emplacements intranet pour vous aider avec les tests de compatibilité ultérieurement.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. Hiérarchisation
 
-Avec l’inventaire, l’outil de préparation de mise à niveau Desktop Analytics vous aide à identifier et à hiérarchiser les applications et le matériel les plus fréquemment utilisés dans votre organisation et les tâches à prioriser pour débloquer autant de PC que possible pour le déploiement.
+Avec l’inventaire, Desktop Analytics vous aide à identifier et à hiérarchiser les applications et le matériel les plus fréquemment utilisés dans votre organisation et les tâches à prioriser pour débloquer autant de PC que possible pour le déploiement.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
@@ -85,9 +83,9 @@ Il fournit également des conseils pour vous aider à évaluer les mises à jour
 
 ### <a name="3-testing"></a>3\. Tests
 
-Vous constaterez que la plupart des applications, pilotes et compléments de l’inventaire fonctionnent tels quels. Pour les éléments que Disponibilité de mise à niveau Desktop Analytics évalue comme ayant un problème, il vous fournir des informations incluant où trouver des mises à jour de version pour résoudre les problèmes de compatibilité. Au lieu de consacrer du temps et des ressources pour résoudre des problèmes complexes dans des applications non critiques, faiblement déployées et appareils plus anciens, vous pouvez choisir à la place de travailler avec des utilisateurs pour retirer et remplacer ces éléments.
+Vous constaterez que la plupart des applications, pilotes et compléments de l’inventaire fonctionnent tels quels. Pour les éléments que Desktop Analytics évalue comme ayant un problème, l’outil vous fournit des informations incluant où trouver des mises à jour de version pour résoudre les problèmes de compatibilité. Au lieu de consacrer du temps et des ressources pour résoudre des problèmes complexes dans des applications non critiques, faiblement déployées et appareils plus anciens, vous pouvez choisir à la place de travailler avec des utilisateurs pour retirer et remplacer ces éléments.
 
-Vous pouvez aussi utiliser l’outil de préparation de mise à niveau Desktop Analytics pour évaluer les problèmes de compatibilité sur navigateur, identifier les applications et sites web consultés par les utilisateurs utilisant encore les contrôles ActiveX, Browser Helper Objects, VBScript ou d’autres technologies héritées non prises en charge par le navigateur Microsoft Edge. Les utilisateurs devront quand même utiliser Internet Explorer 11 pour ces sites et vous pouvez les ajouter à la [liste de sites du mode Entreprise](https://docs.microsoft.com/fr-FR/microsoft-edge/deploy/emie-to-improve-compatibility) à l’aide du gestionnaire de listes de sites du mode Entreprise.
+Vous pouvez utiliser Desktop Analytics pour également évaluer les problèmes de compatibilité avec le navigateur, en identifiant les sites et applications web auxquels les utilisateurs accèdent en utilisant toujours des contrôles ActiveX, des objets d’assistance du navigateur, le langage de script VBScript ou d’autres technologies héritées non prises en charge par le navigateur Microsoft Edge. Ces sites nécessitent toujours d’utiliser Internet Explorer 11, et vous pouvez les ajouter à la [liste des sites en mode Entreprise](https://docs.microsoft.com/fr-FR/microsoft-edge/deploy/emie-to-improve-compatibility) à l’aide d’Enterprise Mode Site List Manager.
 
 En outre, pour vous aider dans votre migration vers Office 365 ProPlus, vous pouvez utiliser le [Kit de ressources de préparation pour Office](https://docs.microsoft.com/fr-FR/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) pour tester la compatibilité de vos compléments et des macros Microsoft Visual Basic pour Applications (VBA).
 
@@ -114,7 +112,7 @@ Un autre outil pour vous aider avec la compatibilité entre les applications Win
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Utilisation des outils de données de diagnostic continu
 
-L’outil de préparation de mise à niveau Desktop Analytics n’est pas simplement un outil pour migrer vers Windows 10 et Office 365 ProPlus. Une fois que vos ordinateurs de bureau exécutent Windows 10 et Office 365, vous pouvez l’utiliser pour vous aider à maintenir votre déploiement et à gérer les mises à jour de fonctionnalités semi-annuelles afin de rester à jour.
+Desktop Analytics n’est pas un outil qui vous permet de basculer vers Windows 10 et Office 365 ProPlus. Une fois que vos ordinateurs de bureau exécutent Windows 10 et Office 365, vous pouvez l’utiliser pour vous aider à maintenir votre déploiement et à gérer les mises à jour de fonctionnalités semi-annuelles afin de rester à jour.
 
 ## <a name="next-step"></a>Étape suivante 
 
