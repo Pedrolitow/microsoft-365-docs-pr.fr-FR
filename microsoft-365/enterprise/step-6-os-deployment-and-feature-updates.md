@@ -53,11 +53,9 @@ Lors du processus de création et de capture, les outils tels que System Center 
 
 L’image capturée sera au format d’image Windows (ou WIM), comme les supports d’installation Windows standard. Une fois que vous avez votre fichier WIM personnalisé, vous pouvez utiliser une autre séquence de tâches dans le cadre de votre déploiement de système d’exploitation dans System Center Configuration Manager ou Microsoft Deployment Toolkit pour effectuer des tâches liées au déploiement, pour appliquer l’image et exécuter les tâches avant et après l’application de votre image système Windows.
 
+[Créer une image de référence Windows 10](https://docs.microsoft.com/fr-FR/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-  [Créer une image de référence Windows 10](https://docs.microsoft.com/fr-FR/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
-
-
-  [Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/fr-FR/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/fr-FR/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>Types de déploiement
 
@@ -71,8 +69,7 @@ Lorsque votre image personnalisée est prête, le type d’installation ou de mi
 
 Ces trois scénarios ont un point commun : ils utilisent une séquence de tâches pour exécuter le processus, et une image personnalisée peut être appliquée à chaque fois.
 
-
-  [En savoir plus sur les scénarios de déploiement de Windows 10](https://docs.microsoft.com/fr-FR/windows/deployment/windows-10-deployment-scenarios)
+[En savoir plus sur les scénarios de déploiement de Windows 10](https://docs.microsoft.com/fr-FR/windows/deployment/windows-10-deployment-scenarios)
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>Mise à niveau sur place à l’aide de l’automatisation de la séquence de tâches
 
@@ -88,11 +85,9 @@ La mise à niveau sur place utilise l’installation de Windows. Le moteur de co
 
 Le scénario de mise à niveau sur place peut être utilisé pour migrer vers Windows 10 à partir d’anciennes versions de Windows, ainsi que pour mettre à niveau des versions précédentes de Windows 10. Une fois que l’installation de Windows a terminé la mise à niveau, votre séquence de tâches peut continuer à s’exécuter et à mettre à niveau des applications comme Office, à remplacer des pilotes et à appliquer les paramètres de personnalisation. De même, vous pouvez utiliser la séquence de tâches de mise à niveau pour effectuer des tâches préalables à l’installation ou des vérifications avant de procéder à la mise à niveau.
 
+[Effectuer une mise à niveau sur place vers Windows 10 à l’aide du gestionnaire de configuration](https://docs.microsoft.com/fr-FR/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-  [Effectuer une mise à niveau sur place vers Windows 10 à l’aide du gestionnaire de configuration](https://docs.microsoft.com/fr-FR/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
-
-
-  [Créer une séquence de tâches pour mettre à niveau un système d’exploitation dans le gestionnaire de configuration](https://docs.microsoft.com/fr-FR/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Créer une séquence de tâches pour mettre à niveau un système d’exploitation dans le gestionnaire de configuration](https://docs.microsoft.com/fr-FR/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>Déploiement progressif
 
@@ -104,9 +99,7 @@ Le scénario de mise à niveau sur place peut être utilisé pour migrer vers Wi
 
 Quel que soit le type de déploiement que vous choisissez, il est préférable qu’il soit autant automatisé que possible en matière de prévisibilité et de répétabilité. Microsoft propose deux solutions pour automatiser le déploiement de système d’exploitation à l’aide des séquences de tâches automatisées :
 
-  - 
-  **
-  [System Center Configuration Manager](https://docs.microsoft.com/fr-FR/sccm/core/understand/introduction) ** (ConfigMgr) offre des fonctionnalités de déploiement de système d’exploitation intégrées afin de compléter ses fonctionnalités pour la distribution de logiciels et la gestion des mises à jour logicielles. ConfigMgr est largement utilisé par les organisations de toutes tailles et prend en charge les quatre types de déploiement Windows. Si vous le souhaitez, vous pouvez intégrer ConfigMgr à Microsoft Intune pour ajouter des fonctionnalités supplémentaires pour le déploiement et la gestion des appareils.
+  - **[System Center Configuration Manager](https://docs.microsoft.com/fr-FR/sccm/core/understand/introduction) ** (ConfigMgr) offre des fonctionnalités de déploiement de système d’exploitation intégrées afin de compléter ses fonctionnalités pour la distribution de logiciels et la gestion des mises à jour logicielles. ConfigMgr est largement utilisé par les organisations de toutes tailles et prend en charge les quatre types de déploiement Windows. Si vous le souhaitez, vous pouvez intégrer ConfigMgr à Microsoft Intune pour ajouter des fonctionnalités supplémentaires pour le déploiement et la gestion des appareils.
 
   - L’autre option de déploiement populaire est l’application gratuite ** [Microsoft Deployment Toolkit](https://docs.microsoft.com/fr-FR/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit) ** (MDT) qui est généralement utilisée par de petites et moyennes organisations pour le déploiement de système d’exploitation. Cette approche ne nécessite que très peu d’infrastructure. MDT s’intègre aux Services de déploiement Windows (WDS) pour le démarrage réseau. L’application prend en charge les quatre types de déploiement ainsi que l’installation d’applications, les pilotes et les paramètres. MDT peut même s’intégrer au gestionnaire de configuration.
 
@@ -118,11 +111,9 @@ Une nouvelle option avec Windows 10 consiste à configurer de nouveaux PC dans l
 
 Ensuite, lorsqu’un utilisateur se connecte au PC lors de l’installation à l’aide de ses informations d’identification Azure AD, l’appareil s’inscrit dans Microsoft Intune, qui peut ensuite prendre le pas sur le processus de déploiement et appliquer des applications, des configurations de mises à jour logicielles et des stratégies de conformité. Windows Autopilot peut également empêcher l’utilisateur d’accéder à la première session jusqu’à ce que la configuration soit terminée (facultatif).
 
+[Vue d’ensemble de Windows Autopilot](https://docs.microsoft.com/fr-FR/windows/deployment/windows-autopilot/windows-10-autopilot)
 
-  [Vue d’ensemble de Windows Autopilot](https://docs.microsoft.com/fr-FR/windows/deployment/windows-autopilot/windows-10-autopilot)
-
-
-  [Conditions requises pour Windows Autopilot](https://docs.microsoft.com/fr-FR/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
+[Conditions requises pour Windows Autopilot](https://docs.microsoft.com/fr-FR/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update pour Entreprise -Mises à jour de fonctionnalité
 
@@ -130,16 +121,11 @@ Windows Update pour Entreprise est un service gratuit qui permet aux professionn
 
 Pour plus d’informations sur Windows Update pour Entreprise, veuillez consulter les documents suivants :
 
-- 
-  [Déployer les Mises à Jour utilisant Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-manage-updates-wufb)
-- 
-  [ Configurer Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-configure-wufb)
-- 
-  [Intégrer Windows Update pour Entreprise avec des outils de gestion existants](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-integrate-wufb)
-- 
-  [ Utiliser la Stratégie de Groupe afin de configurer Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-wufb-group-policy)
-- 
-  [ Utiliser Microsoft Intune afin de configurer Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/intune/windows-update-for-business-configure)
+- [Déployer les Mises à Jour utilisant Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-manage-updates-wufb)
+- [ Configurer Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-configure-wufb)
+- [Intégrer Windows Update pour Entreprise avec des outils de gestion existants](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-integrate-wufb)
+- [ Utiliser la Stratégie de Groupe afin de configurer Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-wufb-group-policy)
+- [ Utiliser Microsoft Intune afin de configurer Windows Update pour Entreprise](https://docs.microsoft.com/fr-FR/intune/windows-update-for-business-configure)
 
 ## <a name="next-step"></a>Étape suivante 
 

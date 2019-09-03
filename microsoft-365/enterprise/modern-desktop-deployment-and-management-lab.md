@@ -126,8 +126,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
   - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](http://www.aka.ms/watchhowtoshift)
 
-  - 
-  [Déploiement du système d’exploitation de System Center Configuration Manager](https://docs.microsoft.com/fr-FR/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Déploiement du système d’exploitation de System Center Configuration Manager](https://docs.microsoft.com/fr-FR/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan de déploiement de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
