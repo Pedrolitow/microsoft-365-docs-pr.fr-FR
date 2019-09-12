@@ -55,12 +55,11 @@ Concernant Windows 10, nous vous aidons à familiariser vos utilisateurs avec l
 
 Il existe également des contrôles de sécurité et de conformité visibles auxquels vos utilisateurs peuvent être soumis, comme Enterprise Mobility + Security qui comprend Azure AD et Microsoft Intune, et intègre des fonctionnalités supplémentaires avec Windows 10 et Office 365 que vous pouvez cibler pour la mise à niveau de votre bureau.
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/fr-FR/cloud-platform/enterprise-mobility-security)
 
 Par exemple, l’authentification multifacteur utilise Azure AD et protège la connexion des utilisateurs aux ressources à l’aide d’une application mobile ou d’un code confidentiel pour accéder aux services en toute sécurité. Azure Information Protection, quant à elle, permet aux utilisateurs de classer et d’étiqueter facilement les documents.
 
-
-  [Configurer l’authentification multifacteur pour les utilisateurs d’Office 365](https://support.office.com/fr-FR/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Configurer l’authentification multifacteur pour les utilisateurs d’Office 365](https://support.office.com/fr-FR/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 Ce sont quelques exemples des nouvelles fonctionnalités que pourront utiliser vos utilisateurs. Certaines d’entre elles pourront même les surprendre, de manière positive ou non. Il est possible que ces surprises entraînent un plus grand nombre d’appels et de tickets reçus par votre support technique, en particulier si elles modifient le flux de travail normal des utilisateurs.
 

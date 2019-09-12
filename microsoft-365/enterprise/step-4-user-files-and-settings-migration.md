@@ -59,15 +59,13 @@ Pendant le processus de migration, vous devrez avoir suffisamment de capacité d
 
 Si vous effectuez une actualisation de PC et ne formatez pas la partition principale de Windows, vous avez également la possibilité d’utiliser un magasin de migration de lien physique avec USMT. Ce processus conserve l’état utilisateur sur le PC alors que l’ancien système d’exploitation et les anciennes applications sont supprimés et actualisés. Grâce au processus de restauration provenant de la même partition locale, cette option comprend des améliorations importantes en matière de performances et réduit le trafic réseau.
 
-
-  [Vue d’ensemble de l’outil de migration de l’état utilisateur (USMT)](https://docs.microsoft.com/fr-FR/windows/deployment/usmt/usmt-overview)
+[Vue d’ensemble de l’outil de migration de l’état utilisateur (USMT)](https://docs.microsoft.com/fr-FR/windows/deployment/usmt/usmt-overview)
 
 ## <a name="onedrive-known-folder-move"></a>Fonctionnalité Known Folder Move de OneDrive
 
 Si vos utilisateurs sont sur OneDrive ou si vous ajoutez OneDrive dans le cadre de ce déploiement, une nouvelle option est mise à votre disposition. En utilisant le cloud pour synchroniser des fichiers utilisateur, la fonctionnalité « Known Folder Move » de OneDrive fournit un niveau de flexibilité qu’il est impossible d’atteindre avec les options de migration de fichier basé sur le réseau local. Si elle est activée avant la migration, elle fournit un accès sécurisé aux nouveaux PC ou aux PC actualisés et permet d’éliminer le besoin de créer des magasins de migration temporaire sur vos propres serveurs. Elle peut également être complètement transparente à l’utilisateur.
 
-
-  [Rediriger et déplacer les dossiers connus de Windows vers OneDrive](https://docs.microsoft.com/fr-FR/onedrive/redirect-known-folders)
+[Rediriger et déplacer les dossiers connus de Windows vers OneDrive](https://docs.microsoft.com/fr-FR/onedrive/redirect-known-folders)
 
 Si vous utilisez déjà OneDrive, vous saurez que les utilisateurs peuvent sélectionner les dossiers et les emplacements qu’ils souhaitent synchroniser à partir de OneDrive ou SharePoint avec leur appareil, mais, dans ce cas, c’est à l’utilisateur final que revient la lourde tâche de la configuration. Avec la fonctionnalité Known Folder Move, vous pouvez cibler les dossiers Documents, Bureau et Images dans un profil utilisateur et tous les protéger sur OneDrive. Un utilisateur peut le faire lui-même ou vous pouvez [le faire à l’aide des paramètres de stratégie de groupe](https://docs.microsoft.com/fr-FR/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c), ce qui est particulièrement important dans ce scénario.
 

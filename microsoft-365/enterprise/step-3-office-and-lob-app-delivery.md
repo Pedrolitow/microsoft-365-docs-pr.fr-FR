@@ -43,8 +43,7 @@ Si rien ne vous en empêche, nous vous recommandons de déployer les versions 64
 
 Il existe beaucoup de méthodes et de modèles permettant l’installation d’applications sur Windows. Examinons vos options de livraison.
 
-
-  [Gestion des applications Windows 10](https://docs.microsoft.com/fr-FR/windows/application-management/)
+[Gestion des applications Windows 10](https://docs.microsoft.com/fr-FR/windows/application-management/)
 
 ## <a name="msi-based-deployments"></a>Déploiements basés sur MSI
 
@@ -62,11 +61,9 @@ Une autre méthode populaire de remise application est IMAGERIE PC. Dans ce cas,
 
 Si vous ne voulez pas inclure Office 365 ProPlus dans votre image, n’oubliez pas que cette approche utilise une activation utilisateur ; elle ne peut pas être activée au préalable par l’administrateur système. Utilisez l’outil Déploiement d’Office pour installer préalablement Office sur le périphérique dont vous présentez l’imagerie et ignorer la connexion utilisateur.  Une fois l’image déployée, les utilisateurs finaux peuvent se connecter à l’aide de leurs informations d’identification Office 365 et activer Office 365 ProPlus.
 
+[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/fr-FR/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-  [Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/fr-FR/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
-
-
-  [Déploiement d’Office 365 ProPlus dans le cadre d’une image du système d’exploitation](https://docs.microsoft.com/fr-FR/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Déploiement d’Office 365 ProPlus dans le cadre d’une image du système d’exploitation](https://docs.microsoft.com/fr-FR/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office « Démarrer en un clic »  
 
@@ -82,17 +79,13 @@ Si vous utilisez l’outil System Center Configuration Manager, vous pouvez touj
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
+[Guide de déploiement pour Office 365 ProPlus](https://docs.microsoft.com/fr-FR/deployoffice/deployment-guide-for-office-365-proplus)
 
-  [Guide de déploiement pour Office 365 ProPlus](https://docs.microsoft.com/fr-FR/deployoffice/deployment-guide-for-office-365-proplus)
+[Suppression des versions MSI existantes d’Office lors de la mise à niveau vers Office 365 ProPlus](https://docs.microsoft.com/fr-FR/deployoffice/upgrade-from-msi-version)
 
+[Gérer Office 365 ProPlus avec le gestionnaire de configuration](https://docs.microsoft.com/fr-FR/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-  [Suppression des versions MSI existantes d’Office lors de la mise à niveau vers Office 365 ProPlus](https://docs.microsoft.com/fr-FR/deployoffice/upgrade-from-msi-version)
-
-
-  [Gérer Office 365 ProPlus avec le gestionnaire de configuration](https://docs.microsoft.com/fr-FR/sccm/sum/deploy-use/manage-office-365-proplus-updates)
-
-
-  [Affecter des applications Office 365 à des périphériques Windows 10 avec Microsoft Intune](https://docs.microsoft.com/fr-FR/intune/apps-add-office365)
+[Affecter des applications Office 365 à des périphériques Windows 10 avec Microsoft Intune](https://docs.microsoft.com/fr-FR/intune/apps-add-office365)
 
 ## <a name="browser-based-apps"></a>Applications basées sur navigateur
 
@@ -100,8 +93,7 @@ Voici quelques points à prendre en compte pour vous assurer que vos application
 
 De plus, si vous savez que vos sites intranet ne vont pas fonctionner correctement avec Microsoft Edge, vous pouvez configurer tous les sites intranet de façon à ce qu’ils s’ouvrent automatiquement avec Internet Explorer 11. Ce processus utilise un fichier XML pour déterminer si Internet Explorer 11 est utilisé pour chaque site et une stratégie de groupe pour appliquer les paramètres.
 
-
-  [Présentation du mode Entreprise](https://docs.microsoft.com/fr-FR/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
+[Présentation du mode Entreprise](https://docs.microsoft.com/fr-FR/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
 
 Nous avons abordés jusqu'à présent, les méthodes de déploiement connues. Mais il existe deux nouvelles approches de déploiement pour les applications que vous pouvez prendre en considération.
 
