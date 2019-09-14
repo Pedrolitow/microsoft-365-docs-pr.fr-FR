@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business.
-ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a3f77bd18b9b900151c50f923b705e4ff0150519
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072737"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982438"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migrer vers Microsoft 365 entreprise à partir d’Office 365 Business Premium
 
@@ -35,7 +35,7 @@ Si vous disposez déjà d’un abonnement Office 365 pour les entreprises, par e
   
 ## <a name="add-microsoft-365-business-licenses"></a>Ajouter des licences professionnelles Microsoft 365
 
-Vous disposez de deux méthodes pour obtenir Microsoft 365 Business. Si vous avez un partenaire, il peut acheter Microsoft 365 Business pour vous dans le [Centre partenaires de Microsoft](get-microsoft-365-business.md). Votre partenaire peut également vous aider à passer à Microsoft 365 Business.
+Vous disposez de deux méthodes pour obtenir Microsoft 365 Business. Un partenaire peut acheter Microsoft 365 Business pour vous dans le [Centre partenaires de Microsoft](get-microsoft-365-business.md). Votre partenaire peut également vous aider à passer à Microsoft 365 Business.
   
 Si vous gérez votre propre abonnement, vous pouvez [contacter](https://www.microsoft.com/microsoft-365/business) le service des ventes pour acheter des licences Microsoft 365 Business. 
   
@@ -72,7 +72,7 @@ Si vous disposez d’un lien pour acheter vos licences, vous allez parcourir un 
     
 5. Sur la dernière page, sélectionnez **accéder au centre d’administration**, puis poursuivez l’installation.
     
-6. Dans le centre d’administration, accédez **** \> à utilisateurs **actifs**.
+6. Dans le **Centre d’administration, accédez à** \> utilisateurs **actifs**.
     
 7. Sélectionnez l’utilisateur auquel vous souhaitez attribuer la licence d' **entreprise Microsoft 365** , puis cliquez sur **modifier** en regard de **licences de produit**.
     
@@ -92,7 +92,7 @@ Une fois que vous avez attribué des licences à Microsoft 365 Business, vous po
     
 3. Dans le volet **Ajouter une stratégie** , donnez un nom à la stratégie, puis choisissez un type de **stratégie** dans la liste déroulante. 
     
-    Vous pouvez configurer des stratégies d’application pour protéger les fichiers sur les appareils Android et iPhone, ainsi que Windows 10, et vous pouvez configurer des stratégies de configuration d’appareil pour les appareils Windows 10 appartenant à une société. Pour plus d’informations, consultez les liens suivants:
+    Vous pouvez configurer des stratégies d’application pour protéger les fichiers sur les appareils Android et iPhone, ainsi que Windows 10, et vous pouvez configurer des stratégies de configuration d’appareil pour les appareils Windows 10 appartenant à une société. Pour plus d’informations, consultez les liens suivants :
     
   - [Définir les paramètres de protection des applications pour les appareils Android ou iOS](app-protection-settings-for-android-and-ios.md)
     
@@ -102,7 +102,7 @@ Une fois que vous avez attribué des licences à Microsoft 365 Business, vous po
     
    ![Dans le volet ajouter une stratégie, entrez un nom, puis choisissez le type de stratégie dans le menu déroulant.](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
   
-4. Une fois que vous avez configuré les stratégies, vous et vos employés pouvez configurer des appareils:
+4. Une fois que vous avez configuré les stratégies, vous et vos employés pouvez configurer des appareils :
     
   - Si votre Windows ne se trouve pas déjà sur la mise à jour du créateur Windows professionnel, vous devrez [les mettre à niveau vers Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
     

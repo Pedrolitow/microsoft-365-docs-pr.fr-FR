@@ -8,16 +8,36 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
-ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
+ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35795620"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982605"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications pour la documentation du bureau géré Microsoft
 
 Cette rubrique répertorie les rubriques nouvelles et mises à jour dans la [documentation du bureau géré Microsoft](index.yml).
+
+## <a name="september-2019"></a>Septembre 2019
+Rubrique nouvelle ou modifiée | Description
+--- | ---
+[Conditions préalables pour le bureau géré Microsoft](get-ready/prerequisites.md) | Rubrique mise à jour
+[Configurer des appareils de bureau géré Microsoft](get-started/set-up-devices.md) | Nouvelle rubrique
+[Enregistrer les nouveaux appareils vous-même](get-started/register-devices-self.md) | Rubrique mise à jour
+[Enregistrer les appareils existants vous-même](get-started/register-reused-devices-self.md) | Nouvelle rubrique
+[Gestion des mises à jour dans le bureau géré Microsoft](service-description/updates.md) | Rubrique mise à jour
+
+## <a name="august-2019"></a>Août 2019
+Rubrique nouvelle ou modifiée | Description
+--- | ---
+[Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Rubrique mise à jour
+[Prise en charge des administrateurs pour le bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Rubrique mise à jour
+[Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md) | Rubrique mise à jour
+[Conditions préalables pour le bureau géré Microsoft](get-ready/prerequisites.md) | Rubrique mise à jour
+[Technologies de bureau géré Microsoft](intro/technologies.md) | Rubrique mise à jour
+
+
 
 ## <a name="july-2019"></a>Juillet 2019
 Rubrique nouvelle ou modifiée | Description
@@ -46,7 +66,7 @@ Rubrique nouvelle ou modifiée | Description
 [Préparer les lecteurs mappés pour le bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvelle rubrique
 [Préparer les certificats et les profils réseau pour le bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvelle rubrique
 [Commander des appareils de bureau gérés Microsoft](get-started/devices.md) | Rubrique mise à jour
-
+[Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md)
 
 ## <a name="april-2019"></a>Avril 2019
 Rubrique nouvelle ou modifiée | Description
@@ -92,5 +112,5 @@ Rubrique nouvelle ou modifiée | Description
 [Prise en charge du bureau géré Microsoft](service-description/support.md)<br />et [prise en charge de l’utilisateur final pour le bureau géré Microsoft](working-with-managed-desktop/end-user-support.md) | Mise à jour pour inclure l’Australie.
 
 ## <a name="october-30-2018"></a>30 octobre 2018
-Réorganisation du contenu: section ajoutée pour la [Description du service Managed Desktop de Microsoft](service-description/index.md). 
+Réorganisation du contenu : section ajoutée pour la [Description du service Managed Desktop de Microsoft](service-description/index.md). 
 

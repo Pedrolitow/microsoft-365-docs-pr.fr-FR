@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 533d51da027441ac199c3e1bfefb42812309a91b
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390651"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982485"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Services Microsoft Managed Desktop Device
 
@@ -20,19 +20,19 @@ Cette rubrique répertorie les services et les limitations de service pour les a
 
 ## <a name="device-services"></a>Services d’appareil
 
-Microsoft fournira ces services pour les appareils de bureau gérés par Microsoft. Pour plus d’informations sur les appareils de bureau gérés par Microsoft, consultez la rubrique [Microsoft Managed Desktop](device-list.md)Devices.
+Microsoft fournira ces services pour les appareils de bureau gérés par Microsoft. Pour plus d’informations sur les appareils de bureau gérés par Microsoft, consultez la rubrique [Microsoft Managed Desktop Devices](device-list.md).
 
  | 
  --- | ---
 Assistance | Les agents de support répondent aux questions directement liées à la fonctionnalité du périphérique et diagnostiquent les problèmes liés aux appareils.
 Inventaire | Tous les appareils sont suivis dans le portail d’administration de bureau géré Microsoft pour le suivi de l’inventaire et de l’État.
-Mises à jour du microprogramme/pilote | Les mises à jour du microprogramme/pilote sont déployées et surveillées pour la compatibilité de Microsoft. 
+Mises à jour du microprogramme/pilote | Par défaut, les périphériques de bureau gérés par Microsoft reçoivent les mises à jour du microprogramme et des pilotes à partir de Windows Update. Tous les partenaires de matériel ne déploient pas leurs mises à jour via Windows Update ; ces mises à jour peuvent être demandées séparément.
 Installés | Les accessoires fournis avec votre appareil sont couverts par les mêmes services que le périphérique lui-même, mais les conditions de garantie peuvent varier. Reportez-vous aux conditions de garantie choisies lors de la sélection de vos appareils. 
 Configuration de l’appareil    | Les appareils seront préconfigurés avec la version actuelle de Windows et recevront leurs applications et configurations via le Cloud. 
 
 Pour plus d’informations sur le remplacement des appareils, les mises à niveau et les conditions d’assistance, consultez votre contrat avec votre fournisseur d’appareils et vos conditions de garantie.
 
-Pour plus d’informations sur les garanties et les réparations de surface:
+Pour plus d’informations sur les garanties et les réparations de surface :
 - [Garanties, plans de service étendus et conditions générales pour votre appareil](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 - [Garantie standard de surface](https://support.microsoft.com/help/4036296)
 - [Service et réparation des appareils](https://support.microsoft.com/devices)

@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 203db332e1fcd7861f40c69b138ac8274544dceb
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: 30374e603350ecf9d5e5542263f004a22ccb0a67
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830472"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981705"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft
 
@@ -20,9 +20,9 @@ Microsoft Project et Microsoft Visio nécessitent l’installation de procédure
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-Les administrateurs doivent vérifier qu’ils satisfont aux conditions préalables suivantes:
+Les administrateurs doivent vérifier qu’ils satisfont aux conditions préalables suivantes :
 - **Quantités de licences** : la quantité correcte de licences Microsoft Project et Microsoft Visio doit être disponible pour vos utilisateurs. Microsoft Managed Desktop ne prend actuellement en charge que les versions 64 bits de ces applications. 
-- **Noms de licences** : les noms de licences appropriés pour ces applications sont les suivants:
+- **Noms de licences** : les noms de licences appropriés pour ces applications sont les suivants :
     - **Microsoft Project** -Project Online professionnel ou Project Online Premium
     - **Microsoft Visio** -Visio Online-plan 2
 - **Portail d’entreprise** : le portail de l’entreprise doit être disponible dans votre client pour permettre à vos utilisateurs d’installer ces applications. Si le portail d’entreprise n’est pas déployé dans votre client, reportez-vous à la rubrique [entreprise Portal](company-portal.md).
@@ -37,11 +37,11 @@ Une fois que vous avez soumis votre demande de support, le bureau géré Microso
 >[!NOTE]
 >Affectez des utilisateurs à un seul de ces groupes Azure AD. 
 
-Nom du groupe Azure AD | Quels utilisateurs affecter?   
+Nom du groupe Azure AD | Quels utilisateurs affecter ?   
  --- | ---
-Espace de travail moderne-Office-installation de projet | Les utilisateurs qui ont besoin d’un projet uniquement
-Espace de travail moderne-Office-installation de Visio | Les utilisateurs qui ont uniquement besoin de Visio
-Espace de travail moderne-Office-Project et installation de Visio | Utilisateurs ayant besoin à la fois de Project et de Visio
+Espace de travail moderne-Bureau-Project_Install | Les utilisateurs qui ont besoin d’un projet uniquement
+Espace de travail moderne-Bureau-Visio_Install | Les utilisateurs qui ont uniquement besoin de Visio
+Espace de travail moderne-Bureau-Visio_Project_Install | Utilisateurs ayant besoin à la fois de Project et de Visio
 
 Une fois affectées à ces groupes, les applications sont disponibles dans le portail de l’entreprise. La synchronisation peut prendre quelques minutes, mais les utilisateurs peuvent alors installer les applications à partir du portail d’entreprise. 
 

@@ -6,14 +6,14 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: c0866dc4ff4a768bbae2488cdea2655470978f94
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 1cde7cda7cf6bb42508aa52460ff2ee254f62967
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390691"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982585"
 ---
-# <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que Microsoft Managed Desktop?
+# <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que Microsoft Managed Desktop ?
 
 <!--from Overview-->
 
@@ -23,11 +23,11 @@ Microsoft Managed Desktop prend le plus de temps en combinant la puissance de Mi
 
 
 <table>
-<tr><th>Meilleure expérience</th><th>Technologie la plus récente</th><th>Sauvegardé par Microsoft</th></tr>
-<tr><td><p>Windows 10</p><p>Office 365 ProPlus</p><p></p><p>Windows Autopilot</p><p>Appareil moderne</p></td><td><p>Toujours à jour</p><p>Mises à jour des fonctionnalités semi-annuelles </p><p>actualisation de l’appareil de 2 ou 3 ans</p></td><td><p>Configuration des périphériques</p><p>Surveillance et correction de la sécurité</p><p>Déploiement d’application</p><p>Gestion des mises à jour</p><p>Analyse de bureau</p><p>prise en charge de l’utilisateur final 24h/24, 7j/7</p></td></tr>
+<tr><th>Faire plaisir aux utilisateurs finaux</th><th>Autonomiser</th><th>Sauvegardé par Microsoft</th></tr>
+<tr><td><p>Appareil moderne</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Sécurité intégrée</p><p>Connexion avec reconnaissance faciale</p><p>Toujours à jour</p></td><td><p>Sécurité intégrée</p><p>Informations exploitables</p><p>Prise en charge des opérations</p><p>Conseils des experts Microsoft</p></td><td><p>Équipe des opérations de sécurité</p><p>Surveillance de l’intégrité</p><p>Sauvegarde sur le Cloud des données</p><p>Principes sans état</p><p>prise en charge des utilisateurs finaux 24h/24, 7j/7</p></td></tr>
 </table>
 
-Microsoft Managed Desktop offre aux clients une solution informatique complète qui met en lumière les utilisateurs et libère des ressources informatiques pour des tâches plus importantes. Nous avons développé ce service en fonction des commentaires que nous écoutons couramment:
+Microsoft Managed Desktop offre aux clients une solution informatique complète qui met en lumière les utilisateurs et libère des ressources informatiques pour des tâches plus importantes. Nous avons développé ce service en fonction des commentaires que nous écoutons couramment :
 - Mes utilisateurs veulent la technologie la plus récente.
 - Je souhaite des coûts plus prévisibles.
 - Je souhaite me concentrer sur mon activité principale. 

@@ -17,17 +17,22 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un appareil Azure Active Directory joint à Windows 10.
-ms.openlocfilehash: fa3cf640e799feb81ff08c5b7b81d57f707e0152
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ab9049e78617372463b8446dc8f8bc0089d8c117
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072027"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981658"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business
 
-Tous les appareils Windows 10 qui sont joints à Azure Active Directory auront accès à toutes les ressources basées sur le Cloud, telles que vos applications Office 365, et peuvent être protégées par Microsoft 365 Business. Pour autoriser également l’accès aux ressources locales telles que les applications métier, les partages de fichiers et les imprimantes, vous devez synchroniser votre annuaire Active Directory local avec Azure Active Directory à l’aide d' [Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). Pour en savoir plus, consultez la rubrique [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) . 
-  
+Tous les appareils Windows 10 qui sont joints à Azure Active Directory auront accès à toutes les ressources basées sur le Cloud, telles que vos applications Office 365, et peuvent être protégées par Microsoft 365 Business. Pour autoriser également l’accès aux ressources locales telles que les applications métier, les partages de fichiers et les imprimantes, vous devez synchroniser votre annuaire Active Directory local avec Azure Active Directory à l’aide d' [Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). La vidéo suivante décrit les étapes à suivre pour la configuration du scénario le plus courant.
+ 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
+
+Pour en savoir plus, consultez la rubrique [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) .
+Les étapes sont également résumées dans les sections suivantes.
+
 ## <a name="run-azure-ad-connect"></a>Exécuter Azure AD Connect
 
 Procédez comme suit pour activer les appareils Azure AD joints de votre organisation pour accéder aux ressources locales.
@@ -44,7 +49,7 @@ Si votre organisation n’est pas prête à être déployée dans la configurati
   
 ### <a name="considerations-when-joining-your-windows-devices-to-azure-ad"></a>Éléments à prendre en compte lors de la participation à des appareils Windows sur Azure AD
 
-Si vous joignez Azure AD à un appareil Windows qui a déjà été joint à un domaine ou dans un groupe de travail, vous devez tenir compte des limitations suivantes:
+Si vous joignez Azure AD à un appareil Windows qui a déjà été joint à un domaine ou dans un groupe de travail, vous devez tenir compte des limitations suivantes :
   
 - Lorsqu’un appareil Azure AD rejoint une jointure, il crée un utilisateur sans référence à un profil existant. Pour résoudre ce problème, les profils doivent être migrés manuellement. Un profil utilisateur contient des informations comme les favoris, les fichiers locaux, les paramètres du navigateur, les paramètres du menu Démarrer, etc. Une meilleure approche consiste à trouver un outil tiers pour mapper des fichiers et des paramètres existants sur le nouveau profil.
 

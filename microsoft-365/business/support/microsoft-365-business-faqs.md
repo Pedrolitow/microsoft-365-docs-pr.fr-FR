@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft365Business, Microsoft365, SMB, FAQ, forum aux questions, réponses, entreprise
 ms.date: 06/08/2018
-ms.openlocfilehash: 9f3f82169dcd4454ffb46b1269422688a107f2b0
-ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
+ms.openlocfilehash: 3ab99b402bf440cd0c113a87dc453ff388a5befb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630586"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982318"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Forum Aux Questions Microsoft 365 Business
 
@@ -35,7 +35,7 @@ Microsoft 365 est une solution intégrée qui rassemble les outils de productivi
 -  Permet de protéger, de conserver et de sauvegarder vos données à l’aide de l’archivage Exchange Online  
 -   Protection des applications pour Office & d’autres applications mobiles avec la protection des applications Intune 
 -  Gestion des appareils pour les PC Windows 10, MacOS & les appareils mobiles avec la gestion des appareils Intune 
--  Configuration de sécurité cohérente sur les appareils: protection des données d’entreprise sur les appareils: Windows Defender, Always-on et up-to-date. 
+-  Configuration de sécurité cohérente sur les appareils : protection des données d’entreprise sur les appareils : Windows Defender, Always-on et up-to-date. 
  
  
 **Déploiement des appareils et configuration des utilisateurs simplifiés** 
@@ -72,7 +72,9 @@ Si le matériel que vous utilisez aujourd’hui exécute Windows7 Professionnel 
 Le degré de compatibilité de Windows10 avec les applications de bureau (Win32) existantes devrait être élevé également, avec la plupart des applications fonctionnant sans aucune modification nécessaire. Les clients et leurs conseillers informatiques doivent lire la procédure de test des applications recommandée pour la <a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">compatibilité avec Windows10</a> et passer en revue la <a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">Configuration requise pour Office</a> pour garantir une transition harmonieuse vers Microsoft 365Business. 
 
 ### <a name="what-is-windows-10-business"></a>Qu’est-ce que Windows10Business? 
-Windows10Business est un ensemble de services de Cloud et de fonctionnalités de gestion d'appareils qui complète Windows10 Pro et permet de réaliser de manière centralisée la gestion et les contrôles de sécurité de Microsoft 365Business. Windows10 Businesse est également fourni avec Windows AutoPilot, un service qui simplifie le déploiement des nouveaux PC Windows10. Si vous avez des appareils qui sont sous licence Windows7, 8 et 8.1 Professionnel, Microsoft 365Business offre une mise à niveau vers Windows10 Pro, qui est la configuration requise préalable au déploiement de Windows10 Business. 
+Windows10Business est un ensemble de services de Cloud et de fonctionnalités de gestion d'appareils qui complète Windows10 Pro et permet de réaliser de manière centralisée la gestion et les contrôles de sécurité de Microsoft 365Business. Windows10 Businesse est également fourni avec Windows AutoPilot, un service qui simplifie le déploiement des nouveaux PC Windows10. Si vous avez des appareils qui sont sous licence Windows7, 8 et 8.1 Professionnel, Microsoft 365Business offre une mise à niveau vers Windows10 Pro, qui est la configuration requise préalable au déploiement de Windows10 Business.
+> [!IMPORTANT]
+> Vous devez fournir la clé de produit d’origine lorsque vous effectuez la mise à niveau, sinon la mise à niveau ne fonctionnera pas. 
 
 ### <a name="how-does-microsoft-365-business-help-support-our-bring-your-own-device-byod-policy"></a>Comment Microsoft365Business contribue-t-il à notre stratégie BYOD (Apportez votre propre appareil) de mon entreprise? 
 De nombreux employés préfèrent utiliser leurs propres téléphones mobiles ou tablettes pour accéder à leurs informations personnelles et professionnelles plutôt que transporter plusieurs appareils pour chaque objectif. L’utilisation d'appareils personnels pour le travail, bien qu'étant une pratique courante, augmente le risque que les informations de l’entreprise ne tombent entre de mauvaises mains. De nombreuses solutions concurrentes de protection des données mobiles demandent aux utilisateurs de basculer vers un mode particulier sur leur appareil ou d'utiliser un autre mécanisme complexe qu'ils peuvent trouver contraignant et par conséquent, éviter de l’utiliser. 
@@ -119,7 +121,7 @@ Le chemin le plus direct vers un déploiement réussi de Microsoft 365Business c
 Oui, les abonnés professionnels de Microsoft 365 sont titulaires d’une licence pour utiliser les fonctionnalités Intune complètes pour iOS, Android, MacOS et d’autres périphériques multiplateforme. Les fonctionnalités non disponibles dans la console de gestion simplifiée dans Microsoft 365 Business, comme la gestion des applications tierces et la configuration des profils WiFi, les certificats VPN, etc., peuvent être gérées dans la console Intune complète. Vous avez le droit d’utiliser le gestionnaire de configuration pour gérer les clients couverts par la licence EMS. Pour les requêtes liées à SCCM, veuillez consulter la <a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">Foire aux questions de SCCM</a>
   
 
-### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory Premium P1 est-il fourni avec Microsoft 365 Business? 
+### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory Premium P1 est-il fourni avec Microsoft 365 Business ? 
 Microsoft 365 Business repose sur la technologie de Microsoft et, bien qu’elle partage des fonctionnalités avec Azure Active Directory, il ne s’agit pas d’une version complète. Les stratégies de sécurité et de gestion créées dans Microsoft 365 Business s’appuient sur certaines fonctionnalités Azure, mais n’incluent pas toutes les fonctionnalités (par exemple, les fonctionnalités en libre-service, les fonctionnalités d’accès conditionnel et la création de rapports). Les clients peuvent choisir d’acheter Azure Active Directory Premium P1 ou P2 en tant que module complémentaire à Microsoft 365 Business. Pour plus d’informations, consultez la [Description du service d’entreprise Microsoft 365](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148) . 
  
  

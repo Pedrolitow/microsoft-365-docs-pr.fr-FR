@@ -2,7 +2,7 @@
 title: Déployer Exchange Online pour Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 08/29/2018
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Découvrez le processus de planification, de déploiement et de mise en œuvre de la valeur d’Exchange Online dans Microsoft 365 Enterprise au sein de votre organisation.
-ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a13cb36dd313ef3e6763c6c48720bb2b3e935880
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072284"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981875"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Déployer Exchange Online pour Microsoft 365 Enterprise
 
@@ -38,9 +38,9 @@ Les phases et les étapes suivantes vous guident tout au long du processus de pr
 
 Dans cette phase, vous recueillez les personnes pour votre déploiement Exchange Online et vous déterminez comment votre organisation utilisera Exchange Online pour répondre aux besoins de son entreprise.
 
-### <a name="step-1-gather-your-exchange-online-deployment-members"></a>Étape 1: rassemblez vos membres de déploiement Exchange Online
+### <a name="step-1-gather-your-exchange-online-deployment-members"></a>Étape 1 : rassemblez vos membres de déploiement Exchange Online
 
-Pour réussir un déploiement d’Exchange Online en [phase 2: identité](identity-infrastructure.md) de l’infrastructure de base de Microsoft 365 Enterprise Foundation, vous devez obtenir les personnes appropriées pour les commentaires et les commentaires. Les personnes clés incluent les décideurs d’entreprise, le personnel informatique tel que les architectes et les responsables de l’implémentation, et les avocats pour vos utilisateurs finaux. 
+Pour réussir un déploiement d’Exchange Online en [phase 2 : identité](identity-infrastructure.md) de l’infrastructure de base de Microsoft 365 Enterprise Foundation, vous devez obtenir les personnes appropriées pour les commentaires et les commentaires. Les personnes clés incluent les décideurs d’entreprise, le personnel informatique tel que les architectes et les responsables de l’implémentation, et les avocats pour vos utilisateurs finaux. 
 
 Ces trois groupes garantissent que votre déploiement Exchange Online inclut des considérations qui répondent aux besoins de l’entreprise, des aspects techniques de la migration et de la sécurité des boîtes aux lettres, et que le résultat sera utilisé par les utilisateurs habituels.
 
@@ -48,26 +48,11 @@ Ces trois groupes garantissent que votre déploiement Exchange Online inclut des
 
 Liste des personnes qui représentent les aspects professionnels, techniques et des utilisateurs finaux de votre organisation.
 
-### <a name="step-2-determine-and-prioritize-your-exchange-online-business-scenarios"></a>Étape 2: déterminer et classer par priorité vos scénarios d’entreprise Exchange Online
+### <a name="step-2-determine-and-prioritize-your-exchange-online-business-scenarios"></a>Étape 2 : déterminer et classer par priorité vos scénarios d’entreprise Exchange Online
 
 Exchange Online peut être utilisé à différentes fins. Vous devez déterminer les objectifs qui correspondent aux besoins de votre entreprise, ainsi que les différents niveaux de votre organisation, vos groupes d’entreprise, vos services ou des équipes de travail et de projets individuels. Vous devez cibler Exchange Online pour répondre à vos besoins en matière de communication et de planification de votre entreprise et de votre groupe de petite taille. 
 
 L’une des façons de voir les avantages d’Exchange Online est d’examiner comment les personnes, une équipe ou une équipe v interagissent aujourd’hui, puis de trouver un scénario approprié qui offre des moyens plus simples de communiquer, de planifier des réunions et de collaborer. N’oubliez pas que [Microsoft teams](teams-workload.md) peut être un meilleur choix pour certains de vos scénarios de collaboration.
-
-Exchange Online permet les scénarios d’entreprise stratégiques suivants pour Microsoft 365 Enterprise:
-
-- Collaborer sur des documents en temps réel ou à votre rythme afin de simplifier le processus de co-création
-- Gérer les projets, les tâches et les délais pour atteindre vos objectifs métiers
-- Comprendre vos habitudes de travail pour améliorer votre impact et votre influence
-- Communiquer avec votre équipe afin de rester informé, de demander des informations et de créer une cohésion et un consensus
-- Stocker et partager des fichiers internes ou externes à votre entreprise pour travailler en toute transparence au-delà des frontières structurelles
-- Travailler en toute sécurité avec votre appareil en tout lieu et à tout moment pour atteindre plus d’objectifs, en conservant une méthode de travail flexible
-- Protéger vos informations et réduire le risque de perte de données
-- Détecter et se protéger contre les menaces externes 
-- Surveiller, signaler et analyser l’activité pour réagir rapidement afin de fournir une sécurité de l’Organisation
-- Assurer pour votre organisation un niveau supérieur de confidentialité et de conformité au Règlement général sur la protection des données (RGPD)
-
-Pour plus d’informations, reportez-vous à la page relative à la [transformation numérique avec Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="result"></a>Résultat
 Une liste de scénarios Exchange Online qui répondent aux besoins de votre organisation en matière de communication, de planification et de collaboration à courte durée de vie.
@@ -86,19 +71,19 @@ Avant de commencer la planification technique, déterminez si vous voulez utilis
 
 Si vous effectuez votre propre planification ou conjointement avec FastTrack, vous devez déterminer si votre réseau et votre organisation sont prêts pour Exchange Online. Il est particulièrement important de respecter les critères de sortie pour la mise en réseau dans votre infrastructure de base, avec une attention particulière à la bande passante Internet, au débit et aux retards de trafic afin d’optimiser les performances pour le trafic supplémentaire pour Exchange. Courrier électronique et pièces jointes en ligne.
 
-Utilisez ces ressources pour préparer les aspects techniques d’un déploiement Exchange Online: 
+Utilisez ces ressources pour préparer les aspects techniques d’un déploiement Exchange Online : 
 
 - [Méthodes de migration des comptes de courrier vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Collaboration dans Exchange Online](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Destinataires dans Exchange Online](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
 
-Pour mieux comprendre la sécurité dans Exchange Online, consultez les ressources suivantes:
+Pour mieux comprendre la sécurité dans Exchange Online, consultez les ressources suivantes :
 
 - [Autorisations dans Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx) 
 - [Sécurité et conformité pour Exchange Online](https://technet.microsoft.com/library/jj200706(v=exchg.150).aspx) 
 - [Protection contre le courrier indésirable et les programmes malveillants](https://technet.microsoft.com/library/jj200731(v=exchg.150).aspx)
 
-Ensuite, utilisez ces ressources pour comprendre la gestion des boîtes aux lettres Exchange Online:
+Ensuite, utilisez ces ressources pour comprendre la gestion des boîtes aux lettres Exchange Online :
 
 - [Créer des boîtes aux lettres utilisateur dans Exchange Online](https://technet.microsoft.com/library/jj907304(v=exchg.150).aspx)
 - [Gérer des boîtes aux lettres utilisateur](https://technet.microsoft.com/library/bb123809(v=exchg.150).aspx) 
@@ -124,7 +109,7 @@ Votre pilote informatique Exchange Online est complet et les ressources de gesti
 
 ### <a name="step-3-roll-out-to-a-business-group"></a>Étape 3 : déployer pour un groupe d’entreprise
 
-Une fois votre pilote informatique terminé, déployez Exchange Online sur un groupe d’entreprise ou un service de votre organisation. Si votre organisation utilise un service de messagerie local tel qu’Exchange Server, ce déploiement est constitué de la migration de boîtes aux lettres. Ce déploiement doit inclure les éléments suivants:
+Une fois votre pilote informatique terminé, déployez Exchange Online sur un groupe d’entreprise ou un service de votre organisation. Si votre organisation utilise un service de messagerie local tel qu’Exchange Server, ce déploiement est constitué de la migration de boîtes aux lettres. Ce déploiement doit inclure les éléments suivants :
 
 - Identification des scénarios d’entreprise clés pour Exchange Online au sein du groupe d’entreprise.
 - Annonces pour informer les utilisateurs des attentes et de la chronologie de l’utilisation d’Exchange Online pour les équipes de service, de travail ou de projet.
@@ -142,7 +127,7 @@ Un groupe d’entreprise est opérationnel avec Exchange Online et les supports 
 
 Dans cette phase, vous allez effectuer le déploiement d’Exchange Online et prendre en charge vos utilisateurs afin de les aider à tirer parti de ses avantages.
 
-### <a name="step-1-roll-out-exchange-online-to-the-rest-of-your-organization"></a>Étape 1: déployer Exchange Online dans le reste de votre organisation
+### <a name="step-1-roll-out-exchange-online-to-the-rest-of-your-organization"></a>Étape 1 : déployer Exchange Online dans le reste de votre organisation
 
 Le processus de déploiement dans le reste de votre organisation doit inclure les éléments suivants :
 
@@ -158,7 +143,7 @@ Votre organisation est active et votre stratégie de gestion des modifications e
 
 ### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a>Étape 2 : mesurer l’utilisation, gérer la satisfaction et favoriser l’adoption
 
-Après avoir déployé Exchange Online pour l’ensemble de votre organisation, vous devez continuer à utiliser votre stratégie de gestion des modifications pour:
+Après avoir déployé Exchange Online pour l’ensemble de votre organisation, vous devez continuer à utiliser votre stratégie de gestion des modifications pour :
 
 - Faites en sorte que votre leadership encourage Exchange Online en tant qu’outil principal pour la communication et la planification individuelle et courte.
 - Encouragez les utilisateurs à l’utiliser pour les communications de groupe d’entreprise, de service, de travail et d’équipe de projet, de calendrier et de collaboration.
@@ -176,7 +161,7 @@ Votre organisation a adopté Exchange Online en tant qu’outil de communication
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Pour lire le contenu de Microsoft et découvrir comment la société a migré vers Exchange Online et utilise Exchange Online Protection pour se protéger contre les attaques informatiques, voir:
+Pour lire le contenu de Microsoft et découvrir comment la société a migré vers Exchange Online et utilise Exchange Online Protection pour se protéger contre les attaques informatiques, voir :
 
 - [Microsoft migre 150 000 boîtes aux lettres vers Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft utilise l’intelligence des menaces pour se protéger contre les menaces, les détecter et y faire face](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
@@ -184,7 +169,7 @@ Pour lire le contenu de Microsoft et découvrir comment la société a migré ve
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Consultez ces ressources pour la maintenance en cours d’Exchange Online:
+Consultez ces ressources pour la maintenance en cours d’Exchange Online :
 
 - [Centre d’administration Exchange dans Exchange Online](https://technet.microsoft.com/library/jj200743(v=exchg.150).aspx) 
 - [Surveillance, création de rapports et suivi des messages dans Exchange Online](https://technet.microsoft.com/library/jj200725(v=exchg.150).aspx)

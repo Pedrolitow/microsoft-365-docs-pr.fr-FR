@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9f3094b1a1272b0c200271b8d5703fe7173683a6
-ms.sourcegitcommit: 6b5370cded5d8259c9ed561eed324227f74c410b
+ms.openlocfilehash: 57c0be2e8aff09024f84c58bb895aab98324964d
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36171734"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982535"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies de bureau géré Microsoft
 
@@ -27,7 +27,8 @@ Cette rubrique résume les composants inclus dans les licences d’entreprise re
 ## <a name="office-365-e3"></a>Office 365 E3
  |
  --- | ---
-Office 365 standard suite (64 bits) | La suite d’applications Office standard sera livrée avec le périphérique: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype entreprise, OneNote.<br><br>Le 64-bit Click to Run (C2R) versions complètes de Microsoft Project et Microsoft Visio ne sont pas inclus dans Office 365. Toutefois, étant donné que l’installation de ces applications dépend de l’installation de la suite Office standard, le bureau géré Microsoft a créé des déploiements Microsoft Intune et des groupes de sécurité par défaut, que vous pouvez ensuite utiliser pour déployer ces applications sur utilisateurs finaux sous licence. Pour plus d’informations, consultez la rubrique [installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft](../get-started/project-visio.md)  
+Office 365 ProPlus (64 bits) | Ces applications Office seront livrées avec le périphérique : Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype entreprise, OneNote.<br><br>Les versions 64 bits complètes de Microsoft Project et Microsoft Visio ne sont pas incluses. Toutefois, étant donné que l’installation de ces applications dépend de l’installation d’Office 365 ProPlus, le bureau géré Microsoft a créé des déploiements Microsoft Intune et des groupes de sécurité par défaut, que vous pouvez ensuite utiliser pour déployer ces applications sur une licence. utilisateurs finaux. Pour plus d’informations, consultez la rubrique [installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft](../get-started/project-visio.md)
+OneDrive Entreprise | Authentification unique Azure Active Directory <br><br>La redirection de dossiers connue pour les dossiers « bureau », « document » et « images » est incluse ; activé et configuré par le bureau géré Microsoft. 
 Applications du Store |    Microsoft Sway et Power BI ne sont pas fournis avec l’appareil. Ces applications peuvent être téléchargées à partir du Microsoft Store.
 Applications Win32 |    Teams n’est pas fourni avec le périphérique, mais il est empaqueté et fourni par Microsoft pour les appareils de bureau gérés par Microsoft. Le client Azure information protection n’est pas livré avec l’appareil, mais vous pouvez en faire un package pour le déploiement. 
 Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, PowerApps et Planner ne sont pas fournis avec l’appareil. Les utilisateurs peuvent accéder à la version Web de ces applications à l’aide d’un navigateur.
@@ -37,7 +38,7 @@ Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, P
 
  |
  --- | ---
-Virtualisation d’application (App-V) |    Microsoft Managed Desktop ne prend pas en charge ce type de déploiement car il n’est pas pris en charge par Microsoft Intune.
+Virtualisation d’application (App-V) |    Les clients peuvent déployer des packages App-V à l’aide du client de gestion des applications Win32 Intune.
 Protection avancée contre les menaces Microsoft Defender |  Microsoft Managed Desktop utilise cette fonctionnalité pour surveiller la sécurité des appareils. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5

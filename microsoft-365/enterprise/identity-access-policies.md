@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 322da1ccfbd0cf8b5070894580b06fb5b0283f40
-ms.sourcegitcommit: 1d5fc181036b673c4f0b9e161e19395dbfe5a304
+ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35411648"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982015"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
@@ -56,13 +56,13 @@ Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de me
 ## <a name="assigning-policies-to-users"></a>Affectation de stratégies aux utilisateurs
 Avant de configurer des stratégies, identifiez les groupes Azure AD que vous utilisez pour chaque niveau de protection. En règle générale, la protection de base s’applique à tous les employés de l’organisation. Toutes les stratégies de base, ainsi que les stratégies sensibles, sont appliquées à un utilisateur qui est inclus à la fois pour la protection de référence et la protection sensible. La protection est cumulative et la stratégie la plus restrictive est appliquée. 
 
-Une pratique recommandée consiste à créer un groupe Azure AD pour l’exclusion d’accès conditionnel. Ajoutez ce groupe à toutes vos règles d’accès conditionnel sous «exclure». Cela vous permet de fournir un accès à un utilisateur pendant que vous dépannez les problèmes d’accès. Il s’agit d’une solution temporaire uniquement. Surveillez ce groupe pour les modifications et assurez-vous que le groupe d’exclusion n’est utilisé que comme prévu. 
+Une pratique recommandée consiste à créer un groupe Azure AD pour l’exclusion d’accès conditionnel. Ajoutez ce groupe à toutes vos règles d’accès conditionnel sous « exclure ». Cela vous permet de fournir un accès à un utilisateur pendant que vous dépannez les problèmes d’accès. Il s’agit d’une solution temporaire uniquement. Surveillez ce groupe pour les modifications et assurez-vous que le groupe d’exclusion n’est utilisé que comme prévu. 
 
 Le diagramme suivant fournit un exemple d’affectations et d’exclusions d’utilisateurs.
 
 ![Exemple d’affectations et d’exclusions d’utilisateurs pour les règles MFA](../images/identity-access-policies-assignment.png)
 
-Dans l’illustration, l’équipe «top secret Project X Team» est affectée à une stratégie d’accès ** conditionnel qui requiert la MFA Always. Soyez judicieuses lorsque vous appliquez des niveaux de protection plus élevés aux utilisateurs. Les membres de cette équipe de projet devront fournir deux formulaires d’authentification à chaque fois qu’ils se connectent, même s’ils n’affichent pas de contenu hautement réglementé.  
+Dans l’illustration, l’équipe « top secret Project X Team » est affectée à une stratégie d’accès conditionnel qui requiert la MFA *Always*. Soyez judicieuses lorsque vous appliquez des niveaux de protection plus élevés aux utilisateurs. Les membres de cette équipe de projet devront fournir deux formulaires d’authentification à chaque fois qu’ils se connectent, même s’ils n’affichent pas de contenu hautement réglementé.  
 
 Tous les groupes Azure AD créés dans le cadre de ces recommandations doivent être créés en tant que groupes Office 365. C’est particulièrement important pour le déploiement d’Azure Information Protection lors de la sécurisation des documents dans SharePoint Online.
 
@@ -179,7 +179,7 @@ Connectez-vous au [portail Microsoft Azure (http://portal.azure.com)](http://por
 |      | Access     | Autoriser l'accès            | Vrai  |
 |      | Access     | Exiger le changement du mot de passe | True  |
 
-**Révision:** non applicable
+**Révision :** non applicable
 
 > [!NOTE]
 > N’oubliez pas d’activer cette stratégie en sélectionnant **activé**. Vous pouvez également utiliser l’outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
@@ -187,7 +187,7 @@ Connectez-vous au [portail Microsoft Azure (http://portal.azure.com)](http://por
 ## <a name="define-app-protection-policies"></a>Définir les stratégies de protection des applications
 Les stratégies de protection des applications définissent les applications autorisées et les actions qu’elles peuvent effectuer sur les données de votre organisation. Créez des stratégies Intune App protection à partir du portail Azure. 
 
-Créez une stratégie pour chaque plateforme:
+Créez une stratégie pour chaque plateforme :
 - iOS
 - Android
 - Windows 10
@@ -196,7 +196,7 @@ Pour créer une stratégie de protection des applications, connectez-vous au por
 
 Les options de stratégie de protection des applications présentent de légères différences entre iOS et Android. La stratégie ci-dessous est conçue spécifiquement pour Android. Utilisez-le comme guide pour vos autres stratégies.
 
-La liste d’applications recommandée inclut les éléments suivants:
+La liste d’applications recommandée inclut les éléments suivants :
 - PowerPoint
 - Excel
 - Word
@@ -207,7 +207,7 @@ La liste d’applications recommandée inclut les éléments suivants:
 - OneNote
 - Outlook
 
-Les tableaux suivants décrivent les paramètres recommandés:
+Les tableaux suivants décrivent les paramètres recommandés :
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
@@ -236,12 +236,12 @@ Les tableaux suivants décrivent les paramètres recommandés:
 ||Intervalle hors connexion (jours) avant la réinitialisation des données d'application|90|Effacer les données|
 ||Un jailbreak/périphériques enracinés| |Effacer les données|
 
-Lorsque vous avez terminé, n’oubliez pas de sélectionner «créer». Répétez les étapes ci-dessus et remplacez la plateforme sélectionnée (dropdown) par iOS. Cela crée deux stratégies d’application, de sorte qu’une fois la stratégie créée, affectez des groupes à la stratégie et déployez-la.
+Lorsque vous avez terminé, n’oubliez pas de sélectionner « créer ». Répétez les étapes ci-dessus et remplacez la plateforme sélectionnée (dropdown) par iOS. Cela crée deux stratégies d’application, de sorte qu’une fois la stratégie créée, affectez des groupes à la stratégie et déployez-la.
 
 Pour modifier les stratégies et affecter ces stratégies aux utilisateurs, voir [comment créer et affecter des stratégies de protection des applications](https://docs.microsoft.com/intune/app-protection-policies). 
 
 ## <a name="require-approved-apps"></a>Exiger les applications approuvées
-Pour exiger des applications approuvées:
+Pour exiger des applications approuvées :
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s’affiche.
 
@@ -259,7 +259,7 @@ Pour exiger des applications approuvées:
 
 8. Sélectionnez **conditions**, sélectionnez **plateformes d’appareils**, puis sélectionnez **configurer** .
 
-9. Sous **inclure**, choisissez **Sélectionner**les plateformes de l’appareil, sélectionnez **Android** et **iOS**. Cliquez sur **OK** , puis de nouveau sur Terminer. ****
+9. Sous **inclure**, choisissez **Sélectionner les plateformes**de l’appareil, sélectionnez **Android** et **iOS**. Cliquez **** sur OK **, puis** de nouveau sur Terminer.
 
 10. Choisissez **Accorder** dans la section **Contrôles d’accès**.
 
@@ -271,7 +271,7 @@ Pour exiger des applications approuvées:
 
 Les stratégies de conformité des appareils définissent les exigences auxquelles les appareils doivent adhérer afin d’être marqués comme étant conformes. Créez des stratégies de conformité d’appareil Intune à partir du portail Azure. 
 
-Créez une stratégie pour chaque plateforme:
+Créez une stratégie pour chaque plateforme :
 - Android
 - Android Enterprise
 - iOS
@@ -284,7 +284,7 @@ Pour créer des stratégies de conformité des appareils, connectez-vous au port
 
 Les paramètres suivants sont recommandés pour Windows 10.
 
-**Intégrité de l’appareil: règles d’évaluation du service d’attestation d’intégrité Windows**
+**Intégrité de l’appareil : règles d’évaluation du service d’attestation d’intégrité Windows**
 
 |Propriétés|Valeurs|Remarques|
 |:---------|:-----|:----|
@@ -322,16 +322,16 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 ||Mise à jour de la signature du logiciel anti-programme malveillant Windows Defender|Require (Rendre obligatoire)||
 ||Protection en temps réel|Require (Rendre obligatoire)|Prise en charge uniquement pour les ordinateurs de bureau Windows 10|
 
-**Windows Defender ATP**
+**Microsoft Defender ATP**
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Règles de protection avancée contre les menaces Windows Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyen||
+|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyen||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Exiger des PC conformes (mais pas les téléphones et les tablettes conformes)
 Avant d’ajouter une stratégie pour exiger des PC conformes, veillez à inscrire les appareils pour la gestion dans Intune. L’utilisation de l’authentification multifacteur est recommandée avant l’inscriptions de périphériques dans Intune pour garantir que l’appareil est en possession de l’utilisateur prévu. 
 
-Pour exiger des PC conformes:
+Pour exiger des PC conformes :
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s’affiche.
 
@@ -347,7 +347,7 @@ Pour exiger des PC conformes:
 
 7. Sélectionnez **Sélectionner les applications**, sélectionnez les applications souhaitées dans la liste **applications Cloud** . Par exemple, sélectionnez Office 365 Exchange Online. Choisissez **Sélectionner** et **Terminer**.
 
-8. Pour exiger des PC conformes, mais pas des téléphones et des tablettes conformes, choisissez des **conditions** et des plateformes d' **appareil**. Sélectionnez **Sélectionner** les plateformes de l’appareil, puis **Windows** et **MacOS**.
+8. Pour exiger des PC conformes, mais pas des téléphones et des tablettes conformes, choisissez des **conditions** et des **plateformes d’appareil**. Sélectionnez **Sélectionner les plateformes** de l’appareil, puis **Windows** et **MacOS**.
 
 9. Choisissez **Accorder** dans la section **Contrôles d’accès**.
 
@@ -359,7 +359,7 @@ Si votre objectif est d’exiger des PC conformes *et des* appareils mobiles, ne
 
 ## <a name="require-compliant-pcs-and-mobile-devices"></a>Exiger des PC conformes *et des* appareils mobiles
 
-Pour exiger la conformité de tous les périphériques, procédez comme suit:
+Pour exiger la conformité de tous les périphériques, procédez comme suit :
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s’affiche.
 

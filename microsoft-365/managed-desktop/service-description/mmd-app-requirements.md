@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ded8bcfd87a6b430dfc4be055a582b482872b104
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913015"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982455"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise pour les applications de bureau géré Microsoft
 
@@ -27,20 +27,20 @@ Il est important que les applications n’aient pas d’impact négatif sur l’
 
 ## <a name="centrally-managed-apps"></a>Applications gérées de manière centralisée
 
-Toutes les applications et tous les pilotes installés sur les appareils gérés par Microsoft doivent être déployés via Microsoft Intune, le Microsoft Store ou Microsoft Store pour les entreprises; s’ils sont disponibles, les pilotes seront également déployés via le service Windows Update. 
+Toutes les applications et tous les pilotes installés sur les appareils gérés par Microsoft doivent être déployés via Microsoft Intune, le Microsoft Store ou Microsoft Store pour les entreprises ; s’ils sont disponibles, les pilotes seront également déployés via le service Windows Update. 
 
 ## <a name="prohibited-app-classes"></a>Classes d’application interdites
 
-Certains types d’application ne sont pas autorisés sur les appareils de bureau géré Microsoft:
+Certains types d’application ne sont pas autorisés sur les appareils de bureau géré Microsoft :
 - logiciels antivirus, de sécurité ou d’audit tiers
-- Versions de Microsoft Office antérieures à Office 365 Pro plus
+- Versions de Microsoft Office antérieures à Office 365 ProPlus
 - Applications qui installent ou regroupent d’autres logiciels tiers
 
 ## <a name="restricted-app-behaviors"></a>Comportements d’application restreinte
 
 Certains comportements d’application peuvent avoir un impact négatif sur l’expérience utilisateur ou présenter un risque de sécurité aux appareils de bureau gérés par Microsoft. Les applications présentant les comportements suivants ne sont pas autorisées à s’exécuter dans l’environnement de bureau géré Microsoft sans dérogation particulière de Microsoft.
 
-Expérience utilisateur:
+Expérience utilisateur :
 - Installer les services d’arrière-plan
 - S’ajouter au chemin de démarrage de Windows
 - Applications dépendant des pilotes
