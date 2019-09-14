@@ -3,7 +3,7 @@ title: 'Phase 4 : Office 365 ProPlus'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 08/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Étapes du déploiement de l’infrastructure Office 365 ProPlus pour Microsoft 365 Entreprise.
-ms.openlocfilehash: cf698e4dbee17a811a4d2bc01d08d4d97d1961c1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074174"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982765"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4 : Office 365 ProPlus
 
@@ -29,24 +29,6 @@ ms.locfileid: "34074174"
 Microsoft 365 Entreprise inclut Office 365 ProPlus, la version par abonnement d’Office. Tout comme Office 2016, Office 365 ProPlus inclut toutes les applications Office, et ces applications sont installées directement sur vos appareils clients. Contrairement à Office 2016, Office 365 ProPlus est régulièrement mis à jour afin d’obtenir les nouvelles fonctionnalités et présente un modèle de licence utilisateur qui permet aux utilisateurs d’installer Office sur un maximum de 5 appareils. Pour obtenir plus d’informations, consultez l’article [À propos d’Office 365 ProPlus en entreprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 Dans cette phase, vous déployez Office 365 ProPlus sur les appareils clients dans le cadre de Microsoft 365 Entreprise. En plus de ces instructions, nous vous recommandons d’utiliser [Microsoft Fastrack](https://fasttrack.microsoft.com/office) pour vous aider à effectuer votre déploiement. 
-
-Office 365 ProPlus permet de mettre en place les scénarios d’entreprise stratégiques suivants pour Microsoft 365 Entreprise :
-
-- Collaborer sur des documents en temps réel ou à votre rythme afin de simplifier le processus de co-création
-- Exploiter les connaissances et l’expertise collectives en encourageant les personnes à découvrir, partager et faire circuler des fichiers, des informations et des idées au sein de votre entreprise
-- Permettre aux utilisateurs de transformer les processus d’entreprise et d’accroître l’efficacité
-- Gérer les projets, les tâches et les délais pour atteindre vos objectifs métiers
-- Utiliser l’assistance intelligente pour la création, l’écriture, la recherche de contenu et bien plus, pour valoriser votre travail
-- Rechercher des informations, analyser vos données et partager vos résultats pour aider la prise de décisions éclairées
-- Communiquer avec votre équipe afin de rester informé, de demander des informations et de créer une cohésion et un consensus
-- Communiquer avec des partenaires, des collègues et des clients dans le monde entier lors d’appels et de réunions en ligne planifiés et ad hoc avec des groupes de toute taille
-- Stocker et partager des fichiers internes ou externes à votre entreprise pour travailler en toute transparence au-delà des frontières structurelles
-- Travailler en toute sécurité avec votre appareil en tout lieu et à tout moment pour atteindre plus d’objectifs, en conservant une méthode de travail flexible
-- Assurer la tranquillité d’esprit grâce à des contrôles et une visibilité sur votre conformité, vérifiée par le secteur, avec les normes internationales
-- Protéger vos informations et réduire le risque de perte de données
-- Rester informé sur vos appareils et logiciels de bureau, en réduisant les risques pour la sécurité et en maximisant l’efficacité du service informatique
-
-Pour plus d’informations, reportez-vous à la page relative à la [transformation numérique avec Microsoft 365](http://transform.microsoft.com). 
 
 Si vous avez déjà déployé Office 365 ProPlus, consultez les [critères de sortie](office365proplus-exit-criteria.md) de cette phase pour vous assurer que vous répondez aux conditions requises pour Microsoft 365 Entreprise.
 
@@ -87,7 +69,7 @@ Si votre organisation utilise Configuration Manager, nous vous recommandons de p
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Découvrez comment les experts Microsoft [déploient et gèrent les mises à jour d’Office 365 ProPlus](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
+Découvrez comment les experts Microsoft [déploient et gèrent les mises à jour d’Office 365 ProPlus](https://www.microsoft.com/fr-FR/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 

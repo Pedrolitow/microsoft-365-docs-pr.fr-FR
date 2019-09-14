@@ -2,7 +2,7 @@
 title: Déploiement de SharePoint Online et de OneDrive Entreprise pour Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de planification, de déploiement et de création de valeur de SharePoint Online dans Microsoft 365 Entreprise au sein de votre organisation.
-ms.openlocfilehash: fab2a368a936fc3ffb4a56a9dc81ba6b3e0b0910
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9ceadbb0268d3a2aa82309d01933a8bd05429188
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074114"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981765"
 ---
 # <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>Déploiement de SharePoint Online et de OneDrive Entreprise pour Microsoft 365 Entreprise
 
@@ -67,23 +67,6 @@ Voici des piliers commerciaux qui peuvent répondre aux besoins de votre organis
 Consultez la rubrique sur l’[administration de SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online) pour obtenir des informations sur la configuration de SharePoint Online en fonction de vos besoins.
 
 Pour découvrir les avantages de SharePoint Online, étudiez la manière dont les individus, les équipes, les services ou l’ensemble de votre organisation interagissent actuellement, puis recherchez un scénario approprié qui propose des méthodes plus faciles pour stocker et partager des fichiers en collaboration. Gardez à l’esprit que [Microsoft Teams](teams-workload.md) peut s’avérer un meilleur choix dans certains de vos scénarios.
-
-SharePoint Online permet de mettre en place les scénarios d’entreprise stratégiques suivants pour Microsoft 365 Entreprise :
-
-- Communiquer avec votre équipe afin de rester informé, de demander des informations et de créer une cohésion et un consensus
-- Exploiter les connaissances collectives
-- Permettre aux utilisateurs de transformer les processus d’entreprise
-- Façonner la culture d’entreprise
-- Gérer les projets, les tâches et les délais pour atteindre vos objectifs métiers
-- Impliquer vos employés de terrain pour favoriser votre transformation numérique
-- Comprendre vos habitudes de travail pour améliorer votre impact et votre influence
-- Communiquer avec vos collègues, partenaires et clients
-- Stocker et partager des fichiers internes ou externes à votre entreprise pour travailler en toute transparence au-delà des frontières structurelles
-- Travailler en toute sécurité avec votre appareil en tout lieu et à tout moment pour atteindre plus d’objectifs, en conservant une méthode de travail flexible
-- Protéger vos informations et réduire le risque de perte de données
-- Assurer pour votre organisation un niveau supérieur de confidentialité et de conformité au Règlement général sur la protection des données (RGPD)
-
-Pour plus d’informations, reportez-vous à la page relative à la [transformation numérique avec Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="sharepoint-online-site-for-highly-regulated-data"></a>Sites SharePoint Online pour les données hautement réglementées
 

@@ -2,7 +2,7 @@
 title: Déploiement de Microsoft Teams pour Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de planification, de déploiement et de création de valeur de Microsoft Teams dans Microsoft 365 Entreprise au sein de votre organisation.
-ms.openlocfilehash: 1e7519817a10eb4aa710dff2d4c74c9390c9f6f6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: fd2e72ddb0dfbcc437d30dee16241fbccc81b05b
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072854"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982615"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Déploiement de Microsoft Teams pour Microsoft 365 Entreprise
 
@@ -50,14 +50,6 @@ Microsoft Teams peut être utilisé pour de nombreux objectifs différents. Vou
 Vous devez cibler Microsoft Teams pour traiter les équipes particulièrement collaboratives et à évolution rapide qui travaillent étroitement ensemble et nécessitent bien plus de fonctionnalités que ce que peut fournir la messagerie électronique avec Exchange Online. Il peut s’agir, par exemple, de conversations instantanées de groupes en direct avec un historique enregistré et un emplacement commun et facile à trouver pour stocker des fichiers et des notes. 
 
 Pour se rendre compte des avantages de Microsoft Teams, observez la façon dont une équipe ou une équipe v interagit aujourd’hui, puis recherchez un scénario de Microsoft Teams approprié qui remplace l’interaction et offre des moyens plus faciles de collaborer et de fournir des fonctionnalités supplémentaires.
-
-Microsoft Teams permet de mettre en place les scénarios d’entreprise stratégiques suivants pour Microsoft 365 Entreprise :
-
-- Communiquer avec votre équipe afin de rester informé, de demander des informations et de créer une cohésion et un consensus
-- Impliquer vos employés de terrain pour favoriser votre transformation numérique.
-- Comprendre vos habitudes de travail pour améliorer votre impact et votre influence
-
-Pour plus d’informations, reportez-vous à la page relative à la [transformation numérique avec Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="microsoft-teams-for-highly-regulated-data"></a>Microsoft Teams pour les données hautement réglementées
 
@@ -99,7 +91,7 @@ Utilisez ensuite les ressources suivantes pour comprendre la gestion des licence
 - [Gérer l’accès des utilisateurs à Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/user-access)
 - [Obtenir des clients pour Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/get-clients)
 - [Activer Microsoft Teams dans votre organisation Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [Gérer les fonctionnalités Microsoft Teams dans votre organisation Office 365](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
+- [Gérer les fonctionnalités Microsoft Teams dans votre organisation Office 365](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 
 #### <a name="result"></a>Résultat
 
