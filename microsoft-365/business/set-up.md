@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez comment configurer Microsoft 365 Business.
-ms.openlocfilehash: ac9c8b828ff131a15bf057fa8bdc0bf56dd00987
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 1efb7379930f639cf10875cf5aa6731001bb41c8
+ms.sourcegitcommit: 2e5ae52bb641ee1f72c077260b5d0f35622935fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772564"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37005195"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Configurer Microsoft 365 entreprise dans l’Assistant Installation
 
@@ -57,7 +57,7 @@ Lorsque vous achetez Microsoft 365 Business, vous avez la possibilité d’utili
     
 4. Suivez les étapes de l’Assistant pour [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) qui vérifie que vous êtes propriétaire du domaine. Si vous êtes conscient de votre hôte de domaine, reportez-vous aux [instructions spécifiques](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)de l’hôte.
 
-    Si votre fournisseur d’hébergement est GoDaddy, le processus est facile et vous êtes automatiquement invité à vous connecter et à permettre à Microsoft de s’authentifier à votre place:
+    Si votre fournisseur d’hébergement est GoDaddy ou si un autre hôte est activé avec la [connexion au domaine](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), le processus est facile et vous êtes automatiquement invité à vous connecter et à laisser Microsoft s’authentifier à votre place :
 
     ![Sur GoDaddy, sélectionnez Autoriser.](media/godaddyauth.png)
 
@@ -77,7 +77,7 @@ Tous les utilisateurs que vous ajoutez dans l’Assistant reçoivent automatique
 
 4. Ignorez la migration des messages e-mail et sélectionnez **Suivant** dans la page **Migrer les messages e-mail**. 
 
-    Si vous effectuez une migration à partir d’un autre fournisseur de courrier et que vous souhaitez copier vos données ultérieurement, vous pouvez migrer le [courrier électronique et les contacts vers Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
+    Si vous effectuez une migration à partir d’un autre fournisseur de courrier et que vous souhaitez copier vos données ultérieurement, vous pouvez [migrer le courrier électronique et les contacts vers Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 
 ### <a name="connect-your-domain"></a>Sélectionner votre domaine
@@ -89,7 +89,8 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
   
 1. L'Assistant Configuration détecte généralement votre bureau d'enregistrement et vous fournit un lien vers des instructions détaillées vous permettant de mettre à jour vos enregistrements NS sur le site web du bureau d'enregistrement. Si ce n’est pas le cas, [Modifiez les serveurs de noms pour configurer Office 365 avec n’importe quel](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2)Bureau d’enregistrement de domaine. 
 
-    - Si vous avez des enregistrements DNS existants, par exemple un site Web existant, vous devez gérer vos propres enregistrements DNS pour vous assurer que les services existants restent connectés. Pour plus d’informations, voir [notions de base](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) sur le domaine.
+    - Si vous avez des enregistrements DNS existants, par exemple un site Web existant, mais que votre hôte DNS est activé pour la [connexion au domaine](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), choisissez **Ajouter des enregistrements pour moi**. 
+    - Si vous avez des enregistrements DNS existants avec d’autres hôtes DNS (non activé pour la connexion au domaine), vous devez gérer vos propres enregistrements DNS pour vous assurer que les services existants restent connectés. Pour plus d’informations, voir [notions de base](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) sur le domaine.
 
         ![Connecter votre page de domaine avec je vais gérer mes propres enregistrements DNS.](media/connectyourdomainpage.png)
 
