@@ -10,21 +10,21 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: db0cb3ed472d0f50808339624550f0e98082b737
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: f14016d596f11869fb923106cb174fa5ce255ec3
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698366"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982305"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Liste de vérification de préparation sur la responsabilité du Support Microsoft et des services professionnels concernant le RGPD
 
 ## <a name="1-introduction"></a>1. Introduction
 
-Cette liste de contrôle de l’état de préparation à la responsabilisation permet d’accéder en toute simplicité aux informations dont vous pouvez avoir besoin pour vous conformer au RGPD lorsque vous utilisez les services professionnels et les services de support technique Microsoft. Elle est organisée à l’aide des titres et numéros de référence (entre parenthèses pour chaque rubrique) d’un ensemble de contrôles de confidentialité et de sécurité incombant aux sous-traitants de données à caractère personnel en vertu des normes suivantes :
+Cette liste de vérification de préparation sur la responsabilité permet d’accéder en toute simplicité aux informations dont vous pouvez avoir besoin pour vous conformer au RGPD lorsque vous utilisez les services professionnels et les services de support technique Microsoft. Elle est organisée à l’aide des titres et numéros de référence (entre parenthèses pour chaque rubrique) d’un ensemble de contrôles de confidentialité et de sécurité incombant aux sous-traitants de données à caractère personnel en vertu des normes suivantes :
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) pour les exigences techniques en matière de sécurité.
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) pour les exigences de gestion en matière de protection de la vie privée.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) pour les exigences et techniques de gestion des informations sur la confidentialité.
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) pour les exigences de gestion de la sécurité des informations en général.
 
 Cette structure de contrôle est également utilisée pour organiser la présentation des contrôles internes implémentés par les services professionnels Microsoft pour se conformer au RGPD, que vous pouvez télécharger à partir du [Centre de confidentialité du service](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 

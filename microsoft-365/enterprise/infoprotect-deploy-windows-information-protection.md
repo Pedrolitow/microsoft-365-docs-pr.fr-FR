@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et déployez la protection des informations Windows dans Microsoft 365.
-ms.openlocfilehash: e32b09c20e86ff927748f7aedd8b8d769e07916e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a89d61367d3e07cabff0576f16fa359a06dc1ecc
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073559"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981815"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Étape 4 : Configurer la protection des informations Windows
 
@@ -30,7 +30,7 @@ L’augmentation du nombre d’appareils personnels utilisés au travail entraî
 
 La Protection des informations Windows contribue à protéger contre ces types de fuites de données sur des appareils Windows 10. Pour plus d’informations, voir [Protéger vos données d’entreprise à l’aide de Protection des informations Windows](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
-Dans Microsoft 365 Entreprise, la Protection des informations Windows est une combinaison de Windows 10 Entreprise et de Microsoft Intune, fournie avec Enterprise Mobility + Security dans le cadre de votre abonnement. 
+Dans Microsoft 365 Entreprise, la Protection des informations Windows est une combinaison de Windows 10 Entreprise et de Microsoft Intune, fournie avec votre abonnement. 
 
 Pour déployer la Protection des informations Windows dans votre organisation avec Microsoft 365 Entreprise :
 
@@ -46,7 +46,6 @@ Pour plus d’informations, voir [Meilleures pratiques de Protection des informa
 Comme point de contrôle intermédiaire, consultez les [critères de sortie](infoprotect-exit-criteria.md#crit-infoprotect-step4) correspondant à cette étape.
 
 ## <a name="next-step"></a>Étape suivante
-
 
 |||
 |:-------|:-----|

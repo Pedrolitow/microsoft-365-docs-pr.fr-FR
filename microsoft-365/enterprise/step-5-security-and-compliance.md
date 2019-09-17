@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les considérations importantes relatives à la sécurité et à la conformité de Windows et d’Office.
-ms.openlocfilehash: 791006a6a836f28adb8d71b20e0e887b903752ba
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 472a838c68ed06560f5b81f7854b05b1b2e8eefd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814585"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981755"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Étape 5 : considérations relatives à la sécurité et à la conformité
 
@@ -111,7 +111,7 @@ Le service **[Chiffrement de messages Office 365](https://docs.microsoft.com/fr-
 
 Le service **[Contrôle d’application Windows Defender](https://docs.microsoft.com/fr-FR/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) ** dans Windows 10 permet de désactiver une liste approuvée d’applications autorisées ou refusées dont Microsoft a vérifié la sécurité et tout ce qui est géré par les stratégies de protection des points de terminaison à l’aide de Microsoft Intune.
 
-Le service **[Windows Defender ATP](https://docs.microsoft.com/fr-FR/windows/security/threat-protection/windows-defender-atp/overview) ** est une plateforme unifiée dédiée à la protection préventive, à la détection de violation postérieure, à l’analyse automatisée et au traitement. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
+Le service **[Microsoft Defender - Protection avancée contre les menaces](https://docs.microsoft.com/fr-FR/windows/security/threat-protection/windows-defender-atp/overview)** est une plateforme unifiée dédiée à la protection préventive, à la détection de violation postérieure, à l’analyse automatisée et au traitement. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
 
 Le service **[Exploit Guard](https://docs.microsoft.com/fr-FR/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) ** permet de réduire la surface d’attaque pour l’exécution des applications en empêchant les programmes malveillants de s’infiltrer dans Windows et en bloquant les processus non approuvés d’accéder aux dossiers protégés.
 

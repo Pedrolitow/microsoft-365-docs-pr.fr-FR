@@ -2,7 +2,7 @@
 title: Scénarios et charges de travail Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Intégrez les utilisateurs de votre organisation aux charges de travail productivité de Microsoft 365 Entreprise.
-ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297864"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981935"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
 
@@ -34,19 +34,20 @@ Les scénarios utilisent des fonctionnalités et services de Microsoft 365 Entr
 - sujettes à des réglementations régionales ;
 - les plus précieuses de votre organisation comme les secrets commerciaux, les informations sur les ressources humaines ou financières et la stratégie de l’organisation.
 
-Pour protéger ces données contre des menaces internes et externes, suivez les instructions fournies dans [Sites SharePoint Online et Microsoft Teams pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md). Ce scénario vous guide dans la configuration d’un site SharePoint Online ou d’une équipe Microsoft Teams afin de stocker en toute sécurité vos données les plus précieuses.
+Pour protéger ces données contre des menaces internes et externes, consultez [Sites SharePoint Online et Microsoft Teams pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md). Ce scénario vous guide dans la configuration d’un site SharePoint Online ou d’une équipe Microsoft Teams afin de stocker en toute sécurité vos données les plus précieuses.
 
 Les charges de travail et les scénarios décrits dans le guide de déploiement global de Microsoft 365 Entreprise sont les suivants :
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-Pour obtenir d’autres scénarios, reportez-vous à la [bibliothèque de productivité Microsoft 365](https://www.microsoft.com/microsoft-365/success/). Sur cette page web, saisissez une chaîne de recherche ou cliquez sur **Filtrer par**, puis indiquez un secteur, des rôles (services) et des produits au sein de Microsoft 365.
+Pour obtenir d’autres scénarios, reportez-vous à la [bibliothèque de productivité Microsoft 365](https://www.microsoft.com/microsoft-365/success/). 
 
-Dans les résultats, cliquez sur une fiche pour voir les étapes de mise en route.
+1. Sur cette page web, saisissez une chaîne de recherche ou cliquez sur **Filtrer par**, puis indiquez un secteur, des rôles (services) et des produits au sein de Microsoft 365.
+2. Dans les résultats, cliquez sur une fiche pour voir les étapes de mise en route.
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Conditions préalables pour l’infrastructure de base
 
-*Idéalement *, vous devez déployer les charges de travail et les scénarios après avoir configuré toutes les phases de l’[infrastructure de base](deploy-foundation-infrastructure.md). Cela garantit que toutes les couches sous-jacentes sont en place pour offrir une intégration, une sécurité et une expérience optimale à vos utilisateurs ainsi qu’à leurs appareils.
+*Idéalement *, vous devez déployer les charges de travail et les scénarios après avoir configuré toutes les phases de l’[infrastructure de base](deploy-foundation-infrastructure.md). Cela garantit que toutes les couches de base sous-jacentes sont en place pour offrir une intégration, une sécurité et une expérience optimale à vos utilisateurs ainsi qu’à leurs appareils.
 
 | Phase | Résultat |
 |:-------|:-----|
@@ -57,14 +58,14 @@ Dans les résultats, cliquez sur une fiche pour voir les étapes de mise en rout
 | Gestion des appareils mobiles | Vos appareils peuvent être inscrit et gérés. |
 | Protection des informations | Les fonctionnalités de sécurité d’Office 365 sont activées et votre niveau de confidentialité ou les étiquettes d’Azure Information Protection sont prêts à protéger les documents. |
 
-N’oubliez pas qu’il s’agit d’un scénario idéal et que la planification, la configuration, les tests et l’implémentation de pilote peuvent prendre du temps, en particulier au sein de grandes organisations dotées d’une infrastructure existante et de plusieurs sites. La mise en place de toutes ces couches dans tous les sites n’est pas indispensable pour bénéficier plus rapidement de la valeur métier de Microsoft 365 Entreprise. 
+N’oubliez pas qu’il s’agit d’un scénario idéal et que la planification, la configuration, les tests et l’implémentation de pilote peuvent prendre du temps, en particulier au sein de grandes organisations dotées d’une infrastructure existante et de plusieurs sites. Le suivi de toutes ces phases dans tous les sites n’est pas indispensable pour bénéficier plus rapidement de la valeur métier de Microsoft 365 Entreprise. 
 
 Voici des charges de travail courantes à déployer immédiatement : 
 
-- Une fois la couche **Identité** de l’infrastructure de base déployée vers les utilisateurs, de nombreuses organisations effectuent les déploiements suivants :
+- Une fois la phase **Identité** de l’infrastructure de base déployée vers les utilisateurs, de nombreuses organisations effectuent les déploiements suivants :
   - [Office 365 ProPlus](office365proplus-infrastructure.md) combiné avec [OneDrive Entreprise](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Office 365 ProPlus apporte la sécurité de l’authentification moderne et l’expérience utilisateur du dernier client Microsoft Office. La migration des fichiers personnels de l’utilisateur vers OneDrive Entreprise réduit l’infrastructure et la nécessité de prendre en charge des dossiers et lecteurs locaux.
   - [Exchange Online](exchangeonline-workload.md) pour permettre aux utilisateurs de commencer à utiliser le courrier basé sur le cloud.
-- Si vous n’avez pas immédiatement besoin de stocker des biens numériques hautement réglementés dans le cloud, déployez [Microsoft Teams](teams-workload.md) et [SharePoint Online](sharepoint-online-onedrive-workload.md) pour vos utilisateurs avant la couche **Protection des informations**.
+- Si vous n’avez pas immédiatement besoin de stocker des biens numériques hautement réglementés dans le cloud, déployez [Microsoft Teams](teams-workload.md) et [SharePoint Online](sharepoint-online-onedrive-workload.md) pour vos utilisateurs avant la phase **Protection des informations**.
 
 Vous devez décider de la meilleure façon de commander et déployer la configuration des phases préalables de l’infrastructure de base pour répondre au mieux à vos besoins métier.
 
@@ -74,7 +75,5 @@ Nous vous recommandons vivement d’opérer le déploiement de la phase **Identi
 
 La phase **Identité** garantit que votre identité basée sur le cloud, qu’elle soit uniquement cloud ou synchronisée avec vos Active Directory Domain Services (AD DS) locaux, contient les comptes et groupes d’utilisateurs et d’ordinateurs permettant de gérer l’authentification et l’accès. Une authentification forte pour tous vos utilisateurs ainsi qu’une protection forte des comptes d’administrateurs sont requises avant de placer des biens numériques de votre organisation dans le cloud Microsoft 365.
 
-Bien que fondamentale et essentielle pour les performances globales, la phase **Mise en réseau** sur votre réseau peut être en cours lorsque vous intégrez vos utilisateurs à des charges de travail, sachant que les performances des applications et services Microsoft 365 s’amélioreront au fil du temps.
-
-Cela vaut en particulier pour les organisations disposant de plusieurs sites et d’une grande diversité d’appareils périphériques et de connexions Internet.
+Bien que fondamentale et essentielle pour les performances globales, la phase **Mise en réseau** peut être en cours lorsque vous intégrez vos utilisateurs à des charges de travail, sachant que les performances des applications et services Microsoft 365 s’améliorent au fil du temps. Cela vaut en particulier pour les organisations disposant de plusieurs sites et d’une grande diversité d’appareils périphériques et de connexions Internet.
 

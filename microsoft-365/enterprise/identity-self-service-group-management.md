@@ -3,7 +3,7 @@ title: 'Étape 6 : Utiliser des groupes pour faciliter la gestion'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Apprenez à configurer la gestion des groupes en libre-service Azure AD.
-ms.openlocfilehash: 67c3a0e45fa253bdaedead03ac1137422ee0f8de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97077f5e047f55ea6bf6e532d25d25f4682ff179
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073604"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981775"
 ---
 # <a name="step-6-use-groups-for-easier-management"></a>Étape 6 : Utiliser des groupes pour faciliter la gestion
 
@@ -76,12 +76,9 @@ Comme point de contrôle intermédiaire, vous pouvez consulter les [critères de
 
 Dans cette section, vous allez configurer des groupes de sécurité dans Azure AD pour attribuer automatiquement les licences d’un ensemble d’abonnements à tous les membres du groupe. C’est ce que l’on appelle la *gestion des licences basée sur les groupes*. Si un compte d’utilisateur est ajouté ou supprimé du groupe, les licences des abonnements du groupe sont automatiquement attribuées ou supprimées du compte d’utilisateur.
 
-Pour Microsoft 365 Entreprise, vous allez configurer des groupes de sécurité Azure AD pour affecter ces deux licences :
+Pour Microsoft 365 Entreprise, vous allez configurer des groupes de sécurité Azure AD afin d’attribuer la licence Microsoft 365 Entreprise qui convient.
 
-- Office 365 Entreprise E3 ou E5
-- Enterprise Mobility + Security (EMS) E3 ou E5
-
-Utilisez les groupes identifiés à l’Étape 2 pour rechercher les groupes qui contiennent une liste de comptes où tous les utilisateurs de ce groupe doivent avoir des licences Office 365 et EMS. Vérifiez que vous avez suffisamment de licences pour tous les membres du groupe. Si vous n’avez plus de licences, aucune licence ne sera attribuée aux nouveaux utilisateurs tant que d’autres licences ne sont pas disponibles.
+Vérifiez que vous disposez de suffisamment de licences pour tous les membres du groupe. Si vous n’avez plus de licences, aucune licence ne sera attribuée aux nouveaux utilisateurs tant que d’autres licences ne seront pas disponibles.
 
 >[!Note]
 >Vous ne devez pas configurer la *gestion des licences par groupes* pour des groupes qui contiennent des comptes B2B Azure.
@@ -101,8 +98,8 @@ Les résultats de cette section sont les suivants :
 |![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide du laboratoire de test : Automatiser les licences et l’appartenance au groupe](automate-licenses-group-membership-microsoft-365-test-environment.md) |
 |||
 
-Comme point de contrôle intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-group-license) de cette section.
+Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-group-license) pour cette étape.
 
-## <a name="next-step"></a>Étape suivante
-
-[ Identifier les critères de sortie de l’infrastructure](identity-exit-criteria.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step7.png)| [Configurer la gouvernance des identités](identity-governance.md) |

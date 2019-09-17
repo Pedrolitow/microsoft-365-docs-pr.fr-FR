@@ -1,9 +1,9 @@
 ---
-title: 'Étape 4 : configurer l’authentification d’utilisateur sécurisée'
+title: 'Étape 4 : configurer l’authentification d’utilisateur sécurisée'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez l’authentification multifacteur pour les comptes d’utilisateur.
-ms.openlocfilehash: 73e884802329765fd6a89cfb7d0e04116c17968c
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 2a4a0926a08ae8279523219a2d7a2386ea0c6742
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072084"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981845"
 ---
 # <a name="step-4-configure-secure-user-authentication"></a>Étape 4 : configurer l’authentification d’utilisateur sécurisée
 
@@ -36,7 +36,7 @@ Avec l’authentification multifacteur, la deuxième couche de sécurité peut �
 - un appareil personnel et approuvé qui n’est pas facilement usurpé ou dupliqué (un smartphone, par exemple) ;
 - un attribut biométrique (une empreinte numérique, par exemple).
 
-Vous allez activer l’authentification multifacteur et configurer la méthode d’authentification secondaire sur une base de compte par utilisateur. Informez bien les utilisateurs que l’authentification multifacteur est en cours d’activation pour qu’ils comprennent les exigences telles que l’utilisation obligatoire d’un smartphone pour la connexion et puissent se connecter correctement.
+Vous allez activer l’authentification multifacteur et configurer la méthode d’authentification secondaire avec les [stratégies d’accès conditionnel](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access), qui vous permettent d’utiliser les groupes Azure Active Directory (Azure AD) pour déployer l’authentification multifacteur vers des ensembles d’utilisateurs spécifiés, tels que des utilisateurs pilotes, régions géographiques ou services. Informez bien vos utilisateurs que l’authentification multifacteur est en cours d’activation pour qu’ils comprennent les exigences telles que l’utilisation obligatoire d’un smartphone pour la connexion et puissent se connecter correctement. 
 
 Pour plus d’informations, voir [Planifier l’authentification multifacteur](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
 
@@ -49,9 +49,24 @@ Pour plus d’informations, voir [Planifier l’authentification multifacteur](h
 |![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide du laboratoire de test : authentification multifacteur](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
-Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-mfa) pour cette section.
+Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-mfa) pour cette étape.
 
+<a name="identity-password-prot"></a>
+## <a name="prevent-bad-passwords"></a>Éviter les mots de passe incorrects
 
+*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
+
+Pour empêcher les utilisateurs de créer un mot de passe facile à déterminer, optez pour la protection par mot de passe Azure AD qui utilise une liste globale de mots de passe interdits et une liste personnalisée facultative de mots de passe que vous spécifiez. Par exemple, vous pouvez spécifier des termes propres à votre organisation, tels que «
+
+- Noms de marques
+- Noms de produits
+- Emplacements (par exemple, le siège social de l’entreprise)
+- Termes internes spécifiques à l’entreprise
+- Abréviations dotées d’une signification spécifique à l’entreprise.
+
+Vous pouvez interdire les mots de passe incorrects [dans le cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) et localement pour [Active Directory Domain Services (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
+
+Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-password-prot) pour cette étape.
 
 <a name="identity-ident-prot"></a>
 ## <a name="protect-against-credential-compromise"></a>Protégez-vous contre la compromission des informations d’identification
@@ -64,8 +79,8 @@ Azure AD Identity Protection vous permet de :
 
 |||
 |:---------|:---------|
-|déterminer et résoudre les vulnérabilités potentielles dans les identités de votre organisation ;|Azure AD utilise l’apprentissage automatique pour détecter les anomalies et les activités douteuses, telles que les connexions et les activités post-connexion. À l’aide de ces données, Identity Protection génère des rapports et les alertes qui vous aident à évaluer les problèmes et à prendre des mesures.|
-|Détecter des actions douteuses qui sont liées aux identités de votre organisation et y répondre automatiquement|Vous pouvez configurer des stratégies de risque qui répondent automatiquement aux problèmes détectés lorsqu’un niveau de risque spécifié a été atteint. Ces stratégies, en plus des autres contrôles d’accès conditionnel fournis par Azure Active Directory et Enterprise Mobility + Security (EMS) peuvent automatiquement bloquer l’accès ou prendre des actions correctives, comme réinitialiser les mots de passe et demander l’authentification multifacteur pour les connexions suivantes.|
+|déterminer et résoudre les vulnérabilités potentielles dans les identités de votre organisation ;|Azure AD utilise le Machine Learning pour détecter les anomalies et les activités suspectes, telles que les connexions et les activités post-connexion. Grâce à ces données, Azure AD Identity Protection génère des rapports et des alertes qui vous permettent d’évaluer les problèmes et de prendre des mesures.|
+|Détecter des actions douteuses qui sont liées aux identités de votre organisation et y répondre automatiquement|Vous pouvez configurer des stratégies qui répondent automatiquement aux problèmes détectés lorsqu’un niveau de risque spécifié est atteint. Outre les autres contrôles d’accès conditionnel fournis par Azure AD et Microsoft Intune, ces stratégies peuvent automatiquement bloquer l’accès ou prendre des mesures correctives, qui incluent des réinitialisations de mot de passe et impliquent une authentification multifacteur pour les connexions suivantes.|
 |Examiner les incidents suspects et les résoudre avec des actions d’administration|Vous pouvez examiner des événements à risque en utilisant les informations sur l’incident de sécurité. Des flux de travail de base sont disponibles pour effectuer le suivi des enquêtes et lancer des actions de correction, telles que des réinitialisations du mot de passe.|
 
 [Plus d’informations sur Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
@@ -106,8 +121,6 @@ Le **rapport d’activité des connexions** enregistre l’auteur des tâches in
 Pour plus d’informations sur les rapports et la façon d’y accéder, reportez-vous à la rubrique [Création de rapports Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal).
 
 Après cette étape, vous connaîtrez ces rapports et saurez comment les utiliser pour obtenir des informations sur les activités et événements Azure AD à des fins de planification et de sécurité.
-
-
 
 ## <a name="next-step"></a>Étape suivante
 

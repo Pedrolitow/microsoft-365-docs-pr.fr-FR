@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297904"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982068"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
@@ -87,13 +87,13 @@ Pour plus d’informations, consultez les [guides de laboratoire de test Microso
 
 ## <a name="transition-your-entire-organization"></a>Migration de l’ensemble de votre organisation
 
-Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, téléchargez l’[affiche de transition](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, consultez [Transition de votre organisation vers Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![Affiche Transition de votre organisation vers Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 Entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
 
-Vous pouvez imprimer cet affiche au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez [télécharger cette affiche de transition](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="how-did-others-do-it"></a>Comment d’autres ont-ils procédé ?
 
@@ -115,7 +115,7 @@ La mise en place d’une culture numérique est une priorité majeure pour tout 
 
 En même temps, les fonctionnalités de sécurité intelligente et l’intégration des produits simplifient la gestion des besoins et réduisent le coût total de possession tout au long du cycle de vie des ressources informatiques. 
 
-Découvrez comment les départements d’ingénierie et d’exploitation de Core Services (anciennement Microsoft IT) ont [planifié et déployé la base](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365) nécessaire pour prendre en charge les applications et services qui stimulent la créativité et le travail en équipe dans un environnement sécurisé.
+Découvrez comment les départements d’ingénierie et d’exploitation de Core Services (anciennement Microsoft IT) ont [planifié et déployé la base](https://www.microsoft.com/fr-FR/itshowcase/deploying-and-managing-microsoft-365) nécessaire pour prendre en charge les applications et services qui stimulent la créativité et le travail en équipe dans un environnement sécurisé.
 
 > [!Note]
 > Cette page web n’est disponible qu’en anglais.

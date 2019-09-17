@@ -3,7 +3,7 @@ title: 'Étape 5 : Simplifier l’accès pour les utilisateurs'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez la réinitialisation du mot de passe libre-service (SSPR) pour Azure AD.
-ms.openlocfilehash: b57291aabf1b51e7866dba10ba50eacc27291a2a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ec81b2931fd4ad599ffcf983ea8a7d764c56404a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073724"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981795"
 ---
 # <a name="step-5-simplify-access-for-users"></a>Étape 5 : Simplifier l’accès pour les utilisateurs
 
@@ -32,7 +32,7 @@ ms.locfileid: "34073724"
 
 Dans cette section, vous devez autoriser les utilisateurs à réinitialiser leur mot de passe via Azure Active Directory (Azure AD), qui est ensuite répliqué sur votre Active Directory Domain Services (AD DS)local. Ce processus est appelé écriture différée de mot de passe. Avec l’écriture différée de mot de passe, les utilisateurs n’ont pas besoin de mettre à jour leur mot de passe via la version locale Active Directory Domain Services où sont stockés les comptes d’utilisateurs et leurs attributs. C’est utile pour les utilisateurs itinérants ou distants qui ne possèdent pas de connexion d’accès à distance au réseau local.
 
-L’écriture différée de mot de passe est requise pour exploiter entièrement les fonctionnalités de la protection des identités, comme obliger les utilisateurs à modifier leur mot de passe en local lorsqu’un risque élevé de compromission de compte a été détecté.
+L’écriture différée de mot de passe est requise pour exploiter pleinement les fonctionnalités Azure AD Identity Protection, comme obliger les utilisateurs à modifier leur mot de passe en local lorsqu’un risque élevé de compromission de compte a été détecté.
 
 Pour obtenir plus d’informations et les instructions de configuration, consultez l’article [Azure AD SSPR avec l’écriture différée de mot de passe](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback).
 
@@ -71,7 +71,7 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 
 Dans cette section, vous devrez configurer Azure Active Directory Seamless Single Sign-On (Azure AD Seamless SSO) pour autoriser vos utilisateurs à se connecter aux services qui utilisent des comptes d’utilisateurs Azure AD sans taper leur mot de passe, ni dans de nombreux cas, leur nom d’utilisateur. Cela donne à vos utilisateurs un accès facile aux applications basées sur le cloud, telles qu’Office 365, sans nécessiter des composants supplémentaires en local, tels que des serveurs de fédération d’identité.
 
-Vous allez configurer l’authentification unique transparente d’Azure AD avec l’outil Azure AD Connect.
+Vous configurez l’authentification unique transparente Azure AD avec l’outil Azure AD Connect.
 
 Reportez-vous aux [instructions pour configurer l’authentification unique transparente d’Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
@@ -92,20 +92,11 @@ Dans cette section, vous allez permettre aux utilisateurs de reconnaître la pag
 
 Microsoft 365 Entreprise vous permet de personnaliser l’aspect des pages de connexion et du panneau d’accès pour y inclure votre logo d’entreprise, des modèles de couleurs et des informations personnalisées sur l’utilisateur. 
 
-Lorsqu’un utilisateur tente de se connecter à partir d’un appareil, il voit une page ressemblant à l’exemple de page de connexion à Office 365 suivant *avant personnalisation*.
-
-![Exemple de page de connexion à Office 365 avant personnalisation](./media/identity-customize-office-365-sign-in/id-step01-sign-in-before.png)
-
-Et voici ce que le même utilisateur de Contoso Corporation verrait *après personnalisation*.
-
-![Exemple de page de connexion à Office 365 après personnalisation](./media/identity-customize-office-365-sign-in/id-step01-sign-in-after.png)
-
 Pour plus d’informations, reportez-vous à la rubrique [Ajouter l’identité de votre entreprise à la page de connexion d’Office 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 Pour des instructions de configuration, reportez-vous à la rubrique relative à l’[ajout de l’identité de votre entreprise à vos pages de connexion et de panneau d’accès](http://aka.ms/aadpaddbranding).
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-custom-sign-in) pour cette étape.
-
 
 ## <a name="next-step"></a>Étape suivante
 

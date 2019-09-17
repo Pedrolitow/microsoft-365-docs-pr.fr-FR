@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez les phases principales du déploiement de l’infrastructure de base pour Microsoft 365 Entreprise au sein de votre organisation, également appelé déploiement de base.
-ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: c66a328becf03a179b3ef0526c3110783904e741
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297914"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982095"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastructure de base de Microsoft 365 Entreprise
 
@@ -60,16 +60,16 @@ Voici l’infrastructure de base dans le guide de déploiement global de Micros
 
 ## <a name="at-a-glance"></a>En un coup d’œil
 
-L’[affiche Microsoft 365 Enterprise Foundation infrastructure](http://aka.ms/m365efoundinfraposter) est un emplacement central où vous pouvez voir, pour chaque phase :
+L’[affiche Microsoft 365 Enterprise Foundation infrastructure](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) est un emplacement central où vous pouvez voir, pour chaque phase :
 
 - Les objectifs généraux de la phase pour les administrateurs et les utilisateurs
 - Les services, les fonctionnalités et les outils
 - Les décisions clés de la conception pour la planification
 - Les résultats de la configuration
 - Le processus d’intégration des nouveaux utilisateurs
-- Comment assurer la surveillance et la mise à jour
+- Comment surveiller et mettre à jour
 
-![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+[![Image de l’affiche de l’Infrastructure de base de Microsoft 365 Entreprise](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 

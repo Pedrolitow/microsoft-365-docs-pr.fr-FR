@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 7fbe7f277825905326a1234249e5bccf7082658d
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 1cd1a73395a7bfeb190f8a31589c27bb95312484
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698316"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982335"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 et notification de violation dans le cadre du RGPD
 
@@ -72,11 +72,11 @@ Microsoft affecte les niveaux de priorité et de gravité appropriés de l’enq
 L’équipe de réponse de sécurité collabore avec des ingénieurs de sécurité Microsoft Dynamics 365 et des experts techniques pour classer l’événement en fonction des données factuelles des éléments de preuve. Un événement de sécurité peut être classé de la façon suivante :
 
 - **Faux positif :** un événement qui répond aux critères de détection mais qui fait partie d’une pratique d’entreprise normale et nécessite peut-être d’être filtré. L’équipe de service identifiera la cause première des faux positifs et les résoudra de manière systématique en tirant parti des sources de détection et en les ajustant<span id="_Toc350859432" class="anchor"></span> en fonction des besoins.
-- **Incident de sécurité :** un incident provoqué par un accès non autorisé à des données client ou à des données du support stockées sur des équipements de Microsoft ou dans des installations de Microsoft, ou tout accès non autorisé à ces équipements ou installations provoquant la perte, la divulgation ou l’altération des données client ou des données de support.
-- **Incident de sécurité déclarable au client :** accès illégal ou non autorisé aux systèmes, équipements ou installations de Microsoft, ou utilisation illégale ou non autorisée de ceux-ci, provoquant la divulgation, la modification ou la perte de données client.
-- **Incident de confidentialité :** un sous-type d’incident de sécurité impliquant des données personnelles. Les procédures de gestion sont les mêmes que celles qui concernent les incidents de sécurité.
+- **Incident de sécurité :** un incident provoqué par un accès non autorisé à des données client ou à des données du support stockées sur un équipement de Microsoft ou dans des installations de Microsoft, ou tout accès non autorisé à ces équipement ou installations provoquant la perte, divulgation ou altération des données client ou des données de support.
+- **Incident de sécurité/confidentialité déclarable au client (CRSPI) :** accès illégal ou non autorisé aux systèmes, équipements ou installations de Microsoft, ou utilisation illégale ou non autorisée de ceux-ci, provoquant la divulgation, la modification ou la perte de données client.
+- **Incident de confidentialité :** sous-type d’incident de sécurité impliquant des données personnelles. Les procédures de gestion sont les mêmes que celles concernant un incident de sécurité.
 
-Pour qu’un CRSI soit déclaré, Microsoft doit déterminer que l’accès non autorisé aux données client a ou a probablement eu lieu et/ou qu’une notification juridique ou contractuelle doit être envoyée. Il est possible, mais ce n’est pas obligatoire, de connaître l’impact de certains clients, l’accès aux ressources et les étapes de réparation. Un incident est généralement déclaré comme CRSI à la fin de l’étape de diagnostic d’un incident de sécurité. Toutefois, la déclaration peut arriver à tout moment lorsque toutes les informations pertinentes soient disponibles. Le responsable des incidents de sécurité doit établir des preuves irréfutables qu’un événement signalable a eu lieu pour commencer l’exécution du processus de notification d’incident client.
+Pour qu’un CRSPI soit déclaré, Microsoft doit déterminer que l’accès non autorisé aux données client a ou a probablement eu lieu et/ou qu’une notification juridique ou contractuelle doit être envoyée. Il est souhaitable, sans être obligatoire, de connaître l’impact spécifique sur les clients, l’accès aux ressources et les étapes de réparation. Un incident est généralement déclaré comme CRSPI à la fin de l’étape de diagnostic d’un incident de sécurité. Toutefois, la déclaration peut arriver à tout moment une fois toutes les informations pertinentes disponibles. Le responsable des incidents de sécurité doit établir des preuves irréfutables qu’un événement signalable a eu lieu pour commencer l’exécution du processus de notification d’incident client.
 
 Tout au long de l’enquête, l’équipe de réponse de sécurité collabore étroitement avec des conseillers juridiques pour vérifier que l’enquête judiciaire est menée conformément aux obligations juridiques et aux engagements vis-à-vis des clients. Il existe également des restrictions importantes sur la gestion et l’affichage des données client et système dans différents environnements d’exploitation. Les données sensibles ou confidentielles, ainsi que les données client, ne sont pas transférées en dehors de l’environnement de production sans l’approbation écrite explicite du gestionnaire des incidents enregistrée dans le ticket des incidents correspondant.
 
@@ -88,7 +88,7 @@ Microsoft effectue aussi un post-mortem interne pour les violations de données.
 
 Microsoft Dynamics 365 peut avertir les clients et les autorités réglementaires en cas de violations des données. Microsoft se base sur une compartimentalisation interne importante dans l’exploitation des services Dynamics 365. Les journaux de flux de données sont également puissants. Cette conception présente des avantages, car la plupart des incidents peuvent être limités à des clients spécifiques. L’objectif consiste à fournir aux clients concernés une notification précise et exploitable en temps voulu dès qu’il y a violation de leurs données.
 
-Suite à un CRSI déclaré, le processus de notification a lieu aussi rapidement que possible, en sachant que les risques de sécurité se déplacent rapidement. Généralement, le processus d’élaboration des notifications a lieu alors que l’analyse de l’incident est en cours. Les notifications client sont envoyées rapidement après la déclaration d’une violation *sauf* dans les cas suivants :
+Suite à un CRSPI déclaré, le processus de notification intervient dans les meilleurs délais, sachant que les risques de sécurité évoluent rapidement. En règle générale, le processus d’élaboration des notifications a lieu alors que l’analyse de l’incident est en cours. Les notifications client sont envoyées rapidement après la déclaration d’une violation, *sauf* dans les cas suivants :
 
 - Microsoft estime que le fait d’exécuter une notification augmentera le risque pour d’autres clients. Par exemple, la notification peut avertir un adversaire, et ainsi empêcher de résoudre le problème.
 - D’autres circonstances inhabituelles ou extrêmes examinées par le service juridique de Microsoft et le gestionnaire exécutif des incidents.

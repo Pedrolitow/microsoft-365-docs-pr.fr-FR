@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour Windows 10 Entreprise.
-ms.openlocfilehash: 29ab2373321485d8de892a29132d1af07a318b7b
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 289d20b87d9cefcc63a060fb0dc526cf7a45b071
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074104"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982635"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Phase 3 : Critères de sortie pour l’infrastructure Windows 10 Entreprise
 
@@ -111,13 +111,13 @@ Vous avez déployé Windows Defender Exploit Guard pour protéger vos périphér
 Si nécessaire, l’[Étape 5](windows10-enable-security-features.md#windows10-sec-eg) peut vous aider à répondre à cette exigence.
 
 <a name="crit-windows10-step5c"></a>
-## <a name="required-you-are-using-windows-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Obligatoire : utilisation du service Protection avancée contre les menaces Windows Defender (Microsoft 365 Entreprise E5 uniquement)
+## <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Obligatoire : vous utilisez Microsoft Defender - Protection avancée contre les menaces (Microsoft 365 Entreprise E5 uniquement)
 
-Vous avez déployé le service Protection avancée contre les menaces Windows Defender (ATP) pour détecter, examiner et traiter les menaces avancées contre votre réseau et vos périphériques exécutant Windows 10 Entreprise. 
+Vous avez déployé Microsoft Defender - Protection avancée contre les menaces pour détecter, rechercher et traiter les menaces avancées contre votre réseau et vos appareils exécutant Windows 10 Entreprise. 
 
-Vous avez éventuellement intégré Windows Defender ATP à d’autres outils pour développer ses fonctionnalités.
+Vous avez éventuellement intégré Microsoft Defender - Protection avancée contre les menaces à d’autres outils pour développer ses fonctionnalités.
 
-Si nécessaire, l’[étape 5](windows10-enable-security-features.md#windows10-sec-atp) peut vous aider à répondre à cette exigence.
+Si nécessaire, l’[Étape 5](windows10-enable-security-features.md#windows10-sec-atp) peut vous aider à répondre à cette exigence.
 
 ## <a name="results-and-next-steps"></a>Tests et étapes suivantes
 
