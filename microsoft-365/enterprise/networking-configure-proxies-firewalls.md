@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Analysez et configurez des navigateurs web et des équipements de périmètre pour le trafic de contournement vers des emplacements Office 365 approuvés.
-ms.openlocfilehash: 416c93fd3f44e1cd9edba52a9d6117ac6d133760
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: fbc4956525e2661ce791c6ec81b449dba685d0f0
+ms.sourcegitcommit: 1ca1062ccddd7a46fa0bb4af6ee5f0eb141e7280
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982785"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "36999038"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Étape 4 : configurer le trafic de contournement
 
@@ -44,7 +44,7 @@ Microsoft vous recommande les points suivants :
 - 
 - Analyser vos équipements de périmètre pour déterminer le traitement dupliqué, puis les configurer pour transférer le trafic vers les points de terminaison Optimiser et Autoriser sans traitement. Ceci s’appelle le trafic de contournement. 
 
-Les équipements de périmètre incluent les pare-feux, le SSL Break and Inspect, les appareils d’inspection des paquets et les systèmes de protection contre la perte de données. Pour configurer et mettre à jour les configurations des équipements de périmètre, vous pouvez utiliser un script ou un appel REST pour consommer une liste de points de terminaison structurée à partir du service web des points de terminaison Office 365. Pour plus d’informations, reportez-vous à l’article [Service web d’URL et d’adresse IP Office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
+Les équipements de périmètre incluent les pare-feux, le SSL Break and Inspect, les appareils d’inspection des paquets et les systèmes de protection contre la perte de données. Pour configurer et mettre à jour les configurations des équipements de périmètre, vous pouvez utiliser un script ou un appel REST pour consommer une liste de points de terminaison structurée à partir du service web des points de terminaison Office 365. Pour plus d’informations, reportez-vous à l’article [Service web d’URL et d’adresse IP Office 365](https://docs.microsoft.com/fr-FR/office365/enterprise/office-365-ip-web-service#exporting-a-proxy-pac-file).
 
 Vous ne faites que contourner le traitement de sécurité réseau et de proxy normal pour le trafic vers les points de terminaison des catégories Optimiser et Autoriser de Microsoft 365. Tout autre trafic Internet général sera en proxy et soumis au traitement de sécurité de votre réseau existant.
 
