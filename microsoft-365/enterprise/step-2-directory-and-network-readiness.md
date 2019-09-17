@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment évaluer l’état de préparation des répertoires et du réseau dans votre environnement.
-ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584570"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982725"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Étape 2 : préparation des répertoires et du réseau
 
@@ -73,7 +73,7 @@ Le nouveau modèle de service propose des mises à jour de fonctionnalité semes
 
 Le troisième composant à prendre en compte est la personnalisation utilisateur. La bande passante réseau doit pouvoir supporter la restauration des fichiers utilisateur, de leurs paramètres et de leurs applications dans le cadre du processus d’actualisation ou de remplacement des PC. Au total, ces éléments représentent souvent plus de 20 Go par PC. Pour certains utilisateurs, ils peuvent correspondre à plus de 100 Go.
 
-## <a name="limiting-bandwidth"></a>**Limitation de la bande passante**
+## <a name="limiting-bandwidth"></a>Limitation de la bande passante
 
 Pour limiter l’impact du trafic lié au déploiement sur le réseau, vous pouvez limiter la bande passante réseau à l’aide du paramètre BITS (Background Intelligent Transfer Service) disponible sur les clients. BITS utilise un débit binaire adaptatif (Adaptive Bit Rate, ABR) pour ajuster la bande passante nécessaire au déploiement. Il peut être configuré sur les clients à l’aide d’une stratégie de groupe.
 
@@ -87,9 +87,9 @@ Heureusement, il existe de nouveaux outils pour vous aider à gérer facilement 
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
-## <a name="scavenging-bandwidth"></a>**Nettoyage de la bande passante**
+## <a name="scavenging-bandwidth"></a>Nettoyage de la bande passante
 
-L’option LEDBAT (Low Extra Delay Background Transport), pris en charge dans Windows Server 2019 et System Center Configuration Manager (Current Branch), est conçue pour optimiser le trafic réseau des clients Windows.
+L’option LEDBAT (Low Extra Delay Background Transport), pris en charge dans Windows Server 2019 et System Center Configuration Manager (Current Branch), est conçue pour optimiser le trafic réseau vers les clients Windows.
 
 [10 fonctionnalités de mise en réseau dans Windows Server 2019 : \#9 LEDBAT](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -97,7 +97,7 @@ Contrairement aux options de limitation traditionnelles, LEDBAT peut utiliser to
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
-## <a name="peer-to-peer-options"></a>**Options pair à pair**
+## <a name="peer-to-peer-options"></a>Options pair à pair
 
 Les options pair à pair sont progressivement utilisées dans les migrations de Windows 10 (imagerie PC, mises à jour logicielles et personnalisation utilisateur). Elles sont également utiles pour faciliter les mises à niveau build à build après le déploiement initial de Windows 10. Ici, nous allons vous présenter plusieurs exemples pour vous aider à éloigner le trafic lié à Windows 10 et Office du centre de réseau, en évitant de limiter la bande passante tout en aidant les PC à trouver les fichiers de mise à jour nécessaires sur des PC homologues de leur réseau local, au lieu de les télécharger à partir d’un point de distribution ou d’Internet.
 

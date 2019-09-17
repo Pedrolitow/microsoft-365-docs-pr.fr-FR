@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes de déploiement de l’infrastructure réseau pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 4c1ea87e243d72920a3a56df270fab33bd722834
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 35c65515854bb0c47a45e48d8e3c6af6a80d907c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074314"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982795"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>Phase 1 : Infrastructure réseau pour Microsoft 365 Entreprise
 
 ![](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-Microsoft 365 Entreprise inclut Office 365 et Microsoft Intune dans le cadre de la gestion d’entreprise + Security (EMS). Ces deux services cloud s’appuient sur la sécurité, les performances et la fiabilité des connexions à partir d’appareils clients via Internet ou des circuits dédiés. Pour héberger ces services et les rendre accessibles aux clients dans le monde entier, Microsoft a conçu une infrastructure réseau qui met en évidence les performances et l’intégration. 
+Microsoft 365 Entreprise inclut Office 365, Microsoft Intune et de nombreux services d’identité et de sécurité de Microsoft Azure. Tous ces services cloud s’appuient sur la sécurité, les performances et la fiabilité des connexions à partir d’appareils clients via Internet ou des circuits dédiés. Pour héberger ces services et les rendre accessibles aux clients dans le monde entier, Microsoft a conçu une infrastructure réseau qui met en évidence les performances et l’intégration. 
 
 Dans cette phase, vous découvrez les considérations clés pour la création d’une connexion performante aux services cloud de Microsoft 365 Entreprise. Pour une vue d’ensemble, consultez la rubrique relative aux [principes de la mise en réseau d’Office 365](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694).
 
@@ -48,7 +48,7 @@ Lorsque vous avez terminé ces étapes, accédez aux [critères de sortie](netwo
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Découvrez Microsoft et découvrez comment cette entreprise a [optimisé le réseau Microsoft pour les services Cloud](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4).
+Découvrez Microsoft et découvrez comment cette entreprise a [optimisé le réseau Microsoft pour les services Cloud](https://www.microsoft.com/fr-FR/itshowcase/deploying-and-managing-microsoft-365#primaryR4).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 

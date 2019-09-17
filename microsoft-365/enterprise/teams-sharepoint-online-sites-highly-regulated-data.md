@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un site d’équipe SharePoint Online sécurisé ou une équipe Microsoft Teams pour stocker vos biens numériques les plus précieux et sensibles.
-ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
-ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
+ms.openlocfilehash: d056acc9598abc2b896c775e0979451f4961e3fb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "34681059"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982755"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Sites SharePoint Online et Microsoft Teams pour les données hautement réglementées
 
@@ -67,7 +67,6 @@ Ce scénario implique que vous ayez déjà déployé les éléments suivants :
 Les phases suivantes vous guident à travers toute la conception, la configuration et l’adoption des équipes et des sites SharePoint Online pour les données hautement réglementées.
 
 Pour découvrir comment Contoso Corporation, une organisation multinationale fictive mais représentative, a conçu un site SharePoint Online pour ses équipes de recherche, consultez cet [exemple de configuration](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
-
 
 Dans le cadre d’une équipe dédiée aux données hautement réglementées, vous devez tout d’abord créer un site d’équipe SharePoint Online pour les données hautement réglementées. Ensuite, vous créez une équipe qui utilise le groupe Office 365 du site d’équipe SharePoint Online. Consultez la phase 2, étape 4 pour obtenir plus d’informations.
 

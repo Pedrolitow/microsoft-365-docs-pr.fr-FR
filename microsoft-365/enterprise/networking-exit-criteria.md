@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure réseau.
-ms.openlocfilehash: 533707eec17483c8291b232821035752c9d09e43
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9d818a97e79465d639c52f96901bd1cbaa31144a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074204"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982775"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Phase 1 : Critères de sortie de l’infrastructure réseau
 
@@ -30,7 +30,7 @@ Vérifiez que votre infrastructure réseau répond aux critères requis suivants
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatoire : votre réseau est prêt pour Microsoft 365 Entreprise
 
 - Vos bureaux disposent d’une bande passante Internet adéquate pour le trafic Microsoft 365, y compris pour l’installation et les mises à jour d’Office 365, de Microsoft Intune et de Windows 10 Entreprise
-- Votre réseau global est conforme à l’architecture de référence Office 365
+- Votre réseau global est conforme à l’[architecture de référence Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)
 - Les modifications de votre réseau ont été testées et répondent aux exigences en matière de latence du trafic 
 
 Si nécessaire, l’[Étape 1](networking-provide-bandwidth-cloud-services.md) peut vous aider à répondre à cette exigence.
