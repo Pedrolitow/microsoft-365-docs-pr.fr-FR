@@ -5,14 +5,13 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Depl
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bfa769cab9f8d812fa2533232f66b0d4f8a4edb7
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
+ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390511"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040795"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables-bureau géré Microsoft
 
@@ -20,7 +19,7 @@ Une fois que vous avez apporté des modifications à vos catégories de paramèt
 
 ## <a name="deployment-statuses"></a>Statuts de déploiement 
 
-Voici les statues que vous verrez pour chaque déploiement.
+Voici les statuts que vous verrez pour chaque déploiement.
 
 Statut  | Explication 
 --- | --- 
@@ -41,13 +40,11 @@ Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez déployer, puis sélectionnez le déploiement intermédiaire à déployer.
 4. Sélectionnez **déployer** pour déployer la modification dans l’un des groupes de déploiement.
 
-![Vue d’ensemble du statut de déploiement des paramètres configurables](images/deploy-cs-overview.png)
-
-Microsoft Managed Desktop recommande le déploiement aux groupes de déploiement dans cet ordre: test, First, Fast, puis large. 
+![Vue d’ensemble](images/1deployedit.png) de l’état de déploiement des paramètres configurables Microsoft Managed Desktop recommande le déploiement aux groupes de déploiement dans cet ordre : test, First, Fast, puis large. 
 
 Lorsque les modifications sont terminées dans chaque groupe, l’État devient **terminé**.
 
-![Déploiement des paramètres configurables terminé](images/config-setting-complete.png)
+![Déploiement des paramètres configurables terminé](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>Rétablir le déploiement
 
@@ -61,7 +58,7 @@ Nous allons vous montrer les étapes permettant de rétablir une modification à
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez rétablir, puis sélectionnez le déploiement intermédiaire à rétablir.
 4. Sous **nécessité de rétablir cette modification**, sélectionnez **rétablir le déploiement**.
 
-![Rétablissement du déploiement des paramètres configurables](images/config-setting-revert.png) 
+![Rétablissement du déploiement des paramètres configurables](images/3revert.png) 
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Vue d’ensemble des paramètres configurables](config-setting-overview.md)

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 57c0be2e8aff09024f84c58bb895aab98324964d
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 9f1631b054a46cac83140e07460807b2ba0edac3
+ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982535"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040776"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies de bureau géré Microsoft
 
@@ -28,7 +28,7 @@ Cette rubrique résume les composants inclus dans les licences d’entreprise re
  |
  --- | ---
 Office 365 ProPlus (64 bits) | Ces applications Office seront livrées avec le périphérique : Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype entreprise, OneNote.<br><br>Les versions 64 bits complètes de Microsoft Project et Microsoft Visio ne sont pas incluses. Toutefois, étant donné que l’installation de ces applications dépend de l’installation d’Office 365 ProPlus, le bureau géré Microsoft a créé des déploiements Microsoft Intune et des groupes de sécurité par défaut, que vous pouvez ensuite utiliser pour déployer ces applications sur une licence. utilisateurs finaux. Pour plus d’informations, consultez la rubrique [installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft](../get-started/project-visio.md)
-OneDrive Entreprise | Authentification unique Azure Active Directory <br><br>La redirection de dossiers connue pour les dossiers « bureau », « document » et « images » est incluse ; activé et configuré par le bureau géré Microsoft. 
+OneDrive Entreprise |L’authentification unique Azure Active Directory est activée pour les utilisateurs finaux lors de la première connexion à OneDrive entreprise<br><br>La redirection de dossiers connue pour les dossiers « bureau », « document » et « images » est incluse ; activé et configuré par le bureau géré Microsoft. 
 Applications du Store |    Microsoft Sway et Power BI ne sont pas fournis avec l’appareil. Ces applications peuvent être téléchargées à partir du Microsoft Store.
 Applications Win32 |    Teams n’est pas fourni avec le périphérique, mais il est empaqueté et fourni par Microsoft pour les appareils de bureau gérés par Microsoft. Le client Azure information protection n’est pas livré avec l’appareil, mais vous pouvez en faire un package pour le déploiement. 
 Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, PowerApps et Planner ne sont pas fournis avec l’appareil. Les utilisateurs peuvent accéder à la version Web de ces applications à l’aide d’un navigateur.
