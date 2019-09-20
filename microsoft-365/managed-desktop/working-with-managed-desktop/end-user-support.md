@@ -6,18 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0af9134880f018cf814715a8ca3a3b7dc55c5fcd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: de7f218b5cfe2dcdba6c29aea81bd6004adedf76
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982395"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047227"
 ---
 # <a name="getting-help-for-end-users"></a>Obtenir de l’aide pour les utilisateurs finaux
 
-Les utilisateurs de votre organisation peuvent obtenir de l’aide sur leurs appareils de bureau gérés Microsoft de deux manières : **obtenir de l’aide** ou prendre en charge le téléphone. Ces deux options de support sont disponibles pour les utilisateurs 24 heures sur 24, 7 jours sur 7. 
+Les utilisateurs de votre organisation peuvent obtenir de l’aide sur leurs appareils de bureau gérés Microsoft de deux manières : **obtenir de l’aide** ou prendre en charge le téléphone. Ces deux options de support sont disponibles pour les utilisateurs 24 heures sur 24, 7 jours sur 7.
+ 
 >[!NOTE]
->Les périphériques qui résident dans le groupe de test ne sont pas à l’étendue de ces options de support pour les utilisateurs finaux. 
+>Ces options de prise en charge ne sont pas disponibles pour les périphériques du groupe de test. 
 
 ## <a name="get-help-app"></a>Obtenir une application d’aide
 
@@ -38,9 +39,10 @@ Les utilisateurs finaux disposant d’appareils de bureau gérés par Microsoft 
 - Canada (à l’exclusion du Québec) : + 1 855 425 0216
 - Royaume-Uni : + 44 800 026 0698
 - Australie : + 61 180 037 0619
+- Nouvelle-Zélande : + 64 988 44380
 
 >[!NOTE]
->Veuillez indiquer votre adresse de messagerie de votre organisation lorsque vous appelez pour vérifier votre identité. 
+>Votre adresse de messagerie organisation doit être prête lorsque vous appelez pour vérifier votre identité. 
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Prise en charge des administrateurs pour le bureau géré Microsoft](admin-support.md). 

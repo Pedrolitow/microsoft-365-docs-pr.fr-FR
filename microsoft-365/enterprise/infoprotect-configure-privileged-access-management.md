@@ -1,5 +1,5 @@
 ---
-title: 'Étape 6: configurer la gestion des accès privilégiés pour Office 365'
+title: 'Étape 7 : configurer la gestion des accès privilégiés pour Office 365'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Familiarisez-vous avec la gestion des accès privilégiés pour Office 365 et apprenez à la configurer.
-ms.openlocfilehash: fdfb0bc69d1dc05cffd717951cb493995d2123d4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072094"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047287"
 ---
-# <a name="step-6-configure-privileged-access-management-for-office-365"></a>Étape 6: configurer la gestion des accès privilégiés pour Office 365
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Étape 7 : configurer la gestion des accès privilégiés pour Office 365
 
 *Cette étape est facultative et s’applique uniquement à la version E5 et à la version Conformité avancée de Microsoft 365 Entreprise*
 
@@ -39,11 +39,13 @@ Pour activer la gestion des accès privilégiés d’Office 365, consultez la r
 
 Pour plus d’informations, reportez-vous à la rubrique relative à la [gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-## <a name="results"></a>Résultats
 
-À la fin de cette étape, vous aurez renforcé la sécurité d’Office 365 en activant le contrôle d’accès juste-à-temps pour les données clés et les paramètres de configuration pour votre organisation.
+|||
+|:-------|:-----|
+|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Pour vous exercer à cette configuration dans un environnement de laboratoire de test, consultez le [Guide de laboratoire de test de gestion des accès privilégiés](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|||
 
-Comme point de contrôle intermédiaire, consultez les [critères de sortie](infoprotect-exit-criteria.md#crit-infoprotect-step6) correspondant à cette étape.
+Comme point de contrôle intermédiaire, consultez les [critères de sortie](infoprotect-exit-criteria.md#crit-infoprotect-step7) correspondant à cette étape.
 
 ## <a name="next-step"></a>Étape suivante
 

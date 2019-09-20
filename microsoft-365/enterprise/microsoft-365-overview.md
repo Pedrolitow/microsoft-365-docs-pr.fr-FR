@@ -3,7 +3,7 @@ title: Vue d’ensemble de Microsoft 365 Entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 Enterprise.
-ms.openlocfilehash: b1750e1810556b8dadd4a16481c9ada3195f6c3c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: f08682709cc47dc8fa6b4fcd48dc4511ff251ba1
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982835"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050285"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 Entreprise
 
@@ -78,27 +78,27 @@ Pour obtenir une meilleure idée de la façon de déplacer l’intégralité de 
 
 Cette affiche de deux pages est un moyen rapide d’inventorier votre infrastructure existante et d’accéder aux conseils pour passer au produit ou service correspondant dans Microsoft 365 entreprise. Elle inclut des produits Windows et Office, ainsi que d’autres éléments d’infrastructure et de sécurité, tels que la gestion des appareils, l’identité, la protection des informations et des menaces.
 
-Vous pouvez [Télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) et l’imprimer au format Letter, Legal ou tabloïd (11 x 17).
+Vous pouvez également [Télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) et l’imprimer au format Letter, Legal ou tabloïd (11 x 17).
 
-## <a name="avoid-end-of-support-for-office-2010-clients-and-servers-and-windows-7"></a>Éviter la fin de la prise en charge pour les clients et les serveurs Office 2010 et Windows 7
+## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Éviter la fin de la prise en charge pour les clients et serveurs Windows 7 et Office 2010
 
-Les produits suivants ont atteint la fin du support le **14 janvier 2010**:
+Les produits suivants ont atteint la fin du support le **14 janvier 2020**:
 
 - [Windows 7](https://aka.ms/win7upgrade)
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 
 Les produits suivants ont atteint la fin du support le **13 octobre 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
 Pour obtenir un résumé visuel des options de mise à niveau, de migration et de déplacement sur le Cloud de ces produits, consultez l' [affiche de fin de support](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
 [![Image de la fin de la prise en charge des clients et serveurs Office 2010 et de l’affiche Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-Cette affiche de page unique constitue un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’atteindre la fin du support, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 entreprise en surbrillance.
+Cette affiche de page unique constitue un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Windows 7 et Office 2010 d’atteindre la fin du support, avec les chemins d’accès et le support préférés dans Microsoft 365 entreprise en surbrillance.
 
-Vous pouvez [Télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) et l’imprimer au format Letter, Legal ou tabloïd (11 x 17).
+Vous pouvez également [Télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) et l’imprimer au format Letter, Legal ou tabloïd (11 x 17).
 
 ## <a name="deploy"></a>Déployer
 
@@ -146,7 +146,7 @@ Pour plus d’informations sur le déploiement, voir How :
 
 ## <a name="next-step"></a>Étape suivante
 
-Si vous effectuez le déploiement vous-même, lancez votre [déploiement d’entreprise Microsoft 365](deploy-microsoft-365-enterprise.md).
+Si vous effectuez le déploiement vous-même, commencez votre [déploiement Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
 
 ## <a name="see-also"></a>Voir aussi
 
