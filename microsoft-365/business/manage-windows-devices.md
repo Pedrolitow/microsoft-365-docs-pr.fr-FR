@@ -20,36 +20,65 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: Découvrez comment activer Microsoft 365 pour protéger les appareils locaux Windows 10.
-ms.openlocfilehash: af0e78ef6e79bfd612b11a16538e7afcd377ffb0
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 15804a0bd6cf9d013c5138470aa4a4a7acec57e1
+ms.sourcegitcommit: 08c334b754bd6d64375b33d91a972a31f2f309cb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071547"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "37100438"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Activer la gestion des appareils Windows 10 associés à un domaine par Microsoft 365 Business
 
-Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 entreprise pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Vous pouvez configurer cette configuration en commençant par synchroniser Active Directory avec Azure Active Directory, puis en enregistrant les appareils Windows 10 avec Azure AD et en les inscrivant pour la gestion des appareils mobiles par Microsoft 365 entreprise.
-  
-## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>Configurer les appareils joints à un domaine pour qu’ils soient gérés par Microsoft 365 Business
+Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 entreprise pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale.
+Pour ce faire, vous pouvez implémenter des **appareils joints Azure ad hybrides**. Il s’agit des appareils qui sont joints à la fois à votre Active Directory local et à votre Azure Active Directory.
 
-Pour configurer les appareils joints à un domaine de votre organisation afin de tirer parti des fonctionnalités fournies par Azure Active Directory en plus d’Active Directory en local, vous pouvez implémenter des **appareils joints Azure ad hybrides**. Il s’agit des appareils qui sont joints à la fois à votre Active Directory local et à votre Azure Active Directory. Les appareils joints Azure AD hybrides peuvent être protégés et gérés par Microsoft 365 Business. 
+La vidéo suivante décrit les étapes à suivre pour configurer cette configuration pour le scénario le plus courant, également détaillé dans les étapes suivantes.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
-Suivez les étapes ci-dessous pour faire en sorte que les appareils Windows 10 hybrides se joignent à Azure AD et soient gérés par Microsoft 365 Business.
-  
-1. Pour synchroniser vos utilisateurs, groupes et contacts à partir d’Active Directory local avec Azure Active Directory, exécutez l’Assistant synchronisation d’annuaires et Azure Active Directory Connect comme décrit dans [set up Directory Synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
-    
-    > [!NOTE]
-    > Les étapes sont exactement les mêmes pour Microsoft 365 Business. 
-  
-2. Avant d’effectuer l’étape 3 pour permettre aux appareils Windows 10 d’être associés à Azure AD hybride, vous devez vous assurer que vous remplissez les conditions préalables suivantes:
+
+## <a name="1-prepare-for-directory-synchronization"></a>1. préparer la synchronisation d’annuaires 
+
+Avant de synchroniser vos utilisateurs et ordinateurs à partir du domaine Active Directory local, consultez la [préparation de la synchronisation d’annuaires vers Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). En particulier :
+
+   - Assurez-vous qu’il n’existe pas de doublons dans votre répertoire pour les attributs suivants : **mail**, **proxyAddresses**et **userPrincipalName**. Ces valeurs doivent être uniques et les doublons doivent être supprimés..
+   
+   - Nous vous recommandons de configurer l’attribut **userPrincipalName** (UPN) de chaque compte d’utilisateur local de sorte qu’il corresponde à l’adresse de messagerie principale correspondant à l’utilisateur Microsoft 365 sous licence. Par exemple *, Mary. Shelley<span>@ Contoso<span> . com* au lieu de *Mary @ contoso. local*
+   
+   - Si le domaine Active Directory se termine par un suffixe non routable comme *. local* ou *. LAN*, au lieu d’un suffixe routable Internet tel que *. com* ou *. org*, vous devrez d’abord ajuster le suffixe UPN des comptes d’utilisateurs locaux comme décrit dans [Préparez un domaine non routable pour la synchronisation d’annuaires](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
+
+## <a name="2-install-and-configure-azure-ad-connect"></a>2. installer et configurer Azure AD Connect
+
+Pour synchroniser vos utilisateurs, groupes et contacts à partir de l’Active Directory local avec Azure Active Directory, installez Azure Active Directory Connect et configurez la synchronisation d’annuaires. Pour plus d’informations, consultez la rubrique [configurer la synchronisation d’annuaires pour Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) .
+
+> [!NOTE]
+> Les étapes sont exactement les mêmes pour Microsoft 365 Business. 
+
+Au fur et à mesure que vous configurez vos options pour Azure AD Connect, nous vous recommandons d’activer la **synchronisation de mot de passe** et l' **authentification unique transparente**, ainsi que la fonctionnalité d' **écriture différée de mot de passe** , qui est également prise en charge dans Microsoft 365 Business.
+
+> [!NOTE]
+> Il existe quelques étapes supplémentaires pour l’écriture différée de mot de passe au-delà de la case à cocher dans Azure AD Connect. Pour plus d’informations, voir [procédure : configurer l’écriture différée de mot de passe](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
+
+## <a name="3-configure-hybrid-azure-ad-join"></a>3. configurer une jointure Azure AD hybride
+
+Avant d’autoriser les appareils Windows 10 à être associés à Azure AD hybride, vous devez veiller à respecter les conditions préalables suivantes :
 
    - Vous exécutez la dernière version d’Azure AD Connect.
 
    - Azure AD Connect a synchronisé tous les objets ordinateur des appareils que vous souhaitez associer à Azure AD. Si les objets ordinateur appartiennent à des unités d’organisation (UO) spécifiques, assurez-vous également que ces unités d’organisation sont définies pour la synchronisation dans Azure AD Connect.
+
+Pour enregistrer les appareils Windows 10 joints à un domaine en tant que membres Azure AD hybrides, suivez les étapes décrites dans le [Didacticiel : configure Hybrid Azure Active Directory Join for Managed Domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). Cela permet d’activer votre environnement Active Directory sur site existant et de le rendre prêt sur le Cloud.
     
-3. Enregistrez les appareils Windows 10 associés à un domaine pour qu’ils soient associés à Azure AD et inscrivez-les pour la gestion des appareils mobiles par Intune (Microsoft 365 Business):
-    
-4. Suivez les instructions pas à pas dans la [procédure de configuration des appareils joints Azure Active Directory hybrides](https://go.microsoft.com/fwlink/p/?linkid=872870). Cela permettra la synchronisation de votre annuaire Active Directory sur site avec des ordinateurs Windows 10 et rendez-les en nuage prêts.
-    
-5. Pour inscrire un appareil Windows 10 pour la gestion des appareils mobiles, reportez-vous à la rubrique [inscrire un appareil Windows 10 avec Intune à l’aide d’une stratégie de groupe](https://go.microsoft.com/fwlink/p/?linkid=872871) pour obtenir des instructions. Vous pouvez définir la stratégie de groupe au niveau d’un ordinateur local ou pour des opérations en bloc, vous pouvez créer ce paramètre de stratégie de groupe sur votre serveur de contrôleur de domaine.
+## <a name="4-enable-automatic-enrollment-for-windows-10"></a>4. activer l’enregistrement automatique pour Windows 10
+
+ Pour inscrire automatiquement des appareils Windows 10 pour la gestion des appareils mobiles dans Intune, reportez-vous à [la rubrique inscrire un appareil Windows 10 automatiquement à l’aide](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)de la stratégie de groupe. Vous pouvez définir la stratégie de groupe au niveau d’un ordinateur local ou pour les opérations en bloc, vous pouvez créer ce paramètre de stratégie de groupe sur votre contrôleur de domaine à l’aide de la console de gestion des stratégies de groupe et des modèles ADMX.
+
+## <a name="5-configure-seamless-single-sign-on"></a>5. configurer l’authentification unique transparente
+
+  La fonction SSO transparente signe automatiquement les utilisateurs dans leurs ressources Cloud Microsoft 365 lorsqu’elles utilisent des ordinateurs d’entreprise. Déployez simplement l’une des deux options de stratégie de groupe décrites dans [Azure Active Directory transparent Single Sign-On : Quick Start](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature). L’option de **stratégie de groupe** ne permet pas aux utilisateurs de modifier leurs paramètres, tandis que l’option de **préférence stratégie de groupe** définit les valeurs mais les laisse également modifiables par l’utilisateur.
+
+## <a name="6-set-up-windows-hello-for-business"></a>6. configurer Windows Hello entreprise
+
+ Windows Hello entreprise remplace les mots de passe par une authentification forte à deux facteurs (2FA) pour la connexion à un ordinateur local. Un facteur est une paire de clés asymétriques et l’autre est un code confidentiel ou un autre mouvement local, tel que l’empreinte digitale ou la reconnaissance faciale si votre appareil le prend en charge. Nous vous recommandons de remplacer les mots de passe par 2FA et Windows Hello entreprise dans la mesure du possible.
+
+Pour configurer Windows Hello entreprise hybride, passez en revue les [conditions préalables à la configuration requise pour l’approbation de la clé hybride Windows Hello entreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs). Ensuite, suivez les instructions de la [section configurer les paramètres d’approbation de clé Windows Hello entreprise hybride](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings). 

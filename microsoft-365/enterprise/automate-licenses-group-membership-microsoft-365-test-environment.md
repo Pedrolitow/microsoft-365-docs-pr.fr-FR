@@ -13,18 +13,18 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurez la gestion des licences basée sur un groupe et l’appartenance à un groupe dynamique dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 179284dce271c69939a560703561a32648af93b1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: cb01e1a405e7cff1f9965e34751b3ce638dd8018
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072624"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071723"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatiser les licences et l’appartenance aux groupes pour votre environnement de test Microsoft 365 Enterprise
 
 Les licences basées sur des groupes attribuent ou suppriment automatiquement des licences pour un compte d’utilisateur en fonction de l’appartenance à un groupe. L’appartenance à un groupe dynamique ajoute ou supprime des membres d’un groupe en fonction des propriétés du compte d’utilisateur, telles que service ou pays. Cet article décrit les deux dans votre environnement de test Microsoft 365 Enterprise.
 
-Il existe deux phases de configuration de la gestion des licences automatiques et de l’appartenance à un groupe dynamique dans votre environnement de test Microsoft 365 entreprise:
+Il existe deux phases de configuration de la gestion des licences automatiques et de l’appartenance à un groupe dynamique dans votre environnement de test Microsoft 365 entreprise :
 
 1. Créer l’environnement de test Microsoft 365 Entreprise.
 2. Configurez et testez l’appartenance au groupe dynamique et les licences automatiques.
@@ -34,7 +34,7 @@ Il existe deux phases de configuration de la gestion des licences automatiques e
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: créer votre environnement de test Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : créer votre environnement de test Microsoft 365 Enterprise
 
 Si vous souhaitez simplement tester les licences automatisées et l’appartenance au groupe de façon légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -43,7 +43,7 @@ Si vous souhaitez tester les licences automatisées et l’appartenance aux grou
 > [!NOTE]
 > Le test des licences automatisées et l’appartenance aux groupes ne nécessitent pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt des services de domaine Active Directory (AD DS). Elle est fournie ici en tant qu’option pour vous permettre de tester les licences automatiques et les appartenances aux groupes et de les tester dans un environnement qui représente une organisation typique. 
   
-## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Phase 2: configurer et tester l’appartenance au groupe dynamique et les licences automatiques
+## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Phase 2 : configurer et tester l’appartenance au groupe dynamique et les licences automatiques
 
 Tout d’abord, vous créez un nouveau groupe de ventes et ajoutez une règle d’appartenance au groupe dynamique de sorte que les comptes d’utilisateur dont le service est défini sur ventes soient automatiquement ajoutés au groupe ventes.
 
@@ -83,15 +83,15 @@ Ensuite, testez l’appartenance au groupe dynamique et les licences automatique
 9. Dans le champ **service** , tapez **ventes**, puis cliquez sur **Enregistrer > fermer**.
 10. Patientez quelques minutes, puis cliquez régulièrement sur l’icône Actualiser dans le coin supérieur droit du volet compte utilisateur 4. 
 
-À temps, vous devriez voir les éléments suivants:
+À temps, vous devriez voir les éléments suivants :
 
 - Propriété d' **appartenance au groupe** mise à jour avec le groupe **ventes** .
 - Propriété de **licences de produit** mise à jour avec les licences **Enterprise Mobility + Security e5** et **Office 365 entreprise E5** .
 
-Consultez ces étapes dans la phase d’identité pour obtenir des informations et des liens sur le déploiement de l’appartenance au groupe dynamique et des licences automatiques en production:
+Consultez ces étapes dans la phase d’identité pour obtenir des informations et des liens sur le déploiement de l’appartenance au groupe dynamique et des licences automatiques en production :
 
-- [Configurez la gestion des licences automatique](identity-self-service-group-management.md#identity-group-license)
-- [Configurer l’appartenance à un groupe dynamique](identity-self-service-group-management.md#identity-dyn-groups)
+- [Configurez la gestion des licences automatique](identity-use-group-management.md#identity-group-license)
+- [Configurer l’appartenance à un groupe dynamique](identity-use-group-management.md#identity-dyn-groups)
 
 ## <a name="next-step"></a>Étape suivante
 

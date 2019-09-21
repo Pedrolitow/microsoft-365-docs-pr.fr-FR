@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurez l’authentification multifacteur à l’aide de messages texte envoyés à un téléphone intelligent dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 319f8058aa4504c52cacf5f0d97982d115c41c8a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f209c3cebaefd8b4bddafb68471c35e5c37905be
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074214"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071573"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Authentification multifacteur pour votre environnement de test Microsoft 365 Enterprise
 
@@ -26,7 +26,7 @@ Pour un niveau de sécurité supplémentaire pour la connexion à Office 365 ou 
   
 Cet article explique comment activer et tester l’authentification par message texte pour un compte spécifique.
   
-Il existe deux phases de configuration de l’authentification multifacteur pour un compte dans votre environnement de test Microsoft 365 entreprise:
+Il existe deux phases de configuration de l’authentification multifacteur pour un compte dans votre environnement de test Microsoft 365 entreprise :
   
 1. Créer l’environnement de test Microsoft 365 Entreprise.
     
@@ -37,7 +37,7 @@ Il existe deux phases de configuration de l’authentification multifacteur pour
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: créer votre environnement de test Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : créer votre environnement de test Microsoft 365 Enterprise
 
 Si vous souhaitez simplement tester l’authentification multifacteur d’une façon légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -64,7 +64,7 @@ Activez l’authentification multifacteur pour le compte d’utilisateur 2 en pr
     
 7. Dans la boîte de dialogue **mises à jour réussies** , cliquez sur **Fermer**.
     
-8. Dans l’onglet **Centre d’administration Microsoft 365** , cliquez sur l’icône du compte d’utilisateur dans le coin supérieur droit, puis cliquez sur Déconnexion. ****
+8. Dans l’onglet **Centre d’administration Microsoft 365** , cliquez sur l’icône du compte d’utilisateur dans le coin supérieur droit, puis cliquez sur **déconnexion**.
     
 9. Fermez l’instance de navigateur.
    
@@ -95,7 +95,7 @@ Terminez la configuration pour que le compte d’utilisateur 2 utilise un messag
     Vous devriez voir Office Portal pour l’utilisateur 2 sur l’onglet **Accueil Microsoft Office** de votre navigateur.
 
 
-Consultez l’étape de configuration de l' [authentification multifacteur](identity-multi-factor-authentication.md#identity-mfa) dans la phase d’identité pour obtenir des informations et des liens permettant de déployer l’authentification multifacteur en production.
+Consultez l’étape de configuration de l' [authentification multifacteur](identity-secure-user-sign-ins.md#identity-mfa) dans la phase d’identité pour obtenir des informations et des liens permettant de déployer l’authentification multifacteur en production.
     
 ## <a name="next-step"></a>Étape suivante
 
