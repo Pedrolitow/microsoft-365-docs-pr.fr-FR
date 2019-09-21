@@ -13,18 +13,18 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Suivez ces étapes pour protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 7a6f99ae1123b07618dea9910a0bdd993e36ca13
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 457ac33aa2242dc4b25cd662bf233bb1599a6fec
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074144"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071553"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 Enterprise
 
 Vous pouvez empêcher les attaques numériques sur votre organisation en vous assurant que les comptes administrateurs sont aussi sécurisés que possible. Cet article explique comment utiliser les stratégies d’accès conditionnel Azure Active Directory (Azure AD) pour protéger les comptes d’administrateur général.
 
-Il existe deux phases pour la protection des comptes d’administrateur général dans votre environnement de test Microsoft 365 Enterprise:
+Il existe deux phases pour la protection des comptes d’administrateur général dans votre environnement de test Microsoft 365 Enterprise :
 
 1.  Créer l’environnement de test Microsoft 365 Entreprise.
 2.  Protégez votre compte d’administrateur général dédié.
@@ -34,7 +34,7 @@ Il existe deux phases pour la protection des comptes d’administrateur généra
 > [!TIP]
 > Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: créer votre environnement de test Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : créer votre environnement de test Microsoft 365 Enterprise
 
 Si vous souhaitez simplement tester la protection de compte d’administrateur général de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -44,7 +44,7 @@ Si vous souhaitez tester la protection des comptes d’administrateur général 
 > [!NOTE]
 > Le test de la protection de compte d’administrateur général ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour les services de domaine Active Directory (AD DS). Elle est fournie ici en tant qu’option pour vous permettre de tester la protection des comptes d’administrateur général et de l’expérimenter dans un environnement qui représente une organisation typique. 
   
-## <a name="phase-2-configure-conditional-access-policies"></a>Phase 2: configurer les stratégies d’accès conditionnel
+## <a name="phase-2-configure-conditional-access-policies"></a>Phase 2 : configurer les stratégies d’accès conditionnel
 
 Tout d’abord, créez un compte d’utilisateur en tant qu’administrateur global dédié.
 
@@ -74,26 +74,26 @@ Cette première stratégie nécessite que tous les comptes d’administrateur g�
 
 1. Dans un nouvel onglet de votre navigateur, accédez à [https://portal.azure.com](https://portal.azure.com).
 2. Cliquez sur **Azure Active Directory > accès conditionnel**.
-3. Dans le panneau **accès conditionnel – stratégies** , cliquez sur **stratégie de base: exiger MFA pour les administrateurs (aperçu)**.
+3. Dans le panneau **accès conditionnel – stratégies** , cliquez sur **stratégie de base : exiger MFA pour les administrateurs (aperçu)**.
 4. Sur les **stratégies de base...** , cliquez sur **utiliser la stratégie immédiatement > enregistrer**.
 
 Cette deuxième stratégie bloque l’accès à l’authentification de compte d’administrateur général lorsque le risque de connexion est moyen ou élevé.
 
 1. Dans le panneau **accès conditionnel – stratégies** , cliquez sur **nouvelle stratégie**.
 2. Sur la **nouvelle** Blade, tapez **administrateurs globaux** dans **nom**.
-3. Dans la **** section affectations, cliquez sur **utilisateurs et groupes**.
+3. Dans la section **affectations** , cliquez sur **utilisateurs et groupes**.
 4. Sous l’onglet **inclure** du panneau **utilisateurs et groupes** , cliquez sur **Sélectionner les utilisateurs et les groupes > utilisateurs et groupes > sélectionner**.
 5. Dans la Blade de **sélection** , cliquez sur l' **GlobalAdmins > sélectionnez > terminée**.
-6. Dans la **** section affectations, cliquez sur **conditions**.
+6. Dans la section **affectations** , cliquez sur **conditions**.
 7. Dans le volet **conditions** , cliquez sur **risque de connexion**, cliquez sur **Oui** pour **configurer**, **sur haute** et **moyenne**, puis sur **sélection** et **fin**.
 8. Dans la section **contrôles d’accès** de la **nouvelle** Blade, cliquez sur **accorder**.
 9. Dans le panneau **accorder** , cliquez sur **bloquer l’accès**, puis sur **Sélectionner**.
-10. Sur la **nouvelle** Blade, cliquez **** sur **activer pour activer la stratégie**, puis cliquez sur **créer**.
+10. Sur la **nouvelle** Blade, cliquez **sur** activer pour **activer la stratégie**, puis cliquez sur **créer**.
 11. Fermez les onglets **portail Azure** et **Centre d’administration Microsoft 365** .
 
 Pour tester la première stratégie, déconnectez-vous, puis connectez-vous avec le compte DedicatedAdmin. Vous devez être invité à configurer l’authentification multifacteur sur le compte d’utilisateur. Cela démontre que la première stratégie est appliquée.
 
-Consultez l’étape [protéger les comptes administrateur général](identity-designate-protect-admin-accounts.md#identity-global-admin) dans la phase d’identité pour obtenir des informations et des liens afin de protéger vos comptes d’administrateur général en production.
+Consultez l’étape [protéger les comptes administrateur général](identity-create-protect-global-admins.md#identity-global-admin) dans la phase d’identité pour obtenir des informations et des liens afin de protéger vos comptes d’administrateur général en production.
 
 ## <a name="next-step"></a>Étape suivante
 
