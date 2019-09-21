@@ -3,7 +3,7 @@ title: Déployer Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982068"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050275"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
@@ -39,7 +39,7 @@ Il existe trois méthodes principales pour déployer Microsoft 365 Entreprise :
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack pour Microsoft 365
 
-FastTrack est un avantage continu et renouvelable, disponible dans le cadre de votre abonnement, qui est remis par les ingénieurs Microsoft pour vous aider à migrer vers le cloud à votre rythme. FastTrack permet également d’accéder à des partenaires qualifiés pour des services supplémentaires. Avec plus de 40 000 clients activés à ce jour, FastTrack vous aide à optimiser votre retour sur investissement, accélérer le déploiement et augmenter l’adoption au sein de votre organisation. Voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+FastTrack est un avantage continu et renouvelable (*disponible gratuitement dans le cadre de votre abonnement*) qui est remis par les ingénieurs Microsoft pour vous aider à migrer vers le cloud à votre rythme. FastTrack permet également d’accéder à des partenaires qualifiés pour des services supplémentaires. Avec plus de 40 000 clients activés à ce jour, FastTrack vous aide à optimiser votre retour sur investissement, accélérer le déploiement et augmenter l’adoption au sein de votre organisation. Voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
 Si vous souhaitez tirer parti de FastTrack pour déployer Microsoft 365 Entreprise, vous pouvez utiliser le [conseiller de déploiement de Microsoft 365](https://aka.ms/microsoft365setupguide) FastTrack pour obtenir des instructions sur la façon de déployer et configurer votre infrastructure de base. Pour accéder à cette page, vous devez être connecté en tant qu’administrateur général dans un client Office 365 ou Microsoft 365.
 
@@ -77,9 +77,9 @@ Commencer votre route de déploiement de bout à bout [ici](deploy-foundation-in
 
 Si vous êtes nouveau avec Microsoft 365 Entreprise ou à un produit spécifique ou une fonctionnalité, une des meilleures méthodes pour comprendre le fonctionnement consiste à le faire vous-même et voir comment cela fonctionne.
 
-Nous vous avons facilité la tâche grâce aux Guides de laboratoire de Test (TLGs), qui vous guideront tout au long de la configuration d’une fonctionnalité dans un environnement simplifié mais représentatif utilisant des abonnements d’évaluation ou payants ou d’infrastructure.
+Nous vous avons facilité la tâche grâce aux Guides de laboratoire de Test (TLGs), qui vous guideront tout au long de la configuration d’une fonctionnalité dans un environnement de test simplifié mais représentatif utilisant des abonnements d’évaluation ou payants.
 
-Avec les guides de laboratoire de test, vous pouvez apprendre, personnaliser ou créer une preuve de concept d’une charge de travail, d’un scénario de bout en bout ou d’une configuration complexe.
+Avec les guides de laboratoire de test, vous pouvez apprendre, personnaliser ou créer une preuve de concept (PoC) d’une charge de travail, d’un scénario de bout en bout ou d’une configuration complexe.
 
 Pour plus d’informations, consultez les [guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md).
 
@@ -87,13 +87,13 @@ Pour plus d’informations, consultez les [guides de laboratoire de test Microso
 
 ## <a name="transition-your-entire-organization"></a>Migration de l’ensemble de votre organisation
 
-Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, consultez [Transition de votre organisation vers Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, consultez l’affiche [Transition de votre organisation vers Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Affiche Transition de votre organisation vers Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 Entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
 
-Vous pouvez [télécharger cette affiche de transition](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez également [télécharger cette affiche de transition](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="how-did-others-do-it"></a>Comment d’autres ont-ils procédé ?
 

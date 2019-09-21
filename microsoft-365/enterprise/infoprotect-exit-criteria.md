@@ -3,7 +3,7 @@ title: Critères de sortie de l’infrastructure de protection des informations
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Examinez les critères de l’infrastructure et des services de protection des informations pour vérifier que votre configuration remplit les conditions requises de Microsoft 365 Entreprise.
-ms.openlocfilehash: 267a6efaef5a5bcfb0ec9f8e0e9f33d525f5ce74
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071944"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047237"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Critères de sortie de l’infrastructure de protection des informations
 
@@ -88,16 +88,30 @@ Votre personnel chargé de la conformité et de la sécurité des données utili
 
 Si nécessaire, l’[Étape 5](infoprotect-data-loss-prevention.md) peut vous aider à respecter cette exigence. 
 
-
 <a name="crit-infoprotect-step6"></a>
+## <a name="optional-email-encryption-is-configured"></a>Facultatif : le chiffrement de courrier est configuré
+
+Vous avez configuré le chiffrement de courrier suivant en fonction des besoins de votre organisation :
+
+|||
+|:-------|:-----|
+| **Méthode de chiffrement** | **Pour les messages envoyés** |
+| [Chiffrement de messages Office 365 (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Hors de votre organisation avec chiffrement |
+| [Gestion des droits relatifs à l’information (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | Avec autorisations et chiffrement |
+| [S/MIME (Secure/Multipurpose Internet Mail Extension)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Avec chiffrement et signatures numériques à l’aide du chiffrement à clé publique |
+|||
+
+Si nécessaire, l’[Étape 6](infoprotect-email-encryption.md) peut vous aider à respecter cette exigence.
+
+<a name="crit-infoprotect-step7"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>Facultatif : configurer la gestion des accès privilégiés pour Office 365
 
 Vous avez utilisé les informations de la rubrique [Configurer la gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) pour activer l’accès privilégié et créer une ou plusieurs stratégies d’accès privilégié au sein de votre organisation. Vous avez configuré ces stratégies et l’accès juste-à-temps est activé pour l’accès aux données sensibles ou aux paramètres de configuration critiques.
 
-Si nécessaire, l’[Étape 6](infoprotect-configure-privileged-access-management.md) peut vous aider à respecter cette exigence. 
+Si nécessaire, l’[Étape 7](infoprotect-configure-privileged-access-management.md) peut vous aider à respecter cette exigence. 
 
 ## <a name="results-and-next-steps"></a>Résultats et étapes suivantes
 
-Votre infrastructure de protection des informations pour Microsoft 365 Entreprise utilise des niveaux de sécurité définis, une sécurité renforcée pour Office 365, une classification à l’aide d’étiquettes et de types de données sensibles, la Protection des informations Windows ainsi qu’une gestion des accès privilégiés.
+Votre infrastructure de protection des informations pour Microsoft 365 Entreprise utilise des niveaux de sécurité définis, une sécurité renforcée pour Office 365, une classification à l’aide d’étiquettes et de types de données sensibles, la Protection des informations Windows, la protection contre la perte de données, le chiffrement de courrier ainsi qu’une gestion des accès privilégiés.
 
 Si vous suivez le déploiement de bout en bout de Microsoft 365 Entreprise, vous êtes maintenant prêt à tirer parti de l’ensemble des fonctionnalités et de la configuration de votre infrastructure de base pour vos [charges de travail et scénarios](deploy-workloads.md).

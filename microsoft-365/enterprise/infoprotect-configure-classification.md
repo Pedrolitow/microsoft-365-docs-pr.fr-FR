@@ -3,7 +3,7 @@ title: 'Étape 2 : Configurer la classification pour votre environnement'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez différentes méthodes pour classer les données de votre organisation.
-ms.openlocfilehash: 483549e7eaa7f6b77b775cf35bda7b0f42834ad2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072254"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047297"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Étape 2 : Configurer la classification pour votre environnement
 
@@ -63,9 +63,8 @@ Pour plus d’informations, voir[Vue d’ensemble des étiquettes de rétention]
 Une partie de protection et implémentation de sécurité pour des types de documents ou des documents avec contenu spécifique consiste en les marquer d’une étiquette de sorte que la sécurité supplémentaire puisse être appliquée. Avec des étiquettes de niveau de confidentialité dans Microsoft 365, vous pouvez :
 
 - Appliquer des paramètres de protection comme le chiffrement, autorisations ou ajouter un filigrane.
-- Empêcher les contenus sensibles de sortir de votre organisation sur les appareils exécutant Windows, à l’aide de la protection de point de terminaison dans Microsoft Intune. 
 - Utiliser la protection de point de terminaison Protection des Informations Windows (WIP) permet d’empêcher que le contenu soit copié à une application tierce, par exemple, Twitter ou Gmail, ou copié sur un stockage amovible, par exemple, un lecteur USB.
-- Utiliser Microsoft Cloud App Security pour protéger le contenu dans les services tiers et les applications tierces. 
+- Utiliser Microsoft Cloud App Security (CAS) pour protéger le contenu dans les services tiers et les applications tierces. 
 - Classifier du contenu sans utiliser les paramètres de protection.
 
 Si vous utilisez des étiquettes de niveau de confidentialité, vous devez configurer une étiquette pour chaque niveau de protection d’information et de sécurité. Par exemple, créer trois étiquettes sensibilité pour :
@@ -73,6 +72,8 @@ Si vous utilisez des étiquettes de niveau de confidentialité, vous devez confi
 - Baseline
 - Sensible
 - Hautement réglementé
+
+Si vous stockez des fichiers contenant des données hautement réglementées dans un site SharePoint Online et que vous voulez que ces fichiers aient les mêmes autorisations que celles du site si les fichiers quittent le site, vous devez créer une étiquette de confidentialité supplémentaire dont les autorisations sont identiques à celles du site.
 
 Pour plus d’informations, voir[Vue d’ensemble des étiquettes de sensibilité](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
 
