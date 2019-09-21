@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: ce5ccb1961fe1751604b32bb5b37595b0884b395
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431775"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071483"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées par les données Azure DevOps Services pour le RGPD
 
@@ -43,7 +43,7 @@ La première chose à faire pour supprimer des données client Azure DevOps Se
 
 Les contrôleurs des données peuvent exporter les données client et les journaux générés par le système collectés auprès des personnes concernées via l’une de deux méthodes, selon le fournisseur d’identité (MSA ou AAD) utilisé pour la connexion au service Azure DevOps.
 
-- Les utilisateurs qui s’authentifient à l’aide d’un compte lié à un client Azure, par exemple, un compte AAD ou un compte de service Microsoft associé à un abonnement Azure, peuvent suivre les instructions indiquées dans [Demandes des personnes associées aux données pour Azure concernant le RGPD](../compliance/gdpr-dsr-azure.md).
+- Les utilisateurs qui s’authentifient à l’aide d’un compte lié à un client Azure, par exemple, un compte AAD ou un compte de service Microsoft associé à un abonnement Azure, peuvent suivre les instructions indiquées dans [Demandes des personnes associées aux données pour Azure concernant le RGPD](gdpr-dsr-azure.md).
 
 - Les utilisateurs qui s’authentifient à l’aide d’une identité MSA peuvent utiliser ce [site de gestion des demandes relatives aux données confidentielles](https://www.microsoft.com/concern/privacyrequest-msa) pour connaître les données d’activité liées à leur identité MSA pour plusieurs services Microsoft. Dans ce cas de figure, l’utilisateur est un contrôleur de ses propres données personnelles.
 
