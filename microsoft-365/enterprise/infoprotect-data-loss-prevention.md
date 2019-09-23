@@ -3,7 +3,7 @@ title: 'Étape 5 : configurer la prévention des pertes de données Office 365'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre et déployer Prévention des pertes de données Office 365 dans Microsoft 365.
-ms.openlocfilehash: f6b9291a2965552837f989c98b32674f6093b383
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: dbe88885812e51b0daefa89dae123af5907c60a8
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073557"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047247"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>Étape 5 : configurer la prévention des pertes de données Office 365
 
@@ -56,9 +56,8 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](inf
 
 ## <a name="next-step"></a>Étape suivante
 
-
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)|[Configurez la gestion des accès privilégiés pour Office 365](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step6.png)|[Configurer le chiffrement des e-mails](infoprotect-email-encryption.md)|
 
 
