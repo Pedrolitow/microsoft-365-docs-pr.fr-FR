@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre et configurer la gouvernance des identités pour votre client Azure AD.
-ms.openlocfilehash: a965b74afc680c2ff506e0fc2ddebc280ee312a1
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 1c0eab574e5436dd0c88a0b46d1916281bcf0577
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982907"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047357"
 ---
 # <a name="step-7-configure-identity-governance"></a>Étape 7 : Configurer la gouvernance des identités
 
