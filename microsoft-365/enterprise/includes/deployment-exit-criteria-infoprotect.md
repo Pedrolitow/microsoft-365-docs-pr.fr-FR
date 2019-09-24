@@ -60,10 +60,24 @@ Votre personnel chargé de la conformité et de la sécurité des données utili
 
 Si nécessaire, l’[Étape 5](../infoprotect-data-loss-prevention.md) peut vous aider à respecter cette exigence. 
 
-
 <a name="crit-infoprotect-step6"></a>
+### <a name="optional-email-encryption-is-configured"></a>Facultatif : le chiffrement d’e-mail est configuré
+
+Vous avez configuré le chiffrement d’e-mail suivant en fonction des besoins de votre organisation :
+
+|||
+|:-------|:-----|
+| **Méthode de chiffrement** | **Pour les e-mails envoyés** |
+| [Chiffrement de messages Office 365 (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Hors de votre organisation avec chiffrement |
+| [Gestion des droits relatifs à l’information (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | Avec autorisations et chiffrement |
+| [S/MIME (Secure/Multipurpose Internet Mail Extension)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Avec chiffrement et signatures numériques à l’aide du chiffrement à clé publique |
+|||
+
+Si nécessaire, l’[étape 6](../infoprotect-email-encryption.md) peut vous aider à respecter cette exigence.
+
+<a name="crit-infoprotect-step7"></a>
 ### <a name="optional-configure-privileged-access-management-in-office-365"></a>Facultatif : configurer la gestion des accès privilégiés pour Office 365
 
 Vous avez utilisé les informations de la rubrique [Configurer la gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) pour activer l’accès privilégié et créer une ou plusieurs stratégies d’accès privilégié au sein de votre organisation. Vous avez configuré ces stratégies et l’accès juste-à-temps est activé pour l’accès aux données sensibles ou aux paramètres de configuration critiques.
 
-Si nécessaire, l’[Étape 6](../infoprotect-configure-privileged-access-management.md) peut vous aider à respecter cette exigence. 
+Si nécessaire, l’[étape 7](../infoprotect-configure-privileged-access-management.md) peut vous aider à répondre à cette exigence. 
