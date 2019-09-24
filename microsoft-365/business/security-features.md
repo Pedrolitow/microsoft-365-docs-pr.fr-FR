@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité fournies avec Microsoft 365 Business.
-ms.openlocfilehash: bd61ad3bf1b34635a7b80f1c9ccf63fa98d31915
-ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
+ms.openlocfilehash: 6b8fc215b95913e1beef3a3715119b947a7af406
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017519"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121155"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business
 
@@ -32,9 +32,9 @@ Microsoft 365 Business propose des fonctionnalités de sécurité simplifiées p
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Fonctionnalités de sécurité du centre d’administration de Microsoft 365
 
-![Bannière pointant vers https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Étiquette pour vous informer le centre d’administration change et vous trouverez plus de détails sur aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise Microsoft 365 dans le centre d’administration, ce qui vous offre un moyen simple d’activer ou de désactiver ces fonctionnalités. Dans le centre d’administration, vous pouvez effectuer les opérations suivantes:
+Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise Microsoft 365 dans le centre d’administration, ce qui vous offre un moyen simple d’activer ou de désactiver ces fonctionnalités. Dans le centre d’administration, vous pouvez effectuer les opérations suivantes :
   
   
 - [Définir les paramètres de gestion des applications pour les appareils Android ou iOS](app-protection-settings-for-android-and-ios.md) . 
@@ -76,7 +76,7 @@ Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour v
 
     L’accès conditionnel peut protéger votre organisation contre les risques de connexion, les tentatives d’accès à partir d’un réseau ou d’un paramètre régional inattendus, les tentatives d’accès aux types d’appareils à risque, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée, et les signaux de l’événement First Authentication sont utilisés pour déterminer si l’accès tenté doit être approuvé, refusé ou si une preuve plus marquée (par exemple une seconde forme d’identification) est Obligatoire.
 
-    Les fonctionnalités d’accès conditionnel sont les suivantes:
+    Les fonctionnalités d’accès conditionnel sont les suivantes :
 
     - Accès basé sur le nom d’utilisateur, le groupe et le rôle
     - Accès [basé sur une application](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 
@@ -87,7 +87,7 @@ Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour v
     - Authentification personnalisée, telle que l’authentification multifacteur (MFA) avec des fournisseurs tiers, par exemple DUO.
    
     Autres fonctionnalités :
-    - Réinitialisation du [mot de passe en libre-service](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) pour Azure ad hybride
+    - [Réinitialisation du mot de passe en libre-service](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) pour Azure ad hybride
     
 ## <a name="compliance-features"></a>Fonctionnalités de conformité
 
@@ -103,18 +103,18 @@ Votre abonnement professionnel Microsoft 365 inclut des fonctionnalités qui vou
     
 - **[Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
     
-    La protection des informations vous permet de contrôler l’accès aux informations sensibles dans les e-mails et les documents avec des contrôles tels que «ne pas transférer» et «ne pas copier». Vous pouvez également classer les informations sensibles comme «confidentielles» et spécifier le mode de partage des informations confidentielles à l’extérieur et à l’intérieur de l’entreprise. Le chiffrement au niveau de l’entreprise est facile à appliquer aux e-mails et aux documents afin de garantir la confidentialité de vos informations. Microsoft 365 Business inclut toutes les fonctionnalités d' [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Vous pouvez également installer le complément client Azure information protection pour les applications Office. Pour plus d’informations, reportez-vous au Guide de l' [administrateur client Azure information protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+    La protection des informations vous permet de contrôler l’accès aux informations sensibles dans les e-mails et les documents avec des contrôles tels que « ne pas transférer » et « ne pas copier ». Vous pouvez également classer les informations sensibles comme « confidentielles » et spécifier le mode de partage des informations confidentielles à l’extérieur et à l’intérieur de l’entreprise. Le chiffrement au niveau de l’entreprise est facile à appliquer aux e-mails et aux documents afin de garantir la confidentialité de vos informations. Microsoft 365 Business inclut toutes les fonctionnalités d' [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Vous pouvez également installer le complément client Azure information protection pour les applications Office. Pour plus d’informations, reportez-vous au Guide de l' [administrateur client Azure information protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
 
 Vous pouvez gérer ces fonctionnalités dans le centre &amp; d’administration et de sécurité et dans le centre d’administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration de Microsoft 365 Business.
   
     
 ## <a name="faq"></a>FAQ
 
- ### <a name="are-these-security-features-available-in-all-markets"></a>Ces fonctionnalités de sécurité sont-elles disponibles sur tous les marchés?
+ ### <a name="are-these-security-features-available-in-all-markets"></a>Ces fonctionnalités de sécurité sont-elles disponibles sur tous les marchés ?
   
 Oui, ces fonctionnalités sont disponibles sur tous les marchés où Microsoft 365 entreprise est vendu.
   
-### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Comment puis-je trouver le &amp; Centre de sécurité conformité?
+### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Comment puis-je trouver le &amp; Centre de sécurité conformité ?
   
 1. [Connectez-vous à Microsoft 365 Business](https://portal.microsoft.com/) à l’aide de vos informations d’identification d’administrateur. 
     
