@@ -3,7 +3,7 @@ title: Stratégies de déploiement de l’infrastructure de base de Microsoft 3
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 01/23/2019
+ms.date: 09/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment vous pouvez déployer les phases de l’infrastructure de base de Microsoft 365 Entreprise.
-ms.openlocfilehash: 2c30420390be97d33f66888eac533b89c907b3b2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: d71c46867e27252db90e55f304baa29e4bca4076
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073884"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148498"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Stratégies de déploiement de l’infrastructure de base de Microsoft 365 Entreprise
 
@@ -84,22 +84,22 @@ Pour simplifier notre exposé, nous partons du principe que les phases et les se
 >La Phase 1 : Mise en réseau de l’infrastructure de base de Microsoft 365 Entreprise concerne uniquement le département informatique. Les utilisateurs profitent des avantages d’une meilleure connexion aux ressources cloud de Microsoft, mais ils ne sont pas obligés de la réaliser.
 >
 
-Exemple simplifié d’une expérience utilisateur pilote :
+Voici une expérience utilisateur pilote simplifiée à titre d’exemple :
 
 - En décembre, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En mars, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
 - En juin, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
-- En septembre, il faut réaliser l’inscription des appareils. Les stratégies d’accès conditionnel et des applications entrent en vigueur. (Gestion des périphériques mobiles)
+- En septembre, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des périphériques mobiles)
 - En décembre, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
 Conclusion : vos lancements pilotes successifs sont espacés de 90 jours.
 
-Exemple simplifié de l’expérience de l’utilisateur final :
+Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 
 - En janvier, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En avril, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
 - En juillet, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
-- En octobre, il faut réaliser l’inscription des appareils. Les stratégies d’accès conditionnel et des applications entrent en vigueur. (Gestion des périphériques mobiles)
+- En octobre, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des périphériques mobiles)
 - En janvier de l’année suivante, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
 Conclusion : vos lancements utilisateurs successifs sont espacés de 90 jours.
@@ -110,28 +110,26 @@ L’inconvénient de cette stratégie de déploiement est que le déploiement de
 
 Avec cette stratégie de déploiement, le lancement pilote de la phase d’après a lieu quand le lancement utilisateur de la phase en cours se termine. Vous trouverez dans le graphique ci-dessous le déroulé des phases 2 à 6.
 
-La durée des stratégies de déploiement en série et parallèle est également comparée.
-
 ![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 Résultat : le lancement utilisateur pour la phase en cours se termine dans l’ensemble de votre organisation avant que la phase suivante commence. Les utilisateurs qui ne sont pas concernés par les lancements pilotes n’ont pas affaire aux lancement de plusieurs phases en même temps, mais vos lancements pilotes se terminent en parallèle des lancements utilisateurs.
 
-Exemple simplifié d’une expérience utilisateur pilote : 
+Voici une expérience utilisateur pilote simplifiée à titre d’exemple :
 
 - En décembre, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En février, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
 - En avril, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
-- En juin, il faut réaliser l’inscription des appareils. Les stratégies d’accès conditionnel et des applications entrent en vigueur. (Gestion des périphériques mobiles)
+- En juin, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En août, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
 Conclusion : vos lancements pilotes successifs sont espacés de 60 jours.
 
-Exemple simplifié de l’expérience de l’utilisateur final :
+Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 
 - En janvier, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En mars, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
 - En mai, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
-- En juillet, il faut réaliser l’inscription des appareils. Les stratégies d’accès conditionnel et des applications entrent en vigueur. (Gestion des périphériques mobiles)
+- En juillet, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En septembre, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
 Conclusion : vos lancements utilisateurs successifs sont espacés de 60 jours.
@@ -143,7 +141,7 @@ L’avantage de cette stratégie est que le déploiement intégral de l’infras
 Avec cette stratégie de déploiement :
 
 - le lancement pilote de la phase suivante commence quand le lancement utilisateur de la phase en cours se termine ;
-- le lancement utilisateur de la phase suivante commence pendant le lancement utilisateur de la phase en cours. Ainsi, aucun utilisateur n’a affaire au lancement de plusieurs phases en même temps. Cela suppose aussi que vous lancez chaque phase de l’infrastructure de base de la même façon, par régions, départements ou autre.
+- Déploiement des utilisateurs de la phase suivante pendant le déploiement des utilisateurs de la phase actuelle de sorte qu’aucun utilisateur ne fait face aux déploiements de plusieurs phases en même temps. Cela part du principe que vous déployez chaque phase de l’infrastructure de base de la même manière, à l’aide de régions, services ou autres groupements.
 
 Voici une comparaison simplifiée des stratégies de déploiement.
 
@@ -154,27 +152,27 @@ Résultat :
 - Les lancements pilotes passent d’une phase à l’autre sans interruption.
 - Le lancement utilisateur d’une phase commence avant la fin du lancement utilisateur de la phase précédente, mais aucun utilisateur ne déploie plusieurs phases à la fois.
 
-Exemple simplifié d’une expérience utilisateur pilote : 
+Voici une expérience utilisateur pilote simplifiée à titre d’exemple :
 
 - En décembre, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En janvier, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
 - En février, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
-- En mars, il faut réaliser l’inscription des appareils. Les stratégies d’accès conditionnel et des applications entrent en vigueur. (Gestion des périphériques mobiles)
+- En mars, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En avril, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
 Conclusion : vos lancements pilotes successifs sont espacés de 30 jours.
 
-Exemple simplifié de l’expérience de l’utilisateur final :
+Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 
 - En janvier, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En février, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
 - En mars, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
-- En avril, il faut réaliser l’inscription des appareils. Les stratégies d’accès conditionnel et des applications entrent en vigueur. (Gestion des périphériques mobiles)
+- En avril, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En mai, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
 Conclusion : vos lancements utilisateurs successifs sont espacés de 30 jours.
 
-L’avantage de cette stratégie est que le déploiement intégral de l’infrastructure de base de Microsoft 365 Entreprise prend encore moins de temps. De plus, les utilisateurs n’ont pas affaire à plusieurs lancements en même temps. Par contre, les utilisateurs ne bénéficient d’aucune pause entre les phases successives.
+L’avantage de cette stratégie est que le déploiement intégral de l’infrastructure de base de Microsoft 365 Entreprise prend encore moins de temps. De plus, les utilisateurs finaux n’ont pas affaire à plusieurs déploiements simultanés. Toutefois, les utilisateurs ne prennent pas de pause entre les phases successives.
 
 ### <a name="up-front-infrastructure-and-rollout-of-end-to-end-configuration"></a>Infrastructure initiale et lancement de la configuration de bout en bout
 
@@ -187,7 +185,7 @@ Le département informatique configure l’infrastructure pour les phases 2 à�
 - Authentification multifacteur et autres fonctionnalités d’identité (Identity)
 - Windows 10 Entreprise sur les appareils Windows (Windows 10 Entreprise)
 - Office 365 ProPlus pour la suite Office (Office 365 ProPlus)
-- Stratégies d’accès conditionnel et des applications (Gestion des périphériques mobiles)
+- Stratégies des applications et des appareils (Gestion des appareils mobiles)
 - Client Azure Information Protection installé et formation pour savoir appliquer des étiquettes aux documents (Information Protection)
 
 Une fois le lancement pilote terminé, le lancement utilisateur commence et fournit à chaque utilisateur toutes les fonctionnalités simultanément.
