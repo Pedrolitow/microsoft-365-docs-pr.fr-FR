@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: f6239c9378b540dd1e3b512711a7184dc4f45774
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d732303db1c2b138349a88fde45bd2aefb745c89
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080167"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148518"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -38,13 +38,13 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 - **Protéger le contenu dans les services tiers et les applications tierces** à l’aide de Microsoft Cloud App Security. Avec Cloud App Security (CAS), vous pouvez détecter, classer, étiqueter et protéger le contenu dans les services tiers et applications tierces, comme SalesForce, Box ou Dropbox, même si l’application tierce ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de niveau de confidentialité.
 
-- **Étendre les étiquettes de niveau de confidentialité à des applications et services tiers.** Avec le kit de développement logiciel (SDK) Microsoft Information Protection, les applications tierces sur Windows, Mac et Linux peuvent lire les étiquettes de niveau de confidentialité et appliquer les paramètres de protection. La prise en charge pour les applications sur iOS et Android sera bientôt disponible.
+- **Étendre les étiquettes de confidentialité à des applications et services tiers.** Avec le kit de développement logiciel (SDK) Microsoft Information Protection, les applications tierces sur [ces plateformes](https://docs.microsoft.com/fr-FR/information-protection/develop/overview#microsoft-information-protection-sdk) peuvent lire les étiquettes de confidentialité et appliquer les paramètres de protection.
 
 - **Classer le contenu sans utiliser les paramètres de protection.** Vous pouvez également affecter une classification au contenu (par exemple, un autocollant) qui continue de s’afficher en itinérance au fur et à mesure qu’il est utilisé et partagé. Vous pouvez utiliser cette classification pour générer des rapports d’utilisation et consulter les données d’activité liées au contenu sensible. En fonction de ces informations, vous pouvez toujours choisir ultérieurement d’appliquer les paramètres de protection.
     
 Dans tous ces cas, les étiquettes de niveau de confidentialité dans Office 365 vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de niveau de confidentialité, vous pouvez classer les données au sein de votre organisation et appliquer des paramètres de protection en fonction de cette classification.
   
-Pour créer des étiquettes de sensibilité, vous devez accéder au Centre de conformité Microsoft 365, au Centre de sécurité Microsoft 365 ou au Centre de sécurité et conformité Office 365 sous **Classification** > **Étiquettes de sensibilité**. Ces étiquettes peuvent être utilisées par Azure Information Protection, les applications Office et les services Office 365.
+Créez des étiquettes de sensibilité dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365 sous **Classification** > **Étiquettes de sensibilité**. Ces étiquettes de confidentialité peuvent être utilisées par Azure Information Protection, les applications Office et les services 365 d’Office.
 
 Si vous êtes client d’Azure Information Protection, vous pouvez utiliser vos étiquettes Azure Information Protection dans les autres centres d’administration. Celles-ci seront synchronisées avec le portail Azure si vous choisissez d’effectuer une configuration supplémentaire ou avancée. **Les étiquettes Azure Information Protection et les étiquettes de sensibilité Office 365 sont entièrement compatibles entre elles.** Cela signifie, par exemple, que si vous avez du contenu étiqueté par Azure Information Protection, vous n’avez pas besoin de reclassifier ou de ré-étiqueter votre contenu.
 
@@ -68,7 +68,7 @@ Une seule étiquette de niveau de confidentialité peut être affectée à chaqu
 
 Une fois qu’une étiquette de niveau de confidentialité est appliquée à un e-mail ou un document, les paramètres de protection relatifs à cette étiquette sont appliqués au contenu. Avec une étiquette de niveau de confidentialité, vous pouvez effectuer les actions suivantes :
 
-- **Chiffrer** des e-mails uniquement, ou des e-mails et des documents. Vous pouvez déterminer quels utilisateurs ou groupes sont autorisés à effectuer telle ou telle action, et pendant combien de temps. Par exemple, vous pouvez choisir d’autoriser les utilisateurs dans un domaine spécifique en dehors de votre organisation à passer en revue le contenu pendant 7 jours uniquement une fois que le contenu est étiqueté. Alternativement, au lieu d'attribuer les autorisations vous-même, vous pouvez permettre à vos utilisateurs d'attribuer des autorisations au contenu lorsqu'ils l’étiquettent. Pour plus d’informations, reportez-vous à l’article [Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité](encryption-sensitivity-labels.md).
+- **Chiffrer** les e-mails uniquement ou les e-mails et les documents. Vous pouvez choisir les utilisateurs ou le groupe autorisés à effectuer telle ou telle action et la durée de l’autorisation. Par exemple, vous pouvez choisir d’autoriser les utilisateurs d’un domaine spécifique extérieur à votre organisation à passer en revue le contenu pendant 7 jours seulement après l’étiquetage du contenu. Par ailleurs, au lieu d’attribuer des autorisations vous-même, vous pouvez autoriser vos utilisateurs à attribuer des autorisations au contenu lorsqu’ils appliquent l’étiquette. Pour plus d’informations, [Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité](encryption-sensitivity-labels.md).
 
 - **Marquer le contenu** en ajoutant des en-têtes, des pieds de page ou des filigranes personnalisés à des e-mails ou à des documents auxquels l’étiquette a été appliquée. Notez que les filigranes sont appliqués uniquement aux documents, et non aux e-mails, et qu’ils sont limités à 255 caractères. Quant aux en-têtes et aux pieds de page, ils sont limités à 1 024 caractères (sauf dans Excel, où ils sont limités à 255 caractères, en fonction de la présence d’autres en-têtes ou pieds de page dans le document ainsi que d’autres facteurs).
 
@@ -259,7 +259,7 @@ Avant que vos étiquettes de niveau de confidentialité puissent utiliser CAS, v
 
 Étant donné qu’une étiquette de niveau de confidentialité est conservée sous forme de texte en clair dans les métadonnées d’un document, les services tiers et applications tierces peuvent choisir de prendre en charge l’identification et la protection du contenu comprenant une étiquette de ce type. La prise en charge dans les autres applications et services est toujours en développement.
 
-Avec le [kit de développement logiciel (SDK) Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/), les applications et services tiers peuvent lire et appliquer des étiquettes de niveau de confidentialité ou une certaine protection sur les documents. Le SDK prend en charge les applications sur Windows, Mac et Linux. La prise en charge pour les applications sur iOS et Android sera bientôt disponible.
+Le [Kit de développement logiciel (SDK) Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/) permet aux applications et services tiers de lire et d’appliquer des étiquettes de sensibilité et une protection au documents. Le kit SDK prend en charge les applications sur [ces plateformes](https://docs.microsoft.com/fr-FR/information-protection/develop/overview#microsoft-information-protection-sdk).
 
 À l’aide du SDK, vous pouvez étiqueter et protéger le contenu d’une manière qui fonctionne avec les autres services et applications Microsoft Information Protection, comme les applications Office, les services Office 365, le scanneur Azure Information Protection, Microsoft Cloud App Security et plusieurs autres solutions de partenaire. Par exemple, informez-vous sur la [prise en charge des étiquettes de niveau de confidentialité dans Adobe Acrobat](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738).
 
