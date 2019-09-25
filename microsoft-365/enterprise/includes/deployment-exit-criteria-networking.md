@@ -1,16 +1,16 @@
 <a name="crit-networking-step1"></a>
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatoire : votre réseau est prêt pour Microsoft 365 Entreprise
 
-- Vos bureaux disposent d’une bande passante Internet adéquate pour le trafic Microsoft 365, y compris pour l’installation et les mises à jour d’Office 365, de Microsoft Intune et de Windows 10 Entreprise
-- Votre réseau global est conforme à l’architecture de référence Office 365
-- Les modifications de votre réseau ont été testées et répondent aux exigences en matière de latence du trafic
+- Vos bureaux disposent d’une bande passante Internet adéquate pour le trafic Microsoft 365, y compris pour l’installation et les mises à jour d’Office 365, de Microsoft Intune et de Windows 10 Entreprise.
+- Votre réseau global est conforme à une [architecture de référence Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Les modifications de votre réseau ont été testées et répondent aux exigences en matière de latence du trafic.
 
 Si nécessaire, l’[Étape 1](../networking-provide-bandwidth-cloud-services.md) peut vous aider à répondre à cette exigence.
 
 <a name="crit-networking-step2"></a>
 ### <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Obligatoire : vos bureaux locaux ont une résolution de noms et des connexions Internet locales
 
-Vous avez configuré chaque bureau local avec un accès Internet via un fournisseur de services Internet local dont des serveurs DNS utilisent une adresse IP publique locale qui identifie leur emplacement sur Internet. Ainsi, les meilleures performances possibles pour les utilisateurs qui accèdent à Office 365 et Intune sont garanties.
+Vous avez configuré chaque bureau local avec un accès Internet via un fournisseur de services Internet local dont des serveurs DNS utilisent une adresse IP publique locale qui identifie leur emplacement sur Internet. Ainsi, les meilleures performances possibles pour les utilisateurs qui accèdent aux services cloud de Microsoft 365 et Intune sont garanties.
 
 Si vous n’utilisez pas de fournisseur de services Internet local pour chaque filiale, les performances peuvent en pâtir car le trafic réseau doit parcourir la structure fondamentale d’une organisation ou des requêtes de données sont prises en charge par des serveurs frontaux à distance.
 
@@ -20,7 +20,7 @@ Utilisez un outil ou site web sur un appareil dans ce bureau pour déterminer l�
 Si nécessaire, l’[Étape 2](../networking-dns-resolution-same-location.md) peut vous aider à répondre à cette exigence.
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneeded-network-hairpins-are-removed"></a>Facultatif : les épingles de réseau inutiles sont supprimées
+### <a name="optional-unneccessary-network-hairpins-are-removed"></a>Facultatif : les épingles de réseau superflues sont supprimées
 
 Vous avez examiné vos épingles de réseau et avez identifié leur impact sur les performances pour tous vos bureaux. Vous avez supprimé les épingles de réseau lorsque cela était possible ou avez travaillé avec votre fournisseur de réseau ou de sécurité tiers pour implémenter une homologation Microsoft 365 optimale pour leur réseau.
 
