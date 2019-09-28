@@ -10,22 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment configurer Microsoft 365 Business.
-ms.openlocfilehash: d309700761ee48ef66a8cd3886fd416c79463ed5
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 52e3167986bb7ed835762540e8076a3b9b2a0b56
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074297"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287632"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Prise en main de Microsoft 365 Entreprise
 
@@ -49,7 +45,7 @@ Le diagramme suivant décrit comment les administrateurs configurent Microsoft 3
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
   
-### <a name="1-set-up-microsoft-365-business-admin"></a>1: configurer Microsoft 365 entreprise (administrateur)
+### <a name="1-set-up-microsoft-365-business-admin"></a>1 : configurer Microsoft 365 entreprise (administrateur)
 
 Connectez-vous au [Centre d'administration Microsoft 365 Business](https://portal.office.com/adminportal/home) avec vos informations d'identification d'administrateur général et suivez les étapes ci-dessous pour configurer Microsoft 365 Entreprise. 
   
@@ -67,17 +63,17 @@ Connectez-vous au [Centre d'administration Microsoft 365 Business](https://porta
     
     Vous devrez également donner à chaque utilisateur ajouté de cette manière une licence Microsoft 365 Business. Vous pouvez effectuer cette opération dans l' [Assistant Installation](set-up.md)ou dans le [site attribuer des licences aux utilisateurs dans Office 365 pour les entreprises](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
     
-### <a name="2-prepare-mobile-devices"></a>2: préparer les appareils mobiles
+### <a name="2-prepare-mobile-devices"></a>2 : préparer les appareils mobiles
 
 Suivez les étapes de la procédure[configurer des appareils mobiles pour les utilisateurs professionnels de microsoft 365](set-up-mobile-devices.md) pour installer des applications Office sur des appareils et vous assurer qu’elles sont protégées par Microsoft 365 Business. 
   
-### <a name="3-prepare-pcs"></a>3: préparer des PC
+### <a name="3-prepare-pcs"></a>3 : préparer des PC
 
-Les administrateurs peuvent présélectionner des paramètres pour les nouveaux appareils Windows 10 PC à l’aide de [Windows AutoPilot](add-autopilot-devices-and-profile.md). Les utilisateurs peuvent configurer leurs appareils Windows 10 existants ou nouveaux en suivant les étapes décrites dans cette rubrique: [configurer des ordinateurs Windows pour les utilisateurs professionnels de Microsoft 365](set-up-windows-devices.md). Pour les appareils existants, les **** utilisateurs peuvent également[déplacer des fichiers vers OneDrive entreprise](move-files-to-onedrive.md). Ils peuvent également utiliser des outils tiers pour déplacer des fichiers associés à un profil Windows vers OneDrive.
+Les administrateurs peuvent présélectionner des paramètres pour les nouveaux appareils Windows 10 PC à l’aide de [Windows AutoPilot](add-autopilot-devices-and-profile.md). Les utilisateurs peuvent configurer leurs appareils Windows 10 existants ou nouveaux en suivant les étapes décrites dans cette rubrique : [configurer des ordinateurs Windows pour les utilisateurs professionnels de Microsoft 365](set-up-windows-devices.md). Pour les appareils existants, les utilisateurs **peuvent également**[déplacer des fichiers vers OneDrive entreprise](move-files-to-onedrive.md). Ils peuvent également utiliser des outils tiers pour déplacer des fichiers associés à un profil Windows vers OneDrive.
   
 Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 entreprise pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de la procédure [activer les appareils Windows 10 appartenant à un domaine pour qu’ils soient gérés par Microsoft 365 Business](manage-windows-devices.md) pour le configurer. Il s’agit de la méthode préférée et les appareils dans cet État sont appelés **appareils hybrides Azure ad**. 
   
-Si vous conservez un annuaire Active Directory local contenant certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos **appareils joints à Azure ad** l’accès à ces ressources en suivant les étapes ci-dessous: [accéder aux ressources locales à partir d’un Appareil rejoint Azure AD dans Microsoft 365 Business](access-resources.md).
+Si vous conservez un annuaire Active Directory local contenant certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos **appareils joints à Azure ad** l’accès à ces ressources en suivant les étapes ci-dessous : [accéder aux ressources locales à partir d’un Appareil rejoint Azure AD dans Microsoft 365 Business](access-resources.md).
   
 Une fois que vous avez configuré les PC Windows 10, vous pouvez [installer automatiquement Office](auto-install-or-uninstall-office.md) sur les appareils. 
   
@@ -92,6 +88,6 @@ Une fois que vous avez configuré les PC Windows 10, vous pouvez [installer auto
 ## <a name="related-topics"></a>Rubriques connexes
 [Documentation et ressources pour Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Gérer Microsoft 365 entreprise](manage.md) [Migrer vers Microsoft 365 Business](migrate-to-microsoft-365-business.md)
+[Gérer microsoft 365 Business](manage.md)[migrer vers Microsoft 365 Business](migrate-to-microsoft-365-business.md)
   
 

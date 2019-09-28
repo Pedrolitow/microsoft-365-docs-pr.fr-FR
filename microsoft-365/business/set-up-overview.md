@@ -13,40 +13,37 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Vue d’ensemble des étapes de configuration pour Microsoft 365 Business.
-ms.openlocfilehash: ae7ed0aab36a6e759e0f0c1fbc3d3183273a284e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074404"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288572"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
 La plupart des étapes de configuration peuvent être effectuées dans l’Assistant Installation, mais les autres options sont également répertoriées.
 
 
-## <a name="step-1-add-your-domain-and-users"></a>Étape 1: ajouter votre domaine et vos utilisateurs
+## <a name="step-1-add-your-domain-and-users"></a>Étape 1 : ajouter votre domaine et vos utilisateurs
 
-   - **[Ajouter votre domaine](set-up.md#add-your-domain-to-personalize-sign-in)** (si vous avez acheté votre domaine lors de l' [inscription](sign-up.md), cette étape est déjà terminée).
+   - **[Ajoutez votre domaine](set-up.md#add-your-domain-to-personalize-sign-in)** (si vous avez acheté votre domaine lors de l' [inscription](sign-up.md), cette étape est déjà terminée).
 
-    - **Ajouter des utilisateurs**. Pour ce faire, vous pouvez procéder de l’une des manières suivantes:
+    - **Ajouter des utilisateurs**. Pour ce faire, vous pouvez procéder de l’une des manières suivantes :
         - Dans l' [Assistant](set-up.md#add-users-in-the-wizard).
         - Utilisez la synchronisation d’annuaires pour [Ajouter des utilisateurs à l’aide d’Azure ad Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) si vous disposez d’un annuaire Active Directory local.
         - Vous pouvez également [Ajouter des utilisateurs ultérieurement](add-users-m365b.md) dans le centre d’administration.
-## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Étape 2: configurer les stratégies de sécurité et configurer les appareils 
+## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Étape 2 : configurer les stratégies de sécurité et configurer les appareils 
 
   - Utilisez l' [Assistant Installation](set-up.md#set-up-security-policies-and-device-configurations) pour configurer les stratégies d’appareil et de sécurité. 
   - Vous pouvez également en ajouter ou les modifier ultérieurement dans le [Centre d’administration](view-policies-and-devices.md) et dans le [portail Intune](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
-  - Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez augmenter votre sécurité en ajoutant les paramètres suivants:
+  - Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez augmenter votre sécurité en ajoutant les paramètres suivants :
 
       - **Protection contre les programmes malveillants**
       - **Liens fiables de protection avancée contre les menaces**
@@ -60,14 +57,14 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
 
         Consultez également les [10 meilleures façons de sécuriser votre entreprise Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) pour obtenir une feuille de route des meilleures pratiques en matière de sécurité.
 
-## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Étape 3: configurer et gérer les appareils Windows 10
+## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Étape 3 : configurer et gérer les appareils Windows 10
 
    Lorsque vous joignez un appareil Windows 10 à Azure AD, les stratégies que vous avez configurées à l' [étape 2](#step-2-set-up-security-policies-and-configure-devices) sont appliquées.
 
    - Windows 10 professionnel est une [condition préalable](pre-requisites-for-data-protection.md) pour Microsoft 365 Business, mais si vous disposez de Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement vous donne droit à une [mise à niveau vers Windows 10 professionnel](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
     - Utilisez l' [Assistant Installation](set-up.md#set-up-security-policies-and-device-configurations) pour configurer des stratégies pour les appareils Windows 10.
 
-## <a name="stes-4-install-office-365-business"></a>Stes 4: installer Office 365 Business
+## <a name="stes-4-install-office-365-business"></a>Stes 4 : installer Office 365 Business
 - Vous pouvez installer automatiquement Office sur les appareils Windows à l’aide de l' [Assistant Installation](set-up.md#deploy-office-365-client-apps).
 - [Installer automatiquement Office](auto-install-or-uninstall-office.md) à partir du centre d’administration.
 - Autorisez les utilisateurs à [installer les applications Office](https://docs.microsoft.com/office365/admin/setup/install-applications) pour Windows et les appareils.
@@ -81,6 +78,6 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
 
      - Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 entreprise pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de la procédure [activer les appareils Windows 10 appartenant à un domaine pour qu’ils soient gérés par Microsoft 365 Business](manage-windows-devices.md) pour le configurer. Il s’agit de la méthode préférée et les appareils dans cet État sont appelés appareils hybrides Azure AD.
 
-    - Si votre entreprise dispose d’un annuaire local Active Directory qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes ci-dessous: accéder à des [ressources locales à partir d’un Appareil rejoint Azure AD dans Microsoft 365 Business](access-resources.md).
+    - Si votre entreprise dispose d’un annuaire local Active Directory qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes ci-dessous : accéder à des [ressources locales à partir d’un Appareil rejoint Azure AD dans Microsoft 365 Business](access-resources.md).
 
   

@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 00ed128f4d295f1ea7a1c3073feea6028f833be5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a72cfed9bca57a0f3cecd13d83a6c87f05d40a1a
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080291"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306138"
 ---
 # <a name="mail-flow-map-report"></a>Rapport carte de flux de courrier
 

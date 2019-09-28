@@ -15,23 +15,19 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Les profils AutoPilot vous permettent de contrôler la manière dont Windows est installé sur les appareils utilisateur. Les profils contiennent des paramètres par défaut et facultatifs, comme ignorer l’installation de Cortana.
-ms.openlocfilehash: adc8112861b67fd96a91ff24dc155aeb0c394532
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: cd66627943301f4a4f2410bafeff6074919ec29d
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071857"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287472"
 ---
 # <a name="about-autopilot-profile-settings"></a>À propos des paramètres du profil AutoPilot
 
@@ -39,7 +35,7 @@ ms.locfileid: "34071857"
 
 Vous pouvez contrôler la façon dont Windows est installé sur les appareils utilisateur à l’aide des profils AutoPilot. Les profils contiennent les paramètres suivants.
   
- **Les fonctionnalités de AutoPilot par défaut (obligatoires) qui sont définies automatiquement:**
+ **Les fonctionnalités de AutoPilot par défaut (obligatoires) qui sont définies automatiquement :**
   
 |**Paramètre**|**Description**|
 |:-----|:-----|
@@ -47,7 +43,7 @@ Vous pouvez contrôler la façon dont Windows est installé sur les appareils ut
 |Expérience de connexion avec la marque de votre entreprise  <br/> |Si votre société dispose d’une [page de connexion Add Your Company to Office 365 Signing](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), l’utilisateur de l’appareil obtiendra cette expérience lors de la connexion.  <br/> |
 |Auto-inscriptions MDM avec comptes AAD configurés.  <br/> |L’identité de l’utilisateur sera gérée par Azure Active Directory, et les utilisateurs se connecteront à Windows et Office 365 avec leurs informations d’identification d’entreprise Microsoft 365.  <br/> |
    
- **Paramètres facultatifs:**
+ **Paramètres facultatifs :**
   
 |**Paramètre**|**Description**|
 |:-----|:-----|

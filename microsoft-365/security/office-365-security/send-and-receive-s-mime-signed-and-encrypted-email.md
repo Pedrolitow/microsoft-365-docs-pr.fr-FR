@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: L'envoi d'un message chiffré S/MIME ou la réponse à un tel message dans Microsoft Outlook est très proche de la procédure avec un message non chiffré.
-ms.openlocfilehash: 9b7ba86039fe774570c38d58a15591b7f1521302
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 63f45688946f1946f0b0a63cec748d0f0c6a50ee
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079736"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305928"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>Envoyer et recevoir des messages électroniques chiffrés et signés S/MIME dans Exchange Online
 

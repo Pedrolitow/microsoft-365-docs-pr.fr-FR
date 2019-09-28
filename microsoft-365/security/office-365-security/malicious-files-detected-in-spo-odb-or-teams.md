@@ -14,12 +14,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou teams et comment effectuer des actions sur ces fichiers.
-ms.openlocfilehash: b16ba88cd4984754f92fac2917f0f2b393600692
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2271ec7822efd442474aa322535da26d42788db
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080327"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306108"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou Microsoft teams
 
@@ -43,21 +43,21 @@ Pour afficher l’État et des informations détaillées sur les fichiers qui on
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Afficher et effectuer des actions sur les fichiers en quarantaine
 
-1. Dans le centre de sécurité &amp; conformité d’Office 365, sélectionnez **gestion** \> des menaces- **vérification** \> de la **mise en quarantaine**.
+1. Dans le centre de sécurité &amp; conformité d’Office 365, sélectionnez **gestion** \> des menaces- **vérification** \> de la **mise en quarantaine**. (Vous pouvez également accéder directement à [https://protection.office.com/quarantine](https://protection.office.com/quarantine).)
     
-2. Dans le coin supérieur gauche, modifiez le filtre de **courrier électronique** en **contenu**.
+2. Dans le coin supérieur gauche, modifiez le menu déroulant **messages électroniques** en **fichiers**. Si la liste des résultats inclut trop d’éléments, utilisez la fonctionnalité de **filtrage** pour réduire la sélection.
     
 3. Sélectionnez un élément dans la liste pour afficher des informations détaillées, y compris l’URL du fichier.
     
 4. Choisissez une action disponible.
     
-  - Choisissez **Release &amp; Report** pour débloquer le fichier. 
+  - Choisissez **Release file** pour débloquer le fichier. 
     
     Sélectionnez **Envoyer le rapport à Microsoft** pour signaler le fichier comme faux positif à Microsoft. 
     
   - Choisissez **Télécharger un fichier** pour rechercher plus d’renseignements sur le fichier. 
     
-  - Choisissez **supprimer** pour supprimer le fichier de la liste des éléments mis en quarantaine. Si vous choisissez cette option, vous devez également supprimer le fichier de sa bibliothèque respective dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Cette option ne débloque pas l’ouverture ou le partage d’un fichier. 
+  - Sélectionnez **supprimer de la quarantaine** pour supprimer le fichier de la liste des éléments mis en quarantaine. Si vous choisissez cette option, vous devez également supprimer le fichier de sa bibliothèque respective dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Cette option ne débloque pas l’ouverture ou le partage d’un fichier. 
     
 5. Cliquez sur **Fermer** pour fermer les détails d’un élément sélectionné. 
   

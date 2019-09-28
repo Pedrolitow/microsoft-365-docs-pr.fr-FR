@@ -8,27 +8,22 @@ ms.topic: article
 ms.service: o365-administration
 ms.collection: M365-subscription-management
 localization_priority: Normal
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un appareil Azure Active Directory joint à Windows 10.
-ms.openlocfilehash: ab9049e78617372463b8446dc8f8bc0089d8c117
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 26ba0ffb64ddce32369002120657456e47ac0c7f
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981658"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287352"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business
 
-Tous les appareils Windows 10 qui sont joints à Azure Active Directory auront accès à toutes les ressources basées sur le Cloud, telles que vos applications Office 365, et peuvent être protégées par Microsoft 365 Business. Pour autoriser également l’accès aux ressources locales telles que les applications métier, les partages de fichiers et les imprimantes, vous devez synchroniser votre annuaire Active Directory local avec Azure Active Directory à l’aide d' [Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). La vidéo suivante décrit les étapes à suivre pour la configuration du scénario le plus courant.
- 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
+Tous les appareils Windows 10 qui sont joints à Azure Active Directory auront accès à toutes les ressources basées sur le Cloud, telles que vos applications Office 365, et peuvent être protégées par Microsoft 365 Business. Pour autoriser également l’accès aux ressources locales telles que les applications métier, les partages de fichiers et les imprimantes, vous devez synchroniser votre annuaire Active Directory local avec Azure Active Directory à l’aide d' [Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). 
 
 Pour en savoir plus, consultez la rubrique [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) .
 Les étapes sont également résumées dans les sections suivantes.

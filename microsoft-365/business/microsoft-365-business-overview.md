@@ -11,22 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment configurer Microsoft 365 Business.
-ms.openlocfilehash: 64cfa460311af6cdafb637ceb3415511e003e394
-ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
+ms.openlocfilehash: 8568232eb65485f1e016342bb13de9a07f706c00
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853146"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288532"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Vue d’ensemble de Microsoft 365 Business
 
@@ -40,12 +36,12 @@ Consultez la rubrique [Microsoft 365 Business Service Description](https://docs.
   
 ## <a name="small-business-security-needs"></a>Besoins en matière de sécurité pour les petites entreprises
 
-Vos données métiers peuvent être compromises de plusieurs façons. Vous et vos utilisateurs pouvez compromettre la sécurité de votre organisation lorsque vous vous connectez avec des informations d’identification compromise ou que vous affichez des données d’organisation sur différents appareils et applications. Plus spécifiquement, votre organisation est exposée aux risques suivants:
+Vos données métiers peuvent être compromises de plusieurs façons. Vous et vos utilisateurs pouvez compromettre la sécurité de votre organisation lorsque vous vous connectez avec des informations d’identification compromise ou que vous affichez des données d’organisation sur différents appareils et applications. Plus spécifiquement, votre organisation est exposée aux risques suivants :
 
 1. Informations d’identification de connexion compromises ou faibles.
 2. Appareil compromis avec un code confidentiel faible ou un appareil appartenant à un utilisateur.
 3. Les utilisateurs qui peuvent copier/coller/enregistrer les données de votre organisation dans des applications personnelles.
-4. Les utilisateurs qui installent et<sup></sup> utilisent 3 applications tierces avec un niveau de sécurité faible.
+4. Les utilisateurs qui installent et<sup>utilisent 3 applications</sup> tierces avec un niveau de sécurité faible.
 5. Les vulnérabilités de messagerie, y compris le partage de données sensibles, les tentatives de hameçonnage, les programmes malveillants, etc.
 6. Lorsque les personnes ne devraient pas, peuvent accéder aux documents contenant des informations sensibles.
 

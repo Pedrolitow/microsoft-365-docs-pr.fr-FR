@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) offre un grand nombre de rapports qui peuvent vous aider à déterminer l'état général de votre organisation. Il existe également des outils vous permettant de résoudre des problèmes liés à des événements spécifiques (comme un message n'arrivant pas aux destinataires appropriés) et des rapports d'audit pour vous aider à respecter les exigences de conformité. Le tableau suivant décrit les rapports et les outils de dépannage disponibles pour les administrateurs EOP.
-ms.openlocfilehash: 39ac70c401cb4a630b95fab89fe3a145495c29eb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e1a07d8872bee89689f8ce3e16a87bb69c4b6903
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078407"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306088"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Création de rapports et suivi des messages dans Exchange Online Protection
 
@@ -23,11 +23,11 @@ Microsoft Exchange Online Protection (EOP) offre un grand nombre de rapports qui
 
 ## <a name="usage-reports"></a>Rapports d’utilisation
 
-**Activité des groupes office 365**: afficher des informations sur le nombre de groupes Office 365 créés et utilisés.  
+**Activité des groupes office 365**: afficher des informations sur le nombre de groupes Office 365 créés et utilisés.
 
-**Activité de messagerie**: afficher des informations sur le nombre de messages envoyés, reçus et lus dans l’ensemble de votre organisation, ainsi que sur des utilisateurs spécifiques.  
+**Activité de messagerie**: afficher des informations sur le nombre de messages envoyés, reçus et lus dans l’ensemble de votre organisation, ainsi que sur des utilisateurs spécifiques.
 
-**Utilisation**des applications de messagerie : Affichez des informations sur les applications de messagerie utilisées. Ceci inclut le nombre total de connexions pour chaque application et les versions de Outlook qui se connectent.  
+**Utilisation**des applications de messagerie : Affichez des informations sur les applications de messagerie utilisées. Ceci inclut le nombre total de connexions pour chaque application et les versions de Outlook qui se connectent.
 
 **Utilisation des boîtes aux lettres**: afficher des informations sur l’espace de stockage utilisé, la consommation de quota, le nombre d’éléments et la dernière activité (activité d’envoi ou de lecture) pour les boîtes aux lettres.
 
@@ -43,11 +43,11 @@ Pour plus d'informations, voir les ressources suivantes :
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Sécurité & des rapports de conformité dans le centre d’administration Microsoft 365
 
-Ces rapports améliorés fournissent une expérience de création de rapports interactive pour les administrateurs EOP, qui inclut des informations récapitulatives et la possibilité d’approfondir plus en détail.  
+Ces rapports améliorés fournissent une expérience de création de rapports interactive pour les administrateurs EOP, qui inclut des informations récapitulatives et la possibilité d’approfondir plus en détail.
 
-**Protection avancée contre les menaces (ATP)**: Affichez des informations sur les liens fiables et les pièces jointes fiables qui font partie de l’ATP.  
+**Protection avancée contre les menaces (ATP)**: Affichez des informations sur les liens fiables et les pièces jointes fiables qui font partie de l’ATP.
 
-**EOP**: Affichez des informations sur les détections de programmes malveillants, le courrier falsifié, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation.  
+**EOP**: Affichez des informations sur les détections de programmes malveillants, le courrier falsifié, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation.
 
 [Afficher les rapports de protection avancée contre les menaces et Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=852409)
 
@@ -63,9 +63,9 @@ Voir les [services Web de création de rapports Office 365](https://go.microsoft
 
 ## <a name="message-trace"></a>Suivi des messages
 
-Suit les messages électroniques pendant qu'ils circulent dans EOP. Vous pouvez déterminer si un message électronique a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.  
+Suit les messages électroniques pendant qu'ils circulent dans EOP. Vous pouvez déterminer si un message électronique a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
 
-Vous pouvez ainsi répondre efficacement aux questions de vos utilisateurs, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie, tout en réduisant la nécessité de demander de l'aide à l'assistance technique.  
+Vous pouvez ainsi répondre efficacement aux questions de vos utilisateurs, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie, tout en réduisant la nécessité de demander de l'aide à l'assistance technique.
 
 Voir [suivi d’un message électronique](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)
 
@@ -76,7 +76,7 @@ Effectue le suivi des modifications spécifiques apportées par les administrate
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Disponibilité et latence des rapports et des données de suivi des messages
 
 Le tableau suivant présente la disponibilité des rapports et des données de suivi des messages EOP, ainsi que leur latence.
-  
+
 ||||
 |:-----|:-----|:-----|
 |**Type de rapport**|**Données disponibles pendant (période rétrospective)**|**Latence**|
@@ -85,4 +85,4 @@ Le tableau suivant présente la disponibilité des rapports et des données de s
 |Données de suivi des messages|90 jours|Lorsque vous effectuez un suivi de messages remontant à moins de 7 jours, ces derniers apparaissent normalement dans les 5 à 30 minutes.<br/><br/> Lorsque vous effectuez un suivi de messages remontant à plus de 7 jours, la génération des résultats peut prendre plusieurs heures.|
 
 > [!NOTE]
-> La disponibilité et la latence des données sont les mêmes, qu’elles soient demandées via le centre d’administration Microsoft 365 ou PowerShell à distance. 
+> La disponibilité et la latence des données sont les mêmes, qu’elles soient demandées via le centre d’administration Microsoft 365 ou PowerShell à distance.
