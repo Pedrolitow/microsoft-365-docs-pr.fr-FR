@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Intégrez les utilisateurs de votre organisation aux charges de travail productivité de Microsoft 365 Entreprise.
-ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: e8608bd18e493aeb0b0b1200a3b9e9aa6083b641
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981935"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306008"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
 
@@ -29,7 +29,11 @@ Pour bénéficier des avantages de la créativité et du travail d’équipe de 
 
 Pour disposer d’une feuille de route générale concernant la migration de votre organisation toute entière vers Microsoft 365 Entreprise, incluant les produits clients Microsoft Office, les produits Office Server locaux et les appareils basés sur Microsoft Windows, voir la charge de travail [migration](migration-microsoft-365-enterprise-workload.md).
 
-Les scénarios utilisent des fonctionnalités et services de Microsoft 365 Entreprise de façon intégrée pour répondre à des besoins métier. L’un de ces besoins est la protection des données hautement réglementées stockées dans Microsoft 365. Les données hautement réglementées incluent les biens numériques suivants :
+Les scénarios utilisent des fonctionnalités et services de Microsoft 365 Entreprise de façon intégrée pour répondre à des besoins métier. 
+
+Il peut être nécessaire de s’assurer que vos employés peuvent travailler de manière efficace et sécurisée lorsqu’ils ne sont pas connectés directement à votre intranet. Pour plus d’informations sur la feuille de route de déploiement des éléments d’infrastructure et la favorisation de l’adoption par les utilisateurs distants des charges de travail clés, telles que Teams et Exchange Online, consultez le scénario [Confiez des responsabilités aux travailleurs à distance](empower-people-to-work-remotely.md).
+
+Un autre de ces besoins est la protection des données hautement réglementées stockées dans Microsoft 365. Les données hautement réglementées incluent les biens numériques suivants :
 
 - sujettes à des réglementations régionales ;
 - les plus précieuses de votre organisation comme les secrets commerciaux, les informations sur les ressources humaines ou financières et la stratégie de l’organisation.
