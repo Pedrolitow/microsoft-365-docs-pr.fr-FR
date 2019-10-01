@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez des stratégies de vérification de surveillance pour capturer les communications des employés à des fins de révision.
-ms.openlocfilehash: ccbc5897ef8c6fb6018793ff7e3fe7731ee14710
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dae8969598f5a71814c1b61db83341f30c0cb9d7
+ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078813"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37317616"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurer des stratégies de surveillance pour votre organisation
 
@@ -52,10 +52,6 @@ Procédez comme suit pour configurer et utiliser la surveillance dans votre orga
 - **Étape 5 (facultatif)**: [tester votre stratégie de supervision](#step-5-test-your-supervision-policy-optional)
 
     Testez votre stratégie de surveillance pour vous assurer qu’elle fonctionne comme vous le souhaitez. Il est important de s’assurer que la stratégie de conformité répond à vos normes.
-
-- **Étape 6 (facultatif)**: [configurer Outlook pour les relecteurs qui ne souhaitent pas utiliser le tableau de bord de surveillance Office 365 pour consulter les communications surveillées](#step-6-configure-outlook-for-reviewers-optional)
-
-    Configurez Outlook pour donner aux réviseurs l’accès à la fonctionnalité de supervision dans le client Outlook afin qu’ils puissent évaluer et catégoriser chaque élément.
 
 ## <a name="step-1-set-up-groups-for-supervision-optional"></a>Étape 1 : configurer des groupes pour la surveillance (facultatif)
 
@@ -181,70 +177,10 @@ Une fois que vous avez créé une stratégie de surveillance, il est recommandé
 1. Ouvrez un client de messagerie ou Microsoft teams connecté en tant qu’utilisateur supervisé défini dans la stratégie que vous souhaitez tester.
 2. Envoyez un message électronique ou une conversation Microsoft teams qui répond aux critères que vous avez définis dans la stratégie de supervision. Il peut s’agir d’un mot clé, d’une taille de pièce jointe, d’un domaine, etc. Assurez-vous que vous déterminez si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop stricts.
 
-    > [!Note]
+    > [!NOTE]
     > Les e-mails soumis à des stratégies définies sont traités en temps réel et peuvent être testés immédiatement après la configuration de la stratégie. Les conversations dans Microsoft teams peuvent prendre jusqu’à 24 heures pour être entièrement traitées dans une stratégie. 
 
 3. Connectez-vous à votre client Office 365 en tant que réviseur désigné dans la stratégie de supervision. Accédez à **surveillance** > de*votre stratégie* > personnalisée pour afficher le rapport de**la stratégie.**
-
-## <a name="step-6-configure-outlook-for-reviewers-optional"></a>Étape 6 : configurer Outlook pour les relecteurs (facultatif)
-
-Les relecteurs qui souhaitent utiliser Outlook au lieu du tableau de bord de surveillance dans Office 365 pour examiner les communications doivent configurer leur client Outlook.
-
-### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Étape 1 : Copiez l’adresse de la boîte aux lettres de supervision
-
-Pour configurer la révision pour le bureau Outlook, vous avez besoin de l’adresse de la boîte aux lettres de surveillance créée dans le cadre de la configuration de la stratégie de supervision.
-  
-> [!NOTE]
-> Si une autre personne a créé la stratégie, vous devez obtenir cette adresse auprès de celle-ci pour installer le complément.
-
-**Pour Rechercher l’adresse de la boîte aux lettres de supervision**
-  
-1. Connectez-vous au [Centre de conformité](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
-
-2. Accédez à **surveillance**.
-
-3. Sélectionnez une stratégie de surveillance pour les communications que vous souhaitez examiner.
-
-4. Dans la fenêtre mobile détails de la stratégie, sous **boîte aux lettres de supervision**, copiez l’adresse.<br/>![La section « boîte aux lettres de surveillance » d’une fenêtre de détails de la stratégie de supervision indiquant l’adresse de la supervision sélectionnée](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
-  
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Étape 2 : configuration de la boîte aux lettres de supervision pour l’accès à Outlook
-
-Ensuite, les réviseurs doivent exécuter quelques commandes PowerShell Exchange Online pour pouvoir connecter Outlook à la boîte aux lettres de supervision.
-  
-1. Connectez-vous à Exchange Online PowerShell. [Comment procéder ?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
-
-2. Exécutez les commandes suivantes, où *SupervisoryReview {GUID} @domain. onmicrosoft.com* est l’adresse que vous avez copiée à l’étape 1 ci-dessus, et *utilisateur* est le nom du réviseur qui se connectera à la boîte aux lettres de supervision à l’étape 3.
-
-    ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
-
-    ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
-
-3. Patientez au moins une heure avant de passer à l’étape 3.
-
-### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a>Étape 3 : créer un profil Outlook pour se connecter à la boîte aux lettres de supervision
-
-Pour la dernière étape, les réviseurs doivent créer un profil Outlook pour se connecter à la boîte aux lettres de supervision.
-
-> [!NOTE]
-> Pour créer un nouveau profil Outlook, vous devez utiliser les paramètres de messagerie dans le panneau de configuration de Windows. Le chemin d’accès à ces paramètres peut dépendre du système d’exploitation Windows (Windows 7, Windows 8 ou Windows 10) que vous utilisez et de la version d’Outlook installée.
-  
-1. Ouvrez le panneau de configuration. Dans la zone de **recherche** en haut de la fenêtre, tapez **courrier**.<br/>(Vous ne savez pas comment accéder au panneau de configuration ? Voir [où est le panneau de configuration ?](https://support.microsoft.com/help/13764/windows-where-is-control-panel)
-  
-2. Ouvrez l’application de **messagerie** .
-
-3. Dans **configuration de la messagerie-Outlook**, cliquez sur **afficher les profils**.<br/>![Boîte de dialogue « Configuration de la messagerie-Outlook » avec le bouton « afficher les profils » mis en évidence](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)
-  
-4. Dans **courrier**, cliquez sur **Ajouter**. Ensuite, dans **nouveau profil**, entrez un nom pour la boîte aux lettres de supervision (par exemple, **surveillance**).<br/>![Boîte de dialogue « Nouveau profil » affichant le nom « surveillance » dans la zone « Nom du profil »](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)
-  
-5. Dans **connecter Outlook à Office 365**, cliquez sur **se connecter à un autre compte**.<br/>![Message « connexion d’Outlook à Office 365 » avec le lien « se connecter à un autre compte » mis en surbrillance](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)
-  
-6. Dans **configuration de compte automatique**, choisissez **installation manuelle ou types de serveurs supplémentaires**, puis cliquez sur **suivant**.
-
-7. Dans **choisir votre type de compte**, choisissez **Office 365**. Ensuite, dans la zone **adresse de messagerie** , entrez l’adresse de la boîte aux lettres de supervision que vous avez copiée précédemment.<br/>![La page « Choisissez votre type de compte » de la boîte de dialogue « Ajouter un compte » dans Outlook affichant la case « adresse de messagerie » en surbrillance.](media/4f601236-9f69-4cf6-a58c-0b91204aa8cb.jpg)
-  
-8. Lorsque vous y êtes invité, entrez vos informations d’identification Office 365.
-
-9. Si elle réussit, le dossier de **nom \<\> de stratégie de surveillance** est répertorié dans l’affichage liste des dossiers dans Outlook.
 
 ## <a name="powershell-reference"></a>Référence PowerShell
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Résumé : appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
-ms.openlocfilehash: cf1565f2a3fbe420abf7739528a78befda9dfe82
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 77da4ec44e31fae8db2c37ebc39233f76c5e4dd3
+ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080006"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37317606"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 
@@ -222,14 +222,9 @@ Voici le résultat de votre configuration pour les sites d’équipe SharePoint 
     
 ## <a name="see-also"></a>Voir aussi
 
-<<<<<<< TITRE [Sécuriser les fichiers et sites SharePoint Online](/security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
-<a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizationssecurityoffice-365-securitymicrosoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-omd"></a>[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
-=======
 [Sécuriser les fichiers et sites SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
->>>>>>> 9904103ea22646c71f6541e03c7491a767a783ce
   
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
