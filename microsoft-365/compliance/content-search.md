@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les groupes Office 365 et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: ae09d49bdb0b51986e58db72f578de7fa2a0c931
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e3553ff2e3c8398ac4bc00258e41e8d9607b3639
+ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078781"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37334254"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -409,4 +409,4 @@ Lorsque vous utilisez des filtres d’autorisation de recherche pour rechercher 
 
 - Le paramètre **Région** ne contrôle pas les recherches dans les boîtes aux lettres Exchange. Lorsque vous effectuez des recherches dans des boîtes aux lettres, elles s’appliquent à tous les centres de données. 
     
-Si vous souhaitez en savoir plus sur l’utilisation des filtres d’autorisation de recherche dans un environnement multigéographique, veuillez consulter la section « Recherche et exportation de contenu dans des environnements multigéographiques » de l’article [Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365](tagging-and-assessment-in-advanced-ediscovery.md#searching-and-exporting-content-in-multi-geo-environments).
+Si vous souhaitez en savoir plus sur l’utilisation des filtres d’autorisation de recherche dans un environnement multigéographique, veuillez consulter la section « Recherche et exportation de contenu dans des environnements multigéographiques » de l’article [Configurer les limites de conformité pour les enquêtes eDiscovery](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
