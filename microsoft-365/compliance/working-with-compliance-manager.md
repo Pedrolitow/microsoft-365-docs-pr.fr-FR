@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cceb0487f357e6b40b634dc6d3cd7349ec2d96
+ms.sourcegitcommit: acf29701bfba3e4843e49a79fde012f3c7a7024a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079833"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37350315"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -94,7 +94,7 @@ Lorsque vous utilisez des groupes, rappelez-vous des éléments suivants :
 
 Le gestionnaire de conformité (Preview) inclut une nouvelle interface de gestion des nouveaux éléments de données appelée **gestion des clients**. Cette interface vous permet de gérer les paramètres à l’échelle du client :
 
-- **Dimensions :** Afficher, ajouter et personnaliser des métadonnées pour des modèles, des évaluations et des éléments d’action qui vous permettent de créer des tableaux croisés dynamiques personnalisés pour les filtres.
+- **Dimensions :** Affichez les métadonnées des modèles, des évaluations et des éléments d’action qui vous permettent de créer des tableaux croisés dynamiques personnalisés pour les filtres.
 - **Propriétaires :** Spécifiez un propriétaire pour chaque élément d’action.
 - **Actions des clients :** Gérez la liste complète des éléments actions inclus dans le gestionnaire de conformité (aperçu) et activez/désactivez la surveillance du score sécurisé pour les actions intégrées à un score sécurisé.
 
@@ -102,34 +102,7 @@ Sélectionnez **gestion des clients** pour ouvrir l’interface de gestion et su
 
 ### <a name="dimensions"></a>Dimensions
 
-Les dimensions sont des ensembles de métadonnées qui fournissent des informations sur un modèle, une évaluation ou un élément d’action. Les dimensions utilisent le concept de clés et de valeurs, où la clé de dimension représente une propriété et la valeur de dimension représente des valeurs valides pour la propriété. Par exemple, dans le gestionnaire de conformité, il existe trois types d’actions. Elles sont définies par une clé de dimension de **type action** et des valeurs de dimension de **documentation**, d' **exploitation**et **technique**. Vous pouvez modifier des dimensions existantes ou ajouter les vôtres. Il est souvent nécessaire d’ajouter des dimensions lors de l’importation de modèles personnalisés.
-
-#### <a name="add-a-dimension"></a>Ajouter une dimension
-
-1. Ouvrez la **gestion des clients** et sélectionnez des **dimensions**.
-2. Sélectionnez **+ Ajouter une dimension**.
-3. Entrez un nom unique dans le champ **clé** .
-4. Si vous le souhaitez, vous pouvez activer l’utilisation simultanée de plusieurs valeurs pour la même clé, puis faites glisser le bouton bascule pour **autoriser la sélection multiple des dimensions** à activé.
-5. Sélectionnez **+ Ajouter** pour ajouter une valeur en fournissant un nom unique et en cliquant sur l’icône Enregistrer.
-6. Répétez l’étape 5 pour chaque valeur que vous souhaitez ajouter.
-7. Sélectionnez **Enregistrer** pour enregistrer la nouvelle dimension.
-
-#### <a name="edit-a-dimension"></a>Modifier une dimension
-
-Vous pouvez renommer une clé de dimension, mais vous pouvez modifier les valeurs des dimensions personnalisées.
-
-1. Ouvrez la **gestion des clients** et sélectionnez des **dimensions**.
-2. Recherchez la dimension que vous souhaitez modifier, sélectionnez les points de suspension (...) en regard de celle-ci, puis sélectionnez **modifier**.
-3. Sélectionnez **+ Ajouter** pour ajouter une valeur en fournissant un nom unique et en cliquant sur l’icône Enregistrer, ou sélectionnez la valeur à modifier ou supprimer, puis sélectionnez **supprimer** ou **modifier**.
-4. Sélectionnez **Enregistrer** lorsque vous avez terminé d’apporter des modifications.
-
-#### <a name="delete-a-dimension"></a>Supprimer une dimension
-
-Vous pouvez supprimer des dimensions personnalisées si nécessaire.
-
-1. Ouvrez la **gestion des clients** et sélectionnez des **dimensions**.
-2. Recherchez la dimension que vous souhaitez supprimer, sélectionnez les points de suspension (...) en regard de celle-ci, puis sélectionnez **supprimer**.
-3. Lorsque le message de confirmation s’affiche, sélectionnez **supprimer**.
+Les dimensions sont des ensembles de métadonnées qui fournissent des informations sur un modèle, une évaluation ou un élément d’action. Les dimensions utilisent le concept de clés et de valeurs, où la clé de dimension représente une propriété et la valeur de dimension représente des valeurs valides pour la propriété. Par exemple, dans le gestionnaire de conformité, il existe trois types d’actions. Elles sont définies par une clé de dimension de **type action** et des valeurs de dimension de **documentation**, d' **exploitation**et **technique**. Vous pouvez modifier ou supprimer des dimensions existantes.
 
 ### <a name="owners"></a>Propriétaires
 
@@ -354,11 +327,11 @@ Les contrôles peuvent être affichés à partir du tableau de bord informations
 
 ![Détails des contrôles Microsoft du gestionnaire de conformité](media/compliance-manager-control-details.png)
 
-Il existe trois types de contrôles. Deux sont fournis par Microsoft dans les modèles intégrés, et le troisième est créé et géré par les clients dans des modèles personnalisés. Les trois types sont les suivants :
+Il existe trois types de contrôles :
 
-1. **Contrôles gérés par Microsoft (mm) :** il s’agit de contrôles pour lesquels seul Microsoft est responsable. Ils apparaissent dans les modèles prédéfinis et sont ajoutés au gestionnaire de conformité par Microsoft.
-2. **Contrôles gérés par le client (cm) :** il s’agit de contrôles dont les clients sont responsables uniquement. Ils apparaissent dans les modèles prédéfinis et sont ajoutés au gestionnaire de conformité par Microsoft ou par les clients. Le client peut également modifier ou désactiver les contrôles gérés par le client fournis par Microsoft.
-3. **Contrôles partagés (SM) :** il s’agit de contrôles où la responsabilité est partagée entre Microsoft et le client. Ceux-ci apparaissent dans les modèles prédéfinis et sont ajoutés au gestionnaire de conformité par Microsoft.
+1. **Contrôles gérés par Microsoft :** il s’agit de contrôles pour lesquels seul Microsoft est responsable. Ils apparaissent dans les modèles prédéfinis et sont ajoutés au gestionnaire de conformité par Microsoft.
+2. **Contrôles gérés par le client :** il s’agit de contrôles dont les clients sont responsables uniquement. Ils apparaissent dans les modèles prédéfinis et sont ajoutés au gestionnaire de conformité par les clients.
+3. **Contrôles de gestion partagés :** il s’agit de contrôles où la responsabilité est partagée entre Microsoft et le client. Ceux-ci apparaissent dans les modèles prédéfinis et sont ajoutés au gestionnaire de conformité par Microsoft. Le client peut également modifier ou désactiver les contrôles gérés par Microsoft.
 
 ### <a name="actions-items"></a>Éléments actions
 
@@ -423,7 +396,7 @@ Cet onglet inclut des colonnes qui définissent les contrôles mappés aux actio
 - **controlDescription :** Description du contrôle de certification/standard/réglementation, etc.
 - **controlVersion :** Informations de version de contrôle facultatives.  Exemple : pour le NIST 800-53, la valeur actuelle est Rev 4, de sorte que la valeur de controlVersion est 4.  Pour le CCM CCM, il s’agit de 3.0.1.
 - **isDisabled :** Utilisez TRUE ou FALSe pour indiquer si le contrôle a été désactivé.
-- **ControlType :** Utilisez CM pour indiquer qu’il s’agit de contrôles gérés par le client.
+- **ControlType :** Utilisez CC pour indiquer qu’il s’agit de contrôles gérés par le client.
 - **controlComplianceScore :** Somme du score de toutes les actions affectées au contrôle.
 - **controlActionTitle :** Double liste délimitée par des points-virgules de tous les actionTitles de ce contrôle, tel qu’il est répertorié dans l’onglet actions. 
 
@@ -449,7 +422,7 @@ Cet onglet comprend des colonnes qui définissent des actions individuelles, ain
     Product::Office 365;;Certification::NIST CSF
     ```
 
-    Toutes les dimensions utilisées dans un modèle personnalisé doivent être répertoriées sous l’onglet dimensions du fichier d’importation, même si elles sont déjà répertoriées dans le tableau de bord dimensions. Si vous ajoutez de nouvelles clés ou valeurs de dimension, vous devez d’abord les ajouter au tableau de bord dimensions.
+    Toutes les dimensions utilisées dans un modèle personnalisé doivent être répertoriées sous l’onglet dimensions du fichier d’importation, même si elles sont déjà répertoriées dans le tableau de bord dimensions.
 - **actionScore :** Valeur numérique de chaque action, qui représente le score de cette action. Nous vous recommandons de suivre le modèle de notation utilisé par les évaluations intégrées, qui est basé sur l’objectif et l’application de chaque action.
 - **actionOwnership :** Double liste délimitée par des points-virgules. Tous les propriétaires répertoriés doivent être inclus dans l’onglet appartenance.
 - **actionDescription :** Texte de chaque action, qui doit être unique. Ce champ prend en charge la langue de démarque comme décrit ci-dessous.
@@ -527,7 +500,7 @@ Vous pouvez créer un modèle en copiant un modèle existant ou en important des
 
 1. Ouvrez le tableau de bord **modèles** et sélectionnez **+ Ajouter un modèle**.
 2. Dans le champ **entrer le nom du modèle** , indiquez un nom unique pour le modèle.
-3. Ajoutez une ou plusieurs dimensions. Même si les dimensions que vous utilisez sont déjà répertoriées dans le tableau de bord dimensions, elles doivent toujours être répertoriées dans le fichier d’importation.
+3. Sélectionnez au moins une dimension dans la liste disponible.
 4. Sélectionnez **Parcourir** pour accéder à l’emplacement du fichier d’importation, sélectionnez-le, puis sélectionnez **ouvrir**.
 5. Le fichier d’importation est validé et indique le nombre de contrôles et de familles de contrôle détectés. S’il existe des erreurs, un lien sera fourni à une version modifiée du fichier d’importation qui inclut les détails de l’erreur. Toutes les erreurs doivent être résolues avant que les données ne soient importées.
 6. Une fois que les données ont été validées, sélectionnez **Ajouter au tableau de bord**.
@@ -562,7 +535,7 @@ Les modèles peuvent être personnalisés par le biais des contrôles personnali
 
 Le gestionnaire de conformité (aperçu) prend également en charge l’exportation des modèles au format JSON (JavaScript Object Notation). Cela vous permet d’échanger des données du gestionnaire de conformité avec d’autres systèmes qui prennent en charge JSON.
 
-## <a name="reports"></a>Rapports
+## <a name="reports"></a>Reports
 
 Vous pouvez exporter une évaluation vers un fichier Excel pour les parties prenantes en conformité dans votre organisation ou pour les auditeurs et régulateurs externes. Le rapport est une capture instantanée de l’évaluation à compter de la date et de l’heure de l’exportation. Le rapport contient les détails de Microsoft et des contrôles gérés par le client pour l’évaluation, le contrôle de l’état de l’implémentation, le contrôle de la date de test, les résultats des tests et les liens vers les documents de preuve téléchargés. Vous devez exporter les évaluations avant de les archiver car les évaluations archivées ne retiennent pas les liens vers les documents téléchargés.
 

@@ -1,5 +1,5 @@
 ---
-title: Historique des modifications pour la documentation du bureau géré Microsoft
+title: Historique des modifications de la documentation relative au Bureau géré Microsoft
 description: Cette rubrique répertorie les rubriques nouvelles et mises à jour pour le bureau géré Microsoft.
 keywords: historique des modifications
 ms.prod: m365-md
@@ -8,24 +8,29 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982605"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369625"
 ---
-# <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications pour la documentation du bureau géré Microsoft
+# <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
-Cette rubrique répertorie les rubriques nouvelles et mises à jour dans la [documentation du bureau géré Microsoft](index.yml).
+Cette rubrique répertorie les rubriques nouvelles et mises à jour dans la [documentation du bureau géré Microsoft](index.yml). Les rubriques « mises à jour » sont celles qui ont eu des ajouts ou corrections de matériel (correctifs mineurs, tels que la correction des fautes de frappe, de style ou de mise en forme). Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails de toutes les modifications) en visitant le [référentiel sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
 ## <a name="september-2019"></a>Septembre 2019
 Rubrique nouvelle ou modifiée | Description
 --- | ---
-[Conditions préalables pour le bureau géré Microsoft](get-ready/prerequisites.md) | Rubrique mise à jour
+[Technologies de bureau géré Microsoft](intro/technologies.md) | Rubrique mise à jour
+[Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md) | Rubrique mise à jour
+[Appareils de bureau gérés Microsoft](service-description/device-list.md) | Rubrique mise à jour
+[Déployer et suivre les paramètres configurables-bureau géré Microsoft](working-with-managed-desktop/config-setting-deploy.md) | Rubrique mise à jour
+[Prise en charge des administrateurs pour le bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Rubrique mise à jour
+[Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Rubrique mise à jour
 [Configurer des appareils de bureau géré Microsoft](get-started/set-up-devices.md) | Nouvelle rubrique
-[Enregistrer les nouveaux appareils vous-même](get-started/register-devices-self.md) | Rubrique mise à jour
-[Enregistrer les appareils existants vous-même](get-started/register-reused-devices-self.md) | Nouvelle rubrique
+[Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Rubrique mise à jour
+[Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Nouvelle rubrique
 [Gestion des mises à jour dans le bureau géré Microsoft](service-description/updates.md) | Rubrique mise à jour
 
 ## <a name="august-2019"></a>Août 2019
@@ -34,7 +39,7 @@ Rubrique nouvelle ou modifiée | Description
 [Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Rubrique mise à jour
 [Prise en charge des administrateurs pour le bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Rubrique mise à jour
 [Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md) | Rubrique mise à jour
-[Conditions préalables pour le bureau géré Microsoft](get-ready/prerequisites.md) | Rubrique mise à jour
+[Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Rubrique mise à jour
 [Technologies de bureau géré Microsoft](intro/technologies.md) | Rubrique mise à jour
 
 
@@ -63,8 +68,8 @@ Rubrique nouvelle ou modifiée | Description
 [Régions et langues prises en charge par Microsoft Managed Desktop](service-description/regions-languages.md) | Rubrique mise à jour
 [Appareils de bureau gérés Microsoft](service-description/device-list.md) | Rubrique mise à jour
 [Appareils archivés Microsoft Managed Desktop](service-description/archived-device-list.md) | Nouvelle rubrique
-[Préparer les lecteurs mappés pour le bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvelle rubrique
-[Préparer les certificats et les profils réseau pour le bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvelle rubrique
+[Préparer les lecteurs mappés pour le Bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvelle rubrique
+[Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvelle rubrique
 [Commander des appareils de bureau gérés Microsoft](get-started/devices.md) | Rubrique mise à jour
 [Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md)
 
@@ -73,7 +78,7 @@ Rubrique nouvelle ou modifiée | Description
 --- | ---
 [Installer le portail d’entreprise Intune sur les appareils de bureau gérés Microsoft](get-started/company-portal.md) | Nouvelle rubrique
 [Installer Microsoft Project et Microsoft Visio sur des appareils de bureau gérés Microsoft](get-started/project-visio.md) | Nouvelle rubrique 
-[Préparation de l’accès aux ressources locales pour le bureau géré Microsoft](get-ready/authentication.md) | Nouvelle rubrique
+[Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](get-ready/authentication.md) | Nouvelle rubrique
 [Inscrire des appareils dans le bureau géré Microsoft](get-started/register-devices-self.md) | Nouvelle rubrique
 [Inscrire des appareils dans le bureau géré Microsoft pour les partenaires](get-started/register-devices-partner.md) | Nouvelle rubrique
 [Déployer des applications sur des appareils de bureau gérés Microsoft](get-started/deploy-apps.md) | Rubrique mise à jour
@@ -87,7 +92,7 @@ Rubrique nouvelle ou modifiée | Description
 ## <a name="february-2019"></a>Février 2019
 Rubrique nouvelle ou modifiée | Description
 --- | ---
-[Appareils de programme](service-description/device-list.md) | Mise à jour avec prise en charge de certains appareils Dell et HP.
+[Appareils du programme](service-description/device-list.md) | Mise à jour avec prise en charge de certains appareils Dell et HP.
 [Vue d’ensemble des paramètres configurables](working-with-managed-desktop/config-setting-overview.md) | Nouvelle rubrique
 [Référence des paramètres configurables](working-with-managed-desktop/config-setting-ref.md) | Nouvelle rubrique
 [Suivi et déploiement des paramètres configurables](working-with-managed-desktop/config-setting-deploy.md) | Nouvelle rubrique

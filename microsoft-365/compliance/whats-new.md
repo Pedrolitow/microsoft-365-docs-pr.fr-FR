@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365, à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Découvrez ce que nous avons fait dans ce mois-ci.
-ms.openlocfilehash: 558a35d255171ffa09f5e8610cdfc0d6ba63c9fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b80edfb0425904b03426ef0ff3cdd1d251e638ea
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079835"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369635"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Nouveautés du centre de conformité Microsoft 365
 
@@ -29,9 +29,23 @@ Nous ajoutons constamment de nouvelles fonctionnalités au [Centre de conformit�
 > [!TIP]
 > Que se passe-t-il dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="september-2019"></a>Septembre 2019
 
 Vous vous demandez pourquoi il est calme sur la sortie ce mois-ci ? Nous sommes en tête de création de nouvelles solutions de conformité innovantes qui seront dévoilées chez [Microsoft enflamme](https://www.microsoft.com/ignite) en novembre. Restez informé !
+
+### <a name="new-encryption-options-for-sensitivity-labels"></a>Nouvelles options de chiffrement pour les étiquettes de sensibilité 
+
+Lors de la configuration du chiffrement pour une étiquette de sensibilité, vous disposez de deux options qui permettent aux utilisateurs d’attribuer des autorisations lorsqu’ils appliquent manuellement l’étiquette à la messagerie et aux documents :<br>
+- Lors de l’application de l’étiquette à la **messagerie Outlook**, les utilisateurs peuvent appliquer des restrictions équivalentes à celles de l’option ne pas transférer. Les destinataires seront en mesure de lire le message mais pas de transférer, imprimer ou copier le contenu.
+- Lors de l’application de l’étiquette à des **fichiers Word, PowerPoint et Excel**, les utilisateurs sont invités à attribuer des autorisations d’accès à des utilisateurs et des groupes spécifiques.
+
+[En savoir plus](encryption-sensitivity-labels.md#let-users-assign-permissions)
+
+## <a name="august-2019"></a>Août 2019
+
+### <a name="update-to-data-investigations"></a>Mise à jour des enquêtes de données
+
+Lors de l’exécution d’une enquête sur les données, vous pouvez maintenant supprimer des éléments de leur emplacement d’origine. Cela signifie que vous pouvez supprimer des éléments de boîtes aux lettres Exchange, de sites SharePoint et de comptes OneDrive au sein de votre organisation. Étant donné que vous avez collecté les éléments en tant que preuve, vous pouvez effectuer des copies de ces éléments dans l’ensemble de preuves pour vous faire une étude plus approfondie ou conserver une référence. [En savoir plus](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>Juillet 2019
 
@@ -49,34 +63,3 @@ Nous avons publié deux nouveaux rôles d’administrateur pour vous aider à g�
 Il n’y a plus de défilement dans un océan de rapports pour trouver ceux que vous souhaitez. Vous pouvez désormais Rechercher des rapports (en fonction de leur titre) et filtrer sur des catégories telles que « labels » et « Compliance » et des sources comme « Office 365 » et « Microsoft Cloud App Security ».
 
 ![Capture d’écran des boutons de recherche et de filtre des rapports avec un filtre appliqué](media/mcc_report_filtering.png)
-
-### <a name="help-content"></a>Contenu de l'aide
-
-Soulevez une chaise, attrapez une tasse de café et laissez nos documents de conformité les plus récents balayer.
-
-**eDiscovery (découverte électronique) avancée**
-- [Examiner les conversations dans Advanced eDiscovery](conversation-review-sets.md) Nouveaux
-- [Résolution des problèmes liés à AzCopy dans Advanced eDiscovery](troubleshooting-azcopy.md)
-- [Charger des données autres qu’Office 365 dans un jeu à réviser](load-non-office365-data.md)
-- [Correction d’erreur lors du traitement des données](error-remediation.md)
-
-**Archivage de données tierces**
-- [Configuration d’un connecteur pour l’archivage des données Bloomberg instantanées dans Office 365](archive-instant-bloomberg-data.md)
-
-**Audit**
-- [Audit de partage pour trouver les ressources partagées avec des utilisateurs externes](use-sharing-auditing.md)
-- [Référence de l’API Activité de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
-- [Résolution des problèmes d’API d’activités de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api)
-- [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](search-the-audit-log-in-security-and-compliance.md)
-
-**Chiffrement**
-- [Informations héritées pour le chiffrement de messages Office 365](legacy-information-for-message-encryption.md)
-
-**Classification**
-- [Créer des types d’informations sensibles personnalisés avec une classification des données exacte](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-
-**Gouvernance des données**
-- [Vue d’ensemble des stratégies de rétention](retention-policies.md)
-
-**Supervision**
-- [Stratégies de surveillance dans Office 365](supervision-policies.md)
