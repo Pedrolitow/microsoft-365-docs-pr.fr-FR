@@ -1,5 +1,5 @@
 ---
-title: 'Étape 7 : configurer la gestion des accès privilégiés pour Office 365'
+title: 'Étape 7 : Configurer la gestion des accès privilégiés pour Office 365'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,18 +13,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Familiarisez-vous avec la gestion des accès privilégiés pour Office 365 et apprenez à la configurer.
-ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: e9c68e4fafb1e9537b403965b4360806938c6a6f
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047287"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370421"
 ---
-# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Étape 7 : configurer la gestion des accès privilégiés pour Office 365
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Étape 7 : Configurer la gestion des accès privilégiés pour Office 365
 
 *Cette étape est facultative et s’applique uniquement à la version E5 et à la version Conformité avancée de Microsoft 365 Entreprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6 : protection des informations](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Vous activez la gestion des accès privilégiés en configurant des stratégies qui indiquent l’accès juste-à-temps pour les activités basées sur des tâches dans votre client Office 365. Elle peut vous aider à protéger votre organisation contre les violations qui pourraient survenir par le biais de comptes d’administrateur privilégiés existants qui donnent un accès permanent à des données sensibles ou à des paramètres de configuration critiques. Par exemple, vous pouvez configurer une stratégie de gestion des accès privilégiés qui requiert une approbation explicite pour pouvoir accéder aux paramètres de boîte aux lettres de votre organisation dans votre client Office 365 et les modifier.
 

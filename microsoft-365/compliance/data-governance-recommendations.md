@@ -1,7 +1,7 @@
 ---
 title: Comment le contenu est identifié pour consulter des recommandations de gouvernance des données
 ms.author: brendonb
-author: stephow-MSFT
+author: laurawi
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Le centre de Conformité et Sécurité Office 365 fournit des recommandations pour la gouvernance des données basées sur la configuration actuelle de votre organisation et vous permet de configurer certaines actions en quelques clics. Certaines de ces recommandations détectent du contenu spécifique dans votre organisation, puis actualisent les étapes recommandées pour la gestion de ce contenu. Par exemple, une recommandation peut détecter les éléments qui présentent un contenu de critique commerciale (tel qu un privilège client-avocat ou informations accord de confidentialité) et vous permet automatiquement d’appliquer une étiquette de rétention à ces éléments pour vous assurer qu’ils soient classés et conservés selon vos besoins . Cette rubrique répertorie les recommandations de gouvernance des données que vous pouvez voir et décrit quel contenu est détecté au déclenchement de chacun d’eux.
-ms.openlocfilehash: 3d96b7c15d5b6a0f6ec3bbf467bd8a1099af559a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 10752afb97fd0ae2993d88b4e3af9159d61de708
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078602"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342937"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>Comment le contenu est identifié pour consulter des recommandations de gouvernance des données
 
@@ -28,7 +28,7 @@ Cette rubrique répertorie les recommandations de gouvernance des données que v
 
 ## <a name="clean-up-voicemail"></a>Nettoyer la messagerie vocale
 
-Cette recommandation s’affiche lorsque les messages électroniques identifiés comme message de type « messagerie vocale » sont détectés dans les boîtes aux lettres des utilisateurs. En savoir plus sur [propriétés dans Exchange de message](https://docs.microsoft.com/fr-FR/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange).
+Cette recommandation s’affiche lorsque les messages électroniques identifiés comme message de type « messagerie vocale » sont détectés dans les boîtes aux lettres des utilisateurs. En savoir plus sur [propriétés dans Exchange de message](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange).
 
 ## <a name="label-attorney-client-privilege-content"></a>Étiquette du contenu client avocat privilège élevé 
 

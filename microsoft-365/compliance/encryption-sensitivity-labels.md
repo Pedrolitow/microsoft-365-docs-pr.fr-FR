@@ -1,7 +1,7 @@
 ---
 title: Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: ea7eda3558313389bfa2bc752a469e00cc7ae577
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148478"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369445"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité
 
@@ -135,7 +135,7 @@ Pour plus d’informations, reportez-vous à [Émetteur Rights Management et pro
 
 Vous pouvez utiliser ces options pour permettre aux utilisateurs d’attribuer des autorisations lorsqu’ils appliquent manuellement une étiquette de confidentialité à un contenu :
 
-- Dans Outlook, un utilisateur peut appliquer des restrictions équivalant à l’option **ne pas transférer**. Cette option est prise en charge en mode natif dans Outlook sur Windows et n’exige pas que vous installiez le client de l’étiquetage unifié Azure Information Protection.
+- Dans Outlook, un utilisateur peut appliquer des restrictions équivalant à l’option [ne pas transférer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). Cette option est prise en charge en mode natif dans Outlook sur Windows et n’exige pas que vous installiez le client de l’étiquetage unifié Azure Information Protection.
 - Dans Word, PowerPoint et Excel, l’utilisateur est invité à sélectionner un niveau d’autorisation pour des utilisateurs, des groupes ou des organisations spécifiques. Cette option n’est pas prise en charge en mode natif dans ces applications Office donc vos utilisateurs doivent installer le client de l’étiquetage unifié Azure Information Protection.
 
 Ces options déterminent les applications dans lesquelles l’étiquette de confidentialité s’affiche :

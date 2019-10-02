@@ -1,7 +1,7 @@
 ---
 title: Appliquer automatiquement une étiquette sensibilité au contenu
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 5bd20abdf85fa66057bb9336ca2af715125f4622
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f0287eff3a462bc6f30c18c561203ba1a9a9dc19
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078918"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37343107"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 

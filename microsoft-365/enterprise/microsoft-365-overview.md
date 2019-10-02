@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de Microsoft 365 Entreprise
+title: Vue d’ensemble de Microsoft 365 Entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,20 +11,20 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 Enterprise.
-ms.openlocfilehash: f08682709cc47dc8fa6b4fcd48dc4511ff251ba1
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 8ae6462c2d1de32aa44820f4f417b92bad6db7d3
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050285"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370461"
 ---
-# <a name="microsoft-365-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 Entreprise
+# <a name="microsoft-365-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 Entreprise
 
 Microsoft 365 Enterprise est une solution complète et intelligente qui permet à chacun d’être créatif et de collaborer en toute sécurité. 
 
 Bien que conçu pour les grandes entreprises, Microsoft 365 Enterprise peut également être utilisé pour les petites et moyennes entreprises qui ont besoin des fonctionnalités de sécurité et de productivité les plus avancées. 
 
-## <a name="components"></a>Components
+## <a name="components"></a>Composants
 
 Microsoft 365 Enterprise se compose des éléments suivants :
 
@@ -140,7 +140,7 @@ Pour plus d’informations sur le déploiement, voir How :
 
 |||
 |:-------|:-----|
-![](./media/m365-poster/m365-fundamentals.svg)| Demandez-vous et travaillez sur une certification Microsoft 365. <BR> Commencez par [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![Formation sur les notions de base de Microsoft 365](./media/m365-poster/m365-fundamentals.svg)| Demandez-vous et travaillez sur une certification Microsoft 365. <BR> Commencez par [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 |||
 
 
