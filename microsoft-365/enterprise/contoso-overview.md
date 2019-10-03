@@ -3,7 +3,7 @@ title: Présentation de la société Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,26 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
-ms.openlocfilehash: 2610cad2db4f5621759578b29e6a6e48c07b3654
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072524"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369555"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Présentation de la société Contoso Corporation
 
 **Résumé :** Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
 
-La société Contoso est une entreprise internationale dont le siège est à Paris. Il s’agit d’un conglomérat de production, de ventes et de service après-vente comptant plus de 100 000 produits.
+![Société Contoso](./media/contoso-overview/contoso-icon.png)
 
-![](./media/contoso-overview/contoso-icon.png)
+La société Contoso est une entreprise internationale dont le siège est à Paris. Il s’agit d’un conglomérat de production, de ventes et de service après-vente comptant plus de 100 000 produits.
 
 ## <a name="contoso-around-the-world"></a>Contoso dans le monde
 
 Dans la Figure 1, le siège social de l’entreprise se situe à Paris, tandis que ses centres régionaux et ses succursales sont répartis sur plusieurs continents.
 
-![](./media/contoso-overview/contoso-overview-fig1.png)
+![Bureaux internationaux de Contoso](./media/contoso-overview/contoso-overview-fig1.png)
 
 **Figure 1 : bureaux internationaux de Contoso**
  
@@ -61,7 +61,7 @@ Pour Contoso, il est essentiel de fournir un meilleur support technique aux coll
 
 ## <a name="design-considerations-for-microsoft-365-enterprise"></a>Conceptions envisagées pour Microsoft 365 Entreprise
 
-Les architectes informatiques de Contoso ont identifié les exigences suivantes en matière de conception lors du déploiement de Microsoft 365 Entreprise : 
+Les architectes informatiques de Contoso ont identifié les exigences et considérations suivantes en matière de conception lors du déploiement de Microsoft 365 Entreprise : 
 
 - Plusieurs implantations géographiques avec des réglementations et des exigences de conformité locales
 - Un centre de données intranet central dans les locaux du siège social et des serveurs d’application régionaux qui hébergent en interne la gamme d’applications professionnelles
@@ -70,12 +70,12 @@ Les architectes informatiques de Contoso ont identifié les exigences suivantes 
 - Un mélange d’appareils mobiles personnels et entreprise, notamment smartphones et tablettes iOS (iPhone et iPad) et Android
 - Nombreux collaborateurs en télétravail et mobiles
 - Nombreux partenaires commerciaux
-- Une grande quantité de données des clients et personnellement identifiables
+- Une grande quantité de d’informations client et informations d’identification personnelle
 - Une grande quantité de propriété intellectuelle de qualité sous forme de directives de conception pour les produits et de secrets commerciaux fabrication
 
 ## <a name="next-step"></a>Étape suivante
 
-[En savoir plus](contoso-infra-needs.md) à propos de l’infrastructure informatique locale de Contoso Corporation et comment leurs besoins commerciaux peuvent être traités avec Microsoft 365 Entreprise.
+[En savoir plus](contoso-infra-needs.md) sur l’infrastructure informatique locale de Contoso Corporation et comment leurs besoins commerciaux ont été traités avec Microsoft 365 Entreprise.
 
 ## <a name="see-also"></a>Voir aussi
 

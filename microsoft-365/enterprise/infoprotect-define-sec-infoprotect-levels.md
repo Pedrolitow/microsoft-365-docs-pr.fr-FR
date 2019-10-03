@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez les niveaux de protection des informations et de sécurité pour votre organisation.
-ms.openlocfilehash: a216079e38b173a8b35c49317a072975b0c7f36e
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 7f1f8a2099da8d99b1b7267e245a80d2143bb0ca
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047257"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370391"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Étape 1 : Définir les niveaux de protection des informations et de sécurité
 
 *Cette étape est requise et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6 : Protection des informations](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Lors de cette étape, vous allez définir les niveaux de sécurité et de protection de votre organisation. Par exemple, un niveau de sécurité relativement faible peut suffire à votre service commercial. En revanche, votre service de recherche et sa précieuse propriété intellectuelle nécessitent probablement un niveau de sécurité élevé avec chiffrage des fichiers et limitation d’accès au seul personnel de recherche.
 
@@ -42,4 +42,4 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](inf
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[Configurer la classification pour votre environnement](infoprotect-configure-classification.md)|
+|![Étape 2](./media/stepnumbers/Step2.png)|[Configurer la classification pour votre environnement](infoprotect-configure-classification.md)|

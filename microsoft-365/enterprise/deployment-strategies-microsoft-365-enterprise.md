@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment vous pouvez déployer les phases de l’infrastructure de base de Microsoft 365 Entreprise.
-ms.openlocfilehash: d71c46867e27252db90e55f304baa29e4bca4076
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148498"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369435"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Stratégies de déploiement de l’infrastructure de base de Microsoft 365 Entreprise
 
@@ -51,7 +51,7 @@ Le lancement pilote et le lancement utilisateur ne s’adressent pas aux mêmes 
 
 Voici comment ces deux lancements sont représentés dans cet article : 
 
-![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![graphiques décrivant les définitions des déploiements pilote et utilisateur](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 Le dégradé utilisé pour illustrer le lancement utilisateur représente le pourcentage de 0 % à 100 % au sein de votre organisation, qui est réalisé de façon méthodique ou structurée par groupe, département ou région.
 
@@ -76,7 +76,7 @@ Un déploiement en série vous permet de lancer une phase dans son intégralité
 
 Ce diagramme de Gantt illustre un déploiement en série simplifié des phases 2 à 6 de l’infrastructure de base de Microsoft 365 Entreprise.
 
-![](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![Déploiement en série des phases 2 à 6 de l’infrastructure de base](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 Pour simplifier notre exposé, nous partons du principe que les phases et les segments de déploiement au sein de chaque phase ont la même durée.
 
@@ -89,7 +89,7 @@ Voici une expérience utilisateur pilote simplifiée à titre d’exemple :
 - En décembre, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En mars, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
 - En juin, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
-- En septembre, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des périphériques mobiles)
+- En septembre, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En décembre, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
 Conclusion : vos lancements pilotes successifs sont espacés de 90 jours.
@@ -99,7 +99,7 @@ Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 - En janvier, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En avril, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
 - En juillet, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
-- En octobre, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des périphériques mobiles)
+- En octobre, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En janvier de l’année suivante, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
 Conclusion : vos lancements utilisateurs successifs sont espacés de 90 jours.
@@ -110,7 +110,7 @@ L’inconvénient de cette stratégie de déploiement est que le déploiement de
 
 Avec cette stratégie de déploiement, le lancement pilote de la phase d’après a lieu quand le lancement utilisateur de la phase en cours se termine. Vous trouverez dans le graphique ci-dessous le déroulé des phases 2 à 6.
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![Déploiement parallèle des phases 2 à 6 avec un lancement utilisateur décalé](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 Résultat : le lancement utilisateur pour la phase en cours se termine dans l’ensemble de votre organisation avant que la phase suivante commence. Les utilisateurs qui ne sont pas concernés par les lancements pilotes n’ont pas affaire aux lancement de plusieurs phases en même temps, mais vos lancements pilotes se terminent en parallèle des lancements utilisateurs.
 
@@ -145,7 +145,7 @@ Avec cette stratégie de déploiement :
 
 Voici une comparaison simplifiée des stratégies de déploiement.
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![Déploiement parallèle des phases 2 à 6 avec un lancement utilisateur concomitant](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 Résultat :
 
@@ -174,11 +174,11 @@ Conclusion : vos lancements utilisateurs successifs sont espacés de 30 jours.
 
 L’avantage de cette stratégie est que le déploiement intégral de l’infrastructure de base de Microsoft 365 Entreprise prend encore moins de temps. De plus, les utilisateurs finaux n’ont pas affaire à plusieurs déploiements simultanés. Toutefois, les utilisateurs ne prennent pas de pause entre les phases successives.
 
-### <a name="up-front-infrastructure-and-rollout-of-end-to-end-configuration"></a>Infrastructure initiale et lancement de la configuration de bout en bout
+### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>Infrastructure initiale et lancement de la configuration de bout en bout
 
-Pour les petites organisations ayant la possibilité de condenser les phases 2à 6 dans un seul segment de déploiement, le déploiement qui en résulte se présente de la façon suivante :
+Pour les petites organisations ayant la possibilité de condenser les phases 2à 6 dans un seul segment de déploiement, le déploiement qui en résulte se présente comme suit :
  
-![](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![Infrastructure initiale et lancement de la configuration de bout en bout](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 Le département informatique configure l’infrastructure pour les phases 2 à 6, puis la déploie auprès des utilisateurs pilotes pour vérifier les fonctionnalités de la configuration de bout à bout. Par exemple, les utilisateurs pilotes reçoivent toutes ces fonctionnalités en même temps :
 

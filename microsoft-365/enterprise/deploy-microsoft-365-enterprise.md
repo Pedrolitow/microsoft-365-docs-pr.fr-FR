@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 1d88ed400d20b15823d3991a1cd099bbb16ffa84
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050275"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369535"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
@@ -65,7 +65,7 @@ Pour déployer Microsoft 365 Entreprise vous-même, vous pouvez :
 
 Voici la relation entre l’infrastructure de base et les charges de travail et les scénarios.
 
-![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Relation entre l’infrastructure de base et les charges de travail et les scénarios](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 Scénarios et charges de travail fonctionnent sur la partie supérieure de l’infrastructure de base. Toutefois, pas besoin que toutes les phases de l’infrastructure de base soient prédéfinies pour commencer à utiliser des charges de travail pour la productivité et la collaboration.
 

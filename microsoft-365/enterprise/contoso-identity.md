@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: f40be4ad7d93781ff2ac980228ae5271a8e844c4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c78e8cc9235eb2ca5de091c05d1883ed6cca1b4
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982125"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369605"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -32,7 +32,7 @@ Contoso utilise une seule forêt Windows Server Active Directory Domain Servic
 
 La Figure 1 présente la forêt et les domaines régionaux de Contoso dans les régions du monde où se trouvent des centres régionaux.
 
-![](./media/contoso-identity/contoso-identity-fig1.png)
+![Forêt et domaines de Contoso dans le monde](./media/contoso-identity/contoso-identity-fig1.png)
  
 **Figure 1 : forêt et domaines de Contoso dans le monde**
 
@@ -47,13 +47,13 @@ Contoso autorise les éléments suivants :
 
 La Figure 2 montre que le réseau de périmètre de Contoso comprend un site web public, un extranet des partenaires et des serveurs pour les services ADFS (services de fédération Active Directory). Le réseau de périmètre est connecté à Internet, qui contient des clients, des partenaires et des services Internet.
 
-![](./media/contoso-identity/contoso-identity-fig2.png)
+![Prise en charge de l’authentification fédérée par Contoso pour ses clients et ses partenaires](./media/contoso-identity/contoso-identity-fig2.png)
 
 **Figure 2 : prise en charge de l’authentification fédérée par Contoso pour ses clients et ses partenaires**
  
 Les serveurs AD FS du DMZ facilitent l’authentification des informations d’identification client par leurs fournisseurs d’identité pour accéder au site web public et des informations d’identification partenaires pour accéder à l’extranet des partenaires.
 
-Contoso a décidé de conserver cette infrastructure pour la dédier à l’authentification des clients et des partenaires. Les architectes en identité de Contoso examinent actuellement la possibilité de convertir cette infrastructure en solutions [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) et [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) Azure AD.
+Contoso a décidé de conserver cette infrastructure et de la dédier aux authentifications de clients et de partenaires. Les architectes d’identité Contoso examinent la conversion de cette infrastructure en solutions [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) et [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) Azure AD.
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>Identité hybride avec authentification directe pour l’authentification basée sur le cloud
 
@@ -63,7 +63,7 @@ PBS synchronise la version de l’ensemble local AD DS avec le client Azure AD d
 
 Pour effectuer la synchronisation d’annuaire en cours, Contoso a déployé l’outil Azure AD Connect sur un serveur dans son centre de données de Paris. La figure 3 montre le serveur exécutant la connexion Azure Active Directory Connect interrogeant l’ensemble Contoso AD DS pour les modifications de l’interrogation et la synchronisation de ces modifications avec le client Azure AD.
 
-![](./media/contoso-identity/contoso-identity-fig4.png)
+![Infrastructure de la synchronisation d’annuaires de synchronisation de hachage de mot de passe de Contoso](./media/contoso-identity/contoso-identity-fig4.png)
  
 **Figure 3 : infrastructure de la synchronisation d’annuaires de synchronisation de hachage de mot de passe de Contoso**
 
@@ -78,7 +78,7 @@ Contoso a créé un jeu d’Azure AD et Intune [stratégies d’accès condition
 
 La Figure 4 montre l’ensemble de stratégies d’accès conditionnel basées sur l’identité et l’appareil.
 
-![](./media/contoso-identity/contoso-identity-fig5.png)
+![Stratégies d’accès conditionnel basées sur l’identité et l’appareil de Contoso](./media/contoso-identity/contoso-identity-fig5.png)
  
 **Figure 4 : stratégies d’accès conditionnel basées sur l’identité et l’appareil de Contoso**
 

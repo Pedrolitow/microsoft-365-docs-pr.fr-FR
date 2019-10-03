@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes de déploiement de l’infrastructure d’identité pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 2d9ffcc5122b5a5dfc94fb007167655e879d6799
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cb5b714afcacd1e21951ec9f83fd7f09cbd88662
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071693"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370441"
 ---
 # <a name="phase-2-identity"></a>Phase 2 : Identité
 
-![](./media/deploy-foundation-infrastructure/identity_icon.png)
+![Phase 2 : Identité](./media/deploy-foundation-infrastructure/identity_icon.png)
 
 Dans Microsoft 365 Entreprise, une infrastructure d’identités bien planifiée et exécutée ouvre la voie à une sécurité plus forte et à un accès à vos charges de travail de productivité et à leurs données uniquement par des utilisateurs et appareils authentifiés.
 
@@ -50,12 +50,12 @@ Procédez comme suit pour planifier et déployer votre nouvelle infrastructure d
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Créer et protéger vos comptes d’administrateur général](identity-create-protect-global-admins.md) |
-|![](./media/stepnumbers/Step2.png)| [Sécuriser vos mots de passe](identity-secure-your-passwords.md) |
-|![](./media/stepnumbers/Step3.png)| [Sécuriser et gérer les connexions de vos utilisateurs](identity-secure-user-sign-ins.md) |
-|![](./media/stepnumbers/Step4.png)| [Ajouter vos comptes d’utilisateurs](identity-add-user-accounts.md) |
-|![](./media/stepnumbers/Step5.png)| [Utiliser des groupes pour la gestion](identity-use-group-management.md) |
-|![](./media/stepnumbers/Step6.png)| [Configurer la gouvernance des identités](identity-configure-identity-governance.md) |
+|![Étape 1](./media/stepnumbers/Step1.png)| [Créer et protéger vos comptes d’administrateur général](identity-create-protect-global-admins.md) |
+|![Étape 2](./media/stepnumbers/Step2.png)| [Sécuriser vos mots de passe](identity-secure-your-passwords.md) |
+|![Étape 3](./media/stepnumbers/Step3.png)| [Sécuriser et gérer les connexions de vos utilisateurs](identity-secure-user-sign-ins.md) |
+|![Étape 4](./media/stepnumbers/Step4.png)| [Ajouter vos comptes d’utilisateurs](identity-add-user-accounts.md) |
+|![Étape 5](./media/stepnumbers/Step5.png)| [Utiliser des groupes pour la gestion](identity-use-group-management.md) |
+|![Étape 6](./media/stepnumbers/Step6.png)| [Configurer la gouvernance des identités](identity-configure-identity-governance.md) |
 
 Lorsque vous avez terminé ces étapes, accédez aux [critères de sortie](identity-exit-criteria.md) de cette phase pour vous assurer que vous répondez aux conditions requises et facultatives pour l’identité Microsoft 365 Entreprise.
 
@@ -74,11 +74,11 @@ Découvrez comment les experts informatiques de [Microsoft gèrent les identité
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, [a déployé une infrastructure d’identité hybride](contoso-identity.md) pour les services cloud Microsoft 365.
 
-![](./media/contoso-overview/contoso-icon.png)
+![Société Contoso](./media/contoso-overview/contoso-icon.png)
 
 
 ## <a name="next-step"></a>Étape suivante
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Créer et protéger vos comptes d’administrateur général](identity-create-protect-global-admins.md) |
+|![Étape 1](./media/stepnumbers/Step1.png)| [Créer et protéger vos comptes d’administrateur général](identity-create-protect-global-admins.md) |
