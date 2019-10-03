@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
-ms.openlocfilehash: 5deae85ae614079c23a373d4ecae7ce81aeb3fcd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aafd629b4efcfa1307a25bf8e340236f183998b5
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071773"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370241"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Étape 1 : Préparer votre organisation pour Windows 10 Entreprise
 
 *Cet article s'applique à la fois aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Avant de mettre à niveau vos appareils vers Windows 10 Entreprise, tenez compte des éléments suivants :
 
@@ -63,7 +63,7 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](win
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Déployer Windows 10 Entreprise pour les appareils existants en tant que mise à niveau inaltérable](windows10-deploy-inplaceupgrade.md) |
+|![Texte dans la liste 1](./media/stepnumbers/Step2.png)| [Déployer Windows 10 Entreprise pour les appareils existants en tant que mise à niveau inaltérable](windows10-deploy-inplaceupgrade.md) |
 
 
 

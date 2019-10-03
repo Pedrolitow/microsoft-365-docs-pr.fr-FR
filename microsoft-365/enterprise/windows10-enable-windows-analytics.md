@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 28cf3325dcb3551148d20defad0be88482554a7c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a6e197c7e95f70163c01f0064877811858062b36
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289396"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370091"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>Étape 4 : surveillance de la conformité et de l’état du périphérique
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics utilise des données de diagnostic pour fournir des informations riches et exploitables qui vous aideront à mieux comprendre l'efficacité opérationnelle et l’état des périphériques de Windows 10 dans votre environnement.
 
@@ -33,4 +33,4 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](win
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [Déployer les fonctionnalités de sécurité Windows 10 Entreprise](windows10-enable-security-features.md) |
+|![Étape 5](./media/stepnumbers/Step5.png)| [Déployer les fonctionnalités de sécurité Windows 10 Entreprise](windows10-enable-security-features.md) |

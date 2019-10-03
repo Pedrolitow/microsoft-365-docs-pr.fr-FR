@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Nous créons en permanence de nouveaux articles, en mettant à jour ceux existants et en apportant des modifications en fonction de vos commentaires. Découvrez les nouveautés et mises à jour ce mois-ci.
-ms.openlocfilehash: 744c1822331c71e718007105f58d1bc64b3c70df
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: d610ab37312a1305809d740a9353822293c48df0
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369648"
+ms.locfileid: "37376129"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -34,9 +34,9 @@ Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre co
 
 ### <a name="ediscovery"></a>eDiscovery
 
-[Examiner, dépanner et résoudre les problèmes eDiscovery courants](ediscovery-troubleshooting-common-issues.md) (nouveauté)<br> Inclut les étapes de dépannage de base à suivre pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus de découverte électronique.
+[Examiner, dépanner et résoudre les problèmes eDiscovery courants](ediscovery-troubleshooting-common-issues.md) (nouveauté)<br> Comprend les étapes de résolution de base à suivre pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus de découverte électronique.
 
-###<a name="supervision"></a>Supervision
+### <a name="supervision"></a>Supervision
 
 [Configurer des stratégies de surveillance pour votre organisation](configure-supervision-policies.md) (mise à jour)<br>Suppression des détails sur l’utilisation d’Outlook pour effectuer des révisions. À la place, utilisez les options de révision et de marquage disponibles dans l’interface utilisateur de supervision.
 
