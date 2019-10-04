@@ -1,10 +1,10 @@
 ---
-title: Examiner et répondre automatiquement aux menaces dans Office 365
+title: Enquêter et répondre automatiquement aux menaces dans Office 365
 keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menaces, avancé, menace, protection
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités de réponse aux incidents automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 5def4ab38c14629f2840e4b833fa9430d234e75c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 293b567cf24e9c6b0e33e28e9dd1ca0453fd0cd1
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080224"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37385731"
 ---
-# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Examiner et répondre automatiquement aux menaces dans Office 365
+# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Enquêter et répondre automatiquement aux menaces dans Office 365
 
 ## <a name="overview"></a>Vue d’ensemble
 
-[Office 365 protection avancée contre les menaces](office-365-atp.md) Plan 2 inclut des fonctionnalités de réponse aux incidents (AIR) qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité pour traiter les alertes et les menaces. 
+En fonction de votre abonnement, [Office 365 protection avancée contre les menaces](office-365-atp.md) peut inclure des fonctionnalités de réponse aux incidents (air) automatisées qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité pour traiter les alertes et les menaces.
+
 - Pour commencer à utiliser les fonctionnalités AIR dans Office 365, utilisez cet article. 
 - Pour obtenir une vue d’ensemble du fonctionnement de l’avion, voir [réponse automatique aux incidents dans Office 365](automated-investigation-response-office.md).
 
@@ -37,6 +38,12 @@ Avec AIR, lorsque certaines alertes sont déclenchées, un ou plusieurs règles 
 
 > [!NOTE]
 > Vous devez être un administrateur général, un administrateur de sécurité, un opérateur de sécurité ou un lecteur de sécurité pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [Microsoft 365 Security Center : Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+AIR est inclus dans les abonnements suivants :
+- Microsoft 365 E5
+- Microsoft 365 E5 Sécurité
+- Office 365 E5
+- Plan 2 de protection avancée contre les menaces Office 365
 
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 

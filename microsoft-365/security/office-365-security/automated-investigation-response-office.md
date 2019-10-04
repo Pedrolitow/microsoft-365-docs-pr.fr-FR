@@ -3,7 +3,7 @@ title: Recherche et réponse automatiques dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,27 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Découvrez les fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 1e600a7a392acc34fac2547a3daa17c0058322b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079482"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386201"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
-Les fonctionnalités d’analyse et de réponse automatisées (incluses dans [Office 365 Advanced Threat Protection](office-365-atp.md) plan 2) vous permettent d’exécuter des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. AIR peut aider votre équipe opérationnelle en matière de sécurité à fonctionner de manière plus efficace.
+Les fonctionnalités d’analyse et de réponse automatisées (AIR) vous permettent d’exécuter des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. AIR peut aider votre équipe opérationnelle en matière de sécurité à fonctionner de manière plus efficace.
 - Pour obtenir une vue d’ensemble du fonctionnement de l’avion, utilisez cet article.
 - Pour commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
 
 > [!NOTE]
 > Vous devez être un administrateur général, un administrateur de sécurité, un opérateur de sécurité ou un lecteur de sécurité pour accéder aux fonctionnalités AIR. Pour en savoir plus sur ces autorisations, consultez la rubrique [Microsoft 365 Security Center : Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+AIR est inclus dans les abonnements suivants :
+- Microsoft 365 E5
+- Microsoft 365 E5 Sécurité
+- Office 365 E5
+- Plan 2 de protection avancée contre les menaces Office 365
 
 ## <a name="the-overall-flow-of-air"></a>Flux d’AIR global
 
@@ -57,8 +63,12 @@ Dans la version initiale d’AIR (début du 2019 avril), les alertes générées
 
 - Messages électroniques contenant des URL d’hameçonnage supprimées après la remise *
 
+- Modèles d’envoi de courrier électronique suspects détectés #
+
+- Utilisateur non autorisé à envoyer un message électronique #
+
 > [!NOTE]
-> Les alertes signalées par un astérisque se voient attribuer une gravité *informatif* dans les stratégies d’alerte respectives dans le centre de sécurité & conformité, les notifications par courrier électronique étant désactivées. Les notifications par courrier électronique peuvent être activées par le biais de la [Configuration des stratégies d’alerte](../../compliance/alert-policies.md#alert-policy-settings).
+> Les alertes signalées par un astérisque (*) sont affectées d’une gravité *informatif* dans les stratégies d’alerte respectives dans le centre de sécurité & conformité, les notifications par courrier étant désactivées. Les notifications par courrier électronique peuvent être activées par le biais de la [Configuration des stratégies d’alerte](../../compliance/alert-policies.md#alert-policy-settings). Les alertes marquées avec un hachage (#) sont généralement des alertes disponibles associées aux règles de préversion publique.
 
 Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](#investigation-graph)correspondante. Notez que les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, vous devez modifier le filtrage des alertes de manière à inclure des alertes d’information.
 
@@ -74,15 +84,18 @@ Les règles de sécurité que vous obtenez avec AIR sont conçues pour aborder l
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Les règles de sécurité sont déployées en plusieurs phases
 
-Dans le cadre de l’AIR, les règles de sécurité sont déployées en plusieurs phases. Lors de la phase 1 (l’aperçu a commencé en avril 2019), plusieurs règles ont été publiées, qui incluent des recommandations pour les actions que les administrateurs de la sécurité examinent et approuvent :
+Dans le cadre de l’AIR, les règles de sécurité sont déployées en plusieurs phases. La phase 1 est désormais généralement disponible et comprend plusieurs règles qui fournissent des recommandations pour les actions que les administrateurs de la sécurité peuvent examiner et approuver :
 - Message hameçon signalé par l’utilisateur
-- URL cliquez sur modifier le verdict 
+- URL cliquez sur modifier le verdict
 - Détection de programmes malveillants après la livraison (programmes malveillants ZAP)
 - Hameçonnage détecté après la livraison ZAP (hameçon ZAP)
 
-La phase 1 inclut également des enquêtes manuelles par courrier électronique (à l’aide de l' [Explorateur de menaces](threat-explorer.md)).
+La phase 1 inclut également une prise en charge des enquêtes manuelles par courrier électronique (à l’aide de l' [Explorateur de menaces](threat-explorer.md)).
 
-La phase 2 est maintenant en cours. Consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour voir les autres éléments planifiés et bientôt disponibles.
+La phase 2 est désormais en cours avec les règles suivantes en **Aperçu public**, en fournissant des recommandations pour les actions et en aidant les administrateurs de la sécurité à examiner les problèmes :
+- Utilisateur signalé comme compromis (préversion publique)
+
+D’autres règles seront publiées au fur et à mesure de leur exécution. Consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour voir les autres éléments planifiés et bientôt disponibles.
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Les règles incluent une enquête et des recommandations
 

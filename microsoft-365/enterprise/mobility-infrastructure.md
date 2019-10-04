@@ -2,10 +2,10 @@
 title: 'Phase 5 : gestion des appareils mobiles'
 description: Microsoft 365 Enterprise inclut la gestion des appareils mobiles à l’aide de Microsoft Intune. Passez en revue les conditions requises et les conditions préalables, configurez Intune à l’aide de votre ressource Azure Active Directory, inscrivez iOS, macOS, Android et appareils Windows, déployer des applications, créer un profil, utiliser une stratégie de conformité et activer l’accès conditionnel pour les appareils mobiles gestion des appareils avec Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 entreprise, documentation Microsoft 365, gestion des appareils mobiles, Intune
-author: MandiOhlinger
-ms.author: mandia
-manager: dougeby
-ms.date: 08/28/2019
+author: JoeDavies-MSFT
+ms.author: josephd
+manager: laurawi
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 ms.service: ''
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 570b71a5e766738769b537a2601ede7f01bf078c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982805"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386141"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5 : gestion des appareils mobiles pour Microsoft 365 Enterprise
 
-![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Phase 5 : gestion des appareils mobiles](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *Cette fonctionnalité s’applique aux versions E3 et E5 de Microsoft 365 Enterprise*
 
@@ -34,11 +34,11 @@ Lors de cette phase, vous allez inscrire vos appareils dans Intune, puis créer 
 
 L’une des principales raisons de gérer les appareils mobiles est de sécuriser et de protéger les ressources de votre organisation. Les [méthodes courantes d’utilisation de Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) répertorient certains exemples concrets, notamment la sécurisation du courrier électronique et des données Office 365.
 
-Intune vous offre des options pour gérer l’accès à votre organisation à l’aide de la [gestion des appareils mobiles (MDM) ou de la gestion des applications mobiles (MAM)](https://docs.microsoft.com/intune/byod-technology-decisions). MDM est lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois l’enregistrement effectué, il s’agit d’appareils gérés et peut recevoir toutes les stratégies, les règles et les paramètres utilisés par votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, et bien plus encore.
+Intune vous offre des options pour gérer l’accès à votre organisation à l’aide de la gestion des appareils mobiles (MDM) ou de la gestion des applications mobiles (MAM). MDM est lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois l’enregistrement effectué, il s’agit d’appareils gérés et peut recevoir toutes les stratégies, les règles et les paramètres utilisés par votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, et bien plus encore.
 
 Les utilisateurs disposant de leurs propres appareils personnels peuvent ne pas vouloir inscrire leurs appareils ou être gérés par Intune et vos stratégies. Toutefois, vous devez toujours protéger les ressources et les données de votre organisation. Dans ce scénario, vous pouvez protéger vos applications à l’aide de MAM. Par exemple, vous pouvez utiliser une stratégie MAM qui exige qu’un utilisateur entre un code confidentiel lors de l’accès à SharePoint sur l’appareil.
 
-Vous allez également déterminer la manière dont vous allez gérer les appareils personnels ou appartenant à l’organisation. Vous souhaiterez peut-être traiter les appareils différemment en fonction de leur utilisation. Par exemple, vous pouvez souhaiter des plans différents pour les utilisateurs dans les ressources humaines (RH) ou les utilisateurs dans les ventes. [Identifier les scénarios d’utilisation de la gestion des appareils mobiles : les scénarios](https://docs.microsoft.com/intune/planning-guide-scenarios) peuvent vous aider à démarrer et incluent des conseils sur ces différents scénarios.
+Vous allez également déterminer la manière dont vous allez gérer les appareils personnels ou appartenant à l’organisation. Vous souhaiterez peut-être traiter les appareils différemment en fonction de leur utilisation. Par exemple, vous pouvez souhaiter des plans différents pour les utilisateurs dans les ressources humaines (RH) ou les utilisateurs dans les ventes. [Identifier les scénarios d’utilisation de la gestion des appareils mobiles : les scénarios](https://docs.microsoft.com/intune/planning-guide-scenarios) peuvent vous aider à démarrer et inclut des conseils sur ces différents scénarios.
 
 ## <a name="step-2-get-your-prerequisites"></a>Étape 2 : obtenir vos conditions préalables
 
@@ -54,7 +54,7 @@ Il peut y avoir des exigences supplémentaires en fonction des besoins de votre 
 
 Intune utilise de nombreuses fonctionnalités d’Azure AD, notamment votre domaine, vos utilisateurs et vos groupes. Vous pouvez également créer des utilisateurs et des groupes pour répondre aux besoins de votre entreprise. Par exemple, vous pouvez créer un groupe appelé **appareils iOS**ou **tous les utilisateurs RH**.  Tirez parti des [groupes dynamiques](https://docs.microsoft.com/intune/groups-add) qui vous permettent de créer des groupes d’utilisateurs ou des groupes d’appareils en fonction de règles simples ou avancées.
 
-Cette étape traite de la configuration d’Intune et de la préparation de vos appareils.
+Cette étape porte sur la configuration d’Intune et sa préparation pour la gestion de vos appareils.
 
 1. **[Vérifiez que vos appareils sont pris en charge](https://docs.microsoft.com/intune/supported-devices-browsers)**. Vérifiez que les appareils iOS, macOS, Android, Galaxy et Windows sont pris en charge par Intune. Si votre organisation inclut des appareils qui ne sont pas pris en charge, les stratégies ne sont pas appliquées à ces appareils.
 
@@ -66,13 +66,13 @@ Cette étape traite de la configuration d’Intune et de la préparation de vos 
 
 5. **[Ajouter des utilisateurs](https://docs.microsoft.com/intune/users-add)** et **[Ajouter des groupes](https://docs.microsoft.com/intune/groups-add)**. 
 
-   Vous pouvez ajouter manuellement des utilisateurs ou vous connecter à Azure AD pour synchroniser des utilisateurs avec Intune. Vous pouvez également attribuer des rôles d’administrateur à des utilisateurs spécifiques. Les utilisateurs sont obligatoires sauf si vos appareils sont des appareils « sans utilisateur », tels que des appareils Kiosk.
+   Vous pouvez ajouter manuellement des utilisateurs ou utiliser une identité hybride et Azure AD Connect pour synchroniser vos comptes d’utilisateurs locaux avec Intune. Vous pouvez également attribuer des rôles d’administrateur à des utilisateurs spécifiques. Les utilisateurs sont obligatoires sauf si vos appareils sont des appareils « sans utilisateur », tels que des appareils Kiosk.
 
    Les groupes Azure AD sont utilisés pour simplifier la gestion des appareils et des utilisateurs dans Intune. À l’aide de groupes, vous pouvez effectuer de nombreuses tâches différentes. Par exemple, votre organisation souhaite exiger une application spécifique sur les appareils Android. Vous pouvez créer un groupe de périphériques Android et déployer une stratégie avec cette application dans le groupe.
 
     Dans Intune, vous pouvez ajouter des utilisateurs ou des groupes que vous créez à la [phase 2 : Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)
 
-6. **[Attribuer des licences](https://docs.microsoft.com/intune/licenses-assign)**. Pour les utilisateurs ou les appareils à inscrire dans Intune, ils ont besoin d’une licence sur l’appareil. Chaque utilisateur ou appareil sans utilisateur nécessite une licence Intune pour accéder au service Intune. Ces licences sont incluses dans Microsoft 365 et doivent être affectées dans Intune.
+6. **[Attribuer des licences](https://docs.microsoft.com/intune/licenses-assign)**. Pour les utilisateurs ou les appareils à inscrire dans Intune, ils nécessitent une licence Microsoft 365 avec le service Intune activé pour accéder au service Intune. Vous attribuez des licences Microsoft 365, dont le service Microsoft Intune est activé par défaut, dans le centre d’administration 365 Microsoft ou avec PowerShell.
 
 ## <a name="step-4-enroll-devices"></a>Étape 4 : inscrire des appareils
 
@@ -82,7 +82,7 @@ L’enregistrement est une étape essentielle lors de l’utilisation d’Intune
 
 |||
 |:-------|:-----|
-|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : enregistrement des appareils iOS et Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : enregistrement des appareils iOS et Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -96,24 +96,24 @@ Intune peut gérer les applications, y compris ajouter des applications, les aff
 
 Lorsque les utilisateurs obtiennent un appareil mobile, l’une des premières tâches consiste à accéder aux documents et à la messagerie de l’organisation. À l’aide d’Intune, vous pouvez [créer et déployer des paramètres de messagerie](https://docs.microsoft.com/intune/email-settings-configure) à l’aide d’applications de messagerie pré-installées sur les appareils. 
 
-[Ajouter des applications](https://docs.microsoft.com/intune/app-management) répertorie les étapes d’ajout, de déploiement, de surveillance, de configuration et de protection des applications sur les appareils au sein de votre organisation.
+L’article [Ajouter des applications](https://docs.microsoft.com/intune/apps/apps-add) répertorie les étapes d’ajout, de déploiement, de surveillance, de configuration et de protection des applications sur les appareils au sein de votre organisation.
 
 |||
 |:-------|:-----|
-|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : stratégies de conformité des appareils](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : stratégies de conformité des appareils](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Étape 6 : activer la conformité et l’accès conditionnel
 
 Dans les étapes précédentes, vous configurez votre environnement et vous avez activé Intune. À présent, vous êtes prêt à créer des stratégies à l’aide de la conformité et de l’accès conditionnel.
 
-La conformité et l’accès conditionnel sont importants pour la gestion des appareils. Des **[stratégies de conformité](https://docs.microsoft.com/intune/device-compliance-get-started)** sont créées pour vous aider à protéger les ressources de votre organisation. Lorsque vous créez une stratégie de conformité, vous définissez la norme ou la « planification » de ce qu’un appareil doit disposer. Par exemple, vous pouvez choisir un niveau de menace acceptable (ou inacceptable), bloquer les appareils un jailbreak, exiger une longueur de mot de passe et bien plus encore. Si ces appareils ne répondent pas à vos règles, ce qui signifie qu’ils ne sont pas conformes, vous pouvez bloquer l’accès à vos ressources.
+La conformité et l’accès conditionnel sont importants pour la gestion des appareils. Des [stratégies de conformité](https://docs.microsoft.com/intune/device-compliance-get-started) sont créées pour vous aider à protéger les ressources de votre organisation. Lorsque vous créez une stratégie de conformité, vous définissez la norme ou la « planification » de ce qu’un appareil doit disposer. Par exemple, vous pouvez choisir un niveau de menace acceptable (ou inacceptable), bloquer les appareils un jailbreak, exiger une longueur de mot de passe et bien plus encore. Si ces appareils ne répondent pas à vos règles, ce qui signifie qu’ils ne sont pas conformes, vous pouvez bloquer l’accès à vos ressources.
 
-Ce « blocage » introduit un **[accès conditionnel](https://docs.microsoft.com/intune/conditional-access)**. Si un appareil est considéré comme non conforme, vous pouvez bloquer l’accès à la messagerie, à SharePoint et bien plus encore.
+Ce « blocage » introduit un [accès conditionnel](https://docs.microsoft.com/intune/conditional-access). Si un appareil est considéré comme non conforme, vous pouvez bloquer l’accès à la messagerie, à SharePoint et bien plus encore.
 
 Intune dans le [portail Azure](https://portal.azure.com) vous permet de créer ces stratégies et de les appliquer à vos utilisateurs et appareils. Il est recommandé de commencer petit et d’utiliser une approche intermédiaire. Par exemple, créez une stratégie iOS qui bloque les périphériques un jailbreak. Apply (appelé « Assign » dans Intune) la stratégie à un groupe pilote ou à un groupe de test. Après les tests initiaux, ajoutez d’autres utilisateurs au groupe pilote. À l’aide d’une approche intermédiaire, vous pouvez obtenir des commentaires d’une large gamme de types d’utilisateurs.
 
-[Prise en main des stratégies de conformité des appareils](https://docs.microsoft.com/intune/device-compliance-get-started) et [de l’accès conditionnel](https://docs.microsoft.com/intune/conditional-access) : peut vous aider à commencer.
+Consultez [la rubrique prise en main des stratégies de conformité des appareils](https://docs.microsoft.com/intune/device-compliance-get-started) et [Découvrez l’accès conditionnel et Intune ?](https://docs.microsoft.com/intune/conditional-access) pour vous aider à commencer.
 
 ## <a name="step-7-apply-features-and-settings"></a>Étape 7 : application des fonctionnalités et des paramètres
 
@@ -125,22 +125,21 @@ Intune dans le [portail Azure](https://portal.azure.com) vous permet de créer d
 - Utilisez la fonctionnalité applications restreintes sur des appareils iOS pour créer une liste des applications approuvées pouvant être installées. Ou créez une liste d’applications interdites.
 - Utilisez les paramètres Kiosk pour choisir les applications qui peuvent être utilisées sur les appareils Android exécutés en mode plein écran.
 - Appliquer une connexion Wi-Fi et ses paramètres, y compris le type de sécurité, sur les appareils exécutant macOS.
-- Et bien plus encore
 
-[Qu’est-ce que les profils d’appareils Microsoft Intune ?](https://docs.microsoft.com/intune/device-profiles) est un emplacement idéal pour lire les profils, voir comment créer un profil, et bien plus encore.
+[L’application des fonctionnalités et des paramètres de vos appareils à l’aide de profils d’appareil](https://docs.microsoft.com/intune/device-profiles) est un excellent point de vue des profils, de la procédure de création d’un profil, et bien plus encore.
 
 N’oubliez pas que vous devez commencer petit et utiliser une approche intermédiaire. Affectez le profil à un groupe pilote ou à un groupe de test. Ensuite, affectez le profil à d’autres groupes pilotes.
 
 ## <a name="step-8-get-to-know-the-other-features"></a>Étape 8 : Découvrez les autres fonctionnalités
 
-Intune est un service puissant qui inclut de nombreuses fonctionnalités. Voici quelques autres tâches que vous pouvez effectuer à l’aide d’Intune :
+Intune est un service puissant qui comprend de nombreuses fonctionnalités. Voici quelques autres tâches que vous pouvez effectuer à l’aide d’Intune :
 
 - Gérer les logiciels et les mises à jour sur les & [ordinateurs](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) [Windows et les appareils](https://docs.microsoft.com/intune/windows-update-for-business-configure) [iOS](https://docs.microsoft.com/intune/software-updates-ios)
 - Activez [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) sur vos appareils Windows 10 et utilisez la conformité et l’accès conditionnel pour protéger l’accès aux ressources d’entreprise, telles que SharePoint ou Exchange Online.
 - Utiliser [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)et d’autres partenaires de menaces de défense mobile
-- Ajouter une [autorité](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) de certification partenaire pour émettre et renouveler des certificats
+- Ajouter une [autorité de certification partenaire](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) pour émettre et renouveler des certificats
 - [Fournir des conseils à vos utilisateurs finaux](https://docs.microsoft.com/intune/end-user-educate) sur l’application portail d’entreprise, obtenir des applications et plus encore
-- Surveillez les [applications](https://docs.microsoft.com/intune/apps-monitor), surveillez la [conformité des appareils](https://docs.microsoft.com/intune/compliance-policy-monitor), surveillez les [profils de configuration](https://docs.microsoft.com/intune/compliance-policy-monitor)et la télémétrie à l’aide des journaux d’audit. Vous pouvez également vous connecter à l' [entrepôt de données Intune](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) et utiliser Power bi pour répondre à des besoins de création de rapports supplémentaires.
+- Surveiller les [applications](https://docs.microsoft.com/intune/apps-monitor) et les [profils de configuration et de conformité des appareils](https://docs.microsoft.com/intune/compliance-policy-monitor), ainsi que la télémétrie à l’aide des journaux d’audit. Vous pouvez également vous connecter à l' [entrepôt de données Intune](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) et utiliser Power bi pour répondre à des besoins de création de rapports supplémentaires.
 
 
 ## <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
@@ -158,7 +157,7 @@ Découvrez comment les experts informatiques de Microsoft [gèrent les appareils
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, a [déployé son infrastructure de gestion des appareils mobiles](contoso-mdm.md) avec les services Cloud de Microsoft 365.
 
-![](./media/contoso-overview/contoso-icon.png)
+![Société Contoso](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Étape suivante
 

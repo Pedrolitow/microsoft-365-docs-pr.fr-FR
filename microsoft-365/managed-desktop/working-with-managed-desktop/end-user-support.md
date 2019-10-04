@@ -6,30 +6,43 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de7f218b5cfe2dcdba6c29aea81bd6004adedf76
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
+ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047227"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37391217"
 ---
 # <a name="getting-help-for-end-users"></a>Obtenir de l’aide pour les utilisateurs finaux
 
 Les utilisateurs de votre organisation peuvent obtenir de l’aide sur leurs appareils de bureau gérés Microsoft de deux manières : **obtenir de l’aide** ou prendre en charge le téléphone. Ces deux options de support sont disponibles pour les utilisateurs 24 heures sur 24, 7 jours sur 7.
  
 >[!NOTE]
->Ces options de prise en charge ne sont pas disponibles pour les périphériques du groupe de test. 
+>Ces options de prise en charge ne sont pas disponibles pour les périphériques du groupe de test.
 
 ## <a name="get-help-app"></a>Obtenir une application d’aide
 
-La méthode préférée pour prendre en charge vos utilisateurs est **obtenir**de l’aide, une interface facile à utiliser intégrée à l’appareil de l’utilisateur final.  
+La méthode préférée pour prendre en charge vos utilisateurs est **obtenir**de l’aide, une interface conviviale intégrée à l’appareil de l’utilisateur final.  
 
 ![Obtenir de l’aide](images/get-help.png)
 
 Il s’agit d’une application installée sur tous les appareils de bureau gérés par Microsoft et qui est épinglée à la barre des tâches. 
 
 - Les utilisateurs finaux peuvent demander un appel vers un numéro de téléphone fourni ou converser en ligne avec un représentant du service.
-- Les demandes qui tombent en dehors de l’étendue prise en charge de bureau géré Microsoft sont redirigées vers le support informatique local via un appel téléphonique.  
+- Les demandes qui tombent en dehors de l’étendue prise en charge de bureau géré Microsoft sont redirigées vers le support informatique local via un appel téléphonique.
+
+### <a name="prerequisites"></a>Conditions préalables
+Pour permettre aux utilisateurs finaux d’obtenir de l’aide par le biais de l’application, assurez-vous que les conditions préalables suivantes sont remplies :
+
+- L’appareil doit être enregistré avec Microsoft Managed Desktop à l’aide de l’une des méthodes de la [configuration de Microsoft Managed Desktop Devices](../get-started/set-up-devices.md), par exemple, [enregistrer les nouveaux appareils](../get-started/register-devices-self.md).
+- La langue d’affichage du périphérique doit être définie sur l’un des paramètres régionaux anglais suivants : en-US, en-GB, en-au, en-NZ ou en-ca.
+- L’application obtenir de l’aide doit être à jour. Pour confirmer cela, recherchez les mises à jour de l’application dans le Microsoft Store.
+- Certains [points de terminaison](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) doivent être accessibles à partir de l’appareil.
+
+> [!NOTE]
+> L’application obtenir de l’aide peut prendre jusqu’à une heure après le déploiement d’un appareil pour qu’il fonctionne entièrement.
+
+Si vous avez vérifié ces conditions préalables et que l’application Get Help ne fonctionne toujours pas, vous devez, en tant qu’administrateur informatique, classer une [demande de support](admin-support.md).
 
 ## <a name="phone-support"></a>Prise en charge des téléphones
 
