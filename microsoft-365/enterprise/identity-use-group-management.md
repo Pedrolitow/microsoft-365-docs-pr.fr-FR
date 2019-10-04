@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous pouvez utiliser des groupes pour automatiser la gestion de certaines tâches administratives.
-ms.openlocfilehash: 01bbce00457362ed0eb089e126f0d17f31237eb4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 769fc0dd69b13978dbb9cf91d890ad271a7d9bb5
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079807"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370181"
 ---
 # <a name="step-5-use-groups-for-management"></a>Étape 5 : Utiliser des groupes pour la gestion
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>Autoriser les utilisateurs à créer et gérer leurs propres groupes
@@ -104,4 +104,4 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [Configurer la gouvernance des identités](identity-configure-identity-governance.md) |
+|![Étape 6](./media/stepnumbers/Step6.png)| [Configurer la gouvernance des identités](identity-configure-identity-governance.md) |

@@ -13,19 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous pouvez ajouter des comptes d’utilisateurs et des groupes directement dans le Cloud ou par synchronisation avec votre répertoire local.
-ms.openlocfilehash: ce831a6866f61342f6eb93836d44637742007c03
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 559ea58a5fcee5860a797893230b587adc33a17d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079814"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370221"
 ---
-# <a name="step-4-add-your-user-accounts"></a>Étape 4 : Ajouter vos comptes d’utilisateurs
+# <a name="step-4-add-your-user-accounts"></a>Étape 4 : Ajouter vos comptes d’utilisateurs
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
-## <a name="create-your-user-accounts-for-cloud-only-identity"></a>Créez vos comptes d’utilisateur pour l’identité Cloud uniquement
+## <a name="create-your-user-accounts-for-cloud-only-identity"></a>Créer vos comptes d’utilisateur pour l’identité Cloud uniquement
 
 Pour l’identité Cloud uniquement, créez vos utilisateurs et groupes dans Azure Active Directory (Azure AD). Vous pouvez utiliser :
 
@@ -126,4 +126,4 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [Utiliser des groupes pour la gestion](identity-use-group-management.md) |
+|![Étape 5](./media/stepnumbers/Step5.png)| [Utiliser des groupes pour la gestion](identity-use-group-management.md) |

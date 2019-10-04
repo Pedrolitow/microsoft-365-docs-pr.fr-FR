@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous pouvez sécuriser plus efficacement les connexions des utilisateurs aux appareils Windows et à Microsoft 365.
-ms.openlocfilehash: edf51b344ed8f9c8e13587cc2ccf0ba1ed081da6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079809"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370191"
 ---
-# <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Étape 3 : Sécuriser et gérer les connexions de vos utilisateurs
+# <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Étape 3 : Sécuriser et gérer les connexions de vos utilisateurs
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
-## <a name="use-windows-hello-for-business"></a>Utilisez Windows Hello Entreprise
+## <a name="use-windows-hello-for-business"></a>Utiliser Windows Hello Entreprise
 
 *Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
@@ -92,4 +92,4 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Ajout de comptes d’utilisateurs](identity-add-user-accounts.md) |
+|![Étape 4](./media/stepnumbers/Step4.png)| [Ajouter vos comptes d’utilisateurs](identity-add-user-accounts.md) |

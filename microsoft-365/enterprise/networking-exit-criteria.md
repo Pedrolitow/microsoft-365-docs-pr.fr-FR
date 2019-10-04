@@ -3,7 +3,7 @@ title: 'Phase 1 : Critères de sortie de l’infrastructure réseau'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,32 +13,32 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure réseau.
-ms.openlocfilehash: 9d818a97e79465d639c52f96901bd1cbaa31144a
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ad54284fdbd00fef486a13a957af6f06cb6a7450
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982775"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370151"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Phase 1 : Critères de sortie de l’infrastructure réseau
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1 : Mise en réseau](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Vérifiez que votre infrastructure réseau répond aux critères requis suivants et que vous avez pris en considération les critères facultatifs.
 
 <a name="crit-networking-step1"></a>
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatoire : votre réseau est prêt pour Microsoft 365 Entreprise
 
-- Vos bureaux disposent d’une bande passante Internet adéquate pour le trafic Microsoft 365, y compris pour l’installation et les mises à jour d’Office 365, de Microsoft Intune et de Windows 10 Entreprise
-- Votre réseau global est conforme à l’[architecture de référence Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)
-- Les modifications de votre réseau ont été testées et répondent aux exigences en matière de latence du trafic 
+- Vos bureaux disposent d’une bande passante Internet adéquate pour le trafic Microsoft 365, y compris pour l’installation et les mises à jour d’Office 365, de Microsoft Intune et de Windows 10 Entreprise.
+- Votre réseau global est conforme à une [architecture de référence Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Les modifications de votre réseau ont été testées et répondent aux exigences en matière de latence du trafic.
 
 Si nécessaire, l’[Étape 1](networking-provide-bandwidth-cloud-services.md) peut vous aider à répondre à cette exigence.
 
 <a name="crit-networking-step2"></a>
 ## <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Obligatoire : vos bureaux locaux ont une résolution de noms et des connexions Internet locales
 
-Vous avez configuré chaque bureau local avec un accès Internet via un fournisseur de services Internet local dont des serveurs DNS utilisent une adresse IP publique locale qui identifie leur emplacement sur Internet. Ainsi, les meilleures performances possibles pour les utilisateurs qui accèdent à Office 365 et Intune sont garanties.
+Vous avez configuré chaque bureau local avec un accès Internet via un fournisseur de services Internet local dont des serveurs DNS utilisent une adresse IP publique locale qui identifie leur emplacement sur Internet. Ainsi, les meilleures performances possibles pour les utilisateurs qui accèdent aux services cloud Microsoft 365 sont garanties.
 
 Si vous n’utilisez pas de fournisseur de services Internet local pour chaque filiale, les performances peuvent en pâtir car le trafic réseau doit parcourir la structure fondamentale d’une organisation ou des requêtes de données sont prises en charge par des serveurs frontaux à distance.
 
@@ -48,7 +48,7 @@ Utilisez un outil ou site web sur un appareil dans ce bureau pour déterminer l�
 Si nécessaire, l’[Étape 2](networking-dns-resolution-same-location.md) peut vous aider à répondre à cette exigence.
 
 <a name="crit-networking-step3"></a>
-## <a name="optional-unneeded-network-hairpins-are-removed"></a>Facultatif : les épingles de réseau inutiles sont supprimées
+## <a name="optional-unneccessary-network-hairpins-are-removed"></a>Facultatif : les épingles de réseau superflues sont supprimées
 
 Vous avez examiné vos épingles de réseau et avez identifié leur impact sur les performances pour tous vos bureaux. Vous avez supprimé les épingles de réseau lorsque cela était possible ou avez travaillé avec votre fournisseur de réseau ou de sécurité tiers pour implémenter une homologation Microsoft 365 optimale pour leur réseau.
 
@@ -83,4 +83,4 @@ Les utilisateurs de votre intranet sont désormais prêts à utiliser les servic
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Si vous suivez les phases de déploiement de bout en bout de Microsoft 365 Entreprise, la prochaine phase est l’[identité](identity-infrastructure.md). |
+|![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Si vous suivez les phases de déploiement de bout en bout de Microsoft 365 Entreprise, la prochaine phase est l’[identité](identity-infrastructure.md). |

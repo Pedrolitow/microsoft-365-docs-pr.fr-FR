@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vos comptes d’administrateur général ont besoin d’un traitement spécial leur assurant une protection contre la compromission des informations d’identification.
-ms.openlocfilehash: a32781686cd972ca96f6bb08f31c15ede016c4cd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079810"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370211"
 ---
-# <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Étape 1 : Créer et protéger vos comptes d’administrateur général
+# <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Étape 1 : Créer et protéger vos comptes d’administrateur général
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>Protéger des comptes d’administrateur général
@@ -110,5 +110,5 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](ide
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Sécuriser vos mots de passe](identity-secure-your-passwords.md) |
+|![Étape 2](./media/stepnumbers/Step2.png)| [Sécuriser vos mots de passe](identity-secure-your-passwords.md) |
 

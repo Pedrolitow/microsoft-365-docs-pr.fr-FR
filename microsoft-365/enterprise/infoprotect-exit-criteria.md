@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Examinez les critères de l’infrastructure et des services de protection des informations pour vérifier que votre configuration remplit les conditions requises de Microsoft 365 Entreprise.
-ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: f4896baeb4c18fc1eabac10b15f3ad8e150ab260
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047237"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370131"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Critères de sortie de l’infrastructure de protection des informations
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6 : Protection des informations](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Vérifiez que votre infrastructure de protection des informations répond aux critères obligatoires suivants et que vous avez pris en considération les critères facultatifs.
 
@@ -89,19 +89,19 @@ Votre personnel chargé de la conformité et de la sécurité des données utili
 Si nécessaire, l’[Étape 5](infoprotect-data-loss-prevention.md) peut vous aider à respecter cette exigence. 
 
 <a name="crit-infoprotect-step6"></a>
-## <a name="optional-email-encryption-is-configured"></a>Facultatif : le chiffrement de courrier est configuré
+## <a name="optional-email-encryption-is-configured"></a>Facultatif : le chiffrement d’e-mail est configuré
 
-Vous avez configuré le chiffrement de courrier suivant en fonction des besoins de votre organisation :
+Vous avez configuré le chiffrement d’e-mail suivant en fonction des besoins de votre organisation :
 
 |||
 |:-------|:-----|
-| **Méthode de chiffrement** | **Pour les messages envoyés** |
+| **Méthode de chiffrement** | **Pour les e-mails envoyés** |
 | [Chiffrement de messages Office 365 (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Hors de votre organisation avec chiffrement |
 | [Gestion des droits relatifs à l’information (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | Avec autorisations et chiffrement |
 | [S/MIME (Secure/Multipurpose Internet Mail Extension)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Avec chiffrement et signatures numériques à l’aide du chiffrement à clé publique |
 |||
 
-Si nécessaire, l’[Étape 6](infoprotect-email-encryption.md) peut vous aider à respecter cette exigence.
+Si nécessaire, l’[étape 6](infoprotect-email-encryption.md) peut vous aider à respecter cette exigence.
 
 <a name="crit-infoprotect-step7"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>Facultatif : configurer la gestion des accès privilégiés pour Office 365
