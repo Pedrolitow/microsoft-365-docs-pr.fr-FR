@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Intégrez les utilisateurs de votre organisation aux charges de travail productivité de Microsoft 365 Entreprise.
-ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369425"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403243"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
 
@@ -44,7 +44,7 @@ Les charges de travail et les scénarios décrits dans le guide de déploiement 
 
 ![Les charges de travail et scénarios dans le guide de déploiement global de Microsoft 365 Entreprise](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-Pour obtenir d’autres scénarios, reportez-vous à la [bibliothèque de productivité Microsoft 365](https://www.microsoft.com/microsoft-365/success/). 
+Pour obtenir d’autres scénarios, reportez-vous à la [bibliothèque de productivité Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary). 
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Conditions préalables pour l’infrastructure de base
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 2ff9923d0a301ba6ced720a9934ceb62bdff37c4
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: b73e16a52741a6587e9ed903cab6ddfedf896973
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306558"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403253"
 ---
 # <a name="empower-remote-workers"></a>Confiez des responsabilités aux travailleurs à distance
 
@@ -201,5 +201,6 @@ Vos travailleurs à distance peuvent utiliser leur appareil Windows 10 Entrepris
 
 [Scénarios et des charges de travail](deploy-workloads.md)
 
-[Guide de déploiement](deploy-microsoft-365-enterprise.md)
+[Bibliothèque de productivité Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)
 
+[Guide de déploiement](deploy-microsoft-365-enterprise.md)
