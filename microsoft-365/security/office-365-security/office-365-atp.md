@@ -3,7 +3,7 @@ title: Office 365 – Protection avancée contre les menaces
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 03/28/2019
+ms.date: 10/03/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: 3981d2bb37b1c9b91ed2b0a93f57a33940a25186
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9f2bedaa436aa5f38d8929e6bc8eda2e34896575
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080223"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386151"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 – Protection avancée contre les menaces
 
@@ -87,9 +87,16 @@ Office 365 – Protection avancée contre les menaces Plan 2 inclut des [outil
     
 ## <a name="save-time-with-automated-investigation-and-response"></a>Gagner du temps avec l’examen et la réponse automatisé
 
-(**NOUVEAU !**) Lorsque vous effectuez des recherches sur une attaque potentielle de sécurité sur Internet, le temps est essentiel. Plus vous pourrez identifier et atténuer les menaces rapidement, mieux votre organisation se portera. Office 365 – Protection avancée contre les menaces Plan 2 inclut désormais des fonctionnalités d’[examen et de réponse automatisés](automated-investigation-response-office.md). (Si vous n’avez pas encore ces fonctionnalités, vous les aurez bientôt avec ATP Plan 2.)
+(**NOUVEAU !**) Lorsque vous effectuez des recherches sur une attaque potentielle de sécurité sur Internet, le temps est essentiel. Plus vous pourrez identifier et atténuer les menaces rapidement, mieux votre organisation se portera. Les abonnements répertoriés ci-dessous incluent désormais des fonctionnalités d’[examen et de réponse automatisés](automated-investigation-response-office.md). (Si vous n’avez pas encore ces fonctionnalités, vous les aurez bientôt si vous disposez d’un de ces abonnements.)
 
-Examen et réponse automatisés inclut un ensemble de règles de sécurité qui peuvent être lancées automatiquement, par exemple lorsqu’une alerte est déclenchée, ou manuellement, par exemple à partir d’un affichage dans Explorer. Examen et réponse automatisés permet à votre équipe des opérations de sécurité d’économiser du temps et des efforts pour atténuer les menaces efficacement. Pour en savoir plus, voir [Examen et réponse automatisés avec Office 365](automated-investigation-response-office.md).
+Office 365 Examen et réponse automatisés est inclus dans les abonnements suivants :
+
+- Microsoft 365 E5
+- Microsoft 365 E5 Sécurité
+- Office 365 E5
+- Office 365 – Protection avancée contre les menaces Plan 2
+
+Examen et réponse automatisés inclut un ensemble de règles de sécurité qui peuvent être lancées automatiquement, par exemple lorsqu’une alerte est déclenchée, ou manuellement, par exemple à partir d’un affichage dans Explorer. Examen et réponse automatisés permet à votre équipe des opérations de sécurité d’économiser du temps et des efforts pour atténuer les menaces efficacement. Pour en savoir plus, consultez la page [Examen et réponse automatisés avec Office 365](automated-investigation-response-office.md).
 
 ## <a name="permissions-required-to-use-atp-features"></a>Autorisations requises pour utiliser les fonctionnalités ATP
 
