@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: c88b45fb568b0fe29bc967676ea09e89e9084a62
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078829"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417533"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -111,11 +111,16 @@ Les contrôles de certification sont généralement mis en œuvre par une person
 
 ## <a name="permissions"></a>Autorisations
 
-Le gestionnaire de conformité utilise un [modèle d’autorisation](working-with-compliance-manager.md#permissions)de contrôle d’accès basé sur un rôle. Par défaut, toutes les personnes de votre organisation disposant d’un compte Azure Active Directory (Azure AD) ont un accès total et peuvent effectuer n’importe quelle action dans le gestionnaire de conformité. Une fois le contrôle d’accès basé sur un rôle implémenté par votre organisation, les utilisateurs non affectés à un rôle de gestionnaire de conformité défini reçoivent un accès invité. Le personnel de service Microsoft ne dispose pas d’un accès permanent aux données que vous entrez ou téléchargez.
+Le gestionnaire de conformité utilise un modèle d’autorisation de contrôle d’accès basé sur un rôle. Seuls les utilisateurs auxquels un rôle d’utilisateur est attribué peuvent accéder au gestionnaire de conformité, et les actions autorisées par chaque utilisateur sont restreintes par type de rôle. [Afficher un tableau](working-with-compliance-manager.md#permissions) illustrant les actions autorisées pour chaque autorisation.
 
-Pour modifier les autorisations par défaut et implémenter un modèle de contrôle d’accès basé sur un rôle, au moins un utilisateur doit être ajouté à chaque rôle de gestionnaire de conformité. Une fois qu’un utilisateur est ajouté à un rôle, les autorisations permettant d’effectuer les actions affectées à ce rôle sont supprimées de l’ensemble d’autorisations par défaut disponible pour tous les utilisateurs. Seuls les utilisateurs configurés avec le rôle seront en mesure d’accéder au gestionnaire de conformité et d’effectuer les actions autorisées par ce rôle.
+L’administrateur du portail du gestionnaire de conformité peut définir des autorisations pour d’autres utilisateurs dans le gestionnaire de conformité en procédant comme suit :
 
-Si vous ajoutez un utilisateur au rôle pour gérer les évaluations, seuls les membres de ce rôle peuvent gérer les évaluations. Si vous n’ajoutez pas d’utilisateur au rôle qui permet aux utilisateurs de lire les données dans les évaluations, tous les utilisateurs de votre organisation peuvent accéder au gestionnaire de conformité et lire les données dans n’importe quelle évaluation.
+1. Dans le menu déroulant de **plus** haut, sélectionnez **administrateur**, puis **paramètres**.
+2. À partir de là, sélectionnez le rôle que vous souhaitez attribuer, puis ajoutez l’employé que vous souhaitez attribuer à ce rôle. Les utilisateurs peuvent alors effectuer certaines actions.
+
+En outre, les utilisateurs auxquels le [rôle de lecteur global est affecté dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) disposent d’autorisations en lecture seule pour accéder au gestionnaire de conformité ; Toutefois, ils ne peuvent pas modifier les données ou effectuer des actions dans le gestionnaire de conformité.
+
+Notez qu’il n’existe plus de rôle d' **accès invité** par défaut. Un rôle doit être affecté à chaque utilisateur afin d’y accéder et de l’utiliser dans le gestionnaire de conformité.
   
 ## <a name="manage-evidence"></a>Gérer les preuves
 

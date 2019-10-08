@@ -12,21 +12,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 148920fac825dab9f67a79bc11907b72218e47bc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: eb6e79d840439acec007fef54bf6cb5ca5633f1e
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078828"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417493"
 ---
 # <a name="compliance-score-methodology-preview"></a>Méthodologie du score de conformité (aperçu)
 
 > [!NOTE]
 > Le Score de conformité ne reflète pas forcément la conformité absolue de l’organisation avec une norme ou une réglementation spécifique. Il indique les contrôles que vous avez adoptés pour réduire les risques liés à la protection des données personnelles. Aucun service ne peut garantir que vous êtes en conformité avec une norme ou une réglementation. Le Score de conformité ne doit donc en aucun cas être considéré comme une garantie du respect des réglementations en vigueur.
 
-Le tableau de bord du gestionnaire de conformité affiche un score de conformité total pour les évaluations dans chaque vignette d’évaluation. Il s’agit du score de conformité global pour l’évaluation et de l’accumulation de points reçus pour chaque contrôle implémenté et testé dans l’évaluation. Pour une nouvelle évaluation, le score de conformité a une valeur initiale pour les contrôles gérés par Microsoft inclus testés par des tiers indépendants. Le score de conformité peut vous aider à hiérarchiser les évaluations et les contrôles à mettre en évidence pour améliorer votre position de conformité globale.
+Le tableau de bord du gestionnaire de conformité affiche un score de conformité total pour les évaluations dans chaque vignette d’évaluation. Il s’agit du score de conformité global pour l’évaluation et de l’accumulation de points reçus pour chaque contrôle implémenté et testé dans l’évaluation. Pour une nouvelle évaluation, le score de conformité a une valeur initiale pour les contrôles gérés par Microsoft inclus testés par des tiers indépendants. Le score de conformité est calculé en fonction des notes d’action gérées par Microsoft et des scores d’action gérés par le client. Le score de conformité peut vous aider à hiérarchiser les évaluations et les contrôles à mettre en évidence pour améliorer votre position de conformité globale.
 
-Les valeurs de score de conformité affichées pour le contrôle sont appliquées *dans leur intégralité* à la note de conformité totale en cas de réussite/échec. Le contrôle est implémenté et réussit le test d’évaluation suivant ou non. Il n’existe pas de crédit partiel pour une implémentation partielle. Les points affectés sont ajoutés au score de conformité lorsque le contrôle a :
+Les valeurs de score de conformité affichées pour le contrôle sont appliquées *dans leur intégralité* à la note de conformité totale en cas de réussite/échec. Le contrôle est implémenté et réussit le test d’évaluation suivant ou non. Les points affectés sont ajoutés au score de conformité lorsque le contrôle a :
 
 - Le statut de l' **implémentation** est égal à **implémenté** ou **autre implémentation** et,
 - Le **résultat des tests** est égal à **passé**.

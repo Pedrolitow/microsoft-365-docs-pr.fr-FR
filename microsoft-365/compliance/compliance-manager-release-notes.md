@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 815862616e1bdbf4b3be1d77de2a541ad703149f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078827"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417503"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notes de publication pour le gestionnaire de conformité (aperçu)
 
@@ -26,6 +26,8 @@ La préversion publique du gestionnaire de conformité vous permet d’accéder 
 Vous pouvez utiliser l’outil [Gestionnaire de conformité](https://servicetrust.microsoft.com/ComplianceManager) mis à jour sur le [portail d’approbation de service](https://servicetrust.microsoft.com) pour suivre, attribuer et vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>Nouveautés du gestionnaire de conformité (aperçu)
+
+- **Accès basé sur les rôles au gestionnaire de conformité :** Le rôle d' **accès deviner** par défaut a été supprimé. Pour qu’un utilisateur puisse accéder au gestionnaire de conformité, l’administrateur global doit [attribuer une autorisation à chaque utilisateur](compliance-manager-overview#permissions.md).
 
 - **Intégration avec le score de sécurité Microsoft :** Le gestionnaire de conformité prend en charge l’intégration avec le [score de sécurité Microsoft](../security/mtp/microsoft-secure-score.md) en mappant les actions gérées par le client à plus de 50 actions de score sécurisé. Lorsque vous terminez une action mappée dans le score de sécurité, l’action du gestionnaire de conformité correspondante est automatiquement mise à jour.
 
@@ -38,7 +40,7 @@ Vous pouvez utiliser l’outil [Gestionnaire de conformité](https://servicetrus
     - **Propriétaires :** Spécifiez un propriétaire pour chaque élément d’action.
     - **Actions des clients :** Gérez la liste complète des éléments actions inclus dans le gestionnaire de conformité (Preview) et activez/désactivez la surveillance du score sécurisé pour les éléments d’action intégrés avec le score sécurisé.
 
-- **Score de conformité mis à jour**: la méthodologie a changé pour prendre en charge la synchronisation avec le score de sécurité Microsoft. Le système de score supprime les crédits de contrôle gérés par Microsoft et se concentre uniquement sur l’exécution des contrôles gérés par le client.
+- **Score de conformité mis à jour**: la méthodologie a changé pour prendre en charge la synchronisation avec le score de sécurité Microsoft. Le score est calculé en fonction des scores d’action gérés par Microsoft et des scores d’action gérés par le client.
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>Problèmes connus dans le gestionnaire de conformité (aperçu)
 

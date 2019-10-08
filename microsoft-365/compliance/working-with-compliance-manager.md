@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 02cceb0487f357e6b40b634dc6d3cd7349ec2d96
-ms.sourcegitcommit: acf29701bfba3e4843e49a79fde012f3c7a7024a
+ms.openlocfilehash: d15899b994e4169c7362144623bc726f3825245d
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37350315"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417583"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -40,7 +40,7 @@ Pour vous aider à démarrer, une évaluation ISO/IEC 27001:2103 pour Office 365
 
 ## <a name="administration"></a>Administration
 
-Il existe des fonctions d’administration spécifiques uniquement disponibles pour l’administrateur client et visibles uniquement lorsque vous êtes connecté avec un compte d’administrateur général. Toutefois, tant que l’administrateur n’a pas affecté les rôles du gestionnaire de conformité aux utilisateurs, les données du gestionnaire de conformité sont visibles pour tous les utilisateurs de votre organisation. Nous vous recommandons d’implémenter le contrôle d’accès basé sur un rôle pour déterminer qui peut accéder à et effectuer des actions dans le gestionnaire de conformité.
+Il existe des fonctions d’administration spécifiques qui sont uniquement disponibles pour l’administrateur général et ne sont visibles que lorsque vous êtes connecté avec un compte d’administrateur général. Une fois que l’administrateur a attribué des rôles de gestionnaire de conformité à d’autres utilisateurs, ces derniers peuvent afficher les données dans le gestionnaire de conformité et effectuer les actions déterminées par leur rôle. L’administrateur peut également accorder un accès en lecture seule au gestionnaire de conformité en affectant à ce dernier le [rôle de lecteur global dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Affectation des rôles du Gestionnaire de conformité aux utilisateurs
 
@@ -535,7 +535,7 @@ Les modèles peuvent être personnalisés par le biais des contrôles personnali
 
 Le gestionnaire de conformité (aperçu) prend également en charge l’exportation des modèles au format JSON (JavaScript Object Notation). Cela vous permet d’échanger des données du gestionnaire de conformité avec d’autres systèmes qui prennent en charge JSON.
 
-## <a name="reports"></a>Reports
+## <a name="reports"></a>Rapports
 
 Vous pouvez exporter une évaluation vers un fichier Excel pour les parties prenantes en conformité dans votre organisation ou pour les auditeurs et régulateurs externes. Le rapport est une capture instantanée de l’évaluation à compter de la date et de l’heure de l’exportation. Le rapport contient les détails de Microsoft et des contrôles gérés par le client pour l’évaluation, le contrôle de l’état de l’implémentation, le contrôle de la date de test, les résultats des tests et les liens vers les documents de preuve téléchargés. Vous devez exporter les évaluations avant de les archiver car les évaluations archivées ne retiennent pas les liens vers les documents téléchargés.
 
@@ -551,15 +551,11 @@ Vous pouvez exporter une évaluation vers un fichier Excel pour les parties pren
 
 Le tableau suivant décrit chaque autorisation du gestionnaire de conformité et ce qu’il permet à l’utilisateur d’effectuer. Le tableau indique également le rôle auquel chaque autorisation est attribuée.
 
-||**Lecteur du Gestionnaire de conformité**|**Contributeur du Gestionnaire de conformité**|**Évaluateur du Gestionnaire de conformité**|**Administrateur du Gestionnaire de conformité**|**Administrateur du Portail**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Lire les données :** Les utilisateurs peuvent lire, mais pas modifier les données (à l’exception des données de modèle et de gestion des clients).  <br> | X | X | X | X  | X |
-|**Modifier les données :** Les utilisateurs peuvent modifier tous les champs, à l’exception des champs résultat de test et date du test (sauf pour les données de modèle et la gestion des clients).  <br> || X | X  | X | X |
-|**Modifier les résultats des tests :** Les utilisateurs peuvent modifier les champs résultat de test et date du test.  <br> ||| X | X | X |
-|**Gérer les évaluations :** Les utilisateurs peuvent créer, archiver et supprimer des évaluations.  <br> |||| X | X |
-|**Gérer les données principales :** Les utilisateurs peuvent afficher, modifier et supprimer des données de modèle et des données de gestion des clients.  <br> |||| X | X |
-|**Gérer les utilisateurs :** Les utilisateurs peuvent ajouter d’autres utilisateurs au sein de leur organisation aux rôles lecteur, collaborateur, évaluateur et administrateur. Seuls les utilisateurs disposant du rôle administrateur général dans votre organisation peuvent ajouter ou supprimer des utilisateurs du rôle d’administration du portail.  <br> ||||| X |
-
-### <a name="guest-access"></a>Accès invité
-  
-Une fois que l’accès au gestionnaire de conformité est configuré, tout utilisateur ne disposant pas d’un rôle configuré se trouve par défaut dans le rôle **accès invité** (ce qui est également l’expérience de tous les comptes non mis en service par l’organisation comme les comptes Microsoft personnels). Accès invité les utilisateurs ne disposent pas d’un accès total à toutes les fonctionnalités du gestionnaire de conformité. Ils ne peuvent pas voir les données d’évaluation de la conformité de l’organisation, mais ils peuvent utiliser le gestionnaire de conformité pour afficher les rapports d’évaluation de conformité et les documents d’approbation de service de Microsoft.
+||**Lecteur global Azure AD**|**Lecteur du Gestionnaire de conformité**|**Contributeur du Gestionnaire de conformité**|**Évaluateur du Gestionnaire de conformité**|**Administrateur du Gestionnaire de conformité**|**Administrateur du Portail**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|**Lire les données :** Les utilisateurs peuvent lire, mais pas modifier les données (à l’exception des données de modèle et de gestion des clients).  <br> | X | X | X | X | X  | X  |X |
+|**Modifier les données :** Les utilisateurs peuvent modifier tous les champs, à l’exception des champs résultat de test et date du test (sauf pour les données de modèle et la gestion des clients).  <br> ||| X | X  | X | X |
+|**Modifier les résultats des tests :** Les utilisateurs peuvent modifier les champs résultat de test et date du test.  <br> |||| X | X | X |
+|**Gérer les évaluations :** Les utilisateurs peuvent créer, archiver et supprimer des évaluations.  <br> ||||| X | X |
+|**Gérer les données principales :** Les utilisateurs peuvent afficher, modifier et supprimer des données de modèle et des données de gestion des clients.  <br> ||||| X | X |
+|**Gérer les utilisateurs :** Les utilisateurs peuvent ajouter d’autres utilisateurs au sein de leur organisation aux rôles lecteur, collaborateur, évaluateur et administrateur. Seuls les utilisateurs disposant du rôle administrateur général dans votre organisation peuvent ajouter ou supprimer des utilisateurs du rôle d’administration du portail.  <br> |||||| X |
