@@ -1,27 +1,27 @@
 ---
 title: Exemple de script pour l'application de paramètres EOP à plusieurs locataires
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 11/17/2014
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: L'exemple de script suivant permet aux administrateurs Microsoft Exchange Online Protection (EOP) qui gèrent plusieurs locataires (entreprises) d'utiliser Windows PowerShell pour appliquer les paramètres de configuration à leurs locataires.
-ms.openlocfilehash: 2886d2c1dd4dc2f324e8cc21babc3a9f4bf51e5f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 17e63bada043bd03a3f3f1a9f2a27dced1a23422
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079616"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441251"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Exemple de script pour l’application de paramètres EOP à plusieurs locataires
 
 L'exemple de script suivant permet aux administrateurs Microsoft Exchange Online Protection (EOP) qui gèrent plusieurs locataires (entreprises) d'utiliser Windows PowerShell pour appliquer les paramètres de configuration à leurs locataires.
-  
-### <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Pour exécuter un script ou une cmdlet sur plusieurs locataires
+
+## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Pour exécuter un script ou une cmdlet sur plusieurs locataires
 
 1. À l'aide d'une application telle qu'Excel, créez un fichier .csv (par exemple, c:\scripts\inputfile.csv) :
 
@@ -37,7 +37,7 @@ L'exemple de script suivant permet aux administrateurs Microsoft Exchange Online
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
    ```
 
-   Voici un exemple.
+   Voici un exemple :
 
    ```Powershell
    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
@@ -50,7 +50,7 @@ L'exemple de script suivant permet aux administrateurs Microsoft Exchange Online
 ```Powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
-#  
+#
 # .csv input file sample:
 # UserName,Cmdlet
 # admin@contoso.com,Get-AcceptedDomain | ft Name

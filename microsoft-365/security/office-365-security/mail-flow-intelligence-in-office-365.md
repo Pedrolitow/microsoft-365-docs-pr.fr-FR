@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs dans Office 365 (également appelés aide au flux de messagerie).
-ms.openlocfilehash: 718634f17ad5dd54773f2dc00595d5651cd27b51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 088af4b6924fde0277901a19437d17c4506ff22b
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078995"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441541"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Renseignements sur le flux de messagerie dans Office 365
 
@@ -130,6 +130,6 @@ En règle générale, cette erreur signifie qu’Office 365 a rencontré une err
 
 ## <a name="other-error-codes"></a>Autres codes d’erreur
 
-Office 365 rencontre des problèmes lors de la remise de messages à votre serveur de messagerie local ou partenaire. Utilisez les informations sur le **serveur de destination** dans l'erreur afin d'examiner le problème dans votre environnement ou modifiez le connecteur en cas d'erreur de configuration. 
+Office 365 rencontre des problèmes lors de la remise de messages à votre serveur de messagerie local ou partenaire. Utilisez les informations sur le **serveur de destination** dans l'erreur afin d'examiner le problème dans votre environnement ou modifiez le connecteur en cas d'erreur de configuration.
 
 Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.

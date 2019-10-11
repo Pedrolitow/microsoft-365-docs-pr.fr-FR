@@ -1,29 +1,29 @@
 ---
 title: Configurer votre service EOP
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 10/23/2018
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: fb2041914e23b529a6ef0744929f4a7d90f94735
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea8b1acd558c7231355412556df1330bd8a91ca1
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080452"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441211"
 ---
 # <a name="set-up-your-eop-service"></a>Configurer votre service EOP
 
 Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
-  
+
 > [!NOTE]
 > Elle suppose que vous disposez de boîtes aux lettres locales et que vous voulez les protéger avec EOP (scénario dit « autonome »). Si vous voulez héberger toutes vos boîtes aux lettres dans le nuage avec Exchange Online, il n'est pas nécessaire de réaliser toutes les étapes décrites dans cette rubrique. Accédez à [Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286312) pour vous inscrire et acheter des boîtes aux lettres en nuage. Si vous voulez héberger certaines de vos boîtes aux lettres localement et d'autres dans le nuage, il s'agit d'un scénario hybride. Des paramètres de flux de messagerie plus avancés sont requis. [Déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) explique le flux de messagerie hybride et comporte des liens vers des ressources qui expliquent comment le configurer.
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Durée d'exécution estimée de cette tâche : 1 heure
@@ -45,41 +45,41 @@ Cette rubrique explique comment configurer Microsoft Exchange Online Protection 
 
 > [!TIP]
 > L' [Ajout d’un domaine à office 365 et la](https://docs.microsoft.com/office365/admin/setup/add-domain) création d' [enregistrements DNS auprès d’un fournisseur d’hébergement dns pour Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) sont des ressources utiles à référencer lorsque vous ajoutez votre domaine au service et configurez le DNS.
-  
+
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Étape 2 : Ajouter des destinataires et éventuellement activer DBEB
 
 Avant de configurer votre flux de messagerie vers et depuis le service EOP, nous vous recommandons d'ajouter vos destinataires au service. Il existe plusieurs méthodes pour mener à bien cette opération, comme indiqué dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Aussi, si vous souhaitez activer le blocage du périmètre basé sur l'annuaire (DBEB) afin d'appliquer la vérification du destinataire dans le service après avoir ajouté vos destinataires, vous devez définir votre type de domaine sur Faisant autorité. Pour plus d'informations sur le DBEB, consultez la rubrique [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
-  
+
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Étape 3 : Utiliser le CAE pour configurer le flux de messagerie
 
 Créez des connecteurs dans le Centre d'administration Exchange (CAE) qui activent le flux de messagerie entre EOP et vos serveurs de messagerie locaux. Pour plus d'informations, consultez la rubrique [Set up connectors to route mail between Office 365 and your own email servers](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
-  
+
 ### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
 
 Vérifiez le flux de messagerie entre le service et votre environnement. Pour plus d’informations, consultez [la rubrique Test du flux de messagerie en validant vos connecteurs Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
-  
+
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l’accès SMTP entrant sur le port 25
 
 Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la propagation de vos mises à jour d'enregistrement DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
 ). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
-  
+
 > [!TIP]
 > Configurez les paramètres du serveur SMTP en définissant l'expiration du délai de connexion sur 60 secondes. Ce paramètre est acceptable pour la plupart des situations, ce qui permet un certain délai dans le cas d’un message envoyé avec une pièce jointe de grande taille, par exemple.
-  
+
 ## <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Étape 5 : Utiliser l'environnement de ligne de commande Exchange Management Shell pour vérifier que le courrier indésirable est routé vers le dossier Courrier indésirable de chaque utilisateur
 
 Pour vous assurer que le courrier indésirable est correctement routé vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez effectuer quelques opérations de configuration. Les étapes sont fournies dans la procédure [vous assurer que le courrier indésirable est acheminé vers le dossier de courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
-  
+
 Si vous ne souhaitez pas déplacer les messages vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de filtrage de contenu dans le Centre d'administration Exchange. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
-  
+
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6 : utiliser le centre d’administration Microsoft 365 pour faire pointer votre enregistrement MX vers EOP
 
 Suivez les étapes de configuration de domaine Office 365 pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant circule dans EOP. Veillez à pointer directement votre enregistrement MX vers EOP plutôt que de faire relayer votre courrier électronique vers EOP par un service de filtrage tiers. Pour plus d'informations, vous pouvez de nouveau vous reporter à la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
-  
+
 ### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
 
 À ce stade, vous avez vérifié la fourniture de service pour un connecteur local sortant correctement configuré et vous vous êtes assuré que votre enregistrement MX pointe vers EOP. Vous pouvez désormais exécuter les tests supplémentaires suivants afin de vérifier qu'un courrier électronique est bien remis par le service à votre environnement local :
-  
+
 - Vérifiez le flux de messagerie entre le service et votre environnement. Pour plus d’informations, consultez [la rubrique Test du flux de messagerie en validant vos connecteurs Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
 - Envoyez un message électronique à partir d'un compte de messagerie basé sur le web vers un destinataire de messagerie de votre organisation dont le domaine correspond au domaine ajouté au service. Vérifiez la remise du message à la boîte aux lettres locale à l'aide de Microsoft Outlook ou d'un autre client de messagerie.

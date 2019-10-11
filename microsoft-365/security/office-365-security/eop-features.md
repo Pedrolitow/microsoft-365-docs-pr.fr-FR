@@ -1,7 +1,7 @@
 ---
 title: Fonctionnalités EOP
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -10,20 +10,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
-ms.openlocfilehash: a5a11204cff0392245c91d371aad0fcae9e4d124
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1dd3ff638c9cb209c51a82fd2388057f3bf4b95e
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079107"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441511"
 ---
 # <a name="eop-features"></a>Fonctionnalités EOP
 
 Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
-  
+
 > [!TIP]
-> La [feuille de route d'Office 365 pour les entreprises](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) est une excellente ressource pour trouver des informations sur les nouvelles fonctionnalités à venir. Pour avoir une vision plus large des fonctionnalités disponibles avec les différents plans d'abonnement EOP, voir [Description du service de protection Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). 
-  
+> La [feuille de route d'Office 365 pour les entreprises](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) est une excellente ressource pour trouver des informations sur les nouvelles fonctionnalités à venir. Pour avoir une vision plus large des fonctionnalités disponibles avec les différents plans d'abonnement EOP, voir [Description du service de protection Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
 |||
 |:-----|:-----|
 |**Fonctionnalité**|**Description**|
@@ -41,7 +41,7 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 |Possibilité de configurer des options avancées de filtrage de courrier indésirable agressif|Pour plus d’informations, reportez-vous à [la rubrique Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) (c’est-à-dire où vous les configurez) et [Options avancées de filtrage du courrier indésirable](advanced-spam-filtering-asf-options.md) (qui fournit des détails spécifiques sur ce que fait chaque option|
 |Filtrage de courrier indésirable international|Vous pouvez configurer EOP afin de filtrer des messages rédigés dans certaines langues ou envoyés depuis des pays ou des régions spécifiques. Vous pouvez configurer jusqu'à 86 langues et 250 régions différentes. Le service appliquera l'action configurée au courrier indésirable à probabilité élevée. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).|
 |Gérer le courrier indésirable via Outlook ou Outlook sur le Web (anciennement appelé Outlook Web App)|Les administrateurs et les utilisateurs finaux peuvent créer des listes d'expéditeurs autorisés et des listes d'expéditeurs bloqués. Pour plus d'informations : <br/>• **Outlook sur le Web**: voir [bloquer ou autoriser (paramètres du courrier indésirable)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46).  <br/>• **Outlook**: consultez [la rubrique vue d’ensemble du filtre de courrier indésirable](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). <br/><br/> Si vous utilisez EOP pour protéger les boîtes aux lettres locales, veillez à utiliser la synchronisation d’annuaires pour vous assurer que ces paramètres sont synchronisés avec le service. Pour plus d'informations sur la configuration de la synchronisation d'annuaires, voir « Utilisation de la synchronisation d'annuaires pour gérer les utilisateurs de messagerie » dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).|
-|Soumission de courriers indésirables via le complément de rapport de courrier indésirable de Microsoft Office Outlook|Vous pouvez télécharger un complément d'Outlook pour pouvoir soumettre des courriers indésirables à Microsoft pour analyse. Pour plus d’informations sur le téléchargement et l’utilisation de cet outil, consultez [la rubrique activer le complément de message de rapport](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). <br/><br/> Si vous utilisez Exchange Server 2013 ou une version ultérieure avec EOP, vous pouvez également cliquer avec le bouton droit sur Outlook sur le Web pour envoyer des courriers indésirables, comme décrit dans [la rubrique signaler le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).|
+|Soumission de courriers indésirables via le complément de rapport de courrier indésirable de Microsoft Office Outlook|Vous pouvez télécharger un complément d'Outlook pour pouvoir soumettre des courriers indésirables à Microsoft pour analyse. Pour plus d’informations sur le téléchargement et l’utilisation de cet outil, consultez [la rubrique activer le complément de message de rapport](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). <br/><br/> Si vous utilisez Exchange Server 2013 ou une version ultérieure avec EOP, vous pouvez également cliquer avec le bouton droit sur Outlook sur le Web pour envoyer des courriers indésirables, comme décrit dans [la rubrique signaler le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).|
 |Soumission de courriers indésirables et de courriers légitimes via un alias de messagerie|Vous pouvez soumettre des courriers indésirables et des courriers légitimes à Microsoft par courrier électronique. Pour plus d'informations, consultez la rubrique [Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).|
 |Envois de courrier indésirable et non de courrier indésirable via Outlook sur le Web|Vous pouvez envoyer des courriers indésirables et des messages non indésirables à Microsoft via Outlook sur le Web. Pour plus d’informations, voir [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).  <br/><br/> Cette fonctionnalité est actuellement disponible pour les clients Outlook sur le Web dont les boîtes aux lettres Exchange Server 2013 SP1 ou versions ultérieures sont filtrées par EOP. Les clients Exchange Online Outlook sur le Web bénéficieront également de cette fonctionnalité dans un futur proche.|
 |Notifications de mise en quarantaine du courrier indésirable pour les utilisateurs finaux|Les utilisateurs finaux peuvent débloquer leurs propres messages indésirables mis en quarantaine, et éventuellement les signaler comme messages légitimes via les notifications de courrier indésirable. Ces messages de notification doivent être configurés et activés par un administrateur, comme décrit dans [configure end-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md) ou [configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md).|
@@ -77,7 +77,7 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 |Modifier le seuil de probabilité de courrier indésirable d'un message par règle|Vous pouvez inspecter un message en transit et lui attribuer un seuil de probabilité de courrier indésirable en fonction de critères que vous choisissez. Pour plus d’informations, consultez [la rubrique utiliser des règles de flux de messagerie pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).|
 |Inspecter les pièces jointes à un message|Vous pouvez examiner le contenu d'une pièce jointe ou les caractéristiques d'un fichier joint, puis définir l'action à effectuer en fonction de ce que vous avez trouvé. Pour plus d’informations, reportez-vous à la rubrique [using mail Flow Rules to Inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).|
 |**Administration**||
-|Administration web|Les administrateurs EOP peuvent gérer le service via l'interface du Centre d'administration Exchange (CAE), qui est prise en charge dans 60 langues. Pour plus d’informations, consultez la rubrique [Exchange Admin Center in Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md).|
+|Administration web|Les administrateurs EOP peuvent gérer le service via l'interface du Centre d'administration Exchange (CAE), qui est prise en charge dans 60 langues. Pour plus d’informations, voir [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Synchronisation d'annuaires|La synchronisation d'annuaires est disponible via l' Outil de synchronisation Windows Azure Active Directory. Pour plus d'informations, voir « Utilisation de la synchronisation d'annuaires pour gérer les utilisateurs de messagerie » dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).  |
 |Blocage du périmètre basé sur l'annuaire (DBEB)|La fonctionnalité DBEB vous permet de rejeter les messages pour les destinataires non valides sur le périmètre du réseau de service. Le DBEB permet aux administrateurs d'ajouter des destinataires à extension messagerie à Office 365 et de bloquer tous les messages envoyés à des adresses électroniques qui ne se trouvent pas dans Office 365. Pour plus d’informations sur la configuration de DBEB, consultez la rubrique [use Directory based Edge Blocking to Reject messages sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
 |Accès à Windows PowerShell à distance|Toutes les fonctionnalités EOP sont disponibles via Windows PowerShell à distance. Pour plus d’informations, consultez la rubrique [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|

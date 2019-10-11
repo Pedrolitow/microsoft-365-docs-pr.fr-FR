@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Apprenez à créer et importer un type d’informations sensibles personnalisé pour la protection contre la perte de données dans le Centre de sécurité et conformité.
-ms.openlocfilehash: baf715b6bb3a09495d6b5efa47eee6ea0ec3160a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ec5f61eec3e4f4f94fa955a936db0b245fc772eb
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078796"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435568"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité
 
@@ -114,8 +114,7 @@ Voici l’exemple de code XML du package de règles que nous allons créer dans
             <Description default="true" langcode="en-us">
             A custom classification for detecting Employee IDs.
             </Description>
-            <Name default="true" langcode="de-de">Name for German locale</Name>
-            <Description default="true" langcode="de-de">
+            <Description default="false" langcode="de-de">
             Description for German locale.
             </Description>
         </Resource>

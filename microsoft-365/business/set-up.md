@@ -1,5 +1,5 @@
 ---
-title: Configurer Microsoft 365 Business
+title: Configurer Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez comment configurer Microsoft 365 Business.
-ms.openlocfilehash: d33839693001f36fbb56541775015f739300b043
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4f31af3fa63416d3b1bd7281f7712313252ad437
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288492"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440591"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Configurer Microsoft 365 entreprise dans l’Assistant Installation
 
@@ -44,7 +44,7 @@ Lorsque vous achetez Microsoft 365 Business, vous avez la possibilité d’utili
     > [!IMPORTANT]
     > Si vous avez acheté un domaine lors de l’inscription, vous ne verrez pas **Ajouter une étape de domaine** ici. Accédez à [Ajouter des utilisateurs](#add-users-and-assign-licenses) à la place.
 
-    ![Sélectionnez Ajouter un domaine.](media/addadomainadmincenter.png)
+    ![Sélectionnez atteindre le programme d’installation.](media/gotosetupinadmincenter.png)
     
 3. Dans l’Assistant, entrez le nom de domaine que vous souhaitez utiliser (par exemple, contoso.com).
 
@@ -70,7 +70,9 @@ Tous les utilisateurs que vous ajoutez dans l’Assistant reçoivent automatique
 
 1. Si votre abonnement professionnel Microsoft 365 comporte des utilisateurs existants (par exemple, si vous avez utilisé Azure AD Connect), vous avez la possibilité de leur attribuer des licences. Poursuivez et ajoutez des licences pour eux aussi.
 
-3. Une fois que vous avez ajouté les utilisateurs, vous pouvez également partager les informations d’identification avec les nouveaux utilisateurs que vous avez ajoutés. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou de les télécharger.
+2. Une fois que vous avez ajouté les utilisateurs, vous pouvez également partager les informations d’identification avec les nouveaux utilisateurs que vous avez ajoutés. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou de les télécharger.
+
+3. Sur la création de teams pour votre organisation, vous pouvez choisir d’ajouter des équipes et d’y ajouter des utilisateurs. Vous pouvez également effectuer cette opération plus tard. Pour plus d’informations, consultez [la rubrique créer une équipe à l’échelle de l’entreprise](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
 
 4. Ignorez la migration des messages e-mail et sélectionnez **Suivant** dans la page **Migrer les messages e-mail**. 
 
@@ -86,14 +88,14 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
   
 1. L'Assistant Configuration détecte généralement votre bureau d'enregistrement et vous fournit un lien vers des instructions détaillées vous permettant de mettre à jour vos enregistrements NS sur le site web du bureau d'enregistrement. Si ce n’est pas le cas, [Modifiez les serveurs de noms pour configurer Office 365 avec n’importe quel](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2)Bureau d’enregistrement de domaine. 
 
-    - Si vous avez des enregistrements DNS existants, par exemple un site Web existant, mais que votre hôte DNS est activé pour la [connexion au domaine](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), choisissez **Ajouter des enregistrements pour moi**. 
+    - Si vous avez des enregistrements DNS existants, par exemple un site Web existant, mais que votre hôte DNS est activé pour la [connexion au domaine](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), choisissez **Ajouter des enregistrements pour moi**. Sur la page **choisir vos services en ligne** , acceptez toutes les valeurs par défaut, cliquez sur **suivant**, puis choisissez **autoriser** sur la page de votre hôte DNS.
     - Si vous avez des enregistrements DNS existants avec d’autres hôtes DNS (non activé pour la connexion au domaine), vous devez gérer vos propres enregistrements DNS pour vous assurer que les services existants restent connectés. Pour plus d’informations, voir [notions de base](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) sur le domaine.
 
         ![Connecter votre page de domaine avec je vais gérer mes propres enregistrements DNS.](media/connectyourdomainpage.png)
 
 2. Suivez les étapes de l’Assistant et de la messagerie et d’autres services sont configurés pour vous.
 
-### <a name="set-up-security-policies-and-device-configurations"></a>Configurer les stratégies de sécurité et les configurations des appareils 
+### <a name="protect-data-and-devices"></a>Protéger les données et les appareils 
 
 Les stratégies que vous configurez dans l’Assistant sont appliquées automatiquement à un [groupe de sécurité](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) appelé *tous les utilisateurs*. Vous pouvez également créer des groupes supplémentaires auxquels affecter des stratégies dans le centre d’administration.
 
@@ -113,7 +115,6 @@ Les stratégies que vous configurez dans l’Assistant sont appliquées automati
 3. Vous pouvez également choisir d' [installer automatiquement Office](install-office-on-windows-10-during-setup.md) sur les appareils Windows 10.
 
     ![Capture d’écran de la page définir la configuration de l’appareil Windows 10.](media/setwin10config.png)
-
 
 
 ## <a name="deploy-office-365-client-apps"></a>Déployer des applications clientes Office 365

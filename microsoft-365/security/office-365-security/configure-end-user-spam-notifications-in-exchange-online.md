@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour la stratégie de filtrage du courrier indésirable par défaut à l’échelle de l’entreprise ou pour les stratégies de filtrage du courrier indésirable personnalisées appliquées
-ms.openlocfilehash: 1c2832110c98af07752ac7dc7fc985fcb75bc0dd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9da8ae5a9fd17db1cd9d92f21950a2ef5eb1a225
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079932"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428395"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans Exchange Online
 
@@ -61,13 +61,13 @@ Pour plus d’informations sur les raccourcis clavier applicables aux procédure
     
 4. Dans la boîte de dialogue, vous pouvez configurer les options suivantes :
     
-1. **Activer les notifications de courrier indésirable à l'utilisateur final** Cochez cette case pour activer les notifications de courrier indésirable à l'utilisateur final pour cette stratégie. (À l'inverse, si la stratégie est activée, vous pouvez décocher cette case pour désactiver les notifications de courrier indésirable à l'utilisateur final pour cette stratégie.) 
+   - **Activer les notifications de courrier indésirable à l'utilisateur final** Cochez cette case pour activer les notifications de courrier indésirable à l'utilisateur final pour cette stratégie. (À l'inverse, si la stratégie est activée, vous pouvez décocher cette case pour désactiver les notifications de courrier indésirable à l'utilisateur final pour cette stratégie.) 
     
-2. **Envoyer des notifications de courrier indésirable à l'utilisateur final tous les (jours)** Spécifiez la fréquence d'envoi des notifications de courrier indésirable à l'utilisateur final. La valeur par défaut est 3 jours. Vous pouvez indiquer une valeur comprise entre 1 et 15 jours. Par exemple, si vous spécifiez 7 jours, la notification inclura la liste de tous les messages destinés à cet utilisateur au cours des 7 derniers jours qui ont été mis en quarantaine à la place. 
+   - **Envoyer des notifications de courrier indésirable à l'utilisateur final tous les (jours)** Spécifiez la fréquence d'envoi des notifications de courrier indésirable à l'utilisateur final. La valeur par défaut est 3 jours. Vous pouvez indiquer une valeur comprise entre 1 et 15 jours. Par exemple, si vous spécifiez 7 jours, la notification inclura la liste de tous les messages destinés à cet utilisateur au cours des 7 derniers jours qui ont été mis en quarantaine à la place. 
     
-3. **Langue de la notification** Dans la liste déroulante, sélectionnez la langue dans laquelle écrire les notifications de courrier indésirable à l'utilisateur final pour cette stratégie. 
+   - **Langue de la notification** Dans la liste déroulante, sélectionnez la langue dans laquelle écrire les notifications de courrier indésirable à l'utilisateur final pour cette stratégie. 
     
-5. Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie de filtrage du courrier indésirable, y compris les paramètres de notification de courrier indésirable de l’utilisateur final, apparaît dans le volet droit.
+   - Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie de filtrage du courrier indésirable, y compris les paramètres de notification de courrier indésirable de l’utilisateur final, apparaît dans le volet droit.
     
 > [!NOTE]
 >  Les notifications de courrier indésirable de l’utilisateur final ne seront fonctionnelles que pour les stratégies de filtrage du courrier indésirable activées. >  Les notifications de courrier indésirable pour l'utilisateur final sont envoyées uniquement une fois par jour. Le délai de remise de la notification ne peut pas être garanti pour chaque client et n'est pas configurable. 
@@ -76,6 +76,26 @@ Pour plus d’informations sur les raccourcis clavier applicables aux procédure
   
 ![Règle de transport pour tester les notifications de courrier indésirable de l'utilisateur final](../media/EOP-ESN-testspecificusers.jpg)
   
+## <a name="use-the-scc-to-configure-end-user-spam-notifications"></a>Utiliser SCC pour configurer les notifications de courrier indésirable de l’utilisateur final
+
+Vous pouvez également utiliser le centre de sécurité et de conformité (SCC) pour configurer les notifications de courrier indésirable de l’utilisateur final. Procédez comme suit :
+
+1. Ouvrez le centre de sécurité et conformité, accédez à **protection contre le courrier indésirable** de la **stratégie** \> de **gestion** \> des menaces ou utilisez le lien https://protection.office.com/antispamdirect.
+
+2. Cliquez sur la flèche vers le bas en regard de la stratégie de filtrage du courrier indésirable pour laquelle vous souhaitez activer les notifications de courrier indésirable pour l’utilisateur final.
+
+3. Cliquez sur le lien **configurer les notifications de courrier indésirable pour l’utilisateur final** .
+
+4. Dans la boîte de dialogue, vous pouvez configurer les options suivantes :
+    
+   - **Activer les notifications de courrier indésirable à l'utilisateur final** Cochez cette case pour activer les notifications de courrier indésirable à l'utilisateur final pour cette stratégie. (À l'inverse, si la stratégie est activée, vous pouvez décocher cette case pour désactiver les notifications de courrier indésirable à l'utilisateur final pour cette stratégie.) 
+    
+   - **Envoyer des notifications de courrier indésirable à l'utilisateur final tous les (jours)** Spécifiez la fréquence d'envoi des notifications de courrier indésirable à l'utilisateur final. La valeur par défaut est 3 jours. Vous pouvez indiquer une valeur comprise entre 1 et 15 jours. Par exemple, si vous spécifiez 7 jours, la notification inclura la liste de tous les messages destinés à cet utilisateur au cours des 7 derniers jours qui ont été mis en quarantaine à la place. 
+    
+   - **Langue de la notification** Dans la liste déroulante, sélectionnez la langue dans laquelle écrire les notifications de courrier indésirable à l'utilisateur final pour cette stratégie. 
+    
+   - Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie de filtrage du courrier indésirable, y compris les paramètres de notification de courrier indésirable de l’utilisateur final, apparaît dans le volet.
+
 ## <a name="for-more-information"></a>Pour plus d’informations
 
 [Configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md)

@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
-ms.openlocfilehash: ef2f08c953b91ccefcadd5947d2d0a9f39683ae2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079144"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440651"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365
 
@@ -123,7 +123,7 @@ Il existe deux cmdlets PowerShell à distance que vous pouvez utiliser pour supp
 Étapes pour les boîtes aux lettres qui se trouvent sur un serveur Exchange
 
 1. Connectez-vous au serveur Exchange à l’aide de PowerShell à distance. Suivez les étapes de la procédure [connexion à des serveurs Exchange à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps).
-2. Si vous souhaitez supprimer entièrement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la [cmdlet Remove-Inbox Rule ](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps): utilisez cette commande pour supprimer complètement une, plusieurs ou toutes les règles de la boîte aux lettres.
+2. Si vous souhaitez supprimer entièrement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la [cmdlet Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps): utilisez cette commande pour supprimer complètement une, plusieurs ou toutes les règles de la boîte aux lettres.
 3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la [cmdlet Disable-InboxRule](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
 
 Étapes pour les boîtes aux lettres dans Exchange Online
@@ -144,8 +144,8 @@ La meilleure façon de protéger vos comptes d’utilisateur, et en particulier 
     <li>Surveillez le mode d' <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">accès et d’utilisation</a>de vos comptes d’utilisateur. Vous n’êtes pas autorisé à empêcher la violation initiale, mais vous réduisez la durée et l’impact de la violation en la détectant plus tôt. Vous pouvez utiliser les <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">stratégies de sécurité d’application Cloud d’Office 365</a> pour surveiller les comptes et alerter les activités inhabituelles. 
         <ol type="a">
             <li><b>Plusieurs tentatives de connexion ayant échoué</b> Cette stratégie Profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités de connexion ayant échoué au cours d’une session unique en ce qui concerne la planification d’expérience utilisateur, ce qui peut indiquer une tentative de violation.</li>
-            <li><b>Déplacement impossible</b> - Cette stratégie Profile votre environnement et déclenche des alertes lorsque des activités sont détectées à partir du même utilisateur dans des emplacements différents pendant une période de temps qui est plus courte que le temps de trajet prévu entre les deux emplacements. Cela peut indiquer qu’un autre utilisateur utilise les mêmes informations d’identification. La détection de ce comportement anormal nécessite une période d’apprentissage initiale de sept jours pendant laquelle il apprend le modèle d’activité d’un nouvel utilisateur.</li>
-            <li><b>Activité usurpée inhabituelle (par utilisateur)</b> - Cette stratégie Profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités empruntées dans une session unique en ce qui concerne la base de référence apprise, ce qui peut indiquer une tentative de violation.</li>
+            <li><b>Voyage</b> - impossible cette stratégie Profile votre environnement et déclenche des alertes lorsque des activités sont détectées à partir du même utilisateur dans différents emplacements d’un délai inférieur au temps de trajet attendu entre les deux emplacements. Cela peut indiquer qu’un autre utilisateur utilise les mêmes informations d’identification. La détection de ce comportement anormal nécessite une période d’apprentissage initiale de sept jours pendant laquelle il apprend le modèle d’activité d’un nouvel utilisateur.</li>
+            <li><b>Activité usurpée inhabituelle (par utilisateur)</b> - cette stratégie Profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités empruntées dans une session unique relativement à la ligne de base apprise, ce qui peut indiquer une tentative de violation.</li>
         </ol>
     </li>
     <li>Utilisez un outil tel que le <a href="https://securescore.office.com/">score de sécurité Office 365</a> pour gérer les configurations et les comportements de sécurité des comptes. 

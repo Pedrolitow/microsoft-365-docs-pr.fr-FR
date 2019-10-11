@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: La protection anti-hameçonnage, avec une protection complète dans le cadre d’Office 365 protection avancée contre les menaces et de la protection de base dans Office 365 Exchange Online Protection, peut vous aider à protéger votre organisation contre les attaques de hameçonnage malveillant basées sur l’emprunt d’identité. et d’autres attaques par hameçonnage.
-ms.openlocfilehash: e668a4681f37f4a3d6977f9d42c4aa661a07cac7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 620a6f818d3de7c360c3dc22a0ca5822357fb487
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079723"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428405"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage
 
@@ -39,7 +39,7 @@ Que faire :
 3. Configurez une stratégie anti-hameçonnage ou une stratégie anti-hameçonnage ATP.
 
 >[!IMPORTANT]
-> Pour savoir comment les différentes technologies sont appliquées, consultez [la page Association des stratégies et des protections](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined).
+> Pour savoir comment les différentes technologies sont appliquées, consultez [la page Association des stratégies et des protections](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined).
 
 ## <a name="review-the-prerequisites"></a>Vérifier les conditions préalables
 
@@ -47,9 +47,9 @@ Que faire :
 
     |Role  |WHERE/How Assigned  |
     |---------|---------|
-    |Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+    |Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
     |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
-    |Gestion de l’organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+    |Gestion d’Organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
     Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
 
@@ -93,9 +93,6 @@ Lors de la configuration ou de la modification de vos stratégies de protection 
 |**Ajouter des expéditeurs et des domaines approuvés** <br/> |Définit les adresses de messagerie et les domaines qui ne seront pas considérés comme empruntés par cette stratégie. Les messages provenant des adresses de messagerie de l’expéditeur et des domaines que vous ajoutez en tant qu’expéditeurs approuvés et domaines ne seront jamais classés comme une attaque basée sur l’emprunt d’identité. Par conséquent, les actions et les paramètres de cette stratégie ne seront pas appliqués aux messages provenant de ces expéditeurs et domaines.  <br/><br/>La limite maximale de ces listes est d’environ 1000 entrées. |Lorsque les utilisateurs interagissent avec des domaines ou des utilisateurs qui déclenchent l’emprunt d’identité mais sont considérés comme sûrs. Par exemple, si un partenaire possède le même nom d’affichage ou nom de domaine que celui d’un utilisateur défini dans la liste.  <br/> |
 |**Appliqué à** <br/> |Définit les destinataires dont les messages électroniques entrants seront soumis aux règles de la stratégie. Vous pouvez créer des conditions et des exceptions pour les destinataires associés à la stratégie.  <br/> Par exemple, vous pouvez créer une stratégie globale pour votre organisation en appliquant la règle à tous les destinataires de votre domaine.  <br/> Vous pouvez également créer des règles d’exception, telles qu’une règle qui n’analyse pas les messages électroniques d’un groupe spécifique de destinataires.  <br/> |Chaque stratégie doit être associée à un ensemble d’utilisateurs, par exemple, les utilisateurs d’un groupe ou d’un domaine particulier.  <br/> |
 |**Seuils de hameçonnage avancés** <br/> |Définit le niveau de gestion des messages d’hameçonnage.  <br/> **Standard** Le courrier électronique suspect d’être un hameçonnage est géré de manière standard.  <br/> **Agressif** Les e-mails suspectés d’être hameçons avec un degré élevé ou très élevé de confiance sont gérés par le système de la même manière.  <br/> **Plus agressive** Les e-mails suspectés d’être hameçons avec un degré de confiance moyen, élevé ou très élevé sont gérés par le système de la même manière.  <br/> **La plus agressive** Les e-mails suspectés d’être hameçons avec un niveau de confiance faible, moyen, élevé ou très élevé sont gérés par le système de la même manière.  <br/> |Si vous souhaitez être plus agressif dans le traitement des messages potentiellement hameçons dans Office 365. Par exemple, les messages dont la probabilité d’hameçonnage est très élevée sont les actions les plus agressives, tandis que les messages avec une faible probabilité ont des actions moins agressives. Ce paramètre a également un impact sur les autres parties du système de filtrage qui combinent les signaux. Cela ne signifie pas nécessairement que différentes actions sont implémentées.  Fondamentalement, vous définissez la probabilité de courrier en hameçonnage, afin de déterminer la (même) action désignée. Le risque de transfert de messages de qualité augmente à mesure que le niveau de paramètres augmente.  <br/>|
-
-> [!IMPORTANT]
-> ![Image](../media/EnableMailboxIntelligenceBasedImpersonation.png) de nouveaux paramètres importants, separting * * Mailbox intelligence "from" Mailbox intelligence based usurpationing protection ". L’emprunt d’identité est lorsque vous accédez par programme à votre boîte aux lettres et exécutez des actions sur la boîte aux lettres à l’aide d’un script, d’une API ou d’un logiciel tiers, ou même du code malveillant dans votre boîte aux lettres.
 
 ## <a name="learn-about-anti-phishing-policy-options"></a>En savoir plus sur les options de stratégie anti-hameçonnage
 

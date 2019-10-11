@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Le Gestionnaire de conformité, disponible dans le Portail d’approbation de services de Microsoft, propose des outils pour suivre, implémenter et gérer les contrôles permettant à votre organisation de se conformer aux normes du secteur en matière de sécurité et de protection des données (par exemple, le RGPD, les normes ISO 27001 et 27018, la loi américaine HIPAA), quand elle utilise les services de cloud computing Microsoft, tels qu’Office 365 et Microsoft Azure. Le Gestionnaire de conformité permet à la personne responsable de la stratégie de protection des données et de la vie privée de votre organisation de gérer vos processus d’évaluation des risques et de conformité.
-ms.openlocfilehash: 6a06d69456ed1d42497f1d9f377252b079c6daba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 95816ca13818d068066c4e3c7fce371f1eeccc25
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080101"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417593"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Répondre aux exigences sur la protection des données et aux réglementations pendant l’utilisation des services de cloud computing Microsoft à l’aide du Gestionnaire de conformité
 
@@ -87,40 +87,29 @@ Une évaluation est constituée de plusieurs composants :
   
 ## <a name="permissions-and-role-based-access-control"></a>Autorisations et contrôle d’accès en fonction du rôle
 
-Par défaut, tous les membres de votre organisation ayant un compte Office 365 ou Azure AD ont accès au Gestionnaire de conformité et peuvent y effectuer des actions. Pour remplacer les autorisations par défaut par le modèle de contrôle d’accès en fonction du rôle, au moins un utilisateur doit être ajouté à chaque rôle du Gestionnaire de conformité (voir les instructions suivantes). Une fois qu’un utilisateur est ajouté à un rôle, les autorisations accordées pour effectuer les actions liées à ce rôle sont supprimées des autorisations accordées par défaut à tous les utilisateurs. Désormais, seuls les utilisateurs ayant obtenu ce rôle peuvent accéder au Gestionnaire de conformité et effectuer les actions autorisées par ce rôle.
+Le Gestionnaire de conformité utilise un modèle d’autorisation de contrôle d’accès basé sur les rôles. Seuls les utilisateurs dotés d’un rôle d’utilisateur peuvent accéder au Gestionnaire de conformité et les actions autorisées par utilisateur sont limitées par type de rôle.
   
-Une fois l’accès en fonction du rôle implémenté, tous les utilisateurs qui ne sont pas affectés à un rôle défini du Gestionnaire de conformité peuvent y accéder en tant qu’invité.
-  
-> [!NOTE]
-> Pour implémenter totalement le contrôle d’accès en fonction du rôle et gérer les utilisateurs autorisés à accéder et à effectuer des actions dans le Gestionnaire de conformité, un utilisateur doit être ajouté à chaque rôle pour que les autorisations par défaut puissent être modifiées. Par exemple, si vous ajoutez un utilisateur au rôle qui autorise les utilisateurs à gérer les évaluations, seuls les membres de ce rôle peuvent gérer les évaluations. De même, si vous n’ajoutez pas un utilisateur au rôle qui autorise les utilisateurs à lire les données des évaluations, tous les utilisateurs de votre organisation peuvent alors accéder au Gestionnaire de conformité et lire les données de n’importe quelle évaluation. 
+Notez qu’il n’y a plus de rôle **Accès invité** par défaut. Chaque utilisateur doit se voir attribuer un rôle afin de pouvoir utiliser le Gestionnaire de conformité.
   
 Le tableau suivant décrit chaque autorisation du Gestionnaire de conformité et les actions que l’utilisateur peut effectuer. Le tableau indique également le rôle auquel chaque autorisation est affectée.
   
 ||**Lecteur du Gestionnaire de conformité**|**Contributeur du Gestionnaire de conformité**|**Évaluateur du Gestionnaire de conformité**|**Administrateur du Gestionnaire de conformité**|**Administrateur du Portail**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|**Lire les données** : les utilisateurs peuvent consulter les données sans pouvoir les modifier.  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Modifier les données** : les utilisateurs peuvent modifier tous les champs à l’exception des champs Résultat de test et Date du test.  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Modifier les résultats de test** : les utilisateurs peuvent modifier les champs Résultat de test et Date du test.  <br/> |||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Gérer les évaluations** : les utilisateurs peuvent créer, archiver et supprimer des évaluations.  <br/> ||||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Gérer les utilisateurs** : les utilisateurs peuvent ajouter d’autres utilisateurs de leur organisation aux rôles Lecteur, Contributeur, Évaluateur et Administrateur. Seuls les utilisateurs ayant le rôle Administrateur général dans votre organisation peuvent ajouter ou supprimer des utilisateurs du rôle Administrateur du Portail.  <br/> |||||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Lire les données** : les utilisateurs peuvent consulter les données sans pouvoir les modifier.  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|
+|**Modifier les données** : les utilisateurs peuvent modifier tous les champs à l’exception des champs Résultat de test et Date du test.  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Modifier les résultats de test** : les utilisateurs peuvent modifier les champs Résultat de test et Date du test.  <br/> ||<br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Gérer les évaluations** : les utilisateurs peuvent créer, archiver et supprimer des évaluations.  <br/> |||<br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Gérer les utilisateurs** : les utilisateurs peuvent ajouter d’autres utilisateurs de leur organisation aux rôles Lecteur, Contributeur, Évaluateur et Administrateur. Seuls les utilisateurs ayant le rôle Administrateur général dans votre organisation peuvent ajouter ou supprimer des utilisateurs du rôle Administrateur du Portail.  <br/> ||||<br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-### <a name="guest-access"></a>Accès invité
-  
-Une fois le Gestionnaire de conformité configuré, tous les utilisateurs qui n’ont pas obtenu un rôle entre par défaut dans la catégorie **Accès invité** (vaut également pour n’importe quel compte extérieur à l’organisation, à l’instar des comptes Microsoft personnels). Les utilisateurs bénéficiant d’un accès invité ne peuvent ni accéder à toutes les fonctionnalités du Gestionnaire de conformité, ni consulter les données d’évaluation de la conformité de l’organisation. En revanche, ils peuvent utiliser le Gestionnaire de conformité pour afficher les rapports d’évaluation de la conformité de Microsoft et les documents d’approbation de services. Pour connaître les fonctionnalités accessibles et inaccessibles, consultez les images ci-dessous. Les fonctionnalités accessibles sont en bleu, les fonctionnalités inaccessibles sont en rouge. 
-  
-![Tableau de bord du Gestionnaire de conformité – Expérience de l’accès invité](media/7c9cb09d-ba13-4633-ad89-129a33e291f7.png)
-  
-![Gestionnaire de conformité – Graphique de l’accès invité](media/11dade9e-557d-4a7f-ac2a-a5a1c0eaea93.png)
-
 ## <a name="understanding-the-compliance-score"></a>Présentation du Score de conformité
 
-Dans le tableau de bord, le gestionnaire de conformité affiche le score total des évaluations Office 365 dans le coin supérieur droit de la vignette. Il représente le score de conformité total de l’évaluation. Celui-ci correspond à une accumulation de points obtenus pour chaque évaluation de contrôle marquée comme étant Implémenté et Testé dans l’évaluation. Quand vous ajoutez une évaluation, le score de conformité affiché est supérieur à 0, car il prend en compte les points alloués aux contrôles gérés par Microsoft ayant été implémentés par Microsoft et testés par des tiers indépendants.
+Sur le tableau de bord, le Gestionnaire de conformité affiche un score total pour les évaluations Office 365 dans l’angle supérieur droit de la vignette. Il s’agit du score de conformité total global de l’analyse, qui résulte de l’accumulation des points reçus pour chacune des analyses de contrôle qui a été marquée comme implémentée et testée dans le cadre de l’évaluation. Lors de l’ajout d’une évaluation, vous constaterez que le score de conformité est déjà en cours d’exécution, car les points pour les contrôles gérés par Microsoft qui ont été implémentés par Microsoft et testés par des tiers indépendants sont déjà appliqués.
   
 ![Tableau de bord du Gestionnaire de conformité – Score de conformité total](media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
   
 Les points restants proviennent de l’évaluation réussie du contrôle du client, à la suite de l’implémentation et du test des contrôles gérés par le client, chaque étape correspondant à une valeur spécifique qui s’ajoute au score de conformité global. 
   
-Chaque évaluation affiche un Score de conformité basé sur les risques pour vous aider à évaluer le niveau de risque (pour cause de non conformité ou de défaillance d’un contrôle) associé à chaque contrôle (qu’il soit géré par Microsoft ou le client) d’une évaluation. Chaque contrôle géré par le client reçoit un certain nombre de points (classement selon la gravité) sur une échelle de 1 à 10 en fonction de la gravité du risque : plus le facteur de risque est élevé, plus le contrôle obtient de points. 
+Chaque évaluation affiche un score de conformité basé sur le risque pour vous aider à évaluer le niveau de risque (en raison d’une non-conformité ou d’un échec de contrôle) associé à chacun des contrôles (gérés par Microsoft et par le client) d’une évaluation. Un nombre possible de points (appelé *classement de gravité) sur une échelle de 1 à 10 est attribué à chaque contrôle géré par le client. Plus le nombre de points attribués à un contrôle est important, plus le facteur de risque en cas d’échec du contrôle est élevé. 
   
 Par exemple, le contrôle d’évaluation Gestion de l’accès utilisateur illustré ci-dessous présente un risque très élevé et affiche une valeur de 10.
   
@@ -132,7 +121,7 @@ Par exemple, le contrôle d’évaluation Gestion de l’accès utilisateur illu
   
 Le Gestionnaire de conformité affecte un degré de gravité par défaut à chaque contrôle. Le classement des risques est calculé selon les critères suivants :
   
-- Si un contrôle évite des incidents (classement le plus élevé), détecte des incidents qui se sont produits ou corrige l’impact d’un incident (classement le plus faible). En termes de classement, un contrôle obligatoire qui prévient une menace obtient le nombre de points le plus élevé ; les contrôles de détection ou de correction (qu’ils soient obligatoires ou discrétionnaires) obtiennent le nombre de points le plus faible.
+- La présence d’un contrôle qui empêche les incidents (classement le plus élevé), détecte les incidents qui se sont produits, ou corrige l’impact d’un incident (classement le plus bas). En termes de degré de gravité, un contrôle obligatoire qui prévient une menace se voit attribuer le plus grand nombre de points ; les contrôles de détection ou de correction (qu’ils soient obligatoires ou discrétionnaires) se voient attribuer le plus petit nombre de points.
     
 - Si un contrôle (une fois implémenté) est obligatoire et ne peut pas être contourné par les utilisateurs (par exemple, les utilisateurs devant réinitialiser leur mot de passe et respecter les caractères et longueur de mot de passe exigés), ou s’il est discrétionnaire et peut être contourné par les utilisateurs (par exemple, des règles métier qui obligent les utilisateurs à verrouiller leur écran quand leur ordinateur est laissé sans surveillance).
     
@@ -142,13 +131,13 @@ Le Gestionnaire de conformité affecte un degré de gravité par défaut à chaq
     
 Les valeurs affichées du Score de conformité du contrôle sont appliquées *intégralement* au Score de conformité total si le contrôle est implémenté et réussit le test d’évaluation qui suit. Aucun point n’est accordé pour une implémentation partielle. Les points accordés sont ajoutés au Score de conformité total seulement si l’**État d’implémentation** du contrôle est défini sur **Implémenté** ou **Implémentation alternative** et le **Résultat de test** est défini sur **Réussite**. 
   
-De plus, le Score de conformité peut vous aider à hiérarchiser les contrôles à implémenter en priorité en indiquant les contrôles ayant un risque potentiel plus élevé en cas de problème lié à un contrôle. De plus, quand les contrôles d’évaluation sont associés à d’autres contrôles (soit dans la même évaluation, soit dans une autre évaluation du même regroupement), le succès de l’implémentation et du test d’un contrôle peut permettre de considérablement réduire les efforts liés à la synchronisation des résultats de test du contrôle.
+L’essentiel est que le score de conformité peut vous aider à hiérarchiser les contrôles pour vous concentrer sur l’implémentation en indiquant quels contrôles sont associés à un risque potentiel plus élevé en cas d’échec. En plus de la hiérarchisation basée sur les risques, quand des contrôles d’évaluation portent sur d’autres contrôles (soit dans la même évaluation, soit dans une autre faisant partie du même groupe d’évaluations), l’accomplissement d’un seul contrôle peut entraîner une réduction significative de l’effort en fonction de la synchronisation des résultats des tests de contrôle.
   
 Par exemple, dans l’image ci-dessous, l’évaluation GDPR-Office 365 est finalisée à 46 %, avec 51 contrôles sur 111 évalués et un score de conformité total de 289 sur un total possible de 600.
   
 ![Gestionnaire de conformité – Aperçu de l’évaluation](media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
   
-Dans l’évaluation GDPR ci-dessous, le contrôle 7.5.5 est associé à 5 autres contrôles (7.4.1, 7.4.3, 7.4.4, 7.4.8,.7.4.9 et 6) ayant une cote de risque modéré à élevé de 8 ou 8). Nous avons utilisé le filtre de l’évaluation pour sélectionner tous ces contrôles et les afficher. Nous pouvons alors voir qu’aucun d’entre eux n’a été évalué. 
+Au sein de l’analyse du contrôle RGPD, le contrôle 7.5.5 est lié à 5 autres contrôles (7.4.1, 7.4.3, 7.4.4, 7.4.8 et 7.4.9) chacun avec un score de gravité du risque modéré à élevé (de 6 ou 8). En utilisant le filtre d’évaluation, nous avons sélectionné tous ces contrôles afin de les rendre visibles dans la vue d’évaluation, et nous pouvons constater ci-dessous qu’aucun d’entre eux n’a été évalué. 
   
 ![Gestionnaire de conformité – Affichage de l’évaluation – Contrôles de filtre, aucun évalué](media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Si l’un de ces 6 contrôles est finalisé, les résultats de test seront synchronisés avec les contrôles associés de cette évaluation (tout comme n’importe quel contrôle d’une évaluation appartenant au même regroupement). À la fin de l’implémentation et du test du contrôle GDPR 7.5.5, la zone de détails du contrôle s’actualise et indique que les 6 contrôles ont été évalués, le nombre de contrôles évalués passant de 57 et 51 % et le Score de conformité total à + 40. 
   
@@ -170,7 +159,7 @@ Le Score de conformité, à l’instar du Degré de sécurisation Microsoft, s�
   
 Les évaluations dans le Gestionnaire de conformité sont basées sur le modèle de responsabilité partagée relatif au cloud computing. Dans le modèle de responsabilité partagée, Microsoft et le client sont chacun responsables de la protection des données du client quand celles-ci sont stockées dans notre cloud.
   
-Comme illustré dans l’évaluation GDPR-Office 365 ci-dessous, Microsoft et les clients sont chacun responsables de prendre des mesures pour satisfaire aux exigences de la norme ou du règlement évalué. Pour rationaliser et comprendre les actions requises par différentes normes et réglementations, le Gestionnaire de conformité traite toutes les normes et réglementations comme s’il s’agissait de cadres de contrôle. Ainsi, les Actions effectuées par Microsoft et les clients pour chaque évaluation exigent l’implémentation et la validation de plusieurs contrôles.
+Comme illustré dans l’analyse RGPD Office 365 ci-dessous, Microsoft et ses clients sont conjointement responsables de la mise en œuvre des différentes actions permettant de répondre aux exigences de la norme ou de la réglementation évaluée. Pour rationaliser et comprendre les actions requises pour répondre aux exigences d’un large éventail de normes et réglementations, le Gestionnaire de conformité traite toutes les normes et réglementations comme s’il s’agissait de cadres de contrôle. Ainsi, les actions mises en œuvre par Microsoft et par les clients pour chaque évaluation impliquent l’implémentation et la validation de différents contrôles.
   
 ![Gestionnaire de conformité – Évaluation GDPR](media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
   

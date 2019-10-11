@@ -1,7 +1,7 @@
 ---
 title: Règles de flux de messagerie (règles de transport) dans Exchange Online Protection
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -10,25 +10,25 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Vous pouvez utiliser des règles de flux de messagerie (règles de transport) pour identifier et effectuer des actions sur les messages qui circulent dans votre organisation Office 365.
-ms.openlocfilehash: 50b068c39ad02d04596b6598c31333be79ac28c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: acd661962c1223c4124c492ce66f463d27e7ca10
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079966"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441531"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Règles de flux de messagerie (règles de transport) dans Exchange Online Protection
 
 Vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour identifier les messages qui circulent dans votre organisation Office 365 et agir sur ceux-ci. Les règles de flux de messagerie sont semblables aux règles de boîte de réception disponibles dans Outlook et Outlook sur le web. La principale différence réside dans le fait que les règles de flux de messagerie agissent sur les messages pendant qu'ils sont en transit, et non une fois qu'ils ont été remis dans la boîte aux lettres. Les règles de flux de messagerie contiennent un plus vaste ensemble de conditions, d'exceptions et d'actions, ce qui vous permet de mettre en place facilement plusieurs types de stratégies de messagerie.
-  
+
 Cet article décrit les composants des règles de flux de messagerie et leur fonctionnement.
-  
+
 Pour connaître les étapes à suivre pour créer, copier et gérer les règles de flux de messagerie, consultez la rubrique [Manage mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Pour chaque règle, vous avez la possibilité de l'appliquer, de la tester ou bien de la tester et d'avertir l'expéditeur. Pour en savoir plus sur les options de test, voir [tester les règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) et les [conseils de stratégie dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
-  
+
 Pour obtenir un résumé et des rapports détaillés concernant les messages qui correspondent aux règles de flux de messagerie, consultez la rubrique [Utilisation des rapports de protection de messagerie dans Office 365 pour afficher les données sur les programmes malveillants, le courrier électronique et les détections de règles](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
-  
+
 Pour mettre en œuvre des stratégies de messagerie spécifiques à l'aide de règles de flux de messagerie, consultez ces rubriques :
-  
+
 - [Utiliser des règles de flux de messagerie pour inspecter les pièces jointes des messages dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [Configurer le chiffrement dans Office 365 Entreprise](../../compliance/set-up-encryption.md)
@@ -44,20 +44,20 @@ Pour mettre en œuvre des stratégies de messagerie spécifiques à l'aide de r�
 - [Définir des règles pour chiffrer ou déchiffrer des messages électroniques](https://go.microsoft.com/fwlink/p/?Linkid=402846)
 
 La vidéo suivante fournit une démonstration de la configuration des règles de flux de messagerie dans Exchange Online Protection.
-  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
+
 ## <a name="mail-flow-rule-components"></a>Composants de règle de flux de messagerie
 
 Une règle de flux de messagerie est constituée de conditions, d’exceptions, d’actions et de propriétés :
-  
-- **Conditions**: identifier les messages auxquels vous voulez appliquer les actions. Certaines conditions examinent les champs d’en-tête de message (par exemple, les champs À, De ou Cc). D’autres examinent les propriétés des messages (par exemple l’objet, le corps, les pièces jointes, la taille ou la classification du message). La plupart des conditions font appel à un opérateur de comparaison (par exemple, « égal à », « différent de » ou « contient ») ainsi qu’à une valeur de concordance que vous devez spécifier. S’il n’y a ni conditions ni d’exceptions, la règle s’applique à tous les messages. 
+
+- **Conditions**: identifier les messages auxquels vous voulez appliquer les actions. Certaines conditions examinent les champs d’en-tête de message (par exemple, les champs À, De ou Cc). D’autres examinent les propriétés des messages (par exemple l’objet, le corps, les pièces jointes, la taille ou la classification du message). La plupart des conditions font appel à un opérateur de comparaison (par exemple, « égal à », « différent de » ou « contient ») ainsi qu’à une valeur de concordance que vous devez spécifier. S’il n’y a ni conditions ni d’exceptions, la règle s’applique à tous les messages.
 
 Pour plus d’informations sur les conditions des règles de flux de messagerie dans Exchange Online Protection, consultez la rubrique [mail Flow Rule conditions and exceptions (prédicats) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-- **Exceptions**: Identifiez éventuellement les messages auxquels les actions ne doivent pas s’appliquer. Les identificateurs de message disponibles dans les conditions le sont également dans les exceptions. Les exceptions ont la priorité sur les conditions et empêchent l’application d’actions à un message, même s’il remplit toutes les conditions configurées. 
+- **Exceptions**: Identifiez éventuellement les messages auxquels les actions ne doivent pas s’appliquer. Les identificateurs de message disponibles dans les conditions le sont également dans les exceptions. Les exceptions ont la priorité sur les conditions et empêchent l’application d’actions à un message, même s’il remplit toutes les conditions configurées.
 
-- **Actions**: spécifiez la marche à suivre pour les messages qui répondent aux conditions de la règle et ne correspondent à aucune des exceptions. De nombreuses actions sont possibles, notamment le rejet, la suppression ou la redirection de messages, l’ajout de destinataires supplémentaires, l’ajout de préfixes à l’objet des messages ou l’insertion de clauses d’exclusion de responsabilité dans le corps des messages. 
+- **Actions**: spécifiez la marche à suivre pour les messages qui répondent aux conditions de la règle et ne correspondent à aucune des exceptions. De nombreuses actions sont possibles, notamment le rejet, la suppression ou la redirection de messages, l’ajout de destinataires supplémentaires, l’ajout de préfixes à l’objet des messages ou l’insertion de clauses d’exclusion de responsabilité dans le corps des messages.
 
 Pour plus d’informations sur les actions de règle de flux de messagerie disponibles dans Exchange Online Protection, consultez la rubrique [mail Flow Rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
@@ -68,18 +68,18 @@ Pour plus d’informations sur les actions de règle de flux de messagerie dispo
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Plusieurs conditions, exceptions et actions
 
 Le tableau suivant explique comment plusieurs conditions, valeurs de condition, exceptions et actions sont traitées dans une règle.
-  
-|**Composant**|**Logique**|**Commentaires**|
+
+|**Composant**|**Logique**|**Comments**|
 |:-----|:-----|:-----|
 |Commentaires|AND|Un message doit remplir toutes les conditions de la règle. Si vous souhaitez qu'une condition ou une autre s'applique, utilisez des règles distinctes pour chaque condition. Par exemple, si vous souhaitez ajouter la même clause d'exclusion de responsabilité aux messages comportant des pièces jointes et aux messages contenant un texte spécifique, créez une règle pour chaque condition. Vous pouvez facilement copier une règle dans le CAE.|
-|Un message doit remplir toutes les conditions de la règle. Si vous souhaitez qu’une condition ou une autre s’applique, utilisez des règles distinctes pour chaque condition. Par exemple, si vous souhaitez ajouter la même clause d’exclusion de responsabilité aux messages comportant des pièces jointes et aux messages dont le contenu correspond à un modèle, créez une règle pour chaque condition. Vous pouvez facilement copier une règle.|OR|Certaines conditions vous permettent de spécifier plusieurs valeurs. Le message doit correspondre à l'une des valeurs spécifiées (pas toutes). Par exemple, si l'objet d'un message électronique est Informations sur le cours des actions et que la condition **L'objet inclut l'un de ces mots** est configurée pour établir une correspondance avec le mot Contoso ou actions, la condition est remplie, car l'objet du message contient au moins l'une des valeurs spécifiées.  |
+|Un message doit remplir toutes les conditions de la règle. Si vous souhaitez qu’une condition ou une autre s’applique, utilisez des règles distinctes pour chaque condition. Par exemple, si vous souhaitez ajouter la même clause d’exclusion de responsabilité aux messages comportant des pièces jointes et aux messages dont le contenu correspond à un modèle, créez une règle pour chaque condition. Vous pouvez facilement copier une règle.|OU|Certaines conditions vous permettent de spécifier plusieurs valeurs. Le message doit correspondre à l'une des valeurs spécifiées (pas toutes). Par exemple, si l'objet d'un message électronique est Informations sur le cours des actions et que la condition **L'objet inclut l'un de ces mots** est configurée pour établir une correspondance avec le mot Contoso ou actions, la condition est remplie, car l'objet du message contient au moins l'une des valeurs spécifiées.  |
 |Certaines conditions vous permettent de spécifier plusieurs valeurs. Si plusieurs valeurs peuvent être spécifiées pour une condition, le message doit correspondre à l’une des valeurs spécifiées pour cette condition. Par exemple, si l’objet d’un message électronique est Informations sur le cours des actions et que la condition L’objet inclut l’un de ces mots est configurée pour établir une correspondance avec le mot Contoso ou actions, la condition est remplie, car l’objet du message contient au moins l’une des valeurs de condition.|OR|Si un message établit une correspondance avec l'une des exceptions, les actions ne sont pas appliquées. Le message ne doit pas forcément correspondre à toutes les exceptions.|
 |Si un message établit une correspondance avec l’une des exceptions, les actions ne sont pas traitées. Le message ne doit pas forcément correspondre à toutes les exceptions.|AND|Les messages qui répondent aux conditions d'une règle permettent d'obtenir toutes les actions qui sont spécifiées dans la règle. Par exemple, si les actions **Ajouter à l'objet du message le préfixe** et **Ajouter des destinataires au champ Cci** sont sélectionnées, les deux actions sont appliquées au message.  <br/><br/> Si un message remplit les conditions d’une règle, toutes les actions spécifiées dans la règle en question lui sont appliquées. Par exemple, si les actions Ajouter à l’objet du message le préfixe et Ajouter des destinataires au champ Cci sont sélectionnées, les deux actions sont appliquées au message. La chaîne spécifiée sera ajoutée en préfixe de l’objet du message et les destinataires indiqués seront ajoutés en tant que destinataires Cci.<br/><br/> Vous pouvez également définir une action sur une règle de sorte que lorsque cette règle est appliquée, les règles suivantes ne sont pas appliquées au message.|
 
 ### <a name="mail-flow-rule-properties"></a>Propriétés de règle de flux de messagerie
 
 Le tableau suivant décrit les propriétés de règle qui sont disponibles dans les règles de flux de messagerie.
-  
+
 |**Nom de la propriété dans le CAE**|**Nom du paramètre dans PowerShell**|**Description**|
 |:-----|:-----|:-----|
 |**Priorité**|_Priority_|Indique l'ordre dans lequel les règles sont appliquées aux messages. La priorité par défaut est définie en fonction de la date de création de la règle (les règles plus anciennes ont une priorité plus élevée que les règles plus récentes et les règles haute priorité sont traitées avant les règles basse priorité).   <br/><br/> Vous modifiez la priorité de la règle dans le CAE en la déplaçant vers le haut ou le bas de la liste des règles. Dans l'PowerShell, vous définissez le numéro de priorité (0 représente la priorité la plus élevée).   <br/><br/> Par exemple, si vous disposez d'une règle qui rejette les messages dans lesquels figure un numéro de carte de crédit et d'une autre règle qui exige une approbation, vous voudrez certainement que la règle de rejet soit appliquée en premier et que les autres règles ne s'appliquent pas.  |
@@ -94,13 +94,13 @@ Le tableau suivant décrit les propriétés de règle qui sont disponibles dans 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Application des règles de flux de messagerie au courrier électronique
 
 Tous les messages qui transitent par votre organisation sont évalués par rapport aux règles de flux de messagerie activées de celle-ci. Les règles sont traitées dans l’ordre indiqué dans la page **règles** de **flux** \> de messagerie dans le centre d’administration Exchange ou en fonction de la valeur de paramètre _Priority_ correspondante dans PowerShell.
-  
+
 Chaque règle offre également la possibilité d'arrêter le traitement des autres règles lorsqu'elle détecte une correspondance. Ce paramètre est important pour les messages qui répondent aux conditions de plusieurs règles de flux de messagerie (quelle règle souhaitez-vous appliquer au message ? Toutes ? Une seule ?).
-  
+
 ### <a name="differences-in-processing-based-on-message-type"></a>Différences de traitement selon le type de message
 
 Plusieurs types de messages transitent par une organisation. Le tableau suivant montre ceux qui peuvent être traités par les règles de flux de messagerie.
-  
+
 ****
 
 |**Type de message**|**Une règle peut-elle être appliquée ?**|
@@ -121,9 +121,9 @@ Plusieurs types de messages transitent par une organisation. Le tableau suivant 
 - Une fois que vous avez créé ou modifié une règle de flux de messagerie, l’application de la nouvelle règle ou de la règle mise à jour au courrier électronique peut prendre jusqu’à 30 minutes.
 
 ## <a name="for-more-information"></a>Pour plus d'informations
-  
+
 [Utiliser des règles de flux de messagerie pour inspecter les pièces jointes des messages dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
-  
+
 [Chiffrement du courrier électronique dans Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
-  
+
 [Limites concernant les règles de journal, de transport et de boîte de réception](https://go.microsoft.com/fwlink/p/?LinkId=324584)

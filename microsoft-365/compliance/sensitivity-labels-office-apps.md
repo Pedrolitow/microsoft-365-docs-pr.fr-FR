@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: 1de7eadfcf95a54917c1d5e2cc0d42cc1ad486a5
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378649"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417563"
 ---
 # <a name="how-sensitivity-labels-work-in-office-apps"></a>Fonctionnement des étiquettes de confidentialité dans les applications Office
 
@@ -131,7 +131,8 @@ PowerPoint
 <td><font size="-1">Bientôt disponible<sup>3</sup>
 <td><font size="-1">Bientôt disponible<sup>3</sup>
 
-<tr><td><font size="-1">Attribuer des autorisations prédéfinies
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">Attribuer des autorisations prédéfinies</a>
 <td><font size="-1"><b>Oui</b><br><font size="-1">1910+</font>
 
 <td><font size="-1"><b>Oui</b><br><font size="-1">16.21.0+</font>
@@ -167,7 +168,8 @@ PowerPoint
 <td><font size="-1">À DÉFINIR
 <td><font size="-1">À DÉFINIR
 
-<tr><td><font size="-1">Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents</a>
 <td><font size="-1">À DÉFINIR
 
 <td><font size="-1">À DÉFINIR
@@ -202,7 +204,7 @@ PowerPoint
 | --- | --- | --- |
 | Word, Excel, PowerPoint sur toutes les plateformes | Immédiatement | Immédiatement |
 | Outlook pour PC et Mac | Une fois l’e-mail envoyé par Exchange Online | Immédiatement |
-| Word, Excel, PowerPoint sur toutes les plateformes | Une fois l’e-mail envoyé par Exchange Online | Une fois l’e-mail envoyé par Exchange Online |
+| Outlook sur le web, iOS et Android | Une fois l’e-mail envoyé par Exchange Online | Une fois l’e-mail envoyé par Exchange Online |
 
 ## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a>Les étiquettes de confidentialité peuvent-elles fonctionner avec le client Azure Information Protection dans Office pour Windows ?
 
@@ -228,11 +230,7 @@ Les [modèles de protection](https://docs.microsoft.com/azure/information-protec
 
 ## <a name="can-a-file-or-email-have-more-than-one-classification"></a>Un fichier ou un e-mail peut-il avoir plusieurs classifications ?
 
-Les utilisateurs ne peuvent sélectionner qu’une seule étiquette à la fois pour chaque document ou e-mail, ce qui se traduit souvent par une seule classification. Toutefois, si les utilisateurs sélectionnent une sous-étiquette, cela a pour effet d’appliquer deux étiquettes en même temps : une étiquette primaire et une étiquette secondaire. L’utilisation de sous-étiquettes permet à un fichier d’avoir deux classifications indiquant une relation parent/enfant pour un niveau de contrôle supplémentaire. 
-
-Par exemple, l’étiquette  **Confidentiel**  pourrait contenir des sous-étiquettes telles que  **Légal** et **Finance**. Vous pouvez appliquer différentes marquages visuels de classification et différents modèles de gestion des droits à ces sous-étiquettes. Un utilisateur ne peut pas sélectionner l’étiquette **Confidentiel** , mais une seule de ses sous-étiquettes, par exemple  **Légal**. Par conséquent, l’étiquette qu’ils voient s’afficher est **Confidentiel** / **Légal**. Les métadonnées associées à ce fichier incluent une propriété de texte personnalisée pour **Confidentiel**, une propriété de texte personnalisée pour **Légal** et une autre qui contient les deux valeurs (**Confidentiel Légal**). 
-
-Lorsque vous utilisez des sous-étiquettes, ne configurez pas les marquages visuels, la protection et les conditions sur l’étiquette primaire. Lorsque vous utilisez des sous-niveaux, configurez ces paramètres sur la sous-étiquette uniquement. Si vous configurez ces paramètres sur l’étiquette primaire et sur sa sous-étiquette, les paramètres de la sous-étiquette sont prioritaires.
+Non. Les utilisateurs ne peuvent sélectionner qu’une étiquette à la fois pour chaque document ou e-mail.
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Lorsqu’un message électronique est étiqueté, les pièces jointes reçoivent-elles automatiquement la même étiquette ?
 

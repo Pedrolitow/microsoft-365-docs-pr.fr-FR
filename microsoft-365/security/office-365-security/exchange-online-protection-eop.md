@@ -1,5 +1,5 @@
 ---
-title: 'Exchange Online Protection '
+title: Exchange Online Protection
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Voici quelques éléments que vous devez connaître avant de commencer à utiliser EOP.
-ms.openlocfilehash: 36eaf667f2d38d27a8ef6a350817c5faf078a5d5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 707e909821c4a394e230b1746bde86521d8fb10a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079092"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441561"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
 Bienvenue dans le service de filtrage du courrier électronique hébergé sur Microsoft Exchange Online Protection (EOP). Voici quelques informations que vous devez connaître avant de travailler avec Exchange Online Protection et d'utiliser son contenu :
-  
+
 - Pour en savoir plus sur EOP, consultez la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619). Autres ressources utiles : [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md), [Forum Aux Questions d'ordre général concernant Exchange Online Protection (EOP)](eop-general-faq.md) et [Fonctionnalités EOP](eop-features.md), ainsi que la [page d'accueil Exchange Online Protection](https://go.microsoft.com/fwlink/?LinkId=279912).
 
 - Pour démarrer avec EOP, les nouveaux clients doivent consulter la rubrique [Configurer votre service EOP](set-up-your-eop-service.md). Vous y trouverez les étapes qui vous permettront de rendre EOP opérationnel.
@@ -30,7 +30,7 @@ Bienvenue dans le service de filtrage du courrier électronique hébergé sur Mi
 ## <a name="eop-help-for-administrators"></a>Aide EOP pour les administrateurs
 
 Le contenu de l’aide pour les administrateurs d’EOP se compose des catégories de niveau supérieur suivantes :
-  
+
 - [Vue d’ensemble d’Exchange Online Protection](exchange-online-protection-overview.md): présente le fonctionnement d’EOP et fournit des liens vers des informations supplémentaires.
 
 - [Fonctionnalités EOP](eop-features.md): fournit la liste des fonctionnalités disponibles dans EOP.
@@ -51,7 +51,7 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
 
 - [Création de rapports et suivi des messages dans Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md): décrit les outils de rapports et de résolution des problèmes disponibles.
 
-- [Centre d’administration Exchange dans Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md): explique comment accéder à l’interface de gestion du centre d’administration Exchange afin de gérer votre service EOP, et comment naviguer dans celle-ci.
+- [Centre d’administration Exchange dans Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md): explique comment accéder à l’interface de gestion du centre d’administration Exchange afin de gérer votre service EOP, et comment naviguer dans celle-ci.
 
 - [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): fournit des informations sur PowerShell à distance, qui vous permet de gérer votre service EOP à partir de la ligne de commande.
 
@@ -60,7 +60,7 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
 ## <a name="eop-help-for-end-users"></a>Aide EOP pour les utilisateurs finaux
 
 Le contenu de l’aide permettant de guider les utilisateurs finaux d’EOP dans la gestion du courrier indésirable contient les rubriques suivantes :
-  
+
 - [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur](find-and-release-quarantined-messages-as-a-user.md): décrit la façon dont les utilisateurs finaux peuvent trouver et libérer leurs propres messages indésirables mis en quarantaine dans l’interface utilisateur de mise en quarantaine du courrier indésirable et les signaler comme légitimes à Microsoft.
 
 - Soumission des courriers indésirables, des courriers [indésirables et des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): décrit les différentes façons dont les utilisateurs finaux peuvent soumettre des messages de courrier indésirable (junk) et non de courrier indésirable à Microsoft. Cette rubrique contient des liens vers les outils de création de rapports disponibles dans Microsoft Outlook et Outlook sur le Web (anciennement Outlook Web App).

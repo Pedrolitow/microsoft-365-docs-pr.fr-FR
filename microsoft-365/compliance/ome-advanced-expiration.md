@@ -3,7 +3,7 @@ title: Définir une date d’expiration pour les e-mails chiffrés par le chiffr
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/30/2019
+ms.date: 10/8/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,18 +13,17 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Avec les fonctionnalités de chiffrement de messages avancé Office 365 sur Office 365 message Encryption (OME), vous pouvez étendre votre sécurité de messagerie en définissant une date d’expiration pour les e-mails via un modèle personnalisé.
-ms.openlocfilehash: 7c4ad1fb4a91bd62569edc5db9042dfbd2dbd9fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 59e014a69214c8085ad248ad1c1a0c21142abd47
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080048"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435538"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Définir une date d’expiration pour les e-mails chiffrés par le chiffrement de messages Office 365
 
-Le chiffrement de messages avancé Office 365 est disponible en haut du chiffrement des messages Office 365 dans certains abonnements. Le chiffrement de messages avancé est inclus dans [Microsoft 365 entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 entreprise E5 et Office 365 éducation a5. Si votre organisation possède un abonnement Office 365 qui n’inclut pas le chiffrement de messages avancé Office 365, vous pouvez acheter le chiffrement de messages avancé comme module complémentaire avec E5 conformité de la référence SKU de conformité avancée.
+Le chiffrement de messages avancé Office 365 est inclus dans [microsoft 365 entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel pour les personnes travaillant), Office 365 entreprise E5 (tarification du personnel pour les personnes à but lucratif) et Office 365 éducation a5. Si votre organisation dispose d’un abonnement qui n’inclut pas le chiffrement de messages avancé Office 365, vous pouvez l’acheter avec le complément Microsoft 365 E5 Compliance SKU pour Microsoft 365 E3, Microsoft 365 E3 (tarification du personnel pour les salariés) ou Office 365 Advanced Module complémentaire de référence SKU de conformité pour Microsoft 365 E3, Microsoft 365 E3 (tarifs du personnel pour les salariés) ou Office 365 SKU.
 
 Vous pouvez utiliser l’expiration des messages envoyés par vos utilisateurs à des destinataires externes qui utilisent le portail OME pour accéder à des e-mails chiffrés. Vous obligez les destinataires à utiliser le portail OME pour afficher et répondre à des messages électroniques chiffrés envoyés par votre organisation à l’aide d’un modèle personnalisé qui spécifie une date d’expiration dans Windows PowerShell.
 

@@ -14,12 +14,12 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour Office 365 pour Exchange Online, Skype entreprise, SharePoint Online et OneDrive entreprise. Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Office 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft.
-ms.openlocfilehash: 839d0b56b3748e2ab4ccecc30a084447f22131aa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d3e10a32aeedc90dc06257a29b63df8657157a0b
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078791"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435528"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Contrôle de vos données dans Office 365 à l'aide de la Clé client.
 
@@ -504,7 +504,7 @@ Pour configurer la clé client pour SharePoint Online et OneDrive entreprise, vo
 ### <a name="create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo"></a>Créer une stratégie de chiffrement de données (DEP) pour chaque région de SharePoint Online et OneDrive entreprise
 <a name="CreateDEP4SPOODfB"> </a>
 
-Une DEP est associée à un ensemble de clés stockées dans Azure Key Vault. Vous appliquez une DEP à toutes vos données dans un emplacement géographique, également appelé géo. Si vous utilisez la fonctionnalité multigéographique d’Office 365 (actuellement en version d’évaluation), vous pouvez créer une DEP par zone géographique. Si vous n’utilisez pas de multi-géo, vous pouvez créer une DEP dans Office 365 pour une utilisation avec SharePoint Online et OneDrive entreprise. Office 365 utilisera ensuite les clés identifiées dans la DEP pour chiffrer vos données dans cette région. Pour créer la DEP, vous avez besoin des URI de coffre-fort que vous avez obtenus précédemment. Consultez [la rubrique obtenir l’URI pour chaque clé Azure Key Vault](controlling-your-data-using-customer-key.md#GetKeyURI) pour obtenir des instructions. 
+Une DEP est associée à un ensemble de clés stockées dans Azure Key Vault. Vous appliquez une DEP à toutes vos données dans un emplacement géographique, également appelé géo. Si vous utilisez la fonctionnalité multigéographique d’Office 365, vous pouvez créer une DEP par zone géographique. Si vous n’utilisez pas de multi-géo, vous pouvez créer une DEP dans Office 365 pour une utilisation avec SharePoint Online et OneDrive entreprise. Office 365 utilisera ensuite les clés identifiées dans la DEP pour chiffrer vos données dans cette région. Pour créer la DEP, vous avez besoin des URI de coffre-fort que vous avez obtenus précédemment. Consultez [la rubrique obtenir l’URI pour chaque clé Azure Key Vault](controlling-your-data-using-customer-key.md#GetKeyURI) pour obtenir des instructions. 
   
 Pensez! Lorsque vous créez une DEP, vous spécifiez deux clés qui résident dans deux coffres de clés Azure différents. Assurez-vous que ces clés se situent dans deux régions Azure distinctes pour garantir la redondance géographique.
   

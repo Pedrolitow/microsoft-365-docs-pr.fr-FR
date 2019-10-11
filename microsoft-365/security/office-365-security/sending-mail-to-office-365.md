@@ -14,24 +14,22 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: Ces articles aident les expéditeurs externes à améliorer leur réputation et à augmenter leur capacité à remettre des e-mails à des utilisateurs dans Office 365. Ils fournissent également des informations sur la façon dont vous pouvez signaler du courrier indésirable et des tentatives de hameçonnage même si vous n'êtes pas un utilisateur d'Office 365.
-ms.openlocfilehash: 6ccc3a087ae0142081369592d79601102b3942d9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1b58c5afab28cef15cef80d5f86f2ab4652f89ad
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079805"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441231"
 ---
 # <a name="sending-mail-to-office-365"></a>Envoyer du courrier vers Office 365
 
 Ces articles aident les expéditeurs externes à améliorer leur réputation et à augmenter leur capacité à remettre des e-mails à des utilisateurs dans Office 365. Ils fournissent également des informations sur la façon dont vous pouvez signaler du courrier indésirable et des tentatives de hameçonnage même si vous n'êtes pas un utilisateur d'Office 365.
-  
+
 Si vous n'êtes pas un client Office 365, mais que vous essayez d'envoyer du courrier électronique qui l'est, vous êtes au bon endroit. Si vous êtes un administrateur Office 365 et que vous avez besoin d'aide pour lutter contre le courrier indésirable, vous n'êtes pas au bon endroit. Accédez plutôt à [Anti-spam and anti-malware protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx).
-  
+
 |**Pour plus d'informations sur...**|**Voir...**|
 |:-----|:-----|
-|Services que nous fournissons aux administrateurs des systèmes de messagerie qui envoient des messages individuels et en bloc aux clients Office 365.  <br/> |[Services pour les non clients qui envoient des messages vers Office 365](services-for-non-customers.md) <br/> |
-|Découvrez comment résoudre les problèmes d'accès aux clients dans Office 365 par courrier électronique. Meilleures pratiques pour envoyer du courrier en nombre à des destinataires Office 365.  <br/> |[Résolution des problèmes de messages envoyés à Office 365](troubleshooting-mail-sent-to-office-365.md) <br/> |
-|Découvrez comment Office 365 empêche que du courrier indésirable, y compris les attaques par hameçonnage et l'usurpation, soit envoyés à nos clients.  <br/> |[Lutter contre le courrier indésirable envoyé à Office 365](fighting-junk-email.md) <br/> |
-|Comment vous pouvez, en tant qu'administrateur qui envoie des messages aux clients Office 365, éviter que vos e-mails soient bloqués en respectant nos stratégies anti-spam. Il s'agit des contenus juridiques que vous devez connaître.  <br/> |[Référence : Stratégies, pratiques et conseils](reference-policies-practices-and-guidelines.md) <br/> |
-   
-
+|Services que nous fournissons aux administrateurs des systèmes de messagerie qui envoient des messages individuels et en bloc aux clients Office 365.|[Services pour les non clients qui envoient des messages vers Office 365](services-for-non-customers.md)|
+|Découvrez comment résoudre les problèmes d'accès aux clients dans Office 365 par courrier électronique. Meilleures pratiques pour envoyer du courrier en nombre à des destinataires Office 365.|[Résolution des problèmes de messages envoyés à Office 365](troubleshooting-mail-sent-to-office-365.md)|
+|Découvrez comment Office 365 empêche que du courrier indésirable, y compris les attaques par hameçonnage et l'usurpation, soit envoyés à nos clients.|[Lutter contre le courrier indésirable envoyé à Office 365](fighting-junk-email.md)|
+|Comment vous pouvez, en tant qu'administrateur qui envoie des messages aux clients Office 365, éviter que vos e-mails soient bloqués en respectant nos stratégies anti-spam. Il s'agit des contenus juridiques que vous devez connaître.|[Référence : Stratégies, pratiques et conseils](reference-policies-practices-and-guidelines.md)|

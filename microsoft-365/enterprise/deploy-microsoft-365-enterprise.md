@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: 1d88ed400d20b15823d3991a1cd099bbb16ffa84
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 0dcbe9e39f33cab65dff6033f0b78ceb7e1c42cc
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369535"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437864"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
@@ -123,6 +123,10 @@ Découvrez comment les départements d’ingénierie et d’exploitation de Core
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Comment Contoso Corporation a déployé Microsoft 365 Entreprise
 
 Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif avec son siège à Paris en France. Découvrez comment [Contoso a déployé Microsoft 365 Entreprise](contoso-case-study.md) et abordé les décisions de conception majeures, ainsi que les détails d’implémentation pour la mise en réseau, la gestion des identités, Windows 10 Entreprise, Office 365 ProPlus, la gestion des appareils mobiles, la protection des informations et la sécurité. 
+
+## <a name="stay-current-with-deployment-content"></a>Restez informé du contenu de déploiement
+
+Pour les dernières modifications apportées au contenu, consultez [cet article](microsoft-365-deploment-guide-changes.md).
 
 ## <a name="next-step"></a>Étape suivante
 

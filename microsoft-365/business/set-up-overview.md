@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Vue d’ensemble des étapes de configuration pour Microsoft 365 Business.
-ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4be0a8aa1b050ee3e20a045eb2c07666765118ed
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288572"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440534"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
@@ -41,7 +41,7 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
         - Vous pouvez également [Ajouter des utilisateurs ultérieurement](add-users-m365b.md) dans le centre d’administration.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Étape 2 : configurer les stratégies de sécurité et configurer les appareils 
 
-  - Utilisez l' [Assistant Installation](set-up.md#set-up-security-policies-and-device-configurations) pour configurer les stratégies d’appareil et de sécurité. 
+  - Utilisez l' [Assistant Installation](set-up.md#protect-data-and-devices) pour configurer les stratégies d’appareil et de sécurité. 
   - Vous pouvez également en ajouter ou les modifier ultérieurement dans le [Centre d’administration](view-policies-and-devices.md) et dans le [portail Intune](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
   - Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez augmenter votre sécurité en ajoutant les paramètres suivants :
 
@@ -62,7 +62,7 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
    Lorsque vous joignez un appareil Windows 10 à Azure AD, les stratégies que vous avez configurées à l' [étape 2](#step-2-set-up-security-policies-and-configure-devices) sont appliquées.
 
    - Windows 10 professionnel est une [condition préalable](pre-requisites-for-data-protection.md) pour Microsoft 365 Business, mais si vous disposez de Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement vous donne droit à une [mise à niveau vers Windows 10 professionnel](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Utilisez l' [Assistant Installation](set-up.md#set-up-security-policies-and-device-configurations) pour configurer des stratégies pour les appareils Windows 10.
+    - Utilisez l' [Assistant Installation](set-up.md#protect-data-and-devices) pour configurer des stratégies pour les appareils Windows 10.
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4 : installer Office 365 Business
 - Vous pouvez installer automatiquement Office sur les appareils Windows à l’aide de l' [Assistant Installation](set-up.md#deploy-office-365-client-apps).
@@ -74,7 +74,7 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
             
      Vous pouvez utiliser [Windows AutoPilot](add-autopilot-devices-and-profile.md) pour préconfigurer automatiquement les **nouveaux** appareils Windows 10 pour un utilisateur, mais il peut être plus facile d’obtenir un [partenaire](https://www.microsoft.com/solution-providers/search) qui peut le faire pour vous. Vous pouvez également accéder à [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598) et demander à un spécialiste de la technologie Cloud de configurer de nouveaux appareils que vous achetez pour vous.
 
-- **Accéder aux ressources locales**
+- **Accès aux ressources locales**
 
      - Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 entreprise pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de la procédure [activer les appareils Windows 10 appartenant à un domaine pour qu’ils soient gérés par Microsoft 365 Business](manage-windows-devices.md) pour le configurer. Il s’agit de la méthode préférée et les appareils dans cet État sont appelés appareils hybrides Azure AD.
 

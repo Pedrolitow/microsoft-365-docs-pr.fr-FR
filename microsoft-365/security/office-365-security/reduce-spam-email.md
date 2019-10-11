@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Découvrez les méthodes fréquemment utilisées pour réduire le courrier indésirable dans Office 365.
-ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 759d56862497444c27d0cc0f081731a3581337bd
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080196"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428425"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Réduire le courrier indésirable dans Office 365
 
@@ -35,7 +35,7 @@ Nous vous recommandons vivement de signaler les messages de type « Faux négat
 
 ## <a name="fixing-allowed-spam"></a>Résolution du courrier indésirable autorisé
 
-Souvent, les clients reçoivent des courriers indésirables dans leur boîte de réception en raison de configurations incorrectes. Le plus souvent, les domaines sont configurés dans une règle de flux de messagerie (également connue sous le nom de règle de transport) de sorte à contourner des filtres ou ils sont ajoutés à la liste des expéditeurs autorisés/approuvés. Cette configuration est incorrecte, car les messages ne sont pas filtrés par le filtre anti-courrier indésirable, alors qu’ils auraient pu être détectés par ailleurs.  
+Nous constatons souvent que les clients reçoivent du courrier indésirable dans leur boîte aux lettres en raison de configurations incorrectes. La plus courante est la configuration de vos domaines dans une règle de flux de messagerie (également appelée règle de transport) pour contourner les filtres ou les listes de vos domaine(s) dans la liste des expéditeurs autorisés/approuvés. C’est déconseillé, car ces messages traversent le filtrage de courrier indésirable alors qu’ils auraient pu être détectés, donc la création de [listes d’expéditeurs approuvés](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365) doit être considérée comme une solution temporaire.  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Solutions à appliquer en cas de courrier indésirable excessif
 

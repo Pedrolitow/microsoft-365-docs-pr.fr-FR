@@ -13,21 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un site d’équipe SharePoint sécurisé pour stocker vos fichiers les plus précieux et les plus sensibles.
-ms.openlocfilehash: dc604870826075cee645dd466b82f908e1571339
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403179"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437824"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Sites SharePoint pour les données hautement réglementées
 
 *Ce scénario s’applique à la fois aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-Microsoft 365 Entreprise comprend une suite complète de services basés sur le Cloud afin que vous puissiez créer, stocker et sécuriser vos données hautement réglementées, notamment les données qui sont :
+Microsoft 365 Entreprise comprend une suite complète de services basés sur le cloud afin que vous puissiez créer, stocker, sécuriser et gérer vos données hautement réglementées, notamment les données qui sont :
 
 - sujettes à des réglementations régionales ;
 - les plus précieuses de votre organisation comme les secrets commerciaux, les informations sur les ressources humaines ou financières et la stratégie de l’organisation.
+
+>[!Note]
+> Un scénario similaire utilisant Microsoft Teams est en cours de développement.
+>
 
 Dans le cadre d’un scénario Microsoft 365 Entreprise basé sur le cloud qui répond à ce besoin métier, vous êtes tenu de suivre les instructions suivantes :
 

@@ -1,7 +1,7 @@
 ---
 title: Gestion des enregistrements dans Microsoft 365
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention spécifiques de votre organisation dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci à l’appui du cycle de vie complet du contenu.
-ms.openlocfilehash: b860c807fd936865c7a5a646096e212f138a2e79
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97b5c1981cf2596554571e8b53059aa718aa561c
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079999"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440671"
 ---
 # <a name="records-management-in-microsoft-365"></a>Gestion des enregistrements dans Microsoft 365
 
@@ -38,6 +38,6 @@ La solution de gestion des enregistrements prend en charge les opérations suiva
 
 - **Passer en revue les éléments détruits en effectuant une révision avant destruction**, puis [exporter un rapport d’actions](disposition-reviews.md#export-the-disposition-items) afin d’approfondir la validation et de générer un rapport.
 
-- **Définir des autorisations spécifiques** afin que les fonctions de gestionnaire d’enregistrements au sein de votre organisation [disposent du droit d’accès](/security/office-365-security/protect-against-threats.md).
+- **Définir des autorisations spécifiques** afin que les fonctions de gestionnaire d’enregistrements au sein de votre organisation [disposent du droit d’accès](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 La solution de gestion des enregistrements dans Microsoft 365 vous permet d’incorporer des planifications de rétention de votre organisation dans le plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci à l’appui du cycle de vie complet du contenu.

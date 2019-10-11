@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Explique les différences entre les versions d’Office 365 le chiffrement de messages.
-ms.openlocfilehash: b617d6a9f61ae8ec5a0133d405f89038bdab9fc4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 29c30c1630e6fbf24e9037837c162b4ac67950e2
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080173"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435518"
 ---
 # <a name="compare-versions-of-ome"></a>Comparez les versions de OME
 

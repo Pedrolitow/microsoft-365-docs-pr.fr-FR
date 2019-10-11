@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Les autorisations nécessaires à l'exécution de tâches de gestion de Microsoft Exchange Online Protection (EOP) varient selon les fonctionnalités gérées.
-ms.openlocfilehash: 411132bf009f7eb76556d64a8c887b94d92b36f4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 06223b0ec11df0b5a7bedc538913a55ca5998a01
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079089"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441551"
 ---
 # <a name="feature-permissions-in-eop"></a>Autorisations des fonctionnalités dans EOP
 
 Les autorisations requises pour effectuer des tâches de gestion d’Exchange Online Protection (EOP) varient en fonction de la fonctionnalité que vous gérez.
-  
+
 Pour configurer EOP, vous devez être un administrateur global Office 365 ou un administrateur d'entreprise Exchange (le groupe de rôles Gestion de l'organisation).
-  
+
 ## <a name="exchange-online-protection-permissions"></a>Autorisations Exchange Online Protection
 
 Consultez le tableau suivant afin de déterminer les autorisations requises pour gérer les fonctionnalités EOP. Si une fonctionnalité affiche plusieurs groupes de rôles, seul l’un de ces groupes de rôles doit vous être attribué pour que vous puissiez exploiter cette même fonctionnalité.
-  
+
 |**Fonctionnalité**|**Autorisations requises**|
 |:-----|:-----|
 |Anti-programme malveillant|[Gestion de l'organisation](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Gestion de l'hygiène](http://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
