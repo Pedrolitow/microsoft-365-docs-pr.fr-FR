@@ -2,7 +2,7 @@
 title: Déployer SharePoint et OneDrive pour Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de planification, de déploiement et de création de valeur de SharePoint au sein de votre organisation.
-ms.openlocfilehash: d8a61a6bc6b4dae431d94e7ccfb9fb0ea8019427
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329204"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37469146"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Déployer SharePoint et OneDrive pour Microsoft 365 Entreprise
 
@@ -27,7 +27,7 @@ SharePoint et Microsoft Teams vous permettent de stocker et partager des fichie
 
 SharePoint offre également des fonctionnalités avancées de sécurité, y compris le contrôle d’accès, avec les autorisations et le chiffrement de données en transit et au repos. Dans SharePoint, la sécurité est un élément clé de la valeur de sécurité intelligente de Microsoft 365 Entreprise.
 
-Si vous débutez sur SharePoint, consultez les articles [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) et [Prise en main de SharePoint](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics).
+Si vous débutez sur SharePoint, consultez les articles [SharePoint](https://products.office.com/sharepoint/collaboration) et [Prise en main de SharePoint](https://support.office.com/article/video-what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121).
 
 Les phases et les étapes suivantes vous permettent de comprendre le rôle de SharePoint et de OneDrive Entreprise dans votre organisation, d’intégrer votre organisation à travers une série de déploiements progressifs, et de sensibiliser vos utilisateurs finaux à son utilisation et à sa valeur. Avant de commencer, vérifiez que vous avez configuré les bonnes phases de l’[infrastructure de base](deploy-workloads.md#foundation-infrastructure-prerequisites) de telle sorte que vos sites SharePoint disposent des fonctionnalités de sécurité utiles. 
 
@@ -50,18 +50,17 @@ Liste des personnes qui représentent les perspectives professionnelles, techniq
 
 SharePoint peut être utilisé à des fins différentes, parmi lesquelles vous devez déterminer celles qui correspondent aux besoins de votre entreprise. Vous devez cibler SharePoint pour répondre aux besoins en stockage et partage de documents, en gestion de contenu et en collaboration de vos équipes, de votre service ou de l’ensemble de votre organisation. 
 
-Affichez la liste des scénarios et des fonctionnalités disponibles dans [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software).
+Affichez la liste des scénarios et des fonctionnalités disponibles dans [SharePoint](https://products.office.com/sharepoint/collaboration ).
 
 Voici des piliers commerciaux qui peuvent répondre aux besoins de votre organisation :
 
 |||
 |:-----|:-----|
-| Partager et collaborer | Tirez parti des sites d’équipe, des sites de collaboration, et synchronisez-les. |
+| Partager et collaborer | Tirez parti des sites d’équipe, des sites de communication et de la synchronisation. |
 | Informer et impliquer | Informations bientôt disponibles. |
-| Transformer | Utilise le flux pour créer un magasin ou un flux de travail. |
+| Transformer | Utilise Flow pour créer des flux de travail automatisés entre les applications et les services. |
 | Exploiter les connaissances collectives | Utilise la recherche pour apporter les résultats souhaités au sein de votre organisation. |
 | Protéger | Garantit que votre organisation est sécurisée et conforme. |
-| Développement/externe | Permet à votre organisation de développer des solutions et applications personnalisées avec SharePoint Framework. |
 |||
 
 Consultez la rubrique sur l’[administration de SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-online) pour obtenir des informations sur la configuration de SharePoint en fonction de vos besoins.
@@ -85,14 +84,11 @@ Pour protéger l’accès aux sites SharePoint, vérifiez que vous avez configur
 
 ### <a name="step-1-complete-your-technical-planning"></a>Étape 1 : finaliser la planification technique
 
-Avant de commencer la planification technique, déterminez si vous voulez utiliser FastTrack. Si votre organisation comporte plus de 50 sièges et participe à un [plan pris en charge](https://technet.microsoft.com/library/dn783224.aspx), vous pouvez profiter des avantages de FastTrack, disponibles sans coût additionnel pour vous guider dans la planification, la migration, le déploiement et l’adoption du service. Vous pouvez aussi effectuer ce travail vous-même à l’aide des assistants d’intégration FastTrack, qui sont disponibles depuis [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) lorsque vous vous connectez à votre compte Microsoft 365.
+Avant de commencer la planification technique, déterminez si vous voulez utiliser FastTrack. Si votre organisation compte plus de 50 sièges et fait partie d’un [plan éligible](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365), vous pouvez profiter des avantages de FastTrack, disponibles sans frais supplémentaires pour vous guider dans la planification, la migration, le déploiement et l’adoption du service. Vous pouvez aussi effectuer ce travail vous-même à l’aide des assistants d’intégration FastTrack, qui sont disponibles depuis [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) lorsque vous vous connectez à votre compte Microsoft 365.
 
-Si vous effectuez votre propre planification (ou conjointement avec FastTrack), vous devez déterminer si votre réseau et votre organisation sont prêts pour SharePoint. Il est particulièrement important que vous répondiez aux critères de sortie réseau dans votre infrastructure de base, avec une attention particulière accordée à la bande passante, au débit et aux retards du trafic afin d’optimiser les performances pour le trafic supplémentaire lié aux documents basés sur SharePoint.
+Si vous effectuez votre propre planification (ou conjointement avec FastTrack), vous devez déterminer si votre réseau et votre organisation sont prêts pour SharePoint. Il est particulièrement important que vous remplissiez les [critères de sortie pour la mise en réseau](networking-exit-criteria.md) dans votre infrastructure de base, en accordant une attention particulière à la bande passante Internet, au débit et aux retards de trafic afin d’optimiser les performances du trafic supplémentaire généré par les documents SharePoint.
 
-Utilisez ces ressources pour préparer les aspects techniques d’un déploiement SharePoint : 
-
-- [Guide de planification de SharePoint](https://docs.microsoft.com/sharepoint/planning-guide)
-- [Migrer vers SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) 
+Utilisez [Migrer vers SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) pour préparer votre déploiement SharePoint : 
 
 Pour mieux comprendre la sécurité dans SharePoint, consultez les ressources suivantes :
 
@@ -108,8 +104,8 @@ Vous comprenez comment fonctionnent les sites SharePoint, ainsi que la sécurit�
 Dans la plupart des moyennes et grandes organisations, nous vous conseillons d’exécuter une session pilote avec vos parties prenantes de la phase 1, les adeptes précoces et les amateurs de technique. Pendant la session pilote :
 
 - Choisissez un scénario d’entreprise pour SharePoint dans lequel les participants à votre session pilote peuvent s’exercer.
-- Fournissez aux participants de la session pilote un ensemble d’exercices visant à tester le stockage et le partage de documents dans SharePoint, ainsi que la collaboration, la planification d’équipe et d’autres fonctionnalités.
-- Déterminez votre stratégie de gestion des modifications et créez des documents pour favoriser l’adoption de SharePoint par les utilisateurs à l’échelle de l’organisation. Les documents relatifs à la gestion des modifications peuvent inclure du texte d'annonce par courrier électronique, des plans de formation interne, des affiches dans les couloirs et des présentations. Ces documents informent votre organisation au sujet de SharePoint et de ses avantages dans le but d'accroître la sensibilisation et de stimuler l'utilisation de SharePoint. Pour consulter quelques idées, reportez-vous à l’article sur la stratégie de gestion des modifications pour [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy). 
+- Fournissez aux participants de la session pilote un ensemble d’exercices visant à tester les fonctionnalités SharePoint telles la collaboration, ou le stockage et le partage de documents.
+- Déterminez votre stratégie de gestion des modifications et créez des documents pour favoriser l’adoption de SharePoint par les utilisateurs à l’échelle de l’organisation. Les documents relatifs à la gestion des modifications peuvent inclure du texte d'annonce par courrier électronique, des plans de formation interne, des affiches dans les couloirs et des présentations. Ces documents informent votre organisation au sujet de SharePoint et de ses avantages dans le but d'accroître la sensibilisation et de stimuler l'utilisation de SharePoint. Pour commencer, consultez les [ressources d’adoption de SharePoint](https://resources.techcommunity.microsoft.com/resources/SharePoint-adoption/).
 - Demandez à vos participants au programme pilote informatique de passer en revue les documents relatifs à la gestion des modifications en fonction de leur expérience. Ils peuvent fournir des conseils sur les pratiques recommandées et des conseils sur la manière de décrire au mieux les avantages de SharePoint et comment l’utiliser.
 
 #### <a name="result"></a>Résultat
