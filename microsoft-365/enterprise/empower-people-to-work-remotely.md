@@ -3,7 +3,7 @@ title: Confiez des responsabilités aux travailleurs à distance
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/27/2019
+ms.date: 10/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: b73e16a52741a6587e9ed903cab6ddfedf896973
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 198b01205e7419c4a3aa874c1e6213cce5284576
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403253"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453943"
 ---
 # <a name="empower-remote-workers"></a>Confiez des responsabilités aux travailleurs à distance
 
@@ -69,6 +69,13 @@ Pour répondre à ces critères pour les travailleurs à distance, utilisez les 
   - Les organisations qui ont une identité hybride peuvent utiliser le proxy d’application Azure AD au lieu des connexions de réseau privé virtuel (VPN)
 
 Les phases suivantes vous guideront tout au long du déploiement des fonctionnalités de Microsoft 365 Entreprise pour l’accès à distance et de l’adoption par les travailleurs à distance. Si vous avez déjà déployé des éléments de ces phases, assurez-vous qu’ils répondent aux exigences établies avant de passer à l’élément suivant.
+
+<a name="poster"></a> Pour un résumé d’une page de ce scénario, voir l’affiche [Confiez des responsabilités aux travailleurs à distance](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
+
+[![Affiche Confiez des responsabilités aux travailleurs à distance](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+
+Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>Phase 1 : déployer les fonctionnalités et les capacités de Microsoft 365 pour les travailleurs à distance
 
