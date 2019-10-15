@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 198b01205e7419c4a3aa874c1e6213cce5284576
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9a9520f5246ec70a2b9947536c259c661a5bd44f
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453943"
+ms.locfileid: "37469156"
 ---
 # <a name="empower-remote-workers"></a>Confiez des responsabilités aux travailleurs à distance
 
@@ -74,7 +74,7 @@ Les phases suivantes vous guideront tout au long du déploiement des fonctionnal
 
 [![Affiche Confiez des responsabilités aux travailleurs à distance](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>Phase 1 : déployer les fonctionnalités et les capacités de Microsoft 365 pour les travailleurs à distance
