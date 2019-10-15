@@ -12,30 +12,30 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Lorsque Exchange Online Protection analyse un message entrant, il insère l’en-tête **X-Forefront-Antispam-Report** dans chaque message.
-ms.openlocfilehash: 5b7cefc2057d4e7705c991348a7710c2eaa4c7d9
-ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
+description: Apprenez-en davantage sur les champs et valeurs d’en-tête ajoutés aux messages par Exchange Online Protection.
+ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
+ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428415"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37451116"
 ---
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 
 Lorsque Exchange Online Protection analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message. Les champs de cet en-tête permettent de fournir des informations aux administrateurs en ce qui concerne le message et sur la manière dont ce dernier a été traité. Les champs de l'en-tête **X-Microsoft-Antispam** fournissent des informations supplémentaires sur le courrier en nombre et le hameçonnage. En plus de ces deux en-têtes, Exchange Online Protection insère également les résultats de l'authentification d'e-mail pour chaque message qu'il traite dans l'en-tête **Authentication-results** (résultats de l'authentification).
 
-Pour plus d’informations sur le mode d’affichage de l’en-tête d’un message électronique dans divers clients de messagerie, consultez la rubrique [Analyseur d’en-têtes de message](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
-  
+Pour plus d’informations sur le mode d’affichage de l’en-tête d’un message électronique dans divers clients de messagerie, consultez la rubrique [Analyseur d’en-têtes de message](https://go.microsoft.com/fwlink/p/?LinkId=306583).
+
 > [!TIP]
->  Vous pouvez copier et coller le contenu d’une en-tête de message dans l’[Analyseur de message](https://testconnectivity.microsoft.com/?tabid=mha). Cet outil aide à analyser les en-têtes et à les afficher dans un format plus lisible.
-  
+> Vous pouvez copier et coller le contenu d’une en-tête de message dans l’[Analyseur de message](https://testconnectivity.microsoft.com/?tabid=mha). Cet outil aide à analyser les en-têtes et à les afficher dans un format plus lisible.
+
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Champs d’en-tête de message X-Forefront-Antispam-Report
 
 Après avoir accédé aux informations d’un en-tête de message, recherchez **X-Forefront-Antispam-Report**, puis recherchez les champs ci-dessous. Les autres champs de cet en-tête sont exclusivement utilisés par l’équipe Microsoft de lutte contre les courriers indésirables à des fins de diagnostic.
 
 |**Champ d’en-tête**|**Description**|
 |:-----|:-----|
-|CIP: [IP address]|Adresse IP de connexion. Vous pouvez spécifier cette adresse IP lors de la création d'une liste d'adresses IP autorisées ou d'une liste d'adresses IP bloquées dans le filtre de connexion. Pour plus d'informations, voir [Configuration de la stratégie de filtrage des connexions](configure-the-connection-filter-policy.md).  |
+|CIP : \[adresse IP\]|Adresse IP de connexion. Vous pouvez spécifier cette adresse IP lors de la création d'une liste d'adresses IP autorisées ou d'une liste d'adresses IP bloquées dans le filtre de connexion. Pour plus d'informations, voir [Configuration de la stratégie de filtrage des connexions](configure-the-connection-filter-policy.md).  |
 |CTRY|Pays depuis lequel le message s’est connecté au service. Cette valeur est déterminée par l'adresse IP de connexion, qui peut ne pas être la même que l'adresse IP d'envoi de provenance.|
 |LANG|Langue dans laquelle le message a été rédigé, tel que spécifié par le code du pays (par exemple, ru_RU pour le russe).|
 |SCL|Valeur du seuil de probabilité de courrier indésirable (SCL) du message. Pour plus d'informations sur l'interprétation de ces valeurs, consultez la rubrique [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).  |
@@ -53,71 +53,70 @@ Après avoir accédé aux informations d’un en-tête de message, recherchez **
 |SFV:SKI|Semblable à SFV:SKN. Le message a ignoré le filtrage pour une autre raison, par exemple, il s’agissait d’un message électronique intra-organisationnel au sein d’un client.|
 |SFV:SKQ|Le message a été libéré de la quarantaine et a été envoyé aux destinataires appropriés.|
 |SFV:NSPM|Le message a été marqué comme n’étant pas un courrier indésirable et a été envoyé aux destinataires appropriés.|
-|H: [helostring]|Chaîne HELO ou EHLO du serveur de messagerie de connexion.|
-|PTR: [ReverseDNS]|Enregistrement PTR, ou enregistrement de pointeur, de l’adresse IP d’envoi, également appelé adresse DNS inverse.|
+|H : \[helostring\]|Chaîne HELO ou EHLO du serveur de messagerie de connexion.|
+|PTR : \[ReverseDNS\]|Enregistrement PTR, ou enregistrement de pointeur, de l’adresse IP d’envoi, également appelé adresse DNS inverse.|
 |CAT :|Catégorie de stratégie de protection appliquée au message : <br/>MALW : Programme malveillant <br/>PHSH : Hameçonnage <br/>HSPM : Courrier fortement suspecté d’être indésirable <br/>SPOOF : Usurpation d’identité <br/>SPM : Courrier indésirable <br/>BULK : En bloc <br/>DIMP : Emprunt d’identité de domaine <br/>UIMP : Emprunt d’identité d’utilisateur <br/>Il peut arriver qu’un message entrant soit signalé par plusieurs formes de protection et plusieurs analyses de détection. Les stratégies ont des priorités différentes, et la stratégie ayant la priorité la plus élevée s'applique. Consultez la rubrique [Quelle stratégie s’applique lorsque plusieurs méthodes de protection et analyses de détection s'exécutent dans votre courrier électronique](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined).|
 |SFTY|Le message a été identifié comme étant du hameçonnage et sera également marqué par l'une des valeurs suivantes : <br/>9.1 : valeur par défaut. Le message contient une URL de hameçonnage, peut contenir d’autres contenus de hameçonnage ou peut avoir été marqué comme un message de hameçonnage par un autre filtre de messagerie, comme une version locale d’Exchange Server avant de relayer le message à Office 365. <br/>9.11 : le message a échoué aux vérifications anti-usurpation où le domaine expéditeur figurant dans l'en-tête From: est le même que, correspond à ou fait partie de la même organisation que le domaine de réception. Cela indique qu’une astuce d’emprunt d’identité intra-organisationnelle sera ajoutée au message. <br/>9.19 : le message a échoué aux vérifications d’emprunt d’identité de domaine où le domaine expéditeur tente d’emprunter l’identité d’un domaine appartenant au destinataire, ou l’identité d’un domaine personnalisé protégé par la stratégie anti-hameçonnage. Cela indique qu’une astuce d’emprunt d’identité sera ajoutée au message si elle est activée via la stratégie anti-hameçonnage. <br/>9.20 : le message a échoué aux vérifications d’emprunt d’identité d’utilisateur où l’utilisateur expéditeur tente d’emprunter l’identité d’un utilisateur dans l’organisation des destinataires ou l’identité d’un utilisateur personnalisé protégé par la stratégie anti-hameçonnage. Cela indique qu’une astuce d’emprunt d’identité sera ajoutée au message si elle est activée via la stratégie anti-hameçonnage. <br/>9.21 : le message a échoué aux vérifications anti-usurpation, et le domaine expéditeur figurant dans l'en-tête From: ne s’authentifie pas et provient d'un domaine externe. Utilisé en association avec CompAuth (voir Authentification-Résultats). <br/>9.22 : similaire au point 9.21 hormis que l’utilisateur possède un expéditeur approuvé qui a été remplacé. <br/>9.23 : similaire au point 9.22 hormis que l’organisation possède un expéditeur ou un domaine autorisé qui a été remplacé. <br/>9.24 : similaire au point 9.23 hormis que l’utilisateur possède une règle de flux de courrier Exchange qui a été remplacée.|
-|X-CustomSpam : [ASFOption]|Le message établit une correspondance avec une option avancée de filtrage de courrier indésirable. Par exemple, **Liens d’image vers des sites distants** indique que l’option ASF **Liens d’image vers des sites distants** a établi une correspondance. Pour connaître le texte d’en-tête X ajouté à chaque option ASF spécifique, voir [Options de filtrage avancé du courrier indésirable](advanced-spam-filtering-asf-options.md).|
+|X-CustomSpam : \[ASFOption\]|Le message correspondait à une option avancée de filtrage de courrier indésirable. Par exemple, **Liens d’image vers des sites distants** indique que l’option ASF **Liens d’image vers des sites distants** a établi une correspondance. Pour connaître le texte d’en-tête X ajouté à chaque option ASF spécifique, voir [Options de filtrage avancé du courrier indésirable](advanced-spam-filtering-asf-options.md).|
 |
 
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Champs d’en-tête de message X-Microsoft-Antispam
 
 Le tableau suivant décrit certains champs utiles de l’en-tête **X-Microsoft-Antispam** des messages. Les autres champs de cet en-tête sont exclusivement utilisés par l’équipe Microsoft de lutte contre les courriers indésirables à des fins de diagnostic.
-  
+
 |**Champ d’en-tête**|**Description**|
 |:-----|:-----|
-|BCL|Niveau de réclamation en bloc (Bulk Complaint Level, BCL) du message. Pour plus d'informations, voir [Valeurs BCL](bulk-complaint-level-values.md).  |
 |PCL|Seuil de probabilité de courrier d'hameçonnage du message, qui indique s'il s'agit d'un message de hameçonnage. Le statut est renvoyé avec l’une des valeurs numériques suivantes : <br/>**0-3** : le contenu du message ne correspond probablement pas à du hameçonnage. <br/>**4-8** : le contenu du message correspond probablement à du hameçonnage. <br/>**-9990** : (Exchange Online Protection uniquement) le contenu du message correspond probablement à du hameçonnage.  <br/>  Ces valeurs permettent de déterminer les mesures prises par votre client de messagerie vis-à-vis des messages. Par exemple, Outlook utilise le marquage PCL pour bloquer le contenu des messages suspects. Pour plus d’informations sur le hameçonnage et la façon dont Outlook traite les messages de hameçonnage, voir [Activer ou désactiver les liens dans les courriers électroniques](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
 |
 
 ## <a name="authentication-results-message-header"></a>En-tête de message Authentication-results
 
 Les résultats des vérifications de SPF DKIM et DMARC sont enregistrés ou marqués par Office 365 dans l’en-tête **Authentication-results** des messages lorsque nos serveurs de messagerie reçoivent un e-mail.
-  
+
 ### <a name="check-stamp-syntax-and-examples"></a>Syntaxe et exemples de marques de vérification
 
 L’exemple de syntaxe suivant présente une partie de la « marque » au format texte qu’Office 365 applique à l’en-tête du message pour chaque message qui fait l’objet d’une authentification lorsqu’il est reçu par nos serveurs de messagerie. Cette marque est ajoutée à l’en-tête **Authentication-Results** :
-  
-**Syntaxe : marque de vérification SPF**
-  
+
+#### <a name="syntax-spf-check-stamp"></a>Syntaxe : marque de vérification SPF
+
 Pour SPF, la syntaxe suivante s’applique.
-  
+
 ```text
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
-**Exemples : marque de vérification SPF**
-  
+**Exemples : marque de vérification SPF
+
 ```text
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
-**Syntaxe : marque de vérification DKIM**
-  
+#### <a name="syntax-dkim-check-stamp"></a>Syntaxe : marque de vérification DKIM
+
 Pour DKIM, la syntaxe suivante s’applique.
-  
+
 ```text
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
-**Exemples : marque de vérification DKIM**
-  
+**Exemples : marque de vérification DKIM
+
 ```text
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
-**Syntaxe : marque de vérification DMARC**
-  
+#### <a name="syntax-dmarc-check-stamp"></a>Syntaxe : marque de vérification DMARC
+
 Pour DMARC, la syntaxe suivante s’applique.
-  
+
 ```text
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
-**Exemples : marque de vérification DMARC**
-  
+#### <a name="examples-dmarc-check-stamp"></a>Exemples : marque de vérification DMARC
+
 ```text
 dmarc=pass action=none header.from=contoso.com
 dmarc=bestguesspass action=none header.from=contoso.com
@@ -128,7 +127,7 @@ dmarc=fail action=oreject header.from=contoso.com
 ### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>Champs de l’en-tête Authentication-results utilisés par l’authentification de messagerie Office 365
 
 Le tableau ci-dessous décrit les champs et les valeurs possibles pour chaque vérification d’authentification de courrier électronique.
-  
+
 |**Champ d’en-tête**|**Description**|
 |:-----|:-----|
 |spf|Décrit les résultats de la vérification SPF pour le message. Les valeurs admises sont les suivantes : <br/>**pass (adresse IP)**  : indique que le message a réussi la vérification SPF et fournit l’adresse IP de l’expéditeur. Le client est autorisé à envoyer ou à relayer le courrier électronique avec le domaine de l’expéditeur. <br/>**fail (adresse IP)**  : indique que le message a échoué à la vérification SPF et fournit l’adresse IP de l’expéditeur. Dans ce cas, on parle parfois d’_échec sévère_. <br/>**softfail (raison)**  : indique que l’enregistrement SPF a désigné l’hôte comme n’étant pas autorisé à envoyer mais qu’il est en transition. <br/>**neutral** : indique que l’enregistrement SPF déclare explicitement qu’il ne peut pas confirmer si l’adresse IP est autorisée. <br/>**none** : indique que le domaine n’a pas d’enregistrement SPF ou que l’évaluation de l’enregistrement SPF ne donne aucun résultat. <br/>**temperror** : indique qu’une erreur pouvant être de nature temporaire s’est produite ; il s’agit, par exemple, d’une erreur DNS. L’opération est susceptible de réussir sans intervention de l’administrateur si vous réessayez ultérieurement. <br/>**permerror** : indique qu’une erreur permanente s’est produite. Cela peut se produire, par exemple, si l’enregistrement SPF du domaine est mal formaté.|
