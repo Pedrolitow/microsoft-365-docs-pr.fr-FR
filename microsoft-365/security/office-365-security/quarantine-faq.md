@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique présente les questions fréquemment posées ainsi que les réponses au sujet de la mise en quarantaine hébergée.
-ms.openlocfilehash: 389fa939c2fd35351abad4d355829656c3977deb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 393542596eacd26a4f64237f666fabfe236dceed
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080197"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510531"
 ---
 # <a name="quarantine-faq"></a>FAQ sur la mise en quarantaine
 
@@ -47,15 +47,15 @@ A. Pour pouvoir accéder à la mise en quarantaine du courrier indésirable de l
   
  **Q. Est-ce que du courrier autre que du courrier indésirable peut être envoyé en quarantaine ?**
   
-A. Les messages qui correspondent à une règle de flux de messagerie (également appelée règle de transport) peuvent également être envoyés à la mise en quarantaine de l’administrateur, si c’est l’action configurée. La boîte de mise en quarantaine de l'utilisateur final est uniquement réservée au courrier indésirable.
+R. Oui. Les messages qui correspondent à une règle de flux de messagerie (également appelée règle de transport) ainsi que les messages identifiés comme hameçons peuvent également être envoyés à la mise en quarantaine de l’administrateur, si c’est l’action configurée. La boîte de mise en quarantaine de l'utilisateur final est uniquement réservée au courrier indésirable.
   
  **Q. Pendant combien de temps les messages sont-ils mis en quarantaine ?**
   
-R. Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 30 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Une fois cette période écoulée, les messages sont supprimés et ne sont pas récupérables. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n’est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, voir [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
+A. Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 30 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 30 jours, en fonction de la période de rétention définie dans votre stratégie de filtrage de contenu par défaut. Une fois cette période écoulée, les messages sont supprimés et ne sont pas récupérables. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n’est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, voir [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
   
  **Q. Est-ce que je peux libérer ou signaler plusieurs messages mis en quarantaine à la fois ?**
   
-R. La fonction de libération ou de signalement de plusieurs messages à la fois n'est pas disponible actuellement dans le CAE ou la mise en quarantaine du courrier indésirable de l'utilisateur final. Toutefois, les administrateurs peuvent créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages, et la cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les libérer. 
+R. Oui, jusqu’à 100 messages peuvent être publiés en même temps dans le portail de mise en quarantaine. De plus, les administrateurs peuvent créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages, et la cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les libérer. 
   
  **Q. Are wildcards supported when searching for quarantined messages? Can I search for quarantined messages for a specific domain?**
   

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
-ms.openlocfilehash: a20dbe070d17499eb1db52a957666d509086bcb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1b6c834f5d54c54a577b51edf5f135e30990a92c
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079584"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510541"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
 
@@ -62,7 +62,7 @@ Les messages qui ne parvient pas à s’authentifier ne sont pas tous malveillan
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Quels critères les Outlook.com et Outlook sur le Web utilisent-ils pour ajouter les propriétés «  ? » et « via » ?
 
-Pour le «  ? » de l’image de l’expéditeur : Outlook.com requiert que le message passe l’authentification SPF ou DKIM. Pour plus d’informations, reportez-vous à la rubrique [set up SPF in Office 365 pour éviter l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md) et l' [utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md).
+Pour le «  ? » de l’image de l’expéditeur : Outlook.com nécessite que le message passe l’authentification SPF ou DKIM et reçoit une passe dMarc ou une authentification composite à partir de l’aide à l’usurpation d’Office 365. Pour plus d’informations, reportez-vous à la rubrique [set up SPF in Office 365 pour éviter l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md) et l' [utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md).
 
 Pour la balise via : si le domaine de l’adresse de l’expéditeur est différent du domaine dans la signature DKIM ou SMTP MAIL FROM, Outlook.com affiche le domaine dans l’un de ces deux champs (en préférant la signature DKIM).
 
