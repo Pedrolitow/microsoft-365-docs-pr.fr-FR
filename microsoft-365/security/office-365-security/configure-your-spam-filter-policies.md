@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les paramètres du filtre de courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables.
-ms.openlocfilehash: 38160952827d8e60884877a67aea15521000f63f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fb46e735c4fae73565b6fe008d47a3e7ffd3f4cb
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079444"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510561"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configuration de vos stratégies de filtrage du courrier indésirable
 Les paramètres du filtre de courrier indésirable incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables. Les paramètres de la stratégie de filtrage de courrier indésirable sont appliqués uniquement aux messages entrants et sont de deux sortes :
@@ -48,9 +48,9 @@ Pour activer des paramètres plus personnalisés ou ajouter des stratégies pers
 
 2. Vous pouvez spécifier un nom unique pour les stratégies personnalisées, mais vous ne pouvez pas renommer celui défini par défaut. Vous pouvez autrement spécifier une description plus détaillée.
 
-3. Sous la section **actions de courrier indésirable et en bloc** :
+3. Sous la section **Actions de courrier indésirable et en bloc** :
 
-  - Sélectionnez une action pour le **courrier indésirable**, **le courrier indésirable à haute fiabilité**, les** messages hameçons ** et les types d’**e-mails en bloc**. Les valeurs disponibles sont : 
+  - Sélectionnez une action pour le **courrier indésirable**, le **courrier fortement suspecté d’être indésirable**, le **courrier fortement suspecté d’être une tentative d’hameçonnage**, le **courrier de hameçonnage** et les **types de courrier en nombre**. Les valeurs disponibles sont : 
 
     - **Déplacer le message dans le dossier Courrier indésirable** Envoie le message au dossier Courrier indésirable des destinataires spécifiés. Il s’agit de l’action par défaut pour le courrier indésirable, le courrier indésirable hautement fiable et le bloc.<br/><br/>
 
