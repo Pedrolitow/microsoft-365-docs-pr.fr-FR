@@ -1,8 +1,8 @@
 ---
 title: 'Atelier de directeur de la sécurité des informations (CISO), module 4b : stratégie de protection contre les menaces'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 5644ea7e69381b108dd3e90ec5fb0cbf8738886d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 88cb6ab079afcd420202f5cca47f555895d0d46a
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079462"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517502"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>Module d’atelier CISO 4b : stratégie de protection contre les menaces 
 
 Ce module examine l’évolution et la trajectoire des centres de sécurité Microsoft (SOC), sous la forme de milliards de signaux dans le graphique de sécurité intelligente Microsoft.
 
 - Télécharger le Résumé PDF : [module 4b : stratégie de protection contre les menaces](../media/ciso-workshop-4b-threat-protection-strategy.pdf)
-- Télécharger le résumé PowerPoint : [module 4b : stratégie de protection contre les menaces](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
+- Télécharger le résumé PowerPoint : [module 4b : stratégie de protection contre les menaces](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ## <a name="introduction-threat-protection-strategy-detect-respond-recover-338"></a>Introduction : stratégie de protection contre les menaces (Detect-respond-Recover) (3:38)
 

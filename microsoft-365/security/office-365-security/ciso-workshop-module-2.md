@@ -1,8 +1,8 @@
 ---
 title: 'Atelier de directeur de la sécurité des informations (CISO), module 2 : gestion de la sécurité'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 9fba19de7d2fcc406d1c058cb0fad3c80242c64c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b1403b35c9cea10c87f528c6f09c2948f316f27
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079460"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517583"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>Module d’atelier CISO 2 : gestion de la sécurité 
 
 Découvrez comment améliorer la visibilité et le contrôle de votre parc hybride grâce à des conseils intégrés, à l’application de stratégie automatisée et à la surveillance.
 
 - Télécharger le Résumé PDF : [module 2 : gestion](../media/ciso-workshop-2-security-management.pdf) de la sécurité
-- Télécharger le résumé PowerPoint : [module 2 : gestion](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-2-security-management.pptx) de la sécurité
+- Télécharger le résumé PowerPoint : [module 2 : gestion](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-2-security-management.pptx) de la sécurité
 
 ## <a name="introduction-security-management-125"></a>Introduction : gestion de la sécurité (1:25)
 

@@ -1,8 +1,8 @@
 ---
 title: Atelier de directeur de la sécurité des informations (CISO)
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 95bfc90211b90e129e6b208ab09b6123c61ccaae
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6987f5fcb0504ad4b5bee91a417ff632faa11623
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079452"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37523619"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Formation pour les ateliers de directeur CISO (Information Security officier)
 
@@ -32,7 +32,7 @@ Les vidéos d’atelier CISO et le contenu de téléchargement PDF/PowerPoint so
 
 - [Module 2 : gestion](ciso-workshop-module-2.md)de la sécurité : Découvrez comment augmenter la visibilité et le contrôle de votre parc hybride grâce à des conseils intégrés, à l’application de stratégie automatisée et à la surveillance.
 
-- [Module 3 : gestion des identités et des accès](ciso-workshop-module-3.md): étant donné que la plupart des attaques modernes impliquent la compromission des identités des utilisateurs, Découvrez comment créer un nouveau périmètre de sécurité des identités pour protéger les ressources en dehors de votre réseau d’entreprise.
+- [Module 3 : module 3-accès utilisateur de l’identité et de l’approbation zéro](ciso-workshop-module-3.md): Découvrez comment inclure des concepts d’approbation zéro dans votre stratégie d’accès utilisateur et d’identité afin de mieux protéger les données d’entreprise à l’intérieur et à l’extérieur de votre périmètre réseau.
 
 - [Module 4a : stratégie de protection contre les menaces, partie I](ciso-workshop-module-4a.md): explorer les apprentissages clés relatifs à la protection contre les menaces, à l’évolution de la sécurité, aux stratégies et aux plans de sécurité.
 

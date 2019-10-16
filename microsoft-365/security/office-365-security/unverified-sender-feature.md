@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
-ms.openlocfilehash: 1b6c834f5d54c54a577b51edf5f135e30990a92c
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510541"
+ms.locfileid: "37523629"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
 
@@ -33,6 +33,15 @@ Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettr
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>Comment puis-je identifier un message suspect dans ma boîte de réception ?
 
 Outlook.com et Outlook sur le Web affichent des indicateurs lorsque l’expéditeur d’un message ne peut pas être identifié ou que son identité est différente de ce que vous voyez dans l’adresse de l’expéditeur.
+
+## <a name="you-see-a--in-the-sender-image"></a>Un «  ? » apparaît dans l’image de l’expéditeur
+
+Lorsque Outlook.com et Outlook sur le Web ne peuvent pas vérifier l’identité de l’expéditeur à l’aide des techniques d’authentification de messagerie, ils affichent un «  ? » dans la photo de l’expéditeur. 
+
+![Le message n’a pas passé la vérification](../media/message-did-not-pass-verification.jpg)
+
+Les messages qui ne parvient pas à s’authentifier ne sont pas tous malveillants. Toutefois, vous devez être prudent quant à l’interaction avec les messages qui ne sont pas authentifiés si vous ne reconnaissez pas l’expéditeur. Ou, si vous reconnaissez un expéditeur qui ne possède pas de «  ? » normalement dans l’image de l’expéditeur, mais que vous le voyez soudainement, cela peut être un signe que l’expéditeur est usurpé.
+
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Comment gérer les messages qui reçoivent le traitement de l’expéditeur non vérifié 
 
@@ -49,14 +58,6 @@ Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via
     - Ajoutez la paire de domaines via l’applet de commande PhishFilterPolicy. Pour plus d’informations, voir Set-PhishFilterPolicy et protection contre la falsification dans Office 365
 
 En outre, nous n’appliquons pas le traitement de l’expéditeur non vérifié s’il a été remis à la boîte de réception via une liste verte d’administration, y compris les règles de transport de messagerie (ETR), la liste des domaines approuvés (stratégie anti-spam), la liste des expéditeurs approuvés ou un utilisateur a défini cet utilisateur comme « expéditeur approuvé » dans son utilitaire.
-
-### <a name="you-see-a--in-the-sender-image"></a>Un «  ? » apparaît dans l’image de l’expéditeur
-
-Lorsque Outlook.com et Outlook sur le Web ne peuvent pas vérifier l’identité de l’expéditeur à l’aide des techniques d’authentification de messagerie, ils affichent un «  ? » dans la photo de l’expéditeur. 
-
-![Le message n’a pas passé la vérification](../media/message-did-not-pass-verification.jpg)
-
-Les messages qui ne parvient pas à s’authentifier ne sont pas tous malveillants. Toutefois, vous devez être prudent quant à l’interaction avec les messages qui ne sont pas authentifiés si vous ne reconnaissez pas l’expéditeur. Ou, si vous reconnaissez un expéditeur qui ne possède pas de «  ? » normalement dans l’image de l’expéditeur, mais que vous le voyez soudainement, cela peut être un signe que l’expéditeur est usurpé.
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 

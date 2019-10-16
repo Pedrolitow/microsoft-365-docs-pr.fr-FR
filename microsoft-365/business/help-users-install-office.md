@@ -1,0 +1,49 @@
+---
+title: Aider vos utilisateurs à installer Office sur des appareils Windows 10
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+ms.custom: OKR_SMB_M365
+search.appverid:
+- BCS160
+- MET150
+ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
+description: 'Aidez vos utilisateurs à installer des applications Office. '
+ms.openlocfilehash: 5b953cda7dbd8c2ebe5a6f276ba275e459e95028
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37523639"
+---
+# <a name="help-your-users-install-office-on-windows-10-devices"></a>Aider vos utilisateurs à installer Office sur des appareils Windows 10
+
+[![Étiquette pour vous informer le centre d’administration change et vous trouverez plus de détails sur aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+
+[] Vous pouvez rapidement et facilement installer Office sur les ordinateurs Windows 10 à partir du centre d'administration Microsoft 365 Entreprise.
+  
+Pour mieux comprendre comment cela fonctionne avec les applications Office déjà installées, lisez [Se préparer à l'installation du client Office](prepare-for-office-client-deployment.md) avant de commencer. 
+  
+## <a name="manage-office-deployments"></a>Gérer les déploiements d'Office
+
+1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> l’adresse et connectez-vous à l’aide des références d’administrateur globales. 
+
+2. Accédez au **programme d’installation** sur le volet de navigation de gauche, puis, sur la page de **configuration** , faites défiler jusqu’à **applications et mises à jour**.
+    > [!NOTE]
+    > Vous pouvez ne pas voir cette carte si tous vos utilisateurs ont installé les applications Office.
+  
+3. Dans la fiche **aider les utilisateurs à installer leurs applications Office** , choisissez **affichage** , puis **prise en main**.
+    
+4. Sur le volet Office des utilisateurs de messagerie, cliquez sur le **lien pour télécharger** le volet Office, sélectionnez les utilisateurs auxquels vous souhaitez envoyer un courrier électronique, puis **envoyez un courrier électronique aux utilisateurs sélectionnés**.
+
+    
+      :::image type="content" source="media/sendemailtousers.png" alt-text="Sélectionnez les utilisateurs pour envoyer des courriers électroniques avec le lien de téléchargement Office.":::
+
+
