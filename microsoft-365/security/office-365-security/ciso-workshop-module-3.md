@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 08698a0c8e9bf79ef4c464ef4800d737df1421fc
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: be27e92c44ef6764906448828a94a207bd38bb18
+ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523589"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37554131"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>Module d’atelier CISO 3 : accès utilisateur de l’identité et de l’approbation zéro
 
 Dans la mesure où la plupart des attaques modernes impliquent la compromission des identités des utilisateurs, Découvrez comment créer un nouveau périmètre de sécurité des identités pour protéger les ressources en dehors de votre réseau d’entreprise.
 
-- Télécharger le Résumé PDF : [module 3 : gestion des identités et des accès](../media/ciso-workshop-3-identity-protection.pdf)
-- Télécharger le résumé PowerPoint : [module 3 : gestion des identités et des accès](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-3-identity-protection.pptx)
+- Téléchargement du Résumé PDF : [module 3 : accès de l’identité et de l’approbation zéro de l’utilisateur](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
+- Télécharger le résumé PowerPoint : [module 3 : gestion des identités et des accès](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## <a name="part-1-identity-and-zero-trust-history-933"></a>Partie 1 : historique des approbations et des approbations (9:33)
 
