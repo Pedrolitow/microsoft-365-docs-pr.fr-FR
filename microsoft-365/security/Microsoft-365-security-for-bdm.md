@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: les scénarios de menace et d’attaque les plus courants rencontrés par les organisations pour leurs environnements Microsoft 365 et les actions recommandées pour atténuer ces risques.
-ms.openlocfilehash: 16108f71702e2464721fa09fee4c6c298496a2c4
-ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
+ms.openlocfilehash: c847e11d141dd6b3b4ce7601631259ba73e1703f
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2019
-ms.locfileid: "37481341"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37556819"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Sécurité Microsoft 365 pour les décideurs d’entreprise (BDM)
 
-Cet article décrit quelques-uns des scénarios de menace et d’attaque les plus courants rencontrés par les organisations pour leurs environnements Microsoft 365, et les actions recommandées pour atténuer ces risques. Bien que Microsoft 365 propose un large éventail de fonctionnalités de sécurité préconfigurées, il nécessite également que vous soyez le client responsable de la sécurisation de vos propres identités, données et périphériques utilisés pour accéder aux services Cloud. 
+Cet article décrit quelques-uns des scénarios de menace et d’attaque les plus courants rencontrés par les organisations pour leurs environnements Microsoft 365, et les actions recommandées pour atténuer ces risques. Bien que Microsoft 365 propose un large éventail de fonctionnalités de sécurité préconfigurées, il nécessite également que vous soyez le client responsable de la sécurisation de vos propres identités, données et périphériques utilisés pour accéder aux services Cloud. Ces conseils ont été développés par Kozeta Beam (Microsoft Cloud Security Architect) et Thiagaraj Sundararajan (consultant senior Microsoft).
 
 Cet article est organisé par ordre de priorité du travail, en commençant par la protection de ces comptes utilisés pour administrer les services et les ressources les plus critiques, comme votre client, votre courrier électronique et SharePoint. Il fournit un moyen méthodique de s’approcher de la sécurité et fonctionne avec le feuille de calcul suivante afin que vous puissiez suivre votre progression avec les parties prenantes et les équipes dans votre organisation : [Microsoft 365 Security for BDM Spreadsheet](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx). 
 
