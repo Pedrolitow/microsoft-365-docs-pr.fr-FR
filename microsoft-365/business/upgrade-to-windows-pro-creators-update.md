@@ -8,18 +8,22 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 'Découvrez comment mettre à niveau les appareils Windows vers Windows 10 professionnel Creators Update. '
-ms.openlocfilehash: 95efe45ec43c027ff62b0468e0cfb1fbcc7b60bf
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 5daebb16dcb98ebcdacfb5c7cf330772b24ab753
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288088"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575485"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Mettre à niveau les appareils Windows vers Windows Professionnel Creators Update
 

@@ -8,18 +8,23 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Apprenez à gérer les tâches d’administration Microsoft 365 professionnelles, les appareils mobiles, Windows 10PCs et de nombreuses autres tâches.
-ms.openlocfilehash: 87ba4093a37c708fe405cd0876a53f8b9ae91567
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 1e39adad50688686ef1d03ef7ed51534e067e6b3
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287961"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575955"
 ---
 # <a name="manage-microsoft-365-business"></a>Gérer Microsoft 365 Entreprise
 
@@ -73,9 +78,9 @@ Les rubriques suivantes expliquent comment utiliser Windows AutoPilot dans Micro
   
 - [Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot](add-autopilot-devices-and-profile.md)
     
-- [Créer et modifier des profils AutoPilot](create-and-edit-autopilot-profiles.md)
+- [Création et modification de profils AutoPilot](create-and-edit-autopilot-profiles.md)
     
-- [Créer et modifier des appareils AutoPilot](create-and-edit-autopilot-devices.md)
+- [Création et modification d’appareils AutoPilot](create-and-edit-autopilot-devices.md)
     
 - [Résoudre les erreurs des appareils AutoPilot](troubleshoot-autopilot-errors.md)
     
@@ -89,7 +94,7 @@ Les rubriques suivantes expliquent comment utiliser Windows AutoPilot dans Micro
     
 - [Configurer Microsoft 365 Business à l'aide de l'Assistant Configuration](set-up.md)
     
-- [Migrer vers Microsoft 365 Business](migrate-to-microsoft-365-business.md)
+- [Migration vers Microsoft 365 Business](migrate-to-microsoft-365-business.md)
     
 - [Activer la gestion des appareils Windows 10 associés à un domaine par Microsoft 365 Business](manage-windows-devices.md)
     

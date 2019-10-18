@@ -14,17 +14,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres par défaut et d’autres paramètres disponibles dans Microsoft 365 Business pour sécuriser les appareils Windows 10.
-ms.openlocfilehash: 844bddc4b93c7dc543ad6c6a79f5cf92c96ceff0
-ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
+ms.openlocfilehash: ab306e3d5a6011a0e7d537c98ecca6ef49ff82d9
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630606"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575755"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Définir les paramètres de protection des appareils pour les PC Windows 10
 
@@ -34,7 +35,7 @@ Visionnez une vidéo sur la sécurisation des appareils Windows 10 avec Microsof
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>l’adresse. 
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
 2. Dans le volet de navigation de gauche, choisissez **Ajout**de **stratégies** \> de **périphériques** \> .
   

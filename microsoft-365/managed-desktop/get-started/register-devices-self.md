@@ -1,18 +1,18 @@
 ---
-title: Enregistrer les nouveaux appareils vous-même
+title: Inscrivez vous-même les nouveaux appareils
 description: Inscrire des appareils vous-même afin qu’ils puissent être gérés par le bureau géré Microsoft
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1e42ebe38cea87b3fedc7ebd7bdb52ceb2f1b2c5
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 952fac18db8ecc31fcd041dbfdf45e6ee8edee75
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981725"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577760"
 ---
-# <a name="register-new-devices-yourself"></a>Enregistrer les nouveaux appareils vous-même
+# <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
 Microsoft Managed Desktop peut fonctionner avec les nouveaux appareils ou vous pouvez réutiliser des appareils que vous avez peut-être déjà (ce qui vous obligera à les réimager). Vous pouvez enregistrer des appareils à l’aide de Microsoft Managed Desktop sur le portail Azure.
 
@@ -64,7 +64,7 @@ Microsoft Managed Desktop identifie chaque appareil de manière unique en réfé
 
 Les données des fichiers CSV doivent être regroupées en un seul fichier pour terminer l’inscription. Voici un exemple de script PowerShell pour faciliter cette tâche :
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 ### <a name="register-devices"></a>Inscrire des appareils
 

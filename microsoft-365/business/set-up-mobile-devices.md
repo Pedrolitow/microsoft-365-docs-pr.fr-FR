@@ -14,17 +14,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installez Office sur un iPhone ou un téléphone Android, et vos fichiers professionnels dans les applications Office seront protégés par Microsoft 365 Business.
-ms.openlocfilehash: 81ec7eb980cbe35ced37ab3b25d87d77d9e4390a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 6dd18569f0d4b3c71f00004706c2430eb7c5ae43
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074687"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575605"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Configurer des appareils mobiles pour les utilisateurs Microsoft 365 Entreprise
 
@@ -33,11 +34,11 @@ Suivez les instructions des onglets pour installer Office sur un iPhone ou un t�
   
 L'exemple s'applique à Outlook, mais également à toute autre application Office que vous souhaiteriez installer.
   
-## <a name="set-up-mobile-devices"></a>Configurer des appareils mobiles
+## <a name="set-up-mobile-devices"></a>Configuration des appareils mobiles
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   
-Regardez une vidéo sur la configuration des applications Office sur des appareils iOS avec Microsoft 365 Business:
+Regardez une vidéo sur la configuration des applications Office sur des appareils iOS avec Microsoft 365 Business :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 

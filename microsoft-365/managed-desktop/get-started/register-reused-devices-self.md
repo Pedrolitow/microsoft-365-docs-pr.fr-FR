@@ -1,18 +1,18 @@
 ---
-title: Enregistrer les appareils existants vous-même
+title: Inscrivez vous-même les appareils existant
 description: Enregistrer les appareils réutilisés vous avez peut-être déjà des utilisateurs pour qu’ils puissent être gérés par le bureau géré Microsoft
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: c2527b18c422d53060398f90b7470db8b4959afa
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982947"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577770"
 ---
-# <a name="register-existing-devices-yourself"></a>Enregistrer les appareils existants vous-même
+# <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
 >[!NOTE]
 >Cette rubrique décrit la procédure à suivre pour réutiliser les appareils dont vous disposez déjà et les enregistrer dans le bureau géré Microsoft. Si vous travaillez avec des appareils de marque, suivez plutôt les étapes de la procédure [inscrire de nouveaux appareils dans Microsoft Managed Desktop](register-devices-self.md) .
@@ -176,7 +176,7 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 
 Si vous avez collecté les données de hachage du matériel à l’aide de la méthode manuelle PowerShell ou Flash Drive, il vous faut maintenant que les données des fichiers CSV soient combinées en un seul fichier pour terminer l’inscription. Voici un exemple de script PowerShell pour faciliter cette tâche :
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 Une fois les données hachées fusionnées dans un fichier CSV, vous pouvez maintenant [enregistrer les appareils](#register-devices).
 

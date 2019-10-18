@@ -10,18 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Affichez les stratégies et les actions des appareils en vous connectant à Microsoft 365 entreprise avec des informations d’identification d’administrateur général.
-ms.openlocfilehash: 26cb0d4ebe819b6131aaa4d2e18ef3b2ad588a7c
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: c961630f0698ed864bfb94b4672f92825089ea4c
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287572"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575445"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Afficher et gérer les stratégies et les appareils
 
@@ -29,7 +33,7 @@ ms.locfileid: "37287572"
 
 ## <a name="view-and-edit-device-policies"></a>Afficher et modifier des stratégies d’appareil
 
-1.  Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>l’adresse.
+1.  Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 2. Dans le volet de navigation de gauche, choisissez **stratégies**de **périphériques** \> .
 
     Cette page vous permet de créer, de modifier ou de supprimer une stratégie ou d'en changer le groupe cible.

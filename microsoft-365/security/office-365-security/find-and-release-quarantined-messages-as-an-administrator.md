@@ -14,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: 80bc774d53b82ecd9295ed40f6c8254c7047a2e0
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 8f127dd1e7c14bbf2ae1d3bf23e611ef5c3ac1dc
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441131"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37576032"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur
 
 Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE). Office 365 dirige les messages en quarantaine soit parce qu’ils ont été identifiés comme courrier indésirable, soit qu’ils correspondent à une règle de flux de messagerie (également appelée règle de transport).
 
-Utilisez le centre &amp; de sécurité conformité au lieu du centre d’administration Exchange pour effectuer l’une de ces tâches, ainsi que pour afficher et utiliser les messages qui ont été envoyés en quarantaine, car ils contiennent des programmes malveillants. Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Vous pouvez utiliser le centre de sécurité & conformité au lieu du centre d’administration Exchange pour effectuer l’une de ces tâches également ; le portail de mise en quarantaine dans le centre d’administration Exchange est défini sur decommisioned.  Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
 
 Les messages mis en quarantaine sont répertoriés sur la page de **mise en quarantaine** dans le CAE. Par défaut, les messages sont triés du plus récent au plus ancien sur la base du champ **REÇU**. Les valeurs **EXPÉDITEUR**, **OBJET** et **EXPIRE** sont également indiquées pour chaque message. Vous pouvez ordonner les messages en fonction des valeurs de l'un ou l'autre de ces champs en cliquant sur leur en-tête. Pour inverser l'ordre, cliquez sur l'en-tête de colonne une seconde fois. La page de **mise en quarantaine** affiche un maximum de 500 messages.
 
@@ -67,7 +67,7 @@ Dans le centre d'administration Exchange, une recherche avancée vous permet de 
    6. **Expire**: vous pouvez indiquer que le message sera supprimé de la quarantaine au cours des prochaines 24 heures ( **aujourd’hui**), au cours des prochaines 48 heures ( **2 prochains jours**), au cours de la semaine suivante (7 prochains **jours**) ou vous pouvez sélectionner un intervalle de temps personnalisé pendant duquel le message sera supprimé de la quarantaine.
 
       > [!IMPORTANT]
-      > Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 15 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Une fois cette période écoulée, Office 365 supprime les messages qui ne peuvent ensuite plus être récupérés. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n’est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
+      > Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 30 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont maintenus en quarantaine pendant 30 jours, en fonction de la période de rétention définie dans votre stratégie de filtrage de contenu par défaut. Une fois cette période écoulée, Office 365 supprime les messages qui ne peuvent ensuite plus être récupérés. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n’est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
 
    7. **Type (type** ) Vous pouvez spécifier s’il faut rechercher les messages mis en quarantaine identifiés comme **courrier indésirable**ou rechercher les messages qui correspondent à une règle de flux de messagerie (**règle de transport**).
 
@@ -184,6 +184,6 @@ Si vous cliquez sur **Actualiser** ![l’actualisation](../media/ITPro-EAC-Refre
 
 Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](../media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [FAQ sur la mise en quarantaine](quarantine-faq.md)
