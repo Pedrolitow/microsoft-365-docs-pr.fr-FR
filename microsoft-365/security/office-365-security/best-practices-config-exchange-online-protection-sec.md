@@ -3,7 +3,7 @@ title: Meilleures pratiques en matière de configuration pour EOP et Office 365 
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Qu’est-ce qui est recommandé ? Qu’est-ce qui doit être utilisé de manière agressive ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: fb6a39756c54e46f5ac8208c9c92af30bc144a57
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: b40b4189ed996e1b2f671b77602630f2a98966a5
+ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37387150"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598298"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp-security"></a>Meilleures pratiques pour la configuration de la sécurité de l’ATP et d’Office 365
 
@@ -32,14 +32,14 @@ Nous aborderons deux niveaux de sécurité, appelés recommandé et agressif dan
 
 SPF, DKIM et DMARC sont des acronymes pour Sender Policy Framework, DomainKeys Identified Identified Mail, ainsi qu’une authentification, un rapport et une conformité des messages basés sur un domaine (un Mouthful) et sont la base de l’authentification et de la validation de la messagerie.
 
-Ces méthodes gèrent les messages sortants à partir d’Office 365 et aident les systèmes de destination à approuver que les messages électroniques provenant de votre domaine sont valides. Il s’agit des seules meilleures pratiques que nous allons aborder, qui impliquent des configurations qui doivent être effectuées en *dehors* d’Office 365, dans votre système DNS. Pour connaître les étapes de configuration spécifiques, reportez-vous à la section [authentification et validation](https://docs.microsoft.com/en-us/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing) de la messagerie dans la table des matières sécurité et conformité.
+Ces méthodes gèrent les messages sortants à partir d’Office 365 et aident les systèmes de destination à approuver que les messages électroniques provenant de votre domaine sont valides. Il s’agit des seules meilleures pratiques que nous allons aborder, qui impliquent des configurations qui doivent être effectuées en *dehors* d’Office 365, dans votre système DNS. Pour connaître les étapes de configuration spécifiques, reportez-vous à la section [authentification et validation](https://docs.microsoft.com/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing) de la messagerie dans la table des matières sécurité et conformité.
 
 
 |Nom de la fonctionnalité de sécurité  |Recommandé |Façon  |Commentaire  |
 |---------|---------|---------|---------|
-|[Créer des enregistrements SPF](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | v        |    v     |   -      |
-|[Configuration de la signature DKIM pour les domaines](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  v       |    v     |  -       |
-|[Implémenter DMARC avec l’action de rejet ou de mise en quarantaine](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   v      |     v    |   Utilisez action = None pour recommandé et action = Reject pour agressif.     |
+|[Créer des enregistrements SPF](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Oui        |    Oui     |   -      |
+|[Configuration de la signature DKIM pour les domaines](https://docs.microsoft.com/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Oui       |    Oui     |  -       |
+|[Implémenter DMARC avec l’action de rejet ou de mise en quarantaine](https://docs.microsoft.com/office365/securitycompliance/use-dmarc-to-validate-email)     |   Oui      |     Oui    |   Utilisez action = None pour recommandé et action = Reject pour agressif.     |
 
 > [!IMPORTANT]
 > Pour travailler avec les rôles de sécurité et les autorisations, assurez-vous que vous disposez du ou des rôles corrects dans Office 365 ou le centre de sécurité et conformité. Si vous êtes un *administrateur de sécurité* dans Azure Active Directory, un *administrateur Global* dans Office 365 ou un *Gestionnaire d’organisation Exchange Online* dans Exchange Online/Exchange Online PowerShell, vous êtes prêt à aller plus en plus.
@@ -56,15 +56,15 @@ Les filtres phising sont activés par défaut dans Office 365, mais doivent êtr
 
 |Nom de la fonctionnalité de sécurité  |Recommandé |Façon  |Commentaire  |
 |---------|---------|---------|---------|
-|Période de rétention de quarantaine    |   v      |     v    |   30 jours   |
-|Fréquence de notification de courrier indésirable de l’utilisateur final   |   v      |     v    |   3 jours   |
-|Zéro heure la purge automatique doit être activée.   |   v      |     v    |   Vrai  |
+|Période de rétention de quarantaine    |   Oui      |     Oui    |   30 jours   |
+|Fréquence de notification de courrier indésirable de l’utilisateur final   |   Oui      |     Oui    |   3 jours   |
+|Zéro heure la purge automatique doit être activée.   |   Oui      |     Oui    |   True  |
 |L’action de détection du courrier indésirable doit être envoyée à | JMF | Quarantaine | - |
 |L’action de détection de courrier indésirable à fiabilité élevée doit être envoyée à | Quarantaine | Quarantaine| - |
 |L’action de détection en bloc doit être définie sur | JMF | Quarantaine | - |
 |Définir le seuil de courrier électronique en masse sur | 6.x | 4 | - |
 |Les conseils de sécurité doivent être activés.| True | True | - |
-|Activer la notification de courrier indésirable de l’utilisateur final| Vrai | Faux | - |
+|Activer la notification de courrier indésirable de l’utilisateur final| Vrai | False | - |
 |Expéditeurs autorisés | Aucune | Aucune | - |
 |Domaines d’expéditeurs autorisés | Aucune | Aucune | - |
 |Expéditeurs bloqués | Aucune | Aucune | - |
@@ -122,12 +122,12 @@ Recommandé pour **les niveaux de niveau** recommandé et agressif :
 |MailboxIntelligenceProtectionAction |NoAction |Bloc | - |
 |TargetedDomainProtectionAction |NoAction |Bloc | - |
 |AuthenticationFailAction |MoveToJmf |Quarantaine | - |
-|AntiSpoofEnforcementType |Élevé |Élevé | - |
+|AntiSpoofEnforcementType |Importante |Importante | - |
 |EnableAuthenticationSafetyTip |False |Vrai | - |
 |EnableAntiSpoofEnforcement |True |True | - |
 |EnableUnauthenticatedSender |True |True | - |
 |EnableAuthenticationSoftPassSafetyTip |False |Vrai | - |
-|TreatSoftPassAsAuthenticated |Vrai |Faux | - |
+|TreatSoftPassAsAuthenticated |Vrai |False | - |
 |EnableSuspiciousSafetyTip |True |True | - |
 
 ## <a name="office-365-advanced-threat-protection-atp-security"></a>Sécurité Office 365-protection avancée contre les menaces (ATP)
@@ -135,7 +135,7 @@ Recommandé pour **les niveaux de niveau** recommandé et agressif :
 Précédemment, j’ai dit qu’il a été encouragé pour les abonnements de E3 afin d’ajouter un plan de service Office 365 DAV (plan 1) ou le plan de disponibilité 2 le plus complet. La protection avancée contre le hameçonnage est une raison pour laquelle. Activé par défaut, l’anti-hameçonnage ***doit*** être configuré avec des stratégies pour fonctionner. En oubliant de configurer les stratégies anti-hameçonnage exposent les utilisateurs à des risques, assurez-vous que l’étape 2 est ajoutée après avoir ajouté un abonnement ATP.
 
 > [!IMPORTANT]
->  Si vous disposez d’un abonnement E5, vous avez actuellement un [plan ATP 2](https://products.office.com/en-us/exchange/advance-threat-protection). Consultez ce lien pour découvrir [les nouveautés de la](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff)protection avancée contre les menaces.
+>  Si vous disposez d’un abonnement E5, vous avez actuellement un [plan ATP 2](https://products.office.com/exchange/advance-threat-protection). Consultez ce lien pour découvrir [les nouveautés de la](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff)protection avancée contre les menaces.
 
 ### <a name="advanced-anti-phishing"></a>Protection avancée contre le hameçonnage
 
