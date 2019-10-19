@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 0b98e48b128eeaea0e0dd5cb9613ece95e991861
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 7253ea698613a38988bd7a6942a4908e9c797e2a
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982745"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37372765"
 ---
-# <a name="phase-3-windows-10-enterprise"></a>Phase 3 : Windows 10 Entreprise
+# <a name="phase-3-windows-10-enterprise"></a>Phase 3 : Windows 10 Entreprise
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 Enterprise comprend Windows 10 entreprise, qui vous offre les outils permettant d’en faire plus et de rester sécurisé. Windows 10 entreprise :
 
@@ -42,7 +42,7 @@ Il existe plusieurs façons de déployer Windows 10 entreprise pour votre organi
 | [Utilisation de System Center Configuration Manager en tant que mise à niveau sur place](windows10-deploy-inplaceupgrade.md) | Sélectionnez cette option si vous devez mettre à niveau les ordinateurs Windows 7 ou Windows 8,1 vers la <a href="https://aka.ms/windows-10-release-information" target="_blank">version actuelle</a> de Windows 10 entreprise et que vos ordinateurs sont actuellement gérés avec <a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (branche actuelle)</a>. |
 | [Utilisation de Windows AutoPilot](windows10-deploy-autopilot.md) | Sélectionnez cette option si vous configurez de nouveaux ordinateurs Windows sur lesquels Windows 10 entreprise, version 1703 ou ultérieure est préinstallé. Les utilisateurs finaux vont lancer le programme d’installation à l’aide de la configuration souhaitée en saisissant leurs informations d’identification de compte professionnel ou scolaire. |
 
-Si ces scénarios de déploiement ne répondent pas aux besoins de votre organisation, vous pouvez en savoir plus sur les autres scénarios et comprendre les capacités et les limites de chacune d’elles dans les [scénarios de déploiement de Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Vous pouvez également <a href="https://aka.ms/planforwin10deployment" target="_blank">planifier le déploiement de Windows 10 par</a> vous-même.
+Si ces scénarios de déploiement ne répondent pas aux besoins de votre organisation, vous pouvez en savoir plus sur les autres scénarios et comprendre les capacités et les limites de chacune d’elles dans les [scénarios de déploiement de Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Vous pouvez également <a href="https://aka.ms/planforwin10deployment" target="_blank">planifier le déploiement de Windows 10</a> par vous-même.
 
 Pour en savoir plus sur Windows 10, consultez les articles suivants :
 
@@ -78,10 +78,10 @@ Jetez un œil à Microsoft et découvrez comment l’entreprise [a déployé Win
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, a [déployé Windows 10 entreprise](contoso-win10.md).
 
-![](./media/contoso-overview/contoso-icon.png)
+![Société Contoso](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Étape suivante
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Préparer votre organisation pour Windows 10 Entreprise](windows10-prepare-your-org.md) |
+|![Étape 1](./media/stepnumbers/Step1.png)| [Préparer votre organisation pour Windows 10 Entreprise](windows10-prepare-your-org.md) |

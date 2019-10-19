@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982015"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590498"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
@@ -42,7 +42,7 @@ Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de me
 |Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
 |**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
-|        |[Bloquer les clients qui ne prennent pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les règles d’accès conditionnel, c’est pourquoi il est important de bloquer ces|
+|        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les règles d’accès conditionnel, c’est pourquoi il est important de bloquer ces|
 |        |[Les utilisateurs à haut risque doivent changer leur mot de passe](#high-risk-users-must-change-password)|Force les utilisateurs à modifier leur mot de passe lors de la connexion en cas de détection d’une activité à haut risque pour leur compte.|
 |        |[Définir les stratégies de protection des applications](#define-app-protection-policies)|Une stratégie par plateforme (iOS, Android, Windows).|
 |        |[Exiger les applications approuvées](#require-approved-apps)|Applique la protection des applications mobiles pour les téléphones et les tablettes|
@@ -112,8 +112,8 @@ Appliquez les paramètres en fonction du niveau de protection que vous ciblez.
 |:---|:---------|:-----|:----|
 |Accorder|Accorder l'accès|Vrai|Sélectionné|
 ||Exiger MFA|True|Check|
-||Exiger que l’appareil soit marqué comme conforme|Faux||
-||Exiger un appareil joint Azure AD hybride|Faux||
+||Exiger que l’appareil soit marqué comme conforme|False||
+||Exiger un appareil joint Azure AD hybride|False||
 ||Exiger une application client approuvée|False||
 ||Demander tous les contrôles sélectionnés|True|Sélectionné|
 
@@ -122,7 +122,7 @@ Appliquez les paramètres en fonction du niveau de protection que vous ciblez.
 
 
 
-## <a name="block-clients-that-dont-support-modern-authentication"></a>Bloquer les clients qui ne prennent pas en charge l’authentification moderne
+## <a name="block-clients-that-dont-support-modern-authentication"></a>Bloquer les clients ne prenant pas en charge l’authentification moderne
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s’affiche.
 
 2. Dans le menu de gauche, choisissez **Azure Active Directory**.
@@ -148,9 +148,9 @@ Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
 |Accorder|Bloquer l’accès|Vrai|Sélectionné|
-||Exiger MFA|Faux||
-||Exiger que l’appareil soit marqué comme conforme|Faux||
-||Exiger un appareil joint Azure AD hybride|Faux||
+||Exiger MFA|False||
+||Exiger que l’appareil soit marqué comme conforme|False||
+||Exiger un appareil joint Azure AD hybride|False||
 ||Exiger une application client approuvée|False||
 ||Demander tous les contrôles sélectionnés|True|Sélectionné|
 
@@ -192,7 +192,7 @@ Créez une stratégie pour chaque plateforme :
 - Android
 - Windows 10
 
-Pour créer une stratégie de protection des applications, connectez-vous au portail Microsoft Azure avec vos informations d’identification d’administration, puis accédez à **applications mobiles > stratégies de protection des applications**. Sélectionnez **Ajouter une stratégie**.
+Pour créer une stratégie de protection des applications, connectez-vous au portail Microsoft Azure avec vos informations d’identification d’administrateur, puis accédez à >  **applications clientes****stratégies de protection**des applications. Choisissez **créer une stratégie**.
 
 Les options de stratégie de protection des applications présentent de légères différences entre iOS et Android. La stratégie ci-dessous est conçue spécifiquement pour Android. Utilisez-le comme guide pour vos autres stratégies.
 
@@ -200,7 +200,7 @@ La liste d’applications recommandée inclut les éléments suivants :
 - PowerPoint
 - Excel
 - Word
-- Microsoft Teams
+- Microsoft Teams
 - Microsoft SharePoint
 - Visionneuse Microsoft Visio
 - OneDrive
@@ -305,7 +305,7 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
+|Mot de passe|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
 ||Mots de passe simples|Bloc||
 ||Type de mot de passe|Valeur par défaut du périphérique||
 ||Longueur minimale du mot de passe|6.x||
@@ -326,7 +326,7 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyen||
+|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyenne||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Exiger des PC conformes (mais pas les téléphones et les tablettes conformes)
 Avant d’ajouter une stratégie pour exiger des PC conformes, veillez à inscrire les appareils pour la gestion dans Intune. L’utilisation de l’authentification multifacteur est recommandée avant l’inscriptions de périphériques dans Intune pour garantir que l’appareil est en possession de l’utilisateur prévu. 

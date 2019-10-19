@@ -1,24 +1,25 @@
 ---
-title: Se préparer à l’enregistrement dans le bureau géré Microsoft
-description: ''
+title: Préparer son inscription au Bureau géré Microsoft
+description: Étapes à suivre pour préparer votre organisation à l’enregistrement
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
-ms.openlocfilehash: 68cf55e5528affef352f144384888c0cb01cfc88
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390541"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595590"
 ---
-# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Se préparer à l’enregistrement dans le bureau géré Microsoft
+# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Préparer son inscription au Bureau géré Microsoft
 
-En savoir plus sur les conditions préalables pour le bureau géré Microsoft. 
+Ces rubriques décrivent les étapes à suivre dans votre organisation pour vous préparer à l’inscription, notamment pour vérifier que votre environnement répond aux conditions préalables requises, la configuration des réseaux, la configuration des certificats et la préparation de vos applications en vue de leur inclusion dans le desservi.
 
-## <a name="in-this-section"></a>Dans cette section
+- [Configuration requise pour le Bureau géré Microsoft](prerequisites.md)
+- [Configuration réseau pour le bureau géré Microsoft](network.md)
+- [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](network.md)
+- [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
+- [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
+- [Applications dans le bureau géré Microsoft](apps.md)
 
-- [Conditions préalables pour le bureau géré Microsoft](prerequisites.md)
-- [Configuration réseau](network.md)
-- [Préparer les applications pour le bureau géré Microsoft](apps.md)

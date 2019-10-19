@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie qui détecte les messages contenant du courrier indésirable ou des programmes malveillants qui ont déjà été remis dans la boîte de réception de vos utilisateurs, puis rend le contenu malveillant inoffensif. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: f43826614def99f8807d8777f128d5bc66f7b46a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 725dc9da9119169937231372585489bdf192b11e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079949"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37319267"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure : protection contre le courrier indésirable et les programmes malveillants
 
@@ -56,16 +56,17 @@ Le logiciel malveillant ZAP est activé par défaut dans la stratégie de progra
 
 Pour les messages identifiés comme hameçons après la remise, ZAP entreprend une action en fonction de la stratégie de courrier indésirable couverte par l’utilisateur. Si l’action de hameçonnage de la stratégie est définie sur entreprendre une action sur un message (Redirect, supprimer, mettre en quarantaine, déplacer vers le courrier indésirable), alors ZAP déplace le message vers le dossier de courrier indésirable de la boîte de réception de l’utilisateur, quel que soit l’état de lecture du message. Si l’action de hameçonnage de la stratégie n’est pas configurée pour effectuer une action (ajouter un en-tête X, modifier l’objet, aucune action), ZAP n’entreprendra aucune action sur le courrier. En savoir plus sur la [configuration de vos stratégies de filtrage du courrier indésirable](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies) ici.
 
-Le blocage du hameçonnage est activé par défaut dans la stratégie de courrier indésirable. Vous pouvez désactiver les hameçons ZAP en utilisant le paramètre *ZapEnabled* sur la cmdlet [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell.
+Le blocage du hameçonnage est activé par défaut dans la stratégie de courrier indésirable. Le paramètre de hameçonnage ZAP peut être désactivé à l’aide du paramètre *PhishZapEnabled* de [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), une cmdlet EOP.
+
+> **[Remarque]** le paramètre de cmdlet *ZapEnabled* précédent qui a contrôlé à la fois le hameçonnage et le blocage du courrier indésirable est **déconseillé le 1er février 2020**. Si vous avez écrit des scripts qui utilisent le paramètre ZapEnabled, nous vous recommandons de les mettre à jour afin d’utiliser SpamZapEnabled et PhishZapEnabled. Pendant la période de transition, tous les 3 paramètres (ZapEnabled, PhishZapEnabled et SpamZapEnabled) seront disponibles via l’applet de commande. Tant qu’il n’est pas explicitement défini via l’interface utilisateur ou PowerShell, PhishZapEnabled et SpamZapEnabled affichent une valeur héritée du paramètre ZapEnabled. Une fois les nouveaux paramètres définis, ils n’héritent plus du paramètre ZapEnabled. Une fois qu’elle est désapprouvée, la définition de ZapEnabled n’a aucun effet sur les propriétés PhishZapEnabled ou SpamZapEnabled et ZapEnabled sera supprimé de la liste des paramètres dans cmdlets.
 
 ### <a name="spam-zap"></a>Blocage du courrier indésirable
 
 Pour les messages identifiés comme courrier indésirable après la remise, ZAP entreprend une action en fonction de la stratégie de courrier indésirable couverte par l’utilisateur. Si l’action de courrier indésirable de la stratégie est configurée pour entreprendre une action sur un message (Redirect, supprimer, mettre en quarantaine, déplacer vers le courrier indésirable), alors ZAP déplace le message vers le dossier courrier indésirable de la boîte de réception de l’utilisateur, si le message n’est pas lu. Si l’action de courrier indésirable de la stratégie n’est pas configurée pour agir (ajouter un en-tête X, modifier l’objet, aucune action), ZAP n’entreprendra aucune action sur le courrier. En savoir plus sur la [configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) ici.
 
-Le courrier indésirable ZAP est activé par défaut dans la stratégie de courrier indésirable. Vous pouvez désactiver le blocage du courrier indésirable à l’aide du paramètre *ZapEnabled* de l’applet de commande [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell.
+Le courrier indésirable ZAP est activé par défaut dans la stratégie de courrier indésirable. Vous pouvez désactiver le blocage du courrier indésirable à l’aide du paramètre *SpamZapEnabled* de l’applet de commande [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell.
 
-> [!NOTE]
-> Le paramètre *ZapEnabled* de la cmdlet **Set-HostedContentFilterPolicy** désactive ou active les versions zap et de blocage du courrier indésirable pour la stratégie. Il n’est pas possible d’activer ou de désactiver les messages d’hameçonnage ZAP et de courrier indésirable dans la même stratégie.
+> **[Remarque]** le paramètre de cmdlet *ZapEnabled* précédent qui a contrôlé à la fois le hameçonnage et le blocage du courrier indésirable est **déconseillé le 1er février 2020**. Si vous avez écrit des scripts qui utilisent le paramètre ZapEnabled, nous vous recommandons de les mettre à jour afin d’utiliser SpamZapEnabled et PhishZapEnabled. Pendant la période de transition, tous les 3 paramètres (ZapEnabled, PhishZapEnabled et SpamZapEnabled) seront disponibles via l’applet de commande. Tant qu’il n’est pas explicitement défini via l’interface utilisateur ou PowerShell, PhishZapEnabled et SpamZapEnabled affichent une valeur héritée du paramètre ZapEnabled. Une fois les nouveaux paramètres définis, ils n’héritent plus du paramètre ZapEnabled. Une fois qu’elle est désapprouvée, la définition de ZapEnabled n’a aucun effet sur les propriétés PhishZapEnabled ou SpamZapEnabled et ZapEnabled sera supprimé de la liste des paramètres dans cmdlets.
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Comment savoir si la méthode ZAP a déplacé votre message
 
@@ -87,15 +88,17 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="disable-phish-zap-and-spam-zap"></a>Désactiver le hameçonnage ZAP et le blocage du courrier indésirable
 
-Cet exemple désactive la préversion de hameçonnage et le courrier indésirable dans la stratégie de filtrage de contenu nommée « test ».
+Pour désactiver le hameçonnage et le courrier indésirable pour votre client O365, ou un ensemble d’utilisateurs, utilisez les paramètres *PhishZapEnabled* et *SpamZapEnabled* de [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), une cmdlet EOP.
+
+Dans l’exemple suivant, les messages hameçons et de courrier indésirable sont désactivés pour une stratégie de filtrage de contenu nommée « test ».
 
 ```Powershell
-Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
+Set-HostedContentFilterPolicy -Identity Test -PhishZapEnabled $false -SpamZapEnabled $false
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758).
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Forum aux questions
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>Que se passe-t-il si un message légitime est déplacé vers le dossier courrier indésirable ?
   
@@ -113,7 +116,7 @@ Les règles créées par les administrateurs (règles de flux de messagerie) ou 
 
 ZAP fonctionne toujours dans ce cas, sauf si le message a été supprimé ou se trouve dans un courrier indésirable.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
   
