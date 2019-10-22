@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation Office 365.
-ms.openlocfilehash: 24196139d46df8de7813e827e57d04c4bf9146b0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 677b46f970edab98e950c9db49f264afc8d5dd73
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080186"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590488"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Utiliser DMARC pour valider les e-mails dans Office 365
 
@@ -209,6 +209,13 @@ Office 365 est configuré de cette façon, car certains messages légitimes peuv
 - Les utilisateurs ajoutent individuellement des expéditeurs approuvés à l’aide de leur client de messagerie
     
 - Les administrateurs créent une règle de flux de messagerie Exchange (également appelée règle de transport) pour tous les utilisateurs qui autorise la transmission des messages de ces expéditeurs particuliers. 
+
+## <a name="how-office-365-utilizes-authenticated-received-chain-arc"></a>Comment Office 365 utilise une chaîne reçue authentifiée (ARC)
+<a name="ARC"> </a>
+
+Toutes les boîtes aux lettres hébergées dans Office 365 tirent désormais parti d’ARC avec une meilleure remise des messages et une protection renforcée contre l’usurpation d’identité. ARC conserve les résultats d’authentification de courrier de tous les intermédiaires participants, ou sauts, lorsqu’un e-mail est acheminé du serveur d’origine vers la boîte aux lettres du destinataire. Avant ARC, les modifications effectuées par les intermédiaires dans le routage d’e-mails, telles que les règles de transfert ou les signatures automatiques, pourraient entraîner des échecs DMARC au moment où les e-mails atteignent la boîte aux lettres du destinataire. Avec ARC, la conservation de chiffrement des résultats d’authentification permet à Office 365 de vérifier l’authenticité de l’expéditeur d’un e-mail. 
+
+Office 365 utilise actuellement ARC pour vérifier les résultats de l’authentification lorsque Microsoft est le scellant ARC, mais envisagez d’ajouter une prise en charge pour les scellants ARC tiers à l’avenir. 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>Résolution des problèmes d’implémentation de DMARC
 <a name="dmarctroubleshoot"> </a>
