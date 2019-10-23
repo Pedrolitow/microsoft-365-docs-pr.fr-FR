@@ -3,7 +3,7 @@ title: Modifications du contenu du déploiement de Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Consultez le nouveau contenu et les modifications apportées au contenu du Guide de déploiement de Microsoft 365.
-ms.openlocfilehash: 67d0f51dd1f2602a21d199da1ed7ca6ba6e41c09
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: e872b0c289a002b4a0e0459a9ee19aa78b039b31
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453990"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617242"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Modifications du contenu du déploiement de Microsoft 365 Entreprise
 
 ## <a name="october-2019"></a>Octobre 2019
 
 ### <a name="new-content"></a>Nouveau contenu 
+
+- [Scénario Teams pour les données hautement réglementées](secure-teams-highly-regulated-data-scenario.md)
+
+  [![Scénario Teams pour les données hautement réglementées](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
 
 - [Affiche Confiez des responsabilités aux travailleurs à distance](empower-people-to-work-remotely.md#poster)
 
@@ -34,7 +38,7 @@ ms.locfileid: "37453990"
 ### <a name="updates-and-enhancements"></a>Mises à jour et améliorations
 
 - Actualisation de l’[étude de cas Contoso](contoso-case-study.md)
-- Actualisation de la charge de travail de [Exchange Online](exchangeonline-workload.md)
+- Actualisation des charges de travail [Microsoft Teams](teams-workload.md), [Exchange Online](exchangeonline-workload.md) et [SharePoint Online](sharepoint-online-onedrive-workload.md)
 - Actualisation du scénario des [sites SharePoint pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md)
  
   [![Scénario des sites SharePoint pour les données hautement réglementées](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)

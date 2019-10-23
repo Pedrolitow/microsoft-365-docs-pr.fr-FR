@@ -2,7 +2,7 @@
 title: Scénarios et charges de travail Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Intégrez les utilisateurs de votre organisation aux charges de travail productivité de Microsoft 365 Entreprise.
-ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403243"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608595"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
 
@@ -38,7 +38,12 @@ Un autre de ces besoins est la protection des données hautement réglementées 
 - sujettes à des réglementations régionales ;
 - les plus précieuses de votre organisation comme les secrets commerciaux, les informations sur les ressources humaines ou financières et la stratégie de l’organisation.
 
-Pour protéger ces données contre des menaces internes et externes, consultez [Sites SharePoint et Microsoft Teams pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md). Ce scénario vous guide dans la configuration d’un site SharePoint ou d’une équipe Microsoft Teams afin de stocker en toute sécurité vos données les plus précieuses.
+Pour protéger ces données contre les menaces internes et externes, voir :
+
+- [Teams pour les données hautement réglementées](secure-teams-highly-regulated-data-scenario.md)
+- [Sites SharePoint pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md). 
+
+Ces scénarios vous guident dans la configuration d’une équipe Microsoft Teams ou d’un site SharePoint afin de stocker en toute sécurité vos données les plus précieuses.
 
 Les charges de travail et les scénarios décrits dans le guide de déploiement global de Microsoft 365 Entreprise sont les suivants :
 
