@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez Office 365 Advanced Threat Protection et protégez les données sensibles.
-ms.openlocfilehash: 0b0c1ac1d23bc7b167a58ecf93019a77c51c4366
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: fb63ca7e3cf38ecf31aab98e425b02e8b9983bf8
+ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37576015"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636749"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -76,7 +76,7 @@ Pour créer une règle de transport de messagerie :
     
 |**Paramètre**|**Avertir les utilisateurs avant l’ouverture de pièces jointes de fichiers Office**||
 |:-----|:-----|:-----|
-|Name  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/>  |
+|Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/>  |
 |Appliquez cette règle si. . .  <br/> |N’importe quelle pièce jointe. . . l’extension de fichier correspond à. . .  <br/> |
 |Spécifier des mots ou des expressions  <br/> |Ajoutez les types de fichiers suivants :  <br/> dotm, docm, xlsm, SLTM, xla, xlam, XLL, pptm, potm, ppam, PPSM, sldm  <br/>|
 |Procédez comme suit. . .  <br/> |Avertir le destinataire avec un message  <br/> |
@@ -110,7 +110,7 @@ Pour créer une règle de transport de courrier, regardez [cette courte vidéo](
     
 |**Paramètre**|**Avertir les utilisateurs avant l’ouverture de pièces jointes de fichiers Office**|
 |:-----|:-----|
-|Name  <br/> |Empêcher le transfert automatique des courriers électroniques vers des domaines externes  <br/> |
+|Nom  <br/> |Empêcher le transfert automatique des courriers électroniques vers des domaines externes  <br/> |
 |Appliquer cette règle si...  <br/> |Expéditeur. . . est externe/interne. . . Au sein de l’Organisation  <br/> |
 |Ajouter une condition  <br/> |Propriétés du message. . . inclure le type de message. . . Transfert automatique  <br/> |
 |Procédez comme suit...  <br/> |Bloquer le message. . . rejeter le message et inclure une explication.  <br/> |
@@ -134,14 +134,14 @@ Pour créer une stratégie anti-hameçonnage ATP, regardez [cette vidéo de form
     
 4. Sur la page **anti-hameçonnage** , sélectionnez **+ créer**. Un Assistant s’ouvre et vous guide tout au long de la définition de votre stratégie anti-hameçonnage.
     
-5. Spécifiez le nom, la description et les paramètres de votre stratégie, comme recommandé dans le graphique ci-dessous. Pour plus d’informations, consultez la rubrique [en savoir plus sur les options de stratégie anti-hameçonnage ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) . 
+5. Spécifiez le nom, la description et les paramètres de votre stratégie, comme recommandé dans le graphique ci-dessous. Pour plus d’informations, consultez la rubrique [en savoir plus sur les options de stratégie anti-hameçonnage ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options) . 
     
 6. Une fois que vous avez vérifié vos paramètres, choisissez **créer cette stratégie** ou **Enregistrer**, selon le cas.
     
 
 |**Paramètre ou option**<br/>|**Paramètre recommandé** <br/>|
 |:-----|:-----|
-|Name  <br/> |Domaine et équipe de campagne la plus intéressante  <br/> |
+|Nom  <br/> |Domaine et équipe de campagne la plus intéressante  <br/> |
 |Description  <br/> |Assurez-vous que le personnel le plus important et que notre domaine ne sont pas empruntés.  <br/> |
 |Ajouter des utilisateurs à protéger  <br/> |Sélectionnez **+ Ajouter une condition, le destinataire est**. Tapez noms d’utilisateur ou entrez l’adresse de messagerie du candidat, du gestionnaire de campagnes et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.  <br/> |
 |Ajouter des domaines à protéger  <br/> |Sélectionnez **+ Ajouter une condition, le domaine du destinataire est**. Entrez le domaine personnalisé associé à votre abonnement Microsoft 365, si vous en avez défini un. Vous pouvez entrer plusieurs domaines.  <br/> |
@@ -173,7 +173,7 @@ Pour créer une stratégie de pièces jointes approuvées pour la protection ava
 
 |**Paramètre ou option**|**Paramètre recommandé** <br/>|
 |:-----|:-----|
-|Name  <br/> |Bloquer les courriers électroniques actuels et futurs avec des programmes malveillants détectés.  <br/> |
+|Nom  <br/> |Bloquer les courriers électroniques actuels et futurs avec des programmes malveillants détectés.  <br/> |
 |Description  <br/> |Bloquer les e-mails et pièces jointes en cours et à venir avec des programmes malveillants détectés.  <br/> |
 |Enregistrer les pièces jointes réponse inconnue contre les programmes malveillants  <br/> |Sélectionnez **bloquer-bloquer les courriers électroniques et pièces jointes actuels et futurs avec des programmes malveillants détectés**.  <br/> |
 |Redirection de la pièce jointe sur la détection  <br/> |Activer la redirection (activez cette case à cocher) Entrez le compte administrateur ou une configuration de boîte aux lettres pour la mise en quarantaine.          Appliquer la sélection ci-dessus si l’analyse anti-programmes malveillants pour les pièces jointes expire ou si une erreur se produit (sélectionnez cette case).  <br/> |
@@ -219,7 +219,7 @@ Pour créer une stratégie ciblée pour tous les destinataires de votre domaine,
 
 |**Paramètre ou option**|**Paramètre recommandé** <br/>|
 |:-----|:-----|
-|Name  <br/> |Stratégie de liens fiables pour tous les destinataires dans le domaine  <br/> |
+|Nom  <br/> |Stratégie de liens fiables pour tous les destinataires dans le domaine  <br/> |
 |Sélectionner l’action pour les URL potentiellement malveillantes dans les messages  <br/> |Sélectionnez **les URL activées seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien**.  <br/> |
 |Utiliser les pièces jointes fiables pour analyser le contenu téléchargeable  <br/> |Activez cette case à cocher.  <br/> |
 |Appliqué à  <br/> |Le domaine du destinataire est. . . Sélectionnez votre domaine.  <br/> |

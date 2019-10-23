@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité fournies avec Microsoft 365 Business.
-ms.openlocfilehash: 668b83e363a40e61391cbe56b0dbfab88cae7c43
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
+ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575695"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636769"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business
 
@@ -48,7 +48,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise M
     
 - [Définir les paramètres de protection des appareils pour les appareils Windows 10](protection-settings-for-windows-10-pcs.md) . 
     
-    Vous pouvez activer le chiffrement [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) pour protéger les données en cas de perte ou de vol d’un appareil, et permettre à [Windows exploit Guard](https://go.microsoft.com/fwlink/p/?linkid=871404) de fournir une protection avancée contre les ransomware. 
+    Vous pouvez activer le chiffrement [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) pour protéger les données en cas de perte ou de vol d’un appareil, et permettre à [Windows exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) de fournir une protection avancée contre les ransomware. 
     
 - [Supprimer les données d'entreprise sur des appareils](remove-company-data.md)
     
@@ -62,7 +62,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise M
 
 Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour vous aider à protéger votre entreprise contre les menaces et protéger les informations sensibles.
   
-- **[Office 365 – Protection avancée contre les menaces](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
     La protection avancée contre les menaces (ATP) permet de protéger votre activité contre le hameçonnage et les attaques par ransomware sophistiqués conçus pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
     
@@ -109,7 +109,7 @@ Votre abonnement professionnel Microsoft 365 inclut des fonctionnalités qui vou
 Vous pouvez gérer ces fonctionnalités dans le centre &amp; d’administration et de sécurité et dans le centre d’administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration de Microsoft 365 Business.
   
     
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Forum aux questions
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>Ces fonctionnalités de sécurité sont-elles disponibles sur tous les marchés ?
   
