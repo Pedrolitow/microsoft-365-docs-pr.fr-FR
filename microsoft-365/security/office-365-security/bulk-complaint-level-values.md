@@ -14,12 +14,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Découvrez les valeurs de niveau de courrier en bloc (BCL) dans Office 365.
-ms.openlocfilehash: 6f9314a5b96dbd641e461dfb564ed8605372a949
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: 822c84ea9b36cfdae1d8faccf7e0c7d9f747c917
+ms.sourcegitcommit: 7830969c8fa41724359657910716f3ce312cc2cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451096"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37650116"
 ---
 # <a name="bulk-complaint-level-values"></a>Valeurs BCL
 
@@ -39,4 +39,4 @@ Le tableau suivant décrit les valeurs BCL actuellement utilisées.
 |0|Le message ne provient pas d'un expéditeur en bloc.|
 |1, 2, 3|Le message provient d'un expéditeur en bloc qui génère peu de réclamations.|
 |4, 5, 6, 7|Le message provient d'un expéditeur en bloc qui génère un nombre moyen de réclamations.|
-|8, 9|Le message provient d'un expéditeur en bloc qui génère un grand nombre de réclamations|
+|8, 9|Le message provient d’un expéditeur en bloc qui génère un grand nombre de réclamations.|

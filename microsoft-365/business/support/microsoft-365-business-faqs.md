@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft365Business, Microsoft365, SMB, FAQ, forum aux questions, réponses, entreprise
 ms.date: 06/08/2018
-ms.openlocfilehash: 18198007bf61d448581335594016433668edb47d
-ms.sourcegitcommit: 23173f7d0ca5079662ef4060371d8ee11bac228e
+ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37611418"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646382"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Forum Aux Questions Microsoft 365 Business
 
@@ -164,7 +164,7 @@ Les fournisseurs de services informatiques qui ne sont pas déjà des partenaire
 Les partenaires qui vendent déjà Office365 peuvent utiliser les mêmes méthodes de vente-conseil pour vendre Microsoft365Business. En outre, nous publions des documents et des ressources de formation supplémentaires pour que votre équipe de vente comprenne l’environnement de bureau, la dépendance à ActiveDirectory, les besoins de sécurité et de mobilité des clients afin de communiquer efficacement toute la valeur de Microsoft 365Business d’une manière pertinente pour chaque client. Vous trouverez ces ressources sur le portail Partenaire Office à l’adresse [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business). 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Comment Microsoft365Business aide les partenaires à augmenter leur rentabilité? 
-Microsoft 365Business permet aux partenaires de réduire les coûts grâce à une plus grande efficacité opérationnelle et d’améliorer leurs revenus par la vente de services supplémentaires. L’étude de Forrester Research de juin2017, Impact économique total (TEI) de Microsoft 365Business (https://partners.office.com/TEIBusiness), montre que Microsoft365Business a impact positif sur la rentabilité des partenaires. 
+Microsoft 365Business permet aux partenaires de réduire les coûts grâce à une plus grande efficacité opérationnelle et d’améliorer leurs revenus par la vente de services supplémentaires. L’étude de Forrester Research de juin2017, Impact économique total (TEI) de Microsoft 365Business (https://www.microsoft.com/microsoft-365/partners/PartnerTEI), montre que Microsoft365Business a impact positif sur la rentabilité des partenaires. 
 
 Dans l’étude du TEI les partenaires ont indiqué ce qu'ils attendent de Microsoft 365Business: 
 

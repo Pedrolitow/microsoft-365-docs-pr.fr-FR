@@ -10,12 +10,12 @@ ms.author: TrudyHa
 ms.date: 5/29/2019
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: ec73b208bf9e2e80f4a27649ad92ff43ac175d73
-ms.sourcegitcommit: a263fc5a598363ca809a3cb990d41393bf38d3b7
+ms.openlocfilehash: e1c16deaeb61a497a4ec4fc1dc2cd9af672d55c7
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34592317"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646360"
 ---
 # <a name="manage-commercial-purchases-in-microsoft-365-admin-center"></a>Gérer les achats commerciaux dans le centre d’administration Microsoft 365
 
@@ -27,9 +27,9 @@ ms.locfileid: "34592317"
 | [Acheter des licences](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide) | Acheter des licences Office 365 pour votre organisation. |
 | [Attribuer des licences](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) | Affectez des licences Office 365 pour votre organisation. |
 | [Supprimer des licences de votre abonnement](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide) | Supprimer des licences des abonnements Office 365. |
-| [Comprendre votre facture](https://docs.microsoft.com/microsoft-store/billing-understand-your-invoice-msfb) | Informations sur les factures des éléments achetés avec le contrat de client Microsoft. |
+| [Comprendre votre facture](/microsoft-365/commerce/billing-and-payments/understand-your-invoice) | Informations sur les factures des éléments achetés via le centre d’administration Microsoft 365. |
 | [Gérer les modes de paiement](https://docs.microsoft.com/microsoft-store/payment-methods) | Ajouter, modifier ou supprimer des modes de paiement. |
-| [Gérer les profils de facturation](https://docs.microsoft.com/microsoft-store/billing-profile) | Personnalisez la facturation de différents éléments sur votre facture.  |
+| [Gérer les profils de facturation](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) | Personnalisez la facturation de différents éléments sur votre facture.  |
 | [Historique des commandes](https://docs.microsoft.com/microsoft-store/manage-orders-microsoft-store-for-business) | Effectuez le suivi de vos commandes commerciales. |
 | [Gérer les informations de compte de facturation](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings) | Les comptes de facturation vous permettent de gérer les informations de l’organisation, les contrats d’achat avec Microsoft et les approbations de l’administrateur. |
 | [Associer un client à un compte de facturation](https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business) | Le client ou les locataires ajoutés à votre compte d’achat contrôlent la façon dont vous pouvez attribuer des produits à des personnes de votre organisation. |
