@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez une équipe sécurisée pour stocker vos fichiers les plus précieux et les plus sensibles.
-ms.openlocfilehash: 5117d310ccd877a7377e6e538e7fba13daaad4ef
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617262"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628348"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams pour les données hautement réglementées
 
@@ -40,9 +40,9 @@ Voici la configuration obtenue avec une étiquette de confidentialité.
 
 ![Configuration du scénario d’équipe sécurisée](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
  
-## <a name="configuration"></a>Configuration
+## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Phase 1 : configurer une équipe pour les données hautement réglementées
 
-La configuration de bout en bout d’une équipe sécurisée comprend les étapes suivantes :
+La configuration de bout en bout comprend les étapes suivantes :
 
 1. Configuration des accès aux identités et appareils.
 2. Création d’une équipe privée.
@@ -92,7 +92,7 @@ Voici la configuration obtenue pour l’instant.
 À partir du site d’équipe, configurez ces paramètres d’autorisation.
 
 1. Dans la barre d’outils, cliquez sur l’icône Paramètres, puis cliquez sur **Autorisations du site**.
-2. Dans **Autorisations du site**, sous **Paramètres de partage**, cliquez sur **Modifier les paramètres de partage**.
+2. Dans le volet **Autorisations de site**, sous **Paramètres de partage**, cliquez sur **Modifier les paramètres de partage**.
 3. Sous **Autorisations de partage**, sélectionnez **Seuls les propriétaires du site peuvent partager des fichiers, des dossiers et le site**.
 4. Désactivez **Autoriser les demandes d’accès**, puis cliquez sur **Enregistrer**.
 
@@ -124,7 +124,7 @@ Contrairement à une étiquette de sensibilité pour les données hautement rég
 
 Pour atteindre ce niveau de sécurité supplémentaire pour les fichiers stockés sur le site d’équipe, vous devez configurer une nouvelle étiquette de sensibilité qui est soit sa propre étiquette, soit une sous-étiquette de l’étiquette générale pour les fichiers hautement réglementés. Seuls les membres du groupe d’équipe la verront dans leur liste d’étiquettes.
 
-Utilisez une étiquette de confidentialité lorsque vous avez besoin d’un petit nombre d’étiquettes pour un usage à la fois global et pour des équipes privées individuelles. Utilisez une sous-étiquette de confidentialité lorsque vous avez un grand nombre d’étiquettes ou si vous souhaitez organiser les étiquettes pour les équipes privées sous l’étiquette hautement réglementée.
+Utilisez une étiquette de confidentialité lorsque vous avez besoin d’un petit nombre d’étiquettes à la fois pour un usage global et pour des équipes privées individuelles. Utilisez une sous-étiquette de confidentialité lorsque vous avez un grand nombre d’étiquettes ou si vous souhaitez organiser les étiquettes pour les équipes privées sous l’étiquette hautement réglementée.
 
 [Suivez ces instructions](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) pour configurer une étiquette distincte ou une sous-étiquette avec les paramètres suivants :
 
@@ -142,30 +142,20 @@ Voici la relation entre l’étiquette de confidentialité et le groupe d’équ
 
 
 >[!Note]
->Si vous configurez l’étiquette de confidentialité ou la sous-étiquette pour les autorisations définies par l’utilisateur ou avec une date d’expiration, vous ne pouvez pas ouvrir le fichier à partir de Teams ou de SharePoint Online. Vous devez utiliser une application Office.
+>Si vous configurez l’étiquette de confidentialité ou la sous-étiquette pour les autorisations définies par l’utilisateur ou avec une date d’expiration, vous ne pouvez pas ouvrir le fichier à partir de Teams ou de SharePoint. Vous devez utiliser une application Office.
 >
 
-## <a name="using-the-team-and-a-sensitivity-label"></a>Utilisation de l’équipe et d’une étiquette de confidentialité
-
-Les membres du groupe d’équipe peuvent accéder à l’équipe et à toutes ses ressources, y compris aux conversations, réunions et autres applications. Lorsque vous travaillez avec des fichiers de la section **Fichiers** d’un canal, les membres du groupe d’équipe doivent affecter l’étiquette ou la sous-étiquette de confidentialité aux fichiers créés pour l’équipe sécurisée. Voici un exemple.
-
-![Exemple d’étiquette appliquée à un fichier dans une équipe sécurisée](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
- 
-Lorsque l’étiquette est appliquée au fichier, celui-ci devient sécurisé. Les membres du groupe d’équipe peuvent l’ouvrir dans Teams et collaborer en temps réel. Il est chiffré et inclut les autorisations de co-édition définies pour les membres du groupe d’équipe. Si le fichier quitte le site et est transmis à un utilisateur malveillant, celui-ci devra fournir les informations d’identification d’un compte d’utilisateur membre du groupe d’équipe pour ouvrir le fichier et afficher son contenu. 
-
-Vous pouvez voir les fichiers associés à une étiquette en affichant un dossier dans SharePoint Online et en ajoutant la colonne **Confidentialité** avec l’option **Afficher/masquer des colonnes** dans **Ajouter une colonne**.
-
-## <a name="custom-permissions"></a>Autorisations personnalisées
+### <a name="custom-permissions"></a>Autorisations personnalisées
 
 Vous pouvez également configurer les autorisations des sites SharePoint personnalisés pour le site d’équipe et, si nécessaire, l’étiquette de confidentialité correspondante. Voici deux exemples.
 
-### <a name="example-1-delegating-sharepoint-site-administration"></a>Exemple 1 : délégation de l’administration d’un site SharePoint
+#### <a name="example-1-delegating-sharepoint-site-administration"></a>Exemple 1 : délégation de l’administration d’un site SharePoint
 
 Si le propriétaire de l’équipe ne dispose pas d’une expérience d’administration de SharePoint ou souhaite déléguer l’administration du site d’équipe, il peut ajouter le compte d’utilisateur d’un administrateur de services SharePoint à la liste des propriétaires d’équipe. L’administrateur de services SharePoint dispose alors d’un accès total à l’équipe et à toutes ses ressources et peut ouvrir un fichier avec l’étiquette de confidentialité appliquée. 
 
 Pour empêcher l’octroi de trop grands privilèges, ajoutez le compte d’utilisateur de l’administrateur de services SharePoint au groupe SharePoint propriétaires du site d’équipe dans les paramètres d’autorisations avancés du site. L’administrateur de services SharePoint peut gérer le site, mais ne peut pas accéder à l’équipe et à ses ressources, ni ouvrir les fichiers avec l’étiquette de confidentialité attribuée.
 
-### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>Exemple 2 : autoriser l’accès en affichage seul aux fichiers étiquetés
+#### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>Exemple 2 : autoriser l’accès en affichage seul aux fichiers étiquetés
 
 Si certains membres du personnel doivent seulement consulter le contenu des fichiers étiquetés du site d’équipe, ajoutez leurs comptes d’utilisateur individuels au :
 
@@ -176,10 +166,50 @@ Voici les autorisations obtenues sur l’étiquette.
 
 ![Exemple d’autorisations personnalisées pour l’affichage des fichiers étiquetés](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
-Les visiteurs du site pourront accéder directement au site d’équipe et afficher le contenu des fichiers sur lesquels la sous-étiquette est appliquée. Mais, étant donné qu’ils ne sont pas membres du groupe d’équipe, ils ne pourront pas accéder ni à l’équipe, ni à aucune de ses ressources.
+Les visiteurs du site pourront accéder directement au site d’équipe et afficher le contenu des fichiers sur lesquels la sous-étiquette est appliquée. Mais, étant donné qu’ils ne sont pas membres du groupe d’équipe, ils ne pourront accéder ni à l’équipe, ni à aucune de ses ressources.
+
+
+## <a name="phase-2-drive-user-adoption-for-team-members"></a>Phase 2 : favoriser l’adoption par les utilisateurs pour les membres de l’équipe
+
+Une fois l’équipe en place, il est temps de stimuler l’adoption de cette équipe et de sa sécurité supplémentaire pour les membres de l’équipe.
+
+### <a name="step-1-train-your-users"></a>Étape 1 : former vos utilisateurs
+
+Les membres du groupe d’équipe peuvent accéder à l’équipe et à toutes ses ressources, y compris aux conversations, réunions et autres applications. Lorsque vous travaillez avec des fichiers de la section **Fichiers** d’un canal, les membres du groupe d’équipe doivent affecter l’étiquette ou la sous-étiquette de confidentialité aux fichiers créés pour l’équipe sécurisée. Voici un exemple.
+
+![Exemple d’étiquette appliquée à un fichier dans une équipe sécurisée](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+ 
+Lorsque l’étiquette est appliquée au fichier, celui-ci devient sécurisé. Les membres du groupe d’équipe peuvent l’ouvrir dans Teams et collaborer en temps réel. Il est chiffré et inclut les autorisations de co-édition définies pour les membres du groupe d’équipe. Si le fichier quitte le site et est transmis à un utilisateur malveillant, celui-ci devra fournir les informations d’identification d’un compte d’utilisateur membre du groupe d’équipe pour ouvrir le fichier et afficher son contenu. 
+
+Formez les membres de votre équipe :
+
+- Sur l’importance de l’utilisation de la nouvelle équipe pour les conversations, les réunions, les fichiers et les autres ressources du site de l’équipe, et les conséquences d’une fuite de données hautement réglementées, telles que des conséquences juridiques, des amendes réglementaires, des rançongiciels ou la perte de l’avantage concurrentiel.
+- Accès à l’équipe.
+- Création de nouveaux fichiers sur le site et chargement de nouveaux fichiers stockés localement.
+- Blocage du partage des fichiers en externe par la stratégie DLP.
+- Mode d’étiquetage de fichiers à l’aide de l’étiquette ou de la sous-étiquette personnalisée pour l’équipe.
+- Comment l’étiquette ou la sous-étiquette protège des fichiers même lorsque ceux-ci ont été divulgués hors du site.
+
+Cette formation doit inclure des exercices pratiques pour que les membres de votre équipe puissent se familiariser avec ces fonctionnalités et leurs résultats.
+
+### <a name="step-2-conduct-periodic-reviews-of-usage-and-address-team-member-feedback"></a>Étape 2 : conduire des vérifications périodiques de l’utilisation et donner suite aux commentaires des membres de l’équipe
+
+Dans les semaines suivant la formation :
+
+- Traitez rapidement les commentaires des membres de l’équipe et affinez les stratégies et les configurations.
+- Analysez l’utilisation pour l’équipe et comparez-la avec les attentes en matière d’utilisation.
+- Vérifiez que les fichiers hautement réglementés ont été correctement étiquetés avec l’étiquette ou la sous-étiquette de sensibilité personnalisée.
+
+  Vous pouvez voir quels fichiers disposent d'une étiquette attribuée en affichant un dossier dans SharePoint Online et en ajoutant la colonne **Confidentialité** via l'option **Afficher/masquer les colonnes** de la fonction **Ajouter une colonne**.
+
+Formez à nouveau vos utilisateurs, le cas échéant.
 
 ## <a name="see-also"></a>Voir aussi
 
 [Sites SharePoint pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md)
+
+[Scénarios et charges de travail Microsoft 365 Entreprise](deploy-workloads.md)
+
+[Bibliothèque de productivité Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)
 
 [Guide de déploiement](deploy-microsoft-365-enterprise.md)
