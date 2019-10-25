@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Étapes du déploiement de l’infrastructure Office 365 ProPlus pour Microsoft 365 Entreprise.
-ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c32257fb9066f170da1f1a3cfe4b865e383cfcb
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982765"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646399"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4 : Office 365 ProPlus
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![Phase 4 : Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *Cela s’applique aux versions E3 et E5 de Microsoft 365 Entreprise et Microsoft 365 Éducation*
 
-Microsoft 365 Entreprise inclut Office 365 ProPlus, la version par abonnement d’Office. Tout comme Office 2016, Office 365 ProPlus inclut toutes les applications Office, et ces applications sont installées directement sur vos appareils clients. Contrairement à Office 2016, Office 365 ProPlus est régulièrement mis à jour afin d’obtenir les nouvelles fonctionnalités et présente un modèle de licence utilisateur qui permet aux utilisateurs d’installer Office sur un maximum de 5 appareils. Pour obtenir plus d’informations, consultez l’article [À propos d’Office 365 ProPlus en entreprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Entreprise inclut Office 365 ProPlus, la version d’abonnement d’Office. Comme Office 2019, Office 365 ProPlus inclut toutes les applications d’Office. Ces applications sont installées directement sur vos appareils clients. Contrairement à Office 2019, Office 365 ProPlus est mis à jour régulièrement avec de nouvelles fonctionnalités et offre un modèle de licence basé sur l’utilisateur qui permet aux utilisateurs d’installer Office sur plusieurs appareils. Pour plus d’informations, consultez [À propos d’Office 365 ProPlus en entreprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 Dans cette phase, vous déployez Office 365 ProPlus sur les appareils clients dans le cadre de Microsoft 365 Entreprise. En plus de ces instructions, nous vous recommandons d’utiliser [Microsoft Fastrack](https://fasttrack.microsoft.com/office) pour vous aider à effectuer votre déploiement. 
 
@@ -53,14 +53,12 @@ L’[article de planification](https://docs.microsoft.com/DeployOffice/plan-offi
 
 ## <a name="step-3-deploy"></a>Étape 3 : déployer
 
-En fonction de votre plan de déploiement à l’étape 2, choisissez votre processus de déploiement :
+En fonction de votre plan de déploiement, choisissez le mode de déploiement parmi les possibilités suivantes :
 
 - **[Déployer Office 365 ProPlus avec System Center Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager) :** gérez votre déploiement avec Configuration Manager et téléchargez et déployez Office à partir de points de distribution sur votre réseau
 
 - **[Déployer Office 365 ProPlus avec l’outil Déploiement d’Office à partir du cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud) :** gérez votre déploiement avec l’outil Déploiement d’Office et installez Office directement sur des appareils clients à partir du CDN d’Office
  
-- **[Déployer Office 365 ProPlus avec l’outil Déploiement d’Office à partir d’une source locale](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source) :** gérez votre déploiement avec l’outil Déploiement d’Office et téléchargez et déployez Office sur votre réseau à partir d’une source locale  
-
 - **[Installer soi-même Office 365 ProPlus à partir du portail Office](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658) :** gérez votre déploiement à partir du portail Office et demandez à vos utilisateurs d’installer Office directement sur leurs appareils clients à partir du portail
 
 De nombreuses organisations utilisent une combinaison de ces options pour différents utilisateurs. Par exemple, une organisation peut utiliser Configuration Manager pour déployer Office pour la plupart de ses utilisateurs, mais activer l’installation autonome pour un petit groupe de collaborateurs qui ne sont pas fréquemment connectés au réseau interne. 
@@ -75,7 +73,7 @@ Découvrez comment les experts Microsoft [déploient et gèrent les mises à jou
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, [a déployé Office 365 ProPlus](contoso-o365pp.md).
 
-![](./media/contoso-overview/contoso-icon.png)
+![Société Contoso](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Étape suivante
 
