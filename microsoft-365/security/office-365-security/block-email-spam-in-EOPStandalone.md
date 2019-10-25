@@ -16,14 +16,14 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Document pour les administrateurs autonomes d’EOP afin d’éviter le courrier indésirable faux négatifs
-ms.openlocfilehash: 5094caf8a5ceded71d68e9bddc5206f6ceb0e493
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ddd26c3ce8c2670118d85fafa2fc912f3d20dddf
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079467"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662540"
 ---
-## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Paramètres pour personnaliser le filtre anti-courrier indésirable Office 365
+# <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Paramètres pour personnaliser le filtre anti-courrier indésirable Office 365
 
 Un administrateur peut utiliser plusieurs paramètres du filtre anti-courrier indésirable Office 365 pour empêcher l’envoi de courrier indésirable dans la boîte de réception d’un utilisateur. Grâce aux options suivantes, le filtre anti-courrier indésirable Office 365 sera plus efficace pour bloquer le courrier indésirable et éviter les faux négatifs. Dans ce contexte, un faux négatif désigne un message indésirable envoyé dans une boîte de réception.
   
