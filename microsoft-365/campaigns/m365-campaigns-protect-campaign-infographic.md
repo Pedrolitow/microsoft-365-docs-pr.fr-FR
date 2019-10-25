@@ -1,5 +1,5 @@
 ---
-title: 'Infographie: aide à la protection de votre campagne'
+title: 'Infographie : aide à la protection de votre campagne'
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,14 +21,15 @@ search.appverid:
 - MET150
 - MOE150
 description: Ce que vous pouvez faire pour vous aider à protéger votre campagne contre les attaques numériques.
-ms.openlocfilehash: 8e1c958b7434019067c5f85ea534811611a0d037
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 625b72b5bb677769b6ef5cdd3aa2fa10819c5ba2
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772501"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662530"
 ---
-## <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infographie: Protégez-vous et votre campagne contre les menaces numériques 
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infographie : Protégez-vous et votre campagne contre les menaces numériques 
+
 Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprimés au format tabloïd (également appelé grand livre, 11 x 17 ou a3).
 
 [![Image pour sécuriser votre aide sur la protection de votre image de campagne](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)

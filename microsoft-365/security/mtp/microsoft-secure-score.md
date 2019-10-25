@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b337f020702b60ceeb02043e9b66d5614f58c228
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: d8ba3626fc2b6cb7dbc56d32cb61baf34e43996e
+ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435558"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37697749"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -32,11 +32,11 @@ Le score de sécurité permet aux organisations d’effectuer les opérations su
 * Améliorez la position de la sécurité en fournissant des possibilités de détectabilité, de visibilité, de conseils et de contrôle.  
 * Comparez avec des benchmarks et établissez des indicateurs de performance clés (KPI).
 
-Le score de sécurité permet aux organisations d’accéder à des informations puissantes sur les mesures et les tendances, l’intégration à d’autres produits Microsoft, la comparaison avec les scores avec les organisations similaires, et bien plus encore. Le score peut également indiquer quand les solutions tierces ont résolu les actions recommandées.
+Les organisations ont accès à des visualisations robustes de mesures et tendances, à une intégration à d’autres produits Microsoft, à une comparaison de scores avec des organisations similaires, et bien plus encore. Le score peut également indiquer quand les solutions tierces ont résolu les actions recommandées.
 
-En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). En savoir plus sur le [type de ressource de score sécurisé](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage des rapports) ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs. La sécurité doit toujours être équilibrée avec la convivialité et toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
 
@@ -45,6 +45,10 @@ Votre score est mis à jour en temps réel afin de refléter les informations pr
 ### <a name="how-improvement-actions-are-scored"></a>Comment les actions d’amélioration sont évaluées
 
 La plupart sont évaluées de manière binaire : Si vous implémentez l’action d’amélioration, comme la création d’une nouvelle stratégie ou l’activation d’un paramètre spécifique, vous obtenez 100% des points. Pour les autres actions d’amélioration, les points sont fournis sous la forme d’un pourcentage de la configuration totale. Par exemple, si l’action d’amélioration indique 30 points en protégeant tous vos utilisateurs à l’aide de l’authentification multifacteur et que vous ne disposez que de 5 de 100 Total utilisateurs protégés, vous disposez d’un score partiel d’environ 2 points (5 protected/100 Total * 30 pts max = 2 pts  score partiel).
+
+### <a name="products-included-in-secure-score"></a>Produits inclus dans le score de sécurité
+
+Il existe actuellement des recommandations pour Office 365 (notamment SharePoint Online, Exchange Online, OneDrive entreprise, la protection des informations Microsoft, etc.), Azure AD, Intune et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité, tels que Azure ATP et Microsoft Defender ATP, sont bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais il s’agit d’une base de référence correcte. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par un tiers. 
 
 ## <a name="required-permissions"></a>Autorisations requises
 
@@ -77,19 +81,17 @@ Pour accéder à l’API Graph, vous devez disposer de l’une des étendues sui
 * Étendue securityevents. Read. All (pour le rôle en lecture seule)
 * Étendue securityevents. ReadWrite. All (pour le rôle de lecture et d’écriture)
 
-## <a name="rich-experiences--security-recommendations"></a>Expériences enrichies & recommandations en matière de sécurité
+## <a name="gain-visibility-into-your-security-posture"></a>Obtenir une visibilité sur la position de la sécurité
 
-Dans Microsoft Secure score, il existe des recommandations d’Office 365, Azure AD, Intune et la sécurité des applications Cloud, avec des recommandations d’Azure Security Center et de Microsoft Defender Security Center bientôt disponibles.
-
-Pour vous aider à trouver plus rapidement les informations dont vous avez besoin, les recommandations de Microsoft sont organisées en groupes :
+Pour vous aider à trouver plus rapidement les informations dont vous avez besoin, les actions d’amélioration de Microsoft sont organisées en groupes :
 
 * Identity (comptes et rôles Azure AD)
 * Données (documents Office 365)
-* Appareil (appareils Microsoft Defender ATP)
+* Appareil (appareils Microsoft Defender ATP, bientôt disponible)
 * Application (applications de messagerie et de Cloud)
 * Infrastructure (ressources Azure)
 
-Dans la page de présentation de Microsoft Secure score, vous pouvez voir la répartition des points entre ces groupes et les points disponibles. La page de vue d’ensemble est également l’endroit où vous pouvez obtenir une vue d’ensemble du score total, de la tendance historique de votre score de sécurité avec comparaisons de référence et des actions d’amélioration hiérarchisée qui peuvent être prises pour améliorer votre score. Vous pouvez utiliser ces données pour agir et faire des différences importantes en matière de sécurité.  
+Dans la page de présentation de Microsoft Secure score, vous pouvez voir la répartition des points entre ces groupes et les points disponibles. La page de vue d’ensemble est également l’endroit où vous pouvez obtenir une vue d’ensemble du score total, de la tendance historique de votre score de sécurité avec comparaisons de référence et des actions d’amélioration hiérarchisée qui peuvent être prises pour améliorer votre score.
 
 ![](../media/secure-score/homepage-original.png)
 *Page d’accueil du score sécurisé figure 1 : page de présentation de Microsoft Secure score*

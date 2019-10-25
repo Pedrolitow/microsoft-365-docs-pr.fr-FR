@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment configurer Microsoft 365 Business.
-ms.openlocfilehash: e6f99d6d2f2d7951303591a806a3618615a25310
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 0c717271da17ff4bf28d8d3546df3a9da427dba5
+ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575915"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37697762"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Vue d’ensemble de Microsoft 365 Business
 
@@ -54,7 +54,43 @@ Microsoft 365 entreprise contribue à protéger vos données dans chacune de ces
 
 ![Figure illustrant la façon dont M365B protège votre entreprise.](media/m365businessvalueadd.png)
 
-Pour afficher la liste complète des fonctionnalités de sécurité, consultez la rubrique [Microsoft 365 Business Security Features](security-features.md). Une fois que vous avez [configuré Microsoft 365 entreprise](set-up.md), consultez la rubrique [configurer des stratégies de sécurité avancées](set-up-advanced-security.md) pour commencer à utiliser les fonctionnalités de sécurité qui ne sont pas incluses dans le programme d’installation. Lisez également les [10 meilleures façons de sécuriser les plans Office 365 et Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) pour obtenir une excellente vue d’ensemble sur la façon de configurer les protections contre les cybercriminels et les pirates.
+## <a name="how-your-data-and-devices-are-protected"></a>Protection de vos données et périphériques
+
+Microsoft 365 Business contribue à une **protection contre les menaces** :
+
+Analyse de tous les liens dans les messages électroniques et les documents en temps réel pour bloquer les sites Web non sécurisés (liens fiables ATP).
+
+- Exécution d’une analyse avancée des pièces jointes de courrier électronique dans un environnement de bac à sable pour détecter les programmes malveillants nouvellement développés (pièces jointes fiables). 
+
+- Activation des stratégies anti-hameçonnage qui utilisent les modèles d’apprentissage automatique et la détection de l’emprunt d’identité pour assurer une protection contre les attaques avancées (protection contre le hameçonnage). 
+
+- La configuration de stratégies avancées qui désactivent l’accès à partir d’emplacements non approuvés ou ignore l’authentification multifacteur à partir d’emplacements approuvés tels que votre réseau Office (Azure MFA, y compris les adresses IP approuvées et l’accès conditionnel). 
+
+- Mise en œuvre de la protection contre les programmes malveillants sur tous les appareils Windows 10 de votre entreprise et protection des fichiers dans les dossiers système clés contre les modifications apportées par les ransomware (Windows Defender)
+
+Vos **données métiers sont protégées** par :
+
+- Utilisation de la détection automatique pour empêcher que des informations sensibles telles que des numéros de sécurité sociale ou des cartes de crédit ne fuient en dehors de votre entreprise (protection contre la perte de données). 
+
+- Le chiffrement des messages électroniques sensibles afin que vous puissiez communiquer en toute sécurité avec des clients ou d’autres personnes en dehors de votre entreprise, afin de garantir que seul le destinataire concerné peut lire le message (chiffrement de messages Office 365).
+
+- Contrôle des personnes ayant accès aux informations de l’entreprise en appliquant des restrictions telles que **ne pas copier** et ne **pas transférer** vers la messagerie électronique et les documents (Azure information protection, plan 1).
+
+- L’activation de l’archivage Cloud illimité afin que vous puissiez conserver tous les messages électroniques de votre entreprise, y compris les boîtes aux lettres des anciens employés (archivage Exchange Online).
+
+Vos **appareils sont sécurisés** par les éléments suivants :
+
+- Contrôle des appareils et des utilisateurs pouvant accéder à vos données Office 365 ; avec des options pour empêcher les utilisateurs de se connecter à partir d’ordinateurs de bureau, d’applications non approuvées ou en dehors des heures de travail (accès conditionnel).
+
+- Application de stratégies de sécurité pour protéger les données métiers sur des appareils iOS et Android.  Par exemple, vous pouvez exiger que les utilisateurs fournissent un code confidentiel ou une empreinte digitale pour accéder aux données métiers et chiffrer les données sur les appareils mobiles (applications de protection des applications mobiles).
+
+- Conservation des documents professionnels, des courriers électroniques et d’autres données dans les applications Office Mobile approuvées et empêcher les employés de les enregistrer dans des applications et des emplacements non autorisés (application protection pour les applications mobiles Office).
+
+- Effacement à distance des données métiers des appareils perdus ou volés sans affecter les informations personnelles (balayage sélectif Intune).
+
+- Utilisation de contrôles simplifiés pour gérer les stratégies de tous les PC Windows 10 dans votre entreprise, en appliquant le chiffrement BitLocker et en installant automatiquement les mises à jour Windows critiques (appliquer les stratégies Windows Update).
+
+Pour afficher la liste complète des fonctionnalités de sécurité, consultez la rubrique [Microsoft 365 Business Security Features](security-features.md). Une fois que vous avez [configuré Microsoft 365 entreprise](set-up.md), consultez la rubrique [configurer des stratégies de sécurité avancées](set-up-advanced-security.md) pour commencer à utiliser les fonctionnalités de sécurité qui ne sont pas incluses dans le cadre de la configuration guidée. Lisez également les [10 meilleures façons de sécuriser les plans Office 365 et Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) pour obtenir une excellente vue d’ensemble sur la façon de configurer les protections contre les cybercriminels et les pirates.
 
 ## <a name="get-microsoft-365-business"></a>Obtenir Microsoft 365 Business
 
