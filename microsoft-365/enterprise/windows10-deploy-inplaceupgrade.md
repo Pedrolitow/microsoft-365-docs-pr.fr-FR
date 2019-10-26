@@ -10,24 +10,35 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 3e37cebc1721a1bdcce0a30223a8beeb38868e82
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 69edcd65ada007ead9e0c0d628b96f6390e34696
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370081"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733447"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Étape 2 : déployer Windows 10 entreprise pour les appareils existants en tant que mise à niveau sur place
 
 *Cet article s'applique à la fois aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Le chemin le plus simple pour mettre à niveau des PC actuellement exécutant Windows 7 ou Windows 8,1 vers Windows 10 est effectué via une mise à niveau sur place. Vous pouvez utiliser une séquence de tâches System Center Configuration Manager (gestionnaire de configuration) pour automatiser complètement le processus. 
 
 Si des ordinateurs existants exécutent Windows 7 ou Windows 8,1, nous vous recommandons d’utiliser ce chemin d’accès si votre organisation déploie Windows 10. Cela tire parti du programme d’installation de Windows (Setup. exe) pour effectuer une mise à niveau sur place, qui conserve automatiquement toutes les données, les paramètres, les applications et les pilotes à partir de la version du système d’exploitation existant. Cela nécessite le moins d’efforts, car il n’est pas nécessaire d’utiliser une infrastructure de déploiement complexe.
 
 Procédez comme suit pour configurer et déployer une image Windows 10 entreprise à l’aide de Configuration Manager en tant que mise à niveau sur place.
+
+## <a name="the-windows-10-deployment-with-system-center-configuration-manager-poster"></a>Déploiement de Windows 10 avec l’affiche de System Center Configuration Manager
+
+L’affiche du gestionnaire de configuration est une page en mode paysage (17x11). Cliquez sur l’image ci-dessous pour afficher un fichier PDF dans votre navigateur. 
+
+[![Déployer Windows 10 avec l’affiche de Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/810b475c713ebb3ad65d13746940ef91?sv=2015-04-05&sr=b&sig=tKD38RgLAoOCAWJ5ppEbLevBAHk7KHtWrXldy2Jl6mY%3D&st=2019-10-24T22%3A16%3A08Z&se=2019-10-25T22%3A26%3A08Z&sp=r)
+
+<!--
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) format.
+-->
 
 ## <a name="part-1-verify-readiness-to-upgrade-windows"></a>Partie 1 : vérifier la disponibilité pour mettre à niveau Windows
 
@@ -141,7 +152,7 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](win
 
 |||
 |:-------|:-----|
-|![Étape 3](./media/stepnumbers/Step3.png)| [Déployer Windows 10 Entreprise pour des nouveaux appareils avec Windows Autopilot](windows10-deploy-autopilot.md) |
+|![Étape 3](./media/stepnumbers/Step3.png)| [Déployer Windows 10 Entreprise pour des nouveaux appareils avec Windows Autopilot](windows10-deploy-autopilot.md) |
 
 
 
