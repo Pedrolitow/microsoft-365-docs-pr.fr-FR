@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous devez rendre vos mots de passe forts et gérables au sein de votre organisation.
-ms.openlocfilehash: 7bb4e0f296b320aa8a24916ded40089246308a20
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: a3661eedc11e0c826422f540cf1e2e9abf911f9d
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370401"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662550"
 ---
 # <a name="step-2-secure-your-passwords"></a>Étape 2 : Sécuriser vos mots de passe
 
@@ -27,11 +27,11 @@ ms.locfileid: "37370401"
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Éviter les mots de passe incorrects
 
-*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
+*Cette étape facultative s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
 Tous vos utilisateurs doivent utiliser le [guide des mots de passe Microsoft](https://www.microsoft.com/research/publication/password-guidance/) pour créer leurs mots de passe de compte d'utilisateur.
 
-Pour empêcher les utilisateurs de créer un mot de passe facile à déterminer, optez pour la protection par mot de passe Azure AD qui utilise une liste globale de mots de passe interdits et une liste personnalisée facultative de mots de passe que vous spécifiez. Par exemple, vous pouvez spécifier des termes propres à votre organisation, tels que :
+Pour empêcher les utilisateurs de créer un mot de passe facile à déterminer, optez pour la protection par mot de passe Azure AD qui utilise une liste globale de mots de passe interdits et une liste personnalisée facultative de mots de passe interdits que vous spécifiez. Par exemple, vous pouvez spécifier des termes propres à votre organisation, tels que :
 
 - Noms de marques
 - Noms de produits
