@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Servez-vous des guides de laboratoire de test pour configurer les environnements de développement/test, de preuve de concept et de démonstration pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 6293e6a4ee17453fd842cde27f909412bb34dab0
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 082d110ca7b25d3613ee276b30066683cd0232b5
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073474"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733419"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Guides de laboratoire de test Microsoft 365 Entreprise
 
@@ -49,15 +49,15 @@ Pour obtenir une description des fonctionnalités liées à l’identité, repor
 
 - [Synchronisation de hachage de mot de passe](password-hash-sync-m365-ent-test-environment.md)
   
-   Activez et testez la synchronisation d’annuaires basée sur le hachage de mots de passe à partir d’un contrôleur de domaine AD DS.
+   Activez et testez la synchronisation de répertoires basée sur le hachage de mots de passe à partir d’un contrôleur de domaine AD DS.
 
 - [Authentification directe](pass-through-auth-m365-ent-test-environment.md)
   
-   Permet d’activer et de tester l’authentification directe à un contrôleur de domaine Windows Server AD DS.
+   Activez et testez l’authentification directe à un contrôleur de domaine Windows Server AD DS.
 
 - [Authentification unique transparente Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Permet d’activer et de tester l’authentification unique transparente Azure AD (SSO) avec un contrôleur de domaine Windows Server AD.
+   Activer et tester l’authentification unique transparente Azure AD (SSO) avec un contrôleur de domaine Windows Server AD.
 
 - [Authentification multifacteur](multi-factor-authentication-microsoft-365-test-environment.md)
   
