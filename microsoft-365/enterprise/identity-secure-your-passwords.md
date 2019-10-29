@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous devez rendre vos mots de passe forts et gérables au sein de votre organisation.
-ms.openlocfilehash: a3661eedc11e0c826422f540cf1e2e9abf911f9d
-ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
+ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37662550"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746510"
 ---
 # <a name="step-2-secure-your-passwords"></a>Étape 2 : Sécuriser vos mots de passe
 
@@ -90,7 +90,7 @@ Microsoft 365 Entreprise vous permet de personnaliser l’aspect des pages de co
 
 Pour plus d’informations, reportez-vous à la rubrique [Ajouter l’identité de votre entreprise à la page de connexion d’Office 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
-Pour des instructions de configuration, reportez-vous à la rubrique relative à l’[ajout de l’identité de votre entreprise à vos pages de connexion et de panneau d’accès](http://aka.ms/aadpaddbranding).
+Pour des instructions de configuration, reportez-vous à la rubrique relative à l’[ajout de l’identité de votre entreprise à vos pages de connexion et de panneau d’accès](https://aka.ms/aadpaddbranding).
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-custom-sign-in) pour cette étape.
 

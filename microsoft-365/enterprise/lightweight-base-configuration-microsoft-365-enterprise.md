@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test léger destiné aux tests Microsoft 365 Entreprise.
-ms.openlocfilehash: a189cb63847f2b95402a864422257a38d1f098d1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 770ddf46f40036f0d711c7c30bdaebee7fdeef6e
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072184"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746530"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuration de base légère
 
@@ -49,7 +49,7 @@ Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation Micros
   
 Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attribuez une licence Microsoft 365 à votre compte d’administrateur général.
   
-1. Utilisez une instance privée d’un navigateur Internet pour vous connecter au centre d’administration Microsoft 365 sur [http://admin.microsoft.com](http://admin.microsoft.com)à l’aide de vos informations d’identification de compte d’administrateur général.
+1. Utilisez une instance privée d’un navigateur Internet pour vous connecter au centre d’administration Microsoft 365 sur [https://admin.microsoft.com](https://admin.microsoft.com)à l’aide de vos informations d’identification de compte d’administrateur général.
     
 2. Sur la page **Centre d’administration Microsoft 365**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
     

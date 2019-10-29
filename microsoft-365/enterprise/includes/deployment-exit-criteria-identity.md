@@ -68,7 +68,7 @@ Si nécessaire, l’[Étape 2](../identity-secure-your-passwords.md#identity-sso
 <a name="crit-identity-custom-sign-in"></a>
 ### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Facultatif : l’écran de connexion Office 365 est personnalisé pour votre organisation
 
-Vous avez utilisé [Ajouter la marque de votre organisation à votre page de connexion et aux pages du Panneau d’accès](http://aka.ms/aadpaddbranding) pour ajouter la marque de votre organisation à la page de connexion Office 365.
+Vous avez utilisé [Ajouter la marque de votre organisation à votre page de connexion et aux pages du Panneau d’accès](https://aka.ms/aadpaddbranding) pour ajouter la marque de votre organisation à la page de connexion Office 365.
 
 Si vous ignorez cette option, vos utilisateurs verront un écran de connexion Office 365 générique et peuvent ne pas être certains de se connecter au site de votre organisation.
 

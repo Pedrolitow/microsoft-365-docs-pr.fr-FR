@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure et les services d’identités.
-ms.openlocfilehash: 4a93d0a9fb497daccba4fd2641fd5faf9c4fb384
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 84c2b97e064d3dba8a97767a31cc9fe7ccc6dd8c
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370201"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746520"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2 : Critères de sortie de l’infrastructure d’identités
 
@@ -96,7 +96,7 @@ Si nécessaire, l’[Étape 2](identity-secure-your-passwords.md#identity-sso) p
 <a name="crit-identity-custom-sign-in"></a>
 ## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Facultatif : l’écran de connexion Office 365 est personnalisé pour votre organisation
 
-Vous avez utilisé [Ajouter la marque de votre organisation à votre page de connexion et aux pages du Panneau d’accès](http://aka.ms/aadpaddbranding) pour ajouter la marque de votre organisation à la page de connexion Office 365.
+Vous avez utilisé [Ajouter la marque de votre organisation à votre page de connexion et aux pages du Panneau d’accès](https://aka.ms/aadpaddbranding) pour ajouter la marque de votre organisation à la page de connexion Office 365.
 
 Si vous ignorez cette option, vos utilisateurs verront un écran de connexion Office 365 générique et peuvent ne pas être certains de se connecter au site de votre organisation.
 

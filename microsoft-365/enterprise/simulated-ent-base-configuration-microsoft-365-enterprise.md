@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce Guide de Laboratoire Test afin de créer une simulation d’environnement de test dédiée à Microsoft 365 Entreprise.
-ms.openlocfilehash: b0bb241cb475b8ab3bdb0d7ebbbda6ab0936b29d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7a23f0eabcd9b4b0b94f6f932570fed12de32cbe
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073094"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746500"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
@@ -371,7 +371,7 @@ Suivez les étapes des phases 2 et 3 de l’article sur l’[environnement de 
 
 Ensuite, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attribuez une licence Microsoft 365 à votre compte Administrateur général.
 
-1. Utilisez une instance privée d’un navigateur Internet pour vous connecter au centre d’administration Microsoft 365 sur [http://admin.microsoft.com](http://admin.microsoft.com)à l’aide de vos informations d’identification de compte d’administrateur général.
+1. Utilisez une instance privée d’un navigateur Internet pour vous connecter au centre d’administration Microsoft 365 sur [https://admin.microsoft.com](https://admin.microsoft.com)à l’aide de vos informations d’identification de compte d’administrateur général.
     
 2. Sur la page **Centre d’administration Microsoft 365**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
     
