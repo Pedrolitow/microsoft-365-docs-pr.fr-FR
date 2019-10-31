@@ -10,12 +10,12 @@ ms.author: TrudyHa
 ms.date: 5/29/2019
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: a094057ba635a6ca848b822fc2888b4bc717573a
-ms.sourcegitcommit: a372c634c3befcb488a4cc85a593e17c53fe36e8
+ms.openlocfilehash: f25274c1cf06bf2900de3a45686156f33d3143aa
+ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37732868"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37889906"
 ---
 # <a name="manage-commercial-purchases-in-microsoft-365-admin-center"></a>Gérer les achats commerciaux dans le centre d’administration Microsoft 365
 
@@ -25,11 +25,14 @@ ms.locfileid: "37732868"
 | ----- | ----------- |
 | [Gérer les applications tierces](manage-saas-apps.md) | Les administrateurs peuvent gérer les abonnements aux applications tierces pour votre organisation. |
 | [Acheter des licences](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide) | Acheter des licences Office 365 pour votre organisation. |
-| [Attribuer des licences](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) | Affectez des licences Office 365 pour votre organisation. |
+| [Attribuer des licences](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide) | Attribuer des licences aux utilisateurs de votre organisation. |
+| [Annuler l’attribution des licences](https://docs.microsoft.com/office365/admin/manage/remove-licenses-from-users?view=o365-worldwide) | Désaffecter les licences des utilisateurs de votre organisation. |
 | [Supprimer des licences de votre abonnement](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide) | Supprimer des licences des abonnements Office 365. |
+| [Mettre à niveau votre abonnement](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan) | Mettez à niveau votre abonnement vers une autre offre. |
 | [Comprendre votre facture](/microsoft-365/commerce/billing-and-payments/understand-your-invoice) | Informations sur les factures des éléments achetés via le centre d’administration Microsoft 365. |
-| [Gérer les modes de paiement](https://docs.microsoft.com/microsoft-store/payment-methods) | Ajouter, modifier ou supprimer des modes de paiement. |
-| [Gérer les profils de facturation](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) | Personnalisez la facturation de différents éléments sur votre facture.  |
+| [Gérer les modes de paiement](https://docs.microsoft.com/office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account) | Ajouter, modifier ou supprimer des modes de paiement. |
+| [Gérer les profils de facturation](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) | Personnalisez la facturation de différents éléments sur votre facture. |
+| [Services de paiement directive 2 et authentification client forte](/microsoft-365/commerce/billing-and-payments/psd2) | Informations sur la vérification de l’identité pour les achats effectués dans les pays de l’espace économique européen. |
 | [Gérer les informations de compte de facturation](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings) | Les comptes de facturation vous permettent de gérer les informations de l’organisation, les contrats d’achat avec Microsoft et les approbations de l’administrateur. |
 | [Associer un client à un compte de facturation](https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business) | Le client ou les locataires ajoutés à votre compte d’achat contrôlent la façon dont vous pouvez attribuer des produits à des personnes de votre organisation. |
 | [Gérer les relations avec les partenaires](https://docs.microsoft.com/microsoft-store/work-with-partner-microsoft-store-business) | Collaborez avec des fournisseurs de solutions certifiés par Microsoft pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire. |

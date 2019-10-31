@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
-ms.openlocfilehash: f88d815b83da1038f3c5854a7499a5efaa029320
-ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
+ms.openlocfilehash: 7cf1fa1b12ab11e777754cba8f75cc4bead95279
+ms.sourcegitcommit: 29d85279c76ffaaa3f45e7ea3bdb590f54847fd6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37749166"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37885578"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
@@ -29,15 +29,15 @@ ms.locfileid: "37749166"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Quelles sont les modifications apportées par Microsoft pour les achats en libre-service pour les produits Power Platform ?
 
-À partir du 2019 19 novembre, les capacités d’achat, d’abonnement et de gestion des licences en libre-service pour les produits Power Platform (Power BI, PowerApp et Flow) seront disponibles pour la plupart des clients du nuage commercial aux États-Unis. L’achat en libre-service permet aux utilisateurs de tester de nouvelles technologies et de développer des solutions qui profiteront aux grandes organisations. Cette fonctionnalité ne sera actuellement pas disponible pour les clients qui sont des pouvoirs publics, des organisations à but non lucratif ou des établissements scolaires. Le centre d’administration et les équipes informatiques centrale bénéficieront d’une visibilité pour tous les utilisateurs achetant et déployant des solutions d’achat en libre-service via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
+À partir du 2019 19 novembre, les capacités d’achat, d’abonnement et de gestion des licences en libre-service pour les produits Power Platform (Power BI, PowerApp et Flow) seront disponibles pour la plupart des clients du nuage commercial aux États-Unis. L’achat en libre-service permet aux utilisateurs de tester de nouvelles technologies et de développer des solutions qui profiteront aux grandes organisations. Cette fonctionnalité ne sera pas disponible pour les clients des États-Unis qui sont des pouvoirs publics, des organisations à but non lucratif ou l’éducation, pour le moment. Le centre d’administration et les équipes informatiques centrale bénéficieront d’une visibilité pour tous les utilisateurs achetant et déployant des solutions d’achat en libre-service via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>Pourquoi Microsoft ajoute-t-il une option d’achat en libre-service pour les produits Power Platform ?
 
-En raison de la transformation numérique, les rôles traditionnels changent. À mesure que les employés deviennent de plus en plus indépendants et plus à l’idée de la technologie, nous avons vu la demande accrue de la part des utilisateurs et des organisations pour permettre aux utilisateurs d’acheter eux-mêmes des abonnements. L’objectif de l’option d’achat libre-service est de permettre aux utilisateurs de développer leurs propres solutions pour déverrouiller la productivité et de réduire l’impact commercial, tout en respectant la gouvernance et la conformité des données des organisations.
+Dans le monde actuel, les utilisateurs finaux et les services cherchent de plus en plus à acheter des solutions technologiques. Nous avons reçu de nombreuses demandes de ces clients pour permettre l’achat en libre-service des produits Power Platform. Nous répondons à ce besoin du client tout en équilibrant les besoins des administrateurs informatiques, qui ont souvent des pertes de visibilité et de contrôle lorsque les utilisateurs de leur organisation adoptent des solutions tierces sans leur connaissance. Avec la fonctionnalité libre-service à venir pour les produits Power Platform, les administrateurs informatiques disposeront d’une visibilité complète sur tous les achats en libre-service effectués au sein de leur organisation et les stratégies de gouvernance des données définies au niveau de l’Organisation seront allouées à abonnements achetés via self-service. Les administrateurs peuvent également affecter des licences existantes, ou acheter des abonnements supplémentaires, des produits de plateforme énergétique via des accords existants et une tarification pour les utilisateurs affectés à des achats en libre-service. Après avoir affecté ces licences achetées de manière centralisée, les administrateurs peuvent demander à ce que les acheteurs annulent leurs abonnements existants. Microsoft explore les moyens de simplifier et de rationaliser ce processus pour les administrateurs à l’avenir.
 
 ### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>Quand l’achat en libre-service pour les produits Power Platform sera-t-il disponible ?
 
-Microsoft lance un achat en libre-service pour Power BI le 19 novembre, 2019, aux clients des États-Unis, les autres marchés devenant disponibles au cours des prochains mois. Les PowerApp and Microsoft Flow seront ajoutés le 4 décembre 2019. Cette fonctionnalité ne sera actuellement pas disponible pour les clients qui sont des pouvoirs publics, des organisations à but non lucratif ou des établissements scolaires.
+Microsoft lance un achat en libre-service pour Power BI le 19 novembre, 2019, aux clients des États-Unis, les autres marchés devenant disponibles au cours des prochains mois. Les PowerApp and Microsoft Flow seront ajoutés le 4 décembre 2019. Cette fonctionnalité ne sera pas disponible pour les clients des États-Unis qui sont des pouvoirs publics, des organisations à but non lucratif ou l’éducation, pour le moment.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>Est-ce que l’achat en libre-service sera activé pour les services au-delà des produits Power Platform ?
 
@@ -97,11 +97,11 @@ Bien que tous les utilisateurs Azure AD des organisations éligibles soient auto
 
 ### <a name="why-are-self-service-purchases-not-subject-to-admin-approval"></a>Pourquoi les achats en libre service ne sont-ils pas soumis à l’approbation de l’administrateur ?
 
-Nous répondons à nos clients qui ont demandé cette fonctionnalité tout en permettant aux administrateurs de maintenir le contrôle des services et de respecter la gouvernance et la conformité des données. Pour en savoir plus sur la gestion des principaux de service Azure AD, consultez la rubrique [Set-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0). En outre, les administrateurs ont une visibilité complète sur les personnes qui ont effectué un achat en libre-service et sur les utilisateurs sur leurs clients auxquels une licence a été attribuée à partir d’un achat en libre-service. Les organisations peuvent ensuite compter sur leurs propres stratégies, procédures et communications internes pour s’assurer que les personnes qui effectuent des achats en libre-service sont conformes aux stratégies de l’entreprise. 
+Nous répondons à nos clients qui ont demandé des achats en libre-service tout en respectant le contrôle administratif des services. Les administrateurs bénéficient d’une visibilité complète sur la personne ayant effectué un achat en libre service et sur les clients sur lesquels une licence a été attribuée à un achat en libre-service. Les organisations peuvent également utiliser des stratégies, des procédures et des communications internes pour s’assurer que les personnes qui effectuent des achats en libre-service sont conformes aux stratégies de l’entreprise.  En guise d’exemple de contrôle de l’accès aux services : [Set-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0) peut être utilisé pour empêcher l’utilisation du produit sur l’ensemble de votre client.
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>Comment Microsoft respecte-t-il la gouvernance et la conformité des données en activant l’achat en libre-service ?
 
-Les administrateurs maintiennent le contrôle sur les services et les produits activés au sein de leur client en fonction de leurs exigences en matière de gouvernance et de conformité des données. De plus, toutes les stratégies de gestion de données et d’accès, que votre organisation a activées, continueront à s’appliquer aux services activés en libre-service.
+Les administrateurs maintiennent le contrôle sur les services et les produits activés au sein de leur client en fonction de leurs exigences en matière de gouvernance et de conformité des données. De plus, toutes les stratégies de gestion de données et d’accès, que votre organisation a activées, s’appliquent aux services activés en libre-service.
 
 ### <a name="who-owns-the-product-data-created-from-self-service-purchases"></a>Qui est propriétaire des données de produits créées à partir des achats en libre-service ?
 

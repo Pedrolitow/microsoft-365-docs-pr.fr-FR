@@ -11,16 +11,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs dans Office 365 (également appelés aide au flux de messagerie).
-ms.openlocfilehash: 088af4b6924fde0277901a19437d17c4506ff22b
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d49937afb379b43821d905001e8aee21ca86eb52
+ms.sourcegitcommit: b91d75d2631166ddd158d26a0a476e26391a58ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441541"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37886857"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Renseignements sur le flux de messagerie dans Office 365
 
-En règle générale, vous utilisez un connecteur pour acheminer les messages électroniques de votre organisation Office 365 vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router les messages d'Office 365 vers une organisation partenaire. Lorsqu'Office 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d'attente dans Office 365. Office 365 continue d'essayer de livrer chaque message pendant 48 heures. Après 48 heures, le message mis en file d'attente arrive à expiration et le message est renvoyé à l'expéditeur d'origine dans une notification d'échec de remise (également appelée notification de non-remise).
+En règle générale, vous utilisez un connecteur pour acheminer les messages électroniques de votre organisation Office 365 vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router les messages d'Office 365 vers une organisation partenaire. Lorsqu'Office 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d'attente dans Office 365. Office 365 continuera à relancer la remise de chaque message pendant 24 heures. Au bout de 24 heures, le message en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une notification d’échec de remise (également appelée notification de non-remise).
 
 Office 365 génère une erreur lorsqu'un message ne peut pas être remis à l'aide d'un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cette rubrique. Les erreurs de notification et de mise en file d’attente pour les messages non remis envoyés via des connecteurs sont appelées _intelligence de flux de messagerie_.
 
