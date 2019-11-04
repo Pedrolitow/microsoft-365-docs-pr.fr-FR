@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise de Microsoft 365 Business vers Microsoft 365 entreprise E3.
-ms.openlocfilehash: efdf4030a2a638a3fd56d1c415fcc6e6ac261c1a
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772713"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931852"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Migrer de Microsoft 365 Business vers Microsoft 365 entreprise E3
 
@@ -34,10 +34,10 @@ Par exemple, votre entreprise a grandi et a besoin de plus de 300 licences (fél
 
 Votre entreprise a besoin de fonctionnalités d’entreprise, telles que Office 365 ProPlus, Windows 10 entreprise E3 ou des licences d’accès client (CAL) entreprise.
 
-La migration est facile : il suffit de changer de licence. Toutes les données et la configuration de votre abonnement actuel sont conservées. Il n’y a rien à faire pour vous préparer à la migration et rien à faire par la suite, sauf tirer parti des nouvelles fonctionnalités. 
+La mise à niveau est facile : vous pouvez lancer la mise à niveau [à partir du centre d’administration](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). Toutes les données et la configuration de votre abonnement actuel sont conservées. Il n’y a rien à faire pour vous préparer à la migration et rien à faire par la suite, sauf tirer parti des nouvelles fonctionnalités. 
 
 >[!Note]
->Vous pouvez également utiliser un abonnement Microsoft 365 Business pour un maximum de 300 postes et obtenir un abonnement Microsoft 365 entreprise E3 pour plus de 300 places. Toutefois, Office 365 ATP n’est pas inclus dans Microsoft 365 entreprise E3. Vous devez ajouter des licences Office 365 ATP supplémentaires pour les utilisateurs de votre abonnement Microsoft 365 entreprise E3.
+>Vous pouvez également utiliser un abonnement Microsoft 365 Business pour un maximum de 300 postes et obtenir un abonnement Microsoft 365 entreprise E3 pour plus de 300 places. Toutefois, Office 365 ATP n’est pas inclus dans Microsoft 365 entreprise E3. Pour une protection permanente contre les menaces, vous devez ajouter des licences Office 365 ATP supplémentaires afin que tous les utilisateurs de votre police Office 365 ATP soient titulaires d’une licence.
 >
 
 ## <a name="differences-between-microsoft-365-business-and-microsoft-365-enterprise"></a>Différences entre Microsoft 365 entreprise et Microsoft 365 entreprise
@@ -104,7 +104,7 @@ Vos utilisateurs peuvent désormais bénéficier d’un stockage illimité dans 
 Vous pouvez commencer à utiliser la découverte d’applications Cloud, Azure AD Connect Health et l’authentification unique (SSO) pour plus de 10 applications.
 
 >[!Note]
->Après la migration vers Microsoft 365 entreprise E3, vous n’avez plus le gestionnaire de clients Outlook et MileIQ.
+>Les utilisateurs migrés vers Microsoft 365 entreprise E3 ne peuvent plus utiliser Outlook Customer Manager et MileIQ.
 >
 
 <a name="threat-protection"></a>
@@ -127,7 +127,7 @@ Windows 10 Business inclut les protections suivantes :
 Windows 10 entreprise E3 inclut également la gestion de l’isolation matérielle pour Microsoft Edge.
 
 >[!Note]
->Après la migration vers Microsoft 365 entreprise E3, Office 365 ATP n’est plus disponible. Vous pouvez acheter des licences Office 365 ATP supplémentaires pour votre abonnement Microsoft 365 Enterprise E3 et les affecter à vos comptes d’utilisateur.
+>Les utilisateurs migrés vers Microsoft 365 entreprise E3 auront chacun une licence Office 365 ATP pour la protection continue contre les menaces. N’oubliez pas d’acheter des licences Office 365 ATP supplémentaires afin que tous les utilisateurs de l’étendue de vos stratégies de protection avancée contre les menaces Office 365 soient titulaires d’une licence. 
 >
 
 ### <a name="device-management-with-intune"></a>Gestion des appareils avec Intune

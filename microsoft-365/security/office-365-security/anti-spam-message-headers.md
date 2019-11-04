@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Apprenez-en davantage sur les champs et valeurs d’en-tête ajoutés aux messages par Exchange Online Protection.
-ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: df0e31ad6d1c67c8d7ed92e9b42efb1da0c37731
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451116"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772258"
 ---
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 
@@ -39,7 +39,6 @@ Après avoir accédé aux informations d’un en-tête de message, recherchez **
 |CTRY|Pays depuis lequel le message s’est connecté au service. Cette valeur est déterminée par l'adresse IP de connexion, qui peut ne pas être la même que l'adresse IP d'envoi de provenance.|
 |LANG|Langue dans laquelle le message a été rédigé, tel que spécifié par le code du pays (par exemple, ru_RU pour le russe).|
 |SCL|Valeur du seuil de probabilité de courrier indésirable (SCL) du message. Pour plus d'informations sur l'interprétation de ces valeurs, consultez la rubrique [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).  |
-|PCL|Valeur du seuil de probabilité de courrier d’hameçonnage (PCL) du message.|
 |SRV:BULK|Le message a été identifié comme un message électronique en masse. Si l’**option avancée de filtrage du courrier indésirable Bloquer tous les envois de messages électroniques en masse** est activée, le message sera marqué comme courrier indésirable. Si cette option est désactivée, le message sera uniquement marqué comme courrier indésirable si le reste des règles de filtrage déterminent que le message est un courrier indésirable.|
 |SFV:SFE|Le filtrage a été ignoré et le message a été autorisé à passer car il a été envoyé à partir d'une adresse figurant sur la liste des expéditeurs autorisés d'un utilisateur.|
 |SFV:BLK|Le filtrage a été ignoré et le message a été bloqué car il a été envoyé à partir d'une adresse figurant sur la liste des expéditeurs bloqués d'un utilisateur.  <br/> **Conseil** : pour plus d’informations sur la façon dont les utilisateurs finals peuvent créer des listes d’expéditeurs autorisés et bloqués, voir [Bloquer ou autoriser (paramètres du courrier indésirable)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook sur le web) et [À propos du filtre Courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook).|
@@ -66,8 +65,7 @@ Le tableau suivant décrit certains champs utiles de l’en-tête **X-Microsoft-
 
 |**Champ d’en-tête**|**Description**|
 |:-----|:-----|
-|PCL|Seuil de probabilité de courrier d'hameçonnage du message, qui indique s'il s'agit d'un message de hameçonnage. Le statut est renvoyé avec l’une des valeurs numériques suivantes : <br/>**0-3** : le contenu du message ne correspond probablement pas à du hameçonnage. <br/>**4-8** : le contenu du message correspond probablement à du hameçonnage. <br/>**-9990** : (Exchange Online Protection uniquement) le contenu du message correspond probablement à du hameçonnage.  <br/>  Ces valeurs permettent de déterminer les mesures prises par votre client de messagerie vis-à-vis des messages. Par exemple, Outlook utilise le marquage PCL pour bloquer le contenu des messages suspects. Pour plus d’informations sur le hameçonnage et la façon dont Outlook traite les messages de hameçonnage, voir [Activer ou désactiver les liens dans les courriers électroniques](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
-|
+|BCL|Le Niveau de réclamations en bloc (BCL) du message vous permet de distinguer les différents types de vers de publipostage en bloc. Il s’agit d’une valeur située entre 0 et 9. Pour connaître les valeurs et d’autres informations sur le BCL, consultez l’article [Valeurs BCL](bulk-complaint-level-values.md).|
 
 ## <a name="authentication-results-message-header"></a>En-tête de message Authentication-results
 
