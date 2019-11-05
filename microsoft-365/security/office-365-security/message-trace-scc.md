@@ -9,18 +9,21 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: a936a3b24c97e9336550527750afa800345891e6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
+ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080314"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968524"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
 ## <a name="overview"></a>Vue d’ensemble
 
 Le suivi des messages dans le centre de sécurité & conformité suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
+
+> [!NOTE]
+> Pour effectuer le suivi des messages, l’administrateur doit être membre des groupes de rôles gestion de l’organisation, gestion de la conformité ou support technique.
 
 Le suivi des messages dans le centre de sécurité & conformité améliore le suivi des messages qui était disponible dans le centre d’administration Exchange. Vous pouvez utiliser les informations du suivi des messages pour répondre efficacement aux questions des utilisateurs sur ce qui s’est passé à leurs messages, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie.
 
@@ -29,7 +32,7 @@ Le suivi des messages dans le centre de sécurité & conformité améliore le su
 
 ## <a name="open-message-trace"></a>Ouvrir le suivi des messages
 
-1. [Connectez-vous à Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) à l'aide de votre compte professionnel ou scolaire.
+1. [Connectez-vous à Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) à l’aide de votre compte professionnel ou scolaire.
 
 2. Sélectionnez l'icône du lanceur d'applications ![Icône du lanceur d'applications Office 365](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) dans la partie supérieure gauche, puis **Administrateur**.
 
@@ -60,7 +63,7 @@ Les valeurs par défaut sont **tous les expéditeurs** et **tous les destinatair
 - **Pour les personnes**suivantes : cliquez dans ce champ pour sélectionner un ou plusieurs destinataires dans votre organisation.
 
 > [!NOTE]
-> Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris`*@contoso.com` en `scot?@contoso.com`charge (ou), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément.<br/>Vous pouvez coller plusieurs expéditeurs ou listes de destinataires séparés par`;`des points-virgules (). Les espaces`\s`(), les retours chariot (`\r`) ou`\n`les lignes () sont autorisés.
+> Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris en charge ( `*@contoso.com`par exemple,), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément.<br/>Vous pouvez coller plusieurs expéditeurs ou listes de destinataires séparés par`;`des points-virgules (). Les espaces`\s`(), les retours chariot (`\r`) ou`\n`les lignes () sont autorisés.
 
 ### <a name="time-range"></a>Plage horaire
 
@@ -334,7 +337,7 @@ Une valeur **custom_data** qui commence par `S:SFA` est l’agent de filtrage du
 
 |**Valeur**|**Description**|
 |:-----|:-----|
-|`SFV=NSPM`|Le message a été marqué comme n'étant pas un courrier indésirable et a été envoyé aux destinataires appropriés.|
+|`SFV=NSPM`|Le message a été marqué comme n’étant pas un courrier indésirable et a été envoyé aux destinataires appropriés.|
 |`SFV=SPM`|Le message a été marqué comme courrier indésirable par le filtre de contenu.|
 |`SFV=BLK`|Le filtrage a été ignoré et le message a été bloqué, car il provient d'un expéditeur bloqué.|
 |`SFV=SKS`|Le message a été marqué comme courrier indésirable avant d'être traité par le filtre de contenu. Il s'agit des messages marqués automatiquement comme courrier indésirable par une règle de transport et qui n'ont donc pas fait l'objet d'un filtrage supplémentaire.|
@@ -347,7 +350,7 @@ Une valeur **custom_data** qui commence par `S:SFA` est l’agent de filtrage du
 |`DI=SN`|Le message a été routé via le pool de remises à haut risque. Pour plus d’informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|Le message a été routé via le pool de remises normal pour les messages sortants.|
 |`SFS=[a]|SFS=[b]`|Cela indique que des règles anti-spam ont été associées.|
-|`IPV=CAL`|Le message n'a pas été bloqué par les filtres anti-spam car l'adresse IP se trouve dans une liste d'adresses IP autorisées du filtrage des connexions.|
+|`IPV=CAL`|Le message n’a pas été bloqué par les filtres anti-spam car l’adresse IP se trouve dans une liste d’adresses IP autorisées du filtre des connexions.|
 |`H=<EHLOstring>`|La chaîne HELO ou EHLO du serveur de messagerie de connexion.|
 |`PTR=<ReverseDNS>`|Enregistrement PTR de l'adresse IP d'envoi, également appelé adresse DNS inverse.|
 

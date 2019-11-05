@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 'Le complément de signalement de courrier indésirable de Microsoft pour Microsoft Office Outlook vous offre plusieurs méthodes pour signaler des messages en tant que courriers indésirables :'
-ms.openlocfilehash: 622463be7aea51b0912965ff713c76e8961c51d3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b53f6df11f2b0ee8fe6b20d3797d6e317c9a73e
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079993"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964440"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Signaler les messages de courrier indésirable à Microsoft
 
@@ -34,7 +34,7 @@ Le complément de signalement de courrier indésirable de Microsoft pour Microso
 Le complément de signalement de courrier indésirable vous permet de soumettre des rapports au service Microsoft Exchange Online Protection (EOP). Si votre boîte aux lettres n'est pas protégée par le service, la soumission de rapports de courrier indésirable n'affecte pas vos filtres de courrier indésirable. Les administrateurs peuvent en savoir plus sur d'autres paramètres de courrier indésirable qui s'appliquent à une organisation entière en consultant les rubriques [Comment s'assurer qu'un message n'est pas marqué comme du courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=534224) ou [Bloquer le courrier indésirable avec le filtre de courrier indésirable Office 365 pour éviter les faux négatifs](https://go.microsoft.com/fwlink/p/?LinkId=534225). Ils sont utiles si vous avez un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
   
 > [!TIP]
-> Vous pouvez également envoyer des messages de courrier indésirable directement à Microsoft à l’aide de l’adresse de messagerie [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) et de messages faux positifs (autres que des courriers indésirables) à l’aide de l’adresse de messagerie [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) . Pour plus d'informations, consultez la rubrique [Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
+> Vous pouvez également envoyer des messages de courrier indésirable directement à Microsoft à l’aide de l’adresse de messagerie [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) et de messages faux positifs (autres que des courriers indésirables) à l’aide de l’adresse de messagerie [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) . Pour plus d'informations, consultez la rubrique [Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
   
 ### <a name="to-report-junk-email-messages-from-outlook"></a>Pour signaler des messages électroniques indésirables à partir d’Outlook
 

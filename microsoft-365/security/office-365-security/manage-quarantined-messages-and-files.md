@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'En tant qu’administrateur, vous pouvez afficher, publier et signaler des messages en quarantaine faux positifs dans Office 365. Vous pouvez configurer des stratégies pour qu’Office 365 filtre les messages et les envoie à la mise en quarantaine pour plusieurs raisons : ils ont été identifiés comme courrier indésirable, en bloc, par hameçonnage, par programme malveillant ou parce qu’ils correspondent à une règle de flux de messagerie. '
-ms.openlocfilehash: aebd6b1cc3d792971eaff68df8a3f44a3f384910
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1450b88bdb3336923891bbbe041d9ca384a3c875
+ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080316"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968472"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365
 
@@ -195,16 +195,15 @@ Vous pouvez configurer la durée de mise en quarantaine des messages et des fich
     > [!TIP]
     > Pour accéder directement à la page **blocage du courrier indésirable** dans le centre de sécurité &amp; conformité, utilisez l’URL suivante : >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
-3. Choisissez **personnalisée** pour afficher l’onglet **paramètres personnalisés** . 
+ 
+3. Développez la ligne **stratégie de filtrage du courrier indésirable par défaut (toujours active)** . 
     
-4. Développez la ligne **stratégie de filtrage du courrier indésirable par défaut (toujours active)** . 
+4. Choisissez **modifier la stratégie**. Les paramètres de la stratégie de filtrage du courrier indésirable par défaut apparaissent dans une nouvelle page.
     
-5. Choisissez **modifier la stratégie**. Les paramètres de la stratégie de filtrage du courrier indésirable par défaut apparaissent dans une nouvelle page.
+5. Développez **les actions de courrier indésirable et en bloc**.
     
-6. Développez **les actions de courrier indésirable et en bloc**.
+6. Sous **quarantaine**, dans la zone de texte **conserver les courriers indésirables pendant (jours)** , entrez la durée pendant laquelle vous souhaitez qu’Office 365 conserve les messages et les fichiers en quarantaine. La valeur par défaut est 30 jours. Il s’agit également de la valeur maximale. 
     
-7. Sous **quarantaine**, dans la zone de texte **conserver les courriers indésirables pendant (jours)** , entrez la durée pendant laquelle vous souhaitez qu’Office 365 conserve les messages et les fichiers en quarantaine. La valeur par défaut est 30 jours. Il s’agit également de la valeur maximale. 
-    
-8. Choisissez **Enregistrer**.
+7. Cliquez sur **Enregistrer**.
     
 
