@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
+ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968524"
+ms.locfileid: "37993729"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
@@ -63,7 +63,7 @@ Les valeurs par défaut sont **tous les expéditeurs** et **tous les destinatair
 - **Pour les personnes**suivantes : cliquez dans ce champ pour sélectionner un ou plusieurs destinataires dans votre organisation.
 
 > [!NOTE]
-> Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris en charge ( `*@contoso.com`par exemple,), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément.<br/>Vous pouvez coller plusieurs expéditeurs ou listes de destinataires séparés par`;`des points-virgules (). Les espaces`\s`(), les retours chariot (`\r`) ou`\n`les lignes () sont autorisés.
+> Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris en charge ( `*@contoso.com`par exemple,), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément.<br/>Vous pouvez coller plusieurs listes d’expéditeurs ou de destinataires en les`;`séparant par des points-virgules (). espaces (`\s`), retours chariot`\r`() ou lignes suivantes (`\n`).
 
 ### <a name="time-range"></a>Plage horaire
 
