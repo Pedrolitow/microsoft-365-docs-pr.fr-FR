@@ -1,18 +1,18 @@
 ---
-title: Étapes permettant aux partenaires d’inscrire des appareils
+title: Procédure permettant aux partenaires d’inscrire des appareils
 description: Comment les partenaires peuvent enregistrer les appareils afin qu’ils puissent être gérés par le bureau géré Microsoft
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 69d9387047cbb14a97f3da1d401b30a97bd7fd90
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 971b17d3f9fad15d5c254d47af9b6eb30b66633c
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982715"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011945"
 ---
-# <a name="steps-for-partners-to-register-devices"></a>Étapes permettant aux partenaires d’inscrire des appareils
+# <a name="steps-for-partners-to-register-devices"></a>Procédure permettant aux partenaires d’inscrire des appareils
 
 
 Cette rubrique décrit les étapes à suivre par les partenaires pour inscrire des appareils. Le processus d’inscription des appareils vous-même est documenté dans [inscrire des appareils dans Microsoft Managed Desktop vous-même](register-devices-self.md).
@@ -20,7 +20,7 @@ Cette rubrique décrit les étapes à suivre par les partenaires pour inscrire d
 
 
 ## <a name="prepare-for-registration"></a>Préparer l’inscription 
-Avant de terminer l’enregistrement d’un client, vous devez d’abord établir une relation avec ceux-ci dans le [Centre partenaires](https://partner.microsoft.com/dashboard). Veillez à sélectionner **inclure les privilèges d’administration déléguée pour Azure Active Directory et Office 365**. Pour plus d’informations, consultez [l’aide du centre de partenaires](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer).
+Avant de terminer l’enregistrement d’un client, vous devez d’abord établir une relation avec ceux-ci dans le [Centre partenaires](https://partner.microsoft.com/dashboard). Veillez à sélectionner **inclure les privilèges d’administration déléguée pour Azure Active Directory et Office 365**. Pour plus d’informations, consultez [l’aide du centre de partenaires](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer).
 
 Pour terminer l’inscription de votre client, commencez par créer un fichier CSV.
 

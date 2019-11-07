@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b17b5a3458458ff0c73c93fa184ef8ff6a064199
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37159682"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011995"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Prise en charge des administrateurs pour le bureau géré Microsoft
 
@@ -21,7 +21,7 @@ Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Mi
 >Assurez-vous que vous [configurez un contact administrateur pour l'](../get-started/add-admin-contacts.md) empaquetage, les appareils, la sécurité et les autres. Vous ne pouvez pas soumettre une demande de support dans l’un de ces domaines si aucun contact administrateur n’est configuré.
 
 **Pour envoyer une demande de support**
-1. Connectez-vous au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal). 
+1. Connectez-vous au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal). 
 2. Sur **demandes de support**, sélectionnez **+ nouveau ticket de support**.
 3. Sélectionnez le **type de demande de support** correspondant à l’aide dont vous avez besoin. Le tableau ci-dessous présente les options. 
 4. Sélectionnez le **niveau de gravité**. Pour plus d’informations, voir [prise en charge des définitions de gravité des demandes](#sev). 

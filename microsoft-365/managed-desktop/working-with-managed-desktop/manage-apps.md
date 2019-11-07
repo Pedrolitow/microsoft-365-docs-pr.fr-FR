@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390731"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012409"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Gérer les applications métiers dans le bureau géré Microsoft
 
@@ -25,7 +25,7 @@ Il existe deux façons de gérer les mises à jour de l’application pour les a
 ## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Mettre à jour les applications métiers dans le bureau géré Microsoft
 
 **Pour mettre à jour vos applications métiers dans le portail de bureau géré Microsoft**
-1. Connectez-vous au [portail d’administration de bureau géré Microsoft](http://aka.ms/mmdportal).
+1. Connectez-vous au [portail d’administration de bureau géré Microsoft](https://aka.ms/mmdportal).
 2. Sous **inventaire**, sélectionnez **applications**.  
 3. Sélectionnez l’application que vous souhaitez mettre à jour, puis sélectionnez **modifier**.
 4. Sous **gérer**, sélectionnez **Propriétés**. 
@@ -58,7 +58,7 @@ Si une erreur est détectée lors du déploiement d’une nouvelle version d’u
 
 **Pour restaurer une application métier vers une version antérieure**
 
-1. Connectez-vous au [portail d’administration de bureau géré Microsoft](http://aka.ms/mmdportal).
+1. Connectez-vous au [portail d’administration de bureau géré Microsoft](https://aka.ms/mmdportal).
 2. Sous **inventaire**, sélectionnez **applications**.  
 3. Sélectionnez l’application que vous devez restaurer, puis sélectionnez **modifier**.
 4. Sous **gérer**, sélectionnez **Propriétés**. 

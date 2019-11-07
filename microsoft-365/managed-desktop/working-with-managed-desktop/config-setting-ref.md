@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: da8f88251f6d1ae3185641dd408b29aa41cd7ea9
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390411"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012259"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Référence des paramètres configurables-bureau géré Microsoft
 
@@ -23,15 +23,15 @@ Vous pouvez personnaliser l’image d’arrière-plan du Bureau pour les apparei
 
 ### <a name="requirements"></a>Configuration requise
 
-Ces conditions doivent être remplies pour une image d’arrière-plan de bureau:
+Ces conditions doivent être remplies pour une image d’arrière-plan de bureau :
 - Format de fichier image-. jpg, JPEG ou. png
-- Emplacement des fichiers: héberger sur un emplacement HTTPS sécurisé (https) approuvé. 
+- Emplacement des fichiers : héberger sur un emplacement HTTPS sécurisé (https) approuvé. 
 - Non autorisé-les emplacements http et de partage de fichiers (UNC) ne sont pas pris en charge. 
 
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Personnaliser et déployer une image d’arrière-plan du Bureau
 
 **Pour ajouter une image d’arrière-plan personnalisée du Bureau**
-1. Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans espace de travail **configurable** , sélectionnez **image d’arrière-plan du Bureau**. 
 4. Entrez l’emplacement de l’image que vous souhaitez utiliser. 
@@ -47,7 +47,7 @@ Vous devez indiquer le nom de domaine complet (FQDN) pour les sites intranet ou 
 ### <a name="customize-and-deploy-browser-start-pages"></a>Personnaliser et déployer des pages de démarrage de navigateur
 
 **Pour ajouter une page de démarrage de navigateur**
-1. Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans espace de travail **configurable** , sélectionnez **pages de démarrage du navigateur**. 
 4. Sélectionnez **Ajouter une page de démarrage**.
@@ -63,22 +63,22 @@ Vous pouvez spécifier un emplacement https://ou l’emplacement d’un partage 
 
 ### <a name="requirements"></a>Configuration requise
 
-Ces exigences doivent être satisfaites pour le fichier de liste de sites en mode entreprise:
-- Format de fichier: fichier XML qui répond aux [exigences de fichier](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
-- Emplacement des fichiers: fichier hôte sur un emplacement https interne. 
+Ces exigences doivent être satisfaites pour le fichier de liste de sites en mode entreprise :
+- Format de fichier : fichier XML qui répond aux [exigences de fichier](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
+- Emplacement des fichiers : fichier hôte sur un emplacement https interne. 
 - Non autorisé-l’hébergement sur un partage de fichiers interne, comme *//ShareName*, n’est pas autorisé
 
 ### <a name="best-practices"></a>Meilleures pratiques
 
-Ces meilleures pratiques sont proposées pour aider les clients à prendre des décisions pour moderniser leur infrastructure informatique:
+Ces meilleures pratiques sont proposées pour aider les clients à prendre des décisions pour moderniser leur infrastructure informatique :
 - **Choisir un nombre limité de sites** : Microsoft Managed Desktop utilise Microsoft Edge comme navigateur favori pour améliorer la sécurité globale pour votre organisation et la convivialité de vos utilisateurs. La plupart des sites de cette liste sont destinés aux applications Web héritées qui ont besoin d’une version plus ancienne d’un navigateur qui n’inclut pas autant de fonctionnalités de sécurité. 
-- Songez à utiliser un **autre** site ou une application Web qui ne nécessite pas un navigateur plus ancien. Vous pouvez également mettre à jour le site afin qu’il puisse utiliser des navigateurs plus récents. Les navigateurs plus récents utilisent la technologie la plus récente et contribuent à l’amélioration de la sécurité.
+- **Songez** à utiliser un autre site ou une application Web qui ne nécessite pas un navigateur plus ancien. Vous pouvez également mettre à jour le site afin qu’il puisse utiliser des navigateurs plus récents. Les navigateurs plus récents utilisent la technologie la plus récente et contribuent à l’amélioration de la sécurité.
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>Personnaliser et déployer l’emplacement de liste en mode site d’entreprise
 
 **Pour ajouter un emplacement de liste en mode site d’entreprise**
 
-1.  Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1.  Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
 2.  Sous **paramètres**, sélectionnez **configurable**.
 3.  Dans espace de travail **configurable** , sélectionnez l’emplacement de la **liste de sites en mode entreprise**. 
 4.  Entrez l’emplacement https de votre liste de sites. 
@@ -86,9 +86,9 @@ Ces meilleures pratiques sont proposées pour aider les clients à prendre des d
 
 ## <a name="trusted-sites"></a>Sites approuvés
 
-Les sites de confiance vous permettent de personnaliser les zones de sécurité ou d’utiliser un site, pour différents sites. Les zones de sécurité sont les suivantes: 
+Les sites de confiance vous permettent de personnaliser les zones de sécurité ou d’utiliser un site, pour différents sites. Les zones de sécurité sont les suivantes : 
 - Zone 1 – zone Intranet local
-- Zone 2: zone sites de confiance
+- Zone 2 : zone sites de confiance
 - Zone 3 – zone Internet
 - Zone 4 – zone sites sensibles
 
@@ -100,7 +100,7 @@ Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet 
 
 **Pour ajouter un site de confiance**
 
-1. Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans espace de travail **configurable** , sélectionnez **sites de confiance**, puis **Ajouter un site approuvé**. 
 4. Sur **Ajouter un site approuvé**, entrez l’URL, choisissez une zone de sécurité, puis sélectionnez **Ajouter un site approuvé**. 
@@ -109,7 +109,7 @@ Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet 
 
 **Pour supprimer un site approuvé**
 
-1. Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans espace de travail **configurable** , sélectionnez **sites de confiance**. 
 4. Sélectionnez le site que vous souhaitez supprimer, puis sélectionnez **supprimer**. 
@@ -126,7 +126,7 @@ Les exceptions de site proxy que vous ajoutez dans le portail de bureau géré M
 
 ### <a name="requirements"></a>Configuration requise
 
-Ces exigences doivent être satisfaites pour les exceptions de serveur proxy et de site proxy:
+Ces exigences doivent être satisfaites pour les exceptions de serveur proxy et de site proxy :
 - Doit être une adresse de serveur et un numéro de port valides
 - Les URL doivent être un site http valide 
 
@@ -134,7 +134,7 @@ Ces exigences doivent être satisfaites pour les exceptions de serveur proxy et 
 
 **Pour ajouter une exception de site proxy individuelle**
 
-1. Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans espace de travail **configurable** , sélectionnez **proxy**. 
 4. Entrez l' **adresse** et le **numéro de port** de votre serveur proxy, puis sélectionnez Ajouter une exception de **proxy**. 

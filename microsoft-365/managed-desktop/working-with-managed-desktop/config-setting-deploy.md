@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
-ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
+ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37040795"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012299"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables-bureau géré Microsoft
 
@@ -26,7 +26,7 @@ Statut  | Explication
 Déployer | Votre modification attend d’être déployée sur ce groupe.
 En cours | La modification est appliquée aux appareils actifs de ce groupe. 
 Exécuter | Modification effectuée sur tous les appareils actifs de ce groupe. 
-Failed | La modification a échoué sur 10% des appareils actifs dans le groupe, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
+Échec | La modification a échoué sur 10% des appareils actifs dans le groupe, de sorte que le déploiement a été arrêté.<br><br> Une demande de support sera automatiquement ouverte avec les opérations de bureau géré Microsoft pour résoudre les problèmes de déploiement. 
 Retrouveront | Le changement a été rétabli sur la dernière modification qui a été déployée avec succès sur tous les groupes de déploiement.
 
 ## <a name="deploy-changes"></a>Déployer les modifications
@@ -35,7 +35,7 @@ Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions
 
 **Pour déployer les modifications**
 
-1. Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez déployer, puis sélectionnez le déploiement intermédiaire à déployer.
 4. Sélectionnez **déployer** pour déployer la modification dans l’un des groupes de déploiement.
@@ -53,7 +53,7 @@ Une fois que vous avez déployé une modification, vous pouvez revenir à l' **�
 Nous allons vous montrer les étapes permettant de rétablir une modification à l’aide de l’image d’arrière-plan du Bureau à titre d’exemple. 
 
 **Pour annuler une modification**
-1. Se connecter au [portail d’administration de bureau géré Microsoft](http://aka.ms/mwaasportal)
+1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez rétablir, puis sélectionnez le déploiement intermédiaire à rétablir.
 4. Sous **nécessité de rétablir cette modification**, sélectionnez **rétablir le déploiement**.

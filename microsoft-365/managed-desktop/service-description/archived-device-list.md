@@ -5,16 +5,16 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c3674df0bfd797b9076bbf52379444665b1ce4d8
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 70cde49eb162e33ee99d59eb2ba9782ac1b7db30
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857307"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012309"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés Microsoft Managed Desktop
 
-Pour assurer la meilleure expérience utilisateur, le service Microsoft Managed Desktop prend en charge les périphériques à un certain point. Cette rubrique répertorie les appareils qui approchent de la retraite au cours des prochaines années, que nous appelons «archivés». Si vous prenez en main Microsoft Managed Desktop en utilisant des appareils dont vous disposez déjà, vous devez vérifier attentivement cette liste.
+Pour assurer la meilleure expérience utilisateur, le service Microsoft Managed Desktop prend en charge les périphériques à un certain point. Cette rubrique répertorie les appareils qui approchent de la retraite au cours des prochaines années, que nous appelons « archivés ». Si vous prenez en main Microsoft Managed Desktop en utilisant des appareils dont vous disposez déjà, vous devez vérifier attentivement cette liste.
 
 >[!IMPORTANT]
 >Vous pouvez toujours inscrire ces appareils dès à présent, mais ils disposeront d’une durée de vie plus courte avec Microsoft Managed Desktop. Si vous achetez de nouveaux appareils, vous devez utiliser des modèles à partir de la [liste des appareils actifs](./device-list.md).
@@ -32,11 +32,11 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 
 | Modèle  | Caractéristiques minimales  | Autres conditions requises   | Date de déclassement |
 |---------|---------|---------|---------|
-|[Ordinateur portable de surface](https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 Go/Intel i5/8 Go de RAM | Aucun | **20 mai 2022** |
-|[Surface Pro](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 Go/Intel i5/8 Go de RAM | Aucun | **15 juin 2022** |
+|[Ordinateur portable de surface](https://www.microsoft.com/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 Go/Intel i5/8 Go de RAM | Aucun | **20 mai 2022** |
+|[Surface Pro](https://www.microsoft.com/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 Go/Intel i5/8 Go de RAM | Aucun | **15 juin 2022** |
 
 
-En outre, l’appareil doit également:
+En outre, l’appareil doit également :
 
 - Disposer d’une image approuvée par le bureau géré Microsoft. Lorsque vous commandez des appareils, vérifiez que vous spécifiez qu’ils sont utilisés avec Microsoft Managed Desktop.
 - N’ont pas terminé l’expérience de première exécution de Windows.
@@ -44,8 +44,8 @@ En outre, l’appareil doit également:
 
 #### <a name="additional-help"></a>Aide supplémentaire
 
-Ces ressources peuvent vous aider à répondre aux questions que vous pouvez vous poser sur des appareils spécifiques:
+Ces ressources peuvent vous aider à répondre aux questions que vous pouvez vous poser sur des appareils spécifiques :
 
 - Pour plus d’informations sur les appareils Dell, contactez [MMD_at_dell@dell.com](mailto:MMD_at_dell@dell.com).
 
-- Pour plus d’informations sur les appareils HP, contactez: Americas ([MMD-Americas@hp.com](mailto:mmd-americas@hp.com)); Europe/Moyen-Orient/Afrique ([MMD-EMEA@hp.com](mailto:mmd-emea@hp.com)); Asie-Pacifique/Japon ([MMD-APJ@hp.com](mailto:mmd-apj@hp.com)); Global ([MMD@hp.com](mailto:mmd@hp.com))
+- Pour plus d’informations sur les appareils HP, contactez : Americas ([MMD-Americas@hp.com](mailto:mmd-americas@hp.com)); Europe/Moyen-Orient/Afrique ([MMD-EMEA@hp.com](mailto:mmd-emea@hp.com)); Asie-Pacifique/Japon ([MMD-APJ@hp.com](mailto:mmd-apj@hp.com)); Global ([MMD@hp.com](mailto:mmd@hp.com))

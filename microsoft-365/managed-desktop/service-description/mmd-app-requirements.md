@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 6b5f1d7cf8070808aecb57c7f5b2c16ec84b37d6
+ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982455"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38020367"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise pour les applications de bureau géré Microsoft
 
@@ -38,7 +38,7 @@ Certains types d’application ne sont pas autorisés sur les appareils de burea
 
 ## <a name="restricted-app-behaviors"></a>Comportements d’application restreinte
 
-Certains comportements d’application peuvent avoir un impact négatif sur l’expérience utilisateur ou présenter un risque de sécurité aux appareils de bureau gérés par Microsoft. Les applications présentant les comportements suivants ne sont pas autorisées à s’exécuter dans l’environnement de bureau géré Microsoft sans dérogation particulière de Microsoft.
+Certains comportements d’application peuvent avoir un impact négatif sur l’expérience utilisateur ou présenter un risque de sécurité aux appareils de bureau gérés par Microsoft. Les applications présentant les comportements suivants ne sont pas autorisées à s’exécuter dans l’environnement de bureau géré Microsoft, sans avoir une spécificité de Microsoft.
 
 Expérience utilisateur :
 - Installer les services d’arrière-plan
@@ -58,5 +58,5 @@ Sécurité :
 
 Microsoft Managed Desktop prend en charge uniquement les pilotes de périphériques disponibles via Windows Update ou la boîte de réception installée avec l’appareil géré Microsoft. 
 
-Si une application requiert un ou plusieurs pilotes pour l’exécuter, elle est considérée comme une application restreinte et nécessite le déploiement de l’exemption sur le bureau géré Microsoft. 
+Si une application requiert un ou plusieurs pilotes pour l’exécuter, elle est considérée comme une application restreinte et nécessite le déploiement de Microsoft Managed Desktop. 
 
