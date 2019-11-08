@@ -3,7 +3,7 @@ title: Modifications du contenu du déploiement de Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/30/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,31 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Consultez le nouveau contenu et les modifications apportées au contenu du Guide de déploiement de Microsoft 365.
-ms.openlocfilehash: 6c965efcbbfebe4fd80ac983674a7d183793e946
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 605805d715243c9ef00f681616976be0f4b6b705
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889933"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929277"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Modifications du contenu du déploiement de Microsoft 365 Entreprise
 
 ## <a name="october-2019"></a>Octobre 2019
 
 ### <a name="new-content"></a>Nouveau contenu 
+
+
+- [Affiche Teams pour les données hautement réglementées](secure-teams-highly-regulated-data-scenario.md#poster)
+
+  [![Affiche Teams pour les données hautement réglementées](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+
+  Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+
+- [Affiche Sites SharePoint pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md#poster)
+
+  [![Affiche Sites SharePoint pour les données hautement réglementées](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+
+  Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 - [Affiche Déployer Windows 10 avec autopilot](windows10-deploy-autopilot.md) 
 
@@ -47,7 +60,7 @@ ms.locfileid: "37889933"
 
 - [Affiche Confiez des responsabilités aux travailleurs à distance](empower-people-to-work-remotely.md#poster)
 
-  [![Affiche Confiez des responsabilités aux travailleurs à distance](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
+  [![Affiche Confiez des responsabilités aux travailleurs à distance](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
  
 
 ### <a name="updates-and-enhancements"></a>Mises à jour et améliorations

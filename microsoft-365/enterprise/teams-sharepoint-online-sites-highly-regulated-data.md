@@ -3,7 +3,7 @@ title: Sites SharePoint pour les données hautement réglementées
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un site d’équipe SharePoint sécurisé pour stocker vos fichiers les plus précieux et les plus sensibles.
-ms.openlocfilehash: 7162ced48a64270713dc1eac6e73de053d24b2f4
-ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
+ms.openlocfilehash: cfa1f7d85f7dd4d20b293c73b0b8f7d8e2577d02
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37628338"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929240"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Sites SharePoint pour les données hautement réglementées
 
@@ -68,7 +68,11 @@ Ce scénario implique que vous ayez déjà déployé les éléments suivants :
 
 Les phases suivantes vous guident à travers toute la conception, la configuration et le pilotage de l'adoption des sites SharePoint pour les données hautement réglementées.
 
-Pour découvrir comment Contoso Corporation, une organisation multinationale fictive mais représentative, a conçu un site SharePoint pour ses équipes de recherche, consultez cette [configuration exemple](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
+<a name="poster"></a> Pour un résumé d’une page de ce scénario, voir l’[affiche Sites SharePoint pour les données hautement réglementées](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf).
+
+[![Affiche Sites SharePoint pour les données hautement réglementées](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+
+Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="identity-and-device-access-prerequisites"></a>Conditions préalables pour les identités et l’accès aux appareils
 
