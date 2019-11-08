@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre ce que fait Microsoft au cours d’un incident de service pour vous permettre de mieux préparer les plans de continuité de votre activité.
-ms.openlocfilehash: 9bbf73c736a4391a51edd451db7d23869aa36603
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: c74bb83352f87faf0bb7f50e8aec4ac813516d3c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122344"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031079"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Gestion de la continuité des activités de l’entreprise et responsabilités des partenaires client et cloud
 
@@ -39,8 +39,8 @@ Microsoft propose aux utilisateurs plusieurs canaux pour les communications sur 
 
 - En cas d’indisponibilité du centre d’administration ou du tableau de bord Intégrité des services dans le centre d’administration, vous pouvez surveiller l’état du service sur notre [site de sauvegarde](https://status.office365.com/).
 - Nous conservons un compte Twitter [@MSFT365Status](https://twitter.com/msft365status?lang=en) où nous répondons aux rapports d’impact et publions les mises à jour sur les événements concernant le tableau de bord.
-- L’application administrateur pour les administrateurs de client Microsoft 365 vous permet de vous connecter à l’état du service Microsoft 365 de votre organisation lorsque vous êtes en déplacement. Les administrateurs clients peuvent consulter les informations de l'état du service et les mises à jour de l'état de maintenance depuis leurs appareils mobiles. Pour plus d’informations, consultez le [FAQ sur l’application d’administration](https://docs.microsoft.com/fr-FR/office365/admin/admin-overview/admin-mobile-app?view=o365-worldwide).
-- L'[API Microsoft 365 sur les communications du service](https://docs.microsoft.com/fr-FR/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity#office-365-service-communications-api) vous permet d’accéder aux communications du service afin de faciliter la surveillance de votre environnement. Vous pouvez vous connecter à l’API, recevoir des données sur l’état du service en temps réel et publier les informations sur un tableau de bord interne afin d’informer les utilisateurs d’entreprise des incidents. La diffusion des informations en interne permet de réduire le trafic de votre support technique pendant une interruption.
+- L’application administrateur pour les administrateurs de client Microsoft 365 vous permet de vous connecter à l’état du service Microsoft 365 de votre organisation lorsque vous êtes en déplacement. Les administrateurs clients peuvent consulter les informations de l'état du service et les mises à jour de l'état de maintenance depuis leurs appareils mobiles. Pour plus d’informations, consultez le [FAQ sur l’application d’administration](https://docs.microsoft.com/office365/admin/admin-overview/admin-mobile-app?view=o365-worldwide).
+- L'[API Microsoft 365 sur les communications du service](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity#office-365-service-communications-api) vous permet d’accéder aux communications du service afin de faciliter la surveillance de votre environnement. Vous pouvez vous connecter à l’API, recevoir des données sur l’état du service en temps réel et publier les informations sur un tableau de bord interne afin d’informer les utilisateurs d’entreprise des incidents. La diffusion des informations en interne permet de réduire le trafic de votre support technique pendant une interruption.
 - Pour les incidents plus graves, Microsoft publie des rapports post-incidents (PIR) sur le tableau de bord Intégrité des services dans le centre d’administration. Les PIR contiennent des informations clés relatives à l’incident afin de vous aider à comprendre la nature de la panne. On y trouve les sections suivantes :
     - impact sur les utilisateurs
     - étendue de l’impact
@@ -49,11 +49,11 @@ Microsoft propose aux utilisateurs plusieurs canaux pour les communications sur 
     - actions prises
     - étapes suivantes
 - Des communications complémentaires sont disponibles dans le centre de messagerie Microsoft 365, comme les notifications de modifications à venir, les nouvelles fonctionnalités ou la maintenance planifiée.
-- Pour plus d’informations, voir le [guide sur l’État des services](https://docs.microsoft.com/fr-FR/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) pour en savoir plus sur les différents canaux de communication et la surveillance de l’état du service.
+- Pour plus d’informations, voir le [guide sur l’État des services](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) pour en savoir plus sur les différents canaux de communication et la surveillance de l’état du service.
  
 Le fait de donner l’accès aux services en ligne de Microsoft 365 représente un partenariat entre votre organisation et Microsoft. Le tableau suivant résume l’équilibre des responsabilités entre Microsoft et le client lors d’un incident de service et pendant l’exploitation normale.
 
-![équilibre des responsabilités entre Microsoft et le client](media\ebcm\responsibilities.png)
+![équilibre des responsabilités entre Microsoft et le client](media/ebcm/responsibilities.png)
 
 ## <a name="your-environment---service-continuity"></a>Votre environnement – continuité de service
 Lorsque vous élaborez votre plan de continuité, pensez aux événements susceptibles d’avoir un impact sur votre organisation et sur sa capacité à communiquer. À un niveau élevé, trois facteurs peuvent avoir un impact sur votre activité.
@@ -63,12 +63,12 @@ Pensez aux événements qui pourraient avoir un impact sur votre personnel, comm
 
 ### <a name="location"></a>L’emplacement
 De nombreuses organisations imposent aux employés de se trouver dans des emplacements physiques ou réseau spécifiques pour se connecter aux systèmes d’entreprise et aux services cloud.  
-Microsoft publie des [principes de connectivité réseau](https://docs.microsoft.com/fr-FR/office365/enterprise/office-365-network-connectivity-principles) qui guident les entreprises avec des recommandations pour la configuration de la connectivité réseau aux ressources cloud. Les exemples d’optimisation incluent l’implémentation d’un VPN en tunnellisation partagée pour autoriser les connexions directement à partir du réseau d’un utilisateur plutôt que d’un tunnel VPN.  Bien que ces principes de connectivité soient importants pour maintenir les connexions à faible latence, la résilience de service nécessite d’autres méthodes de connexion aux ressources d’entreprise pour une collaboration générale.
+Microsoft publie des [principes de connectivité réseau](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) qui guident les entreprises avec des recommandations pour la configuration de la connectivité réseau aux ressources cloud. Les exemples d’optimisation incluent l’implémentation d’un VPN en tunnellisation partagée pour autoriser les connexions directement à partir du réseau d’un utilisateur plutôt que d’un tunnel VPN.  Bien que ces principes de connectivité soient importants pour maintenir les connexions à faible latence, la résilience de service nécessite d’autres méthodes de connexion aux ressources d’entreprise pour une collaboration générale.
 
 ### <a name="systems"></a>Les systèmes
 De nombreuses solutions de collaboration dépendent des systèmes, tels que le réseau étendu (WAN) de l’entreprise. Lorsque ces systèmes ne sont pas disponibles, comment votre organisation peut-elle répondre ?
 Ce graphique représente des problèmes qui peuvent avoir une incidence sur plusieurs zones. Le tableau joint fournit des exemples à prendre en considération.
 
-![diagramme de Venn](media\ebcm\venn-diagram.png)
+![diagramme de Venn](media/ebcm/venn-diagram.png)
 
 Vos plans de continuité doivent prendre en compte chacune de ces zones. Par exemple, si vous voulez que les utilisateurs soient sur le réseau d’entreprise et qu’il y a une tempête de neige, comment ces utilisateurs peuvent-ils accéder aux ressources clés ? Si la neige empêche de venir au bureau et que les ingénieurs de service doivent se connecter au réseau d’entreprise, existe-t-il un programme prévoyant que leurs ordinateurs portables d’entreprise soient disponibles chez eux ?

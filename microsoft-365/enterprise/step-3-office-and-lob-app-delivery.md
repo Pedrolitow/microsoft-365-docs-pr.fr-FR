@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment livrer Office et des applications métier.
-ms.openlocfilehash: 15a3b1730f5e2a62f067f7615d873ad34fa18d9e
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: fdb16aa9d92e3fd2608ca3738dc5af80389f18ea
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814605"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031529"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Étape 3 : livraison d’Office et d’applications métier
 
@@ -43,7 +43,7 @@ Si rien ne vous en empêche, nous vous recommandons de déployer les versions 64
 
 Il existe beaucoup de méthodes et de modèles permettant l’installation d’applications sur Windows. Examinons vos options de livraison.
 
-[Gestion des applications Windows 10](https://docs.microsoft.com/fr-FR/windows/application-management/)
+[Gestion des applications Windows 10](https://docs.microsoft.com/windows/application-management/)
 
 ## <a name="msi-based-deployments"></a>Déploiements basés sur MSI
 
@@ -61,15 +61,15 @@ Une autre méthode populaire de remise application est IMAGERIE PC. Dans ce cas,
 
 Si vous ne voulez pas inclure Office 365 ProPlus dans votre image, n’oubliez pas que cette approche utilise une activation utilisateur ; elle ne peut pas être activée au préalable par l’administrateur système. Utilisez l’outil Déploiement d’Office pour installer préalablement Office sur le périphérique dont vous présentez l’imagerie et ignorer la connexion utilisateur.  Une fois l’image déployée, les utilisateurs finaux peuvent se connecter à l’aide de leurs informations d’identification Office 365 et activer Office 365 ProPlus.
 
-[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/fr-FR/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Déploiement d’Office 365 ProPlus dans le cadre d’une image du système d’exploitation](https://docs.microsoft.com/fr-FR/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Déploiement d’Office 365 ProPlus dans le cadre d’une image du système d’exploitation](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office « Démarrer en un clic »  
 
 Office 365 ProPlus est installé à l’aide d’un clic et en un clic remplace le package basé sur MSI dans toutes les versions de la prochaine publication 2019 Office pour Windows. Il affiche un nombre d’avantages, y compris des installations plus rapides, une mise à jour rapide et plus efficace et une désinstallation plus nette. 
 
-Les programmes remis via Click-to-Run réalisent des tâches dans un environnement virtuel application sur votre ordinateur et donc coexistent avec d’autres applications sans conflit ; ils prennent également environ la moitié de l’espace du disque qu’ils prendraient en tant que package MSI. Les applications Office sont remises et gérées via l’[Outil de Déploiement d’Office](https://www.microsoft.com/en-us/download/details.aspx?id=49117) qui est le moteur d’installation Office nécessaire pour télécharger, configurer et personnaliser vos applications Office. L’outil de Déploiement d’Office lit un fichier XML de configuration qui fournit les métadonnées des instructions sur la configuration et la personnalisation de votre installation d’Office.
+Les programmes remis via Click-to-Run réalisent des tâches dans un environnement virtuel application sur votre ordinateur et donc coexistent avec d’autres applications sans conflit ; ils prennent également environ la moitié de l’espace du disque qu’ils prendraient en tant que package MSI. Les applications Office sont remises et gérées via l’[Outil de Déploiement d’Office](https://www.microsoft.com/download/details.aspx?id=49117) qui est le moteur d’installation Office nécessaire pour télécharger, configurer et personnaliser vos applications Office. L’outil de Déploiement d’Office lit un fichier XML de configuration qui fournit les métadonnées des instructions sur la configuration et la personnalisation de votre installation d’Office.
 
 Microsoft recommande l’utilisation de l’[outil de personnalisation Office](https://config.office.com/) pour personnaliser les paramètres de déploiement et de créer votre fichier XML de configuration. Via l’Outil de Personnalisation Office, vous pouvez définir les applications et les langues seront installées, comment les applications seront mis à jour, les préférences d’applications et les paramètres d’expérience d’installation.
 
@@ -79,13 +79,13 @@ Si vous utilisez l’outil System Center Configuration Manager, vous pouvez touj
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Guide de déploiement pour Office 365 ProPlus](https://docs.microsoft.com/fr-FR/deployoffice/deployment-guide-for-office-365-proplus)
+[Guide de déploiement pour Office 365 ProPlus](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Suppression des versions MSI existantes d’Office lors de la mise à niveau vers Office 365 ProPlus](https://docs.microsoft.com/fr-FR/deployoffice/upgrade-from-msi-version)
+[Suppression des versions MSI existantes d’Office lors de la mise à niveau vers Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Gérer Office 365 ProPlus avec le gestionnaire de configuration](https://docs.microsoft.com/fr-FR/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[Gérer Office 365 ProPlus avec le gestionnaire de configuration](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-[Affecter des applications Office 365 à des périphériques Windows 10 avec Microsoft Intune](https://docs.microsoft.com/fr-FR/intune/apps-add-office365)
+[Affecter des applications Office 365 à des périphériques Windows 10 avec Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 
 ## <a name="browser-based-apps"></a>Applications basées sur navigateur
 
@@ -93,7 +93,7 @@ Voici quelques points à prendre en compte pour vous assurer que vos application
 
 De plus, si vous savez que vos sites intranet ne vont pas fonctionner correctement avec Microsoft Edge, vous pouvez configurer tous les sites intranet de façon à ce qu’ils s’ouvrent automatiquement avec Internet Explorer 11. Ce processus utilise un fichier XML pour déterminer si Internet Explorer 11 est utilisé pour chaque site et une stratégie de groupe pour appliquer les paramètres.
 
-[Présentation du mode Entreprise](https://docs.microsoft.com/fr-FR/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
+[Présentation du mode Entreprise](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
 
 Nous avons abordés jusqu'à présent, les méthodes de déploiement connues. Mais il existe deux nouvelles approches de déploiement pour les applications que vous pouvez prendre en considération.
 

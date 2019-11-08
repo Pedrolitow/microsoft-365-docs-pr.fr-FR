@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment évaluer l’état de préparation des répertoires et du réseau dans votre environnement.
-ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: c009a60849390cc9b796a56f66e63d44e12cdc68
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982725"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031559"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Étape 2 : préparation des répertoires et du réseau
 
@@ -49,7 +49,7 @@ Dans cet article, nous allons explorer les outils et les options pour préparer 
 
 Si votre organisation utilise déjà Office 365, Exchange Online, Microsoft Intune ou les autres services Microsoft Online, la bonne nouvelle est que vous utilisez déjà Azure Active Directory. Si c’est le cas, vous devez vous assurer que les utilisateurs que vous ciblez pour le déploiement Bureau soient dans votre Azure Active Directory et disposent de licences.
 
-Si vous n’utilisez pas actuellement Azure Active Directory, il existe des[nombreux ressources ](https://docs.microsoft.com/fr-FR/azure/active-directory/) pour vous aider à le configurer. Vous pouvez également bénéficier d’une assistance personnalisée via Microsoft FastTrack, dans le cadre de votre licence Office 365. Vous pouvez vérifier plus d’informations sur Microsoft Fastrack [ici](https://fasttrack.microsoft.com).
+Si vous n’utilisez pas actuellement Azure Active Directory, il existe des[nombreux ressources ](https://docs.microsoft.com/azure/active-directory/) pour vous aider à le configurer. Vous pouvez également bénéficier d’une assistance personnalisée via Microsoft FastTrack, dans le cadre de votre licence Office 365. Vous pouvez vérifier plus d’informations sur Microsoft Fastrack [ici](https://fasttrack.microsoft.com).
 
 Une fois Azure Active Directory configuré, vos utilisateurs peuvent se connecter aux applications Office 365 ProPlus et les activer. Vous pouvez aussi utiliser le déploiement Microsoft Intune ou Windows Autopilot pour déployer automatiquement des applications et des stratégies.
 
@@ -65,7 +65,7 @@ Pour les Images Windows sans personnalisation, vous devez planifier généraleme
 
 ### <a name="software-updates"></a>Mises à jour logicielles
 
-Vous devez planifier la bande passante de réseau pour les mises à jour de logiciel. Windows 10 et Office 365 ProPlus utilisent un nouveau modèle de service fournissant des mises à jour mensuelles et semestrielles. Si vous utilisez ce modèle, vous pouvez en apprendre davantage sur le fonctionnement [ici](https://docs.microsoft.com/fr-FR/windows/deployment/update/waas-overview).
+Vous devez planifier la bande passante de réseau pour les mises à jour de logiciel. Windows 10 et Office 365 ProPlus utilisent un nouveau modèle de service fournissant des mises à jour mensuelles et semestrielles. Si vous utilisez ce modèle, vous pouvez en apprendre davantage sur le fonctionnement [ici](https://docs.microsoft.com/windows/deployment/update/waas-overview).
 
 Le nouveau modèle de service propose des mises à jour de fonctionnalité semestrielles pour Windows, des mises à jour de canal semestrielles et des mises à jour de qualité mensuelles. Les mises à jour de fonctionnalité représentent généralement 2-4 Go et les mises à jour de canal Office semestrielles correspondent à 300-400 Mo par mise à jour. Quant aux mises à jour de qualité mensuelles, elles peuvent représenter entre quelques centaines de mégaoctets et un gigaoctet ou plus. Comme ces mises à jour mensuelles sont cumulatives, leur taille augmente pendant toute la durée de service de chaque version de Windows 10. Des outils peuvent vous aider à réduire le volume de données qui transitent sur le réseau pour implémenter les mises à jour. Nous aborderons ce sujet plus en détail plus loin dans cet article.
 
@@ -77,7 +77,7 @@ Le troisième composant à prendre en compte est la personnalisation utilisateur
 
 Pour limiter l’impact du trafic lié au déploiement sur le réseau, vous pouvez limiter la bande passante réseau à l’aide du paramètre BITS (Background Intelligent Transfer Service) disponible sur les clients. BITS utilise un débit binaire adaptatif (Adaptive Bit Rate, ABR) pour ajuster la bande passante nécessaire au déploiement. Il peut être configuré sur les clients à l’aide d’une stratégie de groupe.
 
-[À propos de BITS](https://docs.microsoft.com/fr-FR/windows/desktop/bits/about-bits)
+[À propos de BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
 Si vous utilisez le System Center Configuration Manager (Current Branch), vous pouvez également configurer les Points de distribution BITS ou activer la multidiffusion avec WDS.
 
@@ -119,7 +119,7 @@ Outre l’optimisation de la remise en exploitant, Voici trois éléments qui vo
 
 **Compression Delta binaire** Office 365 ProPlus utilise la Compression Delta binaire pour réduire la bande passante consommée par les mises à jour logicielles de la version la plus récente d’Office 365 ProPlus vers la version suivante. En chargeant uniquement les modifications au niveau binaire à partir de la version précédente, vous réduisez l’impact des mises à jour cumulatives qui s’enrichissent de mois en mois. Ainsi, vous économisez plusieurs centaines de mégaoctets de données par PC tous les mois. Cependant, pour utiliser cette fonctionnalité, vous ne pouvez pas sauter une version sinon la mise à jour cumulative complète doit être téléchargée.
 
-[Téléchargement des mises à jour pour Office 365](https://docs.microsoft.com/fr-FR/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[Téléchargement des mises à jour pour Office 365](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
 **Fichiers de données Outlook** Outlook est souvent configuré pour la boîte aux lettres entière des utilisateurs en locale pour une utilisation en mode hors connexion. Dans tout déploiement de Windows, à l’exception d’une mise à niveau inaltérable, il nécessite des fichiers de données Outlook que les utilisateurs reconstruisent eux-mêmes après la mise à niveau. Il s’agit d’un processus automatisé, mais avec des limites de boîtes aux lettres Outlook généralement attribuées à 100 Go, la nouvelle mise en cache de boîte aux lettres entièrement en local pour tous les utilisateurs signifie un grand nombre de transfert de données. À réduire la charge de réseau, vous souhaiterez peut-être prendre en considération l’utilisation d’une stratégie de groupe pour réduire le paramètre « Courrier à conserver hors connexion ». Dans Office 365 ProPlus ou Office 2016, la valeur par défaut pour Outlook est définie sur 12 mois. Afin de réduire l’impact sur réseau, envisagez de définir la durée du cache en mode hors connexion entre 1 à 6 mois. La modification de ce paramètre n’affecte pas la taille de la boîte aux lettres en ligne et la boîte aux lettres entière peut toujours être recherchée via Outlook lorsqu’il en ligne.
 
@@ -131,7 +131,7 @@ Outre l’optimisation de la remise en exploitant, Voici trois éléments qui vo
 
 [Configuration de la fonctionnalité « Known Folder Move »](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 
-[Fichiers à la demande OneDrive](https://www.microsoft.com/fr-FR/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
+[Fichiers à la demande OneDrive](https://www.microsoft.com/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
 Si vous n’avez pas déjà déployé OneDrive, la mission de Windows 7 vers Windows 10 est une opportunité idéale pour activer OneDrive et que celui-ci intègre parfaitement Office 365 ProPlus. Envisagez de commencer ce déploiement tandis que vous travaillez via votre disponibilité d’application et d’appareil. Cela donne ne longueur d’avance à la synchronisation de fichiers avant de commencer le déplacement des images de Windows et du déploiement d’applications sur votre réseau.
 

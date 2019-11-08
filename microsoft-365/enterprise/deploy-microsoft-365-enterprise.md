@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 Entreprise dans votre organisation.
-ms.openlocfilehash: 0dcbe9e39f33cab65dff6033f0b78ceb7e1c42cc
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 35f5c789d4e8db13cb46a568fc58f49bce4d3c96
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437864"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031959"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Déployer Microsoft 365 Entreprise
 
@@ -115,7 +115,7 @@ La mise en place d’une culture numérique est une priorité majeure pour tout 
 
 En même temps, les fonctionnalités de sécurité intelligente et l’intégration des produits simplifient la gestion des besoins et réduisent le coût total de possession tout au long du cycle de vie des ressources informatiques. 
 
-Découvrez comment les départements d’ingénierie et d’exploitation de Core Services (anciennement Microsoft IT) ont [planifié et déployé la base](https://www.microsoft.com/fr-FR/itshowcase/deploying-and-managing-microsoft-365) nécessaire pour prendre en charge les applications et services qui stimulent la créativité et le travail en équipe dans un environnement sécurisé.
+Découvrez comment les départements d’ingénierie et d’exploitation de Core Services (anciennement Microsoft IT) ont [planifié et déployé la base](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365) nécessaire pour prendre en charge les applications et services qui stimulent la créativité et le travail en équipe dans un environnement sécurisé.
 
 > [!Note]
 > Cette page web n’est disponible qu’en anglais.

@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment déployer Microsoft Teams au sein de votre organisation.
-ms.openlocfilehash: e6a4ccc1b7ec5989707e2195b66fa1cf987cd091
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889917"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033599"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Déploiement de Microsoft Teams pour Microsoft 365 Entreprise
 
@@ -63,8 +63,8 @@ Voir [Prise en main de votre mise à niveau de Microsoft Teams](https://docs.mi
 
 Pour bénéficier d’un aperçu des coulisses de Microsoft et découvrir comment nous avons déployé et utilisé Teams pour booster la collaboration, consultez les ressources suivantes :
 
-- [La stratégie d’adoption de Microsoft Teams prépare les employés à une nouvelle culture de travail](https://www.microsoft.com/fr-FR/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
-- [Avec les salles Microsoft Teams, découvrez une expérience de réunion moderne et adaptable à l’échelle mondiale](https://www.microsoft.com/fr-FR/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
+- [La stratégie d’adoption de Microsoft Teams prépare les employés à une nouvelle culture de travail](https://www.microsoft.com/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
+- [Avec les salles Microsoft Teams, découvrez une expérience de réunion moderne et adaptable à l’échelle mondiale](https://www.microsoft.com/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

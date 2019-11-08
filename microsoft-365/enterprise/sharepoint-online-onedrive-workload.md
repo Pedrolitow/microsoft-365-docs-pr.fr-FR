@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de planification, de déploiement et de création de valeur de SharePoint au sein de votre organisation.
-ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
-ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
+ms.openlocfilehash: 74ab3b65597cdf1752dd5dbf9179724464c998a3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37469146"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031639"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Déployer SharePoint et OneDrive pour Microsoft 365 Entreprise
 
@@ -165,7 +165,7 @@ Votre organisation a adopté SharePoint dans Microsoft 365 Entreprise pour pren
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Pour observer de plus près Microsoft et découvrir comment nous avons déployé SharePoint, reportez-vous à l’article [SharePoint dans le cloud : découvrez comment Microsoft a exécuté sa propre migration](https://www.microsoft.com/fr-FR/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
+Pour observer de plus près Microsoft et découvrir comment nous avons déployé SharePoint, reportez-vous à l’article [SharePoint dans le cloud : découvrez comment Microsoft a exécuté sa propre migration](https://www.microsoft.com/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

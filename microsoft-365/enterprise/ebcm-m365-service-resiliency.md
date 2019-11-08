@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Description de la résilience
-ms.openlocfilehash: 4c718674a70186b004d8fefc5381074dba81c164
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122284"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031049"
 ---
 # <a name="built-in-resiliency"></a>Résilience intégrée
 
@@ -26,7 +26,7 @@ En tant que fournisseur de collaboration dans le Cloud, Microsoft reconnaît la 
 
 **« Temps d’indisponibilité SharePoint Online** : toute période au cours de laquelle les utilisateurs sont dans l’impossibilité de lire ou d’écrire toute partie d’une collection de sites SharePoint Online pour laquelle ils disposent des autorisations appropriées. »
 
-Vous pouvez trouver les définitions de temps d’indisponibilité pour chaque service dans les [Contrats de niveau de service](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+Vous pouvez trouver les définitions de temps d’indisponibilité pour chaque service dans les [Contrats de niveau de service](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 Pour réduire les temps d'indisponibilité, qu’ils soient planifiés ou imprévus, les services Microsoft 365 sont conçus et exploités de manière à être hautement disponibles et résistants aux défaillances en se concentrant sur quatre domaines :
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes du déploiement de l’infrastructure de protection des informations pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 54866ceb1fa72f404a5d255cb130c70fe180c493
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c90fc039124f479629acd5cca414c937a1f5a10d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370451"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030849"
 ---
 # <a name="phase-6-information-protection"></a>Phase 6 : Protection des informations
 
@@ -51,7 +51,7 @@ Lorsque vous avez terminé ces étapes, accédez aux [critères de sortie](infop
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Découvrez comment les experts informatiques Microsoft utilisent [Azure Information Protection et protègent les données](https://www.microsoft.com/fr-FR/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
+Découvrez comment les experts informatiques Microsoft utilisent [Azure Information Protection et protègent les données](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 

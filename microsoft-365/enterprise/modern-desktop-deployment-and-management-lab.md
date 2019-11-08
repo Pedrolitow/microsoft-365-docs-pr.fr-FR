@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981695"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031109"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
@@ -26,7 +26,7 @@ Ces laboratoires pratiques téléchargeables décrivent le déploiement de Windo
 
 Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Office 365 ProPlus. Les ateliers abordent les étapes et les outils décrits dans la roue Déploiement du bureau, couvrant System Center Configuration Manager, Analyses du bureau, Outil de personnalisation Office, OneDrive, Windows Autopilot et autres.
 
-Dans le cadre du processus du[déploiement des ordinateurs de bureau modernes](http://www.aka.ms/howtoshift) pour Windows 10 et Office 365 ProPlus, la création d’un environnement isolé ou bac à sable est le point de départ recommandé lorsque vous commencez à explorer les mises à jour de l’outil de déploiement et à tester l’automatisation liée au déploiement.
+Dans le cadre du processus du[déploiement des ordinateurs de bureau modernes](https://www.aka.ms/howtoshift) pour Windows 10 et Office 365 ProPlus, la création d’un environnement isolé ou bac à sable est le point de départ recommandé lorsque vous commencez à explorer les mises à jour de l’outil de déploiement et à tester l’automatisation liée au déploiement.
 
 Le kit de laboratoire est téléchargeable gratuitement et utilise un logiciel d’évaluation.
 
@@ -122,11 +122,11 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 ## <a name="additional-guidance"></a>**Conseils supplémentaires**
 
-  - [Centre de déploiement du bureau moderne](http://www.aka.ms/howtoshift)
+  - [Centre de déploiement du bureau moderne](https://www.aka.ms/howtoshift)
 
-  - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](http://www.aka.ms/watchhowtoshift)
+  - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](https://www.aka.ms/watchhowtoshift)
 
-  - [Déploiement du système d’exploitation de System Center Configuration Manager](https://docs.microsoft.com/fr-FR/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Déploiement du système d’exploitation de System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan de déploiement de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

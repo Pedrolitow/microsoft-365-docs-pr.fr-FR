@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Éléments à prendre en compte lors du développement de votre plan de continuité d’activité de l’entreprise dans le Cloud.
-ms.openlocfilehash: 4a133c65f6a5a2de44e871995886a01c2ce8e9a9
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122334"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031069"
 ---
 # <a name="developing-your-continuity-plan"></a>Développement de votre plan de continuité
 
@@ -61,7 +61,7 @@ Il s’agit d’un document BIA pour `name of the service, system, process, or f
 
 Ensuite, vous examinez les processus d’entreprise pour voir s’il existe des relations de dépendance en cascade. En fonction des résultats, vous définissez les priorités et élaborez les stratégies de résilience, ainsi que les procédures d’exploitation standard prenant en charge vos stratégies.
 
-Vous pouvez utiliser [Microsoft Service Map](https://docs.microsoft.com/fr-FR/azure/azure-monitor/insights/service-map) pour vous aider à effectuer ce mappage. Microsoft Service Map découvre automatiquement les composants d’application sur les systèmes Windows et Linux et mappe toutes les dépendances TCP, identifie les connexions et les systèmes tiers distants dont dépend l’application. Il mappe également les dépendances aux zones de votre réseau qui sont traditionnellement sombres comme Active Directory.
+Vous pouvez utiliser [Microsoft Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) pour vous aider à effectuer ce mappage. Microsoft Service Map découvre automatiquement les composants d’application sur les systèmes Windows et Linux et mappe toutes les dépendances TCP, identifie les connexions et les systèmes tiers distants dont dépend l’application. Il mappe également les dépendances aux zones de votre réseau qui sont traditionnellement sombres comme Active Directory.
 
 Voici un exemple d’analyse de dépendances (DA) à partir duquel vous pouvez commencer. Dans votre analyse de dépendances (DA), vous identifierez et examinerez les dépendances de processus. Veillez à inclure les personnes, les fournisseurs, les clients, les partenariats et les installations. Les données de cette analyse seront utilisées pour identifier les écarts entre les exigences de récupération d’un processus et les fonctionnalités de récupération des dépendances.
 

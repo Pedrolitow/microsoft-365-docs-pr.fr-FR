@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.'
-ms.openlocfilehash: 6cf9fb03c66f1cf4d1f20287f5dc121474898d5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ca72ee800287bf8a90fe45f4aaa1de3400cb71e1
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079802"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038883"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale
 
@@ -134,7 +134,7 @@ Pour commencer, [connectez -vous au module PowerShell Azure Active Directory pou
   
 Ensuite, renseignez le nom de votre organisation, votre emplacement et un mot de passe commun, puis exécutez les commandes suivantes à partir de l’invite de commandes PowerShell ou de l’environnement de script intégré (ISE) :
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -169,31 +169,31 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 Utilisez ces étapes pour vérifier que l’appartenance au groupe dynamique et l’octroi de licence selon le groupe fonctionnent correctement.
   
 1. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Administration**.
-    
+
 2. Dans le nouvel onglet **Centre d’administration Microsoft 365** de votre navigateur, cliquez sur **Utilisateurs**.
-    
+
 3. Dans la liste des utilisateurs, cliquez sur **Candidat**.
-    
+
 4. Dans le volet qui répertorie les propriétés du compte d’utilisateur **Candidat**, vérifiez que les situations suivantes sont satisfaites :
-    
+
   - Il est membre du groupe **Senior and strategic staff** (dans **Appartenances aux groupes**).
-    
+
   - Les licences **Enterprise Mobility + Security E5** et **Office 365 Entreprise E5** lui ont été affectées (dans **Licences des produits**).
-    
+
 5. Fermez le volet du compte d’utilisateur **Candidat**.
-    
+
 ## <a name="record-values-for-future-reference"></a>Enregistrez les valeurs, vous en aurez besoin plus tard.
 
 Enregistrez ces valeurs pour utiliser les abonnements aux versions d’évaluation d’Office 365 et d’EMS pour cet environnement de développement/test :
   
 - Nom de l’organisation bénéficiant de l’abonnement à la version d’évaluation : ![](../media/Common-Images/TableLine.png) 
-    
+
     Par exemple, pour le nom de domaine de l’abonnement à la version d’évaluation de contoso.onmicrosoft.com, le nom de l’organisation est « contoso ».
-    
+
 - Nom de l’administrateur général Office 365 : ![](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     Enregistrez le mot de passe pour ce compte et le mot de passe initial commun pour les autres comptes d’utilisateurs dans un emplacement sécurisé.
-    
+
 ## <a name="next-step"></a>Étape suivante
 
 Créez les quatre différents types de sites d’équipe SharePoint Online dans cet environnement de développement/test en vous reportant à [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](create-team-sites-in-a-political-campaign-dev-test-environment.md).
@@ -207,7 +207,3 @@ Créez les quatre différents types de sites d’équipe SharePoint Online dans
 [Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

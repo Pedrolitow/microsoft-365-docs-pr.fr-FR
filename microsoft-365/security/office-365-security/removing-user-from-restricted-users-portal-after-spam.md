@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: d0409a16a8584e7561f04a30fcc4184bfa41d87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4abb37bbda20d17b19144d6f62b4ef1a4fc8fb4c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079941"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032159"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
 
@@ -34,7 +34,7 @@ Si un utilisateur envoie continuellement des courriers électroniques qui sont c
 
 Durée d’exécution estimée : 5 minutes
   
-Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Anti-spam » dans la rubrique [Autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
+Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Anti-spam » dans la rubrique [Autorisations des fonctionnalités dans Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
 
 La procédure suivante peut également être exécutée via le service PowerShell à distance. Utilisez l’applet de commande Get-BlockedSenderAddress pour obtenir la liste des utilisateurs avec accès restreint et Remove-BlockedSenderAddress pour supprimer la restriction. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
@@ -81,10 +81,10 @@ Les commandes PowerShell pour les utilisateurs avec accès restreint sont les su
 
 [Réponse à un compte de messagerie compromis](../../compliance/responding-to-a-compromised-email-account.md)
 
-[Présentation de l’alerte l’utilisateur n’est pas autorisé à envoyer des messages](https://docs.microsoft.com/fr-FR/office365/securitycompliance/alert-policies)
+[Présentation de l’alerte l’utilisateur n’est pas autorisé à envoyer des messages](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 
 [Pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
 
-[Stratégies d’alerte dans le Centre de sécurité et de conformité](https://docs.microsoft.com/fr-FR/office365/securitycompliance/alert-policies)
+[Stratégies d’alerte dans le Centre de sécurité et de conformité](https://docs.microsoft.com/office365/securitycompliance/alert-policies)

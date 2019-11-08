@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: 07cb90684bbbba4851697020ceac4756381f8b55
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 0a65c5c02d9361efd65a7b3c58eb8a0e516033c3
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772238"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038983"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utiliser DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
 
@@ -81,13 +81,13 @@ Détail important : DKIM utilise une clé privée pour insérer une signature c
 Étant donné que le nombre de bits 1024 et 2048 sont pris en charge pour les clés DKIM, ces instructions vous indiquent comment mettre à niveau votre clé 1024 bits vers 2048. Les étapes ci-dessous concernent deux cas d’utilisation ; veuillez choisir celui qui correspond le mieux à votre configuration.
 
 1. Lorsque vous **avez déjà configuré DKIM**, vous pouvez faire pivoter le nombre de bits comme suit :
-    1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/fr-FR/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (L’applet de commande provient d’Exchange Online.)
+    1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (L’applet de commande provient d’Exchange Online.)
     1. Exécutez ensuite la cmdlet suivante :
 
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}`
 
 1. Ou pour une **nouvelle implémentation de DKIM** :
-    1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/fr-FR/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Il s’agit d’une cmdlet Exchange Online).
+    1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Il s’agit d’une cmdlet Exchange Online).
     1. Saisissez la cmdlet suivante :
 
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True`
@@ -115,7 +115,7 @@ Pour configurer DKIM, suivez les étapes ci-dessous :
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>Publication de deux enregistrements CNAME pour votre domaine dans le système DNS
 <a name="Publish2CNAME"> </a>
 
-Pour chaque domaine auquel vous souhaitez ajouter une signature DKIM dans le système DNS, vous devez publier deux enregistrements CNAME. 
+Pour chaque domaine auquel vous souhaitez ajouter une signature DKIM dans le système DNS, vous devez publier deux enregistrements CNAME.
 
 Exécutez les commandes suivantes :
 
@@ -129,6 +129,7 @@ Créer des CNAMes référencés dans une sortie de commande Get-DkimSigningConfi
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
+
 Les enregistrements CNAME dans votre DNS pointent vers des enregistrements TXT DKIM qui existent déjà dans le DNS sur les serveurs DNS Microsoft pour Office 365.
   
 Office 365 effectue une rotation automatique des clés à l’aide des deux enregistrements que vous établissez. Si vous avez configuré des domaines personnalisés en plus du domaine initial dans Office 365, vous devez publier deux enregistrements CNAME pour chaque domaine supplémentaire. Par conséquent, si vous avez deux domaines, vous devez publier deux enregistrements CNAME supplémentaires, et ainsi de suite.
@@ -210,8 +211,8 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, 
    Où _domain_ est le nom du domaine personnalisé pour lequel vous souhaitez activer la signature DKIM. 
 
    Par exemple, pour le domaine contoso.com :
-   
-   ```powershell
+
+    ```powershell
     Set-DkimSigningConfig -Identity contoso.com -Enabled $true
     ```
 
@@ -226,15 +227,15 @@ Patientez quelques minutes avant de suivre ces étapes permettant de confirmer q
 - Ouvrez le message et examinez l’en-tête. Les instructions pour afficher l’en-tête du message varient en fonction de votre client de messagerie. Pour obtenir des instructions sur l’affichage des en-têtes de messages dans Outlook, consultez l’article [](https://support.office.com/article/CD039382-DC6E-4264-AC74-C048563D212C)Afficher des en-têtes de messages électroniqueshttps://support.office.com/article/CD039382-DC6E-4264-AC74-C048563D212C.
 
   Le message signé par DKIM contient le domaine et le nom d’hôte que vous avez définis lorsque vous avez publié les entrées CNAME. Le message se présente un peu comme cet exemple :
-    
-    ```text
+
+  ```text
     From: Example User <example@contoso.com>
     DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
         s=selector1; d=contoso.com; t=1429912795;
         h=From:To:Message-ID:Subject:MIME-Version:Content-Type;
         bh=<body hash>;
         b=<signed field>;
-    ```
+  ```
 
 - Recherchez l’en-tête des résultats de l’authentification. Bien que chaque service de réception utilise un format légèrement différent pour apposer un cachet sur le courrier entrant, le résultat doit inclure un élément qui ressemble à **DKIM=test** ou **DKIM=OK**.
 

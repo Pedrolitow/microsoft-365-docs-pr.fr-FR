@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment préparer vos utilisateurs finaux à l’utilisation de Windows 10 et d’Office 365 ProPlus au travers d’une formation et de communications.
-ms.openlocfilehash: 6592734c89ea280a658007f53020641a0bc956b8
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814555"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033659"
 ---
 # <a name="step-8-user-communications-and-training"></a>Étape 8 : formation et communications des utilisateurs
 
@@ -55,11 +55,11 @@ Concernant Windows 10, nous vous aidons à familiariser vos utilisateurs avec l
 
 Il existe également des contrôles de sécurité et de conformité visibles auxquels vos utilisateurs peuvent être soumis, comme Enterprise Mobility + Security qui comprend Azure AD et Microsoft Intune, et intègre des fonctionnalités supplémentaires avec Windows 10 et Office 365 que vous pouvez cibler pour la mise à niveau de votre bureau.
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/fr-FR/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
 Par exemple, l’authentification multifacteur utilise Azure AD et protège la connexion des utilisateurs aux ressources à l’aide d’une application mobile ou d’un code confidentiel pour accéder aux services en toute sécurité. Azure Information Protection, quant à elle, permet aux utilisateurs de classer et d’étiqueter facilement les documents.
 
-[Configurer l’authentification multifacteur pour les utilisateurs d’Office 365](https://support.office.com/fr-FR/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Configurer l’authentification multifacteur pour les utilisateurs d’Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 Ce sont quelques exemples des nouvelles fonctionnalités que pourront utiliser vos utilisateurs. Certaines d’entre elles pourront même les surprendre, de manière positive ou non. Il est possible que ces surprises entraînent un plus grand nombre d’appels et de tickets reçus par votre support technique, en particulier si elles modifient le flux de travail normal des utilisateurs.
 
@@ -101,7 +101,7 @@ Parallèlement à la planification des appareils, des utilisateurs, des départe
 
 Pour vous aider à rassembler de la matière pour préparer vos formations, vous pouvez accéder à un ensemble complet de courtes formations vidéo dans la Bibliothèque de productivité Microsoft FastTrack.
 
-[Bibliothèque de productivité Microsoft FastTrack](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=2)
+[Bibliothèque de productivité Microsoft FastTrack](https://www.microsoft.com/microsoft-365/success/?rtc=2)
 
 Des centaines de sujets sont abordés, comme la création d’un contenu convaincant, le partage de sites et de contenu, la transformation du travail d’équipe et les gains de productivité grâce à l’utilisation d’appareils modernes.
 
