@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 pour les campagnes affecte vos utilisateurs.
-ms.openlocfilehash: 3715e0a458f2af5f2fecb8e2e6939254b3141411
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772421"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031239"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Impact de Microsoft 365 pour les campagnes sur vos utilisateurs
 
@@ -35,7 +35,7 @@ Microsoft 365 pour les campagnes simplifie l’accès des pirates à votre envir
 ![Illustration de la somme des points clés de la suite ci-dessous pour les iPhone, les appareils Android, les Mac, Windows 10, le partage et le personnel de la clé](media/M365-democracy-Users_700px.png)
 
 ## <a name="use-secure-email-practices"></a>Utiliser des pratiques de messagerie sécurisées
-Tous les utilisateurs doivent connaître et utiliser ces pratiques de messagerie pour sécuriser leur messagerie:
+Tous les utilisateurs doivent connaître et utiliser ces pratiques de messagerie pour sécuriser leur messagerie :
 - Configurez le courrier électronique pour utiliser l’authentification multifacteur avec l’application de l’authentificateur.
 - Vérifier les messages légitimes et Rechercher des conseils de sécurité à partir de la protection avancée contre le hameçonnage.
 - Ouvrez uniquement les liens et les pièces jointes fiables, comme vérifié par les liens fiables ATP et les pièces jointes fiables ATP.
@@ -45,7 +45,7 @@ En savoir plus sur le [hameçonnage et les autres attaques](m365-campaigns-phish
 Téléchargez un [infographie](m365-campaigns-protect-campaign-infographic.md) avec des conseils pour vous et les membres de votre équipe de campagne.
 
 ## <a name="set-up-iphones-and-android-devices"></a>Configurer des appareils iPhone et Android
-Tous les utilisateurs que vous ajoutez à votre environnement doivent prendre quelques minutes pour [configurer les iPhone et les appareils Android](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) pour qu’ils fonctionnent en toute sécurité:
+Tous les utilisateurs que vous ajoutez à votre environnement doivent prendre quelques minutes pour [configurer les iPhone et les appareils Android](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) pour qu’ils fonctionnent en toute sécurité :
 - Configurez des appareils pour utiliser l’authentification multifacteur avec l’application d’authentificateur.
 - Utilisez les applications mobiles Microsoft, y compris Outlook Mobile, Word, OneDrive et d’autres applications Microsoft à partir de l’App Store. Les applications de messagerie natives qui sont incluses sur les iPhone et les appareils Android ne sont pas prises en charge. 
 - Exiger un code confidentiel pour que les utilisateurs puissent déverrouiller leur appareil.
@@ -53,7 +53,7 @@ Tous les utilisateurs que vous ajoutez à votre environnement doivent prendre qu
 Après avoir configuré ces éléments, vos utilisateurs seront invités à utiliser l’application de l’authentificateur lors de l’accès aux données de votre organisation sur ces appareils, y compris le courrier. 
 
 ## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Conserver les ordinateurs Mac BYOD et Windows 10 à jour 
-Il est également important que les utilisateurs maintiennent leur périphérique de travail principal à jour:
+Il est également important que les utilisateurs maintiennent leur périphérique de travail principal à jour :
 - Installez les dernières versions des applications de bureau Office et conservez-les à jour avec les mises à jour, lorsque vous y êtes invité. 
 - Restez au fait des mises à jour du système d’exploitation, telles que les mises à jour Windows.
 
@@ -66,7 +66,7 @@ Pour les [appareils Windows 10 et Mac non gérés](m365-campaigns-protect-pcs-ma
 ||**Windows 10**|**Mac**|
 |Fonctionnalités de sécurité|Activer la protection des périphériques BitLocker<p><p> Vérifier que Windows Defender reste activé <p>Activer le pare-feu Windows| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection de pare-feu|
 
-Pour en savoir plus sur ces recommandations, consultez [la rubrique protéger votre compte et vos appareils des pirates et programmes malveillants](https://support.office.com/en-us/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
+Pour en savoir plus sur ces recommandations, consultez [la rubrique protéger votre compte et vos appareils des pirates et programmes malveillants](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Collaborer à l’aide de Microsoft Teams, OneDrive, SharePoint Online et d’autres outils Office 365
 Vos utilisateurs peuvent être tentés de partager et de stocker les fichiers de votre organisation dans des emplacements autres que Microsoft 365. Microsoft 365 facilite la collaboration et le partage sécurisés. Vous pouvez [partager des fichiers et des vidéos](share-files-and-videos.md) directement à partir de Microsoft Teams, de OneDrive, de flux et même à partir d’un fichier. Le partage à partir de ces outils contribue à empêcher les fuites de données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation. 

@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft365Business, Microsoft365, SMB, FAQ, forum aux questions, réponses, entreprise
 ms.date: 06/08/2018
-ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 2067badcb78b48bac59770993de25c0ebbeaa829
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646382"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031362"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Forum Aux Questions Microsoft 365 Business
 
@@ -92,7 +92,7 @@ Si vous avez des appareils qui sont sous licence Windows7, 8 et 8.1 Professionne
 ### <a name="how-does-microsoft-365-business-help-support-our-bring-your-own-device-byod-policy"></a>Comment Microsoft365Business contribue-t-il à notre stratégie BYOD (Apportez votre propre appareil) de mon entreprise? 
 De nombreux employés préfèrent utiliser leurs propres téléphones mobiles ou tablettes pour accéder à leurs informations personnelles et professionnelles plutôt que transporter plusieurs appareils pour chaque objectif. L’utilisation d'appareils personnels pour le travail, bien qu'étant une pratique courante, augmente le risque que les informations de l’entreprise ne tombent entre de mauvaises mains. De nombreuses solutions concurrentes de protection des données mobiles demandent aux utilisateurs de basculer vers un mode particulier sur leur appareil ou d'utiliser un autre mécanisme complexe qu'ils peuvent trouver contraignant et par conséquent, éviter de l’utiliser. 
  
-Microsoft 365 Business offre aux clients un moyen simple mais puissant d’autoriser les employés à utiliser leurs appareils personnels pour travailler, tout en permettant à l’entreprise d’empêcher ces appareils d’accéder à des informations professionnelles, de les conserver et de les partager. . Plus particulièrement: 
+Microsoft 365 Business offre aux clients un moyen simple mais puissant d’autoriser les employés à utiliser leurs appareils personnels pour travailler, tout en leur permettant d’empêcher ces derniers d’accéder à des informations professionnelles, de les conserver et de les partager. Plus particulièrement: 
 * La **Protection des applications pour les applications Office mobiles** contribue à la protection des données Office, notamment la messagerie, le calendrier, les contacts et les documents sur les appareils mobiles iOS et Android, en appliquant certaines stratégies, notamment en supprimant automatiquement les données d’entreprise après une durée prévue sans connexion au service, en exigeant que les informations soient stockées uniquement sur OneDrive Entreprise, en exigeant une vérification par code confidentiel ou empreintes digitales pour accéder aux applications Office et en empêchant que les données d’entreprise soient copiées d’une application Office vers des applications personnelles. La gestion des applications mobiles pour d’autres applications mobiles via Intune est également disponible pour les abonnés Microsoft 365. 
   
 * La **Gestion des appareils pour les PC Windows10** permet aux entreprises de définir et d’appliquer des fonctionnalités telles que la protection Windows Defender contre les programmes malveillants, les mises à jour automatiques et la désactivation des écrans après un laps de temps prévu. En outre, les appareils Windows10perdus ou volés peuvent être complètement nettoyés des applications et des données métier par l'intermédiaire du centre d’administration. 
@@ -161,7 +161,7 @@ Non, les clients qui ont besoin de la Protection avancée contre les menaces Win
 Les fournisseurs de services informatiques qui ne sont pas déjà des partenaires Microsoft trouveront davantage d’informations sur le programme Fournisseur de solutions Microsoft Cloud à l’adresse [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business).
 
 ### <a name="where-can-i-learn-how-to-sell-microsoft-365-business"></a>Où puis-je découvrir comment vendre Microsoft 365Business? 
-Les partenaires qui vendent déjà Office365 peuvent utiliser les mêmes méthodes de vente-conseil pour vendre Microsoft365Business. En outre, nous publions des documents et des ressources de formation supplémentaires pour que votre équipe de vente comprenne l’environnement de bureau, la dépendance à ActiveDirectory, les besoins de sécurité et de mobilité des clients afin de communiquer efficacement toute la valeur de Microsoft 365Business d’une manière pertinente pour chaque client. Vous trouverez ces ressources sur le portail Partenaire Office à l’adresse [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business). 
+Les partenaires qui vendent déjà Office365 peuvent utiliser les mêmes méthodes de vente-conseil pour vendre Microsoft365Business. En outre, nous publions des documents et des ressources de formation supplémentaires pour que votre équipe de vente comprenne l’environnement de bureau, la dépendance à ActiveDirectory, les besoins de sécurité et de mobilité des clients afin de communiquer efficacement toute la valeur de Microsoft 365Business d’une manière pertinente pour chaque client. Vous trouverez ces ressources sur le portail Partenaire Office à l’adresse [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business). 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Comment Microsoft365Business aide les partenaires à augmenter leur rentabilité? 
 Microsoft 365Business permet aux partenaires de réduire les coûts grâce à une plus grande efficacité opérationnelle et d’améliorer leurs revenus par la vente de services supplémentaires. L’étude de Forrester Research de juin2017, Impact économique total (TEI) de Microsoft 365Business (https://www.microsoft.com/microsoft-365/partners/PartnerTEI), montre que Microsoft365Business a impact positif sur la rentabilité des partenaires. 

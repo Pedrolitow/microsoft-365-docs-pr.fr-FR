@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Les options de liste d’expéditeurs de blocs incluent les expéditeurs bloqués Outlook, les listes rouges d’expéditeurs de domaine, les listes d’adresses IP bloquées et les règles de transport Exchange (ETR), également appelées règles de flux de messagerie.
-ms.openlocfilehash: 861fa0e47980a6bc295672cf1e8e35954c6f1dfb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7f52472f54fb1de93f02b271ec6338da3fb1af93
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080193"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032399"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs bloqués dans Office 365
 
 Parfois, il est nécessaire de bloquer le courrier indésirable des expéditeurs. Vous pouvez choisir parmi plusieurs méthodes. Ces options incluent les expéditeurs bloqués Outlook, les listes de blocage du courrier indésirable, les listes d’adresses IP bloquées et les règles de transport Exchange (ETR, qui sont également appelées règles de flux de messagerie).
 
 > [!NOTE]
-> Alors que les listes d’adresses bloquées peuvent être utilisées pour résoudre les faux négatifs (courrier indésirable manqué), ces candidats doivent également être soumis à Microsoft pour analyse. La gestion des faux négatifs à l’aide de listes rouges augmente considérablement votre charge administrative. Si vous utilisez une liste rouge à cet effet, vous devez également conserver l’article pour l’envoi de courrier indésirable, de courrier [non indésirable et de tentatives de hameçonnage à Microsoft pour analyse](https://docs.microsoft.com/en-us/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), à l’aide du prêt.
+> Alors que les listes d’adresses bloquées peuvent être utilisées pour résoudre les faux négatifs (courrier indésirable manqué), ces candidats doivent également être soumis à Microsoft pour analyse. La gestion des faux négatifs à l’aide de listes rouges augmente considérablement votre charge administrative. Si vous utilisez une liste rouge à cet effet, vous devez également conserver l’article pour l’envoi de courrier indésirable, de courrier [non indésirable et de tentatives de hameçonnage à Microsoft pour analyse](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), à l’aide du prêt.
 
 La bonne méthode de configuration des listes d’expéditeurs bloqués varie en fonction de l’étendue de l’impact. Pour un impact sur un seul utilisateur, la solution appropriée pourrait être d’utiliser des expéditeurs bloqués Outlook, mais si plusieurs utilisateurs ou tous les utilisateurs sont affectés, l’une des autres options serait plus appropriée.
 
@@ -43,23 +43,23 @@ Lorsque seul un petit nombre d’utilisateurs sont affectés, c’est le cas lor
 > [!IMPORTANT]
 > Si les messages indésirables sont des bulletins d’informations provenant d’une source digne de réputation et reconnaissables, l’annulation de l’abonnement au courrier électronique est une autre option permettant d’empêcher l’utilisateur d’envoyer des messages à l’avenir.
 
-Les étapes à suivre pour la configuration diffèrent entre [Outlook Web App](https://support.office.com/en-us/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46) et le [client Outlook](https://support.office.com/en-us/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Lorsque les messages sont bloqués en raison des expéditeurs bloqués, vous verrez SFV : BLK dans le X-Forefront-antispam-Report,** ce qui indique que le message est bloqué.
+Les étapes à suivre pour la configuration diffèrent entre [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46) et le [client Outlook](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Lorsque les messages sont bloqués en raison des expéditeurs bloqués, vous verrez SFV : BLK dans le X-Forefront-antispam-Report,** ce qui indique que le message est bloqué.
 
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Utiliser les listes rouge de l’expéditeur/du domaine du courrier indésirable
 
-Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large et vous devez utiliser une stratégie de blocage du courrier indésirable des expéditeurs et des domaines dans l’ensemble de l’entreprise. Les étapes détaillées sont disponibles dans la documentation [configurer vos stratégies de filtrage du courrier indésirable](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies) . Tous les messages bloqués via cette méthode suivent l’action de courrier indésirable, comme configuré dans la stratégie.
+Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large et vous devez utiliser une stratégie de blocage du courrier indésirable des expéditeurs et des domaines dans l’ensemble de l’entreprise. Les étapes détaillées sont disponibles dans la documentation [configurer vos stratégies de filtrage du courrier indésirable](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) . Tous les messages bloqués via cette méthode suivent l’action de courrier indésirable, comme configuré dans la stratégie.
 
 La limite maximale de ces listes est d’environ 1000 entrées.
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Utiliser les règles de transport Exchange (ETR) pour bloquer des expéditeurs spécifiques
 
-S’il est nécessaire de bloquer les messages envoyés à des utilisateurs spécifiques ou à l’ensemble de l’organisation, ETR (également appelés règles de flux de messagerie) peuvent être utilisés. Les ETR sont plus flexibles, car ils peuvent déclencher l’adresse de messagerie ou le domaine de l’expéditeur, ainsi que des mots clés et d’autres propriétés dans le message. Cette souplesse vous permettra de créer des blocs partiels. [Veuillez cliquer pour connaître les étapes de création d’une ETR, également appelées règles de flux de messagerie](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages).
+S’il est nécessaire de bloquer les messages envoyés à des utilisateurs spécifiques ou à l’ensemble de l’organisation, ETR (également appelés règles de flux de messagerie) peuvent être utilisés. Les ETR sont plus flexibles, car ils peuvent déclencher l’adresse de messagerie ou le domaine de l’expéditeur, ainsi que des mots clés et d’autres propriétés dans le message. Cette souplesse vous permettra de créer des blocs partiels. [Veuillez cliquer pour connaître les étapes de création d’une ETR, également appelées règles de flux de messagerie](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages).
 
 > [!IMPORTANT]
 > Il est facile de créer des règles qui sont *excessivement* agressives, par conséquent, il est important que les critères utilisés soient aussi spécifiques que possible. Assurez-vous également que vous activez l’audit sur la règle que vous créez et effectuez des tests pour vous assurer que tout fonctionne comme prévu.
 
 ## <a name="use-anti-spam-policy-ip-block-lists"></a>Utiliser les listes d’adresses IP bloquées de la stratégie anti-courrier indésirable
 
-Lorsqu’il n’est pas possible d’utiliser l’une des autres options pour bloquer un *expéditeur, la* liste d’adresses IP bloquées de la stratégie anti-courrier indésirable peut être utilisée. Vous trouverez [des étapes détaillées dans l’article configure the connection filter Policy](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-the-connection-filter-policy). Il est important de conserver la liste des adresses IP bloquées à un *minimum* et de *ne pas* utiliser les plages d’adresses IP ici.
+Lorsqu’il n’est pas possible d’utiliser l’une des autres options pour bloquer un *expéditeur, la* liste d’adresses IP bloquées de la stratégie anti-courrier indésirable peut être utilisée. Vous trouverez [des étapes détaillées dans l’article configure the connection filter Policy](https://docs.microsoft.com/office365/securitycompliance/configure-the-connection-filter-policy). Il est important de conserver la liste des adresses IP bloquées à un *minimum* et de *ne pas* utiliser les plages d’adresses IP ici.
 
 Vous devez *particulièrement* éviter d’ajouter des plages d’adresses IP qui appartiennent à des services grand public ou des infrastructures partagées, et vérifiez également que vous examinez la liste des adresses IP autorisées dans le cadre de la maintenance normale. **Étant donné que l’autorisation-entrées peut ouvrir des itinéraires pour une attaque, vous devez gérer cette liste de manière étroite et supprimer régulièrement les entrées autorisées qui ne sont plus nécessaires.** De plus, si vous allez autoriser une liste d’expéditeurs approuvés, lisez et comprenez les risques et les précautions à prendre dans la rubrique *[créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md)*.

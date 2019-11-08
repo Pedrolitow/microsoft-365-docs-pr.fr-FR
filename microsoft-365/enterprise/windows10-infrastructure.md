@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: b1f655e5befd16058870542f2e595d36599006fd
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: d704f6392f5f0510478073299fcfe60569560105
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746706"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033639"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3 : Windows 10 Entreprise
 
@@ -72,7 +72,7 @@ Pour en savoir plus sur les fonctionnalités de sécurité fournies avec Windows
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Jetez un œil à Microsoft et découvrez comment l’entreprise [a déployé Windows 10 entreprise et utilise une authentification forte, Intune et Microsoft Defender ATP](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
+Jetez un œil à Microsoft et découvrez comment l’entreprise [a déployé Windows 10 entreprise et utilise une authentification forte, Intune et Microsoft Defender ATP](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 

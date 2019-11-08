@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Utilisez cet article pour configurer vos fonctionnalités de protection contre les menaces dès maintenant.
-ms.openlocfilehash: 7d18c8901b1edcc9e5238ed092bdb27bec684b1b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7bad500d50deb5afb8a1adf984332446f6de1086
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080200"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032179"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
@@ -37,8 +37,8 @@ Les fonctionnalités de protection contre les menaces sont incluses dans tous le
 
 |Type de protection  |Conditions requises en matière d’abonnement  |
 |---------|---------|
-|Protection anti-programme malveillant    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EOP        |
-|Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office    | [Office 365 protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) CUMULÉ       |
+|Protection anti-programme malveillant    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EoP)        |
+|Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office    | [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)       |
 |Protection anti-hameçonnage    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
 |Protection avancée contre le hameçonnage    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |Protection anti-courrier indésirable     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
@@ -47,13 +47,13 @@ Les fonctionnalités de protection contre les menaces sont incluses dans tous le
 
 ### <a name="roles-and-permissions"></a>Rôles et autorisations
 
-Vous devez disposer d’un rôle approprié pour configurer les stratégies dans le [Centre de sécurité & conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Le tableau suivant contient des exemples : 
+Vous devez disposer d’un rôle approprié pour configurer les stratégies dans le [Centre de sécurité & conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Le tableau ci-après inclut des exemples : 
 
 |Rôle ou groupe de rôles  |Où en savoir plus  |
 |---------|---------|
-|Administrateur général Office 365 |[À propos des rôles d'administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Administrateur de sécurité |[Autorisations de rôle d’administrateur dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Gestion de l’organisation Exchange Online |[Autorisations dans Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>et<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Administrateur général Office 365 |[À propos des rôles d'administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Administrateur de sécurité |[Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Gestion d’Organisation Exchange Online |[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>et<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 Pour en savoir plus, consultez [la rubrique autorisations dans le &amp; Centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
 
@@ -135,7 +135,7 @@ Pour configurer [des liens approuvés ATP](atp-safe-links.md), vérifiez et modi
 
 6. Cliquez sur **Enregistrer**.
 
-Pour plus d’informations, reportez-vous à la rubrique [set up Office 365 ATP Safe Links Policies](set-up-atp-safe-links-policies.md). 
+Pour plus d’informations, reportez-vous à [Configurer les stratégies de liens fiables Office 365 – Protection avancée contre les menaces](set-up-atp-safe-links-policies.md). 
 
 ## <a name="part-3---anti-phishing-protection"></a>Partie 3 : protection anti-hameçonnage
 
@@ -193,7 +193,7 @@ En plus de la configuration de la protection contre les programmes malveillants,
 
 ### <a name="zero-hour-auto-purge-for-email"></a>Purge automatique à zéro heure pour le courrier électronique
 
-[Purge automatique avec zéro heure](zero-hour-auto-purge.md) (ZAP) est disponible dans les abonnements qui incluent [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). Cette protection est activée par défaut ; Toutefois, les conditions suivantes doivent être remplies pour que la protection soit appliquée :
+La purge automatique (ZAP) [zéro heure](zero-hour-auto-purge.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). Cette protection est activée par défaut ; Toutefois, les conditions suivantes doivent être remplies pour que la protection soit appliquée :
 
 - Les actions de courrier indésirable sont définies pour **déplacer le message vers le dossier courrier indésirable** des [stratégies de blocage du courrier](anti-spam-protection.md)indésirable.
 

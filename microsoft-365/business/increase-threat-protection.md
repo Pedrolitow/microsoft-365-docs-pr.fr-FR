@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez Office 365 Advanced Threat Protection et protégez les données sensibles.
-ms.openlocfilehash: fb63ca7e3cf38ecf31aab98e425b02e8b9983bf8
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 1827b70f1e4d78a072753390c1a99d7cb4bd5cfd
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636749"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030761"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -31,7 +31,7 @@ Cet article vous aide à renforcer la protection de votre abonnement Microsoft 3
 
 Avant de commencer, vérifiez votre score de sécurité Office 365. Le score de sécurité d’Office 365 analyse la sécurité de votre organisation Office 365 en fonction de vos activités normales et des paramètres de sécurité et affecte un score. Commencez par prendre note de votre score actuel. L’exécution des actions recommandées dans cet article augmente votre score. L’objectif est de ne pas atteindre le score maximal, mais de prendre conscience des possibilités de protection de votre environnement qui n’ont pas d’impact négatif sur la productivité de vos utilisateurs. 
 
-Pour plus d’informations, consultez la rubrique [Microsoft Secure score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
+Pour plus d’informations, consultez la rubrique [Microsoft Secure score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Augmenter le niveau de protection contre les programmes malveillants dans les messages
 
@@ -56,7 +56,7 @@ Pour plus d’informations, consultez la rubrique [protection contre les program
 
 Les ransomware limitent l’accès aux données en chiffrant les fichiers ou en verrouillant les écrans d’ordinateur. Il tente ensuite de extort l’argent des victimes en demandant « ransomware », généralement sous forme de cryptocurrencies comme Bitcoin, dans Exchange pour accéder aux données. 
   
-Vous pouvez vous protéger contre les ransomware en créant une ou plusieurs règles de flux de messagerie pour bloquer les extensions de fichiers couramment utilisées pour les ransomware (elles ont été ajoutées à l’étape [augmenter le niveau de protection contre les programmes malveillants dans le courrier](#raise-the-level-of-protection-against-malware-in-mail) ) ou pour avertir les utilisateurs qui reçoivent ces pièces jointes dans les messages électroniques.
+Vous pouvez vous protéger contre les ransomware en créant une ou plusieurs règles de flux de messagerie pour bloquer les extensions de fichiers couramment utilisées pour les ransomware (elles ont été ajoutées à l’étape [augmenter le niveau de protection contre les programmes malveillants dans le courrier](#raise-the-level-of-protection-against-malware-in-mail) ) ou pour avertir les utilisateurs qui reçoivent ces pièces jointes par courrier électronique.
 
 Outre les fichiers que vous avez bloqués à l’étape précédente, il est également recommandé de créer une règle pour avertir les utilisateurs avant l’ouverture de pièces jointes de fichier Office qui incluent des macros. Les ransomware peuvent être masqués dans les macros, nous les avertirons donc que les utilisateurs ne pourront pas ouvrir ces fichiers à partir de personnes qu’ils ne connaissent pas.
 

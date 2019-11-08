@@ -13,12 +13,12 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la prise en charge des messages anonymes provenant de sources IPv6 pour Exchange Online Protection et Exchange Online.
-ms.openlocfilehash: b6b1a0f42d879929de5059b6e197bd5fe14887dc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c29c1fa450ca2a2e213930c4f4a394aaf462e31d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080437"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031989"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Prise en charge des messages entrants anonymes sur IPv6
 
@@ -28,7 +28,7 @@ Les expéditeurs qui transmettent des messages au service sur IPv6 doivent respe
   
 1. L'adresse IPv6 d'envoi doit posséder un enregistrement PTR valide ([enregistrement DNS inversé](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) de l'adresse IPv6 d'envoi). 
     
-2. L'expéditeur doit répondre aux exigences de l'étape de vérification SPF (définie dans le fichier [RFC 7208](https://tools.ietf.org/html/rfc7208)) ou de l'étape de [vérification DKIM](http://dkim.org/) (définie dans le fichier [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
+2. L'expéditeur doit répondre aux exigences de l'étape de vérification SPF (définie dans le fichier [RFC 7208](https://tools.ietf.org/html/rfc7208)) ou de l'étape de [vérification DKIM](https://dkim.org/) (définie dans le fichier [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
     
 Quelle que soit votre configuration, vous devez remplir ces conditions pour utiliser IPv6. Si ces deux conditions sont remplies, le message est traité par le processus normal de filtrage des courriers électroniques proposé par le service. Si l'une ou l'autre de ces conditions n'est pas remplie, le message est rejeté et l'une des réponses 450 suivantes apparaît :
   
@@ -40,7 +40,7 @@ Si vous n'avez pas accepté de recevoir des messages sur IPv6 et que l'expédite
   
  `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
   
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Prise en charge de la validation des messages signés DKIM](support-for-validation-of-dkim-signed-messages.md)
   

@@ -13,12 +13,12 @@ ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur la validation des messages signés DKIM dans Exchange Online Protection et Exchange Online
-ms.openlocfilehash: 75c104af4b3e6126bac37024de2c7f6ab337a028
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 347b47c0b182aab32d032abaa864357cc5b242ce
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080436"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031709"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Prise en charge de la validation des messages signés DKIM
 
@@ -28,6 +28,6 @@ La technologie DKIM valide un message signé numériquement qui apparaît dans l
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-Les administrateurs peuvent créer des [règles de flux de messagerie](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) Exchange (également appelées règles de transport) sur les résultats d’une validation DKIM pour filtrer ou acheminer les messages selon vos besoins. 
+Les administrateurs peuvent créer des [règles de flux de messagerie](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) Exchange (également appelées règles de transport) sur les résultats d’une validation DKIM pour filtrer ou acheminer les messages selon vos besoins. 
   
 

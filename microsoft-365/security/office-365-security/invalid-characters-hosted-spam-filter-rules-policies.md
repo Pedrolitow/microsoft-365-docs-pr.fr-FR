@@ -1,5 +1,5 @@
 ---
-title: Éviter les caractères non valides dans vos règles de filtrage du courrier indésirable et la stratégie de filtrage
+title: Éviter les caractères non valides dans vos règles de filtrage et dans la stratégie de filtrage de courrier indésirable
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Fournit de l’aide aux administrateurs qui ont des caractères non valides dans leur configuration de blocage du courrier indésirable et &amp; génèrent des problèmes lors de la tentative d’utilisation du centre de sécurité conformité.
-ms.openlocfilehash: 286a96814e0be5857499d7c54839d20142d0dd60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 96d81c17c33c5ecf6e7b88ebe5676336b963cb4e
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079019"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039103"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Éviter les caractères non valides dans vos règles de filtrage du courrier indésirable et votre stratégie de filtrage 
 
@@ -41,18 +41,18 @@ Une fois que vous avez identifié la stratégie et les règles qui contiennent d
     
 2. Pour modifier le nom de la stratégie de filtrage du courrier indésirable, exécutez la cmdlet Set-HostedContentFilterPolicy comme suit :
     
-    ```
+    ```powershell
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
 3. Pour modifier le nom d’une règle de filtrage du courrier indésirable, exécutez la cmdlet Set-Hostedcontentfilterrule permet comme suit :
     
-    ```
+    ```powershell
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 
   
- ## <a name="for-more-information"></a>Pour plus d’informations
+ ## <a name="for-more-information"></a>Pour plus d'informations
 
 [Gestion des menaces dans le &amp; Centre de sécurité conformité](protect-against-threats.md)
   

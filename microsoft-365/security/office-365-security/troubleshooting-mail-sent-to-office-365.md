@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de l'envoi d'e-mail à des boîtes de réception dans Office 365 et les meilleures pratiques pour l'envoi de courrier en nombre à des clients Office 365.
-ms.openlocfilehash: 59c02b31b759870892846947940744e123c73788
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: b87b0745c95cd043987f49ed7f21118339d3e592
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441181"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030698"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Résolution des problèmes de messages envoyés à Office 365
 
@@ -71,7 +71,7 @@ Il se peut que nous n’acceptions pas les e-mails provenant d’expéditeurs do
 
 Certains problèmes de remise sont dus au blocage de l'adresse IP de l'expéditeur par Microsoft ou à l'identification du compte d'utilisateur comme expéditeur interdit en raison des activité de courrier indésirable précédentes. Si vous pensez que vous avez reçu la notification d'échec de remise par erreur, suivez d'abord toutes les instructions indiquées dans le message de notification d'échec de remise pour résoudre le problème.
 
-Pour plus d'informations sur l'erreur que vous avez reçue, consultez la liste complète des codes d'erreur SMTP dans [DSNs and NDRs in On-Premises Exchange 2013 and Office 365](http://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx).
+Pour plus d'informations sur l'erreur que vous avez reçue, consultez la liste complète des codes d'erreur SMTP dans [DSNs and NDRs in On-Premises Exchange 2013 and Office 365](https://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx).
 
  Par exemple, si vous recevez la notification d'échec de remise suivante, elle indique que l'adresse IP d'envoi a été bloquée par Microsoft.
 
@@ -108,7 +108,7 @@ Vous avez reçu une notification d'échec de remise car une activité suspecte a
 
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Je ne reçois pas les e-mails provenant d’expéditeurs dans Office 365
 
- Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, consultez la rubrique [Exchange Online Protection IP addresses](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges).
+ Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, consultez la rubrique [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Meilleures pratiques pour l’envoi en bloc d’e-mails aux utilisateurs d’Office 365
 

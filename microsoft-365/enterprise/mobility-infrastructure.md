@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386141"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031149"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5 : gestion des appareils mobiles pour Microsoft 365 Enterprise
 
-![Phase 5 : gestion des appareils mobiles](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Phase 5 : Gestion des appareils mobiles](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *Cette fonctionnalité s’applique aux versions E3 et E5 de Microsoft 365 Enterprise*
 
@@ -82,7 +82,7 @@ L’enregistrement est une étape essentielle lors de l’utilisation d’Intune
 
 |||
 |:-------|:-----|
-|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : enregistrement des appareils iOS et Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : enregistrement des appareils iOS et Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -100,7 +100,7 @@ L’article [Ajouter des applications](https://docs.microsoft.com/intune/apps/ap
 
 |||
 |:-------|:-----|
-|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : stratégies de conformité des appareils](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : stratégies de conformité des appareils](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Étape 6 : activer la conformité et l’accès conditionnel
@@ -119,7 +119,7 @@ Consultez [la rubrique prise en main des stratégies de conformité des appareil
 
 Ces fonctionnalités et paramètres sont souvent considérés comme la partie « sympa » de Intune, qui sont très puissants. Une fois que vous avez appliqué certaines stratégies de conformité à l’aide de l’accès conditionnel, vous êtes prêt à créer des **profils d’appareil**.
 
-Intune dans le [portail Azure](https://portal.azure.com) vous permet de créer différents profils en fonction de votre plateforme de périphérique-iOS, MacOS, Android et Windows. Par exemple, vous pouvez :
+Intune dans le [portail Azure](https://portal.azure.com) vous permet de créer différents profils en fonction de votre plateforme de périphérique-iOS, MacOS, Android et Windows. Par exemple, vous pouvez :
 
 - Utilisez Endpoint Protection sur les appareils Windows 10 pour activer différentes options BitLocker, y compris le chiffrement.
 - Utilisez la fonctionnalité applications restreintes sur des appareils iOS pour créer une liste des applications approuvées pouvant être installées. Ou créez une liste d’applications interdites.
@@ -151,7 +151,7 @@ Microsoft fournit un ensemble de recommandations sur l’[accès aux appareils e
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Découvrez comment les experts informatiques de Microsoft [gèrent les appareils avec EMS](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
+Découvrez comment les experts informatiques de Microsoft [gèrent les appareils avec EMS](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 

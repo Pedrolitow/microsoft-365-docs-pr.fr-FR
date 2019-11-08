@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un appareil Azure Active Directory joint à Windows 10.
-ms.openlocfilehash: 92e8ccb99dfece7687c25db84b81fc7bc7158d71
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 2af5d4b4f84f39f5b157313e5b38ef030da7263d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574675"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030531"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business
 
-Tous les appareils Windows 10 qui sont joints à Azure Active Directory auront accès à toutes les ressources basées sur le Cloud, telles que vos applications Office 365, et peuvent être protégées par Microsoft 365 Business. Pour autoriser également l’accès aux ressources locales telles que les applications métier, les partages de fichiers et les imprimantes, vous devez synchroniser votre annuaire Active Directory local avec Azure Active Directory à l’aide d' [Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). 
+Tous les appareils Windows 10 qui sont joints à Azure Active Directory auront accès à toutes les ressources basées sur le Cloud, telles que vos applications Office 365, et peuvent être protégées par Microsoft 365 Business. Pour autoriser également l’accès aux ressources locales telles que les applications métier, les partages de fichiers et les imprimantes, vous devez synchroniser votre annuaire Active Directory local avec Azure Active Directory à l’aide d' [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). 
 
-Pour en savoir plus, consultez la rubrique [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) .
+Pour en savoir plus, consultez la rubrique [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) .
 Les étapes sont également résumées dans les sections suivantes.
 
 ## <a name="run-azure-ad-connect"></a>Exécuter Azure AD Connect

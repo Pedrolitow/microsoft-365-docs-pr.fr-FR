@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 305f4e213d03f4ee7fccca5fee9bea8efb3d1e9e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6e2ca4405838f6e72603bcdb3024b8c0f70e3e99
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080557"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034295"
 ---
 # <a name="microsoft-threat-protection"></a>Protection Microsoft contre les menaces
 
@@ -38,7 +38,7 @@ Accédez à la puissance de la protection contre les menaces Microsoft via le ce
 <center><h2>Services de protection contre les menaces Microsoft</center></h2>
 <table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Protection avancée contre les menaces Microsoft Defender</b></center></a></td>
 <td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 protection avancée contre les menaces</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/en-us/azure-advanced-threat-protection/"><b>Azure protection avancée contre les menaces</b></a></center></td>
+<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure protection avancée contre les menaces</b></a></center></td>
 <td><center><b><a href="https://docs.microsoft.com/azure/security-center/"><b>Centre de sécurité Azure</b></a></center></td>
 <td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Sécurité des applications Cloud Microsoft</b></a></center></td>
 <td><center><b><a href="https://docs.microsoft.com/azure/sentinel/overview"><b>Microsoft Azure sentinelle</b></a></center></td>

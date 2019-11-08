@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment résoudre les problèmes liés aux messages électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online (le client a bloqué l’envoi de messages).
-ms.openlocfilehash: d55bc1f8a051a7f9932528a75aac8f1efa18911c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 28ed444d821cbe00cfcb92872de15bb43a65ae28
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079077"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033875"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Corriger les problèmes de remise des courriers électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online
 
@@ -49,18 +49,18 @@ Une fois compromis, les clients ne pourront pas envoyer de messages sortants pou
 
 Il y a plusieurs choses à faire si votre client est bloqué pour l’envoi de messages électroniques :
 
-1. Assurez-vous d’enregistrer tous vos domaines dans le centre d’administration Microsoft 365. Vous trouverez plus d’informations [ici](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Assurez-vous d’enregistrer tous vos domaines dans le centre d’administration Microsoft 365. Vous trouverez plus d’informations [ici](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Recherchez les connecteurs inhabituels. Les acteurs malveillants vont souvent créer de nouveaux connecteurs entrants dans votre client Office 365 pour envoyer du courrier indésirable. Vous trouverez plus d’informations sur la vérification de vos connecteurs [ici](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps). 
+2. Recherchez les connecteurs inhabituels. Les acteurs malveillants vont souvent créer de nouveaux connecteurs entrants dans votre client Office 365 pour envoyer du courrier indésirable. Vous trouverez plus d’informations sur la vérification de vos connecteurs [ici](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps). 
 
 3. Verrouillez vos serveurs locaux et assurez-vous qu’ils ne sont pas compromis.
 
 > [!TIP]
 > Il existe de nombreux facteurs impliqués, en particulier s’il s’agit de serveurs tiers. Quelle que soit la fonctionnalité, vous devez être en mesure de confirmer que tout le courrier sortant de vos serveurs est légitime.
 
-4. Une fois la procédure terminée, vous devez appeler le support Microsoft et demander à ce que votre locataire débloquée pour envoyer à nouveau des domaines non enregistrés.  Le fait de fournir le code d’erreur est utile, mais vous devrez prouver que votre environnement est sécurisé et que le courrier indésirable ne sera pas renvoyé. Vous trouverez plus d’informations sur l’ouverture d’un cas de support [ici](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
+4. Une fois la procédure terminée, vous devez appeler le support Microsoft et demander à ce que votre locataire débloquée pour envoyer à nouveau des domaines non enregistrés.  Le fait de fournir le code d’erreur est utile, mais vous devrez prouver que votre environnement est sécurisé et que le courrier indésirable ne sera pas renvoyé. Vous trouverez plus d’informations sur l’ouverture d’un cas de support [ici](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 
@@ -68,6 +68,6 @@ Il y a plusieurs choses à faire si votre client est bloqué pour l’envoi de m
 
 Configurer le transfert du courrier pour une boîte aux lettres
 
-[Comment configurer une application ou un périphérique multi-fonction pour envoyer des courriers électroniques à l’aide d’Office 365](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[Comment configurer une application ou un périphérique multi-fonction pour envoyer des courriers électroniques à l’aide d’Office 365](https://support.office.com/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 
-[Gérer les domaines acceptés dans Exchange Online](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+[Gérer les domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).

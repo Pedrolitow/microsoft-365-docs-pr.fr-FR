@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: ea8b1acd558c7231355412556df1330bd8a91ca1
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 189c3bb08609eb2604e77b5140e866711e8f1a09
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441211"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031999"
 ---
 # <a name="set-up-your-eop-service"></a>Configurer votre service EOP
 
@@ -48,7 +48,7 @@ Cette rubrique explique comment configurer Microsoft Exchange Online Protection 
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Étape 2 : Ajouter des destinataires et éventuellement activer DBEB
 
-Avant de configurer votre flux de messagerie vers et depuis le service EOP, nous vous recommandons d'ajouter vos destinataires au service. Il existe plusieurs méthodes pour mener à bien cette opération, comme indiqué dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Aussi, si vous souhaitez activer le blocage du périmètre basé sur l'annuaire (DBEB) afin d'appliquer la vérification du destinataire dans le service après avoir ajouté vos destinataires, vous devez définir votre type de domaine sur Faisant autorité. Pour plus d'informations sur le DBEB, consultez la rubrique [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+Avant de configurer votre flux de messagerie vers et depuis le service EOP, nous vous recommandons d'ajouter vos destinataires au service. Il existe plusieurs méthodes pour mener à bien cette opération, comme indiqué dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Aussi, si vous souhaitez activer le blocage du périmètre basé sur l'annuaire (DBEB) afin d'appliquer la vérification du destinataire dans le service après avoir ajouté vos destinataires, vous devez définir votre type de domaine sur Faisant autorité. Pour plus d'informations sur le DBEB, consultez la rubrique [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Étape 3 : Utiliser le CAE pour configurer le flux de messagerie
 
@@ -60,7 +60,7 @@ Vérifiez le flux de messagerie entre le service et votre environnement. Pour pl
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l’accès SMTP entrant sur le port 25
 
-Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la propagation de vos mises à jour d'enregistrement DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
+Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la propagation de vos mises à jour d'enregistrement DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges
 ). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
 
 > [!TIP]

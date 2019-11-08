@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: bf099dfe8fffdc763d42122e466c982bb90b6492
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57d419c291fdfed3a5d7237ae2021e9ef06723f5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079024"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031899"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Rechercher et identifier les courriers électroniques malveillants remis dans Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "37079024"
 
 Assurez-vous que les conditions suivantes sont remplies :
   
-- Votre organisation dispose d' [Office 365 protection avancée contre les menaces](office-365-atp.md) et des [licences sont attribuées aux utilisateurs](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- Votre organisation dispose d' [Office 365 protection avancée contre les menaces](office-365-atp.md) et des [licences sont attribuées aux utilisateurs](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
     
 - La [journalisation d’audit Office 365](../../compliance/turn-audit-log-search-on-or-off.md) est activée pour votre organisation. 
     
@@ -44,9 +44,9 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 
 |Activité  |Groupe de rôles |Prévisualiser le rôle nécessaire ?  |
 |---------|---------|---------|
-|Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces     |Administrateur général Office 365 <br> Administrateur de sécurité <br> Lecteur de sécurité     | Non   |
-|Utiliser l’Explorateur de menaces (et les détections en temps réel) pour afficher les en-têtes des messages électroniques, ainsi que pour afficher un aperçu et télécharger des messages électroniques mis en quarantaine    |Administrateur général Office 365 <br> Administrateur de sécurité <br>Lecteur de sécurité   |       Non  |
-|Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres     |Administrateur général Office 365 <br>Administrateur de sécurité <br> Lecteur de sécurité <br> Aperçu   |   Oui      |
+|Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces     |Administrateur général Office 365 <br> Administrateur de sécurité <br> Lecteur de sécurité     | Non   |
+|Utiliser l’Explorateur de menaces (et les détections en temps réel) pour afficher les en-têtes des messages électroniques, ainsi que pour afficher un aperçu et télécharger des messages électroniques mis en quarantaine    |Administrateur général Office 365 <br> Administrateur de sécurité <br>Lecteur de sécurité   |       Non  |
+|Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres     |Administrateur général Office 365 <br>Administrateur de sécurité <br> Lecteur de sécurité <br> Aperçu   |   Oui      |
 
 > [!NOTE]
 > L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le rôle administrateur général Office 365 est affecté au centre d’administration Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)(), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de sécurité &[https://protection.office.com](https://protection.office.com)de sécurité Office 365 (). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité d’Office 365](permissions-in-the-security-and-compliance-center.md).
@@ -172,9 +172,9 @@ Emplacement de remise : affiche les résultats des stratégies et des détectio
   
 La **chronologie par courrier électronique** est un champ dans l’Explorateur de menaces qui facilite la chasse à votre équipe des opérations de sécurité. Lorsque plusieurs événements se produisent ou se ferment à la même heure dans un e-mail, ces événements apparaissent dans un affichage chronologie. Certains événements qui ont lieu après la livraison à la messagerie sont capturés dans la colonne **actions spéciales** . La combinaison des informations de la chronologie d’un message électronique avec toutes les actions spéciales effectuées après la livraison permet aux administrateurs de mieux comprendre les stratégies et la gestion des menaces (par exemple, l’endroit où le courrier a été acheminé et, dans certains cas, l’évaluation finale).
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
-[Office 365 protection avancée contre les menaces](office-365-ti.md)
+[Office 365 Advanced Threat Protection](office-365-ti.md)
   
 [Se protéger contre les menaces dans Office 365](protect-against-threats.md)
   

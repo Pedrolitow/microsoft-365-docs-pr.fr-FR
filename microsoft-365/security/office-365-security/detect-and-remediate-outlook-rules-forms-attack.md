@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
-ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 56882ca53852d33a642f6031c6a3fa6c68eb667d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440651"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033895"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365
 
@@ -124,18 +124,18 @@ Il existe deux cmdlets PowerShell à distance que vous pouvez utiliser pour supp
 
 1. Connectez-vous au serveur Exchange à l’aide de PowerShell à distance. Suivez les étapes de la procédure [connexion à des serveurs Exchange à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps).
 2. Si vous souhaitez supprimer entièrement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la [cmdlet Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps): utilisez cette commande pour supprimer complètement une, plusieurs ou toutes les règles de la boîte aux lettres.
-3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la [cmdlet Disable-InboxRule](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
+3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la [cmdlet Disable-InboxRule](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx). 
 
 Étapes pour les boîtes aux lettres dans Exchange Online
 1. Suivez les étapes de la procédure [connexion à Exchange Online à l’aide de PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 2.  Si vous souhaitez supprimer entièrement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la [cmdlet Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps).
-3.  Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la [cmdlet Disable-InboxRule](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
+3.  Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la [cmdlet Disable-InboxRule](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx). 
 
 ## <a name="how-to-minimize-future-attacks"></a>Comment limiter les attaques futures
 
 ### <a name="first-protect-your-accounts"></a>Tout d’abord : Protégez vos comptes
 
-Les attaques de formulaires et de règles sont utilisées uniquement par un agresseur après avoir volé ou enfreint un des comptes de vos utilisateurs. Par conséquent, la première étape pour empêcher l’utilisation de ces exploits auprès de votre organisation consiste à protéger activement vos comptes d’utilisateur.  Les attaques par hameçonnage ou par [pulvérisation de mot de passe](http://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) constituent certaines des méthodes de violation des comptes les plus courantes.
+Les attaques de formulaires et de règles sont utilisées uniquement par un agresseur après avoir volé ou enfreint un des comptes de vos utilisateurs. Par conséquent, la première étape pour empêcher l’utilisation de ces exploits auprès de votre organisation consiste à protéger activement vos comptes d’utilisateur.  Les attaques par hameçonnage ou par [pulvérisation de mot de passe](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) constituent certaines des méthodes de violation des comptes les plus courantes.
 
 
 
@@ -161,19 +161,19 @@ Voici les versions de correctifs pour vos clients Outlook 2013 et 2016 :
 
 Pour plus d’informations sur les correctifs de sécurité individuels, voir :
 
-- [Correctif de sécurité Outlook 2013](https://support.microsoft.com/en-us/help/3191938) 
-- [Correctif de sécurité Outlook 2016](https://support.microsoft.com/en-us/help/3191883)
+- [Correctif de sécurité Outlook 2013](https://support.microsoft.com/help/3191938) 
+- [Correctif de sécurité Outlook 2016](https://support.microsoft.com/help/3191883)
 
 ### <a name="third-monitor-your-outlook-clients"></a>Troisième : surveiller vos clients Outlook
 Notez que même avec les correctifs et mises à jour installés, il est possible pour un agresseur de modifier la configuration de l’ordinateur local pour réactiver le comportement « démarrer l’application ». Vous pouvez utiliser la [gestion de stratégie de groupe avancée](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) pour surveiller et appliquer des stratégies d’ordinateur local sur vos clients.  
-Vous pouvez voir si « démarrer l’application » a été réactivé via une substitution dans le registre à l’aide des informations de la rubrique [How to View the System Registry by using 64-bit versions of Windows](https://support.microsoft.com/en-us/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows).  Vérifiez les sous-clés suivantes : 
+Vous pouvez voir si « démarrer l’application » a été réactivé via une substitution dans le registre à l’aide des informations de la rubrique [How to View the System Registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows).  Vérifiez les sous-clés suivantes : 
 
-- Outlook 2016 : HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\
-- Outlook 2013 : HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\
+- Outlook 2016 : HKEY_CURRENT_USER \Software\Microsoft\Office\16.0\Outlook\Security\
+- Outlook 2013 : HKEY_CURRENT_USER \Software\Microsoft\Office\15.0\Outlook\Security\
 
 Recherchez la clé EnableUnsafeClientMailRules. S’il est présent et qu’il est défini sur 1, le correctif de sécurité Outlook a été remplacé et l’ordinateur est vulnérable à l’attaque de formulaire/de règles. Si la valeur est égale à 0, l’action « démarrer l’application » est désactivée.  Si la version mise à jour et corrigée d’Outlook est installée et que cette clé de Registre n’est pas présente, un système n’est pas vulnérable à ces attaques.
 
-Les clients disposant d’installations Exchange locales doivent envisager de bloquer les anciennes versions d’Outlook qui n’ont pas de correctifs disponibles. Pour plus d’informations sur ce processus, voir l’article [configurer le blocage du client Outlook](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx).
+Les clients disposant d’installations Exchange locales doivent envisager de bloquer les anciennes versions d’Outlook qui n’ont pas de correctifs disponibles. Pour plus d’informations sur ce processus, voir l’article [configurer le blocage du client Outlook](https://technet.microsoft.com/library/dd335207(v=exchg.150).aspx).
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sécuriser Office 365 comme un pro de la cyber-sécurité
 Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la [Feuille de route pour sécuriser Office 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Office 365.

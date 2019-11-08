@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: df3a2138de105b45f472ff0a862af2afe6dd2a34
-ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
+ms.openlocfilehash: f701f3f8f74036966de2c516d662ef77341f4842
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37733418"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033609"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 Entreprise
 
@@ -44,15 +44,16 @@ Dans cette phase, vous allez configurer un groupe approbateurs et activer la ges
 
 Procédez comme suit pour configurer et utiliser l’accès privilégié dans votre organisation Office 365 :
 
-- [Étape 1 : créer un groupe d’approbateurs](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
+- [Étape 1 : créer un groupe d’approbateurs](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
     Avant de commencer à utiliser l’accès aux privilèges, déterminez qui disposera de l’autorité d’approbation pour les demandes entrantes d’accès à des tâches élevées et privilégiées. Tout utilisateur qui fait partie du groupe approbateurs est en mesure d’approuver les demandes d’accès. Pour cela, vous créez un groupe de sécurité à extension messagerie dans Office 365. Créez un groupe de sécurité nommé « approbateurs d’accès privilégié » dans votre environnement de test et ajoutez « User 3 » précédemment créé dans les étapes du Guide de laboratoire de test précédent.
 
-- [Étape 2 : activer l’accès privilégié](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
+- [Étape 2 : activer l’accès privilégié](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
     L’accès privilégié doit être activé de manière explicite dans Office 365 avec le groupe d’approbateurs par défaut et inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation Office 365 avant de commencer la phase 3 de ce guide.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Phase 3 : vérifier que l’approbation est requise pour les tâches avec privilèges élevés et privilégiées
+
 Dans cette phase, vous vérifiez que la stratégie d’accès privilégié fonctionne et que les utilisateurs demandent une approbation pour exécuter des tâches élevées et privilégiées définies.
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Tester la possibilité d’exécuter une tâche non définie dans une stratégie d’accès privilégié
@@ -63,9 +64,10 @@ Tout d’abord, connectez-vous à Exchange Management PowerShell avec les inform
 
 2. Dans Exchange Management PowerShell, créez une nouvelle règle de journal pour votre organisation :
 
-```
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
+
 4. Affichage de la création de la nouvelle règle de journal dans Exchange Management PowerShell.
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Créer une stratégie d’accès privilégié pour la tâche New-JournalRule
@@ -82,7 +84,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 4. Sélectionnez **configurer les stratégies** et sélectionnez **Ajouter une stratégie**.
 
 5. Dans les champs de liste déroulante, sélectionnez ou entrez les valeurs suivantes :
-    
+
     **Type de stratégie**: tâche
 
     **Étendue de stratégie**: Exchange
@@ -97,16 +99,17 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Condition d’approbation de test pour la tâche New-JournalRule définie dans une stratégie d’accès privilégié
 
-1. Sur votre ordinateur local, ouvrez le module Exchange Online Remote PowerShell et connectez-vous au module **Microsoft** > **Exchange Online** PowerShell à l’aide d’un compte d’administrateur général pour votre test. contexte.
+1. Sur votre ordinateur local, ouvrez le module Exchange Online Remote PowerShell et connectez-vous au module **Microsoft** > **Exchange Online** PowerShell à l’aide d’un compte d’administrateur général pour votre environnement de test.
 
 2. Dans Exchange Management PowerShell, créez une nouvelle règle de journal pour votre organisation :
 
-```
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
+
 3. Afficher l’erreur « autorisations Insuffient » dans Exchange Management PowerShell :
 
-```
+```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
     + CategoryInfo          : NotSpecified: (:) [], LocalizedException
     + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
@@ -152,9 +155,10 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 2. Dans Exchange Management PowerShell, créez une nouvelle règle de journal pour votre organisation :
 
-```
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
+
 3. Affichage de la création de la nouvelle règle de journal dans Exchange Management PowerShell.
 
 ## <a name="next-step"></a>Étape suivante

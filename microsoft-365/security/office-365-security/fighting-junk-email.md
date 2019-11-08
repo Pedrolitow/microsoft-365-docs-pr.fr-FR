@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: La feuille de route sécurité de messagerie de Microsoft implique une approche inter-produits sans correspondance. La technologie de filtrage anti-spam et anti-hameçonnage d'Exchange Online Protection (EOP) est appliquée sur les plateformes de messagerie de Microsoft pour fournir aux utilisateurs les innovations et les outils anti-spam et anti-hameçonnage les plus récents dans tout le réseau. L'objectif d'EOP est de proposer un service de messagerie complet et utilisable qui vous aide à détecter le courrier indésirable, les menaces d'e-mails frauduleux (hameçonnage) et les logiciels malveillants, et de protéger les utilisateurs.
-ms.openlocfilehash: 0a73d428e952c0c0cb340d91a52768a42ae204a1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7c1b74d2ddb98d1250f80455163c5f0b8690b0de
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079088"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032369"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Lutter contre le courrier indésirable envoyé à Office 365
 
@@ -66,9 +66,9 @@ L'usurpation de domaine est un moyen d'imiter une adresse e-mail légitime afin 
   
 EOP utilise Sender Protection Framework (SPF), DomainKeys Identified Mail (DKIM), et Domain-based Message Authentication, Reporting, and Conformance (DMARC), ainsi que d'autres authentifications implicites pour vérifier que les messages proviennent du domaine dont ils sont supposés provenir. Nous conseillons à tous les expéditeurs d'utiliser SPF et DKIM pour protéger leurs destinataires contre les escroqueries de courrier indésirable et de hameçonnage. Nous conseillons aux expéditeurs de penser à publier une authentification DMARC pour rejeter ou mettre en quarantaine les messages provenant d'expéditeurs non autorisés.
   
-- Pour en savoir plus sur SPF, voir [RFC 7208](https://tools.ietf.org/html/rfc7208) et [Sender Policy Framework](http://www.openspf.org/).
+- Pour en savoir plus sur SPF, voir [RFC 7208](https://tools.ietf.org/html/rfc7208) et [Sender Policy Framework](https://www.openspf.org/).
     
-- Pour plus d'informations sur DKIM, voir [RFC 6376](https://tools.ietf.org/html/rfc6376) et [DKIM.org](http://dkim.org/).
+- Pour plus d'informations sur DKIM, voir [RFC 6376](https://tools.ietf.org/html/rfc6376) et [DKIM.org](https://dkim.org/).
     
 - Pour en savoir plus sur DMARC, voir [DMARC.org](https://dmarc.org/).
     

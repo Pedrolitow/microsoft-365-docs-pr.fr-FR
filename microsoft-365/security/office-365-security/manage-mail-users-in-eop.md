@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La définition des utilisateurs de messagerie constitue une partie importante de la gestion du service Exchange Online Protection (EOP).
-ms.openlocfilehash: 85a2c3ee278af36b9743fd9ff70ea9ab21437de8
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 38beaa283d4fa120a75f11accf22861e6598d6e0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441241"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034355"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestion des utilisateurs de messagerie dans EOP
 
@@ -40,7 +40,7 @@ La définition des utilisateurs de messagerie constitue une partie importante de
 
 - Les commandes PowerShell de cette rubrique utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes soient visibles.
 
-- Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online Protection, consultez la rubrique [Connexion à Exchange Online PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+- Pour apprendre à utiliser Windows PowerShell afin d’établir une connexion à Exchange Online Protection, voir [Connexion à Exchange Online Protection à l’aide de Remote PowerShell](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
 
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -59,11 +59,11 @@ Cette section fournit des informations sur la gestion des utilisateurs de messag
 
   - **Listes des expéditeurs autorisés et des expéditeurs bloqués Outlook**: lorsqu’ils sont synchronisés avec le service, ces listes prévalent sur le filtrage du courrier indésirable dans le service. Cela permet aux utilisateurs de gérer leurs propres listes d’expéditeurs autorisés et bloqués en fonction de l’utilisateur et du domaine.
 
-  - **Blocage du périmètre basé sur l’annuaire (DBEB)**: pour plus d’informations sur DBEB, voir [use Directory based Edge Blocking to Reject messages sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
+  - **Blocage du périmètre basé sur l’annuaire (DBEB)**: pour plus d’informations sur DBEB, voir [use Directory based Edge Blocking to Reject messages sent to Invalid Recipients](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
 
   - **Mise en quarantaine du courrier indésirable**de l’utilisateur final : pour accéder à la mise en quarantaine du courrier indésirable de l’utilisateur final, les utilisateurs finaux doivent avoir un ID d’utilisateur et un mot de passe Office 365 valide. Les clients qui utilisent EOP pour la protection des boîtes aux lettres locales doivent être des utilisateurs de messagerie électronique valides.
  
-  - **Règles de flux de messagerie**: lorsque vous utilisez la synchronisation d’annuaires, vos utilisateurs et groupes Active Directory existants sont automatiquement téléchargés dans le Cloud, puis vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) qui ciblent des utilisateurs spécifiques et/ou groupes sans avoir à les ajouter manuellement via le centre d’administration Exchange ou Exchange Online Protection PowerShell. Notez que les [groupes de distribution dynamique](https://go.microsoft.com/fwlink/?LinkId=507569) ne peuvent pas être synchronisés via la synchronisation d’annuaires.
+  - **Règles de flux de messagerie**: lorsque vous utilisez la synchronisation d’annuaires, vos utilisateurs et groupes Active Directory existants sont automatiquement téléchargés dans le Cloud, puis vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) qui ciblent des utilisateurs et/ou des groupes spécifiques sans avoir à les ajouter manuellement via le centre d’administration Exchange ou Exchange Online Protection PowerShell. Notez que les [groupes de distribution dynamique](https://go.microsoft.com/fwlink/?LinkId=507569) ne peuvent pas être synchronisés via la synchronisation d’annuaires.
 
 Obtenez les autorisations nécessaires et préparez la synchronisation d'annuaires, comme décrit dans la rubrique [Préparer la synchronisation d'annuaires](https://go.microsoft.com/fwlink/p/?LinkId=308908).
 

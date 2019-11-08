@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Résumé : configurez un site d’équipe SharePoint Online isolé du reste de l’organisation dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: a540cd616fb39c2da7afc603786243c0d383c352
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0f91bcce140fd1ad00c51b27e8b1e134e5f2a283
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079014"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032339"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site d’équipe SharePoint Online isolé dans votre environnement de développement/test
 
@@ -50,7 +50,7 @@ Il existe trois phases de configuration d’un site d’équipe SharePoint Onlin
 3. Créez un site d’équipe SharePoint Online ProjectX et isolez-le.
     
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
+> Cliquez [ici](https://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1 : Créer votre environnement de développement/test Office 365 en mode léger ou pour entreprise simulée
 

@@ -14,12 +14,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Découvrez la mise en quarantaine hébergée pour Exchange Online et Exchange Online Protection.
-ms.openlocfilehash: 86d2589ce16354e453486d1e8a635887329b1b08
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: a986a44c572c0cce52a11ea6a6d30ec27d06fedd
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441481"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032169"
 ---
 # <a name="quarantine"></a>Quarantaine
 
@@ -29,7 +29,7 @@ Les rubriques suivantes fournissent des informations sur la quarantaine héberg�
 
 - [Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur](find-and-release-quarantined-messages-as-an-administrator.md) : explique aux administrateurs comment chercher et récupérer un message mis en quarantaine dans le Centre d'administration Exchange (EAC) et le signaler (facultatif) comme faux positif (message légitime) à Microsoft.
 
-- [Rechercher et débloquer les messages mis en quarantaine (utilisateurs finaux)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) : explique comment les utilisateurs finals peuvent rechercher et libérer leurs propres messages indésirables mis en quarantaine dans l’interface utilisateur de mise en quarantaine du courrier indésirable et les signaler comme légitimes à Microsoft.
+- [Rechercher et débloquer les messages mis en quarantaine (utilisateurs finaux)](https://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) : explique comment les utilisateurs finals peuvent rechercher et libérer leurs propres messages indésirables mis en quarantaine dans l’interface utilisateur de mise en quarantaine du courrier indésirable et les signaler comme légitimes à Microsoft.
 
   > [!IMPORTANT]
-  > Pour pouvoir accéder à la mise en quarantaine du courrier indésirable de l’utilisateur final, les utilisateurs finaux doivent disposer d’un ID d’utilisateur et d’un mot de passe Office 365 valides. Les clients EOP qui protègent les boîtes aux lettres locales doivent être des utilisateurs de messagerie valides créés via la synchronisation d’annuaires ou le centre d’administration Exchange. Pour plus d’informations sur la gestion des utilisateurs, les administrateurs EOP peuvent se référer à la rubrique [gérer les utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Pour les clients autonomes EOP, nous vous recommandons d’utiliser la synchronisation d’annuaires et d’activer le blocage du périmètre basé sur l’annuaire ; Pour plus d’informations, consultez la rubrique [utiliser le blocage du périmètre basé sur l’annuaire pour rejeter les messages envoyés à des destinataires non valides](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
+  > Pour pouvoir accéder à la mise en quarantaine du courrier indésirable de l’utilisateur final, les utilisateurs finaux doivent disposer d’un ID d’utilisateur et d’un mot de passe Office 365 valides. Les clients EOP qui protègent les boîtes aux lettres locales doivent être des utilisateurs de messagerie valides créés via la synchronisation d’annuaires ou le centre d’administration Exchange. Pour plus d’informations sur la gestion des utilisateurs, les administrateurs EOP peuvent se référer à la rubrique [gérer les utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Pour les clients autonomes EOP, nous vous recommandons d’utiliser la synchronisation d’annuaires et d’activer le blocage du périmètre basé sur l’annuaire ; Pour plus d’informations, consultez la rubrique [utiliser le blocage du périmètre basé sur l’annuaire pour rejeter les messages envoyés à des destinataires non valides](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).

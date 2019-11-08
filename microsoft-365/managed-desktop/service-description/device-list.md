@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b43f6caea0ff60458066e628ea485685c32c0914
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: cfa46fa61483f68031ef508779dd71bd43fa92ae
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012011"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034245"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau gérés Microsoft 
 
@@ -33,11 +33,11 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de déclassement   |
 |----------|----------------|---------------------------|----------------|--------------------|
-|[Dell Precision 3530](https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 22 mai 2020  | 22 mai 2023 |
-|[Dell Latitude 5300/5400/5500](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-5400-business-laptop/spd/latitude-14-5400-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er juin 2021  | 1er juin 2024  |
-[Dell Latitude 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 9 janvier 2020  | 9 janvier 2023  |
-[Dell Latitude 7200 2-in-1/7300/7400](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er mai 2021  | 1er mai 2024  |
-[Dell Latitude 7390 7390 2-en-1/7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297)   | 256 Go/Intel i5/8 Go de RAM   | Appareil infrarouge requis | 9 janvier 2020 | 9 janvier 2023 |
+|[Dell Precision 3530](https://www.dell.com/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 22 mai 2020  | 22 mai 2023 |
+|[Dell Latitude 5300/5400/5500](https://www.dell.com/work/shop/dell-laptops-and-notebooks/latitude-5400-business-laptop/spd/latitude-14-5400-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er juin 2021  | 1er juin 2024  |
+[Dell Latitude 5490](https://www.dell.com/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 9 janvier 2020  | 9 janvier 2023  |
+[Dell Latitude 7200 2-in-1/7300/7400](https://www.dell.com/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er mai 2021  | 1er mai 2024  |
+[Dell Latitude 7390 7390 2-en-1/7490](https://www.dell.com/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297)   | 256 Go/Intel i5/8 Go de RAM   | Appareil infrarouge requis | 9 janvier 2020 | 9 janvier 2023 |
 | [HP Elite x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS03AV, appareil infrarouge obligatoire | 14 mai 2020 | 14 mai 2023 |
 | [HP EliteBook 830/840/850 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis | 15 février 2020 | 15 février 2023 |
 | [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 56 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire | 14 mai 2020 | 14 mai 2023 |

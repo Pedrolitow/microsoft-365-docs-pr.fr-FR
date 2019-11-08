@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez les fonctionnalités de conformité pour empêcher toute perte de données et étiqueter les données sensibles.
-ms.openlocfilehash: 73709c1302a2e9e46eb2d54ea021438b5f1743c5
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5213c55f4a8ce0e223896f1b960847714d6d06cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575655"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031412"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
@@ -57,7 +57,7 @@ Pour placer une boîte aux lettres en conservation pour litige, dans le centre d
 
 Les étiquettes de confidentialité sont fournies avec Azure information protection (AIP) plan 1 et vous aident à classer et éventuellement protéger vos documents et e-mails en appliquant des étiquettes. Les étiquettes peuvent être appliquées automatiquement par les administrateurs qui définissent des règles et des conditions, manuellement par les utilisateurs ou à l’aide d’une combinaison de recommandations pour les utilisateurs.
 
-Pour configurer les étiquettes de confidentialité, affichez la vidéo [créer et gérer les étiquettes de confidentialité](https://support.office.com/en-us/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) .
+Pour configurer les étiquettes de confidentialité, affichez la vidéo [créer et gérer les étiquettes de confidentialité](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) .
 
 
 

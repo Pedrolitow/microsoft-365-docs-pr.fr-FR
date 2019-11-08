@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité fournies avec Microsoft 365 Business.
-ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 5e295480b1a578ca26646a89d6a0a4183a15428d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636769"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031442"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business
 
@@ -33,7 +33,7 @@ Microsoft 365 Business propose des fonctionnalités de sécurité simplifiées p
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Fonctionnalités de sécurité du centre d’administration de Microsoft 365
 
-[![Étiquette pour vous informer le centre d’administration change et vous trouverez plus de détails sur aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise Microsoft 365 dans le centre d’administration, ce qui vous offre un moyen simple d’activer ou de désactiver ces fonctionnalités. Dans le centre d’administration, vous pouvez effectuer les opérations suivantes :
   
@@ -73,7 +73,7 @@ Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour v
 - **[Fonctionnalités complètes d’Intune dans le portail Azure](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
     L’accès au centre d’administration Intune dans le portail Azure vous permet de configurer des fonctionnalités de sécurité supplémentaires, telles que la gestion des appareils MacOS, iPhone et appareils Android, ainsi que la gestion avancée des appareils pour Windows, qui ne sont pas disponibles via Microsoft Centre d’administration de l’entreprise 365.
-- **Même [accès conditionnel](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) que le plan Azure ad P1**
+- **Même [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) que le plan Azure ad P1**
 
     L’accès conditionnel peut protéger votre organisation contre les risques de connexion, les tentatives d’accès à partir d’un réseau ou d’un paramètre régional inattendus, les tentatives d’accès aux types d’appareils à risque, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée, et les signaux de l’événement First Authentication sont utilisés pour déterminer si l’accès tenté doit être approuvé, refusé ou si une preuve plus marquée (par exemple une seconde forme d’identification) est Obligatoire.
 
@@ -109,7 +109,7 @@ Votre abonnement professionnel Microsoft 365 inclut des fonctionnalités qui vou
 Vous pouvez gérer ces fonctionnalités dans le centre &amp; d’administration et de sécurité et dans le centre d’administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration de Microsoft 365 Business.
   
     
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>FAQ
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>Ces fonctionnalités de sécurité sont-elles disponibles sur tous les marchés ?
   

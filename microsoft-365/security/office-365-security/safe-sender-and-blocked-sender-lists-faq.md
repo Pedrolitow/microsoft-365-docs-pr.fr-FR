@@ -13,12 +13,12 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: En tant qu'administrateur Exchange Online ou Exchange Online Protection (EOP), vous pouvez faire en sorte qu'un message électronique circulant via le service ne soit pas marqué comme courrier indésirable. Une manière de procéder consiste à créer des listes d'expéditeurs approuvés et d'expéditeurs bloqués pour les membres de votre organisation.
-ms.openlocfilehash: 5b1082e0a8f492da1ebc559b0958a6ef76f9a70c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 03d0bb35f174b1dcc76fa93f5a5411e8a437ea25
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080369"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031779"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online
 
@@ -44,5 +44,5 @@ Vous pouvez observer l’erreur décrite dans [KB2590466](https://support.micros
   
 ## <a name="see-also"></a>Voir aussi
 
-[Sender filtering in Exchange 2016](http://technet.microsoft.com/library/b833f864-ff10-46a0-a653-28fb9ba30896.aspx)
+[Sender filtering in Exchange 2016](https://technet.microsoft.com/library/b833f864-ff10-46a0-a653-28fb9ba30896.aspx)
 

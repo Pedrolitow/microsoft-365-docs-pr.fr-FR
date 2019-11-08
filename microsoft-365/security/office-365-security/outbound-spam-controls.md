@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si votre organisation envoie un grand nombre de messages marqués comme courrier indésirable, vous pouvez être bloqué pour l’envoi de messages électroniques avec Office 365. Lisez cet article pour en savoir plus sur les raisons de cette situation et sur ce que vous pouvez faire.
-ms.openlocfilehash: 1985f9726a32e2726fd2814e5ec9079ad3ec211e
-ms.sourcegitcommit: 6c42fb7123b9688f9b53bc7fa91fb8cdfcf4c718
+ms.openlocfilehash: 28677e2bbfad7f44595de1300e42b9c58ab99c2b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37455066"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031849"
 ---
 # <a name="control-outbound-spam-in-office-365"></a>Contrôler le courrier indésirable sortant dans Office 365
 
@@ -33,7 +33,7 @@ Nous prévoyons la gestion du courrier indésirable sortant, car le nôtre est u
 
 - **Activer les notifications lorsqu’un compte envoie du courrier indésirable ou est arrêté**: les administrateurs peuvent obtenir envoyé chaque fois qu’un message est marqué comme courrier indésirable sortant et qu’il est envoyé par le biais du pool à haut risque. En surveillant cette boîte aux lettres, un administrateur peut détecter s’il dispose d’un compte compromis dans son réseau ou si le filtre de courrier indésirable marque par erreur son courrier électronique comme courrier indésirable. Vous trouverez plus d’informations sur la configuration de la stratégie de courrier indésirable sortant [ici](configure-the-outbound-spam-policy.md).
 
-- **Examen manuel des plaintes de courrier indésirable émanant de fournisseurs de messagerie**tiers : de nombreux services de messagerie tiers, tels que Outlook.com, Yahoo et AOL fournissent une boucle de commentaires où, si un utilisateur de son service marque un e-mail de notre service comme du courrier indésirable, le message est empaqueté et Nous nous avons renvoyés pour révision. Pour en savoir plus sur la prise en charge de l’expéditeur pour Outlook.com, cliquez [ici](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
+- **Examen manuel des plaintes de courrier indésirable émanant de fournisseurs de messagerie**tiers : de nombreux services de messagerie tiers, tels que Outlook.com, Yahoo et AOL fournissent une boucle de commentaires où, si un utilisateur de son service marque un e-mail de notre service comme du courrier indésirable, le message est empaqueté et renvoyé à nous pour révision. Pour en savoir plus sur la prise en charge de l’expéditeur pour Outlook.com, cliquez [ici](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
 
 ## <a name="what-eop-does-to-control-outbound-spam"></a>Ce que EOP fait pour contrôler le courrier indésirable sortant
 
@@ -47,7 +47,7 @@ Nous prévoyons la gestion du courrier indésirable sortant, car le nôtre est u
 
    Un message unique marqué comme courrier indésirable peut être incorrect par le moteur de courrier indésirable et également connu sous le nom de faux positif. Nous les envoyons via le pool à risque élevé afin de les autoriser à sortir ; Toutefois, un grand nombre de messages dans un court laps de temps indique un problème et lorsque cela se produit, nous bloquons le compte de l’envoi de courriers électroniques. Il existe des seuils différents pour les comptes de messagerie, ainsi que pour l’ensemble du client.
 
-4. **Désactivation des comptes incriminés lorsqu’ils envoient trop peu de courriers électroniques à un intervalle de temps**: en plus des limites au-delà de la recherche d’une proportion de messages marqués comme courrier indésirable, il existe également des limites qui bloquent les comptes lorsqu’ils atteignent une limite globale, indépendamment indique si les messages sont marqués comme courrier indésirable. La raison de cette limite réside dans le fait qu’un compte compromis peut envoyer du courrier indésirable nul par le filtre de courrier indésirable. Étant donné qu’il est difficile, voire impossible, de dire parfois la différence entre une campagne de publipostage légitime et une campagne de courrier indésirable massive, ces limites s’activent pour limiter les dommages potentiels.
+4. **Désactivation des comptes incriminés lorsqu’ils envoient trop peu de courriers électroniques à un intervalle de temps**: en plus des limites au-delà de la recherche d’une proportion de messages marqués comme courrier indésirable, il existe également des limites qui bloquent les comptes lorsqu’ils atteignent une limite globale, que les messages soient marqués ou non comme courrier indésirable. La raison de cette limite réside dans le fait qu’un compte compromis peut envoyer du courrier indésirable nul par le filtre de courrier indésirable. Étant donné qu’il est difficile, voire impossible, de dire parfois la différence entre une campagne de publipostage légitime et une campagne de courrier indésirable massive, ces limites s’activent pour limiter les dommages potentiels.
 
 > [!NOTE]
 > Pour les #3 et #4, nous ne publiez pas les limites exactes pour empêcher les expéditeurs de courrier indésirable de jouer le système et pour vous assurer que nous pouvons modifier les limites quand nous en avons besoin. Les limites sont suffisamment élevées pour qu’un utilisateur professionnel moyen ne puisse jamais s’en servir et qu’il contienne la plupart des dommages qu’un expéditeur de courrier indésirable peut faire.
@@ -60,9 +60,9 @@ Il est difficile de trouver un équilibre entre les clients qui souhaitent envoy
 
 2. **Utiliser un courrier électronique en masse tiers pour envoyer la communication de masse**: il existe plusieurs expéditeurs de courriers électroniques en masse dont la seule entreprise est d’envoyer du courrier en nombre. Ils peuvent collaborer avec les clients pour s’assurer qu’ils disposent de bonnes pratiques en matière de messagerie et qu’ils disposent de ressources dédiées à leur application.
 
-Le groupe de travail de messagerie, mobile, anti-abus de programmes malveillants (MAAWG) publie sa liste d’appartenance [ici](http://www.maawg.org/about/roster). Plusieurs fournisseurs de courrier en masse figurent dans la liste et sont appelés citoyens Internet responsables.
+Le groupe de travail de messagerie, mobile, anti-abus de programmes malveillants (MAAWG) publie sa liste d’appartenance [ici](https://www.maawg.org/about/roster). Plusieurs fournisseurs de courrier en masse figurent dans la liste et sont appelés citoyens Internet responsables.
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Exemple de notification lorsqu'un expéditeur est bloqué en raison de l'envoi de courrier indésirable sortant](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 

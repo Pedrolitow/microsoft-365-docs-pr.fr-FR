@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Pour vous assurer que le courrier électronique envoyé à partir de personnes que vous approuvez n’est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte, également appelée liste d’expéditeurs approuvés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
-ms.openlocfilehash: 09da8b2b7ee6c584d479ffc1206e7b3cf72d1eb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 541960ce5339e1334cdc61e1f88bff9be48fe2bd
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079446"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032429"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configuration de la stratégie de filtrage des connexions
 
@@ -42,13 +42,13 @@ La vidéo suivante montre les étapes de configuration de la stratégie de filtr
 
 - Durée d'exécution estimée : 15 minutes
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée « blocage du courrier indésirable » dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée « blocage du courrier indésirable » dans la rubrique [autorisations des fonctionnalités dans Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
 - Pour obtenir l'adresse IP de l'expéditeur pour lequel vous souhaitez autoriser ou bloquer les messages, vous pouvez consulter l'en-tête Internet du message. Recherchez l'en-tête CIP comme décrit dans [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md). Pour plus d’informations sur l’affichage de l’en-tête d’un message dans divers clients de messagerie, voir [analyseur d’en-têtes de message](https://go.microsoft.com/fwlink/p/?LinkId=306583).
 
 - Les courriers électroniques envoyés depuis une adresse IP dans la liste d'adresses IP bloquées sont rejetés, ne sont pas marqués comme courriers indésirables et aucun filtrage supplémentaire n'est appliqué.
 
-- La procédure de filtrage des connexions suivante peut également être exécutée via le service PowerShell à distance. Utilisez la cmdlet [Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) pour passer en revue vos paramètres et la cmdlet [Set-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) pour modifier vos paramètres de stratégie de filtrage de connexion. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online Protection, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- La procédure de filtrage des connexions suivante peut également être exécutée via le service PowerShell à distance. Utilisez la cmdlet [Get-HostedConnectionFilterPolicy](https://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) pour passer en revue vos paramètres et la cmdlet [Set-HostedConnectionFilterPolicy](https://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) pour modifier vos paramètres de stratégie de filtrage de connexion. Pour apprendre à utiliser Windows PowerShell afin d’établir une connexion à Exchange Online Protection, voir [Connexion à Exchange Online Protection à l’aide de Remote PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>Utilisation du Centre d'administration Exchange (CAE) pour modifier la stratégie par défaut de filtrage des connexions
 
@@ -75,7 +75,7 @@ Voici des considérations supplémentaires que vous pouvez envisager ou dont vou
   
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>Spécification d'une plage de routage CIDR en dehors des plages recommandées
 
-Pour spécifier une plage d’adresses IP CIDR comprise entre/1 et/23, vous devez créer une règle de flux de messagerie qui fonctionne sur la plage d’adresses IP qui définit le seuil de probabilité de courrier indésirable (SCL) qui **contourne le filtrage du courrier indésirable** (ce qui signifie que tous les messages reçus depuis cette plage d’adresses IP sont défini sur « pas de courrier indésirable ») et aucun filtrage supplémentaire n’est effectué par le service). Toutefois, si l’une de ces adresses IP apparaît sur une liste rouge propriétaire de Microsoft ou sur l’une de nos listes de blocage tierces, ces messages seront toujours bloqués. Il est donc vivement recommandé d’utiliser la plage d’adresses IP/24 vers/32.
+Pour spécifier une plage d’adresses IP CIDR comprise entre/1 et/23, vous devez créer une règle de flux de messagerie qui fonctionne sur la plage d’adresses IP qui définit le **seuil de probabilité de courrier** indésirable (SCL) de sorte qu’aucun filtrage supplémentaire ne soit effectué par le service. Toutefois, si l’une de ces adresses IP apparaît sur une liste rouge propriétaire de Microsoft ou sur l’une de nos listes de blocage tierces, ces messages seront toujours bloqués. Il est donc vivement recommandé d’utiliser la plage d’adresses IP/24 vers/32.
   
 Pour créer cette règle de flux de messagerie, procédez comme suit.
   
@@ -91,7 +91,7 @@ Pour créer cette règle de flux de messagerie, procédez comme suit.
 
 6. Sous **Faire ceci**, définissez l'action en sélectionnant **Modifier les propriétés des messages**, puis **Définir le seuil de probabilité de courrier indésirable (SCL)**. Dans le champ **spécifier la valeur SCL**, sélectionnez **Ignorer le filtrage du courrier indésirable**, puis cliquez sur **OK**.
 
-7. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d’informations sur ces sélections.
+7. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d’informations sur ces sélections.
 
 8. Cliquez sur **Enregistrer** pour enregistrer la règle. La règle apparaît dans votre liste de règles.
 
@@ -121,7 +121,7 @@ Pour ce faire, procédez comme suit :
 
 8. Dans la zone **spécifier un domaine** , entrez le domaine pour lequel vous souhaitez contourner le filtrage du courrier indésirable, tel que **contosob.com**. Cliquez sur **Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif) icône pour le déplacer vers la liste des expressions. Répétez cette étape pour ajouter d'autres domaines et exceptions, puis cliquez sur **OK** quand vous avez terminé. 
 
-9. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d’informations sur ces sélections.
+9. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d’informations sur ces sélections.
 
 10. Cliquez sur **Enregistrer** pour enregistrer la règle. La règle apparaît dans votre liste de règles.
 
@@ -131,7 +131,7 @@ Après avoir créé et appliqué la règle, le filtrage du courrier indésirable
 
 Les messages provenant d’adresses IP autorisées que vous avez configurées dans les stratégies de filtrage des connexions sont toujours soumis au filtrage du courrier indésirable dans les scénarios suivants :
 
-- L’adresse IP source de votre stratégie de filtrage des connexions est également configurée dans un connecteur entrant basé sur IP sur site de *n’importe quel* client (appelons ce client a), **et** le client a et le serveur Exchange Online protection qui rencontrent le le message dans Office 365 se trouve tous deux dans la même forêt Active Directory que les centres de Microsoft. Dans ce scénario, **IPV : la licence d’accès client** est ajoutée aux [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md) du message (indiquant le filtrage de courrier indésirable ignoré), mais le message est toujours soumis au filtrage du courrier indésirable.
+- L’adresse IP source de votre stratégie de filtrage des connexions est également configurée dans un connecteur entrant basé sur IP sur site de *n’importe quel* client (appelons ce locataire a), **et** le client a et le serveur Exchange Online protection qui rencontre tout d’abord le message dans Office 365 sont tous deux dans la même forêt Active Directory dans les centres de contenu Microsoft. Dans ce scénario, **IPV : la licence d’accès client** est ajoutée aux [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md) du message (indiquant le filtrage de courrier indésirable ignoré), mais le message est toujours soumis au filtrage du courrier indésirable.
 
 - Votre client (où vous avez configuré la stratégie de filtrage des connexions) et le serveur Exchange Online protection qui rencontre tout d’abord le message dans Office 365 se trouvent tous deux dans des forêts Active Directory différentes dans les centres de contenu Microsoft. Dans ce scénario, **IPV : la licence d’accès client** n’est pas ajoutée aux en-têtes de message, de sorte que le message est toujours soumis au filtrage du courrier indésirable.
 
@@ -149,7 +149,7 @@ Il s’agit fondamentalement de la même procédure de création de règle à pa
 |:-----|
 |![Icône rapide pour LinkedIn Learning](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Office 365 ?** Découvrez les cours vidéo gratuits pour **Office 365 admins and IT pros** proposés par LinkedIn Learning.|
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
   

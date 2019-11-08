@@ -15,12 +15,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Lorsque vous configurez vos stratégies de liens approuvés ATP, vous pouvez inclure une liste d’URL do-not-Rewrite’pour permettre à certaines personnes de votre organisation de visiter des sites que vous incluez dans votre liste.
-ms.openlocfilehash: 512d4ce507c191b00bc2d21f61d5efbf2dffcb57
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1068f7e2ac75f9c4403475e1fa9bc4da57fabe51
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772138"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032049"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL do-not-Rewrite personnalisée à l’aide de liens fiables Office 365 ATP
 
@@ -69,19 +69,19 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer d’un rôl
 
 - Toutes les URL que vous spécifiez dans la liste « ne pas réécrire » sont exclues de la recherche de liens fiables ATP pour les destinataires que vous spécifiez.
  
-- Si vous disposez déjà d’une liste d’URL dans la liste « ne pas réécrire », veillez à la consulter et à ajouter des caractères génériques, le cas échéant. Par exemple, si votre liste existante a une entrée like `http://contoso.com/a` et que vous souhaitez inclure des sous-chemins `http://contoso.com/a/b` comme dans votre stratégie, ajoutez un caractère générique à votre entrée afin qu' `http://contoso.com/a/*`elle se présente de la manière souhaitée.
+- Si vous disposez déjà d’une liste d’URL dans la liste « ne pas réécrire », veillez à la consulter et à ajouter des caractères génériques, le cas échéant. Par exemple, si votre liste existante a une entrée like `https://contoso.com/a` et que vous souhaitez inclure des sous-chemins `https://contoso.com/a/b` comme dans votre stratégie, ajoutez un caractère générique à votre entrée afin qu' `https://contoso.com/a/*`elle se présente de la manière souhaitée.
     
 - N’incluez pas une barre oblique (/) dans les URL que vous spécifiez dans la liste « ne pas réécrire ». Par exemple, au lieu d' `contoso.com/` entrer dans la liste « ne pas réécrire », `contoso.com`entrez.
 
-- Lorsque vous spécifiez la liste « ne pas réécrire » pour une stratégie de liens approuvés ATP, vous pouvez inclure jusqu’à trois astérisques\*génériques (). Les caractères génériques\*() sont utilisés pour inclure explicitement des préfixes ou des sous `http://` - `https://`domaines, comme ou. Une entrée, telle que `contoso.com` n’est pas la même `*.contoso.com/*` que pour la liste « ne pas réécrire ». Vous devez disposer `*.contoso.com/*` de si vous voulez autoriser les utilisateurs à visiter un domaine et ses sous-domaines et chemins d’accès.
+- Lorsque vous spécifiez la liste « ne pas réécrire » pour une stratégie de liens approuvés ATP, vous pouvez inclure jusqu’à trois astérisques\*génériques (). Les caractères génériques\*() sont utilisés pour inclure explicitement des préfixes ou des sous `https://` - `https://`domaines, comme ou. Une entrée, telle que `contoso.com` n’est pas la même `*.contoso.com/*` que pour la liste « ne pas réécrire ». Vous devez disposer `*.contoso.com/*` de si vous voulez autoriser les utilisateurs à visiter un domaine et ses sous-domaines et chemins d’accès.
     
 Le tableau suivant répertorie des exemples de ce que vous pouvez entrer et de l’effet de ces entrées.
     
 |**Exemple d’entrée**|**Ce qu’il fait**|
 |:-----|:-----|
-|`contoso.com`|Permet aux destinataires de visiter un `http://contoso.com` site, mais pas des sous-domaines ou des chemins d’accès.|
-|`*.contoso.com/*`  <br/> |Permet aux destinataires de visiter un domaine, des sous-domaines et des chemins `http://www.contoso.com`d' `https://www.contoso.com`accès `https://maps.contoso.com`, par exemple,, ou`http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |Permet à des destinataires spécifiques de visiter `http://contoso.com/a`un site, mais pas des sous-chemins comme`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a/*`  <br/> |Permet à des destinataires spécifiques de visiter `http://contoso.com/a` un site comme des sous-chemins comme`http://contoso.com/a/b`  <br/> |
+|`contoso.com`|Permet aux destinataires de visiter un `https://contoso.com` site, mais pas des sous-domaines ou des chemins d’accès.|
+|`*.contoso.com/*`  <br/> |Permet aux destinataires de visiter un domaine, des sous-domaines et des chemins `https://www.contoso.com`d' `https://www.contoso.com`accès `https://maps.contoso.com`, par exemple,, ou`https://www.contoso.com/a`  <br/> |
+|`https://contoso.com/a`  <br/> |Permet à des destinataires spécifiques de visiter `https://contoso.com/a`un site, mais pas des sous-chemins comme`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a/*`  <br/> |Permet à des destinataires spécifiques de visiter `https://contoso.com/a` un site comme des sous-chemins comme`https://contoso.com/a/b`  <br/> |
    
  

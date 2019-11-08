@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: L'évolution des besoins professionnels peut parfois imposer de séparer une organisation Microsoft Exchange Online Protection (EOP) (locataire) en deux organisations distinctes, de fusionner deux organisations en une seule ou de déplacer vos domaines et vos paramètres EOP d'une organisation vers une autre.
-ms.openlocfilehash: 89f62a158801dc269cebafcb37f72bb5cb8c93b8
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d1e2913b9263879b1d9a1ca9d20b6b623f2208cf
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441451"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032219"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Déplacement de domaines et de paramètres d’une organisation EOP vers une autre organisation EOP
 
@@ -51,7 +51,7 @@ Afin de recréer l’organisation source dans l’organisation cible, veillez à
   > [!NOTE]
   > La prise en charge de l’applet de commande pour l’exportation et l’importation de la règle de flux de messagerie n’est actuellement prise en charge que pour les plans d’abonnement d’EOP Premium.
 
-Le moyen le plus simple de collecter tous vos paramètres est d’utiliser PowerShell. Pour vous connecter à Exchange Online Protection PowerShell, consultez la rubrique [Connect to Exchange Online Protection PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+Le moyen le plus simple de collecter tous vos paramètres est d’utiliser PowerShell. Pour vous connecter à Exchange Online Protection PowerShell, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
 
 Ensuite, vous pouvez collecter tous vos paramètres et les exporter vers un fichier .xml à importer dans le locataire cible. En général, vous pouvez orienter la sortie de la cmdlet **Get** pour chaque paramètre vers la cmdlet **Export-Clixml** afin d'enregistrer les paramètres dans des fichiers .xml, tel qu'illustré dans l'exemple de code ci-après.
 

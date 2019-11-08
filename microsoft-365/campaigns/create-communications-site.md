@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un site de communication pour votre campagne.
-ms.openlocfilehash: 339f6e0de27975a8c768a6752d7fd367e12dd8f6
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 8473aa3a5b4e091b25d57939a0897eb257513b75
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772531"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029088"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Créer un site de communication pour votre campagne
 
@@ -34,7 +34,7 @@ Un excellent moyen de communiquer les priorités, de partager des documents de s
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
-Incluez les éléments suivants dans votre site de communication:
+Incluez les éléments suivants dans votre site de communication :
 
 1. Ajouter le logo et les couleurs de votre campagne sous forme d’image d’en-tête et de thème
 2. Dirigez votre stratégie, votre message, vos documents importants, un annuaire et un Forum aux questions dans un **composant WebPart héros**.
@@ -44,7 +44,7 @@ Incluez les éléments suivants dans votre site de communication:
 
 ![Diagramme d’une page de communications SharePoint avec un espace pour les éléments communs dont une campagne a besoin](media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a>Infographie: créer un site de communications infographie 
+## <a name="infographic-create-a-communications-site-infographic"></a>Infographie : créer un site de communications infographie 
 Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprimés au format tabloïd (également appelé grand livre, 11 x 17 ou a3).
 
 [![Image du site de communications infographie](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
@@ -58,7 +58,7 @@ Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprim
 2. Dans le coin supérieur gauche de la page, sélectionnez l’icône du lanceur d’applications, puis sélectionnez la vignette **SharePoint** . Si la vignette **SharePoint** n'apparaît pas, cliquez sur la vignette **Sites** ou sur **Tout** si SharePoint n'est pas visible.
 3. En haut de la page d’accueil SharePoint, cliquez sur **+ créer un site** , puis sur l’option **site de communication** .
 
-Découvrez toutes les [informations sur les sites](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) de communication et la [création d’un site de communication dans SharePoint Online](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
+Découvrez toutes les [informations sur les sites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) de communication et la [création d’un site de communication dans SharePoint Online](https://support.office.com/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
 
 
 ## <a name="admin-settings"></a>Paramètres d’administration

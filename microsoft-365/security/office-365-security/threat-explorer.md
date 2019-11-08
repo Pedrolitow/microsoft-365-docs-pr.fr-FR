@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’Explorateur et les détections en temps réel dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: ee14e4a1309bcf1077a8901ce874dc2872b694be
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 70073197091e75ae7ca2740b9be53edce87e1d8a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079577"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030708"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
-Si votre organisation dispose [d’office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez [des autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des **détections en temps réel** (précédemment des *rapports en temps réel* ) [Voir nouveautés !)](#new-features-in-real-time-detections). Dans le centre de sécurité & conformité, accédez à **gestion des menaces**, puis choisissez **Explorateur** ou **détections en temps réel**. 
+Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez des [autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des **détections en temps réel** (auparavant des *rapports en temps réel* ). [](#new-features-in-real-time-detections) Dans le centre de sécurité & conformité, accédez à **gestion des menaces**, puis choisissez **Explorateur** ou **détections en temps réel**. 
 
 |Avec le plan ATP 2, vous pouvez voir :  |Avec le plan ATP 1, vous pouvez voir :  |
 |---------|---------|
@@ -37,7 +37,7 @@ Avec l’Explorateur (ou les détections en temps réel), vous disposez d’un p
 Ce rapport vous permet d’utiliser les actions suivantes :
 - [Voir programmes malveillants détectés par les fonctionnalités de sécurité d’Office 365](#see-malware-detected-in-email-by-technology)
 - [Afficher les données sur les URL d’hameçonnage et cliquez sur verdict](#view-data-about-phishing-urls-and-click-verdict)
-- [Démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur](#start-automated-investigation-and-response) (Plan DAV 2 uniquement)
+- [Démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur](#start-automated-investigation-and-response) (plan ATP 2 uniquement)
 - ... [Examinez le courrier électronique malveillant, et bien plus encore](#more-ways-to-use-explorer-or-real-time-detections)!
 
 ## <a name="new-features-in-real-time-detections"></a>Nouvelles fonctionnalités dans les détections en temps réel
@@ -78,7 +78,7 @@ Emplacement de remise : affiche les résultats des stratégies et des détectio
 
 La **chronologie par courrier électronique** est une autre nouvelle fonctionnalité d’explorateur destinée à améliorer l’expérience de la chasse des administrateurs. Il réduit le traitement aléatoire, car il y a moins de temps passé à vérifier différents emplacements pour essayer de comprendre l’événement. Lorsque plusieurs événements se produisent à la même heure ou proches de celle-ci dans un e-mail, ces événements apparaissent dans un affichage chronologie. En fait, certains événements qui ont lieu après la livraison à votre courrier seront capturés dans la colonne « action spéciale ». La combinaison des informations de la chronologie de ce message avec l’action spéciale entreprise lors de la livraison post-remise donnera aux administrateurs un aperçu de la façon dont leurs stratégies fonctionnent, où les messages ont été finalement routés et, dans certains cas, ce qu’étaient l’évaluation finale.
 
-Pour plus d’informations sur l’enquête sur les messages électroniques malveillants, consultez la rubrique [Rechercher et enquêter le courrier électronique malveillant livré dans Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
+Pour plus d’informations sur l’enquête sur les messages électroniques malveillants, consultez la rubrique [Rechercher et enquêter le courrier électronique malveillant livré dans Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Voir programmes malveillants détectés dans le courrier électronique par technologie
 
@@ -146,7 +146,7 @@ Pour plus d’informations, reportez-vous à l' [exemple : un administrateur de
 ## <a name="more-ways-to-use-explorer-or-real-time-detections"></a>Autres méthodes d’utilisation de l’Explorateur (ou des détections en temps réel)
 
 Outre les scénarios décrits dans cet article, vous disposez de nombreuses autres options de création de rapports dans l’Explorateur (ou des détections en temps réel). 
-- [Rechercher et d’examiner le courrier électronique malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
+- [Rechercher et d’examiner l’e-mail malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
 - [Affichage de fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft teams](malicious-files-detected-in-spo-odb-or-teams.md)
 - [Obtenir une vue d’ensemble des affichages dans l’Explorateur de menaces (et des détections en temps réel)](threat-explorer-views.md)
 

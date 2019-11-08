@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer des stratégies d’accès conditionnel pour les campagnes Microsoft 365.
-ms.openlocfilehash: 31f3b7f3678671af3b5ca3947dec37041b226fac
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 3772aa0d505ef54a0587423e890ede519d571e0c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575635"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031392"
 ---
 # <a name="set-up-conditional-access-policies"></a>Configurer des stratégies d’accès conditionnel
 
@@ -53,9 +53,9 @@ Pour plus d’informations sur ces stratégies, voir [qu’est-ce qu’une strat
     ![Page répertoriant les stratégies de base pour l’accès conditionnel.](media/baslinepolicies.png)
 1. Consultez les instructions spécifiques suivantes pour chaque stratégie :
 
-  - [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-- [Exiger l’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
- - [Bloquer l’authentification héritée](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+- [Exiger l’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+ - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [Exiger MFA pour la gestion des services](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 Vous pouvez configurer de nombreuses stratégies supplémentaires, telles que la nécessité d’applications clientes approuvées. Pour plus d’informations, reportez-vous à la documentation sur l' [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/) .

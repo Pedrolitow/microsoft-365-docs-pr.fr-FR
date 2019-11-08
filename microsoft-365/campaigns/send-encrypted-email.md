@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment envoyer des messages chiffrés à l’aide d’Outlook.
-ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: e7028f69f4418ae0ff0183653c509fc9ad6171ac
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778139"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031229"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Chiffrer ou étiqueter votre courrier électronique sensible
 
@@ -36,21 +36,21 @@ Les données et les informations de votre campagne sont importantes et souvent c
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
-Avant d’envoyer un courrier électronique avec des informations confidentielles ou sensibles, envisagez d’activer:
+Avant d’envoyer un courrier électronique avec des informations confidentielles ou sensibles, envisagez d’activer :
 
-- **Chiffrement:** Vous pouvez chiffrer votre courrier électronique pour protéger la confidentialité des informations contenues dans le message électronique. Lorsque vous chiffrez un message électronique, il est converti du texte brut lisible en texte Cypher brouillé. Seul le destinataire qui dispose de la clé privée correspondant à la clé publique utilisée pour chiffrer le message peut déchiffrer le message en lecture. Tout destinataire sans clé privée correspondante voit le texte indéchiffrable. Votre administrateur peut définir des règles pour chiffrer automatiquement les messages qui répondent à certains critères. Par exemple, votre administrateur peut créer une règle qui chiffre tous les messages envoyés en dehors de votre organisation ou tous les messages qui mentionnent des mots ou des expressions spécifiques. Toutes les règles de chiffrement seront appliquées automatiquement.
-- **Étiquettes de sensibilité:** Votre campagne peut également configurer des étiquettes de confidentialité que vous pouvez appliquer à vos fichiers et à vos courriers électroniques pour les garder en conformité avec les stratégies de protection des informations de votre campagne. Lorsque vous définissez une étiquette, celle-ci est conservée dans votre courrier électronique, même si elle est envoyée, par exemple, en apparaissant comme en-tête de votre message.
+- **Chiffrement :** Vous pouvez chiffrer votre courrier électronique pour protéger la confidentialité des informations contenues dans le message électronique. Lorsque vous chiffrez un message électronique, il est converti du texte brut lisible en texte Cypher brouillé. Seul le destinataire qui dispose de la clé privée correspondant à la clé publique utilisée pour chiffrer le message peut déchiffrer le message en lecture. Tout destinataire sans clé privée correspondante voit le texte indéchiffrable. Votre administrateur peut définir des règles pour chiffrer automatiquement les messages qui répondent à certains critères. Par exemple, votre administrateur peut créer une règle qui chiffre tous les messages envoyés en dehors de votre organisation ou tous les messages qui mentionnent des mots ou des expressions spécifiques. Toutes les règles de chiffrement seront appliquées automatiquement.
+- **Étiquettes de sensibilité :** Votre campagne peut également configurer des étiquettes de confidentialité que vous pouvez appliquer à vos fichiers et à vos courriers électroniques pour les garder en conformité avec les stratégies de protection des informations de votre campagne. Lorsque vous définissez une étiquette, celle-ci est conservée dans votre courrier électronique, même si elle est envoyée, par exemple, en apparaissant comme en-tête de votre message.
 
 ![Diagramme d’un message avec des légendes pour les étiquettes et le chiffrement](media/m365-campaign-email-encrypt.png)
 
 
 ## <a name="set-it-up"></a>Configuration
 
-Si vous souhaitez chiffrer un message qui ne correspond pas à une règle prédéfinie ou que votre administrateur n’a pas défini de règles, vous pouvez appliquer diverses règles de chiffrement avant d’envoyer le message. Pour envoyer un message chiffré à partir d’Outlook 2013 ou 2016, ou Outlook 2016 pour Mac, sélectionnez **Options > autorisations**, puis sélectionnez l’option de protection dont vous avez besoin. Vous pouvez également envoyer un message chiffré en sélectionnant le bouton **protéger** dans Outlook sur le Web. Pour plus d’informations, consultez la rubrique [Envoyer, afficher et répondre à des messages chiffrés dans Outlook pour PC](https://support.office.com/en-us/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
+Si vous souhaitez chiffrer un message qui ne correspond pas à une règle prédéfinie ou que votre administrateur n’a pas défini de règles, vous pouvez appliquer diverses règles de chiffrement avant d’envoyer le message. Pour envoyer un message chiffré à partir d’Outlook 2013 ou 2016, ou Outlook 2016 pour Mac, sélectionnez **Options > autorisations**, puis sélectionnez l’option de protection dont vous avez besoin. Vous pouvez également envoyer un message chiffré en sélectionnant le bouton **protéger** dans Outlook sur le Web. Pour plus d’informations, consultez la rubrique [Envoyer, afficher et répondre à des messages chiffrés dans Outlook pour PC](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 
-Vous pouvez en savoir plus sur la configuration du chiffrement du courrier électronique à [l’adresse de chiffrement de courrier électronique dans Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption).
+Vous pouvez en savoir plus sur la configuration du chiffrement du courrier électronique à [l’adresse de chiffrement de courrier électronique dans Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>Chiffrer automatiquement les messages électroniques
 
@@ -62,9 +62,9 @@ Vous créez des règles de flux de messagerie pour chiffrer les messages électr
 2. Sélectionnez la vignette admin. 
 3. Dans le centre d’administration, sélectionnez **centres d’administration > Exchange**. 
 
-Pour plus d’informations, consultez la rubrique [définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+Pour plus d’informations, consultez la rubrique [définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Personnaliser vos messages de chiffrement
 
-Vous pouvez également appliquer votre personnalisation de campagne pour personnaliser l’apparence et le texte dans les messages électroniques. Pour plus d’informations, reportez-vous à la rubrique [Ajouter la marque de votre organisation à vos messages chiffrés](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption).
+Vous pouvez également appliquer votre personnalisation de campagne pour personnaliser l’apparence et le texte dans les messages électroniques. Pour plus d’informations, reportez-vous à la rubrique [Ajouter la marque de votre organisation à vos messages chiffrés](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
 

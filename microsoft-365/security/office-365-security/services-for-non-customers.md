@@ -14,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
-ms.openlocfilehash: 17d069a9bee76087790b608ba3c00bae9c644f99
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: cabb583aebc1baff1eb9f8286fceb2864b26deea
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441221"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031769"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Services pour les non clients qui envoient des messages vers Office 365
 
@@ -46,7 +46,7 @@ Microsoft propose plusieurs options de support pour les personnes ayant des diff
 
 - Utilisez le [Portail de suppression d'adresses IP de la liste anti-courrier indésirable Office 365](https://sender.office.com) pour envoyer une demande de suppression de votre adresse IP de la liste des expéditeurs bloqués.
 
-- Lisez les [forums de la communauté Microsoft](https://community.office365.com/en-us/f/).
+- Lisez les [forums de la communauté Microsoft](https://community.office365.com/f/).
 
 - Contactez le client Office 365 auquel vous essayez d'envoyer un e-mail à l'aide d'une autre méthode et demandez-lui de contacter le support Microsoft et de demander un ticket d'assistance de votre part. Dans certains cas, pour des raisons juridiques, le support Microsoft doit communiquer directement avec l'expéditeur qui possède l'espace IP qui est bloqué. Toutefois, les personnes qui ne sont pas des clients ne peuvent généralement pas demander de tickets d'assistance.
 

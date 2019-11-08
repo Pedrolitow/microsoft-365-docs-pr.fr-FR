@@ -1,5 +1,5 @@
 ---
-title: 'Signaler le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web '
+title: 'Signaler les courriers indésirables et les tentatives de hameçonnage dans Outlook sur le web '
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,14 +14,14 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook sur le Web les utilisateurs peuvent signaler des courriers indésirables et des tentatives de hameçonnage à l’aide des options de création de rapports de messagerie intégrées. Vous pouvez également informer Microsoft qu’un message électronique a été identifié de manière incorrecte comme courrier indésirable (courrier indésirable).
-ms.openlocfilehash: 0191394c1e0c0f43c65af977c219630c65b6a292
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f066181e912060b137437893dee545787fa405a2
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078408"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031799"
 ---
-# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Signaler le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web 
+# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Signaler les courriers indésirables et les tentatives de hameçonnage dans Outlook sur le web 
 
 Il peut être frustrant pour les membres de votre organisation de recevoir du courrier indésirable ou de manquer un message important identifié à tort comme indésirable. Nous nous efforçons constamment d'améliorer les filtres anti-spam Exchange Online Protection (EOP) pour les rendre plus précis, et vous et vos utilisateurs finals peuvent nous aider dans cette tâche. Les utilisateurs de Microsoft Outlook sur le web peuvent signaler les courriers indésirables (spam) et les tentatives d'hameçonnage à l'aide des options intégrées de signalement du courrier électronique. Vous pouvez également laisser Microsoft déterminer si un message électronique a été incorrectement identifié comme courrier indésirable (spam).
   
@@ -64,7 +64,7 @@ Quand un message est incorrectement identifié comme courrier indésirable par O
 
 [En savoir plus sur le courrier indésirable et le hameçonnage](https://go.microsoft.com/fwlink/p/?LinkId=270068)
 
-[Complément de création de rapports de courrier indésirable pour Microsoft Outlook](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
+[Complément de création de rapports de courrier indésirable pour Microsoft Outlook](https://docs.microsoft.com/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 

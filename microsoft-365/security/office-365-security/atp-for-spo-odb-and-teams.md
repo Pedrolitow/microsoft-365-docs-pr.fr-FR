@@ -14,13 +14,14 @@ search.appverid:
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: Étendez la protection avancée contre les menaces Office 365 aux fichiers dans SharePoint Online, OneDrive entreprise et Microsoft teams pour activer la collaboration en toute sécurité pour votre organisation.
-ms.openlocfilehash: 151acef2c5993d4deef77e1dbb7960925c59864f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ad2b5e06dab99bb2cdbe4b0e4c1785d716d865f7
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079512"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035714"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP pour SharePoint, OneDrive et Microsoft teams
 
@@ -28,7 +29,7 @@ ms.locfileid: "37079512"
 
 Les personnes partagent régulièrement des fichiers et collaborent à l’aide de SharePoint, de OneDrive et de Microsoft Teams. Avec [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), votre organisation peut collaborer de manière plus sûre. La protection avancée contre les menaces permet de détecter et de bloquer les fichiers identifiés comme étant malveillants dans les sites d’équipe et les bibliothèques de documents.  
   
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Lorsqu’un fichier dans SharePoint Online, OneDrive entreprise et Microsoft teams a été identifié comme malveillant, la protection avancée contre les menaces s’intègre directement aux magasins de fichiers pour verrouiller ce fichier. L’image suivante montre un exemple de fichier malveillant détecté dans une bibliothèque.
   
@@ -42,11 +43,11 @@ En fonction de la configuration d’Office 365, les personnes peuvent ou non té
   
 [![Téléchargement d’un fichier bloqué dans OneDrive entreprise](../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
-Pour plus d’informations, reportez-vous à [activer l’ATP Office 365 pour SharePoint, OneDrive et Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
+Pour obtenir plus d’informations, consultez l’article [Activer Office 365 ATP pour SharePoint, OneDrive et Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
   
 ## <a name="keep-these-points-in-mind"></a>Gardez les points suivants à l’esprit
 
-- La protection avancée contre les menaces n’analysera pas chaque fichier unique dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Il s'agit du comportement par défaut. Les fichiers sont analysés de manière asynchrone, par le biais d’un processus qui utilise des événements d’activité de partage et d’invité, ainsi que des signaux de menace et heuristiques pour identifier les fichiers malveillants.
+- La protection avancée contre les menaces n’analysera pas chaque fichier unique dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Il s’agit du comportement par défaut. Les fichiers sont analysés de manière asynchrone, par le biais d’un processus qui utilise des événements d’activité de partage et d’invité, ainsi que des signaux de menace et heuristiques pour identifier les fichiers malveillants.
 
 - Assurez-vous que vos sites SharePoint sont configurés pour utiliser l' [expérience moderne](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Lorsqu’un fichier est identifié comme malveillant et bloqué, les utilisateurs peuvent voir qu’il s’est produit dans l’expérience moderne, mais pas dans l’affichage classique. La protection contre l’ATP s’applique si l’expérience moderne ou la vue standard est utilisée ; Toutefois, les indicateurs visuels signalant qu’un fichier est bloqué sont présents uniquement dans l’expérience moderne.
     
@@ -62,7 +63,7 @@ Pour plus d’informations, reportez-vous à [activer l’ATP Office 365 pour Sh
   
 Lorsqu’un fichier dans SharePoint Online, OneDrive entreprise ou Microsoft teams est identifié comme malveillant, outre l’ATP empêche le fichier d’être ouvert ou partagé, ce fichier est inclus dans la liste des éléments mis en quarantaine. (Dans le centre &amp; de sécurité conformité, accédez à la **** \> **mise en quarantaine** et au filtre **du contenu**de la **gestion** \> des menaces.) 
   
-Si vous faites partie de l’équipe de sécurité Office 365 de votre organisation et que vous disposez des [autorisations nécessaires dans le &amp; Centre de sécurité conformité d’Office 365](permissions-in-the-security-and-compliance-center.md), vous pouvez télécharger, publier, signaler et supprimer des fichiers détectés comme malveillants par la protection avancée contre les menaces. à partir de la quarantaine.
+Si vous faites partie de l’équipe de sécurité Office 365 de votre organisation et que vous disposez des [autorisations nécessaires dans le &amp; Centre de sécurité conformité d’Office 365](permissions-in-the-security-and-compliance-center.md), vous pouvez télécharger, publier, signaler et supprimer des fichiers détectés comme malveillants par ATP à partir de la mise en quarantaine.
   
 - Le fait de **libérer et de signaler** un fichier supprime le bloc ATP sur le fichier dans le site d’équipe ou la bibliothèque de documents respectif pour SharePoint, OneDrive ou Microsoft Teams. Les utilisateurs peuvent alors ouvrir, partager et télécharger le fichier. En cas de sélection de l’option **Envoyer un rapport à Microsoft** , le fichier est signalé comme faux positif pour Microsoft. 
     

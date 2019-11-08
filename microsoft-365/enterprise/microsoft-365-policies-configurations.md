@@ -14,24 +14,24 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 1fae59706a77663090d4f29cc6a34b339c11e92c
-ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
+ms.openlocfilehash: eba186233efa5bebb980c4e16aafb0fe854910c9
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2019
-ms.locfileid: "37481302"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031319"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
 Cette série d’articles explique comment configurer un accès sécurisé aux services Cloud via les produits Enterprise Mobility + Security (EMS) en implémentant un environnement et une configuration recommandés, y compris un ensemble de stratégies d’accès conditionnel et fonctionnalités associées. EMS est un composant essentiel de Microsoft 365. Vous pouvez utiliser ces conseils pour protéger l’accès à tous les services intégrés à Azure Active Directory, y compris les services Office 365, d’autres services SaaS et les applications locales publiées avec le proxy d’application Azure AD. 
 
-Ces recommandations sont alignées sur le score de sécurité Microsoft et le [score d’identité dans Azure ad](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score), et augmentent ces scores pour votre organisation. Ces recommandations vous aideront également à mettre [en œuvre ces cinq étapes pour sécuriser votre infrastructure d’identité](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps). 
+Ces recommandations sont alignées sur le score de sécurité Microsoft et le [score d’identité dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score), et augmentent ces scores pour votre organisation. Ces recommandations vous aideront également à mettre [en œuvre ces cinq étapes pour sécuriser votre infrastructure d’identité](https://docs.microsoft.com/azure/security/azure-ad-secure-steps). 
 
 Microsoft sait que certaines organisations ont des exigences ou des complexités d’environnement uniques. Si vous êtes l’une de ces organisations, utilisez ces recommandations comme point de départ. Toutefois, la plupart des organisations peuvent mettre en œuvre ces recommandations comme indiqué. 
 
 ## <a name="intended-audience"></a>Public cible
 
-Ces recommandations sont destinées aux architectes d’entreprise et aux professionnels de l’informatique qui sont familiarisés avec [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx) et [Microsoft Enterprise Mobility + Security](http://microsoft.com/ems), qui inclut, entre autres, Azure Active Directory (identité), Microsoft Intune (gestion des appareils) et Azure information protection (protection des données).
+Ces recommandations sont destinées aux architectes d’entreprise et aux professionnels de l’informatique qui sont familiarisés avec [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx) et [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), qui inclut, entre autres, Azure Active Directory (identité), Microsoft Intune (gestion des appareils) et Azure information protection (protection des données).
 
 ### <a name="customer-environment"></a>Environnement du client
 
@@ -69,7 +69,7 @@ Il est important d’utiliser des niveaux de protection cohérents entre vos don
 
 **Solutions de protection des fichiers dans Office 365**<br/>
 ![Miniature de l’affiche « solutions de protection de fichier dans Office 365 »](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>Compromis entre sécurité et productivité
 
@@ -114,7 +114,7 @@ Les stratégies [Intune App protection](https://docs.microsoft.com/intune/app-pr
 
 Ce guide vous montre comment créer des stratégies recommandées pour appliquer l’utilisation des applications approuvées et déterminer comment ces applications peuvent être utilisées avec vos données métiers.
 
-### <a name="office-365"></a>Office 365
+### <a name="office-365"></a>Office 365
 
 Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès à Office 365, notamment Exchange Online, SharePoint Online et OneDrive entreprise. En plus de mettre en œuvre ces stratégies, nous vous recommandons d’augmenter également le niveau de protection pour votre client Office 365 à l’aide de ces ressources :
 

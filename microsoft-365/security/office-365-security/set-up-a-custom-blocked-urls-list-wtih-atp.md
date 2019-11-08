@@ -15,17 +15,17 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer une liste d’URL bloquées pour votre organisation à l’aide d’Office 365 Advanced Threat Protection. Les URL bloquées s’appliquent aux messages électroniques et aux documents Office en fonction de vos stratégies de liens fiables ATP.
-ms.openlocfilehash: 738509978bfafb44cd289113ef77c3d12fb79a78
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ab79f86646ffd195b31d46980c3bd3bd3bb8f444
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079731"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032059"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL bloquées personnalisée à l’aide de liens fiables Office 365 ATP
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients professionnels qui disposent d' [Office 365 Advanced Threat Protection](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Avec [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), votre organisation peut avoir une liste personnalisée d’adresses de sites Web (URL) bloquées. Lorsqu’une URL est bloquée, les personnes qui cliquent sur les liens vers l’URL bloquée sont dirigées vers une [page d’avertissement](atp-safe-links-warning-pages.md) semblable à l’image suivante : 
   
@@ -43,9 +43,9 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer de l’un d
 
 |Role  |WHERE/How Assigned  |
 |---------|---------|
-|Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+|Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
 |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
-|Gestion de l’organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Gestion d’Organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
 > Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
@@ -66,7 +66,7 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer de l’un d
 
 Lorsque vous ajoutez des URL à votre liste, gardez les points suivants à l’esprit : 
 
-- N’incluez pas une barre oblique **/**() à la fin de l’URL. Par exemple, au lieu de `http://www.contoso.com/`taper, `http://www.contoso.com`entrez.
+- N’incluez pas une barre oblique **/**() à la fin de l’URL. Par exemple, au lieu de `https://www.contoso.com/`taper, `https://www.contoso.com`entrez.
     
 - Vous pouvez spécifier une URL de domaine uniquement (par `contoso.com` exemple `tailspintoys.com`, ou). Cette opération bloque les clics sur les URL qui contiennent le domaine.
 
@@ -76,10 +76,10 @@ Lorsque vous ajoutez des URL à votre liste, gardez les points suivants à l’e
     
 |**Exemple d’entrée**|**Ce qu’il fait**|
 |:-----|:-----|
-|`contoso.com` ou `*contoso.com*`  <br/> |Bloque le domaine, les sous-domaines et les chemins d' `https://www.contoso.com`accès `http://sub.contoso.com`, par exemple, et`http://contoso.com/abc`  <br/> |
-|`http://contoso.com/a`  <br/> |Bloque un `http://contoso.com/a` site, mais pas les sous-chemins supplémentaires comme`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Bloque un `http://contoso.com/a` site et des sous-chemins supplémentaires comme`http://contoso.com/a/b`  <br/> |
-|`http://toys.contoso.com*`  <br/> |Bloque un sous-domaine (« jouets » dans ce cas) tout en permettant de cliquer sur d' `http://contoso.com` autres `http://home.contoso.com`URL de domaine (par exemple, ou).  <br/> |
+|`contoso.com` ou `*contoso.com*`  <br/> |Bloque le domaine, les sous-domaines et les chemins d' `https://www.contoso.com`accès `https://sub.contoso.com`, par exemple, et`https://contoso.com/abc`  <br/> |
+|`https://contoso.com/a`  <br/> |Bloque un `https://contoso.com/a` site, mais pas les sous-chemins supplémentaires comme`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a*`  <br/> |Bloque un `https://contoso.com/a` site et des sous-chemins supplémentaires comme`https://contoso.com/a/b`  <br/> |
+|`https://toys.contoso.com*`  <br/> |Bloque un sous-domaine (« jouets » dans ce cas) tout en permettant de cliquer sur d' `https://contoso.com` autres `https://home.contoso.com`URL de domaine (par exemple, ou).  <br/> |
    
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Procédure de définition des exceptions pour certains utilisateurs d’une organisation

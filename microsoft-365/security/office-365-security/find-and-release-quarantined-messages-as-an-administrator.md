@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: 8f127dd1e7c14bbf2ae1d3bf23e611ef5c3ac1dc
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: c8779fb89ecb1deda92382ae2d91de4e54b303e7
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37576032"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032359"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur
 
@@ -37,9 +37,9 @@ Vous pouvez consulter la liste de tous les messages mis en quarantaine, ou reche
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée « quarantaine » dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée « quarantaine » dans la rubrique [autorisations des fonctionnalités dans Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
-- Vous pouvez diffuser ou signaler plusieurs messages à la fois sur la page de **mise en quarantaine**. Vous pouvez également créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages et la cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les diffuser.
+- Vous pouvez diffuser ou signaler plusieurs messages à la fois sur la page de **mise en quarantaine**. Vous pouvez également créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages et la cmdlet [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les diffuser.
 
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -54,7 +54,7 @@ Dans le centre d'administration Exchange, une recherche avancée vous permet de 
 
 2. Dans la fenêtre **Recherche avancée**, sélectionnez une combinaison quelconque des conditions suivantes. Pour sélectionner une condition, activez la case à cocher associée. Les caractères génériques ne sont pas pris en charge.
 
-   1. **ID du message**: vous pouvez utiliser ce paramètre pour effectuer une recherche ciblée pour un message spécifique. Par exemple, si un message est envoyé par un utilisateur de votre organisation, ou adressé à ce dernier, mais n'atteint jamais sa destination, vous pouvez rechercher le message à l'aide de la fonctionnalité de suivi des messages. Pour plus d'informations, consultez la rubrique [Exécution d'un suivi de message et affichage des résultats](http://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx). Si vous découvrez que le message a été mis en quarantaine, parce qu'il correspond à une règle ou a été identifié comme un courrier indésirable, vous pouvez facilement le retrouver en spécifiant son ID. Veillez à inclure toute la chaîne d'ID de message. Celle-ci peut comprendre des crochets (\<\>).
+   1. **ID du message**: vous pouvez utiliser ce paramètre pour effectuer une recherche ciblée pour un message spécifique. Par exemple, si un message est envoyé par un utilisateur de votre organisation, ou adressé à ce dernier, mais n'atteint jamais sa destination, vous pouvez rechercher le message à l'aide de la fonctionnalité de suivi des messages. Pour plus d'informations, consultez la rubrique [Exécution d'un suivi de message et affichage des résultats](https://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx). Si vous découvrez que le message a été mis en quarantaine, parce qu'il correspond à une règle ou a été identifié comme un courrier indésirable, vous pouvez facilement le retrouver en spécifiant son ID. Veillez à inclure toute la chaîne d'ID de message. Celle-ci peut comprendre des crochets (\<\>).
 
    2. **Adresse de messagerie**de l’expéditeur : spécifiez l’adresse de messagerie de la personne qui a envoyé le message.
 
@@ -62,9 +62,9 @@ Dans le centre d'administration Exchange, une recherche avancée vous permet de 
 
    4. **Subject**: spécifiez le texte de la ligne d’objet du message.
 
-   5. **Received**: vous pouvez indiquer que le message a été reçu par mise en quarantaine au cours des dernières 24 heures ( **aujourd’hui**), au cours des 48 dernières heures ( **2 derniers jours**), au cours de la semaine précédente ( **7 derniers jours**), ou vous pouvez sélectionner un intervalle de temps personnalisé pendant lequel le message a été reçu par la mise en quarantaine.
+   5. **Received**: vous pouvez indiquer que le message a été reçu par mise en quarantaine au cours des dernières 24 heures ( **aujourd’hui**), au cours des 48 dernières heures ( **2 derniers jours**), au cours de la semaine précédente ( **7 derniers jours**), ou vous pouvez sélectionner un intervalle de temps personnalisé au cours duquel le message a été reçu par la mise en quarantaine.
 
-   6. **Expire**: vous pouvez indiquer que le message sera supprimé de la quarantaine au cours des prochaines 24 heures ( **aujourd’hui**), au cours des prochaines 48 heures ( **2 prochains jours**), au cours de la semaine suivante (7 prochains **jours**) ou vous pouvez sélectionner un intervalle de temps personnalisé pendant duquel le message sera supprimé de la quarantaine.
+   6. **Expire**: vous pouvez indiquer que le message sera supprimé de la quarantaine au cours des prochaines 24 heures ( **aujourd’hui**), au cours des prochaines 48 heures ( **2 prochains jours**), au cours de la semaine suivante (7 prochains **jours**) ou vous pouvez sélectionner un intervalle de temps personnalisé au cours duquel le message sera supprimé de la quarantaine.
 
       > [!IMPORTANT]
       > Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 30 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont maintenus en quarantaine pendant 30 jours, en fonction de la période de rétention définie dans votre stratégie de filtrage de contenu par défaut. Une fois cette période écoulée, Office 365 supprime les messages qui ne peuvent ensuite plus être récupérés. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n’est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).

@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique présente les questions fréquemment posées ainsi que les réponses au sujet de la mise en quarantaine hébergée.
-ms.openlocfilehash: 393542596eacd26a4f64237f666fabfe236dceed
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: c61d2e3a9a6bcb847bf7e850e4bb13a7f1160d59
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510531"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039003"
 ---
 # <a name="quarantine-faq"></a>FAQ sur la mise en quarantaine
 
@@ -39,11 +39,11 @@ R. En tant qu'administrateur, vous pouvez rechercher et afficher des détails su
   
 En tant qu'utilisateur final, vous pouvez gérer vos propres messages mis en quarantaine via : 
   
-- L'interface utilisateur de mise en quarantaine du courrier électronique. Pour plus d’informations, voir [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
+- L'interface utilisateur de mise en quarantaine du courrier électronique. Pour plus d’informations, voir [Find and Release Quarantined Messages (End Users)](https://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
         
  **Q. Comment accorder l'accès au courrier indésirable mis en quarantaine aux utilisateurs finaux ?**
   
-A. Pour pouvoir accéder à la mise en quarantaine du courrier indésirable de l’utilisateur final, les utilisateurs finaux doivent disposer d’un ID d’utilisateur et d’un mot de passe Office 365 valides. Les clients EOP qui protègent les boîtes aux lettres locales doivent être des utilisateurs de messagerie valides créés via la synchronisation d’annuaires ou le centre d’administration Exchange. Pour plus d’informations sur la gestion des utilisateurs, les administrateurs EOP peuvent se référer à la rubrique [gérer les utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Pour les clients autonomes EOP, nous vous recommandons d’utiliser la synchronisation d’annuaires et d’activer le blocage du périmètre basé sur l’annuaire ; Pour plus d’informations, consultez la rubrique [utiliser le blocage du périmètre basé sur l’annuaire pour rejeter les messages envoyés à des destinataires non valides](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
+A. Pour pouvoir accéder à la mise en quarantaine du courrier indésirable de l’utilisateur final, les utilisateurs finaux doivent disposer d’un ID d’utilisateur et d’un mot de passe Office 365 valides. Les clients EOP qui protègent les boîtes aux lettres locales doivent être des utilisateurs de messagerie valides créés via la synchronisation d’annuaires ou le centre d’administration Exchange. Pour plus d’informations sur la gestion des utilisateurs, les administrateurs EOP peuvent se référer à la rubrique [gérer les utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Pour les clients autonomes EOP, nous vous recommandons d’utiliser la synchronisation d’annuaires et d’activer le blocage du périmètre basé sur l’annuaire ; Pour plus d’informations, consultez la rubrique [utiliser le blocage du périmètre basé sur l’annuaire pour rejeter les messages envoyés à des destinataires non valides](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
   
  **Q. Est-ce que du courrier autre que du courrier indésirable peut être envoyé en quarantaine ?**
   
@@ -55,21 +55,21 @@ A. Par défaut, les messages de courrier indésirable mis en quarantaine sont co
   
  **Q. Est-ce que je peux libérer ou signaler plusieurs messages mis en quarantaine à la fois ?**
   
-R. Oui, jusqu’à 100 messages peuvent être publiés en même temps dans le portail de mise en quarantaine. De plus, les administrateurs peuvent créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages, et la cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les libérer. 
+R. Oui, jusqu’à 100 messages peuvent être publiés en même temps dans le portail de mise en quarantaine. De plus, les administrateurs peuvent créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages, et la cmdlet [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les libérer. 
   
  **Q. Are wildcards supported when searching for quarantined messages? Can I search for quarantined messages for a specific domain?**
   
 R. Les caractères génériques ne sont pas pris en charge lors de la spécification des critères de recherche dans le Centre d'administration Exchange. Par exemple, si vous recherchez un expéditeur, vous devez indiquer l'adresse électronique complète.
   
-Le recours à Windows PowerShell à distance permet aux administrateurs d'utiliser la cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages mis en quarantaine pour un domaine spécifique (par exemple, contoso.com) : 
+Le recours à Windows PowerShell à distance permet aux administrateurs d'utiliser la cmdlet [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages mis en quarantaine pour un domaine spécifique (par exemple, contoso.com) : 
   
-```
+```powershell
 Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
 ```
 
-Les résultats peuvent être transmis à la cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx). Incluez le paramètre -ReleaseToAll pour débloquer le message et l'envoyer à tous ses destinataires. Une fois qu'un message est débloqué, il ne peut plus l'être de nouveau. 
+Les résultats peuvent être transmis à la cmdlet [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx). Incluez le paramètre -ReleaseToAll pour débloquer le message et l'envoyer à tous ses destinataires. Une fois qu'un message est débloqué, il ne peut plus l'être de nouveau. 
   
-```
+```powershell
 Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
 ```
 

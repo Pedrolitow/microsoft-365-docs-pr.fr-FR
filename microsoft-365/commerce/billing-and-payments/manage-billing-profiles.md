@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les profils de facturation prennent en charge les factures.
 keywords: Profil de facturation, factures, frais, charges gérées
-ms.openlocfilehash: bd963ff993a064615f0f7ad06c8f2cc5c3401ad2
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 9db8b949cb07c8386505234d9d88aa2627a752b5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646425"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029048"
 ---
 # <a name="manage-billing-profiles"></a>Gérer les profils de facturation
 Pour les clients commerciaux qui achètent des produits et des services auprès de Microsoft, les profils de facturation vous permettent de personnaliser les éléments inclus dans votre facture, ainsi que le mode de paiement de vos factures.
@@ -70,4 +70,4 @@ Les rôles sur les profils de facturation sont des autorisations permettant de c
 
 Si vous avez des questions ou si vous avez besoin d’aide pour vos frais Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créez une demande de support technique avec Azure</a>.
 
-Si vous avez des questions ou si vous avez besoin d’aide pour votre profil de facturation dans le centre d’administration Microsoft 365, [Contactez le support technique pour les produits professionnels](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products).
+Si vous avez des questions ou si vous avez besoin d’aide pour votre profil de facturation dans le centre d’administration Microsoft 365, [Contactez le support technique pour les produits professionnels](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).

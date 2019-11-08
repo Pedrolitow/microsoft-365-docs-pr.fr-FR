@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441091"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034185"
 ---
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
@@ -33,7 +33,7 @@ Cette rubrique fournit des réponses aux questions fréquemment posées concerna
 R. **Pour les messages entrants :** L'essentiel du courrier indésirable est supprimé par filtrage des connexions, sur la base de l'adresse IP de l'expéditeur. Le service inspecte ensuite le contenu du message. Par défaut, le courrier indésirable filtré sur le contenu est envoyé au dossier Courrier indésirable du destinataire. Vous pouvez modifier ce comportement. Par exemple, vous pouvez mettre les messages de courrier indésirable en quarantaine en configurant la stratégie de filtrage de contenu. 
   
 > [!IMPORTANT]
-> Pour les clients autonomes EOP : afin de s’assurer que l’action **déplacer le message vers le dossier courrier indésirable** fonctionnera avec des boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, consultez la rubrique [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Pour les clients autonomes EOP : afin que l’action **déplacer le message vers le dossier courrier indésirable** fonctionne avec des boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter les en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, consultez la rubrique [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Pour les messages sortants :** le message est routé par le pool de remise à risque plus élevé ou est retourné et non remis. Dans ce cas, l'expéditeur doit recevoir un message de notification d'état de remise (DSN) indiquant que le message n'a pas pu être remis. 
   
@@ -73,13 +73,13 @@ R. Les messages de courrier indésirable et de courrier non indésirable peuvent
   
 A. Oui, par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le centre d’administration 365 de Microsoft. Ce rapport indique le volume du courrier indésirable sous forme de nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
   
-Clients Exchange Online : [surveillance, création de rapports et suivi des messages dans Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Clients Exchange Online : [surveillance, création de rapports et suivi des messages dans Exchange Online](https://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
 Clients Exchange Online Protection : [création de rapports et suivi des messages dans Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
   
  **Q. Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?**
   
-R. Oui, l'outil de suivi des messages vous permet de suivre les messages électroniques quand ils sont acheminés via le service afin de déterminer ce qui leur est arrivé. Pour plus d’informations sur l’utilisation de l’outil de suivi des messages afin de déterminer pourquoi un message a été marqué comme courrier indésirable, voir was a- [t-il un message marqué comme courrier indésirable ?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
+R. Oui, l'outil de suivi des messages vous permet de suivre les messages électroniques quand ils sont acheminés via le service afin de déterminer ce qui leur est arrivé. Pour plus d’informations sur l’utilisation de l’outil de suivi des messages afin de déterminer pourquoi un message a été marqué comme courrier indésirable, voir was a- [t-il un message marqué comme courrier indésirable ?](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **Q. Le service limite-t-il (limite de débit) ma messagerie si mes utilisateurs envoient du courrier indésirable sortant ?**
   
@@ -89,15 +89,15 @@ Vous pouvez envoyer une notification à une adresse de messagerie spécifique qu
   
  **Q. Puis-je utiliser un fournisseur tiers de blocage de courrier indésirable et de programme malveillant en association avec Exchange Online ?**
   
-R. Oui, vous pouvez configurer un autre service de filtrage anti-courrier indésirable et anti-programme malveillant pour protéger vos boîtes aux lettres Exchange Online. Pour le courrier entrant, vous devez rediriger les messages électroniques vers le fournisseur tiers en modifiant vos enregistrements MX afin qu'ils pointent vers ce fournisseur, puis rediriger les messages vers EOP à des fins de traitement supplémentaire. Pour le courrier sortant, configurez la destination de remise de message au fournisseur tiers (hôte actif), comme indiqué dans la rubrique [Scenario: Outbound Smart Hosting](http://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+R. Oui, vous pouvez configurer un autre service de filtrage anti-courrier indésirable et anti-programme malveillant pour protéger vos boîtes aux lettres Exchange Online. Pour le courrier entrant, vous devez rediriger les messages électroniques vers le fournisseur tiers en modifiant vos enregistrements MX afin qu'ils pointent vers ce fournisseur, puis rediriger les messages vers EOP à des fins de traitement supplémentaire. Pour le courrier sortant, configurez la destination de remise de message au fournisseur tiers (hôte actif), comme indiqué dans la rubrique [Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
   
  **Q. Est-ce que Microsoft dispose de documentation concernant la façon dont je peux me protéger contre les tentatives de hameçonnage ?**
   
 Oui, en effet, veuillez consulter les articles suivants :
   
-[Obtenez de l'aide pour les escroqueries par hameçonnage, les fraudes de loteries et autres types d'arnaques](http://go.microsoft.com/fwlink/p/?LinkId=325606)
+[Obtenez de l'aide pour les escroqueries par hameçonnage, les fraudes de loteries et autres types d'arnaques](https://go.microsoft.com/fwlink/p/?LinkId=325606)
   
-Arnaques par message électronique ou site web : [comment se protéger](http://go.microsoft.com/fwlink/p/?LinkID=325607)
+Arnaques par message électronique ou site web : [comment se protéger](https://go.microsoft.com/fwlink/p/?LinkID=325607)
   
  **Q. Le courrier indésirable et les messages malveillants font-ils l'objet d'une enquête pour savoir qui les a envoyés, ou sont-ils transférés à des services chargés de l'application de la loi ?**
   

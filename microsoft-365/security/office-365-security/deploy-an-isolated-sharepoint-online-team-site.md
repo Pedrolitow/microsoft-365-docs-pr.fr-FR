@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Résumé : Découvrez comment déployer un nouveau site d’équipe SharePoint Online isolé en suivant ces instructions détaillées.'
-ms.openlocfilehash: bd5915f43c6ff70477077f0047e0f2dfc97a874b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 67c6a5304e067ac847c9f8158d48a588ca118220
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080135"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039113"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Déploiement d’un site d’équipe SharePoint Online isolé
 
@@ -109,7 +109,7 @@ Pour PowerShell, [Connectez-vous d’abord avec le module Azure Active Directory
   
 Ensuite, utilisez le bloc de commandes suivant pour ajouter un compte d’utilisateur individuel à un groupe d’accès :
   
-```
+```powershell
 $userUPN="<UPN of the user account>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -120,7 +120,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
   
 Si vous avez stocké les UPN des comptes d’utilisateur des groupes d’accès dans un fichier texte, vous pouvez exécuter le bloc de commandes PowerShell suivant pour les ajouter tous en même temps :
   
-```
+```powershell
 $grpName="<display name of the access group>"
 $fileName="<path and name of the file containing the list of account UPNs>"
 $grpID=(Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -129,7 +129,7 @@ Get-Content $fileName | ForEach { $userUPN=$_; Add-AzureADGroupMember -RefObject
 
 Pour PowerShell, utilisez le bloc de commandes suivant pour ajouter un groupe individuel à un groupe d’accès :
   
-```
+```powershell
 $nestedGrpName="<display name of the group to add to the access group>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $nestedGrpName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -146,7 +146,7 @@ Voici les résultats que vous devriez obtenir :
     
 Validez la liste des membres du groupe pour chaque groupe d’accès avec le centre d’administration Microsoft 365 ou avec le bloc de commandes PowerShell suivant :
   
-```
+```powershell
 $grpName="<display name of the access group>"
 Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID | Sort UserPrincipalName | Select UserPrincipalName,DisplayName,UserType
 ```
@@ -185,7 +185,7 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les aut
     
 3. Sous le nouvel onglet **Autorisations** dans votre navigateur, cliquez sur **Paramètres des demandes d’accès**.
     
-4. Dans la boîte de dialogue **paramètres des demandes d’accès** , désélectionnez **autoriser le membre pour partager le site et les fichiers et dossiers individuels** et **autoriser les demandes d’accès** (de sorte que les trois cases à cocher soient désactivées), puis cliquez sur **OK**.
+4. Dans la boîte de dialogue **Paramètres de demande d’accès**, désélectionnez les cases **Autoriser les membres à partager le site et les fichiers et dossiers individuels** et **Autoriser les demandes d’accès** (les trois cases doivent être décochées), puis cliquez sur **OK**.
     
 5. Dans l’onglet **autorisations** de votre navigateur, cliquez sur ** \<nom du site> membres** de la liste.
     
