@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Mises à niveau automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
-ms.openlocfilehash: 4d1601c23d160d5618d491cd168583c78b54181c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033629"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078083"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Mises à niveau locales automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
 
@@ -44,7 +44,7 @@ Les mises à niveau sur place peuvent être automatisées à l’aide d’outils
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Mise à niveau d’un petit nombre d’ordinateurs
 
-Pour un ordinateur ou une poignée d’ordinateurs, l’approche manuelle de la mise à niveau est généralement la meilleure option par rapport aux approches plus automatisées. Vous pouvez trouver les logiciels et licences nécessaires auprès du [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=808282), d’autres distributeurs de logiciels ou du [Centre de gestion des licences en volume](https://www.microsoft.com/licensing/servicecenter/default.aspx) si vous avez des licences en volume. Pour obtenir une aide détaillée sur la mise à niveau d’un seul PC vers Windows 10, ainsi que sur les options de restauration après la mise à niveau, voir le [guide détaillé de la mise à niveau de Windows 7 vers Windows 10](https://docs.microsoft.com/fr-FR/microsoft-365/enterprise/windows-7-to-windows-10-upgrade).
+Pour un ordinateur ou une poignée d’ordinateurs, l’approche manuelle de la mise à niveau est généralement la meilleure option par rapport aux approches plus automatisées. Vous pouvez trouver les logiciels et licences nécessaires auprès du [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=808282), d’autres distributeurs de logiciels ou du [Centre de gestion des licences en volume](https://www.microsoft.com/licensing/servicecenter/default.aspx) si vous avez des licences en volume. Pour obtenir une aide détaillée sur la mise à niveau d’un seul PC vers Windows 10, ainsi que sur les options de restauration après la mise à niveau, voir le [guide détaillé de la mise à niveau de Windows 7 vers Windows 10](https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade).
 
 ## <a name="how-to-upgrade-many-computers"></a>Mise à niveau de nombreux ordinateurs
 
