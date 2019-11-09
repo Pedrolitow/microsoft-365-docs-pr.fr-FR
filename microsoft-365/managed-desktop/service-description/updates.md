@@ -4,14 +4,15 @@ description: La mise à jour de Microsoft Managed Desktop représente un équili
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ed95d7d854422fe0cd2379e21b5de36a0c680c4b
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: 89ebb1bf9787ae90eac1b62078157f1338ce5dcd
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523579"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074756"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Gestion des mises à jour dans le bureau géré Microsoft
 
@@ -58,7 +59,7 @@ Fonctionnement du déploiement des mises à jour :
 <tr><td>Mises à jour de fonctionnalité pour le système d’exploitation</td><td>0 jour</td><td>30 jours</td><td>60 jours</td><td>90 jours</td></tr>
 <tr><td>Pilotes/microprogramme</td><td colspan="4">Suit la planification des mises à jour de la qualité</td></tr>
 <tr><td>Définition de la protection antivirus</td><td colspan="4">Mise à jour avec chaque analyse</td></tr>
-<tr><td>Office 365 ProPlus</td><td colspan="4">Suit le canal mensuel d’Office
+<tr><td>Office 365 ProPlus</td><td colspan="4">Suit le canal mensuel d’Office
 </table>
 
 Pour plus d’informations sur le canal mensuel pour Office 365 ProPlus, consultez la rubrique [vue d’ensemble des canaux de mise à jour pour office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).

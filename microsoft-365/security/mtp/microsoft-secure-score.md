@@ -15,16 +15,16 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 74afe39e78990d794368ed19aa5fd5116bee17bb
-ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
+ms.openlocfilehash: dbe84eb5c9c9fb8ff6e052f8a8fc1f257985ee70
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37774907"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076338"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
-Microsoft Secure score est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. À partir d’un tableau de bord centralisé dans le centre de sécurité Microsoft 365, les organisations peuvent surveiller et gérer la sécurité des identités, des données, des applications, des périphériques et de l’infrastructure de Microsoft 365.
+Microsoft Secure score est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Le suivi des recommandations de score de sécurité peut protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le centre de sécurité Microsoft 365, les organisations peuvent surveiller et gérer la sécurité des identités, des données, des applications, des périphériques et de l’infrastructure de Microsoft 365.
 
 Le score de sécurité aide les organisations :
 
@@ -36,7 +36,7 @@ Les organisations ont accès à des visualisations robustes de mesures et tendan
 
 En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). En savoir plus sur le [type de ressource de score sécurisé](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage des rapports) ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs. La sécurité doit être équilibrée avec la convivialité et toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
 
@@ -44,7 +44,7 @@ Votre score est mis à jour en temps réel afin de refléter les informations pr
 
 ### <a name="how-improvement-actions-are-scored"></a>Comment les actions d’amélioration sont évaluées
 
-La plupart sont évaluées de manière binaire : Si vous implémentez l’action d’amélioration, par exemple créer une nouvelle stratégie ou activer un paramètre spécifique, vous obtenez 100% des points. Pour les autres actions d’amélioration, les points sont fournis sous la forme d’un pourcentage de la configuration totale. Par exemple, si l’action d’amélioration indique 30 points en protégeant tous vos utilisateurs à l’aide de l’authentification multifacteur et que vous ne disposez que de 5 de 100 Total utilisateurs protégés, vous disposez d’un score partiel d’environ 2 points (5 protected/100 Total * 30 pts max = 2 pts  score partiel).
+La plupart sont évaluées de manière binaire : Si vous implémentez l’action d’amélioration, par exemple créer une nouvelle stratégie ou activer un paramètre spécifique, vous obtenez 100% des points. Pour les autres actions d’amélioration, les points sont fournis sous la forme d’un pourcentage de la configuration totale. Par exemple, si l’action d’amélioration indique que vous obtenez 30 points en protégeant tous vos utilisateurs à l’aide de l’authentification multifacteur et que vous ne disposez que de 5 de 100 total d’utilisateurs protégés, vous disposez d’un score partiel d’environ 2 points (5 protected/100 Total * 30 max pts = 2 pts de score partiel).
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans le score de sécurité
 

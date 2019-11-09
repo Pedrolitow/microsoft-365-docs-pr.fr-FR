@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d858706a80cf66772ea3a422e07d4f773935446c
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034185"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076318"
 ---
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
@@ -89,9 +89,9 @@ Vous pouvez envoyer une notification à une adresse de messagerie spécifique qu
   
  **Q. Puis-je utiliser un fournisseur tiers de blocage de courrier indésirable et de programme malveillant en association avec Exchange Online ?**
   
-R. Oui, vous pouvez configurer un autre service de filtrage anti-courrier indésirable et anti-programme malveillant pour protéger vos boîtes aux lettres Exchange Online. Pour le courrier entrant, vous devez rediriger les messages électroniques vers le fournisseur tiers en modifiant vos enregistrements MX afin qu'ils pointent vers ce fournisseur, puis rediriger les messages vers EOP à des fins de traitement supplémentaire. Pour le courrier sortant, configurez la destination de remise de message au fournisseur tiers (hôte actif), comme indiqué dans la rubrique [Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+A. Oui, vous pouvez configurer un autre service de filtrage anti-courrier indésirable et anti-programme malveillant pour protéger vos boîtes aux lettres Exchange Online. Pour le courrier entrant, vous devez rediriger les messages électroniques vers le fournisseur tiers en modifiant vos enregistrements MX afin qu’ils pointent vers ce fournisseur, puis rediriger les messages vers EOP à des fins de traitement supplémentaire. Pour effectuer cette opération pour le courrier sortant, configurez la destination de remise des messages pour le fournisseur tiers (hôte actif).
   
- **Q. Est-ce que Microsoft dispose de documentation concernant la façon dont je peux me protéger contre les tentatives de hameçonnage ?**
+ **Q. Est-ce que Microsoft dispose de documentation concernant la façon dont je peux me protéger contre les tentatives de hameçonnage ?**
   
 Oui, en effet, veuillez consulter les articles suivants :
   
@@ -125,7 +125,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
     
     [Configurer SPF dans Office 365 pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-    [Créer des enregistrements DNS pour Office 365](https://go.microsoft.com/fwlink/?LinkID=275414)
+    [Foire aux questions domaines](/office365/admin/setup/domains-faq)
     
 5. **Signature de courrier électronique avec DKIM, canonisation assouplie.**
     

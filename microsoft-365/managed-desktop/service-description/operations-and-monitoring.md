@@ -4,14 +4,15 @@ description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c618c5bf2acf50d84aca354975670ed84b581601
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 9f0d1889e625ceba52f3e91ee950041f82e9750e
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431915"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074766"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Surveillance et opérations du bureau géré Microsoft
 
@@ -44,7 +45,7 @@ Voici un résumé de la façon dont le processus de modification est partagé en
 
 
 <table>
-<tr><th></th><th><p>Rôle de Microsoft:</p></th><th><p>Rôle du client:</p></th></tr>
+<tr><th></th><th><p>Rôle de Microsoft :</p></th><th><p>Rôle du client :</p></th></tr>
 <tr><td>Avant une modification</td><td><ul><li>Définir les attentes pour les modifications apportées au service.</li><li>Informer les clients 5 jours à l’avance pour les modifications qui requièrent l’intervention de l’administrateur.</li><li>Pour les modifications d’urgence, appliquez une atténuation avant de prévenir.</li></ul></td><td><ul><li>Comprendre les attentes pour les modifications et les communications.</li><li>Lisez régulièrement le centre de messages de bureau géré Microsoft.</li><li>Passer en revue et mettre à jour les processus de gestion des modifications internes.</li><li>Comprenez et vérifiez la conformité avec Microsoft Managed Desktop Requirements. </li><li>Accuser réception et approbation, le cas échéant.</li></ul></td></tr><tr><td>Pendant une modification</td><td><ul><li>Publier et déployer des mises à jour mensuelles de sécurité et non relatives à la sécurité pour les clients Windows 10 et Office 365.</li><li>Surveillez les signaux de données et les files d’attente de prise en charge.</li></ul></td><td><ul><li>Vérifiez le centre de messages du bureau géré Microsoft et examinez les informations supplémentaires.</li><li>   Effectuer les actions requises, le cas échéant, et tester les applications.</li><li>Si un scénario de réparation est pris en charge, créez une demande de support.</li></ul></td></tr><tr><td>Après une modification</td><td><ul><li>Recueillez les commentaires des clients afin d’améliorer le déploiement des futures modifications.</li><li>Surveillez les signaux de données et les files d’attente de prise en charge.</li></ul></td><td><ul><li>Collaborez avec les personnes de votre organisation pour adopter le changement.</li><li>   Passez en revue les processus de gestion des modifications et des adoptions pour gagner en efficacité.</li><li>Fournissez des commentaires généraux et des commentaires spécifiques dans l’outil de commentaires administrateur.</li><li>Former les utilisateurs à fournir des commentaires propres à l’application à l’aide du concentrateur de commentaires Windows et du bouton sourire dans les applications Office.</li></ul></td></tr>
 <table> 
 
@@ -59,7 +60,7 @@ Il existe plusieurs types de modifications apportées au service régulièrement
 
 Toutes les modifications n’ont pas le même impact sur vos utilisateurs et ne nécessitent pas toutes une action. Certains sont planifiés et d’autres non planifiés par leur nature (les mises à jour non relatives à la sécurité et les mises à jour de sécurité ne sont généralement pas planifiées). Selon le type de modification, le canal de communication peut varier. Le tableau suivant répertorie les types de modifications que vous pouvez vous attendre pour le service bureau géré Microsoft.
 
-|   | Les fonctionnalités |   Mises à jour non liées à la sécurité |  Sécurité
+|   | Les fonctionnalités |   Mises à jour non relatives à la sécurité |  Sécurité
 --- | --- | --- | ---
 **Type de modification** | -Mises à jour de fonctionnalités<br>-Nouvelles fonctionnalités ou applications<br>-Fonctionnalités déconseillées | Correctifs client pour des problèmes | Correctifs de sécurité
 **Préavis** | 5 jours remarquent les modifications qui nécessitent une action |    Non, ces éléments sont inclus dans la publication mensuelle   | Non, ces éléments sont inclus dans la publication mensuelle 
@@ -67,7 +68,7 @@ Toutes les modifications n’ont pas le même impact sur vos utilisateurs et ne 
 **Nécessite une action d’administrateur client** | Parfois |  Rarement |    Rarement 
 **Type d’action** | Modifier les paramètres | Communiquer les modifications aux utilisateurs | Modifier les paramètres d’administration     
 **Nécessite un test** | Vérifier les applications métiers, y compris les services d’accès à distance |  Parfois : tests du correctif par rapport aux processus ou aux personnalisations |   Rarement 
-**Exemples de modifications** | -Mises à jour de fonctionnalité: portail d’administration informatique simplifie l’envoi et la révision du ticket de support<br>-Nouvelles fonctionnalités ou applications: version semi-annuelle d’une mise à jour de la fonctionnalité Windows 10 | Correctifs basés sur les bogues signalés par le client |  
+**Exemples de modifications** | -Mises à jour de fonctionnalité : portail d’administration informatique simplifie l’envoi et la révision du ticket de support<br>-Nouvelles fonctionnalités ou applications : version semi-annuelle d’une mise à jour de la fonctionnalité Windows 10 | Correctifs basés sur les bogues signalés par le client |  
 
 
 ## <a name="standard-operating-procedures"></a>Procédures d’exploitation standard
@@ -82,7 +83,7 @@ Réseau (proxy, inspection de paquets, VPN)  | Conseillez et planifiez avec les 
 Comptes de service |-Implémenter, stocker en toute sécurité et gérer les informations d’identification.<br> -Communiquer un accès non autorisé ou utiliser ces informations d’identification à votre équipe des opérations de sécurité. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-N’attribuez pas de stratégie, d’authentification multifacteur, d’accès conditionnel ou de déploiement d’application aux comptes de service de bureau géré Microsoft.<br>-Ne pas réinitialiser le mot de passe ou utiliser les informations d’identification.<br>-Ouvrez une demande de support gravité C pour Microsoft Managed Desktop Operations si l’activité suspecte est observée dans les journaux d’audit Intune ou Azure, associés à ces comptes de service.
 Groupes d’appareils | : Implémentez et gérez l’appartenance des appareils dans les groupes de bureau gérés Microsoft.<br>-Utilisez les groupes de bureau gérés Microsoft pour gérer l’attribution et la publication de la configuration et des mises à jour sur les appareils. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas l’appartenance à un groupe de bureau géré Microsoft.<br>-Utilisez uniquement les groupes pour attribuer des certificats d’entreprise pour des services tels que le VPN, Windows Hello pour l’entreprise ou le chiffrement du courrier électronique ou la configuration du profil Wi-Fi d’entreprise.<br>-Où la co-gestion existe, excluez explicitement tous les groupes de bureau gérés par Microsoft lors du déploiement du client gestionnaire de configuration.
 Stratégies |  -Implémenter et gérer les stratégies de bureau géré Microsoft qui régissent l’état de configuration des appareils au sein du service.<br>-Déployez les mises à jour, les stratégies ou les fenêtres, de manière incrémentielle, à l’aide de groupes d’appareils.<br> -Exclure explicitement le ciblage des groupes de bureau gérés non-Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas ou n’affectez pas de stratégies de bureau géré Microsoft aux appareils ou aux utilisateurs qui ne sont pas gérés par le service bureau géré Microsoft.
-Windows Defender Advanced Threat Protection | Surveillez et examinez les appareils dans l’étendue du service bureau géré Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé
+Microsoft Defender – Protection avancée contre les menaces   | Surveillez et examinez les appareils dans l’étendue du service bureau géré Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé
 Microsoft Store pour Entreprises |  Configurez et gérez le profil Windows AutoPilot pour le service de bureau géré Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas la configuration du profil Windows AutoPilot du bureau géré Microsoft ou ajoutez/supprimez des appareils attribués.
 Certificats | | -Créez une demande de prise en charge de 60 jours avant l’expiration d’un certificat, en demandant des informations pour une modification de configuration planifiée, y compris des détails de la configuration, une étendue, une chronologie et d’autres détails pertinents à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Mettez à jour tous les certificats requis pour configurer des profils de certificats, des profils VPN et des profils Wi-Fi.
 
@@ -91,15 +92,15 @@ Certificats | | -Créez une demande de prise en charge de 60 jours avant l’exp
 
 ## <a name="device-wipe-with-factory-reset"></a>Réinitialisation du périphérique avec la réinitialisation d’usine
 
-L’équipe des opérations gérées de bureau peut effectuer une réinitialisation en usine sur les appareils gérés par le bureau gérés par Microsoft et qui doivent être redéfinis. Cela est utile si vous devez attribuer un appareil à un autre employé ou si un employé quitte votre entreprise. 
+L’équipe Microsoft Managed Desktop Operations peut effectuer une réinitialisation en usine des appareils qui sont déployés dans le service lorsque cela est nécessaire. Cela est utile si vous devez attribuer un appareil à un autre employé ou si un employé quitte votre entreprise. 
 
-Voici quelques conditions requises:
+Voici quelques conditions requises :
 
 - L’administrateur client du client doit soumettre une demande de service
 - Le nom de l’ordinateur doit être requis pour le périphérique.
 - Le compte d’utilisateur doit être dans Azure AD avant la réinitialisation
 
-Équipe des opérations de bureau gérées:
+Équipe des opérations de bureau gérées :
 
 - Rechercher le nom de l’appareil dans Intune
 - Envoyer la commande de réinitialisation usine au périphérique
@@ -113,4 +114,4 @@ Une fois que l’appareil a été réinitialisé, vous pouvez lui attribuer une 
 
 BitLocker est un composant clé de la sécurité des données dans ce processus. Avec le chiffrement BitLocker sur des appareils de bureau gérés Microsoft, les données sur le lecteur restent sécurisées même après l’application de la réinitialisation d’usine au périphérique. Les données qui se trouvaient sur le lecteur ne seront pas disponibles pour le prochain utilisateur de l’appareil. Pour plus d’informations, consultez la rubrique [vue d’ensemble de BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
-Pour plus d’informations, consultez [la rubrique Factory Reset a Device](https://docs.microsoft.com/intune/devices-wipe#factory-reset-a-device). 
+Pour plus d’informations, consultez [la rubrique Factory Reset a Device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 

@@ -4,15 +4,15 @@ description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b2b1a147659bf58c9b8ded26d6774994a3c1682
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a6397f1c78bb15e198ed75be50c51953b049ed68
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012209"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074688"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration réseau pour le bureau géré Microsoft
 
@@ -23,19 +23,19 @@ ms.locfileid: "38012209"
 
 Microsoft Managed Desktop est un service géré dans le Cloud. Il existe un ensemble de points de terminaison que les services Microsoft Managed Desktop doivent pouvoir atteindre. Cette section répertorie les points de terminaison qui doivent être autorisés pour les différents aspects du service bureau géré Microsoft. 
 
-Les clients peuvent optimiser leur réseau en envoyant toutes les demandes réseau Microsoft 365 approuvées directement via leur pare-feu/proxy, en contournant l’authentification et l’inspection ou le traitement du niveau de paquet supplémentaire. Cela réduit la latence et les besoins en matière de capacité de périmètre. 
+Les clients peuvent optimiser leur réseau en envoyant toutes les demandes réseau Microsoft 365 approuvées directement par le biais de leur pare-feu ou de leur proxy, en contournant l’authentification et tout autre contrôle ou traitement de niveau paquet. Cela réduit la latence et les besoins en matière de capacité de périmètre. 
 
 Par ailleurs, pour optimiser les performances des services gérés de bureau géré Microsoft, ces points de terminaison doivent être gérés de façon spéciale par les navigateurs clients client et les appareils dans leur réseau Edge. Ces appareils incluent des pare-feu, des interruptions de SSL, des dispositifs d’inspection de paquets et des systèmes de protection contre la perte de données.
 
 ### <a name="proxy-requirement"></a>Configuration requise pour le proxy
 
-Le proxy ou le pare-feu doit prendre en charge TLS 1,2. Dans le cas contraire, les clients devront peut-être désactiver la détection de protocole.
+Le proxy ou le pare-feu doit prendre en charge TLS 1,2. Dans le cas contraire, vous devrez peut-être désactiver la détection de protocole.
 
 ### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Points de terminaison autorisés-spécifiques pour le bureau géré Microsoft
 
 Microsoft Managed Desktop utilise le portail Azure pour héberger sa console Web. Les URL suivantes dans le tableau ci-dessous doivent figurer dans la liste autorisée de votre proxy et pare-feu afin que les appareils de bureau gérés Microsoft puissent communiquer avec les services Microsoft.  
 
-Notez que l’URL du bureau géré Microsoft ci-dessous est utilisée pour tous les services exécutés sur l’API cliente. Les clients doivent s’assurer que cette URL est toujours accessible sur leur réseau d’entreprise.
+Notez que l’URL du bureau géré Microsoft ci-dessous est utilisée pour tous les services exécutés sur l’API cliente. Vous devez vous assurer que cette URL est toujours accessible sur votre réseau d’entreprise.
 
 Service Microsoft  | URL requises sur la liste verte 
 --- | --- | ---
@@ -54,10 +54,9 @@ Service Microsoft | Source de documentation-URL requises sur la liste verte
 Windows 10 entreprise, y compris Windows Update pour les entreprises | [Gérer les points de terminaison de connexion pour Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
 Optimisation de la remise | [Configurer l’optimisation de la remise pour les mises à jour de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [URL et plages d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-Azure Active Directory | [Ports et protocoles d’identité hybrides](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) , ainsi que les [exigences de port Active Directory et des services de domaine Active Directory](https://aka.ms/AA26ygm) 
+Azure Active Directory | [Ports et protocoles d’identité hybrides](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) , ainsi que les [exigences de port Active Directory et des services de domaine Active Directory](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Configuration requise pour la configuration réseau Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
-Protection avancée contre les menaces Microsoft Defender (ATP) | [Points de terminaison Microsoft Defender ATP] (https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
-)
+Protection avancée contre les menaces Microsoft Defender (ATP) | [Points de terminaison ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

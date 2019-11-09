@@ -1,19 +1,20 @@
 ---
-title: Préparer les certificats et les profils réseau pour le bureau géré Microsoft
+title: Préparer les certificats et les profils réseau pour le Bureau géré Microsoft
 description: certs/WiFi/LAN
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
-ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
+ms.openlocfilehash: eadaa3ab7e381081be4e47054e70d7b8d1924385
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34391265"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074676"
 ---
-# <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Préparer les certificats et les profils réseau pour le bureau géré Microsoft  
+# <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Préparer les certificats et les profils réseau pour le Bureau géré Microsoft  
  
 L’authentification basée sur les certificats est une exigence commune pour les clients qui utilisent Microsoft Managed Desktop. Vous aurez peut-être besoin de certificats pour accéder au réseau Wi-Fi ou LAN, pour vous connecter à des solutions VPN ou pour accéder aux ressources internes de votre organisation.   
  
@@ -23,7 +24,7 @@ L’authentification basée sur les certificats est une exigence commune pour le
  
 Les certificats racines sont requis pour déployer des certificats via une infrastructure SCEP ou PKCS. D’autres applications et services de votre organisation peuvent nécessiter le déploiement de certificats racines sur vos appareils de bureau gérés par Microsoft.    
  
-Avant de déployer les certificats SCEP ou PKCS sur le bureau géré Microsoft, vous devez réunir les conditions requises pour chaque service nécessitant un certificat d’utilisateur ou d’appareil au sein de votre organisation. Pour faciliter cette tâche, vous pouvez utiliser l’un des modèles de planification suivants:  
+Avant de déployer les certificats SCEP ou PKCS sur le bureau géré Microsoft, vous devez réunir les conditions requises pour chaque service nécessitant un certificat d’utilisateur ou d’appareil au sein de votre organisation. Pour faciliter cette tâche, vous pouvez utiliser l’un des modèles de planification suivants :  
  
 - [Modèle de certificat PKCS](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [Modèle de certificat SCEP](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
@@ -49,7 +50,7 @@ Avant de déployer un profil de configuration de réseau câblé sur des apparei
 1. Connectez-vous à un appareil sur lequel votre profil 802.1 x existant est configuré et connecté au réseau local.  
 2. Ouvrez une invite de commandes avec des informations d’identification d’administration. 
 3. Recherchez le nom de l’interface LAN en exécutant **netsh interface show interface**. 
-4. Exportez le fichier XML de profil réseau en exécutant le **dossier de profil d’exportation LAN netsh =.  Interface = "INTERFACE_NAME"**. 
+4. Exportez le fichier XML de profil réseau en exécutant le **dossier de profil d’exportation LAN netsh =.  Interface = "interface_name"**. 
 5. Si vous avez besoin de tester votre profil exporté sur un périphérique de bureau géré Microsoft, exécutez **netsh LAN Add profile filename = "PATH_AND_FILENAME. xml" interface = "INTERFACE_NAME"**. 
  
  
@@ -63,25 +64,25 @@ Pour plus d’informations, reportez-vous à [la rubrique Configure a Certificat
  
 ## <a name="deploy-a-lan-profile"></a>Déployer un profil de réseau local 
  
-Une fois que votre profil de réseau local a été exporté, vous pouvez préparer la stratégie pour Microsoft Managed Desktop en procédant comme suit:   
+Une fois que votre profil de réseau local a été exporté, vous pouvez préparer la stratégie pour Microsoft Managed Desktop en procédant comme suit :   
  
-1. Créez un profil personnalisé dans Microsoft Intune pour le profil de réseau local à l’aide des paramètres suivants (reportez-vous à la rubrique [Use Custom Settings for Windows 10 Devices in Intune](https://docs.microsoft.com/intune/custom-settings-windows-10)). Dans **paramètres OMA-URI personnalisés**, sélectionnez **Ajouter**, puis entrez les valeurs suivantes: 
-    - Name: *espace de travail moderne-profil de réseau local Windows 10* 
-    - Description: entrez une description qui donne une vue d’ensemble du paramètre, ainsi que d’autres informations importantes. 
-    - OMA-URI (respecte la casse): Enter *./Device/Vendor/msft/WiredNetwork/LanXML*
-    - Type de données: sélectionnez **chaîne (fichier XML)**. 
-    - XML personnalisé: Téléchargez le fichier XML exporté.
-2. Soumettez une demande de support aux opérations informatiques de bureau gérées par Microsoft à l’aide du portail d’administration de bureau géré Microsoft pour passer en revue et déployer le profil de configuration sur «ordinateurs à espace de travail moderne – test». Les opérations informatiques de bureau gérées par Microsoft vous informent lorsque la demande est effectuée par le biais de la demande de support dans le portail d’administration.
+1. Créez un profil personnalisé dans Microsoft Intune pour le profil de réseau local à l’aide des paramètres suivants (reportez-vous à la rubrique [Use Custom Settings for Windows 10 Devices in Intune](https://docs.microsoft.com/intune/custom-settings-windows-10)). Dans **paramètres OMA-URI personnalisés**, sélectionnez **Ajouter**, puis entrez les valeurs suivantes : 
+    - Name : *espace de travail moderne-profil de réseau local Windows 10* 
+    - Description : entrez une description qui donne une vue d’ensemble du paramètre, ainsi que d’autres informations importantes. 
+    - OMA-URI (respecte la casse) : Enter *./Device/Vendor/msft/WiredNetwork/LanXML*
+    - Type de données : sélectionnez **chaîne (fichier XML)**. 
+    - XML personnalisé : Téléchargez le fichier XML exporté.
+2. Soumettez une demande de support aux opérations informatiques de bureau gérées par Microsoft à l’aide du portail d’administration de bureau géré Microsoft pour passer en revue et déployer le profil de configuration sur « ordinateurs à espace de travail moderne – test ». Les opérations informatiques de bureau gérées par Microsoft vous informent lorsque la demande est effectuée par le biais de la demande de support dans le portail d’administration.
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Déployer des certificats et un profil Wi-Fi/VPN 
  
  
-Pour déployer des certificats et des profils, procédez comme suit:
+Pour déployer des certificats et des profils, procédez comme suit :
 
-1. Créez un profil pour chaque certificat racine et intermédiaire (consultez la rubrique [Create Trusted Certificate Profiles](https://docs.microsoft.com/intune/certificates-configure#step-3-create-trusted-certificate-profiles)). Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JJ/MM/AAAA. **Les profils de certificat sans date d’expiration ne seront pas déployés.**
-2. Créez un profil pour chaque certificat SCEP ou PKCS (voir [création d’un profil de certificat SCEP](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile) ou [création d’un profil de certificat PKCS](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)) chacun de ces profils doit avoir une description qui inclut une date d’expiration au format jj/mm/aaaa. **Les profils de certificat sans date d’expiration ne seront pas déployés.**
+1. Créez un profil pour chaque certificat racine et intermédiaire (consultez la rubrique [Create Trusted Certificate](https://docs.microsoft.com/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles)profiles. Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JJ/MM/AAAA. **Les profils de certificat sans date d’expiration ne seront pas déployés.**
+2. Créez un profil pour chaque certificat SCEP ou PKCS (voir [création d’un profil de certificat SCEP](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) ou [création d’un profil de certificat PKCS](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) chacun de ces profils doit avoir une description qui inclut une date d’expiration au format jj/mm/aaaa. **Les profils de certificat sans date d’expiration ne seront pas déployés.**
 3. Créez un profil pour chaque réseau WiFi d’entreprise (voir [paramètres Wi-Fi pour les appareils Windows 10 et versions ultérieures](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
 4. Créez un profil pour chaque VPN d’entreprise (voir [paramètres d’appareil holographique Windows 10 et Windows pour ajouter des connexions VPN à l’aide de Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
-5. Soumettez une demande de support intitulée «déploiement de certificat» ou «déploiement de profil Wi-Fi» aux opérations informatiques Microsoft gérées à l’aide du portail d’administration de bureau géré Microsoft pour passer en revue et déployer le profil de configuration sur «ordinateurs de travail modernes – test ". Les opérations informatiques de bureau gérées par Microsoft vous informent lorsque la demande a été effectuée par le biais de la demande de support dans le portail d’administration. 
+5. Soumettez une demande de support intitulée « déploiement de certificat » ou « déploiement de profil Wi-Fi » aux opérations informatiques Microsoft gérées à l’aide du portail d’administration de bureau géré Microsoft pour passer en revue et déployer le profil de configuration sur «ordinateurs de travail modernes – test ". Les opérations informatiques de bureau gérées par Microsoft vous informent lorsque la demande a été effectuée par le biais de la demande de support dans le portail d’administration. 
  
  

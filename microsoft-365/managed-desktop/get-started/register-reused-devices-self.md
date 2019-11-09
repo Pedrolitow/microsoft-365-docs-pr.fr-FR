@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
-ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
+ms.openlocfilehash: e11b72228dceb5a4999e6b9398efde02a41ca163
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37577770"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074736"
 ---
 # <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
@@ -41,7 +41,7 @@ Microsoft Managed Desktop identifie chaque appareil de manière unique en réfé
 - Exécutez un script Windows PowerShell, soit à l’aide d' [Active Directory](#active-directory-powershell-script-method) , soit [manuellement](#manual-powershell-script-method) sur chaque appareil, et recueillez les résultats dans un fichier.
 - Démarrez chaque périphérique--mais ne terminez pas l’expérience d’installation Windows--et [collectez les hachages sur un lecteur flash amovible](#flash-drive-method).
 
-#### <a name="configuration-manager"></a>Configuration Manager
+#### <a name="configuration-manager"></a>Configuration Manager
 
 Vous pouvez utiliser System Center Configuration Manager pour collecter les hachages matériels à partir des appareils existants que vous souhaitez enregistrer avec le bureau géré Microsoft.
 
@@ -71,25 +71,30 @@ Si vous avez rempli toutes ces conditions préalables, vous êtes prêt à colle
 4. Dans le **Générateur de rapports**, sélectionnez source de **données :**. Sélectionnez la source de données par défaut, qui doit commencer par « AutoGen ». 
 5. Choisissez **type de requête en tant que texte**, puis entrez la requête suivante :
 
-```
 
+
+
+```sql
 SELECT comp.manufacturer0      AS Manufacturer,  
        comp.model0             AS Model,  
        bios.serialnumber0      AS Serial_Number,  
        mdm.devicehardwaredata0 AS HardwareHash  
-FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp  
+FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
+
        INNER JOIN Fn_rbac_gs_pc_bios(@UserSIDs) bios  
                ON comp.resourceid = bios.resourceid  
        INNER JOIN Fn_rbac_gs_mdm_devdetail_ext01(@UserSIDs) mdm  
                ON comp.resourceid = mdm.resourceid
-
-
 ```
+
+
+
+
 5. Accédez à l’onglet **champ** , les valeurs Wehre pour le **nom de champ** et la source de **champ** doivent déjà être remplies. Si ce n’est pas le cas, sélectionnez **Ajouter**, puis sélectionnez **champ de requête**. Entrez le **nom du champ** et la **source du champ**.
 6. Répétez l’opération pour chacune de ces valeurs : 
     - Constructeur 
     - Modèle 
-    - Numéro_de_série 
+    - Serial_Number 
     - HardwareHash
 7. Sélectionnez **OK**.
 
@@ -115,7 +120,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
 
 
 > [!IMPORTANT]
-> La requête dans le gestionnaire de configuration n’autorise pas les espaces dans les noms de colonne exportés ; C’est pourquoi les étapes ont été entrées « Numéro_de_série » et « HardwareHash ». Maintenant que vous avez le fichier CSV exporté, vous devez modifier les en-têtes du rapport pour lire le *numéro de série* et le *hachage matériel* , comme indiqué ici avant de procéder à l’inscription de l’appareil.
+> La requête dans le gestionnaire de configuration n’autorise pas les espaces dans les noms de colonne exportés ; C’est pourquoi les étapes ont été entrées « Serial_Number » et « HardwareHash ». Maintenant que vous avez le fichier CSV exporté, vous devez modifier les en-têtes du rapport pour lire le *numéro de série* et le *hachage matériel* , comme indiqué ici avant de procéder à l’inscription de l’appareil.
 
 Vous pouvez maintenant [enregistrer des appareils à l’aide du portail Azure](#register-devices-by-using-the-azure-portal).
 
