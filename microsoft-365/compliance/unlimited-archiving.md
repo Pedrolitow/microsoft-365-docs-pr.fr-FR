@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez la croissance automatique de l’archivage dans Office 365, qui offre un stockage d’archive illimité pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: 475bf53304be55bbac085693788cff4b5522bb14
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c13a6067a4c17b78a869be151b6e119f0c784f46
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080344"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231375"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Vue d’ensemble d’un archivage illimité dans Office 365
 
@@ -55,13 +55,13 @@ Voici une présentation rapide du processus.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Qu’est-ce qui est déplacé vers l’espace de stockage d’archive supplémentaire ?
 
-Pour utiliser efficacement le stockage d’archives à extension automatique, les dossiers peuvent être déplacés. Office 365 détermine quels dossiers sont déplacés lorsque du stockage supplémentaire est ajouté à l’archive. Lorsqu’un dossier est déplacé, un sous-dossier est automatiquement créé sous le dossier d’origine dans la partie Archive de la liste des dossiers dans Outlook. Ce nouveau sous-dossier pointe vers les éléments qui ont été déplacés. La Convention d’affectation de noms utilisée par Office 365 pour nommer ce dossier est ** \<le nom\>de dossier _yyyy (créé sur MMM DD, yyyy h_mm)**, où : 
-  
+Pour utiliser efficacement le stockage d’archives à extension automatique, les dossiers peuvent être déplacés. Office 365 détermine quels dossiers sont déplacés lorsque du stockage supplémentaire est ajouté à l’archive. Parfois, lorsqu’un dossier est déplacé, un ou plusieurs sous-dossiers sont automatiquement créés et les éléments du dossier d’origine sont distribués vers ces dossiers pour faciliter le processus de déplacement. Lors de l’affichage de la partie Archive de la liste des dossiers dans Outlook, ces sous-dossiers sont affichés sous le dossier d’origine.  La Convention d’affectation de noms utilisée par Office 365 pour nommer ces sous-dossiers est ** \<le nom\>de dossier _yyyy (créé sur MMM DD, yyyy h_mm)**, où :
+
 - **yyyy** est l’année de réception des messages dans le dossier. 
     
 - **MMM DD, yyyy h_m** est la date et l’heure auxquelles le sous-dossier a été créé par Office 365, au format UTC, basé sur le fuseau horaire et les paramètres régionaux de l’utilisateur dans Outlook. 
     
-Les captures d’écran suivantes montrent une liste des dossiers avant et après le déplacement des messages dans une archive étendue automatiquement.
+Les captures d’écran suivantes montrent une liste des dossiers avant et après le déplacement des messages vers un archivage développé automatiquement.
   
  **Avant l’ajout d’un espace de stockage supplémentaire**
   
@@ -71,6 +71,9 @@ Les captures d’écran suivantes montrent une liste des dossiers avant et aprè
   
 ![Liste des dossiers de la boîte aux lettres d’archivage après mise en service de l’archive à extension automatique](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
+> [!NOTE]
+> Comme décrit précédemment, Office 365 déplace les éléments vers les sous-dossiers (et les nomme à l’aide de la Convention d’affectation de noms décrite ci-dessus) pour faciliter la distribution de contenu à une archive auxiliaire. Mais le transfert d’éléments vers des sous-dossiers n’est peut-être pas toujours le cas. Parfois, un dossier entier peut être déplacé vers une archive auxiliaire. Dans ce cas, le dossier conservera son nom d’origine.  Il ne sera pas visible dans la liste des dossiers dans Outlook que le dossier a été déplacé vers une archive auxiliaire.
+
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Conditions requises par Outlook pour accéder aux éléments dans une archive étendue automatiquement
 
 Pour accéder aux messages stockés dans une archive étendue automatiquement, les utilisateurs doivent utiliser l’un des clients Outlook suivants :
@@ -102,11 +105,11 @@ Cette section décrit la fonctionnalité entre l’archivage et les autres fonct
   
 - **eDiscovery :** Lorsque vous utilisez un outil eDiscovery Office 365, tel que la recherche de contenu ou la découverte électronique inaltérable, les zones de stockage supplémentaires dans une archive étendue automatiquement sont également recherchées.
     
-- :* De **rétention*** lorsque vous placez une boîte aux lettres en conservation à l’aide d’outils comme la conservation pour litige dans Exchange Online ou de stratégies de rétention de cas eDiscovery dans le centre de sécurité et de conformité, le contenu situé dans un archivage développé automatiquement est également placé en conservation.
+- **Rétention :** Lorsque vous placez une boîte aux lettres en conservation à l’aide d’outils tels que la conservation pour litige dans Exchange Online ou des stratégies de rétention et de conservation de cas eDiscovery dans le centre de sécurité et de conformité, le contenu situé dans un archivage étendu automatiquement est également mis en attente.
     
 - **Gestion des enregistrements de messagerie (MRM) :** Si vous utilisez des stratégies de suppression MRM dans Exchange Online pour supprimer définitivement des éléments de boîte aux lettres expirés, les éléments expirés situés dans l’archive étendue automatiquement seront également supprimés.
     
-- **Importer un service**:* * vous pouvez utiliser le service d’importation Office 365 pour importer des fichiers PST dans l’archive étendue automatiquement. Vous pouvez importer jusqu’à 100 Go de données à partir de fichiers PST vers la boîte aux lettres d’archivage de l’utilisateur. 
+- **Service d’importation :** Vous pouvez utiliser le service d’importation Office 365 pour importer des fichiers PST dans l’archive étendue automatiquement. Vous pouvez importer jusqu’à 100 Go de données à partir de fichiers PST vers la boîte aux lettres d’archivage de l’utilisateur. 
 
 ## <a name="more-information"></a>Plus d’informations
 

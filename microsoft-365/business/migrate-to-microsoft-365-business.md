@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Étapes de mise à niveau de votre entreprise à partir d’Office 365 Business Premium vers Microsoft 365 Business.
-ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002114"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231408"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Mise à niveau vers Microsoft 365 entreprise à partir d’Office 365 Business Premium
 
@@ -38,37 +38,6 @@ En savoir plus sur Microsoft 365 Business at [Microsoft.com](https://www.microso
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Quelle est la différence entre Office 365 Business Premium et Microsoft 365 Business ?
 Nous avons ajouté une comparaison côte à côte de ces deux plans à la description du [service d’entreprise Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
 
-1. Une fois que vous avez acheté de nouvelles licences et qu’il s’agit de la première fois que vous l’avez fait, la bannière de configuration de Microsoft 365 Business s’affiche en haut du centre d’administration.
-    
-    > [!NOTE]
-    > La bannière de configuration permet d’ajouter de nouveaux utilisateurs, un nouveau domaine et de migrer des courriers électroniques pour les nouveaux utilisateurs. Si vous n’envisagez pas d’effectuer une action, vous devez toujours parcourir l’Assistant et choisir les options par défaut pour qu’il disparaisse de la page d’accueil de l’administrateur. 
-  
-   ![Choisissez Démarrer le programme d’installation sur la bannière Microsoft 365 Business est prêt à configurer la bannière.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
-  
-    Choisissez **Démarrer la configuration**.
-    
-2. Sur la page **Personnalisez votre connexion et votre messagerie** , vous pouvez ajouter un domaine en choisissant **connecter un domaine que vous possédez déjà** si vous souhaitez utiliser cette opportunité pour ajouter un autre domaine à votre abonnement. 
-    
-    Si vous avez déjà configuré un domaine, le deuxième champ indiquera que et indiquera **continuer à utiliser** \< _votre nom_ \> **de domaine pour la messagerie et la connexion**.   Si vous n’avez pas configuré de domaine avec votre abonnement, vous devez **continuer à utiliser** \< _votre société Name.onmicrosoft.com_ \> **pour la messagerie et vous connecter**.  
-    
-    Cliquez sur **Suivant**.
-    
-    ![Sur la page Personnalisez votre connexion et votre messagerie, sélectionnez Ajouter un domaine ou utiliser celui que vous avez utilisé.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
-  
-3. Sur la page **ajouter de nouveaux utilisateurs** , vous pouvez ajouter de nouveaux utilisateurs, si vous avez de nouveaux employés auxquels vous voulez attribuer les licences professionnelles Microsoft 365. 
-    
-    Si vous n’avez pas de nouveaux employés à ajouter et que vous souhaitez attribuer des licences à des utilisateurs existants, choisissez **suivant**.
-    
-4. Dans la page **migrer les messages électroniques** , vous pouvez choisir de migrer le courrier électronique de tous les nouveaux utilisateurs ajoutés à l’étape 3. Vous pouvez également ignorer cette étape. Cliquez sur **Suivant**.
-    
-5. Sur la dernière page, sélectionnez **accéder au centre d’administration**, puis poursuivez l’installation.
-    
-6. Dans le **Centre d’administration, accédez à** \> utilisateurs **actifs**.
-    
-7. Sélectionnez l’utilisateur auquel vous souhaitez attribuer la licence d' **entreprise Microsoft 365** , puis cliquez sur **modifier** en regard de **licences de produit**.
-    
-    ![Dans la carte utilisateur, sélectionnez Modifier en regard de licences de produit.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
-  
 ## <a name="before-you-get-started"></a>Avant de commencer
 
 - **Quand dois-je choisir la mise à niveau ?** La mise à niveau est le bon choix lorsque vous souhaitez mettre à niveau **tous les utilisateurs** affectés à une seule offre. Lorsque vous choisissez mise à niveau, tous les utilisateurs de plan sont passés à un autre plan en même temps. Si vous ne souhaitez pas mettre à niveau tout le monde affecté à une seule offre, achetez des licences pour le nouveau plan (dans ce cas Microsoft 365 Business) et [affectez ces licences individuellement](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) à chaque utilisateur que vous souhaitez mettre à niveau. 
