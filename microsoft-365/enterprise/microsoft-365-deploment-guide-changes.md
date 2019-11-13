@@ -3,7 +3,7 @@ title: Modifications du contenu du déploiement de Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/31/2019
+ms.date: 11/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,19 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Consultez le nouveau contenu et les modifications apportées au contenu du Guide de déploiement de Microsoft 365.
-ms.openlocfilehash: 605805d715243c9ef00f681616976be0f4b6b705
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 59f40ad2870be8d1b74b03123a7c161b132e565d
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929277"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302961"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Modifications du contenu du déploiement de Microsoft 365 Entreprise
 
 ## <a name="october-2019"></a>Octobre 2019
 
 ### <a name="new-content"></a>Nouveau contenu 
-
 
 - [Affiche Teams pour les données hautement réglementées](secure-teams-highly-regulated-data-scenario.md#poster)
 
@@ -41,13 +40,13 @@ ms.locfileid: "37929277"
 
 - [Affiche Déployer Windows 10 avec autopilot](windows10-deploy-autopilot.md) 
 
-  [![Affiche Déployer Windows 10 avec autopilot](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
+  [![Affiche Déployer Windows 10 avec autopilot](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=RWOcP%2BhJZYpYcGKMhuTUEL6lcuWdBFefqR%2BQQfmj6IM%3D&st=2019-11-12T23%3A48%3A59Z&se=2019-11-13T23%3A58%3A59Z&sp=r)
 
   Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) ou [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx).
 
 - [Affiche Déploiement de Windows 10 avec System Center Configuration Manager](windows10-deploy-inplaceupgrade.md)
 
-  [![Affiche Déploiement de Windows 10 avec System Center Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/810b475c713ebb3ad65d13746940ef91?sv=2015-04-05&sr=b&sig=tKD38RgLAoOCAWJ5ppEbLevBAHk7KHtWrXldy2Jl6mY%3D&st=2019-10-24T22%3A16%3A08Z&se=2019-10-25T22%3A26%3A08Z&sp=r)
+  [![Affiche Déploiement de Windows 10 avec System Center Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/810b475c713ebb3ad65d13746940ef91?sv=2015-04-05&sr=b&sig=jjP0k8Y9ClANZptzS5IPwxs61kocwCg6bLUBdjZp6lY%3D&st=2019-11-12T23%3A51%3A28Z&se=2019-11-14T00%3A01%3A28Z&sp=r)
 
   Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) ou [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx).
 
@@ -57,11 +56,11 @@ ms.locfileid: "37929277"
 
   Annonces : [Blog de la communauté technique Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Protect-your-highly-regulated-files-in-Teams-with-Microsoft-365/ba-p/962985)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-i-lock-down-team-sensitive-top-secret-joe-davies/?published=t)
 
-
 - [Affiche Confiez des responsabilités aux travailleurs à distance](empower-people-to-work-remotely.md#poster)
 
   [![Affiche Confiez des responsabilités aux travailleurs à distance](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
- 
+
+- [Migration de Microsoft 365 Business vers Microsoft 365 Entreprise E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 ### <a name="updates-and-enhancements"></a>Mises à jour et améliorations
 
