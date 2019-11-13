@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: 'Découvrez les conditions préalables à la configuration de votre organisation avec Microsoft 365 Business. '
-ms.openlocfilehash: 3bf02ab831a1eb158959490ff7f4d4274a15bb3f
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 157abf0a3396ab374297441bf90d6defc4093390
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575835"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290527"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Conditions préalables à la protection des données sur les appareils avec Microsoft 365 Business
 
@@ -34,6 +34,8 @@ ms.locfileid: "37575835"
 - Les appareils Windows doivent exécuter Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro.
     
     [Mettre à niveau les appareils Windows vers Windows Professionnel Creators Update](upgrade-to-windows-pro-creators-update.md)
+    
+    Si vous utilisez Windows 10 Home, vous devez **acheter** Windows 10 professionnel. Pour obtenir des instructions, voir [mettre à niveau Windows 10 famille vers Windows 10 professionnel](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) . 
     
 - Supprimez les appareils des solutions de gestion mobile (MobileIron, AirWatch, etc.). Vous allez inscrire toutes les personnes de votre organisation à la gestion mobile Microsoft 365 Entreprise.
     

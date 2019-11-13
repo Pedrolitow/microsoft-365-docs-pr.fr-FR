@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent en savoir plus sur les alertes de files d’attente et les files d’attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: ef8b4acd4008f3039030049893f83a5e49e1efc2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 66bd4116cfb84d15bbecafa269fcc2c7a88789d8
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080274"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290544"
 ---
 # <a name="queue-alerts-and-queues"></a>Alertes de files d’attente et files d’attente
 
@@ -26,9 +26,9 @@ Lorsque des messages ne peuvent pas être envoyés de votre organisation Office 
 
 - Des modifications de mise en réseau ou de pare-feu ont été apportées dans votre environnement local.
 
-Office 365 continuera à nouvelle tentative de remise pendant 48 heures. Après 48 heures, les messages arriveront à expiration et seront renvoyés aux expéditeurs dans les notifications d’échec de remise (également appelées notifications de non-remise).
+Office 365 continuera à nouvelle tentative de remise pendant 24 heures. Au bout de 24 heures, les messages expirent et seront renvoyés aux expéditeurs dans les notifications d’échec de remise (également appelées notifications de non-remise).
 
-Si le volume de messagerie en file d’attente dépasse le seuil prédéfini (la valeur par défaut est 2000 messages), les alertes seront disponibles dans le tableau de bord du flux de messagerie dans les **alertes récentes**, et les administrateurs recevront une notification par courrier électronique (à leur adresse de messagerie alternative). . Pour configurer le seuil d’alerte, la limite de notification quotidienne et/ou les destinataires de l’alerte, consultez la section **personnaliser les alertes de file d’attente** ci-dessous.
+Si le volume de messagerie en file d’attente dépasse le seuil prédéfini (la valeur par défaut est 2000 messages), les alertes seront disponibles dans le tableau de bord du flux de messagerie des **alertes récentes**et les administrateurs recevront une notification par courrier électronique (à leur adresse de messagerie alternative). Pour configurer le seuil d’alerte, la limite de notification quotidienne et/ou les destinataires de l’alerte, consultez la section **personnaliser les alertes de file d’attente** ci-dessous.
 
 ![Alertes de file d’attente dans la zone alertes récentes du tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
