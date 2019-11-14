@@ -22,16 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Découvrez les États des appareils dans Microsoft 365 Business.
-ms.openlocfilehash: 06e5c800e6a104785c1fd0724223e05d7729722e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b55e6a5d538ec28d195225e93797cea27afd2e8b
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072717"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320205"
 ---
 # <a name="device-states"></a>États des appareils
-
-## <a name="device-states"></a>États des appareils
 
 Les appareils de la liste **Actions de l'appareil** (accueil Administrateur \> **Actions de l'appareil**) peuvent présenter les états suivants.
   
@@ -43,12 +41,12 @@ Les appareils de la liste **Actions de l'appareil** (accueil Administrateur \> *
 |Mise hors service en attente  <br/> |Microsoft 365 Entreprise s'apprête à supprimer des données d'entreprise de l'appareil.  <br/> |
 |Mise hors service en cours  <br/> |Microsoft 365 Entreprise est en train de supprimer des données d'entreprise de l'appareil.  <br/> |
 |Échec de la mise hors service  <br/> | L'action de suppression des données d'entreprise a échoué.  <br/> |
-|Mise hors service annulée  <br/> |L'action de mise hors service a été annulée.  <br/> |
+|Retrait annulé  <br/> |L’action de déclassement a été annulée.  <br/> |
 |Réinitialisation en attente  <br/> |En attente du rétablissement des paramètres d'usine.  <br/> |
 |Réinitialisation en cours  <br/> |Le rétablissement des paramètres d'usine a démarré.  <br/> |
-|Échec de la réinitialisation  <br/> |Le rétablissement des paramètres d'usine n'a pas pu être effectué.  <br/> |
-|Réinitialisation annulée  <br/> |Le rétablissement des paramètres d'usine a été annulé.  <br/> |
-|Défectueux  <br/> |Cela signifie qu'une action est en attente (ou en cours) mais que l'appareil n'a pas archivé depuis plus de 30 jours.  <br/> |
+|Échec de la réinitialisation  <br/> |Impossible d’effectuer la réinitialisation d’usine.  <br/> |
+|Effacement annulé  <br/> |La réinitialisation usine a été annulée.  <br/> |
+|Défectueux  <br/> |Une action est en attente (ou en cours), mais l’appareil n’a pas archivé pendant plus de 30 jours.  <br/> |
 |Suppression en attente  <br/> |Une action de suppression est en attente.  <br/> |
 |Détecté  <br/> |Microsoft 365 Entreprise a détecté l'appareil.  <br/> |
    

@@ -27,24 +27,24 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Les profils AutoPilot vous permettent de contrôler la manière dont Windows est installé sur les appareils utilisateur. Les profils contiennent des paramètres par défaut et facultatifs, comme ignorer l’installation de Cortana.
-ms.openlocfilehash: eb0d9a95c796909d024db1d061aaeace7d07ed1b
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 912a24e3d458986a4bcf7dcf903f80211996aca2
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574575"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38321782"
 ---
 # <a name="about-autopilot-profile-settings"></a>À propos des paramètres du profil AutoPilot
 
 ## <a name="autopilot-profile-settings"></a>Paramètres du profil AutoPilot
 
-Vous pouvez contrôler la façon dont Windows est installé sur les appareils utilisateur à l’aide des profils AutoPilot. Les profils contiennent les paramètres suivants.
+Vous pouvez utiliser les profils AutoPilot pour contrôler la façon dont Windows est installé sur les appareils utilisateur. Les profils contiennent les paramètres suivants.
   
  **Les fonctionnalités de AutoPilot par défaut (obligatoires) qui sont définies automatiquement :**
   
 |**Paramètre**|**Description**|
 |:-----|:-----|
-|Ignorer Cortana, enregistrement OneDrive et OEM  <br/> |Ignore l’installation des applications grand public telles que Cortana et OneDrive personnel. L’utilisateur de l’appareil peut l’installer ultérieurement tant qu’il est administrateur local sur l’appareil. L’enregistrement du fabricant d’origine est ignoré car le périphérique sera géré par Microsoft 365 entreprise.  <br/> |
+|Ignorer l’inscription de Cortana, OneDrive et OEM  <br/> |Ignore l’installation des applications grand public telles que Cortana et OneDrive personnel. L’utilisateur de l’appareil peut l’installer ultérieurement tant que l’utilisateur est un administrateur local sur l’appareil. L’enregistrement du fabricant d’origine est ignoré car le périphérique sera géré par Microsoft 365 entreprise.  <br/> |
 |Expérience de connexion avec la marque de votre entreprise  <br/> |Si votre société dispose d’une [page de connexion Add Your Company to Office 365 Signing](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), l’utilisateur de l’appareil obtiendra cette expérience lors de la connexion.  <br/> |
 |Auto-inscriptions MDM avec comptes AAD configurés.  <br/> |L’identité de l’utilisateur sera gérée par Azure Active Directory, et les utilisateurs se connecteront à Windows et Office 365 avec leurs informations d’identification d’entreprise Microsoft 365.  <br/> |
    
@@ -53,5 +53,5 @@ Vous pouvez contrôler la façon dont Windows est installé sur les appareils ut
 |**Paramètre**|**Description**|
 |:-----|:-----|
 |Ignorer les paramètres de confidentialité (désactivés par défaut)  <br/> |Si cette option est **activée**, l’utilisateur de l’appareil ne verra pas le contrat de licence du périphérique et de Windows lorsqu’il se connecte pour la première fois.  <br/> |
-|Ne pas autoriser l’utilisateur à devenir l’administrateur local  <br/> |Si cette option est **activée**, l’utilisateur de l’appareil ne peut pas installer d’applications personnelles, telles que Cortana.  <br/> |
+|Ne pas autoriser l’utilisateur à devenir l’administrateur local  <br/> |Si cette option est **activée**, l’utilisateur de l’appareil ne peut pas installer d’applications personnelles, telles que Cortana.<br/> |
    

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Apprenez à créer, modifier, supprimer ou supprimer des profils AutoPilot.
-ms.openlocfilehash: 4305340a2fc5df8202cf4d85f9e2541690bf9ed0
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f7fdc2632e93c48e043fe158842f8395d6a89e14
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574715"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320235"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
 
@@ -40,17 +40,17 @@ Un profil s'applique à un appareil ou à un groupe d'appareils,
   
 2. Sur la **page AutoPilot** , sélectionnez l' **** onglet \> profils **Create Profile**.
     
-3. Sur la page **Créer un profil**, entrez un nom de profil qui vous permette de l'identifier, par exemple Marketing, activez le paramètre souhaité (voir [À propos des paramètres de profil AutoPilot](autopilot-profile-settings.md) pour plus d'informations), puis choisissez **Enregistrer**.
+3. Sur la page **créer un profil** , entrez un nom pour le profil qui vous permet de l’identifier, par exemple marketing. Activez le paramètre souhaité, puis choisissez **Enregistrer**. Pour plus d’informations sur les paramètres du profil AutoPilot, voir [à propos des paramètres du profil AutoPilot](autopilot-profile-settings.md).
     
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>Appliquer le profil à un appareil
 
-Après avoir créé un profil, vous pouvez l'appliquer à un appareil ou à un groupe d'appareils. Vous pouvez sélectionner un profil existant dans la [guide détaillé](add-autopilot-devices-and-profile.md), l'appliquer aux nouveaux appareils ou remplacer un profil existant pour un appareil ou un groupe d'appareils. 
+Une fois que vous avez créé un profil, vous pouvez l’appliquer à un appareil ou à un groupe d’appareils. Vous pouvez choisir un profil existant dans le [Guide pas à pas](add-autopilot-devices-and-profile.md) et l’appliquer à de nouveaux appareils ou remplacer un profil existant pour un appareil ou un groupe d’appareils. 
   
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Appareils**. 
     
-2. Cliquez sur la case à cocher en regard du nom d'un appareil, puis, dans le volet **Appareil**, choisissez un profil dans la liste déroulante **Profil affecté** \> **Enregistrer**.
+2. Activez la case à cocher en regard du nom d’un appareil, puis dans le panneau **périphérique** , sélectionnez un profil dans la liste \> déroulante **Profil affecté** **Enregistrer**.
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -62,7 +62,7 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Profils**. 
     
-2. Cliquez sur la case à cocher en regard du nom d'un appareil puis, dans le volet **Profil**, modifiez les paramètres de votre choix \> **Enregistrer**.
+2. Activez la case à cocher en regard du nom d’un appareil, puis, dans le volet **Profil** , mettez \> à jour les paramètres d' **enregistrement**disponibles.
     
     Si vous effectuez cette opération avant qu'un utilisateur connecte l'appareil à Internet, le profil sera appliqué pendant le processus de configuration.
     
@@ -70,7 +70,7 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Profils**. 
     
-2. Cliquez sur la case à cocher en regard du nom d'un appareil puis, dans le volet **Profil**, cliquez sur **Supprimer le profil** \> **Enregistrer**.
+2. Activez la case à cocher en regard du nom d’un appareil, puis, dans le volet **Profil** , sélectionnez Supprimer l' **enregistrement**du **Profil** \> .
     
     Lorsque vous supprimez un profil, il est supprimé de l'appareil ou du groupe d'appareils auquel il a été affecté.
     
@@ -78,5 +78,5 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Appareils**. 
     
-2. Cliquez sur la case à cocher en regard du nom d'un appareil, puis, dans le volet **Appareil**, choisissez **Aucun** dans la liste déroulante **Profil affecté** \> **Enregistrer**.
+2. Activez la case à cocher en regard du nom d’un appareil, puis, dans le panneau **périphérique** , choisissez **aucun** dans la liste \> déroulante **Profil affecté** **Enregistrer**.
     

@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Résumé : Recommandations de configuration pour la protection des fichiers dans SharePoint Online et Office 365.'
-ms.openlocfilehash: 62b7227239c52f50f2dc437e1ddedc663a5bb01d
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 15b67d2569f2c8ceafb16973ae2bf6862ebb9ded
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035704"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311108"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sécuriser des sites et des fichiers SharePoint Online
 
  **Résumé :** Recommandations de configuration pour la protection des fichiers dans SharePoint Online et Office 365.
   
-Cet article fournit des recommandations pour configurer les sites d’équipe SharePoint Online et la protection des fichiers d’une façon qui combine sécurité et simplicité de collaboration. Cet article définit quatre configurations différentes, en commençant par un site public au sein de votre organisation avec les stratégies de partage les plus ouvertes. Chacune des autres configurations représente une amélioration significative de la protection, mais limite l’accès aux ressources et les possibilités de collaboration à l’ensemble d’utilisateurs concerné. Utilisez ces recommandations comme point de départ et ajustez les configurations pour répondre aux besoins de votre organisation. 
+Cet article fournit des recommandations pour configurer les sites d’équipe SharePoint Online et la protection des fichiers d’une façon qui combine sécurité et simplicité de collaboration. Cet article définit quatre configurations différentes, en commençant par un site public au sein de votre organisation avec les stratégies de partage les plus ouvertes. Chacune des autres configurations représente une amélioration significative de la protection, mais limite l’accès aux ressources et les possibilités de collaboration à l’ensemble d’utilisateurs concerné. Utilisez ces recommandations comme point de départ et ajustez les configurations pour répondre aux besoins de votre organisation.
   
 Les configurations décrites dans cet article respectent les recommandations de Microsoft quant aux trois niveaux de protection des données, des identités et des appareils :
   
@@ -40,7 +40,7 @@ Les configurations décrites dans cet article respectent les recommandations de 
     
 - Protection Hautement confidentiel
     
-Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées pour chacun d’eux, consultez les ressources suivantes. 
+Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées pour chacun d’eux, consultez les ressources suivantes.
   
 - [Protection des appareils et de l’identité pour Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
     
@@ -54,7 +54,7 @@ Les recommandations pour les sites d’équipe SharePoint Online s’appuient su
 
 Comme illustré :
   
-- La protection de référence inclut deux options pour les sites d’équipe SharePoint Online : un site public et un site privé. Les sites publics peuvent être recherchés et sont accessibles à toute personne de l’organisation. Les sites privés peuvent uniquement être recherchés par les membres du site et seuls ces derniers peuvent y accéder. Ces deux configurations de site permettent le partage en dehors du groupe. 
+- La protection de référence inclut deux options pour les sites d’équipe SharePoint Online : un site public et un site privé. Les sites publics peuvent être recherchés et sont accessibles à toute personne de l’organisation. Les sites privés peuvent uniquement être recherchés par les membres du site et seuls ces derniers peuvent y accéder. Ces deux configurations de site permettent le partage en dehors du groupe.
     
 - Les sites pour la protection Hautement confidentiel et Sensible sont des sites privés avec un accès limité aux seuls membres de groupes spécifiques.
     

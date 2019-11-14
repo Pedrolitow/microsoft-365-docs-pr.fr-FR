@@ -21,34 +21,34 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Découvrez comment utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise.
-ms.openlocfilehash: d028ea3e902965d55c445dc3b3a02aa315201b25
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5f40dac57285b83da57d4506bac58e562475522c
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574785"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38323092"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot
 
-Vous pouvez utiliser Windows AutoPilot pour configurer de **nouveaux** appareils Windows 10 pour votre entreprise afin qu’ils soient prêts à être utilisés dès que vous les fournissez à vos employés.
+Vous pouvez utiliser Windows AutoPilot pour configurer de **nouveaux** appareils Windows 10 pour votre entreprise afin qu’ils soient prêts à être utilisés lorsque vous les communiquez à vos employés.
   
 ## <a name="device-requirements"></a>Configuration requise de l’appareil
 
-Les appareils doivent respecter ces exigences :
+Les appareils doivent respecter les conditions suivantes :
   
-- Windows 10, version 1703 ou supérieure.
+- Windows 10, version 1703 ou ultérieure
     
-- Nouveaux appareils qui ne sont pas issus d'une expérience Windows prête à l'emploi.
+- Nouveaux appareils qui n’ont pas fait l’expérience de Windows out-of-Box
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Utiliser le guide de configuration pour créer des appareils et des profils
 
-[![Étiquette pour vous informer le centre d’administration change et vous trouverez plus de détails sur aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Si vous n'avez pas encore créé de groupes d'appareils et de profils, la meilleure façon de commencer consiste à utiliser le guide détaillé, mais vous pouvez également [ajouter des appareils](create-and-edit-autopilot-devices.md) et leur [attribuer des profils](create-and-edit-autopilot-profiles.md) sans utiliser le guide. 
+Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la meilleure façon de commencer est d’utiliser le guide pas à pas. Vous pouvez également [Ajouter des appareils](create-and-edit-autopilot-devices.md) et leur [affecter des profils](create-and-edit-autopilot-profiles.md) sans utiliser le guide. 
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-2. Sur le côté gauche, sélectionnez **périphériques** \> **AutoPilot**.
+2. Dans le volet de navigation de gauche, choisissez **appareils** \> **AutoPilot**.
 
     ![Dans le centre d’administration, sélectionnez périphériques, puis AutoPilot.](media/AutoPilot.png)
   
@@ -56,37 +56,35 @@ Si vous n'avez pas encore créé de groupes d'appareils et de profils, la meille
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. Sur la page **Charger un fichier .csv avec une liste d'appareils**, recherchez l'emplacement où vous avez préparé le fichier .csv, puis cliquez sur **Ouvrir** \> **Suivant**. Le fichier doit avoir trois en-têtes :
+3. Sur la page **Télécharger le fichier. csv avec la liste des périphériques** , accédez à l’emplacement où vous avez préparé. Fichier CSV, puis **ouvrez** \> **suivant**. Le fichier doit avoir trois en-têtes :
     
-  - Colonne A : Numéro de série de l'appareil
+    - Colonne A : Numéro de série de l'appareil
     
-  - Colonne B : ID de produit Windows
+    - Colonne B : ID de produit Windows
     
-  - Colonne C : Hachage du matériel
+    - Colonne C : Hachage du matériel
     
-    Vous pouvez obtenir ces informations à partir de votre fournisseur de matériel ou vous pouvez utiliser le [script Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) qui génèrera un fichier CSV. 
+    Vous pouvez obtenir ces informations auprès de votre fournisseur de matériel ou vous pouvez utiliser le [script PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) pour générer un fichier CSV. 
     
     Pour plus d'informations, voir [Fichier CSV de liste d'appareils](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e). Vous pouvez également télécharger un exemple de fichier sur la page **Charger un fichier .csv avec la liste des appareils**. 
     
-4. Sur la page **Attribuer un profil**, vous pouvez choisir un profil existant ou en créer un. Si vous n'en avez pas encore, vous êtes invité à en créer un nouveau. 
+4. Sur la page **attribuer un profil** , vous pouvez choisir un profil existant ou en créer un nouveau. Si vous n’en avez pas encore, vous serez invité à en créer un. 
     
     Un proﬁl est un ensemble de paramètres qui peuvent être appliqués à un seul appareil ou à un groupe d'appareils.
     
-    Les fonctionnalités par défaut sont obligatoires et seront définies automatiquement. Les fonctionnalités par défaut sont :
+    Les fonctionnalités par défaut sont obligatoires et sont définies automatiquement. Les fonctionnalités par défaut sont :
     
-  - L'inscription Cortana, OneDrive et OEM est ignorée.
+    - Ignorez l’enregistrement de Cortana, OneDrive et OEM.
     
-  - Créez une expérience de connexion avec l'identité de votre entreprise.
+    - Créez une expérience de connexion avec l'identité de votre entreprise.
     
-  - Vos appareils vont être connectés à des comptes Azure Active Directory et automatiquement inscrits pour être gérés par Microsoft 365 Entreprise.
+    - Connectez vos appareils aux comptes Azure Active Directory et inscrivez-les automatiquement pour qu’ils soient gérés par Microsoft 365 Business.
     
-    Pour plus d'informations, voir
-    
-    [À propos des paramètres du profil AutoPilot](autopilot-profile-settings.md) 
+    Pour plus d’informations, consultez la rubrique [à propos des paramètres du profil AutoPilot](autopilot-profile-settings.md). 
     
 5. Les autres paramètres sont **Ignorer les paramètres de confidentialité** et **Ne pas autoriser l'utilisateur à devenir administrateur local**. Ils sont tous les deux définis sur **Désactivé** par défaut. 
     
     Sélectionnez **Suivant**.
     
-6. La page **Vous avez terminé** indique que le profil que vous avez créé (ou choisi) sera appliqué au groupe d'appareils que vous avez créé en chargeant la liste d'appareils. Ces paramètres seront appliqués lors de la prochaine connexion des utilisateurs de l'appareil. Choisissez **Fermer**.
+6. **Vous avez fini** d’indiquer que le profil que vous avez créé (ou choisi) sera appliqué au groupe de périphériques que vous avez créé en téléchargeant la liste des périphériques. Les paramètres seront appliqués lors de la prochaine connexion des utilisateurs de l’appareil. Sélectionnez **Fermer**.
     
