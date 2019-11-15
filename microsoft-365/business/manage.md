@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Apprenez à gérer les tâches d’administration Microsoft 365 professionnelles, les appareils mobiles, Windows 10PCs et de nombreuses autres tâches.
-ms.openlocfilehash: 1e39adad50688686ef1d03ef7ed51534e067e6b3
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Apprenez à gérer les tâches d’administration Microsoft 365 professionnelles, les appareils mobiles, les PC Windows 10 et de nombreuses autres tâches.
+ms.openlocfilehash: ee1c856c6c0005842df8b3581a602dd539490bea
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575955"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633306"
 ---
 # <a name="manage-microsoft-365-business"></a>Gérer Microsoft 365 Entreprise
 
@@ -32,7 +32,7 @@ ms.locfileid: "37575955"
 
 La plupart du [contenu d’administration](/Office365/Admin/admin-home.md) pour Office 365 pour les entreprises s’applique également à Microsoft 365 Business.
 
-- [Ajouter des utilisateurs à Microsoft 365 Business](add-users-m365b.md)
+- [Ajouter d’autres utilisateurs à Microsoft 365 Business](add-users-m365b.md)
     
 - [Afficher les stratégies et les appareils](view-policies-and-devices.md)
     
@@ -40,7 +40,7 @@ La plupart du [contenu d’administration](/Office365/Admin/admin-home.md) pour 
     
 - [Correspondance entre les fonctionnalités de protection de Microsoft 365 Business et les paramètres Intune](map-protection-features-to-intune-settings.md)
     
-Consultez les sections suivantes sur l'utilisation de Microsoft 365 Entreprise pour protéger les données de votre organisation sur les PC et appareils mobiles.
+Consultez les sections suivantes sur l’utilisation de Microsoft 365 Business pour protéger les données de votre organisation sur des PC et des appareils mobiles.
   
 ## <a name="manage-mobile-devices"></a>Gérer des appareils mobiles
 
@@ -48,7 +48,7 @@ Consultez les sections suivantes sur l'utilisation de Microsoft 365 Entreprise p
     
 - [Définir les paramètres de protection des applications pour les appareils Android ou iOS](app-protection-settings-for-android-and-ios.md)
     
-    Voir [valider les paramètres de protection des applications sur un appareil Android ou iOS](validate-settings-on-android-or-ios.md) pour vous assurer que cela a fonctionné. 
+    Pour vous assurer que cela a fonctionné, voir [valider les paramètres de protection des applications sur un appareil Android ou iOS](validate-settings-on-android-or-ios.md). 
     
 - [Supprimer les données d'entreprise sur des appareils](remove-company-data.md)
     
@@ -62,11 +62,11 @@ Consultez les sections suivantes sur l'utilisation de Microsoft 365 Entreprise p
     
 - [Définir les paramètres de protection des appareils pour les appareils Windows 10](protection-settings-for-windows-10-pcs.md)
     
-    Voir [Valider les paramètres de protection des appareils pour les appareils Windows 10](validate-settings-on-windows-10-pcs.md) pour vous assurer que cela a fonctionné. 
+    Pour vous assurer que cela a fonctionné, voir [valider les paramètres de protection des appareils sur les appareils Windows 10](validate-settings-on-windows-10-pcs.md). 
     
 - [Définir les paramètres de protection des applications pour les appareils Windows 10](protection-settings-for-windows-10-devices.md)
     
-    Voir [Valider les paramètres de protection des applications pour les PC Windows 10](validate-protection-settings-on-windows-10-pcs.md) pour vous assurer que cela a fonctionné. 
+    Pour vous assurer que cela a fonctionné, voir [valider les paramètres de protection des applications sur les PC Windows 10](validate-protection-settings-on-windows-10-pcs.md). 
     
 - [Supprimer les données d'entreprise sur des appareils](remove-company-data.md)
     
@@ -88,18 +88,14 @@ Les rubriques suivantes expliquent comment utiliser Windows AutoPilot dans Micro
     
 - [À propos des paramètres du profil AutoPilot](autopilot-profile-settings.md)
     
-## <a name="set-up-and-pre-requisite-information"></a>Informations relatives à la configuration et aux conditions préalables
+## <a name="set-up-and-prerequisite-information"></a>Configuration et informations prérequises
 
 - [Conditions préalables à la protection des données sur les appareils avec Microsoft 365 Business](pre-requisites-for-data-protection.md)
     
-- [Configurer Microsoft 365 Business à l'aide de l'Assistant Configuration](set-up.md)
+- [Installer Microsoft 365 Business à l'aide de l'Assistant Installation](set-up.md)
     
 - [Migration vers Microsoft 365 Business](migrate-to-microsoft-365-business.md)
     
 - [Activer la gestion des appareils Windows 10 associés à un domaine par Microsoft 365 Business](manage-windows-devices.md)
     
-[Fonctionnalités de sécurité supplémentaires](security-features.md#additional-security-features)
-    
-
-  
-
+- [Fonctionnalités de sécurité supplémentaires](security-features.md#additional-security-features)

@@ -24,18 +24,20 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Découvrez comment réinitialiser ou effacer un appareil géré par le biais de stratégies de protection.
-ms.openlocfilehash: 78eff4b4d29ee5de6f773841cc77239f6acf0634
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ef3b8ed0e3b3f8b9136d3929bce1b835309498c7
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074667"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633326"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business"></a>Gérer les appareils protégés avec Microsoft 365 entreprise
 
-[] Une fois que l'utilisateur connecte son appareil à votre organisation, en se connectant avec son compte professionnel sur l'appareil sur les applications Office sur l'appareil, nous sommes en mesure de protéger l'appareil avec les stratégies que vous configurez et il figure sur la page **Appareils**. Si un appareil est perdu ou volé, vous pouvez le gérer à partir de cette page pour supprimer les données d'entreprise. Vous pouvez également réinitialiser les paramètres par défaut des appareils Windows 10 pour effacer tous les paramètres personnalisés. Pour plus d'informations sur les tâches que vous pouvez exécuter pour gérer les appareils, consultez les articles suivants : 
+Une fois que l’utilisateur a connecté son appareil à votre organisation en vous connectant avec son compte professionnel à l’appareil ou aux applications Office sur l’appareil, vous pouvez protéger l’appareil à l’aide des stratégies que vous avez configurées. Les appareils connectés sont répertoriés sur la page **appareils** . Si un appareil est perdu ou volé, vous pouvez le gérer à partir de cette page pour supprimer les données d'entreprise. Vous pouvez également réinitialiser les paramètres par défaut des appareils Windows 10 pour effacer tous les paramètres personnalisés. 
+
+Pour plus d’informations sur les tâches que vous pouvez utiliser pour gérer les appareils, consultez les articles suivants : 
   
-[Supprimer les données d'entreprise sur les appareils](remove-company-data.md)
+[Supprimer les données d'entreprise sur des appareils](remove-company-data.md)
   
 [Rétablir les paramètres par défaut des appareils Windows 10](reset-devices-to-factory-settings.md)
   

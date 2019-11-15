@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d’appareil Intune à votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: eb140844eba4bc5cf5eba7fe452345f251ced0ff
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: dbe0592dfcac7090da194c85db8e788e8e64a0e7
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072114"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639804"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 Enterprise
 
@@ -26,9 +26,9 @@ ms.locfileid: "34072114"
 ![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+> Cliquez [ici](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: créer votre environnement de test Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Créer l’environnement de test Microsoft 365 Entreprise.
 
 Si vous souhaitez simplement configurer des stratégies MAM de manière simple avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -38,7 +38,7 @@ Si vous souhaitez configurer des stratégies MAM dans une entreprise simulée, s
 > Le test des licences automatisées et l’appartenance aux groupes ne nécessitent pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt des services de domaine Active Directory (AD DS). Elle est fournie ici en tant qu’option pour vous permettre de tester les licences automatiques et les appartenances aux groupes et de les tester dans un environnement qui représente une organisation typique. 
 >  
 
-## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Phase 2: créer une stratégie de conformité des appareils pour les appareils Windows 10
+## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Phase 2 : créer une stratégie de conformité des appareils pour les appareils Windows 10
 
 Au cours de cette phase, vous allez créer une stratégie de conformité des appareils pour les appareils Windows 10.
   
@@ -54,7 +54,7 @@ Au cours de cette phase, vous allez créer une stratégie de conformité des app
     
 6. Dans le panneau **groupes-tous les groupes** , cliquez sur **+ nouveau groupe**.
     
-7. Dans le **volet groupe** , sélectionnez **Office 365** ou **sécurité** pour **type de groupe?**, entrez **utilisateurs d’appareils Windows 10 gérés** dans **nom**, sélectionnez **attribué** dans **type d’appartenance**, puis cliquez sur **créer**. 
+7. Dans le **volet groupe** , sélectionnez **Office 365** ou **sécurité** pour **type de groupe ?**, entrez **utilisateurs d’appareils Windows 10 gérés** dans **nom**, sélectionnez **attribué** dans **type d’appartenance**, puis cliquez sur **créer**. 
     
 8. Fermez le volet **Groupe**.
     
@@ -68,11 +68,11 @@ Au cours de cette phase, vous allez créer une stratégie de conformité des app
     
 15. Dans le panneau **profils de stratégie de conformité** , cliquez sur le nom de la stratégie **Windows 10** .
     
-16. Dans le panneau **Windows 10** , cliquez sur **affectations**, puis sur Sélectionner les **groupes à inclure**.
+16. Dans le panneau **Windows 10** , cliquez sur **affectations**, puis sur **Sélectionner les groupes à inclure**.
     
 17. Sur le panneau **Sélectionner les groupes à inclure** , cliquez sur le groupe **utilisateurs d’appareils Windows 10 gérés** , puis cliquez sur **Sélectionner**.
     
-18. Cliquez sur **Enregistrer**, puis fermez le panneau affectations de **Windows 10** .
+18. Cliquez sur **Enregistrer**, puis fermez le panneau **affectations de Windows 10** .
     
 19. Fermez le volet **Profils de stratégie de conformité**.
     

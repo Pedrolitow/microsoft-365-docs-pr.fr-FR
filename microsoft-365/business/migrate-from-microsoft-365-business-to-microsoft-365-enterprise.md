@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise de Microsoft 365 Business vers Microsoft 365 entreprise E3.
-ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 77760aa8ea5b79f39d4c069d86e79a3cec6844e9
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931852"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640783"
 ---
-# <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Migrer de Microsoft 365 Business vers Microsoft 365 entreprise E3
+# <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Migration de Microsoft 365 Business vers Microsoft 365 Entreprise E3
 
 Microsoft 365 Business offre tout ce dont vous avez besoin pour votre petite entreprise, en combinant les meilleures applications de productivité en nuage avec une simple gestion des périphériques et une sécurité qui permet à vos employés d’effectuer leurs meilleures tâches. Toutefois, dans certains cas, il se peut que vous deviez migrer votre abonnement Microsoft 365 Business vers Microsoft 365 entreprise. 
 
@@ -34,7 +34,7 @@ Par exemple, votre entreprise a grandi et a besoin de plus de 300 licences (fél
 
 Votre entreprise a besoin de fonctionnalités d’entreprise, telles que Office 365 ProPlus, Windows 10 entreprise E3 ou des licences d’accès client (CAL) entreprise.
 
-La mise à niveau est facile : vous pouvez lancer la mise à niveau [à partir du centre d’administration](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). Toutes les données et la configuration de votre abonnement actuel sont conservées. Il n’y a rien à faire pour vous préparer à la migration et rien à faire par la suite, sauf tirer parti des nouvelles fonctionnalités. 
+La mise à niveau est facile : vous pouvez démarrer la mise à niveau [à partir du centre d’administration](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). Toutes les données et la configuration de votre abonnement actuel sont conservées. Il n’y a rien à faire pour vous préparer à la migration et rien à faire par la suite, sauf tirer parti des nouvelles fonctionnalités. 
 
 >[!Note]
 >Vous pouvez également utiliser un abonnement Microsoft 365 Business pour un maximum de 300 postes et obtenir un abonnement Microsoft 365 entreprise E3 pour plus de 300 places. Toutefois, Office 365 ATP n’est pas inclus dans Microsoft 365 entreprise E3. Pour une protection permanente contre les menaces, vous devez ajouter des licences Office 365 ATP supplémentaires afin que tous les utilisateurs de votre police Office 365 ATP soient titulaires d’une licence.
@@ -46,13 +46,13 @@ Ce tableau présente les différences entre Microsoft 365 entreprise et Microsof
 
 | Fonctionnalité   | Prise en charge dans Microsoft 365 Business | Prise en charge dans Microsoft 365 entreprise E3 | 
 |:-------|:-----|:-----|
-| **Sur site**       | | | 
+| **En local**       | | | 
 | Windows 10    | Windows 10 Business  |    Windows 10 entreprise E3| 
-| Applications Office *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
+| Applications Office *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
 | **Applications de productivité sur le Cloud**       | | | 
 | Exchange Online et Outlook   | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité   | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
 | Teams | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus dans Microsoft 365 entreprise E3](./media/check-mark.png) | 
-| OneDrive Entreprise | limite de stockage de 1 to par utilisateur   | Illimité | 
+| OneDrive Entreprise | limite de stockage de 1 to par utilisateur   | Illimité | 
 | Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus dans Microsoft 365 entreprise E3](./media/check-mark.png) | 
 | StaffHub  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus dans Microsoft 365 entreprise E3](./media/check-mark.png) | 
 | Gestionnaire de clients Outlook, MileIQ  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | | 
@@ -87,13 +87,13 @@ Ce tableau présente les différences entre Microsoft 365 entreprise et Microsof
 
 ## <a name="migration"></a>Migration
 
-Pour migrer, collaborez avec votre partenaire pour déplacer votre abonnement et vos licences Microsoft 365 Business pour un abonnement Microsoft 365 entreprise E3 avec ses licences.
+Pour migrer, collaborez avec votre partenaire pour déplacer votre abonnement et vos licences Microsoft 365 Business vers un abonnement Microsoft 365 entreprise E3 approprié avec ses licences.
 
 Les sections suivantes décrivent les modifications que vous devez effectuer, le cas échéant, et ce que vous pouvez faire après la migration.
 
 ### <a name="microsoft-365-subscription-configuration-and-data"></a>Données et configuration de l’abonnement Microsoft 365
 
-Vous n’avez pas besoin d’effectuer des modifications dans votre abonnement actuel ou vos données avant la migration, ce qui inclut :
+Vous n’avez pas besoin de modifier votre abonnement ou vos données actuelles avant la migration, ce qui inclut :
 
 - La configuration des abonnements, tels que les noms de domaine DNS.
 - Les comptes d’utilisateur et de groupe et les paramètres d’authentification, tels que l’authentification multifacteur ou les stratégies d’accès conditionnel.
@@ -132,14 +132,14 @@ Windows 10 entreprise E3 inclut également la gestion de l’isolation matériel
 
 ### <a name="device-management-with-intune"></a>Gestion des appareils avec Intune
 
-Vous n’avez pas besoin d’effectuer des modifications dans votre configuration Intune actuelle avant la migration, ce qui inclut les périphériques et les paramètres d’application et d’appareil.
+Vous n’avez pas besoin d’effectuer des modifications dans votre configuration Intune actuelle avant de procéder à la migration, ce qui inclut les périphériques et les paramètres d’application et d’appareil.
 
 ### <a name="windows-10"></a>Windows 10
 
 Microsoft 365 Business comprend Windows 10 Business, que vous pouvez installer avec Windows AutoPilot. Lorsque vous migrez vers Microsoft 365 entreprise E3, chaque licence utilisateur comprend Windows 10 entreprise E3, que vous pouvez également installer avec Windows AutoPilot.
 
 <a name="office-365-business"></a>
-### <a name="office-365-business"></a>Office 365 Business
+### <a name="office-365-business"></a>Office 365 Business
 
 Votre client Office 365 Business installé sur vos appareils commencera automatiquement à utiliser les fonctionnalités d’Office 365 ProPlus. Après la migration, vous pouvez désormais utiliser les éléments suivants :
 

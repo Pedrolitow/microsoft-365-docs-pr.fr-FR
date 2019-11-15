@@ -1,45 +1,53 @@
 ---
-title: 'Administrateurs : Aidez les utilisateurs à se familiariser avec leur appareil de bureau géré Microsoft'
+title: Préparer vos utilisateurs à l’utilisation des appareils
 description: ''
 keywords: Microsoft Managed Desktop, Device, Get Started, Microsoft 365
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9b87156a66d2f7a8d69a6c6f1a22353a52c69385
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012399"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627558"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Préparer vos utilisateurs à l’utilisation des appareils
 
-Les appareils de bureau gérés Microsoft sont pré-configurés avec la version actuelle de Windows. Les configurations et les applications sont installées à partir du Cloud lorsque l’utilisateur a terminé la configuration de l’appareil. 
+Une fois qu’un appareil de bureau géré Microsoft est présent aux mains de votre utilisateur final, la prise en main est rapide et simple. Les appareils sont préconfigurés avec la version actuelle de Windows, et les configurations et applications sont installées à partir du Cloud lorsque l’utilisateur termine l’installation. 
  
-Il n’y a que quelques étapes qu’un utilisateur doit effectuer pendant que l’appareil est configuré pour être productif avec son appareil. Microsoft Managed Desktop recommande *d’utiliser la prise en main du Guide de périphérique* ci-dessous. Ce guide téléchargeable fournit des instructions de base pour la configuration d’un nouveau périphérique de bureau géré Microsoft. Nous avons conçu ce guide comme une référence pour les administrateurs informatiques. Utilisez-le comme c’est le cas, ou mettez-le à jour pour ajouter des étapes ou des informations qui permettront à vos utilisateurs de configurer leurs appareils. 
+Pour faciliter encore la tâche, nous proposons un guide de la part de vos utilisateurs lors de la configuration initiale et fournissent des ressources d’aide à la fois pour la configuration et pour une utilisation ultérieure, si nécessaire. Vous pouvez personnaliser ce guide pour inclure certains détails spécifiques à votre organisation. Vous distribuez ensuite le guide directement à vos utilisateurs avec leur appareil. Il existe deux versions, une pour les organisations qui utilisent le système de support technique de Microsoft (l’application obtenir de l’aide), une pour ceux qui fournissent leur propre prise en charge interne de l’utilisateur final.
 
-## <a name="get-started-guide"></a>Guide de prise en main 
-Vous pouvez télécharger le Guide : [Microsoft Managed Desktop-prise en main de votre appareil](https://www.microsoft.com/download/details.aspx?id=57918).
+## <a name="to-prepare-the-guide"></a>Pour préparer le guide
 
-## <a name="what-should-i-update-in-the-get-started-guide"></a>Que dois-je mettre à jour dans le Guide de prise en main ?
+1. Téléchargez la version appropriée à votre organisation :
+- [Microsoft Managed Desktop-prise en main de votre appareil (obtenir la version de l’aide)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) -Utilisez cette version si vos utilisateurs finals utiliseront le système de support technique de Microsoft.
+- [Microsoft Managed Desktop-prise en main de votre appareil](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) : utilisez cette version si vos utilisateurs finals n’utilisent *pas* le système de support technique de Microsoft.
+2. Utilisez n’importe quelle application capable d’ouvrir des fichiers PDF pour remplir les détails relatifs à votre organisation :
+    - Le nom du réseau auquel vos utilisateurs doivent se connecter afin de poursuivre l’installation (étape 3 de ce guide)
+    - Le nom du compte Azure client de votre organisation (étape 4 de ce guide)
+    - Informations de contact pour le support informatique interne de votre organisation (en haut de la deuxième page)
+3. Enregistrez le fichier PDF modifié, puis distribuez-le à vos utilisateurs finaux. 
 
-Voici quelques façons dont les administrateurs informatiques peuvent personnaliser *la prise en main de votre appareil*:
-- Inclure l’Internet préféré auquel l’utilisateur doit se connecter à l’étape 2
-- Donnez à l’utilisateur le nom d’utilisateur ou le nom de domaine approprié à l’étape 3
-- Ajouter un contact de support au sein de votre organisation pour obtenir une assistance en dehors de la prise en charge de bureau géré Microsoft
-- Ajoutez des instructions sur l’emplacement de sélection de l’appareil (si cela est différent de ces instructions).
+## <a name="ready-to-use-guide"></a>« Guide prêt à l’emploi »
 
-À ce stade, vous êtes prêt à poursuivre les étapes de mise en route :
+Nous fournissons également une version plus générique du guide pour les organisations qui n’ont pas besoin de la personnaliser. Il existe deux versions, une pour les organisations qui utilisent le système de support technique de Microsoft (l’application obtenir de l’aide), une pour ceux qui fournissent leur propre prise en charge interne de l’utilisateur final.
+
+- [Bureau géré Microsoft-prise en main de votre appareil (obtenir de l’aide)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) -Utilisez cette version si vos utilisateurs finals utiliseront le système de support technique de Microsoft.
+- [Microsoft Managed Desktop-prise en main de votre appareil (prêt à l’emploi)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) : utilisez cette version si vos utilisateurs finals n’utilisent *pas* le système de support technique de Microsoft.
+
+À ce stade, vous êtes prêt à passer au déploiement d’applications :
 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de prise en main de Microsoft Managed Desktop
 
-1. [Ajouter et vérifier des contacts d’administration dans le portail d’administration](add-admin-contacts.md)
-2. [Ajustement de l’accès conditionnel](conditional-access.md)
-3. [Attribuer des licences](assign-licenses.md)
+1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md)
+2. [Ajuster l’accès conditionnel](conditional-access.md)
+3. [Affecter des licences](assign-licenses.md)
 4. [Déployer le portail d’entreprise Intune](company-portal.md)
-5. [Activer l’itinérance de l’état d’entreprise](enterprise-state-roaming.md)
+5. [Activer Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Configurer les appareils](set-up-devices.md)
 7. Préparez vos utilisateurs à utiliser des appareils (cette rubrique)
 8. [Déployer des applications](deploy-apps.md)

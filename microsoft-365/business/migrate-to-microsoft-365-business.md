@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Étapes de mise à niveau de votre entreprise à partir d’Office 365 Business Premium vers Microsoft 365 Business.
-ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38231408"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640558"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Mise à niveau vers Microsoft 365 entreprise à partir d’Office 365 Business Premium
 
@@ -40,8 +40,8 @@ Nous avons ajouté une comparaison côte à côte de ces deux plans à la descri
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 
-- **Quand dois-je choisir la mise à niveau ?** La mise à niveau est le bon choix lorsque vous souhaitez mettre à niveau **tous les utilisateurs** affectés à une seule offre. Lorsque vous choisissez mise à niveau, tous les utilisateurs de plan sont passés à un autre plan en même temps. Si vous ne souhaitez pas mettre à niveau tout le monde affecté à une seule offre, achetez des licences pour le nouveau plan (dans ce cas Microsoft 365 Business) et [affectez ces licences individuellement](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) à chaque utilisateur que vous souhaitez mettre à niveau. 
-- **Certains modules complémentaires peuvent empêcher la mise à niveau** Si vous essayez de démarrer une mise à niveau et que vous disposez d’un module complémentaire qui vous empêche de continuer, vous pouvez supprimer le module complémentaire, puis le rajouter plus tard, si vous en avez encore besoin. 
+- **Quand dois-je choisir de procéder à la mise à niveau ?** La mise à niveau est le bon choix lorsque vous souhaitez mettre à niveau **tous les utilisateurs** affectés à une seule offre. Lorsque vous choisissez mise à niveau, tous les utilisateurs de plan sont passés à un autre plan en même temps. Si vous ne souhaitez pas mettre à niveau tout le monde affecté à une seule offre, achetez des licences pour le nouveau plan (dans ce cas Microsoft 365 Business) et [affectez ces licences individuellement](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) à chaque utilisateur que vous souhaitez mettre à niveau. 
+- **Certains modules complémentaires peuvent empêcher la mise à niveau** Si vous essayez de démarrer une mise à niveau et que vous disposez d’un module complémentaire qui vous empêche de continuer, vous pouvez supprimer d’abord le module complémentaire, puis le rajouter ultérieurement si vous en avez besoin. 
 - **Si vous avez prépayé votre forfait** Il n’existe pas de mise à niveau simple pour les forfaits prépayés. Vous saurez si vous disposez d’un forfait prépayé car vous avez configuré votre plan à l’aide d’un ID de produit que vous avez peut-être acheté dans un magasin. Contactez un partenaire, accédez au Microsoft Store ou patientez jusqu’à ce que votre plan prépayé expire pour passer à un nouveau plan.
 
 ## <a name="upgrade-to-microsoft-365-business"></a>Mise à niveau vers Microsoft 365 Business
@@ -56,12 +56,12 @@ Pour acheter vos licences, procédez comme suit dans le [nouveau centre d’admi
       ![Une capture d’écran indique où sélectionner la mise à niveau dans le centre d’administration.](media/SelectUpgrade.png)
 
   > [!NOTE]
-  > Si vous voyez un message indiquant que « la mise à niveau de votre abonnement n’est pas prise en charge avec les licences basées sur les groupes dans Azure Active Directory », vous pouvez l’ignorer en toute sécurité, sauf si vous disposez d’une organisation très importante. Les organisations qui ont sélectionné cette option seront conscientes de l’utilisation d’une licence basée sur les groupes.
+  > Si vous voyez un message indiquant que **la mise à niveau de votre abonnement n’est pas prise en charge avec la gestion des licences basée sur les groupes dans Azure Active Directory**, vous pouvez l’ignorer en toute sécurité, sauf si vous disposez d’une organisation très importante. Les organisations qui ont sélectionné cette option seront conscientes de l’utilisation d’une licence basée sur les groupes.
 
 4. Ensuite, vous pouvez afficher la liste des plans Office vers lesquels vous pouvez effectuer une mise à niveau. Dans ce cas, recherchez le forfait Microsoft 365 Business. Vous pouvez faire défiler vers le bas si vous souhaitez voir tous les services et applications Office inclus dans ce plan. Sous **microsoft 365 entreprise**, sélectionnez **mettre à niveau** pour ajouter Microsoft 365 entreprise à votre panier.
 5. Dans le panier :
-    1. Nous inclurons automatiquement les licences pour tous vos utilisateurs actuels dans le panier. Si vous avez besoin de plus ou moins de licences, vous devrez [acheter et attribuer ces licences individuellement](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
-    2. Vous pouvez régler le salaire mensuel ou annuel. Sélectionnez le menu déroulant pour effectuer votre choix.
+    1. Nous inclurons automatiquement les licences pour tous vos utilisateurs actuels. Si vous avez besoin de plus ou moins de licences, vous devez [acheter et attribuer ces licences individuellement](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
+    2. Vous pouvez modifier la façon dont vous souhaitez payer : tous les mois ou tous les ans. Sélectionnez le menu déroulant pour effectuer votre choix.
 6. Sélectionnez **aller à la conclusion** de la transaction où vous verrez un résumé de votre achat, dont le mode de paiement pour ce compte. Vous pouvez également ajouter un code promotionnel ici si vous en avez un.
 7. Sélectionnez **passer une commande** pour finaliser votre achat.
 Microsoft met en place quelques minutes pour configurer vos nouveaux plans de service. Pour vérifier la progression, sélectionnez **vérifier le statut de la mise à niveau**. 
@@ -72,7 +72,7 @@ Microsoft met en place quelques minutes pour configurer vos nouveaux plans de se
   
 ## <a name="protect-user-devices-and-files"></a>Protéger les appareils et les fichiers des utilisateurs
 
-Maintenant que les licences professionnelles de Microsoft 365 ont été attribuées, suivez les étapes pour commencer à protéger les appareils et les fichiers. Vous utiliserez certaines nouvelles options incluses dans le volet de navigation du centre d’administration.
+Maintenant que les licences professionnelles de Microsoft 365 ont été attribuées, suivez les étapes pour commencer à protéger les appareils et les fichiers. Vous allez utiliser certaines nouvelles options incluses dans le volet de navigation du centre d’administration.
   
 1. Dans le volet de navigation du centre d’administration, accédez à **** \> **stratégies**de périphériques.
     
@@ -96,6 +96,3 @@ Maintenant que les licences professionnelles de Microsoft 365 ont été attribu�
   - Consultez la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365 pour les](set-up-windows-devices.md) étapes des appareils Windows. 
     
   - Pour plus d’informations sur les téléphones Android et les iPhone, consultez la rubrique [configurer des appareils mobiles pour les utilisateurs professionnels de Microsoft 365](set-up-mobile-devices.md) . 
-
-
-

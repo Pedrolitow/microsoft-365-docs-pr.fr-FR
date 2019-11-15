@@ -25,23 +25,21 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: 'Découvrez la configuration par défaut et l’ajout de stratégies de gestion des applications pour protéger les données d’entreprise sur les appareils mobiles personnels des utilisateurs. '
-ms.openlocfilehash: 348f3d0dad9f3a7957f12eea7c7e7be2d1706aa6
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 6c4534f70ea7d8b8c93283e92278f1aa08ab94bf
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575795"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640746"
 ---
 # <a name="protect-work-files-on-devices"></a>Protéger les fichiers de travail sur les appareils
 
-[] Aujourd'hui, les personnes utilisent en permanence leurs appareils, et comme leur vie personnelle et leur vie personnelle s'entrechoquent, vos données d'entreprise peuvent se trouver sur l'appareil personnel d'un employé. Les paramètres que vous configurez ici peuvent vous aider à reprendre le contrôle et à assurer la protection des fichiers professionnels, sans affecter aucun des paramètres personnels ou des données de l'utilisateur.
+Dans le monde actuel, les utilisateurs sont liés à leurs appareils, et en cas de collision personnelle et professionnelle, les données de votre entreprise peuvent se terminer sur l’appareil personnel d’un employé. Les paramètres que vous configurez ici peuvent vous aider à reprendre le contrôle et à assurer la protection des fichiers professionnels, sans affecter aucun des paramètres personnels ou des données de l'utilisateur.
   
 ## <a name="configuring-policies-during-setup"></a>Configuration des stratégies pendant l'installation
 
-Pendant l'installation, trois stratégies de gestion des applications sont ajoutées, une pour Windows 10, une pour iOS et une pour Android. Chaque stratégie aura les mêmes paramètres et elles s'appliqueront à tous les utilisateurs. Les stratégies sont activées lorsque l'utilisateur se connecte à son compte professionnel sur son téléphone mobile.
+Pendant l'installation, trois stratégies de gestion des applications sont ajoutées, une pour Windows 10, une pour iOS et une pour Android. Chaque stratégie a les mêmes paramètres et s’applique à tous les utilisateurs. Les stratégies sont activées lorsque l'utilisateur se connecte à son compte professionnel sur son téléphone mobile.
   
 Nous vous recommandons d'accepter la configuration par défaut lors de l'installation. Une fois l'installation terminée, vous pouvez ajouter d'autres stratégies pour affiner la configuration et appliquer des niveaux de contrôle variables pour certains groupes d'utilisateurs.
   
 Pour ajouter des stratégies après l'installation, consultez [Gérer les stratégies et les appareils dans le centre d'administration](manage.md).
-  
-

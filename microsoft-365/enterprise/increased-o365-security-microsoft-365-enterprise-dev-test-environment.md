@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour activer des paramètres de sécurité Microsoft 365 supplémentaires pour votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: d51f9ada68969823eadbb4fad55392358a6ddee8
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f430acb4a7fd1842a4ae26025ad5a63cccf8392f
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072134"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640366"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Amélioration de la sécurité Microsoft 365 pour votre environnement de test Microsoft 365 Enterprise
 
@@ -26,9 +26,9 @@ Les instructions de cet article vous permettent de configurer des paramètres su
 ![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Cliquez [ici](https://aka.ms/m365etlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+> Cliquez [ici](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: créer votre environnement de test Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Créer l’environnement de test Microsoft 365 Entreprise.
 
 Si vous souhaitez simplement configurer une sécurité Microsoft 365 accrue de façon légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -38,7 +38,7 @@ Si vous souhaitez configurer la sécurité Microsoft 365 améliorée dans une en
 > Test la sécurité améliorée de Microsoft 365 ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt des services de domaine Active Directory (AD DS). Elle est fournie ici en tant qu’option pour vous permettre de tester les licences automatiques et les appartenances aux groupes et de les tester dans un environnement qui représente une organisation typique. 
 
 
-## <a name="phase-2-configure-increased-microsoft-365-security"></a>Phase 2: configuration de la sécurité Microsoft 365 améliorée
+## <a name="phase-2-configure-increased-microsoft-365-security"></a>Phase 2 : configuration de la sécurité Microsoft 365 améliorée
 
 Dans cette phase, vous allez activer la sécurité Microsoft 365 améliorée pour votre environnement de test Microsoft 365 Enterprise. Pour plus d’informations et de paramètres, voir [Configure Your Office 365 client for major Security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
@@ -61,9 +61,9 @@ Les applications qui ne prennent pas en charge l’authentification moderne ne p
 
 Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive et Microsoft teams protège votre organisation contre le partage accidentel de fichiers malveillants.
 
-1. Accédez au [Centre de sécurité & de sécurité Office 365](https://protection.office.com) et connectez-vous avec votre compte d’administrateur général.
+1. Accédez au [Centre de sécurité & conformité d’Office 365](https://protection.office.com) et connectez-vous avec votre compte d’administrateur général.
 
-2. Dans le volet de navigation de gauche, sous **gestion des menaces**, choisissez **stratégie _GT_ les pièces jointes fiables**. 
+2. Dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie > pièces jointes approuvées**. 
 
 3. Sélectionnez Activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**.
 
@@ -74,18 +74,18 @@ Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive et Microsof
 
 Les programmes malveillants sont constitués de virus et de logiciels espions. Les virus contaminent d'autres programmes et données, et ils se propagent dans votre ordinateur à la recherche de programmes à infecter. Les logiciels espions font référence aux programmes malveillants qui recueillent vos informations personnelles, telles que les informations de connexion et les données personnelles, et les renvoient à l’auteur de programmes malveillants. 
 
-Office 365 dispose de fonctionnalités intégrées de filtrage des courriers indésirables et des programmes malveillants qui permettent de protéger les messages entrants et sortants des logiciels malveillants et de vous protéger contre le courrier indésirable. Pour plus d’informations, consultez la rubrique [anti-spam & protection contre les programmes malveillants dans Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
+Office 365 dispose de fonctionnalités intégrées de filtrage des courriers indésirables et des programmes malveillants qui permettent de protéger les messages entrants et sortants des logiciels malveillants et de vous protéger contre le courrier indésirable. Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable & la protection contre les programmes malveillants dans Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
 
-Pour vérifier que le traitement anti-programme malveillant est effectué sur des fichiers avec des types de fichiers de pièces jointes courants:
+Pour vérifier que le traitement anti-programme malveillant est effectué sur des fichiers avec des types de fichiers de pièces jointes courants :
 
 1. Cliquez sur le bouton précédent de votre navigateur pour revenir à la page **stratégie** .
 2. Cliquez sur **anti-programme malveillant**.
 3. Double-cliquez sur la stratégie nommée **default**.
 4. Dans la fenêtre **stratégie anti-programme malveillant** , cliquez sur **paramètres**.
-4. Sous **Common Attachment types Filter**, cliquez sur **> Save**.
+4. Sous **Common Attachment types Filter**, cliquez **sur > enregistrer**.
 
 
-## <a name="phase-3-examine-the-threat-management-dashboard"></a>Phase 3: examiner le tableau de bord de gestion des menaces
+## <a name="phase-3-examine-the-threat-management-dashboard"></a>Phase 3 : examiner le tableau de bord de gestion des menaces
 
 Office 365 Threat Management peut vous aider à contrôler et à gérer l’accès des appareils mobiles aux données de votre organisation, à protéger votre organisation contre la perte de données et à protéger les messages entrants et sortants contre les logiciels malveillants et le courrier indésirable. Vous pouvez également utiliser la gestion des menaces pour protéger la réputation de votre domaine et déterminer si les expéditeurs sont ou non usurpés de manière malveillante les comptes de votre domaine. Pour plus d’informations, consultez [la rubrique gestion des menaces dans le centre de sécurité Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/threat-management).
 

@@ -20,20 +20,20 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: Découvrez comment activer Microsoft 365 pour protéger les appareils locaux Windows 10.
-ms.openlocfilehash: 392c57a7350a901c1481be632e880cc9fcaa6140
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Découvrez comment activer Microsoft 365 pour protéger les appareils Windows 10 joints à Active Directory.
+ms.openlocfilehash: 93e3364fc94f3878bec13d0a87b17a7d3678a4cc
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575975"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633266"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Activer la gestion des appareils Windows 10 associés à un domaine par Microsoft 365 Business
 
 Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 entreprise pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale.
-Pour ce faire, vous pouvez implémenter des **appareils joints Azure ad hybrides**. Il s’agit des appareils qui sont joints à la fois à votre Active Directory local et à votre Azure Active Directory.
+Pour configurer cette protection, vous pouvez implémenter des **appareils joints Azure ad hybrides**. Ces appareils sont joints à votre annuaire Active Directory local et à votre Azure Active Directory.
 
-La vidéo suivante décrit les étapes à suivre pour configurer cette configuration pour le scénario le plus courant, également détaillé dans les étapes suivantes.
+Cette vidéo décrit la procédure à suivre pour le scénario le plus courant, qui est également détaillée dans les étapes suivantes.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
@@ -44,9 +44,9 @@ Avant de synchroniser vos utilisateurs et ordinateurs à partir du domaine Activ
 
    - Assurez-vous qu’il n’existe pas de doublons dans votre répertoire pour les attributs suivants : **mail**, **proxyAddresses**et **userPrincipalName**. Ces valeurs doivent être uniques et les doublons doivent être supprimés.
    
-   - Nous vous recommandons de configurer l’attribut **userPrincipalName** (UPN) de chaque compte d’utilisateur local de sorte qu’il corresponde à l’adresse de messagerie principale correspondant à l’utilisateur Microsoft 365 sous licence. Par exemple *Mary.Shelley@contoso.com* au lieu de *Mary @ contoso. local*
+   - Nous vous recommandons de configurer l’attribut **userPrincipalName** (UPN) de chaque compte d’utilisateur local de sorte qu’il corresponde à l’adresse de messagerie principale correspondant à l’utilisateur Microsoft 365 sous licence. Par exemple : *Mary.Shelley@contoso.com* plutôt que *Mary@contoso. local*
    
-   - Si le domaine Active Directory se termine par un suffixe non routable comme *. local* ou *. LAN*, au lieu d’un suffixe routable Internet tel que *. com* ou *. org*, vous devrez d’abord ajuster le suffixe UPN des comptes d’utilisateurs locaux comme décrit dans [Préparez un domaine non routable pour la synchronisation d’annuaires](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
+   - Si le domaine Active Directory se termine par un suffixe non routable comme *. local* ou *. LAN*, au lieu d’un suffixe routable Internet tel que *. com* ou *. org*, ajustez d’abord le suffixe UPN des comptes d’utilisateurs locaux comme décrit dans [Prepare a non routable domain for Directory Synchronization](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. installer et configurer Azure AD Connect
 
@@ -55,24 +55,24 @@ Pour synchroniser vos utilisateurs, groupes et contacts à partir de l’Active 
 > [!NOTE]
 > Les étapes sont exactement les mêmes pour Microsoft 365 Business. 
 
-Au fur et à mesure que vous configurez vos options pour Azure AD Connect, nous vous recommandons d’activer la **synchronisation de mot de passe** et l' **authentification unique transparente**, ainsi que la fonctionnalité d' **écriture différée de mot de passe** , qui est également prise en charge dans Microsoft 365 Business.
+Lorsque vous configurez vos options pour Azure AD Connect, nous vous recommandons d’activer la **synchronisation de mot de passe**, l' **authentification unique transparente**et la fonctionnalité d' **écriture différée de mot de passe** , qui est également prise en charge dans Microsoft 365 Business.
 
 > [!NOTE]
 > Il existe quelques étapes supplémentaires pour l’écriture différée de mot de passe au-delà de la case à cocher dans Azure AD Connect. Pour plus d’informations, voir [procédure : configurer l’écriture différée de mot de passe](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
 
 ## <a name="3-configure-hybrid-azure-ad-join"></a>3. configurer une jointure Azure AD hybride
 
-Avant d’autoriser les appareils Windows 10 à être associés à Azure AD hybride, vous devez veiller à respecter les conditions préalables suivantes :
+Avant d’autoriser les appareils Windows 10 à être associés à Azure AD hybride, veillez à respecter les conditions préalables suivantes :
 
-   - Vous exécutez la dernière version d’Azure AD Connect.
+   - Vous utilisez la dernière version d’Azure AD Connect.
 
    - Azure AD Connect a synchronisé tous les objets ordinateur des appareils que vous souhaitez associer à Azure AD. Si les objets ordinateur appartiennent à des unités d’organisation (UO) spécifiques, assurez-vous également que ces unités d’organisation sont définies pour la synchronisation dans Azure AD Connect.
 
-Pour enregistrer les appareils Windows 10 joints à un domaine en tant que membres Azure AD hybrides, suivez les étapes décrites dans le [Didacticiel : configure Hybrid Azure Active Directory Join for Managed Domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). Cela permet d’activer votre environnement Active Directory sur site existant et de le rendre prêt sur le Cloud.
+Pour enregistrer les appareils Windows 10 joints à un domaine en tant que membres Azure AD hybrides, suivez les étapes décrites dans le [Didacticiel : configure Hybrid Azure Active Directory Join for Managed Domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). Cette fonction hybride permet d’activer votre environnement Active Directory existant sur des ordinateurs Windows 10 et de les rendre prêts pour le Cloud.
     
 ## <a name="4-enable-automatic-enrollment-for-windows-10"></a>4. activer l’enregistrement automatique pour Windows 10
 
- Pour inscrire automatiquement des appareils Windows 10 pour la gestion des appareils mobiles dans Intune, reportez-vous à [la rubrique inscrire un appareil Windows 10 automatiquement à l’aide](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)de la stratégie de groupe. Vous pouvez définir la stratégie de groupe au niveau d’un ordinateur local ou pour les opérations en bloc, vous pouvez créer ce paramètre de stratégie de groupe sur votre contrôleur de domaine à l’aide de la console de gestion des stratégies de groupe et des modèles ADMX.
+ Pour inscrire automatiquement des appareils Windows 10 pour la gestion des appareils mobiles dans Intune, reportez-vous à [la rubrique inscrire un appareil Windows 10 automatiquement à l’aide](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)de la stratégie de groupe. Vous pouvez définir la stratégie de groupe au niveau d’un ordinateur local ou pour les opérations en bloc, vous pouvez utiliser la console de gestion des stratégies de groupe et les modèles ADMX pour créer ce paramètre de stratégie de groupe sur votre contrôleur de domaine.
 
 ## <a name="5-configure-seamless-single-sign-on"></a>5. configurer l’authentification unique transparente
 

@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 0f7b4ddec9c52861b4ecf4a7e86831efcce402d6
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1c39745b2dc891b4dc079ecd657eaf0d883af23
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370261"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627458"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>Étape 5 : déployer les fonctionnalités de sécurité Windows 10 entreprise
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 offre des fonctionnalités de sécurité pour protéger les utilisateurs de l’entreprise, arrêter Cyber et empêcher la perte de données. 
 
@@ -33,7 +33,7 @@ Cette étape vous explique comment déployer, gérer, configurer et résoudre le
 
 * [Antivirus Windows Defender](#windows-defender-antivirus)
 * [Windows Defender Exploit Guard](#windows-defender-exploit-guard)
-* [Protection avancée contre les menaces Microsoft Defender](#windows10-sec-atp)
+* [Microsoft Defender – Protection avancée contre les menaces](#windows10-sec-atp)
 
 <a name="windows10-sec-av"></a>
 ## <a name="windows-defender-antivirus"></a>Antivirus Windows Defender
@@ -58,7 +58,7 @@ Pour mieux comprendre les options de configuration, reportez-vous à la liste de
 Vous pouvez utiliser le [Guide d’évaluation de la protection antivirus Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus) pour vous aider à évaluer le niveau de protection et l’impact de Windows Defender AV sur votre réseau. Cela peut également être utile lors de la création d’une configuration initiale ou d’un « guide de démarrage rapide » et est régulièrement mis à jour pour fournir les recommandations les plus utiles pour la configuration et l’activation des fonctionnalités afin de garantir une protection maximale.
 
 ### <a name="reporting"></a>Reporting
-Vous pouvez obtenir des rapports à l’aide d’un outil de configuration, tel que System Center Configuration Manager ou Microsoft Intune. Vous pouvez également obtenir des rapports à partir de la conformité des mises à jour (OMS) ou en utilisant des journaux des événements Windows dans votre SIEM. Si vous disposez d’une licence pour Microsoft Defender ATP, vous pouvez également obtenir des rapports sur les détections AV Windows Defender et effectuer des corrections de base. Pour plus d’informations, consultez les ressources suivantes :
+Vous pouvez obtenir des rapports à l’aide d’un outil de configuration, tel que le gestionnaire de configuration de point de terminaison de Microsoft ou Microsoft Intune. Vous pouvez également obtenir des rapports à partir de la conformité des mises à jour (OMS) ou en utilisant des journaux des événements Windows dans votre SIEM. Si vous disposez d’une licence pour Microsoft Defender ATP, vous pouvez également obtenir des rapports sur les détections AV Windows Defender et effectuer des corrections de base. Pour plus d’informations, consultez les ressources suivantes :
 * [Déployer, gérer et signaler sur les antivirus Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
 * [Rapport sur la protection antivirus Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
 * [Vue d’ensemble du portail Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=861596)
@@ -82,7 +82,7 @@ Pour déployer, gérer et configurer Windows Defender exploit Guard, suivez les 
 Vous pouvez utiliser une série de rubriques d’évaluation pour évaluer le niveau de protection et l’impact de Windows Defender exploit Guard sur votre réseau. Cela peut également être utile lors de la création d’une configuration initiale ou d’un « guide de démarrage rapide », et les rubriques et conseils sont régulièrement mis à jour pour fournir les recommandations les plus utiles en matière de configuration et d’activation des fonctionnalités pour garantir une protection maximale. Pour plus d’informations, [évaluez Windows Defender exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard).
 
 ### <a name="reporting"></a>Reporting
-Vous pouvez obtenir la création de rapports à l’aide d’un outil de configuration, tel que System Center Configuration Manager ou Intune. Vous pouvez également obtenir des rapports en utilisant des journaux des événements Windows dans votre SIEM. Si vous disposez d’une licence pour Microsoft Defender ATP, vous pouvez également obtenir des rapports sur les détections AV Windows Defender et effectuer des corrections de base. Pour plus d’informations, consultez les ressources suivantes :
+Vous pouvez obtenir des rapports à l’aide d’un outil de configuration, tel que le gestionnaire de configuration ou Intune. Vous pouvez également obtenir des rapports en utilisant des journaux des événements Windows dans votre SIEM. Si vous disposez d’une licence pour Microsoft Defender ATP, vous pouvez également obtenir des rapports sur les détections AV Windows Defender et effectuer des corrections de base. Pour plus d’informations, consultez les ressources suivantes :
 * [Afficher les événements Windows Defender exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard)
 * [Vue d’ensemble du portail Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=861596)
 
@@ -91,10 +91,10 @@ Vous pouvez effectuer un dépannage de base ou éventuellement fournir à Micros
 
 
 <a name="windows10-sec-atp"></a>
-## <a name="microsoft-defender-advanced-threat-protection"></a>Protection avancée contre les menaces Microsoft Defender
+## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender - Protection avancée contre les menaces
 Microsoft Defender ATP (disponible uniquement avec la planification Microsoft 365 entreprise E5) est un service de sécurité qui permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées sur leurs réseaux. Pour plus d’informations sur Microsoft Defender ATP, la configuration minimale requise et la gestion de cette fonctionnalité, reportez-vous à :
 
-* [Microsoft Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
+* [Microsoft Defender - PACM](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [Configuration minimale requise](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)
 
 ### <a name="deployment-management-and-configuration"></a>Déploiement, gestion et configuration

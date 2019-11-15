@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de Microsoft 365 entreprise
+title: Vue d’ensemble de Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Découvrez comment configurer Microsoft 365 Business.
-ms.openlocfilehash: 86af927c05168fabe5a72f331c14c9f3e5cbc1dd
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+description: Pour en savoir plus, consultez la rubrique Microsoft 365 Business.
+ms.openlocfilehash: 03e16c336a2d6d3d8ffd5875ed7419bba3c7e378
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038946"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633396"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Vue d’ensemble de Microsoft 365 Business
 
@@ -35,7 +35,7 @@ ms.locfileid: "38038946"
 
 Microsoft 365 Business est un service d’abonnement qui inclut des outils de productivité Office 365 ainsi que des fonctionnalités avancées pour vous aider à protéger votre entreprise contre cyber, protéger vos données et gérer les appareils.
   
-Microsoft 365 Business est destiné à 300 licences, si vous avez besoin de plus de licences, reportez-vous à la documentation de [microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) pour plus d’informations.
+Microsoft 365 Business est destiné à 300 licences. Si vous avez besoin de plus de licences, consultez la documentation de [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) pour plus d’informations.
 
 Consultez la rubrique [Microsoft 365 Business Service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) pour obtenir la liste complète des fonctionnalités.
   
@@ -43,12 +43,12 @@ Consultez la rubrique [Microsoft 365 Business Service Description](https://docs.
 
 Vos données métiers peuvent être compromises de plusieurs façons. Vous et vos utilisateurs pouvez compromettre la sécurité de votre organisation lorsque vous vous connectez avec des informations d’identification compromise ou que vous affichez des données d’organisation sur différents appareils et applications. Plus spécifiquement, votre organisation est exposée aux risques suivants :
 
-1. Informations d’identification de connexion compromises ou faibles.
-2. Appareil compromis avec un code confidentiel faible ou un appareil appartenant à un utilisateur.
-3. Les utilisateurs qui peuvent copier/coller/enregistrer les données de votre organisation dans des applications personnelles.
-4. Les utilisateurs qui installent et<sup>utilisent 3 applications</sup> tierces avec un niveau de sécurité faible.
-5. Les vulnérabilités de messagerie, y compris le partage de données sensibles, les tentatives de hameçonnage, les programmes malveillants, etc.
-6. Lorsque les personnes ne devraient pas, peuvent accéder aux documents contenant des informations sensibles.
+- Informations d’identification de connexion compromises ou faibles.
+- Appareil compromis avec un code confidentiel faible ou un appareil appartenant à un utilisateur.
+- Les utilisateurs qui peuvent copier/coller/enregistrer les données de votre organisation dans des applications personnelles.
+- Utilisateurs qui installent et utilisent des applications tierces avec un niveau de sécurité faible.
+- Les vulnérabilités de messagerie, y compris le partage de données sensibles, les tentatives de hameçonnage, les programmes malveillants, etc.
+- Lorsque les personnes ne devraient pas, peuvent accéder aux documents contenant des informations sensibles.
 
 Microsoft 365 entreprise contribue à protéger vos données dans chacune de ces instances. Les fonctionnalités de sécurité qui protègent vos données métiers sont détaillées dans la figure suivante.
 
@@ -58,7 +58,7 @@ Microsoft 365 entreprise contribue à protéger vos données dans chacune de ces
 
 Microsoft 365 Business contribue à une **protection contre les menaces** :
 
-Analyse de tous les liens dans les messages électroniques et les documents en temps réel pour bloquer les sites Web non sécurisés (liens fiables ATP).
+- L’analyse des liens dans les e-mails et les documents en temps réel pour bloquer les sites Web non sécurisés (liens fiables ATP).
 
 - Exécution d’une analyse avancée des pièces jointes de courrier électronique dans un environnement de bac à sable pour détecter les programmes malveillants nouvellement développés (pièces jointes fiables). 
 
@@ -66,23 +66,23 @@ Analyse de tous les liens dans les messages électroniques et les documents en t
 
 - La configuration de stratégies avancées qui désactivent l’accès à partir d’emplacements non approuvés ou ignore l’authentification multifacteur à partir d’emplacements approuvés tels que votre réseau Office (Azure MFA, y compris les adresses IP approuvées et l’accès conditionnel). 
 
-- Mise en œuvre de la protection contre les programmes malveillants sur tous les appareils Windows 10 de votre entreprise et protection des fichiers dans les dossiers système clés contre les modifications apportées par les ransomware (Windows Defender)
+- Mise en œuvre de la protection contre les programmes malveillants sur tous les appareils Windows 10 de votre organisation et protection des fichiers dans les dossiers système clés contre les modifications apportées par les ransomware (Windows Defender)
 
 Vos **données métiers sont protégées** par :
 
 - Utilisation de la détection automatique pour empêcher que des informations sensibles telles que des numéros de sécurité sociale ou des cartes de crédit ne fuient en dehors de votre entreprise (protection contre la perte de données). 
 
-- Le chiffrement des messages électroniques sensibles afin que vous puissiez communiquer en toute sécurité avec des clients ou d’autres personnes en dehors de votre entreprise, afin de garantir que seul le destinataire concerné peut lire le message (chiffrement de messages Office 365).
+- Chiffrement des messages électroniques sensibles afin que vous puissiez communiquer en toute sécurité avec des clients ou d’autres personnes en dehors de votre organisation. Cela permet de s’assurer que seul le destinataire concerné peut lire le message (chiffrement de messages Office 365).
 
 - Contrôle des personnes ayant accès aux informations de l’entreprise en appliquant des restrictions telles que **ne pas copier** et ne **pas transférer** vers la messagerie électronique et les documents (Azure information protection, plan 1).
 
-- L’activation de l’archivage Cloud illimité afin que vous puissiez conserver tous les messages électroniques de votre entreprise, y compris les boîtes aux lettres des anciens employés (archivage Exchange Online).
+- L’activation de l’archivage Cloud illimité afin que vous puissiez conserver tous les messages électroniques de votre organisation, y compris les boîtes aux lettres des anciens employés (archivage Exchange Online).
 
 Vos **appareils sont sécurisés** par les éléments suivants :
 
-- Contrôle des appareils et des utilisateurs pouvant accéder à vos données Office 365 ; avec des options pour empêcher les utilisateurs de se connecter à partir d’ordinateurs de bureau, d’applications non approuvées ou en dehors des heures de travail (accès conditionnel).
+- Contrôle des appareils et des utilisateurs pouvant accéder à vos données Office 365, avec des options pour empêcher les utilisateurs de se connecter à partir d’ordinateurs domestiques, d’applications non approuvées ou en dehors des heures de travail (accès conditionnel).
 
-- Application de stratégies de sécurité pour protéger les données métiers sur des appareils iOS et Android.  Par exemple, vous pouvez exiger que les utilisateurs fournissent un code confidentiel ou une empreinte digitale pour accéder aux données métiers et chiffrer les données sur les appareils mobiles (applications de protection des applications mobiles).
+- Application de stratégies de sécurité pour protéger les données métiers sur des appareils iOS et Android. Par exemple, vous pouvez exiger que les utilisateurs fournissent un code confidentiel ou une empreinte digitale pour accéder aux données métiers et chiffrer les données sur les appareils mobiles (applications de protection des applications mobiles).
 
 - Conservation des documents professionnels, des courriers électroniques et d’autres données dans les applications Office Mobile approuvées et empêcher les employés de les enregistrer dans des applications et des emplacements non autorisés (application protection pour les applications mobiles Office).
 
@@ -94,7 +94,7 @@ Pour afficher la liste complète des fonctionnalités de sécurité, consultez l
 
 ## <a name="get-microsoft-365-business"></a>Obtenir Microsoft 365 Business
 
-- Si vous faites appel à un partenaire, il recevra Microsoft 365 Entreprise : [Obtenir Microsoft 365 Business auprès de l'Espace partenaires Microsoft](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+- Si vous avez un partenaire, il obtiendra Microsoft 365 entreprise : [obtenir microsoft 365 entreprise à partir du centre de partenaires Microsoft](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 
 - Si vous ne disposez pas d’un partenaire et que vous souhaitez obtenir Microsoft 365 entreprise, vous pouvez l' [acheter ici](https://www.microsoft.com/microsoft-365/business) et suivre les instructions d' [inscription](sign-up.md) .
 

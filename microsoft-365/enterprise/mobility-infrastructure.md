@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c507db0d2867b006772f5aca83d8b5342e55113d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031149"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627428"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5 : gestion des appareils mobiles pour Microsoft 365 Enterprise
 
@@ -62,7 +62,7 @@ Cette étape porte sur la configuration d’Intune et sa préparation pour la ge
 
 3. **[Connectez-vous à Intune](https://docs.microsoft.com/intune/account-sign-up)**. Lorsque vous vous connectez, vous pouvez être invité à entrer des informations sur votre organisation. Intune est inclus dans Microsoft 365 et peut être ouvert directement à partir du [Centre d’administration microsoft 365](https://admin.microsoft.com). Vous pouvez également ouvrir Intune directement à partir du [portail Azure](https://portal.azure.com).
 
-4. **[Choisissez la configuration de la gestion des appareils mobiles](https://docs.microsoft.com/intune/mdm-authority-set)**. La première fois que vous utilisez Intune, vous devez activer la gestion des appareils. Intune peut être utilisé en tant que service en nuage seul, hybride avec Intune et System Center Configuration Manager, ou à l’aide de la gestion des appareils mobiles pour Office 365. Vous pouvez choisir le programme d’installation le mieux adapté à votre organisation.
+4. **[Choisissez la configuration de la gestion des appareils mobiles](https://docs.microsoft.com/intune/mdm-authority-set)**. La première fois que vous utilisez Intune, vous devez activer la gestion des appareils. Intune peut être utilisé en tant que service en nuage seul, hybride avec Intune et le gestionnaire de configuration de point de terminaison de Microsoft, ou à l’aide de la gestion des appareils mobiles pour Office 365. Vous pouvez choisir le programme d’installation le mieux adapté à votre organisation.
 
 5. **[Ajouter des utilisateurs](https://docs.microsoft.com/intune/users-add)** et **[Ajouter des groupes](https://docs.microsoft.com/intune/groups-add)**. 
 
