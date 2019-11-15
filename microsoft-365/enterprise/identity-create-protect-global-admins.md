@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vos comptes d’administrateur général ont besoin d’un traitement spécial leur assurant une protection contre la compromission des informations d’identification.
-ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370211"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627080"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Étape 1 : Créer et protéger vos comptes d’administrateur général
 
@@ -47,7 +47,7 @@ Pour des protections supplémentaires, consultez [Protéger vos comptes d’admi
 Les résultats de cette section sont les suivants :
 
 - Les seuls comptes d’utilisateurs de votre abonnement dotés du rôle Administrateur général sont les comptes Administrateur général dédiés. Pour le vérifier, utilisez la commande Azure Active Directory PowerShell pour Graph suivante : 
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 - Tous les autres comptes d’utilisateurs qui gèrent les services de votre abonnement ont des rôles d’administrateur associés à leurs responsabilités.

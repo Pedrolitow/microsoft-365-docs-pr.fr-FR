@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables applicables à l’authentification de la synchronisation du hachage du mot de passe.
-ms.openlocfilehash: 274f73b1cd6a925b972ab14417c9d854c48c2f00
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9544f59f638eb590ad5f43158b33229ec5703580
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074154"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627508"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
 
@@ -96,13 +96,13 @@ Pour Skype Entreprise Online :
 
 2. Exécutez cette commande.
 
-  ```
+  ```powershell
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
 3. Vérifiez que la commande a correctement appliqué la modification.
 
-  ```
+  ```powershell
   Get-CsOAuthConfiguration
   ```
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables pour l’authentification uniquement dans le cloud.
-ms.openlocfilehash: 08f805f77771a056cc9d847dd064b472a46cb166
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: eb70153bc2868289fde41ad9a68ffa3a44b01b59
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36055006"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627370"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès aux identités et aux appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
 
@@ -92,13 +92,13 @@ Pour Skype Entreprise Online :
 
 2. Exécutez cette commande.
 
-  ```
+  ```powershell
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
 3. Vérifiez que la commande a correctement appliqué la modification.
 
-  ```
+  ```powershell
   Get-CsOAuthConfiguration
   ```
 
