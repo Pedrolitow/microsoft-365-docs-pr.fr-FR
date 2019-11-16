@@ -13,16 +13,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment une multinationale fictive mais représentative a mis en œuvre Microsoft 365 Entreprise.
-ms.openlocfilehash: 0d5453a5f55314207e0c8403837a83dd66eb70d3
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: e7c79612b18bdd21d8fd137abe11f8f26cfd6eff
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369615"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673220"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Entreprise pour Contoso Corporation
-
-**Résumé :** comment une organisation globale fictive mais représentative a adopté Microsoft 365 entreprise.
 
 Microsoft 365 Entreprise est la première offre cloud de Microsoft qui allie les applications et services de productivité locaux et basés sur le cloud à Windows 10 Entreprise et aux fonctionnalités de sécurité avancées dans une solution complète et intelligente, qui permet à chacun d’être créatif et de collaborer en toute sécurité. 
 

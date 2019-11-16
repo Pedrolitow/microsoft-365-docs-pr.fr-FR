@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Utilisation des fonctionnalités de sécurité sur Microsoft 365 Entreprise par Contoso.
-ms.openlocfilehash: ada72460adffce46951b8784d90b6cfa29b35bc3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b49312b94aef35afc5febeae0fd4dc71b7c642af
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031099"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672680"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Résumé de la sécurité de Microsoft 365 Entreprise pour Contoso Corporation
-
-**Résumé :** Utilisation des fonctionnalités de sécurité sur Microsoft 365 Entreprise par Contoso.
 
 Pour obtenir la déconnexion du déploiement de Microsoft 365 Entreprise par le service de sécurité informatique, un examen minutieux de la sécurité a été effectué. Voici les exigences de sécurité de Contoso pour le cloud :
 

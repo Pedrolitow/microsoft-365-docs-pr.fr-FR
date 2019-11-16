@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et déployez la protection des informations Windows dans Microsoft 365.
-ms.openlocfilehash: 5d327ea97a24d4b1015940688b7702dc761e826d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 23c3298545a288b459fd3bb858bb7c1d1714ee75
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370121"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627380"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Étape 4 : Configurer la protection des informations Windows
 
@@ -39,7 +39,7 @@ Pour déployer la Protection des informations Windows dans votre organisation av
   - Vérifiez que vous avez rempli votre liste d’applications protégées.
   - Choisissez votre niveau de Protection des informations Windows.
 
-Vous pouvez également utiliser la Protection des informations Windows avec [System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm). 
+Vous pouvez aussi utiliser Travaux en cours avec [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm). 
 
 Pour plus d’informations, voir [Meilleures pratiques de Protection des informations Windows]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip).
 

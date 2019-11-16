@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la manière dont les besoins métier ont été satisfaits par Microsoft 365 Entreprise.
-ms.openlocfilehash: d22763cede23d28c76a28c95a6e4772af81a996c
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 157aa17e6ea5c345c1c1c5bdc9a2588f6384277d
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369585"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673190"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastructure informatique et besoins métier de Contoso
-
-**Résumé :** Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la manière dont les besoins métier ont été satisfaits par Microsoft 365 Entreprise.
 
 Contoso est passé d’une infrastructure informatique centralisée locale à une infrastructure cloud incluant des charges de travail de productivité et des applications cloud.
 
