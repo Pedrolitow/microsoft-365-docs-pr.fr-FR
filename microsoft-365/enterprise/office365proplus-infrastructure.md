@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Étapes du déploiement de l’infrastructure Office 365 ProPlus pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 05615c4c9020326da6b2e3e97b162dbb8d132854
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a51a37a321b450d233d7f9fd6da28b5828514d13
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033649"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627448"
 ---
 # <a name="phase-4-office-365-proplus"></a>Phase 4 : Office 365 ProPlus
 
@@ -44,7 +44,7 @@ Avant de déployer Office 365 ProPlus, suivez les instructions indiquées dans 
 
 Après avoir évalué votre environnement, suivez les instructions indiquées dans l’article [Planification de votre déploiement d’Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) pour créer un plan de déploiement. Ce plan implique les décisions suivantes : 
 
-- Comment déployer Office, notamment quel outil utiliser (par exemple, System Center Configuration Manager ou l’outil Déploiement d’Office [ODT]) et où installer Office
+- Déploiement d’Office, notamment quel outil utiliser (par exemple, Microsoft Endpoint Configuration Manager ou l’outil Déploiement d’Office) et où installer Office
 - Comment gérer les mises à jour d’Office
 - Les canaux de mise à jour à utiliser (les canaux de mise à jour pour Office contrôlent la fréquence à laquelle vos utilisateurs reçoivent des mises à jour de fonctionnalités pour leurs applications Office)
 - Les packages d’installation Office et les groupes de déploiement que vous voulez utiliser, y compris les applications Office et les langues qui doivent être installées pour les utilisateurs
@@ -55,7 +55,7 @@ L’[article de planification](https://docs.microsoft.com/DeployOffice/plan-offi
 
 En fonction de votre plan de déploiement, choisissez le mode de déploiement parmi les possibilités suivantes :
 
-- **[Déployer Office 365 ProPlus avec System Center Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager) :** gérez votre déploiement avec Configuration Manager et téléchargez et déployez Office à partir de points de distribution sur votre réseau
+- **[Déployer Office 365 ProPlus avec Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager) :** gérez votre déploiement avec Configuration Manager, téléchargez et déployez Office à partir de points de distribution sur votre réseau.
 
 - **[Déployer Office 365 ProPlus avec l’outil Déploiement d’Office à partir du cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud) :** gérez votre déploiement avec l’outil Déploiement d’Office et installez Office directement sur des appareils clients à partir du CDN d’Office
  
