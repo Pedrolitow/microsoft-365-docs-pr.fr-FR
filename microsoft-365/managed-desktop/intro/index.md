@@ -7,10 +7,10 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
 ms.openlocfilehash: 45baa63fc475917a10c87cc66d1346af48479645
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38012035"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
@@ -24,7 +24,7 @@ Microsoft Managed Desktop prend le plus de temps en combinant la puissance de Mi
 
 <table>
 <tr><th>Faire plaisir aux utilisateurs finaux</th><th>Autonomiser</th><th>Sauvegardé par Microsoft</th></tr>
-<tr><td><p>Appareil moderne</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Sécurité intégrée</p><p>Connexion avec reconnaissance faciale</p><p>Toujours à jour</p></td><td><p>Sécurité intégrée</p><p>Informations exploitables</p><p>Prise en charge des opérations</p><p>Conseils des experts Microsoft</p></td><td><p>Équipe des opérations de sécurité</p><p>Surveillance de l’intégrité</p><p>Sauvegarde sur le Cloud des données</p><p>prise en charge des utilisateurs finaux 24h/24, 7j/7</p></td></tr>
+<tr><td><p>Appareil moderne</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Sécurité intégrée</p><p>Connexion avec reconnaissance faciale</p><p>Toujours à jour</p></td><td><p>Sécurité intégrée</p><p>Informations exploitables</p><p>Prise en charge des opérations</p><p>Conseils des experts Microsoft</p></td><td><p>Équipe des opérations de sécurité</p><p>Surveillance de l’intégrité</p><p>Sauvegarde sur le Cloud des données</p><p>prise en charge des utilisateurs finaux 24h/24, 7j/7</p></td></tr>
 </table>
 
 Microsoft Managed Desktop offre aux clients une solution informatique complète qui met en lumière les utilisateurs et libère des ressources informatiques pour des tâches plus importantes. Nous avons développé ce service en fonction des commentaires que nous écoutons couramment :

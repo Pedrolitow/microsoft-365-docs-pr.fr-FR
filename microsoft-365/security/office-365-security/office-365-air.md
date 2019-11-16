@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menac
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités de réponse aux incidents automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 293b567cf24e9c6b0e33e28e9dd1ca0453fd0cd1
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 13f7e95829b8cf3adf17a40cf7b02c5322b15ea7
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37385731"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673420"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Enquêter et répondre automatiquement aux menaces dans Office 365
 
@@ -37,13 +37,15 @@ Avec AIR, lorsque certaines alertes sont déclenchées, un ou plusieurs règles 
 - [Afficher les détails d’une alerte liée à une enquête](#view-details-about-an-alert-related-to-an-investigation)
 
 > [!NOTE]
-> Vous devez être un administrateur général, un administrateur de sécurité, un opérateur de sécurité ou un lecteur de sécurité pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [Microsoft 365 Security Center : Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> Vous devez disposer des autorisations appropriées pour effectuer les tâches décrites dans cet article. Par exemple, vous Myst être un administrateur général, un administrateur de sécurité, un opérateur de sécurité ou un lecteur de sécurité. [En savoir plus sur les rôles et les autorisations du centre de sécurité Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 AIR est inclus dans les abonnements suivants :
 - Microsoft 365 E5
-- Microsoft 365 E5 Sécurité
-- Office 365 E5
-- Plan 2 de protection avancée contre les menaces Office 365
+- Microsoft 365 E5 Sécurité
+- Office 365 E5
+- Office 365 – Protection avancée contre les menaces Plan 2
+
+Si vous n’avez pas l’un de ces abonnements, [Démarrez une version d’évaluation gratuite](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 

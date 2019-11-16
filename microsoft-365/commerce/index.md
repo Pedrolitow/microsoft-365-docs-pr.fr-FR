@@ -11,10 +11,10 @@ ms.date: 5/29/2019
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.openlocfilehash: f25274c1cf06bf2900de3a45686156f33d3143aa
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37889906"
 ---
 # <a name="manage-commercial-purchases-in-microsoft-365-admin-center"></a>Gérer les achats commerciaux dans le centre d’administration Microsoft 365
@@ -25,7 +25,7 @@ ms.locfileid: "37889906"
 | ----- | ----------- |
 | [Gérer les applications tierces](manage-saas-apps.md) | Les administrateurs peuvent gérer les abonnements aux applications tierces pour votre organisation. |
 | [Acheter des licences](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide) | Acheter des licences Office 365 pour votre organisation. |
-| [Attribuer des licences](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide) | Attribuer des licences aux utilisateurs de votre organisation. |
+| [Affecter des licences](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide) | Attribuer des licences aux utilisateurs de votre organisation. |
 | [Annuler l’attribution des licences](https://docs.microsoft.com/office365/admin/manage/remove-licenses-from-users?view=o365-worldwide) | Désaffecter les licences des utilisateurs de votre organisation. |
 | [Supprimer des licences de votre abonnement](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide) | Supprimer des licences des abonnements Office 365. |
 | [Mettre à niveau votre abonnement](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan) | Mettez à niveau votre abonnement vers une autre offre. |

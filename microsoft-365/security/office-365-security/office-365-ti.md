@@ -3,7 +3,7 @@ title: Examen et réponse contre les menaces Office 365
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/23/2019
+ms.date: 11/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d’aide à la décision dans Office 365 protection avancée contre les menaces peuvent vous aider à rechercher des menaces contre votre organisation, à répondre aux programmes malveillants, au hameçonnage et à d’autres attaques détectées par Office 365 pour votre part, et à rechercher des menaces. confirme.
-ms.openlocfilehash: 749ddef383839043141027ace4a2d906932b7e91
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 047fb99a32fdd7e86572c5a96370f351da50f139
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031869"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673270"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Examen et réponse contre les menaces Office 365
 
@@ -32,13 +32,13 @@ Les fonctionnalités d’enquête et de réponse aux menaces dans [Office 365 Ad
     
 - Fournir des informations et des connaissances pour aider les opérations de sécurité à empêcher les cyberattaques contre l’Organisation
 
-- Utilisation de l' [instruction et de la réponse automatisées](automated-investigation-response-office.md) pour les menaces critiques basées sur la messagerie
+- Utilisation de la [réponse automatique aux incidents](automated-investigation-response-office.md) pour les menaces critiques basées sur la messagerie
     
 Les fonctionnalités d’enquête et de réponse aux menaces fournissent des informations sur les menaces et les actions de réponse associées disponibles dans &amp; le centre de sécurité conformité Office 365. Ces informations peuvent aider l’équipe de sécurité de votre organisation à protéger les utilisateurs d’Office 365 des attaques de messagerie ou de fichier. Les fonctionnalités permettent de surveiller les signaux et de collecter des données à partir de plusieurs sources, telles que l’activité des utilisateurs, l’authentification, le courrier électronique, les PC compromis et les incidents de sécurité. Les décideurs d’entreprise et les administrateurs généraux d’Office 365, les administrateurs de la sécurité et les analystes de la sécurité peuvent tous utiliser ces informations pour comprendre et répondre aux menaces contre les utilisateurs d’Office 365 et protéger la propriété intellectuelle.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Se familiariser avec les outils d’enquête et de réponse aux menaces
 
-Les fonctionnalités d’enquête et de réponse aux menaces &amp; dans le centre de sécurité conformité, sous la forme d’un ensemble d’outils et de flux de travail de réponse, notamment le [tableau de bord des menaces](#threat-dashboard), l' [Explorateur](#threat-explorer), les [incidents](#incidents), le [simulateur d’attaque](#attack-simulator)et la [réponse automatisée & réponse](automated-investigation-response-office.md).
+Les fonctionnalités d’enquête et de réponse aux menaces &amp; dans le centre de sécurité conformité, sous la forme d’un ensemble d’outils et de flux de travail de réponse, notamment le [tableau de bord des menaces](#threat-dashboard), l' [Explorateur](#threat-explorer), les [incidents](#incidents), le [simulateur d’attaque](#attack-simulator)et la [réponse automatique aux incidents](automated-investigation-response-office.md).
   
 ### <a name="threat-dashboard"></a>Tableau de bord des menaces
 
@@ -46,7 +46,7 @@ Utilisez le tableau de bord des menaces (également appelé tableau de [bord de 
   
 ![Tableau de bord des menaces](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
-Pour afficher et utiliser ce tableau de bord, dans &amp; le centre de sécurité conformité, accédez au **tableau de bord** **gestion** \> des menaces.
+Pour afficher et utiliser ce tableau de bord, dans le centre &amp; de sécurité conformité d’Office 365, accédez au **tableau de bord** **gestion** \> des menaces.
 
 Pour en savoir plus sur 
   
@@ -56,7 +56,7 @@ Utilisez l' [Explorateur de menaces (et les détections en temps réel)](threat-
   
 ![Explorateur de menaces](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-Pour afficher et utiliser ce rapport, dans le centre &amp; de sécurité conformité, accédez à l' **Explorateur**de **gestion** \> des menaces.
+Pour afficher et utiliser ce rapport, dans le centre de sécurité &amp; conformité d’Office 365, accédez à l' **Explorateur**de **gestion** \> des menaces.
   
 ### <a name="incidents"></a>Infections
 
@@ -74,7 +74,7 @@ Utilisez un simulateur d’attaque pour configurer et exécuter une cyberattaque
 
 ### <a name="automated-investigation-and-response"></a>Enquêtes et réponses automatisées
 
-Utilisez les fonctionnalités d’analyse et de réponse automatisées pour gagner du temps et des efforts afin de corréler le contenu, les appareils et les personnes à risque en fonction des menaces de votre organisation. Les processus d’AIR peuvent commencer chaque fois que certaines alertes sont déclenchées ou lorsqu’elles sont démarrées par votre équipe des opérations de sécurité. Pour en savoir plus, consultez la rubrique [Automated incident Response (air) with Office 365](automated-investigation-response-office.md). 
+Utilisez les fonctionnalités d’analyse et de réponse automatisées pour gagner du temps et des efforts afin de corréler le contenu, les appareils et les personnes à risque en fonction des menaces de votre organisation. Les processus d’AIR peuvent commencer chaque fois que certaines alertes sont déclenchées ou lorsqu’elles sont démarrées par votre équipe des opérations de sécurité. Pour en savoir plus, consultez la rubrique [réponse automatique aux incidents dans Office 365](automated-investigation-response-office.md). 
   
 ## <a name="threat-intelligence-widgets"></a>Widgets d’aide à la décision
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Pour en savoir plus, consultez la rubrique Microsoft 365 Business.
-ms.openlocfilehash: 03e16c336a2d6d3d8ffd5875ed7419bba3c7e378
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: abd1e8374ef7530a879de71ab7ad0125f1ca4616
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633396"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676071"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Vue d’ensemble de Microsoft 365 Business
 
@@ -98,4 +98,7 @@ Pour afficher la liste complète des fonctionnalités de sécurité, consultez l
 
 - Si vous ne disposez pas d’un partenaire et que vous souhaitez obtenir Microsoft 365 entreprise, vous pouvez l' [acheter ici](https://www.microsoft.com/microsoft-365/business) et suivre les instructions d' [inscription](sign-up.md) .
 
-- Vous pouvez également accéder à un [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en-us_UF_FAS) pour acheter Microsoft 365 entreprise et obtenir de l’aide.
+- Vous pouvez également accéder à un [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) pour acheter Microsoft 365 entreprise et obtenir de l’aide.
+
+    > [!NOTE]
+    > Ce lien est destiné aux banques d’é.-u.

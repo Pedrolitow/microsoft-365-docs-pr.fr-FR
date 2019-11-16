@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour Windows 10 Entreprise.
-ms.openlocfilehash: 268423de91309947381509017d386c62a5ef23da
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 98dd4b71f1c2af6d72580066d73e75dfd4aa60ff
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37372805"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627528"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Phase 3 : Critères de sortie pour l’infrastructure Windows 10 Entreprise
 
@@ -99,14 +99,14 @@ Si nécessaire, l’[Étape 4](windows10-enable-windows-analytics.md) peut vous 
 <a name="crit-windows10-step5a"></a>
 ## <a name="required-you-are-using-windows-defender-antivirus-or-your-own-antimalware-solution"></a>Obligatoire : utilisation de l’antivirus Windows Defender ou de votre propre solution anti-programme malveillant
 
-Vous avez déployé l’antivirus Windows Defender ou votre propre solution antivirus pour protéger vos périphériques exécutant Windows 10 Entreprise contre les programmes malveillants. Si vous avez déployé l’antivirus Windows Defender, vous avez implémenté une méthode de création de rapports, telle que System Center Configuration Manager ou Microsoft Intune, pour surveiller l’activité et les événements antivirus.
+Vous avez déployé l’Antivirus Windows Defender ou une autre solution antivirus pour protéger les périphériques exécutant Windows 10 Entreprise contre des programmes malveillants. Si Windows Defender a été déployé, vous avez implémenté une méthode d’établissement de rapports, telle que Microsoft Endpoint Configuration Manager ou Microsoft Intune, pour surveiller l’activité et les événements antivirus.
 
 Si nécessaire, l’[Étape 5](windows10-enable-security-features.md#windows10-sec-av) peut vous aider à répondre à cette exigence.
 
 <a name="crit-windows10-step5b"></a>
 ## <a name="required-you-are-using-windows-defender-exploit-guard"></a>Obligatoire : utilisation de Windows Defender Exploit Guard
 
-Vous avez déployé Windows Defender Exploit Guard pour protéger vos périphériques exécutant Windows 10 Entreprise contre les intrusions et avez implémenté une méthode de création de rapports, telle que System Center Configuration Manager ou Microsoft Intune, pour surveiller les événements et l’activité liés aux intrusions.
+Vous avez déployé Windows Defender Exploit Guard pour protéger les périphériques exécutant Windows 10 Entreprise contre des intrusions et avez implémenté une méthode de création de rapports, telle que Configuration Manager ou Microsoft Intune, pour surveiller les événements et l’activité liés aux intrusions.
 
 Si nécessaire, l’[Étape 5](windows10-enable-security-features.md#windows10-sec-eg) peut vous aider à répondre à cette exigence.
 

@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’Explorateur et les détections en temps réel dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 01985c69d1d89536d16b166eafc23df37ee53d0a
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: e3f205a75c30397382b63112df4503f7a1d23582
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639887"
+ms.locfileid: "38673280"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -81,11 +81,15 @@ La **chronologie par courrier électronique** est une autre nouvelle fonctionnal
 Pour plus d’informations sur l’enquête sur les messages électroniques malveillants, consultez la rubrique [Rechercher et enquêter le courrier électronique malveillant livré dans Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 
-De plus, vous pouvez également exporter des **rapports** vers Microsoft Excel afin d’afficher l’ID de leurs messages réseau et leur verdict de clic, ce qui vous permet de comprendre l’origine de votre trafic. Voici comment cela fonctionne. À partir de la gestion des menaces sur le lancement rapide Office 365, cliquez sur cette chaîne :
+En outre, vous pouvez **exporter des rapports pour les clics d’URL** vers Microsoft Excel afin d’afficher à la fois leur ID de message réseau et leur verdict de clic, ce qui vous permet de comprendre où votre URL est à l’origine du trafic. Voici comment cela fonctionne. À partir de la gestion des menaces sur le lancement rapide Office 365, cliquez sur cette chaîne :
 
-**Explorateur > afficher le hameçonnage > clique sur > URL principales**
+**Explorer > afficher le hameçonnage > clique sur > URL principales ou sur l’URL en haut-parleurs > cliquez sur un enregistrement pour ouvrir le menu volant URL**
 
 Lorsque vous cliquez sur une URL de la liste, vous verrez un nouveau bouton Exporter dans le panneau de débordement. Utilisez ce bouton pour déplacer des données vers une feuille de calcul Excel pour faciliter la création de rapports.
+
+Vous pouvez accéder au même emplacement en cas de détection en temps réel comme suit :
+
+**Explorer > des détections en temps réel > afficher les URL de > d’hameçonnage > URL principales ou les clics en haut > cliquez sur un enregistrement quelconque pour ouvrir le menu volant d’URL > accédez à l’onglet clics.**
 
 > [!TIP]
 > L’ID de message réseau mappe le clic retour à des messages spécifiques lorsque vous recherchez dans l’Explorateur ou des outils tiers associés via l’ID de message réseau. La recherche par le biais de l’ID de message réseau donnera aux administrateurs le message électronique spécifique associé à un résultat de clic. Lors de l’exportation, l’identification de la corrélation de l’ID de message réseau permet une analyse plus rapide et plus puissante.

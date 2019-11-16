@@ -1,9 +1,9 @@
 ---
-title: Recherche et réponse automatiques dans Office 365
+title: Réponse automatique aux incidents (AIR) dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,28 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Découvrez les fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
+ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386201"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673400"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
+# <a name="automated-incident-response-air-in-office-365"></a>Réponse automatique aux incidents (AIR) dans Office 365
 
-Les fonctionnalités d’analyse et de réponse automatisées (AIR) vous permettent d’exécuter des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. AIR peut aider votre équipe opérationnelle en matière de sécurité à fonctionner de manière plus efficace.
+Les fonctionnalités de réponse aux incidents automatisées vous permettent d’exécuter des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. AIR peut aider votre équipe opérationnelle en matière de sécurité à fonctionner de manière plus efficace.
 - Pour obtenir une vue d’ensemble du fonctionnement de l’avion, utilisez cet article.
 - Pour commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
 
 > [!NOTE]
 > Vous devez être un administrateur général, un administrateur de sécurité, un opérateur de sécurité ou un lecteur de sécurité pour accéder aux fonctionnalités AIR. Pour en savoir plus sur ces autorisations, consultez la rubrique [Microsoft 365 Security Center : Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
-
-AIR est inclus dans les abonnements suivants :
-- Microsoft 365 E5
-- Microsoft 365 E5 Sécurité
-- Office 365 E5
-- Plan 2 de protection avancée contre les menaces Office 365
 
 ## <a name="the-overall-flow-of-air"></a>Flux d’AIR global
 
@@ -43,9 +37,9 @@ AIR est inclus dans les abonnements suivants :
 |---------|---------|
 |0,1     |[Alerte](#alerts) déclenchée et un [manifeste de sécurité](#security-playbooks) est initié.         |
 |n°2     |En fonction du manuel d’alerte et de sécurité en particulier, l' [enquête automatisée commence immédiatement](#example-a-user-reported-phish-message-launches-an-investigation-playbook). (Alternativement, un analyste de sécurité peut [lancer une enquête automatisée manuellement](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), à partir d’une valeur dans un rapport, tel qu' [Explorer](threat-explorer.md).)         |
-|3     |Lorsqu’une enquête automatisée s’exécute, son étendue peut augmenter en tant que nouvelles alertes associées.         |
+|3     |La portée d’une enquête automatisée peut être étendue au cours de son exécution si de nouvelles alertes associées sont déclenchées.         |
 |4     |Pendant et après une enquête automatisée, des [Détails et des résultats](#investigation-graph) peuvent être consultés. Les résultats incluent les [actions recommandées](#recommended-actions) qui peuvent être prises pour répondre et corriger les menaces détectées. De plus, un [Journal des manifestes](#playbook-log) est disponible pour suivre toutes les activités d’enquête.<br/>Si votre organisation utilise une solution de création de rapports personnalisée ou une solution tierce, vous pouvez [utiliser l’API activité de gestion d’Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) pour afficher des informations sur les analyses et les menaces automatisées.         |
-|disque     |Votre équipe de gestion des opérations de sécurité examine les résultats et les recommandations, et approuve les actions de correction. Dans Office 365, les actions de correction ne sont prises qu’après approbation de l’équipe de sécurité de votre organisation.         |
+|disque     |L’équipe en charge des opérations de sécurité examine les résultats et les recommandations, et accepte les actions correctives. Dans Office 365, les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation.         |
 
 Les sections suivantes fournissent plus d’informations sur AIR, notamment des informations sur les alertes, les règles de sécurité et les détails de l’enquête. De plus, deux exemples de fonctionnement de l’AIR sont inclus dans cet article. Pour commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
 
@@ -72,7 +66,7 @@ Dans la version initiale d’AIR (début du 2019 avril), les alertes générées
 
 Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](#investigation-graph)correspondante. Notez que les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, vous devez modifier le filtrage des alertes de manière à inclure des alertes d’information.
 
-Si votre organisation gère vos alertes de sécurité par le biais d’un système de gestion des alertes, d’un système de gestion des services ou d’un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes Office 365 à ce système via une notification par courrier électronique ou via le [ API d’activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d’alerte d’enquête via le courrier électronique ou l’API incluent des liens permettant d’accéder aux alertes dans le centre de sécurité & conformité, ce qui permet à l’administrateur de sécurité affecté de naviguer rapidement dans l’enquête.
+Si votre organisation gère vos alertes de sécurité par le biais d’un système de gestion des alertes, d’un système de gestion des services ou d’un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes Office 365 à ce système via une notification par courrier électronique ou via l' [API d’activité de gestion d’office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d’alerte d’enquête via le courrier électronique ou l’API incluent des liens permettant d’accéder aux alertes dans le centre de sécurité & conformité, ce qui permet à l’administrateur de sécurité affecté de naviguer rapidement dans l’enquête.
 
 ![Alertes liées à des enquêtes](../media/air-alerts-page-details.png) 
 
@@ -118,18 +112,22 @@ Vous pouvez :
 - Exportez les données dans un fichier. csv.
 
 L’état d’enquête indique la progression de l’analyse et des actions. Lors de l’exécution de l’enquête, les États changent pour indiquer si des menaces ont été détectées et si des actions ont été approuvées. 
-- **Début**: l’enquête est mise en file d’attente pour commencer bientôt.
-- **En cours d’exécution**: l’enquête a commencé et mène son analyse
-- **Aucune menace détectée**: l’enquête a terminé son analyse et aucune menace n’a été détectée.
-- **Terminé par le système**: l’enquête n’a pas été fermée et a expiré après 7 jours
-- **Action en attente**: l’enquête a détecté des menaces avec des actions recommandées
-- **Menaces détectées**: l’enquête a détecté des menaces, mais les menaces n’ont pas d’actions disponibles dans l’air
-- **Corrigé**: l’enquête s’est terminée et a été entièrement corrigée (toutes les actions ont été approuvées)
-- **Partiellement résolue**: l’enquête terminée et certaines des actions recommandées ont été approuvées
-- **Terminé par l’utilisateur**: un administrateur a mis fin à l’enquête.
-- **Échec**: une erreur s’est produite lors de l’enquête qui l’empêche d’atteindre une conclusion sur les menaces
-- Mise **en file d’attente par limitation**: l’enquête attend une analyse en raison de limitations de traitement du système (pour protéger les performances du service)
-- **Interruption par la limitation**: l’enquête n’a pas pu être terminée en temps suffisant en raison des limitations de traitement du volume et du système. Vous pouvez déclencher à nouveau l’enquête en sélectionnant l’e-mail dans l’Explorateur et en sélectionnant l’action examiner.
+
+
+|Statut  |Signification  |
+|---------|---------|
+|Démarrage | L’enquête est mise en file d’attente pour commencer bientôt |
+|En cours d'exécution | L’enquête a commencé et mène son analyse |
+|Aucune menace détectée | L’enquête a terminé son analyse et aucune menace n’a été trouvée |
+|Terminé par le système | L’enquête n’a pas été fermée et a expiré après 7 jours |
+|Action en attente | L’enquête a détecté des menaces avec des actions recommandées |
+|Menaces détectées | L’enquête a détecté des menaces, mais les menaces n’ont pas d’actions disponibles dans l’AIR |
+|Corrigé | L’enquête s’est terminée et a été entièrement corrigée (toutes les actions ont été approuvées) |
+|Partiellement résolu | L’enquête terminée et certaines des actions recommandées ont été approuvées |
+|Terminé par l’utilisateur | Un administrateur a mis fin à l’enquête |
+|Échec | Une erreur s’est produite lors de l’enquête qui l’a empêché d’atteindre une conclusion sur les menaces |
+|Mise en file d’attente par limitation | L’enquête est en attente d’analyse en raison de limitations de traitement du système (pour protéger les performances du service) |
+|Interruption par la limitation | L’enquête n’a pas pu être terminée en temps suffisant en raison des limitations de traitement du volume et du système. Vous pouvez déclencher à nouveau l’enquête en sélectionnant l’e-mail dans l’Explorateur et en sélectionnant l’action examiner. |
 
 ### <a name="investigation-graph"></a>Graphique d’enquête
 
@@ -189,7 +187,8 @@ Vous pouvez :
 
 ![Courrier électronique d’enquête aérienne avec détails du menu volant](../media/air-investigationemailpageflyoutdetails.png)
 
-* Remarque : dans le contexte de la messagerie électronique, vous pouvez voir une surface d’anomalie de volume dans le cadre de l’enquête. Une anomalie de volume indique un pic dans les messages électroniques similaires de la durée de l’événement d’enquête par rapport aux délais précédents. Ce pic dans le trafic de messagerie avec des caractéristiques similaires (par exemple, domaine d’objet et de l’expéditeur, similitude entre le corps et IP de l’expéditeur) est typique du début des campagnes ou des attaques par courrier électronique. Toutefois, les campagnes de courrier électronique, de courrier indésirable et légitimes partagent généralement ces caractéristiques. Les anomalies de volume représentent une menace potentielle et peuvent donc être moins sévères par rapport aux menaces de programmes malveillants ou hameçons identifiées à l’aide de moteurs antivirus, de détonation ou de réputation malveillante.
+> [!NOTE]
+> Dans le contexte de la messagerie électronique, vous pouvez voir une surface d’anomalie de volume dans le cadre de l’enquête. Une anomalie de volume indique un pic dans les messages électroniques similaires de la durée de l’événement d’enquête par rapport aux délais précédents. Ce pic dans le trafic de messagerie avec des caractéristiques similaires (par exemple, domaine d’objet et de l’expéditeur, similitude entre le corps et IP de l’expéditeur) est typique du début des campagnes ou des attaques par courrier électronique. Toutefois, les campagnes de courrier électronique, de courrier indésirable et légitimes partagent généralement ces caractéristiques. Les anomalies de volume représentent une menace potentielle et peuvent donc être moins sévères par rapport aux menaces de programmes malveillants ou hameçons identifiées à l’aide de moteurs antivirus, de détonation ou de réputation malveillante.
 
 ### <a name="user-investigation"></a>Enquête utilisateur
 
@@ -260,7 +259,7 @@ Vous pouvez :
 
 Lorsqu’un utilisateur de votre organisation soumet un message électronique et le signale à Microsoft à l’aide du [complément de message de rapport pour Outlook ou Outlook Web Access](enable-the-report-message-add-in.md), le rapport est également envoyé à votre système et est visible dans l’Explorateur dans la vue signalée par l’utilisateur. Ce message signalée par l’utilisateur déclenche désormais une alerte d’information basée sur le système, qui lance automatiquement le manuel d’enquête.
 
-Lors de la phase d’enquête de racine, différents aspects du courrier électronique sont évalués. Ces approches sont les suivantes :
+Lors de la phase d’enquête de racine, différents aspects du courrier électronique sont évalués. Cela inclut ce qui suit :
 - Détermination du type de menace susceptible de se présenter ;
 - Expéditeur ;
 - Emplacement d’envoi du courrier électronique (infrastructure émettrice);
@@ -299,12 +298,12 @@ Autre exemple : Supposons que vous affichiez des données sur les messages éle
 
 ## <a name="how-to-get-air"></a>Comment obtenir de l’AIR
 
-Office 365 AIR sont inclus dans les abonnements suivants :
+Office 365 Examen et réponse automatisés est inclus dans les abonnements suivants :
 
-- Microsoft 365 Entreprise E5
-- Office 365 Entreprise E5
+- Microsoft 365 E5
+- Office 365 E5
 - Protection Microsoft contre les menaces
-- Plan 2 de protection avancée contre les menaces Office 365
+- Office 365 – Protection avancée contre les menaces Plan 2
 
 Si vous n’avez pas l’un de ces abonnements, [Démarrez une version d’évaluation gratuite](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
 
@@ -317,3 +316,4 @@ Pour en savoir plus sur la disponibilité des fonctionnalités, consultez la rub
 [En savoir plus sur AIR dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
 
 [Consultez la feuille de route Microsoft 365 pour découvrir les éléments bientôt disponibles et à déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+
