@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: a61ce89c3d0069edffccc12a6ed2a4c578e6968a
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 81a1542edf82bbf773360af6b09e1f940f5fd061
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370251"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627360"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -77,9 +77,9 @@ Voici l’ensemble de stratégies d’accès conditionnel basées sur l’identi
  
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-win10.md) comment Contoso tire parti de son infrastructure System Center Configuration Manager pour déployer et maintenir à jour Windows 10 Entreprise au sein de son organisation.
+[Découvrez](contoso-win10.md) comment Contoso tire parti de son infrastructure Microsoft Endpoint Configuration Manager pour déployer et maintenir à jour Windows 10 Entreprise au sein de son organisation.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Identité pour Microsoft 365 Entreprise](identity-infrastructure.md)
 

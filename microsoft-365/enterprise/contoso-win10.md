@@ -12,24 +12,24 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendre la façon dont Contoso a utilisé System Center Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
-ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: Comprendre la façon dont Contoso a utilisé Microsoft Endpoint Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
+ms.openlocfilehash: a36e933d31ac6d629b649f07d6b8c9a4fe950ec8
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370471"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627330"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 
-**Résumé :** Comprendre la façon dont Contoso a utilisé System Center Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
+**Résumé :** Comprendre la façon dont Contoso a utilisé Microsoft Endpoint Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
 
 Avant le déploiement large de Microsoft 365 Entreprise, Contoso disposait de périphériques et de PC compatibles avec Windows qui exécutaient un mélange de Windows 7 (10 %), Windows 8.1 (65 %) et Windows 10 (25 %). Contoso souhaitait mettre à niveau ses PC vers Windows 10 Entreprise afin de profiter de la sécurité avancée et des frais informatiques généraux réduits grâce aux déploiements automatisés des mises à jour. 
 
 Après évaluation de ses besoins d’infrastructure et de ses besoins métier, Contoso a identifié les exigences principales suivantes en matière de déploiement :
 
 - Le plus possible de PC et de périphériques doivent exécuter Windows 10 Entreprise
-- Déploiement des mises à niveau sur place exploitant l’infrastructure System Center Configuration Manager existante
+- Déploiement des mises à niveau sur place exploitant l’infrastructure Configuration Manager existante
 - Contrôler les versions de Windows 10 Entreprise à déployer, et les mises à jour sont effectuées via des anneaux
 - Les PC et les périphériques doivent rester à jour moyennant des coûts d’administration informatique minimes et avec un faible impact pour les utilisateurs finaux
 
@@ -51,7 +51,7 @@ Avant et pendant les mises à niveau sur place de Windows 10 Entreprise, Contos
 
   Identifie les appareils qui se bloquent fréquemment et qui, par conséquent, doivent être recréés ou remplacés et les pilotes de périphériques qui provoquent des blocages sur les appareils, avec des suggestions d’autres versions de ces pilotes susceptibles de réduire le nombre d’incidents. Fournit une notification de configurations incorrectes de la Protection des informations Windows qui envoient des invites à des utilisateurs finaux.
  
-Contoso dispose d’une infrastructure System Center Configuration Manager (branche actuelle) existante. Le gestionnaire de configuration s’adapte à des environnements volumineux et offre un contrôle extensif sur l’installation, les mises à jour et les paramètres. Il dispose également de fonctionnalités intégrées pour simplifier et accroître l’efficacité du déploiement et de la gestion de Windows 10 Entreprise.
+Contoso dispose d’une infrastructure Configuration Manager (branche actuelle) existante. Le gestionnaire de configuration s’adapte à des environnements volumineux et offre un contrôle extensif sur l’installation, les mises à jour et les paramètres. Il dispose également de fonctionnalités intégrées pour simplifier et accroître l’efficacité du déploiement et de la gestion de Windows 10 Entreprise.
 
 ## <a name="planning-process"></a>Processus de planification
 
@@ -83,7 +83,7 @@ Voici la mise à niveau sur place et l’architecture de déploiement de mises �
 
 Cette infrastructure se compose des éléments suivants :
 
-- System Center Configuration Manager qui :
+- Configuration Manager, qui :
   - obtient des images pour les packages Windows 10 Entreprise à partir du centre de gestion des licences en volume Microsoft dans The Microsoft Network ;
   - est le point d’administration central pour les packages de déploiement.
 - Les points de distribution régionaux généralement situés dans les centres régionaux de Contoso.
@@ -91,9 +91,9 @@ Cette infrastructure se compose des éléments suivants :
 
 ## <a name="next-step"></a>Étape suivante
 
-[En savoir plus](contoso-o365pp.md) sur la façon dont Contoso exploite son infrastructure System Center Configuration Manager pour déployer et conserver la version actuelle d’Office 365 ProPlus au sein de son organisation. 
+[En savoir plus](contoso-o365pp.md) sur la façon dont Contoso exploite son infrastructure Configuration Manager pour déployer et conserver la version actuelle d’Office 365 ProPlus au sein de son organisation. 
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Windows 10 Entreprise pour Microsoft 365 Entreprise](windows10-infrastructure.md)
 

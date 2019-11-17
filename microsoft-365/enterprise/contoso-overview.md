@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
-ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 429d74c66198c1b4a3dea735127a4fb569aa7bb0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369555"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627340"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Présentation de la société Contoso Corporation
 
@@ -65,7 +65,7 @@ Les architectes informatiques de Contoso ont identifié les exigences et consid�
 
 - Plusieurs implantations géographiques avec des réglementations et des exigences de conformité locales
 - Un centre de données intranet central dans les locaux du siège social et des serveurs d’application régionaux qui hébergent en interne la gamme d’applications professionnelles
-- L’existence d’une infrastructure System Center Configuration Manager
+- Une infrastructure existante du Microsoft Endpoint Configuration Manager
 - Un mélange d’appareils informatiques clients, comprenant Windows, Mac et Linux
 - Un mélange d’appareils mobiles personnels et entreprise, notamment smartphones et tablettes iOS (iPhone et iPad) et Android
 - Nombreux collaborateurs en télétravail et mobiles

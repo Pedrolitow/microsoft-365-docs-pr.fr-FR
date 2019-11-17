@@ -3,7 +3,7 @@ title: Déploiement d’Office 365 ProPlus pour Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,17 +12,17 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendre la façon dont Contoso utilise System Center Configuration Manager pour déployer Office 365 ProPlus.
-ms.openlocfilehash: 8367f6456b6e32c62e03f611114177f4dbe6622f
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+description: Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer Office 365 ProPlus.
+ms.openlocfilehash: ef13ac14be68b12e9483bd20f385e0cd16f51152
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054996"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627350"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Déploiement d’Office 365 ProPlus pour Contoso
 
-**Résumé :** Comprendre la façon dont Contoso utilise System Center Configuration Manager pour déployer Office 365 ProPlus.
+**Résumé :** Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer Office 365 ProPlus.
 
 Contoso a mis à niveau ses PC vers Windows 10 Entreprise et Office 365 ProPlus pour accroître l’efficacité de la collaboration, améliorer la sécurité et moderniser l’expérience d’ordinateur de bureau. Après évaluation de ses besoins d’infrastructure et de ses besoins métier, Contoso a identifié les exigences principales suivantes en matière de déploiement :
 
@@ -33,7 +33,7 @@ Contoso a mis à niveau ses PC vers Windows 10 Entreprise et Office 365 ProPlu
 
 ## <a name="deployment-tools"></a>Outils de déploiement
 
-Selon ses besoins, Contoso a choisi de déployer Windows et Office avec System Center Configuration Manager (branche actuelle). Le gestionnaire de configuration s’adapte à des environnements volumineux et offre un contrôle extensif sur l’installation, les mises à jour et les paramètres. Il dispose également de fonctionnalités intégrées pour simplifier et accroître l’efficacité du déploiement et de la gestion d’Office, notamment :
+Selon ses besoins, Contoso a choisi de déployer Windows 10 Entreprise et Office 365 ProPlus avec Configuration Manager (branche actuelle). Le gestionnaire de configuration s’adapte à des environnements volumineux et offre un contrôle extensif sur l’installation, les mises à jour et les paramètres. Il dispose également de fonctionnalités intégrées pour simplifier et accroître l’efficacité du déploiement et de la gestion d’Office, notamment :
 
 - un cache d’homologue, pouvant aider avec la capacité limitée du réseau lors du déploiement de périphériques dans des emplacements à distance ;
 - le tableau de bord de gestion des clients Office, qui facilite le déploiement Office, surveille les mises à jour et permet aux administrateurs d’accéder aux dernières fonctionnalités de déploiement et de gestion ;
@@ -73,11 +73,15 @@ Pour effectuer le déploiement d’Office, Contoso a implémenté le processus s
 
 Étant donné que Contoso a choisi de mettre à jour automatiquement les appareils à partir du cloud, il n’était pas nécessaire de gérer le processus dans le Gestionnaire de Configuration. Les appareils clients sont mis à jour automatiquement directement à partir du CDN d’Office en fonction du canal de mise à jour que vous définissez dans le cadre du déploiement initial. 
 
+Voici l’installation Office 365 ProPlus et l’architecture de déploiement de mises à jour en cours de Contoso.
+
+![Infrastructure de déploiement d’Office 365 ProPlus de Contoso](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+ 
 ## <a name="next-step"></a>Étape suivante
 
-[En savoir plus](contoso-mdm.md) sur la façon dont Contoso utilise Microsoft 365 Entreprise pour gérer ses appareils et les applications qui y sont exécutées au sein de son organisation.
+[En savoir plus](contoso-mdm.md) sur la façon dont Contoso utilise Microsoft Intune dans Microsoft 365 Entreprise pour gérer ses appareils et les applications qui y sont exécutées au sein de son organisation.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Office 365 ProPlus pour Microsoft 365 Entreprise](office365proplus-infrastructure.md)
 
