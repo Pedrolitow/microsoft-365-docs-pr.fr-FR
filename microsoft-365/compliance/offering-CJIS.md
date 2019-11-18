@@ -1,0 +1,92 @@
+---
+title: Stratégie de sécurité CJIS (pénal Justice Information Services)
+description: Les services Cloud du gouvernement Microsoft adhèrent à la politique de sécurité des services informatiques pénales.
+keywords: Microsoft 365, conformité, offres
+localization_priority: None
+ms.prod: Microsoft-365-enterprise
+ms.topic: article
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+audience: itpro
+ms.collection: M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 52b5718ecbd558cf1bf5e89702b6574c87841040
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38690362"
+---
+# <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>Offre de conformité : stratégie de sécurité CJIS (pénal Justice Information Services)
+
+## <a name="cjis-overview"></a>Vue d’ensemble de CJIS
+
+La Division CJIS (pénal Justice Information Services) de la Federal Federal Bureau of Investigation (FBI) fournit aux autorités judiciaires, locales et fédérales l’accès aux informations judiciaires judiciaires (CJI), par exemple, empreintes digitales enregistrements et historiques criminels. L’application de la Loi et les autres agences gouvernementales aux États-Unis doivent s’assurer que leur utilisation des services Cloud pour la transmission, le stockage ou le traitement de CJI est conforme à la [stratégie de sécurité CJIS](https://aka.ms/cjis-security-policy), qui établit les exigences et contrôles de sécurité minimaux pour protéger CJI.
+
+La stratégie de sécurité CJIS intègre les directives de la présidence et du FBI, la législation fédérale et les décisions du Conseil de politique judiciaire de la communauté judiciaire pénale, ainsi que des instructions de l’Institut NIST (National Institute of Standards and Technology). La stratégie est régulièrement mise à jour pour refléter les besoins en matière de sécurité en évolution constante.
+
+La stratégie de sécurité CJIS définit 13 zones que les entrepreneurs privés, tels que les fournisseurs de services Cloud, doivent évaluer afin de déterminer si leur utilisation des services Cloud peut être cohérente avec les exigences CJIS. Ces domaines correspondent étroitement à NIST 800-53, qui sert également de base pour le programme fédéral Risk and Authorization Management ([FedRAMP](offering-FedRAMP.md)), un programme dans lequel Microsoft a été certifié pour ses offres Cloud gouvernementales.
+
+En outre, tous les sous-traitants privés qui traitent CJI doivent signer l’Addendum de sécurité CJIS, un accord uniforme approuvé par le juriste américain général qui contribue à garantir la sécurité et la confidentialité des CJI requis par la stratégie de sécurité. Il engage également le fournisseur à maintenir un programme de sécurité conforme à la législation, à la réglementation et aux normes fédérales et nationales, et limite l’utilisation de CJI aux fins pour lesquelles un organisme public l’a fourni.
+
+## <a name="microsoft-and-cjis-security-policy"></a>Stratégie de sécurité Microsoft et CJIS
+
+Microsoft signe l’Addendum de sécurité CJIS dans les États avec des accords d’information CJIS. Ces autorités indiquent aux autorités compétentes en matière d’État la conformité à la stratégie de sécurité CJIS comment les contrôles de sécurité du Cloud de Microsoft contribuent à protéger le cycle de vie complet des données et assurent un filtrage approprié en arrière-plan du personnel d’exploitation avec accès à CJI. Microsoft continue de collaborer avec les gouvernements de l’État pour entrer dans les accords d’information CJIS.
+
+Microsoft a évalué les stratégies et les procédures opérationnelles du gouvernement Microsoft Azure, Microsoft Office 365, ainsi que le gouvernement américain Microsoft Dynamics 365, et s’assurera de sa capacité dans les contrats de services applicables pour répondre au FBI. Configuration requise pour l’utilisation des services dans l’étendue.
+
+Découvrez les avantages de la stratégie de sécurité CJIS sur le Cloud Microsoft : [Découvrez comment Genetec a effacé des enquêtes pénales](https://customers.microsoft.com/story/genetec)
+
+Découvrez comment accélérer votre stratégie de sécurité CJIS à l’aide de notre plan de sécurité et de conformité Azure : [Télécharger les instructions d’implémentation CJIS pour les services Cloud de Microsoft Governance](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
+
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+
+- [Public Azure](https://aka.ms/AzureCompliance)
+- [Dynamics 365 gouvernement américain](https://aka.ms/d365-compliance-list)
+- [Office 365 gouvernement américain](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Service Cloud Power BIen tant que service autonome ou inclus dans un plan ou une suite Office 365
+
+## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
+
+Le FBI ne propose pas de certification de conformité de Microsoft avec les exigences CJIS. Au lieu de cela, une attestation Microsoft est incluse dans les accords entre Microsoft et l’autorité CJIS d’un État, ainsi qu’entre Microsoft et ses clients.
+
+[Conditions requises pour le Cloud Microsoft CJIS](https://aka.ms/MicrosoftCJISCloudRequirements)
+
+## <a name="cjis-status-in-the-united-states"></a>État CJIS aux États-Unis
+
+36 États et le district de Columbia avec des contrats de gestion, mis en évidence sur la carte en vert incluent :
+
+Alabama, Alaska, Arkansas, Arizona, Californie, Colorado, Floride, Géorgie, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, New Jersey, New York, Nevada, Caroline du Nord, Oklahoma, Oregon, Pennsylvanie, île Rhode, Caroline du Sud, Tennessee, Texas, Utah, Vermont, Virginie, Washington, Washington D.C., Iles occidentales.
+
+L’engagement de Microsoft à respecter les contrôles de réglementation CJIS applicables permet aux organisations de justice pénale de mettre en œuvre des solutions basées sur le nuage et de respecter la stratégie de sécurité CJIS V 5.7.
+
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+
+**Où puis-je demander des informations de conformité ?**
+
+Contactez votre représentant Microsoft pour obtenir des informations sur la compétence qui vous intéresse. Contactez <cjis@microsoft.com> pour obtenir des informations sur les services actuellement disponibles dans les États.
+
+**Comment Microsoft montre-t-il que ses services Cloud permettent de respecter les exigences de mon état ?**
+
+Microsoft signe un accord d’information avec un département CJIS Systems Agency (CSA); vous pouvez demander une copie du CSA de votre état. De plus, Microsoft fournit aux clients des informations détaillées sur la sécurité, la confidentialité et la conformité. Les clients peuvent également consulter les rapports de sécurité et de conformité préparés par des auditeurs indépendants afin qu’ils puissent valider que Microsoft a mis en œuvre des contrôles de sécurité (tels que la norme ISO 27001) appropriés à l’étendue d’audit appropriée.
+
+Les États avec une documentation CJIS appropriée, à partir du 2017 août, incluent : Alaska, Arizona, Arkansas, California, Colorado, Hawaii, Georgia, Illinois, Indiana, Iowa, Kansas, Kentucky, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nevada, New Jersey , New York, Caroline du Nord, Oregon, Pennsylvanie, île Rhode, Caroline du Sud, Tennessee, Texas, Virginie, Utah, Vermont et Washington.
+
+**Où puis-je commencer l’effort de conformité de mon agence ?**
+
+La [stratégie de sécurité CJIS](https://aka.ms/cjis-security-policy) couvre les précautions que votre Agence doit prendre pour protéger CJI. En outre, votre responsable de compte Microsoft peut vous mettre en contact avec les personnes connaissant les exigences de votre juridiction.
+
+## <a name="resources"></a>Ressources
+
+- [Services d’information sur la justice pénale](https://aka.ms/cjis)
+- [Stratégie de sécurité CJIS](https://aka.ms/cjis-security-policy)
+- [Documentation de la stratégie de sécurité CJIS version 5,3](https://aka.ms/cjis-backgrounder)
+- [Instructions d’implémentation CJIS pour le gouvernement Azure](https://aka.ms/cjisimplementationguidelines)
+- [Infrastructure de conformité Hub contrôles communs Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Cloud Microsoft Government](https://go.microsoft.com/fwlink/?linkid=2087246)
+- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+
+Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf).

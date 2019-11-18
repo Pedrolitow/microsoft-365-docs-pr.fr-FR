@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: c4a9213e74129126da0cbc41b7bc210a10b34db2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 31de709e5ac834ad628110088b0dab80efe85950
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079331"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690327"
 ---
-# <a name="information-barriers"></a>Barrières des informations
+# <a name="information-barriers"></a>Obstacles aux informations
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -34,7 +34,7 @@ Les barrières de l’information sont désormais déployées à partir de Micro
 Pour tous ces exemples de scénarios (et plus), des stratégies de barrière des informations peuvent être définies pour empêcher ou autoriser les communications dans Microsoft Teams. De telles stratégies peuvent empêcher les personnes d’appeler ou de converser avec celles qu’ils ne doivent pas utiliser, ou d’autoriser les utilisateurs à communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec des stratégies de barrière des informations en vigueur, chaque fois que des utilisateurs couverts par ces stratégies tentent de communiquer avec d’autres personnes dans Microsoft Teams, des vérifications sont effectuées pour empêcher (ou autoriser) la communication (comme défini par les stratégies de barrière des informations). Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!IMPORTANT]
-> Actuellement, les barrières de l’information ne s’appliquent pas aux communications de messagerie ou au partage de fichiers via SharePoint Online ou OneDrive. En outre, les barrières de l’information sont indépendantes des [limites de conformité](tagging-and-assessment-in-advanced-ediscovery.md).<p>Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d’adresses Exchange](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies) en vigueur. (Les barrières d’informations sont basées sur les stratégies de carnet d’adresses.) 
+> Actuellement, les barrières de l’information ne s’appliquent pas aux communications de messagerie ou au partage de fichiers via SharePoint Online ou OneDrive. En outre, les barrières de l’information sont indépendantes des [limites de conformité](tagging-and-assessment-in-advanced-ediscovery.md).<p>Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d’adresses Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en vigueur. (Les barrières d’informations sont basées sur les stratégies de carnet d’adresses.) 
 
 ## <a name="what-happens-with-information-barriers"></a>Qu’en est-il des barrières de l’information ?
 
@@ -58,7 +58,7 @@ Pour en savoir plus sur l’expérience utilisateur avec des barrières d’info
 Les barrières de l’information se dérouleront maintenant et sont incluses dans les abonnements, telles que :
 
 - Microsoft 365 E5
-- Office 365 E5
+- Office 365 E5
 - Conformité avancée Office 365
 - Microsoft 365 E5 protection des informations et conformité
 
@@ -67,7 +67,7 @@ Pour plus d’informations, consultez [la rubrique solutions de conformité](htt
 Pour [définir ou modifier des stratégies de barrière des informations](information-barriers-policies.md), vous devez disposer de l’un des rôles suivants :
 
 - Administrateur général Microsoft 365
-- Administrateur général Office 365 
+- Administrateur général Office 365
 - Administrateur de conformité
 - IB gestion de la conformité (il s’agit d’un nouveau rôle !)
 

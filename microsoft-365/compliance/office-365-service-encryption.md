@@ -11,18 +11,18 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : comprendre la résilience des données dans Microsoft Office 365.'
-ms.openlocfilehash: 385bb936de2c0cfcb478f0b20d2f7367d5b55ff4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7fec40db9ce12b52d37f2003d7ee8db68739aa41
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080049"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690329"
 ---
 # <a name="office-365-service-encryption"></a>Chiffrement du service Office 365
 
 En plus de l’utilisation du chiffrement au niveau du volume, Exchange Online, Skype entreprise, SharePoint Online et OneDrive entreprise utilisent également le chiffrement de service pour chiffrer les données client. Le chiffrement de service autorise deux options de gestion clés :
 - Microsoft gère toutes les clés de chiffrement. (Cette option est actuellement disponible dans SharePoint Online, OneDrive entreprise et Skype entreprise. Il figure actuellement dans la feuille de route pour Exchange Online.)
-- Le client fournit des clés racines utilisées avec le chiffrement de service et le client gère ces clés à l’aide d’Azure Key Vault. Microsoft gère toutes les autres clés. Cette option est appelée clé client et elle est actuellement disponible pour Exchange Online, SharePoint Online et OneDrive entreprise. (Précédemment appelé chiffrement avancé avec BYOK. Consultez la rubrique amélioration de la [transparence et du contrôle pour les clients Office 365](http://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) pour l’annonce d’origine.)
+- Le client fournit des clés racines utilisées avec le chiffrement de service et le client gère ces clés à l’aide d’Azure Key Vault. Microsoft gère toutes les autres clés. Cette option est appelée clé client et elle est actuellement disponible pour Exchange Online, SharePoint Online et OneDrive entreprise. (Précédemment appelé chiffrement avancé avec BYOK. Consultez la rubrique amélioration de la [transparence et du contrôle pour les clients Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) pour l’annonce d’origine.)
 
 Le chiffrement de service offre plusieurs avantages. Par exemple :
 - fournit des fonctionnalités de protection et de gestion des droits en plus de la protection de chiffrement élevée.

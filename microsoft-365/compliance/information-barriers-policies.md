@@ -1,5 +1,5 @@
 ---
-title: Définir des stratégies de barrière des informations
+title: Définir des stratégies d’obstacle aux informations
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: 8ad6dd5e098438de0904fb511c631afbc761ff5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079337"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38690420"
 ---
 # <a name="define-policies-for-information-barriers"></a>Définir des stratégies pour les barrières des informations
 
@@ -59,7 +59,7 @@ Lorsque vous définissez des stratégies pour les barrières d’informations, v
 En plus des [licences et des autorisations requises](information-barriers.md#required-licenses-and-permissions), assurez-vous que les conditions suivantes sont remplies : 
      
 - **Données d’annuaire**. Assurez-vous que la structure de votre organisation est reflétée dans les données d’annuaire. Pour ce faire, assurez-vous que les attributs de compte d’utilisateur, tels que l’appartenance au groupe, le nom du service, etc., sont correctement renseignés dans Azure Active Directory (ou Exchange Online). Pour en savoir plus, consultez les ressources suivantes :
-  - [Attributs des stratégies de barrière des informations](information-barriers-attributes.md)
+  - [Attributs pour les stratégies d’obstacle aux informations](information-barriers-attributes.md)
   - [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurer les propriétés des comptes d'utilisateur avec Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
@@ -77,7 +77,7 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
 
    1. Exécutez les applets de commande PowerShell suivantes :
 
-      ```
+      ```powershell
       Login-AzureRmAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
@@ -108,7 +108,10 @@ Lorsque vous disposez de la liste initiale des groupes et des stratégies, passe
 
 ### <a name="identify-segments"></a>Identifier les segments
 
-En plus de votre liste initiale de stratégies, créez une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies de barrière des informations doivent appartenir à un segment et aucun utilisateur ne doit appartenir à deux ou plusieurs segments. Chaque segment ne peut avoir qu’une seule stratégie de barrière des informations appliquée. 
+En plus de votre liste initiale de stratégies, créez une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies de barrière des informations doivent appartenir à un segment. Planifiez vos segments avec soin, car un utilisateur ne peut être qu’un seul segment. Chaque segment ne peut avoir qu’une seule stratégie de barrière des informations appliquée.
+
+> [!IMPORTANT]
+> Un utilisateur ne peut contenir qu’un seul segment.
 
 Déterminez les attributs des données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *memberOf*ou l’un des attributs pris en charge. Assurez-vous que vous avez sélectionné des valeurs dans l’attribut que vous sélectionnez pour les utilisateurs. [Consultez la liste des attributs pris en charge pour les barrières d’informations](information-barriers-attributes.md).
 

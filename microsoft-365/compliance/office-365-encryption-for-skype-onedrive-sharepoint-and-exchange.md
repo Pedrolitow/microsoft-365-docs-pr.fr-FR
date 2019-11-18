@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 description: 'Résumé : description du chiffrement pour Skype, OneDrive, SharePoint et Exchange Online.'
-ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 220f3060bd9581b22183bbb56e68c3ec930d0c24
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080067"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38690415"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Chiffrement Office 365 pour Skype entreprise, OneDrive entreprise, SharePoint Online et Exchange Online
 
@@ -63,7 +64,7 @@ Les informations d’identification utilisées pour accéder aux conteneurs Azur
 > [!NOTE]
 > Pour les clients du gouvernement des États-Unis Office 365, les blobs de données sont stockés dans le stockage du gouvernement américain Azure. En outre, l’accès aux clés SharePoint Online dans Office 365 le gouvernement américain est limité à Office 365 personnel qui a été spécifiquement filtré. Le personnel des opérations du gouvernement américain d’Azure n’a pas accès au magasin de clés SharePoint Online utilisé pour chiffrer les blobs de données.
 
-Pour plus d’informations sur le chiffrement des données dans SharePoint Online et OneDrive entreprise, voir [chiffrement des données dans Onedrive entreprise et SharePoint Online](https://technet.microsoft.com/en-us/library/dn905447.aspx).
+Pour plus d’informations sur le chiffrement des données dans SharePoint Online et OneDrive entreprise, voir [chiffrement des données dans Onedrive entreprise et SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx).
 
 ### <a name="list-items-in-sharepoint-online"></a>Éléments de liste dans SharePoint Online
 
@@ -76,7 +77,7 @@ Dans OneDrive Entreprise et SharePoint Online, il existe deux scénarios dans le
 - **Communication client avec le serveur** : la communication vers OneDrive entreprise sur Internet utilise des connexions SSL/TLS. Toutes les connexions SSL sont établies à l’aide de clés 2 048 bits.
 - **Déplacement de données entre centres de données** : la principale raison de déplacer des données entre centres de données est la réplication géo pour activer la récupération d’urgence. Par exemple, les deltas de stockage d'objets blob et les journaux de transaction SQL Server transitent par ce canal. Alors que ces données sont déjà transmises par le biais d'un réseau privé, elles sont encore mieux protégées à l'aide du meilleur chiffrement de sa catégorie.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange Online
 
 Exchange Online utilise BitLocker pour toutes les données de boîte aux lettres, et la configuration BitLocker est décrite dans [BitLocker pour le chiffrement](office-365-bitlocker-and-distributed-key-manager-for-encryption.md). Le chiffrement au niveau du service chiffre toutes les données de boîte aux lettres au niveau de la boîte aux lettres. 
 
