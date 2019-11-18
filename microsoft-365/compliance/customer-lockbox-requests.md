@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes de référentiel sécurisé du client qui vous permettent de contrôler la manière dont un technicien du support technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a19b8f7933cfae06c462d204148f53b441126f58
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078624"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38685851"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Référentiel sécurisé du client dans Office 365
 
@@ -114,7 +114,7 @@ Un administrateur Office 365 peut activer les contrôles de référentiel sécur
 Les enregistrements d’audit qui correspondent aux demandes de référentiel sécurisé du client sont consignés dans le journal d’audit Office 365 et sont accessibles à l’aide de l' [outil de recherche de journal d’audit](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) dans le centre de conformité & Office 365 Security. Les actions liées à un client qui accepte ou refusent une demande de référentiel sécurisé client et les actions effectuées par des ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont consignées dans le journal d’audit Office 365. Vous pouvez rechercher et consulter ces enregistrements d’audit.
 
 > [!NOTE]
-> Vous devez disposer du rôle journaux d’audit en affichage seul ou journaux d’audit dans Exchange Online pour effectuer des recherches dans le journal d’audit Office 365. Pour en savoir plus, reportez-vous à l’article [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
+> Vous devez disposer du rôle journaux d’audit en affichage seul ou journaux d’audit dans Exchange Online pour effectuer des recherches dans le journal d’audit Office 365. Pour en savoir plus, reportez-vous à l’article [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Rechercher les activités liées aux demandes de référentiel sécurisé du client dans le journal d’audit
 
@@ -162,7 +162,7 @@ Lorsqu’une personne de votre organisation approuve ou refuse une demande de r�
 |:---------- |:----------|
 | Date       | Date et heure d’approbation ou de refus de la demande de référentiel sécurisé du client.
 | Adresse IP | Adresse IP de la machine que l’approbateur a utilisé pour approuver ou refuser une demande. |
-| Utilisateur       | Le compte de service BOXServiceAccount\[@\]customerforest. prod.Outlook.com.            |
+| Utilisateur       | Le compte de service\[BOXServiceAccount@\]customerforest. prod.Outlook.com.            |
 | Activité   | Set-AccessToCustomerDataRequest ; Il s’agit de l’activité d’audit qui est enregistrée lorsque vous approuvez ou refusez une demande de référentiel sécurisé d’un client.                                |
 | Option       | GUID de la demande de référentiel sécurisé du client                             |
 
@@ -216,7 +216,7 @@ Le contenu client est les données créées par les utilisateurs des services et
 
 - Inférences, et toutes les inférences ultérieures, si le contenu du client reste
 
-Pour plus d’informations sur le contenu client dans Office 365, voir le centre de gestion de la [confidentialité office 365](https://products.office.com/en-US/business/office-365-trust-center-privacy/).
+Pour plus d’informations sur le contenu client dans Office 365, voir le centre de gestion de la [confidentialité office 365](https://products.office.com/business/office-365-trust-center-privacy/).
 
 #### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>Qui est averti lorsqu’une demande d’accès à mon contenu est envoyée ?
 
@@ -270,9 +270,9 @@ Si un client rejette une demande de référentiel sécurisé client, aucun accè
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>Est-ce que le référentiel sécurisé des clients protège contre les demandes de données des services d’application juridique ou d’autres tiers ?
 
-Non. Microsoft prend des demandes tierces pour les données client sérieusement. En tant que fournisseur de services Cloud, Microsoft préconise toujours la confidentialité des données client. Dans le cas où nous obtenons une demande, Microsoft tente toujours de rediriger le tiers vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : [protection des données client de l’espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des [informations détaillées](https://www.microsoft.com/en-us/corporate-responsibility/lerr) sur les demandes de loi que Microsoft reçoit.
+Non. Microsoft prend des demandes tierces pour les données client sérieusement. En tant que fournisseur de services Cloud, Microsoft préconise toujours la confidentialité des données client. Dans le cas où nous obtenons une demande, Microsoft tente toujours de rediriger le tiers vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : [protection des données client de l’espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des [informations détaillées](https://www.microsoft.com/corporate-responsibility/lerr) sur les demandes de loi que Microsoft reçoit.
 
-Pour plus d’informations, consultez le centre de gestion de la [confidentialité de Microsoft](https://www.microsoft.com/en-us/trustcenter/default.aspx) concernant les demandes de données tierces et la section « Divulgation des données client » dans les [conditions des services en ligne](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .
+Pour plus d’informations, consultez le centre de gestion de la [confidentialité de Microsoft](https://www.microsoft.com/trustcenter/default.aspx) concernant les demandes de données tierces et la section « Divulgation des données client » dans les [conditions des services en ligne](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .
 
 #### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Comment Microsoft s’assure-t-il qu’un membre de son personnel ne dispose pas d’un accès permanent au contenu du client dans les applications Office 365 ?
 

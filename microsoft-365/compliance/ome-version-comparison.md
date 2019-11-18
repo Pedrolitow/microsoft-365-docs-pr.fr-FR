@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Explique les différences entre les versions d’Office 365 le chiffrement de messages.
-ms.openlocfilehash: 29c30c1630e6fbf24e9037837c162b4ac67950e2
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: 1d4016e3fa0576a52ef9627539ecd96416a53fae
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435518"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38685688"
 ---
 # <a name="compare-versions-of-ome"></a>Comparez les versions de OME
 
@@ -36,10 +36,10 @@ Cet article compare le chiffrement de messages Office 365 hérité (OME) aux nou
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Fonctionnalité**                     | **Legacy OME**    | **IRM**           | **Nouvelles fonctionnalités OME** |
 |*Envoi d’un message chiffré*        |À l’aide des règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook Desktop ou Outlook sur le Web ; ou via les règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook Desktop, Outlook pour Mac ou Outlook sur le Web ; via les règles de flux de messagerie Exchange (également appelées règles de transport) et la protection contre la perte de données (DLP) d’Office 365|
-|*Modèle de gestion des droits*       |   S/O      |Option ne pas transférer et modèles personnalisés|Option ne pas transférer, option de chiffrement uniquement et modèles personnalisés|
+|*Modèle de gestion des droits*       |   N/A      |Option ne pas transférer et modèles personnalisés|Option ne pas transférer, option de chiffrement uniquement et modèles personnalisés|
 |*Type de destinataire*                   |Destinataires internes et externes|Destinataires internes uniquement         |Destinataires internes et externes|
 |*Expérience pour les destinataires internes*|Les destinataires reçoivent un message HTML, qu’ils téléchargent et ouvrent dans un navigateur Web ou une application mobile|Expérience incorporée native dans les clients Outlook|Une expérience incorporée native pour les destinataires au sein de la même organisation à l’aide des clients Outlook.  Les destinataires peuvent lire les messages à partir du portail OME à l’aide de clients autres qu’Outlook (aucun téléchargement ni application requis).|
-|*Expérience pour les destinataires externes*|Les destinataires reçoivent un message HTML, qu’ils téléchargent et ouvrent dans un navigateur Web ou une application mobile|S/O|Expérience incorporée native pour les destinataires Office 365. Tous les autres destinataires peuvent lire le message à partir du portail OME (pas de téléchargement ou d’application requis).|
+|*Expérience pour les destinataires externes*|Les destinataires reçoivent un message HTML, qu’ils téléchargent et ouvrent dans un navigateur Web ou une application mobile|N/A|Expérience incorporée native pour les destinataires Office 365. Tous les autres destinataires peuvent lire le message à partir du portail OME (pas de téléchargement ou d’application requis).|
 |*Autorisations des pièces jointes*           |Aucune restriction sur les pièces jointes|Les pièces jointes sont protégées|Les pièces jointes sont protégées pour l’option ne pas transférer et les modèles personnalisés. Les administrateurs peuvent choisir de protéger ou non les pièces jointes pour l’option de chiffrement uniquement.|
 |*Apporter votre propre prise en charge de la clé (BYOK)*|Aucune                |Aucune               |BYOK pris en charge          |
 ||
@@ -72,11 +72,9 @@ Pour plus d’informations sur l’utilisation du chiffrement de messages avanc�
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Caractéristiques uniques d’Office 365 le chiffrement de messages dans un déploiement de GCC High
 
-Le chiffrement de messages avancé Office 365 n’est pas disponible dans un environnement de GCC High. Vous pouvez toujours utiliser un modèle de marque unique dans un environnement de GCC High.
+Le chiffrement de messages avancé Office 365 n’est pas disponible dans un environnement de GCC High. Vous pouvez toujours utiliser et personnaliser un modèle de marque unique dans un environnement de GCC High.
 
 En outre, si vous envisagez d’utiliser le chiffrement de messages Office 365 dans un environnement de GCC High, il existe certaines caractéristiques uniques concernant l’expérience de destinataire.
-
-Le chiffrement de messages avancé Office 365 n’est pas pris en charge dans GCC High.
 
 ### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>Messages chiffrés de GCC haut aux destinataires de GCC
 

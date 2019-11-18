@@ -7,17 +7,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilisez la recherche de contenu dans le centre de sécurité & conformité pour effectuer des collections ciblées. Une collection ciblée signifie que vous êtes sûr que les éléments réactifs à un cas ou des éléments privilégiés se trouvent dans une boîte aux lettres ou un dossier de site spécifique. Utilisez le script de cet article pour obtenir l’ID de dossier ou le chemin d’accès de la boîte aux lettres ou des dossiers de site spécifiques sur lesquels vous souhaitez effectuer une recherche.
-ms.openlocfilehash: 525e2daf5b9dc8268e2b5db2eaab17099bf5bc0d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cd78f9ebb02f7c41e0703ba4ddb78bfd184000
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079650"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685956"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utiliser la recherche de contenu dans Office 365 pour les collections ciblées
 
@@ -28,13 +30,13 @@ La fonctionnalité de recherche de contenu dans le centre &amp; de sécurité co
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité &amp; conformité pour exécuter le script à l’étape 1. Pour plus d’informations, consultez la rubrique [attribution d’autorisations eDiscovery](assign-ediscovery-permissions.md).
+- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité &amp; conformité pour exécuter le script à l’étape 1. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
     
     De plus, vous devez disposer du rôle destinataires de messagerie dans votre organisation Exchange Online. Cette opération est nécessaire pour exécuter la cmdlet **Get-MailboxFolderStatistics** , qui est incluse dans le script à l’étape 1. Par défaut, le rôle destinataires de messagerie est affecté aux groupes de rôles gestion de l’organisation et gestion des destinataires dans Exchange Online. Pour plus d’informations sur l’attribution d’autorisations dans Exchange Online, consultez la rubrique [Manage Role Group members](https://go.microsoft.com/fwlink/p/?linkid=692102). Vous pouvez également créer un groupe de rôles personnalisé, lui attribuer le rôle destinataires de messagerie, puis ajouter les membres qui doivent exécuter le script à l’étape 1. Pour plus d'informations, consultez la rubrique [Gérer des groupes de rôles](https://go.microsoft.com/fwlink/p/?linkid=730688).
     
 - Chaque fois que vous exécutez le script à l’étape 1, une nouvelle session PowerShell distante est créée. Vous pouvez donc utiliser toutes les sessions PowerShell distantes disponibles. Pour éviter ce problème, vous pouvez exécuter la commande suivante pour déconnecter vos sessions PowerShell à distance actives.
     
-  ```
+  ```powershell
   Get-PSSession | Remove-PSSession
   ```
 
@@ -62,7 +64,7 @@ Pour afficher la liste des dossiers de boîte aux lettres ou documentlink de sit
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `GetFolderSearchParameters.ps1`.
     
-  ```
+  ```powershell
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
@@ -177,7 +179,7 @@ Pour afficher la liste des dossiers de boîte aux lettres ou documentlink de sit
     
 3. Exécutez le script ; par exemple :
     
-      ```
+      ```powershell
       .\GetFolderSearchParameters.ps1
       ```
 
@@ -203,7 +205,7 @@ L’exemple de l’étape 2 montre la requête utilisée pour rechercher le sous
   
 ### <a name="script-output-for-site-folders"></a>Sortie du script pour les dossiers de site
 
-Si vous obtenez le chemin d’accès de la propriété **documentlink** à partir de sites SharePoint ou OneDrive entreprise, le script se connecte au centre de sécurité & conformité à l’aide de PowerShell à distance, crée une recherche de contenu qui recherche les dossiers sur le site et affiche ensuite une liste des dossiers situés dans le site spécifié. Le script affiche le nom de chaque dossier et ajoute le préfixe **documentlink** à l’URL du dossier. Étant donné que la propriété **documentlink** est une propriété pouvant faire l’objet `documentlink:<path>` d’une recherche, vous devez utiliser la paire propriété : valeur dans une requête de recherche à l’étape 2 pour rechercher ce dossier. Le script affiche un maximum de 200 dossiers de site. S’il y a plus de 200 dossiers de site, les plus récents sont affichés.
+Si vous obtenez le chemin d’accès de la propriété **documentlink** à partir de sites SharePoint ou OneDrive entreprise, le script se connecte au centre de sécurité & conformité à l’aide de PowerShell à distance, crée une recherche de contenu qui recherche les dossiers sur le site, puis affiche une liste des dossiers situés dans le site spécifié. Le script affiche le nom de chaque dossier et ajoute le préfixe **documentlink** à l’URL du dossier. Étant donné que la propriété **documentlink** est une propriété pouvant faire l’objet `documentlink:<path>` d’une recherche, vous devez utiliser la paire propriété : valeur dans une requête de recherche à l’étape 2 pour rechercher ce dossier. Le script affiche un maximum de 200 dossiers de site. S’il y a plus de 200 dossiers de site, les plus récents sont affichés.
   
 Voici un exemple de la sortie renvoyée par le script pour les dossiers de site.
   
@@ -245,28 +247,28 @@ Voici quelques exemples d’utilisation des propriétés `folderid` et `document
   
 - Cet exemple montre comment rechercher trois dossiers de boîte aux lettres différents. Vous pouvez utiliser une syntaxe de requête similaire pour effectuer une recherche dans les dossiers cachés dans le dossier éléments récupérables d’un utilisateur.
     
-  ```
+  ```powershell
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
   ```
 
 - Cet exemple montre comment rechercher dans un dossier de boîte aux lettres des éléments qui contiennent une expression exacte.
     
-  ```
+  ```powershell
   folderid:<folderid> AND "Contoso financial results"
   ```
 
 - Cet exemple montre comment rechercher dans un dossier de site (et tous les sous-dossiers) les documents qui contiennent les lettres « NDA » dans le titre.
     
-  ```
+  ```powershell
   documentlink:<path> AND filename:nda
   ```
 
 - Cet exemple recherche dans un dossier de site (et dans un sous-dossier) les documents qui ont été modifiés au cours d’une plage de dates.
     
-  ```
+  ```powershell
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
-  
+
 ## <a name="more-information"></a>Plus d’informations
 
 Lors de l’utilisation du script de cet article, vous devez tenir compte des points suivants pour effectuer des collections ciblées.

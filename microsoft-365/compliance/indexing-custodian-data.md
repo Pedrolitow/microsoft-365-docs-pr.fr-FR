@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ba85ef90570dfbf2228148bf5211a4b041a1cb61
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a6259d839dd9a0ca196bae37afe374d1d8f21d53
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078454"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38685832"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
@@ -29,14 +29,17 @@ Pour en savoir plus sur le traitement de la prise en charge dans Office 365 et l
 
 - [Types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 - [Éléments partiellement indexés dans la recherche de contenu dans Office 365](partially-indexed-items-in-content-search.md)
-- [Formats de fichier indexés par le service de recherche Exchange](https://docs.microsoft.com/en-us/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
-- [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Formats de fichier indexés par le service de recherche Exchange](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## <a name="viewing-advanced-indexing-results"></a>Affichage des résultats de l’indexation avancée
 
 Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du nouveau traitement.  Dans la vue d’indexation dépositaire, le graphique répertorie tous les éléments ajoutés à l' *index hybride*.  L’index hybride est l’emplacement où eDiscovery avancée stocke le contenu retraité.
 
-Le graphique inclut également le nombre d’éléments nécessitant une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, consultez la rubrique [erreur de correction lors du traitement des données](error-remediation.md).
+Le graphique inclut également le nombre d’éléments nécessitant une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, voir :
+
+- [Correction d’erreur lors du traitement des données](error-remediation.md)
+- [Correction d’erreur sur élément unique](single-item-error-remediation.md)
 
 ## <a name="updating-advanced-indexes-for-custodians"></a>Mise à jour des index avancés pour les dépositaires
 

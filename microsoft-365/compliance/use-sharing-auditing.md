@@ -13,15 +13,17 @@ search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise. Les administrateurs peuvent désormais utiliser l’audit de partage dans le journal d’audit Office 365 pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation. '
-ms.openlocfilehash: 48fc1a67f501c807e76ba2333170df83a1248428
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8d473a3e3fb1c8e5e8753265c3982b27271ed39c
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080466"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685869"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Audit de partage pour trouver les ressources partagées avec des utilisateurs externes
 

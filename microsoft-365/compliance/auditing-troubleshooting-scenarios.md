@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à résoudre les problèmes courants, tels que l’enquête sur un compte compromis, la configuration du transfert de courrier pour une boîte aux lettres ou la détermination de la raison pour laquelle un utilisateur externe a réussi à se connecter à votre Département.
-ms.openlocfilehash: 255fd323ca08dd4ea759648fbe0673f5e5254c22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f075d4317e8da748b6eca654747a2757c0040558
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078895"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685896"
 ---
-# <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Effectuer des recherches dans le journal d’audit Office 365 pour résoudre les scénarios courants
+# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Rechercher dans le journal d’audit Office 365 pour identifier les problèmes de prise en charge courants
 
-Cet article explique comment utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à résoudre les scénarios de prise en charge courants. Cela inclut l’utilisation du journal d’audit pour :
+Cet article explique comment utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à identifier les problèmes de prise en charge courants. Cela inclut l’utilisation du journal d’audit pour :
 
 - Rechercher l’adresse IP de l’ordinateur utilisé pour accéder à un compte compromis
 - Déterminer qui a configuré le transfert de courrier pour une boîte aux lettres
@@ -114,13 +114,13 @@ a. Dans le champ **ObjectID** , l’alias de la boîte aux lettres sur lequel le
 
 b. Dans le champ **Parameters** , la valeur *ForwardingSmtpAddress* indique que le transfert de courrier électronique a été défini sur la boîte aux lettres. Dans cet exemple, le courrier est transmis à l’adresse de messagerie mike@contoso.com, qui se trouve en dehors de l’organisation alpinehouse.onmicrosoft.com.
 
-c. La valeur *true* pour le paramètre *DeliverToMailboxAndForward* indique qu’une copie du message remis *à Sarad@alpinehouse.onmicrosoft.com est* transférée à l’adresse de messagerie spécifiée par l' *ForwardingSmtpAddress *, qui dans cet exemple est Mike@contoso.com. Si la valeur du paramètre *DeliverToMailboxAndForward* est définie sur *false*, le courrier électronique est uniquement transféré à l’adresse spécifiée par le paramètre *ForwardingSmtpAddress* . Il n’est pas remis à la boîte aux lettres spécifiée dans le champ **ObjectID** .
+c. La valeur *true* pour le paramètre *DeliverToMailboxAndForward* indique qu’une copie du message remis à Sarad@alpinehouse.onmicrosoft.com est transmise à l’adresse de messagerie spécifiée par le paramètre *ForwardingSmtpAddress* , qui, dans cet exemple *, est Mike@contoso.com* . Si la valeur du paramètre *DeliverToMailboxAndForward* est définie sur *false*, le courrier électronique est uniquement transféré à l’adresse spécifiée par le paramètre *ForwardingSmtpAddress* . Il n’est pas remis à la boîte aux lettres spécifiée dans le champ **ObjectID** .
 
 d. Le champ **userid** indique l’utilisateur qui définit le transfert du courrier électronique sur la boîte aux lettres spécifiée dans le champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche. Dans ce cas, il semble que le propriétaire de la boîte aux lettres définisse le transfert du courrier sur sa boîte aux lettres.
 
 Si vous déterminez que le transfert du courrier ne doit pas être défini sur la boîte aux lettres, vous pouvez le supprimer en exécutant la commande suivante dans Exchange Online PowerShell :
 
-```
+```powershell
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
@@ -232,7 +232,7 @@ Voici deux exemples de scénarios permettant à un utilisateur de se **connecter
 
    ![Rechercher toutes les activités effectuées par l’utilisateur externe](media/PassThroughAuth2.png)
 
-    En plus des activités de l' **utilisateur connecté** , d’autres enregistrements d’audit peuvent être renvoyés, par exemple ceux qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé à, modifié ou téléchargé un document qui a été partagé avec eux.
+    En plus des activités de l' **utilisateur connecté** , d’autres enregistrements d’audit peuvent être renvoyés, par exemple ceux qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé, modifié ou téléchargé un document qui a été partagé avec eux.
 
 - Recherchez les activités de partage SharePoint qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** un enregistrement d’audit. Pour plus d’informations, reportez-vous à [la rubrique utiliser l’audit de partage dans le journal d’audit Office 365](use-sharing-auditing.md).
 

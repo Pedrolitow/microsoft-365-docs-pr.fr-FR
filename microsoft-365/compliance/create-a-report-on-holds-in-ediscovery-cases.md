@@ -8,22 +8,24 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Utilisez le script de cet article pour générer un rapport qui contient des informations sur toutes les conservations associées à des cas eDiscovery dans le centre de conformité dans Office 365 ou Microsoft 365.
-ms.openlocfilehash: 7118b62dcd42413309e33c45e80516c8822faeff
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e07e628b21c9e8f7485f3012a8740823fe301fc2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078718"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685889"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Création d’un rapport sur les suspensions dans les cas de découverte électronique dans Office 365
   
 Le script de cet article permet aux administrateurs eDiscovery et aux gestionnaires eDiscovery de générer un rapport contenant des informations sur toutes les suspensions associées à des cas eDiscovery dans le centre de conformité dans Office 365 ou Microsoft 365. Le rapport contient des informations telles que le nom du cas dans lequel une conservation est associée, les emplacements de contenu placés en conservation et si la suspension est basée sur une requête. S’il existe des cas qui n’ont aucune conservation, le script crée un rapport supplémentaire avec une liste de cas sans conservation.
 
-Consultez la section [plus d’informations](#more-information) pour obtenir une description détaillée des informations incluses dans le rapport. 
+Consultez la section [plus d’informations](#more-information) pour obtenir une description détaillée des informations incluses dans le rapport.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -39,7 +41,7 @@ La première étape consiste à vous connecter au centre de sécurité & conform
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `ConnectSCC.ps1`. 
     
-      ```
+      ```powershell
       # Get login credentials 
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -51,10 +53,10 @@ La première étape consiste à vous connecter au centre de sécurité & conform
     
 3. Exécutez le script ; par exemple :
 
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-   
+
 4. Lorsque vous êtes invité à entrer vos informations d’identification, entrez votre adresse de messagerie et votre mot de passe, puis cliquez sur **OK**. 
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : exécuter le script pour signaler les suspensions associées à des cas de découverte électronique
@@ -63,7 +65,7 @@ Une fois que vous êtes connecté à la sécurité & Centre de conformité Power
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, CaseHoldsReport. ps1. 
     
-  ```
+  ```powershell
 #script begin
 " " 
 write-host "***********************************************"
@@ -155,7 +157,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
 3. Exécutez le script ; par exemple :
 
-    ```
+    ```powershell
     .\CaseHoldsReport.ps1
     ```
 

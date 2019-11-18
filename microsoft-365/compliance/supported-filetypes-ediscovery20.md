@@ -14,16 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3dbebb20d179f78e97a8ae18fb810a8cb53c45ed
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079699"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38685698"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Types de fichiers pris en charge dans Advanced eDiscovery
 
 Advanced eDiscovery prend en charge de nombreux types de fichiers à différents niveaux, décrits dans le tableau suivant. Cette liste n’est pas finalisée, et nous allons ajouter de nouveaux types de fichiers lors de notre test de validation. Le tableau indique si un type de fichier est pris en charge pour l’extraction de texte (OCR pour les images), affichable dans la visionneuse native et également pris en charge dans la visionneuse d’annotations dans Advanced eDiscovery.
+
 
 ## <a name="archive--container"></a>Archive/conteneur
 
@@ -32,7 +33,19 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à différents
 | application/x-7z-compressé | Oui | Oui | Oui | .7z |
 | application/x-rar-Compressed | Oui | Oui | Oui | . rar |
 | application/tar x | Oui | Oui | Oui | . tar |
-| application/code postal | Oui | Oui | Oui | . zip |
+| application/code postal | Oui | Oui | Oui | .zip |
+||||||||
+
+## <a name="audio--video"></a>Audio/vidéo
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/MP4 | Oui | Oui | Non | Oui | Non | . F4V ;. m4a ;. m4v ;. MP4 ;. mp4v ;. MPEG ;. MPEG4 |
+| audio/MPEG | Oui | Oui | Non | Oui | Non | . MPEG |
+| vidéo/3GPP | Oui | Oui | Non | Oui | Non | .3gp |
+| vidéo/3GPP2 | Oui | Oui | Non | Oui | Non | .3g2; .3gp2 |
+| vidéo/QuickTime | Oui | Oui | Non | Oui | Non | . Moov ;. mov ;. QT |
+| vidéo/x-M4V | Oui | Oui | Non | Oui | Non | .m4v |
 ||||||||
 
 ## <a name="database"></a>Base de données
@@ -47,7 +60,7 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à différents
 | Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/vnd. MS-Outlook | Oui | Oui | Oui | Oui | Oui | . MSG |
-| Message/RFC822 | Oui | Oui | Oui | Oui | Oui | . eml |
+| Message/RFC822 | Oui | Oui | Oui | Oui | Oui | .eml |
 | Text/vCard-contact | Oui | Oui | Oui | Oui | Oui | . vcf |
 ||||||||
 
@@ -95,6 +108,13 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à différents
 | application/vnd. openxmlformats-officedocument. SpreadsheetML. Template | Oui | Oui | Oui | Oui | Oui | . xltx |
 ||||||||
 
+## <a name="microsoft-onenote"></a>Microsoft OneNote
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/OneNote | Oui | Oui | Oui | Oui | Non | . One |
+||||||||
+
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
 
 | Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
@@ -103,6 +123,13 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à différents
 | application/vnd.openxmlformats-officedocument.presentationml.presentation | Oui | Oui | Oui | Oui | Oui | .pptx |
 | application/vnd. openxmlformats-officedocument. PresentationML. slideshow | Oui | Oui | Oui | Oui | Oui | . ppsx |
 | application/vnd. openxmlformats-officedocument. PresentationML. Template | Oui | Oui | Oui | Oui | Oui | . potx |
+||||||||
+
+## <a name="microsoft-project"></a>Microsoft Project
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Project | Oui | Oui | Oui | Non | Oui | . mpp |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher

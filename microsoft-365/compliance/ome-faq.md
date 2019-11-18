@@ -3,7 +3,7 @@ title: FAQ sur le chiffrement de messages Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/11/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -12,22 +12,17 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages dans Office 365 fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: 1625ecd3f2c7991e2726539bcfa0c772d1ffea59
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8fea73b73ab49dcfb0ac67935a9e027e87eb721a
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080045"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38685989"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
 Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages dans Office 365 fonctionnent ? Recherchez une réponse ici. Consultez également les [questions fréquemment posées sur la protection des données dans Azure information protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) pour obtenir des réponses aux questions sur le service de protection des données, Azure Rights Management, dans Azure information protection.
 
-||
-|:-----|
-|Cet article fait partie d’une série d’articles plus large sur le chiffrement de messages Office 365. Cet article est destiné aux administrateurs et ITPros. Si vous recherchez simplement des informations sur l’envoi ou la réception d’un message chiffré, consultez la liste des articles dans [Office 365 message Encryption (OME)](ome.md) et recherchez l’article qui répond le mieux à vos besoins. |
-||
-  
 ## <a name="what-is-office-365-message-encryption-ome"></a>Qu’est-ce que le chiffrement de messages Office 365 (OME) ?
 
 OME combine les fonctionnalités de chiffrement de courrier électronique et de gestion des droits. Les fonctionnalités de gestion des droits sont gérées par Azure information protection.
@@ -42,7 +37,7 @@ Vous pouvez utiliser les nouvelles fonctionnalités de OME dans les conditions s
 
 - Si vous utilisez Exchange Online avec Active Directory Rights Management Services (AD RMS), vous ne pouvez pas activer immédiatement ces nouvelles fonctionnalités. Au lieu de cela, vous devez d’abord [migrer AD RMS vers Azure information protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) . Une fois la migration terminée, vous pouvez configurer OME.
 
-    Si vous choisissez de continuer à utiliser AD RMS sur site avec Exchange Online au lieu de migrer vers Azure information protection, vous ne pourrez pas utiliser ces nouvelles fonctionnalités.
+  Si vous choisissez de continuer à utiliser AD RMS sur site avec Exchange Online au lieu de migrer vers Azure information protection, vous ne pourrez pas utiliser ces nouvelles fonctionnalités.
 
 ## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>Quels sont les abonnements nécessaires pour utiliser les nouvelles fonctionnalités d’OME ?
 
@@ -64,7 +59,7 @@ Pour plus d’informations sur BYOK, consultez [la rubrique planification et imp
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>OME et BYOK avec Azure information protection modifient l’approche de Microsoft pour les demandes de données tierces telles que les demandes ?
 
-Non. OME et l’option permettant de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d’Azure information protection n’ont pas été conçues pour répondre aux apports à l’application de la Loi. OME, avec BYOK pour Azure information protection, a été conçu pour les clients orientés sur la conformité. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : [protection des données client de l’espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d’informations sur les demandes de données tierces, consultez la rubrique relative à la [réponse aux demandes d’autorisation du gouvernement et de la loi pour accéder aux données client](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) dans le centre de gestion de la confidentialité Microsoft. Consultez également la section « Divulgation des données client » dans les [services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
+Non. OME et l’option permettant de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d’Azure information protection n’ont pas été conçues pour répondre aux apports à l’application de la Loi. OME, avec BYOK pour Azure information protection, a été conçu pour les clients orientés sur la conformité. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : [protection des données client de l’espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d’informations sur les demandes de données tierces, consultez la rubrique relative à la [réponse aux demandes d’autorisation du gouvernement et de la loi pour accéder aux données client](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) dans le centre de gestion de la confidentialité Microsoft. Consultez également la section « Divulgation des données client » dans les [services en ligne (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>En quoi cette fonctionnalité est-elle associée aux fonctionnalités de chiffrement de messages Office 365 (OME) et de gestion des droits relatifs à l’information (IRM) héritées ?
 
@@ -106,13 +101,19 @@ Vous pouvez lire et répondre à Outlook pour PC et Mac (2013 et 2016), Outlook 
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quels types de fichiers sont pris en charge en tant que pièces jointes dans les courriels protégés ? Les pièces jointes héritent-elles des stratégies de protection associées aux courriers électroniques protégés ?
 
-Vous pouvez attacher n’importe quel type de fichier à un message protégé, mais les stratégies de protection ne sont appliquées qu’aux formats de fichier mentionnés [ici](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types). 
+Vous pouvez attacher n’importe quel type de fichier à un message protégé, mais les stratégies de protection ne sont appliquées qu’aux formats de fichier mentionnés [ici](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
   
 Si un format de fichier est pris en charge, par exemple un fichier Word, Excel ou PowerPoint, le fichier est toujours protégé, même après le téléchargement de la pièce jointe par le destinataire. Par exemple, si une pièce jointe est protégée par ne pas transférer, et que le destinataire d’origine télécharge et transfère la pièce jointe à un nouveau destinataire, le nouveau destinataire ne pourra pas ouvrir le fichier protégé.
   
 ## <a name="are-pdf-file-attachments-supported"></a>Les pièces jointes aux fichiers PDF sont-elles prises en charge ?
 
-Si vous joignez un fichier PDF à un message protégé, le message lui-même est protégé, mais aucune protection supplémentaire n’est appliquée au fichier PDF une fois que le destinataire l’a reçu. Cela signifie que le destinataire peut enregistrer sous, transférer, copier et imprimer le fichier PDF.
+OK! Vous pouvez activer le chiffrement des pièces jointes au format PDF pour vos organisations Office 365. Pour activer le chiffrement des pièces jointes au format PDF, exécutez la commande suivante dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+
+```powershell
+Set-IRMConfiguration -EnablePdfEncryption $true
+```
+
+Le chiffrement PDF vous permet de protéger des documents PDF sensibles via une communication sécurisée ou une collaboration sécurisée. Les messages héritent de la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. Si un utilisateur Outlook ou Outlook sur le Web joint une pièce jointe au format PDF non protégé à un message protégé, le message hérite de la protection du message. Les utilisateurs peuvent uniquement ouvrir les pièces jointes chiffrées dans les applications qui prennent en charge les fichiers PDF protégés (par exemple, le portail OME et le visionneur Azure information protection).
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Les pièces jointes OneDrive entreprise sont-elles prises en charge ?
 
@@ -120,24 +121,36 @@ Not yet. Les pièces jointes OneDrive entreprise ne sont pas prises en charge et
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>Puis-je chiffrer automatiquement les messages en configurant des stratégies ?
 
-Oui. Utilisez des règles de flux de messagerie dans Exchange Online pour chiffrer automatiquement un message en fonction de certaines conditions. Par exemple, vous pouvez créer des stratégies basées sur l’ID de destinataire, le domaine du destinataire ou le contenu dans le corps ou l’objet du message. Consultez la rubrique [définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365.](define-mail-flow-rules-to-encrypt-email.md)
+Oui. Utilisez des règles de flux de messagerie dans Exchange Online pour chiffrer automatiquement un message en fonction de certaines conditions. Par exemple, vous pouvez créer des stratégies basées sur l’ID de destinataire, le domaine du destinataire ou le contenu dans le corps ou l’objet du message. Consultez la rubrique [définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md).
   
+## <a name="can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail"></a>Puis-je supprimer automatiquement le chiffrement des messages entrants et sortants ?
+
+Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement du courrier sortant. Vous ne pouvez pas configurer une règle pour supprimer le chiffrement pour le courrier entrant.
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Puis-je chiffrer automatiquement les messages en configurant des stratégies de protection contre la perte de &amp; données (DLP) via le centre de sécurité conformité ?
 
 OK! Vous pouvez configurer des règles de flux de messagerie dans Exchange Online ou à l’aide de &amp; DLP dans le centre de sécurité conformité.
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Puis-je ouvrir des messages chiffrés envoyés à une boîte aux lettres partagée ?
 
-Les messages actuellement chiffrés ne sont pas pris en charge pour une boîte aux lettres partagée.
+OK! Les messages chiffrés sont pris en charge pour une boîte aux lettres partagée. Certaines limitations s’appliquent.
+
+## <a name="is-delegated-access-supported"></a>L’accès délégué est-il pris en charge ?
+
+Pas pour le moment.
 
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>Puis-je personnaliser les messages chiffrés avec mon entreprise ?
 
-OK! Pour plus d’informations sur la personnalisation des messages électroniques et sur le portail OME, reportez-vous à la rubrique ajouter la marque de votre organisation à vos messages chiffrés. Consultez la rubrique [Ajouter la marque de votre organisation à vos messages chiffrés.](add-your-organization-brand-to-encrypted-messages.md)
+OK! Pour plus d’informations sur la personnalisation des messages électroniques et sur le portail OME, reportez-vous à la rubrique ajouter la marque de votre organisation à vos messages chiffrés. Consultez la rubrique [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Existe-t-il des fonctionnalités de création de rapports ou des informations pour les messages électroniques chiffrés ?
 
-Il existe un rapport de chiffrement dans le centre de sécurité et de conformité. Voir [afficher les rapports de sécurité de messagerie dans le centre de sécurité & conformité.](view-email-security-reports.md)
+Il existe un rapport de chiffrement dans le centre de sécurité et de conformité. Voir [afficher les rapports de sécurité de messagerie dans le centre de sécurité & conformité](view-email-security-reports.md).
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Puis-je utiliser le chiffrement de messages avec des fonctionnalités de conformité telles que eDiscovery ?
 
 Oui. Tous les messages électroniques chiffrés sont détectables par les fonctionnalités de conformité d’Office 365.
+
+## <a name="can-i-remove-encryption-from-email"></a>Puis-je supprimer le chiffrement de la messagerie électronique ?
+
+Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement du courrier sortant. Vous ne pouvez pas supprimer le chiffrement à l’aide d’une règle de flux de messagerie des messages entrants.

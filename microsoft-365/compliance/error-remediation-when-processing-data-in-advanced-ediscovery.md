@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 02fa8870d6edb4e1a6616604ee0e98638b217237
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 66c515ff083d8b71a9ec4851986639063858514d
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079365"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38685694"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 
@@ -95,6 +95,14 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 11. Après avoir exécuté la commande AzCopy, cliquez sur **suivant : process files**.
 
     Une fois le traitement terminé, vous pouvez accéder à la vue d’ensemble et afficher les fichiers corrigés. 
+
+## <a name="remediating-errors-in-container-files"></a>Correction des erreurs dans les fichiers conteneur
+
+Lorsque le contenu d’un fichier de conteneur (par exemple, un fichier. zip) ne peut pas être extrait par Advanced eDiscovery, les conteneurs peuvent être téléchargés et le contenu doit être développé dans le même dossier que le conteneur d’origine. Les fichiers étendus sont attribués au conteneur parent comme s’ils avaient été développés à l’origine par Advanced eDiscovery. Le processus fonctionne comme décrit ci-dessus, à l’exception du téléchargement d’un fichier unique en tant que fichier de remplacement.  Lorsque vous téléchargez des fichiers corrigés, n’incluez pas le fichier de conteneur d’origine.
+
+## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Correction des erreurs en chargeant le texte extrait
+
+Parfois, il n’est pas possible de convertir un fichier au format natif que Advanced eDiscovery peut interpréter. Toutefois, vous pouvez remplacer le fichier d’origine par un fichier texte qui contient le texte d’origine du fichier natif (dans un processus appelé *superposition de texte*). Pour ce faire, suivez les étapes décrites dans cet article, mais au lieu de corriger le fichier d’origine au format natif, créez un fichier texte contenant le texte extrait du fichier d’origine, puis téléchargez le fichier texte à l’aide du nom de fichier d’origine ajouté avec un suffixe. txt. Par exemple, vous téléchargez un fichier lors de la correction des erreurs avec le nom de fichier 335850cc-6602-4AF0-ACFA-1d14d9128ca2. ABC. Ouvrez le fichier dans l’application native, copiez le texte, puis collez-le dans un nouveau fichier nommé 335850cc-6602-4AF0-ACFA-1d14d9128ca2. ABC. txt. Lorsque vous effectuez cette opération, veillez à supprimer le fichier d’origine dans le format natif de l’emplacement des fichiers corrigé sur votre ordinateur local avant de télécharger le fichier texte corrigé vers Advanced eDiscovery.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Que se passe-t-il lorsque les fichiers sont convertis ?
 

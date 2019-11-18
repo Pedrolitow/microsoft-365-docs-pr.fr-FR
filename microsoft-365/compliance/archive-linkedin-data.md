@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir d’une page de la société LinkedIn vers Office 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la conformité des données tierces de votre organisation.
-ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1117eb6b7c756519ad07cafc52a635d65999d9e0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078907"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685892"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configuration d’un connecteur pour l’archivage des données LinkedIn dans Office 365 (aperçu)
 
@@ -71,14 +71,10 @@ Pour afficher plus de détails, cliquez sur le connecteur dans la liste sur la p
 
 - En raison du comportement précédent, vous pouvez effectuer des `from` recherches `subject` dans les propriétés de ou de messagerie lors de l’utilisation d’un outil eDiscovery de Microsoft pour rechercher des éléments LinkedIn archivés dans Office 365. Par exemple, si le nom de la page société est « contoso Company page », vous pouvez utiliser l’une des paires *Property : value* suivantes dans la requête de recherche par mot clé :
    
-   ```
-   from:"Contoso Company Page"
-   ```
+   > de : "contoso Company page"
 
     Ou
 
-   ```
-   subject:"Contoso Company Page"
-   ```
+   > objet : "contoso Company page"
 
 - Pour faciliter la localisation ou la gestion des éléments LinkedIn importés dans Office 365, le propriétaire de la boîte aux lettres de stockage (ou quiconque lui a attribué l’autorisation FullAccess) peut configurer une règle de boîte de réception pour déplacer les éléments d’une page de la société LinkedIn vers un dossier spécifique. Cela est utile si la boîte aux lettres de stockage est utilisée pour archiver des éléments importés de différentes sources de données tierces. Par exemple, vous pouvez créer une règle de boîte de réception qui déplace tous les éléments contenant le nom d’une page de la société LinkedIn spécifique dans le champ Subject vers un dossier spécifique.

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique pour augmenter la taille du dossier éléments récupérables pour une boîte aux lettres dans Office 365. '
-ms.openlocfilehash: 4c2e36dae3c8677579569d55a9c5b88efb5c54e5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078465"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685921"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
@@ -40,12 +40,12 @@ Pour réduire le risque de dépassement de cette limite, le quota de stockage po
   
 Lorsque le quota de stockage pour le dossier Éléments récupérables dans la boîte aux lettres principale d’une boîte aux lettres placée en conservation est proche de sa limite, vous pouvez effectuer les opérations suivantes :
   
-- **Activer la boîte aux lettres d’archivage et activer l’archivage à extension automatique** : vous pouvez activer une capacité de stockage illimité pour le dossier éléments récupérables en activant simplement la boîte aux lettres d’archivage, puis en activant la fonctionnalité d’archivage à extension automatique dans Exchange. Online. Cela se traduit par 110 Go pour le dossier éléments récupérables dans la boîte aux lettres principale et une capacité de stockage illimitée pour le dossier éléments récupérables dans l’archive de l’utilisateur. Voir comment : [activer les boîtes aux lettres d’archivage dans le centre de sécurité & conformité](enable-archive-mailboxes.md) et [activer un archivage illimité dans Office 365](enable-unlimited-archiving.md).
+- **Activer la boîte aux lettres d’archivage et activer l’archivage à extension automatique** : vous pouvez activer une capacité de stockage illimité pour le dossier éléments récupérables en activant simplement la boîte aux lettres d’archivage, puis en activant la fonctionnalité d’archivage à extension automatique dans Exchange Online. Cela se traduit par 110 Go pour le dossier éléments récupérables dans la boîte aux lettres principale et une capacité de stockage illimitée pour le dossier éléments récupérables dans l’archive de l’utilisateur. Voir comment : [activer les boîtes aux lettres d’archivage dans le centre de sécurité & conformité](enable-archive-mailboxes.md) et [activer un archivage illimité dans Office 365](enable-unlimited-archiving.md).
     
     > [!NOTE]
     > Après avoir activé l’archivage pour une boîte aux lettres qui est proche du dépassement du quota de stockage pour le dossier Éléments récupérables, vous pouvez exécuter l’Assistant Dossier géré pour déclencher manuellement l’assistant pour qu’il traite la boîte aux lettres afin que les éléments arrivés à expiration soient déplacés vers le dossier Éléments récupérables dans la boîte aux lettres d’archivage. Voir [Étape 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) pour obtenir des instructions. Notez que d’autres éléments dans la boîte aux lettres de l’utilisateur peuvent être déplacés vers la nouvelle boîte aux lettres d’archivage. Envisagez d’indiquer à l’utilisateur que cela peut se produire après l’activation de la boîte aux lettres d’archivage. 
   
-- **Création d’une stratégie de rétention personnalisée pour les boîtes aux lettres en conservation** : en plus de l’activation de la boîte aux lettres d’archivage et de l’archivage à extension automatique pour les boîtes aux lettres en conservation pour litige ou en conservation inaltérable, vous pouvez également créer une stratégie de rétention personnalisée pour les boîtes aux lettres sur placer. Cela vous permet d’appliquer une stratégie de rétention aux boîtes aux lettres en conservation qui est différente de la stratégie MRM par défaut appliquée aux boîtes aux lettres qui ne sont pas placées en conservation. Cela vous permet d’appliquer des balises de rétention conçues spécifiquement pour les boîtes aux lettres placées en conservation. Cela inclut la création d’une nouvelle balise de rétention pour le dossier Éléments récupérables. 
+- **Création d’une stratégie de rétention personnalisée pour les boîtes aux lettres en conservation** : en plus de l’activation de la boîte aux lettres d’archivage et de l’archivage à extension automatique pour les boîtes aux lettres en conservation pour litige ou en conservation inaltérable, vous pouvez également créer une stratégie de rétention personnalisée pour les boîtes aux lettres en conservation. Cela vous permet d’appliquer une stratégie de rétention aux boîtes aux lettres en conservation qui est différente de la stratégie MRM par défaut appliquée aux boîtes aux lettres qui ne sont pas placées en conservation. Cela vous permet d’appliquer des balises de rétention conçues spécifiquement pour les boîtes aux lettres placées en conservation. Cela inclut la création d’une nouvelle balise de rétention pour le dossier Éléments récupérables. 
     
 Le reste de cette rubrique décrit les procédures détaillées de création d’une stratégie de rétention personnalisée pour les boîtes aux lettres placées en conservation.
   
@@ -65,13 +65,13 @@ La première étape consiste à créer une balise de rétention personnalisée (
     
 2. Exécutez la commande suivante pour créer une balise de stratégie de rétention pour le dossier Éléments récupérables :  
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name <Name of RPT> -Type RecoverableItems -AgeLimitForRetention <Number of days> -RetentionAction MoveToArchive
     ```
 
     Par exemple, la commande suivante crée une balise de stratégie de rétention pour le dossier Éléments récupérables nommée « Éléments récupérables 30 jours pour les boîtes aux lettres en conservation », avec une période de rétention de 30 jours. Cela signifie que 30 jours après qu’un élément a été placé dans le dossier Éléments récupérables, il est déplacé vers le dossier Éléments récupérables de la boîte aux lettres d’archivage de l’utilisateur.
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name "Recoverable Items 30 days for mailboxes on hold" -Type RecoverableItems -AgeLimitForRetention 30 -RetentionAction MoveToArchive
     ```
 
@@ -118,17 +118,17 @@ Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online Po
   
 Exécutez la commande suivante pour créer une stratégie de rétention pour les boîtes aux lettres placées en conservation.  
   
-```
+```powershell
 New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list of retention tags>
 
 ```
 
 Par exemple, la commande suivante crée la stratégie de rétention et les balises de rétention liées qui sont présentées dans l’illustration précédente.
   
-```
+```powershell
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
-  
+
 ## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>Étape 3 : Application de la nouvelle stratégie de rétention aux boîtes aux lettres placées en conservation
 
 La dernière étape consiste à appliquer la nouvelle stratégie de rétention que vous avez créée à l’étape 2 aux boîtes aux lettres placées en conservation dans votre organisation. Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online PowerShell pour appliquer la stratégie de rétention à une seule boîte aux lettres ou à plusieurs boîtes aux lettres. 
@@ -161,27 +161,27 @@ Vous pouvez utiliser Exchange Online PowerShell pour appliquer une nouvelle stra
   
 Cet exemple applique la nouvelle stratégie de rétention à la boîte aux lettres de Pilar Pinilla.
   
-```
+```powershell
 Set-Mailbox "Pilar Pinilla" -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 Cet exemple applique la nouvelle stratégie de rétention à toutes les boîtes aux lettres de l’organisation qui sont placées en conservation pour litige.
   
-```
+```powershell
 $LitigationHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'}
 ```
 
-```
+```powershell
 $LitigationHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 Cet exemple applique la nouvelle stratégie de rétention à toutes les boîtes aux lettres de l’organisation qui sont placées en conservation inaltérable.
   
-```
+```powershell
 $InPlaceHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null}
 ```
 
-```
+```powershell
 $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
@@ -189,35 +189,35 @@ Vous pouvez utiliser la cmdlet **Get-Mailbox** pour vérifier que la nouvelle st
   
 Voici quelques exemples pour vérifier que les commandes des exemples précédents appliquent la stratégie de rétention « stratégie MRM pour les boîtes aux lettres en conservation » aux boîtes aux lettres placées en conservation sur litige et aux boîtes aux lettres en conservation inaltérable.
   
-```
+```powershell
 Get-Mailbox "Pilar Pinilla" | Select RetentionPolicy
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'} | FT DisplayName,RetentionPolicy -Auto
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | FT DisplayName,RetentionPolicy -Auto
 ```
-  
+
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>(Facultatif) Étape 4 : Exécution de l’Assistant Dossier géré pour appliquer les nouveaux paramètres de rétention
 
 Après l’application de la nouvelle stratégie de rétention aux boîtes aux lettres en conservation, il peut falloir jusqu’à 7 jours dans Exchange Online pour que l’Assistant dossier géré traite ces boîtes aux lettres à l’aide des paramètres de la nouvelle stratégie de rétention. Au lieu d’attendre l’exécution de l’Assistant Dossier géré, vous pouvez utiliser la cmdlet **Start-ManagedFolderAssistant** pour déclencher manuellement l’assistant afin qu’il traite les boîtes aux lettres auxquelles vous avez appliqué la nouvelle stratégie de rétention. 
   
 Exécutez la commande suivante pour démarrer l’Assistant Dossier géré pour la boîte aux lettres de Pilar Pinilla.
   
-```
+```powershell
 Start-ManagedFolderAssistant "Pilar Pinilla"
 ```
 
 Exécutez les commandes suivantes pour démarrer l’Assistant Dossier géré pour toutes les boîtes aux lettres placées en conservation.
   
-```
+```powershell
 $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlaceHolds -ne $null) -or ($_.LitigationHoldEnabled -eq "True")}
 ```
 
-```
+```powershell
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 

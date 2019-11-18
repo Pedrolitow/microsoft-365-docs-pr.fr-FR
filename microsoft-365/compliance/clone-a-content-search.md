@@ -13,12 +13,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Utilisez le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365. Lorsque vous clonez une recherche, une nouvelle recherche (avec un nouveau nom) est créée et contient les mêmes propriétés que la recherche d’origine. Vous pouvez ensuite modifier la nouvelle recherche (en changeant la requête par mot clé ou la plage de dates), puis l’exécuter.
-ms.openlocfilehash: 2622b77045d3b4a92ad2e8a1852e1ddbaaca3368
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078845"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685907"
 ---
 # <a name="clone-a-content-search"></a>Cloner une recherche de contenu
 
@@ -58,7 +58,7 @@ Pour cloner une recherche :
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `CloneSearch.ps1`.
     
-  ```
+  ```powershell
   # This PowerShell script clones an existing Content Search in the Office 365 security and compliance center.
   # Get login credentials from the user
   if(!$UserCredential)
@@ -120,7 +120,7 @@ Pour cloner une recherche :
     
 3. Exécutez le script ; par exemple :
     
-    ```
+    ```powershell
     .\CloneSearch.ps1
     ```
 
@@ -136,7 +136,7 @@ Pour cloner une recherche :
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Étape 2 : modifier et exécuter la recherche clonée dans le centre de conformité
 
-Une fois que vous avez exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à accéder au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou supprimant des conditions de recherche. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Une fois que vous avez exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à accéder au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou supprimant des conditions de recherche. Pour plus d’informations, voir :
   
 - [Recherche de contenu dans Office 365](content-search.md)
     

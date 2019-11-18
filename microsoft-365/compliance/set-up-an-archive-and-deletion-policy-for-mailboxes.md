@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Créer une stratégie d’archivage et de suppression dans Office 365 qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: ca43498d785f1a5525a8159e7e553bd36257a7c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079601"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685969"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365
 
@@ -125,7 +125,7 @@ Tout d’abord, vous allez créer une balise de stratégie d’archivage par dé
     
 3. **Période de rétention** Sélectionnez **quand l’élément atteint l’âge suivant (en jours)**, puis entrez la durée de la période de rétention. Dans ce scénario, les éléments seront déplacés vers la boîte aux lettres d’archivage après 1095 jours (3 ans).
     
-4. **Commentaire** Module Tapez un commentaire qui explique l’objectif de la balise de rétention personnalisée. 
+4. **Commentaire** (facultatif) tapez un commentaire qui explique l’objectif de la balise de rétention personnalisée. 
     
 3. Cliquez sur **Enregistrer** pour créer l’archive personnalisée DPT. 
     
@@ -147,7 +147,7 @@ Ensuite, vous allez créer un autre DPT personnalisé, mais celui-ci sera une st
     
 3. **Période de rétention** Sélectionnez **quand l’élément atteint l’âge suivant (en jours)**, puis entrez la durée de la période de rétention. Pour ce scénario, les éléments seront purgés après 2555 jours (7 ans).
     
-4. **Commentaire** Module Tapez un commentaire qui explique l’objectif de la balise de rétention personnalisée. 
+4. **Commentaire** (facultatif) tapez un commentaire qui explique l’objectif de la balise de rétention personnalisée. 
     
 3. Cliquez sur **Enregistrer** pour créer la suppression personnalisée DPT. 
     
@@ -171,7 +171,7 @@ La dernière balise de rétention que vous allez créer est une balise de strat�
     
 4. **Période de rétention** Sélectionnez **quand l’élément atteint l’âge suivant (en jours)**, puis entrez la durée de la période de rétention. Pour ce scénario, les éléments seront supprimés après 1825 jours (5 ans).
     
-5. **Commentaire** Module Tapez un commentaire qui explique l’objectif de la balise de rétention personnalisée. 
+5. **Commentaire** (facultatif) tapez un commentaire qui explique l’objectif de la balise de rétention personnalisée. 
     
 3. Cliquez sur **Enregistrer** pour créer l’arborescence personnalisée pour le dossier éléments supprimés. 
     
@@ -242,7 +242,7 @@ Voici les étapes à suivre pour vous connecter à Exchange Online PowerShell, p
   
 1. Sur votre ordinateur local, ouvrez Windows PowerShell et exécutez la commande suivante.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     ```
 
@@ -250,19 +250,19 @@ Voici les étapes à suivre pour vous connecter à Exchange Online PowerShell, p
     
 2. Exécutez la commande suivante.
     
-    ```
+    ```powershell
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     ```
 
 3. Exécutez la commande suivante.
     
-    ```
+    ```powershell
     Import-PSSession $Session
     ```
 
 4. Pour vérifier que vous êtes connecté à votre organisation Exchange Online, exécutez la commande suivante pour obtenir la liste de toutes les boîtes aux lettres de votre organisation.
     
-    ```
+    ```powershell
     Get-Mailbox
     ```
 
@@ -271,11 +271,11 @@ Voici les étapes à suivre pour vous connecter à Exchange Online PowerShell, p
   
 5. Exécutez les deux commandes suivantes pour démarrer l’Assistant dossier géré pour toutes les boîtes aux lettres utilisateur de votre organisation.
     
-    ```
+    ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
     ```
 
-    ```
+    ```powershell
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
@@ -289,16 +289,18 @@ Voilà ! Vous avez configuré une stratégie d’archivage et de suppression po
 
 2. Exécutez la commande suivante pour afficher les informations sur les plans de boîte aux lettres dans votre organisation.
 
-    ```
+    ```powershell
     Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
     ```
+    
     Notez le plan de boîte aux lettres défini par défaut.
 
 3. Exécutez la commande suivante pour affecter la nouvelle stratégie de rétention que vous avez créée à l’étape 3 (par exemple, **stratégie d’archivage et de rétention Alpine House**) au plan de boîte aux lettres par défaut. Cet exemple suppose que le nom du plan de boîte aux lettres par défaut est **ExchangeOnlineEnterprise**.
 
-    ```
+    ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
     ```
+
 4. Vous pouvez réexécuter la commande à l’étape 2 pour vérifier que la stratégie de rétention attribuée au plan de boîte aux lettres par défaut a été modifiée.
 
 ## <a name="more-information"></a>Plus d’informations

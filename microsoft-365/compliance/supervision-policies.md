@@ -1,5 +1,5 @@
 ---
-title: Stratégies de surveillance dans Office 365
+title: Stratégies de supervision dans Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 - MOE150
 description: En savoir plus sur les stratégies de surveillance dans Office 365
-ms.openlocfilehash: fc143982ab7ec465bb379e0032b4d99a5d28edec
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bac0f99683c87eb57ee8a69334010573c69acc55
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079704"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685797"
 ---
-# <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
+# <a name="supervision-policies-in-office-365"></a>Stratégies de supervision dans Office 365
 
-Les stratégies de surveillance dans Office 365 vous permettent de capturer les communications des employés pour les examiner par les réviseurs désignés. Vous pouvez définir des stratégies spécifiques qui capturent les messages internes et externes, Microsoft teams ou les communications tierces au sein de votre organisation. Les relecteurs peuvent alors examiner les messages pour s’assurer qu’ils sont conformes aux standards de messages de votre organisation et les résoudre avec le type de classification. 
+Les stratégies de surveillance dans Office 365 vous permettent de capturer les communications des employés pour les examiner par les réviseurs désignés. Vous pouvez définir des stratégies spécifiques qui capturent les messages internes et externes, Microsoft teams ou les communications tierces au sein de votre organisation. Les relecteurs peuvent alors examiner les messages pour s’assurer qu’ils sont conformes aux standards de messages de votre organisation et les résoudre avec le type de classification.
 
 Ces stratégies peuvent également vous aider à surmonter de nombreux défis de conformité modernes, notamment :
 
@@ -38,6 +38,8 @@ Dans certaines organisations, le support informatique et le groupe de gestion de
 Pour obtenir une vue d’ensemble rapide des stratégies de surveillance, voir la vidéo sur la [stratégie de surveillance](https://youtu.be/C3Y8WZ7o_dI) sur le [canal des mécanismes Microsoft](https://www.youtube.com/user/OfficeGarageSeries).
 
 Pour en savoir plus sur les améliorations et la disponibilité des fonctionnalités de surveillance, consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+
+Vous souhaitez essayer la nouvelle expérience de conformité de la communication dans Microsoft 365 ? Découvrez les fonctionnalités nouvelles et améliorées disponibles dans la [conformité de la communication dans Microsoft 365 (version d’évaluation)](communication-compliance.md).
 
 ## <a name="scenarios-for-supervision-policies"></a>Scénarios de surveillance des stratégies
 
@@ -55,7 +57,7 @@ Les stratégies de surveillance peuvent faciliter la surveillance des communicat
 
     La plupart des organisations doivent se conformer à certains types de normes de conformité réglementaire dans le cadre de leurs procédures d’utilisation normales. Ces réglementations obligent souvent les organisations à mettre en place un certain type de processus de surveillance ou de supervision pour la messagerie appropriée pour leur secteur d’activité. La règle 3110 de l’autorité réglementaire du secteur financier (FINRA) est un excellent exemple d’une obligation pour les organisations de mettre en place des procédures de surveillance pour surveiller les activités de ses employés et les types d’entreprises dans lesquelles elle s’engage. Un autre exemple doit être de surveiller les concessionnaires de courtiers de votre organisation afin de se protéger contre les activités potentielles de blanchiment de fonds, de commerce d’initié, de collusion ou de corruption. Les stratégies de surveillance peuvent aider votre organisation à répondre à ces exigences en fournissant un processus à la fois pour surveiller et rendre compte des communications de l’entreprise.
 
-## <a name="components"></a>Components
+## <a name="components"></a>Composants
 
 ### <a name="supervision-policy"></a>Stratégie de supervision
 
@@ -152,7 +154,7 @@ Le tableau suivant décrit plus en plus de chaque condition.
   
 |**Condition**|**Comment utiliser cette condition ?**|
 |:-----|:-----|
-| **Un message est reçu à partir de l’un de ces domaines**  <br><br> **Le message n’est reçu à partir d’aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages reçus. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie entré est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques à partir d’un domaine spécifique mais souhaitez exclure les messages qui n’ont pas besoin d’être réexaminés (bulletins d’information, annonces, etc.), vous devez configurer la condition qu’un **message n’est pas reçu de l’un de ces domaines** . adresse de messagerie (par exemple, « newsletter@contoso.com »). |
+| **Un message est reçu à partir de l’un de ces domaines**  <br><br> **Le message n’est reçu à partir d’aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages reçus. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie entré est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques à partir d’un domaine spécifique tout en excluant les messages qui n’ont pas besoin d’être réexaminés (bulletins d’information, annonces, etc.), vous devez configurer la condition qu’un **message n’est pas reçu de l’un de ces domaines** , qui exclut l’adresse de messagerie (par exemple « Newsletter@contoso.com »). |
 | **Un message est envoyé à l’un de ces domaines**  <br><br> **Le message n’est pas envoyé à l’un de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages envoyés. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques envoyés à un domaine spécifique mais exclure les messages envoyés qui n’ont pas besoin d’être réexaminés, vous devez configurer deux conditions : <br> -Un **message est envoyé à l’un de ces domaines** qui définit le domaine (« contoso.com »), et <br> -Un **message n’est pas envoyé à l’un de ces domaines** , qui exclut l’adresse de messagerie (« Subscriptions@contoso.com »). |
 | **Le message est classé avec l’une de ces étiquettes**  <br><br> **Le message n’est classé avec aucune de ces étiquettes** | Pour appliquer la stratégie lorsque certaines étiquettes de rétention sont incluses ou exclues dans un message. Les étiquettes de rétention doivent être configurées séparément et les étiquettes configurées dans le cadre de cette condition. Chaque étiquette que vous choisissez est appliquée séparément (une seule de ces étiquettes doit s’appliquer pour la stratégie à appliquer au message). Pour plus d’informations sur la configuration des étiquettes de rétention, consultez la rubrique [vue d’ensemble des étiquettes de rétention](labels.md).|
 | **Le message contient l’un de ces mots**  <br><br> **Le message ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans un message, entrez chaque mot ou expression sur une ligne distincte. Chaque ligne de mots que vous entrez est appliquée séparément (une seule de ces lignes doit s’appliquer à la stratégie à appliquer au message). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
@@ -164,7 +166,7 @@ Le tableau suivant décrit plus en plus de chaque condition.
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Correspondance de mots et expressions avec des courriers électroniques ou des pièces jointes
 <a name="Matchwords"></a> Chaque ligne de mots que vous entrez est appliquée séparément (une seule ligne doit s’appliquer à la condition de stratégie à appliquer à l’e-mail ou à la pièce jointe). Par exemple, nous utilisons la condition, le **message contient l’un de ces mots**, avec les mots-clés « Banker » et « negociing Insider » sur des lignes distinctes. La stratégie s’applique aux messages qui incluent le mot « Banker » ou l’expression « negociation Insiders ». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots contenus dans le message ou dans la pièce jointe doivent correspondre exactement à ce que vous entrez.
 
-Pour analyser les messages électroniques et les pièces jointes des mêmes mots clés, créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) avec un dictionnaire de [Mots clés personnalisé](create-a-keyword-dictionary.md) pour les termes que vous souhaitez surveiller. Cette configuration de stratégie identifie les mots clés définis qui apparaissent dans le message électronique **ou** dans la pièce jointe du courrier électronique. L’utilisation des paramètres de stratégie conditionnelle standard (le*message contient l’un de ces mots* et la *pièce jointe contient l’un de ces mots*) pour identifier les termes dans les messages et dans les pièces jointes exige que les termes soient **présents dans le** message et le connexion.
+Pour analyser les messages électroniques et les pièces jointes des mêmes mots clés, créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) avec un dictionnaire de [Mots clés personnalisé](create-a-keyword-dictionary.md) pour les termes que vous souhaitez surveiller. Cette configuration de stratégie identifie les mots clés définis qui apparaissent dans le message électronique **ou** dans la pièce jointe du courrier électronique. L’utilisation des paramètres de stratégie conditionnelle standard (le*message contient l’un de ces mots* et la *pièce jointe contient l’un de ces mots*) pour identifier les termes dans les messages et dans les pièces jointes exige que les termes soient **présents dans le** message et la pièce jointe.
   
 ##### <a name="enter-multiple-conditions"></a>Entrer plusieurs conditions
 
@@ -276,7 +278,7 @@ Afficher les activités d’audit dans le journal d’audit unifié ou avec l’
 
 Par exemple, l’exemple suivant montre comment renvoyer les activités de toutes les activités de vérification de surveillance (stratégies et règles) et répertorier les informations détaillées pour chacune d’elles :
 
-```
+```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
@@ -285,3 +287,4 @@ Outre les informations fournies dans les journaux et les rapports de surveillanc
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
 Pour configurer les stratégies de surveillance pour votre organisation, consultez la rubrique [configurer les stratégies de surveillance](configure-supervision-policies.md).
+

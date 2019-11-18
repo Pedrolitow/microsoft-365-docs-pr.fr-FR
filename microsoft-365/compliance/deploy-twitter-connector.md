@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des données Twitter vers Office 365. Une fois ces données importées dans Office 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Twitter de votre organisation.
-ms.openlocfilehash: c3c5af0fc42057d9fc2e8b8e67423398d6ed0ddf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fda03e3e489b0ae9c754f2eba18bc60785bb3def
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070274"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685858"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Déploiement d’un connecteur pour l’archivage des données Twitter dans Office 365
 
@@ -30,150 +30,150 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
 1. Accédez à <https://portal.azure.com> et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur global Office 365.
 
-   ![](media/TCimage01.png)
+   ![Se connecter à Azure](media/TCimage01.png)
 
 2. Dans le volet de navigation de gauche, cliquez sur **Azure Active Directory**.
 
-   ![](media/TCimage02.png)
+   ![Accéder à Azure Active Directory](media/TCimage02.png)
 
 3. Dans le volet de navigation de gauche, cliquez sur **inscriptions des applications (aperçu)** , puis cliquez sur **nouvelle inscription**.
 
-   ![](media/TCimage03.png)
+   ![Créer une nouvelle inscription d’application](media/TCimage03.png)
 
-4. Inscrivez l’application. Sous **URI de redirection (facultatif)**, sélectionnez Web dans la liste déroulante type d' <https://portal.azure.com> application, puis tapez dans la zone de l’URI.
+4. Inscrivez l’application. Sous **URI de redirection (facultatif)**, sélectionnez **Web** dans la liste déroulante type d' `https://portal.azure.com` application, puis tapez dans la zone de l’URI.
 
-   ![](media/TCimage04.png)
+   ![Type https://portal.azure.com de l’URI de redirection ](media/TCimage04.png)
 
 5. Copiez l’ID d' **application (client)** et l' **ID de répertoire (** client) et enregistrez-les dans un fichier texte ou un autre emplacement sûr. Vous utilisez ces ID dans les étapes ultérieures.
 
-    ![](media/TCimage05.png)
+    ![Copier et enregistrer l’ID de l’application et l’ID du répertoire](media/TCimage05.png)
 
 6. Accédez à **certificats & secrets de la nouvelle application** , puis sous **secrets client** , cliquez sur **nouvelle clé secrète client**.
 
-   ![](media/TCimage06.png)
+   ![Créer une clé secrète client](media/TCimage06.png)
 
 7. Créer une nouvelle clé secrète. Dans la zone Description, tapez le secret, puis choisissez une période d’expiration. 
 
-   ![](media/TCimage08.png)
+   ![Tapez le secret et choisissez la période d’expiration.](media/TCimage08.png)
 
 8. Copiez la valeur de la clé secrète et enregistrez-la dans un fichier texte ou dans un autre emplacement de stockage. Il s’agit de la clé secrète de l’application AAD que vous utilisez dans les étapes ultérieures.
 
-   ![](media/TCimage09.png)
+   ![Copier et enregistrer la clé secrète](media/TCimage09.png)
 
 9. Accédez au **manifeste** et copiez le identifierUris (également appelé URI de l’application AAD) en surbrillance dans la capture d’écran suivante. Copiez l’URI de l’application AAD dans un fichier texte ou un autre emplacement de stockage. Vous l’utilisez à l’étape 6.
 
-    ![](media/TCimage10.png)
+    ![Copier et enregistrer l’URI de l’application AAD](media/TCimage10.png)
 
 ## <a name="step-3-create-an-azure-storage-account"></a>Étape 3 : créer un compte de stockage Azure
 
 1.  Accédez à la page d’accueil Azure de votre organisation.
 
-    ![](media/TCimage11.png)
+    ![Page d’accueil GI vers Azure](media/TCimage11.png)
 
 2. Cliquez sur **créer une ressource** et tapez le **compte de stockage** dans la zone de recherche.
 
-   ![](media/TCimage12.png)
+   ![Créer une ressource de compte de stockage](media/TCimage12.png)
 
 3. Cliquez sur **stockage**, puis sur **compte de stockage**.
 
-   ![](media/TCimage13.png)
+   ![Cliquez sur stockage, puis sur compte de stockage.](media/TCimage13.png)
 
 4. Sur la page **créer un compte de stockage** , dans la zone abonnement, sélectionnez **paiement en cours** ou **version d’évaluation gratuite** en fonction du type d’abonnement Azure dont vous disposez. 
 
-   ![](media/TCimage14.png)
+   ![Sélectionner un type de compte de stockage](media/TCimage14.png)
 
 5. Sélectionnez ou créez un groupe de ressources.
 
-   ![](media/TCimage15.png)
+   ![Sélectionner ou créer un groupe de ressources](media/TCimage15.png)
 
 6. Tapez un nom pour le compte de stockage.
 
-   ![](media/TCimage16.png)
+   ![Nommer le compte de stockage](media/TCimage16.png)
 
 7. Passez en revue, puis cliquez sur **créer** pour créer le compte de stockage.
 
-   ![](media/TCimage17.png)
+   ![Passez en revue les paramètres, puis créez un compte de stockage](media/TCimage17.png)
 
 8. Après quelques instants, cliquez sur **Actualiser** , puis sur **accéder à la ressource** pour accéder au compte de stockage.
 
-   ![](media/TCimage18.png)
+   ![Accédez au compte de stockage que vous venez de créer.](media/TCimage18.png)
 
 9. Cliquez sur **touches d’accès** dans le volet de navigation de gauche.
 
-   ![](media/TCimage19.png)
+   ![Cliquez sur touches d’accès](media/TCimage19.png)
 
 10. Copiez une **chaîne de connexion** et enregistrez-la dans un fichier texte ou un autre emplacement de stockage. Vous pouvez l’utiliser lors de la création d’une ressource d’application Web à l’étape 4.
 
-    ![](media/TCimage20.png)
+    ![Copier une chaîne de connexion](media/TCimage20.png)
 
 ## <a name="step-4-create-a-new-web-app-resource-in-azure"></a>Étape 4 : créer une nouvelle ressource d’application Web dans Azure
 
 1. Sur la page d' **Accueil** du portail Azure, cliquez sur **créer une \> ressource \> tout le Web App**. Dans la page **application Web** , cliquez sur **créer**.
 
-   ![](media/TCimage21.png)
+   ![Créer une ressource d’application Web dans Azure](media/TCimage21.png)
 
 2. Renseignez les détails (comme indiqué ci-dessous), puis créez l’application Web. Le nom que vous entrez dans la zone nom de l' **application** est utilisé pour créer l’URL du service d’application Azure ; par exemple, twitterconnector.azurewebsites.net.
 
-   ![](media/TCimage22.png)
+   ![Tapez le nom de la ressource d’application Web ; par exemple twitterconnector.azurewebsites.net ](media/TCimage22.png)
 
 3. Accédez à la ressource d’application Web nouvellement créée, puis cliquez sur paramètres de l' **application** dans le volet de navigation de gauche. Sous **paramètres**de l’application, cliquez sur **Ajouter un nouveau paramètre** , puis ajoutez les trois paramètres suivants. Utilisez les valeurs (que vous avez copiées dans le fichier texte à partir des étapes précédentes) : 
 
-    – * * APISecretKey — vous pouvez taper n’importe quelle valeur en tant que clé secrète. Il est utilisé pour accéder à l’application Web de connecteur à l’étape 7.
+    - **APISecretKey** : vous pouvez taper n’importe quelle valeur comme clé secrète. Il est utilisé pour accéder à l’application Web de connecteur à l’étape 7.
 
-    – **StorageAccountConnectionString** – URI de chaîne de connexion que vous avez copiée après avoir créé le compte de stockage Azure à l’étape 3.
+    - **StorageAccountConnectionString** – URI de chaîne de connexion que vous avez copiée après avoir créé le compte de stockage Azure à l’étape 3.
 
-    – **tenantId** – ID de client de votre organisation Office 365 que vous avez copié après avoir créé l’application connecteur Twitter dans Azure Active Directory à l’étape 2.
+    - **tenantId** – ID de client de votre organisation Office 365 que vous avez copié après avoir créé l’application de connecteur Twitter dans Azure Active Directory à l’étape 2.
 
-    ![](media/TCimage23.png)
+    ![Ajouter des paramètres d’application](media/TCimage23.png)
 
 4. Sous **paramètres généraux**, cliquez sur **en** regard de l’est **toujours activé**. Cliquez sur **Enregistrer** en haut de la page pour enregistrer les paramètres de l’application.
 
-   ![](media/TCimage24.png)
+   ![Activer la ressource d’application Web, puis l’enregistrer](media/TCimage24.png)
 
 5. La dernière étape consiste à télécharger le code source de l’application du connecteur vers Azure que vous avez téléchargé à l’étape 1. Dans un navigateur Web, accédez à https://<AzureAppResourceName>. SCM.azurewebsites.net/ZipDeployUi. Par exemple, si le nom de votre ressource d’application Azure (que vous avez nommée à l’étape 2 de cette section) est **twitterconnector**, vous accédez https://twitterconnector.scm.azurewebsites.net/ZipDeployUià.
 
 6. Faites glisser et déposez le SampleConnector. zip (que vous avez téléchargé à l’étape 1) sur cette page. Une fois les fichiers téléchargés et le déploiement réussi, la capture d’écran suivante se présente :
 
-   ![](media/TCimage25.png)
+   ![Glissez-déplacez le fichier SampleConnector. zip vers cette page.](media/TCimage25.png)
 
 ## <a name="step-5-create-the-twitter-app"></a>Étape 5 : créer l’application Twitter
 
 1. Accédez à https://developer.twitter.com, connectez-vous à l’aide des informations d’identification pour le compte de développeur de votre organisation, puis cliquez sur **applications**.
 
-   ![TCimage25-5. png](media/TCimage25-5.png)
+   ![Accédez à https://developer.twitter.com et connectez-vous](media/TCimage25-5.png)
 2. Cliquez sur **créer une application**.
    
-   ![](media/TCimage26.png)
+   ![Accéder à la page applications pour créer une application](media/TCimage26.png)
 
 3. Sous **Détails**de l’application, ajoutez des informations sur l’application.
 
-   ![](media/TCimage27.png)
+   ![Entrer des informations sur l’application](media/TCimage27.png)
 
 4. Dans le tableau de bord du développeur Twitter, sélectionnez l’application que vous venez de créer et copiez l’ID d’application affiché et enregistrez-le dans un fichier texte ou dans un autre emplacement de stockage. Ensuite, cliquez sur **Détails**.
    
-   ![](media/TCimage28.png)
+   ![Copier et enregistrer l’ID de l’application](media/TCimage28.png)
 
 5. Sous l’onglet **clés et jetons** , sous clés de l' **API consommateur** , copiez la clé secrète de l’API et enregistrez-la dans un fichier texte ou un autre emplacement de stockage. Ensuite, cliquez sur **créer** pour générer un jeton d’accès et un secret de jeton d’accès, puis copiez-les dans un fichier texte ou un autre emplacement de stockage.
    
-   ![](media/TCimage29.png)
+   ![Copier et enregistrer dans la clé secrète de l’API](media/TCimage29.png)
 
    Ensuite, cliquez sur **créer** pour générer un jeton d’accès et un secret de jeton d’accès, puis copiez-les dans un fichier texte ou un autre emplacement de stockage.
 
 6. Cliquez sur l’onglet **autorisations** et configurez les autorisations comme indiqué dans la capture d’écran suivante :
 
-   ![](media/TCimage30.png)
+   ![Configurer des autorisations](media/TCimage30.png)
 
 7. Une fois que vous avez enregistré les paramètres d’autorisation, cliquez sur l’onglet Détails de l' **application** , puis cliquez sur **modifier > modifier les détails**.
 
-   ![](media/TCimage31.png)
+   ![Modifier les détails de l’application](media/TCimage31.png)
 
 8. Effectuez les tâches suivantes :
 
-   : Activez cette case à cocher pour autoriser l’application de connecteur à se connecter à Twitter.
+   - Activez la case à cocher pour autoriser l’application de connecteur à se connecter à Twitter.
    
-   : Ajoutez l’URI de redirection OAuth en utilisant le format suivant : ** \<connectorserviceuri>/views/twitteroauth**, où la valeur de *connectorserviceuri* est l’URL de service d’application Azure pour votre organisation ; par exemple, https://twitterconnector.azurewebsites.net/Views/TwitterOAuth.
+   - Ajoutez l’URI de redirection OAuth en utilisant le format suivant : ** \<connectorserviceuri>/views/twitteroauth**, où la valeur de *connectorserviceuri* est l’URL de service d’application Azure pour votre organisation ; par exemple, https://twitterconnector.azurewebsites.net/Views/TwitterOAuth.
 
-   ![](media/TCimage32.png)
+    ![Autoriser l’application de connecteur à se connecter à Twitter et ajouter l’URI de redirection OAuth](media/TCimage32.png)
 
 L’application de développeur Twitter est maintenant prête à être utilisée.
 
@@ -181,25 +181,26 @@ L’application de développeur Twitter est maintenant prête à être utilisée
 
 1. Accédez à https://\<AzureAppResourceName>. azurewebsites.net (où **AzureAppResourceName** est le nom de votre ressource d’application Azure que vous avez nommée à l’étape 4). Par exemple, si le nom est **twitterconnector**, accédez à https://twitterconnector.azurewebsites.net. La page d’accueil de l’application se présente comme la capture d’écran suivante :
 
-   ![](media/FBCimage41.png)
+   ![Accéder à la page des ressources de l’application Azure](media/FBCimage41.png)
 
 2. Cliquez sur **configurer** pour afficher une page de connexion.
 
-   ![](media/FBCimage42.png)
+   ![Cliquez sur configurer pour afficher la page de connexion.](media/FBCimage42.png)
 
 3. Dans la zone ID de locataire, tapez ou collez l’ID de votre client (que vous avez obtenu à l’étape 2). Dans la zone mot de passe, tapez ou collez le APISecretKey (que vous avez obtenu à l’étape 2), puis cliquez sur **définir les paramètres de configuration** pour afficher la page Détails de la **configuration** .
 
-   ![](media/TCimage35.png)
+   ![Se connecter à l’aide de l’ID de client et de la clé secrète d’API](media/TCimage35.png)
 
 4. Sous **Détails**de la configuration, entrez les paramètres de configuration suivants 
 
-   – **Clé de l’API Twitter** – ID de l’application Twitter que vous avez créée à l’étape 5.
-   – **Clé secrète de l’API Twitter** : clé secrète de l’API pour l’application Twitter que vous avez créée à l’étape 5.
-   – **Jeton d’accès Twitter** – le jeton d’accès que vous avez créé à l’étape 5.
-   – **Jeton d’accès Twitter-secret** de jeton d’accès que vous avez créé à l’étape 5.
-   – **ID de l’application AAD** – ID de l’application Azure Active Directory que vous avez créée à l’étape 2 – **clé secrète de l’application AAD** – valeur de la clé secrète APISecretKey que vous avez créée à l’étape 4.
-   – **URI de l’application AAD** – URI de l’application AAD obtenue à l’étape 2 ; par exemple, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
-   – **Clé d’instrumentation Insights** de l’application : laissez cette zone vide.
+   - **Clé de l’API Twitter** : ID de l’application Twitter que vous avez créée à l’étape 5.
+   - **Clé secrète de l’API Twitter** : clé secrète de l’API pour l’application Twitter que vous avez créée à l’étape 5.
+   - **Jeton d’accès Twitter** : jeton d’accès que vous avez créé à l’étape 5.
+   - **Jeton d’accès Twitter** : secret de jeton d’accès que vous avez créé à l’étape 5.
+   - **ID de l’application AAD** : ID de l’application Azure Active Directory que vous avez créée à l’étape 2
+   - **Clé secrète de l’application AAD** : valeur de la clé secrète APISecretKey que vous avez créée à l’étape 4.
+   - **URI de l’application AAD** : URI de l’application AAD obtenue à l’étape 2 ; par exemple, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213`.
+   - **Clé d’instrumentation Insights** de l’application : laissez cette zone vide.
 
 5. Cliquez sur **Enregistrer** pour enregistrer les paramètres du connecteur.
 
@@ -207,36 +208,35 @@ L’application de développeur Twitter est maintenant prête à être utilisée
 
 1.  Accédez à <https://protection.office.com> , puis cliquez sur importation de la **gouvernance \> des données \> importer des données**tierces.
 
-    ![](media/TCimage36.png)
+    ![Accéder à la page données tierces d’archivage dans le centre de sécurité et de conformité](media/TCimage36.png)
 
 2. Cliquez sur **Ajouter un connecteur** , puis sur **Twitter**.
 
-   ![](media/TCimage37.png)
+   ![Cliquez sur Ajouter un connecteur pour ajouter un connecteur Twitter.](media/TCimage37.png)
 
 3. Dans la page **Ajouter une application connecteur** , entrez les informations suivantes, puis cliquez sur **valider le connecteur**.
 
-    – Dans la première zone, tapez un nom pour le connecteur, tel que **Twitter**.
-    – Dans la deuxième zone, tapez ou collez la valeur du APISecretKey que vous avez ajouté à l’étape 4.
-    – Dans la troisième zone, tapez ou collez l’URL du service d’application Azure ; par exemple, **https://twitterconnector.azurewebsites.net**.
+    - Dans la première zone, tapez un nom pour le connecteur, tel que **Twitter**.
+    - Dans la deuxième zone, tapez ou collez la valeur du APISecretKey que vous avez ajouté à l’étape 4.
+    - Dans la troisième zone, tapez ou collez l’URL du service d’application Azure ; par exemple, **https://twitterconnector.azurewebsites.net**.
 
    Une fois le connecteur validé, cliquez sur **suivant**.
 
-   ![](media/TCimage38.png)
+   ![Entrer les paramètres de l’application connecteur](media/TCimage38.png)
 
 4. Cliquez sur **connexion avec application connecteur**.
 
-   ![](media/TCimage39.png)
+   ![Connexion à l’application connecteur](media/TCimage39.png)
 
 5. Tapez ou collez à nouveau le APISecretKey, puis cliquez sur **connexion au service connecteur**.
 
-   ![](media/TCimage40.png)
-
+   ![Clé secrète de l’API de type pour la connexion au service connecteur](media/TCimage40.png)
 
 6. Cliquez sur **continuer avec Twitter**.
 
 7. Sur la page de connexion Twitter, connectez-vous à l’aide des informations d’identification du compte pour le compte Twitter de votre organisation.
 
-   ![](media/TCimage42.png)
+   ![Se connecter à un compte Twitter](media/TCimage42.png)
 
    Une fois que vous êtes connecté, la page Twitter affiche le message suivant : « travail de connecteur Twitter correctement configuré ».
 
@@ -244,18 +244,18 @@ L’application de développeur Twitter est maintenant prête à être utilisée
 
 9. Sur la page **définir les filtres** , vous pouvez appliquer un filtre pour importer (et archiver) les éléments qui sont un certain âge. Cliquez sur **Suivant**.
 
-   ![](media/TCimage44.png)
+   ![Configurer le filtre pour importer des éléments d’un âge donné](media/TCimage44.png)
 
 10. Sur la page **définir le compte de stockage** , tapez l’adresse de messagerie d’une boîte aux lettres Office 365 dans laquelle les éléments Twitter seront importés.
 
-    ![](media/TCimage45.png)
+    ![Spécification d’une boîte aux lettres Office 365 pour importer des éléments Twitter](media/TCimage45.png)
 
 11. Vérifiez vos paramètres, puis cliquez sur **Terminer** pour terminer l’installation du connecteur dans le centre de sécurité & conformité.
 
-    ![](media/TCimage46.png)
+    ![Passez en revue les paramètres, puis cliquez sur Terminer.](media/TCimage46.png)
 
-    ![](media/TCimage47.png)
+    ![Écran indiquant que l’installation du connecteur est terminée](media/TCimage47.png)
 
 12. Accédez à la page données tierces d' **archivage** pour voir la progression du processus d’importation.
 
-    ![](media/TCimage48.png)
+    ![Nouveau connecteur affiché dans le centre de sécurité et conformité](media/TCimage48.png)

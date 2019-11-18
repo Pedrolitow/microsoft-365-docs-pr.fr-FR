@@ -7,18 +7,20 @@ ms.date: 6/26/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports via des scripts PowerShell dans le centre de sécurité & conformité dans Office 365.
-ms.openlocfilehash: 75caf75d576ac4a24779de15f5b05cb7fe8fa724
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43f6046521ef121f52b2a5abe26d2cd6a322d22c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078668"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685946"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -42,7 +44,7 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cet
   
 1. Copiez et collez le texte suivant dans un fichier. txt à l’aide du bloc-notes. Enregistrez ce fichier dans un dossier sur votre ordinateur local. Vous allez également enregistrer les autres scripts dans ce dossier.
     
-    ```
+    ```text
     ExchangeLocation,SharePointLocation,ContentMatchQuery,StartDate,EndDate
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2000,12/31/2005
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2006,12/31/2010
@@ -72,7 +74,7 @@ L’étape suivante consiste à vous connecter au centre de sécurité & de conf
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `ConnectSCC.ps1`. Enregistrez le fichier dans le dossier dans lequel vous avez enregistré le fichier CSV à l’étape 1.
     
-    ```
+    ```powershell
     # Get login credentials 
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -82,15 +84,15 @@ L’étape suivante consiste à vous connecter au centre de sécurité & de conf
 
 2. Sur votre ordinateur local, ouvrez Windows PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script ; par exemple :
     
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-  
+
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Étape 3 : exécuter le script pour créer et démarrer les recherches
 
 Le script de cette étape crée une recherche de contenu distincte pour chaque ligne dans le fichier CSV que vous avez créé à l’étape 1. Lorsque vous exécutez ce script, vous êtes invité à indiquer deux valeurs :
   
-- **ID de groupe de recherche** : ce nom permet d’organiser facilement les recherches créées à partir du fichier CSV. Chaque recherche créée est nommée avec l’ID de groupe de recherche, puis un numéro est ajouté au nom de la recherche. Par exemple, si vous entrez **ContosoCase** pour l’ID de groupe de recherche, les recherches sont nommées **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**, etc. Notez que le nom que vous tapez est sensible à la casse. Lorsque vous utilisez l’ID de groupe de recherche à l’étape 4 et à l’étape 5, vous devez utiliser la même casse que celle que vous avez utilisée lors de sa création. 
+- **ID de groupe de recherche** : ce nom permet d’organiser facilement les recherches créées à partir du fichier CSV. Chaque recherche créée est nommée avec l’ID de groupe de recherche, puis un numéro est ajouté au nom de la recherche. Par exemple, si vous entrez **ContosoCase** pour l’ID de groupe de recherche, les recherches sont nommées **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**, et ainsi de suite. Notez que le nom que vous tapez est sensible à la casse. Lorsque vous utilisez l’ID de groupe de recherche à l’étape 4 et à l’étape 5, vous devez utiliser la même casse que celle que vous avez utilisée lors de sa création. 
     
 - **Fichier CSV** : nom du fichier CSV que vous avez créé à l’étape 1. Veillez à inclure le nom de fichier complet, en incluant l’extension de fichier. csv ; par exemple, `ContosoCase.csv`.
     

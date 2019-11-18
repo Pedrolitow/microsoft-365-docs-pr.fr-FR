@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Pour les rapports de conformité réglementaire en ligne pour Office 365, Azure et Dynamics 365 Online, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, NIST, FINRA, RGPD et FedRAMP lorsque vous utilisez ces services en ligne.
-ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 22968c23b1d521b8fd48e9eccd4679e0a6dd2ed2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078484"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685915"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d’approbation de service Microsoft
 
@@ -76,7 +76,7 @@ Fournit les ressources et les outils de conformité suivants :
 
   Les informations relatives aux rapports d’audit et un lien vers la page **rapports d’audit** s’affichent également sur la page d’accueil du portail de confiance de service. 
   
-- **Gestionnaire de conformité** -le gestionnaire de conformité est un outil d’évaluation de risque basé sur un flux de travail qui vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire de votre organisation liées aux services Cloud de Microsoft, comme Office 365, Dynamics 365 et Bleu. Utilisez le gestionnaire de conformité pour gérer la conformité réglementaire dans le modèle de responsabilité partagé du Cloud. Pour plus d’informations, consultez [la rubrique utiliser le gestionnaire de conformité pour répondre aux exigences réglementaires et de protection des données lors de l’utilisation des services Cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
+- **Gestionnaire de conformité** -le gestionnaire de conformité est un outil d’évaluation de risque basé sur un flux de travail qui vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire de votre organisation liées aux services Cloud de Microsoft, comme Office 365, Dynamics 365 et Azure. Utilisez le gestionnaire de conformité pour gérer la conformité réglementaire dans le modèle de responsabilité partagé du Cloud. Pour plus d’informations, consultez [la rubrique utiliser le gestionnaire de conformité pour répondre aux exigences réglementaires et de protection des données lors de l’utilisation des services Cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
 
 ### <a name="industries--regions"></a>Régions & industries
 
@@ -86,7 +86,7 @@ Fournit des informations de conformité spécifiques de l’industrie et de la r
 
     - Éducation
     - Services financiers
-    - Institutions
+    - Administration
     - Intégrité
     - Fabrication
     - Détail
@@ -169,4 +169,4 @@ Nous pouvons vous aider à répondre à des questions sur le portail d’approba
   
 Vos commentaires sont très importants pour nous. Cliquez sur le bouton commentaires au bas de la page pour nous envoyer des commentaires sur ce que vous avez fait ou n’aimez pas, ou des suggestions dont vous pouvez avoir besoin pour améliorer nos produits ou nos fonctionnalités de produit.
   
-![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![Quel type de commentaires avez-vous](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

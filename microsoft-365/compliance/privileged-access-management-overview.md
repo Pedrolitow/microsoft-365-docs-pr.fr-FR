@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la gestion des accès privilégiés dans Office 365
-ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9bc2aab9c9758daf35aa14a41d7997a0bff5764f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080032"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685793"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gestion des accès privilégiés dans Office 365
 
@@ -94,4 +94,4 @@ Commencez [la configuration de votre organisation pour la gestion des accès pri
 
 ## <a name="learn-more"></a>En savoir plus
 
-[Guide interactif : surveiller et contrôler les tâches de l’administrateur à l’aide de la gestion des accès privilégiés](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)
+[Guide interactif : surveiller et contrôler les tâches de l’administrateur à l’aide de la gestion des accès privilégiés](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

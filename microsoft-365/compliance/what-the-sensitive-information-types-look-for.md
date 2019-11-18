@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d’Office 365 inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 820bab0a128f952cf5d96208f5d561f4994bd859
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9c3111069ff30784af5fe781200de5e770c79066
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079840"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38685995"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
@@ -211,12 +211,12 @@ Neuf lettres et chiffres :
 - Deux chiffres 
 - Cinq chiffres ou lettres (ne respectent pas la casse)
 
-OR
+OU
 
 - 1 ou 2 lettres facultatives (ne respectant pas la casse)  
 - 4 à 9 chiffres
 
-OR
+OU
 
 - Neuf chiffres ou lettres (ne respectant pas la casse)
 
@@ -1440,7 +1440,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_ [province_name] _drivers_license_name
 
 - L’abréviation de la province, par exemple AB
 - Le nom de la province, par exemple Alberta
@@ -1708,7 +1708,7 @@ Non
 ### <a name="definition"></a>Définition
 
 Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : l’expression régulière Regex_canada_phin trouve le contenu qui correspond au modèle.
-Au moins deux mots clés de Keyword_canada_phin ou Keyword_canada_provinces sont trouvés..
+Au moins deux mots clés provenant d’Keyword_canada_phin ou de Keyword_canada_provinces sont trouvés..
 
 ```xml
 <!-- Canada PHIN -->
@@ -2304,7 +2304,7 @@ Neuf chiffres avec une barre oblique inverse facultative (ancien format) 10 chif
 Neuf chiffres (ancien format) :
 - Neuf chiffres
 
-OR
+OU
 
 - Six chiffres qui représentent la date de naissance
 - Une barre oblique 
@@ -2313,7 +2313,7 @@ OR
 10 chiffres (nouveau format) :
 - 10 chiffres
 
-OR
+OU
 
 - Six chiffres qui représentent la date de naissance
 - Une barre oblique  
@@ -2325,7 +2325,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 85% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_czech_id_card trouve un contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 85% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_czech_id_card trouve le contenu qui correspond au modèle.
 Un mot clé figurant dans la liste Keyword_czech_id_card est trouvé.
 La somme de contrôle est correcte.
 
@@ -3522,10 +3522,10 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 85% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 85% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_india_aadhaar trouve le contenu qui correspond au modèle.
 Un mot clé figurant dans la liste Keyword_india_aadhar est trouvé.
 La somme de contrôle est correcte.
-Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_india_aadhaar trouve le contenu qui correspond au modèle.
 La somme de contrôle est correcte.
 ```xml
 <!-- India Unique Identification (Aadhaar) number -->
@@ -4615,7 +4615,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_polish_national_id trouve un contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_polish_national_id trouve le contenu qui correspond au modèle.
 Un mot clé figurant dans la liste Keyword_polish_national_id_passport_number est trouvé.
 La somme de contrôle est correcte.
 
@@ -5501,7 +5501,7 @@ Combinaison de 18 lettres et chiffres au format spécifié
 18 lettres et chiffres
 - Cinq lettres (ne respectent pas la casse) ou le chiffre « 9 » à la place d’une lettre 
 - Un chiffre 
-- Cinq chiffres au format de date JJMMA pour la date de naissance 
+- Cinq chiffres au format de date MMDDY pour la date de naissance (7 caractères sont incrémentés de 50 si le pilote est femelle, c’est-à-dire 51 vers 62 au lieu de 01 à 12)
 - Deux lettres (ne respectent pas la casse) ou le chiffre « 9 » à la place d’une lettre 
 - Cinq chiffres
 
@@ -5669,7 +5669,7 @@ Deux modèles possibles :
 - Six chiffres
 - « A », « B », « C » ou « d » (comme le préfixe, seuls certains caractères sont autorisés dans le suffixe ; ne respectent pas la casse)
 
-OR
+OU
 
 - Deux lettres
 - Un espace ou un tiret
@@ -5989,7 +5989,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - #cartes d’identification 
 
 
-#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
 
 - Abréviation de l’État (par exemple, « NY ») 
 - Nom de l’État (par exemple, « New York »)    

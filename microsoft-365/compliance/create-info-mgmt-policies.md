@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: Les stratégies de gestion des informations permettent à votre organisation de contrôler la durée de conservation du contenu, d’auditer les opérations effectuées par les utilisateurs et d’ajouter des codes-barres ou des étiquettes aux documents. Une stratégie peut contribuer à renforcer la conformité aux réglementations juridiques et gouvernementales ou aux processus d’entreprise internes. En tant qu’administrateur, vous pouvez configurer une stratégie pour contrôler le suivi des documents et la durée de conservation des documents.
-ms.openlocfilehash: 85113393f534a6b17f75962d02518a5a8c65dd8b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d8572f570db7b0223bc2f08cd78875224897e02c
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078685"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685870"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Créer et appliquer des stratégies de gestion des informations
 
@@ -90,7 +91,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
     
 ||||||**1.**|* * Sélectionnez * * Ajouter une étape de rétention pour les enregistrements... * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Sélectionnez une option de période de rétention pour spécifier quand des documents ou des éléments sont configurés pour expirer. Effectuez l’une des opérations suivantes :  <br/>  Pour définir la date d’expiration sur la base d’une propriété de date, sous **événement** \> **cette étape est basée sur une propriété de date sur l’élément**, puis sélectionnez l’action de document ou d’élément (par exemple, créé ou modifié) et l’incrément du temps après cette action ( par exemple, le nombre de jours, de mois ou d’années, lorsque vous souhaitez que l’élément expire.  <br/>  Pour utiliser une formule de rétention personnalisée afin de déterminer l’expiration, choisissez **définir par une formule de rétention personnalisée installée sur ce serveur**.  <br/> > [!NOTE]> cette option n’est disponible que si une formule personnalisée a été configurée par votre administrateur.           |
+||||||2.  <br/> | Sélectionnez une option de période de rétention pour spécifier quand des documents ou des éléments sont configurés pour expirer. Effectuez l’une des opérations suivantes :  <br/>  Pour définir la date d’expiration sur la base d’une propriété de date, sous **événement** \> **cette étape est basée sur une propriété de date sur l’élément**, puis sélectionnez l’action de document ou d’élément (par exemple, créé ou modifié) et l’incrément du temps après cette action (par exemple, le nombre de jours, de mois ou d’années) lorsque vous souhaitez que l’élément expire.  <br/>  Pour utiliser une formule de rétention personnalisée afin de déterminer l’expiration, choisissez **définir par une formule de rétention personnalisée installée sur ce serveur**.  <br/> > [!NOTE]> cette option n’est disponible que si une formule personnalisée a été configurée par votre administrateur.           |
 ||||||3.  <br/> |L’option **Démarrer un flux de travail** est disponible uniquement si vous définissez une stratégie pour une liste, une bibliothèque ou un type de contenu auquel un flux de travail est déjà associé. Vous aurez alors un choix de flux de travail parmi lesquels choisir.  <br/> |
 ||||||4.  <br/> |Dans la section **périodicité** , sélectionnez **répéter l’action de cette étape...** et entrez la fréquence à laquelle vous souhaitez que l’action se produise.  <br/> > [!NOTE]> cette option n’est disponible que si l’action que vous avez sélectionnée peut être répétée. Par exemple, vous ne pouvez pas définir la récurrence de l’action **Supprimer définitivement**.           |
 ||||||5.  <br/> |Choisissez **OK**.  <br/> |
@@ -101,8 +102,8 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
     
 ||||||1. * * * *|Sur la page modifier la stratégie, * * **sous** **Auditing** **\>** **activer l’audit** * *, puis activez les cases à cocher en regard des événements pour lesquels vous souhaitez conserver une trace d’audit. * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||**2.** <br/> |**Pour inviter les utilisateurs à insérer ces codes-barres dans des documents,** **Sélectionnez** **Inviter les utilisateurs à insérer un code-barres avant l’enregistrement ou l’impression** **.** <br/> |
-||||||**3.** <br/> |**Sélectionnez** **OK** * * pour appliquer la fonctionnalité d’audit à la stratégie. ** <br/> |
+||||||**2.** <br/> |**Pour inviter les utilisateurs à insérer ces codes-barres dans les documents,** **Choisissez** **inviter les utilisateurs à insérer un code-barres avant l’enregistrement ou l’impression** **.** <br/> |
+||||||**3.** <br/> |**Choisissez** **OK** * * pour appliquer la fonctionnalité d’audit à la stratégie. ** <br/> |
 |||||||La fonctionnalité de stratégie d’audit permet aux organisations de créer et d’analyser des suivis d’audit pour des documents et de répertorier des éléments tels que des listes de tâches, des listes de problèmes, des groupes de discussion et des calendriers. Cette fonctionnalité de stratégie fournit un journal d’audit qui enregistre les événements, par exemple lors de l’affichage, de la modification ou de la suppression du contenu.  <br/> |
 |||||||Lorsque l’audit est activé dans le cadre d’une stratégie de gestion des informations, les administrateurs peuvent afficher les données d’audit dans des rapports d’utilisation des stratégies basés dans Microsoft Excel et qui résument l’utilisation actuelle. Les administrateurs peuvent se servir de ces rapports pour déterminer comment l'information est utilisée dans l'organisation. Ces rapports peuvent également aider les organisations à vérifier et à documenter leur conformité réglementaire ou à étudier les préoccupations potentielles.  <br/> |
 |||||||Le journal d’audit enregistre les informations suivantes : nom de l’événement, date et heure de l’événement et nom du système de l’utilisateur qui a effectué l’action.  <br/> |
@@ -172,7 +173,7 @@ Si le **type de contenu** apparaît en tant que source, cliquez sur modifier la 
     
 7. Dans la boîte de dialogue Propriétés de la scène, sélectionnez une option de période de rétention pour spécifier la date d’expiration des documents ou des éléments. Effectuez l’une des opérations suivantes :
     
-  - Pour définir la date d’expiration sur la base d’une propriété de date, sous **événement** \> **cette étape est basée sur une propriété de date sur l’élément**, puis sélectionnez l’action de document ou d’élément (par exemple, créé ou modifié) et l’incrément du temps après cette action ( par exemple, le nombre de jours, de mois ou d’années, lorsque vous souhaitez que l’élément expire. 
+  - Pour définir la date d’expiration sur la base d’une propriété de date, sous **événement** \> **cette étape est basée sur une propriété de date sur l’élément**, puis sélectionnez l’action de document ou d’élément (par exemple, créé ou modifié) et l’incrément du temps après cette action (par exemple, le nombre de jours, de mois ou d’années) lorsque vous souhaitez que l’élément expire. 
     
   - Pour utiliser une formule de rétention personnalisée afin de déterminer l’expiration, choisissez **définir par une formule de rétention personnalisée installée sur ce serveur**. 
     

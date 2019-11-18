@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: Découvrez comment utiliser le chargement réseau pour importer des fichiers PST chiffrés RMS dans des boîtes aux lettres utilisateur dans Office 365.
-ms.openlocfilehash: e14c5a7260bc8b2092075dd2ab711f4da2d3b9c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c31658ead08fd1c72447f1182af28c32db421842
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080487"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685981"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>Utiliser le chargement réseau pour importer des fichiers PST chiffrés via RMS dans Office 365
 
@@ -110,7 +110,7 @@ Une fois que vous avez activé le service gestion des droits, l’étape suivant
     
 2. Exécutez la commande suivante pour définir l’URL de partage de la clé RMS.
     
-    ```
+    ```powershell
     Set-IRMConfiguration -RMSOnlineKeySharingLocation <RMS key sharing location>
     ```
 
@@ -120,7 +120,7 @@ Une fois que vous avez activé le service gestion des droits, l’étape suivant
     |:-----|:-----|
     |Amérique du Nord  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |Union européenne  <br/> | `https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
-    |Région  <br/> | `https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
+    |Asie  <br/> | `https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |Amérique du Sud  <br/> | `https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |Office 365 Secteur Public (nuage communautaire propre aux gouvernements)  <br/> | `https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc`<sup>0,1</sup> <br/> |
    
@@ -129,13 +129,13 @@ Une fois que vous avez activé le service gestion des droits, l’étape suivant
   
     Par exemple, cette commande configure l’emplacement de partage de la clé RMS Online dans Exchange Online pour un client situé en Amérique du Nord.
     
-    ```
+    ```powershell
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
 3. Exécutez la commande suivante pour importer un domaine de publication approuvé (publication approuvé) à partir de RMS Online vers votre organisation Office 365. 
     
-    ```
+    ```powershell
     Import-RMSTrustedPublishingDomain -RMSOnline -Name "RMS Online"
     ```
 
@@ -143,7 +143,7 @@ Une fois que vous avez activé le service gestion des droits, l’étape suivant
     
 4. Exécutez la commande suivante pour activer la gestion des droits relatifs à l’information pour votre organisation Office 365.
     
-    ```
+    ```powershell
     Set-IRMConfiguration -InternalLicensingEnabled $true
     ```
 
@@ -151,7 +151,7 @@ Une fois que vous avez activé le service gestion des droits, l’étape suivant
 
 Enfin, vous devez télécharger le client RMS (Rights Management Services) 2.1. Ce logiciel permet de protéger l’accès à Azure RMS et de protéger les informations transitant par des applications qui utilisent Azure RMS. Installez le client RMS sur le même ordinateur que celui que vous utiliserez pour chiffrer et télécharger les fichiers PST à l’étape 5. 
   
-1. Télécharger le [client du service gestion des droits 2,1](https://www.microsoft.com/en-us/download/details.aspx?id=38396).
+1. Télécharger le [client du service gestion des droits 2,1](https://www.microsoft.com/download/details.aspx?id=38396).
     
 2. Exécutez l’Assistant du client Active Directory Rights Management Service 2.1 pour installer le client.
 
@@ -163,7 +163,7 @@ Une fois que vous avez configuré Azure RMS, l’étape suivante consiste à gé
     
 2. Exécutez la commande suivante pour vous connecter au service Microsoft Online.
     
-    ```
+    ```powershell
     Connect-MsolService
     ```
 
@@ -171,7 +171,7 @@ Une fois que vous avez configuré Azure RMS, l’étape suivante consiste à gé
     
 4. Exécutez la commande suivante pour générer une clé de chiffrement (appelée clé symétrique). Pour cela, vous devez créer un principal de chiffrement PST.
     
-    ```
+    ```powershell
     New-MsolServicePrincipal -DisplayName PstEncryptionPrincipal
     ```
 
@@ -192,7 +192,7 @@ L’étape suivante consiste à obtenir l’URL de l’ID de client et de l’em
   
 1. Dans le module Azure Active Directory pour Windows PowerShell (qui est connecté au service Microsoft Online), exécutez la commande suivante pour vous connecter au service Azure RMS dans votre organisation Office 365.
     
-    ```
+    ```powershell
     Connect-AadrmService 
     ```
 
@@ -200,7 +200,7 @@ L’étape suivante consiste à obtenir l’URL de l’ID de client et de l’em
     
 3. Exécutez la commande suivante pour afficher l’ID de client pour le service Azure RMS dans votre organisation Office 365.
     
-    ```
+    ```powershell
     Get-AadrmConfiguration | FL BPOSId
     ```
 
@@ -208,7 +208,7 @@ L’étape suivante consiste à obtenir l’URL de l’ID de client et de l’em
     
 4. Exécutez la commande suivante pour afficher l’emplacement de gestion des licences pour votre service Azure RMS.
     
-    ```
+    ```powershell
     Get-AadrmConfiguration | FL LicensingIntranetDistributionPointUrl
     ```
 
@@ -260,7 +260,7 @@ Une fois que vous avez terminé les étapes 1 à 4, vous êtes prêt à utiliser
     
 3. Exécutez la commande suivante pour chiffrer et télécharger des fichiers PST dans Office 365.
     
-    ```
+    ```powershell
     O365ImportTool.exe /srcdir:<Location of PST files> /protect-rmsserver:<RMS licensing location> /protect-tenantid:<BPOSId> /protect-key:<Symmetric key> /transfer:upload /upload-dest:<Network upload URL> /upload-destSAS:<SAS key>
     ```
 
@@ -273,13 +273,13 @@ Une fois que vous avez terminé les étapes 1 à 4, vous êtes prêt à utiliser
     | `/protect-tenantid:` <br/> |Spécifie l’identité de votre organisation Azure RMS. Utilisez la valeur de la `BPOSId` propriété que vous avez obtenue à l’étape 3.  <br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
     | `/protect-key:` <br/> |Indique la clé symétrique obtenue à l’étape 2. N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
     | `/transfer:` <br/> |Indique si vous téléchargez des fichiers PST sur le réseau ou les expédiez sur un disque dur. La valeur `upload` indique que vous téléchargez les fichiers sur le réseau. La valeur `drive` indique que vous expédiez les fichiers PST sur un disque dur.  <br/> | `/transfer:upload` <br/> |
-    | `/upload-dest:` <br/> |Spécifie la destination dans Office 365 où vos fichiers PST seront téléchargés ; Il s’agit de l’emplacement de stockage Azure pour votre organisation. La valeur de ce paramètre est constituée de l’URL de chargement réseau à partir de l’URL SAS que vous avez copiée à l’étape 4. N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/><br/> **Conseil :** Module Vous pouvez spécifier un sous-dossier dans l’emplacement de stockage Azure dans lequel télécharger les fichiers PST chiffrés. Pour ce faire, vous devez ajouter un emplacement de sous-dossier (après « ingestiondata ») dans l’URL de chargement réseau. Le premier exemple ne spécifie pas un sous-dossier ; Cela signifie que les fichiers PST seront téléchargés vers la racine (nommé *ingestiondata* ) de l’emplacement de stockage Azure. Le deuxième exemple télécharge les fichiers PST dans un sous-dossier (nommé *EncryptedPSTs* ) dans l’emplacement de stockage Azure.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> Ou  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
+    | `/upload-dest:` <br/> |Spécifie la destination dans Office 365 où vos fichiers PST seront téléchargés ; Il s’agit de l’emplacement de stockage Azure pour votre organisation. La valeur de ce paramètre est constituée de l’URL de chargement réseau à partir de l’URL SAS que vous avez copiée à l’étape 4. N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/><br/> **Conseil :** (facultatif) vous pouvez spécifier un sous-dossier dans l’emplacement de stockage Azure dans lequel télécharger les fichiers PST chiffrés. Pour ce faire, vous devez ajouter un emplacement de sous-dossier (après « ingestiondata ») dans l’URL de chargement réseau. Le premier exemple ne spécifie pas un sous-dossier ; Cela signifie que les fichiers PST seront téléchargés vers la racine (nommé *ingestiondata* ) de l’emplacement de stockage Azure. Le deuxième exemple télécharge les fichiers PST dans un sous-dossier (nommé *EncryptedPSTs* ) dans l’emplacement de stockage Azure.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> Ou  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
     | `/upload-destSAS:` <br/> |Spécifie la clé SAS de votre organisation. La valeur de ce paramètre est constituée de la clé SAS de l’URL SAS que vous avez copiée à l’étape 4. Notez que le premier caractère de la clé SAS est un point d’interrogation («  ? »). N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/recurse` <br/> |Ce commutateur facultatif spécifie le mode récursif de sorte que l’outil O365ImportTool. exe copie les fichiers PST situés dans des sous-dossiers du répertoire source spécifié par le `/srcdir:` paramètre.  <br/><br/> **Remarque :** Si vous incluez ce commutateur, les fichiers PST dans les sous-dossiers auront un nom de chemin d’accès de fichier différent dans l’emplacement de stockage Azure après leur téléchargement. Vous devrez spécifier le chemin d’accès exact du fichier CSV créé à l’étape 7.           | `/recurse` <br/> |
    
     Voici un exemple de la syntaxe de l’outil O365ImportTool.exe qui reprend les valeurs réelles de chaque paramètre :
     
-    ```
+    ```powershell
     O365ImportTool.exe /srcdir:\\FILESERVER01\PSTs /protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing" /protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b  /protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=" /transfer:upload /upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata" /upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"
     ```
 
@@ -339,7 +339,7 @@ Une fois que les fichiers PST ont été chiffrés et téléchargés dans l’emp
     
 2. Ouvrez ou enregistrez le fichier CSV sur votre ordinateur local. L’exemple suivant montre le contenu d’un fichier de mappage d’importation PST (ouvert dans le Bloc-notes). Utilisez plutôt Microsoft Excel pour modifier le fichier CSV.
     
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst.pfile,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst.pfile,annb@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
@@ -434,7 +434,7 @@ La dernière étape consiste à créer le travail d’importation PST dans le se
     
 - Voici un exemple des clés, des ID et des URL obtenus aux étapes 2, 3 et 4. Cet exemple contient également la syntaxe de la commande exécutée dans l’outil O365ImportTool. exe pour chiffrer et télécharger des fichiers PST dans Office 365. Veillez à prendre toutes les précautions nécessaires pour protéger ces clés, tout comme vous le feriez avec vos mots de passe ou d’autres informations de sécurité.
     
-  ```
+  ```text
   Symmetric key: l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=
 
   BPOSId: 42745b33-2a5c-4726-8a2a-ca43caa0f74b

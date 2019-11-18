@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 614397a81fd898975e5163c669fb8693fcdfe77c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c7bc6043722059b04d7fb99663a7dfb8815de697
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079275"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685773"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Erreur de correction lors du traitement des données pour une enquête
 
@@ -54,7 +54,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
     >Nous vous recommandons d’utiliser un chemin d’accès local au lieu d’un chemin d’accès réseau distant pour des performances optimales.
 
     > [!NOTE]
-    > Si vous n’avez pas installé AzCopy, vous pouvez l’installer à partir de cet emplacement :https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > Si vous n’avez pas installé AzCopy, vous pouvez l’installer à partir de cet emplacement :https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
 
 6. Copiez la commande prédéfinie en cliquant sur **copier dans le presse-papiers**. Démarrez une invite de commandes Windows, collez la commande, puis appuyez sur **entrée**.  
 

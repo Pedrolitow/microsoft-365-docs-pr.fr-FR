@@ -7,15 +7,17 @@ ms.date: 10/12/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Utilisez le centre de sécurité & conformité pour créer des conservations eDiscovery et pour accéder à des cas eDiscovery dans votre organisation et les gérer.
-ms.openlocfilehash: 026bd31145dc73261012a9cde1b6befd19ddba4d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a2c276b80f5f713ad8c044aa8f1339413bb3f0bd
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079419"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685913"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 
@@ -104,7 +106,7 @@ L’étape suivante consiste à créer un cas de découverte électronique. Vous
     
     ![Page nouveau cas](media/538f66b8-eb6e-4c4c-83d8-7154fd85883a.png)
   
-    Le nouvel incident est affiché dans la liste des incidents de la page de **découverte électronique** . Notez que vous pouvez placer le curseur sur un nom de cas pour afficher des informations sur le cas, notamment l’état de la demande de devis ( **actif** ou **fermé**), la description de la demande de devis (créée à l’étape précédente), ainsi que le moment où le cas a été modifié en dernier et qui l’a modifié.
+    Le nouvel incident est affiché dans la liste des incidents de la page de **découverte électronique** . Notez que vous pouvez pointer le curseur sur un nom de cas pour afficher des informations sur le cas, notamment l’état de la case ( **actif** ou **fermé**), la description de l’incident (créée à l’étape précédente), ainsi que la date et l’auteur de la dernière modification du cas.
     
     > [!TIP]
     > Une fois que vous avez créé un nouveau cas, vous pouvez le renommer à tout moment. Il vous suffit de cliquer sur le nom de la demande de devis dans la page **eDiscovery** . Sur la page de menu déroulante **gérer ce cas** , modifiez le nom affiché dans la zone sous **nom**, puis enregistrez la modification. 
@@ -258,17 +260,17 @@ Une fois le cas de découverte électronique créé et les dépositaires associ�
     
 8. Sur la page **Nouvelle recherche**, vous pouvez ajouter des mots clés et des conditions pour créer la requête de recherche. <br/>![Critères et conditions de recherche](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-9. Dans la zone sous **Que voulez-vous que nous recherchions ?**, entrez une requête de recherche dans la zone. Vous pouvez spécifier des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**, **not**, **near**ou **ONEAR**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents ou Rechercher des documents qui ont été partagés en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de la recherche. 
+9. Dans la zone sous **Que voulez-vous que nous recherchions ?**, entrez une requête de recherche dans la zone. Vous pouvez spécifier des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**, **not**, **near**ou **ONEAR**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de la recherche. 
     
 10. Vous pouvez cliquer sur la case à cocher **afficher la liste de mots clés** et entrer un mot clé dans chaque ligne. Dans ce cas, les mots clés de chaque ligne sont connectés par l’opérateur **or** dans la requête de recherche qui est créée. 
     
     ![Mots clés de recherche](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
   
-    Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé. Cela peut vous aider à identifier rapidement les mots clés les plus efficaces (et les moins). Vous pouvez également utiliser une phrase de mots clés (entourée de parenthèses) dans une ligne. Pour plus d’informations sur les statistiques de recherche, voir [afficher les statistiques sur les mots clés pour les résultats de la recherche de contenu](view-keyword-statistics-for-content-search.md).
+    Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé. Cela peut vous aider à identifier rapidement les mots clés les plus importants (et les moins). Vous pouvez également utiliser une expression de mot clé (entre parenthèses) dans une ligne. Pour plus d’informations sur les statistiques de recherche, voir [afficher les statistiques des mots clés pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md).
     
     Pour plus d’informations sur l’utilisation de la liste des mots clés, consultez la rubrique [more information](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo).
     
-11. Cliquez sur **Vérifier la requête pour rechercher les fautes de frappe** afin de vérifier si votre requête comporte des caractères non pris en charge et des opérateurs booléens qui ne peuvent pas être capitalisés. Les caractères non pris en charge sont souvent masqués et provoquent généralement une erreur de recherche ou renvoient des résultats inattendus. Pour plus d’informations sur les caractères non pris en charge qui sont vérifiés, consultez la rubrique [vérifier votre requête de recherche de contenu pour les erreurs](check-your-content-search-query-for-errors.md).
+11. Cliquez sur **Vérifier la requête pour rechercher les fautes de frappe** afin de vérifier si votre requête comporte des caractères non pris en charge et des opérateurs booléens qui ne peuvent pas être capitalisés. En règle générale, les caractères non pris en charge sont masqués et entraînent une erreur ou renvoient des résultats inattendus. Pour plus d’informations sur les caractères non pris en charge qui ont été vérifiés, voir [vérifier la présence d’erreurs dans votre requête de recherche de contenu](check-your-content-search-query-for-errors.md).
     
 12. Sous **conditions**, ajoutez des conditions à une requête de recherche pour affiner une recherche et renvoyer un ensemble plus raffiné de résultats. Chaque condition ajoute une clause à la requête de recherche KQL créée et exécutée lors du démarrage de la recherche. Une condition est logiquement connectée à la requête de mot clé (spécifiée dans la zone du mot clé) par l’opérateur **AND** . Cela signifie que les éléments doivent satisfaire la requête de mot-clé et la condition pour être inclus dans les résultats. C’est ainsi que les conditions contribuent à affiner vos résultats. 
     
@@ -307,7 +309,7 @@ Vous pouvez exporter les résultats d’une [exportation des résultats d’une 
     
     ![Cliquez sur Exporter pour afficher la liste des tâches d’exportation.](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
   
-    Vous devrez peut-être cliquer sur **Actualiser**![l’icône](media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour la liste des travaux d’exportation afin d’afficher le travail d’exportation que vous venez de créer. Notez que les travaux d’exportation portent le même nom que la recherche de contenu correspondante avec **_Export** ajouté à la fin du nom de recherche. 
+    Vous devrez peut-être cliquer sur **Actualiser**![l’icône](media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour la liste des travaux d’exportation afin d’afficher le travail d’exportation que vous venez de créer. Notez que les travaux d’exportation ont le même nom que la recherche de contenu correspondante avec **_Export** ajouté à la fin du nom de recherche. 
     
 6. Cliquez sur le travail d’exportation que vous venez de créer pour afficher les informations d’État dans le volet d’informations. Ces informations incluent le pourcentage d’éléments qui ont été transférés vers une zone de stockage Azure dans le Cloud Microsoft.
     
@@ -533,9 +535,9 @@ Lorsque vous rouvrez un incident, les conservations qui étaient en place lors d
     
   - Pour placer le contenu situé dans les groupes Office 365 et Microsoft teams en conservation, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
     
-  - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe ou d’une équipe microsoft Office 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Office 365 ou une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées pour un groupe Office 365 nommé équipe leadership senior : 
+  - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe ou d’une équipe microsoft Office 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Office 365 ou une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Office365 nommé Senior Leadership Team : 
     
-  ```
+  ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
@@ -545,29 +547,29 @@ Lorsque vous rouvrez un incident, les conservations qui étaient en place lors d
   ```
 
     > [!NOTE]
-    > Pour exécuter la cmdlet **Get-UnifiedGroup** , vous devez disposer du rôle destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles auquel est affecté le rôle destinataires en affichage seul. 
+    > Pour exécuter l'applet de commande **Get-UnifiedGroup**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul. 
   
   - Lors de la recherche dans la boîte aux lettres d’un utilisateur, le groupe Office 365 ou l’équipe Microsoft dont l’utilisateur est membre ne feront pas l’objet d’une recherche. De même, lorsque vous placez un groupe Office 365 ou un blocage d’équipe Microsoft, seule la boîte aux lettres de groupe et le site de groupe sont mis en attente ; les boîtes aux lettres et les sites OneDrive entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement à la suspension. Par conséquent, si vous devez placer un groupe Office 365 ou Microsoft Team en attente pour des raisons juridiques, songez à ajouter les boîtes aux lettres et les sites OneDrive entreprise pour les membres d’équipe et de groupe sur le même blocage.
     
   - Pour obtenir la liste des membres d’un groupe ou d’une équipe Microsoft Office 365, vous pouvez afficher les propriétés sur la page **groupes d’accueil \> ** dans le centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell : 
     
-  ```
-  Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
-  ```
+    ```powershell
+    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
+    ```
 
     > [!NOTE]
-    > Pour exécuter la cmdlet **Get-UnifiedGroupLinks** , vous devez disposer du rôle destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles auquel est affecté le rôle destinataires en affichage seul. 
+    > Pour exécuter l'applet de commande **Get-UnifiedGroupLinks**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul. 
   
-  - Les conversations qui font partie d’un canal Microsoft teams sont stockées dans la boîte aux lettres associée à l’équipe Microsoft. De même, les fichiers que les membres de l’équipe partagent dans un canal sont stockés sur le site SharePoint de l’équipe. Par conséquent, vous devez placer la boîte aux lettres d’équipe Microsoft et le site SharePoint en conservation pour conserver les conversations et les fichiers dans un canal.
+  - Les conversations qui font partie d’un canal Microsoft teams sont stockées dans la boîte aux lettres associée à l’équipe Microsoft. De même, les fichiers partagés par les membres d’une équipe dans un canal sont stockés sur le site SharePoint de l’équipe. Par conséquent, vous devez placer la boîte aux lettres d’équipe Microsoft et le site SharePoint en conservation pour conserver les conversations et les fichiers dans un canal.
     
     En guise d’alternative, les conversations qui font partie de la liste de conversation de Microsoft teams sont stockées dans la boîte aux lettres de l’utilisateur qui participe à la conversation. Et les fichiers qu’un utilisateur partage dans les conversations de conversation sont stockés dans le site OneDrive entreprise de l’utilisateur qui partage le fichier. Par conséquent, vous devez placer les boîtes aux lettres des utilisateurs individuels et les sites OneDrive entreprise en conservation pour conserver les conversations et les fichiers dans la liste des conversations. C’est pourquoi il est recommandé de placer une conservation sur les boîtes aux lettres des membres d’une équipe Microsoft en plus de placer la boîte aux lettres d’équipe (et le site) en conservation.
     
     > [!IMPORTANT]
     > Les utilisateurs qui participent à des conversations faisant partie de la liste des conversations de Microsoft teams doivent disposer d’une boîte aux lettres Exchange Online (en nuage) pour conserver les conversations de conversation lorsque la boîte aux lettres est placée sur une conservation eDiscovery. Cela est dû au fait que les conversations faisant partie de la liste des conversations sont stockées dans les boîtes aux lettres en nuage des participants à la conversation. Si un participant à une conversation ne dispose pas d’une boîte aux lettres Exchange Online, vous ne pourrez pas conserver les conversations de conversation. Par exemple, dans un déploiement hybride Exchange, les utilisateurs disposant d’une boîte aux lettres locale peuvent participer à des conversations qui font partie de la liste des conversations de Microsoft Teams. Toutefois, dans ce cas, le contenu de cette conversation ne peut pas être conservé car les utilisateurs n’ont pas de boîtes aux lettres en nuage. 
   
-  - Chaque canal d’équipe ou d’équipe Microsoft contient un wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format. mht. Ce fichier est stocké dans la bibliothèque de documents de données wiki teams sur le site SharePoint de l’équipe. Vous pouvez placer le contenu du wiki en conservation en mettant le site SharePoint de l’équipe en conservation.
+  - Chaque canal d’équipe ou d’équipe Microsoft contient un wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez placer le contenu du wiki en conservation en mettant le site SharePoint de l’équipe en conservation.
     
     > [!NOTE]
     > La capacité à conserver du contenu wiki pour une équipe Microsoft ou un canal d’équipe (lorsque vous placez le blocage du site SharePoint de l’équipe) a été publiée le 22 juin 2017. Si un site d’équipe est en conservation, le contenu wiki est conservé à partir de cette date. Toutefois, si un site d’équipe est en conservation et que le contenu wiki a été supprimé avant le 22 juin 2017, le contenu wiki n’a pas été conservé. 
   
-- **Comment puis-je trouver l’URL des sites OneDrive entreprise ?** Pour collecter une liste des URL pour les sites OneDrive entreprise de votre organisation afin de pouvoir les ajouter à une suspension ou une recherche associée à un cas eDiscovery, consultez la rubrique [créer une liste de tous les emplacements OneDrive de votre organisation](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Ce script dans cet article crée un fichier texte qui contient une liste de tous les sites OneDrive. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. Veillez à ajouter l’URL du domaine mon site de votre organisation à chaque site OneDrive que vous souhaitez rechercher. Il s’agit du domaine qui contient tous vos OneDrive ; par exemple, `https://contoso-my.sharepoint.com`. Voici un exemple d’URL pour le site OneDrive d’un utilisateur : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+- **Comment puis-je trouver l’URL des sites OneDrive entreprise ?** Pour collecter une liste des URL pour les sites OneDrive entreprise de votre organisation afin de pouvoir les ajouter à une suspension ou une recherche associée à un cas eDiscovery, consultez la rubrique [créer une liste de tous les emplacements OneDrive de votre organisation](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Ce script dans cet article crée un fichier texte qui contient une liste de tous les sites OneDrive. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.

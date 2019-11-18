@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Pour les administrateurs : supprimez les éléments du dossier éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s’agit d’un moyen efficace de supprimer des données accidentellement propagées dans Office 365.'
-ms.openlocfilehash: 9da469af900c2610762338029aa80d31c7f10363
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1954ac4db8b978b0b1c3cdc8cee080cc0f0e6c22
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070733"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685939"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en attente-aide de l’administrateur
 
@@ -71,7 +71,7 @@ En outre, vous devez obtenir les paramètres d’accès au client de boîte aux 
     
 2. Exécutez la commande suivante pour obtenir des informations sur la récupération d’élément unique et la période de rétention des éléments supprimés.
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL SingleItemRecoveryEnabled,RetainDeletedItemsFor
     ```
 
@@ -79,7 +79,7 @@ En outre, vous devez obtenir les paramètres d’accès au client de boîte aux 
     
 3. Exécutez la commande suivante pour obtenir les paramètres d’accès aux boîtes aux lettres de la boîte aux lettres. 
     
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
@@ -87,7 +87,7 @@ En outre, vous devez obtenir les paramètres d’accès au client de boîte aux 
     
 4. Exécutez la commande suivante pour obtenir des informations sur les conservations et les stratégies de rétention Office 365 appliquées à la boîte aux lettres.
     
-    ```
+    ```powershell
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
@@ -97,9 +97,10 @@ En outre, vous devez obtenir les paramètres d’accès au client de boîte aux 
   
 5. Exécutez la commande suivante pour obtenir des informations sur les stratégies de rétention Office 365 à l’échelle de l’organisation. 
 
-    ```
+    ```powershell
     Get-OrganizationConfig | FL InPlaceHolds
     ```
+   
    Si votre organisation possède des stratégies de rétention Office 365 à l’échelle de l’organisation, vous devez exclure la boîte aux lettres de ces stratégies à l’étape 3.
 
    > [!TIP]
@@ -107,7 +108,7 @@ En outre, vous devez obtenir les paramètres d’accès au client de boîte aux 
   
 6. Exécutez la commande suivante pour obtenir la taille actuelle et le nombre total d’éléments dans les dossiers et sous-dossiers du dossier éléments récupérables dans la boîte aux lettres principale de l’utilisateur. 
 
-    ```
+    ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
@@ -138,19 +139,19 @@ Effectuez les étapes suivantes dans Exchange Online PowerShell.
     ```   
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
-   
+
    > [!NOTE]
     > La désactivation de toutes les méthodes d’accès client à la boîte aux lettres peut prendre jusqu’à 60 minutes. Notez que la désactivation de ces méthodes d’accès ne déconnectera pas le propriétaire de la boîte aux lettres dans laquelle ils sont actuellement connectés. Si le propriétaire n’est pas connecté, il ne pourra pas accéder à sa boîte aux lettres après la désactivation de ces méthodes d’accès. 
   
 2. Exécutez la commande suivante pour augmenter la période de rétention des éléments supprimés le maximum de 30 jours. Cela suppose que le paramètre actuel est inférieur à 30 jours. 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 30
     ```
 
 3. Exécutez la commande suivante pour désactiver la récupération d’élément unique.
     
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
 
@@ -159,7 +160,7 @@ Effectuez les étapes suivantes dans Exchange Online PowerShell.
   
 4. Exécutez la commande suivante pour empêcher l’Assistant dossier géré de traiter la boîte aux lettres. Comme expliqué précédemment, vous pouvez désactiver l’Assistant dossier géré uniquement si une stratégie de rétention Office 365 avec un verrou de conservation n’est pas appliquée à la boîte aux lettres. 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
     ```
 
@@ -174,7 +175,7 @@ La dernière étape avant que vous ne puissiez supprimer des éléments du dossi
   
 Exécutez la commande suivante dans Exchange Online PowerShell pour supprimer une suspension pour litige de la boîte aux lettres.
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
@@ -186,39 +187,39 @@ Set-Mailbox <username> -LitigationHoldEnabled $false
   
 Exécutez la commande suivante dans Exchange Online PowerShell pour identifier la conservation inaltérable qui est placée sur la boîte aux lettres. Utilisez le GUID pour le blocage sur place que vous avez identifié à l’étape 1. 
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
-   
+
 Après avoir identifié le blocage sur place, vous pouvez utiliser le centre d’administration Exchange ou Exchange Online PowerShell pour supprimer la boîte aux lettres de la suspension. Pour plus d'informations, voir [Créer ou supprimer une conservation inaltérable](https://go.microsoft.com/fwlink/?linkid=852668).
   
  ### <a name="office-365-retention-policies-applied-to-specific-mailboxes"></a>Stratégies de rétention Office 365 appliquées à des boîtes aux lettres spécifiques
   
 Exécutez la commande suivante dans [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) pour identifier la stratégie de rétention Office 365 qui est appliquée à la boîte aux lettres. Utilisez le GUID (sans le `mbx` préfixe `skp` ou) pour la stratégie de rétention que vous avez identifiée à l’étape 1. 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
-   
-Après avoir identifié la stratégie de rétention, accédez à la page **rétention** de la **gouvernance** \> des dates dans le centre de sécurité & conformité, modifiez la stratégie de rétention que vous avez identifiée à l’étape précédente et supprimez la boîte aux lettres de la liste des destinataires inclus dans la stratégie de rétention. 
+
+Après avoir identifié la stratégie de rétention, accédez à la page **rétention** de la **gouvernance** \> des dates dans le centre de sécurité & conformité, modifiez la stratégie de rétention que vous avez identifiée à l’étape précédente, puis supprimez la boîte aux lettres de la liste des destinataires inclus dans la stratégie de rétention. 
   
  ### <a name="organization-wide-office-365-retention-policies"></a>Stratégies de rétention Office 365 à l’échelle de l’Organisation
   
 Les stratégies de rétention Office 365 à l’échelle de l’organisation et d’Exchange à l’échelle de l’organisation sont appliquées à chaque boîte aux lettres dans l’organisation. Elles sont appliquées au niveau de l’organisation (et non au niveau de la boîte aux lettres) et sont renvoyées lorsque vous exécutez la cmdlet **Get-OrganizationConfig** à l’étape 1. Exécutez la commande suivante dans [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) pour identifier les stratégies de rétention Office 365 à l’échelle de l’organisation. Utilisez le GUID (sans le `mbx` préfixe) pour les stratégies de rétention à l’échelle de l’organisation que vous avez identifiées à l’étape 1. 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Après avoir identifié les stratégies de rétention Office 365 à l’échelle de l’organisation, accédez à la page **rétention** de la **gouvernance** \> des dates dans le centre de sécurité & conformité, modifiez chaque stratégie de rétention à l’échelle de l’organisation que vous avez identifiée dans le étape précédente, puis ajoutez la boîte aux lettres à la liste des destinataires exclus. Cette opération supprimera la boîte aux lettres de l’utilisateur de la stratégie de rétention. 
+Après avoir identifié les stratégies de rétention Office 365 à l’échelle de l’organisation, accédez à la page **rétention** de la gestion des **dates** \> dans le centre de sécurité & conformité, modifiez chaque stratégie de rétention à l’échelle de l’organisation que vous avez identifiée à l’étape précédente, puis ajoutez la boîte aux lettres à la liste des destinataires exclus. Cette opération supprimera la boîte aux lettres de l’utilisateur de la stratégie de rétention. 
 
-### <a name="office-365-retention-labels"></a>Étiquettes de rétention Office 365
+### <a name="office-365-retention-labels"></a>Étiquettes de rétention Office 365
 
 Chaque fois qu’un utilisateur applique une étiquette configurée pour conserver le contenu ou conserver, puis supprimer le contenu d’un dossier ou d’un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **true**. Dans ce cas, la boîte aux lettres est considérée comme étant en attente, comme si elle était placée en conservation pour litige ou affectée à une stratégie de rétention Office 365.
 
 Pour afficher la valeur de la propriété *ComplianceTagHoldApplied* , exécutez la commande suivante dans Exchange Online PowerShell :
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -230,15 +231,15 @@ Pour plus d’informations sur les étiquettes, consultez la rubrique [vue d’e
   
 Exécutez les commandes suivantes dans [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) pour identifier la conservation associée à un cas eDiscovery qui est appliqué à la boîte aux lettres. Utilisez le GUID (sans le `UniH` préfixe) pour le blocage eDiscovery que vous avez identifié à l’étape 1. Notez que la deuxième commande affiche le nom du cas eDiscovery auquel la conservation est associée ; la troisième commande affiche le nom de la suspension. 
   
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold.Name
 ```
 
@@ -250,7 +251,7 @@ Après la suppression d’un type de conservation d’une boîte aux lettres, la
 
 Avant de pouvoir supprimer des éléments à l’étape 5, vous devez supprimer le délai de conservation de la boîte aux lettres. Tout d’abord, déterminez si la conservation du retard est appliquée à la boîte aux lettres en exécutant la commande suivante dans Exchange Online PowerShell :
 
-```
+```powershell
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
@@ -258,9 +259,10 @@ Si la valeur de la propriété *DelayHoldApplied* est définie sur **false**, au
 
 Si la valeur de la propriété *DelayHoldApplied* est définie sur **true**, exécutez la commande suivante pour supprimer la suspension de délai :
 
-```
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+
 Notez que vous devez disposer du rôle conservation légal dans Exchange Online pour utiliser le paramètre *RemoveDelayHoldApplied* .
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Étape 5 : supprimer des éléments dans le dossier éléments récupérables
@@ -284,7 +286,7 @@ Les exemples suivants illustrent la syntaxe de commande pour chacune de ces opti
 
 Cet exemple copie tous les éléments du dossier éléments récupérables de l’utilisateur dans un dossier de la boîte aux lettres de découverte de votre organisation. Cela vous permet de vérifier les éléments avant de les supprimer définitivement.
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
 ```
 
@@ -294,15 +296,15 @@ Dans l’exemple précédent, il n’est pas nécessaire de copier des élément
 
 Cet exemple copie tous les éléments du dossier éléments récupérables de l’utilisateur dans un dossier de la boîte aux lettres de découverte de votre organisation, puis supprime les éléments du dossier éléments récupérables de l’utilisateur.
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
 ```
- 
+
 ### <a name="example-3"></a>Exemple 3
 
 Cet exemple supprime tous les éléments du dossier éléments récupérables de l’utilisateur, sans les copier dans une boîte aux lettres cible. 
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
 ```
 
@@ -312,38 +314,38 @@ Voici quelques exemples d’utilisation du paramètre *SearchQuery* pour recherc
   
 Cet exemple renvoie les messages qui contiennent une phrase spécifique dans le champ Subject.
   
-```
+```powershell
 SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
 ```
 
 Cet exemple renvoie les messages qui ont été envoyés dans la plage de dates spécifiée.
   
-```
+```powershell
 SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
 ```
- 
+
 Cet exemple renvoie les messages qui ont été envoyés à la personne spécifiée.
 
-```
+```powershell
 SearchQuery 'to:garthf@alpinehouse.com'
 ```
-   
+
 ### <a name="verify-that-items-were-deleted"></a>Vérifier que les éléments ont été supprimés
 
 Pour vérifier que vous avez bien supprimé des éléments du dossier éléments récupérables d’une boîte aux lettres, utilisez la cmdlet **Get-MailboxFolderStatistics** dans Exchange Online PowerShell pour vérifier la taille et le nombre d’éléments dans le dossier éléments récupérables. Vous pouvez comparer ces statistiques avec celles que vous avez collectées à l’étape 1. 
   
 Exécutez la commande suivante dans pour obtenir la taille actuelle et le nombre total d’éléments dans les dossiers et sous-dossiers du dossier éléments récupérables dans la boîte aux lettres principale de l’utilisateur. 
   
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-   
+
 Exécutez la commande suivante pour obtenir la taille et le nombre total d’éléments dans les dossiers et sous-dossiers du dossier éléments récupérables dans la boîte aux lettres d’archivage de l’utilisateur. 
 
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-  
+
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Étape 6 : rétablir l’état précédent de la boîte aux lettres
 
 La dernière étape consiste à rétablir la configuration précédente de la boîte aux lettres. Cela signifie que vous devez réinitialiser les propriétés modifiées à l’étape 2 et appliquer de nouveau les conservations que vous avez supprimées à l’étape 3. Cela inclut les opérations suivantes :
@@ -365,29 +367,29 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
   
 1. Exécutez la commande suivante pour rétablir la valeur d’origine de la période de rétention des éléments supprimés. Cela suppose que le paramètre précédent soit inférieur à 30 jours ; par exemple, 14 jours. 
     
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 14
     ```
-   
+
 2. Exécutez la commande suivante pour réactiver la récupération d’élément unique.
    
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $true
     ```
 
 3. Exécutez la commande suivante pour réactiver toutes les méthodes d’accès client à la boîte aux lettres.
     
-    ```
+    ```powershell
     Set-CASMailbox <username> -EwsEnabled $true -ActiveSyncEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
     ```
-   
+
 4. Réappliquez les suspensions que vous avez supprimées à l’étape 3. Selon le type de blocage, utilisez l’une des procédures suivantes.
     
     **Conservation pour litige**
     
     Exécutez la commande suivante pour réactiver une conservation pour litige pour la boîte aux lettres.
     
-    ```
+    ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
     ```
 
@@ -409,20 +411,20 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
     
 5. Exécutez la commande suivante pour permettre à l’Assistant dossier géré de traiter à nouveau la boîte aux lettres. Comme indiqué précédemment, nous vous recommandons d’attendre 24 heures après avoir appliqué une nouvelle stratégie de rétention ou une stratégie de rétention Office 365 (et de vérifier qu’elle est en place) avant de réactiver l’Assistant dossier géré. 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $false
     ```
-   
+
 6. Pour vérifier que la boîte aux lettres a été restaurée à sa configuration précédente, vous pouvez exécuter les commandes suivantes, puis comparer les paramètres à ceux que vous avez collectés à l’étape 1.
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL ElcProcessingDisabled,InPlaceHolds,LitigationHoldEnabled,RetainDeletedItemsFor,SingleItemRecoveryEnabled
     ```
 
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
-  
+
 ## <a name="more-information"></a>Plus d’informations
 
 Voici un tableau qui décrit comment identifier différents types de suspensions en fonction des valeurs de la propriété *InPlaceHolds* lorsque vous exécutez les cmdlets **Get-Mailbox** ou **Get-OrganizationConfig** . Pour plus d’informations, voir [Comment identifier le type de suspension placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).

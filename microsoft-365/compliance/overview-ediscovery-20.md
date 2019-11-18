@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle version de Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: e63fe05cf9a2e236247da3c45674b53cc830546d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: abeb4e6b9a465e4f1df857187ef709b5dc2c86b5
+ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079799"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "38685679"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Vue d’ensemble de la solution avancée eDiscovery dans Microsoft 365
 
@@ -35,19 +35,19 @@ Le flux de travail intégré de Advanced eDiscovery s’aligne sur le processus 
 
 À un niveau élevé, voici comment Advanced eDiscovery prend en charge le flux de travail EDRM :
 
-- **Identification** : une fois que vous avez identifié les personnes intéressantes pour une enquête, vous pouvez les ajouter en tant que dépositaires (également appelés *dépositaires de données*, car ils peuvent posséder des informations pertinentes pour l’enquête) vers une avancée cas de découverte électronique. Une fois que les utilisateurs sont ajoutés en tant que dépositaires, il est facile de conserver, de collecter et de consulter les documents des dépositaires.
+- **Identificateur.** Une fois que vous avez identifié les personnes intéressantes pour une enquête, vous pouvez les ajouter en tant que dépositaires (également appelés « *dépositaires de données*», car ils peuvent posséder des informations pertinentes pour l’enquête) dans un cas avancé de découverte électronique. Une fois que les utilisateurs sont ajoutés en tant que dépositaires, il est facile de conserver, de collecter et de consulter les documents des dépositaires.
 
-- **Préservation** : pour conserver et protéger les données relatives à une enquête, la fonctionnalité eDiscovery avancée vous permet de placer une suspension légale sur les sources de données associées aux dépositaires dans un cas. Vous pouvez également placer des données non privatives de place en conservation. Advanced eDiscovery comprend également un flux de travail de communication intégré qui vous permet d’envoyer des notifications de conservation légale aux dépositaires et d’effectuer le suivi de leurs remerciements.
+- **Leur.** Pour conserver et protéger les données correspondant à une enquête, la fonctionnalité eDiscovery avancée vous permet de placer une suspension légale sur les sources de données associées aux dépositaires dans un cas. Vous pouvez également placer des données non privatives de place en conservation. Advanced eDiscovery comprend également un flux de travail de communication intégré qui vous permet d’envoyer des notifications de conservation légale aux dépositaires et d’effectuer le suivi de leurs remerciements.
 
-- **Collection** : une fois que vous avez identifié (et préservé) les sources de données pertinentes pour l’enquête, vous pouvez utiliser l’outil de recherche intégré dans Advanced eDiscovery Search for and Collect Live Data from the privatives Data sources (et les sources de données non privatives de cœur). , le cas échéant) susceptibles de concerner le cas.
+- **Collection.** Une fois que vous avez identifié (et préservé) les sources de données pertinentes pour l’enquête, vous pouvez utiliser l’outil de recherche intégré dans Advanced eDiscovery Search for and Collect Live Data from the privatives Data sources (et les sources de données non privatives de cœur, le cas échéant) qui peut être pertinent pour le cas.
 
-- **Traitement** : une fois que vous avez collecté toutes les données pertinentes pour le cas, l’étape suivante consiste à le traiter à des fins de révision et d’analyse. Dans Advanced eDiscovery, les données sur place que vous avez identifiées dans la phase de collecte sont copiées vers un emplacement de stockage Azure (appelé un *ensemble de révision*), ce qui vous fournit une vue statique des données de cas. 
+- **Formation.** Une fois que vous avez collecté toutes les données pertinentes pour le cas, l’étape suivante consiste à le traiter pour révision et analyse. Dans Advanced eDiscovery, les données sur place que vous avez identifiées dans la phase de collecte sont copiées vers un emplacement de stockage Azure (appelé un *ensemble de révision*), ce qui vous fournit une vue statique des données de cas. 
  
-- **Révision** : une fois que des données ont été ajoutées à un jeu de révisions, vous pouvez afficher des documents spécifiques et exécuter une autre requête pour réduire les données à celles qui sont les plus pertinentes pour le cas. Peut également annoter et baliser des documents spécifiques.
+- **Veuillez.** Une fois que les données ont été ajoutées à un jeu de révisions, vous pouvez afficher des documents spécifiques et exécuter une autre requête pour réduire les données qui sont les plus pertinentes pour le cas. Peut également annoter et baliser des documents spécifiques.
  
-- **Analysis** : Advanced eDiscovery fournit un outil d’analyse intégré qui vous aide à approfondir les données de l’ensemble de révision que vous déterminez n’est pas pertinent pour l’enquête. En plus de réduire le volume des données pertinentes, la découverte électronique avancée vous permet également d’enregistrer les coûts de la révision légale en vous permettant d’organiser le contenu pour faciliter et améliorer l’efficacité du processus de révision.
+- **Analys.** Advanced eDiscovery propose un outil d’analyse intégré qui vous permet d’approfondir les données de l’ensemble de révision que vous déterminez n’est pas pertinent pour l’enquête. En plus de réduire le volume des données pertinentes, la découverte électronique avancée vous permet également d’enregistrer les coûts de la révision légale en vous permettant d’organiser le contenu pour faciliter et améliorer l’efficacité du processus de révision.
 
-- **Production** et **Présentation** : lorsque vous êtes prêt, vous pouvez exporter des documents à partir d’un jeu de vérification pour révision légale. Vous pouvez exporter des documents dans leur format d’origine ou dans un format spécifié par EDRM afin qu’ils puissent être importés dans des applications tierces.
+- **Production** et **présentation.** Lorsque vous êtes prêt, vous pouvez exporter des documents à partir d’un jeu de révision pour vérification légale. Vous pouvez exporter des documents dans leur format d’origine ou dans un format spécifié par EDRM afin qu’ils puissent être importés dans des applications tierces.
 
 ## <a name="advanced-ediscovery-workflow"></a>Flux de travail eDiscovery avancé
 
@@ -79,14 +79,16 @@ L’onglet **recherches** permet de créer des recherches pour rechercher des so
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Révision et analyse des données de cas
 
-Utilisez l’onglet **examiner les ensembles** pour examiner et analyser le contenu que vous avez collecté à partir du système réel et ajouté à un jeu de révision. Un *ensemble de révision* est une collection statique de ces données (en d’autres termes, une copie hors connexion) de données privatives de temps (et, le cas échéant, de données non privatives) que vous avez collectées au cours de la phase précédente du flux de travail de découverte électronique. Lorsque vous ajoutez des résultats de recherche à un ensemble de révision, un processus est déclenché qui extrait les fichiers des conteneurs, extrait les métadonnées et extrait le texte. Une fois le processus terminé, le système génère un nouvel index de toutes les données collectées auprès des dépositaires et les ajoute à l’ensemble de révision. Une fois que les données sont ajoutées à l’ensemble de vérification, vous pouvez exécuter davantage de requêtes pour affiner les données de cas, afficher les données au format texte ou au format de fichier natif, et annoter, biffer et baliser les documents dans l’ensemble de révision. Vous pouvez également effectuer des analyses avancées, telles que l’identification de la duplication de documents, le Threading de courrier électronique et les thèmes. Une fois que vous avez consulté les données uniquement sur ce qui est pertinent pour le cas, vous pouvez télécharger les documents directement ou les exporter, ainsi que les métadonnées de fichier, les annotations et les balises. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Utilisez l’onglet **examiner les ensembles** pour examiner et analyser le contenu que vous avez collecté à partir du système réel et ajouté à un jeu de révision. Un *ensemble de révision* est une collection statique de ces données (en d’autres termes, une copie hors connexion) de données privatives de temps (et, le cas échéant, de données non privatives) que vous avez collectées au cours de la phase précédente du flux de travail de découverte électronique. Lorsque vous ajoutez des résultats de recherche à un ensemble de révision, un processus est déclenché qui extrait les fichiers des conteneurs, extrait les métadonnées et extrait le texte. Une fois le processus terminé, le système génère un nouvel index de toutes les données collectées auprès des dépositaires et les ajoute à l’ensemble de révision. Une fois que les données sont ajoutées à l’ensemble de vérification, vous pouvez exécuter davantage de requêtes pour affiner les données de cas, afficher les données au format texte ou au format de fichier natif, et annoter, biffer et baliser les documents dans l’ensemble de révision. Vous pouvez également effectuer des analyses avancées, telles que l’identification de la duplication de documents, le Threading de courrier électronique et les thèmes. Une fois que vous avez consulté les données uniquement sur ce qui est pertinent pour le cas, vous pouvez télécharger les documents directement ou les exporter, ainsi que les métadonnées de fichier, les annotations et les balises. Pour plus d’informations, voir :
 
-- [Vérifier les données de cas dans Advanced eDiscovery](reviewing-data-in-review-set.md)
-- [Analyser les données d’un ensemble de vérification dans Advanced eDiscovery](analyzing-data-in-review-set.md)
+- [Afficher les documents d’un jeu à réviser](view-documents-in-review-set.md)
+- [Interroger les données d’un jeu à réviser](review-set-search.md)
+- [Étiqueter les documents d’un jeu à réviser](tagging-documents.md)
+- [Analyser les données d’un ensemble de révision](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>Exportation de données à des fins de révision et de présentation
 
-Une fois que vous avez exporté les données à partir d’un jeu de révision, utilisez l’onglet **exportations** pour gérer une tâche d’exportation et télécharger des données à partir d’un jeu de révision. Lorsque vous exportez un jeu de révision, les données sont téléchargées vers un emplacement de stockage Azure, puis peuvent être téléchargées sur un ordinateur local. Vous pouvez obtenir la clé d’évaluation du stockage nécessaire pour télécharger les données exportées dans l’onglet **exportations** . Pour plus d’informations, consultez la rubrique [Export case Data in Advanced eDiscovery](exporting-data-ediscover20.md).
+Une fois que vous avez exporté les données à partir d’un jeu de révision, utilisez l’onglet **exportations** pour gérer une tâche d’exportation et télécharger des données à partir d’un jeu de révision. Lorsque vous exportez un jeu de révision, les données sont téléchargées vers un emplacement de stockage Azure fourni par Microsoft (ou un emplacement de stockage Azure géré par votre organisation). Une fois qu’il est téléchargé vers Azure, il est ensuite disponible pour téléchargement sur un ordinateur local. Vous pouvez obtenir la clé d’évaluation du stockage nécessaire pour télécharger les données exportées dans l’onglet **exportations** . Pour plus d’informations, consultez la rubrique [Export case Data in Advanced eDiscovery](exporting-data-ediscover20.md).
 
 ## <a name="managing-jobs"></a>Gestion des travaux
 

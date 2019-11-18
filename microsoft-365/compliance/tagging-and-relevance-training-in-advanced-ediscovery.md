@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinence d’Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 569fdfd6e5369459d55bb3ecfa2ebc32f0a10005
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 78c8446a30868b2c01f6831630cadc21916e6476
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079689"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38685993"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Étiquetage et formation à la pertinence dans Office 365 Advanced eDiscovery
 
@@ -37,15 +37,14 @@ Une fois l’évaluation terminée dans Advanced eDiscovery et que vous entrez l
   
     Sous l’onglet **balise** , le nom complet du fichier est affiché. Il peut s’agir du chemin d’accès, de l’objet du courrier électronique, du titre ou du nom défini par l’utilisateur. Vous pouvez copier l’ID, le chemin d’accès ou le chemin d’accès au texte en cliquant avec le bouton droit sur le chemin d’accès du fichier. 
     
-    Les statistiques de marquage des onglets de **balise** indiquent le numéro d’exemple de fichier (en haut du volet de gauche), le numéro du fichier actuellement affiché en dehors du total des fichiers dans l’exemple (volet inférieur du volet droit) et le nombre total actuel de fichiers balisés dans l’exemple (en bas de t dans le volet de gauche), qui change lorsque vous balisez des fichiers. Cela s’applique à toutes les balises de pertinence réalisées, qu’il s’agisse d’évaluation, de formation, de rattrapage ou de test. 
+    Les statistiques de marquage des onglets de **balise** indiquent le numéro d’exemple de fichier (en haut du volet de gauche), le numéro du fichier actuellement affiché dans le total des fichiers dans l’exemple (volet inférieur du volet droit) et le nombre total actuel de fichiers balisés dans l’exemple (en bas du volet de gauche), qui change lorsque vous balisez des fichiers. Cela s’applique à toutes les balises de pertinence réalisées, qu’il s’agisse d’évaluation, de formation, de rattrapage ou de test. 
     
     Les icônes indiquant l’existence de commentaires, de balises et de fichiers de famille sont affichés dans l’affichage des fichiers dans une barre située au-dessus du fichier.
     
 2. Déterminez la pertinence du problème lié au fichier et marquez le fichier à l’aide des boutons d’option d’étiquetage ou des raccourcis clavier, comme indiqué dans le tableau suivant :
-    
-| |
+
 |**Option de marquage**|**Description**|**Raccourci clavier**|**Pour plusieurs problèmes-raccourci clavier pour les balises en bloc**|
-|:-----|:-----|:-----|:-----|
+|-----|-----|-----|-----|
 |R  <br/> |Y  <br/> |Z  <br/> |Maj + Z  <br/> |
 |NR  <br/> |Non pertinent  <br/> |X  <br/> |Maj + X  <br/> |
 |Ignorer  <br/> |Ignorer  <br/> |C  <br/> |Maj + A  <br/> |

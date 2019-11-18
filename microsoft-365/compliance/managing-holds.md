@@ -8,18 +8,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1e457ffa05670e6a8b48692bbb382ebd8f2b404e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1cea83ffec8af8b22b5a27e9d760946e71ba7f68
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079374"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685949"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les suspensions dans Advanced eDiscovery
 
@@ -27,7 +29,7 @@ Vous pouvez utiliser un cas avancé de découverte électronique pour créer des
 
 ## <a name="manage-custodian-based-holds"></a>Gérer les conservations basées sur des dépositaires
 
-Dans certains cas, il se peut que vous ayez identifié un ensemble de dépositaires de données que vous avez identifiés et que vous choisissiez de conserver. Dans Advanced eDiscovery, lorsque ces dépositaires sont mis en attente, l’utilisateur et les sources de données sélectionnées sont automatiquement ajoutés à une stratégie de blocage des dépositaires. 
+Dans certains cas, vous pouvez avoir un ensemble de dépositaires que vous avez identifiés et que vous avez décidé de conserver leurs données pendant le cas. Dans Advanced eDiscovery, lorsque ces dépositaires sont mis en attente, l’utilisateur et les sources de données sélectionnées sont automatiquement ajoutés à une stratégie de blocage des dépositaires. 
 
 Pour afficher la stratégie de blocage des dépositaires :
 
@@ -86,7 +88,7 @@ Pour créer une suspension pour un cas de découverte électronique avancée :
 
     - Cliquez sur **Ajouter** des conditions pour ajouter une ou plusieurs conditions afin de limiter la requête de recherche pour la suspension. Chaque condition ajoute une clause à la requête de recherche KQL créée et exécutée lors de la création de la suspension. Par exemple, vous pouvez spécifier une plage de dates pour que les documents de courrier ou de site créés dans la plage de dates soient suspendus. Une condition est connectée à la requête de mot-clé (spécifiée dans la zone de mot-clé) sur le plan logique par l’opérateur AND. Cela signifie que les éléments doivent satisfaire à la fois la requête de mot clé et la condition à mettre en attente.
 
-     Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions).
+     Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 
 12. Après avoir configuré une conservation basée sur une requête, cliquez sur **suivant**.
  
@@ -116,10 +118,10 @@ Gardez les points suivants à l’esprit concernant les statistiques de conserva
 - **Comment mapper un site Office 365 ou Microsoft teams supplémentaire à un dépositaire ? Et qu’en est-il de la mise en place d’une absence privative de rôle sur les groupes Office 365 et Microsoft teams ?** Microsoft teams est basé sur les groupes Office 365. Par conséquent, leur mise en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous importez des groupes Office 365 et Microsoft teams en conservation.
   - Pour placer le contenu situé dans les groupes Office 365 et Microsoft teams en conservation, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
   
-  - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe ou d’une équipe microsoft Office 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Office 365 ou une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées pour un groupe Office 365 nommé équipe leadership senior :
+  - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe ou d’une équipe microsoft Office 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Office 365 ou une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Office365 nommé Senior Leadership Team :
 
 
-    ```
+    ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
     DisplayName            : Senior Leadership Team
     Alias                  : seniorleadershipteam
@@ -128,24 +130,24 @@ Gardez les points suivants à l’esprit concernant les statistiques de conserva
     ```
 
     > [!NOTE]
-    > Pour exécuter la cmdlet Get-UnifiedGroup, vous devez disposer du rôle destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles auquel est affecté le rôle destinataires en affichage seul.
+    > Pour exécuter l'applet de commande Get-UnifiedGroup, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
  - Lors de la recherche dans la boîte aux lettres d’un utilisateur, le groupe Office 365 ou l’équipe Microsoft dont l’utilisateur est membre ne feront pas l’objet d’une recherche. De même, lorsque vous placez un groupe Office 365 ou un blocage d’équipe Microsoft, seule la boîte aux lettres de groupe et le site de groupe sont mis en attente ; les boîtes aux lettres et les sites OneDrive entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement en tant que dépositaires ou que leurs sources de données ne sont pas conservées. Par conséquent, si vous devez placer un groupe Office 365 ou Microsoft Team en conservation pour un dépositaire spécifique, envisagez de mapper le site de groupe et la boîte aux lettres de groupe au dépositaire (voir Managing dépositaires in Advanced eDiscovery). Si le groupe Office 365 ou l’équipe Microsoft n’est pas attribuable à un seul dépositaire, envisagez d’ajouter la source à une conservation non privatives de personnes. 
  
  - Pour obtenir la liste des membres d’un groupe ou d’une équipe Microsoft Office 365, vous pouvez afficher les propriétés de la page groupes d' > d’accueil dans le centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
 
-   ``` 
+   ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
    ```
 
     > [!NOTE]
-    > Pour exécuter la cmdlet **Get-UnifiedGroupLinks** , vous devez disposer du rôle destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles auquel est affecté le rôle destinataires en affichage seul.
+    > Pour exécuter l'applet de commande **Get-UnifiedGroupLinks**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
-- Les conversations de canal qui font partie d’un canal Microsoft teams sont stockées dans la boîte aux lettres associée à l’équipe. De même, les fichiers que les membres de l’équipe partagent dans un canal sont stockés sur le site SharePoint de l’équipe. Par conséquent, vous devez placer la boîte aux lettres d’équipe Microsoft et le site SharePoint en conservation pour conserver les conversations et les fichiers dans un canal.
+- Les conversations de canal qui font partie d’un canal Microsoft teams sont stockées dans la boîte aux lettres associée à l’équipe. De même, les fichiers partagés par les membres d’une équipe dans un canal sont stockés sur le site SharePoint de l’équipe. Par conséquent, vous devez placer la boîte aux lettres d’équipe Microsoft et le site SharePoint en conservation pour conserver les conversations et les fichiers dans un canal.
   
 - En guise d’alternative, les conversations qui font partie de la liste de conversation de Microsoft teams sont stockées dans la boîte aux lettres de l’utilisateur qui participe à la conversation.  Les fichiers partagés par un utilisateur dans les conversations de conversation sont stockés dans le site OneDrive entreprise de l’utilisateur qui partage le fichier. Par conséquent, vous devez placer les boîtes aux lettres des utilisateurs individuels et les sites OneDrive entreprise en conservation pour conserver les conversations et les fichiers dans la liste des conversations. 
   
-- Chaque canal d’équipe ou d’équipe Microsoft contient un wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format. mht. Ce fichier est stocké dans la bibliothèque de documents de données wiki teams sur le site SharePoint de l’équipe. Vous pouvez placer le contenu du wiki en conservation en mettant le site SharePoint de l’équipe en conservation.
+- Chaque canal d’équipe ou d’équipe Microsoft contient un wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez placer le contenu du wiki en conservation en mettant le site SharePoint de l’équipe en conservation.
 
   > [!NOTE]
   > La capacité à conserver du contenu wiki pour une équipe Microsoft ou un canal d’équipe (lorsque vous placez le blocage du site SharePoint de l’équipe) a été publiée le 22 juin 2017. Si un site d’équipe est en conservation, le contenu wiki est conservé à partir de cette date. Toutefois, si un site d’équipe est en conservation et que le contenu wiki a été supprimé avant le 22 juin 2017, le contenu wiki n’a pas été conservé.

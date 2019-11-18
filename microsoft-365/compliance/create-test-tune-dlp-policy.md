@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
-ms.openlocfilehash: b13dab63514dc8658479dbd68d5a014dc7347bb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078658"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685765"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -107,7 +107,7 @@ Pour illustrer la détection d’TFN de manière assez rationnelle, un message �
 
 ![Numéro de fichier fiscal Australie qui ne transmet pas de checksum](media/DLP-create-test-tune-email-test1.png)
 
-Par comparaison, un message électronique avec les mots « numéro de fichier de la taxe » et un TFN valide qui réussit la somme de contrôle déclencheront la stratégie. Pour l’enregistrement ici, le TFN que j’utilise a été extrait d’un site Web qui génère des TFNs valides, mais pas authentiques. Il existe des sites similaires générant des [numéros de carte de crédit valides, mais factices](http://www.fakecreditcardgenerator.net/). Ces sites sont très utiles, car l’une des erreurs les plus courantes lors du test d’une stratégie DLP utilise un faux nombre qui n’est pas valide et qui ne réussit pas la somme de contrôle (et par conséquent ne déclenche pas la stratégie).
+Par comparaison, un message électronique avec les mots « numéro de fichier de la taxe » et un TFN valide qui réussit la somme de contrôle déclencheront la stratégie. Pour l’enregistrement ici, le TFN que j’utilise a été extrait d’un site Web qui génère des TFNs valides, mais pas authentiques. Il existe des sites similaires générant des [numéros de carte de crédit valides, mais factices](https://www.fakecreditcardgenerator.net/). Ces sites sont très utiles, car l’une des erreurs les plus courantes lors du test d’une stratégie DLP utilise un faux nombre qui n’est pas valide et qui ne réussit pas la somme de contrôle (et par conséquent ne déclenche pas la stratégie).
 
 ![Numéro de fichier fiscal Australie qui réussit le checksum](media/DLP-create-test-tune-email-test2.png)
 
@@ -203,7 +203,7 @@ Lorsque vous êtes satisfait que votre stratégie DLP détecte des types d’inf
 
 ![Option d’activation de la stratégie](media/DLP-create-test-tune-turn-on-policy.png)
  
-Si vous attendez que la stratégie prenne effet, [Connectez-vous à la sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) et exécutez la [cmdlet Get-dlpcompliancepolicy permet](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) pour afficher le DistributionStatus.
+Si vous attendez que la stratégie prenne effet, [Connectez-vous à la sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) et exécutez la [cmdlet Get-dlpcompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) pour afficher le DistributionStatus.
 
 ![Exécution d’une cmdlet dans PowerShell](media/DLP-create-test-tune-PowerShell.png)
 

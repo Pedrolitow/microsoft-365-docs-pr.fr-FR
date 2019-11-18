@@ -11,23 +11,24 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utiliser le filtrage des autorisations de recherche de contenu pour permettre à un gestionnaire eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation Office 365.
-ms.openlocfilehash: a5dcdd450a974cab476a1b31fc82c78bdda84b2b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97f01a7d0c91359251b4af2a26fe9c48aab7122e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079755"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685976"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configuration du filtrage des autorisations pour la recherche de contenu
 
-Vous pouvez utiliser le filtrage des autorisations de recherche pour permettre à un gestionnaire eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation Office 365. Vous pouvez également utiliser le filtrage des autorisations pour permettre à ce gestionnaire de rechercher uniquement le contenu de boîte aux lettres ou de site qui répond à des critères de recherche spécifiques. Par exemple, vous voudrez peut-être permettre à un gestionnaire de découverte électronique de rechercher uniquement les boîtes aux lettres des utilisateurs dans un lieu ou un service spécifique. Pour ce faire, vous devez créer un filtre qui utilise un filtre de destinataires pris en charge pour limiter les boîtes aux lettres qu’un utilisateur ou un groupe d’utilisateurs spécifique peut rechercher. Vous pouvez également créer un filtre qui spécifie le contenu de boîte aux lettres pouvant être recherché. Pour cela, vous devez créer un filtre qui utilise une propriété de message pouvant faire l’objet d’une recherche. De même, vous pouvez permettre à un gestionnaire eDiscovery de rechercher uniquement des sites SharePoint spécifiques dans votre organisation. Pour ce faire, vous devez créer un filtre limitant les sites pouvant faire l’objet d’une recherche. Vous pouvez aussi créer un filtre qui spécifie le contenu de site pouvant être recherché. Pour ce faire, vous devez créer un filtre qui utilise une propriété de site pouvant faire l’objet d’une recherche.
+Vous pouvez utiliser le filtrage des autorisations de recherche pour permettre à un gestionnaire eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation Office 365. Vous pouvez également utiliser le filtrage des autorisations pour permettre à ce gestionnaire de rechercher uniquement le contenu de boîte aux lettres ou de site qui répond à des critères de recherche spécifiques. Par exemple, vous voudrez peut-être permettre à un gestionnaire de découverte électronique de rechercher uniquement les boîtes aux lettres des utilisateurs dans un lieu ou un service spécifique. Pour ce faire, vous devez créer un filtre qui utilise un filtre de destinataires pris en charge pour limiter les boîtes aux lettres qu’un utilisateur ou un groupe d’utilisateurs spécifique peut rechercher. Vous pouvez également créer un filtre qui spécifie le contenu de boîte aux lettres qu’un utilisateur peut rechercher. Pour cela, vous devez créer un filtre qui utilise une propriété de message pouvant faire l’objet d’une recherche. De même, vous pouvez permettre à un gestionnaire eDiscovery de rechercher uniquement des sites SharePoint spécifiques dans votre organisation. Pour ce faire, vous devez créer un filtre limitant les sites pouvant faire l’objet d’une recherche. Vous pouvez aussi créer un filtre qui spécifie le contenu de site pouvant être recherché. Pour ce faire, vous devez créer un filtre qui utilise une propriété de site pouvant faire l’objet d’une recherche.
 
-Vous pouvez également utiliser le filtrage des autorisations de recherche pour créer des limites logiques (appelées *limites de conformité*) au sein d’une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur (par exemple, les boîtes aux lettres, les sites SharePoint et les comptes OneDrive) qui des gestionnaires eDiscovery spécifiques peuvent effectuer des recherches. Pour plus d’informations, reportez-vous à [la rubrique Set up Compliance Boundaries for eDiscovery investigations in Office 365](tagging-and-assessment-in-advanced-ediscovery.md).
+Vous pouvez également utiliser le filtrage des autorisations de recherche pour créer des limites logiques (appelées *limites de conformité*) au sein d’une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur (par exemple, les boîtes aux lettres, les sites SharePoint et les comptes OneDrive) que des gestionnaires eDiscovery spécifiques peuvent effectuer des recherches. Pour plus d’informations, reportez-vous à [la rubrique Set up Compliance Boundaries for eDiscovery investigations in Office 365](tagging-and-assessment-in-advanced-ediscovery.md).
   
 Le filtrage des autorisations de recherche est pris en charge par la fonctionnalité de recherche de contenu dans le centre de sécurité & conformité. Ces quatre cmdlets vous permettent de configurer et de gérer les filtres des autorisations de recherche :
   
@@ -41,7 +42,7 @@ Le filtrage des autorisations de recherche est pris en charge par la fonctionnal
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour exécuter les cmdlets du filtre de sécurité de conformité, vous devez être membre du groupe de rôles gestion de l’organisation dans le centre de sécurité & conformité. Pour plus d’informations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](/security/office-365-security/protect-against-threats.md).
+- Pour exécuter les cmdlets du filtre de sécurité de conformité, vous devez être membre du groupe de rôles gestion de l’organisation dans le centre de sécurité & conformité. Pour plus d’informations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
     
 - Vous devez connecter Windows PowerShell au centre de sécurité & au centre de conformité et à votre organisation Exchange Online pour utiliser les cmdlets de filtrage de sécurité de conformité. Cela est nécessaire, car ces applets de commande nécessitent un accès aux propriétés de boîte aux lettres, ce qui explique pourquoi vous devez vous connecter à Exchange Online. Consultez les étapes décrites dans la section suivante. 
     
@@ -57,7 +58,7 @@ Le filtrage des autorisations de recherche est pris en charge par la fonctionnal
 
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier **. ps1**. Par exemple, vous pouvez l’enregistrer dans un fichier nommé **ConnectEXO-CC. ps1**.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -68,25 +69,26 @@ Le filtrage des autorisations de recherche est pris en charge par la fonctionnal
 
 2. Sur votre ordinateur local, ouvrez Windows PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script ; par exemple :
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
- 
-Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets du centre de conformité & de sécurité et d’Exchange Online sont importées dans votre session Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter une cmdlet Security & Compliance Center et une cmdlet Exchange Online. Par exemple, vous pouvez exécuter **install-UnifiedCompliancePrerequisite** et **Get-Mailbox**. 
+
+Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets du centre de conformité & de sécurité et d’Exchange Online sont importées dans votre session Windows PowerShell locale. Si aucun message d’erreur ne s’affiche, cela signifie que la connexion a été correctement établie. Un test rapide consiste à exécuter une cmdlet Security & Compliance Center et une cmdlet Exchange Online. Par exemple, vous pouvez exécuter **install-UnifiedCompliancePrerequisite** et **Get-Mailbox**. 
   
 Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
   
 - Un mot de passe incorrect est un problème courant. Exécutez à nouveau les deux étapes et portez une attention particulière au nom d’utilisateur et au mot de passe que vous entrez à l’étape 1.
     
-- Vérifiez que votre compte dispose de l’autorisation d’accès au centre de sécurité & conformité. Pour plus d’informations, consultez [la rubrique accorder aux utilisateurs l’accès au centre de sécurité & conformité](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Vérifiez que votre compte dispose de l’autorisation d’accès au centre de sécurité & conformité. Pour plus d’informations, consultez [la rubrique accorder aux utilisateurs l’accès au centre de sécurité & conformité](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
 - Pour éviter les attaques par déni de service (DoS), vous êtes limité à trois connexions PowerShell à distance vers le centre de sécurité & Compliance Center.
     
 - Windows PowerShell doit être configuré pour exécuter des scripts. Ceci ne doit être réalisé qu’une seule fois, pas à chaque fois que vous vous connectez. Pour activer l'exécution de scripts signés dans Windows PowerShell, exécutez la commande suivante dans une fenêtre Windows PowerShell élevée (fenêtre Windows PowerShell ouverte en sélectionnant **Exécuter en tant qu'administrateur**).
 
-    ```
+    ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
+
 - Le trafic du port TCP 80 doit être ouvert entre votre ordinateur local et Office 365. Il est probablement ouvert, mais vous devez y penser si votre organisation a une stratégie restrictive d'accès à Internet.
 
   
@@ -105,7 +107,7 @@ La **ComplianceSecurityFilter** est utilisée pour créer un filtre d’autorisa
 
 Une *liste de filtres* est un filtre qui inclut un filtre de boîte aux lettres et un filtre de site séparés par une virgule. L’utilisation d’une liste de filtres est la seule méthode prise en charge pour la combinaison de différents types de filtres. Dans l’exemple suivant, Notez qu’une virgule sépare les filtres de **boîte aux lettres** et de **site** :
 
-```
+```powershell
 -Filters "Mailbox_CustomAttribute10 -eq 'OttawaUsers'", "Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"
 ```
 
@@ -119,13 +121,13 @@ Gardez les points suivants à l’esprit concernant l’utilisation d’une list
 
 - Comme indiqué précédemment, il n’est pas nécessaire d’utiliser une liste de filtres pour inclure un **site** et un filtre **SiteContent** dans un seul filtre d’autorisations de recherche. Par exemple, vous pouvez combiner des filtres de **site** et **SiteContent** à l’aide d’un opérateur **ou** .
 
-   ```
+   ```powershell
    -Filters "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"
    ```
 
 - Chaque composant d’une liste de filtres peut contenir une syntaxe de filtre complexe. Par exemple, les filtres de boîte aux lettres et de site peuvent contenir plusieurs filtres séparés par un opérateur **-ou** :
 
-   ```
+   ```powershell
    -Filters "Mailbox_Department -eq 'CohoWinery' -or Mailbox_CustomAttribute10 -eq 'CohoUsers'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'"
    ```
 
@@ -135,77 +137,78 @@ Voici quelques exemples d’utilisation de la cmdlet **New-ComplianceSecurityFil
   
 Cet exemple montre comment autoriser l’utilisateur annb@contoso.com à effectuer toutes les actions de recherche de contenu uniquement pour les boîtes aux lettres au Canada. Ce filtre contient le code pays numérique à trois chiffres pour le Canada selon la norme ISO 3166-1.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
 ```
 
 Cet exemple permet aux utilisateurs donh et suzanf de rechercher uniquement les boîtes aux lettres ayant la valeur « marketing » pour la propriété de boîte aux lettres CustomAttribute1.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
-   
+
 Cet exemple permet aux membres du groupe de rôles « US Discovery Managers » d’effectuer toutes les actions de recherche de contenu uniquement sur les boîtes aux lettres aux États-Unis. Ce filtre contient le code pays numérique à trois chiffres pour les États-Unis selon la norme ISO 3166-1.
   
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All
 ```
 
 Cet exemple permet aux membres du groupe de rôles gestionnaire de découverte électronique de rechercher uniquement les boîtes aux lettres des membres du groupe de distribution utilisateurs Ottawa. 
   
-```
+```powershell
 $DG = Get-DistributionGroup "Ottawa Users"
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'" -Action Search
 ```
+
 Cet exemple empêche tout utilisateur de supprimer le contenu de boîtes aux lettres de membres du groupe de distribution Executive Team.
 
-```
+```powershell
 $DG = Get-DistributionGroup "Executive Team"
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName NoExecutivesPreview  -Users All -Filters "Mailbox_MemberOfGroup -ne '$($DG.DistinguishedName)'" -Action Purge
 ```
-   
+
 Cet exemple permet aux membres du groupe de rôles personnalisé OneDrive eDiscovery managers de rechercher uniquement du contenu dans OneDrive entreprise au sein de l’organisation.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName OneDriveOnly  -Users "OneDrive eDiscovery Managers" -Filters "Site_Path -like 'https://contoso-my.sharepoint.com/personal*'" -Action Search
 ```
-   
+
 > [!NOTE]
 > Pour restreindre les utilisateurs à la recherche de sites spécifiques, `Site_Path`utilisez le filtre, comme indiqué dans l’exemple précédent. L' `Site_Site` utilisation de ne fonctionnera pas. 
   
 Cet exemple limite l’utilisateur à l’exécution de toutes les actions de recherche de contenu uniquement sur les messages électroniques envoyés au cours de l’année 2015.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName EmailDateRestrictionFilter -Users donh@contoso.com -Filters "MailboxContent_Received -ge '01-01-2015' -and MailboxContent_Received -le '12-31-2015'" -Action All
 ```
-   
+
 Comme l’exemple précédent, cet exemple limite l’utilisateur à l’exécution de toutes les actions de recherche de contenu sur les documents modifiés au cours de l’année 2015.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName DocumentDateRestrictionFilter -Users donh@contoso.com -Filters "SiteContent_LastModifiedTime -ge '01-01-2015' -and SiteContent_LastModifiedTime -le '12-31-2015'" -Action All
 ```
-   
+
 Cet exemple empêche les membres du groupe de rôles « les gestionnaires de découverte OneDrive » d’effectuer des actions de recherche de contenu sur n’importe quelle boîte aux lettres de l’organisation. 
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Managers" -Filters "Mailbox_Alias -notlike '*'"  -Action All
 ```
 
 Cet exemple empêche toute personne de l’organisation de rechercher des messages électroniques envoyés ou reçus par Julie ou Sarad.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName NoSaraJanet -Users All -Filters "MailboxContent_Participants -notlike 'janets@contoso.onmicrosoft.com' -and MailboxContent_Participants -notlike 'sarad@contoso.onmicrosoft.com'" -Action Search
 ```
 
 Cet exemple utilise une liste de filtres pour combiner les filtres de boîte aux lettres et de site.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
@@ -230,31 +233,32 @@ Ces exemples montrent comment utiliser les cmdlets **Get-ComplianceSecurityFilte
   
 Cet exemple ajoute un utilisateur au filtre.
 
-```
+```powershell
 $filterusers = Get-ComplianceSecurityFilter -FilterName OttawaUsersFilter
 ```
-```
+
+```powershell
 $filterusers.users.add("pilarp@contoso.com")
 ```
 
-```
+```powershell
 Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.users
 ```
-   
+
 Cet exemple supprime un utilisateur du filtre.
 
-```
+```powershell
 $filterusers = Get-ComplianceSecurityFilter -FilterName OttawaUsersFilter
 ```
 
-```
+```powershell
 $filterusers.users.remove("annb@contoso.com")
 ```
 
-```
+```powershell
 Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.users
 ```
-  
+
 ## <a name="remove-compliancesecurityfilter"></a>Remove-ComplianceSecurityFilter
 
 La méthode **Remove-ComplianceSecurityFilter** est utilisée pour supprimer un filtre de recherche. Utilisez le paramètre _FilterName_ pour spécifier le filtre à supprimer. 

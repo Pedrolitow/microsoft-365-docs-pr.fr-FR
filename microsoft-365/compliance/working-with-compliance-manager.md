@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: d15899b994e4169c7362144623bc726f3825245d
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417583"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38685817"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -40,9 +40,11 @@ Pour vous aider à démarrer, une évaluation ISO/IEC 27001:2103 pour Office 365
 
 ## <a name="administration"></a>Administration
 
-Il existe des fonctions d’administration spécifiques qui sont uniquement disponibles pour l’administrateur général et ne sont visibles que lorsque vous êtes connecté avec un compte d’administrateur général. Une fois que l’administrateur a attribué des rôles de gestionnaire de conformité à d’autres utilisateurs, ces derniers peuvent afficher les données dans le gestionnaire de conformité et effectuer les actions déterminées par leur rôle. L’administrateur peut également accorder un accès en lecture seule au gestionnaire de conformité en affectant à ce dernier le [rôle de lecteur global dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
+Il existe des fonctions d’administration spécifiques qui sont uniquement disponibles pour l’administrateur général et ne sont visibles que lorsque vous êtes connecté avec un compte d’administrateur général. L’administrateur général peut attribuer des autorisations d’utilisateur et peut activer des mises à jour automatiques du score de sécurité pour toutes les actions.
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Affectation des rôles du Gestionnaire de conformité aux utilisateurs
+
+Une fois que l’administrateur a attribué des rôles de gestionnaire de conformité à d’autres utilisateurs, ces derniers peuvent afficher les données dans le gestionnaire de conformité et effectuer les actions déterminées par leur rôle. L’administrateur peut également accorder un accès en lecture seule au gestionnaire de conformité en affectant à ce dernier le [rôle de lecteur global dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
 
 Chaque rôle de gestionnaire de conformité a des autorisations légèrement différentes. Vous pouvez afficher les autorisations affectées à chaque rôle, voir les utilisateurs qui se trouvent dans quels rôles et ajouter ou supprimer des utilisateurs de ce rôle via le portail d’approbation de services. Sélectionnez l’option de menu **admin** , puis choisissez les **paramètres** à afficher.
   
@@ -58,7 +60,7 @@ Pour ajouter ou supprimer des utilisateurs des rôles du Gestionnaire de conform
 
 4. Dans la liste déroulante **Sélectionner un rôle** , sélectionnez le rôle que vous souhaitez gérer.
 
-5. Les utilisateurs ajoutés à chaque rôle sont répertoriés sur la page **Sélectionner un rôle** .
+5. Les utilisateurs ajoutés à chaque rôle figurent sur la page **Sélectionner un rôle**.
 
 6. Pour ajouter des utilisateurs à ce rôle, sélectionnez **Ajouter**. Dans la boîte de dialogue **Ajouter des utilisateurs** , sélectionnez le champ utilisateur. Vous pouvez faire défiler la liste des utilisateurs disponibles ou commencer à taper le nom d’utilisateur pour filtrer la liste en fonction de votre terme de recherche. Sélectionnez l’utilisateur qui doit ajouter ce compte à la liste **Ajouter des utilisateurs** mise en service avec ce rôle. Si vous souhaitez ajouter plusieurs utilisateurs simultanément, commencez à taper un nom d’utilisateur pour filtrer la liste, puis sélectionnez l’utilisateur à ajouter à la liste. Sélectionnez **Enregistrer** pour mettre en service le rôle sélectionné pour ces utilisateurs. 
 
@@ -67,6 +69,18 @@ Pour ajouter ou supprimer des utilisateurs des rôles du Gestionnaire de conform
 7. Pour supprimer des utilisateurs de ce rôle, sélectionnez les utilisateurs et sélectionnez **supprimer**.
 
     ![Gestionnaire de conformité — supprimer des utilisateurs](media/compliance-manager-delete-users.png)
+
+### <a name="controlling-automatic-secure-score-updates"></a>Contrôle des mises à jour automatiques du score de sécurité
+
+Les mises à jour du score sécurisé peuvent être activées automatiquement pour toutes les actions, peuvent être désactivées pour toutes les actions ou peuvent être définies par une action individuelle.
+
+1. Connectez-vous au [portail d’approbation de service](https://servicetrust.microsoft.com) avec votre compte d’administrateur général.
+
+2. Dans la barre de menus supérieure du portail d’approbation de service, sélectionnez **administrateur** , puis **paramètres**.
+
+4. Sous l’onglet de **score sécurisé** , sélectionnez le bouton correspondant à votre choix.
+
+**Remarque :** Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions de manière globale.
 
 ## <a name="groups"></a>Groupes
 
@@ -87,8 +101,8 @@ Lorsque vous utilisez des groupes, rappelez-vous des éléments suivants :
 - Les nouveaux groupes peuvent copier des informations à partir d’un groupe existant lorsque vous créez une nouvelle évaluation. Toutes les informations ajoutées aux champs détails de l’implémentation et plan de test et réponse de gestion des contrôles gérés par le client à partir des évaluations dans le groupe à partir duquel vous effectuez la copie sont copiées dans les mêmes contrôles gérés par le client (ou associés) dans le nouveau Évaluation. Si vous ajoutez une nouvelle évaluation à un groupe existant, les informations courantes des évaluations dans ce groupe sont copiées dans la nouvelle évaluation.
 - Les noms de groupe (également appelés *ID de groupe*) doivent être uniques au sein de votre organisation.
 - Les groupes peuvent contenir des évaluations pour la même certification/réglementation, mais chaque groupe ne peut contenir qu’une seule évaluation pour une paire service Cloud/certification de Cloud spécifique. Par exemple, un groupe ne peut pas contenir deux évaluations pour Office 365 et l’infrastructure NIST. Un groupe peut contenir plusieurs évaluations pour le même service Cloud uniquement si la certification/réglementation correspondante est différente.
-- Une fois qu’une évaluation a été ajoutée à un groupe d’évaluation, le regroupement ne peut pas être modifié. Vous pouvez renommer le groupe d’évaluation, ce qui modifie le nom du regroupement d’évaluation pour toutes les évaluations associées à ce groupe. Vous pouvez créer une évaluation et un nouveau groupe d’évaluation et copier des informations à partir d’une évaluation existante, ce qui crée effectivement un doublon de cette évaluation dans un groupe d’évaluation différent.
-- L’archivage d’une évaluation rompt la relation entre cette évaluation et le groupe. Les autres mises à jour apportées à d’autres évaluations associées ne sont plus reflétées dans l’évaluation archivée.
+- Une fois qu’une évaluation a été ajoutée à un groupe d’évaluation, le regroupement ne peut pas être modifié. Vous pouvez renommer le groupe d’évaluation, ce qui modifie le nom du regroupement d’évaluation pour toutes les évaluations associées à ce groupe. Vous pouvez créer une analyse et nouveau groupe d’analyses, puis copier les informations d’une analyse existante, ce qui a pour effet de créer une copie de cette analyse dans un autre groupe d’analyses.
+- L’archivage d’une évaluation rompt la relation entre cette évaluation et le groupe. Les mises à jour apportées aux autres analyses associées ne sont plus répercutées dans l’analyse archivée.
 
 ## <a name="tenant-management"></a>Gestion des clients
 
@@ -103,6 +117,9 @@ Sélectionnez **gestion des clients** pour ouvrir l’interface de gestion et su
 ### <a name="dimensions"></a>Dimensions
 
 Les dimensions sont des ensembles de métadonnées qui fournissent des informations sur un modèle, une évaluation ou un élément d’action. Les dimensions utilisent le concept de clés et de valeurs, où la clé de dimension représente une propriété et la valeur de dimension représente des valeurs valides pour la propriété. Par exemple, dans le gestionnaire de conformité, il existe trois types d’actions. Elles sont définies par une clé de dimension de **type action** et des valeurs de dimension de **documentation**, d' **exploitation**et **technique**. Vous pouvez modifier ou supprimer des dimensions existantes.
+
+> [!IMPORTANT]
+> Vous pouvez ajouter de nouvelles dimensions et les affecter à des modèles que vous avez déjà importés. Vous pouvez également ajouter de nouvelles dimensions à tous les nouveaux modèles que vous créez.
 
 ### <a name="owners"></a>Propriétaires
 
@@ -154,11 +171,6 @@ En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie,
 8. Sélectionnez le **X** pour fermer le panneau de description.
 9. Sélectionnez **Enregistrer** pour enregistrer l’action du client.
 
-#### <a name="edit-a-customer-action"></a>Modifier une action client
-
-1. Sélectionnez les points de suspension (...) de l’action que vous souhaitez modifier, puis sélectionnez **modifier**.
-2. Modifiez l’action comme vous le souhaitez, puis sélectionnez **Enregistrer**.
-
 #### <a name="delete-a-customer-action"></a>Supprimer une action client
 
 1. Sélectionnez les points de suspension (...) correspondant à l’action que vous souhaitez modifier, puis sélectionnez **supprimer**.
@@ -188,7 +200,7 @@ En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie,
 - Titre de l’évaluation.
 - Les dimensions de l’évaluation, y compris la certification, l’environnement et le produit, appliquées à l’évaluation.
 - Date de création et date de la dernière modification.
-- Score d’évaluation affiché sous la forme d’un pourcentage.
+- Score d’évaluation affiché sous la forme d’un pourcentage. Ce score inclut automatiquement vos scores à partir des contrôles gérés par Microsoft et du score de sécurité.
 - Indicateurs de progression indiquant le nombre de contrôles évalués gérés par Microsoft et gérés par le client.
 
 ### <a name="copying-information-from-existing-assessments"></a>Copie des informations des évaluations existantes
@@ -215,9 +227,7 @@ Lorsque vous créez une évaluation, vous avez la possibilité de copier des inf
 
 3. Sélectionnez **Enregistrer** pour créer l’évaluation.
 
-### <a name="viewing-assessments"></a>Affichage des évaluations
-
-#### <a name="view-an-assessment"></a>Afficher une évaluation
+### <a name="view-an-assessment"></a>Afficher une évaluation
   
 1. Dans le tableau de bord évaluations, sélectionnez le nom de l’évaluation pour l’ouvrir et afficher les éléments d’action et les informations de contrôle.
 
@@ -282,40 +292,39 @@ Vous pouvez exporter une évaluation vers un fichier Excel pour les parties pren
 
 Le rapport d’évaluation est téléchargé sous la forme d’un fichier Excel dans votre session de navigateur. Le nom de fichier du fichier Excel est par défaut le titre de l’évaluation.
 
-### <a name="archive-a-template-or-an-assessment"></a>Archiver un modèle ou une évaluation
+### <a name="hide-a-template-or-an-assessment"></a>Masquer un modèle ou une évaluation
 
-Une fois que vous avez terminé avec un modèle ou une évaluation et que vous n’en avez plus besoin à des fins de conformité, vous pouvez l’archiver. Lorsqu’un modèle ou une évaluation est archivé, il est supprimé de l’affichage par défaut et vous devez activer la case à cocher Afficher les archives archivées pour l’afficher.
+Lorsque vous avez terminé d’utiliser un modèle ou une évaluation et que vous n’en avez plus besoin à des fins de conformité, vous pouvez le masquer à partir de votre affichage. Lorsqu’un modèle ou une évaluation est masquée, elle est supprimée de la vue par défaut et vous devez activer la case à cocher **inclure les masqués** pour l’afficher.
 
-![Gestionnaire de conformité-vue d’action Microsoft](media/compliance-manager-archive-assessment-view.png)
-  
+![Affichage du modèle masqué du gestionnaire de conformité](media/compliance-manager-hidden-template.png "Modèle masqué du gestionnaire de conformité")
+
 > [!IMPORTANT]
-> Les évaluations archivées ne conservent pas leurs liens vers les documents de preuve téléchargés. Il est vivement recommandé d’exporter l’évaluation avant l’archivage pour conserver les liens vers les documents de preuve dans le rapport.
+> Les évaluations masquées ne conservent pas leurs liens vers les documents de preuve téléchargés. Il est vivement recommandé d’exporter l’évaluation avant de la masquer pour conserver les liens vers les documents de preuve dans le rapport.
   
-#### <a name="archive-a-template"></a>Archiver un modèle
+#### <a name="hiding-a-template"></a>Masquage d’un modèle
 
 1. Ouvrez le tableau de bord **modèles** .
-2. Recherchez le modèle que vous souhaitez archiver et sélectionnez l’icône archive.
-3. Lorsque le message de confirmation s’affiche, sélectionnez **Archive**.
+2. Recherchez le modèle que vous souhaitez masquer et les ellipses de sa ligne, sélectionnez **Masquer**.
+3. Lorsque le message de confirmation s’affiche, sélectionnez **Masquer**.
 
-#### <a name="archive-an-assessment"></a>Archiver une évaluation
+#### <a name="hide-an-assessment"></a>Masquer une évaluation
 
 1. Ouvrez le tableau de bord **évaluations** .
-2. Dans la liste déroulante, sélectionnez le **groupe** qui contient l’évaluation que vous souhaitez archiver.
-3. Localisez l’évaluation que vous souhaitez archiver et sélectionnez l’icône archive.
-4. Lorsque le message de confirmation s’affiche, sélectionnez **Archive**.
+2. Dans la liste déroulante, sélectionnez le **groupe** qui contient l’évaluation à masquer.
+3. Recherchez l’évaluation que vous souhaitez masquer et, dans les ellipses, sélectionnez **Masquer**.
+4. Lorsque le message de confirmation s’affiche, sélectionnez **Masquer**.
 
-#### <a name="view-archived-assessments"></a>Afficher les évaluations archivées
+#### <a name="view-hidden-assessments"></a>Afficher les évaluations masquées
   
-1. Ouvrez l’onglet de tableau de bord **évaluations** et activez la case à cocher **afficher les archives archivées** .
-2. Les évaluations archivées apparaissent dans la section **évaluations archivées** .
-3. Sélectionnez le nom de l’évaluation à ouvrir et affichez l’évaluation.
+1. Ouvrez l’onglet de tableau de bord **évaluations** et activez la case à cocher **inclure les masqués** .
+2. Les évaluations masquées apparaissent dans la section **évaluations masquées** .
 
-#### <a name="activate-an-archived-assessment"></a>Activer une évaluation archivée
+#### <a name="unhide-an-assessment"></a>Afficher une évaluation
 
-1. Sous l’onglet **évaluations** , activez la case à cocher **afficher les archives** .
-2. Les évaluations archivées apparaissent dans la section **évaluations archivées** .
-3. Recherchez l’évaluation que vous souhaitez activer et sélectionnez l’icône activer.
-4. Lorsque le message de confirmation s’affiche, sélectionnez **activer**.
+1. Sous l’onglet **évaluations** , activez la case à cocher **inclure les masqués** .
+2. Les évaluations masquées apparaissent dans la section **évaluations masquées** .
+3. Localisez l’évaluation que vous souhaitez afficher et les ellipses, sélectionnez **Afficher**.
+4. Lorsque le message de confirmation s’affiche, sélectionnez **Afficher**.
 
 ## <a name="controls-and-actions"></a>Contrôles et actions
 
@@ -507,6 +516,9 @@ Vous pouvez créer un modèle en copiant un modèle existant ou en important des
 7. Le modèle importé apparaît sur le tableau de bord **modèles** et son état est **importé**. Sélectionnez les points de suspension (...) et sélectionnez **publier** pour publier le modèle. Lorsque le message de confirmation s’affiche, sélectionnez **publier**. L’état du modèle devient **approbation en attente**.
 8. Un autre utilisateur disposant du rôle d’administrateur du gestionnaire de conformité doit approuver le modèle dans le tableau de bord modèles. Ils doivent sélectionner les points de suspension (...) et sélectionner **approuver**. Lorsque le message de confirmation s’affiche, sélectionnez **approuver**. Le modèle est maintenant prêt à être utilisé.
 
+> [!IMPORTANT]
+> Lors de la création d’un modèle, vous devez inclure des dimensions pour le **produit** et la **certification** afin de garantir l’affichage du modèle dans le score de conformité.
+
 ### <a name="customize-a-template"></a>Personnaliser un modèle
 
 Les modèles peuvent être personnalisés par le biais des contrôles personnalisés supplémentaires. Tous les contrôles personnalisés sont considérés comme des contrôles gérés par le client.
@@ -531,6 +543,9 @@ Les modèles peuvent être personnalisés par le biais des contrôles personnali
 12. Lorsque toutes les actions applicables ont été sélectionnées, sélectionnez **affecter**.
 13. Sélectionnez **Enregistrer** pour enregistrer le nouveau contrôle.
 
+> [!NOTE]
+> Les modifications apportées à un modèle ne seront pas reflétées dans les évaluations existantes. Les mises à jour de modèle doivent être effectuées en premier, puis appliquées à une nouvelle évaluation, afin que les modifications soient visibles.
+
 ### <a name="export-a-template-to-json"></a>Exporter un modèle vers JSON
 
 Le gestionnaire de conformité (aperçu) prend également en charge l’exportation des modèles au format JSON (JavaScript Object Notation). Cela vous permet d’échanger des données du gestionnaire de conformité avec d’autres systèmes qui prennent en charge JSON.
@@ -553,7 +568,7 @@ Le tableau suivant décrit chaque autorisation du gestionnaire de conformité et
 
 ||**Lecteur global Azure AD**|**Lecteur du Gestionnaire de conformité**|**Contributeur du Gestionnaire de conformité**|**Évaluateur du Gestionnaire de conformité**|**Administrateur du Gestionnaire de conformité**|**Administrateur du Portail**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Lire les données :** Les utilisateurs peuvent lire, mais pas modifier les données (à l’exception des données de modèle et de gestion des clients).  <br> | X | X | X | X | X  | X  |X |
+|**Lire les données :** Les utilisateurs peuvent lire, mais pas modifier les données (à l’exception des données de modèle et de gestion des clients).  <br> | X | X | X | X | X  | X |
 |**Modifier les données :** Les utilisateurs peuvent modifier tous les champs, à l’exception des champs résultat de test et date du test (sauf pour les données de modèle et la gestion des clients).  <br> ||| X | X  | X | X |
 |**Modifier les résultats des tests :** Les utilisateurs peuvent modifier les champs résultat de test et date du test.  <br> |||| X | X | X |
 |**Gérer les évaluations :** Les utilisateurs peuvent créer, archiver et supprimer des évaluations.  <br> ||||| X | X |

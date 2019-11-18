@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Office 365. Ces types de conservation incluent les conservations pour litige, la découverte électronique et les stratégies de rétention d’Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d’une stratégie de rétention à l’échelle de l’organisation.
-ms.openlocfilehash: 47e7ffff1703c0de94f014dc18e249cc9775e3e2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3319d65f7260a50cdcd38a36b6135a3cc42fb874
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078489"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685918"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -41,7 +41,7 @@ Office 365 offre plusieurs méthodes permettant à votre organisation d’empêc
     - **Stratégies de rétention à l’échelle de l’Organisation :** Il s’agit de stratégies affectées à tous les emplacements de contenu de votre organisation. Vous utilisez la cmdlet **Get-OrganizationConfig** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention à l’échelle de l’organisation.
   Pour plus d’informations, consultez la section « application d’une stratégie de rétention à une organisation ou des emplacements spécifiques » dans [vue d’ensemble des stratégies de rétention Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **[Étiquettes de rétention office 365](labels.md):** si un utilisateur applique une étiquette de rétention Office 365 (une étiquette configurée pour conserver le contenu ou conserver et supprimer du contenu) vers *un* dossier ou un élément de sa boîte aux lettres, une conservation est placée sur la boîte aux lettres comme si elle était mise en attente pour litige ou affectation à une stratégie de rétention Office 365. Pour plus d’informations, consultez la section [identification des boîtes aux lettres en attente, car une étiquette de rétention a été appliquée à un dossier ou à une](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section d’élément de cet article.
+- **[Étiquettes de rétention office 365](labels.md):** si un utilisateur applique une étiquette de rétention Office 365 (une étiquette configurée pour conserver le contenu ou conserver et supprimer du contenu) pour *un* dossier ou un élément de sa boîte aux lettres, une conservation est placée sur la boîte aux lettres comme si elle était placée en conservation pour litige ou affectée à une stratégie de rétention Office 365. Pour plus d’informations, consultez la section [identification des boîtes aux lettres en attente, car une étiquette de rétention a été appliquée à un dossier ou à une](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section d’élément de cet article.
 
 Pour gérer les boîtes aux lettres en conservation, il se peut que vous deviez identifier le type de blocage placé sur une boîte aux lettres afin de pouvoir effectuer des tâches telles que la modification de la durée de la conservation, la suppression temporaire ou définitive de la conservation ou l’exclusion d’une boîte aux lettres d’une stratégie de rétention Office 365. Dans ce cas, la première étape consiste à identifier le type de conservation placé sur la boîte aux lettres. Étant donné que plusieurs suspensions (et différents types de suspensions) peuvent être placées sur une seule boîte aux lettres, vous devez identifier toutes les suspensions placées sur une boîte aux lettres si vous voulez supprimer ou modifier une conservation.
 
@@ -59,7 +59,7 @@ Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange O
 
 Exécutez la commande suivante pour obtenir des informations sur les conservations et les stratégies de rétention Office 365 appliquées à une boîte aux lettres.
 
-```
+```powershell
 Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 ```
 
@@ -80,7 +80,7 @@ Le tableau suivant décrit comment identifier différents types de suspensions e
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
 Si la propriété *InPlaceHolds* est vide lorsque vous exécutez la cmdlet **Get-Mailbox** , il peut y avoir une ou plusieurs stratégies de rétention Office 365 à l’échelle de l’organisation appliquées à la boîte aux lettres. Exécutez la commande suivante dans Exchange Online PowerShell pour obtenir la liste des GUID pour les stratégies de rétention Office 365 à l’échelle de l’organisation.
 
-```
+```powershell
 Get-OrganizationConfig | FL InPlaceHolds
 ```
 
@@ -125,15 +125,15 @@ Une fois que vous avez obtenu le GUID pour une conservation appliquée à une bo
 
 Exécutez les commandes suivantes dans Security & Compliance Center PowerShell pour identifier une conservation eDiscovery appliquée à la boîte aux lettres. Utilisez le GUID (sans le préfixe UniH) pour le blocage eDiscovery que vous avez identifié à l’étape 1. La première commande crée une variable qui contient des informations sur la suspension. Cette variable est utilisée dans les autres commandes. La deuxième commande affiche le nom du cas eDiscovery auquel la conservation est associée. La troisième commande affiche le nom de la conservation et la liste des boîtes aux lettres auxquelles elle s’applique.
 
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold | FL Name,ExchangeLocation
 ```
 
@@ -143,16 +143,17 @@ Pour vous connecter au centre de sécurité & de conformité PowerShell, consult
 
 Exécutez la commande suivante dans Exchange Online PowerShell pour identifier la conservation inaltérable qui est appliquée à la boîte aux lettres. Utilisez le GUID pour le blocage sur place que vous avez identifié à l’étape 1. La commande affiche le nom de la conservation et la liste des boîtes aux lettres auxquelles la conservation s’applique.
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
+
 Si le GUID de la conservation inaltérable commence par le `cld` préfixe, veillez à inclure le préfixe lors de l’exécution de la commande précédente.
 
 ### <a name="office-365-retention-policies"></a>Stratégies de rétention Office 365
 
 Exécutez la commande suivante dans Security & Compliance Center PowerShell pour identifier la stratégie de rétention Office 365 (à l’échelle de l’organisation ou spécifique) appliquée à la boîte aux lettres. Utilisez le GUID (sans inclure le préfixe MBX, SKP ou GRP ou le suffixe d’action) que vous avez identifié à l’étape 1.
 
-```
+```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
@@ -166,7 +167,7 @@ Chaque fois qu’un utilisateur applique une étiquette de rétention configuré
 
 Pour afficher la valeur de la propriété *ComplianceTagHoldApplied* , exécutez la commande suivante dans Exchange Online PowerShell :
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -178,20 +179,21 @@ Après la suppression d’un type de conservation d’une boîte aux lettres, la
 
 Pour afficher la valeur de la propriété *DelayHoldApplied* pour une boîte aux lettres, exécutez la commande suivante dans Exchange Online PowerShell.
 
-```
+```powershell
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
 Pour supprimer le délai d’attente avant qu’il expire, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell : 
  
-```
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+
 Vous devez disposer du rôle conservation légal dans Exchange Online pour utiliser le paramètre *RemoveDelayHoldApplied* 
 
 Pour supprimer la conservation différée sur une boîte aux lettres inactive, exécutez la commande suivante dans Exchange Online PowerShell :
 
-```
+```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 

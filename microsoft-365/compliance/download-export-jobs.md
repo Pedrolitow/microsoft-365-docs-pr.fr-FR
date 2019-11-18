@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Installez et utilisez l’Explorateur de stockage Azure pour télécharger des documents qui ont été exportés à partir d’un jeu de vérification dans Advanced eDiscovery.
-ms.openlocfilehash: 4846a77d26079303f85778e71e6bdf2804ccea5e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 412ec48865c6cb7e511e3f6068fe02d87a99f831
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078509"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685931"
 ---
 # <a name="download-export-jobs"></a>Télécharger l’exportation des travaux
 
 Lorsque vous exportez des documents à partir d’un jeu de réexamen dans un cas avancé de découverte électronique, les documents sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft ou vers un emplacement de stockage Azure géré par votre organisation. Le type d’emplacement de stockage Azure utilisé dépend de l’option sélectionnée lors de l’exportation des documents. 
 
-Cet article fournit des instructions sur l’utilisation de l’Explorateur de stockage Microsoft Azure pour se connecter à un emplacement de stockage Azure afin de parcourir et télécharger les documents exportés. Pour plus d’informations sur l’Explorateur de stockage Azure, voir [démarrage rapide : utiliser l’Explorateur de stockage Azure](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+Cet article fournit des instructions sur l’utilisation de l’Explorateur de stockage Microsoft Azure pour se connecter à un emplacement de stockage Azure afin de parcourir et télécharger les documents exportés. Pour plus d’informations sur l’Explorateur de stockage Azure, voir [démarrage rapide : utiliser l’Explorateur de stockage Azure](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>Étape 1 : installer l’Explorateur de stockage Azure
 
@@ -73,7 +73,7 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
 
     Le nœud **conteneurs BLOB** (sous **comptes** > **de stockage (conteneurs associés)** \> est ouvert. 
 
-    ![](./media/AzureStorageConnect5.png)
+    ![Exporter des travaux dans le nœud conteneurs d’objets BLOB](./media/AzureStorageConnect5.png)
 
     Il contient un conteneur nommé avec le nom d’affichage de l’étape 4. Ce conteneur contient un dossier pour chaque tâche d’exportation que vous avez créée. Ces dossiers sont nommés avec un ID correspondant à l’ID de la tâche d’exportation. Vous trouverez ces ID d’exportation (et le nom de l’exportation) sous **informations de support** sur la page de menu volant pour chaque tâche **de préparation des données pour l’exportation** , dans l’onglet **travaux** .
 

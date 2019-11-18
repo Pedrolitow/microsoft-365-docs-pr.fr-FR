@@ -7,6 +7,8 @@ ms.date: 1/23/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,26 +16,26 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Exécutez un script pour ajouter rapidement des boîtes aux lettres et des sites OneDrive entreprise à un nouveau blocage associé à un cas eDiscovery dans le centre de conformité & Compliance Center.
-ms.openlocfilehash: c680e584a6f729b3d6d0d74b84ddd0e03da6dc9a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7a7ea582391e2fbfcef8b63d331d64f52db4460c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079658"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685957"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de sécurité & conformité
 
 Le centre de sécurité & conformité fournit un grand nombre d’applets de commande Windows PowerShell qui vous permettent d’automatiser des tâches consommatrices de temps liées à la création et à la gestion de cas eDiscovery. À l’heure actuelle, l’utilisation de l’outil de cas eDiscovery dans le centre de conformité & Compliance pour mettre en attente un grand nombre d’emplacements de contenu de dépositaire prend du temps et une préparation. Par exemple, avant de créer une conservation, vous devez collecter l’URL de chaque site OneDrive entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive entreprise à la suspension. Dans les prochaines versions du centre de sécurité & conformité, cela sera plus facile à réaliser. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus.
   
-Le script vous invite à indiquer le nom du domaine mon site de votre organisation (par exemple, **contoso** dans l' https://contoso-my.sharepoint.com)URL, le nom d’un cas eDiscovery existant, le nom du nouveau blocage associé au cas, une liste des adresses de messagerie des utilisateurs de votre choix à mettre en attente et une requête de recherche à utiliser si vous souhaitez créer une conservation basée sur une requête. Le script obtient ensuite l’URL du site OneDrive entreprise pour chaque utilisateur de la liste, crée la nouvelle conservation, puis ajoute la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste à la suspension. Le script génère également des fichiers journaux qui contiennent des informations sur la nouvelle conservation. 
+Le script vous invite à indiquer le nom du domaine de site de votre organisation (par exemple, **contoso** dans l' https://contoso-my.sharepoint.com)URL, le nom d’un cas de découverte électronique existant, le nom du nouveau blocage associé au cas, la liste des adresses de messagerie des utilisateurs que vous souhaitez mettre en attente et une requête de recherche à utiliser si vous souhaitez créer une conservation basée sur une requête). Le script obtient ensuite l’URL du site OneDrive entreprise pour chaque utilisateur de la liste, crée la nouvelle conservation, puis ajoute la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste à la suspension. Le script génère également des fichiers journaux qui contiennent des informations sur la nouvelle conservation. 
   
 Voici la procédure à suivre :
   
 [Étape 1 : installer SharePoint Online Management Shell](#step-1-install-the-sharepoint-online-management-shell)
   
-[Étape 2 : générer une liste d’utilisateurs](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
+[Étape 2 : générer une liste d’utilisateurs](#step-2-generate-a-list-of-users)
   
-[Étape 3 : exécuter le script pour créer une conservation et ajouter des utilisateurs](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
+[Étape 3 : exécuter le script pour créer une conservation et ajouter des utilisateurs](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -56,22 +58,18 @@ La première étape consiste à installer SharePoint Online Management Shell s�
 Accédez à [la configuration de l’environnement Windows PowerShell de SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkID=286318) et effectuez les étapes 1 et 2 pour installer SharePoint Online Management Shell sur votre ordinateur local. 
 
 ## <a name="step-2-generate-a-list-of-users"></a>Étape 2 : générer une liste d’utilisateurs
-<a name="step2"> </a>
 
 Le script de l’étape 3 crée une conservation associée à un cas de découverte électronique, ainsi que les sites ajouter les boîtes aux lettres et OneDrive entreprise d’une liste d’utilisateurs à la suspension. Vous pouvez simplement taper les adresses de messagerie dans un fichier texte ou exécuter une commande dans Windows PowerShell pour obtenir la liste des adresses de messagerie et les enregistrer dans un fichier (situé dans le même dossier dans lequel vous enregistrerez le script à l’étape 3).
   
 Voici une commande PowerShell (que vous exécutez à l’aide de PowerShell distant connecté à votre organisation Exchange Online) pour obtenir une liste d’adresses de messagerie pour tous les utilisateurs de votre organisation et l’enregistrer dans un fichier texte nommé HoldUsers. txt.
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
 Après avoir exécuté cette commande, ouvrez le fichier texte et supprimez l’en-tête qui contient le `PrimarySmtpAddress`nom de la propriété,. Ensuite, supprimez toutes les adresses de messagerie sauf celles des utilisateurs que vous souhaitez ajouter à la suspension que vous allez créer à l’étape 3. Assurez-vous qu’il n’y a pas de ligne vide avant ou après la liste des adresses de messagerie.
   
-
-  
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Étape 3 : exécuter le script pour créer une conservation et ajouter des utilisateurs
-<a name="step3"> </a>
 
 Lorsque vous exécutez le script dans cette étape, il vous invite à fournir les informations suivantes. Assurez-vous que vous disposez de ces informations avant d’exécuter le script.
   
@@ -87,11 +85,11 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
     
 - **Indique si le blocage doit** être activé : vous pouvez faire en sorte que le script désactive le blocage une fois qu’il a été créé ou que le script peut créer la conservation sans l’activer. Si le script n’est pas activé, vous pouvez l’activer ultérieurement dans le centre de sécurité & conformité ou en exécutant les commandes PowerShell suivantes : 
     
-  ```
+  ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
   ```
 
-  ```
+  ```powershell
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
@@ -101,7 +99,7 @@ Une fois que vous avez collecté les informations que le script vous demande, la
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `AddUsersToHold.ps1`.
     
-  ```
+  ```powershell
   #script begin
   " " 
   write-host "***********************************************"
@@ -119,7 +117,7 @@ Une fois que vous avez collecté les informations que le script vous demande, la
           return;
       }
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-  # To install, go to http://go.microsoft.com/fwlink/p/?LinkId=255251
+  # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
   {
       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
@@ -127,7 +125,7 @@ Une fois que vous avez collecté les informations que le script vous demande, la
       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
       if (!$SharePointClient)
       {
-          Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: http://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
+          Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
           return;
       }
   }
@@ -278,7 +276,7 @@ Une fois que vous avez collecté les informations que le script vous demande, la
     
 3. Exécutez le script ; par exemple :
     
-      ```
+      ```powershell
     .\AddUsersToHold.ps1
       ```
 

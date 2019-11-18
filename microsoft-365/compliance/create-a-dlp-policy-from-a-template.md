@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
-ms.openlocfilehash: db32748b25296ef82c56160e95535ac488eb65a5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
+ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078758"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "38685700"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
@@ -160,7 +160,7 @@ Une fois que vous avez créé et activé une stratégie DLP, elle est déployée
   
 Voici les différents états et leur signification.
   
-|**Status**|**Explication**|
+|**État**|**Explication**|
 |:-----|:-----|
 |**Activation en cours...** <br/> |La stratégie est déployée pour les sources de contenu qu’elle contient. La stratégie n’est pas encore appliquée sur toutes les sources.  <br/> |
 |**Test en cours, avec notifications** <br/> |La stratégie est en mode test. Les actions dans une règle ne sont pas appliquées, mais les correspondances de stratégie sont collectées et peuvent être consultées à l’aide des rapports DLP. Les notifications sur les correspondances de stratégie sont envoyées aux destinataires spécifiés.  <br/> |
@@ -168,7 +168,7 @@ Voici les différents états et leur signification.
 |**On** <br/> |La stratégie est appliquée et active. La stratégie a été correctement déployée sur toutes ses sources de contenu.  <br/> |
 |**Désactivation en cours...** <br/> |La stratégie est supprimée des sources de contenu qu’elle contient. La stratégie peut être toujours active et appliquée sur certaines sources. La désactivation d’une stratégie peut prendre jusqu’à 45 minutes.  <br/> |
 |**Désactivé** <br/> |La stratégie n’est pas active et n’est pas appliquée. Les paramètres de la stratégie (sources, mots clés, durée, etc.) sont enregistrés.  <br/> |
-|**Suppression...** <br/> |La stratégie est en cours de suppression. La stratégie n’est pas active et n’est pas appliquée.  <br/> |
+|**Suppression...** <br/> |La stratégie est en cours de suppression. La stratégie n’est pas active et n’est pas appliquée. Il faut normalement une heure pour que la stratégie soit supprimable <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Désactivation d’une stratégie DLP
 

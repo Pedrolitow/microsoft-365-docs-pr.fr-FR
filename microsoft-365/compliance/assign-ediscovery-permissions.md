@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
-ms.openlocfilehash: 5a9036908d97a62897b7d52b875a46008a7a337c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 61b55c221c11a577a64d0d2358c89253b1e90714
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078886"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685902"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -47,7 +47,7 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
 
 - Vous devez être membre du groupe de rôles gestion de l’organisation (ou disposer du rôle de gestion des rôles) pour attribuer des autorisations eDiscovery dans le centre de sécurité & conformité.
     
-- Vous pouvez utiliser la cmdlet [Add-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638207%28v=exchg.160%29.aspx) dans Security & Compliance Center PowerShell pour ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles gestionnaire de découverte électronique. Toutefois, vous ne pouvez pas ajouter un groupe de sécurité à extension messagerie au sous-groupe administrateurs eDiscovery. Pour plus d’informations, reportez-vous à la section [more information](#more-information) . 
+- Vous pouvez utiliser la cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) dans Security & Compliance Center PowerShell pour ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles gestionnaire de découverte électronique. Toutefois, vous ne pouvez pas ajouter un groupe de sécurité à extension messagerie au sous-groupe administrateurs eDiscovery. Pour plus d’informations, reportez-vous à la section [more information](#more-information) . 
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -58,11 +58,11 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
 3. Dans le volet gauche du centre de sécurité et conformité, cliquez sur **autorisations**, puis cliquez sur la case à cocher en regard de **Gestionnaire eDiscovery**.
     
 4. Sur la page de menu volant du **Gestionnaire eDiscovery** , effectuez l’une des opérations suivantes en fonction des autorisations de découverte électronique que vous souhaitez attribuer. 
-    
-  - **Pour faire d’un utilisateur un gestionnaire eDiscovery** En regard de **Gestionnaire eDiscovery**, cliquez sur **modifier**. Sous **gestionnaires eDiscovery sélectionnés**, cliquez sur **modifier**, puis sur ![ajouter une](media/ITPro-EAC-AddIcon.gif) icône **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis cliquez sur **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, cliquez sur **terminé**. Ensuite, dans la page d’édition choisir le menu volant du **Gestionnaire eDiscovery** , cliquez sur **Enregistrer** pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery. 
-    
-  - **Pour faire d’un utilisateur un administrateur de découverte électronique** En regard de l' **administrateur de découverte électronique**, cliquez sur **modifier**. Sous **administrateurs eDiscovery sélectionnés**, cliquez sur **modifier**, puis sur ![ajouter une](media/ITPro-EAC-AddIcon.gif) icône **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant qu’administrateur de découverte électronique, puis cliquez sur **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, cliquez sur **terminé**. Ensuite, dans la page d’édition choisir le menu volant **administrateur eDiscovery** , cliquez sur **Enregistrer** pour enregistrer les modifications apportées à l’appartenance de l’administrateur de découverte électronique. 
-    
+  
+    **Pour faire d’un utilisateur un gestionnaire eDiscovery :** En regard de **Gestionnaire eDiscovery**, cliquez sur **modifier**. Dans la **section choisir un gestionnaire de découverte électronique** , cliquez sur le lien hypertexte choisir ![le **Gestionnaire eDiscovery** , puis cliquez sur Ajouter une icône](media/ITPro-EAC-AddIcon.gif) **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis cliquez sur **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, cliquez sur **terminé**. Ensuite, dans la page d’édition choisir le menu volant du **Gestionnaire eDiscovery** , cliquez sur **Enregistrer** pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery.
+  
+    **Pour faire d’un utilisateur un administrateur de découverte électronique :** En regard de **Gestionnaire eDiscovery**, cliquez sur **modifier**. Dans la section **choisir un administrateur** eDiscovery, sous administrateurs de la **découverte**électronique, cliquez sur choisir un administrateur de ![ **découverte électronique** , cliquez sur **modifier**, puis cliquez sur Ajouter une icône](media/ITPro-EAC-AddIcon.gif) **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant qu' **administrateur de découverte électronique**, puis cliquez sur **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, cliquez sur **terminé**. Ensuite, dans la page d’édition choisir le menu volant **administrateur eDiscovery** , cliquez sur **Enregistrer** pour enregistrer les modifications apportées à l’appartenance de l’administrateur de découverte électronique.
+      
 > [!NOTE]
 > Vous pouvez également utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour faire d’un utilisateur un administrateur de découverte électronique. Toutefois, l’utilisateur doit se voir attribuer le rôle de gestion des cas avant de pouvoir utiliser cette applet de commande pour en faire un administrateur eDiscovery. Pour plus d’informations, voir [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
@@ -72,12 +72,12 @@ Sur la page **autorisations** du centre de sécurité & conformité, vous pouvez
 
 Le tableau suivant répertorie les rôles RBAC liés à la découverte électronique dans le centre de sécurité & conformité et indique les groupes de rôles intégrés auxquels chaque rôle est affecté par défaut. 
     
-|**Role**|**Administrateur de conformité**|**Administrateur de & du gestionnaire eDiscovery**|**Gestion de l'organisation**|**Relecteur**|
+|**Rôle**|**Administrateur de conformité**|**Administrateur de & du gestionnaire eDiscovery**|**Gestion de l'organisation**|**Relecteur**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Gestion des cas <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Recherche de conformité <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Exporter <br/> | <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Placer <br/>  |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Suspension <br/>  |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Aperçu <br/>  | <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Révision <br/>  | <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |Déchiffrement RMS <br/>  ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
@@ -106,7 +106,7 @@ Le rôle permet aux utilisateurs d’exporter les résultats d’une recherche d
 
 Pour plus d’informations sur l’exportation des résultats de recherche, voir [Export Search Results from Security & Compliance Center](export-search-results.md).
 
-### <a name="hold"></a>Placer
+### <a name="hold"></a>Suspension
 
 Ce rôle permet aux utilisateurs de placer du contenu dans des boîtes aux lettres, des dossiers publics, des sites, des conversations Skype entreprise et des groupes Office 365 en conservation. Lorsque le contenu est en conservation, les propriétaires de contenu peuvent toujours modifier ou supprimer le contenu d’origine, mais le contenu est conservé jusqu’à ce que la conservation soit supprimée ou jusqu’à l’expiration de la durée de la conservation. 
 
@@ -144,7 +144,7 @@ Ce rôle permet aux utilisateurs de procéder à la suppression en bloc des donn
     
 - **Puis-je ajouter un groupe en tant que membre du groupe de rôles gestionnaire eDiscovery ?** Comme expliqué précédemment, vous pouvez ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles gestionnaire de découverte électronique à l’aide de la cmdlet **Add-RoleGroupMember** dans Security & PowerShell Center. Par exemple, vous pouvez exécuter la commande suivante pour ajouter un groupe de sécurité à extension messagerie au groupe de rôles gestionnaire eDiscovery. 
     
-  ```
+  ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 

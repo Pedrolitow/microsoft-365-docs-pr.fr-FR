@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Découvrez comment définir la règle pour ignorer le texte spécifique lors de l’utilisation des modules Analyze et process dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 70d9879f1cb6b3def06ff978fc2f7fa8f20a92f0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cb40ebe946b65f08de9ffc27ff830fbf76d4f8a7
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079972"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685782"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Définir l’option ignorer le texte pour l’analyse dans Office 365 Advanced eDiscovery
 
@@ -96,7 +96,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
   - Le champ eExpression normal peut avoir une longueur illimitée.
     
 > [!TIP]
-> Pour obtenir une explication et la syntaxe détaillée des expressions régulières, voir : [Regular Expression Language-aide-mémoire](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx). 
+> Pour obtenir une explication et la syntaxe détaillée des expressions régulières, voir : [Regular Expression Language-aide-mémoire](https://msdn.microsoft.com/library/az24scfc%28v=vs.110%29.aspx). 
   
 ## <a name="define-ignore-text-rule"></a>Définir la règle de texte ignorer
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil de recherche de contenu dans le centre de sécurité & conformité pour rechercher et exporter des données de conversation MicrosoftTeams (appelées conversations 1xN) pour les utilisateurs locaux dans un déploiement hybride Exchange.
-ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97b849e682c0902b6a2d48919c2f2cd1257d8691
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080338"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685968"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Recherche de boîtes aux lettres en nuage pour les utilisateurs locaux dans Office 365
 
@@ -38,7 +38,7 @@ Voici les conditions requises et les limites de configuration des boîtes aux le
     
  **Remarque :** Les conversations de canal teams sont toujours stockées dans la boîte aux lettres en nuage qui est associée à l’équipe. Cela signifie que vous pouvez utiliser la recherche de contenu pour rechercher des conversations de canal sans avoir besoin de classer une demande de support. Pour plus d’informations sur la recherche de conversations de canal dans Teams, consultez la rubrique [recherche de groupes Microsoft teams et Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Si un utilisateur à extension de Microsoft teams dispose d’une boîte aux lettres locale et que son compte d’utilisateur/son identité a été synchronisé dans le nuage, Microsoft crée une boîte aux lettres en nuage pour stocker les données de conversation des équipes 1xN. Une fois que les données de conversation de teams sont stockées dans la boîte aux lettres en nuage, elles sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées aux cas eDiscovery) pour rechercher, prévisualiser et exporter des données de conversation de teams pour des utilisateurs locaux. Vous pouvez également utiliser ** \*** des applets de commande ComplianceSearch dans le centre de conformité & de sécurité PowerShell pour rechercher des données de conversation teams pour les utilisateurs locaux. 
   
@@ -86,7 +86,7 @@ Une fois que la fonctionnalité est activée, vous pouvez utiliser la recherche 
     
 3. Créez la requête de mot clé et ajoutez des conditions à la requête de recherche si nécessaire. Pour rechercher uniquement les données de conversation d’équipe, vous pouvez ajouter la requête suivante dans la zone **Mots clés** : 
     
-    ```
+    ```text
     kind:im
     ``` 
 
@@ -96,7 +96,7 @@ Une fois que la fonctionnalité est activée, vous pouvez utiliser la recherche 
     
     - **Emplacements spécifiques :** Sélectionnez cette option, puis cliquez sur **modifier** \> : choisir un utilisateur, des groupes ou des équipes pour effectuer des recherches dans des boîtes aux lettres spécifiques. Comme expliqué précédemment, le sélecteur d’emplacements vous permet de rechercher des utilisateurs locaux. 
     
-5. Enregistrez et exécutez la recherche. Tous les résultats de recherche provenant des boîtes aux lettres en nuage pour les utilisateurs locaux peuvent être prévisualisés comme n’importe quel autre résultat de recherche. Vous pouvez également exporter les résultats de la recherche (y compris les données de conversation Teams) vers un fichier PST. Pour plus d’informations, reportez-vous aux rubriques suivantes : 
+5. Enregistrez et exécutez la recherche. Tous les résultats de recherche provenant des boîtes aux lettres en nuage pour les utilisateurs locaux peuvent être prévisualisés comme n’importe quel autre résultat de recherche. Vous pouvez également exporter les résultats de la recherche (y compris les données de conversation Teams) vers un fichier PST. Pour plus d’informations, voir : 
     
     - [Create a search](content-search.md#create-a-search)
     
@@ -112,15 +112,15 @@ Vous pouvez utiliser les cmdlets **New-ComplianceSearch** et **Set-ComplianceSea
     
 2. Exécutez la commande PowerShell suivante pour créer une recherche de contenu qui recherche dans les boîtes aux lettres en nuage des utilisateurs locaux.
     
-    ```
+    ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
-   
+
     Le paramètre *IncludeUserAppContent* est utilisé pour spécifier la boîte aux lettres en nuage pour le ou les utilisateurs spécifiés par le paramètre *exchangelocation permet* . Le *AllowNotFoundExchangeLocationsEnabled* autorise les boîtes aux lettres en nuage pour les utilisateurs locaux. Lorsque vous utilisez la `$true` valeur de ce paramètre, la recherche n’essaie pas de valider l’existence de la boîte aux lettres avant de l’exécuter. Cela est nécessaire pour effectuer des recherches dans les boîtes aux lettres en nuage pour les utilisateurs locaux, car ces types de boîtes aux lettres ne sont pas résolus comme des boîtes aux lettres normales. 
     
     L’exemple suivant recherche les conversations de Teams (c’est-à-dire les messages instantanés) qui contiennent le mot clé « Redstone » dans la boîte aux lettres en nuage d’Sara Davis, qui est un utilisateur local de l’organisation contoso.
   
-    ```
+    ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Vous pouvez créer une boîte aux lettres inactive dans Office 365 en appliquant une stratégie de rétention de blocage ou d’Office 365 à la boîte aux lettres, puis en supprimant le compte d’utilisateur Office 365 correspondant. Les éléments d’une boîte aux lettres inactive sont conservés pendant la durée de la conservation ou de la stratégie de rétention qui lui a été appliquée avant qu’elle ne soit devenue inactive. Pour supprimer définitivement une boîte aux lettres inactive, supprimez simplement la stratégie de conservation ou de rétention.
-ms.openlocfilehash: ca6fc5b579b6974ce89db14d318a6dc5a50f3f5c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cf2484dad9e9fda105985e9291a16a5f8a83f5c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078694"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685895"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Créer et gérer des boîtes aux lettres inactives dans Office 365
 
@@ -73,7 +73,7 @@ Pour afficher la liste des boîtes aux lettres inactives dans votre organisation
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide des informations d’identification d’un compte administrateur de votre organisation Office 365. 
     
-2. Cliquez sur**rétention**de la **gouvernance** > des données.
+2. Cliquez sur**rétention**de **gouvernance** > des informations.
     
 3. Sur la page **rétention** , cliquez sur **autres**![barres](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)d’ellipse de la barre de navigation, puis cliquez sur **boîtes aux lettres inactives**.
     
@@ -85,7 +85,7 @@ Pour afficher la liste des boîtes aux lettres inactives dans votre organisation
   
 Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell pour afficher la liste des boîtes aux lettres inactives.
 
-```
+```powershell
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
@@ -93,10 +93,10 @@ Vous pouvez cliquer ![sur Exporter les résultats](media/47205c65-babd-4b3a-bd7b
   
 Vous pouvez également exécuter la commande suivante pour exporter la liste des boîtes aux lettres inactives et d’autres informations dans un fichier CSV. Dans cet exemple, le fichier CSV est créé dans le répertoire actif.
 
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,DistinguishedName,ExchangeGuid,WhenSoftDeleted | Export-Csv InactiveMailboxes.csv -NoType
 ```
-   
+
 > [!NOTE]
 > Il est possible qu’une boîte aux lettres inactive ait la même adresse SMTP qu’une boîte aux lettres utilisateur active. Dans ce cas, la valeur de la propriété **distinguishedName** ou **ExchangeGuid** peut être utilisée pour identifier une boîte aux lettres inactive de manière unique. 
   
@@ -108,13 +108,13 @@ Vous pouvez accéder au contenu de la boîte aux lettres inactive à l’aide de
     
 - [Exporter les résultats de la recherche de contenu](export-search-results.md)
     
-Voici quelques éléments à garder à l’esprit lors de la recherche de boîtes aux lettres inactives.
+Voici quelques éléments à prendre en considération lors de la recherche de boîtes aux lettres inactives.
   
 - Si une recherche de contenu inclut une boîte aux lettres utilisateur et que celle-ci est devenue inactive, la recherche de contenu continue à rechercher dans la boîte aux lettres inactive lorsque vous relancez la recherche après qu’elle a été inactive.
     
 - Dans certains cas, un utilisateur peut avoir une boîte aux lettres active et une boîte aux lettres inactive possédant la même adresse SMTP. Dans ce cas, seule la boîte aux lettres spécifique que vous sélectionnez comme emplacement pour une recherche de contenu fera l’objet d’une recherche. En d’autres termes, si vous ajoutez la boîte aux lettres d’un utilisateur à une recherche, vous ne pouvez pas supposer que leurs boîtes aux lettres actives et inactives seront recherchées ; seule la boîte aux lettres que vous ajoutez explicitement à la recherche sera recherchée.
     
-- Nous vous recommandons vivement d’éviter d’avoir une boîte aux lettres active et une boîte aux lettres inactive avec la même adresse SMTP. Si vous devez réutiliser l’adresse SMTP actuellement attribuée à une boîte aux lettres inactive, nous vous recommandons de récupérer la boîte aux lettres inactive ou de restaurer le contenu d’une boîte aux lettres inactive vers une boîte aux lettres active (ou l’archive d’une boîte aux lettres active), puis de supprimer le boîte aux lettres inactive.
+- Nous vous déconseillons vivement d’utiliser une boîte aux lettres active et une boîte aux lettres inactive portant la même adresse SMTP. Si vous devez réutiliser l’adresse SMTP actuellement attribuée à une boîte aux lettres inactive, nous vous recommandons de récupérer la boîte aux lettres inactive ou de restaurer le contenu d’une boîte aux lettres inactive vers une boîte aux lettres active (ou l’archive d’une boîte aux lettres active), puis de supprimer le boîte aux lettres inactive.
     
 ## <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive
 

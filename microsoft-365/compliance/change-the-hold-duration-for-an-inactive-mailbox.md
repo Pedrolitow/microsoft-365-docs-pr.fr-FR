@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Une fois qu’une boîte aux lettres Office 365 est devenue inactive, vous pouvez modifier la durée de la conservation ou de la stratégie de rétention d’Office 365 affectée à la boîte aux lettres inactive. La durée de la conservation définit la durée de conservation des éléments dans le dossier Éléments récupérables.
-ms.openlocfilehash: 7840131af3df32b8b8e5a0faa1b101f9ec8ef541
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c07c360a557dfad5b13447bbc9fbf800f96e75d5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078848"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685894"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive dans Office 365
 
@@ -48,16 +48,16 @@ Une boîte aux lettres inactive est utilisée pour conserver l'e-mail d'un ancie
   
 Exécutez la commande suivante dans Exchange Online PowerShell pour afficher les informations de conservation pour toutes les boîtes aux lettres inactives dans votre organisation.
   
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,InPlaceHolds
 ```
-   
+
 La valeur de **True** pour la propriété **LitigationHoldEnabled** indique que la boîte aux lettres inactive est en conservation pour litige. Si une conservation inaltérable, une conservation eDiscovery ou une stratégie de rétention Office 365 est appliquée à une boîte aux lettres inactive, un GUID pour la conservation ou la stratégie de rétention est affiché en tant que valeur pour la propriété **InPlaceHolds**. Par exemple, le code suivant montre les résultats pour 5 boîtes aux lettres inactives. 
   
 ||
 |:-----|
 |
-```
+```text
 DisplayName           : Ann Beebe
 Name                  : annb
 IsInactiveMailbox     : True
@@ -93,7 +93,7 @@ LitigationHoldEnabled : False
 LitigationHoldDuration: Unlimited
 InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 ```
-   
+
 Le tableau suivant indique les cinq différents types de conservations qui ont été utilisés pour chaque boîte aux lettres inactive.
   
 |**Boîte aux lettres inactive**|**Type de conservation**|**Comment identifier la conservation dans la boîte aux lettres inactive**|
@@ -114,7 +114,7 @@ Après avoir identifié le type de conservation placé sur la boîte aux lettres
 
 Voici comment utiliser Exchange Online PowerShell pour modifier la durée de la conservation pour litige appliquée à une boîte aux lettres inactive. Vous ne pouvez pas utiliser le CAE. Exécutez la commande suivante pour modifier la durée de la conservation. Dans cet exemple, la durée de la conservation est modifiée pendant une période illimitée.
   
-```
+```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited
 ```
 
@@ -131,7 +131,7 @@ Les éléments de la boîte aux lettres inactive sont alors conservés indéfini
 
 1. Si vous connaissez le nom de la conservation inaltérable que vous souhaitez modifier, passez à l'étape suivante. Sinon, exécutez la commande suivante pour obtenir le nom de la conservation inaltérable placée sur la boîte aux lettres inactive. Utilisez le GUID de conservation inaltérable que vous avez obtenu à l' [étape 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
@@ -155,13 +155,13 @@ Les éléments de la boîte aux lettres inactive sont alors conservés indéfini
 
 1. Si vous connaissez le nom de la conservation inaltérable que vous souhaitez modifier, passez à l’étape suivante. Sinon, exécutez la commande suivante pour obtenir le nom de la conservation inaltérable placée sur la boîte aux lettres inactive. Utilisez le GUID de conservation inaltérable que vous avez obtenu à l' [étape 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
 2. Exécutez la commande suivante pour modifier la durée du blocage. Dans cet exemple, la durée de la conservation est devenue 2 555 jours (environ 7 ans). 
     
-    ```
+    ```powershell
     Set-MailboxSearch <identity of In-Place Hold> -ItemHoldPeriod 2555
     ```
 
@@ -179,22 +179,22 @@ Les éléments de la boîte aux lettres inactive sont alors conservés indéfini
     
 - **Pour vérifier la nouvelle durée de la conservation, exécutez l'une des commandes suivantes.** La première commande est pour Conservation pour litige et la seconde est pour Conservation inaltérable. 
 
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | FL LitigationHoldDuration
     ```
 
-    ```
+    ```powershell
     Get-MailboxSearch <identity of In-Place Hold> | FL ItemHoldPeriod
     ```
 
 - **Comme les boîtes aux lettres ordinaires, l'Assistant Dossier géré traite également les boîtes aux lettres inactives.** Dans Exchange Online, l'Assistant Dossier géré traite les boîtes aux lettres environ tous les 7 jours. Après avoir modifié la durée de la conservation pour une boîte aux lettres inactive, vous pouvez utiliser la cmdlet **Start-ManagedFolderAssistant** pour démarrer immédiatement le traitement de la nouvelle durée de la conservation pour la boîte aux lettres inactive. Exécutez la commande suivante. 
 
-    ```
+    ```powershell
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>
     ```
    
 - **Si un grand nombre de conservations sont appliquées à une boîte aux lettres inactive, l'ensemble des GUID de suspension ne sera pas affiché.** Vous pouvez exécuter la commande suivante pour afficher les GUID pour toutes les conservations (sauf pour les conservations pour litige) qui figurent dans une boîte aux lettres inactive. 
     
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds
     ```

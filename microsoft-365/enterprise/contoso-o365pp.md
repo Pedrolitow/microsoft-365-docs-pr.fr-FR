@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer Office 365 ProPlus.
-ms.openlocfilehash: ef13ac14be68b12e9483bd20f385e0cd16f51152
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: e0e1343d2ed36b1c76ad4708545c4e6d4010bb45
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627350"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673160"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Déploiement d’Office 365 ProPlus pour Contoso
-
-**Résumé :** Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer Office 365 ProPlus.
 
 Contoso a mis à niveau ses PC vers Windows 10 Entreprise et Office 365 ProPlus pour accroître l’efficacité de la collaboration, améliorer la sécurité et moderniser l’expérience d’ordinateur de bureau. Après évaluation de ses besoins d’infrastructure et de ses besoins métier, Contoso a identifié les exigences principales suivantes en matière de déploiement :
 
@@ -33,7 +31,7 @@ Contoso a mis à niveau ses PC vers Windows 10 Entreprise et Office 365 ProPlu
 
 ## <a name="deployment-tools"></a>Outils de déploiement
 
-Selon ses besoins, Contoso a choisi de déployer Windows 10 Entreprise et Office 365 ProPlus avec Configuration Manager (branche actuelle). Le gestionnaire de configuration s’adapte à des environnements volumineux et offre un contrôle extensif sur l’installation, les mises à jour et les paramètres. Il dispose également de fonctionnalités intégrées pour simplifier et accroître l’efficacité du déploiement et de la gestion d’Office, notamment :
+En se basant sur ses besoins, Contoso a choisi de déployer Windows 10 entreprise et Office 365 ProPlus avec Configuration Manager (branche actuelle). Configuration Manager assure la mise à l’échelle des environnements de grande taille et permet de contrôler de manière étendue l’installation, les mises à jour et les paramètres. Il inclut également des fonctionnalités intégrées qui simplifient et optimisent le déploiement et la gestion d’Office, notamment :
 
 - un cache d’homologue, pouvant aider avec la capacité limitée du réseau lors du déploiement de périphériques dans des emplacements à distance ;
 - le tableau de bord de gestion des clients Office, qui facilite le déploiement Office, surveille les mises à jour et permet aux administrateurs d’accéder aux dernières fonctionnalités de déploiement et de gestion ;

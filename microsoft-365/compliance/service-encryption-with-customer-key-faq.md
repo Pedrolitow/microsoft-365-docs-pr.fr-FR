@@ -7,23 +7,25 @@ ms.date: 7/31/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Outre le chiffrement de base, le chiffrement au niveau du volume qui est activé via BitLocker et le gestionnaire de clés distribuées (DKM), Office 365 offre une couche de chiffrement supplémentaire au niveau de l’application pour le contenu client dans Office 365, y compris les données d’Exchange En ligne, Skype entreprise, SharePoint Online et OneDrive entreprise. Il s’agit du chiffrement de service.
-ms.openlocfilehash: 8b15369571e3a6c021ae0c7337782a0d64436297
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079609"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685855"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>FAQ : chiffrement de service avec une clé client pour Office 365
 
 Outre le chiffrement de base, le chiffrement au niveau du volume qui est activé via BitLocker et le gestionnaire de clés distribuées (DKM), Office 365 offre une couche de chiffrement supplémentaire au niveau de l’application pour le contenu client dans Office 365, y compris les données d’Exchange En ligne, Skype entreprise, SharePoint Online et OneDrive entreprise. Il s’agit du chiffrement de service.
   
-La clé client est basée sur le chiffrement de service et vous permet de fournir et de contrôler les clés utilisées pour chiffrer vos données au repos dans Office 365, comme décrit dans les [services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx). Clé client vous permet de respecter les obligations de conformité car vous contrôlez les clés de chiffrement utilisées par Office 365 pour déchiffrer les données.
+La clé client est basée sur le chiffrement de service et vous permet de fournir et de contrôler les clés utilisées pour chiffrer vos données au repos dans Office 365, comme décrit dans les [services en ligne (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx). Clé client vous permet de respecter les obligations de conformité car vous contrôlez les clés de chiffrement utilisées par Office 365 pour déchiffrer les données.
   
 Pour fournir des commentaires sur la clé client, y compris la documentation, envoyez vos idées, suggestions et perspectives à customerkeyfeedback@microsoft.com.
   
@@ -46,16 +48,16 @@ BYOK avec Azure information protection pour Exchange Online est proposé dans le
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Est-ce que le chiffrement de messages Office 365 et apporter votre propre clé avec Azure information protection modifient l’approche de Microsoft pour les demandes de données tierces telles que les demandes ?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Non. Le chiffrement de messages Office 365 et l’option permettant de fournir et de contrôler vos propres clés de chiffrement avec votre propre clé (BYOK) pour Azure information protection n’ont pas été conçus pour répondre aux apports à l’application de la Loi. Le chiffrement de messages Office 365 avec BYOK pour AIP a été conçu pour les clients ayant des objectifs de conformité qui doivent respecter leurs obligations de conformité internes ou externes. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : [protection des données client de l’espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons [ici](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+Non. Le chiffrement de messages Office 365 et l’option permettant de fournir et de contrôler vos propres clés de chiffrement avec votre propre clé (BYOK) pour Azure information protection n’ont pas été conçus pour répondre aux apports à l’application de la Loi. Le chiffrement de messages Office 365 avec BYOK pour AIP a été conçu pour les clients ayant des objectifs de conformité qui doivent respecter leurs obligations de conformité internes ou externes. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : [protection des données client de l’espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons [ici](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data).
   
-Pour plus d’informations, consultez le centre de gestion de la [confidentialité](https://www.microsoft.com/en-us/trustcenter/default.aspx) relatif aux demandes de données tierces et à la « divulgation des données client » dans les [services en ligne (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
+Pour plus d’informations, consultez le centre de gestion de la [confidentialité](https://www.microsoft.com/trustcenter/default.aspx) relatif aux demandes de données tierces et à la « divulgation des données client » dans les [services en ligne (OST) ](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
   
 ## <a name="does-service-encryption-with-customer-key-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Est-ce que le chiffrement de service avec la clé client modifie l’approche de Microsoft pour les demandes de données tierces telles que les témoignages ?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Non. La clé client n’a pas été conçue pour répondre aux apports à l’application de la Loi. Elle a été conçue pour les clients réglementés afin de répondre à leurs obligations de conformité internes ou externes. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : [protection des données client de l’espionnage public](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons [ici](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+Non. La clé client n’a pas été conçue pour répondre aux apports à l’application de la Loi. Elle a été conçue pour les clients réglementés afin de répondre à leurs obligations de conformité internes ou externes. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : [protection des données client de l’espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons [ici](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
-Pour plus d’informations, consultez le centre de gestion de la [confidentialité](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) relatif aux demandes de données tierces et à la « divulgation des données client » dans les [services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx) . 
+Pour plus d’informations, consultez le centre de gestion de la [confidentialité](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) relatif aux demandes de données tierces et à la « divulgation des données client » dans les [services en ligne (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) . 
   
 ## <a name="is-fasttrack-support-available-for-implementing-customer-key"></a>La prise en charge FastTrack est-elle disponible pour la mise en œuvre de la clé client ?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -89,15 +91,15 @@ Oui. Vous pouvez utiliser l’applet de commande Windows PowerShell Set-MailUser
 ## <a name="how-do-i-verify-that-encryption-with-customer-key-is-activated-and-office-365-has-finished-encrypting-with-customer-key"></a>Comment puis-je vérifier que le chiffrement avec la clé client est activé et qu’Office 365 a terminé le chiffrement avec la clé client ?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online et Skype entreprise :** Vous pouvez vous [connecter à Exchange Online à l’aide de Remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) , puis utiliser la cmdlet **[Get-MailboxStatistics]** pour chaque boîte aux lettres que vous souhaitez vérifier. Dans la sortie de la cmdlet Get-MailboxStatistics, la propriété _IsEncrypted_ renvoie la valeur **true** si la boîte aux lettres est chiffrée et la valeur **false** dans le cas contraire. Si la boîte aux lettres est chiffrée, la valeur renvoyée pour la propriété _DataEncryptionPolicyID_ est le GUID de la DEP avec laquelle la boîte aux lettres est chiffrée. Pour plus d’informations sur l’exécution de cette cmdlet, consultez la rubrique [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx) et Using PowerShell with Exchange Online. 
+ **Exchange Online et Skype entreprise :** Vous pouvez vous [connecter à Exchange Online à l’aide de Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) , puis utiliser la cmdlet **[Get-MailboxStatistics]** pour chaque boîte aux lettres que vous souhaitez vérifier. Dans la sortie de la cmdlet Get-MailboxStatistics, la propriété _IsEncrypted_ renvoie la valeur **true** si la boîte aux lettres est chiffrée et la valeur **false** dans le cas contraire. Si la boîte aux lettres est chiffrée, la valeur renvoyée pour la propriété _DataEncryptionPolicyID_ est le GUID de la DEP avec laquelle la boîte aux lettres est chiffrée. Pour plus d’informations sur l’exécution de cette cmdlet, consultez la rubrique [Get-MailboxStatistics](https://technet.microsoft.com/library/bb124612%28v=exchg.160%29.aspx) et Using PowerShell with Exchange Online. 
   
-Si les boîtes aux lettres ne sont pas chiffrées après avoir attendu 72 heures après l’heure à laquelle vous avez attribué la DEP, lancez un déplacement de boîte aux lettres. Pour ce faire, [Connectez-vous à Exchange Online à l’aide de Remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) , puis utilisez la cmdlet New-MoveRequest et fournissez l’alias de la boîte aux lettres comme suit : 
+Si les boîtes aux lettres ne sont pas chiffrées après avoir attendu 72 heures après l’heure à laquelle vous avez attribué la DEP, lancez un déplacement de boîte aux lettres. Pour ce faire, [Connectez-vous à Exchange Online à l’aide de Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) , puis utilisez la cmdlet New-MoveRequest et fournissez l’alias de la boîte aux lettres comme suit : 
   
-```
+```powershell
 New-MoveRequest <alias>
 ```
 
- **SharePoint Online et OneDrive entreprise :** Vous pouvez vous [connecter à SharePoint Online PowerShell](https://technet.microsoft.com/en-us/library/fp161372.aspx), puis utiliser la cmdlet **[Get-SPODataEncryptionPolicy]** pour vérifier l’état de votre client. La propriété * * _State_* * renvoie la valeur **Registered** si le chiffrement de clé du client est activé et si tous les fichiers de tous les sites ont été chiffrés. Si le chiffrement est toujours en cours, cette applet de commande fournit des informations sur le pourcentage de sites terminé. 
+ **SharePoint Online et OneDrive entreprise :** Vous pouvez vous [connecter à SharePoint Online PowerShell](https://technet.microsoft.com/library/fp161372.aspx), puis utiliser la cmdlet **[Get-SPODataEncryptionPolicy]** pour vérifier l’état de votre client. La propriété * * _State_* * renvoie la valeur **Registered** si le chiffrement de clé du client est activé et si tous les fichiers de tous les sites ont été chiffrés. Si le chiffrement est toujours en cours, cette applet de commande fournit des informations sur le pourcentage de sites terminé. 
   
 ## <a name="if-i-want-to-switch-to-a-different-set-of-keys-how-long-does-it-take-for-the-new-set-of-keys-to-protect-my-data"></a>Si je veux basculer vers un autre ensemble de clés, combien de temps faut-il pour que le nouveau jeu de clés protège mes données ?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -140,7 +142,7 @@ La clé de disponibilité est utilisée avec Exchange Online de trois façons :
   
 Office 365 utilise la clé de disponibilité à la fois pour la disponibilité et la récupération de service à partir d’un état de clé client présentant un manque d’intégrité pour Exchange Online. Il existe une hiérarchie de clés utilisée par la clé client. Cette hiérarchie est illustrée dans la figure suivante.
   
-![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
+![Graphique illustrant la hiérarchie des clés dans la clé client](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
 Si les deux clés Azure Key Vault d’une seule stratégie de chiffrement de données (DEP) ne sont pas disponibles, Office 365 peut utiliser la clé de disponibilité pour passer à une nouvelle DEP. Office 365 détermine s’il faut utiliser la clé de disponibilité pour la disponibilité du service différemment selon qu’une activité initiée par l’utilisateur, par exemple, lorsqu’un utilisateur télécharge du courrier électronique vers le client Outlook ou une activité initiée par le système, telle que l’indexation le contenu des boîtes aux lettres ou les recherches de découverte électronique déclenchait le processus.
   
@@ -206,11 +208,11 @@ Pour SharePoint Online, l’administrateur Office 365 qui configure la clé clie
   
 Pour Exchange Online, les boîtes aux lettres « utilisateur » et « utilisateur de messagerie » doivent être sous licence. Toutes les autres, telles que les boîtes aux lettres partagées, ne doivent pas obligatoirement disposer d’une licence pour la clé client. Pour vérifier que votre boîte aux lettres Exchange Online dispose d’une licence correcte, exécutez l’applet de commande suivante :
   
-```
+```powershell
 (Get-Mailbox <alias >).PersistedCapabilities
 ```
 
-Si la chaîne BPOS_S_EquivioAnalytics existe, la boîte aux lettres dispose d’une licence correcte. Si ce n’est pas le cas, vous devez appliquer la licence appropriée afin d’utiliser la fonctionnalité clé client pour cette boîte aux lettres.
+Si la chaîne BPOS_S_EquivioAnalytics existe, la boîte aux lettres est correctement sous licence. Si ce n’est pas le cas, vous devez appliquer la licence appropriée afin d’utiliser la fonctionnalité clé client pour cette boîte aux lettres.
   
 ## <a name="can-i-enable-customer-key-for-a-trial-subscription"></a>Puis-je activer la clé client pour un abonnement d’évaluation ?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -220,9 +222,9 @@ Non. Par définition, les abonnements d’essai ont une durée de vie limitée. 
 ## <a name="how-much-will-using-customer-key-cost"></a>Combien va utiliser le coût clé client ?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-En plus de la licence requise pour la clé client, les clients se verront attribuer un coût pour l’utilisation du coffre-fort. Les détails relatifs à la tarification de la [chambre forte des clés Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/) décrivent le modèle de coût et vous aideront à l’estimer. Il n’existe aucun moyen de prédire le coût exact qu’un client doit supporter car les modèles d’utilisation varient. L’expérience a démontré que le coût est très faible et qu’il tombe généralement entre $0,002 et $0,005 par utilisateur et par mois plus le coût des clés sauvegardées par HSM. Le coût varie également en fonction de la configuration de journalisation choisie par le client et de la quantité de stockage Azure utilisée pour les journaux de coffre-fort de clés Azure. 
+En plus de la licence requise pour la clé client, les clients se verront attribuer un coût pour l’utilisation du coffre-fort. Les détails relatifs à la tarification de la [chambre forte des clés Azure](https://azure.microsoft.com/pricing/details/key-vault/) décrivent le modèle de coût et vous aideront à l’estimer. Il n’existe aucun moyen de prédire le coût exact qu’un client doit supporter car les modèles d’utilisation varient. L’expérience a démontré que le coût est très faible et qu’il tombe généralement entre $0,002 et $0,005 par utilisateur et par mois plus le coût des clés sauvegardées par HSM. Le coût varie également en fonction de la configuration de journalisation choisie par le client et de la quantité de stockage Azure utilisée pour les journaux de coffre-fort de clés Azure. 
   
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 Pour commencer à utiliser la clé client, consultez [la rubrique contrôle de vos données dans Office 365 à l’aide de la clé client](controlling-your-data-using-customer-key.md).

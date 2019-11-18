@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'Utilisez un script PowerShell pour créer une recherche de découverte électronique inaltérable dans Exchange Online, en fonction d’une recherche créée dans le centre de sécurité & conformité. '
-ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a16bf747da2d2eb8219ac4c13f4ff8c34d37b2c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079660"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685960"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Utilisation de la recherche de contenu dans votre flux de travail de découverte électronique
 
@@ -62,11 +62,11 @@ Vous pouvez également utiliser la cmdlet **New-ComplianceSearch** pour effectue
   
 Voici un exemple d’utilisation de PowerShell pour effectuer une recherche dans toutes les boîtes aux lettres de votre organisation. La requête de recherche renvoie tous les messages envoyés entre le 1er janvier 2015 et le 30 juin 2015 contenant l’expression « financial report » dans l’objet. La première commande crée la recherche et la deuxième commande l'exécute. 
   
-```
+```powershell
 New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -ContentMatchQuery 'sent>=01/01/2015 AND sent<=06/30/2015 AND subject:"financial report"'
 ```
 
-```
+```powershell
 Start-ComplianceSearch -Identity "Search All-Financial Report"
 ```
 
@@ -80,7 +80,7 @@ Pour vous aider à créer une recherche de contenu ne comportant pas plus de 1 0
   
 1. Enregistrez le texte suivant dans un fichier de script PowerShell à l’aide du suffixe de nom de fichier. ps1. Par exemple, vous pouvez l’enregistrer dans un fichier nommé `SourceMailboxes.ps1`.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -112,7 +112,7 @@ Pour vous aider à créer une recherche de contenu ne comportant pas plus de 1 0
 
 2. Dans Security & Compliance Center PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script. par exemple :
     
-    ```
+    ```powershell
     .\SourceMailboxes.ps1
     ```
 
@@ -128,7 +128,7 @@ L’étape suivante consiste à connecter Windows PowerShell au centre de sécur
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide du suffixe de nom de fichier .ps1. Par exemple, vous pouvez l’enregistrer dans un fichier nommé `ConnectEXO-CC.ps1`.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -139,11 +139,11 @@ L’étape suivante consiste à connecter Windows PowerShell au centre de sécur
 
 2. Sur votre ordinateur local, ouvrez Windows PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script ; par exemple :
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
 
-Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets du centre de conformité & de sécurité et d’Exchange Online sont importées dans votre session PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter une cmdlet Security & Compliance Center (par exemple, **install-UnifiedCompliancePrerequisite** ) et une cmdlet Exchange Online, telle que **Get-Mailbox**. 
+Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets du centre de conformité & de sécurité et d’Exchange Online sont importées dans votre session PowerShell locale. Si aucun message d’erreur ne s’affiche, cela signifie que la connexion a été correctement établie. Un test rapide consiste à exécuter une cmdlet Security & Compliance Center (par exemple, **install-UnifiedCompliancePrerequisite** ) et une cmdlet Exchange Online, telle que **Get-Mailbox**. 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>Étape 3 : exécuter le script pour créer une recherche de découverte électronique inaltérable à partir de la recherche de contenu
 
@@ -167,7 +167,7 @@ Une fois que vous avez créé la session PowerShell double à l’étape 2, l’
     
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide du suffixe de nom de fichier .ps1. Par exemple, vous pouvez l’enregistrer dans un fichier nommé `CreateMBSearchFromComplianceSearch.ps1`.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -231,12 +231,11 @@ Une fois que vous avez créé la session PowerShell double à l’étape 2, l’
   {
     New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -SearchQuery $query -EstimateOnly;
   }
-  
   ```
 
 2. Dans la session Windows PowerShell que vous avez créée à l’étape 2, accédez au dossier dans lequel se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script. par exemple :
     
-    ```
+    ```powershell
     .\CreateMBSearchFromComplianceSearch.ps1
     ```
 

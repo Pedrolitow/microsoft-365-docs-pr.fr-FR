@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: Examinez, dépannez et résolvez les problèmes courants dans Office 365 eDiscovery.
 siblings_only: true
-ms.openlocfilehash: 0d411976ecf6adba9df1f75eb8a45409647b3e1a
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: 37e92e480759601f9dfe61430bdd647b20df051d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378636"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685932"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, dépanner et résoudre les problèmes eDiscovery courants
 
@@ -29,7 +29,7 @@ Cette rubrique décrit les étapes de résolution des problèmes que vous pouvez
 
 ## <a name="errorissue-ambiguous-location"></a>Erreur/problème : emplacement ambigu
 
-Si vous essayez d’ajouter l’emplacement de la boîte aux lettres de l’utilisateur à rechercher et qu’il existe des objets en double ou en conflit avec le même ID utilisateur dans le répertoire Exchange Online Protection `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`(EoP), vous recevrez le message d’erreur suivant :. 
+Si vous essayez d’ajouter l’emplacement de la boîte aux lettres d’un utilisateur à la recherche et qu’il existe des objets en double ou en conflit avec le même ID utilisateur dans le répertoire Exchange `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`Online Protection (EoP), vous recevez le message d’erreur suivant :. 
 
 ### <a name="resolution"></a>Résolution
 
@@ -37,19 +37,19 @@ Recherchez les utilisateurs en double ou la liste de distribution avec le même 
 
 1. Connectez-vous au [Centre de sécurité & conformité d’Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-2. Récupérez toutes les instances du nom d’utilisateur, tapez :
+2. Exécutez la commande suivante pour récupérer toutes les instances du nom d’utilisateur :
 
     ```powershell
     Get-Recipient <username>
     ```
 
-La sortie de « useralias@contoso.com » est semblable à ce qui suit :
+   La sortie de « useralias@contoso.com » est semblable à ce qui suit :
 
-> 
-> |Name  |RecipientType  |
-> |---------|---------|
-> |Alias, User     |MailUser         |
-> |Alias, User     |Utilisateur         |
+   > 
+   > |Nom  |RecipientType  |
+   > |---------|---------|
+   > |Alias, User     |MailUser         |
+   > |Alias, User     |Utilisateur         |
 
 3. Si plusieurs utilisateurs sont renvoyés, recherchez et corrigez l’objet en conflit.
 
@@ -64,7 +64,7 @@ Une recherche de contenu ou eDiscovery peut produire l’erreur suivante :
 
 Si vous recevez cette erreur, nous vous recommandons de vérifier les emplacements qui ont échoué dans la recherche, puis de réexécuter la recherche uniquement sur les emplacements ayant échoué.
 
-1. Connectez-vous au [Centre de sécurité & conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis entrez la commande suivante :
+1. Connectez-vous au [Centre de sécurité & conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante :
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -74,11 +74,11 @@ Si vous recevez cette erreur, nous vous recommandons de vérifier les emplacemen
 
 3. Renouvelez la recherche de découverte électronique aux emplacements ayant échoué uniquement.
 
-4. Si vous continuez à recevoir ces erreurs, reportez-vous à la rubrique [Retry failed locations](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) pour obtenir d’autres étapes de dépannage.
+4. Si vous continuez à recevoir ces erreurs, reportez-vous à la rubrique [Retry failed locations](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) pour obtenir d’autres étapes de dépannage.
 
 ## <a name="errorissue-file-not-found"></a>Erreur/problème : fichier introuvable
 
-Lors de l’exécution d’une recherche de découverte électronique incluant SharePoint Online et un lecteur pour les emplacements d’entreprise `File Not Found` , vous pouvez recevoir le message d’erreur même si le fichier se trouve sur le site. Cette erreur se produira dans les avertissements et les erreurs d’exportation. csv ou éléments ignorés. csv. Cela peut se produire si le fichier est introuvable sur le site ou si l’index est obsolète. Voici le texte d’une erreur réelle, avec l’accentuation ajoutée.
+Lors de l’exécution d’une recherche de découverte électronique incluant SharePoint Online et un lecteur pour les emplacements d’entreprise `File Not Found` , vous pouvez recevoir le message d’erreur même si le fichier se trouve sur le site. Cette erreur se produira dans les avertissements et les erreurs d’exportation. csv ou éléments ignorés. csv. Cela peut se produire si le fichier est introuvable sur le site ou si l’index est obsolète. Voici le texte d’une erreur réelle (avec mise en relief ajoutée).
   
 > 28.06.2019 10:02:19_FailedToExportItem_Failed pour télécharger du contenu. Informations de diagnostic supplémentaires : Microsoft. Office. Compliance. EDiscovery. ExportWorker. exceptions. ContentDownloadTemporaryFailure : échec de téléchargement à partir du contenu 6ea52149-91cd-4965-b5bb-82ca6a3ec9be de type document. ID de corrélation : 3bd84722-937b-4c23-B61B-08d6fba9ec32. ServerErrorCode :-2147024894---> Microsoft. SharePoint. client. ServerException : ***fichier introuvable***. at Microsoft. SharePoint. client. ClientRequest. ProcessResponseStream (Stream responseStream) à Microsoft. SharePoint. client. ClientRequest. ProcessResponse ()---fin de la trace de la pile d’exception interne---
 
@@ -86,7 +86,7 @@ Lors de l’exécution d’une recherche de découverte électronique incluant S
 
 1. Vérifiez l’emplacement identifié dans la recherche pour vous assurer que l’emplacement du fichier est correct et ajouté aux emplacements de recherche.
 
-2. Utilisez les procédures pour [demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) pour réindexer le site.
+2. Utilisez les procédures pour [demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](https://docs.microsoft.com/sharepoint/crawl-site-content) pour réindexer le site.
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Erreur/problème : la recherche échoue, car le destinataire est introuvable
 
@@ -96,7 +96,7 @@ Une recherche de découverte électronique échoue avec `recipient not found`l�
 
 1. Connectez-vous à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Vérifiez si l’objet utilisateur est synchronisé avec le type de protection Exchange Online :
+2. Exécutez la commande suivante pour vérifier si l’utilisateur est synchronisé avec Exchange Online Protection :
 
     ```powershell
     Get-Recipient <userId> | FL
@@ -110,9 +110,9 @@ Lors de l’exportation des résultats de recherche à partir de eDiscovery ou d
 
 ### <a name="resolution"></a>Résolution
 
-1.  Essayez d’utiliser les étapes indiquées dans l’article [augmenter les vitesses de téléchargement](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
+1.  Essayez d’utiliser les étapes indiquées dans l’article [augmenter les vitesses de téléchargement](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2.  Si vous rencontrez toujours des problèmes, connectez-vous à [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis entrez la commande suivante :
+2.  Si vous rencontrez toujours des problèmes, connectez-vous à [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante :
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -120,7 +120,7 @@ Lors de l’exportation des résultats de recherche à partir de eDiscovery ou d
 
 4. Recherchez la quantité de données à télécharger dans les paramètres SearchResults et SearchStatistics.
 
-5. Entrez la commande suivante :
+5. Exécutez la commande suivante :
 
    ```powershell
    Get-ComplianceSearchAction | FL
@@ -140,15 +140,15 @@ Lors de l’exécution d’une recherche de découverte électronique, si la rec
 
 1. Fractionnez la recherche en petites recherches et réexécutez la recherche.  Essayez d’utiliser une plage de dates plus petite ou limitez le nombre d’emplacements recherchés.
 
-2. Connectez-vous au [Centre de sécurité & conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis entrez la commande suivante :
+2. Connectez-vous au [Centre de sécurité & conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante :
 
-    ```powershell
+    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
     ```
 
 3. Examinez la sortie pour les résultats et les erreurs.
 
-4. Examinez le fichier trace. log. Il se trouve dans le dossier vers lequel vous avez envoyé l’exportation.
+4. Examinez le fichier trace. log. Il se trouve dans le dossier dans lequel vous avez exporté les résultats de la recherche.
 
 5. Contactez le support technique Microsoft.
 
@@ -156,21 +156,42 @@ Lors de l’exécution d’une recherche de découverte électronique, si la rec
 
 erreur de distribution de la stratégie de conservation de cas eDiscovery. L’erreur indique :
 
-> «Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état final du déploiement peut prendre deux heures supplémentaires, vous pouvez donc vérifier en quelques heures.
+> «Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état final du déploiement peut prendre 2 heures supplémentaires, donc revenez en quelques heures.
 
 ### <a name="resolution"></a>Résolution
 
-1.  Connectez-vous au [Centre de sécurité & conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis entrez la commande suivante :
+1.  Connectez-vous au [Centre de sécurité & conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante pour une conservation de cas eDiscovery :
 
     ```powershell
-    Get-RetentionCompliancePolicy  <policyname> - DistributionDetail | FL
+    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
+    ```
+
+    Pour une stratégie de rétention, exécutez la commande suivante :
+
+    ```powershell
+    Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
     ```
 
 2. Examinez la valeur du paramètre DistributionDetail pour rechercher les erreurs suivantes :
+ 
+   > Erreur : ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état final du déploiement peut prendre 2 heures supplémentaires, donc revenez en quelques heures. 
+   
+3. Essayez d’exécuter le paramètre RetryDistribution sur la stratégie en question :
+   
+    
+    Pour les conservations de cas eDiscovery :
 
-   > Si une erreur existe, créez une escalade à PG pour forcer une resynchronisation manuelle sur la stratégie.
+    ```powershell
+    Set-CaseHoldPolicy <policyname> -RetryDistribution
+    ```
 
-3. Contactez le support technique Microsoft.
+    Pour les stratégies de rétention :
+
+    ```powershell
+    Set-RetentionCompliancePolicy <policyname> -RetryDistribution
+    ``` 
+
+4. Contactez le support technique Microsoft.
 
 ## <a name="see-also"></a>Voir aussi
 

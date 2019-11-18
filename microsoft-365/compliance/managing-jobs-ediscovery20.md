@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c0dd3b19f1fb666e07f70c36db05ed520093bfac
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9f3a27cc86bb764191aa23cd9159c97635f62e09
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079373"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38685845"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Gérer les travaux dans Advanced eDiscovery
 
@@ -27,10 +27,10 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 
 | Type du travail            | Description     |
 | :----------------- | :----------     |
-|Ajout de données à un ensemble de révision | Un utilisateur ajoute les résultats d’une recherche à un jeu de révision. Cette tâche est composée de deux sous-travaux : </br> </br>• **GatheringItems** -une liste d’éléments qui correspondent à la requête de recherche (et la source de données Office 365 dans laquelle ils sont situés) est générée. </br>• L’ingestion **& l’indexation** : les éléments qui correspondent à la requête de recherche sont copiés vers un emplacement de stockage Azure (dans un processus appelé ingestion *), puis*les éléments de l’emplacement de stockage Azure sont réindexés. Ce nouvel index est utilisé lors de l’interrogation et de l’analyse d’éléments dans le jeu de données. </br></br>Pour plus d’informations, consultez [la rubrique ajouter des résultats de recherche à un jeu de révision](add-data-to-review-set.md). |
+|Ajout de données à un ensemble de révision | Un utilisateur ajoute les résultats d’une recherche à un jeu de révision. Cette tâche est composée de deux sous-travaux : </br>• **GatheringItems** -une liste d’éléments qui correspondent à la requête de recherche (et la source de données Office 365 dans laquelle ils sont situés) est générée. </br>• L’ingestion **& l’indexation** : les éléments qui correspondent à la requête de recherche sont copiés vers un emplacement de stockage Azure (dans un processus appelé ingestion *), puis*les éléments de l’emplacement de stockage Azure sont réindexés. Ce nouvel index est utilisé lors de l’interrogation et de l’analyse d’éléments dans le jeu de données. </br></br>Pour plus d’informations, consultez [la rubrique ajouter des résultats de recherche à un jeu de révision](add-data-to-review-set.md). |
 |Ajout de données à un autre ensemble de vérification | Un utilisateur ajoute des documents à partir d’un ensemble de réexamen dans le même cas. Pour plus d’informations, consultez [la rubrique ajouter des données à un jeu de réexamen à partir d’un autre ensemble de révision](add-data-to-review-set-from-another-review-set.md).|
 |Ajout de données non-Office 365 à un jeu de révision | Un utilisateur télécharge des données non-Office 365 vers un jeu de révision. Les données sont également indexées pendant ce processus. Par exemple, les fichiers d’un serveur de fichiers local ou d’un ordinateur client sont chargés dans un jeu de révision. Pour plus d’informations, voir [charger des données non-Office 365 dans un jeu de révision](load-non-office365-data.md).| 
-|Ajout de données corrigées à un jeu de révision | Les données avec des erreurs de traitement sont corrigées et rechargées dans un jeu de révision. Pour plus d’informations, consultez la rubrique [erreur de correction lors du traitement des données](error-remediation.md). | 
+|Ajout de données corrigées à un jeu de révision | Les données avec des erreurs de traitement sont corrigées et rechargées dans un jeu de révision. Pour plus d’informations, voir :</br>• [Correction des erreurs lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Correction d’erreur sur un seul élément](single-item-error-remediation.md)| 
 |Comparaison des jeux de charges | Un utilisateur examine les différences entre les différents jeux de charges dans un jeu de réexamen. Un jeu de charges est une instance de l’ajout de données à un jeu de réexamen. Par exemple, si vous ajoutez les résultats de deux recherches différentes au même jeu de réexamen, chacun d’entre eux représenterait un jeu de charges. Pour plus d’informations, consultez la rubrique [Manage Load Sets](manage-load-sets.md). |
 |Conversion de documents biffés au format PDF|Une fois qu’un utilisateur a annoté un document dans un jeu de révision et rédige une partie de celui-ci, il peut choisir de convertir le document rédigé en fichier PDF. Cela permet de s’assurer que la partie biffée n’est pas visible si le document est exporté pour présentation. Pour plus d’informations, consultez [la rubrique View documents in a Review Set](annotating-and-redacting-documents.md). |
 |Estimation des résultats de recherche | Après qu’un utilisateur a créé et exécuté une nouvelle recherche (ou ré-exécute une recherche existante), l’outil de recherche recherche dans l’index les éléments qui correspondent à la requête de recherche et prépare une estimation qui inclut le nombre et la taille totale de tous les éléments par la recherche, et le nombre de sources de données Sear ched.  Pour plus d’informations, reportez-vous [à la rubrique Collect Data for a case](collecting-data-for-ediscovery.md). | 
@@ -54,4 +54,4 @@ Le tableau suivant décrit les différents États d’État pour les travaux.
 | En cours | Le travail est en cours, vous pouvez surveiller la progression de la tâche dans l’onglet **travaux** . |
 | Satisfaisant | Le travail s’est terminé avec succès. La date et l’heure de fin du travail s’affichent dans la colonne **terminé** de l’onglet **travaux** . |
 | Partiellement réussi | Le travail a été partiellement réussi. |
-| Failed | Échec du travail.  Essayez de réexécuter l’action qui a déclenché le travail. Si la tâche échoue pour la deuxième fois, nous vous recommandons de contacter le support Microsoft et de fournir les informations de support du travail. |
+| Échec | Échec du travail.  Essayez de réexécuter l’action qui a déclenché le travail. Si la tâche échoue pour la deuxième fois, nous vous recommandons de contacter le support Microsoft et de fournir les informations de support du travail. |

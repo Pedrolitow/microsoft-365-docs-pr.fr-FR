@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et dans SharePoint ou OneDrive entreprise à l’aide de l’outil de recherche de contenu dans le centre de conformité & Compliance Center.  '
-ms.openlocfilehash: 5b3438537e2936fa140052c6869f84937e103746
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e01953c6397c8c7ca9f38780537f3f7546b238fb
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078490"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685912"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -74,7 +75,7 @@ Le tableau suivant répertorie les propriétés de message électronique pouvant
 
 ## <a name="searchable-site-properties"></a>Propriétés de site utilisables dans une requête
 
-Le tableau suivant répertorie certaines des propriétés SharePoint et OneDrive entreprise qui peuvent être recherchées à l’aide de la fonctionnalité de recherche de contenu dans le centre de sécurité & Compliance Center ou à l’aide de la commande **New-ComplianceSearch** ou de la commande **Set-ComplianceSearch **cmdlet. Il inclut un exemple de syntaxe  _property:value_ pour chaque propriété et une description des résultats de recherche renvoyés par ces exemples. 
+Le tableau suivant répertorie certaines des propriétés SharePoint et OneDrive entreprise qui peuvent être recherchées à l’aide de la fonctionnalité de recherche de contenu dans le centre de sécurité & Compliance Center ou à l’aide de l’applet **de** commande Set-ComplianceSearch ou de la cmdlet **Set-** . Il inclut un exemple de syntaxe  _property:value_ pour chaque propriété et une description des résultats de recherche renvoyés par ces exemples. 
   
 Pour obtenir la liste complète des propriétés SharePoint pouvant faire l’objet d’une recherche, voir [vue d’ensemble des propriétés analysées et gérées dans SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Les propriétés marquées par **Oui** dans la colonne pouvant faire l’objet d’une **requête** peuvent être recherchées. 
   
@@ -277,7 +278,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez des critères de 
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Exemples
 
-Les exemples suivants illustrent la version basée sur l’interface utilisateur graphique d’une requête de recherche avec des conditions, la syntaxe de requête de recherche qui s’affiche dans le volet d’informations de la recherche sélectionnée (qui est également renvoyée par la cmdlet **Get-ComplianceSearch** ) et la logique du requête KQL correspondante. 
+Les exemples suivants illustrent la version basée sur l’interface utilisateur graphique d’une requête de recherche avec des conditions, la syntaxe de requête de recherche qui s’affiche dans le volet d’informations de la recherche sélectionnée (qui est également renvoyée par la cmdlet **Get-ComplianceSearch** ) et la logique de la requête KQL correspondante. 
   
 #### <a name="example-1"></a>Exemple 1
 
@@ -379,13 +380,13 @@ Seuls les documents partagés à l’aide de la troisième option (partagés ave
 
 Vous pouvez utiliser la requête de mot clé suivante pour rechercher spécifiquement du contenu dans les conversations de Skype entreprise :
 
-```
+```powershell
 kind:im
 ```
 
 La requête de recherche précédente renvoie également des conversations à partir de Microsoft Teams. Pour éviter cela, vous pouvez limiter les résultats de la recherche pour inclure uniquement les conversations Skype entreprise à l’aide de la requête de mot clé suivante :
 
-```
+```powershell
 kind:im AND subject:conversation
 ```
 
@@ -393,7 +394,7 @@ La requête par mot clé précédente exclut les conversations dans Microsoft Te
 
 Pour rechercher des conversations Skype entreprise qui se sont produites dans une plage de dates spécifique, utilisez la requête de mot clé suivante :
 
-```
+```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Découvrez comment Exchange Online et Office 365 utilisent le protocole TLS (Transport Layer Security) et la confidentialité de transmission (FD) pour sécuriser les communications de messagerie. Obtenir également des informations sur le certificat émis par Microsoft pour Exchange Online.
-ms.openlocfilehash: e165be9a3407abfcc165054f7f147eeb2d2c0a82
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 34667714840e23be5d19aed8f47a539ea1474ab4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079248"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685760"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie dans Office 365
 
@@ -88,7 +88,7 @@ Le nouveau certificat est émis par une autorité de certification (CA) différe
 Le nouveau certificat nécessite la connexion aux points de terminaison de la nouvelle autorité de certification dans le cadre de la validation du certificat. Si vous ne le faites pas, le flux de messagerie risque d’être affecté. Si vous protégez vos serveurs de messagerie avec des pare-feu qui permettent uniquement aux serveurs de messagerie de se connecter à certaines destinations, vous devez vérifier si votre serveur est en mesure de valider le nouveau certificat. Pour vérifier que votre serveur peut utiliser le nouveau certificat, procédez comme suit :
 
 1. Connectez-vous à votre serveur Exchange local à l’aide de Windows PowerShell, puis exécutez la commande suivante :  
-  `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
+  `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
 2. Dans la fenêtre qui s’affiche, sélectionnez **récupérer**.
 3. Lorsque l’utilitaire termine sa vérification, il renvoie un État. Si l’état affiche **OK**, votre serveur de messagerie peut valider le nouveau certificat. Si ce n’est pas le cas, vous devez déterminer la cause de l’échec des connexions. Il est fort probable que vous deviez mettre à jour les paramètres d’un pare-feu. La liste complète des points de terminaison à accéder est la suivante :
     - ocsp.globalsign.com

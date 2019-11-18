@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Cet article explique comment utiliser l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & conformité pour supprimer des éléments de leur emplacement d’origine.
-ms.openlocfilehash: d855a8e4c69d64cdb37c40b37b042c2571af67a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070623"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38685884"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Supprimer des éléments de leur emplacement d’origine (aperçu)
 
@@ -29,7 +31,7 @@ La fonctionnalité permettant de supprimer des éléments de leur emplacement d�
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour supprimer des éléments, vous devez disposer du rôle de **recherche et de purge** dans le centre de sécurité & conformité. Ce rôle est affecté par défaut au groupe de rôles intégré de l’expérimentation de données. 
+- Pour supprimer des éléments, vous devez disposer du rôle de **recherche et de purge** dans le centre de sécurité & conformité. Ce rôle est affecté par défaut au groupe de rôles intégré de l’expérimentation de données.
 
 - La procédure de cette rubrique suppose que vous avez exécuté une recherche associée à une enquête et ajouté les résultats de la recherche à un jeu de preuves. Une fois que les résultats de la recherche sont dans preuve, vous pouvez sélectionner un ou plusieurs éléments à supprimer. Pour plus d’informations, consultez la rubrique [Rechercher des données dans une enquête](search-for-data.md).
 
@@ -41,7 +43,7 @@ Pour supprimer des éléments de leur emplacement d’origine, procédez comme s
 
 1. Dans l’outil **enquêtes de données** , ouvrez l’enquête de données qui contient les éléments à supprimer, puis cliquez sur l’onglet **preuve** .
 
-2. Sélectionnez les éléments que vous souhaitez supprimer. Vous pouvez sélectionner tous les éléments de l’ensemble de preuves ou simplement un sous-ensemble d’éléments. 
+2. Sélectionnez les éléments que vous souhaitez supprimer. Vous pouvez sélectionner tous les éléments de l’ensemble de preuves ou simplement un sous-ensemble d’éléments.
 
    > [!NOTE]
    > Si vous sélectionnez les pièces jointes d’un message électronique ou un fichier joint à un document dans SharePoint et OneDrive, l’élément parent est également sélectionné et supprimé lorsque l’élément est supprimé de son emplacement d’origine. De même, si vous sélectionnez un élément qui comporte des pièces jointes, l’élément d’élément parent et toutes les pièces jointes sont supprimés.
@@ -57,11 +59,11 @@ Pour supprimer des éléments de leur emplacement d’origine, procédez comme s
    > [!NOTE]
    > Dans la capture d’écran précédente, le nombre d’éléments indique le nombre d’éléments sélectionnés pour la suppression. Le nombre de documents indique le nombre total d’éléments, y compris les fichiers joints à un élément parent. Par exemple, si vous sélectionnez un message électronique et que celui-ci contient un document Word joint, le nombre d’éléments et de documents affichés sous **documents sélectionnés seulement** est **1 élément (2 documents)**.
 
-Vous pouvez suivre la progression de la tâche **Supprimer les éléments à partir des emplacements d’origine** dans l’onglet **travaux** . cliquez sur le travail pour afficher la page de menu volant. 
+Vous pouvez suivre la progression de la tâche **Supprimer les éléments à partir des emplacements d’origine** dans l’onglet **travaux** . cliquez sur le travail pour afficher la page de menu volant.
 
 ![Page de menu volant pour supprimer des éléments du travail d’origine](media/DataInvestigationsDeleteItems3.png)
 
-Lorsque les éléments de la tâche sont supprimés, le statut du travail est défini sur **réussi**. L’heure et la date du travail terminé sont également affichées. 
+Lorsque les éléments de la tâche sont supprimés, le statut du travail est défini sur **réussi**. L’heure et la date du travail terminé sont également affichées.
 
 ![Tâche de suppression des éléments terminée](media/DataInvestigationsDeleteItems4.png)
 

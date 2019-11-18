@@ -7,19 +7,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 10/8/2019
+ms.date: 10/16/2019
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Le chiffrement de messages avancé dans Office 365 aide les organisations à respecter leurs obligations de conformité en permettant aux administrateurs d’expirer et de révoquer l’accès par le biais d’un portail Web Office 365 à des e-mails chiffrés.
-ms.openlocfilehash: eb6e95b1cbf24ab19df6a595c34721c84c831211
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+description: Le chiffrement de messages avancé dans Office 365 aide les organisations à respecter leurs obligations de conformité en permettant aux administrateurs de faire encore plus avec des messages protégés.
+ms.openlocfilehash: 7594a6ed2226081e54af957268cf0ca3fe403767
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435508"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685787"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Chiffrement de messages avancé Office 365
 
@@ -29,16 +29,18 @@ Le chiffrement de messages avancé dans Office 365 aide les clients à respecter
 
 Vous pouvez uniquement révoquer et définir une date d’expiration pour les messages électroniques envoyés à des destinataires externes.
 
-Avec le chiffrement de messages avancé Office 365, à chaque fois que vous appliquez un modèle de personnalisation personnalisé, Office 365 applique un wrapper aux courriers électroniques correspondant à la règle de flux de messagerie à laquelle vous appliquez le modèle. Vous pouvez uniquement révoquer des messages et appliquer des dates d’expiration aux messages que les utilisateurs reçoivent via le portail. En d’autres termes, le courrier électronique auquel un modèle de personnalisation personnalisé est appliqué.
-
 ## <a name="get-started-with-office-365-advanced-message-encryption"></a>Prise en main du chiffrement avancé des messages Office 365
 
-Les rubriques suivantes décrivent comment configurer et utiliser le chiffrement de messages avancé.
+Les articles suivants décrivent comment configurer et utiliser le chiffrement de messages avancé.
 
-Votre organisation doit disposer d’un abonnement qui inclut le chiffrement de messages avancé Office 365. Pour plus d’informations sur les abonnements pris en charge, voir la description de la [stratégie de message et du service de conformité](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
+Votre organisation doit disposer d’un abonnement qui inclut le chiffrement de messages avancé Office 365. Pour plus d’informations sur les abonnements pris en charge, voir la description de la [stratégie de message et du service de conformité](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
 
 Si vous n’avez pas déjà configuré le chiffrement de messages Office 365, reportez-vous à la rubrique [set up New Office 365 message Encryption Capabilities](set-up-new-message-encryption-capabilities.md).
+
+Avec le chiffrement de messages avancé, vous n’êtes pas limité à un seul modèle de personnalisation. Au lieu de cela, vous pouvez créer et utiliser plusieurs modèles de personnalisation. Pour plus d’informations, reportez-vous à la rubrique [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).
 
 [Définir une date d’expiration pour les messages chiffrés par le chiffrement de messages avancé Office 365](ome-advanced-expiration.md). Contrôlez les messages électroniques sensibles partagés en dehors de l’organisation à l’aide de stratégies automatiques qui améliorent la protection en arrivant à expiration de l’accès via un portail Web sécurisé aux messages chiffrés.
 
 [Révoquer le courrier électronique chiffré par le chiffrement de messages avancé Office 365](revoke-ome-encrypted-mail.md). Contrôlez les messages électroniques sensibles partagés hors de l’organisation et améliorez la protection en révoquant l’accès via un portail Web sécurisé à des e-mails chiffrés.  
+
+Avec le chiffrement de messages avancé Office 365, à chaque fois que vous appliquez un modèle de personnalisation personnalisé, Office 365 applique un wrapper aux courriers électroniques correspondant à la règle de flux de messagerie à laquelle vous appliquez le modèle. Vous pouvez uniquement révoquer des messages et appliquer des dates d’expiration aux messages que les utilisateurs reçoivent via le portail. En d’autres termes, le courrier électronique auquel un modèle de personnalisation personnalisé est appliqué. Pour plus d’informations et un exemple, reportez-vous à l’aide pour [vérifier que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés, à savoir le chiffrement de messages avancé Office 365 uniquement](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only).

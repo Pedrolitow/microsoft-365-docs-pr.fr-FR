@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez les outils de découverte électronique et de recherche Office 365 pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: bf6c22a593a2611b86012cd51e3e2932a13dfe4d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078585"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685941"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solutions eDiscovery : scénario de fuite de données-recherche et purge
 
@@ -82,7 +82,7 @@ Pour créer une recherche de contenu associée à un cas de découverte électro
 
 Après avoir créé une recherche de contenu, vous devez vérifier et valider les résultats de la recherche et vérifier qu’ils consistent uniquement sur les messages électroniques qui doivent être supprimés. Dans une recherche de contenu, vous pouvez prévisualiser un échantillon aléatoire de 1 000 messages électroniques sans exporter les résultats de la recherche pour éviter d’autres dépassements de données. Vous pouvez en savoir plus sur les limitations d’aperçu à [des limites pour la recherche de contenu](limits-for-content-search.md).
   
-Si vous avez plus de 1 000 boîtes aux lettres ou plus de 100 messages électroniques par boîte aux lettres à réviser, vous pouvez diviser la recherche initiale en plusieurs recherches à l’aide de mots clés ou de conditions supplémentaires, tels que la plage de dates ou l’expéditeur/destinataire et consulter les résultats de chaque recherche. restaur. Notez toutes les requêtes de recherche à utiliser lors de la suppression des messages à l' [étape 7](#step-7-permanently-delete-the-spilled-data).
+Si vous avez plus de 1 000 boîtes aux lettres ou plus de 100 messages électroniques par boîte aux lettres à réviser, vous pouvez diviser la recherche initiale en plusieurs recherches en utilisant des mots clés ou des conditions supplémentaires, tels que la plage de dates ou l’expéditeur/destinataire et examiner les résultats de chaque recherche individuellement. Notez toutes les requêtes de recherche à utiliser lors de la suppression des messages à l' [étape 7](#step-7-permanently-delete-the-spilled-data).
 
 Si une licence Office 36 E5 est attribuée à un dépositaire ou à un utilisateur final, vous pouvez examiner jusqu’à 10 000 résultats de recherche à la fois à l’aide d’Office 365 Advanced eDiscovery. S’il y a plus de 10 000 messages électroniques à examiner, vous pouvez diviser la requête de recherche par plage de dates et examiner chaque résultat individuellement à mesure que les résultats de la recherche sont triés par date. Dans Advanced eDiscovery, vous pouvez baliser les résultats de la recherche à l’aide de la fonctionnalité **étiquette en tant que** dans le panneau Aperçu et filtrer les résultats de la recherche en fonction de la balise que vous avez marquée. Cette fonction est utile lorsque vous collaborez avec un réviseur secondaire. En utilisant des outils d’analyse supplémentaires dans Advanced eDiscovery, tels que la reconnaissance optique de caractères, le Threading de messagerie électronique et le codage prédictif, vous pouvez rapidement traiter et examiner des milliers de messages et les baliser pour révision. Voir [Quick Setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
 
@@ -154,7 +154,7 @@ Ouvrez le rapport de synthèse d’exportation que vous avez téléchargé à l'
 
 Si la récupération d’élément unique est activée ou si une boîte aux lettres est placée en conservation, un message supprimé définitivement (purgé) est conservé dans le dossier éléments récupérables. Par conséquent, avant de pouvoir purger les données débloquées, vous devez vérifier les configurations de boîte aux lettres existantes et désactiver la récupération d’élément unique et supprimer les stratégies de rétention de blocage ou Office 365. N’oubliez pas que vous pouvez préparer une boîte aux lettres à la fois, puis exécuter la même commande sur différentes boîtes aux lettres ou créer un script PowerShell pour préparer plusieurs boîtes aux lettres en même temps.
 
-- Voir « étape 1 : collecte des informations sur la boîte aux lettres » dans [supprimer des éléments du dossier éléments récupérables des boîtes aux lettres en nuage](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) pour obtenir des instructions sur la manière de vérifier si la récupération d’élément unique est activée ou si la boîte aux lettres est placée en conservation ou si elle est affectée à un stratégie de rétention. 
+- Voir « étape 1 : collecte des informations sur la boîte aux lettres » dans [supprimer des éléments du dossier éléments récupérables des boîtes aux lettres en nuage](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) pour obtenir des instructions sur la manière de vérifier si la récupération d’élément unique est activée ou si la boîte aux lettres est placée en conservation ou si elle est affectée à une stratégie de rétention. 
     
 - Pour obtenir des instructions sur la désactivation de la récupération d’élément unique, voir « étape 2 : préparer la boîte aux lettres » dans [supprimer des éléments du dossier éléments récupérables des boîtes aux lettres en nuage](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) . 
     
@@ -174,24 +174,24 @@ Veillez à rétablir les configurations précédentes de la boîte aux lettres a
     
 2. Exécutez la commande suivante :
     
-    ```
+    ```powershell
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
     ```
-  
+
 3. Réexécutez la commande précédente pour chaque boîte aux lettres qui contient les données dépropagées en remplaçant la valeur du paramètre Identity ; par exemple :
 
-    ```
+    ```powershell
     Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-    ```
+    ```powershell
     Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-   ```
+   ```powershell
    Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
    ```
-  
+
 Comme indiqué précédemment, vous pouvez également créer un [script PowerShell](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) et l’exécuter par rapport à une liste de boîtes aux lettres de sorte que le script supprime les données dépassées dans chaque boîte aux lettres.
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Étape 8 : vérifier, fournir une preuve de suppression et d’audit
@@ -214,9 +214,9 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’enquête de fuite de données
 
-Vous pouvez rechercher dans le journal d’audit Office 365 des activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit créés lors de l’exécution de la commande **Search-Mailbox-DeleteContent** pour supprimer les données déplacées. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Vous pouvez rechercher dans le journal d’audit Office 365 des activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit créés lors de l’exécution de la commande **Search-Mailbox-DeleteContent** pour supprimer les données déplacées. Pour plus d’informations, voir :
 
-- [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
+- [Effectuer une recherche dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 
 - [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md)
 

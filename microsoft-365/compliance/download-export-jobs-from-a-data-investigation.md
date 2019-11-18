@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Installez et utilisez l’Explorateur de stockage Azure pour télécharger des documents qui ont été exportés à partir d’un jeu de vérification dans Advanced eDiscovery.
-ms.openlocfilehash: d7af50b37383e69c666084a93b5b91591a76c114
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Installez et utilisez l’Explorateur de stockage Azure pour télécharger des documents qui ont été exportés à partir de preuves dans une enquête de données.
+ms.openlocfilehash: af71cb43f91c940e4c5edb8ca7be39f4bca9b3be
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078518"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685934"
 ---
 # <a name="download-export-jobs"></a>Télécharger l’exportation des travaux
 
-Lorsque vous exportez des documents à partir d’un jeu de réexamen dans un cas avancé de découverte électronique, les documents sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft ou vers un emplacement de stockage Azure géré par votre organisation. Le type d’emplacement de stockage Azure utilisé dépend de l’option sélectionnée lors de l’exportation des documents. 
+Lorsque vous exportez des documents à partir d’une preuve dans une enquête de données, les documents sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft ou vers un emplacement de stockage Azure géré par votre organisation. Le type d’emplacement de stockage Azure utilisé dépend de l’option sélectionnée lors de l’exportation des documents. 
 
-Cet article fournit des instructions sur l’utilisation de l’Explorateur de stockage Microsoft Azure pour se connecter à un emplacement de stockage Azure afin de parcourir et télécharger les documents exportés. Pour plus d’informations sur l’Explorateur de stockage Azure, voir [démarrage rapide : utiliser l’Explorateur de stockage Azure](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+Cet article fournit des instructions sur l’utilisation de l’Explorateur de stockage Microsoft Azure pour se connecter à un emplacement de stockage Azure afin de parcourir et télécharger les documents exportés. Pour plus d’informations sur l’Explorateur de stockage Azure, voir [démarrage rapide : utiliser l’Explorateur de stockage Azure](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>Étape 1 : installer l’Explorateur de stockage Azure
 
@@ -35,7 +35,7 @@ La première étape consiste à télécharger et à installer l’Explorateur de
 
 L’étape suivante consiste à obtenir l’URL de signature d’accès partagé (SAS) générée lorsque vous avez créé le travail d’exportation pour [exporter des documents à partir d’un jeu de révision](export-documents-from-review-set.md). Vous pouvez copier l’URL SAS des documents téléchargés vers un emplacement de stockage Azure fourni par Microsoft ou un emplacement de stockage Azure géré par votre organisation. Dans les deux cas, vous utilisez l’URL SAS pour vous connecter à l’emplacement de stockage Azure à l’étape 3.
 
-1. Sur la page **Advanced eDiscovery** , accédez au cas, puis cliquez sur l’onglet **exports** .
+1. Sur la page **enquêtes de données** , accédez à l’enquête, puis cliquez sur l’onglet **exportations** .
 
 2. Sous l’onglet **exportations** , cliquez sur le travail d’exportation que vous souhaitez télécharger.
 
@@ -61,7 +61,7 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
 
     ![Coller l’URL SAS dans la zone URI](media/AzureStorageConnect3.png)
 
-    Notez qu’une partie de l’URL SAS apparaît dans la zone **nom d’affichage** . Il sera utilisé comme nom d’affichage du conteneur créé sous les **comptes de stockage** une fois que vous vous êtes connecté à l’emplacement de stockage. Ce nom se compose de l’ID du cas de découverte électronique avancée, de et d’un identificateur unique. Vous pouvez conserver le nom d’affichage par défaut ou le modifier. Si vous le modifiez, le nom d’affichage doit être unique.
+    Notez qu’une partie de l’URL SAS apparaît dans la zone **nom d’affichage** . Il sera utilisé comme nom d’affichage du conteneur créé sous les **comptes de stockage** une fois que vous vous êtes connecté à l’emplacement de stockage. Ce nom se compose de l’ID de l’analyse des données à partir de et d’un identificateur unique. Vous pouvez conserver le nom d’affichage par défaut ou le modifier. Si vous le modifiez, le nom d’affichage doit être unique.
 
 5.  Cliquez sur **Suivant**.
 
@@ -73,7 +73,7 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
 
     Le nœud **conteneurs BLOB** (sous **comptes** > **de stockage (conteneurs associés)** \> est ouvert. 
 
-    ![](media/AzureStorageConnect5.png)
+    ![Exporter des travaux dans le nœud conteneurs d’objets BLOB](media/AzureStorageConnect5.png)
 
     Il contient un conteneur nommé avec le nom d’affichage de l’étape 4. Ce conteneur contient un dossier pour chaque tâche d’exportation que vous avez créée. Ces dossiers sont nommés avec un ID correspondant à l’ID de la tâche d’exportation. Vous trouverez ces ID d’exportation (et le nom de l’exportation) sous **informations de support** sur la page de menu volant pour chaque tâche **de préparation des données pour l’exportation** , dans l’onglet **travaux** .
 
@@ -101,7 +101,7 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
  
 8. Pour exporter tout le contenu de l’exportation, sélectionnez le dossier exporter, puis cliquez sur **Télécharger**.
 
-9. Spécifiez l’emplacement où vous souhaitez télécharger les fichiers exportés, puis cliquez sur Sélectionner un dossier.
+9. Spécifiez l’emplacement où vous souhaitez télécharger les fichiers exportés, puis cliquez sur **Sélectionner un dossier**.
 
     L’Explorateur de stockage Azure démarre le processus d’exportation. L’état de téléchargement des éléments exportés est affiché dans le volet **activités** . Un message s’affiche lorsque le téléchargement est terminé.
 

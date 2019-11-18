@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
+ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417533"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38685705"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -105,22 +105,22 @@ Un contrôle partagé fait référence à tout contrôle dans lequel Microsoft e
 
 Les [éléments actions](working-with-compliance-manager.md#controls-and-actions) sont inclus dans les contrôles gérés par le client dans le cadre de la fonctionnalité de gestion de flux de travail intégrée que vous pouvez utiliser pour gérer et suivre la progression de l’évaluation.
 
-Les membres de votre organisation peuvent utiliser le gestionnaire de conformité pour examiner les contrôles gérés par le client à partir de toutes les évaluations pour lesquelles ils sont affectés. Lorsqu’un utilisateur se connecte au gestionnaire de conformité et ouvre le tableau de bord des **éléments d’action** , une liste d’actions qui leur sont affectées s’affiche. Selon le rôle du gestionnaire de conformité attribué à l’utilisateur, ils peuvent fournir des informations sur l’implémentation ou les tests, mettre à jour l’État ou affecter des éléments d’action.
+Les membres de votre organisation peuvent utiliser le gestionnaire de conformité pour examiner les contrôles gérés par le client à partir de toutes les évaluations pour lesquelles ils sont affectés. Lorsqu’un utilisateur se connecte au Gestionnaire de conformité et ouvre le tableau de bord **Éléments d’action**, la liste des éléments d’action qui lui sont attribués s’affiche. Selon le rôle du Gestionnaire de conformité attribué à l’utilisateur, il peut fournir les détails de mise en œuvre et de test, mettre à jour l’état ou attribuer des éléments d’action.
 
 Les contrôles de certification sont généralement mis en œuvre par une personne et testés par un autre. Par exemple, après l’exécution des éléments d’action initialement affectés à une personne pour l’implémentation, les éléments d’action sont affectés à la personne suivante pour tester et charger les preuves. Tout utilisateur disposant des autorisations suffisantes pour les affectations de contrôle peut affecter et réaffecter des éléments d’action. Cela permet la gestion centrale des affectations de contrôle et le routage décentralisé des éléments d’action entre les implémenteurs et les testeurs.
 
 ## <a name="permissions"></a>Autorisations
 
-Le gestionnaire de conformité utilise un modèle d’autorisation de contrôle d’accès basé sur un rôle. Seuls les utilisateurs auxquels un rôle d’utilisateur est attribué peuvent accéder au gestionnaire de conformité, et les actions autorisées par chaque utilisateur sont restreintes par type de rôle. [Afficher un tableau](working-with-compliance-manager.md#permissions) illustrant les actions autorisées pour chaque autorisation.
+Le Gestionnaire de conformité utilise un modèle d’autorisation de contrôle d’accès basé sur les rôles. Seuls les utilisateurs dotés d’un rôle d’utilisateur peuvent accéder au Gestionnaire de conformité et les actions autorisées par utilisateur sont limitées par type de rôle. [Afficher un tableau](working-with-compliance-manager.md#permissions) illustrant les actions autorisées pour chaque autorisation.
 
 L’administrateur du portail du gestionnaire de conformité peut définir des autorisations pour d’autres utilisateurs dans le gestionnaire de conformité en procédant comme suit :
 
 1. Dans le menu déroulant de **plus** haut, sélectionnez **administrateur**, puis **paramètres**.
 2. À partir de là, sélectionnez le rôle que vous souhaitez attribuer, puis ajoutez l’employé que vous souhaitez attribuer à ce rôle. Les utilisateurs peuvent alors effectuer certaines actions.
 
-En outre, les utilisateurs auxquels le [rôle de lecteur global est affecté dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) disposent d’autorisations en lecture seule pour accéder au gestionnaire de conformité ; Toutefois, ils ne peuvent pas modifier les données ou effectuer des actions dans le gestionnaire de conformité.
+En outre, les utilisateurs auxquels le [rôle de lecteur global est affecté dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) disposent d’autorisations en lecture seule pour accéder au gestionnaire de conformité ; Toutefois, ils ne peuvent pas modifier les données ou effectuer des actions dans le gestionnaire de conformité.
 
-Notez qu’il n’existe plus de rôle d' **accès invité** par défaut. Un rôle doit être affecté à chaque utilisateur afin d’y accéder et de l’utiliser dans le gestionnaire de conformité.
+Notez qu’il n’y a plus de rôle **Accès invité** par défaut. Chaque utilisateur doit se voir attribuer un rôle afin de pouvoir utiliser le Gestionnaire de conformité.
   
 ## <a name="manage-evidence"></a>Gérer les preuves
 
@@ -131,28 +131,30 @@ Le gestionnaire de conformité peut stocker des preuves de vos tâches d’impl�
 Le gestionnaire de conformité fournit des [modèles](working-with-compliance-manager.md#templates) préconfigurés pour les évaluations et vous permet de créer des modèles personnalisés pour les contrôles gérés par le client pour vos besoins en matière de conformité. Les nouveaux modèles sont créés en important des informations de contrôles à partir d’un fichier Excel, ou vous pouvez créer un modèle à partir d’une copie d’un modèle existant.
 
 Les modèles préconfigurés inclus dans le gestionnaire de conformité sont les suivants :
- 
-- [ISO 27001:2013](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en)
-- [ISO 27018:2019](https://www.iso.org/obp/ui/#iso:std:iso-iec:27018:ed-2:v1:en)
-- [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
-- [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
-- [Infrastructure NIST Cybersecurity (CSF)](https://www.nist.gov/cyberframework)
-- [Matrice de contrôle Cloud CSA (Cloud Security Alliance) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
-- [Livret de sécurité des informations sur les institutions financières fédérales (FFIEC)](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
-- [HIPAA](https://www.hhs.gov/hipaa/for-professionals/index.html) / [Hi-Tech](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html)
-- [FedRAMP modéré](https://www.fedramp.gov/documents/)
-- [RGPD de l’Union européenne](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
+
+1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [NIST 800-53 rév. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+5. [Infrastructure NIST Cybersecurity (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+6. [Matrice de contrôles Cloud CSA (Cloud Security Alliance) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+8. [Livret de sécurité des informations sur les institutions financières fédérales (FFIEC)](https://go.microsoft.com/fwlink/?linkid=2109077) 
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [Hi-Tech](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [FedRAMP modéré](https://go.microsoft.com/fwlink/?linkid=2108869)
+10. [RGPD de l’Union européenne](https://go.microsoft.com/fwlink/?linkid=2108870)
+11. [California Consumer Privacy Act (CCPA)-Aperçu](https://go.microsoft.com/fwlink/?linkid=2108871)
+12. [Base de données de protection des données Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>Score de conformité
 
-Le [score de conformité](compliance-score-methodology.md) est un composant essentiel du gestionnaire de conformité qui permet à votre organisation de comprendre et de gérer la conformité. Comme le [score de sécurité Microsoft](../security/mtp/microsoft-secure-score.md), le score de conformité est un système de score basé sur un comportement pour les activités liées à la protection des données, à la confidentialité et à la sécurité dans votre organisation. Le score de conformité pour une évaluation est une expression de conformité avec une norme ou une réglementation donnée. Plus le score numérique est élevé, plus la position de conformité pour l’évaluation est bonne. Comprendre la méthodologie de notation de conformité est cruciale pour définir la priorité des actions de contrôle gérées par le client.
+[Microsoft Compliance score (Preview)](compliance-score.md) est une fonctionnalité du centre de conformité Microsoft 365 qui vous aide à comprendre la position de la conformité de votre organisation. Il calcule un score basé sur les risques mesurant votre progression dans la réalisation d’actions qui contribuent à réduire les risques liés à la protection des données et aux normes réglementaires. Connaître votre score de conformité global permet à votre organisation de comprendre et de gérer la conformité. Comprendre [Comment le score de conformité est calculé](compliance-score-methodology.md).
   
 > [!IMPORTANT]
-> Le Score de conformité ne reflète pas forcément la conformité absolue de l’organisation avec une norme ou une réglementation spécifique. Il indique les contrôles que vous avez adoptés pour réduire les risques liés à la protection des données personnelles. Aucun service ne peut garantir que vous êtes en conformité avec une norme ou une réglementation. Le Score de conformité ne doit donc en aucun cas être considéré comme une garantie du respect des réglementations en vigueur.
+> Le score de conformité n’exprime pas une mesure absolue de la conformité de l’organisation avec une norme ou réglementation particulière. Elle exprime la mesure dans laquelle vous avez adopté des contrôles qui peuvent réduire les risques pour les données personnelles et la confidentialité individuelle. Aucun service ne peut garantir la conformité avec une norme ou une réglementation, et le score de conformité ne doit pas être interprété comme une garantie de quelque façon que ce soit.
 
 ## <a name="secure-score-integration"></a>Intégration de la note sécurisée
 
-Le gestionnaire de conformité est intégré à [Microsoft Secure score](../security/mtp/microsoft-secure-score.md) pour appliquer automatiquement un crédit de score sécurisé au score de conformité pour les éléments d’action synchronisés. Cette opération peut être configurée pour des éléments d’action individuels et fournit une mise à jour continue entre les éléments.
+Le gestionnaire de conformité est intégré à [Microsoft Secure score](../security/mtp/microsoft-secure-score.md) pour appliquer automatiquement un crédit de score sécurisé au score de conformité pour les éléments d’action synchronisés. Cette opération peut être configurée pour les éléments d’action individuels ou toutes les actions de manière globale, et fournit des mises à jour à partir du score de sécurité.
 
 Par exemple, vous avez une exigence relative à la sécurité pour activer Azure Rights Management dans votre organisation, qui s’applique également à un élément d’action de conformité. Lorsque Azure Rights Management est activé et traité par le score sécurisé, le gestionnaire de conformité reçoit la notification de la mise à jour et le score de l’élément d’action est automatiquement mis à jour avec le crédit d’achèvement.
 

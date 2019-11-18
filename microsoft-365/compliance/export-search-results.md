@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
-ms.openlocfilehash: 198459eb013c2f34b1a440d29375069175bfb0c6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d416e1e808ae6045f5510e0a051f038e4b38c06
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079363"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685926"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -35,7 +36,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour exporter les résultats de la recherche, vous devez disposer du rôle de gestion de l’exportation dans le centre de sécurité & conformité. Ce rôle est affecté au groupe de rôles Gestionnaire de découverte électronique intégré. Ce rôle n’est pas affecté par défaut au groupe de rôles Gestion de l’organisation. Pour plus d’informations, consultez la rubrique [attribution d’autorisations eDiscovery](assign-ediscovery-permissions.md).
+- Pour exporter les résultats de la recherche, vous devez disposer du rôle de gestion de l’exportation dans le centre de sécurité & conformité. Ce rôle est affecté au groupe de rôles Gestionnaire de découverte électronique intégré. Ce rôle n’est pas affecté par défaut au groupe de rôles Gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
     
 - L’ordinateur que vous utilisez pour exporter les résultats de recherche doit répondre aux exigences système suivantes :
     
@@ -47,7 +48,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
     
      - Microsoft Edge
     
-        OR
+        OU
     
      - Microsoft Internet Explorer 10 et versions ultérieures
     
@@ -65,17 +66,17 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
     
     Ajoutez les lignes suivantes au fichier *machine. config* entre les `<configuration>` balises et `</configuration>` . N’oubliez pas de `ProxyServer` remplacer `Port` et d’utiliser les valeurs appropriées pour votre organisation ; par exemple, `proxy01.contoso.com:80` . 
     
-    ```
+    ```text
     <system.net>
        <defaultProxy enabled="true" useDefaultCredentials="true">
-         <proxy proxyaddress="http://ProxyServer :Port " 
+         <proxy proxyaddress="https://ProxyServer :Port " 
                 usesystemdefault="False" 
                 bypassonlocal="True" 
                 autoDetect="False" />
        </defaultProxy>
     </system.net>
     ```
-    
+
 ## <a name="step-1-prepare-search-results-for-export"></a>Étape 1 : Préparer les résultats de recherche pour l’exportation
 
 Vous devez préparer les résultats de recherche pour l’exportation. Lorsque vous préparez des résultats, ceux-ci sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft dans le Cloud Microsoft. Le contenu des boîtes aux lettres et des sites est téléchargé à un débit maximal de 2 Go par heure.
@@ -256,7 +257,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
     
     Si vous exportez les éléments indexés et partiellement indexés ou si vous exportez uniquement les éléments indexés à partir d’une recherche de contenu qui renvoie tous les éléments, le même nombre d’éléments sera téléchargé. Cela se produit même si les résultats de recherche estimés pour la recherche de contenu (affichés dans les statistiques de recherche dans le centre de sécurité & conformité) incluent toujours une estimation distincte pour le nombre d’éléments partiellement indexés. Par exemple, supposons que l’estimation d’une recherche incluant tous les éléments (pas de mot-clé dans la requête de recherche) indique qu' 1 000 éléments ont été trouvés et que 200 éléments partiellement indexés étaient également trouvés. Dans ce cas, les éléments 1 000 incluent les éléments partiellement indexés, car la recherche renvoie tous les éléments. En d’autres termes, 1 000 nombre total d’éléments renvoyés par la recherche, et non pas 1 200 éléments (comme prévu). Si vous exportez les résultats de cette recherche et choisissez d’exporter les éléments indexés et partiellement indexés (ou uniquement les éléments indexés partiellement), 1 000 les éléments seront téléchargés. Là encore, cela est dû au fait que les éléments partiellement indexés sont inclus dans les résultats réguliers (indexés) lorsque vous utilisez une requête de recherche vierge pour renvoyer tous les éléments. Dans le même exemple, si vous choisissez d’exporter uniquement des éléments partiellement indexés, seuls les éléments non indexés 200 seront téléchargés.
     
-    Notez également que dans l’exemple précédent (lorsque vous exportez des éléments indexés et partiellement indexés ou que vous exportez uniquement des éléments indexés), le rapport de **synthèse d’exportation** inclus avec les résultats de recherche exportés répertorie 1 000 éléments estimés et 1 000 téléchargé éléments pour les mêmes raisons que celles décrites précédemment. 
+    Notez également que dans l’exemple précédent (lorsque vous exportez des éléments indexés et partiellement indexés ou que vous exportez uniquement des éléments indexés), le rapport de **synthèse d’exportation** inclus avec les résultats de recherche exportés répertorie 1 000 éléments estimés et 1 000 éléments téléchargés pour les mêmes raisons que celles précédemment décrites. 
     
 - Si la recherche à partir de laquelle vous exportez les résultats est une recherche d’emplacements de contenu spécifiques ou de tous les emplacements de contenu de votre organisation, seuls les éléments partiels des emplacements de contenu contenant des éléments qui correspondent aux critères de recherche seront exportés. En d’autres termes, si aucun résultat de recherche n’est trouvé dans une boîte aux lettres ou un site, tous les éléments partiellement indexés de cette boîte aux lettres ou ce site ne seront pas exportés. Cela est dû au fait que l’exportation d’éléments partiellement indexés à partir de nombreux emplacements de l’organisation peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps nécessaire pour exporter et télécharger les résultats de la recherche.
     
@@ -277,7 +278,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
     
     Si vous choisissez d’exporter des éléments partiellement indexés, les éléments de boîte aux lettres partiellement indexés sont exportés dans un fichier PST distinct quelle que soit l’option sélectionnée sous **Exporter le contenu Exchange en tant que**.
 
-- Si des éléments partiellement indexés sont renvoyés dans les résultats de la recherche (car les autres propriétés des éléments partiellement indexés correspondent aux critères de recherche), ces éléments partiellement indexés sont exportés avec les résultats de la recherche standard. Par conséquent, si vous choisissez d’exporter des éléments indexés et des éléments partiellement indexés (en sélectionnant l’option **tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons** ), les éléments partiellement indexés exportés les résultats réguliers seront affichés dans le rapport results. csv. Elles ne seront pas mentionnées dans le rapport éléments non indexés. csv.
+- Si des éléments partiellement indexés sont renvoyés dans les résultats de la recherche (car les autres propriétés des éléments partiellement indexés correspondent aux critères de recherche), ces éléments partiellement indexés sont exportés avec les résultats de la recherche standard. Par conséquent, si vous choisissez d’exporter des éléments indexés et des éléments partiellement indexés (en sélectionnant l’option **tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons** ), les éléments partiellement indexés exportés avec les résultats réguliers seront répertoriés dans le rapport results. csv. Elles ne seront pas mentionnées dans le rapport éléments non indexés. csv.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportation de messages individuels ou de fichiers PST
   

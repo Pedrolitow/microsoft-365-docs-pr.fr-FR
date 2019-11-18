@@ -13,14 +13,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Le RGPD donne aux citoyens de l’Union européenne (appelés « personnes des données ») des droits spécifiques sur leurs données personnelles ; ces droits incluent l’obtention de copies de celle-ci, la demande de modifications, la limitation du traitement de celle-ci, sa suppression ou sa réception dans un format électronique. Une demande officielle d’un objet de données qui doit agir sur ses données personnelles est appelée demande de l’objet de données ou DSR. Vous pouvez utiliser les dossiers DSR dans le centre de conformité dans Office 365 et Microsoft 365 pour gérer les investigations DSR de votre organisation.
-ms.openlocfilehash: 8a4882070509991ca91403c96b55825fac3a2536
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079406"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685911"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR dans le centre de sécurité & conformité
 
@@ -133,13 +134,13 @@ Une fois que vous avez créé un boîtier DSR et ajouté des membres, l’étape
     
 Voici à quoi ressemble la requête de mot clé pour la recherche intégrée qui est créée automatiquement lors de la création d’un cas DSR.
   
-```
+```powershell
 participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>"
 ```
 
 Par exemple, si le nom de la personne concernée est de type Leonte, la requête de mot clé ressemblera à ceci :
   
-```
+```powershell
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
 
@@ -210,7 +211,7 @@ L’ordinateur que vous utilisez pour exporter des données doit répondre aux e
     
     Les résultats de la recherche sont préparés pour téléchargement, ce qui signifie qu’ils sont téléchargés vers la zone de stockage Azure de votre organisation dans le Cloud Microsoft. Les étapes suivantes vous montrent comment télécharger ces données sur votre ordinateur local.
     
-6. Cliquez sur l’onglet **Exporter** pour afficher le travail d’exportation que vous avez créé. Les travaux d’exportation portent le même nom que la recherche correspondante avec **_Export** ajouté à la fin du nom de recherche. 
+6. Cliquez sur l’onglet **Exporter** pour afficher le travail d’exportation que vous avez créé. Les travaux d’exportation portent le même nom que la recherche correspondante, avec des **_Export** ajoutés à la fin du nom de recherche. 
     
 7. Cliquez sur le travail d’exportation que vous venez de créer pour afficher la page de menu volant d’exportation. Cette page affiche des informations sur la recherche, telles que la taille et le nombre total d’éléments à exporter, ainsi que le pourcentage des éléments qui ont été transférés vers une zone de stockage Azure. Cliquez sur **Actualiser** pour mettre à jour les informations d’état de téléchargement. 
     
@@ -272,7 +273,7 @@ Pour modifier les emplacements de contenu à Rechercher :
 3. Si vous modifiez les emplacements de contenu dans la recherche intégrée, cliquez sur **Enregistrer &amp; exécuter** pour redémarrer la recherche. 
 
 > [!NOTE]
-> Lorsque vous recherchez tous les emplacements de boîte aux lettres ou seulement des boîtes aux lettres spécifiques, les données d’autres applications Office 365 enregistrées dans des boîtes aux lettres utilisateur sont incluses lorsque vous exportez les résultats de la recherche. Ces données ne sont pas incluses dans les résultats de recherche estimés et ne sont pas disponibles pour l’aperçu. Toutefois, elle est incluse lorsque vous exportez et téléchargez les résultats de la recherche. Pour plus d’informations sur les applications qui stockent des données dans la boîte aux lettres d’un utilisateur, consultez la rubrique [contenu stocké dans les boîtes aux lettres Exchange Online](what-is-stored-in-exo-mailbox.md).
+> Lorsque vous recherchez tous les emplacements de boîte aux lettres ou seulement des boîtes aux lettres spécifiques, les données d’autres applications Office 365 enregistrées dans des boîtes aux lettres utilisateur sont incluses lorsque vous exportez les résultats de la recherche. Ces données ne sont pas incluses dans les résultats de recherche estimés et ne sont pas disponibles pour en aperçu. Toutefois, elle est incluse lorsque vous exportez et téléchargez les résultats de la recherche. Pour plus d’informations sur les applications qui stockent des données dans la boîte aux lettres d’un utilisateur, consultez la rubrique [contenu stocké dans les boîtes aux lettres Exchange Online](what-is-stored-in-exo-mailbox.md).
   
 ## <a name="more-information-about-using-the-dsr-case-tool"></a>Plus d’informations sur l’utilisation de l’outil de cas DSR
 
@@ -341,7 +342,7 @@ Lorsque vous exportez des données à partir du service d’itinérance Office, 
     
     Les résultats de la recherche sont préparés pour téléchargement, ce qui signifie qu’ils sont téléchargés vers la zone de stockage Azure de votre organisation dans le Cloud Microsoft. Les étapes suivantes vous montrent comment télécharger ces données sur votre ordinateur local.
     
-5. Cliquez sur l’onglet **Exporter** pour afficher le travail d’exportation que vous avez créé. Les travaux d’exportation portent le même nom que la recherche correspondante avec **_Export** ajouté à la fin du nom de recherche. 
+5. Cliquez sur l’onglet **Exporter** pour afficher le travail d’exportation que vous avez créé. Les travaux d’exportation portent le même nom que la recherche correspondante, avec des **_Export** ajoutés à la fin du nom de recherche. 
     
 6. Cliquez sur le travail d’exportation que vous venez de créer pour afficher la page de menu volant d’exportation. 
     
@@ -414,7 +415,7 @@ Voici un processus de haut niveau permettant de rechercher des éléments que la
     
   - Dans la zone **Mots clés** , utilisez la requête de recherche suivante : 
     
-    ```
+    ```powershell
     itemclass:ipm.post AND "<email address of the data subject>"
     ```
 

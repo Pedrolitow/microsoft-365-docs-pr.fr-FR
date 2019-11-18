@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Découvrez comment configurer le Registre Windows pour augmenter le débit des données lors du téléchargement des résultats de recherche et des données de recherche à partir du centre de conformité & de sécurité et de la fonctionnalité eDiscovery avancée dans Office 365.
-ms.openlocfilehash: 44f595e6beffcc3d6789ad7b6f70ad77a48381cb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f74d164250f9d5b9b8315fe2651d3374457451ed
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079193"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685916"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Augmentation de la vitesse de téléchargement lors de l’exportation des résultats de recherche eDiscovery à partir d’Office 365
 
-Lorsque vous utilisez l’outil d’exportation de découverte électronique Office 365 pour télécharger les résultats d’une recherche de contenu dans le centre de sécurité & conformité ou télécharger des données à partir d’Office 365 Advanced eDiscovery, l’outil démarre un certain nombre d’opérations d’exportation simultanées pour télécharger le données sur votre ordinateur local. Par défaut, le nombre d’opérations simultanées est défini sur 8 fois le nombre de cœurs de l’ordinateur que vous utilisez pour télécharger les données. Par exemple, si vous disposez d’un ordinateur double cœur (ce qui signifie que deux unités de traitement central sur une puce), le nombre d’opérations d’exportation simultanées par défaut est de 16. Pour augmenter le débit de transfert de données et accélérer le processus de téléchargement, vous pouvez augmenter le nombre d’opérations simultanées en configurant un paramètre de Registre Windows sur l’ordinateur que vous utilisez pour télécharger les résultats de la recherche. Pour accélérer le processus de téléchargement, nous vous recommandons de commencer avec un paramètre de 24 opérations simultanées.
+Lorsque vous utilisez l’outil d’exportation de découverte électronique Office 365 pour télécharger les résultats d’une recherche de contenu dans le centre de sécurité & conformité ou télécharger des données à partir d’Office 365 Advanced eDiscovery, l’outil démarre un certain nombre d’opérations d’exportation simultanées pour télécharger les données sur votre ordinateur local. Par défaut, le nombre d’opérations simultanées est défini sur 8 fois le nombre de cœurs de l’ordinateur que vous utilisez pour télécharger les données. Par exemple, si vous disposez d’un ordinateur double cœur (ce qui signifie que deux unités de traitement central sur une puce), le nombre d’opérations d’exportation simultanées par défaut est de 16. Pour augmenter le débit de transfert de données et accélérer le processus de téléchargement, vous pouvez augmenter le nombre d’opérations simultanées en configurant un paramètre de Registre Windows sur l’ordinateur que vous utilisez pour télécharger les résultats de la recherche. Pour accélérer le processus de téléchargement, nous vous recommandons de commencer avec un paramètre de 24 opérations simultanées.
   
 Si vous téléchargez des résultats de recherche sur un réseau à faible bande passante, l’augmentation de ce paramètre peut avoir un impact négatif. Vous pouvez également augmenter le paramètre sur plus de 24 opérations simultanées dans un réseau à bande passante élevée (le nombre maximal d’opérations simultanées est de 48). Une fois que vous avez configuré ce paramètre de Registre, vous devrez peut-être le modifier pour trouver le nombre optimal d’opérations simultanées pour votre environnement.
   
@@ -33,7 +33,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
     
 2. Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier. reg ; par exemple, ConcurrentOperations. reg. 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "DownloadConcurrency"="24"

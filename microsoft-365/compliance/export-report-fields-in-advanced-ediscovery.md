@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Décrit tous les champs inclus dans les rapports d’exportation pour Advanced eDiscovery.
-ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 54287b4319a3fd7cf5be8aaf74d3a375253cba1f
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079234"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38685991"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exporter des champs de rapport dans Office 365 Advanced eDiscovery
 
@@ -62,8 +62,8 @@ Le tableau suivant répertorie les champs de chaque modèle d’exportation.
 |Email_recipient_domains  <br/> |E-mail  <br/> |Les domaines de destinataires de messagerie (à, CC et CCI).  <br/> |Oui  <br/> |Oui  <br/> |
 |Email_date_received  <br/> |E-mail  <br/> |Date à laquelle le courrier électronique a été reçu.  <br/> |Oui  <br/> |Oui  <br/> |
 |Email_action  <br/> |E-mail  <br/> |Valeurs : en fonction de l’objet de l’E-mail : "Forward" (pour "tr :"), "reply" (pour "RE :") ou "Other" (autre objet).  <br/> |Oui  <br/> |Oui  <br/> |
-|Meeting_Start_Date/heure  <br/> ||Date et heure de début d’un élément de réunion.  <br/> |Oui  <br/> |Oui  <br/> |
-|Meeting_End_Date/heure  <br/> ||Date et heure de fin d’un élément de réunion.  <br/> |Oui  <br/> |Oui  <br/> |
+|Meeting_Start_Date/Time  <br/> ||Date et heure de début d’un élément de réunion.  <br/> |Oui  <br/> |Oui  <br/> |
+|Meeting_End_Date/Time  <br/> ||Date et heure de fin d’un élément de réunion.  <br/> |Oui  <br/> |Oui  <br/> |
 |File_relevance_score  <br/> |Importance  <br/> |Score de pertinence (0-100). Par problème.  <br/> |Oui  <br/> |Oui  <br/> |
 |Family_relevance_score  <br/> |Importance  <br/> |Score max de pertinence de la famille (0-100). Par problème.  <br/> |Oui  <br/> |Oui  <br/> |
 |Relevance_tag  <br/> |Importance  <br/> |Balisage du fichier, si le fichier a été marqué manuellement en pertinence. Par problème.  <br/> |Oui  <br/> |Oui  <br/> |
@@ -90,7 +90,7 @@ Le tableau suivant répertorie les champs de chaque modèle d’exportation.
 |Input_path  <br/> |Traitement  <br/> |Chemin d’accès du fichier d’entrée.  <br/> |Oui  <br/> |Oui  <br/> |
 |Input_date_modified  <br/> |Traitement  <br/> |Date de la dernière modification du fichier d’entrée.  <br/> |Oui  <br/> |Oui  <br/> |
 |ND_ET_sort_excl_attach  <br/> |Analyse  <br/> |Concaténation de l’ensemble de messages électroniques et de la définition de la valeur. 'D’est ajouté en tant que préfixe aux ensembles ND, et’E’est ajouté à l’adresse de messagerie ssets.  <br/> |Oui  <br/> |Oui  <br/> |
-|ND_ET_sort_incl_attach  <br/> |Analyse  <br/> |La concaténation du jeu de messages et de la sauvegarde de l’ensemble de messages pour révision d est ajoutée en tant que préfixe aux ensembles ND, et « E » est ajouté aux groupes de courriers. Par ailleurs, chaque message électronique dans un Email_set est suivi des pièces jointes appropriées.  <br/> |Oui  <br/> |Oui  <br/> |
+|ND_ET_sort_incl_attach  <br/> |Analyse  <br/> |La concaténation du jeu de messages et de la sauvegarde de l’ensemble de messages pour révision d est ajoutée en tant que préfixe aux ensembles ND, et « E » est ajouté aux groupes de courriers. Par ailleurs, chaque message électronique au sein d’un Email_set est suivi des pièces jointes appropriées.  <br/> |Oui  <br/> |Oui  <br/> |
 |Deduped_custodians  <br/> |Général  <br/> |Dépositaires de fichiers de duped  <br/> |Oui  <br/> |Oui  <br/> |
 |Deduped_file_IDs  <br/> |Général  <br/> |ID de fichiers de duped  <br/> |Oui  <br/> |Oui  <br/> |
 |Deduped_paths  <br/> |Général  <br/> |Chemins d’accès aux fichiers de duped  <br/> |Oui  <br/> |Oui  <br/> |
@@ -130,9 +130,7 @@ Le tableau suivant répertorie les champs de chaque modèle d’exportation.
 |Set_order_inclusives_first  <br/> |E-mail  <br/> |E-mails et pièces jointes : compteurs chronologiques (inclus en premier). Documents : les tableaux croisés dynamiques et le reste par score de similarité, décroissant.  <br/> |Non  <br/> |Oui  <br/> |
 |Tagged_By  <br/> |Importance  <br/> |Utilisateur qui a balisé le fichier en pertinence pour le problème spécifique.  <br/> |Non  <br/> |Oui  <br/> |
 |Word_count  <br/> |Analyse  <br/> |Nombre de mots dans le document.  <br/> |Non  <br/> |Oui  <br/> |
-|||||||||||
-||||||
-||||||
+|
    
 ## <a name="related-topics"></a>Rubriques connexes
 

@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Les éléments partiellement indexés (également appelés éléments non indexés) sont des éléments de boîte aux lettres Exchange et des documents sur les sites SharePoint et OneDrive qui n’ont pas été complètement indexés pour la recherche de contenu. Dans cet article, vous pouvez découvrir pourquoi les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés, identifier les erreurs de recherche pour les éléments partiellement indexés et utiliser un script PowerShell pour déterminer l’exposition de votre organisation à l’e-mail partiellement indexé. sous.
-ms.openlocfilehash: 78ce6fc9816707e4d8bb18da71ca2ee89386b9b8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078429"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685917"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Examen d’éléments partiellement indexés dans eDiscovery Office 365
 
@@ -84,7 +84,7 @@ Lorsque vous exportez des résultats de recherche de contenu ou un rapport de re
 
 Les balises d’erreur sont constituées de deux informations, l’erreur et le type de fichier. Par exemple, dans cette paire erreur/type de message :
 
-```
+```text
  parseroutputsize_xls
 ```
 
@@ -120,7 +120,7 @@ Les étapes suivantes montrent comment exécuter un script PowerShell qui recher
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `PartiallyIndexedItems.ps1`.
 
-```
+```powershell
   write-host "**************************************************"
   write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
@@ -163,20 +163,20 @@ Les étapes suivantes montrent comment exécuter un script PowerShell qui recher
   }
   
 ```
-   
+
 2. [Connectez-vous à la sécurité & Centre de conformité PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
 3. Dans la sécurité & Centre de conformité PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape 1, puis exécutez le script. par exemple :
 
-    ```
+    ```powershell
     .\PartiallyIndexedItems.ps1
     ```
-   
+
 Voici un exemple de la sortie renvoyée par le script.
   
 ![Exemple de sortie d’un script qui génère un rapport sur l’exposition de votre organisation à des éléments de courrier électronique partiellement indexés](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
-Veuillez prendre en compte les éléments suivants:
+Remarques :
   
 1. Le nombre total et la taille des éléments de courrier électronique, et le ratio de votre organisation pour les éléments de courrier électronique partiellement indexés (par nombre et par taille)
     

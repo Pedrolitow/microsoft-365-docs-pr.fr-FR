@@ -2,8 +2,8 @@
 title: Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 ms.author: chrfox
 author: chrfox
-manager: dansimp
-ms.date: 06/14/2019
+manager: laurawi
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: 'Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: 198b2de6d26b260840f0e578e4b50f0693708a94
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080474"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685867"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -143,9 +144,9 @@ Par exemple, vous pouvez avoir une stratégie DLP appliquée aux sites OneDrive 
   
 1. Première règle : si moins de cinq instances de ces informations sensibles sont détectées dans un document et que le document est partagé avec des personnes au sein de l’organisation, l’action **Envoyer une notification** affiche un Conseil de stratégie. Pour les conseils de stratégie, aucune option de remplacement n’est nécessaire, car cette règle avertit simplement les personnes et ne bloque pas l’accès. 
     
-2. Deuxième règle : si plus de cinq instances de ces informations sensibles sont détectées dans un document et que le document est partagé avec des personnes au sein de l’organisation, l’action **bloquer l’accès au contenu** limite les autorisations du fichier et le ** Envoyer une** action de notification permet aux utilisateurs de remplacer les actions de cette règle en fournissant une justification professionnelle. Les activités professionnelles de votre organisation nécessitent parfois des personnes internes pour partager des données personnelles, et vous ne voulez pas que votre stratégie DLP bloque ce travail. 
+2. Deuxième règle : si plus de cinq instances de ces informations sensibles sont détectées dans un document et que le document est partagé avec des personnes au sein de l’organisation, l’action **bloquer l’accès au contenu** limite les autorisations du fichier et l’action **Envoyer une notification** permet aux utilisateurs de remplacer les actions de cette règle en fournissant une justification professionnelle. Les activités professionnelles de votre organisation nécessitent parfois des personnes internes pour partager des données personnelles, et vous ne voulez pas que votre stratégie DLP bloque ce travail. 
     
-3. Troisième règle : si plus de cinq instances de ces informations sensibles sont détectées dans un document et que le document est partagé avec des personnes extérieures à l’organisation, l’action **bloquer l’accès au contenu** limite les autorisations du fichier, et le ** Envoyer une** action de notification ne permet pas aux utilisateurs de remplacer les actions de cette règle car les informations sont partagées en externe. En aucun cas, les membres de votre organisation ne doivent être autorisés à partager les données des données personnelles à l’extérieur de l’organisation. 
+3. Troisième règle : si plus de cinq instances de ces informations sensibles sont détectées dans un document et que le document est partagé avec des personnes extérieures à l’organisation, l’action **bloquer l’accès au contenu** limite les autorisations du fichier, et l’action **Envoyer une notification** ne permet pas aux utilisateurs de remplacer les actions de cette règle car les informations sont partagées en externe. En aucun cas, les membres de votre organisation ne doivent être autorisés à partager les données des données personnelles à l’extérieur de l’organisation. 
     
 Voici quelques points précis pour comprendre l’utilisation d’un Conseil de stratégie pour remplacer une règle :
   
@@ -214,23 +215,13 @@ Actuellement, Outlook 2013 et les versions ultérieures prennent en charge l’a
 - Le contenu contient
 - Le contenu est partagé
 
-Nous travaillons actuellement sur la prise en charge de l’affichage des conseils de stratégie pour des conditions supplémentaires. Ces approches sont les suivantes :
-
-- Le contenu d’une pièce jointe de courrier électronique n’a pas pu être analysé
-- Le contenu d’une pièce jointe de courrier électronique n’a pas terminé l’analyse
-- L’extension de fichier de pièce jointe est
-- La pièce jointe est protégée par mot de passe
-- La propriété de document est
-- Le domaine du destinataire est
-- L’adresse IP de l’expéditeur est
-
 Notez que toutes ces conditions fonctionnent dans Outlook, où elles correspondent au contenu et appliquent des actions de protection sur le contenu. Mais l’affichage des conseils de stratégie pour les utilisateurs n’est pas encore pris en charge.
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Conseils de stratégie dans le centre d’administration Exchange et le centre de &amp; sécurité conformité Office 365
 
 Les conseils de stratégie peuvent fonctionner soit avec les stratégies DLP et les règles de flux de messagerie créées dans le centre d’administration Exchange, soit avec les &amp; stratégies DLP créées dans le centre de sécurité conformité Office 365, mais pas dans les deux. Cela est dû au fait que ces stratégies sont stockées à des emplacements différents, mais que les conseils de stratégie ne peuvent tirer qu’à partir d’un seul emplacement.
   
-Si vous avez configuré des conseils de stratégie dans le centre d’administration Exchange, tous les conseils de stratégie que vous configurez dans le centre de sécurité &amp; conformité d’Office 365 n’apparaîtront pas pour les utilisateurs dans Outlook sur le Web et Outlook 2013 et les versions ultérieures jusqu’à ce que vous désactiviez les conseils dans l’Exchange Centre d’administration. Cela permet de s’assurer que vos règles de flux de messagerie Exchange actuelles (également appelées règles de transport) continueront de fonctionner jusqu’à ce que vous &amp; choisissiez de basculer vers le centre de sécurité conformité Office 365.
+Si vous avez configuré des conseils de stratégie dans le centre d’administration Exchange, tous les conseils de stratégie que vous configurez dans le centre de sécurité &amp; conformité d’Office 365 n’apparaîtront pas aux utilisateurs dans Outlook sur le Web et Outlook 2013 et versions ultérieures jusqu’à ce que vous désactiviez les conseils dans le centre d’administration Exchange. Cela permet de s’assurer que vos règles de flux de messagerie Exchange actuelles (également appelées règles de transport) continueront de fonctionner jusqu’à ce que vous &amp; choisissiez de basculer vers le centre de sécurité conformité Office 365.
   
 Notez que si 365 les conseils de stratégie ne peuvent tirer qu’à partir d’un seul emplacement, les notifications par courrier électronique sont toujours envoyées, même si vous &amp; utilisez les stratégies DLP dans le centre de sécurité et le centre d’administration Exchange.
   
@@ -295,5 +286,3 @@ Vous pouvez personnaliser le texte pour les conseils de stratégie indépendamme
 - [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
 - [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
-    
-
