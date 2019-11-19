@@ -15,18 +15,18 @@ ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
 description: Compare les options de chiffrement dans Office 365, notamment la fonctionnalité de chiffrement des messages Office (OME), S/MIME, la gestion des droits relatifs à l’information (IRM), et présente le protocole TLS.
-ms.openlocfilehash: 79a7ddd13e437255fa671e949236c879b235c2ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 70c22f9627c804c201cb23b7b3c38a4f6a349ece
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079314"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708077"
 ---
 # <a name="email-encryption-in-office-365"></a>Chiffrement du courrier électronique dans Office 365
 
 Cet article compare les options de chiffrement dans Office 365, notamment la fonctionnalité de chiffrement des messages Office (OME), S/MIME, la gestion des droits relatifs à l’information (IRM), et présente le protocole TLS.
   
-Office 365 propose plusieurs options de chiffrement pour vous aider à répondre aux besoins de votre entreprise pour la sécurité des messages électroniques. Cet article présente les trois méthodes de chiffrement de courrier électronique dans Office 365. Si vous voulez en savoir plus sur toutes les fonctionnalités de sécurité dans Office 365, visitez le [centre de gestion de la confidentialité Office 365](http://go.microsoft.com/fwlink/p/?LinkID=282470). Cet article présente les trois types de chiffrement disponibles pour aider les administrateurs Office 365 à sécuriser les messages électroniques dans Office 365 :
+Office 365 propose plusieurs options de chiffrement pour vous aider à répondre aux besoins de votre entreprise pour la sécurité des messages électroniques. Cet article présente les trois méthodes de chiffrement de courrier électronique dans Office 365. Si vous voulez en savoir plus sur toutes les fonctionnalités de sécurité dans Office 365, visitez le [centre de gestion de la confidentialité Office 365](https://go.microsoft.com/fwlink/p/?LinkID=282470). Cet article présente les trois types de chiffrement disponibles pour aider les administrateurs Office 365 à sécuriser les messages électroniques dans Office 365 :
   
 - Chiffrement des messages Office (OME).
 
@@ -66,7 +66,7 @@ Regardez cette vidéo pour obtenir une présentation [du chiffrement dans Office
 
 ## <a name="what-encryption-options-are-available-for-my-office-365-subscription"></a>Quelles options de chiffrement sont disponibles pour mon abonnement à Office 365 ?
 
-Pour plus d’informations sur les options de chiffrement de courrier pour votre abonnement Office 365, voir la [description du service Exchange Online](https://technet.microsoft.com/fr-FR/library/exchange-online-service-description.aspx). Vous y trouverez des informations sur les fonctionnalités de chiffrement suivantes :
+Pour plus d’informations sur les options de chiffrement de courrier pour votre abonnement Office 365, voir la [description du service Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Vous y trouverez des informations sur les fonctionnalités de chiffrement suivantes :
   
 - Azure RMS, y compris les fonctionnalités IRM et OME
 
@@ -92,7 +92,7 @@ Pour plus d’informations sur les options de chiffrement des messages électron
   
 **IRM**
   
-[Gestion des droits relatifs à l'information dans Exchange Online](https://technet.microsoft.com/fr-FR/library/jj983436%28v=exchg.150%29.aspx)
+[Gestion des droits relatifs à l'information dans Exchange Online](https://technet.microsoft.com/library/jj983436%28v=exchg.150%29.aspx)
   
 [Qu’est-ce que Azure Rights Management?](https://technet.microsoft.com/library/jj585026)
   
@@ -106,4 +106,4 @@ Pour plus d’informations sur les options de chiffrement des messages électron
   
 **TLS**
   
-[Configurer le flux de courrier personnalisé à l’aide de connecteurs dans Office 365](https://technet.microsoft.com/fr-FR/library/jj723138%28v=exchg.150%29.aspx)
+[Configurer le flux de courrier personnalisé à l’aide de connecteurs dans Office 365](https://technet.microsoft.com/library/jj723138%28v=exchg.150%29.aspx)

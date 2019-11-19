@@ -1,7 +1,7 @@
 ---
 title: Afficher l’utilisation d’étiquette grâce à la page Analyse des étiquettes
-ms.author: stephow
-author: stephow-MSFT
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Après avoir créé vos étiquettes de rétention et vos étiquettes de sensibilité, vous souhaiterez voir comment ils sont utilisés au sein de votre client. Les portails Centre de conformité Microsoft 365 et Centre de sécurité Microsoft 365 sont dotés d’une page intitulée Analyse des étiquettes. Elle indique les étiquettes les plus utilisées et leurs types d’applications.
-ms.openlocfilehash: 297987d420b5ed05bf4fdeb86513bc7c4ddec609
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 45cebbe67a773b76289920554d4e39fcbce789cc
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079328"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38710034"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Afficher l’utilisation d’étiquette grâce à la page Analyse des étiquettes
 
@@ -38,9 +38,9 @@ Vous trouverez analytique étiquette dans la [centre de conformité de Microsoft
 
 ## <a name="sensitivity-label-usage"></a>Étiquettes de niveau de confidentialité
 
-Les données sur l’utilisation de la sensibilité étiquette sont extraite des rapports pour Azure Information Protection-pour plus d’informations, voir [Central de création de rapports de Protection Informations Azure](https://docs.microsoft.com/fr-FR/azure/information-protection/reports-aip).
+Les données sur l’utilisation de la sensibilité étiquette sont extraite des rapports pour Azure Information Protection-pour plus d’informations, voir [Central de création de rapports de Protection Informations Azure](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-Notez que les rapports de Protection d’Informations Azure Information ont des[conditions préalables](https://docs.microsoft.com/fr-FR/azure/information-protection/reports-aip#prerequisites-for-azure-information-protection-analytics) qui s’appliquent également à l’analytique d’étiquette sur les étiquettes de niveau de confidentialité dans le centre de conformité de Microsoft 365 et centre de sécurité Microsoft 365. Par exemple, vous avez besoin d’un abonnement Azure qui inclut le journal Analytique, car ces rapports sont le résultat de l’envoi d’informations d’événements d’audit d’une protection à partir de scanneurs et Azure Information Protection clients vers un emplacement centralisé basé sur Azure journal Service Analytique.
+Notez que les rapports de Protection d’Informations Azure Information ont des[conditions préalables](/azure/information-protection/reports-aip#prerequisites) qui s’appliquent également à l’analytique d’étiquette sur les étiquettes de niveau de confidentialité dans le centre de conformité de Microsoft 365 et centre de sécurité Microsoft 365. Par exemple, vous avez besoin d’un abonnement Azure qui inclut le journal Analytique, car ces rapports sont le résultat de l’envoi d’informations d’événements d’audit d’une protection à partir de scanneurs et Azure Information Protection clients vers un emplacement centralisé basé sur Azure journal Service Analytique.
 
 Usage d’étiquettes de niveau de confidentialité:
 
@@ -97,5 +97,5 @@ Pour afficher analytique étiquette, vous devez être affecté parmi les rôles 
 - Administrateur de sécurité
 - Lecteur Sécurité
 
-Par ailleurs, notez que ces rapports utilisent Azure Monitor pour stocker les données dans un espace de travail journal Analytique appartenant à votre organisation. Par conséquent, l’utilisateur doit être ajouté en tant qu’un lecteur d’à l’espace de travail Azure surveillance que suspensions données-pour plus d’informations, voir [Autorisations nécessaires à analytique Protection Informations Azure](https://docs.microsoft.com/fr-FR/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
+Par ailleurs, notez que ces rapports utilisent Azure Monitor pour stocker les données dans un espace de travail journal Analytique appartenant à votre organisation. Par conséquent, l’utilisateur doit être ajouté en tant qu’un lecteur d’à l’espace de travail Azure surveillance que suspensions données-pour plus d’informations, voir [Autorisations nécessaires à analytique Protection Informations Azure](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
 

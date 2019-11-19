@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilisez le Centre de sécurité et conformité dans Office 365 pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: 5cf399b311b6c342aff2d84477edaa945f8e0cd4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea6448c4d47eb89d16266644e5a4ab06f774e0da
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079303"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38708096"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre de sécurité et conformité
   
@@ -101,27 +101,27 @@ Une fois que vous êtes connecté à Exchange Online, vous pouvez exécuter les 
 
 Pour activer la boîte aux lettres d’archivage pour un seul utilisateur, exécutez la commande suivante.
     
-  ```
+  ```powershell
   Enable-Mailbox -Identity <username> -Archive
   ```
 
 Pour activer la boîte aux lettres d’archivage pour tous les utilisateurs au sein de votre organisation (dont la boîte aux lettres d’archivage n’est pas activée), exécutez la commande suivante.
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
   ```
-  
+
 ### <a name="disable-archive-mailboxes"></a>Désactiver les boîtes aux lettres d’archivage
 
 Pour désactiver la boîte aux lettres d’archivage pour un seul utilisateur, exécutez la commande suivante.
     
-  ```
+  ```powershell
   Disable-Mailbox -Identity <username> -Archive
   ```
 
 Pour désactiver la boîte aux lettres d’archivage pour tous les utilisateurs au sein de votre organisation (dont la boîte aux lettres d’archivage est activée), exécutez la commande suivante.
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
   ```
 

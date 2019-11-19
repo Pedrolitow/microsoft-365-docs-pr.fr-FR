@@ -11,17 +11,18 @@ ms.collection:
 - Strat_O365_Enterprise
 - GDPR
 - M365-security-compliance
+- SPO_Content
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les stratégies de protection contre la perte de données (DLP) pour protéger les données personnelles dans Office 365.
-ms.openlocfilehash: f6d6d69f7c776b9b49ea360367117a9ce86293b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078933"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38708091"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Application d’une protection aux données personnelles dans Office 365
 
@@ -41,7 +42,7 @@ Avec la protection contre la perte de données, vous pouvez :
 
 -   consulter les rapports DLP présentant le contenu qui correspond aux stratégies DLP de votre organisation.
 
-Pour plus d’informations, reportez-vous à [Vue d’ensemble des stratégies de protection contre la perte de données](https://support.office.com/fr-FR/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
+Pour plus d’informations, reportez-vous à [Vue d’ensemble des stratégies de protection contre la perte de données](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
 ![Options de création d’une stratégie de protection contre la perte de données](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -118,7 +119,7 @@ Description : Afficher des conseils de stratégie aux employés, avertir les é
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Contrôle</strong></th>
+<th align="left"><strong>Commande</strong></th>
 <th align="left"><strong>Paramètres</strong></th>
 </tr>
 </thead>
@@ -142,7 +143,7 @@ Description : Afficher des conseils de stratégie aux employés, avertir les é
 <tr class="odd">
 <td align="left">Avertir les utilisateurs lorsque le contenu correspond aux paramètres de la stratégie</td>
 <td align="left"><p>Cochez cette case (« Afficher des conseils de stratégie aux utilisateurs et leur envoyer une notification par courrier électronique ».)</p>
-<p>Cliquez sur « Personnaliser le conseil et le courrier électronique » et mettez à jour les champs pour votre environnement. Consultez les notifications par défaut dans cet article : <a href="https://support.office.com/fr-FR/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP</a>.</p></td>
+<p>Cliquez sur « Personnaliser le conseil et le courrier électronique » et mettez à jour les champs pour votre environnement. Consultez les notifications par défaut dans cet article : <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Détecter quand une quantité spécifique d’informations sensibles est partagée à un moment donné</td>
@@ -177,7 +178,7 @@ Pour l’accessibilité, le tableau suivant fournit les mêmes informations que 
 <thead>
 <tr class="header">
 <th align="left"><strong>Portée de la protection</strong></th>
-<th align="left"><strong>Capabilities</strong></th>
+<th align="left"><strong>Fonctionnalités</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -300,7 +301,7 @@ Le tableau suivant récapitule les contrôles que vous pouvez configurer.
 
 Plus d’informations :
 
--   [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/fr-FR/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [Partager des sites ou des documents avec des personnes extérieures à votre organisation](https://support.office.com/fr-FR/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
@@ -351,7 +352,7 @@ Les stratégies d’accès aux appareils pour SharePoint et OneDrive Entreprise
 </tbody>
 </table>
 
-Plus d’informations : [Centre d’administration SharePoint Online : Contrôler l’accès à partir d’appareils non gérés](https://support.office.com/fr-FR/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+Plus d’informations : [Centre d’administration SharePoint Online : Contrôler l’accès à partir d’appareils non gérés](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>Protection de l’accès au service pour les appareils et les identités
 
@@ -359,9 +360,9 @@ Microsoft vous recommande de configurer la protection pour les identités et les
 
 La protection de l’accès pour les appareils et les identités fournit une référence de base de la protection pour garantir que les identités ne sont pas compromises, que les appareils sont sûrs et que les données des organisations figurant sur les appareils sont isolées et protégées.
 
-Pour obtenir des recommandations pour commencer et des instructions de configuration, reportez-vous à [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](https://docs.microsoft.com/fr-FR/microsoft-365-enterprise/microsoft-security-guidance).
+Pour obtenir des recommandations pour commencer et des instructions de configuration, reportez-vous à [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
-Pour les environnements d’identité hybrides avec AD FS, reportez-vous aux [configurations et aux stratégies de sécurité recommandées](https://docs.microsoft.com/fr-FR/microsoft-365-enterprise/microsoft-security-guidance).
+Pour les environnements d’identité hybrides avec AD FS, reportez-vous aux [configurations et aux stratégies de sécurité recommandées](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
 L’illustration suivante décrit les relations entre les services cloud (SaaS, PaaS), les types de comptes (comptes de domaine clients et comptes B2B) et les fonctionnalités de service d’accès. Il est important de noter les fonctionnalités qui peuvent être utilisées avec les comptes B2B.
 

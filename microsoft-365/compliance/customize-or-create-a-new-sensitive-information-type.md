@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Découvrez comment modifier ou créer des types d’informations sensibles Office 365 pour le RGPD.
-ms.openlocfilehash: 264e310c019c47d1b3109b20fbdd61b323ec5530
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078614"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708084"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personnalisation ou création d’un type d’informations sensibles
 
@@ -71,7 +71,7 @@ Pour personnaliser un type d’informations sensibles :
 
 7.  Chargez le nouveau type d'informations sensibles.
 
-8.  Analysez de nouveau votre contenu pour identifier les informations sensibles. Reportez-vous à la rubrique [Demander manuellement l’analyse et la réindexation d’un site](https://support.office.com/fr-FR/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
+8.  Analysez de nouveau votre contenu pour identifier les informations sensibles. Reportez-vous à la rubrique [Demander manuellement l’analyse et la réindexation d’un site](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Exemple : modification du type d’informations sensibles « Numéro de carte de crédit de l'U.E. »
 
@@ -141,15 +141,15 @@ Il se peut que vous deviez créer des requêtes afin d’obtenir des données pe
 
 Utilisez ces ressources pour formuler et optimiser des requêtes à l’aide de KQL :
 
--   [Référence de syntaxe de langage de requête de mot-clé (KQL) (DMC)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [Référence de syntaxe de langage de requête de mot-clé (KQL) (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Exécuter une Recherche de Contenu](https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Exécuter une Recherche de Contenu](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
-La recherche de contenu fournit une autre ressource pour vous aider à développer des requêtes KQL appropriées et des types d’informations sensibles : les mots-clés. Pourquoi utiliser la liste de mots-clés ? Vous pouvez obtenir des statistiques indiquant le nombre d’éléments qui correspondent à chaque mot-clé. Cela peut vous aider à identifier rapidement les mots-clés les plus (et les moins) efficaces. Pour plus d’informations sur les statistiques de recherche, reportez-vous à la rubrique relative à l’[affichage des statistiques de mots-clés pour les résultats de la recherche de contenu](https://support.office.com/fr-FR/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+La recherche de contenu fournit une autre ressource pour vous aider à développer des requêtes KQL appropriées et des types d’informations sensibles : les mots-clés. Pourquoi utiliser la liste de mots-clés ? Vous pouvez obtenir des statistiques indiquant le nombre d’éléments qui correspondent à chaque mot-clé. Cela peut vous aider à identifier rapidement les mots-clés les plus (et les moins) efficaces. Pour plus d’informations sur les statistiques de recherche, reportez-vous à la rubrique relative à l’[affichage des statistiques de mots-clés pour les résultats de la recherche de contenu](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 
 Les mots-clés sur chaque ligne sont connectés par l’opérateur OR dans la requête de recherche qui est créée. Vous pouvez également utiliser une expression de mots-clés (entre parenthèses) dans une ligne.
 
-Pour plus d’informations, reportez-vous à la rubrique [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](https://support.office.com/fr-FR/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+Pour plus d’informations, reportez-vous à la rubrique [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>Exemple : utilisation de la recherche de contenu pour identifier des adresses e-mail
 
@@ -374,7 +374,7 @@ Contoso fait toujours référence aux clients en utilisant un CCN dans la corres
 ```xml
 \<?xml version="1.0" encoding="utf-8"?\>
 
-\<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce"\>
+\<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce"\>
 
 \<RulePack id="130ae63b-a91e-4a12-9e02-a90e36a83d7f"\>
 

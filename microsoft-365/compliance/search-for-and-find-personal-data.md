@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment rechercher et localiser des données personnelles dans Office 365.
-ms.openlocfilehash: b63cf930a38feab6df815b5350d60184a6339927
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079751"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38710028"
 ---
 # <a name="search-for-and-find-personal-data"></a>Recherche et localisation des données personnelles
 
@@ -79,7 +79,7 @@ Commencer la recherche en utilisant les types d’informations sensibles incluse
 
 Cette rubrique inclut une liste de certains types d’informations sensibles qui s’appliquent aux citoyens dans l’Union européenne. Vérifiez le centre de sécurité ou le centre de conformité pour les nouveaux ajouts qui peuvent vous aider avec la mise en conformité RGPD.
 
-Consultez également l’article relatif à la [liste des types d’informations sensibles et à ce qu’ils recherchent](https://support.office.com/fr-FR/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
+Consultez également l’article relatif à la [liste des types d’informations sensibles et à ce qu’ils recherchent](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
 
 Les types d’informations sensibles définissent la façon dont le processus automatisé reconnaît des types d’informations spécifiques tels que les numéros de compte bancaire, de sécurité sociale et de carte de crédit. Les types d’informations sensibles sont également appelés conditions. Un type d’informations sensibles est défini par un modèle qui peut être identifié par une fonction ou une expression régulière. En outre, des preuves corroborantes comme les mots-clés et les sommes de contrôle peuvent être utilisées pour identifier un type d’informations sensibles. La proximité et le niveau de confiance sont également utilisés dans le processus d’évaluation.
 
@@ -97,7 +97,7 @@ Pour l’instant, les types d’informations sensibles ne permettent pas de rech
 <tbody>
 <tr class="odd"><td align="left"><p>Accédez à Recherche de contenu dans le Centre de sécurité et de conformité</p></td>
 <td align="left"><p>Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherches &amp; enquêtes** &gt; **Recherche de contenu**.</p>
-<p>Reportez-vous à la rubrique <a href="https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Exécuter une recherche de contenu dans le Centre de sécurité et de conformité Office 365</a>.</p></td>
+<p>Reportez-vous à la rubrique <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Exécuter une recherche de contenu dans le Centre de sécurité et de conformité Office 365</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Création d’un élément de recherche pour chaque type d’informations sensibles</p></td>
@@ -110,14 +110,14 @@ Pour l’instant, les types d’informations sensibles ne permettent pas de rech
 <p>SensitiveType:&quot;Numéro de passeport français&quot;</p>
 </blockquote>
 <p>Étendue de la recherche Scope dans SharePoint (inclut OneDrive Entreprise). Vérifiez que la syntaxe est exacte et qu’il n’y a pas d’espaces supplémentaires ni de fautes de frappe.</p>
-<p>Reportez-vous à la rubrique relative à la <a href="https://support.office.com/fr-FR/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">création d’une requête pour rechercher des données sensibles stockées sur des sites</a>.</p></td>
+<p>Reportez-vous à la rubrique relative à la <a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">création d’une requête pour rechercher des données sensibles stockées sur des sites</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Analyse des résultats pour chaque recherche</p></td>
 <td align="left"><p>Recherchez ces types de problèmes pour déterminer si la précision de la requête est un objectif :</p>
 <p><li>De nombreux faux positifs</li></p>
 <p><li>Instances de données connues manquantes</li></p>
-<p>Reportez-vous à la rubrique relative à l’<a href="https://support.office.com/fr-FR/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">exportation des résultats de la recherche de contenu du Centre de sécurité et de conformité Office 365</a>.</p>
+<p>Reportez-vous à la rubrique relative à l’<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">exportation des résultats de la recherche de contenu du Centre de sécurité et de conformité Office 365</a>.</p>
 <p>Remarque : si vous utilisez Mozilla Firefox ou Chrome, il se peut que vous deviez d’abord télécharger des rapports avec Internet Explorer ou Edge pour installer le complément requis.</p></td>
 </tr>
 </tbody>
@@ -217,4 +217,4 @@ Exemples :
 
 Remarque : “SensitiveType” est sensible à la casse, mais le reste de la requête ne l’est pas.
 
-Vous pouvez également utiliser des propriétés et des opérateurs pour illustrer la façon dont vous pouvez affiner vos requêtes. Pour plus d’informations et des exemples, reportez-vous à la rubrique relative à la [création d’une requête pour rechercher des données sensibles stockées sur des sites](https://support.office.com/fr-FR/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).
+Vous pouvez également utiliser des propriétés et des opérateurs pour illustrer la façon dont vous pouvez affiner vos requêtes. Pour plus d’informations et des exemples, reportez-vous à la rubrique relative à la [création d’une requête pour rechercher des données sensibles stockées sur des sites](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).

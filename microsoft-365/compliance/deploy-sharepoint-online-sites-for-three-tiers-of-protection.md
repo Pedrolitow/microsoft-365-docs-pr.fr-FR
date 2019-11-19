@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Résumé : Créez et configurez des sites d’équipe SharePoint Online avec différents niveaux de protection des informations.'
-ms.openlocfilehash: 2ddf3de7180d384c387bdc335afda6214508e3c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ff892d57d4fe6e707e4cbcb4f1562a3594fe70b
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070697"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38708094"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Déployer des sites SharePoint Online pour trois niveaux de protection
 
@@ -46,7 +47,7 @@ Pour créer un site d’équipe SharePoint Online de base de référence avec un
     
 4. Dans la page **Créer un site**, cliquez sur **Site d’équipe**.
     
-5. Dans **Nom du Site**, tapez un nom pour le site d’équipe public. 
+5. Dans **Nom du Site**, tapez un nom pour le site d’équipe public.
     
 6. Dans **Description du site d’équipe**, tapez une description de l’objectif du site.
     
@@ -70,7 +71,7 @@ Pour créer un site d’équipe SharePoint Online de base de référence avec un
     
 4. Dans la page **Créer un site**, cliquez sur **Site d’équipe**.
     
-5. Dans **Nom du site**, tapez un nom pour le site d’équipe privé. 
+5. Dans **Nom du site**, tapez un nom pour le site d’équipe privé.
     
 6. Dans **Description du site d’équipe**, tapez une description de l’objectif du site.
     

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous recherchez des informations sensibles dans du contenu, vous devez décrire ces informations dans ce que l’on appelle une règle. La protection contre la perte de données (DLP) comprend des règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit.
-ms.openlocfilehash: 99a65e7862eb1657c73c77b526e3b82b7595d248
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5fbc0e9ffba0237462062e19edb9ca0458675b04
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078629"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708080"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
@@ -85,7 +85,7 @@ Toutes les définitions de règle XML sont construites sur le modèle général 
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id=". . ." /> 
@@ -114,7 +114,7 @@ Vous obtenez maintenant quelque chose qui ressemble au XML suivant. Étant donn�
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id="8d34806e-cd65-4178-ba0e-5d7d712e5b66" />

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cette rubrique explique comment configurer votre flux de processus métier pour automatiser la rétention via des événements à l’aide de l’API REST de Microsoft 365.
-ms.openlocfilehash: 1b687ab89e0d29910c9c0781540b6f9113e53ed6
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: 5977b79c47166fdafc76dfdb122b4fd37b63a875
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342967"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708086"
 ---
 # <a name="automate-event-based-retention"></a>Rétentions basées sur des événements
 
@@ -85,7 +85,7 @@ Pour créer un référentiel des enregistrements, l’administrateur de conformi
         
     - Crée une bibliothèque SharePoint : définir l’étiquette en fonction des événement au niveau de la bibliothèque. Pour plus d’informations, voir [application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque SharePoint, un dossier ou un ensemble de documents](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
           
-    - Configure un Document ensemble dans SharePoint. Pour plus d’informations, voir [présentation des ensembles de documents](https://support.office.com/fr-FR/article/Introduction-to-Document-Sets-3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
+    - Configure un Document ensemble dans SharePoint. Pour plus d’informations, voir [présentation des ensembles de documents](https://support.office.com/article/Introduction-to-Document-Sets-3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
       
 1. Attribue des Id de l’élément (biens QU'ID est un nom de produit ou un code utilisé par l’organisation, par exemple, la matricule peut être un id de l’élément) à chaque document employé définir (en attribuant des biens QU'ID dans le dossier, tous les éléments dans ce dossier hérite automatiquement le même ID de biens. Cela signifie que tous les éléments peuvent avoir leur période de rétention déclenchée par le même événement.
 
@@ -103,7 +103,7 @@ Il existe deux options d’utilisation de l’API REST :
 
 - **PowerShell ou un HTTP client pour appeler des API REST** à l’aide de PowerShell (version 6 ou version ultérieure) pour appeler l’API REST Microsoft 365 pour créer des événements. 
 
-L’API Rest est un point de terminaison de service qui prend en charge des ensembles d’opérations HTTP (méthodes), qui fournit créer/récupération/mise à jour/supprimer l’accès aux ressources de service- pour plus d’informations, voir [composants d’une demande de l’API REST/réponse](https://docs.microsoft.com/fr-FR/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse) . Dans ce cas, les événements peuvent être créés en utilisant l’API REST de Microsoft 365 et récupérées à l’aide d’opérations (méthodes) POST et GET.
+L’API Rest est un point de terminaison de service qui prend en charge des ensembles d’opérations HTTP (méthodes), qui fournit créer/récupération/mise à jour/supprimer l’accès aux ressources de service- pour plus d’informations, voir [composants d’une demande de l’API REST/réponse](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse) . Dans ce cas, les événements peuvent être créés en utilisant l’API REST de Microsoft 365 et récupérées à l’aide d’opérations (méthodes) POST et GET.
 
 ## <a name="example-scenarios"></a>Exemples de scénarios
 
@@ -181,10 +181,10 @@ Utilisation du code d’exemple pour appeler des API REST
 <tr class="odd">
 <td>Corps</td>
 <td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
+<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</p>
+<p>xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
+<p>xmlns='https://www.w3.org/2005/Atom'&gt;</p>
+<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
 <p>&lt;mise à jour&gt;9/9/2017 22:50:00&lt;/ mis à jour&gt;</p>
 <p>&lt;content type='application/xml'&gt;</p>
 <p>&lt;m:properties&gt;</p>
@@ -372,10 +372,10 @@ Utilisation du code d’exemple pour appeler des API REST
 <p>$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</p>
 <p>Écriture hôte &quot;Commencez à créer un événement avec nom : $EventName&quot;</p>
 <p>$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
+<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</p>
+<p>xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
+<p>xmlns='https://www.w3.org/2005/Atom'&gt;</p>
+<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
 <p>&lt;mise à jour&gt;14/7/2017 14:03:36&lt;/ mis à jour&gt;</p>
 <p>&lt;content type='application/xml'&gt;</p>
 <p>&lt;m:properties&gt;</p>

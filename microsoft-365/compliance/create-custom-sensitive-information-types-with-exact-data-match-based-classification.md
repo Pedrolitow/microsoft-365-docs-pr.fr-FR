@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
-ms.openlocfilehash: 3d4936a03ab9b2e5d766f514472ea862009da553
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a639c71753602ffd381c9240cf6e7273f3ba8bbe
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078709"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708081"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -82,7 +82,7 @@ Par exemple, le fichier. xml suivant définit le schéma d’une base de donnée
 (vous pouvez copier, modifier et utiliser notre exemple).
 
  ```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
       <DataStore name="PatientRecords" description="Schema for patient records" version="1">
             <Field name="PatientID" searchable="true" />
             <Field name="MRN" searchable="true" />
@@ -186,7 +186,7 @@ Vous êtes invité à confirmer comme suit :
 
 Lorsque vous configurez votre package de règles, veillez à référencer correctement vos fichier .csv et edm.xml. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de fichier xml, les champs suivants doivent être personnalisés pour créer votre type sensible d’EDM :
 
-- **RulePack id & ExactMatch id** : utilisez  [New-GUID](https://docs.microsoft.com/fr-FR/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  pour générer un GUID.
+- **RulePack id & ExactMatch id** : utilisez  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  pour générer un GUID.
 
 - **Datastore** : ce champ spécifie le magasin de données de recherche EDM à utiliser. Vous indiquez un nom de source de données ou un schéma EDM configuré.
 
@@ -201,7 +201,7 @@ Lorsque vous configurez votre package de règles, veillez à référencer correc
   - Name & Editing the schema descriptions : personnalisez en fonction des besoins.
 
 ```xml
-<RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
   <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
     <Version build="0" major="2" minor="0" revision="0" />
     <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
@@ -488,7 +488,7 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/fr-FR/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Commentaires
 

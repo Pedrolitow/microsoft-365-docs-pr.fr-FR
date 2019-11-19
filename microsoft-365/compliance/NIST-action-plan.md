@@ -12,12 +12,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 8ee0d1d8dd20dac6a865e39ca12dea8b07352e6e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5c43a0e26dfc052c23cbaf349bd541d996dca558
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071453"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "38710024"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Plan d’action NIST 800-53 de Microsoft 365 : principales priorités pour vos premiers 30 jours, 90 jours et au-delà
 
@@ -77,6 +77,6 @@ Ces actions prennent plus de temps et s’appuient sur des travaux antérieurs.
 
 ## <a name="learn-more"></a>En savoir plus
 
-En savoir plus sur [Microsoft et l’infrastructure de cybersécurité NIST (CSF)](https://www.microsoft.com/trustcenter/compliance/NIST_CSF), notamment la norme NIST 800-53.
+En savoir plus sur [Microsoft et l’infrastructure de cybersécurité NIST (CSF)](offering-nist-csf.md), notamment la norme NIST 800-53.
 
 [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
