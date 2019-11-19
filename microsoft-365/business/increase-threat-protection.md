@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez Office 365 Advanced Threat Protection et protégez les données sensibles.
-ms.openlocfilehash: bca5400a04ca2986496c4a704289474887eb834b
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 87a5c79636a2eefe394b4a30e72971eb851e3ecb
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676005"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704072"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -233,4 +233,4 @@ Pour plus d’informations, reportez-vous à la rubrique [Office 365 ATP Safe Li
 
 3. Une fois que les résultats s’affichent, sélectionnez le menu démarrer en regard de **Microsoft Intune** pour en faire un favori et le retrouver facilement plus tard.
 
-En plus du centre d’administration, vous pouvez utiliser Intune pour inscrire et gérer les appareils de votre organisation. Pour plus d’informations, reportez-vous à la rubrique [fonctionnalités par méthode d’enregistrement pour les périphériques Windows](https://docs.microsoft.com/intune/enrollment-method-capabs) et les [options d’enregistrement pour les appareils gérés par Intune](https://docs.microsoft.com/intune/enrollment-options).
+En plus du centre d’administration, vous pouvez utiliser Intune pour inscrire et gérer les appareils de votre organisation. Pour plus d’informations, reportez-vous à la rubrique [fonctionnalités par méthode d’enregistrement pour les périphériques Windows](https://docs.microsoft.com/intune/enrollment/enrollment-method-capab) et les [options d’enregistrement pour les appareils gérés par Intune](https://docs.microsoft.com/intune/enrollment-options).

@@ -7,18 +7,18 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
+ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627558"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38697157"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Préparer vos utilisateurs à l’utilisation des appareils
 
 Une fois qu’un appareil de bureau géré Microsoft est présent aux mains de votre utilisateur final, la prise en main est rapide et simple. Les appareils sont préconfigurés avec la version actuelle de Windows, et les configurations et applications sont installées à partir du Cloud lorsque l’utilisateur termine l’installation. 
  
-Pour faciliter encore la tâche, nous proposons un guide de la part de vos utilisateurs lors de la configuration initiale et fournissent des ressources d’aide à la fois pour la configuration et pour une utilisation ultérieure, si nécessaire. Vous pouvez personnaliser ce guide pour inclure certains détails spécifiques à votre organisation. Vous distribuez ensuite le guide directement à vos utilisateurs avec leur appareil. Il existe deux versions, une pour les organisations qui utilisent le système de support technique de Microsoft (l’application obtenir de l’aide), une pour ceux qui fournissent leur propre prise en charge interne de l’utilisateur final.
+Pour faciliter encore la tâche, nous proposons un guide de la part de vos utilisateurs lors de la configuration initiale et fournissent des ressources d’aide à la fois pour la configuration et pour une utilisation ultérieure, si nécessaire. Vous pouvez personnaliser ce guide pour inclure certains détails spécifiques à votre organisation. Vous distribuez ensuite le guide directement à vos utilisateurs avec leur appareil. Il existe deux versions, une pour les organisations qui utilisent le système de support technique de Microsoft (l’application obtenir de l’aide), une pour ceux qui fournissent un support alternatif pour leurs utilisateurs.
 
 ## <a name="to-prepare-the-guide"></a>Pour préparer le guide
 

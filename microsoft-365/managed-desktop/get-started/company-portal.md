@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 121771dd2474d58e7bd6a0d56218563c8785d4bf
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 4e83983ae7b8b936b639382f025f1f88eeca0762
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38011955"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699674"
 ---
 # <a name="install-intune-company-portal-on-on-devices"></a>Installer le portail d’entreprise Intune sur sur les appareils
 
@@ -42,15 +42,15 @@ Pour plus d’informations sur l’envoi de demandes de prise en charge avec le 
 ## <a name="step-3---communicate-change-to-your-users"></a>Étape 3-communiquer les modifications à vos utilisateurs
 En tant qu’administrateur informatique de votre organisation, il est important de permettre à vos utilisateurs de savoir comment utiliser le portail d’entreprise dans votre organisation. Microsoft Managed Desktop recommande :
 - Étapes d’installation des applications à partir du portail de l’entreprise. Pour plus d’informations, consultez [la rubrique installer et partager des applications sur votre appareil](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows).
-- Comment envoyer des demandes aux administrateurs informatiques pour les applications qui ne sont pas disponibles actuellement.
+- Comment envoyer des demandes aux administrateurs informatiques pour les applications qui ne sont pas disponibles actuellement. Pour plus d’informations, reportez-vous à la rubrique [demander une application pour les professionnels ou l’école](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school).  
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de prise en main de Microsoft Managed Desktop
 
-1. [Ajouter et vérifier des contacts d’administration dans le portail d’administration](add-admin-contacts.md)
-2. [Ajustement de l’accès conditionnel](conditional-access.md)
-3. [Attribuer des licences](assign-licenses.md)
+1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md)
+2. [Ajuster l’accès conditionnel](conditional-access.md)
+3. [Affecter des licences](assign-licenses.md)
 4. Déployer le portail d’entreprise Intune (cette rubrique)
-5. [Activer l’itinérance de l’état d’entreprise](enterprise-state-roaming.md)
+5. [Activer Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Configurer les appareils](set-up-devices.md)
 7. [Préparer vos utilisateurs à l’utilisation des appareils](get-started-devices.md)
 8. [Déployer des applications](deploy-apps.md)
