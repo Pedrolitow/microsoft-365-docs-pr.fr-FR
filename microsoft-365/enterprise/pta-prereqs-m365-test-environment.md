@@ -13,16 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès identité et appareil avec les conditions préalables pour l’authentification directe.
-ms.openlocfilehash: 348885b2cc7a0d6134dce49cd0a2a39706c5e71d
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 7bef08ba10413f95fb23707ce2ecc4ac248c4bc2
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627488"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673320"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès identité et appareil pour l’authentification directe dans votre environnement de test Microsoft 365
 
-Les [Configurations d’accès identité et appareil](microsoft-365-policies-configurations.md) sont un ensemble de configurations et stratégies d’accès conditionnel pour protéger l’accès à tous les services qui sont intégrés avec Azure Active Directory (Azure AD), y compris Office 365 et Enterprise Mobility + Security (EMS) dans Microsoft 365 Entreprise.
+*Ce Guide de Laboratoire Test peut uniquement être utilisé pour les environnements de test Microsoft 365 Entreprise*.
+
+Les [Configurations d’accès aux identités et appareils](microsoft-365-policies-configurations.md) sont un ensemble de configurations et stratégies d’accès conditionnel pour protéger l’accès à tous les services qui sont intégrés avec Azure Active Directory (Azure AD), dont Office 365 et Enterprise Mobility + Security dans Microsoft 365 Entreprise.
 
 Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte la configuration requise de la [configuration préalable de l’authentification directe](identity-access-prerequisites.md#prerequisites) pour l’accès identité et appareil.
 

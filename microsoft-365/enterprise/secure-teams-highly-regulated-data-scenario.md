@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez une équipe sécurisée pour stocker vos fichiers les plus précieux et les plus sensibles.
-ms.openlocfilehash: f787951748cc1fb0b6b207b4b3aca0de1c29e3d7
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d875c3148a019774e038d18a75bb6fb2c2413463
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627498"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699764"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams pour les données hautement réglementées
 
@@ -48,7 +48,7 @@ Voici la configuration obtenue avec une étiquette de confidentialité.
 
 [![Affiche Teams pour les données hautement réglementées](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
-Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) ou [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Phase 1 : configurer une équipe pour les données hautement réglementées
 
@@ -213,6 +213,10 @@ Dans les semaines suivant la formation :
   Vous pouvez voir quels fichiers disposent d'une étiquette attribuée en affichant un dossier dans SharePoint Online et en ajoutant la colonne **Confidentialité** via l'option **Afficher/masquer les colonnes** de la fonction **Ajouter une colonne**.
 
 Formez à nouveau vos utilisateurs, le cas échéant.
+
+## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Comment Contoso Corporation a utilisé une équipe sécurisée pour un projet top secret
+
+Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif. Découvrez comment Contoso a configuré et stimulé l’adoption d’une [équipe sécurisée](contoso-team-for-top-secret-project.md) pour un projet top secret afin de développer et de commercialiser un nouvel ensemble de produits et services. 
 
 ## <a name="see-also"></a>Voir aussi
 

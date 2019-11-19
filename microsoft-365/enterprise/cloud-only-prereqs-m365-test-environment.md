@@ -13,14 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables pour l’authentification uniquement dans le cloud.
-ms.openlocfilehash: eb70153bc2868289fde41ad9a68ffa3a44b01b59
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6e0796d24f2644907d214c4528eab2051fa3d83c
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627370"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673230"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès aux identités et aux appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
+
+*Ce Guide de Laboratoire Test peut uniquement être utilisé pour les environnements de test Microsoft 365 Entreprise*.
 
 Les [configurations d’accès aux identités et appareils](microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD), dont Office 365 et Microsoft Intune dans Microsoft 365 Entreprise.
 

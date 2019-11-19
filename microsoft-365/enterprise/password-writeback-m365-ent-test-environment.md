@@ -16,14 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: d946aefa38884923d70d2c530d61f84861cc914e
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: f0f10d34cd761f7e7e3c60a1816bd79eea8ecd9b
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639754"
+ms.locfileid: "38673360"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
+
+*Ce Guide de Laboratoire Test peut uniquement être utilisé pour les environnements de test Microsoft 365 Entreprise*.
 
 La réinitialisation du mot de passe permet aux utilisateurs de mettre à jour leur mot de passe via Azure Active Directory (Azure AD), qui est ensuite copié sur votre instance Active Directory Domain Services (AD DS) locale. Avec l’écriture différée de mot de passe, les utilisateurs n’ont pas besoin de mettre à jour leur mot de passe localement via AD DS où les comptes d’utilisateurs et leurs attributs sont stockés. Cette étape est utile aux utilisateurs itinérants ou distants qui ne disposent pas d’une connexion d’accès à distance au réseau local.
 

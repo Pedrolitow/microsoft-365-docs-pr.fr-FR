@@ -16,14 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer l’authentification directe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 4835b909dbe20f449828b604192d9f3957f54c5c
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 21289d01f85f7e7e5e92b4f84d7ba0c1a4f6e8a9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640733"
+ms.locfileid: "38673390"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Authentification directe pour votre environnement de test Microsoft 365
+
+*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Entreprise et Office 365 Entreprise*.
 
 Les organisations désireuses d’utiliser directement leur infrastructure d’Active Directory Domain Services (AD DS) en local pour l’authentification aux applications et services sur le cloud Microsoft peuvent utiliser l’authentification directe. Cet article décrit comment configurer l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365. Voici la configuration que vous obtenez:
   

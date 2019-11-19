@@ -16,14 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: c8417d7ff1c4a2b9a753968804d187300b6c6195
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 2845b3ec7d1725219fcbbb14ed4c1067a11a90bc
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640595"
+ms.locfileid: "38673290"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
+
+*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Entreprise et Office 365 Entreprise*.
 
 L’authentification unique (SSO) transparente Azure AD connecte automatiquement les utilisateurs quand ils sont sur un PC ou un appareil connecté au réseau de leur organisation. L’authentification unique transparente Azure AD permet aux utilisateurs d’accéder facilement aux applications informatiques sans avoir besoin de composants locaux supplémentaires.
 

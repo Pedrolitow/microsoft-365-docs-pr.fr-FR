@@ -13,14 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables applicables à l’authentification de la synchronisation du hachage du mot de passe.
-ms.openlocfilehash: 9544f59f638eb590ad5f43158b33229ec5703580
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d5feddd7ddddd0ad8891873a654627a0e7ba4fa3
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627508"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673350"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
+
+*Ce Guide de Laboratoire Test peut uniquement être utilisé pour les environnements de test Microsoft 365 Entreprise*.
 
 Les [Configurations d’accès aux identités et appareils](microsoft-365-policies-configurations.md) sont un ensemble de configurations et stratégies d’accès conditionnel pour protéger l’accès à tous les services qui sont intégrés avec Azure Active Directory (Azure AD), dont Office 365 et Enterprise Mobility + Security dans Microsoft 365 Entreprise.
 

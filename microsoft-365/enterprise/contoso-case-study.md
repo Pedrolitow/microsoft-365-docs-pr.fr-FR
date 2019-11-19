@@ -3,7 +3,7 @@ title: Microsoft 365 Entreprise pour Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment une multinationale fictive mais représentative a mis en œuvre Microsoft 365 Entreprise.
-ms.openlocfilehash: e7c79612b18bdd21d8fd137abe11f8f26cfd6eff
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 08f2adfac801ad317fc9aeb812685c2ca061eb3c
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673220"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699694"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Entreprise pour Contoso Corporation
 
@@ -65,6 +65,10 @@ Reportez-vous aux articles suivants pour plus d’informations :
 - [Résumé de sécurité Microsoft 365 Entreprise](contoso-security-summary.md)
 
   Contoso utilise la gamme complète de fonctionnalités de sécurité Microsoft 365 Entreprise pour la gestion de l’identité et de l’accès, la protection contre les menaces, la protection des informations et la gestion de la sécurité.
+
+- [Équipe pour un projet top secret](contoso-team-for-top-secret-project.md)
+
+  Pour créer un environnement de collaboration sécurisé pour un projet top secret, Contoso a utilisé une équipe pour les données hautement réglementées.
 
 - [Site SharePoint Online pour les ressources numériques hautement confidentielles](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 

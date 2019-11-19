@@ -14,17 +14,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 description: 'Résumé : créer un réseau virtuel entre différents locaux simulé dans Microsoft Azure en tant qu’environnement de test Microsoft 365.'
-ms.openlocfilehash: 7fc3035db5e0b6e924d8b55e81cbee5eca38bfbf
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: be753251670f882b277305f808354791efc38547
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640713"
+ms.locfileid: "38673310"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Réseau virtuel entre différents locaux simulé dans un environnement de test Microsoft 365
 
- **Résumé :** Créez un réseau virtuel intersites simulé dans Microsoft Azure en tant qu’environnement de développement/test.
-  
+*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Entreprise et Office 365 Entreprise*.
+
 Cet article vous guide tout au long de la création d’un environnement de cloud hybride simulé avec Microsoft Azure, à l’aide de deux réseaux virtuels Azure. Voici la configuration obtenue. 
   
 ![Phase 3 de l’environnement de test/développement de réseau virtuel intersites simulé, avec la machine virtuelle DC2 dans XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
