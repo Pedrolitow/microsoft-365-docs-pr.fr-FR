@@ -9,14 +9,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5b41775a4ab68f1738748f6726842472288ce8f1
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: 055c19715ff5dcd28ae05489600a31b2f7904e72
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422391"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749755"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Liste de vérification de préparation sur la responsabilité Dynamics 365 concernant le RGPD
 
@@ -128,7 +130,7 @@ Pour obtenir d’autres documents relatifs au RGPD, voir https://aka.ms/gdprgets
 |||
 |:-----|:-----|
 |**ID**|**Description/lien**|
-| 1 <a name="1"> </a> | [Conditions d’utilisation d’Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
+| 1 <a name="1"> </a> | [Conditions d’utilisation d’Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 | 2 <a name="2"> </a> | [Informations clés de Dynamics 365 relatives aux analyses d’impact sur la protection des données client](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 3 <a name="3"> </a> | [Audit et génération d’états dans Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |
 | 4 <a name="4"> </a> | [Demandes des personnes concernées par le traitement des données pour Dynamics 365 concernant le RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) |
@@ -138,9 +140,9 @@ Pour obtenir d’autres documents relatifs au RGPD, voir https://aka.ms/gdprgets
 | 8 <a name="8"> </a> | [Rapport de vérification type 2 SOC 2 Dynamics 365 et « bridge letter » (lettre-relais entre deux exercices)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e06a247d-af6b-4933-8074-1002757984bd&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 9 <a name="9"> </a> | [Dynamics 365 : Découvrez les fonctions de sécurité intégrées](https://www.microsoft.com/trustcenter/security/dynamics365-security) |
 | 10 <a name="10"> </a> | [Qui peut accéder à vos données et dans quelles conditions](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 11 <a name="11"> </a> | [Contrats pour les sous-traitants : conclusion de contrat avec Microsoft](https://www.microsoft.com/fr-FR/procurement/supplier-contracting.aspx#SSPA) |
+| 11 <a name="11"> </a> | [Contrats pour les sous-traitants : conclusion de contrat avec Microsoft](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 12<a name="12"> </a>  | [Notification de violation Dynamics 365 dans le cadre du RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) |
-| 13 <a name="13"> </a> | [Offres de conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
+| 13 <a name="13"> </a> | [Offres de conformité du Centre de gestion de la confidentialité Microsoft](offering-home.md) |
 | 14 <a name="14"> </a> | [Rapport d’évaluation de la sécurité et test de pénétration Dynamics 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments) |
 | 15 <a name="15"> </a> | [Gestionnaire de conformité](https://servicetrust.microsoft.com/ComplianceManager) |
 | 16 <a name="16"> </a> | [Informations relatives au délégué à la protection des données de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) |

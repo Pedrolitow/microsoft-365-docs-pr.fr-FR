@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 11bf048dd1cd913d8344929b5025a65638d47f4b
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078934"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749733"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Sythèse du règlement général sur la protection des données
 
@@ -66,7 +68,7 @@ Les demandes de personnes concernées permettent aux sujets de données d’exer
 - **Quelles actions seront requises pour effectuer une DSR ?**  : une demande de personne concernée implique six activités : découverte, accès, rectification, restriction, exportation et suppression.
 - **Quelles sont vos sources de données ?**  : une grande partie des données d’une organisation est générée dans les [applications Office](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) telles qu’Excel et Outlook. Vous pouvez également trouver des données pertinentes pour une DSR dans les [informations](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) générées par les produits et services Microsoft et les [journaux générés par le système](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs).
 - **Quels types de données doivent faire l’objet d’une recherche ?**  : les données à caractère personnel peuvent se trouver dans les données client, les informations générées par les produits et services Microsoft et les journaux générés par le système.
-- **Comment les données à caractère personnel doivent-elles être recherchées ?**  : la recherche de données à caractère personnel peut varier entre les produits et services Microsoft. Les outils de recherche incluent la [recherche de contenu](https://docs.microsoft.com/fr-FR/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) ou la capacité [de recherche dans l’application](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs). Les administrateurs peuvent accéder aux [journaux générés par le système](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs) associés à l’activité d’un utilisateur.  
+- **Comment les données à caractère personnel doivent-elles être recherchées ?**  : la recherche de données à caractère personnel peut varier entre les produits et services Microsoft. Les outils de recherche incluent la [recherche de contenu](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) ou la capacité [de recherche dans l’application](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs). Les administrateurs peuvent accéder aux [journaux générés par le système](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs) associés à l’activité d’un utilisateur.  
 - **Dans quels formats est-ce que les données à caractère personnel doivent être disponibles ?**  : Le « droit à la portabilité des données » du RGPD permet à la personne concernée par le traitement des données de demander une copie des données à caractère personnel dans un « format lisible par machine, fréquemment utilisé et structuré » et demander à votre organisation de transmettre ces fichiers à une autre entité de contrôle des données.
 
 ### <a name="data-protection-impact-assessment"></a>Analyses d’impact sur la protection des données

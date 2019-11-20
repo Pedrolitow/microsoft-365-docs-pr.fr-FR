@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 3a07400f6c3e788734b4d959080e2008eb7b0cfe
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698286"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749749"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Support Microsoft, services professionnels et notification des violations dans le cadre du RGPD
 
@@ -27,7 +29,7 @@ Les objectifs de l’équipe de réponse aux incidents de protection des donnée
 
 ## <a name="data-protection-incident-response-overview"></a>Présentation de la réponse aux incidents de protection des données 
 
-La division Services professionnels Microsoft s’implique dans la protection de ses clients et prend toutes les mesures nécessaires pour empêcher les incidents de protection des données de survenir, dans une optique de maintien de la confiance des clients. Pour la division Services professionnels, un incident de protection des données correspond à une violation de sécurité entraînant, de manière accidentelle ou illégale, la destruction, la perte, l’altération, la divulgation non autorisée de données personnelles ou de données de support ou de conseil, ou l’accès à ces données, lors de leur traitement par Microsoft. Les clients commerciaux abonnés au support Premier, au support Unifié ou aux services de conseil Microsoft doivent se reporter à la réponse aux incidents de protection des données dans leur langue dans l’addenda sur la protection des données des services professionnels, à l’adresse <http://aka.ms/professionalservicesdpa/>.
+La division Services professionnels Microsoft s’implique dans la protection de ses clients et prend toutes les mesures nécessaires pour empêcher les incidents de protection des données de survenir, dans une optique de maintien de la confiance des clients. Pour la division Services professionnels, un incident de protection des données correspond à une violation de sécurité entraînant, de manière accidentelle ou illégale, la destruction, la perte, l’altération, la divulgation non autorisée de données personnelles ou de données de support ou de conseil, ou l’accès à ces données, lors de leur traitement par Microsoft. Les clients commerciaux abonnés au support Premier, au support Unifié ou aux services de conseil Microsoft doivent se reporter à la réponse aux incidents de protection des données dans leur langue dans l’addenda sur la protection des données des services professionnels, à l’adresse <https://aka.ms/professionalservicesdpa/>.
 
 ## <a name="scope--limits-of-data-protection-incident-response-process"></a>Étendue et limites du processus de réponse aux incidents de protection des données
 
@@ -54,7 +56,7 @@ Les services professionnels Microsoft surveillent en permanence l’émergence d
 Les processus de détection utilisés par les services professionnels Microsoft sont conçus pour découvrir les incidents de protection des données et déclencher des enquêtes. Par exemple :
 
 - Les violations de sécurité sont signalées au système de création de rapports général de Microsoft à des fins de référence ou sont signalées directement à l’équipe de réponse aux incidents de protection de données des services professionnels.
-- Les clients envoient des rapports décrivant les activités douteuses via le [portail de Support client](http://support.microsoft.com).
+- Les clients envoient des rapports décrivant les activités douteuses via le [portail de Support client](https://support.microsoft.com).
 - Le personnel des services professionnels envoie les signalements. Les employés de Microsoft sont formés pour identifier et transmettre les éventuels problèmes de sécurité.
 - Pour les outils et les systèmes utilisés dans le processus de fourniture de services professionnels, l’équipe des opérations utilise des alertes système automatisées via la surveillance interne et les infrastructures d’alertes. Ces alertes peuvent survenir en tant qu’alarmes basées sur la signature (par exemple, les programmes malveillants, la détection de l’intrusion) ou via des algorithmes conçus pour profiler l’activité prévue et signaler des anomalies.
 
