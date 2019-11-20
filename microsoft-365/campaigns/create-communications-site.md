@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un site de communication pour votre campagne.
-ms.openlocfilehash: 8473aa3a5b4e091b25d57939a0897eb257513b75
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e8f7730d1ec407bf24a819df7366d9bedd78d390
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029088"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748275"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Créer un site de communication pour votre campagne
 
@@ -55,7 +55,7 @@ Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprim
 ## <a name="set-it-up"></a>Configuration
 
 1. Connectez-vous https://Office.comà.
-2. Dans le coin supérieur gauche de la page, sélectionnez l’icône du lanceur d’applications, puis sélectionnez la vignette **SharePoint** . Si la vignette **SharePoint** n'apparaît pas, cliquez sur la vignette **Sites** ou sur **Tout** si SharePoint n'est pas visible.
+2. Dans le coin supérieur gauche de la page, sélectionnez l’icône du lanceur d’applications, puis sélectionnez la vignette **SharePoint** . Si vous ne voyez pas la vignette **SharePoint** , cliquez sur la vignette **sites** ou sur **tout** si SharePoint n’est pas visible.
 3. En haut de la page d’accueil SharePoint, cliquez sur **+ créer un site** , puis sur l’option **site de communication** .
 
 Découvrez toutes les [informations sur les sites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) de communication et la [création d’un site de communication dans SharePoint Online](https://support.office.com/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).

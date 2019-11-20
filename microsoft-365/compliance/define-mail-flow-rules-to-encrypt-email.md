@@ -14,16 +14,18 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l’aide du chiffrement de messages Office 365.
-ms.openlocfilehash: 17a04941d7132dbe50f8a79ec3b8879b300b414e
-ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
+ms.openlocfilehash: 54fc53d1e39208f42348b6def4afadf71092ff11
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "38685690"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748552"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
 
 En tant qu’administrateur général Office 365, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour protéger les messages électroniques que vous envoyez et recevez. Vous pouvez définir des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement des messages chiffrés provenant de votre organisation ou des réponses aux messages chiffrés envoyés à partir de votre organisation. Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online PowerShell pour créer ces règles. En plus des règles de chiffrement globales, vous pouvez également choisir d’activer ou de désactiver des options de chiffrement des messages individuelles pour les utilisateurs finaux.
+
+Vous ne pouvez pas chiffrer les messages entrants provenant d’expéditeurs extérieurs à votre organisation.
 
 Si vous avez récemment migré d’AD RMS vers Azure information protection, vous devrez passer en revue vos règles de flux de messagerie existantes pour vous assurer qu’elles continuent de fonctionner dans votre nouvel environnement. Par ailleurs, si vous souhaitez tirer parti des nouvelles fonctionnalités de chiffrement de messages Office 365 (OME) à l’aide d’Azure information protection, vous devez mettre à jour vos règles de flux de messagerie existantes. Dans le cas contraire, vos utilisateurs continueront à recevoir des messages chiffrés qui utilise le format de pièce jointe HTML précédent au lieu de la nouvelle expérience OME transparente. Si vous n’avez pas encore configuré OME, reportez-vous à la rubrique [set up New Office 365 message Encryption Capabilities](set-up-new-message-encryption-capabilities.md) pour obtenir des informations.
 

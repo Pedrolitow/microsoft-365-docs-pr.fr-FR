@@ -1,5 +1,5 @@
 ---
-title: Utiliser AllowSelfServicePurchase pour activer ou désactiver les achats en libre-service
+title: Utiliser AllowSelfServicePurchase pour le module MSCommerce PowerShell
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’applet de commande AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9093e018ed24a9e9735f5b6b71084246967cb59d
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: cb035294ff7f6007e73464f88fc69376fc5b8cc1
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676265"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748245"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module MSCommerce PowerShell
 
@@ -123,6 +123,21 @@ Connect-MSCommerce #sign-in with your global or billing administrator account wh
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate'}
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
+
+## <a name="troubleshooting"></a>Résolution des problèmes
+
+**Problème**
+
+Le message d’erreur suivant s’affiche :
+
+    HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying
+    connection was closed: An unexpected error occurred on a send.
+
+Cela peut être dû à une version plus ancienne de TLS (Transport Layer Security). Pour connecter ce service, vous devez utiliser TLS 1,2 ou une version ultérieure.
+
+**Solution**
+
+Effectuez une mise à niveau vers TLS 1,2 :[https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

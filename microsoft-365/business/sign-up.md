@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment acheter et vous inscrire pour Microsoft 365 Business.
-ms.openlocfilehash: ef34a3e2bc848ce98efb2218f7bdd9b2a186b6b2
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: 16953f7c752c3105af795e721332e2e6d6bdebe5
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968780"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718716"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>S’inscrire à Microsoft 365 Business
 
@@ -49,7 +49,7 @@ Pour vous inscrire et acheter Microsoft 365 pour votre entreprise, procédez com
 2. Sur la page suivante, recherchez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur les fonctionnalités incluses dans Microsoft 365 Business. Sous Microsoft 365 entreprise, sélectionnez **acheter maintenant**.
 3. Dans la page **Merci d’avoir choisi Microsoft 365 Business** , entrez vos informations pour commencer.
 4. À l' **étape 1**, entrez une adresse de messagerie que vous utilisez déjà. Il peut s’agir de votre adresse de messagerie professionnelle actuelle ou de toute adresse que Microsoft utilisera pour communiquer avec vous lors de l’installation. Il s’agit également de l’adresse à laquelle nous vous enverrons des informations sur votre facture et vos renouvellements. Ensuite, sélectionnez, **configurer le compte**.
-5. À l' **étape 2**, entrez votre nom, votre numéro de téléphone professionnel, le nom de votre société et votre emplacement. Notez que votre pays ou région détermine les services exacts que vous recevez de Microsoft et que vous ne pouvez pas modifier une fois cette étape terminée. Sélectionnez **Suivant**.
+5. À l' **étape 2**, entrez votre nom, votre numéro de téléphone professionnel, le nom de votre société et votre emplacement. Votre pays ou région détermine les services exacts que vous recevez de Microsoft et ne peut pas être modifié une fois cette étape terminée. Sélectionnez **Suivant**.
     > [!NOTE]
     > Nous affichons le nom de votre société dans le centre d’administration ; C’est ici que vous gérez les utilisateurs, licences, et ainsi de suite Microsoft 365. Nous l’incluons également dans les URL de site internes (SharePoint).
 6. À l' **étape 3**:
@@ -66,7 +66,7 @@ Pour vous inscrire et acheter Microsoft 365 pour votre entreprise, procédez com
         
         - **Je ne sais pas ou je possède déjà un nom de domaine.** 
         
-             Choisissez **obtenir un domaine Microsoft pour le moment**. Cela ne coûte rien, et vous pouvez par la suite obtenir un nom personnalisé pour votre entreprise ou vous connecter à une personne&mdash;que vous êtes déjà propriétaire.
+             Choisissez **obtenir un domaine Microsoft pour le moment**. Cela ne coûte rien, et vous pouvez par la suite obtenir un nom personnalisé pour votre entreprise ou vous connecter à une autre personne que vous possédez déjà. Nous allons vous montrer comment.
 
     3. Sélectionnez **suivant** pour créer votre ID d’utilisateur et votre adresse de courrier professionnelle. Entrez le nom (également appelé alias) que vous souhaitez utiliser. Par exemple, Robert Young peut utiliser RobY ou RobYoung comme alias de travail. Ajoutez un mot de passe et sélectionnez s' **inscrire**. Notez votre mot de passe. Nous allons envoyer un courrier électronique à l’adresse que vous avez entrée à l’étape 1 pour vous rappeler votre nom d’utilisateur.
 7. À l' **étape 4**: 

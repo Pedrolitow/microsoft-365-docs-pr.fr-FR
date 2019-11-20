@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité fournies avec Microsoft 365 Business.
-ms.openlocfilehash: 5e295480b1a578ca26646a89d6a0a4183a15428d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f24836ef93c529eddc05c767d6e4fa8af6aef314
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031442"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715139"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business
 
@@ -37,14 +37,13 @@ Microsoft 365 Business propose des fonctionnalités de sécurité simplifiées p
 
 Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise Microsoft 365 dans le centre d’administration, ce qui vous offre un moyen simple d’activer ou de désactiver ces fonctionnalités. Dans le centre d’administration, vous pouvez effectuer les opérations suivantes :
   
-  
 - [Définir les paramètres de gestion des applications pour les appareils Android ou iOS](app-protection-settings-for-android-and-ios.md) . 
     
-    Ces paramètres incluent la suppression des fichiers d’un appareil inactif après une période définie, le chiffrement des fichiers de travail, exigeant que les utilisateurs définissent un code confidentiel, etc.
+    Ces paramètres incluent la suppression de fichiers d’un appareil inactif après une période définie, le chiffrement de fichiers de travail, la nécessité pour les utilisateurs de définir un code confidentiel et ainsi de suite.
     
 - [Définir les paramètres de protection des applications pour les appareils Windows 10](protection-settings-for-windows-10-devices.md) . 
     
-    Ces paramètres peuvent être appliqués aux données d’entreprise sur des appareils appartenant à une entreprise ou personnels.
+    Ces paramètres peuvent être appliqués aux données de l’entreprise sur des appareils appartenant à une société ou appartenant à un personnel.
     
 - [Définir les paramètres de protection des appareils pour les appareils Windows 10](protection-settings-for-windows-10-pcs.md) . 
     
@@ -62,7 +61,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise M
 
 Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour vous aider à protéger votre entreprise contre les menaces et protéger les informations sensibles.
   
-- **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 – Protection avancée contre les menaces](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
     La protection avancée contre les menaces (ATP) permet de protéger votre activité contre le hameçonnage et les attaques par ransomware sophistiqués conçus pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
     
@@ -72,10 +71,10 @@ Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour v
 
 - **[Fonctionnalités complètes d’Intune dans le portail Azure](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    L’accès au centre d’administration Intune dans le portail Azure vous permet de configurer des fonctionnalités de sécurité supplémentaires, telles que la gestion des appareils MacOS, iPhone et appareils Android, ainsi que la gestion avancée des appareils pour Windows, qui ne sont pas disponibles via Microsoft Centre d’administration de l’entreprise 365.
+    L’accès au centre d’administration Intune dans le portail Azure vous permet de configurer des fonctionnalités de sécurité supplémentaires, telles que la gestion des appareils MacOS, iPhone et appareils Android, ainsi que la gestion des appareils avancée pour Windows, qui ne sont pas disponibles auprès de Microsoft. Centre d’administration de l’entreprise 365.
 - **Même [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) que le plan Azure ad P1**
 
-    L’accès conditionnel peut protéger votre organisation contre les risques de connexion, les tentatives d’accès à partir d’un réseau ou d’un paramètre régional inattendus, les tentatives d’accès aux types d’appareils à risque, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée, et les signaux de l’événement First Authentication sont utilisés pour déterminer si l’accès tenté doit être approuvé, refusé ou si une preuve plus marquée (par exemple une seconde forme d’identification) est Obligatoire.
+    L’accès conditionnel peut vous aider à protéger votre organisation contre les risques de connexion, à accéder à des tentatives d’accès à partir d’un réseau ou d’une localisation inattendue, à accéder à des tentatives de types de périphériques risqués, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée, et les signaux de l’événement First Authentication sont utilisés pour déterminer si l’accès tenté doit être approuvé, refusé ou si davantage de preuves (par exemple, une deuxième forme de identification) est obligatoire.
 
     Les fonctionnalités d’accès conditionnel sont les suivantes :
 
@@ -104,7 +103,7 @@ Votre abonnement professionnel Microsoft 365 inclut des fonctionnalités qui vou
     
 - **[Étiquettes de niveau de confidentialité](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 Business inclut toutes les fonctionnalités d' [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Grâce à ce plan, vous pouvez créer des **étiquettes de confidentialité**qui vous permettent de contrôler l’accès aux informations sensibles dans les e-mails et les documents avec des contrôles tels que « ne pas transférer » et « ne pas copier ». Vous pouvez également classer les informations sensibles comme « confidentielles » et spécifier le mode de partage des informations confidentielles à l’extérieur et à l’intérieur de l’entreprise. Le chiffrement au niveau de l’entreprise est facile à appliquer aux e-mails et aux documents afin de garantir la confidentialité de vos informations. Vous pouvez également installer le complément client Azure information protection pour les applications Office. Pour plus d’informations, consultez la rubrique [Azure information protection Unified Labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Pour les étiquettes de sensibilité, installez le **AzInfoProtection_UL. exe**.
+   Microsoft 365 Business inclut toutes les fonctionnalités d' [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Grâce à ce plan, vous pouvez créer des **étiquettes de confidentialité** qui vous permettent de contrôler l’accès aux informations sensibles dans les e-mails et les documents, avec des contrôles tels que « ne pas transférer » et « ne pas copier ». Vous pouvez également classer les informations sensibles comme « confidentielles » et spécifier le mode de partage des informations confidentielles à l’extérieur et à l’intérieur de l’entreprise. Le chiffrement au niveau de l’entreprise est facile à appliquer aux e-mails et aux documents afin de garantir la confidentialité de vos informations. Vous pouvez également installer le complément client Azure information protection pour les applications Office. Pour plus d’informations, consultez la rubrique [Azure information protection Unified Labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Pour les étiquettes de sensibilité, installez le **AzInfoProtection_UL. exe**.
 
 Vous pouvez gérer ces fonctionnalités dans le centre &amp; d’administration et de sécurité et dans le centre d’administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration de Microsoft 365 Business.
   

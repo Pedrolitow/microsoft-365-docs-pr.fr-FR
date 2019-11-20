@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business
-ms.openlocfilehash: 9b17af7f6dde321fb8da758f0cc8223e5f488121
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676102"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748305"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
 Cet article vous aide à renforcer la protection de votre abonnement Microsoft 365 afin de vous protéger contre le hameçonnage, les programmes malveillants et d’autres menaces. Ces recommandations sont appropriées pour les organisations ayant un besoin accru de sécurité, tels que les campagnes politiques, les bureaux d’avocats et les stages de soins de santé. 
 
-Avant de commencer, vérifiez votre score de sécurité Office 365. Le score de sécurité d’Office 365 analyse la sécurité de votre organisation Office 365 en fonction de vos activités normales et des paramètres de sécurité et affecte un score. Commencez par prendre note de votre score actuel. L’exécution des actions recommandées dans cet article augmente votre score. L’objectif est de ne pas atteindre le score maximal, mais de prendre conscience des possibilités de protection de votre environnement qui n’ont pas d’impact négatif sur la productivité de vos utilisateurs. 
+Avant de commencer, vérifiez votre score de sécurité Office 365. Le score de sécurité d’Office 365 analyse la sécurité de votre organisation Office 365 en fonction de vos activités normales et des paramètres de sécurité et affecte un score. Commencez par prendre note de votre score actuel. L’exécution des actions recommandées dans cet article augmente votre score. L’objectif n’est pas d’obtenir le score maximal, mais de prendre conscience des possibilités de protection de votre environnement qui n’ont pas d’impact négatif sur la productivité de vos utilisateurs. 
 
 Pour plus d’informations, consultez la rubrique [Microsoft Secure score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -59,11 +59,11 @@ Pour plus d’informations, consultez la rubrique [protection contre les program
 
 ## <a name="protect-against-ransomware"></a>Protéger contre les ransomware
 
-Les ransomware limitent l’accès aux données en chiffrant les fichiers ou en verrouillant les écrans d’ordinateur. Il tente ensuite de extort l’argent des victimes en demandant « ransomware », généralement sous forme de cryptocurrencies comme Bitcoin, dans Exchange pour accéder aux données. 
+Les ransomware limitent l’accès aux données en chiffrant les fichiers ou en verrouillant les écrans d’ordinateur. Il tente ensuite de extort l’argent des victimes en demandant « ransomware », généralement sous la forme d’cryptocurrencies comme Bitcoin, dans Exchange pour l’accès aux données. 
   
 Vous pouvez vous protéger contre les ransomware en créant une ou plusieurs règles de flux de messagerie pour bloquer les extensions de fichiers couramment utilisées pour les ransomware (elles ont été ajoutées à l’étape [augmenter le niveau de protection contre les programmes malveillants dans le courrier](#raise-the-level-of-protection-against-malware-in-mail) ) ou pour avertir les utilisateurs qui reçoivent ces pièces jointes par courrier électronique.
 
-Outre les fichiers que vous avez bloqués à l’étape précédente, il est également recommandé de créer une règle pour avertir les utilisateurs avant l’ouverture de pièces jointes de fichier Office qui incluent des macros. Les ransomware peuvent être masqués dans les macros, nous les avertirons donc que les utilisateurs ne pourront pas ouvrir ces fichiers à partir de personnes qu’ils ne connaissent pas.
+Outre les fichiers que vous avez bloqués à l’étape précédente, il est également recommandé de créer une règle pour avertir les utilisateurs avant l’ouverture de pièces jointes de fichier Office qui incluent des macros. Les ransomware peuvent être masqués dans les macros, afin que les utilisateurs ne puissent pas ouvrir ces fichiers à partir de personnes qu’ils ne connaissent pas.
 
 Pour créer une règle de transport de messagerie :
   
@@ -128,7 +128,6 @@ Si vous avez configuré un ou plusieurs domaines personnalisés pour votre envir
   
 Nous vous recommandons de prendre en main cette protection en créant une stratégie de protection des utilisateurs les plus importants et de votre domaine personnalisé. 
 
-  
 Pour créer une stratégie anti-hameçonnage ATP, regardez [cette vidéo de formation courte](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)ou effectuez les étapes suivantes :
   
 1. Accédez à [https://protection.office.com](https://protection.office.com). 
@@ -139,9 +138,9 @@ Pour créer une stratégie anti-hameçonnage ATP, regardez [cette vidéo de form
     
 4. Sur la page **anti-hameçonnage** , sélectionnez **+ créer**. Un Assistant s’ouvre et vous guide tout au long de la définition de votre stratégie anti-hameçonnage.
     
-5. Spécifiez le nom, la description et les paramètres de votre stratégie, comme recommandé dans le graphique ci-dessous. Pour plus d’informations, consultez la rubrique [en savoir plus sur les options de stratégie anti-hameçonnage ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) . 
+5. Spécifiez le nom, la description et les paramètres de votre stratégie, comme recommandé dans le graphique ci-dessous. Pour plus d’informations, consultez la rubrique [en savoir plus sur les options de stratégie anti-hameçonnage ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies). 
     
-6. Une fois que vous avez vérifié vos paramètres, choisissez **créer cette stratégie** ou **Enregistrer**, selon le cas.
+6. Une fois que vous avez vérifié vos paramètres, sélectionnez **créer cette stratégie** ou **Enregistrer**, selon le cas.
     
 
 |**Paramètre ou option**<br/>|**Paramètre recommandé** <br/>|
@@ -161,7 +160,7 @@ Pour plus d’informations, reportez-vous à la rubrique [set up Office 365 ATP 
 
 ![Bannière pointant vers https://aka.ms/aboutM365preview.](../business/media/m365admincenterchanging.png)
 
-Tout d’abord, assurez- <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> vous que le nouvel aperçu du centre d’administration est activé dans le centre d’administration et que le nouveau centre d’administration est activé ; activez le bouton bascule en regard du texte dans **le nouveau centre d’administration**.
+Tout d’abord, assurez-vous que le <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> nouvel aperçu du centre d’administration est activé dans le centre d’administration. Activez le bouton bascule en regard du texte dans **le nouveau centre d’administration**.
 
    ![Le nouvel aperçu du centre d’administration sur.](media/previewon.png)
 
@@ -172,11 +171,11 @@ Si vous ne voyez pas encore la page de **configuration** avec des cartes dans vo
     ![Choisissez afficher sur la protection renforcée contre les menaces avancées.](media/startatp.png) 
 
 3. Sur la page **améliorer la protection contre les menaces avancées** , sélectionnez **prise en main**.
-4. Dans le volet qui s’ouvre, activez les cases à cocher en regard **des liens et des pièces jointes dans le courrier électronique**, **analysez les fichiers dans SharePoint, OneDrive et teams**, et **analysez les liens dans les applications Office Online et de bureau** sous **analyser les éléments de contenu malveillant**.
+4. Dans le volet qui s’ouvre, activez les cases à cocher en regard de **liens et pièces jointes dans courrier électronique**, **analyser les fichiers dans SharePoint, OneDrive et teams**, puis **analysez les liens dans les applications Office Online et de bureau** sous **analyser les éléments de contenu malveillant**.
 
       - Sous **liens et pièces jointes dans courrier électronique**, tapez tous les utilisateurs ou les utilisateurs spécifiques dont vous souhaitez que les messages électroniques soient analysés.
 
-    ![Activez toutes les cases à cocher dans augmenter le protestion de menaces avancées.](media/setatp.png)
+    ![Activez toutes les cases à cocher dans augmenter la protection contre les menaces avancées.](media/setatp.png)
 5. Choisissez **créer des stratégies** pour activer les pièces jointes approuvées ATP et les liens fiables ATP.
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Configuration des pièces jointes approuvées ATP dans le centre de sécurité & conformité
@@ -197,7 +196,7 @@ Pour créer une stratégie de pièces jointes approuvées pour la protection ava
     
 6. Appliquez les paramètres dans le tableau suivant. 
     
-7. Une fois que vous avez vérifié vos paramètres, choisissez **créer cette stratégie** ou **Enregistrer**, selon le cas.
+7. Après avoir examiné vos paramètres, choisissez **créer cette stratégie** ou **Enregistrer**, selon le cas.
     
 
 |**Paramètre ou option**|**Paramètre recommandé** <br/>|
@@ -288,9 +287,9 @@ La figure suivante illustre les stratégies par défaut incluses dans Microsoft 
 
 Vous pouvez empêcher les membres de votre organisation de partager leurs calendriers, ou vous pouvez également gérer ce qu’ils peuvent partager. Par exemple, vous pouvez limiter le partage aux heures de disponibilité uniquement.
 
-1. Accédez au centre d’administration sur <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> et sélectionnez **paramètres** \> **services & compléments**
+1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> l’adresse et sélectionnez **paramètres** \> **services & compléments**.
 2. Sur la page des **compléments & services** , choisissez **calendrier**, puis indiquez si les personnes de votre organisation peuvent partager leurs calendriers avec des personnes extérieures à Office 365 ou Exchange, ou avec n’importe qui. 
-    Si vous choisissez le partage avec quiconque, vous pouvez également décider de partager uniquement les informations de disponibilité.
+    Si vous choisissez l’option partager avec tout le monde, vous pouvez également décider de partager uniquement les informations de disponibilité.
 
 3. Choisissez **enregistrer les modifications** au bas de la page.
 

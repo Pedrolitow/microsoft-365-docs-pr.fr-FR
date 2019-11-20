@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez l’authentification multifacteur.
-ms.openlocfilehash: cd14bb0d0f24215c64579851fe6982c5bf1ddc3e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 8bd3d4e0c2a918d5b8dbf0c763444bb0a1cff466
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772491"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748355"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurer l’authentification multifacteur
 
@@ -38,4 +38,4 @@ Pour plus d’informations, consultez la rubrique [configuration de l’authenti
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>Utiliser l’application Outlook dans vos appareils
 
-Une fois que votre administrateur a besoin d’utiliser l’authentification multifacteur et que vous avez configuré une application d’authentificateur en tant que deuxième forme d’authentification, nous vous recommandons d’installer et d’utiliser uniquement l’application Outlook pour accéder à votre messagerie Microsoft 365 pour les campagnes. Pour plus d’informations sur l’installation des applications Office, y compris Outlook, sur votre téléphone, consultez la rubrique [set up mobile](../business/set-up-mobile-devices.md) Devices.
+Une fois que votre administrateur a besoin d’utiliser l’authentification multifacteur et que vous avez configuré une application d’authentificateur en tant que deuxième forme d’authentification, nous vous recommandons d’installer et d’utiliser uniquement l’application Outlook pour accéder à votre messagerie Microsoft 365 pour les campagnes. Pour plus d’informations sur l’installation des applications Office, y compris Outlook, sur votre téléphone, consultez la rubrique [set up Mobile Devices](../business/set-up-mobile-devices.md) .

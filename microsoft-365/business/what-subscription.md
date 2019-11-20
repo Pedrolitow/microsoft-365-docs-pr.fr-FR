@@ -1,5 +1,5 @@
 ---
-title: Quel est l’abonnement le plus approprié à votre entreprise?
+title: Quel est l’abonnement le plus approprié à votre entreprise ?
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -15,14 +15,14 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Déterminez si Office 365 E3, Office 365 Business Premium ou Microsoft 365 Business est approprié pour yor Business.
-ms.openlocfilehash: 1422e75af9a035b8a82aa6f85b8acfd340aac846
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Déterminez si Office 365 E3, Office 365 Business Premium ou Microsoft 365 Business est le bon choix pour votre entreprise.
+ms.openlocfilehash: f3adf67cf164b14596bc0cedf1cacd7dec41955e
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072585"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748318"
 ---
-# <a name="what-subscription-is-right-for-your-small-business"></a>Quel est l’abonnement le plus approprié à votre petite entreprise?
+# <a name="what-subscription-is-right-for-your-small-business"></a>Quel est l’abonnement le plus approprié à votre petite entreprise ?
 
-Microsoft propose plusieurs offres pour les petites entreprises, les abonnements recommandés sont Office 365 Business Premium ou Microsoft 365 Business avec jusqu’à 300 utilisateurs. Microsoft 365 Business offre davantage de fonctionnalités de sécurité qu’Office 365 Business Premium pour un coût supplémentaire.
+Microsoft offre plusieurs offres pour les petites entreprises. Les abonnements recommandés sont Office 365 Business Premium ou Microsoft 365 Business avec jusqu’à 300 utilisateurs. Microsoft 365 Business offre davantage de fonctionnalités de sécurité qu’Office 365 Business Premium pour un coût supplémentaire.

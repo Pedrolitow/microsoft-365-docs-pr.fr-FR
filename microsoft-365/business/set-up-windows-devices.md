@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Découvrez comment configurer des appareils Windows exécutant Windows 10 professionnel pour les utilisateurs professionnels de Microsoft 365. '
-ms.openlocfilehash: 7b6fa2ce3243500c3ddcff7883fa9d8da27dcf86
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575565"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718866"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business
 
@@ -41,7 +41,7 @@ Consultez [vérifier que l’appareil est connecté à Azure ad](#verify-the-dev
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Joindre des appareils Windows 10 au service Azure AD de votre organisation
 
-Une fois que tous les appareils Windows au sein de votre organisation ont été mis à niveau vers Windows 10 Professionnel Creators Update, ou s'ils exécutent déjà cette version, vous pouvez joindre ces appareils au domaine Azure Active Directory de votre organisation. Une fois que tous les appareils ont été joints, ils sont automatiquement mis à niveau vers Windows 10 Business, une version de Windows incluse dans votre abonnement Microsoft 365 Business.
+Lorsque tous les appareils Windows de votre organisation ont été mis à niveau vers Windows 10 professionnel Creators Update ou que vous exécutez déjà Windows 10 Pro Creators Update, vous pouvez joindre ces appareils au service Azure Active Directory de votre organisation. Une fois les appareils joints, ils seront automatiquement mis à niveau vers Windows 10 Business, qui fait partie de votre abonnement professionnel Microsoft 365.
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Pour un appareil Windows 10 Professionnel ou un appareil qui vient d'être mis à niveau
 
@@ -89,7 +89,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
   
    ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-Si vous avez chargé des fichiers vers OneDrive Entreprise, synchronisez-les vers votre ordinateur. Si vous avez utilisé un outil tiers pour migrer un profil et des fichiers, synchronisez-les également avec le nouveau profil.
+Si vous avez chargé des fichiers vers OneDrive Entreprise, synchronisez-les vers votre ordinateur. Si vous avez utilisé un outil tiers pour migrer le profil et les fichiers, synchronisez-les également avec le nouveau profil.
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Vérifiez que l’appareil est connecté à Azure AD
 
@@ -97,7 +97,7 @@ Pour vérifier votre état de synchronisation, dans la page **Accès Professionn
   
 Dans la page État de synchronisation, cliquez sur Synchronisation pour obtenir les stratégies de gestion des appareils mobiles les plus récentes sur votre ordinateur.
   
-Pour utiliser le compte Microsoft 365 Entreprise, accédez au bouton **Démarrer** de Windows, cliquez avec le bouton droit sur l'image de votre compte actuel, puis sur **Changer de compte**. Connectez-vous en utilisant l'adresse e-mail et le mot de passe de votre organisation.
+Pour commencer à utiliser le compte professionnel Microsoft 365, accédez au bouton **Démarrer** de Windows, cliquez avec le bouton droit sur l’image de votre compte actuel, puis **changez de compte**. Connectez-vous en utilisant l'adresse e-mail et le mot de passe de votre organisation.
   
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   

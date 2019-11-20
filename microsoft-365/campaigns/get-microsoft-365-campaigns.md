@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenez Microsoft 365 pour les campagnes afin de protéger votre campagne contre les menaces Cybersecurity pour la messagerie, les données et les communications.
-ms.openlocfilehash: 0e038f3b33db957d3503ee091b075b767c30eeda
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 96c86c3cbd942e0ffe31cfdf29a216c63c52bfc4
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772511"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748265"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtenir Microsoft 365 pour les campagnes
 
-Les professionnels de Microsoft 365 peuvent utiliser ces conseils pour configurer une sécurité supplémentaire pour la messagerie et la collaboration. Toutefois, les campagnes et les partis politiques des États-Unis ont droit à des tarifs spéciaux pour Microsoft 365. Actuellement, cette tarification spéciale est disponible pour:
+Les professionnels de Microsoft 365 peuvent utiliser ces conseils pour configurer une sécurité supplémentaire pour la messagerie et la collaboration. Toutefois, les campagnes et les partis politiques des États-Unis ont droit à des tarifs spéciaux pour Microsoft 365. Actuellement, cette tarification spéciale est disponible pour :
 - Campagnes politiques fédérales américaines (par exemple, campagnes de recherche pour la maison américaine, US Senate ou président)
 - Les partis politiques au niveau national aux États-Unis.
 
@@ -38,20 +38,20 @@ Si votre campagne ou votre partie politique est qualifiée, Microsoft 365 pour l
 
 Si vous n’êtes pas éligible à une tarification spéciale, Microsoft 365 Business est toujours le moyen le plus économique d’obtenir une sécurité complète pour un environnement de collaboration. Consultez la rubrique [Inscrivez-vous à Microsoft 365 pour les campagnes](m365-campaigns-sign-up.md). Utilisez ensuite cette bibliothèque pour configurer une sécurité supplémentaire et aider votre équipe à collaborer de manière sécurisée. 
 
-## <a name="what-does-microsoft-365-for-campaigns-include"></a>Quelles sont les fonctionnalités de Microsoft 365 pour les campagnes?
-Cette configuration de Microsoft 365 Business inclut des contrôles simples qui vous permettent, ainsi que votre personnel, de collaborer en toute sécurité: 
-- **Protéger l’identité**de l’utilisateur: Assurez-vous que les utilisateurs sont bien ceux qu’ils disent être lorsqu’ils se connectent pour envoyer des courriers électroniques ou accéder à des fichiers (authentification multifacteur).
-- **Protéger**les informations sensibles: Protégez les informations sensibles pour surveiller les informations qui sont partagées en dehors de votre organisation (protection contre la perte de données).
+## <a name="what-does-microsoft-365-for-campaigns-include"></a>Quelles sont les fonctionnalités de Microsoft 365 pour les campagnes ?
+Cette configuration de Microsoft 365 Business inclut des contrôles simples qui vous permettent, ainsi que votre personnel, de collaborer en toute sécurité : 
+- **Protéger l’identité**de l’utilisateur : Assurez-vous que les utilisateurs sont bien ceux qu’ils disent être lorsqu’ils se connectent pour envoyer des courriers électroniques ou accéder à des fichiers (authentification multifacteur).
+- **Protéger**les informations sensibles : Protégez les informations sensibles pour surveiller les informations qui sont partagées en dehors de votre organisation (protection contre la perte de données).
 - **Protéger les appareils mobiles**: protéger les données sur les appareils mobiles (stratégie de protection des applications mobiles).
 - **Protection contre le contenu malveillant**: empêchez l’accès au contenu malveillant en analysant les pièces jointes des messages électroniques (protection avancée contre les menaces).
 - **Protéger les mots de passe**: configurez les mots de passe pour qu’ils n’expirent jamais, ce qui est plus sécurisé et empêche les arrêts de travail (stratégie de mot de passe). 
 
 
-## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>Qu’est-ce qui coûte, qui en a besoin et quel est l’engagement?
+## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>Qu’est-ce qui coûte, qui en a besoin et quel est l’engagement ?
 Si votre campagne est qualifiée de tarification spéciale, Microsoft 365 pour les coûts des campagnes $5 par utilisateur et par mois. Pour protéger votre campagne, nous vous recommandons de disposer d’une licence pour le candidat, le responsable de la campagne, tous les membres du personnel qui font partie de la campagne ou de la partie, et généralement tous les employés à plein temps. Certains employés bénévoles peuvent également avoir besoin d’une licence. En règle générale, attribuez une licence à tous les utilisateurs de votre campagne qui ont besoin d’un courrier électronique et d’appareils protégés.
 Il n’y a pas d’engagement de délai minimal lorsque vous vous inscrivez à Microsoft 365 pour les campagnes. Vous pouvez payer tous les mois pour les licences dont vous avez besoin et cesser d’utiliser le service à tout moment.
 
-## <a name="how-do-i-qualify-for-special-pricing"></a>Comment puis-je bénéficier d’une tarification spéciale?
+## <a name="how-do-i-qualify-for-special-pricing"></a>Comment puis-je bénéficier d’une tarification spéciale ?
 
 1. Accédez à https://m365forcampaigns.microsoft.com/ et fournissez quelques détails sur votre organisation. Les détails que vous fournissez nous aident à vérifier que vous êtes un fournisseur de campagne ou de partie aux États-Unis. Il n’y a aucun engagement lorsque vous remplissez ce formulaire. 
 2. Une fois que vous avez terminé le formulaire, il nous faut quelques jours pour vérifier vos informations. 

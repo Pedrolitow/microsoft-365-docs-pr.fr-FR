@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Découvrez comment valider les paramètres de protection des applications professionnelles Microsoft 365 dans les appareils Windows 10.
-ms.openlocfilehash: 5fed2278856f40233b142d3c7c4bc623e3777799
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Découvrez comment valider les paramètres de protection des applications professionnelles Microsoft 365 sur les appareils Windows 10.
+ms.openlocfilehash: b8793ab7f77bbc7f608f237e2455f6fd12c3bb26
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575465"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721797"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Valider les paramètres de protection des appareils sur des PC Windows 10
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Vérifier que les stratégies d’appareil Windows 10 sont définies
 
-Une fois que vous avez [configuré les stratégies de périphériques](protection-settings-for-windows-10-pcs.md), la stratégie peut prendre plusieurs heures et prendre effet sur les appareils des utilisateurs. Vous pouvez vérifier que les stratégies ont pris effet en consultant les différents écrans de paramètres Windows sur les appareils des utilisateurs. Étant donné que les utilisateurs ne peuvent pas modifier les paramètres de l’antivirus Windows Update et Windows Defender sur leurs appareils Windows 10, un grand nombre de ces options seront grisées.
+Une fois que vous avez [configuré les stratégies de périphériques](protection-settings-for-windows-10-pcs.md), la stratégie peut prendre plusieurs heures et prendre effet sur les appareils des utilisateurs. Vous pouvez vérifier que les stratégies ont pris effet en consultant les différents écrans de paramètres Windows sur les appareils des utilisateurs. Étant donné que les utilisateurs ne pourront pas modifier les paramètres de l’antivirus Windows Update et Windows Defender sur leurs appareils Windows 10, de nombreuses options seront grisées.
   
 1. Accédez aux **paramètres** \> **mettre &amp; à jour** les **options de redémarrage** de la sécurité \> **Windows Update** \> et vérifiez que tous les paramètres sont grisés. 
     
@@ -49,7 +49,7 @@ Une fois que vous avez [configuré les stratégies de périphériques](protectio
     
     ![Page choisir le mode de remise des mises à jour : indique que les paramètres sont masqués ou gérés par votre organisation.](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Pour ouvrir le centre de sécurité Windows Defender, accédez à **paramètres** \> **mise &amp; à jour sécurité** \> **Windows Defender** \> , cliquez sur Ouvrir le thread de \> virus **** ** &amp; du centre de sécurité Windows Defender protection** \> **des &amp; paramètres de protection contre les menaces antivirus**. 
+4. Pour ouvrir le centre de sécurité Windows Defender, accédez à **paramètres** \> **mise &amp; à jour sécurité** \> **Windows Defender** \> cliquez sur Ouvrir les \> **paramètres de protection contre les &amp; menaces**de virus de **protection antivirus &amp; ** **Windows Defender** \> . 
     
 5. Vérifiez que toutes les options sont grisées. 
     

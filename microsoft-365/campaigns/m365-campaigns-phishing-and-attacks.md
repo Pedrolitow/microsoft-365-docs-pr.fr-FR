@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez-vous contre le hameçonnage et les autres attaques à l’aide de Microsoft 365 pour les campagnes.
-ms.openlocfilehash: be00cdc0c70c2a2f6ac9292e933031280b7c4616
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 04779d1c69b57811cf493a9f48185eed2435c82e
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029058"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748255"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protégez-vous contre le hameçonnage et les autres attaques
 
@@ -36,7 +36,6 @@ Microsoft 365 inclut de nombreuses protections pour vous protéger contre les at
 - **Hameçonnage** Une escroquerie de type phishing est un message électronique qui semble légitime mais qui tente d’obtenir vos informations personnelles ou de voler votre argent.
 - **Usurpation d’identité** Les arnaqueurs peuvent également utiliser une technique appelée « usurpation » pour faire en sorte qu’il apparaisse comme si vous aviez reçu un e-mail de vous-même. 
 - Les **programmes malveillants** sont des logiciels malveillants qui peuvent être installés sur votre ordinateur, généralement installés après avoir cliqué sur un lien ou ouvert un document à partir d’un message électronique. Il existe différents types de programmes malveillants (par exemple, des ransomware, lorsque votre ordinateur est pris en charge), mais vous ne voulez pas les avoir. 
-
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
@@ -70,11 +69,9 @@ Téléchargez cette infographie avec des conseils pour vous et les membres de vo
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
- 
-
 ## <a name="set-it-up"></a>Configuration
 
 Pour en savoir plus, consultez les informations suivantes :
-- [Sécurisation des fichiers et des communications avec Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
-- [Rester sécurisé et privé au travail](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
+- [Protégez vos fichiers et vos communications avec Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+- [Restez sécurisé et privé au travail](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

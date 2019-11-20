@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres par défaut et d’autres paramètres disponibles dans Microsoft 365 Business pour sécuriser les appareils Windows 10.
-ms.openlocfilehash: 5d4bce02df1276dc9b284c7b0709c7dc26b0dbce
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 1846ee7ae09db94575ef27dcf4f5721661f7666d
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676045"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715199"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Définir les paramètres de protection des appareils pour les PC Windows 10
 
@@ -43,7 +43,7 @@ Visionnez une vidéo sur la sécurisation des appareils Windows 10 avec Microsof
     
 4. Sous **Type de stratégie**, sélectionnez **Configuration d'appareil Windows 10**.
     
-5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. See [Available settings](#available-settings) for more information. 
+5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. Pour plus d’informations, consultez la rubrique [available Settings](#available-settings). 
     
     Vous pouvez toujours utiliser le lien **Réinitialiser les paramètres par défaut** pour rétablir la valeur par défaut. 
     
@@ -66,13 +66,10 @@ Pour plus d'informations, voir [Correspondance entre les fonctionnalités de pro
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  <br/> |Active les paramètres Microsoft Edge qui protègent les utilisateurs contre les sites et téléchargements malveillants.  <br/> |
 |Utiliser des règles qui réduisent la surface d'attaque des appareils  <br/> |Quand elle est activée, la réduction de la surface d'attaque aide à bloquer les actions et applications que les logiciels malveillants utilisent généralement pour contaminer des appareils. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour en savoir plus, voir [Réduire les surfaces d'attaque](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |
 |Protéger les dossiers contre des menaces telles que des rançongiciels  <br/> |Ce paramètre utilise l'Accès contrôlé aux dossiers pour protéger les données de l'entreprise contre l'apport de modifications par des applications suspectes ou malveillantes, telles que les rançongiciels. L'apport de modifications aux dossiers protégés par des applications de ces types est bloqué. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour en savoir plus, consultez la rubrique [protéger les dossiers avec l’accès contrôlé](https://docs.microsoft.com/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) aux dossiers.  <br/> |
-|Empêcher l'accès réseau à du contenu potentiellement malveillant sur Internet  <br/> |Utilisez ce paramètre pour bloquer les connexions utilisateur sortantes à des sites Internet de faible réputation, susceptibles d'exposer à du hameçonnage en ligne, à des attaques ou à d'autres contenus malveillants. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour plus d'informations, voir [Protéger votre réseau](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).  <br/> |
-|Protéger les fichiers et dossiers sur PC contre un accès non autorisé avec BitLocker  <br/> |Bitlocker protège les données en chiffrant les disques durs de l'ordinateur, et protège contre l'exposition des données en cas de perte ou de vol. Pour plus d'informations, voir [FAQ Bitlocker](https://go.microsoft.com/fwlink/?linkid=871000).  <br/> |
+|Empêcher l'accès réseau à du contenu potentiellement malveillant sur Internet  <br/> |Utilisez ce paramètre pour bloquer les connexions des utilisateurs sortants vers des emplacements Internet de faible réputation susceptibles d’héberger des tentatives de hameçonnage, des attaques ou d’autres contenus malveillants. Ce paramètre est disponible uniquement si l’antivirus Windows Defender est **activé.** Pour plus d’informations, consultez [la rubrique protéger votre réseau](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).  <br/> |
+|Protéger les fichiers et dossiers sur PC contre un accès non autorisé avec BitLocker  <br/> |Bitlocker protège les données en chiffrant les disques durs de l'ordinateur, et protège contre l'exposition des données en cas de perte ou de vol. Pour plus d’informations, consultez la rubrique [BitLocker FAQ](https://go.microsoft.com/fwlink/?linkid=871000).  <br/> |
 |Autoriser les utilisateurs à télécharger des applications à partir du Microsoft Store  <br/> |Permet aux utilisateurs de télécharger et d'installer des applications à partir du Microsoft Store. Il peut s'agir de jeux ou d'outils de productivité, c'est pourquoi nous laissons ce paramètre **activé**, mais vous pouvez le désactiver pour plus de sécurité.  <br/> |
-|Autoriser les utilisateurs à accéder à Cortana  <br/> |Cortana peut être très utile ! Elle peut activer ou désactiver des paramètres pour vous, vous indiquer un trajet ou veiller à ce que vous arriviez à l'heure à vos rendez-vous. C'est la raison pour laquelle ce paramètre est **activé** par défaut.  <br/> |
+|Autoriser les utilisateurs à accéder à Cortana  <br/> |Cortana peut être très utile ! Cortana peut activer ou désactiver des paramètres pour vous, donner des instructions et s’assurer que vous êtes à l’heure pour les rendez-vous, c’est pourquoi nous pouvons conserver **ce paramètre par** défaut.  <br/> |
 |Autoriser les utilisateurs à recevoir des conseils de Windows et des annonces de Microsoft  <br/> |Les conseils Windows peuvent être très pratiques et aident les utilisateurs lors du lancement de nouvelles fonctionnalités.  <br/> |
 |Maintenir les appareils Windows 10 à jour automatiquement  <br/> |Permet d'assurer que les appareils Windows 10 reçoivent automatiquement les dernières mises à jour.  <br/> |
 |Désactiver l'écran d'un appareil resté inactif pendant  <br/> |Permet d'assurer la protection des données d'entreprise lorsqu'un utilisateur est inactif. Il est possible qu'un utilisateur travaille dans un lieu public, par exemple un café, et s'éloigne ou soit distrait pendant un instant, laissant son appareil à la vue de tous. Ce paramètre vous permet de contrôler la durée pendant laquelle l'utilisateur peut être inactif avant l'extinction de l'écran.  <br/> |
-   
-  
-

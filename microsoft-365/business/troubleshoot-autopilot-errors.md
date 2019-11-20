@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
 description: Découvrez comment dépanner les erreurs de fichier d’appareil AutoPilot.
-ms.openlocfilehash: 88b59ec20ddda401c1dac45ff729ac38497a767e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 1b5358bd6686c2548e82ec5297ac0ad675835718
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074357"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718696"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Résoudre les erreurs des appareils AutoPilot
 
@@ -42,7 +42,6 @@ Voici des informations sur certaines des erreurs que vous pouvez voir lors de l�
 |Corps de la requête non valide  <br/> |Cette erreur devrait se produire rarement, si vous voyez cette erreur, renouvelez l’opération.  <br/> |
 |La valeur de hachage de matériel pour un périphérique est incorrecte.  <br/> |Si cette erreur apparaît, cela signifie que la valeur que vous avez fournie dans votre fichier CSV pour le hachage matériel d’un périphérique est incorrecte. Tout d’abord, vérifiez que la valeur a été tapée correctement. Si vous pensez que la valeur est correcte, mais que cette erreur persiste, demandez de l’aide à votre fournisseur de matériel.  <br/> |
 |Appareil affecté à un autre client  <br/> |Si cette erreur apparaît, cela signifie que la valeur que vous avez fournie dans votre fichier CSV pour le numéro de série ou la clé de produit d’un ou plusieurs périphériques est incorrecte. Tout d’abord, vérifiez que la valeur a été tapée correctement. Si vous pensez que la valeur est correcte, mais que cette erreur persiste, demandez de l’aide à votre fournisseur de matériel.  <br/> |
-|Le fichier CSV contient un numéro de série ou une clé de produit non valide  <br/> |Si cette erreur s’affiche, cela signifie que l’appareil que vous êtes Tyring d’enregistrer est déjà enregistré par une autre organisation. Pour résoudre ce problème, demandez de l’aide à votre fournisseur de matériel.  <br/> |
-|Ce périphérique n’est pas pris en charge pour l’installation à l’aide de AutoPilot  <br/> | Cette erreur signifie que l’appareil ne répond pas à la configuration requise pour le déploiement de AutoPilot. Les appareils doivent respecter ces exigences :  <br/>  Windows 10, version 1703 ou supérieure.  <br/>  Nouveaux appareils qui ne sont pas issus d'une expérience Windows prête à l'emploi.  <br/> |
+|Le fichier CSV contient un numéro de série ou une clé de produit non valide  <br/> |Si cette erreur apparaît, cela signifie que l’appareil que vous essayez d’enregistrer est déjà enregistré par une autre organisation. Pour corriger cette erreur, demandez de l’aide à votre fournisseur de matériel.  <br/> |
+|Ce périphérique n’est pas pris en charge pour l’installation à l’aide de AutoPilot  <br/> | Cette erreur signifie que l’appareil ne répond pas à la configuration requise pour le déploiement de AutoPilot. Les appareils doivent respecter ces exigences :  <br/>  Windows 10, version 1703 ou supérieure.  <br/>  Nouveaux appareils qui n’ont pas été via Windows out-of-Box.  <br/> |
 |Appareil introuvable  <br/> |Cette erreur signifie qu’un ou plusieurs périphériques de votre fichier CSV ne sont pas enregistrés dans votre organisation. Pour résoudre ce problème, demandez de l’aide à votre fournisseur de matériel.  <br/> |
-   
