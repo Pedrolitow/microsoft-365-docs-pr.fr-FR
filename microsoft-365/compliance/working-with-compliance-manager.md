@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38685817"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718683"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -421,13 +421,13 @@ Cet onglet comprend des colonnes qui définissent des actions individuelles, ain
 
 - **actionDimensionValues :** Double liste délimitée par des points-virgules des dimensions applicables à partir de l’onglet dimensions, selon le format suivant :
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     Par exemple :
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -461,7 +461,7 @@ Les modèles et les évaluations prennent en charge l’utilisation de la langue
 
 Les puces sont représentées sous la forme d’astérisques au lieu de puces Word ou Excel. Par exemple :
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -480,15 +480,16 @@ Les numéros sont représentés sous forme de nombres, mais avec des espaces pou
 
 Les liens hypertexte sont créés en plaçant des crochets entourant le texte du lien hypertexte et le lien hypertexte lui-même entre parenthèses, immédiatement en regard du crochet fermant.  Par exemple :
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 Ce texte s’affiche de la manière suivante : cliquez [ici](https://www.microsoft.com) pour accéder à la page d’accueil de Microsoft.
+
 Comme indiqué dans l’exemple ci-dessus, le gestionnaire de conformité ne restitue pas les URL avec un soulignement.
 
 Le texte en gras est deux astérisques de chaque côté du texte à mettre en gras.  Par exemple :
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **Ce texte s’affiche en gras**
