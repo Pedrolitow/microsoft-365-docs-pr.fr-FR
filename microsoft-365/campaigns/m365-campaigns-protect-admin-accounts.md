@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment configurer et protéger vos comptes d’administrateur.
-ms.openlocfilehash: 33bf7f8a2a1e666a7822be1d52ac2d81fc681230
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 76c90b48e0f0859ed856b6e3dc772aedfc2ccdaf
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772471"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753741"
 ---
 # <a name="protect-your-administrator-accounts"></a>Protéger vos comptes d’administrateur
 
-Étant donné que les comptes administrateurs sont dotés de privilèges élevés, ils sont précieux pour les pirates et les cybercriminels. Cet article décrit les aspects suivants :
+Étant donné que les comptes administrateur sont dotés de privilèges élevés, ils sont précieux pour les pirates et les cybercriminels. Cet article décrit les aspects suivants :
 
 - La configuration d’un compte d’administrateur supplémentaire pour les situations d’urgence.
 - Comment protéger ces comptes.
@@ -38,38 +38,38 @@ Lorsque vous vous inscrivez à Microsoft 365 Business et que vous entrez vos inf
 
 ## <a name="create-additional-admin-accounts"></a>Créer des comptes d’administration supplémentaires
 
-Utilisez les comptes administrateur uniquement pour l’administration. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour utiliser régulièrement les applications Office et utiliser uniquement leur compte administratif si nécessaire pour gérer les comptes, les appareils et les autres fonctions d’administration. Il est également recommandé de supprimer la licence d’entreprise Microsoft 365 des comptes administrateur afin de ne pas avoir à les payer.
+Utilisez les comptes administrateur uniquement pour l’administration. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour utiliser régulièrement les applications Office et n’utiliser leur compte d’administrateur que si cela est nécessaire pour gérer les comptes et les appareils, et tout en travaillant sur d’autres fonctions d’administration. Il est également recommandé de supprimer la licence d’entreprise Microsoft 365 des comptes administrateur afin de ne pas avoir à les payer.
 
-Vous devez configurer au moins un compte d’administrateur global supplémentaire pour accorder un accès administrateur à un autre employé approuvé. Vous pouvez également créer des comptes d’administration distincts pour la gestion des utilisateurs (ce rôle est appelé **administrateur de gestion des utilisateurs**). Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .
+Vous devez configurer au moins un compte d’administrateur global supplémentaire pour accorder un accès administrateur à un autre employé approuvé. Vous pouvez également créer des comptes d’administration distincts pour la gestion des utilisateurs (ce rôle est appelé **administrateur de gestion des utilisateurs**). Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Pour créer des comptes d’administration supplémentaires:
+Pour créer des comptes d’administration supplémentaires :
 
- 1. Accédez au centre d' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">administration</a> , puis sélectionnez **** \> utilisateurs **actifs** dans le volet de navigation de gauche.
+ 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Centre d’administration</a> , **puis sélectionnez** \> utilisateurs **actifs** dans le volet de navigation de gauche.
 
     ![Sélectionnez utilisateurs, puis utilisateurs actifs dans le volet de navigation de gauche](media/Activeusers.png)
 
-2. Dans la page **utilisateurs actifs** , sélectionnez **Ajouter un utilisateur** en haut de la page et, dans le panneau **nouvel utilisateur** , entrez le nom et d’autres informations.
+2. Sur la page **utilisateurs actifs** , sélectionnez **Ajouter un utilisateur** en haut de la page, puis, dans le panneau **nouvel utilisateur** , entrez le nom et d’autres informations.
 3. Développez la section **rôles** , puis choisissez **administrateur général** pour accorder à cet utilisateur l’accès administrateur global. Vous pouvez également choisir **administrateur personnalisé** et choisir l’un des rôles affichés.
 
-    Entrez un autre message dans la zone de texte adresse de messagerie de substitution. Vous pouvez utiliser cette adresse pour récupérer vos informations de mot de passe si vous êtes verrouillé. Pour les administrateurs globaux, une déclaration de facturation est également envoyée à cette adresse.
+    Entrez un autre message dans la zone de texte **adresse de messagerie de substitution** . Vous pouvez utiliser cette adresse pour récupérer vos informations de mot de passe si vous êtes verrouillé. Pour les administrateurs globaux, une déclaration de facturation est également envoyée à cette adresse.
 
     ![Choisir le rôle d’administrateur](media/adminroles.png)
     
-4. Dans la **section licences de produit** , déplacez le sélecteur de **Microsoft 365 entreprise** sur **désactivé** et l' **utilisateur créer sans licence** de **** produit sur activé.
+4. Dans la section **licences de produit** , déplacez le sélecteur de **Microsoft 365 entreprise** sur **désactivé** et l' **utilisateur créer sans licence de produit** sur activé. ****
 
     ![Choisir la licence de produit](media/productlicense.png)
 
 ## <a name="create-an-emergency-admin-account"></a>Créer un compte d’administrateur d’urgence
 
-Vous devez également créer un compte de sauvegarde qui n’est pas configuré avec l’authentification multifacteur (MFA), afin de ne pas vous verrouiller accidentellement (par exemple, si vous perdez votre téléphone que vous utilisez en tant que seconde à partir de la vérification). Assurez-vous que le mot de passe de ce compte est une phrase ou au moins 16 caractères. On parle souvent de «compte de saut de ligne».
+Vous devez également créer un compte de sauvegarde qui n’est pas configuré avec l’authentification multifacteur (MFA), afin de ne pas vous verrouiller accidentellement (par exemple, si vous perdez votre téléphone que vous utilisez comme deuxième forme de vérification). Assurez-vous que le mot de passe de ce compte est une phrase ou au moins 16 caractères. On parle souvent de « compte de saut de ligne ».
 
 ## <a name="create-a-user-account-for-yourself"></a>Créer un compte d’utilisateur pour vous-même
 
 Utilisez votre compte d’utilisateur pour participer à la collaboration avec votre organisation, notamment en vérifiant le courrier. Cela signifie que vos informations d’identification d’administrateur peuvent ressembler à *Alice. Chavez<span></span>@Contoso. org* et que votre compte d’utilisateur normal ressemble à *Alice<span></span>@Contoso. com*.
 
-Pour créer un compte d’utilisateur:
-1. Accédez au centre d' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">administration</a> , puis sélectionnez **** \> utilisateurs **actifs** dans le volet de navigation de gauche.
-2. Dans la page **utilisateurs actifs** , sélectionnez **Ajouter un utilisateur** en haut de la page et, dans le panneau **nouvel utilisateur** , entrez le nom et d’autres informations.
+Pour créer un compte d’utilisateur :
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Centre d’administration</a> , **puis sélectionnez** \> utilisateurs **actifs** dans le volet de navigation de gauche.
+2. Sur la page **utilisateurs actifs** , sélectionnez **Ajouter un utilisateur** en haut de la page, puis, dans le panneau **nouvel utilisateur** , entrez le nom et d’autres informations.
 3. Développez la section **rôles** , puis choisissez **utilisateur (pas d’accès administratif)**.
 1. Dans la section **licences de produit** , déplacez le sélecteur de **Microsoft 365 Business** vers **activé**. 
 

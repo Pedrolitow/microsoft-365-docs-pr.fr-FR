@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Partagez des fichiers et des vidéos à l’intérieur de votre campagne avec Microsoft teams et SharePoint.
-ms.openlocfilehash: 14daa826e7df961baefaf7f6e7a17530842aad25
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 446285c375b64c6622905d3320de92c4ddb2dca0
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031189"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753613"
 ---
 # <a name="share-files-and-videos"></a>Partager des fichiers et des vidéos
 
-Lorsque vous avez besoin de contrôler les personnes autorisées à consulter, ainsi que les personnes qui peuvent modifier, vos fichiers, vous devez stocker les fichiers dans un emplacement sécurisé, où vous pouvez vous assurer que les autorisations sont appliquées de manière appropriée. Vous pouvez utiliser Microsoft teams pour stocker vos fichiers, puis partager les fichiers à l’intérieur ou à l’extérieur de votre campagne avec Microsoft teams ou en envoyant des liens SharePoint. L’envoi d’un lien plutôt que d’une pièce jointe à un message signifie que vous pouvez identifier les personnes qui visualisent et modifier les fichiers et qu’elles ne peuvent pas être affichées ou modifiées sans votre autorisation. 
+Lorsque vous avez besoin de contrôler les personnes autorisées à visualiser et qui peuvent modifier vos fichiers, vous devez stocker les fichiers dans un emplacement sécurisé, où vous pouvez vous assurer que les autorisations sont appliquées de manière appropriée. Vous pouvez utiliser Microsoft teams pour stocker vos fichiers, puis partager les fichiers à l’intérieur ou à l’extérieur de votre campagne en utilisant Microsoft teams ou en envoyant des liens SharePoint. L’envoi d’un lien plutôt que d’une pièce jointe à un message signifie que vous pouvez identifier les personnes qui visualisent et modifier les fichiers et qu’elles ne peuvent pas être affichées ou modifiées sans votre autorisation. 
 
 ![Diagramme d’une fenêtre Microsoft Teams, affichant l’onglet fichiers et obtenir un lien dans le menu](media/m365-democracy-teams-sharefiles.png)
 

@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
-ms.openlocfilehash: cbf30a29ed3948cb3b20da919835ed2524163617
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: fb295315eca84614e78792d0900318610c26b239
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721647"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757691"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
@@ -29,12 +29,11 @@ ms.locfileid: "38721647"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Quelles sont les modifications apportées par Microsoft pour les achats en libre-service pour les produits Power Platform ?
 
-MISE à jour le 31 octobre 2019 : au cours de la semaine précédente, nous écoutons les commentaires des clients concernant le déploiement de nos fonctionnalités d’achat en libre-service pour les produits Power Platform. En fonction des commentaires, nous apportons les modifications suivantes à notre plan :
+Le 19 novembre, nous avons fourni aux administrateurs informatiques un moyen de désactiver les achats en libre-service sur une base par produit via PowerShell. Pour savoir comment l’utiliser, voir [use AllowSelfServicePurchase pour le module MSCommerce PowerShell](allowselfservicepurchase-powershell.md).
 
-- Le 19 novembre, nous fournirons aux administrateurs informatiques un moyen de désactiver l’achat en libre-service par produit via PowerShell. Pour savoir comment l’utiliser, voir [use AllowSelfServicePurchase pour le module MSCommerce PowerShell](allowselfservicepurchase-powershell.md).
-- Pour fournir plus de temps à la préparation de cette modification, nous mettons à jour le lancement des fonctionnalités d’achat en libre-service pour les produits Power Platform afin de commencer avec Power BI le 14 janvier pour tous les clients du nuage commercial.  
+Pour fournir plus de temps à la préparation de cette modification, nous mettons à jour le lancement des fonctionnalités d’achat en libre-service pour les produits Power Platform afin de commencer avec Power BI le 14 janvier pour tous les clients du nuage commercial.  
 
-À partir du 14 janvier 2020, les fonctionnalités d’achat en libre-service, d’abonnement et de gestion des licences pour les produits Power Platform (Power BI, Power Apps et Power automate) seront disponibles pour les clients du nuage commercial aux États-Unis. L’achat en libre-service permet aux utilisateurs de tester de nouvelles technologies et de développer des solutions qui profiteront aux grandes organisations. Cette fonctionnalité ne sera pas disponible pour les clients des États-Unis qui sont des pouvoirs publics, des organisations à but non lucratif ou l’éducation, pour le moment. Les équipes des services informatiques et des services informatiques centraux bénéficieront d’une visibilité pour tous les utilisateurs achetant et déployant des solutions d’achat en libre-service via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> et pourront désactiver les achats en libre-service sur une base par produit via PowerShell.
+À partir du 14 janvier 2020, les fonctionnalités d’achat en libre-service, d’abonnement et de gestion des licences pour les produits Power Platform (Power BI, Power Apps et Power automate) seront disponibles pour les clients du nuage commercial aux États-Unis. L’achat en libre-service permet aux utilisateurs de tester de nouvelles technologies et de développer des solutions qui profiteront aux grandes organisations. Cette fonctionnalité ne sera pas disponible pour les clients des États-Unis qui sont des pouvoirs publics, des organisations à but non lucratif ou l’éducation, pour le moment. Les équipes informatiques et les équipes informatiques centrales auront une visibilité pour tous les utilisateurs achetant et déployant des solutions d’achat en libre-service via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, et pourront désactiver les achats en libre-service sur une base par produit via PowerShell.
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>Pourquoi Microsoft ajoute-t-il une option d’achat en libre-service pour les produits Power Platform ?
 
@@ -46,13 +45,13 @@ Microsoft lance un achat en libre-service pour Power BI le 14 janvier 2020, aux 
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>Est-ce que l’achat en libre-service sera activé pour les services au-delà des produits Power Platform ?
 
-Pour l’instant, la famille de produits Power Platform est les seuls services offerts par le biais de l’achat en libre-service.
+Pour le moment, seuls les produits de la famille Power Platform sont offerts par le biais de l’achat en libre-service.
 
 ## <a name="making-a-self-service-purchase"></a>Réalisation d’un achat en libre-service
 
 ### <a name="how-does-a-customer-make-a-self-service-purchase"></a>Comment un client effectue-t-il un achat en libre-service ?
 
-Les clients pourront effectuer un achat en libre-service en ligne à partir des sites Web de Microsoft Power BI, Power Apps et Power Automated Automated. Les clients seront d’abord invités à entrer une adresse de messagerie pour s’assurer qu’ils sont un utilisateur dans un client Azure Active Directory (AD) existant, puis ils seront dirigés vers une connexion à l’aide de leurs informations d’identification Azure AD. Une fois la connexion établie, le client est invité à sélectionner le nombre d’abonnements qu’il souhaite acheter et à fournir un paiement par carte de crédit. Une fois l’achat terminé, les utilisateurs peuvent commencer à utiliser leur abonnement. L’acheteur pourra également accéder à une vue limitée du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> où il peut autoriser d’autres personnes de son organisation à utiliser le produit.
+Les clients pourront effectuer un achat en libre-service en ligne à partir des sites Web de Microsoft Power BI, Power Apps et Power Automated Automated. Les clients seront d’abord invités à entrer une adresse de messagerie pour s’assurer qu’ils sont un utilisateur d’un client Azure Active Directory (AD) existant. Ensuite, ils seront dirigés vers une connexion à l’aide de leurs informations d’identification Azure AD. Une fois connecté, le client est invité à sélectionner le nombre d’abonnements qu’il souhaite acheter et à fournir un paiement par carte de crédit. Une fois l’achat terminé, les utilisateurs peuvent commencer à utiliser leur abonnement. L’acheteur pourra également accéder à une vue limitée du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> où il peut autoriser d’autres personnes de son organisation à utiliser le produit.
 
 ### <a name="what-are-the-payment-options-for-self-service-purchases"></a>Quelles sont les options de paiement pour les achats en libre-service ?
 
@@ -88,7 +87,7 @@ Les acheteurs en libre-service peuvent gérer leurs achats dans l’affichage li
 
 ### <a name="what-is-the-pricing-for-self-service-purchases"></a>Quels sont les tarifs pour les achats en libre-service ?
 
-Les tarifs de chacun des produits Power Platform pour les achats en libre-service sont disponibles sur le site Web de Microsoft et s’affichent également dans le cadre de la validation de l’achat en libre-service. Ces prix peuvent différer des prix qu’une organisation paie lorsqu’elle effectue des achats ou des prix centraux offerts par un partenaire.
+Les tarifs de chacun des produits Power Platform pour les achats en libre-service sont disponibles sur le site Web de Microsoft et s’affichent également dans le cadre de l’expérience de validation lors de la réalisation d’un achat en libre-service. Ces prix peuvent différer des prix qu’une organisation paie lorsqu’elle effectue des achats ou des prix centraux offerts par un partenaire.
 
 ### <a name="who-is-responsible-for-payment"></a>Qui est responsable du paiement ?
 
@@ -100,7 +99,7 @@ La personne qui achète l’abonnement par le biais d’un achat en libre-servic
 
 Les administrateurs peuvent afficher tous les achats en libre-service effectués dans leur organisation dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, l’historique des commandes, le prix d’achat et les utilisateurs affectés pour chaque achat en libre-service. Si cela est nécessaire pour leur organisation, les administrateurs pourront désactiver les achats en libre-service sur une base par produit via PowerShell. Les administrateurs ont les mêmes stratégies de gestion des données et d’accès que les produits achetés via l’achat en libre-service ou de manière centralisée.
 
-Les administrateurs peuvent également contrôler si les utilisateurs de leur organisation peuvent faire des achats en libre-service. Pour plus d’informations, consultez [la rubrique use AllowSelfServicePurchase pour le module MSCommerce PowerShell](allowselfservicepurchase-powershell.md).
+Les administrateurs peuvent également contrôler si les utilisateurs de leur organisation peuvent faire des achats en libre-service. Pour plus d’informations, voir [use AllowSelfServicePurchase pour le module MSCommerce PowerShell](allowselfservicepurchase-powershell.md).
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>Comment Microsoft respecte-t-il la gouvernance et la conformité des données en activant l’achat en libre-service ?
 
@@ -136,7 +135,7 @@ Une formation complète pour les utilisateurs est fournie sur les sites Web Micr
 
 ### <a name="what-happens-to-a-self-service-purchase-if-a-user-leaves-the-organization"></a>Qu’arrive-t-il à un achat en libre-service si un utilisateur quitte l’Organisation ?
 
-Les utilisateurs valides continueront à utiliser pleinement l’achat en libre-service pendant la durée de l’abonnement. L’abonnement reste actif jusqu’à ce que l’acheteur l’annule directement ou qu’un administrateur demande l’annulation de l’abonnement via le support technique. Les administrateurs peuvent également choisir d’attribuer une licence achetée de manière centralisée aux utilisateurs de l’abonnement annulé.
+Les utilisateurs valides continueront à utiliser pleinement l’achat en libre-service pendant la durée de l’abonnement. L’abonnement reste actif jusqu’à ce que l’acheteur l’annule directement ou qu’un administrateur demande l’annulation de l’abonnement par le biais du support technique. Les administrateurs peuvent également choisir d’attribuer une licence achetée de manière centralisée aux utilisateurs de l’abonnement annulé.
 
 ## <a name="partners"></a>Partenaires
 

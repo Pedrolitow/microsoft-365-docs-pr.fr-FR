@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 description: Découvrez comment les profils de facturation prennent en charge les factures.
 keywords: Profil de facturation, factures, frais, charges gérées
-ms.openlocfilehash: 9db8b949cb07c8386505234d9d88aa2627a752b5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029048"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753543"
 ---
 # <a name="manage-billing-profiles"></a>Gérer les profils de facturation
 Pour les clients commerciaux qui achètent des produits et des services auprès de Microsoft, les profils de facturation vous permettent de personnaliser les éléments inclus dans votre facture, ainsi que le mode de paiement de vos factures.
 
 Les profils de facturation incluent les informations suivantes :
 
-- Nom du **compte** &mdash; de facturation du compte de facturation auquel le profil est lié
-- **Modes** &mdash; de paiement cartes de crédit ou de débit, comptes bancaires, chèques ou virement bancaire
-- **Informations** &mdash; de contact adresse de facturation et nom de contact
-- Devise des **paramètres** &mdash; de facturation basée sur le pays du compte de facturation, un numéro de bon de commande facultatif et la possibilité de recevoir des factures en pièces jointes de courrier électronique
-- Autorisations des **autorisations** &mdash; qui vous permettent de modifier le profil de facturation, de payer des factures ou d’utiliser le mode de paiement sur le profil de facturation pour effectuer des achats
+- Nom du **compte** &ndash; de facturation du compte de facturation auquel le profil est lié
+- **Modes** &ndash; de paiement cartes de crédit ou de débit, comptes bancaires, chèques ou virement bancaire
+- **Informations** &ndash; de contact adresse de facturation et nom de contact
+- Devise des **paramètres** &ndash; de facturation basée sur le pays du compte de facturation, un numéro de bon de commande facultatif et la possibilité de recevoir des factures en pièces jointes de courrier électronique
+- Autorisations des **autorisations** &ndash; qui vous permettent de modifier le profil de facturation, de payer des factures ou d’utiliser le mode de paiement sur le profil de facturation pour effectuer des achats
 
 Utilisez les profils de facturation pour contrôler vos achats et personnaliser votre facture. Une facture mensuelle est générée pour les produits achetés avec le profil de facturation. Vous pouvez personnaliser la facture telle que mettre à jour les numéros de bon de commande et de facture par e-mail.
 

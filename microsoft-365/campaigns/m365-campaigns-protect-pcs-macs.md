@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez-vous contre le hameçonnage et les autres attaques à l’aide de Microsoft 365 pour les campagnes.
-ms.openlocfilehash: 2533710ccb7b173f5cc1fd19b185fcd32b7801c9
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 93bb36f115ee5f83e07ac9623c852fec4dbf205f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031289"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753623"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Protection des ordinateurs Windows 10 et Mac non gérés
 
@@ -53,13 +53,12 @@ Le chiffrement d’appareil est disponible sur un large éventail d’appareils 
  Si le chiffrement de l’appareil n’est pas disponible sur votre appareil, vous pouvez activer le [chiffrement BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) standard. (BitLocker n’est pas disponible dans Windows 10 édition familiale.) 
 
 
-
 **Protéger votre appareil avec la sécurité Windows**<p>
 Si vous disposez de Windows 10, vous obtiendrez la dernière protection antivirus avec Windows Security. Lorsque vous démarrez Windows 10 pour la première fois, la sécurité de Windows est activée et contribue activement à protéger votre PC en recherchant les programmes malveillants (logiciels malveillants), les virus et les menaces de sécurité. La sécurité Windows utilise la protection en temps réel pour analyser tout ce que vous téléchargez ou exécutez sur votre PC.
 
 Windows Update télécharge automatiquement les mises à jour pour la sécurité Windows afin de protéger votre PC contre les menaces.
 
-Si vous disposez d’une version antérieure de Windows et que vous utilisez Microsoft Security Essentials, nous vous recommandons de passer à la sécurité Windows. Pour plus d’informations, voir [protéger mon appareil avec Windows Security](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security) .
+Si vous disposez d’une version antérieure de Windows et que vous utilisez Microsoft Security Essentials, nous vous recommandons de passer à la sécurité Windows. Pour plus d’informations, consultez la rubrique [Protégez mon appareil avec Windows Security](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
 **Activer le pare-feu Windows**<p>
 Vous devez toujours exécuter le pare-feu Windows même si vous avez un autre pare-feu activé. Désactiver le pare-feu Windows peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable aux accès non autorisés. Pour obtenir des instructions, voir [activer ou désactiver le pare-feu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) .
@@ -71,7 +70,7 @@ Le chiffrement de disque protège les données en cas de perte ou de vol des app
 **Protéger votre Mac contre les programmes malveillants**<p>
 Microsoft vous recommande d’installer et d’utiliser un logiciel antivirus fiable sur votre Mac. Consultez l’article suivant pour obtenir une liste de choix : [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
-Vous pouvez également réduire le risque de programmes malveillants à l’aide de logiciels uniquement à partir de sources fiables. Les paramètres de sécurité & préférences de confidentialité vous permettent de spécifier les sources des logiciels installés sur votre Mac. Pour plus d’informations, consultez [la rubrique Protégez votre Mac contre les programmes malveillants](https://support.apple.com/kb/PH25087) .
+Vous pouvez également réduire le risque de programmes malveillants à l’aide de logiciels uniquement à partir de sources fiables. Les paramètres de sécurité & préférences de confidentialité vous permettent de spécifier les sources des logiciels installés sur votre Mac. Pour plus d’informations, consultez [la rubrique Protégez votre Mac contre les programmes malveillants](https://support.apple.com/kb/PH25087).
 
 **Activer la protection de pare-feu**<p>
 Utilisez les paramètres de pare-feu pour protéger votre Mac contre les contacts indésirables initiés par d’autres ordinateurs lorsque vous êtes connecté à Internet ou à un réseau. Sans cette protection, votre Mac peut être plus vulnérable aux accès non autorisés. Consultez [la rubrique à propos du pare-feu d’application](https://support.apple.com/HT201642) pour obtenir des instructions.

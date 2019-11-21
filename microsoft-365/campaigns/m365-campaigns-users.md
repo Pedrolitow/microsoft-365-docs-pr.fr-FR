@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 pour les campagnes affecte vos utilisateurs.
-ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11a141ba24aa45c0c60dec064877f319f0b5ded2
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031239"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753593"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Impact de Microsoft 365 pour les campagnes sur vos utilisateurs
 
@@ -73,8 +73,4 @@ Vos utilisateurs peuvent être tentés de partager et de stocker les fichiers de
 
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurer des appareils Windows 10 gérés
-Nous vous recommandons d’utiliser les appareils Windows 10 les plus importants que vous gérez. Nous allons vous montrer comment [gérer et sécuriser ces appareils](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Cela garantit que les membres du personnel qui constituent la cible de la plus forte valeur ajoutée aux pirates bénéficient de la meilleure protection. 
-
-
-
-  
+Nous vous recommandons d’utiliser les appareils Windows 10 les plus importants que vous gérez. Nous allons vous montrer comment [gérer et sécuriser ces appareils](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Cela garantit que les membres du personnel qui sont la cible de la plus forte valeur ajoutée aux pirates bénéficient de la meilleure protection. 

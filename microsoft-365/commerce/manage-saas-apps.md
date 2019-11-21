@@ -11,12 +11,12 @@ ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: f14809e58c1580333ba4e412a2b442df79e61975
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 047c93dd6dbeeb1e55bfc22b337f42870f34e104
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029028"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753553"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements aux applications tierces pour votre organisation
 
@@ -50,7 +50,7 @@ La prise en charge des applications tierces est disponible dans les régions sui
 - Europe de l’ouest
 
 ## <a name="set-up-app"></a>Configurer l’application
-Les administrateurs doivent activer des applications tierces avant de les affecter aux utilisateurs. Elles sont activées sur le portail de l’éditeur tiers. 
+Les administrateurs doivent activer des applications tierces avant de les affecter aux utilisateurs. Ces applications sont activées sur le portail de l’éditeur tiers. 
 
 **Pour activer des applications tierces**
 1. Accédez au [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=837890), puis activez **essayer l’aperçu**.
@@ -60,18 +60,18 @@ Les administrateurs doivent activer des applications tierces avant de les affect
 
 Vous serez dirigé vers le site de l’éditeur de l’application dans lequel vous pouvez activer l’application. 
 
-## <a name="managing-3rd-party-apps"></a>Gestion des applications tierces
-Les administrateurs gèrent les applications tierces à deux emplacements : le centre d’administration Microsoft 365 et le portail du fournisseur d’applications tiers. Voici ce que vous pouvez faire dans chaque portail.
+## <a name="managing-third-party-apps"></a>Gestion des applications tierces
+Les administrateurs gèrent les applications tierces à deux emplacements : le centre d’administration Microsoft 365 et le portail du fournisseur d’applications tierces. Voici ce que vous pouvez faire dans chaque portail.
 
 ### <a name="app-status"></a>État de l’application
-Une fois activée, l’application reste active sauf si elle est annulée, expire ou si le paiement n’est pas maintenu à jour. Ces événements modifient l’état de l’application sur désactivé. Une fois qu’une application est désactivée, elle ne peut pas être réactivée. Vous devez acheter une autre copie de l’application pour continuer à l’utiliser.
+Une fois activé, l’application reste active sauf si elle est annulée, expire ou si le paiement n’est pas maintenu à jour. Ces événements modifient l’état de l’application sur désactivé. Une fois qu’une application est désactivée, elle ne peut pas être réactivée. Vous devez acheter une autre copie de l’application pour continuer à l’utiliser.
 
 | Centre d’administration Microsoft 365 | Portail d’éditeur d’application |
 | --- | --- |
 | Modifier la quantité de licence <br> Gérer le paiement de votre facture <br> Gérer le paiement de votre facture <br> Modifier le mode de paiement (carte de crédit) <br> Afficher la facture <br> Annuler l’abonnement d’application | Set up App (une fois pour chaque application) <br> Attribuer des licences aux utilisateurs <br> Assistance technique |
 
 ## <a name="assign-licenses"></a>Attribuer des licences
-Les administrateurs doivent activer des applications tierces avant de les affecter aux utilisateurs. Elles sont activées sur le portail de l’éditeur tiers. Sur la page application, sous paramètres & Actions, sélectionnez le lien pour attribuer des licences.
+Les administrateurs doivent activer des applications tierces avant de les affecter aux utilisateurs. Elles sont activées sur le portail de l’éditeur tiers. Sur la page application, sous **paramètres & Actions**, sélectionnez le lien pour attribuer des licences.
 
 **Pour affecter des applications tierces**
 
@@ -81,7 +81,7 @@ Les administrateurs doivent activer des applications tierces avant de les affect
 4. Sous **paramètres & Actions**, sélectionnez le lien à **gérer dans le portail de l’éditeur**. 
  
 ## <a name="change-license-quantity"></a>Modifier la quantité de licence
-Les administrateurs peuvent modifier le nombre de licences appartenant à leur organisation. Cela s’applique uniquement aux applications achetées avec une tarification par siège.
+Les administrateurs peuvent modifier le nombre de licences appartenant à leur organisation. Ceci ne s’applique qu’aux applications achetées avec une tarification par siège.
 
 **Pour modifier la quantité de licences**
 

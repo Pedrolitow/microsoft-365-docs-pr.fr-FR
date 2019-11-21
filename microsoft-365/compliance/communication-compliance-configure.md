@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez les stratégies de conformité des communications pour configurer les communications des employés pour révision.
-ms.openlocfilehash: 76b28443d2fa77967933ea61f2724a2a5ff072be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 0a830914a22968119d836e2190a6f133d91fd305
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685719"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755602"
 ---
 # <a name="configure-communication-compliance-for-microsoft-365-preview"></a>Configurer la conformité de la communication pour Microsoft 365 (version d’évaluation)
 
@@ -42,7 +42,7 @@ Procédez comme suit pour configurer et utiliser la conformité des communicatio
 
 - **Étape 2 (obligatoire)**: [mise à disposition de la conformité de la communication au sein de votre organisation](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Ajoutez-vous au rôle d' **administrateur examen de surveillance** afin de pouvoir configurer des stratégies. Vous devrez également affecter les rôles de **gestion des dossiers** et de **révision** à des personnes ou des groupes qui adopteront des actions d’enquête et de correction sur les messages avec des correspondances de stratégie. Toute personne disposant de ces rôles peut accéder à la page conformité de la **communication** dans le centre de conformité Microsoft 365. Si la messagerie Reviewable est hébergée sur Exchange Online, chaque réviseur doit disposer [d’un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Ajoutez-vous au rôle d' **administrateur examen de surveillance** afin de pouvoir configurer des stratégies. Vous devrez également créer un groupe avec les rôles **administrateur de révision de surveillance**, **gestion des cas** et **révision** pour les personnes ou les groupes qui adopteront des actions d’enquête et de correction sur les messages avec des correspondances de stratégie. Toute personne disposant de ces rôles peut accéder à la page conformité de la **communication** dans le centre de conformité Microsoft 365. Si la messagerie Reviewable est hébergée sur Exchange Online, chaque réviseur doit disposer [d’un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Étape 3 (obligatoire)**: [configurer une stratégie de conformité de communication](#step-3-create-a-communication-compliance-policy-required)
 
@@ -77,29 +77,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>Étape 2 : mise à disposition de la conformité de la communication dans votre organisation (obligatoire)
 
-Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365, vous devez disposer du rôle d’administrateur examen de surveillance. Pour examiner et corriger les messages avec des correspondances de stratégie, vous devez disposer des rôles de **gestion des dossiers** et de **révision** .
-  
-Pour ce faire, vous pouvez vous ajouter en tant que membre du groupe de rôles examen de surveillance ou créer un nouveau groupe de rôles.
-  
-### <a name="add-required-roles-to-the-supervisory-reviewer-role-group"></a>Ajouter les rôles requis au groupe de rôles réviseur de surveillance
-
-1. Connectez- [https://compliance.microsoft.com](https://compliance.microsoft.com) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
-
-2. Dans le centre de conformité Microsoft 365, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
-
-3. Sélectionnez le groupe de rôles **examen de surveillance** , puis cliquez sur **modifier** dans la section **rôles attribués** de la page Détails.
-
-4. Sélectionnez **modifier**, puis **Ajouter**. Activez la case à cocher **gestion des dossiers** et **révision**, puis sélectionnez **Ajouter**.
-
-5. Sélectionnez **Terminer**, puis **Enregistrer**.
-
-6. Dans la section **membres** , sélectionnez **modifier** pour ajouter les personnes dont vous souhaitez gérer la conformité de la communication pour votre organisation.
-
-7. Sélectionnez **modifier**, puis **Ajouter**. Activez la case à cocher de tous les utilisateurs et groupes pour lesquels vous souhaitez gérer les messages avec des correspondances de stratégie, puis sélectionnez **Ajouter**.
-
-8. Sélectionnez **Terminer**, puis **Enregistrer**.
-
-9. Sélectionnez **Fermer** pour quitter la page Détails du groupe de rôles.
+Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365, vous devez disposer du rôle d' **administrateur examen de surveillance** . De plus, pour examiner et corriger les messages avec des correspondances de stratégie, vous devez créer un groupe pour les relecteurs avec les rôles **administrateur de révision de surveillance**, gestion des **cas** et **révision** .
 
 ### <a name="create-a-new-role-group"></a>Créer un groupe de rôles
 
