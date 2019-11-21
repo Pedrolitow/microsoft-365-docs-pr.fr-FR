@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c3d3c8047e6814a56ec6470a9166fd0c13eb6839
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031109"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718633"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
@@ -36,7 +36,7 @@ Le kit de laboratoire est téléchargeable gratuitement et utilise un logiciel d
 
 Le laboratoire offre un environnement de laboratoire virtuel automatiquement configuré, constitué de clients de bureau associés au domaine, d’un contrôleur de domaine, d’une passerelle Internet et d’une instance ConfigMgr entièrement configurée. Le laboratoire contient des versions d’évaluation des produits suivants :
 
-  - Windows 10 Entreprise, Version 1903
+  - Windows 10 Entreprise, Version 1909
   - Windows 7 Entreprise
   - System Center Configuration Manager, Version 1902
   - Kit de déploiement et d’évaluation Windows 10, Version 1903
@@ -118,7 +118,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[** Kit laboratoire de déploiement Windows et Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et de bénéficier d’un approvisionnement automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et de 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible sont recommandés. Le laboratoire arrivera à expiration le 16 novembre 2019. Une nouvelle version sera publiée avant l’expiration.*
+*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et bénéficier d’une configuration automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go libres sont recommandés. Le laboratoire arrive à expiration le 15 février 2020. Une nouvelle version sera publiée avant cette expiration.*
 
 ## <a name="additional-guidance"></a>**Conseils supplémentaires**
 
