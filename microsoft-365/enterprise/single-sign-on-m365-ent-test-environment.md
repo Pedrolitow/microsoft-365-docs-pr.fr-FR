@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 2845b3ec7d1725219fcbbb14ed4c1067a11a90bc
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: a32dca8c37d9e6788aef801e9f99a90b724e86b1
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673290"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757671"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
 
@@ -49,9 +49,9 @@ Suivez les instructions fournies dans l’article [Synchronisation de hachage de
   
 Cette configuration se compose des éléments suivants :  
   
-- Les abonnements à la version payante ou d’évaluation Office 365 E5 et EMS E5.
+- Un abonnement d’évaluation ou payant Microsoft 365 E5 ou Office 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
-- Azure AD Connect s’exécute sur APP1 pour synchroniser régulièrement le domaine Windows Server AD TESTLAB (Active Directory Domain Services :AD DS) avec le client Azure AD de vos abonnements Office 365 et EMS E5 de manière périodique.
+- Azure AD Connect s’exécute sur APP1 pour synchroniser régulièrement le domaine Windows Server AD TESTLAB (Active Directory Domain Services : AD DS) avec le client Azure AD de votre abonnement Microsoft 365 ou Office 365 de manière périodique.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Phase 2 : Configuration de l’authentification unique transparente Azure AD pour Azure AD Connect sur APP1
 
@@ -106,9 +106,9 @@ Voici la configuration obtenue :
  
 Cette configuration se compose des éléments suivants : 
 
-- Les abonnements à la version payante ou d’évaluation Office 365 E5 et EMS E5 avec le domaine DNS TESTLAB.\<votre nom de domaine> enregistré.
+- Les abonnements à la version payante ou d’évaluation Microsoft 365 E5 et Office 365 E5 avec le domaine DNS TESTLAB.\<votre nom de domaine> enregistré.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
-- Azure AD Connect s’exécute sur APP1 pour synchroniser la liste des comptes et des groupes du client Azure AD de vos abonnements Office 365 et EMS E5 au domaine TESTLAB AD DS. 
+- Azure AD Connect s’exécute sur APP1 pour synchroniser la liste des comptes et des groupes du client Azure AD de votre abonnement Microsoft 365 ou Office 365 au domaine TESTLAB AD DS. 
 - L’authentification unique transparente Azure AD est activée pour permettre aux ordinateurs sur l’intranet simulé de se connecter aux ressources cloud Microsoft 365 sans avoir à spécifier le mot de passe du compte d’utilisateur.
 
 Consultez l’étape [Simplifier la connexion de l’utilisateur](identity-secure-your-passwords.md#identity-sso) de la phase d’identité pour obtenir des informations et des liens pour configurer l’authentification unique transparente Azure AD en production.
