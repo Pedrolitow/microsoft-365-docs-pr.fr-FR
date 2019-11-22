@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si vous souhaitez être sûr de recevoir des messages d’un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le centre d’administration Exchange.
-ms.openlocfilehash: 2a161573e3b51f12cd7582df26a021fab3f8de84
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033689"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793678"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs approuvés dans Office 365
 
@@ -87,7 +87,7 @@ Lorsqu’il n’est pas possible d’utiliser ETR pour autoriser globalement un 
 
 L’option la moins intéressante consiste à autoriser l’expéditeur/domaine. Cette option doit être évitée si cela est *possible* car elle contourne totalement le courrier indésirable/frauduleux/frauduleux et n’évalue pas l’authentification de l’expéditeur. Cette méthode augmente le risque de recevoir des messages à partir d’acteurs incorrects et est recommandé temporairement et uniquement lors des tests. Les étapes détaillées sont disponibles dans la documentation [configurer vos stratégies de filtrage du courrier indésirable](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) .
 
-La limite maximale de ces listes est d’environ 1000 entrées.
+La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous ne puissiez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
 
 > [!CAUTION]
 > La configuration des stratégies de blocage du courrier indésirable pour autoriser le domaine de l' *expéditeur/* de l’autorisation entraînera l’ignorance du filtrage du courrier indésirable pour un des messages provenant d’expéditeurs figurant dans la liste verte, ou b) de tous les expéditeurs d’un domaine autorisé. Cette méthode augmente considérablement le risque que les spammeurs usurpent le domaine d’envoi (ou empruntent l’identité de l’adresse de messagerie complète), ce qui ignore le filtrage du courrier indésirable, les vérifications d’authentification de l’expéditeur et envoie le message directement dans la boîte de réception d’une personne.

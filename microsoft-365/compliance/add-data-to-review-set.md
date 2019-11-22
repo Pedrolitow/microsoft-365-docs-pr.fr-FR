@@ -13,25 +13,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 03328cfeada2e6bc493bfff0ee64f95904b8c9f8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Ajoutez les résultats d’une recherche associée à un cas avancé eDiscovery. Les éléments sont copiés à partir de leur emplacement d’origine et copiés dans un emplacement de stockage Azure fourni par Microsoft. Les éléments sont également réindexés et Advanced eDiscovery procède à la reconnaissance optique de caractères (OCR) sur les fichiers image et télécharge le texte de l’image à des fins de révision et d’analyse.
+ms.openlocfilehash: 0a1b2a245e3a650d6a35bc1032539e7b7e969dc9
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078980"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191179"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
 Lorsque vous êtes satisfait des résultats d’une recherche et que vous êtes prêt à passer en revue et à analyser ces résultats de recherche, vous pouvez les ajouter à un jeu de révision dans le cas. La copie des données d’origine dans l’ensemble de révision facilite également le processus de révision et d’analyse en vous fournissant des outils d’analyse avancés, tels que la détection de thèmes, la détection de proximité et l’identification des threads de messagerie. Vous pouvez également ajouter des données provenant de sources de données autres que Office 365 à un jeu de réexamen afin que vous puissiez examiner ces données en plus des données que vous collectez à partir d’Office 365. 
 
-Lorsque vous ajoutez les résultats d’une recherche à un jeu de réviseurs (les ensembles de révision figurent sous l’onglet **ensembles de vérification** de la casse), les événements suivants se produisent :
+Lorsque vous ajoutez les résultats d’une recherche à un jeu de réviseur (les jeux de révision d’un cas sont répertoriés sous l’onglet **ensembles de révision** ), les événements suivants se produisent :
 
 - La recherche est réexécutée. Cela signifie que les résultats de recherche réels copiés dans l’ensemble de révision peuvent être différents des résultats estimés qui ont été renvoyés lors de la dernière exécution de la recherche.
 
 - Tous les éléments dans les résultats de la recherche sont copiés à partir de la source de données d’origine dans les services Live Office 365 et copiés dans un emplacement de stockage Azure sécurisé dans le Cloud Microsoft.
 
-- Tous les éléments (y compris le contenu et les métadonnées) sont réindexés de sorte que toutes les données du jeu de révision soient entièrement utilisables lors de la révision des données de cas. La réindexation des données permet d’effectuer des recherches complètes et très rapides lorsque vous recherchez des données dans l’ensemble de vérifications lors de l’enquête de cas.
+- Tous les éléments (y compris le contenu et les métadonnées) sont réindexés de sorte que toutes les données du jeu de révision soient entièrement utilisables lors de la révision des données de cas. La réindexation des données entraîne des recherches rapides et rapides lors de la recherche des données dans l’ensemble de vérifications lors de l’enquête de cas.
 
 Pour ajouter des données à un jeu de réexamens, cliquez sur une recherche dans l’onglet **recherches** , puis sur **Ajouter des résultats à examiner le jeu** sur la page de menu volant.
 
@@ -49,8 +49,14 @@ Si vous souhaitez valider les résultats d’une recherche plus en détail avant
 
 Pour ajouter un exemple à un jeu de réexamens, cliquez sur une recherche sous l’onglet **recherches** et cliquez sur **exemple** sur la page de la fenêtre volante. Sur la page **paramètres d’échantillonnage** , choisissez l’une des options suivantes :
 
-- **Niveau de confiance%** et **intervalle de confiance%** : les éléments ajoutés au jeu de révision seront déterminés par les paramètres statistiques que vous définissez. Si vous utilisez généralement un niveau de confiance et un intervalle lors de l’échantillonnage des résultats, spécifiez-les dans les zones de liste déroulante. Dans le cas contraire, utilisez les paramètres par défaut.
+- **Niveau de confiance%** et **intervalle de confiance%** : les éléments ajoutés au jeu de révision sont déterminés par les paramètres statistiques que vous définissez. Si vous utilisez généralement un niveau de confiance et un intervalle lors de l’échantillonnage des résultats, spécifiez-les dans les zones de liste déroulante. Dans le cas contraire, utilisez les paramètres par défaut.
 
 - **Échantillon aléatoire%** : les éléments ajoutés au jeu de révision sont basés sur une sélection aléatoire du pourcentage spécifié du nombre total d’éléments renvoyés par la recherche.
 
 Après avoir sélectionné et configuré l’une des options précédentes, sélectionnez un jeu de réviseur auquel ajouter l’exemple, puis cliquez sur **Envoyer**. Une fois encore, vous pouvez suivre l’avancement sous l’onglet **travaux** ou sur l’onglet **recherches** en surveillant l’État dans la colonne **données ajoutées à l’ensemble** de modifications.
+
+## <a name="optical-character-recognition"></a>Reconnaissance optique de caractères
+
+Lorsque vous ajoutez des résultats de recherche à un jeu de réviseurs, la fonctionnalité de reconnaissance optique de caractères (OCR) dans Advanced eDiscovery extrait automatiquement le texte des images et inclut le texte de l’image avec les données ajoutées à un jeu de révision. Cela vous permet d’effectuer une révision et une analyse supplémentaires sur le texte des images. La reconnaissance optique de caractères est prise en charge pour les fichiers libres, les pièces jointes et les images incorporées. Pour obtenir la liste des formats de fichiers image pris en charge pour la reconnaissance optique de caractères, voir [types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
+
+Vous devez activer la fonctionnalité OCR pour chaque cas que vous créez dans Advanced eDiscovery. Pour plus d’informations, consultez la rubrique [configurer les paramètres de recherche et d’analyse](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

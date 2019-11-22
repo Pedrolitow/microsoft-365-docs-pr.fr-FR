@@ -14,23 +14,23 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Les options de filtrage avancé du courrier indésirable permettent aux administrateurs d’inspecter les différents attributs de contenu d’un message. La présence de ces attributs dans un message a pour effet d'augmenter le taux de mise en quarantaine du message (et donc la probabilité qu'il soit identifié comme courrier indésirable), ou de marquer le message comme courrier indésirable. Les options ASF ciblent certaines propriétés de message souvent rencontrées dans le courrier indésirable, telles que les balises HTML et une redirection des URL.
-ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080155"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793698"
 ---
 # <a name="advanced-spam-filtering-options"></a>Options de filtrage avancé du courrier indésirable
+
+> [!NOTE]
+> Les paramètres avancés de filtrage du courrier indésirable de la stratégie anti-courrier indésirable sont actuellement désapprouvés. Nos paramètres recommandés pour **ceux-ci sont pour les désactiver**. Les fonctions disponibles dans le filtre de courrier indésirable avancé sont incorporées dans d’autres parties de la pile de filtrage.
 
 Les options de filtrage avancé du courrier indésirable permettent aux administrateurs d’inspecter les différents attributs de contenu d’un message. La présence de ces attributs dans un message a pour effet d'augmenter le taux de mise en quarantaine du message (et donc la probabilité qu'il soit identifié comme courrier indésirable), ou de marquer le message comme courrier indésirable. Les options ASF ciblent certaines propriétés de message souvent rencontrées dans le courrier indésirable, telles que les balises HTML et une redirection des URL.
   
 L'activation des options ASF constitue une approche agressive du filtrage du courrier indésirable. Les messages filtrés par ces options ne peuvent pas être signalés comme faux positifs. Ces messages peuvent être identifiés via des notifications périodiques de courrier indésirable envoyées à l'utilisateur final qui peut alors les sortir de quarantaine. Ils peuvent également être identifiés par le texte d'en-tête X qui est spécifique de chaque option ASF et qui apparaît dans l'en-tête Internet des messages pour lesquels une correspondance avec une option ASF a été établie. Pour plus d'informations, voir [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md).
   
 Vous pouvez activer ou désactiver les options ASF, ou les paramétrer en mode test lorsque vous modifiez vos stratégies de filtrage de contenu. Pour plus d'informations, voir [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md). Le mode test n'est pas disponible pour les options **Rétrodiffusion de rapport de non-remise**, **Échec sévère de l'enregistrement SPF**, **Échec sévère du filtrage conditionnel des ID d'expéditeurs** et **Courrier en nombre**. 
-  
-> > [!TIP]
->  Songez à activer vos options ASF en mode test afin de maximiser le blocage du courrier indésirable sur la base de votre environnement. Aux clients confrontés à des pourcentages élevés de courrier indésirable en rapport avec certaines options ASF, nous vous recommandons de tester ces options avant de les implémenter dans leur environnement de production. Si vous êtes préoccupé par le hameçonnage dans votre organisation, activez l’option **enregistrement SPF : échec matériel** . 
   
 Le tableau suivant décrit chaque option de filtrage avancé du courrier indésirable.
   

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Les options de liste d’expéditeurs de blocs incluent les expéditeurs bloqués Outlook, les listes rouges d’expéditeurs de domaine, les listes d’adresses IP bloquées et les règles de transport Exchange (ETR), également appelées règles de flux de messagerie.
-ms.openlocfilehash: 7f52472f54fb1de93f02b271ec6338da3fb1af93
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032399"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793708"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs bloqués dans Office 365
 
@@ -49,7 +49,7 @@ Les étapes à suivre pour la configuration diffèrent entre [Outlook Web App](h
 
 Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large et vous devez utiliser une stratégie de blocage du courrier indésirable des expéditeurs et des domaines dans l’ensemble de l’entreprise. Les étapes détaillées sont disponibles dans la documentation [configurer vos stratégies de filtrage du courrier indésirable](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) . Tous les messages bloqués via cette méthode suivent l’action de courrier indésirable, comme configuré dans la stratégie.
 
-La limite maximale de ces listes est d’environ 1000 entrées.
+La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous ne puissiez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Utiliser les règles de transport Exchange (ETR) pour bloquer des expéditeurs spécifiques
 

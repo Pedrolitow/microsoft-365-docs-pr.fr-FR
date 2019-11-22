@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment vous connecter, configurer des autorisations et comprendre votre tableau de bord pour le score de conformité Microsoft, ce qui vous permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 8c9bc7d1605bad66228bb47de8f86042839ac5be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685710"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793648"
 ---
-# <a name="microsoft-compliance-score-setup-preview"></a>Programme d’installation du score de conformité Microsoft (aperçu)
+# <a name="microsoft-compliance-score-preview-setup"></a>Programme d’installation du score de conformité Microsoft (aperçu)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

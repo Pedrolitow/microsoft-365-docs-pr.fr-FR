@@ -13,43 +13,71 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5aa83f4f736c239b1cdfe940f27cfaa4b981ff64
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Configurez des paramètres eDiscovery avancés qui s’appliquent à tous les jeux de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
+ms.openlocfilehash: f34f10c08be582389346b3aedc899bd9f4906a93
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078819"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191139"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurer les paramètres de recherche et d’analyse
 
+Vous pouvez configurer les paramètres de chaque cas de découverte électronique avancée pour contrôler les fonctionnalités suivantes.
+
+- Quasi-doublons et Threading de courrier électronique
+- Thèmes
+- Requête de jeu de validation autogénéré
+- Ignorer le texte
+- Reconnaissance optique de caractères
+
+Pour configurer les paramètres de recherche et d’analyse d’un cas :
+
+1. Sur la page **Advanced eDiscovery** , sélectionnez le cas.
+
+2. Dans l’onglet **paramètres** , sous **recherche & Analytics**, cliquez sur **Sélectionner**.
+
+   La page Paramètres de l’incident s’affiche. Ces paramètres sont appliqués à tous les jeux de révision dans un cas.
+
+   ![Configurer les paramètres d’analyse et de recherche pour un cas avancé eDiscovery](media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et Threading de courrier électronique
 
-Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des doublons et le Threading de messagerie.
+Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des doublons et le Threading de messagerie. Pour plus d’informations, consultez la rubrique [near Detection Detection](near-duplicates.md) and [email Threading](email-threading.md).
 
-- Activer/désactiver : inclut la détection des doublons, la détection à proximité des doublons et le Threading du courrier électronique dans le cadre du flux d’analyse s’il est activé. Étant donné qu’ils sont générés les uns sur les autres, vous devez tous les activer ou les désactiver tous.
+- **Presque en double/Threading de courrier électronique :** Lorsque ce paramètre est activé, la détection des doublons, la détection quasi des doublons et le Threading de messagerie sont inclus dans le flux de travail lorsque vous exécutez Analytics sur les données d’un jeu de révision.
 
-- Seuil : si le niveau de similarité de deux documents est supérieur au seuil, ils seront placés dans le même ensemble presque en double.
+- **Seuil de similarité des documents et des messages électroniques :** Si le niveau de similarité de deux documents est supérieur au seuil, les deux documents sont placés dans le même ensemble presque en double.
 
-- Masquer les doublons par défaut : si ce paramètre est activé, un filtre permettant de masquer les doublons de documents est appliqué par défaut dans le jeu de révision. Le filtre peut être supprimé manuellement dans l’ensemble de révision, le cas échéant.
-
-- Nombre minimal/maximum de mots : les doublons et les threads de courrier électronique s’exécutent uniquement sur les documents qui contiennent au moins le nombre minimal de mots et le nombre maximal de mots.
-Pour plus d’informations, consultez la rubrique [near Detection Detection](near-duplicates.md) and [email Threading](email-threading.md).
+- **Nombre minimal/maximum de mots :** Ces paramètres spécifient que les doublons et l’analyse de thread électronique sont effectués uniquement sur les documents qui contiennent au moins le nombre minimal de mots et le nombre maximal de mots.
 
 ## <a name="themes"></a>Thèmes
 
-Dans cette section, vous pouvez définir des paramètres pour les thèmes.
+Dans cette section, vous pouvez définir des paramètres pour les thèmes. Pour plus d’informations, consultez la rubrique [Themes](themes-in-advanced-ediscovery.md).
 
-- Activer/désactiver : inclut le clustering thèmes dans le cadre du flux d’analyse s’il est activé.
-- Ajustez dynamiquement le nombre maximal de thèmes de façon dynamique : dans certains cas, il n’y a pas assez de documents pour produire le nombre souhaité de thèmes. Si ce paramètre est activé, au lieu d’essayer de forcer le nombre maximal de thèmes souhaités, le système ajuste le nombre maximal de thèmes de manière dynamique.
-- Nombre maximal de thèmes : nombre souhaité de thèmes
-- Inclure les numéros dans les thèmes : lorsque ce dernier est activé, il inclut des numéros dans lors de la génération de thèmes.  
+- **Thèmes :** Lorsque ce paramètre est activé, le clustering de thèmes est effectué dans le cadre du flux de travail lorsque vous exécutez Analytics sur les données d’un jeu de révision.
 
-## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique de caractères (OCR)
+- **Nombre maximal de thèmes :** Spécifie le nombre maximal de thèmes pouvant être générés lorsque vous exécutez Analytics sur les données d’un jeu de révision.
 
-Lorsque ce paramètre est activé, la reconnaissance optique de caractères est exécutée sur les images qui sont ingérées dans les ensembles de validation afin qu’ils puissent être recherchés.
+- **Inclure les numéros dans les thèmes :** Lorsque ce paramètre est activé, les numéros (qui identifient un thème) sont inclus lors de la génération de thèmes. 
+
+- **Ajuster le nombre maximal de thèmes de manière dynamique :** Dans certains cas, il se peut qu’il n’y ait pas assez de documents dans un ensemble de révision pour produire le nombre souhaité de thèmes. Lorsque ce paramètre est activé, Advanced eDiscovery ajuste le nombre maximal de thèmes de manière dynamique au lieu de tenter d’appliquer le nombre maximal de thèmes.
+
+## <a name="review-set-query"></a>Examiner la requête Set
+
+Si vous activez la case à cocher **créer automatiquement un pour vérifier les recherches enregistrées après analyse** , Advanced EDiscovery génère automatiquement la requête Set appelée **for Review.** 
+
+![La requête de révision générée automatiquement](media/AeDForReviewQuery.png)
+
+Cette requête filtre en fait des éléments dupliqués de l’ensemble de révision. Cela vous permet de passer en revue les éléments uniques dans l’ensemble de révision. Cette requête est créée uniquement lorsque vous exécutez Analytics pour n’importe quel jeu de réexamen dans le cas. Pour plus d’informations sur la vérification des requêtes Set, voir [query the Data in a Review Set](review-set-search.md).
 
 ## <a name="ignore-text"></a>Ignorer le texte
 
-Il existe des situations dans lesquelles certains textes réduisent la qualité de l’analyse, tels que des clauses de responsabilité longues qui sont ajoutées à certains courriers électroniques indépendamment du contenu du message. Si vous avez conscience de ces cas, vous pouvez exclure ce texte de l’analyse en spécifiant le texte (RegEx est pris en charge) et les modules pour lesquels le texte doit être exclu.
+Il existe des situations dans lesquelles certains textes réduisent la qualité de l’analyse, tels que les clauses d’exclusion de responsabilité longues qui sont ajoutées aux messages électroniques quel que soit le contenu du courrier électronique. Si vous êtes conscient du texte qui doit être ignoré, vous pouvez l’exclure de l’analyse en spécifiant la chaîne de texte et la fonctionnalité d’analyse (presque-Duplicates, le Threading de courrier électronique, les thèmes et la pertinence) pour lesquels le texte doit être exclu. L’utilisation d’expressions régulières (RegEx) comme texte ignoré est également prise en charge. 
+
+## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique de caractères (OCR)
+
+Lorsque ce paramètre est activé, la reconnaissance optique de caractères est exécutée sur les fichiers d’image ajoutés aux ensembles de révision afin que le texte de l’image puisse être révisé, recherché, balisé et analysé. Pour plus d’informations, voir :
+
+- [Ajouter des résultats de recherche à un jeu à réviser](add-data-to-review-set.md#optical-character-recognition)
+- [Types de fichiers image pris en charge](supported-filetypes-ediscovery20.md#image)

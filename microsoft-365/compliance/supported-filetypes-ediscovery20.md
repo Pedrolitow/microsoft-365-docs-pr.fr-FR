@@ -13,18 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+description: Une liste des types de fichiers pris en charge dans Microsoft 365 Advanced eDiscovery. Cela inclut une liste des types de fichiers image pris en charge par la fonctionnalité OCR dans Advanced eDiscovery.
+ms.openlocfilehash: ff9fdc77226ee476de3fe89a980b2658720749bf
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38685698"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191239"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Types de fichiers pris en charge dans Advanced eDiscovery
 
-Advanced eDiscovery prend en charge de nombreux types de fichiers à différents niveaux, décrits dans le tableau suivant. Cette liste n’est pas finalisée, et nous allons ajouter de nouveaux types de fichiers lors de notre test de validation. Le tableau indique si un type de fichier est pris en charge pour l’extraction de texte (OCR pour les images), affichable dans la visionneuse native et également pris en charge dans la visionneuse d’annotations dans Advanced eDiscovery.
-
+Advanced eDiscovery prend en charge de nombreux types de fichiers à différents niveaux, décrits dans les tableaux suivants. Cette liste n’est pas finalisée et nous allons ajouter de nouveaux types de fichiers lors de la poursuite de nos tests de validation. Ces tableaux indiquent si un type de fichier est pris en charge pour l’extraction de texte (et la reconnaissance optique de caractères ou l’extraction de texte OCR pour les fichiers image), affichable dans la visionneuse native et également pris en charge dans la visionneuse d’annotations dans Advanced eDiscovery.
 
 ## <a name="archive--container"></a>Archive/conteneur
 

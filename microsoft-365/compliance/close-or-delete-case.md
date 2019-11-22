@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078841"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191169"
 ---
 # <a name="close-or-delete-a-case"></a>Fermer ou supprimer un cas
 
@@ -35,16 +35,16 @@ Lorsque le cas juridique ou l’enquête pris en charge par un cas de découvert
 
 Pour fermer un incident :
 
-1. À partir de la page **Advanced eDiscovery** , accédez à votre cas.
+1. Sur la page **Advanced eDiscovery** , sélectionnez le cas que vous souhaitez fermer.
 
-2. Accédez à **paramètres** , puis sélectionnez **informations sur la demande de devis**. 
+2. Dans l’onglet **paramètres** , sous **informations**sur le cas, cliquez sur **Sélectionner**.
 
-3. Cliquez sur **Fermer le cas**. 
+3. Cliquez sur **Fermer le cas**.
 
 Pour supprimer un cas :
 
-1. À partir de la page **Advanced eDiscovery** , accédez à votre cas.
+1. Sur la page **Advanced eDiscovery** , sélectionnez le cas que vous souhaitez supprimer.
 
-2. Accédez à **paramètres** , puis sélectionnez **informations sur la demande de devis**. 
+2. Dans l’onglet **paramètres** , sous **informations**sur le cas, cliquez sur **Sélectionner**.
 
 3. Cliquez sur **supprimer le cas**. 

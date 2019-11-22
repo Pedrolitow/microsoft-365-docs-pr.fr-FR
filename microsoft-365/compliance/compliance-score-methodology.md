@@ -12,19 +12,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment le score de conformité Microsoft calcule un score personnalisé en fonction des actions entreprises pour traiter les risques et améliorer la position de votre conformité.
-ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685704"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793658"
 ---
-# <a name="microsoft-compliance-score-calculation-preview"></a>Calcul du score de conformité Microsoft (aperçu)
+# <a name="microsoft-compliance-score-preview-calculation"></a>Calcul du score de conformité Microsoft (aperçu)
 
 > [!IMPORTANT]
 > Le score de conformité n’exprime pas une mesure absolue de la conformité de l’organisation avec une norme ou réglementation particulière. Elle exprime la mesure dans laquelle vous avez adopté des contrôles qui peuvent réduire les risques pour les données personnelles et la confidentialité individuelle. Les recommandations du score de conformité et du gestionnaire de conformité ne doivent pas être interprétées comme garantie de conformité. Ce service est actuellement en version préliminaire et est soumis aux conditions des [services en ligne](https://go.microsoft.com/fwlink/?linkid=2108910).
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Le tableau de bord de score de conformité affiche un score qui mesure votre progression dans la réalisation d’actions d’amélioration dans les contrôles. Vos points s’accumulent lorsque vous effectuez des actions.
 
@@ -77,9 +77,9 @@ Chaque contrôle a une valeur affectée dans le score de conformité en fonction
 |**Type**|**Score attribué**|
 |:-----|:-----|
 | Préventif obligatoire | vingt |
-| Discrétionnaire préventif | 4,9 |
-| Détective obligatoire | 3 |
-| Discrétion de détective | 0,1 |
-| Correction obligatoire | 3 |
-| Correction discrétionnaire corrective | 0,1 |
+| Discrétionnaire préventif | 9  |
+| Détective obligatoire | 3  |
+| Discrétion de détective | 1  |
+| Correction obligatoire | 3  |
+| Correction discrétionnaire corrective | 1  |
   
