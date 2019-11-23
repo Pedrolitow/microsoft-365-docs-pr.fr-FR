@@ -13,25 +13,26 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 9ef3344bd6497495d3d2279f570a8090d4fa4573
-ms.sourcegitcommit: d8d001c03c28c10bea005d1c9b5f4a8f393af706
+ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38677531"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204255"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
-**Exchange Online Protection (EoP)** est le cœur de la sécurité des abonnements Office 365 et empêche les messages électroniques malveillants d’atteindre les boîtes de réception de vos employés. Toutefois, avec de nouvelles attaques plus sophistiquées émergentes tous les jours, des protections améliorées sont souvent requises. **Office 365 Advanced Threat Protection (ATP)** Le plan ATP 1 ou le plan ATP 2 contiennent des fonctionnalités supplémentaires qui donnent aux administrateurs plus de couches de sécurité, de contrôle et d’enquête. 
+**Exchange Online Protection (EoP)** est le cœur de la sécurité des abonnements Office 365 et empêche les messages électroniques malveillants d’atteindre les boîtes de réception de vos employés. Toutefois, avec de nouvelles attaques plus sophistiquées émergentes tous les jours, des protections améliorées sont souvent requises. **Office 365 Advanced Threat Protection (ATP)** Le plan ATP 1 ou le plan ATP 2 contiennent des fonctionnalités supplémentaires qui donnent aux administrateurs plus de couches de sécurité, de contrôle et d’enquête.
 
-Bien que nous permettons aux administrateurs de sécurité de personnaliser leurs paramètres de sécurité, il existe deux niveaux de sécurité dans EOP et Office 365 ATP qui nous sont recommandés : **standard** et **strict**. L’environnement et les besoins de chaque client sont différents, mais nous pensons que ces niveaux de configurations de filtrage des messages empêchent le courrier indésirable d’atteindre la boîte de réception de vos employés dans la plupart des cas. 
+Bien que nous permettons aux administrateurs de sécurité de personnaliser leurs paramètres de sécurité, il existe deux niveaux de sécurité dans EOP et Office 365 ATP qui nous sont recommandés : **standard** et **strict**. L’environnement et les besoins de chaque client sont différents, mais nous pensons que ces niveaux de configurations de filtrage des messages empêchent le courrier indésirable d’atteindre la boîte de réception de vos employés dans la plupart des cas.
 
 Cette rubrique décrit ces paramètres recommandés par Microsoft pour vous aider à protéger vos utilisateurs Office 365.
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Blocage du courrier indésirable, des programmes malveillants et de la protection anti-hameçonnage dans EOP
+
 Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçonnage sont des fonctionnalités d’EOP qui peuvent être configurées par les administrateurs. Nous vous recommandons d’utiliser les configurations suivantes.
 
-### <a name="anti-spam-policy"></a>Stratégie anti-courrier indésirable
+### <a name="eop-anti-spam-policy-settings"></a>Paramètres de la stratégie anti-courrier indésirable EOP
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
@@ -71,7 +72,7 @@ La stratégie de blocage du courrier indésirable, appelée filtre de courrier i
 |MarkAsSpamNdrBackscatter|
 |MarkAsSpamSpfRecordHardFail|
 
-#### <a name="outbound-spam-filter-policy"></a>Stratégie de filtrage du courrier indésirable sortant
+#### <a name="eop-outbound-spam-filter-policy-settings"></a>Paramètres de stratégie de filtrage du courrier indésirable sortant EOP
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
@@ -80,7 +81,7 @@ La stratégie de blocage du courrier indésirable, appelée filtre de courrier i
 |Limites de destinataires de stratégie de courrier indésirable sortant-limite journalière|800|1000||
 |Action lorsqu’un utilisateur dépasse les limites|Empêcher l’utilisateur d’envoyer des messages|Empêcher l’utilisateur d’envoyer des messages||
 
-### <a name="anti-malware-policy"></a>Stratégie anti-programme malveillant
+### <a name="eop-anti-malware-policy-settings"></a>Paramètres de stratégie anti-programme malveillant EOP
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
@@ -90,7 +91,7 @@ La stratégie de blocage du courrier indésirable, appelée filtre de courrier i
 |Informer les expéditeurs internes du message non remis|Désactivé|Désactivé||
 |Informer les expéditeurs externes du message non remis|Désactivé|Désactivé||
 
-### <a name="anti-phishing-policy"></a>Stratégie anti-hameçonnage
+### <a name="eop-anti-phishing-policy-settings"></a>Paramètres de la stratégie anti-hameçonnage EOP
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
@@ -98,18 +99,20 @@ La stratégie de blocage du courrier indésirable, appelée filtre de courrier i
 |Activer l’expéditeur non authentifié (marquage)|Activé|Activé||
 |Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine|Déplacer le message vers les dossiers de courrier indésirable des destinataires|Mettre en quarantaine le message||
 
-## <a name="office-365-advanced-threat-protection-atp-security"></a>Sécurité Office 365-protection avancée contre les menaces (ATP)
-Des avantages supplémentaires en matière de sécurité sont inclus dans un abonnement Office 365 Advanced Threat Protection. Pour obtenir les dernières informations et informations, vous pouvez consulter les nouveautés [d’Office 365 ATP](whats-new-in-office-365-atp.md). 
+## <a name="office-365-advanced-threat-protection-security"></a>Sécurité avancée contre les menaces Office 365
+
+Des avantages supplémentaires en matière de sécurité sont inclus dans un abonnement Office 365 Advanced Threat Protection (ATP). Pour obtenir les dernières informations et informations, vous pouvez consulter les nouveautés [d’Office 365 ATP](whats-new-in-office-365-atp.md).
 
 La protection avancée contre les menaces Office 365 inclut les stratégies de pièces jointes fiables et de liens fiables pour empêcher la remise des messages contenant des pièces jointes potentiellement malveillantes et empêcher les utilisateurs de cliquer sur les URL potentiellement dangereuses.
 
 > [!IMPORTANT]
-> La protection avancée contre le hameçonnage est l’un des avantages d’un abonnement Office 365 ATP. Activé par défaut, l’anti-hameçonnage ***doit*** être configuré à l’aide de stratégies avant de lancer le filtrage du courrier. Oublier de configurer des stratégies anti-hameçonnage pourrait exposer les utilisateurs à des courriers électroniques risqués. Veillez à configurer vos stratégies anti-hameçonnage après avoir ajouté un abonnement Office 365 ATP.
+> La protection avancée contre le hameçonnage est l’un des avantages d’un abonnement Office 365 ATP. Bien qu’elle soit activée par défaut, vous ***devez*** configurer au moins une stratégie anti-hameçonnage avant de pouvoir commencer à filtrer les messages. Oublier de configurer des stratégies anti-hameçonnage pourrait exposer les utilisateurs à des courriers électroniques risqués. Veillez à configurer vos stratégies anti-hameçonnage après avoir ajouté un abonnement Office 365 ATP.
 
 Si vous avez ajouté un abonnement Office 365 ATP à votre EOP, définissez les configurations suivantes.
 
-### <a name="office-atp-anti-phishing-policy"></a>Stratégie anti-hameçonnage Office ATP
-Les clients EOP reçoivent une stratégie anti-hameçonnage de base, mais avec la protection avancée contre les menaces Office 365, les administrateurs obtiennent davantage de fonctionnalités et de contrôles pour vous aider à prévenir, détecter et remidi contre les attaques.
+### <a name="office-atp-anti-phishing-policy-settings"></a>Paramètres de la stratégie anti-hameçonnage Office ATP
+
+Les clients EOP bénéficient d’une protection antiphishing de base comme décrit précédemment, mais Office 365 ATP inclut davantage de fonctionnalités et de contrôles pour vous aider à prévenir, détecter et corriger les attaques.
 
 |Nom de la fonctionnalité de sécurité de l’emprunt d’identité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
@@ -161,7 +164,7 @@ Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables|Désactiv�
 |Redirection de la pièce jointe sur la détection|Activé|Activé|Rediriger vers l’adresse de messagerie d’un administrateur de sécurité qui sait comment déterminer si la pièce jointe est un programme malveillant ou non|
 |Réponse aux pièces jointes approuvées ATP si l’analyse contre les pièces jointes expire ou si une erreur se produit|Activé|Activé||
 
-## <a name="miscellaneous-settings-for-eop-or-office-365-atp"></a>Paramètres divers pour EOP ou Office 365 ATP
+## <a name="miscellaneous-settings"></a>Paramètres divers
 
 Ces paramètres couvrent un éventail de fonctionnalités qui ne rentrent pas nécessairement dans des catégories spécifiques ci-dessus. Certains de ces paramètres sont externes au centre de sécurité & conformité.
 

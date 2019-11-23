@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: a0f48fefcbb77f5972b91f7fbfbd9dffa6ad7f32
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191202"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204233"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 
@@ -35,14 +35,14 @@ Vos utilisateurs finaux apprécieront les versions les plus récentes des applic
 
 Bien entendu, rien ne vous empêche d’obtenir et de gérer vos propres appareils et les déploiements de Microsoft 365 vous-même. Qu’est-ce que Microsoft Managed Desktop propose ?
 
-Pour vos utilisateurs finaux :
+Nos stratégies et la ligne de base de sécurité offrent aux utilisateurs finaux les avantages suivants :
 
 - Temps de démarrage pour les appareils de bureau gérés Microsoft à un quart d’heure.
 - Au moins deux fois la durée de vie de la batterie
 - Environ un tiers de la plupart des blocages d’appareil par an
 - Mobilité des appareils via l' [itinérance d’état d’entreprise](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), permettant aux utilisateurs d’avoir la même expérience, quel que soit l’appareil auquel se connecter
 
-Pour vos administrateurs informatiques :
+Vos administrateurs informatiques bénéficient de ces fonctionnalités :
 
 - Les tableaux de bord Insights vous préoccupent constamment de l’utilisation, de la fiabilité, de l’intégrité des appareils et d’autres données sur les appareils et les utilisateurs.
 - Environ *un dixième* le temps nécessaire pour mettre à jour 95% des appareils
@@ -65,7 +65,7 @@ Nous contrôlons également l’état de l’appareil et vous fournissons des in
 
 
 ## <a name="need-more-details"></a>Vous avez besoin de plus de détails ?
-Pour plus d’informations sur la valeur du bureau géré Microsoft, y compris sur les témoignages clients, consultez la rubrique [Microsoft Managed Desktop](https://aka.ms/mmd). La feuille de [route](https://aka.ms/AA6jiam) et un résumé téléchargeable sur [une page](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/microsoft-managed-desktop-data-sheet-v20191114.pdf)vous permettent de créer des emplacements intéressants. Vous trouverez les dernières nouvelles sur le [blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop)du bureau géré Microsoft.
+Pour plus d’informations sur la valeur du bureau géré Microsoft, y compris sur les témoignages clients, consultez la rubrique [Microsoft Managed Desktop](https://aka.ms/mmd). La feuille de [route](https://aka.ms/AA6jiam) et un résumé téléchargeable sur [une page](https://aka.ms/AA6ob3h)vous permettent de créer des emplacements intéressants. Vous trouverez les dernières nouvelles sur le [blog](https://aka.ms/AA6l2dd)du bureau géré Microsoft.
 
 Si Microsoft Managed Desktop semble approprié pour votre organisation, vous pouvez vous plonger dans une documentation supplémentaire qui explique le service, comment préparer votre organisation à vous inscrire, comment commencer avec le service et comment poursuivre les opérations en cours, y compris comment vous et vos utilisateurs finaux pouvez facilement obtenir de l’aide si nécessaire. Si vous êtes déjà prêt à être disponible, commencez par contacter votre équipe de [compte local](https://pages.email.office.com/contactmmd/).
 
@@ -87,9 +87,14 @@ Se **préparer à l’enregistrement** Ces rubriques décrivent les étapes à s
 
 **Prise en main** Une fois que vous êtes prêt à vous inscrire, cette section inclut les étapes à suivre pour rejoindre le service, obtenir et configurer des appareils, préparer vos utilisateurs finaux et déployer des applications.
 
-- [Ajouter des contacts d’administration dans le portail d’administration de bureau géré Microsoft](../get-started/add-admin-contacts.md)
+- [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](../get-started/add-admin-contacts.md)
+- [Ajuster l’accès conditionnel](../get-started/conditional-access.md)
+- [Affecter des licences](../get-started/assign-licenses.md)
+- [Installer le portail d’entreprise Intune sur sur les appareils](../get-started/company-portal.md)
+- [Activer Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
 - [Configurer des appareils de bureau géré Microsoft](../get-started/set-up-devices.md)
-- [Déployer des applications sur des appareils de bureau gérés Microsoft](../get-started/deploy-apps.md)
+- [Préparer vos utilisateurs à l’utilisation des appareils](../get-started/get-started-devices.md)
+- [Déployer des applications sur des appareils](../get-started/deploy-apps.md)
 
 **Utilisation de Microsoft Managed Desktop** Cette section contient des informations sur votre durée de vie quotidienne avec le service, telles que la façon dont vos administrateurs informatiques peuvent obtenir une assistance, le cas échéant, la prise en charge de vos utilisateurs finals, la gestion de vos applications une fois déployées et la façon de travailler avec les paramètres personnalisables sur les appareils.
 
