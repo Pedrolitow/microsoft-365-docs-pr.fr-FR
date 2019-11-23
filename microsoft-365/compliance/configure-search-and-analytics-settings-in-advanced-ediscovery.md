@@ -14,21 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Configurez des paramètres eDiscovery avancés qui s’appliquent à tous les jeux de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
-ms.openlocfilehash: f34f10c08be582389346b3aedc899bd9f4906a93
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 2def41ecc090b54cd3d6b789c2d9890392d1e0d3
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191139"
+ms.locfileid: "39202195"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurer les paramètres de recherche et d’analyse
 
 Vous pouvez configurer les paramètres de chaque cas de découverte électronique avancée pour contrôler les fonctionnalités suivantes.
 
 - Quasi-doublons et Threading de courrier électronique
+
 - Thèmes
+
 - Requête de jeu de validation autogénéré
+
 - Ignorer le texte
+
 - Reconnaissance optique de caractères
 
 Pour configurer les paramètres de recherche et d’analyse d’un cas :
@@ -69,7 +73,7 @@ Si vous activez la case à cocher **créer automatiquement un pour vérifier les
 
 ![La requête de révision générée automatiquement](media/AeDForReviewQuery.png)
 
-Cette requête filtre en fait des éléments dupliqués de l’ensemble de révision. Cela vous permet de passer en revue les éléments uniques dans l’ensemble de révision. Cette requête est créée uniquement lorsque vous exécutez Analytics pour n’importe quel jeu de réexamen dans le cas. Pour plus d’informations sur la vérification des requêtes Set, voir [query the Data in a Review Set](review-set-search.md).
+Cette requête filtre en fait des éléments dupliqués de l’ensemble de révision. Cela vous permet de passer en revue les éléments uniques dans l’ensemble de révision. Cette requête est créée uniquement lorsque vous exécutez Analytics pour un jeu de réexamen dans le cas. Pour plus d’informations sur la vérification des requêtes Set, voir [query the Data in a Review Set](review-set-search.md).
 
 ## <a name="ignore-text"></a>Ignorer le texte
 
@@ -77,7 +81,8 @@ Il existe des situations dans lesquelles certains textes réduisent la qualité 
 
 ## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique de caractères (OCR)
 
-Lorsque ce paramètre est activé, la reconnaissance optique de caractères est exécutée sur les fichiers d’image ajoutés aux ensembles de révision afin que le texte de l’image puisse être révisé, recherché, balisé et analysé. Pour plus d’informations, voir :
+Lorsque ce paramètre est activé, la reconnaissance optique de caractères est exécutée sur les fichiers d’image ajoutés aux ensembles de révision afin que le texte de l’image puisse être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Pour plus d’informations, voir :
 
 - [Ajouter des résultats de recherche à un jeu à réviser](add-data-to-review-set.md#optical-character-recognition)
+
 - [Types de fichiers image pris en charge](supported-filetypes-ediscovery20.md#image)

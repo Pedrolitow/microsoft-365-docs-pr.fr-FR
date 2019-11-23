@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 1a490212b2275b9f297e2585e7242f5331d0fe56
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1f233a6bc19f4a7afa495f49ad77e39e496c1dc5
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38685729"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202165"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notes de publication pour le gestionnaire de conformité (aperçu)
 
@@ -51,8 +51,10 @@ Les sections suivantes couvrent les problèmes connus à résoudre dans les proc
 - Les résultats du score de sécurité ne sont pas disponibles pour certaines actions dans certains abonnements Microsoft 365 et Office 365. Le résultat du score de sécurité n’a **pas pu être détecté** dans les cas suivants.
 - Parfois, les résultats de la fonction de chiffrement sécurisé sont renvoyés pour les stratégies et les éléments d’action non terminés.
 - Pour les nouveaux clients, les mises à jour du score de sécurité pour toutes les actions sont automatiquement activées. L’administrateur général peut définir le commutateur de mise à jour continue du score de sécurité sur désactivé, ce qui désactive les mises à jour pour toutes les actions.
+  - **Remarque**: lorsque les organisations déploient pour la première fois Microsoft 365 ou Office 365, le score de sécurité requis pour collecter intégralement les données est d’environ sept jours et les évaluer dans votre score. Pendant ce temps, la définition du commutateur de mise à jour continue de score de sécurité sur **désactivé** et la définition manuelle d’une action sur **implémenté** compteront cette action vers votre score. Une fois les sept jours initiaux, l’activation de la mise à jour continue du score sécurisé active la surveillance continue à partir de ce moment-là.
 - Lorsque les mises à jour du score de sécurité sont activées, les actions sont activement surveillées par le score sécurisé, bien que la date de test de l’action ne soit pas mise à jour pour refléter la surveillance.
 - Lors de la création d’évaluations, les scores incluent automatiquement les scores de contrôle gérés par Microsoft et l’intégration de la note de sécurité.
+- Toutes les actions qui ne sont pas prises en charge par l’intégration de la note sécurisée peuvent être implémentées manuellement. Une implémentation manuelle concerne le score du groupe de cette action.
 
 ### <a name="microsoft-managed-controls"></a>Contrôles gérés par Microsoft
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Ajoutez les résultats d’une recherche associée à un cas avancé eDiscovery. Les éléments sont copiés à partir de leur emplacement d’origine et copiés dans un emplacement de stockage Azure fourni par Microsoft. Les éléments sont également réindexés et Advanced eDiscovery procède à la reconnaissance optique de caractères (OCR) sur les fichiers image et télécharge le texte de l’image à des fins de révision et d’analyse.
-ms.openlocfilehash: 0a1b2a245e3a650d6a35bc1032539e7b7e969dc9
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 99fe0cce8bd872ecd5f4a94699857c36c3a4d617
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191179"
+ms.locfileid: "39202325"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
@@ -57,6 +57,6 @@ Après avoir sélectionné et configuré l’une des options précédentes, sél
 
 ## <a name="optical-character-recognition"></a>Reconnaissance optique de caractères
 
-Lorsque vous ajoutez des résultats de recherche à un jeu de réviseurs, la fonctionnalité de reconnaissance optique de caractères (OCR) dans Advanced eDiscovery extrait automatiquement le texte des images et inclut le texte de l’image avec les données ajoutées à un jeu de révision. Cela vous permet d’effectuer une révision et une analyse supplémentaires sur le texte des images. La reconnaissance optique de caractères est prise en charge pour les fichiers libres, les pièces jointes et les images incorporées. Pour obtenir la liste des formats de fichiers image pris en charge pour la reconnaissance optique de caractères, voir [types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
+Lorsque vous ajoutez des résultats de recherche à un jeu de réviseurs, la fonctionnalité de reconnaissance optique de caractères (OCR) dans Advanced eDiscovery extrait automatiquement le texte des images et inclut le texte de l’image avec les données ajoutées à un jeu de révision. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Cela vous permet d’effectuer une révision et une analyse supplémentaires sur le texte des images. La reconnaissance optique de caractères est prise en charge pour les fichiers libres, les pièces jointes et les images incorporées. Pour obtenir la liste des formats de fichiers image pris en charge pour la reconnaissance optique de caractères, voir [types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
 
 Vous devez activer la fonctionnalité OCR pour chaque cas que vous créez dans Advanced eDiscovery. Pour plus d’informations, consultez la rubrique [configurer les paramètres de recherche et d’analyse](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

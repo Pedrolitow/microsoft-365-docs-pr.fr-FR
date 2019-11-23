@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8eadfbeb1a78edd12129c97dc3144a45c5c409cf
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191269"
+ms.locfileid: "39202345"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un jeu à réviser
 
@@ -51,11 +51,11 @@ Il existe plusieurs types de cartes de condition :
 
 ### <a name="query-language"></a>Langage de requête
 
-En plus des cartes de condition, vous pouvez utiliser un langage de requête de type KQL dans la carte de mots-clés pour créer votre requête. Le langage de requête pour les requêtes de jeu de révision prend en charge les opérateurs booléens standard, tels que AND, OR, NOT et NEAR (n). Il prend également en charge un caractère générique ( ?) à un seul caractère et un caractère générique à caractères multiples (*).
+En plus des cartes de condition, vous pouvez utiliser un langage de requête de type KQL dans la carte de mots-clés pour créer votre requête. Le langage de requête pour les requêtes de jeu de révision prend en charge les opérateurs booléens standard, tels que **and**, **or**, **not**et **near**. Il prend également en charge un caractère générique ( ?) à un seul caractère et un caractère générique à caractères multiples (*).
 
 ## <a name="using-filters"></a>Utilisation de filtres
 
-Outre les requêtes que vous pouvez enregistrer, vous pouvez utiliser les filtres Set Set pour appliquer rapidement des conditions supplémentaires à une requête Set Review. Cela vous permet d’affiner les résultats affichés par une requête d’ensemble de révision. 
+Outre les requêtes que vous pouvez enregistrer, vous pouvez utiliser les filtres Set Set pour appliquer rapidement des conditions supplémentaires à une requête Set Review. Cela vous permet d’affiner les résultats affichés par une requête d’ensemble de révision.
 
 ![Vérifier les filtres Set](media/AeDReviewSetFilters.png)
 

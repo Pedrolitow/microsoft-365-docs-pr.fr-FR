@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: c50122f390809e145af621ed6341d02ae9c3b8cf
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718683"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202355"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -149,7 +149,7 @@ Vous ne pouvez pas modifier un nom de propriétaire, mais vous pouvez modifier l
 
 La zone actions client affiche toutes les actions des clients pour tous les modèles et évaluations dans le gestionnaire de conformité (aperçu).
 
-![Gestionnaire de conformité — ajouter des utilisateurs](media/compliance-manager-customer-actions.png)
+![Gestionnaire de conformité — ajouter des utilisateurs](media/compliance-manager-customer-actions.png "Actions client du gestionnaire de conformité")
 
 En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie, l’application et le score d’une action, et déterminer si elle est intégrée avec le score de sécurité. Vous pouvez développer une action et sélectionner **More** pour lire la description de l’action et accéder à tous les liens dans la description. Vous pouvez également utiliser cette interface pour activer et désactiver l’intégration de la note sécurisée en fonction de l’action et pour ajouter des actions personnalisées. Les actions qui ont des fonctions d’intégration de score sécurisé comportent des points de suspension (...) en regard de celles-ci (Notez que les actions personnalisées comportent également des points de suspension).
 
@@ -158,6 +158,10 @@ En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie,
 1. Sélectionnez les points de suspension (...) de l’action que vous souhaitez modifier, puis sélectionnez **modifier**.
 2. Basculez le commutateur de la mise à jour continue du score de sécurité sur activé ou désactivé pour activer ou désactiver la surveillance continue via le score de sécurité.
 3. Cliquez sur **Enregistrer**.
+
+Lorsque les organisations déploient d’abord Microsoft 365 ou Office 365, il faut environ sept jours pour que l’évaluation complète des données et les intégrer dans votre score. Pendant ce temps, la définition du commutateur de mise à jour continue de score de sécurité sur **désactivé** et la définition manuelle d’une action sur **implémenté** compteront cette action vers votre score. Une fois les sept jours initiaux, l’activation de la mise à jour continue du score sécurisé active la surveillance continue à partir de ce moment-là.
+
+Toutes les actions qui ne sont pas prises en charge par l’intégration de la note sécurisée peuvent être implémentées manuellement. Une implémentation manuelle concerne le score du groupe de cette action.
 
 #### <a name="add-a-customer-action"></a>Ajouter une action client
 
