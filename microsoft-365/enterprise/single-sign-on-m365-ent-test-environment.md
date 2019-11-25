@@ -3,7 +3,7 @@ title: Authentification unique transparente Azure AD pour votre environnement d
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: a32dca8c37d9e6788aef801e9f99a90b724e86b1
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: f263ab507e392c1172d28b5d6ef111d8d9f40682
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757671"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202235"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
 
@@ -49,7 +49,7 @@ Suivez les instructions fournies dans l’article [Synchronisation de hachage de
   
 Cette configuration se compose des éléments suivants :  
   
-- Un abonnement d’évaluation ou payant Microsoft 365 E5 ou Office 365 E5.
+- Abonnements d’évaluation ou payants Microsoft 365 E5 ou Office 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
 - Azure AD Connect s’exécute sur APP1 pour synchroniser régulièrement le domaine Windows Server AD TESTLAB (Active Directory Domain Services : AD DS) avec le client Azure AD de votre abonnement Microsoft 365 ou Office 365 de manière périodique.
 
@@ -81,7 +81,7 @@ Durant cette phase, vous allez configurer Azure AD Connect sur APP1 pour qu’
 
 11. Sur le Portail Azure, dans le volet gauche, cliquez sur **Azure Active Directory > Azure AD Connect**. Vérifiez que la fonctionnalité **Authentification unique transparente** affiche l’état **Activé**.
 
-Ensuite, vérifiez si vous pouvez vous connecter à votre abonnement Office 365 avec le nom d’utilisateur <strong>utilisateur1@testlab.</strong>\<votre domaine public> du compte Utilisateur1.
+Vérifiez ensuite si vous pouvez vous connecter à votre abonnement avec le nom d’utilisateur <strong>utilisateur1@testlab.</strong>\<votre domaine public> du compte Utilisateur1.
 
 1. Dans Internet Explorer sur APP1, cliquez sur l’icône Paramètres, puis cliquez sur **Options Internet**.
  
@@ -93,11 +93,11 @@ Ensuite, vérifiez si vous pouvez vous connecter à votre abonnement Office 365
 
 5. Dans **Ajouter ce site web à la zone**, tapez **https<span>://</span>autologon.microsoftazuread-sso.com**, cliquez sur **Ajouter > Fermer > OK > OK**.
 
-6. Déconnectez-vous d’Office 365, puis reconnectez-vous avec un autre compte.
+6. Déconnectez-vous, puis reconnectez-vous avec un compte différent.
 
 7. Lorsque vous êtes invité à vous connecter, spécifiez<strong>user1@testlab.</strong>\<votre domaine public > nom, puis cliquez sur **suivant**. Vous devez correctement vous connecter en tant que User1 sans entrer un mot de passe. Cela prouve qu’ Azure AD transparente SSO fonctionne.
 
-Notez que même si les utilisateurs User1 disposent des autorisations d’administrateur de domaine pour le domaine TESTLAB AD DS, il n’est pas un administrateur général pour Azure AD et Office 365. Par conséquent, vous ne verrez pas l’icône**administrateur**comme une option.
+Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’administrateur pour le domaine TESTLAB AD DS, il n’est pas un administrateur général pour Azure AD. Par conséquent, vous ne verrez pas l’icône**Administrateur**comme une option.
 
 Voici la configuration obtenue :
 

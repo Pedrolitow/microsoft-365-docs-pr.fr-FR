@@ -3,7 +3,7 @@ title: Authentification directe pour votre environnement de test Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer l’authentification directe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 98e0ad4b216fdc3940c0077cb308d6271ffed678
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ed21007932b455c4f24af83434af75d44e583574
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757721"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202315"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Authentification directe pour votre environnement de test Microsoft 365
 
@@ -78,13 +78,13 @@ Durant cette phase, vous allez configurer Azure AD Connect sur APP1 pour qu’
 
 10. Cliquez sur **Authentification directe**. Le volet **Authentification directe** répertorie les serveurs où vos agents d’authentification sont installés. APP1 devrait figurer dans la liste. Fermez le volet **Authentification directe**.
 
-Ensuite, vérifiez si vous pouvez vous connecter à votre abonnement Office 365 avec le nom d’utilisateur <strong>utilisateur1@testlab.</strong>\<votre domaine public> du compte Utilisateur1.
+Vérifiez ensuite si vous pouvez vous connecter à votre abonnement avec le nom d’utilisateur <strong>utilisateur1@testlab.</strong>\<votre domaine public> du compte Utilisateur1.
 
-1. Dans APP1, déconnectez-vous d’Office 365, puis reconnectez-vous avec un autre compte.
+1. Dans APP1, déconnectez-vous, puis reconnectez-vous avec un compte différent.
 
 2. Quand vous êtes invité à saisir le nom d’utilisateur et le mot de passe, indiquez <strong>utilisateur1@testlab.</strong>\<votre domaine public> et le mot de passe de l’Utilisateur1. Vous serez connecté en tant qu’Utilisateur1. Vous devez correctement vous connecter en tant qu’ Utilisateur1.
 
-Notez que même si les utilisateurs User1 disposent des autorisations d’administrateur de domaine pour le domaine TESTLAB AD DS, il n’est pas un administrateur général pour Office 365. Par conséquent, vous ne verrez pas l’icône**Administrateur**comme une option.
+Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’administrateur pour le domaine TESTLAB AD DS, il n’est pas un administrateur général. Par conséquent, vous ne verrez pas l’icône**Administrateur**comme une option.
 
 Voici la configuration obtenue :
 
@@ -106,5 +106,3 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 [Déployer Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
 
 [Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-
