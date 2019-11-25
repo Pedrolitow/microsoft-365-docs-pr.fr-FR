@@ -1,10 +1,11 @@
 ---
 title: Appliquer automatiquement une étiquette sensibilité au contenu
-ms.author: laurawi
-author: laurawi
+ms.author: krowley
+author: kccross
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
+ms.date: 11/01/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: f0287eff3a462bc6f30c18c561203ba1a9a9dc19
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: eccc60dc7a306f3e7b2eb128ed45a92af65491a5
+ms.sourcegitcommit: cd748ca00088275372f51fbf8c4bc72bfd3e1437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37343107"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "39233215"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -32,8 +33,7 @@ La possibilité d’appliquer automatiquement des étiquettes à du contenu est 
 
 - Les utilisateurs n’ont plus à connaître les stratégies de gouvernance des données : à la place, ils peuvent se concentrer sur leur travail.
 
-> [!NOTE]
-> La capacité à appliquer automatiquement des étiquettes nécessite un abonnement Azure Information Protection P2. Pour utiliser cette fonctionnalité, vous devez [télécharger et installer le client Azure Information Protection unifié étiquetage](https://docs.microsoft.com/fr-FR/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Nous travaillons à la prise en charge native pour cette fonctionnalité dans les applications Office, afin qu’elle n’exige pas que le client Azure Information Protection unifié création d’étiquettes. Par ailleurs, le client de création d’étiquettes unifié ne s’exécute que sur Windows, afin que cette fonctionnalité ne soit pas encore prise en charge sur Mac, iOS et Android.
+Pour plus d’informations sur les licences requises, voir [Étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md).
 
 Les paramètres d’étiquetage automatique sont disponibles lorsque vous créez une étiquette de sensibilité dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365 sous **Classification** > **Étiquettes de sensibilité**.
 
@@ -41,15 +41,15 @@ Les paramètres d’étiquetage automatique sont disponibles lorsque vous créez
 
 ## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Application d’une étiquette automatiquement en fonction des conditions
 
-L’une des fonctionnalités les plus puissantes des étiquettes de sensibilité est la possibilité de les appliquer automatiquement au contenu qui remplit certaines conditions. Dans ce cas, les membres de votre organisation ne doivent pas appliquer ces étiquettes de sensibilité: Office 365 s’en charge à leur place.
-   
-Vous pouvez choisir d’appliquer automatiquement des étiquettes de sensibilité au contenu quand celui-ci inclut des types spécifiques d’informations sensibles. Lorsque vous configurez une étiquette de sensibilité à être appliquée automatiquement, vous voyez la même liste de types d’informations sensibles comme lorsque vous créez une stratégie prévention contre la perte de données. Par conséquent vous pouvez, par exemple, appliquer automatiquement une étiquette hautement confidentielle à tout contenu qui contient des informations d’identification personnelle des clients (PII) telles que les numéros de sécurité sociale ou carte bancaire. 
+L’une des fonctionnalités les plus puissantes des étiquettes de confidentialité est la possibilité d’appliquer celles-ci automatiquement à tout contenu correspondant à certaines conditions. Dans ce cas, les personnes au sein de votre organisation n’ont pas besoin d’appliquer les étiquettes de confidentialité. Office 365 s’en charge à leur place.
+
+Vous pouvez choisir d’appliquer automatiquement des étiquettes de sensibilité au contenu quand celui-ci inclut des types spécifiques d’informations sensibles. Lorsque vous configurez une étiquette de sensibilité à être appliquée automatiquement, vous voyez la même liste de types d’informations sensibles comme lorsque vous créez une stratégie prévention contre la perte de données. Par conséquent vous pouvez, par exemple, appliquer automatiquement une étiquette hautement confidentielle à tout contenu qui contient des informations d’identification personnelle des clients (PII) telles que les numéros de sécurité sociale ou carte bancaire.
 
 ![Nombre d’instances et options de précision des résultats](media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-Après avoir choisi vos types d’informations sensibles sections, vous pouvez affiner votre condition en modifiant le nombre d’instances ou précision de correspondance. Pour plus d’informations, voir [Optimisation des règles afin de les rendre plus facile ou plus difficile pour correspondre à](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+Après avoir choisi vos types d’informations sensibles, vous pouvez affiner votre condition en modifiant le nombre d’instances ou la précision des correspondances. Pour plus d’informations, voir[Optimisation des règles afin de les rendre plus facile ou plus difficile à associer](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
-De plus, vous pouvez choisir si une condition doit détecter les types sensibles relatifs ou simplement l’un d’eux. Et pour rendre vos conditions plus flexible ou complexes, vous pouvez ajouter des groupes et utiliser les opérateurs logiques entre les groupes. Pour plus d’informations, voir [Opérateurs logiques et regroupement](data-loss-prevention-policies.md#grouping-and-logical-operators).
+De plus, vous pouvez choisir si une condition doit détecter tous les types d’informations sensibles ou seulement l’un d’eux. Pour améliorer la flexibilité ou la complexité de vos conditions, vous pouvez ajouter des groupes et utiliser des opérateurs logiques entre les groupes. Pour plus d’informations, voir [Regroupement et opérateurs logiques](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 Lorsqu’une étiquette de critère de diffusion est automatiquement appliquée, l’utilisateur voit une notification dans leur application Office. Ils peuvent choisir **OK**pour fermer la notification.
 
@@ -57,11 +57,11 @@ Lorsqu’une étiquette de critère de diffusion est automatiquement appliquée,
 
 ## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Recommandé que l’utilisateur applique une étiquette de critère de diffusion
 
-Si vous préférez, au lieu d’appliquer une étiquette sensibilité automatiquement au contenu, vous pouvez recommander à vos utilisateurs qu’elles s’appliquent à l’étiquette. Cette option permet à vos utilisateurs d’accepter la classification et toute protection associée ou faire disparaitre la valeur recommandée si l’étiquette n’est pas appropriée à leur document ou message électronique.
+Si vous le souhaitez, vous pouvez recommander à vos utilisateurs qu’ils appliquent l’étiquette. Cette option permet à vos utilisateurs d’accepter la classification et toute protection associée, ou d’ignorer la recommandation si l’étiquette ne convient pas à leur document ou à leur courrier électronique.
 
-Notez que les étiquettes recommandées sont prises en charge dans Word, PowerPoint et Excel (et requièrent que l’étiquette client Proteciton Informations Azure unifiée soit bien installée). Nous travaillons à la prise en charge pour les étiquettes recommandées dans Outlook.
+Les étiquettes recommandées sont prises en charge dans Word, PowerPoint et Excel (et requièrent que l’étiquette client Protection Informations Azure unifiée soit bien installée). 
 
-![Option pour recommander une étiquette de la sensibilité à des utilisateurs](media/Sensitivity-labels-Recommended-label-option.png)
+![Option pour recommander une étiquette de confidentialité à des utilisateurs](media/Sensitivity-labels-Recommended-label-option.png)
 
 Voici un exemple d’une invite de commandes lorsque vous configurez une condition à appliquer une étiquette comme action recommandée avec un Conseil de stratégie personnalisé. Vous pouvez choisir quel texte s’affiche dans le Conseil de stratégie.
 
@@ -69,13 +69,13 @@ Voici un exemple d’une invite de commandes lorsque vous configurez une conditi
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>Comment les étiquettes automatiques ou recommandées sont appliquées
 
-- L’étiquetage automatique s’applique à Word, Excel et PowerPoint lorsque les documents sont enregistrés et dans Outlook lorsque des messages électroniques sont envoyés. Ces conditions détectent les informations sensibles dans le corps de texte dans des documents et messages électroniques et aux en-têtes et pieds de page, mais pas dans la ligne d’objet ou des pièces jointes de message électronique.
+- L’étiquetage automatique s’applique à Word, Excel et PowerPoint lors de l’enregistrement d’un document et à Outlook lorsque vous envoyez un courrier électronique. Ces conditions détectent les informations sensibles dans le corps de texte dans les documents et les courriers électroniques, ainsi que dans les en-têtes et pieds de page, mais pas dans la ligne d’objet ni dans les pièces jointes du courrier électronique.
 
-- Vous ne pouvez pas utiliser la classification automatique pour les documents et messages électroniques qui ont été précédemment intitulés manuellement ou précédemment automatiquement libellés avec une classification une version ultérieure. N’oubliez pas, un document ou un courrier électronique peut avoir uniquement une seul niveau de confidentialité étiquette (outre une étiquette unique rétention).
+- Vous ne pouvez pas utiliser la classification automatique pour les documents et les messages électroniques qui ont été étiquetés manuellement précédemment ou étiquetés automatiquement avec une classification supérieure. N’oubliez pas que vous ne pouvez appliquer qu’une seule étiquette de confidentialité à un document ou un message électronique (en plus d’une seule étiquette de rétention).
 
-- La classification recommandée s’applique à Word, Excel et PowerPoint lorsque les documents sont enregistrés. Nous travaillons sur la prise en charge d’étiquetage recommandée dans Outlook.
+- La classification recommandée s’applique à Word, Excel et PowerPoint lorsque vous enregistrez des documents.
 
-- Vous ne pouvez pas utiliser la classification recommandée pour les documents qui ont été précédemment libellés avec une classification une version ultérieure. Dans ce cas, lorsque le contenu est déjà libellé avec une classification supérieure, l’utilisateur ne verra pas l’invite de commandes avec la recommandation et le conseil de stratégie.
+- Vous ne pouvez pas utiliser la classification recommandée pour les documents qui ont été étiquetés précédemment avec une classification supérieure. Lorsque le contenu est déjà labellisé avec une classification supérieure, l’invite pour la recommandation et le conseil de stratégie ne seront pas affichés pour l’utilisateur.
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plus d’une étiquette
 

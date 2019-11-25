@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention spécifiques de votre organisation dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci à l’appui du cycle de vie complet du contenu.
-ms.openlocfilehash: 97b5c1981cf2596554571e8b53059aa718aa561c
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 3057b5ab061bc5107acbde3c67ecde8a9edaffd7
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440671"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "39233213"
 ---
 # <a name="records-management-in-microsoft-365"></a>Gestion des enregistrements dans Microsoft 365
 
@@ -26,13 +26,13 @@ Les organisations de tous types ont besoin d’une solution de gestion des enreg
 
 La solution de gestion des enregistrements prend en charge les opérations suivantes :
 
+- **Étiqueter du contenu comme enregistrement** Publier des [étiquettes d’enregistrement](records.md) à appliquer par les utilisateurs finaux ou [appliquées automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) aux éléments contenant des informations sensibles, des mots clés ou certaines types de contenus.
+
 - **Migrer et gérer votre plan de rétention avec le plan de gestion de fichiers**, et utiliser le [gestionnaire du plan de gestion de fichiers](file-plan-manager.md) pour incorporer votre plan de rétention existant ou en créer un avec des descripteurs de fichiers et des hiérarchies en expansion.
 
 - **Établir des stratégies de rétention et de suppression à l’intérieur de l’étiquette d’enregistrement**. Définir des périodes de [rétention](retention-policies.md#retaining-content-for-a-specific-period-of-time) et de [destruction](retention-policies.md#deleting-content-thats-older-than-a-specific-age) en fonction de divers facteurs, dont la date de création ou de dernière modification.
 
 - **Déclencher une rétention basée sur les événements** avec un [destruction basée sur les événements](event-driven-retention.md).
-
-- **Étiqueter en tant qu’enregistrement**. Publier des [étiquettes d’enregistrement](labels.md#using-retention-labels-for-records-management) à appliquer par les utilisateurs finaux ou [appliquées automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) aux éléments contenant des informations sensibles, des mots clés ou certaines types de contenus.
 
 - **Vérifier et valider la destruction** en effectuant une [révision avant destruction](disposition-reviews.md).
 

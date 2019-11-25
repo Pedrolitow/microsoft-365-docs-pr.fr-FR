@@ -3,7 +3,7 @@ title: Configurer SPF dans Office 365 pour empêcher l’usurpation
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 11/07/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,21 +14,21 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Résumé : Cet article explique comment mettre à jour un enregistrement DNS (Domain Name Service) afin que vous puissiez utiliser le SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365. L’utilisation de SPF permet de valider les messages sortants envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: 4861799695b28b0f096000ddee6e20d7a187a5aa
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: 547577fbcddca6e17d8e70a7fda8ffa469dfb525
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038863"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191279"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurer SPF dans Office 365 pour empêcher l’usurpation
 
  **Résumé :** Cet article explique comment mettre à jour un enregistrement DNS (Domain Name Service) afin que vous puissiez utiliser le SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365. L'utilisation de SPF permet de valider les messages sortants envoyés à partir de votre domaine personnalisé.
   
-Afin d’utiliser un domaine personnalisé, Office 365 exige que vous ajoutiez un enregistrement TXT SPF (Sender Policy Framework) à votre enregistrement DNS pour éviter l’usurpation. SPF identifie les serveurs de messagerie qui sont autorisés à envoyer des messages en votre nom. En bref, SPF, ainsi que DKIM, DMARC et d’autres technologies prises en charge par Office 365, permettent d’éviter l’usurpation et le hameçonnage. SPF est ajouté sous la forme d’un enregistrement TXT qui est utilisé par le système DNS afin d’identifier les serveurs de messagerie autorisés à envoyer des messages au nom de votre domaine personnalisé. Les systèmes de messagerie électronique des destinataires peuvent se reporter à l’enregistrement TXT SPF pour déterminer si un message provenant de votre domaine personnalisé a été envoyé à partir d’un serveur de messagerie autorisé.
+Afin d’utiliser un domaine personnalisé, Office 365 exige l’ajout d’un enregistrement TXT SPF (Sender Policy Framework) à votre enregistrement DNS pour éviter l’usurpation. SPF identifie les serveurs de messagerie qui sont autorisés à envoyer des messages en votre nom. En bref, SPF, ainsi que DKIM, DMARC et d’autres technologies prises en charge par Office 365, permettent d’éviter l’usurpation et le hameçonnage. SPF est ajouté sous la forme d’un enregistrement TXT qui est utilisé par le système DNS afin d’identifier les serveurs de messagerie autorisés à envoyer des messages au nom de votre domaine personnalisé. Les systèmes de messagerie électronique des destinataires peuvent se reporter à l’enregistrement TXT SPF pour déterminer si un message provenant de votre domaine personnalisé a été envoyé à partir d’un serveur de messagerie autorisé.
   
 Par exemple, supposons que votre domaine personnalisé contoso.com utilise Office 365. Vous ajoutez un enregistrement TXT SPF qui répertorie les serveurs de messagerie Office 365 en tant que serveurs de messagerie légitimes pour votre domaine. Lorsque le serveur de messagerie de réception reçoit un message de la part de joe@contoso.com, le serveur recherche l’enregistrement TXT SPF pour contoso.com et détermine si le message est valide. Si le serveur de réception détecte que le message provient d’un serveur autre que les serveurs de messagerie Office 365 répertoriés dans l’enregistrement SPF, le serveur de messagerie de réception peut choisir de refuser le message en le marquant comme du courrier indésirable.
-  
+
 En outre, si votre domaine personnalisé ne dispose pas d’un enregistrement TXT SPF, certains serveurs de réception peuvent totalement rejeter le message. En effet, le serveur de réception ne peut pas valider le fait que le message provient d’un serveur de messagerie autorisé.
   
 Si vous avez déjà configuré les messages pour Office 365, vous avez déjà inclus les serveurs de messagerie de Microsoft dans le système DNS sous la forme d’un enregistrement TXT SPF. Toutefois, il existe certains cas où vous devez mettre à jour votre enregistrement TXT SPF dans le système DNS. Par exemple :
