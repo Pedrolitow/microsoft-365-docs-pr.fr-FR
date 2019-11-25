@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Pour les administrateurs : Découvrez comment utiliser le Service d’importation dans le Centre de sécurité et de conformité pour importer en bloc des données de courrier (fichiers PST) vers des boîtes aux lettres d’utilisateurs dans Exchange Online. Cette rubrique regroupe des questions fréquemment posées et explique le fonctionnement du processus d’importation de fichiers PST.'
-ms.openlocfilehash: 4682114ad150f818dfe39fe662bc3440d655e4ea
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 948ba22ff88b72a3af92edb39bfdc28cfde4c385
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079181"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39218839"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Vue d’ensemble de l’importation de fichiers PST de votre organisation dans Office 365
 
@@ -94,9 +94,9 @@ Voici une illustration et une description du processus d’importation de fichie
     
   - Utiliser [les Cas de découverte électronique](ediscovery-cases.md) pour gérer les enquêtes juridiques de votre organisation 
     
-  - Utilisez [les stratégies de rétention](retention-policies.md) dans le Centre de sécurité et de conformité pour contrôler la durée de conservation du contenu des boîtes aux lettres, puis supprimez le contenu à la fin de la période de rétention. 
+  - Utilisez les [stratégies de rétention](retention-policies.md) dans le Centre de sécurité et de conformité pour contrôler la durée de conservation du contenu des boîtes aux lettres, puis supprimez le contenu à la fin de la période de rétention. 
 
-  - Utilisez [les stratégies de surveillance](supervision-policies.md) pour examiner les messages afin de vous assurer qu’ils sont conformes aux normes des messages et ajoutez un type de classification.
+  - Utilisez [les stratégies de conformité communication](communication-compliance.md) pour examiner les messages afin de vous assurer qu’ils sont conformes aux normes des messages et ajoutez un type de classification.
     
 - L’importation de données dans Office 365 permet également à votre organisation de se protéger contre la perte de données. Les données de courrier importées dans Office 365 héritent des fonctionnalités de haute disponibilité d’Exchange Online.
     

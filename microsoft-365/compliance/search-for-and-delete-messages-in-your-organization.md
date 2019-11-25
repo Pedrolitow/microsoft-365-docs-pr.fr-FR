@@ -1,5 +1,5 @@
 ---
-title: Recherche et suppression de messages électroniques dans votre organisation Office 365 – Aide de l’administrateur
+title: Recherche et suppression de messages électroniques dans votre organisation Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité d’Office 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: cd592ca48fdb2390e8449672920aa697cc297495
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078399"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39218859"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Recherche et suppression de messages électroniques dans votre organisation Office 365 – Aide de l’administrateur
+# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Recherche et suppression de messages électroniques dans votre organisation Office 365
 
 **Cet article est destiné aux administrateurs. Vous essayez de rechercher des éléments à supprimer dans votre boîte aux lettres ? Voir [Rechercher un message ou un élément avec la Recherche instantanée](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
@@ -39,11 +39,11 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu dans Office 365 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou disposer du rôle de gestion de **Recherche de conformité**. Pour supprimer des messages, vous devez être membre du groupe de rôles de **gestion de l’organisation** ou disposer du rôle de gestion de **recherche et de purge**. Pour plus d’informations sur l’ajout d’utilisateurs au groupe de rôles, consultez la rubrique [Attribuer des accès utilisateurs au Centre de sécurité et conformité](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou disposer du rôle de gestion de **Recherche de conformité**. Pour supprimer des messages, vous devez être membre du groupe de rôles de **gestion de l’organisation** ou disposer du rôle de gestion de **recherche et de purge**. Pour plus d’informations sur l’ajout d’utilisateurs au groupe de rôles, consultez la rubrique [Attribuer des accès utilisateurs au Centre de sécurité et conformité](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
 - Pour supprimer des messages, vous devez utiliser le centre de sécurité et conformité PowerShell. Pour des instructions sur la façon de se connecter, consultez [Etape 2](#step-2-connect-to-security--compliance-center-powershell).
     
-- Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et de suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas destinée à nettoyer les boîtes aux lettres des utilisateurs. Pour supprimer plus de 10 éléments, vous pouvez utiliser la commande **Search-Mailbox -DeleteContent** dans Exchange Online PowerShell. Voir [Recherche et suppression de messages – Aide de l’administrateur](search-for-and-delete-messagesadmin-help.md).
+- Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et de suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas destinée à nettoyer les boîtes aux lettres des utilisateurs. Pour supprimer plus de 10 éléments, vous pouvez utiliser la commande **Search-Mailbox -DeleteContent** dans Exchange Online PowerShell. Voir [Rechercher et supprimer des messages](search-for-and-delete-messagesadmin-help.md).
     
 - Le nombre maximal de boîtes aux lettres dans lesquelles vous pourrez supprimer des éléments à l’aide d’une action de recherche et de purge est de 50 000, dans le cadre d’une Recherche de contenu. Si la Recherche de contenu (que vous créez à l'[étape 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) contient plus de 50 000 boîtes aux lettres sources, l’action de purge (que vous créez à l’étape 3) échouera. Voir la section [Plus d’informations](#more-information) pour en savoir plus sur l’exécution d’une opération de recherche et de purge sur plus de 50 000 boîtes aux lettres. 
     
@@ -82,13 +82,13 @@ Voici deux exemples de requêtes pour rechercher des messages électroniques sus
   
 - Cette requête renvoie les messages qui ont été reçus par les utilisateurs entre le 13 et le 14 avril 2016, et qui contiennent les mots « action » et « obligatoire » dans l’objet.
     
-    ```
+    ```powershell
     (Received:4/13/2016..4/14/2016) AND (Subject:'Action required')
     ```
-   
+
 - Cette requête renvoie les messages qui ont été envoyés par chatsuwloginsset12345@outlook.com et contenant l’expression exacte « Mettez à jour vos informations de compte » dans l’objet.
     
-    ```
+    ```powershell
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
@@ -104,13 +104,13 @@ Après avoir créé et affiné une Recherche de contenu pour renvoyer le message
   
 Dans l’exemple suivant, la commande supprime temporairement les résultats de recherche renvoyés par une Recherche de contenu nommée « Supprimer le message d’hameçonnage ». 
 
-```
+```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
 Pour supprimer définitivement les éléments renvoyés par la recherche de contenu « Supprimer le message d’hameçonnage », exécutez la commande suivante :
 
-```
+```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
@@ -122,7 +122,7 @@ Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.micro
 
 - **Comment obtenir l’état de l’opération de recherche et de suppression ?**
 
-    Exécutez la commande **Get-ComplianceSearchAction** pour obtenir l’état de l’opération de suppression. Notez que l’objet créé lorsque vous exécutez le cmdlet **New-ComplianceSearchAction** est nommé à l’aide de ce format : `<name of Content Search>_Purge`. 
+    Exécutez la commande **Get-ComplianceSearchAction** pour obtenir l’état de l’opération de suppression. L’objet créé lorsque vous exécutez le cmdlet **New-ComplianceSearchAction** est nommé à l’aide de ce format : `<name of Content Search>_Purge`. 
     
 - **Que se passe-t-il lorsque vous avez supprimé un message ?**
 
