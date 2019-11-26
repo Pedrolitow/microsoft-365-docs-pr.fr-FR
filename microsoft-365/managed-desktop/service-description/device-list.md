@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 64b5ffab59b19945b20bc614f09963ca43027afe
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 70be19947e31d8c2b918d12887d63b1b360cf37b
+ms.sourcegitcommit: 3df6b6092542d466661c0fa08b7bfe7cec441b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715506"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254373"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau gérés Microsoft 
 
@@ -47,10 +47,10 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV | 18 juillet 2020 | 18 juillet 2023 |
 | [HP EliteOne 800 G4 23.8 dans AIO](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV | 18 juillet 2020 | 18 juillet 2023 |
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV, appareil photo infrarouge ou lecteur d’empreintes digitales requis | 6 juin 2020 | 6 juin 2023 |
-| [Surface Book 2](https://www.microsoft.com/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 512 Go/Intel i7/16 Go de RAM | écran 15 pouces | 16 novembre 2019 | 16 novembre 2022 |
-| [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel 4415Y/8 Go de RAM | Aucun | 2 août 2020 | 2 août 2023 |
-| [Ordinateur portable de surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 256 Go/Intel i5/8 Go de RAM | Aucun | 16 octobre 2020 | 16 octobre 2023 |
-| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 Go/Intel i5/8 Go de RAM | Aucun | 16 octobre 2020 | 16 octobre 2023 |
+| [Surface Book 2](https://www.microsoft.com/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 256 Go/Intel i5/8 Go de RAM | écran 15 pouces | 16 novembre 2019 | 16 novembre 2022 |
+| [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel 4415Y/8 Go de RAM | Aucune | 2 août 2020 | 2 août 2023 |
+| [Ordinateur portable de surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 Go/Intel i5/8 Go de RAM | Aucune | 16 octobre 2020 | 16 octobre 2023 |
+| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel i5/8 Go de RAM | Aucune | 16 octobre 2020 | 16 octobre 2023 |
 
 
 

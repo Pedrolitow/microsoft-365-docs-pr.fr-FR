@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204255"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257549"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -137,7 +137,7 @@ Les clients EOP bénéficient d’une protection antiphishing de base comme déc
 |EnableAuthenticationSafetyTip|True|True|Ce paramètre est disponible uniquement dans PowerShell|
 |EnableAuthenticationSoftPassSafetyTip|False|Vrai|Ce paramètre est disponible uniquement dans PowerShell|
 |EnableSuspiciousSafetyTip|False|Vrai|Ce paramètre est disponible uniquement dans PowerShell|
-|TreatSoftPassAsAuthenticated|Vrai|Faux|Ce paramètre est disponible uniquement dans PowerShell|
+|TreatSoftPassAsAuthenticated|Vrai|False|Ce paramètre est disponible uniquement dans PowerShell|
 
 |Nom de la fonctionnalité de sécurité des paramètres avancés|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
@@ -164,24 +164,3 @@ Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables|Désactiv�
 |Redirection de la pièce jointe sur la détection|Activé|Activé|Rediriger vers l’adresse de messagerie d’un administrateur de sécurité qui sait comment déterminer si la pièce jointe est un programme malveillant ou non|
 |Réponse aux pièces jointes approuvées ATP si l’analyse contre les pièces jointes expire ou si une erreur se produit|Activé|Activé||
 
-## <a name="miscellaneous-settings"></a>Paramètres divers
-
-Ces paramètres couvrent un éventail de fonctionnalités qui ne rentrent pas nécessairement dans des catégories spécifiques ci-dessus. Certains de ces paramètres sont externes au centre de sécurité & conformité.
-
-Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
-|---------|---------|---------|---------|
-|[Configurer SPF dans Office 365 pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Oui|Oui||
-|[Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md)|Oui|Oui||
-|[Utiliser DMARC pour valider les e-mails dans Office 365](use-dmarc-to-validate-email.md)|Oui|Oui|Utilisez action = Quarantine for standard et action = Reject pour strict.|
-|Déployer le complément de rapport de message pour améliorer la création de rapports d’utilisateur final sur les E-mails suspects|Oui|Oui||
-|Planifier les programmes malveillants et le courrier indésirable|Oui|Oui||
-|Le transfert automatique vers les domaines externes ne doit pas être autorisé ni surveillé|Oui|Oui||
-|L’audit unifié doit être activé|Oui|Oui||
-|Connectivité IMAP à la boîte aux lettres|Désactivé|Désactivé||
-|Connectivité POP à la boîte aux lettres|Désactivé|Désactivé||
-|Envoi authentifié SMTP vers la boîte aux lettres|Désactivé|Désactivé||
-|Connectivité EWS à la boîte aux lettres|Désactivé|Désactivé||
-|Connectivité PowerShell|Désactivé|Désactivé||
-|Utiliser l’intelligence d’usurpation d’identité pour les expéditeurs de liste d’autorisation dès que possible|Oui|Oui||
-|Blocage du périmètre basé sur l’annuaire (DBEB)|Activé|Activé|Type de domaine = faisant autorité|
-|[Configurer l’authentification multifacteur pour tous les comptes d’administrateur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Activé|Activé||
