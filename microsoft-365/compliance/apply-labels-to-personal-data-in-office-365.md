@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment utiliser des étiquettes Office dans le cadre de votre plan de protection RGPD.
-ms.openlocfilehash: 518e5352861242bfbf9220f876edcb4b616493df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 023d6e2d3db1b6ec844801598df1925f3660217f
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078943"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256911"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Application d’étiquettes à des données personnelles dans Office 365
 
@@ -78,7 +78,7 @@ Concernant l’accessibilité, le tableau suivant fournit les mêmes exemples da
 <p>... à des documents avec cette étiquette...</p>
 <p>Données client</p></td>
 <td align="left"><p>Avertir quand des fichiers avec les attributs suivants...</p>
-<p>Sélectionnez au moins un attribut : attribut PII prédéfini, type d’informations confidentielles Office 365, étiquette de sensibilité (AIP), expression personnalisée</p>
+<p>Sélectionnez au moins un attributs : attribut PII prédéfini, type d’informations confidentielles Office 365, étiquette de sensibilité (AIP), expression personnalisée</p>
 <p>. . . dans des applications SaaS approuvées sont partagés en dehors de l’organisation</p><p>Remarque : les étiquettes de rétention ne sont actuellement pas prises en charge dans Sécurité des applications cloud.</td>
 </tr>
 <tr class="even">
@@ -119,9 +119,9 @@ Les étiquettes attribuées automatiquement peuvent être mises à jour par de n
 
 Assurez-vous que le plan d’implémentation des étiquettes inclut :
 
--   la priorisation de l’ordre dans lequel les stratégies d’application automatique sont créées ;
+- la priorisation de l’ordre dans lequel les stratégies d’application automatique sont créées ;
 
--   l’octroi de suffisamment de temps pour que les étiquettes soient automatiquement appliquées avant de les déployer pour que les utilisateurs puissent les appliquer manuellement. L’application des étiquettes à tout le contenu remplissant les conditions peut durer sept jours au maximum.
+- l’octroi de suffisamment de temps pour que les étiquettes soient automatiquement appliquées avant de les déployer pour que les utilisateurs puissent les appliquer manuellement. L’application des étiquettes à tout le contenu remplissant les conditions peut durer sept jours au maximum.
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>Exemple de priorité permettant de créer des stratégies d’application automatique
 
@@ -198,8 +198,8 @@ L’image suivante montre comment créer une étiquette à application automatiq
 
 Dans cette illustration :
 
--   L’étiquette « Données client » est créée.
+- L’étiquette « Données client » est créée.
 
--   Les types d’informations sensibles souhaitée pour le RGPD sont répertoriées : numéro national belge, numéro de carte de crédit, numéro de carte d’identité en Croatie, ID national en Finlande
+- Les types d’informations sensibles souhaitée pour le RGPD sont répertoriées : numéro national belge, numéro de carte de crédit, numéro de carte d’identité en Croatie, ID national en Finlande
 
--   La création d’une stratégie d’application automatique attribue l’étiquette « Données client » à tous les fichiers qui incluent un des types d’informations sensibles que vous ajoutez à la stratégie.
+- La création d’une stratégie d’application automatique attribue l’étiquette « Données client » à tous les fichiers qui incluent un des types d’informations sensibles que vous ajoutez à la stratégie.
