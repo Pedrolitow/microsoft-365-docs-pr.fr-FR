@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: acaafcfea7e62ee4671c0ae63461fbb523c5a0f0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 562735b72e3f191dab6c6f2fa0a317634667e22c
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078969"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256721"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Ajouter ou supprimer des membres à partir d’un cas
 
-Vous pouvez ajouter ou supprimer des membres pour gérer les personnes qui peuvent accéder au cas. Notez que les utilisateurs ajoutés aux groupes de rôles Reviewer ou gestionnaire de découverte électronique peuvent être ajoutés en tant que membres du cas. Notez que le gestionnaire eDiscovery qui a créé le cas est automatiquement ajouté en tant que membre.
+Vous pouvez ajouter ou supprimer des membres pour gérer les personnes qui peuvent accéder au cas. Les utilisateurs ajoutés aux groupes de rôles Reviewer ou gestionnaire de découverte électronique peuvent être ajoutés en tant que membres du cas. Le gestionnaire eDiscovery qui a créé le cas est automatiquement ajouté en tant que membre.
 
 1. À partir de la page **Advanced eDiscovery** , accédez à votre cas.
 
@@ -31,13 +31,13 @@ Vous pouvez ajouter ou supprimer des membres pour gérer les personnes qui peuve
 
 3. Cliquez sur **Mise à jour**.
 
-4. Sous **gérer les membres**, cliquez sur Ajouter une icône Ajouter pour ajouter des membres à la demande de devis. Vous pouvez également choisir d’ajouter un groupe de rôles à la demande de devis. Sous **gérer les groupes de rôles**, cliquez sur Ajouter une icône Ajouter.
-    N’oubliez pas que les groupes de rôles contrôlent l’autorisation d’accès au cas. Cela signifie que vous ne pouvez affecter que des relecteurs, des gestionnaires eDiscovery ou des groupes de rôles personnalisés avec le rôle de gestion des cas.
+4. Sous **gérer les membres**, sélectionnez Ajouter une icône Ajouter pour ajouter des membres au cas. Vous pouvez également choisir d’ajouter un groupe de rôles à la demande de devis. Sous **gérer les groupes de rôles**, sélectionnez Ajouter une icône Ajouter.
+    N’oubliez pas que les groupes de rôles contrôlent l’autorisation d’accès au cas. Cela signifie que vous pouvez uniquement affecter un réviseur, un gestionnaire eDiscovery ou des groupes de rôles personnalisés avec le rôle de gestion des cas.
 
 5. Dans la liste des personnes ou des groupes de rôles qui peuvent être ajoutés en tant que membres de la case, activez la case à cocher en regard des noms des personnes ou des groupes de rôles que vous souhaitez ajouter.
 
-6. Une fois que vous avez sélectionné les personnes ou les groupes de rôles à ajouter en tant que membres du groupe, cliquez sur **Ajouter**.
+6. Une fois que vous avez sélectionné les personnes ou les groupes de rôles à ajouter en tant que membres du groupe, sélectionnez **Ajouter**.
 
-7. Dans **gérer ce cas**, cliquez sur **Enregistrer** pour enregistrer la nouvelle liste de membres de cas.
+7. Dans **gérer ce cas**, sélectionnez **Enregistrer** pour enregistrer la nouvelle liste de membres de cas.
 
-8. Cliquez sur **Enregistrer** pour enregistrer la nouvelle liste de membres de cas.
+8. Sélectionnez **Enregistrer** pour enregistrer la nouvelle liste de membres de cas.

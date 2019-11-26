@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 60436db997d75d92e7d17fc27f66eb3944b419d8
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078945"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256901"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analyser les données d’un ensemble de vérification dans Advanced eDiscovery
 
@@ -43,7 +43,7 @@ Pour analyser les données d’un ensemble de révision :
 
 Vous pouvez vérifier la progression de l’analyse sous l’onglet **tâches** du cas.
 
- Une fois l’analyse terminée, vous pouvez afficher le rapport d’analyse, exécuter des requêtes dans votre jeu de révisions sur les sorties de l’analyse (voir la rubrique relative à la [recherche dans l’ensemble de révision](review-set-search.md)) et afficher les documents connexes d’un document donné (voir [Review Data in Review Set](reviewing-data-in-review-set.md)).
+ Une fois l’analyse terminée, vous pouvez afficher le rapport d’analyse, exécuter des requêtes dans votre ensemble de révision sur les sorties de l’analyse (voir la rubrique relative à la [recherche dans l’ensemble de révision](review-set-search.md)) et consulter les documents connexes d’un document donné (voir [Review Data in Review Set](reviewing-data-in-review-set.md)).
 
 ## <a name="analytics-report"></a>Rapport d’analyse
 

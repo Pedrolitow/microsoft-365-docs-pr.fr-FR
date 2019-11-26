@@ -3,7 +3,7 @@ title: Synchronisation de hachage de mot de passe pour votre environnement de te
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer la connexion et la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: e1055f9a4a64c05f55d4a5446f637ba195c0377c
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ef08fcf59602d7812875015971d00a34526576d6
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757731"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202455"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -54,9 +54,9 @@ Cette configuration se compose des éléments suivants :
 
 Durant cette phase, vous allez créer un domaine DNS public et l’ajouter à votre abonnement.
 
-Tout d’abord, utilisez votre fournisseur d’enregistrement DNS public pour créer un nom de domaine DNS public en fonction de votre nom de domaine actuel et ajoutez-le à votre abonnement Office 365. Nous vous recommandons d’utiliser le nom **testlab.**\<votre domaine public>. Par exemple, si votre nom de domaine public est <span>**contoso</span>.com**, ajoutez le nom de domaine public **<span>testlab</span>.contoso.com**.
+Utilisez tout d’abord votre fournisseur d’enregistrement DNS public pour créer un nom de domaine DNS public basé sur votre nom de domaine actuel et ajoutez-le à votre abonnement. Nous vous recommandons d’utiliser le nom **testlab.**\<votre domaine public>. Par exemple, si votre nom de domaine public est **<span>contoso</span>.com**, ajoutez le nom de domaine public **<span>testlab</span>.contoso.com**.
   
-Vous pouvez ensuite ajouter les **testlab.**\<votre domaine public > domaine à votre abonnement Office 365 d’évaluation ou payant par le biais le processus d’inscription domaine. Cela se compose de l’ajout d’autres enregistrements DNS pour le **testlab.** \<votre domaine public > domaine. Pour plus d’informations sur ce processus, voir [Ajouter vos utilisateurs et votre domaine à Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
+Vous pouvez ensuite ajouter les **testlab.**\<votre domaine public > domaine à votre abonnement Microsoft 365 ou Office 365 d’évaluation ou payant par le biais du processus d’inscription domaine. Cela se compose de l’ajout d’autres enregistrements DNS pour le **testlab.** \<votre domaine public > domaine. Pour plus d’informations, voir [Ajouter un domaine à Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain). 
 
 Voici la configuration finale.
   
@@ -70,7 +70,7 @@ Cette configuration se compose des éléments suivants :
 Notez comment se présente le domaine testlab.\<votre nom de domaine public> :
 
 - Il est pris en charge par les enregistrements DNS publics.
-- Il est enregistré dans vos abonnements Office 365 et EMS.
+- Enregistré dans votre abonnement Microsoft 365 ou Office 365.
 - Le domaine Windows Server AD se trouve sur votre intranet simulé.
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>Phase 3 : installation d’Azure AD Connect sur APP1
@@ -97,7 +97,7 @@ Tout d’abord, installez et configurez Azure AD Connect sur APP1.
     
 6. Sur la page **Configuration rapide**, cliquez sur **Utiliser la configuration rapide**.
     
-7. Sur la page **Connexion à Azure AD**, tapez le nom de votre compte d’administrateur général Office 365 sous **Nom d’utilisateur** et le mot de passe correspondant sous **Mot de passe**, puis cliquez sur **Suivant**.
+7. Sur la page **Connexion à Azure AD**, saisissez le nom de votre compte d’administrateur général sous **Nom d’utilisateur** et le mot de passe correspondant sous **Mot de passe**, puis cliquez sur **Suivant**.
     
 8. Sur la page **Connexion à AD DS**, tapez **TESTLAB\\Utilisateur1** sous **Nom d’utilisateur**, tapez le mot de passe correspondant sous **Mot de passe**, puis cliquez sur **Suivant**.
     
@@ -111,19 +111,19 @@ Tout d’abord, installez et configurez Azure AD Connect sur APP1.
     
     Notez le compte nommé **Utilisateur 1**. Ce compte provient du domaine TESTLAB AD DS et prouve que la synchronisation d’annuaires a fonctionné.
     
-13. Cliquez sur le compte **Utilisateur1**. Pour les licences de produits, cliquez sur **Modifier**.
+13. Cliquez sur le compte **utilisateur1**, puis cliquez sur **Licences et applications**.
     
-14. Dans **Licences de produits**, sélectionnez votre pays, puis cliquez sur le contrôle **Inactif** pour **Office 365 Entreprise E5** (en le définissant sur **Actif**). Faites de même avec la licence **Enterprise Mobility + Security E5**. 
+14. Dans **Licences de produits**, sélectionnez votre lieu (le cas échéant), désactivez la licence **Office 365 E5** et activez la licence **Microsoft 365 E5**. 
 
 15. Cliquez sur **Enregistrer** en bas de la page, puis sur **Fermer**.
     
-Ensuite, vérifiez si vous pouvez vous connecter à votre abonnement Office 365 avec le <strong>nom d’utilisateur utilisateur1@testlab.</strong>\<votre nom de domaine> du compte Utilisateur1.
+Ensuite, vérifiez si vous pouvez vous connecter à votre abonnement avec le nom d’utilisateur <strong>user1@testlab.</strong>\<votre nom de domaine> du compte User1.
 
-1. Dans APP1, déconnectez-vous d’Office 365, puis reconnectez-vous avec un autre compte.
+1. Dans APP1, déconnectez-vous, puis reconnectez-vous avec un compte différent.
 
 2. Quand vous êtes invité à saisir le nom d’utilisateur et le mot de passe, indiquez <strong>utilisateur1@testlab.</strong>\<votre nom de domaine> et le mot de passe de l’Utilisateur1. Vous serez connecté en tant qu’Utilisateur1. 
  
-Notez que même si les utilisateurs User1 disposent des autorisations d’administrateur de domaine pour le domaine TESTLAB AD DS, il n’est pas un administrateur général pour Office 365. Par conséquent, vous ne verrez pas l’icône**Administrateur**comme une option. 
+Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’administrateur pour le domaine TESTLAB AD DS, il n’est pas un administrateur général. Par conséquent, vous ne verrez pas l’icône**Administrateur**comme une option. 
 
 Voici la configuration finale.
 
@@ -131,7 +131,7 @@ Voici la configuration finale.
 
 Cette configuration se compose des éléments suivants :  
   
-- Les abonnements à la version payante ou d’évaluation Microsoft 365 E5 et Office 365 E5 avec le domaine DNS TESTLAB.\<votre nom de domaine> enregistré.
+- Les abonnements en version payante ou d’évaluation Microsoft 365 E5 et Office 365 E5 avec le domaine DNS TESTLAB.\<votre nom de domaine> enregistré.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine TESTLAB AD DS avec le client Azure AD de votre abonnement Microsoft 365 ou Office 365 de manière périodique.
 - Le compte Utilisateur1 dans le domaine TESTLAB  AD DS a été synchronisé avec le client Azure AD.
 

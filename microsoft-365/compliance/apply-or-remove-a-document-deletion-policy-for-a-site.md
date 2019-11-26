@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Les organisations sont souvent soumises à des réglementations de conformité, juridiques ou autres qui les obligent à conserver des documents pendant une certaine période de temps. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique. Pour cette raison, votre organisation peut avoir créé une stratégie de suppression de documents pour votre site (par exemple, il se pourrait que les documents commerciaux généraux doivent être supprimés cinq ans après leur création).
-ms.openlocfilehash: 3f5228c26cc4e12c129a57e2141e3eea50d029a2
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: 2eaa864cda726e6e36625f81358da76856db7db4
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342957"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256761"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Application ou suppression d’une stratégie de suppression de documents pour un site
 
-Les organisations sont souvent soumises à des réglementations de conformité, juridiques ou autres qui les obligent à conserver des documents pendant une certaine période de temps. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique. Pour cette raison, votre organisation peut avoir créé une stratégie de suppression de documents pour votre site (par exemple, il se pourrait que les documents commerciaux généraux doivent être supprimés cinq ans après leur création).
+Les organisations sont souvent soumises à des réglementations de conformité, juridiques ou autres qui les obligent à conserver des documents pendant une certaine période de temps. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique. Pour cette raison, il se peut que votre organisation ait créé une stratégie de suppression&mdash;de documents pour votre site, par exemple, des documents professionnels généraux peuvent être requis pour être supprimés cinq ans après leur création.
   
 Selon votre organisation, une stratégie de suppression de documents peut être :
   
@@ -33,11 +33,11 @@ Selon votre organisation, une stratégie de suppression de documents peut être�
     
   - choisir une autre stratégie, le cas échéant ;
     
-  - refuser complètement la stratégie si elle n’est pas pertinente pour le contenu du site.
+  - Désactivez entièrement la stratégie si elle n’est pas pertinente pour le contenu du site.
     
 - **Ni obligatoire ni par défaut** Dans ce cas, aucune stratégie n’est appliquée automatiquement au site, et le propriétaire du site doit prendre des mesures pour en appliquer une. 
     
-Une stratégie de suppression de documents peut contenir plusieurs règles (par exemple, une règle peut exiger la suppression des documents un an après leur création, mais une autre règle peut exiger la suppression des documents un an après leur dernière modification). Si une stratégie contient plusieurs règles, vous pouvez sélectionner la règle qui s’applique le mieux à votre site. La règle de suppression s’appliquera à toutes les bibliothèques du site. Une seule stratégie et une seule règle peuvent être actives simultanément dans un site. À l’instar d’une stratégie, une règle peut être définie comme règle par défaut, afin d’être appliquée automatiquement lorsque la stratégie est appliquée.
+Une stratégie de suppression de documents peut contenir plusieurs règles&mdash;par exemple, une règle peut dire supprimer des documents un an après qu’ils ont été créés, mais une autre règle peut dire supprimer des documents un an après qu’ils ont été modifiés pour la dernière fois. Si une stratégie contient plusieurs règles, vous pouvez sélectionner la règle qui s’applique le mieux à votre site. La règle de suppression s’appliquera à toutes les bibliothèques du site. Une seule stratégie et une seule règle peuvent être actives simultanément dans un site. Comme une stratégie, une règle peut être définie par défaut de sorte qu’elle soit appliquée automatiquement lorsque la stratégie est appliquée.
   
 Enfin, les stratégies de suppression de documents sont héritées. Lorsque vous sélectionnez une stratégie ou une règle pour votre site, cette sélection est héritée par tous les sous-sites, bien que le propriétaire d’un sous-site puisse annuler l’héritage en sélectionnant une stratégie ou une règle différente. Lorsque vous sélectionnez une stratégie ou une règle, tenez compte du contenu des sous-sites sous votre site.
   
@@ -85,7 +85,7 @@ En tant que propriétaire de site ou propriétaire de collection de sites, votre
   
   - **Pour désactiver une stratégie** Choisissez **opt-out : do Remarque Delete** \> **Save**.
     
-    En tant que propriétaire du site, vous pouvez refuser une stratégie de suppression de documents si vous déterminez que la stratégie ne s’applique pas au contenu de votre site. Toutefois, vous ne pouvez pas refuser une stratégie qui a été marquée comme **Obligatoire**.
+    En tant que propriétaire de site, vous pouvez désactiver une stratégie de suppression de documents si vous estimez que la stratégie n’est pas applicable au contenu de votre site. Toutefois, vous ne pouvez pas désactiver une stratégie qui a été marquée comme **obligatoire**.
     
     ![Option de désactivation](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
@@ -99,7 +99,7 @@ Un site peut utiliser d’autres stratégies pour la conservation et la suppress
     
 Si vous appliquez une stratégie de suppression de documents à un site qui utilise déjà des stratégies de type de contenu ou des stratégies de gestion des informations pour une liste ou une bibliothèque, ces stratégies sont ignorées alors que la stratégie de suppression de documents est appliquée. Si d’autres stratégies sont ignorées, le message « le contenu sur ce site utilise les stratégies de suppression de documents » s’affiche.
   
-Cela signifie que vous devez planifier qu’un site n’utilise que des stratégies destinées à du contenu structuré (stratégies de gestion des informations et stratégies de type de contenu) ou à du contenu non structuré (stratégies de suppression de documents), et non les deux. Si vous refusez une stratégie de suppression de documents, l’avertissement ne s’affiche pas et d’autres types de stratégies continueront à fonctionner.
+Cela signifie que vous devez planifier qu’un site n’utilise que des stratégies destinées à du contenu structuré (stratégies de gestion des informations et stratégies de type de contenu) ou à du contenu non structuré (stratégies de suppression de documents), et non les deux. Si vous désactivez une stratégie de suppression de documents, l’avertissement ne s’affichera pas et d’autres types de stratégies continueront à fonctionner.
   
 Les stratégies de site ne sont pas affectées par les stratégies de suppression de documents.
   

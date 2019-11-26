@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test léger destiné aux tests Microsoft 365 Entreprise.
-ms.openlocfilehash: fce612000fac79fe9552fa9882d6c48fdacda1c2
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 6f49982fe71196f3c147c1638b402ee63bb861c1
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694121"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202305"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuration de base légère
 
@@ -55,47 +55,19 @@ Pour démarrer votre abonnement d’évaluation Office 365 E5, vous avez beso
 
 1. Ouvrez le navigateur Internet sur votre ordinateur, puis accédez à [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
-2. Sur la page **Bienvenue, nous allons faire connaissance**, indiquez les informations suivantes :
-    
-  - votre emplacement physique ;
-    
-  - le prénom et le nom utilisés pour votre nouveau compte Microsoft ;
-    
-  - votre nouvelle adresse de compte de messagerie ;
-    
-  - un numéro de téléphone professionnel ;
-    
-  - le nom de votre entreprise fictive ;
-    
-  - la taille de votre entreprise (250 à 999 personnes).
-    
-3. Cliquez sur **Encore une dernière étape**.
-    
-4. Sur la page **Créer votre identifiant utilisateur**, entrez un nom d’utilisateur dérivé de votre nouvelle adresse de messagerie, le nom de votre entreprise fictive après le signe @ (supprimez tous les espaces dans le nom), puis un mot de passe (deux fois) pour ce nouveau compte Office 365. 
-    
-    Enregistrez le mot de passe saisi dans un emplacement sécurisé.
-    
-    Enregistrez le nom de votre entreprise fictive, ou **nom de l’organisation**, ici : ![](./media/Common-Images/TableLine.png)
-    
-5. Cliquez sur **Créer mon compte**.
-    
-6. Sur la page **Prouvez que vous n’êtes pas un robot.**, tapez le numéro de votre téléphone compatible avec du texte, puis cliquez sur **M’envoyer un SMS**.
-    
-7. Saisissez le code de vérification qui vous été envoyé par message, puis cliquez sur **Suivant**.
-    
-8. Enregistrez l’URL de la page de connexion ici (sélectionnez-la et copiez-la) : ![](./media/Common-Images/TableLine.png)
-    
-9. Enregistrez l’identifiant utilisateur ici (sélectionnez-le et copiez-le) : ![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    Cette valeur correspond au **nom de l’administrateur général Office 365**.
-    
-10. Cliquez sur le lien **Nous sommes prêts** lorsqu’il s’affiche.
-    
-11. Sur la page suivante, attendez qu’Office 365 termine la configuration et que tous les titres soient visibles.
-    
-Vous devriez voir la page principale du portail Office 365 à partir de laquelle vous pouvez accéder aux services Office et au Centre d’administration Microsoft 365.
+2. Sur la page **Merci d’avoir choisi Office 365 E5**, spécifiez votre nouvelle adresse de compte de messagerie à l’étape 1.
+3. À l’étape 2 du processus d’abonnement d’évaluation, tapez les informations demandées, puis procédez à la vérification.
+4. À l’étape 3, tapez un nom d’organisation, puis un nom de compte qui sera l’administrateur général de l’abonnement. 
+5. À l’étape 4, enregistré l’URL de la page de connexion ici (sélectionnez-la et copiez-la) : ![](./media/Common-Images/TableLine.png) 
+6. Enregistrez l’identifiant utilisateur ici : ![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+   Enregistrez le mot de passe saisi dans un emplacement sécurisé.
+   Cette valeur correspond au **nom de l’administrateur général Office 365**.
+8. Sélectionnez **Configurer**.
+9. Dans la configuration d’Office 365 E5, cliquez sur **Continuer à utiliser *votre organisation*.onmicrosoft.com pour la messagerie et la connexion**, puis cliquez sur **Quitter et continuer plus tard**.
+
+Le Centre d’administration Microsoft 365 doit s’afficher.
   
-Vous avez créé un abonnement d’évaluation d’Office 365 pour que votre environnement de développement/test ait un client Azure AD distinct de tout abonnement payant que vous utilisez actuellement. Cette séparation signifie que vous pouvez ajouter et supprimer des utilisateurs et groupes dans le client test sans incidence sur vos abonnements de production.
+Vous avez créé un abonnement d’évaluation Office 365 pour que votre environnement de développement/test ait un client Azure AD distinct de tout abonnement payant actuellement utilisé. Cette séparation signifie que vous pouvez ajouter et supprimer des utilisateurs et groupes dans le client test sans incidence sur vos abonnements de production.
     
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>Phase 2 : configuration de votre abonnement d’évaluation Office 365
 
@@ -103,7 +75,7 @@ Durant cette phase, configurez votre abonnement Office 365 en y ajoutant des ut
   
 Suivez les instructions dans [Se connecter à Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) pour vous connecter à votre abonnement Office 365 avec le module Graph Azure Active Directory PowerShell à partir de votre ordinateur.
     
-Dans la boîte de dialogue Demande d’informations d’identification Windows PowerShell, saisissez le nom de l’administrateur général Office 365 (exemple : jdoe@contosotoycompany.onmicrosoft.com) et le mot de passe.
+Dans la boîte de dialogue **Demande d’informations d’identification Windows PowerShell**, saisissez le nom de l’administrateur général Office 365 (exemple : jdoe@contosotoycompany.onmicrosoft.com) et le mot de passe.
   
 Entrez le nom de votre organisation (exemple : contosotoycompany) et le code de pays à deux caractères pour indiquer votre emplacement, ainsi qu’un mot de passe de compte commun, puis exécutez les commandes suivantes à partir de l’invite PowerShell :
 
@@ -139,7 +111,7 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 > [!NOTE]
-> L’utilisation ici d’un mot de passe courant est pour l’automatisation et la simplicité de configuration pour un environnement de développement et de test. Bien évidemment, cela est hautement déconseillé pour les abonnements de production. 
+> L’utilisation ici d’un mot de passe courant est destinée à l’automatisation et à la simplification de la configuration pour un environnement de test. Bien évidemment, cela est hautement déconseillé pour les abonnements de production. 
 
 ### <a name="record-key-information-for-future-reference"></a>Enregistrer les informations clés pour future référence
 
@@ -147,11 +119,11 @@ Nous vous recommandons d’imprimer cet article afin de consigner les informatio
 
 Enregistrez les valeurs suivantes :
   
-- Nom de l’administrateur général Office 365 : ![](./media/Common-Images/TableLine.png).onmicrosoft.com (indiqué à l’étape 9 de la phase 2)
+- Nom de l’administrateur général Office 365 : ![](./media/Common-Images/TableLine.png).onmicrosoft.com (indiqué à l’étape 6 de la phase 1)
     
     Enregistrez également le mot de passe de ce compte dans un emplacement sécurisé.
     
-- Nom de l’organisation de l’abonnement d’évaluation : ![](./media/Common-Images/TableLine.png) (indiqué à l’étape 4 de la phase 2)
+- Nom de l’organisation de l’abonnement d’évaluation : ![](./media/Common-Images/TableLine.png) (indiqué à l’étape 4 de la phase 1)
     
 - Pour répertorier les comptes pour Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5, exécutez la commande suivante à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
     
@@ -172,9 +144,9 @@ Enregistrez les valeurs suivantes :
     Enregistrez également les mots de passe communs de ces comptes dans un emplacement sécurisé.
    
 
-### <a name="using-an-office-365-devtest-environment"></a>Utiliser un environnement de développement/test Office 365
+### <a name="using-an-office-365-test-environment"></a>Utilisation d’un environnement de test Office 365
 
-Si vous avez simplement besoin d’un environnement Office 365 pour le développement et le test, vous pouvez vous arrêter ici. 
+Si vous avez simplement besoin d’un environnement de test Office 365, vous pouvez vous arrêter ici. 
 
 Pour plus d’informations sur les guides de labo de test, voir [les guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md) pour Office 365 et Microsoft 365.
   
@@ -188,21 +160,23 @@ Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attr
     
 2. Sur la page **Centre d’administration Microsoft 365**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
     
-3. Sur la page**acheter des services**, recherchez l’élément **Microsoft 365 E5**. Pointez votre souris dessus et cliquez sur **Démarrer l’essai gratuit**.
+3. Sur la page **Acheter des services**, cliquez sur **Microsoft 365 E5**, puis cliquez sur **Obtenir une version d’évaluation gratuite**.
 
-4. Sur la page **version d’évaluation de Microsoft 365 E5**, choisissez de recevoir un SMS ou un appel, entrez votre numéro de téléphone, puis cliquez sur **envoyer un SMS** ou **m’appeler**.
+4. Sur la page **version d’évaluation de Microsoft 365 E5**, choisissez de recevoir un SMS ou un appel, entrez votre numéro de téléphone, puis cliquez sur **envoyer un SMS** ou **m’appeler**. Effectuez la vérification.
 
 5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
 
 6. Dans la page **Réception de la commande**, cliquez sur **Continuer**.
 
-7. Dans le centre d’administration Microsoft 365, cliquez sur **utilisateurs actifs**et votre compte d’administrateur.
+7. Dans l’onglet Centre d’administration Microsoft 365, cliquez sur **Utilisateurs > Utilisateurs actifs**.
 
-8. Cliquez sur **modifier** pour **licences de produits**.
+8. Dans **Utilisateurs actifs**, cliquez sur votre compte d’administrateur.
 
-9. Désactivez la licence pour Office 365 Entreprise E5 et activer la licence pour Microsoft 365 E5.
+9. Cliquez sur **Licences et applications**.
 
-10. Cliquez sur **Enregistrer > Fermer > Fermer**.
+10. Désactivez la licence pour Office 365 Entreprise E5 et activez la licence pour Microsoft 365 E5.
+
+11. Cliquez sur **Enregistrer les modifications** puis fermez le volet informations sur le compte d’utilisateur.
 
 Ensuite, répétez les étapes 8 et 11 de la procédure précédente pour tous vos autres comptes (Utilisateur2, Utilisateur3, Utilisateur4 et Utilisateur5).
   
@@ -216,7 +190,7 @@ Votre environnement de test comporte maintenant :
     
 Voici la configuration qui en résulte, avec ajout de Microsoft 365 E5, qui inclut Office 365 et Enterprise Security + Management (EMS).
   
-![Phase 2 de l’environnement de test Microsoft 365 Entreprise](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Phase 3 de l’environnement de test Microsoft 365 Entreprise](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## <a name="phase-4-create-a-windows-10-enterprise-computer"></a>Phase 4 : Création d’un ordinateur Windows 10 Entreprise
 

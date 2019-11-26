@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b5fabd3b0a1e6e1951143b1a3778ced4e01a6288
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 154273f4f55e48c959f601a00901e26e421db725
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078967"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257012"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>Ajouter ou supprimer des membres d’une enquête de données
 
@@ -29,15 +29,15 @@ Vous pouvez ajouter ou supprimer des membres pour gérer les personnes qui peuve
 
 2. Accédez à **paramètres** , puis sélectionnez « autorisations d’accès & ».
  
-3. Cliquez sur **Mise à jour**.
+3. Sélectionnez **Mettre à jour**.
  
-4. Sous **gérer les membres**, cliquez sur Ajouter une icône Ajouter pour ajouter des membres à l’enquête. Vous pouvez également choisir d’ajouter un groupe de rôles à l’enquête. Sous **gérer les groupes de rôles**, cliquez sur Ajouter une icône Ajouter. 
+4. Sous **gérer les membres**, sélectionnez Ajouter une icône Ajouter pour ajouter des membres à l’enquête. Vous pouvez également choisir d’ajouter un groupe de rôles à l’enquête. Sous **gérer les groupes de rôles**, sélectionnez Ajouter une icône Ajouter. 
      N’oubliez pas que les groupes de rôles contrôlent l’autorisation d’accès à l’enquête. Cela signifie que vous pouvez uniquement ajouter des personnes qui sont affectées au groupe de rôles analyseur de données ou groupes de rôles personnalisés avec le rôle de gestion de l’enquête sur les données.
  
 5. Dans la liste des personnes ou des groupes de rôles qui peuvent être ajoutés en tant que membres de l’enquête, activez la case à cocher en regard des noms des personnes ou des groupes de rôles que vous souhaitez ajouter.
 
-6. Une fois que vous avez sélectionné les personnes ou les groupes de rôles à ajouter en tant que membres du groupe, cliquez sur **Ajouter**.
+6. Une fois que vous avez sélectionné les personnes ou les groupes de rôles à ajouter en tant que membres du groupe, sélectionnez **Ajouter**.
 
-7. Dans **gérer cette enquête**, cliquez sur **Enregistrer** pour enregistrer la nouvelle liste de membres d’enquête.
+7. Dans **gérer cette enquête**, sélectionnez **Enregistrer** pour enregistrer la nouvelle liste de membres d’enquête.
 
-8. Cliquez sur **Enregistrer** pour enregistrer la nouvelle liste de membres d’enquête.
+8. Sélectionnez **Enregistrer** pour enregistrer la nouvelle liste de membres d’enquête.

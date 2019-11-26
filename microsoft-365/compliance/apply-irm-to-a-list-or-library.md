@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pour contrôler et protéger les fichiers téléchargés à partir de listes ou de bibliothèques.
-ms.openlocfilehash: 82cbbf7fdea4a534c2bc73bf0f817d6fc3a249de
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: cd970f5e89a08de133511c99b8209b389f32cd87
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685876"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256811"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Appliquer la gestion des droits relatifs à l’information (IRM) à une liste ou une bibliothèque
 
@@ -70,7 +70,7 @@ Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pou
 |Exiger que les personnes vérifient leurs informations d’identification à intervalles spécifiques.  <br/> Sélectionnez cette option si vous souhaitez restreindre l’accès au contenu à une période de temps spécifiée. Si vous sélectionnez cette option, les licences d’émission de personnes pour accéder au contenu expireront après le nombre de jours spécifié, et les personnes seront obligées de retourner au serveur pour vérifier leurs informations d’identification et télécharger une nouvelle copie.  <br/> |Activez la case à cocher les **utilisateurs doivent vérifier leurs informations d’identification à l’aide de cet intervalle (jours)** , puis spécifiez le nombre de jours pendant lesquels vous souhaitez que le document soit affichable.  <br/> |
 | Empêcher les utilisateurs de télécharger des documents qui ne prennent pas en charge IRM sur cette liste ou bibliothèque.  <br/>  Si vous sélectionnez cette option, les utilisateurs ne pourront pas télécharger les types de fichiers suivants :  <br/>  Types de fichiers qui n’ont pas de logiciels de protection IRM correspondant installés sur tous les serveurs Web frontaux.  <br/>  Types de fichiers que SharePoint Server 2010 ne peut pas déchiffrer.  <br/>  Types de fichiers protégés par IRM dans un autre programme  <br/> |Activez la case à cocher **ne pas autoriser les utilisateurs à télécharger des documents qui ne prennent pas en charge IRM** .  <br/> |
 |Supprimez les autorisations restreintes de cette liste ou bibliothèque à une date spécifique.  <br/> |Activez la case à cocher **arrêter de restreindre l’accès à la bibliothèque à** , puis sélectionnez la date de votre choix.  <br/> |
-|Contrôlez l’intervalle de mise en cache des informations d’identification pour le programme sous licence pour ouvrir le document.  <br/> |Dans l' **intervalle définir la protection de groupe et les informations d’identification**, entrez theinterval pour mettre en cache les informations d’identification en nombre de jours.  <br/> |
+|Contrôlez l’intervalle de mise en cache des informations d’identification pour le programme sous licence pour ouvrir le document.  <br/> |Dans l' **intervalle définir la protection de groupe et les informations d’identification**, entrez l’intervalle de mise en cache des informations d’identification en nombre de jours.  <br/> |
 |Autoriser la protection de groupe afin que les utilisateurs puissent partager avec les membres du même groupe.  <br/> |Sélectionnez **autoriser la protection du groupe**, puis entrez le nom du groupe pour le partage.  <br/> |
    
 8. Une fois que vous avez terminé de sélectionner les options souhaitées, cliquez sur **OK**.
