@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les stratégies de protection contre la perte de données (DLP) pour protéger les données personnelles dans Office 365.
-ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e3f7bdc589b34da0aad8baabd5b54bcfd59f25b9
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708091"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256781"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Application d’une protection aux données personnelles dans Office 365
 
@@ -156,11 +156,11 @@ Description : Afficher des conseils de stratégie aux employés, avertir les é
 
 Tous les emplacements incluent :
 
--   SharePoint Online
+- SharePoint Online
 
--   Les comptes OneDrive Entreprise
+- Les comptes OneDrive Entreprise
 
--   Les boîtes aux lettres Exchange
+- Les boîtes aux lettres Exchange
 
 Étant donné que la recherche de contenu ne vous permet actuellement pas de tester les types d’informations sensibles dans les courriers électroniques, vous pouvez créer des stratégies distinctes pour Exchange avec un sous-ensemble de types d’informations sensibles dans chaque stratégie et surveiller le déploiement de ces stratégies.
 
