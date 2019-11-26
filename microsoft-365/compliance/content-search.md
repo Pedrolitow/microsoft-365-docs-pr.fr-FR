@@ -10,18 +10,19 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les groupes Office 365 et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: e3553ff2e3c8398ac4bc00258e41e8d9607b3639
-ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
+ms.openlocfilehash: ba3a8ffd495d58726c24ad7abd2e115d2e1c2b8b
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37334254"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39266123"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -37,7 +38,7 @@ Vous pouvez utiliser l’outil eDiscovery de la recherche de contenu dans le cen
     
 - Groupes Office 365
     
-Après avoir exécuté une recherche de contenu, le nombre d’emplacements de contenu et l’estimation du nombre de résultats de recherche sont affichés dans le profil de recherche. Vous pouvez également afficher rapidement des statistiques, telles que les emplacements de contenu qui ont le plus grand nombre d’éléments qui correspondent à la requête de recherche. Une fois que vous avez effectué une recherche, vous pouvez afficher un aperçu des résultats ou les exporter sur un ordinateur local.
+Après avoir exécuté une recherche de contenu, le nombre d’emplacements de contenu et l’estimation du nombre de résultats de recherche sont affichés dans les statistiques de recherche. Vous pouvez également afficher rapidement des statistiques, telles que les emplacements de contenu qui ont le plus grand nombre d’éléments qui correspondent à la requête de recherche. Une fois que vous avez effectué une recherche, vous pouvez afficher un aperçu des résultats ou les exporter sur un ordinateur local.
 
 ## <a name="create-a-search"></a>Créer une recherche
 
@@ -103,11 +104,10 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
 Pour accéder de nouveau à la recherche de contenu ou accéder aux recherches de contenu répertoriées sur la page **recherche de contenu**, sélectionnez la recherche, puis cliquez sur **Ouvrir**. 
   
 Pour effacer les résultats ou créer une autre recherche, cliquez sur ![ajouter une icône](media/O365-MDM-CreatePolicy-AddIcon.gif)**nouvelle recherche**. 
-
   
 ## <a name="preview-search-results"></a>Aperçu des résultats de la recherche
 
-Il y a deux paramètres de configuration pour afficher un aperçu des résultats de la recherche. Une fois que vous avez exécuté une nouvelle recherche ou ouvert une recherche existante, cliquez sur * * résultats individuels * * pour afficher les paramètres d’aperçu suivants : 
+Il y a deux paramètres de configuration pour afficher un aperçu des résultats de la recherche. Une fois que vous avez exécuté une nouvelle recherche ou ouvert une recherche existante, cliquez sur **Résultats individuels** pour afficher les paramètres d’aperçu suivants : 
   
 ![Paramètres aperçu des résultats de la recherche](media/83519477-1c85-4442-8886-481f186fd758.png)
   
@@ -133,7 +133,7 @@ Pour afficher les statistiques de recherche :
     
 2. Sur la page volante, cliquez sur **Ouvrir la requête**. 
     
-3. Dans la liste déroulante **résultats individuels**, cliquez sur**profil de recherche**.
+3. Dans la liste déroulante **Résultats individuels**, cliquez sur **Statistiques de recherche**.
     
 4. Dans la liste déroulante **type**, cliquez sur l’une des options suivantes selon les statistiques de recherche que vous voulez afficher. 
     
@@ -244,13 +244,12 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
     
 - Exécutez l'applet de commande **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’une équipe ou d’un groupe Office 365. Il s’agit d’un bon moyen pour obtenir l’URL du site associé à une équipe ou à un groupe. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Office365 nommé Senior Leadership Team : 
     
-  ```
+  ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
   PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
   SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
-  
   ```
 
     > [!NOTE]
@@ -260,7 +259,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
     
 - Pour obtenir la liste des membres d’une équipe ou d’un groupe Office 365, vous pouvez afficher les propriétés sur la page **Accueil \> Groupes** dans le centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell : 
     
-  ```
+  ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
   ```
 
@@ -387,19 +386,19 @@ Prenons l’exemple d’un gestionnaire eDiscovery devant rechercher du contenu 
 
 **Amérique du Nord**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-NAM" -Users ediscovery-nam@contoso.com -Region NAM -Action ALL
 ```
 
 **Europe**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-EUR" -Users ediscovery-eur@contoso.com -Region EUR -Action ALL
 ```
 
 **Asie-Pacifique**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@contoso.com -Region APC -Action ALL
 ```
 

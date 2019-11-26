@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 1cd1a73395a7bfeb190f8a31589c27bb95312484
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 92979fd66ac2d51c48b7a0836be5eb1133ae242a
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982335"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39266117"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 et notification de violation dans le cadre du RGPD
 
@@ -71,7 +73,7 @@ Microsoft affecte les niveaux de priorité et de gravité appropriés de l’enq
 
 L’équipe de réponse de sécurité collabore avec des ingénieurs de sécurité Microsoft Dynamics 365 et des experts techniques pour classer l’événement en fonction des données factuelles des éléments de preuve. Un événement de sécurité peut être classé de la façon suivante :
 
-- **Faux positif :** un événement qui répond aux critères de détection mais qui fait partie d’une pratique d’entreprise normale et nécessite peut-être d’être filtré. L’équipe de service identifiera la cause première des faux positifs et les résoudra de manière systématique en tirant parti des sources de détection et en les ajustant<span id="_Toc350859432" class="anchor"></span> en fonction des besoins.
+- **Faux positif :** un événement qui répond aux critères de détection, mais qui est considéré comme faisant partie d’une pratique commerciale normale et peut nécessiter un filtrage. L’équipe de service identifie la cause première des faux positifs et les traite d’une manière systématique en exploitant des sources de détection et en les ajustant au besoin.
 - **Incident de sécurité :** un incident provoqué par un accès non autorisé à des données client ou à des données du support stockées sur un équipement de Microsoft ou dans des installations de Microsoft, ou tout accès non autorisé à ces équipement ou installations provoquant la perte, divulgation ou altération des données client ou des données de support.
 - **Incident de sécurité/confidentialité déclarable au client (CRSPI) :** accès illégal ou non autorisé aux systèmes, équipements ou installations de Microsoft, ou utilisation illégale ou non autorisée de ceux-ci, provoquant la divulgation, la modification ou la perte de données client.
 - **Incident de confidentialité :** sous-type d’incident de sécurité impliquant des données personnelles. Les procédures de gestion sont les mêmes que celles concernant un incident de sécurité.
@@ -97,7 +99,7 @@ Microsoft Dynamics 365 fournit aux clients des informations détaillées leur p
 
 La notification d’une violation des données personnelles est envoyée au client par un moyen sélectionné par Microsoft, y compris par e-mail. La notification d’une violation des données est envoyée à la liste des contacts client / administrateurs (uniquement des clients concernés) fournie dans le centre de sécurité Office, qui peut être configurée par l’administrateur du client. Pour garantir l’envoi correct de la notification, le client doit vérifier que les informations de contact d’administration sur chaque portail de services en ligne et chaque abonnement concerné sont correctes.
 
-L’équipe Microsoft Dynamics 365 peut également choisir d’informer d’autres membres du personnel Microsoft (par exemple, le service client et le gestionnaire de compte du client ou le gestionnaire de compte technique). Ces personnes ont souvent des relations étroites avec le client et peuvent permettre une résolution plus rapide des problèmes.<span id="_Appendix_A" class="anchor"></span>
+L’équipe Microsoft Dynamics 365 peut également choisir d’informer d’autres membres du personnel Microsoft (par exemple, le service client et le gestionnaire de compte du client ou le gestionnaire de compte technique). Ces personnes ont souvent des relations étroites avec le client et peuvent favoriser une correction plus rapide.
 
 ## <a name="learn-more"></a>En savoir plus
 

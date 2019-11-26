@@ -12,15 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: 940db3e32c67ee0c457bd499f63a562343f09e2b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078595"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "39266121"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -106,6 +107,9 @@ Les conditions actuellement disponibles peuvent déterminer si :
 - Le contenu comporte une étiquette. Pour plus d’informations, reportez-vous à la section ci-dessous, [Utilisation d’une étiquette comme condition dans une stratégie DLP](#using-a-label-as-a-condition-in-a-dlp-policy).
     
 - Le contenu est partagé avec des personnes extérieures ou internes à votre organisation.
+
+> [!NOTE]
+> Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation.
     
 #### <a name="types-of-sensitive-information"></a>Types d’informations sensibles
 
@@ -322,7 +326,11 @@ Vous pouvez créer une étiquette, puis :
     
 Pour en savoir plus sur les étiquettes, consultez l’article [Vue d’ensemble des étiquettes de rétention](labels.md).
   
-Après avoir créé une étiquette, vous pouvez l’utiliser comme condition dans vos stratégies DLP. Dans les scénarios suivants, par exemple :
+Après avoir créé une étiquette, vous pouvez l’utiliser comme condition dans vos stratégies DLP. 
+
+![Étiquettes comme condition](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+Dans les scénarios suivants, par exemple :
   
 - Vous avez publié une étiquette intitulée **Confidentiel** pour permettre aux membres de votre organisation de l’appliquer manuellement aux e-mails et documents confidentiels. L’utilisation de cette étiquette comme condition dans votre stratégie DLP vous permettra d’empêcher les utilisateurs de partager du contenu **Confidentiel** avec des personnes extérieures à votre organisation. 
     
@@ -332,9 +340,10 @@ Après avoir créé une étiquette, vous pouvez l’utiliser comme condition dan
     
 - Vous avez publié une étiquette intitulée **Équipe de direction – Sensible** sur les boîtes aux lettres Exchange et sur les comptes OneDrive d’un groupe de cadres. L’utilisation de cette étiquette comme condition dans votre stratégie DLP vous permettra d’appliquer des mesures de rétention et de protection au même sous-ensemble de contenu et d’utilisateurs. 
     
-L’utilisation d’étiquettes comme condition dans les règles DLP permet d’appliquer de façon sélective des mesures de protection à un ensemble spécifique de contenu, de sites ou d’utilisateurs.
-  
-![Étiquettes comme condition](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+L’utilisation d’étiquettes comme condition dans les règles DLP permet d’appliquer de façon sélective des mesures de protection à un ensemble spécifique de contenu, de sites ou d’utilisateurs. 
+
+> [!NOTE]
+> Si vous spécifiez une étiquette de rétention comme condition dans une stratégie DLP et que vous incluez également Exchange et/ou Teams comme emplacement, le message d’erreur suivant apparaît : « la protection du contenu étiqueté dans les messages électroniques et d’équipe n’est pas prise en charge. Supprimez l’étiquette ci-dessous ou désactivez les options Exchange et Teams en tant qu’emplacement ». Cela est dû au fait qu’Exchange transport n’évalue pas les métadonnées d’étiquette lors de l’envoi et de la distribution des messages. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>La prise en charge des étiquettes de confidentialité est pour bientôt
 
