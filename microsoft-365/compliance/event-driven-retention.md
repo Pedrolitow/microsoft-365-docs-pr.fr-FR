@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des rétentions basées sur des événements
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de rétention, vous pouvez baser une période de rétention sur la survenue d’un type d’événement spécifique. L’événement déclenche le début de la période de rétention, et tout le contenu portant une étiquette définie pour ce type d’événement se voit appliquer les actions de rétention de l’étiquette. La rétention basée sur un événement est généralement utilisée dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: 1f258296017734c80cb3719eb0b830593f69b220
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079252"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "39268479"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
@@ -42,7 +42,7 @@ Les rétentions basées sur des événements sont généralement utilisées dans
 - Les étiquettes basées sur des événements déclenchent généralement une révision de destruction à la fin de la période de rétention afin qu’un gestionnaire d’enregistrements puisse manuellement examiner et supprimer le contenu. Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble des révisions de destruction](disposition-reviews.md).
     
 Une étiquette basée sur un événement a les mêmes fonctionnalités que les étiquettes dans Office 365. Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble des étiquettes](labels.md).
-    
+
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Compréhension de la relation entre les types d’événements, les étiquettes, les événements et les ID d’élément
 
 Pour utiliser correctement les rétentions basées sur des événements, il est important de comprendre la relation entre les types d’événements, les étiquettes, les événements et les ID d’élément comme illustré ci-dessous. Vous trouverez une explication après le diagramme.
@@ -75,6 +75,9 @@ Voici le niveau le plus haut du flux de travail pour la rétention basée sur de
   
 ![Diagramme du flux de travail de la configuration des rétentions basées sur des événements](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
+> [!TIP]
+> Voir [Gérer le cycle de vie des documents SharePoint avec des étiquettes de rétention](auto-apply-retention-labels-scenario.md) pour un scénario détaillé sur l’utilisation de propriétés gérées dans SharePoint pour appliquer automatiquement des étiquettes de rétention et implémenter la rétention basée sur les événements.
+
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Étape 1 : créer une étiquette dont la période de rétention est basée sur des événements
 
 Dans le Centre de conformité Microsoft 365, Centre de sécurité Microsoft 365 ou Centre de sécurité &amp; conformité Office 365, dans la partie gauche, choisissez l’onglet **Classification** > **Étiquettes de rétention** > **Étiquettes** > **Créer une étiquette**.
@@ -103,7 +106,7 @@ Notez qu’une fois que vous sélectionnez un type d’événement et créez l�
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Étape 3 : publier ou appliquer automatiquement l’étiquette
 
-Comme pour n’importe quelle étiquette, vous devez publier ou appliquer automatiquement une étiquette basée sur un événement, de sorte qu’elle soit appliquée au contenu de façon manuelle ou automatique. Vous pouvez le faire sur la page **Classification** > **Étiquettes de rétention**.
+Comme pour n’importe quelle étiquette, vous devez publier ou appliquer automatiquement une étiquette basée sur un événement, de sorte qu’elle soit appliquée au contenu de façon manuelle ou automatique. Vous pouvez effectuer cette opération sous la page**Classification** > **étiquettes de rétention**.
   
 ![Options permettant de publier ou d’appliquer automatiquement une étiquette de rétention](media/options-to-publish-auto-apply-retention-label.png)
 
@@ -123,9 +126,7 @@ Il faut comprendre que la propriété ID d’élément est tout simplement une a
   
 ### <a name="step-5-create-an-event"></a>Étape 5 : créer un événement
 
-Lorsqu’une instance précise de ce type d’événement se produit (par exemple, un produit arrive en fin de vie), accédez à la page Événements dans le Centre de sécurité &amp; conformité, et créez un événement. Vous devez déclencher manuellement un événement en le créant.
-  
-![Page Événements dans le Centre de sécurité et conformité](media/811bddfb-a7e9-4990-bf5e-abe0dfb91809.png)
+Lorsqu’une instance précise de ce type d’événement se produit (par exemple, un produit arrive en fin de vie), accédez à la page **Gestions des enregistrements** > **Événements** dans le Centre de sécurité &amp; conformité, et créez un événement. Vous devez déclencher manuellement un événement en le créant.
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Étape 6 : choisir le même type d’événement utilisé par l’étiquette à l’étape 2
 

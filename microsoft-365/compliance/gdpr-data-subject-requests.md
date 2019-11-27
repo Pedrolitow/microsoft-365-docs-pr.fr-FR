@@ -1,7 +1,7 @@
 ---
-title: Demandes des personnes concernées pour le RGPD
+title: Demandes des personnes concernées pour le RGPD et le CCPA
 description: ''
-keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
+keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,21 +9,25 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: dc4352ac14f42a227f1572b0c7f1442aa4dec838
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078904"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39268482"
 ---
-# <a name="data-subject-requests-and-the-gdpr"></a>Demandes des personnes concernées et le RGPD
+# <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Demandes des personnes concernées et le RGPD et CCPA
 
-Le règlement général sur la protection des données (RGPD) présente de nouvelles règles pour les organisations qui offrent des produits et des services aux membres de l’Union européenne (UE), ou qui collectent et analysent des données pour les résidents de l’UE quel que soit l’endroit où vous vous trouvez et celui où se trouve votre entreprise. Pour plus de détails, consultez la [rubrique Synthèse RGPD](gdpr.md). <br><br>
+Le règlement général sur la protection des données (RGPD) présente de nouvelles règles pour les organisations qui offrent des produits et des services aux membres de l’Union européenne (UE), ou qui collectent et analysent des données pour les résidents de l’UE quel que soit l’endroit où vous vous trouvez et celui où se trouve votre entreprise. Pour plus de détails, consultez la [rubrique Synthèse RGPD](gdpr.md).
+
+De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des obligations d’information, des protections contre la discrimination envers les personnes qui font le choix de faire usage de leurs droits, et la possibilité d’opter pour ou contre pour certains transferts de données classés en tant que « ventes ».  <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
 
-Ce document vous permet d’obtenir des informations sur la fin des demandes des personnes concernées (DSR) dans le cadre du RGPD à l’aide des produits et des services Microsoft.
+Ce document vous permet d’obtenir des informations sur le traitement des demandes des personnes concernées (DPC) dans le cadre du RGPD et du CCPA à l’aide des produits etdes services Microsoft.
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -44,9 +48,11 @@ Définitions utiles pour les termes RGPD utilisés dans ce document :
 
 ## <a name="what-is-a-dsr"></a>Qu’est-ce qu’une demande de la personne concernée ?
 
-Le Règlement général sur la protection des données (RGPD) accorde le droit aux individus (appelés, dans le règlement, personnes concernées) de gérer les données personnelles qui ont été collectées par un employeur ou tout autre type d’agence ou d’organisation (également appelé responsable du traitement des données ou responsable du traitement). Le RGPD confère aux personnes concernées des droits précis sur leurs données personnelles ; ces droits vous donnent la possibilité d’obtenir des copies de ces données, de les modifier, d’en limiter le traitement, de les supprimer ou de les recevoir dans un format électronique afin de pouvoir les transférer à un autre responsable du traitement.
+Le Règlement général sur la protection des données (RGPD) accorde le droit aux individus (appelés, dans le règlement, personnes concernées) de gérer les données personnelles qui ont été collectées par un employeur ou tout autre type d’agence ou d’organisation (également appelé responsable du traitement des données ou responsable du traitement). Le RGPD confère aux personnes concernées des droits précis sur leurs données personnelles ; ces droits vous donnent la possibilité d’obtenir des copies de ces données, de les faire modifier, d’en limiter le traitement, de les supprimer ou de les recevoir dans un format électronique afin de pouvoir les transférer à un autre responsable du traitement.
 
-En tant que contrôleur, vous êtes obligé de prendre en compte chaque DSR et de fournir une réponse de fond en effectuant l’action demandée ou en indiquant pourquoi la DSR ne peut pas être prise en charge par le contrôleur. Un contrôleur doit consulter ses propres conseillers juridiques ou de conformité en relation avec la destruction correcte d’une DSR donnée.
+Le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  
+
+En tant que contrôleur, vous avez l’obligation de prendre en compte chaque DPC et de fournir une réponse de fond en effectuant l’action demandée ou en indiquant pourquoi la DPC ne peut pas être traitée par le contrôleur. Un contrôleur doit consulter ses propres conseillers juridiques ou de conformité en relation avec la destruction correcte d’une DSR donnée.
 
 Plusieurs processus peuvent impliquer l’exécution d’une DSR, conformément aux règles de conformité RGPD de votre organisation.
   
