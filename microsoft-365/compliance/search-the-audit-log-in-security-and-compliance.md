@@ -10,17 +10,18 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 9885463e61c36713cbd7be82ac1ef2caaee70e7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078402"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39233517"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -86,13 +87,13 @@ Avant de commencer à effectuer une recherche dans le journal d’audit d’Offi
 
 - Si vous souhaitez désactiver la recherche dans le journal d’audit dans Office 365 pour votre organisation, vous pouvez exécuter la commande suivante dans une session PowerShell distante connectée à votre organisation Exchange Online :
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
     Pour réactiver la recherche d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
@@ -213,7 +214,10 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
 
 - **Adresse IP :** Adresse IP de l’appareil utilisé lors de l’enregistrement de l’activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6.
 
-- **Utilisateur :** Utilisateur (ou compte de service) qui a effectué l’action ayant déclenché l’événement.
+   > [!NOTE]
+  > Pour certains services, la valeur affichée dans ce champ peut être l'adresse IP d'une application sécurisée (par exemple, Office sur les applications Web) qui appelle le service au nom d'un utilisateur et non l'adresse IP de l'appareil utilisé par la personne ayant effectué l'activité. Par ailleurs, pour l’activité d’administration (ou l’activité effectuée par un compte système) pour les événements relatifs à Azure Active Directory, l’adresse IP n’est pas enregistrée et la valeur affichée dans ce champ est `null`.
+
+- **Utilisateur** : Utilisateur (ou compte de service) qui a effectué l’action ayant déclenché l’événement.
 
 - **Activité :** Activité effectuée par l’utilisateur. Cette valeur correspond aux activités que vous avez sélectionnées dans la liste déroulante **Activités**. Pour un événement figurant dans le journal d’audit de l’administrateur Exchange, la valeur dans cette colonne est une cmdlet Exchange.
 
@@ -298,8 +302,9 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
 |[Activités d’administration des utilisateurs](#user-administration-activities)|[Activités d’administration des groupes Azure AD](#azure-ad-group-administration-activities)|[Activités d’administration des applications](#application-administration-activities)|
 |[Activités d’administration des rôles](#role-administration-activities)|[Activités d’administration de l’annuaire](#directory-administration-activities)|[Activités de découverte électronique](#ediscovery-activities)|
 |[Activités avancées eDiscovery](#advanced-ediscovery-activities)|[Activités dans Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Activités dans Microsoft Teams](#microsoft-teams-activities)|[Activités dans Yammer](#yammer-activities)|[Activités Microsoft Flow](#microsoft-flow-activities)|
-|[Activités Microsoft PowerApps](#microsoft-powerapps)|[Activités de Microsoft Stream](#microsoft-stream-activities)|[Activités administrateur Exchange](#exchange-admin-audit-log)|
+|[Activités dans Microsoft Teams](#microsoft-teams-activities)|[Activités Santé Microsoft Teams](#microsoft-teams-healthcare-activities)|[Activités dans Yammer](#yammer-activities)|
+|[Activités Microsoft Flow](#microsoft-flow-activities)|[Activités Microsoft PowerApps](#microsoft-powerapps)|[Activités de Microsoft Stream](#microsoft-stream-activities)|
+[Activités administrateur Exchange](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Activités des fichiers et pages
@@ -441,7 +446,7 @@ Le tableau suivant répertorie les événements liés à l’attribution d’aut
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
-|Administrateur de collection de site ajouté|SiteCollectionAdminAdded|L’administrateur de collection de sites ou le propriétaire ajoute une personne en tant qu’administrateur de collection de sites pour un site. Les administrateurs de collection de sites disposent du niveau d’autorisation Contrôle total sur la collection de sites et tous les sous-sites. Cette activité est également enregistrée lorsqu’un administrateur donne son accès au compte OneDrive d’un utilisateur (en modifiant le profil utilisateur dans le centre d’administration SharePoint ou à l’aide du [centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)).|
+|Administrateur de collection de site ajouté|SiteCollectionAdminAdded|L’administrateur de collection de sites ou le propriétaire ajoute une personne en tant qu’administrateur de collection de sites pour un site. Les administrateurs de collection de sites disposent du niveau d’autorisation Contrôle total sur la collection de sites et tous les sous-sites. Cette activité est également enregistrée lorsqu’un administrateur se donne accès au compte OneDrive d’un utilisateur (en modifiant le profil utilisateur dans le Centre d’administration SharePoint ou à l’aide du [Centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
 |Utilisateur ou groupe ajouté au groupe SharePoint|AddedToGroup|L’utilisateur a ajouté un membre ou un invité à un groupe SharePoint. Il s’agit peut-être d’une action intentionnelle ou du résultat d’une autre activité (par exemple, événement de partage).|
 |Fin de l’héritage des niveaux d’autorisation|PermissionLevelsInheritanceBroken|Un élément a été modifié afin qu’il n’hérite plus des niveaux d’autorisation de son parent.|
 |Fin de l’héritage de partage|SharingInheritanceBroken|Un élément a été modifié afin qu’il n’hérite plus des autorisations de partage de son parent.|
@@ -560,7 +565,7 @@ Le tableau suivant répertorie les activités d’administration des utilisateur
 |Mot de passe utilisateur modifié|Modifier le mot de passe de l’utilisateur|Un administrateur a modifié le mot de passe d’un utilisateur.|
 |Utilisateur supprimé|Supprimer un utilisateur|Un compte d’utilisateur Office 365 a été supprimé.|
 |Réinitialiser le mot de passe de l’utilisateur|Reset user password|Un administrateur a réinitialisé le mot de passe d’un utilisateur.|
-|Propriété définie qui force l’utilisateur à changer de mot de passe.|Forcer la réinitialisation du mot de passe de l'utilisateur|Un administrateur a défini la propriété qui force un utilisateur à modifier son mot de passe lors de sa prochaine connexion à Office 365.|
+|Propriété définie qui force l’utilisateur à changer de mot de passe.|Forcer la réinitialisation du mot de passe de l'utilisateur|Un administrateur a défini la propriété qui force un utilisateur à modifier son mot de passe lors de sa prochaine connexion à Office 365.|
 |Propriétés de licence définies|Propriétés de licence définies|Un administrateur modifie les propriétés d’une licence attribuée à un utilisateur.|
 |Utilisateur mis à jour|Mettre à jour un utilisateur|Un administrateur modifie une ou plusieurs propriétés d’un compte d’utilisateur. Pour obtenir la liste des propriétés utilisateur qui peuvent être mises à jour, voir la section « Attributs de "Mettre à jour l’utilisateur" » dans [Événements de rapport d’audit d’Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
 ||||
@@ -682,7 +687,7 @@ L’enregistrement d’audit pour Power BI n’est pas activé par défaut. Pour
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Activités de Microsoft Workplace Analytics
 
-Workplace Analytics explique comment les groupes collaborent au sein de votre organisation Office 365. Le tableau suivant répertorie les activités effectuées par les utilisateurs auxquels est attribué le rôle d’administrateur ou les rôles d’analyste dans Workplace Analytics. Les utilisateurs dotés du rôle d’analyste ont un accès total à toutes les fonctionnalités du service et utilisent le produit pour effectuer l’analyse. Les utilisateurs dotés du rôle d’administrateur peuvent configurer les paramètres de confidentialité et les valeurs par défaut du système, et peuvent préparer, charger et vérifier les données organisationnelles dans Workplace Analytics. Pour plus d'informations, voir [Workplace Analytics](https://docs.microsoft.com/fr-FR/workplace-analytics/index-orig).
+Workplace Analytics explique comment les groupes collaborent au sein de votre organisation Office 365. Le tableau suivant répertorie les activités effectuées par les utilisateurs auxquels est attribué le rôle d’administrateur ou les rôles d’analyste dans Workplace Analytics. Les utilisateurs dotés du rôle d’analyste ont un accès total à toutes les fonctionnalités du service et utilisent le produit pour effectuer l’analyse. Les utilisateurs dotés du rôle d’administrateur peuvent configurer les paramètres de confidentialité et les valeurs par défaut du système, et peuvent préparer, charger et vérifier les données organisationnelles dans Workplace Analytics. Pour plus d'informations, voir [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -726,8 +731,16 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 |Onglet supprimé|TabRemoved|Un utilisateur supprime un onglet d’un canal.|
 |Connecteur mis à jour|ConnectorUpdated|Un utilisateur a modifié un connecteur dans un canal.|
 |Onglet mis à jour|TabUpdated|Un utilisateur a modifié un onglet dans un canal.|
-|Utilisateur connecté à Teams|TeamsSessionStarted|Un utilisateur se connecte à un client Microsoft Teams.|
+|Utilisateur connecté à Teams|TeamsSessionStarted|Un utilisateur se connecte à un client Microsoft Teams. Cet événement ne capture pas les activités d’actualisation des jetons.|
 ||||
+
+### <a name="microsoft-teams-healthcare-activities"></a>Activités Santé Microsoft Teams
+
+Si votre organisation utilise l’application [Patients](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à l’application Patients. Si votre environnement est configuré pour prendre en charge l’application Patients, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activitiés**.
+
+![Microsoft Teams Santé dans la liste du sélecteur Activités](media/TeamsHealthcareAuditActivities.png)
+
+Pour obtenir une description des activités de l’application Patients, voir les [journaux d’audit pour l’application Patients](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
 ### <a name="yammer-activities"></a>Activités dans Yammer
 
@@ -760,7 +773,7 @@ Vous pouvez effectuer une recherche dans le journal d’audit des activités dan
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
-Vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées aux applications dans PowerApps. Ces activités incluent la création, le lancement et la publication d’une application. L’attribution d’autorisations à des applications est également auditée. Pour obtenir une description de toutes les activités PowerApp, voir [journalisation des activités pour PowerApps](https://docs.microsoft.com/fr-FR/power-platform/admin/logging-powerapps#what-events-are-audited).
+Vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées aux applications dans PowerApps. Ces activités incluent la création, le lancement et la publication d’une application. L’attribution d’autorisations à des applications est également auditée. Pour obtenir une description de toutes les activités PowerApp, voir [journalisation des activités pour PowerApps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### <a name="microsoft-stream-activities"></a>Activités de Microsoft Stream
 
@@ -842,7 +855,7 @@ Non. Le pipeline de service d’audit est presque en temps réel et ne peut donc
 
 **Office 365 audite-t-il le flux de données dans les zones géographiques ?**
 
-Non. Nous avons actuellement des déploiements de pipeline d’audit dans les régions NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et APAC (Asie-Pacifique). Toutefois, nous pouvons faire circuler les données entre ces régions pour l’équilibrage de la charge et uniquement lors des problèmes liés aux sites dynamiques. Lorsque nous effectuons ces activités, les données en transit sont chiffrées.
+Non. Nous avons actuellement des déploiements de pipeline d’audit dans les régions NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et APAC (Asie-Pacifique). Toutefois, il peut arriver que nous déplacions les données entre ces régions afin d’équilibrer la charge, uniquement lors de problèmes liés aux sites actifs. Lorsque nous effectuons ces activités, les données en transit sont chiffrées.
 
 **Les données d’audit sont-elles chiffrées ?**
 
