@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir de l’outil de conversation Bloomberg dans Office 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 97923fbd9bec8f5ae5fad822947c57bab08fe218
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685727"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615604"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Configuration d’un connecteur pour l’archivage des données Bloomberg instantanées dans Office 365
 
@@ -39,7 +39,7 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
     
     a. **Éléments ayant une valeur dans la propriété CorporateEmailAddress qui correspond à un compte d’utilisateur Office 365 :** Si le connecteur peut associer l’adresse de messagerie de la propriété *CorporateEmailAddress* à un compte d’utilisateur spécifique dans Office 365, l’élément est copié dans le dossier boîte de réception de la boîte aux lettres Office 365 de l’utilisateur.
     
-    b. **Éléments dont la propriété CorporateEmailAddress ne correspond pas à un compte d’utilisateur Office 365 :** Si le connecteur ne peut pas associer une adresse de messagerie de la propriété *CorporateEmailAddress* à un compte d’utilisateur spécifique dans Office 365, l’élément est copié dans le dossier boîte de réception d’une boîte aux lettres « fourre-tout » alternative dans Office 365.
+    b. **Éléments dont la propriété CorporateEmailAddress ne correspond pas à un compte d’utilisateur Office 365 :** Si le connecteur ne peut pas associer une adresse de messagerie de la propriété *CorporateEmailAddress* à un compte d’utilisateur spécifique dans Office 365, l’élément est copié dans le dossier boîte de réception d’une autre boîte aux lettres « catch-tout » dans Office 365.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -114,7 +114,7 @@ La dernière étape consiste à créer un connecteur Bloomberg instantané dans 
 
     - **URL sftp :** URL du site de Bloomberg SFTP (par exemple, sftp.bloomberg.com).
 
-    - **Port sftp :** Numéro de port du site Bloomberg SFTP. Le connecteur utilise cette connexion pour se connecter au site SFTP.
+    - **Port sftp :** Numéro de port du site Bloomberg SFTP. Le connecteur utilise ce port pour se connecter au site SFTP.
 
 5. Sur la page **autre boîte aux lettres** , tapez l’adresse de messagerie d’une boîte aux lettres qui est utilisée pour stocker les messages de conversation provenant d’un message de notification d’instant de la part qui ne sont pas associés à une boîte aux lettres utilisateur dans votre organisation.
 

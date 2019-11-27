@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Les administrateurs peuvent importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de documents de collaboration vers des boîtes aux lettres de votre organisation Office 365. Cela vous permet d’archiver des données à partir de Facebook, de Twitter et d’autres sources de données tierces dans Office 365. Vous pouvez ensuite utiliser et appliquer les fonctionnalités de conformité d’Office 365 (telles que la conservation légale, la découverte électronique, l’archivage inaltérable et les stratégies de rétention) pour les données tierces.
-ms.openlocfilehash: 1e4cc8fc322b4e7e447cc053bd1b0a74ffe40aeb
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 084cacf1c2bef8b5786e6dba804f9a1e87001338
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685721"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615584"
 ---
 # <a name="archive-third-party-data-in-office-365"></a>Archiver des données tierces dans Office 365
 
@@ -35,7 +35,7 @@ Office 365 permet aux administrateurs d’importer et d’archiver des données 
     
 - **Messagerie SMS/texte :** BlackBerry 
     
-Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités de conformité d’Office 365 (telles que la conservation pour litige, la découverte électronique, l’archivage inaltérable, l’audit, [la conformité de la communication](communication-compliance.md)et les stratégies de rétention d’Office 365) à ces données. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez effectuer des recherches dans des données tierces à l’aide des outils eDiscovery de Microsoft. Vous pouvez également appliquer des stratégies d’archivage et de rétention à des données tierces, comme vous pouvez le faire pour Microsoft Data. En bref, l’archivage des données tierces dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités&mdash;de conformité d’Office 365 telles que la conservation pour litige, la découverte électronique, l’archivage inaltérable, l’audit,&mdash; [la conformité de la communication](communication-compliance.md)et les stratégies de rétention d’Office 365 à ces données. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez effectuer des recherches dans des données tierces à l’aide des outils eDiscovery de Microsoft. Vous pouvez également appliquer des stratégies d’archivage et de rétention à des données tierces, comme vous pouvez le faire pour Microsoft Data. En bref, l’archivage des données tierces dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 Il existe deux façons d’importer et d’archiver des données tierces dans Office 365 :
 
@@ -49,4 +49,4 @@ Il existe deux façons d’importer et d’archiver des données tierces dans Of
 
    - **Instant Bloomberg :** [configurer un connecteur pour l’archivage des données Bloomberg instantanées dans Office 365](archive-instant-bloomberg-data.md)
 
-- **Travaillez avec un partenaire Microsoft :** Votre organisation travaille avec un partenaire Microsoft qui fournira un connecteur personnalisé qui sera configuré pour extraire régulièrement les éléments de la source de données tierce, puis se connecter au Cloud de Microsoft par une API tierce et importer ces éléments dans Office 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis les importe dans une boîte aux lettres dans Office 365. Pour obtenir la liste des partenaires avec lesquels vous pouvez travailler et le processus pas à pas pour cette méthode, consultez [collaborer avec un partenaire pour archiver des données tierces dans Office 365](work-with-partner-to-archive-third-party-data.md).
+- **Travaillez avec un partenaire Microsoft :** Votre organisation travaille avec un partenaire Microsoft qui fournira un connecteur personnalisé qui sera configuré pour extraire régulièrement les éléments de la source de données tierce, puis se connecter au Cloud de Microsoft par une API tierce et importer ces éléments dans Office 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis l’importe dans une boîte aux lettres dans Office 365. Pour obtenir la liste des partenaires avec lesquels vous pouvez travailler et le processus pas à pas pour cette méthode, consultez [collaborer avec un partenaire pour archiver des données tierces dans Office 365](work-with-partner-to-archive-third-party-data.md).

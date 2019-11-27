@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenez une vue d’ensemble de la phase d’évaluation et de son rôle dans la détermination de la richesse des problèmes lors de la formation à la pertinence dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 77d9449ad15fd3a53709f2a28a96b06ab54556eb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 727b432a541e1316952faa7dc9c5b8e40ac4295c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078889"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615634"
 ---
 # <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprendre l’évaluation en pertinence dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Advanced eDiscovery permet une évaluation anticipée, par exemple, pour les problèmes définis et les données importées pour un cas. Advanced eDiscovery permet à l’expert de prendre des décisions concernant une approche adoptée et de l’appliquer au projet de révision de document.
+Advanced eDiscovery permet une évaluation anticipée, par exemple, pour les problèmes définis et les données importées pour un cas. Advanced eDiscovery permet à l’expert de prendre des décisions sur une approche adoptée et d’appliquer ces décisions au projet de révision de document.
   
 ## <a name="understanding-assessment"></a>Présentation de l’évaluation
 
@@ -35,7 +35,7 @@ Plus le nombre de fichiers appropriés est élevé dans l’ensemble d’évalua
   
 Les statistiques, présentées dans les onglets suivi et décision lors de la formation et après le calcul par lots, incluent les estimations de rappel pour différents ensembles de révision. Dans statistiques, les estimations basées sur un échantillon défini (dans ce cas, les fichiers d’évaluation) incluent la marge d’erreur et le niveau de confiance de cette marge d’erreur. Par exemple, le rappel estimé de 80% peut avoir une marge d’erreur de plus ou moins 5% avec un niveau de confiance de 95%. Cela signifie que le rappel estimé est en fait de 75% 85% et que cette estimation a une confiance de 95%. Plus l’ensemble d’évaluation est grand, plus la marge d’erreur est faible et plus les statistiques sont précises. 
   
-Une fois que l’expert a examiné un ensemble d’évaluation initiale de 500 fichiers, la pertinence est en mesure de déterminer la marge d’erreur actuelle des valeurs de rappel. La pertinence définit également une marge d’erreur par défaut qu’elle recommande d’atteindre pour optimiser l’ensemble d’évaluation. Voici quelques exemples :
+Une fois que l’expert a examiné un ensemble d’évaluation initiale de 500 fichiers, la pertinence peut déterminer la marge d’erreur actuelle des valeurs de rappel. La pertinence recommande également une marge d’erreur par défaut à atteindre pour optimiser l’ensemble d’évaluation. Voici quelques exemples :
   
 - Si l’ensemble d’évaluation a déjà généré une marge d’erreur de plus ou moins 10%, la pertinence recommande de passer à la formation (aucune révision d’évaluation supplémentaire n’est nécessaire). 
     

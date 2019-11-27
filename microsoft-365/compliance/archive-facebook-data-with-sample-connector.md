@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données tierces à partir de sources de données telles que les pages Facebook, Twitter, les pages de la société LinkedIn et le service de recherche instantanée. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données tierces de votre organisation.
-ms.openlocfilehash: 74b35281f72277c4698b835a63613288dce7d9ce
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 9479734fd1fcc65b4db7fd7e9a1ffc0f2c5fda59
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685801"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615594"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Utiliser un exemple de connecteur pour archiver des données Facebook dans Office 365 (version d’évaluation)
 
@@ -31,7 +31,7 @@ Une fois les données Facebook importées, vous pouvez appliquer les fonctionnal
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Conditions préalables à la configuration d’un connecteur pour les pages d’entreprise Facebook
 
-Vous devez remplir les conditions préalables suivantes avant de pouvoir installer et configurer un exemple de connecteur dans le centre de sécurité & Compliance Center pour importer et archiver des données à partir des pages d’entreprise Facebook de votre organisation. 
+Complétez les conditions préalables suivantes avant de pouvoir installer et configurer un exemple de connecteur dans le centre de sécurité & conformité afin d’importer et d’archiver des données à partir des pages d’entreprise Facebook de votre organisation. 
 
 - Vous avez besoin d’un compte Facebook pour les pages professionnelles de votre organisation (vous devez vous connecter à ce compte lors de la configuration du connecteur). Actuellement, vous pouvez uniquement archiver les données à partir de pages d’entreprise Facebook ; vous ne pouvez pas archiver les données de profils Facebook individuels.
 
@@ -53,8 +53,8 @@ Vous devez remplir les conditions préalables suivantes avant de pouvoir install
 La première étape consiste à télécharger le code source pour l’application de connecteur Facebook pré-générée qui utilisera une API Facebook pour se connecter à vos pages d’entreprise Facebook et extraire les données Facebook afin de pouvoir les importer dans Office 365.
 
 1. Accédez à [ce site github](https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases). 
-2. Sous la dernière version, cliquez sur le fichier **SampleConnector. zip** .
-3. Enregistrez le fichier ZIP à un emplacement sur votre ordinateur local. Vous téléchargez ce fichier zip vers Azure à l’étape 4.
+2. Sous la dernière version, sélectionnez le fichier **SampleConnector. zip** .
+3. Enregistrez le fichier ZIP à un emplacement sur votre ordinateur local. Vous téléchargez ce fichier ZIP vers Azure à l’étape 4.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Étape 2 : créer une application dans Azure Active Directory
 
@@ -83,15 +83,15 @@ L’étape suivante consiste à créer une ressource d’application Web dans Az
 
 Pour obtenir des instructions pas à pas, voir [Create a New Web App Resource in Azure](deploy-facebook-connector.md#step-4-create-a-new-web-app-resource-in-azure).
 
-Lors de l’exécution de cette étape (en suivant les instructions pas à pas), vous fournissez les informations suivantes (que vous avez copiées dans un fichier texte après avoir effectué les étapes précédentes) lors de la création de la ressource d’application Web.
+Lorsque vous suivez les instructions pas à pas pour effectuer cette étape, vous fournissez les informations suivantes (que vous avez copiées dans un fichier texte après avoir effectué les étapes précédentes) lors de la création de la ressource d’application Web.
 
-- APISecretKey : vous créez cette clé secrète lors de l’exécution de cette étape ; elle est utilisée à l’étape 7.
+- APISecretKey : vous créez cette clé secrète lors de l’exécution de cette étape. Elle est utilisée à l’étape 7.
 - StorageAccountConnectionString : URI de la chaîne de connexion que vous avez copiée après avoir créé le compte de stockage Azure à l’étape 3.
 - tenantId : ID de client de votre organisation Office 365 que vous avez copié après avoir créé l’application de connecteur Facebook dans Azure Active Directory à l’étape 2.
 
 Par ailleurs, vous téléchargez le fichier SampleConnector. zip (que vous avez téléchargé à l’étape 1) dans cette étape pour déployer le code source pour l’application Facebook Connector.
 
-Une fois cette étape terminée, veillez à copier l’URL du service d’application ( https://fbconnector.azurewebsites.net)par exemple,. Vous devez utiliser cela pour effectuer l’étape 5, étape 6, et étape 7).
+Une fois cette étape terminée, veillez à copier l’URL du service d’application ( https://fbconnector.azurewebsites.net)par exemple,. Vous devez utiliser cette URL pour effectuer l’étape 5, étape 6, et étape 7).
 
 ## <a name="step-5-register-the-web-app-on-facebook"></a>Étape 5 : inscription de l’application Web sur Facebook
 
@@ -122,7 +122,7 @@ Lors de l’exécution de cette étape (en suivant les instructions pas à pas),
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Étape 7 : configurer un connecteur personnalisé dans le centre de sécurité & conformité
 
-La dernière étape consiste à configurer le connecteur personnalisé dans le centre de sécurité & conformité qui importe les données de vos pages d’entreprise Facebook vers une boîte aux lettres spécifiée dans Office 365. Une fois cette étape terminée, le service d’importation Office 365 démarrera le processus d’importation de données à partir de vos pages Facebook Business vers Office 365. 
+La dernière étape consiste à configurer le connecteur personnalisé dans le centre de sécurité & conformité qui importe les données de vos pages d’entreprise Facebook vers une boîte aux lettres spécifiée dans Office 365. Une fois cette étape terminée, le service d’importation Office 365 commencera à importer des données à partir de vos pages Facebook Business vers Office 365. 
 
 Pour obtenir des instructions détaillées, reportez-vous à [la rubrique Set up a Custom Connector in the Security & Compliance Center](deploy-facebook-connector.md#step-7-set-up-a-custom-connector-in-the-security--compliance-center). 
 

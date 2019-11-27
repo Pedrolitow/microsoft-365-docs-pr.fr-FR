@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Vous pouvez utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à résoudre les problèmes courants, tels que l’enquête sur un compte compromis, la configuration du transfert de courrier pour une boîte aux lettres ou la détermination de la raison pour laquelle un utilisateur externe a réussi à se connecter à votre Département.
-ms.openlocfilehash: f075d4317e8da748b6eca654747a2757c0040558
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: Vous pouvez utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à résoudre les problèmes courants, tels que l’enquête sur un compte compromis, la personne qui configure le transfert de courrier pour une boîte aux lettres ou la manière dont un utilisateur externe a réussi à se connecter à votre organisation.
+ms.openlocfilehash: a9901168ef4c8e2d2128fb143cbe134a04fb4e2c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685896"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39603788"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Rechercher dans le journal d’audit Office 365 pour identifier les problèmes de prise en charge courants
 
@@ -33,7 +33,7 @@ Cet article explique comment utiliser l’outil de recherche de journal d’audi
 
 ## <a name="using-the-office-365-audit-log-search-tool"></a>Utilisation de l’outil de recherche de journal d’audit Office 365
 
-Chacun des scénarios de dépannage décrits dans cet article est basé sur l’utilisation de l’outil de recherche de journal d’audit dans le centre de sécurité et conformité Office 365. Cette section répertorie les autorisations requises pour effectuer des recherches dans le journal d’audit et décrit les étapes permettant d’accéder aux recherches dans le journal d’audit et de les exécuter. Chaque section de scénario fournit des instructions spécifiques sur la configuration d’une requête de recherche de journal d’audit et sur ce qu’il faut rechercher dans les informations détaillées des enregistrements d’audit qui correspondent aux critères de recherche.
+Chacun des scénarios de dépannage décrits dans cet article est basé sur l’utilisation de l’outil de recherche de journal d’audit dans le centre de sécurité et conformité Office 365. Cette section répertorie les autorisations requises pour effectuer des recherches dans le journal d’audit et décrit les étapes permettant d’accéder aux recherches dans le journal d’audit et de les exécuter. Chaque section de scénario explique comment configurer une requête de recherche de journal d’audit et ce qu’il faut rechercher dans les informations détaillées des enregistrements d’audit qui correspondent aux critères de recherche.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorisations requises pour utiliser l’outil de recherche de journal d’audit
 
@@ -47,11 +47,11 @@ Cette section décrit les notions de base pour la création et l’exécution de
     
     La page **recherche du journal d’audit** s’affiche. 
     
-    ![Configurez les critères, puis cliquez sur Rechercher pour exécuter la recherche.](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurez les critères, puis sélectionnez recherche pour exécuter la recherche.](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
 4. Vous pouvez configurer les critères de recherche suivants. Chaque scénario de dépannage de cet article recommande des instructions spécifiques pour la configuration de ces champs.
     
-    a. **Activités :** Cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Après l’exécution de la recherche, seuls les enregistrements d’audit des activités sélectionnées sont affichés. La sélection de l’option **afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités qui répondent aux autres critères de recherche. Vous devrez également laisser ce champ vide dans certains scénarios de dépannage.
+    a. **Activités :** Sélectionnez la liste déroulante pour afficher les activités que vous pouvez rechercher. Après l’exécution de la recherche, seuls les enregistrements d’audit des activités sélectionnées sont affichés. La sélection de l’option **afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités qui répondent aux autres critères de recherche. Vous devrez également laisser ce champ vide dans certains scénarios de dépannage.
     
     b. **Date de début** et **Date de fin :** sélectionnez une date et une plage horaire pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. La date et l’heure sont présentées au format UTC (Coordinated Universal Time). La plage de dates maximale que vous pouvez spécifier est de 90 jours.
 
@@ -59,9 +59,9 @@ Cette section décrit les notions de base pour la création et l’exécution de
     
     d. **Fichier, dossier ou site :** Tapez une partie ou la totalité d’un nom de fichier ou de dossier pour Rechercher l’activité liée au fichier du dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, vérifiez que vous tapez le chemin d’URL complet ou, si vous ne tapez qu’une partie de l’URL, n’incluez pas de caractères spéciaux ou d’espaces. Laissez cette zone vide pour renvoyer les entrées de tous les fichiers et dossiers de votre organisation. Ce champ est vide dans tous les scénarios de dépannage décrits dans cet article.
     
-5. Cliquez sur **Rechercher** pour exécuter la recherche à l’aide de vos critères de recherche. 
+5. Sélectionnez **recherche** pour exécuter la recherche à l’aide de vos critères de recherche. 
     
-    Les résultats de la recherche sont chargés et, après quelques instants, s’affichent sous **résultats** dans la page **recherche du journal d’audit** . Chacune des sections de cet article fournit des instructions sur les éléments à rechercher dans le contexte du scénario de dépannage spécifique.
+    Les résultats de la recherche sont chargés et après quelques instants, ils sont affichés sous **résultats** sur la page de **recherche du journal d’audit** . Chacune des sections de cet article fournit des instructions sur les éléments à rechercher dans le contexte du scénario de dépannage spécifique.
 
     Pour plus d’informations sur l’affichage, le filtrage ou l’exportation des résultats de la recherche du journal d’audit, voir :
 
@@ -86,7 +86,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 **Fichier, dossier ou site :** Laissez ce champ vide.
 
-Après avoir exécuté la recherche, l’adresse IP de chaque activité est affichée dans la colonne **adresse IP** dans les résultats de la recherche. Cliquez sur l’enregistrement dans les résultats de la recherche pour afficher des informations plus détaillées sur la page de menu volant.
+Après avoir exécuté la recherche, l’adresse IP de chaque activité est affichée dans la colonne **adresse IP** dans les résultats de la recherche. Sélectionnez l’enregistrement dans les résultats de la recherche pour afficher des informations plus détaillées sur la page de menu volant.
 
 ## <a name="determine-who-set-up-email-forwarding-for-a-mailbox"></a>Déterminer qui a configuré le transfert de courrier pour une boîte aux lettres
 
@@ -102,11 +102,11 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 **Fichier, dossier ou site :** Laissez ce champ vide.
 
-Après avoir exécuté la recherche, cliquez sur **Filtrer les résultats** sur la page des résultats de la recherche. Dans la zone située sous en-tête de colonne **activité** , tapez **Set-Mailbox** afin que seuls les enregistrements d’audit liés à la cmdlet **Set-Mailbox** s’affichent.
+Après avoir exécuté la recherche, sélectionnez **Filtrer les résultats** sur la page des résultats de la recherche. Dans la zone située sous en-tête de colonne **activité** , tapez **Set-Mailbox** afin que seuls les enregistrements d’audit liés à la cmdlet **Set-Mailbox** s’affichent.
 
 ![Filtrage des résultats d’une recherche de journal d’audit](media/emailforwarding1.png)
 
-À ce stade, vous devez examiner les détails de chaque enregistrement d’audit pour déterminer si l’activité est liée au transfert du courrier. Cliquez sur l’enregistrement d’audit pour afficher la page de menu volant **Détails** , puis cliquez sur **informations supplémentaires**. La capture d’écran et les descriptions suivantes mettent en évidence les informations indiquant que le transfert de courrier a été défini sur la boîte aux lettres.
+À ce stade, vous devez examiner les détails de chaque enregistrement d’audit pour déterminer si l’activité est liée au transfert du courrier. Sélectionnez l’enregistrement d’audit pour afficher la page de menu volant **Détails** , puis sélectionnez **plus d’informations**. La capture d’écran et les descriptions suivantes mettent en évidence les informations indiquant que le transfert de courrier a été défini sur la boîte aux lettres.
 
 ![Informations détaillées à partir de l’enregistrement d’audit](media/emailforwarding2.png)
 
@@ -114,7 +114,7 @@ a. Dans le champ **ObjectID** , l’alias de la boîte aux lettres sur lequel le
 
 b. Dans le champ **Parameters** , la valeur *ForwardingSmtpAddress* indique que le transfert de courrier électronique a été défini sur la boîte aux lettres. Dans cet exemple, le courrier est transmis à l’adresse de messagerie mike@contoso.com, qui se trouve en dehors de l’organisation alpinehouse.onmicrosoft.com.
 
-c. La valeur *true* pour le paramètre *DeliverToMailboxAndForward* indique qu’une copie du message remis à Sarad@alpinehouse.onmicrosoft.com est transmise à l’adresse de messagerie spécifiée par le paramètre *ForwardingSmtpAddress* , qui, dans cet exemple *, est Mike@contoso.com* . Si la valeur du paramètre *DeliverToMailboxAndForward* est définie sur *false*, le courrier électronique est uniquement transféré à l’adresse spécifiée par le paramètre *ForwardingSmtpAddress* . Il n’est pas remis à la boîte aux lettres spécifiée dans le champ **ObjectID** .
+c. La valeur *true* pour le paramètre *DeliverToMailboxAndForward* indique qu’une copie du message est remise à Sarad@alpinehouse.onmicrosoft.com *et* est transmise à l’adresse de messagerie spécifiée par le paramètre *ForwardingSmtpAddress* , qui, dans cet exemple, est Mike@contoso.com. Si la valeur du paramètre *DeliverToMailboxAndForward* est définie sur *false*, le courrier électronique est uniquement transféré à l’adresse spécifiée par le paramètre *ForwardingSmtpAddress* . Il n’est pas remis à la boîte aux lettres spécifiée dans le champ **ObjectID** .
 
 d. Le champ **userid** indique l’utilisateur qui définit le transfert du courrier électronique sur la boîte aux lettres spécifiée dans le champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche. Dans ce cas, il semble que le propriétaire de la boîte aux lettres définisse le transfert du courrier sur sa boîte aux lettres.
 
@@ -124,7 +124,7 @@ Si vous déterminez que le transfert du courrier ne doit pas être défini sur l
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-Pour plus d’informations sur les paramètres liés au transfert de messages, voir l’article [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) .
+Pour plus d’informations sur les paramètres liés au transfert du courrier, consultez l’article [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) .
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>Déterminer si un utilisateur a supprimé des éléments de courrier électronique
 
@@ -146,7 +146,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 **Fichier, dossier ou site :** Laissez ce champ vide.
 
-Après avoir exécuté la recherche, vous pouvez filtrer les résultats de la recherche pour afficher les enregistrements d’audit pour les éléments supprimés de manière récupérable ou pour les éléments supprimés définitivement. Cliquez sur l’enregistrement d’audit pour afficher la page de menu volant **Détails** , puis cliquez sur **informations supplémentaires**. Des informations supplémentaires sur l’élément supprimé, telles que la ligne d’objet et l’emplacement de l’élément lors de sa suppression, sont affichées dans le champ **AffectedItems** . Les captures d’écran suivantes illustrent un exemple de champ **AffectedItems** provenant d’un élément supprimé (récupérable) et d’un élément supprimé de manière irréversible.
+Après avoir exécuté la recherche, vous pouvez filtrer les résultats de la recherche pour afficher les enregistrements d’audit pour les éléments supprimés de manière récupérable ou pour les éléments supprimés définitivement. Sélectionnez l’enregistrement d’audit pour afficher la page de menu volant **Détails** , puis sélectionnez **plus d’informations**. Des informations supplémentaires sur l’élément supprimé, telles que la ligne d’objet et l’emplacement de l’élément lors de sa suppression, sont affichées dans le champ **AffectedItems** . Les captures d’écran suivantes illustrent un exemple de champ **AffectedItems** provenant d’un élément supprimé (récupérable) et d’un élément supprimé de manière irréversible.
 
 **Exemple de champ AffectedItems pour un élément supprimé (récupérable)**
 
@@ -182,7 +182,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 **Fichier, dossier ou site :** Laissez ce champ vide.
 
-Après avoir exécuté la recherche, tous les enregistrements d’audit de cette activité sont affichés dans les résultats de la recherche. Cliquez sur un enregistrement d’audit pour afficher la page de menu volant **Détails** , puis cliquez sur **informations supplémentaires**. Les informations sur les paramètres des règles de boîte de réception sont affichées dans le champ **paramètres** . La capture d’écran et les descriptions suivantes mettent en évidence les informations relatives aux règles de boîte de réception.
+Après avoir exécuté la recherche, tous les enregistrements d’audit de cette activité sont affichés dans les résultats de la recherche. Sélectionnez un enregistrement d’audit pour afficher la page de menu volant **Détails** , puis sélectionnez **plus d’informations**. Les informations sur les paramètres des règles de boîte de réception sont affichées dans le champ **paramètres** . La capture d’écran et les descriptions suivantes mettent en évidence les informations relatives aux règles de boîte de réception.
 
 ![Enregistrement d’audit pour la nouvelle règle de boîte de réception](media/NewInboxRuleRecord.png)
 
@@ -190,7 +190,7 @@ a. Dans le champ **ObjectID** , le nom complet de la règle de boîte de récept
 
 b. Dans le champ **paramètres** , la condition de la règle de boîte de réception est affichée. Dans cet exemple, la condition est spécifiée par le paramètre *from* . La valeur définie pour le paramètre *from* indique que la règle de boîte de réception agit sur les messages envoyés par admin@alpinehouse.onmicrosoft.com. Pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir les conditions des règles de boîte de réception, consultez l’article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. Le paramètre *MoveToFolder* spécifie l’action pour la règle de boîte de réception. Dans cet exemple, les messages reçus à partir de admin@alpinehouse.onmicrosoft.com sont déplacés vers le dossier nommé *AdminSearch*. Consultez également l’article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) pour obtenir la liste complète des paramètres permettant de définir l’action d’une règle de boîte de réception.
+c. Le paramètre *MoveToFolder* spécifie l’action pour la règle de boîte de réception. Dans cet exemple, les messages reçus à partir de admin@alpinehouse.onmicrosoft.com sont déplacés vers le dossier nommé *AdminSearch*. Consultez également l’article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir l’action d’une règle de boîte de réception.
 
 d. Le champ **userid** indique l’utilisateur qui a créé la règle de boîte de réception spécifiée dans le champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche.
 
@@ -198,12 +198,12 @@ d. Le champ **userid** indique l’utilisateur qui a créé la règle de boîte 
 
 Lors de l’examen des enregistrements d’audit dans le journal d’audit Office 365, vous pouvez voir des enregistrements indiquant qu’un utilisateur externe a été authentifié par Azure Active Directory et a réussi à se connecter à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation Office 365 (par exemple, fabrikam.onmicrosoft.com) a réussi à se connecter à contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs disposant d’un compte Microsoft (MSA), tels qu’un Outlook.com ou Live.com, ont réussi à se connecter à votre organisation. Dans ce cas, l’activité auditée est l' **utilisateur connecté**. 
 
-Ce comportement est par conception. Azure Active Directory (Azure AD), le service d’annuaire dans Office 365, autorise une *authentification directe* lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive de votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification Office 365. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie qu’Azure AD vérifie que l’utilisateur est bien ce qu’il dit. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de l’authentification de l’utilisateur par Azure AD. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Il indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour que l’utilisateur direct puisse accéder aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit partager explicitement une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
+Il s'agit du comportement par défaut. Azure Active Directory (Azure AD), le service d’annuaire dans Office 365, autorise une *authentification directe* lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive de votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification Office 365. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie qu’Azure AD vérifie que l’utilisateur est bien ce qu’il dit. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de l’authentification de l’utilisateur par Azure AD. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Il indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour qu’un utilisateur direct puisse accéder aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit partager explicitement une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
 
 > [!NOTE]
 > Azure AD autorise l’authentification directe uniquement pour les *applications tierces*, telles que SharePoint Online et OneDrive entreprise. Il n’est pas autorisé pour d’autres applications tierces.
 
-Voici un exemple et des descriptions de propriétés pertinentes dans un enregistrement d’audit pour un événement connecté à un **utilisateur** qui est le résultat de l’authentification directe. Cliquez sur l’enregistrement d’audit pour afficher la page de menu volant **Détails** , puis cliquez sur **informations supplémentaires**.
+Voici un exemple et des descriptions de propriétés pertinentes dans un enregistrement d’audit pour un **utilisateur connecté à** un événement qui résulte d’une authentification directe. Sélectionnez l’enregistrement d’audit pour afficher la page de menu volant **Détails** , puis sélectionnez **plus d’informations**.
 
 ![Exemple d’enregistrement d’audit pour une authentification relais réussie](media/PassThroughAuth1.png)
 
@@ -221,9 +221,9 @@ Pour plus d’informations sur les autres propriétés affichées dans un enregi
 
 Voici deux exemples de scénarios permettant à un utilisateur de se **connecter à** l’aide de l’audit en raison de l’authentification directe : 
 
-  - Un utilisateur disposant d’un compte Microsoft (tel que SaraD@outlook.com) a tenté d’accéder à un document dans un compte OneDrive entreprise dans fourthcoffee.onmicrosoft.com et son n’est pas un compte d’utilisateur invité correspondant pour SaraD@outlook.com dans fourthcoffee.onmicrosoft.com.
+  - Un utilisateur disposant d’un compte Microsoft (tel que SaraD@outlook.com) a tenté d’accéder à un document dans un compte OneDrive entreprise dans fourthcoffee.onmicrosoft.com et il n’existe pas de compte d’utilisateur invité correspondant pour SaraD@outlook.com dans fourthcoffee.onmicrosoft.com.
 
-  - Un utilisateur disposant d’un compte professionnel ou scolaire dans une organisation Office 365 (par exemple pilarp@fabrikam.onmicrosoft.com) a tenté d’accéder à un site SharePoint dans contoso.onmicrosoft.com et son n’est pas un compte d’utilisateur invité correspondant pour pilarp@fabrikam.com dans contoso.onmicrosoft.com.
+  - Un utilisateur disposant d’un compte professionnel ou scolaire dans une organisation Office 365 (par exemple pilarp@fabrikam.onmicrosoft.com) a tenté d’accéder à un site SharePoint dans contoso.onmicrosoft.com et il n’existe pas de compte d’utilisateur invité correspondant pour pilarp@fabrikam.com dans contoso.onmicrosoft.com.
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Conseils pour l’étude des connexions réussies résultant de l’authentification directe
@@ -232,7 +232,7 @@ Voici deux exemples de scénarios permettant à un utilisateur de se **connecter
 
    ![Rechercher toutes les activités effectuées par l’utilisateur externe](media/PassThroughAuth2.png)
 
-    En plus des activités de l' **utilisateur connecté** , d’autres enregistrements d’audit peuvent être renvoyés, par exemple ceux qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé, modifié ou téléchargé un document qui a été partagé avec eux.
+    En plus des activités de l' **utilisateur connecté** , d’autres enregistrements d’audit peuvent être renvoyés, qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé à un document qui lui a été partagé.
 
 - Recherchez les activités de partage SharePoint qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** un enregistrement d’audit. Pour plus d’informations, reportez-vous à [la rubrique utiliser l’audit de partage dans le journal d’audit Office 365](use-sharing-auditing.md).
 

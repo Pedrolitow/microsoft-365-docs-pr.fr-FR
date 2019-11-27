@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir d’une page de la société LinkedIn vers Office 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la conformité des données tierces de votre organisation.
-ms.openlocfilehash: 1117eb6b7c756519ad07cafc52a635d65999d9e0
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: bd11102a15396132cb192d8b0a4cc9a0dfca5645
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685892"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615624"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configuration d’un connecteur pour l’archivage des données LinkedIn dans Office 365 (aperçu)
 
@@ -29,25 +29,25 @@ Une fois que les données de la page de la société LinkedIn sont stockées dan
 
 - Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour accepter cette demande, accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), connectez-vous à l’aide des informations d’identification d’un administrateur général Office 365, puis acceptez la demande.
 
-- L’utilisateur qui crée un connecteur de page de société LinkedIn doit disposer du rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Cela est nécessaire pour accéder à la page données tierces d' **archivage** dans le centre de sécurité & conformité. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
+- L’utilisateur qui crée un connecteur de page de société LinkedIn doit disposer du rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Ce rôle est nécessaire pour accéder à la page données tierces d' **archivage** dans le centre de sécurité & conformité. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
 
 - Vous devez disposer des informations d’identification de connexion (adresse de messagerie ou numéro de téléphone et mot de passe) d’un compte d’utilisateur de LinkedIn qui est administrateur de la page de la société LinkedIn que vous souhaitez archiver. Vous utilisez ces informations d’identification pour vous connecter à LinkedIn lors de la configuration du connecteur.
 
 ## <a name="create-a-linkedin-connector"></a>Créer un connecteur LinkedIn
 
-1. Accédez à <https://protection.office.com> , puis cliquez sur importation de la **gouvernance \> des données** , puis cliquez sur **archiver les données**tierces.
+1. Accédez à <https://protection.office.com> , puis sélectionnez **importation de \> la gouvernance des données** , puis **archivez les données**tierces.
 
-2. Sur la page **données tierces d’archivage** , cliquez sur **Ajouter un connecteur**, puis sur **LinkedIn**.
+2. Sur la page données tierces d' **archivage** , sélectionnez **Ajouter un connecteur**, puis **LinkedIn**.
 
-3. Sur la page **conditions de service** , cliquez sur **accepter**.
+3. Sur la page **conditions de service** , sélectionnez **accepter**.
 
-4. Sur la page **se connecter avec LinkedIn** , cliquez sur **se connecter avec LinkedIn**.
+4. Sur la page **se connecter avec LinkedIn** , sélectionnez **se connecter avec LinkedIn**.
 
    La page de connexion LinkedIn s’affiche.
 
    ![Page de connexion à LinkedIn](media/LinkedInSigninPage.png)
 
-5. Sur la page de connexion LinkedIn, entrez l’adresse de messagerie (ou le numéro de téléphone) et le mot de passe du compte LinkedIn associé à la page de la société que vous souhaitez archiver, puis cliquez sur **se connecter**.
+5. Sur la page de connexion LinkedIn, entrez l’adresse de messagerie (ou le numéro de téléphone) et le mot de passe du compte LinkedIn associé à la page de l’entreprise que vous souhaitez archiver, puis sélectionnez **se connecter**.
 
    Une page d’Assistant s’affiche avec la liste de toutes les pages de la société LinkedIn associées au compte auquel vous vous êtes connecté. Un connecteur ne peut être configuré que pour une seule page de la société. Si votre organisation dispose de plusieurs pages d’entreprise LinkedIn, vous devez créer un connecteur pour chacune d’entre elles.
 
@@ -59,11 +59,11 @@ Une fois que les données de la page de la société LinkedIn sont stockées dan
 
 8. Sur la page **définir le compte de stockage** , tapez l’adresse de messagerie d’une boîte aux lettres Office 365 dans laquelle les éléments LinkedIn seront importés, puis cliquez sur **suivant**. Les éléments sont importés dans le dossier boîte de réception de cette boîte aux lettres.
 
-9. Passez en revue les paramètres du connecteur, puis cliquez sur **Enregistrer** pour terminer l’installation du connecteur.
+9. Passez en revue les paramètres du connecteur, puis sélectionnez **Enregistrer** pour terminer l’installation du connecteur.
 
-Après avoir créé le connecteur, vous pouvez revenir à la page d' **archivage des données** tierces (cliquez sur **Actualiser** si nécessaire pour mettre à jour la liste des connecteurs) pour afficher le nouveau connecteur. La valeur dans la colonne d' **État** est en **attente de démarrage**. Le processus initial d’importation doit prendre jusqu’à 24 heures. Après la première exécution du connecteur et l’importation des éléments LinkedIn, le connecteur s’exécute une fois toutes les 24 heures et importe les nouveaux éléments créés sur la page de la société LinkedIn dans les 24 heures qui précèdent.
+Après avoir créé le connecteur, vous pouvez revenir à la page d' **archivage des données** tierces (sélectionnez **Actualiser** si nécessaire pour mettre à jour la liste des connecteurs) pour afficher le nouveau connecteur. La valeur dans la colonne d' **État** est en **attente de démarrage**. Le processus initial d’importation doit prendre jusqu’à 24 heures. Après la première exécution du connecteur et l’importation des éléments LinkedIn, le connecteur s’exécute une fois toutes les 24 heures et importe les nouveaux éléments créés sur la page de la société LinkedIn dans les 24 heures qui précèdent.
 
-Pour afficher plus de détails, cliquez sur le connecteur dans la liste sur la page données tierces d' **archivage** pour afficher la page de menu volant. Sous **État**, la plage de dates affichée indique le filtre d’âge qui a été sélectionné lors de la création du connecteur. 
+Pour afficher plus de détails, sélectionnez le connecteur dans la liste sur la page données tierces d' **archivage** pour afficher la page de menu volant. Sous **État**, la plage de dates affichée indique le filtre d’âge qui a été sélectionné lors de la création du connecteur. 
 
 ## <a name="more-information"></a>Plus d’informations
 
