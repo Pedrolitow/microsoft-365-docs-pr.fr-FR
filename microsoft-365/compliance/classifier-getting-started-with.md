@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé et que vous confirmez que ses résultats sont précis, vous pouvez l’utiliser pour effectuer des recherches dans le contenu de votre organisation, le classer pour qu’il applique des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données ou les stratégies de rétention.
-ms.openlocfilehash: 6b8574b7c87f0b038c46894940cb8d15b152ab5c
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
+ms.openlocfilehash: 458f7e6c9f15bac71cd3dadf2ed64e1c1f4ef1c5
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38690323"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633863"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -25,7 +25,7 @@ La classification et l’étiquetage du contenu de sorte qu’il puisse être pr
 
 ## <a name="manually"></a>Manuellement
 
-Cela nécessite un jugement humain et une action. Un administrateur peut utiliser les étiquettes préexistantes et les types d’informations sensibles, ou créer les leurs et les publier. Les utilisateurs et les administrateurs les appliquent au contenu au fur et à mesure qu’ils le rencontrent. Vous pouvez ensuite protéger le contenu et gérer sa destruction.
+Cette méthode nécessite un jugement humain et une action. Un administrateur peut utiliser les étiquettes préexistantes et les types d’informations sensibles, ou créer les leurs et les publier. Les utilisateurs et les administrateurs les appliquent au contenu au fur et à mesure qu’ils le rencontrent. Vous pouvez ensuite protéger le contenu et gérer sa destruction.
 
 ## <a name="automated-pattern-matching"></a>Correspondance des modèles automatisés
 
@@ -36,11 +36,11 @@ Cette catégorie de mécanismes de classification inclut la recherche de contenu
 - Reconnaissance d’un élément car il s’agit d’une variante d’un modèle [(impression des doigts de document)](document-fingerprinting.md)
 - à l’aide de la présence de chaînes exactes [(correspondance de données exacte)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-Les étiquettes de sensibilité et de rétention peuvent ensuite être appliquées automatiquement afin que le contenu soit disponible dans la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md) et les [stratégies de rétention](retention-policies.md).
+Les étiquettes de sensibilité et de rétention peuvent ensuite être appliquées automatiquement pour que le contenu soit disponible dans la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md) et les [stratégies de rétention](retention-policies.md).
 
 ## <a name="trainable-classifiers"></a>Classifieurs de formation
 
-Cette méthode de classification est particulièrement adaptée au contenu qui, de par sa nature, n’est pas précédée pour être facilement identifiée par les méthodes de correspondance manuelle ou automatisée. Cette méthode de classification est plus relative à la formation d’un classifieur permettant d’identifier un élément en fonction de ce que est l’élément, pas par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en recherchant des centaines d’exemples du contenu que vous souhaitez classer. Vous commencez par alimenter des exemples qui sont tous dans la catégorie, puis, une fois qu’ils les traitent, vous les testez en leur donnant une combinaison des exemples de correspondance et de non-correspondance. Le classifieur effectue ensuite des prévisions quant à l’existence d’un élément donné dans la catégorie que vous créez. Ensuite, vérifiez ses résultats, en triant les positifs, négatifs, faux positifs et faux négatifs afin d’améliorer la précision de ses prévisions. Lorsque vous publiez le classifieur formé, il trie les éléments dans des emplacements, tels que SharePoint Online, Exchange et OneDrive et classe le contenu.
+Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifiable par les méthodes de correspondance manuelle ou automatisée. Cette méthode de classification est plus relative à la formation d’un classifieur permettant d’identifier un élément en fonction de ce que est l’élément, pas par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en examinant des centaines d’exemples du contenu que vous souhaitez classer. Commencez par alimenter des exemples qui sont tous dans la catégorie. Une fois qu’il les traite, vous les testez en leur donnant une combinaison des exemples de correspondance et de non-correspondance. Le classifieur effectue ensuite des prévisions quant à l’existence d’un élément donné dans la catégorie que vous créez. Ensuite, vérifiez ses résultats, en triant les positifs, les négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prévisions. Lorsque vous publiez le classifieur formé, il trie les éléments dans des emplacements comme SharePoint Online, Exchange et OneDrive, et classifie le contenu.
 
 > [!IMPORTANT]
 > Les deux types de classifieurs sont disponibles en tant que condition pour la [stratégie d’étiquette de rétention automatique basée sur une condition et une](labels.md#applying-a-retention-label-automatically-based-on-conditions) conformité de [communication](communication-compliance.md).
@@ -60,11 +60,11 @@ Il est prêt à utiliser des classifieurs et des classifieurs de formation. L’
 Microsoft 365 est fourni avec six classifieurs prêts à l’emploi suivants :
 
 - **Offensant**: détecte les éléments de texte qui contiennent des blasphèmes, Slurs, taunts et des expressions déguisées (qui sont des expressions qui ont la même signification qu’un terme plus offensant).
-- **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, qualifications professionnelles, expérience professionnelle et autres informations d’identification personnelle d’un demandeur.
+- **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, professionnelles, d’expérience professionnelle, ainsi que d’autres informations d’identification personnelle d’un demandeur.
 - **Sourcecode**: détecte des éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans des langages de programmation informatique largement utilisés.
 - **Harcèlement**: détecte une catégorie spécifique d’éléments de texte de langue choquants liés à un comportement offensant ciblant une ou plusieurs personnes en fonction des caractéristiques suivantes : race, ethnique, religion, origine nationale, sexe, orientation sexuelle, âge, invalidité.
-- **Blasphèmes**: détecte une catégorie spécifique d’éléments de texte de langue offensants qui contiennent des expressions qui déportent la plupart des utilisateurs
-- **Menace**: détecte une catégorie spécifique d’éléments de texte de langue offensant liés aux menaces pour valider la violence ou causer des dommages ou dégâts physiques à une personne ou à une propriété.
+- **Blasphème**: détecte une catégorie spécifique d’éléments de texte en langue choquante qui contiennent des expressions qui déportent la plupart des gens.
+- **Menace**: détecte une catégorie spécifique d’éléments de texte de langue choquants liés aux menaces pour valider la violence ou causer des dégâts ou des dommages physiques à une personne ou à une propriété.
 
 Ces éléments apparaissent dans**la vue** classification des données `Ready to use`du centre > de **conformité Microsoft 365****(aperçu)** > avec le statut.
 
@@ -81,7 +81,7 @@ Prêt à utiliser les classifieurs n’a pas besoin d’être formé, mais vous 
 
 ### <a name="understanding-trainable-classifiers"></a>Présentation des classifieurs de formation
 
-Lorsque les classifieurs prêts à l’emploi ne répondent pas à vos besoins, vous pouvez créer et former vos propres classifieurs. La création de vos propres tâches est beaucoup plus importante, mais elles seront bien mieux adaptées aux besoins de votre organisation. Pour plus d’informations sur l’utilisation d’un classificateur pré-formé, consultez la rubrique [utilisation d’un classificateur prêt à utiliser](classifier-using-a-ready-to-use-classifier.md)
+Lorsque les classifieurs prêts à l’emploi ne répondent pas à vos besoins, vous pouvez créer et former vos propres classifieurs. La création de vos propres tâches est beaucoup plus importante, mais elles seront beaucoup mieux adaptées à vos besoins. Pour plus d’informations sur l’utilisation d’un classificateur pré-formé, consultez la rubrique [utilisation d’un classificateur prêt à utiliser](classifier-using-a-ready-to-use-classifier.md)
 
 > [!IMPORTANT]
 > Seul l’utilisateur qui crée un classificateur de formation peut former et examiner les prévisions effectuées par ce classifieur.

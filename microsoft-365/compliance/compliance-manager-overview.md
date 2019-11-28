@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615614"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633653"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -51,7 +51,7 @@ Les [groupes](working-with-compliance-manager.md#groups) sont des conteneurs qui
 
 ## <a name="assessments"></a>Évaluations
 
-Les [évaluations](working-with-compliance-manager.md#assessments) sont des conteneurs qui vous permettent d’organiser les contrôles en fonction des responsabilités partagées entre Microsoft et votre organisation pour évaluer les risques de sécurité et de conformité du service Cloud. Les évaluations vous aident à implémenter les mesures de protection des données spécifiées par une norme de conformité et des normes, réglementations ou législations applicables en matière de protection des données. Elles vous aident à cerner votre position de protection et de conformité des données par rapport à la norme sélectionnée pour le service Cloud Microsoft sélectionné. Les évaluations sont effectuées par l’implémentation de contrôles inclus dans l’évaluation qui correspond à une norme de certification.
+Les [évaluations](working-with-compliance-manager.md#assessments) sont des conteneurs qui vous permettent d’organiser des contrôles pour les responsabilités partagées entre Microsoft et votre organisation pour évaluer les risques de sécurité et de conformité du service Cloud. Les évaluations vous aident à implémenter les mesures de protection des données spécifiées par une norme de conformité et des normes, réglementations ou législations applicables en matière de protection des données. Elles vous aident à cerner votre position de protection et de conformité des données par rapport à la norme sélectionnée pour le service Cloud Microsoft sélectionné. Les évaluations sont effectuées par l’implémentation de contrôles inclus dans l’évaluation qui correspond à une norme de certification.
 
 Par défaut, le gestionnaire de conformité crée les évaluations suivantes pour votre organisation :
 
@@ -105,9 +105,9 @@ Un contrôle partagé fait référence à tout contrôle dans lequel Microsoft e
 
 Les [éléments actions](working-with-compliance-manager.md#controls-and-actions) sont inclus dans les contrôles gérés par le client dans le cadre de la fonctionnalité de gestion de flux de travail intégrée que vous pouvez utiliser pour gérer et suivre la progression de l’évaluation.
 
-Les membres de votre organisation peuvent utiliser le gestionnaire de conformité pour examiner les contrôles gérés par le client à partir de toutes les évaluations pour lesquelles ils sont affectés. Lorsqu’un utilisateur se connecte au Gestionnaire de conformité et ouvre le tableau de bord **Éléments d’action**, la liste des éléments d’action qui lui sont attribués s’affiche. Selon le rôle du Gestionnaire de conformité attribué à l’utilisateur, il peut fournir les détails de mise en œuvre et de test, mettre à jour l’état ou attribuer des éléments d’action.
+Les membres de votre organisation peuvent utiliser le gestionnaire de conformité pour examiner les contrôles gérés par le client à partir de toutes les évaluations auxquelles ils sont affectés. Lorsqu’un utilisateur se connecte au Gestionnaire de conformité et ouvre le tableau de bord **Éléments d’action**, la liste des éléments d’action qui lui sont attribués s’affiche. Selon le rôle du Gestionnaire de conformité attribué à l’utilisateur, il peut fournir les détails de mise en œuvre et de test, mettre à jour l’état ou attribuer des éléments d’action.
 
-Les contrôles de certification sont généralement mis en œuvre par une personne et testés par un autre. Par exemple, après l’exécution des éléments d’action initialement affectés à une personne pour l’implémentation, les éléments d’action sont affectés à la personne suivante pour tester et charger les preuves. Tout utilisateur disposant des autorisations suffisantes pour les affectations de contrôle peut affecter et réaffecter des éléments d’action. Cela permet la gestion centrale des affectations de contrôle et le routage décentralisé des éléments d’action entre les implémenteurs et les testeurs.
+Les contrôles de certification sont généralement mis en œuvre par une personne et testés par un autre. Par exemple, après l’exécution des éléments d’action initialement affectés à une personne pour l’implémentation, ces éléments d’action sont affectés à la personne suivante pour tester et télécharger des preuves. Tout utilisateur disposant des autorisations suffisantes pour les affectations de contrôle peut affecter et réaffecter des éléments d’action. Cela permet la gestion centrale des affectations de contrôle et le routage décentralisé des éléments d’action entre les implémenteurs et les testeurs.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -118,13 +118,13 @@ L’administrateur du portail du gestionnaire de conformité peut définir des a
 1. Dans le menu déroulant de **plus** haut, sélectionnez **administrateur**, puis **paramètres**.
 2. À partir de là, sélectionnez le rôle que vous souhaitez attribuer, puis ajoutez l’employé que vous souhaitez attribuer à ce rôle. Les utilisateurs peuvent alors effectuer certaines actions.
 
-En outre, les utilisateurs auxquels le [rôle de lecteur global est affecté dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) disposent d’autorisations en lecture seule pour accéder au gestionnaire de conformité ; Toutefois, ils ne peuvent pas modifier les données ou effectuer des actions dans le gestionnaire de conformité.
+En outre, les utilisateurs auxquels le [rôle de lecteur global est affecté dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) disposent d’autorisations en lecture seule pour accéder au gestionnaire de conformité. Toutefois, ils ne peuvent pas modifier les données ou effectuer des actions dans le gestionnaire de conformité.
 
-Notez qu’il n’y a plus de rôle **Accès invité** par défaut. Chaque utilisateur doit se voir attribuer un rôle afin de pouvoir utiliser le Gestionnaire de conformité.
+Il n’existe plus de rôle d' **accès invité** par défaut. Chaque utilisateur doit se voir attribuer un rôle afin de pouvoir utiliser le Gestionnaire de conformité.
   
 ## <a name="manage-evidence"></a>Gérer les preuves
 
-Le gestionnaire de conformité peut stocker des preuves de vos tâches d’implémentation pour tester et valider les contrôles gérés par le client. Les preuves incluent des documents, des feuilles de calcul, des captures d’écran, des images, des scripts, des fichiers de sortie de script et d’autres fichiers. Le gestionnaire de conformité reçoit automatiquement la télémétrie et crée un enregistrement de preuve pour les éléments d’action intégrés avec le score sécurisé. Toutes les données téléchargées sous forme de preuves dans le gestionnaire de conformité sont stockées aux États-Unis sur les sites de stockage cloud de Microsoft. Ces données sont répliquées dans les régions Azure situées en Asie du sud-est et en Europe de l’Ouest.
+Le gestionnaire de conformité peut stocker des preuves de vos tâches d’implémentation pour effectuer des tests et la validation des contrôles gérés par les clients. Les preuves incluent des documents, des feuilles de calcul, des captures d’écran, des images, des scripts, des fichiers de sortie de script et d’autres fichiers. Le gestionnaire de conformité reçoit automatiquement la télémétrie et crée un enregistrement de preuve pour les éléments d’action intégrés avec le score sécurisé. Toutes les données téléchargées sous forme de preuves dans le gestionnaire de conformité sont stockées aux États-Unis sur les sites de stockage cloud de Microsoft. Ces données sont répliquées dans les régions Azure situées en Asie du sud-est et en Europe de l’Ouest.
 
 ## <a name="templates"></a>Modèles
 

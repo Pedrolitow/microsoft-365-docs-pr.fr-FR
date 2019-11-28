@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4d74685aec0de4d26a7bd52c3cb53f475ca8490b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3a888458dce090091fbba020d1fa17ec6d56e0f5
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078840"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633823"
 ---
 # <a name="close-or-delete-an-investigation"></a>Fermer ou supprimer une investigation
 
 ## <a name="close-an-investigation"></a>Fermer une enquête
 
- Une fois l’enquête terminée et les actions correctives appropriées prises, vous souhaiterez peut-être conserver les preuves que vous avez collectées, mais clôturez le cas afin de pouvoir facilement suivre la référence à l’avenir. Une fois que vous avez fermé l’enquête, elle apparaît toujours sur la page enquêtes de données dans le centre de sécurité & conformité. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés. À une date ultérieure, vous pouvez rouvrir les enquêtes terminées.
+ Une fois que vous avez terminé l’enquête et effectué les actions correctives appropriées, vous souhaiterez peut-être conserver les preuves que vous avez collectées, mais fermer le cas afin de pouvoir vous y référer facilement à l’avenir. Une fois que vous avez fermé l’enquête, celle-ci est toujours affichée sur la page enquêtes de données dans le centre de sécurité & conformité. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés. À une date ultérieure, vous pourrez rouvrir les enquêtes terminées.
 
 Pour fermer une enquête :
 
-1. Dans l’onglet **paramètres** , cliquez sur informations sur l' **enquête**.
+1. Dans l’onglet **paramètres** , sélectionnez **informations d’enquête**.
 
-2. Cliquez sur **Fermer l’enquête**. 
+2. Sélectionnez **Fermer l’enquête**. 
 
 
 ## <a name="delete-an-investigation"></a>Supprimer une enquête
@@ -40,6 +40,6 @@ Parfois, vous voudrez peut-être détruire la preuve car elle contient des donn�
 
 Pour supprimer une enquête :
 
-1. Dans l’onglet **paramètres** , cliquez sur informations sur l' **enquête**.
+1. Dans l’onglet **paramètres** , sélectionnez **informations d’enquête**.
 
-2. Cliquez sur **Supprimer l’enquête**. 
+2. Sélectionnez **Supprimer l’enquête**. 

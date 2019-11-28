@@ -12,25 +12,25 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: Utilisez le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365. Lorsque vous clonez une recherche, une nouvelle recherche (avec un nouveau nom) est créée et contient les mêmes propriétés que la recherche d’origine. Vous pouvez ensuite modifier la nouvelle recherche (en changeant la requête par mot clé ou la plage de dates), puis l’exécuter.
-ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: Utilisez le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365. Lorsque vous clonez une recherche, une nouvelle recherche (avec un nouveau nom) est créée et contient les mêmes propriétés que la recherche d’origine. Ensuite, vous pouvez modifier la nouvelle recherche en changeant la requête par mot clé ou la plage de dates, puis l’exécuter.
+ms.openlocfilehash: 87d9c75dc0a2b58b95ad6f2aaeb6c55f178e515f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685907"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633843"
 ---
 # <a name="clone-a-content-search"></a>Cloner une recherche de contenu
 
-La création d’une recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 recherche un grand nombre de boîtes aux lettres ou de sites SharePoint et OneDrive entreprise peut prendre un certain temps. La spécification des sites à rechercher peut également être sujette à des erreurs si vous entrez une URL erronée. Pour éviter ces problèmes, vous pouvez utiliser le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante. Lorsque vous clonez une recherche, une nouvelle recherche (avec un nom différent) est créée et contient les mêmes propriétés (telles que les emplacements de contenu et la requête de recherche) que la recherche d’origine. Vous pouvez ensuite modifier la nouvelle recherche (en changeant la requête par mot clé ou la plage de dates) et l’exécuter.
+La création d’une recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 recherche plusieurs boîtes aux lettres ou sites SharePoint et OneDrive entreprise peut prendre un certain temps. La spécification des sites à rechercher peut également être sujette à des erreurs si vous entrez une URL erronée. Pour éviter ces problèmes, vous pouvez utiliser le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante. Lorsque vous clonez une recherche, une nouvelle recherche (avec un nom différent) est créée, qui contient les mêmes propriétés (telles que les emplacements de contenu et la requête de recherche) en tant que recherche d’origine. Ensuite, vous pouvez modifier la nouvelle recherche en changeant la requête par mot clé ou la plage de dates, puis l’exécuter.
   
 Pourquoi le clonage du contenu effectue des recherches ?
   
 - Pour comparer les résultats de différentes requêtes de recherche par mot clé exécutées sur les mêmes emplacements de contenu.
     
-- Pour éviter d’avoir à saisir de nouveau un grand nombre d’emplacements de contenu lorsque vous créez une recherche.
+- Pour éviter de devoir entrer un grand nombre d’emplacements de contenu lors de la création d’une recherche.
     
-- Pour réduire la taille des résultats de la recherche ; par exemple, si vous avez une recherche qui renvoie un trop grand nombre de résultats à exporter, vous pouvez cloner la recherche, puis ajouter une condition de recherche basée sur une plage de dates pour réduire le nombre de résultats de recherche.
+- Pour réduire la taille des résultats de la recherche. Par exemple, si vous avez une recherche qui renvoie un trop grand nombre de résultats à exporter, vous pouvez cloner la recherche, puis ajouter une condition de recherche basée sur une plage de dates pour réduire le nombre de résultats de recherche.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -132,13 +132,13 @@ Pour cloner une recherche :
     
     - Nom de la nouvelle recherche.
     
-    Le script crée la recherche de contenu, mais ne le démarre pas. Cela vous permet de modifier et d’exécuter la recherche à l’étape suivante. Vous pouvez afficher les propriétés de la nouvelle recherche en exécutant la cmdlet **Get-ComplianceSearch** ou en accédant à la page **recherche de contenu** ou **eDiscovery** dans le centre de conformité, selon que la nouvelle recherche est associée à un cas ou non. 
+    Le script crée la recherche de contenu, mais ne le démarre pas. Cela vous permet de modifier et d’exécuter la recherche à l’étape suivante. Vous pouvez afficher les propriétés de la nouvelle recherche en exécutant la cmdlet **Get-ComplianceSearch** ou en accédant à la page **recherche de contenu** ou **découverte électronique** dans le centre de conformité, selon que la nouvelle recherche est associée ou non à un cas. 
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Étape 2 : modifier et exécuter la recherche clonée dans le centre de conformité
 
 Une fois que vous avez exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à accéder au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou supprimant des conditions de recherche. Pour plus d’informations, voir :
   
-- [Recherche de contenu dans Office 365](content-search.md)
+- [Recherche de contenu dans Office 365](content-search.md)
     
 - [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
     

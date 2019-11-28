@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0d2edb2f7362fa8e8bea6ae82c417f61072bccff
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078839"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633613"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Gestionnaire de conformité Microsoft et RGPD
 
@@ -48,7 +48,7 @@ Pour rechercher un compte d’utilisateur :
 
 ## <a name="export-a-report-of-account-data-history"></a>Exporter le rapport de l’historique des données d’un compte
 
-Pour chaque compte d’utilisateur identifié, vous pouvez générer un rapport des dépendances liées à ce compte. Ces informations vous permettent de réaffecter des éléments d’action ouverts ou de vous assurer de l’accès à des preuves précédemment téléchargées.
+Pour chaque compte d’utilisateur identifié, vous pouvez générer un rapport des dépendances liées au compte. Ces informations vous permettent de réaffecter des éléments d’action ouverts ou de vous assurer de l’accès à des preuves précédemment téléchargées.
   
  Pour générer et exporter un rapport :
   

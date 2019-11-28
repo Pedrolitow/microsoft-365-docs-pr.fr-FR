@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des classifieurs adaptés lorsque l’un des classifieurs de zone prêt à l’emploi ne répond pas à vos besoins. Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cette rubrique vous montre comment créer un classifieur personnalisé.
-ms.openlocfilehash: 1d62b70d821593ff7d8d3889c0da0e0b5cc9809f
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38690417"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633981"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Création d’un classifieur de formation (aperçu)
 
@@ -38,7 +38,7 @@ Si vous souhaitez qu’un classifieur puisse identifier de manière indépendant
 
 ## <a name="testing-content"></a>Test du contenu
 
-Une fois que le classifieur peut traiter suffisamment d’échantillons positifs pour créer un modèle de prévision, vous devez tester les prévisions qu’il permet de déterminer si le classifieur peut faire la distinction entre les éléments qui correspondent à la catégorie et ceux qui ne le sont pas. Pour ce faire, vous devez l’alimenter un autre ensemble de contenu choisi par l’homme qui se compose d’exemples qui doivent être inclus dans la catégorie et les échantillons qui ne le seront pas. Une fois qu’il les traite, vous parcourez manuellement les résultats et vérifiez si chaque prévision est correcte, incorrecte ou si vous n’êtes pas sûr. Le classificateur de formation utilise ces commentaires pour améliorer son modèle de prévision.
+Une fois que le classifieur peut traiter suffisamment d’échantillons positifs pour créer un modèle de prévision, vous devez tester les prévisions qu’il permet de déterminer si le classifieur peut faire la distinction entre les éléments qui correspondent à la catégorie et ceux qui ne l’ont pas. Pour ce faire, vous devez l’alimenter un autre ensemble de contenu choisi par l’homme qui se compose d’exemples qui doivent être inclus dans la catégorie et les échantillons qui ne le seront pas. Une fois qu’il les traite, vous parcourez manuellement les résultats et vérifiez si chaque prévision est correcte, incorrecte ou si vous n’êtes pas sûr. Le classificateur de formation utilise ces commentaires pour améliorer son modèle de prévision.
 
 > [!TIP]
 > Pour obtenir de meilleurs résultats, comportez 10 000 éléments dans votre jeu d’échantillons de test avec une répartition égale des correspondances positives et négatives.
@@ -85,14 +85,14 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 > [!IMPORTANT]
 > Les éléments de l’exemple ne doivent pas être chiffrés et doivent être en anglais.
 
-12. Placez le contenu de test dans un dossier SharePoint Online dédié à la conservation *du contenu de test uniquement*. Notez le site SharePoint Online, l’URL de bibliothèque et de dossier.
+12. Placez le contenu de test dans un dossier SharePoint Online dédié à la conservation *du contenu de test uniquement*. Notez le site SharePoint Online, la bibliothèque et l’URL du dossier.
 
 > [!TIP]
 > Si vous créez un nouveau site et dossier pour vos données de test, autorisez au moins une heure pour cet emplacement à indexer avant de créer le classifieur qui utilisera ces données de départ.
 
 13. Choisissez `Add items to test`.
 
-14. Entrez l’URL du site SharePoint Online, de la bibliothèque et du dossier exactes pour le site de contenu de test à partir de l’étape 12. Choisissez `Add`.
+14. Entrez l’URL du site, de la bibliothèque et du dossier SharePoint Online exactes pour le site de contenu de test à partir de l’étape 12. Choisissez `Add`.
 
 15. Terminez l’Assistant en `Done`sélectionnant. Votre classificateur peut prendre jusqu’à une heure pour traiter les fichiers de test.
 

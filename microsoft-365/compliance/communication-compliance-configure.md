@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez les stratégies de conformité des communications pour configurer les communications des employés pour révision.
-ms.openlocfilehash: 0a830914a22968119d836e2190a6f133d91fd305
-ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
+ms.openlocfilehash: 24b821158ca0f6d7486d1177256f5b1ce9123479
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38755602"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633623"
 ---
 # <a name="configure-communication-compliance-for-microsoft-365-preview"></a>Configurer la conformité de la communication pour Microsoft 365 (version d’évaluation)
 
@@ -42,11 +42,11 @@ Procédez comme suit pour configurer et utiliser la conformité des communicatio
 
 - **Étape 2 (obligatoire)**: [mise à disposition de la conformité de la communication au sein de votre organisation](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Ajoutez-vous au rôle d' **administrateur examen de surveillance** afin de pouvoir configurer des stratégies. Vous devrez également créer un groupe avec les rôles **administrateur de révision de surveillance**, **gestion des cas** et **révision** pour les personnes ou les groupes qui adopteront des actions d’enquête et de correction sur les messages avec des correspondances de stratégie. Toute personne disposant de ces rôles peut accéder à la page conformité de la **communication** dans le centre de conformité Microsoft 365. Si la messagerie Reviewable est hébergée sur Exchange Online, chaque réviseur doit disposer [d’un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Ajoutez-vous au rôle d' **administrateur examen de surveillance** afin de pouvoir configurer des stratégies. Vous devrez également créer un groupe avec l’administrateur de **vérification de surveillance**, la **gestion des cas**et les rôles de **révision** pour les personnes ou les groupes qui devront prendre des mesures d’investigation et de correction sur les messages avec des correspondances de stratégie. Toute personne disposant de ces rôles peut accéder à la page conformité de la **communication** dans le centre de conformité Microsoft 365. Si la messagerie Reviewable est hébergée sur Exchange Online, chaque réviseur doit disposer [d’un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Étape 3 (obligatoire)**: [configurer une stratégie de conformité de communication](#step-3-create-a-communication-compliance-policy-required)
 
-    Vous créez des stratégies de conformité de communication dans le centre de conformité Microsoft 365. Ces stratégies définissent les communications qui font l’objet d’un examen dans votre organisation et spécifie qui effectue des révisions. Les communications incluent le courrier électronique, Microsoft Teams, Skype entreprise et les communications de plateformes tierces (par exemple, Facebook, Twitter, etc.).
+    Vous créez des stratégies de conformité de communication dans le centre de conformité Microsoft 365. Ces stratégies définissent les communications qui font l’objet d’un examen dans votre organisation et spécifie les personnes qui effectuent des révisions. Les communications incluent le courrier électronique, Microsoft Teams, Skype entreprise et les communications de plateformes tierces (par exemple, Facebook, Twitter, etc.).
 
 - **Étape 4 (facultative)**: [créer des modèles de notification d’employé](#step-4-create-employee-notice-templates-optional)
 
@@ -58,7 +58,7 @@ Procédez comme suit pour configurer et utiliser la conformité des communicatio
 
 ## <a name="step-1-set-up-groups-for-communication-compliance-optional"></a>Étape 1 : configurer des groupes pour la conformité des communications (facultatif)
 
- Lorsque vous créez une stratégie de conformité de communication, vous définissez les personnes qui ont consulté leurs communications et qui effectue des révisions. Dans la stratégie, vous utiliserez des adresses de messagerie pour identifier des individus ou des groupes de personnes. Pour simplifier votre configuration, vous pouvez créer des groupes pour les personnes dont la communication est vérifiée et les groupes pour les personnes qui examinent ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs. Par exemple, vous souhaitez surveiller les communications entre deux groupes distincts de personnes ou si vous souhaitez spécifier un groupe qui n’est pas supervisé.
+ Lorsque vous créez une stratégie de conformité de communication, vous définissez les personnes qui ont consulté leurs communications et qui effectue des révisions. Dans la stratégie, vous utiliserez des adresses de messagerie pour identifier des individus ou des groupes de personnes. Pour simplifier votre configuration, vous pouvez créer des groupes pour les personnes dont la communication est vérifiée et les groupes pour les personnes qui examinent ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs. Par exemple, si vous souhaitez surveiller les communications entre deux groupes distincts de personnes ou si vous souhaitez spécifier un groupe qui n’est pas supervisé.
 
 Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de votre organisation pour les stratégies de conformité de communication :
 
@@ -77,7 +77,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>Étape 2 : mise à disposition de la conformité de la communication dans votre organisation (obligatoire)
 
-Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365, vous devez disposer du rôle d' **administrateur examen de surveillance** . De plus, pour examiner et corriger les messages avec des correspondances de stratégie, vous devez créer un groupe pour les relecteurs avec les rôles **administrateur de révision de surveillance**, gestion des **cas** et **révision** .
+Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365, vous devez disposer du rôle d' **administrateur examen de surveillance** . De plus, pour examiner et corriger les messages avec des correspondances de stratégie, vous devez créer un groupe pour les relecteurs avec les rôles **administrateur de révision de surveillance**, gestion des **cas**et **révision** .
 
 ### <a name="create-a-new-role-group"></a>Créer un groupe de rôles
 
@@ -117,23 +117,23 @@ Pour plus d’informations sur les groupes de rôles et les autorisations, consu
     Si vous choisissez d’utiliser l’Assistant stratégie pour créer une stratégie personnalisée, vous devez :
 
     - Donnez un nom et une description à la stratégie. Les noms de stratégie ne peuvent pas être modifiés une fois la stratégie créée.
-    - Choisissez les utilisateurs ou les groupes à superviser, notamment le choix de tous les utilisateurs de votre organisation, des utilisateurs et des groupes spécifiques, ou d’autres utilisateurs et groupes que vous souhaitez exclure. -
+    - Choisissez les utilisateurs ou les groupes à superviser, y compris tous les utilisateurs de votre organisation, des utilisateurs et des groupes spécifiques, ou d’autres utilisateurs et groupes que vous souhaitez exclure. -
     - Choisissez les relecteurs de la stratégie. Les relecteurs peuvent être des utilisateurs individuels ou des [groupes de sécurité à extension messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online.
     - Choisissez les canaux de communication à analyser, y compris Exchange, Microsoft teams ou Skype entreprise. Vous choisirez également d’analyser les sources tierces si vous avez configuré un connecteur dans Microsoft 365.
     - Choisissez la direction de communication à surveiller, y compris les communications entrantes, sortantes ou internes.
     - Définir les [conditions](communication-compliance-feature-reference.md#ConditionalSettings)de la stratégie de conformité de communication. Vous pouvez choisir entre une adresse de message, un mot clé, un type de fichier et une condition de correspondance de taille.
-    - Choisissez si vous souhaitez inclure des types d’informations sensibles. C’est ici que vous pouvez sélectionner les types d’informations sensibles par défaut et personnalisés. Choisir parmi des types d’informations sensibles personnalisés ou des dictionnaires de mots clés personnalisés existants dans l’Assistant stratégie de conformité des communications, vous pouvez créer ces éléments avant d’exécuter l’Assistant si nécessaire. Si vous le souhaitez, vous pouvez également créer de nouveaux types d’informations sensibles à partir de l’Assistant stratégie de conformité des communications.
+    - Choisissez si vous souhaitez inclure des types d’informations sensibles. C’est ici que vous pouvez sélectionner les types d’informations sensibles par défaut et personnalisés. Sélectionnez des types d’informations sensibles personnalisés ou des dictionnaires de mots clés personnalisés existants dans l’Assistant stratégie de conformité des communications. Si nécessaire, vous pouvez créer ces éléments avant d’exécuter l’Assistant. Vous pouvez également créer des types d’informations sensibles à partir de l’Assistant stratégie de conformité des communications.
     - Choisissez si vous souhaitez activer le modèle de langage offensant. Cette fonctionnalité détecte les langues inappropriées envoyées ou reçues dans le corps des messages électroniques.
     - Définir le pourcentage de communications à réviser.
     - Examinez vos sélections de stratégie et créez la stratégie.
 
 5. Sélectionnez **créer une stratégie** lors de l’utilisation des modèles ou de l' **envoi** lors de l’utilisation de l’Assistant stratégie personnalisée.
 
-6. La page **votre stratégie a été créée** s’affiche avec des instructions sur l’activation de la stratégie et la capture des communications.
+6. La page **votre stratégie a été créée** s’affiche avec des instructions sur le moment où la stratégie sera activée et les communications qui seront capturées.
 
 ## <a name="step-4-create-employee-notice-templates-optional"></a>Étape 4 : créer des modèles de notification d’employé (facultatif)
 
-Si vous souhaitez pouvoir répondre à une alerte de stratégie en envoyant un rappel à l’employé associé, vous devez créer au moins un modèle d’avis dans votre organisation. Les champs de modèle d’avis sont modifiables avant l’envoi dans le cadre du processus de correction des alertes et la création d’un modèle d’avertissement personnalisé pour chaque stratégie de conformité des communications est recommandée.
+Si vous souhaitez pouvoir répondre à une alerte de stratégie en envoyant un rappel à l’employé associé, vous devez créer au moins un modèle d’avis dans votre organisation. Les champs du modèle d’avertissement sont modifiables avant d’être envoyés dans le cadre du processus de correction des alertes et la création d’un modèle d’avertissement personnalisé pour chaque stratégie de conformité des communications est recommandée.
 
 1. Connectez- [https://compliance.microsoft.com](https://compliance.microsoft.com) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
@@ -153,16 +153,16 @@ Si vous souhaitez pouvoir répondre à une alerte de stratégie en envoyant un r
 
 ## <a name="step-5-test-your-communication-compliance-policy-optional"></a>Étape 5 : test de votre stratégie de conformité des communications (facultatif)
 
-Une fois que vous avez créé une stratégie de conformité de communication, il est recommandé de tester les conditions que vous avez définies correctement appliquées par la stratégie. Vous pouvez également [tester vos stratégies de protection contre la perte de données (DLP)](create-test-tune-dlp-policy.md) si vos stratégies de conformité de communication incluent des types d’informations sensibles. Assurez-vous que vous laissez vos stratégies s’activer afin que les communications que vous souhaitez tester soient capturées.
+Une fois que vous avez créé une stratégie de conformité de communication, il est recommandé de la tester pour vous assurer que les conditions que vous avez définies sont appliquées correctement par la stratégie. Vous pouvez également [tester vos stratégies de protection contre la perte de données (DLP)](create-test-tune-dlp-policy.md) si vos stratégies de conformité de communication incluent des types d’informations sensibles. Assurez-vous que vous laissez vos stratégies s’activer afin que les communications que vous souhaitez tester soient capturées.
 
 Procédez comme suit pour tester votre stratégie de conformité de communication :
 
-1. Ouvrez un client de messagerie ou Microsoft teams connecté en tant qu’utilisateur supervisé défini dans la stratégie que vous souhaitez tester.
-2. Envoyez un message électronique ou une conversation Microsoft teams qui répond aux critères que vous avez définis dans la stratégie de conformité de communication. Il peut s’agir d’un mot clé, d’une taille de pièce jointe, d’un domaine, etc. Assurez-vous que vous déterminez si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop stricts.
+1. Ouvrez un client de messagerie ou Microsoft teams lors de la connexion en tant qu’utilisateur supervisé défini dans la stratégie que vous souhaitez tester.
+2. Envoyez un message électronique ou une conversation Microsoft teams qui répond aux critères que vous avez définis dans la stratégie de conformité de communication. Il peut s’agir d’un mot clé, d’une taille de pièce jointe, d’un domaine, etc. Assurez-vous de déterminer si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop stricts.
 
     > [!NOTE]
     > Les communications de tous les canaux sources peuvent prendre jusqu’à 24 heures pour être entièrement traitées dans une stratégie.
 
-3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité des communications. Accédez à **** > **alertes** de conformité des communications pour afficher les alertes correspondant à vos stratégies.
+3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité de communication. Accédez à **** > **alertes** de conformité des communications pour afficher les alertes correspondant à vos stratégies.
 
 4. Corrigez l’alerte à l’aide des contrôles de correction et assurez-vous que l’alerte est correctement résolue.

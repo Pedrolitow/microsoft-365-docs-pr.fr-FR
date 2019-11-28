@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Office 365. Ces types de conservation incluent les conservations pour litige, la découverte électronique et les stratégies de rétention d’Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d’une stratégie de rétention à l’échelle de l’organisation.
-ms.openlocfilehash: 3319d65f7260a50cdcd38a36b6135a3cc42fb874
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 13e7bcec4d6ce7a04b069552b599e742c8777e8a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685918"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634011"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -175,30 +175,56 @@ Pour plus d’informations sur les étiquettes de rétention, consultez la rubri
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Gestion des boîtes aux lettres en attente de retard
 
-Après la suppression d’un type de conservation d’une boîte aux lettres, la valeur de la propriété de boîte aux lettres *DelayHoldApplied* est définie sur **true**. Cela se produit la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une conservation a été supprimée. Cette opération est appelée *retard de conservation* et signifie que la suppression effective de la conservation est retardée de 30 jours pour empêcher la suppression définitive des données de la boîte aux lettres. Les administrateurs peuvent ainsi Rechercher ou récupérer les éléments de boîte aux lettres qui seront purgés après la suppression de la conservation. Lorsqu’une boîte aux lettres est suspendue, la boîte aux lettres est toujours considérée comme suspendue pendant une durée illimitée, comme si la boîte aux lettres était en conservation pour litige. Au bout de 30 jours, le délai d’attente expire et Office 365 tente automatiquement de supprimer le blocage de délai (en définissant la propriété *DelayHoldApplied* sur **false**) de sorte que la conservation soit supprimée. Une fois que la propriété *DelayHoldApplied* a la **valeur false**, les éléments marqués pour suppression sont purgés lors du prochain traitement de la boîte aux lettres par l’Assistant dossier géré.
+Une fois qu’un type de conservation est supprimé d’une boîte aux lettres, une mise en *attente de retard* est appliquée. Cela signifie que la suppression effective de la conservation est retardée de 30 jours afin d’empêcher la suppression définitive des données de la boîte aux lettres. Les administrateurs peuvent ainsi Rechercher ou récupérer les éléments de boîte aux lettres qui seront purgés après la suppression d’une conservation. Un retard de conservation est placé sur une boîte aux lettres la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une conservation a été supprimée. Plus précisément, un délai d’attente est appliqué à une boîte aux lettres lorsque l’Assistant dossier géré définit l’une des propriétés de boîte aux lettres suivantes sur **true**:
 
-Pour afficher la valeur de la propriété *DelayHoldApplied* pour une boîte aux lettres, exécutez la commande suivante dans Exchange Online PowerShell.
+- **DelayHoldApplied :** Cette propriété s’applique au contenu lié au courrier électronique (généré par des personnes utilisant Outlook et Outlook sur le Web) stocké dans la boîte aux lettres d’un utilisateur.
+
+- **DelayReleaseHoldApplied :** Cette propriété s’applique au contenu basé sur le Cloud (généré par des applications autres qu’Outlook telles que Microsoft Teams, Microsoft Forms et Microsoft Yammer) stocké dans la boîte aux lettres d’un utilisateur. Les données Cloud générées par une application Microsoft sont généralement stockées dans un dossier masqué de la boîte aux lettres d’un utilisateur.
+ 
+ Lorsqu’une boîte aux lettres est placée en attente de retard (lorsque l’une des propriétés précédentes est définie sur **true**), la boîte aux lettres est toujours considérée comme suspendue pendant une durée de conservation illimitée, comme si la boîte aux lettres était en conservation pour litige. Au bout de 30 jours, le délai d’attente expire et Office 365 tente automatiquement de supprimer le blocage de délai (en définissant la propriété DelayHoldApplied ou DelayReleaseHoldApplied sur **false**) de sorte que la conservation soit supprimée. Une fois que l’une de ces propriétés est définie sur **false**, les éléments correspondants marqués pour suppression sont purgés lors du prochain traitement de la boîte aux lettres par l’Assistant dossier géré.
+
+Pour afficher les valeurs des propriétés DelayHoldApplied et DelayReleaseHoldApplied pour une boîte aux lettres, exécutez la commande suivante dans Exchange Online PowerShell.
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL *HoldApplied*
 ```
 
-Pour supprimer le délai d’attente avant qu’il expire, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell : 
+Pour supprimer le délai d’attente avant qu’il arrive à expiration, vous pouvez exécuter une des commandes suivantes (ou les deux) dans Exchange Online PowerShell, en fonction de la propriété que vous souhaitez modifier : 
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Vous devez disposer du rôle conservation légal dans Exchange Online pour utiliser le paramètre *RemoveDelayHoldApplied* 
+Ou
+ 
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
 
-Pour supprimer la conservation différée sur une boîte aux lettres inactive, exécutez la commande suivante dans Exchange Online PowerShell :
+Pour utiliser les paramètres *RemoveDelayHoldApplied* ou *RemoveDelayReleaseHoldApplied* , vous devez disposer du rôle de blocage légal dans Exchange Online. 
+
+Pour supprimer la conservation différée sur une boîte aux lettres inactive, exécutez l’une des commandes suivantes dans Exchange Online PowerShell :
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
+Ou
+
+```powershell
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
+```
+
 > [!TIP]
 > La meilleure façon de spécifier une boîte aux lettres inactive dans la commande précédente consiste à utiliser son nom unique ou sa valeur de GUID Exchange. L'une de ces valeurs permet d'empêcher de spécifier par inadvertance la mauvaise boîte aux lettres. 
+
+Pour plus d’informations sur l’utilisation de ces paramètres pour la gestion des délais de conservation, consultez la rubrique [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+
+Gardez les points suivants à l’esprit lors de la gestion d’une boîte aux lettres en attente de retard :
+
+- Si la propriété DelayHoldApplied ou DelayReleaseHoldApplied est définie sur **true** et qu’une boîte aux lettres (ou le compte d’utilisateur Office 365 correspondant) est supprimée, la boîte aux lettres devient une boîte aux lettres inactive. Cela est dû au fait qu’une boîte aux lettres est considérée comme en conservation si l’une des propriétés est définie sur **true**et que la suppression d’une boîte aux lettres bloquée entraîne la réception d’une boîte aux lettres inactive. Pour supprimer une boîte aux lettres et ne pas la transformer en boîte aux lettres inactive, vous devez définir les deux propriétés sur **false**.
+
+- Comme indiqué précédemment, une boîte aux lettres est considérée comme suspendue pendant une durée de conservation illimitée si la propriété DelayHoldApplied ou DelayReleaseHoldApplied est définie sur **true**. Toutefois, cela ne signifie pas que *tout* le contenu de la boîte aux lettres est préservé. Cela dépend de la valeur définie pour chaque propriété. Par exemple, supposons que les deux propriétés ont la valeur **true** , car les conservations sont supprimées de la boîte aux lettres. Ensuite, vous supprimez uniquement le blocage de délai appliqué aux données de Cloud non Outlook (à l’aide du paramètre *RemoveDelayReleaseHoldApplied* ). La prochaine fois que l’Assistant dossier géré traite la boîte aux lettres, les éléments non Outlook marqués pour suppression sont purgés. Les éléments Outlook marqués pour suppression ne seront pas supprimés définitivement car la propriété DelayHoldApplied est toujours définie sur **true**. La valeur opposée serait également true : si DelayHoldApplied est défini sur **false** et DelayReleaseHoldApplied est défini sur **true**, seuls les éléments Outlook marqués pour suppression seraient purgés.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

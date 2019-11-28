@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Découvrez comment les administrateurs peuvent utiliser Exchange Online PowerShell et un fichier CSV pour importer en bloc des contacts externes dans la liste d’adresses globale.
-ms.openlocfilehash: 272223d9ab61b2c5ae17043cf4523d49da306de9
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 12fc8ec47881ce5cb3dc00a7a646966588bd5cca
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685891"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39630984"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importation en bloc de contacts externes vers Exchange Online
 
@@ -42,7 +42,7 @@ Après avoir effectué ces étapes pour importer des contacts, vous pouvez effec
 
 La première étape consiste à créer un fichier CSV qui contient des informations sur chaque contact externe que vous souhaitez importer vers Exchange Online. 
   
-1. Copiez le texte suivant dans un fichier texte dans le bloc-notes et enregistrez-le sur votre bureau en tant que fichier CSV à l’aide d’un suffixe de nom de fichier. csv ; par exemple, ExternalContacts. csv.
+1. Copiez le texte suivant dans un fichier texte dans le bloc-notes et enregistrez-le sur votre bureau en tant que fichier CSV à l’aide d’un suffixe de nom de fichier. csv. par exemple, ExternalContacts. csv.
     
     > [!TIP]
     > Si votre langue contient des caractères spéciaux (tels que **å**, **ä**et **ö** en Suédois), enregistrez le fichier CSV avec UTF-8 ou un autre codage Unicode lorsque vous enregistrez le fichier dans le bloc-notes. 
@@ -95,11 +95,11 @@ L’étape suivante consiste à utiliser le fichier CSV que vous avez créé à 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Étape 3 : ajouter des informations aux propriétés des contacts externes
 
-Une fois que vous avez exécuté la commande à l’étape 2, les contacts externes sont créés, mais ils ne contiennent aucune des informations de contact ou d’organisation, c’est-à-dire les informations provenant de la plupart des cellules dans le fichier CSV. En effet, lorsque vous créez des contacts externes, seules les propriétés requises sont renseignées. Ne vous inquiétez pas si toutes les informations ne sont pas renseignées dans le fichier CSV. S’il ne s’y trouve pas, il ne sera pas ajouté.
+Une fois que vous avez exécuté la commande à l’étape 2, les contacts externes sont créés, mais ils ne contiennent aucune des informations de contact ou d’organisation, qui sont les informations provenant de la plupart des cellules dans le fichier CSV. En effet, lorsque vous créez des contacts externes, seules les propriétés requises sont renseignées. Ne vous inquiétez pas si toutes les informations ne sont pas renseignées dans le fichier CSV. S’il ne s’y trouve pas, il ne sera pas ajouté.
   
 1.  Connectez PowerShell à votre organisation Exchange Online. Pour obtenir des instructions détaillées, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Accédez au dossier du bureau dans lequel vous avez enregistré le fichier CSV à l’étape 1 ; par exemple `C:\Users\Administrator\desktop`.
+2. Accédez au dossier du bureau dans lequel vous avez enregistré le fichier CSV à l’étape 1 ; par exemple, `C:\Users\Administrator\desktop`.
     
 3. Exécutez les deux commandes suivantes pour ajouter les autres propriétés du fichier CSV aux contacts externes que vous avez créés à l’étape 2.
     

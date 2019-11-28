@@ -14,16 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc198bd5aa042cad2aadbe35ae4f19f66effe2bf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078528"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633583"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées de document dans Advanced eDiscovery
 
-Le tableau suivant répertorie les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery. Le tableau indique le nom du champ de métadonnées, indique s’il est possible d’effectuer une recherche dans le champ lors de l’exécution d’une requête dans un jeu de vérification, si le champ est présent lors de l’affichage des métadonnées d’un document sélectionné dans un jeu de révisions, et si le champ est inclus ou non lorsque des documents à nouveau exporté.
+Le tableau suivant répertorie les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery. Le tableau fournit les informations suivantes :
+
+- Nom du champ de métadonnées (dans la colonne **nom de champ** ).
+
+- Nom de la propriété que vous pouvez rechercher lors de l’exécution d’une [requête Review Set](review-set-search.md) (dans la colonne **nom du champ** pouvant faire l’objet d’une recherche). Une cellule vide signifie que vous ne pouvez pas rechercher le champ dans une requête d’ensemble de révision.
+
+- Nom du champ de métadonnées qui est inclus lors de l’exportation des documents (dans la colonne **nom du champ exporté** ).  Une cellule vide signifie que le champ de métadonnées n’est pas inclus avec les métadonnées exportées.
+
+- Nom du champ de métadonnées qui est affiché lors de l’affichage des métadonnées de fichier d’un document sélectionné dans un jeu de révision (dans la colonne **nom du champ d’affichage** ). Une cellule vide signifie que le champ de métadonnées n’est pas inclus lors de l’affichage des métadonnées de fichier d’un document.
+
+- Description du champ de métadonnées (dans la **colonne Description**).
 
 | Nom du champ | Nom de champ pouvant faire l’objet d’une recherche | Nom du champ exporté | Nom du champ d’affichage | Description |
 | :- |  :- |  :- |  :- |  :- |
@@ -44,7 +54,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 | Temps de gravure de la rédaction de conversation | ConversationRedactionBurnTime |  | Temps de gravure de la rédaction de conversation | Date à laquelle la version PDF de la conversation a été créée pour la conversation. |
 | Date de création du document | CreatedTime | Doc_date_created | Date de création du document | Créer une date à partir des métadonnées du document. |
 | Custodian | Custodian | Custodian | Custodian | Nom du dépositaire auquel l’élément a été associé. |
-| Date | Date | Date | Date | Date est un champ calculé qui dépend du type de fichier.<br />**Courrier électronique**: date d’envoi<br />**Pièces jointes de courrier électronique**: date de dernière modification du document, si elle n’est pas disponible, la date d’envoi du parent<br />**Documents incorporés**: date de dernière modification du document, si elle n’est pas disponible, date de la dernière modification du parent.<br />**Documents SPO (y compris les pièces jointes modernes)**: date de dernière modification de SharePoint, si elle n’est pas disponible, la date de la dernière modification des documents.<br />**Documents non Office**: date de la dernière modification<br />**Réunions**: date de début de la réunion<br />**Messagerie vocale**: date d’envoi<br />**Messagerie instantanée**: date d’envoi. |
+| Date | Date | Date | Date | Date est un champ calculé qui dépend du type de fichier.<br />**Courrier électronique**: date d’envoi<br />**Pièces jointes de courrier électronique**: date de dernière modification du document, si elle n’est pas disponible, la date d’envoi du parent<br />**Documents incorporés**: date de dernière modification du document, si elle n’est pas disponible, date de la dernière modification du parent.<br />**Documents SPO (y compris les pièces jointes modernes)**: date de dernière modification de SharePoint, si elle n’est pas disponible, la date de la dernière modification des documents.<br />**Documents non-Office**: date de dernière modification<br />**Réunions**: date de début de la réunion<br />**Messagerie vocale**: date d’envoi<br />**Messagerie instantanée**: date d’envoi. |
 | Autres chemins d’accès | Dedupedcompoundpath | Deduped_compound_path | Autres chemins d’accès | Liste des chemins d’accès composés de documents qui sont des doublons exactes (courrier électronique : basé sur le contenu, les documents : basé sur le hachage). |
 | Autres dépositaires | DedupedCustodians | Deduped_custodians | Autres dépositaires | Liste des dépositaires de documents qui sont des doublons exactes (pour la messagerie électronique : basée sur le contenu ; pour les documents : basé sur le hachage). |
 | Autres ID de fichier | DedupedFileIds | Deduped_file_IDs | Autres ID de fichier | Liste des ID de fichier des documents qui sont des doublons exactes (pour la messagerie électronique : basé sur le contenu ; pour les documents : basé sur le hachage). |
@@ -75,7 +85,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 | ID de famille | FamilyId | Family_ID | ID de famille | ID de famille groupe tous les éléments ; pour le courrier électronique, cela inclut le message et toutes les pièces jointes ; pour les documents, cela inclut le document et tous les éléments incorporés. |
 | Taille de la famille |  | Family_size | Taille de la famille | Nombre de documents dans la famille. |
 | Problème 1 du score de cas de pertinence des fichiers |  | File_relevance_score_case_issue_1 |  | Pertinence du fichier cas du problème 1 par rapport à la pertinence. |
-| Classe file | FileClass | File_class | Classe file | Pour le contenu provenant de SharePoint et OneDrive : **document**; pour le contenu à partir d’Exchange : **e-mail**ou **pièce jointe**. |
+| Classe file | FileClass | File_class | Classe file | Pour le contenu provenant de SharePoint et OneDrive : **document**; pour le contenu à partir d’Exchange : * * E-mail ou **pièce jointe**. |
 | ID de fichier | FileId | File_ID | ID de fichier | Identificateur de document unique dans le cas.|
 | Date du système de fichiers créée |  | File_system_date_created | Date du système de fichiers créée | Date de création à partir du système de fichiers (s’applique uniquement aux données non Office 365). |
 | Date du système de fichiers modifiée |  | File_system_date_modified | Date du système de fichiers modifiée | Date de modification à partir du système de fichiers (s’applique uniquement aux données non Office 365). |
@@ -87,10 +97,10 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 | Type inclusif | InclusiveType | Inclusive_type | Type inclusif | Type inclusif calculé pour l’analyse : **0** -non inclus ; **1** -inclus ; **2** -inclus moins ; copie **3** -inclusive. |
 | En réponse à l’ID |  | In_reply_to_ID | En réponse à l’ID | En réponse à l’ID du message. |
 | Est représentatif | IsRepresentative | Is_representative | Est représentatif | Un document dans chaque ensemble de doublons exact est marqué comme représentatif. |
-| Classe de l’élément | ItemClass | Item_class | Classe de l’élément | Classe d’élément fournie par Exchange Server ; par exemple **IPM. Note** |
+| Classe de l’élément | ItemClass | Item_class | Classe de l’élément | Classe d’élément fournie par Exchange Server ; par exemple, **IPM. Note** |
 | Dernière modification | LastModifiedDate | Doc_date_modified | Dernière modification | Date de dernière modification à partir des métadonnées de document. |
 | ID de chargement | LoadId | Load_ID | ID de chargement | Load ID, dans lequel l’élément a été chargé dans un jeu de révision. |
-| Emplacement | Emplacement | Emplacement | Emplacement | Chaîne qui indique le type d’emplacement à partir duquel les documents ont été issus ;<br />Données importées non-O365 ><br />Équipes > équipes<br />EXO-> Exchange<br />SPO-> SharePoint<br />OneDrive entreprise-> OneDrive |
+| L’emplacement | L’emplacement | L’emplacement | L’emplacement | Chaîne qui indique le type d’emplacement à partir duquel les documents ont été issus ;<br />Données importées non-O365 ><br />Équipes > équipes<br />EXO-> Exchange<br />SPO-> SharePoint<br />OneDrive entreprise-> OneDrive |
 | Nom de l’emplacement | LocationName | Location_name | Nom de l’emplacement | Chaîne qui identifie la source de l’élément.  Pour Exchange, il s’agit de l’adresse SMTP de la boîte aux lettres.  Pour SharePoint et OneDrive, l’URL de la collection de sites. |
 | Marqué comme représentant | MarkAsRepresentative |  | Marqué comme représentant | Un document de chaque ensemble de doublons exact est marqué comme représentant. |
 | Marqué comme problème pré-balisé 1 |  | Marked_as_pre_tagged_Case_issue_1 |  | Marqué comme prébalisage du problème 1 de la pertinence. |
@@ -116,7 +126,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 | Participants | Participants | Email_participants | Participants | Liste de tous les participants d’un message ; par exemple, expéditeur, à, CC, CCI. |
 | ID de tableau croisé dynamique | PivotId | Pivot_ID | ID de tableau croisé dynamique | ID d’un tableau croisé dynamique. |
 | Potentiellement privilégié | PotentiallyPrivileged | Potentially_privileged | Potentiellement privilégié | True si le modèle de détection des privilèges du client estime que le document est potentiellement privilégié |
-| État de traitement | ProcessingStatus | Code_erreur | État de traitement | État de traitement après l’ajout de l’élément à un jeu de révision. |
+| État de traitement | ProcessingStatus | Error_code | État de traitement | État de traitement après l’ajout de l’élément à un jeu de révision. |
 | Problème de lecture du cas pour le pourcentage 1 |  | Read_percent_Case_issue_1 |  | Lire le problème de cas de pourcentage 1 par rapport à la pertinence. |
 | Centile en lecture | ReadPercentile |  | Centile en lecture | En lecture de centile pour le document en fonction de la pertinence. |
 | Nombre de destinataires |  | Recipient_count | Nombre de destinataires | Nombre de destinataires dans le message. |
@@ -142,11 +152,11 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 | Tags | Tags | Tags | Tags | Balises appliquées dans un jeu de révision. |
 | Liste des thèmes | ThemesList | Themes_list | Liste des thèmes | Liste des thèmes telle qu’elle est calculée pour l’analyse. |
 | Titre | Titre | Doc_title | Titre | Titre des métadonnées du document. |
-| À | À | Email_to | À | Champ à pour pour les types de message.  Le format **est\<DisplayName SmtpAddress>** |
+| À | À | Email_to | À | Champ à pour les types de message.  Le format **est\<DisplayName SmtpAddress>** |
 | Unique dans le groupe de courriers | UniqueInEmailSet |  | Unique dans le groupe de courriers | False s’il existe un doublon de la pièce jointe dans son jeu de courriers. |
 | A été résolu | WasRemediated | Was_Remediated | A été résolu | True si l’élément a été résolu, sinon false. |
 | Statistiques | WordCount | Word_count | Statistiques | Nombre de mots dans l’élément. |
 ||||||
 
   > [!NOTE]
-  > Pour plus d’informations sur les champs pouvant faire l’objet d’une recherche lorsque vous recherchez directement sur Office 365, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
+  > Pour plus d’informations sur les propriétés pouvant faire l’objet d’une recherche lors de la recherche d’emplacements de contenu Office 365 lorsque vous collectez des données pour un cas avancé de découverte électronique, voir [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).

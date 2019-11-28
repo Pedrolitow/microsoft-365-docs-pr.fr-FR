@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: En savoir plus sur la conformité des communications dans Microsoft 365
-ms.openlocfilehash: 3765e8236b319eaadc543782f2254aefaa8914a2
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685712"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633663"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Conformité de la communication dans Microsoft 365 (version d’évaluation)
 
@@ -31,7 +31,7 @@ Les stratégies de conformité des communications dans Microsoft 365 vous aident
 
 - Analyse des types croissants de canaux de communication
 - Augmentation du volume des données de message
-- Application réglementaire & le risque d’amendes
+- Application réglementaire et risques d’amendes
 
 Dans certaines organisations, le support informatique et le groupe de gestion de la conformité peuvent séparer les tâches. Microsoft 365 prend en charge la séparation entre la configuration de la conformité de la communication et la configuration des stratégies d’analyse des communications. Par exemple, le groupe informatique d’une organisation peut être responsable de la configuration des autorisations de rôle et des groupes afin de prendre en charge les stratégies de conformité de communication configurées et gérées par l’équipe de conformité de l’organisation.
 
@@ -49,7 +49,7 @@ Les stratégies de conformité des communications peuvent vous aider à examiner
 
 - **Conformité réglementaire**
 
-    La plupart des organisations doivent se conformer à certains types de normes de conformité réglementaire dans le cadre de leurs procédures d’utilisation normales. Ces réglementations obligent souvent les organisations à mettre en place un certain type de processus de surveillance ou de supervision pour la messagerie appropriée pour leur secteur d’activité. La règle 3110 de l’autorité réglementaire du secteur financier (FINRA) est un excellent exemple d’une obligation pour les organisations de mettre en place des procédures de surveillance pour analyser les communications des employés et les types d’entreprises dans lesquelles elle s’engage. Un autre exemple peut être un besoin de passer en revue les communications avec des concessionnaires de courtiers dans votre organisation afin de se protéger contre les activités potentielles de blanchiment de fonds, de commerce d’initié, de collusion ou de corruption. Les stratégies de conformité des communications peuvent aider votre organisation à répondre à ces exigences en fournissant un processus à l’analyse et à la création de rapports sur les communications d’entreprise.
+    La plupart des organisations doivent se conformer à certains types de normes de conformité réglementaire dans le cadre de leurs procédures d’utilisation normales. Ces réglementations obligent souvent les organisations à mettre en place un certain type de processus de surveillance ou de supervision pour la messagerie appropriée pour leur secteur d’activité. La règle 3110 de l’autorité réglementaire du secteur financier (FINRA) est un excellent exemple d’une obligation pour les organisations de mettre en place des procédures de surveillance pour analyser les communications des employés et les types d’entreprises dans lesquelles elle s’engage. Un autre exemple peut être un besoin de passer en revue les communications avec des concessionnaires de courtiers dans votre organisation afin de se protéger contre le blanchiment potentiel, les opérations d’initiés, les opérations de collusion ou les actions de corruption. Les stratégies de conformité des communications peuvent aider votre organisation à répondre à ces exigences en fournissant un processus à l’analyse et à la création de rapports sur les communications d’entreprise.
 
 ## <a name="new-enhancements"></a>Nouvelles améliorations
 
@@ -79,7 +79,7 @@ Les flux de travail de correction intégrés vous permettent d’identifier rapi
 - **Détection des doublons exact et near**: en plus de rechercher les termes exacts de correspondance des stratégies de conformité des communications, des groupes de détection en double, proches de façon textuelle, des termes et des messages similaires, pour accélérer le processus de révision.
 - **Nouveaux filtres**: étudiez et corrigez les alertes de stratégie plus rapidement avec des filtres de message pour plusieurs champs, dont l’expéditeur, le destinataire, la date, les domaines et bien d’autres encore.
 - **Vues de messages améliorées**: les actions d’enquête et de correction sont désormais plus rapides grâce aux nouvelles vues de source de message, de texte et d’annotation. Les pièces jointes des messages sont désormais affichables pour fournir un contexte complet lors de l’exécution d’actions de correction.
-- **Affichage de l’historique des utilisateurs**: vue historique de toutes les activités de correction des messages utilisateur, telles que les notifications antérieures et les escalades pour les correspondances de stratégie, fournissent maintenant des relecteurs plus contexte lors du processus de flux de travail de correction. Les instances First-Time ou REPEAT des correspondances de stratégie pour les utilisateurs sont désormais archivées et faciles à afficher.
+- **Affichage de l’historique des utilisateurs**: vue historique de toutes les activités de correction des messages utilisateur, telles que les notifications passées et les escalades pour les correspondances de stratégie, fournit désormais des relecteurs avec davantage de contexte lors du processus de flux de travail de correction. Les instances First-Time ou REPEAT des correspondances de stratégie pour les utilisateurs sont désormais archivées et faciles à afficher.
 
 ### <a name="actionable-insights"></a>Informations exploitables
 
@@ -126,7 +126,7 @@ Dans cette étape, vous allez approfondir les problèmes détectés comme corres
 - **Alertes**: lorsqu’un message correspond à une stratégie de surveillance, une alerte est générée automatiquement. Pour chaque alerte, vous pouvez voir l’État, la gravité, l’heure détectée et le cas échéant, ainsi que son état. Les nouvelles alertes sont affichées dans la page d’accueil de la conformité de la communication et la page des **alertes** et sont répertoriées par ordre de gravité.
 - **Gestion des problèmes**: pour chaque alerte, vous pouvez prendre des mesures d’enquête afin de résoudre le problème détecté dans le message.
 - **Révision de document**: lors de l’enquête sur un problème, vous pouvez utiliser plusieurs vues du message pour évaluer correctement le problème détecté. Les affichages incluent un résumé de conversation, du texte, des annotations et des affichages détaillés de la conversation de communication.
-- **Examen**de l’historique des activités de l’utilisateur : Affichez l’historique des activités des messages utilisateur et des actions de correction, telles que les notifications antérieures et les escalades pour les correspondances de stratégie.
+- **Examen de l’historique des activités utilisateur**: Affichez l’historique des activités des messages utilisateur et des actions de correction, telles que les notifications et les escalades passées, pour les correspondances de stratégie.
 - **Filtres**: utilisez des filtres tels que sender, Recipient, date et subject pour limiter rapidement les alertes de message que vous souhaitez examiner.
 
 ### <a name="remediate"></a>Corriger

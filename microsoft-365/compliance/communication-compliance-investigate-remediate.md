@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Examinez et corrigez les alertes de conformité des communications dans Microsoft 365.
-ms.openlocfilehash: 8aaf74ceafc737487bd97bb7c71b26fc139aacf0
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 336ce22813b60a4543941b18e11acf525570bb26
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685716"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633683"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Examiner et corriger les alertes de conformité des communications (préversion)
 
@@ -31,7 +31,7 @@ Une fois que vous avez configuré vos stratégies de conformité de communicatio
 
 La première étape pour examiner les problèmes détectés par vos stratégies consiste à passer en revue les alertes générées dans le centre de conformité Microsoft 365. Il existe plusieurs domaines dans le centre de conformité pour vous aider à examiner rapidement les alertes, en fonction de la manière dont vous préférez afficher le regroupement des alertes :
 
-- **Page d’accueil de la communication**: lorsque vous [https://compliance.microsoft.com](https://compliance.microsoft.com) vous connectez à l’aide des informations d’identification d’un compte d’administrateur de votre organisation Microsoft 365, sélectionnez **communication Compliance** > **Overview** pour afficher la page d’accueil de la communication. Vous verrez ici :
+- **Page d’accueil de la communication**: lorsque vous vous [https://compliance.microsoft.com](https://compliance.microsoft.com) connectez à à l’aide des informations d’identification d’un compte d’administrateur de votre organisation Microsoft 365, sélectionnez **communication Compliance** > **Overview** pour afficher la page d’accueil de la communication. Vous verrez ici :
     - Alertes nécessitant une révision dont la gravité est élevée à faible. Sélectionnez une alerte pour lancer la page Détails de l’alerte et démarrer les actions de correction.
     - Les stratégies récentes correspondent à celles indiquées par nom de stratégie.
     - Éléments résolus affichés par nom de stratégie.
@@ -112,7 +112,7 @@ Quelle que soit l’endroit où vous commencez à examiner les alertes ou le fil
     - **Resolve**: la sélection du contrôle de **résolution** supprime immédiatement le message de la file d’attente des **alertes en attente** et aucune autre action ne peut être effectuée sur le message. En sélectionnant **résoudre**, vous avez essentiellement fermé l’alerte sans autre classification et elle ne peut pas être rouverte pour d’autres actions. Tous les messages résolus sont affichés sous l’onglet **résolu** .
     - **Faux positif**: vous pouvez toujours résoudre un message en tant que faux positif à tout moment pendant le flux de travail de révision des messages. Le message ne peut pas être rouvert et tous les faux positifs sont affichés sous l’onglet **résolu** .
     - **Balise comme**: balise le message comme étant *conforme*, *non conforme*ou comme étant *question* en relation avec les stratégies et les normes de votre organisation. L’ajout de balises et de commentaires de marquage peut vous aider à filtrer les alertes de stratégie pour les escalades ou dans d’autres processus de révision interne. Une fois le marquage terminé, vous pouvez également choisir de résoudre le message pour le déplacer de la file d’attente de révision en attente.
-    - **Notifier**: vous pouvez utiliser le contrôle **Notify** pour affecter un modèle d’avertissement personnalisé à l’alerte et envoyer un avertissement à l’utilisateur. Sélectionnez le modèle d’avertissement approprié et sélectionnez **Envoyer pour envoyer** un rappel à l’employé qui a envoyé le message et résoudre le problème.
+    - **Notifier**: vous pouvez utiliser le contrôle **Notify** pour affecter un modèle d’avertissement personnalisé à l’alerte et envoyer un avertissement à l’utilisateur. Choisissez le modèle d’avertissement approprié, puis sélectionnez **Envoyer pour envoyer** un rappel à l’employé qui a envoyé le message et résoudre le problème.
     - **Escalade**: à l’aide du contrôle d' **escalade** , vous pouvez choisir les autres personnes de votre organisation qui doivent consulter le message. Dans la liste des relecteurs configurés, effectuez une sélection pour envoyer une notification par courrier électronique demandant une révision supplémentaire de l’alerte de message. Le réviseur sélectionné peut utiliser un lien dans la notification par courrier électronique pour accéder directement aux éléments qui y sont réaffectés à des fins de révision.
 
 4. **Déterminez si les détails du message doivent être archivés en dehors de la conformité de la communication**: les détails du message peuvent être exportés ou téléchargés si vous devez archiver les messages dans une solution de stockage distincte. La sélection du contrôle de **Téléchargement** ajoute automatiquement les messages sélectionnés à un. Fichier ZIP qui peut être enregistré en dehors de Microsoft 365.

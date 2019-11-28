@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Vous pouvez modifier la taille par défaut des fichiers PST téléchargés sur votre ordinateur lorsque vous exportez les résultats de recherche de découverte électronique.
-ms.openlocfilehash: b3bba45ce336b143ed948db384673f0a1a5a456f
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 3a302164a1de6d383e2e120dd7a849e692e622eb
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685893"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634001"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery
 
 Lorsque vous utilisez l’outil d’exportation de découverte électronique Office 365 pour exporter les résultats du courrier électronique d’une recherche de découverte électronique à partir des différents outils eDiscovery de Microsoft, la taille par défaut d’un fichier PST pouvant être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. L’une des raisons pour y parvenir est qu’un fichier PST peut tenir sur un support amovible, un DVD, un disque compact ou un lecteur USB. 
   
 > [!NOTE]
->  L’outil d’exportation de découverte électronique Office 365 est utilisé pour exporter les résultats de la recherche lors de l’utilisation de l’outil de recherche de contenu dans le centre de sécurité et de conformité, la découverte électronique inaltérable dans Exchange Online et le centre eDiscovery dans SharePoint Online.
+> L’outil d’exportation de découverte électronique Office 365 est utilisé pour exporter les résultats de la recherche lors de l’utilisation de l’outil de recherche de contenu dans le centre de sécurité et de conformité, la découverte électronique inaltérable dans Exchange Online et le centre eDiscovery dans SharePoint Online.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Créer un paramètre de Registre pour modifier la taille des fichiers PST lors de l’exportation des résultats de recherche de découverte électronique
 
@@ -43,7 +43,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
     
     |**Taille en Go (env.)**|**Taille en octets**|
     |:-----|:-----|
-    |.7 GO (700 MO)  <br/> |751619277  <br/> |
+    |0,7 GO (700 MO)  <br/> |751619277  <br/> |
     |2 Go  <br/> |2147483648  <br/> |
     |4 Go  <br/> |4294967296  <br/> |
     |8 Go  <br/> |8589934592  <br/> |
@@ -68,7 +68,7 @@ La taille par défaut de 10 Go était basée sur les commentaires des clients ;
   
  **Dois-je augmenter ou réduire la taille par défaut des fichiers PST ?**
   
-Les clients ont tendance à réduire la limite de taille afin que les résultats de la recherche tiennent sur des supports amovibles qu’ils peuvent physiquement fournir à d’autres emplacements de leur organisation. Il n’est pas recommandé d’augmenter la taille par défaut, car les fichiers PST de plus de 10 Go peuvent présenter des problèmes d’endommagement.
+Les clients ont tendance à réduire la limite de taille afin que les résultats de la recherche tiennent sur des supports amovibles qu’ils peuvent expédier physiquement à d’autres emplacements de leur organisation. Il n’est pas recommandé d’augmenter la taille par défaut, car les fichiers PST de plus de 10 Go peuvent présenter des problèmes d’endommagement.
   
  **Sur quel ordinateur dois-je effectuer cette opération ?**
   
