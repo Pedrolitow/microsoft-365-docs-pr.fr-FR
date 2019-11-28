@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 70be19947e31d8c2b918d12887d63b1b360cf37b
-ms.sourcegitcommit: 3df6b6092542d466661c0fa08b7bfe7cec441b55
+ms.openlocfilehash: f46f5164340ec257a056a2f31bec8f846bb4a54a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254373"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634051"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau gérés Microsoft 
 
@@ -25,7 +25,7 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 Les liens vers les appareils sont fournis à des fins de référence uniquement. Si vous souhaitez commander des appareils, utilisez les contacts de votre canal commercial afin de vous assurer que vous choisissez les configurations correctes. Dans ce tableau, la *Date d’archivage* correspond à la date à laquelle ces modèles feront l’objet d’une durée de vie de service de bureau gérée Microsoft plus courte ; tous les appareils embarqués après cette date ne recevront pas de prise en charge complète de trois ans par le bureau géré Microsoft. Les appareils archivés sont également répertoriés dans [Microsoft Managed Desktop Archived Devices](archived-device-list.md). *Date de suppression* est la date à laquelle ce modèle ne sera plus pris en charge par le bureau géré par Microsoft. À cette date, tous les périphériques d’enregistrement de ce modèle seront supprimés du bureau géré Microsoft, quel que soit le moment de leur enregistrement.
 
 >[!NOTE]
->Des appareils peuvent être ajoutés à ce tableau à tout moment, mais nous vous fournirons un préavis de 90 jours pour toute modification affectant les archives ou la date de retraite.
+>Des appareils peuvent être ajoutés à ce tableau à tout moment, mais nous vous fournirons un préavis de 90 jours pour toute modification affectant les archives ou la date de retraite. Les derniers périphériques ajoutés sont marqués par **\***.
 
 
 **Appareils de bureau gérés Microsoft**
@@ -38,8 +38,8 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 | [Dell Latitude 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 9 janvier 2020  | 9 janvier 2023  |
 | [Dell Latitude 7200 2-in-1/7300/7400](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er mai 2021  | 1er mai 2024  |
 | [Dell Latitude 7390 7390 2-en-1/7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 Go/Intel i5/8 Go de RAM   | Appareil infrarouge requis | 9 janvier 2020 | 9 janvier 2023 |
-| [PC portables HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis | 30 novembre 2020 | 30 novembre 2023 |
-| [PC bloc-notes HP EliteBook x360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis | 30 novembre 2020 | 30 novembre 2023 |
+| **\*[PC portables HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features)** | 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis | 30 novembre 2020 | 30 novembre 2023 |
+| **\*[PC bloc-notes HP EliteBook x360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc)** | 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis | 30 novembre 2020 | 30 novembre 2023 |
 | [HP Elite x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS03AV, appareil infrarouge obligatoire | 14 mai 2020 | 14 mai 2023 |
 | [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire | 14 mai 2020 | 14 mai 2023 |
 | [HP EliteBook x360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire | 23 octobre 2020 | 23 octobre 2023 |
@@ -48,9 +48,9 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 | [HP EliteOne 800 G4 23.8 dans AIO](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV | 18 juillet 2020 | 18 juillet 2023 |
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV, appareil photo infrarouge ou lecteur d’empreintes digitales requis | 6 juin 2020 | 6 juin 2023 |
 | [Surface Book 2](https://www.microsoft.com/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 256 Go/Intel i5/8 Go de RAM | écran 15 pouces | 16 novembre 2019 | 16 novembre 2022 |
-| [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel 4415Y/8 Go de RAM | Aucune | 2 août 2020 | 2 août 2023 |
-| [Ordinateur portable de surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 Go/Intel i5/8 Go de RAM | Aucune | 16 octobre 2020 | 16 octobre 2023 |
-| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel i5/8 Go de RAM | Aucune | 16 octobre 2020 | 16 octobre 2023 |
+| [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel 4415Y/8 Go de RAM | Néant | 2 août 2020 | 2 août 2023 |
+| [Ordinateur portable de surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 Go/Intel i5/8 Go de RAM | Néant | 16 octobre 2020 | 16 octobre 2023 |
+| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel i5/8 Go de RAM | Néant | 16 octobre 2020 | 16 octobre 2023 |
 
 
 

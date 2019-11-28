@@ -17,16 +17,16 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie qui détecte les messages contenant du courrier indésirable ou des programmes malveillants qui ont déjà été remis dans la boîte de réception de vos utilisateurs, puis rend le contenu malveillant inoffensif. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: dd702e88dc2400367330d9cb1b54b5b0017334e4
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 8496887f135e5a2c6496f969d420ae6eaa8f4908
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191229"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631584"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure : protection contre le courrier indésirable et les programmes malveillants
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie qui détecte les messages contenant des messages hameçons, des courriers indésirables ou des programmes malveillants qui ont déjà été remis dans la boîte de réception de vos utilisateurs, puis rend le contenu malveillant inoffensif. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté. Les messages peuvent être zapped en raison du contenu, des URL ou des pièces jointes du courrier.
   
@@ -42,7 +42,7 @@ Les listes d’autorisation, les [règles de flux de messagerie](https://go.micr
 
 ### <a name="malware-zap"></a>Programme malveillant ZAP
 
-Pour les programmes malveillants nouvellement détectés, ZAP supprime les pièces jointes des messages électroniques, en laissant le corps du message dans la boîte aux lettres de l’utilisateur. Les pièces jointes sont supprimées, quel que soit l’état de lecture du message.
+Pour les programmes malveillants nouvellement détectés, ZAP déplace l’intégralité du message, y compris sa pièce jointe, vers la quarantaine des programmes malveillants. Les messages sont déplacés quel que soit l’état de lecture du message. Si nous obtenons un signal de programme malveillant pour un message dans le processus d’analyse de remise dynamique, ZAP effectue une action de courrier indésirable dans le message. Ensuite, la remise dynamique est autorisée à terminer le temps d’analyse de la remise et à effectuer l’action appropriée.
 
 Le logiciel malveillant ZAP est activé par défaut dans la stratégie de programmes malveillants. Vous pouvez désactiver le programme malveillant ZAP à l’aide du paramètre *ZapEnabled* sur la cmdlet [Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell. Le logiciel malveillant ZAP peut également être activé ou désactivé en modifiant la stratégie de programmes malveillants dans le centre de sécurité et de conformité.
 
@@ -58,7 +58,7 @@ Pour les messages identifiés comme courrier indésirable après la remise, ZAP 
 
 Le courrier indésirable ZAP est activé par défaut dans la stratégie de courrier indésirable. Vous pouvez désactiver le blocage du courrier indésirable à l’aide du paramètre *SpamZapEnabled* de l’applet de commande [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell.
 
-###<a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>Exigences, exclusions et notifications pour le hameçonnage et le courrier indésirable
+### <a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>Exigences, exclusions et notifications pour le hameçonnage et le courrier indésirable
 
 > [!IMPORTANT]
 > le paramètre précédent de l’applet de commande *ZapEnabled* qui a contrôlé à la fois le hameçonnage et le blocage du courrier indésirable est **déconseillé le 1er février 2020**. Si vous avez écrit des scripts qui utilisent le paramètre ZapEnabled, nous vous recommandons de les mettre à jour afin d’utiliser SpamZapEnabled et PhishZapEnabled. Pendant la période de transition, tous les 3 paramètres (ZapEnabled, PhishZapEnabled et SpamZapEnabled) seront disponibles via l’applet de commande. Tant qu’il n’est pas explicitement défini via l’interface utilisateur ou PowerShell, PhishZapEnabled et SpamZapEnabled affichent une valeur héritée du paramètre ZapEnabled. Une fois les nouveaux paramètres définis, ils n’héritent plus du paramètre ZapEnabled. Une fois déconseillée, le paramètre ZapEnabled n’a aucun effet sur les propriétés PhishZapEnabled ou SpamZapEnabled et ZapEnabled sera supprimé de la liste des paramètres dans cmdlets.

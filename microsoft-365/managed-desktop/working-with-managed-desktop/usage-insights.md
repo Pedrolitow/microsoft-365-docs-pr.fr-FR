@@ -1,20 +1,20 @@
 ---
-title: Informations sur l’utilisation
+title: Informations d’utilisation
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f1d1deb031d26f9dec687b73be86ec8a2491a50
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256861"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634021"
 ---
-# <a name="usage-insights"></a>Informations sur l’utilisation
-Cette vue fournit des mesures d’utilisation pour vos appareils de bureau gérés par Microsoft. 
+# <a name="usage-insights"></a>Informations d’utilisation
+Cette vue fournit des mesures d’utilisation pour vos appareils de bureau gérés par Microsoft. À cette fin, une application est considérée « en cours d’utilisation » si elle est en cours d’exécution et en focus.
 
 Pour afficher les données d’utilisation, sélectionnez l’onglet **utilisation** .
 

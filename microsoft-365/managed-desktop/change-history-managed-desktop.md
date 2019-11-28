@@ -8,18 +8,45 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369625"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634061"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cette rubrique répertorie les rubriques nouvelles et mises à jour dans la [documentation du bureau géré Microsoft](index.yml). Les rubriques « mises à jour » sont celles qui ont eu des ajouts ou corrections de matériel (correctifs mineurs, tels que la correction des fautes de frappe, de style ou de mise en forme). Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails de toutes les modifications) en visitant le [référentiel sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
-## <a name="september-2019"></a>Septembre 2019
+## <a name="november-2019"></a>Novembre 2019
+Rubrique nouvelle ou modifiée | Description
+--- | ---
+[Utiliser les informations](working-with-managed-desktop/insights.md) | Nouvelle rubrique
+[Informations d’utilisation](working-with-managed-desktop/usage-insights.md) | Nouvelle rubrique
+[Informations de fiabilité](working-with-managed-desktop/reliability-insights.md) | Nouvelle rubrique
+[Appareils de bureau gérés Microsoft](service-description/device-list.md) | Rubrique mise à jour
+[Page principale du bureau géré Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Rubrique mise à jour
+[Qu’est-ce que le bureau géré Microsoft ?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Rubrique mise à jour
+[Préparer vos utilisateurs à l’utilisation des appareils](get-started/get-started-devices.md) | Rubrique mise à jour
+[Exceptions au plan de service](service-description/customizing.md) | Rubrique mise à jour
+
+
+## <a name="october-2019"></a>Octobre 2019
+Rubrique nouvelle ou modifiée | Description
+--- | ---
+[Exceptions au plan de service](service-description/customizing.md) | Nouvelle rubrique
+[Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md) | Rubrique mise à jour
+[Prise en charge des administrateurs pour le bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Rubrique mise à jour
+[Modifications de service et communication](service-description/servicechanges.md) | Nouvelle rubrique
+[Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Rubrique mise à jour
+[Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Rubrique mise à jour
+[Régions et langues prises en charge par Microsoft Managed Desktop](service-description/regions-languages.md) | Rubrique mise à jour
+
+
+
+
+## <a name="september-2019"></a>Septembre 2019
 Rubrique nouvelle ou modifiée | Description
 --- | ---
 [Technologies de bureau géré Microsoft](intro/technologies.md) | Rubrique mise à jour
@@ -44,7 +71,7 @@ Rubrique nouvelle ou modifiée | Description
 
 
 
-## <a name="july-2019"></a>Juillet 2019
+## <a name="july-2019"></a>Juillet 2019
 Rubrique nouvelle ou modifiée | Description
 --- | ---
 [Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Rubrique mise à jour
@@ -52,7 +79,7 @@ Rubrique nouvelle ou modifiée | Description
 [Configuration des appareils](service-description/device-policies.md) | Rubrique mise à jour
 
 
-## <a name="june-2019"></a>2019 juin
+## <a name="june-2019"></a>Juin 2019
 Rubrique nouvelle ou modifiée | Description
 --- | ---
 [Applications dans le bureau géré Microsoft](get-ready/apps.md) | Rubrique mise à jour
