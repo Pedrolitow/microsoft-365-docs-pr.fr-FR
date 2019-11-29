@@ -3,7 +3,7 @@ title: Protéger les fichiers SharePoint Online avec des étiquettes de rétenti
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/18/2019
+ms.date: 11/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,18 +18,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Résumé : appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
-ms.openlocfilehash: 5c7d267b37f024d4defa34b4dfbeff3ba9255ac5
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 4c9eb83cbde7d54706f109484257e97c22c4733c
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38710030"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631024"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 
- **Résumé :** appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.
-  
-Suivez les étapes décrites dans cet article afin de créer et de déployer des étiquettes de rétention et des stratégies DLP pour des sites d’équipe SharePoint Online de base, sensibles et hautement confidentiels. Pour plus d’informations sur ces trois niveaux de protection, consultez [Sécuriser des sites et des fichiers SharePoint Online](/security/office-365-security/secure-sharepoint-online-sites-and-files.md).
+Suivez les étapes décrites dans cet article afin de créer et de déployer des étiquettes de rétention et des stratégies DLP pour des sites d’équipe SharePoint Online de base, sensibles et hautement confidentiels. Pour plus d’informations sur ces trois niveaux de protection, consultez [Sécuriser des sites et des fichiers SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection).
   
 ## <a name="how-this-works"></a>Procédure
 
@@ -152,7 +150,7 @@ Suivez ces étapes pour configurer une stratégie DLP qui avertit les utilisate
     
 14. Dans le volet **Personnaliser les conseils et les notifications par e-mail de la stratégie**, cliquez sur **Personnaliser le texte de l’info-bulle de la stratégie**.
     
-15. Dans la zone de texte, saisissez ou collez l’un des conseils suivants, selon si vous avez implémenté Azure Information Protection pour protéger les fichiers hautement confidentiels :
+15. Dans la zone de texte, saisissez ou collez l’un des conseils suivants, suivant si vous utilisez les étiquettes de rétention pour protéger les fichiers strictement confidentiels :
     
   - Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.
   - Les fichiers hautement confidentiels sont protégés par chiffrement. Seuls les utilisateurs externes qui y ont été autorisés par votre service informatique peuvent lire ces fichiers.
@@ -219,7 +217,7 @@ Voici le résultat de votre configuration pour les sites d’équipe SharePoint 
   
 ## <a name="next-step"></a>Étape suivante
 
-[Protéger les fichiers SharePoint Online avec Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
+[Protéger les fichiers SharePoint Online à l’aide d’étiquettes de confidentialité](protect-sharepoint-online-files-with-sensitivity-label.md)
     
 ## <a name="see-also"></a>Voir aussi
 
