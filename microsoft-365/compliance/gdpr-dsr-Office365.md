@@ -1,7 +1,7 @@
 ---
-title: Demandes de service de données Office 365 en vertu du RGPD
-description: Comprendre les droits d’utilisateur en vertu du RGPD et comment Office 365 permet aux entreprises de rechercher et de traiter des données en réponse à des DSR.
-keywords: Office 365, DSR, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
+title: Demandes de service de données Office 365 en vertu du RGPD et du CCPA
+description: Comprendre les droits d’utilisateur en vertu du RGPD et du CCPA et comment Office 365 permet aux entreprises de rechercher et de traiter des données en réponse à des DPC.
+keywords: Office 365, DPC, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,28 +9,32 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: bacf6b55bc4c92987511bdf1ab4ac5b120f11836
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 9f2d17c6165a028061cf7d155f828c683f09543f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071493"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624518"
 ---
-# <a name="office-365-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées pour Office 365 concernant le RGPD
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées pour Office 365 concernant le RGPD et le CCPA
 
 ## <a name="introduction-to-dsrs"></a>Présentation des DPC
 
-Le [Règlement général sur la protection des données de l’Union Européenne (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) permet aux utilisateurs (désignés dans le règlement comme étant les *personnes concernées*) de gérer les données personnelles collectées par un employeur ou tout autre type d’agence ou organisation (le *contrôleur des données*ou le *contrôleur* uniquement). Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données, les demandes de modification de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à un autre contrôleur. Toute demande formelle effectuée par une personne concernée à un contrôleur au sujet de la prise de mesure sur ses données personnelles est appelée *Demande des personnes concernées* ou DSR. Le contrôleur est obligé de prendre rapidement en compte chaque DSR et de fournir une réponse substantielle en prenant la mesure demandée ou en fournissant une explication s’il n’a pas la capacité de le faire. Un contrôleur doit consulter son conseiller juridique ou en matière de conformité à propos des dispositions appropriées pour toute DSR donnée.
+Le [Règlement général sur la protection des données de l’Union Européenne (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) permet aux utilisateurs (désignés dans le règlement comme étant les *personnes concernées*) de gérer les données personnelles collectées par un employeur ou tout autre type d’agence ou organisation (le *contrôleur des données*ou le *contrôleur*). Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données, les demandes de modification de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à un autre contrôleur. Toute demande formelle effectuée par une personne concernée à un contrôleur au sujet de la prise de mesure sur ses données personnelles est appelée *Demande des personnes concernées* ou DPC. Le contrôleur est obligé de prendre rapidement en compte chaque DPC et de fournir une réponse substantielle en prenant la mesure demandée ou en fournissant une explication s’il n’a pas la capacité de le faire. Un contrôleur doit consulter son conseiller juridique ou en matière de conformité à propos des dispositions appropriées pour toute DPC.
 
-Le guide explique comment utiliser les outils d’administration, les services et les produits Office 365 pour vous aider à rechercher et à traiter des données personnelles pour répondre à des DPC. Plus précisément, il explique comment rechercher, consulter et traiter des données personnelles stockées dans le cloud Microsoft. Voici un aperçu des processus décrits dans ce guide :
+De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles. Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
-- **Découvrir** : utilisez les outils de recherche et de découverte pour rechercher plus facilement des données client qui peuvent être l’objet d’une DPC. Une fois que vous avez collecté les documents pouvant être utiles, vous pouvez effectuer une ou plusieurs des actions DPC décrites dans les étapes suivantes pour répondre à la demande. Par ailleurs, vous pouvez déterminer que la demande ne respecte pas les instructions de votre organisation pour répondre à des DPC.
+Le guide décrit comment utiliser les produits, les services et les outils d’administration d’Office 365 pour vous aider à rechercher des données ou des informations personnelles et à prendre des mesures pour répondre aux DPC. Plus précisément, il explique comment rechercher des données ou des informations personnelles qui sont stockées dans le cloud Microsoft, comment y accéder et comment entreprendre une action sur ces données. Voici un aperçu rapide des processus présentés dans ce guide :
+
+- **Découvrir** : utilisez les outils de recherche et de détection pour rechercher plus facilement les données du client qui peuvent faire l’objet d’une demande DPC. Une fois que vous avez collecté les documents susceptibles de répondre à la demande, vous pouvez effectuer une ou plusieurs des actions DPC décrites ci-après. Vous pouvez également décider que la demande ne satisfait pas aux directives de votre organisation en termes de réponse à une demande DPC.
 - **Accéder :** récupérez des données à caractère personnel qui résident dans le cloud Microsoft et, si nécessaire, effectuez-en une copie pour la personne concernée.
 - **Rectifier :** modifiez ou mettez en œuvre d’autres actions demandées sur les données à caractère personnel, le cas échéant.
-- **Limiter :** limitez le traitement des données à caractère personnel, soit en supprimant des licences pour différents services Azure, soit en désactivant les services souhaités, lorsque cela est possible. Vous pouvez également supprimer des données du cloud Microsoft et les conserver localement ou ailleurs.
+- **Limiter** : limiter le traitement des données personnelles en supprimant les licences de différents services Azure ou en désactivant les services souhaités lorsque c’est possible. Vous pouvez également supprimer les données du cloud Microsoft et les conserver localement ou à un autre emplacement.
 - **Supprimer :** supprimez définitivement des données à caractère personnel qui résidaient dans le cloud Microsoft.
-- **Exporter :** fournissez une copie électronique (dans un format lisible par un ordinateur) des données à caractère personnel à la personne concernée.
+- **Exporter/Recevoir (Portabilité) :** fournit une copie électronique (dans un format lisible par un ordinateur) des données ou des informations personnelles à la personne concernée. Les informations à caractère personnel sous CCPA englobent toutes les informations relatives à une personne identifiée ou identifiable. Aucune distinction n’est faite entre les rôles privé, public et professionnel d’une personne. Le terme défini « informations personnelles » est à peu près aligné sur celui de « données personnelles » dans le RGPD. Toutefois, le CCPA inclut également les données relatives à la famille et au foyer. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
 ### <a name="terminology"></a>Terminologie
 
@@ -183,13 +187,13 @@ Cet exemple renvoie les fichiers Excel situés sur des sites SharePoint Online e
 
 ***Syntaxe de mot clé***
 
-```
+```Query
 pilar@contoso.com AND filetype="xlxs"
 ```
 
 ***Interface utilisateur graphique***
 
-![](media/O365-DSR-Doc_image18.png)
+![dialogue de mot clé](media/O365-DSR-Doc_image18.png)
 
 ##### <a name="example-2"></a>Exemple 2
 
@@ -199,19 +203,19 @@ Cet exemple renvoie les fichiers Excel ou Word situés sur des sites SharePoint 
 
 ***Interface utilisateur graphique***
 
-![](media/O365-DSR-Doc_image19.png)
+![dialogue de mot clé](media/O365-DSR-Doc_image19.png)
 
 ##### <a name="example-3"></a>Exemple 3
 
 Cet exemple renvoie les messages électroniques qui contiennent le numéros d’identification spécifié, c’est-à-dire un numéro de sécurité sociale français (INSEE)
 
-```
+```Query
 "1600330345678 97" AND kind="email"
 ```
 
 ***Interface utilisateur graphique***
 
-![](media/O365-DSR-Doc_image20.png)
+![dialogue de mot clé](media/O365-DSR-Doc_image20.png)
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Utilisation des éléments partiellement indexés dans la recherche de contenu
 
@@ -281,13 +285,13 @@ Les utilisateurs finals peuvent découvrir, consulter et rectifier les données 
 
 Un autre moyen pour les utilisateurs de consulter leurs données de profil SharePoint est d’accéder à la **page Modifier le profil** dans leur compte OneDrive Entreprise, accessible en accédant au chemin d’accès **EditProfile.aspx** sous l’URL de compte OneDrive Entreprise.  Par exemple, le compte OneDrive Entreprise de l’utilisateur <strong>user1@contoso.com</strong> se trouve à l’emplacement suivant :
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/OneDrive.aspx`
 ```
 
 L’URL de la page Modifier le profil serait la suivante :
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/EditProfile.aspx`
 ```
 
@@ -357,9 +361,11 @@ Voici des instructions spécifiques pour rechercher un bloc-notes pour la classe
 3. Sélectionnez cet élément, puis copiez le chemin d’accès du dossier qui s’affiche dans le volet d’informations. Il s’agit du dossier racine du bloc-notes pour la classe.
 4. Modifiez la recherche créée à l’étape 1 et remplacez le nom de la classe dans la requête de mot clé par le chemin d’accès du dossier du bloc-notes OneNote pour la classe et faites précéder le chemin d’accès du dossier avec la propriété de site **path** ; par exemple, **path:<https://contosoedu.onmicrosoft.com/sites/9C> Biologie/Éléments de site/Bloc-notes 9C Biologie/**. N’oubliez pas d’inclure les guillemets et la barre oblique de fin.
 5. Ajouter une condition de recherche et sélectionner la condition type de fichier et en utiliser une pour la valeur du type de fichier. Cette opération renvoie tous les fichiers OneNote figurant dans les résultats de la recherche. La syntaxe des mots clés résultants ressemblerait à ce qui suit :[](#building-search-queries-to-find-personal-data)
-    ```
+
+    ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
+
 6.  Relancez la recherche de contenu. Les résultats de la recherche doivent inclure tous les fichiers OneNote du bloc-notes pour la classe de l’équipe de classe.
 
 #### <a name="microsoft-to-do"></a>Microsoft To-Do
@@ -426,13 +432,13 @@ Lorsque vous exportez les résultats d’une recherche de contenu, des élément
 Pour exporter et télécharger des éléments, procédez comme suit :
 
 1. Ouvrez la recherche de contenu dans le Centre de conformité et sécurité.
-2. Sur la page volante de recherche, cliquez sur ![](media/o365-dsr_image21.png) **Plus**, puis cliquez sur **Exporter les résultats**.  Vous pouvez également exporter un rapport.
+2. Sur la page volante de recherche, cliquez sur ![télécharger l’icône ](media/o365-dsr_image21.png)**Autres**, puis cliquez sur **Exporter les résultats**. Vous pouvez également exporter un rapport.
 3. Complétez les sections sur la page volante **Exporter les résultats**. Veillez à utiliser la barre de défilement pour afficher toutes les options d’exportation.
 4. Revenez à la page de recherche de contenu dans le Centre de sécurité et conformité, puis cliquez sur l’onglet **Exporter**.
 5. Cliquez sur **Actualiser** pour mettre à jour la page.
 6. Sous la colonne**Nom**, cliquez sur la tâche d’exportation que vous avez créée. Le nom de la tâche d’exportation est le nom de la recherche de contenu ajoutée à **\_Exportation**.
 7. Dans la page exporter, sous**exporter la clé**, cliquez sur **copier dans le presse-papiers**. Cette clé vous permet de télécharger les résultats de recherche à l’étape 10.
-8. En haut de la page volante, cliquez sur ![](media/o365-dsr_image21.png) **Télécharger les résultats**.
+8. En haut de la page volante, cliquez sur ![ Télécharger l’icône](media/o365-dsr_image21.png) **Télécharger les résultats**.
 9. Si vous êtes invité à installer l’**outil d’exportation de découverte électronique Microsoft Office 365**, cliquez sur **Installer**.
 10. Dans l’**outil d’exportation de découverte électronique**, collez la clé d’exportation que vous avez copiée à l’étape 7 dans la zone appropriée.
 11. Cliquez sur **Parcourir** pour spécifier l’emplacement de téléchargement du fichier des résultats de recherche.
@@ -845,15 +851,18 @@ Affectations stocke des informations générées par les enseignants et les étu
 
 Les fichiers des étudiants associés à une Soumission pour affectation sont stockés dans une bibliothèque de documents (appelée **Travaux des étudiants**) et les fichiers associés aux Affectations créés par les enseignants et accessibles par les étudiants sont stockés dans une autre bibliothèque de documents (appelée **Fichiers de la classe**). Les deux bibliothèques de documents figurent dans le site SharePoint d’équipe de la classe correspondant.
 
-Un administrateur peut utiliser l’outil recherche de contenu dans le centre de sécurité et conformité Office 365 pour rechercher des fichiers d’étudiants (dans les bibliothèques de travaux des étudiants et de fichiers de classe) qui sont liés à des affectations et des fichiers liés à des affectations. Par exemple, un administrateur peut effectuer une recherche dans tous les sites SharePoint de l’organisation et utiliser le nom de l’étudiant et le nom de la classe ou de l’affectation dans la requête de recherche pour trouver des données pertinentes pour une demande DSR.
+Un administrateur peut utiliser l’outil recherche de contenu dans le centre de sécurité et conformité Office 365 pour rechercher des fichiers d’étudiants (dans les bibliothèques de travaux des étudiants et de fichiers de classe) qui sont liés à des affectations et des fichiers liés à des affectations. Par exemple, un administrateur peut effectuer une recherche dans tous les sites SharePoint de l’organisation et utiliser le nom de l’étudiant et le nom de la classe ou du devoir dans la requête de recherche pour trouver des données pertinentes pour une demande DPC.
 
-De même, un administrateur peut rechercher les fichiers des enseignants liés aux affectations de fichiers distribuées par un enseignant aux étudiants. Par exemple, un administrateur peut rechercher tous les sites SharePoint de l’organisation et utiliser le nom de l’enseignant et le nom de la classe ou de l’affectation dans la requête de recherche pour trouver des données pertinentes pour une DPC.
+De même, un administrateur peut rechercher des fichiers d’enseignants liés à des devoirs pour les fichiers qu’un enseignant a distribués aux étudiants. Par exemple, un administrateur peut effectuer une recherche dans tous les sites SharePoint de l’organisation et utiliser le nom de l’enseignant et le nom de la classe ou du devoir dans la requête de recherche pour trouver des données pertinentes pour une demande DPC.
 
-Consultez la section[Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DSR](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) de ce guide.
+Pour plus d’informations, voir :
 
-##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>Recherche des données Affectations non stockées dans SharePoint
+- [Documentation de l’administrateur des devoirs](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-admin-documentation)
+- [Utilisation de l’outil de recherche de contenu eDiscovery pour répondre aux DPC](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) (dans ce guide)
 
-Les types suivants de données Affectations ne sont pas stockés dans le site SharePoint d’équipe de la classe et, par conséquent, ne sont pas détectables à l’aide de la recherche de contenu.  Cela inclut les options suivantes :
+##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>Recherche des données Devoirs non stockées dans SharePoint
+
+Les types suivants de données Devoirs ne sont pas stockés dans le site SharePoint d’équipe de la classe et, par conséquent, ne sont pas détectables à l’aide de la recherche de contenu. Cela inclut les options suivantes :
 
 - Notes des étudiants et appréciations de l’enseignant
 - Liste des documents envoyés par chaque étudiant pour un devoir
@@ -865,24 +874,27 @@ Même si un étudiant ne fait plus partie d’une classe, ses données peuvent r
 
 ##### <a name="export"></a>Exporter
 
-Vous pouvez exporter les données Affectations d’un étudiant spécifique pour toutes les classes dans lesquelles l’étudiant est actuellement inscrit à l’aide d’un script PowerShell.  Voir :
+Vous pouvez exporter des données Devoirs pour un étudiant pour tous les cours dans lesquelles l’étudiant est inscrit à l’aide d’un script PowerShell pour obtenir la liste des cours de l’étudiant, puis utiliser un script PowerShell pour exporter les données. Voir :
 
-- [Utilisation des scripts pour exporter et supprimer des données utilisateur d’Affectations](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
-- [Exporter les données d’étudiants et d’enseignants à partir d’Affectations](https://support.office.com/article/e8c36e0e-fb6e-42c5-97fd-66f90f92a13a).
+- [Configurer les Devoirs pour Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [Obtenir la liste des cours d’un étudiant](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Exporter les données d’étudiants et d’enseignants à partir de Devoirs](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-export).
 
 Si l’étudiant a été supprimé du site d’équipe de la classe, l’administrateur peut réintégrer l’étudiant au site avant d’exécuter le script d’exportation. Sinon, l’administrateur peut utiliser le fichier d’entrée du script afin d’identifier chaque classe à laquelle l’étudiant n’a jamais été inscrit. Vous pouvez également utiliser le script d’exportation d’affectation pour exporter des données soumissions pour toutes les affectations auxquelles un enseignant a accès.
 
-##### <a name="delete"></a>Supprimer
+##### <a name="delete"></a>Delete
 
-Vous pouvez supprimer les données Affectations d’un étudiant spécifique pour toutes les classes dans lesquelles l’étudiant est actuellement inscrit à l’aide d’un script PowerShell.  Vous devez effectuer cette opération avant de supprimer l’étudiant de la classe. Voir :
+Vous pouvez supprimer des données Devoirs pour un étudiant pour tous les cours dans lesquelles l’étudiant est inscrit à l’aide d’un script PowerShell pour obtenir la liste des cours de l’étudiant, puis utiliser un script PowerShell pour supprimer les données. Vous devez effectuer cette opération avant de supprimer l’étudiant de la classe. Voir :
 
-- [Utilisation des scripts pour exporter et supprimer des données utilisateur d’Affectations](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
-
-- [Supprimer des données étudiant d’Affectations](https://support.office.com/article/a368853a-9565-4320-8e86-2f9423e932a4).
+- [Configurer les Devoirs pour Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [Obtenir la liste des cours d’un étudiant](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Supprimer des données étudiant de Devoirs](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-delete).
 
 Si l’étudiant a été supprimé du site d’équipe de la classe, l’administrateur peut réintégrer l’étudiant au site avant d’exécuter le script d’exportation. Sinon, l’administrateur peut utiliser le fichier d’entrée du script pour identifier chaque classe à laquelle l’étudiant n’a jamais été inscrit. Vous ne pouvez pas utiliser le script de suppression Affectation pour supprimer les données des enseignants, car toutes les affectations sont partagées au sein du site d’équipe de la classe. Un administrateur peut également s’ajouter au site d’équipe de la classe, puis supprimer une affectation spécifique.
 
-**Bloc-notes**: la recherche de contenu dans le bloc-notes OneNote pour la classe est décrite précédemment dans ce guide. Ouvrir la section [OneNote Class Notebook](#onenote-class-notebook). Vous pouvez également utiliser l’outil recherche de contenu pour exporter des données à partir d’un bloc-notes OneNote pour la classe. Autrement, un administrateur ou un sujet de données peut exporter des données à partir d’un bloc-notes OneNote pour la classe. Voir [enregistrer une copie d’un bloc-notes pour la classe](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
+#### <a name="class-notebook"></a>Bloc-notes pour la classe
+
+La recherche de contenu dans le bloc-notes OneNote pour la classe est décrite précédemment dans ce guide. Ouvrir la section [OneNote Class Notebook](#onenote-class-notebook). Vous pouvez également utiliser l’outil recherche de contenu pour exporter des données à partir d’un bloc-notes OneNote pour la classe. Autrement, un administrateur ou un sujet de données peut exporter des données à partir d’un bloc-notes OneNote pour la classe. Voir [enregistrer une copie d’un bloc-notes pour la classe](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
 
 ### <a name="flow"></a>Flow
 
@@ -1073,7 +1085,7 @@ PowerApps est un service permettant de créer des applications pouvant être par
 
 Pour contribuer à faciliter une DPC liée à PowerApps, vous pouvez exploiter les opérations d’administration exposées dans le [Centre d’administration PowerApps](https://admin.powerapps.com/) et les [cmdlets PowerApps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804).  L’accès à ces outils nécessite un compte disposant des autorisations suivantes :
 
-- Une licence de la version d’évaluation PowerApps Plan 2 ou une licence PowerApps Plan 2 payante. Vous pouvez vous inscrire à une licence d’essai de 30 jours [ici](http://web.powerapps.com/trial).
+- Une licence de la version d’évaluation PowerApps Plan 2 ou une licence PowerApps Plan 2 payante. Vous pouvez vous inscrire à une licence d’essai de 30 jours [ici](https://web.powerapps.com/trial).
 - [Administrateur général Office 365](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) ou
 - [Administrateur général Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
@@ -1168,7 +1180,7 @@ Après avoir trouvé du contenu pertinent dans StaffHub, vous pouvez afficher le
 - **Fichiers partagés** : tous les fichiers contenus dans StaffHub sont stockés sur SharePoint Online. Par conséquent, ils peuvent être découverts, consultés et exportés à l’aide de la recherche de contenu comme décrit précédemment.  Ils peuvent également être affichés dans StaffHub sous l’onglet **Fichiers**.
 - **Messagerie:** pour l’instant, les messages sont accessibles en suivant les étapes qui s’appliquent à l’accès aux données spécifiques à l’utilisateur dans l’élément suivant. Par la suite, tous les messages de StaffHub seront stockés dans Microsoft Teams, ce qui signifie que vous pouvez utiliser l’outil recherche de contenu pour y accéder.
 - **Données spécifiques à l’utilisateur** : les données spécifiques à l’utilisateur sont composées de paramètres utilisateur, de flux d’activité des utilisateurs et de l’historique des demandes de décalage d’utilisateur, qui ne peuvent pas être affichés par les membres de l’équipe ou par les administrateurs. Pour accéder à des données spécifiques à l’utilisateur ou les exporter, demandez-leur de se connecter à leur compte StaffHub pour les obtenir. Par ailleurs, si la personne concernée a quitté votre organisation, vous pouvez obtenir ces données en faisant en sorte que votre administrateur réinitialise le mot de passe d’utilisateur de la personne concernée pour vous permettre, ou l’administrateur, de vous connecter à son compte.
-- **Kronos:** StaffHub prend en charge les connexions à [Kronos](http://www.kronos.com/), l’outil de gestion des employés tiers. StaffHub et Kronos sont des processeurs indépendants et traitent les données de votre organisation sous des conditions individuelles que vous avez signées avec chaque partie. Si votre DSR a trait aux données détenues par Kronos, vous devez contacter Kronos pour obtenir de l’aide sur le DSR et vice-versa.
+- **Kronos:** StaffHub prend en charge les connexions à [Kronos](https://www.kronos.com/), l’outil de gestion des employés tiers. StaffHub et Kronos sont des processeurs indépendants et traitent les données de votre organisation sous des conditions individuelles que vous avez signées avec chaque partie. Si votre DSR a trait aux données détenues par Kronos, vous devez contacter Kronos pour obtenir de l’aide sur le DSR et vice-versa.
 
 #### <a name="delete"></a>Supprimer
 
@@ -1205,7 +1217,7 @@ Les sections suivantes expliquent comment utiliser les fonctionnalités intégr�
 
 #### <a name="discover"></a>Découvrir
 
-Le contenu créé à l’aide de Sway (trouvé sur[www.Sway.com](http://www.sway.com)) est visible uniquement par le propriétaire et ceux que l’auteur a autorisés à afficher le Sway. Voir [Paramètres de confidentialité dans Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Pour déterminer si Sway est un emplacement où les données personnelles répondant à votre DSR sont susceptibles de résider, vous pouvez demander à la personne concernée et aux utilisateurs de l’organisation susceptibles d’avoir généré ce contenu sur la personne concernée de rechercher dans leurs Sways et de partager avec vous tous les Sways susceptibles de contenir des données personnelles répondant à la demande de l’objet de données. Pour plus d’informations sur le partage d’un Sway, voir «partager un Sway à partir de votre compte professionnel» dans cet article [partager votre Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
+Le contenu créé à l’aide de Sway (trouvé sur[www.Sway.com](https://www.sway.com)) est visible uniquement par le propriétaire et ceux que l’auteur a autorisés à afficher le Sway. Voir [Paramètres de confidentialité dans Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Pour déterminer si Sway est un emplacement où les données personnelles répondant à votre DSR sont susceptibles de résider, vous pouvez demander à la personne concernée et aux utilisateurs de l’organisation susceptibles d’avoir généré ce contenu sur la personne concernée de rechercher dans leurs Sways et de partager avec vous tous les Sways susceptibles de contenir des données personnelles répondant à la demande de l’objet de données. Pour plus d’informations sur le partage d’un Sway, voir «partager un Sway à partir de votre compte professionnel» dans cet article [partager votre Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
 
 #### <a name="access"></a>Access
 
@@ -1531,7 +1543,7 @@ Les utilisateurs peuvent supprimer les informations suivantes dans Delve :
 
 ### <a name="myanalytics"></a>MyAnalytics
 
-MyAnalytics fournit des statistiques aux utilisateurs pour les aider à comprendre la manière dont ils organisent leur temps de travail. Pour aider vos utilisateurs à mieux comprendre les données qui leur sont présentées dans leur tableau de bord personnel et comment ces données sont calculées, orientez vos utilisateurs vers la rubrique d’aide [tableau de bord personnel MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard).
+MyAnalytics fournit des statistiques aux utilisateurs pour les aider à comprendre la manière dont ils organisent leur temps de travail. Pour aider vos utilisateurs à mieux comprendre les données qui leur sont présentées dans leur tableau de bord personnel et comment ces données sont calculées, orientez vos utilisateurs vers la rubrique d’aide [tableau de bord personnel MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
 
 #### <a name="access-and-export"></a>Consulter et exporter
 
@@ -1543,7 +1555,7 @@ Toutes les informations générées par MyAnalytics sont extraites des élément
 
 #### <a name="restrict"></a>Restreindre
 
-Pour limiter le traitement pour un utilisateur spécifique, vous pouvez choisir de le déconnecter de MyAnalytics. Pour découvrir comment procéder, consultez la section relative à la [configuration des paramètres utilisateur MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-mya-user-settings).
+Pour limiter le traitement pour un utilisateur spécifique, vous pouvez choisir de le déconnecter de MyAnalytics. Pour découvrir comment procéder, consultez la section relative à la [configuration des paramètres utilisateur MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-myanalytics).
 
 #### <a name="delete"></a>Supprimer
 
@@ -1551,7 +1563,7 @@ Tout le contenu de la boîte aux lettres, y compris les données de MyAnalytics,
 
 ### <a name="workplace-analytics"></a>Workplace Analytics
 
-Workplace Analytics permet aux organisations d’enrichir les données Office 365 avec leurs propres données métiers pour obtenir des informations sur la productivité organisationnelle, les modèles de collaboration et l’implication des employés. [Cet article](https://docs.microsoft.com/workplace-analytics/overview/privacy-and-data-access) décrit le contrôle détenu par votre organisation sur les données traitées par Workplace Analytics et ceux qui ont accès à ces données.
+Workplace Analytics permet aux organisations d’enrichir les données Office 365 avec leurs propres données métiers pour obtenir des informations sur la productivité organisationnelle, les modèles de collaboration et l’implication des employés. [Cet article](https://docs.microsoft.com/workplace-analytics/index-orig) décrit le contrôle détenu par votre organisation sur les données traitées par Workplace Analytics et ceux qui ont accès à ces données.
 
 Pour vous aider avec les DSR dans Workplace Analytics : 
 
@@ -1580,7 +1592,7 @@ Pour supprimer les données personnelles d’une personne concernée par le trai
 1. Supprimer la licence Workplace Analytique à partir de l’objet de données.
 2. Supprimer l’entrée Azure Active Directory (AAD) pour l’objet de données. (Pour plus d’informations, voir [supprimer un utilisateur](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)
 3. Contacter le support technique pour qu’ils ouvrent un ticket pour une demande de droit de suppression données utilisateur (DSR). Dans ce ticket, identifier l’objet de données à l’aide de leur nom d’utilisateur principal (UPN).
-4. Exportez une copie des données RH à partir du système RH de l’entreprise (voir [Exporter des données](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data)), supprimer les informations de l’objet de données de ce fichier de données RH, puis charger le fichier de données RH modifié au format .csv dans Workplace Analytics (voir [Charger données organisationnelles](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
+4. Exportez une copie des données RH à partir du système RH de l’entreprise (voir [Exporter des données](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data)), supprimer les informations de l’objet de données de ce fichier de données RH, puis charger le fichier de données RH modifié au format .csv dans Workplace Analytics (voir [Charger données organisationnelles](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
 
 ## <a name="part-3-responding-to-dsrs-for-system-generated-logs"></a>Partie 3 : Répondre aux demandes d’accès aux données des personnes concernées pour les journaux générés par le système
 
@@ -1625,7 +1637,7 @@ Les éléments suivants récapitulent la consultation et l’exportation des jou
 
 - **À quoi ressemblent les données dans les journaux générés par le système ?** Voici un exemple d’un enregistrement de journal généré par le système au format JSON :
 
-   ```
+   ```JSON
    [{
             "DateTime": "2017-04-28T12:09:29-07:00",
              "AppName": "SharePoint",
@@ -1666,7 +1678,7 @@ La suppression d’un compte d’utilisateur ne supprime pas les journaux géné
 Un administrateur informatique général doit procéder comme suit pour supprimer les journaux générés par le système dans les clouds nationaux suivants :
 
 - Office 365 Allemagne : lorsque le compte d’utilisateur est supprimé définitivement, les journaux générés par le système sont également supprimés. 
-- Office 365 Secteur Public : envoyez une demande au support Microsoft par le biais du [portail d’administration Office 365](http://portal.office365.us).
+- Office 365 Secteur Public : envoyez une demande au support Microsoft par le biais du [portail d’administration Office 365](https://portal.office365.us).
 - Office 365 géré par 21Vianet (Chine) : envoyez une demande au support Microsoft par le biais du portail d’administration Office 365 à cette [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Accédez à **Commerce**, puis sélectionnez **Abonnement** -> **Confidentialité** -> **RGPD** et saisissez les informations requises.
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>Partie 4 : Ressources supplémentaires pour vous aider avec les DSR
@@ -1783,5 +1795,6 @@ Le tableau suivant indique les modifications apportées au guide relatif aux DSR
 |11/12/2018| Tout| Correction des signets incorrects et liens rompus vers des rubriques externes.|
 |9/1/2019|[StaffHub](#staffhub)|Dans la section Supprimer, la description mise à jour de ce qui se passe lorsqu’un compte d’utilisateur est supprimé définitivement.|
 |8/5/2019| [Publisher](#publisher)|Nous avons ajouté du contenu pour vous aider à répondre aux DPC concernant Publisher.|
-|11/7/2019| [MyAnalytics](#myanalytics)|Possibilité pour un administrateur d’utiliser l’outil de cas DSR dans le centre de sécurité & de conformité Office 365 pour exporter les données MyAnalytics ont été supprimées, car tous les utilisateurs peuvent désormais afficher leurs données dans l’application MyAnalytics. |
+|11/7/2019| [MyAnalytics](#myanalytics)|La possibilité pour un administrateur d’utiliser l’outil DPC dans le Centre de sécurité et conformité Office 365 pour exporter les données MyAnalytics a été supprimée, car tous les utilisateurs peuvent désormais afficher leurs données dans l’application MyAnalytics. |
+|11/6/2019|[Enseignement](#education)|Liens vers les nouvelles rubriques sur l’utilisation de scripts PowerShell pour obtenir la liste des cours pour un étudiant, puis exporter ou supprimer ses données.|
 ||||
