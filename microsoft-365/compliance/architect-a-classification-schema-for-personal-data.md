@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Déterminez si votre organisation implémentera des étiquettes dans le cadre de votre plan RGPD.
-ms.openlocfilehash: c0886ac68cd2d7a6ca7514f39636e74c5b2043ad
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4470f766ad2f8fd2d914e0e45deac8604028ddb5
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078916"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615644"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Création d’un schéma de classification pour les données personnelles
 
@@ -28,7 +28,7 @@ Les articles précédents de cette série se concentrent sur l’utilisation des
 
 Remarque : la définition d’un schéma de classification pour une organisation et la configuration des stratégies, étiquettes et conditions nécessitent une planification et une préparation rigoureuses. Il est important de savoir qu’il ne s’agit pas d’un processus informatisé. Vous devez collaborer avec votre équipe juridique et de conformité pour développer une classification appropriée et un schéma de création d’étiquettes pour les données de votre organisation.
 
-## <a name="decide-if-you-are-using-labels-in-addition-to-sensitive-data-types"></a>Utilisation ou non d’étiquettes en plus des types de données sensibles
+## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>Utilisation ou non d’étiquettes en plus des types de données sensibles
 
 Vous avez le choix entre deux approches de classification dans Office 365 pour les informations personnelles. L’une d’elles peut être utilisée pour la protection RGPD. Si vous décidez d’utiliser uniquement des types d’informations sensibles pour la classification, vous pouvez ignorer le reste de cette rubrique.
 
@@ -36,25 +36,23 @@ Choisissez l'une des options suivantes.
 
 ### <a name="option-1-use-only-office-365-sensitive-information-types"></a>Option 1 : utiliser des types d’informations sensibles Office 365 uniquement
 
--   Les types d’informations sensibles sont efficaces pour identifier et protéger les données personnelles soumises au RGPD et d’autres types de règlements.
+- Les types d’informations sensibles sont efficaces pour identifier et protéger les données personnelles soumises au RGPD et d’autres types de règlements.
 
--   Ils sont plus simples à utiliser si votre organisation n’a pas encore (ou n’envisage pas d’implémenter) de plan de gouvernance de données plus large qui utilise des étiquettes.
+- Ils sont plus simples à utiliser si votre organisation n’a pas encore (ou n’envisage pas d’implémenter) de plan de gouvernance de données plus large qui utilise des étiquettes.
 
--   Fonctionne avec les règles DLP (comme les étiquettes de rétention).
+- Fonctionne avec les règles DLP (comme les étiquettes de rétention).
 
--   Les types d’informations sensibles sont compatibles à Cloud App Security pour détecter les informations sensibles dans d’autres applications SaaS.
+- Les types d’informations sensibles sont compatibles à Cloud App Security pour détecter les informations sensibles dans d’autres applications SaaS.
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Option 2 : utiliser des types d’informations sensibles + des étiquettes de rétention
 
--   Vous aurez besoin de types d’informations sensibles pour appliquer automatiquement des étiquettes à des données personnelles qui sont soumises au RGPD, donc ceci est une condition préalable.
+- Vous aurez besoin de types d’informations sensibles pour appliquer automatiquement des étiquettes à des données personnelles qui sont soumises au RGPD, donc ceci est une condition préalable.
 
--   L’utilisation d’étiquettes Office vous permet d’inclure des données personnelles qui sont soumises au RGPD dans un plan de gouvernance des données plus large pour votre organisation.
-
-
+- L’utilisation d’étiquettes Office vous permet d’inclure des données personnelles qui sont soumises au RGPD dans un plan de gouvernance des données plus large pour votre organisation.
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>Développement d’un schéma d’étiquettes qui comprend des données personnelles
 
-Avant d’utiliser des fonctionnalités techniques pour appliquer des étiquettes et une protection, commencez par définir un schéma de classification à utiliser au sein de votre organisation. Il se peut que votre organisation ait déjà un schéma de classification, ce qui facilite l’ajout de données personnelles. Cette rubrique inclut un exemple de schéma de classification. Vous pouvez l’utiliser comme point de départ, le cas échéant.
+Avant d’utiliser des fonctionnalités techniques pour appliquer des étiquettes et une protection, commencez par définir un schéma de classification à utiliser au sein de votre organisation. Il se peut que votre organisation ait déjà un schéma de classification, ce qui facilite l’ajout de données personnelles. Cette rubrique inclut un exemple de schéma de classification. Vous pouvez utiliser cet exemple comme point de départ, le cas échéant.
 
 ### <a name="getting-started"></a>Prise en main
 
@@ -64,21 +62,21 @@ Commencez par décider du nombre et des noms des étiquettes à implémenter. Ne
 
 Lorsque vous concevez et implémentez des stratégies, étiquettes et conditions, vous pouvez suivre ces recommandations :
 
--   Utilisez le schéma de classification existant (le cas échéant) : de nombreuses organisations utilisent déjà la classification des données d’une certaine façon. Évaluez soigneusement le schéma d’étiquettes existant et, si possible, utilisez-le en l’état. L’utilisation d’étiquettes connues qui sont reconnaissables pour l’utilisateur final favorisa l’adoption.
+- Utilisez le schéma de classification existant (le cas échéant) &ndash; de nombreuses organisations utilisent déjà la classification des données d’une certaine façon. Évaluez soigneusement le schéma d’étiquettes existant et, si possible, utilisez-le en l’état. L’utilisation d’étiquettes connues qui sont reconnaissables pour l’utilisateur final favorisa l’adoption.
 
--   Commencez par des étiquettes et des stratégies par défaut : toutes les solutions sont accompagnées d’un ensemble d’étiquettes et de stratégies prédéfinies. Évaluez-les soigneusement en fonction des exigences juridiques et professionnelles des organisations et envisagez de les utiliser plutôt que d’en créer d’autres.
+- Commencez par des étiquettes et des stratégies par défaut &ndash; toutes les solutions sont accompagnées d’un ensemble d’étiquettes et de stratégies prédéfinies. Évaluez-les soigneusement en fonction des exigences juridiques et professionnelles des organisations et envisagez de les utiliser plutôt que d’en créer d’autres.
 
--   Commencez avec un petit nombre : il n’y a presque aucune limite au nombre d’étiquettes pouvant être créées. Toutefois, un grand nombre d’étiquettes et d’étiquettes secondaires aura un impact négatif sur l’adoption. Trop de choix signifie souvent aucun choix.
+- Commencez avec un petit nombre &ndash; il n’y a presque aucune limite au nombre d’étiquettes pouvant être créées. Toutefois, un grand nombre d’étiquettes et d’étiquettes secondaires aura un impact négatif sur l’adoption. Trop de choix signifie souvent aucun choix.
 
--   Utilisez des scénarios et des cas d’utilisation : identifiez des cas d’utilisation courants au sein de l’organisation et utilisez des scénarios dérivés du RGPD pour vérifier si la configuration d’étiquette et de classification envisagée fonctionnera en pratique.
+- Utilisez des scénarios et des cas d’utilisation &ndash; identifiez des cas d’utilisation courants au sein de l’organisation et utilisez des scénarios dérivés du RGPD pour vérifier si la configuration d’étiquette et de classification envisagée fonctionnera en pratique.
 
--   Posez-vous des questions à chaque demande d’une nouvelle étiquette, est-ce que chaque scénario ou cas d’utilisation nécessite vraiment une nouvelle étiquette ou pouvons-nous utiliser celles que l’on a déjà ? Le fait d’utiliser un nombre d’étiquettes restreint améliore l’adoption.
+- Posez-vous des questions à chaque demande d’une nouvelle étiquette &ndash; est-ce que chaque scénario ou cas d’utilisation nécessite vraiment une nouvelle étiquette ou pouvez-vous utiliser celles que vous avez déjà ? Le fait d’utiliser un nombre d’étiquettes restreint améliore l’adoption.
 
--   Utilisez des étiquettes secondaires pour des services clés : certains services auront des besoins spécifiques nécessitant des étiquettes spécifiques. Définissez ces étiquettes comme étiquettes secondaires d’une étiquette existante et envisagez d’utiliser des stratégies limitées qui sont affectées à des groupes d’utilisateurs plutôt que des stratégies globales.
+- Utilisez des étiquettes secondaires pour des services clés &ndash; Certains services auront des besoins spécifiques nécessitant des étiquettes spécifiques. Définissez ces étiquettes comme étiquettes secondaires d’une étiquette existante et envisagez d’utiliser des stratégies limitées qui sont affectées à des groupes d’utilisateurs plutôt que des stratégies globales.
 
--   Utilisez des stratégies limitées, c’est-à-dire des stratégies qui ciblent des sous-ensembles d’utilisateurs, pour éviter la « surcharge d’étiquettes ». Une stratégie limitée permet d’attribuer des étiquettes (secondaires) propres à un rôle ou à un service uniquement aux employés qui travaillent pour ce service spécifique.
+- Utilisez des stratégies limitées &ndash; C’est-à-dire des stratégies qui ciblent des sous-ensembles d’utilisateurs, pour éviter la « surcharge d’étiquettes ». Une stratégie limitée permet d’attribuer des étiquettes (secondaires) propres à un rôle ou à un service uniquement aux employés qui travaillent pour ce service spécifique.
 
--   Utiliser des noms d’étiquette explicites : il est recommandé de ne pas utiliser de jargon, de normes ni d’acronymes comme noms d’étiquette. Essayez d’utiliser des noms évocateurs pour l’utilisateur final afin d’améliorer l’adoption. Au lieu d’utiliser des étiquettes comme PII, PCI, HIPAA, LBI, MBI et HBI, utilisez des noms tels que Non professionnel, Public, Général, Confidentiel et Hautement confidentiel.
+- Utiliser des noms d’étiquette explicites &ndash; Il est recommandé de ne pas utiliser de jargon, de normes ni d’acronymes comme noms d’étiquette. Essayez d’utiliser des noms évocateurs pour l’utilisateur final afin d’améliorer l’adoption. Au lieu d’utiliser des étiquettes comme PII, PCI, HIPAA, LBI, MBI et HBI, utilisez des noms tels que Non professionnel, Public, Général, Confidentiel et Hautement confidentiel.
 
 ### <a name="example-classification-schema"></a>Exemple de schéma de classification
 

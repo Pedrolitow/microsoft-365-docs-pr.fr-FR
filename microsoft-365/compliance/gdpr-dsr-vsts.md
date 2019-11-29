@@ -1,6 +1,6 @@
 ---
-title: Demandes des personnes associées aux données Azure DevOps concernant le RGPD
-keywords: Visual Studio Team Services, VSTS, documentation Azure DevOps, confidentialité, RGPD
+title: Demandes des personnes concernées par les données Azure DevOps concernant le RGPD et le CCPA
+keywords: Visual Studio Team Services, VSTS, documentation Azure DevOps, confidentialité, RGPD, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: devops
@@ -9,19 +9,23 @@ ms.date: 06/11/2018
 author: jitojo
 ms.author: jominana
 manager: douge
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5ccb1961fe1751604b32bb5b37595b0884b395
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3af519ed13b8c647d359ea9c8d1faaff2c34209e
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071483"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268843"
 ---
-# <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées par les données Azure DevOps Services pour le RGPD
+# <a name="azure-devops-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par les données Azure DevOps Services pour le RGPD et le CCPA
 
-Le [Règlement général sur la protection des données (RGPD)](http://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’Union européenne permet aux utilisateurs, désignés dans le règlement comme les *personnes concernées*, de gérer les données personnelles collectées par le *contrôleur des données*. Le contrôleur des données, ou simplement *contrôleur*, est un employeur ou tout autre type d’agence ou organisation. Les données personnelles sont définies de manière générale dans le cadre du RGPD comme étant les données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données personnelles, les demandes de correction de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à un autre contrôleur. Toute demande formelle effectuée par une personne concernée à un contrôleur au sujet de la prise de mesure sur ses données personnelles est appelée *demande de personne concernée* ou DSR.
+Le [Règlement général sur la protection des données (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’Union européenne permet aux utilisateurs, désignés dans le règlement comme les *personnes concernées*, de gérer les données personnelles collectées par le *contrôleur des données*. Le contrôleur des données, ou simplement *contrôleur*, est un employeur ou tout autre type d’agence ou organisation. Les données personnelles sont définies de manière générale dans le cadre du RGPD comme étant les données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données personnelles, les demandes de correction de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à un autre contrôleur. Toute demande formelle effectuée par une personne concernée à un contrôleur au sujet de la prise de mesure sur ses données personnelles est appelée *demande de personne concernée* ou DSR.
+
+De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
 Pour obtenir des informations générales sur le RGPD, consultez la [section RGPD du portail d’approbation de services](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
@@ -33,11 +37,11 @@ Les articles [Déclaration de confidentialité Microsoft](https://privacy.micros
 
 ## <a name="personal-data-we-collect"></a>Données personnelles collectées
 
-Microsoft collecte des données auprès des utilisateurs pour faire fonctionner et améliorer Azure DevOps Services. Azure DevOps Services collecte deux catégories de données : les données client et les journaux générés par le système. Les données client incluent des données transactionnelles et interactionnelles permettant l’identification des utilisateurs, qui sont indispensables au fonctionnement d’Azure DevOps Services. Les journaux générés par le système incluent des données sur l’utilisation des services, qui sont agrégées pour chaque section et fonctionnalité du produit.
+Microsoft collecte des données auprès des utilisateurs pour son fonctionnement et afin d’améliorer les services Azure DevOps. Azure DevOps Services recueille deux catégories de données : les données client et les journaux générés par le système. Les données client incluent les données transactionnelles et interactionnelles spécifiques à un utilisateur dont Azure DevOps Services a besoin pour fonctionner. Les journaux générés par le système incluent les données d’utilisation du service agrégées pour chaque zone de produit et fonctionnalité.
 
 ## <a name="delete-azure-devops-data"></a>Supprimer des données Azure DevOps
 
-La première chose à faire pour supprimer des données client Azure DevOps Services associées et pour anonymiser des données d’identification personnelle trouvées dans les journaux générés par le système est de fermer votre compte d’identité Azure Active Directory (AAD) ou votre compte Microsoft (MSA). Azure DevOps Services est un système d’enregistrement régi par des règles d’intégrité, de traçabilité et d’audit strictes. Ces obligations préexistantes ont une influence sur nos obligations de suppression et de conservation en vertu du RGPD. Le fait de fermer votre compte d’identité n’altère, ne supprime et ne modifie en rien les artefacts et les enregistrements associés à l’identité individuelle dans l’organisation Azure DevOps Services. Nous avons veillé à ce que, quand une organisation Azure DevOps Services entière est supprimée, l’ensemble des données à caractère personnel associées et des journaux générés par le système détectés dans cette organisation soient supprimés de notre système (à l’issue de la période de suppression réversible de 30 jours associée à l’organisation Azure DevOps Services).
+La première étape pour supprimer les données client associées Azure DevOps Services et rendre anonymes les données personnelles identifiables dans les journaux générés par le système consiste à fermer votre compte d’identité Azure Active Directory (AAD) ou votre compte Microsoft (MSA). Azure DevOps Services est un système d’enregistrement à l’intégrité, la traçabilité et aux règles d’audit strictes. Ces obligations existantes ont une incidence sur les obligations de suppression et de rétention pour le RGPD. La fermeture du compte d’identité n’altère pas, ne supprime ni ne modifie les artefacts et les enregistrements associés à l’identité individuelle dans l’organisation Azure DevOps. Nous garantissons qu’une fois l’ensemble d’une organisation DevOps supprimé, toutes les données personnellement identifiables associées ainsi que les journaux générés par le système détectés dans cette organisation sont supprimés de notre système (après la période requise de 30 jours de suppression réversible).
 
 ## <a name="export-azure-devops-data"></a>Exporter des données Azure DevOps
 

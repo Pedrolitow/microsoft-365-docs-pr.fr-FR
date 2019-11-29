@@ -3,7 +3,7 @@ title: Écriture différée de mot de passe pour votre environnement de test Mic
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 11/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 98838bd61fb5664e0b8c8aed4f4b20dee39e0dec
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: fe91232d4c5a07035e6daff9f1bf88a1426ee6ad
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757681"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631274"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
@@ -49,7 +49,7 @@ Tout d’abord, suivez les instructions fournies dans l’article [Synchronisati
   
 Cette configuration se compose des éléments suivants :  
   
-- Abonnement d’évaluation ou payant Microsoft 365 E5 ou Office 365 E5.
+- Abonnements d’évaluation ou payants Microsoft 365 E5 ou Office 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
 - Azure AD Connect s’exécute sur APP1 pour synchroniser périodiquement le domaine TESTLAB AD DS avec le client Azure AD de votre abonnement Microsoft 365 ou Office 365.
 

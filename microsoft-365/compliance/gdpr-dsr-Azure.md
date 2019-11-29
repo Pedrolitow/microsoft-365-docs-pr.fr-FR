@@ -1,7 +1,7 @@
 ---
-title: Demandes des personnes concernées par le traitement des données d’Azure dans le cadre du RGPD
+title: Demandes des personnes concernées en lien avec des données Azure dans le cadre du RGPD et du CCPA
 description: ''
-keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365 documentation, RGPD
+keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,28 +9,33 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 7a294893d609747b5ab36c66319427608462b451
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 73139f0ab67f728ecb55874bb92d9cc874b60408
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698336"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268501"
 ---
-# <a name="azure-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées par le traitement des données d’Azure dans le cadre du RGPD
+# <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées en lien avec des données Azure dans le cadre du RGPD et du CCPA
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>Présentation des demandes des personnes concernées (DPC)
 
-Le [Règlement général sur la protection des données (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’UE permet aux utilisateurs (désignés dans le règlement comme étant les *personnes concernées*) de gérer les données à caractère personnel collectées par un employeur ou tout autre type d’agence ou organisation (appelés *responsable du traitement des données* ou *responsable du traitement*). Les données à caractère personnel sont définies dans le RGPD de manière très générale comme étant les données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données à caractère personnel. Ces droits incluent l’obtention de copies des données à caractère personnel, la demande de corrections de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à une autre responsable du traitement des données. Toute demande formelle adressée par une personne concernée à un responsable du traitement des données dans le but d’agir sur ses données à caractère personnel est appelée *demande de la personne concernée* ou DPC.
+Le [Règlement général sur la protection des données (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’UE permet aux utilisateurs (désignés dans le règlement comme étant les *personnes concernées*) de gérer les données à caractère personnel collectées par un employeur ou tout autre type d’agence ou organisation (appelés *responsable du traitement des données* ou *responsable du traitement*). Les données à caractère personnel sont définies dans le RGPD de manière très générale comme étant les données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données à caractère personnel. Ces droits incluent l’obtention de copies des données à caractère personnel, la demande de corrections de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à un autre responsable du traitement des données. Toute demande formelle adressée par une personne concernée à un responsable du traitement des données dans le but d’agir sur ses données à caractère personnel est appelée *demande de la personne concernée* ou DPC.
+
+De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles. Le CCPA prévoit également des publications d’informations, des protections contre la discrimination de personnes qui font usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
 Le guide explique comment utiliser les outils d’administration, les services et les produits Microsoft pour aider nos clients étant des entités de contrôle à rechercher des données personnelles et à agir dessus pour répondre à des DPC. Plus précisément, il décrit comment rechercher des données personnelles stockées dans le cloud Microsoft, y accéder et agir dessus. Voici un aperçu des processus décrits dans ce guide :
 
-- **Découvrir** : utilisez les outils de recherche et de découverte pour rechercher plus facilement des données client qui peuvent être l’objet d’une DPC. Une fois que vous avez collecté les documents pouvant être utiles, vous pouvez effectuer une ou plusieurs des actions DPC décrites dans les étapes suivantes pour répondre à la demande. Par ailleurs, vous pouvez déterminer que la demande ne respecte pas les instructions de votre organisation pour répondre à des DPC.
+- **Découvrir** : utilisez les outils de recherche et de détection pour rechercher plus facilement les données du client qui peuvent faire l’objet d’une demande DPC. Une fois que vous avez collecté les documents susceptibles de répondre à la demande, vous pouvez effectuer une ou plusieurs des actions DPC décrites ci-après. Vous pouvez également décider que la demande ne satisfait pas aux directives de votre organisation en termes de réponse à une demande DPC.
 - **Accéder :** récupérez des données à caractère personnel qui résident dans le cloud Microsoft et, si nécessaire, effectuez-en une copie pour la personne concernée.
 - **Rectifier :** modifiez ou mettez en œuvre d’autres actions demandées sur les données à caractère personnel, le cas échéant.
-- **Limiter :** limitez le traitement des données à caractère personnel, soit en supprimant des licences pour différents services Azure, soit en désactivant les services souhaités, lorsque cela est possible. Vous pouvez également supprimer des données du cloud Microsoft et les conserver localement ou ailleurs.
+- **Limiter** : limiter le traitement des données personnelles en supprimant les licences de différents services Azure ou en désactivant les services souhaités lorsque c’est possible. Vous pouvez également supprimer les données du cloud Microsoft et les conserver localement ou à un autre emplacement.
 - **Supprimer :** supprimez définitivement des données à caractère personnel qui résidaient dans le cloud Microsoft.
-- **Exporter :** fournissez une copie électronique (dans un format lisible par un ordinateur) des données à caractère personnel à la personne concernée.
+- **Exporter/Recevoir (Portabilité) :** fournit une copie électronique (dans un format lisible par un ordinateur) des données ou des informations personnelles à la personne concernée. Les informations à caractère personnel sous CCPA englobent toutes les informations relatives à une personne identifiée ou identifiable. Aucune distinction n’est faite entre les rôles privé, public et professionnel d’une personne. Le terme défini « informations personnelles » est à peu près aligné sur celui de « données personnelles » dans le RGPD. Toutefois, le CCPA inclut également les données relatives à la famille et au foyer. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
 Chaque section de ce guide décrit les procédures techniques qu’une organisation étant une entité de contrôle des données peut suivre pour répondre à une DPC pour des données personnelles dans le cloud Microsoft.
 
@@ -40,16 +45,16 @@ Vous trouverez ci-dessous des définitions de termes utilisés dans ce guide.
 
 - **Entité de contrôle** : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement des données personnelles ; lorsque les finalités et les moyens du traitement sont déterminés par la législation de l’Union ou des États membres, le contrôleur peut être désigné, ou les critères spécifiques relatifs à sa nomination peuvent être définis, par la législation de l’Union ou des États membres.
 - **Données personnelles et personne concernée par le traitement des données :** informations relatives à une personne physique identifiée ou identifiable (« la personne concernée par le traitement des données ») ; une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identificateur par exemple, un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou un ou plusieurs facteurs spécifiques de l’identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale de cette personne physique.
-- **Responsable du traitement :** la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données personnelles pour le compte de l’entité de contrôle.
-- **Données client :**  intégralité des données (textes, son, vidéo ou fichiers images, et logiciels) qui sont fournies à Microsoft par un client ou pour le compte d’un client par le biais du service d’entreprise. Les données client incluent à la fois les (1) informations d’identification personnelle des utilisateurs finaux (par exemple, les noms d’utilisateur et les informations de contact dans Azure Active Directory) et le contenu client chargé ou créé par un client dans des services spécifiques (par exemple, le contenu client dans un compte de stockage Azure, le contenu client d’un Azure SQL Database ou l’image de la machine virtuelle d’un client dans des machines virtuelles Azure).
-- **Journaux générés par le système :** journaux et données connexes générés par Microsoft, qui l’aident à fournir des services d’entreprise aux utilisateurs. Les journaux générés par le système contiennent principalement des données de pseudonymes comme des identificateurs uniques : généralement, un numéro généré par le système qui ne peut pas, en soi, identifier une personne individuelle, mais est utilisé pour fournir les services d’entreprise aux utilisateurs. Les journaux générés par le système peuvent aussi contenir des informations d’identification personnelle sur les utilisateurs finaux comme un nom d’utilisateur.
+- **Sous-traitant de données :** la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données à caractère personnel pour le compte du responsable du traitement.
+- **Données client :** toutes les données, y compris tous les fichiers texte, son, vidéo ou image et les logiciels qui ont été fournis à Microsoft par le client ou pour son compte dans le cadre du service d’entreprise. Les données client incluent à la fois les (1) informations d’identification personnelle des utilisateurs finaux (par exemple, les noms d’utilisateur et les informations de contact dans Azure Active Directory) et le contenu client chargé ou créé par un client dans des services spécifiques (par exemple, le contenu client dans un compte de stockage Azure, le contenu client d’une base de données Azure SQL ou l’image de la machine virtuelle d’un client dans des machines virtuelles Azure).
+- **Journaux générés par le système :** journaux et données associées générés par Microsoft qui permettent à Microsoft de fournir des services d’entreprise aux utilisateurs. Les journaux générés par le système contiennent essentiellement des données pseudonymes, généralement un numéro généré par le système qui ne permet pas, en soi, d’identifier une personne individuelle, mais qui est utilisé pour fournir les services d’entreprise aux utilisateurs. Les journaux générés par le système peuvent également contenir des informations d’identification personnelle sur les utilisateurs finaux, telles qu’un nom d’utilisateur.
 
 ## <a name="how-to-use-this-guide"></a>Comment utiliser ce guide
 
 Ce guide est composé de deux parties :
 
-- **Partie 1 : Répondre aux demandes des personnes concernées pour des données client** : la première partie de ce guide explique comment rectifier, limiter, supprimer et exporter des données dans des applications dans lesquelles vous avez créé des données, et comment y accéder. Cette section explique en détail comment exécuter des DPC par rapport à un contenu client et des informations d’identification personnelle d’utilisateurs finaux.
-- **Partie 2 : répondre aux demandes de personnes concernées pour les journaux générés par le système** : lorsque vous utilisez les services d’entreprise de Microsoft, Microsoft génère des informations appelées Journaux générés par le système, pour fournir le service. La deuxième partie de ce guide explique comment supprimer et exporter ces informations pour Azure, et comment y accéder.
+- **Partie 1 : Répondre aux demandes des personnes concernées pour des données client** : la première partie de ce guide explique comment rectifier, limiter, supprimer et exporter des données dans des applications dans lesquelles vous avez créé des données, et comment y accéder.  Cette section explique en détail comment exécuter des DPC par rapport à un contenu client et des informations d’identification personnelle d’utilisateurs finaux.
+- **Partie 2 : répondre aux demandes de personnes concernées pour les journaux générés par le système** : lorsque vous utilisez les services d’entreprise de Microsoft, Microsoft génère des informations appelées Journaux générés par le système, pour fournir le service.  La deuxième partie de ce guide explique comment supprimer et exporter ces informations pour Azure, et comment y accéder.
 
 ## <a name="understanding-dsrs-for-azure-active-directory-and-microsoft-service-accounts"></a>Présentation des DPC pour les comptes de service Microsoft et Azure Active Directory
 
@@ -85,19 +90,19 @@ Ceci est particulièrement utile si vous souhaitez rechercher ou modifier des do
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com/) avec un compte Administrateur général pour l’annuaire.
 
-2. Sélectionnez **Tous les services**, entrez **Utilisateurs et groupes** dans la zone de texte, puis sélectionnez **Entrée**.
+2. Sélectionner **Azure Active Directory**.
 
-     ![Sélectionner Tous les services](media/azure-dsr_image3.png)
+     ![Sélectionner Tous les services](media/gdpr-azure-dsr-azure-portal.png)
 
-3. Sur le volet **Utilisateurs et groupes**, sélectionnez **Utilisateurs**.
+3. Sélectionner **Utilisateurs**.
 
-     ![Sélectionner les utilisateurs](media/azure-dsr_image9.png)
+     ![Sélectionner les utilisateurs](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. Dans le volet **Utilisateurs et groupes – Utilisateurs**, sélectionnez un utilisateur dans la liste, puis, dans le volet de l’utilisateur choisi, sélectionnez **Profil** pour afficher les informations de profil utilisateur pouvant contenir des données à caractère personnel.
+4. Dans le volet **Tous les utilisateurs**, sélectionnez un utilisateur dans la liste, puis, dans le volet de l’utilisateur choisi, sélectionnez **Profil** pour afficher les informations de profil utilisateur pouvant contenir des données à caractère personnel.
 
-    ![Sélectionner le profil](media/azure-dsr_image5.png)
+    ![Sélectionner le profil](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. Si vous devez ajouter ou modifier les informations de profil utilisateur, vous pouvez le faire, puis sélectionnez **Enregistrer** dans la barre de commandes.
+5. Si vous souhaitez ajouter ou modifier les informations de profil utilisateur, vous pouvez le faire en sélectionnant **Modifier** dans la barre de commandes puis **Enregistrer** après avoir effectué les modifications.
 
 #### <a name="service-specific-interfaces"></a>Interfaces propres au service
 
@@ -133,25 +138,21 @@ Vous pouvez corriger, mettre à jour ou supprimer des informations d’identific
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com/) avec un compte Administrateur général pour l’annuaire.
 
-2. Sélectionnez **Tous les services**, entrez **Utilisateurs et groupes** dans la zone de texte, puis sélectionnez **Entrée**.
+2. Sélectionner **Azure Active Directory**.
 
-    ![Sélectionner Tous les services](media/azure-dsr_image3.png)
+    ![Sélectionner Tous les services](media/gdpr-azure-dsr-azure-portal.png)
 
-3. Sur le volet **Utilisateurs et groupes**, sélectionnez **Utilisateurs**.
+3. Sélectionner **Utilisateurs**.
 
-    ![Sélectionner les utilisateurs](media/azure-dsr_image9.png)
+    ![Sélectionner les utilisateurs](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. Dans le volet **Utilisateurs et groupes – Utilisateurs**, sélectionnez un utilisateur dans la liste, puis, dans le volet de l’utilisateur sélectionné, sélectionnez **Profil** pour afficher les informations de profil utilisateur à corriger ou mettre à jour.
+4. Dans le volet **Tous les utilisateurs**, sélectionnez un utilisateur dans la liste, puis, dans le volet de l’utilisateur sélectionné, sélectionnez **Profil** pour afficher les informations de profil utilisateur à corriger ou mettre à jour.
 
-    ![Sélectionner le profil](media/azure-dsr_image5.png)
+    ![Sélectionner le profil](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. Corrigez ou mettez à jour les informations puis, dans la barre de commandes, sélectionnez **Enregistrer.**
+5. Corrigez ou mettez à jour les informations de profil utilisateur, y compris les informations sur le travail, en sélectionnant **Modifier** dans la barre de commandes puis  **Enregistrer** après avoir effectué les modifications.
 
-6. Sur le volet de l’utilisateur sélectionné, sélectionnez **Informations professionnelles** pour afficher les informations professionnelles à corriger ou mettre à jour.
-
-    ![Sélectionner les informations professionnelles](media/azure-dsr_image4.png)
-
-7. Corrigez ou mettez à jour les informations professionnelles de l’utilisateur puis, dans la barre de commandes, sélectionnez **Enregistrer.**
+    ![Sélectionner le profil](media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
 #### <a name="service-specific-interfaces"></a>Interfaces propres au service
 
@@ -184,26 +185,30 @@ Voici le processus de haut niveau permettant de supprimer des utilisateurs de vo
 
 ###### <a name="to-delete-a-user-from-an-azure-tenant"></a>Pour supprimer un utilisateur d’un client Azure
 
-1. Ouvrez le portail Azure, sélectionnez le volet **Azure Active Directory**, puis **Utilisateurs**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com/) avec un compte Administrateur général pour l’annuaire.
 
-    Le volet **Utilisateurs – Tous les utilisateurs** s’affiche.
+2. Sélectionner **Azure Active Directory**.
 
-    ![Localiser l’utilisateur](media/azure-dsr_image8.png)
+    ![Sélectionner Tous les services](media/gdpr-azure-dsr-azure-portal.png)
 
-2. Cochez la case en regard de l’utilisateur à supprimer, sélectionnez **Supprimer l’utilisateur**, puis **Oui** dans la zone vous demandant si vous souhaitez supprimer l’utilisateur.
+3. Sélectionner **Utilisateurs**.
 
-    ![Gestion des utilisateurs](media/azure-dsr_image9.png)
+    ![Sélectionner les utilisateurs](media/gdpr-azure-dsr-azure-all-users.png)
 
-3. Dans la zone déroulante **Afficher**, sélectionnez **Utilisateurs supprimés récemment**.
+4. Cochez la case en regard de l’utilisateur à supprimer, sélectionnez **Supprimer l’utilisateur**, puis **Oui** dans la zone vous demandant si vous souhaitez supprimer l’utilisateur.
 
-    ![Afficher le profil utilisateur](media/azure-dsr_image10.png)
+    ![Gestion des utilisateurs](media/gdpr-azure-dsr-azure-selected-user.png)
 
-4. Sélectionnez de nouveau le même utilisateur, sélectionnez **Supprimer définitivement**, puis **Oui** dans la zone vous demandant de confirmer la suppression définitive.
+5. Dans le  volet  **Tous les utilisateurs**, sélectionnez  **Utilisateurs supprimés**.
+
+    ![Afficher le profil utilisateur](media/gdpr-azure-dsr-azure-deleted-user.png)
+
+4. Sélectionnez de nouveau le même utilisateur, sélectionnez  **Supprimer définitivement** dans la barre de commandes, puis  **Oui**  dans la zone vous demandant de confirmer la suppression définitive.
 
 >[!IMPORTANT]  
 >N’oubliez pas qu’en cliquant sur **Oui** vous supprimez (de façon définitive et irrévocable) l’utilisateur, toutes les données associées et les journaux générés par le système. Si cela se produit par erreur, vous devrez ajouter manuellement l’utilisateur au client. Les données associées et les journaux générés par le système ne sont pas récupérables.
 
-   ![Afficher les informations professionnelles de l’utilisateur](media/azure-dsr_image11.png)
+   ![Afficher les informations professionnelles de l’utilisateur](media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
 #### <a name="service-specific-interfaces"></a>Interfaces propres au service
 
@@ -279,15 +284,15 @@ Voici le processus de haut niveau permettant d’exporter des données à partir
 
 1. Ouvrez le portail Azure, sélectionnez **Tous les services**, tapez *stratégie* dans le filtre, puis sélectionnez **Stratégie**.
 
-     ![Filtre Tous les services ](media/azure-dsr_image12.png)
+     ![Filtre Tous les services ](media/gdpr-azure-dsr-azure-policy.png)
 
 2. Dans le volet **Stratégie**, sélectionnez **Confidentialité de l’utilisateur**, **Gérer les demandes utilisateur**, puis **Ajouter une demande d’exportation**.
 
-    ![Ajouter une demande d’exportation ](media/azure-dsr_image13.png)
+    ![Ajouter une demande d’exportation ](media/gdpr-azure-dsr-azure-add-export-request.png)
 
 3. Terminez la **demande d’exportation des données** :
 
-    ![Nouvelle demande d’exportation des données](media/azure-dsr_image14.png)
+    ![Nouvelle demande d’exportation des données](media/gdpr-azure-dsr-azure-export-data-request.png)
 
 - **Utilisateur.** Tapez l’adresse e-mail de l’utilisateur Azure Active Directory qui a demandé l’exportation.
 - **Abonnement.** Sélectionnez le compte que vous utilisez pour générer le rapport sur l’utilisation des ressources et facturer les services. C’est également l’emplacement de votre compte de stockage Azure.

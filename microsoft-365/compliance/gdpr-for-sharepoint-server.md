@@ -8,20 +8,25 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Découvrez comment satisfaire aux exigences du RGPD dans un environnement SharePoint Server local.
-ms.openlocfilehash: 6da9d635506eafc2b976cf6a87f68370f40e327a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dba20f2f85bc9a474b39e427ed2628a2f9c9f437
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078488"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39625385"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>RGPD pour SharePoint Server
+
+S’applique à :
+- SharePoint Server 2013
+- SharePoint Server 2016
+- SharePoint Server 2019
 
 Dans le cadre de la protection des informations personnelles, nous vous recommandons d’effectuer les tâches suivantes :
 
 -   Classer vos données à l’aide d’Azure Information Protection.
 
--   Exécuter SharePoint Server dans une configuration avec des privilèges minimaux. Pour plus d’informations, reportez-vous à l’article relatif à la [planification d’une administration avec des privilèges minimaux dans SharePoint Server](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration) et à l’article [Sécurité pour SharePoint Server](https://docs.microsoft.com/fr-FR/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server).
+-   Exécuter SharePoint Server dans une configuration avec des privilèges minimaux. Pour plus d’informations, reportez-vous à l’article relatif à la [planification d’une administration avec des privilèges minimaux dans SharePoint Server](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration) et à l’article [Sécurité pour SharePoint Server](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server).
 
 -   [Activer le chiffrement BitLocker sur vos serveurs](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
 
@@ -35,7 +40,7 @@ Voici l’approche à adopter concernant le contenu généré par l’utilisateu
 
 Voici la procédure recommandée à suivre concernant les partages de fichiers, ainsi que les bibliothèques et les sites SharePoint :
 
-1.  **[Installez et configurez le scanneur Azure Information Protection.](https://docs.microsoft.com/fr-FR/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Installez et configurez le scanneur Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Déterminez les types de données sensibles à utiliser.
 
@@ -65,7 +70,7 @@ Voici la procédure recommandée à suivre concernant les partages de fichiers, 
 
 Lorsque vous appliquez des étiquettes à des données sensibles, veillez à utiliser des étiquettes qui ne sont pas configurées avec un système de protection. La protection inclut le chiffrement, qui empêche les services de détecter les données sensibles dans les fichiers.
 
-Pour plus d’informations sur l’utilisation du scanneur Azure Information Protection pour la recherche et l’étiquetage des données personnelles, reportez-vous au [Kit de détection de données du RGPD Microsoft à l’adresse](http://aka.ms/gdprpartners) (http://aka.ms/gdprpartners)).
+Pour plus d’informations sur l’utilisation du scanneur Azure Information Protection pour la recherche et l’étiquetage des données personnelles, reportez-vous au [Kit de détection de données du RGPD Microsoft à l’adresse](https://aka.ms/gdprpartners) (https://aka.ms/gdprpartners)).
 
 Pour plus d’informations sur la configuration du scanneur pour diverses conditions et sur l’utilisation des types d’informations sensibles Office 365 dans le cadre de la protection contre la perte de données, reportez-vous à l’article [Comment configurer des conditions pour la classification automatique et recommandée pour Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification). Notez que les nouveaux types d’informations sensibles Office 365 ne pourront pas immédiatement être utilisés avec le scanneur et que les types d’informations sensibles personnalisés ne peuvent pas être utilisés avec le scanneur.
 
@@ -85,7 +90,7 @@ La suppression d’informations personnelles (par exemple, des métadonnées ou 
 
 ### <a name="uls-logs"></a>Journaux ULS
 
-Les journaux du service ULS (Unified Logging Service) et les journaux d’utilisation dans SharePoint Server permettent d’effectuer le suivi de différentes fonctions système et peuvent contenir des informations sur l’utilisateur. Les journaux ULS et les journaux d’utilisation sont des fichiers texte et peuvent être recherchés à l’aide d’un large éventail d’outils. La [cmdlet PowerShell Merge-SPLogFile](https://docs.microsoft.com/fr-FR/powershell/module/sharepoint-server/merge-splogfile) fournit un moyen de renvoyer des enregistrements à partir des journaux ULS sur plusieurs serveurs dans une batterie de serveurs.
+Les journaux du service ULS (Unified Logging Service) et les journaux d’utilisation dans SharePoint Server permettent d’effectuer le suivi de différentes fonctions système et peuvent contenir des informations sur l’utilisateur. Les journaux ULS et les journaux d’utilisation sont des fichiers texte et peuvent être recherchés à l’aide d’un large éventail d’outils. La [cmdlet PowerShell Merge-SPLogFile](https://docs.microsoft.com/powershell/module/sharepoint-server/merge-splogfile) fournit un moyen de renvoyer des enregistrements à partir des journaux ULS sur plusieurs serveurs dans une batterie de serveurs.
 
 Pensez à définir les stratégies de rétention des journaux sur la valeur minimale nécessaire selon vos besoins. Pour plus d’informations sur la configuration de la journalisation dans SharePoint Server, reportez-vous à l’article [Configurer la journalisation des diagnostics dans SharePoint Server](https://docs.microsoft.com/SharePoint/administration/configure-diagnostic-logging).
 

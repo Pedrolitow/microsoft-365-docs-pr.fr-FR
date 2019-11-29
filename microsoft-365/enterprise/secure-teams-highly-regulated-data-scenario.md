@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez une équipe sécurisée pour stocker vos fichiers les plus précieux et les plus sensibles.
-ms.openlocfilehash: cc29bbc076bf4d66593f785a1e4d1f881a530d83
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: fe397dbd091415b15bbc48d54bfa59c432437788
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202425"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631264"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams pour les données hautement réglementées
 
@@ -49,6 +49,18 @@ Voici la configuration obtenue avec une étiquette de confidentialité.
 [![Affiche Teams pour les données hautement réglementées](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) ou [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
+
+
+<!--
+
+[Quick-Learn test (vertical): PDF](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pdf)
+
+[Quick-Learn test: PowerPoint](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pptx)
+
+[Horizontal PDF (Quick Start)](./media/secure-teams-highly-regulated-data-scenario/Sideways.pdf)
+
+--> 
+
 
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Phase 1 : configurer une équipe pour les données hautement réglementées
 

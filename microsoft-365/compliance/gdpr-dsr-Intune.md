@@ -1,7 +1,7 @@
 ---
-title: Demandes des personnes associées aux données pour Intune concernant le RGPD
-description: Guide expliquant comment utiliser les produits, services et outils d’administration Microsoft pour aider les clients de notre entité de contrôle à rechercher des données personnelles et à prendre des mesures pour répondre aux DPC.
-keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
+title: Demandes des données Intune des personnes concernées pour le RGPD et le CCPA
+description: Guide expliquant comment utiliser les produits, services et outils d’administration Microsoft pour aider les clients de notre entité de contrôle à rechercher des données personnelles et à prendre des mesures pour répondre aux DPC et CCPA.
+keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,27 +9,31 @@ ms.author: dougeby
 author: dougeby
 manager: angrobe
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 01f30dfbeb851731b6a8a101e19101b8f446524f
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: 9e668f4571ed193bd23b1373c170d3c0be929013
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422281"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268500"
 ---
-# <a name="intune-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées par le traitement des données pour Intune concernant le RGPD
+# <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des données Intune des personnes concernées pour le RGPD et le CCPA
 
 Le Règlement général [sur la protection des données (RGPD) de l’Union européenne](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) accorde le droit aux individus (appelés, dans le règlement, *personnes concernées*) de gérer les données personnelles qui ont été collectées par un employeur ou tout autre type d’agence ou d’organisation (également appelé *responsable du traitement des données* ou *responsable du traitement*). Dans le RGPD, les données personnelles sont définies de façon générale comme toute donnée relative à une personne physique identifiée ou identifiable. Le RGPD confère aux personnes concernées des droits précis sur leurs données personnelles ; ces droits vous donnent la possibilité d’obtenir des copies de ces données personnelles, de les modifier, d’en limiter le traitement, de les supprimer ou de les recevoir dans un format électronique afin de pouvoir les transférer à un autre responsable du traitement. Une demande officielle d’une personne concernée à un responsable du traitement pour effectuer une action sur ses données personnelles est appelée *demande de droits de la personne concernée* ou DPC dans le présent document.
 
-Le guide explique comment utiliser les outils d’administration, les services et les produits Microsoft pour aider nos clients entités de contrôle à rechercher des données personnelles et à agir dessus pour répondre à des DPC. Plus précisément, il décrit comment rechercher, consulter et traiter des données personnelles stockées dans le cloud Microsoft. Voici un aperçu des processus décrits dans ce guide :
+De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des obligations d’information, des protections contre la discrimination envers les personnes qui font le choix de faire usage de leurs droits, et la possibilité d’opter pour ou contre pour certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
+
+Le guide explique comment utiliser les produits, services et outils d’administration Microsoft pour aider les clients de notre entité de contrôle à rechercher des données personnelles et à prendre des mesures pour répondre aux DPC. Plus précisément, il explique comment rechercher des données ou des informations personnelles qui sont stockées dans le cloud Microsoft, comment y accéder et comment entreprendre une action sur ces données. Voici un aperçu rapide des processus présentés dans ce guide :
 
 - **Découvrir** : utilisez les outils de recherche et de détection pour rechercher plus facilement les données du client qui peuvent faire l’objet d’une demande DPC. Une fois que vous avez collecté les documents susceptibles de répondre à la demande, vous pouvez effectuer une ou plusieurs des actions DPC décrites ci-après. Vous pouvez également décider que la demande ne satisfait pas aux directives de votre organisation en termes de réponse à une demande DPC.
 - **Accéder :** récupérez des données à caractère personnel qui résident dans le cloud Microsoft et, si nécessaire, effectuez-en une copie pour la personne concernée.
 - **Rectifier :** modifiez ou mettez en œuvre d’autres actions demandées sur les données à caractère personnel, le cas échéant.
 - **Limiter** : limiter le traitement des données personnelles en supprimant les licences de différents services Azure ou en désactivant les services souhaités lorsque c’est possible. Vous pouvez également supprimer les données du cloud Microsoft et les conserver localement ou à un autre emplacement.
 - **Supprimer :** supprimez définitivement des données à caractère personnel qui résidaient dans le cloud Microsoft.
-- **Exporter :** fournissez une copie électronique (dans un format lisible par un ordinateur) des données à caractère personnel à la personne concernée.
+- **Exporter/Recevoir (Portabilité) :** fournit une copie électronique (dans un format lisible par un ordinateur) des données ou des informations personnelles à la personne concernée. Les informations à caractère personnel sous CCPA englobent toutes les informations relatives à une personne identifiée ou identifiable. Aucune distinction n’est faite entre les rôles privé, public et professionnel d’une personne. Le terme défini « informations personnelles » est à peu près aligné sur celui de « données personnelles » dans le RGPD. Toutefois, le CCPA inclut également les données relatives à la famille et au foyer. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
 Chaque section de ce guide décrit les procédures techniques qu’une organisation étant une entité de contrôle des données peut suivre pour répondre à une DPC pour des données personnelles dans le cloud Microsoft.
 

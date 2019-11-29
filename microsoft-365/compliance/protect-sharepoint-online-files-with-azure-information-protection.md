@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Résumé : Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel.'
-ms.openlocfilehash: 022c44d2e975e79f7407383d7ecaa5c6866de16a
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 6302ee8163525502550017f62fe4350645af59b3
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38710032"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39630874"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Protéger les fichiers SharePoint Online avec Azure Information Protection
 
@@ -31,7 +31,7 @@ ms.locfileid: "38710032"
   
 Suivez les étapes décrites dans cet article pour configurer Azure Information Protection afin de configurer le chiffrement et les autorisations des fichiers. Ces fichiers peuvent être ajoutés à une bibliothèque SharePoint configurée pour une protection hautement confidentielle. Sinon, ouvrez un fichier directement à partir du site et utilisez le client Azure Information Protection pour ajouter le chiffrement. La protection du chiffrement et des autorisations accompagne un fichier même lorsqu’il est téléchargé à partir du site. 
 
-Cette procédure fait partie d’une solution plus globale de configuration d’une protection hautement confidentielle pour les sites SharePoint et les fichiers contenus dans ces sites. Pour plus d’informations, reportez-vous à l’article [Sécuriser des sites et des fichiers SharePoint Online](/security/office-365-security/secure-sharepoint-online-sites-and-files.md). 
+Cette procédure fait partie d’une solution plus globale de configuration d’une protection hautement confidentielle pour les sites SharePoint et les fichiers contenus dans ces sites. Pour plus d’informations, reportez-vous à l’article [Sécuriser des sites et des fichiers SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection). 
 
 L’utilisation d’Azure Information Protection pour les fichiers dans SharePoint Online n’est pas recommandée pour tous les clients, mais elle est proposée en option aux clients qui ont besoin de ce niveau de protection pour un sous-ensemble de fichiers.
 
@@ -111,7 +111,7 @@ Il existe deux façons d’accorder à des utilisateurs externes un accès à de
 
 ## <a name="see-also"></a>Voir aussi
 
-[Sécuriser les fichiers et sites SharePoint Online](/security/office-365-security/secure-sharepoint-online-sites-and-files.md)
+[Sécuriser les fichiers et sites SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
   
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

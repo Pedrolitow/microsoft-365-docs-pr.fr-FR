@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dans Office 365, les étiquettes de rétention vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter la gestion des enregistrements dans Office 365.
-ms.openlocfilehash: 143d3fb97afca5b6a3b18e47b7be472f35a857ba
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: dcf350f34a30d27aa66d3e4395b2441694537bae
+ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39266125"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39621107"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -310,7 +310,7 @@ Exemples de requêtes :
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint
 
-En plus de permettre aux utilisateurs d’appliquer une étiquette de rétention à des documents individuels, vous pouvez également appliquer une étiquette de rétention par défaut à une bibliothèque, à un dossier ou à un ensemble de documents SharePoint, afin que tous les documents dans cet emplacement héritent de cette étiquette de rétention par défaut.
+En plus de permettre aux utilisateurs d’appliquer une étiquette de rétention à des documents individuels, vous pouvez également appliquer une étiquette de rétention par défaut à une bibliothèque, à un dossier ou à un ensemble de documents SharePoint, afin que tous les documents dans cet emplacement héritent de cette étiquette de rétention par défaut (les étiquettes par défaut sont une fonctionnalité E5).
   
 Pour une bibliothèque de documents, cette opération s’effectue sur la page **Paramètres de la bibliothèque** d’une bibliothèque de documents. Lorsque vous choisissez l’étiquette de rétention par défaut, vous pouvez également choisir de l’appliquer aux éléments présents dans la bibliothèque. 
   
