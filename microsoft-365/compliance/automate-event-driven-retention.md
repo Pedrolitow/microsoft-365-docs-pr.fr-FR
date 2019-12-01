@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Cette rubrique explique comment configurer votre flux de processus métier pour automatiser la rétention via des événements à l’aide de l’API REST de Microsoft 365.
-ms.openlocfilehash: 5977b79c47166fdafc76dfdb122b4fd37b63a875
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b4ae97ad9564f61e65b990a0054fcf13d88f1d8d
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708086"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631064"
 ---
-# <a name="automate-event-based-retention"></a>Rétentions basées sur des événements
+# <a name="automate-event-based-retention"></a>Rétention basée sur des événements
 
-L’explosion de contenu dans les organisations et comment il peut devenir assistées (redondantes, obsolètes, triviale) est une affaire sérieuse. Pour continuer à répondre aux exigences légales, commerciales et défis liés à la conformité des réglementations, les entreprises doivent pouvoir conserver et protéger les informations importantes et trouver rapidement ce qui est pertinent. Conservant uniquement ce qui est important, les informations pertinentes sont la clé du succès d’une entreprise.
+L’explosion de contenu dans les organisations et comment il peut devenir assistées (redondantes, obsolètes, triviale) est une affaire sérieuse. Pour continuer à répondre aux exigences légales, commerciales et défis liés à la conformité des réglementations, les organisation doivent pouvoir conserver et protéger les informations importantes et trouver rapidement ce qui est pertinent. Conservant uniquement ce qui est important, les informations pertinentes sont la clé du succès d’une organisation.
 
-Les organisations peuvent donc tirer parti des solutions de rétention dans le centre de conformité et sécurité Office 365. La rétention peut être déclenchée en utilisant les[étiquettes de rétention](labels.md). Une étiquette de rétention a la possibilité de [baser la période de rétention sur un événement spécifique](event-driven-retention.md). En règle générale, la période de rétention est basée sur une date connue, comme la date ou date de dernière modification pour le contenu création. Toutefois, les organisations ont également des exigences à dispose de contenu en fonction des occurrences d’un événement, par exemple 7 ans après qu’un employé quitte une organisation.
+Pour répondre à ce besoin, les organisations peuvent donc tirer parti des solutions de rétention dans le centre de conformité et sécurité Office 365. La rétention peut être déclenchée en utilisant les[étiquettes de rétention](labels.md). Une étiquette de rétention a la possibilité de [baser la période de rétention sur un événement spécifique](event-driven-retention.md). En règle générale, la période de rétention est basée sur une date connue, comme la date ou date de dernière modification pour le contenu création. Toutefois, les organisations ont également des exigences à dispose de contenu en fonction des occurrences d’un événement, par exemple 7 ans après qu’un employé quitte une organisation.
 
 Pour s’assurer de la conformité de la destruction de contenu, il est impératif de savoir quand un événement a lieu. Le volume du contenu en augmentant rapidement, il devient difficile à conserver et dispose du contenu d’une manière opportune et la conformité.
 
@@ -40,7 +40,7 @@ Par exemple, chaque jour, dizaines et des centaines d’employés rejoignent et 
 
 - **La période de rétention du contenu peut également être une date inconnue**. Par exemple, avec des étiquettes de rétention, vous pouvez également baser une période de rétention sur lorsqu’un type spécifique d’événement se produit, par exemple un employé quittant l’organisation.
 
-Le début de la période de rétention déclenche l’événement, et tout le contenu portant une étiquette pour ce type d’événement obtenez actions de rétention l’étiquette est appliquées dessus. Il s’agit rétention basée sur l’événement-pour plus d’informations, voir [vue d’ensemble de rétention basées sur les événements](event-driven-retention.md).
+Le début de la période de rétention déclenche l’événement, et tout le contenu portant une étiquette pour ce type d’événement obtenez actions de rétention l’étiquette est appliquées dessus. Il s’agit rétention basée sur l’événement.-Pour plus d’informations, voir [vue d’ensemble de rétention basées sur les événements](event-driven-retention.md).
 
 ## <a name="set-up-event-based-retention"></a>Définir la rétentions basées sur des événements
 
@@ -48,32 +48,32 @@ Cette section décrit les activités devant être effectuées avant la conservat
 
 ### <a name="identify-roles"></a>Identifier les rôles
 
-Identifier les différents rôles d’une organisation qui effectuent des tâches de gestion d’enregistrement qui seraient responsables de la rétention efficace et de documents professionnels.
+Identifier les différents rôles d’une organisation qui effectuent des tâches de gestion d’enregistrement et seraient responsables de la rétention efficace et de documents professionnels.
 
   | **Persona**| **Role**|
   | - | - |
   | Administrateur | Crée des types d’Événement de Rétention, Étiquettes de Rétention et Référentiels d’Enregistrement dans SharePoint |
   | Gestionnaire d’enregistrements                                  | Fournit des détails de recommandations et de conformité stratégies de rétention et des plannings de rétention   |
   | Administrateur système (entreprise)                          | Configure et gère les systèmes externes pour fonctionner avec Microsoft 365                       |
-  | Travailleur de l'information                               | Gère le cycle de vie de leur processus métier (RH, Finance, etc. informatique)                 |
+  | Travailleur de l'information                               | Gère le cycle de vie de leur processus métier (RH, Finance, informatique, etc.)                 |
 
 ### <a name="set-up-the-security--compliance-center"></a>Accéder au Centre de Conformité et de Sécurité
   
-1. L’administrateur de conformité crée un type d’événement : par exemple, la résiliation employé ou expiration de contrat ou fin de fabrication de produit (reportez-vous aux processus étape par étape dans l’article[rétention événement](event-driven-retention.md).
+1. L’administrateur de conformité crée un type d’événement &ndash; par exemple, la résiliation employé ou expiration de contrat ou fin de fabrication de produit. (Voir le processus détaillé de[Rétentions basées sur des événements](event-driven-retention.md).
     
-1. L’administrateur de conformité crée une étiquette en fonction d’un événement et l’associe à un type d’événement.
+2. L’administrateur de conformité crée une étiquette en fonction d’un événement et l’associe à un type d’événement.
     
-1. Il existe 4 types de déclencheurs pour les étiquettes de rétention :
+    Il existe quatre types de déclencheurs pour les étiquettes de rétention :
             
     1. Date de création
                 
-    1. Dernière modification
+    2. Dernière modification
                 
-    1. Date étiquette (lorsque le contenu a été étiqueté)
+    3. Date étiquette (lorsque le contenu a été étiqueté)
                 
-    1. Basé sur des événements
+    4. Basé sur des événements
     
-1. L’administrateur de conformité publie l’étiquette.
+3. L’administrateur de conformité publie l’étiquette.
 
 ### <a name="set-up-sharepoint"></a>Configurer SharePoint
    
@@ -81,29 +81,29 @@ Pour créer un référentiel des enregistrements, l’administrateur de conformi
 
 1. Crée un site SharePoint.
 
-1. Effectue les opérations suivantes :
+2. Effectue les opérations suivantes :
         
     - Crée une bibliothèque SharePoint : définir l’étiquette en fonction des événement au niveau de la bibliothèque. Pour plus d’informations, voir [application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque SharePoint, un dossier ou un ensemble de documents](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
           
-    - Configure un Document ensemble dans SharePoint. Pour plus d’informations, voir [présentation des ensembles de documents](https://support.office.com/article/Introduction-to-Document-Sets-3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
+    - Configure un ensemble de documents dans SharePoint. Pour plus d'informations, voir [Présentation des ensembles de documents](https://support.office.com/article/3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
       
-1. Attribue des Id de l’élément (biens QU'ID est un nom de produit ou un code utilisé par l’organisation, par exemple, la matricule peut être un id de l’élément) à chaque document employé définir (en attribuant des biens QU'ID dans le dossier, tous les éléments dans ce dossier hérite automatiquement le même ID de biens. Cela signifie que tous les éléments peuvent avoir leur période de rétention déclenchée par le même événement.
+3. Affecte un ID d'élément à chaque ensemble de documents de l'employé. Un ID d’élément est un nom de produit ou un code utilisé par l’organisation, par exemple, le numéro d’employé peut être un ID d’élément. En attribuant l’ID d’élément au dossier, tous les éléments de ce dossier héritent automatiquement du même ID d’élément. Cela signifie que la période de rétention de tous les éléments peut être déclenchée par le même événement.
 
 ## <a name="ways-to-trigger-event-based-retention"></a>Méthodes pour déclencher la lecture rétention basée sur l’événement
 
 Il existe deux façons avec lesquelles la rétention basée sur l’événement peut être déclenchée :
 
-- **Utiliser l’interface utilisateur du centre de conformité** il s’agit d’un processus qui peut être utilisé pour conserver moins de contenu à la fois ou la fréquence de déclenchement de rétention n’est pas souvent, par exemple, mensuelle ou annuelle. Pour plus d’informations sur cette méthode, voir [vue d’ensemble de rétention basée sur les événements](event-driven-retention.md). Toutefois, cette méthode pour déclencher la rétention peut prendre du temps et est sujette aux erreurs, et peut donc ralentir l’évolutivité. Par conséquent, une solution automatisée plus transparente associée au déclenchement de rétention peut améliorer la sécurité et conformité des données.
+- **Utilisation de l’interface utilisateur du centre d’administration** il s’agit d’un processus qui peut être utilisé pour conserver moins de contenu à la fois, ou la fréquence à laquelle le déclenchement de la rétention n’est pas fréquente (par exemple, mensuelle ou annuelle). Pour plus d'informations sur cette méthode, voir[Vue d’ensemble de la rétention basée sur un événement](event-driven-retention.md). Toutefois, cette méthode de déclenchement de la rétention peut prendre du temps et être sujette à des erreurs, ce qui freine l'évolutivité. Par conséquent, une solution automatisée et transparente de déclenchement de la rétention peut améliorer la sécurité et la conformité des données.
 
 - **À l’aide d’une API REST M365** Ce processus peut être utilisé lorsque les grandes quantités de contenu sont conservées à un moment et/ou la fréquence de rétention déclencheur est récurrente telle que de manière quotidienne ou hebdomadaire. Le flux détecte quand un événement se produit dans votre système métier de, puis crée automatiquement un événement connexe dans le centre de sécurité et conformité. Vous n’avez pas besoin de créer manuellement un événement dans l’interface utilisateur chaque fois que ce qui se passer.
 
 Il existe deux options d’utilisation de l’API REST :
 
-- **Microsoft Flow ou une application similaire** peut être utilisé(e )pour déclencher automatiquement l’occurrence d’un événement. Microsoft Flow est un orchestrateur pour la connexion à d’autres systèmes. À l’aide de Microsoft Flow ne requiert pas une solution personnalisée.
+- **Microsoft Flow ou une application similaire** peut être utilisée pour déclencher automatiquement l’occurrence d’un événement. Microsoft Flow est un Orchestrator pour la connexion à d’autres systèmes. L’utilisation de Microsoft Flow ne nécessite pas de solution personnalisée.
 
 - **PowerShell ou un HTTP client pour appeler des API REST** à l’aide de PowerShell (version 6 ou version ultérieure) pour appeler l’API REST Microsoft 365 pour créer des événements. 
 
-L’API Rest est un point de terminaison de service qui prend en charge des ensembles d’opérations HTTP (méthodes), qui fournit créer/récupération/mise à jour/supprimer l’accès aux ressources de service- pour plus d’informations, voir [composants d’une demande de l’API REST/réponse](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse) . Dans ce cas, les événements peuvent être créés en utilisant l’API REST de Microsoft 365 et récupérées à l’aide d’opérations (méthodes) POST et GET.
+Une API REST est un point de terminaison de service qui prend en charge les ensembles d’opérations HTTP (méthodes), qui fournissent l’accès de création, récupération/mise à jour/suppression aux ressources du service. Pour plus d’informations, voir [composants d’une demande/réponse API REST](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). Dans ce cas, l’API REST de Microsoft 365 vous permet de créer et d’extraire des événements à l’aide d’opérations (méthodes) publier et récupérer.
 
 ## <a name="example-scenarios"></a>Exemples de scénarios
 
@@ -111,39 +111,37 @@ Envisagez les scénarios suivants.
 
 ### <a name="scenario-1-employees-leaving-the-organization"></a>Scénario 1 : Employés quittant l’organisation 
 
-Une organisation crée et stocke plusieurs documents liés à l’employé par employé. Ces documents sont gérés et conservées pendant le recrutement de chaque employé. Toutefois, lorsque l’employé quitte l’organisation ou l’emploi terminé, l’organisation est obligée par les exigences juridiques et professionnelles de conserver les documents de cet employé pendant une période prévue.
+Une organisation crée et stocke de nombreux documents liés à des employés par employé. Ces documents sont gérés et conservés pendant l’embauche de chaque employé. Cependant, lorsque l’employé quitte l’organisation ou que l’emploi est résilié, l’organisation est obligée par les exigences légales et commerciales de conserver les documents de cet employé pendant une période spécifiée.
 
 Maintenant si plusieurs employés quittent l’organisation tous les jours, l’organisation doit déclencher la lecture l’horloge de rétention de centaines si ce n’est pas de milliers de documents chaque jour.
 
-En plus de cela, la période de rétention doit être calculée pour chacun de ces employés comme date d’achèvement employé + nombre de jours, mois ou années en fonction du type de l’employé enregistrer. Par exemple, la rémunération du travailleur de le déclarations employés et les avantages de l’employé doivent avoir différentes rétentions.
+En plus de cela, la période de rétention doit être calculée pour chacun de ces employés comme date d’achèvement employé + nombre de jours, mois ou années en fonction du type de l’employé enregistrer. Par exemple, la rémunération du collaborateur des employés et les déclarations d’avantages du même employé peuvent nécessiter une rétention différente.
 
-Le diagramme ci-dessous montre comment vous pouvez avoir plusieurs étiquettes qui sont associées à un événement spécifique. Tous les fichiers sous étiquette de travailleur rémunération et tous les fichiers sous étiquette avantages employé sont associés à un événement unique qui est l’employé quittant l’organisation. Chacun de ces différents fichiers doit avoir une différente horloge de rétention. Par conséquent, lorsqu’un employé quitte l’organisation, ces fichiers dans chaque étiquette rencontrent une différente période de rétention. Pour déclencher la lecture toutes ces différentes horloges de rétention pour chaque type de fichier ou une étiquette pour chaque employé est une tâche très difficile. Imaginez effectuer cette action pour plusieurs employés.
+Le diagramme ci-dessous montre comment plusieurs étiquettes peuvent être associées à un seul événement. Dans cet exemple, tous les fichiers figurant sous l’étiquette indemnités du collaborateur et tous les fichiers sous l’étiquette avantages sociaux des employés sont associés à un seul événement, qui est l’employé quittant l’organisation. Chacun de ces fichiers a des horloges de rétention différentes. Par conséquent, lorsqu’un employé quitte l’organisation, ces fichiers au sein de chaque étiquette ont une période de rétention différente. Le déclenchement de toutes ces horloges de rétention pour chaque type de fichier ou étiquette pour chaque employé constitue une tâche complexe. Imaginez qu’il s’agit de plusieurs employés.
 
 ![Diagramme illustrant le type d’événement, des événements et des étiquettes](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
 Un processus automatisé associé au déclenchement de ces différentes horloges de rétention pour plusieurs employés sera donc un gagne-temps, exempte d’erreur et très efficace.
 
-**Configuration automatisée de rétention basée sur des événements dans ce scénario :**
+**Configuration Automatisée de Rétention Basée sur des événements pour ce scénario:**
 
 ![Diagramme des rôles et des actions pour le scénario d’employé quittant l’organisation](media/automate-event-driven-retention-employee-termination-diagram.png)
 
   - L’administrateur crée des dossiers d’employé lié au Document, telles Cartier Marie, John Smith.
 
-  - L’administrateur ajoute des fichiers employé tels que les avantages, paie, rémunération de travailleur à chaque dossier employé
+  - L’administrateur ajoute des fichiers employé tels que les avantages, paie, rémunération de travailleur à chaque dossier employé.
 
-  - L’administrateur affecte des Id de l’élément à chaque dossier employé. 
+  - L’administrateur affecte des ID d’élément à chaque dossier employé. 
 
-  - L SCC d’administration
-
-  - Connexions dans le Centre de Conformité et de Sécurité
+  - L’administrateur SCG se connecte au Centre de Conformité et de Sécurité.
 
   - L’administrateur SCC crée des types d’événements liés à l’employé tels que « Renvoi employé », « Embauche employé » dans le Centre de Sécurité et Conformité.
 
   - Administrateur SCC crée une étiquette « Employés ».
 
-  - Cette étiquette « Employés » est publiée et appliquée manuellement ou automatiquement aux fichiers employé dans SharePoint
+  - Cette étiquette « Employés » est publiée et appliquée manuellement ou automatiquement aux fichiers employé dans SharePoint.
 
-  - Le Système de Gestion des Ressources Humaines comme Workday peut fonctionner avec Microsoft Flow pour exécuter cette page régulièrement pour gérer les fichiers de l’employé
+  - Le Système de Gestion des Ressources Humaines comme Workday peut fonctionner avec Microsoft Flow pour exécuter cette page régulièrement pour gérer les fichiers de l’employé.
 
   - Si un employé a quitté l’organisation, le flux déclenche l’événement M365 en fonction de la rétention l’API REST qui va commencer l’horloge de rétention sur des fichiers de l’employé.
 
@@ -407,9 +405,9 @@ Utilisation du code d’exemple pour appeler des API REST
 
 #### <a name="verify-the-outcome-in-both-options"></a>Vérifier le résultat dans les deux options
 
-Étape 1: Accéder au Centre de Conformité et de Sécurité
+Étape 1 : Accéder au centre de conformité et de sécurité.
 
-Étape 2 : Cliquez sur les événements sous gouvernance des données
+Étape 2 : Cliquez sur **Événements** sous **gouvernance des données**.
 
 Étape 3 : Vérifier l’Événement a été créé.
 
@@ -417,7 +415,7 @@ De même, les options ci-dessus pour automatiser la rétention basée sur des é
 
 ### <a name="scenario-2-contracts-expiring"></a>Scénario 2 : Contrats expiration
 
-Une organisation peut avoir plusieurs enregistrements pour un contrat unique avec des clients, fournisseurs et partenaires. Ces documents peuvent résider dans une bibliothèque de documents tels que SharePoint. La fin d’un contrat détermine le début de la période de rétention des documents associé au contrat. Par exemple : tous les enregistrements liés au contrats doivent être conservés pour cinq ans de l’heure de l’expiration du contrat. L’événement qui déclenche la période de rétention de cinq ans est l’expiration du contrat.
+Une organisation peut avoir plusieurs enregistrements pour un seul contrat avec des clients, des fournisseurs et des partenaires. Ces documents peuvent résider dans une bibliothèque de documents telle que SharePoint. La fin d’un contrat détermine le début de la période de rétention des documents associés au contrat. Par exemple, tous les documents relatifs aux contrats doivent être conservés pendant cinq ans après l'expiration du contrat. L’événement qui déclenche la période de rétention de cinq ans est l’expiration du contrat.
 
 Un système de gestion de relation client (CRM) pouvez travailler avec Microsoft 365 et la rétention de déclencheur de documents de contrat
 
@@ -427,19 +425,19 @@ Un système de gestion de relation client (CRM) pouvez travailler avec Microsoft
 
   - L’administrateur crée une bibliothèque SharePoint avec les différents dossiers pour chaque type de contrat.
 
-  - L’administrateur ajoute des fichiers de contrat tels que des contrats de licence, les contrats de développement pour chaque dossier contrat
+  - L’administrateur ajoute des fichiers de contrat tels que des contrats de licence, les contrats de développement pour chaque dossier contrat.
 
-  - L’administrateur affecte des Id de l’élément à chaque dossier de contrat.
+  - L’administrateur affecte des ID délément à chaque dossier de contrat.
 
-  - L’administrateur SCG se connecte au Centre de Conformité et de Sécurité
+  - L’administrateur SCG se connecte au Centre de Conformité et de Sécurité.
 
   - L’administrateur SCC crée un contrat lié aux types événements tels que « Création de contrat, » , « Expiration de contrat » dans le Centre de Sécurité et Conformité.
 
   - Administrateur SCC crée une étiquette « Expiration de contrat ».
 
-  - Cette étiquette « Expiration du Contrat » est publiée et appliquée manuellement ou automatiquement aux fichiers employé dans SharePoint
+  - Cette étiquette « Expiration du Contrat » est publiée et appliquée manuellement ou automatiquement aux fichiers employé dans SharePoint.
 
-  - Le Système de Gestion de Contrat peut fonctionner avec Microsoft Flow ou une application similaire pour exécuter cette page régulièrement pour gérer les fichiers de contrat
+  - Le Système de Gestion de Contrat peut fonctionner avec Microsoft Flow ou une application similaire pour exécuter cette page régulièrement pour gérer les fichiers de contrat.
 
   - Si un employé a quitté l’organisation, Microsoft Flow déclenche l’événement M365 en fonction de la rétention l’API REST qui va commencer l’horloge de rétention sur des fichiers de l’employé.
 
@@ -453,21 +451,21 @@ Un système de planification (ERP) peut fonctionner avec Microsoft 365 et Micros
 
 ![Diagramme des rôles et des tâches pour le scénario de cycle de vie de produit](media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
-  - L’administrateur crée des dossiers du produit dans l’ensemble de Documents tel que produit 1, produit 2, etc..
+  - L’administrateur crée des dossiers du produit dans l’ensemble de Documents tel que produit 1, produit 2, etc.
 
-  - L’administrateur ajoute des fichiers produit tels que les spécifications de fabrication, produit sur les tarifs, les licences produit pour chaque dossier du produit
+  - L’administrateur ajoute des fichiers produit tels que les spécifications de fabrication, produit sur les tarifs, les licences produit pour chaque dossier du produit.
 
-  - L’administrateur affecte des Id de l’élément à chaque dossier produit.
+  - L’administrateur affecte des ID d’élément à chaque dossier produit.
 
-  - L’administrateur SCG se connecte au Centre de Conformité et de Sécurité
+  - L’administrateur SCG se connecte au Centre de Conformité et de Sécurité.
 
   - L’administrateur SCC crée des types d’événement liés à l’employé tels que « Commencer la fabrication de produit », « Fin de fabrication de produit » dans le Centre de Sécurité et Conformité.
 
   - L’administrateur SCC crée l’étiquette « Fin de la Fabrication du Produit » dans le Centre de Sécurité et Conformité.
 
-  - Cette étiquette «Fin de la Fabrication du Produit» est publiée et appliquée manuellement ou automatiquement aux fichiers employé dans SharePoint
+  - Cette étiquette «Fin de la Fabrication du Produit» est publiée et appliquée manuellement ou automatiquement aux fichiers employé dans SharePoint.
 
-  - Le Système de Gestion de Contrat ERP peut fonctionner avec Microsoft Flow ou des applications similaires pour s’exécuter régulièrement pour gérer les fichiers de produit
+  - Le Système de Gestion de Contrat ERP peut fonctionner avec Microsoft Flow ou des applications similaires pour s’exécuter régulièrement pour gérer les fichiers de produit.
 
   - Si la fabrication d’un produit se termine, Microsoft Flow déclenche l’événement M365 en fonction de la rétention l’API REST qui va commencer l’horloge de rétention sur des fichiers de produit spécifiques.
 
@@ -475,11 +473,11 @@ Un système de planification (ERP) peut fonctionner avec Microsoft 365 et Micros
 
 ### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a>Utiliser les résultats de réponses 302 de redirection pour appeler des API REST
 
-1.  Appeler un appel d’événement de rétention POST à l’aide de l’URL API REST <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (les autorisations d’administrateur général sont obligatoires)
+1. Appeler un appel d’événement de rétention POST à l’aide de l’URL API REST <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (les autorisations d’administrateur général sont obligatoires)
 
-2.  Vérifiez le code de réponse. S’il s’agit 302, puis obtenez l’URL redirigé de propriété de l’emplacement de l’en-tête de réponse
+2. Vérifiez le code de réponse. S’il s’agit 302, puis obtenez l’URL redirigé de propriété de l’emplacement de l’en-tête de réponse
 
-3.  Appeler l’appel d’événement rétention POST à l’aide d’URL redirigé.
+3. Appeler l’appel d’événement rétention POST à l’aide d’URL redirigé.
 
 ## <a name="credits"></a>Crédits
 

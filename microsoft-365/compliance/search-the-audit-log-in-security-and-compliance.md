@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39233517"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634041"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -58,6 +58,8 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 - Activité d’analystes et d’administrateurs dans Microsoft Workplace Analytics
 
 - Activités utilisateur et administrateur dans Microsoft PowerApps
+
+- Activités utilisateur et administrateur dans Microsoft Forms
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -125,7 +127,9 @@ Avant de commencer à effectuer une recherche dans le journal d’audit d’Offi
   |Sharepoint Online et OneDrive Entreprise|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Yammer||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  ||||
 
 - Azure Active Directory (Azure AD) est le service d’annuaire pour Office 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le centre d’administration Microsoft 365 ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
 
@@ -304,7 +308,7 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
 |[Activités avancées eDiscovery](#advanced-ediscovery-activities)|[Activités dans Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Activités dans Microsoft Teams](#microsoft-teams-activities)|[Activités Santé Microsoft Teams](#microsoft-teams-healthcare-activities)|[Activités dans Yammer](#yammer-activities)|
 |[Activités Microsoft Flow](#microsoft-flow-activities)|[Activités Microsoft PowerApps](#microsoft-powerapps)|[Activités de Microsoft Stream](#microsoft-stream-activities)|
-[Activités administrateur Exchange](#exchange-admin-audit-log)|||
+|[Activités Microsoft Forms](#microsoft-forms-activities)|[Activités administrateur Exchange](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Activités des fichiers et pages
@@ -778,6 +782,43 @@ Vous pouvez effectuer une recherche dans le journal d’audit pour consulter les
 ### <a name="microsoft-stream-activities"></a>Activités de Microsoft Stream
 
 Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Microsoft Stream. Ces activités incluent les activités de vidéo effectuées par les utilisateurs, les activités de canal de groupe et les activités d’administrateur telles que la gestion des utilisateurs, la gestion des paramètres d’organisation et l’exportation de rapports. Pour obtenir une description de ces activités, voir la section «activités enregistrées dans Microsoft Stream» dans [journaux d’audit dans Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+
+### <a name="microsoft-forms-activities"></a>Activités Microsoft Forms
+
+Le tableau suivant répertorie les activités des utilisateurs et des administrateurs dans Microsoft Forms qui sont enregistrées dans le journal d’audit Office 365. Microsoft Forms est un outil de formulaire/questionnaire/enquête utilisé pour collecter des données pour analyse. 
+
+Dans les descriptions ci-dessous, certaines opérations contiennent d’autres paramètres d’activité.
+
+|**Nom convivial**|**Opération**|**Description**|
+|:-----|:-----|:-----|
+|Commentaire créé|CreateComment|Le propriétaire du formulaire ajoute un commentaire ou une note à un questionnaire.|
+|Formulaire créé|CreateForm|Le propriétaire du formulaire crée un nouveau formulaire.|
+|Formulaire modifié|EditForm|Le propriétaire du formulaire modifie un formulaire tel que la création, la suppression ou la modification d’une question. <br><br>La propriété EditOperation:string indique le nom de l'opération d'édition. Les opérations possibles sont : CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage et ChangeTheme.  <br><br>La plupart des noms d’opérations sont explicites. <br><br>FormImage inclut tout emplacement au sein duquel l’utilisateur peut charger une image, par exemple dans une requête ou en tant que thème d’arrière-plan.|
+|Formulaire déplacé|MoveForm|Le propriétaire du formulaire déplace un formulaire. <br><br>La propriété DestinationUserId:string indique l'ID d'utilisateur de la personne qui a déplacé le formulaire. La propriété NewFormId:String est le nouvel ID du formulaire nouvellement copié.|
+|Formulaire supprimé|DeleteForm|Un propriétaire d’un formulaire supprime une équipe. Cela inclut SoftDelete (option de suppression utilisée et formulaire déplacé vers la corbeille) et HardDelete (corbeille vidée).|
+|Formulaire consulté (moment de la création)|ViewForm|Le propriétaire du formulaire ouvre un formulaire existant pour modification.|
+|Formulaire prévisualisé|PreviewForm|Propriétaire du formulaire affiche un aperçu d’un formulaire à l’aide de la fonction d’aperçu.|
+|Données exportées|ExportForm|Le propriétaire du formulaire exporte les résultats vers Excel. <br><br>La propriété ExportFormat:string indique si le fichier Excel est téléchargé ou en ligne.|
+|Formulaire de partage autorisé pour la copie|AllowShareFormForCopy|Le propriétaire du formulaire crée un lien modèle pour partager le formulaire avec d'autres utilisateurs. Cet événement est consigné lorsque le propriétaire du formulaire clique sur pour générer l’URL du modèle.|
+|Formulaire de partage non autorisé pour copie|DisallowShareFormForCopy|Le propriétaire du formulaire supprime le lien modèle.|
+|Co-auteur du formulaire ajouté|AddFormCoauthor|Un utilisateur utilise un lien de collaboration pour vous aider à concevoir et afficher les réponses. Cet événement est consigné lorsqu’un utilisateur utilise une URL espace collaboration (pas lorsque espace collaboration URL est générée pour la première fois).|
+|Co-auteur de formulaire supprimée|RemoveFormCoauthor|Le propriétaire du formulaire supprime un lien de collaboration.|
+|Page de réponse consultée|ViewRuntimeForm|Un utilisateur a ouvert une page de réponse à afficher. Cet événement est consigné, que l’utilisateur envoie ou non une réponse.|
+|Réponse créée|CreateResponse|Similaire à la réception d'une nouvelle réponse.  Utilisateur a soumis une réponse à un formulaire. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
+|Réponse mise à jour|UpdateResponse|Le propriétaire du formulaire a mis à jour un commentaire ou une note sur un questionnaire. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
+|Toutes les réponses supprimées|DeleteAllResponses|Le propriétaire du formulaire supprime toutes les données de réponse.|
+|Réponse supprimée|DeleteResponse|Un propriétaire d’un formulaire supprime une réponse. <br><br>La propriété ResponseId:string indique la réponse à supprimer.|
+|Réponses consultées|ViewResponses|Propriétaire du formulaire affiche la liste agrégée des réponses. <br><br>La propriété ViewType : String indique si le propriétaire du formulaire affiche les détails ou les agrégats|
+|Réponse consultée|ViewResponse|Le propriétaire du formulaire affiche une réponse spécifique. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
+|Lien de synthèse créé|GetSummaryLink|Le propriétaire du formulaire crée un lien de résultats de synthèse pour partager les résultats.|
+|Lien de synthèse supprimé|DeleteSummaryLink|Le propriétaire du formulaire supprime le lien de synthèse des résultats.|
+|Formulaire mis à jour état d’hameçonnage|UpdatePhishingStatus|Cet événement est consigné lorsque la valeur de l’état de sécurité interne a changé, même si cela a modifié l’état de sécurité final (par exemple, formulaire est désormais fermé ou ouvert). Cela signifie qu’il est possible que vous rencontriez des événements en double sans modification d’état de sécurité finale.|
+|Invitation Forms Pro envoyée|ProInvitation|L’utilisateur clique pour activer une version d’évaluation Pro.|
+|Paramètres de formulaire mis à jour|UpdateFormSetting|Le propriétaire du formulaire met à jour un paramètre de formulaire. <br><br>La propriété FormSettingName:string indique le nom du paramètre et la nouvelle valeur.|
+|Paramètres d’utilisateur mis à jour|UpdateUserSetting|Le propriétaire du formulaire met à jour un paramètre d’utilisateur. <br><br>La propriété UserSettingName:string indique le nom et la nouvelle valeur du paramètre|
+|Formulaires répertoriés|ListForms|Le propriétaire du formulaire affiche une liste de formulaires. <br><br>La propriété ViewType:string indique qui affiche le propriétaire du formulaire : tous les formulaires, partagés avec moi ou les formulaires de groupe|
+|Réponse envoyée|SubmitResponse|Un utilisateur envoie une réponse à un formulaire. <br><br>La propriété IsInternalForm:boolean indique si le répondant est au sein de la même organisation que le propriétaire du formulaire.|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange
 

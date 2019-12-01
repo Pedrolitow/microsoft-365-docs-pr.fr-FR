@@ -13,19 +13,19 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Dans Office 365, vous pouvez utiliser des étiquettes de rétention pour implémenter une planification de rétention pour votre organisation. En tant que gestionnaire des enregistrements ou responsable de la mise en conformité, vous avez peut-être des centaines d’étiquettes de rétention à créer et à publier. Vous pouvez le faire via l’interface utilisateur dans le Centre de sécurité et conformité, mais créer des étiquettes de rétention une à une est chronophage et inefficace. En utilisant le script et les fichiers .csv fournis ci-dessous, vous pouvez créer et publier en bloc des étiquettes de rétention et des stratégies d’étiquette de rétention. Commencez par créer une liste des étiquettes de rétention et une liste des stratégies d’étiquette de rétention dans Excel, puis créez les étiquettes de rétention et les stratégies d’étiquette de rétention en bloc dans ces listes à l’aide de PowerShell. Cette méthode vous permet de créer et de publier en une fois toutes les étiquettes de rétention nécessaires pour votre planification de rétention.
-ms.openlocfilehash: 2be7c2251a3a35f32ff9754134cca1f5958b447a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: Office 365 vous permet d’utiliser des étiquettes de rétention pour implémenter une planification de rétention pour votre organisation. Grâce au script et aux fichiers.csv fournis, vous pouvez créer et publier des étiquettes de rétention et des stratégies de rétention des étiquettes en bloc en utilisant PowerShell.
+ms.openlocfilehash: b2bf7f4a4934e1c5b0c88005e586dd6b0d38e3f9
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708090"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631594"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Création et publication en bloc d’étiquettes de rétention à l’aide de PowerShell
 
 Dans Office 365, vous pouvez utiliser des étiquettes de rétention pour implémenter une planification de rétention pour votre organisation. En tant que gestionnaire des enregistrements ou responsable de la mise en conformité, vous avez peut-être des centaines d’étiquettes de rétention à créer et à publier. Vous pouvez le faire via l’interface utilisateur dans le Centre de sécurité et de conformité, mais créer des étiquettes de rétention une à une est chronophage et inefficace.
   
-En utilisant le script et les fichiers .csv fournis ci-dessous, vous pouvez créer et publier en bloc des étiquettes de rétention et des stratégies d’étiquette de rétention. Commencez par créer une liste des étiquettes de rétention et une liste des stratégies d’étiquette de rétention dans Excel, puis créez les étiquettes de rétention et les stratégies d’étiquette de rétention en bloc dans ces listes à l’aide de PowerShell. Cette méthode vous permet de créer et de publier en une fois toutes les étiquettes de rétention nécessaires pour votre planification de rétention.
+Grâce au script et aux fichiers.csv fournis ci-dessous, vous pouvez créer des étiquettes de rétention en bloc et publier des stratégies de rétention des étiquettes. Vous devez d'abord créer une liste des étiquettes de rétention et une liste des stratégies de rétention dans Excel, puis utiliser PowerShell pour créer les étiquettes de rétention et les politiques de rétention en bloc dans ces listes. Cela facilite la création et la publication de toutes les étiquettes de rétention requises par votre planification de rétention en une seule fois.
   
 Pour en savoir plus sur les étiquettes de rétention, consultez l’article [Vue d’ensemble des étiquettes de rétention](labels.md).
   
@@ -69,7 +69,7 @@ Remarques :
     
 - Si le fichier .csv contient une stratégie d’étiquette de rétention portant le même nom qu’une stratégie existante, le script ignore la création de cette stratégie d’étiquette de rétention. Aucune stratégie d’étiquette de rétention en double n’est créée.
     
-- Le script publie uniquement les étiquettes de rétention appliquées manuellement au contenu. Il ne prend pas en charge les étiquettes de rétention appliquées automatiquement au contenu.
+- Le script publie uniquement les étiquettes de rétention qui sont manuellement appliquées au contenu. Ce script ne prend pas en charge les étiquettes de rétention qui sont automatiquement appliquées au contenu.
     
 - Si vous modifiez ou renommez les en-têtes de colonne, le script échoue. Le script nécessite un fichier .csv au format fourni ici.
     
