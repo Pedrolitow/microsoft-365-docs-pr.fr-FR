@@ -1,7 +1,7 @@
 ---
-title: Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD
-description: Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD
-keywords: Visual Studio, Visual Studio Code, Visual Studio pour Mac, documentation Visual Studio, confidentialité, RGPD
+title: Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD et le CCPA
+description: Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD et le CCPA
+keywords: Visual Studio, Visual Studio Code, Visual Studio pour Mac, documentation Visual Studio, confidentialité, RGPD, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: visual-studio-family
@@ -10,23 +10,29 @@ ms.date: 05/24/2018
 author: PoulChapman
 ms.author: olholder
 manager: pchapman
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 96cb6820e24a378351c82264929c3aec99e6d4f6
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431545"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624797"
 ---
-# <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD
+# <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD et le CCPA
 
-Le [Règlement général sur la protection des données (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’Union européenne permet aux utilisateurs (désignés dans le règlement comme étant les _personnes concernées par le traitement des données_) de gérer leurs données personnelles. Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées par le traitement des données des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données personnelles, les demandes de corrections de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique. Toute demande formelle effectuée par une personne concernée par le traitement des données à une entité de contrôle des données (un employeur ou tout autre type d’agence ou d’organisation qui contrôle les données personnelles) au sujet de la prise de mesure sur ses données personnelles est appelée _demande de la personne concernée par le traitement des données_ ou « DPC ». Pour obtenir des informations générales relatives au RGPD, consultez la section [RGPD du portail d’approbation de services](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+Le [Règlement général sur la protection des données (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’Union européenne permet aux utilisateurs (désignés dans le règlement comme étant les _personnes concernées par le traitement des données_) de gérer leurs données personnelles. Les données personnelles sont définies de manière générale dans le cadre du RGPD comme toutes données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées par le traitement des données des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies des données personnelles, les demandes de corrections de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique. Toute demande formelle effectuée par une personne concernée par le traitement des données à une entité de contrôle des données (un employeur ou tout autre type d’agence ou d’organisation qui contrôle des données personnelles) au sujet de la prise de mesure sur ses données personnelles est appelée _demande de la personne concernée par le traitement des données_ ou « DPC ».
+
+De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
+
+Pour obtenir des informations générales sur le RGPD, consultez la [section RGPD du portail d’approbation de services](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## <a name="products-covered-by-this-guide"></a>Produits couverts par ce guide
 
-Ce guide décrit comment utiliser les outils de Microsoft pour exporter ou supprimer des données personnelles collectées pendant l’utilisation de la session authentifiée (connexion) de Visual Studio, de Visual Studio pour Mac et des extensions Microsoft de ces produits, ainsi que de celles de Visual Studio Code. Ce guide explique également comment effectuer des demandes des personnes concernées par le traitement des données pour des données personnelles collectées lors de l’utilisation de la communauté de développeurs Visual Studio, NuGet.org et le site web ASP.NET. Ces produits peuvent permettre l’utilisation d’outils et d’extensions autres que Microsoft, pour lesquels Microsoft n’agit pas en qualité de responsable du traitement des données ou d’entité de contrôle des données. Les utilisateurs doivent contacter le fournisseur de ces outils et extensions pour comprendre les stratégies relatives à la collecte et aux données personnelles pour les outils et extensions en question.
+Ce guide explique comment utiliser les outils Microsoft pour exporter ou supprimer des données personnelles collectées pendant une session connectée (ayant requis une authentification) de Visual Studio et Visual Studio pour Mac et les extensions Microsoft pour ces produits et pour Visual Studio Code. Ce guide décrit également comment formuler des demandes des personnes concernées par les données personnelles collectées lors de l’utilisation de Visual Studio Developer Community, NuGet.org et du site ASP.NET. Ces produits peuvent activer l’utilisation d’outils et d’extensions qui ne dépendent pas de Microsoft, et Microsoft n’est pas un processeur de données ou une entité de contrôle pour ces outils et extensions. Les utilisateurs doivent contacter le fournisseur de l’outil ou de l’extension pour être avertis des règles de collecte des données personnelles pour ces outils et extensions.
 
 ## <a name="additional-privacy-information"></a>Informations supplémentaires sur la confidentialité
 
@@ -54,11 +60,11 @@ En qualité de responsable du traitement de données en vertu du RGPD, Microsoft
 
 Pour obtenir plus d’informations, consultez l’article relatif aux [journaux générés par le système et collectés par Visual Studio](https://docs.microsoft.com/visualstudio/ide/diagnostic-data-collection).
 
-Seules les données personnelles associées aux identités authentifiées peuvent être traitées par une DPC. Par conséquent, étant donné que Visual Studio Code ne permet pas de s’identifier, les journaux générés par le système à partir de ce produit ne sont pas associés à une identité authentifiée et ne peuvent pas être pris en charge. Toutefois, certaines extensions Microsoft de Visual Studio Code peuvent fournir des données authentifiées, qui peuvent être traitées par une DPC. Pour obtenir plus d’informations, consultez [RGPD et Visual Studio Code](https://code.visualstudio.com/docs/supporting/faq#_gdpr-and-vs-code). En règle générale, nous ne stockons pas de données pour Visual Studio 2013 et les versions antérieures. Cependant, certaines extensions et certains composants peuvent fournir des données associées à des identités authentifiées pouvant être traitées par une DPC, comme indiqué ci-dessous.
+Seules les données personnelles associées aux identités authentifiées peuvent être traitées par une DSR. Par conséquent, étant donné que Visual Studio Code ne permet pas de s’identifier, les journaux générés par le système à partir de ce produit ne sont pas associés à une identité authentifiée et ne peuvent pas être pris en charge. Toutefois, certaines extensions Microsoft de Visual Studio Code peuvent fournir des données authentifiées, qui peuvent être traitées par une DSR. Pour obtenir plus d’informations, consultez [RGPD et Visual Studio Code](https://code.visualstudio.com/docs/supporting/faq#_gdpr-and-vs-code). En règle générale, nous ne stockons pas de données pour Visual Studio 2013 et les versions antérieures. Cependant, certaines extensions et certains composants peuvent fournir des données associées à des identités authentifiées pouvant être traitées par une DSR, comme indiqué ci-dessous.
 
 ### <a name="how-users-can-control-personal-data"></a>Contrôle des utilisateurs sur leurs données personnelles
 
-Visual Studio 2015 et les versions ultérieures, Visual Studio pour Mac et Visual Studio Code permettent à vos utilisateurs d’arrêter la collecte de données, et vous permettent, en qualité d’entité de contrôle, d’exporter ou de supprimer des données qui ont déjà été collectées.
+Visual Studio 2015 et les versions ultérieures, Visual Studio pour Mac et Visual Studio Code permettent à vos utilisateurs d’arrêter la collecte de données, et vous permettent, en qualité de contrôleur, d’exporter ou de supprimer des données qui ont déjà été collectées.
 
 #### <a name="in-app-settings"></a>Paramètres intégrés à l’application
 
@@ -70,9 +76,9 @@ Les utilisateurs peuvent contrôler les paramètres de confidentialité pour ces
 
 #### <a name="exporting-or-deleting-data"></a>Exportation ou suppression des données
 
-Les contrôleurs peuvent utiliser deux méthodes distinctes pour gérer les données client et les journaux générés par le système collectés auprès des personnes concernées par le traitement des données, selon la façon dont le produit Visual Studio Family ou les extensions Microsoft ont été enregistrés. Dans certains cas, les deux méthodes doivent être utilisées. Elles permettent aux entités de contrôle de télécharger une copie de l’historique de leurs activités gérées par cette méthode. La fermeture d’un compte AAD ou de service Microsoft entraîne la suppression des données client Visual Studio connexes, et l’anonymisation des données d’identification personnelle contenues dans les journaux générés par le système se rapportant à ces produits. Les journaux générés par le système rendus anonymes sont conservés pendant 18 mois maximum.
+Les contrôleurs peuvent gérer les données client et les journaux générés par le système collectés auprès des personnes associées aux données de deux méthodes distinctes, selon la façon dont le produit Visual Studio Family ou les extensions Microsoft ont été enregistrés. Dans certains cas, les deux méthodes doivent être utilisées. Les deux méthodes permettent aux contrôleurs de télécharger une copie de l’historique de leurs activités gérées par cette méthode. La fermeture d’un compte AAD ou de service Microsoft entraîne la suppression des données client Visual Studio connexes, et l’anonymisation des données d’identification personnelle contenues dans les journaux générés par le système se rapportant à ces produits. Les journaux générés par le système rendus anonymes sont conservés pendant 18 mois maximum.
 
-- Les utilisateurs ayant enregistré un produit Visual Studio Family à l’aide d’un compte lié à un client Azure, par exemple, un compte AAD ou un compte de service Microsoft associé à un abonnement Azure, peuvent suivre les instructions indiquées dans [Demandes des personnes associées aux données pour Azure concernant le RGPD](gdpr-dsr-azure.md).
+- Les utilisateurs ayant enregistré un produit Visual Studio Family à l’aide d’un compte lié à un client Azure, par exemple, un compte AAD ou un compte MSA associé à un abonnement Azure, peuvent suivre les instructions indiquées dans [Demande des personnes concernées par le traitement des données pour Azure concernant le RGPD](gdpr-dsr-azure.md).
 - Les utilisateurs ayant enregistré un produit Visual Studio Family sans utiliser de compte lié à un client Azure, par exemple de nombreux comptes à l’aide d’un compte de service Microsoft (MSA), peuvent utiliser le [Centre de réponse de confidentialité Microsoft basé sur le web](https://aka.ms/userprivacysite) disponible via leur compte Microsoft afin d’afficher, de contrôler et de supprimer des données d’activité liées à leur compte Microsoft sur plusieurs services Microsoft. Dans ce scénario, l’utilisateur agit en qualité de contrôleur de ses données personnelles.
 
 > [!NOTE]
@@ -110,7 +116,7 @@ Pour afficher les données liées à vos commentaires, procédez comme suit :
 
 #### <a name="export"></a>Exporter
 
-Vous pouvez exporter vos données de commentaires dans le cadre de la DPC. Nous allons créer une ou plusieurs archives .zip qui incluent :
+Vous pouvez exporter vos données de commentaires dans le cadre de la DSR. Nous allons créer une ou plusieurs archives .zip qui incluent :
 
 - les informations de votre profil [Communauté des développeurs](https://developercommunity.visualstudio.com) ;
 - les préférences et les paramètres de notification ;
@@ -148,7 +154,7 @@ L’action de suppression permet d’éliminer de [Communauté de développeurs]
 
 Pour lancer une suppression, procédez comme suit :
 
-1. Connectez-vous à [Communauté des développeurs](https://developercommunity.visualstudio.com). Dans le coin supérieur droit, cliquez sur votre profil, puis sélectionnez **Profil et préférences**.
+1. Connectez-vous à [Communauté des développeurs](https://developercommunity.visualstudio.com). Dans l’angle supérieur droit, cliquez sur votre profil, puis sélectionnez **Profil et préférences**.
 2. Cliquez sur l’onglet **Confidentialité**, puis cliquez sur **Supprimer vos données et votre compte** pour lancer la suppression de vos données.
 3. Un écran de confirmation s’affiche.
 4. Saisissez « supprimer » dans la zone, puis cliquez sur **Supprimer mon compte**.
@@ -162,11 +168,11 @@ Lorsque vous cliquez sur **Supprimer mon compte** :
 - Si vous signalez un nouveau problème ou si vous vous connectez à [Communauté des développeurs](https://developercommunity.visualstudio.com), vous êtes identifié comme un nouvel utilisateur.
 - Si vous supprimez votre compte à partir de [Communauté des développeurs](https://developercommunity.visualstudio.com), nous ne le supprimons pas d’autres services Microsoft.
 
-## <a name="xamarin-forums-and-bugzilla"></a>Xamarin Forums et Bugzilla
+## <a name="xamarin-forums"></a>Forums Xamarin
 
 ### <a name="personal-data-we-collect"></a>Données personnelles collectées
 
-Par l’intermédiaire de la communauté des utilisateurs [Xamarin Forums](https://forums.xamarin.com) et des sites web de création de rapport de bogues [Xamarin Bugzilla](https://bugzilla.xamarin.com/), Microsoft collecte les données que vous fournissez pour nous aider à reproduire et à résoudre les problèmes que vous rencontrez avec les produits et les services Microsoft. Ces données incluent des données personnelles et des commentaires publics. Les données personnelles collectées sont les données de compte d’utilisateur (par exemple, les noms d’utilisateur et les adresses e-mail associés à vos comptes Forums Xamarin ou Bugzilla), et les commentaires publics collectés incluent les bogues, les problèmes, les commentaires et les solutions que vous fournissez via la communauté Forums Xamarin ou le site web de création de rapport de bogues Xamarin Bugzilla.
+Par le biais de la communauté d’utilisateurs [ des forums Xamarin](https://forums.xamarin.com/), Microsoft collecte les données que vous fournissez pour nous aider à reproduire et résoudre les problèmes que vous pouvez rencontrer avec les produits et services Microsoft. Ces données incluent les données personnelles et les commentaires publics. Les données personnelles que nous recueillons sont les données de compte d’utilisateur (par exemple, les noms d’utilisateur et les adresses de messagerie associées à vos forums Xamarin) et les commentaires publics que nous recueillons incluent les bogues, les problèmes, les commentaires et les solutions que vous proposez via les forums Xamarin.
 
 ### <a name="how-you-can-control-your-data"></a>Contrôler vos données
 
@@ -184,47 +190,26 @@ La communauté Xamarin Forums est hébergée par un tiers, Vanilla Forums. Pour 
 
 La communauté Xamarin Forums est hébergée par un tiers, Vanilla Forums. Pour demander la suppression des données personnelles et publiques, les utilisateurs doivent contacter forums@xamarin.com (géré par l’équipe Xamarin). Ensuite, nous traitons manuellement la demande de suppression des données personnelles de l’utilisateur.
 
-#### <a name="bugzilla-for-xamarin"></a>Bugzilla pour Xamarin
-
-##### <a name="view"></a>Vue
-
-Les utilisateurs disposant de comptes Xamarin Bugzilla actifs peuvent afficher tous les bogues qu’ils ont signalés et tous les commentaires qu’ils ont ajoutés sur les bogues en cliquant sur les liens appropriés sur la page d’accueil Xamarin Bugzilla.
-
-##### <a name="export"></a>Exporter
-
-L’exportation des données personnelles n’est pas prise en charge.
-
-##### <a name="delete"></a>Supprimer
-
-Pour demander la suppression des données personnelles utilisées avec le site web de création de rapports Bugzilla de Xamarin, les utilisateurs peuvent fermer leur compte Xamarin Bugzilla en accédant à la [page Préférences des utilisateurs](https://bugzilla.xamarin.com/userprefs.cgi), puis en choisissant l’**onglet Fermer le compte**. Saisissez votre mot de passe Bugzilla et cochez la case indiquant que vous comprenez que cette action permet de supprimer définitivement votre compte.Les commentaires publics (par exemple, les bogues, les problèmes, les commentaires et les solutions) que les utilisateurs ont publiés sur le site Xamarin Bugzilla ne sont pas supprimés à la réception d’une demande de suppression. À la place, les commentaires publics sont rendus anonymes en supprimant l’adresse e-mail et le nom associé aux commentaires publics créés par l’utilisateur ayant envoyé la demande de suppression.
+> [!NOTE]
+> Bugzilla pour Xamarin n’accepte plus les nouveaux problèmes. Les anciens propriétaires de comptes Xamarin Bugzilla peuvent afficher une archive de tous les bogues qu’ils ont rapportés et de tous les commentaires qu’ils ont ajoutés aux bogues sur: [https://xamarin.github.io/bugzilla-archives/](https://xamarin.github.io/bugzilla-archives/). Pour demander la suppression de données personnelles contenues dans l’archive, les utilisateurs peuvent remplir et envoyer à [https://github.com/xamarin/bugzilla-archives/issues/new/choose](https://github.com/xamarin/bugzilla-archives/issues/new/choose). Les commentaires publics (par exemple, bogues, problèmes, commentaires et solutions) que les utilisateurs ont publiés sur le Xamarin Bugzilla ne sont pas supprimés après réception d’une demande de suppression. Les commentaires publics sont alors enregistrés de façon anonyme en supprimant le nom et l’adresse e-mail associés aux commentaires publics créés par l’utilisateur qui envoie la demande de suppression.
 
 ## <a name="nuget"></a>NuGet
 
-Pour obtenir plus d’informations relatives aux DPC pour NuGet.org, consultez l’article [Demandes de données utilisateur NuGet](https://docs.microsoft.com/nuget/policies/data-requests).
+Pour obtenir plus d’informations relatives aux DSR pour NuGet.org, consultez l’article [Demandes de données utilisateur NuGet](https://docs.microsoft.com/nuget/policies/data-requests).
 
 ## <a name="aspnet"></a>ASP.NET
 
-Pour obtenir plus d’informations relatives aux DPC pour le site web ASP.NET, consultez l’article relatif au [traitement des demandes de personnes concernées pour le RGPD et le site web ASP.NET](https://www.asp.net/gdpr).
+Pour obtenir plus d’informations relatives aux DSR pour le site web ASP.NET, consultez l’article relatif au [traitement des demandes de personnes associées aux données pour le RGPD et le site web ASP.NET](https://www.asp.net/gdpr).
 
 ## <a name="iisnet"></a>IIS.NET
 
-Pour obtenir plus d’informations relatives aux DPC pour le site web IIS.NET, consultez l’article relatif au [traitement des demandes de personnes concernées pour le RGPD et le site web IIS.NET](https://www.iis.net/gdpr).
+Pour obtenir plus d’informations relatives aux DSR pour le site web IIS.NET, consultez l’article relatif au [traitement des demandes de personnes associées aux données pour le RGPD et le site web IIS.NET](https://www.iis.net/gdpr).
 
 ## <a name="other-visual-studio-family-services"></a>Autres services Visual Studio Family
 
 ### <a name="surveymonkey"></a>SurveyMonkey
 
 De temps à autre, nous invitons des clients à fournir des commentaires sur ces produits par l’intermédiaire de SurveyMonkey. Ces données sont supprimées dans un délai de 28 jours. Lors du traitement des demandes des personnes concernées par le traitement des données pour ces produits, si nous avons des réponses de sondage authentifiées, nous les incluons dans l’exportation et la suppression desdites demandes.
-
-### <a name="uservoice"></a>UserVoice
-
-Nous invitons les clients à formuler des suggestions de produit sur les sites UserVoice.com pour ces produits. Ces sites sont gérés indépendamment par UserVoice, et les demandes des personnes concernées par le traitement des données sont gérées par UserVoice.
-
-- [https://visualstudio.uservoice.com/](https://visualstudio.uservoice.com/)
-- [https://aspnet.uservoice.com/](https://aspnet.uservoice.com/)
-- [https://xamarin.uservoice.com/](https://xamarin.uservoice.com/)
-
-En ce qui concerne les demandes des personnes concernées par le traitement des données, consultez les instructions d’UserVoice sur [Exporter vos données](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) ou sur [Supprimer vos données](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
 
 ## <a name="learn-more"></a>En savoir plus
 
@@ -233,4 +218,4 @@ En ce qui concerne les demandes des personnes concernées par le traitement des 
 - [Portail d’approbation de service](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Tableau de bord de confidentialité Microsoft](https://account.microsoft.com/privacy)
 - [Centre de réponse de confidentialité Microsoft](https://aka.ms/userprivacysite)
-- [Demandes des personnes concernées par le traitement des données pour Azure concernant le RGPD](gdpr-dsr-azure.md)
+- [Demandes des personnes associées aux données pour Azure concernant le RGPD](gdpr-dsr-azure.md)
