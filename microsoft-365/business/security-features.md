@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité fournies avec Microsoft 365 Business.
-ms.openlocfilehash: f24836ef93c529eddc05c767d6e4fa8af6aef314
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 98eb0c2015ed6088b2d5e8621c8e72a5b63f2a17
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715139"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668845"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business
 
@@ -61,7 +61,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise M
 
 Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour vous aider à protéger votre entreprise contre les menaces et protéger les informations sensibles.
   
-- **[Office 365 – Protection avancée contre les menaces](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
     La protection avancée contre les menaces (ATP) permet de protéger votre activité contre le hameçonnage et les attaques par ransomware sophistiqués conçus pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
     
@@ -74,7 +74,8 @@ Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour v
     L’accès au centre d’administration Intune dans le portail Azure vous permet de configurer des fonctionnalités de sécurité supplémentaires, telles que la gestion des appareils MacOS, iPhone et appareils Android, ainsi que la gestion des appareils avancée pour Windows, qui ne sont pas disponibles auprès de Microsoft. Centre d’administration de l’entreprise 365.
 - **Même [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) que le plan Azure ad P1**
 
-    L’accès conditionnel peut vous aider à protéger votre organisation contre les risques de connexion, à accéder à des tentatives d’accès à partir d’un réseau ou d’une localisation inattendue, à accéder à des tentatives de types de périphériques risqués, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée, et les signaux de l’événement First Authentication sont utilisés pour déterminer si l’accès tenté doit être approuvé, refusé ou si davantage de preuves (par exemple, une deuxième forme de identification) est obligatoire.
+
+    L’accès conditionnel peut vous aider à protéger votre organisation contre les risques de connexion, à accéder à des tentatives d’accès à partir d’un réseau ou d’une localisation inattendue, à accéder à des tentatives de types de périphériques risqués, etc. Les stratégies d’accès conditionnel sont appliquées une fois la première authentification terminée, et les signaux de l’événement First Authentication sont utilisés pour déterminer si l’accès tenté doit être approuvé, refusé ou si davantage de preuves (par exemple, une deuxième forme d’identification) est requis.
 
     Les fonctionnalités d’accès conditionnel sont les suivantes :
 
@@ -108,7 +109,7 @@ Votre abonnement professionnel Microsoft 365 inclut des fonctionnalités qui vou
 Vous pouvez gérer ces fonctionnalités dans le centre &amp; d’administration et de sécurité et dans le centre d’administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration de Microsoft 365 Business.
   
     
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Forum aux questions
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>Ces fonctionnalités de sécurité sont-elles disponibles sur tous les marchés ?
   

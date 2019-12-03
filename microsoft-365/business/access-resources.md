@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un appareil Azure Active Directory joint à Windows 10.
-ms.openlocfilehash: fdc1eca6913ba6af4f6b65691fdee2165e7c827e
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38323392"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668785"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business
 
@@ -32,6 +32,9 @@ Tout appareil Windows 10 qui est joint à Azure Active Directory a accès à tou
 Pour en savoir plus, consultez la rubrique [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 Les étapes sont également résumées dans les sections suivantes.
 
+> [!IMPORTANT]
+> Cette procédure s’applique uniquement à OAuth et NTLM. Kerberos n’est pas pris en charge.
+ 
 ## <a name="run-azure-ad-connect"></a>Exécuter Azure AD Connect
 
 Procédez comme suit pour activer les appareils Azure AD joints de votre organisation pour accéder aux ressources locales.
@@ -43,6 +46,8 @@ Procédez comme suit pour activer les appareils Azure AD joints de votre organis
 3. Une fois que les appareils Windows 10 sont joints à Azure AD, chaque utilisateur doit redémarrer ses appareils et se connecter avec leurs informations d’identification d’entreprise Microsoft 365. Tous les périphériques ont désormais accès aux ressources locales également.
     
 Aucune étape supplémentaire n’est requise pour accéder aux ressources locales pour les appareils joints à Azure AD. Cette fonctionnalité est intégrée dans Windows 10. 
+
+Si vous avez l’intention de vous connecter à l’appareil AADJ autre que la méthode de mot de passe comme code confidentiel/bio-métrique via WHFB de connexion d’informations d’identification et d’accéder aux ressources locales (partages, imprimantes.. etc.), suivezhttps://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 Si votre organisation n’est pas prête à être déployée dans la configuration d’appareil joint Azure AD décrite ci-dessus, envisagez de configurer la [configuration hybride Azure ad jointe](manage-windows-devices.md)de l’appareil.
   

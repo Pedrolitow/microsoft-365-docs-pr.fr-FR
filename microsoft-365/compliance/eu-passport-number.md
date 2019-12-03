@@ -1,7 +1,7 @@
 ---
 title: Numéro de passeport UE
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 8/16/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente ce qu’une stratégie de protection contre la perte de données (DLP) recherche lorsqu’elle détecte le type d’informations sensibles du numéro de passeport de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: fa3be04dec0f71a2568e046abd6b0af3e20181c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 44ee6e7b46d79772bcd3aec0fd26265f58f6c4c6
+ms.sourcegitcommit: 3fd6d175c1954ce463198e835d1d8f2f91d80d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079270"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39662799"
 ---
 # <a name="eu-passport-number"></a>Numéro de passeport UE
 
@@ -349,7 +349,7 @@ Pour plus d’informations, consultez la section « numéro de passeport franç
   
 ## <a name="germany"></a>Allemagne
 
-Pour plus d’informations, reportez-vous à la section « numéro de passeport allemand » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, consultez la section « numéro de passeport allemand » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grèce
 
