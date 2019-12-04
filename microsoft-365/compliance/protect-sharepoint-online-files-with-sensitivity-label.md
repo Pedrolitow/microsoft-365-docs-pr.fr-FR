@@ -18,18 +18,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Résumé : Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel.'
-ms.openlocfilehash: b5251d393249e9023f6f437cb3df6c074ebdf436
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39637826"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668802"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Protéger les fichiers SharePoint Online à l’aide d’une étiquette de confidentialité
 
 Suivez les étapes décrites dans cet article pour configurer une étiquette de confidentialité Office 365 afin de fournir le chiffrement et les autorisations pour les fichiers. Ces fichiers peuvent être ajoutés à une bibliothèque SharePoint configurée pour une protection hautement confidentielle. Vous pouvez également ouvrir un fichier directement à partir du site et appliquer l’étiquette. La protection via un chiffrement et des autorisations reste associée au fichier, même quand il est téléchargé à partir du site. 
 
-Cette procédure fait partie d’une solution plus globale de configuration d’une protection hautement confidentielle pour les sites SharePoint et les fichiers contenus dans ces sites. Pour plus d’informations, reportez-vous à l’article [Sécuriser des sites et des fichiers SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection). 
+Cette procédure fait partie d’une solution plus globale de configuration d’une protection hautement confidentielle pour les sites SharePoint et les fichiers contenus dans ces sites. Pour plus d’informations, reportez-vous à l’article [Sécuriser des sites et des fichiers SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md). 
 
 L’utilisation d’étiquettes de confidentialité pour les fichiers dans SharePoint Online n’est pas recommandée pour tous les clients, mais elle est proposée en option aux clients qui ont besoin de ce niveau de protection pour un sous-ensemble de fichiers.
 
@@ -44,7 +44,7 @@ Pour atteindre ce niveau de sécurité supplémentaire pour les fichiers d'un si
 
 - Utilisez une étiquette de confidentialité lorsque vous avez besoin d’un petit nombre d’étiquettes à la fois pour un usage global et pour des équipes privées individuelles.
 
-- Utilisez une sous-étiquette de confidentialité lorsque vous avez un grand nombre d’étiquettes ou si vous souhaitez organiser les étiquettes pour les équipes hautement confidentielles sous l’étiquette hautement réglementée.
+- Utilisez une sous-étiquette de confidentialité lorsque vous avez un grand nombre d’étiquettes ou si vous souhaitez organiser les étiquettes pour les équipes hautement confidentielles sous une étiquette à usage général pour les fichiers hautement confidentiels.
 
 Suivez [ces instructions](encryption-sensitivity-labels.md) pour configurer une étiquette distincte ou une sous-étiquette avec les paramètres suivants :
 
@@ -67,7 +67,7 @@ Vous pouvez accorder à des utilisateurs externes l’accès à des fichiers pro
 
 ## <a name="see-also"></a>Voir aussi
 
-[Sécuriser les fichiers et sites SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[Sécuriser les fichiers et sites SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

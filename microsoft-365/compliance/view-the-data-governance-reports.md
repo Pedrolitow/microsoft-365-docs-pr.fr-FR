@@ -1,7 +1,7 @@
 ---
 title: Affichage des rapports de gouvernance des données
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 6/8/2018
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dans les rapports de gouvernance des données du Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement vérifier si vos étiquettes sont appliquées au contenu comme vous le souhaitiez.
-ms.openlocfilehash: d6537c7c2c6f4bda9aad105ea5882e245a430f4c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d761931cea171afb84e25fa0900bec7c3a2f3c2
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079875"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813904"
 ---
 # <a name="view-the-data-governance-reports"></a>Affichage des rapports de gouvernance des données
 
@@ -34,7 +34,7 @@ Après avoir créé vos étiquettes, vous pouvez vérifier si elles sont appliqu
     
 Tous ces rapports affichent le contenu étiqueté dans Exchange, SharePoint et OneDrive Entreprise.
   
-Vous trouverez ces rapports dans le Centre de sécurité &amp; conformité \> **Gouvernance des données** \> **Tableau de bord**.
+Vous trouverez ces rapports dans le Centre de sécurité &amp; conformité \> **Gouvernance des informations** \> **Tableau de bord**.
   
 ![Graphique illustrant les tendances des étiquettes au cours des 90 derniers jours](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   

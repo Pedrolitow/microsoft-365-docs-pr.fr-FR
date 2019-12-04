@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0cf7a32d50c6fd648894934ccbb32d84959bd12b
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 275781c8e5b25555e7b65f830b8c703827d80849
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39232896"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676681"
 ---
 # <a name="compliance-offering-center-for-financial-industry-information-systems-fisc"></a>Offre conformité : Center for Financial Industry Information Systems (FISC)
 
@@ -40,12 +40,9 @@ Microsoft a engagé des évaluateurs extérieurs pour confirmer que Microsoft Az
 
 Les institutions financières peuvent s’appuyer sur l’évaluation de la conformité de ces trois secteurs pour les services de plateforme et l’infrastructure dans le périmètre d’Azure, de Dynamics 365, d’Office 365 et de Microsoft Cloud App Security.
 
-Découvrez les avantages de la norme FISC sur le Cloud Microsoft :
+[En savoir plus sur la validation d’évaluateurs externes et liens vers les sites de l’évaluateur (japonais uniquement](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx).
 
-- [Téléchargez la fiche d’information sur le FISC au Japon](https://aka.ms/fisc-backgrounder)
-- [En savoir plus sur la validation d’évaluateurs externes et liens vers les sites de l’évaluateur (japonais uniquement](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx) 
-
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Cloud App Security
