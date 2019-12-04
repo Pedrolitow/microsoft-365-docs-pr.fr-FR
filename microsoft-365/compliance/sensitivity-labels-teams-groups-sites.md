@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez appliquer des étiquettes à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint.
-ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
+ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818836"
+ms.locfileid: "39819130"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)
 
@@ -77,15 +77,15 @@ Ces images présentent les éléments suivants :
   }
 ```
 
-Office 365 n’utilise plus les anciennes classifications pour les nouveaux groupes et les sites SharePoint lorsque vous activez cet aperçu. Si vous avez utilisé la [Classification de site Azure ad](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["ClassificationList"]), les groupes et les sites existants affichent toujours les anciennes classifications. Pour afficher les nouvelles classifications, convertissez-les. Pour plus d’informations sur la façon de les convertir, voir [si vous avez utilisé une classification de site Azure ad classique](#if-you-used-classic-azure-ad-site-classification).
+Office 365 n’utilise plus les anciennes classifications pour les nouveaux groupes et les sites SharePoint lorsque vous activez cet aperçu. Si vous avez utilisé la [Classification de site Azure ad](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["ClassificationList"]), les groupes et les sites existants affichent toujours les anciennes classifications. Pour afficher les nouvelles classifications, convertissez-les. Pour plus d’informations sur la façon de les convertir, voir [si vous avez utilisé une classification de site Azure ad classique](#if-you-used-classic-azure-ad-site-classification). 
 
-## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Définir les paramètres de site et de groupe lorsque vous créez (ou modifiez) des étiquettes de confidentialité
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Définir les paramètres de site et de groupe lors de la création ou de la modification des étiquettes de confidentialité
 
-Une fois l’aperçu activé, procédez comme suit pour créer des étiquettes de confidentialité. La synchronisation des modifications apportées à ces paramètres peut prendre jusqu’à 24 heures.
+Une fois l’aperçu activé, procédez comme suit pour créer ou modifier des étiquettes de confidentialité. Vous devez effectuer ces étapes pour que les nouvelles étiquettes de sensibilité fonctionnent avec les sites et les groupes, même si vous avez déjà défini des étiquettes. La synchronisation des modifications apportées à ces paramètres peut prendre jusqu’à 24 heures.
 
 1. Dans le centre de conformité Microsoft 365, sélectionnez**Etiquettes**de **classification** > .
 
-2. Sélectionnez **créer une étiquette**.
+2. Sélectionnez **créer une étiquette**. Si vous avez déjà une étiquette, passez à l’étape suivante.
 
 3. Sélectionnez les options souhaitées, puis sous l’onglet **paramètres de site et de groupe** , choisissez :
 
@@ -97,6 +97,14 @@ Une fois l’aperçu activé, procédez comme suit pour créer des étiquettes d
 
 > [!IMPORTANT]
 > Seuls les paramètres de site et de groupe prennent effet lorsque vous appliquez une étiquette à une équipe, un groupe ou un site. D’autres paramètres, tels que le chiffrement et le marquage de contenu, ne sont pas appliqués à tout le contenu au sein de l’équipe, du groupe ou du site. De même, si vous créez une étiquette et que vous n’activez pas les paramètres de site et de groupe, l’étiquette reste disponible lorsque les utilisateurs créent des équipes, des groupes et des sites, mais il ne peut rien faire lorsque les utilisateurs l’appliquent.
+
+[En savoir plus sur la publication d’une étiquette de sensibilité](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+
+## <a name="troubleshoot-sensitivity-label-deployment"></a>Résoudre les problèmes de déploiement des étiquettes de confidentialité
+
+Si vous rencontrez des problèmes lorsque vous créez un groupe teams ou Office 365 après avoir activé ces paramètres ou modifié la description d’une étiquette, enregistrez l’étiquette, patientez quelques heures, puis essayez de nouveau de créer le groupe d’équipe ou d’Office 365.
+
+Si vous ne parvenez toujours pas à voir la nouvelle étiquette de sensibilité à partir de SharePoint Online, contactez immédiatement le support Microsoft.
 
 [En savoir plus sur la publication d’une étiquette de sensibilité](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
