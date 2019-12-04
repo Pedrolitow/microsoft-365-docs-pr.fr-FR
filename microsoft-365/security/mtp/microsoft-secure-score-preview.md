@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55f962a82fcbacb5ca1c5e3026469880489fd5b7
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: ff159546cd62b2fd2b5cb4fca031e449c860d5cb
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076328"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676801"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure score (aperçu)
 
@@ -39,9 +39,11 @@ Les organisations ont accès à des visualisations robustes de mesures et tendan
 
 En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). En savoir plus sur le [type de ressource de score sécurisé](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs. Si vous ne pouvez pas ou ne souhaitez pas arrêter une des actions d’amélioration, vous pouvez choisir d’accepter le risque ou le risque restant.
+
+Nous vous montrons l’ensemble complet des améliorations possibles, quelle que soit la licence, afin que vous puissiez comprendre les meilleures pratiques en matière de sécurité et améliorer votre score. Votre posture de sécurité absolue est représentée par la fonction de chiffrement sécurisé, qui reste la même quelle que soit la licence de produit que possède votre organisation. N’oubliez pas que la sécurité doit être équilibrée avec la convivialité et que toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
 
 Votre score est mis à jour en temps réel afin de refléter les informations présentées dans les pages de l’action visualisations et amélioration. Le score sécurisé est également synchronisé quotidiennement pour recevoir les données système relatives aux points obtenus pour chaque action.
 

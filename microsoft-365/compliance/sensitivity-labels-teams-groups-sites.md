@@ -3,7 +3,7 @@ title: Utiliser des étiquettes de confidentialité avec Microsoft Teams, les gr
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/13/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez appliquer des étiquettes à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint.
-ms.openlocfilehash: 5fc7fec199482449baf9174d6e854d0a5564faa6
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685887"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818836"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)
 
@@ -32,13 +32,15 @@ Lorsque vous créez des étiquettes de confidentialité dans le [Centre de confo
 
 Lorsque vous appliquez une étiquette à une équipe ou un groupe, l’étiquette s’applique automatiquement au site d’équipe SharePoint connecté et inversement.
 
-À présent, vous pouvez également activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive. [Apprenez-en davantage](sensitivity-labels-sharepoint-onedrive-files.md).
+À présent, vous pouvez également activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive. [En savoir plus](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>À propos de la préversion publique pour Microsoft Teams, les groupes Office 365 et les sites SharePoint
 
 Les étiquettes de sensibilité pour Microsoft Teams, les groupes Office 365 et les sites SharePoint sont progressivement déployés sur les clients et peuvent changer avant la version finale.
 
-## <a name="overview"></a>Vue d’ensemble
+La préversion publique ne fonctionne pas avec les réseaux de distribution de contenu (CDN) Office 365.
+
+## <a name="overview"></a>Vue d'ensemble
 
 Lorsque vous publiez des étiquettes de confidentialité, les utilisateurs d’Office 365 ont accès à la même liste d’étiquettes.
 
@@ -77,9 +79,9 @@ Ces images présentent les éléments suivants :
 
 Office 365 n’utilise plus les anciennes classifications pour les nouveaux groupes et les sites SharePoint lorsque vous activez cet aperçu. Si vous avez utilisé la [Classification de site Azure ad](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["ClassificationList"]), les groupes et les sites existants affichent toujours les anciennes classifications. Pour afficher les nouvelles classifications, convertissez-les. Pour plus d’informations sur la façon de les convertir, voir [si vous avez utilisé une classification de site Azure ad classique](#if-you-used-classic-azure-ad-site-classification).
 
-## <a name="set-site-and-group-settings-when-you-create-sensitivity-labels"></a>Définir les paramètres de site et de groupe lorsque vous créez des étiquettes de confidentialité
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Définir les paramètres de site et de groupe lorsque vous créez (ou modifiez) des étiquettes de confidentialité
 
-Une fois l’aperçu activé, procédez comme suit :
+Une fois l’aperçu activé, procédez comme suit pour créer des étiquettes de confidentialité. La synchronisation des modifications apportées à ces paramètres peut prendre jusqu’à 24 heures.
 
 1. Dans le centre de conformité Microsoft 365, sélectionnez**Etiquettes**de **classification** > .
 

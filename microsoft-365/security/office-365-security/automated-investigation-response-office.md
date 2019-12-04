@@ -3,7 +3,7 @@ title: Réponse automatique aux incidents (AIR) dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: dc1f2a4c0c91cf7b1e2d351f173367e34c5d3323
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673400"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813914"
 ---
 # <a name="automated-incident-response-air-in-office-365"></a>Réponse automatique aux incidents (AIR) dans Office 365
 
 Les fonctionnalités de réponse aux incidents automatisées vous permettent d’exécuter des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. AIR peut aider votre équipe opérationnelle en matière de sécurité à fonctionner de manière plus efficace.
 - Pour obtenir une vue d’ensemble du fonctionnement de l’avion, utilisez cet article.
 - Pour commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
-
-> [!NOTE]
-> Vous devez être un administrateur général, un administrateur de sécurité, un opérateur de sécurité ou un lecteur de sécurité pour accéder aux fonctionnalités AIR. Pour en savoir plus sur ces autorisations, consultez la rubrique [Microsoft 365 Security Center : Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 ## <a name="the-overall-flow-of-air"></a>Flux d’AIR global
 
@@ -47,24 +44,22 @@ Les sections suivantes fournissent plus d’informations sur AIR, notamment des 
 
 Les [alertes](../../compliance/alert-policies.md#viewing-alerts) représentent des déclencheurs pour les flux de travail d’équipe des opérations de sécurité pour la réponse aux incidents. La définition de la priorité des alertes à droite pour l’enquête, tout en s’assurant qu’aucune menace n’est sans adresse est complexe. Lorsque les enquêtes dans les alertes sont effectuées manuellement, les équipes des opérations de sécurité doivent rechercher et corréler les entités (par exemple, le contenu, les appareils et les utilisateurs) menacées. Ces tâches et les flux de travail sont très longs et impliquent plusieurs outils et systèmes. Avec AIR, l’analyse et la réponse sont automatisées dans les alertes de gestion de la sécurité et des menaces clés qui déclenchent automatiquement vos règles de réponse de sécurité. 
 
-Dans la version initiale d’AIR (début du 2019 avril), les alertes générées à partir des stratégies d’alerte d’événements uniques suivantes sont automatiquement analysées. 
+Dans la version initiale d’AIR (début du 2019 avril), les alertes générées à partir des types suivants de stratégies d’alerte à un seul événement sont analysées automatiquement :  
 
 - Un clic d’URL potentiellement malveillant a été détecté
-
 - Courrier électronique signalé par l’utilisateur comme hameçonnage *
-
 - Messages électroniques contenant des programmes malveillants supprimés après la remise *
-
 - Messages électroniques contenant des URL d’hameçonnage supprimées après la remise *
-
 - Modèles d’envoi de courrier électronique suspects détectés #
-
 - Utilisateur non autorisé à envoyer un message électronique #
 
 > [!NOTE]
 > Les alertes signalées par un astérisque (*) sont affectées d’une gravité *informatif* dans les stratégies d’alerte respectives dans le centre de sécurité & conformité, les notifications par courrier étant désactivées. Les notifications par courrier électronique peuvent être activées par le biais de la [Configuration des stratégies d’alerte](../../compliance/alert-policies.md#alert-policy-settings). Les alertes marquées avec un hachage (#) sont généralement des alertes disponibles associées aux règles de préversion publique.
 
-Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](#investigation-graph)correspondante. Notez que les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, vous devez modifier le filtrage des alertes de manière à inclure des alertes d’information.
+Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](#investigation-graph)correspondante. 
+
+> [!NOTE]
+> Les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, modifiez le filtrage des alertes de manière à inclure des alertes d’information.
 
 Si votre organisation gère vos alertes de sécurité par le biais d’un système de gestion des alertes, d’un système de gestion des services ou d’un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes Office 365 à ce système via une notification par courrier électronique ou via l' [API d’activité de gestion d’office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d’alerte d’enquête via le courrier électronique ou l’API incluent des liens permettant d’accéder aux alertes dans le centre de sécurité & conformité, ce qui permet à l’administrateur de sécurité affecté de naviguer rapidement dans l’enquête.
 
@@ -117,14 +112,14 @@ L’état d’enquête indique la progression de l’analyse et des actions. Lor
 |Statut  |Signification  |
 |---------|---------|
 |Démarrage | L’enquête est mise en file d’attente pour commencer bientôt |
-|En cours d'exécution | L’enquête a commencé et mène son analyse |
+|En cours d’exécution | L’enquête a commencé et mène son analyse |
 |Aucune menace détectée | L’enquête a terminé son analyse et aucune menace n’a été trouvée |
 |Terminé par le système | L’enquête n’a pas été fermée et a expiré après 7 jours |
 |Action en attente | L’enquête a détecté des menaces avec des actions recommandées |
 |Menaces détectées | L’enquête a détecté des menaces, mais les menaces n’ont pas d’actions disponibles dans l’AIR |
 |Corrigé | L’enquête s’est terminée et a été entièrement corrigée (toutes les actions ont été approuvées) |
 |Partiellement résolu | L’enquête terminée et certaines des actions recommandées ont été approuvées |
-|Terminé par l’utilisateur | Un administrateur a mis fin à l’enquête |
+|Interrompu par l’utilisateur | Un administrateur a mis fin à l’enquête |
 |Échec | Une erreur s’est produite lors de l’enquête qui l’a empêché d’atteindre une conclusion sur les menaces |
 |Mise en file d’attente par limitation | L’enquête est en attente d’analyse en raison de limitations de traitement du système (pour protéger les performances du service) |
 |Interruption par la limitation | L’enquête n’a pas pu être terminée en temps suffisant en raison des limitations de traitement du volume et du système. Vous pouvez déclencher à nouveau l’enquête en sélectionnant l’e-mail dans l’Explorateur et en sélectionnant l’action examiner. |
@@ -308,6 +303,15 @@ Office 365 Examen et réponse automatisés est inclus dans les abonnements suiva
 Si vous n’avez pas l’un de ces abonnements, [Démarrez une version d’évaluation gratuite](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
 
 Pour en savoir plus sur la disponibilité des fonctionnalités, consultez la rubrique [disponibilité des fonctionnalités dans les plans de protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## <a name="required-permissions-to-use-air-capabilities"></a>Autorisations requises pour utiliser les fonctionnalités AIR
+
+Les autorisations sont accordées par le biais de certains rôles, tels que ceux décrits dans le tableau suivant : 
+
+|Tâche |Rôle (s) requis |
+|--|--|
+|Pour configurer les fonctionnalités AIR |Un des éléments suivants : <br/>- **Administrateur général**<br/>- **Administrateur de la sécurité** <br/>Ces rôles peuvent être attribués dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [Centre de conformité Office 365 Security &](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
+|Pour approuver ou rejeter des actions recommandées|L’un des éléments suivants (ces rôles peuvent être attribués dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [Centre de conformité Office 365 Security &](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)) :<br/>- **Administrateur général** <br/>- **Administrateur de la sécurité**<br/>- **Lecteur de sécurité** <br/>---et---<br/>- **Recherche et purge** (ce rôle est affecté uniquement dans le [centre de conformité & Office 365 Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center))
 
 ## <a name="next-steps"></a>Étapes suivantes
 

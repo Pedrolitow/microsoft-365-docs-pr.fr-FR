@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
-ms.openlocfilehash: 3d416e1e808ae6045f5510e0a051f038e4b38c06
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b3c978f57533623a6e58d22919430f4e02e78b77
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685926"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676781"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -44,15 +44,17 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
     
   - Microsoft .NET Framework 4,7
     
-  - un navigateur pris en charge :
+- Pour exécuter l’outil d’exportation de découverte électronique<sup>1</sup>, vous devez utiliser l’un des navigateurs pris en charge suivants :
+
+  - Microsoft Edge <sup>2</sup>
+  
+    OU
+
+  - Microsoft Internet Explorer 10 et versions ultérieures
     
-     - Microsoft Edge
-    
-        OU
-    
-     - Microsoft Internet Explorer 10 et versions ultérieures
-    
-    **Remarque :** Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge. 
+  > [!NOTE]
+  > <sup>1</sup> Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge.<br/>
+  > <sup>2</sup> suite à des modifications récentes apportées à Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de la prise en charge ClickOnce dans Edge, consultez [la rubrique utiliser l’outil d’exportation de découverte électronique Office 365 dans Microsoft Edge](configure-edge-to-export-search-results.md).
     
 - Lorsque vous téléchargez les résultats de recherche (décrit à l’étape 2), vous pouvez augmenter la vitesse de téléchargement en configurant un paramètre de Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Pour plus d’informations, consultez [la rubrique augmentation de la vitesse de téléchargement lors de l’exportation des résultats de recherche eDiscovery à partir d’Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
@@ -81,9 +83,9 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
 
 Vous devez préparer les résultats de recherche pour l’exportation. Lorsque vous préparez des résultats, ceux-ci sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft dans le Cloud Microsoft. Le contenu des boîtes aux lettres et des sites est téléchargé à un débit maximal de 2 Go par heure.
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
+2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
     
 3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de **contenu**de **recherche** \> .
     

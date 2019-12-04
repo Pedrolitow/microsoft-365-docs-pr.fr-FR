@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menac
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités de réponse aux incidents automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 13f7e95829b8cf3adf17a40cf7b02c5322b15ea7
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 9db3a788f5a2f2c7101b5165935884c1d76bccbd
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673420"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813864"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Enquêter et répondre automatiquement aux menaces dans Office 365
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 En fonction de votre abonnement, [Office 365 protection avancée contre les menaces](office-365-atp.md) peut inclure des fonctionnalités de réponse aux incidents (air) automatisées qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité pour traiter les alertes et les menaces.
 
@@ -35,17 +35,6 @@ Avec AIR, lorsque certaines alertes sont déclenchées, un ou plusieurs règles 
 - [Afficher les détails d’une enquête](#view-details-of-an-investigation)
 - [Passer en revue et approuver les actions à la suite d’une enquête](#review-and-approve-actions) 
 - [Afficher les détails d’une alerte liée à une enquête](#view-details-about-an-alert-related-to-an-investigation)
-
-> [!NOTE]
-> Vous devez disposer des autorisations appropriées pour effectuer les tâches décrites dans cet article. Par exemple, vous Myst être un administrateur général, un administrateur de sécurité, un opérateur de sécurité ou un lecteur de sécurité. [En savoir plus sur les rôles et les autorisations du centre de sécurité Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
-
-AIR est inclus dans les abonnements suivants :
-- Microsoft 365 E5
-- Microsoft 365 E5 Sécurité
-- Office 365 E5
-- Office 365 – Protection avancée contre les menaces Plan 2
-
-Si vous n’avez pas l’un de ces abonnements, [Démarrez une version d’évaluation gratuite](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 
@@ -111,7 +100,7 @@ Si votre organisation utilise une solution de création de rapports personnalis�
 
 Pour ce faire, utilisez les ressources suivantes :
 
-|Ressource  |Description  |
+|Resource  |Description  |
 |---------|---------|
 |[Vue d’ensemble des API de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |L’API Activité de gestion Office 365 fournit des informations sur diverses actions et événements d’utilisateur, d’administrateur, de système et de stratégie à partir des journaux d’activité Office 365 et Azure Active Directory.         |
 |[Prise en main des API de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |L’API de gestion d’Office 365 utilise Azure AD pour fournir des services d’authentification à votre application pour accéder aux données d’Office 365. Suivez les étapes décrites dans cet article pour le configurer.          |
@@ -120,10 +109,8 @@ Pour ce faire, utilisez les ressources suivantes :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[En savoir plus sur les alertes](../../compliance/alert-policies.md)
-
-[Rechercher et identifier manuellement les messages électroniques malveillants remis dans Office 365](investigate-malicious-email-that-was-delivered.md)
-
-[En savoir plus sur AIR dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-
-[Consultez la feuille de route Microsoft 365 pour découvrir les éléments bientôt disponibles et à déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Découvrez comment obtenir de l’AIR et voir les autorisations requises](automated-investigation-response-office.md#how-to-get-air)
+- [En savoir plus sur les alertes](../../compliance/alert-policies.md)
+- [Rechercher et identifier manuellement les messages électroniques malveillants remis dans Office 365](investigate-malicious-email-that-was-delivered.md)
+- [En savoir plus sur AIR dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Consultez la feuille de route Microsoft 365 pour découvrir les éléments bientôt disponibles et à déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)

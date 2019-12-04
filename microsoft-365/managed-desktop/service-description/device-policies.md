@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 93c7cca75f513008706b4a52b4bbc1bc033341aa
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: 5eb91a45d844863b27ee208bda2bee812789851e
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830482"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813844"
 ---
 # <a name="device-configuration"></a>Configuration des périphériques
 
@@ -20,19 +20,12 @@ ms.locfileid: "35830482"
 
 <!-- Device configuration and Security Addendum-->
 
-Lors de la configuration d’un nouveau périphérique de bureau géré Microsoft, nous nous assurons qu’il dispose de la bonne configuration optimisée pour Microsoft Managed Desktop. Cela inclut un ensemble de stratégies par défaut qui sont définies dans le cadre du processus d’intégration. Pour éviter les conflits, ne modifiez pas ces stratégies. 
+Lors de la configuration d’un nouveau périphérique de bureau géré Microsoft, nous nous assurons qu’il dispose de la bonne configuration optimisée pour Microsoft Managed Desktop. Cela inclut un ensemble de stratégies par défaut qui sont définies dans le cadre du processus d’intégration. Ces stratégies sont fournies à l’aide de la gestion des appareils mobiles (MDM) chaque fois que cela est possible. Pour plus d’informations, consultez la rubrique [gestion des appareils mobiles](https://docs.microsoft.com/windows/client-management/mdm/). 
 
-Les appareils arrivent avec une image de signature, puis rejoignent le domaine Azure Active Directory lorsque le premier utilisateur se connecte. L’appareil installe automatiquement les stratégies et applications requises sans intervention informatique requise.
+>[!NOTE]
+>Pour éviter les conflits, ne modifiez pas ces stratégies.
 
-## <a name="why-mdm-over-group-policy"></a>Pourquoi MDM via la stratégie de groupe
-
-Il existe quelques raisons d’utiliser MDM (Mobile Device Management) au lieu de la stratégie de groupe:
-
-- Sécurité: les stratégies MDM sont plus sécurisées. La stratégie de groupe est conçue pour fonctionner de façon optimale avec l’identité locale, tandis que MDM est conçu pour fonctionner de manière optimale avec le Cloud Identity Management (Azure Active Directory).
-- Fiabilité: les stratégies MDM fournissent un déploiement de stratégie plus fiable. En outre, les paramètres MDM remplacent les stratégies d’objets de stratégie de groupe (GPO). À partir de Windows 10, version 1803, les paramètres MDM sont classés par ordre de priorité sur les valeurs de stratégie de groupe, qui prend en charge les clients qui migrent vers une gestion moderne. 
-- Aligner avec Microsoft Managed Desktop vision: fournit une surveillance plus complète sur le déploiement de stratégie et prend en charge l’approche basée sur les groupes pour déployer progressivement des modifications de stratégie avec la possibilité de suspendre/reprendre le déploiement si nécessaire.
-
-Pour plus d’informations, consultez la rubrique [gestion des appareils mobiles](https://docs.microsoft.com/windows/client-management/mdm/). 
+Les appareils arrivent avec une image de signature, puis rejoignent le domaine Azure Active Directory lorsque le premier utilisateur se connecte. L’appareil installe automatiquement les stratégies et applications requises sans aucune intervention de votre personnel informatique.
 
 ## <a name="default-policies"></a>Stratégies par défaut
 
@@ -53,5 +46,5 @@ Connexions limitées | Par défaut, les mises à jour sur les connexions limité
  ### <a name="additional-security-policies"></a>Stratégies de sécurité supplémentaires
 
  Ces stratégies sont ajoutées pour renforcer la sécurité des industries hautement réglementées. 
- - **Surveillance**de la sécurité: Microsoft surveille les appareils à l’aide de [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Si une menace est détectée, Microsoft avertit le client, isole l’appareil et corrige le problème à distance. 
- - **Désactiver PowerShell v2**: Microsoft a supprimé PowerShell V2 en août 2017. Cette fonctionnalité a été désactivée sur tous les appareils de bureau gérés par Microsoft. Pour plus d’informations sur ce changement, voir [Windows PowerShell 2,0](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)deconseilléion.
+ - **Surveillance**de la sécurité : Microsoft surveille les appareils à l’aide de [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Si une menace est détectée, Microsoft avertit le client, isole l’appareil et corrige le problème à distance. 
+ - **Désactiver PowerShell v2**: Microsoft a supprimé PowerShell V2 en août 2017. Cette fonctionnalité a été désactivée sur tous les appareils de bureau gérés par Microsoft. Pour plus d’informations sur ce changement, voir [Windows PowerShell 2,0 Deconseilléion](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

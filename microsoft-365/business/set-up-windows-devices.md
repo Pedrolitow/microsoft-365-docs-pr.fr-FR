@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Découvrez comment configurer des appareils Windows exécutant Windows 10 professionnel pour les utilisateurs professionnels de Microsoft 365. '
-ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: b377c1e69d117b893b256880cd3b9972e33345c7
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718866"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812875"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business
 
@@ -37,7 +37,13 @@ Si vous avez des appareils Windows exécutant Windows 7 Professionnel, Windows 8
   
 Pour plus d'informations sur la mise à niveau des appareils Windows vers Windows 10 Professionnel Creators Update, suivez les étapes décrites dans cette rubrique : [Mettre à niveau des appareils Windows vers Windows Professionnel Creators Update](upgrade-to-windows-pro-creators-update.md)
   
-Consultez [vérifier que l’appareil est connecté à Azure ad](#verify-the-device-is-connected-to-azure-ad) pour vérifier que vous disposez de la mise à niveau ou pour vous assurer que la mise à niveau a fonctionné. 
+Consultez [vérifier que l’appareil est connecté à Azure ad](#verify-the-device-is-connected-to-azure-ad) pour vérifier que vous disposez de la mise à niveau ou pour vous assurer que la mise à niveau a fonctionné.
+
+Regardez une courte vidéo sur la connexion de Windows à Microsoft 365.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
+
+Si vous avez trouvé cette vidéo utile, consultez la [série de formation complète pour les petites entreprises et les nouveautés de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Joindre des appareils Windows 10 au service Azure AD de votre organisation
 
@@ -115,3 +121,6 @@ Vérifiez que les appareils Windows 10 qui ont été mis à niveau vers Windows 
 
 Pour configurer vos appareils mobiles, voir [Configurer des appareils mobiles pour les utilisateurs de Microsoft 365 Business](set-up-mobile-devices.md). Pour définir des stratégies de protection des appareils ou des applications, voir [Gérer Microsoft 365 Business](manage.md).
   
+## <a name="see-also"></a>Voir aussi
+
+[Vidéos de formation Microsoft 365 entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

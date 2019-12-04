@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dbe84eb5c9c9fb8ff6e052f8a8fc1f257985ee70
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: bfb2a191305128e4e2d5f3a624d73c858ece79bc
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076338"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676811"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -36,9 +36,11 @@ Les organisations ont accès à des visualisations robustes de mesures et tendan
 
 En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). En savoir plus sur le [type de ressource de score sécurisé](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
-Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage des rapports) ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs. La sécurité doit être équilibrée avec la convivialité et toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
+Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage des rapports) ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs.
+
+Nous vous montrons l’ensemble complet des améliorations possibles, quelle que soit la licence, afin que vous puissiez comprendre les meilleures pratiques en matière de sécurité et améliorer votre score. Votre posture de sécurité absolue est représentée par la fonction de chiffrement sécurisé, qui reste la même quelle que soit la licence de produit que possède votre organisation. N’oubliez pas que la sécurité doit être équilibrée avec la convivialité et que toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
 
 Votre score est mis à jour en temps réel afin de refléter les informations présentées dans les pages de l’action visualisations et amélioration. Le score sécurisé est également synchronisé quotidiennement pour recevoir les données système relatives aux points obtenus pour chaque action.
 

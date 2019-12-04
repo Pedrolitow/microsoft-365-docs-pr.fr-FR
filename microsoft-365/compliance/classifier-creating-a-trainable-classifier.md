@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des classifieurs adaptés lorsque l’un des classifieurs de zone prêt à l’emploi ne répond pas à vos besoins. Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cette rubrique vous montre comment créer un classifieur personnalisé.
-ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633981"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813372"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Création d’un classifieur de formation (aperçu)
 
@@ -28,6 +28,9 @@ Pour en savoir plus sur les différents types de classifieurs, voir [Getting Sta
 Cette chronologie reflète un exemple de déploiement.
 
 ![formation de classifieur-chronologie](media/trainable-classifier-deployment-timeline_border.png)
+
+> [!TIP]
+> L’option opt-in est requise pour la première fois pour les classifieurs de formation. Il faut douze jours pour que Microsoft 365 effectue une évaluation de base du contenu de votre organisation.
 
 ## <a name="seed-content"></a>Contenu de départ
 
@@ -42,9 +45,6 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 
 > [!TIP]
 > Pour obtenir de meilleurs résultats, comportez 10 000 éléments dans votre jeu d’échantillons de test avec une répartition égale des correspondances positives et négatives.
-
-> [!TIP]
-> L’option opt-in est requise pour la première fois pour les classifieurs de formation. Il faut douze jours pour que Microsoft 365 effectue une évaluation de base du contenu de votre organisation.
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Procédure de création d’un classifieur de formation
 
@@ -107,6 +107,8 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 ![zone passer en revue les éléments](media/classifier-trainable-review-detail.png)
 
 19. Passez *en revue au moins* 200 éléments.
+
+<!-- insert Analyze steps here-->
 
 20. Continuez à passer en revue jusqu’à ce que la précision atteigne `Publish the classifier` au moins `Ready to use`70% et que l’État est.
 

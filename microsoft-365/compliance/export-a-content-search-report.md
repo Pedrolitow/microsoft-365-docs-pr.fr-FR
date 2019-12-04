@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le centre de sécurité & conformité dans Office 365, vous pouvez exporter un rapport des résultats de la recherche. Le rapport contient un résumé des résultats de la recherche et un document avec des informations détaillées sur chaque élément à exporter.
-ms.openlocfilehash: 9fe006ba595920f938a4d070eb87987137d73f7e
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 5146120afd9ea36845f5a0d19619da35379438d5
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437784"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676791"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
 Au lieu d’exporter l’ensemble complet des résultats de recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité (et à partir d’une recherche de contenu associée à un cas eDiscovery), vous pouvez exporter les mêmes rapports générés lorsque vous exportez les résultats de recherche.
   
-Lorsque vous exportez un État, il est téléchargé dans un dossier portant le même nom que la recherche de contenu, mais il est ajouté avec *_ReportsOnly*. Par exemple, si la recherche de contenu est nommée *ContosoCase0815*, le rapport est téléchargé dans un dossier nommé *ContosoCase0815_ReportsOnly*. Pour obtenir la liste des documents inclus dans le rapport, voir [ce qui est inclus dans le rapport](#whats-included-in-the-report).
+Lorsque vous exportez un État, il est téléchargé dans un dossier portant le même nom que la recherche de contenu, mais avec *_ReportsOnly*. Par exemple, si la recherche de contenu est nommée *ContosoCase0815*, le rapport est téléchargé dans un dossier nommé *ContosoCase0815_ReportsOnly*. Pour obtenir la liste des documents inclus dans le rapport, voir [ce qui est inclus dans le rapport](#whats-included-in-the-report).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -44,15 +44,17 @@ Lorsque vous exportez un État, il est téléchargé dans un dossier portant le 
     
   - Microsoft .NET Framework 4,7
     
-  - un navigateur pris en charge :
-    
-    - Microsoft Edge
-    
-      ou
-    
-    - Microsoft Internet Explorer 10 et versions ultérieures
-    
-    **Remarque :** Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge. 
+- Pour exécuter l’outil d’exportation de découverte électronique<sup>1</sup>, vous devez utiliser l’un des navigateurs pris en charge suivants :
+
+  - Microsoft Edge <sup>2</sup>
+
+    OU
+
+  - Microsoft Internet Explorer 10 et versions ultérieures
+
+  > [!NOTE]
+  > <sup>1</sup> Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge.<br/>
+  > <sup>2</sup> suite à des modifications récentes apportées à Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de la prise en charge ClickOnce dans Edge, consultez [la rubrique utiliser l’outil d’exportation de découverte électronique Office 365 dans Microsoft Edge](configure-edge-to-export-search-results.md).
 
 - Si la taille totale estimée des résultats renvoyés par une recherche de contenu dépasse 2 to, l’exportation du rapport échoue. Pour réussir l’exportation du rapport, essayez de limiter l’étendue et relancez la recherche de sorte que la taille estimée des résultats soit inférieure à 2 to.
 
@@ -66,9 +68,9 @@ Les étapes de génération et de téléchargement d’un rapport de recherche d
 
 La première étape consiste à préparer le rapport en vue de son téléchargement sur votre ordinateur. Lorsque vous le rapport, les documents de rapport sont téléchargés vers une zone de stockage Azure dans le Cloud Microsoft.
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
+2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
     
 3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de **contenu**de **recherche** \> .
     

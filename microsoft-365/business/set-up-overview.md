@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Vue d’ensemble des étapes de configuration pour Microsoft 365 Business.
-ms.openlocfilehash: 3447f06d031462a7bebc6f129238de9f0c5dee41
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721556"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812775"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
@@ -44,16 +44,15 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
         - Vous pouvez également [Ajouter des utilisateurs ultérieurement](add-users-m365b.md) dans le centre d’administration.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Étape 2 : configurer les stratégies de sécurité et configurer les appareils 
 
-  - Utilisez l' [Assistant Installation](set-up.md#protect-data-and-devices) pour configurer les stratégies d’appareil et de sécurité. 
+  - Utilisez l' [Assistant Installation](set-up.md#protect-your-organization) pour configurer les stratégies d’appareil. 
   - Vous pouvez également en ajouter ou les modifier ultérieurement dans le [Centre d’administration](view-policies-and-devices.md) et dans le [portail Intune](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
-  - Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez augmenter votre sécurité en ajoutant les paramètres suivants :
+  - L’Assistant installation configure également les paramètres de protection de base contre les menaces et de protection contre la perte de données.
+  
+  Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez augmenter votre sécurité en ajoutant les paramètres suivants :
 
       - **Protection contre les programmes malveillants**
-      - **Liens fiables de protection avancée contre les menaces**
-      - **Pièces jointes fiables ATP**
       - **Protection contre le hameçonnage (ATP)**
       - **Archivage Exchange Online**
-      - **Data Loss Prevention (DLP)**
       - **Azure information protection (plan1**)
 
           Pour commencer, consultez la rubrique [configurer des stratégies de sécurité avancées](set-up-advanced-security.md).
@@ -62,10 +61,12 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Étape 3 : configurer et gérer les appareils Windows 10
 
-   Lorsque vous joignez un appareil Windows 10 à Azure AD, les stratégies que vous avez configurées à l' [étape 2](#step-2-set-up-security-policies-and-configure-devices) sont appliquées.
+Après avoir exécuté l’Assistant Configuration, vous pouvez proctect tous les Windwos 10 ordinateurs de votre organisation.
+  
+- Windows 10 professionnel est une [condition préalable](pre-requisites-for-data-protection.md) pour Microsoft 365 Business, mais si vous disposez de Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement vous donne droit à une [mise à niveau vers Windows 10 professionnel](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+- Suivez les étapes de [sécurisation des ordinateurs Windows 10](secure-win-10-pcs.md) pour configurer des stratégies pour les appareils Windows 10.
 
-   - Windows 10 professionnel est une [condition préalable](pre-requisites-for-data-protection.md) pour Microsoft 365 Business, mais si vous disposez de Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement vous donne droit à une [mise à niveau vers Windows 10 professionnel](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Utilisez l' [Assistant Installation](set-up.md#protect-data-and-devices) pour configurer des stratégies pour les appareils Windows 10.
+Lorsque vous joignez un appareil Windows 10 à Azure AD, les stratégies que vous définissez pour les ordinateurs Windows 10 sont appliquées. Pour plus d’informations, consultez la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365](set-up-windows-devices.md).
 
 ## <a name="step-4-install-office-365-business"></a>Étape 4 : installer Office 365 Business
 - Vous pouvez installer automatiquement Office sur les appareils Windows à l’aide de l' [Assistant Installation](set-up.md#deploy-office-365-client-apps).
@@ -82,4 +83,6 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
 
     - Si votre entreprise dispose d’un annuaire Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes ci-dessous : [accéder aux ressources locales à partir d’un appareil joint à Azure ad dans Microsoft 365 Business](access-resources.md).
 
-  
+## <a name="see-also"></a>Voir aussi
+
+[Vidéos de formation Microsoft 365 entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

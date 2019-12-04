@@ -4,15 +4,16 @@ description: Informations sur la mise à jour des applications métiers déploy�
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7aca4713aae189e39133e08a1fbcad6fd75e6a70
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012409"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813854"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Gérer les applications métiers dans le bureau géré Microsoft
 
@@ -41,7 +42,7 @@ L’application mise à jour sera déployée sur les appareils de l’utilisateu
 ## <a name="update-line-of-business-apps-in-intune"></a>Mettre à jour les applications métiers dans Intune
 
 **Pour mettre à jour vos applications métiers dans Intune**
-1. Connectez-vous au [portail Azure](https://azure.portal.com).
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Sélectionnez **tous les services** > **Intune**. Intune se trouve dans la section **surveillance + Management** .
 3. Sélectionnez **applications clientes > applications**.
 4. Recherchez et sélectionnez votre application dans la liste des applications.

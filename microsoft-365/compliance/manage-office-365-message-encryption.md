@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Une fois que vous avez terminé la configuration d’Office 365 message Encryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s’il faut activer des codes de passe unique, afficher le bouton protéger dans Outlook sur le Web, et bien plus encore. Les tâches décrites dans cet article expliquent comment procéder.
-ms.openlocfilehash: 780be179485fa18f7e0da0fabc7bb5365238da94
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6222825872dc512918b512d0dfc1918dd8a0cbe3
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685776"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813112"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 
@@ -58,7 +58,7 @@ Si le destinataire d’un message chiffré par OME n’utilise pas Outlook, quel
   
 ### <a name="to-manage-whether-ome-generates-one-time-pass-codes"></a>Pour gérer si OME génère des codes d’accès en une seule fois
   
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, consultez la rubrique [connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet Set-OMEConfiguration avec le paramètre OTPEnabled :
 
@@ -84,7 +84,7 @@ En tant qu’administrateur, vous pouvez gérer l’affichage de ce bouton pour 
   
 ### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>Pour gérer l’affichage du bouton chiffrer dans Outlook sur le Web
   
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, consultez la rubrique [connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet Set-IRMConfiguration avec le paramètre-SimplifiedClientAccessEnabled :
 
@@ -114,7 +114,7 @@ Pour plus d’informations et pour une vue de l’expérience client, consultez 
   
 ### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Pour gérer si les utilisateurs de l’application de messagerie iOS peuvent afficher les messages protégés par le chiffrement de messages Office 365
   
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, consultez la rubrique [connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet Set-ActiveSyncOrganizations avec le paramètre AllowRMSSupportForUnenlightenedApps :
 
@@ -151,24 +151,24 @@ Pour plus d’informations sur la façon dont Office 365 implémente le chiffrem
   
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>Pour gérer si les pièces jointes sont déchiffrées lors du téléchargement à partir d’un navigateur Web
   
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, consultez la rubrique [connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Exécutez la cmdlet Set-IRMConfiguration avec le paramètre DecryptAttachmentFromPortal :
+2. Exécutez la cmdlet Set-IRMConfiguration avec le paramètre DecryptAttachmentForEncryptOnly :
 
    ```powershell
-   Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>
+   Set-IRMConfiguration -DecryptAttachmentForEncryptOnly <$true|$false>
    ```
 
    Par exemple, pour configurer le service afin de déchiffrer les pièces jointes lorsqu’un utilisateur les télécharge à partir d’un navigateur Web :
 
    ```powershell
-   Set-IRMConfiguration -DecryptAttachmentFromPortal $true
+   Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
    ```
 
    Pour configurer le service de sorte qu’il quitte les pièces jointes chiffrées lorsqu’il est téléchargé, procédez comme suit :
 
    ```powershell
-   Set-IRMConfiguration -DecryptAttachmentFromPortal $false
+   Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
 ## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only"></a>Vérifier que tous les destinataires externes utilisent le portail OME pour lire le courrier chiffré — Office 365 Advanced message Encryption only
@@ -177,7 +177,7 @@ Si vous disposez d’Office 365 Advanced message Encryption, vous pouvez utilise
 
 ### <a name="create-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email-to-be-revocable-and-expire-in-7-days"></a>Créer un modèle personnalisé pour obliger tous les destinataires externes à utiliser le portail OME et à révocabler les messages chiffrés et à les expirer dans 7 jours
 
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, consultez la rubrique [connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet New-OMEConfiguration :
 
@@ -227,7 +227,7 @@ Nous espérons qu’il n’y parviendra pas, mais si vous le souhaitez, la désa
   
 ### <a name="to-disable-the-new-capabilities-for-ome"></a>Pour désactiver les nouvelles fonctionnalités de OME
   
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, consultez la rubrique [connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Si vous avez activé le bouton **chiffrer** dans Outlook sur le Web, désactivez-le en exécutant la cmdlet Set-IRMConfiguration avec le paramètre SimplifiedClientAccessEnabled. Sinon, ignorez cette étape.
 
