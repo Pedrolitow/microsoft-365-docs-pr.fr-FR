@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Découvrez maintenant comment déployer automatiquement Office sur les appareils Windows 10 lors de l’installation.
-ms.openlocfilehash: 6bcb85a0acdf738d939c10d4fe418646b00b0b95
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+ms.openlocfilehash: 7b58fd3db6c6f15effe2bc4876903a9f480366b1
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704092"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831620"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installer Office sur les appareils Windows 10 lors de l'installation
 
 ![Bannière pointant vers https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
-Ce paramètre est désactivé par défaut. Vous pouvez l’activer afin de vous assurer que les utilisateurs disposent de la dernière version d’Office sur tous leurs appareils Windows 10, tout d’abord de vérifier que toutes les conditions préalables sont remplies. Les utilisateurs doivent disposer d’une licence pour Microsoft 365 Business pour ce paramètre afin de distribuer le logiciel sur l’appareil, en plus d’autres exigences décrites dans [Prepare for Office client Deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md). 
+Ce paramètre est désactivé par défaut. Vous pouvez l’activer afin de vous assurer que les utilisateurs disposent de la dernière version d’Office sur tous leurs appareils Windows 10, tout d’abord de vérifier que toutes les conditions préalables sont remplies. Les utilisateurs doivent disposer d’une licence pour Microsoft 365 Business pour ce paramètre afin de distribuer le logiciel sur l’appareil, en plus d’autres exigences décrites dans [Prepare for Office client Deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).
   
-Nous vous recommandons d’accepter le paramètre par défaut lors de l’installation. 
+Nous vous recommandons d’accepter le paramètre par défaut lors de l’installation.

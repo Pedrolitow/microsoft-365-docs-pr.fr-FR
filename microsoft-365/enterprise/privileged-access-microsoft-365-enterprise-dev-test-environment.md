@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 68d542b3f97022abc65b94162f333e7059f614a8
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7e6a2ddea341f49c737409d8586bd9e70c9b2b79
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673340"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831815"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 Entreprise
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 entreprise et Office 365 entreprise.*
+*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Enterprise et Office 365 Enterprise.*
 
 Avec les instructions de cet article, vous configurez la gestion des accès privilégiés pour renforcer la sécurité dans votre environnement de test Microsoft 365 Enterprise.
 
@@ -62,7 +62,7 @@ Dans cette phase, vous vérifiez que la stratégie d’accès privilégié fonct
 
 Tout d’abord, connectez-vous à Exchange Management PowerShell avec les informations d’identification d’un utilisateur configuré en tant qu’administrateur général dans votre environnement de test et essayez de créer une nouvelle règle de journal. La tâche [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) n’est actuellement pas définie dans une stratégie d’accès privilégié pour votre organisation.
 
-1. Sur votre ordinateur local, ouvrez le module Exchange Online Remote PowerShell et connectez- **vous au** > **module Microsoft Exchange Online** PowerShell à l’aide du compte d’administrateur général de votre environnement de test.
+1. Sur votre ordinateur local, ouvrez le module Exchange Online Remote PowerShell et connectez-vous au module **Microsoft** > **Exchange Online** PowerShell à l’aide du compte d’administrateur général pour votre environnement de test.
 
 2. Dans Exchange Management PowerShell, créez une nouvelle règle de journal pour votre organisation :
 
@@ -109,7 +109,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
 
-3. Afficher l’erreur « autorisations Insuffient » dans Exchange Management PowerShell :
+3. Afficher l’erreur « autorisations insuffisantes » dans Exchange Management PowerShell :
 
 ```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
@@ -153,7 +153,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Tester la création d’une nouvelle règle de journal avec un accès privilégié approuvé pour la tâche New-JournalRule
 
-1. Sur votre ordinateur local, ouvrez le module Exchange Online Remote PowerShell et connectez- **vous au** > **module Microsoft Exchange Online** PowerShell à l’aide du compte d’administrateur général de votre environnement de test.
+1. Sur votre ordinateur local, ouvrez le module Exchange Online Remote PowerShell et connectez-vous au module **Microsoft** > **Exchange Online** PowerShell à l’aide du compte d’administrateur général pour votre environnement de test.
 
 2. Dans Exchange Management PowerShell, créez une nouvelle règle de journal pour votre organisation :
 

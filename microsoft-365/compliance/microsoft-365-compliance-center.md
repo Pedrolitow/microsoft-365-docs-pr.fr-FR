@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le centre de conformité Microsoft 365, notamment ce qu’il contient, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 619f18f1113d3c84cb9629c60fca6dd044d1de76
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 920de48cf81134a22f117ee8d1dea0160b0daaa8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38685745"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831647"
 ---
 # <a name="overview-of-the-microsoft-365-compliance-center"></a>Vue d’ensemble du centre de conformité Microsoft 365
 
@@ -70,8 +70,6 @@ Outre les liens des cartes sur la page d’accueil, vous verrez un volet de navi
 
 - Pour visiter le centre de conformité Microsoft 365, en tant qu’administrateur général, administrateur de conformité ou administrateur de données [https://compliance.microsoft.com](https://compliance.microsoft.com) de conformité, accédez à et connectez-vous.
 
-- Pour en savoir plus sur les conditions requises, consultez la rubrique [Required licenses and Permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Pourquoi est-ce que j’ai adopté le centre de sécurité & conformité d’Office 365 pour effectuer certaines tâches, telles que la définition de certaines stratégies ?**
@@ -80,7 +78,7 @@ Nous développons toujours le centre de conformité Microsoft 365 et nous ajouto
 
 **Pourquoi ne puis-je pas encore voir le nouveau centre de conformité Microsoft 365 ?**
 
-Tout d’abord, vérifiez que vous disposez des [autorisations et des licences](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)appropriées. Ensuite, connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com)à l’adresse. Si vous ne voyez pas encore le nouveau centre de conformité, vous en aurez bientôt.
+Tout d’abord, vérifiez que vous disposez des autorisations et des licences appropriées. Ensuite, connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com)à l’adresse. Si vous ne voyez pas encore le nouveau centre de conformité, vous en aurez bientôt.
 
 **Certaines de mes fonctionnalités de conformité ne sont pas disponibles dans le centre de conformité Microsoft 365. Que faire ?**
 

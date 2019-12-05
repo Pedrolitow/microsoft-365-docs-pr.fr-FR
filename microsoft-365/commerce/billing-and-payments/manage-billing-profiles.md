@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les profils de facturation prennent en charge les factures.
 keywords: Profil de facturation, factures, frais, charges gérées
-ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753543"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837388"
 ---
 # <a name="manage-billing-profiles"></a>Gérer les profils de facturation
 Pour les clients commerciaux qui achètent des produits et des services auprès de Microsoft, les profils de facturation vous permettent de personnaliser les éléments inclus dans votre facture, ainsi que le mode de paiement de vos factures.

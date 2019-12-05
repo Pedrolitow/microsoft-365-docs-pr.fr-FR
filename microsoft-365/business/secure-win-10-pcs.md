@@ -1,5 +1,5 @@
 ---
-title: Sécurisation des PC Windows 10
+title: Sécuriser les ordinateurs Windows 10
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,16 +20,21 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment sécuriser des PC Windows 10 après avoir configuré Microsoft 365 Business.
-ms.openlocfilehash: 6f599f3638ec9649be9464e1c51a531bf6c231b2
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 47598ef0b5cba60a6d5e53973cc8b88584c62d05
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39814252"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837318"
 ---
-# <a name="secure-windows-10-pcs"></a>Sécurisation des PC Windows 10
+# <a name="secure-windows-10-computers"></a>Sécuriser les ordinateurs Windows 10
 
 Une fois que vous avez [configuré](set-up.md) Microsoft 365 entreprise, il est temps de protéger les ordinateurs Windows 10 de votre organisation contre le vol, ainsi que les menaces malveillantes comme les virus et les programmes malveillants.
+Regardez cette vidéo pour obtenir une vue d’ensemble de la configuration des stratégies de sécurisation des ordinateurs Windows 10.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
+
+Si vous avez trouvé cette vidéo utile, consultez la [série de formation complète pour les petites entreprises et les nouveautés de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="to-secure-your-windows-10-pcs"></a>Pour sécuriser vos PC Windows 10
 

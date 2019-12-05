@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le catalogue de solutions Microsoft 365, y compris son contenu, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a789aca60bbb34f6831c27afea4b1ec5d3135f59
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38685732"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831637"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Vue d’ensemble du catalogue de solutions Microsoft 365 (version préliminaire)
 
@@ -80,13 +80,11 @@ La section **réponse &** de la recherche sur la page d’accueil vous montre co
 
 - Pour visiter le catalogue de solutions Microsoft 365, accédez [https://compliance.microsoft.com](https://compliance.microsoft.com) à et connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Sélectionnez **catalogue** dans le volet de navigation sur le côté gauche de l’écran pour ouvrir la page d’accueil du catalogue.
 
-- Pour en savoir plus sur les conditions requises, consultez la rubrique [Required licenses and Permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Pourquoi ne puis-je pas encore voir le nouveau catalogue de solutions Microsoft 365 ?**
 
-Tout d’abord, vérifiez que vous disposez des [autorisations et des licences](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)appropriées. Ensuite, connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Si le nouveau catalogue de solutions n’apparaît toujours pas dans le volet de navigation de gauche, vous en aurez bientôt terminé.
+Tout d’abord, vérifiez que vous disposez des autorisations et des licences appropriées. Ensuite, connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Si le nouveau catalogue de solutions n’apparaît toujours pas dans le volet de navigation de gauche, vous en aurez bientôt terminé.
 
 **Certaines des fonctionnalités de conformité indiquées dans la page catalogue de solutions ne sont pas disponibles dans le centre de conformité Microsoft 365. Que faire ?**
 

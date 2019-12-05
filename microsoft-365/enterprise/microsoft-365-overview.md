@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 Enterprise.
-ms.openlocfilehash: b5629edbdbd660a8548fc30809c408d88b18111b
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 67d7417af01b7c64094aa46350326f32e0f18534
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437837"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831955"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 Entreprise
 
@@ -46,7 +46,7 @@ Microsoft 365 Enterprise est disponible en trois plans.
 | F1 | Connectez-vous à vos collaborateurs terrain par le biais d’outils et de ressources spécialisés qui leur permettent d’effectuer leur travail. |
 |||
 
-Si vous avez Microsoft 365 Enterprise E3, vous pouvez également obtenir ces [offres](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
+Si vous avez Microsoft 365 entreprise E3, vous pouvez également obtenir ces [offres](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
 
 - Identité & protection contre les menaces
 - Protection des informations & conformité
@@ -65,16 +65,16 @@ L' [affiche de Microsoft 365 entreprise](media/m365-poster/Microsoft365Enterpris
 - La [bibliothèque de productivité Microsoft 365](https://www.microsoft.com/microsoft-365/success/) et les scénarios représentatifs pour certains services d’organisation courants
 - Feuille de route d’adoption qui met en évidence le [Guide de déploiement](deploy-microsoft-365-enterprise.md) d’entreprise Microsoft 365
 
-[![Image de l’affiche de Microsoft 365 entreprise](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Image de l’affiche Microsoft 365 Entreprise](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
-## <a name="transition-your-entire-organization"></a>Migration de l’ensemble de votre organisation
+## <a name="transition-your-entire-organization"></a>Migration de l’organisation entière
 
-Pour obtenir une meilleure idée de la façon de déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 Enterprise, téléchargez l' [affiche de transition](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, téléchargez l’[affiche de transition](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Image de la transition vers l’affiche Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Image de l’affiche pour la transition vers Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 Entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
 
@@ -92,9 +92,9 @@ Les produits suivants ont atteint la fin du support le **13 octobre 2020**:
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-Pour obtenir un résumé visuel des options de mise à niveau, de migration et de déplacement sur le Cloud de ces produits, consultez l' [affiche de fin de support](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
+Pour consulter un résumé visuel des options de mise à niveau, de migration et de déplacement vers le Cloud pour ces produits, voir l’[affiche de fin du support technique](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
-[![Image de la fin de la prise en charge des clients et serveurs Office 2010 et de l’affiche Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 Cette affiche de page unique constitue un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Windows 7 et Office 2010 d’atteindre la fin du support, avec les chemins d’accès et le support préférés dans Microsoft 365 entreprise en surbrillance.
 

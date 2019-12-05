@@ -16,17 +16,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Aidez vos utilisateurs à installer des applications Office.
-ms.openlocfilehash: dd2d32ee04402ef977ee1530c20d77512c2d8336
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 73eb3ed9bb88dca4232865b2ecd9015441875c07
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320222"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831207"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aider vos utilisateurs à installer Office sur des appareils Windows 10
 
@@ -34,8 +36,14 @@ ms.locfileid: "38320222"
 
 Vous pouvez rapidement et facilement installer Office sur des PC Windows 10 à partir du centre d’administration de Microsoft 365 Business.
   
-Pour mieux comprendre comment cela fonctionne avec les applications Office déjà installées, lisez [Se préparer à l'installation du client Office](prepare-for-office-client-deployment.md) avant de commencer. 
-  
+Pour mieux comprendre comment cela fonctionne avec les applications Office déjà installées, lisez [Se préparer à l'installation du client Office](prepare-for-office-client-deployment.md) avant de commencer.
+
+Visionnez une courte vidéo sur l’installation des applications Office.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
+
+Si vous avez trouvé cette vidéo utile, consultez la [série de formation complète pour les petites entreprises et les nouveautés de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+
 ## <a name="manage-office-deployments"></a>Gérer les déploiements d'Office
 
 1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>l’adresse, puis connectez-vous à l’aide des informations d’identification d’administrateur général. 
@@ -51,4 +59,6 @@ Pour mieux comprendre comment cela fonctionne avec les applications Office déj�
     
       :::image type="content" source="media/sendemailtousers.png" alt-text="Sélectionnez les utilisateurs pour envoyer des courriers électroniques avec le lien de téléchargement Office.":::
 
+## <a name="see-also"></a>Voir aussi
 
+[Vidéos de formation Microsoft 365 entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

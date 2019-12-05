@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment vous connecter, configurer des autorisations et comprendre votre tableau de bord pour le score de conformité Microsoft, ce qui vous permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793648"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831177"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Programme d’installation du score de conformité Microsoft (aperçu)
 
@@ -63,8 +63,6 @@ Pour définir des autorisations dans le centre de conformité Microsoft 365 :
 
 1. Accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com) et connectez-vous avec votre compte d’administrateur général.
 2. Sélectionnez **autorisations** dans le volet de navigation de gauche. À partir de là, vous pouvez afficher les rôles et attribuer des autorisations.
-
-Pour plus d’informations, consultez [les rôles et les autorisations dans le centre de conformité Microsoft 365](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
 
 ## <a name="understand-the-compliance-score-dashboard"></a>Comprendre le tableau de bord de score de conformité
 

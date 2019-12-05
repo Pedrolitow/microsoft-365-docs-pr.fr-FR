@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615654"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837328"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -41,7 +41,7 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 |Action de détection de courrier d’hameçonnage|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier hameçon à haute fiabilité|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier en nombre|Déplacer le message dans le dossier Courrier indésirable|Mettre en quarantaine le message||
-|Définir le seuil de courrier électronique en masse sur|6.x|4|La valeur par défaut est actuellement 7, mais nous recommandons que la plupart des organisations mvoe au moins 6|
+|Définir le seuil de courrier électronique en masse sur|6 |4 |La valeur par défaut est actuellement 7, mais nous recommandons que la plupart des organisations la déplacent vers un minimum de 6|
 |Période de rétention de quarantaine|30 jours|30 jours||
 |Conseils de sécurité|Activé|Activé||
 |Expéditeurs autorisés|Aucune|Aucune||
@@ -137,7 +137,7 @@ Les clients EOP bénéficient d’une protection antiphishing de base comme déc
 |EnableAuthenticationSafetyTip|True|True|Ce paramètre est disponible uniquement dans PowerShell|
 |EnableAuthenticationSoftPassSafetyTip|False|Vrai|Ce paramètre est disponible uniquement dans PowerShell|
 |EnableSuspiciousSafetyTip|False|Vrai|Ce paramètre est disponible uniquement dans PowerShell|
-|TreatSoftPassAsAuthenticated|Vrai|False|Ce paramètre est disponible uniquement dans PowerShell|
+|TreatSoftPassAsAuthenticated|Vrai|Faux|Ce paramètre est disponible uniquement dans PowerShell|
 
 |Nom de la fonctionnalité de sécurité des paramètres avancés|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|

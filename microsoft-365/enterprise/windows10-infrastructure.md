@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 3cdb5fd6644d76a843e109ff53f73eb9ec4638f8
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 147dd0ec0276d685177ae389092ec18ace0d7bed
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627538"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831687"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3 : Windows 10 Entreprise
 
@@ -68,7 +68,7 @@ Pour plus d’informations, consultez la rubrique [vue d’ensemble de Windows A
 
 Windows 10 offre des fonctionnalités pour vous aider à vous protéger contre les menaces, à sécuriser vos appareils et à faciliter le contrôle d’accès. Avec Windows 10, vous disposez de fonctionnalités de sécurité importantes qui protègent votre appareil directement depuis le début. Microsoft 365 E3 ajoute des fonctionnalités de sécurité telles que Windows Hello entreprise, le contrôle d’application Windows Defender et la protection des informations Windows. Avec Microsoft 365 E5, vous bénéficiez de toutes les fonctionnalités de protection de Microsoft 365 E3 Security plus basées sur le Cloud et de Microsoft Defender Advanced Threat Protection. 
 
-Pour en savoir plus sur les fonctionnalités de sécurité fournies avec Windows 10 entreprise et obtenir des conseils sur la façon dont vous pouvez déployer, gérer, configurer et dépanner trois fonctionnalités de la fonctionnalité ecurity, consultez [étape 5 : déployer des fonctionnalités de sécurité Windows 10 entreprise](windows10-enable-security-features.md).
+Pour en savoir plus sur les fonctionnalités de sécurité fournies avec Windows 10 entreprise et obtenir des conseils sur la façon dont vous pouvez déployer, gérer, configurer et dépanner trois fonctionnalités de sécurité clés, voir [étape 5 : déployer les fonctionnalités de sécurité Windows 10 entreprise](windows10-enable-security-features.md).
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 

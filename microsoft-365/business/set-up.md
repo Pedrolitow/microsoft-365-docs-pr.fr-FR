@@ -13,24 +13,33 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez comment configurer Microsoft 365 Business.
-ms.openlocfilehash: f29dbdb61636fdfe573a1a6920d0aed963b737ad
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 0001c2b9962f6cce0be1f77cbf427c68f9ee3249
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721486"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831300"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Configurer Microsoft 365 entreprise dans l’Assistant Installation
+
+Regardez cette vidéo pour obtenir une vue d’ensemble de l’installation de Microsoft 365 Business.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+Si vous avez trouvé cette vidéo utile, consultez la [série de formation complète pour les petites entreprises et les nouveautés de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Ajouter votre domaine, vos utilisateurs et configurer des stratégies
 
@@ -44,16 +53,18 @@ Lorsque vous achetez Microsoft 365 Business, vous avez la possibilité d’utili
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de vos informations d’identification d’administrateur général. 
 
-2. Sélectionnez **Ajouter un domaine** ou **Ajouter des utilisateurs** pour démarrer l’Assistant.
+2. Sélectionnez **accéder au programme d’installation** pour démarrer l’Assistant.
+
+    ![Sélectionnez atteindre le programme d’installation.](media/gotosetupinadmincenter.png)
+
+3. Sur la page **installer vos applications Office** , vous pouvez installer les applications sur votre ordinateur.
+    
+4. Dans l’étape **Ajouter un domaine** , entrez le nom de domaine que vous souhaitez utiliser (par exemple, contoso.com).
+
     > [!IMPORTANT]
     > Si vous avez acheté un domaine lors de l’inscription, vous ne verrez pas **Ajouter une étape de domaine** ici. Accédez à [Ajouter des utilisateurs](#add-users-and-assign-licenses) à la place.
 
-    ![Sélectionnez atteindre le programme d’installation.](media/gotosetupinadmincenter.png)
-    
-3. Dans l’Assistant, entrez le nom de domaine que vous souhaitez utiliser (par exemple, contoso.com).
-
-
-    ![Capture d’écran de la page Personnalisez votre connexion.](media/personalizesignin.png)
+    ![Capture d’écran de la page Personnalisez votre connexion.](media/adddomain.png)
 
     
 4. Suivez les étapes de l’Assistant pour [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) qui vérifie que vous êtes propriétaire du domaine. Si vous êtes conscient de votre hôte de domaine, reportez-vous aux [instructions spécifiques](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)de l’hôte.
@@ -76,13 +87,6 @@ Tous les utilisateurs que vous ajoutez dans l’Assistant reçoivent automatique
 
 2. Une fois que vous avez ajouté les utilisateurs, vous avez également la possibilité de partager des informations d’identification avec les nouveaux utilisateurs que vous avez ajoutés. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou de les télécharger.
 
-3. Sur la création de teams pour votre organisation, vous pouvez choisir d’ajouter des équipes et d’y ajouter des utilisateurs. Vous pouvez également effectuer cette opération plus tard. Pour plus d’informations, consultez [la rubrique créer une équipe à l’échelle de l’entreprise](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
-
-4. Ignorez la migration des messages e-mail et sélectionnez **Suivant** dans la page **Migrer les messages e-mail**. 
-
-    Si vous effectuez une migration à partir d’un autre fournisseur de courrier et que vous souhaitez copier vos données ultérieurement, vous pouvez [migrer le courrier électronique et les contacts vers Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
-
-
 ### <a name="connect-your-domain"></a>Sélectionner votre domaine
 
 > [!NOTE]
@@ -95,31 +99,29 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
     - Si vous avez des enregistrements DNS existants, par exemple un site Web existant, mais que votre hôte DNS est activé pour la [connexion au domaine](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), choisissez **Ajouter des enregistrements pour moi**. Sur la page **choisir vos services en ligne** , acceptez toutes les valeurs par défaut, cliquez sur **suivant**, puis choisissez **autoriser** sur la page de votre hôte DNS.
     - Si vous avez des enregistrements DNS existants avec d’autres hôtes DNS (non activé pour la connexion au domaine), vous pouvez gérer vos propres enregistrements DNS afin de vous assurer que les services existants restent connectés. Pour plus d’informations, voir [notions de base](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) sur le domaine.
 
-        ![Connecter votre page de domaine avec je vais gérer mes propres enregistrements DNS.](media/connectyourdomainpage.png)
+        ![Page activer les enregistrements.](media/activaterecords.png)
 
 2. Suivez les étapes de l’Assistant et de la messagerie et d’autres services sont configurés pour vous.
 
-### <a name="protect-data-and-devices"></a>Protéger les données et les appareils 
+### <a name="protect-your-organization"></a>Protéger votre organisation 
 
 Les stratégies que vous configurez dans l’Assistant sont appliquées automatiquement à un [groupe de sécurité](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) appelé *tous les utilisateurs*. Vous pouvez également créer des groupes supplémentaires auxquels affecter des stratégies dans le centre d’administration.
 
-1. Sur la case à cocher protéger **vos fichiers professionnels sur les appareils mobiles**, l’option **protéger les fichiers de travail lorsque les appareils sont perdus ou volés** est sélectionnée par défaut. Vous avez la possibilité d’activer **la gestion de la manière dont les utilisateurs accèdent aux fichiers Office sur les appareils mobiles**, ce qui est recommandé.
+1. Sur la **protection renforcée contre les menaces informatiques avancées**, il est recommandé d’accepter les valeurs par défaut pour permettre à [Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) d’analyser les fichiers et les liens dans les applications Office.
 
-    ![Capture d’écran de la page protéger les fichiers de travail sur les appareils mobiles.](media/protectworkfilesondevices.png)
+    ![Capture d’écran de la page d’augmentation de la protection.](media/increasetreatprotection.png)
 
-     - Développez **protéger les fichiers de travail en cas de perte ou de vol des appareils** pour afficher les [valeurs par défaut](protect-work-files-on-lost-or-stolen-device.md):
 
-        ![Capture d’écran des valeurs par défaut pour la protection des fichiers sur les appareils perdus.](media/protectworkfilesondevicesdefault.png)
+2. Sur la page **empêcher les fuites de données sensibles** , acceptez les valeurs par défaut pour activer la protection contre la perte de données (DLP) d’Office 365 pour effectuer le suivi des données sensibles dans les applications Office et empêcher le partage accidentel de ces derniers à l’extérieur de votre organisation.
 
-    - Sélectionnez **gérer la manière dont les utilisateurs accèdent aux fichiers Office sur les appareils mobiles** et développez-le pour afficher les [valeurs par défaut](manage-user-access-on-mobile-devices.md). Nous vous recommandons d’accepter les valeurs par défaut lors de l’installation pour créer des stratégies d’application pour Android, iOS et Windows 10 qui s’appliquent à tous les utilisateurs. Vous pouvez créer des stratégies supplémentaires une fois l'installation terminée.
+3. Sur la page **protéger les données dans Office pour les appareils mobiles** , conservez la gestion des applications mobiles activée, développez les paramètres et examinez-les, puis sélectionnez **créer une stratégie de gestion des applications mobiles**.
 
-        ![Capture d’écran des paramètres de protection pour les fichiers Office sur mobile.](media/useraccessonmobile.png)
+    ![Capture d’écran de la page protéger les données dans Office pour les appareils mobiles.](media/protectdatainmobile.png)
 
-2. La dernière étape sur la protection des données et des périphériques vous permet de configurer des stratégies pour sécuriser les appareils Windows 10. Ces paramètres sont appliqués automatiquement lorsque le Windows 10 d’un utilisateur se connecte à votre organisation. Vous pouvez développer des **appareils Windows 10 sécurisés** pour afficher et modifier les [valeurs par défaut](secure-windows-10-devices.md).
-3. Vous pouvez également choisir d' [installer automatiquement Office](install-office-on-windows-10-during-setup.md) sur les appareils Windows 10.
 
-    ![Capture d’écran de la page définir la configuration de l’appareil Windows 10.](media/setwin10config.png)
+## <a name="secure-windows-10-pcs"></a>Sécurisation des PC Windows 10
 
+Dans le volet de navigation de gauche, sélectionnez **configuration** , puis sous **sécurité unique et sécurité**, choisissez **sécuriser vos ordinateurs Windows 10**. Choisissez **affichage** pour commencer. Pour plus d’informations, consultez [la rubrique sécuriser vos ordinateurs Windows 10](secure-win-10-pcs.md) .
 
 ## <a name="deploy-office-365-client-apps"></a>Déployer des applications clientes Office 365
 
@@ -128,3 +130,7 @@ Si vous avez choisi d’installer automatiquement les applications Office lors d
 Pour installer Office sur des appareils mobiles iOS ou Android, consultez la rubrique [configurer des appareils mobiles pour les utilisateurs professionnels de Microsoft 365](set-up-mobile-devices.md).
 
 Vous pouvez également installer Office individuellement. Pour obtenir des instructions, voir [installer Office sur un PC ou un Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) .
+
+## <a name="see-also"></a>Voir aussi
+
+[Vidéos de formation Microsoft 365 entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

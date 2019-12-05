@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez appliquer des étiquettes à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint.
-ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
-ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
+ms.openlocfilehash: ebe5e00c3458782e1874274cb508326968461ce3
+ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819130"
+ms.locfileid: "39822490"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)
 
@@ -40,7 +40,7 @@ Les étiquettes de sensibilité pour Microsoft Teams, les groupes Office 365 et 
 
 La préversion publique ne fonctionne pas avec les réseaux de distribution de contenu (CDN) Office 365.
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Lorsque vous publiez des étiquettes de confidentialité, les utilisateurs d’Office 365 ont accès à la même liste d’étiquettes.
 
@@ -102,11 +102,9 @@ Une fois l’aperçu activé, procédez comme suit pour créer ou modifier des �
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>Résoudre les problèmes de déploiement des étiquettes de confidentialité
 
-Si vous rencontrez des problèmes lorsque vous créez un groupe teams ou Office 365 après avoir activé ces paramètres ou modifié la description d’une étiquette, enregistrez l’étiquette, patientez quelques heures, puis essayez de nouveau de créer le groupe d’équipe ou d’Office 365.
+Si vous rencontrez des problèmes lorsque vous créez un groupe teams ou Office 365 après avoir activé ces paramètres ou modifié la description d’une étiquette de sensibilité, enregistrez l’étiquette, patientez quelques heures, puis réessayez de créer le groupe Team 365 ou Office.
 
 Si vous ne parvenez toujours pas à voir la nouvelle étiquette de sensibilité à partir de SharePoint Online, contactez immédiatement le support Microsoft.
-
-[En savoir plus sur la publication d’une étiquette de sensibilité](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-team"></a>Appliquer une étiquette de critère de diffusion à une nouvelle équipe
 
