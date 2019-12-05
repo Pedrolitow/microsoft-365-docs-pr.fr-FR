@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1b0e4ae933591f41c99a4b88d31eca6504322c92
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 877c9f0c757406c8e9bc9483ab39350a2c814deb
+ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218693"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39822480"
 ---
 # <a name="compliance-offering-payment-card-industry-pci-data-security-standard-dss"></a>Offre de conformité : norme de sécurité des données (DSS) d’industrie de carte de paiement (PCI)
 
@@ -100,4 +100,4 @@ Pour l’instant, seuls les fichiers et documents téléchargés sur OneDrive En
 
 ## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI_DSS_Compliance_Backgrounder.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI-DSS-Compliance.pdf).
