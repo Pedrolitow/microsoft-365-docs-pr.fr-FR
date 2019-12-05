@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise les fonctionnalités de protection des informations dans Microsoft 365 Entreprise pour sécuriser des biens numériques dans le cloud.
-ms.openlocfilehash: f5893414a0aab3d0ab89eb180f0c907d4379194c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673200"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831677"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
@@ -33,7 +33,7 @@ Contoso a effectué une analyse de ses données et déterminé les niveaux suiva
 ||||
 |:-------|:-----|:-----|
 | **Niveau 1 : ligne de base** | **Niveau 2 : sensible** | **Niveau 3 : hautement réglementé** |
-| Les données sont chiffrées et uniquement accessibles par des utilisateurs authentifiés. <BR> <BR> Niveau accordé à toutes les données stockées localement et dans le cloud et aux charges de travail, telles qu’Office 365. Les données sont chiffrées lorsqu’elles se trouvent dans le service et lorsqu’elles transitent entre le service et les appareils clients. <BR><BR> Les données de niveau 1 incluent, par exemple, les communications d’entreprise normales (courrier électronique) et les fichiers des collaborateurs de l’administration, des ventes et du support technique. | Niveau 1 avec une authentification et une protection renforcées contre la perte de données. <BR> <BR> Une authentification forte comporte une authentification multi-facteur Azure (MFA) avec validation SMS. La protection contre la perte de données permet de s’assurer que les informations sensibles ou cruciales ne circulent pas à l’extérieur de Microsoft cloud. <BR><BR> Les données de niveau 2 sont, par exemple, des informations financières et juridiques ainsi que les données de recherche et de développement de nouveaux produits. | Niveau 2 avec des niveaux de chiffrement, d’authentification et d’audit plus élevés. <BR> <BR>  Niveaux de chiffrement des données au repos et dans le cloud les plus élevés, conformes aux réglementations locales, associés à une authentification multi-facteur avec cartes à puce et fonctionnalités d’audit et d’alerte granulaires. <BR> <BR> Les données de niveau 3 concernent, par exemple, les informations d’identification personnelle des clients et des partenaires, les spécifications techniques de produits et les techniques de fabrication propriétaires.  |
+| Les données sont chiffrées et uniquement accessibles par des utilisateurs authentifiés. <BR> <BR> Fourni pour toutes les données stockées localement et dans le cloud et pour les charges de travail, telles qu’Office 365. Les données sont chiffrées lorsqu’elles se trouvent dans le service et lorsqu’elles transitent entre le service et les appareils clients. <BR><BR> Les données de niveau 1 incluent, par exemple, les communications d’entreprise normales (courrier électronique) et les fichiers des collaborateurs de l’administration, des ventes et du support technique. | Niveau 1 avec une authentification et une protection renforcées contre la perte de données. <BR> <BR> Une authentification forte comporte une authentification multi-facteur Azure (MFA) avec validation SMS. La protection contre la perte de données permet de s’assurer que les informations sensibles ou cruciales ne circulent pas à l’extérieur de Microsoft cloud. <BR><BR> Les données de niveau 2 sont, par exemple, des informations financières et juridiques ainsi que les données de recherche et de développement de nouveaux produits. | Niveau 2 avec des niveaux de chiffrement, d’authentification et d’audit plus élevés. <BR> <BR>  Niveaux de chiffrement des données au repos et dans le cloud les plus élevés, conformes aux réglementations locales, associés à une authentification multi-facteur avec cartes à puce et fonctionnalités d’audit et d’alerte granulaires. <BR> <BR> Les données de niveau 3 concernent, par exemple, les informations d’identification personnelle des clients et des partenaires, les spécifications techniques de produits et les techniques de fabrication propriétaires.  |
 ||||
 
 ## <a name="contosos-information-policies"></a>Stratégies de traitement des informations de Contoso
@@ -65,7 +65,7 @@ Contoso a utilisé les étapes suivantes pour préparer Microsoft 365 Entrepris
 
 4. Création de sites SharePoint protégés pour les données confidentielles et hautement réglementées avec des autorisations qui verrouillent l’accès.
 
-   Les sites sensibles et hautement réglementés ont été configurés en tant que [sites isolés](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites) dans lesquels les autorisations de site d’équipe SharePoint par défaut ont été personnalisées. Les sites SharePoint confidentiels et hautement réglementés ont été également configurés avec une étiquette de rétention correspondante. Les fichiers stockés sur des sites SharePoint hautement réglementés sont protégés par une sous-étiquette de confidentialité fortement réglementée. Pour plus d’informations, consultez le scénario des [sites SharePoint pour données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md).
+   Les sites sensibles et hautement réglementés ont été configurés en tant que sites d’équipe privés avec des restrictions d’autorisations supplémentaires. Les sites SharePoint confidentiels et hautement réglementés ont été également configurés avec une étiquette de rétention correspondante. Les fichiers stockés sur des sites SharePoint hautement réglementés sont protégés par une sous-étiquette de confidentialité fortement réglementée. Pour plus d’informations, consultez le scénario des [sites SharePoint pour données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 5.  Migration des données des sites SharePoint locaux et des partages de fichiers vers leurs nouveaux sites SharePoint
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre ce que fait Microsoft au cours d’un incident de service pour vous permettre de mieux préparer les plans de continuité de votre activité.
-ms.openlocfilehash: c74bb83352f87faf0bb7f50e8aec4ac813516d3c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031079"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831865"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Gestion de la continuité des activités de l’entreprise et responsabilités des partenaires client et cloud
 
@@ -32,9 +32,9 @@ En tant que partenaire approuvé, Microsoft développe des services cloud hautem
 Microsoft informe les administrateurs Microsoft 365 en mettant à jour le tableau de bord Intégrité des services propre au client sur le portail d'administration Microsoft 365. Les mises à jour des incidents de service sont normalement effectuées toutes les heures. Si un intervalle de temps différent est nécessaire, vous serez informé de la modification dans les publications du tableau de bord.
 
 ## <a name="targeted"></a>Ciblage
-Dans la plupart des cas, lorsque nos systèmes de surveillance détectent un problème, nous pouvons identifier la base de clients affectée, que ce soit un seul client, toute la région ou au-delà, et adresser les communications nécessaires à ces clients. Cela vous permet d’obtenir uniquement les informations pour votre entreprise et de ne pas être distrait par des notifications sonores qui ne vous concernent pas. Par exemple, si une base de données de boîtes aux lettres spécifique est impactée, nous sommes en mesure d’identifier précisément les clients qui ont des utilisateurs sur l’infrastructure affectée et de diriger nos communications vers ceux-ci. Si l’étendue de l’impact de l’incident n’est pas évidente, nous développons nos communications au plus grand groupe de clients potentiellement touchés.
+Dans la plupart des cas, lorsque nos systèmes de surveillance détectent un problème, nous pouvons identifier la base de clients affectée, que ce soit un seul client, toute la région ou au-delà, et adresser les communications nécessaires à ces clients. Cela vous permet d’obtenir uniquement les informations pour votre entreprise et de ne pas être distrait par des notifications sonores qui ne vous concernent pas. Par exemple, si une base de données de boîtes aux lettres spécifique est impactée, nous sommes en mesure d’identifier précisément les clients qui ont des utilisateurs sur l’infrastructure affectée et de diriger nos communications vers ceux-ci. Si l’étendue de l’impact de l’incident est peu claire, nous diffusons nos communications au groupe le plus large de clients éventuellement impactés.
 
-## <a name="highly-avaliable"></a>Disponibilité rapide
+## <a name="highly-available"></a>Hautement disponible
 Microsoft propose aux utilisateurs plusieurs canaux pour les communications sur l’état du service.
 
 - En cas d’indisponibilité du centre d’administration ou du tableau de bord Intégrité des services dans le centre d’administration, vous pouvez surveiller l’état du service sur notre [site de sauvegarde](https://status.office365.com/).

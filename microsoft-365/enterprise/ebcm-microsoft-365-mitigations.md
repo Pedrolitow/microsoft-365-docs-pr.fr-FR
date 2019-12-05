@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Voici quelques exemples d’atténuation pour les scénarios d’incident de service Microsoft 365.
-ms.openlocfilehash: 830d8c3ac9993185bbb60ff15c08903e298b9b78
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: c2eaa51bd6980893780f6e0534f33cac636ad716
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122264"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831975"
 ---
 # <a name="service-incident-mitigation-strategies"></a>Stratégies d’atténuation des incidents de service
 
@@ -33,7 +33,7 @@ Voici quelques stratégies et scénarios qui présentent la façon atténuer l�
 |La téléconférence Microsoft Teams est utilisée pour la communication générale et le tri de la gestion des incidents.|Établir une solution de conférence de sauvegarde avec un fournisseur tiers.|
 |Les téléphones VoIP sont utilisés comme mode de communication secondaire.|Implémentez des téléphones non-VoIP capables d’effectuer des appels PSTN, notamment pour les centres d’opérations de réseau et de service pendant les incidents. Ajoutez les numéros de téléphone mobile des employés à l’annuaire de l’entreprise pour permettre au personnel en détresse d’être contacté via le réseau cellulaire.|
 |OneDrive Entreprise est utilisé pour le stockage de fichiers et la productivité des utilisateurs. [Les fichiers à la demande](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-On-Demand-For-The-Enterprise/ba-p/117234) sont configurés pour libérer de l’espace sur les lecteurs d’utilisateurs locaux.|La synchronisation avec OneDrive fournit des stratégies de groupe qui permettent aux administrateurs de faire en sorte que le contenu spécifique soit synchronisé en local ou de libérer de l’espace lorsque c’est nécessaire. Pour réduire le risque d’inaccessibilité des documents, configurez cette stratégie de manière à synchroniser localement les documents importants. Formez les utilisateurs à appliquer manuellement le paramètre « Toujours conserver sur cet appareil » pour les documents importants.|
-|Exchange Online permet de communiquer les perturbations de l'activité aux clients et aux fournisseurs.|Les réseaux sociaux tiers publics peuvent être utilisés comme autres moyens de communication de masse.
+|Exchange Online permet de communiquer les perturbations de productivité aux clients et aux fournisseurs.|Les réseaux sociaux tiers publics peuvent être utilisés comme autres moyens de communication de masse.
 
 ## <a name="leveraging-mobile-app-access"></a>Profiter de l'accès aux applications mobiles
 

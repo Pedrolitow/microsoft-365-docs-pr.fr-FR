@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 95b48112928902a046d837e5d02f025149028135
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 2544820b577b81062550a8c0a84513f2a8c28668
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929197"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831965"
 ---
 # <a name="empower-remote-workers"></a>Confiez des responsabilités aux travailleurs à distance
 
@@ -30,7 +30,7 @@ Le travail à distance, également appelé télétravail, peut couvrir un spectr
 
 - Les employés qui s'absentent occasionnellement du bureau pour assister à des conférences ou à des réunions avec les clients.
 - Certains employés qui travaillent à temps plein.
-- Une organisation totalement à distance dans laquelle il n’y a pas de bureaux et dans laquelle tous les employés travaillent à distance.
+- Une organisation totalement à distance dans laquelle il n’y a pas de bureau et dans laquelle tous les employés travaillent à distance.
 
 Pour prendre en charge les travailleurs à distance, une combinaison de fonctionnalités de Microsoft 365 Entreprise permet à vos employés à distance de travailler de façon très collaborative, par exemple dans les cas suivants :
 

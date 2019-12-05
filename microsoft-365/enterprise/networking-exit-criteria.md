@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure réseau.
-ms.openlocfilehash: ad54284fdbd00fef486a13a957af6f06cb6a7450
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370151"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831945"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Phase 1 : Critères de sortie de l’infrastructure réseau
 
@@ -48,7 +48,7 @@ Utilisez un outil ou site web sur un appareil dans ce bureau pour déterminer l�
 Si nécessaire, l’[Étape 2](networking-dns-resolution-same-location.md) peut vous aider à répondre à cette exigence.
 
 <a name="crit-networking-step3"></a>
-## <a name="optional-unneccessary-network-hairpins-are-removed"></a>Facultatif : les épingles de réseau superflues sont supprimées
+## <a name="optional-unnecessary-network-hairpins-are-removed"></a>Facultatif : les épingles de réseau superflues sont supprimées
 
 Vous avez examiné vos épingles de réseau et avez identifié leur impact sur les performances pour tous vos bureaux. Vous avez supprimé les épingles de réseau lorsque cela était possible ou avez travaillé avec votre fournisseur de réseau ou de sécurité tiers pour implémenter une homologation Microsoft 365 optimale pour leur réseau.
 

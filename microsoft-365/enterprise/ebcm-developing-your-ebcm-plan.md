@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Éléments à prendre en compte lors du développement de votre plan de continuité d’activité de l’entreprise dans le Cloud.
-ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9f8b7f6950375fb976202a10da03662c3b2715a
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031069"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831667"
 ---
 # <a name="developing-your-continuity-plan"></a>Développement de votre plan de continuité
 
@@ -26,7 +26,7 @@ Cette rubrique fournit des conseils pour l’élaboration d’un plan de continu
 
 De manière générale, la planification de la continuité d’activité de l’entreprise comporte quatre aspects : l’évaluation, la planification, la validation des capacités, ainsi que la communication et la coordination.
 
-## <a name="assesment"></a>Évaluation
+## <a name="assessment"></a>Évaluation
 Tout d’abord, vous devez identifier les fonctions dans votre organisation, ainsi que les services et processus qui les prennent en charge. Cela comprend la réalisation d’une analyse de l’impact sur l’entreprise, où chaque fonction de l’entreprise est classée en fonction de son degré d’importance et où vous identifiez les processus et les services dont dépend chacun d’eux. Voici un exemple de tableau que vous pouvez consulter pour vous aider à commencer votre propre évaluation.
 
 **Exemple d’évaluation d’impact commercial (BIA)**
@@ -49,7 +49,7 @@ Il s’agit d’un document BIA pour `name of the service, system, process, or f
 |La technologie dispose-t-elle d’un mandat connu responsable de l’adoption d’un contrat SLA spécifique ? Si oui, expliquez en détail.|`details here`|
 |La perte ou la compromission des données associées à ces services entraîne-t-elle un événement majeur ? Si oui, expliquez en détail.|`details here`|
 |Le service dispose-t-il d’une solution de contournement ou d’une alternative pour certaines ou l’ensemble de ses fonctions et fonctionnalités clés ? Si oui, expliquez en détail.|`details here`|
-|Le processus de service stocke-t-il ou transmet-il des données client (PII) ? Si oui, expliquez en détail.|`details here`|
+|Est-ce que le service traite, stocke ou transmet les données client, telles que les informations d’identification personnelle (PII) ? Si oui, expliquez en détail.|`details here`|
 |état BIA|`develop your own status classification, here are some examples: planned, started, in-progress, complete, on-hold, expired`|
 |date de finalisation|`the date this BIA was completed`|
 |facilitateur BIA|`name of the person or group who is responsible for developing and maintaining this BIA`|
@@ -94,7 +94,7 @@ Au cours de l’analyse de l’impact et de l’analyse de dépendances de votre
 
 ## <a name="know-your-external-points-of-integration"></a>Identifier vos points d’intégration externes
 
-Quel que soit le modèle d’entreprise, chaque entreprise a des points d’intégration avec ses clients, ses partenaires et ses fournisseurs. La chaîne d’approvisionnement de la valeur commerciale s’appuie sur l’intégration avec des entités externes. L’amélioration de la continuité d’activité en cas d’interruption de service passe par la prise en compte – et la protection – de chaque point d’intégration.  
+Quel que soit le modèle d’entreprise, chaque entreprise a des points d’intégration avec ses clients, ses partenaires et ses fournisseurs. La chaîne d’approvisionnement de la valeur commerciale est basée sur l’intégration avec des entités externes. L’amélioration de la continuité d’activité en cas d’interruption de service passe par la prise en compte – et la protection – de chaque point d’intégration.  
 Au fur et à mesure que vous analysez votre chaîne d’approvisionnement, les communications externes doivent être considérées de la même manière que les communications internes sont analysées. Vos clients comptent-ils sur vos serveurs Exchange Online comme seul moyen de vous contacter ? Avez-vous sensibilisé vos fournisseurs et mis en place avec eux d’autres méthodes de communication en cas d’impact sur le temps de disponibilité ? Voici un exemple de tableau qui suggère comment organiser votre raisonnement.
 
 |nom de l’entité externe|scénario d’incident ayant une incidence|services Microsoft 365 intégrés|alternatives|

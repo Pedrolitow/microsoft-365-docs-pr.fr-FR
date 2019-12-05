@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Description de la résilience
-ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a31e24925e65bcdff4ee6416a3e308bf46a5a955
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031049"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831855"
 ---
 # <a name="built-in-resiliency"></a>Résilience intégrée
 
@@ -39,7 +39,7 @@ Dans Microsoft 365, nous visons à ce que tous les services soient conçus et ex
 L’étendue d’un incident de service est mesurée par sa gravité, sa durée et le nombre de clients touchés. Nous cherchons à limiter la portée de tous les incidents en procédant comme suit :
 
 - disposer de plusieurs instances de chaque service partitionnées les unes des autres
-- déployer des mises à jour de manière contrôlée et graduelle à l’aide d’anneaux de validation, afin de détecter les problèmes pouvant découler de la mise à jour et de les éliminer au début du processus de déploiement. Cette opération autorise la régression de la mise à jour si nécessaire et se produit d’abord dans un petit groupe au sein de Microsoft (anneau intérieur) avant d’être déployée vers des groupes plus importants comme tous les 140 000 employés de Microsft (anneau 2), puis dans les anneaux d’utilisateurs précoces (anneau 3) et finalement auprès de tous les clients au niveau mondial (anneau 4).
+- déployer des mises à jour de manière contrôlée et graduelle à l’aide d’anneaux de validation, afin de détecter les problèmes pouvant découler de la mise à jour et de les éliminer au début du processus de déploiement. Cette opération autorise la régression de la mise à jour si nécessaire et se produit d’abord dans un petit groupe au sein de Microsoft (anneau intérieur) avant d’être déployée vers des groupes plus importants comme tous les 140 000 employés de Microsoft (anneau 2), puis dans les anneaux d’utilisateurs précoces (anneau 3) et finalement auprès de tous les clients au niveau mondial (anneau 4).
 - améliorer la surveillance grâce à l’automatisation. Microsoft 365 est très étendu et le temps de disponibilité cible du contrat SLA est élevé. Au début d’un incident de service, si des humains devaient être impliqués dans la détection et l’intervention, nous ne pourrions pas réagir assez rapidement pour respecter les contrats SLA. L’automatisation permet de détecter et de répondre rapidement et efficacement aux incidents de service. Plus vite nous sommes au courant d’un incident, plus vite celui-ci pourra être réparé.
 
 Outre les fonctionnalités actives/actives intégrées à l’architecture du service Microsoft 365, ces efforts réduisent la gravité, la durée et le nombre de clients touchés au cours d’un incident de service.  

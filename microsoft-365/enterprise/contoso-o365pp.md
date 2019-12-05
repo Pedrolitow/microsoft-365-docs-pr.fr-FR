@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer Office 365 ProPlus.
-ms.openlocfilehash: e0e1343d2ed36b1c76ad4708545c4e6d4010bb45
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7649a4a5c77c7f743e3339db6f91b7afc3b1343f
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673160"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831985"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Déploiement d’Office 365 ProPlus pour Contoso
 
@@ -31,7 +31,7 @@ Contoso a mis à niveau ses PC vers Windows 10 Entreprise et Office 365 ProPlu
 
 ## <a name="deployment-tools"></a>Outils de déploiement
 
-En se basant sur ses besoins, Contoso a choisi de déployer Windows 10 entreprise et Office 365 ProPlus avec Configuration Manager (branche actuelle). Configuration Manager assure la mise à l’échelle des environnements de grande taille et permet de contrôler de manière étendue l’installation, les mises à jour et les paramètres. Il inclut également des fonctionnalités intégrées qui simplifient et optimisent le déploiement et la gestion d’Office, notamment :
+Selon ses besoins, Contoso a choisi de déployer Windows 10 Entreprise et Office 365 ProPlus avec Configuration Manager (branche actuelle). Le gestionnaire de configuration s’adapte à des environnements volumineux et offre un contrôle extensif sur l’installation, les mises à jour et les paramètres. Il dispose également de fonctionnalités intégrées pour simplifier et accroître l’efficacité du déploiement et de la gestion d’Office, notamment :
 
 - un cache d’homologue, pouvant aider avec la capacité limitée du réseau lors du déploiement de périphériques dans des emplacements à distance ;
 - le tableau de bord de gestion des clients Office, qui facilite le déploiement Office, surveille les mises à jour et permet aux administrateurs d’accéder aux dernières fonctionnalités de déploiement et de gestion ;
@@ -69,7 +69,7 @@ Pour effectuer le déploiement d’Office, Contoso a implémenté le processus s
 7. Dans le gestionnaire de configuration, Contoso a déployé les packages Windows et Office aux points de distribution au sein de son réseau, et a exécuté les séquences de tâches de déploiement du gestionnaire de configuration pour déployer le package Office 365 ProPlus pilote pour le groupe pilote.
 8. Après avoir résolu tous les problèmes de compatibilité avec le groupe pilote, Contoso a exécuté les séquences de tâches pour déployer le package Office 365 ProPlus large au groupe large.
 
-Étant donné que Contoso a choisi de mettre à jour automatiquement les appareils à partir du cloud, il n’était pas nécessaire de gérer le processus dans le Gestionnaire de Configuration. Les appareils clients sont mis à jour automatiquement directement à partir du CDN d’Office en fonction du canal de mise à jour que vous définissez dans le cadre du déploiement initial. 
+Étant donné que Contoso a choisi de mettre à jour automatiquement les appareils à partir du cloud, il n’était pas nécessaire de gérer le processus dans le Gestionnaire de Configuration. Leurs appareils sont mis à jour automatiquement directement à partir du cloud en fonction du canal de mise à jour qui a été défini dans le cadre du déploiement initial. 
 
 Voici l’installation Office 365 ProPlus et l’architecture de déploiement de mises à jour en cours de Contoso.
 

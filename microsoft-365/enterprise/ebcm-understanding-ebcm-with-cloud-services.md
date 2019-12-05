@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez en quoi la planification et l’implémentation de la continuité d’activité sont différentes lorsque les services Cloud font partie de votre offre informatique.
-ms.openlocfilehash: 9b8d769670b53a75c2b48254cb0026488995274a
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122254"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831835"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Gestion de la continuité d’activité d’entreprise (EBCM) avec les services Cloud
 
