@@ -12,12 +12,12 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: Dans cette articleSupported LanguagesInstall le dossier Junk Email Reporting Add-ununinstall the Junk Email Reporting Add-inFor more information
-ms.openlocfilehash: 7f294ed78affba6e55f2372b81b517bbd25d3f08
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 508d542be4862a6a06b795fc7a4b97bdc405d430
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079033"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865886"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installation du complément de création de rapports de courrier indésirable pour Microsoft Outlook
   
@@ -59,13 +59,12 @@ Le complément Junk Email Reporting prend en charge les langues suivantes :
 - Espagnol
     
 ## <a name="install-the-junk-email-reporting-add-in"></a>Installation du complément Junk Email Reporting
-<a name="sectionSection1"> </a>
 
 Vous pouvez installer le complément de création de rapports de courrier indésirable de deux façons :
   
-- En exécutant le package Windows Installer comme vous le feriez avec n'importe quel autre fichier .msi. Lorsque vous installez le complément, une interface GUI s'affiche et vous guide au fil des écrans d'installation. Pour plus d'informations, consultez la rubrique relative à [Installation du complément de création de rapports de courrier indésirable à l'aide de l'Assistant Installation](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard).
+- En exécutant le package Windows Installer comme vous le feriez avec n'importe quel autre fichier .msi. Lorsque vous installez le complément, une interface GUI s'affiche et vous guide au fil des écrans d'installation. Pour plus d'informations, consultez la rubrique relative à [Installation du complément de création de rapports de courrier indésirable à l'aide de l'Assistant Installation](#install-the-junk-email-reporting-add-in-using-the-setup-wizard).
     
-- En exécutant une installation sans assistance, c'est-à-dire sans interface utilisateur d'installation. Au lieu d'utiliser cette dernière, vous spécifiez des options de ligne de commande qui exécutent un script d'installation. Lorsque vous installez le complément, vous disposez d'options de configuration supplémentaires qui sont indisponibles dans l'interface GUI. Pour plus d'informations, consultez la rubrique relative à [Installation du complément de création de rapports de courrier indésirable en mode sans assistance](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode).
+- En exécutant une installation sans assistance, c'est-à-dire sans interface utilisateur d'installation. Au lieu d'utiliser cette dernière, vous spécifiez des options de ligne de commande qui exécutent un script d'installation. Lorsque vous installez le complément, vous disposez d'options de configuration supplémentaires qui sont indisponibles dans l'interface GUI. Pour plus d'informations, consultez la rubrique relative à [Installation du complément de création de rapports de courrier indésirable en mode sans assistance](#install-the-junk-email-reporting-add-in-using-silent-mode).
     
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
@@ -87,7 +86,6 @@ L'installation du complément de création de rapports de courrier indésirable 
 > Vous devez disposer de droits d'administrateur sur l'ordinateur sur lequel vous installez le complément. 
   
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installation du complément de création de rapports de courrier indésirable à l'aide de l'Assistant Installation
-<a name="BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard"> </a>
 
 1. Sur votre ordinateur, fermez Outlook.
     
@@ -108,7 +106,6 @@ L'installation du complément de création de rapports de courrier indésirable 
 9. Cliquez sur la flèche vers le bas en regard du bouton **Courrier indésirable** pour plus d'options, telles que le **signalement en tant que hameçonnage** si vous souhaitez signaler des messages électroniques d'hameçonnage à Microsoft. Dans votre dossier de courrier indésirable, vous pouvez également sélectionner l'option de **signalement en tant que courrier non indésirable** si un message électronique a été identifié à tort comme courrier indésirable. 
     
 ### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>Installation du complément de création de rapports de courrier indésirable en mode sans assistance
-<a name="BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode"> </a>
 
 1. Sur votre ordinateur, fermez Outlook.
     
@@ -135,9 +132,9 @@ L'installation du complément de création de rapports de courrier indésirable 
   
     Pour ajouter ces deux paramètres facultatifs sur la base des exemples ci-dessus, sur un ordinateur exécutant x86 Outlook, vous devez spécifier ce qui suit : 
     
-  ```
-  msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
-  ```
+      ```
+      msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
+      ```
 
 4. Une fois l'installation terminée, lancez Outlook.
     
@@ -146,21 +143,19 @@ L'installation du complément de création de rapports de courrier indésirable 
 6. Cliquez sur la flèche vers le bas en regard du bouton **Courrier indésirable** pour plus d'options, telles que le **signalement en tant que hameçonnage** si vous souhaitez signaler des messages électroniques d'hameçonnage à Microsoft. Dans votre dossier de courrier indésirable, vous pouvez également sélectionner l'option de **signalement en tant que courrier non indésirable** si un message électronique a été identifié à tort comme courrier indésirable. 
     
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>Désinstallation du complément Junk Email Reporting
-<a name="sectionSection2"> </a>
 
 Utilisez l'une des options suivantes pour désinstaller le complément de création de rapports de courrier indésirable :
   
-- Supprimez le complément à l'aide du Panneau de configuration Windows. Pour plus d'informations, consultez la rubrique relative à la [Désinstallation du complément Junk Email Reporting à partir du Panneau de configuration](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel).
+- Supprimez le complément à l’aide du panneau de configuration Windows. Pour plus d’informations, consultez [la rubrique désinstaller le complément de création de rapports de courrier indésirable à partir du panneau de configuration](#uninstall-the-junk-email-reporting-add-in-from-control-panel).
     
-- Exécutez le package Windows Installer, puis sélectionnez l'option de désinstallation. Pour plus d'informations, consultez la rubrique relative à la [Désinstallation du complément Junk Email Reporting en exécutant le package Windows Installer](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage).
+- Exécutez le package Windows Installer, puis sélectionnez l'option de désinstallation. Pour plus d’informations, consultez la rubrique [désinstaller le complément de création de rapports de courrier indésirable en exécutant le package Windows Installer](#uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package).
     
-- Exécutez une installation à l'aide de l'option de désinstallation. Pour plus d'informations, consultez la rubrique relative à la [Désinstallation du complément Junk Email Reporting en mode sans assistance](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#MK_UninstalltheJunkEmailReportingAdd-ininSilentMode).
+- Exécutez une installation à l'aide de l'option de désinstallation. Pour plus d'informations, consultez la rubrique relative à la [Désinstallation du complément Junk Email Reporting en mode sans assistance](#uninstall-the-junk-email-reporting-add-in-in-silent-mode).
     
 > [!NOTE]
 > Vous devez disposer de droits d'administrateur sur l'ordinateur sur lequel vous désinstallez le complément. 
   
 ### <a name="uninstall-the-junk-email-reporting-add-in-from-control-panel"></a>Désinstallation du complément Junk Email Reporting à partir du Panneau de configuration
-<a name="BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel"> </a>
 
 1. Sur votre ordinateur, fermez Outlook.
     
@@ -175,7 +170,6 @@ Utilisez l'une des options suivantes pour désinstaller le complément de créat
 6. Redémarrez Outlook pour vérifier que le complément ne s'affiche plus dans le ruban Outlook.
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package"></a>Désinstallation du complément Junk Email Reporting en exécutant le package Windows Installer
-<a name="BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage"> </a>
 
 1. Sur votre ordinateur, fermez Outlook.
     
@@ -191,7 +185,6 @@ Utilisez l'une des options suivantes pour désinstaller le complément de créat
 4. Redémarrez Outlook pour vérifier que le complément ne s'affiche plus dans le ruban Outlook.
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-in-silent-mode"></a>Désinstallation du complément Junk Email Reporting en mode sans assistance
-<a name="MK_UninstalltheJunkEmailReportingAdd-ininSilentMode"> </a>
 
 1. Sur votre ordinateur, fermez Outlook.
     
@@ -209,7 +202,6 @@ Utilisez l'une des options suivantes pour désinstaller le complément de créat
 4. Redémarrez Outlook pour vérifier que le complément ne s'affiche plus dans le ruban Outlook.
     
 ## <a name="for-more-information"></a>Pour plus d’informations
-<a name="sectionSection3"> </a>
 
 [Signaler les messages de courrier indésirable à Microsoft](report-junk-email-messages-to-microsoft.md)
   

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages dans Office 365 fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818846"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866416"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
@@ -119,6 +119,10 @@ Le chiffrement PDF vous permet de protéger des documents PDF sensibles via une 
 
 Not yet. Les pièces jointes OneDrive entreprise ne sont pas prises en charge et les utilisateurs finaux ne peuvent pas chiffrer un message qui contient une pièce jointe de OneDrive entreprise sur le Cloud.
   
+## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>Quels sont les clients de messagerie qui prennent en charge l’aperçu de pièces jointes chiffrées dans les messages électroniques protégés ?
+
+Lorsque les pièces jointes sont protégées par un courrier électronique protégé, les clients Outlook fournissent la possibilité de prévisualiser directement le document. Outlook prend en charge la préversion des documents Office (docx, xlsx, pptx, doc, xls, PPT). Outlook sur le Web prend en charge l’aperçu des documents Office (docx, xlsx, pptx) et PDF.  
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>Puis-je chiffrer automatiquement les messages en configurant des stratégies ?
 
 Oui. Utilisez des règles de flux de messagerie dans Exchange Online pour chiffrer automatiquement un message en fonction de certaines conditions. Par exemple, vous pouvez créer des stratégies basées sur l’ID de destinataire, le domaine du destinataire ou le contenu dans le corps ou l’objet du message. Consultez la rubrique [définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md).

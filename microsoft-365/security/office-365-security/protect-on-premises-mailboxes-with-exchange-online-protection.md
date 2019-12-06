@@ -1,5 +1,5 @@
 ---
-title: Protéger les boîtes aux lettres locales à l’aide d’Exchange Online Protection
+title: Protéger les boîtes aux lettres locales avec Exchange Online Protection
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -17,19 +17,19 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: Même si vous envisagez d’héberger une partie ou l’ensemble de vos boîtes aux lettres en local, vous pouvez toujours protéger les boîtes aux lettres à l’aide d’Exchange Online Protection (EOP). Pour configurer les connecteurs, vous devez disposer d'un compte d'administrateur global Office 365 ou d'administrateur d'entreprise Exchange (groupe de rôles Gestion de l'organisation). Pour plus d’informations sur la relation entre les autorisations Office 365 et les autorisations Exchange, consultez la rubrique attribution de rôles d’administrateur dans Office 365 géré par 21Vianet. Si toutes vos boîtes aux lettres Exchange sont en local, procédez comme suit pour configurer votre service EOP.
-ms.openlocfilehash: 787c01ff7d06943b51916675b9e30dc3f020d5e1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7a9d7c3752e612b8e0bdcce6a0f9bb420c61c249
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080199"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866646"
 ---
-# <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Protéger les boîtes aux lettres locales à l’aide d’Exchange Online Protection
+# <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Protéger les boîtes aux lettres locales avec Exchange Online Protection
 
 > [!NOTE]
 > Cet article s’applique uniquement à Office 365 géré par 21Vianet en Chine. 
   
-Même si vous envisagez d’héberger une partie ou l’ensemble de vos boîtes aux lettres en local, vous pouvez toujours protéger les boîtes aux lettres à l’aide d’Exchange Online Protection (EOP). Pour configurer les connecteurs, vous devez disposer d'un compte d'administrateur global Office 365 ou d'administrateur d'entreprise Exchange (groupe de rôles Gestion de l'organisation). Pour plus d’informations sur la relation entre les autorisations Office 365 et les autorisations Exchange, consultez la rubrique [attribution de rôles d’administrateur dans Office 365 géré par 21ViaNet](https://support.office.com/article/d58b8089-cbfd-41ec-b64c-9cfcbef495ac). Si toutes vos boîtes aux lettres Exchange sont en local, procédez comme suit pour configurer votre service EOP. 
+Même si vous envisagez d’héberger une partie ou l’ensemble de vos boîtes aux lettres en local, vous pouvez toujours protéger les boîtes aux lettres à l’aide d’Exchange Online Protection (EOP). Pour configurer les connecteurs, vous devez disposer d'un compte d'administrateur global Office 365 ou d'administrateur d'entreprise Exchange (groupe de rôles Gestion de l'organisation). Pour plus d’informations sur la relation entre les autorisations Office 365 et les autorisations Exchange, consultez la rubrique [attribution de rôles d’administrateur dans Office 365 géré par 21ViaNet](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet). Si toutes vos boîtes aux lettres Exchange sont en local, procédez comme suit pour configurer votre service EOP. 
   
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Étape 1 : utiliser le centre d’administration Microsoft 365 pour ajouter et vérifier votre domaine
 
@@ -38,7 +38,7 @@ Même si vous envisagez d’héberger une partie ou l’ensemble de vos boîtes 
 2.  Suivez les étapes indiquées dans le portail pour ajouter les enregistrements DNS applicables à votre fournisseur d’hébergement DNS afin de vérifier la propriété du domaine. 
     
 > [!TIP]
-> [Ajoutez votre domaine et vos utilisateurs à office 365 géré par 21ViaNet](https://support.office.com/article/1cd4839b-d051-46b8-ab9b-bc7752024e78) et [créez des enregistrements dns pour Office 365 lorsque vous gérez vos enregistrements DNS](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b) sont des ressources utiles à référencer lorsque vous ajoutez votre domaine au service et configurez le DNS. 
+> [Ajoutez votre domaine et vos utilisateurs à office 365 géré par 21ViaNet](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet) et [créez des enregistrements dns pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet) sont des ressources utiles à référencer lorsque vous ajoutez votre domaine au service et configurez le DNS. 
   
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>Étape 2 : ajouter des destinataires et configurer le type de domaine
 
@@ -54,7 +54,7 @@ Créez des connecteurs dans le Centre d'administration Exchange (CAE) qui active
   
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l’accès SMTP entrant sur le port 25
 
-Après avoir configuré les connecteurs, attendez 72 heures avant d’autoriser la propagation de vos mises à jour d’enregistrement DNS. De cette manière, limitez le trafic SMTP entrant-25 sur votre pare-feu ou vos serveurs de messagerie pour qu’ils acceptent uniquement les messages provenant des centres de distribution EOP, en particulier ceux des adresses IP indiquées au niveau [des URL et des plages d’adresses IP pour Office 365 géré par 21ViaNet](https://support.office.com/article/5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0#__exchange_online_protection). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
+Après avoir configuré les connecteurs, attendez 72 heures avant d’autoriser la propagation de vos mises à jour d’enregistrement DNS. De cette manière, limitez le trafic SMTP entrant-25 sur votre pare-feu ou vos serveurs de messagerie pour qu’ils acceptent uniquement les messages provenant des centres de distribution EOP, en particulier ceux des adresses IP indiquées au niveau [des URL et des plages d’adresses IP pour Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
   
 > [!TIP]
 > Configurez les paramètres du serveur SMTP en définissant l'expiration du délai de connexion sur 60 secondes. Ce paramétrage est acceptable dans la plupart des cas, et autorise un certain délai, par exemple, si le message envoyé contient une pièce jointe volumineuse. 
@@ -65,7 +65,7 @@ Pour vous assurer que le courrier indésirable est correctement routé vers le d
   
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6 : utiliser le centre d’administration Microsoft 365 pour faire pointer votre enregistrement MX vers EOP
 
-Suivez les étapes de configuration de domaine Office 365 pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant circule dans EOP. Pour plus d’informations, vous pouvez à nouveau référencer [créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b).
+Suivez les étapes de configuration de domaine Office 365 pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant circule dans EOP. Pour plus d’informations, vous pouvez à nouveau référencer [créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
   
 Comment savoir si cette tâche a fonctionné ?
   

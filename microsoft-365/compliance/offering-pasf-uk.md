@@ -1,7 +1,7 @@
 ---
 title: Installations sécurisées de police (PASF)
 description: Les services Cloud d’entreprise Microsoft prennent en charge l’application de la loi britannique qui requiert des installations sécurisées de police pour traiter et stocker leurs données dans le Cloud.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ec66f54c8db21bf4d94feb22c5dd17ee4b45ef5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690402"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859294"
 ---
-# <a name="compliance-offering-police-assured-secure-facilities-pasf-united-kingdom"></a>Offre de conformité : services de sécurisation de police (PASF) Royaume-Uni
+# <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Installations sécurisées de police (PASF)
 
 ## <a name="about-pasf"></a>À propos de PASF
 
@@ -34,7 +34,7 @@ Microsoft prend une approche holistique de la sécurité en profondeur. Nos cent
 
 Ces certifications sont suivies des mesures prises pour protéger la sécurité physique de nos centres de contenu. Nous adoptons une approche multicouche qui commence par la conception, la création et l’exploitation de centres de données afin de contrôler strictement l’accès physique aux domaines dans lesquels les données client sont stockées. Les centres de gestion gérés par Microsoft disposent de niveaux de protection complets avec une approbation d’accès requise dans le périmètre de la salle, au niveau du périmètre du bâtiment, à l’intérieur du bâtiment et dans le centre de gestion. Cela réduit le risque que des utilisateurs non autorisés acquièrent un accès physique aux données et aux ressources de centre de données.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -44,7 +44,7 @@ Ces certifications sont suivies des mesures prises pour protéger la sécurité 
 
 Le NPIRMT audite un centre de gestion des datacenters chaque année, en parcourant annuellement les quatre centres de connaissances au Royaume-Uni. L’évaluation NPIRMT que les centres de PASF Microsoft sont disponibles auprès du Bureau d’accueil pour les clients qui effectuent leur propre évaluation des risques d’Azure et d’autres services Cloud de Microsoft.
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Public officiel Azure UK](https://servicetrust.microsoft.com/ViewPage/UKBlueprints): aide les clients britanniques à accélérer le déploiement d’IaaS et de services PaaS de charges de travail conformes dans Azure.
 
@@ -60,8 +60,8 @@ Oui. L’application de la loi peut utiliser l’évaluation NPIRMT d’Azure po
 - [Services Azure, locaux et sécurité physique](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Normes ISM Microsoft et ISO/IEC 27001:2013](offering-iso-27001.md)
 - [Conditions de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).

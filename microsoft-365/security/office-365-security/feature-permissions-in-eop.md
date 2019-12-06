@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Les autorisations nécessaires à l'exécution de tâches de gestion de Microsoft Exchange Online Protection (EOP) varient selon les fonctionnalités gérées.
-ms.openlocfilehash: e3b41ea2b58397a9af2a1cb8ba979b5f816b416b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dcf56a5295f7964b2271331deb2e7f8c1ba1635e
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031909"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871850"
 ---
 # <a name="feature-permissions-in-eop"></a>Autorisations des fonctionnalités dans EOP
 
@@ -29,15 +29,15 @@ Consultez le tableau suivant afin de déterminer les autorisations requises pour
 
 |**Fonctionnalité**|**Autorisations requises**|
 |:-----|:-----|
-|Anti-programme malveillant|[Gestion de l'organisation](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Gestion de l'hygiène](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|Anti-spam|[Gestion de l'organisation](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Gestion de l'hygiène](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|Règles de flux de messagerie|[Gestion de l'organisation](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Records Management](https://technet.microsoft.com/library/0e0c95ce-6109-4591-b86d-c6cfd44d21f5.aspx)|
-|Domaines|[Gestion de l'organisation](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx)|
-|Protection avancée contre les menaces (ATP)|[Gestion de l'organisation](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Gestion de l'hygiène](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|Connecteurs Office 365|[Gestion de l'organisation](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Suivi des messages|[Gestion de l'organisation](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx)|
-|Configuration de l'organisation|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|Mise en quarantaine|[Gestion de l'organisation](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|Utilisateurs, contacts et groupes de rôles|[Gestion de l'organisation](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|Groupes de sécurité et groupes de distribution|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|Affichage des rapports|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) : les utilisateurs ont accès aux rapports de protection du courrier électronique.  <br/> [View-Only Recipients](https://technet.microsoft.com/library/37e66b92-81d3-412f-b7a9-e1bb8cbeb468.aspx) : les utilisateurs ont accès aux rapports de protection du courrier électronique.  <br/> [Compliance Management](https://technet.microsoft.com/library/b91b23a4-e9c7-4bd0-9ee3-ec5cb498da15.aspx) : les utilisateurs ont accès aux rapports de protection du courrier électronique et aux rapports de protection contre la perte de données (si leur abonnement comprend les fonctionnalités associées).|
+|Anti-programme malveillant|Gestion de l’organisation <br/><br/> Gestion de l’hygiène|
+|Anti-spam|Gestion de l’organisation <br/><br/> Gestion de l’hygiène|
+|Règles de flux de messagerie|Gestion de l’organisation <br/><br/> Gestion des enregistrements|
+|Domaines|Gestion de l’organisation <br/><br/> Afficher uniquement la gestion de l’organisation|
+|Protection avancée contre les menaces (ATP)|Gestion de l’organisation <br/><br/> Gestion de l’hygiène|
+|Connecteurs Office 365|Gestion de l’organisation|
+|Suivi des messages|Gestion de l’organisation <br/><br/> Afficher uniquement la gestion de l’organisation|
+|Configuration de l'organisation|Gestion de l’organisation|
+|Quarantaine|Gestion de l’organisation <br/><br/> Afficher uniquement la gestion de l’organisation <br/><br/> Gestion de l’hygiène|
+|Utilisateurs, contacts et groupes de rôles|Gestion de l’organisation <br/><br/> Afficher uniquement la gestion de l’organisation <br/><br/> Gestion de l’hygiène|
+|Groupes de sécurité et groupes de distribution|Gestion de l’organisation <br/><br/> Afficher uniquement la gestion de l’organisation <br/><br/> Gestion de l’hygiène|
+|Affichage des rapports|Gestion de l’Organisation : accès aux rapports de protection du courrier électronique. <br/><br/> Destinataires en affichage seul : accès aux rapports de protection du courrier électronique.  <br/><br/> Gestion de la conformité : accès aux rapports de protection de messagerie et aux rapports de protection contre la perte de données (si votre abonnement dispose de fonctionnalités DLP).|

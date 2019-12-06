@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: c8779fb89ecb1deda92382ae2d91de4e54b303e7
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e60c0ae87f050b6e72e53b6069a61cd52df0641a
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032359"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871840"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur
 
@@ -37,9 +37,9 @@ Vous pouvez consulter la liste de tous les messages mis en quarantaine, ou reche
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée « quarantaine » dans la rubrique [autorisations des fonctionnalités dans Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée « quarantaine » dans la rubrique [autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) .
 
-- Vous pouvez diffuser ou signaler plusieurs messages à la fois sur la page de **mise en quarantaine**. Vous pouvez également créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages et la cmdlet [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les diffuser.
+- Vous pouvez diffuser ou signaler plusieurs messages à la fois sur la page de **mise en quarantaine**. Vous pouvez également créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) pour rechercher des messages et la cmdlet [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) pour les diffuser.
 
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -54,7 +54,7 @@ Dans le centre d'administration Exchange, une recherche avancée vous permet de 
 
 2. Dans la fenêtre **Recherche avancée**, sélectionnez une combinaison quelconque des conditions suivantes. Pour sélectionner une condition, activez la case à cocher associée. Les caractères génériques ne sont pas pris en charge.
 
-   1. **ID du message**: vous pouvez utiliser ce paramètre pour effectuer une recherche ciblée pour un message spécifique. Par exemple, si un message est envoyé par un utilisateur de votre organisation, ou adressé à ce dernier, mais n'atteint jamais sa destination, vous pouvez rechercher le message à l'aide de la fonctionnalité de suivi des messages. Pour plus d'informations, consultez la rubrique [Exécution d'un suivi de message et affichage des résultats](https://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx). Si vous découvrez que le message a été mis en quarantaine, parce qu'il correspond à une règle ou a été identifié comme un courrier indésirable, vous pouvez facilement le retrouver en spécifiant son ID. Veillez à inclure toute la chaîne d'ID de message. Celle-ci peut comprendre des crochets (\<\>).
+   1. **ID du message**: vous pouvez utiliser ce paramètre pour effectuer une recherche ciblée pour un message spécifique. Par exemple, si un message est envoyé par un utilisateur de votre organisation, ou adressé à ce dernier, mais n'atteint jamais sa destination, vous pouvez rechercher le message à l'aide de la fonctionnalité de suivi des messages. Pour plus d'informations, consultez la rubrique [Exécution d'un suivi de message et affichage des résultats](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results). Si vous découvrez que le message a été mis en quarantaine, parce qu'il correspond à une règle ou a été identifié comme un courrier indésirable, vous pouvez facilement le retrouver en spécifiant son ID. Veillez à inclure toute la chaîne d'ID de message. Celle-ci peut comprendre des crochets (\<\>).
 
    2. **Adresse de messagerie**de l’expéditeur : spécifiez l’adresse de messagerie de la personne qui a envoyé le message.
 
@@ -184,6 +184,6 @@ Si vous cliquez sur **Actualiser** ![l’actualisation](../media/ITPro-EAC-Refre
 
 Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](../media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés
 
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Pour plus d’informations
 
 [FAQ sur la mise en quarantaine](quarantine-faq.md)

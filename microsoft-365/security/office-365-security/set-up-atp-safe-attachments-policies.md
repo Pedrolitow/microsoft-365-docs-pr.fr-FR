@@ -15,17 +15,17 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Définir des stratégies de pièces jointes approuvées pour protéger votre organisation contre les fichiers malveillants par courrier électronique.
-ms.openlocfilehash: 80e698faf012f56b809cd88d33e0c8227723127e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0c81c8323db417d6e462812efe8686389139e915
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079722"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866636"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients professionnels qui disposent d' [Office 365 Advanced Threat Protection](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les pièces jointes fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les pièces jointes fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de déterminer si une pièce jointe est fiable ou malveillante en regardant un message électronique. Et la dernière chose que vous souhaitez, c’est une pièce jointe malveillante à utiliser pour votre organisation. Heureusement, [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) peut vous aider. Vous pouvez configurer des stratégies de [pièces jointes approuvées ATP](atp-safe-attachments.md) pour vous assurer que votre organisation est protégée contre les attaques par des pièces jointes non sûres. 
   
@@ -45,13 +45,13 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 
     |Role  |WHERE/How Assigned  |
     |---------|---------|
-    |Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+    |Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
     |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
-    |Gestion de l’organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+    |Gestion d’Organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
     
     Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
 
-- [En savoir plus sur les options de stratégie de pièces jointes ATP](#step-3-learn-about-atp-safe-attachments-policy-options) (dans cet article). Certaines options, telles que le moniteur ou les options de remplacement, peuvent entraîner un retard mineur du courrier électronique lors de l’analyse des pièces jointes. Pour éviter les retards de message, envisagez d’utiliser la [remise et l’aperçu dynamiques](dynamic-delivery-and-previewing.md).
+- [Découvrez les options de stratégie de pièces jointes approuvées ATP](#step-3-learn-about-atp-safe-attachments-policy-options) (dans cet article). Certaines options, telles que le moniteur ou les options de remplacement, peuvent entraîner un retard mineur du courrier électronique lors de l’analyse des pièces jointes. Pour éviter les retards de message, envisagez d’utiliser la [remise et l’aperçu dynamiques](dynamic-delivery-and-previewing.md).
     
 - Attendez jusqu’à 30 minutes que votre stratégie nouvelle ou mise à jour se propage à tous les centres de mises à jour Office 365.
     
@@ -77,7 +77,7 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
     
       - Dans la section **appliqué à** , choisissez **le domaine du destinataire**, puis sélectionnez votre domaine. Choisissez **Ajouter**, puis choisissez **OK**.
     
-6. Choisissez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
     
 Envisagez de configurer plusieurs stratégies de pièces jointes approuvées pour votre organisation. Ces stratégies seront appliquées dans l’ordre dans lequel elles apparaissent dans la page **pièces jointes approuvées ATP** . Une fois qu’une stratégie a été définie ou modifiée, laissez au moins 30 minutes que les stratégies prennent effet dans tous les centres de connaissances Microsoft. 
   

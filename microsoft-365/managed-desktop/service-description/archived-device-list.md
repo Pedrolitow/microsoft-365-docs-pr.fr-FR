@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 3372332529f9391b5cea8da4095d04178e8b731b
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 437029198d48ef8b2d9d91466108fbef989486c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813874"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859284"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés Microsoft Managed Desktop
 
@@ -34,8 +34,9 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 | Modèle  | Caractéristiques minimales  | Autres conditions requises   | Date de déclassement |
 |---------|---------|---------|---------|
 | HP EliteBook 830/840/850 G5| 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis  | **15 février 2023** |
-|Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Aucun | **20 mai 2022** |
-|Surface Pro| 256 Go/Intel i5/8 Go de RAM | Aucun | **15 juin 2022** |
+|Surface Book 2| 256 Go/Intel i5/8 Go de RAM | Néant | **16 novembre 2022** |
+|Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Néant | **20 mai 2022** |
+|Surface Pro| 256 Go/Intel i5/8 Go de RAM | Néant | **15 juin 2022** |
 
 
 En outre, l’appareil doit également :

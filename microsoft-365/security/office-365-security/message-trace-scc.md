@@ -9,16 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
-ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
+ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37993729"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871760"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Le suivi des messages dans le centre de sécurité & conformité suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
 
@@ -131,7 +131,7 @@ Les types de rapports disponibles sont les suivants :
 
 - **Résumé**: disponible si l’intervalle de temps est inférieur à 10 jours et ne requiert aucune option de filtrage supplémentaire. Les résultats sont disponibles presque immédiatement après que vous avez cliqué sur **Rechercher**.
 
-- **Résumé amélioré** ou **étendu**: ces rapports sont disponibles uniquement en tant que fichiers CSV téléchargeables et nécessitent une ou plusieurs des options de filtrage suivantes, quelle que soit la plage horaire : **par ces personnes**, **à ces personnes**, ou ** ID du message**. Vous pouvez utiliser des caractères génériques pour les expéditeurs ou les destinataires (par \*exemple, @contoso. com).
+- **Résumé amélioré** ou **étendu**: ces rapports sont disponibles uniquement sous forme de fichiers CSV téléchargeables et nécessitent une ou plusieurs des options de filtrage **suivantes, quelle**que soit la plage horaire : **par ces personnes**, ou **ID de message**. Vous pouvez utiliser des caractères génériques pour les expéditeurs ou les destinataires (par \*exemple, @contoso. com).
 
 **Remarques** :
 
@@ -139,7 +139,7 @@ Les types de rapports disponibles sont les suivants :
 
 - Bien que vous puissiez sélectionner un rapport avancé ou étendu pour n’importe quelle plage date/heure, les quatre dernières heures de données archivées ne sont pas encore disponibles pour ces deux types de rapports.
 
-Lorsque vous cliquez sur **suivant**, une page de résumé répertorie les options de filtrage que vous avez sélectionnées, un titre unique (modifiable) pour le rapport et l’adresse de messagerie qui reçoit la notification lorsque le suivi des messages est terminé (également modifiable, et doit se trouver dans l’un des domaines acceptés de votre organisation). Cliquez sur **préparer le rapport** pour envoyer le suivi des messages. Sur la page principale de **suivi des messages** , vous pouvez voir l’état du rapport dans la section **Rapports téléchargeables** .
+Lorsque vous cliquez sur **suivant**, une page de résumé répertorie les options de filtrage que vous avez sélectionnées, un titre unique (modifiable) pour le rapport et l’adresse de messagerie qui reçoit la notification lorsque le suivi des messages est terminé (également modifiable et doit se trouver dans l’un des domaines acceptés de votre organisation). Cliquez sur **préparer le rapport** pour envoyer le suivi des messages. Sur la page principale de **suivi des messages** , vous pouvez voir l’état du rapport dans la section **Rapports téléchargeables** .
 
 Pour plus d’informations sur les informations renvoyées dans les différents types de rapports, voir la section suivante.
 
@@ -247,9 +247,9 @@ Les rapports de synthèse (terminé) disponibles sont disponibles dans la sectio
 
 - **total_bytes**: taille du message en octets, pièces jointes comprises.
 
-- **message_id**: cette valeur est décrite dans la section [ID du message](#message-id) plus haut dans cette rubrique. Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: cette valeur est décrite dans la section [ID du message](#message-id) , plus haut dans cette rubrique. Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-- **network_message_id**: valeur unique d’ID de message qui persiste sur toutes les copies du message qui peuvent être créées suite à une bifurcation ou à une expansion du groupe de distribution. Par exemple, la `1341ac7b13fb42ab4d4408cf7f55890f`valeur est.
+- **network_message_id**: une valeur unique d’ID de message qui persiste sur toutes les copies du message pouvant être créées suite à une bifurcation ou à une expansion du groupe de distribution. Par exemple, la `1341ac7b13fb42ab4d4408cf7f55890f`valeur est.
 
 - **original_client_ip**: adresse IP du client de l’expéditeur.
 
@@ -263,7 +263,7 @@ Les rapports de synthèse (terminé) disponibles sont disponibles dans la sectio
 
 ### <a name="extended-reports"></a>Rapports étendus
 
-Les rapports étendus disponibles (terminés) sont disponibles dans la section **Rapports téléchargeables** au début du suivi des messages. Presque toutes les informations d’un rapport de synthèse amélioré sont disponibles dans un rapport étendu (à l’exception de **origin_timestamp** et **delivery_priority**). Les informations supplémentaires suivantes sont disponibles uniquement dans un rapport étendu :
+Les rapports étendus disponibles (terminés) sont disponibles dans la section **Rapports téléchargeables** au début du suivi des messages. Presque toutes les informations d’un rapport de synthèse amélioré sont disponibles dans un rapport étendu (à l’exception des **origin_timestamp** et des **delivery_priority**). Les informations supplémentaires suivantes sont disponibles uniquement dans un rapport étendu :
 
 - **client_IP**: adresse IP du serveur de messagerie ou du client de messagerie ayant envoyé le message.
 
@@ -287,7 +287,7 @@ Les rapports étendus disponibles (terminés) sont disponibles dans la section *
 
   - `SMTP`
 
-- **event_id**: ils correspondent aux valeurs d' **événement de message** qui sont expliquées dans la section [Rechercher des enregistrements liés pour ce message](#find-related-records-for-this-message) .
+- **event_id**: ils correspondent aux valeurs d' **événement de message** qui sont expliquées dans la section [Rechercher des enregistrements associés pour ce message](#find-related-records-for-this-message) .
 
 - **internal_message_id**: identificateur de message qui est affecté par le serveur Exchange Online qui traite actuellement le message.
 
@@ -295,21 +295,21 @@ Les rapports étendus disponibles (terminés) sont disponibles dans la section *
 
 - **recipient_count**: nombre total de destinataires dans le message.
 
-- **related_recipient_address**: utilisé avec `EXPAND`, `REDIRECT`et `RESOLVE` les événements pour afficher d’autres adresses de messagerie de destinataires associées au message.
+- **related_recipient_address**: utilisé avec `EXPAND`les `REDIRECT`événements, `RESOLVE` et pour afficher d’autres adresses de messagerie de destinataires associées au message.
 
 - **référence**: ce champ contient des informations supplémentaires pour des types d’événements spécifiques. Par exemple :
 
-  - **DSN**: contient le lien de rapport, qui est la valeur **message_id** de la notification d’état de remise associée (également appelée DSN, notification d’échec de remise, notification d’échec de remise ou message de retour) si un DSN est généré suite à cet événement. S’il s’agit d’un message DSN, ce champ contient la valeur **message_id** du message d’origine pour lequel le DSN a été généré.
+  - **DSN**: contient le lien de rapport, qui est la valeur **message_id** de la notification d’état de remise associée (également appelée DSN, notification de non-remise, notification d’échec de remise ou message de retour) si un DSN est généré suite à cet événement. S’il s’agit d’un message DSN, ce champ contient la valeur **message_id** du message d’origine pour lequel le DSN a été généré.
 
   - **Expand**: contient la valeur **related_recipient_address** des messages connexes.
 
-  - **Receive**: peut contenir la valeur **message_id** du message connexe si le message a été généré par d’autres processus (par exemple, les règles de boîte de réception).
+  - **Receive**: peut contenir la valeur **message_id** du message connexe si le message a été généré par d’autres processus (par exemple, des règles de boîte de réception).
 
   - **Send**: contient la valeur **internal_message_id** de tous les messages DSN.
 
   - **Transfer**: contient la valeur **internal_message_id** du message en cours de bifurcation (par exemple, par conversion de contenu, limites de destinataires de message ou agents).
 
-  - **MAILBOXRULE**: contient la valeur **internal_message_id** du message entrant qui a provoqué la génération du message sortant par la règle de boîte de réception.
+  - **MAILBOXRULE**: contient la valeur **internal_message_id** du message entrant à l’origine de la génération du message sortant par la règle de boîte de réception.
 
     Pour les autres types d’événements, ce champ est généralement vide.
 
@@ -317,7 +317,7 @@ Les rapports étendus disponibles (terminés) sont disponibles dans la section *
 
 - **message_info**: informations supplémentaires sur le message. Par exemple :
 
-  - Date et heure d’origine du message au format UTC `DELIVER` pour `SEND` les événements et. La date d’origine date-heure est l’heure à laquelle le message est entré pour la première fois dans l’organisation Exchange Online. L’heure UTC est représentée au format de date-heure ISO 8601 : `yyyy-mm-ddThh:mm:ss.fffZ`, où `yyyy` = année, `mm` = mois, `dd` = jour, `T` indique le début du composant d’heure, `hh` = heure, `mm` = minute, `ss` = seconde, = `fff` les fractions de seconde, et `Z` signifient `Zulu`, qui est une autre façon de désigner UTC.
+  - Date et heure d’origine du message au format UTC `DELIVER` pour `SEND` les événements et. La date d’origine date-heure est l’heure à laquelle le message est entré pour la première fois dans l’organisation Exchange Online. L’heure `yyyy-mm-ddThh:mm:ss.fffZ`UTC est représentée au format de date-heure ISO 8601 :, où `yyyy` = année, `mm` = mois, `dd` = jour, `T` indique le début du composant d’heure, `hh` = heure, `mm` = minute, `ss` = seconde, `fff` = fractions de seconde `Z` `Zulu`, ce qui est une autre façon de désigner UTC.
 
   - Erreurs d'authentification. Par exemple, vous pouvez voir la valeur `11a` et le type d’authentification utilisé lorsque l’erreur d’authentification s’est produite.
 
@@ -333,7 +333,7 @@ Le champ **custom_data** d’un `AGENTINFO` événement est utilisé par divers 
 
 #### <a name="spam-filter-agent"></a>Agent de filtrage du courrier indésirable
 
-Une valeur **custom_data** qui commence par `S:SFA` est l’agent de filtrage du courrier indésirable. Les détails clés sont décrits dans le tableau suivant :
+Une valeur de **custom_data** commençant par `S:SFA` provient de l’agent de filtrage du courrier indésirable. Les détails clés sont décrits dans le tableau suivant :
 
 |**Valeur**|**Description**|
 |:-----|:-----|
@@ -341,26 +341,26 @@ Une valeur **custom_data** qui commence par `S:SFA` est l’agent de filtrage du
 |`SFV=SPM`|Le message a été marqué comme courrier indésirable par le filtre de contenu.|
 |`SFV=BLK`|Le filtrage a été ignoré et le message a été bloqué, car il provient d'un expéditeur bloqué.|
 |`SFV=SKS`|Le message a été marqué comme courrier indésirable avant d'être traité par le filtre de contenu. Il s'agit des messages marqués automatiquement comme courrier indésirable par une règle de transport et qui n'ont donc pas fait l'objet d'un filtrage supplémentaire.|
-|`SCL=<number>`|Pour plus d'informations sur les différentes valeurs de SCL et leur signification, voir [Seuils de probabilité de courrier indésirable](https://technet.microsoft.com/library/jj200686.aspx).|
-|`PCL=<number>`|Valeur du seuil de probabilité de courrier d'hameçonnage (PCL) du message. Ces valeurs peuvent être interprétées de la même façon que les valeurs SCL répertoriées dans [Seuils de probabilité de courrier indésirable](https://technet.microsoft.com/library/jj200686.aspx).  |
+|`SCL=<number>`|Pour plus d'informations sur les différentes valeurs de SCL et leur signification, voir [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).|
+|`PCL=<number>`|Valeur du seuil de probabilité de courrier d'hameçonnage (PCL) du message. Ces valeurs peuvent être interprétées de la même façon que les valeurs SCL répertoriées dans [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).  |
 |`DI=SB`|L'expéditeur du message a été bloqué.|
 |`DI=SQ`|Le message a été mis en quarantaine.|
 |`DI=SD`|Le message a été supprimé.|
 |`DI=SJ`|Le message a été mis dans le dossier Courrier indésirable du destinataire.|
-|`DI=SN`|Le message a été routé via le pool de remises à haut risque. Pour plus d’informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants](https://technet.microsoft.com/library/jj200746.aspx).|
+|`DI=SN`|Le message a été routé via le pool de remises à haut risque. Pour plus d’informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md).|
 |`DI=SO`|Le message a été routé via le pool de remises normal pour les messages sortants.|
 |`SFS=[a]|SFS=[b]`|Cela indique que des règles anti-spam ont été associées.|
 |`IPV=CAL`|Le message n’a pas été bloqué par les filtres anti-spam car l’adresse IP se trouve dans une liste d’adresses IP autorisées du filtre des connexions.|
 |`H=<EHLOstring>`|La chaîne HELO ou EHLO du serveur de messagerie de connexion.|
 |`PTR=<ReverseDNS>`|Enregistrement PTR de l'adresse IP d'envoi, également appelé adresse DNS inverse.|
 
-Exemple de valeur **custom_data** pour un message qui est filtré pour le courrier indésirable comme suit :
+Voici un exemple **custom_data** valeur pour un message qui est filtré pour le courrier indésirable comme suit :
 
 `S:SFA=SUM|SFV=SPM|IPV=CAL|SRV=BULK|SFS=470454002|SFS=349001|SCL=9|SCORE=-1|LIST=0|DI=SN|RD=ftmail.inc.com|H=ftmail.inc.com|CIP=98.129.140.74|SFP=1501|ASF=1|CTRY=US|CLTCTRY=|LANG=en|LAT=287|LAT=260|LAT=18;`
 
 #### <a name="malware-filter-agent"></a>Agent de filtrage des programmes malveillants
 
-Une valeur **custom_data** qui commence par `S:AMA` provient de l’agent de filtrage des programmes malveillants. Les détails clés sont décrits dans le tableau suivant :
+Une valeur de **custom_data** commençant par `S:AMA` provient de l’agent de filtrage des programmes malveillants. Les détails clés sont décrits dans le tableau suivant :
 
 |**Valeur**|**Description**|
 |:-----|:-----|
@@ -377,21 +377,21 @@ Une valeur **custom_data** qui commence par `S:AMA` provient de l’agent de fil
 |`Name=<malware>`|Nom du programme malveillant détecté.|
 |`File=<filename>`|Nom du fichier qui contenait le programme malveillant.|
 
-Voici un exemple de valeur **custom_data** pour un message qui contient un programme malveillant :
+Voici un exemple **custom_data** valeur d’un message contenant un programme malveillant :
 
 `S:AMA=SUM|v=1|action=b|error=|atch=1;S:AMA=EV|engine=M|v=1|sig=1.155.974.0|name=DOS/Test_File|file=filename;S:AMA=EV|engine=A|v=1|sig=201707282038|name=Test_File|file=filename`
 
 #### <a name="transport-rule-agent"></a>Agent de règle de transport
 
-Une valeur **custom_data** qui commence par`S:TRA` provient de l’agent de règles de transport pour les règles de flux de messagerie (également appelées règles de transport). Les détails clés sont décrits dans le tableau suivant :
+Une valeur de **custom_data** commençant par`S:TRA` provient de l’agent de règles de transport pour les règles de flux de messagerie (également appelées règles de transport). Les détails clés sont décrits dans le tableau suivant :
 
 |**Valeur**|**Description**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC de la correspondance de la règle.|
-|`Action=<ActionDefinition>`|Action appliquée. Pour obtenir la liste des actions disponibles, consultez la rubrique [mail Flow Rule actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
+|`Action=<ActionDefinition>`|Action appliquée. Pour obtenir la liste des actions disponibles, consultez la rubrique [mail Flow Rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes : <br/>• **Appliquer**: toutes les actions de la règle seront appliquées. <br/>• **Test avec conseils de stratégie :**: toutes les actions de Conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas traitées. <br/>• **Test sans conseils de stratégie**: les actions seront consignées dans un fichier journal, mais les expéditeurs ne recevront aucune notification et les actions d’application ne seront pas effectuées.|
 
-Voici un exemple de valeur **custom_data** pour les messages qui correspondent aux conditions d’une règle de flux de messagerie comme suit :
+Un exemple **custom_data** valeur pour les messages qui correspondent aux conditions d’une règle de flux de messagerie se présente comme suit :
 
 `S:TRA=ETR|ruleId=19a25eb2-3e43-4896-ad9e-47b6c359779d|st=7/17/2017 12:31:25 AM|action=ApplyHtmlDisclaimer|sev=1|mode=Enforce`

@@ -14,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
-ms.openlocfilehash: cabb583aebc1baff1eb9f8286fceb2864b26deea
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f98044b65b49bd9594708ea9e6f798156037ac34
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031769"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871260"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Services pour les non clients qui envoient des messages vers Office 365
 
@@ -50,7 +50,7 @@ Microsoft propose plusieurs options de support pour les personnes ayant des diff
 
 - Contactez le client Office 365 auquel vous essayez d'envoyer un e-mail à l'aide d'une autre méthode et demandez-lui de contacter le support Microsoft et de demander un ticket d'assistance de votre part. Dans certains cas, pour des raisons juridiques, le support Microsoft doit communiquer directement avec l'expéditeur qui possède l'espace IP qui est bloqué. Toutefois, les personnes qui ne sont pas des clients ne peuvent généralement pas demander de tickets d'assistance.
 
-  Pour plus d'informations sur le support technique de Microsoft pour Office 365, voir [Prise en charge](https://technet.microsoft.com/library/office-365-support.aspx).
+  Pour plus d'informations sur le support technique de Microsoft pour Office 365, voir [Prise en charge](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
 
 ## <a name="office-365-anti-spam-ip-delist-portal"></a>Portail de suppression d'adresse IP anti-courrier indésirable de la liste d'Office 365
 

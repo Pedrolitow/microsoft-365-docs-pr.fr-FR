@@ -11,23 +11,23 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: En tant qu’administrateur Office 365, vous pouvez désactiver la possibilité pour les utilisateurs de signaler le courrier indésirable.
-ms.openlocfilehash: cec89b4298be76f1236e4e2ac7296cbe962696e3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 46ce4de8fa6ea14c81041208864957cbc73aebf5
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030688"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871280"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Désactiver la création de rapports de courrier indésirable dans Outlook sur le web
 
-Vous pouvez envoyer des messages indésirables, de hameçonnage et non de courrier indésirable à Microsoft à des fins d’analyse à l’aide des options de création de rapports de courrier indésirable Outlook sur le Web (anciennement appelé Outlook Web App), comme décrit dans le rapport de courrier [indésirable et les escroqueries par hameçonnage dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Si vous ne souhaitez pas utiliser ces options, les administrateurs peuvent les désactiver via la cmdlet [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
-  
+Vous pouvez envoyer des messages indésirables, de hameçonnage et non de courrier indésirable à Microsoft à des fins d’analyse à l’aide des options de création de rapports de courrier indésirable Outlook sur le Web (anciennement appelé Outlook Web App), comme décrit dans le rapport de courrier [indésirable et les escroqueries par hameçonnage dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Si vous ne souhaitez pas utiliser ces options, les administrateurs peuvent les désactiver via la cmdlet [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy) .
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
 - Durée d’exécution estimée : 5 minutes
-    
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez entrée « stratégies de boîte aux lettres Outlook sur le Web » dans la rubrique [autorisations Outlook sur le Web](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
+
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée « stratégies de boîte aux lettres Outlook sur le Web » dans [autorisations Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions#exchange-online-permissions).
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
@@ -35,26 +35,26 @@ Vous pouvez envoyer des messages indésirables, de hameçonnage et non de courri
 <a name="sectionSection1"> </a>
 
 Tout d’abord, exécutez la commande suivante pour obtenir les noms de vos stratégies de boîte aux lettres Outlook sur le Web disponibles :
-  
+
 ```
 Get-OwaMailboxPolicy | Format-Table Name
 ```
 
 Ensuite, utilisez la syntaxe suivante pour activer ou désactiver le signalement de courrier indésirable à Microsoft dans Outlook sur le Web :
-  
+
 ```
 Set-OwaMailboxPolicy -Identity "<OWAMailboxPolicyName>" -ReportJunkEmailEnabled <$true | $false>
 ```
 
 Cet exemple montre comment désactiver la création de rapports dans la stratégie de boîte aux lettres Outlook Web App par défaut :
-  
+
 ```
 Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-OwaMailboxPolicy](https://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx) et [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy) et [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy).
 
 ## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 <a name="sectionSection2"> </a>
 
-Exécutez **Get-OwaMailboxPolicy** pour vérifier les valeurs des paramètres, puis ouvrez Outlook sur le Web pour un utilisateur affecté (auquel la stratégie de boîte aux lettres Outlook sur le Web est appliquée) et vérifiez que les options de signalement de courrier indésirable, de hameçonnage et non de courrier indésirable ne sont pas disponibles. Vous serez toujours en mesure de marquer les messages comme courriers indésirables, de hameçonnage et non comme courriers indésirables, mais vous ne pourrez pas les signaler. 
+Exécutez **Get-OwaMailboxPolicy** pour vérifier les valeurs des paramètres, puis ouvrez Outlook sur le Web pour un utilisateur affecté (auquel la stratégie de boîte aux lettres Outlook sur le Web est appliquée) et vérifiez que les options de signalement de courrier indésirable, de hameçonnage et non de courrier indésirable ne sont pas disponibles. Vous serez toujours en mesure de marquer les messages comme courriers indésirables, de hameçonnage et non comme courriers indésirables, mais vous ne pourrez pas les signaler.

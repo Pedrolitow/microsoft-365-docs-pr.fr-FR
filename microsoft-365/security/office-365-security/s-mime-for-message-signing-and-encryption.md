@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Les administrateurs peuvent en savoir plus sur l’utilisation de S/MIME dans Exchange Online.
-ms.openlocfilehash: 64a76d1e9eebea86e548a06bf05d0030b0396d3d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 87f7438b8297b0c7d6d7674cd2c02db6be14bb28
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032149"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872050"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME pour la signature et le chiffrement des messages dans Exchange Online
 
@@ -37,7 +37,7 @@ Vous pouvez configurer la norme S/MIME afin qu'elle fonctionne avec n'importe le
 
 Les étapes à suivre pour configurer S/MIME avec chacun de ces points de terminaison sont légèrement différentes. En règle générale, vous devez effectuer les étapes suivantes :
 
-- Installer une autorité de certification reposant sur Windows et configurer une infrastructure à clé publique pour émettre des certificats S/MIME. Les certificats délivrés par des fournisseurs de certificats tiers sont également pris en charge. Pour plus de détails, reportez-vous à [Vue d'ensemble des services de certificats Active Directory](https://technet.microsoft.com/library/hh831740.aspx).
+- Installer une autorité de certification reposant sur Windows et configurer une infrastructure à clé publique pour émettre des certificats S/MIME. Les certificats délivrés par des fournisseurs de certificats tiers sont également pris en charge. Pour plus de détails, reportez-vous à [Vue d'ensemble des services de certificats Active Directory](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
 
 - Publiez le certificat utilisateur dans un compte AD DS sur site dans les attributs **UserSMIMECertificate** et/ou **UserCertificate** .
 
@@ -76,6 +76,6 @@ S/MIME requiert un certificat et une infrastructure de publication qui est souve
 
 ## <a name="more-information"></a>Plus d’informations
 
-[Outlook sur le web](https://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
+[Outlook sur le web](https://docs.microsoft.com/exchange/exchange-admin-center)
 
-[Messagerie sécurisée (2000)](https://technet.microsoft.com/library/cc962043.aspx)
+[Messagerie sécurisée (2000)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc962043(v=technet.10))

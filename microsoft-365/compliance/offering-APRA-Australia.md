@@ -1,7 +1,7 @@
 ---
 title: Autorité de régulation prudentielle australienne (APRA)
 description: Conseils Microsoft pour aider les clients des services financiers à respecter les normes d’externalisation de l’autorité de régulation prudentielle australienne.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: dbbe64b20578860d3635876ec9fb1bd3c523c9b1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 8d6314b7a2adf3f677c8343ddece9cb27bff073e
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690339"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859244"
 ---
-# <a name="compliance-offering-australian-prudential-regulation-authority-apra"></a>Offre de conformité : autorité de régulation prudentielle australienne (APRA)
+# <a name="australian-prudential-regulation-authority-apra"></a>Autorité de régulation prudentielle australienne (APRA)
 
 ## <a name="apra-overview"></a>Vue d’ensemble de APRA
 
@@ -48,13 +48,13 @@ En s’appuyant sur notre approche complète de la garantie des risques dans le 
 
 Bénéficiez d’un support pratique pour le transfert de données et de charges de travail vers Azure conformément à la réglementation APRA : [Télécharger une liste de vérification de conformité pour les établissements financiers en Australie](https://aka.ms/microsoftaprachecklistjun17)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Les institutions financières ont-elles besoin d’une approbation APRA avant d’externaliser les activités de gestion des matières ?**
 
@@ -74,11 +74,11 @@ Oui. La législation générale sur la confidentialité (qui s’applique à tou
 - [Réponse de Microsoft au papier d’informations APRA sur le Cloud](https://aka.ms/navigatecloudaustralia)
 - [Navigation dans le Cloud : liste de vérification de la conformité pour les institutions financières en Australie](https://aka.ms/microsoftaprachecklistjun17)
 - [Microsoft Australie : Cloud dans les services financiers](https://www.microsoft.com/en-sg/apac/trustedcloud/australia-financial-service.aspx)
-- [Programme de conformité des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Services Cloud d’entreprise Microsoft et services financiers](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Services Enterprise Cloud et financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf).
