@@ -1,7 +1,7 @@
 ---
 title: ISO/CEI 27701 Système de gestion de l'information sur la protection de la vie privée (SGIP)
 description: La norme ISO/IEC 27701 pour la prise en charge de la confidentialité et de la conformité réglementaire des contrôleurs et des processeurs au sein de la chaîne logistique globale de traitement des données.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8deb153fa7dd22c7a4346cf8098e1b184d76e4b7
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 69d105e41050c7c9d1b9fbcf37e891e430a79ef1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233477"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859374"
 ---
-# <a name="compliance-offering-isoiec-27701-privacy-information-management-system-pims"></a>Offre de conformité : ISO/CEI 27701 Système de gestion de l'information sur la protection de la vie privée (SGIP)
+# <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/CEI 27701 Système de gestion de l'information sur la protection de la vie privée (SGIP)
 
 ## <a name="privacy-information-management-system-pims-overview"></a>Vue d’ensemble système de gestion de l'information sur la protection de la vie privée (SGIP)
 

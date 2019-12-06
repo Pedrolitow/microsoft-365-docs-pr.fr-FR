@@ -1,7 +1,7 @@
 ---
 title: Le Bureau du surintendant des institutions financières (BSIF) Canada
 description: Recommandations Microsoft pour aider les institutions financières au Canada avec l’adoption de Cloud.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,20 +11,20 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d91663a2217f3ff1f1753f9f94a44de9c1536d8c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 9ca6323d5c5ffd019c7d79f283b98cb25816cf62
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39233717"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859524"
 ---
-# <a name="compliance-offering-office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Offre de conformité : Bureau du surintendant des institutions financières (BSIF) Canada
+# <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Le Bureau du surintendant des institutions financières (BSIF) Canada
 
 ## <a name="about-the-osfi"></a>À propos du BSIF
 
-Le [Bureau de la Surintendant des institutions financières](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (BSIF) est une agence indépendante du gouvernement du Canada responsable de la réglementation et de la surveillance prudentielles des institutions financières et des régimes de retraite sous réglementation fédérale au Canada.
+Le [Bureau de la Surintendant des institutions financières](http://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (BSIF) est une agence indépendante du gouvernement du Canada responsable de la réglementation et de la surveillance prudentielles des institutions financières et des régimes de retraite sous réglementation fédérale au Canada.
 
-Dans son rôle de supervision, le BSIF a publié les instructions B-10 pour [l’externalisation des activités, fonctions et processus de productivité](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). Ils ont mis en place des « pratiques recommandées, procédures ou normes » pour les instructions financières réglementées pour évaluer et gérer les risques associés à l’externalisation de leurs productivité auprès d’un fournisseur de services. Une note de service subséquente du BSIF, [Nouvelles exigences en matière d’externalisation basée sur la technologie](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), rappelé à ces institutions que les directives B-10 restent à jour et qu'elles doivent répondre aux attentes du BSIF en matière d'ententes d'externalisation importantes.
+Dans son rôle de supervision, le BSIF a publié les instructions B-10 pour [l’externalisation des activités, fonctions et processus de productivité](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). Ils ont mis en place des « pratiques recommandées, procédures ou normes » pour les instructions financières réglementées pour évaluer et gérer les risques associés à l’externalisation de leurs productivité auprès d’un fournisseur de services. Une note de service subséquente du BSIF, [Nouvelles exigences en matière d’externalisation basée sur la technologie](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), rappelé à ces institutions que les directives B-10 restent à jour et qu'elles doivent répondre aux attentes du BSIF en matière d'ententes d'externalisation importantes.
 
 De plus, l'utilisation des services dans Cloud par les institutions financières doit se conformer à la [Loi sur la protection des renseignements personnels et les documents électroniques](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (LPRPDE) et, dans certains cas, aux lois provinciales en matière de confidentialité des données.
 
@@ -32,7 +32,7 @@ De plus, l'utilisation des services dans Cloud par les institutions financières
 
 Pour guider les institutions financières au Canada qui envisagent d'externaliser des fonctions professionnelles dans le Cloud, Microsoft a publié un guide intitulé [Naviguer vers le Cloud : liste de contrôle de la conformité pour les institutions financières au Canada](https://aka.ms/Azure-Canada-Compliance). En examinant et en complétant la liste de contrôle, les organisations financières peuvent adopter les services Cloud Microsoft Business avec l'assurance qu'elles se conforment aux exigences réglementaires applicables.
 
-Lorsque les institutions financières canadiennes délèguent à l'externe des activités commerciales, elles doivent se conformer aux instructions B-10 sur [l'externalisation des activités, fonctions et processus commerciaux](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) publiées par le Bureau du surintendant des institutions financières (BSIF), ainsi qu'aux lois canadiennes en matière de confidentialité, dont la [Loi sur la protection des renseignements personnels et les documents électroniques](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (LPRPDE).
+Lorsque les institutions financières canadiennes délèguent à l'externe des activités commerciales, elles doivent se conformer aux instructions B-10 sur [l'externalisation des activités, fonctions et processus commerciaux](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) publiées par le Bureau du surintendant des institutions financières (BSIF), ainsi qu'aux lois canadiennes en matière de confidentialité, dont la [Loi sur la protection des renseignements personnels et les documents électroniques](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (LPRPDE).
 
 La liste de contrôle Microsoft permet aux entreprises financières canadiennes d’effectuer des évaluations de la diligence raisonnable des services cloud entreprises Microsoft et inclut :
 
@@ -58,7 +58,7 @@ La liste de contrôle Microsoft permet aux entreprises financières canadiennes 
 
 Non. Il n’est pas nécessaire de disposer d’une notification, d’une consultation ou d’une approbation préalables. L’utilisation de l’informatique publique en cloud est autorisée, sujet toujours à respecter les exigences de BSIF.
 
-Les [instructions B-10 BSIF](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) indiquent que le BSIF s’attend à ce qu’une institution financière conçoive un programme de gestion des risques qui s’applique à l’ensemble de ses arrangements d’externalisation, avec une atténuation des risques proportionnelle aux risques associés. Toutefois, seules les dispositions relatives à l’externalisation des matières doivent être étayées par un contrat écrit qui répond aux critères de sécurité identifiés dans les instructions. La partie 2 de la [liste de contrôle](https://aka.ms/Azure-Canada-Compliance) Microsoft (page 53) mappe celle-ci aux sections des documents contractuels Microsoft où elles sont traitées.
+Les [instructions B-10 BSIF](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) indiquent que le BSIF s’attend à ce qu’une institution financière conçoive un programme de gestion des risques qui s’applique à l’ensemble de ses arrangements d’externalisation, avec une atténuation des risques proportionnelle aux risques associés. Toutefois, seules les dispositions relatives à l’externalisation des matières doivent être étayées par un contrat écrit qui répond aux critères de sécurité identifiés dans les instructions. La partie 2 de la [liste de contrôle](https://aka.ms/Azure-Canada-Compliance) Microsoft (page 53) mappe celle-ci aux sections des documents contractuels Microsoft où elles sont traitées.
 
 **Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services Cloud ?**
 

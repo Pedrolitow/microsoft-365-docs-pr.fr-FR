@@ -1,7 +1,7 @@
 ---
 title: Infrastructures de bouclier de protection des données UE-EU et Suisse-EU
 description: Microsoft est certifié pour les infrastructures de bouclier de protection des données UE-EU et Suisse-EU et pour les engagements qu’elles entrainent.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6009eb0300515e14444d8389df77c8705cb95a22
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 6e9aea06e6479a0aa4ec83d35d1fc8c7704e8b0f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622455"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859904"
 ---
-# <a name="compliance-offering-eu-us-and-swiss-us-privacy-shield-frameworks"></a>Offre de conformité : infrastructures de bouclier de protection des données UE-EU et Suisse-EU
+# <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>Infrastructures de bouclier de protection des données UE-EU et Suisse-EU
 
 ## <a name="about-the-eu-us-and-swiss-us-privacy-shield-frameworks"></a>A propos des infrastructures de bouclier de protection des données UE-EU et Suisse-EU
 

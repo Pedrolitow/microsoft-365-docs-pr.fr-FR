@@ -1,7 +1,7 @@
 ---
 title: Motion Picture Association of America (MPAA)
 description: Azure a réussi une évaluation formelle par la Motion Picture Association of America.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f564e61c7549a7566a72ce02ddf7d291d6cfc7d1
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 8877155507bb99a187ca65044d6620c7eaeb2dd8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233437"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859594"
 ---
-# <a name="compliance-offering-motion-picture-association-of-america-mpaa"></a>Offre de conformité : Motion Picture Association of America (MPAA)
+# <a name="motion-picture-association-of-america-mpaa"></a>Motion Picture Association of America (MPAA)
 
 ## <a name="mpaa-overview"></a>Présentation de la MPAA
 

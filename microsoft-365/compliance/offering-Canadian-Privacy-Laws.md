@@ -1,7 +1,7 @@
 ---
 title: Lois canadiennes sur la protection de la vie privée
 description: Azure et Intune peuvent aider les clients à respecter les obligations qui leur incombent dans le cadre de la législation canadienne sur la protection de la vie privée.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6663c737148a20c44e0fa94733dad2b47631722c
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 22703f7c9589a246464b16a3088036a858f59475
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622452"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859994"
 ---
-# <a name="compliance-offering-canadian-privacy-laws"></a>Offre de conformité : lois canadiennes sur la protection de la vie privée
+# <a name="canadian-privacy-laws"></a>Lois canadiennes sur la protection de la vie privée
 
 ## <a name="about-canadian-privacy-laws"></a>A propos des lois canadiennes sur la protection de la vie privée
 

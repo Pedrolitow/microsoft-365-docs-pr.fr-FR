@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d419d974b0d0b15bf6dbcd60531f7c4bcc6cb780
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: c3318be31335c9c9250b056e5972bb1c50ffbcbd
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622461"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860004"
 ---
-# <a name="compliance-offering-cloud-security-alliance-csa-star-certification"></a>Offre de conformité : Certification Cloud Security Alliance (CSA) STAR
+# <a name="cloud-security-alliance-csa-star-certification"></a>Certification Cloud Security Alliance (CSA) STAR
 
 ## <a name="csa-star-certification-overview"></a>Présentation de la certification CSA STAR
 

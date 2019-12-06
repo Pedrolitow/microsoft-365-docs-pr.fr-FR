@@ -1,7 +1,7 @@
 ---
 title: Règlement général sur la protection des données (RGPD)
 description: Lisez Protection des droits individuels à la vie privée des personnes avec Microsoft Cloud pour en savoir plus sur les thèmes essentiels du Règlement général sur la protection des données (RGPD), ainsi que sur la manière dont Microsoft 365 et le Microsoft Cloud aident votre organisation à rester en conformité.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ab50ba0a901672b2bd6f21f95f04612bba3f8cfd
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233537"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859774"
 ---
-# <a name="compliance-offering-general-data-protection-regulation-gdpr"></a>Offre de conformité : Règlement Général sur la Protection des Données (RGPD)
+# <a name="general-data-protection-regulation-gdpr"></a>Règlement général sur la protection des données (RGPD)
 
 ## <a name="learn-about-gdpr-compliance-best-practices"></a>Découvrez les meilleures pratiques de mise en conformité avec le RGPD
 

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: bab0c06ec3a626598ff8a2d731b522fa3e8781b2
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 8a89153d1105f407d9fb88ad326d3b37b98ec229
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39625202"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859624"
 ---
-# <a name="compliance-offering-spanish-royal-decree-17202007-spanish-organic-law-151999"></a>Offre de conformité : Microsoft et le Décret Royal espagnol 1720/2007, Loi organique espagnole 15/1999
+# <a name="spanish-royal-decree-17202007-spanish-organic-law-151999"></a>Décret Royal espagnol 1720/2007, Loi organique espagnole 15/1999
 
 ## <a name="spanish-royal-decree-17202007-spanish-organic-law-151999-overview"></a>Présentation du Décret Royal espagnol 1720/2007, Loi organique espagnole 15/1999
 

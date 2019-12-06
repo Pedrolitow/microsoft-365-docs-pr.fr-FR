@@ -20,7 +20,7 @@ Utilisez un outil ou site web sur un appareil dans ce bureau pour déterminer l�
 Si nécessaire, l’[Étape 2](../networking-dns-resolution-same-location.md) peut vous aider à répondre à cette exigence.
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneccessary-network-hairpins-are-removed"></a>Facultatif : les épingles de réseau superflues sont supprimées
+### <a name="optional-unnecessary-network-hairpins-are-removed"></a>Facultatif : les épingles de réseau superflues sont supprimées
 
 Vous avez examiné vos épingles de réseau et avez identifié leur impact sur les performances pour tous vos bureaux. Vous avez supprimé les épingles de réseau lorsque cela était possible ou avez travaillé avec votre fournisseur de réseau ou de sécurité tiers pour implémenter une homologation Microsoft 365 optimale pour leur réseau.
 
