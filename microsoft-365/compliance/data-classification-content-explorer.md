@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 6f062901acbf149f6fc56c266d10b370ed0c1112
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 9e9ad76d2bdd7f74368121346f7e04d1208803ff
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "39268496"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818856"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Utilisation de l’Explorateur de contenu de la classification des données (préversion)
 
@@ -27,7 +27,19 @@ L’Explorateur de contenu de la classification des données vous permet d’aff
 
 ## <a name="content-explorer"></a>Explorateur de contenu
 
-L’Explorateur de contenu est un instantané actuel des éléments qui ont une étiquette de confidentialité, une étiquette de rétention ou ont été classés comme un type d’informations sensibles au sein de votre organisation.
+L’Explorateur de contenu présente un instantané actuel des éléments qui ont une étiquette de confidentialité, une étiquette de rétention ou ont été classés comme un type d’informations sensibles au sein de votre organisation.
+
+### <a name="sensitive-information-types"></a>Types d’informations sensibles
+
+Une [stratégie DLP](data-loss-prevention-policies.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions de pour de nombreux types d’informations sensibles courants](what-the-sensitive-information-types-look-for.md) dans de nombreuses régions différentes, prêtes à l’emploi. Par exemple, un numéro de carte bancaire, des numéros de compte bancaire, des numéros d’identification nationaux et des numéros de service Windows Live ID.
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+Une [étiquette de confidentialité](sensitivity-labels.md) est tout simplement une balise qui indique la valeur de l’élément pour votre organisation. Elle peut être appliquée manuellement ou automatiquement. Une appliquée, elle est incorporée au document et elle le suit où qu’il aille. L’étiquette de confidentialité permet d’appliquer différents comportements de protection, tels que le filigrane ou le chiffrement obligatoires. Lorsque la protection de point de terminaison est activée, vous pouvez même empêcher un élément de quitter votre contrôle organisationnel.
+
+### <a name="retention-labels"></a>Étiquettes de rétention
+
+Les [étiquettes de rétention](labels.md) vous permettent de définir la durée de conservation d’un élément étiqueté et les étapes à suivre avant de le supprimer. Elles peuvent être appliquées manuellement ou automatiquement. Elles peuvent jouer un rôle en aidant votre organisation à respecter les exigences légales et réglementaires.
 
 ![capture d’écran réduite de l’Explorateur de contenu](media/data-classification-content-explorer-1.png)
 
@@ -55,3 +67,4 @@ Le compte que vous utilisez pour accéder à l’Explorateur de contenu doit se 
 - [Étiquettes de rétention](labels.md)
 - [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
 - [Vue d’ensemble des stratégies de rétention](retention-policies.md)
+- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
