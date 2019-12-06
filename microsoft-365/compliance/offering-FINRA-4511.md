@@ -1,7 +1,7 @@
 ---
 title: Règle de l’autorité réglementaire du secteur financier (FINRA) 4511 (c) États-Unis
 description: Une entreprise d’évaluation indépendante a validé que Azure et Office 365 peuvent aider les entreprises financières à respecter la règle FINRA 4511 enregistrer les besoins en matière de conservation et de stockage non modifiable.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 80114436580e388afce0508f69dc892c0eaaf435
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: af2e282ac992dbf6935e9a2c1a9c7144d26aad39
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690344"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859834"
 ---
-# <a name="compliance-offering-financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Offre de conformité : règle 4511 (c) pour les États-Unis
+# <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Règle de l’autorité réglementaire du secteur financier (FINRA) 4511 (c) États-Unis
 
 ## <a name="about-finra-rule-4511"></a>À propos de la règle FINRA 4511
 
@@ -48,7 +48,7 @@ Pour évaluer la conformité d’Office 365 avec la règle FINRA 4511 (c), Micro
 
 L’archivage dans Office 365 permet de conserver un large éventail de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pendant une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
@@ -63,24 +63,24 @@ L’archivage dans Office 365 permet de conserver un large éventail de données
 
 [Archivage dans Office 365, rétention des données et conformité de la règle SEC 17A -4](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - **Réglementation des services financiers**: plan de conformité des principes de réglementation des clés américaines pour le Cloud Computing et Microsoft Online Services. [En savoir plus](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **Évaluation des risques & Guide de conformité**: créez un modèle de gouvernance pour l’évaluation des risques des services de Cloud Computing Microsoft et notification de régulateur. [En savoir plus](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **Cas d’utilisation financière**: utilisation d’une vue d’ensemble de cas, de didacticiels et d’autres ressources pour créer des solutions Azure pour les services financiers.
+- **Guide d'évaluation des risques et de conformité**: créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation. [En savoir plus](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **Cas d'utilisation financière** : utilisez des aperçus de cas, des didacticiels et d'autres ressources pour créer des solutions Azure pour services financiers.
 
 [En savoir plus](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>Ressources
 
-- [Programme de conformité des services financiers Microsoft](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
-- [Services Cloud d’entreprise Microsoft et services financiers](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
+- [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
+- [Services commerciaux cloud computing et services financiers Microsoft](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Outil d’évaluation des risques de Cloud Financial services Azure](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Outil d’évaluation des risques dans le Cloud Azure Financial Services](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Stratégies de rétention de Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [Blog des services financiers Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Blog Microsoft Financial Services](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf).

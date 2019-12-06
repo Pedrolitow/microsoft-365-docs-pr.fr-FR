@@ -1,7 +1,7 @@
 ---
 title: Réglementation de l’administration des exportations américaines (EAR)
 description: Les services de Cloud Computing Microsoft aident les clients soumis aux réglementations de l’administration des exportations américaines à respecter les exigences de conformité et à gérer le risque de contrôle d’exportation.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 283b6a45807547f9a8d0521cf2c6793a2a15c4d6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b0bb12a4c7f7120d1a607de53ec97d7e8ce915e8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690389"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859394"
 ---
-# <a name="compliance-offering-us-export-administration-regulations-ear"></a>Offre de conformité : réglementations de l’administration des exportations américaines (EAR)
+# <a name="us-export-administration-regulations-ear"></a>Réglementation de l’administration des exportations américaines (EAR)
 
 ## <a name="about-the-ear"></a>À propos de l’oreille
 
@@ -46,20 +46,20 @@ Le service de commerce américain, qui applique les EAR, a pris la position que 
 - **Chiffrement de bout en bout**. En tirant parti de la sphère de sécurité de bout en bout pour les emplacements de stockage physique spécifiés dans l’oreille, les services Cloud de Microsoft à l’échelle de l’étendue offrent des fonctionnalités de chiffrement qui peuvent vous aider à vous protéger contre les risques liés au contrôle d’exportation. Ils offrent également aux clients un [large éventail d’options pour le chiffrement des données](https://aka.ms/Azure-Encryption-Overview) en transit et au repos, ainsi que la flexibilité nécessaire pour choisir les options de chiffrement.
 - **Les outils et les protocoles pour empêcher l’exportation non autorisée**. L’utilisation du chiffrement contribue également à assurer une protection contre une exportation potentielle (ou une réexportation réputée) sous l’oreille, car même si une personne non-américaine a accès aux données chiffrées, rien n’est révélé s’il ne peut pas lire ou comprendre les données pendant qu’il est chiffré ; par conséquent, il n’y a pas de « libération » de données contrôlées.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
-- [Azure et gouvernement Azure](https://aka.ms/AzureCompliance)
+- [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 gouvernement (GCC-High et DoD)](https://aka.ms/Office-365-Export-Controls)
 - Intune
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 Vue d’ensemble des États-Unis exporter des contrôles et des conseils pour les clients qui évaluent leurs obligations en vertu des EAR.
 
 - [Azure](https://aka.ms/Azure-Export-Controls)
 - [Office 365](https://aka.ms/Office-365-Export-Controls)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Que dois-je faire pour se conformer aux contrôles d’exportation lors de l’utilisation des services de Cloud Computing Microsoft ?**
 
@@ -88,4 +88,4 @@ Les États-Unis ont également des réglementations de contrôle d’exportation
 - [Exporter des restrictions sur le chiffrement](https://docs.microsoft.com/windows/uwp/security/export-restrictions-on-cryptography)
 - [Microsoft et FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft et ITAR](offering-itar.md)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

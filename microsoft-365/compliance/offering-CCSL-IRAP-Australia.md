@@ -1,7 +1,7 @@
 ---
 title: Liste des services Cloud australiens certifiés pour le gouvernement (CCSL)
 description: Microsoft est inclus dans la liste des services Cloud certifiés australiens pour les marqueurs de limitation de la diffusion non classifiée (DLM) et les données protégées basées sur une évaluation et une certification IRAP par le centre de sécurité australien (ACSC).
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,80 +11,82 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: e200d2a496f8bbec78026814499e9f10bb96dee4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 0b4c31408f14bfca45358086678cb2d4e4f7eaae
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690369"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860084"
 ---
-# <a name="compliance-offering-australian-government-certified-cloud-services-list-ccsl"></a>Offre de conformité : liste des services Cloud australiens certifiés pour le gouvernement (CCSL)
+# <a name="australian-government-information-security-registered-assessor-program-irap"></a>Programme d’évaluation de la sécurité des informations pour le gouvernement australien (IRAP)
 
-## <a name="ccsl-overview"></a>Vue d’ensemble de CCSL
+Le programme IRAP (Information Security Registered Assessment Program) fournit un processus complet pour l’évaluation indépendante de la sécurité d’un système par rapport aux stratégies et directives australiennes. L’objectif du IRAP est d’optimiser la sécurité des données du gouvernement australien, de l’État et du gouvernement local en se concentrant sur l’infrastructure des technologies de l’information et des communications qui stocke, traite et communique.
 
-La liste des services Cloud certifiés (CCSL) identifie les services Cloud qui ont réussi une évaluation IRAP par le gouvernement australien, et ont reçu une certification par le centre de sécurité australien (ACSC). La certification reconnaît la réussite, l’examen et l’acceptation d’une évaluation complète effectuée par un évaluateur inscrit à la sécurité des informations, afin que toutes les agences gouvernementales australiennes puissent l’utiliser. Le CCSL peut également être référencé par les organisations gouvernementales de Nouvelle-Zélande, car le ISM et l’Australian ISM sont alignés.
+## <a name="irap-overview"></a>Vue d’ensemble de IRAP
 
-Le programme des évaluateurs inscrits sur la sécurité des informations (IRAP) est régi et administré par le ACSC. IRAP fournit un processus complet pour l’évaluation indépendante de la sécurité d’un système par rapport aux stratégies et directives australiennes. L’objectif du IRAP est d’optimiser la sécurité des données du gouvernement australien, de l’État et du gouvernement local en se concentrant sur l’infrastructure des technologies de l’information et des communications qui stocke, traite et communique.
-
-## <a name="microsoft-and-ccsl"></a>Microsoft et CCSL
-
-Microsoft Azure, Dynamics 365 CRM et Office 365 ont été soumis aux évaluations du programme IRAP (Information Security Registered Assessment Program) et sont certifiés sur le CCSL par le centre de sécurité australien (ACSC). Les services Azure et Office 365 ont été certifiés pour les marques de limitation de la diffusion (DLM) et les données protégées. Dynamics 365 CRM a été certifié pour les données DLM uniquement.
-
-Pour chaque évaluation, Microsoft a engagé un évaluateur IRAP agréé par ACSC qui a examiné les contrôles de sécurité et les processus utilisés par l’équipe informatique de Microsoft, les centres de calcul physiques, la détection d’intrusion, la cryptographie, l’interdomaine et la sécurité réseau. contrôle d’accès et gestion des risques de sécurité des informations des services dans l’étendue. Les évaluations IRAP ont révélé que l’architecture système Microsoft est basée sur des principes de sécurité saine et que les contrôles du manuel de sécurité des informations applicables sont en place et pleinement efficaces au sein de nos services évalués.
+Le programme des évaluateurs inscrits sur la sécurité des informations (IRAP) est régi et administré par le ACSC. IRAP fournit l’infrastructure pour approuver les individus des secteurs public et privé afin de fournir des services d’évaluation de la sécurité informatique au gouvernement australien. Les évaluateurs IRAP approuvés peuvent fournir une évaluation indépendante de la sécurité des TIC, suggérer des atténuations et mettre en évidence les risques résiduels. IRAP fournit un processus complet pour l’évaluation indépendante de la sécurité d’un système par rapport aux stratégies et directives australiennes. L’objectif du IRAP est d’optimiser la sécurité des données du gouvernement australien, de l’État et du gouvernement local en se concentrant sur l’infrastructure des technologies de l’information et des communications qui stocke, traite et communique.
 
 - Dans 2014, Azure a été lancé en tant que premier service Cloud IRAP évalué en Australie, hébergé à partir de centres de calcul dans Melbourne et Sydney. Ces deux centres de données permettent aux clients australiens de contrôler l’emplacement de stockage de leurs données client, tout en fournissant également une durabilité accrue des données en cas de catastrophe via les sauvegardes aux deux emplacements.
 - Au début 2015, Office 365 est devenu le premier service de productivité sur le Cloud à effectuer cette évaluation.
-- En avril 2015, le ASD a annoncé la certification CCSL d’Azure et d’Office 365, et en novembre 2015, de Dynamics 365
+- En avril 2015, le ASD a annoncé la certification CCSL pour Azure et Office 365, et en novembre 2015, de Dynamics 365.
 - En juin 2017, ASD a annoncé la recertification de Microsoft Azure et Office 365 pour un ensemble de services largement étendu.
 - En avril 2018, le ACSC a annoncé la certification d’Azure et d’Office 365 au niveau de la classification protégée. Microsoft est le premier et seul fournisseur de cloud public à atteindre ce niveau de certification.
+- En septembre 2019, l’étendue d’évaluation IRAP mise à jour de Microsoft a été étendue pour inclure des services 113 à la classification protégée.
 
-La certification des services de Microsoft aide les clients du secteur public au sein du gouvernement et de leurs partenaires que Microsoft dispose de contrôles de sécurité appropriés et efficaces en place pour le traitement, le stockage et la transmission de DLM et Informations classifiées protégées. Cela inclut la plupart des données de gouvernement, de santé et d’éducation en Australie.
+## <a name="ccsl-overview"></a>Vue d’ensemble de CCSL
 
-Découvrez les [avantages de CCSL sur le Cloud de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2086844).
+La liste des services Cloud certifiés (CCSL) identifie les services Cloud qui ont réussi une évaluation IRAP par le gouvernement australien, et ont reçu une certification par le centre de sécurité australien (ACSC). La certification reconnaît la réussite, l’examen et l’acceptation d’une évaluation complète effectuée par un évaluateur inscrit à la sécurité des informations, afin que toutes les agences gouvernementales australiennes puissent l’utiliser. Le CCSL peut également être référencé par les organisations gouvernementales de Nouvelle-Zélande dans l’évaluation des risques en tant que NZ et le gouvernement australien.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+Microsoft Azure, Dynamics 365 CRM et Office 365 continuent d’être inclus dans le CCSL pour les deux indicateurs de limitation de la diffusion (DLM) (désormais officiels : sensibles) et des données protégées basées sur l’évaluation et la certification IRAP, par le Australian Cyber Security Centre (ACSC).
 
-- [Azure](https://aka.ms/AzureCompliance)
-- [Dynamics 365](https://aka.ms/d365-compliance-list)
-- [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+## <a name="microsoft-and-irap"></a>Microsoft et IRAP
 
-Service Cloud Power BI et Azure information protection en tant que service autonome ou inclus dans un plan ou une suite Office 365
+En septembre 2019, Microsoft a effectué la mise à jour annuelle des évaluations de sécurité IRAP d’Azure, Office 365 et Dynamics 365 engagement client. Pour 2019, l’étendue de l’évaluation Azure comprend à la fois l’engagement client Dynamics 365 et Azure DevOps.
 
-## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
+L’évaluation des services de Microsoft en Australie couvre les quatre régions Azure disponibles. Pour une infrastructure gouvernementale et une infrastructure stratégique, nous avons déployé deux régions spécialement conçues pour répondre à vos besoins, qui sont fournis par des centres de données de CDC à Canberra. [Australie Centre et Australie central 2](https://azure.microsoft.com/global-infrastructure/australia/). Les différences entre les régions australiennes sont décrites en détail dans le rapport d’évaluation d’Azure IRAP, qui est disponible sur la page spécifique à l’Australie du [portail d’approbation de service Microsoft](https://aka.ms/au-irap).
 
-Les services certifiés par ASD et inclus sur le CCSL doivent être régulièrement récertifiés afin de garantir la conformité et de tenir compte des modifications apportées aux services au fil du temps :
+Pour chaque évaluation, Microsoft a engagé un évaluateur IRAP agréé par ACSC qui a examiné les contrôles de sécurité et les processus utilisés par l’équipe informatique de Microsoft, les centres de calcul physiques, la détection d’intrusion, la cryptographie, l’interdomaine et la sécurité réseau. contrôle d’accès et gestion des risques de sécurité des informations des services dans l’étendue. Les évaluations IRAP ont révélé que l’architecture système Microsoft est basée sur des principes de sécurité saine et que les contrôles de la sécurité des informations pour le gouvernement australien applicables sont en place et pleinement efficaces au sein de nos services évalués.
 
-- Les services certifiés DLM doivent être recertifiés tous les 24 mois après la date d’effet de la certification ; les
-- Les services certifiés protégés doivent être recertifiés tous les ans au plus tard le 1er septembre.
+L’infrastructure de gestion des risques utilisée par ISM est basée sur la [publication spéciale de l’Institut NIST (National Institute of Standards and Technology) 800-37 Rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), « infrastructure de gestion des risques pour les systèmes d’informations et les organisations : approche de cycle de vie du système pour la sécurité et la confidentialité ». Dans cette infrastructure de gestion des risques, l’identification des risques et la sélection des contrôles de sécurité peuvent être menées à l’aide de différentes normes de gestion des risques, telles que l' [Organisation internationale de normalisation (ISO) 31000:2018, gestion des risques – conseils](https://www.iso.org/standard/65694.html). Globalement, l’infrastructure de gestion des risques utilisée par ISM comporte six étapes :
 
-Les dates d’effet des certifications Microsoft sont contenues dans la lettre de certification ACSC pour chaque plateforme. L’ensemble de la documentation associée aux inclusions Microsoft sur le CCSL, y compris les rapports d’évaluation IRAP, les guides de gestion des risques, la lettre de certification ACSC ainsi que les rapports et les guides des consommateurs ACSC, sont disponibles sur la page spécifique à l’Australie de le portail d’approbation de service. [En savoir plus](https://go.microsoft.com/fwlink/p/?LinkID=2079423)
+- Définir le système
+- Sélectionner des contrôles de sécurité
+- Implémenter des contrôles de sécurité
+- Évaluer les contrôles de sécurité
+- Autoriser le système
+- Surveiller le système
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+Comme toujours, des contrôles de compensation supplémentaires peuvent être mis en œuvre sur une base de gestion des risques par des agences individuelles avant l’autorisation de l’Agence et l’utilisation ultérieure de ces services dans le Cloud.
 
-**À qui s’applique la norme IRAP ?**
+L’évaluation IRAP des services de Microsoft aide les clients du secteur public au sein du gouvernement et de leurs partenaires à ce que Microsoft ait des contrôles de sécurité appropriés et efficaces en place pour le traitement, le stockage et la transmission des contenus protégés. et en dessous des informations classifiées. Cela inclut la majorité des données du gouvernement, de la santé et de l’éducation en Australie.
 
-La norme s’applique à tous les agences gouvernementales australiennes, régionales et locales qui utilisent les services Cloud. Les agences gouvernementales néo-zélandais doivent se conformer à une norme similaire à ISM ISM, de sorte qu’elles peuvent également utiliser les évaluations IRAP.
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
-**Puis-je utiliser la conformité de Microsoft dans le processus de certification de mon organisation ?**
+- [Azure et Dynamics](https://aka.ms/AzureCompliance)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
-Oui. Si votre organisation requiert ou cherche une accréditation conformément à ISM, vous pouvez utiliser la certification Azure, Office 365 et Dynamics 365 CRM dans votre évaluation de la conformité. Toutefois, vous devez faire appel à un évaluateur pour évaluer votre implémentation comme étant déployée sur les plateformes de Microsoft, ainsi que pour les contrôles et les processus au sein de votre organisation.
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
-**Où puis-je commencer par l’effort de conformité de mon organisation ?**
+**À qui s’applique l’IRAP ?**
 
-Commencez par le [Kit d’outils IRAP](https://www.cyber.gov.au/node/291) et suivez les informations ci-dessous :
+IRAP s’applique à tous les agences gouvernementales australiennes, régionales et locales qui utilisent des services Cloud. Les agences gouvernementales néo-zélandais doivent se conformer à une norme très similaire à celle du gouvernement australien de l’Australie, afin qu’ils puissent également utiliser les évaluations IRAP.
 
-- [Qu’est-ce qu’une évaluation IRAP](https://www.asd.gov.au/infosec/irap/irap_assessments.htm)
-- [Qui fournit une formation IRAP ?](https://www.cyber.gov.au/irap/training)
-- [Informations sur les exigences de conformité et de non-conformité](https://www.cyber.gov.au/irap/compliance)
+**Puis-je utiliser la conformité de Microsoft dans le processus d’approbation et d’évaluation des risques de mon organisation ?**
+
+Oui. Si votre organisation requiert ou cherche une approbation à fonctionner en ligne avec le gestionnaire d’entreprise, vous pouvez utiliser les évaluations de sécurité IRAP d’Azure et d’Office 365 dans votre évaluation des risques. Vous êtes ; Toutefois, responsable de l’implication d’un évaluateur d’évaluer votre implémentation comme étant déployée sur les plateformes de Microsoft, ainsi que pour les contrôles et les processus au sein de votre organisation.
+
+**Où puis-je commencer avec l’évaluation et l’approbation des risques propres à mon organisation pour fonctionner ?**
+
+Commencez par [qu’est-ce que IRAP ?](https://www.cyber.gov.au/irap/what-irap) et suivez les informations ci-dessous :
+
+- [Qu’est-ce qu’une évaluation IRAP ?](https://acsc.gov.au/infosec/irap/irap_assessments.htm)
+- [Qui fournit une formation IRAP ?](https://acsc.gov.au/infosec/irap/training.htm)
+- [Informations sur les exigences de conformité et de non-conformité](https://acsc.gov.au/infosec/irap/compliance.htm)
 
 ## <a name="resources"></a>Ressources
 
-- [Australian Government](https://www.asd.gov.au/infosec/ism/index.htm)
-- [Procédures et stratégies IRAP ASD](https://aka.ms/irap-policy)
-- [Services de Cloud certifiés ASD](https://www.asd.gov.au/infosec/irap/certified_clouds.htm)
-- [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
-
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/9/9/C/99CF1E4A-510C-45FD-9819-B81E1CDFC3C3/IRAP_CCSL_Compliance_Backgrounder.pdf).
+- [Australian Government](https://acsc.gov.au/infosec/ism/index.htm)
+- [Page d’Australie du portail d’approbation de service Microsoft (STP)](https://aka.ms/au-irap)
+- [Conseils de sécurité et de passerelle pour l’Australie](https://docs.microsoft.com/azure/azure-australia)
+- [Services de Cloud certifiés ASD](https://acsc.gov.au/infosec/irap/certified_clouds.htm)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

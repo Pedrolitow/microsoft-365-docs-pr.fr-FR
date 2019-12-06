@@ -1,7 +1,7 @@
 ---
 title: Règles de Securities and Exchange Commission (SEC) 17A -4 (f)
 description: Une entreprise d’évaluation indépendante a validé que Azure et Office 365 peuvent aider les entreprises financières à respecter la réglementation SEC 17A -4 (f) des enregistrements sur la rétention et le stockage non modifiable.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 54a221458da57cb403072dcbd91a55ba2e2021df
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 08ae4841f2523d5b5df576906bdf04e798d8e60f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690386"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859514"
 ---
-# <a name="compliance-offering-securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Offre de conformité : Securities and Exchange Commission (SEC) Rule 17A -4 (f) United States
+# <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Règles de Securities and Exchange Commission (SEC) 17A -4 (f)
 
 ## <a name="microsoft-and-sec-rule-17a-4f"></a>Règles Microsoft et SEC 17A -4 (f)
 
@@ -39,7 +39,7 @@ Pour évaluer la conformité Azure et Office 365 avec la règle SEC 17A -4 (f), 
 - **Azure**: [sec 17A -4 (f) évaluation de la conformité : Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset validée que le [stockage d’objets BLOB Azure inaltérables](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) avec l’option de verrouillage de stratégie, lorsqu’il est utilisé pour conserver les objets BLOB basés sur l’heure dans un format non effaçable et non réinscriptible (Worm), répond aux exigences de stockage non modifiables de la règle sec. La modification, l’écrasement ou la suppression de chaque objet BLOB (enregistrement) est protégée jusqu’à ce que la période de rétention requise ait expiré et que toutes les suspensions juridiques associées aient été publiées. Les fournisseurs de logiciels et les partenaires avec des charges de travail sensibles peuvent désormais compter sur le stockage d’objets BLOB Azure inaltérables en tant que solution cloud OneStop Shop pour les enregistrements de rétention et de stockage non modifiable. Les établissements financiers peuvent désormais créer leurs propres applications en tirant parti de ces fonctionnalités tout en restant conformes.
 - **Office 365**: [utiliser Exchange Online pour se conformer à la norme sec 17A -4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4), Cohasset validée [que Office 365 avec verrouillage de conservation](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) inclut des fonctionnalités d’archivage permettant aux clients réglementés, y compris le service des concessionnaires, de stocker les données d’une manière qui les aide à se conformer aux exigences de la rétention des enregistrements. Les stratégies de rétention dans Office 365 aident à conserver un large éventail de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pour une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
@@ -54,7 +54,7 @@ Pour évaluer la conformité Azure et Office 365 avec la règle SEC 17A -4 (f), 
 
 [Évaluation de la conformité SEC 17A -4 (f) : Centre de conformité & Microsoft Security avec Exchange Online](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 ### <a name="financial-services-regulation"></a>Réglementation des services financiers
 
@@ -74,11 +74,11 @@ Utilisez des présentations de cas, des didacticiels et d’autres ressources po
 - [Conformité des services financiers Microsoft](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
 - [Programme de conformité services Cloud d’entreprise Microsoft et services financiers](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Outil d’évaluation des risques de Cloud Financial services Azure](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Outil d’évaluation des risques dans le Cloud Azure Financial Services](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Stratégies de rétention de Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [Blog des services financiers Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Blog Microsoft Financial Services](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf).

@@ -1,7 +1,7 @@
 ---
 title: Banque de réserve de l’Inde (RBI) et autorité réglementaire et de développement de l’assurance de l’Inde (IRDAi)
 description: Microsoft a publié des conseils pour aider les institutions financières en Inde à adopter le Cloud.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5e6af9be34fe5b14c84e8ba6cc9a55510baab92d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c88cfbfc9237e6e9a43dc8b143af015ba377ad17
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690387"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859494"
 ---
-# <a name="compliance-offering-reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Offre de conformité : Banque de réserve de l’Inde (RBI) et autorité de réglementation et de développement de l’Inde (IRDAi)
+# <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Banque de réserve de l’Inde (RBI) et autorité réglementaire et de développement de l’assurance de l’Inde (IRDAi)
 
 ## <a name="about-rbi-and-irdai"></a>À propos de RBI et IRDAi
 
@@ -40,36 +40,36 @@ Lorsque les établissements financiers Indiens ont externalisé des activités p
 
 La liste de vérification Microsoft aide les sociétés financières en Inde à évaluer la diligence des services Cloud d’entreprise Microsoft et comprend les éléments suivants :
 
-- Vue d’ensemble du contexte réglementaire de la réglementation.
-- Liste de vérification qui décrit les problèmes à résoudre et les cartes Microsoft Azure, Microsoft Dynamics 365 et Microsoft Office 365 services par rapport à ces obligations réglementaires. La liste de contrôle peut être utilisée comme un outil permettant de mesurer la conformité par rapport à un cadre réglementaire et de fournir une structure interne pour la documentation de la conformité et aider les clients à réaliser leurs propres évaluations de risques des services Cloud d’entreprise Microsoft.
+- Vue d’ensemble du paysage de la réglementation pour le contexte.
+- Liste de vérification qui décrit les problèmes à résoudre et les cartes Microsoft Azure, Microsoft Dynamics 365 et Microsoft Office 365 services par rapport à ces obligations réglementaires. La liste de contrôle peut être utilisée comme outil pour mesurer la conformité par rapport à un cadre réglementaire et fournir une structure interne pour documenter la conformité, et aider les clients à effectuer leurs propres évaluations des risques des services Cloud entreprise Microsoft.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Liste de vérification de conformité pour l’Inde](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): les cabinets financiers peuvent obtenir de l’aide pour effectuer des évaluations de risques de Microsoft Business cloud services.
-- [Évaluation des risques & Guide de conformité](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): créez un modèle de gouvernance pour l’évaluation des risques des services de Cloud Computing Microsoft et notification de régulateur.
+- [Guide d'évaluation des risques et de conformité](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
 - [Exemples d’utilisation financière pour Azure](https://docs.microsoft.com/azure/industry/financial/): présentations de cas d’utilisation, didacticiels et autres ressources pour créer des solutions Azure pour les services financiers.
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-**Existe-t-il des termes obligatoires qui doivent être inclus dans le contrat avec le fournisseur de services Cloud ?**
+**Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services Cloud ?**
 
 Oui. Les recommandations mentionnées ci-dessus précisent certains points spécifiques que les établissements financiers doivent incorporer dans leurs contrats de services Cloud. La partie 2 de la [liste de contrôle](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (page 70) les mappe par rapport aux sections des documents contractuels de Microsoft où elles sont adressées.
 
 ## <a name="resources"></a>Ressources
 
 - [Microsoft et MeitY](offering-meity-india.md)
-- [Programme de conformité des services financiers Microsoft](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
-- [Services Cloud d’entreprise Microsoft et services financiers](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
+- [Services commerciaux cloud computing et services financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Outil d’évaluation des risques de Cloud Financial services Azure](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Outil d’évaluation des risques dans le Cloud Azure Financial Services](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf).

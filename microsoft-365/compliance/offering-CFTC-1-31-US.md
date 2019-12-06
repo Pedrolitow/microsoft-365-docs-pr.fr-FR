@@ -1,7 +1,7 @@
 ---
 title: 1.31 (c-d) de la règle de négociation des perspectives de marchandises (CFTC) pour les États-Unis
 description: Une entreprise d’évaluation indépendante a validé que Azure et Office 365 peuvent aider les entreprises financières à respecter la règle CFTC 1,31 enregistrer les besoins en matière de conservation et de stockage non modifiable.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 72b5f8301dd32ed9188f52153498853720d883c1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: db357418b87e98ee0f649e48b1c00f9073d5e5de
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690363"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860064"
 ---
-# <a name="compliance-offering-commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>Offre de conformité : 1.31 de la règle (CFTC) de la règle des contrats des États-Unis (c-d)
+# <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>1.31 (c-d) de la règle de négociation des perspectives de marchandises (CFTC) pour les États-Unis
 
 ## <a name="about-cftc-rule-13c-d"></a>À propos de la règle CFTC 1.3 (c-d)
 
@@ -42,7 +42,7 @@ Pour évaluer la conformité d’Office 365 avec la règle CFTC 1.31 (c-d), Micr
 
 L’archivage dans Office 365 permet de conserver une large gamme de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pendant une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
@@ -53,22 +53,22 @@ L’archivage dans Office 365 permet de conserver une large gamme de données, n
 
 [Office 365 & règle CFTC 1,31 — archivage dans Office 365, rétention des données et conformité de la règle SEC 17A -4
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Réglementation des services financiers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): plan de conformité des principes de réglementation des clés américaines pour le Cloud Computing et Microsoft Online Services.
-- [Évaluation des risques & Guide de conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l’évaluation des risques des services de Cloud Computing Microsoft et notification de régulateur.
-- [Cas d’utilisation financière](https://docs.microsoft.com/azure/industry/financial/): utilisation d’une vue d’ensemble de cas, de didacticiels et d’autres ressources pour créer des solutions Azure pour les services financiers.
+- [Guide d'évaluation des risques et de conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
+- [Cas d'utilisation financière](https://docs.microsoft.com/azure/industry/financial/) : utilisez des aperçus de cas, des didacticiels et d'autres ressources pour créer des solutions Azure pour services financiers.
 
 ## <a name="resources"></a>Ressources
 
-- [Programme de conformité des services financiers Microsoft](https://aka.ms/FSCP-Print)
-- [Services Cloud d’entreprise Microsoft et services financiers](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://aka.ms/FSCP-Print)
+- [Services commerciaux cloud computing et services financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Outil d’évaluation des risques de Cloud Financial services Azure](https://aka.ms/FFIEC-CSDT)
+- [Outil d’évaluation des risques dans le Cloud Azure Financial Services](https://aka.ms/FFIEC-CSDT)
 - [Stratégies de rétention de Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [Blog des services financiers Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Blog Microsoft Financial Services](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf).

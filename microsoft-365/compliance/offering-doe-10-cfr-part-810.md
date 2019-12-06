@@ -1,7 +1,7 @@
 ---
 title: US DoE 10 CFR part 810
 description: Les clients soumis aux exigences en matière de contrôle d’exportation de US DoE 10 CFR part 810 peuvent utiliser le gouvernement Azure.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1e7f850a06a95f86c2afd5c8bccc77ff5431dda4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690388"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859404"
 ---
-# <a name="compliance-offering-us-doe-10-cfr-part-810"></a>Offre de conformité : US DoE 10 CFR part 810
+# <a name="us-doe-10-cfr-part-810"></a>US DoE 10 CFR part 810
 
 ## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft et DoE 10 CFR part 810
 
@@ -31,12 +31,12 @@ FedRAMP offre une référence appropriée pour fournir des assurances indiquant 
 
 Par ailleurs, les gouvernements Azure sont un nuage communautaire du gouvernement américain qui est physiquement séparé du Cloud Azure. Elle fournit des assurances supplémentaires concernant des exigences spécifiques en matière de filtrage en arrière-plan par le gouvernement américain, y compris des contrôles spécifiques qui restreignent l’accès aux informations et aux systèmes pour les citoyens américains entre le personnel des opérations Azure.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Public Azure](https://aka.ms/AzureCompliance)
 - Intune
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [NERC standards de virement & Cloud Computing](https://aka.ms/AzureNERC): instructions pour les utilitaires électriques et les entités enregistrées déployant des charges de travail sur Azure ou sur des administrations publiques Azure.
 
@@ -63,9 +63,9 @@ Les clients qui déploient des données vers le gouvernement Azure sont responsa
 - [Contrôles de services Cloud Azure et d’exportation US](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 - [Microsoft et FedRAMP](offering-fedramp.md)
 - [Microsoft et DoD](offering-dod-disa-l2-l4-l5.md)
-- [Cloud Microsoft Government](https://www.microsoft.com/enterprise/government)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cloud Microsoft Service publique](https://www.microsoft.com/enterprise/government)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf).

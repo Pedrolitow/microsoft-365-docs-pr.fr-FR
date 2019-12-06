@@ -1,7 +1,7 @@
 ---
 title: Publication 140-2 (Federal Information Processing Standard)
 description: Microsoft certifie que ses modules de chiffrement sont conformes à la norme américaine Federal Information Processing Standard.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 91dab1a0f064d35e836a921864817e670fd998b5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 4921fdaa2c6dc7199adb810f5320972f0c1ef8db
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690346"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859824"
 ---
-# <a name="compliance-offering-federal-information-processing-standard-fips-publication-140-2"></a>Offre de conformité : publication FIPS (Federal Information Processing Standard) 140-2
+# <a name="federal-information-processing-standard-fips-publication-140-2"></a>Publication 140-2 (Federal Information Processing Standard)
 
 ## <a name="fips-140-2-standard-overview"></a>Vue d’ensemble de la norme FIPS 140-2
 
@@ -32,13 +32,13 @@ Microsoft entretient un engagement actif pour répondre aux exigences 140-2, ave
 
 Pour obtenir des informations techniques sur les modules de chiffrement Microsoft Windows, la stratégie de sécurité pour chaque module et le catalogue des détails du certificat CMVP, consultez la rubrique [Windows and Windows Server FIPS 140-2 content](https://aka.ms/AA6ehud).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 Alors que le Guide d’implémentation actuel de CMVP FIPS 140-2 exclut une validation FIPS 140-2 pour un service Cloud lui-même ; les fournisseurs de services Cloud peuvent choisir d’obtenir et d’utiliser des modules de chiffrement validés FIPS 140 pour les éléments informatiques qui composent leur service Cloud. Les services Microsoft Online qui incluent des composants, qui ont été validés par FIPS 140-2 incluent, entre autres :
 
-- [Azure et gouvernement Azure](https://docs.microsoft.com/azure/azure-government/documentation-government-plan-security)
+- [Azure et Azure Government](https://docs.microsoft.com/azure/azure-government/documentation-government-plan-security)
 - [Dynamics 365 et Dynamics 365 Government](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365)
-- [Office 365, Office 365 gouvernement américain et Office 365-défense du gouvernement américain](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
+- [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
@@ -83,8 +83,8 @@ Il s’agit de deux normes de sécurité distinctes avec des objectifs différen
 - [Exigences de sécurité de la publication 140-2 FIPS pour les modules de chiffrement](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [Programme de validation du module de chiffrement NIST](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server et FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf).

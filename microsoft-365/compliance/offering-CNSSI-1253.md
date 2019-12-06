@@ -1,7 +1,7 @@
 ---
 title: N ° de Comité sur les systèmes de sécurité nationaux 1253 (CNSSI 1253)
 description: Les pouvoirs publics Azure sont conformes aux contrôles de sécurité CNSSI 1253 pour les systèmes gouvernementaux américains exigeant une haute confidentialité, une intégrité élevée et une haute disponibilité.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 232d8ddcdcd108d069247bc76850d7d17f18b629
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 12af7c84a922e3db0b7d234dce6f4095ba062a64
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690361"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860034"
 ---
-# <a name="compliance-offering-committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Offre de conformité : le Comité sur les systèmes de sécurité nationaux. 1253 (CNSSI 1253)
+# <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>N ° de Comité sur les systèmes de sécurité nationaux 1253 (CNSSI 1253)
 
 ## <a name="about-cnss-instruction-1253"></a>À propos de l’instruction CNSS 1253
 
@@ -36,7 +36,7 @@ Le gouvernement Azure dispose actuellement d’une autorisation provisoire FedRA
   
 La conformité du gouvernement Azure aux exigences CNSSI 1253 requises signifie qu’Azure peut offrir aux clients du secteur public aux États-Unis un ensemble de services compatible avec CNSSI 1253, ce qui leur permet de bénéficier de l’économie de coûts et de la rigueur. sécurité du Cloud Microsoft.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Public Azure](https://aka.ms/AzureCompliance)
 
@@ -44,7 +44,7 @@ La conformité du gouvernement Azure aux exigences CNSSI 1253 requises signifie 
 
 CNSSI 1253 d’Azure Government attestation de conformité avec la base de CNSSI 1253 haut-haut-haut
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Documentation sur les pouvoirs publics Azure](https://docs.microsoft.com/azure/azure-government/): didacticiels et guides de procédures permettant aux développeurs de déployer et de gérer les services à l’aide d’Azure Government.
 
@@ -64,9 +64,9 @@ Le gouvernement Azure (FedRAMP Package ID F1603087869) a été testé à nouveau
 - [Public Azure](https://aka.ms/Azure-Government)
 - [Microsoft et FedRAMP](offering-fedramp.md)
 - [Autorisation provisoire Microsoft et DoD](offering-DoD-DISA-L2-L4-L5.md)
-- [Cloud Microsoft Government](https://www.microsoft.com/enterprise/government)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cloud Microsoft Service publique](https://www.microsoft.com/enterprise/government)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).

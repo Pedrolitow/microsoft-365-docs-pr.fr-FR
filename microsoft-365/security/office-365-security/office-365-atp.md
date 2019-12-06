@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: ba7395c29a700039e29c066daa942687e610e4aa
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 65f123e77d5b38163dfe4e8971426d8a1135b571
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813764"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866706"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 – Protection avancée contre les menaces
 
@@ -102,7 +102,7 @@ Pour accéder aux fonctionnalités ATP dans le Centre de sécurité et conformit
 |---------|---------|
 |Administrateur général Office 365 (peut être affecté dans Azure Active Directory ou dans le centre de sécurité et conformité Office 365) |[À propos des rôles d'administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Administrateur de sécurité (peut être affecté dans Azure Active Directory ou le centre de sécurité et conformité Office 365) |[Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)|
-|Gestion de l’organisation Exchange Online (elle est affectée à Exchange Online)|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Gestion de l’organisation Exchange Online (elle est affectée à Exchange Online)|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |Rechercher et vider (cette opération est attribuée uniquement dans le centre de conformité et sécurité Office 365) |[Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md) |
 
 Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).

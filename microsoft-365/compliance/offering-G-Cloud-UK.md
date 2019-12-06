@@ -1,7 +1,7 @@
 ---
 title: Gouvernement britannique-Cloud (G-Cloud)
 description: Le service commercial de la Couronne a renouvelé la classification des services de Cloud Computing Microsoft sur le cloud public v. 6.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a79b56bc5f6150439cd945f99b53a69b34a04a45
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 525ea4c129e351b157463efdf02280a1f55797ad
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690381"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859784"
 ---
-# <a name="compliance-offering-united-kingdom-government-cloud-g-cloud"></a>Offre de conformité : gouvernement britannique-Cloud (G-Cloud)
+# <a name="united-kingdom-government-cloud-g-cloud"></a>Gouvernement britannique-Cloud (G-Cloud)
 
 ## <a name="uk-g-cloud-overview"></a>Vue d’ensemble du Cloud pour le Royaume-Uni G
 
@@ -38,16 +38,16 @@ Pour en savoir plus sur les avantages du Royaume-Uni G-Cloud V6 sur le Cloud Mic
 
 Découvrez comment accélérer votre déploiement du Royaume-Uni G-Cloud V6 à l’aide de notre plan de sécurité et de conformité Azure : [Télécharger les conseils de mise en œuvre des principes généraux de l’implémentation de principe de Cloud pour Azure](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Service Cloud Flow Microsoft en tant que service autonome ou inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Office 365 : Exchange Online, SharePoint Online et Skype entreprise Online
-- Service Cloud PowerApps en tant que service autonome ou inclus dans un plan ou une suite Office 365 ou Dynamics 365
-- Service Cloud Power BIen tant que service autonome ou inclus dans un plan ou une suite Office 365
+- Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
@@ -69,7 +69,7 @@ Pour vérifier que les services de Cloud Computing Microsoft conservent leur con
 - [Intune UK G risque résiduel dans le Cloud](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Résumé de l’évaluation de la sécurité du Cloud pour Azure UK G](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
-### <a name="office-365"></a>Office 365
+### <a name="office-365"></a>Office 365
 
 - [Environnement Office 365 UK G Risk Risk Environment](https://aka.ms/Office365UKGCloudRiskEnvironment)
 
@@ -111,8 +111,8 @@ Le [portail d’approbation de services](https://support.office.com/article/Get-
 - [Principes de sécurité G-Cloud](https://aka.ms/UK-G-Cloud)
 - [Marché numérique](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf).

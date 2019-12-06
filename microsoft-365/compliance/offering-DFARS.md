@@ -1,7 +1,7 @@
 ---
 title: Supplément du règlement sur la défense fédérale de l’acquisition (DFARS)
 description: Le gouvernement Microsoft Azure prend en charge la configuration requise pour le DFARS (Defense Federal acquisition Regulation).
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: de25c210fb5b361cf9bba1d7efe15e27d386e200
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690351"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859974"
 ---
-# <a name="compliance-offering-defense-federal-acquisition-regulation-supplement-dfars"></a>Offre de conformité : supplément pour le règlement sur la défense fédérale de l’acquisition (DFARS)
+# <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>Supplément du règlement sur la défense fédérale de l’acquisition (DFARS)
 
 ## <a name="dfars-overview"></a>Vue d’ensemble de DFARS
 
@@ -32,20 +32,20 @@ Les services Cloud du gouvernement Microsoft aident les clients de la base de d�
   
 Découvrez comment accélérer le déploiement de votre DFARS avec notre plan de sécurité et de conformité Azure : [Télécharger la matrice de responsabilités client d’Azure DFARS](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 Services couverts pour le niveau d’impact DoD 5
 
-- [Azure et gouvernement Azure](https://aka.ms/AzureCompliance)
+- [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 pour le gouvernement américain et Office 365-défense du gouvernement américain](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
 - [Autorisations des services de Cloud Computing Microsoft](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Azure P-ATO lettre signée le 3 mars 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=94ff5b42-4077-4612-8cf7-3194ded323dc&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
-- [Afficher des rapports d’audit supplémentaires](https://aka.ms/auditreports)
+- [Voir rapports d’audit complémentaires](https://aka.ms/auditreports)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Quelles sont les exigences de DFARS prises en charge par le gouvernement Microsoft Azure et Office 365 de la défense du gouvernement américain ?**
 
@@ -75,7 +75,7 @@ En outre, les offres Microsoft en dehors de la frontière FedRAMP qui pourraient
 ## <a name="resources"></a>Ressources
 
 - [Supplément du règlement sur la défense fédérale de l’acquisition (DFARS)](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
-- [Microsoft Cloud pour le gouvernement](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Microsoft Cloud pour le secteur public](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Conditions d’utilisation d’Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Informations non classifiées contrôlées (CUI)](https://www.archives.gov/cui/registry/category-list)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

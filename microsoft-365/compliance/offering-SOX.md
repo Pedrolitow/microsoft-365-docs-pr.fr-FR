@@ -1,7 +1,7 @@
 ---
 title: Loi Sarbanes-Oxley de 2002 (SOX)
 description: Les sociétés de services financiers peuvent utiliser les rapports de conformité Microsoft pour respecter la loi Sarbanes-Oxley.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 2f496db53cde8779dd45f7d15cc9d6bd7789a75c
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1bc568d6db13dd91d0e16e29633dccc58e28fc2a
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690392"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859474"
 ---
-# <a name="compliance-offering-sarbanes-oxley-act-of-2002-sox"></a>Offre de conformité : loi Sarbanes-Oxley Act de 2002 (SOX)
+# <a name="sarbanes-oxley-act-of-2002-sox"></a>Loi Sarbanes-Oxley de 2002 (SOX)
 
 ## <a name="sox-overview"></a>Vue d’ensemble SOX
 
@@ -40,13 +40,13 @@ Chez Microsoft, nous partageons la responsabilité de la conformité avec nos cl
 
 En savoir plus sur l’utilisation des rapports de conformité Microsoft Azure lors de la prise en compte des obligations de conformité SOX : [Télécharger le guide Azure pour Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Service Cloud Power BIen tant que service autonome ou inclus dans un plan ou une suite Office 365
+- Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
@@ -65,12 +65,12 @@ Lorsque vous migrez vos applications et vos données vers les services Cloud de 
 ## <a name="resources"></a>Ressources
 
 - [Conseils Azure pour la loi Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide)
-- [Programme de conformité des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Services Cloud d’entreprise Microsoft et services financiers](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Responsabilités partagées pour le Cloud Computing](https://aka.ms/sharedresponsibility)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Services Enterprise Cloud et financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Responsabilités partagées pour le cloud computing](https://aka.ms/sharedresponsibility)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf).

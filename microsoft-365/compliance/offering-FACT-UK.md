@@ -1,7 +1,7 @@
 ---
 title: Fédération contre le vol de droits d’auteur (fait)
 description: Microsoft Azure a atteint la certification de la Fédération avec le vol de Copyright au Royaume-Uni.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1a3fe8adac9dae1b2dcbc04430e9d7d3f49bc201
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 378f03c5c579939abed84cfdea436845f37292af
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690347"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859894"
 ---
-# <a name="compliance-offering-federation-against-copyright-theft-fact"></a>Offre de conformité : Fédération contre le vol de droits d’auteur (fait)
+# <a name="federation-against-copyright-theft-fact"></a>Fédération contre le vol de droits d’auteur (fait)
 
 ## <a name="fact-overview"></a>Vue d’ensemble des faits
 
@@ -32,9 +32,9 @@ En fonction de l’envoi volontaire par Microsoft à un audit de faits, le véri
 
 Découvrez les avantages de Microsoft Cloud : [Téléchargez les documentation de faits](https://aka.ms/fact-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
-[Azure et gouvernement Azure](https://aka.ms/AzureCompliance)
+[Azure et Azure Government](https://aka.ms/AzureCompliance)
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
@@ -57,9 +57,9 @@ La conformité avec le fait est volontaire, mais Microsoft a choisi d’effectue
 - [Certification CDSA des services multimédias Azure](https://aka.ms/cdsa-cert)
 - [Certification Azure ISO 27001](https://aka.ms/Azure-BSI-Cert)
 - [Évaluation de MPAA](offering-mpaa.md)
-- [Réponses Azure à CSA CAIQ v 3.0.1](https://aka.ms/csacaiqresponses)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Réponses d'Azure au CAIQ v3.0.1 CSA (en anglais)](https://aka.ms/csacaiqresponses)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf).

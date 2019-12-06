@@ -1,7 +1,7 @@
 ---
 title: Ministère de l’électronique et des technologies de l’information (MeitY)
 description: Microsoft a octroyé une accréditation complète par le ministère des technologies de l’information et de l’informatique en Inde.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 34e20578d09079031d4a41bafdf199d055ced09a
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690366"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859574"
 ---
-# <a name="compliance-offering-ministry-of-electronics-and-information-technology-meity"></a>Offre de conformité : Ministère de l’électronique et des technologies de l’information (MeitY)
+# <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministère de l’électronique et des technologies de l’information (MeitY)
 
 ## <a name="meity-overview"></a>Vue d’ensemble de MeitY
 
@@ -38,7 +38,7 @@ En novembre 2017, Microsoft est devenu l’un des premiers fournisseurs de servi
 
 L’accréditation MeitY de Microsoft était le résultat d’un audit rigoureux mené par les tests de normalisation et la certification de qualité (STQC) direction, une organisation gouvernementale qui fournit des services d’assurance qualité, à l’aide d’une infrastructure d’évaluation basé sur le travail de l’initiative Cloud MeghRaj. Par le biais de Microsoft Azure, les organisations du secteur public peuvent désormais tirer un grand nombre de modèles de déploiement et d’offres de services, notamment IaaS (infrastructure as a service), plateforme As a service (PaaS), récupération d’urgence, DevOps et sauvegarde gérée.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -58,8 +58,8 @@ Le fait de rendre les services gouvernementaux accessibles aux citoyens en ligne
 - [Ministère de l’électronique et des technologies de l’information](https://meity.gov.in/)
 - [Initiative Cloud MeghRaj](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Fournisseurs de services Cloud accrédités](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf).

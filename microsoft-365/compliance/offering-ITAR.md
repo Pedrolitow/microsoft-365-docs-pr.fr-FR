@@ -1,7 +1,7 @@
 ---
 title: Trafic international en matière de réglementations sur les armes (ITAR)
 description: Le gouvernement Azure prend en charge les clients qui élaborent du trafic international dans les systèmes compatibles avec les regs.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b79cd30c225631b93c92f8199d008d24ecc9a06d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690374"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859654"
 ---
-# <a name="compliance-offering-international-traffic-in-arms-regulations-itar"></a>Offre de conformité : trafic international en matière de réglementations sur les armes (ITAR)
+# <a name="international-traffic-in-arms-regulations-itar"></a>Trafic international en matière de réglementations sur les armes (ITAR)
 
 ## <a name="itar-overview"></a>Vue d’ensemble de ITAR
 
@@ -36,10 +36,10 @@ Le ITAR a des obligations spécifiques pour signaler les violations, ce qui peut
   
 Les clients cherchant à héberger des données réglementées par ITAR doivent travailler avec leur compte Microsoft et équipe de gestion des licences pour en savoir plus, obtenir des accords corrects et accéder à des informations d’architecture système pertinentes.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Public Azure](https://aka.ms/AzureCompliance)
-- [Office 365, défense du gouvernement américain](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
@@ -54,8 +54,8 @@ Contactez votre responsable de compte Microsoft.
 - [Utilisation d’Azure Government avec des données contrôlées ITAR](https://aka.ms/azure-itar-guide)
 - [Public Azure](https://azure.microsoft.com/features/gov/)
 - [Office 365 gouvernement américain](https://products.office.com/government/office-365-web-services-for-government)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf).

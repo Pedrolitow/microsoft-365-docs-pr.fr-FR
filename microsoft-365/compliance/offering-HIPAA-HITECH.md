@@ -1,7 +1,7 @@
 ---
 title: Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 description: Microsoft propose des accords de portabilité de l’assurance maladie & la Loi d’entreprise Associate Act (HIPAA).
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b603cc6b946f62a8ca6b7cfa5c0dd7faf64dfbe4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690376"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859744"
 ---
-# <a name="compliance-offering-health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Offre de conformité : loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
+# <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>Présentation des lois HIPAA et Hi-Tech
 
@@ -48,18 +48,18 @@ Les services Cloud d’entreprise de Microsoft sont également couverts par les 
 
 Découvrez les avantages de HIPAA et du Hi-Tech sur le Cloud Microsoft : [lire le scénario de client de radiologie zwanger — Pesiri](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
-- [Azure et gouvernement Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- [Azure et Azure Government](https://aka.ms/AzureCompliance)
+- Sécurité de l’application Cloud
 - Service Microsoft Health bot
 - Microsoft Stream
-- Services professionnels Microsoft : premier et local pour Azure, Dynamics 365, Intune, et pour les clients de taille moyenne et entreprise d’Office 365
-- [Dynamics 365 et Dynamics 365 gouvernement américain](https://aka.ms/d365-compliance-list)
-- Service Cloud Flow Microsoft en tant que service autonome ou inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Services professionnels Microsoft : Premier et local pour Azure, Dynamics 365, Intune et pour les clients d’entreprises moyennes et grandes d’Office 365
+- [Dynamics 365 et Dynamics 365 Service Public](https://aka.ms/d365-compliance-list)
+- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Intune
-- [Office 365, Office 365 gouvernement américain et Office 365-défense du gouvernement américain](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Service Cloud PowerApps en tant que service autonome ou inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BIen tant que service autonome ou inclus dans un plan ou une suite Office 365 ou Dynamics 365.
 - Azure DevOps Services
 
@@ -102,13 +102,13 @@ Pour aider les clients avec cette tâche, Microsoft a publié ces guides :
 ## <a name="resources"></a>Ressources
 
 - [Règle HIPAA omnibus](https://aka.ms/HIPAA-omnibus) (réglementations finales : modification des règles HIPAA)
-- [Infrastructure de conformité Hub contrôles communs Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cloud Microsoft Government](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Présentation de la conformité HIPAA avec Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 mai 2016)
 - [Guide de mise en œuvre d’Azure HIPAA](https://aka.ms/azure-hipaa-guide)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).

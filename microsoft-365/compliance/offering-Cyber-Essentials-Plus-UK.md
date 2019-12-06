@@ -1,7 +1,7 @@
 ---
 title: Royaume-Uni Cyber Essentials PLUS
 description: Cyber Essentials PLUS est un modèle défini par le gouvernement britannique pour aider les organisations à se protéger contre les menaces courantes de protection contre la cybercriminalité.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f30ec3181a90f259d6cafd9a3548d7a1ad5852
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 795a8b94c53aa94731d6c55786312b1baef6a685
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690359"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859984"
 ---
-# <a name="compliance-offering-united-kingdom-cyber-essentials-plus"></a>Offre de conformité : United Kingdom Cyber Essentials PLUS
+# <a name="united-kingdom-cyber-essentials-plus"></a>Royaume-Uni Cyber Essentials PLUS
 
 ## <a name="uk-cyber-essentials-plus-overview"></a>Présentation du RU Cyber Essentials PLUS
 
@@ -47,8 +47,8 @@ La [certification Azure Cyber Essentials plus](https://aka.ms/AzureCyberEPlusCer
 ## <a name="resources"></a>Ressources
 
 - [Schéma Cyber Essentials : infrastructure d’assurance](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf).

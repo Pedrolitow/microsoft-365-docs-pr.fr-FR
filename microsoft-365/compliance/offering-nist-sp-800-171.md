@@ -1,7 +1,7 @@
 ---
 title: NIST SP 800 – 171
 description: Les services de Cloud Computing Microsoft sont conformes aux directives NIST SP 800 – 171 afin de protéger les informations non classifiées contrôlées (CUI) dans les systèmes d’information non fédéraux.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8924905e83d1911dc30a420319d61940b75bfe05
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: e7b3dbad49fd57005dffd7e39e61906efdab771d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690403"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859344"
 ---
-# <a name="compliance-offering-nist-sp-800171"></a>Offre de conformité : NIST SP 800 – 171
+# <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
 ## <a name="about-nist-sp-800171"></a>À propos du SP NIST 800 – 171
 
@@ -39,7 +39,7 @@ Les conditions requises pour le Service Pack 800 SP 800 – 171 sont un sous-ens
 
 Toute entité qui traite ou stocke les CUIs du gouvernement américain (institutions de recherche, sociétés de Conseil, fournisseurs de service de fabrication) doit respecter les exigences rigoureuses d’NIST SP 800 – 171. Cette attestation signifie que les services Cloud dans l’étendue de Microsoft peuvent accueillir les clients cherchant à déployer des charges de travail CUI avec l’assurance que Microsoft est en conformité totale. Par exemple, tous les sous-traitants DoD qui traitent, stockent ou transmettent des « informations de défense couvertes » à l’aide des services de Cloud Computing Microsoft dans leurs systèmes d’information satisfont aux clauses du ministère de la défense DFARS qui doivent respecter la sécurité Configuration requise du service NIST SP 800 – 171.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Public Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 gouvernement américain](https://aka.ms/d365-compliance-list)
@@ -50,7 +50,7 @@ Toute entité qui traite ou stocke les CUIs du gouvernement américain (institut
 
 - [Attestation de conformité pour le gouvernement Azure avec NIST SP 800 – 171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Schéma NIST SP 800 – 171](https://aka.ms/NIST-800-171-Blueprint): obtenez de l’aide pour la mise en œuvre de charges de travail dans Azure qui sont conformes à NIST SP 800 – 171.
 
@@ -67,9 +67,9 @@ Oui. Les clients Microsoft peuvent utiliser les contrôles audités décrits dan
 - [Autorisations FedRAMP des services de Cloud Computing Microsoft](https://marketplace.fedramp.gov/index.html?status=Compliant&sort=productName#/products)
 - [Institut NIST 800-171 3,3 Audit and Accountability avec Office 365 GCC High](https://info.summit7systems.com/blog/nist-3.3-audit-and-accountability-with-office-365)
 - [Microsoft et l’infrastructure Cybersecurity NIST](offering-nist-csf.md)
-- [Cloud Microsoft Government](https://www.microsoft.com/enterprise/government)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cloud Microsoft Service publique](https://www.microsoft.com/enterprise/government)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ).

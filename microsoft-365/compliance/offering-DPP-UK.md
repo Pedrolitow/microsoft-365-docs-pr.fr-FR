@@ -1,7 +1,7 @@
 ---
 title: Partenariat de production numérique (DPP) Royaume-Uni
 description: Microsoft Azure a reçu le DPP engagé à la marque de sécurité pour diffusion.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ac12047420e29a0c096dffac884ab584a38fad9b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690345"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859964"
 ---
-# <a name="compliance-offering-digital-production-partnership-dpp-united-kingdom"></a>Offre de conformité : partenariat de production numérique (DPP) Royaume-Uni
+# <a name="digital-production-partnership-dpp-united-kingdom"></a>Partenariat de production numérique (DPP) Royaume-Uni
 
 ## <a name="about-the-dpp"></a>À propos du DPP
 
@@ -32,7 +32,7 @@ Microsoft Azure a reçu la marque de sécurité DPP validée pour diffusion apr�
   
 Cela signifie que les diffuseurs et autres clients multimédias utilisant Azure peuvent avoir la certitude que sa sécurité robuste et son service résistant peuvent répondre aux exigences uniques de l’industrie Broadcast, du développement de programme à la transmission.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -43,7 +43,7 @@ La marque de diffusion Azure est valide pour un an et renouvelée annuellement.
 - [Liste de vérification des exigences en matière de sécurité du diffuseur Azure NABA DPP](https://aka.ms/Azure-CTS-Broadcast-Checklist)
 - [DPP engagés pour les sociétés de sécurité ayant reçu les marques](https://aka.ms/Azure-Asset-Mgmt)
 
-## <a name="how-to-implement"></a>Comment implémenter
+## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Guide](https://aka.ms/Azure-Asset-Mgmt)sur le renforcement de la gestion des biens : les meilleures pratiques dans Azure protègent les contenus précommercials contre la divulgation, la modification ou la suppression non autorisée.
 - [Azure Media Services](https://docs.microsoft.com/azure/media-services/): créez des solutions qui permettent le codage vidéo haute définition et la diffusion vidéo en continu de qualité broadcast.
@@ -52,8 +52,8 @@ La marque de diffusion Azure est valide pour un an et renouvelée annuellement.
 
 - [DPP validé dans le Guide de l’utilisateur de la liste de vérification de diffusion du programme de sécurité](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [NABA et DPP diffuseurs pour promouvoir les besoins en matière de sécurité informatique pour les fournisseurs](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf).

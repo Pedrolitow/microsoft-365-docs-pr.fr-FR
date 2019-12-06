@@ -1,7 +1,7 @@
 ---
 title: Hébergement de données de santé (HDS) France
 description: Les services de cloud Computing Microsoft sont certifiés pour assurer leur conformité avec la norme Health Data Hosting (Hébergeurs de Données de Santé).
-keywords: Offres pour la conformité Microsoft 365
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 01af4fd17ecbf88377605101d05de662d37e4c12
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: e4591a6050dd6d1805b4d8904ce5f9b6497c3706
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622444"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859754"
 ---
-# <a name="compliance-offering-health-data-hosting-hds-france"></a>Offre de conformité : Hébergement de données de santé (HDS) France
+# <a name="health-data-hosting-hds-france"></a>Hébergement de données de santé (HDS) France
 
 ## <a name="about-hds"></a>À propos de HDS
 

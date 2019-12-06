@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7fb31d007b7935d8a2beef93b80ca1958c7a3a27
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 8d28327e4627351c27140e954c2fa26571d1689d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668812"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860044"
 ---
-# <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>Offre de conformité : stratégie de sécurité CJIS (pénal Justice Information Services)
+# <a name="criminal-justice-information-services-cjis-security-policy"></a>Stratégie de sécurité CJIS (pénal Justice Information Services)
 
 ## <a name="cjis-overview"></a>Vue d’ensemble de CJIS
 

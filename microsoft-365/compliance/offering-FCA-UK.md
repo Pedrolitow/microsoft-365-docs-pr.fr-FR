@@ -1,7 +1,7 @@
 ---
 title: Autorité financière pour le Royaume-Uni (FCA)
 description: Les conseils Microsoft pour les entreprises financières au Royaume-Uni suivent l’autorité financière et les directives d’externalisation sur le Cloud.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 55cb9e1901231f63b5e02b44b97c029359718625
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: f009914f2a5178104968fe443bbac0655f5541b9
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690341"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859884"
 ---
-# <a name="compliance-offering-united-kingdom-financial-conduct-authority-fca"></a>Offre de conformité : autorité financière pour le Royaume-Uni (FCA)
+# <a name="united-kingdom-financial-conduct-authority-fca"></a>Autorité financière pour le Royaume-Uni (FCA)
 
 ## <a name="fca-uk-overview"></a>Vue d’ensemble de FCA (Royaume-Uni)
 
@@ -40,13 +40,13 @@ Découvrez comment Azure active la conformité FCA aux banques britanniques : [
 
 [Télécharger l’approche Microsoft pour FCA finaliser les conseils de Cloud](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
-- Service Cloud Power BIen tant que service autonome ou inclus dans un plan ou une suite Office 365
+- Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Puis-je utiliser les réponses Microsoft à cette infrastructure dans le cadre du processus de conformité de mon organisation ?**
 
@@ -59,11 +59,11 @@ Oui. Toutefois, bien que les réponses Microsoft à cette infrastructure soient 
 - [Liste de vérification du Cloud Microsoft pour les établissements financiers au Royaume-Uni](https://aka.ms/Azure-UK-compliance)
 - [FG 16/5 : conseils pour les entreprises en provenance du Cloud et d’autres services informatiques tiers](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)
 - [Activation de la conformité : approche Microsoft pour FCA finaliser les conseils en nuage](https://go.microsoft.com/fwlink/p/?linkid=2101561)
-- [Programme de conformité des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Services Cloud d’entreprise Microsoft et services financiers](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Services Enterprise Cloud et financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).

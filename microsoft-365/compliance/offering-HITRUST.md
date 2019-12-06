@@ -1,7 +1,7 @@
 ---
 title: Infrastructure de sécurité commune HITRUST (Health Information Trust Alliance)
 description: Azure et Office 365 sont certifiés pour l’infrastructure de sécurité commune (CSF) Common Security information Alliance (HITRUST).
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: fae04170595b953b2ec88c34e2fec5a2a7ffa9cb
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: ebe89a7dc63a9adbe2c40961f92c1a6656d9ae9d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690373"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859734"
 ---
-# <a name="compliance-offering-health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Offre de conformité : infrastructure de sécurité commune HITRUST (Health Information Trust Alliance)
+# <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Infrastructure de sécurité commune HITRUST (Health Information Trust Alliance)
 
 ## <a name="hitrust--csf-overview"></a>HITRUST — vue d’ensemble CSF
 
@@ -36,11 +36,11 @@ Découvrez comment accélérer votre déploiement de HITRUST à l’aide de notr
 
 [Télécharger la matrice de responsabilité du client Microsoft Azure HITRUST (CRM) Blueprint v 9.0](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
-- [Azure et gouvernement Azure](https://aka.ms/AzureCompliance)
+- [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - Intune
-- [Office 365 et Office 365 gouvernement américain](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 et Office 365 U.S. Governement](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
@@ -67,7 +67,7 @@ Accélérez la mise en conformité HITRUST pour votre solution hébergée sur Mi
 
 [En savoir plus](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Puis-je utiliser la conformité Azure HITRUST pour créer le processus de certification de mon organisation ?**
 
@@ -106,8 +106,8 @@ Connectez-vous à l’outil HITRUST MyCSF® et pré-remplissez votre évaluation
 - [HITRUST CSF 8,1](https://hitrustalliance.net/csf-license-agreement/)
 - [Présentation et exploitation de l’infrastructure de structure](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [En savoir plus sur le programme de responsabilité partagé HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).

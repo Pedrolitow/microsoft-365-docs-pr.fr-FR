@@ -1,7 +1,7 @@
 ---
 title: Autorisation provisoire du ministère américain de la défense (DoD)
 description: Microsoft a reçu des autorisations provisoires du ministère de la défense (DoD) aux niveaux d’impact 5, 4 et 2.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ad34c497e82ef8e61e61d6953afcca5815f1bc06
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: d805c5dab7e8ebeb31ea94895356a6529bcd970d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690348"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859954"
 ---
-# <a name="compliance-offering-us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Offre de conformité : autorisation provisoire du ministère américain de la défense (DoD) aux niveaux d’impact 2, 4 et 5
+# <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorisation provisoire du ministère américain de la défense aux niveaux d’impact 2, 4 et 5
 
 ## <a name="dod-and-disa-overview"></a>Présentation de DoD et de DISA
 
@@ -55,24 +55,24 @@ En fonction des autorisations FedRAMP, DISA service de Cloud Computing a accord�
 
 Le niveau d’impact 2 couvre les informations non classifiées non contrôlées, c’est-à-dire les données qui sont autorisées pour la publication publique. Elle couvre également d’autres informations non classées qui, bien qu’elles ne sont pas considérées comme critiques, continuent à avoir un niveau de contrôle d’accès minimal. Cette autorisation permet aux clients du secteur public fédéral de déployer des informations non sensibles et des sites Web de défense de base sur les services Cloud de Microsoft à l’échelle de l’étendue.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud dans l’étendue Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Services couverts pour le niveau d’impact DoD 5
 
 - [Public Azure pour DoD](https://aka.ms/AzureCompliance)
-- [Office 365, défense du gouvernement américain](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### <a name="covered-services-for-dod-impact-level-4"></a>Services couverts pour le niveau d’impact DoD 4
 
 - [Public Azure](https://aka.ms/AzureCompliance)
-- [Office 365, défense du gouvernement américain](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### <a name="covered-services-for-dod-impact-level-2"></a>Services couverts pour le niveau d’impact DoD 2
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 gouvernement américain](https://aka.ms/d365-compliance-list)
 - [Office 365 gouvernement américain](https://aka.ms/o365-compliance-framework)
-- Service Cloud Power BIen tant que service autonome ou inclus dans un plan ou une suite Office 365
+- Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
@@ -84,7 +84,7 @@ Prenez le temps de tirer parti des avantages du Cloud dans le secteur public ave
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-**Puis-je utiliser la conformité de Microsoft dans le processus de certification de mon organisation ?**
+**Puis-je tirer profit de la conformité Microsoft dans le processus de certification de mon organisation ?**
 
 Oui. Toutes les agences DoD peuvent compter sur les certifications des services de Cloud Computing de Microsoft comme base de tout programme ou initiative nécessitant une autorisation DoD. (Ceci s’applique également aux autres organisations qui prennent en charge DoD et qui nécessitent des services Cloud.) Toutefois, vous devez obtenir vos propres autorisations pour les composants en dehors de ces services.
 
@@ -102,10 +102,10 @@ En outre, les offres Microsoft en dehors de la frontière FedRAMP qui pourraient
 - [Prise en charge du service Cloud DISA](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
 - [Protection des informations non classifiées contrôlées dans les organisations et les systèmes d’information non fédéraux](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [Infrastructure NIST Cybersecurity](https://www.nist.gov/cyberframework)
-- [Infrastructure de conformité Hub contrôles communs Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Cloud Microsoft Government](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [Conformité dans le centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger les concepts relatifs à l’offre
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document de documentation pour cette offre ? Téléchargez le [fichier PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).
+Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).
