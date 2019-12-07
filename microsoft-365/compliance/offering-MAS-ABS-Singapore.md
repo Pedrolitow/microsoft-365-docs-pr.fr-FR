@@ -1,7 +1,7 @@
 ---
 title: Autorité monétaire de Singapour (AMS) et Association des banques de Singapour (ABS)
 description: Microsoft aide les clients financiers à se conformer aux normes d’externalisation de l’Autorité monétaire de Singapour et à appliquer des recommandations de l’Association des banques de Singapour.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 36b6253a2b880704dea1875dc1fcbfad4a90af2e
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: e8755b89184b52b128e2f3c1060db6cf32e2f9e4
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218623"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859614"
 ---
-# <a name="compliance-offering-monetary-authority-of-singapore-mas-and-association-of-banks-in-singapore-abs"></a>Offre pour la conformité : Autorité monétaire de Singapour (AMS) et Association des banques de Singapour (ABS)
+# <a name="monetary-authority-of-singapore-mas-and-association-of-banks-in-singapore-abs"></a>Autorité monétaire de Singapour (AMS) et Association des banques de Singapour (ABS)
 
 ## <a name="mas-and-abs-overview"></a>Vue d’ensemble de l’Autorité monétaire de Singapour (AMS) et de l’Association des banques de Singapour (ABS)
 

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 56d4702b774d64a9d65442d753d013c7a953c085
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 6957036ab341c5e3ec38707e079b9ded2fdd99c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39625271"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859254"
 ---
-# <a name="compliance-offering-dutch-authority-for-the-financial-markets-and-the-central-bank-of-the-netherlands"></a>Offre de conformité : Autorité néerlandaise pour les services financiers et la Banque centrale des Pays-Bas
+# <a name="dutch-authority-for-the-financial-markets-and-the-central-bank-of-the-netherlands"></a>La Dutch Authority for the Financial Markets (Autorité néerlandaise pour les marchés financiers, AFM) et la Central Bank of the Netherlands (Banque centrale des Pays-Bas, DNB)
 
 ## <a name="about-the-afm-and-dnb"></a>À propos de l’AFM et de la DNB
 
