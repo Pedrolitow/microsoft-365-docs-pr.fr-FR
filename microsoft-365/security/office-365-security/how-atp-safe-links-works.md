@@ -4,7 +4,7 @@ ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 audience: Admin
-ms.date: 05/19/2019
+ms.date: ''
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La fonctionnalité liens fiables permet de vérifier le temps de cliquer sur les liens hypertexte dans les documents Office et dans les messages électroniques. Lisez cet article pour découvrir le fonctionnement des liens fiables ATP.
-ms.openlocfilehash: bb60d57a422d908b013caf7267f21f390769cfb4
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: bf6c2f0460bc285d0093019812e295c1cfe5ce66
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772198"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970760"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Fonctionnement des liaisons approuvées ATP Office 365
          
@@ -37,35 +37,38 @@ ms.locfileid: "37772198"
     
 6. La fonctionnalité de liens fiables ATP vérifie immédiatement l’URL avant d’ouvrir le site Web. L’URL est identifiée comme étant bloquée, malveillante ou sécurisée.
     
-    - Si l’URL est vers un site Web qui est inclus dans une [liste d’URL « ne pas réécrire » personnalisée](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) pour une stratégie qui s’applique à l’utilisateur, le site Web s’ouvre. 
+   - Si l’URL est vers un site Web qui est inclus dans une [liste d’URL « ne pas réécrire » personnalisée](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) pour une stratégie qui s’applique à l’utilisateur, le site Web s’ouvre. 
     
-    - Si l’URL est vers un site Web inclus dans la [liste des URL bloquées personnalisées](set-up-a-custom-blocked-urls-list-wtih-atp.md)de l’organisation, une [page d’avertissement](atp-safe-links-warning-pages.md) s’ouvre. 
+   - Si l’URL est vers un site Web inclus dans la [liste des URL bloquées personnalisées](set-up-a-custom-blocked-urls-list-wtih-atp.md)de l’organisation, une [page d’avertissement](atp-safe-links-warning-pages.md) s’ouvre. 
     
-    - Si l’URL est vers un site Web qui a été jugé malveillant, une [page d’avertissement](atp-safe-links-warning-pages.md) s’ouvre. 
+   - Si l’URL est vers un site Web qui a été jugé malveillant, une [page d’avertissement](atp-safe-links-warning-pages.md) s’ouvre. 
     
-    - Si l’URL est dirigée vers un fichier téléchargeable et que les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) de votre organisation sont configurées pour analyser ce contenu, le fichier téléchargeable est vérifié. 
+   - Si l’URL est dirigée vers un fichier téléchargeable et que les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) de votre organisation sont configurées pour analyser ce contenu, le fichier téléchargeable est vérifié. 
     
-    - Si l’URL est jugée fiable, le site Web s’ouvre.
+   - Si l’URL est jugée fiable, le site Web s’ouvre.
     
-## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Fonctionnement des liaisons approuvées ATP avec les URL des documents Office
+## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Fonctionnement des liaisons approuvées ATP avec les URL des documents Office 
 
-À un niveau élevé, voici le fonctionnement de la protection [des liens fiables ATP](atp-safe-links.md) pour les URL dans les applications Office 365 ProPlus ou Business Premium (versions actuelles de Word, Excel et PowerPoint sur Windows, Mac ou dans un navigateur, applications Office sur des appareils iOS ou Android, Visio sur Windows, OneNote dans un navigateur) :
+À un niveau élevé, voici le fonctionnement de la protection [des liens fiables ATP](atp-safe-links.md) pour les URL dans les applications Office 365 ProPlus ou Business Premium (versions actuelles de Word, Excel et PowerPoint sur Windows, Mac ou dans un navigateur, les applications Office sur les appareils iOS ou Android, Visio sur Windows, OneNote dans un navigateur) :
   
 1. Les utilisateurs ont installé Office 365 ProPlus ou Business Premium sur leur ordinateur, smartphone ou tablette. (Ou, ils utilisent Office dans leur navigateur.)
     
-2. Un utilisateur ouvre un Word, Excel, PowerPoint, OneNote (sur le Web) ou Visio (sur le bureau) et se connecte à Office 365 Enterprise à l’aide de son compte professionnel ou scolaire. Le document contient des URL.
+2. Un utilisateur ouvre un Word, Excel, PowerPoint, OneNote (dans le navigateur) ou Visio (sur le bureau) et se connecte à Office 365 Enterprise à l’aide de son compte professionnel ou scolaire. Le document contient des URL.
     
 3. Lorsque l’utilisateur clique sur une URL dans le document, le lien est vérifié par le service de liens fiables ATP.
     
-      - Si l’URL est vers un site Web qui est inclus dans une [liste d’URL « ne pas réécrire » personnalisée](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) pour une stratégie qui s’applique à l’utilisateur, cet utilisateur est dirigé vers le site Web. 
+   - Si l’URL est vers un site Web qui est inclus dans une [liste d’URL « ne pas réécrire » personnalisée](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) pour une stratégie qui s’applique à l’utilisateur, cet utilisateur est dirigé vers le site Web. 
     
-      - Si l’URL est vers un site Web inclus dans la [liste des URL bloquées personnalisées](set-up-a-custom-blocked-urls-list-wtih-atp.md)de l’organisation, l’utilisateur est dirigé vers une [page d’avertissement](atp-safe-links-warning-pages.md).
+   - Si l’URL est vers un site Web inclus dans la [liste des URL bloquées personnalisées](set-up-a-custom-blocked-urls-list-wtih-atp.md)de l’organisation, l’utilisateur est dirigé vers une [page d’avertissement](atp-safe-links-warning-pages.md).
     
-      - Si l’URL est vers un site Web qui a été jugé malveillant, l’utilisateur est dirigé vers une [page d’avertissement](atp-safe-links-warning-pages.md).
+   - Si l’URL est vers un site Web qui a été jugé malveillant, l’utilisateur est dirigé vers une [page d’avertissement](atp-safe-links-warning-pages.md).
     
-      - Si l’URL mène à un fichier téléchargeable et que les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) sont configurées pour analyser ces téléchargements, le fichier téléchargeable est vérifié. 
+   - Si l’URL mène à un fichier téléchargeable et que les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) sont configurées pour analyser ces téléchargements, le fichier téléchargeable est vérifié. 
     
-      - Si l’URL est considérée comme fiable, l’utilisateur est dirigé vers le site Web.
+   - Si l’URL est considérée comme fiable, l’utilisateur est dirigé vers le site Web.
       
-      - Si la vérification de l’URL échoue, la protection des liens fiables n’est pas déclenchée. Sur les clients de bureau, l’utilisateur est averti avant de passer au site.
-
+   - Si la vérification de l’URL échoue, la protection des liens fiables n’est pas déclenchée. Sur les clients de bureau, l’utilisateur est averti avant de passer au site.
+      
+> [!NOTE]
+> Cette opération peut prendre plusieurs secondes au début de chaque session pour vérifier que l’utilisateur a activé les liens approuvés pour Office. 
+      

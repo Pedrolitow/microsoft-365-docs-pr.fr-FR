@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Les administrateurs peuvent en savoir plus sur le widget flux de messagerie sortant et entrant dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 91e582accdf7556d26e5678335eda42cc3f1f174
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ceb85b9e83596c6c300c35ba471b04282074c82f
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080266"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970800"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flux de courrier entrant et sortant
 
@@ -25,9 +25,9 @@ Le widget **flux de messagerie sortant et** entrant combine les informations du 
 
 Les informations contenues dans le widget sont liées aux connecteurs et à la protection des messages TLS dans Office 365. Pour plus d'informations, voir les rubriques suivantes :
 
-- [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)
+- [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
-- [Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie dans Office 365](https://support.office.com/article/4CDE0CDA-3430-4DC0-B489-F2C0736C929F)
+- [Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
 
 ## <a name="message-protected-in-transit-by-tls"></a>Message protégé en transit (par TLS)
 
@@ -37,7 +37,7 @@ Le widget **flux de messagerie entrant et sortant** affiche le chiffrement TLS u
 
 Actuellement, TLS 1,2 est la version la plus sécurisée de TLS offerte par Office 365. En règle générale, vous devez déterminer le chiffrement TLS utilisé pour les audits de conformité. Vous n’avez probablement pas de relation directe avec la plupart des serveurs de messagerie source et de destination (vous n’êtes pas propriétaire, ni Microsoft), de sorte que vous n’avez pas de nombreuses options pour améliorer le chiffrement TLS utilisé par ces serveurs.
 
-Toutefois, vous pouvez utiliser des [connecteurs](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx) pour garantir la meilleure protection TLS disponible pour les messages échangés entre vos serveurs de messagerie et Office 365. Le flux de messagerie entre Office 365 et vos propres serveurs de messagerie ou serveurs qui appartiennent à vos partenaires est souvent plus important et plus sensible que les messages normaux, de sorte que vous souhaitez appliquer une sécurité supplémentaire et la vigilance de ces messages. Vous pouvez mettre à niveau ou réparer vos propres serveurs de messagerie pour améliorer le chiffrement TLS utilisé ou contacter vos partenaires pour qu’ils effectuent la même opération. Le **rapport de connecteur** affiche le volume de flux de messagerie et le chiffrement TLS pour les messages qui utilisent vos connecteurs Office 365.
+Toutefois, vous pouvez utiliser des [connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) pour garantir la meilleure protection TLS disponible pour les messages échangés entre vos serveurs de messagerie et Office 365. Le flux de messagerie entre Office 365 et vos propres serveurs de messagerie ou serveurs qui appartiennent à vos partenaires est souvent plus important et plus sensible que les messages normaux, de sorte que vous souhaitez appliquer une sécurité supplémentaire et la vigilance de ces messages. Vous pouvez mettre à niveau ou réparer vos propres serveurs de messagerie pour améliorer le chiffrement TLS utilisé ou contacter vos partenaires pour qu’ils effectuent la même opération. Le **rapport de connecteur** affiche le volume de flux de messagerie et le chiffrement TLS pour les messages qui utilisent vos connecteurs Office 365.
 
 ## <a name="connector-report"></a>Rapport de connecteur
 
@@ -45,7 +45,7 @@ Lorsque vous cliquez sur le lien du **rapport de connecteur** à partir de la fe
 
 L’affichage **flux de messagerie** indique le volume de messages par le biais du connecteur pour la semaine précédente. Vous pouvez modifier la plage de dates en sélectionnant **Filtrer** où vous pouvez augmenter la plage à un maximum de 30 jours. La vue **tout le flux de messagerie** affiche tout le flux de messagerie vers et depuis votre organisation Office 365 via tous les connecteurs. Vous pouvez sélectionner un connecteur spécifique par nom dans le menu déroulant.
 
-Vous pouvez sélectionner l’affichage **utilisation de TLS** dans la liste déroulante pour afficher la répartition de la protection TLS pour les messages via le connecteur. Comme avec le rapport de **rapport de vue d’ensemble TLS** , cette vue indique le pourcentage des différentes versions de TLS. Pour les connexions 1,0 TLS, vous devez vraiment obtenir votre serveur de messagerie ou le serveur de votre partenaire mis à niveau ou résolu afin d’éviter tout problème lorsque la prise en charge de TLS 1,0 est finalement déconseillée dans Office 365. Pour plus d’informations, voir informations de [référence technique sur le chiffrement dans Office 365](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221).
+Vous pouvez sélectionner l’affichage **utilisation de TLS** dans la liste déroulante pour afficher la répartition de la protection TLS pour les messages via le connecteur. Comme avec le rapport de **rapport de vue d’ensemble TLS** , cette vue indique le pourcentage des différentes versions de TLS. Pour les connexions 1,0 TLS, vous devez vraiment obtenir votre serveur de messagerie ou le serveur de votre partenaire mis à niveau ou résolu afin d’éviter tout problème lorsque la prise en charge de TLS 1,0 est finalement déconseillée dans Office 365. Pour plus d’informations, voir informations de [référence technique sur le chiffrement dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption).
 
 Insights pointent vers des connecteurs pour attirer votre attention sur les éventuels problèmes de chiffrement TLS pour le connecteur. Les informations sont les suivantes : le chiffrement **TLS est supérieur à 25%** ou **TLS 1,0 est supérieur à 50%**. Si vous voyez ces informations, vous devez examiner vos serveurs de messagerie qui sont associés au connecteur ou contacter votre organisation partenaire.
 

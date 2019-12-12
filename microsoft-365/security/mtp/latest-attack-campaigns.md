@@ -1,8 +1,8 @@
 ---
-title: Comprendre les dernières campagnes et techniques d’attaque avec l’analyse des menaces
-description: Décrit les rapports interactifs de l’analyse des menaces
+title: Comprendre les dernières campagnes et techniques d’attaque avec l’analyse des menaces dans le centre de sécurité Microsoft 365
+description: Décrit les rapports interactifs de l’analyse des menaces dans le centre de sécurité Microsoft 365
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, analyse des menaces, Microsoft Defender ATP, Cyber, posture de sécurité, nouvelles menaces
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 24d4e5c227ddcb3366e5573b8b04b04a52437873
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fca4a16c2b5526cf5fe004e0d836921a7d5c9b84
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080579"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910535"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprendre les dernières campagnes et techniques d’attaque avec l’analyse des menaces
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprendre les dernières campagnes et techniques d’attaque avec l’analyse des menaces 
 
 Les menaces informatiques deviennent de plus en plus fréquentes et sophistiquées. Il est essentiel pour les organisations d’évaluer rapidement leur position de sécurité et leur résistance contre des menaces émergentes spécifiques.
 

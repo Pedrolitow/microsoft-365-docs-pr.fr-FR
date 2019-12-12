@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
-ms.openlocfilehash: e02723b0c8e2d5b5309054babf27f0f3e9587a88
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 3be67348b9522832a754e83e57e4a99e4f9147b3
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441111"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970420"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -23,17 +23,17 @@ Les ressources d'assistance technique répertoriées dans ici vous permettront d
 
 ## <a name="self-support-options"></a>Options de support autonome
 
-Lorsque vous vous connectez, le portail Office 365 propose des informations sur l'état des services de votre organisation. Par ailleurs, la section relative à l'état des services de Office 365 affiche le statut actuel de vos services, les détails propres aux interruptions et aux pannes et présente la liste des heures de maintenance prévues. Le portail Office 365 fournit également des informations sur les problèmes connus et les résolutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d'informations sur la zone propre à l'état des services Office 365, consultez la rubrique [État des services](https://go.microsoft.com/fwlink/?LinkId=394289). Les outils, forums et sites communautaires répertoriés ici peuvent encore vous aider à résoudre les problèmes par vous-même.
+Lorsque vous vous connectez, le portail Office 365 propose des informations sur l'état des services de votre organisation. Par ailleurs, la section relative à l'état des services de Office 365 affiche le statut actuel de vos services, les détails propres aux interruptions et aux pannes et présente la liste des heures de maintenance prévues. Le portail Office 365 fournit également des informations sur les problèmes connus et les résolutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d’informations sur la zone d’état des services d’Office 365, voir [service Health and continuation](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Les outils, forums et sites communautaires répertoriés ici peuvent encore vous aider à résoudre les problèmes par vous-même.
 
-[Présentation du produit Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=279912)
+[Présentation du produit Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Aide et Support Office 365 et Exchange Online](https://go.microsoft.com/fwlink/?LinkId=299655)
+[Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-[Communauté Office 365](https://go.microsoft.com/fwlink/?LinkId=299656)
+[Communauté Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Outil de dépannage autonome pour Office 365](https://go.microsoft.com/fwlink/?LinkId=299657)
+[Assistant support et récupération Microsoft (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
-Page relative à la [procédure pas à pas relative au flux de messagerie Office 365](https://go.microsoft.com/fwlink/?LinkId=323470)
+[Utilitaire de résolution des problèmes de flux de messagerie](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Support assisté de Microsoft
 
@@ -43,7 +43,7 @@ Vous pouvez obtenir de l’aide auprès de Microsoft en lançant une nouvelle de
 
 Si vous êtes client EOP et que vous disposez d'un contrat de support Microsoft Premier, vous pouvez obtenir une assistance via les canaux normaux du support Microsoft Premier. Vous pouvez ainsi bénéficier de l'accès à tous les processus et à toutes les ressources disponibles pour les clients du support Premier, comme un responsable technique de compte et la soumission de requête. Le support Premier pour Microsoft Online Services dépasse le cadre du support Premier des produits sur site et l'étend aux services en ligne, en vous offrant un support unifié pour tous les produits et services. Il permet de s'assurer que les clients peuvent résoudre rapidement leurs problèmes et simplifie la gestion du support pour les différents composants d'une infrastructure informatique.
 
-Pour plus d'informations sur la façon dont le support Premier peut aider votre organisation à optimiser la valeur de vos investissements informatiques, consultez la rubrique relative au [support Microsoft Premier](https://go.microsoft.com/fwlink/?LinkId=317437).
+Pour plus d’informations sur la façon dont le support premier peut aider votre organisation à optimiser la valeur de vos investissements informatiques, consultez la rubrique [premier support pour les partenaires](https://partner.microsoft.com/support/microsoft-services-premier-support).
 
 ### <a name="ask-for-help-on-the-web"></a>Demander une assistance sur le web
 

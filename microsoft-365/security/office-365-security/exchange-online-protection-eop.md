@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Voici quelques éléments que vous devez connaître avant de commencer à utiliser EOP.
-ms.openlocfilehash: 707e909821c4a394e230b1746bde86521d8fb10a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: ae08ff17a3ef25f0b0903d02ffe396cd201bd06c
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441561"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970520"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
 Bienvenue dans le service de filtrage du courrier électronique hébergé sur Microsoft Exchange Online Protection (EOP). Voici quelques informations que vous devez connaître avant de travailler avec Exchange Online Protection et d'utiliser son contenu :
 
-- Pour en savoir plus sur EOP, consultez la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619). Autres ressources utiles : [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md), [Forum Aux Questions d'ordre général concernant Exchange Online Protection (EOP)](eop-general-faq.md) et [Fonctionnalités EOP](eop-features.md), ainsi que la [page d'accueil Exchange Online Protection](https://go.microsoft.com/fwlink/?LinkId=279912).
+- Pour en savoir plus sur EOP, consultez la rubrique [Description du service Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Autres ressources utiles : [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md), [Forum Aux Questions d'ordre général concernant Exchange Online Protection (EOP)](eop-general-faq.md) et [Fonctionnalités EOP](eop-features.md), ainsi que la [page d'accueil Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection).
 
 - Pour démarrer avec EOP, les nouveaux clients doivent consulter la rubrique [Configurer votre service EOP](set-up-your-eop-service.md). Vous y trouverez les étapes qui vous permettront de rendre EOP opérationnel.
 
@@ -67,6 +67,6 @@ Le contenu de l’aide permettant de guider les utilisateurs finaux d’EOP dans
 
 - [Soumission de programmes malveillants et non malveillants à Microsoft pour analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): décrit la façon dont les utilisateurs finaux peuvent soumettre un programme malveillant qui a passé les filtres, ou envoyer un fichier qui a été identifié de manière incorrecte en tant que programme malveillant.
 
-- Les utilisateurs finaux peuvent ajouter des utilisateurs ou des domaines spécifiques à une liste d’expéditeurs approuvés ou à une liste d’expéditeurs bloqués en configurant leurs paramètres de courrier indésirable dans Outlook ou Outlook sur le Web. Notez que les messages envoyés par des expéditeurs bloqués sont marqués comme courrier indésirable, et non rejetés, ce qui signifie qu’ils peuvent être récupérés à partir du dossier courrier indésirable ou mis en quarantaine (en fonction de l’emplacement où votre administrateur a configuré le service pour envoyer du courrier indésirable). Pour plus d’informations, consultez [la rubrique utiliser le complément de message de rapport](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Les utilisateurs finaux peuvent ajouter des utilisateurs ou des domaines spécifiques à une liste d’expéditeurs approuvés ou à une liste d’expéditeurs bloqués en configurant leurs paramètres de courrier indésirable dans Outlook ou Outlook sur le Web. Notez que les messages envoyés par des expéditeurs bloqués sont marqués comme courrier indésirable, et non rejetés, ce qui signifie qu’ils peuvent être récupérés à partir du dossier courrier indésirable ou mis en quarantaine (en fonction de l’emplacement où votre administrateur a configuré le service pour envoyer du courrier indésirable). Pour plus d’informations, consultez [la rubrique utiliser le complément de message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 - [Aide et support pour EOP](help-and-support-for-eop.md) Fournit des informations sur la manière d'obtenir de l'aide et un support technique.

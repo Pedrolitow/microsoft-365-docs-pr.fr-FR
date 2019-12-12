@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Les options de liste d’expéditeurs de blocs incluent les expéditeurs bloqués Outlook, les listes rouges d’expéditeurs de domaine, les listes d’adresses IP bloquées et les règles de transport Exchange (ETR), également appelées règles de flux de messagerie.
-ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: f4fab732a92df2a2500212c9825d2b3e710b0a07
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793708"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970890"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs bloqués dans Office 365
 
@@ -43,7 +43,7 @@ Lorsque seul un petit nombre d’utilisateurs sont affectés, c’est le cas lor
 > [!IMPORTANT]
 > Si les messages indésirables sont des bulletins d’informations provenant d’une source digne de réputation et reconnaissables, l’annulation de l’abonnement au courrier électronique est une autre option permettant d’empêcher l’utilisateur d’envoyer des messages à l’avenir.
 
-Les étapes à suivre pour la configuration diffèrent entre [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46) et le [client Outlook](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Lorsque les messages sont bloqués en raison des expéditeurs bloqués, vous verrez SFV : BLK dans le X-Forefront-antispam-Report,** ce qui indique que le message est bloqué.
+Les étapes à suivre pour la configuration diffèrent entre [Outlook sur le Web](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) et le [client Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Lorsque les messages sont bloqués en raison des expéditeurs bloqués, vous verrez SFV : BLK dans le X-Forefront-antispam-Report,** ce qui indique que le message est bloqué.
 
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Utiliser les listes rouge de l’expéditeur/du domaine du courrier indésirable
 

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La définition des utilisateurs de messagerie constitue une partie importante de la gestion du service Exchange Online Protection (EOP).
-ms.openlocfilehash: 065fdae30dea49220c10fd455b7ac346e70c18de
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2871ec73a06a092aa5cfdab0d9648d8cc5311460
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871770"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971742"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestion des utilisateurs de messagerie dans EOP
 
@@ -63,13 +63,13 @@ Cette section fournit des informations sur la gestion des utilisateurs de messag
 
   - **Mise en quarantaine du courrier indésirable**de l’utilisateur final : pour accéder à la mise en quarantaine du courrier indésirable de l’utilisateur final, les utilisateurs finaux doivent avoir un ID d’utilisateur et un mot de passe Office 365 valide. Les clients qui utilisent EOP pour la protection des boîtes aux lettres locales doivent être des utilisateurs de messagerie électronique valides.
 
-  - **Règles de flux de messagerie**: lorsque vous utilisez la synchronisation d’annuaires, vos utilisateurs et groupes Active Directory existants sont automatiquement téléchargés dans le Cloud, puis vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) qui ciblent des utilisateurs et/ou des groupes spécifiques sans avoir à les ajouter manuellement via le centre d’administration Exchange ou Exchange Online Protection PowerShell. Notez que les [groupes de distribution dynamique](https://go.microsoft.com/fwlink/?LinkId=507569) ne peuvent pas être synchronisés via la synchronisation d’annuaires.
+  - **Règles de flux de messagerie**: lorsque vous utilisez la synchronisation d’annuaires, vos utilisateurs et groupes Active Directory existants sont automatiquement téléchargés dans le Cloud, puis vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) qui ciblent des utilisateurs et/ou des groupes spécifiques sans avoir à les ajouter manuellement via le centre d’administration Exchange ou Exchange Online Protection PowerShell. Notez que les [groupes de distribution dynamique](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) ne peuvent pas être synchronisés via la synchronisation d’annuaires.
 
-Obtenez les autorisations nécessaires et préparez la synchronisation d'annuaires, comme décrit dans la rubrique [Préparer la synchronisation d'annuaires](https://go.microsoft.com/fwlink/p/?LinkId=308908).
+Obtenir les autorisations nécessaires et préparer la synchronisation d’annuaires, comme décrit dans [What is Hybrid Identity with Azure Active Directory ?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 ### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>Pour synchroniser les annuaires d’utilisateurs avec Azure Active Directory Connect (AAD Connect)
 
-Pour synchroniser les utilisateurs avec Azure Active Directory (AAD), vous devez d’abord **activer la synchronisation d’annuaires**, comme décrit dans la rubrique activation de la [synchronisation d’annuaires](https://go.microsoft.com/fwlink/p/?LinkId=308909).
+Pour synchroniser les utilisateurs avec Azure Active Directory (AAD), vous devez d’abord **activer la synchronisation d’annuaires**, comme décrit dans [Azure ad Connect Sync : comprendre et personnaliser la synchronisation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
 Ensuite, l’installation et la configuration d’un ordinateur local pour exécuter AAD Connect (si vous n’avez pas encore besoin de vérifier à l’avance). La rubrique [configuration de AAD Connect, la rubrique relative à la méthode rapide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) vous indique comment configurer et synchroniser vos comptes de l’organisation locale vers Azure ad avec AAD Connect.
 

@@ -2,7 +2,7 @@
 title: Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365
 description: Décrit comment le centre de sécurité Microsoft 365 fournit un résumé de l’état de protection et de sécurité.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, moniteur, rapport, état
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 80b7bf07790b7f5cb8cf0e07acd6abb921404d6f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5b2dee5916a793221e8030dd41c8c0ba33ea7a0d
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080534"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910131"
 ---
-# <a name="monitor-and-view-reports-in-microsoft-365-security-center"></a>Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365
+# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365
 
 Le centre de sécurité Microsoft 365 fournit un résumé de l’état de protection et de sécurité dans votre environnement Microsoft 365.
 
@@ -29,14 +29,14 @@ Le centre de sécurité inclut une section de **rapports** qui comprend un hôte
 
 Par défaut, les cartes sont regroupées dans les catégories suivantes :
   
-* [Identités](monitor-and-report-identities.md) – comptes d’utilisateur et informations d’identification
-* [Données](monitor-data.md) – courrier électronique et contenu de document
+* [Identités](monitor-and-report-identities.md) : comptes d’utilisateur et informations d’identification
+* [Données](monitor-data.md) -courrier électronique et contenu de document
 * [Appareils](monitor-devices.md) : ordinateurs, téléphones mobiles et autres appareils
-* [Applications](monitor-apps.md) – programmes et services en ligne associés
+* [Apps](monitor-apps.md) : programmes et services en ligne associés
 
 Passez à la **rubrique regrouper par**, pour réorganiser les cartes et les regrouper comme suit :
 
-* **Risk** – cartes qui mettent en évidence des entités, telles que des comptes et des appareils, susceptibles d’être menacées. Ces cartes surlignent également les sources de risque possibles, telles que les nouvelles campagnes de menace et les applications Cloud avec privilèges.  
-* **Tendances de détection** – cartes qui mettent en évidence les nouvelles détections de menaces, les anomalies et les violations de stratégie
-* **Configuration et intégrité** – cartes qui décrivent la configuration et le déploiement des contrôles de sécurité, y compris les États d’intégration des appareils aux services de gestion
-* **Autre** : toutes les autres cartes non classées sous d’autres rubriques
+* Cartes de **risque** qui mettent en évidence des entités, telles que des comptes et des appareils, susceptibles d’être menacées. Ces cartes surlignent également les sources de risque possibles, telles que les nouvelles campagnes de menace et les applications Cloud avec privilèges.  
+* **Tendances de détection** -cartes qui mettent en évidence les nouvelles détections de menaces, les anomalies et les violations de stratégie
+* Les cartes de **configuration et d’intégrité** qui couvrent la configuration et le déploiement des contrôles de sécurité, y compris les États d’intégration des appareils aux services de gestion
+* **Autre** -toutes les autres cartes non classées sous d’autres rubriques

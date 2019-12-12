@@ -1,5 +1,5 @@
 ---
-title: Soumissions d’administration dans Office 365, O365 envois, Office 365 courrier indésirable, O365 false negative, Submit phishing in Office 365, Submit e-mail for Scanning, suspect email in Office 365, Scan a mail, Microsoft Scan for hameçon, demandez à Microsoft d’analyser les courriers indésirables, envoyer courrier électronique, envoyer le courrier électronique
+title: Soumissions d’administration dans Office 365, O365 envois, Office 365 courrier indésirable, O365 false negative, Submit phishing in Office 365, Submit e-mail for Scanning, suspect email in Office 365, Scan a mail, Microsoft Scan for hameçon, demandez à Microsoft d’analyser les courriers indésirables, envoyer courrier électronique, envoi de messages électroniques, courrier électronique Dodgy, messages d’acteur incorrects, courrier suspect non approuvé
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable et d’autres messages, URL et fichiers potentiellement dangereux de votre client Office 365 à Microsoft pour analyse.
-ms.openlocfilehash: 5ca5eab2feab1243a83eb60c9320fd48dfb59f12
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d53c8270e84cd6f6298b9b39cc7e37262aed7b0
+ms.sourcegitcommit: 9c9044885eb9754ce69f2f08afdcc13c782ce2f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080530"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39915215"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Procédure d’envoi de courrier indésirable, hameçon, URL et fichiers suspects à Microsoft pour l’analyse Office 365
 
@@ -26,11 +26,11 @@ Les administrateurs peuvent envoyer des courriers électroniques à l’aide de 
 
 Lorsque vous soumettez un message électronique, vous obtenez des informations sur les stratégies susceptibles d’avoir autorisé le courrier entrant dans votre client, ainsi que sur l’examen de toutes les URL et pièces jointes du courrier. Les stratégies pouvant avoir autorisé un courrier incluent la liste des expéditeurs approuvés d’un utilisateur individuel, ainsi que des stratégies au niveau du client telles que les règles ETR. 
 
-## <a name="how-to-submit-content-to-microsoft-for-office-365-scanning"></a>Envoi de contenu à Microsoft pour l’analyse d’Office 365
+## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a>Comment faire pour diriger du contenu suspect vers Microsoft pour Office 365, analyse
 
 Pour envoyer du contenu à Microsoft, cliquez sur le bouton **nouvelle soumission** dans la partie supérieure gauche de la page soumissions. Un menu volant sur le côté droit de la page apparaît avec la possibilité d’envoyer un message électronique, une URL ou un fichier. 
 
-### <a name="submit-an-email-to-microsoft"></a>Envoyer un message électronique à Microsoft
+### <a name="submit-a-questionable-email-to-microsoft"></a>Envoyer un courrier électronique en question à Microsoft
 ![Exemple de dépôt de courrier électronique](../media/submission-flyout-email.PNG)
 1. Pour envoyer un message électronique, sélectionnez **courrier électronique** et spécifiez l' **ID de message réseau** de messagerie ou téléchargez le fichier de courrier électronique. 
 
@@ -44,7 +44,7 @@ Pour envoyer du contenu à Microsoft, cliquez sur le bouton **nouvelle soumissio
 
 4. Cliquez sur le bouton **Envoyer** .
 
-### <a name="submit-a-url-to-microsoft"></a>Envoi d’une URL à Microsoft
+### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 ![Exemple de dépôt de courrier électronique](../media/submission-url-flyout.png)
 1. Pour soumettre une URL, sélectionnez **URL** dans le menu volant. Tapez l’URL complète, y compris le protocole (**https://**). 
 
@@ -53,7 +53,7 @@ Pour envoyer du contenu à Microsoft, cliquez sur le bouton **nouvelle soumissio
 2. Cliquez sur le bouton **Envoyer** . 
 
 
-### <a name="submit-a-file-to-microsoft"></a>Envoyer un fichier à Microsoft
+### <a name="submit-a-suspected-file-to-microsoft"></a>Envoyer un fichier suspect à Microsoft
 ![Exemple de dépôt de courrier électronique](../media/submission-file-flyout.PNG)
 1. Pour soumettre un fichier, sélectionnez **fichier** dans le menu volant et téléchargez le fichier que vous souhaitez analyser. 
 

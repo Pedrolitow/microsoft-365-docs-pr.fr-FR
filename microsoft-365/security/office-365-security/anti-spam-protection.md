@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Découvrez les paramètres de blocage du courrier indésirable et les filtres qui vous permettront d’éviter le courrier indésirable dans Exchange Online et Office 365. Vous recevez trop de courrier indésirable dans Office 365 ? Vous pouvez personnaliser vos filtres de courrier indésirable et votre stratégie de blocage du courrier indésirable.
-ms.openlocfilehash: b18ec01419e73923b4c37d9666da97423b0cb81b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871970"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970900"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protection du courrier Office 365 contre le courrier indésirable
 
@@ -32,9 +32,9 @@ Cet article est destiné aux administrateurs Office 365. Si vous n’êtes pas a
 
  **Filtrage des connexions**: lorsque vous utilisez le filtrage des connexions, Office 365 vérifie la réputation de l’expéditeur avant d’autoriser un message à passer. Vous pouvez créer une liste verte, ou liste des expéditeurs approuvés, pour vous assurer que vous recevez tous les messages qui vous sont envoyés à partir d’une adresse IP spécifique ou d’une plage d’adresses IP. Vous pouvez également créer une liste d’adresses IP à partir de laquelle bloquer les messages, appelée liste rouge. Pour plus d'informations, consultez la rubrique relative à la [configuration de la stratégie de filtre de connexion](configure-the-connection-filter-policy.md). Si vous êtes préoccupé par le courrier indésirable dans Office 365, utilisez le filtrage des connexions pour éviter le courrier indésirable.
 
-Pour les clients qui ont Office 365 entreprise E5 ou qui ont acheté des licences protection avancée contre les menaces (ATP), le filtrage des connexions est utilisé par l’aide à l’usurpation pour créer des listes d’expéditeurs autorisés et bloqués qui usurpent votre domaine. Pour plus d’informations, consultez la rubrique [en savoir plus sur](https://go.microsoft.com/fwlink/?LinkID=735009)les informations d’usurpation d’identité.
+Pour les clients qui ont Office 365 entreprise E5 ou qui ont acheté des licences protection avancée contre les menaces (ATP), le filtrage des connexions est utilisé par l’aide à l’usurpation pour créer des listes d’expéditeurs autorisés et bloqués qui usurpent votre domaine. Pour plus d’informations, consultez la rubrique [en savoir plus sur](learn-about-spoof-intelligence.md)les informations d’usurpation d’identité.
 
- **Filtrage du courrier indésirable**: Office 365 vérifie les caractéristiques des messages en fonction du courrier indésirable. Vous pouvez modifier les actions à effectuer sur les messages identifiés comme courrier indésirable et choisir de filtrer les messages rédigés dans des langues spécifiques ou à partir de pays ou régions spécifiques. Vous pouvez également activer les options avancées de filtrage du courrier indésirable si vous souhaitez adopter une approche agressive en matière de filtrage du courrier indésirable. De plus, vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour informer les utilisateurs lorsque des messages destinés à leur mise en quarantaine ont été envoyés. (L’envoi de messages vers la quarantaine est l’une des actions configurables.) À partir de ces notifications, les utilisateurs finaux peuvent lancer des faux positifs et les signaler à Microsoft pour analyse. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=617147). Afin d’éviter le courrier indésirable dans Office 365, utilisez le filtrage du courrier indésirable, si vous craignez le courrier indésirable dans Office 365, utilisez le filtrage des connexions pour éviter le courrier indésirable.
+ **Filtrage du courrier indésirable**: Office 365 vérifie les caractéristiques des messages en fonction du courrier indésirable. Vous pouvez modifier les actions à effectuer sur les messages identifiés comme courrier indésirable et choisir de filtrer les messages rédigés dans des langues spécifiques ou à partir de pays ou régions spécifiques. Vous pouvez également activer les options avancées de filtrage du courrier indésirable si vous souhaitez adopter une approche agressive en matière de filtrage du courrier indésirable. De plus, vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour informer les utilisateurs lorsque des messages destinés à leur mise en quarantaine ont été envoyés. (L’envoi de messages vers la quarantaine est l’une des actions configurables.) À partir de ces notifications, les utilisateurs finaux peuvent lancer des faux positifs et les signaler à Microsoft pour analyse. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md). Afin d’éviter le courrier indésirable dans Office 365, utilisez le filtrage du courrier indésirable, si vous craignez le courrier indésirable dans Office 365, utilisez le filtrage des connexions pour éviter le courrier indésirable.
 
 > [!NOTE]
 > Pour les clients autonomes EOP : par défaut, les filtres de courrier indésirable EOP envoient des messages détectés par courrier indésirable dans le dossier courrier indésirable des destinataires. Toutefois, pour vous assurer que l’action **déplacer le message vers le dossier courrier indésirable** fonctionnera avec des boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter les en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, voir [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
@@ -45,7 +45,7 @@ La vidéo suivante fournit une vue d’ensemble de la configuration du filtrage 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
 
-Pour plus d’informations, consultez la rubrique [configurer les stratégies de filtrage du courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=617147) .
+Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
 
 ## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Vérifier les messages sortants pour éviter le courrier indésirable dans Office 365
 
@@ -65,11 +65,11 @@ Pour plus d’informations, consultez la rubrique [configurer les stratégies de
 
 Si vous êtes préoccupé par le courrier indésirable, le hameçonnage et l’usurpation d’identité dans Office 365, utilisez SPF, DKIM et DMARC pour éviter le courrier indésirable et l’usurpation indésirable.
 
- **Paramètres gérés par l’utilisateur final**: Si vous recherchez des informations sur la façon dont les utilisateurs finaux peuvent gérer leurs propres paramètres de courrier indésirable, consultez [la rubrique Présentation du filtre de courrier indésirable](https://go.microsoft.com/fwlink/?LinkId=270065) (pour les utilisateurs de Microsoft Outlook) ou [Découvrez le courrier indésirable et le hameçonnage](https://go.microsoft.com/fwlink/?LinkId=270068) (pour les utilisateurs d’Outlook sur le Web). Si vous utilisez EOP pour protéger les boîtes aux lettres locales, veillez à utiliser la synchronisation d’annuaires pour vous assurer que ces paramètres sont synchronisés avec le service. Pour plus d'informations sur la configuration de la synchronisation d'annuaires, voir « Utilisation de la synchronisation d'annuaires pour gérer les utilisateurs de messagerie » dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).
+ **Paramètres gérés par l’utilisateur final**: Si vous recherchez des informations sur la façon dont les utilisateurs finaux peuvent gérer leurs propres paramètres de courrier indésirable, consultez [la rubrique Présentation du filtre de courrier indésirable](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (pour les utilisateurs de Microsoft Outlook) ou [Découvrez le courrier indésirable et le hameçonnage](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31) (pour les utilisateurs d’Outlook sur le Web). Si vous utilisez EOP pour protéger les boîtes aux lettres locales, veillez à utiliser la synchronisation d’annuaires pour vous assurer que ces paramètres sont synchronisés avec le service. Pour plus d'informations sur la configuration de la synchronisation d'annuaires, voir « Utilisation de la synchronisation d'annuaires pour gérer les utilisateurs de messagerie » dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).
 
 ## <a name="for-more-information"></a>Pour plus d’informations
 
-[Blog : pourquoi le courrier indésirable et le hameçonnage sont-ils transmis via Office 365 ?](https://go.microsoft.com/fwlink/?LinkId=528179 )
+[Blog : pourquoi le courrier indésirable et le hameçonnage sont-ils transmis via Office 365 ?](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 
 [Forum Aux Questions sur la protection anti-courrier indésirable](anti-spam-protection-faq.md)
 
@@ -85,8 +85,8 @@ Si vous êtes préoccupé par le courrier indésirable, le hameçonnage et l’u
 
 ## <a name="more-resources"></a>Autres ressources
 
-[Obtenir de l’aide à partir des forums de la communauté Office 365](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[Obtenir de l’aide à partir des forums de la communauté Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Administrateurs : se connecter et créer une demande de service](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[Administrateurs : se connecter et créer une demande de service](https://portal.office.com/AdminPortal/Home?ref=support)
 
-[Administrateurs : appeler le support](https://go.microsoft.com/fwlink/p/?LinkID=518322)
+[Prise en charge AContact pour les entreprises-aide de l’administrateur](https://docs.microsoft.com/Office365/Admin/contact-support-for-business-products)

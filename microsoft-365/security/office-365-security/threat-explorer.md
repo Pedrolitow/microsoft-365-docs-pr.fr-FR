@@ -3,7 +3,6 @@ title: Explorateur de menaces et détections en temps réel, nouveauté de l’E
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,22 +14,22 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’Explorateur et les détections en temps réel dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 4507155acf3a973484f8228803660abf65167121
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 64ebfef5c0d5540acf74d0d6f5a864461e83f82f
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866366"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967937"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
-Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez des [autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des **détections en temps réel** (auparavant des *rapports en temps réel* ). [](#new-features-in-real-time-detections) Dans le centre de sécurité & conformité, accédez à **gestion des menaces**, puis choisissez **Explorateur** ou **détections en temps réel**. 
+Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez des [autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des **détections en temps réel** (auparavant des *rapports en temps réel* ). [](#new-features-in-threat-explorer-and-real-time-detections) Dans le centre de sécurité & conformité, accédez à **gestion des menaces**, puis choisissez **Explorateur** ou **détections en temps réel**. 
 
 |Avec le plan ATP 2, vous pouvez voir :  |Avec le plan ATP 1, vous pouvez voir :  |
 |---------|---------|
 |![Explorateur de menaces](../media/threatmgmt-explorer.png)      |![Détections en temps réel](../media/threatmgmt-realtimedetections.png)         |
 
-Avec l’Explorateur (ou les détections en temps réel), vous disposez d’un puissant rapport qui permet à votre équipe des opérations de sécurité d’examiner et de répondre efficacement aux menaces, et elle ressemble à l’image suivante : 
+Avec l’Explorateur (ou les détections en temps réel), vous disposez d’un puissant rapport qui permet à votre équipe des opérations de sécurité d’examiner et de répondre efficacement aux menaces. L’État ressemble à l’image suivante : 
 
 ![Accéder à l’Explorateur \> de gestion des menaces](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
@@ -40,13 +39,20 @@ Ce rapport vous permet d’utiliser les actions suivantes :
 - [Démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur](#start-automated-investigation-and-response) (plan ATP 2 uniquement)
 - ... [Examinez le courrier électronique malveillant, et bien plus encore](#more-ways-to-use-explorer-or-real-time-detections)!
 
-## <a name="new-features-in-real-time-detections"></a>Nouvelles fonctionnalités dans les détections en temps réel
+## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nouvelles fonctionnalités de l’Explorateur de menaces et des détections en temps réel
 
-Trois nouvelles fonctionnalités ajoutées à l’Explorateur de menaces sont présentées ci-dessous.
+Trois nouvelles fonctionnalités ajoutées à l’Explorateur de menaces et des détections en temps réel :
+- [Aperçu de l’en-tête de message et téléchargement du corps du courrier électronique](#preview-email-header-and-download-email-body)
+- [Chronologie du courrier électronique](#email-timeline)
+- [Exporter l’URL cliquez sur données](#export-url-click-data)
 
-Tout d’abord, **l’aperçu de l’en-tête de messagerie et le téléchargement du corps du message** sont de nouvelles fonctionnalités disponibles dans l’Explorateur de menaces. Les administrateurs pourront analyser les en-têtes et les e-mails téléchargés contre les menaces. Étant donné que le téléchargement des messages peut compromettre l’exposition des informations, ce processus est contrôlé par le contrôle d’accès basé sur les rôles (RBAC). Un nouveau rôle appelé « Preview » doit être ajouté à un autre groupe de rôles Office 365 (par exemple, dans les opérations s ou l’administrateur sec) pour accorder la possibilité de télécharger des messages et des en-têtes d’aperçu dans la vue tous les messages électroniques.
+Ces nouvelles fonctionnalités sont décrites ci-dessous.
 
-Mais l’Explorateur (et les détections en temps réel) ajoute également de nouveaux champs conçus pour vous donner une image plus complète de l’endroit où vos courriers électroniques sont présents. Une partie de cette modification est de faciliter la chasse aux personnes qui effectuent des opérations de sécurité, mais le résultat net est de savoir en un clin d’œil l’emplacement des messages électroniques problématiques.
+### <a name="preview-email-header-and-download-email-body"></a>Aperçu de l’en-tête de message et téléchargement du corps du courrier électronique
+
+La possibilité de prévisualiser un en-tête de message et de télécharger le corps du courrier est une nouvelle fonctionnalité disponible dans l’Explorateur de menaces. Les administrateurs pourront analyser les en-têtes/messages électroniques téléchargés contre les menaces. Étant donné que le téléchargement de messages électroniques peut compromettre l’exposition des informations, ce processus est contrôlé par le contrôle d’accès basé sur les rôles (RBAC). Un nouveau rôle, *Aperçu*, doit être ajouté à un autre groupe de rôles Office 365 (tel que les opérations de sécurité ou administrateur de sécurité) pour accorder la possibilité de télécharger des messages et des en-têtes d’aperçu dans la vue tous les messages électroniques.
+
+Toutefois, l’Explorateur (et les détections en temps réel) ajoute également de nouveaux champs conçus pour vous donner une image plus complète de l’emplacement de vos messages électroniques. Une partie de cette modification est de faciliter la chasse aux personnes qui effectuent des opérations de sécurité, mais le résultat net est de savoir en un clin d’œil l’emplacement des messages électroniques posant problème.
 
 Comment cela est-il fait ? L’état de remise est désormais divisé en deux colonnes :
 
@@ -57,7 +63,7 @@ L’action de remise est l’action entreprise sur un courrier électronique en 
 
 |Cmds  |Courrier indésirable  |Blocked  |Été  |
 |---------|---------|---------|---------|
-|Le courrier électronique a été remis à la boîte de réception ou au dossier d’un utilisateur et l’utilisateur peut y accéder directement.    | Le courrier électronique a été envoyé vers le dossier de courrier indésirable de l’utilisateur ou le dossier de suppression, et l’utilisateur a accès aux courriers électroniques dans ces dossiers.       | Tous les messages électroniques mis en quarantaine, qui ont échoué ou qui ont été supprimés. Cette inaccessibilité est entièrement inaccessible par l’utilisateur.     | Tout courrier électronique où des pièces jointes malveillantes sont remplacées par des fichiers. txt qui indiquent que la pièce jointe était malveillante.     |
+|Le courrier électronique a été remis dans la boîte de réception de l’utilisateur ou dans un autre dossier, et l’utilisateur peut y accéder directement.    | Le courrier électronique a été envoyé au dossier de courrier indésirable de l’utilisateur ou au dossier supprimé, et l’utilisateur a accès aux messages électroniques de ces dossiers.       | Tous les messages électroniques mis en quarantaine, qui ont échoué ou qui ont été supprimés, et qui ne sont pas accessibles par l’utilisateur.     | Tous les messages électroniques pour lesquels des pièces jointes malveillantes ont été remplacées par des fichiers. txt qui indiquent que les pièces jointes étaient malveillantes.     |
 
 Et voici ce que l’utilisateur peut voir, et ce qu’il ne peut pas faire :
 
@@ -68,28 +74,31 @@ Et voici ce que l’utilisateur peut voir, et ce qu’il ne peut pas faire :
 
 Emplacement de remise : affiche les résultats des stratégies et des détections qui exécutent une post-remise. Elle est liée à une action de remise. Ce champ a été ajouté pour permettre de mieux comprendre l’action entreprise lors de la détection d’un message problématique. Voici les valeurs possibles de l’emplacement de remise :
 
-1. Boîte de réception ou dossier : le courrier électronique se trouve dans la boîte de réception ou dans un dossier (en fonction de vos règles de messagerie électronique).
-2. Local ou externe : la boîte aux lettres n’existe pas sur le Cloud, mais elle est locale.
-3. Dossier courrier indésirable – courrier électronique dans le dossier courrier indésirable d’un utilisateur.
-4. Dossier éléments supprimés : le courrier électronique dans le dossier éléments supprimés d’un utilisateur.
-5. Quarantaine : message en quarantaine et absent de la boîte aux lettres d’un utilisateur.
-6. Échec : la messagerie n’a pas pu atteindre la boîte aux lettres.
-7. Ignoré : le courrier électronique est perdu dans le flux de messagerie.
+- **Boîte de réception ou dossier**: le courrier électronique est dans la boîte de réception ou dans un dossier (en fonction de vos règles de messagerie électronique).
+- **Local ou externe**: la boîte aux lettres n’existe pas sur le Cloud mais est en local.
+- **Dossier de courrier indésirable**: le courrier électronique se trouve dans le dossier de courrier indésirable d’un utilisateur.
+- **Dossier éléments supprimés**: le courrier électronique dans le dossier éléments supprimés d’un utilisateur.
+- **Mise en quarantaine**: le courrier électronique en quarantaine et ne se trouve pas dans la boîte aux lettres d’un utilisateur.
+- **Échec**: la messagerie n’a pas pu atteindre la boîte aux lettres.
+- **Ignoré**: le courrier électronique est perdu dans le flux de messagerie.
+
+### <a name="email-timeline"></a>Chronologie du courrier électronique
 
 La **chronologie par courrier électronique** est une autre nouvelle fonctionnalité d’explorateur destinée à améliorer l’expérience de la chasse des administrateurs. Il réduit le traitement aléatoire, car il y a moins de temps passé à vérifier différents emplacements pour essayer de comprendre l’événement. Lorsque plusieurs événements se produisent à la même heure ou proches de celle-ci dans un e-mail, ces événements apparaissent dans un affichage chronologie. En fait, certains événements qui ont lieu après la livraison à votre courrier seront capturés dans la colonne « action spéciale ». La combinaison des informations de la chronologie de ce message avec l’action spéciale entreprise lors de la livraison post-remise donnera aux administrateurs un aperçu de la façon dont leurs stratégies fonctionnent, où les messages ont été finalement routés et, dans certains cas, ce qu’étaient l’évaluation finale.
 
 Pour plus d’informations sur l’enquête sur les messages électroniques malveillants, consultez la rubrique [Rechercher et enquêter le courrier électronique malveillant livré dans Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
+### <a name="export-url-click-data"></a>Exporter l’URL cliquez sur données
 
-En outre, vous pouvez **exporter des rapports pour les clics d’URL** vers Microsoft Excel afin d’afficher à la fois leur ID de message réseau et leur verdict de clic, ce qui vous permet de comprendre où votre URL est à l’origine du trafic. Voici comment cela fonctionne. À partir de la gestion des menaces sur le lancement rapide Office 365, cliquez sur cette chaîne :
+En outre, vous pouvez exporter des rapports pour les clics d’URL vers Microsoft Excel afin d’afficher à la fois leur ID de message réseau et leur verdict de clic, ce qui vous permet de comprendre où votre URL est à l’origine du trafic. Voici comment cela fonctionne. À partir de la gestion des menaces sur le lancement rapide Office 365, cliquez sur cette chaîne :
 
-**Explorer > afficher le hameçonnage > clique sur > URL principales ou sur l’URL en haut-parleurs > cliquez sur un enregistrement pour ouvrir le menu volant URL**
+**Affichage de**l' > **hameçon** > **cliquer sur**les**URL principales ou sur URL en haut clics** > **cliquez sur un enregistrement pour ouvrir le menu volant d’URL**  > 
 
 Lorsque vous cliquez sur une URL de la liste, vous verrez un nouveau bouton Exporter dans le panneau de débordement. Utilisez ce bouton pour déplacer des données vers une feuille de calcul Excel pour faciliter la création de rapports.
 
-Vous pouvez accéder au même emplacement en cas de détection en temps réel comme suit :
+Vous pouvez accéder au même emplacement dans le rapport des détections en temps réel comme suit :
 
-**Explorer > des détections en temps réel > afficher les URL de > d’hameçonnage > URL principales ou les clics en haut > cliquez sur un enregistrement quelconque pour ouvrir le menu volant d’URL > accédez à l’onglet clics.**
+**** >  > **Détections en temps réel**de l’Explorateur afficher les**URL de** > **hameçonnage** > **principales ou les clics** > en haut**cliquez sur un enregistrement pour ouvrir le menu volant** > de**l’URL accédez à l’onglet clics.**
 
 > [!TIP]
 > L’ID de message réseau mappe le clic retour à des messages spécifiques lorsque vous recherchez dans l’Explorateur ou des outils tiers associés via l’ID de message réseau. La recherche par le biais de l’ID de message réseau donnera aux administrateurs le message électronique spécifique associé à un résultat de clic. Lors de l’exportation, l’identification de la corrélation de l’ID de message réseau permet une analyse plus rapide et plus puissante.
@@ -130,11 +139,11 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
    - Les **clics en haut** sont les liens fiables les URL sur lesquelles l’utilisateur a cliqué, triées par nombre total de clics (cette colonne ne montre pas non plus comment simplifier l’affichage). Nombre total par colonne indique le nombre de liens approuvés cliquez sur nombre de verdicts pour chaque URL sur laquelle vous avez cliqué. Dans la vue e-mail de hameçonnage, il s’agit plus souvent d’URL suspectes ou malveillantes, mais peut inclure des URL propres qui se trouvent dans des messages hameçons. Les clics d’URL sur les liens non justifiés ne s’afficheront pas ici.
    
-   Les deux tableaux d’URL affichent les URL les plus fréquentes dans les messages d’hameçonnage par action de remise et par emplacement, et ils affichent des clics d’URL bloqués (ou visités malgré un avertissement) afin que vous puissiez comprendre quels liens incorrects potentiels ont été reçus par les utilisateurs et interagis avec les utilisateurs. À partir de là, vous pouvez effectuer une analyse plus poussée. Par exemple, sous le graphique, vous pouvez voir les URL principales dans les messages électroniques qui ont été bloqués dans l’environnement de votre organisation.
+   Les deux tableaux d’URL affichent les URL les plus fréquentes dans les messages électroniques de hameçonnage par action de remise et par emplacement, et ils affichent des clics d’URL bloqués (ou visités malgré un avertissement) afin que vous puissiez comprendre quels liens incorrects potentiels ont été reçus par les utilisateurs et interagis avec les utilisateurs. À partir de là, vous pouvez effectuer une analyse plus poussée. Par exemple, sous le graphique, vous pouvez voir les URL principales dans les messages électroniques qui ont été bloqués dans l’environnement de votre organisation.
    
    ![URL de l’Explorateur bloquées](../media/ExplorerPhishClickVerdictURLs.png)
    
-   Sélectionnez une URL pour afficher des informations plus détaillées. Notez que dans la boîte de dialogue de menu volant d’URL, le filtrage des courriers électroniques est supprimé pour vous montrer l’affichage complet de l’exposition de l’URL dans votre environnement. Cela vous permet de filtrer les e-mails de l’Explorateur vers ceux qui vous intéressent, de rechercher des URL spécifiques qui constituent des menaces potentielles, puis de mieux comprendre l’exposition de l’URL dans votre environnement (via la boîte de dialogue détails de l’URL) sans avoir à ajouter de filtres d’URL au Affichage de l’Explorateur lui-même.
+   Sélectionnez une URL pour afficher des informations plus détaillées. **Remarque**: dans la boîte de dialogue de menu volant d’URL, le filtrage des messages électroniques est supprimé pour vous montrer l’affichage complet de l’exposition de l’URL dans votre environnement. Cela vous permet de filtrer les messages électroniques dans l’Explorateur sur ceux qui vous intéressent, de rechercher des URL spécifiques qui constituent des menaces potentielles, puis de mieux comprendre l’exposition de l’URL dans votre environnement (via la boîte de dialogue détails de l’URL) sans avoir à ajouter de filtres d’URL à affichage de l’Explorateur lui-même.
 
 ## <a name="review-email-messages-reported-by-users"></a>Examiner les messages électroniques signalés par les utilisateurs
 
@@ -153,9 +162,9 @@ Le rapport est actualisé pour afficher les données relatives aux messages éle
 ## <a name="start-automated-investigation-and-response"></a>Démarrer une enquête et une réponse automatisées
 
 > [!NOTE]
-> Les fonctionnalités de réponse aux incidents automatisées sont disponibles dans **office 365 ATP plan 2** et **Office 365 E5**.
+> Les fonctionnalités d’analyse et de réponse automatisées sont disponibles dans **office 365 ATP plan 2** et **Office 365 E5**.
 
-(Nouveau !) La [réponse automatique aux incidents](automated-investigation-response-office.md) peut permettre à l’équipe de votre équipe de sécurité de gagner du temps et de faire des efforts pour examiner et limiter les cyberattaques. En plus de configurer des alertes pouvant déclencher un manuel de sécurité, vous pouvez démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur. 
+(Nouveau !) L’analyse [et la réponse automatisées](automated-investigation-response-office.md) peuvent permettre à l’équipe de votre équipe de sécurité de gagner du temps et de faire des efforts pour examiner et limiter les cyberattaques. En plus de configurer des alertes pouvant déclencher un manuel de sécurité, vous pouvez démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur. 
 
 Pour plus d’informations, reportez-vous à l' [exemple : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
@@ -171,7 +180,7 @@ Outre les scénarios décrits dans cet article, vous disposez de nombreuses autr
 Vous devez disposer de la protection avancée contre les menaces [Office 365](office-365-atp.md) pour obtenir des détections de l’Explorateur ou en temps réel.
 - L’Explorateur est inclus dans Office 365 DAV plan 2. 
 - Le rapport de détections en temps réel est inclus dans Office 365 DAV plan 1.
-- Prévoyez d’attribuer des licences pour tous les utilisateurs qui doivent être protégés par la protection avancée contre les menaces. (L’Explorateur ou les détections en temps réel affichent les données de détection pour les utilisateurs sous licence.)
+- Prévoyez d’attribuer des licences pour tous les utilisateurs qui doivent être protégés par la protection avancée contre les menaces d’Office 365. (L’Explorateur ou les détections en temps réel affichent les données de détection pour les utilisateurs sous licence.)
 
 Pour afficher et utiliser l’Explorateur ou les détections en temps réel, vous devez disposer des autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité. 
 

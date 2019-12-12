@@ -9,16 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: fa10c4168720565770ec0a3bc4bb06486155c3cc
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871760"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970330"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le suivi des messages dans le centre de sécurité & conformité suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
 
@@ -99,7 +99,7 @@ Vous pouvez laisser la valeur par défaut **tous** sélectionnée ou vous pouvez
 
 - **Échec**: le message n’a pas été remis.
 
-- **Mis en quarantaine**: le message a été mis en quarantaine (en tant que courrier indésirable, courrier en nombre ou hameçonnage). Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx).
+- **Mis en quarantaine**: le message a été mis en quarantaine (en tant que courrier indésirable, courrier en nombre ou hameçonnage). Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md).
 
 - **Filtré en tant que courrier indésirable**: le message a été identifié comme courrier indésirable, et a été rejeté ou bloqué (non mis en quarantaine).
 
@@ -335,7 +335,7 @@ Le champ **custom_data** d’un `AGENTINFO` événement est utilisé par divers 
 
 Une valeur de **custom_data** commençant par `S:SFA` provient de l’agent de filtrage du courrier indésirable. Les détails clés sont décrits dans le tableau suivant :
 
-|**Valeur**|**Description**|
+|**Value**|**Description**|
 |:-----|:-----|
 |`SFV=NSPM`|Le message a été marqué comme n’étant pas un courrier indésirable et a été envoyé aux destinataires appropriés.|
 |`SFV=SPM`|Le message a été marqué comme courrier indésirable par le filtre de contenu.|
@@ -362,7 +362,7 @@ Voici un exemple **custom_data** valeur pour un message qui est filtré pour le 
 
 Une valeur de **custom_data** commençant par `S:AMA` provient de l’agent de filtrage des programmes malveillants. Les détails clés sont décrits dans le tableau suivant :
 
-|**Valeur**|**Description**|
+|**Value**|**Description**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` ou `AMA=EV|v=1`|Un programme malveillant a été détecté dans le message. `SUM`indique que le programme malveillant a pu être détecté par n’importe quel nombre de moteurs. `EV`indique que le programme malveillant a été détecté par un moteur spécifique. Lorsqu'un programme malveillant est détecté par un moteur, les actions suivantes se produisent.|
 |`Action=r`|Le message a été remplacé.|
@@ -385,7 +385,7 @@ Voici un exemple **custom_data** valeur d’un message contenant un programme ma
 
 Une valeur de **custom_data** commençant par`S:TRA` provient de l’agent de règles de transport pour les règles de flux de messagerie (également appelées règles de transport). Les détails clés sont décrits dans le tableau suivant :
 
-|**Valeur**|**Description**|
+|**Value**|**Description**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC de la correspondance de la règle.|

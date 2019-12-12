@@ -13,16 +13,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
-ms.openlocfilehash: 89cd473a7b7f2ff663d7ee1eee41f84144dee6d7
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 4c8b8a0711ab66607d0db5923c1115c436537bd0
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866436"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970930"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
 
-> [!NOTE] 
+> [!NOTE]
 > Ces mises à jour s’exécutent désormais et peuvent ne pas encore être disponibles pour tous les utilisateurs. Cette fonctionnalité est prise en charge pour les utilisateurs d’entreprise outlook.com. Il n’est pas disponible actuellement pour les utilisateurs outlook.com.
 
 Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
@@ -36,12 +36,11 @@ Outlook.com et Outlook sur le Web affichent des indicateurs lorsque l’expédit
 
 ## <a name="you-see-a--in-the-sender-image"></a>Un «  ? » apparaît dans l’image de l’expéditeur
 
-Lorsque Outlook.com et Outlook sur le Web ne peuvent pas vérifier l’identité de l’expéditeur à l’aide des techniques d’authentification de messagerie, ils affichent un «  ? » dans la photo de l’expéditeur. 
+Lorsque Outlook.com et Outlook sur le Web ne peuvent pas vérifier l’identité de l’expéditeur à l’aide des techniques d’authentification de messagerie, ils affichent un «  ? » dans la photo de l’expéditeur.
 
 ![Le message n’a pas passé la vérification](../media/message-did-not-pass-verification.jpg)
 
 Les messages qui ne parvient pas à s’authentifier ne sont pas tous malveillants. Toutefois, vous devez être prudent quant à l’interaction avec les messages qui ne sont pas authentifiés si vous ne reconnaissez pas l’expéditeur. Ou, si vous reconnaissez un expéditeur qui ne possède pas de «  ? » normalement dans l’image de l’expéditeur, mais que vous le voyez soudainement, cela peut être un signe que l’expéditeur est usurpé.
-
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Comment gérer les messages qui reçoivent le traitement de l’expéditeur non vérifié 
 
@@ -52,14 +51,14 @@ Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via
     ![Modification des expéditeurs non authentifiés dans l’interface graphique.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - Si un administrateur a identifié un faux positif et qu’un expéditeur ne doit pas recevoir le traitement de l’expéditeur non vérifié, vous pouvez effectuer l’une des actions suivantes pour ajouter l’expéditeur à la liste des usurpations d’identité usurpée :
-        
-    - Ajoutez la paire de domaines par le biais de la vue d’aide à la décision. Pour plus d’informations, consultez la rubrique [procédure pas à pas : usurpation](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight)d’information.
-                
-    - Ajoutez la paire de domaines via l’applet de commande PhishFilterPolicy. Pour plus d’informations, reportez-vous à [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) et à [configurer les stratégies anti-hameçonnage et anti-hameçonnage d’Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+
+  - Ajoutez la paire de domaines par le biais de la vue d’aide à la décision. Pour plus d’informations, consultez la rubrique [procédure pas à pas : usurpation](walkthrough-spoof-intelligence-insight.md)d’information.
+
+  - Ajoutez la paire de domaines via l’applet de commande PhishFilterPolicy. Pour plus d’informations, reportez-vous à [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) et à [configurer les stratégies anti-hameçonnage et anti-hameçonnage d’Office 365 ATP](set-up-anti-phishing-policies.md).
 
 En outre, nous n’appliquons pas le traitement de l’expéditeur non vérifié s’il a été remis à la boîte de réception via une liste verte d’administration, y compris les règles de transport de messagerie (ETR), la liste des domaines approuvés (stratégie anti-spam), la liste des expéditeurs approuvés ou un utilisateur a défini cet utilisateur comme « expéditeur approuvé » dans son utilitaire.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Quels critères les Outlook.com et Outlook sur le Web utilisent-ils pour ajouter les propriétés «  ? » et « via » ?
 
@@ -81,6 +80,6 @@ Pas nécessairement. Outlook.com et Outlook sur le Web peuvent avoir d’autres 
 
 [Protéger votre compte de messagerie Outlook.com](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
-[Gérer les abus, le hameçonnage ou l’usurpation d’identité dans Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
+[Gérer le hameçonnage ou l’usurpation d’identité dans Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
 [Filtrage du courrier indésirable et du courrier indésirable dans Outlook sur le Web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)

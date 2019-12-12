@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs dans Office 365 (également appelés aide au flux de messagerie).
-ms.openlocfilehash: d49937afb379b43821d905001e8aee21ca86eb52
-ms.sourcegitcommit: b91d75d2631166ddd158d26a0a476e26391a58ac
+ms.openlocfilehash: ee02be439cd3bd9405aea7a94410af794808f259
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37886857"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971772"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Renseignements sur le flux de messagerie dans Office 365
 
@@ -60,7 +60,7 @@ En règle générale, cette erreur signifie qu’Office 365 a rencontré une err
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Comment corriger le code d’erreur 450 4.4.316 ?
 
-- Si vous avez des boîtes aux lettres dans votre environnement local, vous devez modifier les paramètres de votre pare-feu pour autoriser les connexions à partir des adresses IP Office 365 sur le port TCP 25 vers vos serveurs de messagerie locaux. Pour obtenir une liste des adresses IP Office 365, consultez l'article [URL et plages d'adresses IP Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2.aspx).
+- Si vous avez des boîtes aux lettres dans votre environnement local, vous devez modifier les paramètres de votre pare-feu pour autoriser les connexions à partir des adresses IP Office 365 sur le port TCP 25 vers vos serveurs de messagerie locaux. Pour obtenir une liste des adresses IP Office 365, consultez l'article [URL et plages d'adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 - Si aucun autre message ne doit être remis dans votre environnement local, cliquez sur **Fix now** (Corriger maintenant) dans l'alerte afin qu'Office 365 puisse rejeter immédiatement les messages dont les destinataires ne sont pas valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème :
 
@@ -74,7 +74,7 @@ En règle générale, cette erreur signifie qu’Office 365 a rencontré une err
 
        - Désactivez le connecteur **** ![en cliquant sur](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifier l’icône modifier, puis désactivez la case à cocher **activer**.
 
-  - Modifiez le domaine accepté dans Office 365 associé à votre environnement de messagerie local de **relais interne** vers **faisant autorité**. Pour obtenir des instructions, consultez la rubrique [gestion des domaines acceptés dans Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=785428).
+  - Modifiez le domaine accepté dans Office 365 associé à votre environnement de messagerie local de **relais interne** vers **faisant autorité**. Pour obtenir des instructions, consultez la rubrique [gestion des domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
   **Remarque**: en règle générale, ces modifications prennent entre 30 minutes et une heure pour prendre effet. Après une heure, vérifiez que vous ne recevez plus l’erreur.
 

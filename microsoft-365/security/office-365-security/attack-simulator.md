@@ -14,26 +14,26 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: En tant qu’administrateur général Office 365, vous pouvez utiliser un simulateur d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle ne touche votre entreprise.
-ms.openlocfilehash: bb68850587647f7e96c940de10e3da23cd5e83de
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306178"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971932"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulateur d’attaques dans Office 365
 
-**Résumé** Si vous êtes un administrateur général Office 365 ou un administrateur de sécurité et que votre organisation a Office 365 Advanced Threat Protection Plan 2, qui inclut des [fonctionnalités d’enquête et de réponse aux menaces](office-365-ti.md), vous pouvez utiliser un simulateur d’attaque pour exécuter scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’influe sur votre ligne de base. Lisez cet article pour en savoir plus.
+**Résumé** Si vous êtes un administrateur général Office 365 ou un administrateur de sécurité et que votre organisation a Office 365 Advanced Threat Protection Plan 2, qui inclut des [fonctionnalités d’enquête et de réponse aux menaces](office-365-ti.md), vous pouvez utiliser un simulateur d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier les utilisateurs vulnérables avant qu’une véritable attaque n’ait un impact sur votre chiffre d’affaires. Lisez cet article pour en savoir plus.
 
 ## <a name="the-attacks"></a>Les attaques
 
 Trois types de simulations d’attaques sont actuellement disponibles :
 
-- [Nom d’affichage-attaque de Spear Phishing](#display-name-spear-phishing-attack)
+- [Attaque par harponnage du nom d’affichage](#display-name-spear-phishing-attack)
 
 - [Attaque par pulvérisation de mot de passe](#password-spray-attack)
 
-- [Attaque de mot de passe en force brute](#brute-force-password-attack)
+- [Attaque de mot de passe par force brute](#brute-force-password-attack)
 
 Pour qu’une attaque réussisse, assurez-vous que le compte que vous utilisez pour exécuter des attaques simulées utilise l’authentification multifacteur. En outre, vous devez être un administrateur général Office 365 ou un administrateur de sécurité. (Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de conformité des & de sécurité Office 365](permissions-in-the-security-and-compliance-center.md).)
 
@@ -47,13 +47,13 @@ Assurez-vous que vous et votre organisation remplissez les conditions requises s
 
 - Vous êtes un administrateur général Office 365 ou un administrateur de sécurité
 
-- L' [authentification multifacteur/l’accès conditionnel](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) est activé, pour au moins le compte administrateur général Office 365 et les administrateurs de sécurité qui utiliseront un simulateur d’attaque. (Idéalement, l’accès à plusieurs facteurs/accès conditionnel est activé pour tous les utilisateurs de votre organisation.)
+- L' [authentification multifacteur/l’accès conditionnel](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) est activé, pour au moins le compte administrateur général Office 365 et les administrateurs de sécurité qui utiliseront un simulateur d’attaque. (Idéalement, l’accès à plusieurs facteurs/accès conditionnel est activé pour tous les utilisateurs de votre organisation.)
 
 - Votre organisation dispose d' [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), avec un simulateur d’attaque &amp; visible dans le centre de sécurité conformité (allez sur **Threat Management** \> **Attack Simulator**)
 
     ![Gestion des menaces-simulateur d’attaque](../media/ThreatMgmt-AttackSimulator.png)
 
-## <a name="display-name-spear-phishing-attack"></a>Nom d’affichage-attaque de Spear Phishing
+## <a name="display-name-spear-phishing-attack"></a>Attaque par harponnage du nom d’affichage
 
 Le hameçonnage est un terme générique pour une suite d’attaques classées comme une attaque de style d’ingénierie sociale. Cette attaque est axée sur le Spear Phishing, une attaque plus ciblée, dirigée par un groupe spécifique de personnes ou une organisation. En règle générale, une attaque personnalisée avec une reconnaissance a été effectuée et utilise un nom complet qui générera une approbation dans le destinataire, comme un message électronique qui semble provenir d’un cadre de votre organisation.
 
@@ -119,7 +119,7 @@ Cette attaque est axée sur la possibilité de spécifier un mot de passe commun
 
 5. Cliquez sur **Terminer** pour lancer l’attaque.
 
-## <a name="brute-force-password-attack"></a>Attaque de mot de passe en force brute
+## <a name="brute-force-password-attack"></a>Attaque de mot de passe par force brute
 
 Une attaque de mot de passe en force contre une organisation est généralement utilisée après qu’un acteur incorrect a réussi à acquérir une liste d’utilisateurs clés auprès du client. Cette attaque consiste à essayer un ensemble de mots de passe sur le compte d’un seul utilisateur.
 
@@ -137,7 +137,7 @@ Une attaque de mot de passe en force contre une organisation est généralement 
 
 ## <a name="new-features-in-attack-simulator"></a>Nouvelles fonctionnalités dans un simulateur d’attaque
 
-De nouvelles fonctionnalités ont récemment été ajoutées au simulateur d’attaques. Ces approches sont les suivantes :
+De nouvelles fonctionnalités ont récemment été ajoutées au simulateur d’attaques. Cela inclut ce qui suit :
 
 - Fonctionnalités de création de rapports avancées. La possibilité d’afficher des données telles que le temps le plus rapide (ou le plus lent) pour ouvrir un message électronique de simulation d’attaque, le temps le plus rapide (ou le plus lent) de cliquer sur un lien dans le message, ainsi que davantage de visualisations.
 
@@ -145,7 +145,7 @@ De nouvelles fonctionnalités ont récemment été ajoutées au simulateur d’a
 
 - Importation de destinataires CSV. La possibilité d’utiliser un fichier. csv pour importer votre liste de destinataires cible au lieu d’utiliser le sélecteur de carnet d’adresses.
 
-De nouvelles fonctionnalités sont bientôt disponibles pour les simulateurs d’attaques. Ces approches sont les suivantes :
+De nouvelles fonctionnalités sont bientôt disponibles pour les simulateurs d’attaques. Cela inclut ce qui suit :
 
 - Simulation d’hameçonnage de la charge utile des pièces jointes. Possibilité d’utiliser une pièce jointe comme charge utile pour la simulation de hameçonnage à la place d’une URL.
 
@@ -155,4 +155,4 @@ Consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsof
 
 [Description du service Office 365 - Protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Office 365 protection avancée contre les menaces](office-365-atp.md)
+[Protection avancée contre les menaces dans Office 365](office-365-atp.md)

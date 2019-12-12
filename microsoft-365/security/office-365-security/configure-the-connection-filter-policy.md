@@ -14,46 +14,46 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Pour vous assurer que le courrier électronique envoyé à partir de personnes que vous approuvez n’est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte, également appelée liste d’expéditeurs approuvés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
-ms.openlocfilehash: 6dc0bc4f29446cc064420632f04265c93c0ffa1b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: d3151ab436c5d904897d518fa119d52a11db4850
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871920"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971832"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configuration de la stratégie de filtrage des connexions
 
 Nous avons tous des amis et des partenaires professionnels en qui nous avons confiance. Cela peut être frustrant de retrouver leurs messages électroniques dans votre dossier de courrier indésirable, ou même complètement bloqués par un filtre de blocage du courrier indésirable. Si vous voulez vous assurer que les messages envoyés par des personnes de confiance ne sont pas bloqués, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste d'adresses IP approuvées (également appelée liste d'expéditeurs autorisés) en lesquelles vous avez confiance. Vous pouvez également créer une liste d'expéditeurs bloqués, qui est une liste d'adresses IP, généralement d'expéditeurs de courrier indésirable connus, desquels vous ne voulez jamais recevoir de messages électroniques.
-  
+
 - Lorsque vous pensez aux *[listes d’autorisation](create-safe-sender-lists-in-office-365.md)*, gardez à l’esprit que les stratégies de filtrage des connexions se posent elles-mêmes avec les *comptes approuvés autorisés* par le filtre. Cette opération est effectuée dans le but de filtrer plus précisément les expéditeurs de courrier non approuvés ou non approuvés, tout en maintenant les éléments dont vous avez besoin. Une liste d’adresses IP autorisées de stratégie de filtrage des connexions concerne le filtrage des rares adresses IP approuvées à partir d’un pool de comptes et d’adresses IP digne de confiance, tout en garantissant un accès plus facile aux expéditeurs approuvés.
 
 - Une stratégie de filtrage des connexions la création d’une liste rouge peut être considérée comme une interception moins importante ou non fiable des comptes dans le filtre.
 
- Pour plus d'informations sur d'autres paramètres de courrier indésirable applicables à l'ensemble de l'organisation, consultez les rubriques relatives aux procédures permettant de [s'assurer qu'un message n'est pas marqué comme courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=534224) et de [bloquer le courrier indésirable avec le filtre anti-courrier indésirable d'Office 365 pour éviter les problèmes de faux négatifs](https://go.microsoft.com/fwlink/p/?LinkId=534225). Ces procédures sont utiles si vous disposez d'un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
+ Pour d’autres paramètres de courrier indésirable qui s’appliquent à l’ensemble de l’organisation, jetez un œil à la [façon d’éviter que le courrier électronique soit marqué comme courrier indésirable dans office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) ou [Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md). Elles sont utiles si vous disposez d’un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
 
 > [!TIP]
 > Vous souhaiterez peut-être suspendre et savoir comment créer des listes d' [expéditeurs autorisés (ou d’expéditeurs approuvés)](create-safe-sender-lists-in-office-365.md) et des [listes rouges](create-block-sender-lists-in-office-365.md).
-  
+
 La vidéo suivante montre les étapes de configuration de la stratégie de filtrage des connexions :
-  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Durée d'exécution estimée : 15 minutes
 
 - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée « blocage du courrier indésirable » dans la rubrique [autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) .
 
-- Pour obtenir l'adresse IP de l'expéditeur pour lequel vous souhaitez autoriser ou bloquer les messages, vous pouvez consulter l'en-tête Internet du message. Recherchez l'en-tête CIP comme décrit dans [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md). Pour plus d’informations sur l’affichage de l’en-tête d’un message dans divers clients de messagerie, voir [analyseur d’en-têtes de message](https://go.microsoft.com/fwlink/p/?LinkId=306583).
+- Pour obtenir l'adresse IP de l'expéditeur pour lequel vous souhaitez autoriser ou bloquer les messages, vous pouvez consulter l'en-tête Internet du message. Recherchez l'en-tête CIP comme décrit dans [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md). Pour plus d’informations sur l’affichage de l’en-tête d’un message dans divers clients de messagerie, consultez la rubrique [affichage des en-têtes de message Internet dans Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
 - Les courriers électroniques envoyés depuis une adresse IP dans la liste d'adresses IP bloquées sont rejetés, ne sont pas marqués comme courriers indésirables et aucun filtrage supplémentaire n'est appliqué.
 
-- La procédure de filtrage des connexions suivante peut également être exécutée via le service PowerShell à distance. Utilisez la cmdlet [Get-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedconnectionfilterpolicy) pour passer en revue vos paramètres et la cmdlet [Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy) pour modifier vos paramètres de stratégie de filtrage de connexion. Pour apprendre à utiliser Windows PowerShell afin d’établir une connexion à Exchange Online Protection, voir [Connexion à Exchange Online Protection à l’aide de Remote PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- La procédure de filtrage des connexions suivante peut également être exécutée via le service PowerShell à distance. Utilisez la cmdlet [Get-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedconnectionfilterpolicy) pour passer en revue vos paramètres et la cmdlet [Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy) pour modifier vos paramètres de stratégie de filtrage de connexion. Pour apprendre à utiliser Windows PowerShell afin d’établir une connexion à Exchange Online Protection, voir [Connexion à Exchange Online Protection à l’aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell). Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>Utilisation du Centre d'administration Exchange (CAE) pour modifier la stratégie par défaut de filtrage des connexions
 
 Créez une liste d'adresses IP approuvées ou bloquées en modifiant la stratégie de filtrage des connexions dans le Centre d'administration Exchange (CAE). Les paramètres de stratégie de filtrage des connexions sont appliqués uniquement aux messages entrants.
-  
+
 1. Dans le Centre d'administration Exchange (CAE), accédez à **Protection** \> **Filtre des connexions**, puis double-cliquez sur la stratégie par défaut.
 
 2. Cliquez sur l'option de menu **Filtrage des connexions**, puis créez les listes nécessaires : une liste d'adresses IP approuvées, une liste d'adresses IP bloquées ou les deux.
@@ -64,21 +64,21 @@ Créez une liste d'adresses IP approuvées ou bloquées en modifiant la stratég
 
    > [!NOTE]
    > Si vous ajoutez une adresse IP aux deux listes, les messages envoyés à partir de cette adresse IP sont autorisés. <br/><br/> Vous pouvez spécifier 1273 entrées maximum, sachant qu’une entrée est une adresse IP unique ou une plage CIDR d’adresses IP entre /24 et /32.<br/><br/> Si vous envoyez des messages chiffrés via TLS, les adresses IPv6 et les plages d’adresses ne sont pas prises en charge.
-  
-3. Vous pouvez également cocher la case **Activer la liste approuvée** pour éviter que les messages de certains expéditeurs connus soient bloqués. Comment ? Microsoft souscrit à des sources tierces d'expéditeurs dignes de confiance. Avec cette liste approuvée, les messages des expéditeurs fiables ne sont pas marqués en tant que courrier indésirable par erreur. Nous vous recommandons de sélectionner cette option car elle doit réduire le nombre de faux positifs (courrier classé comme courrier indésirable) que vous recevez. 
+
+3. Vous pouvez également cocher la case **Activer la liste approuvée** pour éviter que les messages de certains expéditeurs connus soient bloqués. Comment ? Microsoft souscrit à des sources tierces d'expéditeurs dignes de confiance. Avec cette liste approuvée, les messages des expéditeurs fiables ne sont pas marqués en tant que courrier indésirable par erreur. Nous vous recommandons de sélectionner cette option car elle doit réduire le nombre de faux positifs (courrier classé comme courrier indésirable) que vous recevez.
 
 4. Cliquez sur **Enregistrer**. Un résumé de vos paramètres par défaut de stratégie s'affiche dans le volet droit.
 
 ## <a name="additional-considerations-when-configuring-ip-allow-lists"></a>Considérations concernant la configuration des listes vertes IP
 
 Voici des considérations supplémentaires que vous pouvez envisager ou dont vous devez être informé lors de la configuration d'une liste verte IP.
-  
+
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>Spécification d'une plage de routage CIDR en dehors des plages recommandées
 
 Pour spécifier une plage d’adresses IP CIDR comprise entre/1 et/23, vous devez créer une règle de flux de messagerie qui fonctionne sur la plage d’adresses IP qui définit le **seuil de probabilité de courrier** indésirable (SCL) de sorte qu’aucun filtrage supplémentaire ne soit effectué par le service. Toutefois, si l’une de ces adresses IP apparaît sur une liste rouge propriétaire de Microsoft ou sur l’une de nos listes de blocage tierces, ces messages seront toujours bloqués. Il est donc vivement recommandé d’utiliser la plage d’adresses IP/24 vers/32.
-  
+
 Pour créer cette règle de flux de messagerie, procédez comme suit.
-  
+
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
 2. Cliquez sur ![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
@@ -100,11 +100,11 @@ Une fois que vous avez créé et appliqué la règle, le service contourne le fi
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Définition de l'étendue d'une exception de liste verte IP pour un domaine spécifique
 
 En règle générale, nous vous recommandons d'ajouter les adresses IP (ou plages d'adresses IP) pour tous les domaines que vous jugez fiables à la liste verte IP. Toutefois, si vous ne voulez pas que votre entrée de liste d’adresses IP autorisées s’applique à tous vos domaines, vous pouvez créer une règle de flux de messagerie (également appelée règle de transport), à l’exception de domaines spécifiques.
-  
+
 Par exemple, supposons que vous disposez de trois domaines : ContosoA.com, ContosoB.com et ContosoC.com, et que vous souhaitez ajouter l'adresse IP (pour des raisons de simplicité, nous allons utiliser 1.2.3.4) et ignorer le filtrage uniquement pour le domaine ContosoB.com. Vous allez créer une liste verte IP pour 1.2.3.4, qui définit le seuil de probabilité de courrier indésirable (SCL) sur -1 (ce qui signifie qu'il est classé comme courrier non indésirable) pour tous les domaines. Vous pouvez ensuite créer une règle de flux de messagerie qui définit le SCL de tous les domaines à l’exception de ContosoB.com sur 0. Le message est alors réanalysé pour tous les domaines associés à l'adresse IP, à l'exception de ContosoB.com qui est le domaine répertorié comme l'exception à la règle. Le SCL de ContosoB.com est toujours de -1, ce qui signifie que le filtrage est ignoré, tandis que celui de ContosoA.com et ContosoC.com est de 0, ce qui signifie qu'ils seront réanalysés par le filtre de contenu.
-  
+
 Pour ce faire, procédez comme suit :
-  
+
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
 2. Cliquez sur ![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
@@ -119,7 +119,7 @@ Pour ce faire, procédez comme suit :
 
 7. Cliquez sur **Ajouter une exception**, puis sous **sauf si**, sélectionnez **l’expéditeur** et choisissez **domaine**.
 
-8. Dans la zone **spécifier un domaine** , entrez le domaine pour lequel vous souhaitez contourner le filtrage du courrier indésirable, tel que **contosob.com**. Cliquez sur **Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif) icône pour le déplacer vers la liste des expressions. Répétez cette étape pour ajouter d'autres domaines et exceptions, puis cliquez sur **OK** quand vous avez terminé. 
+8. Dans la zone **spécifier un domaine** , entrez le domaine pour lequel vous souhaitez contourner le filtrage du courrier indésirable, tel que **contosob.com**. Cliquez sur **Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif) icône pour le déplacer vers la liste des expressions. Répétez cette étape pour ajouter d'autres domaines et exceptions, puis cliquez sur **OK** quand vous avez terminé.
 
 9. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d’informations sur ces sélections.
 
@@ -152,11 +152,11 @@ Il s’agit fondamentalement de la même procédure de création de règle à pa
 ## <a name="for-more-information"></a>Pour plus d’informations
 
 [Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
-  
+
 [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md)
-  
+
 [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
-  
-[Comment s'assurer qu'un message n'est pas marqué comme du courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=534224)
-  
-[Bloquer le courrier indésirable à l'aide du filtre d'Office 365 afin d'éviter les problèmes de faux négatifs](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+
+[Comment éviter que des messages électroniques soient marqués comme courrier indésirable dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+
+[Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md)

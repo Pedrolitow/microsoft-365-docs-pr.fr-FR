@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: 04cffc6c6e09794e4c92653c1a09dd43718f38c0
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: b782c58bc3694bd27024f9aa7cdb2316c6d2a48a
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871990"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971965"
 ---
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
@@ -91,13 +91,9 @@ Vous pouvez envoyer une notification à une adresse de messagerie spécifique qu
 
 A. Oui, vous pouvez configurer un autre service de filtrage anti-courrier indésirable et anti-programme malveillant pour protéger vos boîtes aux lettres Exchange Online. Pour le courrier entrant, vous devez rediriger les messages électroniques vers le fournisseur tiers en modifiant vos enregistrements MX afin qu’ils pointent vers ce fournisseur, puis rediriger les messages vers EOP à des fins de traitement supplémentaire. Pour effectuer cette opération pour le courrier sortant, configurez la destination de remise des messages pour le fournisseur tiers (hôte actif).
 
- **Q. Est-ce que Microsoft dispose de documentation concernant la façon dont je peux me protéger contre les tentatives de hameçonnage ?**
+ **Q. Est-ce que Microsoft dispose de documentation concernant la façon dont je peux me protéger contre les tentatives de hameçonnage ?**
 
-Oui, en effet, veuillez consulter les articles suivants :
-
-[Obtenez de l'aide pour les escroqueries par hameçonnage, les fraudes de loteries et autres types d'arnaques](https://go.microsoft.com/fwlink/p/?LinkId=325606)
-
-Arnaques par message électronique ou site web : [comment se protéger](https://go.microsoft.com/fwlink/p/?LinkID=325607)
+A. Oui, lisez [la protection de votre confidentialité sur Internet](https://support.microsoft.com/help/4091455) .
 
  **Q. Le courrier indésirable et les messages malveillants font-ils l'objet d'une enquête pour savoir qui les a envoyés, ou sont-ils transférés à des services chargés de l'application de la loi ?**
 
@@ -125,7 +121,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
 
     [Configurer SPF dans Office 365 pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-    [Foire aux questions domaines](/office365/admin/setup/domains-faq)
+    [Foire aux questions domaines](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 5. **Signature de courrier électronique avec DKIM, canonisation assouplie.**
 
@@ -159,25 +155,25 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
 
     La pratique de contrôle de consentement double consiste à demander à un utilisateur d'effectuer deux actions pour confirmer son abonnement à un courrier électronique marketing :
 
-1. une première fois en cliquant sur une case à cocher non encore activée pour indiquer qu'il consent à recevoir d'autres offres ou messages électroniques du mercaticien ;
+   1. une première fois en cliquant sur une case à cocher non encore activée pour indiquer qu'il consent à recevoir d'autres offres ou messages électroniques du mercaticien ;
 
-2. une deuxième fois lorsque le mercaticien envoie un message électronique de confirmation à l'adresse de messagerie fournie par l'utilisateur, lui demandant de cliquer sur un lien sensible au temps pour valider sa confirmation.
+   2. une deuxième fois lorsque le mercaticien envoie un message électronique de confirmation à l'adresse de messagerie fournie par l'utilisateur, lui demandant de cliquer sur un lien sensible au temps pour valider sa confirmation.
 
-    Pour les expéditeurs de publipostages, le recours au contrôle de consentement double a pour effet de leur forger une bonne réputation.
+      Pour les expéditeurs de publipostages, le recours au contrôle de consentement double a pour effet de leur forger une bonne réputation.
 
 10. **Les expéditeurs de publipostage doivent proposer un contenu transparent dont ils peuvent être jugés responsables :**
 
-1. Tout texte demandant au destinataire d'ajouter l'expéditeur à son carnet d'adresses devrait clairement indiquer qu'une telle action ne constitue par une garantie de remise.
+    1. Tout texte demandant au destinataire d'ajouter l'expéditeur à son carnet d'adresses devrait clairement indiquer qu'une telle action ne constitue par une garantie de remise.
 
-2. Lors de l'élaboration de redirections dans le corps du message, utilisez un style de lien cohérent.
+    2. Lors de l'élaboration de redirections dans le corps du message, utilisez un style de lien cohérent.
 
-3. N'envoyez pas d'images ou de pièces jointes volumineuses, ou des messages contenant uniquement une image.
+    3. N'envoyez pas d'images ou de pièces jointes volumineuses, ou des messages contenant uniquement une image.
 
-4. Si vous utilisez des pixels de suivi (bogues ou balises web), signalez clairement leur présence dans vos paramètres publics de confidentialité ou P3P.
+    4. Si vous utilisez des pixels de suivi (bogues ou balises web), signalez clairement leur présence dans vos paramètres publics de confidentialité ou P3P.
 
 11. **Mettez en forme les notifications d'état de remise du courrier sortant.**
 
-    Lors de la génération de messages de notification d'état de remise, les expéditeurs doivent suivre le format de notification de non-remise, tel que spécifié dans la rubrique [RFC 3464](https://go.microsoft.com/fwlink/?LinkId=279715).
+    Lors de la génération de messages de notification d'état de remise, les expéditeurs doivent suivre le format de notification de non-remise, tel que spécifié dans la rubrique [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt).
 
 12. **Supprimez les adresses de messagerie de notification de non-remise pour les utilisateurs inexistants.**
 
@@ -189,12 +185,10 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 
-[Protection contre le courrier indésirable pour Office 365](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
+[Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 
 [Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
 [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md)
 
 [Messages de rétrodiffusion et EOP](backscatter-messages-and-eop.md)
-
-

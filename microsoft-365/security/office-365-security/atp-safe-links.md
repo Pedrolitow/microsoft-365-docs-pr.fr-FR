@@ -22,19 +22,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La fonctionnalité liens fiables permet de vérifier le temps de cliquer sur les liens hypertexte dans les documents Office et dans les messages électroniques. Utilisez des liens fiables pour protéger votre organisation contre le hameçonnage et les autres attaques.
-ms.openlocfilehash: 2418704c7d3d1eced0194418e98f9833cf2f962b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fadec60dc25aad418480d7c26a06e92f5a2065dd
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39865904"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970910"
 ---
 # <a name="office-365-atp-safe-links"></a>Liens fiables Office 365 ATP (Protection avancée contre les menaces)
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Vue d’ensemble des liens fiables Office 365 ATP
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous utilisez Outlook.com, Office 365 Famille ou Office 365 Personnel et que vous recherchez des informations sur les liens fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous utilisez Outlook.com, Office 365 Famille ou Office 365 Personnel et que vous recherchez des informations sur les liens fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Office 365 DAV Safe Links (partie de la [protection avancée contre les menaces](office-365-atp.md)) peut vous aider à protéger votre organisation en fournissant un temps de clic pour la vérification des adresses Web (URL) dans [les messages électroniques](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) et les [documents Office](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). La protection est définie via les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) définies par votre équipe de sécurité Office 365.
   

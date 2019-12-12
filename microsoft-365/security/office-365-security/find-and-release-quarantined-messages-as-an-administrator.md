@@ -14,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: e60c0ae87f050b6e72e53b6069a61cd52df0641a
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 7d7288b85660c5569c748a3cb24a1d3cd027b72d
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871840"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971752"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur
 
 Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE). Office 365 dirige les messages en quarantaine soit parce qu’ils ont été identifiés comme courrier indésirable, soit qu’ils correspondent à une règle de flux de messagerie (également appelée règle de transport).
 
-Vous pouvez utiliser le centre de sécurité & conformité au lieu du centre d’administration Exchange pour effectuer l’une de ces tâches également ; le portail de mise en quarantaine dans le centre d’administration Exchange est défini sur decommisioned.  Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Vous pouvez utiliser le centre de sécurité & conformité au lieu du centre d’administration Exchange pour effectuer l’une de ces tâches également ; le portail de mise en quarantaine dans le centre d’administration Exchange est défini sur decommisioned. Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md).
 
 Les messages mis en quarantaine sont répertoriés sur la page de **mise en quarantaine** dans le CAE. Par défaut, les messages sont triés du plus récent au plus ancien sur la base du champ **REÇU**. Les valeurs **EXPÉDITEUR**, **OBJET** et **EXPIRE** sont également indiquées pour chaque message. Vous pouvez ordonner les messages en fonction des valeurs de l'un ou l'autre de ces champs en cliquant sur leur en-tête. Pour inverser l'ordre, cliquez sur l'en-tête de colonne une seconde fois. La page de **mise en quarantaine** affiche un maximum de 500 messages.
 
@@ -44,7 +44,7 @@ Vous pouvez consulter la liste de tous les messages mis en quarantaine, ou reche
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Vous rencontrez des difficultés ? Demandez de l’aide dans le forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-advanced-search-to-filter-and-locate-quarantined-messages"></a>Utilisation de la recherche avancée pour filtrer et rechercher des messages
 

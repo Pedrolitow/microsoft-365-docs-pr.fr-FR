@@ -1,8 +1,8 @@
 ---
-title: Surveillance et création de rapports d’application dans le centre de sécurité Microsoft 365
+title: Surveillance et création de rapports sur les applications dans le centre de sécurité Microsoft 365
 description: Décrit comment obtenir plus d’informations sur l’utilisation des applications Cloud dans votre organisation
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, moniteur, rapport, applications
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 29dd1f4ebb8d65bb6079cdc4467f1aa5e33ae906
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8688088508f57fca1ba62dd41c28cd204df5c05e
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080554"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910271"
 ---
-# <a name="app-monitoring-and-reporting-in-microsoft-365-security-center"></a>Surveillance et création de rapports d’application dans le centre de sécurité Microsoft 365
+# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les applications dans le centre de sécurité Microsoft 365
 
 Ces rapports fournissent plus d’informations sur la façon dont les applications Cloud sont utilisées dans votre organisation, notamment les types d’applications, leur niveau de risque et les alertes.
 
@@ -27,7 +27,7 @@ Ces rapports fournissent plus d’informations sur la façon dont les applicatio
 
 La protection de la **messagerie** affiche les comptes de messagerie à risque. Vous pouvez cliquer sur un compte pour approfondir vos recherches dans le centre de sécurité Microsoft Defender.
 
-![Carte de protection de la messagerie](../media/security-docs/email-protection.png)
+![Carte de protection de la messagerie](../images/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>Surveiller les autorisations d’application accordées par les utilisateurs
 
@@ -35,25 +35,25 @@ La protection de la **messagerie** affiche les comptes de messagerie à risque. 
 
 Les facteurs de risque commencent à partir d’informations générales, telles que l’éditeur de l’application, vers des mesures et des contrôles de sécurité, par exemple si l’application prend en charge le chiffrement au repos ou fournit un journal d’audit de l’activité de l’utilisateur.
 
-![Carte d’applications OAuth de sécurité d’application Cloud](../media/security-docs/cloud-app-security-oauth-apps.png)
+![Carte d’applications OAuth de sécurité d’application Cloud](../images/cloud-app-security-oauth-apps.png)
 
 ## <a name="monitor-cloud-app-user-accounts"></a>Surveiller les comptes d’utilisateur d’application Cloud
 
 **Comptes d’application Cloud pour vérifier les** comptes qui peuvent nécessiter votre attention.
 
-![Carte de révision des comptes d’application Cloud](../media/security-docs/cloud-app-accounts-for-review.png)
+![Carte de révision des comptes d’application Cloud](../images/cloud-app-accounts-for-review.png)
 
 ## <a name="understand-which-cloud-apps-are-used"></a>Comprendre les applications Cloud utilisées
 
 **Applications Cloud découvertes (catégories)** Affichez les types d’applications qui sont utilisées dans votre organisation et les liens vers le tableau de bord de découverte dans le Cloud dans la sécurité des applications Cloud. Pour plus d’informations, consultez la rubrique [QuickStart : utiliser des applications découvertes](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
 
-![Carte des catégories d’applications Cloud découvertes](../media/security-docs/discovered-cloud-apps-categories.png)
+![Carte des catégories d’applications Cloud découvertes](../images/discovered-cloud-apps-categories.png)
 
 ## <a name="monitor-where-users-access-cloud-apps"></a>Surveiller l’emplacement où les utilisateurs accèdent aux applications Cloud
 
 Les emplacements des activités de l' **application Cloud** indiquent où les utilisateurs accèdent aux applications Cloud.
 
-![Fiche des emplacements des activités de l’application Cloud](../media/security-docs/cloud-app-activity-locations.png)
+![Fiche des emplacements des activités de l’application Cloud](../images/cloud-app-activity-locations.png)
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Surveiller l’intégrité des charges de travail d’infrastructure
 
@@ -63,4 +63,4 @@ Azure Security Center offre une gestion de sécurité unifiée et une protection
 
 Pour plus d’informations, reportez-vous à [Azure Security Center documentation](https://docs.microsoft.com/azure/security-center/).
 
-![Carte d’intégrité de l’infrastructure](../media/security-docs/infrastructure-health.png)
+![Carte d’intégrité de l’infrastructure](../images/infrastructure-health.png)

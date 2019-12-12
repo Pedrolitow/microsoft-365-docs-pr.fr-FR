@@ -10,19 +10,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 189c3bb08609eb2604e77b5140e866711e8f1a09
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4cd7d6e82c07d0b5a942427c947181b2d4e80c37
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031999"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970110"
 ---
 # <a name="set-up-your-eop-service"></a>Configurer votre service EOP
 
 Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> Elle suppose que vous disposez de boîtes aux lettres locales et que vous voulez les protéger avec EOP (scénario dit « autonome »). Si vous voulez héberger toutes vos boîtes aux lettres dans le nuage avec Exchange Online, il n'est pas nécessaire de réaliser toutes les étapes décrites dans cette rubrique. Accédez à [Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286312) pour vous inscrire et acheter des boîtes aux lettres en nuage. Si vous voulez héberger certaines de vos boîtes aux lettres localement et d'autres dans le nuage, il s'agit d'un scénario hybride. Des paramètres de flux de messagerie plus avancés sont requis. [Déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) explique le flux de messagerie hybride et comporte des liens vers des ressources qui expliquent comment le configurer.
+> Elle suppose que vous disposez de boîtes aux lettres locales et que vous voulez les protéger avec EOP (scénario dit « autonome »). Si vous voulez héberger toutes vos boîtes aux lettres dans le nuage avec Exchange Online, il n'est pas nécessaire de réaliser toutes les étapes décrites dans cette rubrique. Consultez la [comparaison des plans Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) pour vous inscrire et acheter des boîtes aux lettres Cloud. Si vous voulez héberger certaines de vos boîtes aux lettres localement et d'autres dans le nuage, il s'agit d'un scénario hybride. Des paramètres de flux de messagerie plus avancés sont requis. [Déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) explique le flux de messagerie hybride et comporte des liens vers des ressources qui expliquent comment le configurer.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -30,7 +30,7 @@ Cette rubrique explique comment configurer Microsoft Exchange Online Protection 
 
 - Pour configurer les connecteurs, vous devez disposer d'un compte d'administrateur global Office 365 ou d'administrateur d'entreprise Exchange (groupe de rôles Gestion de l'organisation). Pour plus d’informations, consultez la rubrique [Feature Permissions in EOP](feature-permissions-in-eop.md).
 
-- Si vous ne vous êtes pas inscrit à EOP, consultez la page [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=282660), et choisissez d'acheter ou d'essayer le service.
+- Si vous ne vous êtes pas inscrit à EOP, consultez la page [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection), et choisissez d'acheter ou d'essayer le service.
 
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -39,7 +39,7 @@ Cette rubrique explique comment configurer Microsoft Exchange Online Protection 
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Étape 1 : utiliser le centre d’administration Microsoft 365 pour ajouter et vérifier votre domaine
 
-1. Dans le [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=521888), accédez à **configuration** pour ajouter votre domaine au service.
+1. Dans le [Centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center), accédez à **configuration** pour ajouter votre domaine au service.
 
 2. Suivez les étapes pour ajouter les enregistrements DNS applicables à votre fournisseur d'hébergement DNS afin de vérifier l'appartenance du domaine.
 

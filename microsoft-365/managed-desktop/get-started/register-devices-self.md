@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 952fac18db8ecc31fcd041dbfdf45e6ee8edee75
-ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
+ms.openlocfilehash: a1dbb5708cad32a0e37ddc25c97c70a765580f86
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37577760"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962521"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
@@ -89,7 +89,7 @@ Votre fichier doit inclure exactement les **mêmes en-têtes de colonne** que l�
 
 Dans le portail Microsoft Managed Desktop [Azure](https://aka.ms/mmdportal), sélectionnez **périphériques** dans le volet de navigation de gauche. Sélectionnez **+ inscrire les appareils**; le survol s’ouvre :
 
-[![Entrée brusque après la sélection d’appareils de Registre](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![Entrée brusque après la sélection d’appareils de caisse, liste des appareils avec des colonnes pour les utilisateurs affectés, numéro de série, État, date de dernière vue et âge](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
 
 [//]: # (Malheureusement, cela n’est pas vrai. Nous pouvons supprimer cette note, mais la laisser maintenant jusqu’à ce que nous ayons la possibilité de discuter.)

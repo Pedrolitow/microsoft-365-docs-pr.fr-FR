@@ -4,7 +4,6 @@ keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menac
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,32 +12,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Prise en main des fonctionnalités de réponse aux incidents automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 9db3a788f5a2f2c7101b5165935884c1d76bccbd
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
+ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813864"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967987"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Enquêter et répondre automatiquement aux menaces dans Office 365
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
-En fonction de votre abonnement, [Office 365 protection avancée contre les menaces](office-365-atp.md) peut inclure des fonctionnalités de réponse aux incidents (air) automatisées qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité pour traiter les alertes et les menaces.
+En fonction de votre abonnement, [Office 365 protection avancée contre les menaces](office-365-atp.md) peut inclure des fonctionnalités d’analyse et de réponse automatisées (air) qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité pour traiter les alertes et les menaces.
 
-- Pour commencer à utiliser les fonctionnalités AIR dans Office 365, utilisez cet article. 
-- Pour obtenir une vue d’ensemble du fonctionnement de l’avion, voir [réponse automatique aux incidents dans Office 365](automated-investigation-response-office.md).
+- Pour commencer à utiliser les fonctionnalités d’analyse et de réponse automatisées dans Office 365, utilisez cet article. 
+- Pour obtenir une vue d’ensemble du fonctionnement, voir [Automated Investigation and Response in Office 365](automated-investigation-response-office.md).
 
-Avec AIR, lorsque certaines alertes sont déclenchées, un ou plusieurs règles de sécurité se déclenchent et une enquête automatisée commence. Pendant et après un processus d’enquête automatisé, l’équipe des administrateurs et des opérations de sécurité peut :
+> [!TIP]
+> Avez-vous Microsoft 365 E5 ou Microsoft 365 E3 avec l’Identity & protection contre les menaces ? Envisagez [d’essayer l’automatisation des recherches et de la réponse (air) dans la protection contre les menaces Microsoft](../mtp/mtp-autoir.md).
+
+Avec des fonctionnalités d’analyse et de réponse automatisées, lorsque certaines alertes sont déclenchées, un ou plusieurs règles de sécurité se déclenchent et le processus d’enquête automatisé commence. Pendant et après un processus d’enquête automatisé, votre équipe de sécurité peut effectuer les opérations suivantes :
 
 - [Afficher les détails d’une enquête](#view-details-of-an-investigation)
 - [Passer en revue et approuver les actions à la suite d’une enquête](#review-and-approve-actions) 
 - [Afficher les détails d’une alerte liée à une enquête](#view-details-about-an-alert-related-to-an-investigation)
 
+> [!IMPORTANT]
+> Pour effectuer les tâches décrites dans cet article, vous devez disposer des autorisations appropriées. Consultez la rubrique [Required Permissions to use air Capabilities](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
+
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 
-1. En tant qu’administrateur général Office 365, administrateur de sécurité ou lecteur de sécurité, [https://protection.office.com](https://protection.office.com) accédez à et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
 
 2. Effectuez l’une des opérations suivantes :
 
@@ -60,7 +65,7 @@ Avec AIR, lorsque certaines alertes sont déclenchées, un ou plusieurs règles 
 
 Dans Office 365, les analyses automatiques entraînent généralement une ou plusieurs actions recommandées. Toutefois, aucune action n’est effectuée tant qu’elles n’ont pas été approuvées par votre équipe des opérations de sécurité. Utilisez la procédure suivante pour passer en revue et approuver les actions.
 
-1. En tant qu’administrateur général Office 365, administrateur de sécurité ou lecteur de sécurité, [https://protection.office.com](https://protection.office.com) accédez à et connectez-vous. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. 
 
 2. Accédez aux **** > **enquêtes**de gestion des menaces.
 
@@ -76,7 +81,7 @@ Dans Office 365, les analyses automatiques entraînent généralement une ou plu
 
 Certains types d’alertes déclenchent une enquête automatisée dans Office 365. Pour en savoir plus, consultez la rubrique [alertes](automated-investigation-response-office.md#alerts). Utilisez la procédure suivante pour afficher les détails d’une alerte associée à une enquête automatisée.
 
-1. En tant qu’administrateur général Office 365, administrateur de sécurité ou lecteur de sécurité, [https://protection.office.com](https://protection.office.com) accédez à et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
 
 2. Accédez aux **** > **enquêtes**de gestion des menaces.
 

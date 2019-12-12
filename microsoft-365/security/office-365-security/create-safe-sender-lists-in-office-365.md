@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si vous souhaitez être sûr de recevoir des messages d’un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le centre d’administration Exchange.
-ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793678"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970850"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs approuvés dans Office 365
 
@@ -74,7 +74,7 @@ N’ajoutez pas de domaines que vous possédez ou des domaines populaires ( `mic
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>Utiliser des expéditeurs approuvés Outlook (géré par l’utilisateur final)
 
-Au lieu d’autoriser une adresse, un domaine ou une adresse IP de manière globale, les utilisateurs finaux peuvent également autoriser l’envoi d’adresses via des expéditeurs approuvés Outlook. Les étapes à suivre pour configurer cette configuration diffèrent entre [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46) et le [client Outlook](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Lorsque les messages sont autorisés en raison des expéditeurs approuvés, vous verrez SFV : SFE dans le X-Forefront-antispam-Report,** ce qui indique que le filtrage du courrier indésirable/de l’usurpation/hameçonnage est contourné.
+Au lieu d’autoriser une adresse, un domaine ou une adresse IP de manière globale, les utilisateurs finaux peuvent également autoriser l’envoi d’adresses via des expéditeurs approuvés Outlook. Les étapes à suivre pour configurer cette configuration diffèrent entre [Outlook sur le Web](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) et le [client Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Lorsque les messages sont autorisés en raison des expéditeurs approuvés, vous verrez SFV : SFE dans le X-Forefront-antispam-Report,** ce qui indique que le filtrage du courrier indésirable/de l’usurpation/hameçonnage est contourné.
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>Utiliser la stratégie de blocage du courrier indésirable listes d’adresses IP autorisées
 
