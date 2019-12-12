@@ -13,18 +13,21 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837328"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971542"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
 **Exchange Online Protection (EoP)** est le cœur de la sécurité des abonnements Office 365 et empêche les messages électroniques malveillants d’atteindre les boîtes de réception de vos employés. Toutefois, avec de nouvelles attaques plus sophistiquées émergentes tous les jours, des protections améliorées sont souvent requises. **Office 365 Advanced Threat Protection (ATP)** Le plan ATP 1 ou le plan ATP 2 contiennent des fonctionnalités supplémentaires qui donnent aux administrateurs plus de couches de sécurité, de contrôle et d’enquête.
 
 Bien que nous permettons aux administrateurs de sécurité de personnaliser leurs paramètres de sécurité, il existe deux niveaux de sécurité dans EOP et Office 365 ATP qui nous sont recommandés : **standard** et **strict**. L’environnement et les besoins de chaque client sont différents, mais nous pensons que ces niveaux de configurations de filtrage des messages empêchent le courrier indésirable d’atteindre la boîte de réception de vos employés dans la plupart des cas.
+
+> [!IMPORTANT]
+> La configuration du courrier indésirable doit être activée sur la boîte aux lettres afin que le filtrage fonctionne correctement. Cette option est activée par défaut, mais elle doit être vérifiée si le filtrage ne semble pas fonctionner. Consultez [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) pour en savoir plus. 
 
 Cette rubrique décrit ces paramètres recommandés par Microsoft pour vous aider à protéger vos utilisateurs Office 365.
 
@@ -41,7 +44,7 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 |Action de détection de courrier d’hameçonnage|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier hameçon à haute fiabilité|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier en nombre|Déplacer le message dans le dossier Courrier indésirable|Mettre en quarantaine le message||
-|Définir le seuil de courrier électronique en masse sur|6 |4 |La valeur par défaut est actuellement 7, mais nous recommandons que la plupart des organisations la déplacent vers un minimum de 6|
+|Définir le seuil de courrier électronique en masse sur|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine|30 jours|30 jours||
 |Conseils de sécurité|Activé|Activé||
 |Expéditeurs autorisés|Aucune|Aucune||
@@ -137,7 +140,7 @@ Les clients EOP bénéficient d’une protection antiphishing de base comme déc
 |EnableAuthenticationSafetyTip|True|True|Ce paramètre est disponible uniquement dans PowerShell|
 |EnableAuthenticationSoftPassSafetyTip|False|Vrai|Ce paramètre est disponible uniquement dans PowerShell|
 |EnableSuspiciousSafetyTip|False|Vrai|Ce paramètre est disponible uniquement dans PowerShell|
-|TreatSoftPassAsAuthenticated|Vrai|Faux|Ce paramètre est disponible uniquement dans PowerShell|
+|TreatSoftPassAsAuthenticated|Vrai|False|Ce paramètre est disponible uniquement dans PowerShell|
 
 |Nom de la fonctionnalité de sécurité des paramètres avancés|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
@@ -163,4 +166,3 @@ Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables|Désactiv�
 |Pièces jointes approuvées ATP réponse aux programmes malveillants inconnus|Bloc|Bloc||
 |Redirection de la pièce jointe sur la détection|Activé|Activé|Rediriger vers l’adresse de messagerie d’un administrateur de sécurité qui sait comment déterminer si la pièce jointe est un programme malveillant ou non|
 |Réponse aux pièces jointes approuvées ATP si l’analyse contre les pièces jointes expire ou si une erreur se produit|Activé|Activé||
-

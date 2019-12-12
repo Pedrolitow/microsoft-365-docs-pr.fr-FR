@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) offre un grand nombre de rapports qui peuvent vous aider à déterminer l'état général de votre organisation. Il existe également des outils vous permettant de résoudre des problèmes liés à des événements spécifiques (comme un message n'arrivant pas aux destinataires appropriés) et des rapports d'audit pour vous aider à respecter les exigences de conformité. Le tableau suivant décrit les rapports et les outils de dépannage disponibles pour les administrateurs EOP.
-ms.openlocfilehash: 81b4ce3d22fbf33dc2f22a4b0a73a3459b1874ee
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 251286fca4ed54b87809c46e6e0f47ea618df747
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441411"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971506"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Création de rapports et suivi des messages dans Exchange Online Protection
 
@@ -31,15 +31,15 @@ Microsoft Exchange Online Protection (EOP) offre un grand nombre de rapports qui
 
 **Utilisation des boîtes aux lettres**: afficher des informations sur l’espace de stockage utilisé, la consommation de quota, le nombre d’éléments et la dernière activité (activité d’envoi ou de lecture) pour les boîtes aux lettres.
 
-Pour plus d'informations, voir les ressources suivantes :
+Pour plus d'informations, consultez les ressources suivantes :
 
-- [Rapports Office 365 dans le centre d’administration-groupes Office 365](https://go.microsoft.com/fwlink/p/?linkid=861610)
+- [Rapports Office 365 dans le centre d’administration-groupes Office 365](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [Rapports Office 365 dans le Centre d'administration - Activité du courrier électronique](https://go.microsoft.com/fwlink/p/?linkid=859706)
+- [Rapports Office 365 dans le Centre d'administration - Activité du courrier électronique](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [Rapports Office 365 dans le Centre d'administration - Utilisation des applications de messagerie](https://go.microsoft.com/fwlink/p/?linkid=859707)
+- [Rapports Office 365 dans le Centre d'administration - Utilisation des applications de messagerie](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [Rapports Office 365 dans le Centre d'administration - Utilisation des boîtes aux lettres](https://go.microsoft.com/fwlink/p/?linkid=859708)
+- [Rapports Office 365 dans le Centre d'administration - Utilisation des boîtes aux lettres](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Sécurité & des rapports de conformité dans le centre d’administration Microsoft 365
 
@@ -49,17 +49,15 @@ Ces rapports améliorés fournissent une expérience de création de rapports in
 
 **EOP**: Affichez des informations sur les détections de programmes malveillants, le courrier falsifié, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation.
 
-[Afficher les rapports de protection avancée contre les menaces et Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=852409)
+[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Rapports personnalisés à l’aide de Microsoft Graph
 
-Créer par programme des rapports qui sont disponibles dans le centre d’administration Microsoft 365 à l’aide de Microsoft Graph, consultez les sous-rubriques relatives à l’utilisation des [rapports d’utilisation d’Office 365 dans Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135)
+Créez par programme des rapports qui sont disponibles dans le centre d’administration Microsoft 365 à l’aide de Microsoft Graph. Voir les sous-rubriques relatives [à l’utilisation des rapports d’utilisation Office 365 dans Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
 
-## <a name="custom-reports-using-reporting-web-services"></a>Rapports personnalisés à l’aide des services web de rapport
+## <a name="custom-reports-using-microsoft-graph"></a>Rapports personnalisés à l’aide de Microsoft Graph
 
-Créer par programme des rapports à partir des applets de commande Exchange Online Protection PowerShell disponibles à l’aide du filtrage des requêtes REST/ODATA2.
-
-Voir les [services Web de création de rapports Office 365](https://go.microsoft.com/fwlink/p/?LinkId=279926)
+Créer des rapports par programme. Voir [vue d’ensemble de Microsoft Graph](https://docs.microsoft.com/graph/overview).
 
 ## <a name="message-trace"></a>Suivi des messages
 

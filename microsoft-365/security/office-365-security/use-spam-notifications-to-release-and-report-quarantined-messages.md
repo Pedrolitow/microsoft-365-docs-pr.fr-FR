@@ -16,28 +16,28 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: Si votre administrateur Active les notifications pour les utilisateurs, vous recevrez un message de notification répertoriant les messages envoyés à votre boîte aux lettres identifiés comme courriers indésirables, en masse ou par hameçonnage. Vous pouvez publier ou signaler des messages après leur notification.
-ms.openlocfilehash: 7042f847dbc8df9d60efc694a07a258eff411f6d
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 4cf592f0aec948c3c8f6383cf288fb32ac644cd6
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772208"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971362"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Utilisation des notifications de courrier indésirable de l’utilisateur pour le déblocage et le signalement des messages de courrier indésirable mis en quarantaine dans Office 365
 
 Si votre administrateur active des notifications de courrier indésirable pour les utilisateurs, vous recevrez un message de notification répertoriant les messages adressés à votre boîte aux lettres identifiés comme courrier indésirable et mis en quarantaine.
-  
+
 > [!TIP]
-> Si vous êtes administrateur et que vous souhaitez activer cette fonctionnalité, vous pouvez choisir l’option lorsque vous [modifiez une stratégie de blocage du courrier indésirable par défaut](https://go.microsoft.com/fwlink/?LinkId=800313). 
-  
+> Si vous êtes administrateur et que vous souhaitez activer cette fonctionnalité, vous pouvez choisir l’option lorsque vous [modifiez une stratégie de blocage du courrier indésirable par défaut](configure-your-spam-filter-policies.md).
+
 Le message que vous recevez inclut le nombre de messages indésirables mis en quarantaine que vous avez, ainsi que la date et l’heure (au format UTC ou UTC) du dernier message de la liste. La liste inclut les éléments suivants pour chaque message :
-  
-- **Expéditeur** Nom d’envoi et adresse de messagerie du message en quarantaine. 
-    
-- **Objet** Texte de l'objet du message en quarantaine. 
-    
-- **Date** Date et heure (UTC) auxquelles le message a été mis en quarantaine.     
-  
+
+- **Expéditeur** Nom d’envoi et adresse de messagerie du message en quarantaine.
+
+- **Objet** Texte de l'objet du message en quarantaine.
+
+- **Date** Date et heure (UTC) auxquelles le message a été mis en quarantaine.
+
 Voici les actions que vous pouvez effectuer avec un message en quarantaine :
 
 - **Bloquer l’expéditeur** si vous souhaitez qu’Office 365 ajoute l’expéditeur à votre liste des expéditeurs bloqués.
@@ -45,9 +45,7 @@ Voici les actions que vous pouvez effectuer avec un message en quarantaine :
 - **Passez en revue** pour accéder au portail de mise en quarantaine dans le centre de sécurité et conformité si vous souhaitez effectuer d’autres actions, telles que l’aperçu ou la publication.
 
 Prenez en considération ce qui suit :
-  
-- Les messages mis en quarantaine, car ils correspondent à une règle de flux de messagerie, ne sont pas inclus dans les messages mis en quarantaine par l’utilisateur. Seuls les messages mis en quarantaine car identifiés comme courrier indésirable sont répertoriés.
-    
-- Vous ne pouvez libérer un message et le signaler comme faux positif (légitime) qu'une fois.
-    
 
+- Les messages mis en quarantaine, car ils correspondent à une règle de flux de messagerie, ne sont pas inclus dans les messages mis en quarantaine par l’utilisateur. Seuls les messages mis en quarantaine car identifiés comme courrier indésirable sont répertoriés.
+
+- Vous ne pouvez libérer un message et le signaler comme faux positif (légitime) qu'une fois.

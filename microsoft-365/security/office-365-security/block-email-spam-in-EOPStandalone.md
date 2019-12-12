@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Document pour les administrateurs autonomes d’EOP afin d’éviter le courrier indésirable faux négatifs
-ms.openlocfilehash: cc0237ddc127c9818ae9cf4916187485e4d1dee7
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871950"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971902"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Paramètres pour personnaliser le filtre anti-courrier indésirable Office 365
 
@@ -31,7 +31,7 @@ Un administrateur peut utiliser plusieurs paramètres du filtre anti-courrier in
 
 Personnalisez votre filtre anti-courrier indésirable Office 365 en ajoutant l’adresse IP de l’expéditeur à la liste d’adresses IP bloquées du filtrage des connexions :
 
-1. Obtenez les en-têtes du message que vous souhaitez bloquer dans votre courrier client tel qu’Outlook ou Outlook sur le Web(anciennement connu sous le nom d’Outlook Web App) , comme décrit dans la rubrique [Analyseur d’En-têtes de Message](https://go.microsoft.com/fwlink/p/?LinkId=306583).
+1. Obtenez les en-têtes du message que vous souhaitez bloquer dans votre client de messagerie tel qu’Outlook ou Outlook sur le web (anciennement connu sous le nom d’Outlook Web App), comme décrit dans [Afficher les en-têtes de messages Internet dans Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
 2. Recherchez l’adresse IP qui suit la balise CIP dans l’en-tête X-Forefront-Antispam-Report à l’aide de l’[analyseur d’en-têtes de message](https://testconnectivity.microsoft.com/?tabid=mha) ou manuellement.
 
@@ -49,7 +49,7 @@ Le courrier indésirable que vous recevez comprend essentiellement du courrier e
 
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Blocage des faux négatifs et du courrier indésirable par les utilisateurs eux-mêmes avec le filtre anti-courrier indésirable Office 365
 
-Pour vous aider à bloquer les faux négatifs et le courrier indésirable dans Office 365, nous vous recommandons d’inviter vos utilisateurs à ajouter l’adresse de l’expéditeur du courrier indésirable à leur liste d’expéditeurs bloqués dans [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) ou [Outlook sur le Web](https://go.microsoft.com/fwlink/p/?LinkId=294862). Dans Outlook Web App, cliquez sur **Paramètres** \> **Options** \> **Bloquer ou autoriser**, puis ajoutez l’adresse à la liste des **Expéditeurs bloqués**, comme illustré ci-dessous.
+Pour vous aider à bloquer les faux négatifs et le courrier indésirable dans Office 365, nous vous recommandons d’inviter vos utilisateurs à ajouter l’adresse de l’expéditeur du courrier indésirable à leur liste d’expéditeurs bloqués dans [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) ou [Outlook sur le Web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d). Dans Outlook Web App, cliquez sur **Paramètres** \> **Options** \> **Bloquer ou autoriser**, puis ajoutez l’adresse à la liste des **Expéditeurs bloqués**, comme illustré ci-dessous.
 
 ![Blocage d’un expéditeur dans Outlook sur le Web ](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
