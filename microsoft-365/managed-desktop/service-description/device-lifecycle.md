@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 88abd7bd8b2b4a9af37a1daf5579ac6268a9f927
-ms.sourcegitcommit: e5aa684dab9b4dbe92002d31e69e7225bd8f95a1
+ms.openlocfilehash: 431b28635f856ebd50e1de4129c00149e1e7c78d
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348873"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962341"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Cycle de vie des produits bureau géré Microsoft
 
@@ -19,11 +19,11 @@ Microsoft Managed Desktop propose aux utilisateurs finaux qu’ils utilisent tou
 Cette rubrique décrit en détail le cycle de vie des appareils à mesure qu’ils sont ajoutés et supprimés du catalogue approuvé. 
 
 > [!NOTE]
-> Dans cette rubrique, nous allons établir une distinction entre le «périphérique» et le «produit». Par «périphérique», nous entendons un ordinateur individuel spécifique. Par exemple, «Serial Number 1234», «Bill Laptop», «Shared VM XYZ» se réfèrent à des appareils spécifiques. Toutefois, un «produit» fait référence à une collection ou à une famille d’appareils. Par exemple, «Fabrikam Laptop», «adatum ZX450 Laptop», etc. Ceci est important, car les produits sont ajoutés à notre liste ou catalogue [approuvé](device-list.md), et les appareils sont les ce que vous obtenez inscrit dans Microsoft Managed Desktop.
+> Dans cette rubrique, nous allons établir une distinction entre le « périphérique » et le « produit ». Par « périphérique », nous entendons un ordinateur individuel spécifique. Par exemple, « Serial Number 1234 », « Bill Laptop », « Shared VM XYZ » se réfèrent à des appareils spécifiques. Toutefois, un « produit » fait référence à une collection ou à une famille d’appareils. Par exemple, « Fabrikam Laptop », « adatum ZX450 Laptop », etc. Ceci est important, car les produits sont ajoutés à notre liste ou catalogue [approuvé](device-list.md), et les appareils sont les ce que vous obtenez inscrit dans Microsoft Managed Desktop.
 
 ## <a name="product-lifecycle"></a>Cycle de vie du produit
 
- En règle générale, les produits passent par les phases de cycle de vie suivantes:
+ En règle générale, les produits passent par les phases de cycle de vie suivantes :
 
 - [Version et évaluation du produit](#product-release-and-evaluation)
 - [Période de disponibilité principale du produit](#product-primary-availability-period)
@@ -31,13 +31,13 @@ Cette rubrique décrit en détail le cycle de vie des appareils à mesure qu’i
 - [Retrait du produit](#product-retirement)
 
 
-La séquence entière est illustrée dans cette illustration:
+La séquence entière est illustrée dans cette illustration :
 
-![chronologie de la durée de vie](images/non-dark1-edits.PNG)
+![chronologie du cycle de vie : en commençant par la disponibilité générale du produit, la « disponibilité principale » est de deux ans. Pendant ce temps, la fenêtre de certification se termine et, à un moment donné, l’appareil est intégré. À la fin de la disponibilité principale, le produit est archivé et la « période de grâce » de trois ans commence. À partir du moment où l’appareil est intégré, il dispose d’une période d’utilisation de 3 ans jusqu’à ce qu’il soit retiré de la gestion. À la fin de la période de grâce, nous supprimons le produit du catalogue.](images/non-dark1-edits.PNG)
 
-Les produits restent dans le catalogue pendant une période de 24 mois, mais les *appareils* restent sous gestion pendant 3 ans en fonction de leur date d’inscription individuelle. En effet, chaque produit a trois dates importantes, mais chaque périphérique ne possède qu’un seul. Pour les produits, ces trois dates sont calculées en fonction de la *Date d’approbation*et, par conséquent, nous publions ces dates lors de l’approbation afin que vous puissiez toujours continuer et planifier l’ensemble du cycle de vie du produit.
+Les produits restent dans le catalogue pendant une période de 24 mois, mais les <em>appareils</em> restent sous gestion pendant 3 ans en fonction de leur date d’inscription individuelle. En effet, chaque produit a trois dates importantes, mais chaque périphérique ne possède qu’un seul. Pour les produits, ces trois dates sont calculées en fonction de la <em>Date d’approbation</em>et, par conséquent, nous publions ces dates lors de l’approbation afin que vous puissiez toujours continuer et planifier l’ensemble du cycle de vie du produit.
 
-Ce tableau montre des exemples de dates pour un produit théorique:
+Ce tableau montre des exemples de dates pour un produit théorique :
 
 
 |Produit  |Date approuvée  |Fin de la disponibilité principale  |Fin de eligiblity  |
@@ -45,7 +45,7 @@ Ce tableau montre des exemples de dates pour un produit théorique:
 |Ordinateur portable Fabrikam    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
 |Ordinateur portable adatum   | 1/1/2018 | 6/1/2020 | 6/1/2023  |
 
-Ce tableau montre des exemples de dates pour les *appareils*théoriques:
+Ce tableau montre des exemples de dates pour les *appareils*théoriques :
 
 
 |ID de l’appareil  |Date d’enregistrement  |Date de déclassement  |
@@ -56,7 +56,7 @@ Ce tableau montre des exemples de dates pour les *appareils*théoriques:
 
 ## <a name="product-release-and-evaluation"></a>Version et évaluation du produit
 
-Le cycle de vie du produit démarre lorsqu’un fabricant publie publiquement le produit:
+Le cycle de vie du produit démarre lorsqu’un fabricant publie publiquement le produit :
 
 ![chronologie de cycle de vie montrant la publication et la période d’évaluation](images/non-dark3-edits.PNG)
 
@@ -69,24 +69,24 @@ Microsoft Managed Desktop n’évalue que les appareils pour la certification da
 
 ## <a name="product-primary-availability-period"></a>Période de disponibilité principale du produit
 
-Cette période est le cœur de la disponibilité du produit:
+Cette période est le cœur de la disponibilité du produit :
 
 ![chronologie de la durée de vie avec la disponibilité principale](images/non-dark4-edits.PNG)
 
 Tout périphérique inscrit pendant cette période reçoit les trois années de prise en charge complètes du bureau géré Microsoft (comme illustré par le scénario bleu). Cette période dure jusqu’à ce qu’une date de fin soit définie sur 24 mois à compter de la date de disponibilité générale.
 
-Vous pouvez considérer cette période comme une «ouverture» efficace, afin d’optimiser la valeur du bureau géré Microsoft, vous devez cibler vos modèles d’approvisionnement et les produits sélectionnés pour qu’ils tombent dans cette période. En guise d’exemple, un client doit éviter de régler sur une période de déploiement sur deux ans à l’aide d’un produit qui se trouve dans le dernier mois de la disponibilité principale: la plupart de ces appareils ne recevront pas les trois années complètes de gestion de bureau géré Microsoft (voir [grâce période](#product-grace-period) pour plus d’informations).  
+Vous pouvez considérer cette période comme une « ouverture » efficace, afin d’optimiser la valeur du bureau géré Microsoft, vous devez cibler vos modèles d’approvisionnement et les produits sélectionnés pour qu’ils tombent dans cette période. En guise d’exemple, un client doit éviter de le régler sur une période de déploiement sur deux ans à l’aide d’un produit qui se trouve dans le dernier mois de la disponibilité principale : la plupart de ces appareils ne recevront pas les trois années complètes de la gestion de bureau géré Microsoft (voir [période de grâce](#product-grace-period) pour plus d’informations).  
 
 ## <a name="product-grace-period"></a>Période de grâce du produit
 
 La période de grâce du produit est une période de trois ans suivant la disponibilité principale. Cette phase vous permet d’inscrire des appareils provenant d’une famille de produits pris en charge, tout en conservant les promesses du bureau géré Microsoft concernant les performances du matériel et des appareils modernes. Cette phase est idéale pour les clients qui ont pris des décisions d’approvisionnement avant de connaître Microsoft Managed Desktop. 
 
-Si vous avez récemment acheté un certain nombre d’appareils approuvés avant de vous inscrire à l’aide de Microsoft Managed Desktop, vous pouvez toujours les inscrire, mais vous ne recevrez pas les trois années de gestion. Au lieu de cela, ils ne sont pas conformes à la date de déclassement, quel que soit le moment de leur enregistrement. En arrière-plan, le bureau géré Microsoft traitera ces appareils comme s’ils étaient inclus dans le dernier jour de disponibilité principale. Dans cette illustration, vous pouvez voir ce scénario en notant que le périphérique bleu et le périphérique vert se terminent le même jour, en dépit de leur différence d’un an dans l’enregistrement:
+Si vous avez récemment acheté un certain nombre d’appareils approuvés avant de vous inscrire à l’aide de Microsoft Managed Desktop, vous pouvez toujours les inscrire, mais vous ne recevrez pas les trois années de gestion. Au lieu de cela, ils ne sont pas conformes à la date de déclassement, quel que soit le moment de leur enregistrement. En arrière-plan, le bureau géré Microsoft traitera ces appareils comme s’ils étaient inclus dans le dernier jour de disponibilité principale. Dans cette illustration, vous pouvez voir ce scénario en notant que le périphérique bleu et le périphérique vert se terminent le même jour, en dépit de leur différence d’un an dans l’enregistrement :
 
 
 ![chronologie de la durée de vie avec la période de grâce](images/non-dark2-edits.PNG)
 
-L’exemple de Fabrikam Laptop du tableau précédent illustre cette situation: 
+L’exemple de Fabrikam Laptop du tableau précédent illustre cette situation : 
 
 |Produit  |Date approuvée  |Fin de la disponibilité principale  |Fin de eligiblity  |
 |---------|---------|---------|---------|
@@ -108,7 +108,7 @@ Un périphérique n’est pas conforme lorsque sa fenêtre autorisée pour la ge
 L’équipe de bureau géré Microsoft sait que les cycles d’approvisionnement sont longs et planifiés sur les budgets de longue durée. Pour vous assurer que vous êtes toujours conscient de l’état de votre population de périphériques, nous fournissons un [site Web](https://aka.ms/mmdportal) qui répertorie tous les périphériques sous gestion, la date de la retraite future et un état indiquant sa conformité. Cela signifie que vous avez toujours les dernières informations relatives à l’âge de l’appareil et que vous pouvez utiliser le rapport dans n’importe quel cycle de planification des approvisionnements. 
 
 
-En outre, nous allons également effectuer les actions automatiques suivantes pour vous assurer que les nouveaux appareils sont déployés à temps:
+En outre, nous allons également effectuer les actions automatiques suivantes pour vous assurer que les nouveaux appareils sont déployés à temps :
 
 
 |Chronologie  |Action  |

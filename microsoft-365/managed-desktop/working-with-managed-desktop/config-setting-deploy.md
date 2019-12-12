@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 244070c7fd2d5c98f87990bcb4ef6de96ca5a90c
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012299"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962241"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables-bureau géré Microsoft
 
@@ -40,11 +40,12 @@ Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez déployer, puis sélectionnez le déploiement intermédiaire à déployer.
 4. Sélectionnez **déployer** pour déployer la modification dans l’un des groupes de déploiement.
 
-![Vue d’ensemble](images/1deployedit.png) de l’état de déploiement des paramètres configurables Microsoft Managed Desktop recommande le déploiement aux groupes de déploiement dans cet ordre : test, First, Fast, puis large. 
+![Espace de travail État de déploiement. Volet sites de confiance à droite. La section groupes de déploiement comporte trois colonnes : les groupes de déploiement, les appareils et l’État. Dans la colonne État, « déployer » est mis en surbrillance.](images/1deployedit.png)
+Nous vous recommandons de déployer les groupes de déploiement dans cet ordre : test, First, Fast, puis large. 
 
 Lorsque les modifications sont terminées dans chaque groupe, l’État devient **terminé**.
 
-![Déploiement des paramètres configurables terminé](images/2completeedit.png)
+![Espace de travail État de déploiement avec les colonnes Date de mise à jour, version, test, tout d’abord, rapide et large. La ligne proxy est développée, avec un paramètre daté indiquant « terminé » dans chacun des quatre groupes de déploiement.](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>Rétablir le déploiement
 
@@ -56,9 +57,9 @@ Nous allons vous montrer les étapes permettant de rétablir une modification à
 1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
 2. Sous **paramètres**, sélectionnez **configurable**.
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez rétablir, puis sélectionnez le déploiement intermédiaire à rétablir.
-4. Sous **nécessité de rétablir cette modification**, sélectionnez **rétablir le déploiement**.
+4. Sous **besoin de rétablir cette modification ?**, sélectionnez **rétablir le déploiement**.
 
-![Rétablissement du déploiement des paramètres configurables](images/3revert.png) 
+![Espace de travail État de déploiement. Pages de démarrage du navigateur est sélectionné, en ouvrant un volet du côté droit avec des données sur la modification envoyée et son état. Dans la partie inférieure se trouve la zone « je dois rétablir ce changement » où vous pouvez sélectionner « rétablir le déploiement ».](images/3revert.png) 
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Vue d’ensemble des paramètres configurables](config-setting-overview.md)

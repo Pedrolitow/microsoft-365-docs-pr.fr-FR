@@ -1,19 +1,19 @@
 ---
-title: Ajouter et vérifier des contacts d’administration dans le portail d’administration
+title: Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 description: Dites-nous qui contacter pour chaque zone de focus.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f77a5f6f0af83ea82d2ab3cea0798b95e27c2d2
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012065"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962611"
 ---
-# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administration dans le portail d’administration
+# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
 Le service de bureau géré Microsoft communique de plusieurs façons avec les clients. Pour simplifier la communication et vérifier que nous vérifions les personnes appropriées, vous devez fournir un ensemble de contacts d’administration. Les opérations informatiques de bureau gérées par Microsoft contacteront ces personnes pour résoudre les problèmes de résolution des problèmes pour votre client.
 
@@ -40,7 +40,7 @@ Empaquetage d’applications | Résolution des problèmes d’empaquetage d’ap
 Appareils | Intégrité de l’appareil, résolution des problèmes avec les appareils de bureau gérés Microsoft
 Sécurité | Résolution des problèmes de sécurité avec les appareils de bureau gérés Microsoft
 Support technique informatique | dans les cas où notre équipe de support technique effectue des tickets d’utilisateur final en dehors des zones de support de bureau géré Microsoft 
-Other | Pour les problèmes non couverts par d’autres domaines
+Autre | Pour les problèmes non couverts par d’autres domaines
 
 **Les personnes que vous choisissez pour ces contacts doivent disposer des connaissances et des pouvoirs nécessaires pour prendre des décisions concernant votre environnement de bureau géré Microsoft.** Lorsque vous intégrez votre environnement de bureau géré Microsoft, vous êtes invité à ajouter des contacts pour votre service d’assistance et sécurité locaux. 
 
@@ -52,25 +52,25 @@ Les contacts d’administration sont requis lorsque vous [envoyez une demande de
 
 2.  Sous **support**, sélectionnez **contacts d’administration**. 
 
-    ![Menu support, contacts administrateur](images/admincontacts.png)
+    ![Menu support, contacts administrateur dans la partie supérieure sélectionnée](images/admincontacts.png)
 
 3. Cliquez sur **Ajouter**.
 
-    ![Bouton Ajouter du portail d’administration](images/adminadd.png)
+    ![Portail d’administration, bouton Ajouter, à gauche de l’option Exporter et actualiser](images/adminadd.png)
 
 4.  Sélectionnez une **zone de** sélection, puis entrez les informations du contact. 
 
-    ![Liste des zones ciblées](images/areaoffocus.png)
+    ![Liste des domaines ciblés, tels que les autres, les applications et la sécurité](images/areaoffocus.png)
 
 5. Répétez l’opération pour chaque zone de focus. 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de prise en main de Microsoft Managed Desktop
 
 1. Ajouter et vérifier des contacts d’administration dans le portail d’administration (cette rubrique)
-2. [Ajustement de l’accès conditionnel](conditional-access.md)
-3. [Attribuer des licences](assign-licenses.md)
+2. [Ajuster l’accès conditionnel](conditional-access.md)
+3. [Affecter des licences](assign-licenses.md)
 4. [Installer le portail d’entreprise Intune sur sur les appareils](company-portal.md)
-5. [Activer l’itinérance de l’état d’entreprise](enterprise-state-roaming.md)
+5. [Activer Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Configurer des appareils de bureau géré Microsoft](set-up-devices.md)
 7. [Préparer vos utilisateurs à l’utilisation des appareils](get-started-devices.md)
 8. [Déployer des applications sur des appareils](deploy-apps.md)

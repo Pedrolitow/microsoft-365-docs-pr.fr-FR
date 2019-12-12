@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
-ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
+ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37391217"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962201"
 ---
 # <a name="getting-help-for-end-users"></a>Obtenir de l’aide pour les utilisateurs finaux
 
@@ -24,14 +24,14 @@ Les utilisateurs de votre organisation peuvent obtenir de l’aide sur leurs app
 
 La méthode préférée pour prendre en charge vos utilisateurs est **obtenir**de l’aide, une interface conviviale intégrée à l’appareil de l’utilisateur final.  
 
-![Obtenir de l’aide](images/get-help.png)
+![Icône obtenir une application d’aide](images/get-help.png)
 
 Il s’agit d’une application installée sur tous les appareils de bureau gérés par Microsoft et qui est épinglée à la barre des tâches. 
 
 - Les utilisateurs finaux peuvent demander un appel vers un numéro de téléphone fourni ou converser en ligne avec un représentant du service.
 - Les demandes qui tombent en dehors de l’étendue prise en charge de bureau géré Microsoft sont redirigées vers le support informatique local via un appel téléphonique.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Conditions requises
 Pour permettre aux utilisateurs finaux d’obtenir de l’aide par le biais de l’application, assurez-vous que les conditions préalables suivantes sont remplies :
 
 - L’appareil doit être enregistré avec Microsoft Managed Desktop à l’aide de l’une des méthodes de la [configuration de Microsoft Managed Desktop Devices](../get-started/set-up-devices.md), par exemple, [enregistrer les nouveaux appareils](../get-started/register-devices-self.md).
@@ -51,6 +51,8 @@ Les utilisateurs finaux disposant d’appareils de bureau gérés par Microsoft 
 - États-Unis : + 1 855 425 0216
 - Canada (à l’exclusion du Québec) : + 1 855 425 0216
 - Royaume-Uni : + 44 800 026 0698
+- Belgique : + 32 800 58533
+- Luxembourg : + 352 800 40119
 - Australie : + 61 180 037 0619
 - Nouvelle-Zélande : + 64 988 44380
 
@@ -60,4 +62,4 @@ Les utilisateurs finaux disposant d’appareils de bureau gérés par Microsoft 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Prise en charge des administrateurs pour le bureau géré Microsoft](admin-support.md). 
 - [Prise en charge du bureau géré Microsoft](../service-description/support.md).
-- Si vous vous êtes déjà inscrit au bureau géré Microsoft, vous trouverez des procédures détaillées, des flux de processus, des instructions de travail et des FAQ dans le Guide de l’administrateur de bureau géré Microsoft dans la section **ressources en ligne** de l' [administrateur de bureau géré Microsoft Portail](https://aka.ms/mwaasportal).
+- Si vous vous abonnez déjà à Microsoft Managed Desktop, vous trouverez des procédures détaillées, des flux de processus, des instructions de travail et des FAQ dans le Guide de l’administrateur de bureau géré Microsoft dans la section **ressources en ligne** du [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal).

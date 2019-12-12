@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 6e114f60d95edb68797e096f56b93836a14425a8
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634021"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962351"
 ---
 # <a name="usage-insights"></a>Informations d’utilisation
 Cette vue fournit des mesures d’utilisation pour vos appareils de bureau gérés par Microsoft. À cette fin, une application est considérée « en cours d’utilisation » si elle est en cours d’exécution et en focus.
 
 Pour afficher les données d’utilisation, sélectionnez l’onglet **utilisation** .
 
-![Volet d’utilisation](images/insights_usage.png)
+![Volet d’utilisation. Graphique d’utilisation de l’appareil (pourcentage d’utilisation par rapport au temps) en haut à gauche. Tableau utilisation des applications dans l’angle supérieur droit. Tableau de liste des périphériques en bas avec les colonnes nom de l’appareil, modèle, numéro de série, nom d’affichage, nom d’utilisateur, état actuel (actif, faible ou inactif), nombre total d’utilisation de l’appareil en heures et nombre de jours actifs.](images/insights_usage.png)
 
 ## <a name="device-usage"></a>Utilisation de l’appareil
 
