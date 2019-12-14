@@ -1,0 +1,91 @@
+---
+title: Accéder au centre de notifications pour afficher et approuver vos tâches d’enquête et de correction automatisées
+description: Utiliser le centre de notifications pour afficher des détails sur l’enquête automatiser et approuver les actions en attente
+keywords: Centre de notifications, protection contre les menaces, enquête, alerte, en attente, automatisé, détection
+search.appverid: met150
+ms.prod: M365-security-compliance
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: deniseb
+author: denisebmsft
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+ms.topic: conceptual
+ms.custom: autoir
+ms.openlocfilehash: 950dec4c0b0a2de2bdc60a73a12f6c7895189ea4
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.translationtype: MT + HT Review
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39911076"
+---
+# <a name="go-to-the-action-center-to-view-remediation-actions"></a>Accéder au centre de notifications pour afficher les actions de correction
+
+**S’applique à :**
+- Protection Microsoft contre les menaces
+
+[!include[Prerelease information](prerelease.md)]
+
+## <a name="a-single-pane-of-glass-experience"></a>Expérience de type « écran unique »
+
+![Centre de notifications](../images/air-actioncenter.png)
+
+Utilisez le centre de notifications pour afficher les résultats des enquêtes actuelles et antérieures sur les appareils et les boîtes aux lettres de votre organisation. En fonction du type de menace et du [verdict résultant](mtp-autoir-results.md#remediation-actions-following-automated-investigation), des actions de correction sont effectuées automatiquement ou sur approbation par l’équipe en charge des opérations de sécurité de votre organisation. Toutes les actions de correction, qu’elles soient en attente d’approbation ou qu’elles aient déjà été approuvées, sont regroupées dans le centre de notifications. 
+
+Le centre de notifications offre une expérience de type « écran unique » pour certaines tâches :
+- Approbation des actions de correction en attente ;
+- Affichage d’un journal d’audit des actions de correction déjà approuvées ; et
+- Évaluation des actions de correction terminées.
+
+L’équipe en charge des opérations de sécurité peut fonctionner de façon plus efficace, car le centre de notifications offre une vue complète de la Protection Microsoft contre les menaces en fonctionnement.
+
+## <a name="remediation-actions"></a>Actions de correction
+
+Le tableau suivant répertorie les actions de correction actuellement prises en charge dans le centre de notifications : 
+
+|Actions de correction des points de terminaison  |Actions de correction des e-mails  |
+|---------|---------|
+|Fichier de quarantaine<br/>Supprimer une clé de Registre<br/>Processus d’arrêt <br/>Arrêter le service <br/>Supprimer une clé de Registre <br/>Désactiver le pilote <br/>Supprimer une tâche planifiée.      |Supprimer (récupération possible) le courrier ou des clusters<br/>Bloquer l’URL (heure du clic)<br/>Désactiver le transfert de courrier externe          |
+
+## <a name="go-to-the-action-center"></a>Accéder au centre de notifications
+
+1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
+
+2. Dans le volet de navigation, choisissez **Centre de notifications**. 
+
+3. Deux onglets s’affichent dans le centre de notifications : **En attente** et **Historique**.
+
+    - L’onglet **En attente** répertorie les enquêtes devant être réexaminées et approuvées par un membre de l’équipe en charge des opérations de sécurité pour continuer. Veillez à examiner les éléments en attente affichés ici et à effectuer les actions appropriées.
+
+    - L’onglet **Historique** répertorie les enquêtes passées et les actions de correction qui ont été effectuées automatiquement. Vous pouvez afficher des données pour le dernier jour, la dernière semaine, le dernier mois ou les six derniers mois.
+
+4. Pour afficher uniquement les colonnes désirées, sélectionnez **Personnaliser les colonnes**.<br/>![Centre de notifications dans la Protection Microsoft contre les menaces](../images/mtp-action-center.png)
+
+5. Sélectionnez un élément dans la liste pour afficher des détails supplémentaires sur une enquête. La vue Détails de l’enquête s’ouvre.<br/>![Détails de l’enquête](../images/mtp-air-investdetails.png)
+
+    - Si l’enquête concerne du contenu des e-mails (par exemple, l’entité est une boîte aux lettres), des détails de l’enquête s’ouvrent dans le Centre de sécurité et conformité Office 365 ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
+
+    - Si l’enquête implique un appareil, les détails de l’enquête s’affichent dans le centre de sécurité ([https://security.microsoft.com](https://security.microsoft.com)). 
+
+## <a name="required-permissions-for-action-center-tasks"></a>Autorisations requises pour les tâches du centre de notifications
+
+Pour approuver ou rejeter des actions en attente dans le centre de notifications, vous devez disposer des autorisations définies dans le tableau suivant :
+
+|Action de correction |Rôles et des autorisations requis |
+|--|----|
+|Correction de Microsoft Defender – Protection avancée contre les menaces (appareils) |Rôle **Administrateur de la sécurité** attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- ou ---<br/>Rôle **Actions de correction actives** attribué dans Microsoft Defender – Protection avancée contre les menaces <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles (Microsoft Defender – Protection avancée contre les menaces)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Correction Office 365 – Protection avancée contre les menaces (contenu et courrier Office)  |Rôle **Administrateur de la sécurité** attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>Rôle **Rechercher et vider** attribué dans le Centre de sécurité et conformité Office 365 ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT** : si le rôle Administrateur de la sécurité vous est attribué uniquement dans le Centre de sécurité et conformité Office 365, vous ne pourrez pas accéder aux fonctionnalités du centre de maintenance ou de Protection Microsoft contre les menaces. Vous devez avoir le rôle Administrateur de la sécurité attribué dans Azure Active Directory ou dans le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité et conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+
+> [!NOTE]
+> Les utilisateurs qui ont le rôle **Administrateur général** attribué dans Azure Active Directory peuvent approuver ou rejeter toute action en attente dans le centre de notifications. Toutefois, il est recommandé à votre organisation de limiter le nombre de personnes auxquelles le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les rôles **Administrateur de la sécurité**, **Actions de correction actives** et **Rechercher et purger** répertoriés ci-dessus pour les autorisations du centre de notifications.
+
+## <a name="next-steps"></a>Étapes suivantes 
+
+- [En savoir plus sur les incidents dans la Protection Microsoft contre les menaces](incidents-overview.md)
+- [Afficher les résultats d’une enquête automatisée](mtp-autoir-results.md)
+- [En savoir plus sur le repérage dans la Protection Microsoft contre les menaces](advanced-hunting-overview.md)
+
