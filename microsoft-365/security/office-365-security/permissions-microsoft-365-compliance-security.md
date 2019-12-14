@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En utilisant le Centre de sécurité Microsoft 365 ou le Centre de conformité Microsoft 365, vous pouvez gérer les autorisations de façon centralisée pour toutes les tâches liées à la sécurité ou à la conformité.
-ms.openlocfilehash: 2a5f5b13bcf00c8a8c17042efbf241028aac2263
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 43f6388820c531c99b6c12f615a3ffb8e3b85427
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37343367"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971582"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft 365
 
@@ -27,7 +27,7 @@ Votre organisation doit gérer les scénarios de sécurité et de conformité qu
 
 Une fois que l’administrateur général a attribué ces rôles d’administrateur, les administrateurs ont accès à des fonctionnalités et données qui couvrent tous les services dans Microsoft 365, tels que le Centre de sécurité Microsoft 365, le Centre de conformité Microsoft 365, Azure, Office 365 et Enterprise Mobility + Security.
 
-![Page d’autorisations dans le Centre de sécurité Microsoft 365](../media/m365-security-permissions-page.png)
+![Page d’autorisations dans le Centre de sécurité Microsoft 365](../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>Quels sont les rôles Microsoft 365 ?
 
@@ -58,7 +58,7 @@ Les utilisateurs avec ce rôle disposent des autorisations pour gérer les fonct
 |:-----|:-----|
 |[**Centre de conformité Microsoft 365**](https://compliance.microsoft.com/)|Protéger et gérer les données de votre organisation au sein des services Microsoft 365. <br/><br/> Gérer les alertes de conformité.|
 |[**Gestionnaire de conformité**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Suivre, affecter et vérifier les activités de conformité réglementaire de votre organisation.|
-|[**Centre de sécurité et conformité Office 365**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Gérer la gouvernance des données. <br/><br/> Procéder à l'examen juridique des données. <br/><br/> Gérer une requête d'objet de données.|
+|[**Centre de sécurité et conformité Office 365**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Gérer la gouvernance des données. <br/><br/> Procéder à l'examen juridique des données. <br/><br/> Gérer une requête d'objet de données.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Afficher toutes les données d’audit Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Dispose d'autorisations en lecture seule et peut gérer les alertes. <br/><br/> Peut créer et modifier les stratégies de fichier et autoriser des actions de gouvernance de fichier. <br/><br/> Peut afficher tous les rapports intégrés sous Gestion des données.|
 
@@ -70,7 +70,7 @@ Les utilisateurs avec ce rôle ont des autorisations pour protéger et suivre le
 |:-----|:-----|
 |[**Centre de conformité Microsoft 365**](https://compliance.microsoft.com/)|Protéger et gérer les données de votre organisation au sein des services Microsoft 365. <br/><br/> Gérer les alertes de conformité. <br/><br/> Gérer les étiquettes de niveau de confidentialité|
 |[**Gestionnaire de conformité**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Suivre, affecter et vérifier les activités de conformité réglementaire de votre organisation.|
-|[**Centre de sécurité et conformité Office 365**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Gérer la gouvernance des données. <br/><br/> Procéder à l'examen juridique des données. <br/><br/> Gérer une requête d'objet de données. <br/><br/> Gérer les étiquettes de niveau de confidentialité|
+|[**Centre de sécurité et conformité Office 365**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Gérer la gouvernance des données. <br/><br/> Procéder à l'examen juridique des données. <br/><br/> Gérer une requête d'objet de données. <br/><br/> Gérer les étiquettes de niveau de confidentialité|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (prochainement disponible)|Afficher toutes les données d’audit Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Utiliser des autorisations de lecture seule pour afficher des informations. <br/>Gérer les alertes. <br/><br/> Créer et modifier les stratégies de fichier et autoriser des actions de gouvernance de fichier. <br/><br/> Afficher tous les rapports intégrés sous Gestion des données.|
 
@@ -83,7 +83,7 @@ Les utilisateurs disposant de ce rôle sont autorisés à gérer les fonctionnal
 |[**Centre de sécurité Microsoft 365**](https://security.microsoft.com/)|Surveiller les stratégies de sécurité au sein des services Microsoft 365. <br/><br/>  Gérer les menaces et les alertes liées à la sécurité. <br/><br/> Affichage des rapports. <br/><br/> Gérer les étiquettes de niveau de confidentialité.|
 |**Centre de protection de l’identité**|Rôle du lecteur de sécurité, avec en plus l’exécution de toutes les opérations du centre de protection de l’identité, à l’exception de la réinitialisation des mots de passe.|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Faites tout ce que peut faire le lecteur de sécurité. <br/><br/> **Ne peut pas** gérer les affectations ou paramètres de rôles Azure AD.|
-|[**Centre de sécurité et conformité Office 365**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Gérer les stratégies de sécurité. <br/><br/> Afficher, examiner et répondre aux menaces de sécurité <br/><br/> Affichage des rapports. <br/><br/> Gérer les étiquettes de niveau de confidentialité.|
+|[**Centre de sécurité et conformité Office 365**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Gérer les stratégies de sécurité. <br/><br/> Afficher, examiner et répondre aux menaces de sécurité <br/><br/> Affichage des rapports. <br/><br/> Gérer les étiquettes de niveau de confidentialité.|
 |**Azure Advanced Threat Protection**|Surveiller et répondre aux activités de sécurité suspectes.|
 |**Windows Defender ATP et EDR**|Attribuer des rôles. <br/><br/> Gérer des groupes de machines. <br/><br/> Configurer la détection des menaces liées aux points de terminaison et leur correction automatisée. <br/><br/> Afficher, examiner et répondre aux alertes.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Affiche des informations relatives à l'utilisateur, l'appareil, l'inscription, la configuration et l'application. <br/><br/> **Ne peut pas** apporter de modifications à Intune.|
@@ -100,7 +100,7 @@ Les utilisateurs dotés de ce rôle peuvent gérer les alertes et ont un accès 
 |[**Centre de sécurité Microsoft 365**](https://security.microsoft.com/)|Faites tout ce que peut faire le lecteur de sécurité. <br/><br/> Afficher, examiner et répondre aux alertes de sécurité.|
 |**Centre de protection de l’identité** (bientôt disponible)|Faites tout ce que peut faire le lecteur de sécurité.|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Faites tout ce que peut faire le lecteur de sécurité.|
-|[**Centre de sécurité et conformité Office 365**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Faites tout ce que peut faire le lecteur de sécurité. <br/><br/> Afficher, examiner et répondre aux menaces de sécurité|
+|[**Centre de sécurité et conformité Office 365**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Faites tout ce que peut faire le lecteur de sécurité. <br/><br/> Afficher, examiner et répondre aux menaces de sécurité|
 |**Windows Defender ATP et EDR**|Faites tout ce que peut faire le lecteur de sécurité. <br/><br/> Afficher, examiner et répondre aux alertes.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Affiche des informations relatives à l'utilisateur, l'appareil, l'inscription, la configuration et l'application. <br/><br/> **Ne peut pas** apporter de modifications à Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Faites tout ce que peut faire le lecteur de sécurité, avec en plus le droit d’afficher et d’ignorer les alertes.|
@@ -115,7 +115,7 @@ Les utilisateurs dotés de ce rôle ont un accès en lecture seule au niveau glo
 |[**Centre de sécurité Microsoft 365**](https://security.microsoft.com/)|Afficher les stratégies de sécurité au sein des services Microsoft 365. <br/><br/> Afficher les menaces et les alertes liées à la sécurité. <br/><br/> Affichage des rapports.|
 |**Centre de protection de l’identité**|Pour plus d’informations sur les fonctionnalités de sécurité, consultez tous les rapports et paramètres de sécurité : antispam, chiffrement, protection contre la perte de données (DLP), logiciel anti-programme malveillant, protection avancée contre les menaces (ATP), anti-hameçonnage et règles de flux de courrier (également appelé règles de transport).|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Utilisez l’accès en lecture seule pour consulter toutes les informations présentées dans Azure AD PIM :stratégies et rapports pour les attributions de rôle Azure AD, révisions de sécurité et prochainement données et rapports de stratégie pour les scénarios autres que l’attribution de rôle Azure AD. <br/><br/> **Ne peut pas** s’inscrire auprès de Microsoft Azure Active Directory PIM ou y apporter des modifications. Dans le portail PIM ou via PowerShell, un membre ayant ce rôle peut activer des rôles supplémentaires (par exemple, un administrateur général ou un administrateur de rôle privilégié), s’il est éligible.|
-|[**Centre de sécurité et conformité Office 365**](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)|Afficher les stratégies de sécurité. <br/><br/> Afficher et examiner les menaces de sécurité. <br/><br/> Affichage des rapports.|
+|[**Centre de sécurité et conformité Office 365**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Afficher les stratégies de sécurité. <br/><br/> Afficher et examiner les menaces de sécurité. <br/><br/> Affichage des rapports.|
 |**Windows Defender ATP et EDR**|Afficher et examiner les alertes.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Affiche des informations relatives à l'utilisateur, l'appareil, l'inscription, la configuration et l'application. <br/><br/> **Ne peut pas** apporter de modifications à Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Utiliser des autorisations de lecture seule pour afficher des informations. <br/><br/> Gérer les alertes.|

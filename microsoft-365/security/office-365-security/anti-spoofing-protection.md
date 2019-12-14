@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Cet article explique comment Office 365 prévient les attaques par hameçonnage utilisant des domaines d’expéditeur falsifiés, ou usurpés. Pour ce faire, Microsoft analyse les messages et bloque ceux qui ne peuvent être authentifiés ni à l’aide de méthodes d’authentification standard du courrier, ni à l’aide d’autres techniques basées sur la réputation des expéditeurs. Cette modification a été apportée afin de réduire le nombre d’attaques par hameçonnage auxquelles sont exposées les organisations utilisant Office 365.
-ms.openlocfilehash: 182b422f5ebfac440777eeb975732fe7cd48822b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 5685fc29f97c9aa41e472926c4e1f26bfcfd1432
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871980"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971992"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection contre l’usurpation d’identité dans Office 365
 
@@ -103,7 +103,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**Raison**|**Description**|
-|0xx |Le message a échoué à l’authentification composite.<br/>**000** signifie que le message a échoué au filtrage DMARC, et déclenché une action de rejet ou de mise en quarantaine.  <br/>**001** signifie que le message a échoué à l’authentification de courrier implicite. Cela signifie que le domaine d’envoi n’a pas publié d’enregistrement d’authentification de courrier ou, s’il la fait, que sa stratégie en cas d’échec était plus faible (erreur SPF récupérable ou neutre, stratégie DMARC p=aucune).  <br/>**002** signifie que l’organisation a une stratégie pour la paire expéditeur/domaine qui interdit explicitement l’envoi d’e-mails usurpés, ce paramètre étant défini manuellement par un administrateur.  <br/>**010** signifie que le message a échoué au filtrage DMARC, et déclenché une action de rejet ou de mise en quarantaine, et que le domaine d’envoi est l’un des domaines acceptés de l’organisation (cela fait partie de l’usurpation self-to-self, ou intra-organisationnelle). <br/> |
+|0xx |Le message a échoué à l’authentification composite.<br/>**000** signifie que le message a échoué au filtrage DMARC, et déclenché une action de rejet ou de mise en quarantaine.  <br/>**001** signifie que le message a échoué à l’authentification de courrier implicite. Cela signifie que le domaine d’envoi n’a pas publié d’enregistrement d’authentification de courrier ou, s’il la fait, que sa stratégie en cas d’échec était plus faible (erreur SPF récupérable ou neutre, stratégie DMARC p=aucune).  <br/>**002** signifie que l’organisation a une stratégie pour la paire expéditeur/domaine qui interdit explicitement l’envoi d’e-mails usurpés, ce paramètre étant défini manuellement par un administrateur.  <br/>**010** signifie que le message a échoué au filtrage DMARC, et déclenché une action de rejet ou de mise en quarantaine, et que le domaine d’envoi est l’un des domaines acceptés de l’organisation (cela fait partie de l’usurpation self-to-self, ou intra-organisationnelle).|
 |1xx, 2xx, 3xx, 4xx et 5xx|Correspondent à divers codes internes expliquant pourquoi un message ayant passé l’authentification implicite ou n’ayant fait l’objet d’aucune authentification n’a pas déclenché d’action.|
 |6xx|Signifie que le message a échoué à l’authentification de courrier implicite et que le domaine d’envoi est l’un des domaines acceptés de l’organisation (cela fait partie de l’usurpation self-to-self ou intra-organisationnelle).|
 
@@ -257,9 +257,9 @@ Un message peut usurper une identité de différentes façons (voir [Différenci
 
 |**Type d’usurpation**|**Catégorie**|**Conseil de sécurité ajouté ?**|**S’applique à**|
 |:-----|:-----|:-----|:-----|
-|Échec DMARC (mise en quarantaine ou rejet)  <br/> |HSPM (par défaut), peut également être SPM ou PHSH  <br/> |Non (pas encore)  <br/> |Tous les clients d’Office 365, Outlook.com  <br/> |
-|Self-to-self  <br/> |SPM  <br/> |Oui  <br/> |Toutes les organisations Office 365, Outlook.com  <br/> |
-|Inter-domaines  <br/> |SPOOF  <br/> |Oui  <br/> |Clients d’Office 365 - Protection avancée contre les menaces et d’E5  <br/> |
+|Échec DMARC (mise en quarantaine ou rejet)|HSPM (par défaut), peut également être SPM ou PHSH|Non (pas encore)|Tous les clients d’Office 365, Outlook.com|
+|Self-to-self|SPM|Oui|Toutes les organisations Office 365, Outlook.com|
+|Inter-domaines|SPOOF|Oui|Clients d’Office 365 - Protection avancée contre les menaces et d’E5|
 
 ### <a name="changing-your-anti-spoofing-settings"></a>Modification de vos paramètres de détection d’usurpation d’identité
 
@@ -319,8 +319,8 @@ Vous ne devez désactiver la protection contre l’usurpation d’identité que 
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false
-
 ```
+
 > [!IMPORTANT]
 > Si Office 365 est en première ligne dans le chemin d’accès au courrier et que vous recevez trop d’e-mails légitimes marqués comme usurpant une identité, vous devez commencer par définir les expéditeurs autorisés à envoyer ce type de courrier à votre domaine (voir la section « *Gestion des expéditeurs légitimes qui envoient du courrier non authentifié* »). Si vous recevez encore trop de faux positifs (c’est-à-dire des messages légitimes marqués comme usurpant une identité), nous ne recommandons PAS de désactiver complètement la protection contre l’usurpation d’identité. Au lieu de cela, nous vous recommandons de choisir une protection De base plutôt que Haute. Mieux vaut s’accommoder de faux positifs que d’exposer votre organisation à du courrier usurpant des identités, ce qui pourrait finir par occasionner des coûts beaucoup plus élevés à long terme.
 
@@ -330,15 +330,15 @@ Office 365 conserve la trace des personnes qui envoient du courrier non authenti
 
 Toutefois, en tant qu’administrateur, vous pouvez spécifier les expéditeurs autorisés à envoyer du courrier usurpant une identité en infirmant la décision d’Office 365.
 
-**Méthode 1 : si votre organisation est propriétaire du domaine, configurez l’authentification du courrier**
+#### <a name="method-1---if-your-organization-owns-the-domain-set-up-email-authentication"></a>Méthode 1 : si votre organisation possède le domaine, configurez l’authentification de courrier
 
 Cette méthode permet de résoudre l’usurpation d’identité intra-organisationnelle et inter-domaines dans les cas où vous interagissez avec plusieurs locataires. Cela aide également à résoudre l’usurpation inter-domaines lorsque vous envoyez du courrier à d’autres clients au sein d’Office 365, ainsi qu’à des tiers hébergés chez d’autres fournisseurs.
 
 Pour plus d’informations, voir [Clients d’Office 365 ](#customers-of-office-365).
 
-**Méthode 2 : utiliser la veille contre l’usurpation d’identité pour configurer les expéditeurs autorisés de courrier non authentifié**.
+#### <a name="method-2---use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>Méthode 2 : utiliser la veille contre l’usurpation d’identité pour configurer les expéditeurs autorisés de courrier non authentifié.
 
-Vous pouvez également utiliser la [Veille contre l’usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) pour autoriser des expéditeurs à transmettre des messages non authentifiés à votre organisation.
+Vous pouvez également utiliser la [Veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) pour autoriser des expéditeurs à transmettre des messages non authentifiés à votre organisation.
 
 Pour des domaines externes, l’utilisateur usurpé est le domaine dans l’adresse de l’expéditeur, tandis que l’infrastructure d’envoi est soit l’adresse IP d’envoi (divisée en 24 plages CIDR), soit le domaine organisationnel de l’enregistrement PTR (dans la capture d’écran ci-dessous, l’adresse IP d’envoi pourrait être 131.107.18.4 dont l’enregistrement PTR est outbound.mail.protection.outlook.com, qui apparaîtrait comme outlook.com pour l’infrastructure d’envoi).
 
@@ -373,13 +373,13 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 Cela permettra désormais à bing.com d’envoyer du courrier non authentifié à partir de \*.outlook.com.
 
-**Méthode 3 : créer une entrée d’autorisation pour la paire expéditeur/destinataire**
+#### <a name="method-3---create-an-allow-entry-for-the-senderrecipient-pair"></a>Méthode 3 : créer une entrée d’autorisation pour la paire expéditeur/destinataire
 
 Vous pouvez également choisir d’ignorer tout filtrage du courrier indésirable pour un expéditeur particulier. Pour plus d’informations, voir [Comment ajouter en toute sécurité un expéditeur à une liste d’autorisation dans Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
 
 Si vous utilisez cette méthode, le courrier indésirable et une partie du filtrage du hameçonnage sont ignorés, mais pas le filtrage des programmes malveillants.
 
-**Méthode 4 : contacter l’expéditeur pour lui demander de configurer l’authentification du courrier**
+#### <a name="method-4---contact-the-sender-and-ask-them-to-set-up-email-authentication"></a>Méthode 4 : contacter l’expéditeur pour lui demander de configurer l’authentification du courrier
 
 En raison du problème de courrier indésirable et de hameçonnage, Microsoft recommande à tous les expéditeurs de configurer l’authentification du courrier. Si vous connaissez un administrateur du domaine d’envoi, contactez-le pour lui demander de configurer des enregistrements d’authentification du courrier afin que vous n’ayez pas à ajouter un contournement. Pour plus d’informations, voir [Administrateurs de domaines qui ne sont pas des clients d’Office 365](#administrators-of-domains-that-are-not-office-365-customers) plus loin dans cet article.
 
@@ -654,7 +654,7 @@ La technologie de détection d’usurpation d’identité de Microsoft a été i
 
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Comment signaler des messages comme étant ou n’étant pas du courrier indésirable à Microsoft ?
 
-Vous pouvez utiliser le [complément Signaler un message pour Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) ou, s’il n’est pas installé, [envoyer les messages indésirables, légitimes ou de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Vous pouvez utiliser le [complément Signaler un message pour Outlook](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) ou, s’il n’est pas installé, [envoyer les messages indésirables, légitimes ou de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Je suis un administrateur de domaine qui ne connaît pas tous ses expéditeurs...
 
