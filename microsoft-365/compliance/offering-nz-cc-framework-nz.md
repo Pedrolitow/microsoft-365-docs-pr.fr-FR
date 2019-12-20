@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 2722c5df4b96f28a449057abae353350b036a13b
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 1f0ed98386a33b84d109fb94093b3d03cefc127b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859334"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803997"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Considérations relatives à la sécurité et à la confidentialité du Cloud Government de la Nouvelle-Zélande
 
@@ -45,7 +46,7 @@ Découvrez comment accélérer le déploiement de l’infrastructure de la versi
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Exchange Online, SharePoint Online et Skype entreprise online. Microsoft NZ a collaboré avec l’équipe GCIO pour développer une architecture de référence pour l’intégration d’Exchange Online et du courrier électronique décrit dans le livre blanc [Office 365 : intégration de l’architecture de messagerie et](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) de l’architecture de référence
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **À qui s’applique l’infrastructure ?**
 
@@ -64,7 +65,7 @@ Si votre Agence est tenue de procéder à la certification et à l’accréditat
 - [Cloud Computing : considérations relatives à la sécurité et à la confidentialité des informations (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Office 365 : intégration de l’architecture de messagerie et](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) de l’architecture de référence (autres conseils Microsoft NZ sur l’adoption du service Cloud)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Réponses Microsoft à « Cloud Computing IPSC »
 

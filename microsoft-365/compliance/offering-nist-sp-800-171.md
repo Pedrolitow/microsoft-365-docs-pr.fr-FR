@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: e7b3dbad49fd57005dffd7e39e61906efdab771d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a7967a4bd12f98f3654f2b5006568c868a7e134f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859344"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804017"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -54,7 +55,7 @@ Toute entité qui traite ou stocke les CUIs du gouvernement américain (institut
 
 - [Schéma NIST SP 800 – 171](https://aka.ms/NIST-800-171-Blueprint): obtenez de l’aide pour la mise en œuvre de charges de travail dans Azure qui sont conformes à NIST SP 800 – 171.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Puis-je utiliser Microsoft Compliance avec NIST SP 800 – 171 pour mon organisation ?**
 

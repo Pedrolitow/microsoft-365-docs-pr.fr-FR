@@ -3,6 +3,7 @@ title: Exécuter le module de processus dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Découvrez les instructions relatives à la préparation des fichiers de cas des données Office 365 pour analyse avec Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 75b6b23a913a6aa8b732501b1c52afb55b47e51e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f96b7670a3886b2bfe01801ea76061bea4a37d14
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079774"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802907"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Exécuter le module de processus dans Office 365 Advanced eDiscovery
 
@@ -47,7 +48,7 @@ Les fichiers case sont chargés dans la découverte électronique avancée lors 
     
 - **Chemin d’accès de fichier**: Advanced eDiscovery peut charger des fichiers avec des longueurs de chemin d’accès allant jusqu’à 400 caractères.
     
-- **Extraction de texte**: lors de l’extraction de texte à partir de fichiers natifs, en plus du texte normal, les éléments suivants sont également extraits : texte masqué (Excel et. doc), colonnes masquées (Excel), suivi des modifications (. doc), notes du présentateur (. ppt), objets incorporés (par exemple, Objets Excel dans un. ppt). Ces éléments peuvent être affichés dans l’éditeur de texte.
+- **Extraction de texte**: lors de l’extraction de texte à partir de fichiers natifs, en plus du texte normal, les éléments suivants sont également extraits : texte masqué (Excel et. doc), colonnes masquées (Excel), suivi des modifications (. doc), notes du présentateur (. ppt), objets incorporés (par exemple, objets Excel dans un fichier. ppt). Ces éléments peuvent être affichés dans l’éditeur de texte.
     
 - **Ignorer le texte**: cette fonctionnalité facultative est définie après l’exécution du processus et avant l’analyse. Ignorer le texte doit être utilisé avec précaution car son utilisation peut réduire les performances de l’analyse des fichiers.
     

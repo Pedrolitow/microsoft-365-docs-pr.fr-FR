@@ -3,6 +3,7 @@ title: Définir les paramètres avancés d’analyse dans Office 365 Advanced eD
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Découvrez comment configurer les paramètres avancés, notamment les doublons, les threads de messagerie et les thèmes, pour le processus Analyze dans Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 2302d44ae8985f820e1fa0f0428f1c9c5ef762fc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 06ee57542bfdb87b8bea77b3e4271adf02490046
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080334"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802817"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Définir les paramètres avancés d’analyse dans Office 365 Advanced eDiscovery
 

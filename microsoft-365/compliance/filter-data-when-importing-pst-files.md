@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Utilisez la nouvelle fonctionnalité d’importation intelligente dans le service d’importation Office 365 pour filtrer les éléments qui sont réellement importés dans les boîtes aux lettres cible. L’importation intelligente vous permet de décider de manière proactive des données à importer et des éléments à laisser en arrière-plan. L’importation intelligente fournit également des informations sur les données que vous importez vers Office 365. '
-ms.openlocfilehash: 2e012159f7f278dc10db14b07531686b5d130fd9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e070c32814e8f5a34a90a12dfcd4148199731d66
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079228"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967347"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtrer les données lors de l’importation de fichiers PST dans Office 365
 
@@ -47,7 +47,7 @@ Le graphique suivant illustre le processus d’importation intelligent et met en
 
 - Les étapes de cette rubrique supposent que vous avez créé une tâche d’importation PST dans le service d’importation Office 365 à l’aide du chargement réseau ou de l’expédition de disque. Pour obtenir des instructions pas à pas, reportez-vous à l’une des rubriques suivantes :
     
-  - [Utiliser le chargement réseau pour importer des fichiers PST vers Office 365](use-network-upload-to-import-pst-files.md)
+  - [Utiliser le chargement réseau pour importer des fichiers PST dans Office 365](use-network-upload-to-import-pst-files.md)
     
   - [Utiliser l’expédition de disque pour importer des fichiers PST dans Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
@@ -59,21 +59,21 @@ Le graphique suivant illustre le processus d’importation intelligent et met en
 
 Une fois que vous avez créé une tâche d’importation PST, suivez les étapes ci-dessous pour filtrer les données avant de les importer dans Office 365.
   
-1. Accédez à [https://protection.office.com/](https://protection.office.com/) et connectez-vous à l’aide des informations d’identification d’un compte administrateur de votre organisation Office 365. 
+1. Accédez à [https://protection.office.com/](https://protection.office.com/) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation Office 365. 
     
-2. Cliquez sur **importation**de la **gouvernance** \> de données.
+2. Cliquez **sur gouvernance** \> des informations **Importer** \> importer des **fichiers PST**.
     
-    Les travaux d’importation de votre organisation sont répertoriés sur la page d' **importation** . Notez que la valeur **analyse terminée** dans la colonne **État** indique les travaux d’importation qui ont été analysés par Office 365 et qui sont prêts à être importés. 
+    Les travaux d’importation de votre organisation sont répertoriés sur la page **importer des fichiers PST** . Notez que la valeur **analyse terminée** dans la colonne **État** indique les travaux d’importation qui ont été analysés par Office 365 et qui sont prêts à être importés. 
     
     ![État complet de l’analyse indique qu’Office 365 a analysé les données dans les fichiers PST](media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
   
 3. Cliquez sur **prêt pour importer vers Office 365** pour le travail d’importation que vous souhaitez effectuer. 
     
-    Une page de survol s’affiche avec des informations sur les fichiers PST et d’autres informations sur la tâche d’importation.
+    Une page volante s’affiche avec des informations sur les fichiers PST et d’autres informations sur la tâche d’importation.
     
 4. Cliquez sur **importer vers Office 365**.
     
-    La page **filtrer vos données** s’affiche. Il contient des données sur les données des fichiers PST pour la tâche d’importation, y compris des informations sur l’ancienneté des données. 
+    La page **Filtrez vos données** s’affiche. Il contient des données sur les données des fichiers PST pour la tâche d’importation, y compris des informations sur l’ancienneté des données. 
     
     ![La page filtrer vos données affiche des données visibles des fichiers PST pour le travail d’importation.](media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
   
@@ -120,7 +120,7 @@ Une fois que vous avez créé une tâche d’importation PST, suivez les étapes
     
     b. Sur la page **importer des données dans Office 365** , cliquez sur **importer des données** pour démarrer l’importation. Notez que le volume total des données qui seront importées est affiché. 
     
-6. Sur la page **Importer** **, cliquez sur Actualiser** ![l’actualisation](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). L’état de la tâche d’importation est affiché dans la colonne **État** . 
+6. Dans la page **importer des fichiers PST** , **cliquez sur Actualiser** ![l’actualisation](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). L’état de la tâche d’importation est affiché dans la colonne **État** . 
     
 7. Cliquez sur le travail importer le travail pour afficher des informations plus détaillées, telles que l’état de chaque fichier PST et les paramètres de filtrage que vous avez configurés.
 

@@ -3,6 +3,7 @@ title: Exporter des champs de rapport dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Décrit tous les champs inclus dans les rapports d’exportation pour Advanced eDiscovery.
-ms.openlocfilehash: 54287b4319a3fd7cf5be8aaf74d3a375253cba1f
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: cc585fcabefa9036d91162b6418c3e5e9c752378
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38685991"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805837"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exporter des champs de rapport dans Office 365 Advanced eDiscovery
 

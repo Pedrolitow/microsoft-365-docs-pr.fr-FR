@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7d2d718aa8c502afedce0fe99d6f444f78735246
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859744"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804807"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
@@ -51,7 +52,7 @@ Découvrez les avantages de HIPAA et du Hi-Tech sur le Cloud Microsoft : [lire 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
-- Sécurité de l’application Cloud
+- Cloud App Security
 - Service Microsoft Health bot
 - Microsoft Stream
 - Services professionnels Microsoft : Premier et local pour Azure, Dynamics 365, Intune et pour les clients d’entreprises moyennes et grandes d’Office 365
@@ -59,7 +60,7 @@ Découvrez les avantages de HIPAA et du Hi-Tech sur le Cloud Microsoft : [lire 
 - Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Intune
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BIen tant que service autonome ou inclus dans un plan ou une suite Office 365 ou Dynamics 365.
 - Azure DevOps Services
 
@@ -69,7 +70,7 @@ Commencez à tirer parti des avantages du Cloud pour les solutions de données d
 
 [Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://aka.ms/healthblueprint)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Mon organisation peut-elle entrer dans un contrat avec Microsoft ?**
 
@@ -107,7 +108,7 @@ Pour aider les clients avec cette tâche, Microsoft a publié ces guides :
 - [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Présentation de la conformité HIPAA avec Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 mai 2016)
 - [Guide de mise en œuvre d’Azure HIPAA](https://aka.ms/azure-hipaa-guide)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 

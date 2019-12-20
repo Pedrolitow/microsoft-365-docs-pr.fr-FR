@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Créer une stratégie d’archivage et de suppression dans Office 365 qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6da5d9bc180623778925697419f0ca39acee9185
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685969"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967767"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365
 
@@ -64,7 +64,7 @@ La première étape consiste à activer la boîte aux lettres d’archivage pour
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. Dans le centre de sécurité & conformité, accédez à **Archives**de **gouvernance** \> des données.
+3. Dans le centre de sécurité & conformité, accédez à **Archives**de **gouvernance** \> des informations.
     
     Une liste des boîtes aux lettres de votre organisation s’affiche et indique si la boîte aux lettres d’archivage correspondante est activée ou désactivée. 
     

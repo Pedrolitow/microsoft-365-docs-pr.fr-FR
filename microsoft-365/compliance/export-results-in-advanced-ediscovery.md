@@ -3,6 +3,7 @@ title: Exporter les résultats dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Découvrez comment définir des options pour l’exportation des résultats à partir d’Office 365 Advanced eDiscovery, notamment la procédure de spécification des paramètres pour un lot d’exportation. '
-ms.openlocfilehash: ad11ac742f3157811523164c7e4d063e1d101343
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d535c24a3acfeb09f45ff26e0792f852bf7e016
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079232"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805867"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exporter les résultats dans Office 365 Advanced eDiscovery
 
@@ -112,7 +113,7 @@ L’outil d’exportation de découverte électronique est utilisé pour exporte
   
    - Sous **pour la révision des paramètres de champ**, dans la liste déroulante **Sélectionner un scénario** , sélectionnez le scénario et l’étendue de la révision. Les paramètres sont affichés en fonction de votre sélection.
     
-      - **Vérifier tout** (valeur par défaut) : tous les messages électroniques, pièces jointes et documents sont sélectionnés par défaut. 
+      - **Vérifier tout** (par défaut) : tous les messages électroniques, pièces jointes et documents sont sélectionnés par défaut. 
     
       - **Examinez tout le contenu unique d’un jeu**: inclusifs et copies inclusives uniques, pièces jointes uniques dans le niveau du jeu de courrier, représentatives de chaque ensemble de doublons exacts.
     
@@ -120,7 +121,7 @@ L’outil d’exportation de découverte électronique est utilisé pour exporte
     
       - **Examinez tous les fichiers de famille et de contenu uniques**: inclus, pièces jointes uniques dans le niveau du jeu de messages, représentatif de chaque ensemble de doublons exacts, puis développez pour inclure les fichiers de famille.
     
-      - **Personnalisé** (vous permet de définir les options dans la boîte de dialogue) : par défaut, les sélections actuelles sont conservées et toutes les options de boîte de dialogue sont activées, afin d’autoriser leur sélection. Si vous sélectionnez cette option, vous pouvez personnaliser les paramètres des e-mails, des documents, des pièces jointes et des fichiers divers.
+      - **Custom** (vous permet de définir les options dans la boîte de dialogue) : par défaut, les sélections actuelles sont conservées et toutes les options de boîte de dialogue sont activées, afin d’autoriser leur sélection. Si vous sélectionnez cette option, vous pouvez personnaliser les paramètres des e-mails, des documents, des pièces jointes et des fichiers divers.
     
     - Sous **e-mails**, sélectionnez les courriers électroniques que vous souhaitez exporter.
     
@@ -187,7 +188,7 @@ Le tableau suivant répertorie les fichiers de sortie générés lors de l’ex�
 |Fichiers d’entrée ou natifs  <br/> |Dossier de fichiers  <br/> |Dossier qui contient les fichiers d’entrée et d’entrée natifs des fichiers exportés.  <br/> |
 |Exporter la liste  <br/> |xlsx  <br/> |Métadonnées de fichiers exportées au format xlsx. Les champs de fichiers sont en fonction du modèle que l’utilisateur choisit d’exporter. Si nécessaire, plusieurs fichiers sont créés, chacun contenant 100 150K lignes. Si une certaine valeur contient plus de caractères qu’une cellule Excel ne peut contenir (actuellement la limite est de 32 767 caractères), la valeur sera réduite à la longueur maximale autorisée. Si une valeur est ajustée, la couleur d’arrière-plan de la cellule est rouge pour l’indiquer à l’utilisateur. " « Participants à la messagerie » est un exemple de champ qui peut dépasser la limite de longueur, si le courrier électronique a été envoyé à une grande distribution. Pour plus d’informations sur les champs de sortie, voir [Export report fields](export-report-fields-in-advanced-ediscovery.md) .  <br/> |
 |Charger un fichier  <br/> |value  <br/> |Métadonnées de fichiers exportées au format CSV pour chargement dans une autre application. Les champs de fichiers sont en fonction du modèle que l’utilisateur choisit d’exporter.  <br/> |
-|Indicateur de réussite  <br/> |txt  <br/> |Créé uniquement lors de l’exportation vers un objet BLOB Azure tiers. Si l’exportation réussit complètement, le fichier est créé. En cas de défaillance ou de la réussite partielle, le fichier ne sera pas créé. Le fichier est créé dans le dossier racine, ce qui permet le suivi automatique des différents statuts de lots/sessions d’exportation. Il s’agit d’un fichier vide. Son nom est : TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
+|Indicateur de réussite  <br/> |txt  <br/> |Créé uniquement lors de l’exportation vers un objet BLOB Azure tiers. Si l’exportation réussit complètement, le fichier est créé. En cas de défaillance ou de la réussite partielle, le fichier ne sera pas créé. Le fichier est créé dans le dossier racine, ce qui permet le suivi automatique des différents statuts de lots/sessions d’exportation. Il s’agit d’un fichier vide. Son nom est le suivant : TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
 ## <a name="see-also"></a>Voir aussi
 

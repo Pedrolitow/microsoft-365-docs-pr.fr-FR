@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des révisions de destruction
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Microsoft 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
-ms.openlocfilehash: 22079fc92cabc902cd7afee7e187b7e186aa2328
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078529"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806067"
 ---
 # <a name="overview-of-disposition-reviews"></a>Vue d’ensemble des révisions de destruction
 
@@ -116,7 +116,7 @@ Sur la page **destruction en attente** , vous pouvez afficher les impositions en
   
 - La **disposition en attente** indique les éléments qui ont atteint la fin de leur période de rétention et nécessitent une révision de la disposition. Après avoir vérifié chaque élément, déterminez si vous voulez appliquer une étiquette de rétention différente, étendez sa période de rétention ou supprimez-la définitivement. Vous pouvez sélectionner plusieurs éléments.
     
-- L’onglet **éléments supprimés** indique que les éléments ont été approuvés pour suppression lors d’une révision de destruction et qu’ils sont désormais supprimés définitivement. Les éléments auxquels une étiquette de rétention différente a été appliquée ou leur période de rétention étendue dans le cadre d’une révision ne s’affichent pas ici.
+- L’onglet **éléments** supprimés indique que les mises en destruction ont été approuvées pour suppression lors d’une révision de disposition et qu’elles sont maintenant en cours de suppression définitive ou des éléments marqués comme enregistrements qui ont été supprimés. Les éléments auxquels une étiquette de rétention différente a été appliquée ou leur période de rétention étendue dans le cadre d’une révision ne s’affichent pas ici.
 
 ![Onglets de disposition](media/Retention-Disposition-tabs.png)
     

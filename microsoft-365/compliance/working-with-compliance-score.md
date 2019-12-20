@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment utiliser les outils de flux de travail dans le score de conformité Microsoft pour vous aider à gérer la conformité de votre organisation.
-ms.openlocfilehash: 9dc3eb41b1ad686e1c9e1f0a4cf2df66ccb3ffbe
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685708"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802131"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Utilisation du score de conformité Microsoft (aperçu)
 
@@ -193,7 +193,7 @@ Sur cette page, vous pouvez rapidement afficher des informations importantes sur
 
 ### <a name="default-assessments"></a>Évaluations par défaut
 
-Par défaut, l’évaluation de la base de données de protection des données Microsoft 365 s’affiche sur la page évaluations. Si vous souhaitez ajouter d’autres évaluations afin de traiter d’autres réglementations et normes, vous pouvez gérer les évaluations dans le gestionnaire de conformité. Le score de conformité fournit plus de 10 évaluations prédéfinies, notamment celles pour RGPD, CCPA, ISO 27001, ISO 27018, NIST 800-53, NIST 800-171, NIST CSF, CSA CCM, FFIEC, HIPAA/Hi et FedRAMP.
+Par défaut, l’évaluation de la base de données de protection des données Microsoft 365 s’affiche sur la page évaluations. Le score de conformité fournit également plusieurs évaluations prédéfinies ([afficher la liste complète](compliance-score.md#templates)). Si vous souhaitez ajouter d’autres évaluations afin de répondre à des réglementations et des normes supplémentaires, vous pouvez le faire dans le gestionnaire de conformité.
 
 ### <a name="managing-assessments"></a>Gestion des évaluations
 

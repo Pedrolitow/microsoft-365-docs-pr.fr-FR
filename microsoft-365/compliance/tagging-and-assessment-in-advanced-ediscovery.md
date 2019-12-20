@@ -3,6 +3,7 @@ title: Balisage et évaluation dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Examinez les étapes pour effectuer une formation à l’évaluation, notamment des fichiers de marquage, et en examinant les résultats de l’évaluation dans Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 067f8933bd7fc1286e468d664bf4dbd754e64f00
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33a79bd6a9debb203a5685dde11b9350da6006af
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079692"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802747"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Balisage et évaluation dans Office 365 Advanced eDiscovery
 
@@ -118,7 +119,7 @@ Lorsque la richesse est très faible, le nombre de fichiers d’évaluation supp
 En l’absence de stabilisation statistiquement basée statistiquement, les résultats seront moins élevés. Toutefois, ces résultats peuvent être utilisés pour rechercher des fichiers pertinents lorsque vous n’avez pas besoin de connaître le pourcentage de fichiers pertinents trouvés. De même, cet État peut être utilisé pour former des problèmes avec une faible richesse, où les scores de pertinence peuvent accélérer l’accès aux fichiers pertinents à un problème spécifique.
   
 > [!TIP]
-> Dans l' **onglet \> suivi de pertinence** , affichage des problèmes étendus, les options d’affichage suivantes sont disponibles : > l’étape suivante recommandée, telle que l' **étape suivante : le marquage** peut être contourné (par problème) en cliquant sur le bouton **modifier** à sa droite. , puis en sélectionnant une autre étape dans l' **étape suivante**. Lorsque l’indicateur de progression de l’évaluation n’est pas terminé, l’option évaluation est recommandée suivant, pour baliser les fichiers d’évaluation et augmenter la précision des statistiques. > vous pouvez modifier la marge d’erreur et évaluer son impact, en cliquant sur **modifier**, puis dans la **boîte de dialogue niveau d’évaluation**, en modifiant la **marge d’erreur cible pour les estimations de rappel**, puis en cliquant sur **mettre à jour les valeurs**. De plus, dans cette boîte de dialogue, vous pouvez afficher les options avancées en cliquant sur **avancé**. > vous pouvez afficher des statistiques supplémentaires sur le niveau d’évaluation et leur impact en cliquant sur **affichage**. Dans la boîte de dialogue résultats détaillés affichés, les statistiques sont disponibles par problème, lorsqu’il y a au moins 500 fichiers d’évaluation marqués et que 18 fichiers sont balisés comme pertinents pour le problème. 
+> Dans l' **onglet \> suivi de pertinence** , affichage des problèmes étendus, les options d’affichage suivantes sont disponibles : > l’étape suivante recommandée, telle que l' **étape suivante : le marquage** peut être contourné (par problème) en cliquant sur le bouton **modifier** à sa droite, puis en sélectionnant une autre étape dans l' **étape suivante**. Lorsque l’indicateur de progression de l’évaluation n’est pas terminé, l’option évaluation est recommandée suivant, pour baliser les fichiers d’évaluation et augmenter la précision des statistiques. > vous pouvez modifier la marge d’erreur et évaluer son impact, en cliquant sur **modifier**, puis dans la **boîte de dialogue niveau d’évaluation**, en modifiant la **marge d’erreur cible pour les estimations de rappel**, puis en cliquant sur **mettre à jour les valeurs**. De plus, dans cette boîte de dialogue, vous pouvez afficher les options avancées en cliquant sur **avancé**. > vous pouvez afficher des statistiques supplémentaires sur le niveau d’évaluation et leur impact en cliquant sur **affichage**. Dans la boîte de dialogue résultats détaillés affichés, les statistiques sont disponibles par problème, lorsqu’il y a au moins 500 fichiers d’évaluation marqués et que 18 fichiers sont balisés comme pertinents pour le problème. 
   
 ## <a name="see-also"></a>Voir aussi
 

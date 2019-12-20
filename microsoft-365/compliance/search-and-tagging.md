@@ -3,6 +3,7 @@ title: Recherche et balisage
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: Dans Advanced eDiscovery, le module de recherche et de marquage vous permet de rechercher, de prévisualiser et d’organiser les documents dans votre cas. Actuellement, ce module est en version bêta.
-ms.openlocfilehash: b3e660e6dca014323cfd06f10c14747751aeb386
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f5e192988519a9190aa53efef35a8e584e0987cc
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079768"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802897"
 ---
 # <a name="search-and-tagging"></a>Recherche et balisage
 
@@ -55,8 +56,8 @@ Le tableau suivant répertorie les propriétés que vous pouvez rechercher à l�
 |**title** <br/> | Titre d’un document de site. <br/> |
 |**dominanttheme**\* <br/> | Thème dominant d’un élément. <br/> |
 |**themeslist**\* <br/> | Thèmes associés à un élément. <br/> |
-|**readpercentile_[issuenum]**\*\* <br/> | Centile de lecture d’un élément pour le problème défini par [issuenum]. <br/> |
-|**relevancescore_[issuenum]**\*\* <br/> | Score de pertinence d’un élément pour le problème défini par [issuenum]. <br/> |
+|**readpercentile_ [issuenum]**\*\* <br/> | Centile de lecture d’un élément pour le problème défini par [issuenum]. <br/> |
+|**relevancescore_ [issuenum]**\*\* <br/> | Score de pertinence d’un élément pour le problème défini par [issuenum]. <br/> |
 |**relevancetag_ [TagName]**\*\* <br/> | Si un élément a été marqué manuellement pour des éléments de pertinence, la balise définie par [TagName]. <br/> |
 |||
 

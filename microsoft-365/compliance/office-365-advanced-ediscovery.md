@@ -3,6 +3,7 @@ title: Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Découvrez comment Office 365 Advanced eDiscovery peut vous aider à analyser les données dans Office 365, rationaliser les révisions de documents et prendre des décisions pour une découverte électronique efficace.
-ms.openlocfilehash: 8af18c49511373dfa53fdb515f37dce37ef35150
-ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
+ms.openlocfilehash: 4c72444765f75a77d3b62dbd2675b0c277d3d6ba
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "38685682"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803791"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
 

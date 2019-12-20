@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1bc568d6db13dd91d0e16e29633dccc58e28fc2a
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 35e1887d37f3ca5840d595c7927ff4d6064e08d9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859474"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804237"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>Loi Sarbanes-Oxley de 2002 (SOX)
 
@@ -56,7 +57,7 @@ Rapports [SOC 1 type 2](offering-SOC.md) pour :
 - Dynamics 365
 - Office 365
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Comment puis-je utiliser la conformité Microsoft SOX pour faciliter le processus de conformité de mon organisation ?**
 

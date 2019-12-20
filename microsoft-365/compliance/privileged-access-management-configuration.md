@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la configuration de la gestion des accès privilégiés dans Office 365
-ms.openlocfilehash: 46bfeaf0c73c4598fcdaa65d654201620396600c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5b7bf33f41bc722c557f2b515c5ab027bd401a2a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080033"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803761"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuration de la gestion des accès privilégiés dans Office 365
 
@@ -35,7 +35,7 @@ Procédez comme suit pour configurer et utiliser l’accès privilégié dans vo
 
 - [Étape 1 : créer un groupe d’approbateurs](privileged-access-management-configuration.md#step1)
 
-    Avant de commencer à utiliser l’accès par privilège, déterminez qui a besoin de l’autorité d’approbation pour les demandes entrantes d’accès à des tâches élevées et privilégiées. Tout utilisateur qui fait partie du groupe approbateurs est en mesure d’approuver les demandes d’accès. Pour cela, vous créez un groupe de sécurité à extension messagerie dans Office 365.
+    Avant de commencer à utiliser l’accès par privilège, déterminez qui a besoin de l’autorité d’approbation pour les demandes entrantes d’accès à des tâches élevées et privilégiées. Tout utilisateur qui fait partie du groupe approbateurs est en mesure d’approuver les demandes d’accès. Ce groupe est activé par la création d’un groupe de sécurité à extension messagerie dans Office 365.
 
 - [Étape 2 : activer l’accès privilégié](privileged-access-management-configuration.md#step2)
 
@@ -52,7 +52,7 @@ Procédez comme suit pour configurer et utiliser l’accès privilégié dans vo
 Une fois que l’approbation est accordée, l’utilisateur qui a effectué la demande peut exécuter la tâche prévue et l’accès privilégié autorise et exécute la tâche au nom de l’utilisateur. L’approbation reste valide pour la durée demandée (la durée par défaut est de 4 heures), pendant laquelle le demandeur peut exécuter la tâche prévue plusieurs fois. Toutes les exécutions de ce type sont enregistrées et mises à disposition pour l’audit de sécurité et de conformité. 
 
 > [!NOTE]
-> Si vous souhaitez utiliser Exchange Management PowerShell pour activer et configurer l’accès privilégié, suivez les étapes de la [page connexion à Exchange Online PowerShell à l’aide de l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) pour vous connecter à Exchange Online PowerShell avec votre Office 365 informations d’identification. Vous n’avez pas besoin d’activer l’authentification multifacteur pour votre organisation Office 365 pour utiliser les étapes d’activation de l’accès privilégié lors de la connexion à Exchange Online PowerShell. La connexion avec l’authentification multifacteur crée un jeton OAuth qui est utilisé par un accès privilégié pour signer vos demandes.
+> Si vous souhaitez utiliser Exchange Management PowerShell pour activer et configurer l’accès privilégié, suivez les étapes de la [page connexion à Exchange Online PowerShell à l’aide de l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) pour vous connecter à Exchange Online PowerShell avec vos informations d’identification Office 365. Vous n’avez pas besoin d’activer l’authentification multifacteur pour votre organisation Office 365 pour utiliser les étapes d’activation de l’accès privilégié lors de la connexion à Exchange Online PowerShell. La connexion avec l’authentification multifacteur crée un jeton OAuth qui est utilisé par un accès privilégié pour signer vos demandes.
 
 <a name="step1"> </a>
 
@@ -78,9 +78,9 @@ Une fois que l’approbation est accordée, l’utilisateur qui a effectué la d
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **paramètres > sécurité & confidentialité** > des**accès privilégiés**.
+2. Dans le centre d’administration, accédez à **paramètres > paramètres > sécurité & confidentialité** > des**accès privilégiés**.
 
-3. Activez l' **autorisation exiger des approbations pour le contrôle d’accès privilégié** .
+3. Activez le contrôle **exiger des approbations pour les tâches privilégiées** .
 
 4. Affectez le groupe d’approbateurs que vous avez créé à l’étape 1 comme **groupe d’approbateurs par défaut**.
 

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7ed252a681942d7c00840d3902f4c48e80231331
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 468fa4bb8b6eb2e6b5bc4d94f193560373dfc1e7
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859864"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805030"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Loi sur la confidentialité et les droits d’enseignement familial (FERPA)
 
@@ -56,7 +57,7 @@ Les services pour lesquels Microsoft s’engagent à être désignés comme un �
 
 FERPA n’exige ni ne reconnaît les audits ou les certifications.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Pourquoi FERPA est-il important ?**
 

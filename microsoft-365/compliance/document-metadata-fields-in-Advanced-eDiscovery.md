@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 39ce4518e12b4446b339cbf7341a354bf5bd8876
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633583"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805967"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées de document dans Advanced eDiscovery
 
@@ -35,15 +35,15 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 
 - Description du champ de métadonnées (dans la **colonne Description**).
 
-| Nom du champ | Nom de champ pouvant faire l’objet d’une recherche | Nom du champ exporté | Nom du champ d’affichage | Description |
-| :- |  :- |  :- |  :- |  :- |
+|Nom du champ|Nom de champ pouvant faire l’objet d’une recherche|Nom du champ exporté|Nom du champ d’affichage|Description|
+|:-|:-|:-|:-|:-|
 | ID de contenu de pièce jointe | AttachmentContentId |  | ID de contenu de pièce jointe | ID de contenu de la pièce jointe de l’élément. |
 | Noms des pièces jointes | AttachmentNames | Attachment_Names | Noms des pièces jointes | Liste des noms des pièces jointes. |
 | Score de privilège client pour les avocats | AttorneyClientPrivilegeScore |  | Score de privilège client pour les avocats | Avocat-score de contenu du modèle de privilège client. |
 | Auteur | Auteur | Doc_authors | Auteur | Auteur à partir des métadonnées du document. |
 | Cci | Cci | Email_bcc | Cci | Champ CCI pour les types de message.  Le format **est \<DisplayName SMTPAddress>**. |
 | Cc | Cc | Email_cc | Cc | Champ CC pour les types de message.  Le format **est \<DisplayName SMTPAddress>**. |
-| Étiquettes de conformité | ComplianceLabels | Compliance_labels | Étiquettes de conformité | Étiquettes de conformité appliquées dans Office 365. |
+| Étiquettes de conformité | ComplianceLabels | Compliance_labels | Étiquettes de conformité |[Étiquettes de rétention](labels.md) appliquées au contenu dans Office 365. |
 | Tracé transparent | CompoundPath | Compound_path | Tracé transparent | Chemin lisible par l’utilisateur qui décrit la source de l’élément. |
 | Contenu | Contenu |  |  | Texte extrait de l’élément. |
 | Corps de la conversation | Corps de la conversation |  | Corps de la conversation | Corps de la conversation de l’élément. |
@@ -131,7 +131,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 | Centile en lecture | ReadPercentile |  | Centile en lecture | En lecture de centile pour le document en fonction de la pertinence. |
 | Nombre de destinataires |  | Recipient_count | Nombre de destinataires | Nombre de destinataires dans le message. |
 | Domaines de destinataires | RecipientDomains | Email_recipient_domains | Domaines de destinataires | Liste de tous les domaines de destinataires d’un message. |
-| Destinataires | Destinataires | Email_recipients | Destinataires | Liste de tous les destinataires d’un message (à, CC, CCI). |
+| Destinataires | Destinataires | Email_recipients | Recipients | Liste de tous les destinataires d’un message (à, CC, CCI). |
 | Problème de cas de groupe de chargement de pertinence 1 |  | Relevance_load_group_case_issue_1 |  | Cas de groupe de chargement de pertinence 1 de pertinence. |
 | Description du cas du problème 1 du statut de pertinence |  | Relevance_status_description_Case_issue_1 |  | État de pertinence Description du cas problème 1 par rapport à la pertinence. |
 | Problème lié à la balise de pertinence 1 |  | Relevance_tag_case_issue_1 |  | Balise de pertinence problème 1 par rapport à la pertinence. |

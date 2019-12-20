@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4921fdaa2c6dc7199adb810f5320972f0c1ef8db
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: c87618648c4b34553312a91d5633164fee316e52
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859824"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804997"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>Publication 140-2 (Federal Information Processing Standard)
 
@@ -40,7 +41,7 @@ Alors que le Guide d’implémentation actuel de CMVP FIPS 140-2 exclut une vali
 - [Dynamics 365 et Dynamics 365 Government](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365)
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Quelle est la différence entre « FIPS 140 Valided » et « FIPS 140 compatible » ?**
 
@@ -83,7 +84,7 @@ Il s’agit de deux normes de sécurité distinctes avec des objectifs différen
 - [Exigences de sécurité de la publication 140-2 FIPS pour les modules de chiffrement](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [Programme de validation du module de chiffrement NIST](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server et FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Si un ancien employé revient à votre organisation, ou si un nouvel employé est embauché pour prendre en charge les responsabilités d’un employé à l’origine de la demande, vous pouvez récupérer le contenu de la boîte aux lettres inactive dans Office 365. Lorsque vous récupérez une boîte aux lettres inactive, elle est convertie en une nouvelle boîte aux lettres qui contient le contenu de la boîte aux lettres inactive. '
-ms.openlocfilehash: 9caa5d8f8c44ee5a916129e7f181532c8c0dd1a2
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6589c8b75e7d17720848ed221e9625c77b867503
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685974"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803711"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Récupérer une boîte aux lettres inactive dans Office 365
 
@@ -45,9 +45,7 @@ Consultez la section [Plus d'informations](#more-information) pour obtenir d'aut
     ```
 
     Utilisez les informations renvoyées par cette commande pour récupérer une boîte aux lettres inactive spécifique.
-    
-- Pour plus d’informations sur les boîtes aux lettres inactives, consultez la rubrique [inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
-    
+
 ## <a name="recover-an-inactive-mailbox"></a>Récupérer une boîte aux lettres inactive
 
 Utilisez la cmdlet **New-Mailbox** avec le paramètre *InactiveMailbox* pour récupérer une boîte aux lettres inactive. 
@@ -101,5 +99,5 @@ Après la récupération d'une boîte aux lettres inactive, un compte d'utilisat
 
     Si la propriété **ExternalDirectoryObjectId** n'a pas de valeur, la période de rétention de boîte aux lettres a expiré et vous pouvez récupérer la boîte aux lettres inactive en exécutant la commande **New-Mailbox -InactiveMailbox**. Si la propriété **ExternalDirectoryObjectId** affiche une valeur, la période de rétention de boîte aux lettres supprimée (récupérable) n'a pas expiré et vous devez récupérer la boîte aux lettres en restaurant le compte d'utilisateur Office 365. Consultez la rubrique [Supprimer ou restaurer des utilisateurs](https://go.microsoft.com/fwlink/p/?LinkId=279162)
     
-- **Pensez à activer la boîte aux lettres d'archivage après avoir récupéré une boîte aux lettres inactive.** Ainsi, l'utilisateur qui revient ou le nouvel employé peut déplacer les anciens messages vers la boîte aux lettres d'archivage. Lorsque le blocage de rétention expire, la stratégie d’archivage qui fait partie de la stratégie de rétention Exchange par défaut affectée aux boîtes aux lettres Exchange Online déplace les éléments datant de deux ans ou plus dans la boîte aux lettres d’archivage. Si vous n'activez pas la boîte aux lettres d'archivage, les éléments antérieurs à deux ans restent dans la boîte aux lettres principale de l'utilisateur. Pour plus d’informations, consultez [la rubrique activation des boîtes aux lettres d' &amp; archivage dans le centre de sécurité conformité Office 365](enable-archive-mailboxes.md).
+- **Pensez à activer la boîte aux lettres d'archivage après avoir récupéré une boîte aux lettres inactive.** Ainsi, l'utilisateur qui revient ou le nouvel employé peut déplacer les anciens messages vers la boîte aux lettres d'archivage. Lorsque le blocage de rétention expire, la stratégie d’archivage qui fait partie de la stratégie de rétention Exchange par défaut affectée aux boîtes aux lettres Exchange Online déplace les éléments datant de deux ans ou plus dans la boîte aux lettres d’archivage. Si vous n'activez pas la boîte aux lettres d'archivage, les éléments antérieurs à deux ans restent dans la boîte aux lettres principale de l'utilisateur. Pour plus d’informations, consultez la rubrique [activation des boîtes aux lettres d’archivage](enable-archive-mailboxes.md).
  

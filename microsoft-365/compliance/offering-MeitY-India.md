@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 5ec81552de43d2e67a4987b0efbaf5582be26e40
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859574"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804447"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministère de l’électronique et des technologies de l’information (MeitY)
 
@@ -41,13 +42,14 @@ L’accréditation MeitY de Microsoft était le résultat d’un audit rigoureux
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Intune
+- [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
 - Accréditation Microsoft Cloud sous [l’état d’audit des fournisseurs de services Cloud](https://meity.gov.in/content/gi-cloud-meghraj)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Pourquoi MeitY est-il important ?**
 
@@ -58,7 +60,7 @@ Le fait de rendre les services gouvernementaux accessibles aux citoyens en ligne
 - [Ministère de l’électronique et des technologies de l’information](https://meity.gov.in/)
 - [Initiative Cloud MeghRaj](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Fournisseurs de services Cloud accrédités](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 

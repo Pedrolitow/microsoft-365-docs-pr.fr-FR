@@ -1,7 +1,7 @@
 ---
 title: Numéro de permis de conduire de l’UE
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente ce qu’une stratégie de protection contre la perte de données (DLP) recherche lorsqu’elle détecte le type d’informations sensibles du pilote de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: f1a95ecbaf6b6d1ac189290dd6d076cfd91ab30f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6df025caf8d06c617e09a3b53dc6c82d69aaf5a8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079282"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805957"
 ---
 # <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l’UE
 
@@ -57,7 +57,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_austria_eu_driver's_license_number**|
+|**Keywords_austria_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/>  Numéro de permis de conduire  <br/> dlno #  <br/> Fuhrerschein  <br/> Fuhrerschein Republik Osterreich  <br/> |
    
@@ -97,7 +97,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords__belgium_eu_driver's_license_number**|
+|**Keywords__belgium_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-Nr  <br/> |
    
@@ -137,7 +137,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_bulgaria_eu_driver's_license_number**|
+|**Keywords_bulgaria_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
@@ -177,7 +177,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_croatia_eu_driver's_license_number**|
+|**Keywords_croatia_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vozačka dozvola  <br/> |
    
@@ -216,7 +216,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_cyprus_eu_driver's_license_number**|
+|**Keywords_cyprus_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
    
@@ -262,7 +262,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_czech_republic_eu_driver's_license_number**|
+|**Keywords_czech_republic_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
    
@@ -302,7 +302,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_denmark_eu_driver's_license_number**|
+|**Keywords_denmark_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
@@ -345,7 +345,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_estonia_eu_driver's_license_number**|
+|**Keywords_estonia_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> permis de conduire  <br/> |
    
@@ -390,7 +390,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_finland_eu_driver's_license_number**|
+|**Keywords_finland_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> ajokortti  <br/> |
    
@@ -437,7 +437,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_greece_eu_driver's_license_number**|
+|**Keywords_greece_eu_driver’s_license_number**|
 |:-----|
 |Fichier #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
    
@@ -480,7 +480,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_hungary_eu_driver's_license_number**|
+|**Keywords_hungary_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
@@ -523,7 +523,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_ireland_eu_driver's_license_number**|
+|**Keywords_ireland_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
    
@@ -570,7 +570,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_latvia_eu_driver's_license_number**|
+|**Keywords_latvia_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
    
@@ -609,7 +609,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_lithuania_eu_driver's_license_number**|
+|**Keywords_lithuania_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
    
@@ -648,7 +648,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_luxemburg_eu_driver's_license_number**|
+|**Keywords_luxemburg_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
    
@@ -697,7 +697,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_malta_eu_driver's_license_number**|
+|**Keywords_malta_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> Liċenzja-sewqan  <br/> |
    
@@ -736,7 +736,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_netherlands_eu_driver's_license_number**|
+|**Keywords_netherlands_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
@@ -785,7 +785,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_poland_eu_driver's_license_number**|
+|**Keywords_poland_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> prawo jazdy  <br/> |
    
@@ -834,7 +834,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_portugal_eu_driver's_license_number**|
+|**Keywords_portugal_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> Carteira de motorista  <br/> |
    
@@ -877,7 +877,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_romania_eu_driver's_license_number**|
+|**Keywords_romania_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> permis de conducere  <br/> |
    
@@ -920,7 +920,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_slovakia_eu_driver's_license_number**|
+|**Keywords_slovakia_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vodičský preukaz  <br/> |
    
@@ -959,7 +959,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_slovenia_eu_driver's_license_number**|
+|**Keywords_slovenia_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
    
@@ -1002,7 +1002,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_spain_eu_driver's_license_number**|
+|**Keywords_spain_eu_driver’s_license_number**|
 |:-----|
 |dlno #  <br/> LD #  <br/> pilotes.  <br/> permis de conduire  <br/> Permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> permiso de Conducción  <br/> permiso conducción  <br/> número licencia conducir  <br/> Número de carnet de conducir  <br/> conducir de carnet número  <br/> licencia conducir  <br/> Número de permiso de conducir  <br/> Número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> licencia de manejo  <br/> carnet El de conducir  <br/> carnet conducir  <br/> |
    
@@ -1047,7 +1047,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
 
 | |
-|**Keywords_sweden_eu_driver's_license_number**|
+|**Keywords_sweden_eu_driver’s_license_number**|
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> körkort  <br/> |
    
