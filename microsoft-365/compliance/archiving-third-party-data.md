@@ -1,5 +1,5 @@
 ---
-title: Archiver des données tierces dans Office 365
+title: Archiver des données tierces
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Les administrateurs peuvent importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de documents de collaboration vers des boîtes aux lettres de votre organisation Office 365. Cela vous permet d’archiver des données à partir de Facebook, de Twitter et d’autres sources de données tierces dans Office 365. Vous pouvez ensuite utiliser et appliquer les fonctionnalités de conformité d’Office 365 (telles que la conservation légale, la découverte électronique, l’archivage inaltérable et les stratégies de rétention) pour les données tierces.
-ms.openlocfilehash: 084cacf1c2bef8b5786e6dba804f9a1e87001338
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 10ec436887816080716ecd8870e2b2da8021e9af
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615584"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807463"
 ---
-# <a name="archive-third-party-data-in-office-365"></a>Archiver des données tierces dans Office 365
+# <a name="archive-third-party-data"></a>Archiver des données tierces
 
 Office 365 permet aux administrateurs d’importer et d’archiver des données tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents, vers des boîtes aux lettres de votre organisation Office 365. Des exemples de sources de données tierces que vous pouvez importer dans Office 365 incluent les services suivants : 
   

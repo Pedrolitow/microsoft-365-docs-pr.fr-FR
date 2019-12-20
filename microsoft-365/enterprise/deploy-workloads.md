@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Intégrez les utilisateurs de votre organisation aux charges de travail productivité de Microsoft 365 Entreprise.
-ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
-ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
+ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37608595"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801899"
 ---
-# <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
+# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
 
 Pour bénéficier des avantages de la créativité et du travail d’équipe de Microsoft 365 Entreprise, déployez sur votre infrastructure de base les charges de travail suivantes :
 
@@ -47,7 +47,7 @@ Ces scénarios vous guident dans la configuration d’une équipe Microsoft Team
 
 Les charges de travail et les scénarios décrits dans le guide de déploiement global de Microsoft 365 Entreprise sont les suivants :
 
-![Les charges de travail et scénarios dans le guide de déploiement global de Microsoft 365 Entreprise](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Les charges de travail et les scénarios décrits dans le guide de déploiement global de Microsoft 365 Entreprise sont les suivants](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 Pour obtenir d’autres scénarios, reportez-vous à la [bibliothèque de productivité Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary). 
 

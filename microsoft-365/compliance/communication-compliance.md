@@ -1,5 +1,6 @@
 ---
-title: Conformité de la communication dans Microsoft 365 (version d’évaluation)
+title: Conformité de la communication (aperçu)
+description: En savoir plus sur la conformité des communications dans Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: En savoir plus sur la conformité des communications dans Microsoft 365
-ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 2e54a9d6e0cb74d7e58cda9869548214a7c69582
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633663"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807353"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Conformité de la communication dans Microsoft 365 (version d’évaluation)
 
@@ -93,7 +93,7 @@ Les nouveaux tableaux de bord interactifs pour les alertes, les correspondances 
 
 Stratégies de conformité des communications analysez et capturez les messages sur plusieurs canaux de communication pour vous aider à examiner et à corriger rapidement les problèmes de conformité :
 
-- **Microsoft teams**: les communications de conversation et les pièces jointes associées pour les canaux [Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) publics et privés et les conversations individuelles sont prises en charge dans la conformité de la communication en tant que source de canal autonome ou avec d’autres services Microsoft 365. Les stratégies analysent désormais automatiquement toutes les équipes et tous les canaux Microsoft teams pour des utilisateurs spécifiques définis dans une stratégie, ce qui évite d’avoir à conserver une liste de mappage distincte pour les affectations de Microsoft Teams.
+- **Microsoft teams**: les communications de conversation pour les canaux [Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) publics et privés et les conversations individuelles sont prises en charge dans la conformité de la communication en tant que source de canal autonome ou avec d’autres services Microsoft 365. Les stratégies analysent désormais automatiquement toutes les équipes et tous les canaux Microsoft teams pour des utilisateurs spécifiques définis dans une stratégie, ce qui évite d’avoir à conserver une liste de mappage distincte pour les affectations de Microsoft Teams.
 - **Exchange Online**: toutes les boîtes aux lettres hébergées sur [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) dans votre organisation Microsoft 365 sont éligibles pour l’analyse. Les e-mails et les pièces jointes correspondant à des conditions de stratégie de conformité de communication sont immédiatement disponibles pour la surveillance et les rapports de surveillance. Exchange Online est maintenant un canal source facultatif et n’est plus requis dans les stratégies de conformité des communications.
 - **Skype entreprise Online**: les stratégies de conformité des communications prennent en charge l’analyse des communications de conversation et des pièces jointes associées dans [Skype entreprise Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Sources**tierces : vous pouvez analyser les messages provenant de [sources](archiving-third-party-data.md) tierces pour les données importées dans des boîtes aux lettres dans votre organisation Microsoft 365. La conformité de la communication prend en charge les connexions à plusieurs plateformes populaires, notamment la connexion instant Bloomberg, Facebook, Twitter et d’autres.
@@ -111,6 +111,9 @@ L’identification et la résolution des problèmes de conformité à l’aide d
 ### <a name="configure"></a>Configurer
 
 Dans cette étape du flux de travail, vous identifiez vos besoins en matière de conformité et configurez les stratégies de conformité de communication applicables. Les modèles de stratégie constituent un excellent moyen de configurer rapidement une nouvelle stratégie de conformité, mais aussi de modifier et de mettre à jour rapidement les stratégies à mesure que vos besoins évoluent. Par exemple, vous pouvez tester rapidement une stratégie de langue choquante et de blocage sur les communications pour un petit groupe d’utilisateurs avant de configurer une stratégie pour tous les utilisateurs de votre organisation.
+
+> [!Important]
+> Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Pour activer les autorisations pour les fonctionnalités de conformité de communication, consultez la rubrique [rendre la conformité de la communication disponible dans votre organisation](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required).
 
 Vous pouvez choisir parmi les modèles de stratégie suivants dans le centre de conformité Microsoft 365 :
 

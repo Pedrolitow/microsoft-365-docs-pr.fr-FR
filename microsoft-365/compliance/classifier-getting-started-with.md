@@ -1,5 +1,5 @@
 ---
-title: Prise en main des classifieurs Microsoft 365 (aperçu)
+title: Prise en main des classificateurs de formation (préversion)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: 458f7e6c9f15bac71cd3dadf2ed64e1c1f4ef1c5
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: f37549a311af630ced0191b86f0be47b295f93ea
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633863"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807423"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 

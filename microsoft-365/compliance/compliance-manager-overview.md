@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 97cbc676f9de070d1532d1e56c96db0efcce8bd0
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633653"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807333"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -51,7 +51,7 @@ Les [groupes](working-with-compliance-manager.md#groups) sont des conteneurs qui
 
 ## <a name="assessments"></a>Évaluations
 
-Les [évaluations](working-with-compliance-manager.md#assessments) sont des conteneurs qui vous permettent d’organiser des contrôles pour les responsabilités partagées entre Microsoft et votre organisation pour évaluer les risques de sécurité et de conformité du service Cloud. Les évaluations vous aident à implémenter les mesures de protection des données spécifiées par une norme de conformité et des normes, réglementations ou législations applicables en matière de protection des données. Elles vous aident à cerner votre position de protection et de conformité des données par rapport à la norme sélectionnée pour le service Cloud Microsoft sélectionné. Les évaluations sont effectuées par l’implémentation de contrôles inclus dans l’évaluation qui correspond à une norme de certification.
+Les [évaluations](working-with-compliance-manager.md#assessments) sont des conteneurs qui vous permettent d’organiser les contrôles en fonction des responsabilités partagées entre Microsoft et votre organisation pour évaluer les risques de sécurité et de conformité du service Cloud. Les évaluations vous aident à implémenter les mesures de protection des données spécifiées par une norme de conformité et des normes, réglementations ou législations applicables en matière de protection des données. Elles vous aident à cerner votre position de protection et de conformité des données par rapport à la norme sélectionnée pour le service Cloud Microsoft sélectionné. Les évaluations sont effectuées par l’implémentation de contrôles inclus dans l’évaluation qui correspond à une norme de certification.
 
 Par défaut, le gestionnaire de conformité crée les évaluations suivantes pour votre organisation :
 
@@ -124,7 +124,7 @@ Il n’existe plus de rôle d' **accès invité** par défaut. Chaque utilisateu
   
 ## <a name="manage-evidence"></a>Gérer les preuves
 
-Le gestionnaire de conformité peut stocker des preuves de vos tâches d’implémentation pour effectuer des tests et la validation des contrôles gérés par les clients. Les preuves incluent des documents, des feuilles de calcul, des captures d’écran, des images, des scripts, des fichiers de sortie de script et d’autres fichiers. Le gestionnaire de conformité reçoit automatiquement la télémétrie et crée un enregistrement de preuve pour les éléments d’action intégrés avec le score sécurisé. Toutes les données téléchargées sous forme de preuves dans le gestionnaire de conformité sont stockées aux États-Unis sur les sites de stockage cloud de Microsoft. Ces données sont répliquées dans les régions Azure situées en Asie du sud-est et en Europe de l’Ouest.
+Le gestionnaire de conformité peut stocker des preuves de vos tâches d’implémentation concernant les tests et la validation des contrôles gérés par les clients. Les preuves incluent des documents, des feuilles de calcul, des captures d’écran, des images, des scripts, des fichiers de sortie de script et d’autres fichiers. Le gestionnaire de conformité reçoit automatiquement la télémétrie et crée un enregistrement de preuve pour les éléments d’action intégrés avec le score sécurisé. Toutes les données téléchargées sous forme de preuves dans le gestionnaire de conformité sont stockées aux États-Unis sur les sites de stockage cloud de Microsoft. Ces données sont répliquées dans les régions Azure situées en Asie du sud-est et en Europe de l’Ouest.
 
 ## <a name="templates"></a>Modèles
 
@@ -134,16 +134,18 @@ Les modèles préconfigurés inclus dans le gestionnaire de conformité sont les
 
 1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
 2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [NIST 800-53 rév. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-5. [Infrastructure NIST Cybersecurity (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-6. [Matrice de contrôles Cloud CSA (Cloud Security Alliance) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+4. [NIST 800-53 rév. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+6. [Infrastructure NIST Cybersecurity (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [Matrice de contrôles Cloud CSA (Cloud Security Alliance) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [Livret de sécurité des informations sur les institutions financières fédérales (FFIEC)](https://go.microsoft.com/fwlink/?linkid=2109077) 
-8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [Hi-Tech](https://go.microsoft.com/fwlink/?linkid=2109079)
-9. [FedRAMP modéré](https://go.microsoft.com/fwlink/?linkid=2108869)
-10. [RGPD de l’Union européenne](https://go.microsoft.com/fwlink/?linkid=2108870)
-11. [California Consumer Privacy Act (CCPA)-Aperçu](https://go.microsoft.com/fwlink/?linkid=2108871)
-12. [Base de données de protection des données Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [Hi-Tech](https://go.microsoft.com/fwlink/?linkid=2109079)
+10. [FedRAMP modéré](https://go.microsoft.com/fwlink/?linkid=2108869)
+11. [RGPD de l’Union européenne](https://go.microsoft.com/fwlink/?linkid=2108870)
+12. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (aperçu)
+13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (version préliminaire)
+14. [Base de données de protection des données Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>Score de conformité
 

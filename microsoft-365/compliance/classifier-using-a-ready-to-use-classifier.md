@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 est fourni avec prêt à utiliser les classifieurs d’apprentissage automatique que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs prêts à l’emploi.
-ms.openlocfilehash: 7e10bb94f84dd10a1ac22126106531d8ad309c47
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+description: Microsoft 365 est fourni avec un certain nombre de classifieurs d’apprentissage automatique prêts à l’emploi que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs prêts à l’emploi.
+ms.openlocfilehash: 6eaa3689dce1bfb37fdad6b1b22dcac3539bb31e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633853"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807413"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>Utilisation d’un classificateur prêt à l’emploi (préversion)
 
@@ -34,7 +34,7 @@ Microsoft a formé et testé un certain nombre de classifieurs utilisant des exe
 > Avant d’utiliser des classifieurs prêts à utiliser dans votre classification et votre flux de travail d’étiquetage, vous devez le tester par rapport à un échantillon du contenu de votre organisation que vous jugez adapté à la catégorie afin de vérifier que ses prévisions de classification répondent à vos attentes.
 
 > [!IMPORTANT]
-> Veuillez noter que le langage offensant, le harcèlement, le catégoriseur et les classifieurs de menaces ne fonctionnent qu’avec du texte pouvant faire l’objet d’une recherche et ne sont pas exhaustifs ni complets. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Tandis que les classifieurs peuvent aider votre organisation à surveiller le offensant et d’autres langues, les classifieurs ne traitent pas les conséquences de cette langue et ne sont pas destinés à fournir aux seuls moyens de surveillance ou de réponse à l’utilisation de cette langue. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’application, au blocage, à la suppression et à la rétention de tout contenu identifié par un classificateur pré-formé.
+> Veuillez noter que le langage offensant, le harcèlement, le catégoriseur et les classifieurs de menaces ne fonctionnent qu’avec le texte pouvant faire l’objet d’une recherche. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Tandis que les classifieurs peuvent aider votre organisation à surveiller le offensant et d’autres langues, les classifieurs ne traitent pas les conséquences de cette langue et ne sont pas destinés à fournir aux seuls moyens de surveillance ou de réponse à l’utilisation de cette langue. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’application, au blocage, à la suppression et à la rétention de tout contenu identifié par un classificateur pré-formé.
 
 ## <a name="how-to-prepare-for-and-use-a-ready-to-use-classifier"></a>Comment préparer et utiliser un classificateur prêt à utiliser
 
