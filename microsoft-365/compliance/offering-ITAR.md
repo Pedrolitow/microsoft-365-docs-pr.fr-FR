@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a15b787904149073394bfc08a3ae8faf119d7ac8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859654"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804607"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Trafic international en matière de réglementations sur les armes (ITAR)
 
@@ -41,7 +42,7 @@ Les clients cherchant à héberger des données réglementées par ITAR doivent 
 - [Public Azure](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Où puis-je demander des informations de conformité ?**
 
@@ -54,7 +55,7 @@ Contactez votre responsable de compte Microsoft.
 - [Utilisation d’Azure Government avec des données contrôlées ITAR](https://aka.ms/azure-itar-guide)
 - [Public Azure](https://azure.microsoft.com/features/gov/)
 - [Office 365 gouvernement américain](https://products.office.com/government/office-365-web-services-for-government)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 

@@ -1,5 +1,6 @@
 ---
-title: Configurer des stratégies de supervision pour Office 365
+title: Configurer les stratégies de surveillance
+description: Configurer la surveillance de la communication pour Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,15 +16,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Configurer la surveillance de la communication pour Office 365
-ms.openlocfilehash: 694f35fd42fb534292130695efa12bacc114713c
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+titleSuffix: Office 365 Compliance
+ms.openlocfilehash: 67e7d1a8fe1ca2f64031cab9bdee72ac22c70886
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38685881"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806627"
 ---
-# <a name="configure-supervision-policies-for-office-365"></a>Configurer des stratégies de supervision pour Office 365
+# <a name="configure-supervision-policies-in-office-365"></a>Configurer des stratégies de surveillance dans Office 365
 
 > [!IMPORTANT]
 > Cette rubrique s’applique à la configuration des stratégies de surveillance dans un abonnement Office 365. Si vous souhaitez configurer la conformité des communications pour un abonnement Microsoft 365, consultez [la rubrique Configure communications compliance in microsoft 365 (Preview)](communication-compliance-configure.md).

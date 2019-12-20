@@ -3,6 +3,7 @@ title: Afficher les résultats de l’analyse dans Office 365 Advanced eDiscover
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Comprendre où afficher les résultats du processus d’analyse dans Office 365 Advanced eDiscovery, y compris les définitions des options de tâche affichées.  '
-ms.openlocfilehash: 092daa506316b5eb1ef1f5c466055b29e350dc18
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 36b228c922b76e8bf813cc51f8cb5b51ffaeda43
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079912"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802269"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats de l’analyse dans Office 365 Advanced eDiscovery
 

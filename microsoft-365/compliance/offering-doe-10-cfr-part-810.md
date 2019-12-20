@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: e90609c2cb25f78345c7f4da2b7b2811dd104c16
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859404"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804177"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>US DoE 10 CFR part 810
 
@@ -44,7 +45,7 @@ Par ailleurs, les gouvernements Azure sont un nuage communautaire du gouvernemen
 
 Le contrôle d’exportation USA Department of Energy (DoE) Règlement [10 CFR Part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) régit l’exportation des technologies et des interventions nucléaires non classifiées. Elle permet de s’assurer que les technologies nucléaires exportées à partir des États-Unis ne seront utilisées qu’à des fins pacifiques. La partie révisée 810 (règle finale) a pris effet le 1er mars 2015 et est gérée par l’administration de la [sécurité nucléaire nationale](https://www.energy.gov/nnsa/national-nuclear-security-administration). La section 810,6 indique que l’autorisation d’DoE spécifique est requise pour les deux dispositions de l’assistance et des transferts de technologies nucléaires sensibles qui sont « généralement autorisées », ainsi que celles nécessitant une autorisation spécifique (par exemple, pour obtenir une assistance impliquant des technologies nucléaires sensibles telles que l’enrichissement et la production d’eau lourde).
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Les 10 CFR part 110 règlements de la Commission de réglementation nucléaire américaine s’appliquent-ils au gouvernement Azure ?**
 
