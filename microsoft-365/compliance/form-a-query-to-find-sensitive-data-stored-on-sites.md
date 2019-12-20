@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec la protection contre la perte de données (DLP) dans SharePoint Online, vous pouvez découvrir des documents qui contiennent des données sensibles sur l’ensemble de votre client. Après avoir découvert les documents, vous pouvez travailler avec leurs propriétaires pour protéger les données. Cette rubrique peut vous aider à créer une requête pour rechercher des données sensibles.
-ms.openlocfilehash: 0cf5d0446d8f12560e8fd7b0948dc5b6ce2bbe0f
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: 66cf1f5c4072422c3de8572a5bf4b6f39755cff3
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685873"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823646"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 
@@ -74,7 +74,7 @@ Les exemples suivants utilisent différents types, propriétés et opérateurs s
 
 Toutes les requêtes ne sont pas égales. Le tableau suivant donne des exemples de requêtes qui ne fonctionnent pas avec DLP dans SharePoint et explique pourquoi.
   
-|**Requête non prise en charge**|**Raison**|
+|**Requête non prise en charge**|**Reason**|
 |:-----|:-----|
 | `SensitiveType:"Credit Card Number|.."` <br/> |Vous devez ajouter au moins un nombre.  <br/> |
 | `SensitiveType:"NotARule"` <br/> |« NotARule » n’est pas un nom de type sensible valide. Seuls les noms des [types d’informations sensibles stockent](https://go.microsoft.com/fwlink/?LinkID=509999) le travail dans les requêtes DLP.  <br/> |
@@ -88,7 +88,7 @@ Toutes les requêtes ne sont pas égales. Le tableau suivant donne des exemples 
 
 [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
   
-[Exécuter une recherche de contenu dans le centre de &amp; sécurité conformité Office 365](run-a-content-search-in-the-security-and-compliance-center.md)
+[Exécuter une Recherche de Contenu](content-search.md)
   
 [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
   

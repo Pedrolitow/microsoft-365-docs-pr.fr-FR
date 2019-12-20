@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
-ms.openlocfilehash: 067a54f6286df5a5ce6e5b02b7ea1d6964b16777
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 54a12334c4b63e1751d578dcd5a9c79d887d246d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603748"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823726"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -88,7 +88,7 @@ Les sections suivantes décrivent chacun des rôles RBAC liés à la découverte
 
 ### <a name="case-management"></a>Gestion des cas
 
-Ce rôle permet aux utilisateurs de créer, de modifier, de supprimer et de contrôler l’accès aux cas eDiscovery dans le centre de conformité & Compliance Center. Pour plus d’informations, consultez [la rubrique Manage eDiscovery cases dans le centre de conformité & Compliance Center](manage-ediscovery-cases.md). Comme expliqué précédemment, un utilisateur doit se voir attribuer le rôle de gestion des cas avant de pouvoir utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery. 
+Ce rôle permet aux utilisateurs de créer, de modifier, de supprimer et de contrôler l’accès aux cas eDiscovery dans le centre de conformité & Compliance Center. Pour plus d’informations, consultez [la rubrique Manage eDiscovery cases dans le centre de conformité & Compliance Center](ediscovery-cases.md). Comme expliqué précédemment, un utilisateur doit se voir attribuer le rôle de gestion des cas avant de pouvoir utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery. 
 
 ### <a name="compliance-search"></a>Recherche de conformité
 

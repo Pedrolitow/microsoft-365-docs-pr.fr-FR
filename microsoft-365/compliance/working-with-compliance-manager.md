@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: c50122f390809e145af621ed6341d02ae9c3b8cf
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 556d3994241db65b70feec55ac0f96469f549361
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202355"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962251"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -78,7 +78,7 @@ Les mises à jour du score sécurisé peuvent être activées automatiquement po
 
 2. Dans la barre de menus supérieure du portail d’approbation de service, sélectionnez **administrateur** , puis **paramètres**.
 
-4. Sous l’onglet de **score sécurisé** , sélectionnez le bouton correspondant à votre choix.
+4. Sous l’onglet chiffrement **sécurisé** , sélectionnez le bouton approprié pour le paramètre que vous avez choisi.
 
 **Remarque :** Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions de manière globale.
 

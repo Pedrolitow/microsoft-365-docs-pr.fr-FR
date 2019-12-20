@@ -3,6 +3,7 @@ title: Importer du contenu non-Office 365 pour l’analyse eDiscovery avancée
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Procédure d’importation de contenu qui n’est pas stocké dans O365 dans un objet BLOB Azure afin qu’il puisse être analysé avec AeD
-ms.openlocfilehash: 1c971c9f95d03d05db76f80344adeb93b0a72c06
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aa14a54c20ac580c6412e8dc534ec44520abb3c8
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079180"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823786"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importer du contenu non-Office 365 pour l’analyse eDiscovery avancée
 
@@ -39,7 +40,7 @@ L’utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit
     
 - Un cas eDiscovery existant
     
-- Tous les fichiers de téléchargement rassemblé dans des dossiers contenant un dossier par dépositaire et le nom de ces dossiers se présente à l’alias de format *@ nomdomaine* . L' *alias @ NomDomaine* doit être l’alias et le domaine Office 365 des utilisateurs. Vous pouvez collecter tous les dossiers *alias @ NomDomaine* dans un dossier racine. Le dossier racine ne peut contenir que les dossiers *alias @ NomDomaine* , il ne doit pas y avoir de fichiers libres dans le dossier racine. 
+- Tous les fichiers de téléchargement rassemblé dans des dossiers où se trouve un dossier par dépositaire et le nom de ces dossiers est au format *alias@domainname* . Le *alias@domainname* doit être l’alias et le domaine Office 365 utilisateurs. Vous pouvez collecter tous les dossiers *alias@domainname* dans un dossier racine. Le dossier racine ne peut contenir que les dossiers *alias@domainname* , il ne doit pas y avoir de fichiers libres dans le dossier racine. 
     
 - Un compte qui est un gestionnaire eDiscovery ou un administrateur eDiscovery
     
@@ -47,7 +48,8 @@ L’utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit
     
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Chargement de contenu non-Office 365 dans Advanced eDiscovery
 
-1. En tant que gestionnaire eDiscovery ou administrateur eDiscovery, ouvrez **eDiscovery**et ouvrez le cas où les données non Office 365 seront téléchargées vers. Si vous devez créer un cas, voir [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](manage-ediscovery-cases.md)
+
+1. En tant que gestionnaire eDiscovery ou administrateur eDiscovery, ouvrez **eDiscovery**et ouvrez le cas où les données non Office 365 seront téléchargées vers. Si vous devez créer un cas, voir [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md)
     
 2. Cliquer sur **basculer vers Advanced eDiscovery**
     
@@ -76,7 +78,7 @@ L’utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit
     Pour plus d’informations sur la syntaxe Azcopy, reportez-vous à [la rubrique transférer des données avec le Azcopy sur Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
     
     > [!IMPORTANT]
-    > Il doit y avoir un dossier racine par utilisateur et le nom du dossier doit être au format *alias @ NomDomaine* . 
+    > Il doit y avoir un dossier racine par utilisateur et le nom du dossier doit être au format *alias@domainname* . 
   
 8. Une fois le téléchargement des dossiers terminé, revenez à Advanced eDiscovery. Le contenu des dossiers téléchargés est maintenant prêt à être traité dans Advanced eDiscovery. Sélectionnez le conteneur, puis cliquez sur le bouton processus. Pour plus d’informations sur le traitement de la découverte électronique avancée, consultez [la rubrique exécuter le module de processus et charger des données dans Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
     
@@ -84,6 +86,4 @@ L’utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit
     > Une fois que le conteneur a été traité avec succès dans Advanced eDiscovery, vous ne pourrez plus ajouter de nouveau contenu au stockage SAS dans Azure. Si vous recueillez du contenu supplémentaire et que vous souhaitez l’ajouter à la demande d’analyse avancée de la découverte électronique, vous devez créer un conteneur de **données non-Office 365** et répéter cette procédure. 
   
     > [!NOTE]
-    > Si le conteneur *ne traite pas correctement en raison de problèmes d’attribution de nom de dossier* et que vous résolvez les problèmes, vous devrez tout de même créer un nouveau conteneur et reconnecter et télécharger à nouveau à l’aide des procédures décrites dans cet article. 
-  
-
+    > Si le conteneur *ne traite pas correctement en raison de problèmes d’attribution de nom de dossier* et que vous résolvez les problèmes, vous devrez tout de même créer un nouveau conteneur et reconnecter et télécharger à nouveau à l’aide des procédures décrites dans cet article.

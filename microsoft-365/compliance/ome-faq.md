@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages dans Office 365 fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 8f9621ea440bf089ebc8fa3e35b38ff636657555
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866416"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962561"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
@@ -69,10 +69,10 @@ Les nouvelles fonctionnalités pour le chiffrement de messages Office 365 sont u
 
 |**Fonctionnalité**|**Versions antérieures d’OME**|**IRM**|**Nouvelles fonctionnalités OME**|
 |:-----|:-----|:-----|:-----|
-|**Envoi d’un message électronique chiffré**|Uniquement par le biais des règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook pour PC, Outlook pour Mac ou Outlook sur le Web ; ou via les règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook pour PC, Outlook pour Mac ou Outlook sur le Web ; ou via des règles de flux de messagerie|
+|**Envoi d’un message électronique chiffré**|Uniquement par le biais des règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook pour Windows, Outlook pour Mac ou Outlook sur le Web ; ou via les règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook pour Windows, Outlook pour Mac ou Outlook sur le Web ; ou via des règles de flux de messagerie|
 |**Gestion des droits**|-|Option ne pas transférer et modèles personnalisés|Option ne pas transférer, option de chiffrement uniquement, modèles par défaut et modèles personnalisés|
 |**Type de destinataire pris en charge**|Destinataires externes uniquement|Destinataires internes uniquement|Destinataires internes et externes|
-|**Expérience pour le destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargés et ouverts dans un navigateur ou une application mobile téléchargée.|Les destinataires internes ont reçu uniquement des messages chiffrés dans Outlook pour PC, Outlook pour Mac et Outlook sur le Web.|Les destinataires internes et externes reçoivent des courriers électroniques dans Outlook pour PC, Outlook pour Mac, Outlook sur le Web, Outlook pour Android et Outlook pour iOS, ou via un portail Web, qu’ils se trouvent ou non dans la même organisation Office 365 ou dans n’importe quelle Office 365 Département. Le portail OME ne requiert pas de téléchargement séparé.|
+|**Expérience pour le destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargés et ouverts dans un navigateur ou une application mobile téléchargée.|Les destinataires internes ont reçu uniquement des messages chiffrés dans Outlook pour Windows, Outlook pour Mac et Outlook sur le Web.|Les destinataires internes et externes reçoivent des courriers électroniques dans Outlook pour Windows, Outlook pour Mac, Outlook sur le Web, Outlook pour Android et Outlook pour iOS, ou via un portail Web, qu’ils se trouvent ou non dans la même organisation Office 365 ou dans n’importe quelle Office 365 Département. Le portail OME ne requiert pas de téléchargement séparé.|
 |**Apporter votre propre prise en charge de clés**|Non disponible|Non disponible| BYOK pris en charge|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>Comment activer les nouvelles fonctionnalités de OME pour mon organisation ?
@@ -93,11 +93,11 @@ Les utilisateurs locaux peuvent envoyer des messages chiffrés à l’aide de r�
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Quel client de messagerie dois-je utiliser pour créer un message chiffré OME ? Quelles sont les applications prises en charge pour l’envoi de messages protégés ?
 
-Vous pouvez créer des messages protégés à partir d’Outlook 2016 et Outlook 2013 pour PC et Mac, et à partir d’Outlook sur le Web.
+Vous pouvez créer des messages protégés à partir d’Outlook 2016 et Outlook 2013 pour Windows et Mac, et à partir d’Outlook sur le Web.
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Quels sont les clients de messagerie pris en charge pour lire et répondre aux messages électroniques protégés ?
 
-Vous pouvez lire et répondre à Outlook pour PC et Mac (2013 et 2016), Outlook sur le Web et Outlook Mobile (Android et iOS) si vous êtes un utilisateur d’Office 365. Vous pouvez également utiliser le client de messagerie natif iOS si votre organisation l’autorise. Si vous êtes un utilisateur non-Office 365, vous pouvez lire et répondre à des messages chiffrés sur le Web via votre navigateur Web.
+Vous pouvez lire et répondre à Outlook pour Windows et Mac (2013 et 2016), Outlook sur le Web et Outlook Mobile (Android et iOS) si vous êtes un utilisateur d’Office 365. Vous pouvez également utiliser le client de messagerie natif iOS si votre organisation l’autorise. Si vous êtes un utilisateur non-Office 365, vous pouvez lire et répondre à des messages chiffrés sur le Web via votre navigateur Web.
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quels types de fichiers sont pris en charge en tant que pièces jointes dans les courriels protégés ? Les pièces jointes héritent-elles des stratégies de protection associées aux courriers électroniques protégés ?
 
@@ -135,18 +135,6 @@ Les administrateurs peuvent configurer une règle de flux de messagerie pour sup
 
 OK! Vous pouvez configurer des règles de flux de messagerie dans Exchange Online ou à l’aide de &amp; DLP dans le centre de sécurité conformité.
   
-## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Puis-je ouvrir des messages chiffrés envoyés à une boîte aux lettres partagée ?
-
-OK! Les messages chiffrés sont pris en charge pour une boîte aux lettres partagée.
-
-- Les utilisateurs peuvent ouvrir des messages protégés dans une boîte aux lettres partagée dans laquelle la boîte aux lettres partagée a reçu un message protégé dans le cadre d’un groupe de distribution.
-
-- Les utilisateurs peuvent afficher les pièces jointes qui héritent de la protection du courrier électronique lorsqu’ils utilisent Outlook pour Windows, Outlook pour Mac et Outlook sur le Web.
-
-## <a name="is-delegated-access-supported"></a>L’accès délégué est-il pris en charge ?
-
-Pas pour le moment.
-
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>Puis-je personnaliser les messages chiffrés avec mon entreprise ?
 
 OK! Pour plus d’informations sur la personnalisation des messages électroniques et sur le portail OME, reportez-vous à la rubrique ajouter la marque de votre organisation à vos messages chiffrés. Consultez la rubrique [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).
@@ -162,3 +150,32 @@ Oui. Tous les messages électroniques chiffrés sont détectables par les foncti
 ## <a name="can-i-remove-encryption-from-email"></a>Puis-je supprimer le chiffrement de la messagerie électronique ?
 
 Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement du courrier sortant. Vous ne pouvez pas supprimer le chiffrement à l’aide d’une règle de flux de messagerie des messages entrants.
+
+## <a name="is-delegated-access-supported"></a>L’accès délégué est-il pris en charge ?
+
+Pas pour le moment.
+
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Puis-je ouvrir des messages chiffrés envoyés à une boîte aux lettres partagée ?
+
+OK! Les messages chiffrés sont pris en charge pour une boîte aux lettres partagée.
+
+- Les utilisateurs peuvent ouvrir des messages protégés dans un mMailbox partagé où la boîte aux lettres partagée a reçu un message protégé dans le cadre d’un groupe de distribution.
+
+- Les utilisateurs peuvent afficher les pièces jointes qui héritent de la protection du courrier électronique lorsqu’ils utilisent Outlook pour Windows, Outlook pour Mac et Outlook sur le Web.
+
+Le tableau suivant répertorie les clients pris en charge pour les boîtes aux lettres partagées.
+
+| Plateforme | Lire le courrier | Afficher les pièces jointes |
+|----------|-----------|------------------------|
+| Outlook sur le web | Oui | Oui                |
+| Outlook pour Windows| Oui | Oui                |
+| Outlook pour Mac    | Oui | Oui                |
+| Outlook pour Android| Oui | Non                 |
+| Outlook pour iOS    | Oui | Non                 |
+|
+
+Il existe actuellement deux limitations connues :
+
+- Nous ne prenons en charge que l’attribution directe des utilisateurs à la boîte aux lettres partagée. Nous ne prenons pas en charge l’affectation via un groupe de sécurité à extension messagerie.
+
+- Vous ne pouvez pas ouvrir les pièces jointes aux courriers électroniques que vous recevez sur les appareils mobiles à l’aide d’Outlook Mobile.

@@ -1,7 +1,7 @@
 ---
 title: Application ou suppression d’une stratégie de suppression de documents pour un site
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Les organisations sont souvent soumises à des réglementations de conformité, juridiques ou autres qui les obligent à conserver des documents pendant une certaine période de temps. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique. Pour cette raison, votre organisation peut avoir créé une stratégie de suppression de documents pour votre site (par exemple, il se pourrait que les documents commerciaux généraux doivent être supprimés cinq ans après leur création).
-ms.openlocfilehash: 2eaa864cda726e6e36625f81358da76856db7db4
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: b21c24d902591e1aa619bdd5433e1a7b0c551ff0
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256761"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808239"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Application ou suppression d’une stratégie de suppression de documents pour un site
 

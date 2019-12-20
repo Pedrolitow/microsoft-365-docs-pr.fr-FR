@@ -1,5 +1,5 @@
 ---
-title: Configuration d’un connecteur pour l’archivage des données Bloomberg instantanées dans Office 365
+title: Configurer un connecteur pour archiver les données Instant Bloomberg
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir de l’outil de conversation Bloomberg dans Office 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 55b0acf6a2643fed4a994604e92e4c0e218da5d9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615604"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807749"
 ---
-# <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Configuration d’un connecteur pour l’archivage des données Bloomberg instantanées dans Office 365
+# <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurer un connecteur pour archiver les données Instant Bloomberg
 
 Utilisez un connecteur natif dans le centre de sécurité & conformité dans Office 365 pour importer et archiver les données de conversation des services financiers à partir de l’outil de collaboration [instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) . Une fois que vous avez configuré et configuré un connecteur, il se connecte au site FTP Secure (SFTP) de votre organisation une fois par jour, convertit le contenu des messages de conversation en format de message électronique, puis importe ces éléments dans des boîtes aux lettres dans Office 365.
 
@@ -73,7 +73,7 @@ La plupart des étapes d’implémentation nécessaires à l’archivage des don
 
 La première étape consiste à obtenir une copie des clés publiques pour le protocole SSH (Secure Shell) et PGP (Pretty bonne confidentialité). Utilisez ces clés à l’étape 2 pour configurer le site Bloomberg SFTP de sorte que le connecteur (que vous créez à l’étape 3) se connecte au site SFTP et transfère les données de conversation instant Bloomberg vers les boîtes aux lettres Office 365. Vous pouvez également obtenir une adresse IP dans cette étape, que vous utiliserez lors de la configuration du site Bloomberg SFTP.
 
-1. Accédez à <https://protection.office.com> , puis cliquez sur importation de la **gouvernance \> des données** , puis cliquez sur **archiver les données**tierces.
+1. Accédez à <https://protection.office.com> , puis cliquez sur **gouvernance \> des informations importer** > **des données**tierces.
 
 2. Sur la page données tierces d' **archivage** , cliquez sur **Ajouter un connecteur**, puis cliquez sur **Bloomberg instantané**.
 
@@ -100,7 +100,7 @@ L’étape suivante consiste à utiliser les clés publiques SSH et PGP, ainsi q
 
 La dernière étape consiste à créer un connecteur Bloomberg instantané dans le centre de sécurité & conformité. Le connecteur utilise les informations que vous fournissez pour vous connecter au site Bloomberg SFTP et transférer les messages de conversation dans les zones de boîte aux lettres utilisateur correspondantes dans Office 365. 
 
-1. Accédez à <https://protection.office.com> , puis cliquez sur importation de la **gouvernance \> des données** , puis cliquez sur **archiver les données**tierces.
+1. Accédez à <https://protection.office.com> , puis cliquez sur **gouvernance \> des informations importer** > **des données**tierces.
 
 2. Sur la page données tierces d' **archivage** , cliquez sur **Ajouter un connecteur**, puis cliquez sur **Bloomberg instantané**.
 

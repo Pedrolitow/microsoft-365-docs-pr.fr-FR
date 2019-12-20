@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des classifieurs adaptés lorsque l’un des classifieurs de zone prêt à l’emploi ne répond pas à vos besoins. Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cette rubrique vous montre comment créer un classifieur personnalisé.
-ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 6343635bb8e9dac12a8dde0867b3468347c2e84a
+ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813372"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39891085"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Création d’un classifieur de formation (aperçu)
 
@@ -30,7 +30,7 @@ Cette chronologie reflète un exemple de déploiement.
 ![formation de classifieur-chronologie](media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> L’option opt-in est requise pour la première fois pour les classifieurs de formation. Il faut douze jours pour que Microsoft 365 effectue une évaluation de base du contenu de votre organisation.
+> L’option opt-in est requise pour la première fois pour les classifieurs de formation. Il faut douze jours pour que Microsoft 365 effectue une évaluation de base du contenu de votre organisation. Contactez votre administrateur général pour lancer le processus d’abonnement.
 
 ## <a name="seed-content"></a>Contenu de départ
 

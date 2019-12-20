@@ -1,5 +1,5 @@
 ---
-title: Configuration d’un connecteur pour l’archivage des données LinkedIn dans Office 365 (aperçu)
+title: Configuration d’un connecteur pour l’archivage des données LinkedIn (aperçu)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir d’une page de la société LinkedIn vers Office 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la conformité des données tierces de votre organisation.
-ms.openlocfilehash: bd11102a15396132cb192d8b0a4cc9a0dfca5645
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 6aff67ea9112b8215ba5b10dbdd6ce3a08876984
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615624"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807789"
 ---
-# <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configuration d’un connecteur pour l’archivage des données LinkedIn dans Office 365 (aperçu)
+# <a name="set-up-a-connector-to-archive-linkedin-data-preview"></a>Configuration d’un connecteur pour l’archivage des données LinkedIn (aperçu)
 
 La fonctionnalité connecteur permettant d’archiver les données des pages LinkedIn Company dans Office 365 est en aperçu.
 
@@ -35,7 +35,7 @@ Une fois que les données de la page de la société LinkedIn sont stockées dan
 
 ## <a name="create-a-linkedin-connector"></a>Créer un connecteur LinkedIn
 
-1. Accédez à <https://protection.office.com> , puis sélectionnez **importation de \> la gouvernance des données** , puis **archivez les données**tierces.
+1. Accédez à <https://protection.office.com> , puis cliquez sur importation de la **gouvernance \> des informations > archivez les données**tierces.
 
 2. Sur la page données tierces d' **archivage** , sélectionnez **Ajouter un connecteur**, puis **LinkedIn**.
 

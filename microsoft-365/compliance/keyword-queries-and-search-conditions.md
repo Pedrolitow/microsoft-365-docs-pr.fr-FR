@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et dans SharePoint ou OneDrive entreprise à l’aide de l’outil de recherche de contenu dans le centre de conformité & Compliance Center.  '
-ms.openlocfilehash: c4135e52f88f72cde171cbc6c897359cd8e13e05
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 5c5aafebf0dabfd43487c0c410088fe2a50aef35
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699684"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808499"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -50,7 +50,7 @@ Le tableau suivant répertorie les propriétés de message électronique pouvant
   
 |**Propriété**|**Description de la propriété**|**Exemples**|**Résultats de recherche renvoyés par les exemples**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|Nom des fichiers joints à un message électronique.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`|Messages possédant un fichier joint nommé annualreport.ppt. Dans le deuxième exemple, l’utilisation du caractère générique renvoie des messages contenant le mot « annuel » dans le nom d’un fichier joint.|
+|AttachmentNames|Nom des fichiers joints à un message électronique.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> AttachmentNames :. pptx|Messages comportant un fichier joint nommé annualreport.ppt. Dans le deuxième exemple, l'utilisation du caractère générique permet de renvoyer les messages dont le nom d'une pièce jointe contient le mot « annual ». Le troisième exemple renvoie toutes les pièces jointes avec l’extension de fichier pptx.|
 |Cci|Champ CCI d’un message électronique. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|Tous les exemples renvoient des messages dont « Pilar Pinilla » est en copie carbone invisible.|
 |Category| Catégories à rechercher. Les catégories peuvent être définies par les utilisateurs à l’aide d’Outlook ou d’Outlook sur le Web (anciennement Outlook Web App). Les valeurs possibles sont les suivantes :  <br/><br/>  blue  <br/>  green  <br/>  orange  <br/>  purple  <br/>  red  <br/>  yellow|`category:"Red Category"`|Messages auxquels a été attribuée la catégorie « red » dans les boîtes aux lettres source.|
 |Cc|Champ CC d’un message électronique. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|Dans les deux exemples, les messages avec Pilar Pinilla spécifiés dans le champ CC.|
@@ -63,7 +63,7 @@ Le tableau suivant répertorie les propriétés de message électronique pouvant
 |Kind| Type de message électronique à rechercher. Valeurs possibles :  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (renvoie les éléments des conversations, réunions et appels dans Microsoft Teams)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|Le premier exemple renvoie des messages électroniques qui répondent aux critères de recherche. Le deuxième exemple renvoie les messages électroniques, les conversations de messagerie instantanée (y compris les conversations et conversations Skype entreprise dans Microsoft Teams) et les messages vocaux correspondant aux critères de recherche. Le troisième exemple renvoie les éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir de sources de données tierces, telles que Twitter, Facebook et Cisco Jabber, qui répondent aux critères de recherche. Pour plus d’informations, consultez la rubrique [archivage de données tierces dans Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918).|
 |Participants|Tous les champs de personnes dans un message électronique. Les champs de, à, CC et CCI.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Messages envoyés par ou envoyés à garthf@contoso.com. Le deuxième exemple renvoie tous les messages envoyés par ou envoyés à un utilisateur dans le domaine contoso.com.|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Messages reçus le 15 avril 2016. Le deuxième exemple renvoie tous les messages reçus entre le 1er janvier 2016 et le 31 mars 2016.|
-|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires dans le domaine contoso.com.|
+|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires dans le domaine contoso.com.|
 |Sent|Date à laquelle un message électronique a été envoyé par l'expéditeur.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Messages envoyés à la date indiquée ou entre les dates spécifiées.|
 |Size|Taille d'un élément, en octets.|`size>26214400`  <br/> `size:1..1048567`|Messages supérieurs à 25 ? Mbit. Le deuxième exemple renvoie les messages dont la taille est comprise entre 1 et 1 048 567 octets (1 Mo).|
 |Subject|Texte de la ligne d'objet d'un message électronique.  <br/> **Remarque :** Lorsque vous utilisez la propriété Subject dans une requête, la recherche renvoie tous les messages dans lesquels la ligne d’objet contient le texte que vous recherchez. En d’autres termes, la requête ne renvoie que les messages qui ont une correspondance exacte. Par exemple, si vous recherchez `subject:"Quarterly Financials"`, vos résultats incluent les messages dont l’objet est « trimestriel financials 2018 ».|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Messages contenant l’expression « trimestriel Financials » n’importe où dans le texte de la ligne d’objet. Le deuxième exemple renvoie tous les messages contenant le mot « northwind » dans la ligne d'objet.|
@@ -192,7 +192,7 @@ Créez une condition avec des propriétés communes lorsque vous recherchez des 
 |Expéditeur/auteur|Pour la messagerie électronique, personne ayant envoyé le message. Pour les documents, personne mentionnée dans le champ Auteur des documents Office. Vous pouvez saisir plusieurs noms, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur **OR**.|
 |Taille (en octets)|Pour la messagerie électronique et les documents, taille de l’élément (en octets).|
 |Subject/title|Pour la messagerie électronique, texte de la ligne d’objet d’un message. Pour les documents, titre du document. Comme expliqué précédemment, la propriété Title est des métadonnées spécifiées dans les documents Microsoft Office. Vous pouvez taper le nom de plus d’un objet/titre, séparé par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur **OR**.|
-|Balise de conformité|Pour les courriers électroniques et les documents, étiquettes qui ont été attribuées automatiquement à des messages et des documents par des étiquettes ou des stratégies qui ont été affectées manuellement par les utilisateurs. Les étiquettes sont utilisées pour classer le courrier électronique et les documents à des fins de gouvernance des données et appliquer des règles de rétention basées sur la classification définie par l’étiquette. Vous pouvez taper une partie du nom de l’étiquette et utiliser un caractère générique ou taper le nom complet de l’étiquette. Pour plus d’informations, consultez la rubrique [vue d’ensemble des étiquettes dans Office 365](labels.md).|
+|Étiquette de conformité|Pour les courriers électroniques et les documents, les étiquettes de rétention qui ont été affectées à des messages et des documents automatiquement par étiquette stratégies ou étiquettes de rétention qui ont été affectées manuellement par les utilisateurs. Les étiquettes de rétention sont utilisées pour classer les e-mails et les documents pour la gouvernance des informations et appliquer les règles de rétention en fonction des paramètres définis par l’étiquette. Vous pouvez taper une partie du nom de l’étiquette de rétention et utiliser un caractère générique ou taper le nom complet de l’étiquette. Pour plus d’informations, consultez la rubrique [vue d’ensemble des étiquettes de rétention](labels.md).|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Conditions pour les propriétés de messagerie
@@ -205,7 +205,7 @@ Créer une condition à l’aide des propriétés de messagerie lors de la reche
 |Participants|Tous les champs de personnes dans un message électronique. Ces champs sont from, to, CC et BCC.|
 |Type|Propriété de classe de message pour un élément de courrier électronique. Il s’agit de la même propriété que la propriété de messagerie ItemClass. Il s’agit également d’une condition à valeurs multiples. Pour sélectionner plusieurs classes de message, maintenez la touche **CTRL** enfoncée, puis cliquez sur au moins deux classes de messages dans la liste déroulante que vous souhaitez ajouter à la condition. Chaque classe de message que vous sélectionnez dans la liste est logiquement connectée par l’opérateur **or** dans la requête de recherche correspondante.  <br/> Pour obtenir la liste des classes de message (et de leur ID de classe de message correspondant) utilisées par Exchange et que vous pouvez sélectionner dans la liste de **classes de message** , voir [types d’éléments et classes de messages](https://go.microsoft.com/fwlink/?linkid=848143).|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire. Il s’agit de la même propriété que la propriété de messagerie Received.|
-|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.|
+|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.|
 |Expéditeur|Expéditeur d’un message électronique.|
 |Sent|Date à laquelle un message électronique a été envoyé par l’expéditeur. Il s’agit de la même propriété que la propriété de messagerie Sent.|
 |Subject|Texte de la ligne d'objet d'un message électronique.|
@@ -313,7 +313,6 @@ Cet exemple renvoie les éléments de messagerie ou les documents qui contiennen
  `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
   
 #### <a name="example-3"></a>Exemple 3
-<a name="conditionexamples"> </a>
 
 Cet exemple renvoie des messages électroniques ou des réunions de calendrier qui ont été envoyés entre 12/1/2016 et 11/30/2016 et qui contiennent des mots commençant par « Phone » ou « Smartphone ».
   
