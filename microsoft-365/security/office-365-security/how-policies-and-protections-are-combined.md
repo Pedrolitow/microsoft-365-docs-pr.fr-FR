@@ -1,6 +1,6 @@
 ---
 title: Combinaison des stratégies et des protections lorsque le courrier est marqué par un indicateur rouge
-description: Les stratégies appliquées et les actions à effectuer, quand le courrier électronique est marqué comme programme malveillant, courrier indésirable, courrier indésirable à confiance élevée, hameçonnage et en bloc par EOP et/ou ATP.
+description: Décrit les stratégies et les protections qui s’appliquent lorsque le courrier électronique rencontre plusieurs protections et est analysé par plusieurs formes de détection. Les stratégies appliquées et les actions à effectuer, quand le courrier électronique est marqué comme programme malveillant, courrier indésirable, courrier indésirable à confiance élevée, hameçonnage et en bloc par EOP et/ou ATP.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1f1885730d1063a0c36d172f1f9d0e4ac4fb59c7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079041"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807986"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Quelle stratégie s’applique lorsque plusieurs méthodes de protection et analyses de détection s’exécutent sur votre courrier électronique
 
@@ -34,14 +34,14 @@ Les stratégies ci-dessous s’appliquent à _toutes les organisations_.
 |3     | Courrier fortement suspecté d’être indésirable      | HSPM        | Configuration de vos stratégies de filtrage du courrier indésirable        |
 |4     | Usurpation        | SPOOF        | Stratégie anti-hameçonnage, aide à l’usurpation d’identité        |
 |disque     | Courrier indésirable         | SPM         | Configuration de vos stratégies de filtrage du courrier indésirable         |
-|6.x     | Courrier en nombre         | BULK        | Configuration de vos stratégies de filtrage du courrier indésirable         |
+|6      | Courrier en nombre         | BULK        | Configuration de vos stratégies de filtrage du courrier indésirable         |
 
 En outre, ces stratégies s’appliquent aux _organisations avec ATP_.
 
 |Priority |Stratégie  |Catégorie  |Où Managed |
 |---------|---------|---------|---------|
-|7j/7     | Emprunt d’identité de domaine         | DIMP         | Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage        |
-|8bits     | Emprunt d’identité d’utilisateur        | UIMP         | Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage         |
+|7      | Emprunt d’identité de domaine         | DIMP         | Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage        |
+|8      | Emprunt d’identité d’utilisateur        | UIMP         | Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage         |
 
 Par exemple, si vous avez deux stratégies avec leurs priorités respectives :
 

@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Résumé : configurez un site d’équipe SharePoint Online isolé du reste de l’organisation dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 7f2f4fa15bd9cc3c78afa0e507aaeaf069f83932
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: ae76667a0c6c32dcf83b4fbd911a6e0b5db0c579
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871820"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808109"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site d’équipe SharePoint Online isolé dans votre environnement de développement/test
 
@@ -71,7 +71,7 @@ Utilisez les instructions de [connexion à office 365 PowerShell](https://docs.m
 
 Pour créer les nouveaux groupes d’accès pour le site d’équipe SharePoint Online ProjectX, exécutez les commandes suivantes à partir de l’invite du module Windows Azure Active Directory pour Windows PowerShell :
 
-```
+```powershell
 $groupName="ProjectX-Members"
 $groupDesc="People allowed to collaborate for ProjectX."
 New-MsolGroup -DisplayName $groupName -Description $groupDesc
@@ -85,7 +85,7 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 
 Entrez le nom de votre organisation (exemple : contosotoycompany) et le code de pays à deux caractères pour indiquer votre emplacement, puis exécutez les commandes suivantes à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
 
-```
+```powershell
 $orgName="<organization name>"
 $loc="<two-character country code, such as US>"
 $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
@@ -97,7 +97,7 @@ New-MsolUser -DisplayName "Lead Designer" -FirstName Lead -LastName Designer -Us
 
 Exécutez les commandes suivantes à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
 
-```
+```powershell
 $userName= "researcher@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Lead Researcher" -FirstName Lead -LastName Researcher -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
@@ -106,7 +106,7 @@ New-MsolUser -DisplayName "Lead Researcher" -FirstName Lead -LastName Researcher
 
 Exécutez les commandes suivantes à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
 
-```
+```powershell
 $userName= "devvp@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
@@ -115,7 +115,7 @@ New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -
 
 Ensuite, pour ajouter les nouveaux comptes aux nouveaux groupes d’accès, exécutez les commandes PowerShell suivantes à partir de l’invite du module Windows Azure Active Directory pour Windows PowerShell :
 
-```
+```powershell
 $grpName="ProjectX-Members"
 $userUPN="designer@" + $orgName + ".onmicrosoft.com"
 Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $grpName }).ObjectID -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupMemberType "User"

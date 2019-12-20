@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4d9401c7568534e9f9a0036ef273964d327dbf06
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a43576bc18d54e3a5c9b2f9ad918c1df3ee67615
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971402"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807939"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
-**S'applique à :**
+**S’applique à :**
 
 - [Office 365 Advanced Threat Protection (Office 365 ATP)](office-365-atp.md)
 
@@ -33,7 +33,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 – Protection avancée contre les menaces Plan 1 et Plan 2
 
-La protection avancée contre les menaces Office 365 est disponible en deux plans : Office 365 ATP plan 1 et Office 365 ATP plan 2. [En savoir plus sur ce qui est inclus dans chaque plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+La protection avancée contre les menaces Office 365 est disponible en deux plans : Office 365 ATP plan 1 et Office 365 ATP plan 2. [En savoir plus](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 ## <a name="december-2019"></a>Décembre 2019
 
@@ -53,7 +53,7 @@ La protection avancée contre les menaces Office 365 est disponible en deux plan
 
 - [Afficher les en-têtes des messages électroniques et télécharger le corps du courrier](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body) (plan 1 de l’ATP Office 365 ou plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Affichage de la chronologie de l’e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (plan 1 Office 365 DAV ou plan 2)
 

@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ceb8679ccdd5c1fb41772a8b48d9474665922f39
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 871f659074c4f8386746e341db4d3500c5e80a31
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910997"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807003"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="optimize-query-performance"></a>Optimiser la performance des requêtes
 Appliquez ces recommandations pour obtenir des résultats plus rapidement et éviter les délais d’attente lors de l’exécution de requêtes complexes :
@@ -47,15 +47,15 @@ Appliquez ces recommandations pour obtenir des résultats plus rapidement et év
 ### <a name="queries-with-process-ids"></a>Requêtes avec ID de processus
 Les ID de processus (PID) sont recyclés dans Windows et réutilisés pour les nouveaux processus. Ils ne peuvent pas être utilisés comme identificateurs uniques pour des processus spécifiques.
 
-Pour obtenir un identificateur unique pour un processus sur un ordinateur spécifique, utilisez l’ID de processus conjointement avec l’heure de création du processus. Lorsque vous rejoignez ou résumez des données autour des processus, incluez des colonnes pour l’identificateur de l’ordinateur (`MachineId` ou `ComputerName`), l’ID de processus (`ProcessId` ou `InitiatingProcessId`) et l’heure de création du processus (`ProcessCreationTime` ou `InitiatingProcessCreationTime`).
+Pour obtenir un identificateur unique pour un processus sur un ordinateur spécifique, utilisez l’ID de processus conjointement avec l’heure de création du processus. Lorsque vous rejoignez ou résumez des données autour des processus, incluez des colonnes pour l’identificateur de l’ordinateur (`DeviceId` ou `DeviceName`), l’ID de processus (`ProcessId` ou `InitiatingProcessId`) et l’heure de création du processus (`ProcessCreationTime` ou `InitiatingProcessCreationTime`).
 
 L’exemple de requête suivant trouve les processus qui accèdent à plus de 10 adresses IP via le port 445 (SMB), qui peut rechercher des partages de fichiers.
 
 Exemples de requête :
 ```
-NetworkCommunicationEvents
-| where RemotePort == 445 and EventTime > ago(12h) and InitiatingProcessId !in (0, 4)
-| summarize RemoteIPCount=dcount(RemoteIP) by ComputerName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
+DeviceNetworkEvents
+| where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
+| summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
 | where RemoteIPCount > 10
 ```
 
@@ -78,17 +78,17 @@ Les exemples suivants illustrent différentes manières de créer une requête q
 
 ```
 // Non-durable query - do not use
-ProcessCreationEvents
+DeviceProcessEvents
 | where ProcessCommandLine == "net stop MpsSvc"
 | limit 10
 
 // Better query - filters on filename, does case-insensitive matches
-ProcessCreationEvents
-| where EventTime > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+DeviceProcessEvents
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
 
 // Best query also ignores quotes
-ProcessCreationEvents
-| where EventTime > ago(7d) and FileName in~ ("net.exe", "net1.exe")
+DeviceProcessEvents
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```

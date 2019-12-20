@@ -13,12 +13,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Découvrez les comptes de facturation et comment les gérer.
-ms.openlocfilehash: 9ea96a0187a1f4bec9c71dc02478375a4c13b371
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 9a5d7548608cb44befb271e63420e7eb84b2e399
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837959"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805747"
 ---
 # <a name="manage-billing-accounts"></a>Gérer les comptes de facturation
 
@@ -46,6 +46,15 @@ Le tableau suivant répertorie les termes importants que vous voyez sur la page 
 | ID de taxe | Si vous n’êtes pas aux États-Unis, vous devez fournir une T.V.A. ou une équivalence locale. Pour plus d’informations, consultez la rubrique [Tax information](#tax-information). |
 | Contrat | Lorsqu’un compte de facturation est créé, par le biais d’un achat direct ou d’un contrat de licence en volume, un signataire de l’Organisation accepte, ou signe, un accord qui décrit les termes & conditions du compte. Le cas échéant, cet affichage répertorie un historique des accords. Si vous devez accepter les termes mis à jour, un lien pour **approuver un accord** s’affiche. |
 | Profils de facturation | Un profil de facturation définit les propriétés de votre facture, comme le destinataire de la facture, le mode de remise de la facture, les conditions de paiement et un numéro de bon de commande. Pour répartir la facturation au sein de votre organisation, vous pouvez créer plusieurs profils de facturation et identifier le profil de facturation approprié au moment de l’achat. Pour plus d’informations sur les profils de facturation et sur la façon dont vous pouvez les utiliser pour créer des options de facturation plus flexibles pour votre organisation, [Gérez les profils de facturation](../billing-and-payments/manage-billing-profiles.md). |
+
+> [!NOTE] 
+> Si vous souhaitez modifier le nom ou l’adresse du **vendu** , mais ne voyez pas de lien de **modification** , vous devez [contacter le support technique](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) pour le modifier. Les demandes d’un changement de nom **vendu** nécessitent une vérification de solvabilité. Lorsque vous contactez le support technique, préparez l’un des documents suivants :
+>
+> - Document d’annonce externe qui indique toute modification apportée au nom de la société ou à la structure de l’entreprise
+> - Document ou lettre d’inscription du gouvernement
+> - Imprimer à partir du registre de l’entreprise locale
+>
+> La prise en charge peut vous aider avec les changements de nom et d’adresse où seul le nom du client change, mais l’entité reste la même. La documentation fournie doit indiquer clairement que seul le nom de l’entité a été modifié. Si la modification est liée à une transaction, comme une vente commerciale, ou une cession ou un « Spinoff » d’un affilié client, veuillez contacter votre vendeur Microsoft.
 
 ## <a name="shipping-addresses"></a>Adresses d’expédition
 

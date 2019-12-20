@@ -15,16 +15,16 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Utilisez cet article pour configurer vos fonctionnalités de protection contre les menaces dès maintenant.
-ms.openlocfilehash: c88e94378672836abef5f300bffe09f578ed3880
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: b4e3aba1b03d9c5df9eae50813169a9b9d394f6f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872090"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808049"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
-Office 365 inclut diverses fonctionnalités de protection contre les menaces. Voici un guide de démarrage rapide que vous pouvez utiliser comme liste de vérification pour vous assurer que les fonctionnalités de protection contre les menaces sont configurées pour votre organisation. Si vous ne connaissez pas les fonctionnalités de protection contre les menaces dans Office 365, ou si vous n’êtes pas sûr de savoir où commencer, utilisez les instructions suivantes comme point de départ. 
+Office 365 inclut diverses fonctionnalités de protection contre les menaces. Voici un guide de démarrage rapide que vous pouvez utiliser comme liste de vérification pour vous assurer que les fonctionnalités de protection contre les menaces sont configurées pour votre organisation. Si vous ne connaissez pas les fonctionnalités de protection contre les menaces dans Office 365, ou si vous n’êtes pas sûr de savoir où commencer, utilisez les instructions suivantes comme point de départ.
 
 > [!IMPORTANT]
 > Les **paramètres recommandés initiaux sont inclus pour chaque type de stratégie ; Toutefois, de nombreuses options sont disponibles et vous pouvez ajuster vos paramètres afin de répondre aux besoins spécifiques de votre organisation**. Accordez environ 30 minutes à vos stratégies ou modifications pour qu’elles fonctionnent dans votre centre de centres de travail.
@@ -40,14 +40,14 @@ Les fonctionnalités de protection contre les menaces sont incluses dans tous le
 |Protection anti-programme malveillant|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EoP)|
 |Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
 |Protection anti-hameçonnage|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
-|Protection avancée contre le hameçonnage|[Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protection avancée contre le hameçonnage|[Office 365 – Protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Protection anti-courrier indésirable|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
 |Purge automatique avec zéro heure (pour la messagerie électronique)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
 |Journalisation d’audit (utilisé à des fins de création de rapports)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)|
 
 ### <a name="roles-and-permissions"></a>Rôles et autorisations
 
-Vous devez disposer d’un rôle approprié pour configurer les stratégies dans le [Centre de sécurité & conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Le tableau ci-après inclut des exemples : 
+Vous devez disposer d’un rôle approprié pour configurer les stratégies dans le [Centre de sécurité & conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Le tableau ci-après inclut des exemples :
 
 |Rôle ou groupe de rôles|Où en savoir plus|
 |---------|---------|
@@ -59,7 +59,7 @@ Pour en savoir plus, consultez [la rubrique autorisations dans le &amp; Centre d
 
 ## <a name="part-1---anti-malware-protection"></a>Partie 1 : protection anti-programme malveillant
 
-La [protection contre les programmes malveillants](anti-malware-protection.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). 
+La [protection contre les programmes malveillants](anti-malware-protection.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
 1. Dans le [Centre de sécurité & conformité](https://protection.office.com), choisissez**protection contre les programmes malveillants**pour la**stratégie** > de **gestion** > des menaces.
 
@@ -81,7 +81,7 @@ La protection du temps de clic à partir d’URL et de fichiers malveillants est
 
 ### <a name="atp-safe-attachments-policies"></a>Stratégies de pièces jointes approuvées ATP
 
-Pour configurer des [pièces jointes sûres ATP](atp-safe-attachments.md), vous devez définir au moins une stratégie de pièces jointes approuvées ATP. 
+Pour configurer des [pièces jointes sûres ATP](atp-safe-attachments.md), vous devez définir au moins une stratégie de pièces jointes approuvées ATP.
 
 1. Dans**** > le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion** > des menaces-**pièces jointes ATP**.
 
@@ -91,17 +91,17 @@ Pour configurer des [pièces jointes sûres ATP](atp-safe-attachments.md), vous 
 
 4. Spécifiez les paramètres suivants :
 
-    - Dans la zone **nom** , tapez `Block malware`.
+   - Dans la zone **nom** , tapez `Block malware`.
 
-    - Dans la section réponse, sélectionnez **bloquer**.
+   - Dans la section réponse, sélectionnez **bloquer**.
 
-    - Dans la section **pièce jointe de redirection** , sélectionnez l’option **activer la redirection**, puis spécifiez l’adresse de messagerie de l’administrateur ou de l’opérateur de sécurité de votre organisation qui analysera les fichiers détectés.
+   - Dans la section **pièce jointe de redirection** , sélectionnez l’option **activer la redirection**, puis spécifiez l’adresse de messagerie de l’administrateur ou de l’opérateur de sécurité de votre organisation qui analysera les fichiers détectés.
 
-    - Dans la section **appliqué à** , choisissez **le domaine du destinataire**. Sélectionnez votre domaine, choisissez **Ajouter**, puis cliquez sur **OK**.
+   - Dans la section **appliqué à** , choisissez **le domaine du destinataire**. Sélectionnez votre domaine, choisissez **Ajouter**, puis cliquez sur **OK**.
 
 5. Cliquez sur **Enregistrer**.
 
-6. (**Étape supplémentaire recommandée**) En tant qu’administrateur général ou administrateur SharePoint Online, exécutez la cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** avec le paramètre **DisallowInfectedFileDownload** défini sur *true* pour votre environnement Office 365. (Cela empêche les personnes d’ouvrir, de transférer, de copier ou de partager des fichiers détectés comme malveillants.)  
+6. (**Étape supplémentaire recommandée**) En tant qu’administrateur général ou administrateur SharePoint Online, exécutez la cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** avec le paramètre **DisallowInfectedFileDownload** défini sur *true* pour votre environnement Office 365. (Cela empêche les personnes d’ouvrir, de transférer, de copier ou de partager des fichiers détectés comme malveillants.)
 
 Pour en savoir plus, consultez la rubrique [configurer des stratégies de pièces jointes approuvées ATP office 365](set-up-atp-safe-attachments-policies.md) et [activer Office 365 ATP pour SharePoint, OneDrive et Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -119,23 +119,23 @@ Pour configurer [des liens approuvés ATP](atp-safe-links.md), vérifiez et modi
 
 5. Spécifiez les paramètres suivants :
 
-    - Dans la zone **nom** , tapez un nom, tel que `Safe Links`.
+   - Dans la zone **nom** , tapez un nom, tel que `Safe Links`.
 
-    - Dans la section **Sélectionnez l’action** , choisissez **activé**.
+   - Dans la section **Sélectionnez l’action** , choisissez **activé**.
 
-    - Sélectionnez les options suivantes :
+   - Sélectionnez les options suivantes :
 
-        - **Utiliser les pièces jointes fiables pour analyser le contenu téléchargeable** 
+     - **Utiliser les pièces jointes fiables pour analyser le contenu téléchargeable**
 
-        - **Appliquer des liens fiables aux messages électroniques envoyés au sein de l’Organisation**
+     - **Appliquer des liens fiables aux messages électroniques envoyés au sein de l’Organisation**
 
-        - **Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine**
+     - **Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine**
 
-    - Dans la section **appliqué à** , choisissez **le domaine du destinataire**. Sélectionnez votre domaine, choisissez **Ajouter**, puis cliquez sur **OK**.
+   - Dans la section **appliqué à** , choisissez **le domaine du destinataire**. Sélectionnez votre domaine, choisissez **Ajouter**, puis cliquez sur **OK**.
 
 6. Cliquez sur **Enregistrer**.
 
-Pour plus d’informations, reportez-vous à [Configurer les stratégies de liens fiables Office 365 – Protection avancée contre les menaces](set-up-atp-safe-links-policies.md). 
+Pour plus d’informations, reportez-vous à [Configurer les stratégies de liens fiables Office 365 – Protection avancée contre les menaces](set-up-atp-safe-links-policies.md).
 
 ## <a name="part-3---anti-phishing-protection"></a>Partie 3 : protection anti-hameçonnage
 
@@ -147,23 +147,25 @@ La [protection anti-hameçonnage](anti-phishing-protection.md) est disponible da
 
 3. Dans la section **emprunt d’identité** , cliquez sur **modifier**, puis spécifiez les paramètres suivants :
 
-    - Sous l’onglet **Ajouter des utilisateurs à protéger** , activez la protection. Ajoutez ensuite des utilisateurs, tels que les membres du tableau de bord de votre organisation, votre directeur général, votre directeur financier et d’autres dirigeants. (Vous pouvez taper une adresse de messagerie individuelle ou cliquer pour afficher une liste.)
+   - Sous l’onglet **Ajouter des utilisateurs à protéger** , activez la protection. Ajoutez ensuite des utilisateurs, tels que les membres du tableau de bord de votre organisation, votre directeur général, votre directeur financier et d’autres dirigeants. (Vous pouvez taper une adresse de messagerie individuelle ou cliquer pour afficher une liste.)
 
-    - Dans l’onglet **Ajouter des domaines à protéger** , activez **la fonction inclure automatiquement les domaines dont je suis propriétaire**. Si vous avez des domaines personnalisés, ajoutez-les également.
+   - Dans l’onglet **Ajouter des domaines à protéger** , activez **la fonction inclure automatiquement les domaines dont je suis propriétaire**. Si vous avez des domaines personnalisés, ajoutez-les également.
 
-    - Sous l’onglet **actions** , sélectionnez **déplacer le message vers les dossiers de courrier indésirable des destinataires** pour les utilisateurs empruntés et les domaines empruntés, puis activez les conseils de sécurité.
+   - Sous l’onglet **actions** , sélectionnez **mettre en quarantaine le message** pour les options **utilisateur emprunté** et **domaine emprunté** . En outre, activez les conseils de sécurité pour l’emprunt d’identité.
 
-    - Sous l’onglet **intelligence des boîtes aux lettres** , assurez-vous que l’intelligence des boîtes aux lettres est activée.
+   - Sous l’onglet **intelligence des boîtes aux lettres** , assurez-vous que l’intelligence des boîtes aux lettres est activée. En outre, activez la protection contre l’usurpation d’identité basée sur les boîtes aux lettres. Dans la liste **si un message électronique est envoyé par un utilisateur emprunté** , choisissez **mettre en quarantaine le message**.
 
-    - Dans l’onglet **vérifier vos paramètres** , une fois que vous avez vérifié vos paramètres, cliquez sur **Enregistrer**.
+   - Dans l’onglet **Ajouter des expéditeurs et des domaines approuvés** , spécifiez tous les expéditeurs ou domaines approuvés que vous souhaitez ajouter.
+
+   - Dans l’onglet **vérifier vos paramètres** , une fois que vous avez vérifié vos paramètres, cliquez sur **Enregistrer**.
 
 4. Dans la section **usurpation** , cliquez sur **modifier**, puis spécifiez les paramètres suivants :
 
-    - Dans l’onglet **paramètres du filtre d’usurpation d’identité** , assurez-vous que la protection contre l’usurpation d’identité est activée.
+   - Dans l’onglet **paramètres du filtre d’usurpation d’identité** , assurez-vous que la protection contre l’usurpation d’identité est activée.
 
-    - Sous l’onglet **actions** , choisissez déplacer le message vers les dossiers de courrier indésirable des destinataires.
+   - Sous l’onglet **actions** , choisissez **mettre en quarantaine le message**.
 
-    - Dans l’onglet **vérifier vos paramètres** , une fois que vous avez vérifié vos paramètres, cliquez sur **Enregistrer**. (Si vous n’avez apporté aucune modification, cliquez sur **Annuler**.)
+   - Dans l’onglet **vérifier vos paramètres** , une fois que vous avez vérifié vos paramètres, cliquez sur **Enregistrer**. (Si vous n’avez apporté aucune modification, cliquez sur **Annuler**.)
 
 5. Fermez la page Paramètres de stratégie par défaut.
 
@@ -179,9 +181,9 @@ La [protection contre le courrier indésirable](anti-spam-protection.md) est dis
 
 3. Développez **stratégie de filtrage du courrier indésirable par défaut**, cliquez sur **modifier la stratégie**, puis spécifiez les paramètres suivants :
 
-    - Dans la section **actions de courrier indésirable et en bloc** , définissez le seuil sur une valeur de 5 ou 6.
+   - Dans la section **actions de courrier indésirable et en bloc** , définissez le seuil sur une valeur de 5 ou 6.
 
-    - Dans la section **autoriser les listes** , vérifiez (et si nécessaire, modifiez) vos expéditeurs et domaines autorisés.
+   - Dans la section **autoriser les listes** , vérifiez (et si nécessaire, modifiez) vos expéditeurs et domaines autorisés.
 
 4. Cliquez sur **Enregistrer**.
 

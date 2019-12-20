@@ -3,7 +3,7 @@ title: Stratégies de conformité des appareils pour votre environnement de test
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2018
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,18 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d’appareil Intune à votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: c323779399f6f440e1f9104e6611023a18ffe59e
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 8a746f99e16444527c44267eddbaec9f5e5156eb
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694101"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801629"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 Enterprise
 
-*Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 entreprise.*
+*Ce Guide de Laboratoire Test peut uniquement être utilisé pour les environnements de test Microsoft 365 Entreprise*.
 
-À l’aide des instructions fournies dans cet article, vous ajoutez une stratégie Intune Device Compliance à votre environnement de test Microsoft 365 Enterprise.
+À l’aide des instructions fournies dans cet article, vous ajoutez une stratégie Intune Device Compliance pour les appareils Windows 10 et Office 365 ProPlus à votre environnement de test Microsoft 365 Enterprise.
 
 ![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -48,49 +48,46 @@ Au cours de cette phase, vous allez créer une stratégie de conformité des app
     
 2. Dans un nouvel onglet de votre navigateur, ouvrez le portail Azure à [https://portal.azure.com](https://portal.azure.com)l’adresse.
 
-3. Sur l’onglet portail Azure de votre navigateur, dans le volet de navigation, cliquez sur **tous les services**, tapez **Intune**, puis cliquez sur **Intune**.
+3. Dans l’onglet portail Azure de votre navigateur, saisissez **Intune** dans la zone de recherche, puis cliquez sur **Intune**.
     
-4. Si vous voyez un message « **vous n’avez pas encore activé la gestion des appareils** sur le panneau **Microsoft Intune** , cliquez dessus. Dans le panneau **autorité de gestion des appareils mobiles** , cliquez sur **autorité MDM Intune**, puis sur **choisir**. Actualisez l’onglet de votre navigateur.
+4. Si vous voyez un message « **vous n’avez pas activé la gestion des appareils activés** » dans le volet **Microsoft Intune** , cliquez sur celui-ci. Dans le volet **autorité de gestion des appareils mobiles** , cliquez sur **autorité MDM Intune**, puis sur **choisir**. Actualisez l’onglet de votre navigateur.
     
 5. Dans le volet de navigation gauche, cliquez sur **Groupes**.
     
-6. Dans le panneau **groupes-tous les groupes** , cliquez sur **+ nouveau groupe**.
+6. Dans le volet **groupes-tous les groupes** , cliquez sur **+ nouveau groupe**.
     
 7. Dans le **volet groupe** , sélectionnez **Office 365** ou **sécurité** pour **type de groupe ?**, entrez **utilisateurs d’appareils Windows 10 gérés** dans **nom**, sélectionnez **attribué** dans **type d’appartenance**, puis cliquez sur **créer**. 
     
-8. Fermez le volet **Groupe**.
+8. Cliquez sur **Microsoft Intune**. Dans le volet **Microsoft Intune** , dans la liste **tâches rapides** , cliquez sur **créer une stratégie de conformité**.
     
-11. Fermez le panneau **groupes-tous les groupes** .
+9. Dans le volet **profils de stratégie de conformité** , cliquez sur créer une **stratégie**.
     
-12. Sur le panneau **Microsoft Intune** , dans la liste **tâches rapides** , cliquez sur **créer une stratégie de conformité**.
+10. Dans le volet **créer une stratégie** , dans **nom**, tapez **Windows 10**. Dans **plateforme**, sélectionnez **Windows 10 et versions ultérieures**, cliquez sur **OK** dans le volet **stratégie de conformité Windows 10** , puis cliquez sur **créer**. 
     
-13. Dans le volet **Profils de stratégie de conformité**, cliquez sur **Créer une stratégie**.
+11. Cliquez sur **profils de stratégie de conformité**, puis sur le nom de la stratégie **Windows 10** .
     
-14. Dans le panneau **créer une stratégie** , dans **nom**, tapez **Windows 10**. Dans **plateforme**, sélectionnez **Windows 10 et versions ultérieures**, cliquez sur **OK** dans le panneau de **stratégie de conformité Windows 10** , puis cliquez sur **créer**. Fermez la lame **Windows 10** .
+12. Dans le volet **Windows 10** , cliquez sur **affectations**, puis sur **Sélectionner les groupes à inclure**.
     
-15. Dans le panneau **profils de stratégie de conformité** , cliquez sur le nom de la stratégie **Windows 10** .
+13. Dans le volet **Sélectionner des groupes à inclure** , cliquez sur le groupe **utilisateurs d’appareils Windows 10 gérés** , puis cliquez sur **Sélectionner**.
     
-16. Dans le panneau **Windows 10** , cliquez sur **affectations**, puis sur **Sélectionner les groupes à inclure**.
+14. Cliquez sur **Enregistrer**, sur **Microsoft Intune-vue d’ensemble**, puis sur **applications clientes** dans le volet de navigation de gauche.
     
-17. Sur le panneau **Sélectionner les groupes à inclure** , cliquez sur le groupe **utilisateurs d’appareils Windows 10 gérés** , puis cliquez sur **Sélectionner**.
-    
-18. Cliquez sur **Enregistrer**, puis fermez le panneau **affectations de Windows 10** .
-    
-19. Fermez le volet **Profils de stratégie de conformité**.
-    
-20. Sur le panneau **Microsoft Intune** , cliquez sur **applications clientes** dans le volet de navigation de gauche.
-    
-21. Dans le panneau **applications clientes** , cliquez sur **applications**, puis sur **Ajouter**. 
+15. Dans le volet **applications client** , cliquez sur **applications**, puis sur **Ajouter**. 
 
-22. Dans le panneau **Ajouter une application** , sélectionnez type d' **application**, puis sélectionnez **Windows 10** sous la **suite Office 365**.
+16. Dans le volet **Ajouter une application** , sélectionnez type d' **application**, puis sélectionnez **Windows 10** sous la **suite Office 365**.
 
-23. Cliquez sur **configurer l’application suite**, puis cliquez sur **OK**.
+17. Dans le volet **Ajouter une application** , sélectionnez **informations sur la suite d’applications**.
+ 
+18. Dans le volet d' **informations App suite** , tapez **Office 365 ProPlus** dans la **Description**de la suite et du nom de la **suite** .
+Cliquez sur OK.
 
-24. Cliquez sur informations sur la **suite d’applications**, tapez **applications Office pour Windows 10** dans la **suite nom**, **applications Office pour Windows 10** dans la **Description**de la suite, puis cliquez sur **OK**.
+19. Dans le volet **Ajouter une application** , sélectionnez configurer une suite d' **applications**, puis cliquez sur **OK**.
 
-25. Cliquez sur paramètres de la **suite d’applications**, sélectionnez **semi-annuel** dans **canal de mise à jour**, puis cliquez sur **OK**.
+20. Dans le volet **Ajouter une application** , sélectionnez Paramètres de la suite d' **applications**.
 
-26. Dans le panneau **Ajouter une application** , cliquez sur **Ajouter**.
+21. Pour **canal de mise à jour**, sélectionnez **semi-annuel**, puis cliquez sur **OK**.
+
+22. Dans le volet **Ajouter une application** , cliquez sur **Ajouter**.
 
 Vous disposez maintenant d’une stratégie de conformité de l’appareil pour tester les applications sélectionnées dans la stratégie de conformité des appareils **Windows 10** et pour les membres du groupe **utilisateurs d’appareils Windows 10 gérés** . Notez que si vous sélectionnez Office 365 comme type de groupe, des ressources supplémentaires seront créées. 
   

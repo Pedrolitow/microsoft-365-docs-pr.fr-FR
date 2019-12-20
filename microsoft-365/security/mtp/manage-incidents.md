@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f06fe4b55992d29130c1a613793c52f6c0dcc972
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: d6b7c754db3b43e909871a5a60fa1ab155f2d01d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911081"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806953"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Gérer les incidents dans la Protection Microsoft contre les menaces
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées. La Protection Microsoft contre les menaces vous permet d’accéder à la gestion des incidents sur les appareils, chez les utilisateurs et dans les boîtes aux lettres. 
 

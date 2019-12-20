@@ -3,7 +3,7 @@ title: Authentification multifacteur pour votre environnement de test Microsoft 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,26 +13,30 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurez l’authentification multifacteur à l’aide de messages texte envoyés à un téléphone intelligent dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: af4ae63f52fa74084dfddf0e6861c5ae3ba2aedb
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: ea87ab6f169829d74339b64b6edb3978bea9ca9a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673260"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801399"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Authentification multifacteur pour votre environnement de test Microsoft 365 Enterprise
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 entreprise et Office 365 entreprise.*
+*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Enterprise et Office 365 Enterprise.*
 
-Pour un niveau de sécurité supplémentaire pour la connexion à Office 365 ou tout service ou application qui utilise le client Azure AD pour votre organisation, vous pouvez activer l’authentification multifacteur Azure, qui nécessite plus qu’un nom d’utilisateur et un mot de passe pour vérifier une comptes. Avec l’authentification multifacteur, les utilisateurs doivent accuser réception d’un appel téléphonique, taper un code de vérification envoyé dans un message texte ou spécifier un mot de passe d’application sur leurs téléphones intelligents après avoir entré correctement leurs mots de passe. Ils peuvent se connecter uniquement lorsque ce deuxième facteur d’authentification a été respecté. 
+Pour un niveau de sécurité supplémentaire pour la connexion à Microsoft 365 ou tout service ou application qui utilise le client Azure AD pour votre abonnement, vous pouvez activer l’authentification multifacteur Azure, qui nécessite plus qu’un nom d’utilisateur et un mot de passe pour vérifier une comptes. 
+
+Avec l’authentification multifacteur, les utilisateurs doivent accuser réception d’un appel téléphonique, taper un code de vérification envoyé dans un message texte ou spécifier un mot de passe d’application sur leurs téléphones intelligents après avoir entré correctement leurs mots de passe. Ils peuvent se connecter uniquement lorsque ce deuxième facteur d’authentification a été respecté. 
   
-Cet article explique comment activer et tester l’authentification par message texte pour un compte spécifique.
+Cet article explique comment activer et tester l’authentification par message texte pour un compte d’utilisateur spécifique.
   
 Il existe deux phases de configuration de l’authentification multifacteur pour un compte dans votre environnement de test Microsoft 365 entreprise :
   
 1. Créer l’environnement de test Microsoft 365 Entreprise.
     
 2. Activez et testez l’authentification multifacteur pour le compte d’utilisateur 2.
+
+3. Activer et tester l’authentification multifacteur avec une stratégie d’accès conditionnel (facultatif).
 
 ![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -56,7 +60,7 @@ Activez l’authentification multifacteur pour le compte d’utilisateur 2 en pr
     
 2. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
-3. Dans le volet utilisateurs actifs, cliquez sur **plus d' > configuration de l’authentification multifacteur**.
+3. Dans le volet utilisateurs actifs, cliquez sur **authentification multifacteur**.
     
 4. Dans la liste, sélectionnez le compte **utilisateur 2** .
     
@@ -96,6 +100,38 @@ Terminez la configuration pour que le compte d’utilisateur 2 utilise un messag
     
     Vous devriez voir Office Portal pour l’utilisateur 2 sur l’onglet **Accueil Microsoft Office** de votre navigateur.
 
+## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>Phase 3 : activer et tester l’authentification multifacteur avec une stratégie d’accès conditionnel
+
+*Cette phase ne peut être utilisée que pour un environnement de test Microsoft 365 Enterprise.*
+
+Dans cette phase, vous activez l’authentification multifacteur pour le compte utilisateur 3 à l’aide d’un groupe et d’une stratégie d’accès conditionnel.
+
+Ensuite, créez un groupe nommé MFAUsers et ajoutez-y le compte utilisateur 3.
+
+1. Dans l’onglet **Centre d’administration Microsoft 365** , cliquez sur **groupes** dans le volet de navigation de gauche, puis cliquez sur **groupes**.
+2. Cliquez sur **Ajouter un groupe**.
+3. Dans le volet **choisir un type de groupe** , sélectionnez **sécurité**, puis cliquez sur **suivant**.
+4. Dans le volet **configurer les concepts de base** , cliquez sur **créer un groupe**, puis cliquez sur **Fermer**.
+5. Dans le volet **vérifier et terminer l’ajout** d’un groupe, tapez **MFAUsers**, puis cliquez sur **suivant**.
+6. Dans la liste des groupes, cliquez sur le groupe **MFAUsers** .
+7. Dans le volet **MFAUsers** , cliquez sur **membres**, puis sur **Afficher tout et gérer les membres**.
+8. Dans le volet **MFAUsers** , cliquez sur **Ajouter des membres**, sélectionnez le compte **utilisateur 3** , puis cliquez sur **Enregistrer > fermer > fermer**.
+
+Ensuite, créez une stratégie d’accès conditionnel pour exiger l’authentification multifacteur pour les membres du groupe MFAUsers.
+
+1. Dans un nouvel onglet de votre navigateur, accédez à [https://portal.azure.com](https://portal.azure.com).
+2. Cliquez sur **Azure Active Directory > sécurité > accès conditionnel**.
+3. Dans le volet **accès conditionnel – stratégies** , cliquez sur **nouvelle stratégie**.
+4. Dans le volet **nouveau** , tapez **MFA pour les comptes d’utilisateur** dans **nom**.
+5. Dans la section **affectations** , cliquez sur **utilisateurs et groupes**.
+6. Sous l’onglet **inclure** du volet **utilisateurs et groupes** , cliquez sur Sélectionner des utilisateurs et des groupes **> utilisateurs et des groupes > sélectionner**.
+7. Dans le volet **Sélectionner** , cliquez sur le groupe **MFAUsers** , puis cliquez sur **Sélectionner > terminée**.
+8. Dans la section **contrôles d’accès** du **nouveau** volet, cliquez sur **accorder**.
+9. Dans le volet **accorder** , cliquez sur **exiger l’authentification multifacteur**, puis cliquez sur **Sélectionner**.
+10. Dans le volet **nouveau** , cliquez sur **activé** pour **activer la stratégie**, puis cliquez sur **créer**.
+11. Fermez les onglets **portail Azure** et **Centre d’administration Microsoft 365** .
+
+Pour tester cette stratégie, déconnectez-vous, puis connectez-vous avec le compte utilisateur 3. Vous devez être invité à configurer l’authentification multifacteur. Cela illustre l’application de la stratégie MFAUsers.
 
 Consultez l’étape de configuration de l' [authentification multifacteur](identity-secure-user-sign-ins.md#identity-mfa) dans la phase d’identité pour obtenir des informations et des liens permettant de déployer l’authentification multifacteur en production.
     

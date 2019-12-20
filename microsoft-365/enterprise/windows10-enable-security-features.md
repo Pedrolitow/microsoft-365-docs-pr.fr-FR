@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: c1c39745b2dc891b4dc079ecd657eaf0d883af23
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d7e71eda9cf0750ce44a978dca742b43f2101d63
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627458"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801259"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>Étape 5 : déployer les fonctionnalités de sécurité Windows 10 entreprise
 
@@ -91,8 +91,8 @@ Vous pouvez effectuer un dépannage de base ou éventuellement fournir à Micros
 
 
 <a name="windows10-sec-atp"></a>
-## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender - Protection avancée contre les menaces
-Microsoft Defender ATP (disponible uniquement avec la planification Microsoft 365 entreprise E5) est un service de sécurité qui permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées sur leurs réseaux. Pour plus d’informations sur Microsoft Defender ATP, la configuration minimale requise et la gestion de cette fonctionnalité, reportez-vous à :
+## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender – Protection avancée contre les menaces
+Microsoft Defender ATP (disponible uniquement avec le plan Microsoft 365 E5) est un service de sécurité qui permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées sur leurs réseaux. Pour plus d’informations sur Microsoft Defender ATP, la configuration minimale requise et la gestion de cette fonctionnalité, reportez-vous à :
 
 * [Microsoft Defender - PACM](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [Configuration minimale requise](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)

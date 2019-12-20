@@ -1,7 +1,8 @@
 ---
-title: Recommandations de Microsoft pour les paramètres de sécurité d’ATP et Office 365, recommandations, Sender Policy Framework, la création de rapports de messages basés sur un domaine et la conformité, la messagerie DomainKeys Identified identifiée, les étapes, son fonctionnement, etc.
+title: Recommandations de Microsoft pour les paramètres de sécurité ATP et Office 365, recommandations, Sender Policy Framework, la création de rapports de messages basés sur un domaine, la conformité, la DomainKeys Identified identifiée, les étapes, son fonctionnement, les lignes de base de sécurité, les configurations de base pour EOP, planifications pour la protection avancée contre les menaces, configuration ATP, configuration EOP, configuration de l’ATP, configuration d’EOP, configuration de la sécurité
 ms.author: tracyp
 author: MSFTTracyP
+ms.date: 12/12/2019
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -13,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 60042d5903a9dadd178fe68b3a73a3a2b9148798
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971542"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807969"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -44,7 +45,7 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 |Action de détection de courrier d’hameçonnage|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier hameçon à haute fiabilité|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier en nombre|Déplacer le message dans le dossier Courrier indésirable|Mettre en quarantaine le message||
-|Définir le seuil de courrier électronique en masse sur|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).|
+|Définir le seuil de courrier électronique en masse sur|6 |4|La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine|30 jours|30 jours||
 |Conseils de sécurité|Activé|Activé||
 |Expéditeurs autorisés|Aucune|Aucune||
@@ -57,23 +58,23 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 
 La stratégie de blocage du courrier indésirable, appelée filtre de courrier indésirable avancé, est désapprouvée au moment de la rédaction de cet accord. Nos paramètres recommandés pour **ceux-ci sont pour les désactiver** pour les niveaux standard et strict :
 
-|Nom de la fonctionnalité de sécurité|
-|---------|
-|IncreaseScoreWithImageLinks|
-|IncreaseScoreWithNumericIps|
-|IncreaseScoreWithRedirectToOtherPort|
-|IncreaseScoreWithBizOrInfoUrls|
-|MarkAsSpamEmptyMessages|
-|MarkAsSpamJavaScriptInHtml|
-|MarkAsSpamFramesInHtml|
-|MarkAsSpamObjectTagsInHtml|
-|MarkAsSpamEmbedTagsInHtml|
-|MarkAsSpamFormTagsInHtml|
-|MarkAsSpamWebBugsInHtml|
-|MarkAsSpamSensitiveWordList|
-|MarkAsSpamFromAddressAuthFail|
-|MarkAsSpamNdrBackscatter|
-|MarkAsSpamSpfRecordHardFail|
+|Nom de la fonctionnalité de sécurité| Comments |
+|---------|---------|
+|IncreaseScoreWithImageLinks| |
+|IncreaseScoreWithNumericIps| |
+|IncreaseScoreWithRedirectToOtherPort| |
+|IncreaseScoreWithBizOrInfoUrls| |
+|MarkAsSpamEmptyMessages| |
+|MarkAsSpamJavaScriptInHtml| |
+|MarkAsSpamFramesInHtml| |
+|MarkAsSpamObjectTagsInHtml| |
+|MarkAsSpamEmbedTagsInHtml| |
+|MarkAsSpamFormTagsInHtml| |
+|MarkAsSpamWebBugsInHtml| |
+|MarkAsSpamSensitiveWordList| |
+|MarkAsSpamFromAddressAuthFail| |
+|MarkAsSpamNdrBackscatter| |
+|MarkAsSpamSpfRecordHardFail| |
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>Paramètres de stratégie de filtrage du courrier indésirable sortant EOP
 
@@ -166,3 +167,14 @@ Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables|Désactiv�
 |Pièces jointes approuvées ATP réponse aux programmes malveillants inconnus|Bloc|Bloc||
 |Redirection de la pièce jointe sur la détection|Activé|Activé|Rediriger vers l’adresse de messagerie d’un administrateur de sécurité qui sait comment déterminer si la pièce jointe est un programme malveillant ou non|
 |Réponse aux pièces jointes approuvées ATP si l’analyse contre les pièces jointes expire ou si une erreur se produit|Activé|Activé||
+
+
+## <a name="related-topics"></a>Voir aussi
+
+- Vous recherchez les meilleures pratiques avec des **règles de transport Exchange mail Flow/Exchange**? Pour plus d’informations, consultez [cet article](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) .
+
+- Envoyez des e-mails suspects, des courriers indésirables, des hameçons ou des URL à Microsoft pour analyse. Utilisez les instructions pour les **soumissions** de l’administrateur dans [cet article](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+
+- Utilisez ces liens pour obtenir des informations sur **la configuration de votre** [service EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service), ainsi que sur la **configuration** de la [Protection avancée contre les menaces d’Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). (N’oubliez pas de consulter les instructions utiles dans «[protéger contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)».)
+
+- Les **lignes de base de sécurité pour Windows** sont disponibles [ici](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) pour les options d’objet de stratégie de groupe/local et la sécurité basée sur Intune, [ici](https://docs.microsoft.com/intune/protect/security-baselines). Enfin, une comparaison entre Microsoft Defender Advanced Threat Protection (ATP) et les bases de sécurité Windows Intune est [ici](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).

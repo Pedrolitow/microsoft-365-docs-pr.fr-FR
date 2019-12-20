@@ -3,7 +3,7 @@ title: Inscrire des appareils iOS et Android dans votre environnement de test Mi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/11/2018
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,16 +12,16 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Utilisez ce guide de laboratoire de test pour inscrire des appareils dans votre environnement de test Microsoft 365 et les gérer à distance.
-ms.openlocfilehash: b98e184d3216a779fc495cf65b73d3a2b212e257
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 98670e64045b36dcdafb46c6ff798b8be7fd6dc1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694071"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801869"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 Enterprise
 
-*Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 entreprise.*
+*Ce Guide de Laboratoire Test peut uniquement être utilisé pour les environnements de test Microsoft 365 Entreprise*.
 
 En suivant les instructions fournies dans cet article, vous serez en mesure d’inscrire et de tester des fonctionnalités de gestion des appareils mobiles de base pour les appareils iOS et Android dans votre environnement de test Microsoft 365 Enterprise.
 
@@ -55,7 +55,7 @@ Microsoft Intune fournit des fonctionnalités de verrouillage à distance et de 
 Pour verrouiller un appareil iOS ou Android à distance :
 
 1. Connectez-vous au portail Azure à [https://portal.azure.com](https://portal.azure.com) l’aide des informations d’identification de votre compte d’administrateur général.
-2. Cliquez sur **tous les services**, tapez **Intune**, puis cliquez sur **Intune**.
+2. Dans l’onglet portail Azure de votre navigateur, tapez **Intune** dans la zone de recherche, puis cliquez sur **Intune**.
 3. Cliquez sur **périphériques > tous les appareils**.
 4. Dans la liste des périphériques, cliquez sur un appareil iOS ou Android, puis sur l’action de **verrouillage à distance** .
 
@@ -63,7 +63,7 @@ Pour verrouiller un appareil iOS ou Android à distance :
 Pour réinitialiser le code secret à distance, procédez comme suit :
 
 1. Si nécessaire, connectez-vous au portail Azure à [https://portal.azure.com](https://portal.azure.com) l’aide des informations d’identification de votre compte d’administrateur général.
-2. Cliquez sur **tous les services**, tapez **Intune**, puis cliquez sur **Intune**.
+2. Dans l’onglet portail Azure de votre navigateur, tapez **Intune** dans la zone de recherche, puis cliquez sur **Intune**.
 3. Cliquez sur **périphériques > tous les appareils**.
 4. Dans la liste des appareils gérés, cliquez sur un appareil iOS ou Android, puis choisissez **... Plus encore**. Ensuite, sélectionnez l’action de **suppression** de l’appareil à distance.
 
