@@ -15,23 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 03cd648a178d63b2b964e0136c105068f4d1c6ca
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 23942b1d39bacfab470d41fca1ea630ad7b80ea3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911032"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808699"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le repérage avancé est un outil de repérage de menaces basé sur des requêtes qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau pour localiser les indicateurs et entités intéressants. L’accès flexible aux données facilite le repérage sans contrainte pour les menaces connues et potentielles.
 
-dans le Centre de sécurité Microsoft 365, la recherche avancée prend en charge les requêtes qui examinent les données à partir de Microsoft Defender - Protection avancée contre les menaces, qui couvrent les données provenant d’appareils intégrés et Office 365 - Protection avancée contre les menaces, et fournissent des données provenant des e-mails. Pour utiliser le repérage avancé, [activez Protection Microsoft contre les menaces](mtp-enable.md).
+Dans le centre de sécurité Microsoft 365, la recherche avancée prend en charge les requêtes qui examinent les données issues de Microsoft Defender ATP, qui couvrent les données des appareils intégrés et Office 365 ATP, qui fournissent des données à partir de courriers électroniques. Pour utiliser le repérage avancé, [activez Protection Microsoft contre les menaces](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Prise en main du repérage avancé
 

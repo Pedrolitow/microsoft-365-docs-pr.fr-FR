@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 716feb3317989ebcc89593c89d05a6717b4ca0ee
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 869c97e32639f4553e49b99069c4bfd180e09f46
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911083"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808649"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>Enquêter sur les incidents dans la Protection Microsoft contre les menaces
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
 La Protection Microsoft contre les menaces regroupe toutes les alertes, ressources, examens et preuves connexes provenant de vos appareils, utilisateurs et boîtes aux lettres pour vous offrir une vue d’ensemble complète de la gamme d’attaques. 

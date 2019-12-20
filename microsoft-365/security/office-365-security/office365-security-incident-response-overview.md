@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Cette solution vous indique les attaques Cybersecurity les plus courantes pouvant ressembler à Office 365 et comment y répondre.
-ms.openlocfilehash: d908b32a5c3cb01476ab9b7604861eb94c7a2745
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c55a5d561fec4219d29926036842836174b790da
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971592"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823826"
 ---
 # <a name="office-365-security-incident-response"></a>Réponse aux incidents de sécurité Office 365
 
@@ -51,11 +51,11 @@ Consultez cet article tous les mois à mesure que d’autres articles seront ajo
 
 ## <a name="incident-response-articles"></a>Articles relatifs à la réponse aux incidents
 
-- [Réponse à un compte de messagerie compromis dans Office 365](~/compliance/responding-to-a-compromised-email-account.md)
+- [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sécuriser Office 365 comme un pro de la cyber-sécurité
 
-Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la feuille de [route de sécurité Office 365-principales priorités pour les 30 jours, 90 jours et au-delà](security-roadmap.md) pour implémenter les meilleures pratiques recommandées par Microsoft pour la sécurisation de votre client Office 365.
+Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la [Feuille de route pour sécuriser Office 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Office 365.
 
 - Tâches à effectuer lors des 30 premiers jours.  Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
 

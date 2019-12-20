@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 01a81d5f4ac68d72095f86de93b727c60d28393f
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: a47ffecbf0ef1ac7dcfeef9d8cbe4e104de9ca2d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910216"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808579"
 ---
 # <a name="microsoft-threat-protection"></a>Protection Microsoft contre les menaces
 
-**S'applique à :**
+**S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La protection de Microsoft contre les menaces est une suite de défense d’entreprise pré-et post-violation unifiée qui s’intègre de manière native sur les points de terminaison, les identités, les messages électroniques et les applications pour détecter, prévenir, examiner et répondre automatiquement aux attaques sophistiquées.  
 
@@ -74,6 +74,6 @@ Les fonctionnalités interproduits de la protection contre les menaces Microsoft
 
 
 ## <a name="get-started"></a>Prise en main
-Les clients disposant d’une licence Microsoft 365 E5 ou équivalente peuvent utiliser Microsoft Threat Protection. Pour commencer, activez le service dans le centre de sécurité Microsoft 365 sur [Security.Microsoft.com](https://security.microsoft.com). Pour plus d’informations, consultez :
+Les clients disposant d’une licence Microsoft 365 E5 ou équivalente peuvent utiliser la Protection Microsoft contre les menaces. Pour commencer, activez le service dans le centre de sécurité Microsoft 365 sur [Security.Microsoft.com](https://security.microsoft.com). Pour plus d’informations, consultez :
 - [Conditions de licence](prerequisites.md#licensing-requirements)
-- [Activer la protection contre les menaces Microsoft](mtp-enable.md)
+- [Activer la Protection Microsoft contre les menaces](mtp-enable.md)

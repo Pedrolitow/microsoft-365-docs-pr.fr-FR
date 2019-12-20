@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1f2deef2c9ffc26f604194ff2d27d5f094471021
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911040"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808709"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le tableau `EmailEvents` dans le schéma de [repérage avancé](advanced-hunting-overview.md) contient des informations sur les événements impliquant le traitement d'e-mails sur Office 365 - Protection avancée contre les menaces. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
@@ -35,7 +35,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
-| `EventTime` | DateHeure | Date et heure d’enregistrement de l’événement |
+| `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `EmailId` | chaîne | E-mail et Identificateur de destinataire uniques |
 | `NetworkMessageId` | chaîne | Identificateur unique d’e-mail, généré par Office 365 |
 | `InternetMessageId` | chaîne | Identificateur public de l’e-mail défini par le système de courrier d’envoi |

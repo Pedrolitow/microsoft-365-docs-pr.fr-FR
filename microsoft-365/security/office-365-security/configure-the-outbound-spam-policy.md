@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Le filtrage du courrier indésirable sortant est toujours activé si vous utilisez le service pour l’envoi de messages sortants, ce qui permet de protéger les organisations utilisant le service ainsi que leurs destinataires.
-ms.openlocfilehash: 06c74b578d7c18ad2f193bcbd4a8f9cdb6794416
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970870"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808439"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurer la stratégie anti-courrier indésirable sortant
 
@@ -61,11 +61,11 @@ La procédure suivante vous permet de modifier la stratégie de courrier indési
 
    L'administrateur du domaine, spécifié à l'aide de ce paramètre, est informé que l'envoi de messages sortants est bloqué pour cet utilisateur.  Pour savoir à quoi ressemble cette notification, voir [Exemple de notification lorsqu'un expéditeur est bloqué en raison de l'envoi de courrier indésirable sortant](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md).
 
-   [NOTE !] Une alerte système est également générée pour indiquer que l’utilisateur a été restreint.  Pour en savoir plus sur l’alerte et sur la façon de récupérer l’utilisateur, consultez la rubrique [Suppression d’un utilisateur du portail utilisateurs restreints après l’envoi du courrier indésirable](removing-user-from-restricted-users-portal-after-spam.md).
+   > [NOTE !] Une alerte système est également générée pour indiquer que l’utilisateur a été restreint.  Pour en savoir plus sur l’alerte et sur la façon de récupérer l’utilisateur, consultez la rubrique [Suppression d’un utilisateur du portail utilisateurs restreints après l’envoi du courrier indésirable](removing-user-from-restricted-users-portal-after-spam.md).
 
 4. Développez la section **limites des destinataires** pour spécifier le nombre maximal de destinataires pouvant être envoyés par un utilisateur, par heure pour les destinataires internes et externes, ainsi que le nombre maximal par jour.
 
-    [NOTE !] Le nombre maximal de toute entrée est 10 000.  Pour plus d’informations, consultez la rubrique [limites de réception et d’envoi dans Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) .
+    > [NOTE !] Le nombre maximal de toute entrée est 10 000.  Pour plus d’informations, consultez la rubrique [limites de réception et d’envoi dans Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) .
 
 7. Spécifier l' **action** à effectuer lorsqu’un utilisateur dépasse les limites spécifiées.  Les actions possibles sont les suivantes :
     * **Empêcher l’utilisateur d’envoyer des messages jusqu’à la date suivante**.  Une fois qu’une limite d’envoi a été dépassée (interne, externe ou quotidienne), une alerte est générée pour l’administrateur et l’utilisateur ne peut plus envoyer de courriers électroniques avant le jour suivant, en fonction de l’heure UTC. L’administrateur n’a aucun moyen de remplacer ce bloc.

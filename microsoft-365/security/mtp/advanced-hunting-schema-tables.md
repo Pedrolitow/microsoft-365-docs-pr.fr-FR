@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1803445dfd9b46fce23b0dcc9585ea543f1b0347
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 631b328168003668ed06e37d76177c327794ed18
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910999"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808659"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le schéma [repérage avancé](advanced-hunting-overview.md) est constitué de plusieurs tableaux qui fournissent des informations sur les événements ou des informations sur les ordinateurs et entités. Pour créer des requêtes qui couvrent efficacement sur plusieurs tableaux, vous devez comprendre les tableaux et les colonnes du schéma de repérage avancé.
 
@@ -37,15 +37,15 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 
 | Nom du tableau | Description |
 |------------|-------------|
-| **[MachineInfo](advanced-hunting-machineinfo-table.md)** | Informations sur l’ordinateur, y compris les informations de système d’exploitation |
-| **[MachineNetworkInfo](advanced-hunting-machinenetworkinfo-table.md)** | Propriétés réseau des ordinateurs, y compris les adaptateurs, les adresses IP et MAC, ainsi que les réseaux et domaines connectés |
-| **[ProcessCreationEvents](advanced-hunting-processcreationevents-table.md)** | Création de processus et événements associés |
-| **[NetworkCommunicationEvents](advanced-hunting-networkcommunicationevents-table.md)** | Connexion réseau et événements connexes |
-| **[FileCreationEvents](advanced-hunting-filecreationevents-table.md)** | Création de fichier, modification et autres événements de système de fichiers |
-| **[RegistryEvents](advanced-hunting-registryevents-table.md)** | Création et modification d'entrées de registre |
-| **[LogonEvents](advanced-hunting-logonevents-table.md)** | Connexions et autres événements d’authentification |
-| **[ImageLoadEvents](advanced-hunting-imageloadevents-table.md)** | Événements de chargement de DLL |
-| **[MiscEvents](advanced-hunting-miscevents-table.md)** | Plusieurs types d’événements, y compris les événements déclenchés par des contrôles de sécurité tels que l’Antivirus Windows Defender et la protection contre l’exploitation |
+| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Informations sur l’ordinateur, y compris les informations de système d’exploitation |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propriétés réseau des ordinateurs, y compris les adaptateurs, les adresses IP et MAC, ainsi que les réseaux et domaines connectés |
+| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Création de processus et événements associés |
+| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Connexion réseau et événements connexes |
+| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Création de fichier, modification et autres événements de système de fichiers |
+| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Création et modification d'entrées de registre |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Connexions et autres événements d’authentification |
+| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Événements de chargement de DLL |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Plusieurs types d’événements, y compris les événements déclenchés par des contrôles de sécurité tels que l’Antivirus Windows Defender et la protection contre l’exploitation |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Événements d’e-mails Office 365, y compris les événements de remise et de blocage d’e-mail |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Informations sur les fichiers joints aux e-mails Office 365 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Informations sur les URL des e-mails Office 365 |

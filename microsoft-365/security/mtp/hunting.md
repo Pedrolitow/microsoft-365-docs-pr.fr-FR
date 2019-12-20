@@ -1,7 +1,7 @@
 ---
-title: Recherche d’autres menaces dans Microsoft 365
+title: Recherche de menaces dans Microsoft 365
 description: Utiliser les fonctionnalités de recherche de menace dans le centre de sécurité Microsoft 365 pour détecter les violations et les autres menaces de manière proactive
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, chasse, chasse, Microsoft Defender ATP, Office 365 ATP, Azure ATP, recherche avancée
+keywords: sécurité, programmes malveillants, Microsoft 365, M365, protection Microsoft contre les menaces, MTP, centre de sécurité, recherche, recherche de menace, chasse aux cyberthreat, Microsoft Defender ATP, Office 365 ATP, Azure ATP, recherche avancée
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 795a7d88c2b6021a5bdd665b3787644b50fb346a
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 12705fa525374af8870aedcd211d8e9dcdd17f9c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39909423"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808739"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>Recherche de menaces dans Microsoft 365
 
@@ -33,7 +33,7 @@ Les fonctionnalités de recherche de menaces dans le centre de sécurité Micros
 
 [Activez la protection contre les menaces Microsoft](mtp-enable.md) pour obtenir l’interface de recherche avancée de la chasse directement dans le centre de sécurité Microsoft 365. Grâce à la [chasse avancée](advanced-hunting-overview.md), vous pouvez créer des requêtes uniques qui examinent les données provenant de Microsoft Defender ATP, qui couvrent les données des appareils intégrés et de l’atp Office 365, qui fournissent des données à partir de messages électroniques.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble de la chasse avancée](advanced-hunting-overview.md)
-- [Présentation de la protection contre les menaces Microsoft](microsoft-threat-protection.md)
-- [Activer la protection contre les menaces Microsoft](mtp-enable.md)
+- [Vue d’ensemble de la Protection Microsoft contre les menaces](microsoft-threat-protection.md)
+- [Activer la Protection Microsoft contre les menaces](mtp-enable.md)

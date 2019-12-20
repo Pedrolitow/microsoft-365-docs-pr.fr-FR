@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 10cf82667fd97eebe66c376e0539db000f20b1c2
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: da9712d1f3465c28d2ba880997a52434723a297d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911038"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808669"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La table `EmailUrlInfo` dans le schéma de [repérage avancé](advanced-hunting-overview.md) contient des informations sur les URL et les pièces jointes des e-mails traités par Office 365 - Protection avancée contre les menaces. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
@@ -35,7 +35,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
-| `EventTime` | DateHeure | Date et heure d’enregistrement de l’événement |
+| `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `UrlId` | string | Identificateur unique de l’URL dans l’objet, le corps ou la pièce jointe de l’e-mail |
 | `NetworkMessageId` | string | Identificateur unique d’e-mail, généré par Office 365 |
 | `Url` | string | URL complète dans l’objet, le corps ou la pièce jointe de l’e-mail |

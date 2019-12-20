@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: les scénarios de menace et d’attaque les plus courants rencontrés par les organisations pour leurs environnements Microsoft 365 et les actions recommandées pour atténuer ces risques.
-ms.openlocfilehash: 7a8e593a1e4280327b82802bb08a57370e4db652
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030518"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801249"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Sécurité Microsoft 365 pour les décideurs d’entreprise (BDM)
 
@@ -25,7 +25,7 @@ Cet article est organisé par ordre de priorité du travail, en commençant par 
 
 [![Image miniature de la feuille de calcul recommandations de sécurité Microsoft 365 BDM](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft vous fournit l’outil de score sécurisé au sein de votre client pour analyser automatiquement votre position de sécurité en fonction de vos activités régulières, attribuer un score et fournir des recommandations en matière d’amélioration de la sécurité. Avant de prendre les mesures recommandées dans cet article, Notez votre score actuel et vos recommandations. Les actions recommandées dans cet article augmentent votre score. L’objectif est de ne pas atteindre le score maximal, mais de prendre conscience des possibilités de protection de votre environnement qui n’ont pas d’impact négatif sur la productivité de vos utilisateurs. Consultez la rubrique [Microsoft Secure score](mtp/microsoft-secure-score.md).
+Microsoft vous fournit l’outil de score sécurisé au sein de votre client pour analyser automatiquement votre position de sécurité en fonction de vos activités régulières, attribuer un score et fournir des recommandations en matière d’amélioration de la sécurité. Avant de prendre les mesures recommandées dans cet article, Notez votre score actuel et vos recommandations. Les actions recommandées dans cet article augmentent votre score. L’objectif est de ne pas atteindre le score maximal, mais de prendre conscience des possibilités de protection de votre environnement d’une manière qui n’influe pas sur la productivité de vos utilisateurs. Consultez la rubrique [Microsoft Secure score](mtp/microsoft-secure-score.md).
 
 Une autre chose avant de commencer. . . Veillez à [activer le journal d’audit Office 365](../compliance/search-the-audit-log-in-security-and-compliance.md). Vous aurez besoin de ces données ultérieurement, dans le cas où vous devriez examiner un incident ou une violation. 
 
@@ -46,14 +46,14 @@ Le diagramme suivant illustre ces fonctionnalités.
 Recommandations supplémentaires :
 - Assurez-vous que les comptes qui sont synchronisés à partir de l’organisation locale ne sont pas affectés aux rôles d’administrateur pour les services Cloud. Cela permet d’empêcher un agresseur de tirer parti des comptes locaux pour bénéficier d’un accès administratif aux services Cloud. 
 - Vérifiez que les comptes de service ne sont pas affectés de rôles d’administrateur. Ces comptes ne sont souvent pas surveillés et sont définis avec des mots de passe qui n’expirent pas. Commencez par vous assurer que les comptes AADConnect et ADFS ne sont pas des administrateurs globaux par défaut.
-- Supprimer des licences de comptes d’administrateur. À moins qu’il existe un cas utilisateur spécifique pour attribuer des licences à des comptes d’administrateur spécifiques, supprimez les licences de ces comptes. 
+- Supprimer des licences de comptes d’administrateur. À moins qu’il existe un cas d’utilisation spécifique pour attribuer des licences à des comptes d’administrateur spécifiques, supprimez les licences de ces comptes. 
 
 ## <a name="reduce-the-surface-of-attack"></a>Réduire la surface d’attaque
 
 La zone de sélection suivante réduit la surface d’attaque. Cela peut être réalisé avec un effort et un impact minimes pour vos utilisateurs et services. En réduisant la surface d’attaque, les agresseurs ont moins de moyens de lancer une attaque contre votre organisation.
 
 Voici quelques exemples :
-- Désactivez les protocoles POP3, IMAP et SMTP. La plupart des organisations modernes n’utilisent plus ces anciens protocoles. Vous pouvez les désactiver en toute sécurité et n’autoriser que les exceptions si nécessaire. 
+- Désactivez les protocoles POP3, IMAP et SMTP. La plupart des organisations modernes n’utilisent plus ces anciens protocoles. Vous pouvez les désactiver en toute sécurité et autoriser les exceptions uniquement si nécessaire. 
 - Réduire et conserver le nombre d’administrateurs globaux dans le client au minimum absolu requis. Cela réduit directement la surface d’exposition pour toutes les applications Cloud. 
 - Retirer les serveurs et les applications qui ne sont plus utilisés dans votre environnement. 
 - Implémentez un processus de désactivation et de suppression des comptes qui ne sont plus utilisés. 

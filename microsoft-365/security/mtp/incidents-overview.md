@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 989184c5dd8af6aafc525100e34e0172d96adcfe
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 1e157ff8c7c2ac61790b4be74c43553eb0807eb2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911017"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808729"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Vue d’ensemble des incidents dans la protection Microsoft contre les menaces
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Les alertes constituent la base de tous les incidents. Elles sont créées lorsqu’un événement ou une activité malveillante est détecté sur votre réseau. Les alertes individuelles fournissent de précieux indices sur les événements ou entités individuelles. Cependant, les attaques ont généralement recours à des vecteurs d’attaque variés pour établir une brèche. Relier chacun des indices entre eux peut être une tâche difficile et fastidieuse. 
 

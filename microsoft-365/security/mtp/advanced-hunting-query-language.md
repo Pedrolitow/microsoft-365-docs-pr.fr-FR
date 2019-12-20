@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ed5dd99d2ac569353ed72ddf67d906dfe21e7cd0
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 7c6c92aeec6c1644472103a1aaf175eb813d5758
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910998"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808679"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le repérage avancé est basé sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/). Vous pouvez utiliser la syntaxe et les opérateurs Kusto pour créer des requêtes qui recherchent des informations dans le [schéma](advanced-hunting-schema-tables.md) spécifiquement structuré pour un repérage avancé. Pour mieux comprendre ces concepts, exécutez votre première requête.
 
@@ -37,16 +37,16 @@ dans le Centre de sécurité Microsoft 365, placez-vous dans **Repérage** pour 
 
 ```
 // Finds PowerShell execution events that could involve a download.
-ProcessCreationEvents  
-| where EventTime > ago(7d)
+DeviceProcessEvents 
+| where Timestamp > ago(7d)
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
         or ProcessCommandLine has "Invoke-Shellcode"
         or ProcessCommandLine contains "http:"
-| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by EventTime
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by Timestamp
 ```
 
 Voici son futur aspect dans le repérage avancé.
@@ -57,15 +57,15 @@ La requête commence par un bref commentaire décrivant sa fonction. Cela vous p
 
 ```
 // Finds PowerShell execution events that could involve a download.
-ProcessCreationEvents
+DeviceProcessEvents
 ```
 
-La requête elle-même commence généralement par un nom de table suivi d’une série d’éléments commençant par une barre verticale (`|`). Dans cet exemple, nous commençons par ajouter avec le nom de la table `ProcessCreationEvents` et ajoutons des éléments redirigés le cas échéant.
+La requête elle-même commence généralement par un nom de table suivi d’une série d’éléments commençant par une barre verticale (`|`). Dans cet exemple, nous commençons par ajouter avec le nom de la table `DeviceProcessEvents` et ajoutons des éléments redirigés le cas échéant.
 
 Le premier élément redirigé est un filtre de temps étendu dans les sept jours précédents. La conservation d’un intervalle de temps le plus étroit possible permet de s’assurer que les requêtes fonctionnent bien, renvoient des résultats gérables et n’expirent pas.
 
 ```
-| where EventTime > ago(7d)
+| where Timestamp > ago(7d)
 ```
 
 L’intervalle de temps est immédiatement suivi d’une recherche de fichiers représentant l’application PowerShell.
@@ -87,8 +87,8 @@ Par la suite, la requête recherche les lignes de commande généralement utilis
 Maintenant que votre requête identifie clairement les données que vous recherchez, vous pouvez ajouter des éléments qui définissent l’apparence des résultats. `project` renvoie des colonnes spécifiques et `top` limite le nombre de résultats. De ce fait, les résultats sont bien mis en forme et raisonnablement volumineux et faciles à traiter.
 
 ```
-| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by EventTime'
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by Timestamp'
 ```
 
 Cliquez sur **Exécuter la requête** pour afficher les résultats. Vous pouvez développer l’affichage à l’écran pour pouvoir vous concentrer sur votre requête de repérage et sur les résultats.

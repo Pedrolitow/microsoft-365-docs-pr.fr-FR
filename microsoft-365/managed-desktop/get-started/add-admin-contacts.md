@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962611"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823836"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
@@ -44,7 +44,7 @@ Autre | Pour les problèmes non couverts par d’autres domaines
 
 **Les personnes que vous choisissez pour ces contacts doivent disposer des connaissances et des pouvoirs nécessaires pour prendre des décisions concernant votre environnement de bureau géré Microsoft.** Lorsque vous intégrez votre environnement de bureau géré Microsoft, vous êtes invité à ajouter des contacts pour votre service d’assistance et sécurité locaux. 
 
-Les contacts d’administration sont requis lorsque vous [envoyez une demande de support](../working-with-managed-desktop/support.md). Vous devez disposer d’un contact administrateur pour la zone de sélection de la demande de support. 
+Les contacts d’administration sont requis lorsque vous [envoyez une demande de support](../service-description/support.md). Vous devez disposer d’un contact administrateur pour la zone de sélection de la demande de support. 
 
 **Pour ajouter des contacts d’administration**
 

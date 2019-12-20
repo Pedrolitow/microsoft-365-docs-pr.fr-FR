@@ -1,5 +1,5 @@
 ---
-title: Soumissions d’administration dans Office 365, O365 envois, Office 365 courrier indésirable, O365 false negative, Submit phishing in Office 365, Submit e-mail for Scanning, suspect email in Office 365, Scan a mail, Microsoft Scan for hameçon, demandez à Microsoft d’analyser les courriers indésirables, envoyer courrier électronique, envoi de messages électroniques, courrier électronique Dodgy, messages d’acteur incorrects, courrier suspect non approuvé
+title: Soumissions d’administration dans Office 365, O365 envois, Office 365 courrier indésirable, O365 false negative, Submit phishing in Office 365, Submit e-mail for Scanning, suspect email in Office 365, Scan a mail, Microsoft Scan for hameçon, demandez à Microsoft d’analyser les courriers indésirables, envoyer courrier électronique, envoi de messages électroniques, courrier électronique Dodgy, courrier indésirable, suspect, non approuvé, signalement des courriers indésirables à Microsoft, signalez les courriers de hameçonnage à Microsoft, signalez les courriers électroniques malveillants à Microsoft, signalez les courriers électroniques frauduleux à Microsoft, signalez les courriers indésirables à Microsoft courrier électronique dans la boîte de réception Office 365, virus dans la messagerie Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable et d’autres messages, URL et fichiers potentiellement dangereux de votre client Office 365 à Microsoft pour analyse.
-ms.openlocfilehash: 3d53c8270e84cd6f6298b9b39cc7e37262aed7b0
-ms.sourcegitcommit: 9c9044885eb9754ce69f2f08afdcc13c782ce2f9
+ms.openlocfilehash: 54cb42f8c02f2f41ad583d640a090509817911ee
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39915215"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808549"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Procédure d’envoi de courrier indésirable, hameçon, URL et fichiers suspects à Microsoft pour l’analyse Office 365
 
@@ -60,7 +60,7 @@ Pour envoyer du contenu à Microsoft, cliquez sur le bouton **nouvelle soumissio
 2. Cliquez sur le bouton **Envoyer** .
 
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Plan 2 de protection avancée contre les menaces Office 365](office-365-ti.md)
   

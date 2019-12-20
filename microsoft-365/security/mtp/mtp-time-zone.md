@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6d2ae81324e7448b9d6a339e1d2bb6a75ef580ae
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 66546b689428b5663c71c82b72ec6cd008458c0d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911054"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808559"
 ---
 # <a name="set-the-time-zone-for-microsoft-threat-protection"></a>Définition du fuseau horaire pour la protection Microsoft contre les menaces
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La protection Microsoft contre les menaces peut afficher les informations de date et d’heure dans votre fuseau horaire local ou en heure UTC. Le fuseau horaire sélectionné s’applique à toutes les informations de date et d’heure indiquées dans les fonctionnalités suivantes du centre de sécurité Microsoft 365 :
 - Incidents

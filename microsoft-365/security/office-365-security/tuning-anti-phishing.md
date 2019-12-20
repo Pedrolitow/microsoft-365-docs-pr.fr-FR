@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception des messages de hameçonnage, ainsi que la marche à suivre pour éviter d’autres messages de phishing à l’avenir.
-ms.openlocfilehash: bbcd57f649485cb753e3917a073ffec2b94cba24
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 03f4df5f552dab48283f18ec367ee6979afd9c89
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080406"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823846"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Réglage de la protection anti-hameçonnage dans Office 365
 
@@ -23,7 +23,7 @@ Bien qu’Office 365 offre une variété de fonctionnalités anti-hameçonnage q
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>Tout d’abord : traitez les comptes compromis et assurez-vous de bloquer les messages de hameçonnage
 
-Si le compte d’un destinataire a été compromis suite à un message de hameçonnage, suivez les étapes décrites dans la [réponse à un compte de messagerie compromis dans Office 365](../../compliance/responding-to-a-compromised-email-account.md).
+Si le compte d’un destinataire a été compromis suite à un message de hameçonnage, suivez les étapes décrites dans la [réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md).
 
 Si votre abonnement inclut la protection avancée contre les menaces (ATP), vous pouvez utiliser [Office 365 Threat Intelligence](office-365-ti.md) pour identifier les autres utilisateurs qui ont également reçu le message de hameçonnage. Vous disposez d’options supplémentaires pour bloquer les messages de hameçonnage :
 
@@ -71,7 +71,7 @@ Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-ant
 
   - [Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md)
 
-  - [Utiliser DMARC pour valider les messages électroniques dans Office 365](use-dmarc-to-validate-email.md)
+  - [Utiliser DMARC pour valider les e-mails dans Office 365](use-dmarc-to-validate-email.md)
 
 - Dans la mesure du possible, nous vous recommandons de livrer le courrier électronique pour votre domaine directement à Office 365. En d’autres termes, pointez l’enregistrement MX de votre domaine Office 365 vers Office 365. Exchange Online Protection (EOP) est capable de fournir la meilleure protection aux utilisateurs de votre nuage lorsque leur courrier est remis directement à Office 365. Si vous devez utiliser un système d’hygiène de messagerie tiers devant l’environnement EOP, vérifiez que vous avez suivi les conseils [ici](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud).
 

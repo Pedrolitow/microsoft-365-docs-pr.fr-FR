@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9f6a4aa68826133bee0437116b2fbf3fde4e7e00
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 9368185fff037b8c3c2f5b70a178f2485fda3736
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911023"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808719"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La table `EmailAttachmentInfo` dans le schéma de [repérage avancé](advanced-hunting-overview.md) contient des informations sur les pièces jointes des e-mails traités par Office 365 - Protection avancée contre les menaces. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
@@ -35,7 +35,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
-| `EventTime` | DateHeure | Date et heure d’enregistrement de l’événement |
+| `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `AttachmentId` | string | Identificateur de pièces jointes uniques à un e-mail |
 | `NetworkMessageId` | string | Identificateur unique d’e-mail, généré par Office 365 |
 | `SenderFromAddress` | string | Adresse e-mail de l’expéditeur dans l’en-tête DE, visible par les destinataires de l’e-mail sur leurs clients de messagerie |
