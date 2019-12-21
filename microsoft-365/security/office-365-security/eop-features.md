@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
-ms.openlocfilehash: 06f2de012963333f1040861dd8268b6b088f627c
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
+ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970590"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "40840173"
 ---
 # <a name="eop-features"></a>Fonctionnalités EOP
 
@@ -93,5 +93,5 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 |Support technique par téléphone ou par Internet 24 heures sur 24, 7 jours sur 7|Pour plus d'informations sur les options de support et d'aide EOP, voir [Aide et support pour EOP](help-and-support-for-eop.md).|
 |**Autres fonctionnalités**||
 |Réseau de serveurs mondial géo-redondant|EOP s'exécute sur un réseau mondial de centres de données conçus pour contribuer à offrir une disponibilité optimale. Pour plus d'informations, consultez la section « Centres de données EOP » dans [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md).  |
-|Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages différés restent dans nos files d'attente pendant 2 jours. Les nouvelles tentatives d'envoi de message sont basées sur l'erreur que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.md).  |
+|Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages en différé restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
 |Chiffrement de messages Office 365 disponible sous forme de service de module complémentaire|Pour plus d'informations, voir [Chiffrement dans Office 365](https://docs.microsoft.com/office365/securitycompliance/encryption).|
