@@ -2,22 +2,23 @@
 title: Demandes des personnes concernées du Support Microsoft et des services professionnels concernant le RGPD et le CCPA
 description: Comment le Support Microsoft et les services professionnels gèrent les demandes des personnes concernées concernant le RGPD et le CCPA.
 keywords: Services professionnels, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
-author: robmazz
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: b54f3ceb056d182951ea7c2d8d21ffa2eeda2db3
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 60e567f5c5a0c63218b7e9d3aae19d127a1ae98e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268498"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806347"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées du Support Microsoft et des services professionnels concernant le RGPD et le CCPA
 
@@ -25,13 +26,13 @@ ms.locfileid: "39268498"
 
 Les services professionnels Microsoft sont constitués d’un groupe divers d’architectes techniques, d’ingénieurs, de consultants et de professionnels du support qui se consacrent à remplir la mission de Microsoft consistant à donner aux clients les moyens d’être plus productifs. Notre équipe des services professionnels comprend plus de 21 000 consultants, conseillers numériques, agents de support, ingénieurs et autres commerciaux, opérant dans 191 pays et 46 langues différentes, gérant plusieurs millions d’engagements par mois et interagissant avec les clients et partenaires à l’aide d’outils locaux automatisés basés sur le téléphone, le web et la communauté. L’organisation apporte une grande expertise dans le portefeuille Microsoft, tirant parti d’un important réseau de partenaires, de communautés techniques, d’outils, de diagnostics et de canaux qui nous connectent à nos clients professionnels.
 
-Suivez ce lien pour en savoir plus sur les services professionnels Microsoft, ou accédez à la rubrique consacrée à ceux-ci dans le Centre de gestion de la confidentialité (<https://www.microsoft.com/trustcenter/professional-services>). Le Support Microsoft et les Services professionnels Microsoft prennent au sérieux les obligations imposées par le Règlement général sur la protection des données (RGPD). Les informations contenues dans ce document sont conçues pour répondre aux questions des clients sur la prise en charge de Microsoft et les offres conseils qui répondront aux clients et les aideront en réponse aux obligations de données objet (DSR) sous RGPD.
+Suivez ce lien pour en savoir plus sur les services professionnels Microsoft, ou accédez à la rubrique consacrée à ceux-ci dans la [page web de la documentation sur la sécurité des services professionnels de Microsoft](https://www.microsoft.com/en-us/professionalservices/overview). Le Support Microsoft et les Services professionnels Microsoft prennent au sérieux les obligations imposées par le Règlement général sur la protection des données (RGPD). Les informations contenues dans ce document sont conçues pour répondre aux questions des clients sur la prise en charge de Microsoft et les offres conseils qui répondront aux clients et les aideront en réponse aux obligations de données objet (DSR) sous RGPD.
 
 ### <a name="introduction-to-dsrs"></a>Présentation des DPC 
 
 Le RGPD de l’UE permet aux utilisateurs (désignés dans le règlement comme étant les *personnes concernées par le traitement des données*) de gérer les données personnelles collectées par un employeur ou tout autre type d’agence ou organisation (l’*entité de contrôle des données* ou l’*entité de contrôle* uniquement). Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies de ces dernières, les demandes de changements, la restriction de leur traitement et leur suppression. Toute demande formelle effectuée par une personne concernée par le traitement des données à une entité de contrôle au sujet de la prise de mesure sur ses données personnelles est appelée *demande de personne concernée* ou DPC. En outre, elle oblige les entreprises travaillant pour le compte d’une entité de contrôle (appelé *responsable du traitement des données* ou tout simplement *responsable du traitement*) d’assister l’entité de contrôle qui répond aux DPC de façon raisonnable.
 
-De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des obligations d’information, des protections contre la discrimination envers les personnes qui font le choix de faire usage de leurs droits, et la possibilité d’opter pour ou contre pour certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
+De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
 Ce guide décrit comment rechercher des données personnelles résidant dans des systèmes informatiques Microsoft et ayant pu être collectées pour fournir des offres du support et d’autres services professionnels. Il décrit également comment accéder à ces données et les exploiter.
 
@@ -81,7 +82,7 @@ Les données personnelles du contact client font partie des relations profession
 
 Les clients doivent comprendre que la DPC ne couvre que les données personnelles du contact client et qu’aucune modification ni suppression n’est effectuée sur des données du client envoyées dans le cadre d’engagements (par exemple, transcriptions, descriptions de cas, fichiers, produit de travail), car Microsoft est le responsable du traitement des données.  En outre, pour conserver l’enregistrement de l’historique des engagements, aucune modification ne sera effectuée sur des engagements fermés (y compris l’enregistrement indiquant la personne ayant ouvert un engagement).
 
-Lors de la réception d’une requête provenant d’un contact client concernant une DPC, le personnel Microsoft enverra un contact client au [Support de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=321116). Il s’agit du mécanisme d’entrée principal de Microsoft pour les requêtes et les réclamations en matière de confidentialité. Lors de la réception d’une requête, l’équipe de confidentialité Microsoft identifiera qu’elle fait partie d’un compte commercial ou organisationnel et y répondra en conséquence.
+Lors de la réception d’une requête provenant d’un contact client concernant une DPC, le personnel Microsoft enverra un contact client au [Centre de réponse de confidentialité](https://go.microsoft.com/fwlink/?LinkId=321116). Il s’agit du mécanisme d’entrée principal de Microsoft pour les requêtes et les réclamations en matière de confidentialité. Lors de la réception d’une requête, le Centre de réponse de confidentialité identifiera qu’elle fait partie d’un compte commercial ou organisationnel et y répondra en conséquence.
 
 Pour conserver la continuité des opérations du client, Microsoft ne traitera pas non plus de DPC associée à un engagement tant qu’un contact de remplacement n’aura pas été confirmé. Lors de la confirmation d’un nouveau contact, Microsoft remplacera l’ancien contact par le nouveau dans les engagements ouverts.
 
@@ -117,7 +118,7 @@ La première étape pour obtenir de l’aide de Microsoft en répondant à un DP
 
 Une fois que le client trouve les données, il peut effectuer l’action spécifique pour satisfaire la demande provenant de la personne concernée. Le type d’action que le client tente d’effectuer déterminera le niveau de découverte dans lequel il doit s’engager.
 
-Lorsque Microsoft aide un client à résoudre une DPC, il s’agit d’une fonction d’entreprise, et la demande est effectuée via votre canal de support habituel et non via une demande auprès de l’équipe de confidentialité de Microsoft.
+Lorsque Microsoft aide un client à résoudre une DPC, il s’agit d’une fonction d’entreprise, et la demande est effectuée via votre canal de support habituel et non via une demande auprès du centre de réponse de confidentialité.
 
 Lorsqu’il découvre les données pertinentes et obtient l’assistance de Microsoft, un client dispose de plusieurs options pour résoudre la DPC :
 
@@ -166,12 +167,11 @@ Voici quelques points importants à comprendre sur le fonctionnement de la suppr
 
 Chez Microsoft, toutes les données disposent d’une politique de rétention et de suppression qui leur est appliquée et qui varie selon les risques et d’autres facteurs.
 
-Les clients qui demandent la suppression des données personnelles d’une personne concernée par le traitement des données de façon universelle sur les systèmes du support peuvent le faire via votre TAM ou en remplissant une demande de support (SR - Support Request) dans SMC ou un système équivalent. Vous *devez* indiquer qu’il s’agit d’une demande d’assistance concernant une DPC en vertu du RGPD.
+Les clients qui demandent la suppression des données personnelles d’une personne concernée par le traitement des données de façon universelle sur les systèmes du support peuvent le faire via votre TAM ou en remplissant une demande de support (SR : Support Request) dans SMC ou un système équivalent. Vous *devez* indiquer qu’il s’agit d’une demande d’assistance concernant une DPC en vertu du RGPD.
 
 *Option A — DPC support technique chez Microsoft*. Pour un système transversal DPC, le client doit fournir les données personnelles dont Microsoft a besoin pour identifier les données requises (par exemple, adresse de messagerie, numéro de téléphone). Microsoft ne mettra pas en corrélation ou ne recherchera pas les enregistrements et effectuera uniquement des recherches directement sur les identificateurs fournis par le client. Lorsque des données sont trouvées, Microsoft supprime tous les engagements et toutes les données associées.
 
-> [!IMPORTANT]
-> Remarque importante : * * cela peut entraîner la perte d’enregistrements historiques importants pour l’organisation du client.
+> Remarque importante : cela peut entraîner la perte d’enregistrements historiques importants pour l’organisation du client.
 
 *Option B : engagements de client spécifiques*. Pour les engagements spécifiques que le client a identifiés et qu’il souhaite supprimer, ne supprimez pas les tickets de SMC. Ainsi, les données personnelles restent dans les journaux et les systèmes en aval, qui ne peuvent pas être supprimés dans le délai nécessaire. Au lieu de cela, identifiez le ticket ou les données personnelles dans le ticket qui doit être supprimé, et contactez le support Microsoft pour vous aider à supprimer ces données.
 
@@ -200,7 +200,7 @@ Il soupçonne également qu’il a été impliqué dans une conversation avec de
 
 Il sait également que les données personnelles de Jane se trouvent dans la base de données SQL. Étant donné que la machine virtuelle SQL a été déplacée dans DTM il y a moins de 90 jours, il demande séparément à son responsable technique de compte de l’aider à supprimer immédiatement la base de données de DTM.
 
-Enfin, étant donné qu’il sait que des données ont pu être supprimées du fichier DTM pendant le support, il demande à Microsoft d’effectuer une vérification au sein des systèmes informatiques à la recherche des données personnelles de Jane dans la base de données SQL.
+Enfin, étant donné qu’il sait que des données ont pu être supprimées du fichier DTM tout en assurant la prise en charge, il demande à Microsoft d’effectuer une vérification au sein des systèmes informatiques à la recherche des données personnelles de Jane dans la base de données SQL.
 
 Le support Microsoft effectue toutes ces suppressions et, en fonction de la demande du client, le responsable technique de compte lui fournit un document attestant que les données requises ont été supprimées.
 
@@ -212,7 +212,7 @@ Le support Microsoft effectue toutes ces suppressions et, en fonction de la dema
 
 Pour les engagements de Microsoft Consulting Services où l’Addendum de protection des données des services professionnels de Microsoft (<https://aka.ms/professionalservicesdpa>) s’applique.
 
-Microsoft est le contrôleur des données du contact client qui travaille avec l’équipe de l’engagement. Ces personnes doivent contacter le [Support de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=321116) pour respecter les droits de personne concernée.
+Microsoft est le contrôleur des données du contact client qui travaille avec l’équipe de l’engagement. Ces personnes doivent contacter le [Centre de réponse de confidentialité](https://go.microsoft.com/fwlink/?LinkId=321116) pour respecter les droits de personne concernée.
 
 Microsoft est le responsable du traitement des données pour une DPC se trouvant dans des données fournies pendant un engagement de conseil. Le client doit contacter le gestionnaire de l’engagement pour mettre en place un plan permettant de répondre à une DPC en fonction des données collectées puis du type spécifique de services de conseil fournis. Selon que votre demande constitue un niveau d’effort généralement vu dans un engagement de Microsoft Consulting Services, une tâche supplémentaire peut être requise. Par ailleurs, les données personnelles seront supprimées après chaque engagement de conseil dans un délai qui dépendra du type d’engagement de conseil. Le client peut demander de supprimer des données avant le délai établi et demander une attestation de suppression.
 
@@ -230,4 +230,4 @@ Si vous devez supprimer un compte d’utilisateur Office 365 en réponse à une
 
 ## <a name="other-consulting-services"></a>Autres services de conseil
 
-Si un client reçoit d’autres services professionnels via Microsoft, il doit collaborer avec l’équipe de l’engagement pour respecter toutes les exigences du RGPD. Si l’équipe de l’engagement n’est pas en mesure de fournir des instructions claires sur l’exécution d’une DPC en vertu du RGPD, les clients peuvent contacter le [Support de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=321116) pour obtenir de l’aide.
+Si un client reçoit d’autres services professionnels via Microsoft, il doit collaborer avec l’équipe de l’engagement pour respecter toutes les exigences du RGPD. Si l’équipe de l’engagement n’est pas en mesure de fournir des instructions claires sur l’exécution d’une DPC en vertu du RGPD, les clients peuvent contacter le [Centre de réponse de confidentialité](https://go.microsoft.com/fwlink/?LinkId=321116) pour obtenir de l’aide.
