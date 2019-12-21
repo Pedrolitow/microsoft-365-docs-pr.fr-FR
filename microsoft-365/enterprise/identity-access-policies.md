@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
-ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
+ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37590498"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37746550"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
@@ -162,7 +162,7 @@ Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel
 ## <a name="high-risk-users-must-change-password"></a>Les utilisateurs à haut risque doivent changer leur mot de passe
 Pour vous assurer que tous les comptes compromis par les utilisateurs à haut risque sont obligés d’effectuer une modification de mot de passe lors de la connexion, vous devez appliquer la stratégie suivante.
 
-Connectez-vous au [portail Microsoft Azure (http://portal.azure.com)](http://portal.azure.com/) avec vos informations d’identification d’administrateur, puis accédez à **Azure AD Identity Protection > Stratégie d’utilisateur à risque**.
+Connectez-vous au [portail Microsoft Azure (https://portal.azure.com)](https://portal.azure.com/) avec vos informations d’identification d’administrateur, puis accédez à **Azure AD Identity Protection > Stratégie d’utilisateur à risque**.
 
 **Affectations**
 
@@ -176,8 +176,8 @@ Connectez-vous au [portail Microsoft Azure (http://portal.azure.com)](http://por
 
 | Type | Propriétés | Valeurs                  | Remarques |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | Autoriser l'accès            | Vrai  |
-|      | Access     | Exiger le changement du mot de passe | True  |
+|      | Accès     | Autoriser l'accès            | Vrai  |
+|      | Accès     | Exiger le changement du mot de passe | True  |
 
 **Révision :** non applicable
 
@@ -200,7 +200,7 @@ La liste d’applications recommandée inclut les éléments suivants :
 - PowerPoint
 - Excel
 - Word
-- Microsoft Teams
+- Microsoft Teams
 - Microsoft SharePoint
 - Visionneuse Microsoft Visio
 - OneDrive
@@ -225,7 +225,7 @@ Les tableaux suivants décrivent les paramètres recommandés :
 |Accès|Exiger un code confidentiel d’accès|Oui||
 ||Sélectionner un type|Numérique||
 ||Autoriser un code PIN simple|Non||
-||Longueur du code PIN|6.x||
+||Longueur du code PIN|6 ||
 ||Autoriser une empreinte digitale à la place du code confidentiel|Oui||
 ||Désactiver le code confidentiel de l’application lorsque le code confidentiel de l’appareil est géré|Oui||
 ||Exiger des informations d’identification d’entreprise pour l’accès|Non||
@@ -280,7 +280,7 @@ Créez une stratégie pour chaque plateforme :
 - Windows 8,1 et versions ultérieures
 - Windows 10 et versions ultérieures
 
-Pour créer des stratégies de conformité des appareils, connectez-vous au portail Microsoft Azure avec vos informations d’identification d’administrateur, puis accédez à **Intune > la conformité des appareils**. Sélectionnez **créer une stratégie**.
+Pour créer des stratégies de conformité des appareils, connectez-vous au portail Microsoft Azure avec vos informations d’identification d’administrateur, puis accédez à **Intune > la conformité des appareils**. Sélectionnez **Créer**.
 
 Les paramètres suivants sont recommandés pour Windows 10.
 
@@ -305,11 +305,11 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Mot de passe|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
+|Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
 ||Mots de passe simples|Bloc||
 ||Type de mot de passe|Valeur par défaut du périphérique||
-||Longueur minimale du mot de passe|6.x||
-||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|0,15|Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
+||Longueur minimale du mot de passe|6 ||
+||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
 ||Expiration du mot de passe (jours)|41||
 ||Nombre de mots de passe précédents pour empêcher la réutilisation|disque||
 ||Exiger un mot de passe lorsque l’appareil revient de l’état inactif (mobile et holographique)|Require (Rendre obligatoire)|Disponible pour Windows 10 et versions ultérieures|
@@ -322,7 +322,7 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 ||Mise à jour de la signature du logiciel anti-programme malveillant Windows Defender|Require (Rendre obligatoire)||
 ||Protection en temps réel|Require (Rendre obligatoire)|Prise en charge uniquement pour les ordinateurs de bureau Windows 10|
 
-**Microsoft Defender ATP**
+**Microsoft Defender - PACM**
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|

@@ -3,7 +3,7 @@ title: Site SharePoint pour les biens numériques hautement confidentiels de Con
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a mis en œuvre un site SharePoint pour les données hautement réglementées afin de faciliter la collaboration entre ses équipes de recherche.'
-ms.openlocfilehash: ce813407c0f4c6f7b68aa997bf5e54b86a24ff2d
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: caad341c6a44b3270f2bdecd4ab4d8378c11db2c
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672710"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38699710"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Site SharePoint pour les biens numériques hautement confidentiels de Contoso Corporation
 
@@ -55,7 +55,7 @@ Ensuite, ils ont créé une nouvelle stratégie DLP Office 365 nommée **Researc
 
 Pour plus d’informations sur la configuration, consultez la rubrique [protéger les fichiers SharePoint avec les étiquettes de rétention et DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
-## <a name="step-4-created-an-office-365-sensitivity-sublabel-for-the-site"></a>Étape 4 : création d’une sous-étiquette de confidentialité Office 365 pour le site
+## <a name="step-3-created-an-office-365-sensitivity-sublabel-for-the-site"></a>Étape 3 : création d’une sous-étiquette de confidentialité Office 365 pour le site
 
 Les administrateurs contoso ont créé une nouvelle sous-étiquette de confidentialité Office 365 nommée « **teams** » de l’étiquette **hautement confidentiel** qui :
 
@@ -78,11 +78,11 @@ Voici un exemple de fichier stocké sur le site de **recherche** avec la sous-é
 ![La configuration obtenue du site d’équipe de recherche pour les ressources hautement confidentielles](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
-## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Étape 5 : migration des données de recherche SharePoint locales
+## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a>Étape 4 : migration des données de recherche SharePoint locales
 
 Les administrateurs de contoso ont déplacé tous les fichiers de recherche sur site du site SharePoint Server 2016 local vers des dossiers dans le nouveau site SharePoint de **recherche** .
 
-## <a name="step-6-trained-their-researchers"></a>Étape 6 : formation de leurs chercheurs
+## <a name="step-5-trained-their-researchers"></a>Étape 5 : formation de leurs chercheurs
 
 Le personnel de sécurité de Contoso a formé les membres du groupe **Research** Office 365 dans un cours obligatoire qui les a exécutées par les utilisateurs :
 

@@ -1,24 +1,24 @@
 ---
-title: Langues et régions prises en charge
+title: Régions et langues prises en charge
 description: Régions et langues prises en charge par le bureau géré Microsoft
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bdd11728b6b3b5ebaf0eea507906e4fc31adb7b5
-ms.sourcegitcommit: d9350b6465d1404d32bcba8f5fc5a203085e6b82
+ms.openlocfilehash: b517ab49681b7e9251cd5b577c9522db32aea4cb
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786729"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37422531"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Régions et langues prises en charge par Microsoft Managed Desktop
 
 Cette rubrique fournit des détails sur les régions et les langues prises en charge par le bureau géré Microsoft. 
 
-- **Régions:** États-Unis, Canada (hors Québec), Royaume-Uni, Australie et Nouvelle-Zélande
-- **Langues:** L’anglais est la seule langue prise en charge actuellement disponible pour les utilisateurs sur les appareils gérés. Ceci s’applique à la fois aux options de support [administratif](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) et de [support utilisateur final](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) . 
+- **Régions :** États-Unis, Canada (hors Québec), Royaume-Uni, Belgique, Luxembourg, Pays-Bas, Australie et Nouvelle-Zélande
+- **Langues :** L’anglais est la seule langue prise en charge actuellement disponible pour les utilisateurs sur les appareils gérés. Ceci s’applique à la fois aux options de support [administratif](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) et de [support utilisateur final](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) . 
 
 Toutefois, les clients peuvent toujours utiliser des appareils gérés en dehors des régions mentionnées ci-dessus sans interrompre le service de bureau géré Microsoft. Par exemple, un employé basé au Royaume-Uni peut travailler en toute sécurité et recevoir des mises à jour sur son appareil géré tout en voyageant en Asie, en Europe ou en Amérique du Sud.
 
