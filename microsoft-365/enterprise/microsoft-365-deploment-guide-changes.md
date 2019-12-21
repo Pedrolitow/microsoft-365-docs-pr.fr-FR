@@ -1,9 +1,9 @@
 ---
-title: Modifications du contenu du déploiement de Microsoft 365 Entreprise
+title: Modifications du contenu de déploiement de Microsoft 365 Entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 12/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Consultez le nouveau contenu et les modifications apportées au contenu du Guide de déploiement de Microsoft 365.
-ms.openlocfilehash: bf7cda762d2ac7a8fd57135b985d893ee03c0646
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 9f5b586defa460648c1d3a7b5972124497d0f53f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831825"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801559"
 ---
-# <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Modifications du contenu du déploiement de Microsoft 365 Entreprise
+# <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Modifications du contenu de déploiement de Microsoft 365 Entreprise
 
 ## <a name="december-2019"></a>Décembre 2019
 
@@ -31,14 +31,13 @@ ms.locfileid: "39831825"
 ### <a name="updates-and-enhancements"></a>Mises à jour et améliorations
 
 - [Sécuriser les sites et fichiers SharePoint Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files) pour l’utilisation d’étiquettes de confidentialité
--  [Configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md) et [la configuration de base d’entreprise simulée](simulated-ent-base-configuration-microsoft-365-enterprise.md) pour les nouvelles procédures d’abonnement d’évaluation
-- 
+-  Actualiser l’ensemble des [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md) 
 
 ## <a name="november-2019"></a>Novembre 2019
 
 ### <a name="new-content"></a>Nouveau contenu 
 
-- [Migration de Microsoft 365 Business vers Microsoft 365 Entreprise E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [Migration de Microsoft 365 Entreprise vers Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Faire équipe pour un projet top secret de Contoso Corporation](contoso-team-for-top-secret-project.md)
 
@@ -93,9 +92,9 @@ ms.locfileid: "39831825"
  
   [![Scénario des sites SharePoint pour les données hautement réglementées](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)
 
-- [Affiche Microsoft 365 Entreprise](microsoft-365-overview.md#get-the-big-picture) pour les nouveaux scénarios 
+- [Affiche de l’entreprise Microsoft 365](microsoft-365-overview.md#get-the-big-picture) pour les nouveaux scénarios 
 
-  [![Image de l’affiche Microsoft 365 Entreprise](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+  [![Image de l’affiche de l’entreprise Microsoft 365 Entreprise](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## <a name="september-2019"></a>Septembre 2019
 
@@ -118,11 +117,11 @@ ms.locfileid: "39831825"
 
 ### <a name="new-content"></a>Nouveau contenu 
 
-- [Affiche Transition de votre organisation vers Microsoft 365 Entreprise](migration-microsoft-365-enterprise-workload.md#transition-your-entire-organization)
+- [Affiche pour la transition de votre organisation vers Microsoft 365 pour entreprise](migration-microsoft-365-enterprise-workload.md#transition-your-entire-organization)
 
    [![Image de l’affiche pour la transition vers Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
  
-- [Affiche Infrastructure d’identités pour Microsoft 365 Entreprise](identity-infrastructure.md)
+- [Affiche Infrastructure d’identités pour Microsoft 365 pour entreprise](identity-infrastructure.md)
 
   [![Affiche Infrastructure d’identités](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)
 
@@ -138,15 +137,15 @@ ms.locfileid: "39831825"
 
 ### <a name="updates-and-enhancements"></a>Mises à jour et améliorations
 
-- [Affiche Microsoft 365 Entreprise](microsoft-365-overview.md#get-the-big-picture) pour les nouveaux scénarios de productivité
+- [Affiche Microsoft 365 pour entreprise](microsoft-365-overview.md#get-the-big-picture) pour les nouveaux scénarios de productivité
 
-   [![Image de l’affiche Microsoft 365 Entreprise](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+   [![Image de l’affiche de l’entreprise Microsoft 365 Entreprise](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## <a name="july-2019"></a>Juillet 2019
 
 ### <a name="new-content"></a>Nouveau contenu
 
-- Classeur Excel pour l’[article Microsoft 365 Entreprise pour les organisations tierces](deploy-foundation-infrastructure-non-enterprises.md#onboarding)
+- Classeur Excel pour l’[article Microsoft 365 pour entreprise pour les organisations tierces](deploy-foundation-infrastructure-non-enterprises.md#onboarding)
 
 ## <a name="may-2019"></a>Mai 2019
 
@@ -154,12 +153,12 @@ ms.locfileid: "39831825"
 
 - [Affiche Infrastructure Foundation](deploy-foundation-infrastructure.md#at-a-glance)
 
-  [![Image de l’affiche de l’Infrastructure de base de Microsoft 365 Entreprise](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+  [![Image de l’affiche de l’Infrastructure de base de Microsoft 365 pour entreprise](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
   Annonces : [LinkedIn](https://www.linkedin.com/pulse/how-can-i-get-big-picture-microsoft-365-enterprise-joe-davies/)
 
  
-- [Article Microsoft 365 Entreprise pour les organisations tierces](deploy-foundation-infrastructure-non-enterprises.md)
+- [Article Microsoft 365 pour entreprise pour les organisations tierces](deploy-foundation-infrastructure-non-enterprises.md)
 
   [![Synthèse de l’infrastructure si votre organisation utilise une identité réservée au cloud](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)](deploy-foundation-infrastructure-non-enterprises.md)
 

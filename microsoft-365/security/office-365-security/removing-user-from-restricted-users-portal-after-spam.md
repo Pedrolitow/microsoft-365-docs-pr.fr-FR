@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: 7d900e154e60b49b3fcfe63552b6ad3288adfc82
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 93cc7fb4af878457f7b9570a90d6950e7488d0ac
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871740"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808029"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
 
@@ -33,19 +33,19 @@ Si un utilisateur envoie continuellement des courriers électroniques qui sont c
 <a name="sectionSection0"> </a>
 
 Durée d’exécution estimée : 5 minutes
-  
+
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Anti-spam » dans la rubrique [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions).
 
-La procédure suivante peut également être exécutée via le service PowerShell à distance. Utilisez l’applet de commande Get-BlockedSenderAddress pour obtenir la liste des utilisateurs avec accès restreint et Remove-BlockedSenderAddress pour supprimer la restriction. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+La procédure suivante peut également être exécutée via le service PowerShell à distance. Utilisez l’applet de commande Get-BlockedSenderAddress pour obtenir la liste des utilisateurs avec accès restreint et Remove-BlockedSenderAddress pour supprimer la restriction. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Supprimer les restrictions pour un compte de courrier Office 365 bloqué
 
 Vous devez effectuer cette tâche dans le centre de sécurité & conformité (SCC). Pour plus d’informations sur SCC,[accédez au centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md). Vous devez être dans le groupe de rôles **Gestion de l’organisation** ou **administrateur de la sécurité** pour effectuer ces fonctions. Pour plus d’informations sur les groupes de rôles SCC,[accédez au centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
 1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général Office 365, connectez-vous au centre de sécurité et conformité Office 365, puis dans la liste à gauche, développez **Gestion des menaces**, choisir** révision**, puis sélectionnez **utilisateurs avec accès restreint**.
-    
+
     > [!TIP]
-    > Pour accéder directement à la page **utilisateurs avec accès restreint** (autrefois appelée Centre d’actions) dans le centre de conformité&amp; et de sécurité, utilisez l’URL suivante: > [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > Pour accéder directement à la page **Utilisateurs avec accès restreint** (autrefois appelée Centre d’actions) dans le centre de conformité&amp; et de sécurité, utilisez l’URL suivante : [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
 2. Cette page contient la liste des utilisateurs qui ont été bloqués pour l’envoi de messages électroniques.  Recherchez l’utilisateur dont vous voulez supprimer les restrictions, puis sélectionnez **débloquer**.
 
@@ -56,7 +56,7 @@ Vous devez effectuer cette tâche dans le centre de sécurité & conformité (SC
 5. Cliquez sur **Oui** pour confirmer la modification.
 
     > [!NOTE]
-    > L’opération peut prendre jusqu’à 30 minutes avant la suppression des restrictions. 
+    > L’opération peut prendre jusqu’à 30 minutes avant la suppression des restrictions.
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>Vérifier que les administrateurs sont avertis lorsque cela se produit
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: c3d3c8047e6814a56ec6470a9166fd0c13eb6839
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 0083eb91b49561c858cacc94a148e97c7463b754
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718633"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801359"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
@@ -48,7 +48,7 @@ Le laboratoire offre un environnement de laboratoire virtuel automatiquement con
 
 ET le laboratoire est conçu pour être connecté aux versions d’évaluation pour : 
 
-  - Microsoft 365 Entreprise E5
+  - Microsoft 365 E5
 
 Ou
   - Office 365 Entreprise E5

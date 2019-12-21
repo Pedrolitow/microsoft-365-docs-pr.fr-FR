@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous pouvez ajouter des comptes d’utilisateurs et des groupes directement dans le Cloud ou par synchronisation avec votre répertoire local.
-ms.openlocfilehash: 559ea58a5fcee5860a797893230b587adc33a17d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 04564d86031642276e964f3a70fa2729f6b16c00
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370221"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801839"
 ---
 # <a name="step-4-add-your-user-accounts"></a>Étape 4 : Ajouter vos comptes d’utilisateurs
 
@@ -82,7 +82,7 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](ide
 <a name="identity-sync-health"></a>
 ## <a name="monitor-synchronization-health"></a>Surveiller l’état de la synchronisation
 
-*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
+*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365*
 
 Dans cette section, vous allez installer un agent d’intégrité Azure AD Connect sur chacun de vos contrôleurs de domaine AD DS pour surveiller votre infrastructure d’identité et les services de synchronisation fournis par Azure AD Connect. Les informations de surveillance sont disponibles sur un portail Azure AD Connect Health, où vous pouvez afficher les alertes, surveiller les performances, analyser les utilisations, etc.
 

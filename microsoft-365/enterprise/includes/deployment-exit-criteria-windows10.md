@@ -71,22 +71,22 @@ Si nécessaire, l’[Étape 4](../windows10-enable-windows-analytics.md) peut vo
 <a name="crit-windows10-step5a"></a>
 ### <a name="required-you-are-using-windows-defender-antivirus-or-your-own-antimalware-solution"></a>Obligatoire : utilisation de l’antivirus Windows Defender ou de votre propre solution anti-programme malveillant
 
-Vous avez déployé l’antivirus Windows Defender ou votre propre solution antivirus pour protéger vos périphériques exécutant Windows 10 Entreprise contre les programmes malveillants. Si vous avez déployé l’antivirus Windows Defender, vous avez implémenté une méthode de création de rapports, telle que System Center Configuration Manager ou Microsoft Intune, pour surveiller l’activité et les événements antivirus.
+Vous avez déployé l’Antivirus Windows Defender ou une autre solution antivirus pour protéger les périphériques exécutant Windows 10 Entreprise contre des programmes malveillants. Si Windows Defender a été déployé, vous avez implémenté une méthode d’établissement de rapports, telle que Microsoft Endpoint Configuration Manager ou Microsoft Intune, pour surveiller l’activité et les événements antivirus.
 
 Si nécessaire, l’[Étape 5](../windows10-enable-security-features.md#windows10-sec-av) peut vous aider à répondre à cette exigence.
 
 <a name="crit-windows10-step5b"></a>
 ### <a name="required-you-are-using-windows-defender-exploit-guard"></a>Obligatoire : utilisation de Windows Defender Exploit Guard
 
-Vous avez déployé Windows Defender Exploit Guard pour protéger vos périphériques exécutant Windows 10 Entreprise contre les intrusions et avez implémenté une méthode de création de rapports, telle que System Center Configuration Manager ou Microsoft Intune, pour surveiller les événements et l’activité liés aux intrusions.
+Vous avez déployé Windows Defender Exploit Guard pour protéger les périphériques exécutant Windows 10 Entreprise contre des intrusions et avez implémenté une méthode de création de rapports, telle que Configuration Manager ou Microsoft Intune, pour surveiller les événements et l’activité liés aux intrusions.
 
 Si nécessaire, l’[Étape 5](../windows10-enable-security-features.md#windows10-sec-eg) peut vous aider à répondre à cette exigence.
 
 <a name="crit-windows10-step5c"></a>
-### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Obligatoire : utilisation de Windows Defender ATP (Protection avancée contre les menaces) pour Microsoft 365 Entreprise E5 uniquement
+### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-e5-only"></a>Obligatoire : vous utilisez Microsoft Defender – Protection avancée contre les menaces (Microsoft 365 E5 uniquement)
 
-Vous avez déployé Windows Defender ATP (Protection avancée contre les menaces) pour détecter, rechercher et traiter les menaces avancées contre votre réseau et vos appareils exécutant Windows 10 Entreprise. 
+Vous avez déployé Microsoft Defender - Protection avancée contre les menaces pour détecter, rechercher et traiter les menaces avancées contre votre réseau et vos appareils exécutant Windows 10 Entreprise. 
 
-Vous avez éventuellement intégré Windows Defender ATP à d’autres outils pour développer ses fonctionnalités.
+Vous avez éventuellement intégré Microsoft Defender - Protection avancée contre les menaces à d’autres outils pour développer ses fonctionnalités.
 
 Si nécessaire, l’[Étape 5](../windows10-enable-security-features.md#windows10-sec-atp) peut vous aider à répondre à cette exigence.

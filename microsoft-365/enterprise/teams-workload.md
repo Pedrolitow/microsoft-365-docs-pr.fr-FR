@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment déployer Microsoft Teams au sein de votre organisation.
-ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033599"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801239"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Déploiement de Microsoft Teams pour Microsoft 365 Entreprise
 
@@ -43,7 +43,7 @@ Pour vos premières fonctionnalités Teams, voir [Conversation, équipes, canaux
 Pour accéder à des fonctionnalités plus avancées de Teams, voir :
 
 - [Réunions et conférence](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
-- [Voix Cloud](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (nécessite Microsoft 365 Entreprise E5)
+- [Voix Cloud](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (nécessite Microsoft 365 E5)
 
 Pour surveiller l’utilisation de Teams dans votre organisation, voir :
 

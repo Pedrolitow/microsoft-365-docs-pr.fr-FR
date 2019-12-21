@@ -1,4 +1,4 @@
-Voir également les [Conditions préalables](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) pour consulter d’autre suggestions sur l’infrastructure d’identité.
+Voir également les [Conditions préalables](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites) pour consulter d’autre suggestions sur l’infrastructure d’identité.
 
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>Obligatoire : vos comptes d’administrateur général sont protégés 
@@ -14,7 +14,7 @@ Si nécessaire, l’[Étape 1](../identity-create-protect-global-admins.md#iden
 Suivez ces étapes pour vérifier que vous avez protégé vos comptes d’administrateur général :
 
 1. Exécutez la commande suivante Azure Active Directory PowerShell pour Graph à l'invite de commande PowerShell. Vous ne devez voir que la liste des comptes d’administrateur général dédiés.
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. Connectez-vous à Office 365 à l’aide de chacun des comptes de l’étape 1. Chaque connexion doit exiger l’authentification multifacteur Azure et la forme la plus forte d’authentification secondaire disponible dans votre organisation.
@@ -93,7 +93,7 @@ Si nécessaire, l’[Étape 3](../identity-secure-user-sign-ins.md#identity-mfa)
 5.  Supprimez le compte d’utilisateur test.
 
 <a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>Facultatif : Azure AD Identity Protection est activé pour vous protéger contre la compromission d’informations d’identification (Microsoft 365 Entreprise E5 uniquement)
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>Facultatif : Azure AD Identity Protection est activé pour vous protéger contre la compromission d’informations d’identification (Microsoft 365 E5 uniquement)
 
 Vous avez activé Azure AD Identity Protection pour :
 

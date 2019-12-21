@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous devez rendre vos mots de passe forts et gérables au sein de votre organisation.
-ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746510"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801739"
 ---
 # <a name="step-2-secure-your-passwords"></a>Étape 2 : Sécuriser vos mots de passe
 
@@ -27,7 +27,7 @@ ms.locfileid: "37746510"
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Éviter les mots de passe incorrects
 
-*Cette étape facultative s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
+*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365*
 
 Tous vos utilisateurs doivent utiliser le [guide des mots de passe Microsoft](https://www.microsoft.com/research/publication/password-guidance/) pour créer leurs mots de passe de compte d'utilisateur.
 
@@ -46,7 +46,7 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 <a name="identity-pw-reset"></a>
 ## <a name="simplify-password-resets"></a>Simplifiez les réinitialisations du mot de passe
 
-*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
+*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365*
 
 Dans cette section, vous autoriserez la réinitialisation de mot de passe en libre-service (SSPR) d’Azure AD pour permettre aux utilisateurs de réinitialiser ou de déverrouiller leurs mots de passe ou leurs comptes. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer l’écriture différée de mot de passe avant de pouvoir déployer la réinitialisation de mot de passe.
 
