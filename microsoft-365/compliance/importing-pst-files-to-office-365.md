@@ -3,7 +3,7 @@ title: Vue d’ensemble de l’importation de fichiers PST de votre organisation
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: overview
 f1_keywords:
@@ -16,29 +16,30 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Pour les administrateurs : Découvrez comment utiliser le Service d’importation dans le Centre de sécurité et de conformité pour importer en bloc des données de courrier (fichiers PST) vers des boîtes aux lettres d’utilisateurs dans Exchange Online. Cette rubrique regroupe des questions fréquemment posées et explique le fonctionnement du processus d’importation de fichiers PST.'
-ms.openlocfilehash: 948ba22ff88b72a3af92edb39bfdc28cfde4c385
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 309fde077cdf456ba33656c29f9e325aac1820e3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39218839"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807123"
 ---
-# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Vue d’ensemble de l’importation de fichiers PST de votre organisation dans Office 365
+# <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Vue d’ensemble de l’importation de fichiers PST de votre organisation dans Office 365
 
 > [!NOTE]
 > Cet article s’adresse aux administrateurs. Vous souhaitez importer des fichiers PST dans votre propre boîte aux lettres ? Consultez [Importer le courrier électronique, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
 
 Vous pouvez utiliser le Service d’importation dans le Centre de sécurité et de conformité pour importer rapidement en bloc des fichiers PST dans des boîtes aux lettres Exchange Online au sein de votre organisation Office 365. Vous pouvez importer des fichiers PST dans Office 365 de deux manières différentes :
-   
-- **Chargement réseau ** ![Chargement sur le Cloud](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) : chargez les fichiers PST via le réseau vers un emplacement de stockage temporaire Azure dans le Cloud Microsoft. Vous utilisez ensuite le Service d’importation Office 365 pour importer les données PST dans les boîtes aux lettres de votre organisation Office 365. 
 
-- **Expédition de disque** ![Disque dur](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) : copiez les fichiers PST sur un disque dur chiffré avec BitLocker, puis expédiez physiquement le lecteur à Microsoft. Lorsque Microsoft reçoit le disque dur, le personnel du centre de données charge les données vers un emplacement de stockage temporaire Azure dans le Cloud Microsoft. Vous utilisez ensuite le Service d’importation Office 365 pour importer les données dans les boîtes aux lettres de votre organisation Office 365.
+- **Chargement réseau ** ![Chargement sur le Cloud](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) : chargez les fichiers PST via le réseau vers un emplacement de stockage temporaire Azure dans le cloud Microsoft. Vous utilisez ensuite le Service d’importation Office 365 pour importer les données PST dans les boîtes aux lettres de votre organisation Office 365. 
+
+- **Expédition de disque** ![Disque dur](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) : copiez les fichiers PST sur un disque dur chiffré avec BitLocker, puis expédiez physiquement le lecteur à Microsoft. Lorsque Microsoft reçoit le disque dur, le personnel du centre de données charge les données vers un emplacement de stockage temporaire Azure dans le cloud Microsoft. Vous utilisez ensuite le Service d’importation Office 365 pour importer les données dans les boîtes aux lettres de votre organisation Office 365.
 
 ## <a name="step-by-step-instructions"></a>Instructions détaillées
   
 Pour obtenir des instructions détaillées sur l’importation en bloc des fichiers PST de votre organisation dans Office 365, consultez l’une des rubriques suivantes. 
-   
+
 - [Utiliser le chargement réseau pour importer des fichiers PST dans Office 365](use-network-upload-to-import-pst-files.md)
+
 - [Utiliser l’expédition de disque pour importer des fichiers PST dans Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
 
 ## <a name="how-importing-pst-files-works"></a>Comment fonctionne l’importation de fichiers PST
@@ -47,40 +48,40 @@ Voici une illustration et une description du processus d’importation de fichie
   
 ![Flux de travail du processus d’importation de fichiers PST](media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
   
-1. **Téléchargez les outils d’importation de fichiers PST et la clé pour l’emplacement de stockage Azure privé** : la première étape consiste à télécharger l’outil et la clé d’accès utilisés pour charger les fichiers PST ou les copier sur un disque dur. Vous les obtenez à partir de la page **Importer** dans le Centre de sécurité et de conformité. La clé vous donne (ou au personnel du centre de données Microsoft en cas d’expédition de disque) les autorisations nécessaires pour charger des fichiers PST dans un emplacement de stockage Azure privé et sécurisé. Cette clé d’accès rapide est propre à votre organisation et empêche l’accès non autorisé à vos fichiers PST après leur chargement dans le Cloud Microsoft. Veuillez noter que l’importation de fichiers PST dans Office 365 ne nécessite pas que votre organisation dispose d’un abonnement Azure séparé. 
+1. **Téléchargez les outils d’importation de fichiers PST et la clé pour l’emplacement de stockage Azure privé** : la première étape consiste à télécharger l’outil et la clé d’accès utilisés pour charger les fichiers PST ou les copier sur un disque dur. Vous les obtenez à partir de la page **Importer** dans le Centre de sécurité et de conformité. La clé vous donne (ou au personnel du centre de données Microsoft en cas d’expédition de disque) les autorisations nécessaires pour charger des fichiers PST dans un emplacement de stockage Azure privé et sécurisé. Cette clé d’accès est propre à votre organisation et empêche l’accès non autorisé à vos fichiers PST après leur chargement dans le cloud Microsoft. L’importation de fichiers PST dans Office 365 ne nécessite pas que votre organisation dispose d’un abonnement Azure séparé. 
     
 2. **Charger ou copier les fichiers PST** : l’étape suivante varie selon que vous utilisez le chargement réseau ou l’expédition de disque pour importer des fichiers PST. Dans les deux cas, vous devez utiliser l’outil et la clé de stockage sécurisée que vous avez obtenue à l’étape précédente.
     
-    - **Chargement réseau**L’outil AzCopy.exe (téléchargé à l’étape 1) est utilisé pour charger et stocker vos fichiers PST dans un emplacement de stockage Azure dans le Cloud Microsoft. Veuillez noter que l’emplacement de stockage Azure dans lequel vous chargez vos fichiers PST se situe dans le même centre de données régional Microsoft que votre organisation Office 365. 
+    - **Chargement réseau**L’outil AzCopy.exe (téléchargé à l’étape 1) est utilisé pour charger et stocker vos fichiers PST dans un emplacement de stockage Azure dans le Cloud Microsoft. L’emplacement de stockage Azure dans lequel vous chargez vos fichiers PST se situe dans le même centre de données régional Microsoft que votre organisation Office 365.
     
-      Pour les charger, les fichiers PST que vous voulez importer dans Office 365 doivent se trouver dans un partage de fichiers ou un serveur de fichiers au sein de votre organisation.
+      Pour les charger, les fichiers PST que vous souhaitez importer dans Office 365 doivent se trouver dans un partage de fichiers ou un serveur de fichiers au sein de votre organisation.
     
     - **Expédition de disque**L’outil WAImportExport.exe (téléchargé à l’étape 1) est utilisé pour copier vos fichiers PST sur le disque dur. Cet outil chiffre le disque dur avec BitLocker, puis copie les fichiers PST sur le disque dur. Tout comme pour le chargement réseau, les fichiers PST que vous voulez importer sur le disque dur doivent se trouver dans un partage de fichiers ou un serveur de fichiers au sein de votre organisation.
     
 3. **Créer un fichier de mappage d’importation de fichiers PST** : une fois que les fichiers PST ont été chargés vers l’emplacement de stockage Azure ou copiés sur un disque dur, l’étape suivante consiste à créer un fichier de valeurs séparées par des virgules (CSV) qui indique les boîtes aux lettres des utilisateurs dans lesquelles les fichiers PST seront importé (et un fichier PST peut être importé dans la boîte aux lettres principale ou la boîte aux lettres d’archivage d’un utilisateur). Le Service d’importation d’Office 365 utilise les informations pour importer les fichiers PST. 
     
-4. **Créer une tâche d’importation de fichiers PST** : l’étape suivante consiste à créer une tâche d’importation de fichiers PST sur la page **Importer** dans le Centre de sécurité et de conformité et à envoyer le fichier de mappage d’importation PST créé à l’étape précédente. Pour le chargement réseau (étant donné que les fichiers PST ont été chargés sur Azure), Office 365 analyse les données contenues dans les fichiers PST, puis vous permet de définir des filtres qui contrôlent les données réellement importées dans les boîtes aux lettres spécifiées dans le fichier de mappage d’importation de fichiers PST. 
+4. **Créer une tâche d’importation de fichiers PST :** l’étape suivante consiste à créer une tâche d’importation de fichiers PST sur la page **Importer des fichiers PST** dans le Centre de sécurité et de conformité et à envoyer le fichier de mappage d’importation PST créé à l’étape précédente. Pour le chargement réseau (étant donné que les fichiers PST ont été chargés sur Azure), Office 365 analyse les données contenues dans les fichiers PST, puis vous permet de définir des filtres qui contrôlent les données réellement importées dans les boîtes aux lettres spécifiées dans le fichier de mappage d’importation de fichiers PST. 
     
     Pour l’expédition de disque, quelques opérations supplémentaires se produisent à ce stade du processus.
     
-    - Vous expédiez physiquement le disque dur à un centre de données Microsoft (l’adresse d’expédition du centre de données Microsoft s’affiche lorsque la tâche d’importation est créée)
+    - Vous expédiez physiquement le disque dur à un centre de données Microsoft (l’adresse d’expédition du centre de données Microsoft s’affiche lorsque la tâche d’importation est créée).
     
     - Lorsque Microsoft reçoit le disque dur, le personnel du centre de données charge les fichiers PST sur le disque dur vers l’emplacement de stockage Azure de votre organisation. Comme indiqué précédemment, vos fichiers PST sont chargé vers un emplacement de stockage Azure qui se situe dans le même centre de données régional Microsoft que votre organisation Office 365.
     
       > [!NOTE]
-      > Les fichiers PST sur le disque dur sont chargés sur Azure dans un délai de 7 à 10 jours ouvrables après la réception du disque dur par Microsoft. 
-  
+      > Les fichiers PST sur le disque dur sont chargés sur Azure dans un délai de 7 à 10 jours ouvrables après la réception du disque dur par Microsoft.
+
       Tout comme pour le processus de chargement réseau, Office 365 analyse ensuite les données contenues dans les fichiers PST et vous permet de définir des filtres qui contrôlent les données réellement importées dans les boîtes aux lettres spécifiées dans le fichier de mappage d’importation de fichiers PST.
     
-    - Microsoft vous réexpédie le disque dur. 
+    - Microsoft vous réexpédie le disque dur.
     
 5. **Filtrer les données PST qui seront importées dans les boîtes aux lettres** : une fois la tâche d’importation est créée (et après le chargement des fichiers PST d’une tâche d’expédition de disque vers l’emplacement de stockage Azure) Office 365 analyse les données dans les fichiers PST (de façon sécurisée) en identifiant l’âge des éléments et des différents types de message inclus dans les fichiers PST. Une fois l’analyse terminée et les données prêtes à être importées, vous avez la possibilité d’importer toutes les données contenues dans les fichiers PST. Vous pouvez également réduire la quantité de données importées en définissant des filtres qui contrôlent les données importées. 
     
-6. **Lancer la tâche d’importation de fichiers PST** : une fois la tâche d’importation est lancée, Office 365 utilise les informations du fichier de mappage d’importation de fichiers PST pour importer les fichiers PST à partir de l’emplacement de stockage Azure vers les boîtes aux lettres des utilisateurs. Les informations relatives à l’état de la tâche d’importation (y compris les informations relatives à chaque fichier PST importé) s’affichent sur la page **Importer** du Centre de sécurité et de conformité. Une fois la tâche d’importation terminée, l’état de la tâche est **Terminé**.
+6. **Lancer la tâche d’importation de fichiers PST :** une fois la tâche d’importation est lancée, Office 365 utilise les informations du fichier de mappage d’importation de fichiers PST pour importer les fichiers PST à partir de l’emplacement de stockage Azure vers les boîtes aux lettres des utilisateurs. Les informations relatives à l’état de la tâche d’importation (y compris les informations relatives à chaque fichier PST importé) s’affichent sur la page **Importer des fichiers PST** du Centre de sécurité et de conformité. Une fois la tâche d’importation terminée, l’état de la tâche est défini sur **Terminé**.
   
 ## <a name="why-import-email-data-to-office-365"></a>Pourquoi importer des données de courrier dans Office 365 ?
 
-- L’importation de fichiers PST dans les boîtes aux lettres utilisateur vous permet de migrer le courrier électronique de votre organisation vers Office 365.
+- C’est un bon moyen d’importer les données de messagerie archivées dans Office 365.
     
 - Vous pouvez utiliser la fonctionnalité [Importation intelligente](filter-data-when-importing-pst-files.md) pour filtrer les éléments des fichiers PST qui sont réellement importés dans les boîtes aux lettres cible. Vous pouvez ainsi réduire la quantité de données importées en définissant des filtres qui contrôlent les données importées. 
     
@@ -132,11 +133,11 @@ Le rôle Importation/Exportation de boîtes aux lettres doit vous avoir été at
 En outre, pour créer des tâches d’importation dans le Centre de sécurité et de conformité, une des conditions suivantes doit être remplie :
   
 - Vous devez avoir le rôle de destinataire de courrier dans Exchange Online. Par défaut, ce rôle est assigné aux groupes de rôles Gestion de l’organisation et Gestion des destinataires.
-    
+
     Ou
     
 - Vous devez être un administrateur général au sein de votre organisation Office 365.
-    
+
 > [!TIP]
 > Envisagez de créer un nouveau groupe de rôles dans Exchange Online spécialement conçu pour importer les fichiers PST dans Office 365. Pour obtenir le niveau minimum de privilèges requis pour importer des fichiers PST, affectez les rôles d’importation/exportation de boîte aux lettres et de destinataire de courrier au nouveau groupe de rôles et ajoutez ensuite les membres. 
   
@@ -148,7 +149,7 @@ Le chargement réseau est actuellement disponible aux États-Unis, au Canada, au
   
 Using network upload to import PST files is free.
   
-Cela veut aussi dire qu’après avoir été supprimés de la zone de stockage Azure, les fichiers PST ne figurent plus dans la liste des fichiers d’une tâche d’importation terminée dans le Centre d’administration Microsoft 365. Même si une tâche d’importation figure toujours dans la page **Importer des données dans Office 365**, il est possible que la liste de fichiers PST soit vide au moment d’afficher les détails d’anciennes tâches d’importation. 
+Cela veut aussi dire qu’après avoir été supprimés de la zone de stockage Azure, les fichiers PST ne figurent plus dans la liste des fichiers d’une tâche d’importation terminée dans le Centre d’administration Microsoft 365. Même si une tâche d’importation figure toujours dans la page **Importer des données dans Office 365**, il est possible que la liste de fichiers PST soit vide au moment d’afficher les détails d’anciennes tâches d’importation.
   
  **Quelle version du format de fichier PST est prise en charge pour l’importation dans Office 365 ?**
   
@@ -158,13 +159,13 @@ Par ailleurs, les fichiers PST issus d’Outlook version 2007 et ultérieures p
   
  **Une fois que mes fichiers PST ont été chargés dans la zone de stockage Azure, pendant combien de temps sont-ils conservés dans Azure avant d’être supprimés ?**
   
-Si vous décidez d’importer des fichiers PST avec la méthode du chargement réseau, vous les chargez dans un conteneur d’objets blob Azure nommé **ingestiondata**. Si aucune tâche d’importation n’est en cours sur la page **Importer** dans le Centre de sécurité et de conformité, tous les fichiers PST du conteneur **ingestiondata** dans Azure sont supprimés 30 jours après la création de la tâche d’importation la plus récente dans le Centre de sécurité et de conformité. Cela veut aussi dire que vous devez créer une nouvelle tâche d’importation dans le Centre de sécurité et de conformité (description à l’étape 5 dans les instructions de chargement réseau) dans les 30 jours de chargement des fichiers PST vers Azure. 
+Si vous décidez d’importer des fichiers PST avec la méthode du chargement réseau, vous les chargez dans un conteneur d’objets blob Azure nommé **ingestiondata**. Si aucune tâche d’importation n’est en cours sur la page **Importer des fichiers PST** dans le Centre de sécurité et de conformité, tous les fichiers PST du conteneur **ingestiondata** dans Azure sont supprimés 30 jours après la création de la tâche d’importation la plus récente dans le Centre de sécurité et de conformité. Cela veut aussi dire que vous devez créer une nouvelle tâche d’importation dans le Centre de sécurité et de conformité (description à l’étape 5 dans les instructions de chargement réseau) dans les 30 jours de chargement des fichiers PST vers Azure.
   
-Cela veut aussi dire qu’après avoir été supprimés de la zone de stockage Azure, les fichiers PST ne figurent plus dans la liste des fichiers d’une tâche d’importation terminée dans le Centre de sécurité et de conformité. Même si une tâche d’importation figure toujours dans la page **Importer** dans le Centre de sécurité et de conformité, il est possible que la liste de fichiers PST soit vide au moment d’afficher les détails d’anciennes tâches d’importation. 
+Cela veut aussi dire qu’après avoir été supprimés de la zone de stockage Azure, les fichiers PST ne figurent plus dans la liste des fichiers d’une tâche d’importation terminée dans le Centre de sécurité et de conformité. Même si une tâche d’importation figure toujours dans la page **Importer des fichiers PST** dans le Centre de sécurité et de conformité, il est possible que la liste de fichiers PST soit vide au moment d’afficher les détails d’anciennes tâches d’importation.
   
  **Combien de temps faut-il compter avant qu’un fichier PST soit importé dans une boîte aux lettres ?**
   
-Cela dépend de la capacité de votre réseau, mais le chargement de chaque téraoctet (To) de données dans la zone de stockage Azure de votre organisation prend généralement plusieurs heures. Après avoir été copié dans la zone de stockage Azure, un fichier PST est importé dans une boîte aux lettres Office 365 à un débit d’au moins 24 Go par jour. Si cette vitesse ne répond pas à vos besoins, vous pouvez envisager d’autres méthodes de migration des données de courrier vers Office 365. Pour obtenir plus d'informations, consultez l'article [Façons de migrer plusieurs comptes de messagerie vers Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
+Cela dépend de la capacité de votre réseau, mais le chargement de chaque téraoctet (To) de données dans la zone de stockage Azure de votre organisation prend généralement plusieurs heures. Après avoir été copié dans la zone de stockage Azure, un fichier PST est importé dans une boîte aux lettres Office 365 à un débit d’au moins 24 Go par jour. Si cette vitesse ne répond pas à vos besoins, vous pouvez envisager d’autres méthodes pour récupérer des données de courrier dans Office 365. Pour obtenir plus d'informations, consultez l'article [Façons de migrer plusieurs comptes de messagerie vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
   
 En présence de plusieurs fichiers PST et de plusieurs boîtes aux lettres cibles, le processus d’importation s’exécute en parallèle ; en d’autres termes, chaque paire PST/boîte aux lettres est importée simultanément. De même, si plusieurs fichiers PST sont importés dans une même boîte aux lettres, ils sont importés simultanément.
   
@@ -223,7 +224,7 @@ L’utilisation du service d’expédition de disque pour importer des fichiers 
   
  **Quels types de disque dur est-il possible d’expédier ?**
   
-Seuls les lecteurs SSD 2,5 ou 2,5 pouces ou les disques durs internes 3,5 pouces SATA II/III sont pris en charge par le Service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez connecter ce dernier directement au moyen d’un connecteur pour SSD de 2,5 pouces ou SATA II/III de 2,5 ou 3,5 pouces, ou vous pouvez le connecter en externe au moyen d’un adaptateur USB externe pour SSD de 2,5 pouces ou SATA II/III de 2,5 ou 3,5 pouces.
+Seuls les lecteurs SSD 2,5 pouces ou les disques durs internes 2,5 ou 3,5 pouces SATA II/III sont pris en charge par le Service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez connecter ce dernier directement au moyen d’un connecteur pour SSD de 2,5 pouces ou SATA II/III de 2,5 ou 3,5 pouces, ou vous pouvez le connecter en externe au moyen d’un adaptateur USB externe pour SSD de 2,5 pouces ou SATA II/III de 2,5 ou 3,5 pouces.
   
 > [!IMPORTANT]
 > Les disques durs externes fournis avec une carte USB intégrée ne sont pas pris en charge par le Service d’importation Office 365. En outre, le disque à l’intérieur du boîtier d’un disque dur externe ne peut pas être utilisé. Veuillez ne pas envoyer de disques durs externes. 
@@ -238,19 +239,19 @@ Cela dépend de plusieurs facteurs, comme votre proximité par rapport au centre
   
  **Une fois mon disque dur arrivé au centre de données de Microsoft, combien de temps faut-il pour charger mon fichiers PST dans Azure ?**
   
-Une fois votre disque dur réceptionné au centre de données de Microsoft, vous devrez patienter entre 7 et 10 jours ouvrable pour le chargement du fichier PST dans la zone de stockage Microsoft Azure de votre organisation. Les fichiers PST seront chargés dans un conteneur blob Azure nommé `ingestiondata`. 
+Une fois votre disque dur réceptionné au centre de données de Microsoft, vous devrez patienter entre 7 et 10 jours ouvrable pour le chargement du fichier PST dans l’emplacement de stockage Azure de votre organisation. Les fichiers PST seront chargés dans un conteneur blob Azure nommé `ingestiondata`. 
   
  **Combien de temps faut-il compter avant qu’un fichier PST soit importé dans une boîte aux lettres ?**
   
-Une fois les fichiers PST chargés dans l’espace de stockage Azure, Office 365 analyse les données des fichiers PST (de manière sécurisée) afin d’identifier l’âge des éléments et les différents types de messages contenus dans les fichiers PST. Une fois cette analyse terminée, vous pourrez importer toutes les données des fichiers PST ou définir des filtres qui contrôlent les données importées. Après le démarrage de la tâche d’importation, un fichier PST est importé dans une boîte aux lettres Office 365 à un débit d’au moins 24 Go par jour. Si cette vitesse ne répond à vos besoins, vous pouvez envisager d’autres méthodes d’importation des données de courrier dans Office 365. Pour obtenir plus d'informations, consultez l'article [Façons de migrer plusieurs comptes de messagerie vers Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
+Une fois les fichiers PST chargés dans l’espace de stockage Azure, Office 365 analyse les données des fichiers PST (de manière sécurisée) afin d’identifier l’âge des éléments et les différents types de messages contenus dans les fichiers PST. Une fois cette analyse terminée, vous pourrez importer toutes les données des fichiers PST ou définir des filtres qui contrôlent les données importées. Après le démarrage de la tâche d’importation, un fichier PST est importé dans une boîte aux lettres Office 365 à un débit d’au moins 24 Go par jour. Si cette vitesse ne répond pas à vos besoins, vous pouvez envisager d’autres méthodes pour récupérer des données de courrier dans Office 365. Pour obtenir plus d'informations, consultez l'article [Façons de migrer plusieurs comptes de messagerie vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
   
 En présence de plusieurs fichiers PST et de plusieurs boîtes aux lettres cibles, le processus d’importation s’exécute en parallèle ; en d’autres termes, chaque paire PST/boîte aux lettres est importée simultanément. De même, si plusieurs fichiers PST sont importés dans une même boîte aux lettres, ils sont importés simultanément.
   
  **Une fois que Microsoft a chargé mes fichiers PST dans Azure, pendant combien de temps sont-ils conservés dans Azure avant d’être supprimés ?**
   
-Tous les fichiers PST de l’emplacement de stockage Azure de votre organisation (dans le conteneur blob nommé `ingestiondata`) sont supprimés 30 jours après la création de la dernière tâche d’importation sur la page **Importer** dans le Centre de sécurité et de conformité. 
+Tous les fichiers PST de l’emplacement de stockage Azure de votre organisation (dans le conteneur blob nommé `ingestiondata`) sont supprimés 30 jours après la création de la dernière tâche d’importation sur la page **Importer des fichiers PST** dans le Centre de sécurité et de conformité. 
   
-Cela veut aussi dire qu’après avoir été supprimés de la zone de stockage Azure, les fichiers PST ne figurent plus dans la liste des fichiers d’une tâche d’importation terminée dans le Centre de sécurité et de conformité. Même si une tâche d’importation figure toujours dans la page **Importer** dans le Centre de sécurité et de conformité, il est possible que la liste de fichiers PST soit vide au moment d’afficher les détails d’anciennes tâches d’importation. 
+Cela veut aussi dire qu’après avoir été supprimés de la zone de stockage Azure, les fichiers PST ne figurent plus dans la liste des fichiers d’une tâche d’importation terminée dans le Centre de sécurité et de conformité. Même si une tâche d’importation figure toujours dans la page **Importer des fichiers PST** dans le Centre de sécurité et de conformité, il est possible que la liste de fichiers PST soit vide au moment d’afficher les détails d’anciennes tâches d’importation. 
   
  **Quelle version du format de fichier PST est prise en charge pour l’importation dans Office 365 ?**
   
