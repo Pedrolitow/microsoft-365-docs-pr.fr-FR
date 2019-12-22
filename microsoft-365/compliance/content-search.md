@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les groupes Office 365 et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: ba3a8ffd495d58726c24ad7abd2e115d2e1c2b8b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39266123"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967517"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -310,7 +310,7 @@ Les conditions sont logiquement connectées à la requête de mot clé par l’o
   
 ### <a name="searching-inactive-mailboxes"></a>Recherche des boîtes aux lettres inactives
 
-Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Rétention**de la ** gouvernance des données** \> dans le centre de sécurité & conformité, puis cliquer sur **Plus**![ Barre de navigation : sélections ](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\> ** boîtes aux lettres inactives **.
+Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Gouvernance des informations** \> **Rétention** dans le centre de sécurité & conformité, puis cliquer sur **Plus**![Barre de navigation : sélections](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **boîtes aux lettres inactives**.
   
 Voici quelques éléments à prendre en considération lors de la recherche de boîtes aux lettres inactives.
 
