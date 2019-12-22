@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test léger destiné aux tests Microsoft 365 Entreprise.
-ms.openlocfilehash: 6f49982fe71196f3c147c1638b402ee63bb861c1
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 0bbb54ca054ce1f4f96a32c887fba60b982375de
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202305"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801649"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuration de base légère
 
@@ -43,13 +43,13 @@ Nous allons commencer avec un abonnement d’évaluation Office 365 E5, puis ajo
 
 Pour démarrer votre abonnement d’évaluation Office 365 E5, vous avez besoin d’un nom d’entreprise fictif et d’un nouveau compte Microsoft.
   
-1. Nous vous recommandons d’utiliser une variante du nom d’entreprise Contoso pour le nom de votre entreprise. Il s’agit d’une entreprise fictive utilisée dans le contenu d’exemple de Microsoft. Toutefois, cette étape n’est pas obligatoire. Indiquer le nom fictif de votre entreprise ici : ![](./media/Common-Images/TableLine.png)
+1. Nous vous recommandons d’utiliser une variante du nom d’entreprise Contoso pour le nom de votre entreprise. Il s’agit d’une entreprise fictive utilisée dans le contenu d’exemple de Microsoft. Toutefois, cette étape n’est pas obligatoire. Indiquer le nom fictif de votre entreprise ici : ![Trait](./media/Common-Images/TableLine.png)
     
 2. Pour ouvrir un nouveau compte Microsoft, accédez à [https://outlook.com](https://outlook.com) et créez un compte avec un nouveau compte de messagerie et une nouvelle adresse. Vous utiliserez ce compte pour vous inscrire à Office 365.
     
-  - Indiquer le prénom et le nom de famille utilisés pour votre nouveau compte ici : ![](./media/Common-Images/TableLine.png)
+  - Enregistrez le prénom et le nom de famille utilisés pour votre nouveau compte ici : ![Trait](./media/Common-Images/TableLine.png)
     
-  - Indiquer l’adresse du nouveau compte de messagerie ici : ![](./media/Common-Images/TableLine.png)@outlook.com
+  - Enregistrez l’adresse du nouveau compte de messagerie ici : ![Trait](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Inscription à un abonnement d’évaluation Office 365 E5
 
@@ -58,8 +58,8 @@ Pour démarrer votre abonnement d’évaluation Office 365 E5, vous avez beso
 2. Sur la page **Merci d’avoir choisi Office 365 E5**, spécifiez votre nouvelle adresse de compte de messagerie à l’étape 1.
 3. À l’étape 2 du processus d’abonnement d’évaluation, tapez les informations demandées, puis procédez à la vérification.
 4. À l’étape 3, tapez un nom d’organisation, puis un nom de compte qui sera l’administrateur général de l’abonnement. 
-5. À l’étape 4, enregistré l’URL de la page de connexion ici (sélectionnez-la et copiez-la) : ![](./media/Common-Images/TableLine.png) 
-6. Enregistrez l’identifiant utilisateur ici : ![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. À l’étape 4, enregistrer l’URL de la page de connexion ici (sélectionnez-la et copiez-la) : ![Trait](./media/Common-Images/TableLine.png) 
+6. Enregistrez l’identifiant utilisateur ici : ![ligne](./media/Common-Images/TableLine.png).onmicrosoft.com  
    Enregistrez le mot de passe saisi dans un emplacement sécurisé.
    Cette valeur correspond au **nom de l’administrateur général Office 365**.
 8. Sélectionnez **Configurer**.
@@ -119,11 +119,11 @@ Nous vous recommandons d’imprimer cet article afin de consigner les informatio
 
 Enregistrez les valeurs suivantes :
   
-- Nom de l’administrateur général Office 365 : ![](./media/Common-Images/TableLine.png).onmicrosoft.com (indiqué à l’étape 6 de la phase 1)
+- Le nom de l’administrateur général Office 365 : ![Trait](./media/Common-Images/TableLine.png).onmicrosoft.com(à partir de l’étape 6 de la phase 1)
     
     Enregistrez également le mot de passe de ce compte dans un emplacement sécurisé.
     
-- Nom de l’organisation de l’abonnement d’évaluation : ![](./media/Common-Images/TableLine.png) (indiqué à l’étape 4 de la phase 1)
+- Nom de l’organisation bénéficiant de l’abonnement à la version d’évaluation : ![Trait](./media/Common-Images/TableLine.png) (à partir de l’étape 4 de la phase 1)
     
 - Pour répertorier les comptes pour Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5, exécutez la commande suivante à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
     
@@ -133,13 +133,13 @@ Enregistrez les valeurs suivantes :
 
     Enregistrez les noms de compte ici :
     
-  - Nom du compte Utilisateur 2 : user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nom du compte de l’utilisateur 2 : utilisateur2@![Trait](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nom du compte Utilisateur 3 : user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nom du compte de l’utilisateur 3 : utilisateur3@![Trait](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nom du compte Utilisateur 4 : user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nom du compte de l’utilisateur 4 : utilisateur4@![Trait](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nom du compte Utilisateur 5 : user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nom du compte de l’utilisateur 5 : utilisateur5@![Trait](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Enregistrez également les mots de passe communs de ces comptes dans un emplacement sécurisé.
    

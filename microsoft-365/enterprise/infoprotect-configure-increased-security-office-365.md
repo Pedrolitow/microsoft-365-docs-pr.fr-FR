@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre et renforcer la sécurité de Microsoft 365.
-ms.openlocfilehash: 290b10dd8e0bf9a7180bae72669b22f3d575f914
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370171"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801679"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>Étape 3 : renforcer la sécurité de Microsoft 365
 
@@ -43,11 +43,11 @@ Une fois la configuration terminée, vous pouvez obtenir des informations concer
 - Protection des [liens](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) et [pièces jointes](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments) dans les e-mails. 
 - Fourniture de fonctionnalités de veille contre l’usurpation d’identité et de protection anti-hameçonnage pour les e-mails dans Exchange Online et les [fichiers dans SharePoint Online, OneDrive Entreprise et Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams). 
 
-Office 365 - Protection avancée contre les menaces est disponible uniquement avec Microsoft 365 Entreprise E5.
+Office 365 – Protection avancée contre les menaces est uniquement disponible avec Microsoft 365 E5.
 
 |||
 |:-------|:-----|
-|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : renforcer la sécurité de Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : renforcer la sécurité de Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 Comme point de contrôle intermédiaire, consultez les [critères de sortie](infoprotect-exit-criteria.md#crit-infoprotect-step3) correspondant à cette étape.

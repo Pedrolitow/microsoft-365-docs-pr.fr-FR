@@ -1,5 +1,5 @@
 ---
-title: Stratégies de déploiement de l’infrastructure de base de Microsoft 365 Entreprise
+title: Stratégies de déploiement de l’infrastructure de base de Microsoft 365 pour entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,24 +12,24 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Découvrez comment vous pouvez déployer les phases de l’infrastructure de base de Microsoft 365 Entreprise.
-ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+description: Découvrez le déploiement des phases de l’infrastructure de base de Microsoft 365 pour entreprise.
+ms.openlocfilehash: 354ce1a30b91f602049143dc0e93fe01629e6b04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369435"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801889"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Stratégies de déploiement de l’infrastructure de base de Microsoft 365 Entreprise
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Stratégies de déploiement de l’infrastructure de base de Microsoft 365 pour entreprise
 
-Il existe plusieurs façons de déployer les phases de l’[infrastructure de base](deploy-foundation-infrastructure.md) de Microsoft 365 Entreprise et de proposer ses fonctionnalités, logiciels et services à vos utilisateurs. Pour vous aider dans cette tâche, qui peut être vaste et complexe selon la taille de votre organisation et de son infrastructure existante, tenez compte des stratégies de déploiement suivantes :
+Il existe plusieurs façons de déployer les phases de l’[infrastructure de base](deploy-foundation-infrastructure.md) de Microsoft 365 pour entreprise et de proposer ses fonctionnalités, logiciels et services à vos utilisateurs. Pour vous aider dans cette tâche, qui peut être vaste et complexe selon la taille de votre organisation et de son infrastructure existante, tenez compte des stratégies de déploiement suivantes :
 
 - Déploiement en série
 - Déploiement parallèle avec un lancement utilisateur décalé
 - Déploiement parallèle avec un lancement utilisateur concomitant
 - Infrastructure initiale et lancement de la configuration de bout en bout
 
-Utilisez ces stratégies pour obtenir des idées sur la gestion du projet global et découvrir plus rapidement les avantages de Microsoft 365 Entreprise.
+Utilisez ces stratégies pour obtenir des idées sur la gestion du projet global et découvrir plus rapidement les avantages de Microsoft 365 pour entreprise.
 
 >[!Note]
 >Cet article contient des suppositions et des simplifications dans le but de décrire de façon cohérente les stratégies de déploiement. Ces stratégies de déploiement sont considérées dans leur ensemble et n’impliquent en aucun cas l’existence de délais spécifiques. Elles ne sont pas non plus destinées à être appliquées à toutes les organisations et situations.
@@ -74,14 +74,14 @@ Un déploiement en série vous permet de lancer une phase dans son intégralité
 - Dépendances de la technologie informatique
 - Gestion des changements opérationnels et résistance des utilisateurs finaux
 
-Ce diagramme de Gantt illustre un déploiement en série simplifié des phases 2 à 6 de l’infrastructure de base de Microsoft 365 Entreprise.
+Ce diagramme de Gantt illustre un déploiement en série simplifié des phases 2 à 6 de l’infrastructure de base de Microsoft 365 pour entreprise.
 
 ![Déploiement en série des phases 2 à 6 de l’infrastructure de base](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 Pour simplifier notre exposé, nous partons du principe que les phases et les segments de déploiement au sein de chaque phase ont la même durée.
 
 >[!Note]
->La Phase 1 : Mise en réseau de l’infrastructure de base de Microsoft 365 Entreprise concerne uniquement le département informatique. Les utilisateurs profitent des avantages d’une meilleure connexion aux ressources cloud de Microsoft, mais ils ne sont pas obligés de la réaliser.
+>La Phase 1 : Mise en réseau de l’infrastructure de base de Microsoft 365 pour entreprise concerne uniquement le département informatique. Les utilisateurs profitent des avantages d’une meilleure connexion aux ressources cloud de Microsoft, mais ils ne sont pas obligés de la réaliser.
 >
 
 Voici une expérience utilisateur pilote simplifiée à titre d’exemple :
@@ -104,7 +104,7 @@ Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 
 Conclusion : vos lancements utilisateurs successifs sont espacés de 90 jours.
 
-L’inconvénient de cette stratégie de déploiement est que le déploiement de l’infrastructure de base de Microsoft 365 Entreprise peut prendre un certain temps.
+L’inconvénient de cette stratégie de déploiement est que le déploiement de l’infrastructure de base de Microsoft 365 pour entreprise peut prendre un certain temps.
 
 ### <a name="parallel-deployment-with-non-overlapping-user-rollout-parallel-1"></a>Déploiement parallèle avec un lancement utilisateur décalé (Parallèle 1)
 
@@ -134,7 +134,7 @@ Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 
 Conclusion : vos lancements utilisateurs successifs sont espacés de 60 jours.
 
-L’avantage de cette stratégie est que le déploiement intégral de l’infrastructure de base de Microsoft 365 Entreprise prend moins de temps. De plus, votre département informatique et les utilisateurs n’ont pas affaire à plusieurs lancements en même temps.
+L’avantage de cette stratégie est que le déploiement intégral de l’infrastructure de base de Microsoft 365 pour entreprise prend moins de temps. De plus, votre département informatique et les utilisateurs n’ont pas affaire à plusieurs lancements en même temps.
 
 ### <a name="parallel-deployment-with-overlapping-user-rollout-parallel-2"></a>Déploiement parallèle avec un lancement utilisateur concomitant (Parallèle 2)
 
@@ -172,7 +172,7 @@ Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 
 Conclusion : vos lancements utilisateurs successifs sont espacés de 30 jours.
 
-L’avantage de cette stratégie est que le déploiement intégral de l’infrastructure de base de Microsoft 365 Entreprise prend encore moins de temps. De plus, les utilisateurs finaux n’ont pas affaire à plusieurs déploiements simultanés. Toutefois, les utilisateurs ne prennent pas de pause entre les phases successives.
+L’avantage de cette stratégie est que le déploiement intégral de l’infrastructure de base de Microsoft 365 pour entreprise prend encore moins de temps. De plus, les utilisateurs finaux n’ont pas affaire à plusieurs déploiements simultanés. Toutefois, les utilisateurs ne prennent pas de pause entre les phases successives.
 
 ### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>Infrastructure initiale et lancement de la configuration de bout en bout
 
@@ -192,4 +192,4 @@ Une fois le lancement pilote terminé, le lancement utilisateur commence et four
 
 ## <a name="next-step"></a>Étape suivante
 
-Lancez le déploiement de Microsoft 365 Entreprise avec l’[infrastructure de base](deploy-foundation-infrastructure.md).
+Lancez le déploiement de Microsoft 365 pour entreprise avec l’[infrastructure de base](deploy-foundation-infrastructure.md).

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous pouvez sécuriser plus efficacement les connexions des utilisateurs aux appareils Windows et à Microsoft 365.
-ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370191"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801729"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Étape 3 : Sécuriser et gérer les connexions de vos utilisateurs
 
@@ -28,7 +28,7 @@ ms.locfileid: "37370191"
 <a name="identity-windows-hello"></a>
 ## <a name="use-windows-hello-for-business"></a>Utiliser Windows Hello Entreprise
 
-*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
+*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365*
 
 Windows Hello Entreprise dans Windows 10 Entreprise remplace les mots de passe par une authentification à deux facteurs forte lors de la connexion à un appareil Windows. Les deux facteurs sont un nouveau type d’informations d’identification d’utilisateur qui est lié à un appareil et à un code biométrique ou PIN.
 
@@ -38,7 +38,7 @@ Pour plus d’informations, consultez [Vue d’ensemble de Windows Hello Entrepr
 <a name="identity-mfa"></a>
 ## <a name="set-up-azure-multi-factor-authentication"></a>Configurer Authentication multifacteur Azure
 
-*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
+*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365*
 
 Dans cette étape, vous allez configurer Authentication multifacteur Azure (MFA) pour ajouter une seconde couche de sécurité aux connexions et transactions des utilisateurs. Authentication multifacteur Azure requiert une méthode de vérification supplémentaire une fois que les utilisateurs ont correctement entré leur mot de passe. Sans Authentication multifacteur Azure, le mot de passe reste la seule méthode de vérification. Le problème avec les mots de passe est que bon nombre d'entre eux se devinent facilement par un pirate ou sont partagés inconsciemment avec des parties non approuvées.
 

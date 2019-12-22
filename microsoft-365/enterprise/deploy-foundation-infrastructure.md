@@ -1,5 +1,5 @@
 ---
-title: Infrastructure de base de Microsoft 365 Entreprise
+title: Infrastructure de base de Microsoft 365 pour entreprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenez les phases principales du déploiement de l’infrastructure de base pour Microsoft 365 Entreprise au sein de votre organisation, également appelé déploiement de base.
-ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: Comprenez les phases principales du déploiement de l’infrastructure de base Microsoft 365 pour entreprise au sein de votre organisation, également appelé déploiement de base.
+ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370351"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801959"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastructure de base de Microsoft 365 Entreprise
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infrastructure de base de Microsoft 365 pour entreprise
 
-Si vous faites le déploiement de bout à bout de Microsoft 365 Entreprise vous-même, vous devez tout d’abord créer une base solide sur laquelle les applications et services reposent et peuvent déverrouiller la créativité et le travail d’équipe dans un environnement sécurisé. Cette base est parfois appelée *déploiement de base*.
+Si vous faites vous-même le déploiement de bout en bout de Microsoft 365 pour entreprise, vous devez tout d’abord créer une base solide sur laquelle les applications et services reposent et peuvent libérer la créativité et le travail d’équipe dans un environnement sécurisé. Cette base est parfois appelée *déploiement de base*.
 
-Pour une trajectoire définie pour le déploiement bout à bout, vous pouvez utiliser chacune de ces phases pour planifier et déployer l’infrastructure de base de Microsoft 365 Entreprise :
+Pour une trajectoire définie pour le déploiement de bout en bout, vous pouvez utiliser chacune de ces phases pour planifier et déployer l’infrastructure de base de Microsoft 365 pour entreprise :
 
 | | Phase | Résultats |
 |:-------|:-----|:-----|
@@ -48,19 +48,19 @@ Toutefois, vous avez la possibilité de configurer et déployer les phases ou é
 
 -  **Si vous êtes une organisation d’entreprise**, envisagez les phases comme des couches de l’infrastructure informatique, plutôt qu’une trajectoire définie et déterminez comment mieux travailler sur pour une adhérence finale à la configuration requise pour chaque couche au sein de votre organisation.
 
-À la fin de chaque phase, vous devez examiner ses *critères de sortie*, qui incluent des conditions requises que vous devez respecter et des conditions facultatives à prendre en considération. Les critères de sortie pour chaque phase garantissent que votre version locale et infrastructure cloud et la configuration de bout à bout résultante répondent à la configuration requise pour un déploiement de Microsoft 365 Entreprise.
+À la fin de chaque phase, vous devez examiner ses *critères de sortie*, qui incluent des conditions requises que vous devez respecter et des conditions facultatives à prendre en considération. Les critères de sortie pour chaque phase garantissent que votre version locale et infrastructure cloud et la configuration de bout en bout résultante répondent à la configuration requise pour un déploiement de Microsoft 365 pour entreprise.
 
 Pour voir comment le contenu est structuré, regardez cette courte vidéo.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
-Voici l’infrastructure de base dans le guide de déploiement global de Microsoft 365 Entreprise :
+Voici l’infrastructure de base dans le guide de déploiement global de Microsoft 365 pour entreprise :
 
-![Infrastructure de base dans le guide de déploiement global de Microsoft 365 Entreprise](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![L’infrastructure de base dans le guide de déploiement global de Microsoft 365 pour entreprise](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>En un coup d’œil
 
-L’[affiche Microsoft 365 Enterprise Foundation infrastructure](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) est un emplacement central où vous pouvez voir, pour chaque phase :
+L’[affiche Microsoft 365 d’infrastructure de base pour entreprise](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) est un emplacement central où vous pouvez voir, pour chaque phase :
 
 - Les objectifs généraux de la phase pour les administrateurs et les utilisateurs
 - Les services, les fonctionnalités et les outils
@@ -69,16 +69,16 @@ L’[affiche Microsoft 365 Enterprise Foundation infrastructure](media/deploy-f
 - Le processus d’intégration des nouveaux utilisateurs
 - Comment surveiller et mettre à jour
 
-[![Image de l’affiche de l’Infrastructure de base de Microsoft 365 Entreprise](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![Image de l’affiche de l’infrastructure de base de Microsoft 365 pour entreprise](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>Configuration de l’infrastructure vs processus de déploiement utilisateur
 
-L’infrastructure de base est un ensemble de logiciels et services configurés qui, lorsqu’ils sont combinés ensemble pour un utilisateur, lui permet de tirer parti du spectre entier de compétences et protections que propose Microsoft 365 Entreprise. La destination finale de votre route de déploiement de bout en bout est que cette infrastructure s’applique à tous vos utilisateurs et leurs appareils Windows. 
+L’infrastructure de base est un ensemble de logiciels et services configurés qui, lorsqu’ils sont combinés ensemble pour un utilisateur, lui permet de tirer parti du spectre entier de fonctionnalités et protections que propose Microsoft 365 pour entreprise. La destination finale de votre route de déploiement de bout en bout est que cette infrastructure s’applique à tous vos utilisateurs et leurs appareils Windows. 
 
-Toutefois, il est important de noter que l’infrastructure de base Microsoft 365 Entreprise est indépendante du déploiement de logiciels et services à vos utilisateurs. ***Vous pouvez configurer les couches de l’infrastructure de base sans avoir à mettre en place ces couches à l’ensemble de vos utilisateurs.***
+Il est toutefois important de noter que l’infrastructure de base Microsoft 365 pour entreprise est indépendante du déploiement de logiciels et services à vos utilisateurs. ***Vous pouvez configurer les couches de l’infrastructure de base sans avoir à mettre en place ces couches à l’ensemble de vos utilisateurs.***
 
 Il est possible de configurer, tester et piloter les éléments de l’infrastructure de base bien avant le processus de déploiement de ces éléments à la diversité de vos utilisateurs dans les bureaux, les régions ou les divisions de votre organisation.
 

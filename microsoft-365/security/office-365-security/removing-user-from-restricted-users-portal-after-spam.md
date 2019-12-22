@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: 93cc7fb4af878457f7b9570a90d6950e7488d0ac
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c817add2581ffdbe709023dc3b348631defec169
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808029"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823816"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
 
@@ -79,7 +79,7 @@ Les commandes PowerShell pour les utilisateurs avec accès restreint sont les su
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 
-[Réponse à un compte de messagerie compromis](../../compliance/responding-to-a-compromised-email-account.md)
+[Réponse à un compte de messagerie compromis](responding-to-a-compromised-email-account.md)
 
 [Présentation de l’alerte l’utilisateur n’est pas autorisé à envoyer des messages](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 

@@ -1,5 +1,5 @@
 ---
-title: Déploiement de Microsoft 365 Entreprise avec l’infrastructure existante
+title: Déploiement de Microsoft 365 pour entreprise avec une infrastructure existante
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Suivez les critères de sortie pour le déploiement de Microsoft 365 Entreprise lorsque vous disposez d’une infrastructure existante.
-ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+description: Suivez les critères de sortie pour le déploiement de Microsoft 365 pour entreprise lorsque vous disposez d’une infrastructure existante.
+ms.openlocfilehash: 1b3ed8edd84a1879f4cd46795fc55e3625a97be2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148508"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801929"
 ---
-# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>Déploiement de Microsoft 365 Entreprise avec l’infrastructure existante
+# <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>Déploiement de Microsoft 365 pour entreprise avec une infrastructure existante
 
-De nombreuses organisations disposent déjà de composants de mise en réseau, d’identité et autres ou des produits locaux Microsoft et services informatiques. Cet article décrit chaque phase du déploiement de Microsoft 365 Entreprise afin que vous puissiez déterminer rapidement comment adapter ou modifier votre infrastructure existante.
+De nombreuses organisations disposent déjà de composants de mise en réseau, d’identité et autres ou des produits locaux Microsoft et services informatiques cloud. Cet article décrit chaque phase du déploiement de Microsoft 365 pour entreprise afin que vous puissiez déterminer rapidement comment adapter ou modifier votre infrastructure existante.
 
-Avant de quitter chaque phase, vous devez examiner ses critères de sortie, un ensemble de conditions requises auxquelles vous devez répondre et de conditions facultatives à prendre en considération. Les critères de sortie pour chaque phase garantissent que votre infrastructure locale et cloud et la configuration de bout en bout résultante respectent les exigences requises pour un déploiement de Microsoft 365 Entreprise.
+Avant de quitter chaque phase, vous devez examiner ses critères de sortie, un ensemble de conditions requises auxquelles vous devez répondre et de conditions facultatives à prendre en considération. Les critères de sortie pour chaque phase garantissent que votre infrastructure locale et cloud et la configuration de bout en bout résultante respectent les exigences requises pour un déploiement de Microsoft 365 pour entreprise.
 
 > [!Note] 
 > FastTrack est un avantage continu et renouvelable (disponible gratuitement dans le cadre de votre abonnement), qui est fourni par les ingénieurs Microsoft pour vous aider à migrer vers le cloud à votre rythme. FastTrack vous permet également d’accéder à des partenaires qualifiés pour des services supplémentaires, selon vos besoins. Avec plus de 40 000 clients à ce jour, FastTrack vous aide à optimiser votre retour sur investissement, accélérer le déploiement et augmenter l’adoption au sein de votre organisation. Reportez-vous à [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
