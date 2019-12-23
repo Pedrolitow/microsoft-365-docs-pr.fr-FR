@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment rechercher et localiser des données personnelles dans Office 365.
-ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 75c6afaae18cddc0c8e63cac671ac1140e3fa303
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38710028"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802857"
 ---
 # <a name="search-for-and-find-personal-data"></a>Recherche et localisation des données personnelles
 
@@ -33,9 +33,7 @@ Article 4 - Définitions
 
 Cet article explique comment rechercher des données personnelles stockées dans SharePoint Online et OneDrive Entreprise (qui inclut les sites de tous les groupes Office 365 et Microsoft Teams).
 
-La recherche de données personnelles soumises au RGPD repose sur l’utilisation de types d’informations sensibles dans Office 365. Ceux-ci définissent comment le processus automatisé reconnaît des types d’informations spécifiques tels que les numéros de sécurité sociale et les numéros de carte de crédit. Pour l’instant, ils ne permettent pas de rechercher des données dans les boîtes aux lettres Exchange au repos. Toutefois, les types d’informations sensibles peuvent être utilisés avec des stratégies de protection contre la perte de données pour rechercher des données personnelles dans le courrier en transit.
-
-Par conséquent, même si vous ne pouvez pas utiliser actuellement la recherche de contenu pour rechercher des données personnelles au repos dans les boîtes aux lettres Exchange Online, vous pouvez utiliser les types d’informations sensibles que vous gérez pour le RGPD pour rechercher et protéger des informations personnelles lors de leur envoi par courrier électronique.
+La recherche de données personnelles soumises au RGPD dépend de l’utilisation de types d’informations sensibles dans Office 365. Celle-ci définit la manière dont le processus automatisé reconnaît des types d’informations spécifiques, tels que les numéros de service de santé ou de carte bancaire. Vous pouvez utiliser des stratégies de protection contre la perte de données pour rechercher des données personnelles dans des courriers pendant leur transit. Vous pouvez utiliser les types d’informations sensibles que vous traitez pour RGPD afin de rechercher et de protéger les informations personnelles telles qu’elles sont envoyées par courrier électronique. Consulter également les [Demandes des personnes associées aux données RGPD gérées à l’aide de l’outil de dossier de DPC dans le Centre de sécurité et conformité](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
 ## <a name="use-content-search-to-find-personal-data"></a>Utilisation de la recherche de contenu pour rechercher des données personnelles
 

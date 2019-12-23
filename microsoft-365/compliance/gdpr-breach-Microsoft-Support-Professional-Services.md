@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 4e932b160f6c203d65070706bc485fe6582ba4cc
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749749"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806457"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Support Microsoft, services professionnels et notification des violations dans le cadre du RGPD
 
@@ -35,7 +36,7 @@ La division Services professionnels Microsoft s’implique dans la protection de
 
 Le processus de notification de violation de données personnelles démarre lorsque nous déclarons qu’une [violation de données personnelles] s’est produite.
 
-Pour que celle-ci soit déclarée, l’équipe de réponse aux incidents de protection des données Microsoft doit déterminer qu’un incident de protection des données répondant à la définition ci-dessus s’est effectivement ou vraisemblablement produit. La déclaration s’effectue dès que toutes les informations pertinentes sont disponibles pour déterminer qu’un incident de protection des données s’est produit.
+Pour que celle-ci soit déclarée, l’équipe de réponse aux incidents de protection des données Microsoft doit déterminer qu’un incident de protection des données répondant à la définition ci-dessus s’est effectivement produit. La déclaration s’effectue dès que toutes les informations pertinentes sont disponibles pour déterminer qu’un incident de protection des données s’est produit.
 
 En raison de la nature des services professionnels, certains événements ressemblant à des incidents de protection des données Microsoft n’en sont pas, car ils sont le résultat d’actions du client ou se sont produits sur les systèmes du client. Microsoft n’est pas responsable de la surveillance ou de la réaction aux incidents de protection des données survenus dans le cadre du domaine de responsabilité du client. Toutefois, lorsque Microsoft est informé d’un incident de protection des données occasionné par le client, nous classons celui-ci dans la catégorie des incidents de protection des données causés par le client (ce que l’équipe de réponse aux incidents de protection des données appelle un « événement »), informons le client de notre observation et, s’il le demande, lui fournissons notre assistance, en fonction de son interaction avec Microsoft. Les incidents de protection des données causés par les clients incluent par exemple l’envoi de mots de passe ou d’autres informations sensibles des clients  à Microsoft, les demandes de suppression de données ou encore les fraudes.
 
@@ -76,11 +77,11 @@ Des sessions de formation en ligne standard sont disponibles et obligatoires pou
 
 Lorsque l’organisation de services professionnels Microsoft identifie un incident de protection des données, elle suit un plan de réponse standard documenté, qui commence par déterminer si les critères d’un incident de protection des données sont satisfaits. Lorsqu’un incident de protection des données survient, il est généralement déclaré immédiatement après le tri mais, en fonction de sa complexité, la déclaration peut se produire dès lors qu’un niveau d’informations nécessaires est disponible, notamment après l’étape d’enquête. D’autre part, l’équipe a la liberté de déclarer un incident de protection des données sur un simple soupçon raisonnable d’occurrence. L’équipe peut également passer d’une étape à l’autre à mesure de l’avancement de l’enquête.
 
-Microsoft effectue aussi un post-mortem interne pour les incidents de protection des données. Dans le cadre de cet exercice, le niveau suffisant de réponse et les procédures d’exploitation sont évaluées, et les mises à jour pouvant être nécessaires à la *procédure d’exploitation standard de la réponse aux incidents de protection des données* ou des processus associés sont identifiées et mises en œuvre. Les post-mortem internes pour les violations de données sont des enregistrements hautement confidentiels qui ne sont pas accessibles aux clients. Les post-mortem peuvent toutefois être synthétisés et inclus dans des notifications d’événement client. Dans le cadre d’un cycle d’audit de routine, les processus de post-mortem sont vérifiés par des auditeurs externes pour assurer leur suivi.
+En fonction du niveau de gravité, Microsoft peut aussi effectuer un post-mortem interne pour les incidents de protection des données. Dans le cadre de cet exercice, le niveau suffisant de réponse et les procédures d’exploitation sont évaluées, et les mises à jour pouvant être nécessaires à la *procédure d’exploitation standard de la réponse aux incidents de protection des données* ou des processus associés sont identifiées et mises en œuvre. Les post-mortem internes pour les violations de données sont des enregistrements hautement confidentiels qui ne sont pas accessibles aux clients. Les post-mortem peuvent toutefois être synthétisés et inclus dans des notifications d’événement client. Dans le cadre d’un cycle d’audit de routine, les processus de post-mortem sont vérifiés par des auditeurs externes pour assurer leur suivi.
 
 ### <a name="notification"></a>Notification
 
-Lorsque les services professionnels Microsoft déclarent un incident de protection des données régi par le RGPD, nous avons un objectif de notification à nos clients en moins de 72 heures. Cette obligation de signalement sous 72 heures est un engagement stratégique des services professionnels, et non une exigence légale définie par le RGPD.
+Lorsque les Services professionnels Microsoft déclarent un incident de protection des données dans le cadre du RGPD, la notification de nos clients dans un délai de 72 heures est notre priorité. 
 
 Une fois qu’un incident de protection des données a été déclaré, le processus de notification s’effectue aussi rapidement que possible, tout en tenant compte des risques d’une progression trop rapide. Pour garantir la remise de la notification, il incombe au client de s’assurer que les informations de contact d’administration sur chaque compte, abonnement et portail de services concerné sont correctes. Bien que l’objectif soit d’offrir aux clients concernés un signalement précis, exploitable et opportun, il se peut que, pour respecter l’engagement des 72 heures, la notification initiale ne comprenne pas nécessairement l’ensemble des détails, certains d’entre eux pouvant ne pas être disponibles lors des phases initiales d’un incident de protection des données. Par ailleurs, Microsoft peut devoir ne pas divulguer certains détails en raison de la nature de l’incident de protection des données. Par exemple, il peut être nécessaire de cacher des détails si le fait de fournir une notification augmente le risque pour d’autres clients ou empêche Microsoft ou les autorités judiciaires d’arrêter un individu malveillant.
 
@@ -97,4 +98,4 @@ Lors de la notification aux clients d’une violation de données personnelles, 
 
 ## <a name="learn-more"></a>En savoir plus
 
-Apprenez-en davantage sur les Services professionnels Microsoft en visitant le Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>). 
+En savoir plus sur les Services professionnels Microsoft (<https://aka.ms/pstrust>). 
