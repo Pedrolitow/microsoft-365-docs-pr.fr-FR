@@ -1,7 +1,7 @@
 ---
 title: Rétentions basées sur des événements
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cette rubrique explique comment configurer votre flux de processus métier pour automatiser la rétention via des événements à l’aide de l’API REST de Microsoft 365.
-ms.openlocfilehash: b4ae97ad9564f61e65b990a0054fcf13d88f1d8d
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: b2aadaf4e450167cf7bff864569652c05deb7298
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631064"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807433"
 ---
 # <a name="automate-event-based-retention"></a>Rétention basée sur des événements
 
@@ -407,7 +407,7 @@ Utilisation du code d’exemple pour appeler des API REST
 
 Étape 1 : Accéder au centre de conformité et de sécurité.
 
-Étape 2 : Cliquez sur **Événements** sous **gouvernance des données**.
+Étape 2 : Sélectionner **Évènements** sous **Gouvernance des informations**.
 
 Étape 3 : Vérifier l’Événement a été créé.
 

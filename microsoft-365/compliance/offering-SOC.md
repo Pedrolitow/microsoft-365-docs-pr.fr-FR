@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4d8587438d564d98d9b30897ebdf5bf8722a09c8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859484"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804257"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -108,7 +109,7 @@ Les rapports permettent à vos auditeurs de comparer les services Entreprise Cl
 
 **À quelle fréquence des rapports Azure SOC sont-ils générés ?**
 
-Les rapports SOC relatifs à Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque trimestre. La fréquence accrue d’audit couvre une période plus opportune via un rapport SOC, ce qui offre une plus grande fiabilité lorsqu’il est réalisé par un auditeur externe, comparé à une lettre de crédit. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
+Les rapports SOC relatifs à Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque semestre (les périodes se terminant le 31 mars et le 30 septembre). Les lettres de crédit sont émises en janvier pour couvrir la période du 01/10 au 31/12 et en juillet pour couvrir la période de 01/04 au 30/06. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
 
 **Dois-je réaliser mon propre audit des centres de données Microsoft ?**
 
@@ -133,6 +134,6 @@ Le [Kit de ressources SOC pour les organisations de services](https://aka.ms/soc
  - [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
  - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf) (disponible uniquement en anglais pour le moment).

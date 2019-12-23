@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e2fab1df550382f44e09629e5b82a079d6f6555f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "39266121"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806617"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -79,7 +79,9 @@ Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la 
 Une stratégie DLP peut rechercher et protéger les informations sensibles dans Office 365, que ces informations se trouvent sur Exchange Online, SharePoint Online, OneDrive Entreprise ou Microsoft Teams. Vous pouvez choisir de protéger le contenu dans le courrier Exchange, les conversations et les messages de canal de Microsoft Teams, ainsi que toutes les bibliothèques SharePoint ou OneDrive, ou de sélectionner des emplacements spécifiques pour une stratégie.
   
 ![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
-  
+
+ Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
+
 Si vous optez pour l’inclusion ou l’exclusion de sites SharePoint ou de comptes OneDrive spécifiques, notez qu’une stratégie DLP ne peut pas contenir plus de 100 inclusions et exclusions. Vous pouvez néanmoins contourner cette limite en appliquant une stratégie mise en place à l’échelle de l’organisation ou une stratégie qui s’applique aux emplacements entiers.
   
 ### <a name="rules"></a>Rules
@@ -166,7 +168,9 @@ La notification par courrier électronique et le conseil de stratégie expliquen
 Dans un compte OneDrive Entreprise, un conseil de stratégie se présente comme ceci.
   
 ![Conseil de stratégie pour un document dans un compte OneDrive](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
-  
+
+ Pour en savoir plus sur les notifications utilisateur et les conseils de stratégie en matière de stratégie DLP, voir [Utilisation des notifications et des conseils de stratégie](use-notifications-and-policy-tips.md).
+
 #### <a name="incident-reports"></a>Rapports d’incident
 
 Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Ce rapport comprend des informations sur l’élément qui a fait l’objet d’une correspondance, le contenu qui a satisfait à la règle ainsi que le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
@@ -221,7 +225,7 @@ Par exemple, le type d’informations sensibles intégrées pour la réglementat
 
 Lorsque vous créez des règles dans une stratégie, chaque règle se voit attribuer une priorité en fonction de son ordre de création. Cela signifie que la première règle créée a priorité sur la deuxième et ainsi de suite. 
   
-![Règles dans l’ordre de priorité](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
+![Règles dans l’ordre de priorité](media/dlp-rules-in-priority-order.png)
   
 Une fois que vous avez configuré plusieurs stratégies DLP, vous pouvez modifier la priorité d’une ou plusieurs stratégies. Pour ce faire, sélectionnez une stratégie, sélectionnez **Modifier la stratégie**, puis utilisez la liste **Priorité** pour préciser sa priorité.
 

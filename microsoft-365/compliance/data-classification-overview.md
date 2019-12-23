@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: cb728c4e6a88fc7bb47716a40addd01f9828208f
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: 775802f8aecf04668641c2e7d6b24e645a7c9f90
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "39622496"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823736"
 ---
 # <a name="data-classification-overview-preview"></a>Vue d’ensemble de la classification des données (aperçu)
 
@@ -59,6 +59,8 @@ Lorsque vous appliquez une étiquette de confidentialité à un élément via Mi
 - la présence de la balise permet différents comportements de protection, tels que le filigrane ou le chiffrement obligatoires. Lorsque la protection de point de terminaison est activée, vous pouvez même empêcher un élément de quitter votre contrôle organisationnel.
 
 Pour plus d’informations sur les étiquettes de confidentialité, voir : [Vue d’ensemble sur les étiquettes de confidentialité](sensitivity-labels.md).
+
+Les étiquettes de confidentialité doivent être activées pour les fichiers stockés dans SharePoint et OneDrive pour que les données correspondantes apparaissent dans la page de classification des données. Pour en savoir plus, consulter [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](sensitivity-labels-sharepoint-onedrive-files.md).
 
 La carte d’étiquette de confidentialité affiche le nombre d’éléments (adresse de messagerie ou document) par niveau de confidentialité.
 
