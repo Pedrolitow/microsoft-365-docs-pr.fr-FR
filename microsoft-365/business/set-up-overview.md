@@ -23,14 +23,20 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Vue d’ensemble des étapes de configuration pour Microsoft 365 Business.
-ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967620"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850801"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
+
+Regardez une courte vidéo sur la configuration de Microsoft 365 Business.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+Si vous avez trouvé cette vidéo utile, consultez la [série de formation complète pour les petites entreprises et les nouveautés de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 La plupart des étapes de configuration peuvent être effectuées dans l’Assistant Installation, mais les autres options sont également répertoriées.
 
@@ -50,12 +56,10 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
   
   Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez augmenter votre sécurité en ajoutant les paramètres suivants :
 
-
 - **Protection contre les programmes malveillants**
 - **Protection contre le hameçonnage (ATP)**
 - **Archivage Exchange Online**
 - **Azure information protection (plan1**)
-
 
 Pour commencer, consultez la rubrique [configurer des stratégies de sécurité avancées](set-up-advanced-security.md).
 
