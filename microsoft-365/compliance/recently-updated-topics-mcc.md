@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Nous créons en permanence de nouveaux articles, en mettant à jour ceux existants et en apportant des modifications en fonction de vos commentaires. Découvrez les nouveautés et mises à jour ce mois-ci.
-ms.openlocfilehash: 497088cf5ad9da848879cf2c7197059917be6b07
-ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
+ms.openlocfilehash: 61e4798575c44a9759a15bb93dbbb723d5be8999
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685758"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850878"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -113,7 +113,7 @@ Ajout de nouveaux conseils aux articles suivants relatifs à la loi CCPA (Califo
 
 [Calcul du score de conformité Microsoft (version préliminaire](compliance-score-methodology.md) ) (mis à jour)<br>Ajout d’un contexte de calcul du score de conformité, incluant des détails sur la nouvelle base de données de protection des données Microsoft 365 qui prend en considération le score.
 
-### <a name="sensitivity-labels"></a>Étiquettes de niveau de confidentialité
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
 [Appliquer une étiquette de sensibilité au contenu automatiquement](apply-sensitivity-label-automatically.md) (mis à jour)<br>Suppression des informations sur la prise en charge à venir de l’étiquetage recommandé dans Outlook. Suppression des informations de licence en double. Pointe maintenant vers des informations de référence dans les [étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md).
 
@@ -147,10 +147,6 @@ Ajout de nouveaux conseils aux articles suivants relatifs à la loi CCPA (Califo
 
 [Recherche de contenu dans Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment) (mise à jour)<br>
 [Configuration des limites de conformité pour les enquêtes de découverte électronique dans Office 365](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments) (mise à jour)<br>Ajout de détails aux deux articles sur la recherche de contenu dans des environnements multi-géo SharePoint.
-
-### <a name="data-governance"></a>Gouvernance des données
-
-[Vue d’ensemble d’un archivage illimité dans Office 365](unlimited-archiving.md#how-auto-expanding-archiving-works) (mise à jour)<br>Ajout de détails sur la façon dont Office 365 ajoute un maximum de 20 Archives auxiliaires pour un total de 1 to de stockage supplémentaire.
 
 ### <a name="data-investigations"></a>Enquêtes sur les données
 

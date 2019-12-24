@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Pour les administrateurs : Découvrez comment activer l’archivage à extension automatique dans Office 365, qui permet à vos utilisateurs de disposer d’un espace de stockage illimité pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l’archivage à extension automatique pour l’ensemble de votre organisation ou uniquement pour des utilisateurs spécifiques.'
-ms.openlocfilehash: b5191aa080722b5bb3150c92d922b6b150fc545e
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 4059e007039a62e415fd0b5847d1d8fa120a1570
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38627090"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850888"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Activer l’archivage illimité dans Office 365 — aide de l’administrateur
 
@@ -124,4 +124,4 @@ Gardez les points suivants à l’esprit après avoir activé l’archivage à e
 - Les administrateurs ne peuvent pas ajuster le quota de stockage.
 
 > [!IMPORTANT]
-> L’archivage à extension automatique est uniquement pris en charge pour les boîtes aux lettres utilisées pour des utilisateurs individuels ou des boîtes aux lettres partagées dont le taux de croissance ne dépasse pas 1 Go par jour. L’utilisation de la journalisation, des règles de transport ou des règles de transfert automatique pour copier des messages vers une boîte aux lettres d’archivage à des fins d’archivage n’est pas autorisée. La boîte aux lettres d'archivage d'un utilisateur est destinée uniquement à cet utilisateur. Microsoft se réserve le droit de refuser l'archivage illimité dans les cas où la boîte aux lettres d'archivage d'un utilisateur sert à stocker les données d'archivage d'autres utilisateurs.
+> L’archivage à extension automatique est uniquement pris en charge pour les boîtes aux lettres utilisées pour des utilisateurs individuels ou des boîtes aux lettres partagées dont le taux de croissance ne dépasse pas 1 Go par jour. L’utilisation de la journalisation, des règles de transport ou des règles de transfert automatique pour copier des messages vers une boîte aux lettres d’archivage à des fins d’archivage n’est pas autorisée. La boîte aux lettres d'archivage d'un utilisateur est destinée uniquement à cet utilisateur. Microsoft se réserve le droit de refuser l’archivage illimité dans les cas où la boîte aux lettres d’archivage d’un utilisateur est utilisée pour stocker des données d’archivage pour d’autres utilisateurs ou dans d’autres cas d’utilisation inappropriée.

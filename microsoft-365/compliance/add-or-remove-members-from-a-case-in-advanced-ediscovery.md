@@ -14,30 +14,27 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 562735b72e3f191dab6c6f2fa0a317634667e22c
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 938c67bde705183201370d4843da2d6c5f03cc62
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256721"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854009"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Ajouter ou supprimer des membres à partir d’un cas
 
-Vous pouvez ajouter ou supprimer des membres pour gérer les personnes qui peuvent accéder au cas. Les utilisateurs ajoutés aux groupes de rôles Reviewer ou gestionnaire de découverte électronique peuvent être ajoutés en tant que membres du cas. Le gestionnaire eDiscovery qui a créé le cas est automatiquement ajouté en tant que membre.
+Vous pouvez ajouter ou supprimer des membres pour gérer les personnes qui peuvent accéder au cas. Toutefois, avant qu’un membre puisse accéder à un cas eDiscovery avancé (et effectuer des tâches dans le cas), vous devez ajouter l’utilisateur au groupe de rôles gestionnaire eDiscovery de la page **autorisations** dans le centre de sécurité et de conformité. Pour plus d’informations, consultez [la rubrique attribution d’autorisations de découverte électronique dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-1. À partir de la page **Advanced eDiscovery** , accédez à votre cas.
+1. Sur la page **Advanced eDiscovery** , accédez au cas auquel vous souhaitez ajouter un membre.
 
-2. Accédez à **paramètres** , puis sélectionnez « autorisations d’accès & ».
+2. Cliquez sur l’onglet **paramètres** , puis sur **Sélectionner** dans la vignette **accès & autorisations** .
 
 3. Cliquez sur **Mise à jour**.
 
-4. Sous **gérer les membres**, sélectionnez Ajouter une icône Ajouter pour ajouter des membres au cas. Vous pouvez également choisir d’ajouter un groupe de rôles à la demande de devis. Sous **gérer les groupes de rôles**, sélectionnez Ajouter une icône Ajouter.
-    N’oubliez pas que les groupes de rôles contrôlent l’autorisation d’accès au cas. Cela signifie que vous pouvez uniquement affecter un réviseur, un gestionnaire eDiscovery ou des groupes de rôles personnalisés avec le rôle de gestion des cas.
+4. Sous **gérer les membres**, cliquez sur **Ajouter** pour ajouter des membres à la demande de devis. Vous pouvez également choisir d’ajouter un groupe de rôles à la demande de devis en cliquant sur **Ajouter** sous **gérer les groupes de rôles**.
 
 5. Dans la liste des personnes ou des groupes de rôles qui peuvent être ajoutés en tant que membres de la case, activez la case à cocher en regard des noms des personnes ou des groupes de rôles que vous souhaitez ajouter.
 
-6. Une fois que vous avez sélectionné les personnes ou les groupes de rôles à ajouter en tant que membres du groupe, sélectionnez **Ajouter**.
+6. Une fois que vous avez sélectionné les personnes ou les groupes de rôles à ajouter en tant que membres de la demande, cliquez sur **Ajouter**.
 
-7. Dans **gérer ce cas**, sélectionnez **Enregistrer** pour enregistrer la nouvelle liste de membres de cas.
-
-8. Sélectionnez **Enregistrer** pour enregistrer la nouvelle liste de membres de cas.
+7. Dans la page flyout **gérer ce cas** , cliquez sur **Enregistrer** pour enregistrer la nouvelle liste des membres de cas.

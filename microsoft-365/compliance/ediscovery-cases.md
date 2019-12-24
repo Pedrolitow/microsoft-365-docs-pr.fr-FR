@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le centre de sécurité & conformité pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l’incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse approfondie dans Advanced eDiscovery.
-ms.openlocfilehash: cf880e6f54f2ab91bae23c3ecf468f88627f3025
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: efd5d20d72794ff6f71d2b1c6858bee615b14f3a
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685942"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854059"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>cas de découverte électronique dans le centre de sécurité & conformité
 
@@ -57,7 +57,10 @@ Utilisez le flux de travail suivant pour configurer et utiliser des cas eDiscove
 
 La première étape consiste à attribuer des autorisations liées à la découverte électronique appropriées à des personnes afin de les ajouter à un cas eDiscovery à l’étape 2. Vous devez être membre du groupe de rôles gestion de l’organisation (ou disposer du rôle de gestion des rôles) dans le centre de sécurité & conformité pour attribuer des autorisations eDiscovery. La liste suivante décrit les groupes de rôles liés à la découverte électronique dans le centre de sécurité & conformité. 
   
-- **Réviseur.** Ce groupe de rôles dispose des autorisations les plus restrictives liées à la découverte électronique. Le principal objectif de ce groupe de rôles est de permettre aux membres d’afficher et d’accéder aux données de cas dans Office 365 Advanced eDiscovery. Les membres de ce groupe ne peuvent voir et ouvrir que la liste des incidents figurant sur la page de **découverte électronique** dans le centre de sécurité & conformité dont ils sont membres. Une fois que l’utilisateur accède à un cas dans le centre de sécurité et de conformité, il peut cliquer sur **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Advanced eDiscovery. Ils ne peuvent pas créer de cas, ajouter des membres à un cas, créer des suspensions, créer des recherches, afficher un aperçu des résultats de la recherche, exporter des résultats de recherche ou préparer des résultats pour Advanced eDiscovery. 
+- **Réviseur.** Ce groupe de rôles dispose des autorisations les plus restrictives liées à la découverte électronique. Le principal objectif de ce groupe de rôles est de permettre aux membres d’afficher et d’accéder aux données de cas dans [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md) (également appelé *Advanced eDiscovery v1*). Les membres de ce groupe ne peuvent voir et ouvrir que la liste des incidents figurant sur la page de **découverte électronique** dans le centre de sécurité & conformité dont ils sont membres. Une fois que l’utilisateur accède à un cas dans le centre de sécurité et de conformité, il peut cliquer sur **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Advanced eDiscovery. Ils ne peuvent pas créer de cas, ajouter des membres à un cas, créer des suspensions, créer des recherches, afficher un aperçu des résultats de la recherche, exporter des résultats de recherche ou préparer des résultats pour Advanced eDiscovery. 
+
+   > [!NOTE]
+   > Pour l’instant, les utilisateurs membres du groupe de rôles réviseur ne peuvent pas accéder aux données dans [Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md) (également appelé *Advanced eDiscovery v2*). Pour ajouter des membres à un cas dans Advanced eDiscovery v2 afin qu’ils puissent consulter les données d’un incident, un utilisateur doit être membre du groupe de rôles gestionnaire eDiscovery.
     
 - **Gestionnaire eDiscovery.** Les membres de ce groupe de rôles peuvent créer et gérer des cas de découverte électronique. Ils peuvent ajouter et supprimer des membres, placer des emplacements de contenu en conservation, créer et modifier des recherches de contenu associées à un cas, exporter les résultats d’une recherche de contenu et préparer des résultats de recherche pour analyse dans Advanced eDiscovery. Il existe deux sous-groupes dans ce groupe de rôles. Ces sous-groupes ont différents rôles.
     
@@ -80,9 +83,9 @@ Pour plus d’informations sur les autorisations de découverte électronique, c
   
  **Pour attribuer des autorisations de découverte électronique, procédez comme suit :**
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
+2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
     
 3. Dans le centre de sécurité & conformité, cliquez sur **autorisations**, puis effectuez l’une des opérations suivantes en fonction des autorisations de découverte électronique que vous souhaitez attribuer.
     
@@ -98,9 +101,9 @@ Pour plus d’informations sur les autorisations de découverte électronique, c
 
 L’étape suivante consiste à créer un cas de découverte électronique. Vous devez être membre du groupe de rôles Gestionnaire de découverte électronique pour créer des cas de découverte électronique. Comme expliqué précédemment, une fois que vous avez créé un cas dans le centre de sécurité & conformité, vous (et d’autres membres de cas) pourrez accéder à cette même demande dans Advanced eDiscovery si votre organisation a un abonnement Office 365 E5.
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
+2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
     
 3. Dans le centre de sécurité & conformité, cliquez **sur découverte électronique** **eDiscovery** \> , ![puis sur](media/ITPro-EAC-AddIcon.gif) ajouter une icône pour **créer un cas**.
     
@@ -524,7 +527,7 @@ Lorsque vous rouvrez un cas, les conservations qui étaient en place lors de la 
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation  <br/> |Sans limite  <br/> |
   |Nombre maximal de blocages pour une organisation  <br/> |10 000  <br/> |
-  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1,000  <br/> |
+  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1 000  <br/> |
   |Nombre maximal de sites SharePoint et OneDrive entreprise en une seule suspension de cas  <br/> |100  <br/> |
    
 - **Qu’en est-il des cas qui ont été créés sur la page de gestion des dossiers dans Advanced eDiscovery ?** Vous pouvez accéder à la liste des anciens cas de découverte électronique avancée en cliquant sur le lien situé en bas de la page **découverte électronique** dans le centre de sécurité & conformité. Toutefois, pour effectuer un travail dans un cas plus ancien, vous devez contacter le support Office 365 et demander que le cas soit déplacé vers un nouveau cas eDiscovery dans le centre de sécurité & conformité. 
