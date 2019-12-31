@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 4aff384d571444e5641d3bcff58df136d27c7624
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40832047"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910115"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -31,6 +31,9 @@ Bien que nous permettons aux administrateurs de sécurité de personnaliser leur
 > La configuration du courrier indésirable doit être activée sur la boîte aux lettres afin que le filtrage fonctionne correctement. Cette option est activée par défaut, mais elle doit être vérifiée si le filtrage ne semble pas fonctionner. Consultez [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) pour en savoir plus. 
 
 Cette rubrique décrit ces paramètres recommandés par Microsoft pour vous aider à protéger vos utilisateurs Office 365.
+
+> [!TIP]
+> Il existe un nouveau module PowerShell que vous pouvez télécharger appelé Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) qui permet de déterminer certains de ces paramètres. Lorsqu’il est exécuté en tant qu’administrateur dans votre client, Get-ORCAReport permet de générer une évaluation du blocage du courrier indésirable, de l’anti-hameçonnage et d’autres paramètres d’hygiène des messages. Vous pouvez télécharger ce module à https://www.powershellgallery.com/packages/ORCA/l’adresse.
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Blocage du courrier indésirable, des programmes malveillants et de la protection anti-hameçonnage dans EOP
 
@@ -45,7 +48,7 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 |Action de détection de courrier d’hameçonnage|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier hameçon à haute fiabilité|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier en nombre|Déplacer le message dans le dossier Courrier indésirable|Mettre en quarantaine le message||
-|Définir le seuil de courrier électronique en masse sur|6 |4|La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).|
+|Définir le seuil de courrier électronique en masse sur|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine|30 jours|30 jours||
 |Conseils de sécurité|Activé|Activé||
 |Expéditeurs autorisés|Aucune|Aucune||
@@ -58,7 +61,7 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 
 La stratégie de blocage du courrier indésirable, appelée filtre de courrier indésirable avancé, est désapprouvée au moment de la rédaction de cet accord. Nos paramètres recommandés pour **ceux-ci sont pour les désactiver** pour les niveaux standard et strict :
 
-|Nom de la fonctionnalité de sécurité| Comments |
+|Nom de la fonctionnalité de sécurité| Commentaires |
 |---------|---------|
 |IncreaseScoreWithImageLinks| |
 |IncreaseScoreWithNumericIps| |
@@ -80,9 +83,9 @@ La stratégie de blocage du courrier indésirable, appelée filtre de courrier i
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
-|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire externe|500|400||
-|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire interne|1000|800||
-|Limites de destinataires de stratégie de courrier indésirable sortant-limite journalière|1000|800||
+|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire externe|400|500||
+|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire interne|800|1000||
+|Limites de destinataires de stratégie de courrier indésirable sortant-limite journalière|800|1000||
 |Action lorsqu’un utilisateur dépasse les limites|Empêcher l’utilisateur d’envoyer des messages|Empêcher l’utilisateur d’envoyer des messages||
 
 ### <a name="eop-anti-malware-policy-settings"></a>Paramètres de stratégie anti-programme malveillant EOP

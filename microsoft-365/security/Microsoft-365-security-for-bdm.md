@@ -2,7 +2,7 @@
 title: Sécurité Microsoft 365 pour les décideurs d’entreprise (BDM)
 ms.author: bcarter
 author: brendacarter
-manager: ''
+manager: johmar
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: les scénarios de menace et d’attaque les plus courants rencontrés par les organisations pour leurs environnements Microsoft 365 et les actions recommandées pour atténuer ces risques.
-ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9ad9d05cf29dba5aa3a7d14063db6fa2b4dd3bc4
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801249"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910135"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Sécurité Microsoft 365 pour les décideurs d’entreprise (BDM)
 
@@ -134,7 +134,7 @@ En dernier lieu, mais pas la surveillance et l’audit les moins continus de l�
 |Utiliser les outils **Office 365 ATP** :<br>• Fonctionnalités d’enquête et de réponse aux menaces<br> • Analyse et réponse automatisées |         |![coche verte](../images/green-check-mark.png)|
 |Utiliser **Microsoft Defender ATP**:<br> • [Détection et réponse aux points de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> • Analyse automatisée du score sécurisé <br>• [Chasse avancée](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![coche verte](../images/green-check-mark.png)|
 |Utilisez **Microsoft Cloud App Security** pour détecter un comportement inhabituel dans les applications Cloud pour identifier les ransomware, les utilisateurs compromis ou les applications non fiables, analyser l’utilisation à haut risque et résoudre automatiquement les risques pour votre organisation.|         |![coche verte](../images/green-check-mark.png)|
-|Utilisez **Microsoft Azure Sentinel** ou votre outil **Siem actuel** pour surveiller les menaces au sein de votre environnement. Azure sentinelle est gratuit à utiliser pendant la période de préversion. |         |![coche verte](../images/green-check-mark.png)|
+|Utilisez **Microsoft Azure Sentinel** ou votre outil Siem actuel pour surveiller les menaces au sein de votre environnement. |         |![coche verte](../images/green-check-mark.png)|
 |**Déployer [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) ** pour surveiller et protéger contre les menaces ciblant votre environnement Active Directory local.   |         |![coche verte](../images/green-check-mark.png) |
 |Utilisez le **Centre de sécurité Azure** pour surveiller les menaces entre les charges de travail hybrides et de Cloud. Azure Security Center inclut un niveau de fonctionnalité gratuit et un niveau standard de fonctionnalités qui sont payants en fonction des heures ou des heures de ressource.|         |         |
 
