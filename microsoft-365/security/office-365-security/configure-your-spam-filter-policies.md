@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les paramètres du filtre de courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables.
-ms.openlocfilehash: 72f4e166c1e934ad0d1ebb9685aff12efc4031c0
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 107b4cfa79a83ec5703edd3b47d00c59da81f4b6
+ms.sourcegitcommit: 8b619cc0587d180322d0799fdad813cdd929d9dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970840"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "40929790"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configuration de vos stratégies de filtrage du courrier indésirable
 Les paramètres du filtre de courrier indésirable incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables. Les paramètres de la stratégie de filtrage de courrier indésirable sont appliqués uniquement aux messages entrants et sont de deux sortes :
@@ -50,57 +50,69 @@ Pour activer des paramètres plus personnalisés ou ajouter des stratégies pers
 
 3. Sous la section **Actions de courrier indésirable et en bloc** :
 
-  - Sélectionnez une action pour le **courrier indésirable**, le **courrier fortement suspecté d’être indésirable**, le **courrier fortement suspecté d’être une tentative d’hameçonnage**, le **courrier de hameçonnage** et les **types de courrier en nombre**. Les valeurs disponibles sont :
+   - Sélectionnez une action pour le **courrier indésirable**, le **courrier fortement suspecté d’être indésirable**, le **courrier fortement suspecté d’être une tentative d’hameçonnage**, le **courrier de hameçonnage** et les **types de courrier en nombre**. Les valeurs disponibles sont :
 
-    - **Déplacer le message dans le dossier Courrier indésirable** Envoie le message au dossier Courrier indésirable des destinataires spécifiés. Il s’agit de l’action par défaut pour le courrier indésirable, le courrier indésirable hautement fiable et le bloc.<br/><br/>
+     - **Déplacer le message vers le dossier Courrier indésirable** : envoie le message vers le dossier Courrier indésirable des destinataires définis. Il s’agit de l’action par défaut pour le courrier indésirable, le courrier indésirable hautement fiable et le bloc.
 
-    > [!NOTE]
-    > Afin que cette action fonctionne sur des boîtes aux lettres locales, vous devez configurer deux règles de flux mail Exchange (règles de transport) sur vos serveurs locaux de manière à détecter les en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, voir [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Cette étape est importante pour les clients d'Exchange Online Protection (EOP) autonome uniquement.
+       > [!NOTE]
+       > Afin que cette action fonctionne sur des boîtes aux lettres locales, vous devez configurer deux règles de flux mail Exchange (règles de transport) sur vos serveurs locaux de manière à détecter les en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, voir [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Cette étape est importante pour les clients d'Exchange Online Protection (EOP) autonome.
 
-    - **Ajouter un en-tête X**: Envoie le message aux destinataires spécifiés, mais y ajoute le texte d'en-tête X l'identifiant comme courrier indésirable pour identifier le message comme indésirable. En vous basant sur ce texte comme identificateur, vous pouvez éventuellement créer des règles de boîte de réception ou utiliser un appareil en aval pour agir sur le message. Le texte d’en-tête X par défaut est **Ce message semble être un courrier indésirable**.<br/>Vous pouvez personnaliser le texte d'en-tête X avec la zone de texte **Ajouter ce texte d'en-tête X**. Si vous personnalisez le texte d'en-tête X, prenez en compte les conditions suivantes :
+     - **Ajouter un en-tête X** : envoie le courrier aux destinataires définis, mais y ajoute le texte d'en-tête X l'identifiant comme courrier indésirable. En vous basant sur ce texte comme identificateur, vous pouvez éventuellement créer des règles de boîte de réception ou utiliser un appareil en aval pour agir sur le message. Le texte d’en-tête X par défaut est **Ce message semble être un courrier indésirable**.
+     
+       Vous pouvez personnaliser le texte d'en-tête X avec la zone de texte **Ajouter ce texte d'en-tête X**. Si vous personnalisez le texte d'en-tête X, prenez en compte les conditions suivantes :
 
-      - Si vous indiquez uniquement l’en-tête au format \< *en-tête*  \>, dans lequel il n’y a aucun espace dans l’\<  *en-tête*  \>, le signe deux-points sera ajouté à la fin du texte personnalisé, suivi du texte par défaut. Par exemple, si vous indiquez « Voici mon en-tête personnalisé », le texte de l’en-tête X s’affichera comme ceci : « Voici mon en-tête personnalisé : ce message semble être un courrier indésirable. »
+       - Si vous indiquez uniquement l’en-tête au format \< *en-tête*  \>, dans lequel il n’y a aucun espace dans l’\<  *en-tête*  \>, le signe deux-points sera ajouté à la fin du texte personnalisé, suivi du texte par défaut. Par exemple, si vous indiquez « Voici mon en-tête personnalisé », le texte de l’en-tête X s’affichera comme ceci : « Voici mon en-tête personnalisé : ce message semble être un courrier indésirable. »
 
-      - Si vous insérez des espaces dans le texte d'en-tête personnalisé ou si vous ajoutez les deux-points vous-même, par exemple « Voici mon en-tête personnalisé » ou « Voici-mon-en-tête-personnalisé », le texte d'en-tête X revient à la valeur par défaut « Ce-message-est-un-courrier-indésirable : ce message semble être un courrier indésirable. »
+       - Si vous insérez des espaces dans le texte d'en-tête personnalisé ou si vous ajoutez les deux-points vous-même, par exemple « Voici mon en-tête personnalisé » ou « Voici-mon-en-tête-personnalisé », le texte d'en-tête X revient à la valeur par défaut « Ce-message-est-un-courrier-indésirable : ce message semble être un courrier indésirable. »
 
-      - Vous ne pouvez pas indiquer le texte d’en-tête au format\< *en-tête*  \>:\<  *valeur*  \>. Si vous le faites, les valeurs précédant et suivant le signe deux-points sont ignorées et le texte d'en-tête X par défaut apparaît à la place : « Ce message est un courrier indésirable : ce message semble être un courrier indésirable. »
+       - Vous ne pouvez pas indiquer le texte d’en-tête au format\<*en-tête*\> :\<*valeur*\>. Si vous le faites, les valeurs précédant et suivant le signe deux-points sont ignorées et le texte d'en-tête X par défaut apparaît à la place : « Ce message est un courrier indésirable : ce message semble être un courrier indésirable. »
 
-      - Notez que les messages avec cet en-tête X peuvent être déplacés vers le dossier courrier indésirable de la boîte aux lettres en raison de la configuration de la boîte aux lettres indésirable. Vous pouvez modifier cette option en désactivant cette fonctionnalité avec l’option Set-MailboxJunkEmailConfiguration.
+       - Notez que les messages avec cet en-tête X peuvent être déplacés vers le dossier courrier indésirable de la boîte aux lettres en raison de la configuration de la boîte aux lettres indésirable. Vous pouvez modifier cette option en désactivant cette fonctionnalité avec l’option Set-MailboxJunkEmailConfiguration.
 
-    - **Ajouter un texte au début de la ligne d'objet** Envoie le message à ses destinataires après avoir ajouté au début de la ligne d'objet le texte spécifié dans la zone d'entrée **Préfixer la ligne d'objet avec ce texte**. Si vous utilisez ce texte en tant qu'identificateur, vous pouvez créer des règles pour filtrer ou router les messages selon vos besoins.
+   - **Ajouter un texte au début de la ligne d'objet** Envoie le message à ses destinataires après avoir ajouté au début de la ligne d'objet le texte spécifié dans la zone d'entrée **Préfixer la ligne d'objet avec ce texte**. Si vous utilisez ce texte en tant qu'identificateur, vous pouvez créer des règles pour filtrer ou router les messages selon vos besoins.
+    
+     > [!NOTE]
+     > Le message continue d’être acheminé vers le dossier Courrier indésirable.
 
-    - **Rediriger le message vers une adresse e-mail**: Envoie le message à une adresse e-mail spécifiée au lieu des destinataires prévus. Spécifiez l'adresse de redirection dans la zone d'entrée **Rediriger vers cette adresse de messagerie**.
+   - **Rediriger le message vers une adresse e-mail**: Envoie le message à une adresse e-mail spécifiée au lieu des destinataires prévus. Spécifiez l'adresse de redirection dans la zone d'entrée **Rediriger vers cette adresse de messagerie**.
 
-    - **Supprimer le message**: Supprime le message entier, pièces jointes comprises.
+   - **Supprimer le message**: Supprime le message entier, pièces jointes comprises.
 
-    - **Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. Il s’agit de l’action par défaut pour les hameçons. Si vous sélectionnez cette option, dans la zone d'entrée **Conserver les courriers indésirables pendant (jours)**, spécifiez le nombre de jours pendant lesquels le courrier indésirable restera en quarantaine. (Il sera automatiquement supprimé à l'issue de cette période. La valeur par défaut est 30 jours, ce qui est également la valeur maximale. La valeur minimale est 1 jour.)<br/><br/>Conseil : Pour plus d'informations sur la manière dont les administrateurs peuvent gérer les messages électroniques mis en quarantaine dans le CAE, consultez les rubriques [Mise en quarantaine](quarantine.md) et [Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur](find-and-release-quarantined-messages-as-an-administrator.md). > Pour plus d’informations sur la configuration des messages de notification de courrier indésirable à envoyer aux utilisateurs, voir [Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP](configure-end-user-spam-notifications-in-eop.md) ou [configurer des notifications de courrier indésirable pour l’utilisateur final dans Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
+   - **Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. Il s’agit de l’action par défaut pour les hameçons. Si vous sélectionnez cette option, dans la zone d'entrée **Conserver les courriers indésirables pendant (jours)**, spécifiez le nombre de jours pendant lesquels le courrier indésirable restera en quarantaine. (Il sera automatiquement supprimé à l'issue de cette période. La valeur par défaut est 30 jours, ce qui est également la valeur maximale. La valeur minimale est 1 jour.)
 
-  - Configurer **sélectionnez le seuil** pour déterminer la façon dont vous voulez traiter les courriers électroniques en bloc comme du courrier indésirable, en fonction du niveau de réclamation en bloc (BCL) du message. Vous pouvez choisir un paramètre de seuil compris allant de 1 et 9, où 1 marque la plupart des messages électroniques en nombre en tant que courrier indésirable, et 9 autorise la remise de la plupart des messages électroniques en nombre. Le service effectue ensuite l’action configurée, comme par exemple l’envoi du message dans le dossier Courrier indésirable du destinataire. Pour plus de détails, consultez [Valeurs BCL](bulk-complaint-level-values.md) et [Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+     > [!TIP]
+     > Pour plus d'informations sur la manière dont les administrateurs peuvent gérer les messages électroniques en quarantaine, consultez les rubriques [Quarantaine](quarantine.md) et [Rechercher et débloquer des messages mis en quarantaine en tant qu'administrateur](find-and-release-quarantined-messages-as-an-administrator.md). <br/><br/> Pour plus d’informations sur la configuration des messages de notification de courrier indésirable pour les utilisateurs, voir [Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP](configure-end-user-spam-notifications-in-eop.md) ou [configurer des notifications de courrier indésirable pour l’utilisateur final dans Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
+
+   - Configurer **sélectionnez le seuil** pour déterminer la façon dont vous voulez traiter les courriers électroniques en bloc comme du courrier indésirable, en fonction du niveau de réclamation en bloc (BCL) du message. Vous pouvez choisir un paramètre de seuil compris allant de 1 et 9, où 1 marque la plupart des messages électroniques en nombre en tant que courrier indésirable, et 9 autorise la remise de la plupart des messages électroniques en nombre. Le service effectue ensuite l’action configurée, comme par exemple l’envoi du message dans le dossier Courrier indésirable du destinataire. Pour plus de détails, consultez [Valeurs BCL](bulk-complaint-level-values.md) et [Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 4. Dans la page de**propriétés du courrier indésirable**, vous pouvez configurer les options de mode de test pour la stratégie en configurant les éléments suivants :
 
-      - **Aucune** Aucune action en mode test n'est appliquée au message. Valeur par défaut.
+   - **Aucune** Aucune action en mode test n'est appliquée au message. Valeur par défaut.
 
-      - **Ajouter le texte d’en-tête X de test par défaut** L’activation de cette option a pour effet d’envoyer le message à ses destinataires après y avoir ajouté un en-tête X spécial l’identifiant comme ayant rencontré une option spécifique de filtrage avancé du courrier indésirable. 
+   - **Ajouter le texte d’en-tête X de test par défaut** L’activation de cette option a pour effet d’envoyer le message à ses destinataires après y avoir ajouté un en-tête X spécial l’identifiant comme ayant rencontré une option spécifique de filtrage avancé du courrier indésirable. 
 
-      - **Envoyer un message Cci à cette adresse** L’activation de cette option a pour effet d’envoyer une copie carbone invisible du message à l’adresse de courrier que vous spécifiez dans cette zone d’entrée.  <br/><br/>Pour plus d'informations sur les options avancées de filtrage avancé du courrier indésirable, y compris sur les descriptions de chaque option et du texte d'en-tête X associé à chaque option, voir [Options de filtrage avancé du courrier indésirable](advanced-spam-filtering-asf-options.md).
+   - **Envoyer un message Cci à cette adresse** L’activation de cette option a pour effet d’envoyer une copie carbone invisible du message à l’adresse de courrier que vous spécifiez dans cette zone d’entrée.  <br/><br/>Pour plus d'informations sur les options avancées de filtrage avancé du courrier indésirable, y compris sur les descriptions de chaque option et du texte d'en-tête X associé à chaque option, voir [Options de filtrage avancé du courrier indésirable](advanced-spam-filtering-asf-options.md).
 
 5. Pour les stratégies personnalisées uniquement, cliquez sur l'option de menu **Appliquer à**, puis créez un règle basée sur une condition pour spécifier les utilisateurs, groupes ou domaines auxquels cette stratégie s'applique. Vous pouvez créer plusieurs conditions pour autant qu'elles soient uniques.
 
-      - Pour sélectionner des utilisateurs, cliquez sur **Le destinataire est**. Dans la boîte de dialogue suivante, sélectionnez un ou plusieurs expéditeurs de votre organisation dans la liste du sélecteur, puis cliquez sur **Ajouter**. Pour ajouter des expéditeurs ne figurant pas dans la liste, entrez leurs adresses de messagerie, puis cliquez sur **Vérifier les noms**. Dans ce champ, vous pouvez également entrer des caractères génériques pour sélectionner plusieurs adresses de messagerie (par exemple : \*@ _domainname_). Une fois les sélections effectuées, cliquez sur **OK** pour revenir à l'écran principal.
+   - Pour sélectionner des utilisateurs, cliquez sur **Le destinataire est**. Dans la boîte de dialogue suivante, sélectionnez un ou plusieurs expéditeurs de votre organisation dans la liste du sélecteur, puis cliquez sur **Ajouter**. Pour ajouter des expéditeurs ne figurant pas dans la liste, entrez leurs adresses de messagerie, puis cliquez sur **Vérifier les noms**. Dans ce champ, vous pouvez également entrer des caractères génériques pour sélectionner plusieurs adresses de messagerie (par exemple : \*@ _domainname_). Une fois les sélections effectuées, cliquez sur **OK** pour revenir à l'écran principal.
 
-      - Pour sélectionner des groupes, sélectionnez**le destinataire est membre de**. Ensuite, dans la boîte de dialogue suivante, sélectionnez ou spécifiez les groupes. Cliquez sur **ok** pour revenir à l'écran principal.
+   - Pour sélectionner des groupes, sélectionnez**le destinataire est membre de**. Ensuite, dans la boîte de dialogue suivante, sélectionnez ou spécifiez les groupes. Cliquez sur **ok** pour revenir à l'écran principal.
 
-      - Pour sélectionner des domaines, sélectionnez le **domaine du destinataire est**. Ensuite, dans la boîte de dialogue suivante, ajoutez les domaines. Cliquez sur **ok** pour revenir à l'écran principal. <br/><br/>Vous pouvez créer des exceptions dans la règle. Par exemple, pour filtrer les messages de tous les domaines, sauf un domaine particulier. Cliquez sur **Ajouter une exception**, puis créez vos conditions d'exception de la même manière que vous avez créé les autres conditions.<br/><br/>L’application d’une stratégie de courrier indésirable à un groupe est prise en charge uniquement pour les **groupes de sécurité à extension messagerie**.
+   - Pour sélectionner des domaines, sélectionnez le **domaine du destinataire est**. Ensuite, dans la boîte de dialogue suivante, ajoutez les domaines. Cliquez sur **ok** pour revenir à l'écran principal.
+
+     Vous pouvez créer des exceptions dans la règle. Par exemple, pour filtrer les messages de tous les domaines, sauf un domaine particulier. Cliquez sur **Ajouter une exception**, puis créez vos conditions d'exception de la même manière que vous avez créé les autres conditions.
+
+     L’application d’une stratégie de courrier indésirable à un groupe est prise en charge uniquement pour les **groupes de sécurité à extension messagerie**.
 
 6. Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie s'affiche dans le volet droit.
 
-La stratégie par défaut ne peut pas être désactivée ou supprimée et les stratégies personnalisées ont toujours priorité sur la stratégie par défaut. Pour les stratégies personnalisées, vous pouvez cocher ou décocher des cases dans la colonne **ACTIVÉ** afin de les activer ou désactiver. Par défaut, toutes les stratégies sont activées. Pour supprimer une stratégie personnalisée, sélectionnez-la, cliquez sur l'![Icône Supprimer](../media/ITPro-EAC-DeleteIcon.gif)**Supprimer**, puis confirmez sa suppression.
+Vous ne pouvez pas désactiver ou supprimer la stratégie par défaut et les stratégies personnalisées ont toujours priorité sur la stratégie par défaut. Pour les stratégies personnalisées, vous pouvez cocher ou décocher des cases dans la colonne **ACTIVÉ** afin de les activer ou désactiver. Par défaut, toutes les stratégies sont activées. Pour supprimer une stratégie par défaut, sélectionnez la police, cliquez sur **Supprimer** ![icône Supprimer](../media/ITPro-EAC-DeleteIcon.gif), puis confirmez sa suppression.
 
 > [!TIP]
 > Vous pouvez modifier leur priorité (ordre d'exécution) en cliquant sur les flèches haut![Icône flèche vers le haut](../media/ITPro-EAC-UpArrowIcon.gif) et bas![Icône de flèche vers le bas](../media/ITPro-EAC-DownArrowIcon.gif). La stratégie dont la **PRIORITÉ** est **0** s’exécute d’abord, suivie des stratégies dont l’ordre de priorité est **1**, **2**, etc.
 
-## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Utilisation de PowerShell à distance pour configurer les stratégies de filtrage du courrier indésirable
+## <a name="use-powershell-to-configure-spam-filter-policies"></a>Utilisation de PowerShell pour configurer les stratégies de filtrage du courrier indésirable
 
 Vous pouvez également configurer et appliquer des stratégies de filtrage du contenu indésirable dans PowerShell. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour apprendre à utiliser Windows PowerShell afin d’établir une connexion à Exchange Online Protection, voir [Connexion à Exchange Online Protection à l’aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -120,7 +132,7 @@ Pour vous assurer que le courrier indésirable est correctement détecté et tra
 
 Incluez le texte GTUBE suivant dans une ligne d'un message électronique, sans espaces ni sauts de ligne :
 
-```
+```text
 XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
 
@@ -136,21 +148,21 @@ Les listes verte et rouge sont configurées dans le cadre de la stratégie anti-
 
 1. Dans la section **Listes vertes**, vous pouvez indiquer des entrées, telles que des expéditeurs ou des domaines, qui seront toujours remises dans la boîte de réception. Le courrier électronique provenant de ces entrées n’est pas traité par le filtre de courrier indésirable.
 
-      - Ajoutez des expéditeurs approuvés à la liste des expéditeurs autorisés. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **Enregistrer** pour revenir à la page **Listes vertes**.
+   - Ajoutez des expéditeurs approuvés à la liste des expéditeurs autorisés. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **Enregistrer** pour revenir à la page **Listes vertes**.
 
-      - Ajoutez des domaines approuvés à la liste de domaines autorisés. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **Enregistrer** pour revenir à la page **Listes vertes**.
+   - Ajoutez des domaines approuvés à la liste de domaines autorisés. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **Enregistrer** pour revenir à la page **Listes vertes**.
 
-> [!CAUTION]
-> Vous ne devez jamais répertorier les domaines acceptés (domaines qui vous appartiennent) ou les domaines communs tels que Microsoft.com, office.com, etc. à une liste verte. Cela permettrait aux usurpateurs d’envoyer des courriers non restreints à votre organisation.
+   > [!CAUTION]
+   > Vous ne devez jamais répertorier les domaines acceptés (domaines qui vous appartiennent) ou les domaines communs tels que Microsoft.com, office.com, etc. à une liste verte. Cela permettrait aux usurpateurs d’envoyer des courriers non restreints à votre organisation.
 
 2. Dans la page **Listes rouges**, vous pouvez indiquer des entrées, telles que des expéditeurs ou des domaines, qui seront toujours marquées comme courrier indésirable. Le service applique l’action configurée de courrier indésirable à probabilité élevée sur le courrier électronique correspondant à ces entrées.
 
-      - Ajoutez des expéditeurs indésirables à la liste de blocage des expéditeurs. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
+   - Ajoutez des expéditeurs indésirables à la liste de blocage des expéditeurs. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
 
-      - Ajoutez des domaines indésirables à la liste des domaines bloqués. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
+   - Ajoutez des domaines indésirables à la liste des domaines bloqués. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
 
 > [!TIP]
->  Dans certains cas, il est possible que votre organisation n’accepte pas le verdict fourni par le service. Dans ce cas, vous souhaiterez peut-être conserver le contenu permanent de la liste verte ou rouge. Toutefois, si vous comptez placer un domaine sur la liste verte pendant une période prolongée, demandez à l’expéditeur de vérifier que le domaine est authentifié et qu’il est paramétré sur DMARC refuser si ce n’est pas le cas.
+> Dans certains cas, il est possible que votre organisation n’accepte pas le verdict fourni par le service. Dans ce cas, vous souhaiterez peut-être conserver le contenu permanent de la liste verte ou rouge. Toutefois, si vous comptez placer un domaine sur la liste verte pendant une période prolongée, demandez à l’expéditeur de vérifier que le domaine est authentifié et qu’il est paramétré sur DMARC refuser si ce n’est pas le cas.
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 <a name="sectionSection6"> </a>
