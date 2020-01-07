@@ -3,7 +3,7 @@ title: Soumission des messages indésirables, légitimes ou des tentatives de ha
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/19/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Vous et vos utilisateurs pouvez soumettre des messages indésirables faux positifs et faux positifs à Microsoft pour analyse. '
-ms.openlocfilehash: fb939c4166bc6c732f831dc767bffe1cfd7a2f7c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080441"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959642"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse
 
@@ -58,8 +58,8 @@ Pour soumettre un courrier indésirable ou une tentative de hameçonnage à Micr
     
 3. Copiez et collez le message d’hameçonnage ou de courrier indésirable dans le nouveau message en tant que pièce jointe. 
     
-    > [!NOTE]
-    > Vous pouvez joindre plusieurs messages au nouveau message. Assurez-vous que tous les messages sont du même type, à savoir les messages de hameçonnage ou les messages de courrier indésirable. > Laissez le corps du message vide. 
+   > [!NOTE]
+   > • Vous pouvez joindre plusieurs messages dans le nouveau message. Assurez-vous que tous les messages sont du même type : les messages de hameçonnage ou les messages électroniques de courrier indésirable. <br/><br/>• Laissez le corps du nouveau message vide. <br/><br/>• Utilisez les formats. MSG (format Outlook par défaut) ou. eml (Outlook sur le format Web par défaut) pour les messages joints.
   
 4. Cliquez sur **Envoyer**.
     
@@ -72,7 +72,7 @@ Les administrateurs peuvent examiner davantage d’informations sur les paramèt
   
 Vous pouvez envoyer des messages de courrier non indésirable de la manière suivante :
   
-- Si vous utilisez l’action **déplacer le message vers le dossier courrier indésirable** lorsque vous configurez vos filtres de contenu (il s’agit de l’action par défaut), les utilisateurs peuvent publier des messages faux positifs dans le dossier courrier indésirable Outlook ou Outlook sur le Web (anciennement Outlook Web App). . 
+- Si vous utilisez l’action **déplacer le message vers le dossier courrier indésirable** lorsque vous configurez vos filtres de contenu (il s’agit de l’action par défaut), les utilisateurs peuvent publier des messages faux positifs dans le dossier courrier indésirable Outlook ou Outlook sur le Web (anciennement Outlook Web App). 
     
   - Les utilisateurs d’Outlook peuvent émettre des messages faux positifs à l’aide du menu contextuel **légitime** . Toutefois, ils doivent envoyer le message à Microsoft par courrier électronique, comme illustré dans la procédure décrite dans cet article. 
     

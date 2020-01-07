@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/30/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 3055a5330707b3654998fbdc937ead239742cb32
-ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.openlocfilehash: 7914c29f932469cdcea7436d1084536eaaf3d093
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910155"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959662"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -108,6 +108,9 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
   - Dans la section **appliqué à** , choisissez **le destinataire est membre de**, puis choisissez le ou les groupes que vous souhaitez inclure dans votre stratégie. Choisissez **Ajouter**, puis choisissez **OK**.
     
 6. Cliquez sur **Enregistrer**.
+
+> [!NOTE]
+> Les stratégies de liens fiables ATP avec une priorité plus élevée seront prioritaires. Si un utilisateur est soumis à deux stratégies ou plus, seule la stratégie de priorité plus élevée prendra effet.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Étape 4 : en savoir plus sur les options de stratégie de liens approuvés ATP
 

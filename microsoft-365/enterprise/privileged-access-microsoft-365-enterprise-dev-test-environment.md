@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 7e6a2ddea341f49c737409d8586bd9e70c9b2b79
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: f0010b4d6aa85902473676d023d8b4fb9f4018bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831815"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959632"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 Entreprise
 
@@ -28,8 +28,8 @@ Avec les instructions de cet article, vous configurez la gestion des accès priv
 
 ![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> Cliquez [ici](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+>[!TIP]
+>Cliquez [ici](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Créer l’environnement de test Microsoft 365 Entreprise.
 
@@ -37,8 +37,8 @@ Si vous souhaitez simplement configurer la gestion des accès privilégiés de m
   
 Si vous souhaitez configurer la gestion des accès privilégiés dans une entreprise simulée, suivez les instructions de l' [authentification directe](pass-through-auth-m365-ent-test-environment.md).
   
-> [!NOTE]
-> Le test de la gestion des accès privilégiés ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS. Elle est fournie ici en tant qu’option qui vous permet de tester la gestion des accès privilégiés et de l’expérimenter dans un environnement qui représente une organisation typique. 
+>[!NOTE]
+>Le test de la gestion des accès privilégiés ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS. Elle est fournie ici en tant qu’option qui vous permet de tester la gestion des accès privilégiés et de l’expérimenter dans un environnement qui représente une organisation typique. 
 
 ## <a name="phase-2-configure-privileged-access-management"></a>Phase 2 : configurer la gestion des accès privilégiés
 
@@ -74,8 +74,8 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Créer une stratégie d’accès privilégié pour la tâche New-JournalRule
 
-> [!NOTE]
-> Si vous n’avez pas déjà effectué les étapes 1 et 2 de la phase 2 de ce guide, assurez-vous de suivre les étapes nécessaires pour créer un groupe d’approbateurs nommé « approbateurs d’accès aux privilèges » et pour activer l’accès privilégié dans votre environnement de test.
+>[!NOTE]
+>Si vous n’avez pas déjà effectué les étapes 1 et 2 de la phase 2 de ce guide, assurez-vous de suivre les étapes nécessaires pour créer un groupe d’approbateurs nommé « approbateurs d’accès aux privilèges » et pour activer l’accès privilégié dans votre environnement de test.
 
 1. Connectez-vous au [Centre d’administration 365 de Microsoft](https://admin.microsoft.com) à l’aide des informations d’identification du compte d’administrateur global pour votre environnement de test.
 

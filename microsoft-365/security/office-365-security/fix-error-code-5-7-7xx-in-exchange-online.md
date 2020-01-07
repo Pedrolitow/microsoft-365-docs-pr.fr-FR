@@ -3,7 +3,7 @@ title: Corriger les problèmes de remise des courriers électroniques pour le co
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 06/11/2019
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment résoudre les problèmes liés aux messages électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online (le client a bloqué l’envoi de messages).
-ms.openlocfilehash: 9c95a8aa3f2dbc7b44524b4392090f7435d2800b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970450"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959652"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Corriger les problèmes de remise des courriers électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online
 
@@ -27,42 +27,52 @@ Cette rubrique décrit ce que vous pouvez faire si vous voyez le code d’État 
 
 ## <a name="57705-tenant-has-exceeded-threshold-restriction-what-you-need-to-know"></a>5.7.705 : le client a dépassé la restriction de seuil : ce que vous devez savoir
 
-Les expéditeurs internes pouvaient voir cette notification d’échec de remise chaque fois que vous essayez d’envoyer des messages si votre client a été compromis. Cela se occus généralement lorsque la majorité du trafic provenant de votre client a été détectée comme suspecte et a provoqué une interdiction d’envoi pour le client. Cela peut également se produire si vos utilisateurs envoient une grande quantité de courrier en nombre à partir d’Office 365. Comme indiqué dans la description du service, les clients Exchange Online qui doivent envoyer des courriers électroniques commerciaux en bloc légitimes (par exemple, des bulletins d’information clients) doivent utiliser des fournisseurs tiers spécialisés dans ces services.
+Une fois que vos utilisateurs (collectivement, en tant qu’organisation) envoient une certaine quantité d’e-mails suspects via le service, tous les utilisateurs peuvent être empêchés d’envoyer des courriers jusqu’à ce que le problème soit résolu. Il s’agit généralement du résultat d’un compromis (le plus courant) ou de l’envoi d’un message trop volumineux. Les utilisateurs recevront une notification d’état de remise indiquant :
 
-Une fois que vos utilisateurs ont envoyé une certaine quantité de courrier suspect via le service, en tant que client, tous les utilisateurs peuvent être empêchés d’envoyer des messages jusqu’à ce que le problème soit résolu. Les utilisateurs reçoivent une notification d’échec de remise qui indique :
+`550 5.7.705 Access denied, tenant has exceeded threshold`
 
-- 550 5.7.705 accès refusé, le client a dépassé le seuil
+Dans de rares cas, cela peut également se produire si vous renouvelez votre abonnement une fois qu’il a expiré. Le service doit synchroniser les nouvelles informations de l’abonnement (en général, pas plus d’un jour), mais votre organisation peut ne pas pouvoir envoyer de courrier électronique entre temps. La meilleure façon d’éviter cela est de s’assurer que votre abonnement n’expire pas.
 
 ## <a name="57750-unregistered-domain-email-restriction-what-you-need-to-know"></a>5.7.750 : restriction de messagerie de domaine non enregistrée : ce que vous devez savoir
 
-Office 365 permet aux clients de relayer certains messages via Exchange Online Protection (EOP). Par exemple, lorsque les utilisateurs disposent d’une boîte aux lettres Office 365 et que quelqu’un les envoie à une boîte aux lettres externe, le transfert de courrier est configuré de manière à ce qu’il redevienne la boîte aux lettres externe de l’utilisateur. Il s’agit le plus souvent dans les environnements d’éducation où les étudiants veulent tirer parti de leur interface de messagerie personnelle mais recevoir des courriers électroniques liés à l’école. Un autre exemple est lorsque les clients sont dans un scénario hybride et disposent de serveurs sur site qui envoient des messages provenant d’EOP.
+Office 365 permet aux clients de relayer des messages via Exchange Online Protection (EOP). Par exemple:
+
+- Une boîte aux lettres Office 365 reçoit un message provenant d’un expéditeur externe. Le transfert du courrier est configuré sur la boîte aux lettres Office 365, de sorte que le message revient à l’adresse de messagerie externe de l’utilisateur. Ce scénario est le plus courant dans les environnements d’éducation où les étudiants veulent utiliser leurs comptes de messagerie personnels pour afficher les messages liés à l’école.
+
+- Envrionments hybride qui ont des serveurs de messagerie locaux qui envoient des messages sortants via EOP.
 
 ### <a name="problems-with-unregistered-domains"></a>Problèmes liés aux domaines non enregistrés
 
-Le problème est lié au fait que les serveurs sur site sont compromis et finissent par relayer un volume important de courrier indésirable de EOP. Dans presque tous les cas, les connecteurs corrects sont configurés, mais les courriers électroniques sont envoyés depuis les domaines non enregistrés, également appelés domaines. Office 365 autorise une quantité raisonnable de courrier provenant de domaines non enregistrés, mais un domaine accepté doit être configuré dans le centre d’administration pour chaque domaine que vous envisagez d’envoyer à.
+Le problème est lorsque les serveurs de messagerie locaux compromis relaient un grand nombre de courriers indésirables via EOP. Dans presque tous les cas, les connecteurs sont correctement configurés, mais les courriers électroniques sont envoyés à partir de domaines non enregistrés (également appelés domaines non mis en service). Office 365 autorise une quantité raisonnable de courrier électronique provenant de domaines non enregistrés, mais vous devez configurer chaque domaine que vous utilisez pour envoyer des messages électroniques en tant que domaine accepté.
 
-Une fois compromis, les clients ne pourront pas envoyer de messages sortants pour les domaines non enregistrés. Les utilisateurs reçoivent une notification d’échec de remise qui indique :
+Une fois compromis, les clients ne pourront pas envoyer de messages électroniques sortants pour les domaines non enregistrés. Les utilisateurs recevront une notification d’état de remise indiquant :
 
-- 550 5.7.750 service non disponible. Le client a bloqué l’envoi à partir de domaines non enregistrés
+`550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
 ## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>Comment débloquer le client afin de le renvoyer
 
-Il y a plusieurs choses à faire si votre client est bloqué pour l’envoi de messages électroniques :
+Il y a plusieurs choses que vous devez faire si votre client est bloqué pour l’envoi de messages électroniques :
 
-1. Assurez-vous d’enregistrer tous vos domaines dans le centre d’administration Microsoft 365. Vous trouverez plus d’informations [ici](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Vérifiez que tous vos domaines de messagerie sont inscrits. Pour plus d’informations, consultez [la rubrique ajouter un domaine à Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) et [gérer les domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Recherchez les connecteurs inhabituels. Les acteurs malveillants vont souvent créer de nouveaux connecteurs entrants dans votre client Office 365 pour envoyer du courrier indésirable. Vous trouverez plus d’informations sur la vérification de vos connecteurs [ici](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector).
+2. Recherchez les [connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inhabituels. Les intervenants malveillants créeront souvent de nouveaux connecteurs entrants dans votre organisation Office 365 pour envoyer du courrier indésirable. Pour afficher vos connecteurs existants, consultez la rubrique [Validate Connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
-3. Verrouillez vos serveurs locaux et assurez-vous qu’ils ne sont pas compromis.
+3. Vérifiez les utilisateurs compromis, comme décrit dans [réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md).
+
+4. [Activez l’authentification multifacteur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) pour tous les administrateurs de votre organisation Office 365.
+
+5. Verrouillez vos serveurs de messagerie locaux et assurez-vous qu’ils ne sont pas compromis.
 
    > [!TIP]
-   > Il existe de nombreux facteurs impliqués, en particulier s’il s’agit de serveurs tiers. Quelle que soit la fonctionnalité, vous devez être en mesure de confirmer que tout le courrier sortant de vos serveurs est légitime.
+   > Il existe de nombreux facteurs, en particulier si vous utilisez des serveurs tiers. Quoi qu’il en soit, vous devrez vérifier que tous les messages sortants sont légitimes.
 
-4. Une fois la procédure terminée, vous devez appeler le support Microsoft et demander à ce que votre locataire débloquée pour envoyer à nouveau des domaines non enregistrés.  Le fait de fournir le code d’erreur est utile, mais vous devrez prouver que votre environnement est sécurisé et que le courrier indésirable ne sera pas renvoyé. Vous trouverez plus d’informations sur l’ouverture d’un cas de support [ici](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+6. Appelez le support Microsoft et demandez-lui de débloquer l’envoi à partir de domaines non enregistrés. Le code d’erreur est utile, mais vous devez prouver que votre environnement a été sécurisé et qu’il ne peut pas envoyer de courrier indésirable. Pour ouvrir un cas de support technique, voir [contacter le support pour les entreprises-aide de l’administrateur](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
+
+[Guide de messagerie en bloc dans la section limites d’envoi de la description du service Exchange Online](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Envoyer les notifications d’échec de remise par courrier électronique dans Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
