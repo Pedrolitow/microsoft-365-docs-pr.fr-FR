@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 1ae0b469e2edd6970f3384f2777bb9bdc5cad2a6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bd9d86a5a5d96e8f7978f5c2482eb127b0379a09
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802667"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959523"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de supervision dans Office 365
 
@@ -68,8 +68,8 @@ Vous créez des stratégies de surveillance dans le centre de conformité. Ces s
 
 Avant de commencer à utiliser la surveillance, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Office 365, les listes de distribution Exchange et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de la surveillance avec un groupe supervisé ou une liste de groupes.
 
-> [!IMPORTANT]
-> Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Relecteurs
 
@@ -129,11 +129,11 @@ Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour
 
 Surveiller les messages électroniques envoyés ou reçus dans votre organisation pour une langue offensante. Le modèle utilise une combinaison d’apprentissage automatique, d’intelligence artificielle et de mots-clés pour identifier la langue dans les messages électroniques susceptibles de violer les stratégies anti-harcèlement et intimidation. Le modèle de langage offensant prend actuellement en charge les mots clés anglais et surveille le corps des messages électroniques.
 
-> [!NOTE]
-> Créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) avec un [dictionnaire de mots clés personnalisé](create-a-keyword-dictionary.md) pour les termes bloqués si vous devez :
+>[!NOTE]
+>Créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) avec un [dictionnaire de mots clés personnalisé](create-a-keyword-dictionary.md) pour les termes bloqués si vous devez :
 >
-> - surveiller les communications de Microsoft teams dans votre organisation pour une langue choquante
-> - empêcher ou bloquer le langage offensant dans les communications dans votre organisation
+>- surveiller les communications de Microsoft teams dans votre organisation pour une langue choquante
+>- empêcher ou bloquer le langage offensant dans les communications dans votre organisation
 
 Veuillez noter que le modèle ne fournit pas une liste exhaustive du langage offensant. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour le modèle à sa discrétion. Bien que le modèle puisse aider votre organisation à surveiller le langage offensant, le modèle n’est pas destiné à fournir aux seuls moyens de surveillance ou d’adressage de cette langue de votre organisation. Votre organisation, et non Microsoft, reste responsable de toutes les décisions relatives à la surveillance et au blocage du langage offensant.
 
@@ -235,8 +235,8 @@ Utilisez les rapports de surveillance pour afficher l’activité de révision a
 2. Accédez au **tableau de bord** **rapports** \> ou à la **surveillance** pour afficher le widget rapports de supervision pour un résumé de l’activité de stratégie de surveillance actuelle.
 3. Sélectionnez le widget **surveillance** pour ouvrir la page rapport détaillé.
 
-> [!NOTE]
-> Si vous ne parvenez pas à accéder à la page **rapports** , vérifiez que vous êtes membre du groupe de rôles examen de surveillance, comme décrit dans la rubrique [création d’un contrôle disponible dans votre organisation](configure-supervision-policies.md). L’inclusion dans ce groupe de rôles vous permet de créer et de gérer des stratégies de surveillance et d’exécuter le rapport.
+>[!NOTE]
+>Si vous ne parvenez pas à accéder à la page **rapports** , vérifiez que vous êtes membre du groupe de rôles examen de surveillance, comme décrit dans la rubrique [création d’un contrôle disponible dans votre organisation](configure-supervision-policies.md). L’inclusion dans ce groupe de rôles vous permet de créer et de gérer des stratégies de surveillance et d’exécuter le rapport.
   
 ### <a name="how-to-use-the-report"></a>Utilisation du rapport
 
@@ -260,8 +260,8 @@ Voici une répartition des valeurs affichées dans la colonne **type de balise**
 | **Dans PurVIEW** | Nombre total de messages provenant d’Exchange, de teams et de sources de données tierce analysés par une stratégie de surveillance |
 | **Resolved** | Nombre total de messages provenant d’Exchange, de teams et de sources de données tierces classées comme **résolus**|
 
-> [!NOTE]
-> Les stratégies de surveillance doivent être mises en service avant d’apparaître dans les rapports. Si des stratégies sont supprimées, les données historiques continuent d’apparaître. Toutefois, elles sont indiquées en tant que « stratégie inexistante » et la fonction d' **exportation** n’est pas disponible.
+>[!NOTE]
+>Les stratégies de surveillance doivent être mises en service avant d’apparaître dans les rapports. Si des stratégies sont supprimées, les données historiques continuent d’apparaître. Toutefois, elles sont indiquées en tant que « stratégie inexistante » et la fonction d' **exportation** n’est pas disponible.
 
 ## <a name="audit"></a>Contrôlé
 
@@ -288,4 +288,3 @@ Outre les informations fournies dans les journaux et les rapports de surveillanc
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
 Pour configurer les stratégies de surveillance pour votre organisation, consultez la rubrique [configurer les stratégies de surveillance](configure-supervision-policies.md).
-

@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f0ed98386a33b84d109fb94093b3d03cefc127b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: da5fbef7ed9ceb136f276e2d6baab0c94bba3c22
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803997"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959533"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Considérations relatives à la sécurité et à la confidentialité du Cloud Government de la Nouvelle-Zélande
 
@@ -37,7 +37,7 @@ Découvrez les avantages de NZ CC Framework sur le Cloud Microsoft : [Télécha
 
 Découvrez comment accélérer le déploiement de l’infrastructure de la version de CC de votre application avec notre plan de sécurité et de conformité Azure : [Télécharger la réponse Azure vers la version de l’infrastructure de CC](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9) .
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services cloud Microsoft concernés
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -46,7 +46,7 @@ Découvrez comment accélérer le déploiement de l’infrastructure de la versi
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Exchange Online, SharePoint Online et Skype entreprise online. Microsoft NZ a collaboré avec l’équipe GCIO pour développer une architecture de référence pour l’intégration d’Exchange Online et du courrier électronique décrit dans le livre blanc [Office 365 : intégration de l’architecture de messagerie et](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) de l’architecture de référence
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **À qui s’applique l’infrastructure ?**
 
@@ -62,10 +62,10 @@ Si votre Agence est tenue de procéder à la certification et à l’accréditat
 - [Conformité de Microsoft Azure dans le contexte des exigences en matière de sécurité et de confidentialité de la Nouvelle-Zélande](https://aka.ms/azurecompliancenewzealand)
 - [Stratégie TIC du gouvernement NZ 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [Exigences en matière de gouvernement NZ pour le Cloud Computing](https://aka.ms/NZ-Cloud-Requirements)
-- [Cloud Computing : considérations relatives à la sécurité et à la confidentialité des informations (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
+- [Cloud Computing : considérations relatives à la sécurité et à la confidentialité des informations (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Office 365 : intégration de l’architecture de messagerie et](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) de l’architecture de référence (autres conseils Microsoft NZ sur l’adoption du service Cloud)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Réponses Microsoft à « Cloud Computing IPSC »
 
@@ -75,6 +75,6 @@ Si votre Agence est tenue de procéder à la certification et à l’accréditat
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

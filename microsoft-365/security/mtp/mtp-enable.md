@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 842c3be031e96467c8b82e8cf482435e66124960
-ms.sourcegitcommit: 5b0a2e11c86c00e6e6b534f8b0a19962d1bb2805
+ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "40881975"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970852"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
 
@@ -67,7 +67,7 @@ Pour partager des données Azure ATP avec la Protection Microsoft contre les men
 ## <a name="turn-off-microsoft-threat-protection"></a>Désactiver la Protection Microsoft contre les menaces
 Pour cesser d’utiliser la Protection Microsoft contre les menaces, accédez à **Paramètres** > **Protection Microsoft contre les menaces** > **Accepter / Refuser** dans le Centre de sécurité Microsoft 365. Désélectionnez **Activer la Protection Microsoft contre les menaces** et enregistrez les modifications.
 
-Les données seront supprimées de façon définitive et les fonctionnalités correspondantes seront supprimées du Centre de sécurité Microsoft 365.
+Les données seront définitivement supprimées et les fonctionnalités correspondantes seront supprimées du centre de sécurité Microsoft 365.
 
 ## <a name="get-assistance"></a>Obtenir de l'aide
 

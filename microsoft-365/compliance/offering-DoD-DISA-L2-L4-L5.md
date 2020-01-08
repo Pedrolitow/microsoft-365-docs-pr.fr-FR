@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2fa27680dcc9e0ee7fb495164683a291cc167d59
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805227"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959553"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorisation provisoire du ministère américain de la défense aux niveaux d’impact 2, 4 et 5
 
@@ -56,7 +56,7 @@ En fonction des autorisations FedRAMP, DISA service de Cloud Computing a accord�
 
 Le niveau d’impact 2 couvre les informations non classifiées non contrôlées, c’est-à-dire les données qui sont autorisées pour la publication publique. Elle couvre également d’autres informations non classées qui, bien qu’elles ne sont pas considérées comme critiques, continuent à avoir un niveau de contrôle d’accès minimal. Cette autorisation permet aux clients du secteur public fédéral de déployer des informations non sensibles et des sites Web de défense de base sur les services Cloud de Microsoft à l’échelle de l’étendue.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Services couverts pour le niveau d’impact DoD 5
 
@@ -83,7 +83,7 @@ Une fois qu’un DoD PA est accordé, les services de Cloud Computing Microsoft 
 
 Prenez le temps de tirer parti des avantages du Cloud dans le secteur public avec le plan de défense du département de sécurité et de conformité Azure. Ce plan fournit des outils et des conseils pour vous aider à créer des solutions conformes au DoD dès aujourd’hui. [Commencez à utiliser le modèle Azure DoD](https://aka.ms/Azure-Blueprint-DoD-NIST).
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Puis-je tirer profit de la conformité Microsoft dans le processus de certification de mon organisation ?**
 
@@ -100,13 +100,13 @@ En outre, les offres Microsoft en dehors de la frontière FedRAMP qui pourraient
 ## <a name="resources"></a>Ressources
 
 - [Guide des exigences en matière de sécurité de Cloud Computing DoD (SRG) et autres documents](https://public.cyber.mil/dccs/dccs-documents/)
-- [Prise en charge du service Cloud DISA](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [Prise en charge du service Cloud DISA](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [Protection des informations non classifiées contrôlées dans les organisations et les systèmes d’information non fédéraux](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [Infrastructure NIST Cybersecurity](https://www.nist.gov/cyberframework)
-- [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Cadre de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

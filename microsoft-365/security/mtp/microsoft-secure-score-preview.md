@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ff159546cd62b2fd2b5cb4fca031e449c860d5cb
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 5ce06f582966f7209d4b539f9de41e8045b98519
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676801"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970922"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure score (aperçu)
 
@@ -63,21 +63,21 @@ Pour avoir l’autorisation d’accéder à la note de sécurité Microsoft, vou
 
 Avec l’accès en lecture et en écriture, vous pouvez effectuer des modifications et interagir directement avec le score de sécurité. Vous pouvez également attribuer un accès en lecture seule aux autres utilisateurs.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Administrateur général
+* Administrateur de sécurité
+* Administrateur Exchange
+* Administrateur SharePoint
 
 ### <a name="read-only-roles"></a>Rôles en lecture seule
 
 Avec un accès en lecture seule, vous n’êtes pas en mesure de modifier l’État ou les notes pour une action d’amélioration, de modifier des zones de score ou de modifier des comparaisons personnalisées.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Administrateur du support technique
+* User administrator
+* Administrateur de service
+* Lecteur Sécurité
+* Opérateur de sécurité
+* Lecteur global
 
 ### <a name="graph-api"></a>API Graph
 
@@ -129,7 +129,7 @@ Pour terminer l’action, vous disposez de plusieurs options :
     * **Risque accepté** : la sécurité doit toujours être équilibrée avec la convivialité et toutes les recommandations ne fonctionnent pas pour votre environnement. Lorsque c’est le cas, vous pouvez choisir d’accepter le risque ou le risque restant et de ne pas appliquer l’action d’amélioration. Vous n’aurez pas de points, mais l’action ne sera plus visible dans la liste des actions d’amélioration. Vous pouvez afficher cette action dans l’historique ou l’annuler à tout moment.
     * **Résoudre** par le biais d’un tiers : l’action d’amélioration a déjà été traitée par une application ou un logiciel tiers. Vous obtiendrez les points que l’action vaut, afin que votre score reflète mieux votre position de sécurité globale. Si un tiers ne couvre plus le contrôle, vous pouvez choisir un autre État. N’oubliez pas que Microsoft n’aura aucune visibilité sur l’intégralité de la mise en œuvre si l’action d’amélioration est marquée comme résolue par un tiers.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Conditions requises
 
 Les conditions préalables dans la section implémentation répertorient toutes les licences qui doivent être obtenues ou les actions qui doivent être effectuées avant que l’action d’amélioration ne soit traitée. Assurez-vous que votre licence comporte suffisamment de sièges pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
 

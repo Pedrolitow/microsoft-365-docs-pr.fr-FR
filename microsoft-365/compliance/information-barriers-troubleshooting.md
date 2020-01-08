@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes liés aux informations
+title: Résolution des problèmes d’obstacles aux informations
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez cet article pour résoudre les problèmes liés aux barrières relatives aux informations.
-ms.openlocfilehash: 47549029ffbaa5ead028c18e97850b30f8072011
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 07c3c6fc12ec1b288ae9499715ddadb21764f6ef
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078430"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970802"
 ---
-# <a name="troubleshooting-information-barriers"></a>Résolution des problèmes liés aux informations
+# <a name="troubleshooting-information-barriers"></a>Résolution des problèmes d’obstacles aux informations
 
 Les [barrières d’informations](information-barriers.md) peuvent aider votre organisation à rester conforme aux exigences légales et aux réglementations sectorielles. Par exemple, avec des barrières d’informations, vous pouvez restreindre la communication entre des groupes spécifiques d’utilisateurs afin d’éviter un conflit d’intérêt ou d’autres problèmes. (Pour en savoir plus sur la configuration des barrières d’informations, consultez la rubrique [define Policies for information barrières](information-barriers-policies.md).)
 
@@ -71,7 +71,7 @@ Déterminez si les utilisateurs sont affectés par une stratégie de barrière d
     |---------|---------|
     |`Get-OrganizationSegment`<p>Utilisez cette applet de commande avec un paramètre Identity.     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>Dans cet exemple, nous obtenons des informations sur le segment qui a le GUID *c96e0837-C232-4A8A-841e-ef45787d8fcd*.         |
 
-    Passez en revue les détails du segment. Si nécessaire, [modifiez un segment](information-barriers-edit-segments-policies.md.md#edit-a-segment), puis réutilisez l' `Start-InformationBarrierPoliciesApplication` applet de commande.
+    Passez en revue les détails du segment. Si nécessaire, [modifiez un segment](information-barriers-edit-segments-policies.md#edit-a-segment), puis réutilisez l' `Start-InformationBarrierPoliciesApplication` applet de commande.
 
     **Si vous rencontrez toujours des problèmes avec votre stratégie de barrière des informations, contactez le support technique**.
 
@@ -99,8 +99,8 @@ Vérifiez que les utilisateurs en question sont inclus dans une stratégie de ba
     
     |Résultats  |Étape suivante  |
     |---------|---------|
-    |Aucun segment n’est répertorié pour le ou les utilisateurs sélectionnés     |Effectuez l’une des opérations suivantes :<br/>-Affecter des utilisateurs à un segment existant en modifiant leurs profils utilisateur dans Azure Active Directory. (Consultez la rubrique [configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).)<br/>-Définissez un segment à l’aide [d’un attribut pris en charge pour les barrières d’information](information-barriers-attributes.md). Ensuite, [définissez une nouvelle stratégie](information-barriers-policies.md#part-2-define-information-barrier-policies) ou [modifiez une stratégie existante](information-barriers-edit-segments-policies.md.md#edit-a-policy) pour inclure ce segment.  |
-    |Les segments sont répertoriés, mais aucune stratégie de barrière des informations n’est affectée à ces segments     |Effectuez l’une des opérations suivantes :<br/>- [Définir une nouvelle stratégie de barrière des informations](information-barriers-policies.md#part-2-define-information-barrier-policies) pour chaque segment en question<br/>- [Modifier une stratégie de barrière des informations existante](information-barriers-edit-segments-policies.md.md#edit-a-policy) pour l’affecter au segment correct         |
+    |Aucun segment n’est répertorié pour le ou les utilisateurs sélectionnés     |Effectuez l’une des opérations suivantes :<br/>-Affecter des utilisateurs à un segment existant en modifiant leurs profils utilisateur dans Azure Active Directory. (Consultez la rubrique [configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).)<br/>-Définissez un segment à l’aide [d’un attribut pris en charge pour les barrières d’information](information-barriers-attributes.md). Ensuite, [définissez une nouvelle stratégie](information-barriers-policies.md#part-2-define-information-barrier-policies) ou [modifiez une stratégie existante](information-barriers-edit-segments-policies.md#edit-a-policy) pour inclure ce segment.  |
+    |Les segments sont répertoriés, mais aucune stratégie de barrière des informations n’est affectée à ces segments     |Effectuez l’une des opérations suivantes :<br/>- [Définir une nouvelle stratégie de barrière des informations](information-barriers-policies.md#part-2-define-information-barrier-policies) pour chaque segment en question<br/>- [Modifier une stratégie de barrière des informations existante](information-barriers-edit-segments-policies.md#edit-a-policy) pour l’affecter au segment correct         |
     |Les segments sont répertoriés et chacun est inclus dans une stratégie de barrière des informations     |-Exécutez l' `Get-InformationBarrierPolicy` applet de commande pour vérifier que les stratégies de barrière des informations sont actives.<br/>-Exécutez l' `Get-InformationBarrierPoliciesApplicationStatus` applet de commande pour vérifier que les stratégies sont appliquées.<br/>-Exécutez l' `Start-InformationBarrierPoliciesApplication` applet de commande pour appliquer toutes les stratégies de barrière des informations actives.          |
     
 
@@ -147,7 +147,7 @@ Gardez à l’esprit que lorsque vous exécutez la cmdlet application de straté
     |Statut  |Étape suivante  |
     |---------|---------|
     |**Non commencée**     |S’il a été plus de 45 minutes depuis l’exécution de la cmdlet **Start-InformationBarrierPoliciesApplication** , passez en revue votre journal d’audit pour voir s’il existe des erreurs dans les définitions de stratégie, ou pour toute autre raison pour laquelle l’application n’a pas démarré. |
-    |**Échec**     |Si l’application a échoué, consultez votre journal d’audit. Consultez également vos segments et stratégies. Les utilisateurs sont-ils affectés à plusieurs segments ? Est-ce qu’un segment est affecté à plusieurs poliicy ? Si nécessaire, [modifiez des segments](information-barriers-edit-segments-policies.md.md#edit-a-segment) et/ou [modifiez des stratégies](information-barriers-edit-segments-policies.md.md#edit-a-policy), puis exécutez à nouveau l’applet de commande **Start-InformationBarrierPoliciesApplication** .  |
+    |**Échec**     |Si l’application a échoué, consultez votre journal d’audit. Consultez également vos segments et stratégies. Les utilisateurs sont-ils affectés à plusieurs segments ? Est-ce qu’un segment est affecté à plusieurs poliicy ? Si nécessaire, [modifiez des segments](information-barriers-edit-segments-policies.md#edit-a-segment) et/ou [modifiez des stratégies](information-barriers-edit-segments-policies.md#edit-a-policy), puis exécutez à nouveau l’applet de commande **Start-InformationBarrierPoliciesApplication** .  |
     |**En cours**     |Si l’application est toujours en cours d’exécution, patientez plus de temps pour qu’elle se termine. S’il y a eu plusieurs jours, rassemblez vos journaux d’audit, puis contactez le support technique. |
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>Problème : les stratégies de barrière des informations ne sont pas appliquées du tout
@@ -169,11 +169,11 @@ Assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d�
 
 3. [Afficher l’état des comptes d’utilisateur, des segments, des stratégies ou de l’application de stratégie](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Définir des stratégies pour les barrières d’informations dans Microsoft teams](information-barriers-policies.md)
 
-[Barrières des informations](information-barriers.md)
+[Obstacles aux informations](information-barriers.md)
 
 
 

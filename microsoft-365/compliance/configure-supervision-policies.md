@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 67e7d1a8fe1ca2f64031cab9bdee72ac22c70886
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e7a46e2fcd15a77f6fe7f1b97adf5ed26e97e0e2
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806627"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959622"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurer des stratégies de surveillance dans Office 365
 
-> [!IMPORTANT]
-> Cette rubrique s’applique à la configuration des stratégies de surveillance dans un abonnement Office 365. Si vous souhaitez configurer la conformité des communications pour un abonnement Microsoft 365, consultez [la rubrique Configure communications compliance in microsoft 365 (Preview)](communication-compliance-configure.md).
+>[!IMPORTANT]
+>Cette rubrique s’applique à la configuration des stratégies de surveillance dans un abonnement Office 365. Si vous souhaitez configurer la conformité des communications pour un abonnement Microsoft 365, consultez [la rubrique Configure communications compliance in microsoft 365 (Preview)](communication-compliance-configure.md).
 
 Utilisez des stratégies de surveillance pour capturer les communications des employés à des fins d’examen par des relecteurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de surveillance peuvent vous aider à surveiller les communications au sein de votre organisation, consultez la rubrique [surveillance des stratégies dans Office 365](supervision-policies.md).
 
-> [!NOTE]
-> Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5.
-> Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!NOTE]
+>Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5.
+>Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Procédez comme suit pour configurer et utiliser la surveillance dans votre organisation Office 365 :
   
@@ -182,8 +182,8 @@ Une fois que vous avez créé une stratégie de supervision de communication, il
 1. Ouvrez un client de messagerie ou Microsoft teams connecté en tant qu’utilisateur supervisé défini dans la stratégie que vous souhaitez tester.
 2. Envoyez un message électronique ou une conversation Microsoft teams qui répond aux critères que vous avez définis dans la stratégie de supervision. Il peut s’agir d’un mot clé, d’une taille de pièce jointe, d’un domaine, etc. Assurez-vous que vous déterminez si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop stricts.
 
-    > [!NOTE]
-    > Les e-mails soumis à des stratégies définies sont traités en temps réel et peuvent être testés immédiatement après la configuration de la stratégie. Les conversations dans Microsoft teams peuvent prendre jusqu’à 24 heures pour être entièrement traitées dans une stratégie. 
+    >[!NOTE]
+    >Les e-mails soumis à des stratégies définies sont traités en temps réel et peuvent être testés immédiatement après la configuration de la stratégie. Les conversations dans Microsoft teams peuvent prendre jusqu’à 24 heures pour être entièrement traitées dans une stratégie. 
 
 3. Connectez-vous à votre client Office 365 en tant que réviseur désigné dans la stratégie de surveillance des communications. Accédez à **surveillance** > de*votre stratégie* > personnalisée pour afficher le rapport de**la stratégie.**
 

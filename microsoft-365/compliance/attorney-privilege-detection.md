@@ -14,20 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Abonnez-vous et utilisez le modèle de détection des privilèges du client avocat pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans un cas avancé de découverte électronique.
-ms.openlocfilehash: a483941ba5d28527eb509f2e1bbd129434430244
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+description: Utilisez le modèle de détection des privilèges du client avocat pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans un cas avancé de découverte électronique.
+ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603778"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970862"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configuration de la détection des droits du client dans Advanced eDiscovery
 
 Un aspect majeur et coûteux de la phase de révision d’un processus eDiscovery consiste à examiner des documents pour le contenu privilégié. Advanced eDiscovery offre une fonctionnalité de détection de contenu privilégié basée sur l’apprentissage d’un ordinateur pour améliorer l’efficacité de ce processus. Cette fonctionnalité est appelée *détection des privilèges client*.
-
-> [!NOTE]
-> Vous devez vous inscrire au modèle de détection des privilèges du client avocat avant de pouvoir l’utiliser. Reportez-vous à l' [étape 1](#step-1-opt-in-to-attorney-client-privilege-detection) pour obtenir des instructions.
 
 ## <a name="how-does-it-work"></a>Comment cela fonctionne-t-il ?
 
@@ -53,11 +50,11 @@ Ces trois propriétés peuvent également faire l’objet d’une recherche dans
 
 ## <a name="set-up-the-attorney-client-privilege-detection-model"></a>Configurer le modèle de détection de privilèges client pour les avocats
 
-Pour activer le modèle de détection des privilèges du client avocat, votre organisation doit s’abonner, puis télécharger une liste d’avocats.
+Pour activer le modèle de détection des privilèges du client avocat, votre organisation doit l’activer, puis télécharger une liste d’avocats.
 
-### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>Étape 1 : s’inscrire à avocat-détection des privilèges client
+### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>Étape 1 : activer le juriste-détection des privilèges client
 
-Comme indiqué précédemment, le modèle de détection des privilèges du client avocat est en préversion. Par conséquent, une personne de votre administrateur eDiscovery de votre organisation (membre du sous-groupe administrateur eDiscovery dans le groupe de rôles gestionnaire eDiscovery) doit s’inscrire pour que le modèle soit disponible dans vos cas de découverte électronique avancée.
+Une personne qui est un administrateur de découverte électronique dans votre organisation (membre du sous-groupe administrateur eDiscovery dans le groupe de rôles gestionnaire eDiscovery) doit mettre le modèle à disposition dans vos cas avancés de découverte électronique.
 
 1. Dans le centre de sécurité & conformité, accédez à **ediscovery > Advanced eDiscovery**.
 

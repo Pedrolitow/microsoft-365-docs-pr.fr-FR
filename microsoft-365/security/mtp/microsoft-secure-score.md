@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 943c32aa535a319829bd93bde190a5fead12ef08
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910513"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970912"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -60,21 +60,21 @@ Pour avoir l’autorisation d’accéder à la note de sécurité Microsoft, vou
 
 Avec l’accès en lecture et en écriture, vous pouvez effectuer des modifications et interagir directement avec le score de sécurité. Vous pouvez également attribuer un accès en lecture seule aux autres utilisateurs.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Administrateur général
+* Administrateur de sécurité
+* Administrateur Exchange
+* Administrateur SharePoint
 
 ### <a name="read-only-roles"></a>Rôles en lecture seule
 
 Avec un accès en lecture seule, vous n’êtes pas en mesure de modifier l’État ou les notes pour une action d’amélioration, de modifier des zones de score ou de modifier des comparaisons personnalisées.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Administrateur du support technique
+* User administrator
+* Administrateur de service
+* Lecteur Sécurité
+* Opérateur de sécurité
+* Lecteur global
 
 ### <a name="graph-api"></a>API Graph
 
@@ -146,7 +146,7 @@ Pour ces raisons, toutes les actions d’amélioration qui n’ont pas été év
 
 Pour standardiser les points sur plusieurs expériences, chaque point d’action d’amélioration de score sécurisé est mis à jour avec une valeur de 10 points maximum. Il est nécessaire d’être plus cohérent à travers l’allongement des contrôles de sécurité que nous avons aujourd’hui et ceux que nous allons ajouter à l’avenir. S’il s’agit d’une modification importante et que vous verrez des totaux de point de dépôt, aucune modification n’est apportée à votre position de sécurité.  
 
-### <a name="preview-features"></a>Fonctionnalités d’aperçu
+### <a name="preview-features"></a>Fonctionnalités de préversion
 
 Les fonctionnalités suivantes seront incluses dans la version d’évaluation :
 

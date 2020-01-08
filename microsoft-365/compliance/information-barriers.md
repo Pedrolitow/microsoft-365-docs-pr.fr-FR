@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: 31de709e5ac834ad628110088b0dab80efe85950
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 352f101a443b015840b09b82626f7dbee9cfb79e
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690327"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970832"
 ---
 # <a name="information-barriers"></a>Obstacles aux informations
 
@@ -83,5 +83,4 @@ Vous devez être familiarisé avec les applets de commande PowerShell pour défi
 
 - [Définir des stratégies pour les barrières des informations](information-barriers-policies.md)
 
-- [Modifier (ou supprimer) des stratégies de barrière des informations](information-barriers-edit-segments-policies.md.md) 
-
+- [Modifier (ou supprimer) des stratégies de barrière des informations](information-barriers-edit-segments-policies.md) 

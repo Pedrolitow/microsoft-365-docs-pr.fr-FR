@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 11195e588a983bb5617dd3f556734074bc0060b0
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38690420"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970842"
 ---
 # <a name="define-policies-for-information-barriers"></a>Définir des stratégies pour les barrières des informations
 
@@ -51,10 +51,10 @@ Lorsque vous définissez des stratégies pour les barrières d’informations, v
 |[Partie 1 : segmenter les utilisateurs de votre organisation](#part-1-segment-users)     |-Déterminer les stratégies nécessaires<br/>-Créer une liste de segments à définir<br/>-Identifier les attributs à utiliser<br/>-Définir des segments en fonction de filtres de stratégie        |
 |[Partie 2 : définir des stratégies de barrière des informations](#part-2-define-information-barrier-policies)     |-Définir vos stratégies (ne pas appliquer)<br/>-Choisir parmi deux types (bloquer ou autoriser) |
 |[Partie 3 : appliquer des stratégies de barrière des informations](#part-3-apply-information-barrier-policies)     |-Définir les stratégies sur le statut actif<br/>-Exécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
-|(Si nécessaire) [Modifier un segment ou une stratégie](information-barriers-edit-segments-policies.md.md)    |-Modifier un segment<br/>-Modifier ou supprimer une stratégie<br/>-Réexécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
+|(Si nécessaire) [Modifier un segment ou une stratégie](information-barriers-edit-segments-policies.md)    |-Modifier un segment<br/>-Modifier ou supprimer une stratégie<br/>-Réexécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
 |(Si nécessaire) [Résolution des problèmes](information-barriers-troubleshooting.md)|Action à effectuer lorsque des choses ne fonctionnent pas comme prévu|
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions requises
 
 En plus des [licences et des autorisations requises](information-barriers.md#required-licenses-and-permissions), assurez-vous que les conditions suivantes sont remplies : 
      
@@ -248,7 +248,7 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateur, des
 
 |Pour afficher cette  |Procédez comme suit  |
 |---------|---------|
-|Comptes d’utilisateur     |Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. <p>Syntaxe`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*. <p>(Vous pouvez également utiliser cette applet de commande pour un seul `Get-InformationBarrierRecipientStatus -Identity <value>`utilisateur :) <p>Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.|
+|Comptes d’utilisateurs     |Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. <p>Syntaxe`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*. <p>(Vous pouvez également utiliser cette applet de commande pour un seul `Get-InformationBarrierRecipientStatus -Identity <value>`utilisateur :) <p>Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.|
 |Pertinents     |Utilisez la cmdlet **Get-OrganizationSegment** .<p>Syntaxe`Get-OrganizationSegment` <p>Cette opération permet d’afficher la liste de tous les segments définis pour votre organisation.         |
 |Stratégies de barrière des informations     |Utilisez la cmdlet **Get-InformationBarrierPolicy** . <p> Syntaxe`Get-InformationBarrierPolicy` <p>Cette opération affiche la liste des stratégies de barrière des informations qui ont été définies, ainsi que leur état.       |
 |Application de stratégie de barrière des informations la plus récente     | Utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Syntaxe`Get-InformationBarrierPoliciesApplicationStatus`<p>    Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.       |
@@ -260,11 +260,11 @@ Des ressources sont disponibles pour vous aider à gérer vos stratégies de bar
 
 - En cas de problème avec les barrières d’informations, consultez la rubrique [Troubleshooting information barrières](information-barriers-troubleshooting.md).
 
-- Pour arrêter l’application des stratégies, voir [arrêter une application de stratégie](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
+- Pour arrêter l’application des stratégies, voir [arrêter une application de stratégie](information-barriers-edit-segments-policies.md#stop-a-policy-application).
 
-- Pour supprimer une stratégie de barrière des informations, consultez [la rubrique supprimer une stratégie](information-barriers-edit-segments-policies.md.md#remove-a-policy).
+- Pour supprimer une stratégie de barrière des informations, consultez [la rubrique supprimer une stratégie](information-barriers-edit-segments-policies.md#remove-a-policy).
 
-- Pour apporter des modifications à des segments ou des stratégies, consultez la rubrique [Modifier (ou supprimer) des stratégies de barrière des informations](information-barriers-edit-segments-policies.md.md).
+- Pour apporter des modifications à des segments ou des stratégies, consultez la rubrique [Modifier (ou supprimer) des stratégies de barrière des informations](information-barriers-edit-segments-policies.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Exemple : services, segments et stratégies de contoso
 

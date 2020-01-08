@@ -3,7 +3,7 @@ title: Étiquettes de confidentialité dans les applications Office
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: a904f1adde6ea8df6d7225ed368f77790b21161a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 092c8510acac5cafa6417f93eae19731db5df270
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802847"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970952"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Étiquettes de confidentialité dans les applications Office
 
@@ -40,7 +40,7 @@ Les utilisateurs doivent avoir au moins une des licences suivantes affectées :
 
 - [Azure information protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) ou version supérieure
 
-Le client d’étiquetage Office intégré prend en charge les étiquettes de confidentialité avec une version d’abonnement d’Office. Le client ne prend pas en charge les versions autonomes, par exemple, Office 2016 ou Office 2019.
+Le client d’étiquetage Office intégré prend en charge les étiquettes de confidentialité avec une édition d’abonnement d’Office. Ce client d’étiquetage ne prend pas en charge les éditions autonomes d’Office, comme Office 2016 ou Office 2019. Pour utiliser les étiquettes de confidentialité avec ces éditions d’Office sur des ordinateurs Windows, installez le client d’étiquetage unifié Azure information protection.
 
 Pour utiliser l’étiquette de sensibilité automatique ou recommandée, vos utilisateurs ont besoin d’une des licences suivantes :
 
@@ -48,31 +48,35 @@ Pour utiliser l’étiquette de sensibilité automatique ou recommandée, vos ut
 
 - [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) ou version ultérieure
 
-- [Azure information protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/) ou version supérieure
+- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
-## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Prise en charge des fonctionnalités d’étiquette de sensibilité dans Word, Excel et PowerPoint
+## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Prise en charge des fonctionnalités d’étiquettes de confidentialité dans Word, Excel et PowerPoint
 
-Pour chaque fonctionnalité, le tableau suivant répertorie la version minimale dont vous avez besoin pour cette application. TBD signifie que vous ne pouvez pas utiliser cette fonctionnalité sur cette plateforme.
+Pour chaque fonctionnalité, le tableau suivant répertorie la version minimale dont vous avez besoin pour cette application afin de prendre en charge les étiquettes de sensibilité à l’aide d’étiquettes intégrées.
+
+Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client d’étiquetage unifié Azure information protection, qui s’exécute sur des ordinateurs Windows uniquement. Pour plus d’informations, reportez-vous à [la rubrique comparer les clients d’étiquetage pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 |Fonctionnalité                                                                                                        |Bureau Windows |Bureau Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | À déterminer                                                        |
+|[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | En cours de révision                                                        |
 |[Exiger une justification pour modifier une étiquette](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Fournir un lien aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marquer le contenu](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
-|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
+|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
+|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |
-  [Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
-|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : dans le déploiement vers [Office Insider](https://office.com/insider)                                  | TBD | TBD | TBD | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Prise en charge de l' [enregistrement automatique](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) et de la [co-création](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sur des documents étiquetés et protégés | TBD | TBD | TBD | TBD | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
+  [Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
+|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : dans [Office Insider](https://office.com/insider)                                  | En cours de révision | En cours de révision | En cours de révision | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Prise en charge de l' [enregistrement automatique](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) et de la [co-création](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sur des documents étiquetés et protégés | En cours de révision | En cours de révision | En cours de révision | En cours de révision | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
-## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a>Prise en charge des fonctionnalités d’étiquette de sensibilité dans Outlook
+## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a>Prise en charge des fonctionnalités d’étiquettes de confidentialité dans Outlook
 
-Pour chaque fonctionnalité, le tableau suivant répertorie la version minimale dont vous avez besoin pour cette application. TBD signifie que vous ne pouvez pas utiliser cette fonctionnalité sur cette plateforme.
+Pour chaque fonctionnalité, le tableau suivant répertorie la version minimale dont vous avez besoin pour cette application.
+
+Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client d’étiquetage unifié Azure information protection, qui s’exécute sur des ordinateurs Windows uniquement. Pour plus d’informations, reportez-vous à [la rubrique comparer les clients d’étiquetage pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 |Fonctionnalité                                                                                                        |Outlook sur le bureau Windows |Outlook sur le bureau Mac  |Outlook sur iOS |Outlook sur Android |Outlook sur le web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
@@ -83,10 +87,10 @@ Pour chaque fonctionnalité, le tableau suivant répertorie la version minimale 
 |[Marquer le contenu](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Oui               |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Oui               |
-|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | TBD                       | TBD                    | TBD           | TBD               | TBD               |
+|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | En cours de révision               |
 |
-  [Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD                       | TBD                    | TBD           | TBD               | TBD               |
-|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | TBD                       | TBD                    | TBD           | TBD               | Aperçu : dans le déploiement vers la [version ciblée](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
+  [Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | En cours de révision               |
+|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | Aperçu : dans le déploiement vers la [version ciblée](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
 |
 
 ## <a name="about-the-office-built-in-labeling-client"></a>À propos du client d’étiquetage Office intégré

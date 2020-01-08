@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dc654a877e12eed308b5f8be9fd001ef9093398d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ece7264eba56aa9b389b0dc3555d69e71cc30ad5
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807929"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959612"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Référence de la fonctionnalité de conformité de la communication (aperçu)
 
@@ -29,8 +29,8 @@ ms.locfileid: "40807929"
 
 Vous créez des stratégies de conformité des communications pour les organisations Microsoft 365 dans le centre de conformité Microsoft 365. Si vous disposez d’une organisation Office 365, vous [configurerez des stratégies de surveillance](configure-supervision-policies.md) dans le centre de sécurité & conformité d’Office 365. Les stratégies de conformité des communications définissent les communications et les utilisateurs qui font l’objet d’un examen au sein de votre organisation, définissent les conditions personnalisées auxquelles doivent répondre les communications et indiquent qui doit effectuer des révisions. Les utilisateurs inclus dans le groupe de rôles d' **administrateur de vérification de surveillance** peuvent configurer des stratégies, et toute personne à laquelle ce rôle est attribué peut accéder à la page conformité de la **communication** dans le centre de conformité Microsoft 365. Si nécessaire, vous pouvez exporter l’historique des modifications apportées à une stratégie dans un fichier. csv qui inclut également l’état des alertes en attente de révision, des éléments escaladés et des éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées lorsqu’elles ne sont plus nécessaires.
 
-> [!NOTE]
-> Les stratégies de surveillance créées dans le centre de sécurité et conformité Office 365 pour les abonnements Office 365 ne peuvent pas migrer vers Microsoft 365. Si vous effectuez une migration à partir d’un abonnement Office 365 vers un abonnement Microsoft 365, vous devrez créer de nouvelles stratégies de conformité de communication pour remplacer les stratégies de surveillance existantes.
+>[!NOTE]
+>Les stratégies de surveillance créées dans le centre de sécurité et conformité Office 365 pour les abonnements Office 365 ne peuvent pas migrer vers Microsoft 365. Si vous effectuez une migration à partir d’un abonnement Office 365 vers un abonnement Microsoft 365, vous devrez créer de nouvelles stratégies de conformité de communication pour remplacer les stratégies de surveillance existantes.
 
 ## <a name="policy-templates"></a>Modèles de stratégie
 
@@ -46,8 +46,8 @@ Les modèles de stratégie sont des paramètres de stratégie prédéfinis que v
 
 Avant de commencer à utiliser la conformité de la communication, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Office 365, les listes de distribution Exchange et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de l’analyse à l’aide d’un groupe d’exclusion spécifique ou d’une liste de groupes.
 
-> [!IMPORTANT]
-> Les utilisateurs couverts par les stratégies de conformité des communications doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer la conformité de la communication, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Les utilisateurs couverts par les stratégies de conformité des communications doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer la conformité de la communication, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="reviewers"></a>Relecteurs
 
@@ -198,8 +198,8 @@ Si vous souhaitez créer un message électronique en texte simple pour les notif
 </html>
 ```
 
-> [!NOTE]
-> L’implémentation de l’attribut HTML href dans les modèles de notification de conformité des communications prend actuellement en charge uniquement les guillemets simples au lieu de guillemets doubles pour les références d’URL.
+>[!NOTE]
+>L’implémentation de l’attribut HTML href dans les modèles de notification de conformité des communications prend actuellement en charge uniquement les guillemets simples au lieu de guillemets doubles pour les références d’URL.
 
 ## <a name="filters"></a>Filtres
 
@@ -232,8 +232,8 @@ Pour les stratégies de conformité de communication, les valeurs de stratégie 
 | Seuil | 4 activités |
 | Fenêtre | 60 minutes |
 
-> [!Note]
-> Les paramètres de déclenchement de seuil de stratégie d’alerte pour les activités prennent en charge une valeur minimale de 3 ou supérieure pour les stratégies de conformité de communication.
+>[!Note]
+>Les paramètres de déclenchement de seuil de stratégie d’alerte pour les activités prennent en charge une valeur minimale de 3 ou supérieure pour les stratégies de conformité de communication.
 
 Vous pouvez modifier les paramètres par défaut des déclencheurs sur le nombre d’activités, la période pour les activités et les utilisateurs spécifiques des stratégies d’alerte sur la page **stratégies d’alerte** dans le centre de conformité & Office 365 Security.
 
@@ -259,8 +259,8 @@ Si vous souhaitez modifier le niveau de gravité affecté dans une stratégie d�
 
 Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Il peut s’agir d’un résumé de toutes les activités associées à une stratégie d’organisation définie ou à chaque fois qu’une stratégie de conformité de communication est modifiée. Les stratégies de conformité des communications disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Les historiques d’audit détaillés de chaque action de création, de modification et de suppression sont capturés par vos stratégies de communication afin de fournir des preuves de procédures de surveillance.
 
-> [!Important]
-> L’audit doit être activé pour votre organisation pour que les événements de conformité de la communication soient enregistrés. Pour activer l’audit, consultez [la rubrique activer l’audit pour vos stratégies de conformité de communication](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>[!Important]
+>L’audit doit être activé pour votre organisation pour que les événements de conformité de la communication soient enregistrés. Pour activer l’audit, consultez [la rubrique activer l’audit pour vos stratégies de conformité de communication](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
 
 Pour afficher les activités de stratégie de conformité de communication, sélectionnez le contrôle **Exporter les activités de révision** dans la page principale pour n’importe quelle stratégie. Cela génère un fichier d’audit au format. csv qui contient les informations suivantes :
 
