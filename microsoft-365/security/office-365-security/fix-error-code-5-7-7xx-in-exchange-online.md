@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment résoudre les problèmes liés aux messages électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online (le client a bloqué l’envoi de messages).
-ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959652"
+ms.locfileid: "40962303"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Corriger les problèmes de remise des courriers électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online
 
@@ -35,7 +35,7 @@ Dans de rares cas, cela peut également se produire si vous renouvelez votre abo
 
 ## <a name="57750-unregistered-domain-email-restriction-what-you-need-to-know"></a>5.7.750 : restriction de messagerie de domaine non enregistrée : ce que vous devez savoir
 
-Office 365 permet aux clients de relayer des messages via Exchange Online Protection (EOP). Par exemple:
+Office 365 permet aux clients de relayer des messages via Exchange Online Protection (EOP). Par exemple :
 
 - Une boîte aux lettres Office 365 reçoit un message provenant d’un expéditeur externe. Le transfert du courrier est configuré sur la boîte aux lettres Office 365, de sorte que le message revient à l’adresse de messagerie externe de l’utilisateur. Ce scénario est le plus courant dans les environnements d’éducation où les étudiants veulent utiliser leurs comptes de messagerie personnels pour afficher les messages liés à l’école.
 
@@ -53,7 +53,7 @@ Une fois compromis, les clients ne pourront pas envoyer de messages électroniqu
 
 Il y a plusieurs choses que vous devez faire si votre client est bloqué pour l’envoi de messages électroniques :
 
-1. Vérifiez que tous vos domaines de messagerie sont inscrits. Pour plus d’informations, consultez [la rubrique ajouter un domaine à Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) et [gérer les domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Vérifiez que tous vos domaines de messagerie sont inscrits. Pour plus d’informations, consultez [la rubrique ajouter un domaine à Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) et [gérer les domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 2. Recherchez les [connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inhabituels. Les intervenants malveillants créeront souvent de nouveaux connecteurs entrants dans votre organisation Office 365 pour envoyer du courrier indésirable. Pour afficher vos connecteurs existants, consultez la rubrique [Validate Connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
@@ -72,7 +72,7 @@ Il y a plusieurs choses que vous devez faire si votre client est bloqué pour l�
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 
-[Guide de messagerie en bloc dans la section limites d’envoi de la description du service Exchange Online](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+[Guide de messagerie en bloc dans la section limites d’envoi de la description du service Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Envoyer les notifications d’échec de remise par courrier électronique dans Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
