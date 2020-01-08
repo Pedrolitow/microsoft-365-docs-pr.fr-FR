@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c6c92aeec6c1644472103a1aaf175eb813d5758
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: df811e38c55becf9ba52de40891fc1201d0afae0
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808679"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966882"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -35,7 +35,7 @@ Le repérage avancé est basé sur le [langage de requête Kusto](https://docs.m
 
 dans le Centre de sécurité Microsoft 365, placez-vous dans **Repérage** pour exécuter votre première requête. Consultez l’exemple qui suit :
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents 
 | where Timestamp > ago(7d)
@@ -55,7 +55,7 @@ Voici son futur aspect dans le repérage avancé.
 
 La requête commence par un bref commentaire décrivant sa fonction. Cela vous permet de choisir ultérieurement d’enregistrer votre requête et de la partager avec d’autres dans votre organisation.
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents
 ```
@@ -64,19 +64,19 @@ La requête elle-même commence généralement par un nom de table suivi d’une
 
 Le premier élément redirigé est un filtre de temps étendu dans les sept jours précédents. La conservation d’un intervalle de temps le plus étroit possible permet de s’assurer que les requêtes fonctionnent bien, renvoient des résultats gérables et n’expirent pas.
 
-```
+```kusto
 | where Timestamp > ago(7d)
 ```
 
 L’intervalle de temps est immédiatement suivi d’une recherche de fichiers représentant l’application PowerShell.
 
-```
+```kusto
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
 
 Par la suite, la requête recherche les lignes de commande généralement utilisées avec PowerShell pour télécharger les fichiers.
 
-```
+```kusto
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
@@ -86,7 +86,7 @@ Par la suite, la requête recherche les lignes de commande généralement utilis
 
 Maintenant que votre requête identifie clairement les données que vous recherchez, vous pouvez ajouter des éléments qui définissent l’apparence des résultats. `project` renvoie des colonnes spécifiques et `top` limite le nombre de résultats. De ce fait, les résultats sont bien mis en forme et raisonnablement volumineux et faciles à traiter.
 
-```
+```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
 | top 100 by Timestamp'
 ```
