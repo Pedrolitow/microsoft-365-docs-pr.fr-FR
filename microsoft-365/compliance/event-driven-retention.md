@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des rétentions basées sur des événements
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de rétention, vous pouvez baser une période de rétention sur la survenue d’un type d’événement spécifique. L’événement déclenche le début de la période de rétention, et tout le contenu portant une étiquette définie pour ce type d’événement se voit appliquer les actions de rétention de l’étiquette. La rétention basée sur un événement est généralement utilisée dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
-ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
+ms.openlocfilehash: 109b6104f2a06559beae0148b581854f44e6394a
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "39268479"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989569"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
@@ -61,7 +61,7 @@ Pour utiliser correctement les rétentions basées sur des événements, il est 
     
   - Des mots clés (pour les éléments Exchange) Dans cet exemple, l’organisation utilise un code de produit dans les messages contenant des enregistrements de produit. Le mot clé pour les éléments Exchange est donc identique à l’ID d’élément pour les documents SharePoint et OneDrive.
     
-  - La date à laquelle l’événement est survenu. Cette date est utilisée comme point de départ de la période de rétention. Cette date ne peut être que la date actuelle ou une date future, pas une date passée.
+  - La date à laquelle l’événement s'est produit. Cette date est utilisée comme point de départ de la période de rétention. Cette date peut être la date actuelle, passée ou une date future.
     
 4. Une fois que vous avez créé un événement, la date de cet événement est synchronisée avec tout le contenu portant une étiquette de ce type d’événement et qui contient le mot clé ou l’ID d’élément spécifié. Comme pour toute étiquette, cette synchronisation peut prendre jusqu’à 7 jours. Dans le diagramme ci-dessus, la période de rétention de tous les éléments entourés en rouge est déclenchée par cet événement. En d’autres termes, quand ce produit arrive en fin de vie, cet événement déclenche la période de rétention pour les enregistrements de ce produit.
     
