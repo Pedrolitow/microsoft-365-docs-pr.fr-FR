@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Utilisez l’Assistant usurpation d’identité &amp; dans le centre de sécurité conformité de la page Paramètres anti-courrier indésirable pour examiner tous les expéditeurs qui usurpent l’identité des domaines qui font partie de votre organisation ou qui usurpent des domaines externes. L’intelligence d’usurpation d’identité est disponible dans le cadre d’Office 365 entreprise E5 ou séparément dans le cadre de la protection avancée contre les menaces et d’Exchange Online Protection.
-ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2f6a68446698747fe31261c7e892c50e6ec5c7f4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970430"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989489"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>En savoir plus sur l’usurpation d’identité
 
@@ -79,9 +79,9 @@ Vous pouvez vérifier les expéditeurs qui usurpent votre domaine, ou des domain
 
     ![Capture d’écran illustrant l’accès à la page de blocage du courrier indésirable](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. Sur la page **paramètres de blocage du courrier indésirable** dans le volet droit, sélectionnez l’onglet **personnalisé** , puis faites défiler la liste vers le bas et développez stratégie d’aide à la **décision**.
+4. Sur la page **paramètres de blocage du courrier indésirable** dans le volet droit, faites défiler la page vers le bas et développez stratégie d’aide à la **décision**
 
-    ![Capture d’écran illustrant l’accès aux paramètres personnalisés de blocage du courrier indésirable](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![Tromp](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. Pour afficher la liste des expéditeurs qui usurpent votre domaine, choisissez **examiner les nouveaux expéditeurs** , puis sélectionnez l’onglet **vos domaines** .
 

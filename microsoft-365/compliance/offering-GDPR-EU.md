@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859774"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959602"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>Règlement général sur la protection des données (RGPD)
 
@@ -67,9 +68,13 @@ Découvrez comment un client de Microsoft, INAIL, utilise le service Azure Infor
 
 Utilisez le [Gestionnaire de conformité](https://go.microsoft.com/fwlink/p/?linkid=2048390) pour aider à évaluer les risques en permanence, obtenir des enseignements exploitables et simplifier vos processus de conformité.
 
-### <a name="security-and-compliance-center"></a>Centre de sécurité et conformité
+### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
 
-Le [Centre de sécurité et de conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance) Microsoft 365 vous permet de découvrir les contrôles de sécurité et de conformité.
+Le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) vous permet de découvrir les contrôles de conformité.
+
+### <a name="microsoft-365-security-center"></a>Centre de sécurité Microsoft 365
+
+Le centre de sécurité [Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) vous permet de découvrir les contrôles de sécurité.
 
 ### <a name="discover-compliance-solutions"></a>Découvrez les solutions de conformité
 

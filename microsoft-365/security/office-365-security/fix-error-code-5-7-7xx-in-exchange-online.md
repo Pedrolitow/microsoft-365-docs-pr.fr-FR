@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment résoudre les problèmes liés aux messages électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online (le client a bloqué l’envoi de messages).
-ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962303"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989529"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Corriger les problèmes de remise des courriers électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online
 
@@ -55,18 +55,20 @@ Il y a plusieurs choses que vous devez faire si votre client est bloqué pour l�
 
 1. Vérifiez que tous vos domaines de messagerie sont inscrits. Pour plus d’informations, consultez [la rubrique ajouter un domaine à Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) et [gérer les domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Recherchez les [connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inhabituels. Les intervenants malveillants créeront souvent de nouveaux connecteurs entrants dans votre organisation Office 365 pour envoyer du courrier indésirable. Pour afficher vos connecteurs existants, consultez la rubrique [Validate Connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
+2. [Activez l’authentification multifacteur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) pour tous les administrateurs de votre organisation Office 365.
 
-3. Vérifiez les utilisateurs compromis, comme décrit dans [réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md).
+3. Vérifiez que tous vos domaines de messagerie sont inscrits. Pour plus d’informations, consultez [la rubrique ajouter un domaine à Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) et [gérer les domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-4. [Activez l’authentification multifacteur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) pour tous les administrateurs de votre organisation Office 365.
+4. Recherchez les [connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inhabituels. Les intervenants malveillants créeront souvent de nouveaux connecteurs entrants dans votre organisation Office 365 pour envoyer du courrier indésirable. Pour afficher vos connecteurs existants, consultez la rubrique [Validate Connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
-5. Verrouillez vos serveurs de messagerie locaux et assurez-vous qu’ils ne sont pas compromis.
+5. Vérifiez les utilisateurs compromis, comme décrit dans [réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md).
+
+6. Verrouillez vos serveurs de messagerie locaux et assurez-vous qu’ils ne sont pas compromis.
 
    > [!TIP]
    > Il existe de nombreux facteurs, en particulier si vous utilisez des serveurs tiers. Quoi qu’il en soit, vous devrez vérifier que tous les messages sortants sont légitimes.
 
-6. Appelez le support Microsoft et demandez-lui de débloquer l’envoi à partir de domaines non enregistrés. Le code d’erreur est utile, mais vous devez prouver que votre environnement a été sécurisé et qu’il ne peut pas envoyer de courrier indésirable. Pour ouvrir un cas de support technique, voir [contacter le support pour les entreprises-aide de l’administrateur](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+7. Appelez le support Microsoft et demandez-lui de débloquer l’envoi de messages électroniques. Le code d’erreur est utile, mais vous devez prouver que votre environnement a été sécurisé et qu’il ne peut pas envoyer de courrier indésirable. Pour ouvrir un cas de support technique, voir [contacter le support pour les entreprises-aide de l’administrateur](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 

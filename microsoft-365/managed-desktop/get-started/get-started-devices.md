@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
-ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
+ms.openlocfilehash: 59cdb911c46fbb2ad5dd998810297a5502c8fa0c
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38697157"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989549"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Préparer vos utilisateurs à l’utilisation des appareils
 
@@ -23,7 +23,7 @@ Pour faciliter encore la tâche, nous proposons un guide de la part de vos utili
 ## <a name="to-prepare-the-guide"></a>Pour préparer le guide
 
 1. Téléchargez la version appropriée à votre organisation :
-- [Microsoft Managed Desktop-prise en main de votre appareil (obtenir la version de l’aide)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) -Utilisez cette version si vos utilisateurs finals utiliseront le système de support technique de Microsoft.
+- [Microsoft Managed Desktop-prise en main de votre appareil (obtenir la version de l’aide)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) -Utilisez cette version si vos utilisateurs finals utiliseront le système de support technique de Microsoft.
 - [Microsoft Managed Desktop-prise en main de votre appareil](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) : utilisez cette version si vos utilisateurs finals n’utilisent *pas* le système de support technique de Microsoft.
 2. Utilisez n’importe quelle application capable d’ouvrir des fichiers PDF pour remplir les détails relatifs à votre organisation :
     - Le nom du réseau auquel vos utilisateurs doivent se connecter afin de poursuivre l’installation (étape 3 de ce guide)
@@ -33,9 +33,9 @@ Pour faciliter encore la tâche, nous proposons un guide de la part de vos utili
 
 ## <a name="ready-to-use-guide"></a>« Guide prêt à l’emploi »
 
-Nous fournissons également une version plus générique du guide pour les organisations qui n’ont pas besoin de la personnaliser. Il existe deux versions, une pour les organisations qui utilisent le système de support technique de Microsoft (l’application obtenir de l’aide), une pour ceux qui fournissent leur propre prise en charge interne de l’utilisateur final.
+Nous fournissons également une version plus générique du guide pour les organisations qui n’ont pas besoin de la personnaliser. Il existe deux versions, une pour les organisations qui utilisent le système de support technique de Microsoft (l’application obtenir de l’aide), une pour ceux qui fournissent un support alternatif pour leurs utilisateurs. 
 
-- [Bureau géré Microsoft-prise en main de votre appareil (obtenir de l’aide)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) -Utilisez cette version si vos utilisateurs finals utiliseront le système de support technique de Microsoft.
+- [Bureau géré Microsoft-prise en main de votre appareil (obtenir de l’aide)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) -Utilisez cette version si vos utilisateurs finals utiliseront le système de support technique de Microsoft.
 - [Microsoft Managed Desktop-prise en main de votre appareil (prêt à l’emploi)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) : utilisez cette version si vos utilisateurs finals n’utilisent *pas* le système de support technique de Microsoft.
 
 À ce stade, vous êtes prêt à passer au déploiement d’applications :

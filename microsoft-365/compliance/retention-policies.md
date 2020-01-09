@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des stratégies de rétention
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: caeec733b3b5722f25210d0d2566e1dd9a5cd95e
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: ec20b3849f70fcc47590305991b90e6a9a41d540
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818986"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962423"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
-Le volume et la complexité des données (e-mails, documents, messages instantanés et bien plus encore) de la majorité des organisations augmentent quotidiennement. Il est important de gérer et de gouverner efficacement ces informations, car vous devez :
+Le volume et la complexité des données e-mails, documents, messages instantanés et autres de la majorité des organisations augmentent quotidiennement. Il est important de gérer et de gouverner efficacement ces informations, car vous devez :
   
-- **respecter de façon proactive les réglementations du secteur et les stratégies internes** qui vous obligent à conserver du contenu pendant une période minimale. Par exemple, la loi Sarbanes-Oxley vous oblige à conserver certains types de contenu pendant sept ans ; 
+- **respecter de façon proactive les réglementations du secteur et les stratégies internes** qui vous obligent à conserver du contenu pendant une période minimale. Par exemple, la loi Sarbanes-Oxley vous oblige à conserver certains types de contenu pendant sept ans. 
     
 - **réduire les risques en cas de litige ou de violation de la sécurité** en supprimant définitivement le contenu ancien qu’il n’est plus obligatoire de conserver ; 
     
@@ -66,6 +66,8 @@ Remarques :
 - Le contenu de Teams (conversation) est stocké dans Exchange, où la stratégie est appliquée en fonction du type de message (e-mail ou conversation).
     
 - Une stratégie de rétention appliquée à un groupe Office 365 inclut la boîte aux lettres de groupe et le site.
+
+- La bibliothèque de conservation et de préservation des documents utilise un quota de stockage pour le site.
     
 ### <a name="content-in-onedrive-accounts-and-sharepoint-sites"></a>Contenu des comptes OneDrive et des sites SharePoint
 
@@ -73,7 +75,7 @@ Une stratégie de rétention est appliquée au niveau de la collection d’un si
   
 Si une personne tente de modifier ou de supprimer le contenu dans un site qui est soumis à une stratégie de rétention, la stratégie vérifie d’abord si le contenu a été modifié depuis qu’elle a été appliquée. S’il s’agit du premier changement depuis l’application de la stratégie, la stratégie de rétention copie le contenu dans la bibliothèque de conservation et de préservation, et permet ensuite à la personne de modifier ou de supprimer le contenu d’origine. Tout contenu dans la collection du site peut être copié dans la bibliothèque de conservation et de préservation, même si le contenu ne correspond pas à la requête utilisée par la stratégie de rétention.
   
-Ensuite, un travail du minuteur nettoie la bibliothèque de conservation et de préservation des documents. Le travail du minuteur s’exécute périodiquement et compare tout le contenu de la bibliothèque de conservation et de préservation des documents à toutes les requêtes utilisées par les stratégies de rétention sur le site. À moins que le contenu corresponde à au moins une des requêtes, le travail du minuteur supprime définitivement le contenu de la bibliothèque de conservation et de préservation des documents.
+Ensuite, un travail du minuteur nettoie la bibliothèque de conservation et de préservation. Le travail du minuteur s’exécute périodiquement et compare tout le contenu de la bibliothèque de conservation aux requêtes utilisées par les stratégies de rétention sur le site. À moins que le contenu corresponde à au moins une des requêtes, le travail du minuteur supprime définitivement le contenu de la bibliothèque de conservation.
   
 Le précédent s’applique au contenu qui existe lorsque la stratégie de rétention est appliquée. En outre, tout contenu qui est créé ou ajouté au site après avoir été inclus dans la stratégie sera conservé après la suppression. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation des documents la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver les versions de tous les fichiers, vous devez activer le contrôle de version (consultez la section ci-après sur le contrôle de version).
   
@@ -98,7 +100,7 @@ Par défaut, lorsqu’un utilisateur supprime un message d’un dossier autre qu
   
 Un processus évalue régulièrement les éléments du dossier Éléments récupérables. Si un élément ne correspond pas aux règles d’au moins une stratégie de rétention, l’élément est supprimé définitivement (processus également appelé suppression définitive) du dossier Éléments récupérables.
   
-Lorsqu’un utilisateur tente de modifier certaines propriétés d’un élément de boîte aux lettres (objet, corps, pièces jointes, expéditeurs et destinataires ou la date d’envoi ou de réception d’un message), une copie de l’élément d’origine est enregistrée dans le dossier Éléments récupérables avant la validation de la modification. Cela se produit à chaque modification ultérieure. À la fin de la période de rétention, les copies présentes dans le dossier Éléments récupérables sont supprimées définitivement.
+Lorsqu’une personne tente de modifier certaines propriétés d’un élément de boîte aux lettres (objet, corps, pièces jointes, expéditeurs et destinataires ou la date d’envoi ou de réception d’un message), une copie de l’élément d’origine est enregistré dans le dossier des Éléments récupérables avant la validation de la modification. Cette action se produit à chaque modification ultérieure. À la fin de la période de rétention, les copies dans le dossier Éléments récupérables sont supprimées définitivement.
   
 Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, la boîte aux lettres devient inactive lorsque le compte d’utilisateur Office 365 est supprimé. Le contenu d’une boîte aux lettres inactive est toujours soumis à une stratégie de rétention placée sur la boîte aux lettres avant que celle-ci ne devienne inactive et ce contenu est disponible pour une recherche eDiscovery. Pour obtenir plus d’informations, consultez l’article [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
   
@@ -296,7 +298,7 @@ Par conséquent, avant de verrouiller une stratégie de rétention, il est **ess
   
 Vous pouvez verrouiller une stratégie de rétention à l’aide de PowerShell.
 
-Tout d’abord,[se connecter au Centre de Conformité et Sécurité Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771).
+Tout d’abord,[se connecter au Centre de Conformité et Sécurité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 Ensuite, pour afficher une liste de vos stratégies de rétention et rechercher le nom de la stratégie que vous souhaitez verrouiller, exécutez `Get-RetentionCompliancePolicy`.
 
@@ -392,8 +394,8 @@ Si vous utilisiez une stratégie de conservation, celle-ci a été automatiqueme
 
 Les membres de votre équipe de conformité appelés à créer des stratégies de rétention ont besoin d’autorisations pour accéder au [Centre de sécurité &amp;et de conformité](https://protection.office.com/). Par défaut, votre administrateur locataire a accès à cet emplacement et peut accorder aux responsables de la mise en conformité et à d’autres personnes l’accès au [Centre de sécurité&amp; et de conformité](https://protection.office.com/), sans leur donner toutes les autorisations d’un administrateur locataire. Pour ce faire, nous vous recommandons d’accéder à la page **Autorisations** du [Centre de sécurité&amp; et de conformité](https://protection.office.com/), de modifier le groupe de rôles **Administrateur de conformité** et d’ajouter des membres à ce groupe de rôles. 
   
-Pour obtenir plus d’informations, consultez l’article [Octroi de l’accès au Centre de sécurité &amp; conformité Office 365 aux utilisateurs](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
-  
+Pour plus d’informations, voir [Autoriser des utilisateurs à accéder au Centre de sécurité et conformité Office 365](/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
+
 Ces autorisations sont requises uniquement pour créer et appliquer une stratégie de rétention. L’application d’une stratégie ne nécessite pas d’accès au contenu.
   
 ## <a name="find-the-powershell-cmdlets-for-retention-policies"></a>Trouver les cmdlets PowerShell pour les stratégies de rétention

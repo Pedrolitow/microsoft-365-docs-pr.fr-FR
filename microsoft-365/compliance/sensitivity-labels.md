@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité pour appliquer des paramètres de protection qui intègrent le chiffrement et les filigranes sur le contenu étiqueté.
-ms.openlocfilehash: f85d94b918c96ea6505b9b52d386e7f30a3fe77a
-ms.sourcegitcommit: 920bca353d16e9b1e5d4d268e0410ef179eced37
+ms.openlocfilehash: 465b22b7d57718e5b1f38951804d2f76c10ebb3f
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40948869"
+ms.locfileid: "40962343"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -54,11 +54,11 @@ Dans tous ces cas, les étiquettes de confidentialité dans Office 365 peuvent 
   
 Créez des étiquettes de sensibilité dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365 sous **Classification** > **Étiquettes de sensibilité**. Ces étiquettes de confidentialité peuvent être utilisées par Azure Information Protection, les applications Office et les services 365 d’Office.
 
-Si vous êtes client d’Azure Information Protection, vous pouvez utiliser vos étiquettes Azure Information Protection dans les autres centres d’administration. Celles-ci seront synchronisées avec le portail Azure si vous choisissez d’effectuer une configuration supplémentaire ou avancée. **Les étiquettes Azure Information Protection et les étiquettes de sensibilité Office 365 sont entièrement compatibles entre elles.** Cela signifie, par exemple, que si vous avez du contenu étiqueté par Azure Information Protection, vous n’avez pas besoin de reclassifier ou de ré-étiqueter votre contenu.
+Si vous êtes client d’Azure Information Protection, vous pouvez utiliser vos étiquettes Azure Information Protection dans les autres centres d’administration. Celles-ci seront synchronisées avec le portail Azure si vous choisissez d’effectuer une configuration supplémentaire ou avancée. Les étiquettes Azure Information Protection et les étiquettes de confidentialité Office 365 sont compatibles entre elles. Cela signifie que, si vous disposez par exemple d'un contenu étiqueté par Azure Information Protection, la reclassification ou le réétiquetage de votre contenu n'est pas nécessaire.
 
-## <a name="what-a-sensitivity-label-is"></a>Qu’est-ce qu’une étiquette de niveau de confidentialité ?
+## <a name="what-a-sensitivity-label-is"></a>Qu’est-ce qu’une étiquette de confidentialité ?
 
-Lorsque vous affectez une étiquette de niveau de confidentialité à un document ou à un message électronique, elle agit tout simplement comme une balise ayant les caractéristiques suivantes :
+Lorsque vous attribuez une étiquette de confidentialité à un document ou à un message électronique, elle ressemble à un cachet appliqué à un contenu qui est :
 
 - **Personnalisable.** Vous pouvez créer des catégories pour les différents niveaux de sensibilité du contenu dans votre organisation, comme Personnel, Public, Général, Confidentiel ou Hautement confidentiel.
 
@@ -66,7 +66,7 @@ Lorsque vous affectez une étiquette de niveau de confidentialité à un documen
 
 - **Permanentes.** Après avoir appliqué une étiquette de confidentialité à du contenu, celle-ci est persistante dans les métadonnées du courrier électronique ou du document. L’étiquette se déplace par conséquent avec le contenu, y compris les paramètres de protection, et que ces données constituent la base de l’application et de l’exécution des stratégies.
 
-Dans les applications Office, une étiquette de confidentialité apparaît simplement sous la forme d’une balise sur un message électronique ou un document.
+Dans les applications Office, une étiquette de confidentialité s'affiche pour les utilisateurs comme une balise sur un message électronique ou un document.
 
 Une seule étiquette de niveau de confidentialité peut être affectée à chaque élément de contenu. Un élément peut disposer à la fois d’une étiquette de niveau de confidentialité et d’une [étiquette de rétention](labels.md).
 
@@ -153,7 +153,7 @@ Avec une stratégie d’étiquette, vous pouvez effectuer les actions suivantes�
 
 Après avoir créé une stratégie d’étiquette et affecté des étiquettes de niveau de confidentialité aux utilisateurs et aux groupes, ces personnes peuvent voir ces étiquettes disponibles dans les applications Office au bout d’une heure, voire moins.
 
-Vous pouvez créer et publier autant d’étiquettes de confidentialité que vous le souhaitez, à une exception près : si l’étiquette applique le chiffrement, un maximum de 500 étiquettes est disponible. Toutefois, dans le but de diminuer les frais généraux de l’administrateur et de réduire la complexité pour vos utilisateurs, tentez d’utiliser un nombre minimal d’étiquettes. Les déploiements en temps réel ont démontré l’efficacité d’une réduction lorsque les utilisateurs ont plus de cinq étiquettes principales et plus de cinq sous-étiquettes par étiquette principale.
+Vous pouvez créer et publier autant d’étiquettes de confidentialité que vous le souhaitez, à une exception près : si l’étiquette applique le chiffrement, un maximum de 500 étiquettes est disponible. Toutefois, dans le but de diminuer les frais généraux de l’administration et de réduire la complexité pour vos utilisateurs, tentez d’utiliser un nombre minimal d’étiquettes. Les déploiements en temps réel ont démontré l’efficacité notable d’une réduction lorsque les utilisateurs ont plus de cinq étiquettes principales ou plus de cinq sous-étiquettes par étiquette principale.
 
 ### <a name="label-policy-priority-order-matters"></a>Stratégie de priorité des étiquettes (l’ordre est important)
 
@@ -195,7 +195,7 @@ Les étiquettes de confidentialité apparaissent dans l’interface utilisateur 
 
 - [Prise en charge des fonctionnalités d’étiquettes de confidentialité dans Outlook](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
 
-Si vous utilisez le client d’étiquetage unifié Azure information Protection pour vos ordinateurs Windows, des fonctionnalités supplémentaires sont disponibles pour les étiquettes de confidentialité. Pour plus d’informations, consulter [Comparer les clients d’étiquetage pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers). 
+Si vous utilisez le client d’étiquetage unifié Azure information Protection pour vos ordinateurs Windows, des fonctionnalités supplémentaires sont disponibles pour les étiquettes de confidentialité. Pour plus d’informations, consulter [Comparer les clients d’étiquetage pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 ### <a name="office-apps-on-windows"></a>Applications Office sur Windows
 
@@ -243,7 +243,7 @@ Les utilisateurs Azure Information Protection peuvent classer et étiqueter du c
 Si vous utilisez des étiquettes Azure Information Protection car votre client n’est pas encore sur la [plateforme d’étiquetage unifié](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), nous vous recommandons d’éviter la création de nouvelles étiquettes dans d’autres centres d’administration tant que l’étiquetage unifié n’est pas activé. Pour plus d’informations sur ce processus, voir [Migration des étiquettes Azure Information Protection vers des étiquettes de confidentialité unifiées](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). 
 
 > [!NOTE]
->  La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le portail Microsoft Azure fera l’objet d’un retrait le **31 mars 2021**. Pour plus d’informations, consultez l’[avis de dépréciation](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108) officiel.
+> La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le portail Microsoft Azure fera l’objet d’un retrait le **31 mars 2021**. Pour plus d’informations, consultez l’[avis de dépréciation](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108) officiel.
 
 ## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>Les étiquettes de confidentialité et le client Azure Information Protection
 
