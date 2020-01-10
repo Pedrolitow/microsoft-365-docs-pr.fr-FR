@@ -3,7 +3,7 @@ title: Mise en quarantaine des messages électroniques dans Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -16,29 +16,29 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer une mise en quarantaine pour les messages électroniques entrants dans Office 365 où les messages électroniques entrants qui ont été filtrés en tant que courrier indésirable, Bulk, phishing et programmes malveillants peuvent être conservés à des fins de révision ultérieure.
-ms.openlocfilehash: 5590c9de9ff596c359910b5b1793004ae1913365
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f7669f69abb711d71362057f2019b0dd7e30443b
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080198"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021850"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>Mise en quarantaine des messages électroniques dans Office 365
 
-Vous pouvez configurer la mise en quarantaine pour les messages électroniques entrants dans Office 365 où les messages qui ont été filtrés comme courrier indésirable, le courrier en nombre, le courrier électronique de hameçonnage, le courrier électronique contenant des programmes malveillants et les messages qui correspondent à une règle de flux de messagerie spécifiée peuvent être conservés lors de la révision ultérieure.
+Vous pouvez configurer la mise en quarantaine pour les messages électroniques entrants dans Office 365 où les messages qui ont été filtrés comme courrier indésirable, le courrier en nombre, le courrier électronique de hameçonnage, le courrier électronique contenant des programmes malveillants et les messages qui correspondent à une règle de flux de messagerie spécifiée (également appelée règle trasport) peuvent être conservés ultérieurement. Veuillez.
   
-Par défaut, les messages filtrés sont envoyés vers le dossier de courrier indésirable des destinataires, à l’exception du courrier contenant un programme malveillant qui est envoyé en quarantaine par défaut. En tant qu’administrateur, vous pouvez configurer des stratégies de filtrage de contenu pour envoyer tous les messages filtrés en quarantaine. Les différentes actions que vous pouvez effectuer pour les messages filtrés sur le contenu dépendent des [stratégies configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
+Par défaut, les messages qui ont été filtrés pour le hameçonnage, les programmes malveillants et les règles de flux de messagerie sont envoyés en quarantaine, tandis que les messages qui ont été filtrés en tant que courrier indésirable et messages en bloc sont envoyés vers le dossier de courrier indésirable des destinataires. En tant qu’administrateur, vous pouvez configurer des stratégies de filtrage du courrier indésirable (également appelées stratégies de filtrage de contenu) pour envoyer des courriers indésirables et des messages en nombre à la mise en quarantaine. Pour plus d’informations, consulter [Configurer vos stratégies de filtre de courrier indésirable](configure-your-spam-filter-policies.md).
   
 Les utilisateurs et les administrateurs peuvent travailler avec des messages mis en quarantaine. Les utilisateurs peuvent utiliser uniquement leurs propres messages filtrés en quarantaine. Les administrateurs peuvent rechercher et gérer les messages mis en quarantaine pour tous les utilisateurs.
 
 > [!NOTE]
-> Les messages hameçons et les messages mis en quarantaine par la règle de flux de messagerie (également appelée règle de transport) ne sont disponibles que dans la mise en quarantaine de l’administrateur.
+> Les messages hameçons à niveau de confiance élevé et les messages mis en quarantaine par les actions de règle de flux de messagerie ne sont disponibles que dans la mise en quarantaine de l’administrateur. Les utilisateurs peuvent accéder à leurs propres messages hameçons, de courrier indésirable et de courrier en nombre. 
   
 En savoir plus sur l’utilisation des messages mis en quarantaine :
   
 - [Gérer les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)
 
-- [Rechercher et débloquer les messages mis en quarantaine en tant qu'utilisateur](find-and-release-quarantined-messages-as-a-user.md)
+- [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur](find-and-release-quarantined-messages-as-a-user.md)
 
 - [Utiliser les notifications de courrier indésirable utilisateur pour publier et signaler les messages de courrier indésirable mis en quarantaine](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 

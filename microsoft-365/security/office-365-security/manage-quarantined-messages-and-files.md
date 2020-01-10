@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'En tant qu’administrateur, vous pouvez afficher, publier et signaler des messages en quarantaine faux positifs dans Office 365. Vous pouvez configurer des stratégies pour qu’Office 365 filtre les messages et les envoie à la mise en quarantaine pour plusieurs raisons : ils ont été identifiés comme courrier indésirable, en bloc, par hameçonnage, par programme malveillant ou parce qu’ils correspondent à une règle de flux de messagerie. '
-ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970932"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021860"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365
 
@@ -31,26 +31,15 @@ Par défaut, Office 365 envoie les messages de hameçonnage et les messages cont
 
 Vous devez disposer des autorisations d’administrateur général (GA) dans Office 365 ou être membre d’un ou de plusieurs groupes de rôles Security & Compliance Center pour travailler avec des messages mis en quarantaine ou mis en quarantaine. Pour plus d’informations, consultez [la rubrique autorisations dans le centre de conformité & Office 365 Security](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) .
 
-> [!IMPORTANT]
-> Par défaut, les messages de courrier indésirable et de phishing sont conservés en quarantaine pendant 30 jours. Les messages mis en quarantaine en raison d’une correspondance avec une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Les messages malveillants sont maintenus en quarantaine pendant 15 jours. Vous pouvez personnaliser la durée de mise en quarantaine du courrier indésirable dans les paramètres de blocage du courrier indésirable dans le centre de sécurité & Compliance Center. Quand Office 365 supprime un message en quarantaine, vous ne pouvez pas le récupérer. Si vous le souhaitez, vous pouvez modifier la période de rétention des messages mis en quarantaine dans vos stratégies de filtrage du courrier indésirable. Pour plus d’informations, consultez [la rubrique définition de la période de rétention de quarantaine](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime).
+## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>Quelles sont les autorisations nécessaires pour accéder à la mise en quarantaine de l’administrateur ?
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+Les autorisations de gestion de la quarantaine sont contrôlées par l’appartenance à **sécurité &* les groupes de rôles du centre de conformité. Pour plus d’informations sur les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Bien que la mise en quarantaine se trouve dans le centre de sécurité & conformité, les autorisations permettant de gérer les messages en quarantaine sont contrôlées par l’appartenance à des groupes de rôles **Exchange Online** . Pour plus d’informations sur les groupes de rôles dans Exchange Online, consultez la rubrique [Manage Role Groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+Les groupes de rôles sécurité & conformité qui permettent de gérer la mise en quarantaine sont les suivants :
 
-Les groupes de rôles Exchange Online qui permettent de gérer les fichiers de quarantaine sont les suivants :
-
-- **Gestion**de l’Organisation : les administrateurs globaux sont automatiquement membres de ce groupe.
+- **Administrateur de quarantaine**
 
 - **Administrateur de la sécurité**
-
-- **Gestion de l'hygiène**
-
-Les groupes de rôles Exchange Online qui permettent d’afficher les fichiers de quarantaine sont les suivants :
-
-- **View-Only Organization Management**
-
-- **Lecteur de sécurité**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>Afficher les messages mis en quarantaine de votre organisation
 

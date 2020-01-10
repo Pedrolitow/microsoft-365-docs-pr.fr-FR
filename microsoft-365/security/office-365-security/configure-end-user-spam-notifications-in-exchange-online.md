@@ -13,19 +13,19 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour la stratégie de filtrage du courrier indésirable par défaut à l’échelle de l’entreprise ou pour les stratégies de filtrage du courrier indésirable personnalisées appliquées
-ms.openlocfilehash: 0b1b88a60ba1f14aa482dc8214739930b69cca05
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 8e77fbb619db776d7231f6e1f944f1237c1d601c
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39909834"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021990"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans Exchange Online
 
 > [!IMPORTANT]
 > Cette rubrique est destinée aux clients Exchange Online qui protègent les boîtes aux lettres hébergées sur le nuage. Les clients autonomes Exchange Online Protection (EOP) qui protègent les boîtes aux lettres locales doivent plutôt lire la rubrique suivante : [configurer les notifications de courrier indésirable de l’utilisateur final dans EOP](configure-end-user-spam-notifications-in-eop.md). 
   
-Vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour la stratégie de filtrage du courrier indésirable par défaut à l’échelle de l’entreprise ou pour les stratégies de filtrage du courrier indésirable personnalisées appliquées L'activation des notifications de courrier indésirable à l'utilisateur final permet à vos utilisateurs de gérer eux-mêmes leurs propres messages de courrier indésirable mis en quarantaine. La fonctionnalité ne peut pas être utilisée avec les stratégies appliquées à des utilisateurs ou des groupes, ou à une stratégie comportant des exceptions.
+Vous pouvez configurer des notifications de courrier indésirable pour l’utilisateur final pour la stratégie de filtrage du courrier indésirable par défaut à l’échelle de l’entreprise ou pour des stratégies personnalisées L’activation des messages de notification de courrier indésirable de l’utilisateur final permet aux utilisateurs de gérer leurs propres messages indésirables mis en quarantaine. 
   
 Les notifications de courrier indésirable à l'utilisateur final contiennent la liste de tous les messages de courrier indésirable mis en quarantaine reçus par l'utilisateur final au cours d'une période que vous configurez (vous pouvez spécifier une valeur comprise entre 1 et 15 jours). Vous pouvez également configurer la langue dans laquelle est écrit le message de notification.
   
@@ -90,7 +90,7 @@ Vous pouvez également utiliser le centre de sécurité et de conformité (SCC) 
     
    - Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie de filtrage du courrier indésirable, y compris les paramètres de notification de courrier indésirable de l’utilisateur final, apparaît dans le volet.
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md)
   

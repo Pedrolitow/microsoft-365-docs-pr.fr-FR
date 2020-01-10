@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
-ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.openlocfilehash: d353c4bee8381074b845e0774e06f411d823549f
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910115"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021830"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -59,33 +59,35 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 |Purge automatique sans heure|Activé|Activé|Pour le courrier indésirable et les hameçons ZAP|
 |MarkAsSpamBulkMail|Activé|Activé|Ce paramètre est disponible uniquement dans PowerShell|
 
-La stratégie de blocage du courrier indésirable, appelée filtre de courrier indésirable avancé, est désapprouvée au moment de la rédaction de cet accord. Nos paramètres recommandés pour **ceux-ci sont pour les désactiver** pour les niveaux standard et strict :
+La stratégie de blocage du courrier indésirable, appelée Advanced Spam Filter (ASF), comporte plusieurs autres paramètres qui sont en cours de désapprobation. Pour plus d’informations sur les chronologies de l’amortissement de ces fonctionnalités, reportez-vous à cette rubrique.
+ 
+ Nous vous **recommandons de désactiver ces paramètres pour** les niveaux standard et strict :
 
-|Nom de la fonctionnalité de sécurité| Commentaires |
+|Nom de la fonctionnalité de sécurité|Commentaires|
 |---------|---------|
-|IncreaseScoreWithImageLinks| |
-|IncreaseScoreWithNumericIps| |
-|IncreaseScoreWithRedirectToOtherPort| |
-|IncreaseScoreWithBizOrInfoUrls| |
-|MarkAsSpamEmptyMessages| |
-|MarkAsSpamJavaScriptInHtml| |
-|MarkAsSpamFramesInHtml| |
-|MarkAsSpamObjectTagsInHtml| |
-|MarkAsSpamEmbedTagsInHtml| |
-|MarkAsSpamFormTagsInHtml| |
-|MarkAsSpamWebBugsInHtml| |
-|MarkAsSpamSensitiveWordList| |
-|MarkAsSpamFromAddressAuthFail| |
-|MarkAsSpamNdrBackscatter| |
-|MarkAsSpamSpfRecordHardFail| |
+|IncreaseScoreWithImageLinks||
+|IncreaseScoreWithNumericIps||
+|IncreaseScoreWithRedirectToOtherPort||
+|IncreaseScoreWithBizOrInfoUrls||
+|MarkAsSpamEmptyMessages||
+|MarkAsSpamJavaScriptInHtml||
+|MarkAsSpamFramesInHtml||
+|MarkAsSpamObjectTagsInHtml||
+|MarkAsSpamEmbedTagsInHtml||
+|MarkAsSpamFormTagsInHtml||
+|MarkAsSpamWebBugsInHtml||
+|MarkAsSpamSensitiveWordList||
+|MarkAsSpamFromAddressAuthFail||
+|MarkAsSpamNdrBackscatter||
+|MarkAsSpamSpfRecordHardFail||
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>Paramètres de stratégie de filtrage du courrier indésirable sortant EOP
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
-|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire externe|400|500||
-|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire interne|800|1000||
-|Limites de destinataires de stratégie de courrier indésirable sortant-limite journalière|800|1000||
+|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire externe|500|400||
+|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire interne|1000|800||
+|Limites de destinataires de stratégie de courrier indésirable sortant-limite journalière|1000|800||
 |Action lorsqu’un utilisateur dépasse les limites|Empêcher l’utilisateur d’envoyer des messages|Empêcher l’utilisateur d’envoyer des messages||
 
 ### <a name="eop-anti-malware-policy-settings"></a>Paramètres de stratégie anti-programme malveillant EOP
