@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823836"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004919"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
@@ -25,7 +25,7 @@ Le service de bureau géré Microsoft communique de plusieurs façons avec les c
 Le portail d’administration de bureau géré Microsoft exige que les utilisateurs qui accèdent au portail disposent de l’un de ces rôles Azure Active Directory (AD) :
 - Administrateur général
 - Administrateur du service Intune
-- Administrateur de facturation
+- Lecteur général
 - Administrateur de support de service
 
 L’administrateur général doit être celui pour inscrire votre organisation dans le bureau géré Microsoft. Les cinq rôles ont le même accès dans le portail d’administration pour lancer et afficher les tâches. Pour plus d’informations sur l’affectation de ces rôles dans Azure AD, reportez-vous à la rubrique [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
@@ -40,7 +40,7 @@ Empaquetage d’applications | Résolution des problèmes d’empaquetage d’ap
 Appareils | Intégrité de l’appareil, résolution des problèmes avec les appareils de bureau gérés Microsoft
 Sécurité | Résolution des problèmes de sécurité avec les appareils de bureau gérés Microsoft
 Support technique informatique | dans les cas où notre équipe de support technique effectue des tickets d’utilisateur final en dehors des zones de support de bureau géré Microsoft 
-Autre | Pour les problèmes non couverts par d’autres domaines
+Autres | Pour les problèmes non couverts par d’autres domaines
 
 **Les personnes que vous choisissez pour ces contacts doivent disposer des connaissances et des pouvoirs nécessaires pour prendre des décisions concernant votre environnement de bureau géré Microsoft.** Lorsque vous intégrez votre environnement de bureau géré Microsoft, vous êtes invité à ajouter des contacts pour votre service d’assistance et sécurité locaux. 
 
