@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 140ccc3984dc09a794d822eb3ff02f139d87fcd5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202345"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004815"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un jeu à réviser
 
@@ -27,7 +27,7 @@ Dans la plupart des cas, il est utile de pouvoir approfondir les données dans u
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Création et exécution d’une requête dans un jeu de révision
 
-Pour créer et exécuter une requête sur les documents d’un jeu de révision, cliquez sur **nouvelle requête** dans l’ensemble de révision. Une fois que vous avez nommé votre requête et défini les conditions, cliquez sur **Enregistrer** pour enregistrer et exécuter la requête. Pour exécuter une requête qui a été précédemment enregistrée, cliquez sur une requête enregistrée. 
+Pour créer et exécuter une requête sur les documents d’un jeu de révision, cliquez sur **nouvelle requête** dans l’ensemble de révision. Une fois que vous avez nommé votre requête et défini les conditions, cliquez sur **Enregistrer** pour enregistrer et exécuter la requête. Pour exécuter une requête qui a été précédemment enregistrée, cliquez sur une requête enregistrée.
 
 ![Examiner les requêtes Set](media/AeDReviewSetQueries.png)
 

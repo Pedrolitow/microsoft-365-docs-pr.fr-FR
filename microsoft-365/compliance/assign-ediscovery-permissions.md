@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
-ms.openlocfilehash: 434fe9f4876bb29df98de5575611069b0afc6860
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+ms.openlocfilehash: 548af12811287dce3461e5ce7d5f1ffa905eef73
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854039"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004839"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -72,7 +72,7 @@ Sur la page **autorisations** du centre de sécurité & conformité, vous pouvez
 
 Le tableau suivant répertorie les rôles RBAC liés à la découverte électronique dans le centre de sécurité & conformité et indique les groupes de rôles intégrés auxquels chaque rôle est affecté par défaut. 
     
-|**Role**|**Administrateur de conformité**|**Administrateur de & du gestionnaire eDiscovery**|**Gestion de l'organisation**|**Relecteur**|
+|**Rôle**|**Administrateur de conformité**|**Administrateur de & du gestionnaire eDiscovery**|**Gestion de l'organisation**|**Relecteur**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Gestion des cas <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Recherche de conformité <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
@@ -128,7 +128,7 @@ Ce rôle permet aux utilisateurs d’accéder aux données de cas dans [Office 3
 
 ### <a name="rms-decrypt"></a>Déchiffrement RMS
 
-Ce rôle permet aux utilisateurs de déchiffrer des messages électroniques chiffrés RMS lors de l’exportation des résultats de recherche ou de la préparation des résultats de recherche pour analyse dans Advanced eDiscovery. Pour plus d’informations sur le déchiffrement des résultats de recherche lors de l’exportation, voir [Export content Search Results](export-search-results.md).
+Ce rôle permet aux utilisateurs de déchiffrer des messages électroniques protégés par des droits lors de l’exportation des résultats de recherche ou de la préparation des résultats de recherche pour analyse dans Advanced eDiscovery. Pour plus d’informations sur le déchiffrement des résultats de recherche lors de l’exportation, voir [Export content Search Results](export-search-results.md).
 
 ### <a name="search-and-purge"></a>Recherche et purge
 
