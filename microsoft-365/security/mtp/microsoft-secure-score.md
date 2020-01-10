@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
+ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970912"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41012187"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -135,6 +135,21 @@ Microsoft Secure score est un résumé numérique de votre position de sécurit�
 ## <a name="whats-coming"></a>Qu’est-ce qui arrive ?
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité et améliore la convivialité, nous apportons des modifications dans le futur proche. Votre score et le score maximal possible seront modifiés. Toutefois, cela n’implique pas de modification de votre position de sécurité.
+
+### <a name="mfa-improvement-action-updates"></a>Mises à jour de l’action d’amélioration MFA
+
+Pour refléter la nécessité pour les entreprises de garantir la sécurité maximale lors de l’application des stratégies qui fonctionnent avec leur entreprise, le score de sécurité Microsoft supprime trois actions d’amélioration axées sur l’authentification multifacteur et en ajoutant deux.
+
+Les trois qui seront supprimés :
+- Inscrire tous les utilisateurs pour l’authentification multifacteur
+- Exiger l’authentification multifacteur pour tous les utilisateurs
+- Exiger l’authentification multifacteur pour les rôles privilège Azure AD
+
+Nouvelles actions d’amélioration :
+- S’assurer que tous les utilisateurs peuvent effectuer l’authentification multifacteur pour un accès sécurisé
+- Exiger MFA pour les rôles d’administration
+
+ Ces nouvelles actions d’amélioration requièrent l’enregistrement de vos utilisateurs ou administrateurs pour l’authentification multifacteur (MFA) dans votre répertoire et l’établissement de l’ensemble approprié de stratégies répondant à vos besoins organisationnels. L’objectif principal est de la flexibilité tout en s’assurant que tous vos utilisateurs et administrateurs peuvent s’authentifier avec plusieurs facteurs ou des invites de vérification d’identité basées sur les risques. Cela peut prendre la forme de paramètres de sécurité par défaut qui permettent à Microsoft de déterminer quand il faut défier les utilisateurs à l’authentification multifacteur, ou si plusieurs stratégies appliquent des décisions délimitées.
 
 ### <a name="removing-not-scored-and-review-improvement-actions"></a>Suppression des actions d’amélioration « non notées » et « réviser »
 
