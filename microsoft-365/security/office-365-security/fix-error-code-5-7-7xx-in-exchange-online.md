@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment résoudre les problèmes liés aux messages électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online (le client a bloqué l’envoi de messages).
-ms.openlocfilehash: 831efac29bb2e878585f97419dfd9dca67c67409
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 4e82df78cfb83865142defb14cec0841ab29ba95
+ms.sourcegitcommit: 55cb11c2475f40d0f1c64cf45446bf383d7d5f86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995227"
+ms.locfileid: "41002974"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Corriger les problèmes de remise des courriers électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online
 
@@ -49,11 +49,11 @@ Une fois compromis, les clients ne pourront pas envoyer de messages électroniqu
 
 `550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
-## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>Comment débloquer le client afin de le renvoyer
+## <a name="unblocking-tenant-in-order-to-send-again"></a>Déblocage du client afin de le renvoyer
 
 Il y a plusieurs choses que vous devez faire si votre client est bloqué pour l’envoi de messages électroniques :
 
-1. Vérifiez que tous vos domaines de messagerie sont inscrits. Pour plus d’informations, consultez [la rubrique ajouter un domaine à Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) et [gérer les domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Modifier le mot de passe de vos comptes d’administrateur. Si l’envoi d’un client est bloqué, il est fort probable qu’un compte administrateur ait été compromis. La première étape de la modification des mots de passe consiste à empêcher l’agresseur de faire plus de préjudice.
 
 2. [Activez l’authentification multifacteur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) pour tous les administrateurs de votre organisation Office 365.
 
@@ -66,7 +66,7 @@ Il y a plusieurs choses que vous devez faire si votre client est bloqué pour l�
 6. Verrouillez vos serveurs de messagerie locaux et assurez-vous qu’ils ne sont pas compromis.
 
    > [!TIP]
-   > Il existe de nombreux facteurs, en particulier si vous utilisez des serveurs tiers. Quoi qu’il en soit, vous devrez vérifier que tous les messages sortants sont légitimes.
+   > Il existe de nombreux facteurs, en particulier si vous utilisez des serveurs tiers. Quelle que soit la fonctionnalité, vous devez vérifier que vos messages sortants n’incluent pas de courrier indésirable.
 
 7. Appelez le support Microsoft et demandez-lui de débloquer l’envoi de messages électroniques. Le code d’erreur est utile, mais vous devez prouver que votre environnement a été sécurisé et qu’il ne peut pas envoyer de courrier indésirable. Pour ouvrir un cas de support technique, voir [contacter le support pour les entreprises-aide de l’administrateur](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 

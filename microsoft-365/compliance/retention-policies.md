@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: ec20b3849f70fcc47590305991b90e6a9a41d540
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: 5bc131b98bbc0af5cdc9629e029c06f20a003d5f
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962423"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989599"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -240,6 +240,9 @@ Notez que **Historique des conversations**, un dossier dans Outlook, est une fon
 Vous pouvez utiliser une stratégie de rétention pour conserver des conversations et des messages de canal dans Teams. Les conversations Teams sont stockées dans un dossier masqué dans la boîte aux lettres de chaque utilisateur inclus dans la conversation, et les messages de canal Teams sont stockés dans un dossier masqué similaire dans la boîte aux lettres de groupe de l’équipe. Toutefois, il est important de comprendre que Teams utilise un service de conversation basé sur Azure qui stocke également ces données. Par défaut, ce service stocke les données indéfiniment. Pour cette raison, nous vous recommandons vivement d’utiliser l’emplacement Teams pour conserver et supprimer des données Teams. Utiliser l’emplacement Teams permet de supprimer définitivement des données à partir de boîtes aux lettres Exchange et du service de conversation basé sur Azure. Pour obtenir plus d’informations, consultez l’article [Présentation de la sécurité et de la conformité dans Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258).
   
 Les conversations et les messages de canal Teams ne sont pas affectés par les stratégies de rétention appliquées aux boîtes aux lettres d’utilisateur ou de groupe dans les emplacements Exchange ou les groupes Office 365. Même si les conversations et les messages de canal Teams sont stockés dans Exchange, ces éléments sont uniquement affectés par une stratégie de rétention appliquée à l’emplacement Teams.
+
+> [!NOTE]
+> Si un utilisateur est inclus dans une stratégie de rétention active conservant les données de Teams, la suppression de sa boîte aux lettres n'est dans ce cas pas autorisée, car le stockage des données doit être maintenu. Pour supprimer la boîte aux lettres de cet utilisateur, l’administrateur doit tout d’abord exclure l’utilisateur de la stratégie de rétention.
   
 Lorsqu’une stratégie de rétention est affectée à une équipe, les conversations et les messages de canal suivent l’un des deux chemins suivants :
 
