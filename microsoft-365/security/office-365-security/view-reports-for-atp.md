@@ -1,9 +1,9 @@
 ---
-title: Afficher les rapports pour Office 365 protection avancée contre les menaces
+title: Afficher les rapports pour la protection avancée contre les menaces Office 365, les rapports de programmes malveillants, les rapports de hameçonnage, les comptes compromis, l’état de protection des URL, les rapports de menace, les menaces de rapports
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 01/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment trouver et utiliser des rapports pour Office 365 protection avancée contre les menaces dans &amp; le centre de sécurité conformité.
-ms.openlocfilehash: 9ad177e96184913be61e098a1aafa294a123199b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces &amp; dans le centre de sécurité conformité.
+ms.openlocfilehash: a03fc9e14017255faf8c1c7f58cf2baa65823962
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866406"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022381"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -41,7 +41,27 @@ Lisez cet article pour obtenir une vue d’ensemble des rapports ATP et comment 
 
 Le rapport d' **État de protection contre les menaces** est une vue unique qui rassemble des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) et [Office 365 ATP](office-365-atp.md). Ce rapport est utile pour afficher les détections au fil du temps (jusqu’à 90 jours) et permet aux administrateurs de sécurité d’identifier les tendances ou de déterminer si les stratégies ont besoin d’être ajustées. 
 
-Le rapport d’état de protection contre les menaces fournit un nombre agrégé de messages électroniques uniques avec du contenu malveillant, tels que des fichiers ou des adresses de sites Web (URL) bloqués par le moteur anti-programme malveillant, [une purge automatique avec une heure](zero-hour-auto-purge.md)et des fonctionnalités ATP telles que [des liens approuvés ATP, des](atp-safe-links.md) [pièces jointes sûres ATP](atp-safe-attachments.md)et des [fonctionnalités anti-hameçonnage ATP](atp-anti-phishing.md). 
+Le rapport fournit un nombre agrégé de messages électroniques uniques avec du contenu malveillant, tels que des fichiers ou des adresses de sites Web (URL) bloqués par le moteur anti-programme malveillant, la [purge automatique avec zéro heure](zero-hour-auto-purge.md)et des fonctionnalités ATP telles que [des liens approuvés ATP, des](atp-safe-links.md) [pièces jointes sûres ATP](atp-safe-attachments.md)et des [fonctionnalités anti-hameçonnage ATP](atp-anti-phishing.md). 
+
+Les filtres et les répartitions des informations permettent des catégorisations plus granulaires des informations contenues dans ce rapport. Plus précisément, il existe un menu « dépanner » inclus pour la *messagerie électronique > les messages hameçons* et de *messagerie > les vues anti-programme malveillant*. Il décompose les données en :
+
+| |  |
+|---------|---------|
+|Par type de détection    | Quelle stratégie a aidé à détecter ces menaces ?         |
+|Par la technologie de détection     | Quelle technologie Microsoft sous-jacente a intercepté la menace ?        |
+|Par État de remise     | Qu’est-il advenu des messages électroniques détectés comme des menaces ?         |
+| | |
+
+> [!TIP]
+> Le courrier électronique > hameçon | Les vues de programmes malveillants ont des répartitions granulaires pour les technologies de détection présentées, avec des catégories telles que *réputation de fichier générée*par l’ATP, détonation de *fichiers*, *détonation d’URL*, *anti-usurpation : DMARC*, par exemple, utiles pour identifier exactement quelle fonctionnalité a permis à votre organisation de détecter les menaces.
+
+![Liste déroulante rapport d’état de protection contre les menaces avec « dépanner ».](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+
+Ces affichages vous permettent d’exporter, par le biais d’un clic sur un bouton (par E-mail > hameçon, par courrier électronique > de programmes malveillants et de contenu > de programmes malveillants). Les données agrégées exportées sur votre ordinateur peuvent être ouvertes dans Excel.
+
+![Ce graphique indique exporter en tant qu’option dans le menu de l’affichage de programmes malveillants, directement entre créer une planification et rapport de requête.](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+Les affichages vue d’ensemble et courriels affichent des informations dans les heures de traitement et non dans les 24 heures (à la demande). une augmentation des vitesses a été un signal clair) !
 
 > [!NOTE]
 > Un rapport d’état de protection contre les menaces est disponible pour les clients qui ont [Office 365 ATP](office-365-atp.md) ou [Exchange Online Protection](exchange-online-protection-eop.md) (EoP); Toutefois, les informations affichées dans le rapport d’état de protection contre les menaces pour les clients ATP contiennent probablement des données différentes de celles que peuvent afficher les clients EOP. Par exemple, le rapport d’état de protection contre les menaces pour les clients ATP contient des informations sur les [fichiers malveillants détectés dans SharePoint Online, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md). Ces informations sont spécifiques à la protection avancée contre les menaces, de sorte que les clients qui disposent d’EOP mais pas de la fonctionnalité ATP ne verront pas ces détails dans le rapport d’état de protection contre les menaces.
@@ -61,7 +81,28 @@ Par défaut, le rapport d’état de protection contre les menaces affiche les d
 Vous pouvez également utiliser le menu **afficher les données par** pour modifier les informations affichées dans le rapport. 
   
 ![Affichage des options pour le rapport d’état de protection contre les menaces ATP](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
-  
+
+## <a name="url-protection-status-report"></a>Rapport d’état de protection des URL
+
+Ce rapport est basé sur les données collectées, ainsi que sur les menaces détectées, par clic (tandis que la plupart des autres rapports sur les menaces liées aux messages électroniques sont par message). Ce rapport est conçu pour afficher les menaces provenant de liens hypertexte dans les messages électroniques et les documents, par clic. Il existe deux modes :
+
+|  |  |
+|---------|---------|
+|URL clic sur une action de protection   | Voir le nombre d’URL bloquées, bloquées, mais remplacées par un clic d’un utilisateur, remplacé par un utilisateur, et autorisé.        |
+|URL cliquez par application     | Voir l’application à partir de laquelle l’utilisateur a cliqué sur l’URL.        |
+|  |  |
+
+Dans le tableau des détails, vous serez en mesure d’obtenir plus d’informations sur le temps de clic et les informations utilisateur. Enfin, gardez à l’esprit que le rapport d’état de protection des URL affiche la protection contre la fonctionnalité de liens fiables ATP, afin que seuls les clients ayant activé les liens de sécurité ATP voient les données reflétées dans ce rapport.
+
+> [!NOTE]
+> Il s’agit d’un *rapport de tendance de protection*, ce qui signifie que les données représentent des tendances dans un jeu de données plus volumineux. La création de rapports n’est pas disponible en temps réel ici. Pour l’URL en temps réel, cliquez sur données, continuer à utiliser le suivi des URL.
+
+## <a name="compromised-users-report"></a>Rapport sur les utilisateurs compromis
+
+Ce rapport, accessible à tous les utilisateurs disposant d’Exchange Online Protection, indique le nombre de comptes d’utilisateur marqués comme suspects ou utilisateurs restreints, données particulièrement utiles en tant que comptes entrez l’un des États indiquant que le compte d’utilisateur peut être problématique, voire compromis. Dans le cas d’une utilisation fréquente, le rapport de l’utilisateur compromis peut repérer des pics, voire des tendances, dans des comptes marqués dans des États suspects ou restreints, donnant des preuves à un problème de sécurité et du bien-être de votre client.
+
+![Rapport des utilisateurs compromis tel qu’il apparaît dans Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="atp-file-types-report"></a>Rapport sur les types de fichiers ATP
 
 Le rapport **types de fichiers ATP** indique le type de fichiers détectés comme malveillants par des [pièces jointes sûres ATP](atp-safe-attachments.md).
@@ -124,7 +165,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir des [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées ATP](set-up-atp-safe-attachments-policies.md) définies afin que la protection ATP soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   
