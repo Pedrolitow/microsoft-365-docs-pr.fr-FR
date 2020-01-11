@@ -12,26 +12,36 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication et problèmes connus pour le score de conformité Microsoft (aperçu), une fonctionnalité du centre de conformité M365 qui permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: d46e8a621b6f4daa1275a78b5cc1e6917e0a997c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: b1054a455b2d2c78cfa6131410941b1a36738a43
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793638"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021930"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Notes de publication du score de conformité Microsoft (aperçu)
 
-La préversion publique du score de conformité Microsoft vous permet d’accéder en avant-première aux nouvelles fonctionnalités et mises à jour.
+La préversion publique du score de conformité Microsoft vous permet d’accéder en avant-première aux nouvelles fonctionnalités et mises à jour. Consultez régulièrement cette page pour découvrir les nouveautés.
 
 Le score de conformité est une nouvelle fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) qui calcule un score basé sur les risques en mesurant la progression de l’exécution des actions recommandées qui permettent de réduire les risques de conformité.
 
-## <a name="compliance-score-and-compliance-manager-relationship"></a>Relation avec le score de conformité et le gestionnaire de conformité
+## <a name="whats-new"></a>Nouveautés
+
+### <a name="new-templates-for-assessments"></a>Nouveaux modèles d’évaluation
+
+De nouveaux modèles préconfigurés pour les évaluations sont publiés en production pour le score de conformité (aperçu) dès qu’ils sont disponibles. Consultez la [liste complète des modèles ici](compliance-score.md#templates). Les modèles récemment ajoutés sont les suivants :
+
+- ISO 27701:2019
+- IRAP/Australian Government ISM (Preview)
+
+
+### <a name="compliance-score-relationship-to-compliance-manager"></a>Relation avec le score de conformité avec le gestionnaire de conformité
 
 De nombreuses fonctions de conformité gérées dans le gestionnaire de conformité peuvent désormais être réalisées dans le score de conformité. Toutefois, certaines fonctionnalités se trouvent toujours dans le gestionnaire de conformité et certaines fonctionnalités antérieures dans le gestionnaire de conformité sont modifiées pendant la période d’évaluation publique. 
 
 Gardez les points suivants à l’esprit lorsque vous utilisez le score de conformité et le gestionnaire de conformité lors de la préversion publique :
 
-- **Gestion des évaluations**: les utilisateurs peuvent consulter les évaluations et leurs informations d’État dans le score de conformité. Toutefois, les utilisateurs peuvent uniquement effectuer des tâches de gestion d’évaluation dans le gestionnaire de conformité ([afficher les instructions](working-with-compliance-manager.md#assessments)) et des tâches, et sont limitées aux éléments suivants :
+- **Gestion des évaluations**: les utilisateurs peuvent consulter les évaluations et leurs informations d’État dans le score de conformité. Toutefois, les utilisateurs peuvent uniquement effectuer des tâches de gestion de l’évaluation dans le gestionnaire de conformité ([afficher les instructions](working-with-compliance-manager.md#assessments)) et les tâches se limitent à ce qui suit :
     - Télécharger de nouvelles évaluations, mais pas modifier les évaluations existantes. Si vous devez modifier une évaluation existante, vous devrez télécharger un nouveau modèle.
     - Exporter des évaluations
     - Archives d’archivage
@@ -40,7 +50,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez le score de confo
    - Les utilisateurs doivent accéder au gestionnaire de conformité pour créer de nouveaux modèles et exporter des modèles existants. 
    - Les modèles existants ne peuvent pas être personnalisés. Lisez les instructions relatives à [la gestion des modèles dans le gestionnaire de conformité](working-with-compliance-manager.md#templates).
    - Lors de la création d’un modèle, vous devez inclure des dimensions pour le **produit** et la **certification** afin de garantir l’affichage du modèle dans le score de conformité.
- - **Définition des autorisations**: le score de conformité les utilisateurs qui n’ont pas reçu précédemment des autorisations dans le gestionnaire de conformité doivent avoir leurs autorisations définies dans le centre de conformité Microsoft 365. Les utilisateurs dont les rôles ont été définis précédemment dans le gestionnaire de conformité peuvent utiliser ce même niveau d’accès lorsqu’ils travaillent sur le score de conformité.
+ - **Définition des autorisations**: le score de conformité les utilisateurs qui n’ont pas reçu précédemment des autorisations dans le gestionnaire de conformité doivent avoir leurs autorisations définies dans le centre de conformité Microsoft 365 ([en savoir plus](compliance-score-setup.md#set-user-permissions-and-assign-roles)). Les utilisateurs dont les rôles ont été définis précédemment dans le gestionnaire de conformité peuvent utiliser ce même niveau d’accès lorsqu’ils travaillent sur le score de conformité.
 - **Transfert de données**: les organisations dont les données résident dans le gestionnaire de conformité voient ces données dans le score de conformité, et inversement.
 - **Connexion au gestionnaire de conformité à partir du score de conformité**: si un utilisateur est connecté à un score de conformité et sélectionne un lien pour accéder au gestionnaire de conformité, il n’a pas besoin de se reconnecter. Après avoir cliqué sur le lien, un nouvel onglet s’ouvre dans votre navigateur avec une boîte de dialogue. Dans la section supérieure avec l’en-tête «déjà un client des services Cloud Microsoft ? Connectez-vous à votre compte, «cliquez sur le bouton de **connexion** pour vous connecter automatiquement au gestionnaire de conformité.
 

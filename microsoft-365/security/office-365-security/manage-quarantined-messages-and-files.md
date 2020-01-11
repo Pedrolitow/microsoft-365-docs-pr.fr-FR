@@ -3,7 +3,7 @@ title: Gestion des messages et des fichiers mis en quarantaine en tant qu’admi
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: 09/05/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'En tant qu’administrateur, vous pouvez afficher, publier et signaler des messages en quarantaine faux positifs dans Office 365. Vous pouvez configurer des stratégies pour qu’Office 365 filtre les messages et les envoie à la mise en quarantaine pour plusieurs raisons : ils ont été identifiés comme courrier indésirable, en bloc, par hameçonnage, par programme malveillant ou parce qu’ils correspondent à une règle de flux de messagerie. '
-ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 610a5e584f8731440150f643365b4d307b87adf2
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021860"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023328"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365
 
@@ -33,9 +33,11 @@ Vous devez disposer des autorisations d’administrateur général (GA) dans Off
 
 ## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>Quelles sont les autorisations nécessaires pour accéder à la mise en quarantaine de l’administrateur ?
 
-Les autorisations de gestion de la quarantaine sont contrôlées par l’appartenance à **sécurité &* les groupes de rôles du centre de conformité. Pour plus d’informations sur les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+Les autorisations de gestion de la quarantaine sont contrôlées par l’appartenance à des groupes de rôles *sécurité & conformité* (en particulier, le rôle de **quarantaine** ). Pour plus d’informations sur les rôles et les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité Office 365](permissions-in-the-security-and-compliance-center.md).
 
-Les groupes de rôles sécurité & conformité qui permettent de gérer la mise en quarantaine sont les suivants :
+Les groupes de rôles sécurité & conformité qui permettent de gérer la mise en quarantaine par défaut sont les suivants :
+
+- **Gestion** de l’organisation (administrateurs globaux)
 
 - **Administrateur de quarantaine**
 

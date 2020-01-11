@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur le score de conformité Microsoft, ce qui permet aux organisations de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: bc0ddfe71a3de2bbfa2c9c9a0fdc507a540daf90
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "39625395"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021980"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Score de conformité Microsoft (aperçu) Forum aux questions
 
@@ -41,7 +41,7 @@ Le score de conformité et le gestionnaire de conformité partagent le même ser
 
 Le score de conformité est utile pour tous les membres de votre organisation qui jouent un rôle dans la surveillance de la conformité et l’exécution des activités afin de se conformer aux normes réglementaires. Avec le score de conformité, vous n’avez pas besoin de vous familiariser avec les réglementations et les normes pour améliorer la protection des données de votre organisation. Le score de conformité est la position de départ optimale pour tous les utilisateurs. À partir de là, vous pouvez voir votre score de conformité, connaître les actions recommandées qui peuvent vous aider à réduire les risques et, dans de nombreux cas, lancer directement dans les solutions pour effectuer ces actions.
 
-Pour le moment, le gestionnaire de conformité est l’endroit où les utilisateurs peuvent gérer les évaluations et créer des modèles personnalisés pour créer des évaluations. En savoir plus sur [les actions prises en charge uniquement par le gestionnaire de conformité lors de la](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship) préversion publique.
+Pour le moment, le gestionnaire de conformité est l’endroit où les utilisateurs peuvent gérer les évaluations et créer des modèles personnalisés pour créer des évaluations. En savoir plus sur [les actions prises en charge uniquement par le gestionnaire de conformité lors de la](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) préversion publique.
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Si j’ai un score élevé, cela signifie-t-il que je suis entièrement conforme ?
 

@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 556d3994241db65b70feec55ac0f96469f549361
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire relatives aux produits Microsoft.
+ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962251"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41022010"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -30,11 +30,11 @@ Le Gestionnaire de conformité est accessible depuis le Portail d’approbation 
   
 1. Accédez à [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
 
-2. Connectez-vous à l’aide de votre compte de service Microsoft. Il s’agit de votre compte d’utilisateur Office 365, Microsoft 365 ou Azure Active Directory (Azure AD).
+2. Connectez-vous à l’aide de votre compte de service Microsoft, qui est votre compte d’utilisateur Office 365, Microsoft 365 ou Azure Active Directory (Azure AD).
 
-3. Dans le portail d’approbation de service, sélectionnez **Gestionnaire de conformité**. Il s’agit de la version préliminaire du gestionnaire de conformité. Le **Gestionnaire de conformité (classique)** est le lien vers la version précédente du gestionnaire de conformité.
+3. Dans le portail d’approbation de service, nous vous recommandons de sélectionner le **Gestionnaire de conformité**, qui est la version d’évaluation avec les fonctionnalités les plus récentes. Le **Gestionnaire de conformité (classique)** vous permet d’accéder à la version précédente du gestionnaire de conformité.
 
-4. Lorsque le contrat de non-divulgation est affiché, lisez-le, puis sélectionnez **accepter** pour continuer. Vous devez accepter une fois, puis le tableau de bord du gestionnaire de conformité s’affiche.
+4. Lorsque l’accord de non-divulgation est affiché, lisez-le et sélectionnez **accepter**, qui affiche ensuite votre tableau de bord gestionnaire de conformité.
 
 Pour vous aider à démarrer, une évaluation ISO/IEC 27001:2103 pour Office 365 s’affiche par défaut pour votre organisation.
 
@@ -84,25 +84,40 @@ Les mises à jour du score sécurisé peuvent être activées automatiquement po
 
 ## <a name="groups"></a>Groupes
 
-Les groupes vous permettent d’organiser les évaluations de manière logique et de partager des informations et des tâches de flux de travail communes entre les évaluations qui ont le même contrôle ou les mêmes contrôles gérés par le client. Vous pouvez regrouper les évaluations par année, standard, service, équipe, division ou organisme au sein de votre organisation pour limiter les actions gérées par les clients :
+Les groupes sont des conteneurs qui vous permettent d’organiser des évaluations et de partager des informations communes et des tâches de flux de travail entre les évaluations qui ont le même ou les mêmes contrôles gérés par le client.
+
+Vous pouvez regrouper les évaluations d’une manière logique pour vous, par exemple par année, standard, service ou en fonction des équipes, divisions ou régions de votre organisation. Vous trouverez ci-dessous des exemples de deux groupes et de leurs évaluations sous-jacentes :
   
-- **FFIEC est une évaluation 2019**
+- **FFIEC est une évaluation 2020**
   - Office 365 + FFIEC est
   - Intune + FFIEC est
 - **Évaluations de confidentialité et de sécurité des données**
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
-Lorsque vous créez une nouvelle évaluation, vous devez créer un groupe pour l’évaluation ou attribuer l’évaluation à un groupe existant. Il n’est pas possible de créer des groupes en tant qu’entités autonomes. Il est recommandé de déterminer une stratégie de regroupement pour votre organisation *avant* d’ajouter de nouvelles évaluations. Par défaut, un groupe nommé « groupe par défaut » est disponible pour vos évaluations initiales. Les groupes n’ont pas de propriétés de sécurité. Toutes les autorisations sont associées à des évaluations.
+> [!NOTE]
+> Nous vous recommandons de déterminer une stratégie de regroupement pour votre organisation *avant* d’ajouter de nouvelles évaluations. Par défaut, un groupe nommé « groupe par défaut » est disponible pour vos évaluations initiales.
 
-Lorsque vous utilisez des groupes, rappelez-vous des éléments suivants :
+### <a name="how-to-create-a-group"></a>Procédure de création d’un groupe
+
+Les groupes ne peuvent pas être créés en tant qu’entités autonomes. Un groupe doit toujours contenir au moins une évaluation, donc pour créer un groupe, vous devez d’abord créer une évaluation à placer dans le groupe. Suivez les étapes ci-dessous pour créer un groupe :
+
+1. Créez une nouvelle évaluation en sélectionnant **+ Ajouter une évaluation** dans la partie supérieure de votre tableau de bord.
+2. Dans le volet flyout d' **évaluation** , entrez un titre pour votre évaluation et sélectionnez un modèle dans le menu déroulant.
+3. Sur **Sélectionnez un groupe ou ajouter un nouveau groupe**, sélectionnez **Ajouter un nouveau groupe** , puis entrez le nom de votre groupe dans le champ ci-dessous.
+4. Pour copier des informations à partir d’un groupe existant, faites basculer la **copie des données d’un groupe existant** vers **.** Sélectionnez le groupe à copier dans le menu déroulant, puis activez les cases à cocher de tous les champs que vous souhaitez reporter dans la nouvelle évaluation de votre nouveau groupe.
+5. Cliquez sur **Enregistrer**. Une fois l’opération terminée, le volet flyout se ferme et votre nouveau groupe s’affiche automatiquement sur votre tableau de bord.
+
+Éléments à connaître lors de l’utilisation de groupes :
   
-- Les contrôles d’évaluation associés dans différentes évaluations au sein du même groupe sont automatiquement mis à jour lorsque vous avez terminé.
-- Les nouveaux groupes peuvent copier des informations à partir d’un groupe existant lorsque vous créez une nouvelle évaluation. Toutes les informations ajoutées aux champs détails de l’implémentation et plan de test et réponse de gestion des contrôles gérés par le client à partir des évaluations dans le groupe à partir duquel vous effectuez la copie sont copiées dans les mêmes contrôles gérés par le client (ou associés) dans le nouveau Évaluation. Si vous ajoutez une nouvelle évaluation à un groupe existant, les informations courantes des évaluations dans ce groupe sont copiées dans la nouvelle évaluation.
 - Les noms de groupe (également appelés *ID de groupe*) doivent être uniques au sein de votre organisation.
-- Les groupes peuvent contenir des évaluations pour la même certification/réglementation, mais chaque groupe ne peut contenir qu’une seule évaluation pour une paire service Cloud/certification de Cloud spécifique. Par exemple, un groupe ne peut pas contenir deux évaluations pour Office 365 et l’infrastructure NIST. Un groupe peut contenir plusieurs évaluations pour le même service Cloud uniquement si la certification/réglementation correspondante est différente.
-- Une fois qu’une évaluation a été ajoutée à un groupe d’évaluation, le regroupement ne peut pas être modifié. Vous pouvez renommer le groupe d’évaluation, ce qui modifie le nom du regroupement d’évaluation pour toutes les évaluations associées à ce groupe. Vous pouvez créer une analyse et nouveau groupe d’analyses, puis copier les informations d’une analyse existante, ce qui a pour effet de créer une copie de cette analyse dans un autre groupe d’analyses.
-- L’archivage d’une évaluation rompt la relation entre cette évaluation et le groupe. Les mises à jour apportées aux autres analyses associées ne sont plus répercutées dans l’analyse archivée.
+- Les groupes n’ont pas de propriétés de sécurité. Toutes les autorisations sont associées à des évaluations.
+- Une fois que vous avez ajouté une évaluation à un groupe, le regroupement ne peut pas être modifié. Vous pouvez renommer le groupe d’évaluation, ce qui modifie le nom du regroupement d’évaluation pour toutes les évaluations associées à ce groupe.
+- Les contrôles d’évaluation associés dans différentes évaluations au sein du même groupe sont automatiquement mis à jour lorsque vous avez terminé.
+- Si vous ajoutez une nouvelle évaluation à un groupe existant, les informations courantes des évaluations de ce groupe sont copiées dans la nouvelle évaluation.
+- Les groupes peuvent contenir des évaluations pour la même certification ou la même réglementation, mais chaque groupe ne peut contenir qu’une seule évaluation pour une paire de certification de produit spécifique. Par exemple, un groupe ne peut pas contenir deux évaluations pour Office 365 et l’infrastructure NIST. Un groupe peut contenir plusieurs évaluations pour le même produit uniquement si la certification ou la réglementation correspondante est différente.
+- Le masquage d’une évaluation rompt la relation entre cette évaluation et le groupe. Les autres mises à jour apportées à d’autres évaluations associées ne sont plus reflétées dans l’évaluation cachée. ([Découvrez comment masquer les évaluations.](#hide-a-template-or-an-assessment))
+- Les groupes ne peuvent pas être supprimés.
 
 ## <a name="tenant-management"></a>Gestion des clients
 

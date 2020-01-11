@@ -13,19 +13,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vous pouvez désormais appliquer des stratégies DLP aux conversations et canaux Microsoft Teams. Lisez cet article pour en savoir plus sur son fonctionnement.
-ms.openlocfilehash: 9c8c122a84a739a0cc2942f63ff319121510415b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a13d44ab3cff777ee8ed4610d746c3649bf558
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078532"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022359"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft teams
 
 > [!NOTE]
-> Les fonctionnalités de protection contre la perte de données ont récemment été ajoutées à la conversation Microsoft teams et aux messages des canaux pour les utilisateurs titulaires d’une licence pour Office 365 Advanced Compliance, qui est disponible en tant qu’option autonome et est incluse dans Office 365 E5 et Microsoft 365 E5 conformité. Office 365 et Microsoft 365 E3 incluent la protection DLP pour SharePoint Online, OneDrive et Exchange Online. Cela inclut également les fichiers partagés par teams car teams utilise SharePoint Online et OneDrive pour partager des fichiers.
+> Des fonctionnalités de protection contre la perte de données ont récemment été ajoutées aux messages de discussion et de canal Microsoft Teams pour les utilisateurs titulaires d’une licence de Conformité avancée Office 365, disponible sous la forme d’une option autonome et incluse dans Office 365 E5 et Microsoft 365 E5 Conformité. Office 365 et Microsoft 365 E3 incluent la protection DLP pour SharePoint Online, OneDrive et Exchange Online. Cela inclut également les fichiers partagés par teams car teams utilise SharePoint Online et OneDrive pour partager des fichiers.
 La prise en charge de la protection DLP dans Team Chat nécessite E5.
-Pour en savoir plus sur les conditions requises en matière de licences, consultez [les conseils Microsoft 365 client-Level services Licensing](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+Pour en savoir plus sur les conditions d’octroi de licences, consultez [Conseils sur la gestion des licences des services de niveau client de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Vue d’ensemble de DLP pour Microsoft teams
 
@@ -109,6 +109,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 5. Dans l’onglet **choisir les emplacements** , conservez le paramètre par défaut tous les emplacements ou sélectionnez **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.<br/>Si vous avez choisi des emplacements spécifiques, sélectionnez-les pour votre stratégie DLP, puis cliquez sur **suivant**.<br/>![Emplacements de stratégie DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Si vous souhaitez vous assurer que les documents qui contiennent des informations sensibles ne sont pas partagés de manière inappropriée, assurez-vous que les **sites SharePoint** et **OneDrive** sont activés, ainsi que la **conversation et les messages de canal de teams**.
+    > Les canaux dans Microsoft teams sont fortement tributaires de la fonctionnalité Exchange Online. Assurez-vous que l’emplacement de **messagerie Exchange** est également activé pour les stratégies qui doivent être appliquées pour le contenu des canaux.  
 <br/>
 
 6. Dans l' **onglet Paramètres de stratégie** , sous **personnaliser le type de contenu à protéger**, conservez les paramètres par défaut simples ou choisissez **utiliser les paramètres avancés**, puis cliquez sur **suivant**. Si vous choisissez Paramètres avancés, vous pouvez créer ou modifier des règles pour votre stratégie. (Pour obtenir de l’aide, consultez la rubrique [paramètres simples et paramètres avancés](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)

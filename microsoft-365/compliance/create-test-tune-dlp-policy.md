@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
-ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fe075c004c397baa2ed568a56c9d675cdd788857
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866356"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021970"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -101,7 +101,7 @@ Pour illustrer la détection d’TFN de manière assez rationnelle, un message �
 
 ![Numéro de fichier fiscal Australie qui ne transmet pas de checksum](media/DLP-create-test-tune-email-test1.png)
 
-Par comparaison, un message électronique avec les mots « numéro de fichier de la taxe » et un TFN valide qui réussit la somme de contrôle déclencheront la stratégie. Pour l’enregistrement ici, le TFN que j’utilise a été extrait d’un site Web qui génère des TFNs valides, mais pas authentiques. Il existe des sites similaires générant des [numéros de carte de crédit valides, mais factices](https://www.fakecreditcardgenerator.net/). Ces sites sont très utiles, car l’une des erreurs les plus courantes lors du test d’une stratégie DLP utilise un faux nombre qui n’est pas valide et qui ne réussit pas la somme de contrôle (et par conséquent ne déclenche pas la stratégie).
+Par comparaison, un message électronique avec les mots « numéro de fichier de la taxe » et un TFN valide qui réussit la somme de contrôle déclencheront la stratégie. Pour l’enregistrement ici, le TFN que j’utilise a été extrait d’un site Web qui génère des TFNs valides, mais pas authentiques. Ces sites sont très utiles, car l’une des erreurs les plus courantes lors du test d’une stratégie DLP utilise un faux nombre qui n’est pas valide et qui ne réussit pas la somme de contrôle (et par conséquent ne déclenche pas la stratégie).
 
 ![Numéro de fichier fiscal Australie qui réussit le checksum](media/DLP-create-test-tune-email-test2.png)
 
@@ -177,7 +177,6 @@ L’utilisateur peut signaler le faux positif, et l’administrateur peut examin
 
 Le cas de la licence de ce pilote est un parfait exemple pour explorer. La raison de ce faux positif est que le type « permis de conduire australien » est déclenché par une chaîne de 9 chiffres (même une partie d’une chaîne de 10 chiffres), entre 300 caractères, à proximité des mots-clés « Sydney NSW » (ne respectant pas la casse). Il est donc déclenché par le numéro de téléphone et la signature électronique, uniquement parce que l’utilisateur se trouve dans Sydney.
 
-Il est intéressant de faire attention, si « Sydney, NSW » a une virgule, la stratégie DLP n’est pas déclenchée. Je n’ai aucune idée de la raison pour laquelle une virgule fait une différence, et pourquoi les autres villes et États en Australie ne sont pas inclus dans les mots clés du type d’informations de licence du pilote australien, mais vous y trouverez. Comment pouvons-nous le faire ? Il existe deux options.
 
 Une possibilité consiste à supprimer du type d’informations de licence du pilote australien de la stratégie. Il est dans cet emplacement, car il fait partie du modèle de stratégie DLP, mais nous ne sommes pas obligés de l’utiliser. Si vous êtes intéressé uniquement par les numéros de fichier des taxes et non par des licences de pilotes, vous pouvez simplement le supprimer. Par exemple, vous pouvez le supprimer de la règle de volume faible de la stratégie, mais le laisser dans la règle de volume élevée afin que les listes de licences de plusieurs pilotes soient toujours détectées.
 
@@ -191,7 +190,7 @@ En plus de modifier le nombre d’instances, vous pouvez également ajuster la p
 
 Enfin, si vous souhaitez obtenir un peu plus de détails, vous pouvez personnaliser tout type d’informations sensibles, par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots-clés de la [licence australienne](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)pour éliminer le faux positif déclenché ci-dessus. Pour savoir comment effectuer cette opération à l’aide de XML et de PowerShell, consultez cette rubrique relative à la [Personnalisation d’un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
 
-## <a name="turn-off-a-dlp-policy"></a>Désactivation d’une stratégie DLP
+## <a name="turn-on-a-dlp-policy"></a>Activer une stratégie DLP
 
 Lorsque vous êtes satisfait que votre stratégie DLP détecte des types d’informations sensibles de manière précise et efficace, et que vos utilisateurs finals sont prêts à gérer les stratégies en place, vous pouvez activer la stratégie.
 

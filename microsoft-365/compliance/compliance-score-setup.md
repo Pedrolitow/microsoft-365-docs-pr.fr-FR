@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment vous connecter, configurer des autorisations et comprendre votre tableau de bord pour le score de conformité Microsoft, ce qui vous permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 79e93a102107433ed2b493a56381bc60ca544157
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831177"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021910"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Programme d’installation du score de conformité Microsoft (aperçu)
 
@@ -72,7 +72,7 @@ Le tableau de bord de score de conformité est conçu pour vous offrir une vue i
 
 ### <a name="overall-compliance-score"></a>Score de conformité global
 
-Votre score de conformité, présenté en évidence en haut, indique un pourcentage basé sur les points qui sont parfaits pour terminer les actions d’amélioration en fonction des normes et des réglementations clés en matière de protection des données. 
+Votre score de conformité, présenté en évidence en haut, indique un pourcentage basé sur les points qui sont parfaits pour terminer les actions d’amélioration en fonction des normes et des réglementations clés en matière de protection des données.
 
 Lorsque vous accédez au score de conformité pour la première fois, votre score initial est basé sur la base de données de protection des données Microsoft 365 intégrée, un ensemble de contrôles qui inclut des normes et des réglementations industrielles communes. Étant donné que le score de conformité analyse votre système de solutions Microsoft 365 existantes, il fournit une évaluation initiale de votre position de conformité en fonction des paramètres de confidentialité et de sécurité actuellement activés par votre organisation.
 
@@ -95,14 +95,14 @@ Cette section fournit une vue plus détaillée de votre score de deux manières 
 
 ### <a name="filtering-your-dashboard-view"></a>Filtrage de l’affichage du tableau de bord
 
-Vous pouvez filtrer votre vue de tableau de bord pour afficher uniquement les éléments liés à des réglementations, des normes, des solutions, un type d’action, des groupes ou des catégories de protection des données spécifiques. De cette manière, le filtrage de votre affichage filtre le score sur votre tableau de bord, indiquant le nombre de points que vous avez obtenus au total de points possibles en fonction de vos critères de filtre.
+Vous pouvez filtrer votre vue de tableau de bord pour n’afficher que les éléments liés à des réglementations, des normes, des solutions, un type d’action, [des groupes d’évaluations que vous configurez ou des](working-with-compliance-manager.md#groups)catégories de protection des données. De cette manière, le filtrage de votre affichage filtre le score sur votre tableau de bord, indiquant le nombre de points que vous avez obtenus au total de points possibles en fonction de vos critères de filtre.
 
 Pour appliquer des filtres :
 
 1. Sélectionnez **filtre** dans le coin supérieur droit du tableau de bord.
 2. Sélectionnez vos critères de filtre dans le volet **filtres** de menu volant, puis sélectionnez **appliquer**.
 
-Vous verrez votre score ajusté en temps réel, et vous verrez uniquement les actions d’amélioration, les solutions et les informations de répartition du score qui correspondent à vos critères de filtre. Si vous vous déconnectez du score de conformité, l’affichage filtré reste lorsque vous vous reconnectez.
+Une fois qu’un filtre est appliqué, votre score est ajusté en temps réel. Le pourcentage du score de conformité et les informations de répartition, ainsi que les actions et les solutions d’amélioration, ne concernent désormais que les données couvertes par vos critères de filtre. Si vous vous déconnectez du score de conformité, l’affichage filtré reste lorsque vous vous reconnectez.
 
 Pour supprimer des filtres :
 
