@@ -3,7 +3,7 @@ title: Vue d’ensemble des étiquettes de niveau de confidentialité
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 01/06/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité pour appliquer des paramètres de protection qui intègrent le chiffrement et les filigranes sur le contenu étiqueté.
-ms.openlocfilehash: 465b22b7d57718e5b1f38951804d2f76c10ebb3f
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: 52f8966c5313dce0dc1f612556daa26e67137c72
+ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962343"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40999568"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -102,9 +102,9 @@ Toutes ces options sont disponibles lorsque vous créez une étiquette de confid
 
 Lorsque vous créez vos étiquettes de confidentialité dans votre centre d’administration, elles apparaissent dans une liste située sous l’onglet **Sensibilité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important car il reflète leur priorité. Vous souhaitez que votre étiquette de sensibilité la plus restrictive, comme l’étiquette Hautement confidentiel, apparaisse en **bas** de la liste, et que la moins restrictive, telle que l’étiquette Public, apparaisse en **haut**.
 
-Vous pouvez appliquer une seule étiquette de confidentialité dans un document ou un message électronique. Si vous avez besoin que vos utilisateurs fournissent une justification pour la modification de l’étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées.
+Vous pouvez appliquer une seule étiquette de confidentialité dans un document ou un message électronique. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Cette option ne s’applique toutefois pas aux sous-étiquettes.
 
-La priorité d’étiquette s’applique également aux sous-étiquettes.
+Cependant, l’ordre des sous-étiquettes est utilisé avec l'[étiquetage automatique](apply-sensitivity-label-automatically.md). Lorsque vous configurez les étiquettes pour les appliquer automatiquement ou en tant que recommandation, plusieurs correspondances peuvent se produire pour plus d'une étiquette. Pour déterminer l’étiquette à appliquer ou à recommander, l’ordre d’étiquettes est utilisé : la dernière étiquette de confidentialité est sélectionnée, puis, le cas échéant, la dernière sous-étiquette.
 
 ![Option de création d’une sous-étiquette](media/Sensitivity-label-sublabel-options.png)
 
@@ -189,11 +189,7 @@ Voici le flux de base des actions de l’administrateur, de l’utilisateur et d
 
 ## <a name="where-sensitivity-labels-can-appear"></a>Où apparaissent les étiquettes de niveau de confidentialité
 
-Les étiquettes de confidentialité apparaissent dans l’interface utilisateur des applications Office. Pour afficher la disponibilité actuelle d’un étiquetage prédéfini pour des applications et plateformes spécifiques, utilisez les tableaux suivants :
-
-- [Prise en charge des fonctionnalités d’étiquettes de confidentialité dans Word, Excel et PowerPoint](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-
-- [Prise en charge des fonctionnalités d’étiquettes de confidentialité dans Outlook](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
+Les étiquettes de confidentialité apparaissent dans les IU des applications Office et peuvent être sélectionnées à partir du bouton **Confidentialité** dans l’onglet Accueil du ruban. Pour afficher la disponibilité actuelle d’un étiquetage prédéfini pour des applications et plateformes spécifiques, consultez la [Prise en charge des fonctionnalités des étiquettes de confidentialité dans les applications](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 Si vous utilisez le client d’étiquetage unifié Azure information Protection pour vos ordinateurs Windows, des fonctionnalités supplémentaires sont disponibles pour les étiquettes de confidentialité. Pour plus d’informations, consulter [Comparer les clients d’étiquetage pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -240,10 +236,7 @@ Les utilisateurs Azure Information Protection peuvent classer et étiqueter du c
 - Conserver vos étiquettes Azure Information Protection existantes sur les documents et les e-mails.
 - Conserver la configuration d’étiquettes Azure Information Protection existante.
 
-Si vous utilisez des étiquettes Azure Information Protection car votre client n’est pas encore sur la [plateforme d’étiquetage unifié](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), nous vous recommandons d’éviter la création de nouvelles étiquettes dans d’autres centres d’administration tant que l’étiquetage unifié n’est pas activé. Pour plus d’informations sur ce processus, voir [Migration des étiquettes Azure Information Protection vers des étiquettes de confidentialité unifiées](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). 
-
-> [!NOTE]
-> La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le portail Microsoft Azure fera l’objet d’un retrait le **31 mars 2021**. Pour plus d’informations, consultez l’[avis de dépréciation](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108) officiel.
+Si vous utilisez des étiquettes Azure Information Protection car votre client n’est pas encore sur la [plateforme d’étiquetage unifié](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), nous vous recommandons d’éviter la création de nouvelles étiquettes dans d’autres centres d’administration tant que l’étiquetage unifié n’est pas activé. Pour plus d’informations sur ce processus, voir [Migration des étiquettes Azure Information Protection vers des étiquettes de confidentialité unifiées](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>Les étiquettes de confidentialité et le client Azure Information Protection
 
