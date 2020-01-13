@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des étiquettes de rétention
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dans Office 365, les étiquettes de rétention vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter la gestion des enregistrements dans Office 365.
-ms.openlocfilehash: dcf350f34a30d27aa66d3e4395b2441694537bae
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: 9327e23a25143fa032ea9501a9d89ec6f47950bd
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39621107"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023368"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -55,7 +55,7 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
    - Les utilisateurs n’ont plus à connaître les stratégies de gouvernance des données : à la place, ils peuvent se concentrer sur leur travail.
 
   > [!NOTE]
-  > Pour appliquer automatiquement des étiquettes, chaque utilisateur disposant des autorisations nécessaires pour modifier du contenu étiqueté automatiquement dans un site ou une boîte aux lettres doit disposer d’une licence Office 365 Entreprise E5. Les utilisateurs qui ont simplement un accès en lecture seule n’ont pas besoin d’une licence.
+  > La fonction d'application automatique d'étiquettes nécessite la possession d'une licence Office 365 Entreprise E5 pour chaque utilisateur qui dispose des autorisations pour modifier du contenu qui a été automatiquement étiqueté dans un site ou lorsque sa boîte aux lettres est sélectionnée pour l'étiquetage automatique. Les utilisateurs qui ont simplement un accès en lecture seule pour le contenu ou la réponse à des e-mails étiquetés n’ont pas besoin de cette licence.
       
 - **Mettre en œuvre la gestion des enregistrements dans Office 365**, notamment les e-mails et les documents. Vous pouvez utiliser une étiquette de rétention pour classer du contenu en tant qu’enregistrement. Lorsque cela se produit, l’étiquette ne peut pas être modifiée ou supprimée, et le contenu ne peut pas être modifié ou supprimé. 
 
