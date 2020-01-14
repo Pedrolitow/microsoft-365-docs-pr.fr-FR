@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment migrer des paramètres et des fichiers utilisateur.
-ms.openlocfilehash: 8b9bde4eb1ddf0951a2ab27795dadef9965f6a1c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031489"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112568"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Étape 4 : migration des paramètres et des fichiers utilisateur
 
@@ -51,7 +51,7 @@ Si vous optez pour une migration manuelle, vous devez évaluer si vous pourrez t
 
 ## <a name="automated-migration-using-usmt"></a>Migration automatisée à l’aide d’USMT 
 
-Pour les déploiements à grande échelle, vous pouvez automatiser une grande partie du processus en utilisant des outils d’automatisation de déploiement basée sur une séquence de tâches tels que System Center Configuration Manager ou Microsoft Deployment Toolkit (MDT). Ces deux solutions utilisent l’outil de migration de l’état utilisateur (USMT) dans le cadre de leur processus de déploiement de bout en bout. USMT fait partie du [Kit de déploiement et d’évaluation Windows (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+Pour les déploiements à grande échelle, vous pouvez automatiser une grande partie du processus en utilisant des outils d’automatisation de déploiement basée sur une séquence de tâches tels que Microsoft Endpoint Configuration Manager ou Microsoft Deployment Toolkit (MDT). Ces deux solutions utilisent l’outil de migration de l’état utilisateur (USMT) dans le cadre de leur processus de déploiement de bout en bout. USMT fait partie du [Kit de déploiement et d’évaluation Windows (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
 USMT capture les comptes d’utilisateurs, les fichiers utilisateur, les paramètres du système d’exploitation et les paramètres des applications, puis les migre vers une nouvelle installation de Windows. Il vous offre aussi, en tant qu’administrateur informatique, le contrôle des éléments réellement migrés et il peut, si vous le souhaitez, exclure des types de fichiers indésirables (par exemple, des fichiers audio et vidéo ou ses fichiers exécutables).
 

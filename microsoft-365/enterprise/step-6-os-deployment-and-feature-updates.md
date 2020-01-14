@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les options dédiées au déploiement de système d’exploitation et aux mises à jour des fonctionnalités.
-ms.openlocfilehash: c789ac0d62fd0b8c915f21174cae2b81e49e0c97
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 7da7c9ade2be43e8c60726bafd69cc7939b7bddc
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031669"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112678"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Étape 6 : déploiement de système d’exploitation et mises à jour des fonctionnalités
 
@@ -49,13 +49,13 @@ La plupart des organisations utilisent le processus d’imagerie PC pour configu
 
 Si vous décidez de capturer l’image, il est préférable d’automatiser le processus autant que possible afin de garantir la meilleure qualité d’image et d’obtenir un processus renouvelable. Pour la plupart des déploiements, il est également recommandé d’intégrer aussi peu de personnalisation et d’applications préinstallées que possible dans l’image Windows avant de la capturer. Cette approche est appelée « image fine » et permet d’économiser la bande passante globale sur le réseau en éliminant de nombreuses applications au sein de l’image. En commençant par une image de base fine, vous pouvez superposer des applications, des langues et des configurations requises et dynamiquement adaptées aux utilisateurs.
 
-Lors du processus de création et de capture, les outils tels que System Center Configuration Manager (Current Branch) et Microsoft Deployment Toolkit utilisent l’outil de préparation du système (ou Sysprep), ainsi que la commande « Généraliser » pour resceller votre image avant de capturer l’installation de Windows 10 sous forme d’image.
+Lors du processus de création et de capture, les outils tels que Microsoft Endpoint Configuration Manager (Current Branch) et Microsoft Deployment Toolkit utilisent l’outil de préparation du système (ou Sysprep), ainsi que la commande « Généraliser » pour resceller votre image avant de capturer l’installation de Windows 10 sous forme d’image.
 
-L’image capturée sera au format d’image Windows (ou WIM), comme les supports d’installation Windows standard. Une fois que vous avez votre fichier WIM personnalisé, vous pouvez utiliser une autre séquence de tâches dans le cadre de votre déploiement de système d’exploitation dans System Center Configuration Manager ou Microsoft Deployment Toolkit pour effectuer des tâches liées au déploiement, pour appliquer l’image et exécuter les tâches avant et après l’application de votre image système Windows.
+L’image capturée sera au format d’image Windows (ou WIM), comme les supports d’installation Windows standard. Une fois que vous avez votre fichier WIM personnalisé, vous pouvez utiliser une autre séquence de tâches dans le cadre de votre déploiement de système d’exploitation dans Configuration Manager ou Microsoft Deployment Toolkit pour effectuer des tâches liées au déploiement, pour appliquer l’image et exécuter les tâches avant et après l’application de votre image système Windows.
 
 [Créer une image de référence Windows 10](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>Types de déploiement
 
@@ -73,7 +73,7 @@ Ces trois scénarios ont un point commun : ils utilisent une séquence de tâch
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>Mise à niveau sur place à l’aide de l’automatisation de la séquence de tâches
 
-En plus de ces types de déploiement, une nouvelle option est désormais disponible sous la forme d’une séquence de tâches du System Center Configuration Manager (Current Branch) avec Windows 10 et d’une mise à niveau sur place à l’aide de la séquence de tâches de mise à niveau.
+En plus de ces types de déploiement, une nouvelle option est désormais disponible sous la forme d’une séquence de tâches du Configuration Manager (Current Branch) avec Windows 10 et d’une mise à niveau sur place à l’aide de la séquence de tâches de mise à niveau.
 
 Les mises à niveau sur place d’une version précédente de Windows ne nécessitent pas de séquence de tâches, mais c’est une approche recommandée lors d’un déploiement à l’échelle de l’entreprise. Une mise à niveau sur place ne vous permet pas d’appliquer une image personnalisée avec les applications, mais vous pouvez mettre à jour le fichier Install.wim par défaut à l’aide de la maintenance en mode hors connexion. Par exemple, vous pouvez vérifier s’il comporte les dernières mises à jour Windows avant d’effectuer les mises à niveau.
 
@@ -87,7 +87,7 @@ Le scénario de mise à niveau sur place peut être utilisé pour migrer vers Wi
 
 [Effectuer une mise à niveau sur place vers Windows 10 à l’aide du gestionnaire de configuration](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Créer une séquence de tâches pour mettre à niveau un système d’exploitation dans le gestionnaire de configuration](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Créer une séquence de tâches pour mettre à niveau un système d’exploitation dans le gestionnaire de configuration](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>Déploiement progressif
 
@@ -95,11 +95,11 @@ Le scénario de mise à niveau sur place peut être utilisé pour migrer vers Wi
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
-### <a name="recommended-tools-system-center-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Outils recommandés : System Center Configuration Manager (Current Branch) et Microsoft Deployment Toolkit
+### <a name="recommended-tools-microsoft-endpoint-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Outils recommandés : Configuration Manager (Current Branch) et Microsoft Deployment Toolkit
 
 Quel que soit le type de déploiement que vous choisissez, il est préférable qu’il soit autant automatisé que possible en matière de prévisibilité et de répétabilité. Microsoft propose deux solutions pour automatiser le déploiement de système d’exploitation à l’aide des séquences de tâches automatisées :
 
-  - **[System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction) ** (ConfigMgr) offre des fonctionnalités de déploiement de système d’exploitation intégrées afin de compléter ses fonctionnalités pour la distribution de logiciels et la gestion des mises à jour logicielles. ConfigMgr est largement utilisé par les organisations de toutes tailles et prend en charge les quatre types de déploiement Windows. Si vous le souhaitez, vous pouvez intégrer ConfigMgr à Microsoft Intune pour ajouter des fonctionnalités supplémentaires pour le déploiement et la gestion des appareils.
+  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction)** (ConfigMgr) offre des fonctionnalités de déploiement de système d’exploitation intégrées afin de compléter ses fonctionnalités pour la distribution de logiciels et la gestion des mises à jour logicielles. ConfigMgr est largement utilisé par les organisations de toutes tailles et prend en charge les quatre types de déploiement Windows. Si vous le souhaitez, vous pouvez intégrer ConfigMgr à Microsoft Intune pour ajouter des fonctionnalités supplémentaires pour le déploiement et la gestion des appareils.
 
   - L’autre option de déploiement populaire est l’application gratuite ** [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit) ** (MDT) qui est généralement utilisée par de petites et moyennes organisations pour le déploiement de système d’exploitation. Cette approche ne nécessite que très peu d’infrastructure. MDT s’intègre aux Services de déploiement Windows (WDS) pour le démarrage réseau. L’application prend en charge les quatre types de déploiement ainsi que l’installation d’applications, les pilotes et les paramètres. MDT peut même s’intégrer au gestionnaire de configuration.
 
@@ -117,7 +117,7 @@ Ensuite, lorsqu’un utilisateur se connecte au PC lors de l’installation à l
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update pour Entreprise -Mises à jour de fonctionnalité
 
-Windows Update pour Entreprise est un service gratuit qui permet aux professionnels informatiques de laisser les appareils Windows 10 toujours à jour en connectant directement les périphériques au service Windows Update. Windows Update pour Entreprise peut être configuré via une stratégie de groupe ou par le biais des solutions de gestion des appareils mobiles telles que Microsoft Intune et permet aux professionnels informatiques de créer les[anneaux de déploiement](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) pour valider les nouvelles builds. Il est intégré dans les outils de gestion existants tels que Windows Server Update Services (WSUS), System Center Configuration Manager (Current Branch) et Microsoft Intune. Par ailleurs, Windows Update pour Entreprise prend en charge la remise paire à paire pour vous aider à optimiser l’efficacité de la bande passante et de réduire l’encombrement du réseau.
+Windows Update pour Entreprise est un service gratuit qui permet aux professionnels informatiques de laisser les appareils Windows 10 toujours à jour en connectant directement les périphériques au service Windows Update. Windows Update pour Entreprise peut être configuré via une stratégie de groupe ou par le biais des solutions de gestion des appareils mobiles telles que Microsoft Intune et permet aux professionnels informatiques de créer les[anneaux de déploiement](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) pour valider les nouvelles builds. Il est intégré dans les outils de gestion existants tels que Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager (Current Branch) et Microsoft Intune. Par ailleurs, Windows Update pour Entreprise prend en charge la remise paire à paire pour vous aider à optimiser l’efficacité de la bande passante et de réduire l’encombrement du réseau.
 
 Pour plus d’informations sur Windows Update pour Entreprise, veuillez consulter les documents suivants :
 

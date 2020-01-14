@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment évaluer l’état de préparation des répertoires et du réseau dans votre environnement.
-ms.openlocfilehash: c009a60849390cc9b796a56f66e63d44e12cdc68
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: cae32d7bd7791cdfb0acce564b2a7839d5314a19
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031559"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112611"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Étape 2 : préparation des répertoires et du réseau
 
@@ -79,7 +79,7 @@ Pour limiter l’impact du trafic lié au déploiement sur le réseau, vous pouv
 
 [À propos de BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
-Si vous utilisez le System Center Configuration Manager (Current Branch), vous pouvez également configurer les Points de distribution BITS ou activer la multidiffusion avec WDS.
+Si vous utilisez Microsoft Endpoint Configuration Manager (Current Branch), vous pouvez également configurer les Points de distribution BITS ou activer la multidiffusion avec WDS.
 
 En limitant un trafic spécifique, vous pouvez réduire l’impact du téléchargement des mises à jour et des applications des PC sur le trafic réseau normal. Le fait de dissocier un certain pourcentage de bande passante pour ces tâches vous permet d’éviter que le déploiement de Windows ou d’Office affecte la productivité et de veiller à ce que les processus continuent d’être exécutés au besoin. Le temps d’arrêt lié au déploiement peut être plus long et les utilisateurs ne peuvent pas accéder à leur ordinateur pendant l’exécution d’un déploiement.
 
@@ -89,7 +89,7 @@ Heureusement, il existe de nouveaux outils pour vous aider à gérer facilement 
 
 ## <a name="scavenging-bandwidth"></a>Nettoyage de la bande passante
 
-L’option LEDBAT (Low Extra Delay Background Transport), pris en charge dans Windows Server 2019 et System Center Configuration Manager (Current Branch), est conçue pour optimiser le trafic réseau vers les clients Windows.
+L’option LEDBAT (Low Extra Delay Background Transport), pris en charge dans Windows Server 2019 et Microsoft Endpoint Configuration Manager (Current Branch), est conçue pour optimiser le trafic réseau vers les clients Windows.
 
 [10 fonctionnalités de mise en réseau dans Windows Server 2019 : \#9 LEDBAT](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -101,15 +101,15 @@ Contrairement aux options de limitation traditionnelles, LEDBAT peut utiliser to
 
 Les options pair à pair sont progressivement utilisées dans les migrations de Windows 10 (imagerie PC, mises à jour logicielles et personnalisation utilisateur). Elles sont également utiles pour faciliter les mises à niveau build à build après le déploiement initial de Windows 10. Ici, nous allons vous présenter plusieurs exemples pour vous aider à éloigner le trafic lié à Windows 10 et Office du centre de réseau, en évitant de limiter la bande passante tout en aidant les PC à trouver les fichiers de mise à jour nécessaires sur des PC homologues de leur réseau local, au lieu de les télécharger à partir d’un point de distribution ou d’Internet.
 
-**BranchCache** peut vous aider à télécharger du contenu dans des environnements distribués sans saturer le réseau. Il propose deux options : le mode Cache hébergé, qui vous permet d’utiliser des serveurs locaux pour mettre en cache du contenu, et le mode Cache distribué (mode pris en charge dans le System Center Configuration Manager), qui permet aux clients de partager du contenu déjà téléchargé entre eux.
+**BranchCache** peut vous aider à télécharger du contenu dans des environnements distribués sans saturer le réseau. Il propose deux options : le mode Cache hébergé, qui vous permet d’utiliser des serveurs locaux pour mettre en cache du contenu, et le mode Cache distribué (mode pris en charge dans Configuration Manager), qui permet aux clients de partager du contenu déjà téléchargé entre eux.
 
-**Cache de l’homologue**les clients pris en charge par System Center Configuration Manager peuvent également établir l’utilisation de Cache homologue. Cela permet aux PC fiable disponibles sur le réseau pour un source hôte pour la distribution de contenu. Vous ne voulez pas activer ceci à tous vos PC : ciblez uniquement les appareils avec des connexions de réseau fiable comme hôtes (par exemple, ordinateur de bureau, mini tour ou tour PC). Le Cache homologue peut travailler même pour les tâches de déploiement en cours d’exécution en phases de l’environnement de pré-installation Windows (WinPE) pendant l’installation.
+**Cache de l’homologue**les clients pris en charge par Configuration Manager peuvent également établir l’utilisation de Cache homologue. Cela permet aux PC fiable disponibles sur le réseau pour un source hôte pour la distribution de contenu. Vous ne voulez pas activer ceci à tous vos PC : ciblez uniquement les appareils avec des connexions de réseau fiable comme hôtes (par exemple, ordinateur de bureau, mini tour ou tour PC). Le Cache homologue peut travailler même pour les tâches de déploiement en cours d’exécution en phases de l’environnement de pré-installation Windows (WinPE) pendant l’installation.
 
 Remarque : BranchCache et le cache d’homologue sont complémentaires et peuvent travailler ensemble dans le même environnement.
 
 [BranchCache et cache d’homologue](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Optimisation de la remise** l’optimisation de remise est une autre technologie paire à paire de mise en cache, en fournissant les contrôles de réseau pour les déploiements. Optimisation de remise Windows 10 pour mettre à jour les applications intégrées UWP, également pour installer les applications sur le Microsoft Store et les mises à jour du logiciel à l’aide des mises à jour Express. Il a été disponible depuis les versions antérieures de Windows 10, même si elle a récemment intégré avec System Center Configuration Manager (Current Branch). Étant donné que les nouvelles options de configuration Windows 10 version 1803 signifie que vous pouvez désormais séparément des limites de bande passante pour les mises à jour en arrière-plan et les travaux de premier plan par exemple, une installation d’application à partir du Store. Désormais, l’optimisation de la remise Windows prend en charge également Office 365 ProPlus pendant client mises à jour, disponibles dans l’ensemble des canaux de mise à jour pris en charge du client Office 365. La prise en charge pour l’optimisation de remise Windows pendant l’installation initiale du client Office 365 sera prochainement disponible.  
+**Optimisation de la remise** l’optimisation de remise est une autre technologie paire à paire de mise en cache, en fournissant les contrôles de réseau pour les déploiements. Optimisation de remise Windows 10 pour mettre à jour les applications intégrées UWP, également pour installer les applications sur le Microsoft Store et les mises à jour du logiciel à l’aide des mises à jour Express. Il a été disponible depuis les versions antérieures de Windows 10, même si elle a récemment intégré avec Microsoft Endpoint Configuration Manager (Current Branch). Étant donné que les nouvelles options de configuration Windows 10 version 1803 signifie que vous pouvez désormais séparément des limites de bande passante pour les mises à jour en arrière-plan et les travaux de premier plan par exemple, une installation d’application à partir du Store. Désormais, l’optimisation de la remise Windows prend en charge également Office 365 ProPlus pendant client mises à jour, disponibles dans l’ensemble des canaux de mise à jour pris en charge du client Office 365. La prise en charge pour l’optimisation de remise Windows pendant l’installation initiale du client Office 365 sera prochainement disponible.  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

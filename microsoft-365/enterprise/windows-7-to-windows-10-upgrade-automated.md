@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Mises à niveau automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
-ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078083"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112698"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Mises à niveau locales automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
 
@@ -40,7 +40,7 @@ Les mises à niveau sur place vers Windows 10 constituent une approche fiable po
 
 Par défaut, le processus de mise à niveau sauvegarde votre installation précédente de Windows dans le cadre de la mise à niveau, par conséquent, en cas d’échec de la mise à niveau ou si un appareil ou une application ne fonctionne pas correctement après la mise à niveau, l’ordinateur peut revenir à Windows 7. Les Pc mis à jour par défaut disposent de 10 jours pour vous permettre de relancer manuellement une restauration vers Windows 7 si nécessaire.
 
-Les mises à niveau sur place peuvent être automatisées à l’aide d’outils de déploiement de système d’exploitation tels que [System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) ou [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).  Cet article souligne les approches et optimisations automatisées, ainsi que des liens vers des ressources associées pour obtenir une aide supplémentaire.
+Les mises à niveau sur place peuvent être automatisées à l’aide d’outils de déploiement de système d’exploitation tels que [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) ou [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).  Cet article souligne les approches et optimisations automatisées, ainsi que des liens vers des ressources associées pour obtenir une aide supplémentaire.
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Mise à niveau d’un petit nombre d’ordinateurs
 
@@ -48,7 +48,7 @@ Pour un ordinateur ou une poignée d’ordinateurs, l’approche manuelle de la 
 
 ## <a name="how-to-upgrade-many-computers"></a>Mise à niveau de nombreux ordinateurs
 
-Si vous gérez des dizaines ou des milliers d’ordinateurs, la meilleure option consiste à effectuer des mises à niveau sur place à l’aide de l’automatisation de la séquence des tâches avec System Center Configuration Manager ou Microsoft Deployment Toolkit. Bien que le processus soit très fiable dans la plupart des situations, selon le nombre de PC que vous mettez à niveau, il est toujours bon que les tests et contrôles nécessaires soient en place afin de garantir la réussite à l’échelle.
+Si vous gérez des dizaines ou des milliers d’ordinateurs, la meilleure option consiste à effectuer des mises à niveau sur place à l’aide de l’automatisation de la séquence des tâches avec Microsoft Endpoint Configuration Manager ou Microsoft Deployment Toolkit. Bien que le processus soit très fiable dans la plupart des situations, selon le nombre de PC que vous mettez à niveau, il est toujours bon que les tests et contrôles nécessaires soient en place afin de garantir la réussite à l’échelle.
 
 Cela signifie que vous pouvez ignorer la disponibilité du répertoire ou les tâches associées à Azure Active Directory, à la remise et à l’emballage des applications Office et sectorielles et à la migration des fichiers utilisateur, car ces aspects sont conservés dans le cadre de la mise à niveau et la sécurité doit au minimum être transférée.  Ces zones peuvent être améliorées au fil du temps.
 
@@ -78,13 +78,13 @@ Les raisons les plus courantes de mises à niveau peuvent être incomplètes ou 
 
   - Solutions de code de niveau inférieur, telles que les logiciels anti-programme malveillant, VPN ou la virtualisation
 
-Les modèles de [séquence de tâches de mise à niveau](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sont intégrés à la branche actuelle de System Center Configuration Manager et sont disponibles pour plusieurs versions. Dans les versions récentes, les améliorations apportées aux technologies dans System Center Configuration Manager ont été considérables, ce qui rend le processus encore plus efficace pour déterminer la compatibilité des appareils et des compatibilités avec Office, réduire le trafic réseau et configurer de nouveaux options telles que sauvegarde OneDrive. Regardez cette [vidéo de mécanique Microsoft](https://youtu.be/CYRnAmCD7ls) pour en savoir plus sur les mises à jour récentes apportées au déploiement de System Center Configuration Manager OS.
+Les modèles de [séquence de tâches de mise à niveau](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sont intégrés à la branche actuelle de Microsoft Endpoint Configuration Manager et sont disponibles pour plusieurs versions. Dans les versions récentes, les améliorations apportées aux technologies dans Configuration Manager ont été considérables, ce qui rend le processus encore plus efficace pour déterminer la compatibilité des appareils et des compatibilités avec Office, réduire le trafic réseau et configurer de nouveaux options telles que sauvegarde OneDrive. Regardez cette [vidéo de mécanique Microsoft](https://youtu.be/CYRnAmCD7ls) pour en savoir plus sur les mises à jour récentes apportées au déploiement de Configuration Manager OS.
 
-Si vous n’utilisez pas System Center Configuration Manager, vous pouvez utiliser le kit de ressources de déploiement Microsoft pour créer et exécuter des séquences de tâches de déploiement de mise à niveau.
+Si vous n’utilisez pas Configuration Manager, vous pouvez utiliser le kit de ressources de déploiement Microsoft pour créer et exécuter des séquences de tâches de déploiement de mise à niveau.
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>Mise à niveau préalable de la séquence des tâches
 
-L'[option de mise en cache](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)préalable pour la séquence de tâches de déploiement de Configuration Manager permet aux clients de télécharger le contenu du package de mise à niveau de système d’exploitation approprié avant que la séquence de tâche ne mette à niveau le système d’exploitation. Auparavant, le lancement de la séquence de tâches déclencherait le téléchargement du contenu du package. Le contenu préalable au cache vous permet également de télécharger le package de mise à niveau de système d’exploitation applicable et tous les autres contenus référencés dès qu’il reçoit le déploiement.
+L'[option de mise en cache](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)préalable pour la séquence de tâches de déploiement de Configuration Manager permet aux clients de télécharger le contenu du package de mise à niveau de système d’exploitation approprié avant que la séquence de tâche ne mette à niveau le système d’exploitation. Auparavant, le lancement de la séquence de tâches déclencherait le téléchargement du contenu du package. Le contenu préalable au cache vous permet également de télécharger le package de mise à niveau de système d’exploitation applicable et tous les autres contenus référencés dès qu’il reçoit le déploiement.
 
 Séquences de tâches préalables associées aux analyses de compatibilité
 

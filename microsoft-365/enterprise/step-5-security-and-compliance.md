@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les considérations importantes relatives à la sécurité et à la conformité de Windows et d’Office.
-ms.openlocfilehash: 10fc9ca58d9b48f752bdfed860b805e4f5663d6a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031689"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112558"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Étape 5 : considérations relatives à la sécurité et à la conformité
 
@@ -117,7 +117,7 @@ Le service **[Exploit Guard](https://docs.microsoft.com/windows/security/threat-
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) fonctionne comme un service de gestion basé sur le cloud pour les scénarios mobiles, notamment les appareils Windows, Android et IOS, et peut désormais être configuré pour la gestion afin de parfaire et d’étendre des contrôles pour les charges de travail spécifiques gérées par System Center Configuration Manager. L’un des avantages ici est que les appareils accédant aux ressources protégées doivent parfois s’inscrire dans la gestion des appareils, même les appareils non gérés, les appareils joints sans domaine ou les appareils joints sans Azure AD. Vous pouvez également bénéficier de l’application de la configuration granulaire et d’une stratégie de conformité au niveau des applications et du système d’exploitation. Les paramètres et les stratégies d’applications peuvent être configurés de manière centralisée et appliqués pour les applications Office 365 ProPlus et Store dans Windows 10 à l’aide de Microsoft Intune.
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) fonctionne comme un service de gestion basé sur le cloud pour les scénarios mobiles, notamment les appareils Windows, Android et IOS, et peut désormais être configuré pour la gestion afin de parfaire et d’étendre des contrôles pour les charges de travail spécifiques gérées par Configuration Manager. L’un des avantages ici est que les appareils accédant aux ressources protégées doivent parfois s’inscrire dans la gestion des appareils, même les appareils non gérés, les appareils joints sans domaine ou les appareils joints sans Azure AD. Vous pouvez également bénéficier de l’application de la configuration granulaire et d’une stratégie de conformité au niveau des applications et du système d’exploitation. Les paramètres et les stratégies d’applications peuvent être configurés de manière centralisée et appliqués pour les applications Office 365 ProPlus et Store dans Windows 10 à l’aide de Microsoft Intune.
 
 ## <a name="next-step"></a>Étape suivante
 

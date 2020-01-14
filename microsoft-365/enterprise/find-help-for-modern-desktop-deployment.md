@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Où trouver de l’aide et une assistance pour votre déploiement de Windows 10 et Office 365 ProPlus ?
-ms.openlocfilehash: a6064fb49f6bdd44275a9038eeb8b264638ea618
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b7eb30e8a9b5b46635793e9c79e2609467d87848
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031019"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112538"
 ---
 # <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Assistance pour votre déploiement de Windows 10 et Office 365 ProPlus 
 
@@ -49,7 +49,7 @@ Voici une synthèse des services compris dans la Software Assurance [Desktop De
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Distribution d’Office et des applications métier</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> configuration et déploiement, où les spécialistes de Microsoft FastTrack fournissent une assistance avec mise en service des licences utilisateur, configuration de l’installation et mise à jour des paramètres en un clic, et création de packages si votre organisation utilise System Center Configuration Manager.</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> configuration et déploiement, où les spécialistes de Microsoft FastTrack fournissent une assistance avec mise en service des licences utilisateur, configuration de l’installation et mise à jour des paramètres en un clic, et création de packages si votre organisation utilise Microsoft Endpoint Configuration Manager.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ Voici une synthèse des services compris dans la Software Assurance [Desktop De
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="step 6" height="144" width="144" /></td>
 <td><p><strong>Déploiement du système d’exploitation et mises à jour des fonctionnalités</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>, où les spécialistes de Microsoft FastTrack fournissent une assistance avec mise en service des licences utilisateur et configuration Windows Autopilot pour les nouveaux appareils, des stratégies de gestion des appareils mobiles pour votre Windows 10 et autres appareils mobiles, notamment le déploiement application; Profils Wi-Fi et VPN ; la gestion avec System Center Configuration Manager et bien plus encore.</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>, où les spécialistes de Microsoft FastTrack fournissent une assistance avec mise en service des licences utilisateur et configuration Windows Autopilot pour les nouveaux appareils, des stratégies de gestion des appareils mobiles pour votre Windows 10 et autres appareils mobiles, notamment le déploiement application; Profils Wi-Fi et VPN ; la gestion avec Microsoft Endpoint Configuration Manager et bien plus encore.</p></li>
 </ul></td>
 </tr>
 <tr class="even">

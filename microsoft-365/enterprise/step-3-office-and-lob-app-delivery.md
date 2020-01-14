@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment livrer Office et des applications métier.
-ms.openlocfilehash: fdb16aa9d92e3fd2608ca3738dc5af80389f18ea
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a4bc1a765edf6938ad37d91d8bf94950b6672bfe
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031529"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112584"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Étape 3 : livraison d’Office et d’applications métier
 
@@ -49,7 +49,7 @@ Il existe beaucoup de méthodes et de modèles permettant l’installation d’a
 
 Pour votre ligne d’applications métier, vous allez probablement utiliser des packages basés sur MSI ou des fichiers exécutables et installer des applications dans le cadre d’une séquence de tâches de déploiement de systèmes d’exploitation OS. Windows 10 continue de fonctionner avec ces packages.
 
-Les outils de déploiement de logiciels tels que System Center Configuration Manager et Microsoft Intune sont également optimisés pour livrer des applications empaquetées par MSI. Une fois que vous avez validé vos applications sur Windows 10, vous pouvez utiliser System Center Configuration Manager (branche actuelle) pour la livraison des applications. Si vous utilisez le portail d’entreprise dans Microsoft Intune, vous pouvez étendre le choix des applications informatiques sanctionnées disponibles à votre organisation pour inclure les applications les plus récentes et permettre aux utilisateurs de sélectionner eux-mêmes ce dont ils ont besoin.
+Les outils de déploiement de logiciels tels que Microsoft Endpoint Configuration Manager et Microsoft Intune sont également optimisés pour livrer des applications empaquetées par MSI. Une fois que vous avez validé vos applications sur Windows 10, vous pouvez utiliser Microsoft Endpoint Configuration Manager (branche actuelle) pour la livraison des applications. Si vous utilisez le portail d’entreprise dans Microsoft Intune, vous pouvez étendre le choix des applications informatiques sanctionnées disponibles à votre organisation pour inclure les applications les plus récentes et permettre aux utilisateurs de sélectionner eux-mêmes ce dont ils ont besoin.
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
 
@@ -61,7 +61,7 @@ Une autre méthode populaire de remise application est IMAGERIE PC. Dans ce cas,
 
 Si vous ne voulez pas inclure Office 365 ProPlus dans votre image, n’oubliez pas que cette approche utilise une activation utilisateur ; elle ne peut pas être activée au préalable par l’administrateur système. Utilisez l’outil Déploiement d’Office pour installer préalablement Office sur le périphérique dont vous présentez l’imagerie et ignorer la connexion utilisateur.  Une fois l’image déployée, les utilisateurs finaux peuvent se connecter à l’aide de leurs informations d’identification Office 365 et activer Office 365 ProPlus.
 
-[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 [Déploiement d’Office 365 ProPlus dans le cadre d’une image du système d’exploitation](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
@@ -75,7 +75,7 @@ Microsoft recommande l’utilisation de l’[outil de personnalisation Office](h
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-Si vous utilisez l’outil System Center Configuration Manager, vous pouvez toujours l’utiliser pour le déploiement large d’Office 365 ProPlus. System Center Configuration Manager (branche actuelle) assure la prise en charge native de l’outil de personnalisation Office mis à jour, la personnalisation de package pour Démarrer en un clic au moment de l’installation et la prise en charge native pour la gestion des mises à jour logicielles après l’installation.
+Si vous utilisez l’outil Microsoft Endpoint Configuration Manager, vous pouvez toujours l’utiliser pour le déploiement large d’Office 365 ProPlus. Microsoft Endpoint Configuration Manager (branche actuelle) assure la prise en charge native de l’outil de personnalisation Office mis à jour, la personnalisation de package pour Démarrer en un clic au moment de l’installation et la prise en charge native pour la gestion des mises à jour logicielles après l’installation.
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
@@ -83,7 +83,7 @@ Si vous utilisez l’outil System Center Configuration Manager, vous pouvez touj
 
 [Suppression des versions MSI existantes d’Office lors de la mise à niveau vers Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Gérer Office 365 ProPlus avec le gestionnaire de configuration](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[Gérer Office 365 ProPlus avec le gestionnaire de configuration](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Affecter des applications Office 365 à des périphériques Windows 10 avec Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 

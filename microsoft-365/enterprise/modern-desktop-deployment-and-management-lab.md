@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 0083eb91b49561c858cacc94a148e97c7463b754
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801359"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112508"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
 Ces laboratoires pratiques téléchargeables décrivent le déploiement de Windows 10 et le déploiement d’Office 365, ainsi que les éléments de gestion et de configuration connexes après le déploiement. Cette formation est vivement recommandée pour les organisations se préparant à la fin de vie de Windows 7, mais s’applique également si vous utilisez actuellement Windows 10 et Office 365 Plus ou Office 2019. Vous trouverez des guides pour Windows 10, Office 365 ProPlus, Enterprise Mobility + Security et des produits et services connexes.
 
-Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Office 365 ProPlus. Les ateliers abordent les étapes et les outils décrits dans la roue Déploiement du bureau, couvrant System Center Configuration Manager, Analyses du bureau, Outil de personnalisation Office, OneDrive, Windows Autopilot et autres.
+Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Office 365 ProPlus. Les ateliers abordent les étapes et les outils décrits dans la roue Déploiement du bureau, couvrant Microsoft Endpoint Configuration Manager, Analyses du bureau, Outil de personnalisation Office, OneDrive, Windows Autopilot et autres.
 
 Dans le cadre du processus du[déploiement des ordinateurs de bureau modernes](https://www.aka.ms/howtoshift) pour Windows 10 et Office 365 ProPlus, la création d’un environnement isolé ou bac à sable est le point de départ recommandé lorsque vous commencez à explorer les mises à jour de l’outil de déploiement et à tester l’automatisation liée au déploiement.
 
@@ -38,7 +38,7 @@ Le laboratoire offre un environnement de laboratoire virtuel automatiquement con
 
   - Windows 10 Entreprise, Version 1909
   - Windows 7 Entreprise
-  - System Center Configuration Manager, Version 1902
+  - Microsoft Endpoint Configuration Manager, Version 1902
   - Kit de déploiement et d’évaluation Windows 10, Version 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
@@ -72,7 +72,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 ### <a name="office-and-lob-app-delivery"></a>**Distribution d’Office et des applications métier**
 
-  - Déploiement d’Office 365 ProPlus à l’aide de System Center Configuration Manager
+  - Déployer Office 365 ProPlus à l’aide de Microsoft Endpoint Configuration Manager
   - Déploiement d’Office 365 ProPlus à l’aide de Microsoft Intune
   - Gestion et déploiement de l’application à l’aide de Microsoft Intune
   - Déploiement de l’application et installation en libre-service à l’aide de Microsoft Store pour Entreprises
@@ -126,7 +126,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
   - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](https://www.aka.ms/watchhowtoshift)
 
-  - [Déploiement du système d’exploitation de System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Déploiement du système d’exploitation Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan de déploiement de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

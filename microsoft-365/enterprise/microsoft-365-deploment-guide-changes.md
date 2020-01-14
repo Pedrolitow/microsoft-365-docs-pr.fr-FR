@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Consultez le nouveau contenu et les modifications apportées au contenu du Guide de déploiement de Microsoft 365.
-ms.openlocfilehash: 9f5b586defa460648c1d3a7b5972124497d0f53f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 680b42c255053338d401e53b75ab7471a064c44d
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801559"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111971"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Modifications du contenu de déploiement de Microsoft 365 Entreprise
 
@@ -65,9 +65,9 @@ ms.locfileid: "40801559"
 
   Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) ou [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx).
 
-- [Affiche du déploiement de Windows 10 avec Microsoft Endpoint Configuration Manager](windows10-deploy-inplaceupgrade.md)
+- [Affiche Déploiement de Windows 10 avec Configuration Manager](windows10-deploy-inplaceupgrade.md)
 
-  [![Affiche Déploiement de Windows 10 avec System Center Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+  [![Affiche Déploiement de Windows 10 avec Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
   Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) ou [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx).
 
