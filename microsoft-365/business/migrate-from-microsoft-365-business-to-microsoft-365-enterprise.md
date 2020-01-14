@@ -1,5 +1,5 @@
 ---
-title: Migrer de Microsoft 365 Business vers Microsoft 365 E3
+title: Migration de Microsoft 365 Entreprise vers Microsoft 365 E3
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise de Microsoft 365 Business vers Microsoft 365 E3.
-ms.openlocfilehash: dc715bbf4cef8a742a28a6452e83b6e8d2f7cdd8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805617"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111868"
 ---
-# <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrer de Microsoft 365 Business vers Microsoft 365 E3
+# <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migration de Microsoft 365 Entreprise vers Microsoft 365 E3
 
 Microsoft 365 Business offre tout ce dont vous avez besoin pour votre petite entreprise, en combinant les meilleures applications de productivité en nuage avec une simple gestion des périphériques et une sécurité qui permet à vos employés d’effectuer leurs meilleures tâches. Toutefois, dans certains cas, il se peut que vous deviez migrer votre abonnement Microsoft 365 Business vers Microsoft 365 E3. 
 
@@ -52,7 +52,7 @@ Ce tableau présente les différences entre Microsoft 365 entreprise et Microsof
 | **Applications de productivité sur le Cloud**       | | | 
 | Exchange Online et Outlook   | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité   | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
 | Teams | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
-| OneDrive Entreprise | limite de stockage de 1 to par utilisateur   | Illimité | 
+| OneDrive Entreprise | limite de stockage de 1 to par utilisateur   | Illimité | 
 | Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | StaffHub  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | Gestionnaire de clients Outlook, MileIQ  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | | 
@@ -74,10 +74,10 @@ Ce tableau présente les différences entre Microsoft 365 entreprise et Microsof
 | Office 365 protection contre la perte de données, plan Azure information protection 1  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | Protection des informations de fenêtre pour le point de terminaison DLP    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | **Licence d’accès client (CAL)**    | | |   
-| Suite CAL Enterprise (Exchange, SharePoint, Skype, Windows, System Center Configuration Manager, gestion des droits Windows)| |        ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
+| Suite CAL Enterprise (Exchange, SharePoint, Skype, Windows, gestionnaire de configuration de point de terminaison Microsoft, gestion des droits Windows)| |       ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | **Conformité**        | | | 
 | Archivage de courrier électronique illimité | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
-| Gestionnaire de conformité    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
+| Le Gestionnaire de conformité    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | eDiscovery    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | Conservation inaltérable et conservation pour litige | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | Gestion des enregistrements de messagerie, balises de rétention et stratégies de rétention  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 

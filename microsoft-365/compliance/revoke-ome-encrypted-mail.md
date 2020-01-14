@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: En tant qu’administrateur Office 365, vous pouvez révoquer certains courriers électroniques chiffrés avec Office 365 Advanced message Encryption.
-ms.openlocfilehash: 7adc5713c8753e0caf780bbacf98519665458c52
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: d3d449c969b2fa5d21042779ebad11e3807d1d3e
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435548"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112518"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Révoquer les e-mails chiffrés par le chiffrement de messages Office 365
 
@@ -43,7 +43,7 @@ Une fois qu’un e-mail a été révoqué, le destinataire reçoit une erreur lo
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>Procédure de révocation d’un message électronique chiffré
 
-### <a name="step-1-obtain-the-message-id-of-the-email"></a>Étape 1. Obtenir l’ID de message de l’e-mail
+### <a name="step-1-obtain-the-message-id-of-the-email"></a>Étape 1. Obtenir l’ID de message de l’e-mail
 
 Avant de pouvoir révoquer un courrier chiffré, vous devez recueillir l’ID du message. Le MessageId se présente généralement au format suivant :
 
@@ -59,19 +59,19 @@ Il existe plusieurs façons de trouver l’ID de message de l’e-mail à révoq
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Pour identifier l’ID de message du courrier électronique à révoquer à l’aide des rapports de chiffrement de &amp; messages Office dans le centre de sécurité conformité
 
-1. Dans le centre &amp; de sécurité conformité, accédez au **rapport de chiffrement des messages**. Pour plus d’informations sur ce rapport, voir [afficher les rapports de sécurité &amp; de messagerie dans le centre de sécurité conformité](view-email-security-reports.md).
+1. Dans le centre &amp; de sécurité conformité, accédez au **rapport de chiffrement des messages**. Pour plus d’informations sur ce rapport, voir [afficher les rapports de sécurité &amp; de messagerie dans le centre de sécurité conformité](../security/office-365-security/view-email-security-reports.md).
 
 2. Sélectionnez le tableau **afficher les détails** et identifiez le message à révoquer.
 
 3. Double-cliquez sur le message pour afficher les détails qui incluent l’ID du message.
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>Étape 2. Vérifier que le message est révocable
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>Étape 2. Vérifier que le message est révocable
 
 Pour vérifier si vous pouvez révoquer un message, vérifiez si le champ État de révocation est visible dans le rapport de chiffrement, dans la table &amp; des **Détails** du centre de sécurité et de conformité.
 
 Pour vérifier si vous pouvez révoquer un message électronique particulier à l’aide de Windows PowerShell, procédez comme suit.
 
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, consultez la rubrique [connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet Get-OMEMessageStatus comme suit :
 
@@ -87,7 +87,7 @@ Pour vérifier si vous pouvez révoquer un message électronique particulier à 
      “Test message”  True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>Étape 3. Révoquer le courrier
+### <a name="step-3-revoke-the-mail"></a>Étape 3. Révoquer le courrier
 
 Une fois que vous avez identifié l’ID du message que vous souhaitez révoquer et que vous avez vérifié que le message est révocable, vous pouvez le révoquer à &amp; l’aide du centre de sécurité conformité ou de Windows PowerShell.
 

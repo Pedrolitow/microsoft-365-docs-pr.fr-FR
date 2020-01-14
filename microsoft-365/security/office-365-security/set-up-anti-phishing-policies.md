@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: La protection anti-hameçonnage, avec une protection complète dans le cadre d’Office 365 protection avancée contre les menaces et de la protection de base dans Office 365 Exchange Online Protection, peut vous aider à protéger votre organisation contre les attaques de hameçonnage malveillant basées sur l’emprunt d’identité. et d’autres attaques par hameçonnage.
-ms.openlocfilehash: c3efed345baec7b0350d089a56e931006a4724a6
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 235bac70380d8eadb006ce0c903036a1fd471cff
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970270"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112628"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage
 
@@ -147,7 +147,7 @@ Vous pouvez supprimer des stratégies personnalisées que vous avez créées à 
 
 Une fois que vos stratégies anti-hameçonnage sont en place, vous pouvez voir le fonctionnement de vos fonctionnalités de protection contre les menaces pour votre organisation en affichant des rapports. Pour en savoir plus, consultez les ressources suivantes :
 
-- [Afficher des rapports pour Office 365 ATP](view-reports-for-atp.md) ou [afficher des rapports de sécurité de messagerie](../../compliance/view-email-security-reports.md)
+- [Afficher des rapports pour Office 365 ATP](view-reports-for-atp.md) ou [afficher des rapports de sécurité de messagerie](view-email-security-reports.md)
 
 - [Utiliser l’Explorateur de menaces (ou les détections en temps réel)](threat-explorer.md)
 

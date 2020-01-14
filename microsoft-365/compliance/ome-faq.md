@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages dans Office 365 fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: 8f9621ea440bf089ebc8fa3e35b38ff636657555
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: fa8268569bfabcaa9e3cca963ad12723c8c99369
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962561"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111858"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
@@ -141,7 +141,7 @@ OK! Pour plus d’informations sur la personnalisation des messages électroniqu
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Existe-t-il des fonctionnalités de création de rapports ou des informations pour les messages électroniques chiffrés ?
 
-Il existe un rapport de chiffrement dans le centre de sécurité et de conformité. Voir [afficher les rapports de sécurité de messagerie dans le centre de sécurité & conformité](view-email-security-reports.md).
+Il existe un rapport de chiffrement dans le centre de sécurité et de conformité. Voir [afficher les rapports de sécurité de messagerie dans le centre de sécurité & conformité](../security/office-365-security/view-email-security-reports.md).
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Puis-je utiliser le chiffrement de messages avec des fonctionnalités de conformité telles que eDiscovery ?
 

@@ -1,5 +1,5 @@
 ---
-title: cas de découverte électronique dans le centre de sécurité & conformité
+title: Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,21 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: Utilisez le centre de sécurité & conformité pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l’incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse approfondie dans Advanced eDiscovery.
-ms.openlocfilehash: efd5d20d72794ff6f71d2b1c6858bee615b14f3a
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+description: Utilisez le centre de sécurité & conformité pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l’incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse plus approfondie dans Office 365 Advanced eDiscovery.
+ms.openlocfilehash: 3d5e67edf30f1b1f78e6c4992760c18d1493e108
+ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854059"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41107913"
 ---
-# <a name="ediscovery-cases-in-the-security--compliance-center"></a>cas de découverte électronique dans le centre de sécurité & conformité
+# <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 
 Vous pouvez utiliser des cas eDiscovery dans le centre de conformité dans Office 365 et Microsoft 365 pour contrôler qui peut créer, consulter et gérer les cas eDiscovery dans votre organisation. Si votre organisation a un abonnement Office 365 E5, vous pouvez également utiliser des cas eDiscovery pour analyser les résultats de la recherche à l’aide d’Office 365 Advanced eDiscovery.
   
 Un cas de découverte électronique permet d’ajouter des membres à un cas, de contrôler les types d’actions que les membres de cas spécifiques peuvent effectuer, de placer des emplacements de contenu associés à un dossier juridique en conservation, et d’associer plusieurs recherches de contenu à un seul cas. Vous pouvez également exporter les résultats d’une recherche de contenu associée à un cas ou préparer les résultats de recherche pour analyse dans Advanced eDiscovery. Les cas de découverte électronique constituent un bon moyen de limiter les personnes ayant accès aux recherches de contenu et aux résultats de recherche pour un dossier juridique spécifique dans votre organisation.
   
-Utilisez le flux de travail suivant pour configurer et utiliser des cas eDiscovery dans le centre de sécurité & conformité et dans Advanced eDiscovery.
+Utilisez le flux de travail suivant pour configurer et utiliser des cas eDiscovery dans le centre de sécurité & Compliance Center et Advanced eDiscovery.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -95,7 +95,7 @@ Pour plus d’informations sur les autorisations de découverte électronique, c
     
     - Pour attribuer des autorisations d’administrateur eDiscovery, sélectionnez le groupe de rôles **Gestionnaire de découverte** électronique, puis en regard de **administrateur de découverte électronique**, cliquez sur **modifier**. Cliquez sur **choisir un administrateur de découverte électronique**, ![cliquez sur](media/ITPro-EAC-AddIcon.gif) **modifier**, cliquez sur Ajouter une icône **Ajouter**, sélectionnez l’utilisateur que vous souhaitez ajouter en tant qu’administrateur de découverte électronique, puis cliquez sur **Ajouter**.
     
-4. Une fois que vous avez ajouté tous les utilisateurs, cliquez sur **terminé**, cliquez sur **Enregistrer** pour enregistrer les modifications apportées au groupe de rôles, puis cliquez sur **Fermer**.
+4. Une fois que vous avez ajouté tous les utilisateurs, cliquez sur **Terminer**, sur **Enregistrer** pour enregistrer les modifications apportées au groupe de rôles, puis cliquez sur **Fermer**.
 
 ## <a name="step-2-create-a-new-case"></a>Étape 2 : créer un nouveau dossier
 
@@ -148,7 +148,7 @@ Une fois que vous avez créé un cas, l’étape suivante consiste à ajouter de
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Étape 4 : placer des emplacements de contenu en conservation
 
-Vous pouvez utiliser un cas de découverte électronique pour créer des conservations et conserver le contenu pouvant être associé au cas. Vous pouvez placer une suspension sur les boîtes aux lettres et les sites OneDrive entreprise des personnes qui sont des dépositaires dans le cas. Vous pouvez également placer une suspension sur la boîte aux lettres de groupe, le site SharePoint et le site OneDrive entreprise pour un groupe Office 365. De même, vous pouvez placer une conservation sur la boîte aux lettres et le site associés à Microsoft Teams. Lorsque vous placez des emplacements de contenu en conservation, le contenu est conservé jusqu’à ce que vous supprimiez le blocage de l’emplacement du contenu ou jusqu’à ce que vous supprimiez la conservation.
+Vous pouvez utiliser un cas de découverte électronique pour créer des conservations et conserver le contenu pouvant être associé au cas. Vous pouvez placer une suspension sur les boîtes aux lettres et les sites OneDrive entreprise des personnes qui sont des dépositaires dans le cas. Vous pouvez également placer une suspension sur la boîte aux lettres de groupe, le site SharePoint et le site OneDrive entreprise pour un groupe Office 365. De même, vous pouvez placer une conservation sur les boîtes aux lettres et les sites associés à des groupes Microsoft teams ou Yammer. Lorsque vous placez des emplacements de contenu en conservation, le contenu est conservé jusqu’à ce que vous supprimiez le blocage de l’emplacement du contenu ou jusqu’à ce que vous supprimiez la conservation.
 
 > [!NOTE]
 > Une fois que vous avez placé un emplacement de contenu, la conservation prend effet jusqu’à 24 heures. 
@@ -186,14 +186,14 @@ Pour créer une suspension pour un cas eDiscovery :
     
     ![Choisissez les emplacements de contenu à mettre sous conservation](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Courrier électronique Exchange.** Cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez sur **choisir les utilisateurs, les groupes ou les équipes** . pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour mettre en attente les boîtes aux lettres des membres du groupe) à mettre en attente. Vous pouvez également placer une conservation sur la boîte aux lettres associée pour un groupe Office 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
+   a. **Courrier Exchange** -cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez sur **choisir les utilisateurs, les groupes ou les équipes** . pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour mettre en attente les boîtes aux lettres des membres du groupe) à mettre en attente. Vous pouvez également placer une conservation sur la boîte aux lettres associée pour une équipe Microsoft, un groupe Yammer ou un groupe Office 365. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
     
     > [!NOTE]
     > Lorsque vous cliquez sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à mettre en attente, le sélecteur de boîtes aux lettres affiché est vide. Il s’agit d’une conception qui améliore les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche. 
-  
-   b. **Sites SharePoint.** Cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier les sites SharePoint et OneDrive entreprise à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Office 365 ou une équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
+
+   b. **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier les sites SharePoint et OneDrive entreprise à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Yammer ou un, un groupe Office 365. Cliquez sur **choisir**, puis sur **Terminer**.
     
-    Consultez la section [plus d’informations](#more-information) pour obtenir des conseils sur la mise en attente des groupes Office 365 et de Microsoft Teams. 
+    Consultez la section [plus d’informations](#more-information) pour obtenir des conseils sur la mise en attente de Microsoft Teams, de groupes Yammer et de groupes Office 365. 
     
     > [!NOTE]
     > Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son compte OneDrive est également modifiée de façon à intégrer le nouvel UPN. Dans ce cas, vous devez modifier la conservation en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne. 
@@ -272,7 +272,7 @@ Une fois le cas de découverte électronique créé et les dépositaires associ�
     
     ![Emplacements, en attente](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **Tous les emplacements.** Sélectionnez cette option pour rechercher tous les emplacements de contenu de votre organisation. Lorsque vous sélectionnez cette option, vous pouvez choisir d’effectuer une recherche dans toutes les boîtes aux lettres Exchange (qui inclut les boîtes aux lettres de tous les groupes Office 365 et Microsoft Teams), tous les sites SharePoint et OneDrive entreprise (qui incluent les sites pour tous les groupes Office 365 et Microsoft Teams) et tous les dossiers publics.
+    - **Tous les emplacements** : sélectionnez cette option pour rechercher tous les emplacements de contenu de votre organisation. Lorsque vous sélectionnez cette option, vous pouvez choisir d’effectuer une recherche dans toutes les boîtes aux lettres Exchange (ce qui inclut les boîtes aux lettres de tous les groupes Microsoft Teams, Yammer Groups et Office 365), tous les sites SharePoint et OneDrive entreprise (qui incluent les sites de tous les sites Microsoft Teams, groupes Yammer et groupes Office 365) et tous les dossiers publics.
     
     - **Tous les emplacements en attente.** Sélectionnez cette option pour rechercher tous les emplacements de contenu qui ont été mis en attente dans le cas. Si le cas contient plusieurs suspensions, les emplacements de contenu de toutes les suspensions sont recherchés lorsque vous sélectionnez cette option. En outre, si un emplacement de contenu a été placé sur une conservation basée sur une requête, seuls les éléments en attente feront l’objet d’une recherche lors de l’exécution de la recherche de contenu que vous créez au cours de cette étape. Par exemple, si un utilisateur a été placé sur une conservation de casse basée sur une requête qui conserve les éléments qui ont été envoyés ou créés avant une date spécifique, seuls ces éléments seraient recherchés à l’aide des critères de recherche de la recherche de contenu. Pour ce faire, vous connectez la requête de suspension de la casse et la requête de recherche de contenu par un opérateur **and** . Pour plus d’informations sur la recherche de contenu de cas, reportez-vous à la section [plus d’informations](#more-information) à la fin de cet article. 
     
@@ -288,9 +288,9 @@ Une fois le cas de découverte électronique créé et les dépositaires associ�
     
       - Lorsque vous cliquez sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à rechercher, le sélecteur de boîtes aux lettres affiché est vide. Il s’agit d’une conception qui améliore les performances. Pour ajouter des destinataires à cette liste, cliquez sur **choisir les utilisateurs, les groupes ou les équipes**, tapez un nom (un minimum de 3 caractères) dans la zone de recherche, activez la case à cocher en regard du nom, puis cliquez sur **choisir**. 
     
-      - Vous pouvez ajouter des boîtes aux lettres inactives, des groupes Office 365, Microsoft teams et des groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez des groupes Office 365 ou Microsoft Teams, la boîte aux lettres de groupe ou d’équipe est recherchée. Les boîtes aux lettres des membres du groupe ne sont pas recherchées.
+      - Vous pouvez ajouter des boîtes aux lettres inactives, Microsoft Teams, des groupes Yammer, des groupes Office 365 et des groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez des groupes Microsoft Teams, Yammer ou Office 365, la boîte aux lettres de groupe ou d’équipe fait l’objet d’une recherche ; les boîtes aux lettres des membres du groupe ne sont pas recherchées.
     
-      - Pour ajouter des sites, cliquez sur **choisir des sites**, cliquez sur **choisir des sites** , puis tapez l’URL de chaque site sur lequel vous souhaitez effectuer la recherche. Vous pouvez également ajouter l’URL du site SharePoint pour les groupes Office 365 et Microsoft Teams. 
+      - Pour ajouter des sites, cliquez sur **choisir des sites**, cliquez sur **choisir des sites** , puis tapez l’URL de chaque site sur lequel vous souhaitez effectuer la recherche. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Yammer ou un groupe Office 365. 
     
 10. Une fois que vous avez sélectionné les emplacements de contenu à rechercher, cliquez sur **Terminer** , puis sur **Enregistrer**.
     
@@ -519,6 +519,30 @@ Lorsque vous rouvrez un cas, les conservations qui étaient en place lors de la 
     
     Une fois le processus terminé, l’état du cas est modifié sur **actif** sur la page **eDiscovery** . 
   
+## <a name="optional-step-11-delete-a-case"></a>Module Étape 11 : supprimer un cas
+
+Vous pouvez également supprimer des cas actifs et fermés. Lorsque vous supprimez un incident, toutes les recherches et exportations dans le cas sont supprimées et supprimées de la liste des incidents sur la page **eDiscovery** dans le centre de sécurité & Compliance Center. Vous ne pouvez pas rouvrir un cas supprimé. 
+
+Avant de pouvoir supprimer un incident (qu’il soit actif ou fermé), vous devez d’abord supprimer *toutes les* conservations associées au cas. Cela inclut la suppression des blocages dont l’État est **off**. 
+
+Pour supprimer une suspension :
+
+1. Accédez à l’onglet **suspensions** si vous voulez supprimer.
+
+2. Cliquez sur la conservation que vous souhaitez supprimer.
+
+3. Sur la page de la fenêtre volante, cliquez sur **Supprimer la conservation**.
+
+Pour supprimer un cas :
+
+1. Dans le \> **Centre de sécurité** & conformité, **cliquez sur eDiscovery eDiscovery pour** afficher la liste des cas dans votre organisation. 
+    
+2. Cliquez sur le nom de la demande de devis que vous souhaitez supprimer.
+
+3. Sous **Manage case Status** sur la page de menu volant, cliquez sur **Delete case**.
+
+Si le cas que vous essayez de supprimer contient toujours des conservations, vous recevrez un message d’erreur. Vous devrez supprimer toutes les conservations associées au cas, puis réessayer de supprimer le cas.
+
 ## <a name="more-information"></a>Plus d’informations
 
 - **Existe-t-il des limites pour les cas eDiscovery ou les conservations associés à un cas de découverte électronique ?** Le tableau suivant répertorie les limites pour les cas de découverte électronique et les conservations de casse.
@@ -527,7 +551,7 @@ Lorsque vous rouvrez un cas, les conservations qui étaient en place lors de la 
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation  <br/> |Sans limite  <br/> |
   |Nombre maximal de blocages pour une organisation  <br/> |10 000  <br/> |
-  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1 000  <br/> |
+  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1,000  <br/> |
   |Nombre maximal de sites SharePoint et OneDrive entreprise en une seule suspension de cas  <br/> |100  <br/> |
    
 - **Qu’en est-il des cas qui ont été créés sur la page de gestion des dossiers dans Advanced eDiscovery ?** Vous pouvez accéder à la liste des anciens cas de découverte électronique avancée en cliquant sur le lien situé en bas de la page **découverte électronique** dans le centre de sécurité & conformité. Toutefois, pour effectuer un travail dans un cas plus ancien, vous devez contacter le support Office 365 et demander que le cas soit déplacé vers un nouveau cas eDiscovery dans le centre de sécurité & conformité. 

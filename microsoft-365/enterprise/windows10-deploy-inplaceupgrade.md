@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 08d10dae35023d3e1d9f1e98d36e52f283ec04fa
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38669679"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112688"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Étape 2 : déployer Windows 10 entreprise pour les appareils existants en tant que mise à niveau sur place
 
@@ -27,7 +27,7 @@ Le chemin le plus simple pour mettre à niveau des PC actuellement exécutant Wi
 
 Si des ordinateurs existants exécutent Windows 7 ou Windows 8,1, nous vous recommandons d’utiliser ce chemin d’accès si votre organisation déploie Windows 10. Cela tire parti du programme d’installation de Windows (Setup. exe) pour effectuer une mise à niveau sur place, qui conserve automatiquement toutes les données, les paramètres, les applications et les pilotes à partir de la version du système d’exploitation existant. Cela nécessite le moins d’efforts, car il n’est pas nécessaire d’utiliser une infrastructure de déploiement complexe.
 
-Procédez comme suit pour configurer et déployer une image Windows 10 entreprise à l’aide de Configuration Manager en tant que mise à niveau sur place.
+Procédez comme suit pour configurer et déployer une image Windows 10 entreprise à l’aide du gestionnaire de configuration de point de terminaison de Microsoft en tant que mise à niveau sur place.
 
 ## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Déploiement de Windows 10 avec l’affiche du gestionnaire de configuration
 
@@ -45,7 +45,7 @@ Voir [gérer les mises à niveau Windows avec la préparation](https://docs.micr
 
 Ensuite, suivez le guide pour utiliser le gestionnaire de configuration (branche actuelle) pour mettre à niveau le système d’exploitation Windows 7 ou une version ultérieure vers Windows 10. Comme pour tout déploiement à haut risque, nous vous recommandons de sauvegarder les données utilisateur avant de poursuivre. Le stockage cloud OneDrive est prêt à être utilisé pour les utilisateurs de Microsoft 365 titulaires d’une licence et peut être utilisé pour stocker leurs fichiers en toute sécurité. Pour plus d’informations, reportez-vous à la rubrique [OneDrive Quick Start Guide](https://aka.ms/ODfBquickstartguide). Pour accéder à cette page, vous devez vous connecter en tant qu’administrateur client ou administrateur global dans un client Office 365 ou Microsoft 365.
 
-Pour obtenir la liste des versions de gestionnaire de configuration et les versions de client Windows 10 correspondantes prises en charge, voir [prise en charge de Windows 10 pour Configuration Manager](https://aka.ms/supportforwin10sccm).
+Pour obtenir la liste des versions de gestionnaire de configuration et les versions de client Windows 10 correspondantes prises en charge, voir [prise en charge de Windows 10 pour Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
 
 **Pour vérifier la disponibilité pour la mise à niveau de Windows**
 
@@ -94,7 +94,7 @@ Pour créer une séquence de tâches de mise à niveau, procédez comme suit :
 Après avoir créé la séquence de tâches de mise à niveau, vous devez créer une collection qui contient les périphériques que vous allez mettre à niveau.
 
 > [!NOTE]
-> Utilisez les paramètres suivants pour tester le déploiement sur un seul appareil. Vous pouvez utiliser des règles d’appartenance différentes pour inclure des groupes d’appareils lorsque vous êtes prêt. Pour plus d’informations, reportez-vous [à la rubrique Création de collections dans le gestionnaire de configuration](https://aka.ms/sccm-create-collections).
+> Utilisez les paramètres suivants pour tester le déploiement sur un seul appareil. Vous pouvez utiliser des règles d’appartenance différentes pour inclure des groupes d’appareils lorsque vous êtes prêt. Pour plus d’informations, reportez-vous [à la rubrique Création de collections dans le gestionnaire de configuration](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections).
 
 1. Dans la console Configuration Manager, dans l’espace de travail **composants et conformité** , cliquez avec le bouton droit sur **ensembles de périphériques**, puis sélectionnez **créer une collection de périphériques**. 
 2. Dans l’assistant créer une collection de périphériques, dans la page **général** , entrez les paramètres suivants, puis cliquez sur **suivant**:

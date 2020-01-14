@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 8d2bc20a1d429510dfcd651c6b15dc1a2a89de9d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 1d9b390cc28002b4561d61fa1d6cc411f3b135f1
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962601"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112708"
 ---
 # <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
@@ -43,10 +43,10 @@ Microsoft Managed Desktop identifie chaque appareil de manière unique en réfé
 
 #### <a name="configuration-manager"></a>Configuration Manager
 
-Vous pouvez utiliser System Center Configuration Manager pour collecter les hachages matériels à partir des appareils existants que vous souhaitez enregistrer avec le bureau géré Microsoft.
+Vous pouvez utiliser le gestionnaire de configuration de point de terminaison Microsoft pour collecter les hachages matériels à partir des appareils existants que vous souhaitez enregistrer avec le bureau géré Microsoft.
 
 > [!IMPORTANT]
-> Tous les appareils pour lesquels vous souhaitez obtenir ces informations doivent exécuter Windows 10, version 1703 ou ultérieure. Vous avez également besoin d’un appareil qui est un client du gestionnaire de configuration connecté au site de la succursale actuelle de System Center. Vous avez également besoin du rôle système de site de création de rapports dans votre environnement avec SQL Server Reporting Services activé. 
+> Tous les appareils pour lesquels vous souhaitez obtenir ces informations doivent exécuter Windows 10, version 1703 ou ultérieure. Vous avez également besoin d’un appareil qui est un client gestionnaire de configuration connecté au site gestionnaire de configuration (branche actuelle). Vous avez également besoin du rôle système de site de création de rapports dans votre environnement avec SQL Server Reporting Services activé. 
 
 Si vous avez rempli toutes ces conditions préalables, vous êtes prêt à collecter les informations en procédant comme suit :
 
@@ -148,7 +148,7 @@ Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegis
 Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
 ```
 3. Accéder à tous les répertoires où se trouvent des entrées pour les appareils. Supprimez les entrées de chaque périphérique de *tous les* répertoires, y compris les services de domaine Active Directory Windows Server et Azure Active Directory. N’oubliez pas que cette suppression peut prendre quelques heures.
-4. Services de gestion d’accès où il peut y avoir des entrées pour les périphériques. Supprimez les entrées de chaque périphérique de *tous les* services de gestion, y compris System Center Configuration Manager, Microsoft Intune et Windows AutoPilot. N’oubliez pas que cette suppression peut prendre quelques heures.
+4. Services de gestion d’accès où il peut y avoir des entrées pour les périphériques. Supprimez les entrées de chaque périphérique de *tous les* services de gestion, y compris le gestionnaire de configuration de point de terminaison Microsoft, Microsoft Intune et Windows AutoPilot. N’oubliez pas que cette suppression peut prendre quelques heures.
 
 À présent, vous pouvez procéder à l' [inscription des appareils](#register-devices).
 

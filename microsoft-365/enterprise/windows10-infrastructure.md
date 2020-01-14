@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 147dd0ec0276d685177ae389092ec18ace0d7bed
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 92a786f40c10170cf0eb5f91f765bad4dc044c97
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831687"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112668"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3 : Windows 10 Entreprise
 
@@ -39,7 +39,7 @@ Il existe plusieurs façons de déployer Windows 10 entreprise pour votre organi
 
 | Scénario de déploiement | Quand l’utiliser |
 |:--- |:--- |
-| [Utilisation du gestionnaire de configuration de point de terminaison Microsoft en tant que mise à niveau sur place](windows10-deploy-inplaceupgrade.md) | Sélectionnez cette option si vous devez mettre à niveau les ordinateurs Windows 7 ou Windows 8,1 vers la <a href="https://aka.ms/windows-10-release-information" target="_blank">version actuelle</a> de Windows 10 entreprise et que vos ordinateurs sont actuellement gérés avec le <a href="https://aka.ms/introtosccm" target="_blank">Gestionnaire de configuration (branche actuelle)</a>. |
+| [Utilisation du gestionnaire de configuration de point de terminaison Microsoft en tant que mise à niveau sur place](windows10-deploy-inplaceupgrade.md) | Sélectionnez cette option si vous devez mettre à niveau les ordinateurs Windows 7 ou Windows 8,1 vers la <a href="https://aka.ms/windows-10-release-information" target="_blank">version actuelle</a> de Windows 10 entreprise et que vos ordinateurs sont actuellement gérés avec le <a href="https://docs.microsoft.com/configmgr/core/understand/introduction" target="_blank">Gestionnaire de configuration (branche actuelle)</a>. |
 | [Utilisation de Windows AutoPilot](windows10-deploy-autopilot.md) | Sélectionnez cette option si vous configurez de nouveaux ordinateurs Windows sur lesquels Windows 10 entreprise, version 1703 ou ultérieure est préinstallé. Les utilisateurs finaux vont lancer le programme d’installation à l’aide de la configuration souhaitée en saisissant leurs informations d’identification de compte professionnel ou scolaire. |
 
 Si ces scénarios de déploiement ne répondent pas aux besoins de votre organisation, vous pouvez en savoir plus sur les autres scénarios et comprendre les capacités et les limites de chacune d’elles dans les [scénarios de déploiement de Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Vous pouvez également <a href="https://aka.ms/planforwin10deployment" target="_blank">planifier le déploiement de Windows 10</a> par vous-même.

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634041"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41022020"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -65,7 +65,7 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 
 Avant de commencer à effectuer une recherche dans le journal d’audit d’Office 365, veillez à lire ce qui suit.
 
-- Vous (ou un autre administrateur) devez activer l’enregistrement d’audit avant d’effectuer des recherches dans le journal d’audit Office 365. Pour cela, cliquez sur **Commencer à enregistrer les activités des utilisateurs et des administrateurs** sur la page **Recherche dans le journal d’audit** du Centre de sécurité et de conformité. (Si vous ne voyez pas ce lien, l’audit est déjà activé dans votre organisation.). Une fois l’audit activé, le message qui apparaît indique que le journal d’audit est en cours de préparation et que vous pourrez effectuer une recherche environ deux heures après la fin de la préparation. Vous ne devez effectuer cette opération qu’une seule fois.
+- Vous (ou un autre administrateur) devez activer l’enregistrement d’audit avant d’effectuer des recherches dans le journal d’audit Office 365. Pour cela, cliquez sur **Activer l'audit** sur la page **Recherche dans le journal d’audit** du Centre de sécurité et de conformité. (Si vous ne voyez pas ce lien, l’audit est déjà activé dans votre organisation.). Une fois l’audit activé, le message qui apparaît indique que le journal d’audit est en cours de préparation et que vous pourrez effectuer une recherche environ deux heures après la fin de la préparation. Vous ne devez effectuer cette opération qu’une seule fois. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
   > [!NOTE]
   > Nous effectuons la procédure nécessaire pour activer l’audit par défaut. En attendant, vous pouvez l’activer en suivant la procédure décrite précédemment.
@@ -337,6 +337,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |(aucun)|FileModifiedExtended|Cet événement est lié à l’activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est consigné lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
 |Fichier déplacé|FileMoved|Un utilisateur déplace un document de son emplacement actuel sur un site vers un nouvel emplacement.|
 |(aucun)|FilePreviewed|Un utilisateur affiche l’aperçu de fichiers sur un site SharePoint ou OneDrive Entreprise. Ces événements se produisent généralement dans des volumes élevés basés sur une activité unique, comme l’affichage d’une galerie d’images.|
+|Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention ou de conservation eDiscovery aux sites et comptes OneDrive, et lorsque les étiquettes de rétention ou de confidentialité sont automatiquement appliquées au contenu du site. Dans la plupart des cas, le nom du compte de service enregistré dans le champ Utilisateur de l’enregistrement d’audit est **app@sharepoint**. </br></br> **Conseil :** les champs ApplicationDisplayName et EventData de l’enregistrement d’audit pour l’activité de requête de recherche effectuée peuvent vous aider à identifier le scénario ou le service ayant déclenché cet événement.|
 |Recyclage de toutes les versions mineures du fichier|FileVersionsAllMinorsRecycled|L’utilisateur supprime toutes les versions mineures de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage de toutes les versions du fichier|FileVersionsAllRecycled|L’utilisateur supprime toutes les versions de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage d’une version du fichier|FileVersionRecycled|L’utilisateur supprime une version de l’historique des versions d’un fichier. La version supprimée est déplacée vers la Corbeille du site.|
@@ -804,10 +805,10 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Co-auteur du formulaire ajouté|AddFormCoauthor|Un utilisateur utilise un lien de collaboration pour vous aider à concevoir et afficher les réponses. Cet événement est consigné lorsqu’un utilisateur utilise une URL espace collaboration (pas lorsque espace collaboration URL est générée pour la première fois).|
 |Co-auteur de formulaire supprimée|RemoveFormCoauthor|Le propriétaire du formulaire supprime un lien de collaboration.|
 |Page de réponse consultée|ViewRuntimeForm|Un utilisateur a ouvert une page de réponse à afficher. Cet événement est consigné, que l’utilisateur envoie ou non une réponse.|
-|Réponse créée|CreateResponse|Similaire à la réception d'une nouvelle réponse.  Utilisateur a soumis une réponse à un formulaire. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
+|Réponse créée|CreateResponse|Similaire à la réception d'une nouvelle réponse.  Un utilisateur a soumis une réponse à un formulaire. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
 |Réponse mise à jour|UpdateResponse|Le propriétaire du formulaire a mis à jour un commentaire ou une note sur un questionnaire. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
 |Toutes les réponses supprimées|DeleteAllResponses|Le propriétaire du formulaire supprime toutes les données de réponse.|
-|Réponse supprimée|DeleteResponse|Un propriétaire d’un formulaire supprime une réponse. <br><br>La propriété ResponseId:string indique la réponse à supprimer.|
+|Réponse supprimée|DeleteResponse|Un propriétaire d’un formulaire supprime une réponse. <br><br>La propriété ResponseId:string indique la réponse en cours de suppression.|
 |Réponses consultées|ViewResponses|Propriétaire du formulaire affiche la liste agrégée des réponses. <br><br>La propriété ViewType : String indique si le propriétaire du formulaire affiche les détails ou les agrégats|
 |Réponse consultée|ViewResponse|Le propriétaire du formulaire affiche une réponse spécifique. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
 |Lien de synthèse créé|GetSummaryLink|Le propriétaire du formulaire crée un lien de résultats de synthèse pour partager les résultats.|
@@ -816,8 +817,8 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Invitation Forms Pro envoyée|ProInvitation|L’utilisateur clique pour activer une version d’évaluation Pro.|
 |Paramètres de formulaire mis à jour|UpdateFormSetting|Le propriétaire du formulaire met à jour un paramètre de formulaire. <br><br>La propriété FormSettingName:string indique le nom du paramètre et la nouvelle valeur.|
 |Paramètres d’utilisateur mis à jour|UpdateUserSetting|Le propriétaire du formulaire met à jour un paramètre d’utilisateur. <br><br>La propriété UserSettingName:string indique le nom et la nouvelle valeur du paramètre|
-|Formulaires répertoriés|ListForms|Le propriétaire du formulaire affiche une liste de formulaires. <br><br>La propriété ViewType:string indique qui affiche le propriétaire du formulaire : tous les formulaires, partagés avec moi ou les formulaires de groupe|
-|Réponse envoyée|SubmitResponse|Un utilisateur envoie une réponse à un formulaire. <br><br>La propriété IsInternalForm:boolean indique si le répondant est au sein de la même organisation que le propriétaire du formulaire.|
+|Formulaires répertoriés|ListForms|Le propriétaire du formulaire affiche une liste de formulaires. <br><br>La propriété ViewType:string indique l'affichage que le propriétaire du formulaire consulte : Tous les formulaires, Partagés avec moi ou les Formulaires de groupe|
+|Réponse envoyée|SubmitResponse|Un utilisateur envoie une réponse à un formulaire. <br><br>La propriété IsInternalForm:boolean indique si le répondant fait partie de la même organisation que le propriétaire du formulaire.|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange
@@ -845,7 +846,7 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
 
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
-   Gardez à l’esprit que les mêmes activités d’administrateur Exchange sont enregistrées dans le journal d’audit de l’administrateur Exchange et dans le journal d’audit d’Office 365.
+   Gardez à l’esprit que les mêmes activités d’administrateur Exchange sont enregistrées dans le journal d’audit de l’administrateur Exchange et dans le journal d’audit d’Office 365.
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 

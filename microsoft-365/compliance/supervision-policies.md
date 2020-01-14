@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: bd9d86a5a5d96e8f7978f5c2482eb127b0379a09
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 6ccf5cb4dff8b458c91700ebc1e7dc830d16aafc
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959523"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112268"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de supervision dans Office 365
 
@@ -281,6 +281,12 @@ Par exemple, l’exemple suivant montre comment renvoyer les activités de toute
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
+```
+
+Cet exemple renvoie les activités de mise à jour pour vos stratégies de conformité de communication :
+
+```PowerShell
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
 Outre les informations fournies dans les journaux et les rapports de surveillance, vous pouvez également utiliser l’applet de commande PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) pour renvoyer une liste complète et détaillée de toutes les activités de stratégie de surveillance.

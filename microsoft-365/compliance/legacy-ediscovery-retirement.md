@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Office 365 Advanced eDiscovery v 1.0 sont également en cours de retrait dans la même période.
-ms.openlocfilehash: c0cef17acf0028472a9b92352afd51786a8ae25c
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: cb24c40cc2018fba6d1feb13ef0d6426abd2c49a
+ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970822"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41107903"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Déclassement des outils eDiscovery hérités
 
@@ -59,7 +59,7 @@ Les sections suivantes de cet article fournissent des instructions sur chaque fo
 
 Conformément à l’annonce d’origine le 1er juillet 2017, la fonctionnalité de blocage de la découverte électronique inaltérable & dans le centre d’administration Exchange est en cours de retrait. La page de découverte électronique inaltérable & conservation du centre d’administration Exchange vous permet de rechercher, de mettre en attente et d’exporter du contenu à partir d’Exchange Online. La découverte électronique inaltérable vous permet également de copier les résultats de la recherche dans une boîte aux lettres de découverte afin que vous-même ou d’autres gestionnaires eDiscovery puissiez consulter le contenu et le mettre à la disposition des demandes juridiques, réglementaires et publiques.
 
-Becuase toutes ces fonctionnalités (à l’exception de la copie des résultats de la recherche dans une boîte aux lettres de découverte) sont désormais disponibles dans les outils de recherche de contenu, eDiscovery et eDiscovery dans le [Centre de conformité microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (avec des fonctionnalités améliorées, la fiabilité et la prise en charge d’un large éventail de services Microsoft 365) Pour vous aider lors de la transition vers ces autres outils eDiscovery, le tableau ci-dessous répertorie les outils que vous pouvez utiliser à la place de la découverte électronique inaltérable et de la conservation inaltérable.
+Étant donné que toutes ces fonctionnalités (à l’exception de la copie des résultats de la recherche dans une boîte aux lettres de découverte) sont désormais disponibles dans les outils de recherche de contenu, eDiscovery et eDiscovery dans le [Centre de conformité microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (avec des fonctionnalités améliorées, une fiabilité et une prise en charge pour une large gamme de services Microsoft 365 Pour vous aider lors de la transition vers ces autres outils eDiscovery, le tableau ci-dessous répertorie les outils que vous pouvez utiliser à la place de la découverte électronique inaltérable et de la conservation inaltérable.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations affectées
     
@@ -150,7 +150,7 @@ Il est possible de migrer des recherches de découverte électronique inaltérab
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-Cmdlets MailboxSearch
 
-Conformément à la note d’origine annoncée le 1er juillet 2017 dans le centre d’administration Exchange, la fonctionnalité de découverte électronique & locale et les applets de commande ** \*MailboxSearch** correspondantes sont en cours de retrait. Ces applets de commande permettent aux utilisateurs de rechercher, de tenir et d’exporter le contenu des boîtes aux lettres pour les demandes légales, réglementaires et publiques.
+Conformément à la note d’origine annoncée le 1er juillet 2017 dans le centre d’administration Exchange, la fonctionnalité de découverte électronique & locale et les applets de commande ** \*MailboxSearch** correspondantes sont en cours de retrait. Ces applets de commande permettent aux utilisateurs de rechercher, de mettre en attente et d’exporter du contenu de boîtes aux lettres pour des demandes juridiques, réglementaires et publiques.
 
 Étant donné que ces fonctionnalités sont désormais disponibles dans le centre de [<span class="underline">conformité Microsoft 365</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) et Office 365 Security & PowerShell avec des performances et une évolutivité accrues, vous devez utiliser ces cmdlets améliorées. Ces applets de commande incluent [<span class="underline"> \*-ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase), [<span class="underline"> \*-ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch), [<span class="underline"> \*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy), [<span class="underline"> \*-CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule)et [<span class="underline"> \*-ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction).
 
@@ -168,7 +168,7 @@ Conformément à la note d’origine annoncée le 1er juillet 2017 dans le centr
     
 - 1er avril 2020 : vous ne pourrez pas utiliser **New-MailboxSearch** pour créer de nouvelles recherches de découverte électronique inaltérable et des conservations inaltérables, mais vous pouvez toujours utiliser des applets de commande pour exécuter, modifier et supprimer des recherches et des suspensions existantes à vos propres risques. Le support Microsoft ne fournira plus d’aide pour ces types de recherches et de suspensions.
     
-- 1er juillet 2020 : comme indiqué précédemment, le & de découverte électronique inaltérable conserve les fonctionnalités du centre d’administration Exchange en mode lecture seule. Cela signifie également que vous ne pouvez pas utiliser les cmdlets **New-MailboxSearch**, **Start-MailboxSearch**ou **Set-MailboxSearch** . Vous ne pourrez obtenir et supprimer que les recherches et les suspensions existantes.
+- 1er juillet 2020 : comme indiqué précédemment, le & de découverte électronique inaltérable conserve les fonctionnalités du centre d’administration Exchange en mode lecture seule. Cela signifie également que vous ne pourrez pas utiliser les cmdlets **New-MailboxSearch**, **Start-MailboxSearch**ou **Set-MailboxSearch** . Vous ne pourrez obtenir et supprimer que les recherches et les suspensions existantes.
 
 ### <a name="alternative-tools"></a>Outils de remplacement
 
@@ -204,7 +204,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
-<td>Néant</td>
+<td>Aucun</td>
 <td>Il n’existe pas de remplacement direct de cette fonctionnalité, car elle ne fournit pas d’accès à tous les services Microsoft 365. Consultez le Forum aux questions ci-dessous pour obtenir d’autres solutions.</td>
 </tr>
 </tbody>
@@ -268,7 +268,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
-<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et à purger le contenu. Vous pouvez créer et exécuter une recherche à l’aide des cmdlets <strong>New-ComplianceSearch</strong> et <strong>New-ComplianceSearch</strong> , puis purger le contenu à l’aide de la commande <strong>New-ComplianceSearchAction-purge et-PurgeType permet</strong> .</p>
+<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et à purger le contenu. Vous pouvez créer et exécuter une recherche à l’aide des cmdlets <strong>New-ComplianceSearch</strong> et <strong>New-ComplianceSearch</strong> , puis purger le contenu à l’aide de la commande <strong>New-ComplianceSearchAction-purge-PurgeType permet</strong> . Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Rechercher et supprimer des messages</span></a>.</p>
 </td>
 </tr>
 <tr class="odd">
@@ -317,7 +317,7 @@ Pour l’instant, nous vous recommandons de commencer la transition de votre flu
     
 - 1er avril 2020 : vous ne pourrez pas créer de nouveaux cas de découverte électronique avancée v 1.0.
     
-- 1er juillet 2020 : le support Microsoft ne prend pas en charge. Veuillez consulter [cette notice](https://go.microsoft.com/fwlink/?linkid=2113221). Vous ne pourrez pas ajouter de nouvelles données (préparer les résultats de recherche pour Advanced eDiscovery) dans n’importe quel cas. Vous pourrez continuer à travailler avec des données dans les cas existants à vos risques et périls.
+- 1er juillet 2020 : le support Microsoft ne prend pas en charge. Consultez [cette notice](https://go.microsoft.com/fwlink/?linkid=2113221). Vous ne pourrez pas ajouter de nouvelles données (préparer les résultats de recherche pour Advanced eDiscovery) dans n’importe quel cas. Vous pourrez continuer à travailler avec des données dans les cas existants à vos risques et périls.
 
 ### <a name="alternative-tools"></a>Outils de remplacement
     

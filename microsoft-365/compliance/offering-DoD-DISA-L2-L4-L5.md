@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: ad9659799494a3aaad4a3436b263ebcfd2b56d1c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959553"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112498"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorisation provisoire du ministère américain de la défense aux niveaux d’impact 2, 4 et 5
 
@@ -36,7 +36,7 @@ Les services Cloud de Microsoft sont conformes aux exigences des exigences du mi
 - Découvrez les avantages de DoD DISA L2, L4, n5 sur le Cloud Microsoft : [Télécharger les concepts du département de la défense DISA](https://aka.ms/disa-backgrounder)
 - Découvrez comment accélérer votre déploiement DoD DISA L2, L4, n5 avec notre plan de sécurité et de conformité Azure : [Télécharger les implémentations de contrôle de sécurité de niveau 5 Azure DoD](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
 
-## <a name="dod-impact-level-5-provisional-authorization"></a>[Autorisation provisoire de niveau DoD 5
+## <a name="dod-impact-level-5-provisional-authorization"></a>Niveau d’autorisation provisoire de DoD
 
 La prise en charge du service Cloud DISA a accordé un niveau d’impact DoD de 5 PA pour le gouvernement Microsoft Azure pour la norme DoD. DISA a également accordé le niveau d’impact DoD 5 PA au gouvernement américain d’Office 365. Le niveau d’impact 5 couvre les informations non classifiées contrôlées (CUI) considérées par la Loi, d’autres réglementations gouvernementales ou l’Agence propriétaire des informations et dont le niveau de protection est supérieur à celui fourni par le niveau 4. Elle couvre également les systèmes de sécurité nationale non classés.
 

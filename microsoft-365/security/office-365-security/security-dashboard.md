@@ -14,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 8ce6e21bcc25853e641ee20126ffd38c785e76f7
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: f7fc45ca1df86fa29c6e2af69da5258fe6d564b6
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033935"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112648"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -64,8 +64,8 @@ Les détails varient selon que votre abonnement Office 365 inclut ou non [Exchan
 
 |Si votre abonnement inclut... |Ces détails s’affichent. |
 |---------|---------|
-|EOP mais pas Office 365 ATP     |Courrier électronique malveillant détecté et bloqué par EOP<br> Consultez la rubrique [Threat Protection Status Report (EoP)](../../compliance/view-email-security-reports.md#threat-protection-status-report).| 
-|Office 365 ATP |Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Office 365 ATP<br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique avec suppression automatique des heures d’heure](zero-hour-auto-purge.md)et les fonctionnalités ATP (y compris les [liens fiables](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et l' [anti-hameçonnage ATP](atp-anti-phishing.md)).<br>Consultez la rubrique [Threat Protection Status Report (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
+|EOP mais pas Office 365 ATP     |Courrier électronique malveillant détecté et bloqué par EOP<br> Consultez la rubrique [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).| 
+|Office 365 – Protection avancée contre les menaces |Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Office 365 ATP<br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique avec suppression automatique des heures d’heure](zero-hour-auto-purge.md)et les fonctionnalités ATP (y compris les [liens fiables](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et l' [anti-hameçonnage ATP](atp-anti-phishing.md)).<br>Consultez la rubrique [Threat Protection Status Report (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
 
 Pour afficher ou accéder au widget d’État protection contre les menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
@@ -117,13 +117,13 @@ Pour afficher ou accéder au widget courrier électronique envoyé et reçu, vou
 
 Pour afficher ou accéder au widget alertes de gestion des menaces récentes, vous devez disposer des autorisations pour afficher les alertes. Pour en savoir plus, consultez la rubrique [autorisations RBAC requises pour afficher les alertes](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
-[Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité](../../compliance/view-email-security-reports.md)
+[Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité](view-email-security-reports.md)
   
 [Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
   
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
 [Enquête et réponse aux menaces Office 365](office-365-ti.md)
   

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 101078adea821b5ddd3d525d26a7e9dbca1e1512
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8627a46ee861751799e1175c7e030e1b28c6d935
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807373"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111881"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365-preview"></a>Configurer la conformité des communications dans Microsoft 365 (préversion)
 
@@ -42,7 +42,7 @@ Procédez comme suit pour configurer et utiliser la conformité des communicatio
 
 - **Étape 2 (obligatoire)**: [mise à disposition de la conformité de la communication au sein de votre organisation](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Ajoutez-vous au rôle d' **administrateur examen de surveillance** afin de pouvoir configurer des stratégies. Vous devrez également créer un groupe avec l’administrateur de **vérification de surveillance**, la **gestion des cas**et les rôles de **révision** pour les personnes ou les groupes qui devront prendre des mesures d’investigation et de correction sur les messages avec des correspondances de stratégie. Toute personne disposant de ces rôles peut accéder à la page conformité de la **communication** dans le centre de conformité Microsoft 365. Si la messagerie Reviewable est hébergée sur Exchange Online, chaque réviseur doit disposer [d’un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Ajoutez-vous au rôle d' **administrateur examen de surveillance** afin de pouvoir configurer des stratégies. Vous devrez également créer un groupe avec l' **administrateur de vérification de surveillance**, la gestion des **cas**et les rôles de **révision** pour les personnes ou les groupes qui adopteront des actions d’enquête et de correction sur les messages avec des correspondances de stratégie. Toute personne disposant de ces rôles peut accéder à la page conformité de la **communication** dans le centre de conformité Microsoft 365. Si la messagerie Reviewable est hébergée sur Exchange Online, chaque réviseur doit disposer [d’un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Étape 3 (obligatoire)**: [configurer une stratégie de conformité de communication](#step-3-create-a-communication-compliance-policy-required)
 
@@ -88,15 +88,17 @@ Pour que la conformité de la **communication** soit disponible sous la forme d�
 
 ### <a name="create-a-new-role-group"></a>Créer un groupe de rôles
 
-1. Connectez- [https://compliance.microsoft.com](https://compliance.microsoft.com) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Office 365.
+1. Connectez- [https://protection.office.com/permissions](https://protection.office.com/permissions) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
-2. Dans le centre de conformité Microsoft 365, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
+2. Dans le centre de sécurité et conformité Microsoft Office 365, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
 3. Sélectionnez **Créer**.
 
 4. Dans le champ **nom** , attribuez un nom convivial au nouveau groupe de rôles. Sélectionnez **Suivant**.
 
 5. Sélectionnez **choisir les rôles** , puis **Ajouter**. Activez la case à cocher **administrateur de révision de surveillance**, gestion **des** **cas**, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
+
+    ![Groupes de rôles obligatoires de conformité de la communication](media/communication-compliance-role-groups.png)
 
 6. Sélectionnez **choisir les membres** , puis **Ajouter**. Activez la case à cocher de tous les utilisateurs et groupes pour lesquels vous souhaitez créer des stratégies et gérer les messages avec des correspondances de stratégie, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
 
