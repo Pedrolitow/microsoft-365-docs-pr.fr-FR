@@ -13,17 +13,19 @@ search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: d8edca60687a269c062f44a23500b204b965863c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8671492680eba730bf123036a4bb347d055f686d
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806237"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120155"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
 > [!NOTE]
 > Les informations contenues dans cet article s’appliquent uniquement aux abonnements Microsoft Power Platform (Power BI, Power Apps et Power automate).
+
+Les achats en libre-service sont désormais disponibles pour Power BI aux États-Unis.
 
 ## <a name="general"></a>Général
 
@@ -39,9 +41,9 @@ Pour fournir plus de temps à la préparation de cette modification, nous metton
 
 Dans le monde actuel, les utilisateurs finaux et les services cherchent de plus en plus à acheter des solutions technologiques. Nous avons reçu de nombreuses demandes de ces clients pour permettre l’achat en libre-service des produits Power Platform. Nous répondons à ce besoin du client tout en équilibrant les besoins des administrateurs informatiques, qui ont souvent des pertes de visibilité et de contrôle lorsque les utilisateurs de leur organisation adoptent des solutions tierces sans leur connaissance. Avec la fonctionnalité libre-service à venir pour les produits Power Platform, les administrateurs informatiques disposeront d’une visibilité complète sur tous les achats en libre-service effectués au sein de leur organisation et les stratégies de gouvernance des données définies au niveau de l’Organisation seront allouées à abonnements achetés via self-service. Les administrateurs peuvent également affecter des licences existantes, ou acheter des abonnements supplémentaires, des produits de plateforme énergétique via des accords existants et une tarification pour les utilisateurs affectés à des achats en libre-service. Après avoir affecté ces licences achetées de manière centralisée, les administrateurs peuvent demander à ce que les acheteurs annulent leurs abonnements existants. Microsoft explore les moyens de simplifier et de rationaliser ce processus pour les administrateurs à l’avenir.
 
-### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>Quand l’achat en libre-service pour les produits Power Platform sera-t-il disponible ?
+### <a name="which-power-platform-products-are-available-for-self-service-purchase"></a>Quels sont les produits Power Platform disponibles pour l’achat en libre-service ?
 
-Microsoft lance un achat en libre-service pour Power BI le 14 janvier 2020, aux clients des États-Unis, les autres marchés devenant disponibles au cours des prochains mois. Les applications Power et automates d’alimentation seront ajoutées dans les semaines suivantes. Cette fonctionnalité ne sera pas disponible pour les clients des États-Unis qui sont des pouvoirs publics, des organisations à but non lucratif ou l’éducation, pour le moment.
+Microsoft a lancé l’achat en libre-service pour Power BI aux clients des États-Unis, les autres marchés devenant disponibles au cours des prochains mois. Les applications Power and Power automate seront ajoutées aux clients des États-Unis le 28 janvier 2020. Cette fonctionnalité ne sera pas disponible pour les clients des États-Unis qui sont des pouvoirs publics, des organisations à but non lucratif ou l’éducation, pour le moment.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>Est-ce que l’achat en libre-service sera activé pour les services au-delà des produits Power Platform ?
 

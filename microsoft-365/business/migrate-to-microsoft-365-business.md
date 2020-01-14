@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Étapes de mise à niveau de votre entreprise à partir d’Office 365 Business Premium vers Microsoft 365 Business.
-ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 61da9148ccb87654aa2391ff90c4f086a4cbbe24
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640558"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120138"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Mise à niveau vers Microsoft 365 entreprise à partir d’Office 365 Business Premium
 
@@ -68,7 +68,7 @@ Microsoft met en place quelques minutes pour configurer vos nouveaux plans de se
 1. Une fois que votre plan est prêt, vous devrez peut-être effectuer certaines étapes de configuration supplémentaires dans le centre d’administration. Dans le volet de navigation, sélectionnez **Accueil** pour effectuer les étapes de configuration supplémentaires.
 
 > [!NOTE]
-> Vous recevrez un remboursement calculé au prorata pour les licences Ofifce 365 dont vous n’avez plus besoin. Votre compte bancaire ou votre carte de crédit sera débité d’environ deux jours après avoir configuré le nouveau plan.
+> Vous recevrez un remboursement proversement pour les licences Office 365 dont vous n’avez plus besoin. Votre compte bancaire ou votre carte de crédit sera débité d’environ deux jours après avoir configuré le nouveau plan.
   
 ## <a name="protect-user-devices-and-files"></a>Protéger les appareils et les fichiers des utilisateurs
 
