@@ -3,7 +3,7 @@ title: Protection contre l’usurpation d’identité dans Office 365
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp
-ms.date: 08/30/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Cet article explique comment Office 365 prévient les attaques par hameçonnage utilisant des domaines d’expéditeur falsifiés, ou usurpés. Pour ce faire, Microsoft analyse les messages et bloque ceux qui ne peuvent être authentifiés ni à l’aide de méthodes d’authentification standard du courrier, ni à l’aide d’autres techniques basées sur la réputation des expéditeurs. Cette modification a été apportée afin de réduire le nombre d’attaques par hameçonnage auxquelles sont exposées les organisations utilisant Office 365.
-ms.openlocfilehash: 5685fc29f97c9aa41e472926c4e1f26bfcfd1432
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 1bcf6b954c69297981eafecef192cab0e55a7684
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971992"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112738"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection contre l’usurpation d’identité dans Office 365
 
@@ -113,31 +113,25 @@ En examinant les en-têtes d’un message, un administrateur, voire un destinata
 
 Microsoft distingue deux types de messages d’usurpation d’identité :
 
- **Usurpation intra-organisationnelle**
+#### <a name="intra-org-spoofing"></a>Usurpation intra-organisationnelle
 
 Également appelée usurpation self-to-self, elle se produit lorsque le domaine figurant dans l’adresse De : est identique au domaine du destinataire ou aligné sur celui-ci (lorsque le domaine du destinataire est l’un des [Domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) par l’organisation), ou lorsque le domaine figurant dans l’adresse De : fait partie de la même organisation.
 
 Par exemple, l’expéditeur et le destinataire du message suivant appartiennent au même domaine (contoso.com). (Des espaces sont insérées dans les adresses de courrier pour empêcher d’éventuels bots de spam de prélever celles-ci sur cette page) :
 
-De: expéditeur @ contoso.com
-
-À : destinataire @ contoso.com
+> De: expéditeur @ contoso.com <br/> À : destinataire @ contoso.com
 
 Dans l’exemple suivant, les domaines de l’expéditeur et du destinataire sont alignés sur le domaine de l’organisation (fabrikam.com) :
 
-De : expéditeur @ foo.fabrikam.com
-
-À : destinataire @ bar.fabrikam.com
+> De : expéditeur @ foo.fabrikam.com <br/> À : destinataire @ bar.fabrikam.com
 
 Dans l’exemple suivant, les domaines de l’expéditeur et du destinataire sont différents (microsoft.com et bing.com), mais ils appartiennent à la même organisation (ce qui signifie que tous deux font partie des domaines acceptés de l’organisation) :
 
-De: expéditeur @ microsoft.com
-
-À : destinataire @ bing.com
+> De: expéditeur @ microsoft.com <br/> À : destinataire @ bing.com
 
 Les messages qui échouent au filtrage d’usurpation intra-organisationnelle contiennent les valeurs suivantes dans les en-têtes :
 
-X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11
+`X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
 
 CAT correspond à la catégorie du message qui est normalement SPM (courrier indésirable), mais peut parfois être HSPM (courrier fortement suspecté d’être indésirable) ou de PHSH (hameçonnage), en fonction des autres types de structures présents dans le message.
 
@@ -145,13 +139,13 @@ SFTY indique le niveau de sécurité du message. Le premier chiffre (9) signifie
 
 Il n’y a pas de code de motif spécifique en lien avec l’authentification composite pour l’usurpation d’identité intra-organisationnelle. Un tel code sera estampillé plus tard en 2018 (calendrier non encore défini).
 
- **Usurpation inter-domaines**
+#### <a name="cross-domain-spoofing"></a>Usurpation inter-domaines
 
 Cela se produit lorsque le domaine d’envoi figurant dans l’adresse De : est un domaine externe à l’organisation destinataire. Les en-têtes des messages qui échouent à l’authentification composite en raison d’une usurpation inter-domaines contiennent les valeurs suivantes :
 
-Authentication-Results: … compauth=fail reason=000/001
+`Authentication-Results: ... compauth=fail reason=000/001`
 
-X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22
+`X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
 Dans les deux cas, le conseil de sécurité rouge suivant est estampillé dans le message, ou un conseil équivalent personnalisé en fonction de la langue de la boîte aux lettres du destinataire :
 
@@ -171,74 +165,74 @@ La nouvelle protection contre l’usurpation d’identité s’appuie sur l’au
 
 Par exemple, avant le déploiement de la détection d’usurpation d’identité, un message pouvait ressembler à ce qui suit sans enregistrement SPF, DKIM ou DMARC :
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=example.com;
-From: sender @ example.com
+  action=none header.from=fabrikam.com;
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
+
 Après déploiement de la détection d’usurpation d’identité, si vous disposez d’Office 365 Entreprise E5, d’Exchange Online Protection ou d’Advanced Threat Protection, la valeur compauth est estampillée :
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=example.com; compauth=fail reason=001
-From: sender @ example.com
+  action=none header.from=fabrikam.com; compauth=fail reason=001
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
-
 ```
 
-Si example.com corrigeait cela en configurant un enregistrement SPF mais pas d’enregistrement DKIM, l’authentification composite était transmise, car le domaine transmettant SPF correspondait au domaine figurant dans l’adresse De :.
+Si fabrikam.com corrigeait cela en configurant un enregistrement SPF mais pas d’enregistrement DKIM, l’authentification composite serait transmise, car le domaine transmettant SPF correspondrait au domaine figurant dans l’adresse De :
 
-```
+```text
 Authentication-Results: spf=pass (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=bestguesspass
-  action=none header.from=example.com; compauth=pass reason=109
-From: sender @ example.com
+  action=none header.from=fabrikam.com; compauth=pass reason=109
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
 Ou bien, s’ils configuraient un enregistrement DKIM mais pas d’enregistrement SPF, l’authentification composite était également transmise parce que le domaine dans la signature DKIM qui transmettait correspondait au domaine dans l’adresse De :.
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=pass
-  (signature was verified) header.d=outbound.example.com;
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass
+  (signature was verified) header.d=outbound.fabrikam.com;
   contoso.com; dmarc=bestguesspass action=none
-  header.from=example.com; compauth=pass reason=109
-From: sender @ example.com
+  header.from=fabrikam.com; compauth=pass reason=109
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
-Cependant, un hameçonneur peut également configurer SPF et DKIM, et signer le message avec son propre domaine, mais spécifier un autre domaine dans l’adresse De :. Ni SPF, ni DKIM n’exigeant que le domaine corresponde au domaine indiqué dans l’adresse De:, si example.com n’a pas publié d’enregistrements DMARC, les messages ne sont pas marqués comme usurpés à l’aide de DMARC :
+Cependant, un hameçonneur peut également configurer SPF et DKIM, et signer le message avec son propre domaine, mais spécifier un autre domaine dans l’adresse De :. Ni SPF, ni DKIM n’exigeant que le domaine corresponde au domaine indiqué dans l’adresse De:, si fabrikam.com n’a pas publié d’enregistrements DMARC, les messages ne sont pas marqués comme usurpés à l’aide de DMARC :
 
-```
+```text
 Authentication-Results: spf=pass (sender IP is 5.6.7.8)
   smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
   (signature was verified) header.d=maliciousDomain.com;
-  contoso.com; dmarc=none action=none header.from=example.com;
-From: sender @ example.com
+  contoso.com; dmarc=none action=none header.from=fabrikam.com;
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
-Dans le client de courrier (Outlook, Outlook sur le web ou tout autre client), seul le domaine De : est affiché, pas le domaine dans SPF ou DKIM, ce qui peut induire l’utilisateur en erreur en lui faisant croire que le message provient d’example. com, alors qu’il provient en réalité de DomaineMalveillant.com.
+Dans le client de courrier (Outlook, Outlook sur le web ou tout autre client), seul le domaine De : est affiché, pas le domaine dans SPF ou DKIM, ce qui peut induire l’utilisateur en erreur en lui faisant croire que le message provient de fabrikam.com, alors qu’il provient en réalité de DomaineMalveillant.com.
 
 ![Message authentifié mais le domaine De : ne correspond pas à ce qu’ont transmis SPF ou DKIM](../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
 
 Pour cette raison, Office 365 requiert que le domaine dans l’adresse De : corresponde à celui figurant dans la signature SPF ou DKIM et, dans le cas contraire, que le message contienne d’autres signaux internes indiquant qu’il est légitime. Autrement, le message constitue un échec compauth.
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 5.6.7.8)
   smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
   (signature was verified) header.d=maliciousDomain.com;
   contoso.com; dmarc=none action=none header.from=contoso.com;
   compauth=fail reason=001
 From: sender@contoso.com
-To: someone@example.com
+To: someone@fabrikam.com
 ```
 
 Ainsi, le dispositif de détection d’usurpation d’identité d’Office 365 protège contre les domaines sans authentification ainsi que contre les domaines qui configurent une authentification mais ne correspondent pas au domaine figurant dans l’adresse d’expédition, puisqu’il s’agit de l’adresse que l’utilisateur voit et considère comme étant celle de l’expéditeur du message. Cela vaut tant pour les domaines externes à votre organisation que pour les domaines internes.
@@ -322,7 +316,7 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 ```
 
 > [!IMPORTANT]
-> Si Office 365 est en première ligne dans le chemin d’accès au courrier et que vous recevez trop d’e-mails légitimes marqués comme usurpant une identité, vous devez commencer par définir les expéditeurs autorisés à envoyer ce type de courrier à votre domaine (voir la section « *Gestion des expéditeurs légitimes qui envoient du courrier non authentifié* »). Si vous recevez encore trop de faux positifs (c’est-à-dire des messages légitimes marqués comme usurpant une identité), nous ne recommandons PAS de désactiver complètement la protection contre l’usurpation d’identité. Au lieu de cela, nous vous recommandons de choisir une protection De base plutôt que Haute. Mieux vaut s’accommoder de faux positifs que d’exposer votre organisation à du courrier usurpant des identités, ce qui pourrait finir par occasionner des coûts beaucoup plus élevés à long terme.
+> Si Office 365 est en première ligne dans le chemin d’accès au courrier et que vous recevez trop d’e-mails légitimes marqués comme usurpant une identité, vous devez commencer par définir les expéditeurs autorisés à envoyer ce type de courrier à votre domaine (voir la section « [Gestion des expéditeurs légitimes qui envoient du courrier non authentifié](#managing-legitimate-senders-who-are-sending-unauthenticated-email) » dans cette rubrique). Si vous recevez encore trop de faux positifs (c’est-à-dire des messages légitimes marqués comme usurpant une identité), nous ne recommandons PAS de désactiver complètement la protection contre l’usurpation d’identité. Au lieu de cela, nous vous recommandons de choisir une protection De base plutôt que Haute. Mieux vaut s’accommoder de faux positifs que d’exposer votre organisation à du courrier usurpant des identités, ce qui pourrait finir par occasionner des coûts beaucoup plus élevés à long terme.
 
 ### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>Gestion des expéditeurs légitimes qui envoient du courrier non authentifié
 
@@ -350,9 +344,6 @@ Vous pouvez également utiliser PowerShell pour autoriser un expéditeur spécif
 
 ```powershell
 $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
-```
-
-```powershell
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
@@ -443,12 +434,12 @@ Si vous ignorez si votre domaine de destination a subi une réécriture de desti
 
 a) Premièrement, examinez les en-têtes dans le message pour déterminer le domaine du destinataire dans l’en-tête Authentication-Results :
 
-```
+```text
 Authentication-Results: spf=fail (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; office365.contoso.net; dkim=fail
-  (body hash did not verify) header.d=simple.example.com;
+  smtp.mailfrom=fabrikam.com; office365.contoso.net; dkim=fail
+  (body hash did not verify) header.d=simple.fabrikam.com;
   office365.contoso.net; dmarc=none action=none
-  header.from=example.com; compauth=fail reason=001
+  header.from=fabrikam.com; compauth=fail reason=001
 ```
 
 Le domaine du destinataire se trouve dans le texte rouge en gras ci-dessus. Il s’agit en l’occurrence d’office365.contoso.net. Cela peut différer du destinataire dans l’en-tête À:.
@@ -477,29 +468,28 @@ N’oubliez pas que vous ne souhaitez pas désactiver la détection d’usurpati
 
 ### <a name="how-to-disable-anti-spoofing"></a>Comment désactiver la détection d’usurpation d’identité
 
-Si vous avez déjà créé une stratégie anti-hameçonnage, définissez le paramètre EnableAntispoofEnforcement sur $ false :
+Si vous avez déjà créé une stratégie anti-hameçonnage, définissez le paramètre *EnableAntispoofEnforcement* sur $false :
 
-```
+```powershell
 $name = "<name of policy>"
 Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
-
 ```
 
 Si vous ne connaissez pas le nom de la stratégie (ou des stratégies) à désactiver, vous pouvez les afficher :
 
-```
-Get-AntiphishPolicy | fl Name
+```powershell
+Get-AntiphishPolicy | Format-List Name
 ```
 
 Si vous n’avez pas de stratégie anti-hameçonnage existante, vous pouvez en créer une, puis la désactiver (même si vous n’avez pas de stratégie, la détection d’usurpation d’identité est toujours appliquée; depuis 2018, une stratégie par défaut est créée pour vous, et vous pouvez la désactiver au lieu d’en créer une). Vous devez faire cela en plusieurs étapes :
 
-```
+```powershell
 $org = Get-OrganizationConfig
 $name = "My first anti-phishing policy for " + $org.Name
 # Note: If the name is more than 64 characters, you will need to choose a smaller one
 ```
 
-```
+```powershell
 # Next, create a new anti-phishing policy with the default values
 New-AntiphishPolicy -Name $Name
 # Select the domains to scope it to
@@ -509,7 +499,6 @@ $domains = "domain1.com, domain2.com, domain3.com"
 New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
 # Finally, scope the anti-phishing policy to the domains
 Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
-
 ```
 
 La désactivation de la détection d’usurpation d’identité n’est disponible que via une cmdlet (elle sera disponible ultérieurement dans le Centre de conformité de la sécurité). Si vous n’avez pas accès à PowerShell, créez un ticket de support.
@@ -520,35 +509,20 @@ N’oubliez pas que cela ne doit s’appliquer qu’à des domaines soumis à un
 
 Les utilisateurs individuels sont limités dans leurs modes d’interaction avec le conseil de sécurité de détection d’usurpation d’identité. Toutefois, vous disposez de plusieurs options pour résoudre les problèmes rencontrés dans les scénarios courants.
 
-### <a name="common-scenario-1---discussion-lists"></a>Scénario courant n°1 - Listes de discussion
+### <a name="common-scenario-discussion-lists"></a>Scénario courant : listes de discussion
 
 Les listes de discussion présentent des problèmes de détection d’usurpation d’identité en raison de la manière dont elles transmettent le message et en modifient le contenu tout en conservant l’adresse De : d’origine.
 
-Par exemple, supposez que votre adresse électronique est utilisateur @ contoso.com. L’observation des oiseaux vous intéresse et vous rejoignez la liste de discussion ornithologues @ example.com. Lorsque vous envoyez un message à cette liste de discussion, vous pouvez l’adresser comme suit :
+Par exemple, supposons que Gabriela Laureano (glaureano@contoso.com) s’intéresse à l’observation des oiseaux et rejoigne la liste de discussion ornithologues@fabrikam.com. Lorsqu’elle envoie un message à la liste des discussions, il se présente comme suit :
 
-**De :** Alexandre Chauvin \<utilisateur @ contoso.com\>
+> **De :** Gabriela Laureano \<glaureano@contoso.com\> <br/> **À :** Liste de discussion des ornithologues \<ornithologues@example.com\> <br/> 
+**Objet :** Superbe observation de geais bleus au sommet du Mont  Rainier cette semaine <br/><br/>Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ?
 
-**À :** Liste de discussion des ornithologues \<ornithologues @ example.com\>
+Lorsque la liste des courriers reçoit le message, elle le met en forme, en modifie le contenu et le rediffuse au reste des membres de la liste de discussion, composée de nombreux destinataires de courrier différents.
 
-**Objet :** Superbe observation de geais bleus au sommet du Mont Rainier. Rainier cette semaine
+> **De :** Gabriela Laureano \<glaureano@contoso.com\> <br/> **À :** Liste de discussion des ornithologues \<ornithologues@example.com\> <br/> **Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine. Rainier cette semaine <br/><br/> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ? <br/><br/> Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
 
-Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ?
-
-Lorsque la liste des courriers reçoit le message, elle le met en forme, en modifie le contenu et le rediffuse au reste des membres de la liste de discussion composée de nombreux destinataires de courrier différents.
-
-**De :** Alexandre Chauvin \<utilisateur @ contoso.com\>
-
-**À :** Liste de discussion des ornithologues \<ornithologues @ example.com\>
-
-**Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine. Rainier cette semaine
-
-Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ?
-
----
-
-Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
-
-Dans ce qui précède, le message rediffusé a la même adresse De : (utilisateur @ contoso.com), mais le message d’origine a été modifié en ajoutant une balise à la ligne Objet et un pied de page au bas du message. Ce type de modification de message est courant dans les listes de diffusion et peut entraîner des faux positifs.
+Dans cet exemple, le message rediffusé a la même adresse De : (glaureano@contoso.com), mais le message d’origine a été modifié en ajoutant une balise à la ligne Objet et un pied de page au bas du message. Ce type de modification de message est courant dans les listes de diffusion et peut entraîner des faux positifs.
 
 Si vous ou un membre de votre organisation êtes administrateur de la liste de diffusion, vous pouvez peut-être la configurer pour qu’elle passe avec succès les contrôles de détection d’usurpation d’identité.
 
@@ -558,11 +532,11 @@ Si vous ou un membre de votre organisation êtes administrateur de la liste de d
 
 - Songez à installer des mises à jour sur votre serveur de liste de diffusion pour prendre en charge ARC. Pour ce faire, voir [https://arc-spec.org](https://arc-spec.org/).
 
-Si vous n’êtes pas propriétaire de la liste de diffusion :
+Si vous n’êtes pas le propriétaire de la liste de diffusion :
 
-- Vous pouvez demander au responsable de la liste de diffusion d’implémenter l’une des options ci-dessus (l’authentification du courrier doit également être configurée pour le domaine à partir duquel la liste de diffusion est relayée).
+- Vous pouvez demander au responsable de la liste de diffusion d’implémenter l’une des options précédentes (l’authentification du courrier doit également être configurée pour le domaine à partir duquel la liste de diffusion est relayée).
 
-- Vous pouvez créer des règles de boîte aux lettres dans votre client de courrier pour déplacer les messages vers la Boîte de réception. Vous pouvez également demander aux administrateurs de votre organisation de configurer des règles d’autorisation ou des contournements, comme décrit dans la section Gestion des expéditeurs légitimes qui envoient du courrier non authentifié.
+- Vous pouvez créer des règles de boîte aux lettres dans votre client de courrier pour déplacer les messages vers la Boîte de réception. Vous pouvez également demander aux administrateurs de votre organisation de configurer des règles d’autorisation ou des contournements, comme décrit dans la section [Gestion des expéditeurs légitimes qui envoient du courrier non authentifié](#managing-legitimate-senders-who-are-sending-unauthenticated-email) dans cette rubrique.
 
 - Vous pouvez ouvrir un ticket de support auprès d’Office 365 pour créer un contournement afin que la liste de diffusion traite les messages comme légitimes.
 
@@ -574,7 +548,7 @@ Si vous n’êtes pas propriétaire de la liste de diffusion :
 
 3. De plus, si vous connaissez l’expéditeur et êtes certain qu’il ne s’agit pas d’une usurpation d’identité malveillante, vous pouvez lui répondre en indiquant qu’il envoie des messages à partir d’un serveur de courrier qui ne s’authentifie pas. Cela a parfois pour conséquence que l’expéditeur d’origine contacte son administrateur informatique pour lui demander de configurer les enregistrements d’authentification de courrier requis.
 
-Lorsque suffisamment d’expéditeurs répondent aux propriétaires de domaine qu’ils devraient configurer des enregistrements d’authentification de courrier, cela les incite à agir. Bien que Microsoft collabore avec les propriétaires de domaine pour les inciter à publier les enregistrements requis, c’est encore plus efficace lorsque des utilisateurs individuels le demandent.
+   Lorsque suffisamment d’expéditeurs répondent aux propriétaires de domaine qu’ils devraient configurer des enregistrements d’authentification de courrier, cela les incite à agir. Bien que Microsoft collabore avec les propriétaires de domaine pour les inciter à publier les enregistrements requis, c’est encore plus efficace lorsque des utilisateurs individuels le demandent.
 
 4. Ajoutez éventuellement l’expéditeur à votre liste des expéditeurs approuvés. Toutefois, sachez que si un hameçonneur usurpe l’identité ce compte, le courrier sera remis à votre boîte aux lettres. Par conséquent, cette option doit être utilisée avec parcimonie.
 
@@ -610,9 +584,11 @@ Si vous êtes un administrateur de domaine mais n’êtes pas un client d’Offi
 
 ### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>Que faire si vous ignorez qui envoie du courrier au nom de votre domaine ?
 
-De nombreux domaines ne publient pas d’enregistrements SPF car ils ne connaissent pas tous leurs expéditeurs. Pas de souci. Vous n’avez pas besoin de les connaître tous. Au lieu de cela, vous devriez commencer par publier un enregistrement SPF pour ceux que vous connaissez, en spécifiant l’endroit où se trouve votre trafic d’entreprise, et publier une stratégie SPF neutre ?all :
+De nombreux domaines ne publient pas d’enregistrements SPF car ils ne connaissent pas tous leurs expéditeurs. Pas de souci. Vous n’avez pas besoin de les connaître tous. Au lieu de cela, vous devriez commencer par publier un enregistrement SPF pour ceux que vous connaissez, en spécifiant l’endroit où se trouve votre trafic d’entreprise, et publier une stratégie SPF neutre, `?all` :
 
-example.com IN TXT "v=spf1 include:spf.example.com ?all"
+```text
+fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
+```
 
 La stratégie SPF neutre signifie que tout courrier sortant de votre infrastructure d’entreprise passe par une authentification du courrier chez tous les autres destinataires. Le courrier provenant d’expéditeurs que vous ne connaissez pas est considéré comme neutre, ce qui revient presque à ne publier aucun enregistrement SPF.
 
@@ -622,7 +598,7 @@ Une fois que vous avez démarré avec un enregistrement SPF comprenant une strat
 
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>Que se passe-t-il si vous êtes le propriétaire d’une liste de diffusion ?
 
-Voir la section [Scénario courant n°1 - Listes de discussion](#common-scenario-1---discussion-lists).
+Voir la section [scénario courant : listes de discussion](#common-scenario-discussion-lists) plus haut dans cette rubrique.
 
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>Que se passe-t-il si vous êtes un fournisseur d’infrastructure tel qu’un fournisseur de services Internet (ISP), un fournisseur de services de courrier (ESP) ou un service d’hébergement dans le cloud ?
 
