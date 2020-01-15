@@ -1,7 +1,7 @@
 ---
 title: Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates a validé que lorsque Exchange Online et le centre de sécurité et conformité sont configurés comme recommandé, ils répondent aux exigences de stockage pertinentes de règle CFTC 1.31(c)-(d), FINRA règle 4511 et SEC règle 17 a-4. Vous pouvez télécharger l’évaluation.
-ms.openlocfilehash: 60b8d27ed75afbfd6ffc5d8e254738ea62e0d21b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079633"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122423"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4
 
@@ -65,7 +65,7 @@ Vous pouvez verrouiller une stratégie de rétention à l’aide de PowerShell. 
 
 ## <a name="known-limitations"></a>Limitations connues
 
-Nous sommes conscients de quelques limitations importantes dans Exchange Online. Nous travaillons activement sur celles-ci et prévoyons de publier une prise en charge dans ces scénarios en juillet 2019:
+Il existe actuellement quelques limitations dans Exchange Online :
 
 - L’audit au niveau de l’élément n’est pas disponible dans les boîtes aux lettres de groupe Office 365.
 - Les fils de communications ne sont pas disponibles pour les messages de conversation et le canal équipes.
