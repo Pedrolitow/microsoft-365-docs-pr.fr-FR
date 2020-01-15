@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Microsoft 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
-ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a48d47c6b02ebe20ba5fb48470a2efc88aa3dbc7
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806067"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123665"
 ---
 # <a name="overview-of-disposition-reviews"></a>Vue d’ensemble des révisions de destruction
 
@@ -56,18 +56,22 @@ Une révision de disposition peut inclure du contenu dans des boîtes aux lettre
   
 ![Page des dispositions dans le centre de sécurité et conformité](media/Retention-Dispositions-v2-page.png)
 
+
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Configuration de la révision de la disposition en créant une étiquette de rétention
 
 Il s’agit du flux de travail de base pour la configuration d’une révision de la disposition. Notez que ce flux affiche une étiquette de rétention publiée, puis appliquée manuellement par un utilisateur ; une étiquette de rétention déclenchant une révision de disposition peut également être appliquée automatiquement au contenu.
   
 ![Graphique illustrant le flux de fonctionnement de la disposition](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Une révision de disposition est une option lorsque vous créez une étiquette de rétention dans Office 365. Notez que cette option n’est pas disponible dans une stratégie de rétention, mais uniquement dans une étiquette de rétention configurée pour conserver le contenu.
+Une révision de disposition est une option lorsque vous créez une étiquette de rétention dans Office 365. Cette option n’est pas disponible dans une stratégie de rétention, mais uniquement dans une étiquette de rétention configurée pour conserver le contenu.
   
 Pour plus d’informations sur les étiquettes de rétention, voir [vue d’ensemble des étiquettes de rétention](labels.md).
   
 ![Paramètres de rétention d’une étiquette](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
-  
+ 
+> [!NOTE]
+> Lorsque vous spécifiez l’option **informer ces personnes lorsque des éléments sont prêts à être examinés**, spécifiez un groupe de sécurité utilisateur ou à extension messagerie. Les groupes Office 365 ne sont pas pris en charge pour cette option.
+
 ## <a name="disposing-content"></a>Suppression du contenu
 
 Lorsqu’un réviseur est averti par courrier électronique que le contenu est prêt à être révisé, il peut **** accéder à la page de disposition &amp; dans le centre de sécurité et de conformité. Les relecteurs peuvent voir le nombre d’éléments pour chaque étiquette de rétention en attente de destruction, puis sélectionner une étiquette de rétention pour afficher l’ensemble du contenu portant cette étiquette.
@@ -94,9 +98,15 @@ Notez également que toutes les actions de disposition sont auditées. Pour ce f
   
 ## <a name="permissions-for-disposition"></a>Autorisations pour la disposition
 
-Pour accéder à la page de **disposition** , les relecteurs doivent être membres du rôle de **gestion disposition** et du rôle **journaux d’audit en affichage seul** . Nous vous recommandons de créer un nouveau groupe de rôles appelé réviseurs de disposition, d’ajouter ces deux rôles à ce groupe de rôles, puis d’ajouter des membres au groupe de rôles. 
-  
-Pour plus d’informations, consultez [la rubrique accorder aux utilisateurs l’accès &amp; au centre de sécurité conformité Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+Pour accéder à la page de **disposition** , les relecteurs doivent être membres du rôle de **gestion disposition** et du rôle **journaux d’audit en affichage seul** . Nous vous recommandons de créer un nouveau groupe de rôles appelé **Relecteurs de disposition**et d’ajouter ces deux rôles à ce groupe de rôles. 
+
+Spécifique au rôle **journaux d’audit en affichage seul** :
+
+- Étant donné que la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d’audit est une applet de commande Exchange Online, vous devez attribuer ce rôle à des utilisateurs à l’aide du [Centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), plutôt qu’en utilisant la page des **autorisations** dans le centre de sécurité & conformité. Pour obtenir des instructions, consultez la rubrique [gérer des groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+
+- Les groupes Office 365 ne sont pas pris en charge pour ce rôle. Attribuez plutôt des boîtes aux lettres utilisateur, des utilisateurs de messagerie ou des groupes de sécurité à extension messagerie.
+
+Pour obtenir des instructions permettant d’accorder aux utilisateurs le rôle de **gestion de disposition** et de créer votre rôle de **réviseur de disposition** , consultez la rubrique accorder aux utilisateurs l' [accès au centre de sécurité &amp; conformité Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Durée jusqu’à la suppression définitive du contenu supprimé
 

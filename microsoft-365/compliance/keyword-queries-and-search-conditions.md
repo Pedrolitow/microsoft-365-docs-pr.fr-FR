@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et dans SharePoint ou OneDrive entreprise à l’aide de l’outil de recherche de contenu dans le centre de conformité & Compliance Center.  '
-ms.openlocfilehash: d76f92de4b41c7f6f0494af36a7e1aee953b9896
-ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
+ms.openlocfilehash: 2d3b69090d8b19d474e2049c2082516459d18148
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911472"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123655"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -328,6 +328,12 @@ Cet exemple renvoie des messages électroniques ou des réunions de calendrier q
   
  `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
   
+## <a name="special-characters"></a>Caractères spéciaux
+
+Certains caractères spéciaux ne sont pas inclus dans l’index de recherche et, par conséquent, ne peuvent pas faire l’objet d’une recherche. Cela inclut également les caractères spéciaux qui représentent des opérateurs de recherche dans la requête de recherche. Voici une liste de caractères spéciaux qui sont remplacés par un espace vide dans la requête de recherche réelle ou qui provoquent une erreur de recherche.
+
+`+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
+
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Rechercher du contenu de site partagé avec des utilisateurs externes
 
 Vous pouvez également utiliser la fonctionnalité de recherche de contenu dans le centre de sécurité & conformité pour rechercher des documents stockés sur SharePoint et OneDrive entreprise qui ont été partagés avec des personnes extérieures à votre organisation. Ainsi, vous pouvez identifier les informations sensibles ou confidentielles qui sont partagées en dehors de votre organisation. Pour ce faire, vous pouvez utiliser `ViewableByExternalUsers` la propriété dans une requête de mot clé. Cette propriété renvoie des documents ou des sites qui ont été partagés avec des utilisateurs externes à l’aide de l’une des méthodes de partage suivantes : 
@@ -400,21 +406,19 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 ## <a name="search-tips-and-tricks"></a>Conseils et astuces pour la recherche
 
 - Les recherches par Mots clés ne respectent pas la casse. Par exemple, **cat** et **CAT** renvoient les mêmes résultats. 
-    
-- Les opérateurs booléens **and**, **or**, **not**, **near**et **ONEAR** doivent être en majuscules. 
-    
-- Un espace entre deux mots-clés ou deux expressions  `property:value` revient au même que d'utiliser l'opérateur **AND**. Par exemple, `from:"Sara Davis" subject:reorganization` renvoie tous les messages envoyés par Sara Davis qui contiennent le mot Reorganization dans la ligne d’objet. 
-    
-- Utilisez une syntaxe qui correspond `property:value` au format. Les valeurs ne respectent pas la casse et doivent être collées à l'opérateur. S’il y a un espace, la valeur attendue sera une recherche en texte intégral. Par exemple `to: pilarp` , recherche « pilarp » comme mot clé, plutôt que pour les messages qui ont été envoyés à pilarp. 
-    
-- Lorsque vous lancez une recherche sur une propriété de destinataire, telle que To, From, Cc ou Recipients, vous pouvez utiliser une adresse SMTP, un alias ou un nom d'affichage pour désigner un destinataire. Par exemple, vous pouvez saisir pilarp@contoso.com, pilarp ou « Pilar Pinilla ».
-    
-- Vous pouvez utiliser uniquement des recherches par caractères génériques avec préfixe ; par exemple, **Cat\* ** ou **Set\***. Les recherches de suffixe (**\*Cat**), les recherches d’infixe (**\*c t**) et les recherches de sous-chaînes (**\*Cat\***) ne sont pas prises en charge. 
-    
-- Lorsque vous recherchez une propriété, utilisez des guillemets doubles ("") si la valeur de recherche se compose de plusieurs mots. Par exemple `subject:budget Q1` , renvoie les messages qui contiennent le **budget** dans la ligne d’objet et qui contiennent **Q1** Anywhere dans le message ou dans n’importe quelle propriété du message. À `subject:"budget Q1"` l’aide de renvoie tous les messages contenant le **budget Q1** n’importe où dans la ligne d’objet. 
-    
-- Pour exclure de vos résultats de recherche du contenu marqué avec une certaine valeur de propriété, placez un signe moins (-) avant le nom de la propriété. Par exemple, `-from:"Sara Davis"` exclut tous les messages envoyés par Sara Davis.
 
-- Certains caractères spéciaux ne sont pas inclus dans l’index de recherche et, par conséquent, ne peuvent pas faire l’objet d’une recherche, ils incluent les opérateurs de recherche (+-= :) et les caractères suivants, qui sont remplacés par un $null, peuvent provoquer des erreurs si elles sont recherchées. @ #% ^ & ; _ / ?
+- Les opérateurs booléens **and**, **or**, **not**, **near**et **ONEAR** doivent être en majuscules. 
+
+- Un espace entre deux mots-clés ou deux expressions  `property:value` revient au même que d'utiliser l'opérateur **AND**. Par exemple, `from:"Sara Davis" subject:reorganization` renvoie tous les messages envoyés par Sara Davis qui contiennent le mot Reorganization dans la ligne d’objet. 
+
+- Utilisez une syntaxe qui correspond `property:value` au format. Les valeurs ne respectent pas la casse et doivent être collées à l'opérateur. S’il y a un espace, la valeur attendue sera une recherche en texte intégral. Par exemple `to: pilarp` , recherche « pilarp » comme mot clé, plutôt que pour les messages qui ont été envoyés à pilarp. 
+
+- Lorsque vous lancez une recherche sur une propriété de destinataire, telle que To, From, Cc ou Recipients, vous pouvez utiliser une adresse SMTP, un alias ou un nom d'affichage pour désigner un destinataire. Par exemple, vous pouvez saisir pilarp@contoso.com, pilarp ou « Pilar Pinilla ».
+
+- Vous pouvez utiliser uniquement des recherches par caractères génériques avec préfixe ; par exemple, **Cat\* ** ou **Set\***. Les recherches de suffixe (**\*Cat**), les recherches d’infixe (**\*c t**) et les recherches de sous-chaînes (**\*Cat\***) ne sont pas prises en charge.
+
+- Lorsque vous recherchez une propriété, utilisez des guillemets doubles ("") si la valeur de recherche se compose de plusieurs mots. Par exemple `subject:budget Q1` , renvoie les messages qui contiennent le **budget** dans la ligne d’objet et qui contiennent **Q1** Anywhere dans le message ou dans n’importe quelle propriété du message. À `subject:"budget Q1"` l’aide de renvoie tous les messages contenant le **budget Q1** n’importe où dans la ligne d’objet.
+
+- Pour exclure de vos résultats de recherche du contenu marqué avec une certaine valeur de propriété, placez un signe moins (-) avant le nom de la propriété. Par exemple, `-from:"Sara Davis"` exclut tous les messages envoyés par Sara Davis.
 
 - Vous pouvez exporter des éléments en fonction du type de message. Par exemple, pour exporter des conversations Skype et des conversations dans Microsoft Teams, utilisez `kind:im`la syntaxe. Pour renvoyer uniquement les messages électroniques, utilisez `kind:email`. Pour renvoyer des conversations, des réunions et des appels dans Microsoft teams `kind:microsoftteams`, utilisez.
