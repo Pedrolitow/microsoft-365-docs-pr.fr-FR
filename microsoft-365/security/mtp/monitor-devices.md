@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 37e273a3e01177dec23b668ecb8a6301011ab88d
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: e6a12f361a824a9abf96b92e27ae99f0309c6d6b
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966902"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122443"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les appareils dans le centre de sécurité Microsoft 365
 
@@ -29,7 +29,7 @@ Obtenez des alertes à jour sur l’activité de violation et d’autres menaces
 
 ### <a name="monitor-high-impact-alerts"></a>Surveiller les alertes à fort impact
 
-Chaque alerte Microsoft Defender ATP a une gravité élevée, moyenne, faible ou informatif qui indique son impact potentiel sur votre réseau si elle est sans assistance.  
+Chaque alerte Microsoft Defender ATP a une gravité correspondante (élevé, moyen, faible ou informatif) indiquant son impact potentiel sur votre réseau si vous ne l’avez pas fait sans assistance.  
 
 Utilisez la carte de **gravité des alertes de périphérique** pour vous concentrer spécifiquement sur les alertes plus sévères et susceptibles de nécessiter une réponse immédiate. À partir de cette carte, vous pouvez consulter plus d’informations sur le portail du centre de sécurité Microsoft Defender.
 
@@ -47,9 +47,9 @@ La carte sources de détection des alertes de **périphérique** affiche la rép
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Comprendre les types de menaces déclenchant des alertes
 
-Microsoft Defender ATP trie chaque alerte dans une catégorie représentant une certaine étape de la chaîne d’attaque ou d’un type de composant de menace. Par exemple, l’activité de menace détectée peut être classée en mouvement latéral pour indiquer que l’activité impliquait une tentative d’atteindre d’autres appareils sur le réseau et qu’elle a vraisemblablement été effectuée après que des pirates ont acquis un premier sens. Lorsqu’il est détecté, un composant de menace peut être classé largement comme un logiciel malveillant ou plus spécifiquement comme ransomware, un vol d’informations d’identification ou d’autres types de logiciels malveillants ou indésirables.
+Microsoft Defender ATP trie chaque alerte dans une catégorie représentant une certaine étape de la chaîne d’attaque ou d’un type de composant de menace. Par exemple, une activité de menace détectée peut être classée « mouvement latéral » pour indiquer qu’il y a eu une tentative d’accès à d’autres appareils sur le réseau. L’activité a également lieu après que des attaquants ont gagné un premier. Lorsqu’il est détecté, un composant de menace peut être classé globalement sous la forme de programmes malveillants, ou plus spécifiquement sous forme de ransomware, de découpage d’informations d’identification ou d’autres types de logiciels malveillants ou indésirables.
 
-La carte des **catégories de menaces du périphérique** affiche la répartition des alertes dans ces catégories. Vous pouvez utiliser ces informations pour identifier les activités de menace, telles que les tentatives de vol d’informations d’identification, ce qui peut avoir un impact plus significatif par rapport aux tentatives d’ingénierie sociale, par exemple. Vous pouvez également l’utiliser pour surveiller les menaces pouvant être destructrices telles que les ransomware.
+La carte des **catégories de menaces du périphérique** affiche la répartition des alertes dans ces catégories. Vous pouvez utiliser ces informations pour identifier les activités de menace, telles que les tentatives de vol d’informations d’identification, qui peuvent avoir un impact supérieur par rapport aux tentatives d’ingénierie sociale. Vous pouvez également utiliser ces informations pour surveiller les menaces pouvant être destructrices telles que les ransomware.
 
 ![Carte des catégories de menaces de périphérique](../images/device-threat-categories.png)
 
@@ -76,14 +76,14 @@ Remarque : dans certains cas, les informations de classification ne sont pas di
 
 En plus de déterminer si une alerte est true ou false au cours de la résolution, votre équipe de sécurité peut fournir une détermination indiquant le type d’activité normale ou malveillante détectée lors de la validation de l’alerte.
 
-La carte de **détermination des alertes de périphérique** indique la détermination fournie pour chaque alerte, en particulier :
+La carte de **détermination des alertes de périphérique** indique la détermination fournie pour chaque alerte.
 
-* **Apt** Advanced persistent Threat, indiquant que le composant de menace ou d’activité détecté fait partie d’une violation sophistiquée conçue pour se faire une brèche dans le réseau affecté  
-* Fichier ou **code malveillant malveillant**
-* Activité normale **du personnel de sécurité** effectuée par le personnel de sécurité
-* Activité de **test de sécurité** ou composants conçus pour simuler les menaces réelles et qui doivent déclencher des capteurs de sécurité et générer des alertes
-* Les applications **logicielles indésirables** et d’autres logiciels qui ne sont pas considérés comme malveillants, mais enfreignent les normes de stratégie ou d’utilisation acceptable
-* **Autres** dédéterminations qui ne tombent pas sous les types fournis
+* **Apt**: menace persistante avancée, indiquant que le composant de menace ou d’activité détecté fait partie d’une violation sophistiquée conçue pour se faire une brèche dans le réseau affecté  
+* **Programme malveillant**: fichier ou code malveillant
+* **Personnel de sécurité**: activité normale effectuée par le personnel de sécurité
+* **Test de sécurité**: activité ou composants destinés à simuler les menaces réelles et devant déclencher des alertes de sécurité et générer des alertes
+* **Logiciels indésirables**: applications et autres logiciels qui ne sont pas considérés comme malveillants, mais enfreignent une stratégie ou des normes d’utilisation acceptables.
+* **Autres**: toute autre détermination qui ne relève pas des types fournis
 
 À partir de cette carte, vous pouvez consulter plus d’informations dans le centre de sécurité Microsoft Defender.
 
@@ -116,31 +116,31 @@ Les données d’appareil apportées Intune incluent :
 
 ### <a name="discover-devices-with-malware-detections"></a>Détecter les appareils avec des détections de programmes malveillants
 
-**Périphériques les détections de programmes malveillants d’appareils** fournissent le nombre d’appareils apportés Intune avec des programmes malveillants qui n’ont pas été entièrement résolus en raison d’actions en attente un redémarrage, une analyse complète ou des actions utilisateur manuelles ou si l’action de correction ne s’est pas exécutée correctement.
+Les **détections de programmes malveillants d’appareils** fournissent le nombre d’appareils apportés Intune avec des programmes malveillants qui n’ont pas été entièrement résolus. Cela peut être dû à des actions en attente, un redémarrage, une analyse complète, des actions utilisateur manuelles ou si l’action de correction ne s’est pas terminée correctement.
 
 ![Carte de détection des programmes malveillants d’appareils](../images/device-malware-detections.png)
 
 ### <a name="understand-the-types-of-malware-detected"></a>Comprendre les types de programmes malveillants détectés
 
-**Types de programmes malveillants sur les appareils** affiche différents types de programmes malveillants qui ont été détectés sur les appareils intégrés dans Intune. Vous pouvez examiner chaque type dans le centre de sécurité Microsoft 365.
+**Types de programmes malveillants sur les appareils** Affichez les différents types de programmes malveillants qui ont été détectés sur les appareils intégrés dans Intune. Vous pouvez examiner chaque type dans le centre de sécurité Microsoft 365.
 
 ![Types de programmes malveillants sur la carte des appareils](../images/types-of-malware-on-devices.png)
 
 ### <a name="understand-the-specific-malware-detected-on-your-devices"></a>Comprendre le programme malveillant spécifique détecté sur vos appareils
 
-**Programmes malveillants sur les appareils** fournit une liste des programmes malveillants spécifiques détectés sur vos appareils.
+Les **programmes malveillants sur les appareils** fournissent une liste de programmes malveillants spécifiques détectés sur vos appareils.
 
 ![Carte de programmes malveillants sur les appareils](../images/malware-on-devices.png)
 
 ### <a name="understand-which-devices-have-the-most-malware"></a>Comprendre quels appareils ont le plus de programmes malveillants
 
-**Périphériques avec des détections de programmes malveillants** indique quels périphériques ont le plus de détections de programmes malveillants. dans le centre de sécurité Microsoft 365, vous pouvez rechercher si un programme malveillant est actif, qui utilise l’appareil et son statut de gestion dans Intune.
+Les **appareils avec des détections de programmes malveillants** indiquent quels appareils ont le plus de détections de programmes malveillants. dans le centre de sécurité Microsoft 365, vous pouvez rechercher si un programme malveillant est actif, qui utilise l’appareil et son statut de gestion dans Intune.
 
 ![Carte périphériques avec des détections de programmes malveillants](../images/devices-with-malware-detections.png)
 
 ### <a name="understand-which-users-have-devices-with-the-most-malware"></a>Comprendre quels sont les utilisateurs ayant des appareils avec le plus de programmes malveillants
 
-**Les utilisateurs disposant de détections de programmes malveillants** affichent les utilisateurs avec des appareils qui avaient le plus de détections de programmes malveillants. dans le centre de sécurité Microsoft 365, vous pouvez voir le nombre d’appareils affectés à chaque utilisateur et des informations sur chaque appareil et le type de programmes malveillants.
+**Les utilisateurs disposant de détections de programmes malveillants** affichent les utilisateurs avec des appareils ayant eu le plus de détections de programmes malveillants. Dans le centre de sécurité Microsoft 365, vous pouvez voir le nombre d’appareils affectés à chaque utilisateur et des informations sur chaque appareil et le type de programmes malveillants.
 
 ![Utilisateurs avec carte de détection des programmes malveillants](../images/users-with-malware-detections.png)
 
@@ -154,9 +154,9 @@ La carte **Règles de réduction de la surface d’attaque** offre une vue d’e
 
 La barre supérieure de la carte affiche le nombre total d’appareils figurant dans les modes de déploiement suivants :
 
-* Appareils **en mode bloc** avec au moins une règle configurée pour bloquer l’activité détectée
-* Les appareils **en mode audit** sans règles définies pour bloquer les activités détectées, mais ont au moins un ensemble de règles pour auditer les activités détectées  
-* **Désactiver** les périphériques lorsque toutes les règles ASR sont désactivées
+* **Mode blocage**: appareils avec au moins une règle configurée pour bloquer l’activité détectée
+* **Mode audit**: appareils pour lesquels aucune règle n’est définie pour bloquer les activités détectées, mais au moins un ensemble de règles pour auditer les activités détectées  
+* **Désactivé**: les appareils dont toutes les règles de récupération automatique sont désactivées
 
 La partie inférieure de cette carte présente les paramètres par règle sur tous vos appareils. Chaque barre indique le nombre d’appareils configurés pour bloquer ou auditer la détection ou pour lesquels la règle est complètement désactivée.
 
@@ -168,10 +168,10 @@ Pour afficher des informations détaillées sur les détections de règles ASR s
 
 Le graphique en haut de la page affiche les détections dans le temps de détections de pile qui ont été bloquées ou auditées. Le tableau en bas répertorie les détections les plus récentes. Utilisez les informations suivantes sur le tableau pour comprendre la nature des détections :
 
-* **Fichier détecté** le fichier, généralement un script ou un document, dont le contenu a déclenché l’activité d’attaque suspecte
-* Nom de la **règle** décrivant les activités d’attaque la règle est conçue pour être interceptée. En savoir plus sur les règles ASR existantes
-* Application **source** application qui a chargé ou exécuté du contenu qui déclenche l’activité d’attaque suspectée. Il peut s’agir d’une application légitime, telle qu’un navigateur Web, une application Office ou un outil système tel que PowerShell
-* **Publisher** fournisseur qui a publié l’application source
+* **Fichier détecté**: le fichier, généralement un script ou un document, dont le contenu a déclenché l’activité d’attaque présumée.
+* **Règle**: nom décrivant les activités d’attaque la règle est conçue pour être interceptée. En savoir plus sur les règles ASR existantes
+* Application **source**: l’application qui a chargé ou exécuté le contenu qui déclenche l’activité d’attaque présumée. Il peut s’agir d’une application légitime, telle qu’un navigateur Web, une application Office ou un outil système tel que PowerShell
+* **Publisher**: fournisseur qui a publié l’application source
 
 ### <a name="review-device-asr-rule-settings"></a>Vérifier les paramètres de règle ASR de l’appareil
 
@@ -212,6 +212,7 @@ MiscEvents
 ```
 
 #### <a name="check-files-for-exclusion"></a>Vérifier les fichiers pour exclusion
+
 Avant d’exclure un fichier de la récupération automatique du système, nous vous recommandons d’inspecter le fichier afin de déterminer s’il n’est pas malveillant.
 
 Pour passer en revue un fichier, utilisez la [page informations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files) sur le fichier sur le centre de sécurité Microsoft Defender. La page fournit des informations de récurrence ainsi que le ratio de détection antivirus VirusTotal. Vous pouvez également utiliser la page pour envoyer le fichier pour une analyse approfondie.
