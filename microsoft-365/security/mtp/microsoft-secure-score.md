@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
-ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
+ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41012187"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210149"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -50,7 +50,7 @@ La plupart sont évaluées de manière binaire : Si vous implémentez l’actio
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans le score de sécurité
 
-Il existe actuellement des recommandations pour Office 365 (notamment SharePoint Online, Exchange Online, OneDrive entreprise, la protection des informations Microsoft, etc.), Azure AD, Intune et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité, tels que Azure ATP et Microsoft Defender ATP, sont bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais il s’agit d’une base de référence correcte. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par un tiers.
+Il existe actuellement des recommandations pour Office 365 (notamment SharePoint Online, Exchange Online, OneDrive entreprise, la protection des informations Microsoft, etc.), Azure AD et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité, tels que Azure ATP et Microsoft Defender ATP, sont bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais il s’agit d’une base de référence correcte. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par un tiers.
 
 ## <a name="required-permissions"></a>Autorisations requises
 
@@ -136,16 +136,53 @@ Microsoft Secure score est un résumé numérique de votre position de sécurit�
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité et améliore la convivialité, nous apportons des modifications dans le futur proche. Votre score et le score maximal possible seront modifiés. Toutefois, cela n’implique pas de modification de votre position de sécurité.
 
+### <a name="removing-improvement-actions-from-intune"></a>Suppression des actions d’amélioration d’Intune
+
+Après une évaluation des actions de Microsoft Secure scores improved fournies par Intune, il a été décidé de ne pas fournir une représentation utile de la position de sécurité des appareils dans les organisations. Au lieu de se concentrer sur les stratégies, nous nous efforcerons de mettre en place des contrôles de sécurité qui évaluent directement l’état de configuration des appareils.
+
+Les actions d’amélioration d’Intune suivantes seront supprimées :
+
+- Activer la gestion des appareils mobiles Microsoft Intune
+- Créer une stratégie de conformité Microsoft Intune pour Android
+- Créer une stratégie de conformité Microsoft Intune pour Android pour le travail
+- Créer une stratégie de protection des applications Microsoft Intune pour Android
+- Créer une stratégie de protection des applications Microsoft Intune pour iOS
+- Marquer les appareils sans aucune stratégie de conformité Microsoft Intune attribuée comme non conforme
+- Créer une stratégie de conformité Microsoft Intune pour iOS
+- Créer une stratégie de conformité Microsoft Intune pour macOS
+- Créer une stratégie de conformité Microsoft Intune pour Windows
+- Créer un profil de configuration Microsoft Intune pour Android
+- Créer un profil de configuration Microsoft Intune pour Android pour le travail
+- Créer un profil de configuration Microsoft Intune pour macOS
+- Créer un profil de configuration Microsoft Intune pour iOS
+- Créer un profil de configuration Microsoft Intune pour Windows
+- Activer la détection jailbreak améliorée dans Microsoft Intune
+- Exiger l’application des correctifs sur tous les appareils, les antivirus et les pare-feu activés
+- Activer l’intégration de Windows Defender ATP dans Microsoft Intune
+- Créer une stratégie de protection des informations Windows Microsoft Intune
+- Exiger que tous les appareils disposent de configurations de sécurité avancées
+- Vérifier toutes les semaines les périphériques bloqués
+
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable
+
+Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons l’action d’amélioration suivante.
+
+- Activer l’enregistrement des données d’audit
+- Découverte des applications informatiques de clichés instantanés risquées et non conformes
+- Passer en revue les autorisations & bloquer les applications OAuth à risque connectées à votre environnement
+
 ### <a name="mfa-improvement-action-updates"></a>Mises à jour de l’action d’amélioration MFA
 
 Pour refléter la nécessité pour les entreprises de garantir la sécurité maximale lors de l’application des stratégies qui fonctionnent avec leur entreprise, le score de sécurité Microsoft supprime trois actions d’amélioration axées sur l’authentification multifacteur et en ajoutant deux.
 
 Les trois qui seront supprimés :
+
 - Inscrire tous les utilisateurs pour l’authentification multifacteur
 - Exiger l’authentification multifacteur pour tous les utilisateurs
 - Exiger l’authentification multifacteur pour les rôles privilège Azure AD
 
 Nouvelles actions d’amélioration :
+
 - S’assurer que tous les utilisateurs peuvent effectuer l’authentification multifacteur pour un accès sécurisé
 - Exiger MFA pour les rôles d’administration
 

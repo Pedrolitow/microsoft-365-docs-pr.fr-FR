@@ -1,7 +1,7 @@
 ---
 title: Tableau EmailEvents dans le schéma de repérage avancé
 description: En savoir plus sur les événements associés aux courriers électroniques Office 365 dans le tableau EmailEvents du schéma de repérage avancé
-keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, EmailEvents, ID de message réseau, expéditeur, destinataire, ID pièce jointe, nom de la pièce jointe, classement des programmes malveillants, verdict d’hameçonnage, nombre de pièces jointes, nombre de liens, nombre d'url
+keywords: chasse avancée, recherche de menace, recherche dans les menaces de la cybercriminalité, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, EmailEvents, ID de message réseau, expéditeur, destinataire ID de la pièce jointe, nom de la pièce jointe, verdict de programmes malveillants, décompte des pièces jointes, nombre d’URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 43d30772fa756369971bde747825028b50e9540b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808709"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210359"
 ---
 # <a name="emailevents"></a>EmailEvents
 

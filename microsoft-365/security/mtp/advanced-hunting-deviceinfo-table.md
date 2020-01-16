@@ -1,7 +1,7 @@
 ---
 title: Table DeviceInfo dans le schéma de chasse avancé
 description: En savoir plus sur le système d’exploitation, le nom de l’ordinateur et d’autres informations sur l’ordinateur dans le tableau DeviceInfo du schéma de chasse avancé
-keywords: chasse avancée, recherche de menace, recherche de menace informatique, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, MachineInfo, DeviceInfo, appareil, ordinateur, se, plateforme, utilisateurs
+keywords: chasse avancée, recherche de menace, recherche dans les menaces de la cybercriminalité, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, MachineInfo, DeviceInfo, appareil, ordinateur, se, plateforme , les utilisateurs
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1141447de9b7ac714fb200dab56c4c2e8d75a05d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4c8c5cef3ba99339176086ada055d266f92c30cf
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809289"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210446"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -37,18 +37,18 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `DeviceId` | chaîne | Identificateur unique de la machine dans le service |
-| `DeviceName` | chaîne | Nom de domaine complet (FQDN) de la machine |
-| `ClientVersion` | chaîne | Version de l’agent de point de terminaison ou du capteur exécuté sur l’ordinateur |
-| `PublicIP` | chaîne | Adresse IP publique utilisée par l’ordinateur intégré pour se connecter au service ATP de Microsoft Defender. Il peut s’agir de l’adresse IP de l’ordinateur lui-même, d’un périphérique NAT ou d’un proxy. |
+| `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
+| `ClientVersion` | string | Version de l’agent de point de terminaison ou du capteur exécuté sur l’ordinateur |
+| `PublicIP` | string | Adresse IP publique utilisée par l’ordinateur intégré pour se connecter au service ATP de Microsoft Defender. Il peut s’agir de l’adresse IP de l’ordinateur lui-même, d’un périphérique NAT ou d’un proxy. |
 | `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique les systèmes d’exploitation spécifiques, y compris les variantes au sein de la même famille, telles que Windows 10 et Windows 7 |
-| `OSBuild` | chaîne | Version du système d’exploitation en cours d’exécution sur l’ordinateur |
+| `OSBuild` | string | Version du système d’exploitation en cours d’exécution sur l’ordinateur |
 | `IsAzureADJoined` | booléen | Indicateur booléen indiquant si l’ordinateur est joint à Azure Active Directory |
-| `LoggedOnUsers` | chaîne | Liste de tous les utilisateurs qui ont ouvert une session sur l’ordinateur au moment de l’événement au format de tableau JSON |
-| `RegistryDeviceTag` | chaîne | Balise d’ordinateur ajoutée via le registre |
+| `LoggedOnUsers` | string | Liste de tous les utilisateurs qui ont ouvert une session sur l’ordinateur au moment de l’événement au format de tableau JSON |
+| `RegistryDeviceTag` | string | Balise d’ordinateur ajoutée via le registre |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et timestamp |
-| `OSVersion` | chaîne | Version du système d’exploitation s’exécutant sur la machine |
-| `MachineGroup` | chaîne | Groupe d’ordinateurs de l’ordinateur. Ce groupe est utilisé par le contrôle d’accès basé sur un rôle pour déterminer l’accès à l’ordinateur. |
+| `OSVersion` | string | Version du système d’exploitation s’exécutant sur la machine |
+| `MachineGroup` | string | Groupe d’ordinateurs de l’ordinateur. Ce groupe est utilisé par le contrôle d’accès basé sur un rôle pour déterminer l’accès à l’ordinateur. |
 
 ## <a name="related-topics"></a>Sujets associés
 - [Repérage proactif des menaces](advanced-hunting-overview.md)

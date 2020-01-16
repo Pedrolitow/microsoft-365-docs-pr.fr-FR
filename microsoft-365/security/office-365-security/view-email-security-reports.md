@@ -1,9 +1,9 @@
 ---
-title: Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
+title: Afficher les rapports de sécurité du courrier &amp; électronique dans le centre de sécurité conformité, les utilisateurs compromis, le chiffrement, l’état de protection contre les menaces, les détections de programmes malveillants, les logiciels malveillants principaux, la détection du courrier indésirable, l’envoi et la réception de messages, l’utilisateur a signalé des rapports, détecter, données de sécurité
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/29/2019
+ms.date: 01/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: 70eceb8d7afa227027b71d475aa22b2151f2dea6
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: c44944c8f392b2df8cfe4b9e1741ba4b7ea13382
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112361"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209949"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 
@@ -29,7 +29,8 @@ Un grand nombre de rapports sont disponibles dans [le &amp; Centre de sécurité
 ![Tableau de bord où se trouve le fonctionnement de la protection avancée contre les menaces](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Vos rapports de sécurité de messagerie incluent les éléments suivants :
-- [Rapport de chiffrement](#encryption-report) (nouveau !)
+- [Rapport sur les utilisateurs compromis (**nouveau !**)](#compromised-users-report-new)
+- [Rapport de chiffrement](#encryption-report)
 - [Rapport sur l’état de la protection contre les menaces](#threat-protection-status-report) 
 - [Rapport de détection des programmes malveillants](#malware-detections-report) 
 - [Premier rapport de programmes malveillants](#top-malware-report)
@@ -38,10 +39,17 @@ Vos rapports de sécurité de messagerie incluent les éléments suivants :
 - [Rapport de détections de courrier indésirable](#spam-detections-report)
 - [Rapport de courrier électronique envoyé et reçu](#sent-and-received-email-report)
 - [Rapport sur les messages signalés par l’utilisateur](#user-reported-messages-report)
-    
+
+
+## <a name="compromised-users-report-new"></a>Rapport sur les utilisateurs compromis (**nouveau !**) 
+
+Ce rapport, accessible à tous les utilisateurs disposant d’Exchange Online Protection, indique le nombre de comptes d’utilisateur marqués comme suspects ou utilisateurs restreints, données particulièrement utiles en tant que comptes entrez l’un des États indiquant que le compte d’utilisateur peut être problématique, voire compromis. Dans le cas d’une utilisation fréquente, le rapport de l’utilisateur compromis peut repérer des pics, voire des tendances, dans des comptes marqués dans des États suspects ou restreints, donnant des preuves à un problème de sécurité et du bien-être de votre client.
+
+![Rapport des utilisateurs compromis tel qu’il apparaît dans Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="encryption-report"></a>Rapport de chiffrement
 
-(**Nouveau !**) Le **rapport de chiffrement** affiche des informations sur les messages électroniques qui ont été chiffrés, via les stratégies de votre organisation ou par le biais de contrôles utilisateur final. L’équipe de sécurité de votre organisation peut utiliser les informations contenues dans ce rapport pour identifier des modèles et appliquer ou ajuster de façon proactive des stratégies pour les messages électroniques sensibles.
+Le **rapport de chiffrement** affiche des informations sur les messages électroniques qui ont été chiffrés, via les stratégies de votre organisation ou par le biais de contrôles utilisateur final. L’équipe de sécurité de votre organisation peut utiliser les informations contenues dans ce rapport pour identifier des modèles et appliquer ou ajuster de façon proactive des stratégies pour les messages électroniques sensibles.
 
 Pour afficher ce rapport, accédez au **rapport de chiffrement**du **tableau de bord** \> des **rapports** \> dans le centre de sécurité & conformité.
 
