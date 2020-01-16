@@ -3,7 +3,7 @@ title: Expéditeur non vérifié
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 07/11/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
-ms.openlocfilehash: 4c8b8a0711ab66607d0db5923c1115c436537bd0
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 65b9d1dd3eb1a764867103710448255be96cd183
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970930"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173510"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
 
@@ -44,21 +44,21 @@ Les messages qui ne parvient pas à s’authentifier ne sont pas tous malveillan
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Comment gérer les messages qui reçoivent le traitement de l’expéditeur non vérifié 
 
-Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via le centre de sécurité & conformité. 
+Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via le centre de sécurité & conformité d’Office 365.
 
-- Dans le centre de conformité Office 365 Security &, les administrateurs globaux ou de sécurité peuvent activer ou désactiver la fonctionnalité via la protection contre l’usurpation d’identité dans le cadre de la stratégie anti-hameçonnage. En outre, elle peut être gérée via la cmdlet « Set-Antiphishpolicy permet ». Pour plus d’informations, consultez la rubrique [anti-phishing protection in Office 365](anti-phishing-protection.md) et [Set-antiphishpolicy permet](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
+- Dans le centre de sécurité & conformité, les administrateurs globaux ou de sécurité peuvent activer ou désactiver la fonctionnalité via la protection contre l’usurpation d’identité dans le cadre de la stratégie anti-hameçonnage. En outre, vous pouvez utiliser la cmdlet **Set-antiphishpolicy permet** dans Exchange Online PowerShell. Pour plus d’informations, consultez la rubrique [anti-hameçonnage protection dans Office 365](anti-phishing-protection.md) et [Set-antiphishpolicy permet](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
 
     ![Modification des expéditeurs non authentifiés dans l’interface graphique.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - Si un administrateur a identifié un faux positif et qu’un expéditeur ne doit pas recevoir le traitement de l’expéditeur non vérifié, vous pouvez effectuer l’une des actions suivantes pour ajouter l’expéditeur à la liste des usurpations d’identité usurpée :
 
-  - Ajoutez la paire de domaines par le biais de la vue d’aide à la décision. Pour plus d’informations, consultez la rubrique [procédure pas à pas : usurpation](walkthrough-spoof-intelligence-insight.md)d’information.
+  - Ajoutez la paire de domaines par le biais de la vue d’aide à la décision. Pour plus d’informations, consultez la [procédure pas à pas : usurpation](walkthrough-spoof-intelligence-insight.md)d’information.
 
-  - Ajoutez la paire de domaines via l’applet de commande PhishFilterPolicy. Pour plus d’informations, reportez-vous à [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) et à [configurer les stratégies anti-hameçonnage et anti-hameçonnage d’Office 365 ATP](set-up-anti-phishing-policies.md).
+  - Ajoutez la paire de domaines via la cmdlet **Set-PhishFilterPolicy** dans Exchange Online PowerShell. Pour plus d’informations, reportez-vous à [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) et à [configurer les stratégies anti-hameçonnage et anti-hameçonnage d’Office 365 ATP](set-up-anti-phishing-policies.md).
 
-En outre, nous n’appliquons pas le traitement de l’expéditeur non vérifié s’il a été remis à la boîte de réception via une liste verte d’administration, y compris les règles de transport de messagerie (ETR), la liste des domaines approuvés (stratégie anti-spam), la liste des expéditeurs approuvés ou un utilisateur a défini cet utilisateur comme « expéditeur approuvé » dans son utilitaire.
+De plus, nous n’appliquons pas le traitement de l’expéditeur non vérifié si le message a été remis à la boîte de réception via des règles de flux de messagerie (également appelées règles de transport), une liste de domaines fiables (stratégie anti-courrier indésirable) ou une liste des expéditeurs approuvés.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Quels critères les Outlook.com et Outlook sur le Web utilisent-ils pour ajouter les propriétés «  ? » et « via » ?
 
@@ -76,7 +76,7 @@ Pour la balise via : en tant qu’expéditeur, vous devez vous assurer que le d
 
 Pas nécessairement. Outlook.com et Outlook sur le Web peuvent avoir d’autres propriétés dans le message pour authentifier l’expéditeur.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Protéger votre compte de messagerie Outlook.com](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 

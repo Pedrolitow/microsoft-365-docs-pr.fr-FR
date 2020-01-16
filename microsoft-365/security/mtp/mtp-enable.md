@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b1832e2080c3178837f43cbfd45366fc4d48322d
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970852"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173820"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
 
@@ -41,7 +41,7 @@ Les clients disposant d’une licence Microsoft 365 E5 ou équivalente peuvent u
 ## <a name="start-using-the-service"></a>Commencez à utiliser le service
 L’activation du service de Protection Microsoft contre les menaces agrège les données des différents services intégrés. Les données sont traitées et stockées de façon centralisée pour identifier les nouvelles perspectives et rendre possible les flux de travail de réponse centralisée.
 
-Avant de désactiver le service, le Centre de sécurité Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)) n’affiche pas les options **incidents** et **Centre de notifications** dans le menu.
+Avant d’activer le service, le centre de sécurité Microsoft 365 ([Security.Microsoft.com](https://security.microsoft.com)) n’affiche pas les **incidents** ni les options du **Centre de notifications** dans le menu.
 
 ![Image du menu Centre de sécurité Microsoft 365 sans les fonctionnalités de Protection Microsoft contre les menaces](../images/mtp-off.png)
 *Centre de sécurité Microsoft 365 avec la protection Microsoft contre les menaces désactivée*
@@ -71,7 +71,7 @@ Les données seront définitivement supprimées et les fonctionnalités correspo
 
 ## <a name="get-assistance"></a>Obtenir de l'aide
 
-Le personnel Microsoft peut vous aider à fournir ou à déprovisionner le service et les ressources associées sur votre locataire. Si vous souhaitez obtenir de l’aide, [veuillez contacter le support premier](https://go.microsoft.com/fwlink/?LinkID=733758).
+Le personnel Microsoft peut vous aider à fournir ou à déprovisionner le service et les ressources associées sur votre locataire. Pour obtenir de l’aide, sélectionnez **besoin d’aide ?** dans le centre de sécurité Microsoft 365. Lorsque vous décrivez vos préoccupations, mentionnez « protection contre les menaces Microsoft ».
 
 ## <a name="related-topics"></a>Sujets associés
 
