@@ -15,18 +15,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e67ff2b28a6dec741b2ad7af5179dca226fb86ad
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962571"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230212"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gérer les tickets via ServiceNow
 
 Le centre de sécurité Microsoft 365 est optimisé grâce à la capacité à créer et suivre en mode natif des tickets dans ServiceNow. Les administrateurs de la sécurité peuvent envoyer une action d’amélioration de la [note sécurisée Microsoft](microsoft-secure-score.md) directement à ServiceNow et créer un ticket. Les tickets de gestion des modifications et de gestion des incidents peuvent être créés.
 
-## <a name="prerequisites"></a>Conditions requises
+## <a name="prerequisites"></a>Conditions préalables
 
 Avoir accès au centre de sécurité Microsoft 365 et à une instance ServiceNow avec :  
 
@@ -109,15 +109,19 @@ Définissez les configurations des tables « registres des applications » sur
 
 Accédez à la table des registres des applications (menu > système OAuth > application Registry) dans ServiceNow et recherchez l’entité OAuth créée par vous (nom que vous lui avez attribué).
 
-### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Procédure de validation de l’utilisateur d’intégration créé avec la liste de vérification d’installation pour le connecteur de sécurité & conformité Microsoft 365
-
-Accédez à la table utilisateurs (menu > l’administration des utilisateurs > les utilisateurs) dans ServiceNow et recherchez l’utilisateur d’intégration que vous avez créé (nom que vous lui avez attribué).
+### <a name="logging-in-as-the-integration-user"></a>Connexion en tant qu’utilisateur de l’intégration
 
 Avant d’autoriser la connexion entre le centre de sécurité Microsoft 365 et ServiceNow, veillez à utiliser le nom d’utilisateur et le mot de passe d’intégration que vous avez créés lors des étapes d’installation. N’utilisez pas vos informations d’identification personnelles.
 
-### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>L’installation est terminée, mais ne vois pas les tickets et ne peut pas partager
+1. Accédez à la page Authorization (autorisation) dans ServiceNow.
+2. Si vous êtes connecté avec vos informations d’identification personnelles, sélectionnez le lien qui ne se trouve **pas** dans le coin supérieur droit.
+3. Connectez-vous à ServiceNow en tant qu’utilisateur d’intégration que vous avez créé précédemment à partir de la liste de vérification d’installation.  
+4. Sélectionnez **autoriser** dans la page ServiceNow pour demander si le connecteur sécurité + conformité peut se connecter à votre compte ServiceNow.
+5. Suivez les étapes de configuration.
 
-Si les étapes d’installation et de configuration sont terminées, mais que vous ne voyez pas les cartes ServiceNow sur la page d’accueil et que vous ne pouvez pas partager de ServiceNow à partir du score de sécurité https://security.microsoft.com/ticketProvisioningMicrosoft, vérifiez l’état de la page de mise en service sur. Sélectionnez **Enregistrer** et revenir à la page d’accueil. Les cartes doivent apparaître.
+### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Procédure de validation de l’utilisateur d’intégration créé avec la liste de vérification d’installation pour le connecteur de sécurité & conformité Microsoft 365
+
+Accédez à la table utilisateurs (menu > l’administration des utilisateurs > les utilisateurs) dans ServiceNow et recherchez l’utilisateur d’intégration que vous avez créé (nom que vous lui avez attribué).
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>Votre entreprise a activé l’authentification unique, ce qui vous empêche de vous connecter à ServiceNow via le centre de sécurité Microsoft 365
 
@@ -135,3 +139,7 @@ Si votre entreprise a activé l’authentification unique et que vous recevez un
 
 1. Créez un utilisateur avec des privilèges d’administrateur de sécurité dans Azure Active Directory. L’utilisateur doit avoir les mêmes nom et adresse de messagerie que l’utilisateur d’intégration que vous avez créé à partir de la liste de vérification d’installation. Vous pouvez supprimer le rôle d’administrateur de sécurité une fois la connexion et la connexion terminées.
 2. Connectez-vous au centre de sécurité Microsoft 365 en tant qu’utilisateur et suivez les étapes de configuration.
+
+### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>L’installation est terminée, mais ne vois pas les tickets et ne peut pas partager
+
+Si les étapes d’installation et de configuration sont terminées, mais que vous ne voyez pas les cartes ServiceNow sur la page d’accueil et que vous ne pouvez pas partager de ServiceNow à partir du score de sécurité https://security.microsoft.com/ticketProvisioningMicrosoft, vérifiez l’état de la page de mise en service sur. Sélectionnez **Enregistrer** et revenir à la page d’accueil. Les cartes doivent apparaître.
