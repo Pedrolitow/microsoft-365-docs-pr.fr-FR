@@ -5,7 +5,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/01/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: c62db0d77ed805c607e79bf25cb9816a554cb6d2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0e164afca97818d2082ddf4053df791317e29ac5
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802827"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41218584"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)
 
@@ -39,35 +39,37 @@ Auparavant, lorsque vous appliquiez des étiquettes de confidentialité incluant
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
-Vous pouvez également appliquer des étiquettes de confidentialité à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint. [En savoir plus](sensitivity-labels-teams-groups-sites.md).
+Vous pouvez également appliquer des étiquettes de confidentialité à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint. Pour plus d’informations sur cet aperçu distinct, voir [use sensitive labels with Microsoft Teams, Office 365 Groups et SharePoint sites (public Preview)](sensitivity-labels-teams-groups-sites.md).
 
-Si nécessaire, vous pouvez désactiver l’aperçu à tout moment.
+Vous pouvez toujours choisir de désactiver cet aperçu à tout moment.
 
 ## <a name="requirements"></a>Configuration requise
 
-Ces fonctionnalités ne fonctionnent qu’avec des [étiquettes de sensibilité](sensitivity-labels.md). Si vous avez utilisé des étiquettes Azure information protection, vous pouvez les convertir en étiquettes de sensibilité pour activer ces fonctionnalités pour les nouveaux fichiers que vous téléchargez. [Découvrez comment](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
+Ces fonctionnalités fonctionnent avec les [étiquettes de confidentialité](sensitivity-labels.md) uniquement. Si vous disposez actuellement d’étiquettes Azure information protection, commencez par les migrer vers les étiquettes de confidentialité afin de pouvoir activer ces fonctionnalités pour les nouveaux fichiers que vous téléchargez. Pour obtenir des instructions, voir [Comment migrer des étiquettes Azure information protection vers des étiquettes de confidentialité unifiée](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
-Pour cet aperçu, utilisez la version 19.002.0121.0008 ou une version ultérieure de l’application de synchronisation OneDrive sur Windows et la version 19.002.0107.0008 ou ultérieure sur Mac. Ces deux versions ont été publiées le 28 janvier 2019 et sont actuellement publiées sur toutes les sonneries. [Consultez les notes de publication de OneDrive](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). Une fois cet aperçu activé, les utilisateurs qui exécutent une version plus ancienne de l’application de synchronisation sont invités à les mettre à jour.
+Pour cet aperçu, utilisez la version 19.002.0121.0008 ou une version ultérieure de l’application de synchronisation OneDrive sur Windows et la version 19.002.0107.0008 ou ultérieure sur Mac. Ces deux versions ont été publiées le 28 janvier 2019 et sont actuellement publiées sur toutes les sonneries. Pour plus d’informations, consultez les [notes de publication de OneDrive](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). Une fois cet aperçu activé, les utilisateurs qui exécutent une version plus ancienne de l’application de synchronisation sont invités à les mettre à jour.
 
 ## <a name="limitations"></a>Limites
 
-- Lorsque vous activez cet aperçu, les utilisateurs qui appliquent une étiquette à un fichier à l’aide du bureau ou des applications mobiles Office peuvent ne pas être en mesure d’enregistrer les autres modifications qu’ils ont apportées au fichier. Au lieu de cela, l’application invite les utilisateurs à enregistrer les modifications locales ou à les ignorer. Pour éviter de perdre le travail, effectuez l’une des actions suivantes :
-
-  - Pour appliquer des étiquettes, utilisez les versions Web des applications Office.
-
-  - Fermez un fichier après avoir appliqué une étiquette, puis rouvrez le fichier pour effectuer d’autres modifications.
+- Lorsque vous activez cet aperçu, les utilisateurs qui modifient une étiquette en un fichier dans un dossier de synchronisation OneDrive peuvent ne pas être en mesure d’enregistrer les autres modifications qu’ils ont apportées au fichier.  Les utilisateurs voient un [cercle rouge avec une erreur d’icône en croix blanche](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)et ils sont invités à enregistrer les nouvelles modifications en tant que copie distincte.  En plus des modifications apportées aux étiquettes par les utilisateurs, le même comportement peut se produire si un administrateur modifie les paramètres d’une étiquette publiée qui est déjà appliquée aux fichiers téléchargés sur le client de synchronisation des utilisateurs.
+    
+    Pour éviter de perdre le travail de ces scénarios, effectuez l’une des actions suivantes :
+    - Pour appliquer des étiquettes, utilisez les versions Web des applications Office.
+    - Fermez un fichier après avoir appliqué une étiquette, puis rouvrez le fichier pour effectuer d’autres modifications.
 
 - SharePoint n’applique pas automatiquement les nouvelles étiquettes aux fichiers existants que vous avez déjà chiffrés à l’aide des étiquettes Azure information protection. À la place, pour que les fonctionnalités fonctionnent après avoir activé cet aperçu, effectuez les tâches suivantes :
+    
+    1. Assurez-vous que vous avez déplacé les étiquettes Azure information protection sur les étiquettes de confidentialité et les avez publiées à partir du centre de conformité Microsoft 365 ou du centre d’administration des étiquettes équivalent.
+    
+    2. Téléchargez les fichiers et téléchargez-les sur SharePoint.
 
-  - Convertissez les étiquettes Azure information protection en étiquettes de sensibilité.
+- SharePoint ne peut pas traiter les fichiers chiffrés lorsque l’étiquette qui a appliqué le chiffrement a l’une des configurations suivantes pour le chiffrement :
+    - **Autoriser les utilisateurs à attribuer des autorisations lors de l’application de l’étiquette** et **dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations**
+    - **L’accès des utilisateurs au contenu expire** est défini sur une valeur autre que **jamais**.
 
-  - Téléchargez les fichiers et téléchargez-les sur SharePoint.
+- Pour un document chiffré qui accorde des autorisations de modification à un utilisateur, la copie ne peut pas être bloquée dans les versions Web des applications Office.
 
-- SharePoint ne peut pas traiter les étiquettes avec des autorisations et des étiquettes personnalisées avec des dates d’expiration.
-
-- Lorsque les utilisateurs disposent d’autorisations de modification, les versions Web des applications Office autorisent la copie, quel que soit le paramètre de stratégie copier dans l’étiquette.
-
-- La révocation RMS, le suivi et la création de rapports ne sont pas pris en charge.
+- Le site de suivi des documents Azure information protection n’est pas pris en charge.
 
 - Les applications de bureau Office et les applications mobiles ne prennent pas en charge la co-création. Au lieu de cela, ces applications continuent à ouvrir des fichiers en mode d’édition exclusive.
 
@@ -85,11 +87,11 @@ Avant d’activer l’aperçu, vérifiez que vous exécutez SharePoint Online Ma
 
 2. Par ailleurs, si vous avez installé une version antérieure de SharePoint Online Management Shell à partir du centre de téléchargement Microsoft, vous pouvez également accéder à la console **Ajout/suppression de programmes** et désinstaller SharePoint Online Management Shell.
 
-3. Dans un navigateur Web, accédez à la page du centre de téléchargement et [Téléchargez la dernière version de SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
+3. Dans un navigateur web, accédez à la page du Centre de téléchargement et [Téléchargez la dernière version de SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
 4. Sélectionnez votre langue, puis cliquez sur **Télécharger**.
 
-5. Choisissez entre le fichier x64 et x86. msi. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. Si vous ne le Sachez pas, consultez [la version du système d’exploitation Windows que je suis en cours d’exécution ?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+5. Choisissez entre le fichier x64 et x86 .msi. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. Si vous ne le Sachez pas, consultez [la version du système d’exploitation Windows que je suis en cours d’exécution ?](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
 
 6. Une fois que vous avez téléchargé le fichier, exécutez le fichier et suivez les étapes de l’Assistant d’installation.
