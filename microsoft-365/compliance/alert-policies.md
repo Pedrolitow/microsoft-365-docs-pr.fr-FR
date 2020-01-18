@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations. Ensuite, vous pouvez afficher et gérer les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d’une stratégie d’alerte.
-ms.openlocfilehash: 451883f94df3a58781ae6de0d82322c29f95bbb9
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 8d76a93c569093f6a632984ec96db0d0aeb9c218
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823746"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233795"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le centre de sécurité et conformité
 
@@ -73,9 +73,9 @@ Une stratégie d’alerte se compose des paramètres et conditions suivants.
 
 - **Catégorie d’alerte** : pour faciliter le suivi et la gestion des alertes générées par une stratégie, vous pouvez affecter l’une des catégories suivantes à une stratégie.
 
-  - Gouvernance des données
-
   - Protection contre la perte de données
+
+  - Gouvernance des informations
 
   - Flux de messagerie
 
@@ -96,7 +96,7 @@ Une stratégie d’alerte se compose des paramètres et conditions suivants.
 
 ## <a name="default-alert-policies"></a>Stratégies d’alerte par défaut
 
-Office 365 fournit des stratégies d’alerte intégrées qui permettent d’identifier les risques liés aux autorisations d’administrateur Exchange en matière d’abus, d’activité de programmes malveillants et de gouvernance des données. Sur la page **stratégies d’alerte** , les noms de ces stratégies prédéfinies sont en gras et le type de stratégie est défini sur **système**. Ces stratégies sont activées par défaut. Vous pouvez désactiver ces stratégies (ou de nouveau), configurer une liste de destinataires vers lesquels envoyer des notifications par courrier électronique et définir une limite de notification quotidienne. Les autres paramètres de ces stratégies ne peuvent pas être modifiés.
+Office 365 fournit des stratégies d’alerte intégrées qui permettent d’identifier les abus des autorisations d’administration Exchange, l’activité de programmes malveillants, les menaces externes et internes potentielles et les risques de gouvernance des informations. Sur la page **stratégies d’alerte** , les noms de ces stratégies prédéfinies sont en gras et le type de stratégie est défini sur **système**. Ces stratégies sont activées par défaut. Vous pouvez désactiver ces stratégies (ou de nouveau), configurer une liste de destinataires vers lesquels envoyer des notifications par courrier électronique et définir une limite de notification quotidienne. Les autres paramètres de ces stratégies ne peuvent pas être modifiés.
 
 Le tableau suivant répertorie et décrit les stratégies d’alerte par défaut disponibles et la catégorie à laquelle chaque stratégie est affectée. La catégorie permet de déterminer les alertes qu’un utilisateur peut afficher sur la page afficher les alertes. Pour plus d’informations, consultez la section [autorisations RBAC requises pour afficher les alertes](#rbac-permissions-required-to-view-alerts) .
 
@@ -120,9 +120,9 @@ Le tableau indique également la planification Office 365 entreprise et Office 3
 |**Hameçonnage envoyé en raison du remplacement de client ou d’utilisateur**<sup>1</sup>|Génère une alerte quand Office 365 détecte qu’un administrateur ou une substitution d’utilisateur a autorisé la remise d’un message de hameçonnage à une boîte aux lettres. Voici quelques exemples de remplacements : une boîte de réception ou une règle de flux de messagerie qui autorise les messages provenant d’un expéditeur ou d’un domaine spécifique, ou une stratégie de blocage du courrier indésirable qui autorise les messages provenant d’expéditeurs ou de domaines spécifiques. Cette stratégie a un paramètre de gravité **élevée** .|Gestion des menaces|Ajout d’un abonnement de complément P2 à l’ATP P2/G5 ou à Office 365|
 |**Modèles d’envoi de courrier électronique suspects détectés**|Génère une alerte lorsqu’un utilisateur de votre organisation a envoyé un courrier électronique suspect et qu’il n’est pas autorisé à envoyer des courriers électroniques. Il s’agit d’un avertissement précoce pour le comportement qui peut indiquer que le compte est compromis, mais pas suffisamment sérieux pour limiter l’utilisateur. Cette stratégie a un paramètre de gravité **moyenne** . Bien qu’il soit rare, une alerte générée par cette stratégie peut être une anomalie. Toutefois, il est recommandé de [vérifier si le compte d’utilisateur est compromis](../security/office-365-security/responding-to-a-compromised-email-account.md).|Gestion des menaces|E1/F1/G1, E3/G3 ou E5/G5  |
 |**Client non autorisé à envoyer des courriers électroniques**|Génère une alerte lorsque la plupart du trafic de messagerie de votre organisation a été détecté comme suspect et que Microsoft a empêché votre organisation d’envoyer des courriers électroniques. Examinez les comptes d’utilisateur et d’administrateur potentiellement compromis, les nouveaux connecteurs ou les relais ouverts, puis contactez le support Microsoft pour débloquer votre organisation. Cette stratégie a un paramètre de gravité **élevée** . Pour plus d’informations sur les raisons pour lesquelles les organisations sont bloquées, voir [corriger les problèmes de remise des messages électroniques pour le code d’erreur 5.7.7 XX dans Exchange Online](https://go.microsoft.com/fwlink/?linkid=2022138).|Gestion des menaces|E1/F1/G1, E3/G3 ou E5/G5|
-|**Activité inhabituelle de fichier utilisateur externe**|Génère une alerte lorsqu’un nombre d’activités inhabituellement élevé est effectué sur des fichiers dans SharePoint ou OneDrive par des utilisateurs externes à votre organisation. Cela inclut des activités telles que l’accès aux fichiers, le téléchargement de fichiers et la suppression de fichiers. Cette stratégie a un paramètre de gravité **élevée** .|Gouvernance des données|E5/G5, Office 365 DAV P2 ou abonnement au complément de conformité avancé|
-|**Volume inhabituel de partage de fichiers externes**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers dans SharePoint ou OneDrive est partagé avec des utilisateurs extérieurs à votre organisation. Cette stratégie a un paramètre de gravité **moyenne** .|Gouvernance des données|E5/G5, Office 365 DAV P2 ou abonnement au complément de conformité avancé|
-|**Volume inhabituel de suppression de fichiers**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers est supprimé dans SharePoint ou OneDrive pendant une période courte. Cette stratégie a un paramètre de gravité **moyenne** .|Gouvernance des données|E5/G5, Office 365 DAV P2 ou abonnement au complément de conformité avancé|
+|**Activité inhabituelle de fichier utilisateur externe**|Génère une alerte lorsqu’un nombre d’activités inhabituellement élevé est effectué sur des fichiers dans SharePoint ou OneDrive par des utilisateurs externes à votre organisation. Cela inclut des activités telles que l’accès aux fichiers, le téléchargement de fichiers et la suppression de fichiers. Cette stratégie a un paramètre de gravité **élevée** .|Gouvernance des informations|E5/G5, Office 365 DAV P2 ou abonnement au complément de conformité avancé|
+|**Volume inhabituel de partage de fichiers externes**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers dans SharePoint ou OneDrive est partagé avec des utilisateurs extérieurs à votre organisation. Cette stratégie a un paramètre de gravité **moyenne** .|Gouvernance des informations|E5/G5, Office 365 DAV P2 ou abonnement au complément de conformité avancé|
+|**Volume inhabituel de suppression de fichiers**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers est supprimé dans SharePoint ou OneDrive pendant une période courte. Cette stratégie a un paramètre de gravité **moyenne** .|Gouvernance des informations|E5/G5, Office 365 DAV P2 ou abonnement au complément de conformité avancé|
 |**Augmentation inhabituelle d’e-mails signalés comme hameçons**|Génère une alerte lorsqu’il y a une augmentation significative du nombre de personnes au sein de votre organisation à l’aide du complément Report message dans Outlook pour signaler les messages en tant que courriers de hameçonnage. Cette stratégie a un paramètre de gravité **élevée** . Pour plus d’informations sur ce complément, reportez-vous à [la rubrique utiliser le complément de message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Gestion des menaces|Ajout d’un abonnement de complément P2 à l’ATP P2/G5 ou à Office 365|
 |**Emprunt d’identité d’utilisateur remis à la boîte de réception/dossier**<sup>1,</sup><sup>2</sup>|Génère une alerte quand Office 365 détecte qu’un remplacement administrateur ou utilisateur a autorisé la remise d’un message d’hameçonnage empruntant l’identité d’un utilisateur à la boîte de réception (ou à un autre dossier accessible par l’utilisateur) d’une boîte aux lettres. Voici quelques exemples de remplacements : une boîte de réception ou une règle de flux de messagerie qui autorise les messages provenant d’un expéditeur ou d’un domaine spécifique, ou une stratégie de blocage du courrier indésirable qui autorise les messages provenant d’expéditeurs ou de domaines spécifiques. Cette stratégie a un paramètre de gravité **moyenne** .|Gestion des menaces|Ajout d’un abonnement de complément P2 à l’ATP P2/G5 ou à Office 365|
 |**Utilisateur non autorisé à envoyer un message électronique**|Génère une alerte lorsqu’une personne de votre organisation est restreinte d’envoyer des messages sortants. Cela se produit généralement lorsqu’un compte est compromis, et que l’utilisateur est affiché sur la page **utilisateurs restreints** dans le centre de sécurité & conformité. (Pour accéder à cette page, accédez à **gestion des menaces > examiner > utilisateurs restreints**). Cette stratégie a un paramètre de gravité **élevée** . Pour plus d’informations sur les utilisateurs avec accès restreint, consultez [la rubrique Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste rouge après l’envoi de courrier indésirable](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Gestion des menaces|E1/F1/G1, E3/G3 ou E5/G5|
@@ -159,7 +159,7 @@ Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de tout
 
 Les autorisations de contrôle d’accès basé sur un rôle (RBAC) affectées aux utilisateurs de votre organisation déterminent les alertes qu’un utilisateur peut afficher sur la page **afficher les alertes** . Comment cela est-il accompli ? Les rôles de gestion attribués aux utilisateurs (en fonction de leur appartenance à des groupes de rôles dans le centre de sécurité & conformité) déterminent les catégories d’alertes qu’un utilisateur peut afficher sur la page **afficher les alertes** . Voici quelques exemples :
 
-- Les membres du groupe de rôles Gestion des enregistrements peuvent afficher uniquement les alertes générées par les stratégies d’alerte auxquelles la catégorie de **gouvernance des données** est attribuée.
+- Les membres du groupe de rôles de gestion des enregistrements peuvent afficher uniquement les alertes générées par les stratégies d’alerte auxquelles la catégorie de **gouvernance information** est attribuée.
 
 - Les membres du groupe de rôles Administrateur de conformité ne peuvent pas afficher les alertes générées par les stratégies d’alerte auxquelles la catégorie de **gestion des menaces** est attribuée.
 
@@ -171,7 +171,7 @@ Le tableau suivant répertorie les rôles requis pour afficher les alertes des s
 
 Pour voir la catégorie affectée à une stratégie d’alerte par défaut, consultez le tableau de la section [stratégies d’alerte par défaut](#default-alert-policies) .
 
-|&nbsp;|Gouvernance des données|Protection contre la perte de données|Flux de messagerie|Autorisations|Gestion des menaces|Autres|
+|&nbsp;|Gouvernance des informations|Protection contre la perte de données|Flux de messagerie|Autorisations|Gestion des menaces|Autres|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||

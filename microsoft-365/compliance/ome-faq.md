@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages dans Office 365 fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: fa8268569bfabcaa9e3cca963ad12723c8c99369
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0afb27854e6e080963d7133fb32ecbd5532ae9b2
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111858"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233845"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
@@ -85,7 +85,7 @@ Vous pouvez toujours utiliser la version précédente de OME, elle ne sera pas d
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Mon organisation utilise Active Directory Rights Management, puis-je utiliser cette fonctionnalité ?
 
-Non. Si vous utilisez Exchange Online avec Active Directory Rights Management Services (AD RMS), vous ne pouvez pas activer immédiatement ces nouvelles fonctionnalités. Au lieu de cela, vous devez d’abord [migrer AD RMS vers Azure information protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) . 
+Non. Si vous utilisez Exchange Online avec Active Directory Rights Management Services (AD RMS), vous ne pouvez pas activer immédiatement ces nouvelles fonctionnalités. Au lieu de cela, vous devez d’abord [migrer AD RMS vers Azure information protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) .
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Mon organisation a un déploiement hybride Exchange. Puis-je utiliser cette fonctionnalité ?
 
@@ -97,7 +97,7 @@ Vous pouvez créer des messages protégés à partir d’Outlook 2016 et Outlook
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Quels sont les clients de messagerie pris en charge pour lire et répondre aux messages électroniques protégés ?
 
-Vous pouvez lire et répondre à Outlook pour Windows et Mac (2013 et 2016), Outlook sur le Web et Outlook Mobile (Android et iOS) si vous êtes un utilisateur d’Office 365. Vous pouvez également utiliser le client de messagerie natif iOS si votre organisation l’autorise. Si vous êtes un utilisateur non-Office 365, vous pouvez lire et répondre à des messages chiffrés sur le Web via votre navigateur Web.
+Les utilisateurs d’Office 365 peuvent lire et répondre à Outlook pour Windows et Mac (2013 et 2016), Outlook sur le Web et Outlook Mobile (Android et iOS). Vous pouvez également utiliser le client de messagerie natif iOS si votre organisation l’autorise. Si vous êtes un utilisateur non-Office 365, vous pouvez lire et répondre à des messages chiffrés sur le Web via votre navigateur Web.
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quels types de fichiers sont pris en charge en tant que pièces jointes dans les courriels protégés ? Les pièces jointes héritent-elles des stratégies de protection associées aux courriers électroniques protégés ?
 

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 65497522907a4bfc8e2e3d55ccd3a82cde9b8bb7
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230192"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233885"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -165,7 +165,7 @@ Les actions d’amélioration d’Intune suivantes seront supprimées :
 
 ### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable
 
-Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons l’action d’amélioration suivante.
+Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons les actions d’amélioration suivantes.
 
 - Activer l’enregistrement des données d’audit
 - Découverte des applications informatiques de clichés instantanés risquées et non conformes
@@ -182,7 +182,7 @@ Les trois qui seront supprimés :
 - Exiger l’authentification multifacteur pour tous les utilisateurs
 - Exiger l’authentification multifacteur pour les rôles privilège Azure AD
 
-Nouvelles actions d’amélioration :
+Nouvelles actions d’amélioration ajoutées :
 
 - S’assurer que tous les utilisateurs peuvent effectuer l’authentification multifacteur pour un accès sécurisé
 - Exiger MFA pour les rôles d’administration
@@ -201,7 +201,7 @@ Pour standardiser les points sur plusieurs expériences, chaque point d’action
 
 ### <a name="preview-features"></a>Fonctionnalités de préversion
 
-Les fonctionnalités suivantes seront incluses dans la version d’évaluation :
+Les fonctionnalités suivantes seront incluses dans la [version d’évaluation](microsoft-secure-score-preview.md):
 
 * Toutes les nouvelles mesures et tendances pour les CISO et les discussions au niveau des prospects
 * Nouvelles façons de suivre et d’évaluer votre score

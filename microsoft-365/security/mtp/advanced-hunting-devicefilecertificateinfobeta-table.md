@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d5769088f3904bf62d2889f35f236c9410628db
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: ea20e7354838bade17ebb83522b543c8aec3d33e
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230202"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233925"
 ---
 # <a name="devicefilecertificateinfobeta"></a>DeviceFileCertificateInfoBeta
 
@@ -40,7 +40,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
 | `IsSigned` | booléen | Indique si le fichier est signé |
-| `SignatureType` | string | Indique si les informations de signature ont été lues comme étant incorporées | contenu du fichier lui-même ou lu à partir d’un fichier de catalogue externe |
+| `SignatureType` | string | Indique si les informations de signature ont été lues dans le fichier ou lues à partir d’un fichier de catalogue externe. |
 | `Signer` | string | Informations sur le signataire du fichier |
 | `SignerHash` | string | Valeur de hachage unique identifiant le signataire |
 | `Issuer` | string | Informations sur l’autorité de certification émettrice |

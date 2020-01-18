@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilisez le modèle de détection des privilèges du client avocat pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans un cas avancé de découverte électronique.
-ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: f4d5252a44183f5e2e38e4f4676c73d350befaf2
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970862"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233718"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configuration de la détection des droits du client dans Advanced eDiscovery
 
@@ -36,11 +36,11 @@ Lorsque la détection de privilèges client est activée, tous les documents d�
 
 Le modèle produit les trois propriétés suivantes pour chaque document :
 
-- **AttorneyClientPrivilegeScore** – la probabilité que le document soit juridique ; les valeurs du score sont comprises entre **0** et **1**.
+- **AttorneyClientPrivilegeScore :** La probabilité que le document soit juridique ; les valeurs du score sont comprises entre **0** et **1**.
 
-- **HasAttorney** : cette propriété est définie sur **true** si l’un des participants du document est répertorié dans la liste des avocats ; Sinon, la valeur est **false**. La valeur est également définie sur **false** si votre organisation n’a pas téléchargé de liste d’avocats.
+- **HasAttorney :** Cette propriété est définie sur **true** si l’un des participants du document est répertorié dans la liste des avocats ; Sinon, la valeur est **false**. La valeur est également définie sur **false** si votre organisation n’a pas téléchargé de liste d’avocats.
 
-- **IsPrivilege** : cette propriété est définie sur **true** si la valeur de **AttorneyClientPrivilegeScore** est supérieure au seuil *ou* si le document a un participant à un avocat ; Sinon, la valeur est définie sur **false**.
+- **IsPrivilege :** Cette propriété est définie sur **true** si la valeur de **AttorneyClientPrivilegeScore** est supérieure au seuil *ou* si le document a un participant à un avocat ; Sinon, la valeur est définie sur **false**.
 
 Ces propriétés (et leurs valeurs correspondantes) sont ajoutées aux métadonnées de fichier des documents dans un jeu de révision, comme illustré dans la capture d’écran suivante :
 
@@ -58,11 +58,11 @@ Une personne qui est un administrateur de découverte électronique dans votre o
 
 1. Dans le centre de sécurité & conformité, accédez à **ediscovery > Advanced eDiscovery**.
 
-2. Sur la page d’accueil de la **découverte électronique avancée** , dans la vignette **paramètres** , sélectionnez **configurer les fonctionnalités expérimentales**.
+2. Sur la page d’accueil de la **découverte électronique avancée** , dans la vignette **paramètres** , cliquez sur **configurer les paramètres d’analyse globale**.
 
    ![Sélectionnez « configurer les fonctionnalités expérimentales »](media/AeDExperimentalFeatures.png)
 
-3. Sous l’onglet **fonctionnalités expérimentales** , sélectionnez **gérer le paramètre de privilège client**.
+3. Dans l’onglet Paramètres de l' **analyse** , sélectionnez **gérer le paramètre de privilège client**.
 
 4. Sur la page de menu **déroulante avocat-client** , utilisez le bouton bascule pour activer la fonctionnalité, puis sélectionnez **Enregistrer**.
 

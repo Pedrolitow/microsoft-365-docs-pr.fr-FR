@@ -1,19 +1,19 @@
 ---
-title: Configuration des périphériques
+title: Configuration des appareils
 description: Découvrez les stratégies par défaut appliquées aux appareils de bureau gérés par Microsoft.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 479aa8888a3a8e67c51cb7edf14747c840295a4f
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: d8de760fb4690af6675b67678b2441773993a8e5
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823716"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233915"
 ---
-# <a name="device-configuration"></a>Configuration des périphériques
+# <a name="device-configuration"></a>Configuration des appareils
 
 
 <!--This topic is the target for a "Learn more" link in the Enterprise Agreement (aka.ms/dev-config); do not delete.-->
@@ -37,7 +37,8 @@ Base de sécurité | [Microsoft Security Baseline](https://docs.microsoft.com/wi
 Modèle de sécurité Microsoft Managed Desktop recommandé | Un ensemble de modifications recommandées à la base de sécurité qui optimisent l’expérience utilisateur.  Ces modifications sont documentées dans [l’Addendum sur la sécurité](#security-addendum). Les mises à jour apportées à l’addenda de la stratégie ont lieu le cas échéant.  
 Mettre à jour le déploiement | Utilisez Windows Update pour effectuer un déploiement graduel des mises à jour logicielles. Les administrateurs informatiques ne peuvent pas modifier les paramètres des stratégies de groupe de déploiement. Pour plus d’informations sur le déploiement basé sur un groupe, voir [How updates is Handled in Microsoft Managed Desktop](updates.md).
 Données de diagnostic | Les appareils seront configurés pour fournir des données de diagnostic améliorées à Microsoft sous un identificateur commercial connu. Dans le cadre du bureau géré Microsoft, les administrateurs informatiques ne peuvent pas modifier ces paramètres. Pour les clients qui utilisent des régions générales de protection des données (RGPD), les utilisateurs finaux peuvent réduire le niveau de données de diagnostic fourni, mais une réduction du service est possible. Par exemple, le bureau géré Microsoft ne pourra pas collecter les données nécessaires pour effectuer une itération sur les paramètres et les stratégies afin de mieux répondre aux exigences de performances et de sécurité. Pour plus d’informations, reportez-vous à [la rubrique Configurer les données de diagnostic Windows dans votre organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
-Connexions limitées | Par défaut, les mises à jour sur les connexions limitées (telles que les réseaux LTE) sont désactivées, bien que chaque utilisateur puisse activer cette fonctionnalité de manière indépendante dans **paramètres > mises à jour > options avancées**. Si vous souhaitez autoriser tous les utilisateurs à activer les mises à jour sur les connexions limitées, [envoyez une demande de modification](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support), qui activera ce paramètre pour tous les appareils.
+Connexions limitées | Par défaut, les mises à jour sur les connexions limitées (telles que les réseaux LTE) sont désactivées, bien que chaque utilisateur puisse activer cette fonctionnalité de manière indépendante dans **paramètres > mises à jour > options avancées**. Si vous souhaitez autoriser tous les utilisateurs à activer les mises à jour sur les connexions limitées, [envoyez une demande de modification](../working-with-managed-desktop/admin-support.md), qui activera ce paramètre pour tous les appareils.
+| Conformité des appareils | Ces stratégies sont configurées pour tous les appareils de bureau gérés par Microsoft. Un appareil est signalé comme non conforme lorsqu’il dérive de notre configuration de sécurité requise.
 
  ## <a name="security-addendum"></a>Addendum sur la sécurité
 

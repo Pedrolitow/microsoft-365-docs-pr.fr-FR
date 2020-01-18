@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 0d47ce82b5138827c4ae1c1ea29c902a8cd77cc0
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230212"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233875"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gérer les tickets via ServiceNow
 
@@ -107,7 +107,7 @@ Définissez les configurations des tables « registres des applications » sur
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Procédure de validation de l’entité OAuth créée pour Microsoft 365 Security & Compliance Connector
 
-Accédez à la table des registres des applications (menu > système OAuth > application Registry) dans ServiceNow et recherchez l’entité OAuth créée par vous (nom que vous lui avez attribué).
+Accédez à la table des registres des applications (**Menu > système oauth > application Registry**) dans ServiceNow et recherchez l’entité OAuth créée par vous, avec le nom que vous lui avez attribué.
 
 ### <a name="logging-in-as-the-integration-user"></a>Connexion en tant qu’utilisateur de l’intégration
 
@@ -121,13 +121,13 @@ Avant d’autoriser la connexion entre le centre de sécurité Microsoft 365 et 
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Procédure de validation de l’utilisateur d’intégration créé avec la liste de vérification d’installation pour le connecteur de sécurité & conformité Microsoft 365
 
-Accédez à la table utilisateurs (menu > l’administration des utilisateurs > les utilisateurs) dans ServiceNow et recherchez l’utilisateur d’intégration que vous avez créé (nom que vous lui avez attribué).
+Accédez à la table utilisateurs **(Menu > l’administration des utilisateurs > les utilisateurs**) dans ServiceNow et recherchez l’utilisateur d’intégration que vous avez créé, avec le nom que vous lui avez attribué.
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>Votre entreprise a activé l’authentification unique, ce qui vous empêche de vous connecter à ServiceNow via le centre de sécurité Microsoft 365
 
 Si votre entreprise a activé l’authentification unique et que vous recevez une erreur ou si la connexion échoue, suivez l’une des deux solutions.
 
-#### <a name="logging-into-servicenow-as-the-integration-user"></a>Connexion à ServiceNow en tant qu’utilisateur de l’intégration
+#### <a name="log-into-servicenow-as-the-integration-user"></a>Connectez-vous à ServiceNow en tant qu’utilisateur d’intégration.
 
 1. Revenez à la page autorisation dans ServiceNow.
 2. Sélectionnez le lien qui **n’est pas** dans le coin supérieur droit.
@@ -142,4 +142,5 @@ Si votre entreprise a activé l’authentification unique et que vous recevez un
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>L’installation est terminée, mais ne vois pas les tickets et ne peut pas partager
 
-Si les étapes d’installation et de configuration sont terminées, mais que vous ne voyez pas les cartes ServiceNow sur la page d’accueil et que vous ne pouvez pas partager de ServiceNow à partir du score de sécurité https://security.microsoft.com/ticketProvisioningMicrosoft, vérifiez l’état de la page de mise en service sur. Sélectionnez **Enregistrer** et revenir à la page d’accueil. Les cartes doivent apparaître.
+Si les étapes d’installation et de configuration sont terminées, mais que vous ne voyez pas les cartes ServiceNow sur la page d’accueil et que vous ne pouvez pas partager de ServiceNow à partir du score de sécurité https://security.microsoft.com/ticketProvisioningMicrosoft, vérifiez l’état de la page de mise en service sur. Sélectionnez **autoriser** et revenir à la page d’accueil. Les cartes doivent apparaître.
+

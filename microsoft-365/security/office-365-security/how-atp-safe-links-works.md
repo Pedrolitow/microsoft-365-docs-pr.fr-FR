@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La fonctionnalité liens fiables permet de vérifier le temps de cliquer sur les liens hypertexte dans les documents Office et dans les messages électroniques. Lisez cet article pour découvrir le fonctionnement des liens fiables ATP.
-ms.openlocfilehash: 56b9ce71ed0f695e2f9ee7d833ecbc980a94edd8
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: f8fcf6417dfb82a123307358f0fcd3e3cc8427e0
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230182"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233905"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Fonctionnement des liaisons approuvées ATP Office 365
          
@@ -54,8 +54,6 @@ ms.locfileid: "41230182"
 2. Un utilisateur ouvre un Word, Excel, PowerPoint, OneNote (dans le navigateur) ou Visio (sur le bureau) et se connecte à Office 365 Enterprise à l’aide de son compte professionnel ou scolaire. Le document contient des URL.
     
 3. Lorsque l’utilisateur clique sur une URL dans le document, le lien est vérifié par le service de liens fiables ATP.
-    
-   - Si l’URL est vers un site Web qui est inclus dans une [liste d’URL « ne pas réécrire » personnalisée](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) pour une stratégie qui s’applique à l’utilisateur, cet utilisateur est dirigé vers le site Web. 
     
    - Si l’URL est vers un site Web inclus dans la [liste des URL bloquées personnalisées](set-up-a-custom-blocked-urls-list-wtih-atp.md)de l’organisation, l’utilisateur est dirigé vers une [page d’avertissement](atp-safe-links-warning-pages.md).
     
