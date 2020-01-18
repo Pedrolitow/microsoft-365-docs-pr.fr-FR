@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Obtenez-vous un message d'erreur lorsque vous tentez d'envoyer un courrier électronique à un destinataire dont l'adresse de messagerie est dans Office 365 ? Si vous pensez que vous ne devriez pas recevoir de message d'erreur, vous pouvez utiliser le portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365.
-ms.openlocfilehash: 1cc4958c8ba680e49a454da1f3c7bfd009399da0
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: da1c066c79acd6fb8b80796a0fc7f39d52337017
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971612"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238461"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365
 
@@ -56,4 +56,4 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
     > [!NOTE]
     > Cette opération peut prendre jusqu’à 24 heures ou les résultats peuvent varier considérablement avant la suppression des restrictions.
 
-Découvrez [Comment empêcher le courrier électronique réel d’être marqué comme courrier indésirable dans office 365](../../compliance/prevent-email-from-being-marked-as-spam.md ) et de [contrôler le courrier indésirable sortant dans Office 365](outbound-spam-controls.md) afin d’empêcher IP d’être en liste de blocage.
+Découvrez [Comment empêcher le courrier électronique réel d’être marqué comme courrier indésirable dans office 365](prevent-email-from-being-marked-as-spam.md ) et de [contrôler le courrier indésirable sortant dans Office 365](outbound-spam-controls.md) afin d’empêcher IP d’être en liste de blocage.

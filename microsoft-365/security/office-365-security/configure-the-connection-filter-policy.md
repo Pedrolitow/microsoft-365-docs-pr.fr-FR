@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Pour vous assurer que le courrier électronique envoyé à partir de personnes que vous approuvez n’est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte, également appelée liste d’expéditeurs approuvés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
-ms.openlocfilehash: d3151ab436c5d904897d518fa119d52a11db4850
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971832"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238421"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configuration de la stratégie de filtrage des connexions
 
@@ -29,7 +29,7 @@ Nous avons tous des amis et des partenaires professionnels en qui nous avons con
 
 - Une stratégie de filtrage des connexions la création d’une liste rouge peut être considérée comme une interception moins importante ou non fiable des comptes dans le filtre.
 
- Pour d’autres paramètres de courrier indésirable qui s’appliquent à l’ensemble de l’organisation, jetez un œil à la [façon d’éviter que le courrier électronique soit marqué comme courrier indésirable dans office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) ou [Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md). Elles sont utiles si vous disposez d’un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
+ Pour d’autres paramètres de courrier indésirable qui s’appliquent à l’ensemble de l’organisation, jetez un œil à la [façon d’éviter que le courrier électronique soit marqué comme courrier indésirable dans office 365](prevent-email-from-being-marked-as-spam.md) ou [Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md). Elles sont utiles si vous disposez d’un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
 
 > [!TIP]
 > Vous souhaiterez peut-être suspendre et savoir comment créer des listes d' [expéditeurs autorisés (ou d’expéditeurs approuvés)](create-safe-sender-lists-in-office-365.md) et des [listes rouges](create-block-sender-lists-in-office-365.md).
@@ -149,7 +149,7 @@ Il s’agit fondamentalement de la même procédure de création de règle à pa
 |:-----|
 |![Icône rapide pour LinkedIn Learning](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Office 365 ?** Découvrez les cours vidéo gratuits pour **Office 365 admins and IT pros** proposés par LinkedIn Learning.|
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
@@ -157,6 +157,6 @@ Il s’agit fondamentalement de la même procédure de création de règle à pa
 
 [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
 
-[Comment éviter que des messages électroniques soient marqués comme courrier indésirable dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Éviter le marquage de courrier régulier comme courrier indésirable dans Office 365](prevent-email-from-being-marked-as-spam.md)
 
-[Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md)
+[Réduire le courrier indésirable dans Office 365](reduce-spam-email.md)

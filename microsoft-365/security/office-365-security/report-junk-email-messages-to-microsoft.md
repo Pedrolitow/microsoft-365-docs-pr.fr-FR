@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 'Le complément de signalement de courrier indésirable de Microsoft pour Microsoft Office Outlook vous offre plusieurs méthodes pour signaler des messages en tant que courriers indésirables :'
-ms.openlocfilehash: f77f9298058897b60345651a35289f6be88a47a8
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: df4eb2ceea3233d014efe545ca5d9c7bd39a3624
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970290"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238411"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Signaler les messages de courrier indésirable à Microsoft
 
@@ -31,7 +31,7 @@ Le complément de signalement de courrier indésirable de Microsoft pour Microso
 
 - à partir d'un message électronique ouvert.
 
-Le complément de signalement de courrier indésirable vous permet de soumettre des rapports au service Microsoft Exchange Online Protection (EOP). Si votre boîte aux lettres n'est pas protégée par le service, la soumission de rapports de courrier indésirable n'affecte pas vos filtres de courrier indésirable. Les administrateurs peuvent en savoir plus sur les paramètres de courrier indésirable qui s’appliquent à l’ensemble d’une organisation pour [éviter que les messages électroniques soient marqués comme courrier indésirable dans office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) ou [Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md). Elles sont utiles si vous disposez d’un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
+Le complément de signalement de courrier indésirable vous permet de soumettre des rapports au service Microsoft Exchange Online Protection (EOP). Si votre boîte aux lettres n'est pas protégée par le service, la soumission de rapports de courrier indésirable n'affecte pas vos filtres de courrier indésirable. Les administrateurs peuvent en savoir plus sur les paramètres de courrier indésirable qui s’appliquent à l’ensemble d’une organisation pour [éviter que les messages électroniques soient marqués comme courrier indésirable dans office 365](prevent-email-from-being-marked-as-spam.md) ou [Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md). Elles sont utiles si vous disposez d’un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
 
 > [!TIP]
 > Vous pouvez également envoyer des messages de courrier indésirable directement à Microsoft à l’aide de l’adresse de messagerie [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) et de messages faux positifs (autres que des courriers indésirables) à l’aide de l’adresse de messagerie [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) . Pour plus d'informations, consultez la rubrique [Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
@@ -73,6 +73,6 @@ Le message sélectionné est envoyé à Microsoft pour analyse et déplacé dans
 
 [Résolution des problèmes et informations de support technique](troubleshooting-and-support-information.md)
 
-[Comment éviter que des messages électroniques soient marqués comme courrier indésirable dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Éviter le marquage de courrier régulier comme courrier indésirable dans Office 365](prevent-email-from-being-marked-as-spam.md)
 
-[Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md)
+[Réduire le courrier indésirable dans Office 365](reduce-spam-email.md)

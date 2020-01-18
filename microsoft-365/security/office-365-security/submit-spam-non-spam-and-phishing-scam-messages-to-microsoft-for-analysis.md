@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Vous et vos utilisateurs pouvez soumettre des messages indésirables faux positifs et faux positifs à Microsoft pour analyse. '
-ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 6ca4c99d5e8803fdf7f41ff00cc2a5e65ab38049
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959642"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238431"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse
 
@@ -68,7 +68,7 @@ Pour soumettre un courrier indésirable ou une tentative de hameçonnage à Micr
 
 Si un message a été identifié de manière incorrecte comme courrier indésirable, vous pouvez envoyer le message « faux positif » à l’équipe d’analyse du courrier indésirable de Microsoft. Les analystes vont évaluer et analyser le message. Selon les résultats de l'analyse, les règles de filtrage de contenu du courrier indésirable du service peuvent être ajustées pour autoriser le message.
   
-Les administrateurs peuvent examiner davantage d’informations sur les paramètres du courrier indésirable qui s’appliquent à une organisation entière. Découvrez [Comment vous assurer qu’un message n’est pas marqué comme courrier indésirable](../../compliance/prevent-email-from-being-marked-as-spam.md). Ces informations sont utiles si vous disposez d'un contrôle de niveau administrateur et si vous souhaitez éviter les faux positifs ou les faux négatifs.
+Les administrateurs peuvent examiner davantage d’informations sur les paramètres du courrier indésirable qui s’appliquent à une organisation entière. Découvrez [Comment vous assurer qu’un message n’est pas marqué comme courrier indésirable](prevent-email-from-being-marked-as-spam.md). Ces informations sont utiles si vous disposez d'un contrôle de niveau administrateur et si vous souhaitez éviter les faux positifs ou les faux négatifs.
   
 Vous pouvez envoyer des messages de courrier non indésirable de la manière suivante :
   
@@ -122,7 +122,7 @@ L’évaluation du courrier indésirable est un processus permanent qui s’appl
 
 [Protection contre le courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md)
   
-[Comment s'assurer qu'un message n'est pas marqué comme du courrier indésirable](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Comment s'assurer qu'un message n'est pas marqué comme du courrier indésirable](prevent-email-from-being-marked-as-spam.md)
   
 [Bloquer le courrier indésirable à l'aide du filtre d'Office 365 afin d'éviter les problèmes de faux négatifs](reduce-spam-email.md)
   
