@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité pour appliquer des paramètres de protection qui intègrent le chiffrement et les filigranes sur le contenu étiqueté.
-ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 91dd28284ad83ec8505f52d380284e31dc9882d5
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023348"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233835"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -178,7 +178,7 @@ Bien que la priorité importe pour les stratégies d’étiquette de confidentia
 
 ## <a name="how-to-get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
-La prise en main des étiquettes de niveau de confidentialité est un processus rapide :
+Prise en main des étiquettes de sécurité en procédant comme suit :
 
 1. **Définissez les étiquettes.** Vous devez tout d’abord établir votre taxonomie pour définir différents niveaux de confidentialité du contenu. Utilisez des noms ou termes courants qui ont du sens pour vos utilisateurs. Par exemple, vous pouvez commencer par utiliser des étiquettes telles que Personnel, Public, Général, Confidentiel et Hautement confidentiel. Vous pouvez employer des sous-étiquettes pour regrouper des étiquettes similaires par catégorie. De plus, lorsque vous créez une étiquette, une info-bulle est nécessaire et elle apparaît dans les applications Office lorsque l’utilisateur passe au-dessus de l’option d’étiquette dans le ruban.
 
@@ -189,6 +189,8 @@ La prise en main des étiquettes de niveau de confidentialité est un processus 
 Voici le flux de base des actions de l’administrateur, de l’utilisateur et de l’application Office lié au fonctionnement des étiquettes de niveau de confidentialité.
 
 ![Diagramme illustrant le flux de travail pour les étiquettes de niveau de confidentialité](media/Sensitivity-label-flow.png)
+
+Pour consulter des informations procédurales, voir [Créer et configurer des étiquettes de confidentialité et leurs stratégies](create-sensitivity-labels.md).
 
 ## <a name="where-sensitivity-labels-can-appear"></a>Où apparaissent les étiquettes de niveau de confidentialité
 
