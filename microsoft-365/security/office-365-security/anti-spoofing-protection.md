@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Cet article explique comment Office 365 prévient les attaques par hameçonnage utilisant des domaines d’expéditeur falsifiés, ou usurpés. Pour ce faire, Microsoft analyse les messages et bloque ceux qui ne peuvent être authentifiés ni à l’aide de méthodes d’authentification standard du courrier, ni à l’aide d’autres techniques basées sur la réputation des expéditeurs. Cette modification a été apportée afin de réduire le nombre d’attaques par hameçonnage auxquelles sont exposées les organisations utilisant Office 365.
-ms.openlocfilehash: 1bcf6b954c69297981eafecef192cab0e55a7684
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: cb978dd39e9645b8179490d498713137ab79af46
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112738"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233895"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection contre l’usurpation d’identité dans Office 365
 
@@ -61,7 +61,7 @@ Si le message ci-dessus provient effectivement de Microsoft, les utilisateurs so
 
 Pour mettre fin aux usurpations d’identité, les experts en filtrage du courrier ont développé des protocoles d’authentification tels que [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) et [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC empêche l’usurpation d’identité pour étudier l’expéditeur d’un message. Autrement dit, l’expéditeur figurant parmi les clients de messagerie des utilisateurs (dans les exemples ci-dessus, il s’agit de service.outlook.com, outlook.com et accountprotection.microsoft.com). Par ailleurs, les utilisateurs peuvent également voir que le domaine a franchi les protocoles SPF ou DKIM, ce qui signifie qu’il a été authentifié et n’est donc pas falsifié. Pour une présentation plus complète, voir la section « *Pourquoi l’authentification du courrier ne suffit pas toujours pour empêcher l’usurpation* », plus loin dans cet article.
 
-Cependant, le problème est que les enregistrements d’authentification de courrier sont facultatifs et non obligatoires. Dès lors, si les domaines dotés de stratégies d’authentification fortes, tels que microsoft.com et skype.com, sont protégés contre l’usurpation d’identité, des domaines dont les stratégies d’authentification sont plus faibles, voire inexistantes, constituent des cibles idéales pour de telles usurpations. En mars 2018, seul 9% des domaines des sociétés répertoriées dans Fortune 500 affichent de fortes stratégies d’authentification d’email. Ainsi, un hameçonneur peut usurper le domaine des 91 % de domaines restants de sorte que, si le filtre de courrier ne détecte pas l’usurpation à l’aide d’une autre stratégie, le courrier peut être délivré à un utilisateur final et le tromper :
+Cependant, le problème est que les enregistrements d’authentification de courrier sont facultatifs et non obligatoires. Dès lors, si les domaines dotés de stratégies d’authentification fortes, tels que microsoft.com et skype.com, sont protégés contre l’usurpation d’identité, des domaines dont les stratégies d’authentification sont plus faibles, voire inexistantes, constituent des cibles idéales pour de telles usurpations. Depuis le mois de mars 2018, seuls 9 % des domaines des entreprises figurant au classement Fortune 500 ont publié des stratégies d’authentification fortes. Ainsi, un hameçonneur peut usurper le domaine des 91 % de domaines restants de sorte que, si le filtre de courrier ne détecte pas l’usurpation à l’aide d’une autre stratégie, le courrier peut être délivré à un utilisateur final et le tromper :
 
 ![Stratégies DMARC des entreprises du Fortune 500](../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
