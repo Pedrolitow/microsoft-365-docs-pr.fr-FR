@@ -1,0 +1,113 @@
+---
+title: Créer et publier des étiquettes de confidentialité
+ms.author: cabailey
+author: cabailey
+manager: laurawi
+ms.date: ''
+audience: Admin
+ms.topic: conceptual
+ms.service: O365-seccomp
+localization_priority: Priority
+ms.collection:
+- M365-security-compliance
+- SPO_Content
+search.appverid:
+- MOE150
+- MET150
+description: Instructions pour créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation.
+ms.openlocfilehash: edcfcf5a4f4891e4e1159c4c42327e59ceb35449
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238401"
+---
+# <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
+
+Pour créer et publier vos [étiquettes de confidentialité](sensitivity-labels.md), accédez au centre d’administration des étiquettes tel que le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Vous pouvez également utiliser le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365.
+
+Commencez par créer et configurer les étiquettes de confidentialité que vous souhaitez rendre disponibles pour les services et dans les applications Office. Puis créez une ou plusieurs stratégies d’étiquette contenant les étiquettes et paramètres de stratégie que vous configurez. La stratégie d’étiquette publie en effet les étiquettes et paramètres pour les utilisateurs et emplacements que vous sélectionnez.
+
+## <a name="create-and-configure-sensitivity-labels"></a>Créer et configurer des étiquettes de confidentialité
+
+1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
+    
+    - Centre de conformité Microsoft 365 : 
+        - **Solutions pour la** > **protection des informations (aperçu)**
+        
+        Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
+    
+    - Centre de sécurité Microsoft 365 : 
+        - **Classification** > **des étiquettes de confidentialité**
+    
+    - Centre de sécurité et conformité Office 365 :
+        - **Classification** > **des étiquettes de confidentialité**
+
+2. Sous l’onglet **Étiquettes**, sélectionnez **+ Créer une étiquette** pour démarrer l’assistant **Nouvelle étiquette de confidentialité**.
+
+3. Suivez les invites de paramètres d'étiquette.
+    
+    Pour plus d’informations sur les paramètres d’étiquette, voir [Fonction des étiquettes de confidentialité](sensitivity-labels.md#what-sensitivity-labels-can-do) à partir des informations générales.
+
+4. Répétez ces étapes pour créer d’autres étiquettes. Toutefois, si vous voulez créer une sous-étiquette, commencez par sélectionner l’étiquette parent et choisissez **...** pour **Plus d’actions**, puis **Ajouter une sous-étiquette**.
+
+5. Lorsque vous avez créé les étiquettes dont vous avez besoin, vérifiez leur ordre et déplacez-les vers le haut ou vers le bas si nécessaire. Pour modifier l’ordre d’une étiquette, sélectionnez **...** pour **Plus d’actions**, puis choisissez **Déplacer vers le haut** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité d'étiquette (trier les thèmes)](sensitivity-labels.md#label-priority-order-matters) dans les informations générales.
+
+Pour modifier une étiquette existante, sélectionnez-la, puis choisissez **Modifier l'étiquette**. L’Assistant **Modifier l'étiquette de confidentialité** démarre, vous permettant de modifier les paramètres d’étiquette à l’étape 3. Si l’étiquette est déjà publiée à l’aide d’une stratégie d’étiquette, aucune étape supplémentaire n’est nécessaire, mais patientez jusqu’à 24 heures pour que les modifications soient répliquées vers les utilisateurs et les emplacements.
+
+Les étiquettes sont disponibles dans des applications ou des services après les avoir publiées. Les étiquettes doivent être ajoutées à une stratégie d'étiquette pour être publiées.
+
+### <a name="additional-label-settings-with-office-365-security--compliance-center-powershell"></a>Paramètres d’étiquette supplémentaires dans le Centre de sécurité et conformité Office 365 PowerShell
+
+D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) depuis le [Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+
+Par exemple, vous pouvez utiliser le paramètre *LocaleSettings* pour spécifier d'autres langues pour vos noms d’étiquettes et info-bulles. 
+
+L'utilisation de cette applet de commande vous permet également de spécifier des [paramètres avancés](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) pour le client de l'étiquetage unifié Azure Information Protection. Ces paramètres avancés incluent le paramètre de couleur d’étiquette et l’application d’une propriété personnalisée lorsqu’une étiquette est appliquée. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les stratégies d’étiquette](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies). 
+
+## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publier des étiquettes de confidentialité en créant une stratégie d’étiquette
+
+1. Dans le centre d’administration des étiquettes, accédez à la **Classification** > **des étiquettes de confidentialité**.
+
+2. Sélectionnez l'onglet **Stratégies d'étiquette**.
+
+3. Sélectionnez **Publier des étiquettes** pour démarrer l'**Assistant de création de stratégie**.
+
+4. Sélectionnez **Choisir des étiquettes de confidentialité à publier**. Sélectionnez les étiquettes que vous souhaitez rendre disponibles dans les applications et les services, puis choisissez **Ajouter**.
+
+5. Vérifiez les étiquettes sélectionnées et, pour apporter toute modification, sélectionnez **Modifier**. Autrement, sélectionnez **Suivant**.
+
+6. Suivez les invites pour configurer les paramètres de stratégie.
+    
+    Pour plus d’informations sur les paramètres, voir [Fonction des stratégies d'étiquette](sensitivity-labels.md#what-label-policies-can-do) à partir des informations générales.
+
+7. Répétez ces étapes si vous avez besoin d'autres paramètres de stratégie pour des utilisateurs ou des emplacements différents. Par exemple, vous souhaitez employer d’autres étiquettes pour un groupe d’utilisateurs, ou une étiquette par défaut différente pour un sous-ensemble d’utilisateurs.
+
+8. Si vous créez plusieurs stratégies d’étiquette pouvant entraîner un conflit pour un utilisateur ou un emplacement, vérifiez l’ordre des stratégies et, le cas échéant, déplacez-les vers le haut ou vers le haut. Pour modifier l’ordre d’une stratégie d'étiquette, sélectionnez **...** pour **Plus d’actions**, puis choisissez **Déplacer vers le haut ** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité de stratégie d'étiquette (trier les thèmes)](sensitivity-labels.md#label-policy-priority-order-matters) dans les informations générales.
+
+La stratégie d’étiquette est publiée automatiquement dès la fin de l'Assistant. Pour apporter des modifications à une stratégie publiée, il vous suffit la modifier. Vous ne devez sélectionner aucune action de publication ou de republication spécifique.
+
+Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choisissez **Modifier la stratégie**. Cette opération démarre l’Assistant **Créer une stratégie** qui vous permet de modifier les étiquettes incluses et leurs paramètres. Une fois l’exécution de l’Assistant terminée, toutes les modifications sont automatiquement répliquées vers les emplacements et les utilisateurs sélectionnés. Veuillez patienter 24 heures pour que la réplication se finalise.
+
+### <a name="additional-label-policy-settings-with-office-365-security--compliance-center-powershell"></a>Paramètres de stratégie d'étiquette supplémentaires dans le Centre de sécurité et conformité Office 365 PowerShell
+
+D’autres paramètres de stratégie d’étiquette sont disponibles dans l’applet de commande [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) depuis le [Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+
+L'utilisation de cette applet de commande vous permet de spécifier des [paramètres avancés](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) pour le client de l'étiquetage unifié Azure Information Protection. Ces paramètres avancés incluent la définition d’une autre étiquette par défaut pour Outlook et l’implémentation de messages contextuels dans Outlook qui avertissent, justifient ou bloquent les messages envoyés. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les étiquettes](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
+
+Vous pouvez également utiliser cette applet de commande pour ajouter et supprimer des étiquettes vers ou à partir d'une stratégie d’étiquette.
+
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Pour configurer et utiliser vos étiquettes de confidentialité pour des scénarios spécifiques, voir les articles suivants :
+
+- [Restreindre l’accès au contenu à l’aide du chiffrement dans les étiquettes de niveau de confidentialité](encryption-sensitivity-labels.md)
+
+- [Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)
+
+- [Utiliser des étiquettes de confidentialité avec les équipes, les groupes et les sites](sensitivity-labels-teams-groups-sites.md)
+
+- [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+
+Pour contrôler l'utilisation de vos étiquettes, voir [Afficher l’utilisation d'étiquettes avec l'analyse des étiquettes](label-analytics.md).
