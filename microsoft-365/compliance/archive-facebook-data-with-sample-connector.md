@@ -1,5 +1,5 @@
 ---
-title: Utiliser un exemple de connecteur pour archiver les données Facebook (aperçu)
+title: Configuration d’un connecteur pour l’archivage des données Facebook
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,28 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données tierces à partir de sources de données telles que les pages Facebook, Twitter, les pages de la société LinkedIn et le service de recherche instantanée. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données tierces de votre organisation.
-ms.openlocfilehash: 83b85408afcb4613705691d5bd5a3b72365cb11a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f942df5401c14e3067d664aab41e6cac14542bc0
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808179"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247607"
 ---
-# <a name="use-a-sample-connector-to-archive-facebook-data-preview"></a>Utiliser un exemple de connecteur pour archiver les données Facebook (aperçu)
+# <a name="set-up-a-connector-to-archive-facebook-data"></a>Configuration d’un connecteur pour l’archivage des données Facebook
 
-L’exemple de fonctionnalité de connecteur permettant d’archiver des données Facebook dans Office 365 est en aperçu.
-
-Utilisez un exemple de connecteur dans le centre de sécurité & conformité dans Office 365 pour importer et archiver des données à partir de pages d’entreprise Facebook vers Office 365. Une fois que vous avez configuré et configuré un exemple de connecteur, celui-ci se connecte à la page d’entreprise Facebook (de manière planifiée), convertit le contenu des éléments Facebook en format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Office 365.
+Utilisez un connecteur de données dans le centre de sécurité & conformité dans Office 365 pour importer et archiver des données à partir de pages d’entreprise Facebook vers Office 365. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte à la page d’entreprise Facebook (de manière planifiée), convertit le contenu des éléments Facebook en format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Office 365.
 
 Une fois les données Facebook importées, vous pouvez appliquer les fonctionnalités de conformité d’Office 365 telles que la conservation pour litige, la recherche de contenu, l’archivage inaltérable, l’audit, la conformité de la [communication](communication-compliance.md)et les stratégies de rétention d’Office 365 aux données Facebook. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige ou affectée à une stratégie de rétention, les données Facebook sont conservées. Vous pouvez rechercher des données tierces à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données Facebook sont stockées avec un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur pour importer et archiver des données Facebook dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
-> [!NOTE]
-> Pour l’instant, seuls les exemples de connecteurs pour les pages d’entreprise Facebook et [Twitter](archive-twitter-data-with-sample-connector.md) sont disponibles pour l’aperçu. D’autres exemples de connecteurs seront bientôt disponibles.
-
-
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Conditions préalables à la configuration d’un connecteur pour les pages d’entreprise Facebook
 
-Complétez les conditions préalables suivantes avant de pouvoir installer et configurer un exemple de connecteur dans le centre de sécurité & conformité afin d’importer et d’archiver des données à partir des pages d’entreprise Facebook de votre organisation. 
+Avant de pouvoir installer et configurer un connecteur dans le centre de sécurité & Compliance Center, effectuez les conditions préalables suivantes pour importer et archiver des données à partir des pages d’entreprise Facebook de votre organisation. 
 
 - Vous avez besoin d’un compte Facebook pour les pages professionnelles de votre organisation (vous devez vous connecter à ce compte lors de la configuration du connecteur). Actuellement, vous pouvez uniquement archiver les données à partir de pages d’entreprise Facebook ; vous ne pouvez pas archiver les données de profils Facebook individuels.
 
@@ -42,7 +36,7 @@ Complétez les conditions préalables suivantes avant de pouvoir installer et co
     - [S’inscrire pour un abonnement Azure avec paiement en tant que](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > L' [abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md) qui est inclus avec votre abonnement Office 365 ne prend pas en charge les connecteurs d’exemple dans le centre de sécurité & Compliance Center.
+    > L' [abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md) qui est inclus avec votre abonnement Office 365 ne prend pas en charge les connecteurs dans le centre de sécurité & Compliance Center.
 
 - Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour accepter cette demande, accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), connectez-vous à l’aide des informations d’identification d’un administrateur général Office 365, puis acceptez la demande.
 

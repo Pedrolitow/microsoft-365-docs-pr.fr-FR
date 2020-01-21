@@ -11,16 +11,16 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des données Twitter vers Office 365. Une fois ces données importées dans Office 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Twitter de votre organisation.
-ms.openlocfilehash: 87faad6546d70b1e3893e2f5737af189ebb5f77b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ee15086c6389fa2d2e7d07412ab533301cd8a842
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806147"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247467"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Déploiement d’un connecteur pour l’archivage des données Twitter
 
-Cet article contient le processus étape par étape pour déployer un connecteur qui utilise le service d’importation Office 365 pour importer des données à partir du compte Twitter de votre organisation vers Office 365. Pour une vue d’ensemble de ce processus et une liste des conditions préalables requises pour déployer un connecteur Twitter, reportez-vous à la rubrique [utiliser un exemple de connecteur pour archiver des données Twitter dans Office 365 (version d’évaluation)](archive-twitter-data-with-sample-connector.md). 
+Cet article contient le processus étape par étape pour déployer un connecteur qui utilise le service d’importation Office 365 pour importer des données à partir du compte Twitter de votre organisation vers Office 365. Pour une vue d’ensemble de ce processus et une liste des conditions préalables requises pour déployer un connecteur Twitter, voir [utiliser un connecteur pour archiver les données Twitter dans Office 365 (version d’évaluation)](archive-twitter-data-with-sample-connector.md). 
 
 ## <a name="step-1-download-the-package"></a>Étape 1 : Télécharger le package
 

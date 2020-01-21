@@ -13,40 +13,42 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
-description: Les administrateurs peuvent importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de documents de collaboration vers des boîtes aux lettres de votre organisation Office 365. Cela vous permet d’archiver des données à partir de Facebook, de Twitter et d’autres sources de données tierces dans Office 365. Vous pouvez ensuite utiliser et appliquer les fonctionnalités de conformité d’Office 365 (telles que la conservation légale, la découverte électronique, l’archivage inaltérable et les stratégies de rétention) pour les données tierces.
-ms.openlocfilehash: 10ec436887816080716ecd8870e2b2da8021e9af
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+description: Les administrateurs peuvent importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents vers des boîtes aux lettres de votre organisation Microsoft 365. Cela vous permet d’archiver des données à partir de Facebook, de Twitter et d’autres sources de données tierces dans Microsoft 365. Vous pouvez ensuite utiliser et appliquer les fonctionnalités de conformité de Microsoft 365 (telles que la conservation légale, la découverte électronique, l’archivage inaltérable et les stratégies de rétention) pour les données tierces.
+ms.openlocfilehash: b2931a018dedb6ac85d7896bef345654cb07ca5b
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807463"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247547"
 ---
 # <a name="archive-third-party-data"></a>Archiver des données tierces
 
-Office 365 permet aux administrateurs d’importer et d’archiver des données tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents, vers des boîtes aux lettres de votre organisation Office 365. Des exemples de sources de données tierces que vous pouvez importer dans Office 365 incluent les services suivants : 
+Microsoft 365 permet aux administrateurs d’importer et d’archiver des données tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents, vers des boîtes aux lettres de votre organisation Microsoft 365. Les exemples de sources de données tierces que vous pouvez importer dans Microsoft 365 incluent les services suivants : 
   
 - **Social :** Facebook, LinkedIn, Twitter et Yammer 
-    
+
 - **Messagerie instantanée :** Yahoo Messenger, GoogleTalk et Cisco Jabber 
-    
+
 - **Collaboration sur les documents :** Boîte et DropBox 
-    
+
 - **Secteurs verticaux :** Gestion des relations client (par exemple, Salesforce chatter) et services financiers (par exemple, Bloomberg et Thomson Reuters) 
-    
+
 - **Messagerie SMS/texte :** BlackBerry 
-    
-Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités&mdash;de conformité d’Office 365 telles que la conservation pour litige, la découverte électronique, l’archivage inaltérable, l’audit,&mdash; [la conformité de la communication](communication-compliance.md)et les stratégies de rétention d’Office 365 à ces données. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez effectuer des recherches dans des données tierces à l’aide des outils eDiscovery de Microsoft. Vous pouvez également appliquer des stratégies d’archivage et de rétention à des données tierces, comme vous pouvez le faire pour Microsoft Data. En bref, l’archivage des données tierces dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
-Il existe deux façons d’importer et d’archiver des données tierces dans Office 365 :
+Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités&mdash;de conformité de Microsoft 365 telles que la conservation pour litige, la découverte électronique, l’archivage inaltérable, l'&mdash;audit, la conformité de la communication et les stratégies de rétention à ces données. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez effectuer des recherches dans des données tierces à l’aide des outils eDiscovery de Microsoft. Vous pouvez également appliquer des stratégies d’archivage et de rétention à des données tierces, comme vous pouvez le faire pour Microsoft Data. En bref, l’archivage des données tierces dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
-- **Utilisez un connecteur de données tiers dans le centre de conformité & de sécurité :** Utilisez un connecteur de données personnalisé disponible dans le centre de sécurité & conformité dans Office 365. Une fois que vous avez configuré et configuré le connecteur, il se connecte à la source de données tierce, convertit le contenu d’un élément en format de message électronique, puis importe l’élément dans une boîte aux lettres dans Office 365. Actuellement, vous pouvez implémenter des connecteurs pour importer et archiver des données à partir de pages professionnelles Facebook, de comptes Twitter d’entreprise, de la page de l’application de messagerie instantanée et de LinkedIn. Pour obtenir des instructions détaillées sur la configuration d’un connecteur, voir :
-   
-   - **Facebook :** [utiliser un exemple de connecteur pour archiver des données Facebook dans Office 365](archive-facebook-data-with-sample-connector.md)
-  
-   - **Twitter :** [utiliser un exemple de connecteur pour archiver des données Twitter dans Office 365](archive-twitter-data-with-sample-connector.md)
-    
-   - **LinkedIn :** [configurer un connecteur pour l’archivage des données LinkedIn dans Office 365](archive-linkedin-data.md)
+Il existe deux façons d’importer et d’archiver des données tierces dans Microsoft 365 :
 
-   - **Instant Bloomberg :** [configurer un connecteur pour l’archivage des données Bloomberg instantanées dans Office 365](archive-instant-bloomberg-data.md)
+- **Utilisez un connecteur de données tiers dans le centre de conformité & de sécurité :** Utilisez un connecteur de données personnalisé disponible dans le centre de conformité Microsoft 365. Une fois que vous avez configuré et configuré le connecteur, il se connecte à la source de données tierce, convertit le contenu d’un élément en format de message électronique, puis importe l’élément dans une boîte aux lettres dans Microsoft 365. Actuellement, vous pouvez implémenter des connecteurs pour importer et archiver des données à partir de pages d’entreprise Facebook, de comptes Twitter d’entreprise, de LinkedIn, de Bloomberg ou de ressources humaines (RH) de votre organisation. Pour obtenir des instructions détaillées sur la configuration de l’un de ces connecteurs, voir :
 
-- **Travaillez avec un partenaire Microsoft :** Votre organisation travaille avec un partenaire Microsoft qui fournira un connecteur personnalisé qui sera configuré pour extraire régulièrement les éléments de la source de données tierce, puis se connecter au Cloud de Microsoft par une API tierce et importer ces éléments dans Office 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis l’importe dans une boîte aux lettres dans Office 365. Pour obtenir la liste des partenaires avec lesquels vous pouvez travailler et le processus pas à pas pour cette méthode, consultez [collaborer avec un partenaire pour archiver des données tierces dans Office 365](work-with-partner-to-archive-third-party-data.md).
+   - **Facebook :** [utiliser un connecteur pour archiver des données Facebook](archive-facebook-data-with-sample-connector.md)
+
+   - **Twitter :** [utiliser un connecteur pour archiver les données Twitter](archive-twitter-data-with-sample-connector.md)
+
+   - **LinkedIn :** [configurer un connecteur pour l’archivage des données LinkedIn](archive-linkedin-data.md)
+
+   - **Instant Bloomberg :** [configurer un connecteur pour l’archivage des données Bloomberg instantanées](archive-instant-bloomberg-data.md)
+
+   - **Données RH :** [configurer un connecteur pour importer des données RH](import-hr-data.md)
+
+- **Travaillez avec un partenaire Microsoft :** Votre organisation travaille avec un partenaire Microsoft qui fournira un connecteur personnalisé qui sera configuré pour extraire régulièrement les éléments de la source de données tierce, puis se connecter au Cloud de Microsoft par une API tierce et importer ces éléments dans Microsoft 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis l’importe dans une boîte aux lettres dans Microsoft 365. Pour obtenir la liste des partenaires avec lesquels vous pouvez travailler et le processus pas à pas pour cette méthode, consultez [collaborer avec un partenaire pour archiver des données tierces dans Microsoft 365](work-with-partner-to-archive-third-party-data.md).

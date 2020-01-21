@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le catalogue de solutions Microsoft 365, y compris son contenu, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: b881e51f08e201f2870ea979e3f6c8181ab2ea02
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831637"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247597"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Vue d’ensemble du catalogue de solutions Microsoft 365 (version préliminaire)
 
@@ -51,13 +51,14 @@ La section **information protection & gouvernance** vous montre comment utiliser
 
 ## <a name="insider-risk-management-section"></a>Section gestion des risques internes
 
-La section **gestion des risques inSided** sur la page d’accueil vous montre en un clin d’œil comment votre organisation peut identifier, analyser et corriger les risques internes avant qu’ils ne causent des dégâts.
+La section **gestion des risques inSided** sur la page d’accueil vous montre en un clin d’œil comment votre organisation peut identifier, analyser et prendre des mesures sur les risques internes avant qu’ils ne causent des dégâts.
 
-![Section sur la gestion des risques du catalogue de solutions Microsoft 365](media/m365-solution-catalog-internal-risk-management.png)
+![Section sur la gestion des risques du catalogue de solutions Microsoft 365](media/m365-solution-catalog-insider-risk-management.png)
 
-À partir de là, vous pouvez accéder à une carte pour la solution suivante :
+À partir de là, vous verrez des cartes pour les solutions suivantes :
 
-- [Conformité des communications](communication-compliance.md): minimise les risques de communication en vous aidant à capturer automatiquement les messages inappropriés, à analyser les violations de stratégie possibles et à prendre des mesures pour corriger.
+- [Conformité des communications](communication-compliance.md): minimise les risques de communication en vous aidant à capturer automatiquement les messages inappropriés, à analyser les violations de stratégie possibles et à réduire les dégâts.
+- [Gestion des risques initiés](insider-risk-management.md): détectez les activités à risque au sein de votre organisation pour vous aider à identifier rapidement, à examiner et à prendre des mesures concernant les risques et les menaces pour les initiés.
 
 ## <a name="discovery--response-section"></a>Section Response & Response
 
@@ -95,6 +96,8 @@ Si vous recherchez une solution de conformité existante et qu’elle n’est pa
 ## <a name="next-steps"></a>Étapes suivantes
 
 - **Examinez votre score de conformité Microsoft**, un score personnalisé basé sur les risques pour vous aider à comprendre l’état de conformité de votre organisation à l’aide des normes et réglementations clés. Il fournit les actions recommandées que vous pouvez prendre pour renforcer votre position globale de conformité et fournit des fonctionnalités de flux de travail pour vous aider à exécuter efficacement ces actions. Pour en savoir plus, consultez [la rubrique score de conformité (aperçu)](compliance-score.md).
+
+- **Configurez des stratégies de gestion des risques initiés** pour minimiser les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Consultez la rubrique [gestion des risques internes](insider-risk-management.md).
 
 - **Microsoft information protection**, Découvrez comment les solutions Microsoft 365 vous aident à découvrir, classer et protéger les informations sensibles où qu’elles soient ou que vous parcouriez.
     - **Familiarisez-vous avec la sécurité des applications Cloud de Microsoft et configurez**-la. Voir [démarrage rapide : prise en main de la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).

@@ -11,16 +11,16 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des pages Facebook dans Office 365. Une fois ces données importées dans Office 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Facebook de votre organisation.
-ms.openlocfilehash: e1ab281b8a3b684f408f80f86246778a9ee6267d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bb348c6e08151d63e92973d3f262704357e40814
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806257"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247477"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data"></a>Déploiement d’un connecteur pour l’archivage des données Facebook
 
-Cet article contient le processus étape par étape pour déployer un connecteur qui utilise le service d’importation Office 365 pour importer des données à partir de pages d’entreprise Facebook vers Office 365. Pour une vue d’ensemble de ce processus et une liste des conditions préalables requises pour déployer un connecteur Facebook, voir [utiliser un exemple de connecteur pour archiver des données Facebook dans Office 365 (version d’évaluation)](archive-facebook-data-with-sample-connector.md). 
+Cet article contient le processus étape par étape pour déployer un connecteur qui utilise le service d’importation Office 365 pour importer des données à partir de pages d’entreprise Facebook vers Office 365. Pour une vue d’ensemble de ce processus et une liste des conditions préalables requises pour déployer un connecteur Facebook, reportez-vous à la rubrique [utiliser un connecteur pour archiver des données Facebook dans Office 365 (version préliminaire)](archive-facebook-data-with-sample-connector.md). 
 
 ## <a name="step-1-download-the-package"></a>Étape 1 : Télécharger le package
 

@@ -1,5 +1,5 @@
 ---
-title: Utiliser un exemple de connecteur pour archiver les données Twitter (aperçu)
+title: Configuration d’un connecteur pour l’archivage des données Twitter
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,28 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données Twitter dans Office 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données tierces de votre organisation.
-ms.openlocfilehash: 77f0a0615a177c0bfd6179a6a5ce1a58b024dcdc
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 083c293e869cb35b428592717b7cf3810e7fea8c
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807483"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247557"
 ---
-# <a name="use-a-sample-connector-to-archive-twitter-data-preview"></a>Utiliser un exemple de connecteur pour archiver les données Twitter (aperçu)
+# <a name="set-up-a-connector-to-archive-twitter-data"></a>Configuration d’un connecteur pour l’archivage des données Twitter
 
-L’exemple de fonctionnalité de connecteur permettant d’archiver des données Twitter dans Office 365 est en aperçu.
+Utilisez un connecteur dans le centre de sécurité & conformité dans Office 365 pour importer et archiver des données à partir de Twitter. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au compte Twitter de votre organisation (de manière planifiée), convertit le contenu d’un élément en un format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Office 365.
 
-Utilisez un exemple de connecteur dans le centre de sécurité & conformité dans Office 365 pour importer et archiver des données à partir de Twitter. Une fois que vous avez configuré et configuré un exemple de connecteur, il se connecte au compte Twitter de votre organisation (de manière planifiée), convertit le contenu d’un élément en un format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Office 365.
-
-Une fois les données Twitter importées, vous pouvez appliquer les fonctionnalités de conformité d’Office 365 telles que la conservation pour litige, la recherche de contenu, l’archivage inaltérable, l’audit, la conformité de la [communication](communication-compliance.md)et les stratégies de rétention d’Office 365 aux données stockées dans la boîte aux lettres. Par exemple, vous pouvez rechercher des données Twitter à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données sont stockées avec un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un exemple de connecteur pour importer et archiver des données Twitter dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
-
-> [!NOTE]
-> Actuellement, seuls les exemples de connecteurs pour les [pages](archive-facebook-data-with-sample-connector.md) de l’entreprise Twitter et Facebook sont disponibles pour l’aperçu. D’autres exemples de connecteurs seront bientôt disponibles.
-
+Une fois les données Twitter importées, vous pouvez appliquer les fonctionnalités de conformité d’Office 365 telles que la conservation pour litige, la recherche de contenu, l’archivage inaltérable, l’audit, la conformité de la communication et les stratégies de rétention d’Office 365 aux données stockées dans la boîte aux lettres. Par exemple, vous pouvez rechercher des données Twitter à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données sont stockées avec un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur pour importer et archiver des données Twitter dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>Conditions préalables à la configuration d’un connecteur pour Twitter
 
-Complétez les conditions préalables suivantes avant de pouvoir installer et configurer un exemple de connecteur dans le centre de sécurité & conformité afin d’importer et d’archiver les données à partir du compte Twitter de votre organisation. 
+Complétez les conditions préalables suivantes avant de pouvoir installer et configurer un connecteur dans le centre de sécurité & conformité afin d’importer et d’archiver les données à partir du compte Twitter de votre organisation. 
 
 - Vous avez besoin d’un compte Twitter pour votre organisation ; vous devez vous connecter à ce compte lors de la configuration du connecteur.
 
@@ -42,7 +36,7 @@ Complétez les conditions préalables suivantes avant de pouvoir installer et co
     - [S’inscrire pour un abonnement Azure avec paiement en tant que](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > L' [abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md) qui est inclus avec votre abonnement Office 365 ne prend pas en charge les connecteurs d’exemple dans le centre de sécurité & Compliance Center.
+    > L' [abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md) qui est inclus avec votre abonnement Office 365 ne prend pas en charge les connecteurs dans le centre de sécurité & Compliance Center.
 
 - Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour accepter cette demande, accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), connectez-vous à l’aide des informations d’identification d’un administrateur général Office 365, puis acceptez la demande.
 
@@ -50,7 +44,7 @@ Complétez les conditions préalables suivantes avant de pouvoir installer et co
 
 ## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>Étape 1 : Télécharger le package d’application de connecteur pré-généré à partir de GitHub
 
-La première étape consiste à télécharger le code source de l’exemple de l’application de connecteur Twitter qui utilisera une API Twitter pour se connecter à votre compte Twitter et extraire les données afin de pouvoir les importer dans Office 365.
+La première étape consiste à télécharger le code source de l’application de connecteur Twitter qui utilisera une API Twitter pour se connecter à votre compte Twitter et extraire des données afin de pouvoir les importer dans Office 365.
 
 1. Accédez à [ce site github](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases). 
 2. Sous la dernière version, sélectionnez le fichier **SampleConnector. zip** .
