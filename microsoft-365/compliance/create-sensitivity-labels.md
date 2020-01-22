@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation.
-ms.openlocfilehash: edcfcf5a4f4891e4e1159c4c42327e59ceb35449
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 964fd20d6ada935d2a76ca0bffccc5bf46161c58
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238401"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247457"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -53,7 +53,10 @@ Commencez par créer et configurer les étiquettes de confidentialité que vous 
 
 5. Lorsque vous avez créé les étiquettes dont vous avez besoin, vérifiez leur ordre et déplacez-les vers le haut ou vers le bas si nécessaire. Pour modifier l’ordre d’une étiquette, sélectionnez **...** pour **Plus d’actions**, puis choisissez **Déplacer vers le haut** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité d'étiquette (trier les thèmes)](sensitivity-labels.md#label-priority-order-matters) dans les informations générales.
 
-Pour modifier une étiquette existante, sélectionnez-la, puis choisissez **Modifier l'étiquette**. L’Assistant **Modifier l'étiquette de confidentialité** démarre, vous permettant de modifier les paramètres d’étiquette à l’étape 3. Si l’étiquette est déjà publiée à l’aide d’une stratégie d’étiquette, aucune étape supplémentaire n’est nécessaire, mais patientez jusqu’à 24 heures pour que les modifications soient répliquées vers les utilisateurs et les emplacements.
+Pour modifier une étiquette existante, sélectionnez-la, puis choisissez **Modifier l'étiquette**. L’Assistant **Modifier l'étiquette de confidentialité** démarre, vous permettant de modifier les paramètres d’étiquette à l’étape 3. 
+
+> [!NOTE]
+> Si vous modifiez une étiquette, qui est déjà publiée, à l'aide d'une stratégie d'étiquette, aucune autre étape n'est nécessaire à la fin de l'Assistant. Par exemple, vous n’avez pas à l'inclure à une nouvelle stratégie d’étiquette. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications se répliquent vers les utilisateurs et les services.
 
 Les étiquettes sont disponibles dans des applications ou des services après les avoir publiées. Les étiquettes doivent être ajoutées à une stratégie d'étiquette pour être publiées.
 
@@ -67,7 +70,18 @@ L'utilisation de cette applet de commande vous permet également de spécifier d
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publier des étiquettes de confidentialité en créant une stratégie d’étiquette
 
-1. Dans le centre d’administration des étiquettes, accédez à la **Classification** > **des étiquettes de confidentialité**.
+1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
+    
+    - Centre de conformité Microsoft 365 : 
+        - **Solutions pour la** > **protection des informations (aperçu)**
+        
+        Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
+    
+    - Centre de sécurité Microsoft 365 : 
+        - **Classification** > **des étiquettes de confidentialité**
+    
+    - Centre de sécurité et conformité Office 365 :
+        - **Classification** > **des étiquettes de confidentialité**
 
 2. Sélectionnez l'onglet **Stratégies d'étiquette**.
 
@@ -87,7 +101,9 @@ L'utilisation de cette applet de commande vous permet également de spécifier d
 
 La stratégie d’étiquette est publiée automatiquement dès la fin de l'Assistant. Pour apporter des modifications à une stratégie publiée, il vous suffit la modifier. Vous ne devez sélectionner aucune action de publication ou de republication spécifique.
 
-Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choisissez **Modifier la stratégie**. Cette opération démarre l’Assistant **Créer une stratégie** qui vous permet de modifier les étiquettes incluses et leurs paramètres. Une fois l’exécution de l’Assistant terminée, toutes les modifications sont automatiquement répliquées vers les emplacements et les utilisateurs sélectionnés. Veuillez patienter 24 heures pour que la réplication se finalise.
+Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choisissez **Modifier la stratégie**. Cette opération démarre l’Assistant **Créer une stratégie** qui vous permet de modifier les étiquettes incluses et leurs paramètres. Une fois l’exécution de l’Assistant terminée, toutes les modifications sont automatiquement répliquées vers les services et les utilisateurs sélectionnés.
+
+Les utilisateurs peuvent généralement voir les étiquettes dans leurs applications Office dans les heures qui suivent. Veuillez toutefois patienter 24 heures pour vos stratégies d’étiquettes et toute modification apportée à celles-ci se répliquent vers l'ensemble des utilisateurs et des services.
 
 ### <a name="additional-label-policy-settings-with-office-365-security--compliance-center-powershell"></a>Paramètres de stratégie d'étiquette supplémentaires dans le Centre de sécurité et conformité Office 365 PowerShell
 
@@ -100,7 +116,7 @@ Vous pouvez également utiliser cette applet de commande pour ajouter et supprim
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour configurer et utiliser vos étiquettes de confidentialité pour des scénarios spécifiques, voir les articles suivants :
+Pour configurer et utiliser vos étiquettes de confidentialité pour des scénarios déterminés, servez-vous des articles suivants :
 
 - [Restreindre l’accès au contenu à l’aide du chiffrement dans les étiquettes de niveau de confidentialité](encryption-sensitivity-labels.md)
 
