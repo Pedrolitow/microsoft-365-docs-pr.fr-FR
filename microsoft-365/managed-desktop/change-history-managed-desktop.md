@@ -8,16 +8,25 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 8713b678432d71304649e05fba466659de0369ad
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634061"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260122"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cette rubrique répertorie les rubriques nouvelles et mises à jour dans la [documentation du bureau géré Microsoft](index.yml). Les rubriques « mises à jour » sont celles qui ont eu des ajouts ou corrections de matériel (correctifs mineurs, tels que la correction des fautes de frappe, de style ou de mise en forme). Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails de toutes les modifications) en visitant le [référentiel sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="december-2019"></a>Décembre 2019
+Rubrique nouvelle ou modifiée | Description
+--- | ---
+[Prise en charge des administrateurs pour le bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Rubrique mise à jour
+[Appareils de bureau gérés Microsoft](service-description/device-list.md) | Rubrique mise à jour
+[Appareils archivés Microsoft Managed Desktop](service-description/archived-device-list.md) | Rubrique mise à jour
+
+
 
 ## <a name="november-2019"></a>Novembre 2019
 Rubrique nouvelle ou modifiée | Description

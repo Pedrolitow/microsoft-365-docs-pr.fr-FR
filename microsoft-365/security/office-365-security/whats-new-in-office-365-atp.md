@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a43576bc18d54e3a5c9b2f9ad918c1df3ee67615
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2ad99943869d3edc16316d90efb9bbfd70a6f18f
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807939"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260222"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -30,10 +30,6 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 > [!TIP]
 > Vous n’avez pas encore Office 365 ATP ? [Contactez le service commercial pour commencer une version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkId=518644).
-
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 – Protection avancée contre les menaces Plan 1 et Plan 2
-
-La protection avancée contre les menaces Office 365 est disponible en deux plans : Office 365 ATP plan 1 et Office 365 ATP plan 2. [En savoir plus](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 ## <a name="december-2019"></a>Décembre 2019
 
@@ -53,7 +49,7 @@ La protection avancée contre les menaces Office 365 est disponible en deux plan
 
 - [Afficher les en-têtes des messages électroniques et télécharger le corps du courrier](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body) (plan 1 de l’ATP Office 365 ou plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Affichage de la chronologie de l’e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (plan 1 Office 365 DAV ou plan 2)
 
@@ -65,8 +61,14 @@ La protection avancée contre les menaces Office 365 est disponible en deux plan
 
 - [Affichez les données sur les URL d’hameçonnage et cliquez sur verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (plan 1 Office 365 DAV ou plan 2)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 – Protection avancée contre les menaces Plan 1 et Plan 2
+
+Saviez-vous qu’Office 365 ATP est disponible dans deux plans ? Office 365 DAV plan 1 et Office 365 DAV plan 2. [En savoir plus sur ce que chaque plan inclut](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+
+## <a name="see-also"></a>Consultez aussi
 
 [Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Description du service ATP Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+[Examen et réponses automatisés dans Protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

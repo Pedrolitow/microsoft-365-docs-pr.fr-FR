@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2366c7b9e3c95ee88753ffb7677a7031c8ac9786
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962321"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260102"
 ---
 # <a name="work-with-insights"></a>Utiliser les informations
 
@@ -40,4 +40,9 @@ En savoir plus sur les informations d' [utilisation](usage-insights.md).
 ## <a name="reliability-insights"></a>Informations de fiabilité
 Cet affichage vous fournit un résumé de l’intégrité de vos appareils gérés. Pour afficher les données de fiabilité, sélectionnez l’onglet **fiabilité** .
 
-En savoir plus sur les informations de [fiabilité](reliability-insights.md)
+En savoir plus sur les informations de [fiabilité](reliability-insights.md).
+
+## <a name="battery-insights"></a>Informations sur la batterie
+Cette vue présente des informations sur la consommation d’énergie des applications et la durée de vie de la batterie pour les périphériques de votre environnement. Pour afficher ces informations, sélectionnez l’onglet **batterie** .
+
+En savoir plus sur les informations sur les [batteries](battery-insights.md).

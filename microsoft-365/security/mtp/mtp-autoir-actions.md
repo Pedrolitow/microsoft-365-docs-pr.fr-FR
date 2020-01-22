@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: edc952a0361ee8cfa6ed3df2eaf80f0fc4bf7fd5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 35433eccf93c56a8f8bf66b50fa6728ff7585d8e
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808459"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260202"
 ---
 # <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>Approuver ou rejeter des actions en attente provenant d’une enquête automatisée
 
@@ -31,6 +31,9 @@ ms.locfileid: "40808459"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Lorsqu’une enquête automatisée s’exécute, elle peut engendrer une ou plusieurs [actions de correction](mtp-action-center.md#remediation-actions) nécessitant une approbation pour continuer. Par exemple, il peut être nécessaire de supprimer un cluster d’e-mails ou un fichier mis en quarantaine. Il est important d’approuver (ou de refuser) les actions en attente dès que possible de sorte que vos enquêtes automatisées puissent se poursuivre et se terminer dans un délai raisonnable. 
+
+> [!TIP]
+> Si vous pensez qu’un message a été manqué ou incorrectement détecté par les fonctionnalités d’analyse et de réponse automatiques dans Microsoft Threat Protection, faites-le nous savoir. Découvrez [Comment signaler des faux positifs/négatifs dans les capacités d’inspection et de réponse automatiques de Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 Les actions en attente peuvent être examinées et approuvées à l’aide de l’une des méthodes suivantes :
 - [Utiliser le Centre de notifications](#review-a-pending-action-in-the-action-center)
