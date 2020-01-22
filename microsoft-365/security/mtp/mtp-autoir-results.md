@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: d33844c1bd774f6b53dbbaa428762c4832fccb85
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e70fa5f226b25df72514f75bb20873665d9021f6
+ms.sourcegitcommit: ca06ee52dec472d3827983d67b049847ec2fdfc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806983"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41256550"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
 
@@ -92,6 +92,9 @@ Lorsqu’un examen automatisé se termine, un verdict est atteint pour chaque é
 |Nettoyer  |Appareils ou contenu de l’e-mail   |Aucune action de correction n’est nécessaire|
 
 [Examiner une action en attente dans le centre de notifications](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
+
+> [!TIP]
+> Si vous pensez qu’un message a été manqué ou incorrectement détecté par les fonctionnalités d’analyse et de réponse automatiques dans Microsoft Threat Protection, faites-le nous savoir. Découvrez [Comment signaler des faux positifs/négatifs dans les capacités d’inspection et de réponse automatiques de Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
