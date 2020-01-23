@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 est fourni avec un certain nombre de classifieurs d’apprentissage automatique prêts à l’emploi que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs prêts à l’emploi.
-ms.openlocfilehash: 6eaa3689dce1bfb37fdad6b1b22dcac3539bb31e
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: b94a49930cc2d460fb2db5ff4ff0f441f6c7b35a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807413"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259430"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>Utilisation d’un classificateur prêt à l’emploi (préversion)
 
@@ -45,7 +45,7 @@ Microsoft a formé et testé un certain nombre de classifieurs utilisant des exe
 
 2. Créez un dossier SharePoint Online dédié ; Patientez au moins une heure pour que le dossier soit ajouté à l’index de recherche. Notez l’URL du dossier.
 
-3. Connectez-vous au centre de conformité Microsoft 365 avec l’administrateur de conformité ou l’accès au rôle d’administrateur de sécurité, puis ouvrez le **Centre de conformité Microsoft 365** ou **Microsoft 365 Centre** > **de sécurité gestion des enregistrements (aperçu)** > **stratégies d’étiquette** .
+3. Connectez-vous au centre de conformité Microsoft 365 avec l’accès administrateur de conformité ou au rôle d’administrateur de sécurité et ouvrez l’onglet**stratégies** de**gestion** > des enregistrements du centre > de **conformité Microsoft 365**.
 
 4. Choisissez `Auto-apply a label`.
 

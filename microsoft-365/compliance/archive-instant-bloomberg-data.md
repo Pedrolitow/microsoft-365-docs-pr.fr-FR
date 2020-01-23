@@ -9,23 +9,23 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir de l’outil de conversation Bloomberg dans Office 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 55b0acf6a2643fed4a994604e92e4c0e218da5d9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir de l’outil de conversation Bloomberg dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+ms.openlocfilehash: 094a3687f16d0d7bcdb1dc6c8040eb73866f0461
+ms.sourcegitcommit: ca06ee52dec472d3827983d67b049847ec2fdfc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807749"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41256530"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurer un connecteur pour archiver les données Instant Bloomberg
 
-Utilisez un connecteur natif dans le centre de sécurité & conformité dans Office 365 pour importer et archiver les données de conversation des services financiers à partir de l’outil de collaboration [instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) . Une fois que vous avez configuré et configuré un connecteur, il se connecte au site FTP Secure (SFTP) de votre organisation une fois par jour, convertit le contenu des messages de conversation en format de message électronique, puis importe ces éléments dans des boîtes aux lettres dans Office 365.
+Utilisez un connecteur natif dans le centre de conformité Microsoft 365 pour importer et archiver les données de conversation des services financiers à partir de l’outil de collaboration [instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) . Une fois que vous avez configuré et configuré un connecteur, il se connecte au site FTP Secure (SFTP) de votre organisation une fois par jour, convertit le contenu des messages de conversation en format de message électronique, puis importe ces éléments dans des boîtes aux lettres dans Microsoft 365.
 
-Une fois que les données instantanées Bloomberg sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer les fonctionnalités de conformité d’Office 365 telles que la conservation pour litige, la recherche de contenu, l’archivage inaltérable, l’audit, [la conformité de la communication](communication-compliance.md)et les stratégies de rétention d’Office 365 aux données instantanées Bloomberg. Par exemple, vous pouvez rechercher des messages de conversation instant Bloomberg à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données Bloomberg instantanée à un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur Bloomberg instantané pour importer et archiver des données dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois que les données instantanées Bloomberg sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, la recherche de contenu, l’archivage inaltérable, l’audit, [la conformité de la communication](communication-compliance.md)et les stratégies de rétention de Microsoft 365 aux données instantanées Bloomberg. Par exemple, vous pouvez rechercher des messages de conversation instant Bloomberg à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données Bloomberg instantanée à un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur Bloomberg instantané pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>Vue d’ensemble de l’archivage des données de la fonctionnalité Bloomberg instantanée
 
-La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver des données de conversation de messagerie instantanée Bloomberg dans Office 365. 
+La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver des données de conversation de messagerie instantanée Bloomberg dans Microsoft 365. 
 
 ![Processus d’importation et d’archivage de Bloomberg instantané](media/InstantBloombergDataArchiving.png)
 
@@ -33,23 +33,19 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 2. Une fois toutes les 24 heures, les messages de conversation provenant d’instant Bloomberg sont copiés sur le site Bloomberg SFTP.
     
-3. Le connecteur Bloomberg instantané que vous créez dans le centre de sécurité & conformité se connecte au site de Bloomberg SFTP tous les jours et transfère les messages de conversation des dernières 24 heures vers une zone de stockage Azure sécurisée dans le Cloud Microsoft. Le connecteur convertit également le contenu d’un massage de conversation au format d’un message électronique.
+3. Le connecteur Bloomberg instantané que vous créez dans le centre de conformité Microsoft 365 se connecte au site de Bloomberg SFTP tous les jours et transfère les messages de conversation des 24 heures précédents vers une zone de stockage Azure sécurisée dans le Cloud Microsoft. Le connecteur convertit également le contenu d’un massage de conversation au format d’un message électronique.
     
-4. Le connecteur importe les éléments de message de conversation vers la boîte aux lettres d’un utilisateur spécifique ou vers une autre boîte aux lettres. Le connecteur utilise la valeur de la propriété *CorporateEmailAddress* . Chaque message de conversation contient cette propriété, qui est renseignée avec l’adresse de messagerie de chaque participant du message de conversation. L’impossibilité d’importer un élément dans une boîte aux lettres utilisateur spécifique ou dans une autre boîte aux lettres est basée sur les critères suivants :
-    
-    a. **Éléments ayant une valeur dans la propriété CorporateEmailAddress qui correspond à un compte d’utilisateur Office 365 :** Si le connecteur peut associer l’adresse de messagerie de la propriété *CorporateEmailAddress* à un compte d’utilisateur spécifique dans Office 365, l’élément est copié dans le dossier boîte de réception de la boîte aux lettres Office 365 de l’utilisateur.
-    
-    b. **Éléments dont la propriété CorporateEmailAddress ne correspond pas à un compte d’utilisateur Office 365 :** Si le connecteur ne peut pas associer une adresse de messagerie de la propriété *CorporateEmailAddress* à un compte d’utilisateur spécifique dans Office 365, l’élément est copié dans le dossier boîte de réception d’une autre boîte aux lettres « catch-tout » dans Office 365.
+4. Le connecteur importe les éléments de message de conversation vers la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé InstantBloomberg sera créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y seront importés. Le connecteur utilise la valeur de la propriété *CorporateEmailAddress* . Chaque message de conversation contient cette propriété, qui est renseignée avec l’adresse de messagerie de chaque participant du message de conversation. Outre le mappage utilisateur automatique à l’aide de la valeur de la propriété *CorporateEmailAddress* , vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage doit contenir un UUID Bloomberg et l’adresse de boîte aux lettres Microsoft 365 de corresponing pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et que vous fournissez un mappage de mappage personnalisé, le connecteur regarde d’abord le fichier de mappage personnalisé pour chaque élément de conversation. S’il ne trouve pas d’utilisateur valide de Microsoft 365 correspondant à l’UUID de l’utilisateur Bloomberg, le connecteur utilise la propriété *CorporateEmailAddress* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété *CorporateEmailAddress* de l’élément de conversation, l’élément n’est pas importé.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-La plupart des étapes d’implémentation nécessaires à l’archivage des données de la demande instantanée sont externes à Office 365 et doivent être effectuées pour pouvoir créer le connecteur dans le centre de sécurité & conformité.
+La plupart des étapes d’implémentation nécessaires à l’archivage des données de la demande instantanée sont externes à Microsoft 365 et doivent être effectuées avant de pouvoir créer le connecteur dans le centre de conformité.
 
 - Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour accepter cette demande, accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), connectez-vous à l’aide des informations d’identification d’un administrateur général Office 365, puis acceptez la demande. Vous devez effectuer cette étape avant de pouvoir créer le connecteur Bloomberg instantané à l’étape 3.
 
 - S’abonner à [Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA). Cette opération est nécessaire afin que vous puissiez vous connecter à Bloomberg Anywhere pour accéder au site Bloomberg SFTP que vous devez configurer et configurer.
 
-- Configurez un site Bloomberg SFTP (Secure File Transfer Protocol). Après avoir travaillé avec Bloomberg pour configurer le site SFTP, les données de instant Bloomberg sont téléchargées sur le site SFTP tous les jours. Le connecteur que vous créez à l’étape 2 se connecte à ce site SFTP et transfère les données de conversation vers les boîtes aux lettres Office 365. SFTP chiffre également les données de conversation de la messagerie instantanée Bloomberg envoyées aux boîtes aux lettres Office 365 lors du processus de transfert.
+- Configurez un site Bloomberg SFTP (Secure File Transfer Protocol). Après avoir travaillé avec Bloomberg pour configurer le site SFTP, les données de instant Bloomberg sont téléchargées sur le site SFTP tous les jours. Le connecteur que vous créez à l’étape 2 se connecte à ce site SFTP et transfère les données de conversation vers des boîtes aux lettres Microsoft 365. SFTP chiffre également les données de conversation de la messagerie instantanée Bloomberg qui sont envoyées aux boîtes aux lettres pendant le processus de transfert.
 
     Pour plus d’informations sur Bloomberg SFTP (également appelé *BB-SFTP*) :
 
@@ -67,15 +63,15 @@ La plupart des étapes d’implémentation nécessaires à l’archivage des don
 
     - Numéro de port pour le site Bloomberg SFTP
 
-- L’utilisateur qui crée un connecteur Bloomberg instantané à l’étape 3 (et qui télécharge les clés publiques et l’adresse IP à l’étape 1) doit se voir attribuer le rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Cela est nécessaire pour accéder à la page données tierces d' **archivage** dans le centre de sécurité & conformité. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
+- L’utilisateur qui crée un connecteur Bloomberg instantané à l’étape 3 (et qui télécharge les clés publiques et l’adresse IP à l’étape 1) doit se voir attribuer le rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **connecteurs de données** dans le centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
 
 ## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>Étape 1 : obtenir des clés publiques SSH et PGP
 
-La première étape consiste à obtenir une copie des clés publiques pour le protocole SSH (Secure Shell) et PGP (Pretty bonne confidentialité). Utilisez ces clés à l’étape 2 pour configurer le site Bloomberg SFTP de sorte que le connecteur (que vous créez à l’étape 3) se connecte au site SFTP et transfère les données de conversation instant Bloomberg vers les boîtes aux lettres Office 365. Vous pouvez également obtenir une adresse IP dans cette étape, que vous utiliserez lors de la configuration du site Bloomberg SFTP.
+La première étape consiste à obtenir une copie des clés publiques pour le protocole SSH (Secure Shell) et PGP (Pretty bonne confidentialité). Utilisez ces clés à l’étape 2 pour configurer le site Bloomberg SFTP de sorte que le connecteur (que vous créez à l’étape 3) se connecte au site SFTP et transfère les données de conversation instant Bloomberg vers des boîtes aux lettres Microsoft 365. Vous pouvez également obtenir une adresse IP dans cette étape, que vous utiliserez lors de la configuration du site Bloomberg SFTP.
 
-1. Accédez à <https://protection.office.com> , puis cliquez sur **gouvernance \> des informations importer** > **des données**tierces.
+1. Accédez à <https://compliance.microsoft.com> , puis cliquez sur **Data Connectors** > **instant Bloomberg**.
 
-2. Sur la page données tierces d' **archivage** , cliquez sur **Ajouter un connecteur**, puis cliquez sur **Bloomberg instantané**.
+2. Dans la page Description du produit du complément **instantané** , cliquez sur **Ajouter un connecteur** .
 
 3. Sur la page **conditions de service** , cliquez sur **accepter**.
 
@@ -83,7 +79,7 @@ La première étape consiste à obtenir une copie des clés publiques pour le pr
 
    - Clé publique SSH : cette clé permet de configurer le protocole SSH (Secure Shell) pour activer une connexion à distance sécurisée lorsque le connecteur se connecte au site Bloomberg SFTP.
 
-   - Clé publique PGP : cette clé permet de configurer le chiffrement des données transférées à partir du site Bloomberg SFTP vers Office 365.
+   - Clé publique PGP : cette clé permet de configurer le chiffrement des données transférées à partir du site Bloomberg SFTP vers Microsoft 365.
 
    - Adresse IP : le site d’Bloomberg SFTP est configuré pour accepter une demande de connexion uniquement à partir de cette adresse IP, utilisée par le connecteur Bloomberg instantané que vous créez à l’étape 3. 
 
@@ -91,18 +87,18 @@ La première étape consiste à obtenir une copie des clés publiques pour le pr
 
 ## <a name="step-2-configure-the-bloomberg-sftp-site"></a>Étape 2 : configurer le site Bloomberg SFTP
 
-L’étape suivante consiste à utiliser les clés publiques SSH et PGP, ainsi que l’adresse IP que vous avez obtenue à l’étape 1, pour configurer l’authentification SSH et le chiffrement PGP pour le site Bloomberg SFTP. Cela permet au connecteur Bloomberg instantané que vous créez à l’étape 3 de se connecter au site Bloomberg SFTP et de transférer les données de la fonctionnalité Bloomberg vers Office 365. Vous devez utiliser le support client Bloomberg pour configurer votre site Bloomberg SFTP. Contactez le support technique de [client Bloomberg](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) pour obtenir de l’aide. 
+L’étape suivante consiste à utiliser les clés publiques SSH et PGP, ainsi que l’adresse IP que vous avez obtenue à l’étape 1, pour configurer l’authentification SSH et le chiffrement PGP pour le site Bloomberg SFTP. Cela permet au connecteur Bloomberg instantané que vous créez à l’étape 3 de se connecter au site Bloomberg SFTP et de transférer les données de la fonctionnalité Bloomberg vers Microsoft 365. Vous devez utiliser le support client Bloomberg pour configurer votre site Bloomberg SFTP. Contactez le support technique de [client Bloomberg](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) pour obtenir de l’aide. 
 
 > [!IMPORTANT]
 > Bloomberg recommande de joindre les trois fichiers que vous avez téléchargés à l’étape 1 à un message électronique et de les envoyer à leur équipe de support technique lorsqu’ils travaillent dessus pour configurer votre site Bloomberg SFTP.
 
 ## <a name="step-3-create-an-instant-bloomberg-connector"></a>Étape 3 : créer un connecteur Bloomberg instantané
 
-La dernière étape consiste à créer un connecteur Bloomberg instantané dans le centre de sécurité & conformité. Le connecteur utilise les informations que vous fournissez pour vous connecter au site Bloomberg SFTP et transférer les messages de conversation dans les zones de boîte aux lettres utilisateur correspondantes dans Office 365. 
+La dernière étape consiste à créer un connecteur Bloomberg instantané dans le centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site Bloomberg SFTP et transférer les messages de conversation dans les boîtes aux lettres utilisateur correspondantes dans Microsoft 365. 
 
-1. Accédez à <https://protection.office.com> , puis cliquez sur **gouvernance \> des informations importer** > **des données**tierces.
+1. Accédez à <https://compliance.microsoft.com> , puis cliquez sur **Data Connectors** > **instant Bloomberg**.
 
-2. Sur la page données tierces d' **archivage** , cliquez sur **Ajouter un connecteur**, puis cliquez sur **Bloomberg instantané**.
+2. Dans la page Description du produit du complément **instantané** , cliquez sur **Ajouter un connecteur** .
 
 3. Sur la page **conditions de service** , cliquez sur **accepter**.
 
@@ -116,11 +112,11 @@ La dernière étape consiste à créer un connecteur Bloomberg instantané dans 
 
     - **Port sftp :** Numéro de port du site Bloomberg SFTP. Le connecteur utilise ce port pour se connecter au site SFTP.
 
-5. Sur la page **autre boîte aux lettres** , tapez l’adresse de messagerie d’une boîte aux lettres qui est utilisée pour stocker les messages de conversation provenant d’un message de notification d’instant de la part qui ne sont pas associés à une boîte aux lettres utilisateur dans votre organisation.
+5. Sur la page mappage de l' **utilisateur** , activez le mappage utilisateur automatique et fournissez le mappage utilisateur personnalisé requis.
 
    > [!NOTE]
-   > Chaque message de conversation dans toutes les conversations de la notification instantanée Bloomberg inclut une propriété appelée *CorporateEmailAddress*, qui contient l’adresse de messagerie de votre organisation pour le participant de conversation. Pendant le processus d’importation, le connecteur tente d’importer des messages de conversation vers une boîte aux lettres d’utilisateur dans Office 365 qui a les mêmes adresses de messagerie que celles qui correspondent à celles de la propriété *CorporateEmailAddress* . S’il n’existe pas de boîte aux lettres Office 365 avec la même adresse que celle figurant dans la propriété *CorporateEmailAddress* , le connecteur importe le message de conversation vers l’autre boîte aux lettres que vous spécifiez sur cette page.
+   > Le connecteur importe les éléments de message de conversation vers la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé **InstantBloomberg** sera créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y seront importés. Le connecteur utilise la valeur de la propriété *CorporateEmailAddress* . Chaque message de conversation contient cette propriété et la propriété est renseignée avec l’adresse de messagerie de chaque participant du message de conversation. Outre le mappage utilisateur automatique à l’aide de la valeur de la propriété *CorporateEmailAddress* , vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Le fichier de mappage doit contenir l’UUID Bloomberg et l’adresse de boîte aux lettres Microsoft 365 de corresponing pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et que vous fournissez un mappage de mappage personnalisé, le connecteur regarde d’abord le fichier de mappage personnalisé pour chaque élément de conversation. S’il ne trouve pas d’utilisateur valide de Microsoft 365 correspondant à l’UUID de l’utilisateur Bloomberg, le connecteur utilise la propriété *CorporateEmailAddress* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété *CorporateEmailAddress* de l’élément de conversation, l’élément n’est pas importé.
 
 6. Cliquez sur **suivant**, vérifiez vos paramètres, puis cliquez sur **préparer** pour créer le connecteur.
 
-7. Accédez à la page données tierces d' **archivage** pour voir la progression du processus d’importation pour le nouveau connecteur.
+7. Accédez à la page **connecteurs de données** pour voir la progression du processus d’importation pour le nouveau connecteur.

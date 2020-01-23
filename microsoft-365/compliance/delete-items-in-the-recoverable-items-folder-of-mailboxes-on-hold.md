@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: 'Pour les administrateurs : supprimez les éléments du dossier éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s’agit d’un moyen efficace de supprimer des données accidentellement propagées dans Office 365.'
-ms.openlocfilehash: 1954ac4db8b978b0b1c3cdc8cee080cc0f0e6c22
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: "Pour les administrateurs : supprimer des éléments dans une \n\ndossier éléments récupérables de er pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s’agit d’un moyen efficace de supprimer des données accidentellement propagées dans Office 365."
+ms.openlocfilehash: 6eeb3fecc531d4790330236f8b8857aa4344b371
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685939"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259672"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en attente-aide de l’administrateur
 
@@ -45,17 +45,13 @@ Le dossier éléments récupérables d’une boîte aux lettres Exchange Online 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez disposer des deux rôles de gestion suivants dans Exchange Online pour rechercher et supprimer des messages dans le dossier éléments récupérables à l’étape 5.
-    
-  - **Recherche de boîte aux lettres** -ce rôle vous permet de rechercher des boîtes aux lettres dans votre organisation. Ce rôle n’est pas attribué par défaut aux administrateurs Exchange. Pour vous attribuer ce rôle, ajoutez-vous en tant que membre du groupe de rôles gestion de la découverte dans Exchange Online. 
-    
-  - **Importation de boîte aux lettres** -ce rôle vous permet de supprimer des messages de la boîte aux lettres d’un utilisateur. Par défaut, ce rôle n'est attribué à aucun groupe de rôles. Pour supprimer des messages des boîtes aux lettres des utilisateurs, vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. 
+- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles de gestionnaire de découverte électronique ou disposer du rôle de gestion de recherche de contenu. Pour supprimer des messages, vous devez être membre du groupe de rôles de gestion de l’organisation ou disposer du rôle de gestion de recherche et de purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez [la rubrique attribution d’autorisations eDiscovery dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - La procédure décrite dans cet article n’est pas prise en charge pour les boîtes aux lettres inactives. Cela est dû au fait que vous ne pouvez pas réappliquer une stratégie de rétention (ou une stratégie de rétention Office 365) à une boîte aux lettres inactive après l’avoir supprimée. Lorsque vous supprimez une conservation d’une boîte aux lettres inactive, celle-ci est remplacée par une boîte aux lettres normale et supprimée définitivement de votre organisation après avoir été traitée par l’Assistant dossier géré.
     
 - Vous ne pouvez pas effectuer cette procédure pour une boîte aux lettres affectée à une stratégie de rétention Office 365 qui a été verrouillée avec un verrou de conservation. Cela est dû au fait qu’un verrouillage de conservation vous empêche de supprimer ou d’exclure la boîte aux lettres de la stratégie de rétention Office 365 et de désactiver l’Assistant dossier géré sur la boîte aux lettres. Pour plus d’informations sur le verrouillage des stratégies de rétention, voir [verrouillage d’une stratégie de rétention](retention-policies.md#locking-a-retention-policy).
     
-- Si une boîte aux lettres n’est pas placée en conservation (ou si la récupération d’élément unique n’est pas activée), vous pouvez simplement supprimer les éléments du dossier éléments récupérables. Pour plus d’informations sur la procédure à suivre, consultez la rubrique [Rechercher et supprimer des messages ](https://go.microsoft.com/fwlink/?linkid=852453).
+- Si une boîte aux lettres n’est pas placée en conservation (ou si la récupération d’élément unique n’est pas activée), vous pouvez simplement supprimer les éléments du dossier éléments récupérables. Pour plus d’informations sur la procédure à suivre, consultez la rubrique [Rechercher et supprimer des messages électroniques dans votre organisation Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Étape 1 : collecter des informations sur la boîte aux lettres
 
@@ -213,7 +209,7 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 
 Après avoir identifié les stratégies de rétention Office 365 à l’échelle de l’organisation, accédez à la page **rétention** de la gestion des **dates** \> dans le centre de sécurité & conformité, modifiez chaque stratégie de rétention à l’échelle de l’organisation que vous avez identifiée à l’étape précédente, puis ajoutez la boîte aux lettres à la liste des destinataires exclus. Cette opération supprimera la boîte aux lettres de l’utilisateur de la stratégie de rétention. 
 
-### <a name="office-365-retention-labels"></a>Étiquettes de rétention Office 365
+### <a name="office-365-retention-labels"></a>Étiquettes de rétention Office 365
 
 Chaque fois qu’un utilisateur applique une étiquette configurée pour conserver le contenu ou conserver, puis supprimer le contenu d’un dossier ou d’un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **true**. Dans ce cas, la boîte aux lettres est considérée comme étant en attente, comme si elle était placée en conservation pour litige ou affectée à une stratégie de rétention Office 365.
 
@@ -247,88 +243,35 @@ Une fois que vous avez identifié le nom du cas eDiscovery et le blocage, accéd
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Étape 4 : supprimer le délai de conservation de la boîte aux lettres
 
-Après la suppression d’un type de conservation d’une boîte aux lettres, la valeur de la propriété de boîte aux lettres *DelayHoldApplied* est définie sur **true**. Cela se produit la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une conservation a été supprimée. Il s’agit d’une *attente de retard* qui signifie que la suppression effective de la conservation est retardée de 30 jours pour empêcher la suppression définitive des données de la boîte aux lettres. (L’objectif d’un délai de blocage est de permettre aux administrateurs de rechercher ou de récupérer des éléments de boîte aux lettres qui seront purgés après la suppression d’une conservation).  Lorsqu’une boîte aux lettres est suspendue, la boîte aux lettres est toujours considérée comme suspendue pendant une durée illimitée, comme si la boîte aux lettres était en conservation pour litige. Au bout de 30 jours, le délai d’attente expire et Office 365 tente automatiquement de supprimer le blocage de délai (en définissant la propriété *DelayHoldApplied* sur **false**) de sorte que la conservation soit effectivement supprimée. 
+Après la suppression d’un type de conservation d’une boîte aux lettres, la valeur de la propriété de boîte aux lettres *DelayHoldApplied* ou *DelayReleaseHoldApplied* est définie sur **true**. Cela se produit la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une conservation a été supprimée. Il s’agit d’une *attente de retard* qui signifie que la suppression effective de la conservation est retardée de 30 jours pour empêcher la suppression définitive des données de la boîte aux lettres. (L’objectif d’un délai de blocage est de permettre aux administrateurs de rechercher ou de récupérer des éléments de boîte aux lettres qui seront purgés après la suppression d’une conservation).  Lorsqu’une boîte aux lettres est suspendue, la boîte aux lettres est toujours considérée comme suspendue pendant une durée illimitée, comme si la boîte aux lettres était en conservation pour litige. Au bout de 30 jours, le délai d’attente expire et Office 365 tente automatiquement de supprimer le blocage de délai (en définissant la propriété *DelayHoldApplied* ou *DelayReleaseHoldApplied* sur **false**) de sorte que la suspension soit effectivement supprimée. Pour plus d’informations sur la conservation des délais d’attente, consultez la section « gestion des boîtes aux lettres en attente de retard » dans [How to identifier le type de blocage placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
-Avant de pouvoir supprimer des éléments à l’étape 5, vous devez supprimer le délai de conservation de la boîte aux lettres. Tout d’abord, déterminez si la conservation du retard est appliquée à la boîte aux lettres en exécutant la commande suivante dans Exchange Online PowerShell :
+Avant de pouvoir supprimer des éléments à l’étape 5, vous devez supprimer un délai de conservation de la boîte aux lettres. Tout d’abord, déterminez si la conservation du retard est appliquée à la boîte aux lettres en exécutant la commande suivante dans Exchange Online PowerShell :
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
 ```
 
-Si la valeur de la propriété *DelayHoldApplied* est définie sur **false**, aucune temporisation n’a été placée sur la boîte aux lettres. Vous pouvez passer à l’étape 5 et supprimer des éléments dans le dossier éléments récupérables.
+Si la valeur de la propriété *DelayHoldApplied* ou *DelayReleaseHoldApplied* est définie sur **false**, aucune temporisation n’a été placée sur la boîte aux lettres. Vous pouvez passer à l’étape 5 et supprimer des éléments dans le dossier éléments récupérables.
 
-Si la valeur de la propriété *DelayHoldApplied* est définie sur **true**, exécutez la commande suivante pour supprimer la suspension de délai :
+Si la valeur de la propriété *DelayHoldApplied* ou *DelayReleaseHoldApplied* est définie sur **true**, exécutez l’une des commandes suivantes pour supprimer la suspension de délai :
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Notez que vous devez disposer du rôle conservation légal dans Exchange Online pour utiliser le paramètre *RemoveDelayHoldApplied* .
+Ou
+
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
+
+Notez que vous devez disposer du rôle de conservation légal dans Exchange Online pour utiliser le paramètre *RemoveDelayHoldApplied* ou *RemoveDelayReleaseHoldApplied* .
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Étape 5 : supprimer des éléments dans le dossier éléments récupérables
 
-Vous êtes maintenant prêt à supprimer des éléments dans le dossier éléments récupérables à l’aide de la cmdlet [Search-Mailbox](https://go.microsoft.com/fwlink/?linkid=852595) dans Exchange Online PowerShell. Vous disposez de trois options lors de l’exécution de la cmdlet **Search-Mailbox** . 
-  
-- Copiez les éléments vers une boîte aux lettres cible avant de les supprimer afin de pouvoir vérifier les éléments, le cas échéant, avant de les supprimer.
-    
-- Copiez les éléments dans une boîte aux lettres cible et supprimez-les dans la même commande.
-    
-- Supprimer des éléments sans les copier dans une boîte aux lettres cible. 
-    
-Notez que les éléments du dossier éléments récupérables de la boîte aux lettres d’archivage principale de l’utilisateur sont également supprimés lorsque vous exécutez la cmdlet **Search-Mailbox** . Pour éviter cela, vous pouvez inclure le commutateur  *DoNotIncludeArchive*  . Comme indiqué précédemment, si l’archivage à extension automatique est activé pour la boîte aux lettres, la cmdlet * * Search-Mailbox * * n’a pas de suppression des éléments dans une boîte aux lettres d’archivage auxiliaire. Pour plus d’informations sur l’archivage à extension automatique, consultez la rubrique [vue d’ensemble de l’archivage illimité dans Office 365](unlimited-archiving.md).
-  
-> [!NOTE]
-> Si vous incluez une requête de recherche (à l'aide du paramètre  *SearchQuery*  ), la cmdlet **Search-Mailbox** renverra au maximum 10 000 éléments dans les résultats de recherche. Ainsi, si vous incluez une requête de recherche, vous devrez peut-être exécuter la commande **Search-Mailbox** plusieurs fois pour supprimer plus de 10 000 éléments. 
-  
-Les exemples suivants illustrent la syntaxe de commande pour chacune de ces options. Ces exemples utilisent la `-SearchQuery size>0` valeur de paramètre, qui supprime tous les éléments de tous les sous-dossiers dans le dossier éléments récupérables. Si vous devez supprimer uniquement les éléments qui correspondent à des conditions spécifiques, vous pouvez également utiliser le paramètre *SearchQuery* pour spécifier d’autres conditions, telles que l’objet d’un message ou une plage de dates. Consultez les [autres exemples de l’utilisation du paramètre SearchQuery](#other-examples-of-using-the-searchquery-parameter) ci-dessous. 
-  
-### <a name="example-1"></a>Exemple 1
+Vous êtes maintenant prêt à supprimer des éléments dans le dossier éléments récupérables à l’aide des cmdlets [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch) et [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction) dans le centre de conformité & Compliance Center. 
 
-Cet exemple copie tous les éléments du dossier éléments récupérables de l’utilisateur dans un dossier de la boîte aux lettres de découverte de votre organisation. Cela vous permet de vérifier les éléments avant de les supprimer définitivement.
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
-```
-
-Dans l’exemple précédent, il n’est pas nécessaire de copier des éléments dans la boîte aux lettres de découverte. Vous pouvez copier des messages vers n’importe quelle boîte aux lettres cible. Toutefois, pour empêcher l’accès aux données de boîte aux lettres potentiellement sensibles, nous vous recommandons de copier les messages dans une boîte aux lettres dont l’accès est limité au personnel autorisé. Par défaut, l’accès à la boîte aux lettres de découverte par défaut est limité aux membres du groupe de rôles gestion de la découverte dans Exchange Online. 
-  
-### <a name="example-2"></a>Exemple 2
-
-Cet exemple copie tous les éléments du dossier éléments récupérables de l’utilisateur dans un dossier de la boîte aux lettres de découverte de votre organisation, puis supprime les éléments du dossier éléments récupérables de l’utilisateur.
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
-```
-
-### <a name="example-3"></a>Exemple 3
-
-Cet exemple supprime tous les éléments du dossier éléments récupérables de l’utilisateur, sans les copier dans une boîte aux lettres cible. 
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
-```
-
-### <a name="other-examples-of-using-the-searchquery-parameter"></a>Autres exemples d’utilisation du paramètre SearchQuery
-
-Voici quelques exemples d’utilisation du paramètre *SearchQuery* pour rechercher des messages spécifiques. Si vous utilisez le paramètre *SearchQuery* pour rechercher des éléments spécifiques, envisagez de copier les résultats de la recherche dans une boîte aux lettres cible afin de pouvoir examiner les résultats de la recherche, puis de modifier la requête si nécessaire avant de supprimer les résultats d’une recherche. 
-  
-Cet exemple renvoie les messages qui contiennent une phrase spécifique dans le champ Subject.
-  
-```powershell
-SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
-```
-
-Cet exemple renvoie les messages qui ont été envoyés dans la plage de dates spécifiée.
-  
-```powershell
-SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
-```
-
-Cet exemple renvoie les messages qui ont été envoyés à la personne spécifiée.
-
-```powershell
-SearchQuery 'to:garthf@alpinehouse.com'
-```
+Pour ce faire, consultez la rubrique [Rechercher et supprimer des messages électroniques](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 
 ### <a name="verify-that-items-were-deleted"></a>Vérifier que les éléments ont été supprimés
 

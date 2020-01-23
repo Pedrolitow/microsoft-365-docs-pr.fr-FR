@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez les outils de découverte électronique et de recherche Office 365 pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685941"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259420"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solutions eDiscovery : scénario de fuite de données-recherche et purge
 
@@ -54,7 +54,7 @@ Voici comment gérer un incident de fuite de données :
     
 - Pour créer un cas, vous devez être membre du groupe de rôles gestionnaire eDiscovery ou être membre d’un groupe de rôles personnalisé auquel est attribué le rôle de gestion des cas. Si vous n’êtes pas membre [du groupe de rôles gestionnaire eDiscovery](assign-ediscovery-permissions.md), demandez à un administrateur Office 365 de vous ajouter.
     
-- Pour supprimer les données propagées dans votre organisation, vous devez utiliser la commande [Search-Mailbox-DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) dans Exchange Online PowerShell. En outre, pour utiliser le paramètre *DeleteContent* , vous devez également être membre d’un groupe de rôles dans Exchange Online auquel le rôle d’importation/exportation de boîte aux lettres est attribué. Consultez la section « Ajouter un rôle à un groupe de rôles » dans [gérer des groupes de rôles](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx).
+- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles de gestionnaire de découverte électronique ou disposer du rôle de gestion de recherche de contenu. Pour supprimer des messages, vous devez être membre du groupe de rôles de gestion de l’organisation ou disposer du rôle de gestion de recherche et de purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez [la rubrique attribution d’autorisations eDiscovery dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - Pour effectuer une recherche dans le journal d’audit Office 365 activités de découverte électronique à l’étape 8, l’audit doit être activé pour votre organisation. Vous pouvez rechercher des activités qui ont eu lieu au cours des 90 derniers jours. Pour en savoir plus sur l’activation et l’utilisation de l’audit, consultez la section [audit du processus d’enquête sur la fuite de données](#auditing-the-data-spillage-investigation-process) à l’étape 8. 
     
@@ -84,7 +84,7 @@ Après avoir créé une recherche de contenu, vous devez vérifier et valider le
   
 Si vous avez plus de 1 000 boîtes aux lettres ou plus de 100 messages électroniques par boîte aux lettres à réviser, vous pouvez diviser la recherche initiale en plusieurs recherches en utilisant des mots clés ou des conditions supplémentaires, tels que la plage de dates ou l’expéditeur/destinataire et examiner les résultats de chaque recherche individuellement. Notez toutes les requêtes de recherche à utiliser lors de la suppression des messages à l' [étape 7](#step-7-permanently-delete-the-spilled-data).
 
-Si une licence Office 36 E5 est attribuée à un dépositaire ou à un utilisateur final, vous pouvez examiner jusqu’à 10 000 résultats de recherche à la fois à l’aide d’Office 365 Advanced eDiscovery. S’il y a plus de 10 000 messages électroniques à examiner, vous pouvez diviser la requête de recherche par plage de dates et examiner chaque résultat individuellement à mesure que les résultats de la recherche sont triés par date. Dans Advanced eDiscovery, vous pouvez baliser les résultats de la recherche à l’aide de la fonctionnalité **étiquette en tant que** dans le panneau Aperçu et filtrer les résultats de la recherche en fonction de la balise que vous avez marquée. Cette fonction est utile lorsque vous collaborez avec un réviseur secondaire. En utilisant des outils d’analyse supplémentaires dans Advanced eDiscovery, tels que la reconnaissance optique de caractères, le Threading de messagerie électronique et le codage prédictif, vous pouvez rapidement traiter et examiner des milliers de messages et les baliser pour révision. Voir [Quick Setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
+Si une licence Office 365 E5 est attribuée à un dépositaire ou à un utilisateur final, vous pouvez examiner jusqu’à 10 000 résultats de recherche à la fois à l’aide d’Office 365 Advanced eDiscovery. S’il y a plus de 10 000 messages électroniques à examiner, vous pouvez diviser la requête de recherche par plage de dates et examiner chaque résultat individuellement à mesure que les résultats de la recherche sont triés par date. Dans Advanced eDiscovery, vous pouvez baliser les résultats de la recherche à l’aide de la fonctionnalité **étiquette en tant que** dans le panneau Aperçu et filtrer les résultats de la recherche en fonction de la balise que vous avez marquée. Cette fonction est utile lorsque vous collaborez avec un réviseur secondaire. En utilisant des outils d’analyse supplémentaires dans Advanced eDiscovery, tels que la reconnaissance optique de caractères, le Threading de messagerie électronique et le codage prédictif, vous pouvez rapidement traiter et examiner des milliers de messages et les baliser pour révision. Voir [Quick Setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
 
 Lorsque vous trouvez un message électronique contenant des données déduites, vérifiez les destinataires du message afin de déterminer s’il a été partagé en externe. Pour poursuivre le suivi d’un message, vous pouvez collecter les informations et la plage de dates de l’expéditeur de sorte que vous puissiez utiliser les journaux de suivi des messages, comme décrit à l' [étape 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
@@ -136,7 +136,7 @@ Il existe deux façons de collecter une liste d’adresses de messagerie de boî
     
 2. Sur la page de la fenêtre volante, cliquez sur **afficher les résultats**.
     
-3. Dans la liste déroulante **résultats individuels** , cliquez sur **statistiques de recherche**.
+3. Dans la liste déroulante **Résultats individuels**, cliquez sur **Statistiques de recherche**.
     
 4. Dans la liste déroulante **type** , cliquez sur **emplacements principaux**.
     
@@ -168,31 +168,9 @@ Veillez à rétablir les configurations précédentes de la boîte aux lettres a
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Étape 7 : supprimer définitivement les données propagées
 
-À l’aide des emplacements de boîte aux lettres que vous avez collectés et préparés à l’étape 6, ainsi que de la requête de recherche créée et affinée à l’étape 3 pour rechercher les messages électroniques contenant les données indésirables, vous pouvez maintenant supprimer définitivement les données propagées. Comme expliqué précédemment, vous devez disposer du rôle d’exportation d’importation de boîte aux lettres dans Exchange Online pour supprimer les messages à l’aide de la procédure suivante.
-  
-1. [Connectez-vous à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
-    
-2. Exécutez la commande suivante :
-    
-    ```powershell
-    Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
-    ```
+À l’aide des emplacements de boîte aux lettres que vous avez collectés et préparés à l’étape 6, ainsi que de la requête de recherche créée et affinée à l’étape 3 pour rechercher les messages électroniques contenant les données indésirables, vous pouvez maintenant supprimer définitivement les données propagées.  Comme expliqué précédemment, pour supprimer des messages, vous devez être membre du groupe de rôles gestion de l’organisation ou disposer du rôle de gestion de la recherche et de la purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez [la rubrique attribution d’autorisations eDiscovery dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-3. Réexécutez la commande précédente pour chaque boîte aux lettres qui contient les données dépropagées en remplaçant la valeur du paramètre Identity ; par exemple :
-
-    ```powershell
-    Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-    ```powershell
-    Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-   ```powershell
-   Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-   ```
-
-Comme indiqué précédemment, vous pouvez également créer un [script PowerShell](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) et l’exécuter par rapport à une liste de boîtes aux lettres de sorte que le script supprime les données dépassées dans chaque boîte aux lettres.
+Pour supprimer les messages déversés, reportez-vous aux étapes 2 & 3 de la rubrique [Rechercher et supprimer des messages électroniques dans votre organisation Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Étape 8 : vérifier, fournir une preuve de suppression et d’audit
 
@@ -214,12 +192,9 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’enquête de fuite de données
 
-Vous pouvez rechercher dans le journal d’audit Office 365 des activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit créés lors de l’exécution de la commande **Search-Mailbox-DeleteContent** pour supprimer les données déplacées. Pour plus d’informations, voir :
+Vous pouvez rechercher dans le journal d’audit Office 365 des activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction-purge** exécutée à l’étape 7 pour supprimer les données déduites. Pour plus d’informations, voir :
 
-- [Effectuer une recherche dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
+- [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 
 - [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md)
-
-- Consultez la section « activités auditées-journal d’audit de l’administrateur Exchange » dans [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md#audited-activities) pour obtenir des instructions sur la façon de rechercher des enregistrements d’audit liés à des applets de commande en cours d’exécution dans Exchange Online.
   
-

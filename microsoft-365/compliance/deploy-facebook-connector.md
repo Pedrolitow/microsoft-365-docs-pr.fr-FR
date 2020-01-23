@@ -1,5 +1,5 @@
 ---
-title: Déploiement d’un connecteur pour l’archivage des données Facebook
+title: Déploiement d’un connecteur pour l’archivage des données de pages d’entreprise Facebook
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,23 +10,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des pages Facebook dans Office 365. Une fois ces données importées dans Office 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Facebook de votre organisation.
-ms.openlocfilehash: bb348c6e08151d63e92973d3f262704357e40814
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des pages Facebook dans Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Facebook de votre organisation.
+ms.openlocfilehash: 1222a82e3a3b8415aa3fc98cd3c06376e491beb0
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247477"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269413"
 ---
-# <a name="deploy-a-connector-to-archive-facebook-data"></a>Déploiement d’un connecteur pour l’archivage des données Facebook
+# <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Déploiement d’un connecteur pour l’archivage des données de pages d’entreprise Facebook
 
-Cet article contient le processus étape par étape pour déployer un connecteur qui utilise le service d’importation Office 365 pour importer des données à partir de pages d’entreprise Facebook vers Office 365. Pour une vue d’ensemble de ce processus et une liste des conditions préalables requises pour déployer un connecteur Facebook, reportez-vous à la rubrique [utiliser un connecteur pour archiver des données Facebook dans Office 365 (version préliminaire)](archive-facebook-data-with-sample-connector.md). 
+Cet article contient le processus étape par étape pour déployer un connecteur qui utilise le service d’importation Microsoft 365 pour importer des données à partir de pages d’entreprise Facebook vers Microsoft 365. Pour une vue d’ensemble de ce processus et une liste des conditions préalables requises pour déployer un connecteur Facebook, reportez-vous à la rubrique [configurer un connecteur pour archiver les données Facebook](archive-facebook-data-with-sample-connector.md). 
 
-## <a name="step-1-download-the-package"></a>Étape 1 : Télécharger le package
-
-Téléchargez le package prédéfini à partir de la section Release dans le référentiel GitHub à l' <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>adresse. Sous la dernière version, téléchargez le fichier zip nommé **SampleConnector. zip**. Vous téléchargez ce fichier zip vers Azure à l’étape 4.
-
-## <a name="step-2-create-an-app-in-azure-active-directory"></a>Étape 2 : créer une application dans Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Étape 1 : créer une application dans Azure Active Directory
 
 1. Accédez à <https://portal.azure.com> et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur global Office 365.
 
@@ -66,77 +62,35 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
 10. Accédez au **manifeste** et copiez le identifierUris (également appelé URI de l’application AAD) en surbrillance dans la capture d’écran suivante. Copiez l’URI de l’application AAD dans un fichier texte ou un autre emplacement de stockage. Vous l’utilisez à l’étape 6.
 
-   ![Accéder au manifeste et copier l’URI de l’application AAD](media/FBCimage10.png)
+    ![Accéder au manifeste et copier l’URI de l’application AAD](media/FBCimage10.png)
 
-## <a name="step-3-create-an-azure-storage-account"></a>Étape 3 : créer un compte de stockage Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : déployer le service Web connecteur depuis GitHub vers votre compte Azure
 
-1. Accédez à la page d’accueil Azure de votre organisation.
+1. Accédez à [ce site github](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) et cliquez sur **déployer vers Azure**.
 
-    ![Accéder à la page d’accueil Azure](media/FBCimage11.png)
+    ![Cliquez sur déployer vers Azure](media/FBCimage11.png)
 
-2. Cliquez sur **créer une ressource** , puis tapez **compte de stockage** dans la zone de recherche.
+2. Une fois que vous avez cliqué sur **déployer vers Azure**, vous serez redirigé vers un portail Azure avec une page de modèle personnalisé. Renseignez les détails de **base** et les **paramètres** , puis cliquez sur **acheter**.
 
-    ![Cliquez sur créer une ressource et tapez le compte de stockage.](media/FBCimage12.png)
+    - **Abonnement :** Sélectionnez votre abonnement Azure pour lequel vous souhaitez déployer le service Web du connecteur de pages d’entreprise Facebook.
+    
+    - **Groupe de ressources :** Sélectionnez ou créez un groupe de ressources. Un groupe de ressources est un conteneur qui contient les ressources associées pour une solution Azure.
 
-3. Cliquez sur **stockage**, puis sur **compte de stockage**.
+    - **Emplacement :** Choisissez un emplacement.
 
-    ![Cliquez sur stockage, puis sur compte de stockage.](media/FBCimage13.png)
+    - **Nom de l’application Web :** Fournissez un nom unique pour l’application Web de connecteur. Le nom doit comporter entre 3 et 18 caractères. Ce nom est utilisé pour créer l’URL du service d’application Azure ; par exemple, si vous spécifiez le nom de l’application Web **fbconnector** , l’URL du service d’application Azure sera **fbconnector.azurewebsites.net**.
+    
+    - **tenantId :** ID de client de votre organisation Microsoft 365 que vous avez copié après avoir créé l’application de connecteur Facebook dans Azure Active Directory à l’étape 1.
+    
+   - **APISecretKey :** Vous pouvez taper n’importe quelle valeur comme clé secrète. Il est utilisé pour accéder à l’application Web de connecteur à l’étape 5.
+   
+     ![Cliquez sur créer une ressource et tapez le compte de stockage.](media/FBCimage12.png)
 
-4. Sur la page **créer un compte de stockage** , dans la zone abonnement, sélectionnez **paiement en cours** ou **version d’évaluation gratuite** en fonction du type d’abonnement Azure dont vous disposez. Ensuite, sélectionnez ou créez un groupe de ressources.
+3. Une fois le déploiement réussi, la page ressemblera à la capture d’écran suivante :
 
-    ![Sélectionner la version d’évaluation payante ou gratuite](media/FBCimage14.png)
+     ![Cliquez sur stockage, puis sur compte de stockage.](media/FBCimage13.png)
 
-5. Tapez un nom pour le compte de stockage.
-
-    ![Tapez un nom pour le compte de stockage.](media/FBCimage15.png)
-
-6. Passez en revue, puis cliquez sur **créer** pour créer le compte de stockage.
-
-    ![Créer le compte de stockage](media/FBCimage16.png)
-
-7. Après quelques instants, cliquez sur **Actualiser** , puis sur **accéder à la ressource** pour accéder au compte de stockage.
-
-    ![Accéder au compte de stockage](media/FBCimage17.png)
-
-8. Cliquez sur **touches d’accès** dans le volet de navigation de gauche.
-
-    ![Cliquez sur touches d’accès](media/FBCimage18.png)
-
-9. Copiez une **chaîne de connexion** et enregistrez-la dans un fichier texte ou un autre emplacement de stockage. Vous l’utilisez lors de la création d’une ressource d’application Web.
-
-    ![Copier une chaîne de connexion et l’enregistrer](media/FBCimage19.png)
-
-## <a name="step-4-create-a-new-web-app-resource-in-azure"></a>Étape 4 : créer une nouvelle ressource d’application Web dans Azure
-
-1. Sur la page d' **Accueil** du portail Azure, cliquez sur **créer une \> ressource \> tout le Web App**. Dans la page **application Web** , cliquez sur **créer**. 
-
-   ![Créer une nouvelle ressource d’application Web](media/FBCimage20.png)
-
-2. Renseignez les détails (comme indiqué ci-dessous), puis créez l’application Web. Notez que le nom que vous entrez dans la zone nom de l' **application** est utilisé pour créer l’URL du service d’application Azure ; par exemple, fbconnector.azurewebsites.net.
-
-   ![Renseignez les détails, puis créez l’application Web.](media/FBCimage21.png)
-
-3. Accédez à la ressource d’application Web nouvellement créée, cliquez sur paramètres de l' **application** dans le volet de navigation de gauche. Sous paramètres de l’application, cliquez sur Ajouter un nouveau paramètre et ajoutez les trois paramètres suivants : utilisez les valeurs (que vous avez copiées dans le fichier texte à partir des étapes précédentes) : 
-
-    - **APISecretKey** : vous pouvez taper n’importe quelle valeur comme clé secrète. Il est utilisé pour accéder à l’application Web de connecteur à l’étape 7.
-
-    - **StorageAccountConnectionString** : URI de chaîne de connexion que vous avez copiée après avoir créé le compte de stockage Azure à l’étape 3.
-
-    - **tenantId** : ID de client de votre organisation Office 365 que vous avez copié après avoir créé l’application de connecteur Facebook dans Azure Active Directory à l’étape 2.
-
-    ![Entrez les paramètres de l’application](media/FBCimage22.png)
-
-4. Sous **paramètres généraux**, cliquez sur **en** regard de l’est **toujours activé**. Cliquez sur **Enregistrer** en haut de la page pour enregistrer les paramètres de l’application.
-
-   ![Enregistrer les paramètres de l’application](media/FBCimage23.png)
-
-5. La dernière étape consiste à télécharger le code source de l’application du connecteur vers Azure que vous avez téléchargé à l’étape 1. Dans un navigateur Web, accédez à https://<AzureAppResourceName>. SCM.azurewebsites.net/ZipDeployUi. Par exemple, si le nom de votre ressource d’application Azure (que vous avez nommée à l’étape 2 de cette section) est **fbconnector**, vous accédez https://fbconnector.scm.azurewebsites.net/ZipDeployUià. 
-
-6. Faites glisser et déposez le SampleConnector. zip (que vous avez téléchargé à l’étape 1) sur cette page. Une fois les fichiers téléchargés et le déploiement réussi, la capture d’écran suivante se présente :
-
-   ![Faites glisser et déposez le SampleConnector. zip sur cette page.](media/FBCimage24.png)
-
-## <a name="step-5-register-the-facebook-app"></a>Étape 5 : inscrire l’application Facebook
+## <a name="step-3-register-the-facebook-app"></a>Étape 3 : inscrire l’application Facebook
 
 1. Accédez à <https://developers.facebook.com>, connectez-vous à l’aide des informations d’identification du compte pour les pages d’entreprise Facebook de votre organisation, puis cliquez sur **Ajouter une nouvelle application**.
 
@@ -204,7 +158,7 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
     ![Obtenir l’application examinée par Facebook](media/FBCimage40.png)
 
-## <a name="step-6-configure-the-connector-web-app"></a>Étape 6 : configuration de l’application Web de connecteur
+## <a name="step-4-configure-the-connector-web-app"></a>Étape 4 : configuration de l’application Web de connecteur
 
 1. Accédez à https://\<AzureAppResourceName>. azurewebsites.net (où AzureAppResourceName est le nom de votre ressource d’application Azure que vous avez nommée à l’étape 4) par exemple, si le nom est **fbconnector**, accédez à `https://fbconnector.azurewebsites.net`. La page d’accueil de l’application se présente comme la capture d’écran suivante :
 
@@ -214,82 +168,66 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
  
    ![Cliquez sur configurer pour afficher une page de connexion.](media/FBCimage42.png)
 
-3. Dans la zone ID de locataire, tapez ou collez l’ID de votre client (que vous avez obtenu à l’étape 2). Dans la zone mot de passe, tapez ou collez le APISecretKey (que vous avez obtenu à l’étape 2), puis cliquez sur **définir les paramètres de configuration** pour afficher la page Détails de la **configuration** .
+3. Dans la zone ID de locataire, tapez ou collez l’ID de votre client (que vous avez obtenu à l’étape 2). Dans la zone mot de passe, tapez ou collez le APISecretKey (que vous avez obtenu à l’étape 2), puis cliquez sur **définir les paramètres de configuration** pour afficher la page Détails de la configuration.
 
     ![Connectez-vous à l’aide de votre ID de client et de votre mot de passe, puis accédez à la page Détails de configuration](media/FBCimage43.png)
 
-4. Sous **Détails**de la configuration, entrez les paramètres de configuration suivants 
+4. Entrez les paramètres de configuration suivants 
 
-   - **ID de l’application Facebook** : ID de l’application Facebook que vous avez obtenue à l’étape 5.
-   - **Clé secrète de l’application Facebook** : clé secrète de l’application Facebook que vous avez obtenue à l’étape 5.
-   - Un **jeton de vérification des webhooks Facebook** est le jeton de vérification que vous avez créé à l’étape 5.
-   - **ID de l’application AAD** : ID de l’application Azure Active Directory que vous avez créée à l’étape 2.
-   - **Clé secrète de l’application AAD** : valeur de la clé secrète APISecretKey que vous avez créée à l’étape 4.
-   - **URI de l’application AAD** : URI de l’application AAD obtenue à l’étape 2 ; par exemple, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213`.
-   - **Clé d’instrumentation Insights** de l’application : laissez cette zone vide.
+   - **ID d’application Facebook :** ID de l’application Facebook que vous avez obtenue à l’étape 3.
+   
+   - **Clé secrète de l’application Facebook :** La clé secrète de l’application Facebook que vous avez obtenue à l’étape 3.
+   
+   - **Jeton de vérification des webhooks Facebook :** Le jeton de vérification que vous avez créé à l’étape 3.
+   
+   - **ID de l’application AAD :** L’ID d’application pour l’application Azure Active Directory que vous avez créée à l’étape 1.
+   
+   - **Clé secrète de l’application AAD :** Valeur de la clé secrète APISecretKey que vous avez créée à l’étape 1.
 
 5. Cliquez sur **Enregistrer** pour enregistrer les paramètres du connecteur.
 
-## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Étape 7 : configurer un connecteur personnalisé dans le centre de sécurité & conformité
+## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>Étape 5 : configurer un connecteur Facebook dans le centre de conformité Microsoft 365
 
-1. Accédez à <https://protection.office.com> , puis cliquez sur **gouvernance \> des \> informations importer des données**tierces.
+1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
 
-   ![Accédez au centre de sécurité et de conformité, puis cliquez sur informations de gouvernance > importer > archivez des données tierces.](media/FBCimage44.png)
+2. Dans la page **connecteurs de données (aperçu)** , sous **pages professionnelles Facebook**, cliquez sur **affichage**.
 
-2.  Cliquez sur **Ajouter un connecteur** , puis sur **pages Facebook**.
+3. Sur la page des **pages d’entreprise Facebook** , cliquez sur **Ajouter un connecteur**.
 
-    ![Ajouter un connecteur Facebook configurer le connecteur](media/FBCimage46.png)
+4. Sur la page **conditions de service** , cliquez sur **accepter**.
 
-3.  Dans la page **Ajouter une application connecteur** , entrez les informations suivantes, puis cliquez sur **valider le connecteur**.
+5.  Dans la page **Ajouter des informations d’identification pour votre application connecteur** , entrez les informations suivantes, puis cliquez sur **valider la connexion**.
 
-    - Dans la première zone, tapez un nom pour le connecteur, tel que **Facebook**.
-    - Dans la deuxième zone, tapez ou collez la valeur du APISecretKey que vous avez ajouté à l’étape 4.
-    - Dans la troisième zone, tapez ou collez l’URL du service d’application Azure ; par exemple `https://fbconnector.azurewebsites.net`.
- 
-    Une fois le connecteur validé, cliquez sur **suivant**.
+    ![Entrer les informations d’identification de l’application de connecteur](media/TCimage38.png)
+
+    - Dans la zone **nom** , tapez un nom pour le connecteur, par exemple **page Facebook News**.
     
-    ![Cliquez sur suivant après validation réussie du connecteur.](media/FBCimage47.png)
+    - Dans la zone **URL de connexion** , tapez ou collez l’URL du service d’application Azure. par exemple `https://fbconnector.azurewebsites.net`.
+    
+    - Dans la zone **mot de passe** , tapez ou collez la valeur du APISecretKey que vous avez ajouté à l’étape 2.
+    
+    - Dans la zone ID d’application **Azure** , tapez ou collez la valeur de l’ID d’application (client) également appelé ID d’application AAD que vous avez créé à l’étape 1.
+ 
+6. Une fois la connexion correctement validée, cliquez sur **suivant**.
 
-4.  Cliquez sur **connexion avec application connecteur**.
+7. Sur la page **autoriser Microsoft 365 à importer des données** , tapez ou collez de nouveau le APISecretKey, puis cliquez sur **application Web de connexion**.
 
-    ![Cliquez sur se connecter avec l’application connecteur.](media/FBCimage45.png)
+8. Sur la page **configurer l’application Facebook Connector** , cliquez sur **connexion avec Facebook** et connectez-vous à l’aide des informations d’identification du compte pour les pages d’entreprise Facebook de votre organisation. Assurez-vous que le compte Facebook auquel vous vous êtes connecté se voit attribuer le rôle d’administrateur pour les pages d’entreprise Facebook de votre organisation.
 
-5. Tapez ou collez à nouveau le APISecretKey, puis cliquez sur **connexion au service connecteur**.
+   ![Se connecter avec Facebook](media/FBCimage50.png)
 
-   ![Tapez ou collez le APISecretKey, puis cliquez sur le bouton de connexion.](media/FBCimage48.png)
-
-6. Cliquez sur **connexion avec Facebook**.
-
-   ![Cliquez sur * * Connectez-vous avec Facebook](media/FBCimage49.png)
-
-7. Sur la page **se connecter à Facebook** , connectez-vous à l’aide des informations d’identification du compte pour les pages de l’entreprise Facebook de votre organisation. Assurez-vous que le compte Facebook auquel vous êtes connecté se voit attribuer le rôle d’administrateur pour les pages d’entreprise Facebook de votre organisation.
-
-   ![Connexion à Facebook](media/FBCimage50.png)
-
-8. Cliquez sur **Sélectionner les pages** pour choisir les pages professionnelles de votre organisation que vous souhaitez archiver dans Office 365.
-
-   ![Cliquez sur Sélectionner les pages pour afficher les pages d’entreprise de votre organisation.](media/FBCimage51.png)
-
-9. Une liste des pages d’entreprise gérées par le compte Facebook auquel vous vous êtes connecté s’affiche. Sélectionnez la page à archiver, puis cliquez sur **Enregistrer**.
+9. Une liste des pages d’entreprise gérées par le compte Facebook auquel vous vous êtes connecté s’affiche. Sélectionnez la page à archiver, puis cliquez sur **suivant**.
 
     ![Sélectionnez la page d’entreprise que vous souhaitez archiver](media/FBCimage52.png)
 
-10. Cliquez sur **Terminer** pour quitter le programme d’installation de l’application de service connecteur.
+10. Cliquez sur **Continuer** pour quitter le programme d’installation de l’application de service connecteur.
 
-    ![Cliquez sur Terminer pour quitter l’application de service connecteur.](media/FBCimage53.png)
+11. Sur la page **définir les filtres** , vous pouvez appliquer un filtre pour importer initialement les éléments qui sont un certain âge. Sélectionnez un âge, puis cliquez sur **suivant**.
 
-11. Sur la page **définir les filtres** , vous pouvez appliquer un filtre pour importer (et archiver) les éléments qui sont un certain âge. Cliquez sur **Suivant**.
+12. Dans la page **choisir l’emplacement de stockage** , tapez l’adresse de messagerie de la boîte aux lettres Microsoft 365 dans laquelle les éléments Facebook seront importés, puis cliquez sur **suivant**.
 
-    ![Appliquer un filtre pour importer des éléments ayant un certain âge](media/FBCimage54.png)
+13. Sur l' **autorisation fournir un administrateur**, cliquez sur **accorder le consentement** , puis suivez les étapes. Vous devez être un administrateur général pour accorder le consentement du service d’importation Office 365 pour accéder aux données de votre organisation.
 
-12. Sur la page **définir le compte de stockage** , sélectionnez la boîte aux lettres Office 365 dans laquelle les éléments des pages Facebook de l’entreprise que vous avez sélectionnées seront importés.
+14. Cliquez sur **suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer l’installation du connecteur.
 
-    ![Spécifier les éléments d’archive de boîte aux lettres Office 365 importés à partir de Facebook](media/FBCimage55.png)
-
-13. Vérifiez vos paramètres, puis cliquez sur **Terminer** pour terminer l’installation du connecteur dans le centre de sécurité & conformité.
-
-    ![Vérifier les paramètres du connecteur](media/FBCimage56.png)
-
-14. Accédez à la page données tierces d' **archivage** pour voir la progression du processus d’importation.
-
-    ![Accéder à la page d’archivage des données tierces pour effectuer le suivi du processus d’importation](media/FBCimage58.png)
+15. Dans le centre de conformité, accédez à la page **connecteurs de données** , puis cliquez sur l’onglet **connecteurs** pour voir la progression du processus d’importation.

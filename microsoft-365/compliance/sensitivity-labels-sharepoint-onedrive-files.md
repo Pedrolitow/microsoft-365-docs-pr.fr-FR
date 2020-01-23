@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: 0e164afca97818d2082ddf4053df791317e29ac5
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: fea28683136ae72603b3e7a6954d7d6ecf0ffbe4
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41218584"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41263336"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)
 
-Auparavant, lorsque vous appliquiez des étiquettes de confidentialité incluant le chiffrement aux fichiers Office stockés dans SharePoint et OneDrive, le service n’a pas pu traiter le contenu de ces fichiers. La co-création, la découverte électronique, la protection contre la perte de données, la recherche, l’Delve et d’autres fonctionnalités collaboratives ne fonctionnaient pas dans ces circonstances. Cet aperçu permet d’activer les fonctionnalités suivantes :
+Avant cet aperçu, lorsque vous avez appliqué des étiquettes de confidentialité incluant le chiffrement aux fichiers Office stockés dans SharePoint et OneDrive, le service n’a pas pu traiter le contenu de ces fichiers. La co-création, la découverte électronique, la protection contre la perte de données, la recherche, l’Delve et d’autres fonctionnalités collaboratives ne fonctionnaient pas dans ces circonstances. Cet aperçu active ces fonctionnalités lorsque le chiffrement a été appliqué à l’aide d’une clé basée sur le Cloud :
 
 - SharePoint reconnaît les étiquettes de confidentialité appliquées aux fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive. SharePoint applique également les paramètres qui correspondent à chaque étiquette.
 
@@ -39,9 +39,16 @@ Auparavant, lorsque vous appliquiez des étiquettes de confidentialité incluant
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
+> [!NOTE]
+> Si le chiffrement n’a pas été appliqué avec une clé basée sur le Cloud, mais une clé locale, une topologie de gestion de clés est souvent appelée « conserver votre propre clé » (HYOK), le comportement de SharePoint ne change pas avec cet aperçu. 
+
 Vous pouvez également appliquer des étiquettes de confidentialité à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint. Pour plus d’informations sur cet aperçu distinct, voir [use sensitive labels with Microsoft Teams, Office 365 Groups et SharePoint sites (public Preview)](sensitivity-labels-teams-groups-sites.md).
 
 Vous pouvez toujours choisir de désactiver cet aperçu à tout moment.
+
+Regardez la vidéo suivante (pas de son) pour voir ces nouvelles fonctionnalités en action :
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 ## <a name="requirements"></a>Configuration requise
 

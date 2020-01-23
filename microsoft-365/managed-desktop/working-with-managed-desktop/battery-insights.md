@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b14ef9970aa709ad5e23fdae467992497a1331e8
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260141"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269385"
 ---
 # <a name="battery-insights"></a>Informations sur la batterie
 Cette vue fournit des mesures d’utilisation de l’alimentation, de la batterie et de l’application pour vos appareils de bureau gérés par Microsoft. À cette fin, une application est considérée « en cours d’utilisation » si elle est en cours d’exécution et en focus.
@@ -43,8 +43,6 @@ Dans la zone **Consumer Energy Top** , vous trouverez les applications de votre 
 - Autres
 
 « Other » peut inclure la consommation d’énergie par diverses sources, telles que l’activité du disque, l’utilisation du haut débit mobile et l’énergie perdue à la résistance interne. 
-
-Applications affichées dans * * Consumers Energy Top
 
 Vous pouvez filtrer cet affichage pour n’afficher que les applications de premier plan, les applications d’arrière-plan ou les deux à l’aide du menu en haut à droite. Les applications de premier plan sont celles qui ont eu une interaction avec l’utilisateur au cours des 28 derniers jours, comme la sélection d’un article à l’aide d’une souris.
 

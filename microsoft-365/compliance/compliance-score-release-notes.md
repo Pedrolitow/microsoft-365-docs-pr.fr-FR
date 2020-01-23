@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication et problèmes connus pour le score de conformité Microsoft (aperçu), une fonctionnalité du centre de conformité M365 qui permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: b1054a455b2d2c78cfa6131410941b1a36738a43
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 370c714c927d09a16272f8ab265c7b0c4e36381a
+ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021930"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41261868"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Notes de publication du score de conformité Microsoft (aperçu)
 
@@ -31,9 +31,11 @@ Le score de conformité est une nouvelle fonctionnalité du [Centre de conformit
 
 De nouveaux modèles préconfigurés pour les évaluations sont publiés en production pour le score de conformité (aperçu) dès qu’ils sont disponibles. Consultez la [liste complète des modèles ici](compliance-score.md#templates). Les modèles récemment ajoutés sont les suivants :
 
-- ISO 27701:2019
+- Loi sur la protection générale des données du Brésil (LGPD)
 - IRAP/Australian Government ISM (Preview)
-
+- ISO 27701:2019
+- SOC 1
+- SOC 2
 
 ### <a name="compliance-score-relationship-to-compliance-manager"></a>Relation avec le score de conformité avec le gestionnaire de conformité
 
