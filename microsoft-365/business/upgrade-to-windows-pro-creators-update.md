@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 'Découvrez comment mettre à niveau des appareils Windows vers Windows 10 professionnel. '
-ms.openlocfilehash: acad4a393e0870299df768fd4c821d9c1e83ecac
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 3457b35c5f9e313e176664ca088e64ce5dd4f881
+ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995267"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41265855"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Mettre à niveau les appareils Windows vers Windows 10 professionnel
 
@@ -50,7 +50,7 @@ Pour effectuer une mise à niveau vers Windows 10 professionnel, vous disposez d
     - Lisez les instructions relatives à l’utilisation de l’outil et à la création de votre support d’installation. 
 
 > [!NOTE]
-> Si vous avez des appareils Windows exécutant Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement professionnel Microsoft 365 vous donne droit à une mise à niveau vers Windows Pro 10 ; vous n’avez pas besoin d’une clé de produit.
+> Si vous avez des appareils Windows exécutant Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement professionnel Microsoft 365 vous donne droit à une mise à niveau vers Windows Pro 10.
     
 Pour terminer la configuration des appareils Windows 10, reportez-vous à la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365](set-up-windows-devices.md) . 
   
