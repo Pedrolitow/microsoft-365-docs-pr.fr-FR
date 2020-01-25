@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
+ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022020"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41265892"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -51,13 +51,13 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 
 - Activités utilisateur et administrateur dans Yammer
 
-- Activités utilisateur et administrateur dans Microsoft Flow
+- Activités utilisateur et administrateur dans Microsoft Power Automate
 
 - Activités utilisateur et administrateur dans Microsoft Stream
 
 - Activité d’analystes et d’administrateurs dans Microsoft Workplace Analytics
 
-- Activités utilisateur et administrateur dans Microsoft PowerApps
+- Activités utilisateur et administrateur dans Microsoft Power Apps
 
 - Activités utilisateur et administrateur dans Microsoft Forms
 
@@ -118,7 +118,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit d’Offi
   |Dynamics 365 CRM|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |eDiscovery|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Flow|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Project|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -307,7 +307,7 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
 |[Activités d’administration des rôles](#role-administration-activities)|[Activités d’administration de l’annuaire](#directory-administration-activities)|[Activités de découverte électronique](#ediscovery-activities)|
 |[Activités avancées eDiscovery](#advanced-ediscovery-activities)|[Activités dans Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Activités dans Microsoft Teams](#microsoft-teams-activities)|[Activités Santé Microsoft Teams](#microsoft-teams-healthcare-activities)|[Activités dans Yammer](#yammer-activities)|
-|[Activités Microsoft Flow](#microsoft-flow-activities)|[Activités Microsoft PowerApps](#microsoft-powerapps)|[Activités de Microsoft Stream](#microsoft-stream-activities)|
+|[Activités Microsoft Power Automate](#microsoft-power-automate-activities)|[Activités Microsoft Power Apps](#microsoft-power-apps-activities)|[Activités de Microsoft Stream](#microsoft-stream-activities)|
 |[Activités Microsoft Forms](#microsoft-forms-activities)|[Activités administrateur Exchange](#exchange-admin-audit-log)|||
 ||||
 
@@ -772,13 +772,13 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 |Affichage d’un fichier|FileVisited|Un utilisateur affiche un fichier.|
 ||||
 
-### <a name="microsoft-flow-activities"></a>Activités Microsoft Flow
+### <a name="microsoft-power-automate-activities"></a>Activités Microsoft Power Automate
 
-Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Microsoft Flow. Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de Flow, voir le blog [événements d’audit de Microsoft Flow désormais disponible dans le centre de sécurité & conformité](https://flow.microsoft.com/blog/security-and-compliance-center).
+Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power Automate (précédemment appelé Microsoft Flow). Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de Power Automate, voir le blog [événements d’audit de Microsoft Flow désormais disponible dans le centre de sécurité & conformité](https://flow.microsoft.com/blog/security-and-compliance-center).
 
-### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+### <a name="microsoft-power-apps-activities"></a>Activités Microsoft Power Apps
 
-Vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées aux applications dans PowerApps. Ces activités incluent la création, le lancement et la publication d’une application. L’attribution d’autorisations à des applications est également auditée. Pour obtenir une description de toutes les activités PowerApp, voir [journalisation des activités pour PowerApps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
+Vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées aux applications dans Power Apps. Ces activités incluent la création, le lancement et la publication d’une application. L’attribution d’autorisations à des applications est également auditée. Pour obtenir une description de toutes les activités Power Apps, voir [Journalisation des activités pour Power Apps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### <a name="microsoft-stream-activities"></a>Activités de Microsoft Stream
 

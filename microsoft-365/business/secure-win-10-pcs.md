@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment sécuriser des PC Windows 10 après avoir configuré Microsoft 365 Business.
-ms.openlocfilehash: 47598ef0b5cba60a6d5e53973cc8b88584c62d05
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 3c558132f1e370a19735a38f9caa09ddb8e1f9f4
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837318"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515585"
 ---
 # <a name="secure-windows-10-computers"></a>Sécuriser les ordinateurs Windows 10
 
@@ -34,12 +34,12 @@ Regardez cette vidéo pour obtenir une vue d’ensemble de la configuration des 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
 
-Si vous avez trouvé cette vidéo utile, consultez la [série de formation complète pour les petites entreprises et les nouveautés de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="to-secure-your-windows-10-pcs"></a>Pour sécuriser vos PC Windows 10
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de vos informations d’identification d’administrateur général. 
-2. Dans le volet de navigation de gauche, sélectionnez **configuration** , puis sous **sécurité unique et sécurité**, choisissez **sécuriser vos ordinateurs Windows 10**. Choisissez **affichage** pour commencer.
+2. Dans le volet de navigation de gauche, sélectionnez **configuration** , puis sous **connexion et sécurité**, choisissez **sécuriser vos ordinateurs Windows 10**. Choisissez **affichage** pour commencer.
 3. Sur la page **sécuriser vos ordinateurs Windows 10** , lisez toutes les informations pour comprendre ce que vous activez et ce qu’est l’impact de l’utilisateur.
 
     En haut de la page, sélectionnez **prise en main**.

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 886ede889e1843c7f7e94b89aeffb89d59a0120a
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 64514c8c46cbc2ef35746e052e1ffb87831933c2
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111848"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515785"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Référence de la fonctionnalité de conformité de la communication (aperçu)
 
@@ -84,6 +84,16 @@ Avec les stratégies de conformité de communication, vous pouvez choisir d’an
     - [Connecteur de données personnalisé](archiving-third-party-data.md)
 
 Vous devez configurer un connecteur tiers pour votre organisation Microsoft 365 avant de pouvoir attribuer le connecteur à une stratégie de conformité de communication. La section **sources** tierces de l’Assistant stratégie de conformité des communications affiche uniquement les connecteurs tiers actuellement configurés.
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Transition de la surveillance dans Office 365
+
+Les organisations qui utilisent des stratégies de surveillance dans Office 365 et qui envisagent de passer aux stratégies de conformité des communications dans Microsoft 365 doivent comprendre les points importants suivants :
+
+- Les deux solutions peuvent être utilisées côte à côte dans votre organisation, mais les stratégies utilisées dans chaque solution doivent avoir des noms de stratégie uniques. Les groupes et les dictionnaires de mots clés personnalisés peuvent être partagés entre les solutions pendant une période de transition.
+- Les messages enregistrés en supervision dans Office 365 les correspondances de stratégie ne peuvent pas être déplacés ou partagés dans la conformité de communication dans Microsoft 365.
+- La solution de supervision dans Office 365 sera entièrement remplacée par la solution de conformité de la communication dans Microsoft 365. Nous vous recommandons de créer de nouvelles stratégies dans la conformité de la communication avec les mêmes paramètres que les stratégies de surveillance existantes pour utiliser les améliorations apportées à l’enquête et aux corrections correctives. Lors de la transition vers la conformité de la communication dans Microsoft 365, vous devez planifier l’exportation des données de création de rapports à partir de la surveillance dans Office 365 si vous avez des exigences de stratégie de rétention de conformité internes.
+
+Pour plus d’informations sur la retraite de la surveillance dans Office 365, consultez la feuille de [route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour plus de détails.
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
@@ -219,6 +229,7 @@ Les filtres de conformité de la communication vous permettent de filtrer et de 
 | **Subject/title** | Objet du message ou titre de conversation. |
 | **Tags** | Les balises affectées à un message, qu’elles soient *douteuses*, *conformes*ou *non conformes*. |
 | **Transmis à** | Nom d’utilisateur de la personne incluse dans le cadre d’une action de réaffectation de message. |
+| **Classifieurs requêtes** | Nom des classifieurs intégrés et personnalisés qui s’appliquent au message. Certains exemples incluent un *langage offensant*, un *harcèlement ciblé*, un *blasphème*, une *menace*, etc.
 
 ## <a name="alert-policies"></a>Stratégies d’alerte
 

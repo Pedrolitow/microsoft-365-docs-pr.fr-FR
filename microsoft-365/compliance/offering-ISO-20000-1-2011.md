@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 705b59a5ae499a580086304abe91a9318bb36fcb
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4ae0df3ddc8eec28cc6f29bddd0a46a09d33b0dc
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859704"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260042"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>Gestion des services informatiques ISO/IEC 20000-1:2011
 
@@ -37,6 +38,7 @@ Une société d’audit tierce et indépendante a réalisé un examen rigoureux 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Intune
+- Bureau géré Microsoft
 - Microsoft PowerApps
 - Microsoft Flow
 - Microsoft Graph
@@ -46,7 +48,7 @@ Une société d’audit tierce et indépendante a réalisé un examen rigoureux 
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
-Documentation 2017 ISO 20000-1 pour Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics et Microsoft Datacenters
+ISO 2017 et 20000-1 : documentation pour Azure, Intune, Bureau géré Microsoft, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics et Microsoft Datacenters
 
 - [Rapport d’évaluation](https://go.microsoft.com/fwlink/p/?linkid=2077810)
 - [Certificat](https://go.microsoft.com/fwlink/p/?linkid=2077815)
@@ -76,6 +78,6 @@ Oui. Si votre entreprise recherche une certification pour des implémentations d
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/4/E/5/4E58193E-F4D8-4A98-A39E-27F604BD8292/ISO-IEC-20000-Compliance.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/4/E/5/4E58193E-F4D8-4A98-A39E-27F604BD8292/ISO-IEC-20000-Compliance.pdf) (disponible uniquement en anglais pour le moment).

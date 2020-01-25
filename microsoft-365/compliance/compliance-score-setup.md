@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment vous connecter, configurer des autorisations et comprendre votre tableau de bord pour le score de conformité Microsoft, ce qui vous permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 79e93a102107433ed2b493a56381bc60ca544157
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: d6ec9617ff97a254514370c863b02b2fb0415798
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021910"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515655"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Programme d’installation du score de conformité Microsoft (aperçu)
 
@@ -63,6 +63,38 @@ Pour définir des autorisations dans le centre de conformité Microsoft 365 :
 
 1. Accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com) et connectez-vous avec votre compte d’administrateur général.
 2. Sélectionnez **autorisations** dans le volet de navigation de gauche. À partir de là, vous pouvez afficher les rôles et attribuer des autorisations.
+
+## <a name="configure-automatic-secure-score-updates"></a>Configurer les mises à jour automatiques du score de sécurité
+
+Par défaut, les mises à jour automatiques des [scores sécurisés](../security/mtp/microsoft-secure-score.md) sont activées pour tous les nouveaux clients. Cela signifie que toutes les actions qui sont surveillées par le score sécurisé mettent automatiquement à jour l’état de la même action dans le score de conformité.
+
+Votre administrateur général peut gérer ce paramètre pour désactiver les mises à jour automatiques pour toutes les actions ou définir des mises à jour pour les actions individuellement.
+
+Lors de la préversion publique, vous devez accéder au portail d’approbation de service Microsoft (où se trouve le gestionnaire de conformité) pour gérer les mises à jour du score sécurisé.
+
+Pour gérer les mises à jour automatiques du score de sécurité, procédez comme suit :
+
+1. Connectez-vous au [portail d’approbation de service](https://servicetrust.microsoft.com) avec votre compte d’administrateur général.
+
+2. Dans la barre de menus supérieure du portail d’approbation de service, sous **autres**, sélectionnez **administrateur** , puis **paramètres**.
+
+3. Sous l’onglet **score sécurisé** , sélectionnez le bouton correspondant pour **activer toutes les actions**, **désactiver pour toutes les actions**ou **définir par action.**
+
+Si vous choisissez **définir par action,** suivez ces étapes supplémentaires pour activer les mises à jour du score de sécurité pour des actions individuelles :
+
+4. Sélectionnez **Gestionnaire de conformité** dans le menu supérieur (Remarque : ne sélectionnez pas « gestionnaire de conformité (classique) »).
+
+5. Sélectionnez **gestion des clients** dans le coin supérieur droit de votre écran.
+
+6. Dans le volet **actions client** , recherchez l’action souhaitée avec des points de suspension (**...**) dans la colonne **actions affectées** . Cliquez sur les ellipses et sélectionnez **modifier.**
+
+7. Basculez le commutateur de basculement de **mise à jour continue de score de sécurité** **sur activé.**
+
+8. Sélectionnez **Enregistrer.** Score de sécurité la surveillance continue est maintenant activée pour cette action.
+
+**Remarque :** Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions de manière globale.
+
+Pour en savoir plus, consultez la rubrique [Managing Secure score updates](compliance-manager-release-notes.md#secure-score).
 
 ## <a name="understand-the-compliance-score-dashboard"></a>Comprendre le tableau de bord de score de conformité
 

@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie qui détecte les messages contenant du courrier indésirable ou des programmes malveillants qui ont déjà été remis dans la boîte de réception de vos utilisateurs, puis rend le contenu malveillant inoffensif. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: 87d0837b74606a57c7a4aaee3150f70449b09b81
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: b2e2fb8fb0786f921b7c5330e92df519b0877d30
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238381"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515895"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure : protection contre le courrier indésirable et les programmes malveillants
 
@@ -36,7 +36,7 @@ ZAP est disponible avec la protection Exchange Online par défaut incluse avec t
 
 Office 365 met à jour quotidiennement les signatures du moteur de blocage du courrier indésirable et des programmes malveillants en temps réel. Toutefois, vos utilisateurs peuvent toujours recevoir des messages malveillants dans leur boîte de réception pour diverses raisons, notamment si le contenu est arme après remise aux utilisateurs. ZAP les résout en surveillant en continu les mises à jour des signatures Office 365 courrier indésirable et anti-programme malveillant. ZAP peut rechercher et supprimer les messages précédemment remis qui se trouvent déjà dans les boîtes de réception des utilisateurs.
 
-L’action ZAP est transparente pour l’utilisateur de boîte aux lettres ; elles ne sont pas notifiées en cas de déplacement d’un message électronique. Le message ne doit pas être âgé de plus de 2 jours.
+L’action ZAP est transparente pour l’utilisateur de boîte aux lettres ; elles ne sont pas notifiées en cas de déplacement d’un message électronique. 
 
 Les listes d’autorisation, les [règles de flux de messagerie](use-transport-rules-to-configure-bulk-email-filtering.md) (également appelées règles de transport) et les règles d’utilisateur final ou les filtres supplémentaires prévalent sur zap.
 
@@ -67,8 +67,8 @@ ZAP ne déplace aucun message en quarantaine qui est en cours d’analyse de rem
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Comment savoir si la méthode ZAP a déplacé votre message
 
-Pour déterminer si l’élément ZAP a déplacé votre message, vous pouvez utiliser le [rapport d’état de protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) ou l' [Explorateur de menaces (et les détections en temps réel)](threat-explorer.md).
-
+Pour déterminer si l’élément ZAP a déplacé votre message, vous pouvez utiliser le [rapport d’état de protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) ou l' [Explorateur de menaces (et les détections en temps réel)](threat-explorer.md). Notez qu’en tant qu’action système, ZAP n’est pas consigné dans les journaux d’audit de boîte aux lettres Exchange. 
+ 
 ## <a name="disable-zap"></a>Désactiver ZAP
 
 Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à Exchange Online Protection PowerShell, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
@@ -115,7 +115,17 @@ Les règles créées par les administrateurs (règles de flux de messagerie) ou 
 
 ZAP fonctionne toujours dans ce cas, sauf si le message a été supprimé ou se trouve dans un courrier indésirable.
 
-## <a name="related-topics"></a>Voir aussi
+### <a name="does-zap-change-the-email-header"></a>ZAP modifie-t-il l’en-tête du message électronique ?
+
+Une action ZAP ne modifie pas l’en-tête d’un message électronique.
+
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Comment ZAP affecte-t-il les boîtes aux lettres en conservation ?
+
+ZAP ne supprime pas les messages des boîtes aux lettres en conservation et ne passe donc pas à l’action de mise en quarantaine sur les messages. Les messages seront toujours déplacés vers le dossier courrier indésirable s’il est spécifié par la stratégie. 
+
+[Pour plus d’informations sur les conservations des boîtes aux lettres, cliquez ici.](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
+
+## <a name="related-topics"></a>Rubriques connexes
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 

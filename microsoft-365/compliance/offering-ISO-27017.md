@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f58322fe915c811ba2613bef98116f910abc03d1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 758e7d0f3e82afa6cfd4b90501bd84080d8f6303
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859684"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260012"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 Code de pratique international des contrôles de sécurité des informations
 
@@ -48,6 +49,7 @@ Découvrez les avantages de la norme ISO/IEC 27017 sur le Microsoft Cloud : [T�
 - Génomique
 - Graph
 - Intune
+- Bureau géré Microsoft
 - Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense et Office 365 Allemagne
 - Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
@@ -60,7 +62,7 @@ Les services Cloud Microsoft font l’objet d’un audit une fois par an pour l
 
 - [Certificat ISO 27017 Azure](https://go.microsoft.com/fwlink/p/?linkid=2078005)
 - [Rapport d’évaluation d’Azure ISO 27017](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Déclaration d'applicabilité ISO 27017 Azure](https://aka.ms/azureiso27017StatementofApplicability)
+- [Déclaration d'applicabilité ISO 27017 Azure](https://aka.ms/AzureISO27017StatementofApplicability)
 - [Rapport d'évaluation d'audit ISO 27001, 27018 et 27017 Office 365](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
@@ -87,6 +89,6 @@ Le [portail d'approbation de services](https://aka.ms/stphelp) fournit des rappo
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf) (disponible uniquement en anglais pour le moment).

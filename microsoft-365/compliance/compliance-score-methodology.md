@@ -12,19 +12,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment le score de conformité Microsoft calcule un score personnalisé en fonction des actions entreprises pour traiter les risques et améliorer la position de votre conformité.
-ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793658"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515575"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Calcul du score de conformité Microsoft (aperçu)
 
 > [!IMPORTANT]
 > Le score de conformité n’exprime pas une mesure absolue de la conformité de l’organisation avec une norme ou réglementation particulière. Elle exprime la mesure dans laquelle vous avez adopté des contrôles qui peuvent réduire les risques pour les données personnelles et la confidentialité individuelle. Les recommandations du score de conformité et du gestionnaire de conformité ne doivent pas être interprétées comme garantie de conformité. Ce service est actuellement en version préliminaire et est soumis aux conditions des [services en ligne](https://go.microsoft.com/fwlink/?linkid=2108910).
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le tableau de bord de score de conformité affiche un score qui mesure votre progression dans la réalisation d’actions d’amélioration dans les contrôles. Vos points s’accumulent lorsque vous effectuez des actions.
 
@@ -43,11 +43,13 @@ Le score de conformité vous donne un score standard basé sur la base de donné
 
 ## <a name="how-compliance-score-continuously-assesses-controls"></a>Évaluation continue des contrôles par le score de conformité
 
-Le score de conformité analyse automatiquement votre environnement Microsoft 365 et détecte vos paramètres système, en continu et en mettant automatiquement à jour votre état de contrôle technique. Par exemple, si vous avez activé l’authentification multifacteur (MFA) dans le portail Azure AD, le score de conformité détecte le paramètre et le reflète dans les détails de la solution Access de contrôle. À l’inverse, si vous n’avez pas activé l’authentification multifacteur, les indicateurs de score de conformité qui vous sont recommandés.
+Le score de conformité analyse automatiquement votre environnement Microsoft 365 et détecte vos paramètres système, en continu et en mettant automatiquement à jour votre état de contrôle technique. Le score de conformité utilise le score de sécurité pour le moteur sous-jacent qui effectue la surveillance. [En savoir plus sur le score de sécurité et son fonctionnement](../security/mtp/microsoft-secure-score.md).
 
-Le score de conformité met à jour votre statut de contrôle toutes les 24 heures. Une fois que vous avez recommandé d’implémenter un contrôle, vous verrez le statut de contrôle mis à jour le jour suivant.
+Votre état de contrôle est mis à jour sur votre tableau de bord de score de conformité toutes les 24 heures. Une fois que vous avez recommandé d’implémenter un contrôle, vous verrez le statut de contrôle mis à jour le jour suivant.
 
-Lors de la préversion publique, l’évaluation continue est disponible pour les contrôles de partie, mais pas pour tous.
+Par exemple, si vous activez l’authentification multifacteur (MFA) dans le portail Azure AD, le score de conformité détecte le paramètre et indique que, dans les détails de la solution Access de contrôle. À l’inverse, si vous n’avez pas activé l’authentification multifacteur, les indicateurs de score de conformité qui vous sont recommandés.
+
+Lors de la préversion publique, l’évaluation continue est disponible pour une partie des contrôles, mais pas pour tous.
   
 ## <a name="control-types-and-points"></a>Types et points de contrôle
 
@@ -78,8 +80,8 @@ Chaque contrôle a une valeur affectée dans le score de conformité en fonction
 |:-----|:-----|
 | Préventif obligatoire | vingt |
 | Discrétionnaire préventif | 9  |
-| Détective obligatoire | 3  |
-| Discrétion de détective | 1  |
-| Correction obligatoire | 3  |
-| Correction discrétionnaire corrective | 1  |
+| Détective obligatoire | 3 |
+| Discrétion de détective | 0,1 |
+| Correction obligatoire | 3 |
+| Correction discrétionnaire corrective | 0,1 |
   

@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bf3666d4ad44b4fcf17ec93a1e425ffa0f12f766
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 7e882b19b69380d2787c9b1784ad3dadce5c1ce9
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259802"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515685"
 ---
 # <a name="insider-risk-management-policies-preview"></a>Stratégies de gestion des risques Insiders (aperçu)
 
@@ -36,19 +36,25 @@ Le **tableau de bord de stratégie** vous permet d’afficher rapidement les str
 
 ## <a name="policy-templates"></a>Modèles de stratégie
 
-Les modèles de gestion des risques initiés sont des conditions de stratégie prédéfinies qui définissent les types d’indicateurs de risque surveillés par une stratégie. Chaque stratégie doit avoir un modèle affecté dans l’Assistant de création de stratégie avant la création de la stratégie. Les modèles suivants sont disponibles :
+Les modèles de gestion des risques initiés sont des conditions de stratégie prédéfinies qui définissent les types d’indicateurs de risque surveillés par une stratégie. Chaque stratégie doit avoir un modèle affecté dans l’Assistant de création de stratégie avant la création de la stratégie. Lorsque vous créez une stratégie de risque Insider, vous pouvez choisir l’un des modèles suivants.
 
-- Sortie des **données des employés vol**: lorsque les employés quittent votre organisation, il existe des indicateurs de risque spécifiques généralement associés au vol de données par le fait de sortir des employés. Ce modèle de stratégie donne la priorité à ces indicateurs et concentre la détection et les alertes sur ce domaine à risque. Le vol de données pour le retrait des employés peut inclure le téléchargement de fichiers à partir de SharePoint Online, la copie de fichiers sur des appareils portables tels que des lecteurs USB, l’impression de fichiers et la copie de données vers des services de stockage et de messagerie Cloud personnels à proximité de leur démission de l’emploi et dates de fin. Ce modèle établit la priorité des indicateurs de risque liés à ces activités et la façon dont ils correspondent à l’état d’emploi de l’employé.
+### <a name="departing-employee-data-theft"></a>Défaition des vols de données des employés
 
-    >[!IMPORTANT]
-    >Lors de l’utilisation de ce modèle, vous devez configurer un connecteur RH Microsoft 365 pour importer régulièrement les informations de date de démission et de cessation d’emploi pour les employés de votre organisation. Pour obtenir des conseils détaillés sur la configuration du connecteur RH Microsoft 365 pour votre organisation, voir la rubrique [importer des données avec le connecteur RH](import-hr-data.md) .
+Lorsque les employés quittent votre organisation, il existe des indicateurs de risque spécifiques généralement associés au vol de données par le fait de sortir des employés. Ce modèle de stratégie donne la priorité à ces indicateurs et concentre la détection et les alertes sur ce domaine à risque. Le vol de données pour le retrait des employés peut inclure le téléchargement de fichiers à partir de SharePoint Online, la copie de fichiers sur des appareils portables tels que des lecteurs USB, l’impression de fichiers et la copie de données vers des services de stockage et de messagerie Cloud personnels à proximité de leur démission de l’emploi et dates de fin. Ce modèle établit la priorité des indicateurs de risque liés à ces activités et la façon dont ils correspondent à l’état d’emploi de l’employé.
 
-- **Fuites de données**: la protection des données et la prévention des fuites de données est un défi constant pour la plupart des organisations, en particulier avec la croissance rapide des nouvelles données créées par les employés, les appareils et les services. Les employés sont habilités à créer, stocker et partager des informations entre les services et les appareils qui rendent la gestion des fuites de données de plus en plus complexe et difficile. Les fuites de données peuvent inclure un partage accidentel d’informations en dehors de votre organisation ou du vol de données à des fins malveillantes. Ce modèle permet de hiérarchiser la détection en temps réel des téléchargements de données SharePoint Online suspects, de partager des fichiers et des dossiers, de copier des fichiers sur des appareils portables tels que des lecteurs USB, d’imprimer des fichiers et de copier des données dans des services de stockage et de messagerie Cloud personnels.
+>[!IMPORTANT]
+>Lors de l’utilisation de ce modèle, vous devez configurer un connecteur RH Microsoft 365 pour importer régulièrement les informations de date de démission et de cessation d’emploi pour les employés de votre organisation. Pour obtenir des conseils détaillés sur la configuration du connecteur RH Microsoft 365 pour votre organisation, voir la rubrique [importer des données avec le connecteur RH](import-hr-data.md) .
 
-    >[!IMPORTANT]
-    >Lorsque vous utilisez ce modèle, vous devez configurer au moins une stratégie de protection contre la perte de données (DLP) pour définir des informations sensibles dans votre organisation. Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation.
+### <a name="data-leaks"></a>Fuites de données
 
-- **Langage offensant dans la messagerie**: détecter et prendre des mesures pour empêcher le comportement offensant et abusif est un élément essentiel de la prévention des risques. Les classifieurs de langue injurieux intégrés dans Microsoft 365 peuvent analyser les messages électroniques envoyés à partir de boîtes aux lettres Exchange Online de votre organisation pour différents types de problèmes de conformité. Ces classifieurs utilisent une combinaison d’intelligence artificielle et de mots clés pour identifier la langue du courrier électronique susceptible de violer les stratégies anti-harcèlement. Utilisez ce modèle pour créer rapidement une stratégie qui utilise ces classifieurs pour détecter automatiquement le contenu des messages électroniques qui peut être considéré comme injurieux ou choquant. La gestion des risques internes utilise des classifieurs qui analysent les messages électroniques envoyés pour les termes et les sentiments de langue anglaise pour le langage offensant.
+La protection des données et la prévention des fuites de données sont des défis constants pour la plupart des organisations, en particulier en ce qui concerne la croissance rapide des nouvelles données créées par les employés, les appareils et les services. Les employés sont habilités à créer, stocker et partager des informations entre les services et les appareils qui rendent la gestion des fuites de données de plus en plus complexe et difficile. Les fuites de données peuvent inclure un partage accidentel d’informations en dehors de votre organisation ou du vol de données à des fins malveillantes. Ce modèle permet de hiérarchiser la détection en temps réel des téléchargements de données SharePoint Online suspects, de partager des fichiers et des dossiers, de copier des fichiers sur des appareils portables tels que des lecteurs USB, d’imprimer des fichiers et de copier des données dans des services de stockage et de messagerie Cloud personnels.
+
+>[!IMPORTANT]
+>Lorsque vous utilisez ce modèle, vous devez configurer au moins une stratégie de protection contre la perte de données (DLP) pour définir des informations sensibles dans votre organisation. Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation.
+
+### <a name="offensive-language-in-email"></a>Langage choquant dans le courrier électronique
+
+Détecter et prendre des mesures pour empêcher le comportement offensant et abusif est un élément essentiel de la prévention des risques. Les classifieurs de langue injurieux intégrés dans Microsoft 365 peuvent analyser les messages électroniques envoyés à partir de boîtes aux lettres Exchange Online de votre organisation pour différents types de problèmes de conformité. Ces classifieurs utilisent une combinaison d’intelligence artificielle et de mots clés pour identifier la langue du courrier électronique susceptible de violer les stratégies anti-harcèlement. Utilisez ce modèle pour créer rapidement une stratégie qui utilise ces classifieurs pour détecter automatiquement le contenu des messages électroniques qui peut être considéré comme injurieux ou choquant. La gestion des risques internes utilise des classifieurs qui analysent les messages électroniques envoyés pour les termes et les sentiments de langue anglaise pour le langage offensant.
 
 ## <a name="monitoring-windows"></a>Surveillance des fenêtres
 

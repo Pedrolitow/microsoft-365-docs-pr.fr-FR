@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804257"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259982"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -52,7 +52,8 @@ Découvrez les avantages de SOC 1, 2 et 3 sur le Cloud Microsoft : [Téléchar
 - Dynamics 365 et Dynamics 365 U.S. Government [liste détaillée](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
-- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Bureau géré Microsoft
+- Service cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Office 365, Office 365 U.S. Government et Office 365 U.S. Government Defense [Liste détaillée](https://go.microsoft.com/fwlink/p/?LinkID=2077751), Yammer a obtenu un rapport SOC 1 de type 1
 - Office 365 Allemagne
 - Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
@@ -66,6 +67,7 @@ Découvrez les avantages de SOC 1, 2 et 3 sur le Cloud Microsoft : [Téléchar
 - Sécurité de l’application Cloud
 - Graph
 - Intune
+- Bureau géré Microsoft
 - Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Power BI

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c3318be31335c9c9250b056e5972bb1c50ffbcbd
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 56a1836d4224534a8959816578869f4a809ec996
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860004"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260052"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Certification Cloud Security Alliance (CSA) STAR
 
@@ -46,6 +47,7 @@ Découvrez la façon d’accélérer votre déploiement de la certification CSA�
 - Graph
 - Health Bot
 - Intune
+- Bureau géré Microsoft
 - Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - OMS Service Map
 - Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
@@ -54,9 +56,9 @@ Découvrez la façon d’accélérer votre déploiement de la certification CSA�
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream : Certification CSA STAR](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Bureau géré Microsoft, OMS Service Map, PowerApps, Power BI, Stream : Certification CSA STAR](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Sur quelles normes du secteur la CSA CCM est-elle alignée ?**
 
@@ -89,6 +91,6 @@ Azure, Cloud App Security, Intune et Power BI ont obtenu le niveau le plus haut 
 - [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf) (disponible uniquement en anglais pour le moment).

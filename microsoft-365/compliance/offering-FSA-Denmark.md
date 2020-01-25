@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 89804f5f5f10d06879effd411cec4a7c52037620
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 02cde8915691565614e3d1d04a1fc57ed9a718cb
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859794"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41263326"
 ---
 # <a name="financial-supervisory-authority-fsa-denmark"></a>Autorité de surveillance financière (FSA) Danemark
 
@@ -36,7 +37,7 @@ Recommandations émises par le ministère de l’industrie, des affaires et des 
 
 ## <a name="microsoft-and-the-fsa"></a>Microsoft et le FSA
 
-Pour guider les institutions financières au Danemark qui envisagent d'externaliser des fonctions commerciales dans le cloud, Microsoft a publié une [Liste de contrôle sur la conformité pour les institutions financières danoises](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf /5fa5cdde-3219-4e95-946d-0c0d05494362). En examinant et en complétant la liste de contrôle, les organisations financières peuvent adopter les services Cloud Microsoft Business avec l'assurance qu'elles se conforment aux exigences réglementaires applicables.
+Pour guider les institutions financières au Danemark qui envisagent d'externaliser des fonctions commerciales dans le cloud, Microsoft a publié [une liste de contrôle sur la conformité pour les institutions financières danoises](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf). En examinant et en complétant la liste de contrôle, les organisations financières peuvent adopter les services cloud Microsoft Business avec l'assurance qu'elles se conforment aux exigences réglementaires applicables.
 
 Lorsque les institutions financières au Danemark externalisent les activités de l’entreprise dans le cloud, elles doivent se conformer aux exigences de l’autorité financière (FSA) dans le cadre de la politique générale de l’Autorité bancaire européenne (ABE). Plus précisément, ces exigences se concentrent sur la façon dont les accords contractuels entre services financiers et fournisseurs de Cloud peuvent garantir un contrôle adéquat des activités externalisées.
 
@@ -75,6 +76,6 @@ Oui. L’ordre exécutif sur l’externalisation de domaines d’activité impor
 - [Outil d’évaluation des risques dans le Cloud Azure Financial Services](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/E/9/7/E9793230-8137-4297-BC5E-A43F8732CCCD/FSA-Compliance.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/E/9/7/E9793230-8137-4297-BC5E-A43F8732CCCD/FSA-Compliance.pdf) (disponible uniquement en anglais pour le moment).

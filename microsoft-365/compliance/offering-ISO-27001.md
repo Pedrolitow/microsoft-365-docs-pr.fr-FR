@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 67cb8cd6a7320f0b2ff79566be4cf6c6fa3f67a6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: efedbdd8230b5fac81b59ca51c0fe863ab4f0c2a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "39233737"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260112"
 ---
 # <a name="compliance-offerings-isoiec-270012013-information-security-management-standards"></a>Offre de conformité liées aux normes de gestion de la sécurité des informations ISO/IEC 27001:2013
 
@@ -43,6 +44,7 @@ Découvrez les avantages de la norme ISO-lec-27001 sur le Cloud Microsoft : [té
 - Graph
 - Health Bot
 - Intune
+- Bureau géré Microsoft
 - Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Allemagne
@@ -60,7 +62,7 @@ Cycle d’audit : les services cloud computing Microsoft sont audités au moins
 
 ### <a name="azure"></a>Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, et Microsoft Datacenter – Certificat ISO 27001](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Bureau géré Microsoft, OMS Service Map, PowerApps, Power BI, Stream, et Microsoft Datacenter – Certificat ISO 27001](https://go.microsoft.com/fwlink/p/?linkid=2078342)
 
 ### <a name="office-365"></a>Office 365
 
@@ -88,7 +90,7 @@ Cycle d’audit : les services cloud computing Microsoft sont audités au moins
 
 ### <a name="azure"></a>Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, et Microsoft Datacenter – Rapport d’évaluation d’audit ISO 27001 et 27018](https://go.microsoft.com/fwlink/p/?linkid=2078010)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Bureau géré Microsoft, OMS Service Map, PowerApps, Power BI, Stream, et Microsoft Datacenter – Rapport d’évaluation d’audit ISO 27001 et 27018](https://go.microsoft.com/fwlink/p/?linkid=2078010)
 - [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, et Microsoft Datacenter – Déclaration d’applicabilité (SOA) ISO 27001 et 27018](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ### <a name="office-365"></a>Office 365
@@ -156,4 +158,4 @@ Oui. Si votre activité nécessite la certification ISO/IEC 27001 pour des impl
 
 ## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

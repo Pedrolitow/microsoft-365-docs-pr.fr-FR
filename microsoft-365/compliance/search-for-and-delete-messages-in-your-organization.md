@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité d’Office 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39218859"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259972"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Recherche et suppression de messages électroniques dans votre organisation Office 365
 
@@ -39,7 +39,7 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu dans Office 365 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou disposer du rôle de gestion de **Recherche de conformité**. Pour supprimer des messages, vous devez être membre du groupe de rôles de **gestion de l’organisation** ou disposer du rôle de gestion de **recherche et de purge**. Pour plus d’informations sur l’ajout d’utilisateurs au groupe de rôles, consultez la rubrique [Attribuer des accès utilisateurs au Centre de sécurité et conformité](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou disposer du rôle de gestion de **Recherche de conformité**. Pour supprimer des messages, vous devez être membre du groupe de rôles de **gestion de l’organisation** ou disposer du rôle de gestion de **recherche et de purge**. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez la rubrique [Attribuer des autorisations eDiscovery dans le Centre de sécurité et conformité](assign-ediscovery-permissions.md).
     
 - Pour supprimer des messages, vous devez utiliser le centre de sécurité et conformité PowerShell. Pour des instructions sur la façon de se connecter, consultez [Etape 2](#step-2-connect-to-security--compliance-center-powershell).
     

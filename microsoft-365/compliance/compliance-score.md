@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le score de conformité Microsoft aide les organisations à simplifier et à automatiser les évaluations des risques et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: 27720412ee8d2b03869b96a1ff9fce68b2fe6eb4
-ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
+ms.openlocfilehash: 8a523878cb003e1cc676ea65d69f402ddf056e84
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41261858"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515675"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Score de conformité Microsoft (aperçu)
 
@@ -141,4 +141,4 @@ Découvrez comment [créer des groupes dans le gestionnaire de conformité](work
 
 ## <a name="next-step-begin-setup"></a>Étape suivante : début de l’installation
 
-Connectez-vous, configurez les autorisations et découvrez votre tableau de bord de score de conformité à la [configuration du score de conformité](compliance-score-setup.md).
+Découvrez comment vous connecter, configurer des autorisations et configurer des vues de tableau de bord et de tableau de bord lors de [la configuration du score de conformité](compliance-score-setup.md).

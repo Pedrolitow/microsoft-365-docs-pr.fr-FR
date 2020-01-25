@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 322e74b846cc574b52708627d5f59dde3cfe9e80
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 221c773e04bd9b7a4e404d0ec6a5fd5695ca089c
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807383"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515755"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Examiner et corriger les alertes de conformité des communications (préversion)
 
@@ -58,7 +58,7 @@ Pour obtenir la liste complète des filtres et des détails sur les champs, voir
 
 5. Sélectionnez le contrôle **filtres** pour ouvrir la page Détails du **filtre** .
 
-6. Activez une ou plusieurs cases à cocher pour activer les filtres pour ces alertes.
+6. Activez une ou plusieurs cases à cocher pour activer les filtres pour ces alertes. Vous pouvez choisir parmi de nombreux filtres, dont *Date*, *expéditeur*, *objet/titre*, *classifieurs*, etc.
 
 7. Si vous souhaitez enregistrer le filtre sélectionné comme filtre par défaut, sélectionnez Enregistrer par **défaut**. Si vous souhaitez utiliser ce filtre en tant que filtre enregistré, sélectionnez **Terminer**.
 

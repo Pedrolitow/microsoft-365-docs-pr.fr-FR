@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 6ccf5cb4dff8b458c91700ebc1e7dc830d16aafc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: aaeb73553d023ac1664ba3bbff10d7edbb4dea54
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112268"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515875"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de supervision dans Office 365
 
@@ -41,6 +41,16 @@ Pour obtenir une vue d’ensemble rapide des stratégies de surveillance, voir l
 Pour en savoir plus sur les améliorations et la disponibilité des fonctionnalités de surveillance, consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
 Vous souhaitez essayer la nouvelle expérience de conformité de la communication dans Microsoft 365 ? Découvrez les fonctionnalités nouvelles et améliorées disponibles dans la [conformité de la communication dans Microsoft 365 (version d’évaluation)](communication-compliance.md).
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Transition de la surveillance dans Office 365
+
+Les organisations qui utilisent des stratégies de surveillance dans Office 365 et qui envisagent de passer aux [stratégies de conformité des communications dans Microsoft 365](communication-compliance.md) doivent comprendre les points importants suivants :
+
+- Les deux solutions peuvent être utilisées côte à côte dans votre organisation, mais les stratégies utilisées dans chaque solution doivent avoir des noms de stratégie uniques. Les groupes et les dictionnaires de mots clés personnalisés peuvent être partagés entre les solutions pendant une période de transition.
+- Les messages enregistrés en supervision dans Office 365 les correspondances de stratégie ne peuvent pas être déplacés ou partagés dans la conformité de communication dans Microsoft 365.
+- La solution de supervision dans Office 365 sera entièrement remplacée par la solution de conformité de la communication dans Microsoft 365. Nous vous recommandons de créer de nouvelles stratégies dans la conformité de la communication avec les mêmes paramètres que les stratégies de surveillance existantes pour utiliser les améliorations apportées à l’enquête et aux corrections correctives. Lors de la transition vers la conformité de la communication dans Microsoft 365, vous devez planifier l’exportation des données de création de rapports à partir de la surveillance dans Office 365 si vous avez des exigences de stratégie de rétention de conformité internes.
+
+Pour plus d’informations sur la retraite de la surveillance dans Office 365, consultez la feuille de [route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour plus de détails.
 
 ## <a name="scenarios-for-supervision-policies"></a>Scénarios de surveillance des stratégies
 

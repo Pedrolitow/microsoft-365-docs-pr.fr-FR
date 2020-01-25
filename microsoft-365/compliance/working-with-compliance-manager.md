@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire relatives aux produits Microsoft.
-ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: db63f1b5cba2166ae8e4f922b84672677b52c4e9
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022010"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515865"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -72,13 +72,25 @@ Pour ajouter ou supprimer des utilisateurs des rôles du Gestionnaire de conform
 
 ### <a name="controlling-automatic-secure-score-updates"></a>Contrôle des mises à jour automatiques du score de sécurité
 
-Les mises à jour du score sécurisé peuvent être activées automatiquement pour toutes les actions, peuvent être désactivées pour toutes les actions ou peuvent être définies par une action individuelle.
+Les mises à jour du score sécurisé peuvent être activées automatiquement pour toutes les actions, désactivées pour toutes les actions ou définies par une action individuelle en procédant comme suit.
 
 1. Connectez-vous au [portail d’approbation de service](https://servicetrust.microsoft.com) avec votre compte d’administrateur général.
 
-2. Dans la barre de menus supérieure du portail d’approbation de service, sélectionnez **administrateur** , puis **paramètres**.
+2. Dans la barre de menus supérieure du portail d’approbation de service, sous **autres**, sélectionnez **administrateur** , puis **paramètres**.
 
-4. Sous l’onglet chiffrement **sécurisé** , sélectionnez le bouton approprié pour le paramètre que vous avez choisi.
+3. Sous l’onglet **score sécurisé** , sélectionnez le bouton correspondant pour **activer toutes les actions**, **désactiver pour toutes les actions**ou **définir par action.**
+
+Si vous choisissez **définir par action,** suivez ces étapes supplémentaires pour activer les mises à jour du score de sécurité pour des actions individuelles :
+
+4. Sélectionnez **Gestionnaire de conformité** dans le menu supérieur (Remarque : ne sélectionnez pas « gestionnaire de conformité (classique) »).
+
+5. Sélectionnez **gestion des clients** dans le coin supérieur droit de votre écran.
+
+6. Dans le volet **actions client** , recherchez l’action souhaitée avec des points de suspension (**...**) dans la colonne **actions affectées** . Cliquez sur les ellipses et sélectionnez **modifier.**
+
+7. Basculez le commutateur de basculement de **mise à jour continue de score de sécurité** **sur activé.**
+
+8. Sélectionnez **Enregistrer.** Score de sécurité la surveillance continue est maintenant activée pour cette action.
 
 **Remarque :** Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions de manière globale.
 
