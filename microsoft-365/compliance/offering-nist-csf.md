@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbe175d16a7b588e8c0cb3e7b5457459c314bdc
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 89296e2fb7b94bd74ee8ff617d818705fb844863
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804037"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558511"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Institut Cybersecurity (CSF) National Institute of Standards and Technology (CSF)
 
@@ -33,12 +33,12 @@ Le FICIC fait référence à des normes reconnues globalement, notamment NIST SP
 
 L’infrastructure NIST Cybersecurity Framework (CSF) est une infrastructure volontaire constituée de normes, de conseils et de meilleures pratiques pour gérer les risques liés à Cybersecurity. Les services de Cloud Computing Microsoft ont subi des audits de ligne de base FedRAMP indépendants et élevés, et sont certifiés conformément aux normes FedRAMP. Par ailleurs, grâce à une évaluation validée effectuée par HITRUST, une organisation de développement et d’accréditation des normes de confidentialité et de sécurité de pointe, Office 365 est certifiée conforme aux objectifs spécifiés dans l’infrastructure NIST.
 
-Découvrez comment accélérer le déploiement de l’infrastructure NIST Cybersecurity avec le gestionnaire de conformité et notre plan de sécurité et de conformité Azure :
+Découvrez comment accélérer le déploiement de l’infrastructure NIST Cybersecurity avec le score de conformité et notre plan de conformité et de sécurité Azure :
 
 - [Télécharger le plan de sécurité et de conformité Azure-liste de vérification de l’évaluation des risques de l’Institut NIST](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
-- [En savoir plus sur l’évaluation CSF CSF pour Office 365 dans le gestionnaire de conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
+- [En savoir plus sur l’évaluation CSF CSF pour Office 365 dans le score de conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le champ d’application
 
 - [Public Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 pour le gouvernement](https://aka.ms/d365-compliance-list)
@@ -56,13 +56,13 @@ L’infrastructure NIST Cybersecurity Framework (CSF) peut être difficile dans 
 
 - [Commencer à utiliser le modèle CSF de l’Institut NIST Azure](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
-## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-manager"></a>Effectuer une évaluation des risques sur Office 365 à l’aide de l’infrastructure NIST dans le gestionnaire de conformité
+## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>Effectuer une évaluation des risques sur Office 365 en utilisant le CSF NIST dans le score de conformité
 
-Cybersecurity reste un problème de gestion critique dans l’ère de la transformation numérique. Pour vous aider à implémenter et à vérifier les contrôles de sécurité pour votre client Office 365, Microsoft fournit les actions client recommandées dans l’évaluation CSF dans le gestionnaire de conformité.
+Cybersecurity reste un problème de gestion critique dans l’ère de la transformation numérique. Pour vous aider à implémenter et à vérifier les contrôles de sécurité pour votre client Office 365, Microsoft fournit les actions client recommandées dans l’évaluation CSF de l’Institut NIST dans le score de conformité.
 
-- [Commencer à utiliser le gestionnaire de conformité](https://aka.ms/compliancemanager)
+- [Commencer à utiliser le score de conformité](compliance-score.md)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Un évaluateur indépendant a-t-il validé qu’Azure Government, Dynamics 365 et Office 365 prennent en charge la configuration CSF CSF ?**
 
@@ -107,4 +107,4 @@ Microsoft fournit les offres les plus complètes par rapport aux autres fourniss
 
 ## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf) (disponible uniquement en anglais pour le moment).

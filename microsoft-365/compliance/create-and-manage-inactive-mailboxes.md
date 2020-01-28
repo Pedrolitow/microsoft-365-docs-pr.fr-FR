@@ -16,28 +16,28 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Vous pouvez créer une boîte aux lettres inactive dans Office 365 en appliquant une stratégie de rétention de blocage ou d’Office 365 à la boîte aux lettres, puis en supprimant le compte d’utilisateur Office 365 correspondant. Les éléments d’une boîte aux lettres inactive sont conservés pendant la durée de la conservation ou de la stratégie de rétention qui lui a été appliquée avant qu’elle ne soit devenue inactive. Pour supprimer définitivement une boîte aux lettres inactive, supprimez simplement la stratégie de conservation ou de rétention.
-ms.openlocfilehash: cf2484dad9e9fda105985e9291a16a5f8a83f5c3
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b9ec4056e806211591cc4b6682b24b622302152b
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685895"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558371"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Créer et gérer des boîtes aux lettres inactives dans Office 365
 
-Office 365 vous permet de conserver le contenu des boîtes aux lettres supprimées. Cette fonctionnalité est appelée [boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md). Inactive mailboxes allow you to retain former employees' email after they leave your organization. Une boîte aux lettres devient inactive lorsqu’une conservation pour litige ou une stratégie de rétention Office 365 (créée dans le centre de sécurité et de conformité dans Office 365 ou Microsoft 365) est appliquée à la boîte aux lettres avant la suppression du compte d’utilisateur Office 365 correspondant. The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. Cela permet aux administrateurs, aux responsables de la mise en conformité et aux gestionnaires d’enregistrements d’utiliser la recherche de contenu pour rechercher et exporter le contenu d’une boîte aux lettres inactive. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
+Office 365 vous permet de conserver le contenu des boîtes aux lettres supprimées. Cette fonctionnalité est appelée [boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md). Inactive mailboxes allow you to retain former employees' email after they leave your organization. Une boîte aux lettres devient inactive lorsqu’une conservation pour litige ou une stratégie de rétention Office 365 (créée dans le centre de sécurité et de conformité dans Office 365 ou Microsoft 365) est appliquée à la boîte aux lettres avant la suppression du compte d’utilisateur Office 365 correspondant. The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. Cela permet aux administrateurs, aux responsables de la mise en conformité et aux gestionnaires d’enregistrements d’utiliser la recherche de contenu pour rechercher et exporter le contenu d’une boîte aux lettres inactive. Les boîtes aux lettres inactives ne peuvent pas recevoir de courriers, et n'apparaissent pas dans le carnet d'adresses partagé de votre organisation ou d'autres listes.
   
-> [!NOTE]
-> Nous avons reporté l'échéance du 1er juillet 2017 afin de créer des conservations inaltérables pour rendre une boîte aux lettres inactive. Cependant, plus tard cette année ou au début de l'année prochaine, vous ne pourrez plus créer de conservations inaltérables dans Exchange Online. Actuellement, seules les conservations pour litige et les stratégies de rétention Office 365 peuvent être utilisées pour créer une boîte aux lettres inactive. Toutefois, les boîtes aux lettres inactives existantes qui se trouvent en conservation inaltérable seront toujours prises en charge. Vous pouvez continuer à gérer les conservations inaltérables sur les boîtes aux lettres inactives. Cela inclut la modification de la durée d'une conservation inaltérable et la suppression définitive d'une boîte aux lettres inactive en supprimant la conservation inaltérable. 
+> [!IMPORTANT]
+> À mesure que nous continuons à investir de différentes manières pour conserver le contenu de la boîte aux lettres, nous annonçaons le retrait des conservations inaltérables dans le centre d’administration Exchange. Cela signifie que vous devez utiliser des conservations pour litige et des stratégies de rétention Office 365 pour créer une boîte aux lettres inactive. À partir du 1er avril 2020 vous ne pourrez pas créer de nouvelles conservations inaltérables dans Exchange Online. Toutefois, vous pourrez toujours modifier la durée de conservation d’un blocage sur place placé sur une boîte aux lettres inactive. Toutefois, à partir du 1er juillet 2020, vous ne pourrez pas modifier la durée de la conservation. Vous ne pourrez supprimer une boîte aux lettres inactive qu’en supprimant la conservation inaltérable. Les boîtes aux lettres inactives existantes qui sont en conservation inaltérable resteront conservées jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur le retrait des conservations inaltérables, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md).
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Pour désactiver une boîte aux lettres, vous devez lui avoir affecté une licence Exchange Online plan 2 afin qu’une conservation pour litige ou une stratégie de rétention Office 365 puisse être appliquée à la boîte aux lettres avant d’être supprimée. Les licences Exchange Online plan 2 font partie d’un abonnement Office 365 entreprise E3 et E5. Si une boîte aux lettres est affectée à une licence Exchange Online plan 1 ou Exchange Online Kiosk (qui fait respectivement partie d’un abonnement Office 365 E1 et F1), vous devez lui attribuer une licence d’archivage Exchange Online distincte de sorte qu’une conservation puisse être appliquée à la boîte aux lettres b. efore elle est supprimée. Pour plus d'informations, consultez la page [Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
-    
+
 - Les licences associées à la boîte aux lettres Exchange Online supprimée seront disponibles une fois que vous aurez supprimé le compte d’utilisateur Office 365 correspondant. Vous pouvez ensuite [attribuer ces licences à un autre utilisateur](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc). 
-    
+
 - Si une conservation pour litige ou une stratégie de rétention Office 365 (configurée pour conserver ou conserver et supprimer du contenu) n’est pas appliquée à une boîte aux lettres avant sa suppression, le contenu de la boîte aux lettres n’est pas conservé ni découvrable. Cependant, la boîte aux lettres peut être récupérée dans les 30 jours suivant sa suppression, mais, à défaut de récupération, elle est définitivement supprimée avec son contenu à l'issue de cette période.
-    
+
 - For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Pour en savoir plus sur les stratégies de rétention Office 365, consultez la rubrique [Vue d'ensemble des stratégies de rétention dans Office 365](retention-policies.md).
   
 ## <a name="create-an-inactive-mailbox"></a>Créer une boîte aux lettres inactive
@@ -71,7 +71,7 @@ Lorsqu'une conservation ou une stratégie de rétention Office 365 est appliqué
 
 Pour afficher la liste des boîtes aux lettres inactives dans votre organisation, procédez comme suit :
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide des informations d’identification d’un compte administrateur de votre organisation Office 365. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation Office 365. 
     
 2. Cliquez sur**rétention**de **gouvernance** > des informations.
     
@@ -104,7 +104,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
 
 Vous pouvez accéder au contenu de la boîte aux lettres inactive à l’aide de l’outil de recherche de contenu dans le centre de sécurité & conformité. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
   
-- [Recherche de contenu dans Office 365](content-search.md)
+- [Recherche de contenu dans Office 365](content-search.md)
     
 - [Exporter les résultats de la recherche de contenu](export-search-results.md)
     

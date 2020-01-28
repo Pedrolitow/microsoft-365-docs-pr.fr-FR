@@ -9,26 +9,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: fa10c4168720565770ec0a3bc4bb06486155c3cc
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: cf0b69d691b3071ee35119f67e389e49ccbb13ad
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970330"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558611"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le suivi des messages dans le centre de sécurité & conformité suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
+Le suivi des messages dans le centre de sécurité & conformité Office 365 suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
+
+Le suivi des messages dans le centre de sécurité & conformité améliore le suivi du message d’origine qui était disponible dans le centre d’administration Exchange. Vous pouvez utiliser les informations du suivi des messages pour répondre efficacement aux questions de l’utilisateur sur ce qui s’est passé aux messages, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie.
 
 > [!NOTE]
-> Pour effectuer le suivi des messages, l’administrateur doit être membre des groupes de rôles gestion de l’organisation, gestion de la conformité ou support technique.
-
-Le suivi des messages dans le centre de sécurité & conformité améliore le suivi des messages qui était disponible dans le centre d’administration Exchange. Vous pouvez utiliser les informations du suivi des messages pour répondre efficacement aux questions des utilisateurs sur ce qui s’est passé à leurs messages, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie.
-
-> [!NOTE]
-> Seuls les premiers messages 50000 sont affichés dans les résultats. La cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell renvoie tous les messages dans les résultats.
+> • Pour effectuer un suivi des messages, vous devez être membre des groupes de rôles gestion de l’organisation, gestion de la conformité ou support technique. Pour plus d’informations, consultez [la rubrique autorisations dans le centre de conformité & Office 365 Security](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Le nombre maximal de messages affichés dans les résultats dépend du type de rapport que vous avez sélectionné (pour plus d’informations, reportez-vous à la section [choisir le type de rapport](#choose-report-type) ). La cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell renvoie tous les messages dans les résultats.
 
 ## <a name="open-message-trace"></a>Ouvrir le suivi des messages
 
@@ -63,7 +60,7 @@ Les valeurs par défaut sont **tous les expéditeurs** et **tous les destinatair
 - **Pour les personnes**suivantes : cliquez dans ce champ pour sélectionner un ou plusieurs destinataires dans votre organisation.
 
 > [!NOTE]
-> Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris en charge ( `*@contoso.com`par exemple,), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément.<br/>Vous pouvez coller plusieurs listes d’expéditeurs ou de destinataires en les`;`séparant par des points-virgules (). espaces (`\s`), retours chariot`\r`() ou lignes suivantes (`\n`).
+> Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris en charge ( `*@contoso.com`par exemple,), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément. <br/><br/> Vous pouvez coller plusieurs listes d’expéditeurs ou de destinataires en les`;`séparant par des points-virgules (). espaces (`\s`), retours chariot`\r`() ou lignes suivantes (`\n`).
 
 ### <a name="time-range"></a>Plage horaire
 
@@ -71,17 +68,17 @@ La valeur par défaut est **2 jours**, mais vous pouvez spécifier des plages de
 
 - Par défaut, vous sélectionnez la plage de temps dans le mode **curseur** à l’aide d’une ligne de temps. Vous pouvez uniquement sélectionner les paramètres de jour ou d’heure affichés. La tentative de sélection d’une valeur entre-entre va aligner la bulle de début/fin au paramètre affiché le plus proche.
 
-   ![Un intervalle de temps de curseur dans un nouveau suivi des messages dans le centre de sécurité & conformité](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![Un intervalle de temps de curseur dans un nouveau suivi des messages dans le centre de sécurité & conformité](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
-   Toutefois, vous pouvez également passer en mode affichage **personnalisé** où vous pouvez spécifier les valeurs de date de **début** et de **Date de fin** (y compris les heures), et vous pouvez également sélectionner le **fuseau horaire** pour la plage date/heure. Notez que le paramètre **fuseau horaire** s’applique à la fois à vos entrées de requête et à vos résultats de requête.
+  Toutefois, vous pouvez également passer en mode affichage **personnalisé** où vous pouvez spécifier les valeurs de date de **début** et de **Date de fin** (y compris les heures), et vous pouvez également sélectionner le **fuseau horaire** pour la plage date/heure. Notez que le paramètre **fuseau horaire** s’applique à la fois à vos entrées de requête et à vos résultats de requête.
 
-   ![Une plage de temps personnalisée dans un nouveau suivi des messages dans le centre de sécurité & conformité](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![Une plage de temps personnalisée dans un nouveau suivi des messages dans le centre de sécurité & conformité](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
-   Pendant 10 jours ou moins, les résultats sont disponibles instantanément sous la forme d’un rapport de **synthèse** . Si vous spécifiez un intervalle de temps qui est encore légèrement supérieur à 10 jours, les résultats seront retardés, car ils ne seront disponibles que sous forme de fichier CSV téléchargeable ( **Résumé amélioré** ou rapports **étendus** ).
+  Pendant 10 jours ou moins, les résultats sont disponibles instantanément sous la forme d’un rapport de **synthèse** . Si vous spécifiez un intervalle de temps qui est encore légèrement supérieur à 10 jours, les résultats seront retardés, car ils ne seront disponibles que sous forme de fichier CSV téléchargeable ( **Résumé amélioré** ou rapports **étendus** ).
 
-   Pour plus d’informations sur les différents types de rapport, reportez-vous à la section [choisir un type de rapport](#choose-report-type) dans cette rubrique.
+  Pour plus d’informations sur les différents types de rapport, reportez-vous à la section [choisir un type de rapport](#choose-report-type) dans cette rubrique.
 
-   **Remarque**: le résumé amélioré et les rapports étendus sont préparés à l’aide des données de suivi des messages archivés, et peuvent prendre jusqu’à plusieurs heures avant que le rapport ne soit disponible pour téléchargement. En fonction du nombre d’autres administrateurs ayant également envoyé des demandes de rapports en même temps, vous pouvez également remarquer un délai avant le début du traitement de votre demande en file d’attente.
+  **Remarque**: le résumé amélioré et les rapports étendus sont préparés à l’aide des données de suivi des messages archivés, et peuvent prendre jusqu’à plusieurs heures avant que le rapport ne soit disponible pour téléchargement. En fonction du nombre d’autres administrateurs ayant également envoyé des demandes de rapports en même temps, vous pouvez également remarquer un délai avant le début du traitement de votre demande en file d’attente.
 
 - L’enregistrement d’une requête en mode **curseur** enregistre la plage de temps relative (par exemple, 3 jours à partir d’aujourd’hui). L’enregistrement d’une requête en mode **personnalisé** enregistre la plage date/heure absolue (par exemple, 2018-05-06 13:00 à 2018-05-08 18:00).
 
@@ -129,9 +126,9 @@ Vous pouvez échanger les résultats par adresse IP du client pour enquêter sur
 
 Les types de rapports disponibles sont les suivants :
 
-- **Résumé**: disponible si l’intervalle de temps est inférieur à 10 jours et ne requiert aucune option de filtrage supplémentaire. Les résultats sont disponibles presque immédiatement après que vous avez cliqué sur **Rechercher**.
+- **Résumé**: disponible si l’intervalle de temps est inférieur à 10 jours et ne requiert aucune option de filtrage supplémentaire. Les résultats sont disponibles presque immédiatement après que vous avez cliqué sur **Rechercher**. Le rapport renvoie jusqu’à 20000 résultats.
 
-- **Résumé amélioré** ou **étendu**: ces rapports sont disponibles uniquement sous forme de fichiers CSV téléchargeables et nécessitent une ou plusieurs des options de filtrage **suivantes, quelle**que soit la plage horaire : **par ces personnes**, ou **ID de message**. Vous pouvez utiliser des caractères génériques pour les expéditeurs ou les destinataires (par \*exemple, @contoso. com).
+- **Résumé amélioré** ou **étendu**: ces rapports sont disponibles uniquement sous forme de fichiers CSV téléchargeables et nécessitent une ou plusieurs des options de filtrage **suivantes, quelle**que soit la plage horaire : **par ces personnes**, ou **ID de message**. Vous pouvez utiliser des caractères génériques pour les expéditeurs ou les destinataires (par \*exemple, @contoso. com). Le rapport de synthèse améliorée renvoie jusqu’à 50000 résultats. Le rapport étendu renvoie jusqu’à 1000 résultats.
 
 **Remarques** :
 
@@ -335,7 +332,7 @@ Le champ **custom_data** d’un `AGENTINFO` événement est utilisé par divers 
 
 Une valeur de **custom_data** commençant par `S:SFA` provient de l’agent de filtrage du courrier indésirable. Les détails clés sont décrits dans le tableau suivant :
 
-|**Value**|**Description**|
+|**Valeur**|**Description**|
 |:-----|:-----|
 |`SFV=NSPM`|Le message a été marqué comme n’étant pas un courrier indésirable et a été envoyé aux destinataires appropriés.|
 |`SFV=SPM`|Le message a été marqué comme courrier indésirable par le filtre de contenu.|
@@ -362,7 +359,7 @@ Voici un exemple **custom_data** valeur pour un message qui est filtré pour le 
 
 Une valeur de **custom_data** commençant par `S:AMA` provient de l’agent de filtrage des programmes malveillants. Les détails clés sont décrits dans le tableau suivant :
 
-|**Value**|**Description**|
+|**Valeur**|**Description**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` ou `AMA=EV|v=1`|Un programme malveillant a été détecté dans le message. `SUM`indique que le programme malveillant a pu être détecté par n’importe quel nombre de moteurs. `EV`indique que le programme malveillant a été détecté par un moteur spécifique. Lorsqu'un programme malveillant est détecté par un moteur, les actions suivantes se produisent.|
 |`Action=r`|Le message a été remplacé.|
@@ -385,7 +382,7 @@ Voici un exemple **custom_data** valeur d’un message contenant un programme ma
 
 Une valeur de **custom_data** commençant par`S:TRA` provient de l’agent de règles de transport pour les règles de flux de messagerie (également appelées règles de transport). Les détails clés sont décrits dans le tableau suivant :
 
-|**Value**|**Description**|
+|**Valeur**|**Description**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC de la correspondance de la règle.|

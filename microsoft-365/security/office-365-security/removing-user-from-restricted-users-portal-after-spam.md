@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: c817add2581ffdbe709023dc3b348631defec169
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: e942cd9012c3eba226db58808031ac200fbdfeca
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823816"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558631"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
 
@@ -74,7 +74,7 @@ Vous pourrez modifier l’alerte en effectuant les actions suivantes :
 
 ## <a name="checking-for-and-removing-restrictions-using-powershell"></a>Vérification et suppression des restrictions à l’aide de PowerShell
 Les commandes PowerShell pour les utilisateurs avec accès restreint sont les suivantes :
-- `Get-BlockedSenderAddress`: Exécuter pour récupérer la liste des utilisateurs qui ne sont pas autorisés à envoyer des messages électroniques
+- `Get-BlockedSenderAddress` : exécuter pour récupérer la liste des utilisateurs qui ne sont pas autorisés à envoyer des messages électroniques
 - `Remove-BlockedSenderAddress`: Exécuter pour supprimer des utilisateurs d’un accès restreint
 
 ## <a name="for-more-information"></a>Pour plus d'informations

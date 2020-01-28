@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise de Microsoft 365 Business vers Microsoft 365 E3.
-ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cf6aa741c7f0b427a434d472df7169ef37c5418
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111868"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558041"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migration de Microsoft 365 Entreprise vers Microsoft 365 E3
 
@@ -51,7 +51,7 @@ Ce tableau présente les différences entre Microsoft 365 entreprise et Microsof
 | Applications Office *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
 | **Applications de productivité sur le Cloud**       | | | 
 | Exchange Online et Outlook   | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité   | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
-| Teams | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
+| Équipes | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | OneDrive Entreprise | limite de stockage de 1 to par utilisateur   | Illimité | 
 | Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | StaffHub  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
@@ -77,7 +77,7 @@ Ce tableau présente les différences entre Microsoft 365 entreprise et Microsof
 | Suite CAL Enterprise (Exchange, SharePoint, Skype, Windows, gestionnaire de configuration de point de terminaison Microsoft, gestion des droits Windows)| |       ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | **Conformité**        | | | 
 | Archivage de courrier électronique illimité | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
-| Le Gestionnaire de conformité    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
+| Score de conformité/gestionnaire de conformité   | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | eDiscovery    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | Conservation inaltérable et conservation pour litige | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
 | Gestion des enregistrements de messagerie, balises de rétention et stratégies de rétention  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 

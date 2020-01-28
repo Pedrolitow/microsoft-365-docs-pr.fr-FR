@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: eacbb5577c070ce463ad8e17ba6d0d19a1d8736c
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 3d0bba3c75bda77cbffbbd515215a10d579755be
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40971330"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558561"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migration des recherches et des suspensions de découverte électronique héritées vers le centre de conformité Microsoft 365
 
@@ -75,7 +75,7 @@ La sortie de ces deux commandes est similaire à ce qui suit :
 ![Exemple de sortie PowerShell de l’utilisation de Get-MailboxSearch pour une recherche individuelle](media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> La durée de la conservation inaltérable dans cet exemple est indéfinie (*ItemHoldPeriod : Unlimited*). C’est généralement le cas pour la découverte électronique et les scénarios d’enquête légale. Si la durée de la conservation est différente de la valeur indéfinie, la raison est probablement le fait que la conservation est utilisée pour conserver le contenu dans un scénario de rétention. Au lieu d’utiliser les applets de commande eDiscovery dans Office 365 Security & Centre de conformité PowerShell pour les scénarios de rétention, nous vous recommandons d’utiliser [New-holdcompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy) et [New-holdcompliancerule permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule) pour conserver le contenu. Le résultat de l’utilisation de ces cmdlets est similaire à celui de **New-CaseHoldPolicy** et **New-CaseHoldRule**, mais vous pouvez spécifier une période de rétention et une action de rétention, telles que la suppression de contenu après l’expiration de la période de rétention. En outre, l’utilisation des cmdlets de rétention n’exige pas que vous associiez les conservations de rétention à un cas eDiscovery.
+> La durée de la conservation inaltérable dans cet exemple est indéfinie (*ItemHoldPeriod : Unlimited*). C’est généralement le cas pour la découverte électronique et les scénarios d’enquête légale. Si la durée de la conservation est différente de la valeur indéfinie, la raison est probablement le fait que la conservation est utilisée pour conserver le contenu dans un scénario de rétention. Au lieu d’utiliser les applets de commande eDiscovery dans Office 365 Security & Centre de conformité PowerShell pour les scénarios de rétention, nous vous recommandons d’utiliser [New-retentioncompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) et [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) pour conserver le contenu. Le résultat de l’utilisation de ces cmdlets est similaire à celui de **New-CaseHoldPolicy** et **New-CaseHoldRule**, mais vous pouvez spécifier une période de rétention et une action de rétention, telles que la suppression de contenu après l’expiration de la période de rétention. En outre, l’utilisation des cmdlets de rétention n’exige pas que vous associiez les conservations de rétention à un cas eDiscovery.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Étape 4 : créer un cas dans le centre de conformité Microsoft 365
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez les outils de découverte électronique et de recherche Office 365 pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 06c02a9d5f31f8b7d6845214c10a150b6cacf379
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259420"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558361"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solutions eDiscovery : scénario de fuite de données-recherche et purge
 
@@ -54,7 +54,7 @@ Voici comment gérer un incident de fuite de données :
     
 - Pour créer un cas, vous devez être membre du groupe de rôles gestionnaire eDiscovery ou être membre d’un groupe de rôles personnalisé auquel est attribué le rôle de gestion des cas. Si vous n’êtes pas membre [du groupe de rôles gestionnaire eDiscovery](assign-ediscovery-permissions.md), demandez à un administrateur Office 365 de vous ajouter.
     
-- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles de gestionnaire de découverte électronique ou disposer du rôle de gestion de recherche de contenu. Pour supprimer des messages, vous devez être membre du groupe de rôles de gestion de l’organisation ou disposer du rôle de gestion de recherche et de purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez [la rubrique attribution d’autorisations eDiscovery dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles de gestionnaire de découverte électronique ou disposer du rôle de gestion de recherche de contenu. Pour supprimer des messages, vous devez être membre du groupe de rôles de gestion de l’organisation ou disposer du rôle de gestion de recherche et de purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez la rubrique [Attribuer des autorisations eDiscovery dans le Centre de sécurité et conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - Pour effectuer une recherche dans le journal d’audit Office 365 activités de découverte électronique à l’étape 8, l’audit doit être activé pour votre organisation. Vous pouvez rechercher des activités qui ont eu lieu au cours des 90 derniers jours. Pour en savoir plus sur l’activation et l’utilisation de l’audit, consultez la section [audit du processus d’enquête sur la fuite de données](#auditing-the-data-spillage-investigation-process) à l’étape 8. 
     
@@ -124,7 +124,7 @@ Vous pouvez utiliser le suivi des messages dans le centre de sécurité et de co
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Étape 6 : préparer les boîtes aux lettres
 
-Une fois que vous avez examiné et vérifié que les résultats de la recherche contiennent uniquement les messages qui doivent être supprimés, vous devez collecter une liste des adresses de messagerie des boîtes aux lettres affectées à utiliser à l’étape 7 lorsque vous exécutez la commande **Search-Mailbox-DeleteContent** . Vous devrez peut-être également préparer les boîtes aux lettres avant de pouvoir supprimer définitivement les messages électroniques selon que la récupération d’élément unique est activée ou non sur les boîtes aux lettres qui contiennent les données déversées ou si une de ces boîtes aux lettres est en attente.
+Une fois que vous avez vérifié et vérifié que les résultats de la recherche contiennent uniquement les messages qui doivent être supprimés, vous devez collecter une liste des adresses de messagerie des boîtes aux lettres concernées à utiliser à l’étape 7 lorsque vous supprimez les données déduites. Vous devrez peut-être également préparer les boîtes aux lettres avant de pouvoir supprimer définitivement les messages électroniques selon que la récupération d’élément unique est activée ou non sur les boîtes aux lettres qui contiennent les données déversées ou si une de ces boîtes aux lettres est en attente.
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Obtenir la liste des adresses des boîtes aux lettres avec des données déduites
 
@@ -168,9 +168,9 @@ Veillez à rétablir les configurations précédentes de la boîte aux lettres a
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Étape 7 : supprimer définitivement les données propagées
 
-À l’aide des emplacements de boîte aux lettres que vous avez collectés et préparés à l’étape 6, ainsi que de la requête de recherche créée et affinée à l’étape 3 pour rechercher les messages électroniques contenant les données indésirables, vous pouvez maintenant supprimer définitivement les données propagées.  Comme expliqué précédemment, pour supprimer des messages, vous devez être membre du groupe de rôles gestion de l’organisation ou disposer du rôle de gestion de la recherche et de la purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez [la rubrique attribution d’autorisations eDiscovery dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+À l’aide des emplacements de boîte aux lettres que vous avez collectés et préparés à l’étape 6, ainsi que de la requête de recherche créée et affinée à l’étape 3 pour rechercher les messages électroniques contenant les données indésirables, vous pouvez maintenant supprimer définitivement les données propagées.  Comme expliqué précédemment, pour supprimer des messages, vous devez être membre du groupe de rôles gestion de l’organisation ou disposer du rôle de gestion de la recherche et de la purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez la rubrique [Attribuer des autorisations eDiscovery dans le Centre de sécurité et conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-Pour supprimer les messages déversés, reportez-vous aux étapes 2 & 3 de la rubrique [Rechercher et supprimer des messages électroniques dans votre organisation Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
+Pour supprimer les messages déversés, reportez-vous aux étapes 2 & 3 dans [Rechercher et supprimer des messages électroniques](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Étape 8 : vérifier, fournir une preuve de suppression et d’audit
 

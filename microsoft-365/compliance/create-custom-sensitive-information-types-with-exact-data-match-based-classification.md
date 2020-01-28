@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
-ms.openlocfilehash: a639c71753602ffd381c9240cf6e7273f3ba8bbe
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 90fde2475529200ab53411b5cb0c6d3c64de2fee
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708081"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515665"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -299,6 +299,9 @@ Au cours de cette phase, vous configurez un groupe de sécurité personnalisé e
 > Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité  *EDM\_DataUploaders*  et administrateur local sur votre ordinateur.
 
 1. Téléchargez et installez l’[agent EDM de chargement](https://go.microsoft.com/fwlink/?linkid=2088639). Par défaut, l’emplacement d’installation doit être C:\\Program Files\\Microsoft\\EdmUploadAgent.
+
+> [!TIP]
+> Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent. exe ».
 
 2. Pour autoriser l’agent de téléchargement EDM, ouvrez l’invite de commandes Windows (en tant qu’administrateur), puis exécutez la commande suivante :
 

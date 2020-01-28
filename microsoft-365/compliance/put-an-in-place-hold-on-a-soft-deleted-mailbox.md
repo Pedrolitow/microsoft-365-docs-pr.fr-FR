@@ -10,19 +10,19 @@ localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Découvrez comment créer une conservation inaltérable pour une boîte aux lettres supprimée (récupérable) pour la rendre inactive et conserver son contenu. Vous pouvez ensuite utiliser les outils de découverte électronique Microsoft pour rechercher la boîte aux lettres inactive.
-ms.openlocfilehash: ab8ab8b8eff0eefd91a87fb72439547c7d2fe97b
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: 64ee6d2c9887158939a87b9657b607bc9f323cec
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38685809"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558481"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Placer une conservation inaltérable dans une boîte aux lettres supprimée (récupérable) dans Exchange Online
 
 Découvrez comment créer une conservation inaltérable pour une boîte aux lettres supprimée (récupérable) pour la rendre inactive et conserver son contenu. Vous pouvez ensuite utiliser les outils de découverte électronique Microsoft pour rechercher la boîte aux lettres inactive.
-  
-> [!NOTE]
-> Nous avons repoussé la date d’échéance pour la création de nouvelles conservations inaltérables dans Exchange Online (dans Office 365 et les offres Exchange Online autonomes). But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. En guise d’alternative à l’utilisation des conservations inaltérables, vous pouvez utiliser des [cas eDiscovery](https://go.microsoft.com/fwlink/?linkid=780738) ou des [stratégies de rétention](https://go.microsoft.com/fwlink/?linkid=827811) dans le centre de sécurité & Compliance Center. After we decommission new In-Place Holds, you'll still be able to modify existing In-Place Holds, and creating new In-Place Holds in Exchange Server 2013 and Exchange hybrid deployments will still be supported. And, you'll still be able to place mailboxes on Litigation Hold. 
+
+> [!IMPORTANT]
+> À mesure que nous continuons à investir de différentes manières pour conserver le contenu de la boîte aux lettres, nous annonçaons le retrait des conservations inaltérables dans le centre d’administration Exchange. À partir du 1er avril 2020 vous ne pourrez pas créer de nouvelles conservations inaltérables dans Exchange Online. Toutefois, vous pourrez toujours gérer les conservations inaltérables dans le centre d’administration Exchange ou à l’aide de la cmdlet **Set-MailboxSearch** dans Exchange Online PowerShell. Toutefois, à partir du 1er juillet 2020, vous ne pourrez pas gérer les conservations inaltérables. Vous ne les supprimerez que dans le centre d’administration Exchange ou à l’aide de la cmdlet **Remove-MailboxSearch** . Pour plus d’informations sur le retrait des conservations inaltérables, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md).
   
 You might have a situation where a person has left your organization, and their corresponding user account and mailbox were deleted. Afterwards, you realize there's information in the mailbox that needs to be preserved. What can you do? If the deleted mailbox retention period hasn't expired, you can put an In-Place Hold on the deleted mailbox (called a  soft-deleted mailbox ) and make it an inactive mailbox. An  *inactive mailbox*  is used to preserve a former employee's email after he or she leaves your organization. The contents of an inactive mailbox are preserved for the duration of the In-Place Hold that was is placed on the soft-deleted mailbox when it was made inactive. Une fois la boîte aux lettres inactive, vous pouvez effectuer une recherche dans la boîte aux lettres en utilisant la découverte électronique inaltérable dans Exchange Online, la recherche de contenu dans le centre de sécurité & conformité ou le centre eDiscovery dans SharePoint Online. 
   

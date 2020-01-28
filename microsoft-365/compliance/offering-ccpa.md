@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b6f24cb1afcefc9ddbe468530855603e7ee0f484
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 73c1d7be6da17ae29c6ea8423c879286714fe8f1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804187"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558601"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -51,12 +51,12 @@ Comme défini dans le fichier OST, Microsoft est conforme à l’ensemble des lo
 
 Voici quelques étapes que vous pouvez suivre pour vous préparer au CCPA :
 
-- Commencez à tirer parti de l’évaluation RGPD du Gestionnaire de Conformité dans le cadre de votre programme de confidentialité CCPA.
+- Commencez à exploiter le [score de conformité](compliance-score.md) RGPD dans le cadre de votre programme de confidentialité CCPA.
 - Établissez un processus pour répondre efficacement aux demandes d’accès des personnes concernées (DSARs) à l’aide de l’outil demandes des personnes concernées par les données.
 - Configurez les étiquettes et les stratégies de façon à découvrir, classifier et étiqueter, ainsi que protéger les données sensibles à l’aide de Microsoft Information Protection.
 - Utilisez les fonctionnalités de chiffrement du courrier électronique pour contrôler davantage les informations sensibles.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Quel effet le CCPA aura-t-il sur mon entreprise ?**
 

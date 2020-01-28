@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Office 365. Ces types de conservation incluent les conservations pour litige, la découverte électronique et les stratégies de rétention d’Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d’une stratégie de rétention à l’échelle de l’organisation.
-ms.openlocfilehash: 13e7bcec4d6ce7a04b069552b599e742c8777e8a
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: dcdb79aa1c1cae83602a42e6c99136a2f85226a1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634011"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558011"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -148,6 +148,9 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
 
 Si le GUID de la conservation inaltérable commence par le `cld` préfixe, veillez à inclure le préfixe lors de l’exécution de la commande précédente.
+
+> [!IMPORTANT]
+> À mesure que nous continuons à investir de différentes manières pour conserver le contenu de la boîte aux lettres, nous annonçaons le retrait des conservations inaltérables dans le centre d’administration Exchange. À partir du 1er avril 2020 vous ne pourrez pas créer de nouvelles conservations inaltérables dans Exchange Online. Toutefois, vous pourrez toujours gérer les conservations inaltérables dans le centre d’administration Exchange ou à l’aide de la cmdlet **Set-MailboxSearch** dans Exchange Online PowerShell. Toutefois, à partir du 1er juillet 2020, vous ne pourrez pas gérer les conservations inaltérables. Vous ne les supprimerez que dans le centre d’administration Exchange ou à l’aide de la cmdlet **Remove-MailboxSearch** . Pour plus d’informations sur le retrait des conservations inaltérables, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md).
 
 ### <a name="office-365-retention-policies"></a>Stratégies de rétention Office 365
 

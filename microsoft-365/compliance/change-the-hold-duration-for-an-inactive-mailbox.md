@@ -14,19 +14,19 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Une fois qu’une boîte aux lettres Office 365 est devenue inactive, vous pouvez modifier la durée de la conservation ou de la stratégie de rétention d’Office 365 affectée à la boîte aux lettres inactive. La durée de la conservation définit la durée de conservation des éléments dans le dossier Éléments récupérables.
-ms.openlocfilehash: 05f9b218098a48ca374e31fad1e9dc049e0062bc
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: e1c2515c155192739e771bd646753f24bac92a2d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39630894"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558391"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive dans Office 365
 
 Une boîte aux lettres inactive est utilisée pour conserver l'e-mail d'un ancien employé une fois qu'il quitte votre organisation. Une boîte aux lettres devient inactive lorsqu'une conservation pour litige, une conservation inaltérable, une stratégie de rétention Office 365 ou une conservation associée à un cas eDiscovery est appliquée à la boîte aux lettres, et avant que le compte d'utilisateur Office 365 correspondant ne soit supprimé. Le contenu d'une boîte aux lettres inactive est conservé pendant la durée de la conservation appliquée à la boîte aux lettres avant qu'elle ne soit définie comme inactive. La durée de la conservation définit la durée de conservation des éléments dans le dossier Éléments récupérables. Lorsque la durée de conservation expire pour un élément du dossier Éléments récupérables, l'élément est supprimé définitivement (purgé) de la boîte aux lettres inactive. Une fois qu'une boîte aux lettres devient inactive, vous pouvez modifier la conservation ou la stratégie de rétention Office 365 affectée à la boîte aux lettres inactive.
   
 > [!IMPORTANT]
-> Nous avons reporté l'échéance du 1er juillet 2017 afin de créer des conservations inaltérables pour rendre une boîte aux lettres inactive. Cependant, plus tard cette année ou au début de l'année prochaine, vous ne pourrez plus créer de conservations inaltérables dans Exchange Online. Actuellement, seules les conservations pour litige et les stratégies de rétention Office 365 peuvent être utilisées pour créer une boîte aux lettres inactive. Toutefois, les boîtes aux lettres inactives existantes qui se trouvent en conservation inaltérable seront toujours prises en charge. Vous pouvez continuer à gérer les conservations inaltérables sur les boîtes aux lettres inactives. Cela inclut la modification de la durée d'une conservation inaltérable et la suppression définitive d'une boîte aux lettres inactive en supprimant la conservation inaltérable. 
+> À mesure que nous continuons à investir de différentes manières pour conserver le contenu de la boîte aux lettres, nous annonçaons le retrait des conservations inaltérables dans le centre d’administration Exchange. Cela signifie que vous devez utiliser des conservations pour litige et des stratégies de rétention Office 365 pour créer une boîte aux lettres inactive. À partir du 1er avril 2020 vous ne pourrez pas créer de nouvelles conservations inaltérables dans Exchange Online. Toutefois, vous pourrez toujours modifier la durée de conservation d’un blocage sur place placé sur une boîte aux lettres inactive. Toutefois, à partir du 1er juillet 2020, vous ne pourrez pas modifier la durée de la conservation. Vous ne pourrez supprimer une boîte aux lettres inactive qu’en supprimant la conservation inaltérable. Les boîtes aux lettres inactives existantes qui sont en conservation inaltérable resteront conservées jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur le retrait des conservations inaltérables, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md).
   
 ## <a name="before-you-begin"></a>Avant de commencer
 

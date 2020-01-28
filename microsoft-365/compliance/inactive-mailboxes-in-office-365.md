@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: Découvrez comment conserver le contenu des boîtes aux lettres des anciens employés en transformant la boîte aux lettres en boîte aux lettres inactive. Pour ce faire, vous pouvez placer la boîte aux lettres en conservation pour litige ou appliquer une stratégie de rétention Office 365 à la boîte aux lettres, puis supprimer le compte Office 365 correspondant.
-ms.openlocfilehash: cd0d69b77dada9f249e3c3e0b68f556ad1120030
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 8522242e499d1b612b3e0f68055919bc75c8b4aa
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38685883"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41557971"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Vue d’ensemble des boîtes aux lettres inactives dans Office 365
 
@@ -33,9 +33,8 @@ Lorsqu’un employé quitte votre organisation (ou passe à un congé prolongé)
   
 Toutefois, si votre organisation doit conserver le contenu des boîtes aux lettres des anciens employés, vous pouvez transformer la boîte aux lettres en boîte aux lettres inactive en plaçant la boîte aux lettres en conservation pour litige ou en appliquant une stratégie de rétention Office 365 à la boîte aux lettres dans le centre de sécurité & de sécurité, puis en supprimant le compte Office 365 correspondant. The contents of an inactive mailbox are retained for the duration of the Litigation Hold placed on the mailbox or the retention period of the Office 365 retention policy applied to it before the mailbox was deleted. You can still recover the corresponding user account for a 30-day period. Toutefois, après 30 jours, la boîte aux lettres inactive est conservée dans Office 365 jusqu’à ce que la stratégie de conservation ou de rétention soit supprimée. 
   
-> [!NOTE]
-> Nous avons reporté l'échéance du 1er juillet 2017 afin de créer des conservations inaltérables pour rendre une boîte aux lettres inactive. Cependant, plus tard cette année ou au début de l'année prochaine, vous ne pourrez plus créer de conservations inaltérables dans Exchange Online. Actuellement, seules les conservations pour litige et les stratégies de rétention Office 365 peuvent être utilisées pour créer une boîte aux lettres inactive. Toutefois, les boîtes aux lettres inactives existantes qui se trouvent en conservation inaltérable seront toujours prises en charge. Vous pouvez continuer à gérer les conservations inaltérables sur les boîtes aux lettres inactives. Cela inclut la modification de la durée d'une conservation inaltérable et la suppression définitive d'une boîte aux lettres inactive en supprimant la conservation inaltérable. 
- 
+> [!IMPORTANT]
+> À mesure que nous continuons à investir de différentes manières pour conserver le contenu de la boîte aux lettres, nous annonçaons le retrait des conservations inaltérables dans le centre d’administration Exchange. Cela signifie que vous devez utiliser des conservations pour litige et des stratégies de rétention Office 365 pour créer une boîte aux lettres inactive. À partir du 1er avril 2020 vous ne pourrez pas créer de nouvelles conservations inaltérables dans Exchange Online. Toutefois, vous pourrez toujours modifier la durée de conservation d’un blocage sur place placé sur une boîte aux lettres inactive. Toutefois, à partir du 1er juillet 2020, vous ne pourrez pas modifier la durée de la conservation. Vous ne pourrez supprimer une boîte aux lettres inactive qu’en supprimant la conservation inaltérable. Les boîtes aux lettres inactives existantes qui sont en conservation inaltérable resteront conservées jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur le retrait des conservations inaltérables, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md).
   
 ## <a name="inactive-mailboxes-and-office-365-retention-policies"></a>Boîtes aux lettres inactives et stratégies de rétention Office 365
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 435b8177fc97f9cd07ff78704605428e594e0dd8
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112508"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558581"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
@@ -56,7 +56,7 @@ Ou
 
 ## <a name="step-by-step-labs"></a>**Laboratoires détaillés**
 
-Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion, notamment :
+Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion. Les laboratoires ont été mis à jour pour les dernières versions d’Intune et de Configuration Manager (version 1910).  
 
 ### <a name="device-and-app-readiness"></a>**Préparation des applications et des appareils**
 
@@ -116,9 +116,12 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
   - Gestion des mises à jour d’Office 365 ProPlus dans le Gestionnaire de configuration
   - Gestion des appareils mobiles appliquée à Windows 10 à l’aide de Microsoft Intune
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[** Kit laboratoire de déploiement Windows et Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+### <a name="new-windows-virtual-desktop"></a>**NOUVEAUTÉ : Windows Virtual Desktop**
+  - Windows Virtual Desktop prépare, déploie et optimise 
 
-*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et bénéficier d’une configuration automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go libres sont recommandés. Le laboratoire arrive à expiration le 15 février 2020. Une nouvelle version sera publiée avant cette expiration.*
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Télécharger le Kit laboratoire de déploiement Windows et Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+
+*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et bénéficier d’une configuration automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go libres sont recommandés. Le laboratoire arrive à expiration le 18 avril 2020. Une nouvelle version sera publiée avant l’expiration.*
 
 ## <a name="additional-guidance"></a>**Conseils supplémentaires**
 
