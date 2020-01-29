@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d36215c83c926f96b23e930f888e5c8dca40dc60
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: fcb48da4b6f3777fa8c21ef514d5f591e342562e
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808479"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573041"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
@@ -37,7 +37,7 @@ Les fonctionnalités d’analyse et de réponse automatisées (AIR) vous permett
 |0,1     |Une [alerte](#alerts) est déclenchée par un événement Office et un [Manuel de sécurité](#security-playbooks) lance une enquête automatisée pour les alertes sélectionnées. <br/><br/>Un analyste de la sécurité peut également [Démarrer une enquête automatisée manuellement](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), à partir d’un e-mail à partir de l' [Explorateur](threat-explorer.md).        |
 |n°2     |Lorsqu’une enquête automatisée s’exécute, elle recueille des données supplémentaires sur le courrier électronique et les entités associées à cet e-mail (fichiers, URL et destinataires).  L’étendue de l’enquête peut augmenter, car de nouvelles alertes associées sont déclenchées.         |
 |3     |Pendant et après une enquête automatisée, des [Détails et des résultats](#investigation-graph) peuvent être consultés. Les résultats incluent les [actions recommandées](#recommended-actions) qui peuvent être prises pour répondre et corriger les menaces détectées. De plus, un [Journal des manifestes](#playbook-log) est disponible pour suivre toutes les activités d’enquête.<br/><br/>Si votre organisation utilise une solution de création de rapports personnalisée ou une solution tierce, vous pouvez [utiliser l’API activité de gestion d’Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) pour afficher des informations sur les analyses et les menaces automatisées.         |
-|4     |Votre équipe de gestion des opérations de sécurité examine les résultats d’enquête et les recommandations, et approuve les actions de correction. Dans Office 365, les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation.         |
+|4      |Votre équipe de gestion des opérations de sécurité examine les résultats d’enquête et les recommandations, et approuve les actions de correction. Dans Office 365, les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation.         |
 
 Les sections suivantes fournissent plus d’informations sur AIR, notamment des informations sur les alertes, les règles de sécurité et les détails de l’enquête. De plus, deux exemples de fonctionnement de l’AIR sont inclus dans cet article. Pour commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
 

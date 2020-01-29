@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: 5bc131b98bbc0af5cdc9629e029c06f20a003d5f
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989599"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558591"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -116,7 +116,7 @@ Lorsqu’une stratégie de rétention est affectée à une boîte aux lettres ou
 
 Le contrôle de version est une fonctionnalité de toutes les bibliothèques de documents dans SharePoint Online et OneDrive Entreprise. Par défaut, le contrôle de version conserve au moins les 500 versions principales, même si vous pouvez augmenter cette limite. Pour plus d'informations, voir [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-Une stratégie de maintien (stratégie de rétention qui conserve le contenu au lieu de supprimer uniquement) conserve toutes les versions d’un document dans une collection de sites SharePoint ou un compte OneDrive. Chaque fois qu'un document soumis à une stratégie de rétention ou de conservation est édité, une version est copiée dans la bibliothèque Preservation Hold. Chaque fois qu'un document soumis à une stratégie de rétention ou de conservation est supprimé, toutes les versions sont copiées dans la bibliothèque Preservation Hold si le contrôle de version est activé. Chaque version d’un document dans la bibliothèque Preservation Hold est présente sous la forme d’un élément distinct avec sa propre période de rétention :
+Une stratégie de maintien (stratégie de rétention qui conserve le contenu au lieu de supprimer uniquement) conserve toutes les versions d’un document dans une collection de sites SharePoint ou un compte OneDrive. Lorsqu'un document soumis à une stratégie de rétention ou de conservation est édité pour le première fois, une version du document d’origine est copiée dans la bibliothèque Preservation Hold. Lorsqu'un document soumis à une stratégie de rétention ou de conservation est supprimé, toutes les versions sont copiées dans la bibliothèque Preservation Hold si le contrôle de version est activé. Chaque version d’un document dans la bibliothèque Preservation Hold est présente sous la forme d’un élément distinct avec sa propre période de rétention :
   
 - Si la stratégie de rétention est basée sur la date de création du contenu, chaque version comporte la même date d’expiration que le document d’origine. Le document d’origine et toutes ses versions expirent en même temps.
     
@@ -193,7 +193,7 @@ L’une des fonctionnalités les plus puissantes d’une stratégie de rétentio
     
 - Comptes OneDrive
     
-- Groupes Office 365 (s’applique au contenu de la boîte aux lettres, du site, des documents. La prise en charge du contenu de planificateur, Yammer, CRM Microsoft Teams, PowerBI, Stream, Exchange et des sites d’équipe SharePoint sera bientôt disponible.)
+- Groupes Office 365 (s’applique au contenu de la boîte aux lettres et du site SharePoint associé.)
     
 - Dossiers publics Exchange
     

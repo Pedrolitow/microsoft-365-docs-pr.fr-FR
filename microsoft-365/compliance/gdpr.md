@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d64d9b98fe3cf24a14b3f3126ff3f38b1d84087d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749733"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41557981"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Sythèse du règlement général sur la protection des données
 
@@ -99,7 +100,7 @@ En tant que responsable du traitement des données, Microsoft s’assure que les
 
 ### <a name="accountability-readiness-checklists-for-the-gdpr"></a>Listes de vérification de préparation sur la responsabilité concernant le RGPD
 
-Ces [listes de vérification](gdpr-arc.md) permettent d’accéder en toute simplicité aux informations dont vous pouvez avoir besoin pour prendre en charge le RGPD lors de l’utilisation de produits Microsoft. Vous pouvez gérer les éléments de cette liste de vérification à l’aide du [Gestionnaire de conformité](https://servicetrust.microsoft.com/ComplianceManager) en indiquant l’ID de contrôle et le titre de contrôle sous Contrôles gérés par le client dans la vignette RGPD.
+Ces [listes de vérification](gdpr-arc.md) permettent d’accéder en toute simplicité aux informations dont vous pouvez avoir besoin pour prendre en charge le RGPD lors de l’utilisation de produits Microsoft. Vous pouvez gérer les éléments de cette liste de vérification à l’aide du [Score de conformité Microsoft](compliance-score.md) en indiquant l’ID de contrôle et le titre de contrôle sous Contrôles gérés par le client dans la vignette RGPD.
 
 ## <a name="learn-more"></a>En savoir plus
 

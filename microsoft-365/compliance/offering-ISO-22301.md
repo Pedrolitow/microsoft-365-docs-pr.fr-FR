@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 08f05939e6cd4ebdff81fb2fd2fda47bac05e882
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: c872aa647496dcd81031418c71f2bcc6728cadfa
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260032"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558541"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Norme de gestion de la continuité des activités ISO/IEC 22301:2012
 
@@ -75,8 +75,8 @@ Oui. Si votre activité a besoin de la certification ISO 22301 pour des implém
 - [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Description programme de gestion de la continuité d’entreprise de Microsoft Entreprise](https://go.microsoft.com/fwlink/p/?linkid=2092212)
-- [Gestionnaire de conformité](https://go.microsoft.com/fwlink/p/?linkid=2092329)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Score de conformité](compliance-score.md)
+- [Ressources pour les spécialistes de la conformité sur le site Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 

@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: b0563e7056510682a685cb0950324dafa1fd2dd2
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959602"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558521"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>Règlement général sur la protection des données (RGPD)
 
@@ -37,7 +37,7 @@ Découvrez les meilleures pratiques du programme de confidentialité et la mani�
 
 ### <a name="abrona-prepares-for-gdpr-with-microsoft-365"></a>Abrona se prépare au RGPD avec Microsoft 365
 
-Découvrez comment l’organisme de services de santé néerlandais Abrona utilise des technologies Microsoft telles que le Gestionnaire de conformité et le service Azure Information Protection pour se préparer au RGPD.
+Découvrez comment l’organisme de services de santé néerlandais Abrona utilise des technologies Microsoft telles que le Score de conformité et le service Azure Information Protection pour se préparer au RGPD.
 
 [Visionner maintenant](https://go.microsoft.com/fwlink/p/?linkid=2048705)
 
@@ -64,9 +64,9 @@ Découvrez comment un client de Microsoft, INAIL, utilise le service Azure Infor
 
 [En savoir plus](offering-iso-27701.md)
 
-### <a name="compliance-manager"></a>Le Gestionnaire de conformité
+### <a name="compliance-score"></a>Score de conformité
 
-Utilisez le [Gestionnaire de conformité](https://go.microsoft.com/fwlink/p/?linkid=2048390) pour aider à évaluer les risques en permanence, obtenir des enseignements exploitables et simplifier vos processus de conformité.
+Utilisez le [Score de conformité](compliance-score.md) pour aider à évaluer les risques en permanence, obtenir des enseignements exploitables et simplifier vos processus de conformité.
 
 ### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
 

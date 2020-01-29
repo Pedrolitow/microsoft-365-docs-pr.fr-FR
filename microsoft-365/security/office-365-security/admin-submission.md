@@ -13,59 +13,62 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable et d’autres messages, URL et fichiers potentiellement dangereux de votre client Office 365 à Microsoft pour analyse.
-ms.openlocfilehash: 54cb42f8c02f2f41ad583d640a090509817911ee
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c46017becfed546557fbf59c0dbbe12e9af53aa0
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808549"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573031"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Procédure d’envoi de courrier indésirable, hameçon, URL et fichiers suspects à Microsoft pour l’analyse Office 365
 
-Les administrateurs peuvent envoyer des courriers électroniques à l’aide de l’ID de message réseau, des URL et des fichiers pour l’analyse par Microsoft dans Office 365. La section soumissions mises à jour inclut toujours les messages signalés par l’utilisateur et disponibles pour tous les clients utilisant EOP.
+Les administrateurs peuvent envoyer des courriers électroniques à l’aide de l’ID de message réseau, des URL et des fichiers pour l’analyse par Microsoft dans Office 365.
+La section soumissions mises à jour inclut toujours les messages signalés par l’utilisateur et disponibles pour tous les clients utilisant EOP.
 
-Lorsque vous soumettez un message électronique, vous obtenez des informations sur les stratégies susceptibles d’avoir autorisé le courrier entrant dans votre client, ainsi que sur l’examen de toutes les URL et pièces jointes du courrier. Les stratégies pouvant avoir autorisé un courrier incluent la liste des expéditeurs approuvés d’un utilisateur individuel, ainsi que des stratégies au niveau du client telles que les règles ETR. 
+Lorsque vous soumettez un message électronique, vous obtenez des informations sur les stratégies susceptibles d’avoir autorisé le courrier entrant dans votre client, ainsi que sur l’examen de toutes les URL et pièces jointes du courrier. Les stratégies pouvant avoir autorisé un courrier incluent la liste des expéditeurs approuvés d’un utilisateur individuel, ainsi que des stratégies au niveau du client, telles que les règles de flux de messagerie Exchange (également appelées règles de transport).
 
 ## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a>Comment faire pour diriger du contenu suspect vers Microsoft pour Office 365, analyse
 
-Pour envoyer du contenu à Microsoft, cliquez sur le bouton **nouvelle soumission** dans la partie supérieure gauche de la page soumissions. Un menu volant sur le côté droit de la page apparaît avec la possibilité d’envoyer un message électronique, une URL ou un fichier. 
+Pour envoyer du contenu à Microsoft, cliquez sur le bouton **nouvelle soumission** dans la partie supérieure gauche de la page soumissions. Un menu volant sur le côté droit de la page apparaît avec la possibilité d’envoyer un message électronique, une URL ou un fichier.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Envoyer un courrier électronique en question à Microsoft
+
 ![Exemple de dépôt de courrier électronique](../media/submission-flyout-email.PNG)
-1. Pour envoyer un message électronique, sélectionnez **courrier électronique** et spécifiez l' **ID de message réseau** de messagerie ou téléchargez le fichier de courrier électronique. 
 
-2. Spécifiez le ou les destinataires sur lesquels vous souhaitez exécuter la vérification de stratégie. La vérification de stratégie détermine si l’analyse du courrier électronique a contourné les messages en raison des stratégies de niveau utilisateur ou client. 
+1. Pour envoyer un message électronique, sélectionnez **courrier électronique** et spécifiez l' **ID de message réseau** de messagerie ou téléchargez le fichier de courrier électronique.
 
-3. Indiquez si l’e-mail doit avoir été bloqué ou non. Si la messagerie doit avoir été bloquée, indiquez si elle doit être bloquée en tant que courrier indésirable, hameçonnage ou programme malveillant. Si vous n’êtes pas certain de son type, utilisez votre meilleure appréciation.  
+2. Spécifiez le ou les destinataires sur lesquels vous souhaitez exécuter la vérification de stratégie. La vérification de stratégie détermine si l’analyse du courrier électronique a contourné les messages en raison des stratégies de niveau utilisateur ou client.
 
-* Si le filtre a été contourné en raison de stratégies lors de l’envoi, vous verrez des informations sur cette stratégie.
+3. Indiquez si l’e-mail doit avoir été bloqué ou non. Si la messagerie doit avoir été bloquée, indiquez si elle doit être bloquée en tant que courrier indésirable, hameçonnage ou programme malveillant. Si vous n’êtes pas certain de son type, utilisez votre meilleure appréciation.
 
-* Si le filtre n’a pas été contourné en raison d’une ou de plusieurs stratégies, l’analyse se terminera en quelques minutes. Vous verrez des informations supplémentaires sur l’envoi en cliquant sur le lien État. Cela inclut les résultats de la vérification de stratégie et le verdict de nouvelle analyse. Remarque cela n’exécute pas de nouveau le courrier électronique via la pile de filtrage complet DAV d’Office 365 mais exécute une nouvelle analyse partielle en fonction de certains attributs de l’e-mail, de l’URL ou du fichier. 
+   - Si le filtre a été contourné en raison de stratégies lors de l’envoi, vous verrez des informations sur cette stratégie.
+
+   - Si le filtre n’a pas été contourné en raison d’une ou de plusieurs stratégies, l’analyse se terminera en quelques minutes. Vous verrez des informations supplémentaires sur l’envoi en cliquant sur le lien État. Cela inclut les résultats de la vérification de stratégie et le verdict de nouvelle analyse. Remarque cela n’exécute pas de nouveau le courrier électronique via la pile de filtrage complet DAV d’Office 365 mais exécute une nouvelle analyse partielle en fonction de certains attributs de l’e-mail, de l’URL ou du fichier.
 
 4. Cliquez sur le bouton **Envoyer** .
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
+
 ![Exemple de dépôt de courrier électronique](../media/submission-url-flyout.png)
-1. Pour soumettre une URL, sélectionnez **URL** dans le menu volant. Tapez l’URL complète, y compris le protocole (**https://**). 
 
-* Si vous avez sélectionné **doit avoir été filtré**, spécifiez si l’URL est un hameçonnage ou un programme malveillant.
+1. Pour soumettre une URL, sélectionnez **URL** dans le menu volant. Tapez l’URL complète, y compris le protocole (**https://**).
 
-2. Cliquez sur le bouton **Envoyer** . 
-
-
-### <a name="submit-a-suspected-file-to-microsoft"></a>Envoyer un fichier suspect à Microsoft
-![Exemple de dépôt de courrier électronique](../media/submission-file-flyout.PNG)
-1. Pour soumettre un fichier, sélectionnez **fichier** dans le menu volant et téléchargez le fichier que vous souhaitez analyser. 
+   Si vous avez sélectionné **doit avoir été filtré**, spécifiez si l’URL est un hameçonnage ou un programme malveillant.
 
 2. Cliquez sur le bouton **Envoyer** .
 
+### <a name="submit-a-suspected-file-to-microsoft"></a>Envoyer un fichier suspect à Microsoft
+
+![Exemple de dépôt de courrier électronique](../media/submission-file-flyout.PNG)
+
+1. Pour soumettre un fichier, sélectionnez **fichier** dans le menu volant et téléchargez le fichier que vous souhaitez analyser.
+
+2. Cliquez sur le bouton **Envoyer** .
 
 ## <a name="related-topics"></a>Voir aussi
 
 [Plan 2 de protection avancée contre les menaces Office 365](office-365-ti.md)
-  
-[Se protéger contre les menaces dans Office 365](protect-against-threats.md)
-  
-[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
-  
 
+[Se protéger contre les menaces dans Office 365](protect-against-threats.md)
+
+[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)

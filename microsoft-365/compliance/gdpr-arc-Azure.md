@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 608e75dee25f73a1234a911bd5b9e4871412e59e
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 34d36b6782d1f3dd8a5b12beb7be681e07518170
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676771"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558091"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Liste de contrôle de la préparation d’Azure aux obligations du RGPD
 
@@ -29,9 +30,9 @@ Cette liste de vérification de préparation sur la responsabilité permet d’a
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) pour les exigences techniques en matière de sécurité.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) pour les exigences de gestion en matière de protection de la vie privée.
 
-Vous pouvez gérer les éléments de cette liste de contrôle à l’aide du Gestionnaire de conformité [16] en indiquant l’ID et le titre du contrôle sous Contrôles gérés par le client dans la vignette RGPD. Cette structure de contrôle est également utilisée pour organiser la présentation des contrôles internes implémentés par Azure pour se conformer au RGPD, que vous pouvez télécharger à partir du [Centre de confidentialité du service](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
+Vous pouvez gérer les éléments de cette liste de contrôle à l’aide du Score de conformité [16] en indiquant l’ID et le titre du contrôle sous Contrôles gérés par le client dans la vignette RGPD. Cette structure de contrôle est également utilisée pour organiser la présentation des contrôles internes implémentés par Azure pour se conformer au RGPD, que vous pouvez télécharger à partir du [Centre de confidentialité du service](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
-Cette structure de contrôle est également utilisée pour organiser la présentation des [contrôles internes que Microsoft Office 365 implémente pour respecter le RGPD](https://aka.ms/GDPRControls).
+Cette structure de contrôle est également utilisée pour organiser la présentation des [contrôles internes que Microsoft Office 365 implémente pour respecter le RGPD](https://aka.ms/gdprcontrols).
 
 Pour obtenir d’autres documents relatifs au RGPD, voir [https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted).
 
@@ -143,7 +144,7 @@ Pour obtenir d’autres documents relatifs au RGPD, voir [https://aka.ms/gdprget
 | 13 <a name="13"> </a> | [Microsoft Azure (complet) ISO/IEC 27001:2013 ISMS Détermination du domaine d’application](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Offres de conformité du Centre de confidentialité Microsoft](offering-home.md)  |
 | 15 <a name="15"> </a> | [Confidentialité et données à caractère personnel dans Intune](https://review.docs.microsoft.com/intune/privacy-personal-data) |
-| 16 <a name="16"> </a> | [Ensemble de contrôle complet du RGPD pour Azure téléchargeable](https://aka.ms/GDPRControls) ou [outil Gestionnaire de conformité](https://servicetrust.microsoft.com/ComplianceManager) |
+| 16 <a name="16"> </a> | [Ensemble de contrôle complet du RGPD pour Azure téléchargeable](https://aka.ms/GDPRControls) ou [Score de conformité](compliance-score.md) |
 | 17 <a name="17"> </a> | [Informations relatives au délégué à la protection des données de Microsoft](https://aka.ms/GDPRDPO) |
 
 ## <a name="learn-more"></a>En savoir plus

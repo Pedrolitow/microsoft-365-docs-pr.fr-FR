@@ -11,36 +11,36 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Si vous souhaitez être sûr de recevoir des messages d’un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le centre d’administration Exchange.
-ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+description: Si vous souhaitez être sûr de recevoir des messages d’un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable.
+ms.openlocfilehash: 02457a863445cf9544f75682aa2df3bf2b7e765a
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970850"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573001"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs approuvés dans Office 365
 
-Si vous souhaitez vous assurer que les utilisateurs reçoivent des courriers électroniques provenant d’expéditeurs ou d’expéditeurs spécifiques, car vous les approuvez et leurs messages, vous pouvez choisir parmi plusieurs méthodes. Ces options incluent les règles de transport Exchange (ETR), les expéditeurs approuvés Outlook, les listes d’adresses IP autorisées, les listes vertes d’expéditeurs/de domaines de courrier indésirable.
+Si vous souhaitez vous assurer que les utilisateurs reçoivent des courriers électroniques provenant d’expéditeurs ou d’expéditeurs spécifiques, car vous les approuvez et leurs messages, vous pouvez choisir parmi plusieurs méthodes. Ces options incluent les règles de flux de messagerie Exchange (également appelées règles de transport), les expéditeurs approuvés Outlook, les listes d’adresses IP autorisées, les listes des expéditeurs de courrier indésirable/de domaine.
 
 > [!IMPORTANT]
 > Bien que les listes d’adresses autorisées de l’organisation puissent être utilisées pour résoudre les faux positifs, elle doit être considérée comme une solution temporaire et éviter, dans la mesure du possible. La gestion des faux positifs à l’aide de listes d’autorisation n’est pas recommandée car elle peut accidentellement ouvrir votre organisation à des usurpateurs d’identité, des emprunts d’identité et d’autres attaques. Si vous souhaitez utiliser une liste verte à cette fin, vous devez être vigilant et conserver l’article pour l’envoi de messages indésirables, [non indésirables et de hameçonnage à Microsoft pour analyse](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), à l’adresse.
 
-La méthode recommandée pour configurer une liste d’expéditeurs approuvés consiste à utiliser des règles de transport Exchange (ETR), car cela offre la plus grande flexibilité pour garantir que seuls les messages corrects sont autorisés. Les listes d’adresses de *messagerie des stratégies de blocage du courrier indésirable* et de *domaine* ne sont pas aussi sécurisées que les *listes basées sur les adresses IP* , car les domaines peuvent facilement être falsifiés. Cependant, les listes d’adresses IP autorisées de stratégie de blocage du courrier indésirable présentent également des risques car ils autorisent les domaines envoyés via cette adresse IP à contourner le filtrage du courrier indésirable. Faites attention et surveillez *toutes les* exceptions effectuées, avec précaution.
+La méthode recommandée pour configurer une liste d’expéditeurs approuvés est d’utiliser des règles de flux de messagerie, car cela offre la plus grande flexibilité pour garantir que seuls les messages corrects sont autorisés. Les listes d’adresses de *messagerie des stratégies de blocage du courrier indésirable* et de *domaine* ne sont pas aussi sécurisées que les *listes basées sur les adresses IP* , car les domaines peuvent facilement être falsifiés. Cependant, les listes d’adresses IP autorisées de stratégie de blocage du courrier indésirable présentent également des risques car ils autorisent les domaines envoyés via cette adresse IP à contourner le filtrage du courrier indésirable. Faites attention et surveillez *toutes les* exceptions effectuées, avec précaution.
 
 > [!IMPORTANT]
 > Vous [trouverez ici](create-block-sender-lists-in-office-365.md)des informations sur la création d’une **liste d’expéditeurs bloqués** .
 
 ## <a name="options-from-most-to-least-recommended"></a>Options du plus ou moins recommandé
 
-Vous devez toujours limiter vos listes d’autorisation, car elles contournent de nombreuses mesures de sécurité. Vous devez revérifier toutes les listes d’autorisation dans le cadre de votre maintenance standard, afin de connaître les personnes autorisées à contourner. Il est recommandé d’utiliser des ETR restrictives lorsque cela est possible.
+Vous devez toujours limiter vos listes d’autorisation, car elles contournent de nombreuses mesures de sécurité. Vous devez revérifier toutes les listes d’autorisation dans le cadre de votre maintenance standard, afin de connaître les personnes autorisées à contourner. Il est recommandé d’utiliser des règles de flux de messagerie restrictives lorsque cela est possible.
 
-- Règles de transport Exchange (ETR également appelées règles de flux de messagerie)
+- Règles de flux de messagerie Exchange
 - Expéditeurs approuvés Outlook
 - Stratégie anti-courrier indésirable : listes d’adresses IP autorisées
 - Stratégie anti-courrier indésirable : listes vertes de l’expéditeur/du domaine
 
-## <a name="using-exchange-transport-rules-etrs-to-allow-specific-senders-recommended"></a>Utilisation des règles de transport Exchange (ETR) pour autoriser des expéditeurs spécifiques (recommandé)
+## <a name="using-exchange-mail-flow-rules-to-allow-specific-senders-recommended"></a>Utilisation de règles de flux de messagerie Exchange pour autoriser des expéditeurs spécifiques (recommandé)
 
 Pour vous assurer que seuls les messages légitimes sont autorisés dans votre organisation, la condition doit être l’une des suivantes :
 
@@ -59,7 +59,7 @@ L’action sur la règle doit respecter ce modèle :
 
 1. Définissez le seuil de probabilité de courrier indésirable sur-1 (ignorer le filtrage du courrier indésirable).
 
-2. Ajoutez un en-tête X pour indiquer l’action de la règle. Dans l’exemple ci-dessous, vous pouvez ajouter un simple en-tête « X-ETR : contourner le filtrage `contoso.com`du courrier indésirable pour l’expéditeur authentifié ». Si cette règle comporte plusieurs domaines, vous pouvez modifier le texte d’en-tête en fonction de vos besoins. **Lorsqu’un message ignore le filtrage en raison d’un ETR, il HORODATE SFV : SKN dans l’en-tête X-Forefront-antispam-Report** (**s’il se trouve sur une liste d’adresses IP autorisées, il marque également IPV : CAL**). Cela vous aidera à résoudre les problèmes.
+2. Ajoutez un en-tête X pour indiquer l’action de la règle. Dans l’exemple ci-dessous, vous pouvez ajouter un `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`en-tête simple. Si cette règle comporte plusieurs domaines, vous pouvez modifier le texte d’en-tête en fonction de vos besoins. **Lorsqu’un message ignore le filtrage en raison d’une règle de flux de messagerie, il HORODATE SFV : SKN dans l’en-tête X-Forefront-antispam-Report** (**s’il se trouve sur une liste d’adresses IP autorisées, il marque également IPV : CAL**). Cela vous aidera à résoudre les problèmes.
 
 ![Interface utilisateur graphique permettant de contourner le filtrage du courrier indésirable.](../media/1-AllowList-SkipFilteringFromContoso.png)
 
@@ -70,7 +70,7 @@ L’action sur la règle doit respecter ce modèle :
 
 N’ajoutez pas de domaines que vous possédez ou des domaines populaires ( `microsoft.com`par exemple,) à la règle de flux de messagerie en tant que condition. Ceci est considéré comme un risque élevé, car il permet aux acteurs incorrects de vous envoyer des messages qui seraient autrement filtrés.
 
-[Veuillez cliquer pour connaître les étapes de création d’une ETR, également appelées règles de flux de messagerie](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages).
+Pour plus d’informations, consultez [la rubrique utiliser des règles de flux de messagerie pour définir la valeur SCL dans messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>Utiliser des expéditeurs approuvés Outlook (géré par l’utilisateur final)
 
@@ -78,7 +78,7 @@ Au lieu d’autoriser une adresse, un domaine ou une adresse IP de manière glob
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>Utiliser la stratégie de blocage du courrier indésirable listes d’adresses IP autorisées
 
-Lorsqu’il n’est pas possible d’utiliser ETR pour autoriser globalement un expéditeur spécifique lors de la validation de l’authentification de l’expéditeur, ou en liant un domaine et l’adresse IP, la meilleure option est d’ajouter l’expéditeur à la *liste d’adresses IP autorisées de la stratégie anti-courrier indésirable*. [Les étapes détaillées sont disponibles dans configurer le document de stratégie de filtrage des connexions](https://docs.microsoft.com/office365/securitycompliance/configure-the-connection-filter-policy). Il est important de conserver la liste des adresses IP autorisées au minimum et d’éviter d’utiliser des plages d’adresses IP. Évitez d’ajouter des plages d’adresses IP qui appartiennent à des services grand public ou des infrastructures partagées, et *Assurez-* vous que vous examinez régulièrement la liste des adresses IP autorisées et supprimez celles qui ne sont plus nécessaires.
+Lorsqu’il n’est pas possible d’utiliser des règles de flux de messagerie pour autoriser globalement un expéditeur spécifique lors de la validation de l’authentification de l’expéditeur, ou en liant un domaine et l’adresse IP ensemble, la meilleure option consiste à ajouter l’expéditeur à la *liste d’adresses IP autorisées de la stratégie anti-courrier indésirable*. Vous trouverez les étapes détaillées dans la [configuration de la stratégie de filtrage des connexions](configure-the-connection-filter-policy.md). Il est important de conserver un minimum d’adresses IP autorisées afin d’éviter d’utiliser des plages d’adresses IP entières. En outre, vous ne devez pas ajouter de plages d’adresses IP qui appartiennent à des services grand public ou à des infrastructures partagées, *et vous devez également vérifier* régulièrement la liste des adresses IP autorisées et supprimer celles qui ne sont plus nécessaires.
 
 > [!CAUTION]
 > La configuration des stratégies de blocage du courrier indésirable en fonction de l’adresse IP de l’expéditeur uniquement entraîne le blocage du filtrage du courrier indésirable pour tous les messages provenant de cette adresse IP dans la règle d’autorisation. Cela crée un risque élevé que des acteurs défectueux vous envoient des messages qui seraient autrement filtrés. Cette méthode ignore également le filtrage du courrier indésirable, les vérifications d’authentification de l’expéditeur et le message dans la boîte de réception d’un utilisateur, ce qui augmente les risques.
@@ -89,10 +89,5 @@ L’option la moins intéressante consiste à autoriser l’expéditeur/domaine.
 
 La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous ne puissiez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
 
-> [!CAUTION]
-> La configuration des stratégies de blocage du courrier indésirable pour autoriser le domaine de l' *expéditeur/* de l’autorisation entraînera l’ignorance du filtrage du courrier indésirable pour un des messages provenant d’expéditeurs figurant dans la liste verte, ou b) de tous les expéditeurs d’un domaine autorisé. Cette méthode augmente considérablement le risque que les spammeurs usurpent le domaine d’envoi (ou empruntent l’identité de l’adresse de messagerie complète), ce qui ignore le filtrage du courrier indésirable, les vérifications d’authentification de l’expéditeur et envoie le message directement dans la boîte de réception d’une personne.
-> 
-> N’ajoutez pas de domaines que vous possédez ou des domaines populaires `microsoft.com`(par exemple,) à la règle de flux de messagerie en tant que condition. Cette méthode est considérée comme un risque élevé, car elle permet aux acteurs incorrects de vous envoyer des messages qui seraient autrement filtrés, ce qui augmente le risque.
-
 > [!IMPORTANT]
-> Vous [trouverez ici](create-block-sender-lists-in-office-365.md)des informations sur la création d’une **liste d’expéditeurs bloqués** .
+> • La configuration des stratégies de blocage du courrier indésirable pour autoriser le domaine de l' *expéditeur/autoriser* a pour effet que les messages ignorent le filtrage du courrier indésirable pour un des messages provenant d’expéditeurs figurant dans la liste verte, ou b) tous les expéditeurs d’un domaine autorisé. Cette méthode augmente considérablement le risque que les spammeurs usurpent le domaine d’envoi (ou empruntent l’identité de l’adresse de messagerie complète), ce qui ignore le filtrage du courrier indésirable, les vérifications d’authentification de l’expéditeur et envoie le message directement dans la boîte de réception d’une personne. <br/><br/>• N’ajoutez pas de domaines propriétaires ou courants (par exemple `microsoft.com`,) à la règle de flux de messagerie en tant que condition. Cette méthode est considérée comme un risque élevé, car elle permet aux acteurs incorrects de vous envoyer des messages qui seraient autrement filtrés, ce qui augmente le risque. <br/><br/>• Informations sur la création d’une **liste d’expéditeurs bloqués** [.](create-block-sender-lists-in-office-365.md)

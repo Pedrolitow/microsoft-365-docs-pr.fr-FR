@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les groupes Office 365 et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les groupes Office 365, les groupes Yammer et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
+ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967517"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558401"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -35,8 +35,10 @@ Vous pouvez utiliser l’outil eDiscovery de la recherche de contenu dans le cen
 - Conversations Skype Entreprise
     
 - Microsoft Teams 
-    
+
 - Groupes Office 365
+
+- Groupes Yammer 
     
 Après avoir exécuté une recherche de contenu, le nombre d’emplacements de contenu et l’estimation du nombre de résultats de recherche sont affichés dans les statistiques de recherche. Vous pouvez également afficher rapidement des statistiques, telles que les emplacements de contenu qui ont le plus grand nombre d’éléments qui correspondent à la requête de recherche. Une fois que vous avez effectué une recherche, vous pouvez afficher un aperçu des résultats ou les exporter sur un ordinateur local.
 
@@ -81,9 +83,9 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
     
        - **Emplacements :** choisissez les emplacements de contenu à rechercher.
     
-      - **Tous les emplacements :** utilisez cette option pour rechercher tous les emplacements de contenu au sein de votre organisation. Il s’agit du courrier dans toutes les boîtes aux lettres Exchange (y compris toutes les boîtes aux lettres inactives, les boîtes aux lettres de tous les groupes Office 365, les boîtes aux lettres de toutes les équipes Microsoft), toutes les conversations Skype Entreprise, l’ensemble des sites SharePoint et OneDrive Entreprise (y compris les sites pour tous les groupes Office 365 et Microsoft Teams) et les éléments dans tous les dossiers publics Exchange.
+      - **Tous les emplacements :** utilisez cette option pour rechercher tous les emplacements de contenu au sein de votre organisation. Il s’agit du courrier dans toutes les boîtes aux lettres Exchange (y compris toutes les boîtes aux lettres inactives et les boîtes aux lettres de Microsoft Teams, groupes Yammer, et groupes Office 365), toutes les conversations Skype Entreprise, l’ensemble des sites SharePoint et OneDrive Entreprise (y compris les sites pour Microsoft Teams, les groupes Yammer et les groupes Office 365) et les éléments dans tous les dossiers publics Exchange.
     
-      - **Emplacements spécifiques :** Utilisez cette option pour rechercher des emplacements de contenu spécifiques. Vous pouvez effectuer une recherche dans tous les emplacements de contenu pour un service Office 365 spécifique (par exemple, la recherche dans toutes les boîtes aux lettres Exchange ou la recherche dans tous les sites SharePoint), ou vous pouvez rechercher des emplacements spécifiques dans l’un des services Office 365 affichés. 
+      - **Emplacements spécifiques :** Utilisez cette option pour rechercher des emplacements de contenu spécifiques. Vous pouvez effectuer une recherche dans tous les emplacements de contenu pour un service Office 365 spécifique (par exemple, la recherche dans toutes les boîtes aux lettres Exchange ou la recherche dans tous les sites SharePoint), ou vous pouvez rechercher du contenu dans des emplacements spécifiques de l’un des services Office 365 affichés. 
     
         ![Interface utilisateur permettant de choisir les emplacements de contenu à rechercher](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
@@ -91,8 +93,7 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
     
        > [!NOTE]
        > Lorsque vous effectuez une recherche dans tous les emplacements de boîtes aux lettres ou uniquement des boîtes aux lettres spécifiques, les données d’autres applications Office 365 qui sont enregistrées dans les boîtes aux lettres d’utilisateur sont incluses lorsque vous exportez les résultats d’une recherche de contenu. Ces données ne sont pas incluses dans les résultats de recherche estimés et ne sont pas disponibles pour en aperçu. Elles sont incluses lorsque vous exportez et téléchargez les résultats de recherche. Pour plus d'informations, consultez la rubrique [Contenu stocké dans les boîtes aux lettres Exchange Online](what-is-stored-in-exo-mailbox.md).
-
-    
+   
 6. Une fois que vous avez configuré votre requête de recherche, cliquez sur**enregistrer & exécuter**.
     
 7. Dans la page **enregistrer la recherche**, tapez un nom pour la recherche, puis une description facultative qui vous permet d’identifier la recherche. Le nom de la recherche doit être unique dans toute votre organisation. 
@@ -176,6 +177,8 @@ Pour plus d’informations sur les recherches de contenu, voir les sections suiv
 [Recherche de comptes OneDrive](#searching-onedrive-accounts)
   
 [Recherche Microsoft Teams et Groupes Office 365](#searching-microsoft-teams-and-office-365-groups)
+
+[Recherche de groupes Yammer](#searching-yammer-groups)
   
 [Recherche des boîtes aux lettres inactives](#searching-inactive-mailboxes)
   
@@ -308,6 +311,25 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
 Les conditions sont logiquement connectées à la requête de mot clé par l’opérateur **et**. Cela signifie qu’un élément doit correspondre à la requête de mot clé et à la condition de recherche à renvoyer dans les résultats de la recherche. Pour obtenir plus d’informations, reportez-vous à la rubrique «Guide des conditions d’utilisation» dans[Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
+### <a name="searching-yammer-groups"></a>Recherche de groupes Yammer
+
+Vous pouvez utiliser la propriété d’e-mail **ItemClass** ou la condition de recherche **Type ** pour rechercher spécifiquement les éléments de conversation dans les groupes Yammer.
+
+  - Pour utiliser la propriété **ItemClass** dans le cadre d'une requête de recherche par mot-clé, dans la zone **Mots-clés** d'une requête de recherche, vous pouvez saisir une (ou toutes) des paires property:value suivantes :
+
+     - ItemClass:IPM.Yammer.message
+     - ItemClass:IPM.Yammer.poll
+     - ItemClass:IPM.Yammer.praise
+     - ItemClass:IPM.Yammer.question
+  
+    Par exemple, vous pouvez utiliser la requête de recherche suivante pour renvoyer des messages Yammer et des éléments de compliment Yammer :
+
+    ![Utiliser la propriété ItemClass pour rechercher des éléments Yammer](media/YammerContentSearch1.png)
+  
+  - Vous pouvez également utiliser la condition de **Type** e-mail et sélectionner les **messages Yammer** pour renvoyer les éléments Yammer. Par exemple, la requête de recherche suivante renvoie tous les éléments de conversation Yammer qui contiennent le mot clé « confidentiel ». 
+
+    ![Utiliser la carte de condition Type pour rechercher des éléments de conversation Yammer](media/YammerContentSearch2.png)
+
 ### <a name="searching-inactive-mailboxes"></a>Recherche des boîtes aux lettres inactives
 
 Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Gouvernance des informations** \> **Rétention** dans le centre de sécurité & conformité, puis cliquer sur **Plus**![Barre de navigation : sélections](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **boîtes aux lettres inactives**.
@@ -321,7 +343,7 @@ Voici quelques éléments à prendre en considération lors de la recherche de b
 - Vous pouvez utiliser le centre de sécurité et de conformité PowerShell pour créer une recherche de contenu pour effectuer une recherche dans une boîte aux lettres inactive. Pour ce faire, vous devez préalablement ajouter un point (. ) à l’adresse de messagerie du propriétaire de boîte aux lettres inactive. Par exemple, la commande suivante crée une recherche de contenu qui recherche dans une boîte aux lettres inactive l’adresse de courrier pavelb@contoso.onmicrosoft.com:
 
    ``` 
-   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - Nous vous déconseillons vivement d’utiliser une boîte aux lettres active et une boîte aux lettres inactive portant la même adresse SMTP. Si vous devez réutiliser l’adresse SMTP attribuée à une boîte aux lettres inactive, nous vous recommandons de récupérer la boîte aux lettres inactive ou de restaurer le contenu d’une boîte aux lettres inactive dans une boîte aux lettres active (ou l’archive d’une boîte aux lettres active), puis de supprimer la boîte aux lettres inactive. Pour plus d'informations, consultez l'une des rubriques suivantes :

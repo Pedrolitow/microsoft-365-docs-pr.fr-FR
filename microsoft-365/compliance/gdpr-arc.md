@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 1bc2ac17d8548382dff721decba674952de977d6
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: db67326b7fa1f09576ae49de75e3f1de525ffd86
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749752"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558071"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Prise en charge de votre programme RGPD avec des listes de vérification de préparation sur la responsabilité
 
@@ -36,7 +37,7 @@ Il existe un guide spécifique pour quatre familles de produits et services Micr
 - [Azure](gdpr-arc-Azure.md)
 - [Support Microsoft et services professionnels](gdpr-arc-prof-services.md)
 
-Vous pouvez gérer les éléments de cette liste de vérification à l’aide du [Gestionnaire de conformité](https://servicetrust.microsoft.com/ComplianceManager) en indiquant l’ID de contrôle et le titre de contrôle sous Contrôles gérés par le client dans la vignette RGPD.
+Vous pouvez gérer les éléments de cette liste de vérification à l’aide du [Score de conformité](compliance-score.md) en indiquant l’ID de contrôle et le titre de contrôle sous Contrôles gérés par le client dans la vignette RGPD.
 
 Ces listes de vérification comprennent les quatre catégories de considérations de base pour un programme de confidentialité compatible avec le RGPD répertoriées ci-dessous, ainsi que des exemples de configuration.
 

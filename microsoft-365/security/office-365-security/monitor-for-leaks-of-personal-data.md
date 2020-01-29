@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
-ms.openlocfilehash: 995f0b273753d7b3a92b8c5acef6eb94d51458b3
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 43133ed638f91957307b832826c21ae81aa269b0
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872100"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572971"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -31,35 +31,35 @@ Il existe de nombreux outils qui peuvent être utilisés pour surveiller l’uti
 
 Dans cette illustration :
 
--   Commencez par les rapports sur la protection contre la perte de données Office 365 pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ils offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.
+- Commencez par les rapports sur la protection contre la perte de données Office 365 pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ils offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.
 
--   Utilisez ensuite les stratégies d’alerte et le journal d’audit Office 365 pour surveiller l’activité des services Office 365. Configurez la surveillance continue ou faites des recherches dans le journal d’audit pour identifier un incident. Le journal d’audit Office 365 fonctionne sur tous les services Office 365 (Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, l’activité d’administration, OneDrive Entreprise, SharePoint Online, le courrier électronique en transit et les boîtes aux lettres au repos). Les conversations Skype sont incluses dans les boîtes aux lettres au repos.
+- Utilisez ensuite les stratégies d’alerte et le journal d’audit Office 365 pour surveiller l’activité des services Office 365. Configurez la surveillance continue ou faites des recherches dans le journal d’audit pour identifier un incident. Le journal d’audit Office 365 fonctionne sur tous les services Office 365 (Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, l’activité d’administration, OneDrive Entreprise, SharePoint Online, le courrier électronique en transit et les boîtes aux lettres au repos). Les conversations Skype sont incluses dans les boîtes aux lettres au repos.
 
--   Enfin, utilisez Microsoft Cloud App Security pour surveiller les fichiers contenant des données sensibles dans d’autres fournisseurs SaaS. Il sera bientôt possible d’utiliser des types d’informations sensibles Office 365 et des étiquettes unifiées dans Azure Information Protection et Office avec Cloud App Security. Vous pouvez configurer des stratégies qui s’appliquent à toutes vos applications SaaS ou des applications spécifiques (Box, par exemple). Cloud App Security ne découvre pas les fichiers dans Exchange Online, y compris les fichiers joints à un courrier électronique.
+- Enfin, utilisez Microsoft Cloud App Security pour surveiller les fichiers contenant des données sensibles chez d’autres fournisseurs SaaS. Il sera bientôt possible d’utiliser des types d’informations sensibles Office 365 et des étiquettes unifiées dans Azure Information Protection et Office avec Cloud App Security. Vous pouvez configurer des stratégies qui s’appliquent à toutes vos applications SaaS ou des applications spécifiques (Box, par exemple). Cloud App Security ne découvre pas les fichiers dans Exchange Online, y compris les fichiers joints à un courrier électronique.
 
 ## <a name="office-365-data-loss-prevention-reports"></a>Rapports de protection contre la perte de données d’Office 365
 
-Après avoir créé des stratégies de protection contre la perte de données, vous voulez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP d’Office 365, vous pouvez rapidement visualiser le nombre de correspondances de stratégie DLP, de remplacements et de faux positifs, savoir si ce nombre augmente ou diminue dans le temps, filtrer le rapport de différentes manières et afficher des détails supplémentaires en sélectionnant un point sur une ligne du graphique.
+Après avoir créé des stratégies de protection contre la perte de données, vous voulez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP d’Office 365, vous pouvez rapidement visualiser le nombre de correspondances de stratégie DLP, de remplacements et de faux positifs, savoir si ce nombre augmente ou diminue dans le temps, filtrer le rapport de différentes manières et afficher des détails supplémentaires en sélectionnant un point sur une ligne du graphique.
 
 Vous pouvez utiliser les rapports DLP pour :
 
--   Vous concentrer sur des périodes de temps spécifiques et comprendre les raisons des pics et des tendances.
+- Vous concentrer sur des périodes de temps spécifiques et comprendre les raisons des pics et des tendances.
 
--   Découvrir les processus d’entreprise qui enfreignent les stratégies DLP de votre organisation
+- Découvrir les processus d’entreprise qui enfreignent les stratégies DLP de votre organisation.
 
--   Comprendre l’incidence des stratégies DLP sur l’entreprise.
+- Comprendre l’incidence des stratégies DLP sur l’entreprise.
 
--   Afficher les motifs présentés par les utilisateurs lorsqu'ils passent outre une stratégie ou signalent un faux positif.
+- Afficher les motifs présentés par les utilisateurs lorsqu'ils passent outre une stratégie ou signalent un faux positif.
 
--   Vérifier la conformité avec une stratégie DLP spécifique en affichant les correspondances pour cette stratégie.
+- Vérifier la conformité avec une stratégie DLP spécifique en affichant les correspondances pour cette stratégie.
 
--   Afficher la liste des fichiers avec des données sensibles qui correspondent à vos stratégies DLP dans le volet de détails.
+- Afficher la liste des fichiers avec des données sensibles qui correspondent à vos stratégies DLP dans le volet de détails.
 
 En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP lorsque vous les exécutez en mode test.
 
 Les rapports DLP sont dans le centre de sécurité et le centre de conformité. Accéder aux rapports \>Afficher des rapports. Sous Protection contre la perte de données (DLP), choisissez soit Correspondances avec les règles et les stratégies DLP ou Remplacements et faux positifs DLP.
 
-Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
+Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
 
 ![Rapport affichant les correspondances de stratégie DLP](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -69,9 +69,9 @@ Le journal d’audit Office 365 contient les événements Exchange Online, Share
 
 Le Centre de sécurité et de conformité propose deux méthodes pour surveiller et générer des rapports sur la base du journal d’audit Office 365 :
 
--   Configurer des stratégies d’alerte, afficher des alertes et surveiller les tendances : utilisez les nouveaux outils de tableau de bord d’alertes et de stratégie d’alerte dans le Centre de sécurité et de conformité.
+- Configurer des stratégies d’alerte, afficher des alertes et surveiller les tendances : utilisez les nouveaux outils de tableau de bord d’alertes et de stratégie d’alerte dans le Centre de sécurité et de conformité.
 
--   Effectuer des recherches directement dans le journal d’audit : vous pouvez rechercher tous les événements dans une plage de dates spécifiée ou filtrer les résultats en fonction de critères spécifiques, tels que l’utilisateur ayant effectué l’action, l’action ou l’objet cible.
+- Effectuer des recherches directement dans le journal d’audit : vous pouvez rechercher tous les événements dans une plage de dates spécifiée ou filtrer les résultats en fonction de critères spécifiques, tels que l’utilisateur ayant effectué l’action, l’action ou l’objet cible.
 
 Les équipes de conformité et de sécurité des informations peuvent utiliser ces outils pour revoir de façon proactive les activités effectuées par les utilisateurs finaux et les administrateurs dans les services Office 365. Des alertes automatiques peuvent être configurées pour envoyer des notifications par courrier électronique lorsque certaines activités se produisent sur des collections de sites spécifiques (par exemple, lorsque le contenu est partagé à partir de sites connus pour contenir des informations relatives au RGPD). Ainsi, ces équipes peuvent suivre les utilisateurs afin de vérifier que les stratégies de sécurité d’entreprise sont suivies, ou de fournir des formations supplémentaires.
 
@@ -81,17 +81,17 @@ Il existe des solutions qui s’abonnent aux journaux d’audit unifiés via l�
 
 Plus d’informations sur les stratégies d’alerte et l’exécution d’une recherche dans le journal d’audit :
 
-- [Stratégies d’alerte dans le Centre de sécurité et de conformité Microsoft 365](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+- [Stratégies d’alerte dans le Centre de sécurité et de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
 
-- [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduction)
+- [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduction)
 
-- [Activer ou désactiver la recherche dans un journal d’audit Office 365](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+- [Activer ou désactiver la recherche dans un journal d’audit Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
-- [Rechercher le journal d’audit](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+- [Rechercher le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
 
-- [Propriétés détaillées dans le journal d’audit Office 365](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+- [Propriétés détaillées dans le journal d’audit Office 365](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -111,25 +111,25 @@ La seconde stratégie bloque les téléchargements de fichiers sur des appareils
 
 Les types d’attribut suivants seront bientôt disponibles dans Cloud App Security :
 
--   Types d'informations sensibles Office 365
+- Types d'informations sensibles Office 365
 
--   Étiquettes unifiées dans Office 365 et Azure Information Protection
+- Étiquettes unifiées dans Office 365 et Azure Information Protection
 
 ### <a name="cloud-app-security-dashboard"></a>Tableau de bord Cloud App Security
 
 Si vous n’avez pas encore commencé à utiliser Cloud App Security, commencez par l’activer. Pour accéder à Cloud App Security : <https://portal.cloudappsecurity.com>.
 
-Remarque : veillez à activer l’option « Analyser automatiquement les fichiers pour les étiquettes de classification Azure Information Protection » (dans les paramètres généraux) lors de la prise en main de Cloud App Security ou avant d’attribuer des étiquettes. Après la configuration, Cloud App Security n’analyse pas de nouveau les fichiers existants tant qu’ils ne sont pas modifiés.
+Remarque : veillez à activer l’option 'Analyser automatiquement les fichiers pour les étiquettes de classification Azure Information Protection' (dans les paramètres généraux) lors de la prise en main de Cloud App Security ou avant d’attribuer des étiquettes. Après la configuration, Cloud App Security n’analyse pas de nouveau les fichiers existants tant qu’ils ne sont pas modifiés.
 
 ![Tableau de bord affichant des informations sur les alertes](../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Plus d’informations :
 
--   Rubrique relative au [déploiement de Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- Rubrique relative au [déploiement de Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   Rubrique relative aux [informations supplémentaires concernant Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- Rubrique relative aux [informations supplémentaires concernant Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   Rubrique relative au [blocage des téléchargements d’informations sensibles à l’aide du proxy Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- Rubrique relative au [blocage des téléchargements d’informations sensibles à l’aide du proxy Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Exemple de stratégies d’activité et de fichier pour détecter le partage de données personnelles
 
@@ -198,9 +198,9 @@ Alerte lorsqu’un fichier contenant un numéro de carte de crédit est partagé
 
 Stratégies similaires :
 
--   Détection du partage de fichiers contenant des informations PII : adresse e-mail
+- Détection du partage de fichiers contenant des informations PII : adresse e-mail
 
--   Détection du partage de fichiers contenant des informations PII : numéro de passeport
+- Détection du partage de fichiers contenant des informations PII : numéro de passeport
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Détection des données client ou RH dans Box ou OneDrive Entreprise
 
@@ -208,9 +208,9 @@ Alerte lorsqu’un fichier étiqueté en tant que Données client ou Données RH
 
 Remarques :
 
--   La surveillance de Box requiert un connecteur configuré à l’aide du kit de développement logiciel (SDK) du connecteur de l’API.
+- La surveillance de Box requiert un connecteur configuré à l’aide du kit de développement logiciel (SDK) du connecteur de l’API.
 
--   Cette stratégie exige des fonctionnalités qui sont actuellement en Private Preview.
+- Cette stratégie exige des fonctionnalités qui sont actuellement en Private Preview.
 
 <table>
 <thead>
@@ -267,6 +267,6 @@ Remarques :
 
 Stratégies similaires :
 
--   Détection de téléchargements volumineux de données client ou de données RH : alerte lorsqu’un grand nombre de fichiers contenant des données client ou des données RH ont été téléchargés par un utilisateur unique dans un court délai.
+- Détection de téléchargements volumineux de données client ou de données RH : alerte lorsqu’un grand nombre de fichiers contenant des données client ou des données RH ont été téléchargés par un utilisateur unique dans un court délai.
 
--   Détection du partage de données clients et de données RH : alerte lorsque des fichiers contenant des données clients ou des données RH sont partagés.
+- Détection du partage de données clients et de données RH : alerte lorsque des fichiers contenant des données clients ou des données RH sont partagés.

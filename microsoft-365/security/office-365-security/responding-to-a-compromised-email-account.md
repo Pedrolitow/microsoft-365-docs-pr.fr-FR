@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365
-ms.openlocfilehash: 76ce2cd9b942403f5d25b7f356740cce6c2acad7
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0262ca29681aa04d66c628a7d9101e3d3296481b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971505"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572710"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Réponse à un compte de messagerie compromis dans Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "39971505"
 ## <a name="what-is-a-compromised-email-account-in-office-365"></a>Qu’est un compte de messagerie compromis dans Office 365 ?
 
 L’accès aux boîtes aux lettres, données et autres services Office 365 est contrôlé en utilisant des informations d’identification, par exemple un nom d’utilisateur et un mot de passe ou code confidentiel. Lorsqu’une personne autre que l’utilisateur initial vole ces informations d’identification, les informations d’identification volées sont considérés comme être compromises. Avec ces informations, le pirate peut se connecter en tant qu’utilisateur d’origine et effectuer des actions illicites.
-En utilisant les informations d’identification volées, l’utilisateur malveillant peut accéder à la boîte aux lettres Office 365, aux dossiers SharePoint ou aux fichiers enregistrés dans le OneDrive de l’utilisateur. Souvent, les pirate envoient des messages électroniques en tant qu’utilisateur d’origine à des destinataires internes ou externes à l’organisation. Lorsque l’utilisateur malveillant envoie des données par messages électroniques à des destinataires externes, il s’agit « d’exfiltration de données ».
+En utilisant les informations d’identification volées, le pirate peut accéder à la boîte aux lettres de l'utilisateur Office 365, aux dossiers SharePoint ou aux fichiers enregistrés dans le OneDrive de l’utilisateur. Souvent, les pirate envoient des messages électroniques en tant qu’utilisateur d’origine à des destinataires internes ou externes à l’organisation. Lorsque l’utilisateur malveillant envoie des données par messages électroniques à des destinataires externes, il s’agit « d’exfiltration de données ».
 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Symptômes indiquant un compte de messagerie Office 365 compromis
 
@@ -56,9 +56,11 @@ Les utilisateurs peuvent noter et rapporter des activités inhabituelles dans le
 
 Si un utilisateur rapporte un des symptômes ci-dessus, vous devez lancer un examen approfondi. Le centre de sécurité et conformité de Microsoft 365 et le portail Azure proposent des outils pour vous aider à investiguer les activités d’un compte d’utilisateur qui semble avoir été compromis.
 
-- Journaux d’audit unifiés d’Office 365 dans le centre de sécurité et conformité : Passez en revue toutes les activités du compte suspect en filtrant les résultats pour la plage de dates couvrant depuis immédiatement avant une activité suspecte jusqu’à la date du jour. Ne pas filtrer sur les activités au cours de la recherche.
+- **Journaux d’audit unifiés d’Office 365 dans le Centre de sécurité et conformité** : Passez en revue toutes les activités du compte suspect en filtrant les résultats pour la plage de dates couvrant depuis immédiatement avant une activité suspecte jusqu’à la date du jour. Ne pas filtrer sur les activités au cours de la recherche.
 
-- Utilisez les journaux de connexion Azure AD et autres rapports de risque qui sont disponibles dans le portail Azure AD. Examinez les valeurs de ces colonnes :
+- **Journaux d’audit de l’administrateur Office 365 dans le Centre d'administration Exchange** : vous pouvez utiliser le Centre d’administration Exchange (EAC) dans Exchange Online pour rechercher et afficher les entrées dans le journal d’audit de l’administrateur. Le journal d’audit de l’administrateur enregistre des actions spécifiques, basées sur les cmdlets Exchange Online PowerShell, effectuées par les administrateurs et les utilisateurs disposant de privilèges d’administration. Les entrées du journal d’audit de l’administrateur vous fournissent des informations sur la cmdlet qui a été exécutée, les paramètres utilisés, l’utilisateur qui a exécuté la cmdlet et les objets concernés.
+
+- **Utilisez les journaux de connexion Azure AD et autres rapports de risque du portail Azure AD** : examinez les valeurs de ces colonnes :
 
   - Examen des adresses IP
 
@@ -92,7 +94,7 @@ Vous devez effectuer au plus vite toutes les étapes suivantes pour récupérer 
 - Si votre identité sur site est fédérée avec Office 365, vous devez modifier votre mot de passe sur site, puis vous devez informer votre administrateur de l’attaque.
 
 > [!TIP]
-> Il est vivement recommandé d’activer l’authentification multifacteur (MFA) pour éviter les compromissions, en particulier pour les comptes avec des privilèges d’administration.  Vous en apprendrez plus [ici](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> Nous vous recommandons vivement d’activer l’authentification multifacteur (MFA) pour éviter les compromissions, en particulier pour les comptes avec des privilèges d’administration.  Vous pouvez en apprendre plus sur MFA [ici](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Étape 2 : Supprimer des adresses de transfert de courrier suspectes
 
