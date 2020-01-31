@@ -5,17 +5,19 @@ keywords: Microsoft 365, gestion des risques internes, gestion des risques, conf
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5d32e28d53fccbb16d935bbd9348ad7c12bac365
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: aea8c4a8dff0581b9286880d646728eb9a8dd555
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259842"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41590665"
 ---
 # <a name="get-started-with-insider-risk-management-preview"></a>Prise en main de la gestion des risques initiés (préversion)
 
@@ -36,7 +38,7 @@ Procédez comme suit pour configurer et utiliser la gestion des risques initiés
 
 Il existe quatre rôles d’autorisation permettant de configurer et de gérer la gestion des risques initiés. Pour poursuivre ces étapes de configuration, vos administrateurs client doivent d’abord vous attribuer le rôle d' **administrateur de gestion des risques Insiders** .
 
-| **Rôle** | **Autorisations de rôle** |
+| **Role** | **Autorisations de rôle** |
 | ---- | ---------------- |
 | **Administrateur de gestion des risques des Insiders** | Créer, lire, mettre à jour et supprimer des stratégies de gestion des risques internes <br> Créer, lire, mettre à jour et supprimer des autorisations et des rôles de gestion des risques initiés |
 | **Analystes de gestion des risques Insiders** | Accès à toutes les alertes, incidents et notifications de gestion des risques Insider |

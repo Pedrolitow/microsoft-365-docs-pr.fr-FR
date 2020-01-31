@@ -5,17 +5,19 @@ keywords: Microsoft 365, gestion des risques internes, gestion des risques, conf
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e6fd3dd08ff5170a3b0e2afcd97ec788c2aebd93
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259866"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41590675"
 ---
 # <a name="insider-risk-management-cases-preview"></a>Cas d’Insider de gestion des risques (aperçu)
 
@@ -72,7 +74,7 @@ Le volet de **Détails des cas** est disponible sur tous les onglets de gestion 
 L’onglet **alertes** résume les alertes actuelles incluses dans le cas. De nouvelles alertes peuvent être ajoutées à un cas existant et elles seront ajoutées à la file d’attente d' **alerte** à mesure qu’elles sont affectées. Les attributs d’alerte suivants sont répertoriés dans la file d’attente :
 
 - Statut
-- Gravité
+- Severity
 - Heure de détection
 
 Sélectionnez une alerte dans la file d’attente pour afficher la page Détails de l' **alerte** .
@@ -80,7 +82,7 @@ Sélectionnez une alerte dans la file d’attente pour afficher la page Détails
 Utilisez le contrôle de recherche pour rechercher des noms d’alerte pour un texte spécifique et utilisez le filtre d’alerte pour trier les cas par les attributs suivants :
 
 - Statut
-- Gravité
+- Severity
 - Heure de détection, date de début et date de fin
 
 ### <a name="user-activity"></a>Activité utilisateur

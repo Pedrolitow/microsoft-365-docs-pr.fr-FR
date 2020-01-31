@@ -1,5 +1,7 @@
 ---
 title: Requêtes par mots clés et conditions de recherche pour la recherche de contenu
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et dans SharePoint ou OneDrive entreprise à l’aide de l’outil de recherche de contenu dans le centre de conformité & Compliance Center.  '
-ms.openlocfilehash: 2d3b69090d8b19d474e2049c2082516459d18148
-ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
+ms.openlocfilehash: e8a0da1815b7ddda889217d027a3aabae4420c56
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41123655"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585913"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -63,7 +65,7 @@ Le tableau suivant répertorie les propriétés de message électronique pouvant
 |Kind| Type de message électronique à rechercher. Valeurs possibles :  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (renvoie les éléments des conversations, réunions et appels dans Microsoft Teams)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|Le premier exemple renvoie des messages électroniques qui répondent aux critères de recherche. Le deuxième exemple renvoie les messages électroniques, les conversations de messagerie instantanée (y compris les conversations et conversations Skype entreprise dans Microsoft Teams) et les messages vocaux correspondant aux critères de recherche. Le troisième exemple renvoie les éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir de sources de données tierces, telles que Twitter, Facebook et Cisco Jabber, qui répondent aux critères de recherche. Pour plus d’informations, consultez la rubrique [archivage de données tierces dans Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918).|
 |Participants|Tous les champs de personnes dans un message électronique. Les champs de, à, CC et CCI.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Messages envoyés par ou envoyés à garthf@contoso.com. Le deuxième exemple renvoie tous les messages envoyés par ou envoyés à un utilisateur dans le domaine contoso.com.|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Messages reçus le 15 avril 2016. Le deuxième exemple renvoie tous les messages reçus entre le 1er janvier 2016 et le 31 mars 2016.|
-|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires dans le domaine contoso.com.|
+|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires dans le domaine contoso.com.|
 |Sent|Date à laquelle un message électronique a été envoyé par l'expéditeur.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Messages envoyés à la date indiquée ou entre les dates spécifiées.|
 |Size|Taille d'un élément, en octets.|`size>26214400`  <br/> `size:1..1048567`|Messages supérieurs à 25 ? Mbit. Le deuxième exemple renvoie les messages dont la taille est comprise entre 1 et 1 048 567 octets (1 Mo).|
 |Subject|Texte de la ligne d'objet d'un message électronique.  <br/> **Remarque :** Lorsque vous utilisez la propriété Subject dans une requête, la recherche renvoie tous les messages dans lesquels la ligne d’objet contient le texte que vous recherchez. En d’autres termes, la requête ne renvoie que les messages qui ont une correspondance exacte. Par exemple, si vous recherchez `subject:"Quarterly Financials"`, vos résultats incluent les messages dont l’objet est « trimestriel financials 2018 ».|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Messages contenant l’expression « trimestriel Financials » n’importe où dans le texte de la ligne d’objet. Le deuxième exemple renvoie tous les messages contenant le mot « northwind » dans la ligne d'objet.|
@@ -83,7 +85,7 @@ Pour obtenir la liste complète des propriétés SharePoint pouvant faire l’ob
 |:-----|:-----|:-----|:-----|
 |Auteur|Champ Auteur des documents Office (subsiste si un document est copié). Par exemple, si un utilisateur crée un document et l’envoie par courrier électronique à une personne qui le charge ensuite sur SharePoint, le document conserve toujours l’auteur d’origine. Veillez à utiliser le nom complet de l’utilisateur pour cette propriété.|`author:"Garth Fort"`|Tous les documents créés par Garth Fort.|
 |ContentType|Type de contenu SharePoint d’un élément, tel qu’un élément, un document ou une vidéo.|`contenttype:document`|Tous les documents sont renvoyés.|
-|Créé|Date de création d’un élément.|`created\>=06/01/2016`|Tous les éléments créés le 1er juin 2016 ou après cette fin.|
+|Created|Date de création d’un élément.|`created\>=06/01/2016`|Tous les éléments créés le 1er juin 2016 ou après cette fin.|
 |CreatedBy|Personne qui a créé ou chargé un élément. Veillez à utiliser le nom complet de l’utilisateur pour cette propriété.|`createdby:"Garth Fort"`|Tous les éléments créés ou chargés par Garth Fort.|
 |DetectedLanguage|Langue d’un élément.|`detectedlanguage:english`|Tous les éléments en anglais.|
 |DocumentLink|Chemin d’accès (URL) d’un dossier spécifique sur un site SharePoint ou OneDrive entreprise. Si vous utilisez cette propriété, assurez-vous de rechercher le site dans lequel se trouve le dossier spécifié.  <br/> Pour renvoyer les éléments situés dans les sous-dossiers du dossier que vous spécifiez pour la propriété documentlink, vous devez ajouter\* /à l’URL du dossier spécifié ; par exemple,`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Pour plus d’informations sur la recherche de la propriété documentlink et l’utilisation d’un script pour obtenir les URL documentlink pour les dossiers d’un site spécifique, voir [use content Search in Office 365 for Targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Le premier exemple renvoie tous les éléments dans le dossier OneDrive entreprise spécifié. Le deuxième exemple renvoie des documents dans le dossier de site spécifié (et tous les sous-dossiers) qui contiennent le mot « Confidential » dans le nom de fichier.|
@@ -205,7 +207,7 @@ Créer une condition à l’aide des propriétés de messagerie lors de la reche
 |Participants|Tous les champs de personnes dans un message électronique. Ces champs sont from, to, CC et BCC.|
 |Type|Propriété de classe de message pour un élément de courrier électronique. Il s’agit de la même propriété que la propriété de messagerie ItemClass. Il s’agit également d’une condition à valeurs multiples. Pour sélectionner plusieurs classes de message, maintenez la touche **CTRL** enfoncée, puis cliquez sur au moins deux classes de messages dans la liste déroulante que vous souhaitez ajouter à la condition. Chaque classe de message que vous sélectionnez dans la liste est logiquement connectée par l’opérateur **or** dans la requête de recherche correspondante.  <br/> Pour obtenir la liste des classes de message (et de leur ID de classe de message correspondant) utilisées par Exchange et que vous pouvez sélectionner dans la liste de **classes de message** , voir [types d’éléments et classes de messages](https://go.microsoft.com/fwlink/?linkid=848143).|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire. Il s’agit de la même propriété que la propriété de messagerie Received.|
-|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.|
+|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.|
 |Expéditeur|Expéditeur d’un message électronique.|
 |Sent|Date à laquelle un message électronique a été envoyé par l’expéditeur. Il s’agit de la même propriété que la propriété de messagerie Sent.|
 |Subject|Texte de la ligne d'objet d'un message électronique.|
@@ -220,7 +222,7 @@ Créer une condition à l’aide des propriétés de document lors de la recherc
 |:-----|:-----|
 |Auteur|Champ Auteur des documents Office (subsiste si un document est copié). Par exemple, si un utilisateur crée un document et l’envoie par courrier électronique à une personne qui le charge ensuite sur SharePoint, le document conserve toujours l’auteur d’origine.|
 |Titre|Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document.|
-|Créé|Date de création d’un document.|
+|Created|Date de création d’un document.|
 |Dernière modification|Date de la dernière modification apportée à un document.|
 |Type de fichier|Extension d’un fichier ; par exemple, docx, One, pptx ou xlsx. Il s’agit de la même propriété que la propriété de site FileExtension.|
 |||

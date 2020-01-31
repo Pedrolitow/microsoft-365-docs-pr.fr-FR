@@ -1,5 +1,7 @@
 ---
 title: Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR dans le centre de sécurité & conformité
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Le RGPD donne aux citoyens de l’Union européenne (appelés « personnes des données ») des droits spécifiques sur leurs données personnelles ; ces droits incluent l’obtention de copies de celle-ci, la demande de modifications, la limitation du traitement de celle-ci, sa suppression ou sa réception dans un format électronique. Une demande officielle d’un objet de données qui doit agir sur ses données personnelles est appelée demande de l’objet de données ou DSR. Vous pouvez utiliser les dossiers DSR dans le centre de conformité dans Office 365 et Microsoft 365 pour gérer les investigations DSR de votre organisation.
-ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6d7770be686e62dc6afde368bcb4e821f72c2fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685911"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582933"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR dans le centre de sécurité & conformité
 
@@ -53,7 +55,7 @@ Pour gérer les enquêtes en réponse à un DSR envoyé par une personne au sein
     
 - Exporter les données en réponse à une demande d’accès ou d’exportation DSR.
     
-- Supprimez des cas lorsque le processus d’enquête DSR est terminé. Cette opération supprime toutes les recherches et les tâches d’exportation associées au cas.
+- Supprimez les cas lorsque le processus d’investigation du DSR est terminé. Cette opération supprime toutes les recherches et les tâches d’exportation associées au cas.
     
 Voici le processus de haut niveau pour l’utilisation de l’outil de cas DSR afin de gérer les investigations DSR :
   

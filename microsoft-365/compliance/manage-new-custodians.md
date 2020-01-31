@@ -1,5 +1,7 @@
 ---
 title: Gestion des dépositaires dans un cas avancé eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 17c77f14267f988a071e201733ae54ad9c438547
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0b6776571f4abafaf8e050fa6c31311df452d90e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079389"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582913"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestion des dépositaires dans un cas avancé eDiscovery
 
@@ -108,7 +110,7 @@ Pour déclencher le processus de réindexation afin d’adresser des éléments 
 
 La réindexation des données du dépositaire est un processus long ; le travail correspondant créé est nommé **réindexation des données des dépositaires**. Vous pouvez suivre l’avancement sous l’onglet **travaux** ou sous l’onglet **dépositaires** en surveillant le statut dans la colonne **État du travail d’indexation** .
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, voir :
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 

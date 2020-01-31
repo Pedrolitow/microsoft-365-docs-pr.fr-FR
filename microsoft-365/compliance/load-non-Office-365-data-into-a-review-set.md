@@ -1,5 +1,7 @@
 ---
 title: Charger des données autres qu’Office 365 dans un jeu à réviser
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importer des données non-Office 365 vers un jeu de réexamen dans un cas avancé de découverte électronique.
-ms.openlocfilehash: 508346c3fe3a8f67addfed4ced08693daa2d49e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079433"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585683"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Charger des données autres qu’Office 365 dans un jeu à réviser
 
@@ -40,7 +42,7 @@ L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrit
 
 - Les données non-Office 365 doivent être un type de fichier pris en charge par Advanced eDiscovery. Pour plus d’informations, consultez la rubrique [types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md).
 
-- Tous les fichiers téléchargés vers un jeu de révision doivent se trouver dans des dossiers, où chaque dossier est associé à un dépositaire spécifique. Les noms de ces dossiers doivent utiliser le format d’affectation de noms suivant : *alias @ NomDomaine*. L’alias @ DomainName doit être l’alias et le domaine Office 365 de l’utilisateur. Vous pouvez collecter tous les dossiers alias @ NomDomaine dans un dossier racine. Le dossier racine ne peut contenir que les dossiers alias @ NomDomaine. Les fichiers libres dans le dossier racine ne sont pas pris en charge.
+- Tous les fichiers téléchargés vers un jeu de révision doivent se trouver dans des dossiers, où chaque dossier est associé à un dépositaire spécifique. Les noms de ces dossiers doivent utiliser le format d’affectation de noms suivant : *alias@domainname*. Le alias@domainname doit être l’alias et le domaine Office 365 de l’utilisateur. Vous pouvez collecter tous les dossiers alias@domainname dans un dossier racine. Le dossier racine peut contenir uniquement les dossiers alias@domainname. Les fichiers libres dans le dossier racine ne sont pas pris en charge.
 
    La structure de dossiers pour les données non-Office 365 que vous souhaitez télécharger serait semblable à l’exemple suivant :
 

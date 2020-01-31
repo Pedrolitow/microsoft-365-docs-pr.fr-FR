@@ -5,17 +5,19 @@ keywords: Microsoft 365, gestion des risques internes, gestion des risques, conf
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 56ae72e0ee2b8b9a27d2d791c51e1af09775150c
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: a8c1c77bdfa3236ce8f2222fd21a7fba0535f149
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259832"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41590645"
 ---
 # <a name="insider-risk-management-content-explorer-preview"></a>Explorateur de contenu de gestion des risques Insiders (aperçu)
 

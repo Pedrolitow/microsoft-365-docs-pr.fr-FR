@@ -1,5 +1,7 @@
 ---
 title: Gérer les suspensions dans Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1cea83ffec8af8b22b5a27e9d760946e71ba7f68
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 49b75e77f9884bb7cb40721a2aa986e203623c07
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685949"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582753"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les suspensions dans Advanced eDiscovery
 
@@ -113,7 +115,7 @@ Gardez les points suivants à l’esprit concernant les statistiques de conserva
 
 - Si un site SharePoint ou un compte OneDrive est déplacé vers une autre région dans un environnement multi-géo, les statistiques de ce site ne sont pas incluses dans les statistiques de conservation. Toutefois, le contenu du site reste bloqué. En outre, si un site est déplacé vers une autre région, l’URL affichée dans la conservation n’est pas mise à jour. Vous devrez modifier la conservation et mettre à jour l’URL.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 - **Comment mapper un site Office 365 ou Microsoft teams supplémentaire à un dépositaire ? Et qu’en est-il de la mise en place d’une absence privative de rôle sur les groupes Office 365 et Microsoft teams ?** Microsoft teams est basé sur les groupes Office 365. Par conséquent, leur mise en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous importez des groupes Office 365 et Microsoft teams en conservation.
   - Pour placer le contenu situé dans les groupes Office 365 et Microsoft teams en conservation, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
