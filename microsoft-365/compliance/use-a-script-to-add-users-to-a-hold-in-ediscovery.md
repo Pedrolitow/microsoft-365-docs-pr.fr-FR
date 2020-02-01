@@ -1,5 +1,7 @@
 ---
 title: Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de sécurité & conformité
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Exécutez un script pour ajouter rapidement des boîtes aux lettres et des sites OneDrive entreprise à un nouveau blocage associé à un cas eDiscovery dans le centre de conformité & Compliance Center.
-ms.openlocfilehash: 7a7ea582391e2fbfcef8b63d331d64f52db4460c
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: f61c56beb17e31cf839d102a681b685a1e7fb046
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685957"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597291"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de sécurité & conformité
 

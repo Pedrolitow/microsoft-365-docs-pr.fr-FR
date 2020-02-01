@@ -1,5 +1,7 @@
 ---
 title: Reconnaitre une notification de conservation
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez être amené à informer les dépositaires de leur obligation de conserver les informations stockées électroniquement dans le cadre d’une enquête légale. Advanced eDiscovery vous permet de gérer facilement le processus de notification de blocage.
-ms.openlocfilehash: 477396e9b249de0edbbe52c5310abe21a825a3e8
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962366"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594067"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation
 

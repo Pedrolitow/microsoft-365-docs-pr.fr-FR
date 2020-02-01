@@ -1,5 +1,7 @@
 ---
 title: Recherche de boîtes aux lettres en nuage pour les utilisateurs locaux dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil de recherche de contenu dans le centre de sécurité & conformité pour rechercher et exporter des données de conversation MicrosoftTeams (appelées conversations 1xN) pour les utilisateurs locaux dans un déploiement hybride Exchange.
-ms.openlocfilehash: 5c757ee16232cb0e70b8adf57ab6888fb972368e
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: d59af2e39d91bf107567016428102a5aba9cb724
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676821"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597571"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Recherche de boîtes aux lettres en nuage pour les utilisateurs locaux dans Office 365
 
@@ -139,7 +141,7 @@ Pour plus d’informations sur ces applets de commande, voir :
 
 - Le sélecteur d’emplacement de contenu pour les conservations eDiscovery affiche les utilisateurs locaux et vous permet de les sélectionner. Toutefois, comme expliqué précédemment, la conservation ne sera pas appliquée à l’utilisateur local.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
  **Où se trouvent les boîtes aux lettres en nuage pour les utilisateurs locaux situés ?**
   

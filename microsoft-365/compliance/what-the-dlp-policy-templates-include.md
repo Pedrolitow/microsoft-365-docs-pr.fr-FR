@@ -1,5 +1,7 @@
 ---
 title: Ce qu’incluent les modèles de stratégie DLP
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,17 +17,17 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l’emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) ou U.S. Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d’informations sensibles qu’ils recherchent, ainsi que les conditions et les actions par défaut.
-ms.openlocfilehash: aff9f5179d9bad3d8c1c97d17473a14995137c32
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l’emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act (HIPAA), aux États-Unis Gramm-Leach-Bliley Act (GLBA) ou aux États-Unis Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d’informations sensibles qu’ils recherchent, ainsi que les conditions et les actions par défaut.
+ms.openlocfilehash: 6b87f8c0746611e8ae8cee917e27545ffe5e4373
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079841"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597171"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Ce qu’incluent les modèles de stratégie DLP
 
-La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l’emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) ou U.S. Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d’informations sensibles qu’ils recherchent, ainsi que les conditions et les actions par défaut. Elle ne comprend pas tous les détails de configuration de chaque modèle de stratégie, mais présente suffisamment d’informations pour vous aider à déterminer quel modèle est le meilleur point de départ pour votre cas. N’oubliez pas que vous pouvez personnaliser ces modèles de stratégie pour répondre à vos besoins spécifiques.
+La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l’emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act (HIPAA), aux États-Unis Gramm-Leach-Bliley Act (GLBA) ou aux États-Unis Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d’informations sensibles qu’ils recherchent, ainsi que les conditions et les actions par défaut. Elle ne comprend pas tous les détails de configuration de chaque modèle de stratégie, mais présente suffisamment d’informations pour vous aider à déterminer quel modèle est le meilleur point de départ pour votre cas. N’oubliez pas que vous pouvez personnaliser ces modèles de stratégie pour répondre à vos besoins spécifiques.
   
 ## <a name="australia-financial-data"></a>Données financières en Australie
 
@@ -283,7 +285,7 @@ La protection contre la perte de données (DLP) dans &amp; le centre de sécurit
 
 |**Nom de la règle**|**Conditions <br/> (y compris les types d’informations sensibles)**|**Actions**|
 |:-----|:-----|:-----|
-|Le contenu correspond à la loi américaine HIPAA  <br/> | Contient les informations sensibles suivantes :  <br/>  Numéro de sécurité sociale américain (SSN) — nombre minimal 1, nombre maximal « tout »  <br/>  Numéro de l’Agence de l’application du médicament (DEA) — nombre minimal 1, nombre maximal « tout »  <br/> **AND** <br/>  Le contenu contient l’un des termes suivants :  <br/>  Classification internationale des maladies (ICD-9-CM) — nombre minimal 1, nombre maximal « tout »  <br/>  Classification internationale des maladies (ICD-10-CM) — nombre minimal 1, nombre maximal « tout »  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
+|Le contenu correspond à la loi américaine HIPAA  <br/> | Contient les informations sensibles suivantes :  <br/>  Numéro de sécurité sociale américain (SSN) — nombre minimal 1, nombre maximal « tout »  <br/>  Numéro de l’Agence de l’application du médicament (DEA) — nombre minimal 1, nombre maximal « tout »  <br/> **ET** <br/>  Le contenu contient l’un des termes suivants :  <br/>  Classification internationale des maladies (ICD-9-CM) — nombre minimal 1, nombre maximal « tout »  <br/>  Classification internationale des maladies (ICD-10-CM) — nombre minimal 1, nombre maximal « tout »  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
    
 ## <a name="us-patriot-act"></a>U.S. Patriot Act
 

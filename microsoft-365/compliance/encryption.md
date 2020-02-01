@@ -1,5 +1,7 @@
 ---
 title: Chiffrement dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Avec Office 365, votre contenu est chiffré au repos et en transit avec le chiffrement, les protocoles et les technologies les plus puissants disponibles. Obtenez une vue d’ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: e63eb239f37f5f68da05f90998baf5bf6201fb71
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b16c3c4e71a3898acff0d23848b2fba185836729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685772"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593175"
 ---
 # <a name="encryption-in-office-365"></a>Chiffrement dans Office 365
 
@@ -59,7 +61,7 @@ Office 365 fournit des solutions gérées par Microsoft pour le chiffrement de v
   
 Pour en savoir plus, consultez les ressources suivantes :
   
-- [Qu’est-ce que Azure Rights Management ?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+- [Qu’est-ce que Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 - [Activer la gestion des droits dans le centre d’administration](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
 
@@ -77,8 +79,8 @@ Pour en savoir plus, consultez les ressources suivantes :
 |Chiffrer un document à l’aide de la protection par mot de passe  <br/><br/>  La protection par mot de passe n’est pas prise en charge dans Office 365 dans un navigateur. Utiliser les versions de bureau de Word, Excel et PowerPoint pour la protection par mot de passe. |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choisissez une section **Ajouter une protection** , puis sélectionnez **chiffrer avec mot de passe**.  |
 |Supprimer le chiffrement d’un document  <br/> |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choisissez une section **protection contre la suppression** , puis consultez **supprimer le chiffrement du mot de passe**.  |
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Planifier les fonctionnalités de protection des informations et de sécurité d’Office 365](plan-for-security-and-compliance.md)
 
-[10 façons de sécuriser les offres Office 365 et Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[10 principales méthodes pour sécuriser les offres Office 365 et Microsoft 365 Entreprise](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)

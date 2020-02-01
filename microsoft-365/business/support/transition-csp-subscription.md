@@ -2,6 +2,8 @@
 title: Transition d’un abonnement Fournisseur de solutions Cloud Microsoft365Business 
 description: Découvrez comment faire passer un abonnement Fournisseur de solutions Cloud Microsoft365Business de la version d’évaluation vers la version mise à disponibilité générale. 
 author: jasongroce
+f1.keywords:
+- NOCSH
 ms.author: jasgro
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -9,12 +11,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, transition d’un abonnement Fournisseur de solutions Cloud
 ms.date: 11/01/2017
-ms.openlocfilehash: 72e620df69a425ca7e5c41c5a6651bc0f7f533de
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 4aadfa24bec8728c7e011ac6da48a8e30516e145
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748338"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595042"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transition d’un abonnement Fournisseur de solutions Cloud Microsoft365Business
 
@@ -22,7 +24,7 @@ Si vous avez un abonnement Fournisseur de solutions Cloud Microsoft365Business v
 
 **Comment faire passer un abonnement à la version d’évaluation vers la version mise à disponibilité générale**
 
-1. Connectez-vous au <a href="https://partnercenter.microsoft.com" target="_blank">Centre de partenaires</a>.
+1. Connectez-vous à l’<a href="https://partnercenter.microsoft.com" target="_blank">Espace partenaires</a>.
 2. Dans le tableau de bord, sélectionnez **Clients**, puis recherchez et sélectionnez le nom de la société.
 
     Les abonnements pour la société seront affichés.

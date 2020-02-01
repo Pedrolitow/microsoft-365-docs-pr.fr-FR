@@ -1,5 +1,7 @@
 ---
 title: Supprimer des éléments de leur emplacement d’origine
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment utiliser l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & conformité pour supprimer des éléments de leur emplacement d’origine.
-ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38685884"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595319"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Supprimer des éléments de leur emplacement d’origine (aperçu)
 
@@ -76,7 +78,7 @@ Pour l’instant, lorsque vous supprimez des éléments de leur emplacement de c
 
 - **Boîtes aux lettres :** Lorsqu’un élément de boîte aux lettres est supprimé de manière récupérable, il est déplacé vers le dossier éléments récupérables dans la boîte aux lettres. Ce comportement est semblable à celui où un utilisateur supprime un élément du dossier éléments supprimés ou supprime définitivement un élément en appuyant sur Maj + Suppr. À ce stade, l’utilisateur peut récupérer l’élément jusqu’à l’expiration de la période de rétention des éléments supprimés. Dans Office 365, la période de rétention des éléments supprimés est de 14 jours par défaut, mais un administrateur peut augmenter la période de rétention à 30 jours. Une fois la période de rétention expirée, l’élément est déplacé vers un dossier masqué (appelé le dossier *purges* ). L’élément est définitivement supprimé d’Office 365 la prochaine fois que la boîte aux lettres est traitée. Les boîtes aux lettres sont traitées une fois tous les sept jours).
 
-- **Sites SharePoint et OneDrive :** Lorsqu’un fichier ou un document sur un site est supprimé de manière récupérable, il est déplacé vers la corbeille du site (également appelée corbeille du *premier niveau* ). L’élément reste dans la corbeille pendant 93 jours (la période de rétention des éléments supprimés pour les sites dans Office 365). Pendant la période de 93 jours, les éléments supprimés peuvent toujours être récupérés par un administrateur de collection de sites dans SharePoint ou par l’utilisateur ou l’administrateur dans OneDrive. Les éléments peuvent également être supprimés de la corbeille First-stage. Lorsque cela se produit, les éléments sont déplacés vers la corbeille de la collection de sites, appelée corbeille *secondaire* . La période de rétention est de 93 jours pour les corbeilles de première et deuxième étape. Cela signifie que la rétention de la Corbeille secondaire commence lors de la suppression initiale de l’élément. Cela signifie que le temps de rétention maximal total est de 93 jours pour les deux Corbeilles. Si un élément est supprimé de la Corbeille secondaire (manuellement par un administrateur ou automatiquement à l’expiration de la période de rétention), il n’est plus accessible par un administrateur.
+- **Sites SharePoint et OneDrive :** Lorsqu’un fichier ou un document sur un site est supprimé de manière récupérable, il est déplacé vers la corbeille du site (également appelée corbeille du *premier niveau* ). L’élément restera dans la Corbeille pour 93 jours (la période de rétention d’élément supprimé pour les sites dans Office 365). Pendant la période de 93 jours, les éléments supprimés peuvent toujours être récupérés par un administrateur de collection de sites dans SharePoint ou par l’utilisateur ou l’administrateur dans OneDrive. Les éléments peuvent également être supprimés de la corbeille First-stage. Lorsque cela se produit, les éléments sont déplacés vers la corbeille de la collection de sites, appelée corbeille *secondaire* . La période de rétention est de 93 jours pour les corbeilles de première et deuxième étape. Cela signifie que la rétention de la Corbeille secondaire commence lors de la suppression initiale de l’élément. Cela signifie que le temps de rétention maximal total est de 93 jours pour les deux Corbeilles. Si un élément est supprimé de la Corbeille secondaire (manuellement par un administrateur ou automatiquement à l’expiration de la période de rétention), il n’est plus accessible par un administrateur.
 
 ## <a name="what-happens-if-a-content-location-is-on-hold"></a>Que se passe-t-il si un emplacement de contenu est en conservation ?
 

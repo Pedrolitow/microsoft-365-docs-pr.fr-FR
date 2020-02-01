@@ -1,5 +1,7 @@
 ---
 title: Créer une requête pour trouver des données sensibles stockées sur des sites
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec la protection contre la perte de données (DLP) dans SharePoint Online, vous pouvez découvrir des documents qui contiennent des données sensibles sur l’ensemble de votre client. Après avoir découvert les documents, vous pouvez travailler avec leurs propriétaires pour protéger les données. Cette rubrique peut vous aider à créer une requête pour rechercher des données sensibles.
-ms.openlocfilehash: 66cf1f5c4072422c3de8572a5bf4b6f39755cff3
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: e3750ee69a197de5e7e5c0ac9346124568b8d5f5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823646"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594545"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 
@@ -74,7 +76,7 @@ Les exemples suivants utilisent différents types, propriétés et opérateurs s
 
 Toutes les requêtes ne sont pas égales. Le tableau suivant donne des exemples de requêtes qui ne fonctionnent pas avec DLP dans SharePoint et explique pourquoi.
   
-|**Requête non prise en charge**|**Reason**|
+|**Requête non prise en charge**|**Raison**|
 |:-----|:-----|
 | `SensitiveType:"Credit Card Number|.."` <br/> |Vous devez ajouter au moins un nombre.  <br/> |
 | `SensitiveType:"NotARule"` <br/> |« NotARule » n’est pas un nom de type sensible valide. Seuls les noms des [types d’informations sensibles stockent](https://go.microsoft.com/fwlink/?LinkID=509999) le travail dans les requêtes DLP.  <br/> |

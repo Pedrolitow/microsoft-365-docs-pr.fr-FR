@@ -1,5 +1,7 @@
 ---
 title: Utiliser l’outil de collecte PST pour rechercher, copier et supprimer des fichiers PST dans votre organisation
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Utilisez l’outil de collection Microsoft PST pour effectuer des recherches sur le réseau de votre organisation afin d’obtenir un inventaire des fichiers PST disséminés au sein de votre organisation. Une fois que vous avez trouvé des fichiers PST, vous pouvez utiliser l’outil de collecte PST pour les copier dans un emplacement central afin de pouvoir les importer dans Office 365.
-ms.openlocfilehash: 703208b574a723eb4f91aad0a892d6ea4abf427b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 59c4222966bba4e72e73135aa57fb45e0362f765
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685920"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594555"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Utiliser l’outil de collecte PST pour rechercher, copier et supprimer des fichiers PST dans votre organisation
 
@@ -215,7 +217,7 @@ Une fois que vous avez collecté les fichiers PST trouvés à l’étape 1, l’
   
 Pour obtenir des instructions détaillées sur l’importation de fichiers PST dans Office 365, consultez l’une des rubriques suivantes :
   
-- [Utiliser le chargement réseau pour importer des fichiers PST vers Office 365](use-network-upload-to-import-pst-files.md)
+- [Utiliser le chargement réseau pour importer des fichiers PST dans Office 365](use-network-upload-to-import-pst-files.md)
     
 - [Utiliser l’expédition de disque pour importer des fichiers PST dans Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     

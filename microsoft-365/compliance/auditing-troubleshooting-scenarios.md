@@ -1,5 +1,7 @@
 ---
 title: Effectuer des recherches dans le journal d’audit Office 365 pour résoudre les scénarios courants
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à résoudre les problèmes courants, tels que l’enquête sur un compte compromis, la personne qui configure le transfert de courrier pour une boîte aux lettres ou la manière dont un utilisateur externe a réussi à se connecter à votre organisation.
-ms.openlocfilehash: a9901168ef4c8e2d2128fb143cbe134a04fb4e2c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: b453cccb0486ab923de720edb5a6a877395b9b7d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603788"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595971"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Rechercher dans le journal d’audit Office 365 pour identifier les problèmes de prise en charge courants
 
@@ -37,7 +39,7 @@ Chacun des scénarios de dépannage décrits dans cet article est basé sur l’
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorisations requises pour utiliser l’outil de recherche de journal d’audit
 
-Vous devez disposer du rôle journaux d’audit en affichage seul ou journaux d’audit dans Exchange Online pour effectuer des recherches dans le journal d’audit Office 365. Par défaut, ces rôles sont attribués aux groupes de rôles gestion de la conformité et gestion de l’organisation dans la page **autorisations** du centre d’administration Exchange. Les administrateurs globaux dans Office 365 et Microsoft 365 sont automatiquement ajoutés en tant que membres du groupe de rôles gestion de l’organisation dans Exchange Online. Pour plus d’informations, consultez la rubrique [gérer des groupes de rôles dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+Vous devez disposer du rôle journaux d’audit en affichage seul ou journaux d’audit dans Exchange Online pour effectuer des recherches dans le journal d’audit Office 365. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Les administrateurs globaux dans Office 365 et Microsoft 365 sont automatiquement ajoutés en tant que membres du groupe de rôles gestion de l’organisation dans Exchange Online. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Exécution de recherches dans le journal d’audit
 
@@ -45,7 +47,7 @@ Cette section décrit les notions de base pour la création et l’exécution de
 
 1. Accédez à [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) et connectez-vous à l’aide de votre compte professionnel ou scolaire.
     
-    La page **recherche du journal d’audit** s’affiche. 
+    La page **Recherche dans le journal d’audit** s’affiche. 
     
     ![Configurez les critères, puis sélectionnez recherche pour exécuter la recherche.](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
@@ -53,11 +55,11 @@ Cette section décrit les notions de base pour la création et l’exécution de
     
     a. **Activités :** Sélectionnez la liste déroulante pour afficher les activités que vous pouvez rechercher. Après l’exécution de la recherche, seuls les enregistrements d’audit des activités sélectionnées sont affichés. La sélection de l’option **afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités qui répondent aux autres critères de recherche. Vous devrez également laisser ce champ vide dans certains scénarios de dépannage.
     
-    b. **Date de début** et **Date de fin :** sélectionnez une date et une plage horaire pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. La date et l’heure sont présentées au format UTC (Coordinated Universal Time). La plage de dates maximale que vous pouvez spécifier est de 90 jours.
+    b. **Date de début** et **Date de fin :** sélectionnez une date et une plage horaire pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. Les date et heure sont présentées au format UTC (temps universel coordonné). La plage de dates maximale que vous pouvez spécifier est de 90 jours.
 
-    c. **Utilisateurs :** Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels vous souhaitez afficher les résultats de la recherche. Les enregistrements d’audit de l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées de tous les utilisateurs (et comptes de service) de votre organisation.
+    c. **Utilisateurs :** Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels vous souhaitez afficher les résultats de la recherche. Les enregistrements d’audit de l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation.
     
-    d. **Fichier, dossier ou site :** Tapez une partie ou la totalité d’un nom de fichier ou de dossier pour Rechercher l’activité liée au fichier du dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, vérifiez que vous tapez le chemin d’URL complet ou, si vous ne tapez qu’une partie de l’URL, n’incluez pas de caractères spéciaux ou d’espaces. Laissez cette zone vide pour renvoyer les entrées de tous les fichiers et dossiers de votre organisation. Ce champ est vide dans tous les scénarios de dépannage décrits dans cet article.
+    d. **Fichier, dossier ou site :** Tapez une partie ou la totalité d’un nom de fichier ou de dossier pour Rechercher l’activité liée au fichier du dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, vérifiez que vous tapez le chemin d’URL complet ou, si vous ne tapez qu’une partie de l’URL, n’incluez pas de caractères spéciaux ou d’espaces. Laissez cette zone vide pour renvoyer les entrées correspondant à tous les fichiers et dossiers dans votre organisation. Ce champ est vide dans tous les scénarios de dépannage décrits dans cet article.
     
 5. Sélectionnez **recherche** pour exécuter la recherche à l’aide de vos critères de recherche. 
     
@@ -234,6 +236,6 @@ Voici deux exemples de scénarios permettant à un utilisateur de se **connecter
 
     En plus des activités de l' **utilisateur connecté** , d’autres enregistrements d’audit peuvent être renvoyés, qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé à un document qui lui a été partagé.
 
-- Recherchez les activités de partage SharePoint qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** un enregistrement d’audit. Pour plus d’informations, reportez-vous à [la rubrique utiliser l’audit de partage dans le journal d’audit Office 365](use-sharing-auditing.md).
+- Recherchez les activités de partage SharePoint qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** un enregistrement d’audit. Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit d’Office 365](use-sharing-auditing.md).
 
 - Exportez les résultats de recherche du journal d’audit qui contiennent des enregistrements pertinents pour votre enquête afin que vous puissiez utiliser Excel pour rechercher d’autres activités liées à l’utilisateur externe. Pour plus d’informations, consultez la rubrique [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md).

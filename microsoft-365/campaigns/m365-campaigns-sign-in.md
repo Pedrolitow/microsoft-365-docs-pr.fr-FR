@@ -1,5 +1,7 @@
 ---
 title: Se connecter à Microsoft 365 pour les campagnes
+f1.keywords:
+- NOCSH
 ms.author: supotter
 author: supotter
 manager: scotv
@@ -20,17 +22,17 @@ search.appverid:
 - BCS160
 - MET150
 description: Connectez-vous à Microsoft 365 pour les campagnes. Protégez votre campagne contre les menaces Cybersecurity pour la messagerie, les données et la communication.
-ms.openlocfilehash: be24db2a7614e312bff96e5689f58a439de224a6
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: b394eb0753394825d3398abda03442cd944222b9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772441"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594775"
 ---
 # <a name="sign-in-to-microsoft-365-for-campaigns"></a>Se connecter à Microsoft 365 pour les campagnes
 
 ## <a name="for-campaign-admins"></a>Pour les administrateurs de campagne
-Si vous vous êtes inscrit à Microsoft 365 pour les campagnes, vous êtes administrateur 365 Microsoft. Voici comment vous connecter: 
+Si vous vous êtes inscrit à Microsoft 365 pour les campagnes, vous êtes administrateur 365 Microsoft. Voici comment vous connecter : 
 1. Recherchez le nom d’utilisateur et le mot de passe que nous avons envoyés à l’adresse de messagerie que vous nous avez indiquée à l’étape 2 de la [procédure d’inscription](m365-campaigns-sign-up.md#steps-to-sign-up).
 2. Dans le navigateur, accédez au centre d’administration Microsoft 365 à <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>l’adresse. 
 3. Tapez votre nom d’utilisateur et votre mot de passe. Sélectionnez **se connecter**.

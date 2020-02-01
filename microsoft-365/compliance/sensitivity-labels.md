@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble des étiquettes de niveau de confidentialité
+f1.keywords:
+- CSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité pour appliquer des paramètres de protection qui intègrent le chiffrement et les filigranes sur le contenu étiqueté.
-ms.openlocfilehash: aa0c379e7d1209fb4ac9afc2924500f7b1af82e2
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 1cf7b47fbb9161b8000f5cfcce0bb36b86d0aa50
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515885"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597521"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -74,25 +76,35 @@ Une seule étiquette de niveau de confidentialité peut être affectée à chaqu
 
 ## <a name="what-sensitivity-labels-can-do"></a>Fonction des étiquettes de niveau de confidentialité
 
-Outre les messages électroniques et les documents, des étiquettes de confidentialité sont disponibles dans plusieurs préversions publiques. Pour plus d’informations sur l’utilisation d’étiquettes de confidentialité pour des fichiers, des équipes, des groupes et des sites, voir les articles suivants :
-
-- [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](sensitivity-labels-sharepoint-onedrive-files.md)
-
-- [Utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)](sensitivity-labels-teams-groups-sites.md)
+> [!NOTE]
+> Outre l'application d'étiquettes aux courriers électroniques et documents dans des applications Office, les étiquettes de confidentialité sont également désormais disponibles dans les versions publiques en préversion suivantes :
+> 
+> - [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](sensitivity-labels-sharepoint-onedrive-files.md)
+> - [Utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)](sensitivity-labels-teams-groups-sites.md)
 
 Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou un document, tout paramètre de protection relatif à cette étiquette sont appliqués au contenu. Vous pouvez utiliser une étiquette de confidentialité aux fins suivantes :
 
-- **Chiffrer** les e-mails uniquement ou les e-mails et les documents. Vous pouvez choisir les utilisateurs ou le groupe autorisés à effectuer telle ou telle action et la durée de l’autorisation. Par exemple, vous pouvez choisir d’autoriser les utilisateurs d’un groupe spécifique d'une autre organisation à vérifier le contenu pendant 7 jours seulement après l’étiquetage du contenu. Par ailleurs, au lieu d’autorisations définies par l'administrateur, vous pouvez autoriser vos utilisateurs à attribuer des autorisations au contenu lorsqu’ils appliquent l’étiquette. Pour plus d’informations, voir [Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité](encryption-sensitivity-labels.md).
+- **Chiffrer** les e-mails uniquement ou les e-mails et les documents. Vous pouvez choisir les utilisateurs ou le groupe autorisés à effectuer telle ou telle action et la durée de l’autorisation. Par exemple, vous pouvez choisir d’autoriser les utilisateurs d’un groupe spécifique d'une autre organisation à vérifier le contenu pendant 7 jours seulement après l’étiquetage du contenu. Par ailleurs, au lieu d’autorisations définies par l'administrateur, vous pouvez autoriser vos utilisateurs à attribuer des autorisations au contenu lorsqu’ils appliquent l’étiquette. 
+    
+    Pour plus d’informations sur les paramètres de **Chiffrement** lorsque vous créez ou modifiez une étiquette de confidentialité, voir [Restreindre l’accès au contenu en utilisant le chiffrement dans les étiquettes de confidentialité](encryption-sensitivity-labels.md).
 
-- **Marquer le contenu**, lorsque vous utilisez des applications Office, en ajoutant des pieds de page, en-têtes ou filigranes à des e-mails ou des documents portant l’étiquette. Des filigranes peuvent être appliqués aux documents, et non aux courriers électroniques, mais ceux-ci sont limités à 255 caractères. Les en-têtes et les pieds de page sont limités à 1024 caractères, sauf dans Excel. Excel présente une limite totale de 255 caractères pour les en-têtes et les pieds de page, mais cette limite inclut des caractères qui ne sont pas visibles, tels que des codes de mise en forme. Si cette limite est atteinte, la chaîne entrée n’apparaît pas dans Excel. Pour plus d’informations sur l'application de marquages de contenu, voir [Lorsque Office 365 applique le marquage et le chiffrement de contenu](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+- **Marquer le contenu** lorsque vous utilisez des applications Office, en ajoutant filigranes, pieds de page ou en-têtes à des e-mails ou des documents comportant l’étiquette. Par exemple :
     
     ![Filigrane et en-tête appliqués au document](media/Sensitivity-label-watermark-header.png)
+    
+    Pour plus d’informations sur l'application de marquages de contenu, voir [Lorsque Office 365 applique un marquage et un chiffrement à du contenu](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+    
+    Pour plus d’informations sur les paramètres de **Marquage de contenu** lorsque vous créez ou modifiez une étiquette de confidentialité : les filigranes peuvent être appliqués aux documents, mais pas aux courriers électroniques, et sont limités à 255 caractères. Les en-têtes et les pieds de page sont limités à 1 024 caractères, sauf dans Excel. Excel présente une limite totale de 255 caractères pour les en-têtes et les pieds de page, mais cette limite inclut des caractères qui ne sont pas visibles, tels que des codes de mise en forme. Si cette limite est atteinte, la chaîne entrée n’apparaît pas dans Excel.
 
-- **Évitez les pertes de données** en activant la protection des points de terminaison dans Intune. Si du contenu sensible est téléchargé, vous pouvez éviter la perte de données sur les appareils Windows. Par exemple, vous ne pouvez pas copier du contenu étiqueté sur Dropbox, Gmail ou un lecteur USB. Avant que vos étiquettes de confidentialité puissent utiliser la Protection des informations Windows (WIP), vous devez d’abord créer une stratégie de protection des applications dans le Portail Microsoft Azure. Pour plus d’informations, voir [Comment la Protection des informations Windows protège les fichiers à l’aide d’une étiquette de confidentialité](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+- **Évitez les pertes de données** en activant la protection des points de terminaison dans Intune. Si du contenu sensible est téléchargé, vous pouvez éviter la perte de données sur les appareils Windows. Par exemple, vous ne pouvez pas copier du contenu étiqueté sur Dropbox, Gmail ou un lecteur USB. Avant que vos étiquettes de confidentialité puissent utiliser la Protection des informations Windows (WIP), vous devez d’abord créer une stratégie de protection des applications dans le Portail Microsoft Azure. 
+    
+    Pour plus d’informations sur les paramètres de **Prévention contre la perte de données du point de terminaison** lorsque vous créez ou modifiez une étiquette de confidentialité, y compris les conditions préalables importantes, voir [Comment la Protection des informations Windows protège des fichiers à l’aide d’une étiquette de confidentialité](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
-- **Appliquer automatiquement l’étiquette au contenu qui contient des informations sensibles.** Vous pouvez choisir quels types d’informations sensibles vous souhaitez étiqueter et pouvez appliquer l’étiquette automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. si vous  recommandez une étiquette, l’invitation affiche le texte souhaité. Pour plus d’informations, voir[Appliquer automatiquement une étiquette sensibilité au contenu](apply-sensitivity-label-automatically.md).
-
+- **Appliquer automatiquement l’étiquette au contenu qui contient des informations sensibles.** Vous pouvez choisir quels types d’informations sensibles vous souhaitez étiqueter et pouvez appliquer l’étiquette automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte souhaité. Par exemple :
+    
     ![Invitation de mise à attribuer une étiquette requise](media/Sensitivity-label-Prompt-for-required-label.png)
+    
+    Pour plus d’informations sur les paramètres d' **Étiquetage automatique pour les applications Office** lorsque vous créez ou modifiez une étiquette de confidentialité, voir [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md).
 
 ### <a name="label-priority-order-matters"></a>Priorité des étiquettes (l’ordre est important)
 
@@ -181,11 +193,11 @@ Les métadonnées appliquées par ces jeux d’étiquettes sont compatibles. Vou
 
 ### <a name="azure-information-protection-clients"></a>Clients Azure Information Protection
 
-Lorsque vous utilisez des étiquettes de confidentialité dans les applications Office 365 ProPlus sur des ordinateurs Windows, vous avez le choix entre l'utilisation d'un client Azure Information Protection ou utiliser l'étiquetage intégré à Office. 
+Lorsque vous utilisez des étiquettes de confidentialité dans les applications Office 365 ProPlus sur des ordinateurs Windows, vous avez le choix entre l'utilisation d'un client Azure Information Protection ou utiliser l'étiquetage intégré à Office.
 
-L’étiquetage intégré est désactivé par défaut dans ces applications lorsque le client Azure Information Protection est installé. Pour plus d’informations, voir [A propos du client d’étiquetage intégré Office](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
+L’étiquetage intégré est désactivé par défaut dans ces applications lorsque le client Azure Information Protection est installé. Pour plus d'informations, y compris sur la façon de modifier de comportement par défaut, voir [À propos du client d’étiquetage intégré Office](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
 
-Si vous avez besoin d’aide pour choisir le client d’étiquetage à utiliser, voir [Choisir le client d’étiquetage à utiliser pour des ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) dans la documentation d’Azure Information Protection.
+Si vous débutez sur Azure Information Protection, ou si vous êtes un client Azure Information Protection existant et que vous venez de migrer vos étiquettes, voir [Choisir le client d’étiquetage à utiliser pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) dans la documentation Azure Information Protection.
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>Étiquettes de confidentialité et Microsoft Cloud App Security
 
@@ -193,11 +205,11 @@ Grâce à l'utilisation de Cloud App Security (CAS), vous pouvez détecter, clas
 
 Cloud App Security fonctionne avec les étiquettes de confidentialité et les étiquettes d’Azure Information Protection :
 
-- Si les centres d’administration d’étiquetage ont les mêmes étiquettes que celles du portail Microsoft Azure : les étiquettes de confidentialité sont utilisées. Pour sélectionner ces étiquettes dans Cloud App Security, une étiquette au moins doit être [publiée](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) vers au moins un utilisateur.
+- Si les centres d’administration de l'étiquetage ont une ou plusieurs étiquettes de confidentialité [publiées](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) vers au moins un utilisateur : les étiquettes de confidentialité sont utilisées.
 
-- Si les centres d’administration d’étiquetage n’ont pas les mêmes étiquettes que celles du portail Microsoft Azure : les étiquettes de confidentialité ne sont pas utilisées dans les centres d’administration d’étiquetage, et à la place, les étiquettes Azure Information Protection sont récupérées à partir du portail Azure.
+- Si les étiquettes de confidentialité des centres d’administration de l'étiquetage ne sont pas publiées : les étiquettes Azure Information Protection sont utilisées.
 
-Pour obtenir des instructions sur l’utilisation de Cloud App Security avec ces étiquettes, voir [Appliquer automatiquement des étiquettes de classification Azure Information Protection](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
+Pour obtenir des instructions sur l’utilisation de Cloud App Security avec ces étiquettes, voir [Intégration d'Azure Information Protection](https://docs.microsoft.com/cloud-app-security/azip-integration).
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Les étiquettes de confidentialité et Microsoft Information Protection SDK
 

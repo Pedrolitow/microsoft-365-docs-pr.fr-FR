@@ -1,5 +1,7 @@
 ---
 title: Afficher les documents d’un jeu à réviser
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4ee4c2eb92ee9ca5c155ecfccf3b391e86a03696
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4488303c16df74d479a699e8139ac486401cb6e5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078939"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596131"
 ---
 # <a name="view-documents-in-a-review-set"></a>Afficher les documents d’un jeu à réviser
 

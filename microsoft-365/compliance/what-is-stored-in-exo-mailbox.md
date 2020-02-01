@@ -1,5 +1,7 @@
 ---
 title: Contenu stocké dans les boîtes aux lettres Exchange Online
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les données générées par des applications basées sur le nuage dans Office 365 sont stockées dans la boîte aux lettres Exchange Online d’un utilisateur dans le Cloud Microsoft.
-ms.openlocfilehash: d2d126d28a9b92962af7637610282e99e7685594
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f9db94eebf855a2d8dcfee8897ca6171eabbc400
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079847"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597191"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Contenu stocké dans les boîtes aux lettres Exchange Online
 
@@ -33,7 +35,7 @@ Le tableau suivant répertorie les applications Office 365 qui stockent des donn
 |Formulaires     <br/> |Les formulaires (stockés sous forme de fichier PDF) et les réponses à un formulaire (stocké dans un fichier CSV) sont joints aux messages électroniques et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le formulaire. Lorsque vous exportez du contenu à partir de formulaires dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** d’un sous-dossier nommé avec le GUID suivant : **c9a559d2-7aab-4F13-A6ED-e7e9c52aec87**.        <br/> |
 |Groupes Office 365    <br/>|  Les messages électroniques, les éléments de calendrier, les contacts (personnes), les notes et les tâches sont stockés dans la boîte aux lettres associée à un groupe Office 365.       <br/> |
 |Outlook/Exchange Online<br/>|  Les messages électroniques, les éléments de calendrier, les contacts (personnes), les notes et les tâches sont stockés dans la boîte aux lettres d’un utilisateur.       <br/> |
-|Contacts    <br/> |  Les contacts dans l’application contacts (qui sont les mêmes contacts que ceux accessibles dans Outlook) sont stockés dans la boîte aux lettres d’un utilisateur.      <br/> |
+|Personnes    <br/> |  Les contacts dans l’application contacts (qui sont les mêmes contacts que ceux accessibles dans Outlook) sont stockés dans la boîte aux lettres d’un utilisateur.      <br/> |
 |Planification de la classe     <br/> |   Les plans créés au cours de la planification de classe sont stockés dans la boîte aux lettres du groupe Office 365 correspondant qui est mis en service lors de la création d’un plan. L’alias de la boîte aux lettres de groupe est le nom du plan.      <br/> |
 |Skype Entreprise    <br/>  | Les conversations dans Skype entreprise sont stockées dans le dossier historique des conversations dans la boîte aux lettres d’un utilisateur. Si la boîte aux lettres d’un participant à une réunion Skype est placée en conservation pour litige ou affectée à une stratégie de rétention, les fichiers joints à une réunion sont conservés dans la boîte aux lettres des participants.         <br/> |
 |Sway     <br/> |  Les Sways sont stockés sous forme de fichier HTML joint à un message électronique et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le Sway. Lorsque vous exportez du contenu à partir de Sway dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID suivant) **905fcf26-4EB7-48A0-9ff0-8dcc7194b5ba**.       <br/> |

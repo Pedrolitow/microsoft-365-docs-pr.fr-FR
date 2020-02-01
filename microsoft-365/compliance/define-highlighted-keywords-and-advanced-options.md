@@ -1,5 +1,7 @@
 ---
 title: Définir les mots clés et les options avancées en surbrillance dans Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Découvrez comment ajouter des mots clés définis par l’utilisateur à la pertinence pour identifier les fichiers appropriés lors du balisage dans Office 365 Advanced eDiscovery et pour spécifier les paramètres de coût.  '
-ms.openlocfilehash: 967258c152c12692cc5eb51f6553317161efa695
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4b74730498b3cb08cd646d57845446ae91daeee9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806127"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595361"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Définir les mots clés et les options avancées en surbrillance dans Office 365 Advanced eDiscovery
 

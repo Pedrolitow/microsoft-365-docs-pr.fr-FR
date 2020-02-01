@@ -1,5 +1,7 @@
 ---
 title: Affecter des autorisations pour les enquêtes sur les données (aperçu)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment configurer les autorisations nécessaires pour utiliser l’outil des enquêtes de données dans Microsoft 365.
-ms.openlocfilehash: bff6b976667f3793cf1973f9ab684ae14d590d97
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cbe17c00637da6b96cdf638f9d14b402c2d07380
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080039"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597771"
 ---
 # <a name="assign-permissions-for-data-investigations-preview"></a>Affecter des autorisations pour les enquêtes sur les données (aperçu)
 

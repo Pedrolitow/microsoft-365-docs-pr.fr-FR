@@ -1,5 +1,7 @@
 ---
 title: Partager des fichiers et des vidéos
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: twerner
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Partagez des fichiers et des vidéos à l’intérieur de votre campagne avec Microsoft teams et SharePoint.
-ms.openlocfilehash: 446285c375b64c6622905d3320de92c4ddb2dca0
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: bd6fae6c728cee50efcb5094edd6c75f6bdf3b11
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753613"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594725"
 ---
 # <a name="share-files-and-videos"></a>Partager des fichiers et des vidéos
 

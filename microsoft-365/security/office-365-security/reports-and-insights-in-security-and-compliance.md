@@ -1,5 +1,7 @@
 ---
 title: Rapports intelligents et aperçus dans le centre de sécurité et conformité
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Obtenez une vue d’ensemble des rapports et des Insights avialable dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 88a6cb080b0550274e86dcebb0e96be69e170317
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: edbc4cd53b5cd830996220c875a1b48565a96c13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111918"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598561"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Rapports intelligents et Insights dans le centre de sécurité &amp; conformité Office 365
 
@@ -71,7 +73,7 @@ Un grand nombre de rapports sont disponibles dans le centre &amp; de sécurité 
     
 - [Télécharger des rapports existants dans le &amp; Centre de sécurité conformité](download-existing-reports.md)
     
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365](../mtp/monitoring-and-reporting.md)
   

@@ -1,6 +1,8 @@
 ---
 title: Examiner et corriger les alertes de conformité des communications (préversion)
 description: Examinez et corrigez les alertes de conformité des communications dans Microsoft 365.
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 221c773e04bd9b7a4e404d0ec6a5fd5695ca089c
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 0bf47842945d904c30c8a034d2ed255a743332ca
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515755"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595821"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Examiner et corriger les alertes de conformité des communications (préversion)
 

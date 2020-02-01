@@ -1,5 +1,7 @@
 ---
 title: Éléments partiellement indexés dans la recherche de contenu dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche de contenu exécutée via le centre de sécurité & conformité. '
-ms.openlocfilehash: 7a5baa37abbade64ac77ed288afbb5389ac2295f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079756"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597781"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Éléments partiellement indexés dans la recherche de contenu dans Office 365
 
 Une recherche de contenu exécutée à partir du centre de sécurité & conformité dans Office 365 inclut automatiquement les éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont des éléments de boîte aux lettres Exchange et des documents sur SharePoint et des sites OneDrive entreprise qui n’ont pas été complètement indexés pour la recherche. Dans Exchange, un élément partiellement indexé contient généralement un fichier, d’un type de fichier qui ne peut pas être indexé, attaché à un message électronique. Voici quelques autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés lors de l’exécution d’une recherche : 
   
-- Le type de fichier n’est pas reconnu ou n’est pas pris en charge pour l’indexation.
+- Le type de fichier n’est paspris en charge ou est désactivé pour l’indexation.
     
 -  Les messages contiennent un fichier joint sans gestionnaire valide, tel que des fichiers image ; Il s’agit de la cause la plus fréquente d’éléments de courrier électronique partiellement indexés. 
     
@@ -81,7 +83,7 @@ Gardez les points suivants à l’esprit concernant les éléments partiellement
     
 - Si la recherche à partir de laquelle vous exportez les résultats est une recherche d’emplacements de contenu spécifiques ou de tous les emplacements de contenu de votre organisation, seuls les éléments non indexés des emplacements de contenu contenant des éléments correspondant aux critères de recherche seront exportés. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Cela est dû au fait que l’exportation d’éléments partiellement indexés à partir de nombreux emplacements de l’organisation peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps nécessaire pour exporter et télécharger les résultats de la recherche.
     
-    Pour exporter des éléments partiellement indexés de tous les emplacements de contenu pour une recherche, configurez la recherche de sorte qu’elle renvoie tous les éléments (en supprimant les mots clés de la requête de recherche), puis exportez uniquement les éléments partiellement indexés lorsque vous exportez les résultats de la recherche (en cliquant **uniquement sur les éléments dont le format n’est pas reconnu sont chiffrés ou n’ont pas été indexés pour d’autres raisons sous les options de** **sortie**.
+    Pour exporter des éléments partiellement indexés à partir de tous les emplacements de contenu pour une recherche, configurez la recherche de sorte qu’elle renvoie tous les éléments (en supprimant les mots clés de la requête de **recherche),** puis exportez uniquement les éléments partiellement indexés lorsque vous exportez les résultats de la recherche (en cliquant uniquement sur les éléments dont le format n’est **pas reconnu**
     
 - Si vous choisissez d’inclure tous les éléments de boîte aux lettres dans les résultats de la recherche ou si une requête de recherche ne spécifie pas de mots clés ou uniquement une plage de dates, les éléments partiellement indexés ne peuvent pas être copiés dans le fichier PST qui contient les éléments partiellement indexés. Cela est dû au fait que tous les éléments, y compris les éléments partiellement indexés, sont automatiquement inclus dans les résultats de la recherche standard.
     
@@ -119,7 +121,7 @@ Pour obtenir la liste des limites d’indexation pour les documents SharePoint, 
 |Nombre maximal de pièces jointes  <br/> |250  <br/> |Nombre maximal de fichiers joints à un message électronique qui seront analysés pour l’indexation. Si un message contient plus de 250 pièces jointes, les 250 premières pièces jointes sont analysées et indexées, et le message est marqué comme partiellement indexé car il contient des pièces jointes supplémentaires qui n’ont pas été analysées.  <br/> |
 |Profondeur maximale des pièces jointes  <br/> |0,30  <br/> |Nombre maximal de pièces jointes imbriquées qui sont analysées. Par exemple, si un message électronique est associé à un autre message et que le message joint contient un document Word joint, le document Word et le message joint sont indexés. Ce comportement se poursuivra pendant jusqu’à 30 pièces jointes imbriquées.  <br/> |
 |Nombre maximal d’images attachées  <br/> |0  <br/> |Une image jointe à un message électronique est ignorée par l’analyseur et n’est pas indexée.  <br/> |
-|Temps maximal passé à analyser un élément  <br/> |30 secondes  <br/> |Un maximum de 30 secondes est passé à analyser un élément pour l’indexation. Si la durée d’analyse est supérieure à 30 secondes, l’élément est marqué comme partiellement indexé.  <br/> |
+|Temps maximal passé à analyser un élément  <br/> |30 secondes  <br/> |Un maximum de 30 secondes est passé à analyser un élément pour l’indexation. Si la durée d’analyse est supérieure à 30 secondes, l’élément est marqué comme partiellement indexé.  <br/> |
 |Sortie maximale de l’analyseur  <br/> |2 millions de caractères  <br/> |Quantité maximale de sortie de texte de l’analyseur qui est indexée. Par exemple, si l’analyseur a extrait 8 millions caractères d’un document, seuls les 2 premiers caractères sont indexés.  <br/> |
 |Nombre maximal de jetons d’annotation  <br/> |2 millions  <br/> |Lorsqu’un message électronique est indexé, chaque mot est annoté avec des instructions de traitement différentes qui définissent le mode d’indexation de Word. Chaque ensemble d’instructions de traitement est appelé un jeton d’annotation. Pour maintenir la qualité de service dans Office 365, il existe une limite de 2 millions jetons d’annotation pour un message électronique.  <br/> |
 |Taille maximale du corps dans l’index  <br/> |67 millions caractères  <br/> |Nombre total de caractères dans le corps d’un message électronique et toutes ses pièces jointes. Lorsqu’un message électronique est indexé, tout le texte dans le corps du message et dans toutes les pièces jointes est concaténé dans une chaîne unique. La taille maximale de cette chaîne indexée est de 67 millions caractères.  <br/> |

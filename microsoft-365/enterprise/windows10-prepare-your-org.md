@@ -9,19 +9,21 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: josephd
-ms.openlocfilehash: aafd629b4efcfa1307a25bf8e340236f183998b5
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 69ff4846e3daeef39310aa63961e0b3f5ccb9875
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370241"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596591"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Étape 1 : Préparer votre organisation pour Windows 10 Entreprise
 
 *Cet article s'applique à la fois aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Avant de mettre à niveau vos appareils vers Windows 10 Entreprise, tenez compte des éléments suivants :
 
@@ -41,12 +43,12 @@ Vous pouvez configurer les paramètres des données de diagnostic de votre syst�
 
 Utilisez la valeur appropriée dans le tableau ci-dessous lorsque vous configurez la stratégie de gestion.
 
-| Level | Données collectées | Valeur |
+| Niveau | Données collectées | Valeur |
 |:--- |:--- |:--- |
 | Sécurité | Données de sécurité uniquement. | 0 |
-| De base | Données de sécurité, système de base et données de qualité. | 0,1 |
-| Avancée | Données de sécurité, système de base et données de qualité, ainsi que des informations améliorées et des données de fiabilité avancées. | n°2 |
-| Complet | Données de sécurité, système de base et données de qualité, informations améliorées et données de fiabilité avancées et données de diagnostics complètes. | 3 |
+| De base | Données de sécurité, système de base et données de qualité. | 1  |
+| Avancée | Données de sécurité, système de base et données de qualité, ainsi que des informations améliorées et des données de fiabilité avancées. | 2  |
+| Complet | Données de sécurité, système de base et données de qualité, informations améliorées et données de fiabilité avancées et données de diagnostics complètes. | 3  |
 
 Vous pouvez activer les données de diagnostic à l’aide de l’une des méthodes suivantes :
 
@@ -63,7 +65,7 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](win
 
 |||
 |:-------|:-----|
-|![Texte dans la liste 1](./media/stepnumbers/Step2.png)| [Déployer Windows 10 Entreprise pour les appareils existants en tant que mise à niveau inaltérable](windows10-deploy-inplaceupgrade.md) |
+|![Étape 2](./media/stepnumbers/Step2.png)| [Déployer Windows 10 Entreprise pour les appareils existants en tant que mise à niveau inaltérable](windows10-deploy-inplaceupgrade.md) |
 
 
 

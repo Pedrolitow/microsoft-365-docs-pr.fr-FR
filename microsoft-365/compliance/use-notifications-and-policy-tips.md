@@ -1,5 +1,7 @@
 ---
 title: Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e3b83c72c8f18ad58fcedb6b8c4271bfebdf8c13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685867"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597351"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -50,9 +52,9 @@ Dans le centre de sécurité &amp; conformité Office 365, lorsque vous créez u
 
 Lorsque vous créez une stratégie DLP, les notifications par courrier électronique et les conseils de stratégie font partie de la section **notifications** de l’utilisateur. 
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel. Vous êtes maintenant dans le centre de sécurité &amp; conformité Office 365.
+2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel. Vous êtes maintenant dans le centre de sécurité &amp; conformité Office 365.
     
 3. Dans le centre &amp; \> de sécurité conformité, \> **stratégie** \> de **protection contre** \> la perte de données gauche **+ créer une stratégie**.
     
@@ -91,7 +93,7 @@ Pour chaque règle d’une stratégie DLP, vous pouvez :
   
 - Envoyer la notification aux personnes que vous choisissez. Ces personnes peuvent inclure le propriétaire du contenu, la personne qui a modifié le contenu en dernier, le propriétaire du site où le contenu est stocké, ou un utilisateur spécifique.
     
-- Personnaliser le texte inclus dans la notification à l’aide de code HTML ou de jetons. Pour plus d’informations, consultez la section ci-dessous.
+- Personnaliser le texte inclus dans la notification à l’aide de code HTML ou de jetons. Consultez la rubrique ci-dessous pour plus d’informations.
     
 > [!NOTE]
 >  Les notifications par courrier électronique ne peuvent être envoyées qu’à des destinataires individuels, et non à des groupes ou à des listes de distribution. Seul le nouveau contenu déclenchera une notification par courrier électronique. La modification d’un contenu existant déclenche des conseils de stratégie, mais pas de notification par courrier électronique. 
@@ -152,9 +154,9 @@ Voici quelques points précis pour comprendre l’utilisation d’un Conseil de 
   
 - L’option de remplacement est par règle et elle remplace toutes les actions de la règle (à l’exception de l’envoi d’une notification, qui ne peut pas être remplacée).
     
-- Il est possible que le contenu corresponde à plusieurs règles dans une stratégie DLP, mais seul le Conseil de stratégie de la règle de priorité la plus restrictive s’affiche. Par exemple, un Conseil de stratégie provenant d’une règle qui bloque l’accès au contenu sera affiché sur un Conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela empêche les personnes de voir une cascade de conseils de stratégie.
+- Il est possible que le contenu corresponde à plusieurs règles dans une stratégie DLP, mais seul le Conseil de stratégie de la règle de priorité la plus restrictive s’affiche. Par exemple, un conseil de stratégie à partir d’une règle qui bloque l’accès au contenu est affiché sur un conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela évite que les personnes voient une cascade de conseils de stratégie.
     
-- Si les conseils de stratégie de la règle la plus restrictive permettent aux utilisateurs de remplacer la règle, la substitution de cette règle remplace également toutes les autres règles que le contenu correspond.
+- Si les conseils de stratégie de la règle la plus restrictive autorisent les utilisateurs à remplacer la règle, toute autre règle également mise en correspondance avec le contenu est aussi remplacée.
     
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>Conseils de stratégie sur les sites OneDrive entreprise et SharePoint Online
 

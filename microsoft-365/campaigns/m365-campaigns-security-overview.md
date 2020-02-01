@@ -1,5 +1,7 @@
 ---
 title: Renforcement de la protection de sécurité pour votre campagne
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,27 +23,27 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment protéger votre campagne en renforçant votre sécurité avec Microsoft 365 pour les campagnes.
-ms.openlocfilehash: 74c7d5f5836fd77b591389dd467114c93b8ab14e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: f2d57fe0cbc6765b359a759c3d33c6482d86bb06
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772411"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594785"
 ---
 # <a name="bump-up-security-protection-for-your-campaign"></a>Renforcement de la protection de sécurité pour votre campagne
 
 
 ## <a name="overview"></a>Vue d’ensemble 
-Regardez cette vidéo pour découvrir comment vous pouvez protéger votre campagne:
+Regardez cette vidéo pour découvrir comment vous pouvez protéger votre campagne :
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
 
-Ensuite, suivez les étapes ci-dessous pour:
-- [Se protéger contre les programmes malveillants et autres menaces](m365-campaigns-increase-protection.md)
+Ensuite, suivez les étapes ci-dessous pour :
+- [Se protéger contre les programmes malveillants et les autres menaces](m365-campaigns-increase-protection.md)
 - [Protéger l’accès à vos données de campagne](m365-campaigns-conditional-access.md) en protégeant vos comptes et applications
-- [Protéger les comptes administrateurs](m365-campaigns-protect-admin-accounts.md)
-- [Configurer des appareils mobiles](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
+- [Protéger les comptes d’administrateur](m365-campaigns-protect-admin-accounts.md)
+- [Configuration des appareils mobiles](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
 - [Former vos utilisateurs](m365-campaigns-users.md) 
 

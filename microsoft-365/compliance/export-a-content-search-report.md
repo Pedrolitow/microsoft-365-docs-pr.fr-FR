@@ -1,5 +1,7 @@
 ---
 title: Exporter un rapport de recherche de contenu
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le centre de sécurité & conformité dans Office 365, vous pouvez exporter un rapport des résultats de la recherche. Le rapport contient un résumé des résultats de la recherche et un document avec des informations détaillées sur chaque élément à exporter.
-ms.openlocfilehash: 5146120afd9ea36845f5a0d19619da35379438d5
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: a46051210ae4d8b4254d0415668e3b9902bf5589
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676791"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595601"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 

@@ -1,5 +1,7 @@
 ---
 title: Afficher les stratégies et les appareils
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Affichez les stratégies et les actions des appareils en vous connectant à Microsoft 365 entreprise avec des informations d’identification d’administrateur général.
-ms.openlocfilehash: 982c1f410802f9589d40073a11768b7dd68567c0
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 9664a72d85cf6eed9993937299d38a84b9a8f0d2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718916"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595584"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Afficher et gérer les stratégies et les appareils
 

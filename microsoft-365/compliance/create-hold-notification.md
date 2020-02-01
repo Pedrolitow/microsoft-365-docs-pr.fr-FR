@@ -1,5 +1,7 @@
 ---
 title: Créer une notice de suspension légale
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c34271f5dce3bc830241ba0fa5bad70cd294ba22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078696"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595621"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notice de suspension légale
 
@@ -84,7 +86,7 @@ Pour créer une notification d’émission :
    
 4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Notez que le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis d’émission. 
    
-5. Cliquez sur **Enregistrer**. 
+5. Cliquez sur **Enregistrer** 
 
 ### <a name="re-issuance-notification"></a>Notification de nouvelle émission 
 

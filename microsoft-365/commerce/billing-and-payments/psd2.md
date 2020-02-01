@@ -1,5 +1,7 @@
 ---
 title: Services de paiement directive 2 et authentification client forte pour les clients commerciaux
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 description: À partir du 14 septembre 2019, les banques des 31 pays de l’espace économique européen sont tenues de vérifier l’identité de la personne qui effectue un achat en ligne avant que le paiement ne puisse être traité.
 keywords: services de paiement directive 2, authentification client renforcée, authentification multifacteur
-ms.openlocfilehash: 1e9272803fd592062676e3324d172560b6b2219b
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: f59808d3735f10b57ed5c0cd279b6703b24a44a4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646424"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594705"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Services de paiement directive 2 et authentification client forte pour les clients commerciaux
 

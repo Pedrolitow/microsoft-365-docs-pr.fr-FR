@@ -1,5 +1,7 @@
 ---
 title: Notes de publication pour les enquêtes sur les données (aperçu) dans Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle outil d’évaluation des données (aperçu) de Microsoft 365.
-ms.openlocfilehash: 200b1c6c08d0fdb1c4af5da59fa75836b4b1fab3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078599"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595411"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notes de publication pour les enquêtes sur les données (aperçu) dans Microsoft 365
 
@@ -45,4 +47,4 @@ Vous pouvez utiliser l’outil nouvelles enquêtes de données (aperçu) dans Mi
 
 - **Travaux** : suivre l’état des processus de longue durée.
 
-- **Supprimer des éléments de boîte aux lettres** de manière irréversible : dans les situations urgentes, vous devrez peut-être supprimer définitivement les éléments mal placés. Pour ce faire, vous pouvez exécuter la commande **New-ComplianceSearchAction-purge-PurgeType permet HardDelete** dans Security & Compliance Center PowerShell pour supprimer définitivement des éléments des boîtes aux lettres. Pour plus d’informations, consultez la rubrique [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Supprimer des éléments de boîte aux lettres** de manière irréversible : dans les situations urgentes, vous devrez peut-être supprimer définitivement les éléments mal placés. Pour ce faire, vous pouvez exécuter la commande **New-ComplianceSearchAction-purge-PurgeType permet HardDelete** dans Security & Compliance Center PowerShell pour supprimer définitivement des éléments des boîtes aux lettres. Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).

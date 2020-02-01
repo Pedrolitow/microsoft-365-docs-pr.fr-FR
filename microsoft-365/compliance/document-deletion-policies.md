@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble des stratégies de suppression de documents
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Votre organisation peut être amenée à conserver des documents pendant une période de temps en raison de la conformité, de la légalité ou d’autres exigences professionnelles. Toutefois, si votre organisation conserve les documents plus longtemps que nécessaire, vous risquez de créer des risques légaux inutiles. Avec une stratégie de suppression de documents, vous pouvez réduire de manière proactive les risques en supprimant des documents dans un site après une période de temps spécifique (par exemple, vous pouvez supprimer des documents dans les sites OneDrive entreprise de l’utilisateur cinq ans après la création des documents).
-ms.openlocfilehash: 85a8a4464a14cb2e0b9e901fbf3912c7ff3faa8d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ac2bdfcd262a673af1078b2ed0a274fcd0b9d3b9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806047"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595209"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Vue d’ensemble des stratégies de suppression de documents
 
@@ -126,7 +128,7 @@ Le lien **stratégies de suppression de documents** ne s’affiche pas, sauf si 
   
 ## <a name="permissions"></a>Autorisations
 
-Les membres de votre équipe de conformité qui utiliseront le centre de stratégie de suppression de documents doivent disposer d’autorisations sur le centre de stratégies et sur les collections de sites auxquelles les stratégies seront appliquées. Nous vous recommandons d'effectuer les actions suivantes :
+Les membres de votre équipe de conformité qui utiliseront le centre de stratégie de suppression de documents doivent disposer d’autorisations sur le centre de stratégies et sur les collections de sites auxquelles les stratégies seront appliquées. Nous vous recommandons d’effectuer les actions suivantes :
   
 1. Créez un groupe de sécurité qui contient tous les utilisateurs du centre de stratégies de suppression de documents, très probablement votre équipe de gestion des stratégies de conformité. Pour plus d’informations, voir [gérer les groupes de sécurité à extension messagerie](https://go.microsoft.com/fwlink/p/?LinkID=404345) . 
     

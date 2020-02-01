@@ -1,5 +1,7 @@
 ---
 title: Préparation des résultats de recherche pour la découverte électronique avancée Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,18 +17,21 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Découvrez comment préparer les résultats d’une recherche de contenu dans le centre de sécurité & conformité dans Office 365 pour une analyse plus poussée avec l’outil eDiscovery avancé.
-ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 115657a1ea8a603676ff168cce7653e56f5664ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080036"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597741"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Préparation des résultats de recherche pour la découverte électronique avancée Office 365
 
-Une fois qu’une recherche associée à un cas de découverte électronique dans le centre de sécurité & conformité est exécutée correctement, vous pouvez préparer les résultats de la recherche pour une analyse plus poussée avec Office 365 Advanced eDiscovery, qui vous permet d’analyser des jeux de données non structurés volumineux et réduire la quantité de données correspondant à un cas juridique. Les fonctionnalités avancées de découverte électronique sont les suivantes :
+> [!IMPORTANT]
+> À mesure que nous continuons à investir dans les versions plus récentes de la découverte électronique avancée, nous annonçaons le retrait d’Office 365 Advanced eDiscovery (également appelé *Advanced eDiscovery v 1.0*). Si vous utilisez toujours Advanced eDiscovery v 1.0, effectuez une transition vers [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (également appelée *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2,0 contient des fonctionnalités similaires dans Advanced eDiscovery v 1.0, mais offre également de nombreuses nouvelles fonctionnalités telles que la gestion des dépositaires, la gestion des communications et les ensembles de révision. Pour en savoir plus sur le retrait de Advanced eDiscovery v 1.0, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+
+Une fois qu’une recherche associée à un cas eDiscovery dans le centre de sécurité & conformité est exécutée correctement, vous pouvez préparer les résultats de la recherche pour une analyse plus poussée avec Office 365 Advanced eDiscovery, qui vous permet d’analyser des ensembles de données non structurés volumineux et de réduire la quantité de données correspondant à un cas juridique. Les fonctionnalités avancées de découverte électronique sont les suivantes :
   
-- **Reconnaissance optique de caractères** : lorsque vous préparez des résultats de recherche pour Advanced eDiscovery, la fonctionnalité de reconnaissance optique de caractères (OCR) extrait automatiquement le texte des images et inclut cela avec les résultats de recherche chargés dans Advanced eDiscovery pour analyse. La reconnaissance optique de caractères est prise en charge pour les fichiers libres, les pièces jointes et les images incorporées. Cela vous permet d’appliquer les fonctionnalités d’analyse textuelle de la découverte électronique avancée (quasi-doublons, du Threading de messagerie électronique, des thèmes et du codage prédictif) au contenu de texte dans les fichiers image. La reconnaissance optique des caractères eDiscovery avancée prend en charge les formats suivants pour les fichiers image :
+- **Reconnaissance optique de caractères** : lorsque vous préparez des résultats de recherche pour Advanced eDiscovery, la fonctionnalité de reconnaissance optique de caractères (OCR) extrait automatiquement le texte des images, ainsi que les résultats de recherche chargés dans Advanced eDiscovery for Analysis. La reconnaissance optique de caractères est prise en charge pour les fichiers libres, les pièces jointes et les images incorporées. Cela vous permet d’appliquer les fonctionnalités d’analyse textuelle de la découverte électronique avancée (quasi-doublons, du Threading de messagerie électronique, des thèmes et du codage prédictif) au contenu de texte dans les fichiers image. La reconnaissance optique des caractères eDiscovery avancée prend en charge les formats suivants pour les fichiers image :
 
     - GIF
     - JPEG

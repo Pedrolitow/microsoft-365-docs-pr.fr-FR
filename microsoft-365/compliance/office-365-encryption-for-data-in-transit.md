@@ -1,5 +1,7 @@
 ---
 title: Chiffrement Office 365 pour les données en transit
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Résumé : explique brièvement comment Microsoft chiffre les données en transit.'
-ms.openlocfilehash: 571a0e28386539058a9998f703d7b4537e1a155a
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: cd261621320d4543a99836e8699c537ed10a8dcf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690409"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597871"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Chiffrement Office 365 pour les données en transit
 

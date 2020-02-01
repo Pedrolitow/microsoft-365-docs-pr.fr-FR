@@ -1,5 +1,7 @@
 ---
 title: Utiliser l’expédition de disque pour importer les fichiers PST de votre organisation
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Pour les administrateurs : Découvrez comment importer en bloc les fichiers PST de votre organisation vers des boîtes aux lettres Office 365 en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft. '
-ms.openlocfilehash: 79fc1b6cf9ad90a4a059ef7c9e4a747c1beb54c5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5de4143f84a4c5beed0e408c302ce2ca1e39e17a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802339"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597361"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files-to-office-365"></a>Utiliser l’expédition de disque pour importer les fichiers PST de votre organisation vers Office 365
 
@@ -116,12 +118,12 @@ La première étape consiste à télécharger la clé de stockage sécurisée et
   
 1. Accédez à [https://protection.office.com/](https://protection.office.com/) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation Office 365. 
     
-2. Dans le volet gauche du centre de sécurité & conformité, cliquez sur **information gouvernance** \> **Import** \> **Import PST Files**.
+2. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Gouvernance de l'information ** \> **Importer** \> **Importer des fichiers PST**.
     
     > [!NOTE]
     > Comme indiqué précédemment, vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre de sécurité & conformité. 
   
-3. Sur la page **importer des fichiers PST** , ![cliquez sur](media/ITPro-EAC-AddIcon.gif) ajouter une icône **nouveau travail d’importation**.
+3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
     
 4. Dans l’Assistant importation de tâche, tapez un nom pour le travail d’importation PST, puis cliquez sur **suivant**. Utilisez des lettres minuscules, des nombres, des traits d’union et des traits bas. Vous ne pouvez pas utiliser de lettres majuscules ou inclure des espaces dans le nom.
     
@@ -149,7 +151,7 @@ La première étape consiste à télécharger la clé de stockage sécurisée et
 
 Pour réaliser cette étape, vous devez utiliser l’outil WAImportExport.exe pour copier les fichiers PST sur le disque dur. Cet outil chiffre le disque dur avec BitLocker, copie les fichiers PST sur le disque dur et crée un fichier journal qui stocke des informations sur le processus de copie. Pour cela, les fichiers PST doivent se trouver sur un dossier partagé ou un serveur de fichiers dans votre organisation. Il s’agit du répertoire source mentionné dans la procédure suivante. 
 
- Comme indiqué précédemment, chaque fichier PST que vous copiez sur le disque dur ne doit pas dépasser 20 Go. Les fichiers PST dont la taille est supérieure à 20 Go peuvent avoir un impact sur les performances du processus d’importation PST que vous commencez à l’étape 6.
+ Comme indiqué précédemment, chaque fichier PST que vous copiez sur le disque dur ne doit pas dépasser 20 Go. Les fichiers PST d’une taille supérieure à 20 Go peuvent avoir un impact sur les performances du processus d’importation PST démarré à l’étape 6.
   
 > [!IMPORTANT]
 > Après avoir exécuté l’outil WAImportExport.exe pour la première fois pour un disque dur, vous devez utiliser une syntaxe différente les fois suivantes. Cette syntaxe est expliquée à l’étape 4 de cette procédure pour copier des fichiers PST sur le disque dur. 
@@ -249,9 +251,9 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation Office 365. 
     
-2. Dans le volet gauche du centre de sécurité & conformité, cliquez sur **information gouvernance** \> **Import** \> **Import PST Files**.
+2. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Gouvernance de l'information ** \> **Importer** \> **Importer des fichiers PST**.
     
-3. Sur la page **importer des fichiers PST** , ![cliquez sur](media/ITPro-EAC-AddIcon.gif) ajouter une icône **nouveau travail d’importation**.
+3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
     
     > [!NOTE]
     > Comme indiqué précédemment, vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre de sécurité & conformité. 
@@ -403,9 +405,9 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vo
     
 1. Accédez à [https://protection.office.com/](https://protection.office.com/) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation Office 365. 
     
-2. Dans le volet gauche du centre de sécurité & conformité, cliquez sur **gouvernance des informations > importer > fichiers PST d’importation**.
+2. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Gouvernance de l'information > Importer > Importer des fichiers PST**.
     
-3. Sur la page **importer des fichiers PST** , ![cliquez sur](media/ITPro-EAC-AddIcon.gif) ajouter une icône **nouveau travail d’importation**.
+3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
     
 4. Dans l’Assistant importation de tâche, tapez un nom pour le travail d’importation PST, puis cliquez sur **suivant**. Utilisez des lettres minuscules, des nombres, des traits d’union et des traits bas. Vous ne pouvez pas utiliser de lettres majuscules ou inclure des espaces dans le nom.
     
@@ -498,13 +500,13 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vo
   WAImportExport.exe PrepImport /j:PSTHDD1.jrn /id:driveship2 /srcdir:"\\FILESERVER1\PSTs\SecondBatch" /dstdir:"ingestiondata/" /blobtype:BlockBlob
     ```
 
-- Comme expliqué précédemment, le service d’importation Office 365 active le paramètre de blocage de rétention (pour une durée indéterminée) une fois que les fichiers PST sont importés dans une boîte aux lettres. Cela signifie que la propriété *RentionHoldEnabled* est définie `True` sur de sorte que la stratégie de rétention attribuée à la boîte aux lettres ne soit pas traitée. Le propriétaire de la boîte aux lettres peut ainsi gérer les messages nouvellement importés en empêchant une suppression ou une stratégie d’archivage de la suppression ou de l’archivage des anciens messages. Voici quelques étapes que vous pouvez suivre pour gérer ce blocage de rétention : 
+- Comme indiqué auparavant, le service importation pour Office 365 active le paramètre de blocage de rétention (pour une durée indéterminée) après l’importation de fichiers PST dans une boîte aux lettres. Cela signifie que la propriété *RentionHoldEnabled* est définie `True` sur de sorte que la stratégie de rétention attribuée à la boîte aux lettres ne soit pas traitée. Le propriétaire de la boîte aux lettres a ainsi le temps de gérer les messages nouvellement importés en empêchant une stratégie de suppression ou d’archivage de supprimer ou d’archiver des messages plus anciens. Voici quelques étapes à suivre pour gérer ce blocage de rétention : 
     
-  - Au bout d’un certain temps, vous pouvez désactiver le blocage de rétention en `Set-Mailbox -RetentionHoldEnabled $false` exécutant la commande. Pour obtenir des instructions, consultez [la rubrique placer une boîte aux lettres en blocage de rétention](https://go.microsoft.com/fwlink/p/?LinkId=544749).
+  - Au bout d’un certain temps, vous pouvez désactiver le blocage de rétention en `Set-Mailbox -RetentionHoldEnabled $false` exécutant la commande. Pour plus d'instructions, consultez [Activer le blocage de rétention d’une boîte aux lettres](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-  - Vous pouvez configurer le blocage de rétention de sorte qu’il soit désactivé à une date ultérieure. Pour ce faire, exécutez la `Set-Mailbox -EndDateForRetentionHold <date>` commande. Par exemple, en supposant que la date du jour est le 1er juin 2016 et que vous voulez désactiver le blocage de rétention dans 30 jours, exécutez la `Set-Mailbox -EndDateForRetentionHold 7/1/2016`commande suivante :. Dans ce scénario, vous laisserez la propriété *RentionHoldEnabled* définie sur *true*. Pour plus d’informations, consultez la rubrique [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+  - Vous pouvez configurer le blocage de rétention pour qu’il se désactive à une date ultérieure. Pour ce faire, exécutez la `Set-Mailbox -EndDateForRetentionHold <date>` commande. Par exemple, en supposant que la date du jour est le 1er juin 2016 et que vous voulez désactiver le blocage de rétention dans 30 jours, exécutez la `Set-Mailbox -EndDateForRetentionHold 7/1/2016`commande suivante :. Dans ce scénario, vous laisserez la propriété *RentionHoldEnabled* définie sur *true*. Pour plus d’informations, consultez [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
-  - Vous pouvez modifier les paramètres de la stratégie de rétention attribuée à la boîte aux lettres de sorte que les éléments plus anciens qui ont été importés ne soient pas immédiatement supprimés ou déplacés vers la boîte aux lettres d’archivage de l’utilisateur. Par exemple, vous pouvez rallonger l’âge de rétention d’une stratégie de suppression ou d’archivage affectée à la boîte aux lettres. Dans ce scénario, vous devez désactiver le blocage de rétention sur la boîte aux lettres après avoir modifié les paramètres de la stratégie de rétention. Pour plus d’informations, consultez [la rubrique Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres dans votre organisation Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
+  - Vous pouvez modifier les paramètres de stratégie de rétention attribuée à la boîte aux lettres pour que les anciens éléments qui ont été importés ne soient ni supprimés immédiatement, ni déplacés vers la boîte aux lettres d’archivage de l’utilisateur. Par exemple, vous pouvez allonger l’âge de rétention d’une stratégie de suppression ou d’archivage associée à la boîte aux lettres. Dans ce scénario, vous devez désactiver le blocage de rétention sur la boîte aux lettres après la modification des paramètres de la stratégie de rétention. Pour plus d’informations, voir [Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     
 
   

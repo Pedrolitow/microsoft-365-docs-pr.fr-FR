@@ -1,5 +1,7 @@
 ---
 title: Types de fichiers pris en charge dans Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Une liste des types de fichiers pris en charge dans Microsoft 365 Advanced eDiscovery. Cela inclut une liste des types de fichiers image pris en charge par la fonctionnalité OCR dans Advanced eDiscovery.
-ms.openlocfilehash: ff9fdc77226ee476de3fe89a980b2658720749bf
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191239"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597381"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Types de fichiers pris en charge dans Advanced eDiscovery
 

@@ -1,6 +1,8 @@
 ---
 title: Conformité de la communication (aperçu)
 description: En savoir plus sur la conformité des communications dans Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 45a077f0b6609480f9b74a3fd42b2a3a51a7bf7e
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 8aa7beeea621ccbb0014059766fe217c1a25e2a2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515625"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595811"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Conformité de la communication dans Microsoft 365 (version d’évaluation)
 

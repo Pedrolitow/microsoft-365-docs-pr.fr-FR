@@ -1,5 +1,7 @@
 ---
-title: Présentation des usurpations d’identité
+title: Présentation des informations sur la veille contre l’usurpation d’identité
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne la nouvelle usurpation d’aide à la décision.
-ms.openlocfilehash: 652dde07d615a4eef98074fb8d2b5c676f65d633
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079951"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598011"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Procédure pas à pas : usurpation d’aide
 
@@ -60,7 +62,7 @@ Dans les deux cas, les domaines usurpés affichés dans la vue sont séparés en
   
 Une *paire de domaine* est une combinaison de l’adresse « de : » et de l’infrastructure d’envoi. 
   
-- L’adresse « de » est l’adresse de l’expéditeur par votre application de messagerie. Cette adresse identifie l’auteur du message. C’est-à-dire, la boîte aux lettres de la personne ou du système responsable de l’écriture du message. Elle est parfois appelée adresse 5322.From.
+- L’adresse « de » est l’adresse de l’expéditeur par votre application de messagerie. Cette adresse indique l’auteur de l’e-mail. Autrement dit, elle indique la boîte aux lettres de la personne ou du système responsable de la rédaction du message. Elle est parfois appelée adresse 5322.From.
     
 - L’infrastructure d’envoi, ou expéditeur, est le domaine de l’organisation de l’enregistrement PTR de l’adresse IP d’envoi. Si l’adresse IP d’envoi n’a pas d’enregistrement PTR, l’expéditeur est identifié par l’adresse IP d’envoi avec le masque de sous-réseau 255.255.255.0 dans la notation CIDR (/24). Par exemple, si l’adresse IP est 192.168.100.100, l’adresse IP complète de l’expéditeur est 192.168.100.100/24.
     
@@ -88,7 +90,7 @@ Vous ajoutez ou supprimez un domaine de la liste des expéditeurs approuvés All
   
 Cela modifie la combinaison de paires de domaines unique du domaine usurpé et de l’infrastructure d’envoi et ne fournit pas de couverture pour l’ensemble du domaine usurpé ou l’infrastructure d’envoi isolée. Par exemple, si vous ajoutez la paire de domaines suivante à la liste verte de l’expéditeur « AllowedToSpoof » : *domaine usurpé* « gmail.com » et l' *infrastructure d’envoi* « TMS *. mx.com »,* seul le courrier de cette paire de domaines sera autorisé à usurper. Les autres expéditeurs qui tentent d’usurper « gmail.com » et d’autres domaines que « tms.mx.com » tentent d’usurper continueront à être protégés par l’intelligence des usurpations d’identité. 
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [En savoir plus sur l’usurpation d’identité](learn-about-spoof-intelligence.md)
   

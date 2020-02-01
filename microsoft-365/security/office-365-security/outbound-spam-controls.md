@@ -1,5 +1,7 @@
 ---
 title: Contrôler le courrier indésirable sortant dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si votre organisation envoie un grand nombre de messages marqués comme courrier indésirable, vous pouvez être bloqué pour l’envoi de messages électroniques avec Office 365. Lisez cet article pour en savoir plus sur les raisons de cette situation et sur ce que vous pouvez faire.
-ms.openlocfilehash: 28677e2bbfad7f44595de1300e42b9c58ab99c2b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1b1e0f56398db774a9aabc56cdcde52ad17791a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031849"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598731"
 ---
 # <a name="control-outbound-spam-in-office-365"></a>Contrôler le courrier indésirable sortant dans Office 365
 

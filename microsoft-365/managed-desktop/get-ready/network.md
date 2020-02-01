@@ -4,15 +4,17 @@ description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a6397f1c78bb15e198ed75be50c51953b049ed68
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074688"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596561"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration réseau pour le bureau géré Microsoft
 
@@ -42,7 +44,7 @@ Service Microsoft  | URL requises sur la liste verte
 Bureau géré Microsoft | prod-mwaas-services-customerapi.azurewebsites.net
 Obtenir de l’aide | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
 Assistance rapide | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
-Assistant support et récupération Microsoft pour Office 365 | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
+Assistant Support et récupération de Microsoft pour Office 365 | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
  
 
 ### <a name="endpoints-allowed---other-microsoft-products"></a>Points de terminaison autorisés-autres produits Microsoft
@@ -54,7 +56,7 @@ Service Microsoft | Source de documentation-URL requises sur la liste verte
 Windows 10 entreprise, y compris Windows Update pour les entreprises | [Gérer les points de terminaison de connexion pour Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
 Optimisation de la remise | [Configurer l’optimisation de la remise pour les mises à jour de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [URL et plages d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-Azure Active Directory | [Ports et protocoles d’identité hybrides](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) , ainsi que les [exigences de port Active Directory et des services de domaine Active Directory](https://aka.ms/AA26ygm) 
+Azure Active Directory | [Ports et protocoles d’identité hybrides](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) , ainsi que les [exigences de port Active Directory et des services de domaine Active Directory](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Configuration requise pour la configuration réseau Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
 Protection avancée contre les menaces Microsoft Defender (ATP) | [Points de terminaison ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 

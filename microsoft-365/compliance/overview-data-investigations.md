@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble des enquêtes de données (aperçu) dans Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle outil d’évaluation des données (aperçu) de Microsoft 365.
-ms.openlocfilehash: 1b578487a42e8663757468c848772afd93529753
-ms.sourcegitcommit: 0b5ef663f379c8bb0a223ebd3f09eec984d93812
+ms.openlocfilehash: cd60b16f6d0f968c0c87f3e44ee2f643c90ebb10
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "38685676"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597791"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Vue d’ensemble des enquêtes de données (aperçu) dans Microsoft 365
 

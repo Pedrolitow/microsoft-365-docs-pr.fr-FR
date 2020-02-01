@@ -1,5 +1,7 @@
 ---
 title: Importer du contenu non-Office 365 pour l’analyse eDiscovery avancée
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Procédure d’importation de contenu qui n’est pas stocké dans O365 dans un objet BLOB Azure afin qu’il puisse être analysé avec AeD
-ms.openlocfilehash: aa14a54c20ac580c6412e8dc534ec44520abb3c8
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 8417382bc37b5bb3515e893ff2043019525b3f72
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823786"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597971"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importer du contenu non-Office 365 pour l’analyse eDiscovery avancée
 

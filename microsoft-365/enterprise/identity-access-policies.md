@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37746550"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596951"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
@@ -41,7 +43,7 @@ Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de me
 
 |Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
+|**Référence**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les règles d’accès conditionnel, c’est pourquoi il est important de bloquer ces|
 |        |[Les utilisateurs à haut risque doivent changer leur mot de passe](#high-risk-users-must-change-password)|Force les utilisateurs à modifier leur mot de passe lors de la connexion en cas de détection d’une activité à haut risque pour leur compte.|
 |        |[Définir les stratégies de protection des applications](#define-app-protection-policies)|Une stratégie par plateforme (iOS, Android, Windows).|
@@ -102,7 +104,7 @@ Appliquez les paramètres en fonction du niveau de protection que vous ciblez.
 
 |Propriété|Niveau de protection|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Niveau de risque|Baseline|Élevé, moyen|Cocher les deux|
+|Niveau de risque|Référence|Élevé, moyen|Cocher les deux|
 | |Sensible|Élevé, moyen, faible|Cocher les trois|
 | |Hautement réglementé| |Laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur|
 
@@ -200,7 +202,7 @@ La liste d’applications recommandée inclut les éléments suivants :
 - PowerPoint
 - Excel
 - Word
-- Microsoft Teams
+- Microsoft Teams
 - Microsoft SharePoint
 - Visionneuse Microsoft Visio
 - OneDrive
@@ -231,7 +233,7 @@ Les tableaux suivants décrivent les paramètres recommandés :
 ||Exiger des informations d’identification d’entreprise pour l’accès|Non||
 ||Revérifier l’exigence d’accès après (minutes)|0,30||
 ||Bloquer la capture d’écran et l’Assistant Android|Non|Sur iOS, cette option n’est pas disponible|
-|Exigences en matière de sécurité de connexion|Nombre maximal de tentatives de code confidentiel|disque|Réinitialiser le code confidentiel|
+|Exigences en matière de sécurité de connexion|Nombre maximal de tentatives de code confidentiel|5 |Réinitialiser le code confidentiel|
 ||Période de grâce hors connexion|720|Bloquer l’accès|
 ||Intervalle hors connexion (jours) avant la réinitialisation des données d'application|90|Effacer les données|
 ||Un jailbreak/périphériques enracinés| |Effacer les données|
@@ -311,7 +313,7 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 ||Longueur minimale du mot de passe|6 ||
 ||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
 ||Expiration du mot de passe (jours)|41||
-||Nombre de mots de passe précédents pour empêcher la réutilisation|disque||
+||Nombre de mots de passe précédents pour empêcher la réutilisation|5 ||
 ||Exiger un mot de passe lorsque l’appareil revient de l’état inactif (mobile et holographique)|Require (Rendre obligatoire)|Disponible pour Windows 10 et versions ultérieures|
 |Chiffrement|Chiffrement du stockage des données sur l’appareil|Require (Rendre obligatoire)||
 |Sécurité de l’appareil|-|Require (Rendre obligatoire)||
@@ -326,7 +328,7 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyenne||
+|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyen||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Exiger des PC conformes (mais pas les téléphones et les tablettes conformes)
 Avant d’ajouter une stratégie pour exiger des PC conformes, veillez à inscrire les appareils pour la gestion dans Intune. L’utilisation de l’authentification multifacteur est recommandée avant l’inscriptions de périphériques dans Intune pour garantir que l’appareil est en possession de l’utilisateur prévu. 

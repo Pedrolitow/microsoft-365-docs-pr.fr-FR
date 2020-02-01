@@ -1,5 +1,7 @@
 ---
 title: Gestion des accès privilégiés dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la gestion des accès privilégiés dans Office 365
-ms.openlocfilehash: 9bc2aab9c9758daf35aa14a41d7997a0bff5764f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 0c9d8ba22f57c7f6a576f1995e8df92be7478073
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685793"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597731"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gestion des accès privilégiés dans Office 365
 
@@ -71,7 +73,7 @@ Pour une demande approuvée, la tâche est traitée par l’instance d’exécut
 
 ![Étape 4 : traitement de l’accès](media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Quels sont les SKU pouvant utiliser l’accès privilégié dans Office 365 ?
 La gestion des accès privilégiés est disponible pour les clients disposant d’Office 365 E5 et de SKU de conformité avancée.

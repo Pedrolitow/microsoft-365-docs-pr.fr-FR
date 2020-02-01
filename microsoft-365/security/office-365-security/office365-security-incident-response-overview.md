@@ -1,5 +1,7 @@
 ---
 title: Réponse aux incidents de sécurité Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Cette solution vous indique les attaques Cybersecurity les plus courantes pouvant ressembler à Office 365 et comment y répondre.
-ms.openlocfilehash: c55a5d561fec4219d29926036842836174b790da
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 317e685dd9e2b2e0afbf25f0568b352c399e7b87
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823826"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598721"
 ---
 # <a name="office-365-security-incident-response"></a>Réponse aux incidents de sécurité Office 365
 

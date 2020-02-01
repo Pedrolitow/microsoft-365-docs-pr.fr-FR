@@ -1,5 +1,7 @@
 ---
 title: Rechercher des données dans une investigation
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcd7f3f38f53ef22fc50823f3d2e3564af333431
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 62d42c29182a81cfa133c5d8863add56aba29be3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078401"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597551"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Rechercher des données dans une investigation
 
@@ -27,7 +29,7 @@ Sous l’onglet **Rechercher** dans une enquête de données, vous pouvez recher
 
 Après avoir exécuté une recherche, vous pouvez afficher des statistiques sur les éléments renvoyés par la recherche, tels que les emplacements de contenu qui ont le plus d’éléments qui correspondent à la requête de recherche. Vous pouvez également afficher un aperçu d’un sous-ensemble des résultats. Une fois que vous avez identifié le jeu de documents à étudier plus en détail, vous pouvez ajouter les résultats de la recherche à un ensemble de preuves afin de poursuivre le processus et l’analyse.
 
-## <a name="create-a-search"></a>Create a search
+## <a name="create-a-search"></a>Créer une recherche
 
 1. Dans une enquête, cliquez sur l’onglet **recherches** , puis sur **nouvelle recherche**. 
 

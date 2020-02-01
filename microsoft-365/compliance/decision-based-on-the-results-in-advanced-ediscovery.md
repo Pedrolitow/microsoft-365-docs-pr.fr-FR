@@ -1,5 +1,7 @@
 ---
 title: Décision basée sur les résultats dans Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Découvrez comment l’onglet décider dans Office 365 Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de révision des fichiers de cas. '
-ms.openlocfilehash: 15c6c28fa48d639f03a421776d7613cbbdba43c1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e60aff12e20a4f8accfbcda958c2d087fd732e88
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808069"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595381"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Décision basée sur les résultats dans Office 365 Advanced eDiscovery
 

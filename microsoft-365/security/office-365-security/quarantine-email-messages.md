@@ -1,5 +1,7 @@
 ---
 title: Mise en quarantaine des messages électroniques dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer une mise en quarantaine pour les messages électroniques entrants dans Office 365 où les messages électroniques entrants qui ont été filtrés en tant que courrier indésirable, Bulk, phishing et programmes malveillants peuvent être conservés à des fins de révision ultérieure.
-ms.openlocfilehash: f7669f69abb711d71362057f2019b0dd7e30443b
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 253e1b9e03d395f67ff1290a527e035cbf8dfc3f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021850"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598671"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>Mise en quarantaine des messages électroniques dans Office 365
 

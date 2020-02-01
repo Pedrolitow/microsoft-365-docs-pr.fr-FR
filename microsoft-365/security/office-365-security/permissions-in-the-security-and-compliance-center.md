@@ -1,5 +1,7 @@
 ---
 title: Autorisations dans le Centre de conformité et sécurité Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent en savoir plus sur les autorisations qui sont disponibles dans le centre de sécurité & conformité d’Office 365.
-ms.openlocfilehash: 20627549cb49f3886dddcfe268d8645583baac73
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 209e871ee9df4bd40568bc647b4bae838ddace73
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023378"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598711"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Autorisations dans le Centre de conformité et sécurité Office 365
 

@@ -1,5 +1,7 @@
 ---
 title: Suivi des menaces-nouveautés et remarquables
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: 084d3c6de104c675a2af47984a2fcbffcf89447e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2a68cfbbae0ce91716f69514e30136ac223bbf8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080404"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598181"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 
@@ -34,7 +36,7 @@ Les analyseurs de menace sont des widgets informatifs et des vues qui vous fourn
   
 ![Exemple de suivi des menaces illustrant des campagnes de programmes malveillants](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
-La plupart des pages de suivi incluent des numéros de tendance mis à jour régulièrement, des widgets pour vous aider à comprendre quels problèmes sont les plus importants ou les plus importants, et un lien rapide dans la colonne **actions** qui vous amène à explorer, où vous pouvez afficher des informations plus détaillées formatif. 
+La plupart des pages de suivi incluent des numéros de tendance mis à jour régulièrement, des widgets pour vous aider à comprendre quels problèmes sont les plus importants ou les plus importants, et un lien rapide dans la colonne **actions** qui vous amène à explorer, où vous pouvez afficher des informations plus détaillées. 
   
 ![Exemple d’informations sur la campagne dans l’Explorateur](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   

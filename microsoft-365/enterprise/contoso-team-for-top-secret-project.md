@@ -1,5 +1,7 @@
 ---
-title: Équipe pour un projet secret principal de Contoso Corporation
+title: Faire équipe pour un projet top secret de Contoso Corporation
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe pour les données hautement réglementées pour un projet à forte priorité afin de développer une nouvelle suite de produits et de services.'
-ms.openlocfilehash: 23a967ea7ffdb3497d705a3ddda4d3c56e415b8e
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699890"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597071"
 ---
-# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe pour un projet secret principal de Contoso Corporation
+# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Faire équipe pour un projet top secret de Contoso Corporation
 
 Après un cadre hors site, le PDG de Contoso a ordonné le développement d’une nouvelle suite de produits et de services qui pourrait doubler les bénéfices de contoso au cours des cinq prochaines années. Le projet de secret principal pour développer l’entreprise, l’ingénierie et le plan de marché a été nommé **Project 2x** et le personnel clé de l’entreprise ont été recrutés. 
 

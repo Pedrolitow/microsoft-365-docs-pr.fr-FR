@@ -1,5 +1,7 @@
 ---
 title: Comparaison des versions d’Office 365 message Encryption (OME)
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Explique les différences entre les versions d’Office 365 le chiffrement de messages.
-ms.openlocfilehash: 1d4016e3fa0576a52ef9627539ecd96416a53fae
-ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
+ms.openlocfilehash: 0f9db94763fa6434c354cacac2e0edd05596cafc
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "38685688"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597801"
 ---
 # <a name="compare-versions-of-ome"></a>Comparez les versions de OME
 
@@ -32,7 +34,7 @@ Cet article compare le chiffrement de messages Office 365 hérité (OME) aux nou
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Comparaison côte à côte des fonctionnalités et des fonctionnalités
 
-|                                   |Anciennes fonctionnalités       |                   |Fonctionnalités nouvelles              |
+|                                   |Anciennes fonctionnalités       |                   |Nouvelles fonctionnalités              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Fonctionnalité**                     | **Legacy OME**    | **IRM**           | **Nouvelles fonctionnalités OME** |
 |*Envoi d’un message chiffré*        |À l’aide des règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook Desktop ou Outlook sur le Web ; ou via les règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook Desktop, Outlook pour Mac ou Outlook sur le Web ; via les règles de flux de messagerie Exchange (également appelées règles de transport) et la protection contre la perte de données (DLP) d’Office 365|

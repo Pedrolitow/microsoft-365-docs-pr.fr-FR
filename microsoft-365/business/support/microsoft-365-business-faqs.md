@@ -2,6 +2,8 @@
 title: Questions fréquemment posées sur Microsoft 365 Business 
 description: Trouvez des réponses aux questions les plus fréquemment posées à propos de Microsoft 365 Business, une nouvelle solution conçue pour les petites et moyennes entreprises (SMB). 
 author: Sirkkuw
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -10,19 +12,19 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft365Business, Microsoft365, SMB, FAQ, forum aux questions, réponses, entreprise
 ms.date: 06/08/2018
-ms.openlocfilehash: 09a155c87bf90309f8a4cdd2eb5c0b71d2337d58
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 706646eae722b0040db2a5bd7bcf187f5e1295bf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748368"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594225"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Questions fréquemment posées sur Microsoft 365 Business
 
 ## <a name="general"></a>Général
 
 ### <a name="what-is-microsoft-365-business"></a>Qu’est-ce que Microsoft 365 Business ? 
-Microsoft 365 est une solution intégrée qui rassemble les outils de productivité, la sécurité et les fonctionnalités de gestion des périphériques les plus performants pour les petites et moyennes entreprises. Cela comprend les éléments suivants :
+Microsoft 365 est une solution intégrée qui rassemble les outils de productivité, la sécurité et les fonctionnalités de gestion des périphériques les plus performants pour les petites et moyennes entreprises. Elle comprend :
 
 **Un ensemble d’outils de productivité et de collaboration d’entreprise** 
 * Word, Excel, PowerPoint, Outlook, OneNote, Publisher et Access 

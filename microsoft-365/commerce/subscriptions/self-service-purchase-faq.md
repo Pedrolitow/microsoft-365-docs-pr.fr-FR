@@ -1,5 +1,7 @@
 ---
 title: FAQ sur les achats en libre-service
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -13,19 +15,19 @@ search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 8671492680eba730bf123036a4bb347d055f686d
-ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
+ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120155"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594098"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
 > [!NOTE]
 > Les informations contenues dans cet article s’appliquent uniquement aux abonnements Microsoft Power Platform (Power BI, Power Apps et Power automate).
 
-Les achats en libre-service sont désormais disponibles pour Power BI aux États-Unis.
+Les achats en libre-service sont désormais disponibles pour Power Platform aux États-Unis.
 
 ## <a name="general"></a>Général
 
@@ -43,7 +45,7 @@ Dans le monde actuel, les utilisateurs finaux et les services cherchent de plus 
 
 ### <a name="which-power-platform-products-are-available-for-self-service-purchase"></a>Quels sont les produits Power Platform disponibles pour l’achat en libre-service ?
 
-Microsoft a lancé l’achat en libre-service pour Power BI aux clients des États-Unis, les autres marchés devenant disponibles au cours des prochains mois. Les applications Power and Power automate seront ajoutées aux clients des États-Unis le 28 janvier 2020. Cette fonctionnalité ne sera pas disponible pour les clients des États-Unis qui sont des pouvoirs publics, des organisations à but non lucratif ou l’éducation, pour le moment.
+Microsoft a lancé un achat en libre-service pour Power Platform (Power BI, Power Apps, and Power Self) aux clients des États-Unis, les autres marchés devenant disponibles au cours des prochains mois. Cette fonctionnalité ne sera pas disponible pour les clients des États-Unis qui sont des pouvoirs publics, des organisations à but non lucratif ou l’éducation, pour le moment.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>Est-ce que l’achat en libre-service sera activé pour les services au-delà des produits Power Platform ?
 

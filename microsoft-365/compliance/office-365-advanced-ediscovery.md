@@ -1,5 +1,7 @@
 ---
 title: Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,23 +15,26 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Découvrez comment Office 365 Advanced eDiscovery peut vous aider à analyser les données dans Office 365, rationaliser les révisions de documents et prendre des décisions pour une découverte électronique efficace.
-ms.openlocfilehash: 4c72444765f75a77d3b62dbd2675b0c277d3d6ba
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a3a6291459005d60defe61a8bca40ce382b6d052
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803791"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597891"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
 
-> [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> [!IMPORTANT]
+> À mesure que nous continuons à investir dans les versions plus récentes de la découverte électronique avancée, nous annonçaons le retrait d’Office 365 Advanced eDiscovery (également appelé *Advanced eDiscovery v 1.0*). Si vous utilisez toujours Advanced eDiscovery v 1.0, effectuez une transition vers [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (également appelée *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2,0 contient des fonctionnalités similaires dans Advanced eDiscovery v 1.0, mais offre également de nombreuses nouvelles fonctionnalités telles que la gestion des dépositaires, la gestion des communications et les ensembles de révision. Pour en savoir plus sur le retrait de Advanced eDiscovery v 1.0, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
 Grâce à Advanced eDiscovery, vous pouvez mieux comprendre vos données Office 365 et réduire les coûts de découverte électronique. Advanced eDiscovery vous permet d’analyser les données non structurées dans Office 365, d’effectuer une révision plus efficace des documents et de prendre des décisions pour réduire la découverte électronique. Vous pouvez utiliser des données stockées dans Exchange Online, SharePoint Online, OneDrive entreprise, Skype entreprise, groupes Office 365 et Microsoft Teams. Vous pouvez effectuer une recherche de découverte électronique dans le centre de sécurité et de conformité pour rechercher du contenu dans des groupes, des boîtes aux lettres et des sites individuels, puis analyser les résultats de la recherche avec Advanced eDiscovery. Lorsque vous préparez des résultats de recherche pour analyse dans Advanced eDiscovery, la reconnaissance optique de caractères permet l’extraction de texte à partir d’images. Cette fonctionnalité permet d’appliquer les puissantes fonctionnalités d’analyse du texte d’Advanced eDiscovery à des fichiers image.
   
 Advanced eDiscovery rationalise et accélère le processus de révision des documents en identifiant les informations redondantes avec des fonctionnalités telles que la détection des doublons et l’analyse des threads de messagerie. La fonctionnalité de pertinence applique une technologie de codage prédictive pour identifier les documents pertinents. Advanced eDiscovery apprend vos décisions de marquage sur des exemples de documents et applique des techniques statistiques et d’auto-apprentissage pour calculer la pertinence de chaque document dans l’ensemble de données. Cela vous permet de vous concentrer sur des documents clés, de prendre des décisions rapides mais éclairées sur la stratégie de cas, de sélection de données et de hiérarchiser la révision.
   
- **Pourquoi eDiscovery avancée ?** Office 365 Advanced eDiscovery repose sur l’ensemble existant de fonctionnalités eDiscovery dans Office 365. Par exemple, vous pouvez utiliser la fonctionnalité de recherche du centre de sécurité &amp; conformité Office 365 pour effectuer une recherche initiale de toutes les sources de contenu de votre organisation afin d’identifier et de collecter les données susceptibles de concerner un cas juridique spécifique. Vous pouvez ensuite effectuer des analyses sur ces données en appliquant l’analyse de texte, l’apprentissage automatique, ainsi que les fonctionnalités de codage de pertinence/prédictive de Advanced eDiscovery. Cela peut aider votre organisation à traiter rapidement des milliers de messages électroniques, de documents et d’autres types de données pour trouver les éléments les plus pertinents pour un cas spécifique. Le jeu de données réduit peut ensuite être exporté absent (e) du Bureau à partir d’Office 365 pour être révisé. 
+ **Pourquoi eDiscovery avancée ?** Office 365 Advanced eDiscovery repose sur l’ensemble existant de fonctionnalités eDiscovery dans Office 365. Par exemple, vous pouvez utiliser la fonctionnalité de recherche du centre de sécurité &amp; conformité Office 365 pour effectuer une recherche initiale de toutes les sources de contenu de votre organisation afin d’identifier et de collecter les données susceptibles de concerner un cas juridique spécifique. Vous pouvez ensuite effectuer des analyses sur ces données en appliquant l’analyse de texte, l’apprentissage automatique, ainsi que les fonctionnalités de codage de pertinence/prédictive de Advanced eDiscovery. Cela peut aider votre organisation à traiter rapidement des milliers de messages électroniques, de documents et d’autres types de données pour trouver les éléments les plus pertinents pour un 
+ 
+> [!NOTE]
+> Advanced eDiscovery nécessite un abonnement Office 365 E3 avec le complément de conformité avancé ou un abonnement E5 pour votre organisation. Si vous ne disposez pas de ce plan et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). boitier. Le jeu de données réduit peut ensuite être exporté absent (e) du Bureau à partir d’Office 365 pour être révisé. 
   
 ## <a name="get-started"></a>Prise en main
 

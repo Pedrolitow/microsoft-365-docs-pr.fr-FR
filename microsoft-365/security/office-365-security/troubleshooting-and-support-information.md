@@ -1,5 +1,7 @@
 ---
 title: Dépannage et informations relatives au support
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique décrit les étapes de résolution des problèmes pour les utilisateurs finaux et les administrateurs, et fournit des informations sur la manière de contacter le support technique pour obtenir de l'aide.
-ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: efb71aab852b76b2b898419444bfea4144728514
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971622"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598171"
 ---
 # <a name="troubleshooting-and-support-information"></a>Dépannage et informations relatives au support
 
@@ -84,7 +86,7 @@ En tant qu’administrateur, vous pouvez être confronté à des problèmes avec
 
 Si vous avez besoin d’aide pour l’installation, la configuration ou la désinstallation du complément, veuillez contacter le support technique à l’aide du lien nouvelle demande de service sur la page support dans le centre d’administration 365 de Microsoft. Pour obtenir des options supplémentaires, notamment la soumission d’une demande de service via les options de téléphone et d’auto-assistance, consultez [l’aide et le support pour EOP](help-and-support-for-eop.md).
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Activer le complément Signaler le message](enable-the-report-message-add-in.md)
 

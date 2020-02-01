@@ -1,5 +1,7 @@
 ---
 title: Créer des alertes d’activité dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Ajoutez et gérez les alertes d’activité dans le centre de sécurité et de conformité pour qu’Office 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques dans Office 365.
-ms.openlocfilehash: 0cfe3edfcfcad50d6d04a1ef009498c0e13c7842
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 31807199345f4cf2ed6a4226fc407cb10c856c23
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078704"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596181"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Créer des alertes d’activité dans Office 365
 
@@ -43,9 +45,9 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
 ## <a name="create-an-activity-alert"></a>Créer une alerte d’activité
 
-1. Accédez à la page [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
+1. Accédez à [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
+2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
     
 3. Sur la **page alertes d’activité** , ![cliquez sur](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) ajouter une icône **nouveau**.
 
@@ -58,7 +60,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
     a. **Nom** : tapez un nom pour l’alerte. Les noms d’alerte doivent être uniques au sein de votre organisation.
     
-    b. **Description** (Facultatif) : Décrivez l’alerte, par exemple les activités et les utilisateurs suivis, ainsi que les utilisateurs auxquels sont envoyées les notifications par courrier électronique. Les descriptions offrent un moyen rapide et facile de décrire l’objectif de l’alerte aux autres administrateurs.
+    b. **Description** (facultatif) : Décrivez l’alerte, par exemple les activités et les utilisateurs suivis, ainsi que les utilisateurs auxquels sont envoyées les notifications par courrier électronique. Les descriptions offrent un moyen rapide et facile de décrire l’objectif de l’alerte aux autres administrateurs.
     
     c. **Type d’alerte** : Assurez-vous que l’option **personnalisée** est sélectionnée. 
 
@@ -68,7 +70,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
      - **Utilisateurs** : cliquez sur cette zone, puis sélectionnez un ou plusieurs utilisateurs. Si les utilisateurs de cette zone exécutent les activités que vous avez ajoutées à la zone **activités** , une alerte est envoyée. Laissez la zone **utilisateurs** vide pour envoyer une alerte lorsqu’un utilisateur de votre organisation effectue les activités spécifiées par l’alerte. 
 
-    e. **Envoyer cette alerte en** cliquant sur **Envoyer cette alerte**, puis cliquez dans la zone **destinataires** et tapez un nom pour ajouter un utilisateur qui recevra une notification par courrier électronique lorsqu’un utilisateur (spécifié dans la zone **utilisateurs** ) effectue une activité (spécifiée dans le Zone **activités** ). Notez que vous êtes ajouté à la liste des destinataires par défaut. Vous pouvez supprimer votre nom de cette liste.
+    e. **Envoyer cette alerte en** cliquant sur **Envoyer cette alerte**, puis cliquez dans la zone **destinataires** et tapez un nom pour ajouter des utilisateurs qui recevront une notification par courrier électronique lorsqu’un utilisateur (spécifié dans la zone **utilisateurs** ) effectue une activité (spécifiée dans la zone **activités** ). Notez que vous êtes ajouté à la liste des destinataires par défaut. Vous pouvez supprimer votre nom de cette liste.
     
 5. Cliquez sur **Enregistrer** pour créer l’alerte. 
     
@@ -84,7 +86,7 @@ Vous pouvez désactiver une alerte d’activité de sorte qu’aucune notificati
   
 1. Accédez à la vue [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
+2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
     
 3. Dans la liste des alertes d’activité pour votre organisation, cliquez sur l’alerte que vous souhaitez désactiver.
     
@@ -109,18 +111,18 @@ Pour réactiver une alerte activité, répétez ces étapes et cliquez sur le bo
     
     |**Lorsqu’un utilisateur effectue cette opération...**|**Créer une alerte pour cette activité**|**Groupe d’activités**|
     |:-----|:-----|:-----|
-    |Affiche un document sur un site.  <br/> |Fichier accédé  <br/> |Activités de fichiers et de dossiers  <br/> |
+    |Affiche un document sur un site.  <br/> |Fichier consulté  <br/> |Activités de fichiers et de dossiers  <br/> |
     |Modifie ou modifie un document.  <br/> |Fichier modifié  <br/> |Activités de fichiers et de dossiers  <br/> |
-    |Partage un document avec un utilisateur en dehors de votre organisation.  <br/> |Partager un fichier, un dossier ou un site  <br/> And  <br/> Invitation de partage créée  <br/> Pour plus d’informations, reportez-vous à [la rubrique utiliser l’audit de partage dans le journal d’audit Office 365](use-sharing-auditing.md).  <br/> |Activités de partage et d’accès aux demandes  <br/> |
+    |Partage un document avec un utilisateur en dehors de votre organisation.  <br/> |Partager un fichier, un dossier ou un site  <br/> And  <br/> Invitation de partage créée  <br/> Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit d’Office 365](use-sharing-auditing.md).  <br/> |Activités de demande d’accès et de partage  <br/> |
     |Charge ou télécharge un document.  <br/> |Fichier téléchargé  <br/> Et/ou  <br/> Fichier téléchargé  <br/> |Activités de fichiers et de dossiers  <br/> |
-    |Modifie les autorisations d’accès à un site.  <br/> |Autorisations de site modifiées  <br/> |Activités d’administration de site  <br/> |
+    |Modifie les autorisations d’accès à un site.  <br/> |Autorisations de site modifiées  <br/> |Activités d’administration des sites  <br/> |
 
     Le tableau suivant répertorie certaines activités courantes liées aux courriers électroniques dans Exchange Online.
 
     |**Lorsqu’un utilisateur effectue cette opération...**|**Créer une alerte pour cette activité**|**Groupe d’activités**|
     |:-----|:-----|:-----|
-    |Supprime définitivement un message électronique de sa boîte aux lettres.  <br/> |Messages supprimés de la boîte aux lettres  <br/> | Activités de boîte aux lettres Exchange  <br/> |
-    |Envoie un message électronique à partir d’une boîte aux lettres partagée.  <br/> |Message envoyé à l’aide des autorisations Envoyer en tant que  <br/> And  <br/> Message envoyé à l’aide des autorisations Envoyer de la part de  <br/> | Activités de boîte aux lettres Exchange  <br/> |
+    |Supprime définitivement un message électronique de sa boîte aux lettres.  <br/> |Messages supprimés de la boîte aux lettres  <br/> | Activités de la boîte aux lettres Exchange  <br/> |
+    |Envoie un message électronique à partir d’une boîte aux lettres partagée.  <br/> |Message envoyé à l’aide d’autorisations Envoyer en tant que  <br/> And  <br/> Message envoyé à l’aide d’autorisations Envoyer de la part de  <br/> | Activités de la boîte aux lettres Exchange  <br/> |
    
 - Vous pouvez également utiliser les cmdlets **New-ActivityAlert** et **Set-ActivityAlert** dans Security & Compliance Center PowerShell pour créer et modifier des alertes d’activité. Gardez les éléments suivants à l’esprit si vous utilisez ces cmdlets pour créer ou modifier des alertes d’activité : 
     

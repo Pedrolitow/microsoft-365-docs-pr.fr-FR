@@ -1,5 +1,7 @@
 ---
 title: Configurer votre client Office 365 pour une sécurité accrue
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de votre environnement Office 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
-ms.openlocfilehash: f5df416b71cd3b4885033786d83160644b6d7b1a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 01cf10818c83171fbbf30b5ec7f08871f0b9b328
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971452"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598201"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurer votre client Office 365 pour une sécurité accrue
 
@@ -126,6 +128,7 @@ Plus d’informations :
 
 Ces articles et guides fournissent des informations normatives supplémentaires pour la sécurisation de votre environnement Office 365 :
 
-- [Conseils de sécurité Microsoft pour les campagnes politiques, les organisations à but non lucratif et d’autres organisations agiles](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance) (vous pouvez utiliser ces recommandations dans n’importe quel environnement, en particulier les environnements en nuage uniquement)
+- [Conseils de sécurité Microsoft pour les campagnes politiques, les organisations à but non lucratif et d’autres organisations agiles](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (vous pouvez utiliser ces recommandations dans n’importe quel environnement, en particulier les environnements en nuage uniquement)
+
 
 - [Stratégies de sécurité et configurations recommandées pour les identités et les appareils](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (ces recommandations incluent de l’aide pour les environnements AD FS)

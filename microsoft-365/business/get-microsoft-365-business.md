@@ -1,5 +1,7 @@
 ---
 title: Obtenir Microsoft 365 entreprise auprès du centre de partenaires
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Découvrez comment acheter Microsoft 365 entreprise à partir du centre de partenaires Microsoft.
-ms.openlocfilehash: be38ba6869ed9419b2c34e6b4f86ce4aad6a6c52
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 18af5b0aee378784199e91c8254b50fd1104172b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320165"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593948"
 ---
 # <a name="get-microsoft-365-business"></a>Obtenir Microsoft 365 Business
 

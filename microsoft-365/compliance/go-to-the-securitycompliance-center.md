@@ -1,5 +1,7 @@
 ---
 title: Accéder au centre de conformité Office 365 Security &
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: Avant de pouvoir utiliser le centre de sécurité & conformité, vous devez disposer des autorisations appropriées. Votre compte professionnel ou scolaire doit se voir attribuer le rôle d’administrateur général Office 365 ou avoir été affecté à un ou plusieurs groupes de rôles Security & Compliance Center par un administrateur général.
-ms.openlocfilehash: 7dc7afb00750586b34921cce347bcf459c2cf474
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0ac56ad7fb4123b8cd2bd11cdcca7ee90d8126b0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807113"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596521"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>Accéder au centre de conformité Office 365 Security &
 

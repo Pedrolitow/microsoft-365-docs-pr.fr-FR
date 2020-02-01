@@ -1,6 +1,8 @@
 ---
 title: Enquêter et répondre automatiquement aux menaces dans Office 365
 keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menaces, avancé, menace, protection
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967987"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598761"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Enquêter et répondre automatiquement aux menaces dans Office 365
 
@@ -30,7 +32,7 @@ En fonction de votre abonnement, [Office 365 protection avancée contre les mena
 - Pour obtenir une vue d’ensemble du fonctionnement, voir [Automated Investigation and Response in Office 365](automated-investigation-response-office.md).
 
 > [!TIP]
-> Avez-vous Microsoft 365 E5 ou Microsoft 365 E3 avec l’Identity & protection contre les menaces ? Envisagez [d’essayer l’automatisation des recherches et de la réponse (air) dans la protection contre les menaces Microsoft](../mtp/mtp-autoir.md).
+> Avez-vous Microsoft 365 E5 ou Microsoft 365 E3 conjointement avec identité et protection contre les menaces ? Envisagez [d’essayer l’automatisation des recherches et de la réponse (air) dans la protection contre les menaces Microsoft](../mtp/mtp-autoir.md).
 
 Avec des fonctionnalités d’analyse et de réponse automatisées, lorsque certaines alertes sont déclenchées, un ou plusieurs règles de sécurité se déclenchent et le processus d’enquête automatisé commence. Pendant et après un processus d’enquête automatisé, votre équipe de sécurité peut effectuer les opérations suivantes :
 

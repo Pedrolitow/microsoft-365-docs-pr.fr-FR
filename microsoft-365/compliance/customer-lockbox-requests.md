@@ -1,5 +1,7 @@
 ---
 title: Demandes Customer Lockbox dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes de référentiel sécurisé du client qui vous permettent de contrôler la manière dont un technicien du support technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: a9f7f6116d4667e294666afc71747a6fad1efb33
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 915f8570271835939f0086f6c19af41a42d4f0d0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233765"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595501"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Référentiel sécurisé du client dans Office 365
 
@@ -171,7 +173,7 @@ Les actions effectuées par un technicien Microsoft après l’approbation d’u
 | Activité   | Nom de l’activité effectuée par l’ingénieur Microsoft.|
 | Item       | \<éliminer\>                                             |
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 #### <a name="which-office-365-services-does-customer-lockbox-apply-to"></a>Quels sont les services Office 365 auxquels s’applique le référentiel client ?
 

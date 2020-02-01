@@ -1,5 +1,7 @@
 ---
 title: Différences entre les résultats de recherche de découverte électronique estimée et réelle dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier en fonction des recherches exécutées avec les outils eDiscovery dans Office 365. '
-ms.openlocfilehash: dfa6895f464e1a10f30bd642ef6b11e0869a7e5d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078541"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595249"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Différences entre les résultats de recherche de découverte électronique estimée et réelle dans Office 365
 
@@ -59,7 +61,7 @@ Voici les raisons de ces différences :
     
     Lors de l’utilisation de l’outil de recherche de contenu dans le centre de sécurité & conformité, vous avez la possibilité d’inclure des éléments non indexés dans l’estimation de la recherche. Le nombre d’éléments non indexés renvoyés par la recherche est affiché dans le volet d’informations avec les autres résultats estimés de la recherche. Tous les éléments non indexés seraient également inclus dans la taille totale des résultats de recherche estimés. Lorsque vous exportez des résultats de recherche, vous avez la possibilité d’inclure ou de ne pas inclure les éléments non indexés. La manière dont vous configurez ces options peut entraîner des différences entre les résultats de recherche estimés et ceux qui sont téléchargés. 
     
-- **Exportation des résultats d’une recherche de contenu incluant tous les emplacements de contenu** : si la recherche à partir de laquelle vous exportez les résultats provient de la recherche de tous les emplacements de contenu de votre organisation, seuls les éléments de contenu non indexés contenant les éléments qui correspondent aux critères de recherche seront exportés. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Toutefois, les éléments non indexés de tous les emplacements de contenu (même ceux qui ne contiennent pas d’éléments qui correspondent à la requête de recherche) sont inclus dans les résultats de recherche estimés. 
+- **Exportation des résultats d’une recherche de contenu incluant tous les emplacements de contenu** : si la recherche dont vous exportez les résultats provient de la recherche de tous les emplacements de contenu de votre organisation, seuls les éléments non indexés des emplacements de contenu contenant des éléments correspondant aux critères de recherche seront exportés. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Toutefois, les éléments non indexés de tous les emplacements de contenu (même ceux qui ne contiennent pas d’éléments qui correspondent à la requête de recherche) sont inclus dans les résultats de recherche estimés. 
     
     Par ailleurs, si la recherche dont vous exportez les résultats à partir d’emplacements de contenu spécifiques inclus, les éléments non indexés (qui ne sont pas exclus par les critères de recherche) de tous les emplacements de contenu spécifiés dans la recherche seront exportés. Dans ce cas, le nombre estimé d’éléments non indexés et le nombre d’éléments non indexés réellement exportés doivent être identiques.
     

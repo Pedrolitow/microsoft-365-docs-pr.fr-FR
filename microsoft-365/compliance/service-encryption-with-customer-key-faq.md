@@ -1,5 +1,7 @@
 ---
 title: 'FAQ : chiffrement de service avec une clé client pour Office 365'
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Outre le chiffrement de base, le chiffrement au niveau du volume qui est activé via BitLocker et le gestionnaire de clés distribuées (DKM), Office 365 offre une couche de chiffrement supplémentaire au niveau de l’application pour le contenu client dans Office 365, y compris les données d’Exchange En ligne, Skype entreprise, SharePoint Online et OneDrive entreprise. Il s’agit du chiffrement de service.
-ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: a2285db4bd5ff5594c6b766dcad8909f0442d3ce
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685855"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597451"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>FAQ : chiffrement de service avec une clé client pour Office 365
 

@@ -1,5 +1,7 @@
 ---
 title: Ajouter des données d’un ensemble de révision à un autre ensemble de révision
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 62acfd2240801e59447209c7cb1e41912d3dcf4d
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 1c0f174b29d49ec1d07c128f709ee3279c1b53ef
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256751"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594047"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Ajouter des données à un jeu de révision à partir d’un autre ensemble de révision
 

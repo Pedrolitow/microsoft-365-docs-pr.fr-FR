@@ -1,5 +1,7 @@
 ---
 title: Migration de Microsoft 365 Entreprise vers Microsoft 365 E3
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise de Microsoft 365 Business vers Microsoft 365 E3.
-ms.openlocfilehash: 1cf6aa741c7f0b427a434d472df7169ef37c5418
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 2515c2d56727b9a8be643dea76e150eeaadce5c9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558041"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593693"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migration de Microsoft 365 Entreprise vers Microsoft 365 E3
 
@@ -48,7 +50,7 @@ Ce tableau présente les différences entre Microsoft 365 entreprise et Microsof
 |:-------|:-----|:-----|
 | **En local**       | | | 
 | Windows 10    | Windows 10 Business  |    Windows 10 entreprise E3| 
-| Applications Office *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
+| Applications Office *  | [Office 365 Business](#office-365-business)   | Office 365 ProPlus | 
 | **Applications de productivité sur le Cloud**       | | | 
 | Exchange Online et Outlook   | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité   | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
 | Équipes | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus avec Microsoft 365 E3](./media/check-mark.png) | 
@@ -139,7 +141,7 @@ Vous n’avez pas besoin d’effectuer des modifications dans votre configuratio
 Microsoft 365 Business comprend Windows 10 Business, que vous pouvez installer avec Windows AutoPilot. Lorsque vous migrez vers Microsoft 365 E3, chaque licence utilisateur comprend Windows 10 entreprise E3, que vous pouvez également installer avec Windows AutoPilot.
 
 <a name="office-365-business"></a>
-### <a name="office-365-business"></a>Office 365 Business
+### <a name="office-365-business"></a>Office 365 Business
 
 Votre client Office 365 Business installé sur vos appareils commencera automatiquement à utiliser les fonctionnalités d’Office 365 ProPlus. Après la migration, vous pouvez désormais utiliser les éléments suivants :
 
