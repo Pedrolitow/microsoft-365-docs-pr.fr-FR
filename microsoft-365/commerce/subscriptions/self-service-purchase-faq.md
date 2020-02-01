@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594098"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661905"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
@@ -101,7 +101,7 @@ La personne qui achète l’abonnement par le biais d’un achat en libre-servic
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>Quelles sont les fonctionnalités dont dispose un administrateur pour les achats en libre-service ?
 
-Les administrateurs peuvent afficher tous les achats en libre-service effectués dans leur organisation dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, l’historique des commandes, le prix d’achat et les utilisateurs affectés pour chaque achat en libre-service. Si cela est nécessaire pour leur organisation, les administrateurs pourront désactiver les achats en libre-service sur une base par produit via PowerShell. Les administrateurs ont les mêmes stratégies de gestion des données et d’accès que les produits achetés via l’achat en libre-service ou de manière centralisée.
+Les administrateurs peuvent afficher tous les achats en libre-service effectués dans leur organisation dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, l’historique des commandes, le prix d’achat et les utilisateurs affectés pour chaque achat en libre-service. Dans le centre d’administration Power Platform, les administrateurs peuvent également afficher la capacité des achats en libre-service. Si cela est nécessaire pour leur organisation, les administrateurs pourront désactiver les achats en libre-service sur une base par produit via PowerShell. Les administrateurs ont les mêmes stratégies de gestion des données et d’accès que les produits achetés via l’achat en libre-service ou de manière centralisée.
 
 Les administrateurs peuvent également contrôler si les utilisateurs de leur organisation peuvent faire des achats en libre-service. Pour plus d’informations, voir [use AllowSelfServicePurchase pour le module MSCommerce PowerShell](allowselfservicepurchase-powershell.md).
 
