@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 5ec30692d5721c316c205cf8b561e59cd6e65e0b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628090"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602311"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
@@ -70,7 +70,7 @@ Découvrez les avantages de HIPAA et du Hi-Tech sur le Cloud Microsoft : [lire 
 
 Commencez à tirer parti des avantages du Cloud pour les solutions de données d’intégrité avec le plan de sécurité et de conformité Azure (données d’intégrité HIPAA/HITRUST et IA). Ce plan fournit des outils et des conseils pour vous aider à créer des solutions HIPAA/HITRUST dès aujourd’hui.
 
-[Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
+[Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://aka.ms/healthblueprint)
 
 ## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
