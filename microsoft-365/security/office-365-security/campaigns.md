@@ -1,5 +1,7 @@
 ---
 title: Affichages des campagnes dans Office 365 - Protection avancée contre les menaces
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez Campaign Views dans Office 365 - Protection avancée contre les menaces.
-ms.openlocfilehash: 2d43b73a613ad6399a151a6bda39f236c7c913e8
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 65ae346fc4ffdcc502c7f479d7d92753cdb5b5bc
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962759"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599761"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Campaign Views dans Office 365 - Protection avancée contre les menaces
 

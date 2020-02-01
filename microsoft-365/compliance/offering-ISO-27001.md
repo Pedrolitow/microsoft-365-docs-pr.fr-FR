@@ -1,10 +1,12 @@
 ---
 title: Normes de gestion de la sécurité des informations ISO/IEC 27001:2013
 description: Microsoft est certifié pour son implémentation en matière des normes de gestion pour la sécurité des informations.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,14 +14,14 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: efedbdd8230b5fac81b59ca51c0fe863ab4f0c2a
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: d88ef57ea9340d95073db7f5ddd4423d5275c840
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260112"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602251"
 ---
-# <a name="compliance-offerings-isoiec-270012013-information-security-management-standards"></a>Offre de conformité liées aux normes de gestion de la sécurité des informations ISO/IEC 27001:2013
+# <a name="isoiec-270012013-information-security-management-standards"></a>Normes de gestion de la sécurité des informations ISO/IEC 27001:2013
 
 ## <a name="isoiec-27001-overview"></a>Présentation de la norme ISO/IEC 27001
 

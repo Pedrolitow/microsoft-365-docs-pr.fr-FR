@@ -4,15 +4,17 @@ description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9f0d1889e625ceba52f3e91ee950041f82e9750e
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 5aee7c835643fab94cc7e233ea005c3f3a1b921c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074766"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602801"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Surveillance et opérations du bureau géré Microsoft
 
@@ -83,7 +85,7 @@ Réseau (proxy, inspection de paquets, VPN)  | Conseillez et planifiez avec les 
 Comptes de service |-Implémenter, stocker en toute sécurité et gérer les informations d’identification.<br> -Communiquer un accès non autorisé ou utiliser ces informations d’identification à votre équipe des opérations de sécurité. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-N’attribuez pas de stratégie, d’authentification multifacteur, d’accès conditionnel ou de déploiement d’application aux comptes de service de bureau géré Microsoft.<br>-Ne pas réinitialiser le mot de passe ou utiliser les informations d’identification.<br>-Ouvrez une demande de support gravité C pour Microsoft Managed Desktop Operations si l’activité suspecte est observée dans les journaux d’audit Intune ou Azure, associés à ces comptes de service.
 Groupes d’appareils | : Implémentez et gérez l’appartenance des appareils dans les groupes de bureau gérés Microsoft.<br>-Utilisez les groupes de bureau gérés Microsoft pour gérer l’attribution et la publication de la configuration et des mises à jour sur les appareils. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas l’appartenance à un groupe de bureau géré Microsoft.<br>-Utilisez uniquement les groupes pour attribuer des certificats d’entreprise pour des services tels que le VPN, Windows Hello pour l’entreprise ou le chiffrement du courrier électronique ou la configuration du profil Wi-Fi d’entreprise.<br>-Où la co-gestion existe, excluez explicitement tous les groupes de bureau gérés par Microsoft lors du déploiement du client gestionnaire de configuration.
 Stratégies |  -Implémenter et gérer les stratégies de bureau géré Microsoft qui régissent l’état de configuration des appareils au sein du service.<br>-Déployez les mises à jour, les stratégies ou les fenêtres, de manière incrémentielle, à l’aide de groupes d’appareils.<br> -Exclure explicitement le ciblage des groupes de bureau gérés non-Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas ou n’affectez pas de stratégies de bureau géré Microsoft aux appareils ou aux utilisateurs qui ne sont pas gérés par le service bureau géré Microsoft.
-Microsoft Defender – Protection avancée contre les menaces   | Surveillez et examinez les appareils dans l’étendue du service bureau géré Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé
+Microsoft Defender - Protection avancée contre les menaces   | Surveillez et examinez les appareils dans l’étendue du service bureau géré Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé
 Microsoft Store pour Entreprises |  Configurez et gérez le profil Windows AutoPilot pour le service de bureau géré Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas la configuration du profil Windows AutoPilot du bureau géré Microsoft ou ajoutez/supprimez des appareils attribués.
 Certificats | | -Créez une demande de prise en charge de 60 jours avant l’expiration d’un certificat, en demandant des informations pour une modification de configuration planifiée, y compris des détails de la configuration, une étendue, une chronologie et d’autres détails pertinents à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Mettez à jour tous les certificats requis pour configurer des profils de certificats, des profils VPN et des profils Wi-Fi.
 

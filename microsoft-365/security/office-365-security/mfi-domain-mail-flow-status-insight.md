@@ -1,5 +1,7 @@
 ---
 title: Informations sur l’état du flux de courrier des principaux domaines
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur l’état du flux de messagerie du domaine le plus approfondi dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: b193eea87a76ad45e91c98511627b24b04d48fb5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1fb22ac1543c490dcbd316464803f5393003d503
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079963"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598881"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Informations sur l’état du flux de courrier des principaux domaines
 

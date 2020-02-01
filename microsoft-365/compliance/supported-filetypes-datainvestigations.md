@@ -1,5 +1,7 @@
 ---
 title: Types de fichiers pris en charge dans les enquêtes de données (aperçu)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 60e4baf2df94793b532fb4035a34ca3c7a5cd332
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 055104a5b7f60fe54b421e7236143aa9af08b57f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079703"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601431"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Types de fichiers pris en charge dans les enquêtes de données (aperçu)
 
@@ -54,7 +56,7 @@ Les enquêtes de données (aperçu) prennent en charge de nombreux types de fich
 | application/x-Msaccess | Document | Oui | Oui | Oui | Non | . mdb |
 | application/x-mspublisher | Document | Oui | Oui | Oui | Non | . pub |
 | application/x-rar-Compressed | Archive/conteneur | Non | Non | Non | Oui | . rar |
-| application/code postal | Archive/conteneur | Non | Non | Non | Oui | . zip |
+| application/code postal | Archive/conteneur | Non | Non | Non | Oui | .zip |
 | image/BMP | Image | Oui | Oui | Oui | Non | .bmp |
 | image/EMF | Image | Oui | Oui | Oui | Non | . EMF |
 | image/gif | Document | Oui | Oui | Oui | Non | .gif |
@@ -63,7 +65,7 @@ Les enquêtes de données (aperçu) prennent en charge de nombreux types de fich
 | image/TIFF | Image | Oui | Oui | Oui | Non | . TIF |
 | image/vnd. dwg | Document | Oui | Oui | Oui | Non | . dwg ;. format |
 | image/WMF | Document | Oui | Oui | Oui | Non | . wmf |
-| Message/RFC822 | Productivité/collaboration | Non | Non | Non | Non | . eml |
+| Message/RFC822 | Productivité/collaboration | Non | Non | Non | Non | .eml |
 | texte/CSV | Document | Oui | Oui | Oui | Non | . csv |
 | texte/html | Document | Oui | Oui | Oui | Non | . html ;. shtml ;. htm |
 | text/plain | Document | Oui | Oui | Oui | Non | . txt ;. css ;. con ;. pl ;. csv ;. dat |

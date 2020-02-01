@@ -1,5 +1,7 @@
 ---
 title: Configurer Azure Rights Management pour la version précédente de chiffrement de messages Office 365.
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La version précédente d’Office 365 le chiffrement de messages dépend de Microsoft Azure Rights Management (anciennement appelé Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: a6ba18982a65ff9687374b9e5dc370646817d96d
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: be0fad248465927ee7cc59b31a36e65ce5c053db
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38685808"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601481"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Configurer Azure Rights Management pour la version précédente de chiffrement de messages Office 365.
 
@@ -59,7 +61,7 @@ Un publication approuvé est un fichier XML qui contient des informations sur le
 
 2. Choisissez l’URL de partage de clés correspondant à l’emplacement géographique de votre organisation Office 365 :
 
-|**Emplacement**|**URL d’emplacement de partage de clé**|
+|**Location**|**URL d’emplacement de partage de clé**|
 |:-----|:-----|
 |Amérique du Nord  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Union européenne  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
@@ -128,4 +130,4 @@ Une fois que vous avez configuré votre organisation pour utiliser les nouvelles
   
 [Détails techniques de référence sur le chiffrement dans Office 365](technical-reference-details-about-encryption.md)
   
-[Qu’est-ce que Azure Rights Management ?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+[Qu’est-ce que Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)

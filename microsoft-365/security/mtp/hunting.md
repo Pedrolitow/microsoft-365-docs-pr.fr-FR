@@ -5,6 +5,8 @@ keywords: Microsoft 365, M365, protection Microsoft contre les menaces, MTP, cen
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 manager: dansimp
@@ -12,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: c2bb0b088a40511eea36348d39790fd5e88fa40b
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 9f647ba306215d20d6fb1d0c7dbfd8d3b96fb909
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210159"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600241"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>Recherche de menaces dans Microsoft 365
 
@@ -33,7 +35,7 @@ Les fonctionnalités de recherche de menaces dans le centre de sécurité Micros
 
 [Activez la protection contre les menaces Microsoft](mtp-enable.md) pour obtenir l’interface de recherche avancée de la chasse directement dans le centre de sécurité Microsoft 365. Grâce à la [chasse avancée](advanced-hunting-overview.md), vous pouvez créer des requêtes uniques qui examinent les données provenant de Microsoft Defender ATP, qui couvrent les données des appareils intégrés et de l’atp Office 365, qui fournissent des données à partir de messages électroniques.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble de la chasse avancée](advanced-hunting-overview.md)
 - [Vue d’ensemble de la Protection Microsoft contre les menaces](microsoft-threat-protection.md)
 - [Activer la Protection Microsoft contre les menaces](mtp-enable.md)

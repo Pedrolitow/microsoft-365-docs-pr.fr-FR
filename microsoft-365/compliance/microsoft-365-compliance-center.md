@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du centre de conformité Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le centre de conformité Microsoft 365, notamment ce qu’il contient, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f1a779037b283d2b03b48890dc8eb8423d90c147
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: a6fd689240b15fa915c609291259999ae8a31ce3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247581"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602781"
 ---
 # <a name="overview-of-the-microsoft-365-compliance-center"></a>Vue d’ensemble du centre de conformité Microsoft 365
 
@@ -70,7 +72,7 @@ Outre les liens des cartes sur la page d’accueil, vous verrez un volet de navi
 
 - Pour visiter le centre de conformité Microsoft 365, en tant qu’administrateur général, administrateur de conformité ou administrateur de données [https://compliance.microsoft.com](https://compliance.microsoft.com) de conformité, accédez à et connectez-vous.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Pourquoi est-ce que j’ai adopté le centre de sécurité & conformité d’Office 365 pour effectuer certaines tâches, telles que la définition de certaines stratégies ?**
 

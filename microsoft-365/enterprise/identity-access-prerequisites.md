@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 667dfe355aca61eff99a85c2a2c29ee0b57e74c5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030959"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601021"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Tâches préalables à l’implémentation de stratégies d’accès aux identités et aux appareils
 
@@ -80,13 +82,13 @@ Les clients suivants sont recommandés lorsqu’une stratégie de documents séc
 
 |Plate-forme|Word/Excel/PowerPoint|OneNote|Application OneDrive|Application SharePoint|Client de synchronisation OneDrive|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|Pris en charge|Pris en charge|N/D|S/O|Préversion<sup>*</sup>|
-|Windows 8.1|Pris en charge|Pris en charge|N/D|S/O|Préversion<sup>*</sup>|
-|Windows 10|Pris en charge|Pris en charge|N/D|S/O|Préversion<sup>*</sup>|
+|Windows 7|Pris en charge|Pris en charge|N/A|N/A|Préversion<sup>*</sup>|
+|Windows 8.1|Pris en charge|Pris en charge|N/A|N/A|Préversion<sup>*</sup>|
+|Windows 10|Pris en charge|Pris en charge|N/A|N/A|Préversion<sup>*</sup>|
 |Windows Phone 10|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
-|Android|Pris en charge|Pris en charge|Pris en charge|Pris en charge|S/O|
-|iOS|Pris en charge|Pris en charge|Pris en charge|Pris en charge|S/O|
-|OS|Préversion publique|Préversion publique|N/D|S/O|Non prise en charge|
+|Android|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
+|iOS|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
+|OS|Préversion publique|Préversion publique|N/A|N/A|Non prise en charge|
 |Linux|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
 
 <sup>*</sup>En savoir plus sur l’utilisation de l’accès conditionnel avec le [client de synchronisation OneDrive](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).

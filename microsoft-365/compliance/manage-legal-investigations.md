@@ -1,5 +1,7 @@
 ---
 title: Gérer les enquêtes juridiques dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Utilisez des cas eDiscovery dans le centre de sécurité & conformité dans Office 365 pour gérer l’enquête légale de votre organisation. Si vous disposez d’un abonnement E5, vous pouvez analyser les données de cas en utilisant les fonctionnalités d’analyse de texte, d’apprentissage automatique et de codage prédictif de Advanced eDiscovery.
-ms.openlocfilehash: ce476c93e9c33d949c5615f872b8399a97420bba
-ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
+ms.openlocfilehash: f3d51fbd0df6d4bf4c88f5efef53a3c7f11e190c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "38685678"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600531"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Gérer les enquêtes juridiques dans Office 365
 
@@ -52,7 +54,7 @@ La solution eDiscovery avancée de Microsoft 365 repose sur les fonctionnalités
 
 Advanced eDiscovery nécessite un abonnement E5 pour votre organisation Office 365 ou Microsoft 365. Par ailleurs, les utilisateurs disposant d’une licence E3 ont besoin de l’abonnement de complément de conformité avancé afin que vous puissiez les gérer en tant que dépositaires dans un cas avancé de découverte électronique.
 
-Voici une présentation rapide du flux de travail intégré dans Advanced eDiscovery. Pour plus d’informations, reportez-vous à [la rubrique vue d’ensemble de la solution EDiscovery avancée dans Microsoft 365](overview-ediscovery-20.md).
+Voici une présentation rapide du flux de travail intégré dans Advanced eDiscovery. Pour plus d’informations, voir [vue d’ensemble de la solution avancée d'eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
 
 - [Création d’un cas](create-new-ediscovery-case.md) pour commencer
 

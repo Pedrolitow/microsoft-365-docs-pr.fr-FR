@@ -1,5 +1,7 @@
 ---
 title: Télécharger des rapports existants dans le &amp; Centre de sécurité conformité
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Découvrez comment télécharger un ou plusieurs rapports existants dans le centre de &amp; sécurité conformité.
-ms.openlocfilehash: f6d6bf607a93a05807ec34f5330158740fa38541
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea5af9aad268b4a7d540e70cc8a1f64f303159cb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079134"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599431"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Télécharger des rapports existants dans le &amp; Centre de sécurité conformité
 
@@ -35,7 +37,7 @@ Dans le [Centre &amp; de sécurité conformité](https://protection.office.com),
     
 3. Cliquez sur **Télécharger le rapport**, puis cliquez sur **Fermer**.
     
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

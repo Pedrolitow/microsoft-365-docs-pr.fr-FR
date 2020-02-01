@@ -1,5 +1,7 @@
 ---
 title: 'Atelier de directeur de la sécurité des informations (CISO), module 2 : gestion de la sécurité'
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 4b1403b35c9cea10c87f528c6f09c2948f316f27
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: ebe1797e0a6a4b7f8bafa28b57feedbd96324093
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517583"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599711"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>Module d’atelier CISO 2 : gestion de la sécurité 
 

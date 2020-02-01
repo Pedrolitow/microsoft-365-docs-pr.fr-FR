@@ -1,5 +1,7 @@
 ---
 title: Protéger les informations
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Page d’accueil pour la protection des informations
-ms.openlocfilehash: d02446468eec5c1c0ae4e627ccfd24d1b857f594
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f5153373d73ec542f2a21561ce32c37368ff02e4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685792"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601671"
 ---
 # <a name="protect-information"></a>Protéger les informations
 
@@ -27,7 +29,7 @@ Microsoft 365 et Office 365 incluent des fonctionnalités qui peuvent être appl
 
 |**Fonctionnalité**|**Plus d’informations**|
 |:-----|:-----|
-|[Étiquettes de niveau de confidentialité](sensitivity-labels.md) <br/> |Avec des étiquettes de confidentialité, vous pouvez classer et protéger votre contenu sensible. Les options de protection incluent les étiquettes, les filigranes et le chiffrement. Les étiquettes de sensibilité utilisent Azure information protection. Si vous utilisez des étiquettes Azure information protection, nous vous recommandons, pour l’instant, de créer de nouvelles étiquettes dans d’autres centres d’administration jusqu’à ce que vous ayez terminé la migration. Consultez la rubrique [migration Azure information protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). <br/> Les [étiquettes de rétention](retention-policies.md) sont différentes des étiquettes de sensibilité. Les étiquettes de rétention vous permettent de conserver ou de supprimer du contenu en fonction des stratégies que vous définissez. Ces organismes aident les organisations à se conformer aux réglementations sectorielles et aux politiques internes.|
+|[Étiquettes de confidentialité](sensitivity-labels.md) <br/> |Avec des étiquettes de confidentialité, vous pouvez classer et protéger votre contenu sensible. Les options de protection incluent les étiquettes, les filigranes et le chiffrement. Les étiquettes de sensibilité utilisent Azure information protection. Si vous utilisez des étiquettes Azure information protection, nous vous recommandons, pour l’instant, de créer de nouvelles étiquettes dans d’autres centres d’administration jusqu’à ce que vous ayez terminé la migration. Consultez la rubrique [migration Azure information protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). <br/> Les [étiquettes de rétention](retention-policies.md) sont différentes des étiquettes de sensibilité. Les étiquettes de rétention vous permettent de conserver ou de supprimer du contenu en fonction des stratégies que vous définissez. Ces organismes aident les organisations à se conformer aux réglementations sectorielles et aux politiques internes.|
 |[Protection contre la perte de données](data-loss-prevention-policies.md) (DLP)  <br/> |Avec les stratégies DLP, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365. Les stratégies de protection contre la perte de données peuvent utiliser des étiquettes de confidentialité et des types d’informations sensibles pour identifier les informations sensibles. <br/> |
 |[Types d’informations sensibles](what-the-sensitive-information-types-look-for.md) <br/> |Microsoft 365 inclut de nombreux types d’informations sensibles que vous pouvez utiliser dans les stratégies DLP et pour une classification automatique avec des étiquettes de sensibilité et de rétention. Les types d’informations sensibles peuvent également être utilisés avec le [scanneur Azure information protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) pour classer et protéger des fichiers sur site. Les types d’informations sensibles définissent la façon dont le processus automatisé reconnaît des types d’informations spécifiques, tels que les numéros de service d’intégrité et les numéros de carte de crédit.   <br/> |
 |[Chiffrement de messages Office 365](ome.md) (OME)  <br/> |Avec le chiffrement de messages Office 365, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. Le chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo !, Gmail et d’autres services de messagerie. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu du message. <br/> |

@@ -1,5 +1,7 @@
 ---
 title: Déclassement des outils eDiscovery hérités
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,18 +12,18 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Office 365 Advanced eDiscovery v 1.0 sont également en cours de retrait dans la même période.
-ms.openlocfilehash: 08f568a82096efb143ff5c9fd87011a3d3029e42
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210059"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600561"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Déclassement des outils eDiscovery hérités
 
 Au fil des années, Microsoft a fourni des outils eDiscovery qui vous permettent de rechercher, de prévisualiser et d’exporter du contenu de courrier électronique à partir d’Exchange Online. Toutefois, ces outils ne vous offrent plus une méthode efficace pour rechercher du contenu non-Exchange dans d’autres services Office 365, tels que les groupes SharePoint Online et Office 365. Pour résoudre ce cas, Microsoft propose d’autres outils eDiscovery qui vous permettent de rechercher un large éventail de contenus Office 365. Nous travaillons et nous avons difficilement incorporer les fonctionnalités eDiscovery les plus récentes et les plus puissantes dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com). Cela permet aux organisations de répondre aux demandes juridiques, internes et autres documents pour le contenu de nombreux services Office 365, y compris Exchange Online.
 
-À la suite de cette nouvelle fonctionnalité eDiscovery améliorée dans le centre de conformité Microsoft 365, nous retirons les fonctionnalités et fonctionnalités liées à la découverte électronique suivantes liées à la recherche de contenu de messagerie :
+Grâce à cette nouvelle fonctionnalité eDiscovery améliorée dans le centre de conformité Microsoft 365, nous retirons les fonctionnalités et fonctionnalités liées à la découverte électronique suivantes associées à la recherche de contenu de messagerie dans Exchange Online et Office 365 :
 
 - [Découverte électronique inaltérable](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) et [conservation](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) inaltérable dans le centre d’administration Exchange.
 
@@ -208,7 +210,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
-<td>Néant</td>
+<td>Aucun</td>
 <td>Il n’existe pas de remplacement direct de cette fonctionnalité, car elle ne fournit pas d’accès à tous les services Microsoft 365. Consultez le Forum aux questions ci-dessous pour obtenir d’autres solutions.</td>
 </tr>
 </tbody>

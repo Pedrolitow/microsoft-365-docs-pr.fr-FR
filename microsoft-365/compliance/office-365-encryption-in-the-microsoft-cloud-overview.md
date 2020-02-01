@@ -1,5 +1,7 @@
 ---
 title: Chiffrement dans Microsoft Cloud
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Vue d’ensemble du chiffrement dans Microsoft Cloud.
-ms.openlocfilehash: 1ca3d1711589ab2d65a27a8d1eeb6da265ce727b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11cce463cf953bd9f8ea0df61e3fe97b356608eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690332"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601821"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Chiffrement dans Microsoft Cloud
 
@@ -40,8 +42,8 @@ FIPS 140-2 est une norme conçue spécifiquement pour la validation des modules 
 Microsoft certifie les modules de chiffrement sous-jacents utilisés dans nos services Cloud avec chaque nouvelle version du système d’exploitation Windows :
 
 - Azure et le gouvernement des États-Unis Azure
-- Dynamics 365 et Dynamics 365 gouvernement américain
-- Office 365, Office 365 gouvernement américain et Office 365-défense du gouvernement américain
+- Dynamics 365 et Dynamics 365 U.S. Governement
+- Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense
 
 Le chiffrement des données client Office 365 au repos est assuré par plusieurs technologies côté service, notamment BitLocker, DKM, le chiffrement de service de stockage Azure et le chiffrement de service dans Exchange Online, Skype entreprise, OneDrive entreprise et SharePoint Online. Le chiffrement de service Office 365 inclut une option permettant d’utiliser des clés de chiffrement gérées par le client qui sont stockées dans Azure Key Vault. Cette option de clé gérée par le client, appelée [clé client Office 365](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697), est disponible pour Exchange Online, SharePoint Online, Skype entreprise et OneDrive entreprise.
 

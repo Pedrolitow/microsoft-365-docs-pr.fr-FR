@@ -1,5 +1,7 @@
 ---
 title: Alerts in the Office 365 Security &amp; Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,12 +17,12 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Découvrez les alertes que vous pouvez définir pour faciliter la sécurité dans Office 365.
-ms.openlocfilehash: a04514b272c4fbe87b56b8475d4c57a3222a5387
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 24b00eab79c9dbc67e913ea05a7d8b34b54293c4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080153"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599941"
 ---
 # <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
 
@@ -32,15 +34,15 @@ Les alertes dans Office 365 sont dans le &amp; Centre de sécurité conformité.
   
  **Pour accéder directement au centre de &amp; sécurité conformité, procédez comme suit :**
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel. 
+2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel. 
     
 3. Dans le volet de gauche, cliquez sur **alertes** pour afficher les fonctionnalités des alertes. 
     
  **Pour accéder au centre de &amp; sécurité conformité à l’aide du lanceur d’applications Office 365 :**
   
-1. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel. 
+1. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel. 
     
 2. Cliquez sur le lanceur d’applications dans le coin supérieur gauche, puis cliquez sur **conformité de sécurité &amp; **.
     

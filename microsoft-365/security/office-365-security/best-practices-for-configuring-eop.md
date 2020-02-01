@@ -1,5 +1,7 @@
 ---
 title: Meilleures pratiques pour la configuration de EOP et Office 365 ATP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Pour vous donner un maximum de chances de succès et éviter les erreurs courantes de configuration, suivez ces recommandations relatives aux meilleures pratiques pour Exchange Online Protection (EOP).
-ms.openlocfilehash: 3146cb9a5141dfe87e9f31791c107be296121126
-ms.sourcegitcommit: e27fe0d97b9c446b1cc80561f7190d08c12d9e0c
+ms.openlocfilehash: 053b5f551be528e7eedb3c218bb1e49ab6b8be91
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39262697"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599741"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Meilleures pratiques pour la configuration de EOP et Office 365 ATP
 

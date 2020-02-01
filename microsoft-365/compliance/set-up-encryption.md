@@ -1,5 +1,7 @@
 ---
 title: Configurer le chiffrement dans Office 365 Entreprise
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: Avec Office 365, certaines fonctionnalités de chiffrement sont activées par défaut ; d’autres fonctionnalités peuvent être configurées pour répondre à certaines exigences légales ou de conformité.
-ms.openlocfilehash: f758bc026ee1ef8b071b92d29c950c3f436305a3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c52610b1fb3bb1fd727e05c950a3354f25a93ace
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685781"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601471"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>Configurer le chiffrement dans Office 365 Entreprise
 

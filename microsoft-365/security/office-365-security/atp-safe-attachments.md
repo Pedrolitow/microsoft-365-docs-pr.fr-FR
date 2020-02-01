@@ -1,5 +1,7 @@
 ---
 title: Pièces jointes sécurisées ATP Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: La fonctionnalité pièces jointes fiables permet de vérifier le temps de cliquer sur les pièces jointes des messages électroniques. Utilisez des pièces jointes fiables pour protéger votre organisation des fichiers malveillants envoyés ou reçus par courrier électronique.
-ms.openlocfilehash: 7f646895ec7345b96fb35ac1119788b14badc87d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c95287b3dd05cce28bad6761ca7e69ce9cc2f914
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971922"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599811"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Pièces jointes sécurisées ATP Office 365
 

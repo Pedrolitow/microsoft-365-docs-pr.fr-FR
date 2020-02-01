@@ -1,5 +1,7 @@
 ---
 title: Garantie de service dans le centre de sécurité & conformité
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Télécharger des audits tiers, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, FINRA et FedRAMP lorsque vous utilisez Office 365.
-ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080364"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601521"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantie de service dans le centre de sécurité & conformité
 
@@ -47,15 +49,15 @@ Vous pouvez également découvrir comment Office 365 peut aider les clients à s
  Les membres de l' **abonnement O365** peuvent accéder à la section assurance de service dans le centre de protection Office 365 par défaut si l’accès basé sur les rôles service assurance n’a pas été implémenté dans votre abonnement. Service assurance fournit des rapports et des documents qui décrivent les pratiques de sécurité Microsoft pour les données client stockées dans Office 365. Il fournit également des rapports d’audit tiers indépendants sur Office 365. 
   
 > [!NOTE]
-> Remarque : Si votre société a mis en œuvre un accès basé sur les rôles service assurance dans votre abonnement Office 365 (ce qui peut être si votre organisation a fourni l’accès à des rapports personnalisés), et que vous avez besoin d’accéder à l’assurance de service, mais qu’elle n’est pas incluse dans la partie gauche du centre de sécurité & conformité, demandez à votre administrateur Office 365 de vous ajouter au groupe de rôles d’utilisateur service assurance sur la page **autorisations** . Pour plus d’informations, consultez la rubrique Onboard other service assurance Users or groups. 
+> Remarque : Si votre société a mis en œuvre un accès basé sur les rôles service assurance dans votre abonnement Office 365 (ce qui peut être si votre organisation a fourni l’accès à des rapports personnalisés), et que vous avez besoin d’accéder à la garantie de service, mais qu’elle n’est pas incluse dans le volet gauche du centre de sécurité & conformité, demandez à votre **** administrateur 365 Office Pour plus d’informations, consultez la rubrique Onboard other service assurance Users or groups. 
   
- **Utilisateurs configurés en fonction de l’accès basé sur les rôles service assurance** Si votre entreprise a mis en œuvre un accès basé sur les rôles service assurance, vous pouvez fournir un accès sécurisé à tous les membres du personnel de sécurité et de conformité, y compris la sécurité des informations, la gestion des risques, la conformité et les équipes d’audit et le personnel au sein de votre Département. Pour plus d’informations, reportez-vous à la rubrique [Onboard other service assurance Users or Groups](service-assurance.md#addother).
+ **Utilisateurs configurés en fonction de l’accès basé sur les rôles service assurance** Si votre entreprise a mis en œuvre un accès basé sur les rôles service assurance, vous pouvez fournir un accès sécurisé à tous les membres du personnel de sécurité et de conformité, y compris la sécurité des informations, la gestion des risques, la conformité et les équipes d’audit et le personnel au sein de votre organisation. Pour plus d’informations, reportez-vous à la rubrique [Onboard other service assurance Users or Groups](service-assurance.md#addother).
   
 Service assurance est accessible à l’aide du centre de sécurité & conformité. Voici comment y accéder.
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel. 
+2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel. 
     
 3. Dans le volet gauche, sélectionnez **assurance de service**. Ensuite, [Choisissez vos paramètres régionaux et de votre secteur d’activité](service-assurance.md#Chooseyourindustryregional) , ainsi que d' [autres utilisateurs ou groupes de l’assurance service](service-assurance.md#addother).
     

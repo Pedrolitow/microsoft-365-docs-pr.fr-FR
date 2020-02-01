@@ -1,5 +1,7 @@
 ---
 title: Fonctionnalités EOP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
-ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840173"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599371"
 ---
 # <a name="eop-features"></a>Fonctionnalités EOP
 
@@ -36,10 +38,10 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 |Protection anti-hameçonnage|EOP comprend 750 000 domaines d'expéditeurs de courrier indésirable connus.|
 |**Gestion du courrier indésirable**||
 |Possibilité de configurer des listes verte et rouge IP de filtrage des connexions|Les adresses IP spécifiées dans le filtre des connexions sont respectées pour les adresses IP uniques et les plages d'adresses IP CIDR. Le service prend également en charge les adresses IPv6. Pour plus d'informations, consultez la rubrique relative à la [configuration de la stratégie de filtre de connexion](configure-the-connection-filter-policy.md).|
-|Possibilité de personnaliser des stratégies de filtrage de contenu par utilisateur, groupe ou domaine|Pour une granularité accrue, vous pouvez créer des stratégies de filtrage de contenu personnalisées et les appliquer à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées ont toujours priorité sur la stratégie par défaut, mais vous pouvez modifier la priorité (c’est-à-dire, l’ordre d’exécution) de vos stratégies personnalisées. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).|
-|Possibilité de configurer des actions sur les messages filtrés sur le contenu|Il existe plusieurs actions configurables. Par exemple, vous pouvez supprimer des messages filtrés sur le contenu ou les envoyer vers le dossier Courrier indésirable ou en quarantaine. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).|
+|Possibilité de personnaliser des stratégies de filtrage de contenu par utilisateur, groupe ou domaine|Pour une granularité accrue, vous pouvez créer des stratégies de filtrage de contenu personnalisées et les appliquer à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées ont toujours priorité sur la stratégie par défaut, mais vous pouvez modifier la priorité (c’est-à-dire, l’ordre d’exécution) de vos stratégies personnalisées. Pour plus d’informations, consulter [Configurer vos stratégies de filtre de courrier indésirable](configure-your-spam-filter-policies.md).|
+|Possibilité de configurer des actions sur les messages filtrés sur le contenu|Il existe plusieurs actions configurables. Par exemple, vous pouvez supprimer des messages filtrés sur le contenu ou les envoyer vers le dossier Courrier indésirable ou en quarantaine. Pour plus d’informations, consulter [Configurer vos stratégies de filtre de courrier indésirable](configure-your-spam-filter-policies.md).|
 |Possibilité de configurer des options avancées de filtrage de courrier indésirable agressif|Pour plus d’informations, reportez-vous à [la rubrique Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) (c’est-à-dire où vous les configurez) et [Options avancées de filtrage du courrier indésirable](advanced-spam-filtering-asf-options.md) (qui fournit des détails spécifiques sur ce que fait chaque option|
-|Filtrage de courrier indésirable international|Vous pouvez configurer EOP afin de filtrer des messages rédigés dans certaines langues ou envoyés depuis des pays ou des régions spécifiques. Vous pouvez configurer jusqu'à 86 langues et 250 régions différentes. Le service appliquera l'action configurée au courrier indésirable à probabilité élevée. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).|
+|Filtrage de courrier indésirable international|Vous pouvez configurer EOP afin de filtrer des messages rédigés dans certaines langues ou envoyés depuis des pays ou des régions spécifiques. Vous pouvez configurer jusqu'à 86 langues et 250 régions différentes. Le service appliquera l'action configurée au courrier indésirable à probabilité élevée. Pour plus d’informations, consulter [Configurer vos stratégies de filtre de courrier indésirable](configure-your-spam-filter-policies.md).|
 |Gérer le courrier indésirable via Outlook ou Outlook sur le Web (anciennement appelé Outlook Web App)|Les administrateurs et les utilisateurs finaux peuvent créer des listes d'expéditeurs autorisés et des listes d'expéditeurs bloqués. Pour plus d'informations : <br/>• **Outlook sur le Web**: voir [bloquer ou autoriser (paramètres du courrier indésirable)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46).  <br/>• **Outlook**: consultez [la rubrique vue d’ensemble du filtre de courrier indésirable](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). <br/><br/> Si vous utilisez EOP pour protéger les boîtes aux lettres locales, veillez à utiliser la synchronisation d’annuaires pour vous assurer que ces paramètres sont synchronisés avec le service. Pour plus d'informations sur la configuration de la synchronisation d'annuaires, voir « Utilisation de la synchronisation d'annuaires pour gérer les utilisateurs de messagerie » dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).|
 |Soumission de courriers indésirables via le complément de rapport de courrier indésirable de Microsoft Office Outlook|Vous pouvez télécharger un complément d'Outlook pour pouvoir soumettre des courriers indésirables à Microsoft pour analyse. Pour plus d’informations sur le téléchargement et l’utilisation de cet outil, consultez [la rubrique activer le complément de message de rapport](enable-the-report-message-add-in.md). <br/><br/> Si vous utilisez Exchange Server 2013 ou une version ultérieure avec EOP, vous pouvez également cliquer avec le bouton droit sur Outlook sur le Web pour envoyer des courriers indésirables, comme décrit dans [la rubrique signaler le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).|
 |Soumission de courriers indésirables et de courriers légitimes via un alias de messagerie|Vous pouvez soumettre des courriers indésirables et des courriers légitimes à Microsoft par courrier électronique. Pour plus d'informations, consultez la rubrique [Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).|

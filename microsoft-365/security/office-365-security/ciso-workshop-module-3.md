@@ -1,5 +1,7 @@
 ---
 title: 'Atelier de directeur de la sécurité des informations (CISO), module 3 : identité et gestion des accès'
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: e1f4e9afb86d475a7dd7261dfe26ff0b5a17826f
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 97ba2b0319f8a34bd6fe1cbdf597b85281810855
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962631"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599701"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>Module d’atelier CISO 3 : accès utilisateur de l’identité et de l’approbation zéro
 

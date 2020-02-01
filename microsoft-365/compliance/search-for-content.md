@@ -1,5 +1,7 @@
 ---
 title: Rechercher du contenu dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilisez l’outil eDiscovery de la recherche de contenu dans le centre de sécurité & conformité pour trouver rapidement le courrier électronique dans les boîtes aux lettres Exchange, les documents dans les sites SharePoint et les emplacements OneDrive, et les conversations de messagerie instantanée dans Skype entreprise.
-ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079998"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601541"
 ---
 # <a name="search-for-content-in-office-365"></a>Rechercher du contenu dans Office 365
 
@@ -77,7 +79,7 @@ La recherche de contenu est facile à utiliser, mais elle est également un outi
 
 Parfois, vous devez effectuer des tâches de recherche de contenu plus complexes, complexes et répétitives. Dans ce cas, il est plus facile et plus rapide d’utiliser des commandes PowerShell dans le centre de sécurité & Compliance Center. Pour faciliter cette opération, nous avons créé un certain nombre de scripts PowerShell de sécurité & de conformité pour vous aider à effectuer des tâches complexes liées à la recherche de contenu.
   
-- [Recherche de dossiers de site et de boîte aux lettres spécifiques](use-content-search-for-targeted-collections.md) (appelé une *collection ciblée* ) lorsque vous êtes certain que les éléments réactifs à un cas se trouvent dans ce dossier 
+- [Recherchez des dossiers de site et de boîte aux lettres spécifiques](use-content-search-for-targeted-collections.md) (appelés *collection ciblée* ) lorsque vous êtes certain que les éléments réactifs à un cas se trouvent dans ce dossier. 
     
 - [Rechercher dans la boîte aux lettres et l’emplacement OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) une liste d’utilisateurs 
     

@@ -1,5 +1,7 @@
 ---
 title: Limites de recherche de contenu dans le centre de sécurité & conformité
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Découvrez les limites en vigueur pour la fonctionnalité de recherche de contenu dans le centre de sécurité & conformité dans Office 365, comme le nombre maximal de recherches simultanées. '
-ms.openlocfilehash: 0574908468b5c2c94f1feb78c0845bc0a0e2afff
-ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
+ms.openlocfilehash: a560e26b6a02e48ca50033acad554e3c7bb2ec6e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911462"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600551"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Limites de recherche de contenu dans le centre de sécurité & conformité
 

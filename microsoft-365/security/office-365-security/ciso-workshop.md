@@ -1,5 +1,7 @@
 ---
 title: Atelier de directeur de la sécurité des informations (CISO)
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 9a6fc72cd905a99b555417269aa9f7ec84faef1f
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7377eb0bedf86e69618a82a05a7f048cc9b1cde7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012419"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599651"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Formation pour les ateliers de directeur CISO (Information Security officier)
 
@@ -38,4 +40,4 @@ Les vidéos d’atelier CISO et le contenu de téléchargement PDF/PowerPoint so
 
 - [Module 4b : stratégie de protection contre les menaces, partie II](ciso-workshop-module-4b.md): ce module examine l’évolution et la trajectoire des centres d’opérations de sécurité (SOC), gérées par les milliards de signaux dans le graphique de sécurité intelligente Microsoft.
 
-- [Module 5 : protection des informations](ciso-workshop-module-5.md): Découvrez comment protéger les informations sensibles partout où elles sont associées à la classification automatique, au chiffrement persistant sur les appareils et à la surveillance continue des données sur les appareils mobiles, les services Cloud et les autres ressources d’entreprise.
+- [Module 5 : protection des informations](ciso-workshop-module-5.md): Découvrez comment protéger les informations sensibles partout où elles sont associées à la classification automatique, au chiffrement persistant sur les appareils et à la surveillance continue des données sur les appareils mobiles, les services Cloud et d’autres ressources d’entreprise.

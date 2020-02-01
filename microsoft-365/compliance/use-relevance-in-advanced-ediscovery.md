@@ -1,5 +1,7 @@
 ---
 title: Utiliser le module de pertinence dans Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Découvrez le module de pertinence dans Office 365 Advanced eDiscovery, notamment un flux de travail et des instructions, ainsi que les étapes de formation et de révision de fichiers.  '
-ms.openlocfilehash: 3303a85742876934899517940d0a671e404dea92
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5151c94d2b0bd1824abb499f6cb27bbfbc7618b7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802279"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601301"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Utiliser le module de pertinence dans Office 365 Advanced eDiscovery
 

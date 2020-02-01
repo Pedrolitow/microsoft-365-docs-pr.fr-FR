@@ -1,5 +1,7 @@
 ---
 title: Informations sur la correction du domaine de l’expéditeur
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur la rubrique Fix sender Domain Insight dans le tableau de bord du flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: bda6482b2c9264337db9e95f84ff41ce08582363
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306148"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598821"
 ---
 # <a name="fix-sender-domain-insight"></a>Informations sur la correction du domaine de l’expéditeur
 
@@ -32,7 +34,7 @@ Office 365 nécessite des messages envoyés depuis des environnements de message
 
 Les messages qui ne répondent pas aux critères ne sont pas attribués à l’organisation et peuvent être rejetés.
 
-La fonction **Fix sender Domain** Insight affiche les messages électroniques provenant de votre environnement local qui ne répondent pas aux critères, vous permet d’identifier les ordinateurs et les comptes d’utilisateur potentiellement compromis dans votre environnement de messagerie local et vous aide à prendre actions de correction.
+L’article **Fix sender Domain** Insight affiche les messages électroniques provenant de votre environnement local qui ne répondent pas aux critères, vous permet d’identifier les ordinateurs et les comptes d’utilisateur potentiellement compromis dans votre environnement de messagerie local et vous aide à prendre des mesures correctives.
 
 ![Le tableau de bord des expéditeurs du tableau de bord du flux de messagerie dans le centre de sécurité & conformité](../media/sender-domain-insight-selected.png)
 

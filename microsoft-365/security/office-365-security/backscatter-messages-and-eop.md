@@ -1,5 +1,7 @@
 ---
 title: Messages de rétrodiffusion et EOP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Les messages rétrodiffusion sont des messages de retour automatique qui sont envoyés à des adresses de messagerie falsifiées. Le BACKSCATTERER d’envoi d’un nuage identifie les serveurs qui envoient des messages rétrodiffusion (qui peuvent inclure de nombreuses sources de messagerie légitimes). Étant donné qu’il ne s’agit pas d’une liste de spammeurs, nous n’essayons pas de nous retirer du BACKSCATTERER.
-ms.openlocfilehash: f6e8398565837f7a380c8a6a5c4cd8de422cc215
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 3dc83c303e861c8762f2276de521e1b550ae2e59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840163"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599731"
 ---
 # <a name="backscatter-messages-and-eop"></a>Messages de rétrodiffusion et EOP
 

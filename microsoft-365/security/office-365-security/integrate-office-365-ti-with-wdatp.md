@@ -1,5 +1,7 @@
 ---
 title: Intégrer Office 365 Advanced Threat Protection avec Microsoft Defender Advanced Threat Protection
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Intégrer Office 365 Advanced Threat Protection avec Microsoft Defender Advanced Threat Protection pour consulter des informations plus détaillées sur la gestion des menaces.
-ms.openlocfilehash: a4e96615cf0f132a43957a5885b5fb33a5e8f031
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc2db4c1a3e5b32206ee91cae9f5adbeae4875d4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079027"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599131"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Intégrer Office 365 Advanced Threat Protection avec Microsoft Defender Advanced Threat Protection
 
@@ -55,10 +57,10 @@ L’intégration de la fonctionnalité ATP Office 365 à Microsoft Defender ATP 
 5. Activez la connexion dans le centre de sécurité Microsoft Defender.
 
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Enquête et réponse aux menaces Office 365](office-365-ti.md)
   
-[Office 365 protection avancée contre les menaces](office-365-atp.md)
+[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
 

@@ -5,6 +5,8 @@ keywords: sécurité, programmes malveillants, Microsoft 365, M365, Secure score
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -15,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 65497522907a4bfc8e2e3d55ccd3a82cde9b8bb7
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: aeae243b4e363f69729ccdbd2bc3fc465ec1449b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233885"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600171"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -70,7 +72,7 @@ Avec l’accès en lecture et en écriture, vous pouvez effectuer des modificati
 Avec un accès en lecture seule, vous n’êtes pas en mesure de modifier l’État ou les notes pour une action d’amélioration, de modifier des zones de score ou de modifier des comparaisons personnalisées.
 
 * Administrateur du support technique
-* User administrator
+* Administrateur d’utilisateurs
 * Administrateur de service
 * Lecteur Sécurité
 * Opérateur de sécurité

@@ -1,5 +1,7 @@
 ---
 title: Pool de remise à risque élevé pour les messages sortants
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Lorsque le système de courrier d’un client a été compromis par un programme malveillant ou une attaque de courrier indésirable malveillant, et qu’il envoie du courrier indésirable sortant via le service de filtrage hébergé, les adresses IP des serveurs du centre de données Office 365 sont peut-être référencées dans un bloc tiers. établit.
-ms.openlocfilehash: 5b9241dead5b40e9f216ecd3023d6f8b86fb0205
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 19987ae74b9c78a796ddb5f13cf8291a5ed269ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079052"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599231"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool de remise à risque élevé pour les messages sortants
 
@@ -49,6 +51,6 @@ Tous ces problèmes peuvent entraîner une augmentation subite du nombre de mess
 
 [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
   
-[FAQ sur la protection contre le courrier indésirable](anti-spam-protection-faq.md)
+[Forum Aux Questions sur la protection anti-courrier indésirable](anti-spam-protection-faq.md)
   
 

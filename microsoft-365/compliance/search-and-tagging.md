@@ -1,5 +1,7 @@
 ---
 title: Recherche et balisage
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: Dans Advanced eDiscovery, le module de recherche et de marquage vous permet de rechercher, de prévisualiser et d’organiser les documents dans votre cas. Actuellement, ce module est en version bêta.
-ms.openlocfilehash: f5e192988519a9190aa53efef35a8e584e0987cc
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d79b702471b7a7234a7f0d147eb4f50bfc56a4c7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802897"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601711"
 ---
 # <a name="search-and-tagging"></a>Recherche et balisage
 
@@ -43,7 +45,7 @@ Le tableau suivant répertorie les propriétés que vous pouvez rechercher à l�
 |**senderauthor** <br/> | Expéditeur du courrier électronique ; auteur des documents de site. <br/> |
 |**size** <br/> | Taille du fichier en Ko. <br/> |
 |**subjecttitle** <br/> | L’objet de la messagerie ; titre des documents de site. <br/> |
-|**bbc** <br/> | Champ CCI d’un message électronique. <br/> |
+|**bcc** <br/> | Champ CCI d’un message électronique. <br/> |
 |**cc** <br/> | Champ CC d’un message électronique. <br/> |
 |**participants** <br/> | Adresse de messagerie de tous les participants d’un thread de messagerie, y compris pour les liens manquants. <br/> |
 |**received** <br/> | Date à laquelle un message électronique a été reçu. <br/> |

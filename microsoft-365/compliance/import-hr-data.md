@@ -1,5 +1,7 @@
 ---
 title: Configurer un connecteur pour importer des données RH
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés depuis le système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: ba673f6328751a7eee10d5ab4097aa334c09f339
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247644"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600691"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -27,7 +29,7 @@ Vous pouvez configurer un connecteur de données dans le centre de conformité M
 
 - L’utilisateur qui crée le connecteur RH à l’étape 3 doit se voir attribuer le rôle importation/exportation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
 
-- Vous devez déterminer comment récupérer ou exporter les données à partir du système RH de votre organisation (de manière régulière) et ajouter le fichier CSV décrit à l’étape 2. Le script que vous exécutez à l’étape 4 télécharge les données RH dans le fichier CSV vers le Cloud Microsoft.
+- Vous devez déterminer comment récupérer ou exporter les données à partir du système RH de votre organisation (de manière régulière) et les ajouter au fichier CSV décrit à l’étape 2. Le script que vous exécutez à l’étape 4 télécharge les données RH dans le fichier CSV vers le Cloud Microsoft.
 
 - L’exemple de script que vous exécutez à l’étape 4 téléchargera les données RH dans le Cloud Microsoft afin qu’elles puissent être utilisées par d’autres outils Microsoft, comme la solution de gestion des risques inSided. Cet exemple de script n’est pas pris en charge dans les services ou programmes de support standard Microsoft. L’exemple de script est fourni en l’État sans aucune garantie. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d'adéquation à un usage particulier. L’ensemble des risques liés à l’utilisation ou aux performances de l’exemple de script et de la documentation reste avec vous. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d'activité, perte d'informations commerciales ou toute autre perte pécuniaire) découlant de l'utilisation ou de l'impossibilité d'utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
@@ -64,7 +66,7 @@ Le tableau suivant décrit chaque colonne du fichier CSV :
 |**LastWorkingDate**|Spécifie le dernier jour de travail de l’employé terminé. Vous devez utiliser le format de date suivant `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`:, qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Après avoir créé le fichier CSV avec les données RH requises, stockez-le sur un ordinateur local ou un emplacement réseau qui peut être spécifié lorsque vous exécutez le script à l’étape 4. Vous devez également implémenter une stratégie de mise à jour afin que le fichier CSV contienne toujours les informations les plus récentes de façon à ce que les données de terminaison de l’employé les plus récentes soient téléchargées vers le Cloud Microsoft.
+Après avoir créé le fichier CSV avec les données RH requises, stockez-le sur l’ordinateur local sur lequel vous exécutez le script à l’étape 4. Vous devez également mettre en œuvre une stratégie de mise à jour pour vous assurer que le fichier CSV contient toujours les informations les plus récentes, de sorte que les données de terminaison de l’employé les plus récentes soient téléchargées vers le Cloud Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Étape 3 : créer le connecteur RH
 
@@ -104,7 +106,7 @@ L’étape suivante consiste à créer un connecteur RH dans le centre de confor
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Étape 4 : exécuter l’exemple de script pour charger vos données RH
 
-La dernière étape de la configuration d’un connecteur RH consiste à exécuter un exemple de script qui télécharge les données RH dans le fichier CSV (que vous avez créé à l’étape 2) vers le Cloud Microsoft. Après avoir exécuté le script, le connecteur RH que vous avez créé à l’étape 3 peut accéder aux données et les importer dans votre organisation Microsoft 365 où ils peuvent accéder à d’autres outils de conformité, tels que la solution de gestion des risques Insiders. Après avoir exécuté le script, envisagez de planifier une tâche pour qu’elle s’exécute automatiquement quotidiennement de sorte que les données de fin d’employé les plus récentes soient téléchargées vers le Cloud Microsoft. Consultez [la rubrique planifier le script pour qu’il s’exécute automatiquement](#optional-step-6-schedule-the-script-to-run-automatically).
+La dernière étape de la configuration d’un connecteur RH consiste à exécuter un exemple de script qui télécharge les données RH dans le fichier CSV (que vous avez créé à l’étape 2) vers le Cloud Microsoft. Plus précisément, le script télécharge les données vers le connecteur RH. Après avoir exécuté le script, le connecteur RH que vous avez créé à l’étape 3 importe les données RH dans votre organisation Microsoft 365 où il peut accéder à d’autres outils de conformité, tels que la solution de gestion des risques Insiders. Après avoir exécuté le script, envisagez de planifier une tâche pour qu’elle s’exécute automatiquement quotidiennement de sorte que les données de fin d’employé les plus récentes soient téléchargées vers le Cloud Microsoft. Consultez [la rubrique planifier le script pour qu’il s’exécute automatiquement](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Accédez à [ce site github](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) pour accéder à l’exemple de script.
 
@@ -132,7 +134,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
    |`appId` |Il s’agit de l’ID d’application AAD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 
    |`appSecret`|Il s’agit de la clé secrète de l’application AAD pour l’application que vous avez créée dans Azure AD à l’étape 1. Cela est également utilisé pour l’authentification.|
    |`jobId`|Il s’agit de l’ID de travail pour le connecteur HR que vous avez créé à l’étape 3. Il est utilisé pour associer les données RH téléchargées vers le Cloud Microsoft avec le connecteur RH.|
-   |`csvFilePath`|Il s’agit du chemin d’accès au fichier sur l’ordinateur local (celui que vous utilisez pour exécuter le script) pour le fichier CSV que vous avez créé à l’étape 2. Si le fichier CSV se trouve sur un emplacement réseau partagé, vous devez spécifier le chemin d’accès complet au fichier pour cet emplacement. Essayez d’éviter les espaces dans le chemin d’accès du fichier ; Sinon, utilisez des guillemets simples.|
+   |`csvFilePath`|Il s’agit du chemin d’accès au fichier sur l’ordinateur local (celui que vous utilisez pour exécuter le script) pour le fichier CSV que vous avez créé à l’étape 2. Essayez d’éviter les espaces dans le chemin d’accès du fichier ; Sinon, utilisez des guillemets simples.|
    |||
    
    Voici un exemple de syntaxe pour le script du connecteur RH en utilisant les valeurs réelles de chaque paramètre :

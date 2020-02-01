@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: johmar
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4ef679ed6fef217be112317d03d12c007b1375fd
-ms.sourcegitcommit: 7c977771fc295ca1e4e9b16a6d05faee8edeadad
+ms.openlocfilehash: ca9b752f55ebe3fecec4f312bc89b45d99cf0d7d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37913342"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601051"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Stratégies d’autorisation d’accès B2B invité et externe
 Cet article explique comment ajuster les stratégies courantes d’identité et d’accès aux appareils pour autoriser l’accès au compte B2B (utilisateurs invités et externes). Ce guide s’appuie sur les [stratégies courantes d’identité et d’accès aux appareils](identity-access-policies.md).
@@ -37,7 +39,7 @@ Le tableau suivant répertorie les stratégies que vous devez mettre à jour ou 
 
 |Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Exiger MFA pour les utilisateurs invités et externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette nouvelle règle et appliquez-la uniquement aux invités et aux utilisateurs externes. Sous risque de connexion, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur.|
+|**Référence**|[Exiger MFA pour les utilisateurs invités et externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette nouvelle règle et appliquez-la uniquement aux invités et aux utilisateurs externes. Sous risque de connexion, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur.|
 |        |[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifiez cette règle pour exclure les utilisateurs invités et externes.|
 |        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifiez cette règle pour exclure les utilisateurs invités et externes.|
 

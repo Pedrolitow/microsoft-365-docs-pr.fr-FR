@@ -1,5 +1,7 @@
 ---
 title: Valeurs de niveau de réclamation en bloc, expéditeurs de courrier indésirable, niveaux BCL, fonctionnement de BCL, indices BCL, courrier indésirable, en-tête de courrier indésirable, filtrage du courrier en nombre
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,12 +16,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Découvrez les valeurs de niveau de courrier en bloc (BCL) dans Office 365.
-ms.openlocfilehash: 822c84ea9b36cfdae1d8faccf7e0c7d9f747c917
-ms.sourcegitcommit: 7830969c8fa41724359657910716f3ce312cc2cf
+ms.openlocfilehash: b0eb922323421834eae77b8c5430f1bd8f48c8ee
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37650116"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599721"
 ---
 # <a name="bulk-complaint-level-values"></a>Valeurs BCL
 

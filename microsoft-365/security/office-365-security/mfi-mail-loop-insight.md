@@ -1,5 +1,7 @@
 ---
 title: Informations sur les boucles de courrier
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Les administrateurs peuvent en savoir plus sur la vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 58a843f20723fce8b19f9381a9e99b622c68cb45
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ca1c877bcfee686baf0f81edd58e20c87ffd7540
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080289"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598871"
 ---
 # <a name="mail-loop-insight"></a>Informations sur les boucles de courrier
 

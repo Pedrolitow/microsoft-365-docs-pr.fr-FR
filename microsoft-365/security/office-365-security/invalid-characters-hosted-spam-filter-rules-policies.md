@@ -1,5 +1,7 @@
 ---
 title: Éviter les caractères non valides dans vos règles de filtrage et dans la stratégie de filtrage de courrier indésirable
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Fournit de l’aide aux administrateurs qui ont des caractères non valides dans leur configuration de blocage du courrier indésirable et &amp; génèrent des problèmes lors de la tentative d’utilisation du centre de sécurité conformité.
-ms.openlocfilehash: 5e6fa97a3f325b6fc6fdc449ba4a61282f67b644
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: f1841eb86583a48acecde0770f030b626323fa8e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866716"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599111"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Éviter les caractères non valides dans vos règles de filtrage du courrier indésirable et votre stratégie de filtrage 
 
@@ -52,7 +54,7 @@ Une fois que vous avez identifié la stratégie et les règles qui contiennent d
     ```  
 
   
- ## <a name="for-more-information"></a>Pour plus d’informations
+ ## <a name="for-more-information"></a>Pour plus d'informations
 
 [Gestion des menaces dans le &amp; Centre de sécurité conformité](protect-against-threats.md)
   

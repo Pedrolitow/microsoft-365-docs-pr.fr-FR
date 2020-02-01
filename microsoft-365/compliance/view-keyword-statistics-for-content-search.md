@@ -1,5 +1,7 @@
 ---
 title: Afficher les statistiques de mot clé pour les résultats de recherche de contenu
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,20 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Utilisez la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans le centre de sécurité & conformité. Vous pouvez également configurer la liste de mots clés lors de la création ou de la modification d’une requête de recherche pour obtenir des statistiques améliorées qui indiquent le nombre d’éléments correspondant à chaque expression de mot clé ou mot clé.
-ms.openlocfilehash: 558d8bd269d1c1d8bfcf3f15452a83de74f3e38d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079893"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601251"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 
-Une fois que vous avez créé et exécuté une recherche de contenu, vous pouvez afficher des statistiques sur les résultats de recherche estimés. Cela inclut un résumé des résultats de la recherche (semblable au résumé des résultats de recherche estimés affichés dans le volet d’informations), les statistiques de la requête telles que le nombre d’emplacements de contenu avec des éléments qui correspondent à la requête de recherche et le nom des emplacements de contenu qui ont le plus de correspondances. Vous pouvez afficher des statistiques pour une ou plusieurs recherches de contenu. Cela vous permet de comparer rapidement les résultats de plusieurs recherches et de prendre des décisions sur l’efficacité de vos requêtes de recherche.
+Une fois que vous avez créé et exécuté une recherche de contenu, vous pouvez afficher des statistiques sur les résultats de recherche estimés. Cela inclut un résumé des résultats de la recherche (semblable au résumé des résultats de recherche estimés affichés dans le volet d’informations), les statistiques de la requête telles que le nombre d’emplacements de contenu avec des éléments qui correspondent à la requête de recherche et le nom des emplacements de contenu qui ont le plus de correspondances. Vous pouvez afficher les statistiques d’une ou plusieurs recherches de contenu. Cela vous permet de comparer rapidement les résultats de plusieurs recherches et de prendre des décisions sur l’efficacité de vos requêtes de recherche.
   
 En outre, vous pouvez configurer des recherches nouvelles et existantes pour renvoyer des statistiques pour chaque mot clé dans une requête de recherche. Cela vous permet de comparer le nombre de résultats pour chaque mot clé dans une requête et de comparer les statistiques de mots clés de plusieurs recherches.
   
-Vous pouvez également télécharger les statistiques de recherche et les statistiques sur les mots clés dans un fichier CSV. Cela vous permet d’utiliser les fonctionnalités de filtrage et de tri dans Excel pour comparer les résultats et préparer des rapports pour les résultats de la recherche.
+Vous pouvez également télécharger les statistiques de recherche et les statistiques de mots clés dans un fichier CSV. Cela vous permet d’utiliser les fonctionnalités de filtrage et de tri dans Excel pour comparer les résultats et préparer des rapports pour vos résultats de recherche.
   
 ## <a name="get-statistics-for-content-searches"></a>Obtenir des statistiques pour les recherches de contenu
 
@@ -41,7 +43,7 @@ Pour afficher les statistiques des recherches de contenu :
   
 3. Sur la page **statistiques de recherche** , cliquez sur l’un des liens suivants pour afficher les statistiques sur les recherches sélectionnées. 
     
-    **Summary**
+    **Résumé**
     
     Cette page affiche des statistiques similaires à celles affichées dans le volet d’informations sur la page **recherche de contenu** . Les statistiques de toutes les recherches sélectionnées sont affichées. Notez que vous pouvez également réexécuter les recherches sélectionnées à partir de cette page pour mettre à jour les statistiques. 
     
@@ -88,7 +90,7 @@ Pour afficher les statistiques des recherches de contenu :
     
     **Emplacements les plus fréquents**
     
-    Cette page affiche des statistiques sur le nombre d’éléments qui correspondent à la requête de recherche dans chaque emplacement de contenu recherché. Les 1 000 premiers emplacements sont affichés. Si vous affichez les statistiques de plusieurs recherches, les premiers 1 000 emplacements de chaque recherche sont affichés. Notez qu’un emplacement de contenu n’est pas inclus sur cette page s’il ne contient aucun élément correspondant à la requête de recherche.
+    Cette page affiche des statistiques sur le nombre d’éléments qui correspondent à la requête de recherche dans chaque emplacement de contenu recherché. Les 1 000 principaux emplacements sont affichés. Si vous affichez les statistiques de plusieurs recherches, les premiers 1 000 emplacements de chaque recherche sont affichés. Notez qu’un emplacement de contenu n’est pas inclus sur cette page s’il ne contient aucun élément correspondant à la requête de recherche.
     
     ![Statistiques sur le nombre d’éléments trouvés dans les emplacements de contenu ayant fait l’objet d’une recherche](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   

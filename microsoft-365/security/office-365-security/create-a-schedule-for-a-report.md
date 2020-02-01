@@ -1,5 +1,7 @@
 ---
 title: Créer une planification pour un rapport dans le centre &amp; de sécurité conformité
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer une planification pour un rapport dans le centre de sécurité &amp; conformité.
-ms.openlocfilehash: 9027663681121d3da048b084790d0f7af0893706
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 743bb0cd71fb4a5c6ce9b875c797ad3ca54d0485
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079438"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599551"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Créer une planification pour un rapport dans le centre &amp; de sécurité conformité
 
@@ -67,7 +69,7 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
     
 Une fois que vous avez créé une planification pour un rapport, ce rapport est remis automatiquement par courrier électronique aux adresses de messagerie des destinataires. 
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

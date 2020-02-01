@@ -1,5 +1,7 @@
 ---
 title: Affichage des rapports de protection contre la perte de données
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les rapports DLP dans Office 365, vous pouvez rapidement afficher le nombre de correspondances de stratégies DLP, de remplacements ou de faux positifs ; voir si elles sont recherchées dans le temps ; filtrer le rapport de différentes manières ; et affichez des détails supplémentaires en sélectionnant un point sur une ligne sur le graphique.
-ms.openlocfilehash: 94569ef24814204263820fb5fdb7a8cb72da20e4
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 1605e2ebed9ada5903402ae5facdb40ce2f12c39
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685768"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601231"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 
@@ -31,7 +33,7 @@ Après avoir créé vos stratégies de protection contre la perte de données (D
     
   - Vous concentrer sur des périodes de temps spécifiques et comprendre les raisons des pics et des tendances.
     
-  - Découvrez les processus d’entreprise qui enfreignent les stratégies DLP de votre organisation.
+  - Découvrir les processus d’entreprise qui enfreignent les stratégies DLP de votre organisation.
     
   - Comprendre l’impact des stratégies DLP sur l’entreprise en examinant les actions appliquées au contenu.
     
@@ -83,15 +85,15 @@ Pour afficher les rapports DLP dans le centre de sécurité & conformité, vous 
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Rechercher les applets de commande pour les rapports DLP
 
-Pour utiliser la plupart des applets de commande pour &amp; le centre de sécurité conformité, vous devez :
+Pour utiliser la plupart des applets de commande du Centre de conformité et de sécurité, vous devez :
   
-1. [Se connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Utiliser l’une des [applets de &amp; commande du centre de sécurité conformité Office 365](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
-Toutefois, les rapports DLP doivent extraire des données d’Office 365, y compris Exchange Online. Pour cette raison, les applets de commande pour les rapports DLP sont disponibles dans Exchange Online PowerShell, et &amp; non dans le centre de sécurité conformité PowerShell. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
+Toutefois, les rapports DLP doivent extraire des d’Office 365, y compris Exchange Online. Pour cette raison, les applets de commande pour les rapports DLP sont disponibles dans Exchange Online PowerShell, et &amp; non dans le centre de sécurité conformité PowerShell. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
   
-1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. Utilisez l’une de ces applets de commande pour les rapports DLP :
     

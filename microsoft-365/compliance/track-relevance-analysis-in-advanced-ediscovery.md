@@ -1,5 +1,7 @@
 ---
 title: Suivi de l’analyse de pertinence dans Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Découvrez comment afficher et interpréter la pertinence état de formation et résultats pour les problèmes de cas dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 7b5d8777cdf54741f585fc6af587e9220a8daf0c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5fa9fe49f1a644f2a64321c1ec106b11c487c885
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802647"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601401"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Suivi de l’analyse de pertinence dans Office 365 Advanced eDiscovery
 

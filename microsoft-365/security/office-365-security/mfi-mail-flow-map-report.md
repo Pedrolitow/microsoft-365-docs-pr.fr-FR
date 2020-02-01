@@ -1,5 +1,7 @@
 ---
 title: Rapport carte de flux de courrier
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: a72cfed9bca57a0f3cecd13d83a6c87f05d40a1a
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 266626b46e3e1db559178c66a716a5a8ce347986
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306138"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598891"
 ---
 # <a name="mail-flow-map-report"></a>Rapport carte de flux de courrier
 

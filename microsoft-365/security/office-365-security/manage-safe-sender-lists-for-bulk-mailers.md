@@ -1,5 +1,7 @@
 ---
 title: Gérer les listes d'expéditeurs autorisés pour les vers de publipostage en bloc
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: d48db4a3-9fbe-45e2-bbaa-1017ffdf96f8
 ms.collection:
 - M365-security-compliance
 description: "Si vous souhaitez utiliser les listes d'expéditeurs autorisés, vous devez savoir qu'Exchange Online Protection (EOP) et Outlook gèrent différemment le traitement. Le service respecte les expéditeurs et les domaines autorisés en inspectant l'adresse RFC 5321.MailFrom, tandis qu'Outlook ajoute l'adresse RFC 5322.From à la liste des expéditeurs autorisés d'un utilisateur. (Remarque : Le service inspecte les adresses 5321.MailFrom et 5322.MailFrom pour les expéditeurs et les domaines bloqués.)"
-ms.openlocfilehash: 2dcfd73cc987290bbc8ca8111580a374216a843e
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: aaede7cab2e640603c20804f4015e19f61b6c2f3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970300"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598941"
 ---
 # <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gérer les listes d’expéditeurs autorisés pour les vers de publipostage en bloc
 

@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112688"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602851"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Étape 2 : déployer Windows 10 entreprise pour les appareils existants en tant que mise à niveau sur place
 
@@ -29,7 +31,7 @@ Si des ordinateurs existants exécutent Windows 7 ou Windows 8,1, nous vous reco
 
 Procédez comme suit pour configurer et déployer une image Windows 10 entreprise à l’aide du gestionnaire de configuration de point de terminaison de Microsoft en tant que mise à niveau sur place.
 
-## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Déploiement de Windows 10 avec l’affiche du gestionnaire de configuration
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Affiche Déploiement de Windows 10 avec Configuration Manager
 
 L’affiche du gestionnaire de configuration est une page en mode paysage (17x11). Cliquez sur l’image ci-dessous pour afficher un fichier PDF dans votre navigateur. 
 

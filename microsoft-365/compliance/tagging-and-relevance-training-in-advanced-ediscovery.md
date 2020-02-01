@@ -1,5 +1,7 @@
 ---
 title: Étiquetage et formation à la pertinence dans Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinence d’Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: e214e8a8edba7472f93274f3a4f7a06a09e2a801
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: fa690857fabb6a732d329dc8a75896d9e1aa195d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802697"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601421"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Étiquetage et formation à la pertinence dans Office 365 Advanced eDiscovery
 

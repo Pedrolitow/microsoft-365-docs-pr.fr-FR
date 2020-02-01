@@ -1,5 +1,7 @@
 ---
 title: Utilisation du score de conformité Microsoft
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment utiliser les outils de flux de travail dans le score de conformité Microsoft pour vous aider à gérer la conformité de votre organisation.
-ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 046a370fe1294220ee4ee6150311df5f51905674
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802131"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601191"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Utilisation du score de conformité Microsoft (aperçu)
 

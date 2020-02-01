@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble des enregistrements
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour implémenter une stratégie de gestion des enregistrements dans votre organisation Microsoft ou Office 365, utilisez des étiquettes de rétention qui déclarent du contenu sous la forme d’un enregistrement. Ensuite, publiez ou appliquez automatiquement l’étiquette de rétention d’enregistrement.
-ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 36482ea4a6bb9fb932d72b76dff5f0647d467a9b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803831"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601681"
 ---
 # <a name="overview-of-records"></a>Vue d’ensemble des enregistrements
 
@@ -78,6 +80,10 @@ Lorsque vous créez une étiquette de rétention, vous pouvez l’utiliser pour 
 
 3. [Publier](labels.md#how-retention-labels-work-with-retention-label-policies) ou [appliquer automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) l’étiquette de rétention aux sites SharePoint et/ou aux comptes OneDrive.
 
+> [!NOTE]
+> La déclaration d’un élément en tant qu’enregistrement à l’aide d' [étiquettes de rétention](labels.md) nécessite une licence Office 365 Entreprise E5 ou équivalente pour chaque utilisateur autorisé à modifier le contenu dans cet emplacement. Les utilisateurs disposant d’un accès en lecture seule n’ont pas besoin de licence.
+
+
 ### <a name="applying-a-retention-label-to-content"></a>Application d’une étiquette de rétention au contenu
 
 Pour Exchange, tout utilisateur disposant d’un accès en écriture à la boîte aux lettres peut appliquer une étiquette d’enregistrement à un message électronique. Pour le contenu dans SharePoint et OneDrive, tous les utilisateurs du groupe Membres par défaut (niveau d’autorisation Collaboration) peuvent appliquer une étiquette d’enregistrement au contenu. Seul un administrateur de la collection de sites peut supprimer ou modifier cette étiquette d’enregistrement une fois qu’elle a été appliquée. Comme indiqué précédemment, une étiquette de rétention qui classifie le contenu en tant qu’enregistrement peut être appliquée automatiquement au contenu.
@@ -105,7 +111,7 @@ Le contrôle de version d’enregistrement est disponible automatiquement pour t
 ![Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement](media/recordversioning8.png)
 
 > [!NOTE]
-> Le contrôle de version d’enregistrement nécessite une licence Office 365 Entreprise E5 pour chaque utilisateur autorisé à modifier du contenu qui a été déclaré en tant qu’enregistrement dans un site SharePoint ou un compte OneDrive. Les utilisateurs qui disposent d’un accès en lecture seule n’ont pas besoin de licence.
+> Le contrôle de version d’enregistrement nécessite une licence Office 365 Entreprise E5 pour chaque utilisateur autorisé à modifier du contenu qui a été déclaré en tant qu’enregistrement dans un site SharePoint ou un compte OneDrive. Les utilisateurs disposant d’un accès en lecture seule n’ont pas besoin de cette licence.
 
 ### <a name="locking-and-unlocking-a-record"></a>Verrouillage et déverrouillage d'un enregistrement
 

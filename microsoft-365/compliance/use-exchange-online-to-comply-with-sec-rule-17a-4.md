@@ -1,5 +1,7 @@
 ---
 title: Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates a validé que lorsque Exchange Online et le centre de sécurité et conformité sont configurés comme recommandé, ils répondent aux exigences de stockage pertinentes de règle CFTC 1.31(c)-(d), FINRA règle 4511 et SEC règle 17 a-4. Vous pouvez télécharger l’évaluation.
-ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
-ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
+ms.openlocfilehash: dc61521043d176781c2a6fbd9e1b283cc93eb270
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41122423"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628590"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4
 
@@ -28,7 +30,7 @@ Toutefois, certaines organisations dans des secteurs hautement réglementés son
 
 Pour aider ces organisations à mieux comprendre comment le Centre de Sécurité et Conformité peut être utilisé pour répondre à leurs obligations légales pour Exchange Online. plus précisément par rapport à la configuration requise relative à la règle 17 a-4, nous avons publié une évaluation en partenariat avec Cohasset Associates.
 
-Cohasset a validé que lorsque Exchange Online et le Centre de Sécurité et Conformité sont configurés comme recommandé, ils répondent aux exigences de stockage pertinentes de règle CFTC 1.31(c)-(d), la FINRA règle 4511 et la SEC règle 17 a-4.  Nous avons ciblé cet ensemble de règles car elles représentent les conseils de la plupart des conseils globalement pour la rétention des enregistrements pour les institutions financières.
+Cohasset a validé que lorsque Exchange Online et le Centre de Sécurité et Conformité sont configurés comme recommandé, ils répondent aux exigences de stockage pertinentes de la règle CFTC 1.31(c)-(d), la FINRA règle 4511 et la SEC règle 17 a-4. Nous avons ciblé cet ensemble de règles car elles représentent les conseils de la plupart des conseils globalement pour la rétention des enregistrements pour les institutions financières.
 
 ## <a name="download-the-cohasset-assessment"></a>Télécharger l’évaluation Cohasset
 
@@ -40,7 +42,7 @@ Vous pouvez [télécharger ici l’évaluation Cohasset](https://servicetrust.mi
 
 Notez que cette évaluation est spécifique à Exchange Online. L’évaluation n’inclut pas les autres services Office 365 tels que SharePoint Online ou OneDrive Entreprise, bien que nous envisageons la prise en charge dans ces services par rapport à SEC 17 a-4 à l’avenir.
 
-Il est important de comprendre que Skype Entreprise et Teams stockent également des données dans Exchange Online.  Par conséquent, l’évaluation traite les messages de Skype Entreprise, le canal et les messages de conversation à partir de Teams.
+Il est important de comprendre que Skype Entreprise et Teams stockent également des données dans Exchange Online. Par conséquent, l’évaluation traite les messages de Skype Entreprise, le canal et les messages de conversation à partir de Teams.
 
 ## <a name="using-preservation-lock-is-key-to-the-recommended-configuration"></a>À l’aide de verrouillage de conservation est essentiel pour la configuration recommandée
 
@@ -67,6 +69,8 @@ Vous pouvez verrouiller une stratégie de rétention à l’aide de PowerShell. 
 
 Il existe actuellement quelques limitations dans Exchange Online :
 
-- L’audit au niveau de l’élément n’est pas disponible dans les boîtes aux lettres de groupe Office 365.
 - Les fils de communications ne sont pas disponibles pour les messages de conversation et le canal équipes.
 - Les mentions j’aime ne sont pas conservées pour les messages de conversation et le canal équipes.
+
+> [!NOTE]
+> L’audit au niveau de l’élément est désormais disponible pour les boîtes aux lettres de groupe Office 365. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md).

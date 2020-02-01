@@ -1,5 +1,7 @@
 ---
 title: Configurer des utilisateurs et des cas dans Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Découvrez comment configurer des rôles d’utilisateur, créer des cas et affecter des utilisateurs à des cas dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: e6fa3581fe15c089292e7585e7d053b817ae167b
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 754cc7d73fc3325c2525e3101d1378d55afea4de
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38685822"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601451"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurer des utilisateurs et des cas dans Office 365 Advanced eDiscovery
 
 Cette rubrique décrit comment configurer des utilisateurs et des cas pour Office 365 Advanced eDiscovery.
   
-> [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> [!IMPORTANT]
+> À mesure que nous continuons à investir dans les versions plus récentes de la découverte électronique avancée, nous annonçaons le retrait d’Office 365 Advanced eDiscovery (également appelé *Advanced eDiscovery v 1.0*). Si vous utilisez toujours Advanced eDiscovery v 1.0, effectuez une transition vers [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (également appelée *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2,0 contient des fonctionnalités similaires dans Advanced eDiscovery v 1.0, mais offre également de nombreuses nouvelles fonctionnalités telles que la gestion des dépositaires, la gestion des communications et les ensembles de révision. Pour en savoir plus sur le retrait de Advanced eDiscovery v 1.0, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
 ## <a name="prerequisites"></a>Conditions préalables
 

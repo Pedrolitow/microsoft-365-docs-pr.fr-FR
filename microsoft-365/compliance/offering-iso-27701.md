@@ -5,18 +5,21 @@ keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 69d105e41050c7c9d1b9fbcf37e891e430a79ef1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4bc6663efe704205787e1c69d4e6dd06122419c3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859374"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601911"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/CEI 27701 Système de gestion de l'information sur la protection de la vie privée (SGIP)
 
@@ -63,6 +66,11 @@ Points clés sur la norme ISO/IEC 27001 et SGIP :
 ## <a name="what-should-your-organization-do-with-pims"></a>Que doit faire votre organisation avec le SGIP ?
 
 Quelle que soit la taille de votre organisation, qu’il s’agisse d’un contrôleur ou d’un processeur, votre organisation doit envisager d’effectuer une certification, soit pour votre organisation, soit auprès d’un sous-traitants ou d’un fournisseur en fonction des besoins de votre entreprise. Cela s’applique particulièrement aux processeurs, sous-processeurs et co-contrôleurs qui traitent des volumes sensibles ou importants de données personnelles. Dans tous les cas, votre organisation devrait évaluer ses besoins opérationnels pour déterminer si la certification de ses propres produits et services est appropriée.
+
+## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
+
+- [Certification d’Azure ISO/IEC 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Rapport d’évaluation d’Azure ISO/CEI 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 
 ## <a name="resources"></a>Ressources
 

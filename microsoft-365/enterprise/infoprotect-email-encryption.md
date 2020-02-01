@@ -1,5 +1,7 @@
 ---
 title: 'Étape 6 : Configurer le chiffrement des e-mails'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Familiarisez-vous avec la gestion des accès privilégiés pour Office 365 et apprenez à la configurer.
-ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 252a5f76197deb1034d200553308a281ef079957
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370431"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600921"
 ---
 # <a name="step-6-configure-email-encryption"></a>Étape 6 : Configurer le chiffrement des e-mails
 
-*Cette étape facultative s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
+*Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 6 : protection des informations](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6 : Protection des informations](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Il existe trois types de chiffrement de courrier électronique dans Microsoft 365.
 
@@ -79,4 +81,4 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](inf
 
 |||
 |:-------|:-----|
-|![Étape 7](./media/stepnumbers/Step7.png)|[Configurez la gestion des accès privilégiés pour Office 365](infoprotect-configure-privileged-access-management.md)|
+|![Étape 7](./media/stepnumbers/Step7.png)|[Configurez la gestion des accès privilégiés pour Office 365](infoprotect-configure-privileged-access-management.md)|

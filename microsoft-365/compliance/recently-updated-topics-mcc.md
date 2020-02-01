@@ -1,5 +1,7 @@
 ---
 title: Nouveautés du centre de conformité Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: brendonb
 author: brendonb
 manager: laurawi
@@ -16,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Nous créons en permanence de nouveaux articles, en mettant à jour ceux existants et en apportant des modifications en fonction de vos commentaires. Découvrez les nouveautés et mises à jour ce mois-ci.
-ms.openlocfilehash: 61e4798575c44a9759a15bb93dbbb723d5be8999
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850878"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601651"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -131,7 +133,7 @@ Ajout de nouveaux conseils aux articles suivants relatifs à la loi CCPA (Califo
 
 [Configurer des stratégies de surveillance pour votre organisation](configure-supervision-policies.md) (mise à jour)<br>Suppression des détails sur l’utilisation d’Outlook pour effectuer des révisions. À la place, utilisez les options de révision et de marquage disponibles dans l’interface utilisateur de supervision.
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="auditing"></a>Audit
 

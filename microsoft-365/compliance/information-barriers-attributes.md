@@ -1,5 +1,7 @@
 ---
 title: Attributs pour les stratégies d’obstacle aux informations
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez cet article comme référence pour différents attributs que vous pouvez utiliser dans les stratégies de barrière des informations.
-ms.openlocfilehash: 12acaa4fb8d6bcd6c660381b172703bd178af81f
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: ff7b6e22370c086f6b685fce4de8b61396017bf9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970782"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600621"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attributs pour les stratégies d’obstacle aux informations
 
@@ -87,7 +89,7 @@ Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les b
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
 |UserPrincipalName  |UserPrincipalName  |
-|Courrier Outlook   |WindowsEmailAddress    |
+|Application de messagerie   |WindowsEmailAddress    |
 |Description    |Description    |
 |MemberOf   |MemberOfGroup  |
 

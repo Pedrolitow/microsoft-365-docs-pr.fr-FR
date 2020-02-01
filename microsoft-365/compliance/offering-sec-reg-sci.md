@@ -5,6 +5,8 @@ keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: de28f982fe7615d0ca81af756af81b3c25fc9de1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807698"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601861"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission : réglementation sur la conformité et l’intégrité des systèmes (SIC)
 
@@ -50,7 +52,7 @@ Ce document fournit une liste de contrôle approfondie des zones ciblées du SIC
 - [Guide de mise en œuvre de la réglementation SIC](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers): mappe les fonctionnalités Azure sur le règlement et détaille la responsabilité partagée de la conformité.
 - [Conception d’applications Azure fiables](https://docs.microsoft.com/azure/architecture/resiliency/): présentation succincte de la façon de créer la fiabilité à chaque étape de la conception d’une application Azure.
 - [Conception d’applications à haut niveau de disponibilité](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): les développeurs peuvent s’assurer que leurs applications de stockage Azure sont hautement disponibles.
-- [Guide d'évaluation des risques et de la conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de régulation.
+- [Guide d'évaluation des risques et de conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
 
 ## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
@@ -71,8 +73,8 @@ Les organismes financiers ou les entités SCI, soumis à cette réglementation, 
 - [Conformité des services financiers dans Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Services financiers Microsoft](https://aka.ms/FinServ-Compliance)
 - [Règles Microsoft et SEC 17A -4](offering-SEC-17a-4.md)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf) (disponible uniquement en anglais pour le moment).

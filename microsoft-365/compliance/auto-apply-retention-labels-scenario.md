@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ce scénario de solution illustre comment gérer le cycle de vie de documents relatifs aux produits stockés dans SharePoint Online à l’aide d’étiquettes de rétention Office 365. Pour ce faire, vous pouvez utiliser les métadonnées de document pour classifier le contenu, et spécifiquement en appliquant automatiquement des étiquettes de rétention Office 365 et en configurant la rétention basée sur les événements.
-ms.openlocfilehash: 7e0c688502922903cf2c17345713579bf04cc55a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca3dd4699a608d2e3313efa3c10fc61b72f9b36e
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596371"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628110"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gérer le cycle de vie des documents SharePoint avec étiquettes de rétention
 
@@ -282,7 +282,7 @@ Pour ce scénario, nous utilisons le flux suivant pour déclencher l’événeme
 
 Pour créer ce flux, commencez à partir d’un connecteur SharePoint et sélectionnez le déclencheur**Lorsqu’un élément est créé ou modifié**. Spécifiez l’adresse du site et le nom de la liste, puis ajoutez une condition basée sur la date à laquelle la valeur de la colonne de liste **En production** est définie sur **Aucun** (ou égal à faux dans la carte de condition). Ajoutez ensuite une action basée sur le modèle HTTP intégré. Utilisez les valeurs de la section suivante pour configurer l’action HTTP. Vous pouvez copier les valeurs des propriétés d’URI et de corps de la section ci-dessous, puis les coller dans le modèle.
 
-- **Method**: PUBLIER
+- **Method** : PUBLIER
 - **URI** : https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
 - **Headers** : Clé = Type de contenu, Valeur = application/atom+xml
 - **Body** :
@@ -348,3 +348,9 @@ Dans la capture d’écran précédente, nous pouvons également voir qu’il ex
 ## <a name="summary"></a>Résumé
 
 Cet article illustre un scénario de gestion des documents dans lequel nous avons appliqué automatiquement une étiquette de rétention basée sur une colonne de site dans SharePoint. Nous avons ensuite utilisé la rétention basée sur les événements et Microsoft Flow pour déclencher automatiquement le début de la période de rétention sur la base d’un événement externe.
+
+## <a name="credits"></a>Crédits
+
+Ce scénario a été créé par : 
+
+Frederic Lapierre<br/>Consultant principal, services Microsoft

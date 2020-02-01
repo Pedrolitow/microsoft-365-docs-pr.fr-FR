@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du catalogue de solutions Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le catalogue de solutions Microsoft 365, y compris son contenu, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 54f66932f16e094b2ed970596c35e4754763aafc
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 57591d385ce05454151b9ed28c5d764096d9e95b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260079"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602741"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Vue d’ensemble du catalogue de solutions Microsoft 365 (version préliminaire)
 
@@ -81,7 +83,7 @@ La section **réponse &** de la recherche sur la page d’accueil vous montre co
 
 - Pour visiter le catalogue de solutions Microsoft 365, accédez [https://compliance.microsoft.com](https://compliance.microsoft.com) à et connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Sélectionnez **catalogue** dans le volet de navigation sur le côté gauche de l’écran pour ouvrir la page d’accueil du catalogue.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Pourquoi ne puis-je pas encore voir le nouveau catalogue de solutions Microsoft 365 ?**
 

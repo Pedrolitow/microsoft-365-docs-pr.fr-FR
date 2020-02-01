@@ -2,6 +2,8 @@
 title: Combinaison des stratégies et des protections lorsque le courrier est marqué par un indicateur rouge
 description: Décrit les stratégies et les protections qui s’appliquent lorsque le courrier électronique rencontre plusieurs protections et est analysé par plusieurs formes de détection. Les stratégies appliquées et les actions à effectuer, quand le courrier électronique est marqué comme programme malveillant, courrier indésirable, courrier indésirable à confiance élevée, hameçonnage et en bloc par EOP et/ou ATP.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -12,12 +14,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c6b3fcc931aa396187eb81d0db495f77877f667b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807986"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599171"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Quelle stratégie s’applique lorsque plusieurs méthodes de protection et analyses de détection s’exécutent sur votre courrier électronique
 
@@ -29,11 +31,11 @@ Les stratégies ci-dessous s’appliquent à _toutes les organisations_.
 
 |Priority |Stratégie  |Catégorie  |Où Managed |
 |---------|---------|---------|---------|
-|0,1     | Programme malveillant      | MALW      | Stratégie anti-programme malveillant   |
-|n°2     | Hameçonnage     | PHSH     | Configuration de vos stratégies de filtrage du courrier indésirable     |
-|3     | Courrier fortement suspecté d’être indésirable      | HSPM        | Configuration de vos stratégies de filtrage du courrier indésirable        |
-|4     | Usurpation        | SPOOF        | Stratégie anti-hameçonnage, aide à l’usurpation d’identité        |
-|disque     | Courrier indésirable         | SPM         | Configuration de vos stratégies de filtrage du courrier indésirable         |
+|1      | Programme malveillant      | MALW      | Stratégie anti-programme malveillant   |
+|2      | Hameçonnage     | PHSH     | Configuration de vos stratégies de filtrage du courrier indésirable     |
+|3      | Courrier fortement suspecté d’être indésirable      | HSPM        | Configuration de vos stratégies de filtrage du courrier indésirable        |
+|4      | Usurpation        | SPOOF        | Stratégie anti-hameçonnage, aide à l’usurpation d’identité        |
+|5      | Courrier indésirable         | SPM         | Configuration de vos stratégies de filtrage du courrier indésirable         |
 |6      | Courrier en nombre         | BULK        | Configuration de vos stratégies de filtrage du courrier indésirable         |
 
 En outre, ces stratégies s’appliquent aux _organisations avec ATP_.
@@ -47,8 +49,8 @@ Par exemple, si vous avez deux stratégies avec leurs priorités respectives :
 
 |Stratégie  |Priority  |Emprunt d’identité d’utilisateur/de domaine  |Détection d’usurpation d’identité  |
 |---------|---------|---------|---------|
-|A     | 0,1        | Activé        |Désactivé         |
-|B     | n°2        | Désactivé        | Activé        |
+|A     | 1         | Activé        |Désactivé         |
+|B     | 2         | Désactivé        | Activé        |
 
 Si un message est identifié à la fois comme _emprunt d’identité d’utilisateur_ et _usurpation_ (reportez-vous à la rubrique anti-usurpationing dans le tableau ci-dessus), et que le même ensemble d’utilisateurs étendu à la stratégie a est inclus dans la stratégie B, le message est marqué et traité comme une _usurpation_. Toutefois, aucune action n’est appliquée, car si l’usurpation d’identité a une priorité plus élevée (4) que l’emprunt d’identité d’utilisateur (8), la détection d’usurpation d’identité est désactivée.
 

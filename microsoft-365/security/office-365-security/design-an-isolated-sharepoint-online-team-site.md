@@ -1,5 +1,7 @@
 ---
 title: Conception d’un site d’équipe SharePoint Online isolé
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Résumé : Découvrez comment concevoir des sites d’équipe SharePoint Online.'
-ms.openlocfilehash: 671baadb3f7226be8c9919874f62cee576f7d294
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 345a5fa5dcdcf2a3e61fdd6f1f346d46afe3fd5f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37080129"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599471"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Conception d’un site d’équipe SharePoint Online isolé
 
@@ -73,7 +75,7 @@ Les groupes Azure AD pour Office 365 sont différents des groupes Office 365. Le
     
     Il s’agit de groupes qui ont été créés dans votre infrastructure AD DS sur site et synchronisés avec votre abonnement Office 365. Dans le centre d’administration 365 de Microsoft, ces groupes ont l' **État** **synchronisé avec Active Directory**.
     
-- Office 365
+- Office 365
     
     Il s’agit de groupes qui ont été créés à l’aide du centre d’administration Microsoft 365, du portail Azure ou de Microsoft PowerShell. Dans le centre d’administration 365 de Microsoft, ces groupes ont l' **État** **Cloud**.
     

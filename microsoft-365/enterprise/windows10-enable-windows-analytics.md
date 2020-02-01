@@ -9,17 +9,19 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: a6e197c7e95f70163c01f0064877811858062b36
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 964756a1fadba89f644a0d04c1d35d2945b78c6c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370091"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602871"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>Étape 4 : surveillance de la conformité et de l’état du périphérique
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics utilise des données de diagnostic pour fournir des informations riches et exploitables qui vous aideront à mieux comprendre l'efficacité opérationnelle et l’état des périphériques de Windows 10 dans votre environnement.
 

@@ -1,5 +1,7 @@
 ---
 title: Protection du courrier Office 365 contre le courrier indésirable
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Découvrez les paramètres de blocage du courrier indésirable et les filtres qui vous permettront d’éviter le courrier indésirable dans Exchange Online et Office 365. Vous recevez trop de courrier indésirable dans Office 365 ? Vous pouvez personnaliser vos filtres de courrier indésirable et votre stratégie de blocage du courrier indésirable.
-ms.openlocfilehash: 33a1415306dcfc635e6c5608f3834b79932d9420
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238531"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599861"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protection du courrier Office 365 contre le courrier indésirable
 

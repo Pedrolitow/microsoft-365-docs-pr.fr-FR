@@ -5,6 +5,8 @@ keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad9659799494a3aaad4a3436b263ebcfd2b56d1c
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0cd96d9b7d769f75d5b7f26bb364cf517844e29d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112498"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602521"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorisation provisoire du ministère américain de la défense aux niveaux d’impact 2, 4 et 5
 
@@ -56,7 +58,7 @@ En fonction des autorisations FedRAMP, DISA service de Cloud Computing a accord�
 
 Le niveau d’impact 2 couvre les informations non classifiées non contrôlées, c’est-à-dire les données qui sont autorisées pour la publication publique. Elle couvre également d’autres informations non classées qui, bien qu’elles ne sont pas considérées comme critiques, continuent à avoir un niveau de contrôle d’accès minimal. Cette autorisation permet aux clients du secteur public fédéral de déployer des informations non sensibles et des sites Web de défense de base sur les services Cloud de Microsoft à l’échelle de l’étendue.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Services couverts pour le niveau d’impact DoD 5
 
@@ -83,7 +85,7 @@ Une fois qu’un DoD PA est accordé, les services de Cloud Computing Microsoft 
 
 Prenez le temps de tirer parti des avantages du Cloud dans le secteur public avec le plan de défense du département de sécurité et de conformité Azure. Ce plan fournit des outils et des conseils pour vous aider à créer des solutions conformes au DoD dès aujourd’hui. [Commencez à utiliser le modèle Azure DoD](https://aka.ms/Azure-Blueprint-DoD-NIST).
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Puis-je tirer profit de la conformité Microsoft dans le processus de certification de mon organisation ?**
 
@@ -103,7 +105,7 @@ En outre, les offres Microsoft en dehors de la frontière FedRAMP qui pourraient
 - [Prise en charge du service Cloud DISA](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [Protection des informations non classifiées contrôlées dans les organisations et les systèmes d’information non fédéraux](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [Infrastructure NIST Cybersecurity](https://www.nist.gov/cyberframework)
-- [Cadre de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

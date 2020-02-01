@@ -1,5 +1,7 @@
 ---
 title: Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: 7d7288b85660c5569c748a3cb24a1d3cd027b72d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971752"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599391"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur
 
@@ -184,6 +186,6 @@ Si vous cliquez sur **Actualiser** ![l’actualisation](../media/ITPro-EAC-Refre
 
 Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](../media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [FAQ sur la mise en quarantaine](quarantine-faq.md)

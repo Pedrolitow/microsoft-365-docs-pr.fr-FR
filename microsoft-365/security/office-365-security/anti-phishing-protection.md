@@ -1,5 +1,7 @@
 ---
 title: Protection anti-hameçonnage dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: Office 365 offre une large gamme de protection contre les attaques par hameçonnage par défaut, ainsi que par des offres supplémentaires telles que l’anti-hameçonnage ATP. Cette rubrique présente les ressources en ligne que vous pouvez utiliser pour découvrir et implémenter les stratégies et les options d’anti-hameçonnage dans Office 365.
-ms.openlocfilehash: e5d80a62d8606f8e429c4c998c21547bf150b51c
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 254bc3f5b1dc07da9dce3012345477605fb738c0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971966"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599901"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Protection anti-hameçonnage dans Office 365
 
@@ -38,7 +40,7 @@ Pour les organisations Office 365 avec Office entreprise E5, vous pouvez utilise
 
 Pour plus d’informations sur la configuration par défaut d’Office 365 pour vous protéger contre les attaques par hameçonnage, voir [How office 365 valide l’adresse from : pour empêcher le hameçonnage](how-office-365-validates-the-from-address.md).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Comment Office 365 valide l’adresse De : pour empêcher des attaques par hameçonnage](how-office-365-validates-the-from-address.md)
 

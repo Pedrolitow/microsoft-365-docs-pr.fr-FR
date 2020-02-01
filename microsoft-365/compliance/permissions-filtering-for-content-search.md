@@ -1,5 +1,7 @@
 ---
 title: Configuration du filtrage des autorisations pour la recherche de contenu
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utiliser le filtrage des autorisations de recherche de contenu pour permettre à un gestionnaire eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation Office 365.
-ms.openlocfilehash: 97f01a7d0c91359251b4af2a26fe9c48aab7122e
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 670dd2e5d0c88c520234cd7e71805cfa97ad9ec9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685976"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601761"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configuration du filtrage des autorisations pour la recherche de contenu
 
@@ -42,7 +44,7 @@ Le filtrage des autorisations de recherche est pris en charge par la fonctionnal
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour exécuter les cmdlets du filtre de sécurité de conformité, vous devez être membre du groupe de rôles gestion de l’organisation dans le centre de sécurité & conformité. Pour plus d’informations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- Pour exécuter les cmdlets du filtre de sécurité de conformité, vous devez être membre du groupe de rôles gestion de l’organisation dans le centre de sécurité & conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
     
 - Vous devez connecter Windows PowerShell au centre de sécurité & au centre de conformité et à votre organisation Exchange Online pour utiliser les cmdlets de filtrage de sécurité de conformité. Cela est nécessaire, car ces applets de commande nécessitent un accès aux propriétés de boîte aux lettres, ce qui explique pourquoi vous devez vous connecter à Exchange Online. Consultez les étapes décrites dans la section suivante. 
     
