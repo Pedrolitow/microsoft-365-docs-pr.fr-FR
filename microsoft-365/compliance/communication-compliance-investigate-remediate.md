@@ -1,5 +1,5 @@
 ---
-title: Examiner et corriger les alertes de conformité des communications (préversion)
+title: Examiner et corriger les alertes de conformité des communications
 description: Examinez et corrigez les alertes de conformité des communications dans Microsoft 365.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0bf47842945d904c30c8a034d2ed255a743332ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595821"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661950"
 ---
-# <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Examiner et corriger les alertes de conformité des communications (préversion)
+# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
 Une fois que vous avez configuré vos stratégies de conformité de communication, vous commencerez à recevoir des alertes dans le centre de conformité Microsoft 365 pour les problèmes de message qui correspondent à vos conditions de stratégie. Suivez les instructions de flux de travail ici pour examiner et résoudre les problèmes d’alerte.
 
@@ -70,7 +70,7 @@ Pour obtenir la liste complète des filtres et des détails sur les champs, voir
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Utilisation de l’analyse near et de la copie exacte
 
-Les stratégies de conformité des communications analysent et regroupent automatiquement les doublons de messages proches et exactes sans aucune étape de configuration supplémentaire. Cela vous permet de corriger rapidement les messages similaires, un par un ou en tant que groupe, réduisant ainsi la charge d’enquête de message pour les relecteurs. Lorsque des doublons sont détectés, les contrôles **des doublons et/** ou des doublons **exactes** s’affichent dans la barre d’outils action de correction.
+Les stratégies de conformité des communications analysent et regroupent automatiquement les doublons de messages proches et exactes sans aucune étape de configuration supplémentaire. Cet affichage vous permet de corriger rapidement les messages similaires, un par un ou en tant que groupe, réduisant ainsi la charge d’enquête de message pour les relecteurs. Lorsque des doublons sont détectés, les contrôles **des doublons et/** ou des doublons **exactes** s’affichent dans la barre d’outils action de correction.
 
 #### <a name="to-remediate-duplicates"></a>Pour corriger les doublons
 
@@ -116,5 +116,6 @@ Quelle que soit l’endroit où vous commencez à examiner les alertes ou le fil
     - **Balise comme**: balise le message comme étant *conforme*, *non conforme*ou comme étant *question* en relation avec les stratégies et les normes de votre organisation. L’ajout de balises et de commentaires de marquage peut vous aider à filtrer les alertes de stratégie pour les escalades ou dans d’autres processus de révision interne. Une fois le marquage terminé, vous pouvez également choisir de résoudre le message pour le déplacer de la file d’attente de révision en attente.
     - **Notifier**: vous pouvez utiliser le contrôle **Notify** pour affecter un modèle d’avertissement personnalisé à l’alerte et envoyer un avertissement à l’utilisateur. Choisissez le modèle d’avertissement approprié, puis sélectionnez **Envoyer pour envoyer** un rappel à l’employé qui a envoyé le message et résoudre le problème.
     - **Escalade**: à l’aide du contrôle d' **escalade** , vous pouvez choisir les autres personnes de votre organisation qui doivent consulter le message. Dans la liste des relecteurs configurés, effectuez une sélection pour envoyer une notification par courrier électronique demandant une révision supplémentaire de l’alerte de message. Le réviseur sélectionné peut utiliser un lien dans la notification par courrier électronique pour accéder directement aux éléments qui y sont réaffectés à des fins de révision.
+    - **Créer un cas**: à l’aide du contrôle **créer un cas** , vous pouvez créer un nouveau [cas eDiscovery avancé](overview-ediscovery-20.md) pour un ou plusieurs messages. Vous fournirez un nom et des remarques pour le nouvel incident, et l’utilisateur qui a envoyé le message correspondant à la stratégie est automatiquement affecté comme dépositaire de cas. Vous n’avez pas besoin d’autorisations supplémentaires pour gérer le cas. La création d’un cas ne permet pas de résoudre ou de créer une nouvelle balise pour le message.
 
 4. **Déterminez si les détails du message doivent être archivés en dehors de la conformité de la communication**: les détails du message peuvent être exportés ou téléchargés si vous devez archiver les messages dans une solution de stockage distincte. La sélection du contrôle de **Téléchargement** ajoute automatiquement les messages sélectionnés à un. Fichier ZIP qui peut être enregistré en dehors de Microsoft 365.

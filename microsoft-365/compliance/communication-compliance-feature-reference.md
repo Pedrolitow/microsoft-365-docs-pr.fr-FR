@@ -1,5 +1,5 @@
 ---
-title: Référence de la fonctionnalité de conformité de la communication (aperçu)
+title: Référence de la fonctionnalité de conformité des communications
 description: Référence de la fonctionnalité de conformité de la communication dans Microsoft 365. Découvrez les détails et les spécifications de chacun des composants fonctionnels.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b844003b2cf0da80588d9fe2622c3353a57d73b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ff765d309e3f01dbc1c2ef7fa75ed3287c8a5c0a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595831"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661960"
 ---
-# <a name="communication-compliance-feature-reference-preview"></a>Référence de la fonctionnalité de conformité de la communication (aperçu)
+# <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
 ## <a name="policies"></a>Stratégies
 
@@ -67,14 +67,14 @@ Avec les stratégies de conformité de communication, vous pouvez choisir d’an
 
 - **Microsoft teams**: les communications de conversation et les pièces jointes associées dans les canaux Microsoft teams publics et privés et dans des conversations individuelles peuvent être analysées. Les conversations de teams correspondant aux conditions de stratégie de conformité de communication sont traitées une fois toutes les 24 heures, puis disponibles dans les rapports de conformité des communications. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams :
 
-    - **Pour les communications de conversation de teams :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Il s’agit des relations utilisateur/conversation un-à-un ou un-à-plusieurs.
+    - **Pour les communications de conversation de teams :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre est destiné aux relations utilisateur/conversation un-à-un ou un-à-plusieurs.
     - **Pour les communications de canal teams :** Affectez tous les groupes Microsoft Team Channel ou Office 365 que vous souhaitez analyser qui contiennent un utilisateur spécifique à la stratégie de conformité de communication. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft teams ou à des groupes Office 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de conformité des communications.
 
 - **Messagerie Exchange**: les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles pour l’analyse des messages. Les e-mails et les pièces jointes correspondant à des conditions de stratégie de conformité de communication sont immédiatement disponibles dans les rapports de conformité de communication. Les types de pièces jointes prises en charge pour la conformité de la communication sont les mêmes que ceux [pris en charge pour les inspections de contenu de règle de flux de messagerie Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 - **Skype entreprise Online**: les communications de conversation et les pièces jointes associées dans Skype entreprise Online peuvent être surveillées. Les conversations Skype entreprise Online correspondant à des conditions de stratégie de conformité de communication sont traitées une fois toutes les 24 heures, puis disponibles dans les rapports de conformité des communications. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
 
-    - **Pour les communications de conversation de Skype entreprise Online**: affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Il s’agit des relations utilisateur/conversation un-à-un ou un-à-plusieurs.
+    - **Pour les communications de conversation de Skype entreprise Online**: affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre est destiné aux relations utilisateur/conversation un-à-un ou un-à-plusieurs.
 
 - **Sources**tierces : vous pouvez analyser les communications à partir de sources tierces pour les données importées dans des boîtes aux lettres dans votre organisation Microsoft 365. Les connecteurs prennent en charge les ressources tierces suivantes :
 
@@ -85,7 +85,7 @@ Avec les stratégies de conformité de communication, vous pouvez choisir d’an
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Connecteur de données personnalisé](archiving-third-party-data.md)
 
-Vous devez configurer un connecteur tiers pour votre organisation Microsoft 365 avant de pouvoir attribuer le connecteur à une stratégie de conformité de communication. La section **sources** tierces de l’Assistant stratégie de conformité des communications affiche uniquement les connecteurs tiers actuellement configurés.
+Vous devez configurer un connecteur tiers pour votre organisation Microsoft 365 avant de pouvoir attribuer le connecteur à une stratégie de conformité de communication. La section **sources tierces** de l’Assistant stratégie de conformité des communications affiche uniquement les connecteurs tiers actuellement configurés.
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transition de la surveillance dans Office 365
 
@@ -117,7 +117,7 @@ Vous pouvez inclure des types d’informations sensibles dans le cadre de votre 
 
 - Financier
 - Médecine et santé
-- Confidentialité
+- Politique de confidentialité
 - Type d’informations personnalisées
 
 Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez la rubrique [types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
@@ -223,7 +223,7 @@ Les filtres de conformité de la communication vous permettent de filtrer et de 
 | **Classe file** | Classe du message en fonction du type de message, qu’il *s’agisse d’un message ou* d’une *pièce jointe*. |
 | **Avec pièce jointe** | Présence d’une pièce jointe dans le message. |
 | **Classe d’élément** | Source du message en fonction du type de message, de la messagerie électronique, de la conversation Microsoft Team, de Bloonmberg, etc. |
-| **Domaines de destinataires** | Domaine auquel le message a été envoyé. Il s’agit normalement de votre domaine d’abonnement Microsoft 365 par défaut. |
+| **Domaines de destinataires** | Domaine auquel le message a été envoyé. Ce domaine est normalement votre domaine d’abonnement Microsoft 365 par défaut. |
 | **Destinataire** | Utilisateur auquel le message a été envoyé. |
 | **Expéditeur** | La personne qui a envoyé le message. |
 | **Domaine de l’expéditeur** | Le domaine qui a envoyé le message. |
@@ -270,19 +270,19 @@ Si vous souhaitez modifier le niveau de gravité affecté dans une stratégie d�
 
 ## <a name="audit"></a>Contrôlé
 
-Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Il peut s’agir d’un résumé de toutes les activités associées à une stratégie d’organisation définie ou à chaque fois qu’une stratégie de conformité de communication est modifiée. Les stratégies de conformité des communications disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Les historiques d’audit détaillés de chaque action de création, de modification et de suppression sont capturés par vos stratégies de communication afin de fournir des preuves de procédures de surveillance.
+Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Ces informations peuvent être un résumé de toutes les activités associées à une stratégie d’organisation définie ou à chaque fois qu’une stratégie de conformité de communication est modifiée. Les stratégies de conformité des communications disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Les historiques d’audit détaillés de chaque action de création, de modification et de suppression sont capturés par vos stratégies de communication afin de fournir des preuves de procédures de surveillance.
 
 >[!Important]
->L’audit doit être activé pour votre organisation pour que les événements de conformité de la communication soient enregistrés. Pour activer l’audit, consultez [la rubrique activer l’audit pour vos stratégies de conformité de communication](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>L’audit doit être activé pour votre organisation pour que les événements de conformité de la communication soient enregistrés. Pour activer l’audit, consultez [la rubrique activer l’audit pour vos stratégies de conformité de communication](communication-compliance-configure.md#step-6-optional-enable-auditing-for-your-communication-compliance-policies).
 
-Pour afficher les activités de stratégie de conformité de communication, sélectionnez le contrôle **Exporter les activités de révision** dans la page principale pour n’importe quelle stratégie. Cela génère un fichier d’audit au format. csv qui contient les informations suivantes :
+Pour afficher les activités de stratégie de conformité de communication, sélectionnez le contrôle **Exporter les activités de révision** dans la page principale pour n’importe quelle stratégie. Cette action génère un fichier d’audit au format. csv qui contient les informations suivantes :
 
 |**Field**|**Détails**|
 |:-----|:-----|
-| **CreationDate** | Lors de l’exécution de l’activité dans une stratégie. |
+| **CreationDate** | Date à laquelle l’activité a été effectuée dans une stratégie. |
 | **UserIds** | Utilisateur qui a exécuté l’activité dans une stratégie. |
 | **Operations** | Les opérations effectuées sur la stratégie. |
-| **AuditData** | Il s’agit du champ de source de données principal pour toutes les activités de stratégie. Toutes les activités sont enregistrées et séparées par des virgules. |
+| **AuditData** | Ce champ est la source de données principale pour toutes les activités de stratégie. Toutes les activités sont enregistrées et séparées par des virgules. |
 
 Vous pouvez également afficher les activités d’audit dans le journal d’audit unifié ou avec l’applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: aa61c9c2fd79625249384f12a2545f976fdae538
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cde55f9dd3a1a9aacc48ba816cd0ef00472dad56
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601241"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661740"
 ---
 # <a name="view-documents-in-a-review-set"></a>Afficher les documents d’un jeu à réviser
 
@@ -87,3 +87,6 @@ L’affichage Annoted propose des fonctionnalités qui permettent aux utilisateu
     
     ![Annoter l’affichage
     ](media/Reviewimage1.png)
+
+## <a name="dashboard-view"></a>Affichage tableau de bord 
+L’affichage tableau de bord vous permet de visualiser et de synthétiser les données dans la grille des résultats de la recherche. Dans cet affichage, vous pouvez créer des widgets personnalisés pour faciliter et faciliter l’analyse et la création de rapports sur votre jeu de révision. Une fois que vous avez créé vos widgets, vous pouvez interagir avec ceux-ci pour obtenir le nombre d’éléments ou pour créer une recherche. 

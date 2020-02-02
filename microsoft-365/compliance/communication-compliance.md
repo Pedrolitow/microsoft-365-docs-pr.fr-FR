@@ -1,5 +1,5 @@
 ---
-title: Conformité de la communication (aperçu)
+title: Conformité des communications
 description: En savoir plus sur la conformité des communications dans Microsoft 365
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8aa7beeea621ccbb0014059766fe217c1a25e2a2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595811"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661940"
 ---
-# <a name="communication-compliance-in-microsoft-365-preview"></a>Conformité de la communication dans Microsoft 365 (version d’évaluation)
+# <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
 La conformité des communications fait partie de la nouvelle solution de risque initiée dans Microsoft 365 qui permet de réduire les risques de communication en vous aidant à détecter, capturer et prendre des mesures correctives pour les messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications internes et externes des correspondances de stratégie pour qu’elles puissent être examinées par les relecteurs désignés. Les relecteurs peuvent analyser les e-mails analysés, Microsoft teams ou les communications tierces au sein de votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’ils sont conformes aux standards de messages de votre organisation.
 
@@ -114,8 +114,8 @@ L’identification et la résolution des problèmes de conformité à l’aide d
 
 Dans cette étape du flux de travail, vous identifiez vos besoins en matière de conformité et configurez les stratégies de conformité de communication applicables. Les modèles de stratégie constituent un excellent moyen de configurer rapidement une nouvelle stratégie de conformité, mais aussi de modifier et de mettre à jour rapidement les stratégies à mesure que vos besoins évoluent. Par exemple, vous pouvez tester rapidement une stratégie de langue choquante et de blocage sur les communications pour un petit groupe d’utilisateurs avant de configurer une stratégie pour tous les utilisateurs de votre organisation.
 
-> [!Important]
-> Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Pour activer les autorisations pour les fonctionnalités de conformité de communication, consultez la rubrique [rendre la conformité de la communication disponible dans votre organisation](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required).
+>[!Important]
+>Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Pour activer les autorisations pour les fonctionnalités de conformité de communication, consultez la rubrique [rendre la conformité de la communication disponible dans votre organisation](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
 Vous pouvez choisir parmi les modèles de stratégie suivants dans le centre de conformité Microsoft 365 :
 
@@ -143,6 +143,7 @@ L’étape suivante consiste à corriger les problèmes de conformité de commun
 - **Avertir l’utilisateur**: les utilisateurs ont souvent enfreint ou non accidentellement une stratégie de conformité de communication. Vous pouvez utiliser la fonctionnalité Notify pour avertir l’utilisateur et résoudre le problème.
 - **Escalade à un autre réviseur**: parfois, le réviseur initial d’un problème a besoin d’une entrée d’autres réviseurs pour vous aider à résoudre l’incident. Vous pouvez facilement escalader les problèmes de message aux réviseurs d’autres domaines de votre organisation dans le cadre du processus de résolution.
 - **Marquer comme faux positif**: les messages détectés de manière incorrecte en tant que correspondance des stratégies de conformité seront parfois déformés pour le processus de révision. Vous pouvez marquer ces types d’alertes comme faux positifs et résoudre automatiquement le problème.
+- **Créer un cas**: dans les situations les plus graves, il se peut que vous deviez partager des informations de conformité de communication avec d’autres réviseurs de votre organisation. La conformité des communications est étroitement intégrée aux autres fonctionnalités de conformité de Microsoft 365 pour vous aider à résoudre les risques de bout en bout. La transmission d’un cas pour l’enquête vous permet de transférer des données et de gérer le cas vers Advanced eDiscovery dans Microsoft 365. Advanced eDiscovery fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu réactif aux investigations internes et externes de votre organisation. Elle permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de suspension légale. Pour en savoir plus sur les cas avancés de découverte électronique, consultez la rubrique [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Surveiller
 

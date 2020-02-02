@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: Découvrez comment conserver le contenu des boîtes aux lettres des anciens employés en transformant la boîte aux lettres en boîte aux lettres inactive. Pour ce faire, vous pouvez placer la boîte aux lettres en conservation pour litige ou appliquer une stratégie de rétention Office 365 à la boîte aux lettres, puis supprimer le compte Office 365 correspondant.
-ms.openlocfilehash: 7b60ce92382c0b8111dcf4c1b8d9fb4c793717c6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75ede1ae199bdecfea2662a187c3965cc2b676d7
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597941"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661879"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Vue d’ensemble des boîtes aux lettres inactives dans Office 365
 
@@ -85,7 +85,7 @@ Si une stratégie de rétention Exchange (la fonctionnalité de gestion des enre
   
 ## <a name="creating-an-inactive-mailbox"></a>Création d’une boîte aux lettres inactive
 
-Pour désactiver une boîte aux lettres, vous devez lui avoir affecté une licence Exchange Online plan 2 (ou une licence Exchange Online plan 1 avec une licence de module complémentaire d’archivage Exchange Online) de sorte qu’une stratégie de rétention de mise en attente pour litige ou Office 365 puisse être appliquée à la boîte aux lettres avant qu’elle ne soit supprimés. Une fois la boîte aux lettres supprimée, toutes les licences Exchange Online associées seront disponibles pour les affecter à un nouvel utilisateur. Les boîtes aux lettres inactives ne requièrent pas de licences en cours.
+Pour désactiver une boîte aux lettres, vous devez lui avoir affecté une licence Exchange Online plan 2 (ou une licence Exchange Online plan 1 avec une licence de module complémentaire d’archivage Exchange Online) de sorte qu’une stratégie de rétention de mise en attente pour litige ou Office 365 puisse être appliquée à la boîte aux lettres avant qu’elle ne soit supprimés. Une fois la boîte aux lettres supprimée, toutes les licences Exchange Online associées seront disponibles pour les affecter à un nouvel utilisateur.
   
 Le tableau suivant résume le processus de création d'une boîte aux lettres inactive pour différents scénarios de rétention. Pour plus d’informations, consultez la rubrique [gestion des boîtes aux lettres inactives dans Office 365](create-and-manage-inactive-mailboxes.md).
   

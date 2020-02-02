@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Microsoft 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
-ms.openlocfilehash: 8dafaf45df0d681880ef513c9feab6b833c99cb8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 267b2bc7a8bc65e3a816c2d3d88397589734b55d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595229"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661930"
 ---
 # <a name="overview-of-disposition-reviews"></a>Vue d’ensemble des révisions de destruction
 
@@ -128,7 +128,7 @@ Sur la page **destruction en attente** , vous pouvez afficher les impositions en
   
 - La **disposition en attente** indique les éléments qui ont atteint la fin de leur période de rétention et nécessitent une révision de la disposition. Après avoir vérifié chaque élément, déterminez si vous voulez appliquer une étiquette de rétention différente, étendez sa période de rétention ou supprimez-la définitivement. Vous pouvez sélectionner plusieurs éléments.
     
-- L’onglet **éléments** supprimés indique que les mises en destruction ont été approuvées pour suppression lors d’une révision de disposition et qu’elles sont maintenant en cours de suppression définitive ou des éléments marqués comme enregistrements qui ont été supprimés. Les éléments auxquels une étiquette de rétention différente a été appliquée ou leur période de rétention étendue dans le cadre d’une révision ne s’affichent pas ici.
+- L’onglet **éléments** supprimés affiche les éléments supprimés définitivement qui ont déjà été vérifiés. Ils s’affichent dans la mesure où le processus de suppression permanente peut prendre plusieurs jours, comme indiqué dans la section ci-dessus. Les éléments auxquels une étiquette de rétention différente a été appliquée ou dont la période de rétention a été étendue dans le cadre d’une révision ne s’affichent pas ici.
 
 ![Onglets de disposition](media/Retention-Disposition-tabs.png)
     
