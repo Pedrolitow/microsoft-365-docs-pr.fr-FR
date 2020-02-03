@@ -5,6 +5,8 @@ keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,32 +14,30 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 02cde8915691565614e3d1d04a1fc57ed9a718cb
-ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
+ms.openlocfilehash: 7b662c89056525762ad6f9f6e35262a24d098489
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41263326"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662030"
 ---
 # <a name="financial-supervisory-authority-fsa-denmark"></a>Autorité de surveillance financière (FSA) Danemark
 
 ## <a name="about-the-fsa"></a>À propos du FSA
 
-L’[autorité de surveillance financière](https://aka.ms/FinServ-Guide-Denmark) ([Finanstilsynet](https://www.finanstilsynet.dk/)), sous le ministère de l’industrie, des affaires et des affaires financières, est l’autorité de réglementation financière du gouvernement danois. Son rôle principal est de préparer les instructions réglementaires pour les établissements financiers au Danemark et de surveiller leur conformité, ainsi que de coopérer avec les autorités et organismes régionaux et internationaux.
+L’[autorité de surveillance financière](https://www.dfsa.dk/) ([Finanstilsynet](https://www.finanstilsynet.dk/)), sous le ministère de l’industrie, des affaires et des affaires financières, est l’autorité de réglementation financière du gouvernement danois. Son rôle principal est de préparer les instructions réglementaires pour les établissements financiers au Danemark et de surveiller leur conformité, ainsi que de coopérer avec les autorités et organismes régionaux et internationaux.
 
 Le FSA agit de concert avec l'Autorité bancaire européenne (ABE), « une autorité indépendante de l'UE, qui travaille pour assurer une réglementation et une supervision prudentielles efficaces et cohérentes dans le secteur bancaire européen ». À cette fin, l'ABE a défini une approche globale de l'utilisation du cloud computing par les institutions financières de l'UE, [Recommandations sur l'externalisation auprès de fournisseurs de services Cloud](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
 
-Les institutions financières au Danemark doivent être conscientes de plusieurs exigences et recommandations concernant le transfert des fonctions commerciales dans le cloud. En règle générale, ils prescrivent les conditions contractuelles pour les établissements financiers et les fournisseurs de services Cloud afin de s’assurer que les organisations financières peuvent surveiller et auditer de façon adéquate les fonctions externalisées. Cela inclut ce qui suit :
-
-Recommandations émises par le ministère de l’industrie, des affaires et des affaires financières :
+Les institutions financières au Danemark doivent être conscientes de plusieurs exigences et recommandations concernant le transfert des fonctions commerciales dans le cloud. En règle générale, ils prescrivent les conditions contractuelles pour les établissements financiers et les fournisseurs de services Cloud afin de s’assurer que les organisations financières peuvent surveiller et auditer de façon adéquate les fonctions externalisées. Elles incluent les recommandations émises par le Ministère de l’industrie, des affaires et des affaires financières :
 
 - La loi danoise sur les établissements financiers ([danois](https://www.retsinformation.dk/Forms/R0710.aspx?id=193767))
-- L’ordre exécutif 1304 sur l’externalisation de domaines d’activité importants ([danois](https://www.retsinformation.dk/Forms/R0710.aspx?id=134352) et [anglais](https://www.dfsa.dk/?la=en)) et les instructions annexes (danois)
-- Instructions relatives à l’utilisation des services Cloud dans le cadre de l’externalisation informatique ([danois](https://www.finanstilsynet.dk/?id=131889)) émise par le FSA.
+- L’ordre exécutif 1304 sur l’externalisation de domaines d’activité importants ([danois](https://www.retsinformation.dk/Forms/R0710.aspx?id=134352) et [anglais](https://www.finanstilsynet.dk/~/media/Lovgivning/Oversat-lovgivning/Executive-orders/1304_251110-pdf.pdf)) et les instructions annexes (danois)
+- Instructions relatives à l’utilisation des services Cloud dans le cadre de l’externalisation informatique ([danois](https://www.finanstilsynet.dk/Tilsyn/Information-om-udvalgte-tilsynsomraader/It-tilsyn/Anvendelse-af-cloud-tjenester-som-led-i-IT-outsourcing)) émise par le FSA.
 
 ## <a name="microsoft-and-the-fsa"></a>Microsoft et le FSA
 
-Pour guider les institutions financières au Danemark qui envisagent d'externaliser des fonctions commerciales dans le cloud, Microsoft a publié [une liste de contrôle sur la conformité pour les institutions financières danoises](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf). En examinant et en complétant la liste de contrôle, les organisations financières peuvent adopter les services cloud Microsoft Business avec l'assurance qu'elles se conforment aux exigences réglementaires applicables.
+Pour guider les institutions financières au Danemark qui envisagent d'externaliser des fonctions commerciales dans le cloud, Microsoft a publié [une liste de contrôle sur la conformité pour les institutions financières danoises](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=524cc66f-b292-49e9-aa14-04560401baa0&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides). En examinant et en complétant la liste de contrôle, les organisations financières peuvent adopter les services cloud Microsoft Business avec l'assurance qu'elles se conforment aux exigences réglementaires applicables.
 
 Lorsque les institutions financières au Danemark externalisent les activités de l’entreprise dans le cloud, elles doivent se conformer aux exigences de l’autorité financière (FSA) dans le cadre de la politique générale de l’Autorité bancaire européenne (ABE). Plus précisément, ces exigences se concentrent sur la façon dont les accords contractuels entre services financiers et fournisseurs de Cloud peuvent garantir un contrôle adéquat des activités externalisées.
 
@@ -54,9 +54,9 @@ La liste de contrôle Microsoft permet aux entreprises financières danoises d�
 
 ## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
-- [Liste de contrôle de conformité : Danemark](https://www.retsinformation.dk/Forms/R0710.aspx): les entreprises financières peuvent obtenir de l'aide pour évaluer les risques liés aux services cloud entreprise Microsoft.
-- [Guide d'évaluation des risques et de conformité](https://docs.microsoft.com/azure/industry/financial/): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
-- [Cas d'utilisation financière](https://www.finanstilsynet.dk/~/media/Lovgivning/Oversat-lovgivning/Executive-orders/1304_251110-pdf.pdf) : utilisez des aperçus de cas, des didacticiels et d'autres ressources pour créer des solutions Azure pour services financiers.
+- [Liste de contrôle de conformité : Danemark](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=524cc66f-b292-49e9-aa14-04560401baa0&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides): les entreprises financières peuvent obtenir de l'aide pour évaluer les risques liés aux services cloud entreprise Microsoft.
+- [Guide d'évaluation des risques et de conformité](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
+- [Cas d'utilisation financière](https://docs.microsoft.com/previous-versions/azure/industry-marketing/financial/index) : utilisez des aperçus de cas, des didacticiels et d'autres ressources pour créer des solutions Azure pour services financiers.
 
 ## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
@@ -66,16 +66,12 @@ Non. Le FSA n’approuve pas l’externalisation, par conséquent, le mandataire
 
 **Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services Cloud ?**
 
-Oui. L’ordre exécutif sur l’externalisation de domaines d’activité importants (et les instructions qui l’accompagnent) stipule certains points spécifiques que les établissements financiers doivent intégrer dans leurs contrats de services Cloud. La partie 2 de la [liste de contrôle Microsoft](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/) (page 48) fait correspondre celle-ci aux sections des documents contractuels Microsoft où elle est traitée.
+Oui. L’ordre exécutif sur l’externalisation de domaines d’activité importants (et les instructions qui l’accompagnent) stipule certains points spécifiques que les établissements financiers doivent intégrer dans leurs contrats de services Cloud. La partie 2 de la [liste de contrôle Microsoft](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=524cc66f-b292-49e9-aa14-04560401baa0&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides) (page 48) fait correspondre ces points aux sections des documents contractuels Microsoft où elle est traitée.
 
 ## <a name="resources"></a>Ressources
 
 - [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20(Print).pdf)
 - [Services commerciaux cloud computing et services financiers Microsoft](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
-- [Conformité des services financiers dans Azure](https://aka.ms/AzureCompliance)
+- [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Outil d’évaluation des risques dans le Cloud Azure Financial Services](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/E/9/7/E9793230-8137-4297-BC5E-A43F8732CCCD/FSA-Compliance.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
