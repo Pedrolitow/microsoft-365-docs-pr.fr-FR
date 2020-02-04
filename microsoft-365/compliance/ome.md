@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 02/03/2020
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Avec le chiffrement de messages Office 365, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu du message.
-ms.openlocfilehash: 9da6084348a4bdc89f620eb894c9ffa113d64292
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76d3688fbc30923e204b9cba338b61bc955b8f95
+ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601781"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680093"
 ---
 # <a name="office-365-message-encryption"></a>Chiffrement de messages Office 365
 
@@ -30,12 +30,38 @@ Les messageries électroniques sont souvent utilisées pour échanger des inform
 
 Avec le chiffrement de messages Office 365, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. Le chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo !, Gmail et d’autres services de messagerie. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu du message.
 
+## <a name="important-updates-to-ome-to-enhance-email-authenticity---action-required"></a>Mises à jour importantes de OME pour améliorer l’authenticité du courrier électronique-action requise
+
+À partir du 1er février 2020, nous déployons des améliorations apportées aux OME qui améliorent l’authenticité des courriers électroniques OME en modifiant les adresses de l’expéditeur utilisées par OME. En l’absence de ces améliorations, certaines organisations ont rejeté le courrier électronique généré par le système à partir de OME, comme des réponses de courrier et de portail de code d’accès unique, car l’adresse de l’expéditeur provient du domaine messaging.onmicrosoft.com. Avec cette modification, ces messages générés par le système sont envoyés à partir des domaines personnalisés de votre organisation au lieu de onmicrosoft.com. Pour mettre en œuvre cette amélioration, vous devez mettre à jour vos règles de flux de messagerie.
+
+Pour Exchange Online, vous devez mettre à jour chaque règle de flux de messagerie qui recherche les anciennes adresses de messagerie OME, ou toute adresse provenant de l’extérieur de votre organisation, pour rechercher les nouvelles adresses OME. Étant donné que les courriers électroniques OME (code d’accès unique et réponse du portail) proviennent de votre domaine personnalisé, ils ne sont plus éligibles comme provenant de l’extérieur de l’organisation.
+
+Si vous utilisez des solutions tierces qui fonctionnent avec Exchange sur site ou Exchange Online, vous devrez mettre à jour toutes vos anciennes règles OME pour refléter les nouvelles adresses de messagerie OME. Par exemple, si vous avez ajouté des adresses de messagerie OME précédentes, vous devez ajouter les nouveaux messages électroniques à la liste des courriers électroniques autorisés.
+
+### <a name="changes-to-ome-email-addresses"></a>Modifications apportées aux adresses de messagerie OME
+
+Adresse de l’expéditeur du code d’accès unique :
+
+- Ancienne adresse :``onetimepasscode@messaging.onmicrosoft.com``
+
+- Nouvelle adresse :``onetimepasscode@<yourdomain.com>``
+
+OME réponses à partir du portail OME :
+
+- Ancienne adresse :``omeportal@messaging.onmicrosoft.com``
+
+- Nouvelle adresse :``omeportal@<yourdomain.com>``
+
+### <a name="errors-routing-mail-from-exchange-online-through-exchange-on-premises-to-external-recipients"></a>Erreurs de routage du courrier électronique à partir d’Exchange Online via Exchange local vers des destinataires externes
+
+Si vous acheminez des messages à partir d’Exchange Online via un échange local vers des destinataires externes à votre organisation, certains systèmes tiers renvoient des erreurs DMARC et n’acceptent pas les messages électroniques. Par exemple, Gmail renverra une erreur DMARC si vous acheminez votre courrier de cette manière. Pour contourner ce problème, acheminez les messages électroniques directement à partir d’Exchange Online vers des destinataires externes, en contournant Exchange en local.
+
+## <a name="how-office-365-message-encryption-works"></a>Fonctionnement du chiffrement de messages Office 365
+
 Le reste de cet article s’applique aux nouvelles fonctionnalités OME.
 
 > [!NOTE]
 > Les délégués disposant d’autorisations d’accès total à une boîte aux lettres peuvent lire les messages chiffrés qui sont envoyés à la boîte aux lettres.
-
-## <a name="how-office-365-message-encryption-works"></a>Fonctionnement du chiffrement de messages Office 365
 
 Le chiffrement de messages Office 365 est un service en ligne qui repose sur Microsoft Azure Rights Management (Azure RMS) qui fait partie d’Azure information protection. Cela inclut les stratégies de chiffrement, d’identité et d’autorisation pour sécuriser votre courrier électronique. Vous pouvez chiffrer les messages à l’aide des modèles de gestion des droits, de l' [option ne pas transférer](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)et de l' [option de chiffrement uniquement](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
