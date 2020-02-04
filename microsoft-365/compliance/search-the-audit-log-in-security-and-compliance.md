@@ -1,5 +1,7 @@
 ---
 title: 'Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité '
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265892"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662000"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -122,6 +124,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit d’Offi
   |Microsoft Project|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Power BI|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Centre de sécurité et conformité|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sharepoint Online et OneDrive Entreprise|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -337,7 +340,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |(aucun)|FileModifiedExtended|Cet événement est lié à l’activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est consigné lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
 |Fichier déplacé|FileMoved|Un utilisateur déplace un document de son emplacement actuel sur un site vers un nouvel emplacement.|
 |(aucun)|FilePreviewed|Un utilisateur affiche l’aperçu de fichiers sur un site SharePoint ou OneDrive Entreprise. Ces événements se produisent généralement dans des volumes élevés basés sur une activité unique, comme l’affichage d’une galerie d’images.|
-|Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention ou de conservation eDiscovery aux sites et comptes OneDrive, et lorsque les étiquettes de rétention ou de confidentialité sont automatiquement appliquées au contenu du site. Dans la plupart des cas, le nom du compte de service enregistré dans le champ Utilisateur de l’enregistrement d’audit est **app@sharepoint**. </br></br> **Conseil :** les champs ApplicationDisplayName et EventData de l’enregistrement d’audit pour l’activité de requête de recherche effectuée peuvent vous aider à identifier le scénario ou le service ayant déclenché cet événement.|
+|Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention ou de conservation eDiscovery aux sites et comptes OneDrive, et lorsque les étiquettes de rétention ou de confidentialité sont automatiquement appliquées au contenu du site. Dans la plupart des cas, le nom du compte de service enregistré dans le champ Utilisateur de l’enregistrement d’audit est **app\@sharepoint**. </br></br> **Conseil :** les champs ApplicationDisplayName et EventData de l’enregistrement d’audit pour l’activité de requête de recherche effectuée peuvent vous aider à identifier le scénario ou le service ayant déclenché cet événement.|
 |Recyclage de toutes les versions mineures du fichier|FileVersionsAllMinorsRecycled|L’utilisateur supprime toutes les versions mineures de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage de toutes les versions du fichier|FileVersionsAllRecycled|L’utilisateur supprime toutes les versions de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage d’une version du fichier|FileVersionRecycled|L’utilisateur supprime une version de l’historique des versions d’un fichier. La version supprimée est déplacée vers la Corbeille du site.|
