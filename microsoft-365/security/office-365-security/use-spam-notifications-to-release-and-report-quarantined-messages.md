@@ -18,16 +18,16 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: Si votre administrateur Active les notifications pour les utilisateurs, vous recevrez un message de notification répertoriant les messages envoyés à votre boîte aux lettres identifiés comme courriers indésirables, en masse ou par hameçonnage. Vous pouvez publier ou signaler des messages après leur notification.
-ms.openlocfilehash: c9cd0849f826e66411695a3758f271ec70d24c9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598021"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722035"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Utilisation des notifications de courrier indésirable de l’utilisateur pour le déblocage et le signalement des messages de courrier indésirable mis en quarantaine dans Office 365
 
-Si votre administrateur active des notifications de courrier indésirable pour les utilisateurs, vous recevrez un message de notification répertoriant les messages adressés à votre boîte aux lettres identifiés comme courrier indésirable et mis en quarantaine.
+Si votre administrateur active des notifications de courrier indésirable pour les utilisateurs, vous recevrez un message de notification répertoriant les messages adressés à votre boîte aux lettres identifiés comme courrier indésirable, en bloc ou hameçons et mis en quarantaine.
 
 > [!TIP]
 > Si vous êtes administrateur et que vous souhaitez activer cette fonctionnalité, vous pouvez choisir l’option lorsque vous [modifiez une stratégie de blocage du courrier indésirable par défaut](configure-your-spam-filter-policies.md).
@@ -50,6 +50,6 @@ Voici les actions que vous pouvez effectuer avec un message en quarantaine :
 
 Prenez en considération ce qui suit :
 
-- Les messages mis en quarantaine, car ils correspondent à une règle de flux de messagerie, ne sont pas inclus dans les messages mis en quarantaine par l’utilisateur. Seuls les messages mis en quarantaine car identifiés comme courrier indésirable sont répertoriés.
+- Les messages hameçons et les messages de hameçonnage à haut niveau de confiance et les messages mis en quarantaine en raison d’une règle de flux de messagerie ne sont pas inclus dans les notifications de courrier indésirable de l’utilisateur. 
 
 - Vous ne pouvez libérer un message et le signaler comme faux positif (légitime) qu'une fois.
