@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: fd2b1fdbb0356cfc2cea080f15bf696d8073fc10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8a64b92e8191000be2767f498fbaee179c3b9e69
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598641"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678918"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -65,7 +65,7 @@ La stratégie de blocage du courrier indésirable, appelée Advanced Spam Filter
  
  Nous vous **recommandons de désactiver ces paramètres pour** les niveaux standard et strict :
 
-|Nom de la fonctionnalité de sécurité|Comments|
+|Nom de la fonctionnalité de sécurité|Commentaires|
 |---------|---------|
 |IncreaseScoreWithImageLinks||
 |IncreaseScoreWithNumericIps||
@@ -97,7 +97,7 @@ La stratégie de blocage du courrier indésirable, appelée Advanced Spam Filter
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
 |Réponse de détection de programmes malveillants|Non|Non|Si un programme malveillant est détecté dans une pièce jointe, le message est mis en quarantaine et ne peut être libéré que par un administrateur.|
-|« Filtre de type de pièces jointes courantes » pour bloquer les types de fichiers suspects|Activé|Activé||
+|« Filtre de types de pièces jointes courantes » pour bloquer les types de fichiers suspects|Activé|Activé||
 |Purge automatique contre les programmes malveillants à zéro heure|Activé|Activé||
 |Informer les expéditeurs internes du message non remis|Désactivé|Désactivé||
 |Informer les expéditeurs externes du message non remis|Désactivé|Désactivé||

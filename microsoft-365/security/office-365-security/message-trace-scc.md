@@ -11,16 +11,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 461193bf7278a07de9bec1e3879fecc8fb6d91ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c9b22ef66fb1db762168812385420823788b4bfc
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598921"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678932"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Le suivi des messages dans le centre de sécurité & conformité Office 365 suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
 
@@ -31,13 +31,9 @@ Le suivi des messages dans le centre de sécurité & conformité améliore le su
 
 ## <a name="open-message-trace"></a>Ouvrir le suivi des messages
 
-1. [Connectez-vous à Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) à l’aide de votre compte professionnel ou scolaire.
+1. Ouvrez le centre de sécurité & conformité Office 365 <https://protection.office.com>à l’adresse.
 
-2. Sélectionnez l'icône du lanceur d'applications ![Icône du lanceur d'applications Office 365](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) dans la partie supérieure gauche, puis **Administrateur**.
-
-3. Dans le volet de navigation en bas à gauche, développez **centres d’administration** et sélectionnez **sécurité & conformité**.
-
-4. Dans la page **conformité des & de sécurité** qui s’ouvre, développez flux de **messagerie**, puis sélectionnez suivi des **messages**.
+2. Développez **flux de messagerie**, puis sélectionnez **suivi des messages**.
 
 ## <a name="message-trace-page"></a>Page de suivi des messages
 
