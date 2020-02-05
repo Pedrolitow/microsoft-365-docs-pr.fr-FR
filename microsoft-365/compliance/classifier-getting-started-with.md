@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: 4b4bfa996b1f68f9db8c206aaaec43878abf3f42
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595901"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722025"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -49,6 +49,10 @@ Cette méthode de classification est particulièrement adaptée au contenu qui n
 
 > [!IMPORTANT]
 > Les classifieurs pouvant être formés ne fonctionnent qu’avec des éléments qui ne sont pas chiffrés et qui sont en anglais.
+
+### <a name="licensing-requirements"></a>Critères de licence
+
+Les classifieurs de formation sont une fonctionnalité de conformité Microsoft 365 E5 ou E5. Vous devez disposer de l’un de ces abonnements pour pouvoir les utiliser.
 
 ## <a name="types-of-classifiers"></a>Types de classifieurs
 

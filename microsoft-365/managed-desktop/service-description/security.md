@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
-ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
+ms.openlocfilehash: 3d5765de70b21036800d87cedd175ea4fd53b7ba
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243935"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774230"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sécurité dans le bureau géré Microsoft
 
@@ -19,31 +19,18 @@ ms.locfileid: "36243935"
 
 Microsoft Managed Desktop utilise plusieurs technologies Microsoft pour sécuriser les appareils et les données gérés. Notamment : 
 
-- [Sécurité des données](#data-security) : types de données collectées par le bureau géré Microsoft et emplacement de stockage sécurisé
+
 - [Sécurité des appareils](#device-security) – sécurité et protection sur les appareils de bureau gérés Microsoft
 - [Gestion des identités et des accès](#identity-and-access-management) : gestion de l’utilisation sécurisée des appareils via les services d’identité Azure Active Directory
 - [Sécurité réseau](#network-security) – informations VPN et solution et paramètres recommandés pour Microsoft Managed Desktop
 - [Sécurité des informations](#information-security) – services disponibles en option pour protéger davantage les informations sensibles 
 
-## <a name="data-security"></a>Sécurité des données
-
-Les données collectées à partir de locataires client (qui activent les services et les opérations Microsoft Managed Desktop IT) sont stockées dans des bases de données SQL Azure dans le client Microsoft hébergé aux États-Unis d’Amérique.
-
-Pour plus d’informations, consultez la rubrique [Microsoft Azure Security](https://docs.microsoft.com/azure/security/azure-database-security-overview).
-
-Voici les types de données transmis par votre client:
-
-- Données de mise à jour des périphériques, d’utilisation et de fiabilité
-- Données de fiabilité et de déploiement d’application
-- Mise à jour et données de déploiement de stratégie de sécurité
-- Utilisateurs affectés aux appareils
-- Journaux de sécurité de votre client liés aux comptes utilisés par Microsoft Managed Desktop pour gérer le service
 
 
 
 ## <a name="device-security"></a>Sécurité de l’appareil
 
-Microsoft Managed Desktop garantit que tous les appareils gérés sont sécurisés et protégés, et détecte les menaces dès que possible à l’aide des services suivants:
+Microsoft Managed Desktop garantit que tous les appareils gérés sont sécurisés et protégés, et détecte les menaces dès que possible à l’aide des services suivants :
 
 Service | Description
 --- | ---
@@ -72,7 +59,7 @@ Les clients sont responsables de la sécurité du réseau.
 
 Service | Description
 --- | ---
-VPN | Les clients possèdent leur infrastructure VPN, afin de s’assurer que les ressources d’entreprise limitées peuvent être exposées à l’extérieur de l’intranet.<br><br>Configuration minimale requise: Microsoft Managed Desktop requiert une solution VPN compatible et prise en charge Windows 10. Si votre organisation a besoin d’une solution VPN, elle doit prendre en charge Windows 10 et être empaquetée et déployée via Intune. Pour plus d’informations, contactez votre éditeur de logiciel.<br><br>Conseille<br>-Microsoft recommande une solution VPN moderne pouvant être déployée facilement via Intune pour envoyer des profils VPN. Cela permet d’accéder aux réseaux d’entreprise de manière permanente, fiable et sécurisée. Pour plus d’informations, reportez-vous à [[VPN Settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-Les clients VPN épais, ou les clients VPN hérités, ne sont pas recommandés par Microsoft lors de l’utilisation du bureau géré Microsoft car cela peut avoir un impact sur l’environnement de l’utilisateur final.<br>-Microsoft recommande que le trafic Web sortant accède directement à Internet sans passer par le VPN pour éviter les problèmes de performances.<br>Pour l’idéal, Microsoft recommande l’utilisation du proxy d’application Azure Active Directory au lieu d’un VPN.
+VPN | Les clients possèdent leur infrastructure VPN, afin de s’assurer que les ressources d’entreprise limitées peuvent être exposées à l’extérieur de l’intranet.<br><br>Configuration minimale requise : Microsoft Managed Desktop requiert une solution VPN compatible et prise en charge Windows 10. Si votre organisation a besoin d’une solution VPN, elle doit prendre en charge Windows 10 et être empaquetée et déployée via Intune. Pour plus d’informations, contactez votre éditeur de logiciel.<br><br>Conseille<br>-Microsoft recommande une solution VPN moderne pouvant être déployée facilement via Intune pour envoyer des profils VPN. Cela permet d’accéder aux réseaux d’entreprise de manière permanente, fiable et sécurisée. Pour plus d’informations, reportez-vous à [[VPN Settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-Les clients VPN épais, ou les clients VPN hérités, ne sont pas recommandés par Microsoft lors de l’utilisation du bureau géré Microsoft car cela peut avoir un impact sur l’environnement de l’utilisateur final.<br>-Microsoft recommande que le trafic Web sortant accède directement à Internet sans passer par le VPN pour éviter les problèmes de performances.<br>Pour l’idéal, Microsoft recommande l’utilisation du proxy d’application Azure Active Directory au lieu d’un VPN.
 
 
 ## <a name="information-security"></a>Sécurité des informations
