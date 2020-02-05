@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 71ec7b4e27a6f125754e693ecb5239c66404a9ad
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628077"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661902"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Utilisation de l’Explorateur de contenu de la classification des données (préversion)
 
@@ -51,11 +51,13 @@ Les [étiquettes de rétention](labels.md) vous permettent de définir la durée
 
 Deux rôles accordent l'accès à l'explorateur de contenu :
 
-- **Visionneuse de liste de l’Explorateur de contenu**: l’appartenance à ce groupe de rôle vous permet d’afficher chaque élément et son emplacement.
+- **Visionneuse de liste de l’Explorateur de contenu**: l’appartenance à ce groupe de rôle vous permet d’afficher chaque élément et son emplacement. Le rôle `data classification list viewer` a été pré-attribué à ce groupe de rôles.
 
-- **Visionneuse de contenu de l’Explorateur de contenu**: l’appartenance à ce groupe de rôle vous permet d’afficher le contenu de chaque élément dans la liste.
+- **Visionneuse de contenu de l’Explorateur de contenu** : l’appartenance à ce groupe de rôles vous permet d’afficher le contenu de chaque élément de la liste. Le rôle `data classification content viewer` a été pré-attribué à ce groupe de rôles.
 
 Le compte que vous utilisez pour accéder à l’Explorateur de contenu doit se trouver dans l’un des groupes de rôles ou les deux. Il s’agit de groupes de rôles indépendants qui ne sont pas cumulatifs. Par exemple, si vous voulez accorder à un compte la possibilité d’afficher les éléments et leur emplacement uniquement, attribuez des droits à la visionneuse de liste de l’Explorateur de contenu. Si vous souhaitez que ce même compte puisse également afficher le contenu des éléments de la liste, vous pouvez également octroyer des droits de visionneuse de contenu dans l’Explorateur de contenu.
+
+Vous pouvez également attribuer l’un ou l’autre des rôles (ou les deux) à un groupe de rôles personnalisé afin de personnaliser l’accès à l’Explorateur de contenu.
 
 ### <a name="how-to-use-content-explorer"></a>Utilisation de l’Explorateur de contenu
 
