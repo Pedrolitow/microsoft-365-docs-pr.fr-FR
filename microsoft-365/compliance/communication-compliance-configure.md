@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9371429caedfe2081331fab1aebbe0e1ec761e81
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661970"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784691"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -67,7 +67,14 @@ Pour que la conformité de la **communication** soit disponible sous la forme d�
 
 Pour plus d’informations sur les groupes de rôles et les autorisations, consultez [la rubrique autorisations dans le centre de conformité](../security/office-365-security/protect-against-threats.md).
 
-## <a name="step-2-optional-set-up-groups-for-communication-compliance"></a>Étape 2 (facultative) : configurer des groupes pour la conformité de la communication
+## <a name="step-2-required-enable-the-office-365-audit-log"></a>Étape 2 (obligatoire) : activer le journal d’audit Office 365
+
+La conformité des communications nécessite des journaux d’audit pour afficher les alertes et suivre les actions de correction effectuées par les relecteurs. Les journaux d’audit sont un résumé de toutes les activités associées à une stratégie d’organisation définie ou à chaque fois qu’une stratégie de conformité de communication est modifiée.
+
+Pour obtenir des instructions détaillées sur l’activation de l’audit, voir [activer ou désactiver la recherche dans le journal d’audit Office 365](turn-audit-log-search-on-or-off.md). Une fois que vous avez activé l’audit, un message s’affiche indiquant que le journal d’audit est en cours de préparation et que vous pouvez exécuter une recherche dans quelques heures après la fin de la préparation. Vous n’avez besoin d’effectuer cette action qu’une seule fois. Pour plus d’informations sur l’utilisation du journal d’audit, consultez [la rubrique Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+
+
+## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Étape 3 (facultative) : configurer des groupes pour la conformité de la communication
 
  Lorsque vous créez une stratégie de conformité de communication, vous définissez les personnes qui ont consulté leurs communications et qui effectue des révisions. Dans la stratégie, vous utiliserez des adresses de messagerie pour identifier des individus ou des groupes de personnes. Pour simplifier votre configuration, vous pouvez créer des groupes pour les personnes dont la communication est vérifiée et les groupes pour les personnes qui examinent ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs. Par exemple, si vous souhaitez surveiller les communications entre deux groupes distincts de personnes ou si vous souhaitez spécifier un groupe qui n’est pas supervisé.
 
@@ -86,7 +93,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
 - [Gérer les groupes de sécurité à extension de messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Vue d’ensemble des groupes Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-3-required-create-a-communication-compliance-policy"></a>Étape 3 (obligatoire) : créer une stratégie de conformité de communication
+## <a name="step-4-required-create-a-communication-compliance-policy"></a>Étape 4 (obligatoire) : créer une stratégie de conformité de communication
   
 1. Connectez- [https://compliance.microsoft.com](https://compliance.microsoft.com) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
@@ -120,7 +127,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
 
 6. La page **votre stratégie a été créée** s’affiche avec des instructions sur le moment où la stratégie sera activée et les communications qui seront capturées.
 
-## <a name="step-4-optional-create-employee-notice-templates"></a>Étape 4 (facultative) : créer des modèles de notification d’employé
+## <a name="step-5-optional-create-employee-notice-templates"></a>Étape 5 (facultatif) : créer des modèles de notification d’employé
 
 Si vous souhaitez pouvoir répondre à une alerte de stratégie en envoyant un rappel à l’employé associé, vous devez créer au moins un modèle d’avis dans votre organisation. Les champs du modèle d’avertissement sont modifiables avant d’être envoyés dans le cadre du processus de correction des alertes et la création d’un modèle d’avertissement personnalisé pour chaque stratégie de conformité des communications est recommandée.
 
@@ -140,7 +147,7 @@ Si vous souhaitez pouvoir répondre à une alerte de stratégie en envoyant un r
 
 5. Sélectionnez **Enregistrer** pour créer et enregistrer le modèle d’avis.
 
-## <a name="step-5-optional-test-your-communication-compliance-policy"></a>Étape 5 (facultatif) : tester votre stratégie de conformité de communication
+## <a name="step-6-optional-test-your-communication-compliance-policy"></a>Étape 6 (facultative) : tester votre stratégie de conformité de communication
 
 Une fois que vous avez créé une stratégie de conformité de communication, il est recommandé de la tester pour vous assurer que les conditions que vous avez définies sont appliquées correctement par la stratégie. Vous pouvez également [tester vos stratégies de protection contre la perte de données (DLP)](create-test-tune-dlp-policy.md) si vos stratégies de conformité de communication incluent des types d’informations sensibles. Assurez-vous que vous laissez vos stratégies s’activer afin que les communications que vous souhaitez tester soient capturées.
 
@@ -155,11 +162,3 @@ Procédez comme suit pour tester votre stratégie de conformité de communicatio
 3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité de communication. Accédez à **** > **alertes** de conformité des communications pour afficher les alertes correspondant à vos stratégies.
 
 4. Corrigez l’alerte à l’aide des contrôles de correction et assurez-vous que l’alerte est correctement résolue.
-
-## <a name="step-6-optional-enable-auditing-for-your-communication-compliance-policies"></a>Étape 6 (facultative) : activer l’audit pour vos stratégies de conformité de communication
-
-Une fois que vous avez testé vos stratégies, vous pouvez activer l’audit de sorte que les activités associées à la gestion de la conformité de la communication soient enregistrées. Cet audit peut être un résumé de toutes les activités associées à une stratégie d’organisation définie ou à chaque fois qu’une stratégie de conformité de communication est modifiée.
-
-Lorsque l’audit est activé, les stratégies de conformité des communications disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Vous pouvez utiliser le contrôle **Exporter les activités de révision** de la page principale de n’importe quelle stratégie pour générer un fichier d’audit ou afficher les activités d’audit dans le journal d’audit unifié si l’audit est activé.
-
-Pour activer l’audit, cliquez sur **Démarrer l’enregistrement des activités de l’utilisateur et** de l’administrateur sur la page de **recherche du journal d’audit** dans le centre de conformité & Office 365 Security. Si ce lien n’apparaît pas, l’audit est déjà été activé pour votre organisation. Une fois que vous avez activé l’audit, un message s’affiche indiquant que le journal d’audit est en cours de préparation et que vous pouvez exécuter une recherche dans quelques heures après la fin de la préparation. Vous n’avez besoin d’effectuer cette action qu’une seule fois. Pour plus d’informations sur le journal d’audit, consultez [la rubrique Search the audit log](search-the-audit-log-in-security-and-compliance.md).

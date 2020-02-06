@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ff765d309e3f01dbc1c2ef7fa75ed3287c8a5c0a
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 02534cf9dcd342f0872e755aec622f8028b235f8
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661960"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784671"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -99,7 +99,7 @@ Pour plus d’informations sur la retraite de la surveillance dans Office 365, c
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
-### <a name="users"></a>Utilisateurs
+### <a name="users"></a>Users
 
 Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **tous les utilisateurs** applique la stratégie à tous les utilisateurs et tous les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et à tous les groupes auxquels les utilisateurs définis sont inclus.
 
@@ -117,7 +117,7 @@ Vous pouvez inclure des types d’informations sensibles dans le cadre de votre 
 
 - Financier
 - Médecine et santé
-- Politique de confidentialité
+- Confidentialité
 - Type d’informations personnalisées
 
 Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez la rubrique [types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
@@ -217,7 +217,7 @@ Si vous souhaitez créer un message électronique en texte simple pour les notif
 
 Les filtres de conformité de la communication vous permettent de filtrer et de trier les messages d’alerte pour des actions plus rapides d’enquête et de correction. Le filtrage est disponible sur les onglets **en attente** et **résolus** pour chaque stratégie. Pour enregistrer un filtre ou un jeu de filtres en tant que requête de filtre enregistrée, une ou plusieurs valeurs doivent être configurées en tant que sélections de filtre. Le tableau suivant présente les détails des filtres :
 
-|**Filtre**|**Détails**|
+|**Filter**|**Détails**|
 |:-----|:-----|
 | **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur au sein de votre organisation. |
 | **Classe file** | Classe du message en fonction du type de message, qu’il *s’agisse d’un message ou* d’une *pièce jointe*. |
@@ -273,7 +273,7 @@ Si vous souhaitez modifier le niveau de gravité affecté dans une stratégie d�
 Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Ces informations peuvent être un résumé de toutes les activités associées à une stratégie d’organisation définie ou à chaque fois qu’une stratégie de conformité de communication est modifiée. Les stratégies de conformité des communications disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Les historiques d’audit détaillés de chaque action de création, de modification et de suppression sont capturés par vos stratégies de communication afin de fournir des preuves de procédures de surveillance.
 
 >[!Important]
->L’audit doit être activé pour votre organisation pour que les événements de conformité de la communication soient enregistrés. Pour activer l’audit, consultez [la rubrique activer l’audit pour vos stratégies de conformité de communication](communication-compliance-configure.md#step-6-optional-enable-auditing-for-your-communication-compliance-policies).
+>L’audit doit être activé pour votre organisation pour que les événements de conformité de la communication soient enregistrés. Pour activer l’audit, consultez [la rubrique activer le journal d’audit Office 365](communication-compliance-configure.md#step-2-required-enable-the-office-365-audit-log).
 
 Pour afficher les activités de stratégie de conformité de communication, sélectionnez le contrôle **Exporter les activités de révision** dans la page principale pour n’importe quelle stratégie. Cette action génère un fichier d’audit au format. csv qui contient les informations suivantes :
 

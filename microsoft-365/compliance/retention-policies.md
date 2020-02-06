@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble des stratégies de rétention
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558591"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774220"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -54,7 +56,9 @@ La création et la gestion des stratégies de rétention s’effectuent sur :
 
 - la page **Stratégies** du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/).
 - la page **Rétention** sous **Gouvernance des informations** du [Centre de sécurité &amp;et de conformité Office 365](https://protection.office.com/).
-  
+
+**Si vous souhaitez réviser le contenu avant sa suppression définitive,** vous pouvez utiliser les [étiquettes de rétention](labels.md) plutôt qu’une stratégie de rétention. Lorsque vous créez une étiquette de rétention, vous pouvez configurer une [révision avant destruction](disposition-reviews.md) pour examiner le contenu à la fin de la période de rétention.
+
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Fonctionnement d’une stratégie de rétention avec du contenu sur place
 
 Lorsque vous incluez un emplacement tel qu’un site ou une boîte aux lettres dans une stratégie de rétention, le contenu reste dans son emplacement d’origine. Les utilisateurs peuvent continuer à traiter leurs documents ou leurs e-mails comme si rien n’avait changé. Cependant, s’ils modifient ou suppriment le contenu inclus dans la stratégie, une copie du contenu tel qu’il était lorsque vous avez appliqué la stratégie est conservée.

@@ -1,5 +1,7 @@
 ---
 title: 'Étape 1 : disponibilité des applications et des périphériques'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Apprenez à évaluer la disponibilité des applications et des périphériques et dans l’environnement.
-ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112718"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774210"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Étape 1 : disponibilité des applications et des périphériques
 
@@ -106,9 +108,9 @@ Inventaire logiciel Configuration Manager est une alternative à l’utilisation
 Pour plus d’informations, voir [Introduction à l’inventaire de logiciel dans Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) et définir les exigences de la plateforme de packages d’application dans [Packages et programmes dans Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
 
-## <a name="desktop-app-assure"></a>Soutien aux applications du bureau
+## <a name="app-assure"></a>Soutien aux applications
 
-Un autre outil pour vous aider avec la compatibilité entre les applications Windows 10 et Office 365 ProPlus est le programme [Desktop App Assure](https://aka.ms/desktopappassure) disponible via le centre FastTrack. Via Desktop App Assure en cas de problèmes de validité de l’application, un ingénieur Microsoft travaillera avec vous sans frais supplémentaires pour vous aider à solutionner l’incompatibilité des applications.
+Un autre outil pour vous aider avec la compatibilité entre les applications Windows 10 et Office 365 ProPlus est le programme [App Assure](https://aka.ms/appassure) disponible via le centre FastTrack. En cas de problèmes de validité de l’application, un ingénieur Microsoft travaillera avec vous sans frais supplémentaires pour vous aider à solutionner l’incompatibilité des applications dans App Assure.
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Utilisation des outils de données de diagnostic continu
 
