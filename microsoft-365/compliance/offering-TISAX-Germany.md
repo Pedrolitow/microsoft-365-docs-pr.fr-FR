@@ -5,18 +5,21 @@ keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 89656556e4cba8fca12708e558aef3254c37bfba
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3c7d3c6a710141972c1e54a7c67bfccd59c378d6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859454"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602011"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>Trusted Information Security Assessment Exchange (TISAX) Allemagne
 
@@ -26,7 +29,7 @@ Afin d'assurer la connectivité croissante de l'industrie automobile, l'Associat
 
 Les entreprises membres de la VDA ont utilisé cet instrument pour évaluer la sécurité interne et pour évaluer les fournisseurs, les fournisseurs de services et les autres partenaires qui traitent des informations sensibles en leur nom. Toutefois, étant donné que ces évaluations ont été traitées individuellement par chaque entreprise, cela a créé une charge pour les partenaires et des efforts en double de la part des membres de la VDA.
 
-Afin de rationaliser les évaluations, VDA a mis en place un mécanisme commun d'évaluation et d'échange, le [Trusted Information Security Assessment Exchange](https://www.enx.com/tisax/) (TISAX). Le catalogue des exigences TISAX sous-jacentes, questionnaire pour la vérification de l'évaluation de la sécurité des informations et de la gestion de la sécurité des informations, Vers. 4 ([allemand](https://www.vda.de/de/services/Publikationen.html) et [anglais](https://www.vda.de/en/services/Publications.html)), fournit des normes courantes pour les mesures de sécurité informatique et permet aux entreprises enregistrées dans TISAX de partager les résultats de l’évaluation. Le VDA a confié la mise en œuvre de TISAX à une tierce partie neutre, l'[Association ENX](https://portal.enx.com/fr-FR/en-en/TISAX/tisaxassessmentresults/). A ce titre, elle accrédite les fournisseurs d'audit (auditeurs), maintient les critères d'accréditation et les exigences en matière d'évaluation, et surveille la qualité des résultats de l'implantation et de l'évaluation.
+Afin de rationaliser les évaluations, VDA a mis en place un mécanisme commun d'évaluation et d'échange, le [Trusted Information Security Assessment Exchange](https://www.enx.com/tisax/) (TISAX). Le catalogue des exigences TISAX sous-jacentes, questionnaire pour la vérification de l'évaluation de la sécurité des informations et de la gestion de la sécurité des informations, Vers. 4 ([allemand](https://www.vda.de/de/services/Publikationen.html) et [anglais](https://www.vda.de/en/services/Publications.html)), fournit des normes courantes pour les mesures de sécurité informatique et permet aux entreprises enregistrées dans TISAX de partager les résultats de l’évaluation. Le VDA a confié la mise en œuvre de TISAX à une tierce partie neutre, l'[Association ENX](https://portal.enx.com/en-US/en-en/TISAX/tisaxassessmentresults/). A ce titre, elle accrédite les fournisseurs d'audit (auditeurs), maintient les critères d'accréditation et les exigences en matière d'évaluation, et surveille la qualité des résultats de l'implantation et de l'évaluation.
 
 ## <a name="microsoft-and-tisax"></a>Microsoft et TISAX
 
@@ -50,7 +53,7 @@ L’évaluation TISAX axée sur les services Microsoft suivants :
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
-Les professionnels inscrits auprès de ENX peuvent trouver des détails sur l’évaluation TISAX des services de cloud computing Microsoft dans le cadre du [portail ENX](https://portal.enx.com/fr-FR/). Pour rechercher les résultats de l’évaluation Microsoft, connectez-vous à votre compte TISAX existant et effectuez une recherche sur Microsoft. Vous pouvez également affiner votre recherche à l’aide des informations suivantes :
+Les professionnels inscrits auprès de ENX peuvent trouver des détails sur l’évaluation TISAX des services de cloud computing Microsoft dans le cadre du [portail ENX](https://portal.enx.com/en-US/). Pour rechercher les résultats de l’évaluation Microsoft, connectez-vous à votre compte TISAX existant et effectuez une recherche sur Microsoft. Vous pouvez également affiner votre recherche à l’aide des informations suivantes :
 
 - ID du participant Microsoft : PGKYK0
 - ID champ d’application niveau d’évaluation (AL) 3 de Microsoft Corp. UE : SY869K
@@ -72,7 +75,7 @@ ENX fournit une confirmation de certification uniquement aux représentants du s
 
 ## <a name="resources"></a>Ressources
 
-- [Foire aux Questions TISAX](https://portal.enx.com/fr-FR/TISAX/faqs/)
+- [Foire aux Questions TISAX](https://portal.enx.com/en-US/TISAX/faqs/)
 - [Volkswagen et Microsoft annoncent un partenariat stratégique](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)
 - [Office dans votre voiture : BMW offre Skype Entreprise](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/) (Allemand) 
 - [Connectez les véhicules pour de longues distances : Daimler](https://customers.microsoft.com/story/daimlertrucks)
@@ -80,6 +83,6 @@ ENX fournit une confirmation de certification uniquement aux représentants du s
 - [Microsoft et la norme ISO/IEC 27001:2013](offering-iso-27001.md)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/5/C/3/5C32AD74-703F-4B61-A290-B00B96E8DD8D/TISAX-Compliance.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/5/C/3/5C32AD74-703F-4B61-A290-B00B96E8DD8D/TISAX-Compliance.pdf) (disponible uniquement en anglais pour le moment).

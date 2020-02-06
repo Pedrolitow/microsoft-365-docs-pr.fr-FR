@@ -5,18 +5,21 @@ keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 208bf7d1e31f797ec24654d1c2cdfe374d1aafe3
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a2ef9ff0521755bbb3000dd42b417ff57e398bbb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859564"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602131"
 ---
 # <a name="my-number-act-japan"></a>My Number Act (Japon)
 
@@ -70,11 +73,11 @@ Par conséquent, les services de Cloud Microsoft Entreprise prennent en charge l
 ## <a name="resources"></a>Ressources
 
 - [Conformité à Azure et exigences de sécurité et de confidentialité au Japon](https://gallery.technet.microsoft.com/Azure-Compliance-and-the-53409748)
-- [Confidentialité chez Microsoft](https://privacy.microsoft.com/fr-FR/)
+- [Confidentialité chez Microsoft](https://privacy.microsoft.com/en-US/)
 - [Déclaration de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement)
 - [Considérations relatives à la confidentialité dans le cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf) (disponible uniquement en anglais pour le moment).

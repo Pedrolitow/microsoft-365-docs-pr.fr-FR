@@ -5,18 +5,21 @@ keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 206dbd57f5fc5c41c4238e13d9dca3072ef7d121
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 546e4b29f26ffdee8c876032fe83254fb5643fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859814"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602381"
 ---
 # <a name="center-for-financial-industry-information-systems-fisc"></a>Center for Financial Industry Information Systems (FISC)
 
@@ -40,7 +43,7 @@ Microsoft a engagé des évaluateurs extérieurs pour confirmer que Microsoft Az
 
 Les institutions financières peuvent s’appuyer sur l’évaluation de la conformité de ces trois secteurs pour les services de plateforme et l’infrastructure dans le périmètre d’Azure, de Dynamics 365, d’Office 365 et de Microsoft Cloud App Security.
 
-[En savoir plus sur la validation d’évaluateurs externes et liens vers les sites de l’évaluateur (japonais uniquement](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx).
+[En savoir plus sur la validation d’évaluateurs externes et liens vers les sites de l’évaluateur (japonais uniquement](https://cloudblogs.microsoft.com/industry-blog/ja-jp/financial-services/2018/05/11/fisc_v9/).
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
@@ -84,4 +87,4 @@ Oui. Cependant, bien que les réponses de Microsoft à cette infrastructure soie
 
 ## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
-Avez-vous besoin du document d’information pour cette offre ? Téléchargez le fichier [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf).
+Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf) (disponible uniquement en anglais pour le moment).
