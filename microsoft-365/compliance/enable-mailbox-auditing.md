@@ -1,5 +1,7 @@
 ---
 title: Gérer l’audit de boîte aux lettres
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La journalisation d’audit de boîte aux lettres est activée par défaut dans Office 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 059039205e82ea63b1dc14a8be5e768e9cdba069
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: db36e285878a5afb9c6efcc9b173188452f267fa
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515565"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862064"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -37,7 +39,7 @@ Voici quelques avantages de l’audit des boîtes aux lettres par défaut :
 - Vous disposez d’une stratégie d’audit de boîte aux lettres cohérente au sein de votre organisation (car vous auditez les mêmes actions pour toutes les boîtes aux lettres).
 
 > [!NOTE]
->• Il est important de garder à l’esprit la publication de l’audit des boîtes aux lettres sur par défaut : vous n’avez rien à faire pour gérer l’audit des boîtes aux lettres. Toutefois, pour en savoir plus, personnaliser l’audit des boîtes aux lettres à partir des paramètres par défaut ou le désactiver, cette rubrique peut vous aider. <br><br>• Seuls les événements d’audit de boîte aux lettres pour E5 utilisateurs sont disponibles dans les recherches dans le journal d’audit dans le centre de sécurité & conformité ou via l’API activité de gestion d’Office 365. Pour plus d’informations, reportez-vous à la section [plus d’informations](#more-information) de cette rubrique.
+>• Il est important de garder à l’esprit la publication de l’audit des boîtes aux lettres sur par défaut : vous n’avez rien à faire pour gérer l’audit des boîtes aux lettres. Toutefois, pour en savoir plus, personnaliser l’audit des boîtes aux lettres à partir des paramètres par défaut ou le désactiver, cette rubrique peut vous aider. <br><br>• Par défaut, seuls les événements d’audit de boîte aux lettres pour E5 sont disponibles dans les recherches dans le journal d’audit dans le centre de sécurité & conformité ou via l’API activité de gestion d’Office 365. Pour plus d’informations, reportez-vous à la section [plus d’informations](#more-information) de cette rubrique.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Vérifier que l’audit de boîte aux lettres activé est activé par défaut
 
@@ -106,10 +108,12 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l�
 |**ApplyRecord**|Un élément est étiqueté en tant qu’enregistrement.|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Copier**|Un message a été copié dans un autre dossier.|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Create**|Un élément a été créé dans le dossier calendrier, contacts, notes ou tâches dans la boîte aux lettres (par exemple, une nouvelle demande de réunion est créée). Notez que la création, l’envoi ou la réception d’un message n’est pas audité. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Par défaut**||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque**: les enregistrements d’audit pour les actions de liaison de dossiers effectuées par des délégués sont consolidés. Un enregistrement d’audit est généré pour l’accès à un dossier individuel dans les 24 heures.|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**MailItemsAccessed**|Les données de messagerie sont accessibles par les clients et les protocoles de messagerie. Cette valeur est disponible uniquement pour les utilisateurs d’abonnement de complément de conformité E5 ou E5. Pour plus d’informations, consultez la rubrique [événements d’audit de valeur élevée](https://docs.microsoft.com/microsoft-365/compliance/advanced-audit#high-value-audit-events)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MailboxLogin**|L’utilisateur est connecté à sa boîte aux lettres. |||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|Un message a été affiché dans le volet de visualisation ou ouvert.|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**MessageBind**|Un message a été affiché dans le volet de visualisation ou ouvert par un administrateur. **Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, ces actions ne sont plus enregistrées.|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
 |**Déplacer**|Un message a été déplacé vers un autre dossier.|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -120,6 +124,7 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l�
 |**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Update**|Un message ou ses propriétés ont été modifiés.|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateComplianceTag**|Une étiquette de rétention différente est appliquée à un élément de courrier (un élément ne peut avoir qu’une seule étiquette de rétention affectée).|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**UpdateFolderPermissions**|Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateInboxRules**|Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l’utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d’une règle sont remplies, telles que le transfert d’un message vers un dossier spécifié ou la suppression d’un message.|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
@@ -183,7 +188,7 @@ Pour plus d’informations, consultez la section [modifier ou restaurer les acti
 Pour afficher les actions de boîte aux lettres actuellement enregistrées dans des boîtes aux lettres utilisateur ou des boîtes aux \<lettres\> partagées, remplacez MailboxIdentity par le nom, l’alias, l’adresse de messagerie ou le nom d’utilisateur principal (username) de la boîte aux lettres, puis exécutez une ou plusieurs des commandes suivantes dans Exchange Online PowerShell.
 
 > [!NOTE]
-> Bien que vous puissiez ajouter `-GroupMailbox` le commutateur aux commandes **Get-Mailbox** suivantes pour les boîtes aux lettres de groupe Office 365, ne croyez pas les valeurs que vous voyez. Les actions de boîte aux lettres par défaut et statiques qui sont auditées pour les boîtes aux lettres de groupe Office 365 sont décrites dans la section [actions de boîte aux lettres pour les boîtes aux lettres de groupe office 365](#mailbox-actions-for-office-365-group-mailboxes) plus haut dans cette rubrique.
+> Bien que vous puissiez ajouter `-GroupMailbox` le commutateur aux commandes **Get-Mailbox** suivantes pour les boîtes aux lettres de groupe Office 365, ne croyez pas les valeurs renvoyées. Les actions de boîte aux lettres par défaut et statiques qui sont auditées pour les boîtes aux lettres de groupe Office 365 sont décrites dans la section [actions de boîte aux lettres pour les boîtes aux lettres de groupe office 365](#mailbox-actions-for-office-365-group-mailboxes) plus haut dans cette rubrique.
 
 #### <a name="owner-actions"></a>Actions du propriétaire
 
@@ -334,9 +339,11 @@ La valeur **true** indique que l’enregistrement d’audit de boîte aux lettre
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Bien que l’enregistrement d’audit de boîte aux lettres soit activé par défaut pour toutes les organisations, seuls les utilisateurs disposant de la licence E5 retournent les événements de journal d’audit de boîte aux lettres dans [le centre de sécurité & Compliance Center](search-the-audit-log-in-security-and-compliance.md) ou via l' [API d’activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
+- Bien que l’enregistrement d’audit de boîte aux lettres soit activé par défaut pour toutes les organisations, seuls les utilisateurs disposant de la licence E5 retournent les événements du journal d’audit de la boîte aux lettres dans [le centre de sécurité & conformité](search-the-audit-log-in-security-and-compliance.md) ou via l' [API d’activité de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **par défaut**.
 
   Pour récupérer les entrées du journal d’audit de boîte aux lettres pour les utilisateurs sans licence E5, vous pouvez :
+
+  - Utilisez les recherches dans le journal d’audit dans le centre de sécurité & conformité ou via l’API d’activité de gestion d’Office 365 **après avoir** activé manuellement l’audit des boîtes aux lettres sur les boîtes aux lettres individuelles.
 
   - Utilisez les applets de commande suivantes dans Exchange Online PowerShell :
 

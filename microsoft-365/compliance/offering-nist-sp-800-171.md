@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 070ec3977768d131e4e4d9c2f493e630a1a707c9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601891"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851781"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -40,7 +40,7 @@ Des organisations d’évaluation tierces accréditées, Kratos SecureInfo et Co
 
 Les conditions requises pour le Service Pack 800 SP 800 – 171 sont un sous-ensemble du NIST SP 800-53, la norme utilisée par FedRAMP. L’annexe D du NIST SP 800 – 171 fournit un mappage direct de ses exigences en matière de sécurité CUI aux contrôles de sécurité appropriés dans NIST SP 800-53, pour lesquels les services Cloud dans l’étendue ont déjà été évalués et autorisés dans le cadre du programme FedRAMP.
 
-Toute entité qui traite ou stocke les CUIs du gouvernement américain (institutions de recherche, sociétés de Conseil, fournisseurs de service de fabrication) doit respecter les exigences rigoureuses d’NIST SP 800 – 171. Cette attestation signifie que les services Cloud dans l’étendue de Microsoft peuvent accueillir les clients cherchant à déployer des charges de travail CUI avec l’assurance que Microsoft est en conformité totale. Par exemple, tous les sous-traitants DoD qui traitent, stockent ou transmettent des « informations de défense couvertes » à l’aide des services de Cloud Computing Microsoft dans leurs systèmes d’information satisfont aux clauses du ministère de la défense DFARS qui doivent respecter la sécurité Configuration requise du service NIST SP 800 – 171.
+Toute entité qui traite ou stocke les CUIs du gouvernement américain (institutions de recherche, sociétés de Conseil, fournisseurs de service de fabrication) doit respecter les exigences rigoureuses d’NIST SP 800 – 171. Cette attestation signifie que les services Cloud dans l’étendue de Microsoft peuvent accueillir les clients cherchant à déployer des charges de travail CUI avec l’assurance que Microsoft est en conformité totale. Par exemple, tous les sous-traitants DoD qui traitent, stockent ou transmettent « les informations de défense couvertes » à l’aide des services de Cloud Computing de Microsoft dans leurs systèmes d’information répondent aux clauses du ministère de la défense DFARS qui doivent respecter la sécurité. Configuration requise du service NIST SP 800 – 171.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
@@ -57,11 +57,15 @@ Toute entité qui traite ou stocke les CUIs du gouvernement américain (institut
 
 - [Schéma NIST SP 800 – 171](https://aka.ms/NIST-800-171-Blueprint): obtenez de l’aide pour la mise en œuvre de charges de travail dans Azure qui sont conformes à NIST SP 800 – 171.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Puis-je utiliser Microsoft Compliance avec NIST SP 800 – 171 pour mon organisation ?**
 
 Oui. Les clients Microsoft peuvent utiliser les contrôles audités décrits dans les rapports issus d’organisations d’évaluation tierces indépendantes (3PAO) sur les normes FedRAMP dans le cadre de leur propre analyse des risques FedRAMP et NIST. Ces rapports attestent l’efficacité des contrôles que Microsoft a mis en œuvre dans ses services Cloud intégrés. Les clients sont chargés de s’assurer que leurs charges de travail CUI sont conformes aux directives NIST SP 800 – 171.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+
+[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2117526) préconfiguré pour aider votre organisation à répondre aux exigences de la présente réglementation.
 
 ## <a name="resources"></a>Ressources
 
@@ -73,6 +77,6 @@ Oui. Les clients Microsoft peuvent utiliser les contrôles audités décrits dan
 - [Cloud Microsoft Service publique](https://www.microsoft.com/enterprise/government)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ) (disponible uniquement en anglais pour le moment).

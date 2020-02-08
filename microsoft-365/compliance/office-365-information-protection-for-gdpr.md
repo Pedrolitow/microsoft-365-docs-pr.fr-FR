@@ -1,5 +1,7 @@
 ---
 title: Protection des informations Office 365 pour le RGPD
+f1.keywords:
+- CSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -15,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Cette solution montre comment protéger les données sensibles stockées dans les services Office 365.
-ms.openlocfilehash: 9540eb41c6603a7ee09cb5499d09f464353d9fd9
-ms.sourcegitcommit: 4d9a075f4c890fa5bbd1751740a5540edbc1b999
+ms.openlocfilehash: a6bc231c82e65e7361cdcda7c2087bc48a55dcc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "38710026"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597841"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>Protection des informations Office 365 pour le RGPD
 

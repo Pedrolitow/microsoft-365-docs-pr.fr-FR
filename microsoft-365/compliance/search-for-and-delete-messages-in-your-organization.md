@@ -1,5 +1,7 @@
 ---
 title: Recherche et suppression de messages électroniques dans votre organisation Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité d’Office 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259972"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601551"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Recherche et suppression de messages électroniques dans votre organisation Office 365
 
@@ -43,7 +45,7 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu dans Office 365 
     
 - Pour supprimer des messages, vous devez utiliser le centre de sécurité et conformité PowerShell. Pour des instructions sur la façon de se connecter, consultez [Etape 2](#step-2-connect-to-security--compliance-center-powershell).
     
-- Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et de suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas destinée à nettoyer les boîtes aux lettres des utilisateurs. Pour supprimer plus de 10 éléments, vous pouvez utiliser la commande **Search-Mailbox -DeleteContent** dans Exchange Online PowerShell. Voir [Rechercher et supprimer des messages](search-for-and-delete-messagesadmin-help.md).
+- Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et de suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas destinée à nettoyer les boîtes aux lettres des utilisateurs.
     
 - Le nombre maximal de boîtes aux lettres dans lesquelles vous pourrez supprimer des éléments à l’aide d’une action de recherche et de purge est de 50 000, dans le cadre d’une Recherche de contenu. Si la Recherche de contenu (que vous créez à l'[étape 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) contient plus de 50 000 boîtes aux lettres sources, l’action de purge (que vous créez à l’étape 3) échouera. Voir la section [Plus d’informations](#more-information) pour en savoir plus sur l’exécution d’une opération de recherche et de purge sur plus de 50 000 boîtes aux lettres. 
     

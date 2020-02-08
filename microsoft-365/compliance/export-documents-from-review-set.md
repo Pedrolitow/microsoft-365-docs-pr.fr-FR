@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0448082ce6dcbcd9d1cee52557a78b2d7913a034
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6f467f938ce14aacb9553b11d51dc63431ab409
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588354"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862074"
 ---
 # <a name="export-documents-from-a-review-set"></a>Exporter des documents d’un jeu à réviser
 
@@ -45,7 +45,7 @@ Exporter permet aux utilisateurs de personnaliser le contenu qui est inclus dans
 
 ### <a name="metadata-file"></a>Fichier de métadonnées
 
-Cela peut être considéré comme votre « fichier de chargement » qui contient les métadonnées associées aux fichiers que vous avez exportés. Pour obtenir la liste des champs disponibles dans le fichier de métadonnées, consultez la rubrique \[Link\]. Ce fichier peut généralement être ingéré<sup>par 3 outils</sup> tiers en aval.
+Cela peut être considéré comme votre « fichier de chargement » qui contient les métadonnées associées aux fichiers que vous exportez. Pour obtenir la liste des champs exportés disponibles dans le fichier de métadonnées, voir [document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). Ce fichier peut généralement être ingéré par des outils tiers.
 
 ### <a name="tag-data"></a>Données de balise
 
@@ -53,13 +53,13 @@ Ce contenu est ajouté en tant que champs dans le fichier de métadonnées. Elle
 
 ### <a name="text-files"></a>Fichiers texte
 
-Des fichiers texte peuvent être générés pour chaque fichier exporté à partir d’un ensemble de révision. Ces fichiers sont souvent requis par les partenaires de services dans le cadre de l’ingestion de données<sup>dans 3 outils</sup> tiers en aval.
+Des fichiers texte peuvent être générés pour chaque fichier exporté à partir d’un ensemble de révision. Souvent, ces fichiers sont requis par les partenaires de services dans le cadre de l’ingestion de données dans des outils tiers.
 
 ### <a name="redacted-files"></a>Fichiers biffés
 
-Si des fichiers PDF biffés sont générés lors de la révision, ces fichiers sont disponibles lors de l’exportation. Les utilisateurs peuvent décider s’il convient d’exporter les fichiers natifs uniquement ou de remplacer les fichiers natifs dont le Redactions avec le fichier PDF est gravé.
+Si des fichiers au format PDF biffés sont générés lors de la révision, ces fichiers sont disponibles lors de l’exportation. Vous pouvez décider s’il faut exporter les fichiers natifs uniquement ou remplacer les fichiers natifs qui ont nécessité la biffure avec les fichiers PDF qui contiennent la Redactions réelle.
 
-### <a name="export-location"></a>Emplacement de l’exportation
+### <a name="export-location"></a>Emplacement d’exportation
 
 Le contenu exporté est remis à un objet BLOB Azure fourni par Microsoft ou le BLOB d’un client peut être utilisé si les détails sont fournis lors de l’exportation.
 

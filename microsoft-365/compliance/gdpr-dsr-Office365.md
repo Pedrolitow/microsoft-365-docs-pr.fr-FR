@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 4e5ee52f9158df64e80f057adcfbf49c45f6dc31
+ms.sourcegitcommit: d4941dd0b598fb315e2c87083246ec3b26bbc032
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628120"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41779029"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées pour Office 365 concernant le RGPD et le CCPA
 
@@ -1581,61 +1581,18 @@ La possibilité de restreindre ou de rectifier des données dans des journaux g�
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>Consultation et exportation des journaux générés par le système
 
-Les administrateurs peuvent accéder aux journaux générés par le système associés à une utilisation particulière d’un utilisateur des applications et des services Office 365. Pour consulter et exporter les journaux générés par le système, procédez comme suit :
+Le « Droit à la portabilité des données » permet à une personne concernée de demander une copie de ses données à caractère personnel dans un format électronique (c’est-à-dire un « format structuré, fréquemment utilisé, lisible par une machine et interopérable ») qui peut être transmis à un autre responsable du traitement des données. Azure prend cela en charge en permettant à votre organisation d’exporter les données au format JSON natif vers votre conteneur de stockage Azure spécifié.
 
-1. Accédez au [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) et connectez-vous en utilisant les identifiants d’un administrateur général Office 365.
+>[!IMPORTANT]
+>Pour exporter des données utilisateur à partir du client, vous devez être un administrateur client.
 
-2. Dans la liste déroulante **Confidentialité** en haut de la page, cliquez sur **Demande des personnes concernées**.
+#### <a name="azure-active-directory"></a>Azure Active Directory
 
-3. Sur la page **Demande des personnes concernées**, sous **Journaux générés par le système**, cliquez sur **Exportation des journaux de données**.
+Pour des données client, Microsoft offre un portail et des expériences intégrées au produit permettant à l’administrateur client de l’entreprise cliente de gérer les demandes d’exportation d’informations identifiables sur un utilisateur final.
 
-    L'**exportation de journal de données** s’affiche. Notez que la liste des demandes de données d’exportation transmises par votre organisation s’affiche.
+#### <a name="service-specific-interfaces"></a>Interfaces propres au service
 
-4. Pour créer une demande pour un utilisateur, cliquez sur **Créer une demande d’exportation de données**.
-
-Une fois que vous avez créé une demande, celle-ci apparaît dans la page**exportation de journal des données** dans laquelle vous pouvez suivre son état. Une fois la demande terminée, vous pouvez cliquer sur un lien pour accéder aux journaux générés par le système, qui seront exportés vers l’emplacement de stockage Azure de votre organisation dans les 30 jours suivant la création de la demande. Les données sont enregistrées dans des formats de fichier communs, tels que JSON ou XML. Si vous n’avez pas de compte Azure et d’emplacement de stockage Azure, vous devez créer un compte Azure et/ou un emplacement de stockage Azure pour votre organisation de sorte que l’outil exportation de journal de données puisse exporter les journaux générés par le système. Pour plus d'informations, voir [Introduction à Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
-
->[!NOTE]
->Lorsque vous créez une demande d’exportation de données, les données générées par le système de données pour quelques applications ne sont pas exportées via l’outil Exportation des journaux de données. Pour exporter les données de ces applications, consultez l’article[Exportation des autres journaux générés par le système](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
-
-Les éléments suivants récapitulent la consultation et l’exportation des journaux générés par le système à l’aide de l’outil Exportation des journaux de données :
-
-- **Combien de temps faut-il à l’outil Exportation des journaux de données de Microsoft pour exécuter une demande ?** Cela dépend de plusieurs facteurs. Dans la plupart des cas, l’exécution dure entre un et deux jours, mais elle peut prendre jusqu’à 30 jours.
-
-- **Quel format la sortie aura-t-elle ?** La sortie sera structurée sous forme de fichiers lisibles par machine, comme XML, CSV ou JSON.
-
-- **Qui a accès à l’outil Exportation des journaux de données pour envoyer des demandes d’accès pour les journaux générés par le système ?** Les administrateurs généraux Office 365 ont accès à l’utilitaire de gestion des journaux du RGPD.
-
-- **Quelles données l’outil Exportation des journaux de données renvoie-t-il ?:** L’outil Exportation des journaux de données renvoie les journaux générés par le système que Microsoft stocke. Les données exportées englobent différents services Microsoft, dont Office 365, Azure et Dynamics.
-
-- **Comment les données sont-elles renvoyées à l’utilisateur ?** Les données sont exportées vers l’emplacement de stockage Azure de votre organisation ; les administrateurs de votre organisation doivent ensuite déterminer la façon dont ils souhaitent afficher/renvoyer ces données aux utilisateurs.
-
-- **À quoi ressemblent les données dans les journaux générés par le système ?** Voici un exemple d’un enregistrement de journal généré par le système au format JSON :
-
-   ```JSON
-   [{
-            "DateTime": "2017-04-28T12:09:29-07:00",
-             "AppName": "SharePoint",
-             "Action": "OpenFile",
-             "IP": "154.192.13.131",
-             "DevicePlatform": "Windows 1.0.1607"
-   }]
-   ```
-
->[!NOTE]
->Certaines fonctionnalités empêchent d’exporter ou de supprimer des journaux générés par le système contenant des informations personnelles afin de préserver l’intégrité de ces informations pour des raisons de sécurité et d’audit.
-
-Il est également possible de récupérer des données d’utilisation des produits et services pour certains des services Microsoft les plus fréquemment utilisés, tels qu’Exchange Online, SharePoint Online, Skype Entreprise, Yammer et les groupes Office 365, en recherchant dans le journal d’audit Office 365 dans le Centre de conformité et sécurité. Pour plus d’informations, voir[utiliser l’outil de recherche dans le journal d’audit d’Office 365 dans les investigations DSR](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) de l’annexe A. Le journal d’audit peut vous intéresser parce qu’il est possible d’attribuer des autorisations à d’autres membres de votre organisation (par exemple, comme officier de conformité) pour effectuer des recherches dans le journal d’audit afin d’accéder à ces données.
-
-#### <a name="national-clouds"></a>Clouds nationaux
-
-Un administrateur informatique général doit procéder comme suit pour exporter les données de journaux générés par le système dans les clouds nationaux suivants :
-
-- Office 365 Allemagne : accédez au [Portail d’approbation de services Microsoft pour l’Allemagne](https://aka.ms/MicrosoftSTPGermany) et suivez les étapes mentionnées ci-dessus.
-
-- Office 365 Secteur Public : accédez au [portail d’administration Office 365](https://portal.office365.us) et envoyez une demande au support Microsoft.
-
-- Office 365 géré par 21Vianet (Chine) : accédez au [ portail d’administration d’Office 365 géré par 21Vianet](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) puis accédez à **Commerce** > **Abonnement** >  **Confidentialité** > **RGPD** et saisissez les informations requises.
+Microsoft permet de découvrir des données client directement via des interfaces de programmation d’applications (API) ou des interfaces utilisateur (UI) pré-existantes pour des services spécifiques. Vous trouverez des détails dans la documentation de référence des services respectifs, décrivant les opérations CRUD (créer, lire, mettre à jour, supprimer) applicables.
 
 ### <a name="deleting-system-generated-logs"></a>Suppression des journaux générés par le système
 

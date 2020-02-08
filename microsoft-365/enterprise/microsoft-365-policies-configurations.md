@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: af68a8e81cdaab1bbbd8887a7d586fcaefff1041
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600891"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855383"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -116,13 +116,13 @@ Les stratégies [Intune App protection](https://docs.microsoft.com/intune/app-pr
 
 Ce guide vous montre comment créer des stratégies recommandées pour appliquer l’utilisation des applications approuvées et déterminer comment ces applications peuvent être utilisées avec vos données métiers.
 
-### <a name="office-365"></a>Office 365
+### <a name="office-365"></a>Office 365
 
 Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès à Office 365, notamment Exchange Online, SharePoint Online et OneDrive entreprise. En plus de mettre en œuvre ces stratégies, nous vous recommandons d’augmenter également le niveau de protection pour votre client Office 365 à l’aide de ces ressources :
 
 - [Configurez votre client office 365 pour renforcer la sécurité](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): ces recommandations s’appliquent à la sécurité de base pour votre client Office 365.
 - Feuille [de route de sécurité Office 365 : les principales priorités des 30 premiers jours, 90 jours et au-delà](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): ces recommandations incluent la journalisation, la gouvernance des données, l’accès administrateur et la protection contre les menaces.
-- [Sécuriser des sites et des fichiers SharePoint Online](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files): cet ensemble d’articles explique comment protéger des fichiers et des sites à des niveaux appropriés pour une protection de base, sensible et hautement confidentielle.
+
 
 ### <a name="windows-10-and-office-365-proplus"></a>Windows 10 et Office 365 ProPlus
 

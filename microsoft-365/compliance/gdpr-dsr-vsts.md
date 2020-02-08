@@ -6,20 +6,23 @@ audience: itpro
 ms.prod: devops
 ms.topic: article
 ms.date: 06/11/2018
-author: jitojo
-ms.author: jominana
-manager: douge
+author: robmazz
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+manager: laurawi
 ms.collection:
 - GDPR
 - M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af519ed13b8c647d359ea9c8d1faaff2c34209e
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: a803dfd8d917ff0c2753b5ee87d9d619bc2f6222
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268843"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596471"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par les données Azure DevOps Services pour le RGPD et le CCPA
 

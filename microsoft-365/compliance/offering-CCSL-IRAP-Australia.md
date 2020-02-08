@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3cbc0008841456e91dd2ffe6a9e5c78fba0ba43d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 87bb8faa13f34fbe299b6de82bdd9099eaaff5aa
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602671"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851851"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Programme d’évaluation de la sécurité des informations pour le gouvernement australien (IRAP)
 
@@ -85,6 +85,10 @@ Commencez par [qu’est-ce que IRAP ?](https://www.cyber.gov.au/irap/what-irap)
 - [Qu’est-ce qu’une évaluation IRAP ?](https://acsc.gov.au/infosec/irap/irap_assessments.htm)
 - [Qui fournit une formation IRAP ?](https://acsc.gov.au/infosec/irap/training.htm)
 - [Informations sur les exigences de conformité et de non-conformité](https://acsc.gov.au/infosec/irap/compliance.htm)
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+
+[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle IRAP](https://go.microsoft.com/fwlink/?linkid=2117913) préconfiguré pour aider votre organisation à répondre aux exigences de la présente réglementation.
 
 ## <a name="resources"></a>Ressources
 

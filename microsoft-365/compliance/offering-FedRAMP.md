@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2b7ad248299c12edfeed880ac731f2d23e9b1949
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 71be1e70a04881b937ee1f75d5fda6f03efdbd5f
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602361"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851861"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programme FedRAMP (Federal Risk and Authorization Management Program)
 
@@ -91,7 +91,7 @@ Laissez Microsoft vous guider dans le processus de l’ATO et déployer rapideme
 
 [Commencer à utiliser le modèle Azure FedRAMP](https://aka.ms/fedrampblueprint)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Est-ce que les services de Cloud Computing Microsoft sont conformes à la loi FISMA (Federal Information Security Management Act) ?**
 
@@ -109,6 +109,10 @@ Pour obtenir une vue d’ensemble des étapes que les agences fédérales doiven
 
 Oui. Vous pouvez utiliser les certifications des services de Cloud Computing Microsoft comme base de tout programme ou initiative nécessitant un ATO auprès d’une agence gouvernementale fédérale. Toutefois, vous devez obtenir vos propres autorisations pour les composants en dehors de ces services.
 
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+
+[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle FedRAMP](https://go.microsoft.com/fwlink/?linkid=2118102) préconfiguré pour aider votre organisation à répondre aux exigences de la présente réglementation.
+
 ## <a name="resources"></a>Ressources
 
 - [Programme fédéral de gestion des autorisations et des risques](https://www.fedramp.gov/)
@@ -117,6 +121,6 @@ Oui. Vous pouvez utiliser les certifications des services de Cloud Computing Mic
 - [Infrastructure d’évaluation de la sécurité FedRAMP](https://go.microsoft.com/fwlink/p/?linkid=2099507)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf) (disponible uniquement en anglais pour le moment).

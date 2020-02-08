@@ -1,5 +1,8 @@
 ---
 title: RGPD pour les serveurs Office
+description: Découvrez comment satisfaire aux exigences du RGPD dans vos serveurs Office locaux.
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,13 +10,13 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: Découvrez comment satisfaire aux exigences du RGPD dans vos serveurs Office locaux.
-ms.openlocfilehash: 5723580e1a7bdbd997cac6d9cae6c1c915f27c92
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 5ef03851064104df6dcb00ac853bf7dff65cbfd3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749735"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596431"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>RGPD pour les serveurs Office locaux
 

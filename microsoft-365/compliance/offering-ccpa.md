@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 24217ed5782d14cc67277bc980e4a94b7bc904f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601981"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851841"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
 ## <a name="ccpa-overview"></a>Vue d’ensemble de CCPA
 
-La loi CCPA (California Consumer Privacy Act) est la première loi de confidentialité complète aux États-Unis. Il offre un large éventail de droits de confidentialité aux consommateurs de Californie.  Les entreprises réglementées par le CCPA auront un certain nombre d’obligations à ces consommateurs, y compris les informations à fournir, le règlement général sur la protection des données (RGPD), comme les droits d’objet des données client (DSR), un « exclusion » pour certains transferts de données et un « abonnement » condition requise pour les mineurs.
+La loi CCPA (California Consumer Privacy Act) est la première loi de confidentialité complète aux États-Unis. Il offre un large éventail de droits de confidentialité aux consommateurs de Californie.  Les entreprises réglementées par le CCPA auront un certain nombre d’obligations à ces consommateurs, y compris les informations à fournir, le règlement général sur la protection des données (RGPD) (DSR), un « refus » pour certains transferts de données et un « opt-in » condition requise pour les mineurs.
 
 Le CCPA s’applique uniquement aux sociétés qui exercent des activités en Californie et qui satisfont à un ou plusieurs des éléments suivants : (1) ont un chiffre d’affaires annuel brut supérieur à $25 millions, ou (2) dérivent plus de 50% de leur revenu annuel de la vente de Californie Consumer Personal informations, ou (3) acheter, vendre ou partager les informations personnelles de plus de 50 000 utilisateurs de Californie par an.
 
@@ -35,7 +35,7 @@ California AG applique le CCPA et dispose d’une alimentation pour les amendes 
 
 ## <a name="microsoft-and-the-ccpa"></a>Microsoft et le CCPA
 
-Pour les clients commerciaux qui font des affaires en Californie, Microsoft fera office de « fournisseur de services » en ce qui concerne notre offre de services et de services professionnels en ligne.  Les conditions des services en ligne (OST) et l’Addendum sur la protection des données des services professionnels de Microsoft (MSDPA) remplissent déjà les conditions requises pour les fournisseurs de services sous le CCPA et sont généralement suffisantes pour permettre aux clients de continuer à transférer des données. à nos services en ligne. En tant que tel, aucune modification contractuelle supplémentaire n’est requise pour que les clients puissent compter sur Microsoft en tant que fournisseur de services sous le CCPA.
+Pour les clients commerciaux qui exercent des activités en Californie, Microsoft fera office de « fournisseur de services » en ce qui concerne notre offre de services en ligne et de services professionnels.  Les conditions des services en ligne (OST) et l’Addendum sur la protection des données des services professionnels de Microsoft (MSDPA) remplissent déjà les conditions requises pour les fournisseurs de services sous le CCPA et sont généralement suffisantes pour permettre aux clients de continuer à transférer des données. à nos services en ligne. En tant que tel, aucune modification contractuelle supplémentaire n’est requise pour que les clients puissent compter sur Microsoft en tant que fournisseur de services sous le CCPA.
 
 Comme défini dans le fichier OST, Microsoft est conforme à l’ensemble des lois et réglementations applicables à sa fourniture de services en ligne, qui inclurait le CCPA.  
 
@@ -58,7 +58,7 @@ Voici quelques étapes que vous pouvez suivre pour vous préparer au CCPA :
 - Configurez les étiquettes et les stratégies de façon à découvrir, classifier et étiqueter, ainsi que protéger les données sensibles à l’aide de Microsoft Information Protection.
 - Utilisez les fonctionnalités de chiffrement du courrier électronique pour contrôler davantage les informations sensibles.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Quel effet le CCPA aura-t-il sur mon entreprise ?**
 
@@ -72,10 +72,10 @@ Il existe de nombreuses différences. Il est plus facile de se concentrer sur le
 
 - Obligations de transparence/de divulgation,
 - Droits de consommateur permettant d’accéder, de supprimer et de recevoir une copie des données,
-- Définition des « fournisseurs de services » similaire à la façon dont RGPD définit les « processeurs » avec une obligation contractuelle similaire et
-- Définition de « entreprises » englobant la définition RGPD des « contrôleurs ».
+- Définition de « fournisseurs de services » similaire à la façon dont RGPD définit les « processeurs » avec une obligation contractuelle similaire et
+- Définition de « entreprises » qui comprend la définition RGPD de « contrôleurs ».
 
-La principale différence avec le CCPA est la nécessité fondamentale de permettre de refuser les ventes de données à des tiers (« vente » est ici pris au sens large pour inclure le partage de données en échange de contreparties).
+La plus grande différence dans CCPA est l’exigence fondamentale pour permettre l’annulation des ventes de données à des tiers (avec « vente » globalement défini pour inclure le partage de données à des fins de considération).
 
 **Quels droits les entreprises doivent-elles respecter dans le cadre du CCPA ?**
 
@@ -92,6 +92,10 @@ Le CCPA exige des entreprises réglementées qui recueillent, transfèrent et ve
 
 - Le CCPA présente des obligations en matière de consentement parental en accord avec la réglementation COPPA (Children’s Online Privacy Protection Act) pour les enfants âgés de moins de 13 ans.
 - Pour les enfants de 13 à 16 ans, CCPA impose une nouvelle obligation d’obtenir l’autorisation d’adhésion de l’enfant.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+
+[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle CCPA](https://go.microsoft.com/fwlink/?linkid=2118004) préconfiguré pour aider votre organisation à répondre aux exigences de la présente réglementation.
 
 ## <a name="resources"></a>Ressources
 

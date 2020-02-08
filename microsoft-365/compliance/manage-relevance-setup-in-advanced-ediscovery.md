@@ -1,8 +1,11 @@
 ---
 title: Gestion de la configuration de l’entraînement Pertinence dans Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Lisez les recommandations pour configurer l’entraînement Pertinence dans Office 365 Advanced eDiscovery pour qu’il note les fichiers selon leur pertinence et génère des résultats.
-ms.openlocfilehash: 5efcaca0d62cec6ccf61f20eea72ed9c538e436e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1a88d554d06b575f3efb0d01534008b6c35032e1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079377"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600501"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Gestion de la configuration de l’entraînement Pertinence dans Office 365 Advanced eDiscovery
 

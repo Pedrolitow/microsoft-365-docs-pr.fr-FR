@@ -1,5 +1,7 @@
 ---
 title: Sécuriser des sites et des fichiers SharePoint Online
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -19,12 +21,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Résumé : Recommandations de configuration pour la protection des fichiers dans SharePoint Online et Office 365.'
-ms.openlocfilehash: c175e0e480670f9e5ce00a701704cedf1abeff26
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 29bd8ade5f32a2ba7e810d587d731d5036a372b6
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572350"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830988"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sécuriser des sites et des fichiers SharePoint Online
 
@@ -158,7 +160,7 @@ Pour connaître les étapes de configuration des étiquettes de rétention et de
 
 Si cela se justifie pour votre scénario de sécurité, vous pouvez utiliser des étiquettes de sensibilité pour appliquer des protections fiables qui suivent les fichiers là où elles accèdent. Les étiquettes de niveau de confidentialité dans le centre de conformité de Microsoft 365 et Azure Information Protection étiquettes sont identiques. Pour cette solution, nous vous recommandons d’utiliser une étiquette de confidentialité et une sous-étiquette de l’étiquette de confidentialité hautement confidentiel pour chiffrer et accorder des autorisations sur les fichiers qui doivent être protégés avec le plus haut niveau de sécurité.
 
-N’oubliez pas que, lorsque le chiffrement des étiquettes de confidentialité est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter le contenu de ces fichiers. La co-édition, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données DLP peuvent fonctionner seulement avec les métadonnées (notamment les étiquettes de rétention), mais pas avec le contenu de ces fichiers (comme des numéros de carte de crédit dans des fichiers).
+Si votre organisation n’a pas [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) : n'oubliez pas que lorsque le chiffrement d'étiquettes de confidentialité est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter leur contenu. La co-édition, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données DLP peuvent fonctionner seulement avec les métadonnées (notamment les étiquettes de rétention), mais pas avec le contenu de ces fichiers (comme des numéros de carte de crédit dans des fichiers).
 
 Pour plus d’informations, voir[Vue d’ensemble d’étiquettes de sensibilité](../../compliance/sensitivity-labels.md).
 

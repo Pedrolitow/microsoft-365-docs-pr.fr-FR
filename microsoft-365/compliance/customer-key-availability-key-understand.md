@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: En savoir plus sur la clé de disponibilité utilisée pour récupérer les clés de client Office 365.
-ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
-ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
+ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845363"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862084"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>En savoir plus sur la clé de disponibilité pour la clé client Office 365
 
@@ -94,7 +94,7 @@ Cette opération est proportionnelle au nombre de sites dans votre organisation.
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Utilisation de la clé de disponibilité par Exchange Online et Skype entreprise
 
-Lorsque vous créez une DEP avec une clé client, Office 365 génère une clé de stratégie de chiffrement de données (clé DEP) associée à cette DEP. Le service chiffre la clé DEP trois fois : une fois avec chacune des clés de client et une fois avec la clé de disponibilité. Seules les versions chiffrées de la clé DEP sont stockées et une clé DEP ne peut être déchiffrée qu’à l’aide des clés client ou de la clé Availability. La clé DEP est ensuite utilisée pour chiffrer les clés de boîte aux lettres, qui sont ensuite utilisées pour chiffrer des boîtes aux lettres individuelles.
+Lorsque vous créez une DEP avec une clé client, Office 365 génère une clé de stratégie de chiffrement de données (clé DEP) associée à cette DEP. Le service chiffre la clé DEP trois fois : une fois avec chacune des clés de client et une fois avec la clé de disponibilité. Seules les versions chiffrées de la clé DEP sont stockées et une clé DEP ne peut être déchiffrée qu’à l’aide des clés client ou de la clé Availability. La clé DEP est ensuite utilisée pour chiffrer les clés de boîte aux lettres, qui chiffrent les boîtes aux lettres individuelles.
   
 Office 365 suit ce processus pour déchiffrer et fournir des données lorsque les clients utilisent le service :
   
@@ -171,7 +171,7 @@ Les systèmes automatisés dans Office 365 traitent toutes les données à mesur
 
 ### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Journalisation de la clé de disponibilité de Skype entreprise et Exchange Online
 
-Exchange Online et Skype entreprise utilisent automatiquement la clé de disponibilité lors des erreurs passagères. Lorsque ce secours se produit, Office 365 publie des journaux visibles par le client accessibles depuis le centre de sécurité et de conformité. Un enregistrement de journal d’audit pour l’opération de clé de disponibilité est généré chaque fois que ces services basculent à l’aide de la clé de disponibilité. Un nouveau type d’enregistrement appelé « chiffrement du service de clés du client » avec le type d’activité « secours de la clé de disponibilité » permet aux administrateurs de filtrer les résultats de recherche du [Journal d’audit unifié](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) pour afficher les enregistrements de clés de disponibilité. L’enregistrement de clé de disponibilité est généré uniquement lorsque la clé client est utilisée pour accéder aux données et non pour les clés gérées par le service Microsoft.
+Exchange Online et Skype entreprise utilisent automatiquement la clé de disponibilité lors des erreurs passagères. Lorsque ce secours se produit, Office 365 publie des journaux visibles par le client accessibles depuis le centre de sécurité et de conformité. Un enregistrement de journal d’audit pour l’opération de clé de disponibilité est généré chaque fois que ces services utilisent la clé de disponibilité. Un nouveau type d’enregistrement appelé « chiffrement du service de clés du client » avec le type d’activité « secours de la clé de disponibilité » permet aux administrateurs de filtrer les résultats de recherche du [Journal d’audit unifié](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) pour afficher les enregistrements de clés de disponibilité. L’enregistrement de clé de disponibilité est généré uniquement lorsque la clé client est utilisée pour accéder aux données et non pour les clés gérées par le service Microsoft.
 
 Les enregistrements de journal incluent des attributs tels que la date, l’heure, l’activité, l’ID de l’organisation et l’ID de stratégie de chiffrement des données. L’enregistrement est disponible dans le cadre des journaux d’audit unifiés Office 365 et est accessible à partir de l’onglet de recherche du journal d’audit du centre de sécurité et de conformité Office 365.
 

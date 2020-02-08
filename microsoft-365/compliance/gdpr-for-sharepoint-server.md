@@ -1,5 +1,8 @@
 ---
 title: RGPD pour SharePoint Server
+description: Découvrez comment satisfaire aux exigences du RGPD dans un environnement SharePoint Server local.
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,13 +10,13 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: Découvrez comment satisfaire aux exigences du RGPD dans un environnement SharePoint Server local.
-ms.openlocfilehash: dba20f2f85bc9a474b39e427ed2628a2f9c9f437
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 6cbcb7f0918d472d953cb0f837adcb23b642a3a3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39625385"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596391"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>RGPD pour SharePoint Server
 
