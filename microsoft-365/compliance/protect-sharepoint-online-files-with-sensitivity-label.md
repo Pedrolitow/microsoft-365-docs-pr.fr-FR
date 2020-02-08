@@ -1,5 +1,7 @@
 ---
 title: Protéger les fichiers SharePoint Online à l’aide d’une étiquette de confidentialité
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Résumé : Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel.'
-ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 7b43ee5bcc3193da398359a155e2daeac2d06a85
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668802"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830968"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Protéger les fichiers SharePoint Online à l’aide d’une étiquette de confidentialité
 
@@ -34,7 +36,7 @@ Cette procédure fait partie d’une solution plus globale de configuration d’
 L’utilisation d’étiquettes de confidentialité pour les fichiers dans SharePoint Online n’est pas recommandée pour tous les clients, mais elle est proposée en option aux clients qui ont besoin de ce niveau de protection pour un sous-ensemble de fichiers.
 
 Voici quelques remarques importantes concernant cette solution :
-- Quand le chiffrement est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter le contenu de ces fichiers. La co-édition, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données peuvent fonctionner seulement avec les métadonnées (notamment les étiquettes Office 365), mais pas avec le contenu de ces fichiers (comme des numéros de carte de crédit dans des fichiers).
+- Si votre organisation n’a pas [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) : notez que lorsque le chiffrement d'étiquettes de confidentialité est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter leur contenu. La co-édition, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données peuvent fonctionner seulement avec les métadonnées (notamment les étiquettes Office 365), mais pas avec le contenu de ces fichiers (comme des numéros de carte de crédit dans des fichiers).
 
 - Cette solution exige que l’utilisateur sélectionne une étiquette qui applique la protection. Si vous avez besoin d'un chiffrement automatique et de la possibilité pour SharePoint d'indexer et d'inspecter les fichiers, pensez à utiliser la gestion des droits relatifs à l'information (IRM) dans SharePoint Online. Lorsque vous configurez une bibliothèque SharePoint pour la gestion des droits relatifs à l’information (IRM), les fichiers sont automatiquement chiffrés lorsqu’ils sont téléchargés à des fins de modification.  La gestion des droits relatifs à l’information (IRM) de SharePoint inclut des restrictions pouvant influencer votre décision. Pour plus d’informations, voir [Configurer la Gestion des droits relatifs à l’information (Information Rights Management, IRM) dans le Centre d’administration SharePoint](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
 
