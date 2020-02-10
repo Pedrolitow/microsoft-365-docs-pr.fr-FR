@@ -1,5 +1,7 @@
 ---
-title: Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité
+title: Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: 55a4096fb802608ac8c0e9777dc20b1026ba6b60
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: e27e130e96086dd37dd1cf5f49c30ebc764a8958
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962313"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830948"
 ---
-# <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité
+# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
 Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Par exemple, avec les paramètres de chiffrement d’une étiquette de sensibilité, vous pouvez protéger le contenu comme suit :
 
@@ -35,29 +37,82 @@ Lorsqu’un document ou un e-mail est chiffré, l’accès à son contenu est re
 - Il reste chiffré quel que soit son emplacement, interne ou externe à votre organisation, même si le fichier est renommé.
 - Il est chiffré lorsqu’il est inactif (par exemple dans un compte OneDrive) et en transit (par exemple, un e-mail envoyé).
 
-Enfin, en tant qu’administrateur, lorsque vous créez une étiquette de confidentialité, vous pouvez choisir d’effectuer l’une des opérations suivantes :
+Enfin, en tant qu’administrateur, lorsque vous configurez une étiquette de confidentialité pour appliquer le chiffrement, vous pouvez choisir d’effectuer l’une des opérations suivantes :
 
 - **Attribuer des autorisations maintenant**, afin de déterminer précisément les utilisateurs autorisés à accéder au contenu associé à cette étiquette.
 - **Permettre aux utilisateurs d'attribuer des autorisations** lorsqu’ils appliquent l’étiquette au contenu. De cette façon, vous pouvez proposer aux membres de votre organisation la souplesse nécessaire pour mieux collaborer et accomplir leur travail.
 
-Les paramètres de chiffrement sont disponibles lorsque vous créez une étiquette de sensibilité dans le Centre de conformité Microsoft 365, dans le Centre de sécurité Microsoft 365 ou dans le Centre de sécurité et conformité Office 365. Dans la zone de navigation gauche, sélectionnez **Classification** > **Etiquette de confidentialité** > **Créer une étiquette**.
+Les paramètres de chiffrement sont disponibles lorsque vous [créez une étiquette de sensibilité](create-sensitivity-labels.md) dans le Centre de conformité Microsoft 365, dans le Centre de sécurité Microsoft 365 ou dans le Centre de sécurité et conformité Office 365.
 
 ## <a name="how-encryption-works"></a>Fonctionnement du chiffrement
 
-Le chiffrement utilise Azure Rights Management (Azure RMS). Azure RMS repose sur des stratégies de chiffrement, d’identité et d’autorisation. Pour en savoir plus, reportez-vous à l’article [En quoi consiste Azure Rights Management ?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)
+Le chiffrement utilise le service Azure Rights Management (Azure RMS) à partir d’Azure Information Protection. Cette solution de protection utilise les stratégies de chiffrement, d’identité et d’autorisation. Pour plus d’informations, consultez [Qu’est-ce que Azure Rights Management ?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) dans la documentation Azure Information Protection. 
 
-## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>Comment activer le chiffrement pour une étiquette de sensibilité
+Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super utilisateur** s'assurer que les personnes et services autorisés peuvent toujours consulter et examiner les données qui ont été cryptées pour votre organisation. Le chiffrement peut ensuite être supprimé ou modifié si nécessaire. Pour plus d’informations, consultez la [Configuration de super utilisateurs pour les services Azure Information Protection et les services de découverte ou de la récupération de données](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-Positionnez tout d'abord le bouton bascule **Chiffrement** sur **Activé**, puis choisissez si vous souhaitez :
+## <a name="configuring-a-label-for-encryption"></a>Configuration d’une étiquette pour le chiffrement
 
-- **Attribuer des autorisations maintenant**, afin de déterminer précisément les utilisateurs autorisés à accéder au contenu associé à cette étiquette. Pour plus d’informations, voir la section suivante [affecter des autorisations maintenant](#assign-permissions-now).
-- **Permettre aux utilisateurs d'attribuer des autorisations** lorsqu’ils appliquent l’étiquette au contenu. De cette façon, vous pouvez proposer aux membres de votre organisation la souplesse nécessaire pour mieux collaborer et accomplir leur travail. Pour plus d’informations, voir la section ci-dessous [Permettre aux utilisateurs d’attribuer des autorisations](#let-users-assign-permissions).
+Lorsque vous [créez ou modifiez une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), dans la page **Chiffrement** de l’Assistant, vous pouvez sélectionner l’une des options suivantes :
+
+- **Aucun** : il s'agit du paramètre par défaut d'une nouvelle étiquette. Aucun nouveau chiffrement n’est appliqué.
+- **Appliquer** : active le chiffrement, puis vous spécifiez les paramètres de chiffrement.
+- **Supprimer** : supprime le chiffrement si le document ou le courrier est chiffré.
+
+> [!NOTE]
+> L’option **Supprimer** est uniquement prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Lorsque vous utilisez l’étiquetage intégré, une étiquette incluant cette option est visible dans les applications Office et, si l'option est sélectionnée, le comportement de chiffrement est identique à **Aucun**.
+
+Configuration des options de chiffrement :
+
+![Options de chiffrement d’une étiquette de confidentialité](media/encrytion-options-sensitivity-label.png)
+
+
+### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qu’advient-il du chiffrement existant lorsqu’une nouvelle étiquette est appliquée ?
+
+Si une étiquette de confidentialité est appliquée à du contenu non chiffré, le résultat des options de chiffrement que vous pouvez sélectionner est explicite. Par exemple, si le chiffrement est paramétré sur **Aucun**, le contenu reste non chiffré.
+
+Toutefois, il est possible que le contenu soit déjà chiffré. Par exemple, un autre utilisateur peut avoir appliqué :
+
+- Ses propres autorisations, y compris les autorisations définies par l’utilisateur lorsqu'il y est invité par une étiquette, les autorisations personnalisées par le client Azure Information Protection et la protection de documents par l'**Accès restreint** dans une application Office.
+- Un modèle de protection Azure Rights Management chiffrant le contenu d’une étiquette de manière individuelle. Cette catégorie inclut les règles de flux de courrier qui appliquent le chiffrement à l’aide de la protection des droits.
+- Une étiquette appliquant le chiffrement par le biais des autorisations attribuées par l’administrateur.
+
+Le tableau ci-après précise ce qu’il advient du chiffrement existant lorsqu’une étiquette de niveau de confidentialité est appliquée à ce contenu :
+
+| |**Chiffrement : Aucun**|**Chiffrement : Appliquer**|**Chiffrement : Supprimer**|
+|:-----|:-----|:-----|:-----|
+|**Autorisations spécifiées par l'utilisateur**|Le chiffrement d’origine est conservé|Le nouveau chiffrement d'étiquettes est appliqué|Le chiffrement d’origine est supprimé|
+|**Modèle de protection**|Le chiffrement d’origine est conservé|Le nouveau chiffrement d'étiquettes est appliqué|Le chiffrement d’origine est supprimé|
+|**Étiquette incluant les autorisations définies par l’administrateur**|Le chiffrement d’origine est supprimé|Le nouveau chiffrement d'étiquettes est appliqué|Le chiffrement d’origine est supprimé|
+
+Notez que, dans le cas où le nouveau chiffrement d’étiquettes est appliqué ou si le chiffrement d’origine est supprimé, cela se produit uniquement si l’utilisateur appliquant l’étiquette dispose d'un droit ou d'un rôle qui prend en charge cette action :
+- Le [droit d'utilisation](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Exportation ou Contrôle total.
+- Rôle du [propriétaire ou de l'émetteur des Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) ou du [super utilisateur](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+
+Si l’utilisateur ne dispose pas de ces droits ou rôles, l’étiquette ne peut pas être appliquée et le chiffrement d’origine est préservé. L’utilisateur voit le message suivant : **Vous n’êtes pas autorisé à effectuer cette modification dans l’étiquette de confidentialité. Veuillez contacter le propriétaire du contenu.**
+
+Par exemple, la personne appliquant Ne pas transférer à un courrier électronique peut étiqueter de nouveau le thread afin de remplacer ou de supprimer le chiffrement, car elle est propriétaire des Rights Management de cet e-mail. À l’exception des super utilisateurs, les destinataires de ce message ne peuvent pas lui attribuer une nouvelle étiquette, car ils disposent pas des droits d’utilisation requis.
+
+#### <a name="email-attachments-for-encrypted-email-messages"></a>Pièces jointes des courriers électroniques chiffrés
+
+Lorsqu’un courrier électronique est chiffré par une quelconque méthode, les documents Office non chiffrés joints au message héritent automatiquement des mêmes paramètres de chiffrement.
+
+Les documents déjà chiffrés, puis ajoutés sous forme de pièces jointes, conservent leur chiffrement d’origine. 
+
+## <a name="how-to-configure-encryption-settings-for-a-sensitivity-label"></a>Configuration des paramètres de chiffrement pour une étiquette de confidentialité
+
+Lorsque vous sélectionnez **Appliquer** dans la page de **Chiffrement** de l’Assistant pour créer ou modifier une étiquette de confidentialité, choisissez si vous souhaitez :
+
+- **Attribuer des autorisations maintenant**, afin de déterminer précisément les utilisateurs autorisés à accéder au contenu auquel l'étiquette est appliquée. Pour plus d’informations, voir la section suivante [Attribuer des autorisations maintenant](#assign-permissions-now).
+- **Permettre aux utilisateurs d'attribuer des autorisations** lorsque vos utilisateurs appliquent l’étiquette au contenu. Grâce à cette option, vous permettez aux membres de votre organisation de bénéficier d'une certaine souplesse pour mieux collaborer et accomplir leur travail. Pour plus d’informations, voir la section ci-dessous [Permettre aux utilisateurs d’attribuer des autorisations](#let-users-assign-permissions).
 
 Par exemple, si vous avez une étiquette de confidentialité appelée **Hautement confidentiel** qui sera appliquée à votre contenu le plus sensible, vous souhaiterez peut-être choisir le type d’autorisations qui lui sont associées.
 
 Par ailleurs, si vous avez une étiquette de confidentialité appelée **Contrats professionnels** et que le flux de travail de votre organisation exige que vos collègues collaborent sur ce contenu avec d'autres personnes de façon ponctuelle, vous souhaiterez peut-être autoriser vos utilisateurs à décider qui obtient les autorisations lorsqu’ils attribuent l’étiquette. Cette flexibilité permet à la fois à vos utilisateurs de gagner en productivité et de réduire les demandes aux administrateurs de mise à jour ou de création de nouvelles étiquettes de confidentialité pour résoudre des scénarios spécifiques.
 
+Choisissez d’attribuer des autorisations maintenant ou de permettre aux utilisateurs d’affecter des autorisations : 
+
 ![Option pour ajouter des autorisations définies par l’utilisateur ou l’administrateur](media/sensitivity-label-user-or-admin-defined-permissions.png)
+
 
 ## <a name="assign-permissions-now"></a>Attribuer des autorisations maintenant
 
@@ -67,26 +122,29 @@ Utilisez les options suivantes pour contrôler les utilisateurs autorisés à ac
 
 2. **Autoriser l’accès hors connexion** : Jamais, Toujours ou pendant un nombre de jours déterminé après que l’étiquette a été appliquée. Si vous limitez l’accès hors connexion sur Jamais ou sur un nombre de jours, lorsque ce seuil est atteint, les utilisateurs doivent s’authentifier à nouveau et leur accès est journalisé. Pour plus d’informations, reportez-vous à la section suivante sur la licence d’utilisation de Rights Management.
 
+Paramètres de contrôle d’accès pour du contenu chiffré :
+
 ![Paramètres pour les autorisations définies par l’administrateur](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licence d’utilisation de Rights Management pour l’accès en mode hors connexion
 
-Lorsqu’un utilisateur ouvre un document ou un e-mail en mode hors connexion et que celui-ci a été protégé par une étiquette de sensibilité, il reçoit une licence d’utilisation Azure Rights Management sur ce contenu. Cette licence d’utilisation est un certificat qui contient les droits d’utilisation de l’utilisateur sur le document ou l’e-mail, ainsi que la clé de chiffrement qui a été utilisée pour chiffrer le contenu. La licence d’utilisation contient également une date d’expiration si celle-ci a été définie, ainsi que la durée de validité de la licence.
+Lorsqu’un utilisateur ouvre un document ou un courrier électronique qui a été protégé par le chiffrement à partir du service Azure Rights Management, une licence d’utilisation d’Azure Rights Management est accordée à l’utilisateur pour ce contenu. Cette licence d’utilisation est un certificat qui contient les droits d’utilisation de l’utilisateur pour le document ou le courrier électronique, ainsi que la clé de chiffrement qui a été utilisée pour chiffrer le contenu. La licence d’utilisation inclut également une date d’expiration, si elle est activée, ainsi que sa durée de validité.
 
 Si aucune date d’expiration n’a été configurée, la période de validité par défaut de la licence d’utilisation est de 30 jours. Pendant la durée de la licence, l’utilisateur n’a pas besoin d’être authentifié ou autorisé à nouveau pour accéder au contenu. Ce procédé permet à l'utilisateur de continuer à ouvrir le document ou l’e-mail protégé sans connexion à Internet. Lorsque la période de validité de la licence d’utilisation a expiré, l’utilisateur doit à nouveau s’authentifier ou être autorisé lorsqu’il souhaite accéder au document ou à l’e-mail protégé.
 
-En plus de la nouvelle authentification, la stratégie et l’appartenance à un groupe d’utilisateurs sont également réévaluées. Autrement dit, les utilisateurs peuvent constater des résultats d’accès différents au même document ou au même e-mail si des modifications ont été apportées à la stratégie ou à l’appartenance au groupe depuis leur dernier accès au contenu.
+Outre la réauthentification, les paramètres de chiffrement et l’appartenance au groupe d’utilisateurs sont réévalués. Autrement dit, les utilisateurs peuvent constater des résultats d’accès différents au même document ou au même e-mail si des modifications ont été apportées aux paramètres de chiffrement ou à l’appartenance au groupe depuis leur dernier accès au contenu.
 
 Pour savoir comment modifier le paramètre de 30 jours par défaut, reportez-vous à [Licence d’utilisation Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>Attribuer des autorisations à des utilisateurs ou des groupes spécifiques
 
-Vous pouvez accorder des autorisations à des personnes spécifiques, de manière à ce qu’elles soient les seules à pouvoir interagir avec le contenu étiqueté.
-
-Pour ce faire, suivez un processus simple en deux étapes :
+Vous pouvez accorder des autorisations à des personnes spécifiques, de manière à ce qu’elles soient les seules à pouvoir interagir avec le contenu étiqueté :
 
 1. Ajoutez tout d’abord les utilisateurs ou les groupes qui vont recevoir les autorisations sur le contenu étiqueté.
-2. Choisissez ensuite les autorisations desquelles les utilisateurs bénéficieront sur le contenu étiqueté.
+
+2. Choisissez ensuite les autorisations que les utilisateurs doivent avoir sur le contenu étiqueté.
+
+Attribution d'autorisations :
 
 ![Options d’attribution des autorisations aux utilisateurs](media/Sensitivity-Assign-permissions-settings.png)
 
@@ -95,12 +153,22 @@ Pour ce faire, suivez un processus simple en deux étapes :
 Lorsque vous attribuez des autorisations, vous pouvez choisir :
 
 - Tous les membres de votre organisation (tous les membres du client). Ce paramètre exclut les comptes Invité.
+- Tout utilisateur authentifié. Assurez-vous de bien comprendre la [configuration requise et les limitations](#requirements-and-limitations-for-add-any-authenticated-users) de ce paramètre avant de le sélectionner.
 - N’importe quel utilisateur, groupe de sécurité à extension messagerie, groupe de distribution, groupe Office 365 ou groupe de distribution dynamique. 
-- Une adresse e-mail ou un domaine en dehors de votre organisation, tels que gmail.com, hotmail.com ou outlook.com.
+- Une adresse e-mail ou un domaine en dehors de votre organisation, tels que gmail.com, hotmail.com ou outlook.com. 
 
 Lorsque vous choisissez tous les membres de client ou parcourez l’annuaire, les utilisateurs ou les groupes doivent avoir une adresse e-mail.
 
 Nous vous recommandons d’utiliser des groupes plutôt que des utilisateurs. En effet, avec cette stratégie, votre configuration reste plus simple.
+
+##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Configuration requise et restrictions pour **Ajouter des utilisateurs authentifiés**
+
+Ce paramètre ne limite pas les personnes autorisées à accéder au contenu chiffré par l’étiquette, même s'il chiffre le contenu et vous propose des options permettant de limiter la façon dont le contenu peut être utilisé (autorisations) ou consulté (expiration et accès en mode hors connexion). Toutefois, l’application ouvrant le contenu chiffré doit pouvoir prendre en charge l’authentification utilisée. Pour cette raison, les réseaux sociaux tels que Google et l'authentification unique par mot de passe conviennent seulement pour la messagerie électronique, et uniquement lorsque vous utilisez Exchange Online et les nouvelles fonctionnalités du chiffrement de messages d’Office 365. Les comptes Microsoft peuvent être utilisés avec les applications Office 365 et le [visionneur Azure Information Protection](https://portal.azurerms.com/#/download).
+
+Voici des scénarios classiques pour les paramètres des utilisateurs authentifiés :
+- Peu vous importe la personne qui affiche le contenu, mais vous souhaitez limiter son utilisation. Par exemple, vous ne voulez pas que le contenu soit modifié, copié ou imprimé.
+- Vous n’avez pas besoin de restreindre l’accès au contenu, mais vous voulez être en mesure d'approuver la personne qui l'ouvre.
+- Vous exigez que le contenu soit chiffré au repos et en transit, mais il ne nécessite pas de contrôle d’accès.
 
 #### <a name="choose-permissions"></a>Choisir les autorisations
 
@@ -121,11 +189,11 @@ Pour ce faire, ajoutez des utilisateurs ou groupes, attribuez-leur des autorisat
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L’émetteur de Rights Management (celui qui applique l’étiquette de sensibilité) bénéficie toujours d’un contrôle total.
 
-Le chiffrement d’une étiquette de sensibilité utilise Azure RMS. Lorsqu’un utilisateur applique une étiquette de sensibilité pour protéger un document ou un e-mail à l’aide d’Azure RMS, il devient l’émetteur Rights Management sur ce contenu.
+Le chiffrement d'une étiquette de confidentialité utilise le service Azure Rights Management à partir d’Azure Information Protection. Lorsqu’un utilisateur applique une étiquette de sensibilité pour protéger un document ou un e-mail à l’aide du chiffrement, il devient l’émetteur Rights Management sur ce contenu.
 
-L’émetteur Rights Management bénéficie toujours d’autorisations en contrôle total sur le document ou l’e-mail et, par ailleurs :
+L’émetteur Rights Management bénéficie continuellement d’autorisations en contrôle total sur le document ou l’e-mail et, par ailleurs :
 
-- Si les paramètres de protection comportent une date d’expiration, l’émetteur Rights Management peut toujours ouvrir et modifier le document ou l’e-mail après cette date.
+- Si les paramètres de chiffrement comportent une date d’expiration, l’émetteur Rights Management peut toujours ouvrir et modifier le document ou l’e-mail après cette date.
 - L’émetteur Rights Management peut toujours accéder au document ou à l’e-mail hors connexion.
 - L’émetteur Rights Management peut toujours ouvrir un document après sa révocation.
 
@@ -135,19 +203,24 @@ Pour plus d’informations, reportez-vous à [Émetteur Rights Management et pro
 
 Vous pouvez utiliser ces options pour permettre aux utilisateurs d’attribuer des autorisations lorsqu’ils appliquent manuellement une étiquette de confidentialité à un contenu :
 
-- Dans Outlook, un utilisateur peut appliquer des restrictions équivalant à l’option [ne pas transférer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). Cette option est prise en charge en mode natif dans Outlook sur Windows et n’exige pas que vous installiez le client de l’étiquetage unifié Azure Information Protection.
-- Dans Word, PowerPoint et Excel, l’utilisateur est invité à sélectionner un niveau d’autorisation pour des utilisateurs, des groupes ou des organisations spécifiques. Cette option n’est pas prise en charge en mode natif dans ces applications Office donc vos utilisateurs doivent installer le client de l’étiquetage unifié Azure Information Protection.
+- Dans Outlook, un utilisateur peut sélectionner des restrictions équivalant à l’option [ne pas transférer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) pour les bénéficiaires qu'il a choisis.
 
-Ces options déterminent les applications dans lesquelles l’étiquette de confidentialité s’affiche :
+- Dans Word, PowerPoint et Excel, l’utilisateur est invité à sélectionner ses propres niveaux d’autorisation pour des utilisateurs, des groupes ou des organisations spécifiques. 
+    > [!NOTE]
+    > Cette option pour Word, PowerPoint et Excel est prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Pour les applications utilisant l’étiquetage intégré, la prise en charge est actuellement disponible dans la [Version d'évaluation pour Windows et Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). Si cette option est sélectionnée, mais n’est pas prise en charge pour l’application d’un utilisateur, cette étiquette n’est pas affichée pour l’utilisateur.
 
-- Si seule l’option Outlook est activée pour l’étiquette de confidentialité, l’étiquette s’affiche pour les utilisateurs uniquement dans Outlook.
-- Si seule l’option Word, PowerPoint et Excel est activée pour l’étiquette de confidentialité, l’étiquette s’affiche pour les utilisateurs uniquement dans ces applications.
-- Si les deux options sont activées pour l’étiquette de confidentialité, l’étiquette s’affiche pour les utilisateurs de toutes les applications disponibles : Outlook, Word, PowerPoint et Excel.
+Lorsque les options sont prises en charge, utilisez le tableau suivant pour déterminer le moment où les utilisateurs voient l’étiquette de confidentialité :
+
+|Paramètres |Étiquette visible dans Outlook|Étiquette visible dans Word, Excel et PowerPoint|
+|:-----|:-----|:-----|:-----|
+|**Appliquer dans Outlook des restrictions équivalant à l’option Ne pas transférer**|Oui |Non |
+|**Dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations**|Non |Oui|
+
+Lorsque les deux paramètres sont sélectionnés, l’étiquette est par conséquent visible dans Outlook et dans Word, Excel et PowerPoint.
 
 Une étiquette de confidentialité permettant aux utilisateurs d’attribuer des autorisations peut être appliquée au contenu uniquement manuellement par les utilisateurs. Elle ne peut pas être appliquée automatiquement ou utilisée comme étiquette recommandée.
 
-> [!NOTE]
-> Pour permettre aux utilisateurs d’attribuer des autorisations, vous devez disposer d’un abonnement Azure Information Protection. Pour utiliser cette fonctionnalité dans Word, PowerPoint et Excel, vous devez télécharger et installer le [client de l’étiquetage unifié Microsoft Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Nous travaillons à la prise en charge native de cette fonctionnalité dans ces applications Office, afin de ne pas avoir besoin du client Microsoft Azure Information Protection. Par ailleurs, ce client ne s’exécute que sur Windows. Cette fonctionnalité n’est pas encore prise en charge sur Mac, iOS, Android ou Office pour le Web.
+Configuration d'autorisations attribuées par utilisateur :
 
 ![Paramètres de chiffrement pour les autorisations définies par l’utilisateur](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
@@ -159,13 +232,13 @@ Dans Outlook, lorsqu’un utilisateur applique une étiquette de confidentialit�
 
 Lorsque l’option ne pas transférer est appliquée à un e-mail, celui-ci est chiffré et les destinataires doivent être authentifiés. Les destinataires ne peuvent alors pas le transférer, l’imprimer ou en faire une copie. Par exemple, dans le client Outlook, le bouton transférer n’est pas disponible, les options du menu enregistrer sous et imprimer ne sont pas disponibles, et vous ne pouvez pas ajouter ou modifier des destinataires dans les zones à, CC ou CCI.
 
-Les documents Office non protégés joints à l’e-mail héritent automatiquement des mêmes restrictions. Les droits d’utilisation appliqués à ces documents sont modifier le contenu, modifier; afficher, ouvert, lu et autoriser les macros. Si l’utilisateur souhaite appliquer des droits d’utilisation différents pour une pièce jointe, ou si la pièce jointe n’est pas un document Office qui prend en charge cette protection héritée, l’utilisateur doit protéger le fichier avant de le joindre à l’e-mail.
+Les documents Office non chiffrés qui sont joints à un courrier électronique héritent automatiquement des mêmes restrictions. Les droits d’utilisation appliqués à ces documents sont modifier le contenu, modifier; afficher, ouvert, lu et autoriser les macros. Si l’utilisateur souhaite appliquer des droits d’utilisation différents pour une pièce jointe, ou si la pièce jointe n’est pas un document Office qui prend en charge cette protection héritée, l’utilisateur doit protéger le fichier avant de le joindre à l’e-mail.
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Autorisations Word, PowerPoint et Excel
 
-Dans Word, PowerPoint et Excel, lorsqu’un utilisateur applique une étiquette de confidentialité qui lui permet d’attribuer des autorisations à un document, il est invité à protéger le contenu comme illustré ci-dessous.
+Dans Word, PowerPoint et Excel, lorsqu’un utilisateur applique une étiquette de confidentialité qui lui permet d’attribuer des autorisations à un document, il est invité à préciser son choix en matière d'utilisateurs et d'autorisations au moment où le chiffrement est appliqué.
 
-L’utilisateur peut ainsi :
+Par exemple, avec un client d’étiquetage unifié Azure Information Protection, les utilisateurs peuvent :
 
 - Sélectionner un niveau d’autorisation, tel que visionneuse (qui attribue l’autorisation Afficher uniquement) ou co-auteur (qui affecte les autorisations afficher, modifier, copier et imprimer).
 - Sélectionner les utilisateurs, les groupes ou les organisations. Cela peut inclure des personnes à l’intérieur ou à l’extérieur de votre organisation.
@@ -173,39 +246,46 @@ L’utilisateur peut ainsi :
 
 ![Options de protection pour l’utilisateur avec les autorisations personnalisées](media/sensitivity-aip-custom-permissions-dialog.png)
 
-## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qu’advient-il du chiffrement existant lorsqu’une nouvelle étiquette est appliquée ?
+Pour l’étiquetage intégré, les utilisateurs consultent la même boîte de dialogue s’ils sélectionnent ce qui suit :
 
-Avant l’application d’une étiquette de niveau de confidentialité à du contenu, il est possible qu’un utilisateur ait déjà chiffré le contenu en lui appliquant un autre paramètre de protection. Par exemple, un utilisateur peut avoir appliqué :
+- Windows : onglet **Fichier** > **Informations** > **Protéger le document** > **Restreindre l'accès** > **Accès restreint**
 
-- L’option **Ne pas transférer**.
-- Une protection personnalisée à l’aide du client d’étiquetage unifié Azure Information Protection.
-- Un modèle Azure Rights Management Service (RMS) qui chiffre le contenu mais n’est pas associé à une étiquette.
+- MacOS : onglet **Révision** > **Protection** > **Autorisations** > **Accès restreint**
 
-Ce tableau explique ce qu’il advient du chiffrement existant lorsqu’une étiquette de niveau de confidentialité est appliquée à ce contenu.
-<br/>
-<br/>
 
-| |**L’utilisateur applique une étiquette de niveau de confidentialité avec chiffrement désactivé**|**L’utilisateur applique une étiquette de niveau de confidentialité avec chiffrement activé**|**L’utilisateur applique une étiquette avec suppression de la protection**<sup>1</sup>|
-|:-----|:-----|:-----|:-----|
-|**Ne pas transférer**|E-mail - La protection est supprimée<br/>Document - La protection est conservée|La protection de l’étiquette est appliquée|L’option **Ne pas transférer** est supprimée|
-|**Protection personnalisée**<sup>1</sup>|La protection est conservée|La protection de l’étiquette est appliquée|La protection personnalisée est supprimée|
-|**Modèle Azure RMS**|La protection est conservée|La protection de l’étiquette est appliquée|La protection personnalisée est supprimée|
+## <a name="considerations-for-encrypted-content"></a>Considérations relatives au contenu chiffré
 
-<sup>1</sup>Uniquement pris en charge dans le client d’étiquetage Azure Information Protection.
+Le chiffrement de vos documents et messages électroniques les plus confidentiels permet de s’assurer que seules les personnes autorisées peuvent accéder à ces données. Il existe toutefois des éléments dont vous devez tenir compte :
 
-## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>Stockage du contenu chiffré dans OneDrive et SharePoint
+- Si votre organisation n'a pas [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](sensitivity-labels-sharepoint-onedrive-files.md) :
+    
+    - Recherche, eDiscovery et Delve ne seront pas opérationnels avec les fichiers chiffrés. 
+    - Les stratégies de protection contre la perte de données DLP fonctionnent avec les métadonnées de ces fichiers chiffrés (notamment les informations de l'étiquette de rétention), mais pas avec leur contenu (comme des numéros de carte de crédit dans des fichiers).
+    - Les utilisateurs ne peuvent pas ouvrir les fichiers chiffrés à l’aide d’Office sur le web. Lorsque des étiquettes de confidentialité sont activées pour les fichiers Office dans SharePoint et OneDrive, les utilisateurs peuvent se servir d'Office sur le web pour ouvrir des fichiers chiffrés, avec certaines [restrictions](sensitivity-labels-sharepoint-onedrive-files.md#limitations) qui incluent le chiffrement appliqué avec une clé locale (connue sous le nom de « conservez de votre propre clé » ou HYOK) et le chiffrement appliqué indépendamment d’une étiquette de confidentialité.
 
-Notez que lorsque le chiffrement est appliqué aux fichiers stockés dans OneDrive et SharePoint, le service ne peut pas traiter le contenu de ces fichiers. Autrement dit, des fonctionnalités telles que la co-création, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. De plus, les stratégies de protection contre la perte de données peuvent uniquement fonctionner avec les métadonnées (y compris les étiquettes Office 365), mais pas avec le contenu des fichiers chiffrés (par exemple, des numéros de cartes de crédit au sein des fichiers).
+- Pour permettre à plusieurs utilisateurs de modifier un fichier chiffré au même moment, ils doivent tous utiliser Office pour le web. Si ce n’est pas le cas et que le fichier est déjà ouvert :
+    
+    - Dans les applications Office (Windows, Mac, Android et iOS), les utilisateurs remarquent le message **Fichier en cours d'utilisation** incluant le nom de la personne ayant extrait le fichier. Ils peuvent ensuite afficher une copie en lecture seule, enregistrer et modifier une copie du fichier, et recevoir une notification lorsque le fichier est disponible.
+    - Dans Office pour le web, les utilisateurs remarquent un message d’erreur indiquant qu’ils ne peuvent pas modifier le document avec d’autres personnes. Ils peuvent ensuite sélectionner **Ouvrir en mode Lecture**.
 
-Ceci s’applique uniquement au contenu stocké dans OneDrive et SharePoint. Dans Exchange Online, les règles de flux de messagerie (également connues sous le nom de règles de transport) utilisent le [compte de super utilisateur](https://docs.microsoft.com/azure/information-protection/configure-super-users) pour analyser le contenu chiffré et appliquer des stratégies DLP.
+- La fonctionnalité [Enregistrement automatique](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) dans les applications Office (Windows, Mac, Android et iOS) est désactivée pour les fichiers chiffrés. Un message s'affiche indiquant aux utilisateurs que le fichier dispose d'autorisations restreintes qui doivent être supprimées avant que l’Enregistrement automatique puisse être activé.
+
+- L’ouverture des fichiers chiffrés peut être plus longue dans les applications Office (Windows, Mac, Android et iOS).
+
+- Les actions suivantes pour les fichiers chiffrés ne sont pas prises en charge dans les applications Office (Windows, Mac, Android et iOS), et un message d'erreur s'affiche aux utilisateurs indiquant qu’un problème s’est produit. Les fonctionnalités de SharePoint peuvent toutefois être utilisées en tant qu'alternative :
+    
+    - Afficher, restaurer et enregistrer des copies de versions précédentes. Les utilisateurs peuvent également effectuer ces actions à l’aide d’Office sur le web lorsque vous [activez et configurez le contrôle de version d'une liste ou d'une bibliothèque](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37). 
+    - Modifier le nom ou l’emplacement des fichiers. Les utilisateurs peuvent également [renommer un fichier, un dossier ou un lien dans une bibliothèque de documents](https://support.office.com/article/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) dans SharePoint.
+
+Pour bénéficier d’une expérience de collaboration optimale en ce qui concerne les fichiers chiffrés par une étiquette de confidentialité, nous vous recommandons d’utiliser les [étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) et Office pour le web. 
 
 ## <a name="important-prerequisites"></a>Conditions préalables importantes
 
-Pour utiliser le chiffrement, vous devrez peut-être effectuer les tâches suivantes.
+Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de configuration.
 
-### <a name="activating-azure-rights-management"></a>Activation d’Azure Rights Management
+### <a name="activate-protection-from-azure-information-protection"></a>Activer la protection à partir d’Azure Information Protection
 
-Pour que le chiffrement puisse être utilisé dans les étiquettes de sensibilité, le service Azure Rights Management doit être activé dans votre client. Avec les clients les plus récents, le service est activé par défaut, mais il peut s’avérer nécessaire de l’activer manuellement. Pour plus d’informations, reportez-vous à [Activation d’Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service).
+Pour que le chiffrement soit appliqué par les étiquettes de confidentialité, le service de protection (Azure Rights Management) à partir d’Azure Information Protection doit être activé pour votre client. Chez les nouveaux clients, il s’agit du paramètre par défaut, mais vous devrez peut-être activer manuellement le service. Pour plus d’informations, consultez [Activation du service de protection à partir d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>Configurer Exchange pour Azure Information Protection
 

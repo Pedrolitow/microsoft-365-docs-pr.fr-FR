@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 016d0f9fdd0795ea709f168a0fc8ba027f029e8f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6791754e0d34ca2ca564a805269bb9fdc216d0ad
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602231"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851871"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>Code de pratique ISO/IEC 27018 pour la protection des données personnelles dans le cloud
 
@@ -102,7 +102,7 @@ Les services cloud Microsoft et les services de support technique sont audités
 
 Ce code de pratique s’applique aux fournisseurs de solutions Cloud qui traitent des informations d’identification personnelle sous contrat pour d’autres organisations. Chez Microsoft, il s’applique aussi au support de ces fournisseurs de solutions Cloud.
 
-**Quelle est la différence entre « contrôleurs de traitement d’information personnelle » et « processeurs d’informations personnelles »?**
+**Quelle est la différence entre « contrôleurs de traitement d’information personnelle » et « processeurs d’informations personnelles » ?**
 
 Dans le contexte d’ISO/IEC 27018 :
 
@@ -119,7 +119,11 @@ Dans le contexte d’ISO/IEC 27018 :
 
 Oui. Si vous devez obtenir la conformité avec ISO/IEC 27018 pour votre entreprise et certaines implémentations déployées sur les services cloud entreprise dans la portée de Microsoft concernés, vous pouvez utiliser l’attestation de conformité de Microsoft pour la norme ISO/IEC 27018 ainsi que la certification de Microsoft pour la norme ISO/IEC 27001 dans votre évaluation de la conformité.
 
-Il vous incombe néanmoins d’engager un évaluateur pour mesurer votre mise en œuvre de la conformité ainsi que des contrôles et des processus au sein de votre propre organisation.
+Il vous incombe néanmoins d’engager un évaluateur pour mesurer votre mise en œuvre de la conformité, ainsi que des contrôles et des processus au sein de votre propre organisation.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir [configuré le score de conformité](compliance-score-setup.md), utilisez le [modèle préconfiguré ISO 27018](https://go.microsoft.com/fwlink/?linkid=2117523) pour aider votre organisation à respecter les conditions requises pour le présent règlement.
 
 ## <a name="resources"></a>Ressources
 

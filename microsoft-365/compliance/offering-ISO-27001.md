@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d88ef57ea9340d95073db7f5ddd4423d5275c840
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef99b36737627a9ea457e7d4235b42241f34248b
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602251"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851811"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>Normes de gestion de la sécurité des informations ISO/IEC 27001:2013
 
@@ -141,6 +141,10 @@ L’adoption d’ISO/IEC 27001 est un engagement stratégique. Commencez par co
 **Puis-je tirer profit de la conformité ISO/IEC 27001 des services Microsoft dans la certification de mon organisation ?**
 
 Oui. Si votre activité nécessite la certification ISO/IEC 27001 pour des implémentations déployées dans des services Microsoft, vous pouvez utiliser la certification applicable dans votre évaluation de la conformité. Il vous incombe néanmoins de mobiliser un évaluateur pour mesurer la mise en œuvre de la conformité à l’ISO/IEC 27001 ainsi que les contrôles et les processus au sein de votre propre organisation.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir [configuré le score de conformité](compliance-score-setup.md), utilisez le [modèle préconfiguré ISO 27001](https://go.microsoft.com/fwlink/?linkid=2117914) pour aider votre organisation à respecter les conditions requises pour le présent règlement.
 
 ## <a name="resources"></a>Ressources
 

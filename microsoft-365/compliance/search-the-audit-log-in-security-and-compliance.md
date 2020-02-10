@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662000"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862124"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -77,17 +77,17 @@ Avant de commencer à effectuer une recherche dans le journal d’audit d’Offi
   > [!IMPORTANT]
   > Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page **Autorisations** dans le Centre de sécurité et conformité, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit Office 365. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
 
-- Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit Office 365 pour votre organisation. La durée pendant laquelle un enregistrement d’audit est conservé (et peut faire l’objet d’une recherche dans le journal d’audit) dépend de votre abonnement Office 365 et du type de licence affecté à un utilisateur spécifique.
+- Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit Office 365 pour votre organisation. La durée pendant laquelle un enregistrement d’audit est conservé (et peut faire l’objet d’une recherche dans le journal d’audit) dépend de votre abonnement Office 365 ou Microsoft 365 et du type de licence affecté à un utilisateur spécifique.
 
-  - **Office 365 E3 :** Les dossiers d’audit sont conservés pendant 90 jours. Vous pouvez rechercher les activités effectuées au cours des 90 derniers jours dans le journal d’audit.  
+  - **Office 365 et Microsoft 365 E3 :** Les dossiers d’audit sont conservés pendant 90 jours. Vous pouvez rechercher les activités effectuées au cours des 90 derniers jours dans le journal d’audit.  
 
     > [!NOTE]
     > Même lorsque l’audit de boîtes aux lettres est activé par défaut, vous remarquerez peut-être que les événements d’audit de boîtes aux lettres de certains utilisateurs sont introuvables dans les recherches du journal d’audit dans le Centre de sécurité et de conformité ou via l’API Activité de gestion Office 365. Pour plus d’informations, consultez la rubrique [Plus d’informations sur la journalisation d’audit de boîtes aux lettres](enable-mailbox-auditing.md#more-information).
 
-  - **Office 365 E5 :** les dossiers d’audit sont également conservés pendant 90 jours. La conservation d’enregistrements d’audit pendant un an peut être mise à la disposition des utilisateurs et utilisateurs de E5 et des utilisateurs avec une licence E3 et d’une licence de composant additionnel de conformité avancée Office 365.
+  - **Office 365 ou Microsoft 365 E5 ou les utilisateurs disposant d’une licence de composant additionnel de Conformité E5 Microsoft 365 E5 :** Les enregistrements d’audit pour l’activité Azure Active Directory, Exchange et SharePoint sont conservés pendant un an par défaut. Les organisations peuvent également créer des stratégies de rétention du journal d’audit pour conserver les enregistrements d’audit pour l’activité dans d’autres services pendant un an. Pour plus d’informations, voir [gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
 
     > [!NOTE]
-    > Le programme d’aperçu privé pour la période de rétention d’un an pour les enregistrements d’audit pour les organisations E5 (ou pour les utilisateurs de E3 organisations disposant de licences complémentaires de conformité avancées) de prend plus de nouvelle inscription. Cet article sera mis à jour lorsque la période de rétention d’un an sera disponible en version publique ou publiée pour une disponibilité générale.
+    > Si votre organisation a participé au programme d’aperçu privé pour la conservation d’un an de rapports d’audit, la durée de conservation des enregistrements d’audit générés avant la date de lancement générale de la disponibilité ne sera pas réinitialisée.
 
 - Si vous souhaitez désactiver la recherche dans le journal d’audit dans Office 365 pour votre organisation, vous pouvez exécuter la commande suivante dans une session PowerShell distante connectée à votre organisation Exchange Online :
 
@@ -853,10 +853,6 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-**Où puis-je trouver des informations sur les fonctionnalités offertes par le service d’audit dans Office 365 ?**
-
-Pour plus d’informations sur les fonctionnalités d’audit et de création de rapports disponibles dans Office 365, voir [audit et création de rapports dans Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-auditing-and-reporting-overview).
-
 **Quels sont les différents services Office 365 actuellement audités ?**
 
 Les services Office 365 les plus utilisés tels qu’Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection et Power BI sont audités. Pour obtenir la liste des services audités, voir le [ldébut de cet article](search-the-audit-log-in-security-and-compliance.md).
@@ -871,16 +867,13 @@ Après la survenue d’un événement, l’apparition de l’entrée de journal 
 
 **Pendant combien de temps les enregistrements d’audit sont-ils conservés ?**
 
-Comme indiqué précédemment, la période de rétention pour les enregistrements d’audit dépend de l’abonnement Office 365 de votre organisation.
+Comme indiqué précédemment, la période de rétention pour les enregistrements d’audit dépend de l’abonnement Office 365 ou Microsoft de votre organisation.
 
-- **Office 365 E3 :** Les dossiers d’audit sont conservés pendant 90 jours.
+  - **Office 365 et Microsoft 365 E3 :** Les dossiers d’audit sont conservés pendant 90 jours. Vous pouvez rechercher les activités effectuées au cours des 90 derniers jours dans le journal d’audit.  
 
-- **Office 365 E5 :** Les dossiers d’audit sont également conservés pendant 90 jours. La conservation d’enregistrements d’audit pendant un an peut être mise à la disposition des utilisateurs et utilisateurs de E5 et des utilisateurs avec une licence E3 et d’une licence de composant additionnel de conformité avancée Office 365.
+  - **Office 365 ou Microsoft 365 E5 ou les utilisateurs disposant d’une licence de composant additionnel de Conformité E5 Microsoft 365 E5 :** Les enregistrements d’audit pour l’activité Azure Active Directory, Exchange et SharePoint sont conservés pendant un an par défaut. Les organisations peuvent également créer des stratégies de rétention du journal d’audit pour conserver les enregistrements d’audit pour l’activité dans d’autres services pendant un an. Pour plus d’informations, voir [gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
 
-  > [!NOTE]
-  > Comme indiqué précédemment, le programme d’aperçu privé pour la période de rétention d’un an pour les enregistrements d’audit pour les organisations E5 (ou pour les utilisateurs de E3 organisations disposant de licences complémentaires de conformité avancées) ne prend plus de nouvelle inscription. Cet article sera mis à jour lorsque la période de rétention d’un an sera disponible en version publique ou publiée pour une disponibilité générale.
-
-Notez également que la durée de la période de rétention pour les enregistrements d’audit est basée sur la gestion des licences par utilisateur. Par exemple, si un utilisateur de votre organisation se voit attribuer une licence Office 365 E3 ou E5, les enregistrements d’audit des activités effectuées par cet utilisateur sont conservés pendant 90 jours.
+Notez également que la durée de la durée de rétention pour les enregistrements d’audit est basée sur la gestion des licences par utilisateur. Par exemple, si un utilisateur de votre organisation se voit attribuer une licence Office 365 E3, les enregistrements d’audit des activités effectuées par cet utilisateur sont conservés pendant 90 jours.
 
 **Puis-je accéder aux données d’audit par programme ?**
 
@@ -904,4 +897,6 @@ Non. Nous avons actuellement des déploiements de pipeline d’audit dans les r�
 
 **Les données d’audit sont-elles chiffrées ?**
 
-Les données d’audit sont stockées dans les boîtes aux lettres Exchange (données au repos) situées dans la même région où le pipeline d’audit est déployé. Ces données ne sont pas chiffrées. Toutefois, les données en transit sont toujours chiffrées.
+Les données d’audit sont stockées dans les boîtes aux lettres Exchange (données au repos) situées dans la même région où le pipeline unifié d’audit est déployé. Les données de boîte aux lettres au repos ne sont pas cryptées par Exchange. Toutefois, le chiffrement de niveau service chiffre toutes les données de boîte aux lettres, car les serveurs Exchange dans les centres de données Microsoft sont chiffrés via BitLocker. Pour plus d’informations, voir [Chiffrement Office 365 pour Skype Entreprise, OneDrive Entreprise, SharePoint Online et Exchange Online](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md).
+
+Les données en transit sont toujours chiffrées.

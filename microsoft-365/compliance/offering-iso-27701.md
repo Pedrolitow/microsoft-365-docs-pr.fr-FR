@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4bc6663efe704205787e1c69d4e6dd06122419c3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5cd89e0f31d650e85de20b40e3870de0ef8c7cc3
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601911"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851831"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/CEI 27701 Système de gestion de l'information sur la protection de la vie privée (SGIP)
 
@@ -71,6 +71,10 @@ Quelle que soit la taille de votre organisation, qu’il s’agisse d’un contr
 
 - [Certification d’Azure ISO/IEC 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 - [Rapport d’évaluation d’Azure ISO/CEI 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir [configuré le score de conformité](compliance-score-setup.md), utilisez le [modèle préconfiguré ISO 27701](https://go.microsoft.com/fwlink/?linkid=2117915) pour aider votre organisation à respecter les conditions requises pour le présent règlement.
 
 ## <a name="resources"></a>Ressources
 

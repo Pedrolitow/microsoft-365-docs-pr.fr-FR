@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662020"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851881"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -128,6 +128,10 @@ Oui. Lorsque vous migrez vos applications et vos données vers des services de c
 **Quelles sont les démarches à suivre en matière de conformité de mon organisation ?**
 
 Le [Kit de ressources SOC pour les organisations de services](https://aka.ms/soc-toolkit) est utile pour comprendre les processus de rapports SOC et faire la promotion de leur utilisation par votre organisation.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir [configuré le score de conformité](compliance-score-setup.md), utilisez le [modèle préconfiguré SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) et le [modèle SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) pour aider votre organisation à respecter les conditions requises pour le présent règlement.
 
 ## <a name="resources"></a>Ressources
 

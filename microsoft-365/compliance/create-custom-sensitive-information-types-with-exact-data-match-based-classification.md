@@ -1,5 +1,7 @@
 ---
 title: Créer des types d’informations sensibles personnalisés à l’aide du classifieur Exact Data Match
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
-ms.openlocfilehash: 90fde2475529200ab53411b5cb0c6d3c64de2fee
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
+ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515665"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836724"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -72,10 +74,12 @@ La préparation et la configuration de la classification EDM impliquent d’enre
 
 2. Structurez les données sensibles dans le fichier .csv de telle sorte que la première ligne contienne les noms des champs utilisés pour la classification EDM. Votre fichier .csv contient peut-être des noms de champs, tels que « ssn », « birthdate », « firstname », « lastname », etc. Par exemple, le fichier .csv est appelé  *PatientRecords.csv* et ses colonnes incluent  *PatientID*,  *MRN*,  *LastName*,  *FirstName*,  *SSN* , etc.
 
-3. Définissez le schéma pour la base de données d’informations sensibles dans un fichier XML (comme dans l’exemple ci-dessous). Nommez ce fichier de schéma edm.xml, puis configurez-le de telle sorte que, pour chaque colonne dans la base de données, une ligne utilise la syntaxe \<Field name="" searchable=""/\>.
+3. Définissez le schéma pour la base de données d’informations sensibles dans un fichier XML (comme dans l’exemple ci-dessous). Nommez ce fichier de schéma **edm.xml** et configurez-le de telle sorte que pour chaque colonne de la base de données, une ligne utilise la syntaxe : 
 
-      - Utilisez des noms de colonne pour les valeurs  *Nom de champ* .
-      - Utilisez  *searchable="true"*  pour jusqu’à 5 champs dont vous voulez qu’il puissent faire l’objet d’une recherche. Vous devez spécifier au moins un champ comme pouvant faire l’objet d’une recherche.
+`\<Field name="" searchable=""/\>`.
+
+- Utilisez des noms de colonne pour les valeurs  *Nom de champ* .
+- Utilisez  *searchable="true"*  pour jusqu’à 5 champs dont vous voulez qu’il puissent faire l’objet d’une recherche. Vous devez spécifier au moins un champ comme pouvant faire l’objet d’une recherche.
 
 Par exemple, le fichier. xml suivant définit le schéma d’une base de données de dossiers de patients, avec cinq champs pouvant faire l’objet d’une recherche :  *PatientID*,  *MRN*,  *SSN*,  *Phone* et  *DOB*
 
@@ -126,9 +130,9 @@ Vous êtes invité à confirmer comme suit :
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>Modification du schéma pour la classification EDM
 
-Si vous souhaitez modifier votre fichier edm.xml, par exemple pour changer les champs utilisés pour la classification EDM, procédez comme suit :
+Si vous souhaitez modifier votre fichier **edm.xml**, par exemple pour changer les champs utilisés pour la classification EDM, procédez comme suit :
 
-1. Modifiez votre fichier edm.xml (présenté dans la section  [Définir le schéma](#define-the-schema-for-your-database-of-sensitive-information)  de cet article).
+1. Modifiez votre fichier **edm.xml** (présenté dans la section  [Définir le schéma](#define-the-schema-for-your-database-of-sensitive-information)  de cet article).
 
 2. [Connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
@@ -184,7 +188,7 @@ Vous êtes invité à confirmer comme suit :
 
 1. Créez un package de règles dans un fichier .xml (avec codage Unicode) similaire à l’exemple suivant (vous pouvez copier, modifier et utiliser notre exemple).
 
-Lorsque vous configurez votre package de règles, veillez à référencer correctement vos fichier .csv et edm.xml. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de fichier xml, les champs suivants doivent être personnalisés pour créer votre type sensible d’EDM :
+Lorsque vous configurez votre package de règles, veillez à référencer correctement vos fichier .csv et **edm.xml**. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de fichier xml, les champs suivants doivent être personnalisés pour créer votre type sensible d’EDM :
 
 - **RulePack id & ExactMatch id** : utilisez  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  pour générer un GUID.
 
@@ -249,7 +253,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 À ce stade, vous avez configuré la classification EDM. L’étape suivante consiste à indexer les données sensibles, puis à charger les données indexées.
 
-Rappelez-vous que la procédure précédente de notre schéma PatientRecords définit cinq champs pouvant faire l’objet d’une recherche :  *PatientID*, *MRN*,  *SSN*,  *Phone* et  *DOB*. Notre exemple de package de règles inclut ces champs et référence le fichier de schéma de base de données (edm.xml), avec un seul élément  *ExactMatch*  par champ pouvant faire l’objet d’une recherche. Prenons l’élément ExactMatch suivant :
+Rappelez-vous que la procédure précédente de notre schéma PatientRecords définit cinq champs pouvant faire l’objet d’une recherche :  *PatientID*, *MRN*,  *SSN*,  *Phone* et  *DOB*. Notre exemple de package de règles inclut ces champs et référence le fichier de schéma de base de données (**edm.xml**), avec un seul élément  *ExactMatch*  par champ pouvant faire l’objet d’une recherche. Prenons l’élément ExactMatch suivant :
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -287,18 +291,18 @@ Au cours de cette phase, vous configurez un groupe de sécurité personnalisé e
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configurer les groupe de sécurité personnalisé et compte d’utilisateur
 
-1. En tant qu’administrateur général, accédez au centre d’administration ([https://admin.microsoft.com](https://admin.microsoft.com/)) et  [créez un groupe de sécurité](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) nommé\_DataUploaders.
+1. En tant qu’administrateur général, accédez au centre d’administration ([https://admin.microsoft.com](https://admin.microsoft.com/)) et  [créez un groupe de sécurité](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) nommé **EDM\_DataUploaders**.
 
-2. Ajoutez un ou plusieurs utilisateurs au groupe de sécurité  *EDM\_DataUploaders*  (ces utilisateurs peuvent gérer la base de données d’informations sensibles).
+2. Ajoutez un ou plusieurs utilisateurs au groupe de sécurité  **EDM\_DataUploaders**  (ces utilisateurs peuvent gérer la base de données d’informations sensibles).
 
 3. Assurez-vous que tous les utilisateurs qui gèrent les données sensibles sont un administrateur local sur l’ordinateur utilisé pour l’agent de téléchargement EDM.
 
 #### <a name="set-up-the-edm-upload-agent"></a>Configurer l’agent de chargement EDM
 
 >[!NOTE]
-> Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité  *EDM\_DataUploaders*  et administrateur local sur votre ordinateur.
+> Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité  **EDM\_DataUploaders**  et administrateur local sur votre ordinateur.
 
-1. Téléchargez et installez l’[agent EDM de chargement](https://go.microsoft.com/fwlink/?linkid=2088639). Par défaut, l’emplacement d’installation doit être C:\\Program Files\\Microsoft\\EdmUploadAgent.
+1. Téléchargez et installez l’[agent EDM de chargement](https://go.microsoft.com/fwlink/?linkid=2088639). Par défaut, l’emplacement d’installation doit être  **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
 
 > [!TIP]
 > Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent. exe ».
@@ -313,7 +317,7 @@ L’étape suivante consiste à utiliser l’agent de téléchargement EDM pour 
 
 #### <a name="index-and-upload-the-sensitive-data"></a>Indexer et charger les données sensibles
 
-Enregistrez le fichier de données sensibles (notre exemple est  *PatientRecords. csv*) sur le disque local de l’ordinateur (nous avons enregistré notre exemple de fichier  *PatientRecords.csv*  dans C:\\Edm\\Data).
+Enregistrez le fichier de données sensibles (notre exemple est  **PatientRecords. csv**) sur le disque local de l’ordinateur (nous avons enregistré notre exemple de fichier  **PatientRecords.csv**  dans  **C:\\Edm\\Data**).
 
 Pour indexer et charger les données sensibles, exécutez la commande suivante dans l’invite de commandes Windows :
 
@@ -327,13 +331,17 @@ Pour indexer les données sensibles, exécutez la commande suivante dans l’inv
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-Exemple : **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+par exemple,
+
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
 Pour charger les données indexées, exécutez la commande suivante dans l’invite de commandes Windows :
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-Exemple : **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
+par exemple, 
+
+> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 Pour vérifier que vos données sensibles ont été téléchargées, exécutez la commande suivante dans l’invite de commandes Windows :
 
