@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Résumé : Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel.'
-ms.openlocfilehash: 7b43ee5bcc3193da398359a155e2daeac2d06a85
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 296d5774b13699c25efda6d036e097344d4fefeb
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830968"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855363"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Protéger les fichiers SharePoint Online à l’aide d’une étiquette de confidentialité
 
@@ -69,8 +69,6 @@ Vous pouvez accorder à des utilisateurs externes l’accès à des fichiers pro
 
 ## <a name="see-also"></a>Voir aussi
 
-[Sécuriser les fichiers et sites SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
