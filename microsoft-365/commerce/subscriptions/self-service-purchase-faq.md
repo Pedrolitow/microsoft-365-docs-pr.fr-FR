@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 1a8cea3b11ecdc6e3ac6d382dc8ffe92c84e187a
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661905"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932274"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
 > [!NOTE]
 > Les informations contenues dans cet article s’appliquent uniquement aux abonnements Microsoft Power Platform (Power BI, Power Apps et Power automate).
 
-Les achats en libre-service sont désormais disponibles pour Power Platform aux États-Unis.
+Les achats en libre-service sont désormais disponibles pour Power Platform aux États-Unis, en Australie, au Canada et au Japon.
 
 ## <a name="general"></a>Général
 

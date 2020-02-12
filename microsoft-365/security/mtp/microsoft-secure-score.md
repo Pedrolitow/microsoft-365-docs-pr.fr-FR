@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aeae243b4e363f69729ccdbd2bc3fc465ec1449b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b37b8f0aaa225dec9e522964b59871047081be9d
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600171"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932304"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -134,6 +134,16 @@ Vous pouvez afficher un graphique du score de votre organisation au fil du temps
 
 Microsoft Secure score est un résumé numérique de votre position de sécurité basée sur les configurations système, le comportement de l’utilisateur et d’autres mesures liées à la sécurité ; il ne s’agit pas d’une mesure absolue de la probabilité de violation de votre système ou de vos données. Il représente plutôt la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft, ce qui peut vous aider à compenser le risque d’être compromis. Aucun service en ligne n’est totalement immunisé contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie d’une violation de sécurité.
 
+## <a name="whats-new"></a>Nouveautés
+
+Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications.
+
+### <a name="removed-not-scored-improvement-actions"></a>Suppression des actions d’amélioration « non notées »
+
+L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Un score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Les actions d’amélioration ne sont pas évaluées.  
+
+Pour ces raisons, toutes les actions d’amélioration qui n’ont pas été évaluées ont été supprimées. Aucune action n’est nécessaire de votre part.
+
 ## <a name="whats-coming"></a>Qu’est-ce qui arrive ?
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité et améliore la convivialité, nous apportons des modifications dans le futur proche. Votre score et le score maximal possible seront modifiés. Toutefois, cela n’implique pas de modification de votre position de sécurité.
@@ -173,6 +183,11 @@ Pour vous assurer que le score de sécurité de Microsoft est significatif et qu
 - Découverte des applications informatiques de clichés instantanés risquées et non conformes
 - Passer en revue les autorisations & bloquer les applications OAuth à risque connectées à votre environnement
 - Configurer le contrôle de version sur les bibliothèques de documents SharePoint Online
+- Stocker des documents utilisateur dans OneDrive entreprise
+- Ne pas autoriser la délégation de boîte aux lettres
+- Autoriser les liens de partage d’invités anonymes pour les sites et les documents
+- Configurer des stratégies de pièces jointes approuvées ATP Office 365
+- Configurer les liens fiables Office 365 pour vérifier les URL
 
 ### <a name="mfa-improvement-action-updates"></a>Mises à jour de l’action d’amélioration MFA
 
@@ -191,11 +206,11 @@ Nouvelles actions d’amélioration ajoutées :
 
  Ces nouvelles actions d’amélioration requièrent l’enregistrement de vos utilisateurs ou administrateurs pour l’authentification multifacteur (MFA) dans votre répertoire et l’établissement de l’ensemble approprié de stratégies répondant à vos besoins organisationnels. L’objectif principal est de la flexibilité tout en s’assurant que tous vos utilisateurs et administrateurs peuvent s’authentifier avec plusieurs facteurs ou des invites de vérification d’identité basées sur les risques. Cela peut prendre la forme de paramètres de sécurité par défaut qui permettent à Microsoft de déterminer quand il faut défier les utilisateurs à l’authentification multifacteur, ou si plusieurs stratégies appliquent des décisions délimitées.
 
-### <a name="removing-not-scored-and-review-improvement-actions"></a>Suppression des actions d’amélioration « non notées » et « réviser »
+### <a name="removing-review-improvement-actions"></a>Suppression des actions d’amélioration « révision »
 
-L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Un score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Les actions d’amélioration non évaluées ne sont pas quantifiables, et les actions d’amélioration ne sont pas mesurées de la même manière que les autres actions d’amélioration.  
+L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Un score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Examiner les actions d’amélioration ne sont pas mesurées de la même façon que les autres actions d’amélioration.  
 
-Pour ces raisons, toutes les actions d’amélioration qui n’ont pas été évaluées ou nécessitant une cadence de révision seront temporairement supprimées. Aucune action n’est nécessaire de votre part.
+Pour ces raisons, toutes les actions d’amélioration nécessitant une cadence de révision seront temporairement supprimées. Aucune action n’est nécessaire de votre part.
 
 ### <a name="simplification-of-the-point-system"></a>Simplification du système de point
 
