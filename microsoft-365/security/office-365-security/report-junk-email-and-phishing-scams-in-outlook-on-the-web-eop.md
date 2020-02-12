@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook sur le Web les utilisateurs peuvent signaler des courriers indésirables et des tentatives de hameçonnage à l’aide des options de création de rapports de messagerie intégrées. Vous pouvez également informer Microsoft qu’un message électronique a été identifié de manière incorrecte comme courrier indésirable (courrier indésirable).
-ms.openlocfilehash: e433a91d1152e1e87aa9f45b0ccfe94e8b39f0f9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598591"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957419"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Signaler les courriers indésirables et les tentatives de hameçonnage dans Outlook sur le web
 
@@ -38,7 +38,7 @@ Pour soumettre un courrier indésirable à Microsoft, procédez comme suit :
    > [!NOTE]
    > Vous pouvez également cliquer avec le bouton droit sur un message pour afficher un menu, puis cliquer sur **Marquer comme courrier indésirable**.
 
-   Vous pouvez signaler un message indésirable depuis votre dossier **Boîte de réception**, **Courrier pêle-mêle** ou **Éléments supprimés**.
+   Vous pouvez signaler un message indésirable à partir de votre **boîte de réception** ou du dossier **éléments supprimés** .
 
 2. Une boîte de dialogue apparaît et vous demande si vous voulez envoyer une copie du message indésirable à Microsoft pour analyse. Cliquez sur **Signaler** pour envoyer le message à l'équipe d'analyse anti-spam de Microsoft. Vous pouvez cocher la case **Ne plus afficher ce message** si vous souhaitez que les messages indésirables soient dorénavant soumis automatiquement à Microsoft, sans que l'on vous le demande.
 
@@ -57,7 +57,7 @@ Pour soumettre une tentative d’hameçonnage à Microsoft, procédez comme suit
 
    Vous pouvez également cliquer avec le bouton droit sur un message pour afficher un menu, puis cliquer sur **Marquer comme tentative d'hameçonnage**.
 
-   Vous pouvez signaler un message d'hameçonnage depuis votre dossier **Boîte de réception**, **Courrier pêle-mêle** ou **Éléments supprimés**.
+   Vous pouvez signaler un message d’hameçonnage à partir de votre **boîte de réception** ou de votre dossier **éléments supprimés** .
 
 2. Pour certaines organisations, une boîte de dialogue apparaît et vous demande si vous voulez envoyer une copie du message d'hameçonnage à Microsoft pour analyse. Cliquez sur **Signaler** pour envoyer le message à l'équipe d'analyse du courrier indésirable de Microsoft. Cette option de signalement est actuellement disponible pour un nombre limité d'organisations. Vous pouvez ne pas être invité à signaler une tentative d'hameçonnage à Microsoft.
 

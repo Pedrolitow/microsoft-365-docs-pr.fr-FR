@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: En tant qu’administrateur général Office 365, vous pouvez utiliser un simulateur d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle ne touche votre entreprise.
-ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599821"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957409"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulateur d’attaques dans Office 365
 
@@ -31,7 +31,9 @@ ms.locfileid: "41599821"
 
 Trois types de simulations d’attaques sont actuellement disponibles :
 
-- [Attaque par harponnage du nom d’affichage](#display-name-spear-phishing-attack)
+- [Sonde de récupération des informations d’identification-attaque par hameçonnage](#credential-harvest-spear-phishing-attack)
+
+- [Attaque de Spear-hameçonnage de pièce jointe](#attachment-spear-phishing-attack)
 
 - [Attaque par pulvérisation de mot de passe](#password-spray-attack)
 
@@ -49,13 +51,15 @@ Assurez-vous que vous et votre organisation remplissez les conditions requises s
 
 - Vous êtes un administrateur général Office 365 ou un administrateur de sécurité
 
+- Les campagnes de hameçonnage recueillent et traitent les événements pendant une période de 30 jours, les données de la campagne historique seront disponibles pendant 90 jours après le lancement de la campagne.
+
 - L' [authentification multifacteur/l’accès conditionnel](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) est activé, pour au moins le compte administrateur général Office 365 et les administrateurs de sécurité qui utiliseront un simulateur d’attaque. (Idéalement, l’accès à plusieurs facteurs/accès conditionnel est activé pour tous les utilisateurs de votre organisation.)
 
 - Votre organisation dispose d' [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), avec un simulateur d’attaque &amp; visible dans le centre de sécurité conformité (allez sur **Threat Management** \> **Attack Simulator**)
 
     ![Gestion des menaces-simulateur d’attaque](../media/ThreatMgmt-AttackSimulator.png)
 
-## <a name="display-name-spear-phishing-attack"></a>Attaque par harponnage du nom d’affichage
+## <a name="credential-harvest-spear-phishing-attack"></a>Sonde de récupération des informations d’identification-attaque par hameçonnage
 
 Le hameçonnage est un terme générique pour une suite d’attaques classées comme une attaque de style d’ingénierie sociale. Cette attaque est axée sur le Spear Phishing, une attaque plus ciblée, dirigée par un groupe spécifique de personnes ou une organisation. En règle générale, une attaque personnalisée avec une reconnaissance a été effectuée et utilise un nom complet qui générera une approbation dans le destinataire, comme un message électronique qui semble provenir d’un cadre de votre organisation.
 
@@ -103,11 +107,25 @@ Vous pouvez concevoir l’éditeur HTML enrichi directement dans le champ de **c
 
 11. Choisissez **suivant,** puis **Terminer** pour lancer l’attaque. Le message électronique de Spear Phishing est remis aux boîtes aux lettres de vos destinataires cibles.
 
+## <a name="attachment-spear-phishing-attack"></a>Attaque de Spear-hameçonnage de pièce jointe
+
+Le hameçonnage est un terme générique pour une suite d’attaques classées comme une attaque de style d’ingénierie sociale. Cette attaque est axée sur le hameçonnage de la sonde de pièce jointe, une attaque plus ciblée visant un groupe spécifique de personnes ou une organisation. En règle générale, une attaque personnalisée avec une reconnaissance a été effectuée et utilise un nom complet qui générera une approbation dans le destinataire, comme un message électronique qui semble provenir d’un cadre de votre organisation.
+
+Cette attaque est axée sur la possibilité de manipuler la provenance du message en modifiant le nom d’affichage et l’adresse source, mais cette fois au lieu de proposer une URL permettant de cliquer sur, nous offrons une pièce jointe que nous essayons d’obtenir. utilisateur final à ouvrir. 
+
+### <a name="to-simulate-a-attachment-spear-phishing-attack"></a>Pour simuler une attaque de type « hameçonnage » de pièce jointe
+
+1. Suivez les étapes décrites ci-dessus, après avoir cliqué sur **attaque de pièces jointes** sur la page d’accueil.
+
+2. Au fur et à mesure que vous progressez dans l’Assistant, vous voyez deux options de configuration. Le **type de pièce jointe**, nous prenons en charge deux types de pièces jointes, **. docx** ou **. pdf**. Le **nom de la pièce jointe**, utilisez ce champ pour créer un nom de pièce jointe significatif pour la campagne.
+
 ## <a name="password-spray-attack"></a>Attaque par pulvérisation de mot de passe
 
 Une attaque par pulvérisation de mot de passe contre une organisation est généralement utilisée après qu’un acteur incorrect a réussi à acquérir une liste d’utilisateurs valides du client. L’acteur incorrect connaît les mots de passe courants que les personnes utilisent. Il s’agit d’une attaque très utilisée, car il s’agit d’une attaque bon marché à exécuter et plus difficile à détecter que les approches en force.
 
 Cette attaque est axée sur la possibilité de spécifier un mot de passe commun pour un grand nombre d’utilisateurs cibles.
+
+**Remarque importante** l’exécution de l’attaque par pulvérisation de mot de passe contre les comptes d’utilisateur final qui disposent déjà d’une authentification multifacteur entraîne une tentative infructueuse pour ces comptes dans la création de rapports. Cela est dû au fait que l’authentification multifacteur est l’une des principales mechanims pour vous aider à vous protéger contre les attaques par pulvérisation de mot de passe, il est donc attendu.
 
 ### <a name="to-simulate-a-password-spray-attack"></a>Pour simuler une attaque par pulvérisation de mot de passe
 
@@ -125,6 +143,8 @@ Cette attaque est axée sur la possibilité de spécifier un mot de passe commun
 
 Une attaque de mot de passe en force contre une organisation est généralement utilisée après qu’un acteur incorrect a réussi à acquérir une liste d’utilisateurs clés auprès du client. Cette attaque consiste à essayer un ensemble de mots de passe sur le compte d’un seul utilisateur.
 
+**Remarque importante** l’exécution des attaques de mot de passe en force contre les comptes d’utilisateur final qui disposent déjà d’une authentification multifacteur entraîne une tentative infructueuse de ces comptes dans la création de rapports. Cela est dû au fait que l’authentification multifacteur est l’une des principales mechanims pour vous aider à vous protéger contre les attaques de mot de passe en force, il est donc attendu.
+
 ### <a name="to-simulate-a-brute-force-password-attack"></a>Pour simuler une attaque de mot de passe en force brute
 
 1. Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), sélectionnez **Threat Management** \> **Attack Simulator**.
@@ -137,19 +157,7 @@ Une attaque de mot de passe en force contre une organisation est généralement 
 
 5. Cliquez sur **Terminer** pour lancer l’attaque.
 
-## <a name="new-features-in-attack-simulator"></a>Nouvelles fonctionnalités dans un simulateur d’attaque
 
-De nouvelles fonctionnalités ont récemment été ajoutées au simulateur d’attaques. Cela inclut ce qui suit :
-
-- Fonctionnalités de création de rapports avancées. La possibilité d’afficher des données telles que le temps le plus rapide (ou le plus lent) pour ouvrir un message électronique de simulation d’attaque, le temps le plus rapide (ou le plus lent) de cliquer sur un lien dans le message, ainsi que davantage de visualisations.
-
-- Éditeur de modèles de courrier électronique. La possibilité de créer un modèle de courrier électronique personnalisé réutilisable que vous pouvez utiliser pour les simulations d’attaque ultérieures.
-
-- Importation de destinataires CSV. La possibilité d’utiliser un fichier. csv pour importer votre liste de destinataires cible au lieu d’utiliser le sélecteur de carnet d’adresses.
-
-De nouvelles fonctionnalités sont bientôt disponibles pour les simulateurs d’attaques. Cela inclut ce qui suit :
-
-- Simulation d’hameçonnage de la charge utile des pièces jointes. Possibilité d’utiliser une pièce jointe comme charge utile pour la simulation de hameçonnage à la place d’une URL.
 
 Consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour découvrir les éléments en cours de développement, le déploiement et les fonctionnalités déjà lancées.
 

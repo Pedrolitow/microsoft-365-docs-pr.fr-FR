@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger le consentement illicite accorde une attaque dans Office 365.
-ms.openlocfilehash: 72109b6522a750e4eb31f289352e4ee2abfa7d33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599451"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957149"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Détecter et résoudre les problèmes d’octroi illégal de consentement dans Office 365
 
@@ -39,11 +39,13 @@ Vous devez rechercher dans le **Journal d’audit** Office 365 pour rechercher d
 
 1. Ouvrez le **Centre de sécurité et conformité** dans votre client Office 365.
 
-2. Accédez au nœud de **recherche & d’enquête** et sélectionnez recherche du **Journal d’audit** .
+2. Naviguez jusqu’à **recherche** et sélectionnez **recherche du journal d’audit**.
 
-3. Créez une recherche (toutes les activités et tous les utilisateurs) et filtrez les résultats pour le consentement à l’application, puis ajoutez OAuth2PermissionGrant.
+3. Recherche (toutes les activités et tous les utilisateurs), entrez la date de début et la date de fin, si nécessaire, puis cliquez sur **Rechercher**. 
 
-4. Examinez les propriétés étendues et vérifiez si IsAdminContent est défini sur true.
+4. Filtrez les résultats de consentement vers l’application et ajoutez OAuth2PermissionGrant.
+
+5. Cliquez sur le résultat pour afficher les détails de l’activité. Cliquez sur **informations supplémentaires** pour obtenir les détails de l’activité. Vérifiez si IsAdminContent est défini sur true.
 
 > [!NOTE]
 > • Cette opération peut prendre jusqu’à 30 minutes ou jusqu’à 24 heures après l’exécution d’un événement pour que l’entrée du journal d’audit correspondante s’affiche dans les résultats de la recherche. <br/><br/> • La durée pendant laquelle un enregistrement d’audit est conservé et pouvant faire l’objet d’une recherche dans le journal d’audit dépend de votre abonnement Office 365, ainsi que du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).

@@ -14,24 +14,24 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si vous souhaitez être sûr de recevoir des messages d’un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable.
-ms.openlocfilehash: 4ac97192327cd9ced853ce63537375931f3f0ec3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599531"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957259"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs approuvés dans Office 365
 
 Si vous souhaitez vous assurer que les utilisateurs reçoivent des courriers électroniques provenant d’expéditeurs ou d’expéditeurs spécifiques, car vous les approuvez et leurs messages, vous pouvez choisir parmi plusieurs méthodes. Ces options incluent les règles de flux de messagerie Exchange (également appelées règles de transport), les expéditeurs approuvés Outlook, les listes d’adresses IP autorisées, les listes des expéditeurs de courrier indésirable/de domaine.
 
 > [!IMPORTANT]
-> Bien que les listes d’adresses autorisées de l’organisation puissent être utilisées pour résoudre les faux positifs, elle doit être considérée comme une solution temporaire et éviter, dans la mesure du possible. La gestion des faux positifs à l’aide de listes d’autorisation n’est pas recommandée car elle peut accidentellement ouvrir votre organisation à des usurpateurs d’identité, des emprunts d’identité et d’autres attaques. Si vous souhaitez utiliser une liste verte à cette fin, vous devez être vigilant et conserver l’article pour l’envoi de messages indésirables, [non indésirables et de hameçonnage à Microsoft pour analyse](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), à l’adresse.
+> Bien que les listes d’adresses autorisées de l’organisation puissent être utilisées pour résoudre les faux positifs, elle doit être considérée comme une solution temporaire et éviter, dans la mesure du possible. La gestion des faux positifs à l’aide de listes d’autorisation n’est pas recommandée car elle peut accidentellement ouvrir votre organisation à des usurpateurs d’identité, des emprunts d’identité et d’autres attaques. Si vous souhaitez utiliser une liste verte à cette fin, vous devez être vigilant et conserver l’article pour l’envoi de messages indésirables, [non indésirables et de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md), à l’adresse.
 
 La méthode recommandée pour configurer une liste d’expéditeurs approuvés est d’utiliser des règles de flux de messagerie, car cela offre la plus grande flexibilité pour garantir que seuls les messages corrects sont autorisés. Les listes d’adresses de *messagerie des stratégies de blocage du courrier indésirable* et de *domaine* ne sont pas aussi sécurisées que les *listes basées sur les adresses IP* , car les domaines peuvent facilement être falsifiés. Cependant, les listes d’adresses IP autorisées de stratégie de blocage du courrier indésirable présentent également des risques car ils autorisent les domaines envoyés via cette adresse IP à contourner le filtrage du courrier indésirable. Faites attention et surveillez *toutes les* exceptions effectuées, avec précaution.
 
 > [!IMPORTANT]
-> Vous [trouverez ici](create-block-sender-lists-in-office-365.md)des informations sur la création d’une **liste d’expéditeurs bloqués** .
+> • Informations sur la création d’une **liste d’expéditeurs bloqués** [.](create-block-sender-lists-in-office-365.md) <br/><br/> • Pour permettre à un domaine de l’expéditeur d’envoyer des courriers électroniques non authentifiés (ignorer la protection contre l’usurpation d’identité) mais pas contourner les vérifications anti-courrier indésirable et anti-programme malveillant, vous pouvez l’ajouter à la [liste des expéditeurs approuvés AllowedToSpoof](walkthrough-spoof-intelligence-insight.md).
 
 ## <a name="options-from-most-to-least-recommended"></a>Options du plus ou moins recommandé
 
@@ -46,7 +46,7 @@ Vous devez toujours limiter vos listes d’autorisation, car elles contournent d
 
 Pour vous assurer que seuls les messages légitimes sont autorisés dans votre organisation, la condition doit être l’une des suivantes :
 
-- Utilisez l’état d’authentification de l’expéditeur du domaine d’envoi. Pour ce faire, vérifiez l’en-tête Authentication-Results afin de vous assurer qu’il contient « dMarc = passe » ou « dMarc = bestguesspass ». Cela garantit que le domaine d’envoi a été authentifié et qu’il n’est pas usurpé. Cliquez pour plus d’informations sur [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)et l’authentification de messagerie [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) .
+- Utilisez l’état d’authentification de l’expéditeur du domaine d’envoi. Pour ce faire, vérifiez l’en-tête Authentication-Results afin de vous assurer qu’il contient « dMarc = passe » ou « dMarc = bestguesspass ». Cela garantit que le domaine d’envoi a été authentifié et qu’il n’est pas usurpé. Cliquez pour plus d’informations sur [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et l’authentification de messagerie [DMARC](use-dmarc-to-validate-email.md) .
 
 - Si le domaine d’envoi n’a pas d’authentification, utilisez le domaine d’envoi *plus* une adresse IP d’envoi (ou une plage d’adresses IP). Assurez-vous que vous êtes *aussi restrictif que possible*, l’objectif étant que vous effectuez cette opération aussi efficacement que possible. Une plage d’adresses IP supérieure à/24 n’est *pas* recommandée. Évitez d’ajouter des plages d’adresses IP qui appartiennent à des services grand public ou à des infrastructures partagées.
 
@@ -87,7 +87,7 @@ Lorsqu’il n’est pas possible d’utiliser des règles de flux de messagerie 
 
 ## <a name="use-anti-spam-policy-senderdomain-allow-lists"></a>Utilisation de la stratégie de blocage du courrier indésirable listes des expéditeurs/domaines autorisés
 
-L’option la moins intéressante consiste à autoriser l’expéditeur/domaine. Cette option doit être évitée si cela est *possible* car elle contourne totalement le courrier indésirable/frauduleux/frauduleux et n’évalue pas l’authentification de l’expéditeur. Cette méthode augmente le risque de recevoir des messages à partir d’acteurs incorrects et est recommandé temporairement et uniquement lors des tests. Les étapes détaillées sont disponibles dans la documentation [configurer vos stratégies de filtrage du courrier indésirable](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) .
+L’option la moins intéressante consiste à autoriser l’expéditeur/domaine. Cette option doit être évitée si cela est *possible* car elle contourne totalement le courrier indésirable/frauduleux/frauduleux et n’évalue pas l’authentification de l’expéditeur. Cette méthode augmente le risque de recevoir des messages à partir d’acteurs incorrects et est recommandé temporairement et uniquement lors des tests. Vous trouverez les étapes détaillées dans la rubrique [configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) .
 
 La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous ne puissiez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
 

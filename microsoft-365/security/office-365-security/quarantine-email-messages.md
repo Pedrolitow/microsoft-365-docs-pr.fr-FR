@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer une mise en quarantaine pour les messages électroniques entrants dans Office 365 où les messages électroniques entrants qui ont été filtrés en tant que courrier indésirable, Bulk, phishing et programmes malveillants peuvent être conservés à des fins de révision ultérieure.
-ms.openlocfilehash: 253e1b9e03d395f67ff1290a527e035cbf8dfc3f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598671"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957429"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>Mise en quarantaine des messages électroniques dans Office 365
 
@@ -34,7 +34,7 @@ Par défaut, les messages qui ont été filtrés pour le hameçonnage, les progr
 Les utilisateurs et les administrateurs peuvent travailler avec des messages mis en quarantaine. Les utilisateurs peuvent utiliser uniquement leurs propres messages filtrés en quarantaine. Les administrateurs peuvent rechercher et gérer les messages mis en quarantaine pour tous les utilisateurs.
 
 > [!NOTE]
-> Les messages hameçons à niveau de confiance élevé et les messages mis en quarantaine par les actions de règle de flux de messagerie ne sont disponibles que dans la mise en quarantaine de l’administrateur. Les utilisateurs peuvent accéder à leurs propres messages hameçons, de courrier indésirable et de courrier en nombre. 
+> Programmes malveillants, messages hameçons de confiance élevée et messages mis en quarantaine par les actions de règle de flux de messagerie sont uniquement disponibles dans la mise en quarantaine de l’administrateur. Les utilisateurs peuvent accéder à leurs propres messages hameçons, de courrier indésirable et de courrier en nombre. 
   
 En savoir plus sur l’utilisation des messages mis en quarantaine :
   

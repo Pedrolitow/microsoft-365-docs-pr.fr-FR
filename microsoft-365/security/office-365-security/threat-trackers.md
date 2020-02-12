@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: f2a68cfbbae0ce91716f69514e30136ac223bbf8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598181"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957359"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 
@@ -55,7 +55,7 @@ En règle générale, les suivis doivent être publiés pendant quelques semaine
   
 ### <a name="trending-trackers"></a>Suivis des tendances
 
-Les suivis des tendances (précédemment appelés campagnes marketing) mettent en évidence les nouvelles menaces qui n’ont pas été vues dans la messagerie de votre organisation au cours de la semaine précédente.
+Les suivis des tendances (anciennement appelés campagnes marketing) mettent en évidence les nouvelles menaces reçues dans le courrier électronique de votre organisation au cours de la semaine précédente.
   
 ![Exemple de widget de campagne de programmes malveillants de tendances](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   

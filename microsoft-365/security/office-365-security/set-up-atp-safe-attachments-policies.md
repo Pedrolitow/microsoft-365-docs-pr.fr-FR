@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Définir des stratégies de pièces jointes approuvées pour protéger votre organisation contre les fichiers malveillants par courrier électronique.
-ms.openlocfilehash: 6ec78f8734fd655d71d9ce2877baa8ebde2e50ee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ad90ffb4e3503021923470238626d6025e9820fb
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598341"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957179"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
 
@@ -43,13 +43,13 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 
 - Assurez-vous que votre organisation dispose de la [protection avancée contre les menaces d’Office 365](office-365-atp.md).
 
-- Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôle approprié. Certains exemples sont décrits dans le tableau suivant :
+- Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez être affecté à un rôle de gestion de l’organisation Exchange Online (l’administrateur général Office 365 est affecté à ce rôle par défaut) ou aux rôles d’administrateur de sécurité et de gestion de l’hygiène d’Exchange Online. Pour plus d’informations, consultez le tableau suivant :
 
   |Role|WHERE/How Assigned|
   |---------|---------|
   |Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
   |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
-  |Gestion d’Organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |Gestion de l’organisation Exchange Online, gestion de l’hygiène Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
   Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
 
