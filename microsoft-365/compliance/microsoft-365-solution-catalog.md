@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du catalogue de solutions Microsoft 365
+title: Catalogue de solutions Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,18 +11,16 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le catalogue de solutions Microsoft 365, y compris son contenu, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 57591d385ce05454151b9ed28c5d764096d9e95b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e147ac6ac17a9fdd395aa0b1a00bd8f630cd10c1
+ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602741"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41891977"
 ---
-# <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Vue d’ensemble du catalogue de solutions Microsoft 365 (version préliminaire)
+# <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
-## <a name="overview"></a>Vue d’ensemble
-
-Vous cherchez un moyen de commencer rapidement à démarrer avec les tâches de conformité dans Microsoft 365 ? Consultez le nouveau [catalogue de solutions Microsoft 365](https://compliance.microsoft.com/solutioncatalog) pour découvrir, découvrir et commencer rapidement les solutions de gestion des risques et de conformité.
+Vous cherchez un moyen de commencer rapidement à démarrer avec les tâches de conformité dans Microsoft 365 ? Consultez le [catalogue de solutions Microsoft 365](https://compliance.microsoft.com/solutioncatalog) pour découvrir, découvrir et commencer rapidement les solutions de gestion de la conformité et des risques.
 
 Les solutions de conformité dans Microsoft 365 sont des collections de fonctionnalités intégrées que vous pouvez utiliser pour vous aider à gérer les scénarios de conformité de bout en bout. Les fonctionnalités et les outils d’une solution peuvent inclure une combinaison de stratégies, d’alertes, de rapports et bien plus encore.
 
@@ -79,19 +77,17 @@ La section **réponse &** de la recherche sur la page d’accueil vous montre co
 
 ## <a name="how-do-i-get-this"></a>Comment puis-je obtenir cela ?
 
-- Si vous n’avez pas encore le nouveau catalogue de solutions Microsoft 365, vous en aurez bientôt. Nous allons activer le catalogue de solutions pour tous les abonnements Microsoft 365 dans un déploiement incrémentiel.
+Pour visiter le catalogue de solutions Microsoft 365, accédez [https://compliance.microsoft.com](https://compliance.microsoft.com) à et connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Sélectionnez **catalogue** dans le volet de navigation sur le côté gauche de l’écran pour ouvrir la page d’accueil du catalogue.
 
-- Pour visiter le catalogue de solutions Microsoft 365, accédez [https://compliance.microsoft.com](https://compliance.microsoft.com) à et connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Sélectionnez **catalogue** dans le volet de navigation sur le côté gauche de l’écran pour ouvrir la page d’accueil du catalogue.
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+**Pourquoi ne puis-je pas voir le catalogue de solutions Microsoft 365 ?**
 
-**Pourquoi ne puis-je pas encore voir le nouveau catalogue de solutions Microsoft 365 ?**
-
-Tout d’abord, vérifiez que vous disposez des autorisations et des licences appropriées. Ensuite, connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Si le nouveau catalogue de solutions n’apparaît toujours pas dans le volet de navigation de gauche, vous en aurez bientôt terminé.
+Tout d’abord, vérifiez que vous disposez des autorisations et des licences appropriées. Ensuite, connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité.
 
 **Certaines des fonctionnalités de conformité indiquées dans la page catalogue de solutions ne sont pas disponibles dans le centre de conformité Microsoft 365. Que faire ?**
 
-Nous ajoutons toujours des fonctionnalités au centre de conformité Microsoft 365 et au catalogue de solutions. Si vous ne trouvez pas une solution spécifique dans la zone de navigation, elle sera accessible lorsque la solution sera disponible dans votre abonnement.
+Nous travaillons en permanence à ajouter de nouvelles fonctionnalités au centre de conformité Microsoft 365 et au catalogue de solutions. Si vous ne trouvez pas une solution spécifique dans la zone de navigation, elle sera accessible lorsque la solution sera disponible dans votre abonnement.
 
 Si vous recherchez une solution de conformité existante et qu’elle n’est pas disponible dans le centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le centre de sécurité et conformité Office 365 existant [https://protection.office.com](https://protection.office.com)en accédant à. Vous pouvez également cliquer sur l’onglet **ressources supplémentaires** dans le volet de navigation de gauche du centre de conformité Microsoft 365 et sélectionner la fiche centre de sécurité et conformité Office 365.  
 
@@ -99,12 +95,12 @@ Si vous recherchez une solution de conformité existante et qu’elle n’est pa
 
 - **Examinez votre score de conformité Microsoft**, un score personnalisé basé sur les risques pour vous aider à comprendre l’état de conformité de votre organisation à l’aide des normes et réglementations clés. Il fournit les actions recommandées que vous pouvez prendre pour renforcer votre position globale de conformité et fournit des fonctionnalités de flux de travail pour vous aider à exécuter efficacement ces actions. Pour en savoir plus, consultez [la rubrique score de conformité (aperçu)](compliance-score.md).
 
-- **Configurez des stratégies de gestion des risques initiés** pour minimiser les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Consultez la rubrique [gestion des risques internes](insider-risk-management.md).
+- **Configurez des stratégies de gestion des risques initiés** pour minimiser les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Voir [gestion des risques internes (](insider-risk-management.md)préversion).
+
+- **Découvrez et créez des stratégies de conformité des communications** pour identifier et corriger rapidement les violations de la stratégie de code de conduite d’entreprise. Consultez [la rubrique communication Compliance](communication-compliance.md).
 
 - **Microsoft information protection**, Découvrez comment les solutions Microsoft 365 vous aident à découvrir, classer et protéger les informations sensibles où qu’elles soient ou que vous parcouriez.
     - **Familiarisez-vous avec la sécurité des applications Cloud de Microsoft et configurez**-la. Voir [démarrage rapide : prise en main de la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
     - **Prise en main des classifieurs**. La classification du contenu, puis son étiquetage afin qu’il puisse être protégé et géré correctement est le point de départ de la discipline de protection des informations. Consultez la rubrique [Getting Started with trainable Classifiers](classifier-getting-started-with.md).
-
-- **Découvrez et créez des stratégies de conformité des communications** pour identifier et corriger rapidement les violations de la stratégie de code de conduite d’entreprise. Consultez [la rubrique communication Compliance dans Microsoft 365](communication-compliance.md).
 
 - **Visitez régulièrement votre catalogue de solutions Microsoft 365**et assurez-vous de consulter les nouvelles solutions pour vous aider à répondre à vos besoins en matière de conformité. Connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis sélectionnez **catalogue** dans le volet de navigation de gauche.

@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du centre de conformité Microsoft 365
+title: Centre de conformité Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,16 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le centre de conformité Microsoft 365, notamment ce qu’il contient, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a6fd689240b15fa915c609291259999ae8a31ce3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 62c70fc4e7ea8a491db23a4fc9695b2b11b283ac
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602781"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916929"
 ---
-# <a name="overview-of-the-microsoft-365-compliance-center"></a>Vue d’ensemble du centre de conformité Microsoft 365
-
-## <a name="overview"></a>Vue d’ensemble
+# <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
 
 Si vous êtes intéressé par la position de la conformité de votre organisation, vous allez adorer le [Centre de conformité Microsoft 365](https://compliance.microsoft.com). Le centre de conformité Microsoft 365 offre un accès facile aux données et aux outils dont vous avez besoin pour gérer les besoins de conformité de votre organisation.
 
@@ -60,7 +58,7 @@ Vous pouvez également utiliser la fonctionnalité **Ajouter des cartes** pour a
 
 ## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>Navigation facile vers des fonctionnalités et des fonctionnalités de conformité supplémentaires
 
-Outre les liens des cartes sur la page d’accueil, vous verrez un volet de navigation sur le côté gauche de l’écran qui vous permet d’accéder facilement à vos [alertes](../security/office-365-security/alerts.md), [rapports](reports-in-security-and-compliance.md), [stratégies](alert-policies.md), solutions de conformité et bien plus encore.
+Outre les liens des cartes sur la page d’accueil, vous verrez un volet de navigation sur le côté gauche de l’écran qui vous permet d’accéder facilement à vos [alertes](../security/office-365-security/alerts.md), [rapports](reports-in-security-and-compliance.md), [stratégies](alert-policies.md), solutions de conformité et bien plus encore. Pour ajouter ou supprimer des options pour un volet de navigation personnalisé, utilisez le contrôle **personnaliser la navigation** dans le volet de navigation. Cela permet d’ouvrir les paramètres **personnaliser le volet de navigation** afin que vous puissiez configurer les éléments qui apparaissent dans le volet de navigation.
 
 |  |  |
 |---------|---------|
@@ -72,7 +70,7 @@ Outre les liens des cartes sur la page d’accueil, vous verrez un volet de navi
 
 - Pour visiter le centre de conformité Microsoft 365, en tant qu’administrateur général, administrateur de conformité ou administrateur de données [https://compliance.microsoft.com](https://compliance.microsoft.com) de conformité, accédez à et connectez-vous.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Pourquoi est-ce que j’ai adopté le centre de sécurité & conformité d’Office 365 pour effectuer certaines tâches, telles que la définition de certaines stratégies ?**
 
