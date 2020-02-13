@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ffd5bd81542e2d39a928789c8575178c1b9a7633
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e419dd362ec42f7f2acb8cda03688afe3ade37be
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594424"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916919"
 ---
 # <a name="gdpr-breach-notification"></a>Notification de violation RGPD
 
-Le règlement général sur la protection des données (RGPD) présente de nouvelles règles pour les organisations qui offrent des produits et des services aux membres de l’Union européenne (UE), ou qui collectent et analysent des données pour les résidents de l’UE quel que soit l’endroit où vous vous trouvez et celui où se trouve votre entreprise. Pour plus de détails, consultez la [rubrique Synthèse RGPD](gdpr.md).<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG] 
-
-Ce document vous permet d’obtenir des informations sur la fin des notifications de violation dans le cadre du RGPD à l’aide des produits et des services Microsoft.
+Le règlement général sur la protection des données (RGPD) présente de nouvelles règles pour les organisations qui offrent des produits et des services aux membres de l’Union européenne (UE), ou qui collectent et analysent des données pour les résidents de l’UE quel que soit l’endroit où vous vous trouvez et celui où se trouve votre entreprise. Pour plus de détails, consultez la [rubrique Synthèse RGPD](gdpr.md). Ce document vous permet d’obtenir des informations sur la fin des notifications de violation dans le cadre du RGPD à l’aide des produits et des services Microsoft.
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>Selon le RGPD, qu’est-ce qu’une violation de données personnelles ?
 
@@ -47,9 +43,9 @@ Définitions utiles pour les termes RGPD utilisés dans ce document :
 
 Microsoft prend au sérieux les obligations imposées par le Règlement général sur la protection des données (RGPD). Un incident de sécurité ou une violation de données font référence à des événements tels qu’un accès illégal aux données du client stockées sur un équipement Microsoft ou dans des installations Microsoft, ou un accès non autorisé à celles-ci qui peut entraîner la perte, la divulgation ou l’altération des données client.
 
-En tant que responsable du traitement des données, Microsoft s’assure que les clients du service peuvent répondre aux exigences de notification de violation RGPD en tant que contrôleurs de données. Notre notification fournit les informations nécessaires pour effectuer cette évaluation. Microsoft informe les clients de toute divulgation de données personnelle, à l’exception des cas où les données personnelles sont confirmées comme inintelligibles (par exemple, les données fortement chiffrées pour lesquelles l’intégrité des clés est confirmée).
+En tant que responsable du traitement des données, Microsoft s’assure que les clients du service peuvent répondre aux exigences de notification de violation RGPD en tant que contrôleurs de données. Notre notification fournit les informations nécessaires pour effectuer cette évaluation. Microsoft informe les clients de toute divulgation de données personnelle, à l’exception des cas où les données personnelles sont confirmées comme inintelligibles (par exemple, les données chiffrées pour lesquelles l’intégrité des clés est confirmée).
 
-Les contrôleurs de données sont chargés d'évaluer les risques liés à la confidentialité des données et de déterminer si le DPA d’un client doit être notifié en cas de violation. Microsoft fournit les informations requises ainsi que votre stratégie de conformité RGPD pour effectuer cette évaluation.
+Les contrôleurs de données sont chargés d'évaluer les risques liés à la confidentialité des données et de déterminer si le contrat de traitement des données d’un client doit être notifié en cas de violation. Microsoft fournit les informations requises ainsi que votre stratégie de conformité RGPD pour effectuer cette évaluation.
 
 La notification initiale inclut une description de la nature de la violation, l’impact approximatif de l’utilisateur et la procédure d’atténuation (le cas échéant). Si notre enquête n'est pas terminée au moment de la notification initiale, nous indiquerons les prochaines étapes et le calendrier des communications ultérieures. Pour plus d’informations sur la façon dont Microsoft détecte et répond à une violation des données personnelles, reportez-vous à l’article [Notification des violations de données en vertu du RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) dans le portail d’approbation de services.
 
@@ -73,12 +69,16 @@ Les détails relatifs à la notification de violation de certains produits et se
     - *Notification du client* : Microsoft Azure informe les clients et les autorités de réglementation des violations de données, le cas échéant. Les notifications du client sont livrées dans un délai maximal de 72 heures à partir du moment où nous avons déclaré une violation, sauf dans les cas suivants :
 
         - Microsoft estime que l’envoi d’une notification augmente le risque pour d’autres clients.
-        - Le délai de 72 heures peut laisser certains détails sur l'incident disponibles. Celles-ci vous sont fournies à mesure que l’enquête est menée.
+        - Le délai de 72 heures peut laisser certains détails sur l'incident disponibles. Ces détails-ci vous sont fournis à mesure que l’enquête est menée.
 
         Pour plus d’informations, consultez la [Notification du client](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification).
 
 3. **[Support Microsoft et services professionnels](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
     En raison de la nature des services professionnels, certains incidents liés à la protection des données peuvent relever de la responsabilité du client. Lorsque les services professionnels Microsoft identifient un incident lié à la protection des données, il suit le plan de réponse standard documenté de l'industrie tel que décrit dans la rubrique [Étendue et limites du processus de réponse aux incidents de protection des données](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process).
+
+## <a name="breach-notification-admin-tools"></a>Outils d’administration de la notification de violation
+
+- **Définir le contact de votre organisation en matière de confidentialité** Les administrateurs de locataire peuvent utiliser le [portail d’administration Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2052736) pour définir le contact de confidentialité de votre organisation dont Microsoft a besoin pour communiquer avec eux.
 
 ## <a name="learn-more"></a>En savoir plus
 
