@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f829c6735bc8326a775a9d259da8b64aaa8b02ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600461"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960330"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Gérer les travaux dans Advanced eDiscovery
 
@@ -55,6 +55,6 @@ Le tableau suivant décrit les différents États d’État pour les travaux.
 | Échec de l’envoi | Échec de l’envoi du travail.  Vous devez essayer de réexécuter l’action qui a déclenché le travail. |
 | En cours | Le travail est en cours, vous pouvez surveiller la progression de la tâche dans l’onglet **travaux** . |
 | Satisfaisant | Le travail s’est terminé avec succès. La date et l’heure de fin du travail s’affichent dans la colonne **terminé** de l’onglet **travaux** . |
-| Partiellement réussi | Le travail a été partiellement réussi. |
+| Partiellement réussi | Le travail a été partiellement réussi. Cet État est généralement renvoyé lorsque le travail n’a pas trouvé de données partiellement indexées (également appelées *données non indexées*) dans certaines sources de données du dépositaire.  |
 | Échec | Échec du travail.  Vous devez essayer de réexécuter l’action qui a déclenché le travail. Si la tâche échoue pour la deuxième fois, nous vous recommandons de contacter le support Microsoft et de fournir les informations de support du travail. |
 |||

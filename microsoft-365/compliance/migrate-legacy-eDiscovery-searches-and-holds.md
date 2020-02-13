@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: db05b598fb0dab3cac9420b33b0bd4e12b6b7e9a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602791"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957189"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migration des recherches et des suspensions de découverte électronique héritées vers le centre de conformité Microsoft 365
 
@@ -41,7 +41,7 @@ La première étape consiste à vous connecter au centre de sécurité Exchange 
 ```powershell
 $UserCredential = Get-Credential
 $sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session -AllowClobber -DisableNameChecking
+Import-PSSession $sccSession -DisableNameChecking
 $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
@@ -87,23 +87,19 @@ Pour créer une conservation de découverte électronique, vous devez créer un 
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
 
-![Exemple d’exécution de la commande New-ComplianceCase](media/MigrateLegacyeDiscovery3.png)
-
 ## <a name="step-5-create-the-ediscovery-hold"></a>Étape 5 : créer le blocage eDiscovery
 
 Une fois le cas créé, vous pouvez créer la conservation et l’associer au cas que vous avez créé à l’étape précédente. N’oubliez pas que vous devez créer une stratégie de blocage de cas et une règle de conservation des cas. Si la règle de conservation des dossiers n’est pas créée après la création de la stratégie de blocage de cas, la conservation de la découverte électronique n’est pas créée et aucun contenu n’est placé en conservation.
 
-Exécutez les commandes suivantes pour recréer le blocage eDiscovery que vous souhaitez migrer. Ces exemples utilisent les propriétés du blocage sur place de l’étape 3 que vous souhaitez migrer.
+Exécutez les commandes suivantes pour recréer le blocage eDiscovery que vous souhaitez migrer. Ces exemples utilisent les propriétés du blocage sur place de l’étape 3 que vous souhaitez migrer. La première commande crée une stratégie de conservation de la demande de devis et enregistre les propriétés dans une variable. La deuxième commande crée la règle de conservation de casse correspondante.
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
 ```
 
 ```powershell
-$rule = New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
+New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
-
-![Exemple d’utilisation des applets de commande NewCaseHoldPolicy et NewCaseHoldRule](media/MigrateLegacyeDiscovery4.png)
 
 ## <a name="step-6-verify-the-ediscovery-hold"></a>Étape 6 : vérifier la conservation de la découverte électronique
 
