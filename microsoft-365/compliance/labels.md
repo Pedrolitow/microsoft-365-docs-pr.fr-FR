@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de rétention pour classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: 341d3bf53ac11b2233749210b6a34aa7c4df0208
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: d10b47ccf85493f22d9ef5bdfa0e36e4e954c8a7
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855263"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957169"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -322,19 +322,15 @@ Par exemple, si vous avez une balise pour des documents marketing et vous savez 
   
 Si vous appliquez une étiquette de rétention par défaut à des éléments existants dans la bibliothèque, le dossier ou l’ensemble de documents, procédez comme suit :
   
-- Tous les éléments de la bibliothèque, du dossier ou de l'ensemble de documents héritent automatiquement de cette même étiquette de rétention, **à l’exception** des éléments auxquels une étiquette de rétention a été appliquée explicitement. Les éléments étiquetés explicitement conservent leur étiquette. Pour plus d’informations, voir la section relative aux [principes de rétention ci-dessous ou ce qui priorité](#the-principles-of-retention-or-what-takes-precedence).
+- Tous les éléments de la bibliothèque, du dossier ou de l'ensemble de documents héritent automatiquement de cette même étiquette de rétention, **à l’exception** des éléments auxquels une étiquette de rétention a été appliquée explicitement (tels que les enregistrements). Les éléments étiquetés explicitement conservent leur étiquette. Pour plus d’informations, voir la section relative aux [principes de rétention ci-dessous ou ce qui priorité](#the-principles-of-retention-or-what-takes-precedence).
     
-- Si vous modifiez ou supprimez l’étiquette de rétention par défaut d’une bibliothèque, d’un dossier ou de l’ensemble de documents, l’étiquette est également modifiée ou supprimée pour tous les éléments dans la bibliothèque, le dossier ou l’ensemble de documents, **à l’exception** des éléments portant des étiquettes de rétention explicites. 
+- Si vous modifiez ou supprimez l’étiquette de rétention par défaut d’une bibliothèque, d’un dossier ou de l’ensemble de documents, l’étiquette est également modifiée ou supprimée pour tous les éléments dans la bibliothèque, le dossier ou l’ensemble de documents, **à l’exception** des éléments portant des étiquettes de rétention explicites (tels que les enregistrements).
     
 - Si vous déplacez un élément portant une étiquette de rétention par défaut d’une bibliothèque, d’un dossier ou d’un ensemble de documents vers une autre bibliothèque, un autre dossier ou un autre ensemble de documents, l’élément conserve son étiquette de rétention par défaut existante, même si l’étiquette par défaut du nouvel emplacement est différente.
 
-- Si l’étiquette de rétention par défaut d’une bibliothèque, d’un dossier ou d’un ensemble de documents déclare du contenu sous la forme d’un enregistrement (également appelé *étiquette d’enregistrement*), les caractéristiques suivantes s’appliquent :
+**Enregistrements :** si vous appliquez une étiquette d’enregistrement par défaut à une bibliothèque, un dossier ou un ensemble de documents, une étiquette d’enregistrement est ensuite appliquée à tous les éléments individuels de ces emplacements. Lorsque vous déplacez un nouvel élément vers un emplacement comportant une étiquette d’enregistrement, cet élément est étiqueté en tant qu’enregistrement. Toutefois, si vous remplacez l’étiquette de rétention par défaut par une étiquette ne déclarant pas de contenu en tant qu’enregistrement, cette action **ne** supprime pas l’étiquette d’enregistrement des éléments individuels ; ceux-ci conservent leur étiquette d’enregistrement. Seul un administrateur de collection de sites peut explicitement supprimer ou remplacer l’étiquette de rétention d'enregistrements.
 
-   - Si vous remplacez l’étiquette de rétention par défaut par une étiquette qui ne déclare pas du contenu en tant qu’enregistrement, les éléments conservent l’étiquette d’enregistrement par défaut existante. La nouvelle étiquette de rétention par défaut n’est pas appliquée à ces éléments. Un administrateur de collection de sites doit explicitement supprimer ou modifier l’étiquette de rétention.
-
-   - Si vous supprimez l’étiquette de rétention par défaut qui déclare du contenu en tant qu’enregistrement, l’étiquette d’enregistrement n’est pas supprimée des éléments de la bibliothèque, du dossier ou de l’ensemble de documents. Un administrateur de collection de sites doit explicitement supprimer l’étiquette de rétention.
-
-   Pour plus d’informations sur les étiquettes de rétention qui déclarent du contenu en tant qu’enregistrement, voir [Vue d’ensemble des enregistrements](records.md).
+Pour plus d’informations sur les étiquettes de rétention qui déclarent du contenu en tant qu’enregistrement, voir [Vue d’ensemble des enregistrements](records.md).
     
 ## <a name="applying-a-retention-label-to-email-by-using-rules"></a>Application d’une étiquette de rétention à la messagerie à l’aide de règles
 

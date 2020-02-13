@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 111bafdb5d95792e8fda08007bccd7cd274b8832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bb4056b90afc8805d4e56b9b73c0c7d118d6f08c
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594484"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916889"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Prise en charge de votre programme RGPD avec des listes de vérification de préparation sur la responsabilité
 
@@ -28,9 +28,7 @@ Le règlement général sur la protection des données (RGPD) présente de nouve
 
 ## <a name="accountability-readiness-checklists"></a>Listes de vérification de préparation sur la responsabilité
 
-Les listes de vérification de préparation sur la responsabilité permettent d’accéder en toute simplicité aux informations dont vous pouvez avoir besoin pour prendre en charge le RGPD lorsque vous utilisez les produits et services Microsoft. Cette liste de vérification répertorie les obligations potentielles que vous pouvez rencontrer dans le cadre du RGPD et vous oriente vers les informations nécessaires à la mise en conformité de votre organisation. <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+Les listes de vérification de préparation sur la responsabilité permettent d’accéder en toute simplicité aux informations dont vous pouvez avoir besoin pour prendre en charge le RGPD lorsque vous utilisez les produits et services Microsoft. Cette liste de vérification répertorie les obligations potentielles que vous pouvez rencontrer dans le cadre du RGPD et vous oriente vers les informations nécessaires à la mise en conformité de votre organisation.
 
 Il existe un guide spécifique pour quatre familles de produits et services Microsoft :
 
@@ -65,6 +63,17 @@ Ces listes de vérification comprennent les quatre catégories de considération
     - Compréhension de l’organisation et de son contexte  
     - Planification  
     - Stratégies de sécurité des informations
+
+## <a name="customer-agreements"></a>Contrats client
+
+- **Conditions d’utilisation du service en ligne** :.les engagements contractuels de Microsoft en ce qui concerne le RGPD sont accessibles dans les [Conditions d’utilisation des services en ligne](https://go.microsoft.com/fwlink/p/?linkid=2052208).
+- **Conditions d’utilisation des produits Microsoft Terms** : Microsoft étend les [engagements des conditions d’utilisation du RGPD](https://go.microsoft.com/fwlink/p/?linkid=2052213) à tous les clients de licences en volume.
+- **Addendum à la protection des données** : les services Microsoft [s’étendent les engagements](https://go.microsoft.com/fwlink/p/?linkid=2052215) aux clients et autres utilisateurs de Microsoft Consulting Services.
+
+## <a name="gdpr-compliance-controls"></a>Contrôles de conformité RGPD
+
+- **Utiliser le score de conformité**: révisez et incorporez les contrôles utilisés par Microsoft pour prendre en charge les obligations dans le RGPD avec le [Score de conformité](compliance-score.md).
+- **Mappage de contrôle du RGPD**: accédez à un [Mappage complet](https://go.microsoft.com/fwlink/p/?linkid=2052220) de contrôles Microsoft aux obligations RGPD.
 
 ## <a name="learn-more"></a>En savoir plus
 

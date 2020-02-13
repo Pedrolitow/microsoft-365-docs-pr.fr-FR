@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 36
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,22 +14,19 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d2f9ac660c30b815d4ac381f347e1c1aa354ce0d
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39268482"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916909"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Demandes des personnes concernées et le RGPD et CCPA
 
 Le règlement général sur la protection des données (RGPD) présente de nouvelles règles pour les organisations qui offrent des produits et des services aux membres de l’Union européenne (UE), ou qui collectent et analysent des données pour les résidents de l’UE quel que soit l’endroit où vous vous trouvez et celui où se trouve votre entreprise. Pour plus de détails, consultez la [rubrique Synthèse RGPD](gdpr.md).
 
-De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des obligations d’information, des protections contre la discrimination envers les personnes qui font le choix de faire usage de leurs droits, et la possibilité d’opter pour ou contre pour certains transferts de données classés en tant que « ventes ».  <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
-
-Ce document vous permet d’obtenir des informations sur le traitement des demandes des personnes concernées (DPC) dans le cadre du RGPD et du CCPA à l’aide des produits etdes services Microsoft.
+De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Ce document vous permet d’obtenir des informations sur le traitement des demandes des personnes concernées (DPC) dans le cadre du RGPD et du CCPA à l’aide des produits etdes services Microsoft.
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -79,7 +78,7 @@ Les journaux et données associées générés par Microsoft peuvent contenir de
 
 ### <a name="yammer-and-kaizala"></a>Yammer et Kaizala
 
-La suppression d’un compte d’utilisateur ne supprime pas les journaux générées par le système pour Yammer et Kaizala. Pour supprimer les données de ces applications, voir une des opérations suivantes :
+La suppression d’un compte d’utilisateur ne supprime pas les journaux générées par le système pour Yammer et Kaizala. Pour supprimer les données de ces applications, voir une des ressources suivantes :
 
 - [Gérer les demandes des personnes concernées RGPD dans Yammer Entreprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [Exporter ou supprimer les données organisationnelles d’un utilisateur dans Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
@@ -99,6 +98,12 @@ Dans certains cas, les utilisateurs de votre organisation peuvent accéder aux p
 ### <a name="third-party-products"></a>Produits tiers
 
 Pour les produits et services tiers accessibles via l’authentification de compte Microsoft, les demandes des personnes concernées doivent être redirigées vers le tiers applicable.
+
+## <a name="data-subject-request-admin-tools"></a>Outils d’administration sur les demandes des personnes concernées
+
+- **Centre de sécurité et de conformité** : les données générées par l’utilisateur sont exportées par le [Centre de sécurité et de conformité](https://aka.ms/stpsecurityandcompliance) ou dans les fonctionnalités de l’application.
+- **Centre d’administration Azure AD**: supprimez un objet de données d’Azure Active Directory et des services associés à l’aide du [Centre d’administration Azure AD](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/Allusers/menuId/).
+- **Exportation de journal de données Microsoft** : les journaux générés par le système peuvent être exportés par les administrateurs de locataire à l’aide de la fonction [Exportation de journal de données Microsoft](https://aka.ms/MicrosoftGDPR).
 
 ## <a name="learn-more"></a>En savoir plus
 

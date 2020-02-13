@@ -1,5 +1,7 @@
 ---
 title: Configuration de vos stratégies de filtrage du courrier indésirable
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les paramètres du filtre de courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables.
-ms.openlocfilehash: 107b4cfa79a83ec5703edd3b47d00c59da81f4b6
-ms.sourcegitcommit: 8b619cc0587d180322d0799fdad813cdd929d9dc
+ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "40929790"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957199"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configuration de vos stratégies de filtrage du courrier indésirable
 Les paramètres du filtre de courrier indésirable incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables. Les paramètres de la stratégie de filtrage de courrier indésirable sont appliqués uniquement aux messages entrants et sont de deux sortes :
@@ -138,7 +140,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>Optimisation de votre stratégie de filtrage de courrier indésirable pour éviter les faux positifs et les faux négatifs
 
-Vous pouvez activer des techniques de filtrage avancé du courrier indésirable si vous souhaitez adopter une approche plus agressive du filtrage du courrier indésirable. Pour plus d'informations sur les paramètres généraux de courrier indésirable applicables à l'ensemble de l'organisation, consultez [Empêcher le marquage de courriers électroniques réguliers comme courrier indésirable dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) ou [Bloquer du courrier indésirable à l'aide du filtre d'Office 365 afin d'éviter les problèmes de faux négatifs](reduce-spam-email.md). Elles sont utiles si vous disposez d’un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
+Vous pouvez activer des techniques de filtrage avancé du courrier indésirable si vous souhaitez adopter une approche plus agressive du filtrage du courrier indésirable. Pour plus d'informations sur les paramètres généraux de courrier indésirable applicables à l'ensemble de l'organisation, consultez [Empêcher le marquage de courriers électroniques réguliers comme courrier indésirable dans Office 365](prevent-email-from-being-marked-as-spam.md) ou [Bloquer du courrier indésirable à l'aide du filtre d'Office 365 afin d'éviter les problèmes de faux négatifs](reduce-spam-email.md). Elles sont utiles si vous disposez d’un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
 
 ## <a name="allowblock-lists"></a>Listes autorisé/bloqué
 
@@ -160,6 +162,9 @@ Les listes verte et rouge sont configurées dans le cadre de la stratégie anti-
    - Ajoutez des expéditeurs indésirables à la liste de blocage des expéditeurs. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
 
    - Ajoutez des domaines indésirables à la liste des domaines bloqués. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
+   
+     > [!NOTE]
+     > Dans la stratégie de filtrage du courrier indésirable, vous pouvez bloquer des expéditeurs ou des domaines spécifiques, mais vous ne pouvez pas utiliser de caractères génériques (\*). 
 
 > [!TIP]
 > Dans certains cas, il est possible que votre organisation n’accepte pas le verdict fourni par le service. Dans ce cas, vous souhaiterez peut-être conserver le contenu permanent de la liste verte ou rouge. Toutefois, si vous comptez placer un domaine sur la liste verte pendant une période prolongée, demandez à l’expéditeur de vérifier que le domaine est authentifié et qu’il est paramétré sur DMARC refuser si ce n’est pas le cas.
@@ -171,7 +176,7 @@ Les listes verte et rouge sont configurées dans le cadre de la stratégie anti-
 
 [Mise en quarantaine](quarantine.md)
 
-[Éviter le marquage de courrier régulier comme courrier indésirable dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Éviter le marquage de courrier régulier comme courrier indésirable dans Office 365](prevent-email-from-being-marked-as-spam.md)
 
 [Réduire le courrier indésirable dans Office 365](reduce-spam-email.md)
 

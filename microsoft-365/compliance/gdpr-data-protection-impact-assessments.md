@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: cc633dc261594607a87e7aae7da03e0a427a2492
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0a62cf2ef40bbf9da219309cf75eed27ea8739e4
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594414"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916899"
 ---
 # <a name="data-protection-impact-assessment-for-the-gdpr"></a>Analyses d’impact sur la protection des données pour le RGPD
 
-Le règlement général sur la protection des données (RGPD) présente de nouvelles règles pour les organisations qui offrent des produits et des services aux membres de l’Union européenne (UE), ou qui collectent et analysent des données pour les résidents de l’UE quel que soit l’endroit où vous vous trouvez et celui où se trouve votre entreprise. Pour plus de détails, consultez la [rubrique Synthèse RGPD](gdpr.md). <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
-
-Ce document vous apporte des informations concernant les analyses d’impact sur la protection des données (DPIA) en vertu du RGPD lorsque vous utilisez les produits et services Microsoft.
+Le règlement général sur la protection des données (RGPD) présente de nouvelles règles pour les organisations qui offrent des produits et des services aux membres de l’Union européenne (UE), ou qui collectent et analysent des données pour les résidents de l’UE quel que soit l’endroit où vous vous trouvez et celui où se trouve votre entreprise. Pour plus de détails, consultez la [rubrique Synthèse RGPD](gdpr.md). Ce document vous apporte des informations concernant les analyses d’impact sur la protection des données (DPIA) en vertu du RGPD lorsque vous utilisez les produits et services Microsoft.
 
 ## <a name="terminology"></a>Terminologie
 
@@ -47,26 +43,30 @@ Le RGPD requiert des contrôleurs de préparer une analyse d’impact sur la pro
 
 Les recommandations DPIA s’appliquent à Office 365, Azure, Dynamics 365, au support Microsoft et aux services professionnels. Ces recommandations incluent les éléments suivants :
 
-1. **Quand une DPIA est-elle nécessaire ?**  : les facteurs de risque répertoriés ci-dessous doivent être traités lorsque vous envisagez d’effectuer une DPIA. D’autres facteurs potentiels et des informations supplémentaires sont disponibles dans la partie 1 de chacune des instructions.  
+**Quand une DPIA est-elle nécessaire ?**
 
-    - Analyse systématique et approfondie des données sur la base d’un traitement automatisé.  
-    - Traitement à grande échelle de catégories spéciales de données (données révélant des informations uniques identifiant une personne physique) ou de données à caractère personnel relatives aux condamnations pénales et aux délits commis.
-    - Surveillance systématique d’une zone publiquement accessible à grande échelle.
+Les facteurs de risque répertoriés ci-dessous doivent être traités lorsque vous envisagez d’effectuer une DPIA. D’autres facteurs potentiels et des informations supplémentaires sont disponibles dans la partie 1 de chacune des instructions.  
 
-    Le RGPD précise « Le traitement des données à caractère personnel ne doit pas être considéré comme un traitement à grande échelle s'il concerne des données à caractère personnel de patients ou de clients par un médecin, un autre professionnel de la santé ou un avocat. Dans ce cas, une évaluation de l’impact de la protection des données ne doit pas être obligatoire. »
+- Analyse systématique et approfondie des données sur la base d’un traitement automatisé.  
+- Traitement à grande échelle de catégories spéciales de données (données révélant des informations uniques identifiant une personne physique) ou de données à caractère personnel relatives aux condamnations pénales et aux délits commis.
+- Surveillance systématique d’une zone publiquement accessible à grande échelle.
 
-2. **Qu’est-ce qui est requis pour effectuer une DPIA ?**  : une DPIA doit fournir des informations spécifiques sur le traitement prévu, qui sont détaillées dans la partie 2 de l’aide. Ces informations sont les suivantes :
+Le RGPD précise « Le traitement des données à caractère personnel ne doit pas être considéré comme un traitement à grande échelle s'il concerne des données à caractère personnel de patients ou de clients par un médecin, un autre professionnel de la santé ou un avocat. Dans ce cas, une évaluation de l’impact de la protection des données ne doit pas être obligatoire ».
 
-    - Évaluation du besoin et de la proportionnalité du traitement des données par rapport aux finalités prévues de la DPIA.  
-    - Évaluation des risques concernant les droits et les libertés des personnes physiques.
-    - Les mesures envisagées pour lutter contre les risques, notamment les garanties, les mesures de sécurité et les mécanismes pour assurer la protection des données à caractère personnel et prouver la conformité avec le RGPD.
-    - Finalités de traitement  
-    - Catégories de données à caractère personnel traitées  
-    - Rétention des données  
-    - Emplacement et transferts de données à caractère personnel  
-    - Partage de données avec des sous-processeurs tiers  
-    - Partage de données avec des tiers indépendants  
-    - Droits des personnes concernées par les données
+**Qu’est-ce qui est requis pour effectuer une DPIA ?**
+
+Une DPIA doit fournir des informations spécifiques sur le traitement prévu, qui sont détaillées dans la partie 2 de l’aide. Ces informations sont les suivantes :
+
+- Évaluation du besoin et de la proportionnalité du traitement des données par rapport aux finalités prévues de la DPIA.  
+- Évaluation des risques concernant les droits et les libertés des personnes physiques.
+- Les mesures envisagées pour lutter contre les risques, notamment les garanties, les mesures de sécurité et les mécanismes pour assurer la protection des données à caractère personnel et prouver la conformité avec le RGPD.
+- Finalités de traitement  
+- Catégories de données à caractère personnel traitées  
+- Rétention des données  
+- Emplacement et transferts de données à caractère personnel  
+- Partage de données avec des sous-processeurs tiers  
+- Partage de données avec des tiers indépendants  
+- Droits des personnes concernées par les données
 
 ## <a name="additional-considerations"></a>Considérations supplémentaires
 
