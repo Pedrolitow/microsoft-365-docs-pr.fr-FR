@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 399e89a577db68e0c31eceef921ef2ab1172352a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae268c1368933c729177d6083294e7e7a8735958
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595189"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074921"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées de document dans Advanced eDiscovery
 

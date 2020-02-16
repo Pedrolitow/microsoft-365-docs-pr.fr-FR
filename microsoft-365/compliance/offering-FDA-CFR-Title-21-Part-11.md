@@ -1,7 +1,7 @@
 ---
 title: Food and Drug Administration CFR titre 21, partie 11
 description: Microsoft aide les clients à se conformer à ces réglementations en matière d’administration des médicaments et de l’alimentation.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fdde59b04c7f52f163028aa7ba4759e226fccb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602451"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071281"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR titre 21, partie 11
 
@@ -45,20 +45,21 @@ Les clients peuvent demander l’accès aux rapports de conformité, sous réser
 
 Découvrez comment accélérer votre déploiement de la FDA CFR titre 21 : [Télécharger le Guide de qualification de Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le champ d’application
 
 Bien qu’il n’existe pas de certification pour se conformer au titre CFR 21 partie 11, les services Cloud d’entreprise Microsoft suivants ont subi des audits indépendants, indépendants, qui peuvent aider les clients dans leurs efforts de conformité. Ces services sont les suivants :
 
 - Azure : services Cloud, stockage, gestionnaire de trafic, machines virtuelles et réseau virtuel
+- Azure DevOps
 - Intune
 - [Dynamics 365 et Dynamics 365 Service Public](https://aka.ms/d365-compliance-list)
-- [Office 365 et Office 365 U.S. Governement](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Office 365 et Office 365 U.S. Governement
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
 Les rapports d’audit pour les normes SOC 1 et SOC 2 type 2, ISO/IEC 27001 et ISO/IEC 27018 attestent de l’efficacité des contrôles que Microsoft a mis en œuvre et peuvent aider les clients à se conformer à la norme FDA CFR titre 21 partie 11.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **À qui la norme s'applique-t-elle ?**
 
@@ -94,6 +95,6 @@ Microsoft veille à ce que ses services Cloud d’entreprise respectent les term
 - [Microsoft Cloud pour le secteur public](https://aka.ms/govt-cloud)
 - [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

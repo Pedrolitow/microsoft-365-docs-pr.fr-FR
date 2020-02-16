@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Votre organisation peut être amenée à conserver des documents pendant une période de temps en raison de la conformité, de la légalité ou d’autres exigences professionnelles. Toutefois, si votre organisation conserve les documents plus longtemps que nécessaire, vous risquez de créer des risques légaux inutiles. Avec une stratégie de suppression de documents, vous pouvez réduire de manière proactive les risques en supprimant des documents dans un site après une période de temps spécifique (par exemple, vous pouvez supprimer des documents dans les sites OneDrive entreprise de l’utilisateur cinq ans après la création des documents).
-ms.openlocfilehash: ac2bdfcd262a673af1078b2ed0a274fcd0b9d3b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595209"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075201"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Vue d’ensemble des stratégies de suppression de documents
 
@@ -40,7 +40,7 @@ Les stratégies de suppression de documents sont puissantes mais flexibles, par 
     
 Vous créez et gérez des stratégies de suppression de documents à l’aide du centre de stratégies de suppression de documents. Vous pouvez également créer le centre de stratégies manuellement en [créant la collection de sites](https://go.microsoft.com/fwlink/p/?LinkID=404342) et en choisissant **Centre de stratégie de conformité** dans l’onglet **entreprise** . Chaque client ne peut avoir qu’un seul centre de stratégie de suppression de documents. 
   
-![Page d’accueil du centre de stratégies de suppression de documents](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![Page d’accueil du centre de stratégies de suppression de documents](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="when-to-use-document-deletion-policies"></a>Quand utiliser des stratégies de suppression de documents ?
 
@@ -56,7 +56,7 @@ Chaque type de stratégie fonctionne de manière optimale pour un type spécifiq
   
 Les stratégies de suppression de documents ne remplacent pas les stratégies de gestion des enregistrements ou de gestion des informations, qui fonctionnent mieux avec des données structurées et des types de contenu. Au lieu de cela, vous devez utiliser des stratégies de suppression de documents lorsque vous avez besoin de gérer largement la suppression automatique des données non structurées comme les sites d’équipe et les sites OneDrive entreprise.
   
-![Schéma montrant les options de rétention pour le contenu du site](media/IP-Retention-policies-for-site-content.png)
+![Schéma montrant les options de rétention pour le contenu du site](../media/IP-Retention-policies-for-site-content.png)
   
 Si vous appliquez une stratégie de suppression de documents à un site qui utilise déjà des stratégies de type de contenu ou des stratégies de gestion des informations pour une liste ou une bibliothèque, ces stratégies sont ignorées alors que la stratégie de suppression de documents est appliquée. Cela signifie que vous devez planifier un site pour qu’il utilise uniquement des stratégies destinées à un contenu structuré ou non structuré, pas les deux. Pour plus d’informations sur la façon dont les stratégies de suppression de documents remplacent les autres stratégies, consultez la rubrique [appliquer ou supprimer une stratégie de suppression de documents pour un site](apply-or-remove-a-document-deletion-policy-for-a-site.md).
   
@@ -74,13 +74,13 @@ Une stratégie de suppression de documents contient une ou plusieurs règles de 
     
 Si une stratégie contient plusieurs règles, les propriétaires de site peuvent sélectionner la règle qui s’applique le mieux à leur contenu.
   
-![Page Nouvelle règle de suppression](media/IP-New-deletion-rule.png)
+![Page Nouvelle règle de suppression](../media/IP-New-deletion-rule.png)
   
 ## <a name="policies-and-assignments"></a>Stratégies et affectations
 
 Une fois que vous avez créé une stratégie de suppression de documents, vous pouvez l’affecter à un modèle de collection de sites, par exemple, vous pouvez affecter une stratégie au modèle OneDrive entreprise afin qu’elle comprenne le site OneDrive de chaque utilisateur. Lorsque vous affectez une stratégie à un modèle de collection de sites, cette méthode s’applique à toutes les collections de sites déjà créées à partir de ce modèle, en plus des collections de sites créées à partir de ce modèle à l’avenir.
   
-![Page Choisir un modèle affichant l’option OneDrive](media/IP-Choose-a-template.png)
+![Page Choisir un modèle affichant l’option OneDrive](../media/IP-Choose-a-template.png)
   
 Vous pouvez également affecter une stratégie à une collection de sites spécifique : cela remplace toutes les stratégies qui ont été affectées à ce modèle de collection de sites. Par exemple, vous pouvez affecter des stratégies au modèle de site d’équipe, mais les remplacer par l’application d’un ensemble de stratégies différent à une collection de sites spécifique créée à partir de ce modèle.
   
@@ -106,7 +106,7 @@ La relation de base est la suivante :
   
 Une ou plusieurs stratégies peuvent être affectées à une collection de sites ou à un modèle de collection de sites, et chacune d’entre elles peut avoir une ou plusieurs règles. Toutefois, il ne peut y avoir qu’une seule stratégie active par site, et il ne peut y avoir qu’une seule règle de suppression active à tout moment pour les bibliothèques au sein du site.
   
-![Schéma montrant la relation entre les stratégies](media/IP-Two-policies-four-rules.png)
+![Schéma montrant la relation entre les stratégies](../media/IP-Two-policies-four-rules.png)
   
 ## <a name="document-deletion-policies-are-inherited"></a>Les stratégies de suppression de documents sont héritées
 

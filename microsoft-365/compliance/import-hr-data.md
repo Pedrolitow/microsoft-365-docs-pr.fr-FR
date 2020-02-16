@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés depuis le système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862034"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073012"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -86,7 +86,7 @@ L’étape suivante consiste à créer un connecteur RH dans le centre de confor
 
 5. Sur la page **mappage de fichiers** , tapez les trois noms d’en-tête de colonne (également appelés *paramètres* à partir du fichier CSV que vous avez créé à l’étape 2 dans chacune des cases appropriées. Les noms ne respectent pas la casse. Comme expliqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de paramètres dans votre fichier CSV. Par exemple, la capture d’écran suivante montre les noms des paramètres de l’exemple dans le fichier CSV d’exemple illustré à l’étape 2.
 
-   ![Les titres des en-têtes de colonne correspondent à ceux du fichier CSV.](media/HRConnectorWizard3.png)
+   ![Les titres des en-têtes de colonne correspondent à ceux du fichier CSV.](../media/HRConnectorWizard3.png)
 
 6. Sur la page **révision** , vérifiez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
@@ -98,7 +98,7 @@ L’étape suivante consiste à créer un connecteur RH dans le centre de confor
 
 8. Cliquez sur le connecteur RH que vous venez de créer pour afficher la page de menu volant, qui contient des propriétés et d’autres informations sur le connecteur. 
 
-   ![Page de menu volant pour le nouveau connecteur RH](media/HRConnectorWizard7.png)
+   ![Page de menu volant pour le nouveau connecteur RH](../media/HRConnectorWizard7.png)
 
    Si vous ne l’avez pas déjà fait, vous pouvez copier les valeurs pour l’ID d' **application Azure** et l' **ID de travail de connecteur**. Vous en aurez besoin pour exécuter le script à l’étape suivante. Vous pouvez également télécharger le script à partir de la page de menu volant (ou le télécharger en utilisant le lien de l’étape suivante).
 
@@ -153,11 +153,11 @@ Après avoir créé le connecteur RH et exécuté le script pour charger vos don
 
 2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur RH pour afficher la page de menu volant, qui contient les propriétés et les informations relatives au connecteur.
 
-   ![Page mobile du connecteur RH avec les propriétés et l’État](media/HRConnectorFlyout1.png)
+   ![Page mobile du connecteur RH avec les propriétés et l’État](../media/HRConnectorFlyout1.png)
 
 3. Sous en **cours**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et charge les données à partir du fichier CSV vers le Cloud Microsoft. 
 
-   ![Le fichier journal du connecteur RH affiche les lignes numériques à partir du fichier CSV qui ont été téléchargées](media/HRConnectorLogFile.png)
+   ![Le fichier journal du connecteur RH affiche les lignes numériques à partir du fichier CSV qui ont été téléchargées](../media/HRConnectorLogFile.png)
 
    Le champ **RecordsSaved** indique le nombre de lignes du fichier CSV téléchargé. Par exemple, si le fichier CSV contient 4 lignes, la valeur des champs **RecordsSaved** est 4, si le script a téléchargé avec succès toutes les lignes dans le fichier CSV.
 
@@ -193,7 +193,7 @@ Vous pouvez utiliser l’application planificateur de tâches de Windows pour ex
 
 7. Sélectionnez l’onglet **actions** , cliquez sur **nouveau**, puis effectuez les opérations suivantes :
 
-   ![Paramètres des actions pour créer une tâche planifiée pour le script du connecteur RH](media/HRConnectorScheduleTask1.png)
+   ![Paramètres des actions pour créer une tâche planifiée pour le script du connecteur RH](../media/HRConnectorScheduleTask1.png)
 
    a. Dans la liste déroulante **action** , assurez-vous que l’option **Démarrer un programme** est sélectionnée.
 
@@ -209,7 +209,7 @@ Vous pouvez utiliser l’application planificateur de tâches de Windows pour ex
 
    La nouvelle tâche est affichée dans la bibliothèque du planificateur de tâches.
 
-   ![La nouvelle tâche est affichée dans la bibliothèque du planificateur de tâches.](media/HRConnectorTaskSchedulerLibrary.png)
+   ![La nouvelle tâche est affichée dans la bibliothèque du planificateur de tâches.](../media/HRConnectorTaskSchedulerLibrary.png)
 
    La dernière fois que le script est exécuté et la prochaine fois qu’il est planifiée pour s’exécuter. Vous pouvez double-cliquer sur la tâche pour la modifier.
 

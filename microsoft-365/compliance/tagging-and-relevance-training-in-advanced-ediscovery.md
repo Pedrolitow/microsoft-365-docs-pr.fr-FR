@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinence d’Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: fa690857fabb6a732d329dc8a75896d9e1aa195d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601421"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069563"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Étiquetage et formation à la pertinence dans Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Une fois l’évaluation terminée dans Advanced eDiscovery et que vous entrez l
 
 1. Dans l' **onglet \> balise de pertinence** , le volet de marquage est affiché par défaut dans le volet de gauche et les fichiers d’exemple sont affichés, un à la fois pour le marquage. 
     
-    ![Volet Balise de pertinence](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Volet Balise de pertinence](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     Sous l’onglet **balise** , le nom complet du fichier est affiché. Il peut s’agir du chemin d’accès, de l’objet du courrier électronique, du titre ou du nom défini par l’utilisateur. Vous pouvez copier l’ID, le chemin d’accès ou le chemin d’accès au texte en cliquant avec le bouton droit sur le chemin d’accès du fichier. 
     
@@ -58,7 +58,7 @@ Une fois l’évaluation terminée dans Advanced eDiscovery et que vous entrez l
     
     Éventuellement, sous l’onglet **balise** , cliquez sur **paramètres des balises** pour définir les options suivantes : 
     
-    ![Paramètres de balise de pertinence](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+    ![Paramètres de balise de pertinence](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
   - **Balise en bloc**: utilisez cette option pour affecter plusieurs problèmes pour un fichier en sélectionnant **tout** pour définir la balise du fichier sélectionné pour tous les problèmes (remplacement des problèmes déjà marqués) ou en sélectionnant **le reste** pour appliquer la balise aux problèmes non balisés restants. L’option sélectionnée reste en vigueur pour tous les cas de cet utilisateur jusqu’à ce qu’elle soit modifiée par cet utilisateur (le paramètre est défini par utilisateur pour tous les cas de l’utilisateur). 
     
@@ -80,7 +80,7 @@ La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans
   
 1. Dans l' **onglet \> balise de pertinence** , sélectionnez les fichiers de l’exemple dans la liste déroulante du volet de gauche. Les fichiers de l’exemple sont répertoriés dans le volet de gauche. 
     
-    ![Liste d’exemples de fichiers de balise de pertinence](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![Liste d’exemples de fichiers de balise de pertinence](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
 2. Sélectionnez un exemple ou un numéro de fichier spécifique en entrant ou en sélectionnant son numéro dans les zones **exemple** ou **fichier** . 
     

@@ -1,5 +1,7 @@
 ---
 title: Protection contre la perte de données et Microsoft teams
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vous pouvez désormais appliquer des stratégies DLP aux conversations et canaux Microsoft Teams. Lisez cet article pour en savoir plus sur son fonctionnement.
-ms.openlocfilehash: 55a13d44ab3cff777ee8ed4610d746c3649bf558
-ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
+ms.openlocfilehash: 30436659b8b1bd336823e8dc6be06c8fbc8e08e3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41022359"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075283"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft teams
 
@@ -42,17 +44,17 @@ Récemment, les fonctionnalités de [protection contre la perte de données](dat
 
 Tout comme le fonctionnement de DLP dans [Exchange, Outlook, Outlook sur le Web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web), [SharePoint Online, OneDrive entreprise](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)et [les clients de bureau](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs), des conseils de stratégie apparaissent lorsqu’une action est en conflit avec une stratégie DLP. Voici un exemple de Conseil de stratégie :
 
-![Notification de message bloqué dans teams](media/dlp-teams-blockedmessage-notification.png)
+![Notification de message bloqué dans teams](../media/dlp-teams-blockedmessage-notification.png)
 
 Dans ce cas, l’expéditeur a tenté de partager un numéro de sécurité sociale dans un canal Microsoft Teams. Le lien **que puis-je faire ?** ouvre une boîte de dialogue qui fournit des options pour l’expéditeur afin de résoudre le problème. Notez que dans ce cas, l’expéditeur peut choisir de remplacer la stratégie ou d’informer un administrateur qu’il doit l’examiner et le résoudre.
 
-![Options de résolution des messages bloqués](media/dlp-teams-blockedmessage-possibleactions.png)
+![Options de résolution des messages bloqués](../media/dlp-teams-blockedmessage-possibleactions.png)
 
 Dans votre organisation, vous pouvez choisir d’autoriser les utilisateurs à remplacer une stratégie DLP. Lorsque vous configurez vos stratégies DLP, vous pouvez utiliser les conseils de stratégie par défaut ou [personnaliser les conseils de stratégie](#to-customize-policy-tips) pour votre organisation. 
 
 Pour revenir à notre exemple, lorsqu’un expéditeur partage un numéro de sécurité sociale dans un canal Teams, voici ce que Saw le destinataire :
 
-![Message bloqué](media/dlp-teams-blockedmessage-notification-to-user.png)
+![Message bloqué](../media/dlp-teams-blockedmessage-notification-to-user.png)
 
 Le lien **qu’est-ce que c’est ?** ouvre un [article](data-loss-prevention-policies.md) sur les stratégies DLP, ce qui permet d’expliquer pourquoi le message a été bloqué.
 
@@ -66,9 +68,9 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 3. Sélectionnez une stratégie, puis en regard de **paramètres de stratégie**, sélectionnez **modifier**.
 
-4. Créez une règle ou modifiez une règle existante pour la stratégie.<br/>![Modification d’une règle pour une stratégie](media/dlp-teams-editrule.png)<br/>
+4. Créez une règle ou modifiez une règle existante pour la stratégie.<br/>![Modification d’une règle pour une stratégie](../media/dlp-teams-editrule.png)<br/>
 
-5. Dans l’onglet **notifications utilisateur** , sélectionnez **personnaliser le texte du message électronique** et/ou **personnaliser les options de texte du Conseil de stratégie** .<br/>![Personnaliser les notifications utilisateur et les conseils de stratégie](media/dlp-teams-editrule-usernotifications.png)<br/>  
+5. Dans l’onglet **notifications utilisateur** , sélectionnez **personnaliser le texte du message électronique** et/ou **personnaliser les options de texte du Conseil de stratégie** .<br/>![Personnaliser les notifications utilisateur et les conseils de stratégie](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
 6. Spécifiez le texte que vous souhaitez utiliser pour les notifications par courrier électronique et/ou les conseils de stratégie, puis cliquez sur **Enregistrer**. 
 
@@ -84,9 +86,9 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 2. Choisissez**stratégie**de **protection contre** > la perte de données. 
 
-3. Sélectionnez une stratégie, puis examinez les valeurs figurant dans la zone **emplacements**. Si vous voyez la **conversation teams et les messages de canal**, tous sont définis. Si ce n’est pas le cas, cliquez sur **modifier**.<br/>![Emplacements pour la stratégie existante](media/dlp-teams-editexistingpolicy.png)<br/>
+3. Sélectionnez une stratégie, puis examinez les valeurs figurant dans la zone **emplacements**. Si vous voyez la **conversation teams et les messages de canal**, tous sont définis. Si ce n’est pas le cas, cliquez sur **modifier**.<br/>![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)<br/>
 
-4. Dans la colonne **État** , activez la stratégie pour la **conversation de teams et les messages de canal**.<br/>![DLP pour les conversations et les canaux teams](media/dlp-teams-addteamschatschannels.png)<br/>
+4. Dans la colonne **État** , activez la stratégie pour la **conversation de teams et les messages de canal**.<br/>![DLP pour les conversations et les canaux teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
 5. Conservez les paramètres par défaut de tous les comptes, ou spécifiez les comptes à inclure ou à exclure.
 
@@ -102,11 +104,11 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 2. Choisir une**stratégie** > de **protection contre** > la perte**de données + créer une stratégie**. 
 
-3. Choisissez un [modèle](data-loss-prevention-policies.md#dlp-policy-templates), puis cliquez sur **suivant**.<br/>Dans notre exemple, nous avons choisi le modèle de données des informations d’identification personnelle aux États-Unis.<br/>![Modèle de confidentialité pour la stratégie DLP](media/dlp-teams-createnewpolicy-template.png)<br/>
+3. Choisissez un [modèle](data-loss-prevention-policies.md#dlp-policy-templates), puis cliquez sur **suivant**.<br/>Dans notre exemple, nous avons choisi le modèle de données des informations d’identification personnelle aux États-Unis.<br/>![Modèle de confidentialité pour la stratégie DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
 4. Dans l’onglet **nom de votre stratégie** , spécifiez un nom et une description pour la stratégie, puis cliquez sur **suivant**. 
 
-5. Dans l’onglet **choisir les emplacements** , conservez le paramètre par défaut tous les emplacements ou sélectionnez **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.<br/>Si vous avez choisi des emplacements spécifiques, sélectionnez-les pour votre stratégie DLP, puis cliquez sur **suivant**.<br/>![Emplacements de stratégie DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. Dans l’onglet **choisir les emplacements** , conservez le paramètre par défaut tous les emplacements ou sélectionnez **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.<br/>Si vous avez choisi des emplacements spécifiques, sélectionnez-les pour votre stratégie DLP, puis cliquez sur **suivant**.<br/>![Emplacements de stratégie DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Si vous souhaitez vous assurer que les documents qui contiennent des informations sensibles ne sont pas partagés de manière inappropriée, assurez-vous que les **sites SharePoint** et **OneDrive** sont activés, ainsi que la **conversation et les messages de canal de teams**.
     > Les canaux dans Microsoft teams sont fortement tributaires de la fonctionnalité Exchange Online. Assurez-vous que l’emplacement de **messagerie Exchange** est également activé pour les stratégies qui doivent être appliquées pour le contenu des canaux.  
@@ -114,9 +116,9 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 6. Dans l' **onglet Paramètres de stratégie** , sous **personnaliser le type de contenu à protéger**, conservez les paramètres par défaut simples ou choisissez **utiliser les paramètres avancés**, puis cliquez sur **suivant**. Si vous choisissez Paramètres avancés, vous pouvez créer ou modifier des règles pour votre stratégie. (Pour obtenir de l’aide, consultez la rubrique [paramètres simples et paramètres avancés](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)
 
-7.  Dans l’onglet **paramètres de stratégie** , sous que voulez **-vous faire si nous détectons des informations sensibles ?**, vérifiez les paramètres. (C’est ici que vous pouvez choisir de conserver les conseils de stratégie par défaut [et les notifications par courrier électronique](use-notifications-and-policy-tips.md), ou de les personnaliser.)<br/>![Paramètres de stratégie DLP avec conseils et notifications](media/dlp-teams-policysettings-tipsemails.png)<br/>Lorsque vous avez terminé d’examiner ou de modifier les paramètres, choisissez **suivant**.
+7.  Dans l’onglet **paramètres de stratégie** , sous que voulez **-vous faire si nous détectons des informations sensibles ?**, vérifiez les paramètres. (C’est ici que vous pouvez choisir de conserver les conseils de stratégie par défaut [et les notifications par courrier électronique](use-notifications-and-policy-tips.md), ou de les personnaliser.)<br/>![Paramètres de stratégie DLP avec conseils et notifications](../media/dlp-teams-policysettings-tipsemails.png)<br/>Lorsque vous avez terminé d’examiner ou de modifier les paramètres, choisissez **suivant**.
 
-8. Dans l' **onglet Paramètres de stratégie** , sous voulez- **vous activer la stratégie ou effectuer d’abord des tests ?**, indiquez si vous souhaitez activer la stratégie, la [Tester](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)ou la désactiver pour le moment, puis cliquez sur **suivant**.<br/>![Indiquez si la stratégie doit être activée ou non.](media/dlp-teams-policysettings-turnonnow.png)<br/>
+8. Dans l' **onglet Paramètres de stratégie** , sous voulez- **vous activer la stratégie ou effectuer d’abord des tests ?**, indiquez si vous souhaitez activer la stratégie, la [Tester](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)ou la désactiver pour le moment, puis cliquez sur **suivant**.<br/>![Indiquez si la stratégie doit être activée ou non.](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
 9. Dans l’onglet **vérifier vos paramètres** , passez en revue les paramètres de votre nouvelle stratégie. Choisissez **modifier** pour apporter des modifications. Lorsque vous avez terminé, sélectionnez **créer**. 
 

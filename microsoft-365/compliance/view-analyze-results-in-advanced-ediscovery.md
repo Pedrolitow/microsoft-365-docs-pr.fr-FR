@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Comprendre où afficher les résultats du processus d’analyse dans Office 365 Advanced eDiscovery, y compris les définitions des options de tâche affichées.  '
-ms.openlocfilehash: 9e06770135afd62a39115c9365a698df4493bd72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069179"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats de l’analyse dans Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ Dans Advanced eDiscovery, la progression et les résultats du processus d’anal
 
 Dans **préparer \> l' \> analyse \> des résultats**de la tâche, l’État est affiché pendant et après l’exécution de l’analyse. 
   
-![Analyser l’état des tâches](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
+![Analyser l’état des tâches](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
 Les tâches affichées peuvent varier en fonction des options sélectionnées. 
   
@@ -73,7 +73,7 @@ Les résultats des **courriers électroniques** affichent le nombre de copies in
     
 Les résultats des **pièces jointes** affichent le nombre de pièces jointes, en fonction de ce type comme uniques et des doublons. 
   
-![Doublons à proximité et Threads de messagerie](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![Doublons à proximité et Threads de messagerie](../media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>Voir aussi
 

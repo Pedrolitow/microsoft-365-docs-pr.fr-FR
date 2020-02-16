@@ -1,5 +1,5 @@
 ---
-title: Étiquettes de confidentialité dans les applications Office
+title: Utiliser des étiquettes de confidentialité dans les applications Office
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,23 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: bbdc2ed7407104298e36e214dc3e532cc305c94d
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+description: Découvrez comment les utilisateurs utilisent les étiquettes de sensibilité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
+ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855343"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069861"
 ---
-# <a name="sensitivity-labels-in-office-apps"></a>Étiquettes de confidentialité dans les applications Office
+# <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser des étiquettes de confidentialité dans les applications Office
 
-Cet article décrit les aspects suivants :
+Lorsque vous avez publié des étiquettes de confidentialité à partir du centre de conformité Microsoft 365 ou d’un centre d’étiquetage équivalent, ils commencent à apparaître dans les applications Office pour permettre aux utilisateurs de classer et de protéger les données lors de leur création ou modification.
 
-- Configuration requise pour votre environnement avant d’appliquer des étiquettes de confidentialité à des e-mails, des fichiers et des pièces jointes.
-- Les fonctionnalités d’étiquette de sensibilité sont prises en charge par chaque application Office.
-- Que se passe-t-il lorsque vous combinez les étiquettes de confidentialité avec d’autres technologies de sécurité et de conformité Microsoft qui fonctionnent avec les applications Office.
-- La manière dont les personnes de votre organisation peuvent utiliser des étiquettes de confidentialité lorsqu’elles utilisent les applications Office pour Windows et les applications Office pour le Web.
-- Ressources supplémentaires pour aider les personnes de votre organisation à commencer à utiliser des étiquettes de confidentialité.
+Utilisez les informations contenues dans cet article pour vous aider à gérer correctement les étiquettes de confidentialité dans les applications Office. Par exemple, les versions minimales des applications dont vous avez besoin pour prendre en charge l’étiquetage intégré, les interactions avec le client d’étiquetage unifié Azure information protection et la compatibilité avec d’autres applications et services.
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Exigences en matière d’abonnement et de gestion des licences pour les étiquettes de sensibilité
 
@@ -70,7 +66,7 @@ Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le
 |[Fournir un lien aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marquer le contenu](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Aperçu : déploiement vers [Office Insider](https://office.com/insider)            | Aperçu : déploiement vers [Office Insider](https://office.com/insider)        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
+|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Aperçu : dans [Office Insider](https://office.com/insider)            | Aperçu : dans [Office Insider](https://office.com/insider)        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : dans [Office Insider](https://office.com/insider)                                  | En cours de révision | En cours de révision | En cours de révision | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -93,7 +89,7 @@ Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : déploiement vers [Office Insider](https://office.com/insider)                       | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
 |
 
-## <a name="about-the-office-built-in-labeling-client"></a>À propos du client d’étiquetage Office intégré
+## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client d’étiquetage Office intégré et le client Azure information protection
 
 Le client d’étiquetage Office intégré télécharge les étiquettes de confidentialité et les paramètres de stratégie d’étiquette de confidentialité à partir des centres d’administration suivants :
 
@@ -127,21 +123,24 @@ Si vous devez convertir des modèles de protection existants en étiquettes, uti
 
 Les utilisateurs peuvent appliquer une seule étiquette à la fois pour chaque document ou courrier électronique.
 
-Lorsque vous étiquetez un message électronique comportant des pièces jointes, les pièces jointes n’héritent pas de l’étiquette. Si les pièces jointes ont une étiquette, elles conservent cette étiquette appliquée séparément. Si les pièces jointes n’ont pas d’étiquette, les pièces jointes restent sans étiquette. Toutefois, si l’étiquette de l’e-mail applique la protection, cette protection est appliquée aux pièces jointes Office.
+Lorsque vous étiquetez un message électronique comportant des pièces jointes, les pièces jointes n’héritent pas de l’étiquette :
+
+- Si les pièces jointes ont une étiquette, elles conservent cette étiquette appliquée séparément.
+- Si les pièces jointes n’ont pas d’étiquette, les pièces jointes restent sans étiquette. Toutefois, si l’étiquette de l’e-mail applique la protection, cette protection est appliquée aux pièces jointes Office.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilité des étiquettes de sensibilité
 
-**Avec des applications RMS**. Si vous ouvrez un document étiqueté _et chiffré_ ou un message électronique dans une [application RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) qui ne prend pas en charge les étiquettes de sensibilité, l’application applique toujours le chiffrement et la gestion des droits.
+**Avec des applications avec gestion des**droits relatifs à l’urgence : Si vous ouvrez un document étiqueté et chiffré ou un message électronique dans une application à l’aide de [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) qui ne prend pas en charge les étiquettes de sensibilité, l’application applique toujours le chiffrement et la gestion des droits.
 
-**Avec le client Azure information protection**. Vous pouvez afficher et modifier les étiquettes de confidentialité que vous appliquez aux documents et aux courriers électroniques avec le client d’étiquetage Office intégré avec le client Azure information protection, et inversement.
+**Avec le client Azure information protection**: vous pouvez afficher et modifier les étiquettes de confidentialité que vous appliquez aux documents et aux courriers électroniques avec le client d’étiquetage Office intégré à l’aide du client Azure information protection, et inversement.
 
-**Avec d’autres versions d’Office**. Tout utilisateur autorisé peut ouvrir des documents étiquetés et des courriers électroniques dans d’autres versions d’Office. Toutefois, vous pouvez uniquement afficher ou modifier l’étiquette dans les versions Office prises en charge ou dans le client Azure information protection. Les versions des applications Office prises en charge sont répertoriées dans les tableaux de cet article.
+**Avec d’autres versions d’Office**: tout utilisateur autorisé peut ouvrir des documents étiquetés et des courriers électroniques dans d’autres versions d’Office. Toutefois, vous pouvez uniquement afficher ou modifier l’étiquette dans les versions d’Office prises en charge ou à l’aide du client Azure information protection. Les versions des applications Office prises en charge sont répertoriées dans la [section précédente](#support-for-sensitivity-label-capabilities-in-apps).
 
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>Prise en charge des fichiers SharePoint et OneDrive protégés par les étiquettes de confidentialité
 
-Pour utiliser le client d’étiquetage Office intégré dans Office sur le Web, le document doit se trouver dans une instance OneDrive entreprise ou SharePoint Online qui a opté pour les [étiquettes activer la sensibilité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Pour utiliser le client d’étiquetage Office intégré avec Office sur le Web pour des documents dans OneDrive entreprise ou SharePoint Online, vérifiez que vous avez opté pour l’aperçu afin d' [activer les étiquettes de sensibilité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="when-office-365-applies-content-marking-and-encryption-to-content"></a>Lorsque Office 365 applique le marquage de contenu et le chiffrement au contenu
+## <a name="when-office-365-applies-content-marking-and-encryption"></a>Lorsque Office 365 applique le marquage de contenu et le chiffrement
 
 Office 365 applique le marquage de contenu et le chiffrement avec une étiquette de sensibilité différemment, en fonction de l’application que vous utilisez.
 
@@ -152,7 +151,7 @@ Office 365 applique le marquage de contenu et le chiffrement avec une étiquette
 | Outlook sur le web, iOS et Android | Après l’envoi du courrier électronique par Exchange Online | Après l’envoi du courrier électronique par Exchange Online |
 |
 
-## <a name="more-resources"></a>Autres ressources
+## <a name="end-user-documentation"></a>Documentation destinée aux utilisateurs finaux
 
 - [Appliquer des étiquettes de niveau de confidentialité à vos documents et vos e-mails dans Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 

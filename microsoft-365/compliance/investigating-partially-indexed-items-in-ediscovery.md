@@ -1,5 +1,7 @@
 ---
 title: Examen d’éléments partiellement indexés dans eDiscovery Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Les éléments partiellement indexés (également appelés éléments non indexés) sont des éléments de boîte aux lettres Exchange et des documents sur les sites SharePoint et OneDrive qui n’ont pas été complètement indexés pour la recherche de contenu. Dans cet article, vous pouvez découvrir pourquoi les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés, identifier les erreurs de recherche pour les éléments partiellement indexés et utiliser un script PowerShell pour déterminer l’exposition de votre organisation à l’e-mail partiellement indexé. sous.
-ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b67b7d5cfedd37315a9f8bc9027e03b820598846
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685917"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072343"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Examen d’éléments partiellement indexés dans eDiscovery Office 365
 
@@ -49,7 +51,7 @@ Une fois que vous avez exécuté une recherche de contenu dans le centre de séc
 
 Pour comprendre l’exposition de votre organisation à des éléments partiellement indexés, vous pouvez effectuer une recherche sur tout le contenu de toutes les boîtes aux lettres (à l’aide d’une requête de mot-clé vide). Dans l’exemple ci-dessous, il y a 56 208 (4 830 Mo) d’éléments entièrement indexés et 470 (316 Mo) partiellement indexés.
   
-![Exemple de statistiques de recherche affichant des éléments partiellement indexés](media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Exemple de statistiques de recherche affichant des éléments partiellement indexés](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
   
 Vous pouvez déterminer le pourcentage d’éléments partiellement indexés à l’aide des calculs suivants.
   
@@ -74,7 +76,7 @@ Par conséquent, dans l’exemple précédent, 6,54% de la taille totale des él
 
 Dans les cas où vous devez examiner partiellement des éléments pour vérifier qu’ils ne contiennent pas d’informations pertinentes, vous pouvez [exporter un rapport de recherche de contenu](export-a-content-search-report.md) qui contient des informations sur les éléments partiellement indexés. Lorsque vous exportez un rapport de recherche de contenu, veillez à choisir l’une des options d’exportation qui incluent des éléments partiellement indexés. 
   
-![Choisir la deuxième ou troisième option pour exporter des éléments partiellement indexés](media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Choisir la deuxième ou troisième option pour exporter des éléments partiellement indexés](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
 Lorsque vous exportez des résultats de recherche de contenu ou un rapport de recherche de contenu à l’aide de l’une de ces options, l’exportation inclut un rapport nommé éléments non indexés. csv. Ce rapport inclut la plupart des mêmes informations que le fichier ResultsLog. csv ; Toutefois, le fichier éléments non indexés. csv inclut également deux champs liés à des éléments partiellement indexés : les **balises d’erreur** et les **propriétés d’erreur**. Ces champs contiennent des informations sur l’erreur d’indexation pour chaque élément partiellement indexé. L’utilisation des informations de ces deux champs peut vous aider à déterminer si l’erreur d’indexation pour un impact particulier a une incidence sur votre enquête. Si c’est le cas, vous pouvez effectuer une recherche de contenu ciblé et extraire et exporter des messages électroniques spécifiques et des documents SharePoint ou OneDrive pour les examiner afin de déterminer s’ils sont pertinents pour votre enquête. Pour obtenir des instructions pas à pas, voir [Prepare a CSV file for a targeted content Search in Office 365](csv-file-for-an-id-list-content-search.md).
   
@@ -164,7 +166,7 @@ Les étapes suivantes montrent comment exécuter un script PowerShell qui recher
   
 ```
 
-2. [Connectez-vous à la sécurité & Centre de conformité PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
 3. Dans la sécurité & Centre de conformité PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape 1, puis exécutez le script. par exemple :
 
@@ -174,7 +176,7 @@ Les étapes suivantes montrent comment exécuter un script PowerShell qui recher
 
 Voici un exemple de la sortie renvoyée par le script.
   
-![Exemple de sortie d’un script qui génère un rapport sur l’exposition de votre organisation à des éléments de courrier électronique partiellement indexés](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Exemple de sortie d’un script qui génère un rapport sur l’exposition de votre organisation à des éléments de courrier électronique partiellement indexés](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
 Remarques :
   

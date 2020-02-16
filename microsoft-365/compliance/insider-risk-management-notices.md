@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b05eb190621dd0829c992cf5b47e8fbe8bcf99a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590625"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072804"
 ---
 # <a name="insider-risk-management-notice-templates-preview"></a>Modèles d’avis de gestion des risques initiés (aperçu)
 
@@ -29,7 +29,7 @@ Créer des modèles d’avis si vous souhaitez envoyer aux utilisateurs un avis 
 
 Le **tableau de bord des modèles d’avis** affiche une liste de modèles d’avis configurés et vous permet de créer des modèles d’avis. Les modèles d’avis sont répertoriés dans l’ordre de la date de contrepassation avec le modèle d’avis le plus récent répertorié en premier.
 
-![Tableau de bord des modèles d’avis de gestion des risques initiés](media/insider-risk-notices-dashboard.png)
+![Tableau de bord des modèles d’avis de gestion des risques initiés](../media/insider-risk-notices-dashboard.png)
 
 ## <a name="html-for-notices"></a>HTML pour les notifications
 

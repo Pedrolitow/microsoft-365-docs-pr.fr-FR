@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment utiliser l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & conformité pour supprimer des éléments de leur emplacement d’origine.
-ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0232a822af0427fcfa669fa1e86558ca54996202
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595319"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075842"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Supprimer des éléments de leur emplacement d’origine (aperçu)
 
@@ -52,22 +52,22 @@ Pour supprimer des éléments de leur emplacement d’origine, procédez comme s
  
 2. Cliquez sur **action** , puis sur **Supprimer les éléments des emplacements d’origine**.
 
-   ![Cliquez sur action, puis sur supprimer les éléments des emplacements d’origine](media/DataInvestigationsDeleteItems1.png)
+   ![Cliquez sur action, puis sur supprimer les éléments des emplacements d’origine](../media/DataInvestigationsDeleteItems1.png)
 
 3. Sur la page de menu volant, vérifiez le nombre d’éléments et les documents enfants associés qui seront supprimés, puis cliquez sur **supprimer**.
 
-   ![La page de menu volant affiche le nombre d’éléments et les documents joints sélectionnés pour suppression.](media/DataInvestigationsDeleteItems2.png)
+   ![La page de menu volant affiche le nombre d’éléments et les documents joints sélectionnés pour suppression.](../media/DataInvestigationsDeleteItems2.png)
 
    > [!NOTE]
    > Dans la capture d’écran précédente, le nombre d’éléments indique le nombre d’éléments sélectionnés pour la suppression. Le nombre de documents indique le nombre total d’éléments, y compris les fichiers joints à un élément parent. Par exemple, si vous sélectionnez un message électronique et que celui-ci contient un document Word joint, le nombre d’éléments et de documents affichés sous **documents sélectionnés seulement** est **1 élément (2 documents)**.
 
 Vous pouvez suivre la progression de la tâche **Supprimer les éléments à partir des emplacements d’origine** dans l’onglet **travaux** . cliquez sur le travail pour afficher la page de menu volant.
 
-![Page de menu volant pour supprimer des éléments du travail d’origine](media/DataInvestigationsDeleteItems3.png)
+![Page de menu volant pour supprimer des éléments du travail d’origine](../media/DataInvestigationsDeleteItems3.png)
 
 Lorsque les éléments de la tâche sont supprimés, le statut du travail est défini sur **réussi**. L’heure et la date du travail terminé sont également affichées.
 
-![Tâche de suppression des éléments terminée](media/DataInvestigationsDeleteItems4.png)
+![Tâche de suppression des éléments terminée](../media/DataInvestigationsDeleteItems4.png)
 
 > [!NOTE]
 > Il se peut que vous receviez un état de **réussite partielle** pour le travail **supprimer des éléments de l’emplacement d’origine** . Il existe un certain nombre de situations qui entraînent cet état de travail. Pour plus d’informations, reportez-vous à la section [suppressions partiellement terminées](#partially-successful-deletions) de cet article.

@@ -20,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise. Les administrateurs peuvent désormais utiliser l’audit de partage dans le journal d’audit Office 365 pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation. '
-ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597281"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069235"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Audit de partage pour trouver les ressources partagées avec des utilisateurs externes
 
@@ -99,13 +99,13 @@ La première étape consiste à rechercher dans le journal d’audit Office 365 
     
 2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
     
-3. Dans le volet gauche du centre de sécurité & conformité **, cliquez sur**  > Rechercher dans le**Journal d’audit**.
+3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherche**  > **Recherche dans le journal d’audit**.
     
     La page **Recherche dans le journal d’audit** s’affiche. 
     
 4. Sous **activités**, cliquez sur **activités de partage et d’accès aux requêtes** pour rechercher des événements associés au partage. 
     
-    ![Sous activités, sélectionnez activités de partage et d’accès aux demandes.](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![Sous activités, sélectionnez activités de partage et d’accès aux demandes.](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Sélectionnez une date et une plage horaire pour rechercher les événements de partage qui se sont produits au cours de cette période. 
     

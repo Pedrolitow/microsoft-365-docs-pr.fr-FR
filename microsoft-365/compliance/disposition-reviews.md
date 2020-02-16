@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Microsoft 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
-ms.openlocfilehash: d308dcc58bbacf118374bbabdebf27c35ad2d73a
-ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
+ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836714"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075386"
 ---
 # <a name="overview-of-disposition-reviews"></a>Vue d’ensemble des révisions de destruction
 
@@ -56,20 +56,20 @@ Lorsque vous créez une étiquette de rétention dans le centre de conformité M
   
 Une révision de disposition peut inclure du contenu dans des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et des groupes Office 365. Le contenu en attente d’une révision de disposition dans ces emplacements est supprimé uniquement lorsqu’un relecteur choisit de supprimer définitivement le contenu.
   
-![Page des dispositions dans le centre de sécurité et conformité](media/Retention-Dispositions-v2-page.png)
+![Page des dispositions dans le centre de sécurité et conformité](../media/Retention-Dispositions-v2-page.png)
 
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Configuration de la révision de la disposition en créant une étiquette de rétention
 
 Il s’agit du flux de travail de base pour la configuration d’une révision de la disposition. Notez que ce flux affiche une étiquette de rétention publiée, puis appliquée manuellement par un utilisateur ; une étiquette de rétention déclenchant une révision de disposition peut également être appliquée automatiquement au contenu.
   
-![Graphique illustrant le flux de fonctionnement de la disposition](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Graphique illustrant le flux de fonctionnement de la disposition](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
 Une révision de disposition est une option lorsque vous créez une étiquette de rétention dans Office 365. Cette option n’est pas disponible dans une stratégie de rétention, mais uniquement dans une étiquette de rétention configurée pour conserver le contenu.
   
 Pour plus d’informations sur les étiquettes de rétention, voir [vue d’ensemble des étiquettes de rétention](labels.md).
   
-![Paramètres de rétention d’une étiquette](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+![Paramètres de rétention d’une étiquette](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
 > Lorsque vous spécifiez l’option **informer ces personnes lorsque des éléments sont prêts à être examinés**, spécifiez un utilisateur. Les groupes Office 365 ne sont pas pris en charge pour cette option.
@@ -80,7 +80,7 @@ Lorsqu’un réviseur est averti par courrier électronique que le contenu est p
 
 Une fois que vous avez sélectionné une étiquette de rétention, la page suivante affiche toutes les impositions en attente pour cette étiquette.
 
-![Options de disposition](media/Retention-Disposition-options-v2.png)
+![Options de disposition](../media/Retention-Disposition-options-v2.png)
 
 Le réviseur peut ensuite : 
   
@@ -128,18 +128,18 @@ Sur la page **destruction en attente** , vous pouvez afficher les impositions en
     
 - L’onglet **éléments** supprimés affiche les éléments supprimés définitivement qui ont déjà été vérifiés. Ils s’affichent dans la mesure où le processus de suppression permanente peut prendre plusieurs jours, comme indiqué dans la section ci-dessus. Les éléments auxquels une étiquette de rétention différente a été appliquée ou dont la période de rétention a été étendue dans le cadre d’une révision ne s’affichent pas ici.
 
-![Onglets de disposition](media/Retention-Disposition-tabs.png)
+![Onglets de disposition](../media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>Filtrer les vues de disposition
 
 Vous pouvez filtrer ces affichages par étiquette de rétention ou plage horaire. Pour les impositions en attente, la plage horaire est basée sur la date d’expiration. Pour les éléments supprimés, la plage horaire est basée sur la date de suppression.
   
-![Options de filtre de disposition](media/Retention-filter-options.png)
+![Options de filtre de disposition](../media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>Exportation des éléments de disposition
 
 En outre, vous pouvez exporter les éléments de l’affichage en tant que fichier. csv que vous pouvez ouvrir dans Excel.
   
-![Données de disposition exportées dans Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Données de disposition exportées dans Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

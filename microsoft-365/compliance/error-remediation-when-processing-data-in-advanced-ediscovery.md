@@ -1,5 +1,7 @@
 ---
 title: Correction d’erreur lors du traitement des données
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 66c515ff083d8b71a9ec4851986639063858514d
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 5421ba811e401bdd191aee0ddbff21a1286dc9fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38685694"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074571"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 
@@ -34,7 +36,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 1. Sous l’onglet **traitement** dans le cas avancé eDiscovery, sélectionnez **Erreurs** dans le menu déroulant **affichage** , puis sélectionnez un jeu de révision ou l’ensemble de la casse dans le menu déroulant **étendue** . Cette section affiche toutes les erreurs provenant du cas ou de l’erreur d’un jeu de réexamen spécifique.
 
-   ![Correction des erreurs](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+   ![Correction des erreurs](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
 2. Sélectionnez les erreurs que vous souhaitez corriger en cliquant sur la case d’option en regard du type d’erreur ou du type de fichier.  Dans l’exemple suivant, nous effectuons la correction d’un fichier protégé par mot de passe.
 
@@ -42,11 +44,11 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     Le flux de travail de correction d’erreur commence par une phase de préparation où les fichiers contenant des erreurs sont copiés vers un emplacement de stockage Azure fourni par Microsoft afin que vous puissiez les télécharger sur votre ordinateur local pour résoudre les problèmes.
 
-    ![Préparation de la correction des erreurs](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Préparation de la correction des erreurs](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. Une fois la préparation terminée, cliquez sur **suivant : Télécharger les fichiers** pour continuer le téléchargement.
 
-    ![Télécharger des fichiers](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Télécharger des fichiers](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. Pour télécharger des fichiers, spécifiez le **chemin de destination pour le téléchargement**. Il s’agit d’un chemin d’accès au dossier parent sur votre ordinateur local où le fichier sera téléchargé.  Le chemin d’accès par défaut,%USERPROFILE%\Downloads\errors, pointe vers le dossier downloads de l’utilisateur connecté. Vous pouvez modifier ce chemin si vous le souhaitez. Si vous le modifiez, nous vous recommandons d’utiliser un chemin d’accès local pour obtenir les meilleures performances. N’utilisez pas de chemin d’accès réseau distant. Par exemple, vous pouvez utiliser le chemin d’accès **C:\Remediation**. 
 
@@ -54,7 +56,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 6. Copiez la commande prédéfinie en cliquant sur **copier dans le presse-papiers**. Ouvrez une invite de commandes Windows, collez la commande AzCopy, puis appuyez sur **entrée**.  
 
-    ![Préparer la correction des erreurs](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![Préparer la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
 
     > [!NOTE]
     > Vous devez utiliser AzCopy v 8.1 pour utiliser la commande fournie sur la page Télécharger les **fichiers** . Vous devez également utiliser AzCopy v 8.1 pour télécharger les fichiers à l’étape 10. Pour installer cette version de AzCopy, consultez [la rubrique transférer des données avec le AzCopy v 8.1 sous Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Si la commande AzCopy fournie échoue, reportez-vous à la rubrique [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -82,7 +84,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 8. Revenez à Advanced eDiscovery et à l’Assistant de correction des erreurs, puis cliquez sur **suivant : charger les fichiers**.  Cette action passe à la page suivante, dans laquelle vous pouvez à présent télécharger les fichiers.
 
-    ![Charger des fichiers](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Charger des fichiers](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Spécifiez le dossier parent dans lequel se trouvent les fichiers corrigés dans la zone **de texte chemin d’accès à l’emplacement des fichiers** . Une fois encore, le dossier parent doit avoir la même structure de sous-dossiers que celle qui a été créée lorsque vous avez téléchargé les fichiers.
 
@@ -90,7 +92,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 10. Copiez la commande prédéfinie en cliquant sur **copier dans le presse-papiers**. Ouvrez une invite de commandes Windows, collez la commande AzCopy, puis appuyez sur **entrée**. Téléchargez les fichiers.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Après avoir exécuté la commande AzCopy, cliquez sur **suivant : process files**.
 

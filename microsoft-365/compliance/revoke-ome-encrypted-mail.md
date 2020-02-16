@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: En tant qu’administrateur Office 365, vous pouvez révoquer certains courriers électroniques chiffrés avec Office 365 Advanced message Encryption.
-ms.openlocfilehash: 9d694c200df161c0a52884ded14d29908376a9b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cbe0704d6e84282d71c37c72a45712c30f3ac61
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597601"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070034"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Révoquer les e-mails chiffrés par le chiffrement de messages Office 365
 
@@ -41,7 +41,7 @@ Si un destinataire reçoit une expérience basée sur la liaison ou si une expé
 
 Une fois qu’un e-mail a été révoqué, le destinataire reçoit une erreur lorsqu’il accède au courrier électronique chiffré via le portail de chiffrement des messages Office 365 : « le message a été révoqué par l’expéditeur ».
 
-![Capture d’écran illustrant un message électronique chiffré révoqué.](media/revoked-encrypted-email.png)
+![Capture d’écran illustrant un message électronique chiffré révoqué.](../media/revoked-encrypted-email.png)
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>Procédure de révocation d’un message électronique chiffré
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle outil d’évaluation des données (aperçu) de Microsoft 365.
-ms.openlocfilehash: cd60b16f6d0f968c0c87f3e44ee2f643c90ebb10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597791"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071075"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Vue d’ensemble des enquêtes de données (aperçu) dans Microsoft 365
 
@@ -37,7 +37,7 @@ Pour accéder à une enquête de données et effectuer une enquête, vous devez 
 
 Les sections suivantes décrivent chaque étape du flux de travail intégré dans les enquêtes de données (aperçu). La capture d’écran ci-dessous illustre l’onglet **Accueil** d’une enquête nommée *risque élevé : fuite de documents financiers*. 
 
-![Flux de travail dans l’outil d’enquêtes des données](media/DataInvestigationsWorkflow.png)
+![Flux de travail dans l’outil d’enquêtes des données](../media/DataInvestigationsWorkflow.png)
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Rechercher des données sensibles, malveillantes ou égarées
 

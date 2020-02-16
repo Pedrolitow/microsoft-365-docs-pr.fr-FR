@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil de recherche de contenu dans le centre de sécurité & conformité pour rechercher et exporter des données de conversation MicrosoftTeams (appelées conversations 1xN) pour les utilisateurs locaux dans un déploiement hybride Exchange.
-ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 40439c338e00e7ae94ff82ec4be1af78a250acd6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957139"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070009"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Recherche de boîtes aux lettres en nuage pour les utilisateurs locaux dans Office 365
 
@@ -47,7 +47,7 @@ Si un utilisateur à extension de Microsoft teams dispose d’une boîte aux let
   
 Le graphique suivant illustre le flux de travail de la façon dont les données de conversation de teams pour les utilisateurs locaux sont disponibles pour la recherche, l’aperçu et l’exportation.
   
-![Stockage informatique pour les utilisateurs locaux de Microsoft teams](media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Stockage informatique pour les utilisateurs locaux de Microsoft teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
 En plus de cette nouvelle fonctionnalité, vous pouvez toujours utiliser la recherche de contenu pour rechercher, prévisualiser et exporter du contenu de teams dans le site SharePoint en nuage et la boîte aux lettres Exchange associée à chaque équipe Microsoft Team et 1xN teams données de conversation dans la boîte aux lettres Exchange Online pour utilisateurs en nuage.
 
@@ -71,7 +71,7 @@ Une fois que cette fonctionnalité est déployée dans votre organisation Office
   
 - La case à cocher **Ajouter le contenu de l’application Office pour les utilisateurs locaux** est ajoutée sous l' **emplacement** de la recherche de contenu. 
     
-    ![La case à cocher « Ajouter le contenu d’une application Office pour les utilisateurs locaux » est ajoutée à l’interface utilisateur de recherche de contenu](media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![La case à cocher « Ajouter le contenu d’une application Office pour les utilisateurs locaux » est ajoutée à l’interface utilisateur de recherche de contenu](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
 - Les utilisateurs locaux sont affichés dans le sélecteur d’emplacements de contenu, qui vous permet de sélectionner des boîtes aux lettres utilisateur à rechercher. 
 
@@ -81,7 +81,7 @@ Une fois que la fonctionnalité est activée, vous pouvez utiliser la recherche 
   
 1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu** de **recherche** \>
     
-2. Sur la page **recherche** , cliquez ![sur Ajouter](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) une icône **nouvelle recherche**.
+2. Sur la page **recherche** , cliquez ![sur Ajouter](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) une icône **nouvelle recherche**.
     
     Comme expliqué précédemment, la case à cocher **Ajouter le contenu de l’application Office pour les utilisateurs locaux** s’affiche sous **emplacements**. Elle est sélectionnée par défaut.
     

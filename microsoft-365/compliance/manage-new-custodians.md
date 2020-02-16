@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6776571f4abafaf8e050fa6c31311df452d90e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Gérer les dépositaires dans un cas avancé eDiscovery.
+ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582913"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071603"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestion des dépositaires dans un cas avancé eDiscovery
 
 L’onglet dépositaires dans Advanced eDiscovery contient la liste de tous les dépositaires qui ont été ajoutés à l’incident. Une fois que vous avez ajouté des dépositaires à un cas, les détails de chaque dépositaire sont automatiquement collectés à partir d’Azure Active Directory et peuvent être consultés dans Advanced eDiscovery.
 
-![Gestion des dépositaires](media/CustodianDetails.PNG)
+![Gestion des dépositaires](../media/CustodianDetails.PNG)
 
 ## <a name="view-custodian-details"></a>Afficher les détails du dépositaire
 
@@ -37,7 +37,7 @@ Pour afficher les détails relatifs à un dépositaire, cliquez sur celui-ci dan
 
   - **Nom d’affichage** : nom affiché dans le carnet d’adresses pour le dépositaire. Il s’agit généralement de la combinaison du prénom du dépositaire, de l’initiale du deuxième prénom et du nom de famille.
   
-   - **Mail/SMTP** : adresse SMTP principale pour le dépositaire, par exemple, brianj@contoso.onmicrosoft.com. Notez que le nom d’utilisateur principal (UPN) du dépositaire est également indiqué.
+   - **Mail/SMTP** : adresse SMTP principale pour le dépositaire, par exemple, brianj@contoso.onmicrosoft.com. Le nom d’utilisateur principal (UPN) du dépositaire est également mentionné.
 
   - **Title** -fonction du dépositaire.
 
@@ -82,7 +82,7 @@ Pour mettre à jour les sources de données associées à un dépositaire, proc�
   
 3. Sélectionnez un dépositaire dans la liste, puis cliquez sur **modifier** sur la page de menu volant.
 
-    ![Modifier des sources de données](media/EditCustodianDataSource.PNG)
+    ![Modifier des sources de données](../media/EditCustodianDataSource.PNG)
   
 4. Cliquez sur l’onglet **choisir les sources de données** pour modifier les paramètres de la boîte aux lettres Exchange du dépositaire et du compte OneDrive, puis cliquez sur choisir les sources de **données**.
   
@@ -92,11 +92,11 @@ Pour mettre à jour les sources de données associées à un dépositaire, proc�
   
 6. Cliquez sur **placer des conservations privatives** pour activer ou désactiver la conservation pour le dépositaire.
 
-## <a name="resolve-custodian-processing-errors"></a>Résoudre les erreurs de traitement des dépositaires
+## <a name="re-index-custodian-data"></a>Réindexer les données du dépositaire
 
 Dans la plupart des flux de travail eDiscovery pour les enquêtes juridiques, un sous-ensemble des données d’un dépositaire est recherché une fois que le dépositaire est ajouté à un cas juridique. En raison de la taille des fichiers très volumineux ou d’une éventuelle altération des données, certains éléments des sources de données associées à un dépositaire peuvent être partiellement indexés. À l’aide de la fonctionnalité d' [indexation avancée](indexing-custodian-data.md) dans la découverte électronique avancée, la plupart des éléments indexés partiellement peuvent être automatiquement corrigés en réindexant ces éléments à la demande.
 
-Lorsqu’un dépositaire est ajouté à un cas, les données situées dans les sources de données associées au dépositaire sont automatiquement réindexées (par le processus d’indexation avancé). Cela signifie que vous pouvez laisser les données sur place au lieu de devoir les télécharger et les corriger, puis les Rechercher hors connexion). Toutefois, pendant le cycle de vie d’un cas juridique, de nouvelles sources de données peuvent être associées à un dépositaire. Dans ce cas, vous réindexez les données du dépositaire en réexécutant le processus d’indexation avancé afin de corriger les éléments partiellement indexés et de mettre à jour l’index des données du dépositaire.
+Lorsqu’un dépositaire est ajouté à un cas, les données situées dans les sources de données associées au dépositaire sont automatiquement réindexées (par le processus d’indexation avancé). Cela signifie que vous pouvez laisser les données sur place au lieu de devoir les télécharger et les corriger, puis les Rechercher hors connexion). Toutefois, pendant le cycle de vie d’un cas juridique, de nouvelles sources de données peuvent être associées à un dépositaire. Dans ce cas, vous pouvez réindexer les données du dépositaire en réexécutant le processus d’indexation avancé afin de corriger les éléments partiellement indexés et de mettre à jour l’index des données du dépositaire.
 
 Pour déclencher le processus de réindexation afin d’adresser des éléments partiellement indexés :
 
@@ -136,7 +136,7 @@ Pour libérer un dépositaire :
 
 5. Cliquez sur **Oui** pour confirmer le lancement du dépositaire. 
 
-    Notez que l’état de cet utilisateur dans l’onglet **dépositaires** est défini sur **Released** et que le **statut de blocage** sur la page flyout est modifié sur **false**. 
+    L’état de cet utilisateur sous l’onglet **dépositaires** est défini sur **relâché** et le **statut de blocage** sur la page flyout est modifié sur **false**. 
 
 > [!NOTE]
 > Un dépositaire peut être impliqué simultanément dans plusieurs cas juridiques. Lorsqu’un dépositaire est émis à partir d’un cas, les conservations et notifications dans les autres matières ne seront pas affectées.
@@ -145,4 +145,4 @@ Pour libérer un dépositaire :
 
 Vous pouvez utiliser l’éditeur en bloc pour modifier plusieurs dépositaires en même temps. Pour ce faire, sélectionnez au moins deux dépositaires dans l’onglet **dépositaires** pour afficher l’éditeur en bloc, puis cliquez sur l’une des tâches.
 
-![Page volante permettant de modifier les paramètres de plusieurs dépositaires](media/AeDBulkEditCustodians.png)
+![Page volante permettant de modifier les paramètres de plusieurs dépositaires](../media/AeDBulkEditCustodians.png)

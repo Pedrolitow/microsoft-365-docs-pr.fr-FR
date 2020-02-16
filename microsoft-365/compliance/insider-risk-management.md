@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0da96fe4148ffc30ac8e2f7854157675786cd321
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582873"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072737"
 ---
 # <a name="insider-risk-management-in-microsoft-365-preview"></a>Gestion des risques internes dans Microsoft 365 (version d’évaluation)
 
@@ -56,7 +56,7 @@ La gestion des risques initiés vous permet d’identifier, d’analyser et de p
 
 L’identification et la résolution des problèmes liés aux activités de gestion des risques internes et à la conformité avec la gestion des risques initiés dans Microsoft 365 utilisent le flux de travail suivant :
 
-![Flux de travail de gestion des risques Insiders](media/insider-risk-workflow.png)
+![Flux de travail de gestion des risques Insiders](../media/insider-risk-workflow.png)
 
 ### <a name="policies"></a>Stratégies
 
@@ -70,7 +70,7 @@ Vous pouvez sélectionner l’un des [modèles de stratégie](insider-risk-manag
 
 Pour plus d’informations, consultez la rubrique [stratégies de gestion des risques internes](insider-risk-management-policies.md).
 
-![Tableau de bord des stratégies de gestion des risques internes](media/insider-risk-policy-dashboard.png)
+![Tableau de bord des stratégies de gestion des risques internes](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>Alertes
 
@@ -84,7 +84,7 @@ Les alertes sont automatiquement générées par des indicateurs de risque qui c
 
 Pour plus d’informations, consultez la rubrique [alertes de gestion des risques internes](insider-risk-management-alerts.md).
 
-![Tableau de bord d’alerte de gestion des risques Insiders](media/insider-risk-alerts-dashboard.png)
+![Tableau de bord d’alerte de gestion des risques Insiders](../media/insider-risk-alerts-dashboard.png)
 
 ### <a name="triage"></a>Tri
 
@@ -92,7 +92,7 @@ Les nouvelles activités qui nécessitent une enquête génèrent automatiquemen
 
 Les alertes sont résolues en ouvrant une nouvelle demande de devis, en affectant l’alerte à un incident existant ou en le rejetant. À l’aide de filtres d’alerte, il est facile d’identifier rapidement les alertes en fonction de l’État, de la gravité ou du temps détecté. Dans le cadre du processus de triage, les relecteurs peuvent afficher les détails de l’alerte pour la correspondance de stratégie, afficher l’activité utilisateur associée à la correspondance, voir la gravité de l’alerte et vérifier les informations de profil utilisateur.
 
-![Triage de la gestion des risques initiés](media/insider-risk-triage.png)
+![Triage de la gestion des risques initiés](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>Pench
 
@@ -106,7 +106,7 @@ La sélection d’un cas dans le tableau de bord de cas ouvre le cas à des fins
 
 Pour plus d’informations, consultez la rubrique [cas de gestion des risques internes](insider-risk-management-cases.md).
 
-![Enquête sur la gestion des risques des Insiders](media/insider-risk-investigate.png)
+![Enquête sur la gestion des risques des Insiders](../media/insider-risk-investigate.png)
 
 ### <a name="action"></a>Action
 

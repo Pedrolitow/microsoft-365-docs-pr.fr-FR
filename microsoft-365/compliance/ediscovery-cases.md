@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le centre de sécurité & conformité pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l’incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse plus approfondie dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 6cc0cb0a709463be0e624162555dd221564b4dd3
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 7ae834e7f93c381cf6d386131e3a5c671e2bc529
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862104"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075033"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 
@@ -91,11 +91,11 @@ Pour plus d’informations sur les autorisations de découverte électronique, c
     
 3. Dans le centre de sécurité & conformité, cliquez sur **autorisations**, puis effectuez l’une des opérations suivantes en fonction des autorisations de découverte électronique que vous souhaitez attribuer.
     
-    - Pour attribuer des autorisations de relecteur, sélectionnez le groupe de rôles **réviseur** , puis en regard de **membres**, cliquez sur **modifier**. Cliquez sur **choisir les membres**, sur **modifier**, ![sur](media/ITPro-EAC-AddIcon.gif) ajouter une icône **Ajouter**, sélectionnez l’utilisateur que vous souhaitez ajouter au groupe de rôles réviseur, puis cliquez sur **Ajouter**.
+    - Pour attribuer des autorisations de relecteur, sélectionnez le groupe de rôles **réviseur** , puis en regard de **membres**, cliquez sur **modifier**. Cliquez sur **choisir les membres**, sur **modifier**, ![sur](../media/ITPro-EAC-AddIcon.gif) ajouter une icône **Ajouter**, sélectionnez l’utilisateur que vous souhaitez ajouter au groupe de rôles réviseur, puis cliquez sur **Ajouter**.
     
-    - Pour attribuer des autorisations de gestionnaire eDiscovery, sélectionnez le groupe de rôles **Gestionnaire de découverte électronique** , puis en regard de **Gestionnaire eDiscovery**, cliquez sur **modifier**. Cliquez sur **choisir le gestionnaire eDiscovery**, sur **modifier**, sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) * * ajouter * *, sélectionnez l’utilisateur que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis cliquez sur **Ajouter**.
+    - Pour attribuer des autorisations de gestionnaire eDiscovery, sélectionnez le groupe de rôles **Gestionnaire de découverte électronique** , puis en regard de **Gestionnaire eDiscovery**, cliquez sur **modifier**. Cliquez sur **choisir le gestionnaire eDiscovery**, sur **modifier**, sur ![ajouter une icône](../media/ITPro-EAC-AddIcon.gif) * * ajouter * *, sélectionnez l’utilisateur que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis cliquez sur **Ajouter**.
     
-    - Pour attribuer des autorisations d’administrateur eDiscovery, sélectionnez le groupe de rôles **Gestionnaire de découverte** électronique, puis en regard de **administrateur de découverte électronique**, cliquez sur **modifier**. Cliquez sur **choisir un administrateur de découverte électronique**, ![cliquez sur](media/ITPro-EAC-AddIcon.gif) **modifier**, cliquez sur Ajouter une icône **Ajouter**, sélectionnez l’utilisateur que vous souhaitez ajouter en tant qu’administrateur de découverte électronique, puis cliquez sur **Ajouter**.
+    - Pour attribuer des autorisations d’administrateur eDiscovery, sélectionnez le groupe de rôles **Gestionnaire de découverte** électronique, puis en regard de **administrateur de découverte électronique**, cliquez sur **modifier**. Cliquez sur **choisir un administrateur de découverte électronique**, ![cliquez sur](../media/ITPro-EAC-AddIcon.gif) **modifier**, cliquez sur Ajouter une icône **Ajouter**, sélectionnez l’utilisateur que vous souhaitez ajouter en tant qu’administrateur de découverte électronique, puis cliquez sur **Ajouter**.
     
 4. Une fois que vous avez ajouté tous les utilisateurs, cliquez sur **Terminer**, sur **Enregistrer** pour enregistrer les modifications apportées au groupe de rôles, puis cliquez sur **Fermer**.
 
@@ -107,11 +107,11 @@ L’étape suivante consiste à créer un cas de découverte électronique. Vous
     
 2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
     
-3. Dans le centre de sécurité & conformité, cliquez **sur découverte électronique** **eDiscovery** \> , ![puis sur](media/ITPro-EAC-AddIcon.gif) ajouter une icône pour **créer un cas**.
+3. Dans le centre de sécurité & conformité, cliquez **sur découverte électronique** **eDiscovery** \> , ![puis sur](../media/ITPro-EAC-AddIcon.gif) ajouter une icône pour **créer un cas**.
     
 4. Sur la page **New case** , attribuez un nom à la demande, tapez une description facultative, puis cliquez sur **Enregistrer**. Le nom du cas doit être unique dans votre organisation.
     
-    ![Créer un cas](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
+    ![Créer un cas](../media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
   
     Le nouvel incident est affiché dans la liste des incidents de la page de **découverte électronique** . Vous pouvez pointer le curseur sur un nom de cas pour afficher des informations sur le cas, notamment l’état de la demande de devis (**actif** ou **fermé**), la description de la demande de devis (créée à l’étape précédente), ainsi que la date et l’auteur de la dernière modification du cas.
     
@@ -128,11 +128,11 @@ Une fois que vous avez créé un cas, l’étape suivante consiste à ajouter de
     
     La page flyout **gérer ce cas** s’affiche. 
     
-    ![Gérer une page de menu volant case](media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
+    ![Gérer une page de menu volant case](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
-3. Sous **gérer les membres**, ![cliquez sur](media/ITPro-EAC-AddIcon.gif) ajouter une icône **Ajouter** pour ajouter des membres à la demande de devis. 
+3. Sous **gérer les membres**, ![cliquez sur](../media/ITPro-EAC-AddIcon.gif) ajouter une icône **Ajouter** pour ajouter des membres à la demande de devis. 
     
-    Vous pouvez également choisir d’ajouter un groupe de rôles à la demande de devis. Sous **gérer les groupes**de rôles ![, cliquez](media/ITPro-EAC-AddIcon.gif) sur Ajouter une icône **Ajouter**.
+    Vous pouvez également choisir d’ajouter un groupe de rôles à la demande de devis. Sous **gérer les groupes**de rôles ![, cliquez](../media/ITPro-EAC-AddIcon.gif) sur Ajouter une icône **Ajouter**.
     
     > [!NOTE]
     > Les groupes de rôles contrôlent les personnes qui peuvent assigner des membres à un cas eDiscovery. Cela signifie que vous pouvez uniquement affecter les groupes de rôles dont vous êtes membre à un cas.
@@ -172,13 +172,13 @@ Pour créer une suspension pour un cas eDiscovery :
     
 3. Sur la page d' **Accueil** de l’incident, cliquez sur l’onglet **blocage** . 
     
-    ![Cliquez sur l’onglet blocage](media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
+    ![Cliquez sur l’onglet blocage](../media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
   
-4. Sur la page **suspension** , cliquez ![sur Ajouter](media/ITPro-EAC-AddIcon.gif) une icône **créer**.
+4. Sur la page **suspension** , cliquez ![sur Ajouter](../media/ITPro-EAC-AddIcon.gif) une icône **créer**.
     
 5. Sur la page **nommer votre suspension** , donnez un nom. Le nom de la conservation doit être unique dans toute votre organisation. 
     
-    ![Donnez un nom unique à votre conservation](media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
+    ![Donnez un nom unique à votre conservation](../media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
   
 6. Module Dans la zone **Description** , ajoutez une description de la conservation. 
     
@@ -186,7 +186,7 @@ Pour créer une suspension pour un cas eDiscovery :
     
 8. Choisissez les emplacements de contenu que vous souhaitez mettre en attente. Vous pouvez placer les boîtes aux lettres, les sites et les dossiers publics en conservation.
     
-    ![Choisissez les emplacements de contenu à mettre sous conservation](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
+    ![Choisissez les emplacements de contenu à mettre sous conservation](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
    a. **Courrier Exchange** -cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez sur **choisir les utilisateurs, les groupes ou les équipes** . pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour mettre en attente les boîtes aux lettres des membres du groupe) à mettre en attente. Vous pouvez également placer une conservation sur la boîte aux lettres associée pour une équipe Microsoft, un groupe Yammer ou un groupe Office 365. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
     
@@ -200,18 +200,18 @@ Pour créer une suspension pour un cas eDiscovery :
     > [!NOTE]
     > Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son compte OneDrive est également modifiée de façon à intégrer le nouvel UPN. Dans ce cas, vous devez modifier la conservation en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne. 
   
-   c. **Dossiers publics Exchange.** Déplacez le ![contrôle](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) bascule bascule vers la position **tout** pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
+   c. **Dossiers publics Exchange.** Déplacez le ![contrôle](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) bascule bascule vers la position **tout** pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
     
 9. Lorsque vous avez terminé d’ajouter des emplacements de contenu au blocage, cliquez sur **suivant**.
     
 10. Pour créer une conservation basée sur une requête avec des conditions, procédez comme suit. Dans le cas contraire, cliquez sur **suivant** .
     
-    ![Créer une conservation basée sur une requête avec des conditions](media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
+    ![Créer une conservation basée sur une requête avec des conditions](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
     
        a. Dans la zone sous **Mots clés**, tapez une requête de recherche dans le champ de sorte que seul le contenu qui répond aux critères de recherche est placé en conservation. Vous pouvez spécifier des mots clés, des propriétés de message ou des propriétés de document, telles que des noms de fichiers. Vous pouvez également utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**ou **not**. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera placé en conservation.
     
-    b. Cliquez ![sur icône](media/ITPro-EAC-AddIcon.gif) ajouter des **conditions** pour ajouter une ou plusieurs conditions afin d’affiner la requête de recherche pour la suspension. Chaque condition ajoute une clause à la requête de recherche KQL créée et exécutée lors de la création de la suspension. Par exemple, vous pouvez spécifier une plage de dates pour que les documents de courrier ou de site créés dans la plage de dates soient suspendus. Une condition est connectée à la requête de mot-clé (spécifiée dans la zone de mot-clé) sur le plan logique par l’opérateur **AND**. Cela signifie que les éléments doivent satisfaire à la fois la requête de mot clé et la condition à mettre en attente.
+    b. Cliquez ![sur icône](../media/ITPro-EAC-AddIcon.gif) ajouter des **conditions** pour ajouter une ou plusieurs conditions afin d’affiner la requête de recherche pour la suspension. Chaque condition ajoute une clause à la requête de recherche KQL créée et exécutée lors de la création de la suspension. Par exemple, vous pouvez spécifier une plage de dates pour que les documents de courrier ou de site créés dans la plage de dates soient suspendus. Une condition est connectée à la requête de mot-clé (spécifiée dans la zone de mot-clé) sur le plan logique par l’opérateur **AND**. Cela signifie que les éléments doivent satisfaire à la fois la requête de mot clé et la condition à mettre en attente.
 
     Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
     
@@ -223,7 +223,7 @@ Pour créer une suspension pour un cas eDiscovery :
 
 Après un certain temps, des informations sur la nouvelle conservation s’affichent dans le volet d’informations de la page **suspensions** de la suspension sélectionnée. Ces informations incluent le nombre de boîtes aux lettres et de sites en conservation, ainsi que des statistiques sur le contenu qui a été placé en conservation, telles que le nombre total et la taille des éléments mis en attente et la dernière fois que les statistiques de conservation ont été calculées. Ces statistiques de suspension vous aident à identifier la proportion de contenu liée au cas eDiscovery. 
   
-![Statistiques de conservation](media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
+![Statistiques de conservation](../media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
   
 Gardez les points suivants à l’esprit concernant les statistiques de conservation :
   
@@ -231,7 +231,7 @@ Gardez les points suivants à l’esprit concernant les statistiques de conserva
     
 - Le nombre d’éléments en attente inclut également les éléments non indexés trouvés dans les emplacements de contenu. Si vous créez une conservation basée sur une requête, tous les éléments non indexés des emplacements de contenu sont placés en conservation. Cela inclut les éléments non indexés qui ne correspondent pas aux critères de recherche d’une conservation basée sur une requête et les éléments non indexés qui peuvent se situer en dehors d’une condition de plage de dates. Cette opération est différente de ce qui se passe lorsque vous exécutez une recherche de contenu, dans laquelle les éléments non indexés qui ne correspondent pas à la requête de recherche ou qui sont exclus par une condition de plage de dates ne sont pas inclus dans les résultats de la recherche. Pour plus d’informations sur les éléments non indexés, voir [éléments partiellement indexés dans la recherche de contenu dans Office 365](partially-indexed-items-in-content-search.md).
     
-- Vous pouvez obtenir les dernières statistiques de conservation en cliquant sur **mettre à jour les statistiques** pour réexécuter une estimation de recherche qui calcule le nombre actuel d’éléments en attente. Si nécessaire, cliquez sur **Actualiser**![l’actualisation](media/O365-MDM-Policy-RefreshIcon.gif) dans la barre d’outils pour mettre à jour les statistiques de conservation dans le volet d’informations. 
+- Vous pouvez obtenir les dernières statistiques de conservation en cliquant sur **mettre à jour les statistiques** pour réexécuter une estimation de recherche qui calcule le nombre actuel d’éléments en attente. Si nécessaire, cliquez sur **Actualiser**![l’actualisation](../media/O365-MDM-Policy-RefreshIcon.gif) dans la barre d’outils pour mettre à jour les statistiques de conservation dans le volet d’informations. 
     
 - Il est normal que le nombre d’éléments bloqués augmente au fil du temps, car les utilisateurs dont la boîte aux lettres ou le site est en attente envoient généralement de nouveaux messages électroniques et créent des documents SharePoint et OneDrive entreprise.
     
@@ -248,19 +248,19 @@ Une fois le cas de découverte électronique créé et les dépositaires associ�
     
 3. Sur la page d' **Accueil** du cas, cliquez sur l’onglet **Rechercher** . 
     
-    ![Onglet Rechercher](media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
+    ![Onglet Rechercher](../media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
   
-4. Sur la page **recherche** , cliquez ![sur Ajouter](media/ITPro-EAC-AddIcon.gif) une icône **nouvelle recherche**. 
+4. Sur la page **recherche** , cliquez ![sur Ajouter](../media/ITPro-EAC-AddIcon.gif) une icône **nouvelle recherche**. 
     
 5. Sur la page **Nouvelle recherche**, vous pouvez ajouter des mots clés et des conditions pour créer la requête de recherche. 
     
-    ![Nouvelle recherche](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
+    ![Nouvelle recherche](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
 6. Vous pouvez spécifier des mots clés, des propriétés de message, telles que des dates d’envoi et de réception, ou des propriétés de document, telles que des noms de fichiers ou la date de la dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**, **not**, **near**ou **ONEAR**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de la recherche. 
     
 7. Vous pouvez activer la case à cocher **afficher la liste des mots clés** et taper un mot clé dans chaque ligne. Dans ce cas, les mots clés de chaque ligne sont connectés par l’opérateur **or** dans la requête de recherche qui est créée. 
     
-    ![Liste de mots clés](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
+    ![Liste de mots clés](../media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
     Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé. Cela peut vous aider à identifier rapidement les mots clés les plus importants (et les moins). Vous pouvez également utiliser une expression de mot clé (entre parenthèses) dans une ligne. Pour plus d’informations sur les statistiques de recherche, voir [afficher les statistiques des mots clés pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md).
     
@@ -272,7 +272,7 @@ Une fois le cas de découverte électronique créé et les dépositaires associ�
     
 9. Sous **emplacements : emplacements en attente**, choisissez les emplacements de contenu sur lesquels vous souhaitez effectuer la recherche. Vous pouvez rechercher des boîtes aux lettres, des sites et des dossiers publics dans la même recherche.
     
-    ![Emplacements, en attente](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
+    ![Emplacements, en attente](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
     - **Tous les emplacements** : sélectionnez cette option pour rechercher tous les emplacements de contenu de votre organisation. Lorsque vous sélectionnez cette option, vous pouvez choisir d’effectuer une recherche dans toutes les boîtes aux lettres Exchange (ce qui inclut les boîtes aux lettres de tous les groupes Microsoft Teams, Yammer Groups et Office 365), tous les sites SharePoint et OneDrive entreprise (qui incluent les sites de tous les sites Microsoft Teams, groupes Yammer et groupes Office 365) et tous les dossiers publics.
     
@@ -280,7 +280,7 @@ Une fois le cas de découverte électronique créé et les dépositaires associ�
     
     - **Emplacements spécifiques.** Sélectionnez cette option pour sélectionner les boîtes aux lettres et les sites dans lesquels vous souhaitez effectuer une recherche. Lorsque vous sélectionnez cette option et que vous cliquez sur **modifier**, une liste d’emplacements apparaît. Vous pouvez choisir d’effectuer une recherche sur un ou l’ensemble des utilisateurs, des groupes, des équipes ou des emplacements de site.
     
-      ![Sélectionner des emplacements spécifiques](media/97469b15-7be1-4aee-be27-f8343636152c.png)
+      ![Sélectionner des emplacements spécifiques](../media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
       Vous pouvez également choisir d’effectuer une recherche dans tous les dossiers publics de votre organisation, mais si vous sélectionnez cette option et que vous recherchez tout emplacement de contenu en conservation, aucune requête d’une conservation de casse basée sur une requête ne sera appliquée à la requête de recherche. En d’autres termes, tout le contenu d’un emplacement est recherché, pas seulement le contenu qui est préservé par une suspension de casse basée sur une requête.
     
@@ -304,7 +304,7 @@ Une fois le cas de découverte électronique créé et les dépositaires associ�
     
     La recherche commence. Après un certain temps, une estimation des résultats de la recherche s’affiche dans le volet d’informations. L’estimation inclut la taille totale et le nombre d’éléments correspondant aux critères de recherche. L’estimation de la recherche inclut également le nombre d’éléments non indexés dans les emplacements de contenu qui ont été recherchés. Le nombre d’éléments non indexés qui ne répondent pas aux critères de recherche est inclus dans les statistiques de la recherche affichées dans le volet Détails. Si un élément non indexé correspond à la requête de recherche (étant donné que les autres propriétés du message ou du document répondent aux critères de recherche), il ne sera pas inclus dans le nombre estimé d’éléments non indexés. Si un élément non indexé est exclu par les critères de recherche, il ne sera pas inclus dans l’estimation des éléments non indexés.
     
-  Une fois la recherche terminée, vous pouvez prévisualiser les résultats de recherche. Si nécessaire, cliquez sur **Actualiser**![l’actualisation](media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet d’informations. 
+  Une fois la recherche terminée, vous pouvez prévisualiser les résultats de recherche. Si nécessaire, cliquez sur **Actualiser**![l’actualisation](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet d’informations. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Étape 6 : exporter les résultats d’une recherche de contenu associée à un cas
 
@@ -320,11 +320,11 @@ Vous pouvez exporter les résultats d’une [seule recherche associée à un cas
     
 3. Sur la page d' **Accueil** du cas, cliquez sur **Rechercher**.
     
-4. Dans la liste des recherches pour le cas, cliquez sur la recherche à partir de laquelle vous souhaitez exporter les résultats ![de la recherche,](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) cliquez sur Exporter les résultats de la recherche **plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
+4. Dans la liste des recherches pour le cas, cliquez sur la recherche à partir de laquelle vous souhaitez exporter les résultats ![de la recherche,](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) cliquez sur Exporter les résultats de la recherche **plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
     
     La page **Exporter les résultats** s’affiche. 
     
-    ![Page exporter les résultats](media/ab0bb46d-310b-4374-8644-717146df6676.png)
+    ![Page exporter les résultats](../media/ab0bb46d-310b-4374-8644-717146df6676.png)
   
     Le flux de travail pour exporter les résultats d’une recherche de contenu associée à un cas est le même flux qui sert à exporter les résultats pour une recherche effectuée sur la page **Recherche de contenu**. Pour obtenir des instructions détaillées, voir [Export content Search Results](export-search-results.md).
     
@@ -333,9 +333,9 @@ Vous pouvez exporter les résultats d’une [seule recherche associée à un cas
   
 5. Cliquez sur l’onglet **Exporter** pour afficher la liste des travaux d’exportation qui existent dans ce cas. 
     
-    ![Onglet exporter](media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
+    ![Onglet exporter](../media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
   
-    Vous devrez peut-être cliquer sur **Actualiser**![l’icône](media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour la liste des travaux d’exportation afin d’afficher le travail d’exportation que vous avez créé. Les travaux d’exportation portent le même nom que la recherche de contenu correspondante, avec des **_Export** ajoutés à la fin du nom de recherche. 
+    Vous devrez peut-être cliquer sur **Actualiser**![l’icône](../media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour la liste des travaux d’exportation afin d’afficher le travail d’exportation que vous avez créé. Les travaux d’exportation portent le même nom que la recherche de contenu correspondante, avec des **_Export** ajoutés à la fin du nom de recherche. 
     
 6. Cliquez sur le travail d’exportation que vous venez de créer pour afficher les informations d’État dans le volet d’informations. Ces informations incluent le pourcentage d’éléments qui ont été transférés vers une zone de stockage Azure dans le Cloud Microsoft.
     
@@ -361,10 +361,10 @@ En guise d’alternative à l’exportation des résultats d’une recherche de 
   
 5. Une fois que vous avez sélectionné les recherches, la page **actions en bloc** s’affiche. 
     
-    ![Dans la page actions en bloc, cliquez sur Exporter les résultats](media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
+    ![Dans la page actions en bloc, cliquez sur Exporter les résultats](../media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
   
     
-6. Cliquez ![sur Exporter les résultats](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Exporter les résultats**.
+6. Cliquez ![sur Exporter les résultats](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Exporter les résultats**.
 
 7. Sur la page **Exporter les résultats** , attribuez un nom unique à l’exportation, sélectionnez les options de sortie, puis choisissez comment votre contenu sera exporté. Cliquez sur **Exporter**.
     
@@ -375,9 +375,9 @@ En guise d’alternative à l’exportation des résultats d’une recherche de 
   
 8. Une fois l’exportation démarrée, cliquez sur l’onglet **Exporter** pour afficher la liste des travaux d’exportation pour ce cas. 
     
-    ![Onglet exporter, recherches multiples](media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
+    ![Onglet exporter, recherches multiples](../media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
   
-    Vous devrez peut-être cliquer sur **Actualiser** ![l’icône](media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour la liste des travaux d’exportation afin d’afficher le travail d’exportation que vous avez créé. Les recherches comprises dans la tâche d’exportation sont répertoriées dans la colonne **recherches** . 
+    Vous devrez peut-être cliquer sur **Actualiser** ![l’icône](../media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour la liste des travaux d’exportation afin d’afficher le travail d’exportation que vous avez créé. Les recherches comprises dans la tâche d’exportation sont répertoriées dans la colonne **recherches** . 
     
 8. Cliquez sur le travail d’exportation que vous venez de créer pour afficher les informations d’État dans le volet d’informations. Ces informations incluent le pourcentage d’éléments qui ont été transférés vers une zone de stockage Azure dans le Cloud Microsoft.
     
@@ -416,9 +416,9 @@ Lorsque vous préparez des résultats de recherche pour Advanced eDiscovery, la 
     
 3. Sur la page d' **Accueil** du cas, cliquez sur **Rechercher**, puis sélectionnez la recherche.
     
-4. Dans le volet d’informations, ![cliquez sur Exporter les](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) résultats de recherche **plus en plus**, puis sur **préparer pour Advanced eDiscovery**.
+4. Dans le volet d’informations, ![cliquez sur Exporter les](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) résultats de recherche **plus en plus**, puis sur **préparer pour Advanced eDiscovery**.
     
-    ![Préparer vos résultats pour Advanced eDiscovery](media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
+    ![Préparer vos résultats pour Advanced eDiscovery](../media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
   
 5. Sur la page **préparer pour Advanced eDiscovery** , choisissez de préparer l’une des opérations suivantes : 
     
@@ -448,11 +448,11 @@ Pour accéder à un cas dans Advanced eDiscovery :
     
 3. Sur la page d' **Accueil** du cas, cliquez sur **basculer vers Advanced eDiscovery**.
     
-    ![Sélectionnez basculer vers Advanced eDiscovery](media/d7e31558-e79c-4782-b841-2b735568a576.png)
+    ![Sélectionnez basculer vers Advanced eDiscovery](../media/d7e31558-e79c-4782-b841-2b735568a576.png)
   
     La barre **de progression de la connexion à Advanced eDiscovery** s’affiche. Lorsque vous êtes connecté à Advanced eDiscovery, une liste de conteneurs s’affiche sur la page. 
     
-    ![Barre de progression avancée de eDiscorvery](media/4a84273d-765b-44b8-9006-c20e810ea393.png)
+    ![Barre de progression avancée de eDiscorvery](../media/4a84273d-765b-44b8-9006-c20e810ea393.png)
   
     Ces conteneurs représentent les résultats de recherche que vous avez préparés pour l’analyse dans Advanced eDiscovery à l’étape 7. Le nom du conteneur a le même nom que la recherche de contenu dans le cadre du centre de sécurité & conformité. Les conteneurs de la liste sont ceux que vous avez préparés. Si un autre utilisateur a préparé des résultats de recherche pour Advanced eDiscovery, les conteneurs correspondants ne seront pas inclus dans la liste.
     
@@ -483,7 +483,7 @@ Pour fermer un incident :
     
     La page flyout **gérer ce cas** s’affiche. 
     
-3. Sous **gérer l’État**du cas ![, cliquez sur supprimer](media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) le **cas de fermeture**du bouton Peek.
+3. Sous **gérer l’État**du cas ![, cliquez sur supprimer](../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) le **cas de fermeture**du bouton Peek.
     
     Un avertissement s’affiche indiquant que les conservations associées à la casse seront désactivées.
     
@@ -493,7 +493,7 @@ Pour fermer un incident :
     
 5. Fermez la page **gérer ce cas** . 
     
-6. Sur la page **eDiscovery** , cliquez ![sur Actualiser l’icône](media/O365-MDM-Policy-RefreshIcon.gif) **Actualiser** pour mettre à jour l’état du cas fermé. Le processus de clôture peut prendre jusqu’à 60 minutes. 
+6. Sur la page **eDiscovery** , cliquez ![sur Actualiser l’icône](../media/O365-MDM-Policy-RefreshIcon.gif) **Actualiser** pour mettre à jour l’état du cas fermé. Le processus de clôture peut prendre jusqu’à 60 minutes. 
     
     Une fois le processus terminé, l’état du cas est modifié sur **fermé** sur la page **eDiscovery** . Cliquez de nouveau sur le nom de l’incident pour afficher la page de démarrage **gérer cet incident** , qui contient des informations sur la date et l’auteur de la fermeture du dossier. 
      
@@ -517,7 +517,7 @@ Lorsque vous rouvrez un cas, les conservations qui étaient en place lors de la 
     
 5. Fermez la page **gérer ce cas** . 
     
-6. Sur la page **eDiscovery** , cliquez ![sur Actualiser l’icône](media/O365-MDM-Policy-RefreshIcon.gif) **Actualiser** pour mettre à jour l’état du cas rouvert. Le processus de réouverture peut prendre jusqu’à 60 minutes. 
+6. Sur la page **eDiscovery** , cliquez ![sur Actualiser l’icône](../media/O365-MDM-Policy-RefreshIcon.gif) **Actualiser** pour mettre à jour l’état du cas rouvert. Le processus de réouverture peut prendre jusqu’à 60 minutes. 
     
     Une fois le processus terminé, l’état du cas est modifié sur **actif** sur la page **eDiscovery** . 
   
@@ -553,7 +553,7 @@ Si le cas que vous essayez de supprimer contient toujours des conservations, vou
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation  <br/> |Sans limite  <br/> |
   |Nombre maximal de blocages pour une organisation  <br/> |10 000  <br/> |
-  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1 000  <br/> |
+  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1,000  <br/> |
   |Nombre maximal de sites SharePoint et OneDrive entreprise en une seule suspension de cas  <br/> |100  <br/> |
    
 - **Qu’en est-il des cas qui ont été créés sur la page de gestion des dossiers dans Advanced eDiscovery ?** Vous pouvez accéder à la liste des anciens cas de découverte électronique avancée en cliquant sur le lien situé en bas de la page **découverte électronique** dans le centre de sécurité & conformité. Toutefois, pour effectuer un travail dans un cas plus ancien, vous devez contacter le support Office 365 et demander que le cas soit déplacé vers un nouveau cas eDiscovery dans le centre de sécurité & conformité. 

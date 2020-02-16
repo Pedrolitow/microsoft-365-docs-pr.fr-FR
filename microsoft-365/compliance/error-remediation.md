@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: aac2dc742af4491be8c7f30ed6e78c549a924f3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 524378ecb7ec7cd8285e7d1ccda5667aa6081f30
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592815"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074421"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Erreur de correction lors du traitement des données pour une enquête
 
@@ -40,15 +40,15 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 3. Cliquez sur **+ nouvelle erreur de correction**.
 
-    ![Correction des erreurs](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Correction des erreurs](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     La session de correction d’erreur commence avec une phase de préparation dans laquelle les fichiers contenant des erreurs sont copiés vers un emplacement Azure sécurisé afin qu’ils puissent être téléchargés.
 
-    ![Préparation de la correction des erreurs](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Préparation de la correction des erreurs](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. Une fois la préparation terminée, cliquez sur **suivant : Télécharger les fichiers** pour continuer le téléchargement.
 
-    ![Télécharger des fichiers](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Télécharger des fichiers](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. Pour télécharger des fichiers, spécifiez le **chemin de destination pour le téléchargement**. Il s’agit d’un chemin d’accès sur votre ordinateur local où le fichier doit être téléchargé.  Le chemin d’accès par défaut,%USERPROFILE%\Downloads\errors, pointe vers le dossier downloads de l’utilisateur connecté ; Cela peut être modifié selon vos besoins.
 
@@ -62,7 +62,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     Les fichiers sont téléchargés.
 
-    ![Préparation de la correction des erreurs](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Préparation de la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > Si vous rencontrez des problèmes lors de l’exécution de cette commande, consultez la rubrique [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -74,13 +74,13 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 8. À présent, revenez aux enquêtes de données (aperçu) et cliquez sur **suivant : charger les fichiers**.  Cette opération passe à l’étape suivante, dans laquelle vous pouvez à présent télécharger les fichiers.
 
-    ![Charger des fichiers](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Charger des fichiers](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Spécifiez l’emplacement des fichiers corrigés dans la zone **de texte chemin d’accès à l’emplacement des fichiers** , puis cliquez sur **copier dans le presse-papiers**.
 
 10. Collez la commande dans une invite de commande Windows et appuyez sur **entrée** pour charger les fichiers.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Enfin, revenez aux enquêtes de données (aperçu) et cliquez sur **suivant : traiter les fichiers**.
 

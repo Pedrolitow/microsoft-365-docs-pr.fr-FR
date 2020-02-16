@@ -14,12 +14,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Pour les rapports de conformité réglementaire en ligne pour Office 365, Azure et Dynamics 365 Online, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez être conformes à la norme ISO, HIPAA, NIST, FINRA, RGPD et FedRAMP lorsque vous utilisez ces services en ligne.
-ms.openlocfilehash: d8347a20543664a1de86001709f068bf39b1cb5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596341"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073149"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d’approbation de service Microsoft
 
@@ -56,7 +56,7 @@ Lorsque vous vous inscrivez à une version d’évaluation gratuite ou à un abo
 
 Les fonctionnalités et le contenu du portail d’approbation de service sont accessibles à partir du menu principal.
   
-![Menu du portail d’approbation de service](media/STPMenus1.png)
+![Menu du portail d’approbation de service](../media/STPMenus1.png)
 
 Les sections suivantes décrivent chaque élément du menu principal.
   
@@ -64,7 +64,7 @@ Les sections suivantes décrivent chaque élément du menu principal.
 
 Le lien **portail d’approbation de services** affiche la page d’accueil. Il offre un moyen rapide de revenir à la page d’accueil.
 
-### <a name="compliance-manager"></a>Le Gestionnaire de conformité
+### <a name="compliance-manager"></a>Gestionnaire de conformité
 
 Le gestionnaire de conformité est un outil d’évaluation de risque basé sur un flux de travail qui vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire de votre organisation relatives aux services de Cloud Computing Microsoft, tels que Office 365, Dynamics 365 et Azure. Utilisez le gestionnaire de conformité pour gérer la conformité réglementaire dans le modèle de responsabilité partagé du Cloud. En fonction de la version du gestionnaire de conformité que vous souhaitez utiliser, consultez les articles suivants pour plus d’informations :
 
@@ -100,7 +100,7 @@ Fournit des informations de conformité spécifiques de l’industrie et de la r
 
 - **Régions :** Fournit des opinions juridiques sur la conformité des services de Cloud Computing Microsoft avec différentes lois de différents pays. Certains pays incluent l’Australie, le Canada, la République tchèque, le Danemark, l’Allemagne, la Pologne, la Roumanie, l’Espagne et le Royaume-Uni.
   
-### <a name="trust-center"></a>Gestion de la confidentialité
+### <a name="trust-center"></a>Centre de gestion de la confidentialité
 
 Liens vers le [Centre](https://www.microsoft.com/trust-center)de gestion de la confidentialité de Microsoft, qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans le Cloud Microsoft. Cela inclut des informations sur les fonctionnalités des services de Cloud Computing de Microsoft que vous pouvez utiliser pour répondre aux exigences spécifiques du RGPD, de la documentation utile à votre responsabilité RGPD et de votre compréhension des mesures techniques et organisationnelles Microsoft a pris en charge le RGPD.
   
@@ -122,17 +122,17 @@ Accédez à **plus de > administrateur** pour accéder aux fonctions d’adminis
 
 - **Paramètres de confidentialité de l’utilisateur :** Cette page vous permet d’exporter un rapport qui contient des affectations d’éléments d’action dans le gestionnaire de conformité pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer les éléments d’action attribués de l’utilisateur spécifié. Pour plus d’informations, consultez la rubrique [paramètres de confidentialité](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)de l’utilisateur.
 
-### <a name="search"></a>Recherche
+### <a name="search"></a>Search
 
 Cliquez sur la loupe dans le coin supérieur droit de la page du portail d’approbation de service pour développer la zone, entrez vos termes de recherche, puis appuyez sur **entrée**. La page de **recherche** s’affiche, avec le terme de recherche affiché dans la zone de recherche et les résultats de la recherche répertoriés ci-dessous.
   
-![Portail d’approbation de services – Recherche de documents filtrée](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Portail d’approbation de services – Recherche de documents filtrée](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 Par défaut, la recherche th renvoie les résultats du document. Vous pouvez filtrer les résultats à l’aide des listes déroulantes pour affiner la liste des documents affichés. Vous pouvez utiliser plusieurs filtres pour affiner la liste des documents. Les filtres incluent les services Cloud spécifiques, les catégories de conformité, les pratiques de sécurité, les régions et les industries. Cliquez sur le lien nom du document pour télécharger le document.
   
 Pour répertorier les contrôles des évaluations dans le gestionnaire de conformité liées à vos termes de recherche, cliquez sur **Gestionnaire de conformité**. Les résultats de la recherche indiquent la date à laquelle l’évaluation a été créée, le nom du regroupement d’évaluation, le service Cloud Microsoft applicable et si le contrôle est géré par Microsoft ou par le client. Cliquez sur le nom du contrôle pour afficher le contrôle dans le gestionnaire de conformité.
   
-![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
 > Les rapports et les documents du portail d’approbation de services peuvent être téléchargés pendant au moins 12 mois après la publication ou jusqu’à ce qu’une nouvelle version du document soit disponible.
@@ -161,7 +161,7 @@ Pour accéder à ces Starter packs, accédez à **Service Trust Portal > Industr
 
 Le portail d’approbation de services vous permet d’afficher le contenu de la page dans différentes langues. Pour modifier la langue de la page, il suffit de cliquer sur l’icône en forme de globe dans le coin inférieur gauche de la page et de sélectionner la langue de votre choix. 
   
-![Portail d’approbation de services – Options de localisation du contenu](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Portail d’approbation de services – Options de localisation du contenu](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Commentaires
 
@@ -169,4 +169,4 @@ Nous pouvons vous aider à répondre à des questions sur le portail d’approba
   
 Votre avis compte beaucoup pour nous. Cliquez sur le bouton commentaires au bas de la page pour nous envoyer des commentaires sur ce que vous avez fait ou n’aimez pas, ou des suggestions dont vous pouvez avoir besoin pour améliorer nos produits ou nos fonctionnalités de produit.
   
-![Quel type de commentaires avez-vous](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![Quel type de commentaires avez-vous](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Découvrez comment DLP dans le centre de sécurité & conformité fonctionne avec DLP et les règles de flux de messagerie (règles de transport) dans le centre d’administration Exchange.
-ms.openlocfilehash: a491317727cce571f0f9e1c527557595f6adf7b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82b3d371303b647488c08416c5392d006c81e479
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596511"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073064"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Fonctionnement du DLP entre le Centre de sécurité et conformité et le Centre d’administration Exchange
 
@@ -34,7 +34,7 @@ Dans Office 365, vous pouvez créer une stratégie de protection contre la perte
     
 Les stratégies DLP créées dans ces centres d’administration fonctionnent côte à côte-cette rubrique explique comment procéder.
   
-![Pages DLP dans le centre de sécurité et de conformité et centre d’administration Exchange](media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![Pages DLP dans le centre de sécurité et de conformité et centre d’administration Exchange](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
 ## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>Fonctionnement de DLP dans le centre de sécurité & conformité avec DLP et les règles de flux de messagerie dans le centre d’administration Exchange
 

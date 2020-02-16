@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilisez des limites de conformité pour créer des limites logiques au sein d’une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher. Les limites de conformité utilisent le filtrage des autorisations de recherche (également appelé filtres de sécurité de conformité) pour contrôler les boîtes aux lettres, les sites SharePoint et les comptes OneDrive pouvant être recherchés par des utilisateurs spécifiques.
-ms.openlocfilehash: bd167246bc43cba20a444594a2309ac888c734fc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9ca390dfc96307e6323e897e762813719f2b3ac0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597471"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069733"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365
 
@@ -31,7 +31,7 @@ Les limites de conformité créent des limites logiques au sein d’une organisa
   
 Nous utilisons l’exemple de l’illustration suivante pour expliquer le fonctionnement des limites de conformité.
   
-![Les limites de conformité consistent en des filtres d’autorisations de recherche qui contrôlent l’accès aux agences et aux groupes de rôles d’administrateur qui contrôlent l’accès aux cas eDiscovery](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![Les limites de conformité consistent en des filtres d’autorisations de recherche qui contrôlent l’accès aux agences et aux groupes de rôles d’administrateur qui contrôlent l’accès aux cas eDiscovery](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
 Dans cet exemple, contoso LTD est une organisation Office 365 qui se compose de deux filiales, Fourth Coffee et Coho Winery. Pour les entreprises, les responsables et les enquêteurs eDiscovery peuvent uniquement effectuer des recherches dans les boîtes aux lettres Exchange, les comptes OneDrive et les sites SharePoint de leur Agence. En outre, les gestionnaires eDiscovery et les investigateurs peuvent uniquement voir les cas eDiscovery dans leur Agence et ils peuvent uniquement accéder aux cas dont ils sont membres. Voici comment les limites de conformité répondent à ces exigences.
   
@@ -162,9 +162,9 @@ Pour créer un cas et affecter des membres :
     
 2. Dans la liste des cas de découverte électronique, cliquez sur le nom de la demande de devis que vous avez créée.
     
-3. Dans la page de menu contextuel **gérer ce cas** , sous gérer les ![groupes de](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **rôles**, cliquez sur Ajouter une icône **Ajouter**.
+3. Dans la page de menu contextuel **gérer ce cas** , sous gérer les ![groupes de](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **rôles**, cliquez sur Ajouter une icône **Ajouter**.
     
-    ![Ajouter un groupe de rôles en tant que membre d’un cas de découverte électronique](media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
+    ![Ajouter un groupe de rôles en tant que membre d’un cas de découverte électronique](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. Dans la liste des groupes de rôles, sélectionnez l’un des groupes de rôles que vous avez créés à l’étape 3, puis cliquez sur **Ajouter**.
     
@@ -247,7 +247,7 @@ Gardez les points suivants à l’esprit lors de la recherche et de l’exportat
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
  **Qui peut créer et gérer des filtres d’autorisations de recherche (à l’aide des cmdlets New-ComplianceSecurityFilter et Set-ComplianceSecurityFilter) ?**
   

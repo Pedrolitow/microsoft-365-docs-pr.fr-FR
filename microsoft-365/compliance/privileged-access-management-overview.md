@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la gestion des accès privilégiés dans Office 365
-ms.openlocfilehash: 29436c9f647de2844f95f05e66b3b6c05527352b
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 8d1b6bbda57cbe51167c87a29e140e6b5f871bca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784661"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070961"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gestion des accès privilégiés dans Office 365
 
@@ -37,7 +37,7 @@ Pour obtenir une vue d’ensemble rapide du flux de travail intégré du client 
 
 La gestion des accès privilégiés complète les autres protections des données et des fonctionnalités d’accès dans l’architecture de sécurité Office 365. La gestion des accès privilégiés dans le cadre d’une approche intégrée et multicouche de la sécurité fournit un modèle de sécurité qui maximise la protection des informations sensibles et des paramètres de configuration d’Office 365. Comme illustré dans le diagramme, la gestion des accès privilégiés repose sur la protection fournie avec le chiffrement natif des données Office 365 et le modèle de sécurité de contrôle d’accès basé sur les rôles des services 365 Office. Lorsqu’elles sont utilisées avec [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), ces deux fonctionnalités fournissent un contrôle d’accès avec un accès juste-à-temps aux différentes étendues.
 
-![Protection multiniveau dans Office 365](media/pam-layered-protection.png)
+![Protection multiniveau dans Office 365](../media/pam-layered-protection.png)
 
 La gestion des accès privilégiés dans Office 365 est définie et étendue au niveau de la **tâche** , tandis que Azure ad Privileged Identity Management applique la protection au niveau du **rôle** avec la possibilité d’exécuter plusieurs tâches. Azure AD Privileged Identity Management principalement permet de gérer les accès aux rôles AD et aux groupes de rôles, tandis que la gestion des accès privilégiés dans Office 365 s’applique uniquement au niveau de la tâche.
 
@@ -53,25 +53,25 @@ Chacun des flux de processus suivants décrit l’architecture de l’accès pri
 
 Lorsque vous configurez une stratégie d’accès privilégié avec le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ou Exchange Management PowerShell, vous définissez la stratégie et les processus de fonctionnalité d’accès privilégié, ainsi que les attributs de stratégie dans le substrat Office 365. Les activités sont consignées dans le centre de sécurité et conformité Office 365. La stratégie est désormais activée et prête à gérer les demandes d’approbations entrantes.
 
-![Étape 1 : création de stratégie](media/pam-step1-policy-creation.jpg)
+![Étape 1 : création de stratégie](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Étape 2 : demande d’accès
 
 Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com) ou avec Exchange Management PowerShell, les utilisateurs peuvent demander l’accès à des tâches à privilèges élevés ou privilégiées. La fonctionnalité accès privilégié envoie la demande au substrat Office 365 pour traitement sur la stratégie d’accès aux privilèges configurée et enregistre l’activité dans les journaux du centre de sécurité et de conformité d’Office 365.
 
-![Étape 2 : demande d’accès](media/pam-step2-access-request.jpg)
+![Étape 2 : demande d’accès](../media/pam-step2-access-request.jpg)
 
 ### <a name="step-3-access-approval"></a>Étape 3 : approbation d’accès
 
 Une demande d’approbation est générée et la notification de demande en attente est envoyée par courrier électronique aux approbateurs. Si approuvé, la demande d’accès privilégié est traitée comme une approbation et la tâche est prête à être terminée. Si elle est refusée, la tâche est bloquée et aucun accès n’est accordé au demandeur. Le demandeur est informé de la demande d’approbation ou de refus via un message électronique.
 
-![Étape 3 : approbation d’accès](media/pam-step3-access-approval.jpg)
+![Étape 3 : approbation d’accès](../media/pam-step3-access-approval.jpg)
 
 ### <a name="step-4-access-processing"></a>Étape 4 : traitement de l’accès
 
 Pour une demande approuvée, la tâche est traitée par l’instance d’exécution de la gestion d’Exchange. L’approbation est vérifiée par rapport à la stratégie d’accès privilégié et traitée par le substrat Office 365. Toutes les activités de la tâche sont consignées dans le centre de sécurité et de conformité Office 365.
 
-![Étape 4 : traitement de l’accès](media/pam-step4-access-processing.jpg)
+![Étape 4 : traitement de l’accès](../media/pam-step4-access-processing.jpg)
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 

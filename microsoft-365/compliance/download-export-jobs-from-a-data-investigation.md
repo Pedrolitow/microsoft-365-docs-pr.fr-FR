@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Installez et utilisez l’Explorateur de stockage Azure pour télécharger des documents qui ont été exportés à partir de preuves dans une enquête de données.
-ms.openlocfilehash: a0e93d392e12ba548c8360a618abf909c89f2036
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1f528101140a97df0161638be14e503a05b18f2c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595159"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074931"
 ---
 # <a name="download-export-jobs"></a>Télécharger l’exportation des travaux
 
@@ -43,7 +43,7 @@ L’étape suivante consiste à obtenir l’URL de signature d’accès partagé
 
 3. Sur la page de menu volant, sous **emplacements**, copiez l’URL de la version SAS affichée. Si nécessaire, vous pouvez l’enregistrer dans un fichier pour pouvoir y accéder à l’étape 3.
  
-   ![Copier l’URL SAS affichée sous locations](media/eDiscoExportJob.png)
+   ![Copier l’URL SAS affichée sous locations](../media/eDiscoExportJob.png)
 
 ## <a name="step-3-connect-to-the-azure-storage-location"></a>Étape 3 : Connectez-vous à l’emplacement de stockage Azure
 
@@ -53,15 +53,15 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
 
 2. Cliquez sur l’icône **Ajouter un compte** . Vous pouvez également cliquer avec le bouton droit sur **comptes de stockage**.
 
-   ![Cliquez sur l’icône Ajouter un compte](media/AzureStorageConnect.png)
+   ![Cliquez sur l’icône Ajouter un compte](../media/AzureStorageConnect.png)
 
 3.  Sur la page **connexion à Azure Storage** , cliquez sur **utiliser un URI de signature d’accès partagé (SAS)** , puis cliquez sur **suivant**.
 
-    ![Cliquez sur utiliser un URI de signature d’accès partagé (SAS), puis sur suivant.](media/AzureStorageConnect2.png)
+    ![Cliquez sur utiliser un URI de signature d’accès partagé (SAS), puis sur suivant.](../media/AzureStorageConnect2.png)
 
 4.  Dans la page **attacher avec l’URI SAS** , cliquez dans la zone URI, puis collez l’URL SAS que vous avez obtenue à l’étape 2. 
 
-    ![Coller l’URL SAS dans la zone URI](media/AzureStorageConnect3.png)
+    ![Coller l’URL SAS dans la zone URI](../media/AzureStorageConnect3.png)
 
     Notez qu’une partie de l’URL SAS apparaît dans la zone **nom d’affichage** . Il sera utilisé comme nom d’affichage du conteneur créé sous les **comptes de stockage** une fois que vous vous êtes connecté à l’emplacement de stockage. Ce nom se compose de l’ID de l’analyse des données à partir de et d’un identificateur unique. Vous pouvez conserver le nom d’affichage par défaut ou le modifier. Si vous le modifiez, le nom d’affichage doit être unique.
 
@@ -69,13 +69,13 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
 
     La page **Résumé de connexion** s’affiche.
    
-    ![Cliquez sur se connecter sur la page de résumé de connexion pour vous connecter à l’emplacement de stockage Azure.](media/AzureStorageConnect4.png)
+    ![Cliquez sur se connecter sur la page de résumé de connexion pour vous connecter à l’emplacement de stockage Azure.](../media/AzureStorageConnect4.png)
 
 6. Sur la page **Résumé de connexion** , passez en revue les informations de connexion, puis cliquez sur **se connecter**. 
 
     Le nœud **conteneurs BLOB** (sous **comptes** > **de stockage (conteneurs associés)** \> est ouvert. 
 
-    ![Exporter des travaux dans le nœud conteneurs d’objets BLOB](media/AzureStorageConnect5.png)
+    ![Exporter des travaux dans le nœud conteneurs d’objets BLOB](../media/AzureStorageConnect5.png)
 
     Il contient un conteneur nommé avec le nom d’affichage de l’étape 4. Ce conteneur contient un dossier pour chaque tâche d’exportation que vous avez créée. Ces dossiers sont nommés avec un ID correspondant à l’ID de la tâche d’exportation. Vous trouverez ces ID d’exportation (et le nom de l’exportation) sous **informations de support** sur la page de menu volant pour chaque tâche **de préparation des données pour l’exportation** , dans l’onglet **travaux** .
 
@@ -83,7 +83,7 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
 
    Une liste des dossiers et des rapports d’exportation s’affiche.
    
-    ![Le dossier d’exportation contient des fichiers exportés et des rapports d’exportation](media/AzureStorageConnect6.png)
+    ![Le dossier d’exportation contient des fichiers exportés et des rapports d’exportation](../media/AzureStorageConnect6.png)
 
    Le dossier exporter le travail contient les éléments suivants. Les éléments réels dans le dossier d’exportation sont déterminés par les options d’exportation configurées lors de la création du travail d’exportation. Pour plus d’informations, consultez [la rubrique exporter des documents à partir d’un jeu de révision](export-documents-from-review-set.md).
 
@@ -107,7 +107,7 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
 
     L’Explorateur de stockage Azure démarre le processus d’exportation. L’état de téléchargement des éléments exportés est affiché dans le volet **activités** . Un message s’affiche lorsque le téléchargement est terminé.
 
-    ![Un message s’affiche lorsque le téléchargement est terminé.](media/AzureStorageConnect8.png)
+    ![Un message s’affiche lorsque le téléchargement est terminé.](../media/AzureStorageConnect8.png)
 
 > [!NOTE]
 > Au lieu de télécharger l’intégralité du travail d’exportation, vous pouvez sélectionner des éléments spécifiques à télécharger. Et au lieu de télécharger des éléments, vous pouvez double-cliquer sur un élément pour l’afficher.

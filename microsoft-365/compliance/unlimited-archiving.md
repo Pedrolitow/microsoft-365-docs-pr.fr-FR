@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez la croissance automatique de l’archivage dans Office 365, qui offre un stockage d’archive illimité pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: e7d004c7ef92fbcb331191432a70114f36dabc07
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 42318bf2ff102e6197800b2d6cba8b5c9132bcf9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601363"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069439"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Vue d’ensemble d’un archivage illimité dans Office 365
 
@@ -41,7 +41,7 @@ Comme expliqué précédemment, un espace de stockage de boîte aux lettres supp
 
 Voici une présentation rapide du processus.
 
-![Vue d’ensemble du processus d’archivage à extension automatique](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![Vue d’ensemble du processus d’archivage à extension automatique](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
 1. L’archivage est activé pour une boîte aux lettres d’utilisateur ou une boîte aux lettres partagée. Une boîte aux lettres d’archivage de 100 Go d’espace de stockage est créée et le quota d’avertissement pour la boîte aux lettres d’archivage est défini sur 90 Go.
 
@@ -67,11 +67,11 @@ Les captures d’écran suivantes montrent une liste des dossiers avant et aprè
 
  **Avant l’ajout d’un espace de stockage supplémentaire**
 
-![Liste des dossiers de la boîte aux lettres d’archivage avant la mise en service de l’archive à extension automatique](media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![Liste des dossiers de la boîte aux lettres d’archivage avant la mise en service de l’archive à extension automatique](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
 
  **Après l’ajout d’un espace de stockage supplémentaire**
 
-![Liste des dossiers de la boîte aux lettres d’archivage après mise en service de l’archive à extension automatique](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
+![Liste des dossiers de la boîte aux lettres d’archivage après mise en service de l’archive à extension automatique](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
 > Comme décrit précédemment, Office 365 déplace les éléments vers les sous-dossiers (et les nomme à l’aide de la Convention d’affectation de noms décrite ci-dessus) pour faciliter la distribution de contenu à une archive auxiliaire. Mais le transfert d’éléments vers des sous-dossiers n’est peut-être pas toujours le cas. Parfois, un dossier entier peut être déplacé vers une archive auxiliaire. Dans ce cas, le dossier conservera son nom d’origine.  Il ne sera pas visible dans la liste des dossiers dans Outlook que le dossier a été déplacé vers une archive auxiliaire.

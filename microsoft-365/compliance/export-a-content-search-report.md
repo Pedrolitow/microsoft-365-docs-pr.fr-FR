@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le centre de sécurité & conformité dans Office 365, vous pouvez exporter un rapport des résultats de la recherche. Le rapport contient un résumé des résultats de la recherche et un document avec des informations détaillées sur chaque élément à exporter.
-ms.openlocfilehash: a46051210ae4d8b4254d0415668e3b9902bf5589
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6730a1c406e02de26cbef964e445cfad31c948ec
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595601"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074391"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
@@ -100,7 +100,7 @@ La première étape consiste à préparer le rapport en vue de son téléchargem
     Le rapport de résultats de recherche est préparé pour le téléchargement, ce qui signifie que les documents de rapport seront téléchargés vers la zone de stockage Azure du Cloud Microsoft. Lorsque le rapport est prêt à être téléchargé, le lien **Télécharger le rapport** est affiché sous **Exporter le rapport vers un ordinateur** dans le volet d’informations. 
     
 > [!NOTE]
-> Vous pouvez également exporter un rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, **accédez à** \> eDiscovery **eDiscovery**, sélectionnez un cas, puis cliquez sur **modifier** ![l'](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icône modifier. Sur la page **recherches** , sélectionnez une recherche, **puis cliquez sur** ![exporter les résultats](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> de la recherche d’exportation **exporter un rapport**. 
+> Vous pouvez également exporter un rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, **accédez à** \> eDiscovery **eDiscovery**, sélectionnez un cas, puis cliquez sur **modifier** ![l'](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icône modifier. Sur la page **recherches** , sélectionnez une recherche, **puis cliquez sur** ![exporter les résultats](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> de la recherche d’exportation **exporter un rapport**. 
   
 ## <a name="step-2-download-the-report"></a>Étape 2 : Télécharger le rapport
 
@@ -138,7 +138,7 @@ L’étape suivante consiste à télécharger le rapport à partir de la zone de
     L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés. 
     
 > [!NOTE]
-> Vous pouvez télécharger le rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, **accédez à** \> eDiscovery **eDiscovery**, sélectionnez un cas, puis cliquez sur **modifier** ![l'](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icône modifier. Dans la page **exportations** , sélectionnez une exportation de rapport, puis cliquez sur **Télécharger le rapport** dans le volet d’informations. 
+> Vous pouvez télécharger le rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, **accédez à** \> eDiscovery **eDiscovery**, sélectionnez un cas, puis cliquez sur **modifier** ![l'](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icône modifier. Dans la page **exportations** , sélectionnez une exportation de rapport, puis cliquez sur **Télécharger le rapport** dans le volet d’informations. 
   
 ## <a name="whats-included-in-the-report"></a>Éléments inclus dans le rapport
 

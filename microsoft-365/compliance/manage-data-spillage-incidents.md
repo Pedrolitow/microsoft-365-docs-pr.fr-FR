@@ -1,5 +1,7 @@
 ---
 title: Gérer un incident de fuite de données dans Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit l’utilisation de l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & Compliance pour gérer un incident de déversement de données.
-ms.openlocfilehash: 53193d3bd915562037a6409766e9be9d42d272c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079421"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072025"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gérer un incident de fuite de données dans Microsoft 365
 
@@ -106,7 +108,7 @@ Après avoir exécuté la recherche, vous pouvez prévisualiser des exemples de 
 
 Dans l’enquête, accédez à l’onglet **preuve** et cliquez sur l’ensemble de preuves que vous avez créé à l’étape précédente. Une fois le travail de traitement terminé et les résultats de la recherche ajoutés à la preuve, vous pouvez passer en revue des documents individuels au format natif, au format texte ou au format quasi natif. Vous pouvez créer des requêtes supplémentaires pour affiner la liste des documents et marquer des documents pour indiquer les conclusions de votre enquête. Pour plus d’informations, voir [examiner les données dans les preuves](review-data-in-evidence.md)
 
-Pour regrouper des documents et obtenir de l’aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cela exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l’analyse de thème. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour regrouper des documents et obtenir de l’aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cela exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l’analyse de thème. Pour plus d’informations, voir :
 
 - [Exécuter les données d’analyse pour investiguer plus rapidement](run-analytics-to-investigate-faster.md)
 - [Détecter des quasi-duplicatas](near-duplicates.md)
@@ -125,7 +127,7 @@ Pour supprimer des éléments de leur emplacement d’origine :
  
 2. Cliquez sur **action** , puis sur **Supprimer les éléments des emplacements d’origine**.
 
-   ![Cliquez sur action, puis sur supprimer les éléments des emplacements d’origine](media/DataInvestigationsDeleteItems1.png)
+   ![Cliquez sur action, puis sur supprimer les éléments des emplacements d’origine](../media/DataInvestigationsDeleteItems1.png)
 
 3. Sur la page de menu volant, vérifiez le nombre d’éléments et les documents enfants associés qui seront supprimés, puis cliquez sur **supprimer**.
 

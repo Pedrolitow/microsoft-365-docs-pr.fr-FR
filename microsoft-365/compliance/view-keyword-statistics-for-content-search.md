@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Utilisez la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans le centre de sécurité & conformité. Vous pouvez également configurer la liste de mots clés lors de la création ou de la modification d’une requête de recherche pour obtenir des statistiques améliorées qui indiquent le nombre d’éléments correspondant à chaque expression de mot clé ou mot clé.
-ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068941"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 
@@ -37,17 +37,17 @@ Pour afficher les statistiques des recherches de contenu :
   
 1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu**de **recherche** \> .
     
-2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur ****![le bouton](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche.
+2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur ****![le bouton](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche.
     
-    ![Sélectionnez plusieurs recherches, puis cliquez sur statistiques de recherche.](media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
+    ![Sélectionnez plusieurs recherches, puis cliquez sur statistiques de recherche.](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
 3. Sur la page **statistiques de recherche** , cliquez sur l’un des liens suivants pour afficher les statistiques sur les recherches sélectionnées. 
     
-    **Résumé**
+    **Summary**
     
     Cette page affiche des statistiques similaires à celles affichées dans le volet d’informations sur la page **recherche de contenu** . Les statistiques de toutes les recherches sélectionnées sont affichées. Notez que vous pouvez également réexécuter les recherches sélectionnées à partir de cette page pour mettre à jour les statistiques. 
     
-    ![Résumé des statistiques pour les recherches sélectionnées](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
+    ![Résumé des statistiques pour les recherches sélectionnées](../media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
     a.  Nom de la recherche de contenu. Comme indiqué précédemment, vous pouvez afficher et comparer les statistiques de plusieurs recherches.
     
@@ -63,7 +63,7 @@ Pour afficher les statistiques des recherches de contenu :
     
     Cette page affiche des statistiques sur la requête de recherche.
     
-    ![Statistiques de requête de recherche pour les recherches sélectionnées](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
+    ![Statistiques de requête de recherche pour les recherches sélectionnées](../media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
     a. Nom de la recherche de contenu pour laquelle la ligne contient des statistiques de requête.
     
@@ -86,13 +86,13 @@ Pour afficher les statistiques des recherches de contenu :
     
     f. Nombre d’éléments (à partir de l’emplacement de contenu spécifié) qui correspondent à la requête de recherche indiquée dans la colonne **requête** . Comme expliqué précédemment, si un élément contient plusieurs instances d’un mot clé recherché, il n’est compté qu’une seule fois dans cette colonne. 
     
-    exemple. Taille totale de tous les éléments trouvés (dans l’emplacement de contenu spécifié) qui correspondent à la requête de recherche dans la colonne de **requête** . 
+    g. Taille totale de tous les éléments trouvés (dans l’emplacement de contenu spécifié) qui correspondent à la requête de recherche dans la colonne de **requête** . 
     
     **Emplacements les plus fréquents**
     
     Cette page affiche des statistiques sur le nombre d’éléments qui correspondent à la requête de recherche dans chaque emplacement de contenu recherché. Les 1 000 principaux emplacements sont affichés. Si vous affichez les statistiques de plusieurs recherches, les premiers 1 000 emplacements de chaque recherche sont affichés. Notez qu’un emplacement de contenu n’est pas inclus sur cette page s’il ne contient aucun élément correspondant à la requête de recherche.
     
-    ![Statistiques sur le nombre d’éléments trouvés dans les emplacements de contenu ayant fait l’objet d’une recherche](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
+    ![Statistiques sur le nombre d’éléments trouvés dans les emplacements de contenu ayant fait l’objet d’une recherche](../media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
     a. Nom de l’emplacement de contenu.
     
@@ -109,11 +109,11 @@ Pour créer une liste de mots clés et afficher les statistiques de mots clés p
   
 1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu**de **recherche** \> .
     
-2. Dans la liste des recherches de contenu, cliquez sur et sur une recherche, **** ![puis sur modifier](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)l’icône modifier.
+2. Dans la liste des recherches de contenu, cliquez sur et sur une recherche, **** ![puis sur modifier](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)l’icône modifier.
     
 3. Cliquez sur **requête** , puis effectuez les opérations suivantes : 
     
-    ![Cliquez sur la case à cocher Afficher la liste de mots clés et tapez un mot clé dans chaque ligne.](media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
+    ![Cliquez sur la case à cocher Afficher la liste de mots clés et tapez un mot clé dans chaque ligne.](../media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
     a. Activez la case à cocher **afficher la liste de mots clés** . 
     
@@ -121,11 +121,11 @@ Pour créer une liste de mots clés et afficher les statistiques de mots clés p
     
 4. Après avoir ajouté les mots clés pour lesquels vous souhaitez effectuer une recherche et obtenir des statistiques, cliquez sur **Rechercher** pour exécuter la recherche révisée. 
     
-5. Une fois la recherche terminée, sélectionnez-la dans la liste des recherches, puis cliquez **** ![sur le bouton](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche. Vous pouvez également afficher et comparer des statistiques de mots clés pour plusieurs recherches.
+5. Une fois la recherche terminée, sélectionnez-la dans la liste des recherches, puis cliquez **** ![sur le bouton](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche. Vous pouvez également afficher et comparer des statistiques de mots clés pour plusieurs recherches.
     
 6. Sur la page **statistiques de recherche** , cliquez sur **requête** pour afficher les statistiques des mots-clés des recherches sélectionnées. 
     
-    ![Les statistiques de chaque mot-clé pour les recherches sélectionnées sont affichées.](media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
+    ![Les statistiques de chaque mot-clé pour les recherches sélectionnées sont affichées.](../media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
   
     Comme indiqué dans la capture d’écran précédente, les statistiques de chaque mot clé s’affichent ; Cela inclut : 
     

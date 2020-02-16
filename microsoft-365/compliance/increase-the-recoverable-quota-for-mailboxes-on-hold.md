@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique pour augmenter la taille du dossier éléments récupérables pour une boîte aux lettres dans Office 365. '
-ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597931"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072919"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
@@ -96,15 +96,15 @@ Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online Po
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Utilisation du Centre d’administration Exchange pour créer une stratégie de rétention
   
-1. Dans le centre d’administration Exchange, accédez à stratégies de \> **rétention**de gestion de](media/ITPro-EAC-AddIcon.gif) **la conformité** , puis cliquez sur **Ajouter** ![une icône Ajouter.
+1. Dans le centre d’administration Exchange, accédez à stratégies de \> **rétention**de gestion de](../media/ITPro-EAC-AddIcon.gif) **la conformité** , puis cliquez sur **Ajouter** ![une icône Ajouter.
     
 2. Sur la page **Nouvelle stratégie de rétention**, sous **Nom**, saisissez un nom qui décrit l’objectif de la stratégie de rétention ; par exemple, **MRM Policy for Mailboxes on Hold**.  
     
-3. Sous **balises de rétention**,](media/ITPro-EAC-AddIcon.gif)cliquez sur **Ajouter** ![une icône Ajouter.
+3. Sous **balises de rétention**,](../media/ITPro-EAC-AddIcon.gif)cliquez sur **Ajouter** ![une icône Ajouter.
     
 4. Dans la liste des balises de rétention, sélectionnez la balise de stratégie de rétention des éléments récupérables que vous avez créée à l’étape 1, puis cliquez sur **Ajouter**.
     
-    ![Sélectionnez la balise de rétention Éléments récupérables personnalisée](media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![Sélectionnez la balise de rétention Éléments récupérables personnalisée](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
 5. Sélectionnez des balises de rétention supplémentaires à ajouter à la stratégie de rétention. Par exemple, vous pouvez ajouter les mêmes balises qui sont incluses dans la stratégie MRM par défaut.
     
@@ -114,7 +114,7 @@ Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online Po
     
     Les balises de rétention liées à la stratégie de rétention sont affichées dans le volet de détails.
     
-    ![Des balises de conservation liées à la stratégie de rétention sont affichées dans le volet de détails](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![Des balises de conservation liées à la stratégie de rétention sont affichées dans le volet de détails](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
 ### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>Utiliser Exchange Online PowerShell pour créer une stratégie de rétention
   
@@ -139,7 +139,7 @@ La dernière étape consiste à appliquer la nouvelle stratégie de rétention q
   
 1. Accédez à **Destinataires** \> **Boîtes aux lettres**.
     
-2. Dans l’affichage liste, sélectionnez la boîte aux lettres à laquelle vous souhaitez appliquer la stratégie de rétention, puis](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)cliquez sur **modifier** ![l’icône modifier.
+2. Dans l’affichage liste, sélectionnez la boîte aux lettres à laquelle vous souhaitez appliquer la stratégie de rétention, puis](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)cliquez sur **modifier** ![l’icône modifier.
     
 3. Sur la page **Boîte aux lettres de l’utilisateur**, cliquez sur **Fonctionnalités de boîte aux lettres**.
     

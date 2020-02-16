@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Cette recommandation orientée analyse permet à votre organisation de maintenir le contenu sensible sécurisé lorsqu’il est stocké et partagé dans Office 365 en vous informant lorsqu’il existe un manque d’espace dans votre couverture de stratégie DLP. Cette recommandation s’affiche sur la page d’accueil du centre de &amp; sécurité conformité, si vos documents contiennent l’un des cinq types d’informations sensibles les plus courants, mais ne sont pas protégés par une stratégie DLP.
-ms.openlocfilehash: 3bbdbd230e9ae28136bcd89df46f0e9c10cb80fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7fb99942a2288a2545123d44ebdfde89b449edc3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596351"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073203"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Prise en main des recommandations en matière de stratégie DLP
 
@@ -26,7 +26,7 @@ Cette recommandation orientée analyse permet à votre organisation de maintenir
   
 Vous pouvez utiliser ce widget pour créer rapidement une stratégie DLP personnalisée en un clic ou deux, et après avoir créé cette stratégie DLP, elle est entièrement personnalisable. Notez que si vous ne voyez pas la recommandation, essayez de cliquer sur **+ autres** en bas de la section **recommandé pour vous** . 
   
-![Widget nommé informations sensibles non protégées](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![Widget nommé informations sensibles non protégées](../media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
 ## <a name="create-the-recommended-dlp-policy"></a>Créer la stratégie DLP recommandée
 
@@ -48,7 +48,7 @@ Vous pouvez également choisir d’utiliser la stratégie DLP :
     
 Si vous souhaitez modifier ces options ultérieurement, vous pouvez modifier la stratégie DLP après sa création. Par exemple, vous pouvez faire en sorte que la stratégie soit plus restrictive en bloquant même les personnes de partager du contenu qui contient des informations sensibles dans le premier cas, consultez la section suivante.
   
-![Paramètres du widget nommé informations sensibles non protégées](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![Paramètres du widget nommé informations sensibles non protégées](../media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
 ## <a name="edit-the-recommended-dlp-policy"></a>Modifier la stratégie DLP recommandée
 
@@ -56,7 +56,7 @@ Une fois que vous avez utilisé le widget pour créer une stratégie DLP, la str
   
 Par défaut, la stratégie est nommée **stratégie système recommandée pour le partage d’informations sensibles**. Cette stratégie est entièrement personnalisable, comme n’importe quelle stratégie DLP que vous créez vous-même de toutes pièces. Par exemple, si vous avez décidé de ne pas activer les rapports d’incident et les conseils de stratégie lorsque vous avez utilisé le widget, vous pouvez toujours modifier la stratégie et activer ces options à tout moment.
   
-![Stratégie système recommandée pour le partage d’informations sensibles](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![Stratégie système recommandée pour le partage d’informations sensibles](../media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Lorsque le widget n’apparaît pas
 

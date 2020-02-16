@@ -18,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Le RGPD donne aux citoyens de l’Union européenne (appelés « personnes des données ») des droits spécifiques sur leurs données personnelles ; ces droits incluent l’obtention de copies de celle-ci, la demande de modifications, la limitation du traitement de celle-ci, sa suppression ou sa réception dans un format électronique. Une demande officielle d’un objet de données qui doit agir sur ses données personnelles est appelée demande de l’objet de données ou DSR. Vous pouvez utiliser les dossiers DSR dans le centre de conformité dans Office 365 et Microsoft 365 pour gérer les investigations DSR de votre organisation.
-ms.openlocfilehash: 6d7770be686e62dc6afde368bcb4e821f72c2fff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35ea4230680f567a702f8f2368f80986c473039f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582933"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072073"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR dans le centre de sécurité & conformité
 
@@ -89,7 +89,7 @@ L’étape suivante consiste à créer un boîtier DSR. Lorsque vous créez un c
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à Office 365 à l’aide de votre compte professionnel ou scolaire. 
     
-2. Dans le centre de sécurité & conformité, cliquez sur **demandes**des personnes concernées par la **confidentialité** \> des données, puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) **nouveau DSR case**.
+2. Dans le centre de sécurité & conformité, cliquez sur **demandes**des personnes concernées par la **confidentialité** \> des données, puis cliquez sur ![ajouter une icône](../media/ITPro-EAC-AddIcon.gif) **nouveau DSR case**.
     
 3. Sur la page de la nouvelle boîte flyout du **boîtier DSR** , attribuez un nom à la demande, tapez une description facultative, puis cliquez sur **suivant**. Le nom du cas doit être unique dans toute votre organisation.
     
@@ -102,7 +102,7 @@ L’étape suivante consiste à créer un boîtier DSR. Lorsque vous créez un c
     
     Une page s’affiche pour confirmer la création du nouveau boîtier DSR.
     
-    ![Démarrer la recherche ou fermer la nouvelle page du dossier DSR](media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
+    ![Démarrer la recherche ou fermer la nouvelle page du dossier DSR](../media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
   
     À ce stade, vous pouvez effectuer l’une des deux opérations suivantes :
     
@@ -195,11 +195,11 @@ L’ordinateur que vous utilisez pour exporter des données doit répondre aux e
     
 2. Cliquez sur l’onglet **Rechercher** en haut de la page, puis cliquez sur la case à cocher en regard de la recherche intégrée créée lors de la création du boîtier DSR. Ou cliquez sur une autre recherche pour exporter les données de cette recherche. 
     
-3. Sur la page flyout de recherche, ![cliquez sur Exporter les](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) résultats de recherche **plus en plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
+3. Sur la page flyout de recherche, ![cliquez sur Exporter les](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) résultats de recherche **plus en plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
     
 4. Sur la page **Exporter les résultats** , sélectionnez les options recommandées suivantes pour les demandes d’exportation DSR. 
     
-    ![Configurer les paramètres d’exportation](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
+    ![Configurer les paramètres d’exportation](../media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
     a. Sous **options de sortie**, sélectionnez la première option (**tous les éléments, sauf ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons**) pour exporter uniquement les éléments indexés. La raison pour laquelle vous ne voulez pas exporter des éléments partiellement indexés à partir de la recherche intégrée est que les éléments partiellement indexés provenant d’autres utilisateurs sont également exportés. Pour exporter uniquement les éléments partiellement indexés de la personne concernée, nous vous recommandons de créer une recherche distincte. Pour plus d’informations, reportez-vous à la rubrique [exportation d’éléments partiellement indexés](#exporting-partially-indexed-items) dans la section « plus d’informations sur l’utilisation de l’outil de cas DSR ».
     
@@ -219,7 +219,7 @@ L’ordinateur que vous utilisez pour exporter des données doit répondre aux e
     
 8. Sous **Clé d’exportation**, cliquez sur **Copier dans le Presse-papiers**. Cette clé est utilisée à l’étape 11 pour télécharger les résultats de la recherche.
     
-9. Cliquez ![sur Exporter les résultats](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d’exportation. 
+9. Cliquez ![sur Exporter les résultats](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d’exportation. 
     
 10. Dans la fenêtre contextuelle en bas de la page, cliquez sur **ouvrir** pour ouvrir l’outil d' **exportation de découverte électronique de Microsoft Office 365**. L' **outil d’exportation de découverte électronique** sera installé lors du premier téléchargement des résultats de recherche. 
     
@@ -260,11 +260,11 @@ Pour modifier les emplacements de contenu à Rechercher :
     
 2. Dans la requête de recherche, sous **emplacements**, cliquez sur **modifier** en regard de l’option **emplacements spécifiques** . 
     
-    ![Cliquez sur modifier pour modifier les emplacements de contenu de la requête de recherche intégrée.](media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
+    ![Cliquez sur modifier pour modifier les emplacements de contenu de la requête de recherche intégrée.](../media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
   
     La page mobile **modifier les emplacements** s’affiche. Voici une description des emplacements de contenu dans la recherche intégrée et des informations sur la modification des emplacements qui font l’objet de la recherche. 
     
-    ![Page de menu de modification des emplacements](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
+    ![Page de menu de modification des emplacements](../media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
     a. Le bouton bascule sous **Sélectionner tout** dans la boîte aux lettres en haut de la page de menu volant est sélectionné, ce qui indique que toutes les boîtes aux lettres sont recherchées. Pour affiner l’étendue de la recherche, cliquez sur le bouton bascule pour la désélectionner, puis cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis choisissez des boîtes aux lettres spécifiques à rechercher.
     
@@ -304,13 +304,13 @@ Lorsque vous exportez des données à partir du service d’itinérance Office, 
   
 1. Dans le centre de sécurité & conformité, cliquez sur demandes des personnes **concernées**par la **confidentialité** \> des données, puis cliquez sur **ouvrir** en regard du cas du DSR pour la personne concernée dont vous souhaitez exporter les données d’utilisation. 
     
-2. Cliquez sur l’onglet **Rechercher** en haut de la page, puis cliquez sur ![ajouter une](media/ITPro-EAC-AddIcon.gif) **recherche guidée**par icône.
+2. Cliquez sur l’onglet **Rechercher** en haut de la page, puis cliquez sur ![ajouter une](../media/ITPro-EAC-AddIcon.gif) **recherche guidée**par icône.
     
 3. Cliquez sur **Annuler** dans la page **nom de votre recherche** . 
     
 4. Sous **requête de recherche**, dans la condition **type** , activez la case à cocher en regard de **service d’itinérance Office**. 
     
-    ![Activez la case à cocher service d’itinérance Office pour exporter les données d’utilisation.](media/O365_DSRCase_SDSDataExport1.png)
+    ![Activez la case à cocher service d’itinérance Office pour exporter les données d’utilisation.](../media/O365_DSRCase_SDSDataExport1.png)
   
     La condition **type** (qui sont des classes de message électronique) doit être le seul élément de la requête de recherche. Vous pouvez supprimer la zone **Mots clés** ou la laisser vide. 
     
@@ -326,13 +326,13 @@ Lorsque vous exportez des données à partir du service d’itinérance Office, 
     
  **Pour exporter les données du service d’itinérance Office :**
   
-1. Lorsque la recherche que vous avez créée à l’étape précédente est terminée, cliquez sur l’onglet **recherche** en haut de la page, puis cliquez sur la case à cocher en regard de la recherche. Vous devrez peut-être ![cliquer](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) sur Actualiser l' **actualisation** pour afficher la recherche. 
+1. Lorsque la recherche que vous avez créée à l’étape précédente est terminée, cliquez sur l’onglet **recherche** en haut de la page, puis cliquez sur la case à cocher en regard de la recherche. Vous devrez peut-être ![cliquer](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) sur Actualiser l' **actualisation** pour afficher la recherche. 
     
-2. Sur la page flyout de recherche, ![cliquez sur Exporter les](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) résultats de recherche **plus en plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
+2. Sur la page flyout de recherche, ![cliquez sur Exporter les](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) résultats de recherche **plus en plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
     
 3. Sur la page **Exporter les résultats** , sélectionnez les options recommandées pour exporter les données d’utilisation. 
     
-    ![Options d’exportation lors de l’exportation des données d’utilisation du service d’itinérance Office](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
+    ![Options d’exportation lors de l’exportation des données d’utilisation du service d’itinérance Office](../media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
     a. Sous **options de sortie**, sélectionnez la première option (**tous les éléments, sauf ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons**) pour exporter uniquement les éléments indexés.
     
@@ -350,7 +350,7 @@ Lorsque vous exportez des données à partir du service d’itinérance Office, 
     
 7. Sous **Clé d’exportation**, cliquez sur **Copier dans le Presse-papiers**. Cette clé est utilisée à l’étape 10 pour télécharger les résultats de la recherche.
     
-8. Cliquez ![sur Exporter les résultats](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d’exportation. 
+8. Cliquez ![sur Exporter les résultats](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d’exportation. 
     
 9. Dans la fenêtre contextuelle en bas de la page, cliquez sur **ouvrir** pour ouvrir l’outil d' **exportation de découverte électronique de Microsoft Office 365**. L' **outil d’exportation de découverte électronique** sera installé lors du premier téléchargement des résultats de recherche. 
     

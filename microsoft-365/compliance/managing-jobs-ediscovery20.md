@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+description: Les travaux eDiscovery avancés vous aident à suivre l’état des processus de longue durée liés à l’exécution de différentes tâches eDiscovery avancées.
+ms.openlocfilehash: eca2eff32b54f783c6c983a8a20237db2faf2240
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960330"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071571"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Gérer les travaux dans Advanced eDiscovery
 
@@ -40,7 +40,7 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 |Préparation des données pour l’exportation | Un utilisateur exporte des documents à partir d’un jeu de révision. Une fois le processus d’exportation terminé, les utilisateurs peuvent télécharger les données exportées sur un ordinateur local. Pour plus d’informations, consultez la rubrique [Export case Data](exporting-data-ediscover20.md). | 
 |Préparation de la résolution des erreurs |Lorsqu’un utilisateur sélectionne un fichier et crée une nouvelle correction d’erreur dans la vue d’erreur sous l’onglet **traitement** d’un cas, la première étape du processus consiste à télécharger le fichier contenant l’erreur de traitement vers un emplacement de stockage Azure dans le Cloud Microsoft. Ce travail effectue le suivi de la progression du processus de chargement. Pour plus d’informations sur le flux de travail de correction des erreurs, consultez la rubrique [erreur de correction lors du traitement des données](error-remediation.md). | 
 |Préparation de l’aperçu de la recherche | Une fois qu’un utilisateur a créé et exécuté une nouvelle recherche (ou réexécute une recherche existante), l’outil de recherche prépare un exemple de sous-ensemble d’éléments (correspondant à la requête de recherche) qui peut être affiché en aperçu. L’aperçu des résultats de la recherche vous permet de déterminer l’efficacité de la recherche.  Pour plus d’informations, reportez-vous [à la rubrique Collect Data for a case](collecting-data-for-ediscovery.md#view-search-results-and-statistics). | 
-|Réindexation des données du dépositaire | Lorsque vous ajoutez un dépositaire à un cas, tous les éléments partiellement indexés des sources de données sélectionnées du dépositaire sont réindexés par un processus appelé *indexation avancée*. Cette tâche est également déclenchée lorsque vous cliquez sur **mettre à jour l’index** dans la vue index sous l’onglet **traitement** d’un cas. Pour plus d’informations, consultez la rubrique [Advanced Indexing of dépositaire Data](indexing-custodian-data.md).
+|Réindexation des données du dépositaire | Lorsque vous ajoutez un dépositaire à un cas, tous les éléments partiellement indexés des sources de données sélectionnées du dépositaire sont réindexés par un processus appelé *indexation avancée*. Cette tâche est également déclenchée lorsque vous cliquez sur **mettre à jour l’index** sous l’onglet **traitement** d’un incident et lorsque vous mettez à jour l’index d’un dépositaire spécifique sur la page flyout propriétés du dépositaire. Pour plus d’informations, consultez la rubrique [Advanced Indexing of dépositaire Data](indexing-custodian-data.md).
 |Exécution de l’analyse | Un utilisateur analyse les données d’un jeu de réexamen en exécutant des outils d’analyse eDiscovery avancés, tels que la détection de la détection des doublons, l’analyse du Threading de messagerie et l’analyse des thèmes. Pour plus d’informations, consultez [la rubrique Analyze Data in a Review Set](analyzing-data-in-review-set.md). | 
 |Marquage des documents | Cette tâche est déclenchée lorsqu’un utilisateur clique sur **Démarrer le marquage du travail** dans le **panneau balisage** lors de la révision des documents dans un jeu de révision. Un utilisateur peut démarrer ce travail après le marquage des documents dans un ensemble de révision, puis les sélectionner en bloc dans le panneau document d’affichage. Pour plus d’informations, voir [tag documents in a Review Set](tagging-documents.md). | 
 |||

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b6f467f938ce14aacb9553b11d51dc63431ab409
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 9a732258e787de3407731f0fdfc98ed07653df71
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862074"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074354"
 ---
 # <a name="export-documents-from-a-review-set"></a>Exporter des documents d’un jeu à réviser
 
@@ -37,7 +37,7 @@ Le téléchargement offre un moyen simple de télécharger du contenu à partir 
 
 Pour télécharger du contenu à partir d’un jeu de révision, commencez par sélectionner les fichiers que vous souhaitez télécharger, puis sélectionnez « Télécharger » sous le menu actions.
 
-![Capture d’écran d’une description d’ordinateur générée automatiquement](media/eDiscoDownload.png)
+![Capture d’écran d’une description d’ordinateur générée automatiquement](../media/eDiscoDownload.png)
 
 ## <a name="export-documents-from-a-review-set"></a>Exporter des documents d’un jeu à réviser
 

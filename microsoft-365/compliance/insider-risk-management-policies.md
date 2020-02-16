@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 161118bb8ff8a5c79ee507d329e20bad1421d8fd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac029959470d92fff9c0c5e942cd667f659e307d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590615"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072821"
 ---
 # <a name="insider-risk-management-policies-preview"></a>Stratégies de gestion des risques Insiders (aperçu)
 
@@ -34,7 +34,7 @@ Le **tableau de bord de stratégie** vous permet d’afficher rapidement les str
 - **Efficacité**de la stratégie : pourcentage déterminé par les alertes totales confirmées divisé par les actions effectuées sur les alertes (c’est-à-dire la somme des alertes qui ont été confirmées ou refermées au cours de l’année précédente).
 - **Actif**: état de l’incident, soit *Oui* , soit *non*.
 
-![Tableau de bord des stratégies de gestion des risques internes](media/insider-risk-policy-dashboard.png)
+![Tableau de bord des stratégies de gestion des risques internes](../media/insider-risk-policy-dashboard.png)
 
 ## <a name="policy-templates"></a>Modèles de stratégie
 

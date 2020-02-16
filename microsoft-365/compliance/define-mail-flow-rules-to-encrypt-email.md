@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l’aide du chiffrement de messages Office 365.
-ms.openlocfilehash: a2f37bff8fa3fd45999a44341cfdb077b4f43e62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bdd479ec09f0ecefd2758e2b8012a1a7351d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595339"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075871"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
 
@@ -48,7 +48,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
 
-4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Dans **nom**, tapez un nom pour la règle, tel que chiffrer le courrier pour DrToniRamos@hotmail.com.
 
@@ -82,7 +82,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 4. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-5. Dans la liste des règles de flux de messagerie, sélectionnez la règle que vous souhaitez modifier afin d’utiliser les nouvelles fonctionnalités de **** ![OME, puis](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)cliquez sur modifier l’icône modifier.
+5. Dans la liste des règles de flux de messagerie, sélectionnez la règle que vous souhaitez modifier afin d’utiliser les nouvelles fonctionnalités de **** ![OME, puis](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)cliquez sur modifier l’icône modifier.
 
 6. Pour activer le chiffrement à l’aide des nouvelles fonctionnalités OME, dans **effectuer les opérations suivantes**, sélectionnez **modifier la sécurité des messages** , puis **appliquer le chiffrement de messages Office 365 et protection des droits**. Sélectionnez un modèle RMS dans la liste, choisissez **Enregistrer** , puis **OK**.
 
@@ -106,7 +106,7 @@ Si vous n’avez pas encore déplacé votre organisation Office 365 vers les nou
 
 3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
 
-4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Dans **nom**, tapez un nom pour la règle, tel que chiffrer le courrier pour DrToniRamos@hotmail.com.
 
@@ -164,7 +164,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
 
-4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Dans **nom**, tapez le nom de la règle, par exemple supprimer le chiffrement du courrier entrant.
 
@@ -200,7 +200,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Chiffrement dans Office 365](encryption.md)
 

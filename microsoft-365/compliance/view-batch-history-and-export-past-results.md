@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Découvrez comment afficher des informations détaillées pour les sessions de lots d’exportation sélectionnées et comment annuler la dernière session d’exportation dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 0309c84bb28f4034f3a0ec8726a21ca2a4b4f22f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a13faf7a0c81eb22498239b5ac9f26cce52387f6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601261"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069113"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Afficher l’historique des lots et exporter les résultats passés dans Office 365 Advanced eDiscovery
 
@@ -38,19 +38,19 @@ La boîte de dialogue Exporter l’historique fournit des informations détaill�
     
 2. À droite du nom du lot d’exportation, sélectionnez l’icône **historique du lot** : 
     
-    ![Icône d’exportation de l’historique par lots](media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
+    ![Icône d’exportation de l’historique par lots](../media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
   
     La boîte de dialogue historique du lot s’affiche.
     
-    ![Exporter l’historique par lots](media/04c5b75c-348c-491d-b4fe-716659333890.png)
+    ![Exporter l’historique par lots](../media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
 3. S’il est nécessaire de restaurer une session précédente, cliquez sur **Annuler dernière session**. La restauration peut être effectuée plusieurs fois, ce qui annule la dernière session.
     
-4. Si vous souhaitez télécharger des données à tout moment à partir d’une session d’exportation exécutée précédemment **** , cliquez ![sur l’icône de téléchargement](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) exporter l’icône téléchargement de l’historique par lots en regard du lot d’export à exporter. 
+4. Si vous souhaitez télécharger des données à tout moment à partir d’une session d’exportation exécutée précédemment **** , cliquez ![sur l’icône de téléchargement](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) exporter l’icône téléchargement de l’historique par lots en regard du lot d’export à exporter. 
     
 5. Lorsque la boîte de dialogue **signature d’accès partagé** s’affiche, cliquez sur **copier dans le presse-papiers** pour copier les données de session d’exportation vers l’ordinateur local, puis cliquez sur **Fermer**. La boîte de dialogue &amp; de l' **outil d’exportation de découverte électronique** du centre de sécurité Office 365 s’affiche. 
     
-    ![Boîte de dialogue Exporter la découverte électronique](media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
+    ![Boîte de dialogue Exporter la découverte électronique](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
 6. Dans la boîte de dialogue **outil d’exportation de découverte électronique** : 
     

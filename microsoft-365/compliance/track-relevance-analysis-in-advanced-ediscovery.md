@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Découvrez comment afficher et interpréter la pertinence état de formation et résultats pour les problèmes de cas dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 5fa9fe49f1a644f2a64321c1ec106b11c487c885
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 224a817e662462d0c51650e7bd364e717dbfbd62
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601401"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069489"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Suivi de l’analyse de pertinence dans Office 365 Advanced eDiscovery
 
@@ -44,7 +44,7 @@ Dans Advanced eDiscovery, l’onglet suivi de pertinence affiche la validité ca
     
     Dans l’exemple, une évaluation réussie pour un problème est illustrée par l’indicateur de progression des couleurs terminées et la coche. Le marquage est en cours, mais le cas est toujours considéré comme instable (l’état de stabilité apparaît également dans une info-bulle). La recommandation suivante est la « formation ». 
     
-    ![Formation de suivi de pertinence étape 1](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
+    ![Formation de suivi de pertinence étape 1](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
     L’affichage développé affiche des informations et des options supplémentaires. La marge d’erreur actuelle affichée est la marge d’erreur du rappel dans l’état actuel de l’évaluation, étant donné les fichiers d’évaluation existants (déjà balisés).
     
@@ -55,7 +55,7 @@ Dans Advanced eDiscovery, l’onglet suivi de pertinence affiche la validité ca
     
     Dans le **suivi**de **pertinence** \> , l’indicateur de progression de formation et le Conseil d’outils indiquent le nombre estimé d’échantillons supplémentaires nécessaires pour atteindre la stabilité. Cette estimation fournit une indication pour la formation supplémentaire requise.
     
-    ![Formation de suivi de pertinence](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Formation de suivi de pertinence](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
 2. Lorsque vous avez fini d’étiqueter et si vous devez poursuivre la formation, cliquez sur **formation**. Un autre exemple de jeu de fichiers est généré à partir du jeu de fichiers chargé pour une formation supplémentaire. Vous revenez ensuite à l’onglet balise pour marquer et former davantage de fichiers.
     
@@ -100,15 +100,15 @@ S’il existe des incohérences dans le balisage de fichier, cela peut avoir une
 
 Dans l' **onglet \> suivi de pertinence** , développez la ligne d’un problème, puis en regard de **résultats détaillés**, cliquez sur **Afficher**. Les volets de résultats détaillés sont affichés, comme illustré ci-dessous.
   
-![Résultats détaillés de la formation de pertinence](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Résultats détaillés de la formation de pertinence](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Synthèse des marquages
 
  Dans l’exemple ci-dessous, le **Résumé de marquage** affiche les totaux pour chaque processus d’évaluation, de formation et de marquage de fichier de rattrapage. 
   
-![Résumé du marquage du suivi de pertinence](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Résumé du marquage du suivi de pertinence](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 Un mot clé est une chaîne, un mot, une phrase ou une séquence de mots unique identifiée par Advanced eDiscovery comme un indicateur significatif de la pertinence d’un fichier. Le mot clé de liste de colonnes « include » et les pondérations dans les fichiers marqués comme pertinents et les colonnes « Exclude » répertorient les mots clés et les pondérations dans les fichiers marqués comme non pertinents.
   
@@ -120,7 +120,7 @@ La liste de mots-clés eDiscovery avancée peut être utilisée pour compléter 
 
 Le volet progression de la **formation** inclut un graphique de progression de formation et un affichage d’indicateur de qualité, comme illustré dans l’exemple ci-dessous. 
   
-![Avancement de la formation de suivi de pertinence](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Avancement de la formation de suivi de pertinence](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
  **Indicateur de qualité de formation**: affiche l’évaluation de la cohérence des balises comme suit :
   
@@ -156,7 +156,7 @@ Le volet **résultats du calcul par lots** inclut le nombre de fichiers dont la 
 
 Le volet **statistiques de formation** affiche les statistiques et les graphiques basés sur les résultats de la formation avancée eDiscovery. 
   
-![Statistiques de la formation de suivi de pertinence](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
+![Statistiques de la formation de suivi de pertinence](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 Cet affichage montre les éléments suivants :
   

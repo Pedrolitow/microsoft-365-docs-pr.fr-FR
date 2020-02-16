@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 18d67983d4e5e934e606944c1502dd76331812a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dffbc68714470e65557c58ded710ae53d64a3868
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597631"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070081"
 ---
 # <a name="review-the-data-in-evidence"></a>Consulter les données dans des preuves
 
@@ -48,14 +48,14 @@ Cette vue affiche diverses propriétés de métadonnées associées au document 
 
 Voici un exemple de métadonnées de fichier pour un document. Pour plus d’informations sur les champs de métadonnées, voir [document Metadata Fields in Data investigations (Preview)](document-metadata-fields.md).
 
-![Panneau métadonnées de fichier](media/Reviewimage2.png)
+![Panneau métadonnées de fichier](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Affichage natif
 
 La visionneuse Native affiche l’affichage le plus précis d’un document dans son format natif. L’affichage natif est pris en charge pour des centaines de types de fichiers et est destiné à afficher des documents dans l’expérience Native la plus réelle possible. Pour les fichiers Microsoft Office, la visionneuse Native utilise la version Web des applications Office. Cela vous permet d’afficher du contenu tel que des commentaires dans différents documents Office, formules et lignes/colonnes masquées dans Excel, ainsi que l’affichage notes dans PowerPoint.
 
 ![Affichage natif
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Affichage de texte
 
@@ -70,12 +70,12 @@ La visionneuse de texte fournit une vue du texte extrait d’un fichier. Elle ig
 **Exemple de mise en surbrillance des compteurs de ligne et de recherche dans le texte et la barre de défilement**
 
 ![Affichage de texte
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 **Exemple de vue diff**
 
 ![Vue diff
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Annoter l’affichage
 
@@ -101,7 +101,7 @@ La vue Annoted fournit également les fonctionnalités de navigation suivantes 
 
 **Exemple d’affichage annoter**
 
-![Annoter l’affichage](media/Reviewimage1.png)
+![Annoter l’affichage](../media/Reviewimage1.png)
 
 > [!NOTE]
 > Les annotations sont appliquées à une copie du document qui a été ajouté à l’ensemble de preuves. Les documents d’origine dans le service actif ne sont pas annotés.

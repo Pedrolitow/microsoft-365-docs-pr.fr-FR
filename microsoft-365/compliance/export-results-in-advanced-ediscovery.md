@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Découvrez comment définir des options pour l’exportation des résultats à partir d’Office 365 Advanced eDiscovery, notamment la procédure de spécification des paramètres pour un lot d’exportation. '
-ms.openlocfilehash: ae25c0aac64a437f902ec5533453a05b8bdb5be6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9194bc9dc44587fb03798c2107c408d2afb2ae70
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588314"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074293"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exporter les résultats dans Office 365 Advanced eDiscovery
 
@@ -68,18 +68,18 @@ L’outil d’exportation de découverte électronique est utilisé pour exporte
     
     - Pour exporter les résultats pour les nouveaux fichiers que vous avez ajoutés à un cas existant, continuez avec votre lot actuel. Pour créer une session dans le lot, sélectionnez le même numéro de lot, puis cliquez sur **créer une session d’exportation** vous pouvez utiliser cette option pour exporter les mêmes paramètres que le lot précédent, de manière incrémentielle. 
     
-    - Pour exporter vers un nouveau lot, cliquez sur **Ajouter** ![une](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icône Ajouter et entrez un nouveau nom dans le **champ nom du lot** (ou acceptez la valeur par défaut) et une description dans **Description du lot**. Cliquez sur **OK**.
+    - Pour exporter vers un nouveau lot, cliquez sur **Ajouter** ![une](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icône Ajouter et entrez un nouveau nom dans le **champ nom du lot** (ou acceptez la valeur par défaut) et une description dans **Description du lot**. Cliquez sur **OK**.
     
-    - Pour modifier un nom de lot ou une description, sélectionnez le nom dans **Exporter le lot**, cliquez](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)sur **modifier** ![l’icône d’édition, puis modifiez les champs.
+    - Pour modifier un nom de lot ou une description, sélectionnez le nom dans **Exporter le lot**, cliquez](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)sur **modifier** ![l’icône d’édition, puis modifiez les champs.
     
       > [!NOTE]
       > Une fois que vous avez exécuté des sessions pour un lot d’exportation, il est impossible de les supprimer. De plus, seuls certains paramètres peuvent être modifiés une fois la première session exécutée. 
   
-    - Pour créer un lot d’exportation en double, sélectionnez **dupliquer un lot** ![d’exportation en](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) double créez un lot d’exportation en double et entrez un nom et une description pour le lot dupliqué dans le panneau. 
+    - Pour créer un lot d’exportation en double, sélectionnez **dupliquer un lot** ![d’exportation en](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) double créez un lot d’exportation en double et entrez un nom et une description pour le lot dupliqué dans le panneau. 
     
-    - Pour supprimer un lot d’exportation, sélectionnez **supprimer** ![supprimer une icône](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)exporter un lot.
+    - Pour supprimer un lot d’exportation, sélectionnez **supprimer** ![supprimer une icône](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)exporter un lot.
     
-    - Pour afficher l’historique d’un lot, sélectionnez **** ![l’icône](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l’historique.
+    - Pour afficher l’historique d’un lot, sélectionnez **** ![l’icône](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l’historique.
     
 2. Sous **remplissage**, sélectionnez **inclure uniquement les fichiers au-dessus du score de découpage de pertinence** et/ou **affiner l’exportation de lot** si vous souhaitez affiner les paramètres de votre lot d’exportation. 
     
@@ -111,7 +111,7 @@ L’outil d’exportation de découverte électronique est utilisé pour exporte
   
 6. Cliquez sur **modifier** pour définir les paramètres de champ « pour la révision ». 
     
-    ![Configurer les paramètres de champ de révision pour un lot d’exportation](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![Configurer les paramètres de champ de révision pour un lot d’exportation](../media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
    - Sous **pour la révision des paramètres de champ**, dans la liste déroulante **Sélectionner un scénario** , sélectionnez le scénario et l’étendue de la révision. Les paramètres sont affichés en fonction de votre sélection.
     
@@ -159,13 +159,13 @@ L’outil d’exportation de découverte électronique est utilisé pour exporte
     
 9. Dans la fenêtre **Télécharger les fichiers** , cliquez sur **copier dans le presse-papiers** pour copier la clé d’exportation. 
     
-    ![Télécharger des fichiers](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
+    ![Télécharger des fichiers](../media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
 10. Cliquez sur **Fermer**. 
     
     L’outil d’exportation de découverte électronique est démarré.
     
-    ![Outil d’exportation de la découverte électronique](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
+    ![Outil d’exportation de la découverte électronique](../media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
 11. Dans l' **outil d’exportation de découverte électronique**:
     

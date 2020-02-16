@@ -1,7 +1,7 @@
 ---
 title: Securities and Exchange Commission-réglementation sur la conformité et l’intégrité des systèmes (SIC)
 description: Les règles du SIC s’appliquent aux entités SCI, qui incluent de telles organisations d’autoréglementation (SROs) en tant qu’échanges boursiers et d’options, de prestataires de services de compensation et autres systèmes commerciaux (ATSs).
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601861"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071221"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission : réglementation sur la conformité et l’intégrité des systèmes (SIC)
 
@@ -52,9 +52,9 @@ Ce document fournit une liste de contrôle approfondie des zones ciblées du SIC
 - [Guide de mise en œuvre de la réglementation SIC](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers): mappe les fonctionnalités Azure sur le règlement et détaille la responsabilité partagée de la conformité.
 - [Conception d’applications Azure fiables](https://docs.microsoft.com/azure/architecture/resiliency/): présentation succincte de la façon de créer la fiabilité à chaque étape de la conception d’une application Azure.
 - [Conception d’applications à haut niveau de disponibilité](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): les développeurs peuvent s’assurer que leurs applications de stockage Azure sont hautement disponibles.
-- [Guide d'évaluation des risques et de conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
+- [Guide d'évaluation des risques et de la conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de régulation.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Que signifie les responsabilités partagées lors de l’utilisation de la technologie Cloud ?**
 
@@ -70,11 +70,11 @@ Les organismes financiers ou les entités SCI, soumis à cette réglementation, 
 - [Continuité de l’activité et récupération d’urgence (BCDR) : régions couplées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [Plan de conformité des principes de réglementation de l’informatique en nuage et de Microsoft Online Services](https://aka.ms/FinServ-Guide-US)
 - [Programme de conformité des services financiers de Microsoft Cloud](https://aka.ms/FSCP-Print)
-- [Conformité des services financiers dans Azure](https://aka.ms/FinServ-Compliance-Azure)
+- [Conformité destinée au secteur des services financiers dans Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Services financiers Microsoft](https://aka.ms/FinServ-Compliance)
 - [Règles Microsoft et SEC 17A -4](offering-SEC-17a-4.md)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
+## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf) (disponible uniquement en anglais pour le moment).

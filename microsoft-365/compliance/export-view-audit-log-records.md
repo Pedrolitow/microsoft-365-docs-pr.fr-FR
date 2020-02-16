@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Après avoir exporté et téléchargé les résultats d’une recherche de journal d’audit Office 365 dans un fichier CSV, vous pouvez utiliser la fonctionnalité transformation JSON de l’éditeur de la requête Power dans Excel pour fractionner chaque propriété de l’objet JSON dans la colonne AuditData en sa propre colonne. Cela peut vous aider à localiser rapidement les données d’audit spécifiques que vous recherchez.
-ms.openlocfilehash: de116db76597c6eb7966541c3cc0f34f91c06c70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594605"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074075"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exporter, configurer et afficher des enregistrements du journal d’audit
 
@@ -36,7 +36,7 @@ La première étape consiste à rechercher dans le journal d’audit, puis à ex
     
 2. Cliquez sur **Exporter les résultats** , puis sélectionnez **Télécharger tous les résultats**. 
     
-   ![Cliquez sur Télécharger tous les résultats](media/ExportAuditSearchResults.png)
+   ![Cliquez sur Télécharger tous les résultats](../media/ExportAuditSearchResults.png)
 
    Cette option permet d’exporter tous les enregistrements d’audit à partir de la recherche de journal d’audit que vous avez exécutée à l’étape 1, et de télécharger les données brutes du journal d’audit dans un fichier CSV. 
 
@@ -44,7 +44,7 @@ La première étape consiste à rechercher dans le journal d’audit, puis à ex
 
 3. Cliquez sur **enregistrer > enregistrer sous** et enregistrez le fichier CSV sur votre ordinateur local. Le téléchargement de nombreux résultats de recherche prend un certain temps. C’est généralement le cas lors de la recherche de toutes les activités ou d’une plage de dates étendue. Un message en bas des fenêtres s’affiche lorsque le téléchargement du fichier CSV est terminé.
  
-   ![Message affiché lorsque le téléchargement du fichier CSV est terminé](media/ExportAuditSearchResultsFinish.png)
+   ![Message affiché lorsque le téléchargement du fichier CSV est terminé](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
   > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter plus de cette limite, essayez d’utiliser une plage de dates pour réduire le nombre d’enregistrements du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.
@@ -57,29 +57,29 @@ L’étape suivante consiste à utiliser la fonctionnalité transformation JSON 
     
 2.  Sous l’onglet **données** , dans le groupe de rubans **obtenir des données de transformation de &** , cliquez sur **de texte/CSV**.
 
-    ![Sous l’onglet données, cliquez sur de texte/CSV](media/JSONTransformOpenCSVFile.png)
+    ![Sous l’onglet données, cliquez sur de texte/CSV](../media/JSONTransformOpenCSVFile.png)
 
 3. Ouvrez le fichier CSV que vous avez téléchargé à l’étape 1.
     
 4. Dans la fenêtre affichée, cliquez sur **transformer les données**.
 
-   ![Cliquez sur transformer les données](media/JSONOpenPowerQuery.png)
+   ![Cliquez sur transformer les données](../media/JSONOpenPowerQuery.png)
 
 Le fichier CSV s’ouvre dans l' **éditeur de requête**. Il existe quatre colonnes : **CreationDate**, **userids**, **Operations**et **AuditData**. La colonne **AuditData** est un objet JSON qui contient plusieurs propriétés. L’étape suivante consiste à créer une colonne pour chaque propriété de l’objet JSON.
     
 5. Cliquez avec le bouton droit sur le titre dans la colonne **AuditData** , cliquez sur **transformer**, puis sur **JSON**. 
  
-   ![Cliquez avec le bouton droit sur la colonne AuditData, cliquez sur transformer, puis sélectionnez JSON](media/JSONTransform.png)
+   ![Cliquez avec le bouton droit sur la colonne AuditData, cliquez sur transformer, puis sélectionnez JSON](../media/JSONTransform.png)
 
 6. Dans le coin supérieur droit de la colonne **AuditData** , cliquez sur l’icône développer.
     
-   ![Dans la colonne AuditData, cliquez sur l’icône développer.](media/JSONTransformExpandIcon.png)
+   ![Dans la colonne AuditData, cliquez sur l’icône développer.](../media/JSONTransformExpandIcon.png)
 
    Une liste partielle des propriétés dans les objets JSON dans la colonne **AuditData** s’affiche.
 
 7. Cliquez sur **charger plus** pour afficher toutes les propriétés dans les objets JSON dans la colonne **AuditData** .
 
-   ![Cliquez sur charger plus pour afficher toutes les propriétés dans l’objet JSON.](media/JSONTransformLoadJSONProperties.png)
+   ![Cliquez sur charger plus pour afficher toutes les propriétés dans l’objet JSON.](../media/JSONTransformLoadJSONProperties.png)
 
    Vous pouvez désélectionner la case à cocher en regard d’une propriété que vous ne voulez pas inclure. La suppression des colonnes qui ne sont pas utiles pour votre enquête est un bon moyen de réduire la quantité de données affichées dans le journal d’audit. 
 

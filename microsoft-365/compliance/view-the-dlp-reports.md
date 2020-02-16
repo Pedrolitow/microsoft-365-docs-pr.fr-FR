@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les rapports DLP dans Office 365, vous pouvez rapidement afficher le nombre de correspondances de stratégies DLP, de remplacements ou de faux positifs ; voir si elles sont recherchées dans le temps ; filtrer le rapport de différentes manières ; et affichez des détails supplémentaires en sélectionnant un point sur une ligne sur le graphique.
-ms.openlocfilehash: 1605e2ebed9ada5903402ae5facdb40ce2f12c39
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c00047680f684e3845c4383face09c2cee579721
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601231"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068751"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 
@@ -59,19 +59,19 @@ Tous les rapports DLP peuvent afficher les données de la période de quatre moi
   
 Ces rapports sont disponibles dans le tableau de &amp; **bord**rapports \> **** \> du centre de sécurité et de conformité.
   
-![Rapport de correspondances de stratégie DLP](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![Rapport de correspondances de stratégie DLP](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Afficher la justification envoyée par un utilisateur pour une substitution
 
 Si votre stratégie DLP permet aux utilisateurs de la remplacer, vous pouvez utiliser le rapport de faux positif et de remplacement pour afficher le texte soumis par les utilisateurs dans le Conseil de stratégie.
   
-![Champ justification dans les détails du rapport de faux positifs et de remplacement DLP](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![Champ justification dans les détails du rapport de faux positifs et de remplacement DLP](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## <a name="take-action-on-insights-and-recommendations"></a>Prendre des mesures sur les informations et les recommandations
 
 Les rapports peuvent indiquer des informations et des recommandations où vous pouvez cliquer sur l’icône d’avertissement rouge pour afficher des détails sur les problèmes potentiels et prendre des mesures correctives possibles.
   
-![Cliquer sur une icône Insights pour afficher les détails et les actions à effectuer](media/51782036-7299-4960-8175-75c2b1637159.png)
+![Cliquer sur une icône Insights pour afficher les détails et les actions à effectuer](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>Autorisations pour les rapports DLP
 

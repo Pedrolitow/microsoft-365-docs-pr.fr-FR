@@ -19,12 +19,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: Une stratégie de gestion des informations constitue un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des événements tels que la durée de rétention des contenus ou les actions que les utilisateurs sont autorisés à effectuer sur ces contenus. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations légales ou administratives, ou elles peuvent simplement appliquer les processus d’entreprise internes.
-ms.openlocfilehash: 3c3ca901674b9ae34aa990f320cf4eb550ea05b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7f977090b147eca427fcd2e4b536821890493950
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588034"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072681"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction aux stratégies de gestion des informations
 
@@ -39,7 +39,7 @@ Pour obtenir des informations sur les procédures, consultez la rubrique [créer
 
 Il existe quatre catégories de base de fonctionnalités de stratégie prédéfinies que les organisations peuvent utiliser individuellement ou en combinaison pour gérer le contenu et les processus. 
   
-![Types de stratégies de contenu](media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+![Types de stratégies de contenu](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
   
 La fonctionnalité de stratégie d’audit aide les organisations à analyser le mode d’utilisation de leurs systèmes de gestion de contenu en consignant les événements et les opérations effectuées sur les documents et les éléments de liste. Vous pouvez configurer la fonctionnalité de stratégie d’audit pour enregistrer des événements tels que la modification, l’affichage, l’archivage, la suppression ou la modification des autorisations d’un document ou d’un élément. Toutes les informations d’audit sont stockées dans un journal d’audit unique sur le serveur et les administrateurs de site peuvent y exécuter des rapports. 
   
@@ -56,19 +56,19 @@ Pour implémenter une stratégie de gestion des informations, vous devez l’ajo
   
 Lorsque vous ajoutez une stratégie de collection de sites à un type de contenu de site et qu’une instance de ce type de contenu de site est ajoutée à une liste ou une bibliothèque, le propriétaire de cette liste ou bibliothèque ne peut pas modifier la stratégie de collection de sites pour la liste ou la bibliothèque. L’ajout d’une stratégie de collection de sites à un type de contenu de site constitue un moyen efficace pour s’assurer que les stratégies de collection de sites sont appliquées à chaque niveau de la hiérarchie de votre site.
   
-![Lien de modèle de stratégie de type de contenu sur la page Paramètres du site](media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Lien de modèle de stratégie de type de contenu sur la page Paramètres du site](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
  **Créer une stratégie de gestion des informations pour un type de contenu de site dans la Galerie de types de contenu de site du site de niveau supérieur, puis ajouter ce type de contenu à une ou plusieurs listes ou bibliothèques** Vous pouvez également créer une stratégie de gestion des informations directement pour un type de contenu de site, puis associer une instance de ce type de contenu de site à plusieurs listes ou bibliothèques. Si vous créez une stratégie de gestion des informations de cette façon, chaque élément de la collection de sites de ce type de contenu ou d’un type de contenu qui hérite de ce type de contenu est associé à la stratégie. Toutefois, si vous créez directement une stratégie de gestion des informations pour un type de contenu de site, il est plus difficile de réutiliser cette stratégie de gestion des informations dans d’autres collections de sites, car les stratégies créées de cette manière ne peuvent pas être exportées. 
   
-![Lien de types de contenu de site sur la page Paramètres du site](media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+![Lien de types de contenu de site sur la page Paramètres du site](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
-![Lien de stratégie de gestion des informations sur la page des paramètres d’un type de contenu de site](media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
+![Lien de stratégie de gestion des informations sur la page des paramètres d’un type de contenu de site](../media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
   
 Remarque pour contrôler les stratégies utilisées dans une collection de sites, les administrateurs de collections de sites peuvent désactiver la possibilité de définir des fonctionnalités de stratégie directement sur un type de contenu. Lorsque cette restriction est appliquée, les utilisateurs qui créent des types de contenu sont limités à la sélection de stratégies dans la liste stratégies de collection de sites.
   
  **Créer une stratégie de gestion des informations pour une liste ou une bibliothèque** Si votre organisation a besoin d’appliquer une stratégie de gestion des informations spécifique à un ensemble très limité de contenu, vous pouvez créer une stratégie de gestion des informations qui s’applique uniquement à une liste ou une bibliothèque individuelle. Cette méthode de création d’une stratégie de gestion des informations est la moins flexible, car la stratégie s’applique uniquement à un seul emplacement, et elle ne peut pas être exportée ou réutilisée pour d’autres emplacements. Toutefois, il se peut que vous deviez parfois créer des stratégies de gestion des informations uniques avec une applicabilité limitée pour résoudre des situations spécifiques. 
   
-![Lien stratégies de gestion des informations sur la page Paramètres de la bibliothèque de documents](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Lien stratégies de gestion des informations sur la page Paramètres de la bibliothèque de documents](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
 Notes 
   

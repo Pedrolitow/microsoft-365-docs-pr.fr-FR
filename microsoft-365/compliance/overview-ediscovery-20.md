@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle version de Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 30b69bbd80799b0f3e32b008ec1d4affc8be6605
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b3583037953d8dcb36ea6b3f7a2ba521e47fd9c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662010"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071049"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Vue d’ensemble de la solution avancée eDiscovery dans Microsoft 365
 
@@ -31,7 +31,7 @@ La solution eDiscovery avancée de Microsoft 365 repose sur les fonctionnalités
 
 Le flux de travail intégré de Advanced eDiscovery s’aligne sur le processus eDiscovery décrit par le modèle de référence de découverte électronique (EDRM). 
 
-![Modèle de référence de découverte électronique (EDRM)](media/EDRMv1.png)
+![Modèle de référence de découverte électronique (EDRM)](../media/EDRMv1.png)
 
 (Image source courtoisie de edrm.net. L’image source a été mise à disposition sous la licence non à l’attribution 3,0 Creative.
 
@@ -57,7 +57,7 @@ Les sections suivantes décrivent chaque étape du flux de travail intégré dan
 
 Pour plus d’informations sur le flux de travail de bout en bout dans Advanced eDiscovery, reportez-vous à cette [vidéo de mécanique Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133). 
 
-![Les onglets dans Advanced eDiscovery suivent le flux de travail EDRM](media/aedisco-homepage-1.png)
+![Les onglets dans Advanced eDiscovery suivent le flux de travail EDRM](../media/aedisco-homepage-1.png)
 
 ## <a name="managing-custodians"></a>Gestion des dépositaires
 

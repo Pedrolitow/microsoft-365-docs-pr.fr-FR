@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: cde55f9dd3a1a9aacc48ba816cd0ef00472dad56
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5636e2e6186107bee3a0116d203910bc7b766990
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661740"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069016"
 ---
 # <a name="view-documents-in-a-review-set"></a>Afficher les documents d’un jeu à réviser
 
@@ -36,14 +36,14 @@ Advanced eDiscovery affiche le contenu par le biais de plusieurs observateurs à
 Ce panneau peut être activé/désactivé pour afficher diverses métadonnées associées au document. Bien que la grille des résultats de la recherche puisse être personnalisée pour afficher des métadonnées spécifiques, il peut s’avérer difficile de faire défiler horizontalement les données lors de la révision des données. Le panneau métadonnées de fichier permet à un utilisateur de basculer sur une vue dans la visionneuse.
 
 ![Panneau métadonnées de fichier
-](media/Reviewimage2.png)
+](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Affichage natif
 
 La visionneuse Native affiche l’affichage le plus enrichi d’un document. Il prend en charge des centaines de types de fichiers et permet d’afficher l’expérience la plus réelle vers Native possible. Pour les fichiers Microsoft Office, la visionneuse utilise la version Web des applications Office pour afficher du contenu tel que des commentaires de document, des formules Excel, des lignes/colonnes masquées et des notes PowerPoint.
 
 ![Affichage natif
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Affichage de texte
 
@@ -56,10 +56,10 @@ La visionneuse de texte fournit une vue du texte extrait d’un fichier. Elle ig
   - L’affichage diff fournit un affichage de comparaison qui met en surbrillance les différences textuelles lors de l’affichage des documents en double.
 
 ![Affichage de texte
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 ![Vue diff
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Annoter l’affichage
 
@@ -86,7 +86,7 @@ L’affichage Annoted propose des fonctionnalités qui permettent aux utilisateu
   - Search : l’utilisateur peut effectuer des recherches dans un document et accéder aux différents accès au sein du document.
     
     ![Annoter l’affichage
-    ](media/Reviewimage1.png)
+    ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Affichage tableau de bord 
 L’affichage tableau de bord vous permet de visualiser et de synthétiser les données dans la grille des résultats de la recherche. Dans cet affichage, vous pouvez créer des widgets personnalisés pour faciliter et faciliter l’analyse et la création de rapports sur votre jeu de révision. Une fois que vous avez créé vos widgets, vous pouvez interagir avec ceux-ci pour obtenir le nombre d’éléments ou pour créer une recherche. 

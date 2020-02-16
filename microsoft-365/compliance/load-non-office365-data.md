@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3be5e4054e34cabb61505d48524feb2dbbfd0e44
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4db0b40d485c4c1107bdcb0d49616cadb15b1915
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600571"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072157"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>Charger des données non-Office 365 dans une preuve
 
@@ -52,11 +52,11 @@ L’utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit
 
 2. Cliquez sur le bouton **Télécharger les fichiers** pour démarrer l’Assistant importation de données autres que Office 365.
 
-![Charger des fichiers](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+![Charger des fichiers](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
 3. La première étape de l’Assistant consiste à préparer un objet BLOB Azure sécurisé pour les fichiers à charger.  Une fois la préparation terminée, cliquez sur le bouton **suivant : charger des fichiers** .
 
-![Préparation à l’importation de données non Office 365](media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+![Préparation à l’importation de données non Office 365](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 4. Dans l’étape **Télécharger les fichiers** , spécifiez le chemin d' **accès à l’emplacement des fichiers**, c’est ici que se trouvent les données autres que Office 365 que vous prévoyez d’importer.  La définition de l’emplacement correct garantit la mise à jour correcte de la commande AzCopy.
 
@@ -65,11 +65,11 @@ L’utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit
 
 5. Copiez la commande prédéfinie en cliquant sur le lien **copier dans le presse-papiers** . Démarrez une invite de commandes Windows, collez la commande et appuyez sur entrée.  Les fichiers sont téléchargés vers le stockage BLOB Azure sécurisé pour l’étape suivante.
 
-![Charger des fichiers pour l’importation de données non-Office 365](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+![Charger des fichiers pour l’importation de données non-Office 365](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-![Utiliser AzCopy pour importer des données autres que Office 365](media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+![Utiliser AzCopy pour importer des données autres que Office 365](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
 6. Enfin, revenez à la sécurité & conformité et cliquez sur le bouton **suivant : traiter les fichiers** .  Cela lance le traitement, l’extraction de texte et l’indexation des fichiers téléchargés.  Vous pouvez suivre la progression du traitement ou dans l’onglet **travaux** .  Une fois terminé, les nouveaux fichiers sont disponibles dans l’ensemble de preuves.  Une fois le traitement terminé, vous pouvez faire disparaître l’Assistant.
 
-![Fichiers du processus d’importation non-Office 365](media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+![Fichiers du processus d’importation non-Office 365](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 

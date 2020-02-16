@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descriptions des propriétés supplémentaires incluses dans un enregistrement de journal d’audit Office 365.
-ms.openlocfilehash: d479a063cd6a97fd2f099130a8c9e183e0663798
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: fc6a237b881f7154219fcbff464825d1cec63f0c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862054"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075491"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Propriétés détaillées dans le journal d’audit Office 365
 
@@ -39,11 +39,11 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service Off
 |**Propriété**|**Description**|**Service Office 365 avec cette propriété**|
 |:-----|:-----|:-----|
 |Actor|L’utilisateur ou le compte de service qui a effectué l’action.|Azure Active Directory|
-|AddOnName|Nom d’un module complémentaire ajouté, supprimé ou mis à jour dans une équipe. Le type de modules complémentaires de Microsoft teams est un bot, un connecteur ou un onglet.|Microsoft Teams|
-|AddOnType|Type d’un module complémentaire ajouté, supprimé ou mis à jour dans une équipe. Les valeurs suivantes indiquent le type de module complémentaire.  <br/> **1** -indique un bot.<br/> **2** -indique un connecteur.<br/> **3** -indique un onglet.|Microsoft Teams|
+|AddOnName|Nom d’un module complémentaire ajouté, supprimé ou mis à jour dans une équipe. Le type de modules complémentaires de Microsoft teams est un bot, un connecteur ou un onglet.|Microsoft Teams|
+|AddOnType|Type d’un module complémentaire ajouté, supprimé ou mis à jour dans une équipe. Les valeurs suivantes indiquent le type de module complémentaire.  <br/> **1** -indique un bot.<br/> **2** -indique un connecteur.<br/> **3** -indique un onglet.|Microsoft Teams|
 |AzureActiveDirectoryEventType|Type d’événement Azure Active Directory. Les valeurs suivantes indiquent le type d’événement.  <br/> **0** -indique un événement de connexion au compte.<br/> **1** -indique un événement de sécurité d’application Azure.|Azure Active Directory|
-|ChannelGuid|ID d’un canal Microsoft Teams. L’équipe dans laquelle se trouve le canal est identifiée par les propriétés **nom** et **TeamGuid** .|Microsoft Teams|
-|ChannelName|Nom d’un canal Microsoft Teams. L’équipe dans laquelle se trouve le canal est identifiée par les propriétés **nom** et **TeamGuid** .|Microsoft Teams|
+|ChannelGuid|ID d’un canal Microsoft Teams. L’équipe dans laquelle se trouve le canal est identifiée par les propriétés **nom** et **TeamGuid** .|Microsoft Teams|
+|ChannelName|Nom d’un canal Microsoft Teams. L’équipe dans laquelle se trouve le canal est identifiée par les propriétés **nom** et **TeamGuid** .|Microsoft Teams|
 |Client|Le périphérique client, le système d’exploitation de l’appareil et le navigateur d’appareil utilisé pour l’événement de connexion (par exemple, Nokia Lumia 920 ; Windows Phone 8 ; Internet Explorer 11).|Azure Active Directory|
 |ClientInfoString|Informations sur le client de messagerie qui a été utilisé pour effectuer l’opération, par exemple une version de navigateur, une version d’Outlook et des informations sur l’appareil mobile|Exchange (activité de boîte aux lettres)|
 |ClientIP|Adresse IP du périphérique utilisé lors de la journalisation de l’activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6.<br/><br/> Pour certains services, la valeur affichée dans cette propriété peut être l'adresse IP d'une application sécurisée (par exemple, Office sur les applications Web) qui appelle le service au nom d'un utilisateur et non l'adresse IP de l'appareil utilisé par la personne ayant effectué l'activité. <br/><br/>De plus, pour l’activité de l’administrateur (ou l’activité effectuée par un compte système) pour les événements associés à Azure Active Directory, l’adresse IP n’est pas consignée et la valeur de la propriété ClientIP est `null`. |Azure Active Directory, Exchange, SharePoint|
@@ -61,7 +61,7 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service Off
 |LogonType|Type d’accès à la boîte aux lettres. Les valeurs suivantes indiquent le type d’utilisateur qui a accédé à la boîte aux lettres.  <br/><br/> **0** -indique un propriétaire de boîte aux lettres.<br/> **1** -indique un administrateur.<br/> **2** -indique un délégué. <br/>**3** -indique le service de transport dans le centre de Microsoft.<br/> **4** -indique un compte de service dans le centre de Microsoft. <br/>**6** -indique un administrateur délégué.|Exchange (activité de boîte aux lettres)|
 |MailboxGuid|GUID Exchange de la boîte aux lettres consultée.|Exchange (activité de boîte aux lettres)|
 |MailboxOwnerUPN|Adresse de messagerie du propriétaire de la boîte aux lettres consultée.|Exchange (activité de boîte aux lettres)|
-|Members|Répertorie les utilisateurs qui ont été ajoutés ou supprimés d’une équipe. Les valeurs suivantes indiquent le type de rôles attribué à l’utilisateur.  <br/><br/> **1** -indique le rôle de propriétaire.<br/> **2** indique le rôle Membre.<br/> **3** indique le rôle Invité. <br/><br/>La propriété Members comprend également le nom de votre organisation et l’adresse e-mail du membre.|Microsoft Teams|
+|Members|Répertorie les utilisateurs qui ont été ajoutés ou supprimés d’une équipe. Les valeurs suivantes indiquent le type de rôles attribué à l’utilisateur.  <br/><br/> **1** -indique le rôle de propriétaire.<br/> **2** indique le rôle Membre.<br/> **3** indique le rôle Invité. <br/><br/>La propriété Members comprend également le nom de votre organisation et l’adresse e-mail du membre.|Microsoft Teams|
 |ModifiedProperties (Name, NewValue, OldValue)|La propriété est incluse pour les événements d’administration, par exemple l’ajout d’un utilisateur en tant que membre d’un site ou d’un groupe d’administration d’une collection de sites. La propriété inclut le nom de la propriété qui a été modifiée (par exemple, le groupe administrateurs de site) la nouvelle valeur de la propriété modifiée (par exemple, l’utilisateur qui a été ajouté en tant qu’administrateur de site, et la valeur précédente de l’objet modifié.|All (activité de l’administrateur)|
 |ObjectID|Pour la journalisation d’audit d’administration Exchange, il s’agit du nom de l’objet modifié par la cmdlet.  <br/> Pour l’activité SharePoint, le nom du chemin d’accès complet de l’URL du fichier ou du dossier auquel un utilisateur a accédé.  <br/> Pour l’activité Azure AD, le nom du compte d’utilisateur qui a été modifié.|Tous|
 |Opération|Nom de l’activité de l’utilisateur ou de l’administrateur. La valeur de cette propriété correspond à la valeur sélectionnée dans la liste déroulante **activités** . Si l’option **afficher les résultats pour toutes les activités** a été sélectionnée, le rapport inclura les entrées de toutes les activités d’utilisateur et d’administration de tous les services. Pour obtenir une description des opérations/activités qui sont consignées dans le journal d’audit Office 365, consultez l’onglet **activités auditées** dans Rechercher dans le [Journal d’audit dans le 365 Office](search-the-audit-log-in-security-and-compliance.md).  <br/> Pour une activité d’administration Exchange, cette propriété identifie le nom de la cmdlet qui a été exécutée.|Tous|
@@ -78,10 +78,10 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service Off
 |SourceFileName|Nom du fichier ou du dossier consulté par l’utilisateur.|SharePoint|
 |SourceRelativeUrl|URL du dossier contenant le fichier consulté par l’utilisateur. La combinaison des valeurs des propriétés **SiteUrl**, **SourceRelativeURL**et **sourceFileName** est identique à la valeur de la propriété **ObjectID** , qui est le nom du chemin d’accès complet au fichier accédé par l’utilisateur.|SharePoint|
 |Subject|Ligne d’objet du message qui a été consulté.|Exchange (activité de boîte aux lettres)|
-|TabType| Type d’onglet ajouté, supprimé ou mis à jour dans une équipe. Les valeurs possibles pour cette propriété sont les suivantes :  <br/><br/> **Code confidentiel Excel** -onglet Excel.  <br/> **Extension** -toutes les applications tierces et tierces ; telles que Schedule Class, VSTS et Forms.  <br/> Onglet **Notes** -OneNote.  <br/> **Pdfpin** -onglet PDF.  <br/> **Powerbi** -un onglet Powerbi.  <br/> **Powerpointpin** -un onglet PowerPoint.  <br/> **Sharepointfiles** -un onglet SharePoint.  <br/> **Page Web** : onglet site Web épinglé.  <br/> **Wiki-onglet** -un onglet wiki.  <br/> **Wordpin** -un onglet Word.|Microsoft Teams|
+|TabType| Type d’onglet ajouté, supprimé ou mis à jour dans une équipe. Les valeurs possibles pour cette propriété sont les suivantes :  <br/><br/> **Code confidentiel Excel** -onglet Excel.  <br/> **Extension** -toutes les applications tierces et tierces ; telles que Schedule Class, VSTS et Forms.  <br/> Onglet **Notes** -OneNote.  <br/> **Pdfpin** -onglet PDF.  <br/> **Powerbi** -un onglet Powerbi.  <br/> **Powerpointpin** -un onglet PowerPoint.  <br/> **Sharepointfiles** -un onglet SharePoint.  <br/> **Page Web** : onglet site Web épinglé.  <br/> **Wiki-onglet** -un onglet wiki.  <br/> **Wordpin** -un onglet Word.|Microsoft Teams|
 |Target|Utilisateur sur lequel l’action (identifiée dans la propriété **operation** ) a été effectuée. Par exemple, si un utilisateur invité est ajouté à SharePoint ou à une équipe Microsoft, cet utilisateur est mentionné dans cette propriété.|Azure Active Directory|
-|TeamGuid|ID d’une équipe dans Microsoft Teams.|Microsoft Teams|
-|TeamName|Nom d’une équipe dans Microsoft Teams.|Microsoft Teams|
+|TeamGuid|ID d’une équipe dans Microsoft Teams.|Microsoft Teams|
+|TeamName|Nom d’une équipe dans Microsoft Teams.|Microsoft Teams|
 |UserAgent|Informations sur le navigateur de l’utilisateur. Ces informations sont fournies par le navigateur.|SharePoint|
 |UserDomain|Informations d’identité sur l’organisation cliente de l’utilisateur (acteur) qui a effectué l’action.|Azure Active Directory|
 |UserID|Utilisateur qui a effectué l’action (spécifié dans la propriété **operation** ) ayant provoqué l’enregistrement journalisé. Les enregistrements des activités effectuées par les comptes système (par exemple, SHAREPOINT\system ou NT AUTHORITY\SYSTEM) sont également inclus dans le journal d’audit.|Tous|
@@ -97,4 +97,4 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service Off
 
 Les propriétés décrites ci-dessus s’affichent également lorsque vous cliquez sur **informations supplémentaires** lorsque vous affichez les détails d’un événement spécifique. 
   
-![Cliquez sur Informations supplémentaires pour afficher les propriétés détaillées de l’enregistrement d’événement du journal d’audit](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![Cliquez sur Informations supplémentaires pour afficher les propriétés détaillées de l’enregistrement d’événement du journal d’audit](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'Découvrez comment trouver les résultats d’un module de processus exécuté dans Office 365 Advanced eDiscovery, y compris l’état de la tâche et le résumé des processus.  '
-ms.openlocfilehash: 2c492b9c8dfa2b6851620c434f1a5b4bbddc2e4e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597221"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068833"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats du module de processus dans Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ Une fois le **processus** de **préparation** \> initié, vous pouvez afficher l
 
 Dans **préparer** \> les **résultats**du **processus** \> , la page affiche l’état actuel (si le processus est en cours d’exécution) ou l’état de la dernière tâche d’État du processus, comme illustré dans l’exemple suivant.
   
-![État de tâche du module de processus](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
+![État de tâche du module de processus](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
 Les tâches affichées peuvent varier en fonction des options de processus sélectionnées. 
   
@@ -82,7 +82,7 @@ Les volets présentent un affichage graphique des statistiques sur les fichiers 
     
     Si le marquage des fichiers **pré-balisés** a échoué, cela est également indiqué. 
     
-![Résumé de module de processus](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
+![Résumé de module de processus](../media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
 ## <a name="process-summary-accumulated-and-last-charts"></a>Processus récapitulatif de processus accumulés et derniers graphiques
 
@@ -106,7 +106,7 @@ La barre de droite, traitée, inclut les éléments suivants :
 
 Dans \> prepare \> process \> Results Last process Errors, les détails des erreurs de la dernière session ou action effectuée sont affichés.
   
-![Erreurs de module de processus](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
+![Erreurs de module de processus](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## <a name="see-also"></a>Voir aussi
 

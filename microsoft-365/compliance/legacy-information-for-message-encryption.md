@@ -16,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si vous n’avez pas encore déplacé votre organisation Office 365 vers les nouvelles fonctionnalités OME, mais que vous avez déjà déployé OME, les informations contenues dans cet article s’appliquent à votre organisation. Microsoft vous recommande de planifier la migration vers les nouvelles fonctionnalités de OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, consultez la rubrique Set up New Office 365 message Encryption Capabilities Built-Top of Azure information protection. Si vous souhaitez en savoir plus sur la façon dont les nouvelles fonctionnalités fonctionnent en premier, consultez la rubrique Office 365 message Encryption. Le reste de cet article fait référence au comportement d’OME avant la publication des nouvelles fonctionnalités OME.
-ms.openlocfilehash: cb5315c99b586f250ecd2e5ee51ee6f4534e8bff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29bebb89bf8fcfed25e5348789d80d244a044b6f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585723"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072229"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -53,7 +53,7 @@ Lorsqu’une personne envoie un message électronique dans Exchange Online qui c
   
 Le diagramme suivant résume le passage d’un message électronique dans le processus de chiffrement et de déchiffrement.
   
-![Diagramme montrant le cheminement d’un message électronique chiffré](media/O365-Office365MessageEncryption-Concept.png)
+![Diagramme montrant le cheminement d’un message électronique chiffré](../media/O365-Office365MessageEncryption-Concept.png)
   
 Pour plus d’informations, consultez les [informations de service pour le chiffrement de messages Office 365 hérité avant la publication des nouvelles fonctionnalités OME](legacy-information-for-message-encryption.md#LegacyServiceInfo).
   
@@ -87,7 +87,7 @@ Vous pouvez également rétablir l’apparence par défaut à tout moment.
   
 L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la pièce jointe d’un message électronique :
   
-![Exemple de page de visualisation de message chiffré](media/TA-OME-3attachment2.jpg)
+![Exemple de page de visualisation de message chiffré](../media/TA-OME-3attachment2.jpg)
   
  **Pour personnaliser les messages électroniques de chiffrement et le portail de chiffrement avec la marque de votre organisation**
   
