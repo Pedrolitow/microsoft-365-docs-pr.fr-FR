@@ -17,12 +17,12 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment passer d’un rapport détaillé à un aperçu des actions recommandées dans le centre de &amp; sécurité conformité.
-ms.openlocfilehash: 9385f7bc8bc8c2277df5e3f774015081b39f37a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc18af7d4ca813adb6fbfc01d44138b4a9266c6e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599261"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086202"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procédure pas à pas. D’un rapport détaillé à un aperçu
 
@@ -34,13 +34,13 @@ Il s’agit de l’une des nombreuses procédures pas &amp; à pas pour le centr
 
 Passons en revue le flux d’un rapport détaillé vers une vue et des actions. (Il s’agit d’un bref exemple de [blocage du courrier indésirable et de programmes malveillants](anti-spam-and-anti-malware-protection.md) .) 
   
-1. Nous commençons par les rapports du [Centre de sécurité &amp; conformité](https://protection.office.com) . (Accédez au **** \> **tableau de bord**rapports.) <br/>![Dans le centre &amp; de sécurité conformité, accédez à \> rapports de tableau de bord](../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Nous commençons par les rapports du [Centre de sécurité &amp; conformité](https://protection.office.com) . (Accédez au **** \> **tableau de bord**rapports.) <br/>![Dans le centre &amp; de sécurité conformité, accédez à \> rapports de tableau de bord](../../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. Nous allons choisir un rapport pour obtenir une vue plus détaillée. (Choisissez un rapport, tel que le rapport d' **État de protection contre les menaces** .)<br/>![Rapport d’état de protection contre les menaces affichant des informations](../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. Nous allons choisir un rapport pour obtenir une vue plus détaillée. (Choisissez un rapport, tel que le rapport d' **État de protection contre les menaces** .)<br/>![Rapport d’état de protection contre les menaces affichant des informations](../../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
 3. Nous constatons un indicateur Insights dans le graphique, ainsi que sous le rapport. Le positionnement du pointeur de la souris sur le marqueur Insights donne des détails supplémentaires. (Pointez sur le marqueur Insights pour afficher des détails supplémentaires.)
     
-4. Si vous cliquez sur le marqueur Insights dans le graphique ou sur le widget Insights sur les programmes malveillants sous le graphique, un volet de détails s’ouvre. (Sous le graphique, sélectionnez le widget Insights.)<br/>![Détails des informations sur les programmes malveillants](../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Le volet d’informations fournit des informations et des recommandations à prendre en compte, notamment la révision des stratégies, l’exploration et l’état de modification. ([En savoir plus sur la protection contre le courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).)
+4. Si vous cliquez sur le marqueur Insights dans le graphique ou sur le widget Insights sur les programmes malveillants sous le graphique, un volet de détails s’ouvre. (Sous le graphique, sélectionnez le widget Insights.)<br/>![Détails des informations sur les programmes malveillants](../../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Le volet d’informations fournit des informations et des recommandations à prendre en compte, notamment la révision des stratégies, l’exploration et l’état de modification. ([En savoir plus sur la protection contre le courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).)
     
 De cette façon, nous pouvons passer d’un rapport détaillé à une vue et aux actions recommandées. 
   

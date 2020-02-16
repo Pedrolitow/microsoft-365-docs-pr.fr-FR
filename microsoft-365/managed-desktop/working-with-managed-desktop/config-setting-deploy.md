@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 244070c7fd2d5c98f87990bcb4ef6de96ca5a90c
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: e6946c138cb6fde15e35374b447038d5c302187e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962241"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085753"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables-bureau géré Microsoft
 
@@ -40,12 +40,15 @@ Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez déployer, puis sélectionnez le déploiement intermédiaire à déployer.
 4. Sélectionnez **déployer** pour déployer la modification dans l’un des groupes de déploiement.
 
-![Espace de travail État de déploiement. Volet sites de confiance à droite. La section groupes de déploiement comporte trois colonnes : les groupes de déploiement, les appareils et l’État. Dans la colonne État, « déployer » est mis en surbrillance.](images/1deployedit.png)
+> [!NOTE] 
+> L’icône orange attention indique qu’un groupe précédent est disponible pour le déploiement, car il est recommandé de le déployer dans l’ordre. 
+
+![Espace de travail État de déploiement. Volet sites de confiance à droite. La section groupes de déploiement comporte trois colonnes : les groupes de déploiement, les appareils et l’État. Dans la colonne État, « déployer » est mis en surbrillance.](../../media/1deployedit.png)
 Nous vous recommandons de déployer les groupes de déploiement dans cet ordre : test, First, Fast, puis large. 
 
 Lorsque les modifications sont terminées dans chaque groupe, l’État devient **terminé**.
 
-![Espace de travail État de déploiement avec les colonnes Date de mise à jour, version, test, tout d’abord, rapide et large. La ligne proxy est développée, avec un paramètre daté indiquant « terminé » dans chacun des quatre groupes de déploiement.](images/2completeedit.png)
+![Espace de travail État de déploiement avec les colonnes Date de mise à jour, version, test, tout d’abord, rapide et large. La ligne proxy est développée, avec un paramètre daté indiquant « terminé » dans chacun des quatre groupes de déploiement.](../../media/2completeedit.png)
 
 ## <a name="revert-deployment"></a>Rétablir le déploiement
 
@@ -59,7 +62,7 @@ Nous allons vous montrer les étapes permettant de rétablir une modification à
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez rétablir, puis sélectionnez le déploiement intermédiaire à rétablir.
 4. Sous **besoin de rétablir cette modification ?**, sélectionnez **rétablir le déploiement**.
 
-![Espace de travail État de déploiement. Pages de démarrage du navigateur est sélectionné, en ouvrant un volet du côté droit avec des données sur la modification envoyée et son état. Dans la partie inférieure se trouve la zone « je dois rétablir ce changement » où vous pouvez sélectionner « rétablir le déploiement ».](images/3revert.png) 
+![Espace de travail État de déploiement. Pages de démarrage du navigateur est sélectionné, en ouvrant un volet du côté droit avec des données sur la modification envoyée et son état. Dans la partie inférieure se trouve la zone « je dois rétablir ce changement » où vous pouvez sélectionner « rétablir le déploiement ».](../../media/3revert.png) 
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Vue d’ensemble des paramètres configurables](config-setting-overview.md)

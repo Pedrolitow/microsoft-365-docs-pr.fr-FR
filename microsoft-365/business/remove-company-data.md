@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 'Découvrez comment utiliser Microsoft 365 Business pour supprimer les données d’entreprise des appareils utilisateur ou des PC Windows. '
-ms.openlocfilehash: ff0ad9d7f22f9bb1b21ee15fe383c6994896a9a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 338ce030cb37a6cbd4a1f63c33dc6866bef93c24
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593493"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064898"
 ---
 # <a name="remove-company-data-from-devices"></a>Supprimer des données d'entreprise sur des appareils
 
-[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>Suppression des données d’entreprise
 
@@ -45,7 +45,7 @@ Vous pouvez utiliser Microsoft 365 Entreprise pour supprimer les données d'entr
     
 4. Dans le volet suivant, sélectionnez le ou les périphériques dans la liste **périphériques** . Dans le volet des appareils qui s’ouvre, vous pouvez choisir de rétablir les paramètres d’usine de l’appareil ou de supprimer les données de l’entreprise, en fonction du type d’appareil. 
     
-    ![Dans le volet supprimer les données de l’entreprise, sélectionnez l’appareil à partir duquel vous souhaitez supprimer les données.](media/resetorremove.png)
+    ![Dans le volet supprimer les données de l’entreprise, sélectionnez l’appareil à partir duquel vous souhaitez supprimer les données.](../media/resetorremove.png)
   
 5. Dans le volet confirmation, sélectionnez **confirmer** \> la **fermeture**.
     

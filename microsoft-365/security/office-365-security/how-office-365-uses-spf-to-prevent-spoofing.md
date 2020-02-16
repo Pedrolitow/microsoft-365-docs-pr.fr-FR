@@ -16,12 +16,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: "Résumé : Cet article décrit comment Office 365 utilise l'enregistrement TXT SPF (Sender Policy Framework) dans le système DNS pour s'assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé. Cela s'applique aux messages sortants envoyés à partir d'Office 365. Les messages envoyés à partir d'Office 365 à un destinataire d'Office 365 passent toujours par SPF."
-ms.openlocfilehash: f02219b19af592f9ad27ea963cb07a260c09327f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e2863c0b8a66fa511c4ce842dc8026e880594292
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599191"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085993"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Comment Office 365 utilise SPF (Sender Policy Framework) pour éviter l’usurpation
 
@@ -78,7 +78,7 @@ Les exemples suivants montrent comment SPF fonctionne dans plusieurs situations 
 
 SPF fonctionne de manière optimale lorsque le chemin entre l'expéditeur et le destinataire est direct, par exemple :
 
-![Diagramme illustrant comment SPF authentifie le courrier électronique lorsqu'il est envoyé directement d'un serveur à l'autre.](../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
+![Diagramme illustrant comment SPF authentifie le courrier électronique lorsqu'il est envoyé directement d'un serveur à l'autre.](../../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
 
 Quand woodgrovebank.com reçoit le message, si l'adresse IP 1 se trouve dans l'enregistrement TXT SPF pour contoso.com, le message passe la vérification SPF et est authentifié.
 
@@ -87,7 +87,7 @@ Quand woodgrovebank.com reçoit le message, si l'adresse IP 1 se trouve dans l'e
 
 Supposons qu'un auteur de hameçonnage trouve un moyen d'usurper contoso.com :
 
-![Diagramme illustrant la façon dont SPF authentifie le courrier électronique envoyé à partir d'un serveur falsifié.](../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
+![Diagramme illustrant la façon dont SPF authentifie le courrier électronique envoyé à partir d'un serveur falsifié.](../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
 
 Étant donné que l'adresse IP 12 n'est pas dans l'enregistrement TXT SPF de contoso.com, le message ne passe pas la vérification SPF et le destinataire peut choisir de le marquer comme courrier indésirable.
 
@@ -96,7 +96,7 @@ Supposons qu'un auteur de hameçonnage trouve un moyen d'usurper contoso.com :
 
 SPF présente un désavantage qui réside dans le fait qu'il ne fonctionne pas lorsqu'un message électronique a été transféré. Par exemple, supposons que l'utilisateur woodgrovebank.com a défini une règle de transfert pour envoyer tous les messages électroniques vers un compte outlook.com :
 
-![Diagramme indiquant comment SPF ne peut pas authentifier le courrier électronique lorsque le message est transféré.](../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
+![Diagramme indiquant comment SPF ne peut pas authentifier le courrier électronique lorsque le message est transféré.](../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
 
 Le message passe d'abord la vérification SPF sur woodgrovebank.com mais il échoue lors de la vérification SPF sur outlook.com, car l'adresse IP 25 ne figure pas dans l'enregistrement TXT SPF de contoso.com. Outlook.com peut ensuite marquer le message comme courrier indésirable. Pour contourner ce problème, utilisez SPF avec d'autres méthodes d'authentification de courrier électronique, comme DKIM et DMARC.
 

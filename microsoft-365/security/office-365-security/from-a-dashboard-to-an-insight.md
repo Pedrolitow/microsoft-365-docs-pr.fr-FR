@@ -17,12 +17,12 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment passer d’un tableau de bord à un aperçu des actions recommandées dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: ceb00301ca8c58072f6f34b19c633a0d11565e77
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f6a75e02f00cbc62e4907ea3a0ff54c72110a21
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599301"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083153"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Procédure pas à pas. D’un tableau de bord à un aperçu
 
@@ -34,15 +34,15 @@ Il s’agit de l’une des nombreuses procédures pas &amp; à pas pour le centr
 
 Passons en revue le flux d’un tableau de bord à un rapport vers une vue et une action. (Il s’agit d’un bref exemple d’aide à la [falsification](learn-about-spoof-intelligence.md) .) 
   
-1. Nous commençons par le tableau de bord de sécurité dans le [Centre de sécurité &amp; conformité](https://protection.office.com). (Accédez au **** \> **tableau de bord**gestion des menaces.)<br>![Dans le centre &amp; de sécurité conformité, sélectionnez gestion \> des menaces dans le tableau de bord](../media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
+1. Nous commençons par le tableau de bord de sécurité dans le [Centre de sécurité &amp; conformité](https://protection.office.com). (Accédez au **** \> **tableau de bord**gestion des menaces.)<br>![Dans le centre &amp; de sécurité conformité, sélectionnez gestion \> des menaces dans le tableau de bord](../../media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
   
-2. Dans la ligne **Insights** , nous constatons un aperçu indiquant que nous devons examiner certains domaines suspects. (Dans la ligne **Insights** , cliquez sur **paires de domaines**.)<br>![La ligne Insights mentionne les préoccupations potentielles d’usurpation d’identité](../media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
+2. Dans la ligne **Insights** , nous constatons un aperçu indiquant que nous devons examiner certains domaines suspects. (Dans la ligne **Insights** , cliquez sur **paires de domaines**.)<br>![La ligne Insights mentionne les préoccupations potentielles d’usurpation d’identité](../../media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
   
-3. Nous obtenons une liste d’activités liées à l’aide à l’usurpation d’identité. Il s’agit des instances dans lesquelles des messages électroniques qui semblent provenir de notre organisation ont été envoyés à partir d’une autre organisation. L’objectif est de déterminer si les messages falsifiés sont autorisés ou non.<br>![Idées d’aide à la décision](../media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>Dans cette liste, nous pouvons trier les informations par nombre de messages, la date de la dernière détection de l’usurpation et bien plus encore. (Cliquez sur les en-têtes de colonne, par exemple **nombre de messages** ou **Dernière vue** pour voir comment le tri fonctionne.) 
+3. Nous obtenons une liste d’activités liées à l’aide à l’usurpation d’identité. Il s’agit des instances dans lesquelles des messages électroniques qui semblent provenir de notre organisation ont été envoyés à partir d’une autre organisation. L’objectif est de déterminer si les messages falsifiés sont autorisés ou non.<br>![Idées d’aide à la décision](../../media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>Dans cette liste, nous pouvons trier les informations par nombre de messages, la date de la dernière détection de l’usurpation et bien plus encore. (Cliquez sur les en-têtes de colonne, par exemple **nombre de messages** ou **Dernière vue** pour voir comment le tri fonctionne.) 
     
-4. La sélection d’un élément dans la liste ouvre un volet de détails dans lequel nous pouvons voir des informations supplémentaires, notamment des messages électroniques similaires détectés. (Cliquez sur un élément dans la liste, puis examinez les informations et les recommandations.)<br>![La sélection d’un élément ouvre un volet d’informations](../media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
+4. La sélection d’un élément dans la liste ouvre un volet de détails dans lequel nous pouvons voir des informations supplémentaires, notamment des messages électroniques similaires détectés. (Cliquez sur un élément dans la liste, puis examinez les informations et les recommandations.)<br>![La sélection d’un élément ouvre un volet d’informations](../../media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-5. Notez que dans la partie supérieure du volet, nous avons la possibilité d’ajouter l’expéditeur à la liste des expéditeurs autorisés de votre organisation. (Ne sélectionnez pas **Ajouter à la liste verte de l’expéditeur « AllowedtoSpoof »** jusqu’à ce que vous soyez sûr de vouloir effectuer cette opération. [En savoir plus sur les informations d’usurpation d’identité](learn-about-spoof-intelligence.md).)<br>![Vous pouvez autoriser un expéditeur](../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. Notez que dans la partie supérieure du volet, nous avons la possibilité d’ajouter l’expéditeur à la liste des expéditeurs autorisés de votre organisation. (Ne sélectionnez pas **Ajouter à la liste verte de l’expéditeur « AllowedtoSpoof »** jusqu’à ce que vous soyez sûr de vouloir effectuer cette opération. [En savoir plus sur les informations d’usurpation d’identité](learn-about-spoof-intelligence.md).)<br>![Vous pouvez autoriser un expéditeur](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
 De cette façon, nous pouvons passer d’un tableau de bord à Insights et aux actions recommandées.
   

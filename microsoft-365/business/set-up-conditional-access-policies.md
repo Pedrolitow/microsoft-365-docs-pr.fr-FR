@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer des stratégies d’accès conditionnel pour les campagnes Microsoft 365.
-ms.openlocfilehash: 335fbd7e771b1595e1846529daed76e5ddd3a8f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1ef90bd77da43ded624d85cef9c7a33beec74345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593382"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064604"
 ---
 # <a name="set-up-conditional-access-policies"></a>Configurer des stratégies d’accès conditionnel
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur ces stratégies, voir [qu’est-ce qu’une strat
 1. Accédez au [portail Azure](https://portal.azure.com), puis accédez à **Azure Active Directory** \> **accès conditionnel**.
     
     Les stratégies de base sont répertoriées sur la page. <br/> <br/>
-    ![Page répertoriant les stratégies de base pour l’accès conditionnel.](media/baslinepolicies.png)
+    ![Page répertoriant les stratégies de base pour l’accès conditionnel.](../media/baslinepolicies.png)
 1. Consultez les instructions spécifiques suivantes pour chaque stratégie :
 
   - [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

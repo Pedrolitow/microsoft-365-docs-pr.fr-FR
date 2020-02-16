@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Découvrez comment activer la protection avancée contre les menaces pour SharePoint, OneDrive et Teams, y compris comment définir des alertes pour les fichiers détectés.
-ms.openlocfilehash: 601549db67d34460f4505941d4f2847a2c8f370b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2596dade32d387669eb136856b7a24a66134a773
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598151"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084411"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer la protection avancée contre les menaces Office 365 pour SharePoint, OneDrive et Microsoft teams
 
@@ -48,11 +48,11 @@ Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôl
 
 2. Dans le centre de navigation de gauche du centre de sécurité & Office 365 Security, sous **gestion des menaces**, sélectionnez **stratégie** \> de **pièces jointes approuvées**par la stratégie.
 
-   ![Dans le centre de sécurité & conformité, sélectionnez stratégie \> de gestion des menaces.](../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+   ![Dans le centre de sécurité & conformité, sélectionnez stratégie \> de gestion des menaces.](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
 3. Sélectionnez Activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**.
 
-   ![Activer la protection avancée contre les menaces pour SharePoint Online, OneDrive entreprise et Microsoft teams](../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+   ![Activer la protection avancée contre les menaces pour SharePoint Online, OneDrive entreprise et Microsoft teams](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
 
 4. Cliquez sur **Enregistrer**.
 

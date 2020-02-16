@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: ebe1797e0a6a4b7f8bafa28b57feedbd96324093
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1b31445e431bb0a709d1f48c3db1a39fe5d464c1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599711"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086553"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>Module d’atelier CISO 2 : gestion de la sécurité 
 
 Découvrez comment améliorer la visibilité et le contrôle de votre parc hybride grâce à des conseils intégrés, à l’application de stratégie automatisée et à la surveillance.
 
-- Télécharger le Résumé PDF : [module 2 : gestion](../media/ciso-workshop-2-security-management.pdf) de la sécurité
+- Télécharger le Résumé PDF : [module 2 : gestion](../../media/ciso-workshop-2-security-management.pdf) de la sécurité
 - Télécharger le résumé PowerPoint : [module 2 : gestion](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-2-security-management.pptx) de la sécurité
 
 ## <a name="introduction-security-management-125"></a>Introduction : gestion de la sécurité (1:25)

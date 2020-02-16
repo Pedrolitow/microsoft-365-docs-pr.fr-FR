@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004919"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085892"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
@@ -52,15 +52,15 @@ Les contacts d’administration sont requis lorsque vous [envoyez une demande de
 
 2.  Sous **support**, sélectionnez **contacts d’administration**. 
 
-    ![Menu support, contacts administrateur dans la partie supérieure sélectionnée](images/admincontacts.png)
+    ![Menu support, contacts administrateur dans la partie supérieure sélectionnée](../../media/admincontacts.png)
 
-3. Cliquez sur **Ajouter**.
+3. Sélectionnez **Ajouter**.
 
-    ![Portail d’administration, bouton Ajouter, à gauche de l’option Exporter et actualiser](images/adminadd.png)
+    ![Portail d’administration, bouton Ajouter, à gauche de l’option Exporter et actualiser](../../media/adminadd.png)
 
 4.  Sélectionnez une **zone de** sélection, puis entrez les informations du contact. 
 
-    ![Liste des domaines ciblés, tels que les autres, les applications et la sécurité](images/areaoffocus.png)
+    ![Liste des domaines ciblés, tels que les autres, les applications et la sécurité](../../media/areaoffocus.png)
 
 5. Répétez l’opération pour chaque zone de focus. 
 

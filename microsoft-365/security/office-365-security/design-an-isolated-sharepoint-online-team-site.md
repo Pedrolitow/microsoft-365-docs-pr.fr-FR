@@ -16,12 +16,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Résumé : Découvrez comment concevoir des sites d’équipe SharePoint Online.'
-ms.openlocfilehash: 345a5fa5dcdcf2a3e61fdd6f1f346d46afe3fd5f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f03df1f99650f458dd9df2c9e561decf491c3011
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599471"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083208"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Conception d’un site d’équipe SharePoint Online isolé
 
@@ -46,14 +46,14 @@ L’ensemble des autorisations qui déterminent ce que le membre d’un groupe 
 |**Groupe SharePoint**|**Niveau d’autorisation**|
 |:-----|:-----|
 |\<nom du site> membres  <br/> |Edit  <br/> |
-|\<nom du site> visiteurs  <br/> |Lecture  <br/> |
+|\<nom du site> visiteurs  <br/> |Lire  <br/> |
 |\<Propriétaires de nom de site>  <br/> |Contrôle total  <br/> |
    
  **Conseil :** vous pouvez créer des groupes SharePoint et des niveaux d’autorisation supplémentaires. Cependant, nous vous recommandons d’utiliser les groupes SharePoint par défaut et les niveaux d’autorisation pour votre site SharePoint Online isolé.
   
 Voici les groupes et les niveaux d’autorisation SharePoint par défaut.
   
-![Les groupes et les niveaux d’autorisation SharePoint par défaut pour un site SharePoint Online.](../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![Les groupes et les niveaux d’autorisation SharePoint par défaut pour un site SharePoint Online.](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Phase 2 : attribution des autorisations aux utilisateurs membres de groupes d’accès
 
@@ -93,7 +93,7 @@ Pour les sites d’équipe SharePoint Online isolés, voici à quoi ressemble l
   
 Voici les groupes SharePoint par défaut configurés pour utiliser les groupes d’accès basé sur Azure AD.
   
-![Utilisation de groupes d’accès en tant que membres des groupes de sites SharePoint Online par défaut.](../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![Utilisation de groupes d’accès en tant que membres des groupes de sites SharePoint Online par défaut.](../../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 Lorsque vous concevez les trois groupes d’accès, rappelez-vous de ceci :
   
@@ -103,7 +103,7 @@ Lorsque vous concevez les trois groupes d’accès, rappelez-vous de ceci :
     
 Voici un exemple des groupes SharePoint et des groupes d’accès pour un site isolé nommé ProjectX.
   
-![Exemple d’utilisation de groupes d’accès pour un site SharePoint Online nommé ProjectX.](../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![Exemple d’utilisation de groupes d’accès pour un site SharePoint Online nommé ProjectX.](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>Phase 3 : utiliser des groupes Azure AD imbriqués
 
@@ -126,7 +126,7 @@ Pour utiliser les groupes Azure AD imbriqués, procédez comme suit :
   
 Voici un exemple de groupes Azure AD imbriqués pour le groupe d’accès au membre ProjectX.
   
-![Un exemple d’utilisation de groupes d’accès imbriqués pour le groupe d’accès membres pour le site ProjectX.](../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![Un exemple d’utilisation de groupes d’accès imbriqués pour le groupe d’accès membres pour le site ProjectX.](../../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 Étant donné que tous les comptes d’utilisateur dans les équipes de recherche, d’ingénierie et de projet sont destinés à être membres de site, il est plus facile d’ajouter leurs groupes Azure AD au groupe d’accès membres ProjectX.
   

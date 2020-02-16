@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d’appareil Intune à votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: f5d258dd9b4e0ff8799534cce64818a7fdaf663e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b0b8bd2d76a3959bbcca749545d9a16e50491d20
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600901"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066911"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 Enterprise
 
@@ -27,10 +27,10 @@ ms.locfileid: "41600901"
 
 À l’aide des instructions fournies dans cet article, vous ajoutez une stratégie Intune Device Compliance pour les appareils Windows 10 et Office 365 ProPlus à votre environnement de test Microsoft 365 Enterprise.
 
-![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Cliquez [ici](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+> Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Créer l’environnement de test Microsoft 365 Entreprise.
 

@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 2c08570165f893950dc2588ab33b45be36a3816d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 322ced9ae3a565e07de372d7775c176ba647301b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599691"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086543"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>Module d’atelier CISO 4a : stratégie de protection contre les menaces
 
 Explorez les apprentissages clés relatifs à la protection contre les menaces, à l’évolution de la sécurité, aux stratégies et aux plans de sécurité.
 
-- Télécharger le Résumé PDF : [module 4a : stratégie de protection contre les menaces](../media/ciso-workshop-4a-threat-protection.pdf)
+- Télécharger le Résumé PDF : [module 4a : stratégie de protection contre les menaces](../../media/ciso-workshop-4a-threat-protection.pdf)
 - Télécharger le résumé PowerPoint : [module 4a : stratégie de protection contre les menaces](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>Introduction : stratégie de protection contre les menaces (4:37)

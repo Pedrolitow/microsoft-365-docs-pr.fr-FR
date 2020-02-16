@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs au sein de leur organisation.
-ms.openlocfilehash: 5db942b42f398e8951da43add7013569af52c53f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f3ccd1f8ab5f2f9fc78e2920182155ef7f6f16e3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594108"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080331"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats en libre-service (administrateur)
 

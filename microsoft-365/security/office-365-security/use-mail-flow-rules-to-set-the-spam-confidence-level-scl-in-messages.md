@@ -16,12 +16,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à définir la valeur SCL des messages dans Exchange Online Protection.
-ms.openlocfilehash: 4befc3c371118416b6d07f151eb2c346f8520608
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598052"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081976"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
 
@@ -39,14 +39,14 @@ Vous pouvez créer une règle de flux de messagerie (également appelée règle 
 
 1. Dans le Centre d'administration Exchange (CAE), choisissez **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur **Nouveau**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
+2. Cliquez sur **Nouveau**![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
 
 3. Indiquez le nom de la règle.
 
 4. Choisissez **Plus d'options** et, sous **Appliquer cette règle si**, indiquez une condition qui déclenchera l'action que vous allez définir pour cette règle (c'est-à-dire la valeur SCL).
 
    Par exemple, vous pouvez définir **L'expéditeur** \> **est interne/externe** et, dans la boîte de dialogue **Sélectionner l'emplacement de l'expéditeur**, choisir **À l'intérieur de l'organisation**, puis cliquer sur **OK**.<br/>
-   ![Sélectionner l'emplacement de l'expéditeur](../media/EOP-ETR-SetSCL-1.jpg)
+   ![Sélectionner l'emplacement de l'expéditeur](../../media/EOP-ETR-SetSCL-1.jpg)
 
 5. Sous **Effectuer les opérations suivantes**, sélectionnez **Modifier les propriétés des messages** \> **Définir le seuil de probabilité de courrier indésirable (SCL)**.
 

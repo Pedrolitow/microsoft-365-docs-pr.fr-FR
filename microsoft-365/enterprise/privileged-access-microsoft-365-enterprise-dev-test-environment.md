@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 9dadad2dd11845f9215745863c8176bfa280797f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ce637b94333f088d25e479e61ad2a98176a2f7c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600801"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085373"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 Entreprise
 
@@ -28,10 +28,10 @@ ms.locfileid: "41600801"
 
 Avec les instructions de cet article, vous configurez la gestion des accès privilégiés pour renforcer la sécurité dans votre environnement de test Microsoft 365 Enterprise.
 
-![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 >[!TIP]
->Cliquez [ici](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+>Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Créer l’environnement de test Microsoft 365 Entreprise.
 

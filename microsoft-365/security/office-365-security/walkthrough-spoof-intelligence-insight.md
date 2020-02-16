@@ -17,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne la nouvelle usurpation d’aide à la décision.
-ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 940203bc86339e4cc749565be355d717be9e914d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598011"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084351"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Procédure pas à pas : usurpation d’aide
 
@@ -50,7 +50,7 @@ Il s’agit de l’une des nombreuses procédures pas &amp; à pas pour le centr
 
 La vue d’analyse du tableau de bord vous montre des informations comme celles-ci.
   
-![Capture d’écran d’un aperçu d’aide à la décision](../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+![Capture d’écran d’un aperçu d’aide à la décision](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
   
 Cette vue comprend deux modes :
   
@@ -82,7 +82,7 @@ La page **usurpation** d’aide s’affiche, indiquant la liste des expéditeurs
     
 2. Sélectionnez un élément dans le tableau pour ouvrir un volet de détails qui contient des informations détaillées sur la paire de domaines, notamment la raison pour laquelle nous l’avons détectée, ce que vous devez faire, un résumé de domaine, des données WhoIs sur l’expéditeur et des e-mails similaires que nous avons vus dans votre client du même expéditeur. À partir de là, vous pouvez également choisir d’ajouter ou de supprimer la paire de domaine de la liste des expéditeurs approuvés **AllowedToSpoof** . 
   
-![Capture d’écran d’un domaine dans le volet d’informations d’aide à la décision](../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+![Capture d’écran d’un domaine dans le volet d’informations d’aide à la décision](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
   
 ## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Ajouter ou supprimer un domaine de la liste des expéditeurs approuvés AllowedToSpoof
 

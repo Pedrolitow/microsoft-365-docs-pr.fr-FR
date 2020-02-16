@@ -16,12 +16,12 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: Pour vous aider avec la première étape de la protection de vos informations, à partir du 1er juillet 2018, tous les clients éligibles Azure information protection disposent par défaut des fonctionnalités de protection d’Azure information protection. Les fonctionnalités de protection d’Azure information protection étaient précédemment connues dans Office 365 en tant que gestion des droits ou Azure RMS. Si votre organisation dispose d’un plan de service E3 Office ou d’un plan de service supérieur, vous recevrez maintenant une tête de protection des informations via Azure information protection lors de la mise en route de ces fonctionnalités.
-ms.openlocfilehash: 6ff4ecb4dc9b0e2b0a4e8dd7a2d9573326afc6a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de3b233d4baac380608d3a209c2ffea274c20d5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599771"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083570"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Fonctionnalités de protection dans Azure information protection pour les clients Office 365 existants
 
@@ -41,7 +41,7 @@ Pour vous aider avec la première étape de la protection de vos informations, �
 
 Les administrateurs clients peuvent vérifier le statut de protection dans le portail d’administration d’Office 365.
 
-![Capture d’écran montrant que la gestion des droits dans Office 365 est activée.](../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
+![Capture d’écran montrant que la gestion des droits dans Office 365 est activée.](../../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
 
 ## <a name="why-are-we-making-this-change"></a>Pourquoi ce changement ?
 
@@ -85,6 +85,6 @@ Pour désactiver la modification à venir, procédez comme suit :
 
 Une fois cette fonctionnalité activée, si vous n’avez pas encore choisi, vous pouvez commencer à utiliser la nouvelle version d’Office 365 de chiffrement de messages annoncée auprès de [Microsoft enflamme 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) et tirer parti des fonctionnalités de chiffrement et de protection d’Azure information protection.
 
-![Capture d’écran illustrant un message protégé par OME dans Outlook sur le Web.](../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
+![Capture d’écran illustrant un message protégé par OME dans Outlook sur le Web.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
 Pour plus d’informations sur les nouvelles améliorations, consultez la rubrique [Office 365 message Encryption](../../compliance/ome.md).

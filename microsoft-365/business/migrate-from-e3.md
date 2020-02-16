@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business à partir de Office 365 E3.
-ms.openlocfilehash: 210f3ebf76da49349dfb6d61d0b8ce88d15d3734
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593703"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065578"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migration à partir d’Office 365 E3 vers Microsoft 365 Business 
 
@@ -44,25 +44,25 @@ Ce tableau présente les différences entre Microsoft 365 Business et Office 365
 | Applications Office<sup>1</sup>   | Office 365 Business   | Office 365 ProPlus | 
 | **Applications de productivité sur le Cloud**       | | | 
 | Exchange Online et Outlook   | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité   | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
-| Équipes | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus dans Office 365 E3](./media/check-mark.png) | 
-| OneDrive Entreprise | limite de stockage de 1 to par utilisateur   | Illimité | 
-| Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus dans Office 365 E3](./media/check-mark.png) | 
-| StaffHub  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | ![Inclus dans Office 365 E3](./media/check-mark.png) | 
-| Gestionnaire de clients Outlook, MileIQ  | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)   | | 
+| Teams | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)  | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
+| OneDrive Entreprise | limite de stockage de 1 to par utilisateur   | Illimité | 
+| Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)  | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
+| StaffHub  | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)  | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
+| Gestionnaire de clients Outlook, MileIQ  | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)  | | 
 | **Protection contre les menaces**     | | | 
-| Office 365 Advanced Threat Protection (ATP) plan 1 | ![Inclus avec Microsoft 365 Business](./media/check-mark.png)  | Non inclus, mais peut être ajouté sur | 
+| Office 365 Advanced Threat Protection (ATP) plan 1 | ![Inclus avec Microsoft 365 Business](../media/check-mark.png) | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**       | | | 
-| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), l’accès conditionnel, l’écriture différée de mot de passe pour les identités locales|    ![Inclus avec Microsoft 365 Business](./media/check-mark.png) |  | 
+| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), l’accès conditionnel, l’écriture différée de mot de passe pour les identités locales|    ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    |  | 
 | **Gestion des appareils et des applications**     | | |
-| Microsoft Intune, Windows AutoPilot|  ![Inclus avec Microsoft 365 Business](./media/check-mark.png) |  |
-| Activation d'ordinateurs partagés|   ![Inclus avec Microsoft 365 Business](./media/check-mark.png) | ![Inclus dans Office 365 E3](./media/check-mark.png)| 
-| Droits de mise à niveau vers Windows 10 professionnel à partir de licences Win 7/8.1 Pro|     ![Inclus avec Microsoft 365 Business](./media/check-mark.png) || 
+| Microsoft Intune, Windows AutoPilot|  ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    |  |
+| Activation d'ordinateurs partagés|   ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png)| 
+| Droits de mise à niveau vers Windows 10 professionnel à partir de licences Win 7/8.1 Pro|     ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    || 
 | **Protection des informations**        | | |
-|Prévention des pertes de données Office 365|   ![Inclus avec Microsoft 365 Business](./media/check-mark.png)|![Inclus dans Office 365 E3](./media/check-mark.png)|
-|Azure information Protection Plan 1, application BitLocker|![Inclus avec Microsoft 365 Business](./media/check-mark.png)||
-|Azure information Protection Plan 1, étiquettes de sensibilité|![Inclus avec Microsoft 365 Business](./media/check-mark.png)||
+|Prévention des pertes de données Office 365|   ![Inclus avec Microsoft 365 Business](../media/check-mark.png)|![Inclus dans Office 365 E3](../media/check-mark.png)|
+|Azure information Protection Plan 1, application BitLocker|![Inclus avec Microsoft 365 Business](../media/check-mark.png)||
+|Azure information Protection Plan 1, étiquettes de sensibilité|![Inclus avec Microsoft 365 Business](../media/check-mark.png)||
 |**Licence d’accès client (CAL)**|||
-|Suite CAL Enterprise (Exchange, SharePoint, Skype)||![Inclus dans Office 365 E3](./media/check-mark.png)|
+|Suite CAL Enterprise (Exchange, SharePoint, Skype)||![Inclus dans Office 365 E3](../media/check-mark.png)|
 
 <sup>1</sup> la version Microsoft 365 Business des applications Office n’inclut pas l’activation en volume via la stratégie de groupe, la télémétrie d’application, les contrôles de mise à jour, la comparaison des feuilles de calcul, l’interrogation et l’aide à la décision.
 
@@ -117,6 +117,6 @@ Vous pouvez également effectuer ces étapes dans la page périphériques :
 
 Après la migration vers Microsoft 365 Business, vous disposez d’Office 365 ATP. Consultez la rubrique [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) pour obtenir une vue d’ensemble. Pour configurer, voir [set up ATP Safe Links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [set up Safe Attachments](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)et [set up ATP anti-phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
 
-### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+### <a name="sensitivity-labels"></a>Étiquettes de niveau de confidentialité
 
 Pour commencer à utiliser les étiquettes de confidentialité, voir [vue d’ensemble des étiquettes de sensibilité](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) et [créer et gérer des étiquettes de confidentialité](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) vidéo.

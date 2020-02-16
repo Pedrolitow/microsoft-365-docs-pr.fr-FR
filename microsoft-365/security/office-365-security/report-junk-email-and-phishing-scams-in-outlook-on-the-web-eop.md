@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook sur le Web les utilisateurs peuvent signaler des courriers indésirables et des tentatives de hameçonnage à l’aide des options de création de rapports de messagerie intégrées. Vous pouvez également informer Microsoft qu’un message électronique a été identifié de manière incorrecte comme courrier indésirable (courrier indésirable).
-ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 58973e59644b2e20853cfe053a18586efa5211bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957419"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082395"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Signaler les courriers indésirables et les tentatives de hameçonnage dans Outlook sur le web
 
@@ -33,7 +33,7 @@ Pour soumettre un courrier indésirable à Microsoft, procédez comme suit :
 
 1. Cliquez sur le courrier indésirable, puis sur **Courrier indésirable** dans la barre d'outils. Cela déplace le message vers votre dossier de courrier indésirable et ajoute l'expéditeur à votre liste d'expéditeurs bloqués.
 
-   ![Indiquer qu'un message électronique est du courrier indésirable depuis Outlook sur le web](../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+   ![Indiquer qu'un message électronique est du courrier indésirable depuis Outlook sur le web](../../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
 
    > [!NOTE]
    > Vous pouvez également cliquer avec le bouton droit sur un message pour afficher un menu, puis cliquer sur **Marquer comme courrier indésirable**.
@@ -42,7 +42,7 @@ Pour soumettre un courrier indésirable à Microsoft, procédez comme suit :
 
 2. Une boîte de dialogue apparaît et vous demande si vous voulez envoyer une copie du message indésirable à Microsoft pour analyse. Cliquez sur **Signaler** pour envoyer le message à l'équipe d'analyse anti-spam de Microsoft. Vous pouvez cocher la case **Ne plus afficher ce message** si vous souhaitez que les messages indésirables soient dorénavant soumis automatiquement à Microsoft, sans que l'on vous le demande.
 
-   ![Signaler du courrier indésirable à Microsoft à partir d'Outlook sur le web](../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+   ![Signaler du courrier indésirable à Microsoft à partir d'Outlook sur le web](../../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
 
    > [!TIP]
    > Même si vous cochez la case **Ne plus afficher ce message**, vous pouvez toujours modifier vos préférences de signalement du courrier indésirable en accédant aux paramètres d'affichage dans Outlook sur le web. (Vous pouvez accéder à ces paramètres via le menu qui apparaît lorsque vous cliquez sur l'icône d'engrenage en regard de votre nom d'utilisateur.)
@@ -53,7 +53,7 @@ Pour soumettre une tentative d’hameçonnage à Microsoft, procédez comme suit
 
 1. Cliquez sur le message d'hameçonnage, cliquez sur la flèche vers le bas en regard de **Courrier indésirable**, puis sur **Hameçonnage** dans la barre d'outils. Office 365 ne bloque pas l'expéditeur, car les expéditeurs de messages d'hameçonnage empruntent généralement l'identité d'expéditeurs légitimes. Si vous préférez, ajoutez l’expéditeur à votre liste des expéditeurs bloqués en suivant les instructions de la rubrique filtrer le courrier [indésirable et le courrier indésirable dans Outlook sur le Web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d).
 
-   ![Indiquer qu'un message électronique est un hameçonnage dans Outlook sur le web](../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
+   ![Indiquer qu'un message électronique est un hameçonnage dans Outlook sur le web](../../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
 
    Vous pouvez également cliquer avec le bouton droit sur un message pour afficher un menu, puis cliquer sur **Marquer comme tentative d'hameçonnage**.
 

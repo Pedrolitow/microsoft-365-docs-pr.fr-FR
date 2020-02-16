@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer une planification pour un rapport dans le centre de sécurité &amp; conformité.
-ms.openlocfilehash: 743bb0cd71fb4a5c6ce9b875c797ad3ca54d0485
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599551"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083461"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Créer une planification pour un rapport dans le centre &amp; de sécurité conformité
 
@@ -55,7 +55,7 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
     
 3. Dans le coin supérieur gauche de l’État, choisissez **+ créer une planification**. 
     
-    ![Créer une planification](../media/atpfiletypes-createschedule.png)
+    ![Créer une planification](../../media/atpfiletypes-createschedule.png)
 
     (Remarque : tous les rapports ne disposent pas du bouton **+ créer une planification** .)
   
@@ -63,7 +63,7 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
     
 4. Conservez les paramètres par défaut et choisissez **créer une planification**, ou choisissez **personnaliser la planification**.
     
-    ![Vous pouvez utiliser les paramètres par défaut ou personnaliser une planification de rapport](../media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![Vous pouvez utiliser les paramètres par défaut ou personnaliser une planification de rapport](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
     Si vous choisissez de personnaliser votre planification de rapport, vous pouvez spécifier la fréquence du rapport, l’adresse de messagerie de l’expéditeur et l’adresse de messagerie d’un destinataire. 
     

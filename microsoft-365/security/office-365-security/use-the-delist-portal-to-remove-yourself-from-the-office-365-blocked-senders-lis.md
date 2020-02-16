@@ -16,12 +16,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Obtenez-vous un message d'erreur lorsque vous tentez d'envoyer un courrier électronique à un destinataire dont l'adresse de messagerie est dans Office 365 ? Si vous pensez que vous ne devriez pas recevoir de message d'erreur, vous pouvez utiliser le portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365.
-ms.openlocfilehash: af528f7fed60130bec8ff53ad182df928d09faee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3e131addb391ecbf90d74ad4fdfa65b802c5e1ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598031"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081957"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365
 
@@ -45,7 +45,7 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
 
 3. Cliquez sur **Envoyer**.
 
-    Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. Le message électronique se présente comme suit : ![capture d’écran du courrier électronique reçu lorsque vous envoyez une demande via le portail supprimer de la liste](../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. Le message électronique se présente comme suit : ![capture d’écran du courrier électronique reçu lorsque vous envoyez une demande via le portail supprimer de la liste](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. Cliquez sur le lien de confirmation dans le courrier électronique envoyé par le portail de suppression de la liste.
 

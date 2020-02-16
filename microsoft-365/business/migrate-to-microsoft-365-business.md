@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Étapes de mise à niveau de votre entreprise à partir d’Office 365 Business Premium vers Microsoft 365 Business.
-ms.openlocfilehash: 0732f76e5bd8540e5954bd7ea7b88061326901b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e17ac2658c7276ba4a77de371847343866815c42
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593676"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065270"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Mise à niveau vers Microsoft 365 entreprise à partir d’Office 365 Business Premium
 
@@ -51,11 +51,11 @@ Pour acheter vos licences, procédez comme suit dans le [nouveau centre d’admi
 1. Connectez-vous au centre d' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>administration à l’adresse.
 2. Accédez au volet de navigation et sélectionnez produits de **facturation** \> **& services**. Recherchez votre abonnement Office 365 et sélectionnez-le pour afficher les détails. 
 
-    ![Une capture d’écran montre comment rechercher et sélectionner votre abonnement dans le centre d’administration.](media/FindYourSubscription.png)
+    ![Une capture d’écran montre comment rechercher et sélectionner votre abonnement dans le centre d’administration.](../media/FindYourSubscription.png)
 
 3. Sur la page suivante, sélectionnez **mise à niveau**. 
 
-      ![Une capture d’écran indique où sélectionner la mise à niveau dans le centre d’administration.](media/SelectUpgrade.png)
+      ![Une capture d’écran indique où sélectionner la mise à niveau dans le centre d’administration.](../media/SelectUpgrade.png)
 
   > [!NOTE]
   > Si vous voyez un message indiquant que **la mise à niveau de votre abonnement n’est pas prise en charge avec la gestion des licences basée sur les groupes dans Azure Active Directory**, vous pouvez l’ignorer en toute sécurité, sauf si vous disposez d’une organisation très importante. Les organisations qui ont sélectionné cette option seront conscientes de l’utilisation d’une licence basée sur les groupes.

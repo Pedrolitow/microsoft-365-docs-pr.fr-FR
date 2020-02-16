@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Découvrez comment télécharger des périphériques à l’aide de AutoPilot dans Microsoft 365 Business. Vous pouvez affecter un profil à un appareil ou à un groupe d’appareils.
-ms.openlocfilehash: 5a99f691b0325f511f34e3a6c3a20f08ee8d909f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 640e4af7cccde83c87d90a875c1d44dead7255ca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594008"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065976"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Créer et modifier des appareils AutoPilot
 
@@ -48,7 +48,7 @@ Les appareils doivent respecter les conditions suivantes :
   
 2. Sur la **page AutoPilot** , sélectionnez l' **** onglet \> appareils **Add Devices**.
     
-    ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
+    ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
 3. Dans le **panneau ajouter des appareils** , accédez à un [fichier CSV de liste](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) de périphériques \> que vous avez préparé à **Enregistrer** \> **.**
     

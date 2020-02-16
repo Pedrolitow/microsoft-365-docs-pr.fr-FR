@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Découvrez comment installer automatiquement les applications Office 32 bits sur les ordinateurs Windows 10 et les maintenir à jour.
-ms.openlocfilehash: fa5b2ce1852ebdb1e76c1fa844793fee56af3d68
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0f8cd7df49ad627b190fad6737ec95a6d64d99d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593616"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065100"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Se préparer pour le déploiement du client Office par Microsoft 365 Entreprise
 
@@ -44,7 +44,7 @@ L’installation automatique fonctionne mieux si l’ordinateur de l’utilisate
     
 Pour déterminer si vous possédez la version « Démarrer en un clic » d'Office, dans une application Office, accédez à **Fichier** \> **Compte** ( **Compte Office** dans Outlook). Si vous voyez les **mises à jour d’Office** comme illustré dans la figure suivante, l’installation a été effectuée à l’aide d’Office « démarrer en un clic ». 
   
-![Screenshot of Office updates in Office app Account](media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
+![Screenshot of Office updates in Office app Account](../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
  **Qui tire parti de cette fonctionnalité ?**
   

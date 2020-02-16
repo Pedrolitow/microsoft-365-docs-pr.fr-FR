@@ -16,12 +16,12 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: Un message électronique qui passe à travers le filtrage anti-spam reçoit un score de mise en quarantaine. Ce score est mappé à une valeur de seuil de probabilité de courrier indésirable (SCL) individuelle et marqué dans un en-tête X. Le service entreprend des actions sur les messages en fonction de l'interprétation de la probabilité de courrier indésirable de la valeur SCL. Le tableau suivant indique comment sont interprétées les différentes valeurs SCL par les filtres ainsi que l'action par défaut entreprise sur les messages entrants pour chaque valeur.
-ms.openlocfilehash: c40317833ea61424dab60ac858c2071f7891c4f8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 65b6f51199e6d8f6ce17a05b28c5bad15d9d1760
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598311"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084757"
 ---
 # <a name="spam-confidence-levels"></a>Seuils de probabilité de courrier indésirable
 
@@ -39,6 +39,6 @@ Un message électronique qui passe à travers le filtrage anti-spam reçoit un s
   
 ||
 |:-----|
-|![Icône rapide pour LinkedIn Learning](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Office 365 ?**         Découvrez les cours vidéo gratuits pour **Office 365 admins and IT pros** proposés par LinkedIn Learning.|
+|![Icône rapide pour LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Office 365 ?**         Découvrez les cours vidéo gratuits pour **Office 365 admins and IT pros** proposés par LinkedIn Learning.|
    
 

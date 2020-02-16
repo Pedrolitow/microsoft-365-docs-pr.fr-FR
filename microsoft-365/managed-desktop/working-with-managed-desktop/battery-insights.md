@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269385"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085727"
 ---
 # <a name="battery-insights"></a>Informations sur la batterie
 Cette vue fournit des mesures d’utilisation de l’alimentation, de la batterie et de l’application pour vos appareils de bureau gérés par Microsoft. À cette fin, une application est considérée « en cours d’utilisation » si elle est en cours d’exécution et en focus.
 
 Pour afficher les données d’utilisation, sélectionnez l’onglet **batterie** .
 
-![Volet de la batterie : durée de vie de la batterie prévisible par modèle d’appareil dans le coin supérieur gauche, consommateurs de l’énergie de haut niveau (par application) dans le coin supérieur droit, tableau Insights en bas. Lien vers la documentation en haut à droite.](images/insights_battery.png)
+![Volet de la batterie : durée de vie de la batterie prévisible par modèle d’appareil dans le coin supérieur gauche, consommateurs de l’énergie de haut niveau (par application) dans le coin supérieur droit, tableau Insights en bas. Lien vers la documentation en haut à droite.](../../media/insights_battery.png)
 
 ## <a name="predicted-battery-life"></a>Durée de vie de la batterie prévisible
 

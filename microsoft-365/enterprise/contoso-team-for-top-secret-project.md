@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe pour les données hautement réglementées pour un projet à forte priorité afin de développer une nouvelle suite de produits et de services.'
-ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597071"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068024"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Faire équipe pour un projet top secret de Contoso Corporation
 
@@ -68,7 +68,7 @@ Les administrateurs contoso ont créé une étiquette de confidentialité Office
 
 Voici la configuration obtenue de l’équipe Project 2X.
 
-![La configuration obtenue de l’équipe Project 2X](./media/contoso-team-for-highly-confidential-assets/final-config.png)
+![La configuration obtenue de l’équipe Project 2X](../media/contoso-team-for-highly-confidential-assets/final-config.png)
  
 Les fichiers de la section documents du projet sous-jacent 2 SharePoint ont été protégés par :
 
@@ -79,7 +79,7 @@ Les fichiers de la section documents du projet sous-jacent 2 SharePoint ont ét�
 
 Voici un exemple de fichier stocké dans le site Project 2X sous-jacent avec l’étiquette de rétention hautement réglementée et l’étiquette de sensibilité du projet 2X attribuée.
 
-![Exemple de fichier stocké dans le site du projet 2 sous-jacent](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
+![Exemple de fichier stocké dans le site du projet 2 sous-jacent](../media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
  
 ## <a name="step-4-trained-project-2x-team-members"></a>Étape 4 : projet formé 2X membres de l’équipe
 

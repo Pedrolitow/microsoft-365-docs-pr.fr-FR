@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260102"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085687"
 ---
 # <a name="work-with-insights"></a>Utiliser les informations
 
@@ -26,7 +26,7 @@ Ces tableaux de bord vous permettent de trouver les réponses aux questions suiv
 
 Pour accéder à ces affichages à partir du centre d’administration Microsoft 365, sélectionnez **afficher les détails** dans la zone **rapports** :
 
-![Centre d’administration avec la zone de rapports dans le coin supérieur droit, y compris la carte de rapports de périphériques et le lien « Afficher les détails ».](images/insights_overview.png)
+![Centre d’administration avec la zone de rapports dans le coin supérieur droit, y compris la carte de rapports de périphériques et le lien « Afficher les détails ».](../../media/insights_overview.png)
 
 
 

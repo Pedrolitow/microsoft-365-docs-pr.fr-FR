@@ -1,5 +1,7 @@
 ---
 title: Création de teams pour la collaboration
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un espace de collaboration pour votre équipe avec Microsoft Teams.
-ms.openlocfilehash: 9b501daa61998b0b2daedd84c333552b42e5338f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031349"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056348"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Création de teams pour la collaboration dans Microsoft teams
 
@@ -42,7 +44,7 @@ Par exemple, les campagnes peuvent créer les équipes suivantes pour communique
 
 Vous pouvez également créer des équipes pour des projets spécifiques et appliquer le niveau de protection approprié en fonction de ce qui doit être inclus. 
 
-![Diagramme d’une fenêtre Microsoft teams avec trois équipes distinctes pour permettre la collaboration et la communication sécurisées](media/m365-democracy-teams-collab.png)
+![Diagramme d’une fenêtre Microsoft teams avec trois équipes distinctes pour permettre la collaboration et la communication sécurisées](../media/m365-democracy-teams-collab.png)
 
 Lorsque vous créez une équipe, voici ce que d’autres éléments sont créés :
 

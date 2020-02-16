@@ -1,5 +1,7 @@
 ---
 title: Configurer des réunions en ligne
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: twerner
 manager: scotv
@@ -22,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez des réunions en ligne avec Microsoft Teams.
-ms.openlocfilehash: 7ecdec3f7dc329f1ff70bf8d72a7ca5bc946636f
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 83ff561b4159ffe6785db8bb03314aa80668023a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753583"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080435"
 ---
 # <a name="set-up-meetings"></a>Organiser des réunions
 
 Les réunions dans Microsoft teams incluent l’audio, la vidéo et le partage. Étant donné qu’ils sont en ligne, vous disposez toujours d’un espace de réunion et vous n’avez jamais besoin d’une salle ou d’un projecteur pour votre campagne.Les réunions Microsoft teams constituent un excellent moyen de collaborer avec votre personnel et des volontaires à l’intérieur et à l’extérieur de votre organisation. Vous n’avez pas besoin d’être membre de votre organisation ou de disposer d’un compte pour participer à une réunion. Pour votre campagne politique, vous pouvez planifier et exécuter des réunions en ligne à l’aide de Microsoft Teams. Vous pouvez inclure du personnel, des volontaires et des invités à l’extérieur de votre organisation. Lors d’une réunion, vous pouvez partager votre écran, partager des fichiers, affecter des tâches, et bien plus encore.
 
-[![Illustration de deux utilisateurs dans une réunion](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![Illustration de deux utilisateurs dans une réunion](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Téléchargez un infographie au [format PDF](https://go.microsoft.com/fwlink/?linkid=2078712) ou [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) pour obtenir une vue d’ensemble rapide de la façon de joindre ou d’héberger une réunion en ligne avec Microsoft Teams.
 

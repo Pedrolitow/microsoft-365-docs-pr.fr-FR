@@ -15,12 +15,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez créer une règle de flux de messagerie Exchange pour empêcher vos utilisateurs d’envoyer des messages électroniques à Microsoft à des fins d’analyse et de les utiliser dans vos propres processus de sécurité.
-ms.openlocfilehash: 530cc12fd83650f319da3f65e961c925a1de7409
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae8655416840dc326344e2c2aea7c67486389492
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598057"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084373"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Utiliser des règles de transport pour bloquer le signalement des courriers indésirables à Microsoft
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur les raccourcis clavier applicables aux procédure
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur ![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
+2. Cliquez sur ![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
 
 3. Nommez la règle, puis cliquez sur **Autres options**.
 
@@ -46,11 +46,11 @@ Pour plus d’informations sur les raccourcis clavier applicables aux procédure
 
 5. Dans la zone **spécifier des mots ou des expressions** , procédez comme suit :
 
-   - Tapez `abuse@messaging.microsoft.com`, cliquez **sur Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif)icône, `junk@office365.microsoft.com` tapez, puis cliquez sur **Ajouter** ![une icône](../media/ITPro-EAC-AddIcon.gif). Ces adresses de messagerie sont utilisées pour envoyer les messages faux négatifs à Microsoft.
+   - Tapez `abuse@messaging.microsoft.com`, cliquez **sur Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif)icône, `junk@office365.microsoft.com` tapez, puis cliquez sur **Ajouter** ![une icône](../../media/ITPro-EAC-AddIcon.gif). Ces adresses de messagerie sont utilisées pour envoyer les messages faux négatifs à Microsoft.
 
-   - Tapez `phish@office365.microsoft.com` , puis cliquez sur **Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif)icône Ajouter. Cette adresse de messagerie est utilisée pour envoyer des messages de tentative de hameçonnage à Microsoft.
+   - Tapez `phish@office365.microsoft.com` , puis cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif)icône Ajouter. Cette adresse de messagerie est utilisée pour envoyer des messages de tentative de hameçonnage à Microsoft.
 
-   - Type `false_positive@messaging.microsoft.com`, cliquez sur **Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif)icône Ajouter `not_junk@office365.microsoft.com`, tapez, puis cliquez sur **Ajouter** ![Ajouter icône](../media/ITPro-EAC-AddIcon.gif). Ces adresses de messagerie sont utilisées pour envoyer les messages faux positifs à Microsoft.
+   - Type `false_positive@messaging.microsoft.com`, cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif)icône Ajouter `not_junk@office365.microsoft.com`, tapez, puis cliquez sur **Ajouter** ![Ajouter icône](../../media/ITPro-EAC-AddIcon.gif). Ces adresses de messagerie sont utilisées pour envoyer les messages faux positifs à Microsoft.
 
    - Cliquez sur **OK**.
 

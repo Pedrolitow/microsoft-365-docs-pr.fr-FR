@@ -1,5 +1,7 @@
 ---
 title: Valider les paramètres de protection des applications sur les PC Windows 10
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Découvrez comment valider les paramètres de protection des applications professionnelles Microsoft 365 sur les appareils Windows 10.
-ms.openlocfilehash: b8793ab7f77bbc7f608f237e2455f6fd12c3bb26
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 1762382aec00a80e006cf38b66c28d02c0c25989
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721797"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056652"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Valider les paramètres de protection des appareils sur des PC Windows 10
 
@@ -37,25 +39,25 @@ Une fois que vous avez [configuré les stratégies de périphériques](protectio
   
 1. Accédez aux **paramètres** \> **mettre &amp; à jour** les **options de redémarrage** de la sécurité \> **Windows Update** \> et vérifiez que tous les paramètres sont grisés. 
     
-    ![Toutes les options de redémarrage sont grisées.](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![Toutes les options de redémarrage sont grisées.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
 2. Accédez à **paramètres** \> **mettre &amp; à jour** les **Options avancées** de sécurité \> **Windows Update** \> et vérifiez que tous les paramètres sont grisés. 
     
-    ![Les options de mises à jour avancées de Windows sont toutes grisées.](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Les options de mises à jour avancées de Windows sont toutes grisées.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Accéder aux **paramètres** \> **mettre &amp; à jour la sécurité** \> **Windows Update** \> **Advanced options** \> **sélectionnez le mode de remise des mises à jour**.
     
     Vérifiez que vous pouvez voir le message (en rouge) que certains paramètres sont masqués ou gérés par votre organisation, et que toutes les options sont grisées.
     
-    ![Page choisir le mode de remise des mises à jour : indique que les paramètres sont masqués ou gérés par votre organisation.](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+    ![Page choisir le mode de remise des mises à jour : indique que les paramètres sont masqués ou gérés par votre organisation.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
 4. Pour ouvrir le centre de sécurité Windows Defender, accédez à **paramètres** \> **mise &amp; à jour sécurité** \> **Windows Defender** \> cliquez sur Ouvrir les \> **paramètres de protection contre les &amp; menaces**de virus de **protection antivirus &amp; ** **Windows Defender** \> . 
     
 5. Vérifiez que toutes les options sont grisées. 
     
-    ![Les paramètres de protection contre les virus et les menaces sont grisés.](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+    ![Les paramètres de protection contre les virus et les menaces sont grisés.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Documentation et ressources pour Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
   

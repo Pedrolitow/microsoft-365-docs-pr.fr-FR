@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception des messages de hameçonnage, ainsi que la marche à suivre pour éviter d’autres messages de phishing à l’avenir.
-ms.openlocfilehash: b7ce09ff85c0341ea8cb901942e87dbe10ba0435
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 94c28bf63ad7ba87d06298576cf7989b6848f8e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598141"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082023"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Réglage de la protection anti-hameçonnage dans Office 365
 

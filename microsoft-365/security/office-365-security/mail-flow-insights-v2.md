@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 0e87fde41c78f46aaac55602175a3716ba54fe7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 36183f6b5f664a8d5a971f9e141b0607fa66a0bb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599041"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082927"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
@@ -72,4 +72,4 @@ Pour plus d’informations sur l’attribution de rôles de centre de sécurité
 
 2. Développez **flux de messagerie** , puis sélectionnez **tableau de bord**.
 
-   ![Tableau de bord de flux de messagerie dans le centre de conformité & Office 365 Security](../media/mail-flow-dashboard-v2.png)
+   ![Tableau de bord de flux de messagerie dans le centre de conformité & Office 365 Security](../../media/mail-flow-dashboard-v2.png)

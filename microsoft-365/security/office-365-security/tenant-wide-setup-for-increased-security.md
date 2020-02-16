@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de votre environnement Office 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
-ms.openlocfilehash: 3bf11ae0520ac6f715e3f84669c6d6f615deaf14
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: 38c07739ebfd6e10fe08dbc5496e4ae7634ed510
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932294"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082039"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurer votre client Office 365 pour une sécurité accrue
 
@@ -59,7 +59,7 @@ Visitez ces rapports et tableaux de bord pour en savoir plus sur l’état de sa
 |[Threat Explorer (et détections en temps réel)](threat-explorer.md)|Il s’agit également de la section **gestion des menaces** du centre de sécurité. Si vous recherchez ou rencontrez une attaque contre votre client Office 365, utilisez l’Explorateur (ou les détections en temps réel) pour analyser les menaces. L’Explorateur (et le rapport de détections en temps réel) vous montre le volume des attaques au fil du temps, et vous pouvez analyser ces données par familles de menaces, infrastructure d’agresseur, et bien plus encore. Vous pouvez également marquer tous les messages suspects pour la liste des incidents.|
 |Rapports — tableau de bord|Dans la section **rapports** du centre de sécurité, affichez les rapports d’audit de vos organisations SharePoint Online et Exchange Online. Vous pouvez également accéder aux rapports de connexion utilisateur Azure Active Directory (Azure AD), aux rapports d’activité de l’utilisateur et au Journal d’audit Azure AD à partir de la page **afficher les rapports** .|
 
-![Tableau de bord du centre de sécurité](../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Tableau de bord du centre de sécurité](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Configurer des paramètres supplémentaires à l’échelle du client Exchange Online
 
@@ -122,7 +122,7 @@ Plus d’informations :
 
 - [Qu’est-ce que la sécurité des applications Cloud ?](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
-![Tableau de bord Cloud App Security](../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Tableau de bord Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

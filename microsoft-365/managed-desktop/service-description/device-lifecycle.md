@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 431b28635f856ebd50e1de4129c00149e1e7c78d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962341"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085829"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Cycle de vie des produits bureau géré Microsoft
 
@@ -33,7 +33,7 @@ Cette rubrique décrit en détail le cycle de vie des appareils à mesure qu’i
 
 La séquence entière est illustrée dans cette illustration :
 
-![chronologie du cycle de vie : en commençant par la disponibilité générale du produit, la « disponibilité principale » est de deux ans. Pendant ce temps, la fenêtre de certification se termine et, à un moment donné, l’appareil est intégré. À la fin de la disponibilité principale, le produit est archivé et la « période de grâce » de trois ans commence. À partir du moment où l’appareil est intégré, il dispose d’une période d’utilisation de 3 ans jusqu’à ce qu’il soit retiré de la gestion. À la fin de la période de grâce, nous supprimons le produit du catalogue.](images/non-dark1-edits.PNG)
+![chronologie du cycle de vie : en commençant par la disponibilité générale du produit, la « disponibilité principale » est de deux ans. Pendant ce temps, la fenêtre de certification se termine et, à un moment donné, l’appareil est intégré. À la fin de la disponibilité principale, le produit est archivé et la « période de grâce » de trois ans commence. À partir du moment où l’appareil est intégré, il dispose d’une période d’utilisation de 3 ans jusqu’à ce qu’il soit retiré de la gestion. À la fin de la période de grâce, nous supprimons le produit du catalogue.](../../media/non-dark1-edits.PNG)
 
 Les produits restent dans le catalogue pendant une période de 24 mois, mais les <em>appareils</em> restent sous gestion pendant 3 ans en fonction de leur date d’inscription individuelle. En effet, chaque produit a trois dates importantes, mais chaque périphérique ne possède qu’un seul. Pour les produits, ces trois dates sont calculées en fonction de la <em>Date d’approbation</em>et, par conséquent, nous publions ces dates lors de l’approbation afin que vous puissiez toujours continuer et planifier l’ensemble du cycle de vie du produit.
 
@@ -58,7 +58,7 @@ Ce tableau montre des exemples de dates pour les *appareils*théoriques :
 
 Le cycle de vie du produit démarre lorsqu’un fabricant publie publiquement le produit :
 
-![chronologie de cycle de vie montrant la publication et la période d’évaluation](images/non-dark3-edits.PNG)
+![chronologie de cycle de vie montrant la publication et la période d’évaluation](../../media/non-dark3-edits.PNG)
 
 Pendant cette phase, l’équipe d’ingénierie de bureau géré Microsoft procède à son évaluation et à sa certification pour un produit. L’équipe évalue les fonctionnalités telles que la fiabilité et les performances avec Windows, la conformité avec une référence matérielle, le sentiment de marché et la préparation des stocks et des canaux, entre autres choses. Ce processus prend généralement environ 6 semaines.
   
@@ -71,7 +71,7 @@ Microsoft Managed Desktop n’évalue que les appareils pour la certification da
 
 Cette période est le cœur de la disponibilité du produit :
 
-![chronologie de la durée de vie avec la disponibilité principale](images/non-dark4-edits.PNG)
+![chronologie de la durée de vie avec la disponibilité principale](../../media/non-dark4-edits.PNG)
 
 Tout périphérique inscrit pendant cette période reçoit les trois années de prise en charge complètes du bureau géré Microsoft (comme illustré par le scénario bleu). Cette période dure jusqu’à ce qu’une date de fin soit définie sur 24 mois à compter de la date de disponibilité générale.
 
@@ -84,7 +84,7 @@ La période de grâce du produit est une période de trois ans suivant la dispon
 Si vous avez récemment acheté un certain nombre d’appareils approuvés avant de vous inscrire à l’aide de Microsoft Managed Desktop, vous pouvez toujours les inscrire, mais vous ne recevrez pas les trois années de gestion. Au lieu de cela, ils ne sont pas conformes à la date de déclassement, quel que soit le moment de leur enregistrement. En arrière-plan, le bureau géré Microsoft traitera ces appareils comme s’ils étaient inclus dans le dernier jour de disponibilité principale. Dans cette illustration, vous pouvez voir ce scénario en notant que le périphérique bleu et le périphérique vert se terminent le même jour, en dépit de leur différence d’un an dans l’enregistrement :
 
 
-![chronologie de la durée de vie avec la période de grâce](images/non-dark2-edits.PNG)
+![chronologie de la durée de vie avec la période de grâce](../../media/non-dark2-edits.PNG)
 
 L’exemple de Fabrikam Laptop du tableau précédent illustre cette situation : 
 

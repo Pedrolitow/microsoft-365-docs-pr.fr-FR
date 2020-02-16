@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Aidez vos utilisateurs à installer des applications Office.
-ms.openlocfilehash: 86a32f5f7a9fbd78a56fc934c4668970f8cdc719
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7497be6b0796fdd28156d8c9a6018b05e3dcfe75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593915"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065712"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aider vos utilisateurs à installer Office sur des appareils Windows 10
 
-[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Vous pouvez rapidement et facilement installer Office sur des PC Windows 10 à partir du centre d’administration de Microsoft 365 Business.
   
@@ -59,7 +59,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 4. Sur le volet Office des utilisateurs de messagerie, cliquez sur le **lien pour télécharger** le volet Office, sélectionnez les utilisateurs auxquels vous souhaitez envoyer un courrier électronique, puis **envoyez un courrier électronique aux utilisateurs sélectionnés**.
 
     
-      :::image type="content" source="media/sendemailtousers.png" alt-text="Sélectionnez les utilisateurs pour envoyer des courriers électroniques avec le lien de téléchargement Office.":::
+      :::image type="content" source="../media/sendemailtousers.png" alt-text="Sélectionnez les utilisateurs pour envoyer des courriers électroniques avec le lien de téléchargement Office.":::
 
 ## <a name="see-also"></a>Voir aussi
 

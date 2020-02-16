@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: b66289ab66770d75743ff5cee88eb2a47efe11b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596851"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066887"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour les entreprises
 
@@ -59,7 +59,7 @@ Pour plus d’informations, reportez-vous à la rubrique [features and Capabilit
 
 ## <a name="get-the-big-picture"></a>Obtenir une vue d’ensemble
 
-L' [affiche de Microsoft 365 pour entreprise](media/m365-poster/Microsoft365Enterprise.pdf) est un emplacement central où vous pouvez afficher les éléments suivants :
+L' [affiche de Microsoft 365 pour entreprise](../media/m365-poster/Microsoft365Enterprise.pdf) est un emplacement central où vous pouvez afficher les éléments suivants :
 
 - Les avantages de Microsoft 365 pour les entreprises et la façon dont les applications et les services correspondent à leurs valeurs piliers
 - Microsoft 365 pour les plans d’entreprise et les composants qu’ils contiennent 
@@ -67,16 +67,16 @@ L' [affiche de Microsoft 365 pour entreprise](media/m365-poster/Microsoft365Ente
 - La [bibliothèque de productivité Microsoft 365](https://www.microsoft.com/microsoft-365/success/) et les scénarios représentatifs pour certains services d’organisation courants
 - Feuille de route d’adoption qui met en évidence le [Guide de déploiement](deploy-microsoft-365-enterprise.md) de Microsoft 365 pour les entreprises
 
-[![Image de l’affiche de l’entreprise Microsoft 365 Entreprise](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Image de l’affiche de l’entreprise Microsoft 365 Entreprise](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Migration de l’ensemble de votre organisation
 
-Pour obtenir une meilleure idée de la façon de déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 pour les entreprises, téléchargez l' [affiche de transition](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Pour obtenir une meilleure idée de la façon de déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 pour les entreprises, téléchargez l' [affiche de transition](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Image de l’affiche pour la transition vers Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Image de l’affiche pour la transition vers Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 pour entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
 
@@ -94,9 +94,9 @@ Les produits suivants ont atteint la fin du support le **13 octobre 2020**:
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-Pour consulter un résumé visuel des options de mise à niveau, de migration et de déplacement vers le Cloud pour ces produits, voir l’[affiche de fin du support technique](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
+Pour consulter un résumé visuel des options de mise à niveau, de migration et de déplacement vers le Cloud pour ces produits, voir l’[affiche de fin du support technique](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
-[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 Cette affiche de page unique est un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Windows 7 et Office 2010 d’atteindre la fin du support, avec les chemins d’accès et la prise en charge préférés dans Microsoft 365 pour l’entreprise en surbrillance.
 
@@ -142,7 +142,7 @@ Pour plus d’informations sur le déploiement, voir How :
 
 |||
 |:-------|:-----|
-![Formation sur les notions de base de Microsoft 365](./media/m365-poster/m365-fundamentals.svg)| Demandez-vous et travaillez sur une certification Microsoft 365. <BR> Commencez par [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![Formation sur les notions de base de Microsoft 365](../media/m365-poster/m365-fundamentals.svg)| Demandez-vous et travaillez sur une certification Microsoft 365. <BR> Commencez par [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 |||
 
 

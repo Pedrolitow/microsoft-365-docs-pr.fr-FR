@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: f1389fd64efce16e81e02885127e65c8d1922c5b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 653b986de8d580a25a1032b77f34db8924d3ea0d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602811"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085783"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés Microsoft Managed Desktop
 
@@ -35,7 +35,9 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 
 | Modèle  | Caractéristiques minimales  | Autres conditions requises   | Date de déclassement |
 |---------|---------|---------|---------|
-| HP EliteBook 830/840/850 G5| 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis  | **15 février 2023** |
+|HP EliteBook 830/840/850 G5| 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis  | **15 février 2023** |
+|HP Elite x2 1013 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS03AV, appareil infrarouge obligatoire |**14 mai 2023** |
+|HP EliteBook x360 1030 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire |**14 mai 2023** |
 |Surface Book 2| 256 Go/Intel i5/8 Go de RAM | Aucun | **16 novembre 2022** |
 |Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Aucun | **20 mai 2022** |
 |Surface Pro| 256 Go/Intel i5/8 Go de RAM | Aucun | **15 juin 2022** |
