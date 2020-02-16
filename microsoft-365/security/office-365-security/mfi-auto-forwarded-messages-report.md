@@ -11,26 +11,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Les administrateurs peuvent en savoir plus sur le rapport de messages transférés automatiquement dans le tableau de bord de flux de messagerie dans le centre de sécurité & Office 365.
-ms.openlocfilehash: 2949f8991d7c65861fd390d3c843053ad36c0d60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 43e32dda70da5a8252af7f4f01bbdbb5599454fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598901"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088559"
 ---
 # <a name="auto-forwarded-messages-report"></a>Rapport des messages transférés automatiquement
 
 Le rapport de **messages transférés** automatiquement dans le tableau de bord du flux de messagerie affiche des informations sur les messages qui sont automatiquement transférés de votre organisation Office 365 vers les destinataires des domaines externes.
 
-![Aperçu des messages transmis automatiquement dans le centre de sécurité & Office 365 Security](../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Aperçu des messages transmis automatiquement dans le centre de sécurité & Office 365 Security](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
-![Rapport de messages transférés automatiquement dans le tableau de bord de flux de messagerie dans le centre de conformité & Office 365 Security](../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Rapport de messages transférés automatiquement dans le tableau de bord de flux de messagerie dans le centre de conformité & Office 365 Security](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Détails des messages transférés automatiquement
 
 Lorsque vous cliquez sur le nombre de messages dans le widget, un volet flyout s’affiche et indique l’état du message transféré automatiquement. Vous pouvez afficher les détails en cliquant sur le lien **rapport de transfert** .
 
-![Menu volant des détails pour le rapport de messages transférés automatiquement dans le centre de conformité Office 365 Security &](../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+![Menu volant des détails pour le rapport de messages transférés automatiquement dans le centre de conformité Office 365 Security &](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
 
 ## <a name="insights"></a>Informations
 

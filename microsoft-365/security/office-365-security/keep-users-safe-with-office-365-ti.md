@@ -16,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d’enquête et de réponse aux menaces Office 365 peuvent aider votre organisation à détecter les intrusions et les menaces, ainsi qu’à limiter et récupérer rapidement les menaces.
-ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6734903198fa29cdd7ac4295feb6313479ecab50
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599101"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088669"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Sécuriser votre organisation grâce aux fonctionnalités d’enquête et de réponse aux menaces Office 365
 
@@ -35,7 +35,7 @@ L' [Explorateur de menaces](threat-explorer.md) (également appelé Explorateur)
 
 L’Explorateur aide également les administrateurs à parcourir les relations entre les utilisateurs et le courrier électronique. Connaissance d’un message particulier qui était incorrect ? Recherchez-le pour savoir quels utilisateurs ont reçu le courrier, puis suivez la série d’événements et observez ce qu’ils ont fait.
 
-![Capture d’écran de l’Explorateur de menaces dans Office 365, codée en couleur par une famille de programmes malveillants](../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Capture d’écran de l’Explorateur de menaces dans Office 365, codée en couleur par une famille de programmes malveillants](../../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
 
 ## <a name="quickly-mitigate-and-recover-from-threats"></a>Limitation et récupération rapides des menaces
 
@@ -43,7 +43,7 @@ Une fois que les administrateurs de la sécurité ont identifié un événement 
 
  **Mise à jour :** La possibilité de supprimer (suppression douce ou matérielle) des messages électroniques directement à partir de l’infrastructure de l’incident a été ajoutée. Auparavant, les administrateurs pouvaient uniquement déplacer des messages vers le dossier de courrier indésirable d’un utilisateur, où les utilisateurs pouvaient récupérer l’élément. À l’aide des nouvelles fonctionnalités de suppression, vous pouvez désormais vous assurer qu’un courrier malveillant ou indésirable est supprimé définitivement.
 
-![Capture d’écran de la liste des messages de correction d’incidents](../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![Capture d’écran de la liste des messages de correction d’incidents](../../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
 
 ## <a name="leverage-the-threat-telemetry-of-microsoft"></a>Tirer parti de la fonctionnalité de télémétrie des menaces de Microsoft
 

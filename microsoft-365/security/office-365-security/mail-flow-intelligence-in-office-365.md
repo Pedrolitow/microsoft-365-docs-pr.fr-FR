@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs dans Office 365 (également appelés aide au flux de messagerie).
-ms.openlocfilehash: ea4fb56f0e303d243af02edf01e5d85b957a6368
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 849493cefecb3344eaf7b6db73be3930138c236c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599051"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088653"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Renseignements sur le flux de messagerie dans Office 365
 
@@ -72,9 +72,9 @@ En règle générale, cette erreur signifie qu’Office 365 a rencontré une err
 
     2. Sélectionnez le connecteur avec la valeur **à partir d'** **Office 365** et la valeur **pour** le **serveur de messagerie de votre organisation** , puis effectuez l’une des opérations suivantes :
 
-       - Supprimez le connecteur en cliquant sur **supprimer** ![l’icône Supprimer.](../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Supprimez le connecteur en cliquant sur **supprimer** ![l’icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Désactivez le connecteur **** ![en cliquant sur](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifier l’icône modifier, puis désactivez la case à cocher **activer**.
+       - Désactivez le connecteur **** ![en cliquant sur](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifier l’icône modifier, puis désactivez la case à cocher **activer**.
 
   - Modifiez le domaine accepté dans Office 365 associé à votre environnement de messagerie local de **relais interne** vers **faisant autorité**. Pour obtenir des instructions, consultez la rubrique [gestion des domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 

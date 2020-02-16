@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Les administrateurs peuvent en savoir plus sur le widget flux de messagerie sortant et entrant dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: f4781777d90f2156b35dd0bfeab42084ef99d1a1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c86db8e33ff3ee1dc4d9d126239465b3c84bde5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598841"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088431"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flux de courrier entrant et sortant
 
 Le widget **flux de messagerie sortant et** entrant combine les informations du rapport du **connecteur** et de l’ancien **rapport de vue d’ensemble TLS** à un emplacement unique.
 
-![Le rapport des flux de messagerie entrants et sortants dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![Le rapport des flux de messagerie entrants et sortants dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 Les informations contenues dans le widget sont liées aux connecteurs et à la protection des messages TLS dans Office 365. Pour plus d'informations, voir les rubriques suivantes :
 
@@ -35,7 +35,7 @@ Les informations contenues dans le widget sont liées aux connecteurs et à la p
 
 Le widget **flux de messagerie entrant et sortant** affiche le chiffrement TLS utilisé pour la connexion lorsque des messages sont remis à partir de votre organisation Office 365. Les connexions établies avec d’autres services de messagerie sont chiffrées par TLS lorsque TLS est offert par les deux côtés. Le widget offre un instantané de la dernière semaine du flux de messagerie. Lorsque vous cliquez sur **afficher les détails**, le menu volant **message protégé en transit (par TLS)** vous indique la protection TLS pour les messages entrants et sortants de votre organisation.
 
-![Le menu contextuel messages protégés en transit (par TLS) dans le centre de sécurité & conformité](../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![Le menu contextuel messages protégés en transit (par TLS) dans le centre de sécurité & conformité](../../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 Actuellement, TLS 1,2 est la version la plus sécurisée de TLS offerte par Office 365. En règle générale, vous devez déterminer le chiffrement TLS utilisé pour les audits de conformité. Vous n’avez probablement pas de relation directe avec la plupart des serveurs de messagerie source et de destination (vous n’êtes pas propriétaire, ni Microsoft), de sorte que vous n’avez pas de nombreuses options pour améliorer le chiffrement TLS utilisé par ces serveurs.
 
