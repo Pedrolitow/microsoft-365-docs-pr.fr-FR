@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: En tant qu’administrateur général Office 365, vous pouvez appliquer la personnalisation de votre organisation aux messages électroniques chiffrés de votre organisation et au contenu du portail de chiffrement.
-ms.openlocfilehash: b4712edd86099b1c382ef02ca54520b68a54614e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 23b6cd205c4ae3a0ca08aab2209e0152a3f78b63
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594025"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079975"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Ajouter la marque de votre organisation à vos messages chiffrés
 
@@ -71,7 +71,7 @@ Utilisez Windows PowerShell pour modifier un modèle de personnalisation à la f
 
 2. Modifiez le modèle à l’aide de la cmdlet Set-OMEConfiguration comme décrit dans [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) ou utilisez le graphique et le tableau ci-dessous pour obtenir des instructions.
 
-![Composants de messagerie personnalisables](media/ome-template-breakout.png)
+![Composants de messagerie personnalisables](../media/ome-template-breakout.png)
 
 |**Pour personnaliser cette fonctionnalité de l’expérience de chiffrement**|**Utilisez ces commandes**|
 |:-----|:-----|
@@ -162,7 +162,7 @@ Pour plus d’informations sur la création d’une règle de flux de messagerie
 
 3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
 
-4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Dans **nom**, tapez un nom pour la règle, par exemple, personnalisation pour le service des ventes.
 

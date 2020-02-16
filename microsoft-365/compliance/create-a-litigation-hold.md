@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: dbcddd57fcf2d1471b4a4aa4b715dcae22dbc40c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d465e2a28b47abc5020480a4a862cbbca1d5e678
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596191"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077725"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une suspension pour litige
 
@@ -86,7 +86,7 @@ Lorsqu'une boîte aux lettres est placée en conservation pour litige, les élé
 
 L'illustration suivante montre les sous-dossiers des dossiers Éléments récupérables et le processus de conservation inaltérable.
 
-![Cycle de vie de conservation pour litige](media/LitigationHoldLifeCycle.png)
+![Cycle de vie de conservation pour litige](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > Si une conservation associée à un cas de découverte électronique est placée dans une boîte aux lettres, les éléments purgés sont déplacés du sous-dossier suppressions vers le sous-dossier DiscoveryHolds et sont conservés jusqu’à ce que la boîte aux lettres soit libérée de la conservation eDiscovery.

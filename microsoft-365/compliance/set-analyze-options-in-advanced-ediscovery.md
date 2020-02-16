@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Passez en revue les étapes de configuration des options pour le processus Analyze dans Office 365 Advanced eDiscovery, y compris les thèmes de quasi-duplication, les threads de messagerie et les thèmes.  '
-ms.openlocfilehash: e9acb30d991bd2ee0acba5a9ddde619272788ceb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597461"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081154"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Définir les options d’analyse dans Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ Dans Advanced eDiscovery, définissez les options d’analyse avant d’exécute
 
 Ouvrez **Prepare prepare prepare \> ** \> **Setup**. La fenêtre suivante s’affiche.
   
-![Options Définir l’analyse](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
+![Options Définir l’analyse](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
  **Quasi-doublons et threads de messagerie** Activez cette case à cocher si vous souhaitez exécuter l’analyse. Elle est sélectionnée par défaut. 
   
@@ -51,11 +51,11 @@ Ouvrez **Prepare prepare prepare \> ** \> **Setup**. La fenêtre suivante s’af
     
     Par exemple, si le mot suggéré est « ordinateur » et que vous avez spécifié « 2 » comme « nombre maximal de thèmes », Advanced eDiscovery essaiera de générer deux thèmes liés au mot « ordinateur ». Les deux thèmes peuvent être « logiciels informatiques » et « matériel informatique », par exemple. 
     
-    ![Ajouter une suggestion de thème](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![Ajouter une suggestion de thème](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
 1. Pour afficher, ajouter ou modifier des thèmes suggérés, cliquez sur **modifier**.
     
-2. Dans le **panneau thèmes suggérés** , cliquez sur l’icône](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) **Ajouter** ![une icône Ajouter pour ajouter un thème. Dans le panneau **Ajouter un thème suggéré** , ajoutez les mots, séparés par des virgules. 
+2. Dans le **panneau thèmes suggérés** , cliquez sur l’icône](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) **Ajouter** ![une icône Ajouter pour ajouter un thème. Dans le panneau **Ajouter un thème suggéré** , ajoutez les mots, séparés par des virgules. 
     
 3. Dans **nombre de thèmes**, sélectionnez une valeur pour déterminer le nombre de thèmes que la fonctionnalité eDiscovery avancée essaiera de générer pour ces mots (la valeur par défaut est 1 thème).
     

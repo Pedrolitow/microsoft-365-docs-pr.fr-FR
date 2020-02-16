@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Office 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft.
-ms.openlocfilehash: ee62065542ea50091d73362dd8d05f2e4e7dc337
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 6fd7167dd46f3a44d97a493830aef19e40f062e8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804785"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076919"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Chiffrement de service avec clé client dans Office 365
 
@@ -71,11 +71,11 @@ La clé client utilise un grand nombre de chiffrements de chiffrement pour chiff
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Chiffrements de chiffrement utilisés pour chiffrer les clés pour Exchange Online et Skype entreprise
 
-![Chiffrements de chiffrement pour la clé client Exchange Online](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Chiffrements de chiffrement pour la clé client Exchange Online](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Chiffrements de chiffrement utilisés pour chiffrer les clés pour SharePoint Online, OneDrive entreprise et les fichiers teams
 
-![Chiffrements de chiffrement pour la clé client SharePoint Online](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Chiffrements de chiffrement pour la clé client SharePoint Online](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Articles connexes
 

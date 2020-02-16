@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pour contrôler et protéger les fichiers téléchargés à partir de listes ou de bibliothèques.
-ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4366a9fa5c42a8f4505163e0987da1decf727564
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596081"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079897"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Appliquer la gestion des droits relatifs à l’information (IRM) à une liste ou une bibliothèque
 
@@ -47,13 +47,13 @@ Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pou
 ## <a name="apply-irm-to-a-list-or-library"></a>Appliquer la gestion des droits relatifs à l’information à une liste ou à une bibliothèque
 <a name="__toc256598179"> </a>
 
-![Paramètres de gestion des droits relatifs à l’information](media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
+![Paramètres de gestion des droits relatifs à l’information](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. Accédez à la liste ou à la bibliothèque pour laquelle vous souhaitez configurer la gestion des droits relatifs à l’information.
     
 2. Dans le ruban, cliquez sur l’onglet **bibliothèque** , puis sur **paramètres**de la bibliothèque. (Si vous utilisez une liste, cliquez sur l’onglet **liste** , puis sur paramètres de la **liste**).
     
-    ![Boutons des paramètres de bibliothèque SharePoint sur le ruban](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![Boutons des paramètres de bibliothèque SharePoint sur le ruban](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. Sous **autorisations et gestion**, cliquez sur **gestion des droits relatifs**à l’information. Si le lien gestion des droits relatifs à l’information n’apparaît pas, il est possible que l’IRM ne soit pas activée pour votre site. Contactez votre administrateur de serveur pour savoir s’il est possible d’activer la gestion des droits relatifs à l’information pour votre site. Le lien gestion des droits relatifs à l’information n’apparaît pas pour les bibliothèques d’images.
     
@@ -137,7 +137,7 @@ Les types de restrictions appliquées à un fichier lorsqu’il est télécharg�
 |Gérer les autorisations, gérer le site Web  <br/> |**Contrôle total** (tel que défini par le programme client) : cette autorisation permet généralement à un utilisateur de lire, modifier, copier, enregistrer et modifier des autorisations de contenu géré par des droits.  <br/> |
 |Modifier des éléments, gérer des listes, ajouter et personnaliser des pages  <br/> |**Modifier**, **copier**et **Enregistrer**: un utilisateur peut imprimer un fichier uniquement si la case **à cocher Autoriser les utilisateurs à imprimer des documents** est activée sur la page Paramètres de gestion des droits relatifs à l’information pour la liste ou la bibliothèque.  <br/> |
 |Afficher les éléments  <br/> |**Lecture**: un utilisateur peut lire le document, mais ne peut pas copier ou modifier son contenu. Un utilisateur ne peut imprimer que si la case à cocher **autoriser les utilisateurs à imprimer des documents** est activée sur la page Paramètres de gestion des droits relatifs à l’information pour la liste ou la bibliothèque.  <br/> |
-|Other  <br/> |Aucune autre autorisation ne correspond directement aux autorisations IRM.  <br/> |
+|Autres  <br/> |Aucune autre autorisation ne correspond directement aux autorisations IRM.  <br/> |
    
 Lorsque vous activez IRM pour une liste ou une bibliothèque dans SharePoint Server 2013, vous pouvez uniquement protéger les types de fichiers de cette liste ou bibliothèque pour lesquels un logiciel de protection est installé sur tous les serveurs Web frontaux. Un protecteur est un programme qui contrôle le chiffrement et le déchiffrement des fichiers gérés par des droits d’un format de fichier spécifique. SharePoint inclut des logiciels de protection pour les types de fichiers suivants :
   

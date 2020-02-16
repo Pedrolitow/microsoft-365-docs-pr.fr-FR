@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Examinez la valeur de similarité des documents, le niveau de ressemblance minimal entre deux fichiers devant être considérés comme étant des doublons, fonctionne dans Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: c11359681de4d1e078cde8ebf603396c9a71e3b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597331"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080767"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Comprendre la similarité des documents dans Office 365 Advanced eDiscovery
 
@@ -44,11 +44,11 @@ Toutefois, le document F1 peut ressembler à un document de F3 dont le niveau es
   
 Les niveaux de ressemblance sont illustrés comme suit :
   
-![Similitude du document](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
+![Similitude du document](../media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
 Supposons qu’un autre document, x1, est maintenant inséré. La ressemblance entre x1 et E3 est de 87%. De même, la ressemblance entre x1 et F1 est de 92%. Par conséquent, EquiSet-1, EquiSet-2 et x1 sont désormais combinés en un seul jeu ND.
   
-![Similitude du document](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
+![Similitude du document](../media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
 > Si deux documents sont affectés à un seul jeu, ils restent ensemble dans le même ensemble ND, même si des documents supplémentaires sont ajoutés à l’ensemble ou si les jeux sont fusionnés. 

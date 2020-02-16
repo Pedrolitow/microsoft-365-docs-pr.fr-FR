@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
-ms.openlocfilehash: defd5c8eba1202020fc8d3e3225c6ef4a425a331
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 818a0db46d0c2a763c1c90b585a6d7a0fd403b94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595561"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077257"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -59,23 +59,23 @@ Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d�
 
 Office 365 fournit une gamme de [modèles de stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies DLP. Imaginons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles de stratégie pour n’afficher que ceux qui sont pertinents pour l’Australie, qui entrent dans les catégories générales de finances, médecine et santé, ainsi que la confidentialité.
 
-![Option permettant de choisir un pays ou une région](media/DLP-create-test-tune-choose-country.png)
+![Option permettant de choisir un pays ou une région](../media/DLP-create-test-tune-choose-country.png)
 
 Pour cette démonstration, je vais choisir les données d’informations d’identification personnelle (PII) australiennes, qui incluent les types d’informations de numéro de fichier fiscal australien (TFN) et le numéro de permis de conduire.
 
-![Option permettant de choisir un modèle de stratégie](media/DLP-create-test-tune-choose-policy-template.png)
+![Option permettant de choisir un modèle de stratégie](../media/DLP-create-test-tune-choose-policy-template.png)
 
 Donnez un nom à votre nouvelle stratégie DLP. Le nom par défaut correspond au modèle de stratégie DLP, mais vous devez choisir un nom plus descriptif, car plusieurs stratégies peuvent être créées à partir du même modèle.
 
-![Option permettant de nommer votre stratégie](media/DLP-create-test-tune-name-policy.png)
+![Option permettant de nommer votre stratégie](../media/DLP-create-test-tune-name-policy.png)
 
 Choisissez les emplacements auxquels la stratégie s’applique. Les stratégies DLP peuvent s’appliquer à Exchange Online, SharePoint Online et OneDrive entreprise. Je vais laisser cette stratégie configurée pour s’appliquer à tous les emplacements.
 
-![Option permettant de choisir tous les emplacements](media/DLP-create-test-tune-choose-locations.png)
+![Option permettant de choisir tous les emplacements](../media/DLP-create-test-tune-choose-locations.png)
 
 À la première étape des **paramètres de stratégie** , acceptez les valeurs par défaut pour le moment. Il existe un grand nombre de personnalisations que vous pouvez effectuer dans les stratégies DLP, mais les valeurs par défaut sont un bon point de départ.
 
-![Options de personnalisation du type de contenu à protéger](media/DLP-create-test-tune-default-customization-settings.png)
+![Options de personnalisation du type de contenu à protéger](../media/DLP-create-test-tune-default-customization-settings.png)
 
 Après avoir cliqué sur **suivant** , une page Paramètres de **stratégie** supplémentaires s’affiche avec davantage d’options de personnalisation. Pour une stratégie que vous venez de tester, c’est ici que vous pouvez commencer à effectuer quelques ajustements.
 
@@ -83,11 +83,11 @@ Après avoir cliqué sur **suivant** , une page Paramètres de **stratégie** su
 - J’ai également réduit le nombre d’instances de 10 à 1, de sorte que cette stratégie détecte le partage des données PII australiennes, et pas simplement le partage des données en bloc.
 - J’ai également ajouté un autre destinataire à l’e-mail du rapport d’incident.
 
-![Paramètres de stratégie supplémentaires](media/DLP-create-test-tune-more-policy-settings.png)
+![Paramètres de stratégie supplémentaires](../media/DLP-create-test-tune-more-policy-settings.png)
 
 Enfin, j’ai configuré cette stratégie pour s’exécuter initialement en mode test. Notez qu’il existe également une option permettant de désactiver les conseils de stratégie en mode test. Vous avez ainsi la possibilité d’activer les conseils de stratégie dans la stratégie, mais de décider de les afficher ou de les supprimer pendant les tests.
 
-![Option pour tester d’abord la stratégie](media/DLP-create-test-tune-test-mode.png)
+![Option pour tester d’abord la stratégie](../media/DLP-create-test-tune-test-mode.png)
 
 Dans l’écran révision finale, cliquez sur **créer** pour terminer la création de la stratégie.
 
@@ -97,19 +97,19 @@ Votre nouvelle stratégie DLP commencera à prendre effet dans environ 1 heure. 
 
 Par exemple, la stratégie DLP que j’ai créée pour cet article détectera les numéros de fichiers fiscaux australiens (TFN). Conformément à la documentation, la correspondance est basée sur les critères suivants.
 
-![Documentation sur le numéro de fichier fiscal Australie](media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
+![Documentation sur le numéro de fichier fiscal Australie](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
 Pour illustrer la détection d’TFN de manière assez rationnelle, un message électronique avec les mots « numéro de fichier de la taxe » et une chaîne de 9 chiffres à proximité ne s’afficheront pas. La raison pour laquelle elle ne déclenche pas la stratégie DLP est que la chaîne à 9 chiffres doit transmettre la somme de contrôle qui indique qu’il s’agit d’un TFN valide et non d’une chaîne de nombres inoffensive.
 
-![Numéro de fichier fiscal Australie qui ne transmet pas de checksum](media/DLP-create-test-tune-email-test1.png)
+![Numéro de fichier fiscal Australie qui ne transmet pas de checksum](../media/DLP-create-test-tune-email-test1.png)
 
 Par comparaison, un message électronique avec les mots « numéro de fichier de la taxe » et un TFN valide qui réussit la somme de contrôle déclencheront la stratégie. Pour l’enregistrement ici, le TFN que j’utilise a été extrait d’un site Web qui génère des TFNs valides, mais pas authentiques. Ces sites sont très utiles, car l’une des erreurs les plus courantes lors du test d’une stratégie DLP utilise un faux nombre qui n’est pas valide et qui ne réussit pas la somme de contrôle (et par conséquent ne déclenche pas la stratégie).
 
-![Numéro de fichier fiscal Australie qui réussit le checksum](media/DLP-create-test-tune-email-test2.png)
+![Numéro de fichier fiscal Australie qui réussit le checksum](../media/DLP-create-test-tune-email-test2.png)
 
 L’e-mail du rapport d’incident inclut le type d’informations sensibles détectées, le nombre d’instances détectées et le niveau de confiance de la détection.
 
-![Rapport d’incident indiquant le numéro de fichier de taxe détecté](media/DLP-create-test-tune-email-incident-report.png)
+![Rapport d’incident indiquant le numéro de fichier de taxe détecté](../media/DLP-create-test-tune-email-incident-report.png)
 
 Si vous laissez votre stratégie DLP en mode test et que vous analysez les messages électroniques des rapports d’incident, vous pouvez commencer à vous faire une idée de la précision de la stratégie DLP et de son efficacité lors de son application. Outre les rapports d’incident, vous pouvez [utiliser les rapports DLP](view-the-dlp-reports.md) pour afficher une vue agrégée des correspondances de stratégie au sein de votre client.
 
@@ -119,15 +119,15 @@ Lors de l’analyse de vos accès aux stratégies, il se peut que vous souhaitie
 
 Dans le centre de sécurité & conformité, vous pouvez modifier une stratégie existante pour ajuster le comportement.
 
-![Option de modification de la stratégie](media/DLP-create-test-tune-edit-policy.png)
+![Option de modification de la stratégie](../media/DLP-create-test-tune-edit-policy.png)
  
 Vous pouvez ajuster les paramètres d’emplacement de sorte que la stratégie s’applique uniquement à des charges de travail spécifiques ou à des sites et comptes spécifiques.
 
-![Options permettant de choisir des emplacements spécifiques](media/DLP-create-test-tune-edit-locations.png)
+![Options permettant de choisir des emplacements spécifiques](../media/DLP-create-test-tune-edit-locations.png)
 
 Vous pouvez également ajuster les paramètres de stratégie et modifier les règles pour mieux répondre à vos besoins.
 
-![Option de modification de la règle](media/DLP-create-test-tune-edit-rule.png)
+![Option de modification de la règle](../media/DLP-create-test-tune-edit-rule.png)
 
 Lorsque vous modifiez une règle dans une stratégie DLP, vous pouvez modifier les éléments suivants :
 
@@ -137,29 +137,29 @@ Lorsque vous modifiez une règle dans une stratégie DLP, vous pouvez modifier l
 - Substitutions de l’utilisateur, qui déterminent si les utilisateurs peuvent choisir de continuer à utiliser leur messagerie ou leur partage de fichiers.
 - Rapports d’incidents, pour avertir les administrateurs.
 
-![Options permettant de modifier des parties d’une règle](media/DLP-create-test-tune-editing-options.png)
+![Options permettant de modifier des parties d’une règle](../media/DLP-create-test-tune-editing-options.png)
 
 Pour cette démonstration, j’ai ajouté des notifications aux utilisateurs à la stratégie (veillez à le faire sans formation de sensibilisation de l’utilisateur) et les utilisateurs autorisés à remplacer la stratégie par une justification professionnelle ou à la marquer comme faux positif. Notez que vous pouvez également personnaliser le texte du message et du Conseil de stratégie si vous souhaitez inclure des informations supplémentaires sur les stratégies de votre organisation ou inviter les utilisateurs à contacter le support technique s’ils ont des questions.
 
-![Options pour les notifications et les remplacements des utilisateurs](media/DLP-create-test-tune-user-notifications.png)
+![Options pour les notifications et les remplacements des utilisateurs](../media/DLP-create-test-tune-user-notifications.png)
 
 La stratégie contient deux règles de gestion de volume élevé et de volume faible, donc veillez à modifier les deux avec les actions de votre choix. Il s’agit d’une opportunité de traiter les incidents différemment en fonction de leurs caractéristiques. Par exemple, vous pouvez autoriser les remplacements pour les violations de volume faibles, mais pas autoriser les remplacements pour les violations de volume élevées.
 
-![Une règle pour le volume élevé et une règle pour le volume faible](media/DLP-create-test-tune-two-rules.png)
+![Une règle pour le volume élevé et une règle pour le volume faible](../media/DLP-create-test-tune-two-rules.png)
 
 Par ailleurs, si vous souhaitez bloquer ou restreindre effectivement l’accès au contenu en violation de stratégie, vous devez configurer une action sur la règle pour le faire.
 
-![Option permettant de restreindre l’accès au contenu](media/DLP-create-test-tune-restrict-access-action.png)
+![Option permettant de restreindre l’accès au contenu](../media/DLP-create-test-tune-restrict-access-action.png)
 
 Après avoir enregistré ces modifications aux paramètres de stratégie, je dois également revenir à la page des paramètres principaux de la stratégie et activer l’option d’affichage des conseils de stratégie pour les utilisateurs pendant que la stratégie est en mode test. Il s’agit d’un moyen efficace d’introduire des stratégies DLP auprès de vos utilisateurs finaux, ainsi que d’effectuer des formations de sensibilisation des utilisateurs, sans menacer trop de faux positifs ayant un impact sur leur productivité.
 
-![Option pour afficher les conseils de stratégie en mode test](media/DLP-create-test-tune-show-policy-tips.png)
+![Option pour afficher les conseils de stratégie en mode test](../media/DLP-create-test-tune-show-policy-tips.png)
 
 Côté serveur (ou côté Cloud si vous préférez), la modification peut ne pas prendre effet immédiatement, en raison de différents intervalles de traitement. Si vous effectuez une modification de stratégie DLP qui affiche de nouveaux conseils de stratégie à un utilisateur, l’utilisateur peut ne pas voir les modifications prendre effet immédiatement dans son client Outlook, qui recherche les modifications de stratégie toutes les 24 heures. Si vous souhaitez accélérer les tests, vous pouvez utiliser ce correctif de Registre pour [effacer le datage du dernier transfert à partir de la clé PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook télécharge les informations de stratégie les plus récentes la prochaine fois que vous le redémarrez et commencez à composer un message électronique.
 
 Si des conseils de stratégie sont activés, l’utilisateur commence à voir les conseils dans Outlook et peut signaler les faux positifs lorsqu’ils se produisent.
 
-![Conseil de stratégie avec l’option de signalement des faux positifs](media/DLP-create-test-tune-policy-tip-in-outlook.png)
+![Conseil de stratégie avec l’option de signalement des faux positifs](../media/DLP-create-test-tune-policy-tip-in-outlook.png)
 
 ## <a name="investigate-false-positives"></a>Examiner les faux positifs
 
@@ -167,26 +167,26 @@ Les modèles de stratégie DLP ne sont pas parfaitement adaptés. Il est probabl
 
 Voici un exemple de faux positif. Ce courrier électronique est relativement inoffensif. L’utilisateur fournit son numéro de téléphone mobile à quelqu’un et inclut sa signature électronique.
 
-![Message électronique affichant des informations fausses](media/DLP-create-test-tune-false-positive-email.png)
+![Message électronique affichant des informations fausses](../media/DLP-create-test-tune-false-positive-email.png)
  
 Toutefois, l’utilisateur voit un Conseil de stratégie les avertissant que le courrier électronique contient des informations sensibles, en particulier, un numéro de permis de conduire australien.
 
-![Option de signalement des faux positifs dans le Conseil de stratégie](media/DLP-create-test-tune-policy-tip-closeup.png)
+![Option de signalement des faux positifs dans le Conseil de stratégie](../media/DLP-create-test-tune-policy-tip-closeup.png)
 
 L’utilisateur peut signaler le faux positif, et l’administrateur peut examiner pourquoi il s’est produit. Dans le message de rapport d’incident, le message électronique est marqué comme faux positif.
 
-![Rapport d’incident présentant un faux positif](media/DLP-create-test-tune-false-positive-incident-report.png)
+![Rapport d’incident présentant un faux positif](../media/DLP-create-test-tune-false-positive-incident-report.png)
 
 Le cas de la licence de ce pilote est un parfait exemple pour explorer. La raison de ce faux positif est que le type « permis de conduire australien » est déclenché par une chaîne de 9 chiffres (même une partie d’une chaîne de 10 chiffres), entre 300 caractères, à proximité des mots-clés « Sydney NSW » (ne respectant pas la casse). Il est donc déclenché par le numéro de téléphone et la signature électronique, uniquement parce que l’utilisateur se trouve dans Sydney.
 
 
 Une possibilité consiste à supprimer du type d’informations de licence du pilote australien de la stratégie. Il est dans cet emplacement, car il fait partie du modèle de stratégie DLP, mais nous ne sommes pas obligés de l’utiliser. Si vous êtes intéressé uniquement par les numéros de fichier des taxes et non par des licences de pilotes, vous pouvez simplement le supprimer. Par exemple, vous pouvez le supprimer de la règle de volume faible de la stratégie, mais le laisser dans la règle de volume élevée afin que les listes de licences de plusieurs pilotes soient toujours détectées.
 
-![Option de suppression du type d’informations sensibles de la règle](media/DLP-create-test-tune-delete-low-volume-rule.png)
+![Option de suppression du type d’informations sensibles de la règle](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
 Une autre solution consiste à augmenter simplement le nombre d’instances, de sorte qu’un faible volume de licences de pilotes soit détecté uniquement lorsqu’il y a plusieurs instances.
 
-![Option permettant de modifier le nombre d’instances](media/DLP-create-test-tune-edit-instance-count.png)
+![Option permettant de modifier le nombre d’instances](../media/DLP-create-test-tune-edit-instance-count.png)
 
 En plus de modifier le nombre d’instances, vous pouvez également ajuster la précision de la correspondance (ou le niveau de confiance). Si votre type d’informations sensibles comporte plusieurs modèles, vous pouvez ajuster la précision des correspondances dans votre règle, afin que votre règle corresponde uniquement à des modèles spécifiques. Par exemple, pour réduire les faux positifs, vous pouvez définir la précision de la règle de sorte qu’elle corresponde uniquement au modèle ayant le niveau de confiance le plus élevé. Comprendre comment le niveau de confiance est calculé est un peu délicat (et au-delà de l’étendue de cette publication), mais voici une bonne explication de [l’utilisation du niveau de confiance pour régler vos règles](data-loss-prevention-policies.md#match-accuracy).
 
@@ -196,21 +196,21 @@ Enfin, si vous souhaitez obtenir un peu plus de détails, vous pouvez personnali
 
 Lorsque vous êtes satisfait que votre stratégie DLP détecte des types d’informations sensibles de manière précise et efficace, et que vos utilisateurs finals sont prêts à gérer les stratégies en place, vous pouvez activer la stratégie.
 
-![Option d’activation de la stratégie](media/DLP-create-test-tune-turn-on-policy.png)
+![Option d’activation de la stratégie](../media/DLP-create-test-tune-turn-on-policy.png)
  
 Si vous attendez que la stratégie prenne effet, [Connectez-vous à la sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) et exécutez la [cmdlet Get-dlpcompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) pour afficher le DistributionStatus.
 
-![Exécution d’une cmdlet dans PowerShell](media/DLP-create-test-tune-PowerShell.png)
+![Exécution d’une cmdlet dans PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 
 Après avoir activé la stratégie DLP, vous devez exécuter certains tests finaux pour vous assurer que les actions de stratégie attendues se produisent. Si vous essayez de tester des éléments tels que des données de carte de crédit, il existe des sites Web en ligne avec des informations sur la façon de générer un exemple de carte de crédit ou d’autres informations personnelles qui transmettent des sommes de contrôle et déclenchent vos stratégies.
 
 Les stratégies qui autorisent les substitutions de l’utilisateur présenteront cette option à l’utilisateur dans le cadre du Conseil de stratégie.
 
-![Conseil de stratégie qui autorise le remplacement par l’utilisateur](media/DLP-create-test-tune-override-option.png)
+![Conseil de stratégie qui autorise le remplacement par l’utilisateur](../media/DLP-create-test-tune-override-option.png)
 
 Les stratégies qui restreignent le contenu présentent l’avertissement à l’utilisateur dans le cadre du Conseil de stratégie et l’empêchent d’envoyer le courrier électronique.
 
-![Conseil de stratégie indiquant que le contenu est restreint](media/DLP-create-test-tune-restrict-warning.png)
+![Conseil de stratégie indiquant que le contenu est restreint](../media/DLP-create-test-tune-restrict-warning.png)
 
 ## <a name="summary"></a>Résumé
 

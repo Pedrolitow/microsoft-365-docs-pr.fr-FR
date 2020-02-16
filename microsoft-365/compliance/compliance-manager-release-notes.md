@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: c3d0efbfcf58eb001d2df5832439c22c7cc662aa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3fc16e92e912676d7aedc861ffe8306d68388c95
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595781"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078651"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notes de publication pour le gestionnaire de conformité (aperçu)
 

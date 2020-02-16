@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Une fois qu’une boîte aux lettres Office 365 est devenue inactive, vous pouvez modifier la durée de la conservation ou de la stratégie de rétention d’Office 365 affectée à la boîte aux lettres inactive. La durée de la conservation définit la durée de conservation des éléments dans le dossier Éléments récupérables.
-ms.openlocfilehash: c50f7845377b6428a4cdce2bb7240a7ca973a8eb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bcfea972bd627da831e9927884669d2ed8ee5234
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595941"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078935"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive dans Office 365
 
@@ -139,7 +139,7 @@ Les éléments de la boîte aux lettres inactive sont alors conservés indéfini
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Sélectionnez la conservation inaltérable à modifier, puis sélectionnez **modifier** ![l’icône](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifier.
+3. Sélectionnez la conservation inaltérable à modifier, puis sélectionnez **modifier** ![l’icône](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifier.
     
 4. Sur la page Propriétés **de la &amp; découverte électronique** inaltérable, sélectionnez **conservation**inaltérable. 
     
@@ -149,7 +149,7 @@ Les éléments de la boîte aux lettres inactive sont alors conservés indéfini
     
     2. Sélectionnez **spécifier le nombre de jours de conservation des éléments par rapport à leur date de réception** pour conserver les éléments d’une période donnée. Type the number of days that you want to hold items for. 
     
-    ![Capture d'écran de la modification de la durée d'une conservation inaltérable](media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
+    ![Capture d'écran de la modification de la durée d'une conservation inaltérable](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
 6. Cliquez sur **Enregistrer**.
     

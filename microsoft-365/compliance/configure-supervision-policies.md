@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: d0bd5411e99471ff326906f65747ec7a6f841545
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 230d363c8150899fdc5fd5f46aa1cb2576382267
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596201"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078291"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurer des stratégies de surveillance dans Office 365
 
 >[!IMPORTANT]
->Cette rubrique s’applique à la configuration des stratégies de surveillance dans un abonnement Office 365. Si vous souhaitez configurer la conformité des communications pour un abonnement Microsoft 365, consultez [la rubrique Configure communications compliance in microsoft 365 (Preview)](communication-compliance-configure.md).
+>Cette rubrique s’applique à la configuration des stratégies de surveillance dans un abonnement Office 365. Si vous souhaitez configurer la conformité des communications pour un abonnement Microsoft 365, consultez [la rubrique Configure communications compliance in microsoft 365](communication-compliance-configure.md).
 
 Utilisez des stratégies de surveillance pour capturer les communications des employés à des fins d’examen par des relecteurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de surveillance peuvent vous aider à surveiller les communications au sein de votre organisation, consultez la rubrique [surveillance des stratégies dans Office 365](supervision-policies.md).
 

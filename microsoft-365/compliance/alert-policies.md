@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations. Ensuite, vous pouvez afficher et gérer les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d’une stratégie d’alerte.
-ms.openlocfilehash: 025bf927b194a7faa6357dbabc12a424fe3f3124
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a5ac38f30d42ceff67f982c6c9ac9b03507d34cb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596101"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080015"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le centre de sécurité et conformité
 
@@ -37,7 +37,7 @@ Les stratégies d’alerte s’appuient sur et développent les fonctionnalités
 
 Voici un aperçu rapide du fonctionnement des stratégies d’alerte et des alertes déclenchées lorsque l’activité de l’utilisateur ou de l’administrateur correspond aux conditions d’une stratégie d’alerte.
 
-![Vue d’ensemble du fonctionnement des stratégies d’alerte](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
+![Vue d’ensemble du fonctionnement des stratégies d’alerte](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
 1. Un administrateur de votre organisation crée, configure et active une stratégie d’alerte à l’aide de la page **stratégies d’alerte** du centre de sécurité et de conformité. Vous pouvez également créer des stratégies d’alerte à l’aide de la cmdlet **New-protectionalert vous permet** dans la sécurité & PowerShell du centre de conformité. Pour créer des stratégies d’alerte, vous devez disposer du rôle gérer les alertes ou configuration de l’organisation dans le centre de sécurité et de conformité.
 
@@ -53,7 +53,7 @@ Une stratégie d’alerte est constituée d’un ensemble de règles et de condi
 
 Pour afficher et créer des stratégies d’alerte, [https://protection.office.com](https://protection.office.com) accédez à, puis sélectionnez alertes d' **alerte**des **alertes** \> .
 
-![Dans le centre de sécurité et de conformité, sélectionnez alertes, puis sélectionnez stratégies d’alerte pour afficher et créer des stratégies d’alerte.](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
+![Dans le centre de sécurité et de conformité, sélectionnez alertes, puis sélectionnez stratégies d’alerte pour afficher et créer des stratégies d’alerte.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
 Une stratégie d’alerte se compose des paramètres et conditions suivants.
 
@@ -66,7 +66,7 @@ Une stratégie d’alerte se compose des paramètres et conditions suivants.
 
 - **Lorsque l’alerte est déclenchée** , vous pouvez configurer un paramètre qui définit la fréquence à laquelle une activité peut se produire avant le déclenchement d’une alerte. Cela vous permet de configurer une stratégie pour générer une alerte chaque fois qu’une activité correspond aux conditions de la stratégie, lorsqu’un certain seuil est dépassé, ou lorsque l’activité de l’alerte suivi de l’alerte devient inhabituelle pour votre organisation.
 
-    ![Configurer la façon dont les alertes sont déclenchées, en fonction de la date d’activité, d’un seuil ou d’une activité inhabituelle pour votre organisation](media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
+    ![Configurer la façon dont les alertes sont déclenchées, en fonction de la date d’activité, d’un seuil ou d’une activité inhabituelle pour votre organisation](../media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
 
     Si vous sélectionnez le paramètre basé sur une activité inhabituelle, Office 365 établit une valeur de référence qui définit la fréquence normale de l’activité sélectionnée. Il faut au maximum sept jours pour établir cette ligne de base, pendant laquelle les alertes ne seront pas générées. Une fois la configuration de référence établie, une alerte est déclenchée lorsque la fréquence de l’activité suivie par la stratégie d’alerte dépasse largement la valeur de base. Pour les activités liées à l’audit (telles que les activités de fichiers et de dossiers), vous pouvez établir une ligne de base basée sur un seul utilisateur ou sur tous les utilisateurs de votre organisation ; pour les activités liées aux programmes malveillants, vous pouvez établir une ligne de base basée sur une seule famille de programmes malveillants, un destinataire unique ou tous les messages de votre organisation.
 
@@ -141,7 +141,7 @@ Lorsqu’une activité effectuée par les utilisateurs de votre organisation cor
 
 Pour afficher les alertes, accédez [https://protection.office.com](https://protection.office.com) à, puis **Sélectionnez** \> alertes **Afficher**les alertes.
 
-![Dans sécurité et conformité, sélectionnez alertes, puis afficher les alertes pour afficher les alertes.](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
+![Dans sécurité et conformité, sélectionnez alertes, puis afficher les alertes pour afficher les alertes.](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
 
 Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de toutes les alertes sur la page **afficher les alertes** .
 
@@ -177,33 +177,33 @@ Pour voir la catégorie affectée à une stratégie d’alerte par défaut, cons
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||
-|Administrateur de conformité|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Administrateur de conformité|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion des destructions|||||||
-|Gestion de la conformité DLP||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|Gestion de la conformité DLP||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
 |Exporter|||||||
 |Suspension|||||||
-|Gérer les alertes||||||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Configuration de l’Organisation||||||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Gérer les alertes||||||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Configuration de l’Organisation||||||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Aperçu|||||||
-|Gestion des enregistrements|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Gestion de la rétention|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestion des enregistrements|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestion de la rétention|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |Révision|||||||
 |Déchiffrement RMS|||||||
-|Gestion des rôles||||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Gestion des rôles||||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |Recherche et purge|||||||
-|Administrateur de sécurité||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Lecteur de sécurité||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Administrateur de sécurité||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Lecteur de sécurité||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
 |Vue de service assurance|||||||
 |Administrateur de la vérification de surveillance|||||||
 |Journaux d’audit en affichage seul|||||||
 |Gestion des appareils en affichage seul|||||||
-|Gestion de la conformité DLP en affichage seul||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Vue gérer uniquement les alertes||||||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Afficher uniquement les destinataires|||  ![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|Gestion des enregistrements en affichage seul|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Gestion de la rétention en affichage seul|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestion de la conformité DLP en affichage seul||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|Vue gérer uniquement les alertes||||||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Afficher uniquement les destinataires|||  ![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
+|Gestion des enregistrements en affichage seul|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestion de la rétention en affichage seul|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
 **Conseil :** Pour afficher les rôles affectés à chacun des groupes de rôles par défaut, exécutez les commandes suivantes dans sécurité & Centre de conformité PowerShell :
@@ -250,11 +250,11 @@ Les organisations qui disposent d’une sécurité d’application Cloud Microso
 
 Pour afficher uniquement les alertes de sécurité des applications Cloud dans le centre de sécurité et de conformité, utilisez le filtre **source** et sélectionnez **sécurité des applications Cloud**.
 
-![Utiliser le filtre source pour afficher uniquement les alertes de sécurité des applications Cloud](media/FilterCASAlerts.png)
+![Utiliser le filtre source pour afficher uniquement les alertes de sécurité des applications Cloud](../media/FilterCASAlerts.png)
 
 À l’instar d’une alerte déclenchée par une stratégie d’alerte dans le centre de sécurité et de conformité, vous pouvez sélectionner une alerte de sécurité d’application Cloud pour afficher une page de menu volant avec des détails sur l’alerte. L’alerte comprend un lien permettant d’afficher les détails et de gérer l’alerte dans le portail de sécurité de l’application Cloud, ainsi qu’un lien vers la stratégie de sécurité de l’application Cloud correspondante qui a déclenché l’alerte. Consultez la rubrique [Monitor alerts in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
-![Les détails de l’alerte contiennent des liens vers le portail de sécurité des applications Cloud](media/CASAlertDetail.png)
+![Les détails de l’alerte contiennent des liens vers le portail de sécurité des applications Cloud](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
 > La modification de l’état d’une alerte de sécurité d’application Cloud dans le centre de sécurité et de conformité ne met pas à jour l’état de résolution de la même alerte dans le portail de sécurité des applications Cloud. Par exemple, si vous marquez le statut de l’alerte comme **résolu** dans le centre de sécurité et de conformité, l’état de l’alerte dans le portail de sécurité des applications Cloud est inchangé. Pour résoudre ou faire disparaître une alerte de sécurité d’application Cloud, gérez l’alerte dans le portail de sécurité des applications Cloud.

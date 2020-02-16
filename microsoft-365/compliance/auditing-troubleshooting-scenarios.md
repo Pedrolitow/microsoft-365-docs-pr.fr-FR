@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à résoudre les problèmes courants, tels que l’enquête sur un compte compromis, la personne qui configure le transfert de courrier pour une boîte aux lettres ou la manière dont un utilisateur externe a réussi à se connecter à votre organisation.
-ms.openlocfilehash: b453cccb0486ab923de720edb5a6a877395b9b7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595971"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079149"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Rechercher dans le journal d’audit Office 365 pour identifier les problèmes de prise en charge courants
 
@@ -49,7 +49,7 @@ Cette section décrit les notions de base pour la création et l’exécution de
     
     La page **Recherche dans le journal d’audit** s’affiche. 
     
-    ![Configurez les critères, puis sélectionnez recherche pour exécuter la recherche.](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurez les critères, puis sélectionnez recherche pour exécuter la recherche.](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
 4. Vous pouvez configurer les critères de recherche suivants. Chaque scénario de dépannage de cet article recommande des instructions spécifiques pour la configuration de ces champs.
     
@@ -106,11 +106,11 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 Après avoir exécuté la recherche, sélectionnez **Filtrer les résultats** sur la page des résultats de la recherche. Dans la zone située sous en-tête de colonne **activité** , tapez **Set-Mailbox** afin que seuls les enregistrements d’audit liés à la cmdlet **Set-Mailbox** s’affichent.
 
-![Filtrage des résultats d’une recherche de journal d’audit](media/emailforwarding1.png)
+![Filtrage des résultats d’une recherche de journal d’audit](../media/emailforwarding1.png)
 
 À ce stade, vous devez examiner les détails de chaque enregistrement d’audit pour déterminer si l’activité est liée au transfert du courrier. Sélectionnez l’enregistrement d’audit pour afficher la page de menu volant **Détails** , puis sélectionnez **plus d’informations**. La capture d’écran et les descriptions suivantes mettent en évidence les informations indiquant que le transfert de courrier a été défini sur la boîte aux lettres.
 
-![Informations détaillées à partir de l’enregistrement d’audit](media/emailforwarding2.png)
+![Informations détaillées à partir de l’enregistrement d’audit](../media/emailforwarding2.png)
 
 a. Dans le champ **ObjectID** , l’alias de la boîte aux lettres sur lequel le transfert de courrier a été activé est affiché. Cette boîte aux lettres est également affichée dans la colonne **élément** de la page des résultats de la recherche.
 
@@ -152,11 +152,11 @@ Après avoir exécuté la recherche, vous pouvez filtrer les résultats de la re
 
 **Exemple de champ AffectedItems pour un élément supprimé (récupérable)**
 
-![Enregistrement d’audit pour l’élément supprimé (récupérable)](media/softdeleteditem.png)
+![Enregistrement d’audit pour l’élément supprimé (récupérable)](../media/softdeleteditem.png)
 
 **Exemple de champ AffectedItems pour un élément supprimé de manière irréversible**
 
-![Enregistrement d’audit pour un élément de courrier supprimé de manière irréversible](media/harddeleteditem.png)
+![Enregistrement d’audit pour un élément de courrier supprimé de manière irréversible](../media/harddeleteditem.png)
 
 ### <a name="recover-deleted-email-items"></a>Récupérer des éléments de courrier électronique supprimés
 
@@ -186,7 +186,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 Après avoir exécuté la recherche, tous les enregistrements d’audit de cette activité sont affichés dans les résultats de la recherche. Sélectionnez un enregistrement d’audit pour afficher la page de menu volant **Détails** , puis sélectionnez **plus d’informations**. Les informations sur les paramètres des règles de boîte de réception sont affichées dans le champ **paramètres** . La capture d’écran et les descriptions suivantes mettent en évidence les informations relatives aux règles de boîte de réception.
 
-![Enregistrement d’audit pour la nouvelle règle de boîte de réception](media/NewInboxRuleRecord.png)
+![Enregistrement d’audit pour la nouvelle règle de boîte de réception](../media/NewInboxRuleRecord.png)
 
 a. Dans le champ **ObjectID** , le nom complet de la règle de boîte de réception est affiché. Ce nom inclut l’alias de la boîte aux lettres de l’utilisateur (par exemple, Sarad) et le nom de la règle de boîte de réception (par exemple, « Move messages from admin »).
 
@@ -207,7 +207,7 @@ Il s'agit du comportement par défaut. Azure Active Directory (Azure AD), le ser
 
 Voici un exemple et des descriptions de propriétés pertinentes dans un enregistrement d’audit pour un **utilisateur connecté à** un événement qui résulte d’une authentification directe. Sélectionnez l’enregistrement d’audit pour afficher la page de menu volant **Détails** , puis sélectionnez **plus d’informations**.
 
-![Exemple d’enregistrement d’audit pour une authentification relais réussie](media/PassThroughAuth1.png)
+![Exemple d’enregistrement d’audit pour une authentification relais réussie](../media/PassThroughAuth1.png)
 
    a. Ce champ indique que l’utilisateur qui a tenté d’accéder à une ressource de votre organisation n’a pas été trouvé dans Azure AD de votre organisation.
 
@@ -232,7 +232,7 @@ Voici deux exemples de scénarios permettant à un utilisateur de se **connecter
 
 - Recherchez dans le journal d’audit les activités effectuées par l’utilisateur externe identifié dans l’enregistrement d’audit de l' **utilisateur connecté** . Tapez le nom d’utilisateur principal de l’utilisateur externe dans la zone **utilisateurs** et utilisez une plage de dates si cela est approprié à votre scénario. Par exemple, vous pouvez créer une recherche à l’aide des critères de recherche suivants :
 
-   ![Rechercher toutes les activités effectuées par l’utilisateur externe](media/PassThroughAuth2.png)
+   ![Rechercher toutes les activités effectuées par l’utilisateur externe](../media/PassThroughAuth2.png)
 
     En plus des activités de l' **utilisateur connecté** , d’autres enregistrements d’audit peuvent être renvoyés, qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé à un document qui lui a été partagé.
 

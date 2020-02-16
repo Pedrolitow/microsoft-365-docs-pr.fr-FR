@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: Dans Advanced eDiscovery, le module de recherche et de marquage vous permet de rechercher, de prévisualiser et d’organiser les documents dans votre cas. Actuellement, ce module est en version bêta.
-ms.openlocfilehash: d79b702471b7a7234a7f0d147eb4f50bfc56a4c7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a3597cf0abad7095de7a7c6857052f269d202598
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601711"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081395"
 ---
 # <a name="search-and-tagging"></a>Recherche et balisage
 
@@ -69,7 +69,7 @@ Le tableau suivant répertorie les propriétés que vous pouvez rechercher à l�
 
 Vous pouvez également utiliser une carte de condition dans l’outil de recherche avancée eDiscovery pour ajouter une condition (pour les propriétés sélectionnées) à une requête de recherche. La capture d’écran suivante montre les conditions qui peuvent être ajoutées à une requête. La colonne **Group** indique si la propriété s’applique aux messages électroniques, aux documents de site ou aux deux (indiqué par la valeur *Common*). Cette colonne identifie également les propriétés pouvant faire l’objet d’une recherche après l’exécution du module de pertinence.
 
-![Conditions de recherche dans l’outil de recherche avancée eDiscovery](media/AeDSearchConditions.png)
+![Conditions de recherche dans l’outil de recherche avancée eDiscovery](../media/AeDSearchConditions.png)
 
 Pour plus d’informations sur les propriétés pouvant faire l’objet d’une recherche, consultez la rubrique [requêtes de mots clés et conditions de recherche](keyword-queries-and-search-conditions.md).
   

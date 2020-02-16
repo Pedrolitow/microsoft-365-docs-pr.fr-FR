@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vous devez activer la prise en charge de ClickOnce pour utiliser Microsoft Edge pour exporter les résultats de recherche de la recherche de contenu et eDiscovery dans le centre de sécurité et de conformité.
-ms.openlocfilehash: 896d39d81fa56b3a118b2bee450476e422ac3921
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db70b4cdbc57f519db3b6b962eb8aa43585ba335
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595731"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078563"
 ---
 # <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Utiliser l’outil d’exportation eDiscovery d’Office 365 dans Microsoft Edge
 
@@ -30,29 +30,29 @@ Suite à des modifications récentes apportées à Microsoft Edge, la prise en c
 
 2. Si la valeur existante est définie sur **default** ou **Disabled** dans la liste déroulante, remplacez-la par **Enabled**.
     
-   ![](media/ClickOnceimage1.png)
+   ![](../media/ClickOnceimage1.png)
 
 3. Faites défiler jusqu’au bas de la fenêtre du navigateur et cliquez sur **redémarrer** pour redémarrer le serveur Edge.
 
-   ![](media/ClickOnceimage2.png)
+   ![](../media/ClickOnceimage2.png)
 
 **Remarque :** Les organisations peuvent utiliser la stratégie de groupe pour désactiver la prise en charge ClickOnce. Pour vérifier s’il existe une stratégie d’organisation pour la prise en charge de ClickOnce, accédez à **Edge://Policy**. La capture d’écran suivante montre que ClickOnce est activé dans l’ensemble de l’organisation. Si cette valeur de stratégie est définie sur **false**, vous devrez contacter un administrateur de votre organisation.
 
-![](media/ClickOnceimage3.png)
+![](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a>Installer et exécuter l’outil d’exportation eDiscovery d’Office 365
 
 1. Cliquez sur **Télécharger les résultats** sur la page de menu volant d’une recherche d’exportation dans le contenu ou de découverte électronique.
 
-   ![Cliquez sur Télécharger les résultats sur la page de menu volant pour télécharger les résultats de la recherche.](media/ClickOnceExport1.png)
+   ![Cliquez sur Télécharger les résultats sur la page de menu volant pour télécharger les résultats de la recherche.](../media/ClickOnceExport1.png)
 
 2. Vous serez invité à confirmer le lancement de l’outil, puis cliquez sur **ouvrir**.
 
-   ![Cliquez sur Ouvrir pour lancer l’outil d’exportation de découverte électronique.](media/ClickOnceimage4.png)
+   ![Cliquez sur Ouvrir pour lancer l’outil d’exportation de découverte électronique.](../media/ClickOnceimage4.png)
 
    Si l’outil d’exportation de découverte électronique Microsoft Office 365 n’est pas installé, vous serez invité à indiquer un avertissement de sécurité. 
 
-   ![Cliquez sur installer pour installer l’outil d’exportation de découverte électronique.](media/ClickOnceimage5.png)
+   ![Cliquez sur installer pour installer l’outil d’exportation de découverte électronique.](../media/ClickOnceimage5.png)
 
 3. Cliquez sur **Installer**. Une fois l’installation terminée, l’outil d’exportation se lance automatiquement.
 

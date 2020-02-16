@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 736117f62877bd0b33ae1007f00d5a32680963fb
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: c3bd87f6a6b06cf6fc75705073df5a95a1025a31
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662212"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079949"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>Rapports eDiscovery avancés (aperçu)
 
@@ -51,11 +51,11 @@ Pour accéder aux rapports avancés eDiscovery :
   
    Sur la page d’accueil de la **découverte électronique avancée** , les onglets des rapports sur les cas, les dépositaires, les sources de données et les communications s’affichent dans la partie supérieure de la page. 
   
-   ![Rapports eDiscovery avancés sur la page d’accueil](media/report-home.png)
+   ![Rapports eDiscovery avancés sur la page d’accueil](../media/report-home.png)
 
 5. Pour afficher un rapport, cliquez sur un onglet de rapport, puis si nécessaire, vous pouvez effectuer l’une des opérations suivantes :
 
-   ![Vous pouvez filtrer ou télécharger des données de rapport](media/AeDReportsFilterDownload.png)
+   ![Vous pouvez filtrer ou télécharger des données de rapport](../media/AeDReportsFilterDownload.png)
 
    a. Cliquez sur **filtre** pour affiner les données du rapport. Vous pouvez filtrer sur différentes propriétés pour chaque rapport.
   

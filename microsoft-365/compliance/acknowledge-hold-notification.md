@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez être amené à informer les dépositaires de leur obligation de conserver les informations stockées électroniquement dans le cadre d’une enquête légale. Advanced eDiscovery vous permet de gérer facilement le processus de notification de blocage.
-ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594067"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080274"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation
 
@@ -52,4 +52,4 @@ En fonction de la configuration de votre notification de conservation légale, v
 
 En plus des notifications par courrier électronique, chaque dépositaire aura accès à un portail de conformité unique. Par le biais du portail, chaque dépositaire peut consulter les notifications d’attente actives, y accéder et les reconnaître.
 
-![Portail de conformité pour un dépositaire](media/CustodianPortal.jpg)
+![Portail de conformité pour un dépositaire](../media/CustodianPortal.jpg)

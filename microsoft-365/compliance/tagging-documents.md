@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: be4c86a5df7e0964744f6b5d7551382916e7ed2d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cd622430df4a636a9529a4d10ddc90057548a810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597411"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080966"
 ---
 # <a name="tag-documents-in-a-review-set"></a>Étiqueter les documents d’un jeu à réviser
 
@@ -47,11 +47,11 @@ Advanced eDiscovery propose deux types de balises :
 
 En plus des types de balises, la structure de la manière dont les balises sont organisation dans le panneau de balises peut être utilisée pour faciliter l’utilisation de documents de marquage. Les balises sont regroupées par sections. Review Set search prend en charge la fonctionnalité de recherche par balise et par section tag. Cela signifie que vous pouvez créer une recherche de jeu de réexamen pour récupérer des documents marqués avec une balise dans une section.
 
-![Sections de balise dans le panneau des balises](media/Tagtypes.png)
+![Sections de balise dans le panneau des balises](../media/Tagtypes.png)
 
 Les balises peuvent être organisées de manière plus approfondie en les imbriquant dans une section. Par exemple, si l’intention est d’identifier et de baliser un contenu privilégié, l’imbrication peut être utilisée pour indiquer clairement qu’un utilisateur peut marquer un document comme « privilégié » et sélectionner le type de privilège en vérifiant la balise imbriquée appropriée.
 
-![Balises imbriquées dans une section de balise](media/Nestingtags.png)
+![Balises imbriquées dans une section de balise](../media/Nestingtags.png)
 
 ## <a name="applying-tags"></a>Application de balises
 
@@ -61,7 +61,7 @@ Il existe plusieurs façons d’appliquer une balise au contenu.
 
 Lors de l’affichage d’un document dans un jeu de vérification, vous pouvez afficher les balises qu’une révision peut utiliser en cliquant sur **panneau de codage**.
 
-![Cliquez sur panneau des balises pour afficher le panneau Balises.](media/Singledoctag.png)
+![Cliquez sur panneau des balises pour afficher le panneau Balises.](../media/Singledoctag.png)
 
 Cela vous permet d’appliquer des balises au document affiché dans la visionneuse.
 
@@ -69,7 +69,7 @@ Cela vous permet d’appliquer des balises au document affiché dans la visionne
 
 L’étiquetage en bloc peut être réalisé en sélectionnant plusieurs fichiers dans la grille de résultats, puis en utilisant les balises dans le **panneau codage** de la même manière que pour le marquage des documents uniques. L’annulation de balisage en bloc peut être réalisée en sélectionnant deux fois les balises ; le premier clic applique la balise, et la deuxième sélection garantit que la balise est effacée pour tous les fichiers sélectionnés.
 
-![Capture d’écran d’une description de téléphone de cellule générée automatiquement](media/Bulktag.png)
+![Capture d’écran d’une description de téléphone de cellule générée automatiquement](../media/Bulktag.png)
 
 > [!NOTE]
 > Lors de l’étiquetage en bloc, le panneau balisage affiche un nombre de fichiers balisés pour chaque balise dans le panneau.
@@ -88,4 +88,4 @@ Par exemple, voici comment afficher le **panneau codage** lors de l’utilisatio
 
 3. Pour marquer tous les documents, sélectionnez tous les documents dans le panneau de la **famille** de documents, cliquez sur **documents de code**, puis sélectionnez les balises à appliquer à l’ensemble de la famille de documents.
 
-![Capture d’écran d’une description de publication de réseau social générée automatiquement](media/Relatedtag.png)
+![Capture d’écran d’une description de publication de réseau social générée automatiquement](../media/Relatedtag.png)

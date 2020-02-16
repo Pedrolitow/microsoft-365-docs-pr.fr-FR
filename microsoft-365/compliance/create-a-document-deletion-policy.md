@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Les organisations doivent souvent conserver des documents pendant une certaine période de temps en raison des réglementations de conformité, juridiques, ou autres. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique.
-ms.openlocfilehash: 9ada3f2756b627965c9f215c1111ff2fe72da1e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596231"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077898"
 ---
 # <a name="create-a-document-deletion-policy"></a>Création d’une stratégie de suppression de documents
 
@@ -32,19 +32,19 @@ Avec une stratégie de suppression de documents, vous pouvez réduire de manièr
   
 Après avoir créé une stratégie de suppression de documents, vous pouvez l’affecter à un modèle de collection de sites, pour que la stratégie soit disponible pour toutes les collections de sites créées à partir de ce modèle. Vous pouvez également affecter une stratégie à une collection de sites spécifique, qui remplace toutes les stratégies qui ont pu être affectées au modèle pour cette collection de sites.
   
-![Page d’accueil du centre de stratégies de suppression de documents](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![Page d’accueil du centre de stratégies de suppression de documents](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="policy-templates"></a>Modèles de stratégie
 
 Vous pouvez créer une stratégie de suppression de document de A à Z ou vous pouvez utiliser l’un des exemples de stratégie. Le Centre des stratégies de conformité inclut des exemples de stratégie que vous pouvez utiliser en l’état ou que vous pouvez utiliser comme point de départ, pour ensuite les renommer ou les modifier.
   
-![Stratégies de suppression d’exemple de document](media/IP-Sample-deletion-policies.png)
+![Stratégies de suppression d’exemple de document](../media/IP-Sample-deletion-policies.png)
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>Exemples
 
 Une collection de sites ou un modèle de collection de sites peut avoir plusieurs stratégies qui lui sont affectées, et chacune de ces stratégies peut avoir une ou plusieurs règles. Toutefois, il ne peut y avoir qu’une seule stratégie active par site, et il ne peut y avoir qu’une seule règle de suppression active à tout moment pour les bibliothèques au sein du site.
   
-![Schéma montrant la relation entre les stratégies](media/IP-Two-policies-four-rules.png)
+![Schéma montrant la relation entre les stratégies](../media/IP-Two-policies-four-rules.png)
   
 En outre, vous pouvez sélectionner une stratégie comme stratégie obligatoire ou par défaut, et vous pouvez sélectionner une règle de suppression comme règle par défaut : 
   
@@ -68,7 +68,7 @@ Vous pouvez appliquer une stratégie de suppression de documents à un large év
     
 Dans cet exemple, la règle de suppression par défaut sera appliquée à toutes les bibliothèques dans toutes les collections de sites créées à partir du modèle, et les propriétaires de sites ne peuvent pas refuser la stratégie. Il s’agit de la façon la plus simple d’appliquer de façon large et rigide une stratégie de suppression de documents.
   
-![Schéma montrant une seule stratégie obligatoire](media/IP-Example-1-doc-deletion-policies.png)
+![Schéma montrant une seule stratégie obligatoire](../media/IP-Example-1-doc-deletion-policies.png)
   
 ### <a name="example-2-apply-a-single-policy-with-several-rules-to-a-site-collection-template"></a>Exemple 2 : appliquer une stratégie unique avec plusieurs règles à un modèle de collection de sites
 
@@ -84,7 +84,7 @@ Simultanément, vous pouvez toujours créer et gérer centralement les stratégi
     
 Les propriétaires de sites peuvent choisir l’une des règles de suppression alternatives, refuser la stratégie, ou ne rien faire et être soumis à la stratégie et à la règle par défaut.
   
-![Schéma montrant une stratégie comportant beaucoup de règles](media/IP-Example-2-doc-deletion-policies.png)
+![Schéma montrant une stratégie comportant beaucoup de règles](../media/IP-Example-2-doc-deletion-policies.png)
   
 ### <a name="example-3-apply-several-policies-with-one-or-more-rules-to-a-site-collection"></a>Exemple 3 : Appliquer plusieurs stratégies avec une ou plusieurs règles à une collection de sites
 
@@ -104,7 +104,7 @@ Pour configurer ce scénario, vous pouvez :
     
 En outre, les stratégies et les règles sont adaptées à une collection de sites spécifique, où les propriétaires de sites peuvent annuler l’héritage en sélectionnant la stratégie et la règle qui s’appliquent le mieux à leur site.
   
-![Schéma montrant de nombreuses stratégies et règles](media/IP-Example-3-doc-deletion-policies.png)
+![Schéma montrant de nombreuses stratégies et règles](../media/IP-Example-3-doc-deletion-policies.png)
   
 ## <a name="create-a-document-deletion-policy"></a>Création d’une stratégie de suppression de documents
 
@@ -114,7 +114,7 @@ En outre, les stratégies et les règles sont adaptées à une collection de sit
     
 2. Choisissez **stratégies de suppression**.
     
-    ![Option de suppression des stratégies](media/IP-Deletion-Policies-option.png)
+    ![Option de suppression des stratégies](../media/IP-Deletion-Policies-option.png)
   
 3. Choisissez **Suivant**.
     
@@ -132,7 +132,7 @@ En outre, les stratégies et les règles sont adaptées à une collection de sit
     
   - Indiquez si la règle est une règle par défaut. La première règle que vous créez est automatiquement définie comme règle par défaut. Une règle par défaut est appliquée automatiquement à toutes les bibliothèques dans les sites qui utilisent la stratégie.
     
-![Page Nouvelle règle de suppression](media/IP-New-deletion-rule.png)
+![Page Nouvelle règle de suppression](../media/IP-New-deletion-rule.png)
   
 7. Cliquez sur **Enregistrer**.
     
@@ -143,7 +143,7 @@ En outre, les stratégies et les règles sont adaptées à une collection de sit
     > [!NOTE]
     > Si vous supprimez une règle et que la stratégie ne contient pas de règle par défaut, aucune règle n’est appliquée à cette stratégie (en d’autres termes, aucun document n’est supprimé). 
   
-![Message de confirmation de la suppression de la règle de la stratégie](media/IP-Remove-rule-from-policy-message.png)
+![Message de confirmation de la suppression de la règle de la stratégie](../media/IP-Remove-rule-from-policy-message.png)
   
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection-template"></a>Affectation de la stratégie de suppression de documents à un modèle de collection de sites
 
@@ -155,7 +155,7 @@ Il est important de comprendre que la période spécifiée pour une stratégie d
     
 2. Choisissez **Attributions de stratégies pour les modèles**.
     
-    ![Option d’attributions des stratégies pour les modèles](media/IP-Policy-Assignments-for-Templates-option.png)
+    ![Option d’attributions des stratégies pour les modèles](../media/IP-Policy-Assignments-for-Templates-option.png)
   
 3. Choisissez **Suivant**.
     
@@ -168,7 +168,7 @@ Il est important de comprendre que la période spécifiée pour une stratégie d
     > [!NOTE]
     > Lorsque vous affectez une stratégie à un modèle de collection de sites, cette stratégie est disponible à la fois pour les collections de sites existantes créées à partir de ce modèle et pour les collections de sites créées à l’avenir. 
   
-![Page Choisir un modèle affichant l’option OneDrive](media/IP-Choose-a-template.png)
+![Page Choisir un modèle affichant l’option OneDrive](../media/IP-Choose-a-template.png)
   
 5. Cliquez sur **Enregistrer**.
     
@@ -177,7 +177,7 @@ Il est important de comprendre que la période spécifiée pour une stratégie d
   
 6. Choisissez **Gérer les stratégies affectées**, sélectionnez les stratégies à affecter, puis indiquez si une stratégie est la stratégie par défaut. Lorsque vous définissez une stratégie par défaut, tous les sites affectés à la stratégie ont automatiquement la stratégie active sans action requise par le propriétaire du site.
     
-    ![Page Ajouter et gérer les stratégies](media/IP-Add-and-manage-policies-page.png)
+    ![Page Ajouter et gérer les stratégies](../media/IP-Add-and-manage-policies-page.png)
   
 7. Cliquez sur **Enregistrer**.
     
@@ -197,7 +197,7 @@ Il est important de comprendre que la période spécifiée pour une stratégie d
     
 2. Choisissez **Attributions de stratégies pour les collections de sites**.
     
-    ![Option d’attributions des stratégies pour les collections de sites](media/IP-Policy-Assignments-for-Site-Collections-option.png)
+    ![Option d’attributions des stratégies pour les collections de sites](../media/IP-Policy-Assignments-for-Site-Collections-option.png)
   
 3. Choisissez **Suivant**.
     
@@ -206,11 +206,11 @@ Il est important de comprendre que la période spécifiée pour une stratégie d
     > [!NOTE]
     > Chaque collection de sites ne peut avoir qu’un seul ensemble de règles qui lui est affecté. Si vous voyez une erreur indiquant que des stratégies ont déjà été affectées à cette collection de sites, choisissez **Annuler** \> l' **affectation à la collection de sites** et sélectionnez une collection de sites pour afficher et gérer l’ensemble des stratégies déjà affectées. 
   
-![Page Choisir une collection de sites](media/IP-Choose-a-site-collection-page.png)
+![Page Choisir une collection de sites](../media/IP-Choose-a-site-collection-page.png)
   
 5. Choisissez **Gérer les stratégies affectées**, sélectionnez les stratégies à affecter, puis indiquez si une stratégie est la stratégie par défaut. Lorsque vous définissez une stratégie par défaut, tous les sites affectés à la stratégie ont automatiquement la stratégie active sans action requise par le propriétaire du site.
     
-    ![Page Ajouter et gérer les stratégies](media/IP-Add-and-manage-policies-page.png)
+    ![Page Ajouter et gérer les stratégies](../media/IP-Add-and-manage-policies-page.png)
   
 6. Cliquez sur **Enregistrer**.
     
@@ -230,7 +230,7 @@ Lorsque vous supprimez une affectation, les stratégies affectées ne s’appliq
     
 3. Sélectionnez l’élément d’affectation, puis cliquez sur **Supprimer l’élément**.
     
-    ![Commande de suppression d’élément pour l’attribution des stratégies](media/IP-Delete-policy-assignment.png)
+    ![Commande de suppression d’élément pour l’attribution des stratégies](../media/IP-Delete-policy-assignment.png)
   
 ## <a name="delete-a-policy"></a>Suppression d’une stratégie
 
@@ -240,17 +240,17 @@ Vous ne pouvez pas supprimer une stratégie en cours d’utilisation. Avant de p
     
 2. Choisissez * * stratégies de suppression * *.
     
-    ![Option de suppression des stratégies](media/IP-Deletion-Policies-option.png)
+    ![Option de suppression des stratégies](../media/IP-Deletion-Policies-option.png)
   
 3. Sélectionnez la stratégie.
     
 4. Dans l’onglet \> **** \> éléments du ruban, **supprimez la stratégie**.
     
-    ![Bouton Supprimer la stratégie sur le ruban](media/IP-Remove-Policy-button-on-Ribbon.png)
+    ![Bouton Supprimer la stratégie sur le ruban](../media/IP-Remove-Policy-button-on-Ribbon.png)
   
 5. Si la stratégie est en cours d’utilisation, un message vous demande si vous souhaitez supprimer la stratégie de toutes les collections de sites où elle est utilisée. Si vous êtes sûr, choisissez **OK**.
     
-    ![Message de confirmation de suppression de stratégie](media/IP-Delete-policy-confirmation.png)
+    ![Message de confirmation de suppression de stratégie](../media/IP-Delete-policy-confirmation.png)
   
 ## <a name="see-also"></a>Voir également
 

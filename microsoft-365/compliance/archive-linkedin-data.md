@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir d’une page de la société LinkedIn vers Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la conformité des données tierces de votre organisation.
-ms.openlocfilehash: c8e39577a6eaba3ad865b1617683c2baa9260759
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b42584efb0c99b97c14059ed7d860013f085262c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596021"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079629"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver les données LinkedIn
 
@@ -45,13 +45,13 @@ Une fois que les données de la page de la société LinkedIn sont stockées dan
 
    La page de connexion LinkedIn s’affiche.
 
-   ![Page de connexion à LinkedIn](media/LinkedInSigninPage.png)
+   ![Page de connexion à LinkedIn](../media/LinkedInSigninPage.png)
 
 5. Sur la page de connexion LinkedIn, entrez l’adresse de messagerie (ou le numéro de téléphone) et le mot de passe du compte LinkedIn associé à la page de l’entreprise que vous souhaitez archiver, puis cliquez sur **se connecter**.
 
    Une page d’Assistant s’affiche avec la liste de toutes les pages de la société LinkedIn associées au compte auquel vous vous êtes connecté. Un connecteur ne peut être configuré que pour une seule page de la société. Si votre organisation dispose de plusieurs pages d’entreprise LinkedIn, vous devez créer un connecteur pour chacune d’entre elles.
 
-   ![Une page avec une liste de pages de la société LinkedIn s’affiche.](media/LinkedInSelectCompanyPage.png)
+   ![Une page avec une liste de pages de la société LinkedIn s’affiche.](../media/LinkedInSelectCompanyPage.png)
 
 6. Sélectionnez la page de la société à partir de laquelle vous souhaitez archiver des éléments, puis cliquez sur **suivant**.
 

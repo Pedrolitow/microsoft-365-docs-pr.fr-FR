@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Configurez des paramètres eDiscovery avancés qui s’appliquent à tous les jeux de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
-ms.openlocfilehash: 93e638dc29ec935f86fc2e078d8206b1f20ab14d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595711"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078319"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurer les paramètres de recherche et d’analyse
 
@@ -45,7 +45,7 @@ Pour configurer les paramètres de recherche et d’analyse d’un cas :
 
    La page Paramètres de l’incident s’affiche. Ces paramètres sont appliqués à tous les jeux de révision dans un cas.
 
-   ![Configurer les paramètres d’analyse et de recherche pour un cas avancé eDiscovery](media/AeDCaseSettings.png)
+   ![Configurer les paramètres d’analyse et de recherche pour un cas avancé eDiscovery](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et Threading de courrier électronique
 
@@ -73,7 +73,7 @@ Dans cette section, vous pouvez définir des paramètres pour les thèmes. Pour 
 
 Si vous activez la case à cocher **créer automatiquement un pour vérifier les recherches enregistrées après analyse** , Advanced EDiscovery génère automatiquement la requête Set appelée **for Review.** 
 
-![La requête de révision générée automatiquement](media/AeDForReviewQuery.png)
+![La requête de révision générée automatiquement](../media/AeDForReviewQuery.png)
 
 Cette requête filtre en fait des éléments dupliqués de l’ensemble de révision. Cela vous permet de passer en revue les éléments uniques dans l’ensemble de révision. Cette requête est créée uniquement lorsque vous exécutez Analytics pour un jeu de réexamen dans le cas. Pour plus d’informations sur la vérification des requêtes Set, voir [query the Data in a Review Set](review-set-search.md).
 

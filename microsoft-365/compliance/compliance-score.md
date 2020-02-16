@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le score de conformité Microsoft aide les organisations à simplifier et à automatiser les évaluations des risques et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: c1f912deacd9e7a9b30cbc4665a259177aeebf65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595741"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078517"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Score de conformité Microsoft (aperçu)
 
@@ -39,7 +39,7 @@ Si vous utilisez actuellement le [Gestionnaire de conformité](compliance-manage
 
 La page principale du score de conformité est votre tableau de bord personnalisé. Il indique votre score actuel, vous aide à voir ce qui vous convient et vous guide sur les actions à effectuer pour améliorer votre score. Votre tableau de bord de score de conformité doit ressembler à ceci :
 
-![Score de conformité-tableau de bord](media/compliance-score-dashboard.png "Tableau de bord de score de conformité")
+![Score de conformité-tableau de bord](../media/compliance-score-dashboard.png "Tableau de bord de score de conformité")
 
 ### <a name="simplified-compliance-management"></a>Gestion simplifiée de la conformité
 
@@ -75,7 +75,7 @@ En savoir plus sur [la façon dont votre score de conformité est calculé et su
 
 Le score de conformité utilise plusieurs composants pour vous aider à gérer vos activités de conformité. Lorsque vous utilisez le score de conformité pour affecter, tester et surveiller les activités de conformité, il est utile de posséder une compréhension de base de ces composants clés. Ce diagramme montre les relations entre eux :
 
-![Relations dans le gestionnaire de conformité version 3](media/compliance-manager-relationships.png "Composants du score de conformité")
+![Relations dans le gestionnaire de conformité version 3](../media/compliance-manager-relationships.png "Composants du score de conformité")
 
 ### <a name="controls"></a>Contrôles
 

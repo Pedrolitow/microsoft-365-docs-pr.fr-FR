@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: a57fd1f1e079424f1494acc4b8944534c30359b2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: dafc745d985c93e4665db469442b0b6dc2eda070
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661870"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081071"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de supervision dans Office 365
 
@@ -42,7 +42,7 @@ Pour obtenir une vue d’ensemble rapide des stratégies de surveillance, voir l
 
 Pour en savoir plus sur les améliorations et la disponibilité des fonctionnalités de surveillance, consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
-Vous souhaitez essayer la nouvelle expérience de conformité de la communication dans Microsoft 365 ? Découvrez les fonctionnalités nouvelles et améliorées disponibles dans la [conformité de la communication dans Microsoft 365 (version d’évaluation)](communication-compliance.md).
+Vous souhaitez essayer la nouvelle expérience de conformité de la communication dans Microsoft 365 ? Découvrez les fonctionnalités nouvelles et améliorées disponibles dans la [conformité de la communication dans Microsoft 365](communication-compliance.md).
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transition de la surveillance dans Office 365
 
@@ -129,7 +129,7 @@ Vous pouvez inclure des types d’informations sensibles dans le cadre de votre 
 
 - Financier
 - Médecine et santé
-- Politique de confidentialité
+- Confidentialité
 - Type d’informations personnalisées
 
 Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez la rubrique [types d’informations sensibles](what-the-sensitive-information-types-look-for.md).

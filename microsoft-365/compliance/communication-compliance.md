@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661940"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078689"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -61,7 +61,7 @@ La conformité de la communication dans Microsoft 365 repose sur les fonctionnal
 - Flux de travail de correction flexibles
 - Informations exploitables
 
-![Page d’accueil de la communication](media/communication-compliance-home.png)
+![Page d’accueil de la communication](../media/communication-compliance-home.png)
 
 ### <a name="intelligent-customizable-templates"></a>Modèles personnalisables intelligents
 
@@ -108,7 +108,7 @@ La conformité de la communication vous aide à résoudre les problèmes courant
 
 L’identification et la résolution des problèmes de conformité à l’aide de la conformité de la communication dans Microsoft 365 utilisent le flux de travail suivant :
 
-![Flux de travail de conformité de communication](media/communication-compliance-workflow.png)
+![Flux de travail de conformité de communication](../media/communication-compliance-workflow.png)
 
 ### <a name="configure"></a>Configurer
 
@@ -153,4 +153,4 @@ Le suivi et la gestion des problèmes de conformité identifiés par les straté
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
-Pour configurer la conformité de la communication pour votre organisation Microsoft 365, consultez la rubrique [configure communication Compliance for microsoft 365 (Preview)](communication-compliance-configure.md).
+Pour configurer la conformité de la communication pour votre organisation Microsoft 365, consultez la rubrique [configure communication Compliance for microsoft 365](communication-compliance-configure.md).

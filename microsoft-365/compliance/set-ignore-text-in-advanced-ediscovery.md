@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Découvrez comment définir la règle pour ignorer le texte spécifique lors de l’utilisation des modules Analyze et process dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 7bda497f961ed762b1b077ad0631a0a6a94cdcc8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 440393061fef9b5a3c946322307fcafd034be81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601501"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081127"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Définir l’option ignorer le texte pour l’analyse dans Office 365 Advanced eDiscovery
 
@@ -107,7 +107,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
     
 2. Dans la boîte de dialogue **Ajouter le texte ignorer** , dans le champ **nom** , tapez un nom pour la règle ignorer le texte. 
     
-    ![Ajouter le texte ignoré](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
+    ![Ajouter le texte ignoré](../media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
   
 3. Dans la zone de **texte** , tapez le texte à ignorer. Le champ de texte autorise un nombre illimité de caractères. 
     
@@ -122,7 +122,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
     
 7. Cliquez sur **OK** pour enregistrer la règle ignorer le texte. La règle de texte ignorer est affichée. 
     
-    ![Définir le nom du texte ignoré](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
+    ![Définir le nom du texte ignoré](../media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
   
 ## <a name="see-also"></a>Voir aussi
 

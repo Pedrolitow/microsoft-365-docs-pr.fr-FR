@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 1c53eded5e50d480cdce2ccbcb61f732bc899041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784691"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078775"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -59,7 +59,7 @@ Pour que la conformité de la **communication** soit disponible sous la forme d�
 
 5. Sélectionnez **choisir les rôles** , puis **Ajouter**. Activez la case à cocher **administrateur de révision de surveillance**, gestion **des** **cas**, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
 
-    ![Groupes de rôles obligatoires de conformité de la communication](media/communication-compliance-role-groups.png)
+    ![Groupes de rôles obligatoires de conformité de la communication](../media/communication-compliance-role-groups.png)
 
 6. Sélectionnez **choisir les membres** , puis **Ajouter**. Activez la case à cocher de tous les utilisateurs et groupes pour lesquels vous souhaitez créer des stratégies et gérer les messages avec des correspondances de stratégie, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
 

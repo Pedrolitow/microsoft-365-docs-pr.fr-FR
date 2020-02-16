@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Votre organisation peut collaborer avec un partenaire Microsoft pour configurer un connecteur personnalisé permettant d’importer des données tierces à partir de sources de données telles que Salesforce chatter, Yahoo Messenger ou Yammer. Cela vous permet d’archiver des données à partir de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité d’Office 365 telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données tierces de votre organisation.
-ms.openlocfilehash: d17c79ed4d6fa662a3416e9952ac732a8d4d9d9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6104381b842b9a4d76de7278c0b7280ec2f11222
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601221"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085011"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>Collaborer avec un partenaire pour archiver des données tierces dans Office 365
 
@@ -39,7 +39,7 @@ Voici une vue d’ensemble du processus et des étapes nécessaires à l’utili
 
 L’illustration et la description suivantes expliquent le fonctionnement du processus d’importation de données tiers lors de l’utilisation d’un partenaire.
   
-![Fonctionnement du processus d’importation de données tierces](media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
+![Fonctionnement du processus d’importation de données tierces](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
 1. Le client travaille avec son partenaire de choix pour configurer un connecteur qui extraira les éléments de la source de données tierce, puis importez ces éléments dans Office 365.
     
@@ -185,7 +185,7 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
     
 - Microsoft OneDrive Entreprise
 
-- Microsoft Teams
+- Microsoft Teams
        
 - Microsoft Yammer
     
@@ -195,7 +195,7 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
     
 - Salesforce Chatter
 
-- Skype Entreprise Online
+- Skype Entreprise Online
     
 - Skype Entreprise, versions 2007 R2-2016 (sur site)
     
@@ -533,7 +533,12 @@ Pour permettre à un connecteur de données tiers de se connecter à Office 365 
 
 Voici les étapes à suivre pour accéder à la demande et l’accepter pour enregistrer le connecteur :
 
-1. Accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et connectez-vous à l’aide des informations d’identification d’un administrateur général Office 365.<br/><br/>La boîte de dialogue suivante s’affiche. Vous pouvez développer les signes pour vérifier les autorisations qui seront affectées au connecteur.<br/><br/>![La boîte de dialogue demande d’autorisations s’affiche.](media/O365-ThirdPartyDataConnector-OptIn1.png)
+1. Accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et connectez-vous à l’aide des informations d’identification d’un administrateur général Office 365.
+
+   La boîte de dialogue suivante s’affiche. Vous pouvez développer les signes pour vérifier les autorisations qui seront affectées au connecteur.
+
+   ![La boîte de dialogue demande d’autorisations s’affiche.](../media/O365-ThirdPartyDataConnector-OptIn1.png)
+
 2. Cliquez sur **Accept (Accepter)**.
 
 Une fois que vous avez accepté la demande, le [portail Azure](https://portal.azure.com) s’affiche. Pour afficher la liste des applications pour votre organisation, cliquez sur**applications d’entreprise** **Azure Active Directory** > . Le connecteur de données tiers 365 Office est affiché dans le panneau **applications d’entreprise** .

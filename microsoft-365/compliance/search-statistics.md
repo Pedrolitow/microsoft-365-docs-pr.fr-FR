@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 665ffe5fea6fa6996b405198524ef7dfb51e162f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601741"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081368"
 ---
 # <a name="search-statistics"></a>Statistiques de recherche
 
 Un moyen efficace de valider les résultats de la recherche lors de l’examen d’un incident de données consiste à consulter les statistiques de vos résultats de recherche pour vous assurer qu’ils s’alignent sur vos attentes. Une fois la recherche terminée, les statistiques de haut niveau suivantes s’affichent sous **État** sur la page de menu volant des détails de recherche :
 
-![Page de menu volant de recherche statisics sur les détails de la recherche](media/SearchDetailsFlyout.png)
+![Page de menu volant de recherche statisics sur les détails de la recherche](../media/SearchDetailsFlyout.png)
 
 - Nombre et taille estimés des éléments correspondant aux critères de recherche.
 
@@ -37,7 +37,7 @@ Un moyen efficace de valider les résultats de la recherche lors de l’examen d
 
 Pour afficher des statistiques plus détaillées, cliquez sur **statistiques** sur la page de menu volant détails de la recherche. Sur la page **statistiques de recherche** , vous pouvez afficher le résumé de la recherche, l’emplacement du niveau supérieur contenant les éléments qui correspondent aux résultats de la recherche, ainsi que des statistiques détaillées sur la requête de recherche.
 
-![Liste déroulante des statistiques de recherche](media/SearchStatisticsDropDownList.png)
+![Liste déroulante des statistiques de recherche](../media/SearchStatisticsDropDownList.png)
 
 ## <a name="summary"></a>Résumé
 

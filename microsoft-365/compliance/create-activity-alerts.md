@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Ajoutez et gérez les alertes d’activité dans le centre de sécurité et de conformité pour qu’Office 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques dans Office 365.
-ms.openlocfilehash: 31807199345f4cf2ed6a4226fc407cb10c856c23
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b83dec740b8b37d3c8a4132f114ee76178b2dd86
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596181"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077671"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Créer des alertes d’activité dans Office 365
 
@@ -49,12 +49,12 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
 2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
     
-3. Sur la **page alertes d’activité** , ![cliquez sur](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) ajouter une icône **nouveau**.
+3. Sur la **page alertes d’activité** , ![cliquez sur](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) ajouter une icône **nouveau**.
 
    La page de menu volant pour créer une alerte d’activité s’affiche.
 
     
-    ![Créer une alerte d’activité](media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
+    ![Créer une alerte d’activité](../media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
   
 4. Complétez les champs suivants pour créer une alerte d’activité :
     
@@ -76,7 +76,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
     La nouvelle alerte est affichée dans la liste sur la page **alertes d’activité** . 
     
-    ![Une liste d’alertes s’affiche sur la page alertes d’activité](media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
+    ![Une liste d’alertes s’affiche sur la page alertes d’activité](../media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
   
     L’état de l’alerte est **activé**. Notez que les destinataires qui recevront une notification par courrier électronique lors de l’envoi d’une alerte sont également répertoriés. 
   
@@ -100,7 +100,7 @@ Pour réactiver une alerte activité, répétez ces étapes et cliquez sur le bo
 
 - Voici un exemple de notification par courrier électronique envoyée aux utilisateurs qui sont spécifiés dans le champ envoyé cette alerte à (et répertoriés sous **destinataires** de la page **alertes d’activité** ) dans le centre de sécurité & conformité. 
     
-    ![Exemple d’un message électronique notifcation envoyé pour une alerte d’activité](media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
+    ![Exemple d’un message électronique notifcation envoyé pour une alerte d’activité](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
   
 - Voici quelques activités de documents et de messagerie courantes pour lesquelles vous pouvez créer des alertes d’activité. Les tableaux décrivent l’activité, le nom de l’activité pour laquelle créer une alerte et le nom du groupe d’activités dans lequel l’activité est répertoriée dans la liste déroulante **activités** . Pour afficher la liste complète des activités pour lesquelles vous pouvez créer des alertes d’activité, reportez-vous à la section « activités auditées » dans [Rechercher dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md#audited-activities).
     

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Découvrez comment l’onglet décider dans Office 365 Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de révision des fichiers de cas. '
-ms.openlocfilehash: e60aff12e20a4f8accfbcda958c2d087fd732e88
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b0dd68c294b4555bcf7c9b2cb1c6db455af32e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595381"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076244"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Décision basée sur les résultats dans Office 365 Advanced eDiscovery
 
@@ -31,7 +31,7 @@ ms.locfileid: "41595381"
   
 ## <a name="using-the-decide-tab"></a>Utilisation de l’onglet décider
 
-![Décision de pertinence](media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
+![Décision de pertinence](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
 Cet onglet comprend les éléments suivants :
   

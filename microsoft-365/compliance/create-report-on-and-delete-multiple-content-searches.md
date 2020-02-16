@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports via des scripts PowerShell dans le centre de sécurité & conformité dans Office 365.
-ms.openlocfilehash: 6c92d9dab093b802acc518aebb96ddf83cf54ea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 915ea910eebba8f6f39ceb41d9475769a6403729
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595571"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077190"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -60,7 +60,7 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cet
     
 2. Ouvrez le fichier. txt dans Excel, puis utilisez les informations du tableau suivant pour modifier le fichier avec les informations pour chaque recherche. 
     
-    |**Paramètre**|**Description**|
+    |**Parameter**|**Description**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |Adresse SMTP de la boîte aux lettres de l’utilisateur.  <br/> |
     | `SharePointLocation` <br/> |L’URL du site OneDrive entreprise de l’utilisateur ou l’URL de n’importe quel site de votre organisation. Pour l’URL des sites OneDrive entreprise, utilisez le format suivant : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
@@ -191,7 +191,7 @@ Pour exécuter le script :
     
     Le script affiche la progression de la création et de l’exécution des recherches. Une fois le script terminé, il revient à l’invite. 
     
-    ![Exemple de sortie après exécution du script pour créer plusieurs recherches de la conformité](media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+    ![Exemple de sortie après exécution du script pour créer plusieurs recherches de la conformité](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
   
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Étape 4 : exécuter le script pour signaler les estimations de recherche
 
@@ -266,7 +266,7 @@ Une fois que vous avez créé les recherches, l’étape suivante consiste à ex
     
     Le script affiche la progression de la création et de l’exécution des recherches. Une fois le script terminé, le rapport est affiché. 
     
-    ![Exécutez le rapport de recherche pour afficher les estimations pour le groupe de recherche](media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+    ![Exécutez le rapport de recherche pour afficher les estimations pour le groupe de recherche](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
   
 > [!NOTE]
 > Si la même boîte aux lettres ou le même site est spécifié en tant qu’emplacement de contenu dans plusieurs recherches dans un groupe de recherche, le nombre total d’estimations de résultats dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure les résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document est comptabilisé plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche. 
@@ -301,4 +301,4 @@ Une fois que vous avez créé les recherches, l’étape suivante consiste à ex
     
     Le script affiche le nom de chaque recherche qui a été supprimée.
     
-    ![Exécutez le script pour supprimer les recherches dans le groupe de recherche](media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+    ![Exécutez le script pour supprimer les recherches dans le groupe de recherche](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

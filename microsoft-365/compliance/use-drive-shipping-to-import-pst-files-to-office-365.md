@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Pour les administrateurs : Découvrez comment importer en bloc les fichiers PST de votre organisation vers des boîtes aux lettres Office 365 en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft. '
-ms.openlocfilehash: 5de4143f84a4c5beed0e408c302ce2ca1e39e17a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4edd06fbedc6ee40053921b20bdb27ae00aace63
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597361"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080847"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files-to-office-365"></a>Utiliser l’expédition de disque pour importer les fichiers PST de votre organisation vers Office 365
 
@@ -123,17 +123,17 @@ La première étape consiste à télécharger la clé de stockage sécurisée et
     > [!NOTE]
     > Comme indiqué précédemment, vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre de sécurité & conformité. 
   
-3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
+3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](../media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
     
 4. Dans l’Assistant importation de tâche, tapez un nom pour le travail d’importation PST, puis cliquez sur **suivant**. Utilisez des lettres minuscules, des nombres, des traits d’union et des traits bas. Vous ne pouvez pas utiliser de lettres majuscules ou inclure des espaces dans le nom.
     
 5. Dans la page **choisir le type de travail d’importation** , cliquez sur **expédier des disques durs vers l’un de nos emplacements physiques** , puis cliquez sur **suivant**.
     
-    ![Cliquez sur expédier des disques durs vers l’un de nos emplacements physiques pour créer une tâche d’importation d’envoi de disques.](media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
+    ![Cliquez sur expédier des disques durs vers l’un de nos emplacements physiques pour créer une tâche d’importation d’envoi de disques.](../media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
   
 6. Dans la page **Importer des données**, effectuez les deux opérations suivantes : 
     
-    ![Copier la clé de stockage sécurisée et télécharger l’outil d’importation/exportation Azure sur la page importer les données](media/e22e0b48-e5ce-48e0-95bc-0490a2b3b983.png)
+    ![Copier la clé de stockage sécurisée et télécharger l’outil d’importation/exportation Azure sur la page importer les données](../media/e22e0b48-e5ce-48e0-95bc-0490a2b3b983.png)
   
     a. À l’étape 2, cliquez sur **copier la clé de stockage sécurisée**. Une fois la clé de stockage affichée, cliquez sur **copier dans le presse-papiers** , puis collez-la dans un fichier pour pouvoir y accéder ultérieurement.
     
@@ -171,7 +171,7 @@ Pour réaliser cette étape, vous devez utiliser l’outil WAImportExport.exe po
 
     Le tableau suivant décrit les paramètres et leurs valeurs requises. 
     
-    |**Paramètre**|**Description**|**Exemple**|
+    |**Parameter**|**Description**|**Exemple**|
     |:-----|:-----|:-----|
     | `/j:` <br/> |Indique le nom du fichier journal. Ce fichier est enregistré dans le dossier où se trouve l’outil WAImportExport.exe. Un fichier journal doit être créé sur chaque disque dur envoyé à Microsoft. Chaque fois que vous exécutez l’outil WAImportTool.exe pour copier des fichiers PST sur un disque dur, des informations sont ajoutées au fichier journal de ce disque.  <br/> Personnel du centre de données Microsoft utilisez les informations contenues dans le fichier journal pour associer le disque dur au travail d’importation que vous créez à l’étape 4, et pour télécharger les fichiers PST dans la zone de stockage Azure de Microsoft Cloud.  <br/> | `/j:PSTHDD1.jrn` <br/> |
     | `/t:` <br/> |Indique la lettre de lecteur du disque dur quand celui-ci est connecté à votre ordinateur local.  <br/> | `/t:h` <br/> |
@@ -253,7 +253,7 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
     
 2. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Gouvernance de l'information ** \> **Importer** \> **Importer des fichiers PST**.
     
-3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
+3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](../media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
     
     > [!NOTE]
     > Comme indiqué précédemment, vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre de sécurité & conformité. 
@@ -262,15 +262,15 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
     
 5. Dans la page **choisir le type de travail d’importation** , cliquez sur **expédier des disques durs vers l’un de nos emplacements physiques** , puis cliquez sur **suivant**.
     
-    ![Cliquez sur expédier des disques durs vers l’un de nos emplacements physiques pour créer une tâche d’importation d’envoi de disques.](media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
+    ![Cliquez sur expédier des disques durs vers l’un de nos emplacements physiques pour créer une tâche d’importation d’envoi de disques.](../media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
   
 6. À l’étape 6, cliquez sur les cases à cocher **j’ai préparé les disques durs et ont accès aux fichiers journaux des lecteurs nécessaires** et **j’ai accès au fichier de mappage** , puis cliquez sur **suivant**.
     
-    ![Cliquez sur les deux cases à cocher à l’étape 6](media/fad43078-ea68-4acd-b2ed-75a800183262.png)
+    ![Cliquez sur les deux cases à cocher à l’étape 6](../media/fad43078-ea68-4acd-b2ed-75a800183262.png)
   
 7. Dans la page **Sélectionner le fichier du lecteur** , cliquez sur **Sélectionner un fichier de lecteur**, puis accédez au dossier dans lequel se trouve l’outil outil waimportexport. exe. Le fichier journal créé à l’étape 2 a été copié dans ce dossier.
     
-    ![Cliquez sur Sélectionner un fichier de lecteur pour soumettre le fichier journal qui a été créé lors de l’exécution de l’outil outil waimportexport. exe.](media/1ea35c04-bd88-4d7e-b7d9-dc390149d94f.png)
+    ![Cliquez sur Sélectionner un fichier de lecteur pour soumettre le fichier journal qui a été créé lors de l’exécution de l’outil outil waimportexport. exe.](../media/1ea35c04-bd88-4d7e-b7d9-dc390149d94f.png)
   
 8. Sélectionnez le fichier journal ; par exemple, `PSTHDD1.jrn`.
     
@@ -279,7 +279,7 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
   
 9. Une fois le nom du fichier du lecteur affiché sous **nom du fichier**, cliquez sur **valider** pour vérifier que votre fichier de lecteur ne comporte pas d’erreurs. 
     
-    ![Cliquez sur valider pour valider le fichier lecteur que vous avez sélectionné.](media/4b707f5a-152a-4e74-b9f5-449c88d1fec4.png)
+    ![Cliquez sur valider pour valider le fichier lecteur que vous avez sélectionné.](../media/4b707f5a-152a-4e74-b9f5-449c88d1fec4.png)
   
     Le fichier du lecteur doit être validé pour créer une tâche d’importation PST. Notez que le nom du fichier passe au vert une fois qu'il a été validé avec succès. Si la validation échoue, cliquez sur le lien **Afficher le journal**. Un rapport d’erreur de validation est ouvert, avec un message d’erreur contenant des informations sur la raison de l’échec du fichier. 
     
@@ -288,13 +288,13 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
   
 10. Après avoir ajouté et validé un fichier journal pour chaque disque dur que vous envoyez à Microsoft, cliquez sur **suivant**.
     
-11. Cliquez ![sur Ajouter](media/ITPro-EAC-AddIcon.gif) une icône **Sélectionnez mappage de fichier** pour soumettre le fichier de mappage d’importation PST que vous avez créé à l’étape 3. 
+11. Cliquez ![sur Ajouter](../media/ITPro-EAC-AddIcon.gif) une icône **Sélectionnez mappage de fichier** pour soumettre le fichier de mappage d’importation PST que vous avez créé à l’étape 3. 
     
-    ![Cliquez sur Sélectionner le fichier de mappage pour envoyer le fichier CSV que vous avez créé pour la tâche d’importation.](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
+    ![Cliquez sur Sélectionner le fichier de mappage pour envoyer le fichier CSV que vous avez créé pour la tâche d’importation.](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
 12. Lorsque le nom du fichier CSV apparaît dans la liste, **Nom de fichier de mappage**, cliquez sur **Valider** pour vérifier que votre fichier CSV ne contient pas d’erreurs. 
     
-    ![Cliquez sur Valider pour rechercher les erreurs dans le fichier CSV.](media/4680999d-5538-4059-b878-2736a5445037.png)
+    ![Cliquez sur Valider pour rechercher les erreurs dans le fichier CSV.](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
     Le fichier CSV doit être validé avec succès pour créer une tâche d'importation PST. Notez que le nom du fichier passe au vert une fois qu'il a été validé avec succès. Si la validation échoue, cliquez sur le lien **Afficher le journal**. Un rapport d'erreur de validation est ouvert, avec un message d'erreur pour chaque ligne du fichier qui a échoué. 
     
@@ -308,7 +308,7 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
     
     Une fois la tâche d’importation créée, une page d’État s’affiche pour vous expliquer les étapes suivantes du processus de livraison des lecteurs.
     
-16. Sur la page **Importer les fichiers PST** , ![cliquez sur](media/O365-MDM-Policy-RefreshIcon.gif) actualiser l’icône **Actualiser** pour afficher le travail d’importation de nouveau lecteur de disque dans la liste des travaux d’importation. Le statut est défini sur en **attente du numéro de suivi**. Vous pouvez également cliquer sur le travail d’importation pour afficher la page de menu volant d’État, qui contient des informations plus détaillées sur la tâche d’importation.
+16. Sur la page **Importer les fichiers PST** , ![cliquez sur](../media/O365-MDM-Policy-RefreshIcon.gif) actualiser l’icône **Actualiser** pour afficher le travail d’importation de nouveau lecteur de disque dans la liste des travaux d’importation. Le statut est défini sur en **attente du numéro de suivi**. Vous pouvez également cliquer sur le travail d’importation pour afficher la page de menu volant d’État, qui contient des informations plus détaillées sur la tâche d’importation.
  
 ## <a name="step-5-ship-the-hard-drive-to-microsoft"></a>Étape 5 : Expédier le disque dur à Microsoft
 
@@ -353,7 +353,7 @@ Une fois le disque dur envoyé à Microsoft, effectuez les étapes suivantes sur
     
 6. Cliquez sur **Enregistrer** pour enregistrer ces informations pour la tâche d’importation. 
     
-    Sur la page **Importer les fichiers PST** , ![cliquez sur](media/O365-MDM-Policy-RefreshIcon.gif) actualiser l’icône **Actualiser** pour mettre à jour les informations de votre tâche d’importation d’envoi de lecteurs. Notez que le statut est désormais défini sur **Disques en transit**.
+    Sur la page **Importer les fichiers PST** , ![cliquez sur](../media/O365-MDM-Policy-RefreshIcon.gif) actualiser l’icône **Actualiser** pour mettre à jour les informations de votre tâche d’importation d’envoi de lecteurs. Notez que le statut est désormais défini sur **Disques en transit**.
 
 ## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>Étape 6 : Filtrer les données et démarrer la tâche d’importation PST
 
@@ -367,7 +367,7 @@ Une fois les fichiers PST téléchargés vers Azure, l’État est modifié **en
     
 3. Dans la page **importer des fichiers PST** , cliquez sur **prêt pour l’importation vers Office 365** pour le travail d’importation que vous avez créé à l’étape 4. 
     
-    ![Cliquez sur Prêt à importer dans Office 365 à côté de la tâche d’importation que vous avez créée.](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+    ![Cliquez sur Prêt à importer dans Office 365 à côté de la tâche d’importation que vous avez créée.](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
     Une page volante s’affiche avec des informations sur les fichiers PST et d’autres informations sur la tâche d’importation.
     
@@ -375,7 +375,7 @@ Une fois les fichiers PST téléchargés vers Azure, l’État est modifié **en
     
 5. La page **Filtrez vos données** s’affiche. Elle contient les aperçus des données résultant de l'analyse des fichiers PST effectuée par Office 365, y compris des informations sur l'âge des données. À ce stade, vous avez la possibilité de filtrer les données qui seront importées ou d’importer toutes les données telles quelles. 
     
-    ![Vous pouvez découper les données dans les fichiers PST ou les importer](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
+    ![Vous pouvez découper les données dans les fichiers PST ou les importer](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
 6. Effectuez l’une des opérations suivantes :
     
@@ -389,7 +389,7 @@ Une fois les fichiers PST téléchargés vers Azure, l’État est modifié **en
     
 7. Si vous avez choisi d’importer toutes les données, cliquez sur **Importer les données** pour démarrer la tâche d’importation. 
     
-    L’état de la tâche d’importation est affiché dans la page **Importer les fichiers PST** . Cliquer sur ![Actualiser l’icône](media/O365-MDM-Policy-RefreshIcon.gif)**Actualiser** pour mettre à jour les informations d’état affichées dans la colonne **État**. Cliquez sur la tâche d’importation pour afficher la page de menu volant d’état qui affiche des informations sur l’état de chaque fichier PST importé. Une fois l’importation terminée et les fichiers PST importés dans les boîtes aux lettres d’utilisateur, l’état devient **Terminé**.
+    L’état de la tâche d’importation est affiché dans la page **Importer les fichiers PST** . Cliquer sur ![Actualiser l’icône](../media/O365-MDM-Policy-RefreshIcon.gif)**Actualiser** pour mettre à jour les informations d’état affichées dans la colonne **État**. Cliquez sur la tâche d’importation pour afficher la page de menu volant d’état qui affiche des informations sur l’état de chaque fichier PST importé. Une fois l’importation terminée et les fichiers PST importés dans les boîtes aux lettres d’utilisateur, l’état devient **Terminé**.
 
 ## <a name="view-a-list-of-the-pst-files-uploaded-to-office-365"></a>Afficher la liste des fichiers PST téléchargés vers Office 365
 
@@ -407,7 +407,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vo
     
 2. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Gouvernance de l'information > Importer > Importer des fichiers PST**.
     
-3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
+3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](../media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
     
 4. Dans l’Assistant importation de tâche, tapez un nom pour le travail d’importation PST, puis cliquez sur **suivant**. Utilisez des lettres minuscules, des nombres, des traits d’union et des traits bas. Vous ne pouvez pas utiliser de lettres majuscules ou inclure des espaces dans le nom.
     
@@ -426,7 +426,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vo
     
 3. Démarrez l’Explorateur Stockage Microsoft Azure, cliquez avec le bouton droit sur **Comptes de stockage** dans le volet de gauche, puis cliquez sur **Se connecter au stockage Azure**.
     
-    ![Cliquez avec le bouton droit de la souris sur Comptes de stockage, puis cliquez sur Se connecter au stockage Azure](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![Cliquez avec le bouton droit de la souris sur Comptes de stockage, puis cliquez sur Se connecter au stockage Azure](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
 4. Cliquez sur **Utiliser une URI de la signature d’accès partagé (SAS) ou une chaîne de connexion** puis cliquez sur **Suivant**.
     
@@ -436,11 +436,11 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vo
     
     Le conteneur **ingestiondata** est ouvert. Il contient les fichiers PST de votre disque dur. Le conteneur **ingestiondata** se trouve sous ** Compte de stockage** \> **(Services connectés SAS)** \> **Les conteneurs Blob**.
     
-    ![L’explorateur de stockage Azure affiche la liste des fichiers PST que vous avez chargés](media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
+    ![L’explorateur de stockage Azure affiche la liste des fichiers PST que vous avez chargés](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
   
 7. Lorsque vous avez fini d’utiliser l’Explorateur Stockage Microsoft Azure, cliquez avec le bouton droit sur **ingestiondata**, puis cliquez sur **Détacher** pour vous déconnecter de votre zone de stockage. Dans le cas contraire, vous recevrez un message d’erreur la prochaine fois que vous tenterez de joindre un élément. 
     
-    ![Cliquez avec le bouton droit de la souris sur Ingestion, puis cliquez sur Détacher pour vous déconnecter à partir de votre zone de stockage Azure](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
+    ![Cliquez avec le bouton droit de la souris sur Ingestion, puis cliquez sur Détacher pour vous déconnecter à partir de votre zone de stockage Azure](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
 
 ## <a name="troubleshooting-tips"></a>Conseils de dépannage
 

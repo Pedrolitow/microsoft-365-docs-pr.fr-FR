@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Ajoutez les résultats d’une recherche associée à un cas avancé eDiscovery. Les éléments sont copiés à partir de leur emplacement d’origine et copiés dans un emplacement de stockage Azure fourni par Microsoft. Les éléments sont également réindexés et Advanced eDiscovery procède à la reconnaissance optique de caractères (OCR) sur les fichiers image et télécharge le texte de l’image à des fins de révision et d’analyse.
-ms.openlocfilehash: 748de7f3cb3fec5a37cb205e0d480701b4cded2e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594635"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080148"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
@@ -37,11 +37,11 @@ Lorsque vous ajoutez les résultats d’une recherche à un jeu de réviseur (le
 
 Pour ajouter des données à un jeu de réexamens, cliquez sur une recherche dans l’onglet **recherches** , puis sur **Ajouter des résultats à examiner le jeu** sur la page de menu volant.
 
-![Ajout de données à un ensemble de révision](media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+![Ajout de données à un ensemble de révision](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
 
 Vous pouvez ajouter à un jeu de réexamen existant ou créer un jeu de révision.  Si vous ajoutez à un nouveau jeu de réexamen, spécifiez son nom, puis cliquez sur **Ajouter**.
 
-![Sélectionner un jeu de révision](media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+![Sélectionner un jeu de révision](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
 L’ajout de données à un jeu de révision est un processus long. Ce processus inclut la collecte d’éléments à partir des sources de données d’origine dans Office 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie vers l’emplacement de stockage Azure (ce processus de copie est *également appelé «* ingestion »), puis la réindexation des éléments. Vous pouvez suivre la progression sous l’onglet **travaux** ou sur l’onglet **recherches** en surveillant l’État dans la colonne **données ajoutées à l’ensemble** de modifications. Une fois le traitement de l’ensemble de vérifications terminé, cliquez sur l’onglet **ensembles** de vérifications dans le cas, puis cliquez sur le jeu de révisions pour démarrer le processus de filtrage, de révision, de marquage et d’exportation des données dans l’ensemble de révision.
 

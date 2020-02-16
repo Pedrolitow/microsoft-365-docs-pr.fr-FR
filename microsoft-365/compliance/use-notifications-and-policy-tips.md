@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: e3b83c72c8f18ad58fcedb6b8c4271bfebdf8c13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 676581a5cfdf7308cf6c5cd71083dedae34836fb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597351"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083997"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
 Vous pouvez utiliser une stratégie de protection contre la perte de données (DLP) pour identifier, surveiller et protéger les informations sensibles dans Office 365. Vous souhaitez que les personnes de votre organisation qui travaillent avec ces informations sensibles soient conformes à vos stratégies DLP, mais que vous ne voulez pas les bloquer inutilement. C’est ici que les notifications par courrier électronique et les conseils de stratégie peuvent vous aider.
   
-![La barre des messages affiche le conseil de stratégie dans Excel 2016](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
+![La barre des messages affiche le conseil de stratégie dans Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
 Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP (par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive entreprise qui contient des informations d’identification personnelle et qui est partagé avec un utilisateur externe.
   
@@ -44,7 +44,7 @@ Dans le centre de sécurité &amp; conformité Office 365, lorsque vous créez u
     
   - Pour le courrier électronique dans Outlook sur le Web et Outlook 2013 et versions ultérieures, le Conseil de stratégie apparaît en haut d’un message au-dessus des destinataires lors de la composition du message.
     
-  - Pour les documents dans un compte OneDrive entreprise ou un site SharePoint Online, le Conseil de stratégie est indiqué par une icône d’avertissement qui apparaît sur l’élément. Pour afficher plus d’informations, vous pouvez sélectionner un élément, puis **choisir volet** ![informations sur](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) les informations dans le coin supérieur droit de la page pour ouvrir le volet d’informations. 
+  - Pour les documents dans un compte OneDrive entreprise ou un site SharePoint Online, le Conseil de stratégie est indiqué par une icône d’avertissement qui apparaît sur l’élément. Pour afficher plus d’informations, vous pouvez sélectionner un élément, puis **choisir volet** ![informations sur](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) les informations dans le coin supérieur droit de la page pour ouvrir le volet d’informations. 
     
   - Pour les documents Excel, PowerPoint et Word stockés sur un site OneDrive entreprise ou un site SharePoint Online inclus dans la stratégie DLP, le Conseil de stratégie s’affiche dans la barre des messages et le mode Backstage ( \> **informations**du menu **fichier** ).
     
@@ -58,7 +58,7 @@ Lorsque vous créez une stratégie DLP, les notifications par courrier électron
     
 3. Dans le centre &amp; \> de sécurité conformité, \> **stratégie** \> de **protection contre** \> la perte de données gauche **+ créer une stratégie**.
     
-    ![Bouton créer une stratégie](media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Bouton créer une stratégie](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
 4. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous \> **avez besoin.**
     
@@ -82,7 +82,7 @@ Lorsque vous créez une stratégie DLP, les notifications par courrier électron
     
 9. Dans l’éditeur de règles, sous **notifications utilisateur**, changez l’état de.
     
-    ![Section notifications utilisateur de l’éditeur de règles](media/47705927-c60b-4054-a072-ab914f33d15d.png)
+    ![Section notifications utilisateur de l’éditeur de règles](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
 
 > [!NOTE]
 > Les stratégies DLP s’appliquent à tous les documents qui correspondent à la stratégie, qu’ils soient nouveaux ou existants. Toutefois, une notification par courrier électronique est générée uniquement lorsque le nouveau contenu correspond à une stratégie DLP existante. Le contenu existant est protégé, mais ne génère pas de notification d’utilisateur par courrier électronique.
@@ -98,13 +98,13 @@ Pour chaque règle d’une stratégie DLP, vous pouvez :
 > [!NOTE]
 >  Les notifications par courrier électronique ne peuvent être envoyées qu’à des destinataires individuels, et non à des groupes ou à des listes de distribution. Seul le nouveau contenu déclenchera une notification par courrier électronique. La modification d’un contenu existant déclenche des conseils de stratégie, mais pas de notification par courrier électronique. 
   
-![Options de notification par courrier électronique](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
+![Options de notification par courrier électronique](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
 ### <a name="default-email-notification"></a>Notification par courrier électronique par défaut
 
 Les notifications ont une ligne d’objet qui commence par l’action entreprise, telle que « notification », « message bloqué » pour le courrier électronique ou « accès bloqué » pour les documents. Si la notification concerne un document, le corps du message de notification inclut un lien qui vous dirige vers le site où le document est stocké et ouvre le Conseil de stratégie pour le document, où vous pouvez résoudre les problèmes (voir la section ci-dessous à propos des conseils de stratégie). Si la notification concerne un message, la notification inclut comme pièce jointe le message qui correspond à une stratégie DLP.
   
-![Message de notification](media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
+![Message de notification](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
 Par défaut, les notifications s’affichent sous une forme semblable à la suivante pour un élément sur un site. Le texte de notification est configuré séparément pour chaque règle, de sorte que le texte affiché diffère en fonction de la règle mise en correspondance.
 
@@ -126,7 +126,7 @@ Vous pouvez également utiliser les jetons suivants pour vous aider à personnal
 |%% ContentURL%%  <br/> |URL du document sur le site SharePoint Online ou OneDrive entreprise.  <br/> |
 |%%MatchedConditions%%  <br/> |Conditions qui ont été mises en correspondance avec le contenu. Utilisez ce jeton pour informer les personnes de problèmes possibles liés au contenu.  <br/> |
    
-![Message de notification indiquant où les jetons apparaissent](media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
+![Message de notification indiquant où les jetons apparaissent](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
   
 ## <a name="options-for-configuring-policy-tips"></a>Options de configuration des conseils de stratégie
 
@@ -140,7 +140,7 @@ Pour chaque règle d’une stratégie DLP, vous pouvez configurer des conseils d
     
   - Autoriser la personne à signaler un faux positif et remplacer la stratégie DLP. Ces informations sont également consignées pour la création de rapports, afin que vous puissiez utiliser des faux positifs pour affiner vos règles.
     
-![Options du Conseil de stratégie](media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
+![Options du Conseil de stratégie](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
 Par exemple, vous pouvez avoir une stratégie DLP appliquée aux sites OneDrive entreprise qui détecte des informations d’identification personnelle, et cette stratégie comporte trois règles :
   
@@ -166,15 +166,15 @@ Lorsqu’un document sur un site OneDrive entreprise ou un site SharePoint Onlin
     
 2. Si la règle bloque l’accès au document, l’icône bloqué apparaît.
     
-![Icônes de Conseil de stratégie sur les documents dans un compte OneDrive](media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+![Icônes de Conseil de stratégie sur les documents dans un compte OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Pour effectuer une action sur un document, vous pouvez sélectionner un \> élément **choisir un** ![volet informations](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) sur l’icône dans le coin supérieur droit de la page pour ouvrir le \> **Conseil de stratégie afficher**le volet d’informations.
+Pour effectuer une action sur un document, vous pouvez sélectionner un \> élément **choisir un** ![volet informations](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) sur l’icône dans le coin supérieur droit de la page pour ouvrir le \> **Conseil de stratégie afficher**le volet d’informations.
   
 Le Conseil de stratégie répertorie les problèmes liés au contenu et, si les conseils de stratégie sont configurés avec ces options, vous pouvez choisir **résoudre**, puis **remplacer** le Conseil de stratégie ou **signaler** un faux positif. 
   
-![Volet d’informations affichant le Conseil de stratégie](media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
+![Volet d’informations affichant le Conseil de stratégie](../media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
   
-![Conseil de stratégie avec l’option de remplacement](media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
+![Conseil de stratégie avec l’option de remplacement](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
   
 Les stratégies DLP sont synchronisées avec les sites et le contenu est évalué régulièrement et de manière asynchrone, de sorte qu’il peut y avoir un court délai entre le moment où vous créez la stratégie DLP et l’heure à laquelle vous commencez à consulter les conseils de stratégie. Il peut y avoir un délai similaire entre le moment où vous résolvez ou le remplacement d’un Conseil de stratégie et le moment où l’icône du document sur le site est supprimée.
   
@@ -196,17 +196,17 @@ Vous pouvez personnaliser le texte pour les conseils de stratégie indépendamme
 
 Lorsque vous rédigez un nouveau message électronique dans Outlook sur le Web et Outlook 2013 et versions ultérieures, un Conseil de stratégie s’affiche si vous ajoutez du contenu qui correspond à une règle dans une stratégie DLP et que cette règle utilise des conseils de stratégie. Le Conseil de stratégie s’affiche en haut du message, au-dessus des destinataires, tandis que le message est en cours de composition.
   
-![Conseil de stratégie en haut d’un message en cours de composition](media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
+![Conseil de stratégie en haut d’un message en cours de composition](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
   
 Les conseils de stratégie fonctionnent si les informations sensibles apparaissent dans le corps du message, la ligne d’objet ou même une pièce jointe de message, comme indiqué ci-dessous.
   
-![Conseil de stratégie montrant qu’une pièce jointe est en conflit avec une stratégie DLP](media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
+![Conseil de stratégie montrant qu’une pièce jointe est en conflit avec une stratégie DLP](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
 Si les conseils de stratégie sont configurés pour autoriser le remplacement, vous pouvez choisir **Afficher** \> **remplacement** \> des détails entrez une justification professionnelle ou signaler \> un **remplacement**positif faux.
   
-![Conseil de stratégie dans un message développé pour afficher l’option de remplacement](media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
+![Conseil de stratégie dans un message développé pour afficher l’option de remplacement](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
-![Boîte de dialogue Conseil de stratégie, dans laquelle vous pouvez remplacer le Conseil de stratégie](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
+![Boîte de dialogue Conseil de stratégie, dans laquelle vous pouvez remplacer le Conseil de stratégie](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 Notez que lorsque vous ajoutez des informations sensibles à un message électronique, il peut y avoir une latence entre le moment où les informations sensibles sont ajoutées et le Conseil de stratégie.
 
@@ -251,15 +251,15 @@ En fonction de la façon dont vous configurez les conseils de stratégie dans la
   
 Les conseils de stratégie s’affichent dans la barre des messages.
   
-![La barre des messages affiche le conseil de stratégie dans Excel 2016](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
+![La barre des messages affiche le conseil de stratégie dans Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
 Et les conseils de stratégie apparaissent également dans le mode Backstage (sous l’onglet **fichier** ). 
   
-![Le mode Backstage affiche les conseils de stratégie dans Excel 2016](media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
+![Le mode Backstage affiche les conseils de stratégie dans Excel 2016](../media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
   
 Si les conseils de stratégie dans la stratégie DLP sont configurés avec ces options, vous pouvez choisir de **résoudre** le **remplacement** d’un Conseil de stratégie ou **signaler** un faux positif. 
   
-![Options relatives aux conseils de stratégie en mode Backstage dans Excel 2016](media/5b3857ba-907e-456e-ae43-888b594c049c.png)
+![Options relatives aux conseils de stratégie en mode Backstage dans Excel 2016](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   
 Dans chacun de ces programmes de bureau Office, les utilisateurs peuvent choisir de désactiver les conseils de stratégie. Si ce paramètre est désactivé, les conseils de stratégie qui sont des notifications simples n’apparaissent pas dans la barre des messages ou le mode Backstage (sous l’onglet **fichier** ). Toutefois, les conseils de stratégie concernant le blocage et le remplacement continueront d’apparaître, et ils continueront de recevoir la notification par courrier électronique. En outre, la désactivation des conseils de stratégie n’exempte pas le document des stratégies DLP qui lui ont été appliquées. 
   

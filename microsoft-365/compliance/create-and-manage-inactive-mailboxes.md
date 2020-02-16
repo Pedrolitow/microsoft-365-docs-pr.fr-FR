@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Vous pouvez créer une boîte aux lettres inactive dans Office 365 en appliquant une stratégie de rétention de blocage ou d’Office 365 à la boîte aux lettres, puis en supprimant le compte d’utilisateur Office 365 correspondant. Les éléments d’une boîte aux lettres inactive sont conservés pendant la durée de la conservation ou de la stratégie de rétention qui lui a été appliquée avant qu’elle ne soit devenue inactive. Pour supprimer définitivement une boîte aux lettres inactive, supprimez simplement la stratégie de conservation ou de rétention.
-ms.openlocfilehash: b3b3eddc67c1f23dffdb8ecb45428b9c64c6d0e0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 845ed0307081390c976cf3ac27671a858d99d433
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595631"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077630"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Créer et gérer des boîtes aux lettres inactives dans Office 365
 
@@ -77,13 +77,13 @@ Pour afficher la liste des boîtes aux lettres inactives dans votre organisation
     
 2. Cliquez sur**rétention**de **gouvernance** > des informations.
     
-3. Sur la page **rétention** , cliquez sur **autres**![barres](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)d’ellipse de la barre de navigation, puis cliquez sur **boîtes aux lettres inactives**.
+3. Sur la page **rétention** , cliquez sur **autres**![barres](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)d’ellipse de la barre de navigation, puis cliquez sur **boîtes aux lettres inactives**.
     
-    ![Sur la page rétention, cliquez sur autres, puis cliquez sur boîtes aux lettres inactives pour afficher la liste des boîtes aux lettres inactives.](media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
+    ![Sur la page rétention, cliquez sur autres, puis cliquez sur boîtes aux lettres inactives pour afficher la liste des boîtes aux lettres inactives.](../media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
     La page **boîtes aux lettres inactives** s’affiche. Remarque le nombre total de boîtes aux lettres inactives dans votre organisation est affiché. 
     
-    ![Une liste de toutes les boîtes aux lettres inactives de votre organisation s’affiche.](media/57d9d183-0c6c-4bd8-82e7-115f7b7b6de7.png)
+    ![Une liste de toutes les boîtes aux lettres inactives de votre organisation s’affiche.](../media/57d9d183-0c6c-4bd8-82e7-115f7b7b6de7.png)
   
 Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell pour afficher la liste des boîtes aux lettres inactives.
 
@@ -91,7 +91,7 @@ Vous pouvez également exécuter la commande suivante dans Exchange Online Power
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-Vous pouvez cliquer ![sur Exporter les résultats](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Exporter** pour afficher ou télécharger un fichier csv contenant des informations supplémentaires sur les boîtes aux lettres inactives dans votre organisation. 
+Vous pouvez cliquer ![sur Exporter les résultats](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Exporter** pour afficher ou télécharger un fichier csv contenant des informations supplémentaires sur les boîtes aux lettres inactives dans votre organisation. 
   
 Vous pouvez également exécuter la commande suivante pour exporter la liste des boîtes aux lettres inactives et d’autres informations dans un fichier CSV. Dans cet exemple, le fichier CSV est créé dans le répertoire actif.
 

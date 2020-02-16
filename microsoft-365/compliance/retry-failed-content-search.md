@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le bouton nouvelle tentative pour résoudre les recherches de contenu présentant des erreurs d’emplacement de contenu.
-ms.openlocfilehash: ce88749a887fea57e977e210de1eda40268cb832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6eb08c006f206e3ad7850d67e541f6fc3f496441
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601621"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081575"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Nouvelle tentative de recherche de contenu pour résoudre une erreur d’emplacement de contenu
 
@@ -46,7 +46,7 @@ Lors de la recherche d’un grand nombre de boîtes aux lettres, la recherche es
 
 Le redémarrage de la recherche entraîne souvent des erreurs similaires sur différents serveurs. Au lieu de relancer la recherche, cliquez sur le bouton **Réessayer** qui s’affiche en haut de la page des résultats de la recherche.
 
-![Cliquez sur le bouton Réessayer pour résoudre les erreurs d’emplacement de contenu](media/retrycontentsearch3.png)
+![Cliquez sur le bouton Réessayer pour résoudre les erreurs d’emplacement de contenu](../media/retrycontentsearch3.png)
 
 Cela entraînera la nouvelle tentative de recherche uniquement pour les boîtes aux lettres qui ont échoué. Lorsque vous effectuez une nouvelle tentative de recherche, les autres résultats renvoyés avec succès sont conservés.
 

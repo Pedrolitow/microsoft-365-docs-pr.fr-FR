@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661950"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078724"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -66,7 +66,7 @@ Pour obtenir la liste complète des filtres et des détails sur les champs, voir
 
 8. Si vous souhaitez enregistrer les filtres sélectionnés en tant que requête de filtre, sélectionnez **enregistrer le contrôle de requête** après avoir configuré au moins une valeur de filtre. Entrez un nom pour la requête de filtre et sélectionnez **Enregistrer**. Ce filtre peut être utilisé uniquement pour cette stratégie et est mentionné dans la section **requêtes de filtrage enregistrées** de la page Détails des **filtres** .
 
-    ![Contrôles des détails de filtrage de conformité des communications](media/communication-compliance-filter-detail-controls.png)
+    ![Contrôles des détails de filtrage de conformité des communications](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Utilisation de l’analyse near et de la copie exacte
 
@@ -90,7 +90,7 @@ Les stratégies de conformité des communications analysent et regroupent automa
 
 8. Sélectionnez **Fermer** après avoir terminé les actions de correction sur les messages.
 
-    ![Contrôle des doublons exacts de la communication](media/communication-compliance-duplicates-controls.png)
+    ![Contrôle des doublons exacts de la communication](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>Correction des alertes
 
@@ -98,7 +98,7 @@ Quelle que soit l’endroit où vous commencez à examiner les alertes ou le fil
 
 1. **Examinez les notions de base sur les messages**: parfois, il est évident de la source ou de l’objet qu’un message peut être résolu immédiatement. Il se peut que le message soit un parasite ou une correspondance incorrecte avec une stratégie et qu’il doive être résolu comme faux positif. Sélectionnez le contrôle **faux positif** pour résoudre immédiatement l’alerte et supprimer de la file d’attente des alertes en attente. À partir de l’information source ou de l’expéditeur, vous savez peut-être déjà comment le message doit être routé ou géré dans ces circonstances. Envisagez d’utiliser la **balise** ou les contrôles pour affecter une balise aux messages **applicables ou pour** envoyer des messages à un réviseur désigné.
 
-    ![Contrôles de correction de la conformité des communications](media/communication-compliance-remediation-controls.png)
+    ![Contrôles de correction de la conformité des communications](../media/communication-compliance-remediation-controls.png)
 
 2. **Examinez les détails du message**: après avoir examiné les notions de base du message, il est temps d’ouvrir un message pour examiner les détails et pour déterminer d’autres actions de correction. Sélectionnez un message pour afficher l’en-tête et les informations de corps de message complètes. Plusieurs vues différentes sont disponibles pour vous aider à déterminer la bonne marche à suivre :
 
@@ -107,7 +107,7 @@ Quelle que soit l’endroit où vous commencez à examiner les alertes ou le fil
     - **Annoted View**: cette vue permet aux relecteurs d’ajouter des annotations directement sur le message qui est enregistré dans l’affichage du message.
     - **Historique des utilisateurs**: affichage historique des utilisateurs affiche toutes les autres alertes générées par une stratégie de conformité de la communication pour l’utilisateur qui envoie le message.
 
-    ![Contrôles d’affichage de message de conformité de communication](media/communication-compliance-message-views.png)
+    ![Contrôles d’affichage de message de conformité de communication](../media/communication-compliance-message-views.png)
 
 3. **Choisir une action de correction**: à présent que vous avez examiné les détails du message pour l’alerte, vous pouvez choisir plusieurs actions de correction :
 

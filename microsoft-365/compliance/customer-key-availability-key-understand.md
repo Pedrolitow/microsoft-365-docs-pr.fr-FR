@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: En savoir plus sur la clé de disponibilité utilisée pour récupérer les clés de client Office 365.
-ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 86f602a59f436a6ce42df583c88c0403eb17e5ae
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862084"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076947"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>En savoir plus sur la clé de disponibilité pour la clé client Office 365
 
@@ -175,11 +175,11 @@ Exchange Online et Skype entreprise utilisent automatiquement la clé de disponi
 
 Les enregistrements de journal incluent des attributs tels que la date, l’heure, l’activité, l’ID de l’organisation et l’ID de stratégie de chiffrement des données. L’enregistrement est disponible dans le cadre des journaux d’audit unifiés Office 365 et est accessible à partir de l’onglet de recherche du journal d’audit du centre de sécurité et de conformité Office 365.
 
-![Recherche des événements clés de disponibilité dans le journal d’audit](media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![Recherche des événements clés de disponibilité dans le journal d’audit](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
 Les enregistrements de clés de disponibilité Exchange Online et Skype entreprise utilisent le [schéma commun](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) de l’activité de gestion Office 365 avec des paramètres personnalisés supplémentaires : ID de stratégie, ID de version de clé d’étendue et ID de demande.
 
-![Paramètres personnalisés de clé de disponibilité](media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![Paramètres personnalisés de clé de disponibilité](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
 ### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>Journalisation des clés de disponibilité des fichiers SharePoint Online, OneDrive entreprise et des fichiers teams
 
@@ -195,11 +195,11 @@ Office 365 utilise la clé de disponibilité pour encapsuler la couche de clés 
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Chiffrements de chiffrement utilisés pour chiffrer les clés pour Exchange Online et Skype entreprise
 
-![Chiffrements de chiffrement pour la clé client Exchange Online](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Chiffrements de chiffrement pour la clé client Exchange Online](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>Chiffrements de chiffrement utilisés pour chiffrer les clés pour SharePoint Online et OneDrive entreprise
 
-![Chiffrements de chiffrement pour la clé client SharePoint Online](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Chiffrements de chiffrement pour la clé client SharePoint Online](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Articles connexes
 

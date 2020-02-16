@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 75cf79e162c2e371821b4329fc1be949f0b3a81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722025"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078810"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -74,7 +74,7 @@ Microsoft 365 est fourni avec six classifieurs prêts à l’emploi suivants :
 
 Ces éléments apparaissent dans**la vue** classification des données `Ready to use`du centre > de **conformité Microsoft 365****(aperçu)** > avec le statut.
 
-![classifieurs-prêts à l’emploi-classifieurs](media/classifiers-ready-to-use-classifiers.png)
+![classifieurs-prêts à l’emploi-classifieurs](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > Veuillez noter que le langage offensant, le harcèlement, le catégoriseur et les classifieurs de menaces ne fonctionnent qu’avec le texte pouvant faire l’objet d’une recherche.  De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Tandis que les classifieurs peuvent aider votre organisation à surveiller le offensant et d’autres langues, les classifieurs ne traitent pas les conséquences de cette langue et ne sont pas destinés à fournir aux seuls moyens de surveillance ou de réponse à l’utilisation de cette langue. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’application, au blocage, à la suppression et à la rétention de tout contenu identifié par un classificateur pré-formé.
@@ -83,7 +83,7 @@ Ces éléments apparaissent dans**la vue** classification des données `Ready to
 
 Prêt à utiliser les classifieurs n’a pas besoin d’être formé, mais vous devez confirmer qu’ils identifient les types de contenu dont vous avez besoin avant de les utiliser dans des solutions de conformité. Le test d’un classificateur pré-qualifié suit ce flux.
 
-![test du flux de processus d’un classificateur pré-formé](media/classifier-pre-trained-classifier-flow.png)
+![test du flux de processus d’un classificateur pré-formé](../media/classifier-pre-trained-classifier-flow.png)
 
 ### <a name="understanding-trainable-classifiers"></a>Présentation des classifieurs de formation
 
@@ -96,7 +96,7 @@ Lorsque les classifieurs prêts à l’emploi ne répondent pas à vos besoins, 
 
 La création et la publication d’un classificateur pour l’utilisation dans les solutions de conformité, telles que les stratégies de rétention et la surveillance des communications, suivent ce flux. Pour plus d’informations sur la création d’un classificateur de formation, consultez [la rubrique Création d’un classificateur de formation](classifier-creating-a-trainable-classifier.md).
 
-![classificateur de flux de processus](media/classifier-trainable-classifier-flow.png)
+![classificateur de flux de processus](../media/classifier-trainable-classifier-flow.png)
 
 ## <a name="see-also"></a>Voir aussi
 

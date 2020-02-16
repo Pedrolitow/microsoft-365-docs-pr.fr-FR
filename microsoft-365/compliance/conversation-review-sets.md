@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 78997bfb6a3a77a03d95560d5f0c38eaae2dda4c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595671"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078121"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Examiner les conversations dans Advanced eDiscovery 
 
@@ -47,7 +47,7 @@ Voici quelques définitions pour vous aider à commencer à utiliser la reconstr
 
 - **Conversation :** Représente un regroupement d’un ou plusieurs messages. Dans différentes applications, les conversations peuvent être représentées de différentes manières. Dans certaines applications, il existe une action explicite qui résulte de la réponse à un message existant. Les conversations sont formées de manière explicite à la suite de cette action de l’utilisateur. Par exemple, voici une capture d’écran d’une conversation de canal dans Microsoft Teams.
 
-   ![Conversation de canal Microsoft teams](media/threadedchat.png)
+   ![Conversation de canal Microsoft teams](../media/threadedchat.png)
 
    Dans d’autres applications (telles que les messages de conversation 1xN dans Teams), il n’y a pas de chaîne de réponse formelle et les messages s’affichent en tant que « plates-messages » dans un seul thread. Dans ces types d’applications, les conversations sont déduites à partir d’un groupe de messages qui se produisent au cours d’une période donnée. Ce « regroupement conditionnel » de messages (par opposition à une chaîne de réponse) représente la conversation « en arrière » sur un sujet spécifique. 
 
@@ -71,7 +71,7 @@ Une fois que vous avez vérifié et finalisé votre requête de recherche, vous 
 
 Lorsque vous ajoutez des données de conversations à un ensemble de vérification, vous pouvez utiliser les options de récupération de conversation pour étendre votre recherche et inclure des messages contextuels. Une fois que vous avez défini les options de récupération de conversation, les opérations suivantes peuvent se produire :
 
-  ![Récupération de conversation](media/messagesandconversations.png)
+  ![Récupération de conversation](../media/messagesandconversations.png)
   
 1. À l’aide d’une requête de mot clé et de plage de dates, la recherche a renvoyé une correspondance sur le *message 3*. Ce message faisait partie d’une conversation plus large, illustrée par *CRC1*. 
   
@@ -99,13 +99,13 @@ Une fois que le contenu a été traité et ajouté à l’ensemble de vérificat
 
 Dans un ensemble de révision standard, les messages sont traités et affichés en tant qu’éléments individuels, de la même manière qu’ils sont stockés dans un dossier de boîte aux lettres. Dans ce flux de travail, chaque message est traité comme un élément distinct. Par conséquent, le résumé lié et les options d’exportation ne sont pas disponibles dans un jeu de révision standard. 
 
-  ![Ensemble de révision standard](media/standardrs.PNG)
+  ![Ensemble de révision standard](../media/standardrs.PNG)
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Examen des conversations dans un jeu de révision de conversation
 
 Dans un ensemble de révision de conversation, les messages individuels sont regroupés et présentés sous forme de conversations. Cela vous permet de passer en revue et d’exporter des conversations contextuelles. 
 
-  ![Ensemble de révision de conversation](media/ConversationRSOptions.PNG)
+  ![Ensemble de révision de conversation](../media/ConversationRSOptions.PNG)
 
 Les sections suivantes décrivent la révision et l’exportation de conversations dans un jeu de révision de conversation.
 
@@ -134,7 +134,7 @@ Dans un ensemble de révision de conversation, vous pouvez utiliser les options 
 
 Dans un ensemble de révision de conversation, vous pouvez définir les options suivantes pour exporter des conversations :
 
-![Exporter](media/export.png)
+![Exporter](../media/export.png)
 
 a. Options de métadonnées
 

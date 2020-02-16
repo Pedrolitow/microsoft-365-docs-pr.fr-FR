@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez les outils de découverte électronique et de recherche Office 365 pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: 3efeb183ca0629ea642eb21f14e31401d8618eea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c143095ecd26d2a9c8f2271b9d28f75b1c71502c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595401"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076309"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solutions eDiscovery : scénario de fuite de données-recherche et purge
 
@@ -37,7 +37,7 @@ Ce document fournit une liste d’instructions sur la suppression définitive d�
 
 Voici comment gérer un incident de fuite de données :
 
-![Flux de travail en 8 étapes pour la gestion des incidents de débordement de données](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![Flux de travail en 8 étapes pour la gestion des incidents de débordement de données](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [Module Étape 1 : gérer les personnes pouvant accéder à la demande de devis et définir les limites de conformité](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [Étape 2 : créer un cas eDiscovery](#step-2-create-an-ediscovery-case)<br/>
@@ -100,7 +100,7 @@ Afer vous avez vérifié les résultats de la recherche, vous souhaiterez peut-�
  
       La page exporter le rapport s’affiche.
 
-    ![Sélectionnez la recherche, puis cliquez sur plus d' > exporter le rapport sur la page de menu volant](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![Sélectionnez la recherche, puis cliquez sur plus d' > exporter le rapport sur la page de menu volant](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. Sélectionnez **tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons** , puis cliquez sur **générer un rapport**.
 
@@ -108,7 +108,7 @@ Afer vous avez vérifié les résultats de la recherche, vous souhaiterez peut-�
 
 5. Cliquez sur le travail d’exportation, puis sur **Télécharger** le rapport sur la page de menu volant.
  
-    ![Sur la page exporter, cliquez sur Exporter, puis cliquez sur Télécharger le rapport.](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![Sur la page exporter, cliquez sur Exporter, puis cliquez sur Télécharger le rapport.](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 Le rapport Résumé de l' **exportation** contient le nombre d’emplacements trouvés avec les résultats et la taille des résultats de la recherche. Vous pouvez utiliser cette fonction pour effectuer une comparaison avec le rapport généré après suppression et fournir une preuve de suppression. Le rapport de **résultats** contient un résumé plus détaillé des résultats de la recherche, y compris l’objet, l’expéditeur, les destinataires, si le courrier électronique a été lu, les dates et la taille de chaque message. Si l’une des informations contenues dans ce rapport contient des données propagées réelles, veillez à supprimer définitivement le fichier results. csv une fois l’examen terminé.
 
@@ -142,7 +142,7 @@ Il existe deux façons de collecter une liste d’adresses de messagerie de boî
     
 4. Dans la liste déroulante **type** , cliquez sur **emplacements principaux**.
     
-    ![Obtenir la liste des boîtes aux lettres qui contiennent des résultats de recherche sur la page des sites de niveau supérieur dans les statistiques de recherche](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![Obtenir la liste des boîtes aux lettres qui contiennent des résultats de recherche sur la page des sites de niveau supérieur dans les statistiques de recherche](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     La liste des boîtes aux lettres qui contiennent les résultats de la recherche s’affiche. Le nombre d’éléments dans chaque boîte aux lettres qui correspondent à la requête de recherche est également affiché.
     
@@ -190,7 +190,7 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
     
 2. Sur la page de la fenêtre volante, cliquez sur **supprimer**.
 
-    ![Sélectionnez la recherche, puis cliquez sur supprimer sur la page de menu volant](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![Sélectionnez la recherche, puis cliquez sur supprimer sur la page de menu volant](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’enquête de fuite de données
 
