@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur la rubrique Fix sender Domain Insight dans le tableau de bord du flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598821"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082562"
 ---
 # <a name="fix-sender-domain-insight"></a>Informations sur la correction du domaine de l’expéditeur
 
@@ -36,15 +36,15 @@ Les messages qui ne répondent pas aux critères ne sont pas attribués à l’o
 
 L’article **Fix sender Domain** Insight affiche les messages électroniques provenant de votre environnement local qui ne répondent pas aux critères, vous permet d’identifier les ordinateurs et les comptes d’utilisateur potentiellement compromis dans votre environnement de messagerie local et vous aide à prendre des mesures correctives.
 
-![Le tableau de bord des expéditeurs du tableau de bord du flux de messagerie dans le centre de sécurité & conformité](../media/sender-domain-insight-selected.png)
+![Le tableau de bord des expéditeurs du tableau de bord du flux de messagerie dans le centre de sécurité & conformité](../../media/sender-domain-insight-selected.png)
 
 Lorsque vous cliquez sur **afficher les détails**, vous êtes dirigé vers un autre widget avec plus de détails, comme illustré dans le diagramme suivant :
 
-![Le widget détails de la solution Fix sender Domain Insight](../media/sender-domain-view-details.png)
+![Le widget détails de la solution Fix sender Domain Insight](../../media/sender-domain-view-details.png)
 
 Vous verrez le connecteur entrant qui a été utilisé pour livrer les messages à Office 365. Vous pouvez également cliquer sur **afficher un exemple d’ID de message** pour afficher les détails des messages qui ont été envoyés à partir de votre environnement de messagerie local. Étant donné que ces messages ont été rejetés par Office 365, vous ne pouvez pas utiliser le suivi des messages, mais vous pouvez utiliser l’exemple d’ID de message pour suivre les messages dans votre environnement de messagerie local.
 
-![Afficher des exemples d’ID de message dans la fenêtre Fix sender Domain Insight](../media/sender-domain-view-sample-message-ids.png)
+![Afficher des exemples d’ID de message dans la fenêtre Fix sender Domain Insight](../../media/sender-domain-view-sample-message-ids.png)
 
 ## <a name="see-also"></a>Voir aussi
 

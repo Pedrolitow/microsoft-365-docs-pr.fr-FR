@@ -15,12 +15,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer les notifications de courrier indésirable à l'utilisateur final pour la stratégie de filtrage de contenu par défaut à l'échelle de l'entreprise, ou pour les stratégies de filtrage de contenu personnalisées appliquées à des domaines.
-ms.openlocfilehash: 95a8142b4f4687c66657cd01e1110470c8b08bc4
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6ac43ee3419e7b768312b6826994a5b8f5e4a231
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957399"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083496"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP
   
@@ -71,9 +71,9 @@ Pour plus d’informations sur les raccourcis clavier applicables aux procédure
   
  **Conseil :** si vous voulez tester les notifications de courrier indésirable destinées aux utilisateurs finals en les envoyant à un ensemble limité d'utilisateurs avant de les implémenter totalement, créez une stratégie de filtrage de contenu personnalisée autorisant ces notifications de courrier indésirable pour les domaines dans lesquels les utilisateurs résident. Ensuite, dans le centre d’administration Exchange, sous **règles de flux \> de messagerie**, créez une règle de flux de messagerie (également appelée règle de transport) pour bloquer les messages de Quarantine@messaging.microsoft.com (adresse de messagerie qui envoie des notifications) avec des exceptions pour les utilisateurs qui doivent recevoir les notifications. L'image suivante représente un exemple de création d'exception pour deux utilisateurs (SaraD et AlexD) du domaine Contoso.com : 
   
-![Règle de transport pour tester les notifications de courrier indésirable de l'utilisateur final](../media/EOP-ESN-testspecificusers.jpg)
+![Règle de transport pour tester les notifications de courrier indésirable de l'utilisateur final](../../media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md)
   

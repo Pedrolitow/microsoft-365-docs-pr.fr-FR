@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
-ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 513a45594dd41db56abe143ea6edca7074539d2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957249"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082000"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
 
@@ -40,7 +40,7 @@ Outlook affiche des indicateurs lorsque l’expéditeur d’un message ne peut p
 
 Lorsque Office 365 ne peut pas vérifier l’identité de l’expéditeur à l’aide de techniques d’authentification de messagerie, un «  ? » s’affiche dans l’image de l’expéditeur.
 
-![Le message n’a pas passé la vérification](../media/message-did-not-pass-verification.jpg)
+![Le message n’a pas passé la vérification](../../media/message-did-not-pass-verification.jpg)
 
 Les messages qui ne parvient pas à s’authentifier ne sont pas tous malveillants. Toutefois, vous devez être prudent quant à l’interaction avec les messages qui ne sont pas authentifiés si vous ne reconnaissez pas l’expéditeur. Ou, si vous reconnaissez un expéditeur qui ne possède pas de «  ? » normalement dans l’image de l’expéditeur, mais que vous le voyez soudainement, cela peut être un signe que l’expéditeur est usurpé.
 
@@ -50,7 +50,7 @@ Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via
 
 - Dans le centre de sécurité & conformité, les administrateurs globaux ou de sécurité peuvent activer ou désactiver la fonctionnalité via la protection contre l’usurpation d’identité dans le cadre de la stratégie anti-hameçonnage. En outre, vous pouvez utiliser la cmdlet **Set-antiphishpolicy permet** dans Exchange Online PowerShell. Pour plus d’informations, consultez la rubrique [anti-hameçonnage protection dans Office 365](anti-phishing-protection.md) et [Set-antiphishpolicy permet](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
 
-    ![Modification des expéditeurs non authentifiés dans l’interface graphique.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+    ![Modification des expéditeurs non authentifiés dans l’interface graphique.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - Si un administrateur a identifié un faux positif et qu’un expéditeur ne doit pas recevoir le traitement de l’expéditeur non vérifié, vous pouvez effectuer l’une des actions suivantes pour ajouter l’expéditeur à la liste des usurpations d’identité usurpée :
 
@@ -82,7 +82,7 @@ Pour la balise via : en tant qu’expéditeur, vous devez vous assurer que le d
 
 Pas nécessairement. Office 365 peut avoir d’autres propriétés dans le message pour authentifier l’expéditeur.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Protéger votre compte de messagerie Outlook.com](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 

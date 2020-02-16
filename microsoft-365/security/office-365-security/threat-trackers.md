@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 50566abfa7bec55fb42465132361971113453a06
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957359"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084461"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 
@@ -34,11 +34,11 @@ Les fonctionnalités d' [enquête et de réponse aux menaces Office 365](office-
 
 Les analyseurs de menace sont des widgets informatifs et des vues qui vous fournissent des renseignements sur les différents problèmes de Cybersecurity susceptibles d’avoir un impact sur votre entreprise. Par exemple, vous pouvez afficher des informations sur les campagnes de programmes malveillants de tendance à l’aide des suivis de menace.
   
-![Exemple de suivi des menaces illustrant des campagnes de programmes malveillants](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![Exemple de suivi des menaces illustrant des campagnes de programmes malveillants](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
 La plupart des pages de suivi incluent des numéros de tendance mis à jour régulièrement, des widgets pour vous aider à comprendre quels problèmes sont les plus importants ou les plus importants, et un lien rapide dans la colonne **actions** qui vous amène à explorer, où vous pouvez afficher des informations plus détaillées. 
   
-![Exemple d’informations sur la campagne dans l’Explorateur](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![Exemple d’informations sur la campagne dans l’Explorateur](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
 Les suivis ne sont que quelques-unes des nombreuses fonctionnalités que vous obtenez avec [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Les analyseurs de menace incluent les [suivis Noteworth](#noteworthy-trackers), les [suivis des tendances](#trending-trackers), les [requêtes suivies](#tracked-queries)et les [requêtes enregistrées](#saved-queries).
   
@@ -57,7 +57,7 @@ En règle générale, les suivis doivent être publiés pendant quelques semaine
 
 Les suivis des tendances (anciennement appelés campagnes marketing) mettent en évidence les nouvelles menaces reçues dans le courrier électronique de votre organisation au cours de la semaine précédente.
   
-![Exemple de widget de campagne de programmes malveillants de tendances](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Exemple de widget de campagne de programmes malveillants de tendances](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   
 Les suivis des tendances vous donnent une idée des nouvelles menaces que vous devez examiner afin de vous assurer que votre environnement d’entreprise plus large est prêt à être dirigé contre les attaques.
   
@@ -65,13 +65,13 @@ Les suivis des tendances vous donnent une idée des nouvelles menaces que vous d
 
 Les requêtes suivies exploitent vos requêtes sauvegardées pour évaluer régulièrement l’activité Office 365 au sein de votre organisation. Cela vous permet d’effectuer des tendances d’événements, de plus en plus à venir dans les prochains mois. Les requêtes suivies s’exécutent automatiquement, ce qui vous permet d’obtenir des informations à jour sans avoir à réexécuter vos requêtes.
   
-![Exemple de requêtes suivies avec une sélection](../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![Exemple de requêtes suivies avec une sélection](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
 ### <a name="saved-queries"></a>Requêtes enregistrées
 
 Les requêtes enregistrées sont également trouvées dans la section suivis. Vous pouvez utiliser des requêtes enregistrées pour stocker les recherches courantes de l’Explorateur que vous souhaitez récupérer plus rapidement et de manière répétée, sans avoir à recréer la recherche à chaque fois.
   
-![Exemple de requêtes enregistrées avec une sélection](../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![Exemple de requêtes enregistrées avec une sélection](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
   
 Vous pouvez toujours enregistrer une requête de suivi remarquable ou l’une de vos requêtes Explorer à l’aide du bouton **enregistrer la requête** en haut de la page Explorateur. Tout ce qui a été enregistré apparaît dans la liste **requêtes enregistrées** sur la page tracker. 
   
@@ -81,13 +81,13 @@ Que vous examiniez le courrier, le contenu ou les activités Office (bientôt di
   
 N’oubliez pas que vous pouvez toujours nous faire part de vos commentaires sur cette fonctionnalité ou d’autres fonctionnalités de sécurité Office 365 en cliquant sur le bouton **Commentaires** situé dans le coin inférieur droit de la [vue d’ensemble du centre de sécurité &amp; conformité Office 365](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Office 365 Security &amp; Compliance Center](../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Suivis et protection avancée contre les menaces Office 365
 
 Avec notre menace inéditive, nous mettons en évidence les menaces de programmes malveillants avancées détectées par [les pièces jointes sécurisées d’Office 365 ATP](atp-safe-attachments.md). Si vous êtes un client Office 365 entreprise E5 et que vous n’utilisez pas [office 365 Advanced Threat Protection](office-365-atp.md) (ATP), vous devez l’inclure dans votre abonnement. ATP fournit une valeur même si d’autres outils de sécurité filtrent le flux de messagerie avec vos services Office 365. Toutefois, les fonctionnalités de blocage du courrier indésirable et d' [Office 365 ATP](atp-safe-links.md) fonctionnent mieux lorsque votre solution de sécurité de messagerie principale s’effectue par le biais d’Office 365. 
   
-![ATP dans le centre &amp; de sécurité conformité](../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![ATP dans le centre &amp; de sécurité conformité](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
 Dans le monde des menaces riddled, l’exécution d’analyses anti-programmes malveillants classiques signifie que vous n’êtes pas suffisamment protégé contre les attaques. Les agresseurs les plus sophistiqués d’aujourd’hui utilisent les outils couramment disponibles pour créer des attaques nouvelles, brouillées ou retardées qui ne seront pas reconnues par les moteurs anti-programme malveillant basés sur des signatures traditionnels. La fonctionnalité de pièces jointes approuvées ATP prend les pièces jointes et les détonateurs dans un environnement virtuel pour déterminer si elles sont sûres ou malveillantes. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis observe ce qui se passe après l’ouverture du fichier. Qu’il s’agisse d’un fichier PDF, d’un fichier compressé ou d’un document Office, le code malveillant peut être masqué dans un fichier, en activant une seule fois que la victime l’ouvre sur son ordinateur. En détonant et analysant le fichier dans le flux de messagerie, les fonctionnalités ATP d’Office 365 détectent ces menaces en fonction des comportements, de la réputation de fichier et d’un certain nombre de règles heuristiques.
   

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4491504616eb4bb447f12d08dddb12c73c2a88ac
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 0cb4da85b5548ced757197a3af818e212b065b47
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962621"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085937"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilisation de Microsoft Consulting Services
 
@@ -35,7 +35,7 @@ Pour utiliser l’empaquetage d’applications MCS, **vous devez fournir les él
 
 Démarrez le processus d’empaquetage en téléchargeant les informations de l’application dans le portail de bureau géré Microsoft. L’équipe de Packaging examine les nouvelles soumissions tous les jeudis. Après la révision et l’empaquetage, les applications empaquetées sont fournies le vendredi suivant. Jusqu’à cinq applications par semaine peuvent être empaquetées pour démarrer, mais le service peut évoluer pour répondre à vos besoins.
 
-![calendrier illustrant le flux d’applications sur un jeudi (21 dans cet exemple), la validation du contenu multimédia le lendemain, la mise en package le lundi suivant (le 25) et la remise de l’application le vendredi (29)](images/MCS-cal.png)
+![calendrier illustrant le flux d’applications sur un jeudi (21 dans cet exemple), la validation du contenu multimédia le lendemain, la mise en package le lundi suivant (le 25) et la remise de l’application le vendredi (29)](../../media/MCS-cal.png)
 
 Vous serez informé une fois que l’application aura été livrée. À ce stade, vous disposez de 21 jours pour effectuer des tests d’acceptation et vous déconnecter du travail dans le portail de bureau géré Microsoft. Si vous rencontrez un problème avec l’application pendant le test d’acceptation, rejetez l’application dans le portail de bureau géré Microsoft et vous serez connecté par courrier électronique avec un gestionnaire de package MCS pour comprendre et résoudre le problème.
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable et d’autres messages, URL et fichiers potentiellement dangereux de votre client Office 365 à Microsoft pour analyse.
-ms.openlocfilehash: a12981ee302ea72e112826104996fb775e4ac3fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b123aef485628728df9db27875117b47295975ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599981"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083625"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Procédure d’envoi de courrier indésirable, hameçon, URL et fichiers suspects à Microsoft pour l’analyse Office 365
 
@@ -35,7 +35,7 @@ Pour envoyer du contenu à Microsoft, cliquez sur le bouton **nouvelle soumissio
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Envoyer un courrier électronique en question à Microsoft
 
-![Exemple de dépôt de courrier électronique](../media/submission-flyout-email.PNG)
+![Exemple de dépôt de courrier électronique](../../media/submission-flyout-email.PNG)
 
 1. Pour envoyer un message électronique, sélectionnez **courrier électronique** et spécifiez l' **ID de message réseau** de messagerie ou téléchargez le fichier de courrier électronique.
 
@@ -51,7 +51,7 @@ Pour envoyer du contenu à Microsoft, cliquez sur le bouton **nouvelle soumissio
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
-![Exemple de dépôt de courrier électronique](../media/submission-url-flyout.png)
+![Exemple de dépôt de courrier électronique](../../media/submission-url-flyout.png)
 
 1. Pour soumettre une URL, sélectionnez **URL** dans le menu volant. Tapez l’URL complète, y compris le protocole (**https://**).
 
@@ -61,7 +61,7 @@ Pour envoyer du contenu à Microsoft, cliquez sur le bouton **nouvelle soumissio
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Envoyer un fichier suspect à Microsoft
 
-![Exemple de dépôt de courrier électronique](../media/submission-file-flyout.PNG)
+![Exemple de dépôt de courrier électronique](../../media/submission-file-flyout.PNG)
 
 1. Pour soumettre un fichier, sélectionnez **fichier** dans le menu volant et téléchargez le fichier que vous souhaitez analyser.
 

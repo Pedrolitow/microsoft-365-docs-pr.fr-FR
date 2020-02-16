@@ -17,18 +17,18 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: 6a7ee065447c7351f02d1ff88239b1c41b7e874b
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 1531a70439ae1c093ee472923696895eda0bc644
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957379"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081873"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
 Si votre organisation dispose d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) et que vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-the-atp-reports), vous pouvez utiliser plusieurs rapports ATP dans &amp; le centre de sécurité conformité. (Accédez au **** \> **tableau de bord**rapports.)
   
-![Le tableau &amp; de bord du centre de sécurité conformité peut vous aider à déterminer le fonctionnement de la protection avancée contre les menaces](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Le tableau &amp; de bord du centre de sécurité conformité peut vous aider à déterminer le fonctionnement de la protection avancée contre les menaces](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Les rapports ATP sont les suivants :
 - [Rapport sur l’état de la protection contre les menaces](#threat-protection-status-report)
@@ -57,11 +57,11 @@ Les filtres et les répartitions des informations permettent des catégorisation
 > [!TIP]
 > Le courrier électronique > hameçon | Les vues de programmes malveillants ont des répartitions granulaires pour les technologies de détection présentées, avec des catégories telles que *réputation de fichier générée*par l’ATP, détonation de *fichiers*, *détonation d’URL*, *anti-usurpation : DMARC*, par exemple, utiles pour identifier exactement quelle fonctionnalité a permis à votre organisation de détecter les menaces.
 
-![Liste déroulante rapport d’état de protection contre les menaces avec « dépanner ».](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+![Liste déroulante rapport d’état de protection contre les menaces avec « dépanner ».](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
 Ces affichages vous permettent d’exporter, par le biais d’un clic sur un bouton (par E-mail > hameçon, par courrier électronique > de programmes malveillants et de contenu > de programmes malveillants). Les données agrégées exportées sur votre ordinateur peuvent être ouvertes dans Excel.
 
-![Ce graphique indique exporter en tant qu’option dans le menu de l’affichage de programmes malveillants, directement entre créer une planification et rapport de requête.](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+![Ce graphique indique exporter en tant qu’option dans le menu de l’affichage de programmes malveillants, directement entre créer une planification et rapport de requête.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
 Les affichages vue d’ensemble et courriels affichent des informations dans les heures de traitement et non dans les 24 heures (à la demande). une augmentation des vitesses a été un signal clair) !
 
@@ -70,19 +70,19 @@ Les affichages vue d’ensemble et courriels affichent des informations dans les
   
 Pour afficher le rapport d’état de protection contre les menaces, dans le [Centre de sécurité &amp; conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> de **protection contre les menaces**.
   
-![Rapport d’état de protection contre les menaces ATP](../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
+![Rapport d’état de protection contre les menaces ATP](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
 Pour obtenir l’état détaillé d’une journée, pointez sur le graphique.
   
-![Données d’état de protection contre les menaces ATP pendant une journée](../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
+![Données d’état de protection contre les menaces ATP pendant une journée](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
 Par défaut, le rapport d’état de protection contre les menaces affiche les données des sept derniers jours. Toutefois, vous pouvez choisir **filtres** et modifier la plage de dates pour afficher les données pour 90 jours maximum. (Si vous utilisez un abonnement d’évaluation, vous pouvez être limité à 30 jours de données.)
   
-![Filtres d’état de protection contre les menaces ATP](../media/4f703369-642b-402b-9758-b9c828283410.png)
+![Filtres d’état de protection contre les menaces ATP](../../media/4f703369-642b-402b-9758-b9c828283410.png)
   
 Vous pouvez également utiliser le menu **afficher les données par** pour modifier les informations affichées dans le rapport. 
   
-![Affichage des options pour le rapport d’état de protection contre les menaces ATP](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
+![Affichage des options pour le rapport d’état de protection contre les menaces ATP](../../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
 
 ## <a name="url-protection-status-report"></a>Rapport d’état de protection des URL
 
@@ -105,11 +105,11 @@ Le rapport **types de fichiers ATP** indique le type de fichiers détectés comm
   
 Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **types de fichiers DAV**du **tableau de bord** \> des **rapports** \> .
   
-![Rapport sur les types de fichiers ATP](../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
+![Rapport sur les types de fichiers ATP](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
 Lorsque vous placez le curseur de la souris sur un jour particulier, vous pouvez voir la répartition des types de fichiers malveillants détectés par les [pièces jointes fiables ATP](atp-safe-attachments.md) et la protection contre les [programmes malveillants contre le courrier indésirable &amp; dans Office 365](anti-spam-and-anti-malware-protection.md).
   
-![Données de rapport sur les types de fichiers ATP pendant une journée](../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
+![Données de rapport sur les types de fichiers ATP pendant une journée](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
   
 ## <a name="atp-message-disposition-report"></a>Rapport de destruction de message ATP
 
@@ -117,11 +117,11 @@ Le rapport de **disposition des messages ATP** indique les actions qui ont été
   
 Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à rapports **tableau de bord** \> des **rapports** \> **ATP**.
   
-![Rapport de disposition des messages ATP](../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
+![Rapport de disposition des messages ATP](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
 Lorsque vous placez le curseur de la souris sur une barre du graphique, vous pouvez voir les actions effectuées pour les messages électroniques détectés pour ce jour.
   
-![Données de rapport de disposition de messages ATP pendant une journée](../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+![Données de rapport de disposition de messages ATP pendant une journée](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
   
 ## <a name="additional-reports-to-view"></a>Rapports supplémentaires à afficher
 
@@ -162,7 +162,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir des [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées ATP](set-up-atp-safe-attachments-policies.md) définies afin que la protection ATP soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

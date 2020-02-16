@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’Explorateur et les détections en temps réel dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 21fc170fc820fa0187c03ac07ddc8b8c771f54ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598241"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082108"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -29,11 +29,11 @@ Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-
 
 |Avec le plan ATP 2, vous pouvez voir :  |Avec le plan ATP 1, vous pouvez voir :  |
 |---------|---------|
-|![Explorateur de menaces](../media/threatmgmt-explorer.png)      |![Détections en temps réel](../media/threatmgmt-realtimedetections.png)         |
+|![Explorateur de menaces](../../media/threatmgmt-explorer.png)      |![Détections en temps réel](../../media/threatmgmt-realtimedetections.png)         |
 
 Avec l’Explorateur (ou les détections en temps réel), vous disposez d’un puissant rapport qui permet à votre équipe des opérations de sécurité d’examiner et de répondre efficacement aux menaces. L’État ressemble à l’image suivante : 
 
-![Accéder à l’Explorateur \> de gestion des menaces](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Accéder à l’Explorateur \> de gestion des menaces](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Ce rapport vous permet d’utiliser les actions suivantes :
 - [Voir programmes malveillants détectés par les fonctionnalités de sécurité d’Office 365](#see-malware-detected-in-email-by-technology)
@@ -105,7 +105,7 @@ Vous pouvez accéder au même emplacement dans le rapport des détections en tem
 > [!TIP]
 > L’ID de message réseau mappe le clic retour à des messages spécifiques lorsque vous recherchez dans l’Explorateur ou des outils tiers associés via l’ID de message réseau. La recherche par le biais de l’ID de message réseau donnera aux administrateurs le message électronique spécifique associé à un résultat de clic. Lors de l’exportation, l’identification de la corrélation de l’ID de message réseau permet une analyse plus rapide et plus puissante.
 
-![tp_ExportClickResultAndNetworkID. png](../../images/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID. png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Voir programmes malveillants détectés dans le courrier électronique par technologie
 
@@ -113,11 +113,11 @@ Supposons que vous souhaitez voir les programmes malveillants détectés par les
 
 1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le menu **affichage** , choisissez **** > **programmes malveillants**de messagerie.<br/>![Menu Affichage de l’Explorateur](../media/ExplorerViewEmailMalwareMenu.png)<br/>
+2. Dans le menu **affichage** , choisissez **** > **programmes malveillants**de messagerie.<br/>![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailMalwareMenu.png)<br/>
 
-3. Cliquez sur **expéditeur**, puis choisissez**technologie de détection**de **base** > .<br/>Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.<br/>![Technologies de détection des programmes malveillants](../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+3. Cliquez sur **expéditeur**, puis choisissez**technologie de détection**de **base** > .<br/>Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.<br/>![Technologies de détection des programmes malveillants](../../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
 
-4. Sélectionnez une option, puis cliquez sur le bouton **Actualiser** pour appliquer ce filtre.<br/>![Technologie de détection sélectionnée](../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+4. Sélectionnez une option, puis cliquez sur le bouton **Actualiser** pour appliquer ce filtre.<br/>![Technologie de détection sélectionnée](../../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
 
 Le rapport est actualisé pour afficher les résultats de programmes malveillants détectés par courrier électronique, à l’aide de l’option de technologie que vous avez sélectionnée. À partir de là, vous pouvez effectuer une analyse plus poussée.
 
@@ -129,11 +129,11 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
 1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le menu **affichage** , choisissez **courrier** > **hameçon**.<br/>![Menu Affichage de l’Explorateur](../media/ExplorerViewEmailPhishMenu.png)<br/>
+2. Dans le menu **affichage** , choisissez **courrier** > **hameçon**.<br/>![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailPhishMenu.png)<br/>
 
 3. Cliquez sur **expéditeur**, puis sur **URL** > , puis**cliquez sur verdict**.
 
-4. Sélectionnez une ou plusieurs options, telles que **bloquées** et **bloquer le remplacement**, puis cliquez sur le bouton **Actualiser** qui se trouve sur la même ligne que les options pour appliquer le filtre. (Ne pas actualiser la fenêtre de votre navigateur.)<br/>![URL et cliquez sur verdicts](../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+4. Sélectionnez une ou plusieurs options, telles que **bloquées** et **bloquer le remplacement**, puis cliquez sur le bouton **Actualiser** qui se trouve sur la même ligne que les options pour appliquer le filtre. (Ne pas actualiser la fenêtre de votre navigateur.)<br/>![URL et cliquez sur verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
     Le rapport est actualisé pour afficher deux tables d’URL différentes sous l’onglet URL sous le rapport :
 
@@ -143,7 +143,7 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
    
    Les deux tableaux d’URL affichent les URL les plus fréquentes dans les messages électroniques de hameçonnage par action de remise et par emplacement, et ils affichent des clics d’URL bloqués (ou visités malgré un avertissement) afin que vous puissiez comprendre quels liens incorrects potentiels ont été reçus par les utilisateurs et interagis avec les utilisateurs. À partir de là, vous pouvez effectuer une analyse plus poussée. Par exemple, sous le graphique, vous pouvez voir les URL principales dans les messages électroniques qui ont été bloqués dans l’environnement de votre organisation.
    
-   ![URL de l’Explorateur bloquées](../media/ExplorerPhishClickVerdictURLs.png)
+   ![URL de l’Explorateur bloquées](../../media/ExplorerPhishClickVerdictURLs.png)
    
    Sélectionnez une URL pour afficher des informations plus détaillées. **Remarque**: dans la boîte de dialogue de menu volant d’URL, le filtrage des messages électroniques est supprimé pour vous montrer l’affichage complet de l’exposition de l’URL dans votre environnement. Cela vous permet de filtrer les messages électroniques dans l’Explorateur sur ceux qui vous intéressent, de rechercher des URL spécifiques qui constituent des menaces potentielles, puis de mieux comprendre l’exposition de l’URL dans votre environnement (via la boîte de dialogue détails de l’URL) sans avoir à ajouter de filtres d’URL à affichage de l’Explorateur lui-même.
 
@@ -153,11 +153,11 @@ Supposons que vous voulez afficher les messages électroniques que les utilisate
 
 1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le **menu Affichage** , choisissez**envois**de **courrier électronique** > .<br/>![Menu Affichage de l’Explorateur](../media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. Dans le **menu Affichage** , choisissez**envois**de **courrier électronique** > .<br/>![Menu Affichage de l’Explorateur](../../media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Cliquez sur **expéditeur**, puis sur**type de rapport**de **base** > .
 
-4. Sélectionnez une option, par exemple **hameçonnage**, puis cliquez sur le bouton **Actualiser** . <br/>![Hameçonnage signalé par l’utilisateur](../media/EmailUserReportedReportType.png)<br/> 
+4. Sélectionnez une option, par exemple **hameçonnage**, puis cliquez sur le bouton **Actualiser** . <br/>![Hameçonnage signalé par l’utilisateur](../../media/EmailUserReportedReportType.png)<br/> 
 
 Le rapport est actualisé pour afficher les données relatives aux messages électroniques que les personnes de votre organisation ont signalées comme tentatives de hameçonnage. Vous pouvez utiliser ces informations pour effectuer une analyse plus poussée et, si nécessaire, ajuster vos [stratégies anti-hameçonnage ATP](set-up-anti-phishing-policies.md).
 

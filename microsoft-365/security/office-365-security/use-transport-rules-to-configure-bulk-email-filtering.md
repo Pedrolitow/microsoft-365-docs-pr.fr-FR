@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie dans Exchange Online Protection pour le filtrage de courrier en nombre.
-ms.openlocfilehash: 5188ce077ce15ab7ad5d03e4aa2c172db6a80c37
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598041"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081816"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utiliser des règles de flux de messagerie pour configurer le filtrage du courrier en nombre dans Exchange Online Protection
 
@@ -35,11 +35,11 @@ Si vous souhaitez utiliser davantage d’options pour filtrer les messages en ma
 
 1. Dans le Centre d’administration Exchange, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur **Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
+2. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
 
 3. Indiquez le nom de la règle.
 
-4. Cliquez sur **plus** ![d’options.](../media/ITPro-EAC-MoreOptionsIcon.png)icône autres options. Sous **Appliquer cette règle si**, sélectionnez **L'objet ou le corps** \> **l'objet ou le corps correspond à ces modèles de texte**.
+4. Cliquez sur **plus** ![d’options.](../../media/ITPro-EAC-MoreOptionsIcon.png)icône autres options. Sous **Appliquer cette règle si**, sélectionnez **L'objet ou le corps** \> **l'objet ou le corps correspond à ces modèles de texte**.
 
 5. Dans la boîte de dialogue **spécifier des mots ou des expressions** , ajoutez une par une les expressions régulières suivantes généralement présentes dans les messages électroniques en masse, puis cliquez sur **OK** lorsque vous avez fini :
 
@@ -87,7 +87,7 @@ Si vous souhaitez utiliser davantage d’options pour filtrer les messages en ma
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur **Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
+2. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
 
 3. Indiquez le nom de la règle.
 

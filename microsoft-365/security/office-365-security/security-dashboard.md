@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 04c146a90cacccee831edd8a825bff0139963e16
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 85c616c717a85f9a6a47e63a48621a8703b487aa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598461"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088181"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -44,7 +44,7 @@ Pour afficher le tableau de bord de sécurité, dans le [Centre de &amp; sécuri
 
 Le widget gestion des menaces explique en un clin d’œil comment votre organisation a été protégée contre les menaces au cours des sept (7) derniers jours.
 
-![Tableau de bord de sécurité-widget gestion des menaces-Résumé](../media/SecDash-ThreatMgmtSummary.png)
+![Tableau de bord de sécurité-widget gestion des menaces-Résumé](../../media/SecDash-ThreatMgmtSummary.png)
 
 Les informations que vous verrez dans le résumé de gestion des menaces dépendent de ce que comprend l’abonnement. Le tableau suivant décrit les informations incluses pour Office 365 E3 et Office 365 E5.
 
@@ -59,7 +59,7 @@ Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous dev
 
 Le widget état de protection contre les menaces indique l’efficacité de la protection contre les menaces avec une vue d’ensemble des tendances et programmes malveillants. 
 
-![Widget d’état de protection contre les menaces](../media/tpswidget.png)
+![Widget d’état de protection contre les menaces](../../media/tpswidget.png)
 
 Les détails varient selon que votre abonnement Office 365 inclut ou non [Exchange Online Protection](exchange-online-protection-eop.md) (EoP) avec ou sans [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
@@ -75,7 +75,7 @@ Pour afficher ou accéder au widget d’État protection contre les menaces, vou
  
 Le widget détections de menaces globales hebdomadaires indique le nombre de menaces détectées dans les messages électroniques au cours des sept (7) derniers jours.
 
-![Widget de détections de menaces hebdomadaires globales](../media/globalweeklythreatdetections.png)
+![Widget de détections de menaces hebdomadaires globales](../../media/globalweeklythreatdetections.png)
 
 Les mesures sont calculées de la manière décrite dans le tableau suivant :
 
@@ -90,13 +90,13 @@ Les mesures sont calculées de la manière décrite dans le tableau suivant :
 
 Les widgets de programmes malveillants affichent des informations sur les tendances des programmes malveillants et les types de familles de programmes malveillants au cours des sept derniers jours.
 
-![Tendances des programmes malveillants et types de famille](../media/malwarewidgetatpe5.png)
+![Tendances des programmes malveillants et types de famille](../../media/malwarewidgetatpe5.png)
  
 ## <a name="insights"></a>Informations
 
 Insights non seulement les problèmes de clés de surface que vous devez examiner, ils incluent également des recommandations et des actions à prendre en considération. 
 
-![Informations intelligentes](../media/smartinsights.png)
+![Informations intelligentes](../../media/smartinsights.png)
 
 Par exemple, vous pouvez constater que les messages électroniques de hameçonnage sont remis car certains utilisateurs ont désactivé leurs options de courrier indésirable. Pour en savoir plus sur le fonctionnement des informations, voir [rapports et Insights dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md).
   
@@ -104,14 +104,14 @@ Par exemple, vous pouvez constater que les messages électroniques de hameçonna
 
 Si l’abonnement de votre organisation comprend [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), votre tableau de bord de sécurité comporte une section qui inclut des outils d’enquête et de réponse de menace avancés. L’équipe de sécurité de votre organisation peut utiliser les informations de cette section pour comprendre les nouvelles campagnes, examiner les menaces et gérer les incidents. 
   
-![Threat Intelligence vous permet de comprendre les attaques ciblées au sein de votre organisation](../media/threatintelwidget.png)
+![Threat Intelligence vous permet de comprendre les attaques ciblées au sein de votre organisation](../../media/threatintelwidget.png)
   
   
 ## <a name="trends"></a>Tendances
 
 Dans la partie inférieure du tableau de bord de sécurité se trouve une section **tendances** , qui récapitule les tendances de flux de messagerie pour votre organisation. Les rapports fournissent des informations sur les e-mails catégorisés comme courrier indésirable, programmes malveillants, tentatives de hameçonnage et courrier électronique. Cliquez sur une vignette pour afficher des informations plus détaillées dans le rapport. 
   
-![La section tendances récapitule les tendances de flux de messagerie de l’organisation.](../media/trends.png)
+![La section tendances récapitule les tendances de flux de messagerie de l’organisation.](../../media/trends.png)
   
 De plus, si l’abonnement Office 365 de votre organisation inclut [office 365 Advanced Threat Protection Plan 2](office-365-ti.md), vous obtiendrez également un rapport **alertes de gestion des menaces récentes** dans cette section qui permet à votre équipe de sécurité d’afficher et de prendre des mesures concernant les alertes de sécurité à priorité élevée. 
 

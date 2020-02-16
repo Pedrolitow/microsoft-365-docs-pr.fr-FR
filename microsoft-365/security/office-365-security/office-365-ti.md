@@ -17,12 +17,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d’aide à la décision dans Office 365 protection avancée contre les menaces peuvent vous aider à rechercher des menaces contre votre organisation, à répondre aux programmes malveillants, au hameçonnage et à d’autres attaques détectées par Office 365 pour votre part, et à rechercher des menaces. confirme.
-ms.openlocfilehash: 2f95054d35edee7db419bc665b520b2b48dda447
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4bd23dcafeed2faf04979b2c757d5517073a210d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598751"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082482"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Examen et réponse contre les menaces Office 365
 
@@ -47,7 +47,7 @@ Les fonctionnalités d’enquête et de réponse aux menaces &amp; dans le centr
 
 Utilisez le tableau de bord des menaces (également appelé tableau de [bord de sécurité](security-dashboard.md)) pour voir rapidement les menaces qui ont été résolues et pour signaler aux décideurs d’entreprise comment les services Office 365 sécurisent votre entreprise.
   
-![Tableau de bord des menaces](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
+![Tableau de bord des menaces](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 Pour afficher et utiliser ce tableau de bord, dans le centre &amp; de sécurité conformité d’Office 365, accédez au **tableau de bord** **gestion** \> des menaces.
   
@@ -55,7 +55,7 @@ Pour afficher et utiliser ce tableau de bord, dans le centre &amp; de sécurité
 
 Utilisez l' [Explorateur de menaces (et les détections en temps réel)](threat-explorer.md) pour analyser les menaces, voir le volume des attaques au fil du temps et analyser les données par familles de menaces, infrastructure des agresseurs et bien plus encore. L’Explorateur de menaces (également appelé Explorateur) est l’emplacement de départ du flux de travail d’enquête d’un analyste de la sécurité.
   
-![Explorateur de menaces](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+![Explorateur de menaces](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
 Pour afficher et utiliser ce rapport, dans le centre de sécurité &amp; conformité d’Office 365, accédez à l' **Explorateur**de **gestion** \> des menaces.
   
@@ -63,11 +63,11 @@ Pour afficher et utiliser ce rapport, dans le centre de sécurité &amp; conform
 
 Utilisez la liste des incidents (qui est également appelée « enquêtes ») pour afficher la liste des incidents de sécurité du vol. Les incidents sont utilisés pour suivre les menaces telles que les messages électroniques suspects, ainsi que pour effectuer des recherches et des corrections supplémentaires.
   
-![Liste des incidents de menace actuels dans Office 365](../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![Liste des incidents de menace actuels dans Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
 Pour afficher la liste des incidents en cours pour votre organisation, dans le &amp; Centre de sécurité conformité, accédez à **incidents**de **vérification** \> de la **gestion** \> des menaces.
   
-![Dans le centre &amp; de sécurité conformité, sélectionnez vérification \> de la gestion des menaces](../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+![Dans le centre &amp; de sécurité conformité, sélectionnez vérification \> de la gestion des menaces](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### <a name="attack-simulator"></a>Simulateur d’attaques
 
@@ -81,7 +81,7 @@ Utilisez les fonctionnalités d’analyse et de réponse automatisées pour gagn
 
 Dans le cadre de l’offre Office 365 Advanced Threat Protection Plan 2, les analystes de la sécurité peuvent consulter les détails d’une menace connue. Cela est utile pour déterminer s’il existe des mesures/étapes préventives supplémentaires qui peuvent être prises pour protéger les utilisateurs.
   
-![Tendances de sécurité illustrant des informations sur les menaces récentes](../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
+![Tendances de sécurité illustrant des informations sur les menaces récentes](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
 ## <a name="how-do-we-get-these-capabilities"></a>Comment obtenir ces fonctionnalités ?
 

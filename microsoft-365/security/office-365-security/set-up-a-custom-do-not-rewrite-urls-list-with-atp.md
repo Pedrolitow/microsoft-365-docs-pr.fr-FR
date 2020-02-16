@@ -17,12 +17,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Lorsque vous configurez vos stratégies de liens approuvés ATP, vous pouvez inclure une liste d’URL do-not-Rewrite’pour permettre à certaines personnes de votre organisation de visiter des sites que vous incluez dans votre liste.
-ms.openlocfilehash: 3a2fd98adc1eee36a984ac09b80546ae6b98e31d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1983e0ff2ea85092af483d4f7a563681a6441152
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598371"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082207"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL do-not-Rewrite personnalisée à l’aide de liens fiables Office 365 ATP
 
@@ -54,7 +54,7 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer d’un rôl
 
 2. Dans le volet de navigation de gauche, sous **liens fiables**de **stratégie** \> de **gestion** \> des menaces.
 
-3. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , sélectionnez **nouveau** (le nouveau bouton ressemble à **+** un signe plus ()) pour créer une stratégie. (Vous pouvez également modifier une stratégie existante.)<br/>![Sélectionnez nouveau pour ajouter une stratégie de liens fiables à des destinataires de messagerie spécifiques.](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , sélectionnez **nouveau** (le nouveau bouton ressemble à **+** un signe plus ()) pour créer une stratégie. (Vous pouvez également modifier une stratégie existante.)<br/>![Sélectionnez nouveau pour ajouter une stratégie de liens fiables à des destinataires de messagerie spécifiques.](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. Spécifiez un nom et une description pour votre stratégie.
 

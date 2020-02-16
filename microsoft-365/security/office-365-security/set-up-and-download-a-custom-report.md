@@ -16,12 +16,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer et télécharger un rapport avec une plage de dates et des filtres personnalisés dans le centre &amp; de sécurité et de conformité.
-ms.openlocfilehash: 0de4b9bf2ac8d16c0e0ecc38fa69a3c9bf5e2774
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 170360a796d94501b6c13a6ffd4b062401296462
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598381"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087991"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurer et télécharger un rapport personnalisé dans le centre de &amp; sécurité conformité
 
@@ -34,11 +34,11 @@ Dans le [Centre &amp; de sécurité conformité](https://protection.office.com),
   
 1. Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> de **tableau de bord**.
     
-2. Choisissez un rapport. (Pour cet exemple, nous allons utiliser le rapport de disposition du message.)<br/>![Choisir un rapport de demande pour télécharger un rapport](../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. Choisissez un rapport. (Pour cet exemple, nous allons utiliser le rapport de disposition du message.)<br/>![Choisir un rapport de demande pour télécharger un rapport](../../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
 3. Dans le coin supérieur gauche du rapport, sélectionnez **demander un rapport**.
     
-4. Dans la boîte de dialogue **rapport de demande** , spécifiez un nom, une date de début et une date de fin pour le rapport. Ensuite, cliquez sur **suivant**.<br/>![Dans le centre &amp; de sécurité conformité, sélectionnez \> rapports de rapports à télécharger.](../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. Dans la boîte de dialogue **rapport de demande** , spécifiez un nom, une date de début et une date de fin pour le rapport. Ensuite, cliquez sur **suivant**.<br/>![Dans le centre &amp; de sécurité conformité, sélectionnez \> rapports de rapports à télécharger.](../../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
 5. Spécifiez les filtres que vous souhaitez utiliser pour le rapport. (Par exemple, vous pouvez spécifier une adresse IP de client pour le rapport de disposition de message.) Ensuite, cliquez sur **suivant**.
     

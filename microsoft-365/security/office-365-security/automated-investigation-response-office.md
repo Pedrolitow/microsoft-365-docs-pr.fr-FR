@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 975c6d8a00e3e1cd8c30b2d417c74cde39b8cd5a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ca4cf6033b843b92a2edceaae27f43d6eed8e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599801"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086805"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
@@ -66,7 +66,7 @@ Pour afficher les alertes, dans le centre de sécurité & conformité, sélectio
 
 Si votre organisation gère vos alertes de sécurité par le biais d’un système de gestion des alertes, d’un système de gestion des services ou d’un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes Office 365 à ce système via une notification par courrier électronique ou via l' [API d’activité de gestion d’office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d’alerte d’enquête via le courrier électronique ou l’API incluent des liens permettant d’accéder aux alertes dans le centre de sécurité & conformité, ce qui permet à l’administrateur de sécurité affecté de naviguer rapidement dans l’enquête.
 
-![Alertes liées à des enquêtes](../media/air-alerts-page-details.png) 
+![Alertes liées à des enquêtes](../../media/air-alerts-page-details.png) 
 
 ## <a name="security-playbooks"></a>Règles de sécurité
 
@@ -103,7 +103,7 @@ Chaque étape de haut niveau inclut un certain nombre de sous-étapes qui sont e
 
 La page enquêtes automatiques indique les évaluations de votre organisation et leurs États actuels.
 
-![Page d’enquête principale pour l’AIR](../media/air-maininvestigationpage.png) 
+![Page d’enquête principale pour l’AIR](../../media/air-maininvestigationpage.png) 
   
 Vous pouvez :
 - Accédez directement à une enquête (sélectionnez un **ID d’enquête**).
@@ -132,7 +132,7 @@ L’état d’enquête indique la progression de l’analyse et des actions. Lor
 
 Lorsque vous ouvrez une enquête spécifique, vous voyez la page Graph de l’enquête. Cette page affiche toutes les entités différentes : les messages électroniques, les utilisateurs (ainsi que leurs activités) et les appareils qui ont été automatiquement analysés dans le cadre de l’alerte déclenchée.
 
-![Page graphique d’enquête sur l’AIR](../media/air-investigationgraphpage.png)
+![Page graphique d’enquête sur l’AIR](../../media/air-investigationgraphpage.png)
 
 Vous pouvez :
 - Obtenir une vue d’ensemble visuelle de l’enquête actuelle.
@@ -144,7 +144,7 @@ Vous pouvez :
 
 Dans l’onglet **alertes** pour une enquête, vous pouvez voir des alertes relatives à l’enquête. Les détails incluent l’alerte qui a déclenché l’enquête et d’autres alertes corrélées, telles que la connexion à risque, les violations de stratégie DLP, etc., qui sont corrélées à l’enquête. À partir de cette page, un analyste de sécurité peut également afficher des détails supplémentaires sur des alertes individuelles.
 
-![Page alertes AÉRIENNEs](../media/air-investigationalertspage.png)
+![Page alertes AÉRIENNEs](../../media/air-investigationalertspage.png)
 
 Vous pouvez :
 - Obtenir une vue d’ensemble visuelle de l’alerte de déclenchement actuelle et de toutes les alertes associées.
@@ -177,14 +177,14 @@ Le nombre de messages est calculé lors de l’enquête et certains comptes sont
 
 À titre d’exemple, considérons le scénario suivant. Le premier cluster de trois messages électroniques était considéré comme un hameçonnage. Un autre cluster de messages similaires avec la même adresse IP et l’objet a été trouvé et considéré comme malveillant, car certains d’entre eux étaient identifiés comme des hameçons lors de la détection initiale. 
 
-![Page d’enquête sur le courrier électronique aérien](../media/air-investigationemailpage.png)
+![Page d’enquête sur le courrier électronique aérien](../../media/air-investigationemailpage.png)
 
 Vous pouvez :
 - Obtenir une vue d’ensemble visuelle des résultats de clustering actuels et des menaces détectées.
 - Cliquez sur une entité de cluster ou une liste de menaces pour ouvrir une page de survol qui affiche les détails de l’alerte complète.
 - Pour approfondir le cluster de messagerie, cliquez sur le lien « ouvrir dans l’Explorateur » en haut de l’onglet « Détails du cluster de messagerie ».
 
-![Courrier électronique d’enquête aérienne avec détails du menu volant](../media/air-investigationemailpageflyoutdetails.png)
+![Courrier électronique d’enquête aérienne avec détails du menu volant](../../media/air-investigationemailpageflyoutdetails.png)
 
 > [!NOTE]
 > Dans le contexte de la messagerie électronique, vous pouvez voir une surface d’anomalie de volume dans le cadre de l’enquête. Une anomalie de volume indique un pic dans les messages électroniques similaires de la durée de l’événement d’enquête par rapport aux délais précédents. Ce pic dans le trafic de messagerie avec des caractéristiques similaires (par exemple, domaine d’objet et de l’expéditeur, similitude entre le corps et IP de l’expéditeur) est typique du début des campagnes ou des attaques par courrier électronique. Toutefois, les campagnes de courrier électronique, de courrier indésirable et légitimes partagent généralement ces caractéristiques. Les anomalies de volume représentent une menace potentielle et peuvent donc être moins sévères par rapport aux menaces de programmes malveillants ou hameçons identifiées à l’aide de moteurs antivirus, de détonation ou de réputation malveillante.
@@ -195,7 +195,7 @@ Sous l’onglet **utilisateurs** , vous pouvez voir tous les utilisateurs identi
 
 Par exemple, dans l’image suivante, AIR a identifié des indicateurs de compromission et des anomalies en fonction d’une nouvelle règle de boîte de réception créée. Des détails supplémentaires (preuve) de l’enquête sont disponibles via des vues détaillées dans cet onglet. les indicateurs de compromis et d’anomalies peuvent également inclure des détections d’anomalies dans la [sécurité des applications Cloud de Microsoft](https://docs.microsoft.com/cloud-app-security).
 
-![Page des utilisateurs de l’enquête aérienne](../media/air-investigationuserspage.png)
+![Page des utilisateurs de l’enquête aérienne](../../media/air-investigationuserspage.png)
 
 Vous pouvez :
 - Obtenir une vue d’ensemble visuelle des résultats et des risques utilisateur identifiés.
@@ -205,7 +205,7 @@ Vous pouvez :
 
 Sous l’onglet **ordinateurs** , vous pouvez voir tous les ordinateurs identifiés dans le cadre de l’enquête. 
 
-![Page de l’ordinateur d’enquête aérien](../media/air-investigationmachinepage.png)
+![Page de l’ordinateur d’enquête aérien](../../media/air-investigationmachinepage.png)
 
 Dans certains cas, AIR établit une corrélation entre les menaces de messagerie et les appareils (par exemple, les programmes malveillants zapped). Par exemple, une enquête transmet un hachage de fichier malveillant à [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) pour enquêter. Cela permet l’analyse automatisée des ordinateurs pertinents pour vos utilisateurs, afin de garantir que les menaces sont résolues à la fois dans le nuage et sur vos points de terminaison. 
@@ -220,19 +220,19 @@ Sous l’onglet **entités** , vous pouvez voir les entités identifiées et ana
 
 Ici, vous pouvez voir les entités analysées et les détails des types d’entités, tels que les messages électroniques, les clusters, les adresses IP, les utilisateurs, et bien plus encore. Vous pouvez également voir le nombre d’entités analysées et les menaces associées à chacune d’elles. 
 
-![Page des entités d’enquête sur l’AIR](../media/air-investigationentitiespage.png)
+![Page des entités d’enquête sur l’AIR](../../media/air-investigationentitiespage.png)
 
 Vous pouvez :
 - Obtenir une vue d’ensemble visuelle des entités d’enquête et des menaces détectées.
 - Sélectionnez une entité pour ouvrir une page de survol qui affiche les détails de l’entité associée.
 
-![Détails des entités d’enquête aérienne](../media/air-investigationsentitiespagedetails.png)
+![Détails des entités d’enquête aérienne](../../media/air-investigationsentitiespagedetails.png)
 
 ### <a name="playbook-log"></a>Journal des manifestes
 
 Sous l’onglet **Journal** , vous pouvez voir toutes les étapes du manuel qui ont eu lieu lors de l’enquête. Le journal capture un inventaire complet de tous les analyseurs et actions exécutés par les fonctionnalités d’enquête automatique d’Office 365 dans le cadre de l’AIR. Elle offre une vue claire de toutes les étapes effectuées, y compris l’action elle-même, une description et la durée du début à la fin. 
 
-![Page Journal d’enquête aérienne](../media/air-investigationlogpage.png)
+![Page Journal d’enquête aérienne](../../media/air-investigationlogpage.png)
 
 Vous pouvez :
 - Obtenir une vue d’ensemble visuelle des étapes du manuel.
@@ -266,7 +266,7 @@ Sous l’onglet **actions** , vous pouvez voir toutes les actions de recherche q
 
 Actions Capturez les étapes que Microsoft vous recommande de suivre à la fin de l’enquête. Vous pouvez prendre des mesures de correction ici en sélectionnant une ou plusieurs actions. Si vous cliquez sur **approuver** , le début de la correction est possible. (Les autorisations appropriées sont nécessaires : le rôle « recherche et purge » est requis pour exécuter des actions à partir de l’Explorateur et de l’AIR). Par exemple, un lecteur de sécurité peut afficher les actions mais pas les approuver. Remarque : vous n’avez pas besoin d’approuver toutes les actions. Si vous n’acceptez pas l’action recommandée ou si votre organisation ne choisit pas certains types d’actions, vous pouvez choisir de **refuser** les actions ou simplement les ignorer et n’effectuer aucune action. L’approbation et/ou le rejet de toutes les actions permet de faire en sorte que l’enquête se ferme complètement (l’État est résolu), tout en laissant certaines actions incomplètes dans l’état de l’enquête en passant à un état partiellement résolu.
 
-![Page action de l’enquête par avion](../media/air-investigationactionspage.png)
+![Page action de l’enquête par avion](../../media/air-investigationactionspage.png)
 
 Vous pouvez :
 - Obtenir une vue d’ensemble visuelle des actions recommandées.
@@ -319,11 +319,11 @@ En plus des recherches automatiques déclenchées par une alerte, l’équipe de
 
 Par exemple, supposons que vous affichiez des données dans l’Explorateur à propos des messages signalés par l’utilisateur. Vous pouvez sélectionner un élément dans la liste des résultats, puis cliquer sur **Rechercher** dans le menu Action (en supposant que vous disposez des autorisations de correction appropriées).
 
-![Messages signalés par l’utilisateur dans l’Explorateur avec le bouton Rechercher](../media/Explorer-UserReported-Investigate.png)
+![Messages signalés par l’utilisateur dans l’Explorateur avec le bouton Rechercher](../../media/Explorer-UserReported-Investigate.png)
 
 Autre exemple : Supposons que vous affichiez des données sur les messages électroniques détectés comme contenant des programmes malveillants, et que plusieurs messages électroniques soient détectés comme contenant des programmes malveillants. Vous pouvez sélectionner l’onglet **courrier électronique** , sélectionner un ou plusieurs messages, puis, dans le menu **actions** , sélectionner **examiner**. 
 
-![Démarrage d’une enquête pour les programmes malveillants dans l’Explorateur](../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![Démarrage d’une enquête pour les programmes malveillants dans l’Explorateur](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 À l’instar des règles déclenchées par une alerte, les recherches automatiques déclenchées à partir d’une vue dans l’Explorateur incluent une enquête de racine, des étapes permettant d’identifier et de corréler les menaces, ainsi que les actions recommandées pour atténuer ces menaces.
 

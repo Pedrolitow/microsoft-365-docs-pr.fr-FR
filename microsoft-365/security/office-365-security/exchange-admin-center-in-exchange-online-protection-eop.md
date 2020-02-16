@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Le Centre d'administration Exchange (CAE) est la console de gestion basée sur le web pour Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 3a00b6b259c94e1446b6d6dc49b0f5daa9178cbd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599401"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083265"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centre d’administration Exchange dans Exchange Online Protection
 
@@ -41,7 +41,7 @@ Vous pouvez également accéder à la page de connexion du CAE directement via l
 
 Cette section décrit les éléments d'interface utilisateur disponibles dans le CAE.
 
-![EOP-AdminCenter](../media/EOP-AdminCenter.png)
+![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Volet des fonctionnalités
 
@@ -67,14 +67,14 @@ Lorsque vous cliquez sur la plupart des onglets, vous devez voir une barre d'out
 
 |**Icône**|**Nom**|**Action**|
 |:-----|:-----|:-----|
-|![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif)|Ajouter, Nouveau|Permet de créer un objet. Certaines de ces icônes comportent une flèche vers le bas associée, sur laquelle vous pouvez cliquer pour afficher des objets supplémentaires que vous pouvez créer.|
-|![Icône Modifier](../media/ITPro-EAC-EditIcon.gif)|Modifier|Permet de modifier un objet.|
-|![Icône Supprimer](../media/ITPro-EAC-DeleteIcon.gif)|Supprimer|Permet de supprimer un objet. Certaines des icônes de suppression comportent une flèche vers le bas, sur laquelle vous pouvez cliquer pour afficher des options supplémentaires.|
-|![Icône Recherche](../media/ITPro-EAC-.gif)|Rechercher|Permet d'ouvrir une zone de recherche dans laquelle vous pouvez entrer une expression pour rechercher un objet.|
-|![Icône Actualiser](../media/ITPro-EAC-RefreshIcon.gif)|Actualiser|Permet d'actualiser l'affichage Liste.|
-|![Icône Options supplémentaires](../media/ITPro-EAC-MoreOptionsIcon.gif)|Plus d'options|Utilisez cette icône pour afficher d'autres actions que vous pouvez effectuer pour les objets figurant sous cet onglet. Par exemple, dans **Destinataires \> Utilisateurs**, le fait de cliquer sur cette icône affiche l'option de **Recherche avancée**.  |
-|![Icône flèche vers le haut](../media/ITPro-EAC-UpArrowIcon.gif)![Icône de flèche vers le bas](../media/ITPro-EAC-DownArrowIcon.gif)|Flèche Haut et flèche Bas|Utilisez ces icônes pour relever ou abaisser la priorité d'un objet.|
-|![Icône Suppression](../media/ITPro-EAC-RemoveIcon.gif)|Supprimer|Permet de supprimer des objets d'une liste.|
+|![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif)|Ajouter, Nouveau|Permet de créer un objet. Certaines de ces icônes comportent une flèche vers le bas associée, sur laquelle vous pouvez cliquer pour afficher des objets supplémentaires que vous pouvez créer.|
+|![Icône Modifier](../../media/ITPro-EAC-EditIcon.gif)|Modifier|Permet de modifier un objet.|
+|![Icône Supprimer](../../media/ITPro-EAC-DeleteIcon.gif)|Supprimer|Permet de supprimer un objet. Certaines des icônes de suppression comportent une flèche vers le bas, sur laquelle vous pouvez cliquer pour afficher des options supplémentaires.|
+|![Icône Recherche](../../media/ITPro-EAC-.gif)|Rechercher|Permet d'ouvrir une zone de recherche dans laquelle vous pouvez entrer une expression pour rechercher un objet.|
+|![Icône Actualiser](../../media/ITPro-EAC-RefreshIcon.gif)|Actualiser|Permet d'actualiser l'affichage Liste.|
+|![Icône Options supplémentaires](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Plus d'options|Utilisez cette icône pour afficher d'autres actions que vous pouvez effectuer pour les objets figurant sous cet onglet. Par exemple, dans **Destinataires \> Utilisateurs**, le fait de cliquer sur cette icône affiche l'option de **Recherche avancée**.  |
+|![Icône flèche vers le haut](../../media/ITPro-EAC-UpArrowIcon.gif)![Icône de flèche vers le bas](../../media/ITPro-EAC-DownArrowIcon.gif)|Flèche Haut et flèche Bas|Utilisez ces icônes pour relever ou abaisser la priorité d'un objet.|
+|![Icône Suppression](../../media/ITPro-EAC-RemoveIcon.gif)|Supprimer|Permet de supprimer des objets d'une liste.|
 
 ### <a name="list-view"></a>Affichage Liste
 
@@ -86,9 +86,9 @@ Quand vous sélectionnez un objet de l'affichage Liste, les informations relativ
 
 ### <a name="me-tile-and-help"></a>Vignette de l'utilisateur en cours et Aide
 
-La vignette **Moi** vous permet de fermer votre session du Centre d'administration Exchange (CAE) pour ouvrir ensuite une session en tant qu'utilisateur différent. Dans le menu déroulant **Aide**![Icône d'aide](../media/ITPro-EAC-HelpIcon.gif), vous pouvez effectuer les actions suivantes :
+La vignette **Moi** vous permet de fermer votre session du Centre d'administration Exchange (CAE) pour ouvrir ensuite une session en tant qu'utilisateur différent. Dans le menu déroulant **Aide**![Icône d'aide](../../media/ITPro-EAC-HelpIcon.gif), vous pouvez effectuer les actions suivantes :
 
-1. **Aide**: cliquez ![sur l'](../media/ITPro-EAC-HelpIcon.gif) icône aide pour afficher le contenu de l’aide en ligne.
+1. **Aide**: cliquez ![sur l'](../../media/ITPro-EAC-HelpIcon.gif) icône aide pour afficher le contenu de l’aide en ligne.
 
 2. **Désactiver la bulle d'** aide : la bulle d’aide affiche une aide contextuelle pour les champs lorsque vous créez ou modifiez un objet. Vous pouvez activer ou désactiver la bulle d'aide.
 

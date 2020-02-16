@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 687b587da033b3c6cc8e027221043dd6c52e15c3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962201"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084987"
 ---
 # <a name="getting-help-for-end-users"></a>Obtenir de l’aide pour les utilisateurs finaux
 
@@ -24,14 +24,14 @@ Les utilisateurs de votre organisation peuvent obtenir de l’aide sur leurs app
 
 La méthode préférée pour prendre en charge vos utilisateurs est **obtenir**de l’aide, une interface conviviale intégrée à l’appareil de l’utilisateur final.  
 
-![Icône obtenir une application d’aide](images/get-help.png)
+![Icône obtenir une application d’aide](../../media/get-help.png)
 
 Il s’agit d’une application installée sur tous les appareils de bureau gérés par Microsoft et qui est épinglée à la barre des tâches. 
 
 - Les utilisateurs finaux peuvent demander un appel vers un numéro de téléphone fourni ou converser en ligne avec un représentant du service.
 - Les demandes qui tombent en dehors de l’étendue prise en charge de bureau géré Microsoft sont redirigées vers le support informatique local via un appel téléphonique.
 
-### <a name="prerequisites"></a>Conditions requises
+### <a name="prerequisites"></a>Conditions préalables
 Pour permettre aux utilisateurs finaux d’obtenir de l’aide par le biais de l’application, assurez-vous que les conditions préalables suivantes sont remplies :
 
 - L’appareil doit être enregistré avec Microsoft Managed Desktop à l’aide de l’une des méthodes de la [configuration de Microsoft Managed Desktop Devices](../get-started/set-up-devices.md), par exemple, [enregistrer les nouveaux appareils](../get-started/register-devices-self.md).

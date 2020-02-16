@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: En tant qu’administrateur général Office 365, vous pouvez utiliser un simulateur d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle ne touche votre entreprise.
-ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 93a2601322fd33024c1310e1df69ad1dea2f07b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957409"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083671"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulateur d’attaques dans Office 365
 
@@ -57,7 +57,7 @@ Assurez-vous que vous et votre organisation remplissez les conditions requises s
 
 - Votre organisation dispose d' [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), avec un simulateur d’attaque &amp; visible dans le centre de sécurité conformité (allez sur **Threat Management** \> **Attack Simulator**)
 
-    ![Gestion des menaces-simulateur d’attaque](../media/ThreatMgmt-AttackSimulator.png)
+    ![Gestion des menaces-simulateur d’attaque](../../media/ThreatMgmt-AttackSimulator.png)
 
 ## <a name="credential-harvest-spear-phishing-attack"></a>Sonde de récupération des informations d’identification-attaque par hameçonnage
 
@@ -67,7 +67,7 @@ Cette attaque est axée sur la possibilité de manipuler le nom d’affichage et
 
 ### <a name="to-simulate-a-spear-phishing-attack"></a>Pour simuler une attaque par hameçonnage (Spear Phishing)
 
-![Composer le corps du message électronique](../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+![Composer le corps du message électronique](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
 Vous pouvez concevoir l’éditeur HTML enrichi directement dans le champ de **corps du message** lui-même ou utiliser la source HTML.
 
@@ -75,15 +75,15 @@ Vous pouvez concevoir l’éditeur HTML enrichi directement dans le champ de **c
 
 2. Spécifiez un nom de campagne significatif pour l’attaque ou sélectionnez un modèle.
 
-   ![Page de démarrage du hameçonnage](../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   ![Page de démarrage du hameçonnage](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
 3. Spécifiez les destinataires cibles. Il peut s’agir d’individus ou de groupes au sein de votre organisation. Chaque destinataire ciblé doit disposer d’une boîte aux lettres Exchange Online pour que l’attaque aboutisse.
 
-   ![Sélection de destinataires](../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+   ![Sélection de destinataires](../../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
 
 4. Configurez les détails du courrier électronique de hameçonnage.
 
-   ![Configurer les détails du courrier électronique](../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
+   ![Configurer les détails du courrier électronique](../../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
 
    La mise en forme HTML peut être aussi complexe ou basique que les besoins de votre campagne. Comme le format du message est HTML, vous pouvez insérer des images et du texte pour améliorer la convivialité. Vous avez le contrôle sur ce à quoi ressemblera le message reçu dans le client de messagerie de réception.
 

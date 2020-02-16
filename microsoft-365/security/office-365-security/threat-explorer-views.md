@@ -14,16 +14,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les différents types d’affichage disponibles dans l’Explorateur de menaces et les détections en temps réel.
-ms.openlocfilehash: 7f506b77673e416aaecdc707e0659006e6089142
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e2d6ce0c51c6a43596885d9ccb529dc1464a052
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084849"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
-![Threat Explorer](../media/ThreatExplorerFirstOpened.png)
+![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
 
 L' [Explorateur de menaces](threat-explorer.md) (et le rapport de détections en temps réel) est un outil puissant, en temps réel, qui permet aux équipes des opérations de sécurité d’examiner &amp; et de répondre aux menaces dans le centre de sécurité conformité. Explorer (et le rapport de détections en temps réel) affiche des informations sur les programmes malveillants et les messages hameçons suspects dans des e-mails et des fichiers dans Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation. 
 
@@ -34,7 +34,7 @@ Lorsque vous ouvrez l’Explorateur (ou le rapport de détection en temps réel)
 
 Utilisez le menu **affichage** pour modifier les informations affichées. Les info-bulles vous aident à déterminer l’affichage à utiliser.
   
-![Menu Affichage de l’Explorateur de menaces](../media/ThreatExplorerViewMenu.png)
+![Menu Affichage de l’Explorateur de menaces](../../media/ThreatExplorerViewMenu.png)
 
 Une fois que vous avez sélectionné un affichage, vous pouvez appliquer des filtres et configurer des requêtes pour effectuer une analyse plus poussée. Les sections suivantes fournissent un bref aperçu des différentes vues disponibles dans l’Explorateur (ou les détections en temps réel).  
 
@@ -42,53 +42,53 @@ Une fois que vous avez sélectionné un affichage, vous pouvez appliquer des fil
 
 Pour afficher ce rapport, dans l’Explorateur (ou les détections en temps réel), sélectionnez **Afficher** > les**programmes malveillants**de**messagerie** > . Cette vue affiche des informations sur les messages électroniques identifiés comme contenant des programmes malveillants.  
 
-![Afficher les données sur le courrier électronique identifié comme programme malveillant](../media/ExplorerEmailMalwareMenu.png) 
+![Afficher les données sur le courrier électronique identifié comme programme malveillant](../../media/ExplorerEmailMalwareMenu.png) 
 
 Cliquez sur **expéditeur** pour ouvrir votre liste d’options d’affichage. Utilisez cette liste pour afficher les données par expéditeur, destinataires, domaine de l’expéditeur, objet, technologie de détection, état de protection, etc. 
 
 Par exemple, pour voir les actions qui ont été effectuées sur les messages électroniques détectés, choisissez **État de protection** dans la liste. Sélectionnez une option, puis cliquez sur le bouton Actualiser pour appliquer ce filtre à votre rapport.
 
-![Options d’état de protection contre les menaces pour l’Explorateur de menaces](../media/ThreatExplorerProtectionStatusOptions.png)
+![Options d’état de protection contre les menaces pour l’Explorateur de menaces](../../media/ThreatExplorerProtectionStatusOptions.png)
 
 Sous le graphique, affichez plus de détails sur des messages spécifiques. Lorsque vous sélectionnez un élément dans la liste, un volet de survol s’ouvre, dans lequel vous pouvez en savoir plus sur l’élément que vous avez sélectionné. 
 
-![Explorateur de menaces avec le lanceur ouvert](../media/ThreatExplorerMalwareItemSelectedFlyout.png)
+![Explorateur de menaces avec le lanceur ouvert](../../media/ThreatExplorerMalwareItemSelectedFlyout.png)
 
 ## <a name="email--phish"></a>Courrier électronique > hameçonnage
 
 Pour afficher ce rapport, dans l’Explorateur (ou les détections en temps réel), sélectionnez **Afficher** > le**hameçonnage****par courrier électronique** > . Cet affichage montre les messages électroniques identifiés comme des tentatives de hameçonnage.  
 
-![Afficher les données sur l’e-mail identifiées comme tentatives de hameçonnage](../media/ThreatExplorerEmailPhish.png) 
+![Afficher les données sur l’e-mail identifiées comme tentatives de hameçonnage](../../media/ThreatExplorerEmailPhish.png) 
 
 Cliquez sur **expéditeur** pour ouvrir votre liste d’options d’affichage. Utilisez cette liste pour afficher les données par expéditeur, destinataires, domaine de l’expéditeur, adresse IP de l’expéditeur, domaine de l’URL, cliquez sur verdict, etc. 
 
 Par exemple, pour voir les actions qui ont été effectuées lorsque des utilisateurs cliquaient sur des URL identifiées comme tentatives de hameçonnage, choisissez **cliquer sur verdict** dans la liste, sélectionnez une ou plusieurs options, puis cliquez sur le bouton Actualiser.
 
-![Cliquez sur options de verdict pour le rapport de hameçonnage.](../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![Cliquez sur options de verdict pour le rapport de hameçonnage.](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
 Sous le graphique, affichez plus de détails sur des messages spécifiques, des clics d’URL, des URL et de l’origine du courrier électronique. 
 
-![URL détectées comme hameçonnage dans les messages électroniques](../media/ThreatExplorerEmailPhishURLs.png)
+![URL détectées comme hameçonnage dans les messages électroniques](../../media/ThreatExplorerEmailPhishURLs.png)
 
 Lorsque vous sélectionnez un élément dans la liste, tel qu’une URL qui a été détectée, un volet de survol s’ouvre, dans lequel vous pouvez en savoir plus sur l’élément que vous avez sélectionné. 
 
-![Détails sur une URL détectée](../media/ThreatExplorerEmailPhishURLDetails.png)
+![Détails sur une URL détectée](../../media/ThreatExplorerEmailPhishURLDetails.png)
 
 ## <a name="email--submissions"></a>Envois de > de messagerie
 
 Pour afficher ce rapport, dans l’Explorateur (ou les détections en temps réel), sélectionnez **Afficher** > les**envois**de**courrier** > . Cet affichage montre le courrier électronique que les utilisateurs ont signalés comme courrier indésirable, non légitime ou courrier électronique de hameçonnage. 
 
-![Messages électroniques signalés par les utilisateurs](../media/ThreatExplorerEmailUserReportedViewOptions.png) 
+![Messages électroniques signalés par les utilisateurs](../../media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
 Cliquez sur **expéditeur** pour ouvrir votre liste d’options d’affichage. Cette liste permet d’afficher des informations par expéditeur, destinataires, type de rapport (l’utilisateur a déterminé que le courrier électronique a été légitime, non légitime ou hameçon), et bien plus encore. 
 
 Par exemple, pour afficher les informations sur les messages électroniques qui ont été signalés en tant que tentatives de hameçonnage, cliquez sur**type de rapport**de l' **expéditeur** > , sélectionnez **hameçonnage**, puis cliquez sur le bouton Actualiser.
 
-![Hameçonnage sélectionné pour le filtre de type de rapport](../media/ThreatExplorerEmailUserReportedPhishSelected.png)
+![Hameçonnage sélectionné pour le filtre de type de rapport](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
 Sous le graphique, affichez plus de détails sur des messages électroniques spécifiques, tels que la ligne d’objet, l’adresse IP de l’expéditeur, l’utilisateur qui a signalé le message comme courrier indésirable, légitime, ou hameçon, et bien plus encore. 
 
-![Messages qui ont été signalés en tant que tentatives de hameçonnage](../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png)
+![Messages qui ont été signalés en tant que tentatives de hameçonnage](../../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png)
 
 Sélectionnez un élément dans la liste pour afficher des détails supplémentaires.
 
@@ -101,7 +101,7 @@ Pour afficher ce rapport, dans l’Explorateur, sélectionnez **Afficher** > le 
 
 Pour appliquer un filtre, choisissez **expéditeur**, sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé la **technologie de détection** en tant que filtre (plusieurs options sont disponibles). Afficher les informations de l’expéditeur, du domaine de l’expéditeur, des destinataires, de l’objet, du nom de fichier de la pièce jointe, de la famille de programmes malveillants, du statut de protection (actions effectuées par vos stratégies et fonctionnalités de protection contre les menaces dans Office 365), de la technologie de détection (comment le programme malveillant a été détecté) et plus d'. 
 
-![Afficher les données sur les messages détectés par la technologie de détection](../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
+![Afficher les données sur les messages détectés par la technologie de détection](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 
 Sous le graphique, affichez plus de détails sur des messages électroniques spécifiques, tels que la ligne d’objet, le destinataire, l’expéditeur, l’État, etc. 
 
@@ -111,7 +111,7 @@ Pour afficher ce rapport, dans l’Explorateur (ou les détections en temps rée
 
 Afficher des informations par famille de programmes malveillants, technologie de détection (comment le programme malveillant a été détecté) et charge de travail (OneDrive, SharePoint ou Teams). 
 
-![Afficher les données sur les programmes malveillants détectés](../media/d11dc568-b091-4159-b261-df13d76b520b.png)  
+![Afficher les données sur les programmes malveillants détectés](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)  
 
 Sous le graphique, affichez plus de détails sur des fichiers spécifiques, tels que le nom de fichier de la pièce jointe, la charge de travail, la taille du fichier, la dernière personne qui a modifié le fichier, etc. 
   
@@ -119,19 +119,19 @@ Sous le graphique, affichez plus de détails sur des fichiers spécifiques, tels
 
 Avec l’Explorateur (et les détections en temps réel), vous pouvez appliquer un filtre dans un clic. Cliquez sur un élément dans la légende, et cet élément devient un filtre pour le rapport. Par exemple, supposons que nous examinons l’affichage programmes malveillants dans l’Explorateur :
   
-![Accéder à l’Explorateur \> de gestion des menaces](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Accéder à l’Explorateur \> de gestion des menaces](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Si vous cliquez sur **détonation** de la protection avancée contre les menaces dans ce graphique, les résultats sont les suivants : 
   
-![Explorateur filtré pour afficher uniquement les résultats de la détonation ATP](../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorateur filtré pour afficher uniquement les résultats de la détonation ATP](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
   
 Dans cet affichage, nous examinons à présent les données des fichiers qui ont été détonants par [les pièces jointes approuvées par Office 365 ATP](atp-safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques qui avaient des pièces jointes détectées par des pièces jointes sûres ATP.
   
-![Détails spécifiques sur les messages électroniques avec des pièces jointes détectées](../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
+![Détails spécifiques sur les messages électroniques avec des pièces jointes détectées](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
   
 La sélection d’un ou de plusieurs éléments active le menu **actions** , qui offre plusieurs choix parmi lesquels choisir pour les éléments sélectionnés. 
   
-![La sélection d’un élément active le menu actions](../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
+![La sélection d’un élément active le menu actions](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
   
 La possibilité de filtrer un clic et d’accéder à des détails spécifiques peut vous faire gagner du temps lors de l’enquête sur les menaces.
 

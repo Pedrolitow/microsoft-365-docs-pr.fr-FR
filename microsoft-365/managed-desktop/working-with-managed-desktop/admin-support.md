@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: faa0e904ef2a07ccd209ef91630ce6fc8205e347
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801194"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085707"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Prise en charge des administrateurs pour le bureau géré Microsoft
 
@@ -57,7 +57,7 @@ Nous apprécions vos commentaires et nous l’utilisons pour améliorer l’exp�
 
 Une fois qu’un ticket est dans l’état **atténué** ou **résolu** , vous pouvez partager vos commentaires sur votre expérience avec ce problème particulier. Pour ce faire, accédez à la page **demandes de support** dans le portail d’administration. Sélectionnez le ticket spécifique. À la volée qui s’affiche sur le côté droit, sélectionnez l’onglet **Commentaires** et fournissez les informations demandées. Veillez à ne pas inclure d’informations personnelles dans le formulaire de commentaires. Pour plus d’informations sur la confidentialité, consultez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-![Formulaire de commentaires](images/feedback_form.png)
+![Formulaire de commentaires](../../media/feedback_form.png)
 
 ## <a name="provide-administrator-rights-to-specific-users"></a>Fournir des droits d’administrateur à des utilisateurs spécifiques
 

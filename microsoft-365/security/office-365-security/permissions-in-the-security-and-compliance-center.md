@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 07/01/2019
+ms.date: 02/14/2020
 audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent en savoir plus sur les autorisations qui sont disponibles dans le centre de sécurité & conformité d’Office 365.
-ms.openlocfilehash: 209e871ee9df4bd40568bc647b4bae838ddace73
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2676115e9675bbfe184b4e0fbe43bdc03689c4d9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598711"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088291"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Autorisations dans le Centre de conformité et sécurité Office 365
 
@@ -30,7 +30,7 @@ Le centre de sécurité & conformité Office 365 vous permet d’accorder des au
 
 Les autorisations dans le centre de sécurité & conformité sont basées sur le modèle d’autorisations contrôle d’accès basé sur un rôle (RBAC). Il s’agit du même modèle d’autorisations que celui utilisé par Exchange, par conséquent, si vous êtes familiarisé avec Exchange, l’octroi d’autorisations dans le centre de sécurité & conformité sera très similaire. Toutefois, il est important de ne pas oublier que les groupes de rôles Exchange et les groupes de rôles sécurité & conformité ne partagent pas d’appartenance ou d’autorisations. Si tous deux disposent d’un groupe de rôles Gestion de l’organisation, ils ne sont pas identiques. Les autorisations qu’ils accordent et les membres des groupes de rôles sont différents. Vous trouverez ci-dessous une liste des groupes de rôles sécurité & conformité.
 
-![Page Autorisations dans le Centre de conformité et sécurité Office 365](../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
+![Page Autorisations dans le Centre de conformité et sécurité Office 365](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relation entre les membres, les rôles et les groupes de rôles
 
@@ -40,7 +40,7 @@ Un **groupe** de rôles est un ensemble de rôles qui permet aux utilisateurs d�
 
 Le centre de sécurité & conformité inclut les groupes de rôles par défaut pour les tâches et les fonctions les plus courantes auxquelles vous devrez attribuer des personnes. Nous vous recommandons d’ajouter simplement des utilisateurs individuels en tant que **membres** aux groupes de rôles par défaut.
 
-![Diagramme montrant la relation des groupes de rôles avec les rôles et les membres](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagramme montrant la relation des groupes de rôles avec les rôles et les membres](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 Vous pouvez modifier ou supprimer les groupes de rôles existants, mais nous vous déconseillons de le faire. Au lieu de modifier directement un groupe de rôles par défaut, vous pouvez le copier, le modifier, puis l’enregistrer sous un autre nom.
 
@@ -98,7 +98,6 @@ Notez que les rôles suivants ne sont pas attribués au groupe de rôles gestion
 |:-----|:-----|:-----|
 |**Journaux d’audit**|Activez et configurez l’audit pour l’organisation Office 365, affichez les rapports d’audit de l’organisation, puis exportez ces rapports vers un fichier.|Gestion de l’organisation <br/><br/> Gestion des enregistrements <br/><br/> Administrateur de sécurité|
 |**Gestion des cas**|Créer, modifier, supprimer et contrôler l’accès aux cas eDiscovery.|Administrateur de conformité <br/><br/> Gestionnaire eDiscovery <br/><br/> Gestion de l’organisation|
-|**Expérimentateur de données**|Effectuer des recherches sur des boîtes aux lettres, des sites SharePoint Online et des emplacements OneDrive entreprise.|Exporter <br/><br/> Déchiffrement RMS <br/><br/> Custodian <br/><br/> Communication <br/><br/> Révision <br/><br/> Aperçu <br/><br/> Recherche de conformité <br/><br/> Gestion de l’enquête sur les données|
 |**Communication**|Gérer toutes les communications avec les dépositaires identifiés dans un cas avancé de découverte électronique.  Créez des notifications de blocage, tenez compte des rappels et des escalades à la gestion. Suivre l’accusé de réception des notifications d’attente des dépositaires et gérer l’accès au portail dépositaire utilisé par chaque dépositaire dans un cas pour suivre les communications pour les cas où ils ont été identifiés en tant que dépositaire.|Gestionnaire eDiscovery|
 |**Administrateur de conformité**|Afficher et modifier des paramètres et des rapports pour les fonctionnalités de conformité.|Administrateur de conformité <br/><br/> Administrateur des données de conformité <br/><br/> Gestion de l’organisation|
 |**Recherche de conformité**|Effectuer des recherches dans les boîtes aux lettres et obtenir une estimation des résultats.|Administrateur de conformité <br/><br/> Administrateur des données de conformité <br/><br/> Gestionnaire eDiscovery <br/><br/> Gestion de l’organisation <br/><br/> Opérateur de sécurité|

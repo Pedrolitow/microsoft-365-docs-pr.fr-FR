@@ -11,40 +11,40 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 266626b46e3e1db559178c66a716a5a8ce347986
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 11d605047b66751636ffce69ffff5c198f039fc7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598891"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088513"
 ---
 # <a name="mail-flow-map-report"></a>Rapport carte de flux de courrier
 
 Ce rapport fournit des informations sur la façon dont les messages circulent dans votre organisation Office 365. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et corriger les problèmes au fur et à mesure qu’ils se produisent.
 
-![Rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../media/mail-flow-map-selected.png)
+![Rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>Widget carte de flux de messagerie
 
 Par défaut, la carte de flux de messagerie indique le modèle de flux de messagerie de niveau supérieur du jour précédent. Vous pouvez utiliser les flèches gauche et droite pour des jours différents. Placez le curseur de la souris au-dessus de chaque zone du rapport pour afficher le volume de messages à destination et en provenance de votre organisation Office 365, comme illustré dans le diagramme suivant :
 
-![Flèches gauche et droite dans le widget carte de flux de messagerie](../media/mail-flow-map-widget.png)
+![Flèches gauche et droite dans le widget carte de flux de messagerie](../../media/mail-flow-map-widget.png)
 
 ## <a name="overview"></a>Vue d’ensemble
 
 Cliquez sur le widget **carte de flux de messagerie** pour accéder au rapport de carte de flux de **messagerie** . Vous trouverez ici un niveau plus granulaire du rapport, vous pouvez cliquer sur Afficher les détails de la table pour afficher des données détaillées. Vous pouvez également télécharger le rapport détaillé en cliquant sur rapport de demande.
 
-![Vue d’ensemble dans le rapport de carte de flux de messagerie](../media/mail-flow-map-overview.png)
+![Vue d’ensemble dans le rapport de carte de flux de messagerie](../../media/mail-flow-map-overview.png)
 
 ## <a name="details"></a>Détails
 
 Par défaut, **afficher les données pour** est défini sur la valeur **vue d’ensemble**. Lorsque vous cliquez sur le menu déroulant et sélectionnez **détail**, l’affichage bascule vers le niveau de détail du domaine.
 
-![Sélectionnez détail dans afficher les données de en mode vue d’ensemble dans le rapport de plan de flux de messagerie.](../media/mail-flow-map-select-detail.png)
+![Sélectionnez détail dans afficher les données de en mode vue d’ensemble dans le rapport de plan de flux de messagerie.](../../media/mail-flow-map-select-detail.png)
 
 Les principaux domaines expéditeur et destinataire sont répertoriés et les autres sont placés dans **d’autres** , comme indiqué dans les diagrammes suivants :
 
-![Vue détails dans le rapport de carte de flux de messagerie](../media/mail-flow-map-detail.png)
+![Vue détails dans le rapport de carte de flux de messagerie](../../media/mail-flow-map-detail.png)
 
 ## <a name="related-insights"></a>Insights connexes
 

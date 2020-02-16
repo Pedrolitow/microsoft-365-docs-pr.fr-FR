@@ -16,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c46ff11b8d08c46c3000232c836af8148c58511
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599391"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083089"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur
 
@@ -137,7 +137,7 @@ Si vous souhaitez diffuser des messages à des destinataires, vos options sont l
 
 2. Cliquez sur un message pour la sélectionner, puis cliquez sur l'icône **Diffuser le message** comme illustré dans la capture d'écran suivante.
 
-   ![Illustre la page de mise en quarantaine avec l'icône du message de libération mise en surbrillance et l'affichage des options de libération](../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
+   ![Illustre la page de mise en quarantaine avec l'icône du message de libération mise en surbrillance et l'affichage des options de libération](../../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
 
    Cliquez sur **Diffuser le message sélectionné et autoriser l'expéditeur** dans la liste déroulante.
 
@@ -157,7 +157,7 @@ Si vous souhaitez diffuser des messages à des destinataires, vos options sont l
 
 4. Cliquez sur **Libérer**.
 
-Si vous cliquez sur **Actualiser** ![l’actualisation](../media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir qu’il a été diffusé aux destinataires.
+Si vous cliquez sur **Actualiser** ![l’actualisation](../../media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir qu’il a été diffusé aux destinataires.
 
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>Diffuser un ou plusieurs messages en quarantaine à tous les destinataires
 
@@ -184,7 +184,7 @@ Si vous cliquez sur **Actualiser** ![l’actualisation](../media/ITPro-EAC-Refre
 > [!TIP]
 > Assurez-vous que le message n'est pas marqué comme courrier indésirable en suivant les étapes de la rubrique [Comment s'assurer qu'un message n'est pas marqué comme courrier indésirable](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md).
 
-Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](../media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés
+Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](../../media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 

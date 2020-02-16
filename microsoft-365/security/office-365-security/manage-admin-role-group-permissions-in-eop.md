@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Les administrateurs peuvent apprendre à attribuer ou supprimer des autorisations dans le centre d’administration Exchange dans Exchange Online Protection.
-ms.openlocfilehash: ab574e4d33d84774ef63f73297447ea66a74430b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01676fab3ed69120a35687d1c6939cb466b8d672
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599031"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082913"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Gérer les autorisations de groupe de rôles d’administrateur dans EOP
 
@@ -38,9 +38,9 @@ Dans Microsoft Exchange Online Protection (EOP), vous pouvez utiliser le Centre 
 
 ## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>Utiliser le Centre d'administration Exchange (CAE) pour affecter des membres à des groupes de rôles d'administrateur
 
-1. Dans le centre d’administration Exchange, accédez à **rôles d’administrateur**des **autorisations** \> , cliquez sur le groupe de rôles auquel vous souhaitez ajouter l’utilisateur ou les utilisateurs,](../media/ITPro-EAC-EditIcon.gif)puis cliquez sur **modifier** ![l’icône modifier.
+1. Dans le centre d’administration Exchange, accédez à **rôles d’administrateur**des **autorisations** \> , cliquez sur le groupe de rôles auquel vous souhaitez ajouter l’utilisateur ou les utilisateurs,](../../media/ITPro-EAC-EditIcon.gif)puis cliquez sur **modifier** ![l’icône modifier.
 
-2. Sous membres, cliquez sur **Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif)icône Ajouter. La fenêtre Sélectionner les membres s'affiche.
+2. Sous membres, cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif)icône Ajouter. La fenêtre Sélectionner les membres s'affiche.
 
 3. Recherchez le ou les utilisateurs à ajouter, ou sélectionnez-les dans la liste.
 
@@ -53,9 +53,9 @@ Dans Microsoft Exchange Online Protection (EOP), vous pouvez utiliser le Centre 
 
 ## <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Utiliser le Centre d'administration Exchange (CAE) pour supprimer des membres de groupes de rôles d'administrateur
 
-1. Dans le centre d’administration Exchange, accédez à **rôles d’administrateur**des **autorisations** \> , cliquez sur le groupe de rôles duquel vous souhaitez supprimer un ou les utilisateurs, puis](../media/ITPro-EAC-EditIcon.gif)cliquez sur **modifier** ![l’icône de modification.
+1. Dans le centre d’administration Exchange, accédez à **rôles d’administrateur**des **autorisations** \> , cliquez sur le groupe de rôles duquel vous souhaitez supprimer un ou les utilisateurs, puis](../../media/ITPro-EAC-EditIcon.gif)cliquez sur **modifier** ![l’icône de modification.
 
-2. Sous membres, sélectionnez le ou les utilisateurs que vous souhaitez supprimer, puis cliquez sur **supprimer** ![l'](../media/ITPro-EAC-RemoveIcon.gif)icône Supprimer.
+2. Sous membres, sélectionnez le ou les utilisateurs que vous souhaitez supprimer, puis cliquez sur **supprimer** ![l'](../../media/ITPro-EAC-RemoveIcon.gif)icône Supprimer.
 
 3. Cliquez sur **Enregistrer** pour enregistrer la modification apportée au groupe de rôles et retourner à la page **Rôles d'administrateur**. Pour vérifier que vous avez supprimé l'utilisateur du groupe de rôles d'administrateur, assurez-vous que le membre n'apparaît plus sous Membres dans le volet Détails relatif au groupe de rôles sélectionné.
 

@@ -17,12 +17,12 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment vous pouvez vous déplacer d’un aperçu d’un rapport détaillé dans le &amp; Centre de conformité de la sécurité via un exemple de protection contre la perte de données.
-ms.openlocfilehash: 80ef8622abbf35304a9d61ff8730b12a2a6e09e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f5b64cedba72592307d9c806484640f75be02f8e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599271"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083043"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Procédure pas à pas. D’un aperçu à un rapport détaillé
 
@@ -34,13 +34,13 @@ Il s’agit de l’une des nombreuses procédures pas à pas pour le [Centre de 
 
 Passons en revue le flux du tableau de bord à un aperçu des rapports détaillés sur l’exploration des données. (Il s’agit d’un bref exemple de [protection contre la perte de données](../../compliance/data-loss-prevention-policies.md) .) 
   
-1. Nous commençons par un tableau de bord dans le [Centre de sécurité &amp; conformité](https://protection.office.com). (Accédez au **** \> **tableau de bord**rapports.)<br/>![Dans le centre &amp; de sécurité conformité, sélectionnez \> tableau de bord rapports](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. Nous commençons par un tableau de bord dans le [Centre de sécurité &amp; conformité](https://protection.office.com). (Accédez au **** \> **tableau de bord**rapports.)<br/>![Dans le centre &amp; de sécurité conformité, sélectionnez \> tableau de bord rapports](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
-2. Dans le coin supérieur gauche du tableau de bord, en regard des ** &amp; recommandations de première vue**, nous disposons d’un lien. (Cliquez sur **Afficher tout**.)<br/>![Dans le centre &amp; de sécurité conformité, cliquez \> sur tableau de bord de rapports pour afficher vos informations de premier plan.](../media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Cela nous amène à une liste d’informations pour notre organisation.<br/>![Dans le centre &amp; de sécurité conformité, vous pouvez afficher toutes les informations d’une liste.](../media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
+2. Dans le coin supérieur gauche du tableau de bord, en regard des ** &amp; recommandations de première vue**, nous disposons d’un lien. (Cliquez sur **Afficher tout**.)<br/>![Dans le centre &amp; de sécurité conformité, cliquez \> sur tableau de bord de rapports pour afficher vos informations de premier plan.](../../media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Cela nous amène à une liste d’informations pour notre organisation.<br/>![Dans le centre &amp; de sécurité conformité, vous pouvez afficher toutes les informations d’une liste.](../../media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   
-3. La sélection d’un élément dans la liste ouvre un volet dans lequel nous pouvons afficher plus de détails sur cet élément. (Cliquez sur un élément.)<br/>![Détails d’une vue sélectionnée](../media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Nous voyons les actions recommandées, telles que la révision des stratégies. ([En savoir plus sur les stratégies de protection contre la perte de données](../../compliance/data-loss-prevention-policies.md).)
+3. La sélection d’un élément dans la liste ouvre un volet dans lequel nous pouvons afficher plus de détails sur cet élément. (Cliquez sur un élément.)<br/>![Détails d’une vue sélectionnée](../../media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Nous voyons les actions recommandées, telles que la révision des stratégies. ([En savoir plus sur les stratégies de protection contre la perte de données](../../compliance/data-loss-prevention-policies.md).)
     
-4. Nous disposons également d’un lien pour afficher plus de détails. (Cliquez sur **consulter les activités associées dans l’Explorateur**.)<br/>Cela nous amène à un type de rapport appelé [Explorateur de menaces (et détections en temps réel)](threat-explorer.md), où nous pouvons appliquer des filtres et approfondir des détails spécifiques.<br/>![Affichage de l’Explorateur avec plus de détails sur un aperçu sélectionné](../media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. Nous disposons également d’un lien pour afficher plus de détails. (Cliquez sur **consulter les activités associées dans l’Explorateur**.)<br/>Cela nous amène à un type de rapport appelé [Explorateur de menaces (et détections en temps réel)](threat-explorer.md), où nous pouvons appliquer des filtres et approfondir des détails spécifiques.<br/>![Affichage de l’Explorateur avec plus de détails sur un aperçu sélectionné](../../media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
 De cette façon, nous pouvons facilement passer d’un aperçu de ses détails sous-jacents et prendre des décisions plus éclairées quant à la protection contre la perte de données pour une organisation.
   

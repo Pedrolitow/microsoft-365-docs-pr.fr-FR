@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 4ae3b75ce13b783bc8a373202a0ae42bb14d7cfc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f06b2b895899973d071df384b53a090b766fd77f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598361"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082227"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -71,7 +71,7 @@ Lorsque vous disposez de la [protection avancée contre les menaces Office 365](
     
 2. Dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **liens approuvés**de **stratégie \> ** .
     
-3. Dans la section **stratégies qui s’appliquent à l’ensemble de l’organisation** , sélectionnez **par défaut**, puis **modifier** (le bouton modifier ressemble à un crayon).<br/>![Cliquez sur modifier pour modifier votre stratégie par défaut pour la protection des liens fiables.](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. Dans la section **stratégies qui s’appliquent à l’ensemble de l’organisation** , sélectionnez **par défaut**, puis **modifier** (le bouton modifier ressemble à un crayon).<br/>![Cliquez sur modifier pour modifier votre stratégie par défaut pour la protection des liens fiables.](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. Dans la section **bloquer les URL suivantes** , spécifiez une ou plusieurs URL pour lesquelles vous souhaitez empêcher les personnes de votre organisation de se visiter. (Voir [configurer une liste d’URL bloquées personnalisées à l’aide de liens fiables ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).)
     
@@ -89,7 +89,7 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
     
 3. Choisissez **liens fiables**.
     
-4. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , sélectionnez **nouveau** (le nouveau bouton ressemble à **+** un signe plus ()).<br/>![Sélectionnez nouveau pour ajouter une stratégie de liens fiables à des destinataires de messagerie spécifiques.](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , sélectionnez **nouveau** (le nouveau bouton ressemble à **+** un signe plus ()).<br/>![Sélectionnez nouveau pour ajouter une stratégie de liens fiables à des destinataires de messagerie spécifiques.](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. Indiquez un nom, une description et des paramètres pour votre stratégie.<br/>**Exemple :** Pour configurer une stratégie appelée « pas de clics directs » qui n’autorise pas les personnes appartenant à un certain groupe dans votre organisation à cliquer sur un site Web spécifique sans protection contre les liaisons fiables ATP, vous pouvez spécifier les paramètres recommandés suivants : 
     

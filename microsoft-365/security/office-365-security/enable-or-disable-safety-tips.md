@@ -16,12 +16,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: Indique à Office 365 et aux administrateurs EOP comment activer et désactiver les conseils de sécurité dans les messages électroniques.
-ms.openlocfilehash: 6b94d34b6cf8bebc0aa4032f255b874fb7d4affb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae8a3bc9811aa54b0c5ae4cc8a0e2eb9aa80aef0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599411"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086245"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Activer ou désactiver les conseils de sécurité dans Office 365
 
@@ -48,15 +48,15 @@ Dans cet article :
 
 4. Sur la page **stratégie** , choisissez **blocage du courrier indésirable**.
 
-    ![Cette capture d’écran indique comment accéder à la page des paramètres de blocage du courrier &amp; indésirable dans le centre de sécurité et de conformité.](../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
+    ![Cette capture d’écran indique comment accéder à la page des paramètres de blocage du courrier &amp; indésirable dans le centre de sécurité et de conformité.](../../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
 
 5. Sur la page **paramètres de blocage du courrier indésirable** , sélectionnez l’onglet **personnalisé** .
 
-    ![Cette capture d’écran indique l’emplacement de l’onglet personnalisé dans la page Paramètres du blocage du courrier &amp; indésirable dans le centre de sécurité et de conformité.](../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
+    ![Cette capture d’écran indique l’emplacement de l’onglet personnalisé dans la page Paramètres du blocage du courrier &amp; indésirable dans le centre de sécurité et de conformité.](../../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
 
 6. Si nécessaire, choisissez le commutateur **paramètres personnalisés** pour activer les paramètres personnalisés. Si le commutateur de paramètres personnalisés est **désactivé**, vous ne pourrez pas modifier les stratégies de filtrage du courrier indésirable.
 
-    ![Cette capture d’écran illustre les paramètres de stratégie de filtrage anti-courrier indésirable personnalisés désactivés.](../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
+    ![Cette capture d’écran illustre les paramètres de stratégie de filtrage anti-courrier indésirable personnalisés désactivés.](../../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
 
 7. Développez la stratégie de courrier indésirable que vous souhaitez modifier, puis choisissez **modifier la stratégie**. Par exemple, cliquez sur la flèche vers le bas en regard de **stratégie de filtrage du courrier indésirable par défaut**. Si vous le souhaitez, vous pouvez créer une nouvelle stratégie en sélectionnant **Ajouter une stratégie**.
 

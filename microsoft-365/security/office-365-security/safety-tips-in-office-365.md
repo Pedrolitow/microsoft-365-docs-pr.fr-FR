@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Présente des conseils de sécurité pour les messages électroniques filtrés par le filtre de courrier indésirable EOP et Office 365.
-ms.openlocfilehash: 244b2ceb8ccf5e2e49b56fdebd370f75033f652b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1fddb38be711a9d43e85adea34fe14eb9e7a85ef
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598521"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082329"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Conseils de sécurité dans les messages électroniques dans Office 365
 
@@ -32,25 +32,25 @@ Le Conseil de sécurité, un message codé en couleur, vous avertit des messages
 
 - Courrier suspect (Conseil de sécurité rouge).
 
-    ![Capture d’écran illustrant un Conseil de sécurité rouge.](../media/5078a0be-e556-44a1-b169-09d780d26898.png)
+    ![Capture d’écran illustrant un Conseil de sécurité rouge.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     Un Conseil de sécurité rouge dans un message électronique signifie que le message que vous avez reçu contient un message suspect, tel qu’une escroquerie de type hameçonnage. Nous vous recommandons de supprimer ce type de message électronique de votre boîte de réception sans l’ouvrir.
 
 - Courrier indésirable (Conseil de sécurité jaune).
 
-    ![Capture d’écran illustrant un Conseil de sécurité jaune.](../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
+    ![Capture d’écran illustrant un Conseil de sécurité jaune.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
 
     Un Conseil de sécurité jaune dans un message électronique signifie que le message a été marqué comme courrier indésirable. Si vous ne reconnaissez pas et ne faites pas confiance à l’expéditeur du message, ne téléchargez pas de pièces jointes ou d’images et ne cliquez sur aucun lien dans le message. Dans Outlook sur le Web, vous pouvez cliquer sur **ce message n’est pas un courrier indésirable** dans la barre jaune d’un élément de courrier indésirable pour déplacer le message vers votre boîte de réception. Si le Conseil de sécurité jaune apparaît sur un message qui a été remis dans votre boîte de réception, c’est probablement parce que vous avez désactivé le mouvement du courrier indésirable dans votre dossier courrier indésirable.
 
 - Courrier fiable (Conseil de sécurité vert).
 
-    ![Capture d’écran illustrant un Conseil de sécurité vert.](../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
+    ![Capture d’écran illustrant un Conseil de sécurité vert.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     En plus des messages non sécurisés, nous vous informerons également sur les messages valides provenant d’expéditeurs que nous approuvons avec un Conseil de sécurité vert. Un Conseil de sécurité vert dans un message électronique signifie que nous avons vérifié l’expéditeur du message et vérifié qu’il était sûr. Microsoft conserve cette liste d’expéditeurs approuvés qui inclut des organisations financières et d’autres personnes fréquemment usurpées ou empruntées d’identité.
 
 - Courrier non filtré (Conseil de sécurité gris).
 
-    ![Capture d’écran illustrant un Conseil de sécurité gris.](../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
+    ![Capture d’écran illustrant un Conseil de sécurité gris.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
 
     Nous vous indiquerons également quand nous avons ignoré la vérification d’un message, car il provient d’un expéditeur que vous approuvez sur votre liste des expéditeurs approuvés ou si une règle de flux de messagerie existe pour contourner le filtrage.
 

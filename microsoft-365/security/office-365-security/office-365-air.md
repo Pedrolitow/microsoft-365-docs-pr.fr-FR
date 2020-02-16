@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598761"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088313"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Enquêter et répondre automatiquement aux menaces dans Office 365
 
@@ -55,11 +55,11 @@ Avec des fonctionnalités d’analyse et de réponse automatisées, lorsque cert
 
     L’une ou l’autre de ces méthodes vous permet d’accéder à une liste d’investigations.
 
-    ![Page d’enquête principale pour l’AIR](../media/air-maininvestigationpage.png) 
+    ![Page d’enquête principale pour l’AIR](../../media/air-maininvestigationpage.png) 
 
 3. Dans la liste des enquêtes, sélectionnez un élément dans la colonne **ID** . Cette action ouvre la page des détails de l’enquête, en commençant par le graphique d’enquête dans l’affichage.
 
-    ![Page graphique d’enquête sur l’AIR](../media/air-investigationgraphpage.png)
+    ![Page graphique d’enquête sur l’AIR](../../media/air-investigationgraphpage.png)
 
 4. Utilisez les différents onglets pour en savoir plus sur l’enquête.
 

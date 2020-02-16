@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent disposer d’autorisations dans le centre de conformité Office 365 Security & pour pouvoir gérer les fonctionnalités de sécurité ou de conformité.
-ms.openlocfilehash: 625fe036e8f8b00201abd0f5cb6a8f0003c597f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cccf44a64d20dc1304dbc5145d6ae50441cfacef
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085966"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité Office 365 aux utilisateurs
 
@@ -49,9 +49,9 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 3. Dans le centre de sécurité & conformité, accédez à **autorisations**.
 
-4. Dans la liste, choisissez le groupe de rôles auquel vous souhaitez ajouter l’utilisateur, puis cliquez sur **modifier** ![l'](../media/O365-MDM-CreatePolicy-EditIcon.gif)icône modifier.
+4. Dans la liste, choisissez le groupe de rôles auquel vous souhaitez ajouter l’utilisateur, puis cliquez sur **modifier** ![l'](../../media/O365-MDM-CreatePolicy-EditIcon.gif)icône modifier.
 
-5. Dans la page des propriétés du groupe de rôles sous **membres**, cliquez sur](../media/ITPro-EAC-AddIcon.gif) **Ajouter**![une icône et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter.
+5. Dans la page des propriétés du groupe de rôles sous **membres**, cliquez sur](../../media/ITPro-EAC-AddIcon.gif) **Ajouter**![une icône et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter.
 
 6. Une fois que vous avez sélectionné tous les utilisateurs que vous souhaitez ajouter au groupe de rôles, cliquez sur **ajouter-\> ** puis sur **OK**.
 

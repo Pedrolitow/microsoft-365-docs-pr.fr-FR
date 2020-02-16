@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Utilisez l’Assistant usurpation d’identité &amp; dans le centre de sécurité conformité de la page Paramètres anti-courrier indésirable pour examiner tous les expéditeurs qui usurpent l’identité des domaines qui font partie de votre organisation ou qui usurpent des domaines externes. L’intelligence d’usurpation d’identité est disponible dans le cadre d’Office 365 entreprise E5 ou séparément dans le cadre de la protection avancée contre les menaces et d’Exchange Online Protection.
-ms.openlocfilehash: 82b3759290e4cf0024aaf74a066354f46ea3a303
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599091"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082956"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>En savoir plus sur l’usurpation d’identité
 
@@ -59,7 +59,7 @@ La stratégie d’aide à la décision que vous configurez est toujours appliqu�
 
 Vous pouvez vérifier les expéditeurs qui usurpent votre domaine, ou des domaines externes, puis décider si chaque expéditeur doit être autorisé à le faire à l’aide du centre de &amp; sécurité conformité. Pour chaque compte d’utilisateur usurpé qu’un expéditeur usurpe à partir de votre domaine ou d’un domaine externe, vous pouvez afficher les informations dans le tableau suivant.
 
-|**Paramètre**|**Description**|
+|**Parameter**|**Description**|
 |:-----|:-----|
 |Expéditeur  <br/> |Également appelé véritable expéditeur. Il s’agit généralement du domaine à l’origine de l’usurpation du courrier électronique. Office 365 détermine le domaine de l’enregistrement DNS du pointeur (PTR) de l’adresse IP d’envoi qui usurpe l’identité de votre organisation. Si aucun domaine n’est trouvé, le rapport affiche à la place l’adresse IP de l’expéditeur.  <br/> |
 |Utilisateur usurpé  <br/> |Le compte d’utilisateur qui est usurpé par l’expéditeur.  <br/> Onglet **interne** uniquement. Ce champ contient une adresse de messagerie unique, ou si l’expéditeur usurpe plusieurs comptes d’utilisateur, il en contient **plusieurs**.  <br/> Onglet **externe** uniquement. Les domaines externes contiennent uniquement un domaine d’envoi et ne contiennent pas d’adresse de messagerie complète.  <br/> **TETE! Pour les administrateurs avancés.** L’utilisateur usurpé est l’adresse de (5322. from) qui est également l’adresse de l’expéditeur par le client de messagerie. Il s’agit parfois de l’adresse d’en-tête. from. La validité de cette adresse n’est pas vérifiée par SPF.           |
@@ -79,7 +79,7 @@ Vous pouvez vérifier les expéditeurs qui usurpent votre domaine, ou des domain
 
 3. Dans le centre &amp; de sécurité conformité, développez **protection contre le courrier indésirable**de la **stratégie** \> de **gestion** \> des menaces.
 
-    ![Capture d’écran illustrant l’accès à la page de blocage du courrier indésirable](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![Capture d’écran illustrant l’accès à la page de blocage du courrier indésirable](../../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
 4. Sur la page **paramètres de blocage du courrier indésirable** dans le volet droit, faites défiler la page vers le bas et développez stratégie d’aide à la **décision**
 
@@ -89,7 +89,7 @@ Vous pouvez vérifier les expéditeurs qui usurpent votre domaine, ou des domain
 
     Si vous avez déjà vérifié les expéditeurs et que vous souhaitez modifier certains de vos choix précédents, vous pouvez choisir **afficher les expéditeurs que j’ai déjà examinés** . Dans les deux cas, le panneau suivant s’affiche.
 
-    ![Capture d’écran illustrant l’accès à l’onglet des expéditeurs usurpés](../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![Capture d’écran illustrant l’accès à l’onglet des expéditeurs usurpés](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
     Chaque utilisateur usurpé est affiché sur une ligne distincte de sorte que vous pouvez choisir d’autoriser ou d’empêcher l’expéditeur d’usurper chaque utilisateur individuellement.
 
@@ -97,7 +97,7 @@ Vous pouvez vérifier les expéditeurs qui usurpent votre domaine, ou des domain
 
     Pour définir la stratégie pour les domaines dont vous n’êtes pas propriétaire, sélectionnez l’onglet **domaines externes** . Remplacez un expéditeur par **Oui** dans la colonne **autorisé à usurper** pour autoriser cet expéditeur à envoyer un message électronique non authentifié à votre organisation. Par ailleurs, si vous pensez qu’Office 365 a commis une erreur en autorisant l’expéditeur à envoyer un message électronique usurpé, définissez la colonne **autorisé à usurper** sur **non**.
 
-    ![Capture d’écran indiquant si un expéditeur est autorisé à usurper](../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![Capture d’écran indiquant si un expéditeur est autorisé à usurper](../../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
 
 6. Sélectionnez **Enregistrer** pour enregistrer les modifications.
 
@@ -128,7 +128,7 @@ Même si la stratégie d’usurpation d’identité apparaît sous la stratégie
 
 6. Ensuite, configurez les actions à effectuer lorsqu’un message est détecté comme usurpateur de domaine. Le comportement par défaut consiste à déplacer le message vers le dossier de courrier indésirable du destinataire. L’autre option consiste à envoyer le message en quarantaine. Pour plus d’informations sur la gestion des messages envoyés en quarantaine, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md).
 
-    ![Capture d’écran montrant les options d’édition d’une stratégie d’usurpation d’identité](../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
+    ![Capture d’écran montrant les options d’édition d’une stratégie d’usurpation d’identité](../../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
 
 7. Faites votre choix, puis cliquez sur **Enregistrer**.
 

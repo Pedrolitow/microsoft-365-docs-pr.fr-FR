@@ -16,12 +16,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Pour vous assurer que le courrier électronique envoyé à partir de personnes que vous approuvez n’est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte, également appelée liste d’expéditeurs approuvés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
-ms.openlocfilehash: 06915527af68df6a858ca8ed97612ab40178be84
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db0d7acc6189f29b247c1dc4004311d2843d139b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599591"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086283"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configuration de la stratégie de filtrage des connexions
 
@@ -60,7 +60,7 @@ Créez une liste d'adresses IP approuvées ou bloquées en modifiant la stratég
 
 2. Cliquez sur l'option de menu **Filtrage des connexions**, puis créez les listes nécessaires : une liste d'adresses IP approuvées, une liste d'adresses IP bloquées ou les deux.
 
-   Pour créer ces listes, cliquez sur ![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif). Dans la boîte de dialogue qui s'affiche, spécifiez l'adresse ou la plage d'adresses IP, puis cliquez sur **OK**. Pour ajouter d'autres adresses, répétez ce processus (vous pouvez également modifier ou supprimer des adresses IP après les avoir ajoutées).
+   Pour créer ces listes, cliquez sur ![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif). Dans la boîte de dialogue qui s'affiche, spécifiez l'adresse ou la plage d'adresses IP, puis cliquez sur **OK**. Pour ajouter d'autres adresses, répétez ce processus (vous pouvez également modifier ou supprimer des adresses IP après les avoir ajoutées).
 
    Spécifiez les adresses IP IPV4 au format nnn. nnn. nnn. nnn où NNN est un nombre compris entre 0 et 255. Vous pouvez également spécifier des plages CIDR (Classless Inter-Domain Routing) au format nnn.nnn.nnn.nnn/rr, où rr est un nombre compris entre 24 et 32. Pour spécifier des plages en dehors de la plage de 24 à 32, consultez la section suivante, [Considérations supplémentaires lors de la configuration des listes d’adresses IP autorisées](#additional-considerations-when-configuring-ip-allow-lists).
 
@@ -83,13 +83,13 @@ Pour créer cette règle de flux de messagerie, procédez comme suit.
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur ![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
+2. Cliquez sur ![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
 
 3. Nommez la règle, puis cliquez sur **Plus d'options**.
 
 4. Sous **Appliquer cette règle si**, sélectionnez **L'expéditeur**, puis **l'adresse IP se situe dans l'une de ces plages ou correspond exactement**.
 
-5. Dans la **zone spécifier des adresses IP**, spécifiez la plage d’adresses IP,](../media/ITPro-EAC-AddIcon.gif)cliquez sur **Ajouter** ![une icône, puis cliquez sur **OK**.
+5. Dans la **zone spécifier des adresses IP**, spécifiez la plage d’adresses IP,](../../media/ITPro-EAC-AddIcon.gif)cliquez sur **Ajouter** ![une icône, puis cliquez sur **OK**.
 
 6. Sous **Faire ceci**, définissez l'action en sélectionnant **Modifier les propriétés des messages**, puis **Définir le seuil de probabilité de courrier indésirable (SCL)**. Dans le champ **spécifier la valeur SCL**, sélectionnez **Ignorer le filtrage du courrier indésirable**, puis cliquez sur **OK**.
 
@@ -109,19 +109,19 @@ Pour ce faire, procédez comme suit :
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur ![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
+2. Cliquez sur ![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
 
 3. Nommez la règle, puis cliquez sur **Plus d'options**.
 
 4. Sous **Appliquer cette règle si**, sélectionnez **L'expéditeur**, puis **l'adresse IP se situe dans l'une de ces plages ou correspond exactement**.
 
-5. Dans la zone **spécifier des adresses IP** , spécifiez l’adresse IP ou la plage d’adresses IP que vous avez entrée dans la liste d'](../media/ITPro-EAC-AddIcon.gif)adresses IP autorisées, cliquez sur **Ajouter** ![une icône, puis cliquez sur **OK**.
+5. Dans la zone **spécifier des adresses IP** , spécifiez l’adresse IP ou la plage d’adresses IP que vous avez entrée dans la liste d'](../../media/ITPro-EAC-AddIcon.gif)adresses IP autorisées, cliquez sur **Ajouter** ![une icône, puis cliquez sur **OK**.
 
 6. Sous **effectuer les opérations suivantes**, définissez l’action en choisissant **modifier les propriétés du message** , puis **Définissez le seuil de probabilité de courrier indésirable (SCL)**. Dans le champ spécifier la valeur **SCL** , sélectionnez **0**, puis cliquez sur **OK**.
 
 7. Cliquez sur **Ajouter une exception**, puis sous **sauf si**, sélectionnez **l’expéditeur** et choisissez **domaine**.
 
-8. Dans la zone **spécifier un domaine** , entrez le domaine pour lequel vous souhaitez contourner le filtrage du courrier indésirable, tel que **contosob.com**. Cliquez sur **Ajouter** ![une](../media/ITPro-EAC-AddIcon.gif) icône pour le déplacer vers la liste des expressions. Répétez cette étape pour ajouter d'autres domaines et exceptions, puis cliquez sur **OK** quand vous avez terminé.
+8. Dans la zone **spécifier un domaine** , entrez le domaine pour lequel vous souhaitez contourner le filtrage du courrier indésirable, tel que **contosob.com**. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif) icône pour le déplacer vers la liste des expressions. Répétez cette étape pour ajouter d'autres domaines et exceptions, puis cliquez sur **OK** quand vous avez terminé.
 
 9. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d’informations sur ces sélections.
 
@@ -149,7 +149,7 @@ Il s’agit fondamentalement de la même procédure de création de règle à pa
 
 ||
 |:-----|
-|![Icône rapide pour LinkedIn Learning](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Office 365 ?** Découvrez les cours vidéo gratuits pour **Office 365 admins and IT pros** proposés par LinkedIn Learning.|
+|![Icône rapide pour LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Office 365 ?** Découvrez les cours vidéo gratuits pour **Office 365 admins and IT pros** proposés par LinkedIn Learning.|
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 

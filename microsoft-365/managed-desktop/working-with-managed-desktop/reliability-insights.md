@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1f642d2790af5f4ec83dd1bbe57a9be249d095d1
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: b7f56a64f1846676f458f7b3ddb210e84b9ca8f7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962331"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085667"
 ---
 # <a name="reliability-insights"></a>Informations de fiabilité
 
 Cet affichage vous fournit un résumé de l’intégrité de vos appareils gérés. Pour afficher les données de fiabilité, sélectionnez l’onglet **fiabilité** .
 
 
-![Volet de fiabilité : fiabilité entre les appareils dans l’angle supérieur gauche, fiabilité sur le graphique des temps dans le coin supérieur droit de la table des problèmes en haut. Boutons aide et commentaires dans le coin inférieur droit.](images/insights_reliability.png)
+![Volet de fiabilité : fiabilité entre les appareils dans l’angle supérieur gauche, fiabilité sur le graphique des temps dans le coin supérieur droit de la table des problèmes en haut. Boutons aide et commentaires dans le coin inférieur droit.](../../media/insights_reliability.png)
 
 La section **fiabilité sur les appareils** offre un récapitulatif de l’intégrité rapide de votre déploiement au cours des 14 derniers jours en signalant le pourcentage d’appareils considérés comme « sains » et le temps moyen observé depuis le dernier échec signalé. 
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La définition des utilisateurs de messagerie constitue une partie importante de la gestion du service Exchange Online Protection (EOP).
-ms.openlocfilehash: 53d47452979c42273fd485fa89642eea881bb21a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598981"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088583"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestion des utilisateurs de messagerie dans EOP
 
@@ -108,7 +108,7 @@ Cette section fournit des informations sur l’ajout et la gestion des utilisate
 
 ### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a>Utiliser le centre d’administration Exchange pour modifier ou supprimer un utilisateur de messagerie
 
-- Dans le CAE, accédez à **Destinataires** \> **Contacts**. Dans la liste des utilisateurs, cliquez sur l’utilisateur que vous souhaitez afficher ou modifier, puis sélectionnez **modifier** ![l’icône](../media/ITPro-EAC-EditIcon.gif) modifier pour mettre à jour les paramètres utilisateur selon vos besoins. Vous pouvez modifier le nom, l'alias ou les coordonnées de l'utilisateur et vous pouvez enregistrer des informations détaillées sur le rôle de l'utilisateur dans l'organisation. Vous pouvez également sélectionner un utilisateur, puis cliquer sur **supprimer** ![l'](../media/ITPro-EAC-RemoveIcon.gif) icône Supprimer pour le supprimer.
+- Dans le CAE, accédez à **Destinataires** \> **Contacts**. Dans la liste des utilisateurs, cliquez sur l’utilisateur que vous souhaitez afficher ou modifier, puis sélectionnez **modifier** ![l’icône](../../media/ITPro-EAC-EditIcon.gif) modifier pour mettre à jour les paramètres utilisateur selon vos besoins. Vous pouvez modifier le nom, l'alias ou les coordonnées de l'utilisateur et vous pouvez enregistrer des informations détaillées sur le rôle de l'utilisateur dans l'organisation. Vous pouvez également sélectionner un utilisateur, puis cliquer sur **supprimer** ![l'](../../media/ITPro-EAC-RemoveIcon.gif) icône Supprimer pour le supprimer.
 
 ## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a>Utiliser Exchange Online Protection PowerShell pour gérer les utilisateurs de messagerie
 

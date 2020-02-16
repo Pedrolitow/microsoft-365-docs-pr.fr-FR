@@ -15,12 +15,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour la stratégie de filtrage du courrier indésirable par défaut à l’échelle de l’entreprise ou pour les stratégies de filtrage du courrier indésirable personnalisées appliquées
-ms.openlocfilehash: f7ef916eea8d9c926f53ef073874dfb299cb92f8
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: cc3054715fdc5cbe72bc6655462b61eb8a9db5d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957389"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086463"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans Exchange Online
 
@@ -70,7 +70,7 @@ Pour plus d’informations sur les raccourcis clavier applicables aux procédure
   
  **Conseil :** Si vous souhaitez tester les notifications de courrier indésirable de l’utilisateur final en les envoyant à un ensemble limité d’utilisateurs avant de les implémenter complètement, créez une stratégie de filtrage du courrier indésirable personnalisée qui active les notifications de courrier indésirable à l’utilisateur final pour les domaines dans lesquels les utilisateurs résident. Ensuite, dans le centre d’administration Exchange, sous **règles de flux \> de messagerie**, créez une règle de flux de messagerie (également appelée règle de transport) pour bloquer les messages de Quarantine@messaging.microsoft.com (adresse de messagerie qui envoie des notifications) avec des exceptions pour les utilisateurs qui doivent recevoir les notifications. L'image suivante représente un exemple de création d'exception pour deux utilisateurs (SaraD et AlexD) du domaine Contoso.com : 
   
-![Règle de transport pour tester les notifications de courrier indésirable de l'utilisateur final](../media/EOP-ESN-testspecificusers.jpg)
+![Règle de transport pour tester les notifications de courrier indésirable de l'utilisateur final](../../media/EOP-ESN-testspecificusers.jpg)
   
 ## <a name="use-the-scc-to-configure-end-user-spam-notifications"></a>Utiliser SCC pour configurer les notifications de courrier indésirable de l’utilisateur final
 
@@ -92,7 +92,7 @@ Vous pouvez également utiliser le centre de sécurité et de conformité (SCC) 
     
    - Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie de filtrage du courrier indésirable, y compris les paramètres de notification de courrier indésirable de l’utilisateur final, apparaît dans le volet.
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md)
   
