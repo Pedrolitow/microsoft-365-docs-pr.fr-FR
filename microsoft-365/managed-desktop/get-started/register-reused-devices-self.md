@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e41d2ac66dea6640978435390bf3a8868c7cec7c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b9e1f0691d7bec1d8a17bb7f68a0e0941b3f6bd9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596531"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085953"
 ---
 # <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
@@ -210,7 +210,7 @@ Votre fichier doit inclure exactement les **mêmes en-têtes de colonne** que l�
 
 Dans le portail Microsoft Managed Desktop [Azure](https://aka.ms/mmdportal), sélectionnez **périphériques** dans le volet de navigation de gauche. Sélectionnez **+ inscrire les appareils**; le survol s’ouvre :
 
-[![Entrée brusque après la sélection d’appareils de caisse, liste des appareils avec des colonnes pour les utilisateurs affectés, numéro de série, État, date de dernière vue et âge](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![Entrée brusque après la sélection d’appareils de caisse, liste des appareils avec des colonnes pour les utilisateurs affectés, numéro de série, État, date de dernière vue et âge](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
 
 [//]: # (Malheureusement, cela n’est pas vrai. Nous pouvons supprimer cette note, mais la laisser maintenant jusqu’à ce que nous ayons la possibilité de discuter.)

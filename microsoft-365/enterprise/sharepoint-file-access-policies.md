@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f0cd296157e1d4856c27d1dc547de045510e788b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600761"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084200"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour sécuriser les sites et les fichiers SharePoint
 
@@ -35,7 +35,7 @@ En plus de mettre en œuvre ces instructions, veillez à configurer les sites Sh
 
 Le diagramme suivant illustre l’ensemble des stratégies recommandées pour la protection des fichiers dans SharePoint Online et OneDrive entreprise. Il indique les stratégies qui doivent être mises à jour ou nouvellement créées pour ajouter la protection pour SharePoint Online et OneDrive entreprise.
 
-![Résumé des stratégies pour SharePoint Online et OneDrive](../images/identity-access-ruleset-sharepoint.png)
+![Résumé des stratégies pour SharePoint Online et OneDrive](../media/identity-access-ruleset-sharepoint.png)
 
 Si vous avez inclus SharePoint Online lorsque vous avez créé les stratégies courantes, il vous suffit de créer les nouvelles stratégies. Lors de la configuration des règles d’accès conditionnel, SharePoint Online inclut OneDrive entreprise.
 
@@ -77,7 +77,7 @@ Il est important de comprendre que les autorisations de site SharePoint sont gé
 
 L’illustration suivante fournit un exemple de la façon dont les stratégies d’accès aux appareils SharePoint protègent l’accès aux sites.
 
-![Protection des sites par les stratégies d’accès aux appareils SharePoint](../images/SharePoint-rules-scenario.png)
+![Protection des sites par les stratégies d’accès aux appareils SharePoint](../media/SharePoint-rules-scenario.png)
 
 Dans cette illustration :
 

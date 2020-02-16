@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: e5e3e4fb48a0eb2af1978cbd5a687c67c72bea0c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ba5804d3065dcb01d85d457df7555a642d6f2839
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596641"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085593"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Étape 3 : Déployer Windows 10 Entreprise pour les nouveaux appareils avec Windows Autopilot
 
 *Cet article s'applique à la fois aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Si vous avez de nouveaux PC Windows 10, vous pouvez utiliser Windows Autopilot pour personnaliser l’expérience clé en main (OOBE) pour votre organisation et déployer un nouveau système avec les applications et les paramètres déjà configurés. Pas d’images à déployer, pas de pilotes à injecter et aucune infrastructure à gérer. Les utilisateurs peuvent suivre le processus de déploiement de manière indépendante, sans avoir besoin de consulter leur administrateur informatique.
 
@@ -33,7 +33,7 @@ Vous pouvez configurer et pré-configurer de nouveaux appareils Windows 10 et le
 
 L’affiche de Windows AutoPilot est en mode Portrait (2 pages). Cliquez sur l’image ci-dessous pour afficher un fichier PDF dans votre navigateur. 
 
-[![Affiche Déployer Windows 10 avec autopilot](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
+[![Affiche Déployer Windows 10 avec autopilot](../media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
 
 Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) ou [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx).
 
@@ -114,4 +114,4 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](win
 
 |||
 |:-------|:-----|
-|![Étape 4](./media/stepnumbers/Step4.png)| [Surveillance de la conformité et de l’état du périphérique](windows10-enable-windows-analytics.md) |
+|![Étape 4](../media/stepnumbers/Step4.png)| [Surveillance de la conformité et de l’état du périphérique](windows10-enable-windows-analytics.md) |

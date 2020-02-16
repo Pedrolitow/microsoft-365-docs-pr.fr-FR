@@ -12,16 +12,16 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: f854a4ec72c01f49f12774617188610d753e7b40
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5407370933c2a99781adf4ca58d3fa905328ed04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596631"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085573"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>Étape 5 : déployer les fonctionnalités de sécurité Windows 10 entreprise
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 offre des fonctionnalités de sécurité pour protéger les utilisateurs de l’entreprise, arrêter Cyber et empêcher la perte de données. 
 
@@ -93,7 +93,7 @@ Vous pouvez effectuer un dépannage de base ou éventuellement fournir à Micros
 
 
 <a name="windows10-sec-atp"></a>
-## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender - Protection avancée contre les menaces
+## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender – Protection avancée contre les menaces
 Microsoft Defender ATP (disponible uniquement avec le plan Microsoft 365 E5) est un service de sécurité qui permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées sur leurs réseaux. Pour plus d’informations sur Microsoft Defender ATP, la configuration minimale requise et la gestion de cette fonctionnalité, reportez-vous à :
 
 * [Microsoft Defender - PACM](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)

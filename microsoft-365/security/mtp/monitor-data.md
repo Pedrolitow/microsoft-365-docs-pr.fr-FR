@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b79625ba017bd30cc9d6b0153d101b16ec574e8c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fa959de5806eccf76b0e83103c0274d0eb86da0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600131"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084776"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les données dans le centre de sécurité Microsoft 365
 
@@ -32,4 +32,4 @@ Vous pouvez voir les informations suivantes :
 * Nombre de remplacements de stratégies DLP ou de faux positifs signalés
 * Combien de correspondances de stratégies DLP ont eu lieu dans des services Cloud tiers via la sécurité de l’application Cloud de Microsoft
 
-![Page des rapports de catégorie de données](../images/data.png)
+![Page des rapports de catégorie de données](../../media/data.png)
