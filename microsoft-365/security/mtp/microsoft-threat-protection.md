@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 031fc4164307d9fa8c78f02c775b230f7eff5383
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c165ec5869f8f53c28fb28414a04d73033a5772
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600181"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087604"
 ---
 # <a name="microsoft-threat-protection"></a>Protection Microsoft contre les menaces
 
@@ -48,13 +48,13 @@ La couche de produit unique de protection contre les menaces Microsoft renforce 
 - Automatiser la réponse à une compromission en déclenchant l’auto-réparation des ressources affectées via la correction automatisée
 - Permettre aux équipes de sécurité d’effectuer une mise à l’échelle des menaces d’un point de terminaison à l’autres
 
-![Image de la page de présentation de l’incident](../images/overview-incident.png) <br>
+![Image de la page de présentation de l’incident](../../media/overview-incident.png) <br>
 Incident entre produits (vue d’ensemble)
 
-![Image de la file d’attente des alertes](../images/incident-list.png)<br>
+![Image de la file d’attente des alertes](../../media/incident-list.png)<br>
 Toutes les alertes associées dans les produits de la suite corrélées en un seul incident (affichage alertes)
 
-![Image de la file d’attente des incidents](../images/advanced-hunting.png)<br>
+![Image de la file d’attente des incidents](../../media/advanced-hunting.png)<br>
 Recherche basée sur les requêtes sur les données brutes de messagerie et de point de terminaison
 
 

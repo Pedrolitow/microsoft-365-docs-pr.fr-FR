@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 26e227b4b1e8047ca962ca9e65b139bacae55e03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599991"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086925"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gérer les tickets via ServiceNow
 
@@ -61,7 +61,7 @@ Lorsque vous créez un ticket ServiceNow à partir du centre de sécurité Micro
 
 Accédez à la page d’accueil du centre de sécurité Microsoft 365 pour afficher la carte de connexion ServiceNow.
 
-![Utilisez-vous ServiceNow](../images/do-you-use-servicenow-250.png)
+![Utilisez-vous ServiceNow](../../media/do-you-use-servicenow-250.png)
 
 Sélectionnez « se connecter à ServiceNow » pour accéder à la page de configuration de ServiceNow. Suivez les instructions pour autoriser l’application Connecteur Microsoft 365.
 
@@ -74,7 +74,7 @@ Une fois que vous avez suivi les instructions et autorisé la connexion, consult
 
 Une fois l’intégration configurée, créez des tâches ServiceNow basées sur des actions d’amélioration spécifiques de Microsoft Secure score. Accédez à une action d’amélioration dans le score de sécurité dans le portail du centre de sécurité Microsoft 365, puis sélectionnez l’icône « partager ». L’une des options de liste déroulante est ServiceNow.
 
-![Partage ServiceNow dans le score de sécurité](../images/servicenow-share.png)
+![Partage ServiceNow dans le score de sécurité](../../media/servicenow-share.png)
 
 Une tâche est générée, dans laquelle vous pouvez définir la priorité et modifier le nom, la description ou la date d’échéance. Une fois que tous les champs obligatoires sont renseignés, envoyez la tâche à ServiceNow.
 
@@ -84,7 +84,7 @@ La tâche est visible dans ServiceNow en tant que demande de modification de la 
 
 Une fois que les tickets de gestion des modifications et de gestion des incidents ont été créés, ils s’affichent sur des cartes dans la page d’accueil du centre de sécurité Microsoft 365. À partir de ces cartes, vous pouvez créer un ticket, afficher tous les tickets ou gérer la configuration de ServiceNow.
 
-![Tickets de gestion des modifications ServiceNow](../images/change-management-375.png)  ![Tickets de gestion des incidents ServiceNow](../images/incident-management-375.png)
+![Tickets de gestion des modifications ServiceNow](../../media/change-management-375.png)  ![Tickets de gestion des incidents ServiceNow](../../media/incident-management-375.png)
 
 Pour reconfigurer ou gérer votre intégration ServiceNow dans le centre de sécurité Microsoft 365, sélectionnez **gérer la configuration de ServiceNow** sur l’une des cartes. À partir de là, supprimez la connexion ServiceNow actuelle et personnalisez les noms d’état des tickets.
 

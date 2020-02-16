@@ -15,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 6ada378d63e9a04bd820808ea8a1d93cd7690ffb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596841"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066758"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5 : gestion des appareils mobiles pour Microsoft 365 Enterprise
 
-![Phase 5 : Gestion des appareils mobiles](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Phase 5 : Gestion des appareils mobiles](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *Cette fonctionnalité s’applique aux versions E3 et E5 de Microsoft 365 Enterprise*
 
@@ -84,7 +84,7 @@ L’enregistrement est une étape essentielle lors de l’utilisation d’Intune
 
 |||
 |:-------|:-----|
-|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : enregistrement des appareils iOS et Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : enregistrement des appareils iOS et Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -102,7 +102,7 @@ L’article [Ajouter des applications](https://docs.microsoft.com/intune/apps/ap
 
 |||
 |:-------|:-----|
-|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : stratégies de conformité des appareils](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : stratégies de conformité des appareils](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Étape 6 : activer la conformité et l’accès conditionnel
@@ -159,7 +159,7 @@ Découvrez comment les experts informatiques de Microsoft [gèrent les appareils
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, a [déployé son infrastructure de gestion des appareils mobiles](contoso-mdm.md) avec les services Cloud de Microsoft 365.
 
-![Société Contoso](./media/contoso-overview/contoso-icon.png)
+![Société Contoso](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Étape suivante
 

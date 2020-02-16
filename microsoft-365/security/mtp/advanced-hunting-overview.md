@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7e96ca06a7b77a6bdc0cf4af55d519aebda833cd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f268c87da68c2badbfa885f0d9357a6a53d0a039
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600381"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087490"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces
 
@@ -61,14 +61,14 @@ Cliquez avec le bouton droit de la souris sur une valeur du jeu de résultats po
 - Exclure la valeur sélectionnée de la requête (`!=`)
 - Obtenez des opérateurs plus avancés pour ajouter la valeur à votre requête (par exemple, `contains`, `starts with` et `ends with`) 
 
-![Image du jeu de résultats de repérage avancé Microsoft Defender - Protection avancée contre les menaces](../images/advanced-hunting-results-filter.png)
+![Image du jeu de résultats de repérage avancé Microsoft Defender - Protection avancée contre les menaces](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtrer les résultats de la requête
 Les filtres de droite fournissent un résumé du jeu de résultats. Chaque colonne possède sa propre section qui répertorie les valeurs distinctes trouvées pour cette colonne et le nombre d’instances.
 
 Affinez votre requête en sélectionnant les boutons « + » ou « - » sur les valeurs que vous voulez inclure ou exclure, puis sélectionnez **exécuter la requête**.
 
-![Image du filtre de repérage avancé](../images/advanced-hunting-filter.png)
+![Image du filtre de repérage avancé](../../media/advanced-hunting-filter.png)
 
 Une fois le filtre appliqué pour modifier la requête, puis exécuter la requête, les résultats sont mis à jour en conséquence.
 

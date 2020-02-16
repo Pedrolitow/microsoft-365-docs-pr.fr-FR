@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9f647ba306215d20d6fb1d0c7dbfd8d3b96fb909
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7e41190d3cad9328e678ff47b0e0bf0d38adb7c9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600241"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087717"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>Recherche de menaces dans Microsoft 365
 
@@ -28,7 +28,7 @@ Les fonctionnalités de recherche de menaces dans le centre de sécurité Micros
 - Microsoft Defender ATP : [recherche de menaces pesant sur les appareils](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)
 - Azure ATP : [recherche de menaces pour les identités](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)
 
-![Page de chasse](../images/hunt.png)
+![Page de chasse](../../media/hunt.png)
 
 
 ## <a name="hunt-with-microsoft-threat-protection"></a>Recherche avec Microsoft Threat Protection

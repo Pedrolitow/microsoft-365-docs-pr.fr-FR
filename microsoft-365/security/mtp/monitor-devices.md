@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: cecc84c1df3ccba3eea75d29aa5f293909d5d51f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: af7ed71f2257578e4d4fb063b27cb81ed9802b1a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600161"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087793"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les appareils dans le centre de sécurité Microsoft 365
 
@@ -35,7 +35,7 @@ Chaque alerte Microsoft Defender ATP a une gravité correspondante (élevé, moy
 
 Utilisez la carte de **gravité des alertes de périphérique** pour vous concentrer spécifiquement sur les alertes plus sévères et susceptibles de nécessiter une réponse immédiate. À partir de cette carte, vous pouvez consulter plus d’informations sur le portail du centre de sécurité Microsoft Defender.
 
-![Carte de gravité des alertes d’appareil](../images/device-alerts-severity.png)
+![Carte de gravité des alertes d’appareil](../../media/device-alerts-severity.png)
 
 ### <a name="understand-sources-of-alerts"></a>Comprendre les sources d’alertes
 
@@ -43,7 +43,7 @@ Microsoft Defender ATP exploite les données d’une large gamme de capteurs de 
 
 La carte sources de détection des alertes de **périphérique** affiche la répartition des alertes par source. Cette carte peut vous aider à suivre l’activité liée à certaines sources, en particulier vos sources personnalisées. Vous pouvez également l’utiliser pour vous concentrer sur les alertes provenant de capteurs qui ne sont pas configurés pour bloquer automatiquement les activités ou les composants malveillants.
 
-![Carte sources de détection des alertes de périphérique](../images/device-alert-detection-sources.png)
+![Carte sources de détection des alertes de périphérique](../../media/device-alert-detection-sources.png)
 
 À partir de cette carte, vous pouvez consulter plus d’informations sur le portail du centre de sécurité Microsoft Defender.
 
@@ -53,13 +53,13 @@ Microsoft Defender ATP trie chaque alerte dans une catégorie représentant une 
 
 La carte des **catégories de menaces du périphérique** affiche la répartition des alertes dans ces catégories. Vous pouvez utiliser ces informations pour identifier les activités de menace, telles que les tentatives de vol d’informations d’identification, qui peuvent avoir un impact supérieur par rapport aux tentatives d’ingénierie sociale. Vous pouvez également utiliser ces informations pour surveiller les menaces pouvant être destructrices telles que les ransomware.
 
-![Carte des catégories de menaces de périphérique](../images/device-threat-categories.png)
+![Carte des catégories de menaces de périphérique](../../media/device-threat-categories.png)
 
 ### <a name="monitor-active-alerts"></a>Surveiller les alertes actives
 
 La carte d' **État des alertes de périphérique** indique le nombre d’alertes qui n’ont pas été résolues et peuvent nécessiter votre attention. À partir de cette carte, vous pouvez consulter plus d’informations sur le portail du centre de sécurité Microsoft Defender.
 
-![Carte d’état d’alerte de périphérique](../images/device-alert-status.png)
+![Carte d’état d’alerte de périphérique](../../media/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>Surveiller la classification des alertes résolues
 
@@ -72,7 +72,7 @@ La fiche classification des alertes de **périphérique** indique si les alertes
 
 Remarque : dans certains cas, les informations de classification ne sont pas disponibles pour certaines alertes.
 
-![Carte de classification des alertes de périphérique](../images/device-alert-classification.png)
+![Carte de classification des alertes de périphérique](../../media/device-alert-classification.png)
 
 ### <a name="monitor-determination-of-resolved-alerts"></a>Surveiller la détermination des alertes résolues
 
@@ -89,13 +89,13 @@ La carte de **détermination des alertes de périphérique** indique la détermi
 
 À partir de cette carte, vous pouvez consulter plus d’informations dans le centre de sécurité Microsoft Defender.
 
-![Carte de détermination d’alerte de périphérique](../images/device-alert-determination.png)
+![Carte de détermination d’alerte de périphérique](../../media/device-alert-determination.png)
 
 ### <a name="understand-which-devices-are-at-risk"></a>Comprendre quels périphériques sont exposés
 
 **Device protection** indique le niveau de risque pour les appareils. Le niveau de risque est basé sur des facteurs tels que le type et la gravité des alertes sur l’appareil.
 
-![Carte de protection des appareils](../images/device-protection.png)
+![Carte de protection des appareils](../../media/device-protection.png)
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>Surveillance et signalement de l’état des appareils gérés par Intune
 
@@ -114,43 +114,43 @@ Les données d’appareil apportées Intune incluent :
 
 **La conformité des appareils** indique le nombre de périphériques qui sont intégrés dans Intune conformément aux stratégies de configuration.
 
-![Carte de conformité des appareils](../images/device-compliance.png)
+![Carte de conformité des appareils](../../media/device-compliance.png)
 
 ### <a name="discover-devices-with-malware-detections"></a>Détecter les appareils avec des détections de programmes malveillants
 
 Les **détections de programmes malveillants d’appareils** fournissent le nombre d’appareils apportés Intune avec des programmes malveillants qui n’ont pas été entièrement résolus. Cela peut être dû à des actions en attente, un redémarrage, une analyse complète, des actions utilisateur manuelles ou si l’action de correction ne s’est pas terminée correctement.
 
-![Carte de détection des programmes malveillants d’appareils](../images/device-malware-detections.png)
+![Carte de détection des programmes malveillants d’appareils](../../media/device-malware-detections.png)
 
 ### <a name="understand-the-types-of-malware-detected"></a>Comprendre les types de programmes malveillants détectés
 
 **Types de programmes malveillants sur les appareils** Affichez les différents types de programmes malveillants qui ont été détectés sur les appareils intégrés dans Intune. Vous pouvez examiner chaque type dans le centre de sécurité Microsoft 365.
 
-![Types de programmes malveillants sur la carte des appareils](../images/types-of-malware-on-devices.png)
+![Types de programmes malveillants sur la carte des appareils](../../media/types-of-malware-on-devices.png)
 
 ### <a name="understand-the-specific-malware-detected-on-your-devices"></a>Comprendre le programme malveillant spécifique détecté sur vos appareils
 
 Les **programmes malveillants sur les appareils** fournissent une liste de programmes malveillants spécifiques détectés sur vos appareils.
 
-![Carte de programmes malveillants sur les appareils](../images/malware-on-devices.png)
+![Carte de programmes malveillants sur les appareils](../../media/malware-on-devices.png)
 
 ### <a name="understand-which-devices-have-the-most-malware"></a>Comprendre quels appareils ont le plus de programmes malveillants
 
 Les **appareils avec des détections de programmes malveillants** indiquent quels appareils ont le plus de détections de programmes malveillants. dans le centre de sécurité Microsoft 365, vous pouvez rechercher si un programme malveillant est actif, qui utilise l’appareil et son statut de gestion dans Intune.
 
-![Carte périphériques avec des détections de programmes malveillants](../images/devices-with-malware-detections.png)
+![Carte périphériques avec des détections de programmes malveillants](../../media/devices-with-malware-detections.png)
 
 ### <a name="understand-which-users-have-devices-with-the-most-malware"></a>Comprendre quels sont les utilisateurs ayant des appareils avec le plus de programmes malveillants
 
 **Les utilisateurs disposant de détections de programmes malveillants** affichent les utilisateurs avec des appareils ayant eu le plus de détections de programmes malveillants. Dans le centre de sécurité Microsoft 365, vous pouvez voir le nombre d’appareils affectés à chaque utilisateur et des informations sur chaque appareil et le type de programmes malveillants.
 
-![Utilisateurs avec carte de détection des programmes malveillants](../images/users-with-malware-detections.png)
+![Utilisateurs avec carte de détection des programmes malveillants](../../media/users-with-malware-detections.png)
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>Surveillance et gestion du déploiement et des détections de règles ASR
 
 Les règles de réduction de la [surface d’attaque (ASR)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) permettent d’empêcher les actions et les applications généralement utilisées par les programmes malveillants de recherche d’attaques pour infecter les appareils. Ces règles contrôlent quand et comment les fichiers exécutables peuvent être exécutés. Par exemple, vous pouvez empêcher JavaScript ou VBScript de lancer un exécutable téléchargé, bloquer des appels API Win32 à partir de macros Office, ou bloquer les processus exécutés à partir de lecteurs USB.
 
-![Carte de réduction de surface d’attaque](../images/attack-surface-reduction-rules.png)
+![Carte de réduction de surface d’attaque](../../media/attack-surface-reduction-rules.png)
 
 La carte **Règles de réduction de la surface d’attaque** offre une vue d’ensemble du déploiement des règles sur vos appareils.
 
@@ -166,7 +166,7 @@ La partie inférieure de cette carte présente les paramètres par règle sur to
 
 Pour afficher des informations détaillées sur les détections de règles ASR sur votre réseau, sélectionnez **afficher les détections** sur la carte des règles de réduction de la **surface d’attaque** . L’onglet **détections** de la page rapport détaillé s’ouvre.
 
-![Onglet détections](../images/detections-tab.png)
+![Onglet détections](../../media/detections-tab.png)
 
 Le graphique en haut de la page affiche les détections dans le temps de détections de pile qui ont été bloquées ou auditées. Le tableau en bas répertorie les détections les plus récentes. Utilisez les informations suivantes sur le tableau pour comprendre la nature des détections :
 
@@ -179,7 +179,7 @@ Le graphique en haut de la page affiche les détections dans le temps de détect
 
 Dans la page rapport sur les règles de réduction de la **surface d’attaque** , accédez à l’onglet **configuration** pour vérifier les paramètres de règle pour les appareils individuels. Sélectionnez un appareil pour obtenir des informations détaillées sur la façon dont chaque règle est en mode bloquer, mode audit ou désactivé entièrement.
 
-![Onglet Configuration](../images/configuration-tab.png)
+![Onglet Configuration](../../media/configuration-tab.png)
 
 Microsoft Intune offre des fonctionnalités de gestion pour vos règles de récupération automatique du système. Si vous souhaitez mettre à jour vos paramètres, sélectionnez **prise en main** sous configurer les **appareils** sous l’onglet pour ouvrir gestion des appareils sur Intune.
 
@@ -192,7 +192,7 @@ Les exclusions sont gérées sur Microsoft Intune, mais le centre de sécurité 
 >[!NOTE]  
 >L’outil analyse les détections par toutes les règles de réduction de la surface d’attaque, mais [seules certaines règles prennent en charge les exclusions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr).
 
-![Onglet ajouter des exclusions](../images/add-exclusions-tab.png)
+![Onglet ajouter des exclusions](../../media/add-exclusions-tab.png)
 
 Le tableau répertorie tous les noms de fichiers détectés par les règles de réduction de la surface d’attaque. Vous pouvez sélectionner des fichiers pour vérifier l’impact de leur exclusion :
 

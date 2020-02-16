@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca9b752f55ebe3fecec4f312bc89b45d99cf0d7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8276dcf85f6c5fd61e01e67deee4fea35c1a15c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601051"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067449"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Stratégies d’autorisation d’accès B2B invité et externe
 Cet article explique comment ajuster les stratégies courantes d’identité et d’accès aux appareils pour autoriser l’accès au compte B2B (utilisateurs invités et externes). Ce guide s’appuie sur les [stratégies courantes d’identité et d’accès aux appareils](identity-access-policies.md).
@@ -33,7 +33,7 @@ Fournir un chemin d’accès permettant aux utilisateurs B2B de s’authentifier
 
 Le diagramme suivant illustre les stratégies courantes d’identité et d’accès aux appareils et indique (avec une icône en crayon) les stratégies à ajouter ou à mettre à jour pour protéger les accès invités et externes. 
 
-![Résumé des mises à jour de stratégie pour la protection de l’accès invité](../images/identity-access-ruleset-guest.png)
+![Résumé des mises à jour de stratégie pour la protection de l’accès invité](../media/identity-access-ruleset-guest.png)
 
 Le tableau suivant répertorie les stratégies que vous devez mettre à jour ou créer. Les stratégies courantes lient aux instructions de configuration associées dans l’article [Common Identity and Device Access Policies](identity-access-policies.md) .
 
@@ -45,7 +45,7 @@ Le tableau suivant répertorie les stratégies que vous devez mettre à jour ou 
 
 Pour inclure ou exclure des invités et des utilisateurs externes dans les règles d’accès conditionnel, cliquez sur l’onglet inclure ou exclure et vérifiez **tous les invités et les utilisateurs externes**.
 
-![capture d’écran des contrôles pour exclure des invités](../images/identity-access-exclude-guests-ui.png)
+![capture d’écran des contrôles pour exclure des invités](../media/identity-access-exclude-guests-ui.png)
 
 ## <a name="more-information"></a>Plus d’informations
 

@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855383"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066844"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -59,25 +59,25 @@ Chaque secteur d’activité possède aussi sa propre réglementation spécialis
 - **Protection sensible**: certains clients disposent d’un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou nécessitent que toutes les données soient protégées à un niveau supérieur. Vous pouvez appliquer une protection accrue à l’ensemble des données ou à des jeux de données spécifiques dans votre environnement Office 365. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.  
 - **Hautement réglementé**: certaines organisations peuvent avoir une petite quantité de données qui est hautement classifiée, des secrets commerciaux consititutes ou des données réglementées. Microsoft fournit des fonctionnalités pour aider les organisations à respecter de telles exigences, notamment de protection renforcée des appareils et des identités.
 
-![Cône de sécurité : tous les clients > certains clients > des clients spécifiques. Application étendue à une application spécifique](../images/M365-idquality-threetiers.png)
+![Cône de sécurité : tous les clients > certains clients > des clients spécifiques. Application étendue à une application spécifique](../media/M365-idquality-threetiers.png)
 
 Ce guide vous montre comment implémenter la protection des identités et des périphériques pour chacune de ces niveaux de protection. Utilisez ces conseils comme point de départ pour votre organisation et ajustez les stratégies pour répondre aux besoins spécifiques de votre organisation.
 
 Il est important d’utiliser des niveaux de protection cohérents entre vos données, vos identités et vos appareils. Par exemple, si vous implémentez ces instructions, veillez à protéger vos données à des niveaux comparables. Ces modèles d’architecture vous montrent quelles fonctionnalités sont comparables.
 
 **La protection des appareils et de l’identité pour Office 365**<br/>
-![Miniature de l’affiche « protection des identités et des appareils pour Office 365 »](../images/O365_Identity_device_protection_thumb.png)<br/>
+![Miniature de l’affiche « protection des identités et des appareils pour Office 365 »](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Plus de langues](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **Solutions de protection des fichiers dans Office 365**<br/>
-![Miniature de l’affiche « solutions de protection de fichier dans Office 365 »](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
+![Miniature de l’affiche « solutions de protection de fichier dans Office 365 »](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>Compromis entre sécurité et productivité
 
 L’implémentation d’une stratégie de sécurité nécessite des compromis entre la sécurité et la productivité. Il est utile d’évaluer la façon dont chaque décision influe sur l’équilibre de la sécurité, des fonctionnalités et de la convivialité.
 
-![La sécurité, les fonctionnalités et la facilité d’utilisation de l’équilibrage de la sécurité.](media/policies-configurations/security-triad.png)
+![La sécurité, les fonctionnalités et la facilité d’utilisation de l’équilibrage de la sécurité.](../media/policies-configurations/security-triad.png)
 
 Les recommandations fournies sont basées sur les principes suivants :
 
@@ -116,7 +116,7 @@ Les stratégies [Intune App protection](https://docs.microsoft.com/intune/app-pr
 
 Ce guide vous montre comment créer des stratégies recommandées pour appliquer l’utilisation des applications approuvées et déterminer comment ces applications peuvent être utilisées avec vos données métiers.
 
-### <a name="office-365"></a>Office 365
+### <a name="office-365"></a>Office 365
 
 Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès à Office 365, notamment Exchange Online, SharePoint Online et OneDrive entreprise. En plus de mettre en œuvre ces stratégies, nous vous recommandons d’augmenter également le niveau de protection pour votre client Office 365 à l’aide de ces ressources :
 
