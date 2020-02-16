@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 258e116e2d51a5fde9f6e9c3273824994b9dcfa6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c72e340092bbd366277114a56aae7574d43dab5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596661"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085081"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers teams
 
@@ -37,7 +37,7 @@ Vous n’avez pas besoin d’activer les services dépendants pour commencer à 
 
 - Groupes Office 365
 - Sites d’équipe SharePoint
-- OneDrive Entreprise
+- OneDrive Entreprise
 - Boîtes aux lettres
 - Diffuser des vidéos et des plans du planificateur (si ces services sont activés)
 
@@ -45,14 +45,14 @@ Vous n’avez pas besoin d’activer les services dépendants pour commencer à 
 
 Le diagramme suivant illustre l’ensemble des stratégies recommandées pour la protection de la conversation, des groupes et du contenu dans Teams. L’icône représentant un crayon indique quelles stratégies doivent être revisitées afin de s’assurer que les services teams et les services dépendants sont inclus dans l’affectation d’applications Cloud.
 
-![Diagramme illustrant l’utilisation de Microsoft teams sur différents appareils.](../images/identity-access-ruleset-teams.png)
+![Diagramme illustrant l’utilisation de Microsoft teams sur différents appareils.](../media/identity-access-ruleset-teams.png)
 
 Il s’agit des services dépendants à inclure dans l’affectation d’applications Cloud pour teams :
 
 - Microsoft Teams
 - Sharepoint Online et OneDrive Entreprise
 - Exchange Online
-- Skype Entreprise Online
+- Skype Entreprise Online
 - Microsoft Stream (enregistrements de réunions)
 - Planificateur Microsoft (tâches du planificateur et données de plan)
 
@@ -76,7 +76,7 @@ Ce tableau répertorie les stratégies qui doivent être revisitées, ainsi que 
 
 Pour référence, le diagramme suivant illustre la façon dont les équipes des services s’appuient sur. Pour plus d’informations et des illustrations supplémentaires, consultez [la rubrique Microsoft teams et les services de productivité associés dans microsoft 365 pour les architectes informatiques](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
 
-![Diagramme montrant les dépendances de teams sur SharePoint Online, OneDrive entreprise et Exchange.](../images/identity-access-logical-architecture-teams.png)
+![Diagramme montrant les dépendances de teams sur SharePoint Online, OneDrive entreprise et Exchange.](../media/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>Activation de l’accès invité et externe pour teams
 

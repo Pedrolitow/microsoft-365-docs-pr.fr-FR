@@ -12,16 +12,16 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 964756a1fadba89f644a0d04c1d35d2945b78c6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a53759eafbedc6b48d2a6266b4b52777112941d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602871"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085563"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>Étape 4 : surveillance de la conformité et de l’état du périphérique
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics utilise des données de diagnostic pour fournir des informations riches et exploitables qui vous aideront à mieux comprendre l'efficacité opérationnelle et l’état des périphériques de Windows 10 dans votre environnement.
 
@@ -35,4 +35,4 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](win
 
 |||
 |:-------|:-----|
-|![Étape 5](./media/stepnumbers/Step5.png)| [Déployer les fonctionnalités de sécurité Windows 10 Entreprise](windows10-enable-security-features.md) |
+|![Étape 5](../media/stepnumbers/Step5.png)| [Déployer les fonctionnalités de sécurité Windows 10 Entreprise](windows10-enable-security-features.md) |

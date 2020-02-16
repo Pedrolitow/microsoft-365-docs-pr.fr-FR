@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3fe8a390e92e56a98d16a4cbc647a74b38c248ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600191"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087569"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure score (aperçu)
 
@@ -41,7 +41,7 @@ Les organisations ont accès à des visualisations robustes de mesures et tendan
 
 En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). En savoir plus sur le [type de ressource de score sécurisé](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs. Si vous ne pouvez pas ou ne souhaitez pas arrêter une des actions d’amélioration, vous pouvez choisir d’accepter le risque ou le risque restant.
 
@@ -79,7 +79,7 @@ Avec un accès en lecture seule, vous n’êtes pas en mesure de modifier l’É
 * Administrateur de service
 * Lecteur Sécurité
 * Opérateur de sécurité
-* Lecteur global
+* Lecteur général
 
 ### <a name="graph-api"></a>API Graph
 
@@ -100,7 +100,7 @@ Pour vous aider à trouver plus rapidement les informations dont vous avez besoi
 
 Dans la page de présentation de Microsoft Secure score, vous pouvez voir la répartition des points entre ces groupes et les points disponibles. La page de vue d’ensemble est également l’endroit où vous pouvez obtenir une vue d’ensemble du score total, de la tendance historique de votre score de sécurité avec comparaisons de référence et des actions d’amélioration hiérarchisée qui peuvent être prises pour améliorer votre score.
 
-![](../media/secure-score/secure-score-homepage.png)
+![](../../media/secure-score/secure-score-homepage.png)
 *Page d’accueil du score sécurisé figure 1 : page de présentation de Microsoft Secure score*
 
 ## <a name="take-action-to-improve-your-score"></a>Prendre des mesures pour améliorer votre score
@@ -115,7 +115,7 @@ Le classement repose sur le nombre de points restants à atteindre, les difficul
 
 Lorsque vous sélectionnez une action d’amélioration spécifique, un menu volant de page entière s’affiche.  
 
-![Exemple](../media/secure-score/secure-score-improvement-action.png)
+![Exemple](../../media/secure-score/secure-score-improvement-action.png)
 de menu contextuel d’action d’amélioration*figure 2 : exemple de menu contextuel d’action d’amélioration*
 
 Pour terminer l’action, vous disposez de plusieurs options :

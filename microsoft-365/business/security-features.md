@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité fournies avec Microsoft 365 Business.
-ms.openlocfilehash: 0e1823374ec1843b6caa3f080393ca013302bf72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5f67d70c5a8f22e95b60a229d68ae12574d0036
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593422"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064796"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business
 
@@ -35,7 +35,7 @@ Microsoft 365 Business propose des fonctionnalités de sécurité simplifiées p
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Fonctionnalités de sécurité du centre d’administration de Microsoft 365
 
-[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise Microsoft 365 dans le centre d’administration, ce qui vous offre un moyen simple d’activer ou de désactiver ces fonctionnalités. Dans le centre d’administration, vous pouvez effectuer les opérations suivantes :
   
@@ -63,7 +63,7 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité d’entreprise M
 
 Les fonctionnalités avancées de Microsoft 365 Business sont disponibles pour vous aider à protéger votre entreprise contre les menaces et protéger les informations sensibles.
   
-- **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365-Protection avancée contre les menaces](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
     La protection avancée contre les menaces (ATP) permet de protéger votre activité contre le hameçonnage et les attaques par ransomware sophistiqués conçus pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
     
@@ -104,7 +104,7 @@ Votre abonnement professionnel Microsoft 365 inclut des fonctionnalités qui vou
     
     La licence d’archivage Exchange Online permet d’archiver facilement les messages avec la sauvegarde continue des données. Il stocke tous les courriers électroniques d’un utilisateur, y compris les éléments supprimés, si vous en avez besoin plus tard pour la découverte ou la restauration. En outre, vous pouvez utiliser différentes stratégies de rétention pour conserver les données de courrier électronique pour les conservations pour litige, eDiscovery ou pour répondre aux exigences de conformité.
     
-- **[Étiquettes de confidentialité](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+- **[Étiquettes de niveau de confidentialité](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
    Microsoft 365 Business inclut toutes les fonctionnalités d' [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Grâce à ce plan, vous pouvez créer des **étiquettes de confidentialité** qui vous permettent de contrôler l’accès aux informations sensibles dans les e-mails et les documents, avec des contrôles tels que « ne pas transférer » et « ne pas copier ». Vous pouvez également classer les informations sensibles comme « confidentielles » et spécifier le mode de partage des informations confidentielles à l’extérieur et à l’intérieur de l’entreprise. Le chiffrement au niveau de l’entreprise est facile à appliquer aux e-mails et aux documents afin de garantir la confidentialité de vos informations. Vous pouvez également installer le complément client Azure information protection pour les applications Office. Pour plus d’informations, consultez la rubrique [Azure information protection Unified Labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Pour les étiquettes de sensibilité, installez le **AzInfoProtection_UL. exe**.
 
@@ -123,6 +123,6 @@ Oui, ces fonctionnalités sont disponibles sur tous les marchés où Microsoft 3
     
 2. Dans le volet de navigation de gauche, localisez les **centres d’administration** et développez-le. 
     
-    ![Dans le volet de navigation de gauche, dans le centre d’administration Microsoft 365, sélectionnez centres d’administration.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![Dans le volet de navigation de gauche, dans le centre d’administration Microsoft 365, sélectionnez centres d’administration.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. Choisissez **conformité &amp; de sécurité** pour accéder au &amp; Centre de sécurité conformité.

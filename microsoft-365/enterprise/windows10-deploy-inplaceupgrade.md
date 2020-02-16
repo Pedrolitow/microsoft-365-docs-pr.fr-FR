@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602851"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085583"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Étape 2 : déployer Windows 10 entreprise pour les appareils existants en tant que mise à niveau sur place
 
 *Cet article s'applique à la fois aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Le chemin le plus simple pour mettre à niveau des PC actuellement exécutant Windows 7 ou Windows 8,1 vers Windows 10 est effectué via une mise à niveau sur place. Vous pouvez utiliser une séquence de tâches de gestionnaire de configuration (gestionnaire de configuration) pour automatiser complètement le processus. 
 
@@ -35,7 +35,7 @@ Procédez comme suit pour configurer et déployer une image Windows 10 entrepris
 
 L’affiche du gestionnaire de configuration est une page en mode paysage (17x11). Cliquez sur l’image ci-dessous pour afficher un fichier PDF dans votre navigateur. 
 
-[![Déployer Windows 10 avec l’affiche de Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+[![Déployer Windows 10 avec l’affiche de Configuration Manager](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
 Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) ou [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx).
 
@@ -151,4 +151,4 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](win
 
 |||
 |:-------|:-----|
-|![Étape 3](./media/stepnumbers/Step3.png)| [Déployer Windows 10 Entreprise pour des nouveaux appareils avec Windows Autopilot](windows10-deploy-autopilot.md) |
+|![Étape 3](../media/stepnumbers/Step3.png)| [Déployer Windows 10 Entreprise pour des nouveaux appareils avec Windows Autopilot](windows10-deploy-autopilot.md) |

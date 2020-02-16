@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment envoyer des messages chiffrés à l’aide d’Outlook.
-ms.openlocfilehash: 1a450a9891d47a136798432fdb919349fb82e097
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 559998326caedaf3352741ad9083940f79b1a614
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594735"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080455"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Chiffrer ou étiqueter votre courrier électronique sensible
 
@@ -43,7 +43,7 @@ Avant d’envoyer un courrier électronique avec des informations confidentielle
 - **Chiffrement :** Vous pouvez chiffrer votre courrier électronique pour protéger la confidentialité des informations contenues dans le message électronique. Lorsque vous chiffrez un message électronique, il est converti du texte brut lisible en texte Cypher brouillé. Seul le destinataire qui dispose de la clé privée correspondant à la clé publique utilisée pour chiffrer le message peut déchiffrer le message en lecture. Tout destinataire sans clé privée correspondante voit le texte indéchiffrable. Votre administrateur peut définir des règles pour chiffrer automatiquement les messages qui répondent à certains critères. Par exemple, votre administrateur peut créer une règle qui chiffre tous les messages envoyés en dehors de votre organisation ou tous les messages qui mentionnent des mots ou des expressions spécifiques. Toutes les règles de chiffrement seront appliquées automatiquement.
 - **Étiquettes de sensibilité :** Votre campagne peut également configurer des étiquettes de confidentialité que vous pouvez appliquer à vos fichiers et à vos courriers électroniques pour les garder en conformité avec les stratégies de protection des informations de votre campagne. Lorsque vous définissez une étiquette, celle-ci est conservée dans votre courrier électronique, même si elle est envoyée, par exemple, en apparaissant comme en-tête de votre message.
 
-![Diagramme d’un message avec des légendes pour les étiquettes et le chiffrement](media/m365-campaign-email-encrypt.png)
+![Diagramme d’un message avec des légendes pour les étiquettes et le chiffrement](../media/m365-campaign-email-encrypt.png)
 
 
 ## <a name="set-it-up"></a>Configuration

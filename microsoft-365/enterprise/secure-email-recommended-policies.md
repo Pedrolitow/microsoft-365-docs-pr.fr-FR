@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: e8c2b10f3e1dd88703b15c326dedb164a686cfca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596731"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084307"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 
@@ -34,7 +34,7 @@ Ces recommandations nécessitent que vos utilisateurs utilisent des clients de m
 
 Le diagramme suivant illustre les stratégies courantes d’identité et d’accès aux appareils et indique quelles stratégies doivent être mises à jour pour protéger le courrier électronique. Notez l’ajout d’une nouvelle règle pour Exchange Online afin de bloquer les clients ActiveSync. Cela force l’utilisation d’Outlook Mobile.
 
-![Résumé des mises à jour de stratégie pour la protection de la messagerie](../images/identity-access-ruleset-mail.png)
+![Résumé des mises à jour de stratégie pour la protection de la messagerie](../media/identity-access-ruleset-mail.png)
 
 Si vous avez inclus Exchange Online et Outlook dans l’étendue des stratégies lors de leur configuration, il vous suffit de créer la nouvelle stratégie pour bloquer les clients ActiveSync. Passez en revue les stratégies répertoriées dans le tableau suivant et effectuez les ajouts recommandés, ou confirmez que ceux-ci sont déjà inclus. Chaque règle lie les instructions de configuration associées dans l’article [Common Identity and Device Access Policies](identity-access-policies.md) .
 
@@ -70,7 +70,7 @@ Cette stratégie empêche les clients ActiveSync de contourner les autres règle
 
 8. Choisissez **conditions**, puis **applications clientes**.
 
-9. Pour **configurer**, sélectionnez **Oui**. Vérifiez uniquement les éléments suivants : les **applications mobiles et les clients de bureau** et **les clients Exchange ActiveSync**. Sélectionnez **Done (OK)**.
+9. Pour **configurer**, sélectionnez **Oui**. Vérifiez uniquement les éléments suivants : les **applications mobiles et les clients de bureau** et **les clients Exchange ActiveSync**. Choisissez **OK**.
 
 10. Choisissez **Accorder** dans la section **Contrôles d’accès**.
 

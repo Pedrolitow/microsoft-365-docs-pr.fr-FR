@@ -12,16 +12,16 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: a709971786dd85ff0f086c5c9d57c2d807391c65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596621"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085536"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3 : Windows 10 Entreprise
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![Phase 3 : Windows 10 Entreprise](../media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 Enterprise comprend Windows 10 entreprise, qui vous offre les outils permettant d’en faire plus et de rester sécurisé. Windows 10 entreprise :
 
@@ -49,7 +49,7 @@ Si ces scénarios de déploiement ne répondent pas aux besoins de votre organis
 Pour en savoir plus sur Windows 10, consultez les articles suivants :
 
 - [Page du produit Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)
-- [Windows 10](https://docs.microsoft.com/windows/windows-10)
+- [Windows 10](https://docs.microsoft.com/windows/windows-10)
 - [Déployer et mettre à jour Windows 10](https://docs.microsoft.com/windows/deployment/)
 
 
@@ -80,10 +80,10 @@ Jetez un œil à Microsoft et découvrez comment l’entreprise [a déployé Win
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, a [déployé Windows 10 entreprise](contoso-win10.md).
 
-![Société Contoso](./media/contoso-overview/contoso-icon.png)
+![Société Contoso](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Étape suivante
 
 |||
 |:-------|:-----|
-|![Étape 1](./media/stepnumbers/Step1.png)| [Préparer votre organisation pour Windows 10 Entreprise](windows10-prepare-your-org.md) |
+|![Étape 1](../media/stepnumbers/Step1.png)| [Préparer votre organisation pour Windows 10 Entreprise](windows10-prepare-your-org.md) |

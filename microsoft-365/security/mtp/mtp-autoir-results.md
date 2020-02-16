@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 208cbb49afc2f4520fa44a4ef283194bcaff22be
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08aa1f0c252d931ab1abf078b1c0cfcf7d9b43a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600091"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083751"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600091"
 
 Lorsqu'une enquête automatisée a lieu dans le Protection Microsoft contre les menaces, les détails concernant cet examen sont disponibles pendant et après le processus d'examen automatisé. Si vous disposez des [autorisations nécessaires](mtp-action-center.md#required-permissions-for-action-center-tasks), vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente. 
 
-![Détails de l’examen](../images/mtp-air-investdetails.png)
+![Détails de l’examen](../../media/mtp-air-investdetails.png)
 
 ## <a name="open-the-investigation-details-view"></a>Ouvrir la vue Détails de l’examen
 
@@ -60,7 +60,7 @@ La page Détails de l’incident permet d’afficher des informations détaillé
 
 2. Dans le volet de navigation, choisissez **Incidents**. 
 
-3. Sélectionnez un élément dans la liste pour ouvrir la vue Détails de l’événement.<br/>![Détails de l’incident](../images/mtp-incidentdetails-tabs.png)
+3. Sélectionnez un élément dans la liste pour ouvrir la vue Détails de l’événement.<br/>![Détails de l’incident](../../media/mtp-incidentdetails-tabs.png)
 
 4. Sous l’onglet **Examen**, sélectionnez un examen dans la liste.
 
@@ -68,7 +68,7 @@ La page Détails de l’incident permet d’afficher des informations détaillé
 
 Utilisez la vue Détails de l’examen pour afficher les activités passées, actuelles et en attente relatives à un examen. La vue Détails de l’examen est semblable à l’image suivante :
 
-![Détails de l’examen](../images/mtp-air-investdetails.png)
+![Détails de l’examen](../../media/mtp-air-investdetails.png)
 
 Dans la vue Détails de l’examen, vous pouvez consulter des informations sur les onglets **Graphique de l'examen**, **Alertes**, **Appareils**, **Identités**, **Principales conclusions**, **Entités**, **Journal**et **Actions en attente**, comme décrit dans le tableau suivant.
 

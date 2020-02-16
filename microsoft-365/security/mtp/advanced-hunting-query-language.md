@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 586b887c9c5c1e4c19623c89dd08ed62ba0d4bb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: acc515d046b1ebd2ff7c5dd9c52b363fe99f0b9e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600341"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087460"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -53,7 +53,7 @@ DeviceProcessEvents
 
 Voici son futur aspect dans le repérage avancé.
 
-![Image de la requête de repérage avancé Microsoft Defender – Protection avancée contre les menaces](../images/advanced-hunting-query-example.png)
+![Image de la requête de repérage avancé Microsoft Defender – Protection avancée contre les menaces](../../media/advanced-hunting-query-example.png)
 
 La requête commence par un bref commentaire décrivant sa fonction. Cela vous permet de choisir ultérieurement d’enregistrer votre requête et de la partager avec d’autres dans votre organisation.
 
@@ -130,7 +130,7 @@ Les données des tables de repérage avancé sont généralement classées dans 
 
 La section **Prise en main** fournit quelques requêtes simples utilisant des opérateurs fréquemment utilisés. Essayez d’exécuter ces requêtes et de leur apporter de légères modifications.
 
-![Image d’une fenêtre de repérage avancé](../images/advanced-hunting-get-started.png)
+![Image d’une fenêtre de repérage avancé](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >Hormis les exemples de requête de base, vous pouvez également accéder à des [requêtes partagées](advanced-hunting-shared-queries.md) pour des scénarios de repérage de menace spécifiques. Explorez les requêtes partagées sur le côté gauche de la page ou le référentiel de requête GitHub.

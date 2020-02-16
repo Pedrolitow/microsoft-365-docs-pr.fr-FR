@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5ad616deb8717772a68b01147ed858f8e7f6ed7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f7aaf7eb4425dadeb27699654656c86d2b6263
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087297"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Hiérarchiser les incidents dans la Protection Microsoft contre les menaces
 
@@ -39,7 +39,7 @@ La Protection Microsoft contre les menaces applique l’analyse de la corrélati
 La **file d’attente des incidents** affiche un ensemble d’incidents qui ont été signalés par plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité.
 
 
-![Image de la file d’attente des incidents](../images/incidents-queue.png) 
+![Image de la file d’attente des incidents](../../media/incidents-queue.png) 
 
 Par défaut, la file d’attente dans le Centre de sécurité Microsoft 365 affiche les incidents détectés au cours des 30 derniers jours, l’incident le plus récent apparaissant en tête de liste, qui vous permet d’accéder en avant-première aux incidents les plus récents.
 

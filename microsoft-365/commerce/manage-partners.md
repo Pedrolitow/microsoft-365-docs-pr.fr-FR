@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment travailler avec des fournisseurs de solutions certifiés par Microsoft (partenaires) pour acheter et gérer des produits et services pour votre organisation ou votre établissement scolaire.
 keywords: partenaire, fournisseur de solutions
-ms.openlocfilehash: 43965e6a245384043fb7607a37d8a831f4e0d752
-ms.sourcegitcommit: e89f4ce9a472c9c6c066d5c632e8e7b6afcc2066
+ms.openlocfilehash: ad51ee23b780de33aaaca6ad651816dba89c7bc9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41712042"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080361"
 ---
 # <a name="manage-partner-relationships"></a>Gérer les relations avec les partenaires
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business
-ms.openlocfilehash: 3cfb8d0a38fc797ec25fb0e4e33409e225646ef2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2dfccc7041c5fa32fb56d2ef2b113e9a3c883392
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594849"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080647"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -48,7 +48,7 @@ Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les
     
 3. Double-cliquez sur la stratégie par défaut pour modifier cette stratégie à l’échelle de l’entreprise.
     
-4. Cliquez sur **paramètres**.
+4. Cliquez sur **Paramètres**.
     
 5. Sous **Common Attachment types Filter**, sélectionnez **activé**. Les types de fichiers bloqués sont répertoriés dans la fenêtre située directement en dessous de ce contrôle.  Veillez à ajouter ces FileTypes :
    - ADE, ADP, Ani, bas, bat, chm, cmd, com, cpl, CRT, HLP, HT, HTA, inf, ins, fournisseur de services Internet, Job, js, jse, lnk, MDA, de mdb, MDE, mdz, MSC, MSI, MSP, MST, PCD, reg, SCR, SCT, SHS, URL, VB, VBE, vbs, WSC, wsf, WSH  <br/> Vous pouvez ajouter ou supprimer des types de fichiers ultérieurement, si nécessaire.
@@ -145,7 +145,7 @@ Pour créer une stratégie anti-hameçonnage ATP, regardez [cette vidéo de form
 6. Une fois que vous avez vérifié vos paramètres, sélectionnez **créer cette stratégie** ou **Enregistrer**, selon le cas.
     
 
-|**Paramètre ou option**<br/>|**Paramètre recommandé** <br/>|
+|**Paramètre ou option**<br/>|**Valeur recommandée** <br/>|
 |:-----|:-----|
 |Nom  <br/> |Domaine et équipe de campagne la plus intéressante  <br/> |
 |Description  <br/> |Assurez-vous que le personnel le plus important et que notre domaine ne sont pas empruntés.  <br/> |
@@ -160,24 +160,24 @@ Pour plus d’informations, reportez-vous à la rubrique [set up Office 365 ATP 
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Se protéger contre les pièces jointes, les fichiers et les liens malveillants à l’aide de la protection avancée contre les menaces
 
-![Bannière pointant vers https://aka.ms/aboutM365preview.](../business/media/m365admincenterchanging.png)
+![Bannière pointant vers https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
 
 Tout d’abord, assurez-vous que le <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> nouvel aperçu du centre d’administration est activé dans le centre d’administration. Activez le bouton bascule en regard du texte dans **le nouveau centre d’administration**.
 
-   ![Le nouvel aperçu du centre d’administration sur.](media/previewon.png)
+   ![Le nouvel aperçu du centre d’administration sur.](../media/previewon.png)
 
 Si vous ne voyez pas encore la page de **configuration** avec des cartes dans votre client, reportez-vous à la &amp; procédure d’exécution de ces étapes dans le centre de sécurité conformité Office 365. Consultez la rubrique [configurer des pièces jointes approuvées ATP dans le centre de sécurité & conformité](#set-up-atp-safe-attachments-in-the-security--compliance-center) et [configurer des liens fiables ATP dans le centre de conformité & de sécurité](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  Dans le volet de navigation de gauche, sélectionnez **configuration**.
 2. Sur la page de **configuration** , choisissez **Afficher** sur la carte **de protection avancée** contre les menaces.</br></br>
-    ![Choisissez afficher sur la protection renforcée contre les menaces avancées.](media/startatp.png) 
+    ![Choisissez afficher sur la protection renforcée contre les menaces avancées.](../media/startatp.png) 
 
 3. Sur la page **améliorer la protection contre les menaces avancées** , sélectionnez **prise en main**.
 4. Dans le volet qui s’ouvre, activez les cases à cocher en regard de **liens et pièces jointes dans courrier électronique**, **analyser les fichiers dans SharePoint, OneDrive et teams**, puis **analysez les liens dans les applications Office Online et de bureau** sous **analyser les éléments de contenu malveillant**.
 
       - Sous **liens et pièces jointes dans courrier électronique**, tapez tous les utilisateurs ou les utilisateurs spécifiques dont vous souhaitez que les messages électroniques soient analysés.
 
-    ![Activez toutes les cases à cocher dans augmenter la protection contre les menaces avancées.](media/setatp.png)
+    ![Activez toutes les cases à cocher dans augmenter la protection contre les menaces avancées.](../media/setatp.png)
 5. Choisissez **créer des stratégies** pour activer les pièces jointes approuvées ATP et les liens fiables ATP.
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Configuration des pièces jointes approuvées ATP dans le centre de sécurité & conformité
@@ -201,7 +201,7 @@ Pour créer une stratégie de pièces jointes approuvées pour la protection ava
 7. Après avoir examiné vos paramètres, choisissez **créer cette stratégie** ou **Enregistrer**, selon le cas.
     
 
-|**Paramètre ou option**|**Paramètre recommandé** <br/>|
+|**Paramètre ou option**|**Valeur recommandée** <br/>|
 |:-----|:-----|
 |Nom  <br/> |Bloquer les courriers électroniques actuels et futurs avec des programmes malveillants détectés.  <br/> |
 |Description  <br/> |Bloquer les e-mails et pièces jointes en cours et à venir avec des programmes malveillants détectés.  <br/> |
@@ -245,7 +245,7 @@ Pour créer une stratégie ciblée pour tous les destinataires de votre domaine,
     
 3. Cliquez sur **Enregistrer**. 
 
-|**Paramètre ou option**|**Paramètre recommandé** <br/>|
+|**Paramètre ou option**|**Valeur recommandée** <br/>|
 |:-----|:-----|
 |Nom  <br/> |Stratégie de liens fiables pour tous les destinataires dans le domaine  <br/> |
 |Sélectionner l’action pour les URL potentiellement malveillantes dans les messages  <br/> |Sélectionnez **les URL activées seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien**.  <br/> |
@@ -263,7 +263,7 @@ Vous devez disposer du rôle journaux d’audit dans Exchange Online pour active
 1. Pour activer la recherche dans le journal d’audit, accédez au centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> à l’adresse, puis choisissez **conformité** sous **centres d’administration** dans le volet de navigation de gauche. 
 2. Sur la **page conformité de Microsoft 365** , sélectionnez **plus de ressources**, puis **ouvrez** la carte du **Centre &amp; de sécurité Office 365** .
 
-    ![Choisissez ouvrir sur le & de conformité Office 365 Security cars.](media/gotosecandcomp.png)
+    ![Choisissez ouvrir sur le & de conformité Office 365 Security cars.](../media/gotosecandcomp.png)
 3. Sur la page sécurité et conformité, sélectionnez **recherche** , puis **recherche dans le journal d’audit**.
 1. En haut de la page **recherche du journal d’audit** , sélectionnez **activer l’audit**.
 
@@ -276,14 +276,14 @@ Une fois que la fonctionnalité est activée, vous pouvez rechercher des fichier
 2. Dans le centre d’administration SharePoint, accédez à **stratégies** \> de **partage**.
 3. Sur la page **partage** , sous **liens de fichiers et de dossiers**, sélectionnez **personnes spécifiques**, et sous **Paramètres avancés pour les liens tout le monde**, sélectionnez **ces liens doivent expirer dans ce nombre de jours**et tapez 14 (ou un autre nombre de jours pendant lesquels vous souhaitez limiter la durée de vie du lien).
 
-    ![Choisissez des personnes spécifiques et définissez un délai d’expiration de liens de 14 jours.](media/anyonelinks.png)
+    ![Choisissez des personnes spécifiques et définissez un délai d’expiration de liens de 14 jours.](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>Alertes d’activité
 
 Vous pouvez utiliser des alertes d’activité pour effectuer le suivi des activités de l’administrateur et des utilisateurs et détecter les incidents de protection contre les menaces et les logiciels malveillants dans votre organisation. Votre abonnement inclut un ensemble de stratégies par défaut, mais vous pouvez également créer des stratégies personnalisées. Pour plus d’informations, consultez la rubrique [Alert Policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Par exemple, si vous stockez un fichier important dans SharePoint que vous ne voulez pas que quiconque partage en externe, vous pouvez créer une notification qui vous avertit si une personne ne la partage pas.
 
 La figure suivante illustre les stratégies par défaut incluses dans Microsoft 365 Business. <br/><br/>
-    ![Stratégies d’alerte par défaut incluses avec Microsoft 365 Business.](media/alertpolicies.png)
+    ![Stratégies d’alerte par défaut incluses avec Microsoft 365 Business.](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>Désactiver ou gérer le partage de calendrier
 
@@ -296,10 +296,10 @@ Vous pouvez empêcher les membres de votre organisation de partager leurs calend
 3. Choisissez **enregistrer les modifications** au bas de la page.
 
     La figure suivante illustre le partage de calendrier non autorisé. </br></br>
-    ![Capture d’écran de l’affichage du partage de calendrier externe comme non autorisé.](media/nocalendarsharing.png)
+    ![Capture d’écran de l’affichage du partage de calendrier externe comme non autorisé.](../media/nocalendarsharing.png)
 
     La figure suivante illustre les paramètres lorsque le partage de calendrier est autorisé avec un lien de messagerie avec uniquement les informations de disponibilité.
 
-   ![Capture d’écran du partage des disponibilités de calendrier avec tout le monde.](media/sharefreebusy.png)
+   ![Capture d’écran du partage des disponibilités de calendrier avec tout le monde.](../media/sharefreebusy.png)
 
 Si vos utilisateurs sont autorisés à partager leurs calendriers, consultez [ces instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) pour savoir comment les partager à partir d’Outlook sur le Web.

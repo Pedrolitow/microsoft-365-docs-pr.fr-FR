@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ec659a939064d34d3e0cc078a90cd343e495ae58
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6a0caa80d89ad40c3a2e2b0caa55c8dc2027a06d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957369"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087262"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -38,7 +38,7 @@ Les organisations ont accès à des visualisations robustes de mesures et tendan
 
 En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). En savoir plus sur le [type de ressource de score sécurisé](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage des rapports) ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs.
 
@@ -97,7 +97,7 @@ Pour vous aider à trouver plus rapidement les informations dont vous avez besoi
 
 Dans la page de présentation de Microsoft Secure score, vous pouvez voir la répartition des points entre ces groupes et les points disponibles. La page de vue d’ensemble est également l’endroit où vous pouvez obtenir une vue d’ensemble du score total, de la tendance historique de votre score de sécurité avec comparaisons de référence et des actions d’amélioration hiérarchisée qui peuvent être prises pour améliorer votre score.
 
-![](../media/secure-score/homepage-original.png)
+![](../../media/secure-score/homepage-original.png)
 *Page d’accueil du score sécurisé figure 1 : page de présentation de Microsoft Secure score*
 
 ## <a name="take-action-to-improve-your-score"></a>Prendre des mesures pour améliorer votre score
@@ -122,7 +122,7 @@ Lorsque vous sélectionnez une action d’amélioration spécifique, un survol s
 
 4. Sélectionnez **Review** , car l’action d’amélioration vous oblige à examiner régulièrement une partie de votre environnement pour gagner et conserver des points. Par exemple, les règles de transfert de boîtes aux lettres doivent être vérifiées chaque semaine afin de s’assurer que les données ne sont pas exportées à partir de votre réseau. Vous n’avez pas besoin d’effectuer des modifications, mais une action doit être effectuée. Si vous examinez régulièrement les règles, vous recevrez les points. Si ce n’est pas le cas, le score est réduit.
 
-![Exemple d’action d’amélioration du score sécurisé](../media/secure-score/secure-score1x450.png) ![Exemple d’action d’amélioration de la vérification du score sécurisé](../media/secure-score/secure-score2x450.png)
+![Exemple d’action d’amélioration du score sécurisé](../../media/secure-score/secure-score1x450.png) ![Exemple d’action d’amélioration de la vérification du score sécurisé](../../media/secure-score/secure-score2x450.png)
 
 *Figures 2 & 3 : lanceurs d’actions d’amélioration*
 
@@ -140,7 +140,7 @@ Pour faire en sorte que Microsoft Secure score un meilleur représentant de votr
 
 ### <a name="removed-not-scored-improvement-actions"></a>Suppression des actions d’amélioration « non notées »
 
-L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Un score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Les actions d’amélioration ne sont pas évaluées.  
+L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Le score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Les actions d’amélioration ne sont pas évaluées.  
 
 Pour ces raisons, toutes les actions d’amélioration qui n’ont pas été évaluées ont été supprimées. Aucune action n’est nécessaire de votre part.
 
@@ -210,11 +210,7 @@ Nouvelles actions d’amélioration ajoutées :
 
 L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Un score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Examiner les actions d’amélioration ne sont pas mesurées de la même façon que les autres actions d’amélioration.  
 
-Pour ces raisons, toutes les actions d’amélioration nécessitant une cadence de révision seront temporairement supprimées. Aucune action n’est nécessaire de votre part.
-
-### <a name="simplification-of-the-point-system"></a>Simplification du système de point
-
-Pour standardiser les points sur plusieurs expériences, chaque point d’action d’amélioration de score sécurisé est mis à jour avec une valeur de 10 points maximum. Il est nécessaire d’être plus cohérent à travers l’allongement des contrôles de sécurité que nous avons aujourd’hui et ceux que nous allons ajouter à l’avenir. S’il s’agit d’une modification importante et que vous verrez des totaux de point de dépôt, aucune modification n’est apportée à votre position de sécurité.  
+Pour ces raisons, toutes les actions d’amélioration nécessitant une cadence de révision seront temporairement supprimées. Aucune action n’est nécessaire de votre part. 
 
 ### <a name="preview-features"></a>Fonctionnalités de préversion
 
@@ -225,6 +221,7 @@ Les fonctionnalités suivantes seront incluses dans la [version d’évaluation]
 * Suivi et surveillance améliorés des régressions de score
 * Filtrage, balisage, recherche et regroupement de vos actions d’amélioration
 * Gérer vos objectifs à venir à l’aide de projections de score et des actions planifiées
+* Simplification du système de points
 * Et bien plus encore !
 
 ## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés

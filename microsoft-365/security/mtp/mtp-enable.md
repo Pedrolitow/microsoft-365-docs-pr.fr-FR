@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a85680e323c7a8fba6f2d74d5cc00c58c2013d23
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 8f966060ebc9a30166647b397b93f2b45356df74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662050"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083721"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
 
@@ -45,7 +45,7 @@ Microsoft Threat Protection agrège les données des différents services intég
 
 Avant d’activer le service, le centre de sécurité Microsoft 365 ([Security.Microsoft.com](https://security.microsoft.com)) n’affiche pas les **incidents** ni les options du **Centre de notifications** dans le volet de navigation.
 
-![Image du volet de navigation du centre de sécurité Microsoft 365 sans les](../images/mtp-off.png)
+![Image du volet de navigation du centre de sécurité Microsoft 365 sans les](../../media/mtp-off.png)
 fonctionnalités Microsoft Threat Protection*Centre de sécurité Microsoft 365 avec la protection Microsoft contre les menaces désactivée*
 
 Pour activer Microsoft Threat Protection, sélectionnez **paramètres** dans le volet de navigation. Dans la **[page Paramètres](https://security.microsoft.com/settings)**, consultez la section**opt-in/opt-out**de la **protection de Microsoft contre** > les menaces.
@@ -65,7 +65,7 @@ Une fois le service configuré, il ajoute :
 - Centre de notifications pour la gestion des [examen et réponse automatisés](mtp-autoir.md)
 - La fonctionnalités de [repérage avancé](advanced-hunting-overview.md) à la page **Repérage**
 
-![Image du volet de navigation du centre de sécurité Microsoft 365 avec les](../images/mtp-on.png)
+![Image du volet de navigation du centre de sécurité Microsoft 365 avec les](../../media/mtp-on.png)
 fonctionnalités de protection de Microsoft Threat*Centre de sécurité Microsoft 365 avec gestion des incidents et autres fonctionnalités de protection contre les menaces Microsoft*
 
 ### <a name="getting-azure-atp-data"></a>Obtention de données Azure ATP

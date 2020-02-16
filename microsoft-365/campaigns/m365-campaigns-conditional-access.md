@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment exiger l’authentification MFA et configurer des stratégies d’accès conditionnel pour Microsoft 365 Business.
-ms.openlocfilehash: b65cccf9931da4701157f26ffece7a7c90689094
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594859"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056407"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Exiger l’authentification multifacteur et configurer des stratégies d’accès conditionnel
 
@@ -58,13 +58,13 @@ Pour exiger que tous les utilisateurs se connectent avec une deuxième forme d�
 2. Sur la page de configuration, choisissez **Afficher** dans la carte de **connexion plus sécurisée** .
 
 
-    ![Créer une carte plus sécurisée de connexion.](media/setupmfa.png)
+    ![Créer une carte plus sécurisée de connexion.](../media/setupmfa.png)
 3. Sur la page effectuer la connexion de façon plus sécurisée, sélectionnez **prise en main**.
  
 4. Dans le volet sécurité de connexion renforcée, activez les cases à cocher en regard de **exiger l’authentification multifacteur pour les administrateurs** et **obliger les utilisateurs à s’inscrire pour l’authentification multifacteur et à bloquer l’accès si le risque est détecté**.
     N’oubliez pas d’exclure le compte administrateur d' [urgence](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) ou de « disjoncteur » de l’exigence MFA dans la zone **Rechercher des utilisateurs** .
     
-    ![Renforcer la page de sécurité à connexion unique.](media/requiremfa.png)
+    ![Renforcer la page de sécurité à connexion unique.](../media/requiremfa.png)
 
 5. Sélectionnez **créer une stratégie** au bas de la page.
 
@@ -74,7 +74,7 @@ Pour exiger que tous les utilisateurs se connectent avec une deuxième forme d�
     
     Les stratégies de base sont répertoriées sur la page, et vous pouvez voir que l' **authentification MFA pour les administrateurs** et la **protection des utilisateurs finaux** sont déjà activées une fois que vous avez effectué les étapes de la rubrique [require MFA](#require-mfa).
 
-    ![Page répertoriant les stratégies de base pour l’accès conditionnel.](media/casettings.png)
+    ![Page répertoriant les stratégies de base pour l’accès conditionnel.](../media/casettings.png)
 2. Consultez les instructions spécifiques suivantes pour chaque stratégie :
 
     - [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

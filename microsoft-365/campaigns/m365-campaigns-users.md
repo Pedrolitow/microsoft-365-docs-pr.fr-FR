@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 pour les campagnes affecte vos utilisateurs.
-ms.openlocfilehash: 7c510de861758da3da2c86a6804a58de6d4e8030
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594755"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080504"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Impact de Microsoft 365 pour les campagnes sur vos utilisateurs
 
 Microsoft 365 pour les campagnes simplifie l’accès des pirates à votre environnement. Le compromis est que les utilisateurs doivent savoir comment travailler dans cet environnement plus sécurisé. Nous comprenons qu’une patience supplémentaire est nécessaire, mais elle est utile pour assurer la protection de votre organisation.
 
-![Illustration de la somme des points clés de la suite ci-dessous pour les iPhone, les appareils Android, les Mac, Windows 10, le partage et le personnel de la clé](media/M365-democracy-Users_700px.png)
+![Illustration de la somme des points clés de la suite ci-dessous pour les iPhone, les appareils Android, les Mac, Windows 10, le partage et le personnel de la clé](../media/M365-democracy-Users_700px.png)
 
 ## <a name="use-secure-email-practices"></a>Utiliser des pratiques de messagerie sécurisées
 Tous les utilisateurs doivent connaître et utiliser ces pratiques de messagerie pour sécuriser leur messagerie :
@@ -65,7 +65,7 @@ Pour les [appareils Windows 10 et Mac non gérés](m365-campaigns-protect-pcs-ma
 
 ||||
 |:-----|:-----|:------|
-||**Windows 10**|**Mac**|
+||**Windows 10**|**Mac**|
 |Fonctionnalités de sécurité|Activer la protection des périphériques BitLocker<p><p> Vérifier que Windows Defender reste activé <p>Activer le pare-feu Windows| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection de pare-feu|
 
 Pour en savoir plus sur ces recommandations, consultez [la rubrique protéger votre compte et vos appareils des pirates et programmes malveillants](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).

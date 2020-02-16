@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 272e8a76cdb3a1555f561bd56e63422f14394904
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596951"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067407"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
@@ -31,7 +31,7 @@ Ce guide explique comment déployer les stratégies recommandées dans un enviro
 
 Le diagramme suivant illustre l’ensemble de stratégies recommandé. Elle indique le niveau de protection auquel chaque stratégie s’applique et indique si les stratégies s’appliquent aux PC, téléphones et tablettes, ou aux deux catégories d’appareils. Il indique également où ces stratégies sont configurées.
 
-![Stratégies courantes de configuration de l’accès aux appareils et aux identités](../images/Identity_device_access_policies_byplan.png)
+![Stratégies courantes de configuration de l’accès aux appareils et aux identités](../media/Identity_device_access_policies_byplan.png)
 
 
 Le reste de cet article explique comment configurer ces stratégies. 
@@ -62,13 +62,13 @@ Une pratique recommandée consiste à créer un groupe Azure AD pour l’exclusi
 
 Le diagramme suivant fournit un exemple d’affectations et d’exclusions d’utilisateurs.
 
-![Exemple d’affectations et d’exclusions d’utilisateurs pour les règles MFA](../images/identity-access-policies-assignment.png)
+![Exemple d’affectations et d’exclusions d’utilisateurs pour les règles MFA](../media/identity-access-policies-assignment.png)
 
 Dans l’illustration, l’équipe « top secret Project X Team » est affectée à une stratégie d’accès conditionnel qui requiert la MFA *Always*. Soyez judicieuses lorsque vous appliquez des niveaux de protection plus élevés aux utilisateurs. Les membres de cette équipe de projet devront fournir deux formulaires d’authentification à chaque fois qu’ils se connectent, même s’ils n’affichent pas de contenu hautement réglementé.  
 
 Tous les groupes Azure AD créés dans le cadre de ces recommandations doivent être créés en tant que groupes Office 365. C’est particulièrement important pour le déploiement d’Azure Information Protection lors de la sécurisation des documents dans SharePoint Online.
 
-![Capture d’écran pour la création de groupes Office 365](../images/identity-device-AAD-groups.png)
+![Capture d’écran pour la création de groupes Office 365](../media/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Exiger une authentification multifacteur basée sur le risque de connexion
@@ -84,7 +84,7 @@ Pour créer une stratégie d’accès conditionnel :
 
 4. Choisissez **Nouvelle stratégie**.
 
-![Stratégie d’accès conditionnel de base de référence](./media/secure-email/CA-EXO-policy-1.png)
+![Stratégie d’accès conditionnel de base de référence](../media/secure-email/CA-EXO-policy-1.png)
 
  Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel à implémenter pour cette stratégie.
 
@@ -202,7 +202,7 @@ La liste d’applications recommandée inclut les éléments suivants :
 - PowerPoint
 - Excel
 - Word
-- Microsoft Teams
+- Microsoft Teams
 - Microsoft SharePoint
 - Visionneuse Microsoft Visio
 - OneDrive
@@ -277,7 +277,7 @@ Créez une stratégie pour chaque plateforme :
 - Android
 - Android Enterprise
 - iOS
-- OS
+- macOS
 - Ce paramètre est disponible sur les types d’appareils suivants :
 - Windows 8,1 et versions ultérieures
 - Windows 10 et versions ultérieures
@@ -307,7 +307,7 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
+|Mot de passe|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
 ||Mots de passe simples|Bloc||
 ||Type de mot de passe|Valeur par défaut du périphérique||
 ||Longueur minimale du mot de passe|6 ||
@@ -328,7 +328,7 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyen||
+|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyenne||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Exiger des PC conformes (mais pas les téléphones et les tablettes conformes)
 Avant d’ajouter une stratégie pour exiger des PC conformes, veillez à inscrire les appareils pour la gestion dans Intune. L’utilisation de l’authentification multifacteur est recommandée avant l’inscriptions de périphériques dans Intune pour garantir que l’appareil est en possession de l’utilisateur prévu. 
