@@ -10,16 +10,24 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9a5d163d14dda6aed50a39a27ae9a03ffbed526c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c021654c99faf3104766dc05fe466ce9537d656
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596581"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091357"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cette rubrique répertorie les rubriques nouvelles et mises à jour dans la [documentation du bureau géré Microsoft](index.yml). Les rubriques « mises à jour » sont celles qui ont eu des ajouts ou corrections de matériel (correctifs mineurs, tels que la correction des fautes de frappe, de style ou de mise en forme). Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails de toutes les modifications) en visitant le [référentiel sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="january-2020"></a>Janvier 2020
+Rubrique nouvelle ou modifiée | Description
+--- | ---
+[Préparer vos utilisateurs à l’utilisation des appareils](get-started/get-started-devices.md)| Rubrique mise à jour
+[Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](get-started/add-admin-contacts.md) | Rubrique mise à jour
+[Configuration des appareils](service-description/device-policies.md) | Rubrique mise à jour
+
 
 ## <a name="december-2019"></a>Décembre 2019
 Rubrique nouvelle ou modifiée | Description
@@ -71,7 +79,7 @@ Rubrique nouvelle ou modifiée | Description
 [Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Nouvelle rubrique
 [Gestion des mises à jour dans le bureau géré Microsoft](service-description/updates.md) | Rubrique mise à jour
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 Rubrique nouvelle ou modifiée | Description
 --- | ---
 [Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Rubrique mise à jour

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590675"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072843"
 ---
 # <a name="insider-risk-management-cases-preview"></a>Cas d’Insider de gestion des risques (aperçu)
 
@@ -41,7 +41,7 @@ La file d’attente de cas répertorie tous les dossiers actifs et fermés de vo
 - **Dernière mise à jour**: le temps écoulé depuis qu’il y a eu une remarque de cas ajoutée ou modifié dans l’état du cas.
 - **Dernière mise à jour par**: le nom de l’analyste ou de l’investigateur de gestion des risques Insiders qui a mis à jour le cas.
 
-![Tableau de bord des cas de gestion des risques Insiders](media/insider-risk-cases-dashboard.png)
+![Tableau de bord des cas de gestion des risques Insiders](../media/insider-risk-cases-dashboard.png)
 
 Utilisez le contrôle de **recherche** pour rechercher des noms de cas spécifiques et utilisez le filtre de cas pour trier les cas par les attributs suivants :
 
@@ -67,7 +67,7 @@ Le volet de **Détails des cas** est disponible sur tous les onglets de gestion 
 - **Alertes confirmées**: liste des alertes pour l’utilisateur confirmée pour le cas.
 - **Contenu à risque**: liste de contenu, triée par sources et types de contenu. Par exemple, pour le contenu d’alerte case dans SharePoint Online, vous pouvez voir des noms de dossier ou de fichier répertoriés qui sont associés à l’activité risque pour les alertes dans le cas.
 
-![Détails des cas d’Insider gestion des risques](media/insider-risk-case-details.png)
+![Détails des cas d’Insider gestion des risques](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>Alertes
 
@@ -89,7 +89,7 @@ Utilisez le contrôle de recherche pour rechercher des noms d’alerte pour un t
 
 L’onglet activité de l' **utilisateur** est l’un des outils les plus puissants pour l’analyse et l’enquête sur les risques internes pour les cas de la solution de gestion des risques Insiders. Cet onglet est conçu pour permettre un examen rapide d’un incident, notamment une chronologie historique de toutes les alertes, les détails de toutes les alertes, le score de risque actuel de l’utilisateur dans le cas et des contrôles permettant d’appliquer les risques dans le cas.
 
-![Activité des utilisateurs de gestion des risques Insiders](media/insider-risk-user-activities.png)
+![Activité des utilisateurs de gestion des risques Insiders](../media/insider-risk-user-activities.png)
 
 1. **Filtres date et heure**de la fenêtre : par défaut, les six derniers mois d’alertes confirmées dans le cas s’affichent dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique avec les contrôles de curseur aux deux extrémités de la fenêtre de graphique ou en définissant des dates de début et de fin spécifiques dans le contrôle de filtre de graphique.
 2. **Activité et détails de l’alerte de risque**: les activités de risque s’affichent visuellement sous forme de bulles colorées dans le graphique d’activité de l’utilisateur. Les bulles sont créées pour différentes catégories de risques et la taille des bulles est proportionnelle au nombre d’activités à risque pour la catégorie. Sélectionnez une bulle pour afficher les détails de chaque activité de risque. Les détails sont les suivants :
@@ -107,7 +107,7 @@ L’onglet **Explorateur de contenu** permet aux analystes et aux enquêteurs de
 
 L’Explorateur de contenu est un outil puissant doté de fonctionnalités de recherche et de filtrage de base et avancées. Pour en savoir plus sur l’utilisation de l’Explorateur de contenu, reportez-vous à l' [Insider Risk Management content Explorer](insider-risk-management-content-explorer.md).
 
-![Explorateur de contenu de cas de gestion des risques Insiders](media/insider-risk-content-explorer.png)
+![Explorateur de contenu de cas de gestion des risques Insiders](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>Notes de cas
 
