@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Après avoir créé vos étiquettes de rétention et vos étiquettes de sensibilité, vous souhaiterez voir comment ils sont utilisés au sein de votre client. Les portails Centre de conformité Microsoft 365 et Centre de sécurité Microsoft 365 sont dotés d’une page intitulée Analyse des étiquettes. Elle indique les étiquettes les plus utilisées et leurs types d’applications.
-ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75eb86cb8671c81b80afc67b19d7c54830c4c401
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600581"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072278"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Afficher l’utilisation d’étiquette grâce à la page Analyse des étiquettes
 
@@ -36,7 +36,7 @@ Par exemple, avec analytique étiquette, vous pouvez afficher:
 
 Vous trouverez analytique étiquette dans la [centre de conformité de Microsoft 365](https://compliance.microsoft.com/labelanalytics) ou [centre de sécurité Microsoft 365](https://security.microsoft.com/labelanalytics) > **Classification**  >  ** Étiquettes analytique**.
 
-![Page analytique étiquette](media/label-analytics-page.png)
+![Page analytique étiquette](../media/label-analytics-page.png)
 
 ## <a name="sensitivity-label-usage"></a>Étiquettes de niveau de confidentialité
 
@@ -50,7 +50,7 @@ Usage d’étiquettes de niveau de confidentialité:
 - Pour afficher le nombre de chaque étiquette supérieure, pointez sur le graphique à barres et lire l’info-bulle qui s’affiche.
 - Le rapport indique où les étiquettes de niveau de confidentialité sont appliquées par application (tandis que les étiquettes de rétention sont affichées par emplacement).
 
-![Rapport d’usage d’étiquettes de niveau de confidentialité](media/sensitivity-label-usage-report.png)
+![Rapport d’usage d’étiquettes de niveau de confidentialité](../media/sensitivity-label-usage-report.png)
 
 ## <a name="retention-label-usage"></a>Usage d’étiquette de rétention
 
@@ -63,7 +63,7 @@ Usage d’étiquette de rétention:
 - Le rapport indique où les étiquettes de rétention sont appliquées par emplacement (tandis que les étiquettes de sensibilité sont affichées par application).
 - Pour les étiquettes de rétention, il s’agit d’une synthèse des données à tout-moment dans votre client ; elles ne sont pas filtrées pour une plage de dates spécifique. En revanche, l’[étiquette d’activité Explorer](view-label-activity-for-documents.md) affiche les données 30 derniers jours uniquement.
 
-![Rapport d’usage d’étiquette de rétention](media/retention-label-usage-report.png)
+![Rapport d’usage d’étiquette de rétention](../media/retention-label-usage-report.png)
 
 ## <a name="view-all-content-with-a-specific-retention-label"></a>Afficher tout le contenu portant une étiquette de rétention spécifique
 
@@ -71,15 +71,15 @@ Dans le rapport d’utilisation d’étiquette de rétention, vous pouvez rapide
 
 Tout d’abord, choisissez **Afficher les détails** en bas du rapport.
 
-![Option Afficher les détails en bas de rapport d’utilisation d’étiquette de rétention](media/retention-label-usage-view-details.png)
+![Option Afficher les détails en bas de rapport d’utilisation d’étiquette de rétention](../media/retention-label-usage-view-details.png)
 
 Puis choisissez une étiquette de rétention > **Explorer les éléments** dans le volet droit.
 
-![Explorer l’option éléments dans le volet droit](media/retention-label-usage-explore-items.png)
+![Explorer l’option éléments dans le volet droit](../media/retention-label-usage-explore-items.png)
 
 Pour cette étiquette, vous pouvez choisir l’onglet**activité**pour consulter un nombre d’éléments associé à cette étiquette selon l’emplacement.
 
-![Onglet activité pour une étiquette de rétention](media/retention-label-usage-activity-tab.png)
+![Onglet activité pour une étiquette de rétention](../media/retention-label-usage-activity-tab.png)
 
 Vous pouvez également choisir l’onglet**éléments avec cette étiquette**. Ensuite, vous pouvez explorer des emplacements spécifiques :
 
@@ -88,7 +88,7 @@ Vous pouvez également choisir l’onglet**éléments avec cette étiquette**. E
 
 Lorsque vous choisissez une collection de boîte aux lettres ou un site, vous pouvez afficher une liste d’éléments associé à cette étiquette rétention dans cet emplacement.
 
-![Les éléments de cet onglet d’étiquette affichant tous les éléments comportant cette étiquette rétention](media/retention-label-usage-content-explorer.png)
+![Les éléments de cet onglet d’étiquette affichant tous les éléments comportant cette étiquette rétention](../media/retention-label-usage-content-explorer.png)
 
 ## <a name="permissions"></a>Autorisations
 

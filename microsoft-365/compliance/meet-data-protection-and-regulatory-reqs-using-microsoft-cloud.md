@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Le Gestionnaire de conformité, disponible dans le Portail d’approbation de services de Microsoft, propose des outils pour suivre, implémenter et gérer les contrôles permettant à votre organisation de se conformer aux normes du secteur en matière de sécurité et de protection des données (par exemple, le RGPD, les normes ISO 27001 et 27018, la loi américaine HIPAA), quand elle utilise les services de cloud computing Microsoft, tels qu’Office 365 et Microsoft Azure. Le Gestionnaire de conformité permet à la personne responsable de la stratégie de protection des données et de la vie privée de votre organisation de gérer vos processus d’évaluation des risques et de conformité.
-ms.openlocfilehash: 52f6cbfb6e1c711b8b6bebec36bea965a9dc6e62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602901"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071761"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Gestionnaire de conformité Microsoft (classique)
 
@@ -68,7 +68,7 @@ Une évaluation est constituée de plusieurs composants :
     
     Voici un exemple de trois contrôles gérés par Microsoft dans la famille de contrôles **Sécurité** extraits d’une évaluation d’Office 365 par rapport au RGPD. 
 
-    ![Détails des contrôles gérés par Microsoft dans le Gestionnaire de conformité](media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
+    ![Détails des contrôles gérés par Microsoft dans le Gestionnaire de conformité](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
   a. Indique les informations extraites de la certification ou de la réglementation qui renvoie au contrôle géré par Microsoft.
 
@@ -100,17 +100,17 @@ Le tableau suivant décrit chaque autorisation du Gestionnaire de conformité et
   
 ||**Lecteur du Gestionnaire de conformité**|**Contributeur du Gestionnaire de conformité**|**Évaluateur du Gestionnaire de conformité**|**Administrateur du Gestionnaire de conformité**|**Administrateur du Portail**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|**Lire les données** : les utilisateurs peuvent consulter les données sans pouvoir les modifier.  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|
-|**Modifier les données** : les utilisateurs peuvent modifier tous les champs à l’exception des champs Résultat de test et Date du test.  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Modifier les résultats de test** : les utilisateurs peuvent modifier les champs Résultat de test et Date du test.  <br/> ||<br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Gérer les évaluations** : les utilisateurs peuvent créer, archiver et supprimer des évaluations.  <br/> |||<br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Gérer les utilisateurs** : les utilisateurs peuvent ajouter d’autres utilisateurs de leur organisation aux rôles Lecteur, Contributeur, Évaluateur et Administrateur. Seuls les utilisateurs ayant le rôle Administrateur général dans votre organisation peuvent ajouter ou supprimer des utilisateurs du rôle Administrateur du Portail.  <br/> ||||<br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Lire les données** : les utilisateurs peuvent consulter les données sans pouvoir les modifier.  <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|
+|**Modifier les données** : les utilisateurs peuvent modifier tous les champs à l’exception des champs Résultat de test et Date du test.  <br/> ||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Modifier les résultats de test** : les utilisateurs peuvent modifier les champs Résultat de test et Date du test.  <br/> ||<br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Gérer les évaluations** : les utilisateurs peuvent créer, archiver et supprimer des évaluations.  <br/> |||<br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Gérer les utilisateurs** : les utilisateurs peuvent ajouter d’autres utilisateurs de leur organisation aux rôles Lecteur, Contributeur, Évaluateur et Administrateur. Seuls les utilisateurs ayant le rôle Administrateur général dans votre organisation peuvent ajouter ou supprimer des utilisateurs du rôle Administrateur du Portail.  <br/> ||||<br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 ## <a name="understanding-the-compliance-score"></a>Présentation du Score de conformité
 
 Sur le tableau de bord, le Gestionnaire de conformité affiche un score total pour les évaluations Office 365 dans l’angle supérieur droit de la vignette. Il s’agit du score de conformité total global de l’analyse, qui résulte de l’accumulation des points reçus pour chacune des analyses de contrôle qui a été marquée comme implémentée et testée dans le cadre de l’évaluation. Lors de l’ajout d’une évaluation, vous constaterez que le score de conformité est déjà en cours d’exécution, car les points pour les contrôles gérés par Microsoft qui ont été implémentés par Microsoft et testés par des tiers indépendants sont déjà appliqués.
   
-![Tableau de bord du Gestionnaire de conformité – Score de conformité total](media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
+![Tableau de bord du Gestionnaire de conformité – Score de conformité total](../media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
   
 Les points restants proviennent de l’évaluation réussie du contrôle du client, à la suite de l’implémentation et du test des contrôles gérés par le client, chaque étape correspondant à une valeur spécifique qui s’ajoute au score de conformité global. 
   
@@ -118,11 +118,11 @@ Chaque évaluation affiche un score de conformité basé sur le risque pour vous
   
 Par exemple, le contrôle d’évaluation Gestion de l’accès utilisateur illustré ci-dessous présente un risque très élevé et affiche une valeur de 10.
   
-![Gestionnaire de conformité – Contrôle d’évaluation d’une gravité élevée – score 10](media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
+![Gestionnaire de conformité – Contrôle d’évaluation d’une gravité élevée – score 10](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
   
  En comparaison, le contrôle d’évaluation Sauvegarde des informations ci-dessous présente un risque plus faible et affiche une valeur de 3. 
   
-![Gestionnaire de conformité – Contrôle d’évaluation d’une gravité faible – score 3](media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
+![Gestionnaire de conformité – Contrôle d’évaluation d’une gravité faible – score 3](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
   
 Le Gestionnaire de conformité affecte un degré de gravité par défaut à chaque contrôle. Le classement des risques est calculé selon les critères suivants :
   
@@ -140,17 +140,17 @@ L’essentiel est que le score de conformité peut vous aider à hiérarchiser l
   
 Par exemple, dans l’image ci-dessous, l’évaluation GDPR-Office 365 est finalisée à 46 %, avec 51 contrôles sur 111 évalués et un score de conformité total de 289 sur un total possible de 600.
   
-![Gestionnaire de conformité – Aperçu de l’évaluation](media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
+![Gestionnaire de conformité – Aperçu de l’évaluation](../media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
   
 Au sein de l’analyse du contrôle RGPD, le contrôle 7.5.5 est lié à 5 autres contrôles (7.4.1, 7.4.3, 7.4.4, 7.4.8 et 7.4.9) chacun avec un score de gravité du risque modéré à élevé (de 6 ou 8). En utilisant le filtre d’évaluation, nous avons sélectionné tous ces contrôles afin de les rendre visibles dans la vue d’évaluation, et nous pouvons constater ci-dessous qu’aucun d’entre eux n’a été évalué. 
   
-![Gestionnaire de conformité – Affichage de l’évaluation – Contrôles de filtre, aucun évalué](media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Si l’un de ces 6 contrôles est finalisé, les résultats de test seront synchronisés avec les contrôles associés de cette évaluation (tout comme n’importe quel contrôle d’une évaluation appartenant au même regroupement). À la fin de l’implémentation et du test du contrôle GDPR 7.5.5, la zone de détails du contrôle s’actualise et indique que les 6 contrôles ont été évalués, le nombre de contrôles évalués passant de 57 et 51 % et le Score de conformité total à + 40. 
+![Gestionnaire de conformité – Affichage de l’évaluation – Contrôles de filtre, aucun évalué](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Si l’un de ces 6 contrôles est finalisé, les résultats de test seront synchronisés avec les contrôles associés de cette évaluation (tout comme n’importe quel contrôle d’une évaluation appartenant au même regroupement). À la fin de l’implémentation et du test du contrôle GDPR 7.5.5, la zone de détails du contrôle s’actualise et indique que les 6 contrôles ont été évalués, le nombre de contrôles évalués passant de 57 et 51 % et le Score de conformité total à + 40. 
   
-![Gestionnaire de conformité – Affichage de l’évaluation – Synchronisation des résultats du contrôle](media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
+![Gestionnaire de conformité – Affichage de l’évaluation – Synchronisation des résultats du contrôle](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
   
 Cette boîte de dialogue de confirmation de mise à jour apparaît si vous êtes sur le point de modifier l’état d’implémentation d’un contrôle d’une manière qui influera sur les autres contrôles associés.
   
-![Gestionnaire de conformité – Évaluation – Boîte de dialogue de confirmation de mise à jour des contrôles associés](media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
+![Gestionnaire de conformité – Évaluation – Boîte de dialogue de confirmation de mise à jour des contrôles associés](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
   
 > [!NOTE]
 > Pour l’instant, seules les évaluations des services cloud Office 365 affichent un Score de conformité. Les évaluations pour Azure et Dynamics indiquent seulement l’état de l’évaluation. 
@@ -166,7 +166,7 @@ Les évaluations dans le Gestionnaire de conformité sont basées sur le modèle
   
 Comme illustré dans l’analyse RGPD Office 365 ci-dessous, Microsoft et ses clients sont conjointement responsables de la mise en œuvre des différentes actions permettant de répondre aux exigences de la norme ou de la réglementation évaluée. Pour rationaliser et comprendre les actions requises pour répondre aux exigences d’un large éventail de normes et réglementations, le Gestionnaire de conformité traite toutes les normes et réglementations comme s’il s’agissait de cadres de contrôle. Ainsi, les actions mises en œuvre par Microsoft et par les clients pour chaque évaluation impliquent l’implémentation et la validation de différents contrôles.
   
-![Gestionnaire de conformité – Évaluation GDPR](media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
+![Gestionnaire de conformité – Évaluation GDPR](../media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
   
 Voici le flux de travail standard d’une Action classique :
   
@@ -202,7 +202,7 @@ Selon la méthodologie du Gestionnaire de conformité, le score basé sur le ris
     
 - Les facteurs externes au contrôle
     
-![Gestionnaire de conformité – Méthodologie du Score de conformité](media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
+![Gestionnaire de conformité – Méthodologie du Score de conformité](../media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
   
  ### <a name="essence-of-the-control"></a>Nature du contrôle
   
@@ -322,23 +322,23 @@ Comme expliqué précédemment, l’utilisation de groupes lorsque deux analyses
   
 À titre d’exemple, considérons ces deux contrôles d’analyse connexes ayant trait au chiffrement de données sur des réseaux publics, à savoir le contrôle 6.10.1.2 dans l’analyse Office 365 - RGPD et le contrôle SC-13 dans Office 365 - NIST 800- 53. Il s’agit de contrôles d’analyse connexes, dans deux analyses différentes faisant partie du groupe par défaut.  Dans un premier temps, aucune analyse n’a porté sur le contrôle du client, comme le montre le tableau de bord du Gestionnaire de conformité présentant ces deux analyses.
   
-![Tableau de bord du Gestionnaire de conformité – Évaluations groupées – avant](media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
+![Tableau de bord du Gestionnaire de conformité – Évaluations groupées – avant](../media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
   
 En cliquant sur l’évaluation **Office 365-GDPR**, et en utilisant les contrôles de filtre pour afficher le contrôle GDPR 6.10.1.2, nous pouvons voir que le contrôle NIST 800-53 SC-13 est répertorié dans la liste des contrôles associés.
   
-![Évaluation dans le Gestionnaire de conformité – Contrôles partagés](media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
+![Évaluation dans le Gestionnaire de conformité – Contrôles partagés](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
   
  Vous pouvez voir ci-dessous que l’implémentation et le test du contrôle GDPR 6.10.1.2 sont terminés. 
   
-![Évaluation dans le Gestionnaire de conformité – Contrôle d’évaluation GDPR 6.10.1.2 – réussite](media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
+![Évaluation dans le Gestionnaire de conformité – Contrôle d’évaluation GDPR 6.10.1.2 – réussite](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
   
 En accédant au contrôle associé de l’évaluation groupée, nous pouvons voir que le contrôle NIST 800-53 SC-13 a également été marqué comme terminé à la même date et à la même heure, alors qu’aucun effort n’a été déployé pour réaliser l’implémentation et le test de ce contrôle.
   
-![Évaluation dans le Gestionnaire de conformité - NIST 800-53 SC (13) terminé](media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
+![Évaluation dans le Gestionnaire de conformité - NIST 800-53 SC (13) terminé](../media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
   
 Dans le tableau de bord, nous pouvons voir que chaque évaluation comporte une évaluation de contrôle terminée et que le Score de conformité total de chaque évaluation a augmenté de 8 points (valeur du score de conformité de ce contrôle partagé).
   
-![Tableau de bord du Gestionnaire de conformité – Synchronisation de la progression de l’évaluation groupée](media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
+![Tableau de bord du Gestionnaire de conformité – Synchronisation de la progression de l’évaluation groupée](../media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
 
 ## <a name="administrative-functions"></a>Fonctions d’administration
 
@@ -351,7 +351,7 @@ Certaines fonctions d’administration spécifiques sont uniquement disponibles 
 
 Chaque rôle du Gestionnaire de conformité bénéficie d’autorisations légèrement différentes. Vous pouvez consulter les autorisations affectées à chaque rôle, connaître les utilisateurs affectés aux rôles et ajouter ou supprimer des utilisateurs d’un rôle via le Portail d’approbation de services en sélectionnant **Administrateur** dans le menu, puis **Paramètres**. 
   
-![Menu Administrateur du Portail d’approbation de services – Sélection de Paramètres](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![Menu Administrateur du Portail d’approbation de services – Sélection de Paramètres](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 Pour ajouter ou supprimer des utilisateurs des rôles du Gestionnaire de conformité.
   
@@ -367,11 +367,11 @@ Pour ajouter ou supprimer des utilisateurs des rôles du Gestionnaire de conform
     
 6. Pour ajouter des utilisateurs à ce rôle, cliquez sur **Ajouter**. Dans la boîte de dialogue **Ajouter des utilisateurs**, cliquez sur le champ utilisateur. Vous pouvez parcourir la liste des utilisateurs disponibles ou saisir le nom de l’utilisateur pour filtrer la liste selon votre recherche. Cliquez sur l’utilisateur pour ajouter ce compte à la liste **Ajouter des utilisateurs** et lui affecter ce rôle. Pour ajouter plusieurs utilisateurs simultanément, commencez à saisir un nom d’utilisateur pour filtrer la liste, puis cliquez sur l’utilisateur à ajouter à la liste. Cliquez sur **Enregistrer** pour affecter le rôle sélectionné à ces utilisateurs. 
     
-    ![Gestionnaire de conformité – Affectation des rôles – ajout des utilisateurs](media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
+    ![Gestionnaire de conformité – Affectation des rôles – ajout des utilisateurs](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
 7. Pour supprimer des utilisateurs de ce rôle, sélectionnez le ou les utilisateurs, puis cliquez sur **Supprimer**. 
     
-    ![Gestionnaire de conformité – Affectation des rôles – suppression d’un utilisateur](media/17004def-604f-471d-a54d-f678fcc01c1e.png)
+    ![Gestionnaire de conformité – Affectation des rôles – suppression d’un utilisateur](../media/17004def-604f-471d-a54d-f678fcc01c1e.png)
  
 ## <a name="user-privacy-settings"></a>Paramètres de confidentialité de l’utilisateur
 
@@ -385,7 +385,7 @@ Certaines réglementations exigent que les organisations soient en mesure de sup
 
 - [Supprimer l’historique des données d’un utilisateur](#delete-user-data-history)
     
-![Administrateur du Gestionnaire de conformité – Fonctions des Paramètres de confidentialité de l’utilisateur](media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+![Administrateur du Gestionnaire de conformité – Fonctions des Paramètres de confidentialité de l’utilisateur](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
   
 ### <a name="search-for-a-user"></a>Rechercher un utilisateur
 
@@ -463,13 +463,13 @@ Cette fonction définit tous les éléments d’action du contrôle affectés à
 
 Le Gestionnaire de conformité propose des outils qui vous permettent d’affecter, de suivre et d’enregistrer les activités de conformité et d’évaluation, et aident vos équipes à atteindre les objectifs de conformité de votre organisation.
   
-![Tableau de bord du Gestionnaire de conformité – menu supérieur – menu Administrateur mis à jour](media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
+![Tableau de bord du Gestionnaire de conformité – menu supérieur – menu Administrateur mis à jour](../media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
 
 ## <a name="accessing-compliance-manager"></a>Accès au Gestionnaire de conformité
 
 Le Gestionnaire de conformité est accessible depuis le Portail d’approbation de services. Toute personne ayant un compte Microsoft ou un compte professionnel Azure Active Directory peut accéder au Gestionnaire de conformité.
   
-![Gestionnaire de conformité – accéder au Gestionnaire de conformité depuis le menu du Portail d’approbation de services](media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
+![Gestionnaire de conformité – accéder au Gestionnaire de conformité depuis le menu du Portail d’approbation de services](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
   
 1. Accédez à [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
     
@@ -481,15 +481,15 @@ Le Gestionnaire de conformité est accessible depuis le Portail d’approbation 
 
     Pour vous aider à prendre en main le Gestionnaire de conformité, nous avons ajouté les évaluations par défaut suivantes :
     
-    ![Évaluations par défaut dans le Gestionnaire de conformité](media/8c59b45a-706a-4362-a7ba-2cb782931bf7.png)
+    ![Évaluations par défaut dans le Gestionnaire de conformité](../media/8c59b45a-706a-4362-a7ba-2cb782931bf7.png)
     
-5. Cliquez sur ![l’icône d’aide dans le Gestionnaire de conformité](media/c1b3092f-6ac7-43ab-b1c4-63a54598450c.png) **Aide** pour suivre une présentation rapide du Gestionnaire de conformité. 
+5. Cliquez sur ![l’icône d’aide dans le Gestionnaire de conformité](../media/c1b3092f-6ac7-43ab-b1c4-63a54598450c.png) **Aide** pour suivre une présentation rapide du Gestionnaire de conformité. 
   
 ## <a name="viewing-action-items"></a>Affichage des éléments d’action
 
 Le Gestionnaire de conformité fournit une vue pratique de tous les points d’action d’analyse de contrôle qui vous sont attribués, ce qui vous permet d’agir rapidement et facilement sur ceux-ci. Vous pouvez afficher tous les points d’action ou sélectionner ceux qui correspondent à une certification spécifique en cliquant sur l’onglet associé à cette analyse. Par exemple, dans l’image ci-dessous, l’onglet RGPD sélectionné présente les contrôles liés à l’analyse RGPD.
   
-![Gestionnaire de conformité –Liste des éléments d’action et onglet GDPR sélectionnés](media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
+![Gestionnaire de conformité –Liste des éléments d’action et onglet GDPR sélectionnés](../media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
   
 Pour afficher vos éléments d’action :
   
@@ -503,7 +503,7 @@ Pour afficher vos éléments d’action :
 
 Pour ajouter une évaluation au Gestionnaire de conformité :
   
-1. Dans le tableau de bord du Gestionnaire de conformité, cliquez sur ![l’icône Ajouter](media/ITPro-EAC-AddIcon.gif) **Ajouter une évaluation**. 
+1. Dans le tableau de bord du Gestionnaire de conformité, cliquez sur ![l’icône Ajouter](../media/ITPro-EAC-AddIcon.gif) **Ajouter une évaluation**. 
     
 2. Dans la fenêtre **Ajouter une évaluation**, vous pouvez créer un groupe auquel ajouter l’évaluation ou vous pouvez l’ajouter à un groupe existant (le groupe intégré est intitulé « Groupe initial »). Selon l’option choisie, soit vous tapez le nom d’un nouveau groupe, soit vous sélectionnez un groupe existant dans la liste déroulante. Pour en savoir plus, consultez la section [Regroupement des évaluations](#grouping-assessments).
     
@@ -523,7 +523,7 @@ Pour ajouter une évaluation au Gestionnaire de conformité :
     
 6. Cliquez sur le menu **Actions** pour consulter les éléments d’action affectés, renommer le groupe d’évaluations, exporter le rapport d’évaluation ou archiver l’évaluation. 
     
-    ![Gestionnaire de conformité – Vignette de l’évaluation](media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
+    ![Gestionnaire de conformité – Vignette de l’évaluation](../media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
 
 ## <a name="copying-information-from-existing-assessments"></a>Copie des informations des évaluations existantes
 
@@ -543,7 +543,7 @@ De même, les informations issues des contrôles gérés par le client partagés
 
 1. Localisez la vignette de l’évaluation que vous souhaitez consulter, puis cliquez sur le nom de l’évaluation pour l’ouvrir et afficher les contrôles gérés par Microsoft et le client associés à l’évaluation, ainsi que la liste des services cloud inclus dans l’évaluation.  Voici un exemple d’évaluation liée à Office 365 et au RGPD.
     
-    ![Affichage de l’évaluation dans le Gestionnaire de conformité – plein écran avec des légendes](media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
+    ![Affichage de l’évaluation dans le Gestionnaire de conformité – plein écran avec des légendes](../media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
   
 1. Cette section présente les informations récapitulatives de l’évaluation, notamment le nom du regroupement d’évaluations, le produit, le nom de l’évaluation et le nombre de contrôles évalués.
     
@@ -563,19 +563,19 @@ Le créateur d’une analyse est dans un premier temps le seul utilisateur de l�
   
 Voici une liste des tâches que vous pouvez effectuer à l’aide des fonctionnalités de flux de travail du Gestionnaire de conformité.
   
-![Flux de travail de l’évaluation dans le Gestionnaire de conformité – flux de travail avec des légendes](media/9e5ae34d-b55e-4452-a021-e0e5b10218f5.png)
+![Flux de travail de l’évaluation dans le Gestionnaire de conformité – flux de travail avec des légendes](../media/9e5ae34d-b55e-4452-a021-e0e5b10218f5.png)
   
 1. **Utilisez les options de filtrage pour trouver des contrôles d’évaluation spécifiques** : le Gestionnaire de conformité propose des **Options de filtrage** qui vous permettent d’afficher des contrôles d’évaluation selon des critères de sélection très précis et de concentrer vos efforts de mise en conformité sur des points spécifiques. 
     
-    L’icône d’entonnoir du côté droit de la page permet d’afficher ou de masquer les contrôles **Options de filtre**. Ces contrôles vous permettent de spécifier des critères de filtre de façon à ce que seul les contrôles d’analyse correspondant à ceux-ci s’affichent en dessous. ![Contrôles de filtre des analyses du Gestionnaire de conformité](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
+    L’icône d’entonnoir du côté droit de la page permet d’afficher ou de masquer les contrôles **Options de filtre**. Ces contrôles vous permettent de spécifier des critères de filtre de façon à ce que seul les contrôles d’analyse correspondant à ceux-ci s’affichent en dessous. ![Contrôles de filtre des analyses du Gestionnaire de conformité](../media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
   
     - **Articles**: permet de filtrer sur le nom de l’article pour obtenir les contrôles d’analyse associés à celui-ci. Par exemple, en tapant « Article (5) », vous obtenez une liste de sélection répertoriant les articles dont le nom inclut cette chaîne, à savoir l’Article (5)(1)(a), l’Article (5)(1)(b), l’Article (5)(1)(c), etc. Sélectionner l’article (5)(1)(c) va renvoyer les contrôles associés à l’article (5)(1)(c). Il s’agit d’un champ à sélections multiples qui utilise un opérateur OU avec plusieurs valeurs. Par exemple, si vous sélectionnez Article (5)(1)(a), puis ajoutez Article (5)(1)(c), le filtre retourne les contrôles associés à l’Article (5)(1)(a) ou à l’Article (5)(1)(c). 
     
-      ![Évaluation dans le Gestionnaire de conformité – Filtre des noms d’article](media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
+      ![Évaluation dans le Gestionnaire de conformité – Filtre des noms d’article](../media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
   
     - **Contrôles** : affiche la liste des contrôles dont le nom correspond au filtre. Par exemple, si vous tapez 7.3, une liste de sélection des éléments est renvoyée (par exemple, 7.3.1, 7.3.4, 7.3.5, etc.). Il s’agit d’un champ à sélection multiple qui utilise un opérateur OR à valeurs multiples. Par exemple, si vous sélectionnez 7.3.1, puis ajoutez 7.3.4, le filtre renvoie les contrôles associés à 7.3.1 ou 7.3.4. 
     
-      ![Affichage de l’évaluation dans le Gestionnaire de conformité – Sélection multiple de contrôles de filtre](media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
+      ![Affichage de l’évaluation dans le Gestionnaire de conformité – Sélection multiple de contrôles de filtre](../media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
   
     - **Utilisateurs affectés** : affiche la liste des contrôles affectés à l’utilisateur sélectionné. 
     
@@ -585,7 +585,7 @@ Voici une liste des tâches que vous pouvez effectuer à l’aide des fonctionna
     
     Quand vous appliquez les conditions de filtre, les contrôles applicables affichés changent pour refléter vos conditions de filtre. Développez les sections de chaque famille de contrôles pour afficher les détails des contrôles en dessous. 
     
-    ![Évaluation dans le Gestionnaire de conformité – Résultats du filtrage des articles](media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
+    ![Évaluation dans le Gestionnaire de conformité – Résultats du filtrage des articles](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
   
 2. Si, après avoir sélectionné les filtres souhaités, aucun résultat n’est affiché, cela signifie qu’aucun contrôle ne correspond aux conditions de filtre spécifiées. Par exemple, si vous sélectionnez un **Utilisateur affecté** particulier, puis choisissez un nom de **Contrôle** correspondant au contrôle affecté à cet utilisateur, aucune évaluation n’est affichée dans la page en dessous. 
     
@@ -670,17 +670,17 @@ Quand vous affichez une évaluation archivée, aucun contrôle habituellement mo
 
 ## <a name="using-search"></a>Utilisation de la recherche
 
-![Portail d’approbation de services – Champ d’entrée Recherche](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Portail d’approbation de services – Champ d’entrée Recherche](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
 Cliquez sur la loupe dans le coin supérieur droit de la page pour développer le champ d’entrée Recherche. Saisissez les mots que vous recherchez et appuyez sur Entrée. Le contrôle Recherche apparaît avec le mot recherché dans le champ d’entrée du volet de recherche, et les résultats de la recherche s’affichent en dessous.
   
 Par défaut, le contrôle Recherche affiche des documents dans les résultats. Vous pouvez utiliser les listes déroulantes situées à côté de « Filtrer par » pour affiner la liste des documents affichés, ou pour ajouter ou supprimer des résultats sur la page. Vous pouvez utiliser plusieurs filtres d’attribut en même temps pour réduire le nombre de documents liés à des services cloud, des catégories de pratiques de conformité ou de sécurité, des régions du monde, ou des secteurs d’activité spécifiques. Cliquez sur le lien du document pour le télécharger.
   
-![Portail d’approbation de services – Recherche de documents filtrée](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Portail d’approbation de services – Recherche de documents filtrée](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 Cliquez sur le lien Gestionnaire de conformité afin d’afficher les résultats de la recherche pour les contrôles d’analyse du Gestionnaire de conformité. Les résultats de la recherche affichent la date de création de l’analyse, le nom du regroupement d’analyses, le service cloud applicable, et indiquent si les contrôles sont gérés par Microsoft ou le client.
   
-![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
 > Les rapports et les documents du Portail d’approbation de services peuvent être téléchargés dans les douze mois suivant leur publication ou jusqu’à ce qu’une nouvelle version du document soit disponible. 
@@ -689,7 +689,7 @@ Cliquez sur le lien Gestionnaire de conformité afin d’afficher les résultats
 
 Le Portail d’approbation de services vous permet d’afficher le contenu de la page dans différentes langues. Pour modifier la langue de la page, cliquez sur l’icône du globe dans le coin inférieur gauche de la page et sélectionnez la langue de votre choix. 
   
-![Portail d’approbation de services – Options de localisation du contenu](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Portail d’approbation de services – Options de localisation du contenu](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 
 ## <a name="change-log-for-customer-managed-controls"></a>Journal des modifications des contrôles gérés par le client

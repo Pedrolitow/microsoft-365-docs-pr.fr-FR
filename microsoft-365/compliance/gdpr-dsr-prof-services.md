@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 88dc03613a6a2b77ed9cb440d8c8d80c7cfbae2b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596491"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073324"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées du Support Microsoft et des services professionnels concernant le RGPD et le CCPA
 
@@ -132,7 +132,7 @@ Lorsqu’il découvre les données pertinentes et obtient l’assistance de Micr
 
 Pour identifier des engagements spécifiques, les clients doivent effectuer des recherches dans leurs engagements. Pour les clients Premier, le gestionnaire du service de contrat (« CSM - Contract Service Manager ») d’un client a une visibilité sur toutes les demandes de support (SR - Support Request) qui sont créées dans le cadre de ce calendrier de contrat. Pour les clients non Premier, des portails d’engagement du support sont disponibles (par le biais des zones de support des services en ligne, par exemple).
 
-![Rechercher dans SMC](media/Prof-Serv-DSR-Doc-Final_image3.png) Le CSM peut accéder au portail à l’adresse Support.Microsoft.Com ([https://support.microsoft.com/\<localcode de langue\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) (« SMC ») et sélectionnez et examinez des demandes de support. (Remarque : dans l’URL, insérez votre code de langue local).
+![Rechercher dans SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png) Le CSM peut accéder au portail à l’adresse Support.Microsoft.Com ([https://support.microsoft.com/\<localcode de langue\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) (« SMC ») et sélectionnez et examinez des demandes de support. (Remarque : dans l’URL, insérez votre code de langue local).
 
 >[!IMPORTANT]
 >En plus de l’historique des cas dans SMC, les clients peuvent également avoir des données personnelles d’un utilisateur final dans des fichiers collectés par Microsoft (ou, avec l’autorisation du client, supprimés du service en ligne) au cours d’un contrat de support. Par exemple, il peut s’agir de copies de boîtes aux lettres Exchange client, d’Azure VMs ou de bases de données. Ces données personnelles peuvent ou non être mentionnées dans l’historique des cas (par exemple, ticket) pour un engagement particulier. Pour réviser ces données, le contact client doit être un contact de demande de prise en charge spécifique authentifié (via AAD ou MSA) qui a reçu une URL pour un espace de travail dans Microsoft support Microsoft Data Transfer and Management Tool (DTM). Un contact client a accès aux fichiers, mais aucun affichage global n’est disponible et SMC n’indique pas si des fichiers existent.
