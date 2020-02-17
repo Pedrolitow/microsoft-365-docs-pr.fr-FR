@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication préliminaire pour la préversion publique sur la classification des données.
-ms.openlocfilehash: fecf643d12cf544c16570c173b15bb1e0dc043f0
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: 1beae92089833327cedf6090690530d9e5457a37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887335"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076361"
 ---
 # <a name="data-classification-public-preview-release-notes-preview"></a>Notes de publication préliminaire publique sur la notification de données (préversion)
 
@@ -40,7 +40,7 @@ Vous remarquerez qu’une petite info-bulle apparaît lorsque vous explorez des 
 
 ## <a name="seeing-guids-instead-of-label-names"></a>Affichage de GUID au lieu des noms d’étiquettes
 
-Les clients disposant d'une préversion privée ont remarqué des instances dans lesquelles la suppression d’une étiquette qui a déjà été marquée a des résultats dans les noms d’étiquettes, ce qui a pour effet de causer un GUID 32 bits dans l’explorateur de contenu et l’explorateur d’activités au lieu du nom de l’étiquette. 
+Les clients disposant d'une préversion privée ont remarqué des instances dans lesquelles les étiquettes migrées ou la suppression d’une étiquette qui a déjà été marquée a des résultats dans les noms d’étiquettes, ce qui a pour effet de causer un GUID 32 bits dans l’explorateur de contenu et l’explorateur d’activités au lieu du nom de l’étiquette. 
 
 ## <a name="rendering-of-encrypted-documents"></a>Rendu de documents chiffrés
 

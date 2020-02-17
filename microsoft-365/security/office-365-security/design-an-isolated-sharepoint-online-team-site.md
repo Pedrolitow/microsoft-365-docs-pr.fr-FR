@@ -46,7 +46,7 @@ L’ensemble des autorisations qui déterminent ce que le membre d’un groupe 
 |**Groupe SharePoint**|**Niveau d’autorisation**|
 |:-----|:-----|
 |\<nom du site> membres  <br/> |Edit  <br/> |
-|\<nom du site> visiteurs  <br/> |Lire  <br/> |
+|\<nom du site> visiteurs  <br/> |Lecture  <br/> |
 |\<Propriétaires de nom de site>  <br/> |Contrôle total  <br/> |
    
  **Conseil :** vous pouvez créer des groupes SharePoint et des niveaux d’autorisation supplémentaires. Cependant, nous vous recommandons d’utiliser les groupes SharePoint par défaut et les niveaux d’autorisation pour votre site SharePoint Online isolé.
@@ -86,7 +86,7 @@ Pour les sites d’équipe SharePoint Online isolés, voici à quoi ressemble l
 |**Groupe SharePoint**|**Groupe d’accès basé sur Azure AD**|**Niveau d’autorisation**|
 |:-----|:-----|:-----|
 |\<nom du site> membres  <br/> |\<nom du site> membres  <br/> |Edit  <br/> |
-|\<nom du site> visiteurs  <br/> |\<Visionneuse de nom de site>  <br/> |Lecture  <br/> |
+|\<nom du site> visiteurs  <br/> |\<Visionneuse de nom de site>  <br/> |Lire  <br/> |
 |\<Propriétaires de nom de site>  <br/> |\<nom du site> administrateurs  <br/> |Contrôle total  <br/> |
    
  **Meilleure pratique :** Bien que vous puissiez utiliser les groupes Office 365 ou Azure AD comme membres des groupes SharePoint, nous vous recommandons d’utiliser les groupes Azure AD. Les groupes Azure AD, gérés via AD DS ou Office 365, offrent davantage de flexibilité pour l’utilisation de groupes imbriqués pour attribuer des autorisations.

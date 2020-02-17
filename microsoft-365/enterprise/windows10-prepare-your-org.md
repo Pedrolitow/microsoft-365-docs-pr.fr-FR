@@ -46,9 +46,9 @@ Utilisez la valeur appropriée dans le tableau ci-dessous lorsque vous configure
 | Niveau | Données collectées | Valeur |
 |:--- |:--- |:--- |
 | Sécurité | Données de sécurité uniquement. | 0 |
-| De base | Données de sécurité, système de base et données de qualité. | 1  |
-| Avancée | Données de sécurité, système de base et données de qualité, ainsi que des informations améliorées et des données de fiabilité avancées. | 2  |
-| Complet | Données de sécurité, système de base et données de qualité, informations améliorées et données de fiabilité avancées et données de diagnostics complètes. | 3  |
+| De base | Données de sécurité, système de base et données de qualité. | 0,1 |
+| Avancée | Données de sécurité, système de base et données de qualité, ainsi que des informations améliorées et des données de fiabilité avancées. | n°2 |
+| Complet | Données de sécurité, système de base et données de qualité, informations améliorées et données de fiabilité avancées et données de diagnostics complètes. | 3 |
 
 Vous pouvez activer les données de diagnostic à l’aide de l’une des méthodes suivantes :
 
