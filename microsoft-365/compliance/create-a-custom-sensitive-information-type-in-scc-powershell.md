@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Apprenez à créer et importer un type d’informations sensibles personnalisé pour la protection contre la perte de données dans le Centre de sécurité et conformité.
-ms.openlocfilehash: eba95bdb0bf442e143a3f7f3b701e8f46d641655
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 05f43149485bb368f1082180031913293be6d8e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595681"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078198"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité
 
@@ -135,7 +135,7 @@ Une règle (Rule) définit une ou plusieurs entités (Entity ; types d’inform
 
 Voici le scénario le plus simple : vous souhaitez que votre stratégie DLP identifie le contenu qui contient les ID d’employé de votre organisation mis au format d’un nombre à neuf chiffres. Le modèle fait donc référence à une expression régulière contenue dans la règle qui identifie le nombre à neuf chiffres. Tout contenu comprenant un nombre à neuf chiffres satisfait le modèle.
   
-![Diagramme d’une entité avec un modèle](media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+![Diagramme d’une entité avec un modèle](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
 Même s’il est simple, ce modèle peut identifier de nombreux faux positifs en faisant correspondre du contenu comprenant un nombre à neuf chiffres qui n’est pas nécessairement un ID d’employé.
   
@@ -145,7 +145,7 @@ Pour cette raison, il est plus courant de définir une entité à l’aide de pl
   
 Par exemple, pour augmenter la probabilité d’identifier le contenu qui contient un ID d’employé, vous pouvez définir un autre modèle qui identifie également une date d’embauche, et définir un autre modèle qui identifie une date d’embauche et un mot clé (par exemple, « ID d’employé ») en plus du nombre à neuf chiffres.
   
-![Diagramme d’une entité avec plusieurs modèle](media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+![Diagramme d’une entité avec plusieurs modèle](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
   
 Voici quelques aspects importants de cette structure à prendre en compte :
   
@@ -162,7 +162,7 @@ Une entité est un type d’informations sensibles, tel qu’un numéro de carte
   
 Ensuite, générez un GUID pour votre entité. Il existe plusieurs méthodes pour générer des GUID, mais vous pouvez le faire facilement dans PowerShell en saisissant [guid]::NewGuid(). Plus tard, vous ajouterez également le GUID de l’entité à la section de chaînes localisées.
   
-![Balisage XML montrant les éléments Rules et Entity](media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+![Balisage XML montrant les éléments Rules et Entity](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>Quel modèle voulez-vous faire correspondre [élément Pattern, élément IdMatch et élément Regex]
 
@@ -170,11 +170,11 @@ Le modèle contient la liste des éléments recherchés par le type d’informat
   
 Le point commun de tous les modèles suivants est qu’ils référencent tous la même expression régulière, qui recherche un nombre à neuf chiffres (\d{9}) entre espaces (\s) … (\s). Cette expression régulière est référencée par l’élément IdMatch et est la condition requise commune à tous les modèles qui recherchent l’entité Employee ID. IdMatch est l’identificateur que le modèle cherche à faire correspondre, par exemple, comme ID d’employé, numéro de carte de crédit ou numéro de sécurité sociale. Un élément Pattern doit avoir exactement un élément IdMatch.
   
-![Balisage XML montrant plusieurs éléments Pattern référençant un seul élément Regex](media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+![Balisage XML montrant plusieurs éléments Pattern référençant un seul élément Regex](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
 Lorsqu’il est satisfait, un modèle renvoie un nombre et un niveau de confiance, que vous pouvez utiliser dans les conditions dans votre stratégie DLP. Lorsque vous ajoutez une condition de détection d’un type d’informations sensibles à une stratégie DLP, vous pouvez modifier le nombre et le niveau de confiance comme illustré ici. Le niveau de confiance (également appelée précision de correspondance) est expliqué plus loin dans cette rubrique.
   
-![Nombre d’instances et options de précision de correspondance](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Nombre d’instances et options de précision de correspondance](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Lorsque vous créez une expression régulière, n’oubliez pas que des problèmes peuvent survenir. Par exemple, si vous écrivez et chargez une regex qui identifie trop de contenu, cela peut nuire aux performances. Pour en savoir plus sur ces problèmes potentiels, consultez la section ultérieure [Problèmes de validation éventuels à prendre en compte](#potential-validation-issues-to-be-aware-of).
   
@@ -186,7 +186,7 @@ Un élément Pattern peut comporter plusieurs éléments Match ; ces éléments
   
 Vous pouvez utiliser l’attribut facultatif minCount pour spécifier le nombre d’instances d’une correspondance qui doivent être trouvées pour chaque élément Match. Par exemple, vous pouvez spécifier qu’un modèle est satisfait uniquement lorsqu’au moins deux mots clés d’une liste de mots clés sont trouvés.
   
-![Balisage XML montrant l’élément Match avec l’attribut minOccurs](media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+![Balisage XML montrant l’élément Match avec l’attribut minOccurs](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Mots clés [éléments Keyword, Group et Term, attributs matchStyle et caseSensitive]
 
@@ -200,7 +200,7 @@ Les mots clés sont inclus sous forme de liste d’éléments Term dans un élé
     
 Enfin, vous pouvez utiliser l’attribut caseSensitive de l’élément Term pour préciser que le contenu doit correspondre exactement au mot clé, notamment les lettres minuscules et majuscules.
   
-![Balisage XML montrant les éléments Match référençant des mots clés](media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+![Balisage XML montrant les éléments Match référençant des mots clés](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
   
 ### <a name="regular-expressions-regex-element"></a>Expressions régulières [élément Regex]
 
@@ -214,7 +214,7 @@ Par exemple, une date figure sur les badges d’ID d’employé. Cette entité p
   
 Pour obtenir plus d’informations, consultez l’article [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md).
   
-![Balisage XML montrant les éléments Match référençant une fonction intégrée](media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+![Balisage XML montrant les éléments Match référençant une fonction intégrée](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>Différentes combinaisons de preuves [élément Any, attributs minMatches et maxMatches]
 
@@ -276,15 +276,15 @@ Dans cet exemple, un modèle est défini pour une révision salariale utilisant 
 
 Votre type d’informations sensibles recherche un modèle qui représente un ID d’employé et dans le cadre de ce modèle, il recherche également comme preuve probante un mot clé tel que « ID ». Il est logique que plus la proximité de cette preuve est élevée, plus le modèle est susceptible d’être un ID d’employé. Vous pouvez déterminer le degré de proximité d’autres preuves par rapport à l’entité dans le modèle à l’aide de l’attribut obligatoire patternsProximity de l’élément Entity.
   
-![Balisage XML montrant l’attribut patternsProximity](media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+![Balisage XML montrant l’attribut patternsProximity](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
   
 Pour chaque modèle de l’entité, la valeur de l’attribut patternsProximity définit la distance (en caractères Unicode) à partir de l’emplacement IdMatch pour toutes les autres correspondances spécifiées pour ce modèle. La fenêtre de proximité est ancrée par l’emplacement IdMatch. La fenêtre s’étend à gauche et à droite de l’IdMatch.
   
-![Diagramme de la fenêtre de proximité](media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![Diagramme de la fenêtre de proximité](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
   
 L’exemple indiqué ci-après illustre comment la fenêtre de proximité affecte la correspondance du modèle là où l’élément IdMatch requiert au moins une correspondance probante de mot clé ou de date pour l’entité personnalisée d’ID d’employé. Seul ID1 correspond, car pour ID2 et ID3, seule une preuve probante partielle (voire aucune preuve probante) a été détectée au sein de la fenêtre de proximité.
   
-![Diagramme de la fenêtre de proximité et de preuves probantes](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagramme de la fenêtre de proximité et de preuves probantes](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
   
 Notez que pour la messagerie, le corps du message et chaque pièce jointe sont traités comme des éléments distincts. Cela signifie que la fenêtre de proximité ne s’étend pas au-delà de chacun de ces éléments. Pour chaque élément (pièce jointe ou corps), l’attribut idMatch et la preuve probante doivent résider dans cet élément.
   
@@ -294,7 +294,7 @@ Plus un modèle nécessite de preuves, plus vous pouvez être certain qu’une e
   
 L’élément Pattern possède un attribut confidenceLevel obligatoire. Vous pouvez considérer la valeur confidenceLevel (un nombre entier compris entre 1 et 100) comme un ID unique pour chaque modèle d’une entité (les modèles d’une entité doivent avoir des niveaux de confiance distincts que vous attribuez). La valeur précise de l’entier n’a pas d’importance : sélectionnez simplement un nombre ayant du sens pour votre équipe de conformité. Une fois que vous chargez votre type d’informations sensibles personnalisé et créez une stratégie DLP, vous pouvez référencer ces niveaux de confiance dans les conditions des règles que vous créez.
   
-![Balisage XML montrant les éléments Pattern avec des valeurs différentes pour l’attribut confidenceLevel](media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
+![Balisage XML montrant les éléments Pattern avec des valeurs différentes pour l’attribut confidenceLevel](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
 En plus de l’attribut confidenceLevel de chaque modèle, l’entité possède un attribut recommendedConfidence. L’attribut de confiance recommandé est assimilable au niveau de confiance par défaut de la règle. Lorsque vous créez une règle dans une stratégie DLP, si vous ne spécifiez aucun niveau de confiance pour la règle à utiliser, cette règle correspondra en fonction du niveau de confiance recommandé pour l’entité.
   
@@ -302,11 +302,11 @@ En plus de l’attribut confidenceLevel de chaque modèle, l’entité possède 
 
 Si votre équipe de conformité utilise le Centre de sécurité &amp; conformité Office 365 pour créer des stratégies DLP avec différents paramètres régionaux et dans différentes langues, vous pouvez fournir des versions localisées du nom et de la description de votre type d’informations sensibles personnalisé. Lorsque votre équipe de conformité utilise Office 365 dans une langue prise en charge, le nom localisé s’affiche dans l’interface utilisateur.
   
-![Nombre d’instances et options de précision de correspondance](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Nombre d’instances et options de précision de correspondance](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 L’élément Rules doit contenir un élément LocalizedStrings, qui contient un élément Resource référençant le GUID de votre entité personnalisée. À son tour, chaque élément Resource contient un ou plusieurs éléments Name et Description qui utilisent l’attribut langcode afin de fournir une chaîne localisée pour une langue spécifique.
   
-![Balisage XML montrant le contenu de l’élément LocalizedStrings](media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+![Balisage XML montrant le contenu de l’élément LocalizedStrings](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
 Notez que vous utilisez des chaînes localisées uniquement pour la manière dont le type d’informations sensibles personnalisé apparaît dans l’interface utilisateur du Centre de sécurité &amp; conformité. Vous ne pouvez pas utiliser des chaînes localisées pour fournir différentes versions localisées d’une liste de mots clés ou une expression régulière.
   
@@ -342,7 +342,7 @@ L’élément Version est également important. Lorsque vous chargez votre packa
 
 Lorsque vous avez terminé, votre élément RulePack doit ressembler à ce qui suit :
   
-![Balisage XML montrant l’élément RulePack](media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+![Balisage XML montrant l’élément RulePack](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
   
 ## <a name="changes-for-exchange-online"></a>Modifications pour Exchange Online
 

@@ -1,5 +1,7 @@
 ---
 title: 'Phase 3 : Critères de sortie pour l’infrastructure Windows 10 Entreprise'
+f1.keywords:
+- NOCSH
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour Windows 10 Entreprise.
-ms.openlocfilehash: d51392572c78edb1a21f5edc3229057b9af3f514
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 42d8ec912a70aecef49672682c25f5e42c4bbe21
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801219"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085553"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Phase 3 : Critères de sortie pour l’infrastructure Windows 10 Entreprise
 
-![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3 : Windows 10 Entreprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Vérifiez que votre infrastructure Windows 10 Entreprise répond aux critères suivants requis et que vous avez décidé ceux qui sont facultatifs.
 
@@ -125,4 +127,4 @@ Votre infrastructure Windows 10 Entreprise est prêt à commencer l’installati
 
 |||
 |:-------|:-----|
-|![Phase 4 : Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Si vous suivez les phases suivantes dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est la [Office 365 ProPlus](office365proplus-infrastructure.md). |
+|![Phase 4 : Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Si vous suivez les phases suivantes dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est la [Office 365 ProPlus](office365proplus-infrastructure.md). |

@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Cette solution montre comment protéger les données sensibles stockées dans les services Office 365.
-ms.openlocfilehash: a6bc231c82e65e7361cdcda7c2087bc48a55dcc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e930b0397e071a9270556041aa396ccfe5c17228
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597841"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071124"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>Protection des informations Office 365 pour le RGPD
 
@@ -30,7 +30,7 @@ ms.locfileid: "41597841"
   
 Cette solution inclut des recommandations pour la découverte, la classification, la protection et la surveillance des données personnelles. Cette solution utilise le Règlement général sur la protection des données (RGPD) en tant qu’exemple, mais vous pouvez appliquer la même procédure pour vous conformer à de nombreuses autres réglementations.
 
-[![Miniature de l’affiche sur la protection des informations Office 365 pour le RGPD.](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
+[![Miniature de l’affiche sur la protection des informations Office 365 pour le RGPD.](../media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
 
 [PDF](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)
   

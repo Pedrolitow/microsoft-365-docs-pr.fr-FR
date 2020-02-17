@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation.
-ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bad2e592359cb3e1f63e3fa020914ad49a65a471
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594575"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074175"
 ---
 # <a name="overview-of-file-plan-manager"></a>Vue d’ensemble du gestionnaire de plan de gestion de fichiers
 
@@ -29,7 +29,7 @@ Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de ges
 
 Pour accéder au gestionnaire du plan de gestion des fichiers dans le centre de sécurité et conformité, allez sur **Gestion des enregistrements** > **plan de gestion des fichiers**.
 
-![Page de plan de gestion de fichiers](media/file-plan-page.png)
+![Page de plan de gestion de fichiers](../media/file-plan-page.png)
 
 ## <a name="accessing-file-plan-manager"></a>Accès au gestionnaire de plan de fichiers
 
@@ -89,7 +89,7 @@ Sur l’onglet **Etiquettes** du plan de gestion de fichiers, les informations e
     - Suppression automatique
     - Examen requis (également appelé Examen de destination)
 
-![Paramètres des étiquettes dans le plan de gestion de fichiers](media/file-plan-label-columns.png)
+![Paramètres des étiquettes dans le plan de gestion de fichiers](../media/file-plan-label-columns.png)
 
 ### <a name="retention-label-file-plan-descriptors-columns"></a>Colonnes des descripteurs de plan de gestion de fichiers pour les étiquettes
 
@@ -99,11 +99,11 @@ Pour vous aider à démarrer, le gestionnaire de plan de gestion de fichiers fou
 
 Voici une vue de l’étape des descripteurs de plan de gestion des fichiers lors de la création ou de la modification d’une étiquette de conservation.
 
-![Descripteurs de plan de gestion de fichiers](media/file-plan-descriptors.png)
+![Descripteurs de plan de gestion de fichiers](../media/file-plan-descriptors.png)
 
 Voici une vue des colonnes de descripteurs du plan de gestion de fichiers dans l’onglet **Etiquettes** du gestionnaire de plan gestion de fichiers.
 
-![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>Exporter toutes les étiquettes de rétention existantes pour analyser et/ou effectuer des révisions en mode hors connexion
 
@@ -111,11 +111,11 @@ Depuis le gestionnaire de plan de gestion de fichiers, vous pouvez exporter les 
 
 Pour exporter toutes les étiquettes de conservation : page **gestionnaire de plan de gestion de fichiers**, **Actions de plan de gestion de fichiers** \> **Exporter les étiquettes**.
 
-![Option d’export de plan de gestion de fichiers](media/file-plan-export-labels-option.png)
+![Option d’export de plan de gestion de fichiers](../media/file-plan-export-labels-option.png)
 
 Un fichier *.csv contenant toutes les étiquettes de conservation existantes s’ouvre.
 
-![Fichier CSV affichant toutes les étiquettes de conservation](media/file-plan-csv-file.png)
+![Fichier CSV affichant toutes les étiquettes de conservation](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Import d’étiquettes de rétention dans votre plan de gestion de fichiers
 
@@ -125,13 +125,13 @@ Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes
 
 1. Dans la page **Plan de gestion de fichiers**, accédez à **Actions du plan de gestion de fichiers** > **Importer des étiquettes**.
 
-   ![Option d’import de plan de gestion de fichiers](media/file-plan-import-labels-option.png)
+   ![Option d’import de plan de gestion de fichiers](../media/file-plan-import-labels-option.png)
 
-   ![Option de téléchargement d’un modèle de plan de gestion de fichiers vide](media/file-plan-blank-template-option.png)
+   ![Option de téléchargement d’un modèle de plan de gestion de fichiers vide](../media/file-plan-blank-template-option.png)
 
 2. Télécharger un modèle vierge pour importer les nouvelles étiquettes de rétention. Vous pouvez également commencer avec le fichier .csv exporté lorsque vous exportez les étiquettes de rétention existantes au sein de votre organisation.
 
-   ![Modèle de plan de gestion de fichiers vierge ouvert dans Excel](media/file-plan-blank-template.png)
+   ![Modèle de plan de gestion de fichiers vierge ouvert dans Excel](../media/file-plan-blank-template.png)
 
 3. Complétez le modèle. Les éléments suivants décrivent les propriétés et les valeurs valides pour chaque propriété du modèle de plan de gestion de fichiers.<br/>
 
@@ -159,16 +159,16 @@ Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes
 
    Voici un exemple de modèle contenant les informations sur les étiquettes de rétention.
 
-   ![Modèle de plan de gestion de fichiers complété](media/file-plan-filled-out-template.png)
+   ![Modèle de plan de gestion de fichiers complété](../media/file-plan-filled-out-template.png)
 
 4. Sous l’étape 3, sur la page de l’assistant d’importation du plan de gestion de fichiers, cliquer sur **Rechercher des fichiers** pour charger le modèle rempli. 
 
    Le gestionnaire de plan de gestion de fichiers validera les entrées et affichera les statistiques d’importation.
 
-   ![Statistiques d’importation de plan de gestion de fichiers](media/file-plan-import-statistics.png)
+   ![Statistiques d’importation de plan de gestion de fichiers](../media/file-plan-import-statistics.png)
 
    En cas d’erreur de validation, l’importation de plan de fichiers continuera à valider chaque entrée dans le fichier d’importation et affichera toutes les erreurs faisant référence aux numéros de ligne/ligne dans le fichier d’importation, copiera les résultats d’erreur affichés afin de pouvoir facilement revenir au fichier d’importation et corriger les erreurs.
 
 5. Une fois l’importation terminée, accédez à nouveau au gestionnaire de plan de gestion de fichiers pour attribuer de nouvelles étiquettes de rétention aux stratégies de rétention nouvelles ou existantes.
 
-   ![Option de publication d’étiquettes](media/file-plan-publish-labels-option.png)
+   ![Option de publication d’étiquettes](../media/file-plan-publish-labels-option.png)

@@ -1,5 +1,7 @@
 ---
 title: 'Étape 7 : maintenance de Windows et d’Office'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment préparer la maintenance de Windows et d’Office au sein de votre environnement.
-ms.openlocfilehash: 28c66bbd723aaf4f3823e582e7b9b98daea69c27
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: d47abca74f7fea4c49f9aa28a93cd4afe40a0981
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085165"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Étape 7 : maintenance de Windows et d’Office
 
-![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-1.png)
+![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>Étape 7 : maintenance de Windows et d’Office</strong></p>
 <p>Windows 10 et Office 365 ProPlus étoffent continuellement leurs fonctionnalités en proposant de nouvelles expériences utilisateur, de nouvelles options de sécurité et les toutes dernières innovations. Découvrez comment rester informé des mises à jour semi-annuelles et mensuelles, explorez le fonctionnement du nouveau modèle de maintenance, et comparez les outils et les options de votre environnement.</p></td>
-<td><a href="https://aka.ms/ddev7" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -119,7 +121,7 @@ Grâce à la technologie « Mises à jour rapides » de Windows (appelée Comp
 
 Windows Update pour Entreprise et Windows Server Update Services ont pris en charge les mises à jour rapides pendant un certain temps. Désormais, les mises à jour rapides sont aussi prises en charge dans le gestionnaire de configuration Microsoft Endpoint (Current Branch).
 
-![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
+![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
 #### <a name="binary-delta-compression"></a>Compression Delta binaire
 
@@ -135,7 +137,7 @@ Comme nous l’avons abordé dans l’article sur la préparation des applicatio
 
 Concernant les outils, vous pouvez utiliser les paramètres de stratégie avec Windows Update pour Entreprise, la gestion des mises à jour logicielles via le gestionnaire de configuration Microsoft Endpoint (Current Branch), Windows Server Update Services (WSUS), ou les stratégies de mise à jour définies par Microsoft Intune. Si l’utilisation de la bande passante réseau vous préoccupe, reportez-vous à l’étape 2 sur la préparation des répertoires et du réseau pour savoir comment vous pouvez réduire le trafic réseau via l’Optimisation de la distribution et d’autres technologies de mise en cache pair à pair.
 
-![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
+![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
 [Canal semi-annuel Windows](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
@@ -147,7 +149,7 @@ L’installation des mises à jour de fonctionnalité volumineuses en utilisant 
 
 Une séquence de tâches vous permet de créer des vérifications ou des tâches personnalisées AVANT d’installer la mise à jour de fonctionnalité et d’exécuter des tâches personnalisées APRÈS l’installation de la mise à jour. Les tâches postérieures à la mise à jour peuvent inclure des services de suspension temporaire si besoin pendant la mise à jour, l’installation et le remplacement du pilote, les mises à niveau ou la barre des tâches de l’application, et les paramètres de personnalisation du démarrage de Windows 10.
 
-![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-5.png)
+![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-5.png)
 
 Si vous utilisez déjà des séquences de tâches pour migrer vos ordinateurs Windows 7 vers Windows 10 et que vous connaissez déjà ces outils, il s’agit d’un excellent point de départ pour maîtriser votre mise à niveau. Même si vous pouvez utiliser une séquence de tâches unique pour l’ensemble de la mise à niveau, il est assez courant que les organisations utilisent deux séquences de tâches : une séquence pour vérifier que les ordinateurs sont prêts pour la mise à niveau (elle pré-configure silencieusement tous les fichiers d’installation requis sur les ordinateurs cibles) et une autre séquence pour exécuter la mise à niveau. En utilisant cette approche, la productivité des utilisateurs est moins affectée.
 

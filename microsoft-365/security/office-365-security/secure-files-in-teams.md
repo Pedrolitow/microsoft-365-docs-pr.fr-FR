@@ -1,5 +1,7 @@
 ---
 title: Sécuriser des fichiers dans Microsoft Teams
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Résumé : Recommandations de configuration pour la protection des fichiers dans Microsoft Teams.'
-ms.openlocfilehash: 309ccfb4850f0c89f48e23c53088db5a2cda1437
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572750"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088126"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>Sécuriser des fichiers dans Microsoft Teams
 
@@ -47,7 +49,7 @@ Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées
 
 Les recommandations pour les équipes sécurisées s’appuient sur différentes fonctionnalités de Microsoft 365. L’illustration suivante montre les configurations recommandées.
 
-![Configuration recommandée pour Teams](../media/secure-team-configurations.png)
+![Configuration recommandée pour Teams](../../media/secure-team-configurations.png)
 
 Comme illustré :
 

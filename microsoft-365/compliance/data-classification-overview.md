@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 06fe15af513a737ac7669a3115891b7b731d7458
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76c1199fa3842428900db197f15728c116f778b9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595451"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076387"
 ---
 # <a name="data-classification-overview-preview"></a>Vue d’ensemble de la classification des données (aperçu)
 
@@ -41,11 +41,11 @@ Microsoft 365 fournit de nombreuses définitions des types d’informations sens
 
 La carte type d’informations sensibles présente les principaux types d’informations sensibles qui ont été détectés et étiquetés au sein de votre organisation.
 
-![principaux types d’informations sensibles](media/data-classification-sens-info-types-card.png)
+![principaux types d’informations sensibles](../media/data-classification-sens-info-types-card.png)
 
 Pour déterminer le nombre d’éléments dans une catégorie de classification donnée, pointez sur la barre pour la catégorie.
 
-![détail de pointage des principaux types d’informations sensibles](media/data-classification-sens-info-types-hover.png)
+![détail de pointage des principaux types d’informations sensibles](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
 > Si la carte affiche le message « Aucune donnée détectée avec des informations sensibles ». Cela signifie qu’il n’y a aucun élément de votre organisation classifié comme étant un type d’informations sensibles ou aucun élément analysé. Pour commencer à utiliser les étiquettes, voir :
@@ -60,13 +60,13 @@ Lorsque vous appliquez une étiquette de confidentialité à un élément via Mi
 - une balise qui indique que la valeur de l’élément pour votre organisation est incorporée dans le document et qu’elle le suivra partout
 - la présence de la balise permet différents comportements de protection, tels que le filigrane ou le chiffrement obligatoires. Lorsque la protection de point de terminaison est activée, vous pouvez même empêcher un élément de quitter votre contrôle organisationnel.
 
-Pour plus d’informations sur les étiquettes de confidentialité, voir : [Vue d’ensemble sur les étiquettes de confidentialité](sensitivity-labels.md).
+Pour plus d’informations sur les étiquettes de confidentialité, voir : [En savoir plus sur les étiquettes de confidentialité](sensitivity-labels.md).
 
 Les étiquettes de confidentialité doivent être activées pour les fichiers stockés dans SharePoint et OneDrive pour que les données correspondantes apparaissent dans la page de classification des données. Pour en savoir plus, consulter [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](sensitivity-labels-sharepoint-onedrive-files.md).
 
 La carte d’étiquette de confidentialité affiche le nombre d’éléments (adresse de messagerie ou document) par niveau de confidentialité.
 
-![répartition du contenu par capture d’écran de l’espace réservé pour la classification des étiquettes de confidentialité](media/data-classification-top-sensitivity-labels-applied.png)
+![répartition du contenu par capture d’écran de l’espace réservé pour la classification des étiquettes de confidentialité](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
 > Si vous n’avez pas créé ou publié d’étiquettes de confidentialité ou si aucune étiquette de confidentialité n’a été appliquée à votre contenu, cette carte affiche le message « Aucune étiquette de confidentialité détectée ». Pour commencer à utiliser les étiquettes, voir :
@@ -78,7 +78,7 @@ Les étiquettes de rétention sont utilisées pour gérer la disposition du cont
 
 La carte étiquettes de rétention les plus utilisées vous indique le nombre d’éléments ayant une étiquette de rétention donnée.
 
-![capture d’écran de l’espace réservé pour les étiquettes de rétention les plus utilisées](media/data-classification-top-retention-labels-applied.png)
+![capture d’écran de l’espace réservé pour les étiquettes de rétention les plus utilisées](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
 > Si cette carte affiche le message, « Aucune étiquette de rétention détectée », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de rétention ou qu’aucune étiquette de rétention n’a été appliquée à votre contenu. Pour commencer à utiliser les étiquettes de rétention, voir :

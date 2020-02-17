@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Découvrez comment accéder à Azure Active Directory, compris dans l’abonnement payant à Office 365 de votre organisation.
-ms.openlocfilehash: c8c8ec63a59e5f2e689046a2e2cd7079d529fa19
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8487b245001ffc73b975ed8f756b83e7093b1e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601281"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069215"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Enregistrer votre abonnement gratuit Azure Active Directory dans Office 365
 
@@ -37,7 +37,7 @@ Ouvrez une session de navigation privée pour accéder au Portail Azure (voir l
 
 2. Dans le volet de navigation gauche du Portail Azure, cliquez sur **Azure Active Directory**.
 
-    ![Cliquez sur Azure Active Directory dans le volet de navigation gauche dans le Portail Azure.](media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
+    ![Cliquez sur Azure Active Directory dans le volet de navigation gauche dans le Portail Azure.](../media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
 
     Le centre d’administration **Azure Active Directory** s’affiche.
 

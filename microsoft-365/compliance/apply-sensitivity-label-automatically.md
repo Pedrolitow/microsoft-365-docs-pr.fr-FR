@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: ff4a236a56fc2e8259204e7a0202d67176d44964
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b2b78c6b028dc34040019f5087f1f8773eed768d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596051"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079686"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -39,7 +39,7 @@ Pour plus d’informations sur les licences nécessaires, voir les [Conditions d
 
 Les paramètres d’étiquetage automatique sont disponibles lorsque vous créez une étiquette de sensibilité dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365 sous **Classification** > **Étiquettes de sensibilité**.
 
-![Options pour les étiquettes de la sensibilité d’étiquetage automatique](media/Sensitivity-labels-Auto-labeling-options.png)
+![Options pour les étiquettes de la sensibilité d’étiquetage automatique](../media/Sensitivity-labels-Auto-labeling-options.png)
 
 ## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Application d’une étiquette automatiquement en fonction des conditions
 
@@ -47,7 +47,7 @@ L’une des fonctionnalités les plus puissantes des étiquettes de confidential
 
 Vous pouvez choisir d’appliquer automatiquement des étiquettes de sensibilité au contenu quand celui-ci inclut des types spécifiques d’informations sensibles. Lorsque vous configurez une étiquette de sensibilité à être appliquée automatiquement, vous voyez la même liste de types d’informations sensibles comme lorsque vous créez une stratégie prévention contre la perte de données. Par conséquent vous pouvez, par exemple, appliquer automatiquement une étiquette hautement confidentielle à tout contenu qui contient des informations d’identification personnelle des clients (PII) telles que les numéros de sécurité sociale ou carte bancaire.
 
-![Nombre d’instances et options de précision des résultats](media/Sensitivity-labels-instance-count-match-accuracy.png)
+![Nombre d’instances et options de précision des résultats](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
 Après avoir choisi vos types d’informations sensibles, vous pouvez affiner votre condition en modifiant le nombre d’instances ou la précision des correspondances. Pour plus d’informations, voir[Optimisation des règles afin de les rendre plus facile ou plus difficile à associer](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
@@ -55,7 +55,7 @@ De plus, vous pouvez choisir si une condition doit détecter tous les types d’
 
 Lorsqu’une étiquette de critère de diffusion est automatiquement appliquée, l’utilisateur voit une notification dans leur application Office. Ils peuvent choisir **OK**pour fermer la notification.
 
-![Notification dont un document disposait d’une étiquette appliquée automatiquement](media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
+![Notification dont un document disposait d’une étiquette appliquée automatiquement](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
 ## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Recommandé que l’utilisateur applique une étiquette de critère de diffusion
 
@@ -63,11 +63,11 @@ Si vous le souhaitez, vous pouvez recommander à vos utilisateurs qu’ils appli
 
 Les étiquettes recommandées sont prises en charge dans Word, PowerPoint et Excel (et requièrent que l’étiquette client Protection Informations Azure unifiée soit bien installée). 
 
-![Option pour recommander une étiquette de confidentialité à des utilisateurs](media/Sensitivity-labels-Recommended-label-option.png)
+![Option pour recommander une étiquette de confidentialité à des utilisateurs](../media/Sensitivity-labels-Recommended-label-option.png)
 
 Voici un exemple d’une invite de commandes lorsque vous configurez une condition à appliquer une étiquette comme action recommandée avec un Conseil de stratégie personnalisé. Vous pouvez choisir quel texte s’affiche dans le Conseil de stratégie.
 
-![Invite à appliquer une étiquette recommandée](media/Sensitivity-label-Prompt-for-required-label.png)
+![Invite à appliquer une étiquette recommandée](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>Comment les étiquettes automatiques ou recommandées sont appliquées
 

@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Résumé : Créez et configurez des sites d’équipe SharePoint Online avec différents niveaux de protection des informations.'
-ms.openlocfilehash: 1f67dd1956059162902aefdb194e5e514d063778
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 1827c4a19cfd31a236dfbd58e454c610cae14477
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855253"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075516"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Déployer des sites SharePoint Online pour trois niveaux de protection
 
@@ -41,7 +41,7 @@ Pour créer un site d’équipe SharePoint Online de base de référence avec un
 
 Voici la configuration finale.
   
-![Protection de base pour un site d’équipe SharePoint Online public.](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![Protection de base pour un site d’équipe SharePoint Online public.](../media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>Privé
 
@@ -49,7 +49,7 @@ Pour créer un site d’équipe SharePoint Online de base de référence avec un
   
 Voici la configuration finale.
   
-![Protection de base pour le site d’équipe SharePoint Online privé.](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![Protection de base pour le site d’équipe SharePoint Online privé.](../media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>Sites d’équipe SharePoint Online sensibles
 
@@ -70,7 +70,7 @@ Voici les résultats que vous devez escompter :
 
 Voici la configuration finale.
   
-![Protection des données sensibles d’un site d’équipe SharePoint Online isolé.](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![Protection des données sensibles d’un site d’équipe SharePoint Online isolé.](../media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 Les membres du site, via l’appartenance à un des groupes d’accès, peuvent désormais collaborer sur les ressources du site de façon sécurisée.
   
@@ -94,7 +94,7 @@ Voici les résultats que vous devez escompter :
 
 Voici la configuration finale.
   
-![Protection avec un niveau de confidentialité élevé pour un site d’équipe SharePoint Online isolé.](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![Protection avec un niveau de confidentialité élevé pour un site d’équipe SharePoint Online isolé.](../media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 Les membres du site, via l’appartenance à un des groupes d’accès, peuvent désormais collaborer sur les ressources du site de façon sécurisée.
   

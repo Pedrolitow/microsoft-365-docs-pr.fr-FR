@@ -1,5 +1,7 @@
 ---
 title: Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne politique
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.'
-ms.openlocfilehash: a5bce86ef7bce79d58628b78d95e02484051c389
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971842"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083483"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale
 
@@ -185,11 +187,11 @@ Utilisez ces étapes pour vérifier que l’appartenance au groupe dynamique et 
 
 Enregistrez ces valeurs pour utiliser les abonnements aux versions d’évaluation d’Office 365 et d’EMS pour cet environnement de développement/test :
 
-- Nom de l’organisation bénéficiant de l’abonnement à la version d’évaluation : ![Souligner](../media/Common-Images/TableLine.png)
+- Nom de l’organisation bénéficiant de l’abonnement à la version d’évaluation : ![Souligner](../../media/Common-Images/TableLine.png)
 
   Par exemple, pour le nom de domaine de l’abonnement à la version d’évaluation de contoso.onmicrosoft.com, le nom de l’organisation est « contoso ».
 
-- Le nom de l’administrateur général Office 365 : ![Souligner](../media/Common-Images/TableLine.png).onmicrosoft.com
+- Le nom de l’administrateur général Office 365 : ![Souligner](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Enregistrez le mot de passe pour ce compte et le mot de passe initial commun pour les autres comptes d’utilisateurs dans un emplacement sécurisé.
 

@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Résumé : Recommandations de configuration pour la protection des fichiers dans SharePoint Online et Office 365.'
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8497f2c33e89f4e8240de16ba29b1431fff39de4
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855243"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082291"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sécuriser des sites et des fichiers SharePoint Online
 
@@ -51,7 +51,7 @@ Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées
 
 Les recommandations pour les sites d’équipe SharePoint Online s’appuient sur différentes fonctionnalités de Microsoft 365. L’illustration suivante montre les configurations recommandées pour quatre sites d’équipe SharePoint Online.
 
-![Configuration recommandée pour les sites SharePoint](../media/SharePoint-site-configurations.png)
+![Configuration recommandée pour les sites SharePoint](../../media/SharePoint-site-configurations.png)
 
 Comme illustré :
 
@@ -141,7 +141,7 @@ L’utilisation des étiquettes de rétention est recommandée pour les environn
 
 - Des personnes de votre organisation peuvent appliquer une étiquette manuellement au contenu dans Outlook sur le web, Outlook 2010 et versions ultérieures, OneDrive Entreprise, SharePoint Online et les groupes Office 365. Les utilisateurs savent souvent mieux quel type de contenu ils utilisent, ils peuvent donc le classer et appliquer la stratégie DLP appropriée.
 
-![Configuration recommandée pour les sites SharePoint](../media/7fed0126-ab4a-4480-922c-681970642339.png)
+![Configuration recommandée pour les sites SharePoint](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 
 Comme illustré, cette solution inclut la création des étiquettes de rétention suivantes :
 

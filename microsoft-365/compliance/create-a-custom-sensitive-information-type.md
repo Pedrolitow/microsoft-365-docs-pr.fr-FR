@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Apprenez à créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour la protection contre la perte de données dans l’interface utilisateur graphique du Centre de sécurité et conformité.
-ms.openlocfilehash: 7f7c4c787bff6fa9d4c644b5640d05b9320686ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 726f21416a3e83a9c3024d810c4335ea263b3c20
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596211"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078030"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité
@@ -69,7 +69,7 @@ Voici un scénario : vous souhaitez créer un type d’informations sensibles p
 
 1. Dans le Centre de conformité et sécurité, accédez à **Classifications** \> **Types d’informations sensibles** et cliquez sur **Créer**.
 
-    ![Emplacement des types d’informations sensibles et bouton Créer](media/scc-cust-sens-info-type-new.png)
+    ![Emplacement des types d’informations sensibles et bouton Créer](../media/scc-cust-sens-info-type-new.png)
 
 2. Sur la page **Choisir un nom et une description** qui s’ouvre, entrez les valeurs suivantes :
 
@@ -77,7 +77,7 @@ Voici un scénario : vous souhaitez créer un type d’informations sensibles p
 
   - **Description** : détecte les numéros d’identification d’employé Contoso à neuf chiffres.
 
-    ![Nom et page de description](media/scc-cust-sens-info-type-new-name-desc.png)
+    ![Nom et page de description](../media/scc-cust-sens-info-type-new-name-desc.png)
 
     Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -101,17 +101,17 @@ Voici un scénario : vous souhaitez créer un type d’informations sensibles p
 
     - Conservez la valeur par défaut **Caractère de proximité** 300.
 
-    ![Configuration requise pour la page correspondante](media/scc-cust-sens-info-type-new-reqs.png)
+    ![Configuration requise pour la page correspondante](../media/scc-cust-sens-info-type-new-reqs.png)
 
     Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Sur la page **Revoir et finaliser** qui s’affiche, passez en revue les paramètres, puis cliquez sur **Terminer**.
 
-    ![Examen et finalisation de la page](media/scc-cust-sens-info-type-new-review.png)
+    ![Examen et finalisation de la page](../media/scc-cust-sens-info-type-new-review.png)
 
 5. La page suivante vous encourage à tester le nouveau type d’informations sensibles personnalisés en cliquant sur **Oui**. Pour plus d’informations, reportez-vous à l’article [Tester des types d’informations sensibles personnalisés dans le Centre de conformité et sécurité](#test-custom-sensitive-information-types-in-the-security--compliance-center). Sinon, cliquez sur **Non**.
 
-    ![Page de recommandation de test](media/scc-cust-sens-info-type-new-test.png)
+    ![Page de recommandation de test](../media/scc-cust-sens-info-type-new-test.png)
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -131,7 +131,7 @@ Pour vérifier que vous avez correctement créé un nouveau type d’information
 
 Dans le Centre de conformité et sécurité, accédez à **Classifications** \> **Types d’informations sensibles**, sélectionnez le type d’informations sensibles personnalisé à modifier, puis cliquez sur **Modifier**.
 
-  ![Emplacement des types d’informations sensibles et bouton Modifier](media/scc-cust-sens-info-type-edit.png)
+  ![Emplacement des types d’informations sensibles et bouton Modifier](../media/scc-cust-sens-info-type-edit.png)
 
 Les mêmes options sont disponibles ici comme lorsque vous avez créé le type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité. Pour plus d’informations, consultez la rubrique [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](#create-custom-sensitive-information-types-in-the-security--compliance-center).
 
@@ -155,7 +155,7 @@ Pour vérifier que vous avez correctement modifié un type d’informations sens
 
 2. Dans la boîte de dialogue qui s’ouvre, cliquez sur **Supprimer** (ou **Supprimer des types d’informations sensibles** si vous en avez sélectionnés plusieurs).
 
-    ![Emplacement des types d’informations sensibles et bouton Supprimer](media/scc-cust-sens-info-type-delete.png)
+    ![Emplacement des types d’informations sensibles et bouton Supprimer](../media/scc-cust-sens-info-type-delete.png)
 
 3. Cliquez sur **Oui** lorsque le message d’avertissement s’affiche.
 
@@ -169,14 +169,14 @@ Pour vérifier que vous avez supprimé correctement un type d’informations sen
 
 2. Sélectionnez un ou plusieurs types d’informations sensibles personnalisés à tester. Dans la boîte de dialogue qui s’ouvre, cliquez sur **Type de test** (ou **Tester des types d’informations sensibles** si vous en avez sélectionnés plusieurs).
 
-    ![Emplacement des types d’informations sensibles et bouton Tester le type](media/scc-cust-sens-info-type-test.png)
+    ![Emplacement des types d’informations sensibles et bouton Tester le type](../media/scc-cust-sens-info-type-test.png)
 
 3. Dans la page **Télécharger le fichier à tester** qui s’ouvre, chargez un document à tester en faisant glisser un fichier ou en cliquant sur **Parcourir** et en sélectionnant un fichier.
 
-    ![Charger le fichier sur la page de test](media/scc-cust-sens-info-type-test-upload.png)
+    ![Charger le fichier sur la page de test](../media/scc-cust-sens-info-type-test-upload.png)
 
 4. Cliquez sur le bouton **Tester** pour rechercher des modèles dans le fichier.
 
 5. Sur la page **Mettre en correspondance les résultats**, cliquez sur **Terminer**.
 
-    ![Mettre en correspondance les résultats](media/scc-cust-sens-info-type-test-results.png)
+    ![Mettre en correspondance les résultats](../media/scc-cust-sens-info-type-test-results.png)

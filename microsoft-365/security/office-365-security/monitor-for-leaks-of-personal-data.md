@@ -1,5 +1,7 @@
 ---
 title: Surveillance des fuites de données personnelles
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -16,18 +18,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
-ms.openlocfilehash: 43133ed638f91957307b832826c21ae81aa269b0
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572971"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088387"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
 Il existe de nombreux outils qui peuvent être utilisés pour surveiller l’utilisation et le transport des données personnelles. Cette rubrique décrit trois outils qui fonctionnent correctement.
 
-![Outils permettant de surveiller l’utilisation et le transport des données personnelles](../media/Monitor-for-leaks-of-personal-data-image1.png)
+![Outils permettant de surveiller l’utilisation et le transport des données personnelles](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 Dans cette illustration :
 
@@ -61,7 +63,7 @@ Les rapports DLP sont dans le centre de sécurité et le centre de conformité. 
 
 Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
 
-![Rapport affichant les correspondances de stratégie DLP](../media/Monitor-for-leaks-of-personal-data-image2.png)
+![Rapport affichant les correspondances de stratégie DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="office-365-audit-log-and-alert-policies"></a>Journal d’audit Office 365 et stratégies d’alerte
 
@@ -103,7 +105,7 @@ Pour mieux comprendre votre environnement cloud, la fonctionnalité d’examen d
 
 Pour consulter des exemples, l’illustration suivante décrit deux stratégies Cloud App Security qui peuvent vous aider avec le RGPD.
 
-![Exemple de stratégies Cloud App Security](../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Exemple de stratégies Cloud App Security](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 La première stratégie signale lorsque des fichiers avec un attribut PII prédéfini ou une expression personnalisée que vous choisissez sont partagés en dehors de l’organisation à partir des applications SaaS que vous choisissez.
 
@@ -121,7 +123,7 @@ Si vous n’avez pas encore commencé à utiliser Cloud App Security, commencez 
 
 Remarque : veillez à activer l’option 'Analyser automatiquement les fichiers pour les étiquettes de classification Azure Information Protection' (dans les paramètres généraux) lors de la prise en main de Cloud App Security ou avant d’attribuer des étiquettes. Après la configuration, Cloud App Security n’analyse pas de nouveau les fichiers existants tant qu’ils ne sont pas modifiés.
 
-![Tableau de bord affichant des informations sur les alertes](../media/Monitor-for-leaks-of-personal-data-image4.png)
+![Tableau de bord affichant des informations sur les alertes](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Plus d’informations :
 

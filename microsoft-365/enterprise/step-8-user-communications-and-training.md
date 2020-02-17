@@ -1,5 +1,7 @@
 ---
 title: 'Étape 8 : formation et communications des utilisateurs'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment préparer vos utilisateurs finaux à l’utilisation de Windows 10 et d’Office 365 ProPlus au travers d’une formation et de communications.
-ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033659"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085115"
 ---
 # <a name="step-8-user-communications-and-training"></a>Étape 8 : formation et communications des utilisateurs
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Étape 8 : formation et communication des utilisateurs</strong></p>
 <p>Pensez à informer vos utilisateurs des nouvelles expériences et nouveaux modes de travail avant de migrer vos PC vers Windows 10 et Office 365 ProPlus. Découvrez comment tirer parti de l’assistance à l’adoption utilisateur avec Microsoft FastTrack, des supports de formation et des modèles de communication, ainsi que des nouveaux moyens pour surveiller l’usage et l’acceptation des utilisateurs.</p></td>
-<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -47,7 +49,7 @@ Commençons par Office : si vous déployez Office 365 ProPlus pour la premiè
 
 Des modèles de communication et de formation détaillés sont disponibles pour ces applications locales ou basées sur navigateur, à l’instar de Teams et du Planificateur.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
 
 Nous proposons également des conseils sur les nouvelles fonctionnalités des applications, comme l’insertion en pièce jointe des fichiers liés à OneDrive dans Outlook ou l’utilisation des nouvelles transitions de diapositives Morph et des fonctionnalités Designer dans PowerPoint.
 
@@ -77,7 +79,7 @@ Le déploiement progressif à l’aide d’anneaux de déploiement vous permet d
 
 Il est préférable de créer les anneaux de déploiement en collaboration avec les divisions et leurs responsables. Nous vous recommandons de prendre connaissance des dates et des périodes critiques à éviter pour déployer ou effectuer des changements. Sans une planification rigoureuse et le soutien de toutes les parties prenantes, il sera difficile de convaincre les utilisateurs et de les familiariser aux changements prévus.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### <a name="phase-1-the-it-team-and-early-adopter-insiders"></a>Phase 1 : l’équipe informatique et les utilisateurs internes enthousiastes 
 
@@ -117,7 +119,7 @@ Ces services et composants peuvent être peaufinés pendant la phase pilote. Qua
 
 À mesure que votre phase pilote s’élargit, nous vous conseillons de documenter et de publier les questions fréquemment posées et du contenu en libre-service pour réduire de façon proactive le nombre de tickets envoyés au support technique.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>Phase 3 et plus : déploiement de production à grande échelle 
 

@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: L’explorateur d’activité complète les fonctionnalités de classification des données en vous permettant de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: 8af23cac590eb226890979719f938b8e79099bb3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595471"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076760"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>Afficher l’activité sur votre contenu étiqueté (aperçu)
 
 Les onglets vue d’ensemble de la classification des données et explorateur de contenu vous permettent de voir quel contenu a été découvert et étiqueté, ainsi que son emplacement. L’explorateur d’activité complète cette suite de fonctionnalités en vous permettant de contrôler les opérations effectuées avec votre contenu étiqueté. L’Explorateur d’activité permet de voir votre historique.
 
-![emplacement réservé pour la capture d’écran aperçu de l’explorateur d’activité](media/data-classification-activity-explorer-1.png)
+![emplacement réservé pour la capture d’écran aperçu de l’explorateur d’activité](../media/data-classification-activity-explorer-1.png)
 
 Vous pouvez filtrer les données par :
 
@@ -71,11 +71,11 @@ L’intérêt de comprendre quelles actions sont accomplies avec votre contenu m
 
 Une fois vos filtres définis, vous pouvez :
 
-- pointer votre curseur sur un segment de l’histogramme pour afficher le nombre d’éléments inclus dans cette catégorie ![pointer sur explorateur d’activités](media/data-classification-activity-explorer-hover-over-2.png)
+- pointer votre curseur sur un segment de l’histogramme pour afficher le nombre d’éléments inclus dans cette catégorie ![pointer sur explorateur d’activités](../media/data-classification-activity-explorer-hover-over-2.png)
 - exporter les données
 - sélectionner un élément donné dans la liste et afficher les détails de l’action dans le menu volant
 
-![Menu volant des détails de l’explorateur d’activités](media/data-classification-activity-explorer-fly-out-3.png)
+![Menu volant des détails de l’explorateur d’activités](../media/data-classification-activity-explorer-fly-out-3.png)
 
 ## <a name="see-also"></a>Voir aussi
 - [Étiquettes de confidentialité](sensitivity-labels.md)

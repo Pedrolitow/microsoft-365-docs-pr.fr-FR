@@ -64,7 +64,7 @@ De plus, nous n’appliquons pas le traitement de l’expéditeur non vérifié 
 
 Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via le centre de sécurité & conformité d’Office 365, de la même manière que vous gérez le traitement des expéditeurs non vérifiés. Si vous ajoutez l’expéditeur à la liste d’usurpation d’identité usurpée, le traitement « via » ne sera pas appliqué.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>Quels sont les critères utilisés par Outlook.com et le bureau Win32 Outlook pour ajouter les propriétés «  ? » et « via » ?
 

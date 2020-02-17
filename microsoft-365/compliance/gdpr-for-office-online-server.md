@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 747959fcdf8840644e4b7de4de02eb250d062423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e16f206c858d35dd2894b44d398e375c0a59fde5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596451"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073255"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>RGPD pour Office Web Apps Server et Office Online Server
 
@@ -24,7 +24,7 @@ Les données de télémétrie Office Online Server et Office Web Apps Serve
 
 Chaque ligne de journal contient un élément CorrelationID. Les lignes de journal connexes partagent le même CorrelationID. Chacun de ces éléments CorrelationID est lié à un seul élément SessionID, qui, lui, peut être associé à plusieurs éléments CorrelationID. Chaque SessionID peut être lié à un seul UserID, bien que certaines sessions puissent être anonymes et donc ne pas avoir d’élément UserID associé. Afin de déterminer les données qui sont associées à un utilisateur particulier, il est donc possible d’établir un mappage à partir d’un seul élément UserID vers les éléments SessionID associés à cet utilisateur, à partir de ces éléments SessionID vers les éléments CorrelationID associés et à partir de ces éléments CorrelationID vers tous les journaux de ces corrélations. Reportez-vous au diagramme ci-dessous pour voir la relation entre les différents ID.
 
-![](media/gdpr-for-office-online-server-image1.jpg)
+![](../media/gdpr-for-office-online-server-image1.jpg)
 
 ## <a name="gathering-logs"></a>Collecte de journaux
 

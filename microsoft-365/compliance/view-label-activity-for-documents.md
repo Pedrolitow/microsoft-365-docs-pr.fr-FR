@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement rechercher et afficher l’activité des étiquettes pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Il s’agit des données en temps réel qui vous offrent une bonne visibilité de ce qui se passe dans votre client.
-ms.openlocfilehash: eebe1938195740565f064bbac20608255aa5ef73
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f1bb6f7a79759a9b2d36b5af334ced89e5b2b28a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597231"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068877"
 ---
 # <a name="view-label-activity-for-documents"></a>Afficher l’activité des étiquettes pour les documents
 
@@ -44,7 +44,7 @@ Vous trouverez l’explorateur d’activité des étiquettes dans le Centre de s
   
 Notez que l’Explorateur d’activité des étiquettes requiert un abonnement Office 365 Entreprise E5.
   
-![Explorateur d’activité des étiquettes](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+![Explorateur d’activité des étiquettes](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## <a name="view-label-activities-for-files-or-folders"></a>Afficher les activités des étiquettes pour les fichiers ou les dossiers
 
@@ -52,7 +52,7 @@ En haut de l’Explorateur d’activité des étiquettes, vous pouvez choisir d�
   
 Vous voudrez peut-être consulter l’activité des étiquettes pour les dossiers, car si vous étiquetez un dossier, tous les fichiers contenus dans ce dossier sont également étiquetés (à l’exception des fichiers ayant été étiquetés spécifiquement). Par conséquent, l’étiquetage des dossiers risque d’affecter un certain nombre de fichiers. Pour obtenir plus d’informations, consultez la rubrique [Application d’une étiquette de rétention par défaut à tout le contenu d’une bibliothèque, d’un dossier ou d’un ensemble de documents SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
-![Menu déroulant affichant les activités des étiquettes pour les fichiers et les dossiers](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
+![Menu déroulant affichant les activités des étiquettes pour les fichiers et les dossiers](../media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   
 ### <a name="label-activities"></a>Activités des étiquettes
 
@@ -62,12 +62,12 @@ Vous voudrez peut-être consulter l’activité des étiquettes pour les dossier
 
  L’affichage **Modifications des étiquettes** inclut les actions potentiellement risquées de **suppression** ou de **modification** d’une étiquette. Vous pouvez utiliser cet affichage pour consulter rapidement ces actions risquées et l’utilisateur qui les a effectuées. Dans la liste des activités située sous le graphique, vous pouvez sélectionner un fichier, puis cliquer sur un lien vers ce fichier dans le volet d’informations situé à droite. 
   
-![Volet d’informations de l’activité des étiquettes](media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
+![Volet d’informations de l’activité des étiquettes](../media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
   
 ## <a name="filter-label-activity"></a>Filtre de l’activité des étiquettes
 
 Vous pouvez rapidement filtrer les données pour afficher toutes les activités des étiquettes pour une étiquette, un fichier ou un utilisateur en particulier. Vous pouvez également filtrer l’activité des étiquettes par emplacement (SharePoint ou OneDrive Entreprise) et si l’étiquette a été appliquée manuellement ou automatiquement.
   
-![Filtres de l’activité des étiquettes](media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
+![Filtres de l’activité des étiquettes](../media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
   
 

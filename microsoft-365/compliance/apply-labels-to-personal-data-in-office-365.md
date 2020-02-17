@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment utiliser des étiquettes Office dans le cadre de votre plan de protection RGPD.
-ms.openlocfilehash: 7561daccb400fd5364e8c1ed948924f7975af5a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596091"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079793"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Application d’étiquettes à des données personnelles dans Office 365
 
@@ -41,7 +41,7 @@ Les [étiquettes de sensibilité](sensitivity-labels.md) sont actuellement recom
 
 Les étiquettes de rétention peuvent être appliquées au courrier dans Exchange Online et ces étiquettes fonctionnent avec la prévention de perte de données Office 365. 
 
-![Étiquettes Office 365 et étiquettes Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Étiquettes Office 365 et étiquettes Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 Dans cette illustration :
@@ -55,7 +55,7 @@ Dans cette illustration :
 
 L’image suivante montre comment les étiquettes Office et les types d’informations sensibles peuvent être utilisés dans les stratégies d’étiquetage, les stratégies de protection contre la perte de données et les stratégies Cloud App Security.
 
-![Étiquettes Office et types d’informations sensibles](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
+![Étiquettes Office et types d’informations sensibles](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
 Concernant l’accessibilité, le tableau suivant fournit les mêmes exemples dans l’illustration.
 
@@ -196,7 +196,7 @@ Créez des étiquettes et des stratégies dans le Centre de sécurité ou de con
 
 L’image suivante montre comment créer une étiquette à application automatique pour l’étiquette de données Client.
 
-![Création et application d’étiquette pour des données client](Media/Apply-labels-to-personal-data-in-Office-365-image3.png)
+![Création et application d’étiquette pour des données client](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
 Dans cette illustration :
 

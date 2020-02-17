@@ -178,8 +178,8 @@ Connectez-vous au [portail Microsoft Azure (https://portal.azure.com)](https://p
 
 | Type | Propriétés | Valeurs                  | Remarques |
 |:-----|:-----------|:------------------------|:------|
-|      | Accès     | Autoriser l'accès            | Vrai  |
-|      | Accès     | Exiger le changement du mot de passe | True  |
+|      | Access     | Autoriser l'accès            | Vrai  |
+|      | Access     | Exiger le changement du mot de passe | True  |
 
 **Révision :** non applicable
 

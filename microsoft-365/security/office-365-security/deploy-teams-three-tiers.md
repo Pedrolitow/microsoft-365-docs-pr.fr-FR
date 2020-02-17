@@ -1,5 +1,7 @@
 ---
 title: Déployer des équipes pour trois niveaux de protection des fichiers
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: Créez et configurez des équipes avec Microsoft Teams pour différents niveaux de protection des informations pour les fichiers.
-ms.openlocfilehash: 3b90a1b084f7cd7e56d1d6448d74a7d2c2469a4d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971822"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083329"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>Déployer des équipes pour trois niveaux de protection des fichiers
 
@@ -38,7 +40,7 @@ Utilisez les instructions de [cet article](https://support.office.com/article/17
 
 Voici la configuration finale.
 
-![Protection de niveau de référence pour une équipe publique.](../media/baseline-public-team.png)
+![Protection de niveau de référence pour une équipe publique.](../../media/baseline-public-team.png)
 
 ### <a name="private"></a>Privé
 
@@ -46,7 +48,7 @@ Utilisez les instructions de [cet article](https://support.office.com/article/17
 
 Voici la configuration finale.
 
-![Protection de niveau de référence pour une équipe privée.](../media/baseline-private-team.png)
+![Protection de niveau de référence pour une équipe privée.](../../media/baseline-private-team.png)
 
 ## <a name="sensitive-teams"></a>Équipes sensibles
 
@@ -66,7 +68,7 @@ Vous configurez ensuite le site SharePoint sous-jacent pour empêcher le partage
 
 Voici la configuration finale.
 
-![Protection sensible pour les membres d’une équipe.](../media/sensitive-team.png)
+![Protection sensible pour les membres d’une équipe.](../../media/sensitive-team.png)
 
 ## <a name="highly-confidential-teams"></a>Équipe hautement confidentielles
 
@@ -88,7 +90,7 @@ Vous configurez ensuite le site SharePoint sous-jacent pour empêcher le partage
 
 Voici la configuration finale.
 
-![Protection hautement confidentielle pour les membres d’une équipe.](../media/highly-confidential-team.png)
+![Protection hautement confidentielle pour les membres d’une équipe.](../../media/highly-confidential-team.png)
 
 ## <a name="next-step"></a>Étape suivante
 

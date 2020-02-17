@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dans les rapports de gouvernance des données du Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement vérifier si vos étiquettes sont appliquées au contenu comme vous le souhaitiez.
-ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597211"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068789"
 ---
 # <a name="view-the-data-governance-reports"></a>Affichage des rapports de gouvernance des données
 
@@ -38,10 +38,10 @@ Tous ces rapports affichent le contenu étiqueté dans Exchange, SharePoint et O
   
 Vous trouverez ces rapports dans le Centre de sécurité &amp; conformité \> **Gouvernance des informations** \> **Tableau de bord**.
   
-![Graphique illustrant les tendances des étiquettes au cours des 90 derniers jours](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
+![Graphique illustrant les tendances des étiquettes au cours des 90 derniers jours](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
 Vous pouvez filtrer les rapports de gouvernance des données par date (90 jours maximum) et par emplacement (Exchange, SharePoint et OneDrive Entreprise). Les données les plus récentes sont affichées dans les rapports dans un délai de 24 heures.
   
-![Filtres applicables aux rapports de gouvernance des données](media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
+![Filtres applicables aux rapports de gouvernance des données](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
 

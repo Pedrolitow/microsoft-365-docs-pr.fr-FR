@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cette rubrique explique comment configurer votre flux de processus métier pour automatiser la rétention via des événements à l’aide de l’API REST de Microsoft 365.
-ms.openlocfilehash: 46276e1a40df8c5491d569337a683666984be23a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 692671ca5e7d956cb168ac0de2e409e7023cfd04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596321"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079074"
 ---
 # <a name="automate-event-based-retention"></a>Rétention basée sur des événements
 
@@ -121,13 +121,13 @@ En plus de cela, la période de rétention doit être calculée pour chacun de c
 
 Le diagramme ci-dessous montre comment plusieurs étiquettes peuvent être associées à un seul événement. Dans cet exemple, tous les fichiers figurant sous l’étiquette indemnités du collaborateur et tous les fichiers sous l’étiquette avantages sociaux des employés sont associés à un seul événement, qui est l’employé quittant l’organisation. Chacun de ces fichiers a des horloges de rétention différentes. Par conséquent, lorsqu’un employé quitte l’organisation, ces fichiers au sein de chaque étiquette ont une période de rétention différente. Le déclenchement de toutes ces horloges de rétention pour chaque type de fichier ou étiquette pour chaque employé constitue une tâche complexe. Imaginez qu’il s’agit de plusieurs employés.
 
-![Diagramme illustrant le type d’événement, des événements et des étiquettes](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
+![Diagramme illustrant le type d’événement, des événements et des étiquettes](../media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
 Un processus automatisé associé au déclenchement de ces différentes horloges de rétention pour plusieurs employés sera donc un gagne-temps, exempte d’erreur et très efficace.
 
 **Configuration Automatisée de Rétention Basée sur des événements pour ce scénario:**
 
-![Diagramme des rôles et des actions pour le scénario d’employé quittant l’organisation](media/automate-event-driven-retention-employee-termination-diagram.png)
+![Diagramme des rôles et des actions pour le scénario d’employé quittant l’organisation](../media/automate-event-driven-retention-employee-termination-diagram.png)
 
   - L’administrateur crée des dossiers d’employé lié au Document, telles Cartier Marie, John Smith.
 
@@ -151,9 +151,9 @@ Un processus automatisé associé au déclenchement de ces différentes horloges
 
 Étape 1-créer un flux de créer un événement en utilisant l’API REST Microsoft 365
 
-![Utilisation le flux pour créer un événement](media/automate-event-driven-retention-flow-1.png)
+![Utilisation le flux pour créer un événement](../media/automate-event-driven-retention-flow-1.png)
 
-![Utilisation du flux pour appeler des API REST](media/automate-event-driven-retention-flow-2.png)
+![Utilisation du flux pour appeler des API REST](../media/automate-event-driven-retention-flow-2.png)
 
 ##### <a name="create-an-event"></a>Créer un événement
 
@@ -423,7 +423,7 @@ Un système de gestion de relation client (CRM) pouvez travailler avec Microsoft
 
 **Configuration Automatisée de Rétention Basée sur des événements pour ce scénario:**
 
-![Diagramme des rôles et des tâches pour le scénario d’expiration contrat](media/automate-event-driven-retention-contract-expiration.png)
+![Diagramme des rôles et des tâches pour le scénario d’expiration contrat](../media/automate-event-driven-retention-contract-expiration.png)
 
   - L’administrateur crée une bibliothèque SharePoint avec les différents dossiers pour chaque type de contrat.
 
@@ -451,7 +451,7 @@ Un système de planification (ERP) peut fonctionner avec Microsoft 365 et Micros
 
 **Configuration Automatisée de Rétention Basée sur des événements pour ce scénario:**
 
-![Diagramme des rôles et des tâches pour le scénario de cycle de vie de produit](media/automate-event-driven-retention-product-lifecycle-expiration.png)
+![Diagramme des rôles et des tâches pour le scénario de cycle de vie de produit](../media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
   - L’administrateur crée des dossiers du produit dans l’ensemble de Documents tel que produit 1, produit 2, etc.
 

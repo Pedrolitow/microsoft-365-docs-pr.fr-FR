@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774220"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070164"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -87,7 +87,7 @@ Notez qu’un utilisateur reçoit une erreur s’il tente de supprimer une bibli
   
 Lorsqu’une stratégie de rétention est affectée à un compte OneDrive ou à un site SharePoint, le contenu suit l’un des deux chemins suivants :
 
-![Diagramme de cycle de vie de contenu dans SharePoint et OneDrive](media/Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagramme de cycle de vie de contenu dans SharePoint et OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. **Si le contenu est modifié ou supprimé** pendant la période de rétention, une copie du contenu d’origine tel qu’il existait lors de l’attribution de la stratégie de rétention est créée dans la bibliothèque de conservation et de préservation des documents. Ici, un travail de minuteur s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont déplacés vers la Corbeille second niveau où ils sont ensuite supprimés définitivement au bout de 93 jours. La corbeille second niveau n’est pas visible par les utilisateurs finaux (seule le premier niveau de la corbeille l’est), mais les administrateurs de collection de sites peuvent afficher et restaurer du contenu à partir de cet emplacement.
 
@@ -110,7 +110,7 @@ Si un utilisateur quitte votre organisation et que sa boîte aux lettres est inc
   
 Lorsqu’une stratégie de rétention est affectée à une boîte aux lettres ou à un dossier public, le contenu suit l’un des deux chemins suivants :
 
-![Diagramme du flux de rétention dans la messagerie et les dossiers publics](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![Diagramme du flux de rétention dans la messagerie et les dossiers publics](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Si l’élément est modifié ou supprimé définitivement** par l’utilisateur (par MAJ + SUPPR ou supprimé du dossier Éléments supprimés) pendant la période de rétention, l’élément est déplacé (ou copié, dans le cas d’une modification) vers le dossier Éléments récupérables. Ici, un processus s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours.
     
@@ -139,7 +139,7 @@ De même, si vous voulez conserver le contenu d’une boîte aux lettres pendant
   
 Vous pouvez choisir si vous souhaitez que le contenu soit supprimé de façon définitive à la fin de la période de rétention. Une stratégie de rétention peut également supprimer l’ancien contenu sans le conserver. Voir la section suivante.
   
-![Page Paramètres de rétention](media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![Page Paramètres de rétention](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
   
 ## <a name="deleting-content-thats-older-than-a-specific-age"></a>Suppression du contenu antérieur à une date spécifique
 
@@ -147,19 +147,19 @@ Une stratégie de rétention permet à la fois de conserver, puis de supprimer d
   
 Si votre stratégie de rétention supprime du contenu, il est important de comprendre que la période spécifiée pour une stratégie de rétention est calculée en fonction de la date de création ou de modification du contenu, et non de la date d’affectation de la stratégie.
   
-![Paramètres de suppression](media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
+![Paramètres de suppression](../media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
   
 Par exemple, supposons que vous créez une stratégie de rétention qui supprime le contenu au bout de trois ans, puis que vous affectez cette stratégie à tous les comptes OneDrive, qui contiennent une grande quantité de contenu créé il y a quatre ou cinq ans. Dans ce cas, une grande quantité de contenu est supprimée peu après l’attribution de la stratégie de rétention pour la première fois. Pour cette raison, **une stratégie de rétention qui supprime le contenu peut avoir un impact considérable sur votre contenu**. 
   
 Par conséquent, avant d’affecter une stratégie de rétention à un site pour la première fois, vous devez d’abord tenir compte de l’ancienneté du contenu existant et de la façon dont la stratégie peut avoir une incidence sur ce contenu. Vous pouvez également communiquer la nouvelle stratégie à vos utilisateurs avant de l’affecter, pour leur donner le temps d’évaluer les incidences éventuelles. Remarquez cet avertissement qui apparaît lorsque vous examinez les paramètres pour votre stratégie de rétention juste avant de la créer.
   
-![Avertissement sur la suppression du contenu](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
+![Avertissement sur la suppression du contenu](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
 ## <a name="advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions"></a>Paramètres avancés qui appliquent une stratégie uniquement au contenu répondant à certaines conditions
 
 Une stratégie de rétention peut s’appliquer à tout le contenu des emplacements qui lui est propre, ou vous pouvez choisir d’appliquer une stratégie de rétention uniquement au contenu qui contient des mots clés spécifiques ou [des types spécifiques d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
-![Options avancées de rétention](media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
+![Options avancées de rétention](../media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
   
 ### <a name="retain-content-that-contains-specific-keywords"></a>Conservation du contenu qui contient des mots clés spécifiques
 
@@ -169,13 +169,13 @@ La prise en charge de l’ajout de propriétés utilisables dans une requête (p
   
 La rétention basée sur une requête utilise l’index de recherche pour identifier le contenu.
   
-![Éditeur de requête](media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
+![Éditeur de requête](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
   
 ### <a name="retain-content-that-contains-sensitive-information"></a>Conservation du contenu qui contient des informations sensibles
 
 Vous pouvez également appliquer une stratégie de rétention uniquement au contenu qui contient [des types spécifiques d’informations sensibles](what-the-sensitive-information-types-look-for.md). Par exemple, vous pouvez choisir d’appliquer des exigences de rétention uniques seulement au contenu qui contient des informations d’identification personnelle (PII) telles que les identifiants fiscaux, les numéros de sécurité sociale ou les numéros de passeport.
   
-![Page Types d’informations sensibles](media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
+![Page Types d’informations sensibles](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
 Remarques :
   
@@ -201,7 +201,7 @@ L’une des fonctionnalités les plus puissantes d’une stratégie de rétentio
     
 - Dossiers publics Exchange
     
-![Option Tous les emplacements](media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![Option Tous les emplacements](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
   
 Voici d’autres fonctionnalités importantes d’une stratégie de rétention mise en place à l’échelle de l’organisation :
   
@@ -215,7 +215,7 @@ Lorsque vous choisissez des emplacements, vous pouvez facilement inclure ou excl
   
 Comme pour une stratégie mise en place à l’échelle de l’organisation, si une stratégie s’applique à n’importe quelle combinaison d’emplacements entiers, il n’existe aucune limite au nombre de boîtes aux lettres ou de sites que la stratégie peut inclure. Par exemple, si une stratégie inclut toute la messagerie Exchange et tous les sites SharePoint, l’ensemble des sites et des boîtes aux lettres est également inclus, quel que soit le nombre. Et pour Exchange, toute nouvelle boîte aux lettres créée après la stratégie hérite automatiquement de la stratégie.
  
-![Sélectionner des pages emplacements](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
+![Sélectionner des pages emplacements](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou exclusions spécifiques
 
@@ -235,7 +235,7 @@ Contrairement à la messagerie Exchange, vous ne pouvez pas basculer le statut d
   
 Lorsque vous choisissez des utilisateurs de Skype Entreprise, vous pouvez rapidement inclure tous les utilisateurs en activant la case à cocher **Nom** dans l’en-tête de colonne. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion spécifique dans la stratégie. Par conséquent, si vous incluez plus de 1 000 utilisateurs, les limites indiquées dans la section précédente s’appliquent. Le fait de sélectionner tous les utilisateurs Skype ici ne revient pas au même qu’une stratégie à l’échelle de l’organisation qui serait en mesure d’inclure tous les utilisateurs Skype par défaut. 
   
-![Page Sélection des utilisateurs Skype](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
+![Page Sélection des utilisateurs Skype](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
 Notez que **Historique des conversations**, un dossier dans Outlook, est une fonctionnalité qui n’a rien à voir avec l’archivage Skype. La fonctionnalité **Historique des conversations** peut être désactivée par l’utilisateur final, mais l’archivage pour Skype s’effectue en stockant une copie des conversations Skype dans un dossier masqué inaccessible à l’utilisateur, mais disponible pour eDiscovery.
 
@@ -250,7 +250,7 @@ Les conversations et les messages de canal Teams ne sont pas affectés par les s
   
 Lorsqu’une stratégie de rétention est affectée à une équipe, les conversations et les messages de canal suivent l’un des deux chemins suivants :
 
-![Diagramme de flux de rétention pour les conversations et messages de canal Teams](media/TeamsRetentionLifecycle.png)
+![Diagramme de flux de rétention pour les conversations et messages de canal Teams](../media/TeamsRetentionLifecycle.png)
 
 1. **Si une conversation ou un message de canal est modifié ou supprimé** par l’utilisateur pendant la période de rétention, le message est déplacé (ou copié, en cas de modification) dans le dossier SubstrateHolds (qui est un dossier masqué dans chaque boîte aux lettres d’utilisateur ou de groupe) et est stocké dans ce dossier jusqu’à l’expiration de la période de rétention. Les messages sont supprimés définitivement le jour où la période de rétention expire.
 
@@ -278,7 +278,7 @@ Dans une équipe, les fichiers qui sont partagés au cours d’une conversation 
   
 Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verrouillage de conservation](#locking-a-retention-policy).
   
-![Emplacements Teams pour les conversations et les messages de canal](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
+![Emplacements Teams pour les conversations et les messages de canal](../media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
 > [!NOTE]
 > Si vous créez des stratégies de rétention pour les emplacements Teams ou Skype au sein de votre organisation, l’une de ces stratégies apparaît comme stratégie de dossier par défaut lorsqu’un utilisateur affiche les propriétés d’un dossier de boîte aux lettres dans le client de bureau Outlook. Il s’agit [d’un problème connu](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)d’affichage incorrect dans Outlook. Ce qui doit s’afficher comme stratégie de dossier par défaut est la stratégie de rétention de boîte aux lettres appliquée au dossier. La stratégie de rétention de Skype ou Teams n’est pas appliquée à la boîte aux lettres de l’utilisateur.  
@@ -309,23 +309,23 @@ Tout d’abord,[se connecter au Centre de Conformité et Sécurité Office 365 
 
 Ensuite, pour afficher une liste de vos stratégies de rétention et rechercher le nom de la stratégie que vous souhaitez verrouiller, exécutez `Get-RetentionCompliancePolicy`.
 
-![Liste des stratégies de rétention dans PowerShell](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+![Liste des stratégies de rétention dans PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 Enfin, pour placer un Verrouillage de Conservation sur la stratégie de rétention, exécutez `Set-RetentionCompliancePolicy` avec le`RestrictiveRetention` paramètre défini sur true. Par exemple :
 
 `Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
 
-![Paramètre RestrictiveRetention dans PowerShell](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+![Paramètre RestrictiveRetention dans PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
 Après avoir exécuté cette applet de commande, vous voyez une invite de confirmation. Sélectionnez **Oui partout**.
 
-![Invite à confirmer que vous souhaitez verrouiller une stratégie de rétention dans PowerShell](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+![Invite à confirmer que vous souhaitez verrouiller une stratégie de rétention dans PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 Un verrouillage de conservation est désormais placé sur la stratégie de rétention. Si vous exécutez `Get-RetentionCompliancePolicy`, le paramètre `RestrictiveRetention` est défini sur true. Par exemple :
 
 `Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
 
-![Stratégie verrouillée avec tous les paramètres affichés dans PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
+![Stratégie verrouillée avec tous les paramètres affichés dans PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="releasing-a-retention-policy"></a>Publication d’une stratégie de rétention
 
@@ -337,7 +337,7 @@ Cette période de grâce de 30 jours dans SharePoint et OneDrive correspond à 
 
 Il est possible, voire même probable, que le contenu fasse l’objet de plusieurs stratégies de rétention, chacune avec une action (conservation, suppression ou les deux) et une période de rétention différentes. Laquelle est prioritaire ? Au plus haut niveau, sachez que le contenu conservé par une stratégie ne peut pas être supprimé définitivement par une autre stratégie.
   
-![Diagramme des principes de rétention](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagramme des principes de rétention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 Pour comprendre comment les différentes stratégies de rétention s’appliquent au contenu, prenez en compte les principes de rétention suivants :
   

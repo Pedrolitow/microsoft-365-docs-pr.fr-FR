@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Résumé : appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
-ms.openlocfilehash: ad333007b2efdcf577f1c31afc716c525a7abf7e
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855373"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081744"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 
@@ -118,7 +118,7 @@ Procédez comme suit pour appliquer les étiquettes de rétention aux dossiers d
     
 Voici la configuration finale.
   
-![Étiquettes de rétention des quatre types de sites d’équipe SharePoint Online.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![Étiquettes de rétention des quatre types de sites d’équipe SharePoint Online.](../media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>Stratégies de protection contre la perte de données pour vos sites SharePoint Online
 
@@ -169,7 +169,7 @@ Suivez ces étapes pour configurer une stratégie DLP qui avertit les utilisate
     
 Voici le résultat de votre configuration pour les sites d’équipe SharePoint Online sensibles.
   
-![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Sensible](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Sensible](../media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 Utilisez ces étapes pour configurer une stratégie de protection contre la perte de données qui bloque les utilisateurs quand ils partagent un document sur un site d’équipe SharePoint Online hautement confidentiel à l’extérieur de l’organisation.
   
@@ -215,7 +215,7 @@ Utilisez ces étapes pour configurer une stratégie de protection contre la pert
     
 Voici le résultat de votre configuration pour les sites d’équipe SharePoint Online hautement confidentiels.
   
-![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Hautement confidentiel](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Hautement confidentiel](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>Étape suivante
 

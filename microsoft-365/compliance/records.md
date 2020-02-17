@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour implémenter une stratégie de gestion des enregistrements dans votre organisation Microsoft ou Office 365, utilisez des étiquettes de rétention qui déclarent du contenu sous la forme d’un enregistrement. Ensuite, publiez ou appliquez automatiquement l’étiquette de rétention d’enregistrement.
-ms.openlocfilehash: 36482ea4a6bb9fb932d72b76dff5f0647d467a9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 87bed90f4c9bf27eb960a2018b6a641ff3e06993
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601681"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081664"
 ---
 # <a name="overview-of-records"></a>Vue d’ensemble des enregistrements
 
@@ -62,7 +62,7 @@ Quelques rappels à propos des enregistrements :
 
     Si un utilisateur essaie de supprimer un enregistrement dans SharePoint, une erreur annonce que l’élément n’a pas été supprimé, et l’élément reste dans la bibliothèque.
 
-    ![Message indiquant que l’élément n’a pas été supprimé de SharePoint](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+    ![Message indiquant que l’élément n’a pas été supprimé de SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
     Si un utilisateur essaie de supprimer un enregistrement dans OneDrive, l’élément est déplacé vers la bibliothèque de conservation et de préservation des documents, comme décrit dans la rubrique [Fonctionnement d’une stratégie de rétention avec du contenu sur place](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites).
 
@@ -76,7 +76,7 @@ Lorsque vous créez une étiquette de rétention, vous pouvez l’utiliser pour 
 
 2. Sur la page **Paramètres d’étiquette** de l’Assistant, choisissez l’option permettant de définir l’étiquette de rétention pour déclarer du contenu sous la forme d’un enregistrement.<br/>
 
-   ![Cliquez sur la case à cocher Utiliser une étiquette pour classer du contenu en tant qu’Enregistrement](media/recordversioning6.png)
+   ![Cliquez sur la case à cocher Utiliser une étiquette pour classer du contenu en tant qu’Enregistrement](../media/recordversioning6.png)
 
 3. [Publier](labels.md#how-retention-labels-work-with-retention-label-policies) ou [appliquer automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) l’étiquette de rétention aux sites SharePoint et/ou aux comptes OneDrive.
 
@@ -91,7 +91,7 @@ Pour Exchange, tout utilisateur disposant d’un accès en écriture à la boît
 Voici à quoi cela ressemble lorsque une étiquette d’enregistrement est appliquée à un document sur un site SharePoint ou un compte OneDrive.
 <br/><br/>
 
-![Volet Détails pour le document marqué comme enregistrement](media/recordversioning7.png)
+![Volet Détails pour le document marqué comme enregistrement](../media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>Contrôle de version d’enregistrement
 
@@ -108,7 +108,7 @@ Pour utiliser le contrôle de version d’enregistrement, la première étape co
 Le contrôle de version d’enregistrement est disponible automatiquement pour tout document comportant une étiquette de rétention qui déclare l’élément comme enregistrement. Lorsqu’un utilisateur affiche les propriétés du document dans le volet Détails, il bascule le **Statut de l’enregistrement** de **Verrouillé** vers **Déverrouillé**. D’un seul clic, il crée un enregistrement dans le dossier Enregistrements de la bibliothèque de conservation et de préservation, où il résidera jusqu’à la fin de la période de rétention. Lorsque le document est déverrouillé, les utilisateurs disposant des autorisations appropriées peuvent modifier le fichier. Toutefois, les utilisateurs ne peuvent pas supprimer le fichier, car il est considéré comme un enregistrement déclaré. Une fois que les modifications nécessaires ont été apportées, l’utilisateur peut basculer le **Statut de l’enregistrement** de **Déverrouillé** à **Verrouillé**, si bien que le document est de nouveau déclaré comme un enregistrement et ne peut pas être modifié.
 <br/><br/>
 
-![Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement](media/recordversioning8.png)
+![Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement](../media/recordversioning8.png)
 
 > [!NOTE]
 > Le contrôle de version d’enregistrement nécessite une licence Office 365 Entreprise E5 pour chaque utilisateur autorisé à modifier du contenu qui a été déclaré en tant qu’enregistrement dans un site SharePoint ou un compte OneDrive. Les utilisateurs disposant d’un accès en lecture seule n’ont pas besoin de cette licence.
@@ -118,7 +118,7 @@ Le contrôle de version d’enregistrement est disponible automatiquement pour t
 Lorsqu’une étiquette d’enregistrement est attribuée à un document, tous les utilisateurs du groupe Membres par défaut (niveau d’autorisation Collaboration) peuvent déverrouiller un enregistrement ou verrouiller un enregistrement déverrouillé.
 <br/><br/>
 
-![Le statut de l’enregistrement indique que le document enregistré est déverrouillé](media/recordversioning9.png)
+![Le statut de l’enregistrement indique que le document enregistré est déverrouillé](../media/recordversioning9.png)
 
 Lorsqu’un utilisateur déverrouille un enregistrement, il se produit les actions suivantes :
 
@@ -139,7 +139,7 @@ Lorsqu’un utilisateur verrouille un enregistrement, le document d’origine ne
 Chaque fois qu’un utilisateur déverrouille un enregistrement, la version la plus récente est copiée dans le dossier Enregistrements de la bibliothèque de conservation et de préservation et cette version contient la valeur **Enregistrement** dans le champ **Commentaires** de l’historique des versions.
 <br/><br/>
 
-![Enregistrement affiché dans la bibliothèque de conservation et de préservation](media/recordversioning10.png)
+![Enregistrement affiché dans la bibliothèque de conservation et de préservation](../media/recordversioning10.png)
 
 Pour afficher l’historique des versions, sélectionnez un document dans la bibliothèque de documents, puis cliquez sur **Historique des versions** dans le menu élément.
 
@@ -148,11 +148,11 @@ Pour afficher l’historique des versions, sélectionnez un document dans la bib
 Les enregistrements sont stockés dans le dossier Enregistrements de la bibliothèque de conservation et de préservation du site de niveau supérieur de la collection de sites. Dans le volet de navigation gauche, dans le site de niveau supérieur, sélectionnez **Contenu du site** \> **Bibliothèque de conservation et de préservation**.
 <br/><br/>
 
-![Bibliothèque de conservation et de préservation](media/recordversioning11.png)
+![Bibliothèque de conservation et de préservation](../media/recordversioning11.png)
 
 <br/><br/>
 
-![Dossier Enregistrements dans la bibliothèque de conservation et de préservation](media/recordversioning12.png)
+![Dossier Enregistrements dans la bibliothèque de conservation et de préservation](../media/recordversioning12.png)
 
 La bibliothèque de conservation et de préservation est visible uniquement par les administrateurs de collection de sites. De plus, la bibliothèque de conservation et de préservation n’existe pas par défaut. Elle est créée uniquement lorsque le contenu soumis à une étiquette de rétention ou une stratégie de rétention est supprimé pour la première fois dans la collection de sites.
 
@@ -161,6 +161,6 @@ La bibliothèque de conservation et de préservation est visible uniquement par 
 Les actions de verrouillage et déverrouillage des enregistrements sont enregistrées dans le journal d’audit Office 365. Vous pouvez rechercher les activités spécifiques **Statut de l’enregistrement basculé sur verrouillé** et **Statut de l’enregistrement basculé sur déverrouillé**, situées dans la section **Activités de fichier et de page** dans la liste déroulante **Activités** sur la page **Effectuer une recherche dans le journal d’audit** du centre de sécurité et conformité.
 <br/><br/>
 
-![Rechercher dans le journal d’audit des événements de contrôle de version d’enregistrement](media/recordversioning13.png)
+![Rechercher dans le journal d’audit des événements de contrôle de version d’enregistrement](../media/recordversioning13.png)
 
 Pour plus d’informations sur la recherche de ces événements, voir la section « Activités de fichier et de page » dans [Effectuer une recherche dans le journal d’audit dans le Centre de sécurité et conformité](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).

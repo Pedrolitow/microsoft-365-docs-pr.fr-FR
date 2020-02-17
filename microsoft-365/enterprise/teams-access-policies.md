@@ -37,7 +37,7 @@ Vous n’avez pas besoin d’activer les services dépendants pour commencer à 
 
 - Groupes Office 365
 - Sites d’équipe SharePoint
-- OneDrive Entreprise
+- OneDrive Entreprise
 - Boîtes aux lettres
 - Diffuser des vidéos et des plans du planificateur (si ces services sont activés)
 

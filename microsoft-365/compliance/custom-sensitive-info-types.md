@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenez une vue d’ensemble des types d’informations sensibles personnalisés pour la protection contre la perte de données (DLP).
-ms.openlocfilehash: a1afaeb3359ae9705909ff6c23c1f951804aa4c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b95501c08c2ac53eed6101abfa9f4b814c49f940
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595511"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076977"
 ---
 # <a name="custom-sensitive-information-types"></a>Types d’informations sensibles personnalisés
 
@@ -39,13 +39,13 @@ Les éléments fondamentaux d’un type d’informations sensibles personnalisé
 
 - **Proximité de caractère** : il est logique que plus le modèle principal et la preuve justificative sont proches, plus le contenu détecté a des chances d’être ce que vous recherchez. Vous pouvez spécifier la distance de caractère entre le modèle principal et la preuve justificative (également appelée _fenêtre de proximité_) comme illustré dans le diagramme suivant :
 
-    ![Diagramme de la fenêtre de proximité et de preuves probantes](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+    ![Diagramme de la fenêtre de proximité et de preuves probantes](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 - **Niveau de confiance** : plus la preuve que vous possédez est justificative, plus la probabilité qu’un résultat contienne les informations sensibles que vous recherchez est élevée. Vous pouvez affecter des niveaux de confiance supérieurs pour les correspondances détectées en utilisant plus de preuves.
 
   Lorsqu’il est satisfait, un modèle renvoie un nombre et un niveau de confiance, que vous pouvez utiliser dans les conditions dans votre stratégie DLP. Lorsque vous ajoutez une condition de détection d’un type d’informations sensibles à une stratégie DLP, vous pouvez modifier le nombre et le niveau de confiance comme illustré dans le diagramme suivant :
 
-    ![Nombre d’instances et options de précision de correspondance](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+    ![Nombre d’instances et options de précision de correspondance](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
 ## <a name="creating-custom-sensitive-information-types"></a>Création de types d’informations sensibles personnalisés
 

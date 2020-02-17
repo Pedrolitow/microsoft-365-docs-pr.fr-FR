@@ -1,5 +1,7 @@
 ---
 title: 'Étape 2 : préparation des répertoires et du réseau'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,25 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment évaluer l’état de préparation des répertoires et du réseau dans votre environnement.
-ms.openlocfilehash: cae32d7bd7791cdfb0acce564b2a7839d5314a19
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 985212cc240d91ac04f9def1b7a53c42889d826f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112611"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085403"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Étape 2 : préparation des répertoires et du réseau
 
 Vérifiez que votre répertoire et le réseau sont configurés et prêts pour la migration vers Windows 10 et Office 365 ProPlus. Les services Azure Active Directory devront être mis à disposition des utilisateurs et votre réseau doit être capable de gérer ses trafics réguliers et le déplacement éventuel d’importants volumes de données pendant la mise à niveau des PC et de la restauration des fichiers, des paramètres et des applications des utilisateurs.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>Étape 2 : préparation des répertoires et du réseau</strong></p>
 <p>Les services connectés au cloud dans Office 365 ProPlus et les nouvelles options de déploiement, telles que Windows Autopilot, nécessitent Azure Active Directory. Votre réseau et votre connectivité sont également des aspects importants pour planifier le déplacement des images, des applications, des pilotes Windows et des fichiers connexes sur votre PC. Découvrez comment les nouveaux outils et les nouvelles options de déploiement réduisent et rationalisent le trafic réseau.</p></td>
-<td><a href="https://aka.ms/ddev2" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -85,7 +87,7 @@ En limitant un trafic spécifique, vous pouvez réduire l’impact du téléchar
 
 Heureusement, il existe de nouveaux outils pour vous aider à gérer facilement l’impact d’un déploiement de bureau de grande échelle sur le réseau, tels que LEDBAT pour optimiser l’utilisation de la bande passante disponible, et les options pair à pair pour déplacer le trafic de déploiement du centre du réseau vers le réseau de périmètre.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
 ## <a name="scavenging-bandwidth"></a>Nettoyage de la bande passante
 
@@ -95,7 +97,7 @@ L’option LEDBAT (Low Extra Delay Background Transport), pris en charge dans Wi
 
 Contrairement aux options de limitation traditionnelles, LEDBAT peut utiliser toute la bande passante réseau disponible comme tâche en arrière-plan, produisant instantanément de la bande passante quand un autre trafic en demande. Contrairement à BITS, LEDBAT agit sans délai. Tout est automatisé (pas de planification ou de réglage manuel) et tout est configuré côté serveur. Cela peut générer des gains de performances considérables.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
 ## <a name="peer-to-peer-options"></a>Options pair à pair
 
@@ -111,7 +113,7 @@ Remarque : BranchCache et le cache d’homologue sont complémentaires et peuve
 
 **Optimisation de la remise** l’optimisation de remise est une autre technologie paire à paire de mise en cache, en fournissant les contrôles de réseau pour les déploiements. Optimisation de remise Windows 10 pour mettre à jour les applications intégrées UWP, également pour installer les applications sur le Microsoft Store et les mises à jour du logiciel à l’aide des mises à jour Express. Il a été disponible depuis les versions antérieures de Windows 10, même si elle a récemment intégré avec Microsoft Endpoint Configuration Manager (Current Branch). Étant donné que les nouvelles options de configuration Windows 10 version 1803 signifie que vous pouvez désormais séparément des limites de bande passante pour les mises à jour en arrière-plan et les travaux de premier plan par exemple, une installation d’application à partir du Store. Désormais, l’optimisation de la remise Windows prend en charge également Office 365 ProPlus pendant client mises à jour, disponibles dans l’ensemble des canaux de mise à jour pris en charge du client Office 365. La prise en charge pour l’optimisation de remise Windows pendant l’installation initiale du client Office 365 sera prochainement disponible.  
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
 **Autres considérations liées à Office 365 ProPlus**
 
@@ -123,11 +125,11 @@ Outre l’optimisation de la remise en exploitant, Voici trois éléments qui vo
 
 **Fichiers de données Outlook** Outlook est souvent configuré pour la boîte aux lettres entière des utilisateurs en locale pour une utilisation en mode hors connexion. Dans tout déploiement de Windows, à l’exception d’une mise à niveau inaltérable, il nécessite des fichiers de données Outlook que les utilisateurs reconstruisent eux-mêmes après la mise à niveau. Il s’agit d’un processus automatisé, mais avec des limites de boîtes aux lettres Outlook généralement attribuées à 100 Go, la nouvelle mise en cache de boîte aux lettres entièrement en local pour tous les utilisateurs signifie un grand nombre de transfert de données. À réduire la charge de réseau, vous souhaiterez peut-être prendre en considération l’utilisation d’une stratégie de groupe pour réduire le paramètre « Courrier à conserver hors connexion ». Dans Office 365 ProPlus ou Office 2016, la valeur par défaut pour Outlook est définie sur 12 mois. Afin de réduire l’impact sur réseau, envisagez de définir la durée du cache en mode hors connexion entre 1 à 6 mois. La modification de ce paramètre n’affecte pas la taille de la boîte aux lettres en ligne et la boîte aux lettres entière peut toujours être recherchée via Outlook lorsqu’il en ligne.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
 **Fichiers OneDrive à la demande et déplacement des dossiers connus** OneDrive est un excellent moyen pour synchroniser et protéger les fichiers d’utilisateur depuis un ordinateur et d’autres appareils dans le cloud. Avec le déplacement des dossiers connus, vous pouvez également appliquer la synchronisation de fichiers à partir du bureau d’un utilisateur, les Documents, et les dossiers des images sur OneDrive rendant les fichiers disponibles lors de votre connexion à un nouvel appareil ou d’une reconfiguration PC. N’oubliez pas que, en raison de la taille des parois et le nombre de fichiers stockés dans des emplacements de bureau, des documents et des images, vous souhaiterez être organisé avec le déploiement des stratégies de l’activation et l’application OneDrive sur vos PCs. Une option consiste à utiliser les contrôles de réseau de stratégie de groupe pour limiter la bande passante utilisée par le service de synchronisation OneDrive.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-7.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-7.png)
 
 [Configuration de la fonctionnalité « Known Folder Move »](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 

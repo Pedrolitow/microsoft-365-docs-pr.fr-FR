@@ -1,5 +1,7 @@
 ---
 title: Mises à niveau automatisées de Windows 7 vers Windows 10
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Mises à niveau automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
-ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112698"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085619"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Mises à niveau locales automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
 
 À partir du 14 janvier 2020, les mises à jour de sécurité ou la prise en charge des PC exécutant Windows 7 ne seront plus fournies. Avec quelques mois pour passer de Windows 7 vers Windows 10 et face à plusieurs options de déploiement, une question fréquente dans la communauté informatique est la suivante : «quel est le moyen le plus rapide de migrer Windows 7 vers Windows 10 ?» La réponse est d’effectuer des mises à niveau locales pour les PC existants, vous pouvez ainsi réduire le focus sur plusieurs aspects du processus de déploiement de bureau.
 
-<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
+<center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 En utilisant les mises à niveau locales, l’étendue de plusieurs processus de déploiement de bureau se réduisent considérablement, notamment :
 
@@ -68,7 +70,7 @@ L’option déploiement de la mise à niveau est couverte par les [mises à jour
 
   - Ainsi que tout autre élément que vous devez configurer pour atteindre l’état professionnel prêt à l’emploi
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-2.png)
+![](../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-2.png)
 
 Les raisons les plus courantes de mises à niveau peuvent être incomplètes ou ne sont pas possibles dans les situations suivantes :
 

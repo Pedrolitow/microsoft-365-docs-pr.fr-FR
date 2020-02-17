@@ -15,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Apprenez à évaluer la disponibilité des applications et des périphériques et dans l’environnement.
-ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774210"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085471"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Étape 1 : disponibilité des applications et des périphériques
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="130" width="130" /></td>
 <td><p><strong>Étape 1 : préparation des applications et des appareils</strong></p>
 <p>Commencez votre projet de déploiement d’ordinateurs de bureau par un inventaire de vos périphériques et applications, classez-les par ordre de priorité, testez les périphériques et les applications privilégiés, puis faites les corrections nécessaires en vue du déploiement.</p></td>
-<td><a href="https://aka.ms/ddev1" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev1" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -71,15 +71,15 @@ Disponibilité des applications et des périphériques comprend quatre étapes 
 
 Desktop Analytics utilise un processus sans agent pour faire l’inventaire des ordinateurs et des applications au sein de votre parc d’ordinateurs de bureau. Il fournit également des rapports sur les applications et les sites Internet très régulièrement consultés, et les emplacements intranet pour vous aider avec les tests de compatibilité ultérieurement.
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. Hiérarchisation
 
 Avec l’inventaire, Desktop Analytics vous aide à identifier et à hiérarchiser les applications et le matériel les plus fréquemment utilisés dans votre organisation et les tâches à prioriser pour débloquer autant de PC que possible pour le déploiement.
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
 Il fournit également des conseils pour vous aider à évaluer les mises à jour nécessaires pour résoudre les problèmes lors de l’étape suivante : test.
 
@@ -91,13 +91,13 @@ Vous pouvez utiliser Desktop Analytics pour également évaluer les problèmes d
 
 En outre, pour vous aider dans votre migration vers Office 365 ProPlus, vous pouvez utiliser le [Kit de ressources de préparation pour Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) pour tester la compatibilité de vos compléments et des macros Microsoft Visual Basic pour Applications (VBA).
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
 ### <a name="4-remediation"></a>4\. Mesures correctives
 
 La phase finale de la disponibilité des applications et des périphériques consiste à « corriger ».  Ici, vous allez collecter les packages de pilotes et de logiciels requis et vous allez les utiliser pour remplacer ou mettre à jour les versions antérieures dans le cadre du processus de déploiement.
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-7.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-7.png)
 
 À mesure que vous avancez dans la liste et que vous corrigez les problèmes, vous observez que de plus en plus de PC deviennent « Prêt pour le déploiement ». Cela signifie que les pilotes et les applications sur les PC sont indiqués comme étant compatibles avec la version de Windows 10 que vous ciblez pour le déploiement.
 

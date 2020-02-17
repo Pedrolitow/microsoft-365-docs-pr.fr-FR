@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les stratégies de protection contre la perte de données (DLP) pour protéger les données personnelles dans Office 365.
-ms.openlocfilehash: b529a6d58537c4effca3cf198dcf807a0680129d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596061"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079746"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Application d’une protection aux données personnelles dans Office 365
 
@@ -46,7 +46,7 @@ Avec la protection contre la perte de données, vous pouvez :
 
 Pour plus d’informations, reportez-vous à [Vue d’ensemble des stratégies de protection contre la perte de données](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
-![Options de création d’une stratégie de protection contre la perte de données](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
+![Options de création d’une stratégie de protection contre la perte de données](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
 Cette illustration montre les options permettant de créer une stratégie DLP :
 
@@ -172,7 +172,7 @@ Les types d’informations sensibles, les libellés et les stratégies de protec
 
 L’illustration suivante détaille une protection supplémentaire que vous pouvez appliquer pour protéger l’accès aux données personnelles.
 
-![Protection supplémentaire pour protéger l’accès aux données personnelles](Media/Apply-protection-to-personal-data-in-Office-365-image2.png)
+![Protection supplémentaire pour protéger l’accès aux données personnelles](../media/Apply-protection-to-personal-data-in-Office-365-image2.png)
 
 Pour l’accessibilité, le tableau suivant fournit les mêmes informations que l’illustration.
 
@@ -222,7 +222,7 @@ Customer Lockbox : vous permet de contrôler l’accès des ingénieurs de supp
 
 Utilisez des autorisations dans SharePoint pour établir ou restreindre l’accès des utilisateurs au site ou à son contenu. Ajoutez des utilisateurs individuels ou des groupes Azure Active Directory aux groupes SharePoint par défaut. Vous pouvez également créer un groupe personnalisé pour un contrôle plus précis.
 
-![Niveaux d’autorisation de Contrôle total à Afficher uniquement](Media/Apply-protection-to-personal-data-in-Office-365-image3.png)
+![Niveaux d’autorisation de Contrôle total à Afficher uniquement](../media/Apply-protection-to-personal-data-in-Office-365-image3.png)
 
 L’illustration représente les niveaux d’autorisation complète de contrôle pour l’affichage seul. Le tableau ci-dessous présente les mêmes informations.
 
@@ -368,7 +368,7 @@ Pour les environnements d’identité hybrides avec AD FS, reportez-vous aux [c
 
 L’illustration suivante décrit les relations entre les services cloud (SaaS, PaaS), les types de comptes (comptes de domaine clients et comptes B2B) et les fonctionnalités de service d’accès. Il est important de noter les fonctionnalités qui peuvent être utilisées avec les comptes B2B.
 
-![Services cloud, types de comptes et fonctionnalités d’accès](Media/Apply-protection-to-personal-data-in-Office-365-image4.png)
+![Services cloud, types de comptes et fonctionnalités d’accès](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
 Pour l’accessibilité, le reste de cette section décrit cette illustration.
 

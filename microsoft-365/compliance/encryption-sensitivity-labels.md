@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: e27e130e96086dd37dd1cf5f49c30ebc764a8958
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830948"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074616"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
@@ -63,7 +63,7 @@ Lorsque vous [créez ou modifiez une étiquette de confidentialité](create-sens
 
 Configuration des options de chiffrement :
 
-![Options de chiffrement d’une étiquette de confidentialité](media/encrytion-options-sensitivity-label.png)
+![Options de chiffrement d’une étiquette de confidentialité](../media/encrytion-options-sensitivity-label.png)
 
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qu’advient-il du chiffrement existant lorsqu’une nouvelle étiquette est appliquée ?
@@ -111,7 +111,7 @@ Par ailleurs, si vous avez une étiquette de confidentialité appelée **Contrat
 
 Choisissez d’attribuer des autorisations maintenant ou de permettre aux utilisateurs d’affecter des autorisations : 
 
-![Option pour ajouter des autorisations définies par l’utilisateur ou l’administrateur](media/sensitivity-label-user-or-admin-defined-permissions.png)
+![Option pour ajouter des autorisations définies par l’utilisateur ou l’administrateur](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
 ## <a name="assign-permissions-now"></a>Attribuer des autorisations maintenant
@@ -124,7 +124,7 @@ Utilisez les options suivantes pour contrôler les utilisateurs autorisés à ac
 
 Paramètres de contrôle d’accès pour du contenu chiffré :
 
-![Paramètres pour les autorisations définies par l’administrateur](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![Paramètres pour les autorisations définies par l’administrateur](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licence d’utilisation de Rights Management pour l’accès en mode hors connexion
 
@@ -146,7 +146,7 @@ Vous pouvez accorder des autorisations à des personnes spécifiques, de manièr
 
 Attribution d'autorisations :
 
-![Options d’attribution des autorisations aux utilisateurs](media/Sensitivity-Assign-permissions-settings.png)
+![Options d’attribution des autorisations aux utilisateurs](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>Ajouter des utilisateurs ou des groupes
 
@@ -179,13 +179,13 @@ Lorsque vous choisissez les autorisations à attribuer à ces utilisateurs ou ce
 
 Pour plus d’informations sur chacune des autorisations spécifiques, reportez-vous à [Descriptions et droits d’utilisation](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Options de choix d’autorisations prédéfinies ou personnalisées](media/Sensitivity-Choose-permissions-settings.png)
+![Options de choix d’autorisations prédéfinies ou personnalisées](../media/Sensitivity-Choose-permissions-settings.png)
 
 Notez qu’une même étiquette peut accorder différentes autorisations à différents utilisateurs. Par exemple, une étiquette unique peut affecter à certains utilisateurs des droits de réviseur et à un autre utilisateur des droits de co-auteur, comme illustré sur la capture d'écran suivante.
 
 Pour ce faire, ajoutez des utilisateurs ou groupes, attribuez-leur des autorisations et enregistrez ces paramètres. Répétez ensuite ces étapes : ajoutez des utilisateurs, attribuez-leur des autorisations et enregistrez les paramètres à chaque fois. Vous pouvez répéter cette configuration autant de fois que nécessaire, afin de définir différentes autorisations pour différents utilisateurs.
 
-![Différents utilisateurs avec différentes autorisations](media/Sensitivity-Multiple-users-permissions.png)
+![Différents utilisateurs avec différentes autorisations](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L’émetteur de Rights Management (celui qui applique l’étiquette de sensibilité) bénéficie toujours d’un contrôle total.
 
@@ -207,7 +207,9 @@ Vous pouvez utiliser ces options pour permettre aux utilisateurs d’attribuer d
 
 - Dans Word, PowerPoint et Excel, l’utilisateur est invité à sélectionner ses propres niveaux d’autorisation pour des utilisateurs, des groupes ou des organisations spécifiques. 
     > [!NOTE]
-    > Cette option pour Word, PowerPoint et Excel est prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Pour les applications utilisant l’étiquetage intégré, la prise en charge est actuellement disponible dans la [Version d'évaluation pour Windows et Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). Si cette option est sélectionnée, mais n’est pas prise en charge pour l’application d’un utilisateur, cette étiquette n’est pas affichée pour l’utilisateur.
+    > Cette option pour Word, PowerPoint et Excel est prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Pour les applications utilisant l’étiquetage intégré, la prise en charge est actuellement disponible dans la [Version d'évaluation pour Windows et Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). 
+    > 
+    > Si cette option est sélectionnée, mais n’est pas prise en charge pour l’application d’un utilisateur, celle-ci ne s’affiche pas pour l’utilisateur, ou (actuellement disponible dans la version d’évaluation pour iOS et Android) l’étiquette s’affiche pour assurer la cohérence, mais elle ne peut pas être appliquée avec un message d’explication aux utilisateurs.
 
 Lorsque les options sont prises en charge, utilisez le tableau suivant pour déterminer le moment où les utilisateurs voient l’étiquette de confidentialité :
 
@@ -222,13 +224,13 @@ Une étiquette de confidentialité permettant aux utilisateurs d’attribuer des
 
 Configuration d'autorisations attribuées par utilisateur :
 
-![Paramètres de chiffrement pour les autorisations définies par l’utilisateur](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Paramètres de chiffrement pour les autorisations définies par l’utilisateur](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Restrictions Outlook
 
 Dans Outlook, lorsqu’un utilisateur applique une étiquette de confidentialité qui lui permet d’attribuer des autorisations à un message, les restrictions sont identiques à celles de l’option ne pas transférer. L’utilisateur voit le nom et la description de l’étiquette dans la partie supérieure du message, ce qui indique que le contenu est protégé. Contrairement à Word, PowerPoint et Excel (voir la [section suivante](#word-powerpoint-and-excel-permissions)), les utilisateurs ne sont pas invités à sélectionner des autorisations spécifiques.
 
-![Étiquette de niveau de confidentialité appliquée à un message dans Outlook](media/sensitivity-label-outlook-protection-applied.png)
+![Étiquette de niveau de confidentialité appliquée à un message dans Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
 Lorsque l’option ne pas transférer est appliquée à un e-mail, celui-ci est chiffré et les destinataires doivent être authentifiés. Les destinataires ne peuvent alors pas le transférer, l’imprimer ou en faire une copie. Par exemple, dans le client Outlook, le bouton transférer n’est pas disponible, les options du menu enregistrer sous et imprimer ne sont pas disponibles, et vous ne pouvez pas ajouter ou modifier des destinataires dans les zones à, CC ou CCI.
 
@@ -244,7 +246,7 @@ Par exemple, avec un client d’étiquetage unifié Azure Information Protection
 - Sélectionner les utilisateurs, les groupes ou les organisations. Cela peut inclure des personnes à l’intérieur ou à l’extérieur de votre organisation.
 - Sélectionnez une date d’expiration, après laquelle les utilisateurs sélectionnés ne pourront pas accéder au contenu. Pour plus d’informations, voir la section ci-dessus [licence d'utilisation de la gestion des droits pour l’accès hors connexion](#rights-management-use-license-for-offline-access).
 
-![Options de protection pour l’utilisateur avec les autorisations personnalisées](media/sensitivity-aip-custom-permissions-dialog.png)
+![Options de protection pour l’utilisateur avec les autorisations personnalisées](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 Pour l’étiquetage intégré, les utilisateurs consultent la même boîte de dialogue s’ils sélectionnent ce qui suit :
 

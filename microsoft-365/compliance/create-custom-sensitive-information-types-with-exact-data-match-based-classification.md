@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
-ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
-ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
+ms.openlocfilehash: 044801416c7db4ddec8936a496862c432a63acde
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836724"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077598"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -38,7 +38,7 @@ Mais que se passe-t-il si vous voulez utiliser un type d’informations sensible
 - gérer les informations sensibles de façon plus sécurisée, et
 - être utilisé avec plusieurs services de cloud computing de Microsoft.
 
-![Classification EDM](media/EDMClassification.png)
+![Classification EDM](../media/EDMClassification.png)
 
 La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement ou hebdomadairement, et peut contenir jusqu’à 10 millions lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. Vous pouvez également utiliser une classification EDM avec des stratégies, par exemple, de  [protection contre la perte de données](data-loss-prevention-policies.md)  (DLP) ou les stratégies de fichier de  [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
@@ -473,7 +473,7 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 
 9. Dans la section **Nom** , spécifiez un nom et une description pour la règle.
 
-10. Dans la section  **Conditions** , dans la liste  **+ Ajouter une condition** , sélectionnez  **Le contenu contient un type sensible**.<br/>![Le contenu contient des types d’informations sensibles](media/edm-dlp-newrule-conditions.png)<br/>
+10. Dans la section  **Conditions** , dans la liste  **+ Ajouter une condition** , sélectionnez  **Le contenu contient un type sensible**.<br/>![Le contenu contient des types d’informations sensibles](../media/edm-dlp-newrule-conditions.png)<br/>
 
 11. Recherchez le type d’informations sensibles que vous avez créé lorsque vous avez configuré votre package de règles, puis sélectionnez  **+ Ajouter**.  
     Ensuite, sélectionnez  **Terminé**.

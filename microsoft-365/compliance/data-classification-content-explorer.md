@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661902"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076425"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Utilisation de l’Explorateur de contenu de la classification des données (préversion)
 
@@ -45,7 +45,7 @@ Les étiquettes de confidentialité doivent être activées pour les fichiers st
 
 Les [étiquettes de rétention](labels.md) vous permettent de définir la durée de conservation d’un élément étiqueté et les étapes à suivre avant de le supprimer. Elles peuvent être appliquées manuellement ou automatiquement. Elles peuvent jouer un rôle en aidant votre organisation à respecter les exigences légales et réglementaires.
 
-![capture d’écran réduite de l’Explorateur de contenu](media/data-classification-content-explorer-1.png)
+![capture d’écran réduite de l’Explorateur de contenu](../media/data-classification-content-explorer-1.png)
 
 ### <a name="permissions"></a>Autorisations
 

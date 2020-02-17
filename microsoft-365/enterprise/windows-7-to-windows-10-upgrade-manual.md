@@ -1,5 +1,7 @@
 ---
 title: Guide de mise à niveau manuelle de Windows 7 vers Windows 10
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Guide de mise à niveau manuelle de Windows 7 vers Windows 10.
-ms.openlocfilehash: 13cdb56b52655ed81932601dd3ff97c90c1daad8
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: ea1705a91baf6b0526e87bcf04529ab2668aa439
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033679"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086071"
 ---
 # <a name="windows-7-to-windows-10-manual-upgrade-step-by-step-guide"></a>Guide détaillé de mise à niveau manuelle de Windows 7 vers Windows 10
 
@@ -28,7 +30,7 @@ Cet article décrit le processus de mise à niveau manuelle d’un PC sous Windo
 
 Vous pouvez effectuer une mise à niveau vers Windows 10 directement à l’aide de [l’outil de création de supports](https://www.microsoft.com/software-download/windows10ISO) ou l’utiliser pour télécharger Windows 10 sous la forme d’un fichier ISO. Vous devez noter si votre système actuel est un système 32 ou 64 bits, quelle est la langue par défaut de votre système et la version de Windows 7 (par exemple, Famille, Professionnel ou Entreprise). Dans Windows 7, ces informations se trouvent dans Panneau de configuration \> Système et sécurité \> Système. L’outil de création de support ne prend pas en charge les mises à niveau, la création de médias d’installation ou le téléchargement de fichiers ISO pour Windows 10 Enterprise. Windows 10 Entreprise est requis si vous effectuez une mise à niveau à partir de Windows 7 Entreprise.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-1.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-1.png)
 
 Lorsque vous procédez à la mise à niveau de Windows 7 Entreprise vers Windows 10 Entreprise, vous devez télécharger le fichier ISO qui correspond à votre langue et à l’architecture de votre système (32 bits ou 64 bits) à partir du [centre de gestion des licences en volume](https://www.microsoft.com/licensing/servicecenter/default.aspx).
 
@@ -38,27 +40,27 @@ Une fois le support d’installation disponible dans Windows 7, vous pouvez lan
 
 **Conseil important : pour une mise à niveau sur place dans laquelle les applications et vos données sont migrées vers Windows 10, vous devez lancer le processus à partir d’une session Windows 7 en cours d’exécution. Le démarrage de l’installation de supports à partir d’un DVD ou d’un lecteur USB n’offre pas la possibilité de conserver vos applications et fichiers : le système effectue une nouvelle installation de Windows 10.**
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-2.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-2.png)
 
 Au cours de l’installation de Windows 10, vous serez guidé dans le processus d’installation. Le premier écran offre une option permettant de télécharger les mises à jour, les pilotes ainsi que des fonctionnalités facultatives. Il est recommandé de procéder à ces téléchargements pour garantir la réussite de la mise à niveau
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-3.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-3.png)
 
 Une fois les mises à jour appliquées, le programme d’installation de Windows 10 passe à la phase suivante, la sélection d’une image. C’est là que vous devez sélectionner votre version de Windows. Ici, étant donné que le PC tourne sous Windows 7 Entreprise, vous devez sélectionner Windows 10 Entreprise.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-4.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-4.png)
 
 L’écran suivant de l’installation de Windows 10 affiche des notifications et les termes du contrat de licence applicables. Après avoir lu et bien compris les notifications et les termes du contrat, cliquez sur « Accepter » pour continuer ou sur « Refuser » pour annuler.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-5.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-5.png)
 
 Le programme d’installation de Windows 10 recherche alors des mises à jour supplémentaires.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-6.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-6.png)
 
 Quand il a fini cette recherche, le programme d’installation de Windows 10 est prêt à procéder à l’installation. Par défaut, il est configuré de manière à installer Windows 10 et à conserver vos fichiers et applications personnels. Nous vous recommandons de choisir cette option. Si vous voulez consulter des options supplémentaires, cliquez sur « Modifier les éléments à conserver ». Sinon, cliquez sur « Installer ».
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-7.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-7.png)
 
 Si vous sélectionnez « Modifier ce que vous voulez conserver », les options suivantes s’affichent :
 
@@ -66,15 +68,15 @@ Si vous sélectionnez « Modifier ce que vous voulez conserver », les options
 
 « Ne rien conserver » supprime vos fichiers, applications et paramètres et effectue une nouvelle installation de Windows. Utilisez cette option uniquement si vous avez précédemment sauvegardé les données que vous voulez conserver et si vous pouvez réinstaller vos applications vous-même.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-8.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-8.png)
 
 Le programme d’installation de Windows 10 recherche de nouveau les mises à jour en fonction de ce que vous avez sélectionné dans l’écran précédent.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-9.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-9.png)
 
 Windows 10 procède alors à l’installation, ce qui va prendre plusieurs minutes, et, si vous avez choisi de conserver vos fichiers personnels et applications, tous ces éléments se trouveront aux mêmes emplacements et vos applications seront désormais disponibles sous Windows 10.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-10.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-10.png)
 
 ## 
 
@@ -84,27 +86,27 @@ Lorsque Windows 10 est installé, l’option de récupération dans Windows 10
 
 Pour démarrer le processus de rétrogradation vers Windows 7, veuillez accéder à la section Paramètres \> Mise à jour et sécurité \> Récupération. Dans la section Revenir à Windows 7, sélectionnez « Démarrer ».
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-11.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-11.png)
 
 Windows 10 vous demande alors pourquoi vous revenez à la version précédente. Si c’est pour une raison technique, votre réponse est utile pour nous aider à résoudre le problème et assurer que d’autres utilisateurs peuvent profiter de votre expérience.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-12.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-12.png)
 
 Dans de nombreux cas, il existe déjà des mises à jour de votre version de Windows 10, ce qui peut résoudre ces problèmes techniques. Nous vous recommandons de rechercher des mises à jour et, si elles existent et que vous les installez, de vérifier si ces mises à jour ont résolu le problème.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-13.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-13.png)
 
 Si les mises à jour ne permettent pas de résoudre les problèmes et que vous devez revenir à l’installation précédente de Windows 7, il est possible que certaines applications nécessitent une réinstallation (par exemple, toutes les applications installées pendant que le PC tournait sous Windows 10) et certains paramètres peuvent être perdus. Toutefois, tous les fichiers et documents enregistrés en local pendant l’utilisation sous Windows 10 sont préservés lorsque vous revenez à Windows 7. 
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-14.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-14.png)
 
 Avant de commencer, vérifiez que vous avez sous la main les informations concernant votre compte local ou un compte de domaine et le mot de passe pour l’installation précédente de Windows 7.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-15.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-15.png)
 
 Vous pouvez alors lancer le processus pour revenir à Windows 7. Après quelques minutes, votre PC redémarre sous Windows 7 avec la même expérience utilisateur que celle précédant la mise à niveau vers Windows 10.
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-16.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-16.png)
 
 ## <a name="moving-to-windows-10-on-a-new-pc"></a>Migration vers Windows 10 sur un nouveau PC
 

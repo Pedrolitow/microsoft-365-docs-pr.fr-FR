@@ -1,5 +1,7 @@
 ---
 title: 'Étape 5 : considérations relatives à la sécurité et à la conformité'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les considérations importantes relatives à la sécurité et à la conformité de Windows et d’Office.
-ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112558"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085260"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Étape 5 : considérations relatives à la sécurité et à la conformité
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>Étape 5 : considérations relatives à la sécurité et à la conformité</strong></p>
 <p>Windows 10 et Office 365 ProPlus fournissent de nouveaux moyens pour protéger vos données, vos périphériques et vos utilisateurs, et détecter et traiter les menaces rapidement. De plus, découvrez comment traiter les problèmes courants liés au chiffrement du disque, aux applications anti-programme malveillant et aux stratégies lorsque vous migrez vers Windows 10.</p></td>
-<td><a href="https://aka.ms/ddev5" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -63,7 +65,7 @@ Par conséquent, ces applications peuvent par nature être fragilisées par les 
 
 Les paramètres de stratégie de groupe Active Directory utilisés pour les versions antérieures de Windows et Office ne peuvent peut-être pas être directement transférés vers Windows 10 et Office 365 ProPlus, et il existe différentes considérations relatives aux nouvelles fonctionnalités de sécurité et de conformité. Il est recommandé d’utiliser le Kit de ressources Microsoft Security Compliance afin de recevoir la ligne de base des stratégies de sécurité pour les versions actuelles de Windows d’Office. Par ailleurs, il s’avère intéressant de consulter les stratégies relatives à la gestion des appareils mobiles dans le cadre de Microsoft Intune.
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
 ## 
 

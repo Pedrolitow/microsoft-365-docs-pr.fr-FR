@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862124"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069923"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -113,25 +113,25 @@ Avant de commencer à effectuer une recherche dans le journal d’audit d’Offi
 
   |**Service Office 365**|**30 minutes**|**24 heures**|
   |:-----|:-----:|:-----:|
-  |Schéma Threat Intelligence et Protection avancée contre les menaces|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory (événements de connexion utilisateur)||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Azure Active Directory (événements administrateur)||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Protection contre la perte de données|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |eDiscovery|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange Online|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Project|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power BI|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Centre de sécurité et conformité|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sharepoint Online et OneDrive Entreprise|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Workplace Analytics|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Schéma Threat Intelligence et Protection avancée contre les menaces|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Azure Active Directory (événements de connexion utilisateur)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Azure Active Directory (événements administrateur)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Protection contre la perte de données|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |eDiscovery|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Exchange Online|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Project|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Stream|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Teams|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power BI|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Centre de sécurité et conformité|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Sharepoint Online et OneDrive Entreprise|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Sway||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Workplace Analytics|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Yammer||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   ||||
 
 - Azure Active Directory (Azure AD) est le service d’annuaire pour Office 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le centre d’administration Microsoft 365 ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
@@ -163,7 +163,7 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
 
     La page **Recherche dans le journal d’audit** s’affiche.
 
-    ![Configurez des critères, puis cliquez sur Rechercher pour générer un rapport](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurez des critères, puis cliquez sur Rechercher pour générer un rapport](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
 
     > [!NOTE]
     > Vous devez activer la journalisation d’audit avant d’effectuer une recherche dans le journal d’audit. Si le lien **Commencer à enregistrer les activités des utilisateurs et des administrateurs** apparaît, cliquez dessus pour activer l’audit. Si ce lien n’apparaît pas, l’audit est déjà été activé pour votre organisation.
@@ -195,13 +195,13 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
 
    Les résultats de recherche sont chargés, puis affichés sous **Résultats** après un moment. Une fois la recherche terminée, le nombre de résultats détectés est affiché. Un maximum de 5 000 événements s’affichent dans le volet**résultats** par incréments de 150 événements. Si plus de 5 000 événements correspondent aux critères de recherche, les 5 000 événements les plus récents sont affichés.
 
-   ![Le nombre de résultats affichés une fois la recherche terminée](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![Le nombre de résultats affichés une fois la recherche terminée](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>Conseils pour effectuer une recherche dans le journal d’audit
 
 - Vous pouvez sélectionner des activités spécifiques à rechercher en cliquant sur le nom des activités. Vous pouvez également rechercher toutes les activités dans un groupe (par exemple, **Activités des fichiers et des dossiers**) en cliquant sur le nom du groupe. Si une activité est sélectionnée, vous pouvez cliquer dessus pour annuler la sélection. Vous pouvez également utiliser la zone de recherche pour afficher les activités qui contiennent le mot clé que vous tapez.
 
-  ![Cliquez sur le nom d’un groupe d’activités pour sélectionner toutes les activités](media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![Cliquez sur le nom d’un groupe d’activités pour sélectionner toutes les activités](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - Vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités** pour afficher les entrées du journal d’audit de l’administrateur Exchange. Les événements dans ce journal d’audit affichent un nom de cmdlet (par exemple, **Set-Mailbox**) dans la colonne **Activité** des résultats. Pour plus d’informations, cliquez sur l’onglet**activités auditées** dans cette rubrique, puis sur **activités de l’administrateur Exchange**.
 
@@ -239,7 +239,7 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
 
 Vous pouvez afficher davantage d’informations sur un événement en cliquant sur l’enregistrement d’événement dans la liste des résultats de recherche. La page **Détails** qui s’affiche contient les propriétés détaillées de l’enregistrement d’événement. Les propriétés affichées dépendent du service Office 365 dans lequel l’événement se produit. Pour afficher des détails supplémentaires, cliquez sur **Plus d’informations**. Pour obtenir des descriptions, voir [Propriétés détaillées dans le journal d’audit Office 365](detailed-properties-in-the-office-365-audit-log.md).
 
-![Cliquez sur Informations supplémentaires pour afficher les propriétés détaillées de l’enregistrement d’événement du journal d’audit](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![Cliquez sur Informations supplémentaires pour afficher les propriétés détaillées de l’enregistrement d’événement du journal d’audit](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
 ### <a name="step-3-filter-the-search-results"></a>Étape 3 : filtrer les résultats de la recherche
 
@@ -255,7 +255,7 @@ Pour filtrer les résultats :
 
 3. Cliquez sur une des zones sous un en-tête de colonne et tapez un mot ou une expression, en fonction de la colonne qui fait l’objet du filtrage. Les résultats sont réajustés dynamiquement pour afficher les événements qui correspondent à votre filtre.
 
-   ![Tapez un mot dans le filtre pour afficher les événements correspondant au filtre](media/542dc323-a997-402c-934b-cc5e218e50bc.png)
+   ![Tapez un mot dans le filtre pour afficher les événements correspondant au filtre](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
 4. Pour effacer un filtre, cliquez sur le **X** dans la zone de filtre, ou cliquez sur **Masquer le filtrage**.
 
@@ -332,7 +332,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Fichier supprimé de la Corbeille|FileDeletedFirstStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille d’un site.|
 |Fichier supprimé de la Corbeille second niveau|FileDeletedSecondStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille second niveau d’un site.|
 |Supprimer l’enregistrement de l’étiquette stratégie de conformité|ComplianceRecordDelete|Un document classifié en tant qu’enregistrement a été supprimé. Un document est considéré comme un enregistrement lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est appliqué au document.|
-|Détection de correspondance incorrecte des documents|DocumentSensitivityMismatchDetected|L’utilisateur charge un document classifié avec une étiquette de confidentialité ayant une priorité plus élevée que l’étiquette de confidentialité appliquée au site sur lequel le document est téléchargé. <br/><br/> Cet événement n’est pas déclenché si l’étiquette de confidentialité appliquée à un site a une priorité plus élevée que l’étiquette de confidentialité appliquée à un document téléchargé sur le site. Pour plus d’informations sur la priorité de l’étiquette de confidentialité, voir la section «priorité des étiquettes» dans [vue d’ensemble des étiquettes de confidentialité](sensitivity-labels.md#label-priority-order-matters).|
+|Détection de correspondance incorrecte des documents|DocumentSensitivityMismatchDetected|L’utilisateur charge un document classifié avec une étiquette de confidentialité ayant une priorité plus élevée que l’étiquette de confidentialité appliquée au site sur lequel le document est téléchargé. <br/><br/> Cet événement n’est pas déclenché si l’étiquette de confidentialité appliquée à un site a une priorité plus élevée que l’étiquette de confidentialité appliquée à un document téléchargé sur le site. Pour plus d’informations sur la priorité de l’étiquette de confidentialité, voir la section «priorité des étiquettes» dans [En savoir plus sur les étiquettes de confidentialité](sensitivity-labels.md#label-priority-order-matters).|
 |Détection d’un programme malveillant dans le fichier|FileMalwareDetected|Le moteur antivirus de SharePoint détecte un programme malveillant dans un fichier.|
 |Extraction de fichier ignorée|FileCheckOutDiscarded|Un utilisateur ignore (ou annule) un fichier extrait. Les modifications qu’il a apportées au fichier le temps de son extraction sont ignorées et ne sont pas enregistrées dans la version du document dans la bibliothèque de documents.|
 |Fichier téléchargé|FileDownloaded|Un utilisateur télécharge un document à partir d’un site.|
@@ -746,7 +746,7 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 
 Si votre organisation utilise l’application [Patients](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à l’application Patients. Si votre environnement est configuré pour prendre en charge l’application Patients, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activitiés**.
 
-![Microsoft Teams Santé dans la liste du sélecteur Activités](media/TeamsHealthcareAuditActivities.png)
+![Microsoft Teams Santé dans la liste du sélecteur Activités](../media/TeamsHealthcareAuditActivities.png)
 
 Pour obtenir une description des activités de l’application Patients, voir les [journaux d’audit pour l’application Patients](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
@@ -837,7 +837,7 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
 
 - Pour afficher des événements du journal d’audit de l’administrateur Exchange, filtrez les résultats de la recherche, puis tapez **-** (tiret) dans la zone de filtre **activité**. Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
 
-  ![Tapez un tiret dans le champ Activités pour filtrer les événements Admin d’Exchange](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![Tapez un tiret dans le champ Activités pour filtrer les événements Admin d’Exchange](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - Pour obtenir des informations sur les cmdlets exécutées, les paramètres et valeurs de paramètres utilisés et les objets affectés, vous devez exporter les résultats de recherche et sélectionner l’option **Télécharger tous les résultats**. Pour plus d’informations, voir [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
 
