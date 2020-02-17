@@ -1,7 +1,7 @@
 ---
 title: Food and Drug Administration CFR titre 21, partie 11
 description: Microsoft aide les clients à se conformer à ces réglementations en matière d’administration des médicaments et de l’alimentation.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -45,7 +45,7 @@ Les clients peuvent demander l’accès aux rapports de conformité, sous réser
 
 Découvrez comment accélérer votre déploiement de la FDA CFR titre 21 : [Télécharger le Guide de qualification de Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le champ d’application
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 Bien qu’il n’existe pas de certification pour se conformer au titre CFR 21 partie 11, les services Cloud d’entreprise Microsoft suivants ont subi des audits indépendants, indépendants, qui peuvent aider les clients dans leurs efforts de conformité. Ces services sont les suivants :
 
@@ -59,7 +59,7 @@ Bien qu’il n’existe pas de certification pour se conformer au titre CFR 21 p
 
 Les rapports d’audit pour les normes SOC 1 et SOC 2 type 2, ISO/IEC 27001 et ISO/IEC 27018 attestent de l’efficacité des contrôles que Microsoft a mis en œuvre et peuvent aider les clients à se conformer à la norme FDA CFR titre 21 partie 11.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **À qui la norme s'applique-t-elle ?**
 
@@ -95,6 +95,6 @@ Microsoft veille à ce que ses services Cloud d’entreprise respectent les term
 - [Microsoft Cloud pour le secteur public](https://aka.ms/govt-cloud)
 - [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

@@ -1,7 +1,7 @@
 ---
 title: Securities and Exchange Commission-réglementation sur la conformité et l’intégrité des systèmes (SIC)
 description: Les règles du SIC s’appliquent aux entités SCI, qui incluent de telles organisations d’autoréglementation (SROs) en tant qu’échanges boursiers et d’options, de prestataires de services de compensation et autres systèmes commerciaux (ATSs).
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -70,11 +70,11 @@ Les organismes financiers ou les entités SCI, soumis à cette réglementation, 
 - [Continuité de l’activité et récupération d’urgence (BCDR) : régions couplées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [Plan de conformité des principes de réglementation de l’informatique en nuage et de Microsoft Online Services](https://aka.ms/FinServ-Guide-US)
 - [Programme de conformité des services financiers de Microsoft Cloud](https://aka.ms/FSCP-Print)
-- [Conformité destinée au secteur des services financiers dans Azure](https://aka.ms/FinServ-Compliance-Azure)
+- [Conformité des services financiers dans Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Services financiers Microsoft](https://aka.ms/FinServ-Compliance)
 - [Règles Microsoft et SEC 17A -4](offering-SEC-17a-4.md)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf) (disponible uniquement en anglais pour le moment).
