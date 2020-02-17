@@ -45,7 +45,7 @@ Ce tableau présente les différences entre Microsoft 365 Business et Office 365
 | **Applications de productivité sur le Cloud**       | | | 
 | Exchange Online et Outlook   | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité   | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
 | Teams | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)  | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
-| OneDrive Entreprise | limite de stockage de 1 to par utilisateur   | Illimité | 
+| OneDrive Entreprise | limite de stockage de 1 to par utilisateur   | Illimité | 
 | Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)  | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
 | StaffHub  | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)  | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
 | Gestionnaire de clients Outlook, MileIQ  | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)  | | 
