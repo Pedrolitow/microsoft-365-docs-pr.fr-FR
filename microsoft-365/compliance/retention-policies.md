@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070164"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093437"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -201,8 +201,9 @@ L’une des fonctionnalités les plus puissantes d’une stratégie de rétentio
     
 - Dossiers publics Exchange
     
+
 ![Option Tous les emplacements](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
-  
+
 Voici d’autres fonctionnalités importantes d’une stratégie de rétention mise en place à l’échelle de l’organisation :
   
 - Il n’existe aucune limite au nombre de boîtes aux lettres ou de sites que la stratégie peut inclure.

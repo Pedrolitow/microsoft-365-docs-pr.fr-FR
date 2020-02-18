@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 102d1da2ec5f49e26a634611f4f640a083d167ff
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074616"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101264"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
@@ -44,15 +44,15 @@ Enfin, en tant qu’administrateur, lorsque vous configurez une étiquette de co
 
 Les paramètres de chiffrement sont disponibles lorsque vous [créez une étiquette de sensibilité](create-sensitivity-labels.md) dans le Centre de conformité Microsoft 365, dans le Centre de sécurité Microsoft 365 ou dans le Centre de sécurité et conformité Office 365.
 
-## <a name="how-encryption-works"></a>Fonctionnement du chiffrement
+## <a name="understand-how-the-encryption-works"></a>Comprendre comment fonctionne le chiffrement
 
 Le chiffrement utilise le service Azure Rights Management (Azure RMS) à partir d’Azure Information Protection. Cette solution de protection utilise les stratégies de chiffrement, d’identité et d’autorisation. Pour plus d’informations, consultez [Qu’est-ce que Azure Rights Management ?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) dans la documentation Azure Information Protection. 
 
 Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super utilisateur** s'assurer que les personnes et services autorisés peuvent toujours consulter et examiner les données qui ont été cryptées pour votre organisation. Le chiffrement peut ensuite être supprimé ou modifié si nécessaire. Pour plus d’informations, consultez la [Configuration de super utilisateurs pour les services Azure Information Protection et les services de découverte ou de la récupération de données](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-## <a name="configuring-a-label-for-encryption"></a>Configuration d’une étiquette pour le chiffrement
+## <a name="how-to-configure-a-label-for-encryption"></a>La configuration d’une étiquette pour le chiffrement
 
-Lorsque vous [créez ou modifiez une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), dans la page **Chiffrement** de l’Assistant, vous pouvez sélectionner l’une des options suivantes :
+[Créez ou modifiez une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), puis dans la page **Chiffrement** de l’Assistant, sélectionnez l’une des options suivantes :
 
 - **Aucun** : il s'agit du paramètre par défaut d'une nouvelle étiquette. Aucun nouveau chiffrement n’est appliqué.
 - **Appliquer** : active le chiffrement, puis vous spécifiez les paramètres de chiffrement.
@@ -98,7 +98,7 @@ Lorsqu’un courrier électronique est chiffré par une quelconque méthode, les
 
 Les documents déjà chiffrés, puis ajoutés sous forme de pièces jointes, conservent leur chiffrement d’origine. 
 
-## <a name="how-to-configure-encryption-settings-for-a-sensitivity-label"></a>Configuration des paramètres de chiffrement pour une étiquette de confidentialité
+## <a name="configure-encryption-settings"></a>Configurer les paramètres du chiffrement
 
 Lorsque vous sélectionnez **Appliquer** dans la page de **Chiffrement** de l’Assistant pour créer ou modifier une étiquette de confidentialité, choisissez si vous souhaitez :
 
