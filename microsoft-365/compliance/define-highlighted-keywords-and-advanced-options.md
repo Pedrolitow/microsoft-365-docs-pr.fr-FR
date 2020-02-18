@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Découvrez comment ajouter des mots clés définis par l’utilisateur à la pertinence pour identifier les fichiers appropriés lors du balisage dans Office 365 Advanced eDiscovery et pour spécifier les paramètres de coût.  '
-ms.openlocfilehash: 4b74730498b3cb08cd646d57845446ae91daeee9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595361"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075922"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Définir les mots clés et les options avancées en surbrillance dans Office 365 Advanced eDiscovery
 
@@ -48,11 +48,11 @@ Comme décrit ci-dessous, les listes de mots clés peuvent être ajoutées, ains
     
 6. Dans **Description**, tapez la liste des mots clés (facultatif).
     
-    ![Ajouter de nouveaux mots clés](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
+    ![Ajouter de nouveaux mots clés](../media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
   
 7. Cliquez sur **OK** lorsque vous avez fini. La liste créée est ajoutée au tableau Liste de mots-clés et peut être modifiée ou supprimée. 
     
-    ![Liste des mots clés de configuration de pertinence](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
+    ![Liste des mots clés de configuration de pertinence](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
 Les mots clés définis par l’utilisateur s’affichent dans la balise des \> couleurs spécifiées dans la pertinence. 
   
@@ -68,7 +68,7 @@ Ces paramètres affectent les graphiques de suivi et de décision en matière de
     
 2. Dans la liste **nombre de fichiers consultés par heure** , sélectionnez l’option montant ou acceptez la valeur par défaut. 
     
-    ![Paramètres de coût de configuration de pertinence](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
+    ![Paramètres de coût de configuration de pertinence](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
 3. Cliquez sur **Enregistrer**. Les paramètres sélectionnés sont enregistrés.
     

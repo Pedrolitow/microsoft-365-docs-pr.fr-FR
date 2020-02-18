@@ -13,18 +13,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Vérifiez votre requête par mot clé pour la recherche de contenu pour les erreurs et les fautes de frappe, telles que les caractères non pris en charge et les opérateurs booléens en minuscules, avant d’exécuter la recherche. Si nous trouvons une erreur, nous vous suggérons une requête révisée.
-ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595921"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078908"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Vérifier la présence d’erreurs dans vos requêtes de recherche de contenu
 
 Lorsque vous créez ou modifiez une recherche de contenu, vous pouvez demander à Office 365 de vérifier si votre requête contient des caractères non pris en charge et des opérateurs booléens en minuscules. Comment ? Cliquez simplement sur **Vérifier la requête pour les fautes de frappe** sur la page de requête d’une recherche de contenu. 
   
-![Cliquez sur « Vérifier la requête pour les fautes de frappe » pour vérifier si votre requête de recherche comporte des caractères non pris en charge](media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
+![Cliquez sur « Vérifier la requête pour les fautes de frappe » pour vérifier si votre requête de recherche comporte des caractères non pris en charge](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
 Voici une liste des caractères non pris en charge que nous vérifions. Les caractères non pris en charge sont souvent masqués et ils provoquent généralement une erreur de recherche ou renvoient des résultats inattendus.
   
@@ -40,7 +40,7 @@ Voici une liste des caractères non pris en charge que nous vérifions. Les cara
 
 Si vous trouvez des caractères non pris en charge dans votre requête, un message d’avertissement s’affiche indiquant que des caractères non pris en charge ont été trouvés et suggère une alternative. Vous pouvez ensuite conserver la requête d’origine ou la remplacer par la requête modifiée suggérée. Voici un exemple du message d’avertissement qui s’affiche une fois que vous avez cliqué sur **Vérifier la requête pour rechercher les fautes** de recherche dans la capture d’écran précédente. Notez que la requête d’origine contient des guillemets typographiques et des opérateurs booléens en minuscules. 
   
-![Un message d’avertissement s’affiche avec une révision suggérée pour votre requête.](media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![Un message d’avertissement s’affiche avec une révision suggérée pour votre requête.](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Comment empêcher les caractères non pris en charge dans vos requêtes de recherche
 
