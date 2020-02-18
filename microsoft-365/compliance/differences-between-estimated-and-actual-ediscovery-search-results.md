@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier en fonction des recherches exécutées avec les outils eDiscovery dans Office 365. '
-ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b14e3aca51737b0a7c15b5219fda38c57ecad9d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595249"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075456"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Différences entre les résultats de recherche de découverte électronique estimée et réelle dans Office 365
 
@@ -35,21 +35,21 @@ Cette rubrique s’applique aux recherches que vous pouvez exécuter à l’aide
    
 Lorsque vous exécutez une recherche de découverte électronique, l’outil que vous utilisez renvoie une estimation du nombre d’éléments (et leur taille totale) correspondant aux critères de recherche. Par exemple, lorsque vous effectuez une recherche dans le centre de sécurité & conformité, les résultats de recherche estimés s’affichent dans le volet d’informations de la recherche sélectionnée.
   
-![Estimation des résultats affichés dans le volet de détails de la recherche sélectionnée](media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
+![Estimation des résultats affichés dans le volet de détails de la recherche sélectionnée](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
 Il s’agit de la même estimation de la taille totale et du nombre d’éléments affichés dans l’outil d’exportation de découverte électronique lorsque vous exportez les résultats vers un ordinateur local et dans le rapport de synthèse d’exportation téléchargé avec les résultats de la recherche.
   
 **Résultats estimés dans l’outil d’exportation de découverte électronique**
 
-![Résultats estimés dans l’outil d’exportation de la découverte électronique](media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
+![Résultats estimés dans l’outil d’exportation de la découverte électronique](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
   
 **Résultats estimés dans le rapport de synthèse d’exportation**
 
-![Les résultats de recherche estimés sont inclus dans le rapport Résumé d’exportation](media/44b579da-86c2-4f33-81b5-84d604003eda.png)
+![Les résultats de recherche estimés sont inclus dans le rapport Résumé d’exportation](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
   
 Toutefois, comme vous pouvez le constater dans la capture d’écran précédente du rapport Résumé de l’exportation, la taille et le nombre de résultats de recherche réels réellement téléchargés diffèrent de la taille et du nombre de résultats de recherche estimés. 
   
-![Différence entre les résultats de recherche estimés et téléchargés](media/84aef318-230f-430d-9d9e-02f21342d364.png)
+![Différence entre les résultats de recherche estimés et téléchargés](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
   
 Voici les raisons de ces différences :
   

@@ -1,5 +1,7 @@
 ---
 title: 'Étape 2 : Sécuriser vos mots de passe'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous devez rendre vos mots de passe forts et gérables au sein de votre organisation.
-ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801739"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067281"
 ---
 # <a name="step-2-secure-your-passwords"></a>Étape 2 : Sécuriser vos mots de passe
 
-![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2 - Identité](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Éviter les mots de passe incorrects
@@ -54,7 +56,7 @@ Reportez-vous aux [Instructions pour activer la réinitialisation de mot de pass
 
 |||
 |:-------|:-----|
-|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide du laboratoire de test : Réinitialisation de mot de passe](password-reset-m365-ent-test-environment.md) |
+|![Guides de Laboratoire de Test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide du laboratoire de test : Réinitialisation de mot de passe](password-reset-m365-ent-test-environment.md) |
 |||
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-pw-reset) pour cette étape.
@@ -73,7 +75,7 @@ Reportez-vous aux [instructions pour configurer l’authentification unique tran
 
 |||
 |:-------|:-----|
-|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : authentification unique transparente Azure AD](single-sign-on-m365-ent-test-environment.md) |
+|![Guides de Laboratoire de Test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : authentification unique transparente Azure AD](single-sign-on-m365-ent-test-environment.md) |
 |||
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-sso) pour cette étape.
@@ -98,4 +100,4 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 
 |||
 |:-------|:-----|
-|![Étape 3](./media/stepnumbers/Step3.png)| [Sécuriser et gérer les connexions de vos utilisateurs](identity-secure-user-sign-ins.md) |
+|![Étape 3](../media/stepnumbers/Step3.png)| [Sécuriser et gérer les connexions de vos utilisateurs](identity-secure-user-sign-ins.md) |

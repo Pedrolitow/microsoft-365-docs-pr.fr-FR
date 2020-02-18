@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des classifieurs adaptés lorsque l’un des classifieurs de zone prêt à l’emploi ne répond pas à vos besoins. Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cette rubrique vous montre comment créer un classifieur personnalisé.
-ms.openlocfilehash: f11da4c36c9d6ed1667d5bed4a7d3e59c2cb21a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bbf2fac4e912e6619f3fe1c9a328aa61782cb640
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595911"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078860"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Création d’un classifieur de formation (aperçu)
 
@@ -29,7 +29,7 @@ Pour en savoir plus sur les différents types de classifieurs, voir [Getting Sta
 
 Cette chronologie reflète un exemple de déploiement.
 
-![formation de classifieur-chronologie](media/trainable-classifier-deployment-timeline_border.png)
+![formation de classifieur-chronologie](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > L’option opt-in est requise pour la première fois pour les classifieurs de formation. Il faut douze jours pour que Microsoft 365 effectue une évaluation de base du contenu de votre organisation. Contactez votre administrateur général pour lancer le processus d’abonnement.
@@ -80,7 +80,7 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 10. Vous pouvez désormais afficher la page de détails en choisissant le classifieur.
 
 
-![classificateur prêt à être testé](media/classifier-trainable-ready-to-test-detail.png)
+![classificateur prêt à être testé](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Collectez au moins 200 éléments de contenu de test. Microsoft recommande 10 000 pour obtenir de meilleurs résultats. Il doit s’agir d’un mélange d’éléments qui sont des positifs forts, de fortes négatifs et d’autres moins évidents dans leur nature. Pour connaître les types de fichiers pris en charge, reportez-vous aux [extensions de nom de fichier et aux types de fichiers analysés par défaut dans SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) .
 
@@ -100,13 +100,13 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 
 16. Lorsque le classificateur de formation est fini de `Ready to review`traiter vos fichiers de test, l’État sur la page des détails prend la forme. Si vous devez augmenter la taille de l’échantillon de test `Add items to test` , choisissez et autorisez le classificateur en train de traiter les éléments supplémentaires.
 
-![capture d’écran prêt à examiner](media/classifier-trainable-ready-to-review-detail.png)
+![capture d’écran prêt à examiner](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Choisissez `Tested items to review` Tab pour passer en revue les éléments.
 
 18. Microsoft 365 présente 30 éléments à la fois. Vérifiez-les et, `We predict this item is "Relevant". Do you agree?` dans la zone `Yes` , `No` choisissez `Not sure, skip to next item`ou ou. La précision du modèle est automatiquement mise à jour après 30 éléments.
 
-![zone passer en revue les éléments](media/classifier-trainable-review-detail.png)
+![zone passer en revue les éléments](../media/classifier-trainable-review-detail.png)
 
 19. Passez *en revue au moins* 200 éléments.
 
@@ -114,7 +114,7 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 
 20. Continuez à passer en revue jusqu’à ce que la précision atteigne `Publish the classifier` au moins `Ready to use`70% et que l’État est.
 
-![précision et prêt à publier](media/classifier-trainable-review-ready-to-publish.png)
+![précision et prêt à publier](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Publiez le classifieur.
 

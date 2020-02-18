@@ -1,5 +1,7 @@
 ---
 title: 'Étape 4 : Configurer la protection des informations Windows'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et déployez la protection des informations Windows dans Microsoft 365.
-ms.openlocfilehash: 23c3298545a288b459fd3bb858bb7c1d1714ee75
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 655ff33c3fd1bba822937618d801db76b7881977
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627380"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067161"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Étape 4 : Configurer la protection des informations Windows
 
 *Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 6 : Protection des informations](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6 : Protection des informations](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 L’augmentation du nombre d’appareils personnels utilisés au travail entraîne un risque accru de fuite de données. Par exemple, un employé risque de diffuser par inadvertance l’image d’un plan marketing de futur produit sur un site de réseau social ou d’enregistrer un fichier contenant des informations hautement confidentielles sur son stockage cloud public. 
 
@@ -49,6 +51,6 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](inf
 
 |||
 |:-------|:-----|
-|![Étape 5](./media/stepnumbers/Step5.png)|[Configurer la protection contre la perte de données Office 365](infoprotect-data-loss-prevention.md)|
+|![Étape 5](../media/stepnumbers/Step5.png)|[Configurer la protection contre la perte de données Office 365](infoprotect-data-loss-prevention.md)|
 
 

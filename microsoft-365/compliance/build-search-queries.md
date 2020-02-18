@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez des mots clés et des conditions pour limiter l’étendue de la recherche lors de la recherche de données à l’aide de l’enquête de données dans Microsoft 365.
-ms.openlocfilehash: 84ce9acf91ec3e8cc325d06ccd5a1e97d3fb2b2a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6769d662f843622a537a5ce93c1c5331b00fc3f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596301"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079019"
 ---
 # <a name="build-search-queries"></a>Créer des requêtes de recherche
 
 Lors de la création de requêtes de recherche, vous pouvez utiliser des mots clés pour rechercher du contenu et des conditions spécifiques afin de limiter l’étendue de la recherche afin de renvoyer les éléments les plus pertinents pour votre enquête.
 
-![Utiliser des mots clés et des conditions pour affiner les résultats d’une recherche](media/SearchQueryBox.png)
+![Utiliser des mots clés et des conditions pour affiner les résultats d’une recherche](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>Recherches par Mots clés
 
@@ -35,7 +35,7 @@ Tapez une requête de mot clé dans la zone **Mots clés** de la requête de rec
     
 Vous pouvez également activer la case à cocher **afficher la liste de mots clés** , puis taper un mot clé ou une phrase de mots clés dans chaque ligne. Dans ce cas, les mots clés de chaque ligne sont connectés par un opérateur logique (représenté sous la forme *c :s*) qui est similaire à la fonctionnalité de l’opérateur **or** de la requête de recherche créée. Cela signifie que les éléments qui contiennent un mot clé dans n’importe quelle ligne sont inclus dans les résultats de la recherche.
 
-![Utiliser la liste de mots clés pour obtenir des statistiques sur chaque mot clé dans la requête](media/KeywordListSearch.png)
+![Utiliser la liste de mots clés pour obtenir des statistiques sur chaque mot clé dans la requête](../media/KeywordListSearch.png)
 
 Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé dans la liste de mots clés. Cela peut vous aider à identifier rapidement les mots clés qui sont les plus efficaces (et les moins). Vous pouvez également utiliser une phrase de mots clés (entourée de parenthèses) dans une ligne de la liste des mots-clés. Pour plus d’informations sur les statistiques de recherche, voir statistiques de la [recherche](search-statistics.md).
 

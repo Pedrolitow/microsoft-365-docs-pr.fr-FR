@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes de référentiel sécurisé du client qui vous permettent de contrôler la manière dont un technicien du support technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: 915f8570271835939f0086f6c19af41a42d4f0d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8906fde608e6e6c26604450eed063915e4617d29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595501"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076830"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Référentiel sécurisé du client dans Office 365
 
@@ -50,7 +50,7 @@ Les étapes suivantes décrivent le flux de travail standard lorsqu’un ingéni
 
 5. Une fois que le gestionnaire de support Microsoft approuve la demande, le référentiel sécurisé du client envoie à l’organisation une notification par courrier électronique relative à la demande d’accès en attente de la part de Microsoft.
 
-    ![Exemple de notification de courrier postal du client](media/CustomerLockbox1.png)
+    ![Exemple de notification de courrier postal du client](../media/CustomerLockbox1.png)
 
    Toute personne disposant du rôle d’administrateur d' [approbation d’accès au client Lockbox](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) dans le centre d’administration Microsoft 365 peut approuver les demandes du client Lockbox.
 
@@ -74,11 +74,11 @@ Vous pouvez activer les contrôles de référentiel sécurisé du client dans le
 
 2. Choisissez **paramètres > sécurité & confidentialité**.
 
-    ![Modifier les paramètres du référentiel sécurisé du client dans le centre d’administration](media/CustomerLockbox2.png)
+    ![Modifier les paramètres du référentiel sécurisé du client dans le centre d’administration](../media/CustomerLockbox2.png)
 
 3. Dans la vignette **client-référentiel sécurisé** , choisissez **modifier**, puis déplacez le bouton bascule **sur activé ou** **désactivé** pour activer ou désactiver la fonctionnalité.
 
-    ![Require approval for Customer Lockbox](media/CustomerLockbox4.png)
+    ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
 ## <a name="approve-or-deny-a-customer-lockbox-request"></a>Approuver ou refuser une demande de référentiel sécurisé d’un client
 
@@ -86,19 +86,19 @@ Vous pouvez activer les contrôles de référentiel sécurisé du client dans le
 
 2. Choisir la **prise en charge > demandes de référentiel sécurisé du client**.
 
-    ![Cliquez sur support, puis sur demandes de référentiel sécurisé du client](media/CustomerLockbox5.png)
+    ![Cliquez sur support, puis sur demandes de référentiel sécurisé du client](../media/CustomerLockbox5.png)
 
     Une liste des demandes du client Lockbox s’affiche.
 
-    ![Liste des demandes de référentiel sécurisé du client](media/CustomerLockbox6.png)
+    ![Liste des demandes de référentiel sécurisé du client](../media/CustomerLockbox6.png)
 
 3. Sélectionnez une demande de référentiel sécurisé du client, puis choisissez **approuver** ou **refuser**.
 
-    ![Approuver ou refuser les demandes de référentiel sécurisé du client](media/CustomerLockbox7.png)
+    ![Approuver ou refuser les demandes de référentiel sécurisé du client](../media/CustomerLockbox7.png)
 
     Un message de confirmation concernant l’approbation de la demande de référentiel sécurisé du client s’affiche.
 
-    ![Approuver ou refuser les demandes de référentiel sécurisé du client](media/CustomerLockbox8.png)
+    ![Approuver ou refuser les demandes de référentiel sécurisé du client](../media/CustomerLockbox8.png)
 
 ## <a name="auditing-customer-lockbox-requests"></a>Audit des demandes de référentiel sécurisé du client
 
@@ -116,7 +116,7 @@ Avant de pouvoir utiliser le journal d’audit pour effectuer le suivi des deman
 
     La page de **recherche du journal d’audit** s’affiche.
 
-    ![Page de recherche de journal d’audit](media/auditlogsearch1.png)
+    ![Page de recherche de journal d’audit](../media/auditlogsearch1.png)
   
 4. Configurez les critères de recherche suivants : 
 
@@ -138,7 +138,7 @@ Avant de pouvoir utiliser le journal d’audit pour effectuer le suivi des deman
 
    - Pour afficher les enregistrements d’audit liés à un ingénieur Microsoft qui exécutent des actions en réponse à une demande approuvée de client : dans la zone située sous la colonne **utilisateur** , tapez **opérateur Microsoft**. La colonne **activité** affiche l’action effectuée par l’ingénieur.
 
-      ![Filtre sur « opérateur Microsoft » pour afficher les enregistrements d’audit](media/CustomerLockbox10.png)
+      ![Filtre sur « opérateur Microsoft » pour afficher les enregistrements d’audit](../media/CustomerLockbox10.png)
 
 7. Dans la liste des résultats, cliquez sur un enregistrement d’audit pour l’afficher.
 
@@ -152,11 +152,11 @@ Lorsqu’une personne de votre organisation approuve ou refuse une demande de r�
 | Adresse IP | Adresse IP de la machine que l’approbateur a utilisé pour approuver ou refuser une demande. |
 | Utilisateur       | Le compte de service\[BOXServiceAccount@\]customerforest. prod.Outlook.com.            |
 | Activité   | Set-AccessToCustomerDataRequest ; Il s’agit de l’activité d’audit qui est enregistrée lorsque vous approuvez ou refusez une demande de référentiel sécurisé d’un client.                                |
-| Item       | GUID de la demande de référentiel sécurisé du client                             |
+| Option       | GUID de la demande de référentiel sécurisé du client                             |
 
 La capture d’écran suivante montre un exemple d’enregistrement de journal d’audit correspondant à une demande approuvée de client Lockbox. Si une demande de référentiel sécurisé du client a été refusée, la valeur du paramètre **ApprovalDecision** serait **Deny**.
 
-![Enregistrement d’audit pour une demande approuvée de client Lockbox](media/CustomerLockbox9.png)
+![Enregistrement d’audit pour une demande approuvée de client Lockbox](../media/CustomerLockbox9.png)
 
 > [!TIP]
 > Pour afficher des informations plus détaillées dans un enregistrement d’audit, cliquez sur **informations supplémentaires**.
@@ -171,9 +171,9 @@ Les actions effectuées par un technicien Microsoft après l’approbation d’u
 | Adresse IP | Adresse IP de l’ordinateur utilisé par Microsoft Engineer. |
 | Utilisateur       | Opérateur Microsoft ; Cette valeur indique que cet enregistrement est lié à une demande de référentiel sécurisé du client.                                  |
 | Activité   | Nom de l’activité effectuée par l’ingénieur Microsoft.|
-| Item       | \<éliminer\>                                             |
+| Option       | \<éliminer\>                                             |
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 #### <a name="which-office-365-services-does-customer-lockbox-apply-to"></a>Quels sont les services Office 365 auxquels s’applique le référentiel client ?
 

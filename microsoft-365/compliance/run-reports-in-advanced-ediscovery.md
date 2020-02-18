@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 'Découvrez comment exécuter un rapport, puis télécharger son fichier. csv dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 9d459065878eceaf9f0fc8b6ebacb749ff4c4830
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: badc657e100961ba89de6a49349b7016ae790b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597591"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069985"
 ---
 # <a name="run-reports-in-office-365-advanced-ediscovery"></a>Exécuter des rapports dans Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Vous pouvez télécharger un fichier. csv avec un rapport pour le processus sél
   
 1. Dans l’onglet **rapports** , sélectionnez une option dans la liste **nom du rapport** . Sélectionnez l’une des trois options de **nom de rapport** : **choix de pertinence**, **liste des thèmes** ou **fichiers balisés**.
     
-    ![Rapports d’analyse de découverte électronique](media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
+    ![Rapports d’analyse de découverte électronique](../media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
   
 2. Les paramètres disponibles, ainsi que les options de tri et de filtrage, peuvent être définis en fonction du rapport sélectionné. 
     

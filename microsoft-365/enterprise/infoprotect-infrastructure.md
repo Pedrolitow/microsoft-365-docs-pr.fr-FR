@@ -1,5 +1,7 @@
 ---
 title: 'Phase 6 : Protection des informations'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes du déploiement de l’infrastructure de protection des informations pour Microsoft 365 Entreprise.
-ms.openlocfilehash: c90fc039124f479629acd5cca414c937a1f5a10d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 418506927885948cd917061d99bb69163b1e44a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030849"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067133"
 ---
 # <a name="phase-6-information-protection"></a>Phase 6 : Protection des informations
 
-![Phase 6 : Protection des informations](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
+![Phase 6 : Protection des informations](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
 La protection des informations est un ensemble de stratégies et de technologies qui définissent la façon dont vous transmettez, stockez et traitez les informations sensibles. À la phase 6, vous accédez aux fonctionnalités et aux paramètres de protection des informations de Microsoft 365 Entreprise qui vous aident à sécuriser les données pour vos scénarios et charges de travail informatiques.
 
@@ -38,13 +40,13 @@ Ensuite, procédez comme suit pour déployer la protection des informations pour
 
 |||
 |:-------|:-----|
-|![Étape 1](./media/stepnumbers/Step1.png)|[Définir les niveaux de protection des informations et de sécurité](infoprotect-define-sec-infoprotect-levels.md)|
-|![Étape 2](./media/stepnumbers/Step2.png)|[Configurer la classification pour votre environnement](infoprotect-configure-classification.md)|
-|![Étape 3](./media/stepnumbers/Step3.png)|[Renforcer la sécurité de Microsoft 365](infoprotect-configure-increased-security-office-365.md)|
-|![Étape 4](./media/stepnumbers/Step4.png)|[Configurer la protection des informations Windows](infoprotect-deploy-windows-information-protection.md)|
-|![Étape 5](./media/stepnumbers/Step5.png)|[Configurer la protection contre la perte de données Office 365](infoprotect-data-loss-prevention.md)|
-|![Étape 6](./media/stepnumbers/Step6.png)|[Configurer le chiffrement des e-mails](infoprotect-email-encryption.md)|
-|![Étape 7](./media/stepnumbers/Step7.png)|[Configurez la gestion des accès privilégiés pour Office 365](infoprotect-configure-privileged-access-management.md)|
+|![Étape 1](../media/stepnumbers/Step1.png)|[Définir les niveaux de protection des informations et de sécurité](infoprotect-define-sec-infoprotect-levels.md)|
+|![Étape 2](../media/stepnumbers/Step2.png)|[Configurer la classification pour votre environnement](infoprotect-configure-classification.md)|
+|![Étape 3](../media/stepnumbers/Step3.png)|[Renforcer la sécurité de Microsoft 365](infoprotect-configure-increased-security-office-365.md)|
+|![Étape 4](../media/stepnumbers/Step4.png)|[Configurer la protection des informations Windows](infoprotect-deploy-windows-information-protection.md)|
+|![Étape 5](../media/stepnumbers/Step5.png)|[Configurer la protection contre la perte de données Office 365](infoprotect-data-loss-prevention.md)|
+|![Étape 6](../media/stepnumbers/Step6.png)|[Configurer le chiffrement des e-mails](infoprotect-email-encryption.md)|
+|![Étape 7](../media/stepnumbers/Step7.png)|[Configurez la gestion des accès privilégiés pour Office 365](infoprotect-configure-privileged-access-management.md)|
 |||
 
 Lorsque vous avez terminé ces étapes, accédez aux [critères de sortie](infoprotect-exit-criteria.md) de cette phase pour vous assurer que vous répondez aux conditions requises et facultatives pour Microsoft 365 Entreprise.
@@ -57,11 +59,11 @@ Découvrez comment les experts informatiques Microsoft utilisent [Azure Informat
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, [a mis en place une protection des informations](contoso-info-protect.md) pour les services cloud Microsoft 365.
 
-![Société Contoso](./media/contoso-overview/contoso-icon.png)
+![Société Contoso](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Étape suivante
 
 |||
 |:-------|:-----|
-|![Étape 1](./media/stepnumbers/Step1.png)|[Définissez les niveaux de protection des informations et de sécurité](infoprotect-define-sec-infoprotect-levels.md)|
+|![Étape 1](../media/stepnumbers/Step1.png)|[Définissez les niveaux de protection des informations et de sécurité](infoprotect-define-sec-infoprotect-levels.md)|
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 127e2c9a04977bf6e902a1ce669fa9e4248e3ef2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662204"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080082"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>Tableau de bord eDiscovery avancé pour les jeux de révision (aperçu)
 
@@ -37,15 +37,15 @@ Dans certains cas de Advanced eDiscovery, il se peut que vous ayez un grand volu
   
 4. Dans la liste déroulante **résultats individuels** , cliquez sur **affichage du profil de recherche**. 
 
-   ![DashbordPivot](media/dashboardpivot.png)
+   ![DashbordPivot](../media/dashboardpivot.png)
 
    La page **afficher le profil de recherche** s’affiche ; la première fois que vous Affichez cette page, trois widgets par défaut sont affichés.
 
-   ![Tableau de bord](media/dashboardonly.png)
+   ![Tableau de bord](../media/dashboardonly.png)
   
 5. Cliquez sur le **nouveau widget** , puis sélectionnez l’un des éléments suivants :
 
-   ![Liste déroulante nouveau widget](media/NewWidgetDropdownBox.png)
+   ![Liste déroulante nouveau widget](../media/NewWidgetDropdownBox.png)
 
    - **Choisissez dans la bibliothèque :** Affiche une bibliothèque par défaut de widgets. Cliquez sur un widget, puis cliquez sur **Ajouter** pour l’ajouter aux widgets sur la page **mode profil de recherche** .
   
@@ -53,7 +53,7 @@ Dans certains cas de Advanced eDiscovery, il se peut que vous ayez un grand volu
 
 6. Pour créer un widget personnalisé, procédez comme suit sur la page du menu volant **Ajouter un widget** :
 
-   ![Créer un widget](media/addwidget.png)
+   ![Créer un widget](../media/addwidget.png)
 
     a. Tapez un nom pour le widget, qui s’affiche dans la barre de titre du widget. Il est nécessaire d’attribuer un nom à un widget, mais il est utile d’identifier les données du widget.
 
@@ -67,17 +67,17 @@ Dans certains cas de Advanced eDiscovery, il se peut que vous ayez un grand volu
 
 1. Cliquez sur **...** dans la barre de titre du widget, puis cliquez sur **appliquer la condition**.
 
-   ![Tableau de bord](media/searchprofilehome.png)
+   ![Tableau de bord](../media/searchprofilehome.png)
 
 2. Sur la page de la fenêtre volante, cliquez sur un élément dans la touche du widget ou le graphique du widget pour créer un filtre.
 
-   ![CreateFilter](media/applyconditionfilter.png)
+   ![CreateFilter](../media/applyconditionfilter.png)
 
 3. Répétez les étapes 1-2 pour d’autres widgets plusieurs widgets. 
 
 4. Lorsque vous avez fini, cliquez sur **enregistrer en tant que requête** pour enregistrer vos conditions en tant que nouvelle requête de recherche pour l’ensemble de révision.
 
-   ![Requête](media/savequery.png)
+   ![Requête](../media/savequery.png)
 
 5. Fermez l' **affichage profil de recherche** pour revenir à l’affichage des résultats de la recherche.
 

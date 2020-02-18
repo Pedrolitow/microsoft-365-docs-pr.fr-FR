@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4005b1e379b138f4eb22bb5c11e1f278185dc65e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c1acdb515e278c40ca25d47e2d9fd24c23d51f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597611"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070057"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un jeu à réviser
 
@@ -31,7 +31,7 @@ Dans la plupart des cas, il est utile de pouvoir approfondir les données dans u
 
 Pour créer et exécuter une requête sur les documents d’un jeu de révision, cliquez sur **nouvelle requête** dans l’ensemble de révision. Une fois que vous avez nommé votre requête et défini les conditions, cliquez sur **Enregistrer** pour enregistrer et exécuter la requête. Pour exécuter une requête qui a été précédemment enregistrée, cliquez sur une requête enregistrée.
 
-![Examiner les requêtes Set](media/AeDReviewSetQueries.png)
+![Examiner les requêtes Set](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>Création d’une requête d’ensemble de révision
 
@@ -59,7 +59,7 @@ En plus des cartes de condition, vous pouvez utiliser un langage de requête de 
 
 Outre les requêtes que vous pouvez enregistrer, vous pouvez utiliser les filtres Set Set pour appliquer rapidement des conditions supplémentaires à une requête Set Review. Cela vous permet d’affiner les résultats affichés par une requête d’ensemble de révision.
 
-![Vérifier les filtres Set](media/AeDReviewSetFilters.png)
+![Vérifier les filtres Set](../media/AeDReviewSetFilters.png)
 
 Les filtres diffèrent des requêtes de deux façons importantes :
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec la protection contre la perte de données (DLP) dans SharePoint Online, vous pouvez découvrir des documents qui contiennent des données sensibles sur l’ensemble de votre client. Après avoir découvert les documents, vous pouvez travailler avec leurs propriétaires pour protéger les données. Cette rubrique peut vous aider à créer une requête pour rechercher des données sensibles.
-ms.openlocfilehash: e3750ee69a197de5e7e5c0ac9346124568b8d5f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c0b17ef8f1e6a10d095f4533867a108b937a56a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594545"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073895"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 
@@ -35,7 +35,7 @@ Les utilisateurs stockent souvent des données sensibles, comme les numéros de 
 
 Trois parties composent une requête DLP de base : SensitiveType,  plage de nombre et plage de confiance. Comme illustré dans le graphique suivant, **SensitiveType : «\<type\>»** est obligatoire, et**|\<\> la plage de nombre** et la plage de**|\<confiance\> ** sont facultatives. 
   
-![Exemple de requête divisée en obligatoire et facultative](media/DLP-query-example-text.png)
+![Exemple de requête divisée en obligatoire et facultative](../media/DLP-query-example-text.png)
   
 ### <a name="sensitive-type---required"></a>Type d'informations sensibles - Obligatoire
 

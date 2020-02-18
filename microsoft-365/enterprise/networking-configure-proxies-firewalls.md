@@ -1,5 +1,7 @@
 ---
 title: 'Étape 4 : configurer le trafic de contournement'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Analysez et configurez des navigateurs web et des équipements de périmètre pour le trafic de contournement vers des emplacements Office 365 approuvés.
-ms.openlocfilehash: 32aa2216856d5a519fddb55701be745a9dacbd87
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 71f62c5e245962f3514c49477e3cdeda17cb6397
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370141"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066684"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Étape 4 : configurer le trafic de contournement
 
 *Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 1 : Réseau](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1 : Réseau](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Étant donné que le trafic Internet général peut être risqué, les réseaux d’organisation appliquent généralement la sécurité avec des équipements de périmètre tels que des serveurs proxy, le SSL Break and Inspect, des appareils d’inspection des paquets et des systèmes de protection contre la perte de données. Pour en savoir plus sur certains problèmes avec les périphériques d’interception réseau, reportez-vous à l’article [Utilisation de périphériques réseau tiers ou de solutions sur le trafic Office 365](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
@@ -46,7 +48,7 @@ Microsoft vous recommande les points suivants :
 
 Voici quelques recommandations au sein de votre infrastructure réseau.
 
-![Commentaires pour l’optimisation du trafic local](./media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
+![Commentaires pour l’optimisation du trafic local](../media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
 
 Les équipements de périmètre incluent les pare-feux, le SSL Break and Inspect, les appareils d’inspection des paquets et les systèmes protection contre la perte de données. Pour configurer et mettre à jour les configurations d’équipements de périmètre, vous pouvez utiliser un script ou un appel REST pour utiliser une liste structurée de points de terminaison du service web Office 365 Endpoints. Pour plus d’informations, voir [Service web d’URL et d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
@@ -59,7 +61,7 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 
 |||
 |:-------|:-----|
-|![Étape 5](./media/stepnumbers/Step5.png)|[Optimiser les performances du service Office 365 et du client](networking-optimize-tcp-performance.md) |
+|![Étape 5](../media/stepnumbers/Step5.png)|[Optimiser les performances du service Office 365 et du client](networking-optimize-tcp-performance.md) |
 
 
 

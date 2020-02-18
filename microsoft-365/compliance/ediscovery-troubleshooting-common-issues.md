@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: ''
 description: Examinez, dépannez et résolvez les problèmes courants dans Office 365 eDiscovery.
 siblings_only: true
-ms.openlocfilehash: c8eb4a330ab565900a685959ab1291990a6119bb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595129"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074808"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, dépanner et résoudre les problèmes eDiscovery courants
 
@@ -60,7 +60,7 @@ Recherchez les utilisateurs en double ou la liste de distribution avec le même 
 Une recherche de contenu ou eDiscovery peut produire l’erreur suivante :
 >Cette recherche s’est terminée avec les erreurs (#).  Voulez-vous relancer la recherche sur les emplacements ayant échoué ?
 
-![Capture d’écran des erreurs d’emplacement spécifique à la recherche]( media/edisc-tshoot-specific-location-search-fails.png)
+![Capture d’écran des erreurs d’emplacement spécifique à la recherche](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>Résolution
 
@@ -136,7 +136,7 @@ Lors de l’exportation des résultats de recherche à partir de eDiscovery ou d
 
 Lors de l’exécution d’une recherche de découverte électronique, si la recherche continue de se produire avec une erreur semblable à « erreur interne du serveur (500) », vous pouvez être amené à relancer la recherche uniquement sur des emplacements de boîte aux lettres spécifiques.
 
-![Capture d’écran de l’erreur de serveur interne 500](media/edisc-tshoot-error-500.png)
+![Capture d’écran de l’erreur de serveur interne 500](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>Résolution
 

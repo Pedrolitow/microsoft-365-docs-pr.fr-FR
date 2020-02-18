@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire relatives aux produits Microsoft.
-ms.openlocfilehash: 645d2bca907d81e32d8262051fd159dd52ba3039
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597201"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083858"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -50,7 +50,7 @@ Une fois que l’administrateur a attribué des rôles de gestionnaire de confor
 
 Chaque rôle de gestionnaire de conformité a des autorisations légèrement différentes. Vous pouvez afficher les autorisations affectées à chaque rôle, voir les utilisateurs qui se trouvent dans quels rôles et ajouter ou supprimer des utilisateurs de ce rôle via le portail d’approbation de services. Sélectionnez l’option de menu **admin** , puis choisissez les **paramètres** à afficher.
   
-![Menu d’administration STP : paramètres sélectionnés](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![Menu d’administration STP : paramètres sélectionnés](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 Pour ajouter ou supprimer des utilisateurs des rôles du Gestionnaire de conformité.
   
@@ -66,11 +66,11 @@ Pour ajouter ou supprimer des utilisateurs des rôles du Gestionnaire de conform
 
 6. Pour ajouter des utilisateurs à ce rôle, sélectionnez **Ajouter**. Dans la boîte de dialogue **Ajouter des utilisateurs** , sélectionnez le champ utilisateur. Vous pouvez faire défiler la liste des utilisateurs disponibles ou commencer à taper le nom d’utilisateur pour filtrer la liste en fonction de votre terme de recherche. Sélectionnez l’utilisateur qui doit ajouter ce compte à la liste **Ajouter des utilisateurs** mise en service avec ce rôle. Si vous souhaitez ajouter plusieurs utilisateurs simultanément, commencez à taper un nom d’utilisateur pour filtrer la liste, puis sélectionnez l’utilisateur à ajouter à la liste. Sélectionnez **Enregistrer** pour mettre en service le rôle sélectionné pour ces utilisateurs. 
 
-    ![Gestionnaire de conformité — ajouter des utilisateurs](media/compliance-manager-add-users.png)
+    ![Gestionnaire de conformité — ajouter des utilisateurs](../media/compliance-manager-add-users.png)
   
 7. Pour supprimer des utilisateurs de ce rôle, sélectionnez les utilisateurs et sélectionnez **supprimer**.
 
-    ![Gestionnaire de conformité — supprimer des utilisateurs](media/compliance-manager-delete-users.png)
+    ![Gestionnaire de conformité — supprimer des utilisateurs](../media/compliance-manager-delete-users.png)
 
 ### <a name="controlling-automatic-secure-score-updates"></a>Contrôle des mises à jour automatiques du score de sécurité
 
@@ -178,7 +178,7 @@ Vous ne pouvez pas modifier un nom de propriétaire, mais vous pouvez modifier l
 
 La zone actions client affiche toutes les actions des clients pour tous les modèles et évaluations dans le gestionnaire de conformité (aperçu).
 
-![Gestionnaire de conformité — ajouter des utilisateurs](media/compliance-manager-customer-actions.png "Actions client du gestionnaire de conformité")
+![Gestionnaire de conformité — ajouter des utilisateurs](../media/compliance-manager-customer-actions.png "Actions client du gestionnaire de conformité")
 
 En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie, l’application et le score d’une action, et déterminer si elle est intégrée avec le score de sécurité. Vous pouvez développer une action et sélectionner **More** pour lire la description de l’action et accéder à tous les liens dans la description. Vous pouvez également utiliser cette interface pour activer et désactiver l’intégration de la note sécurisée en fonction de l’action et pour ajouter des actions personnalisées. Les actions qui ont des fonctions d’intégration de score sécurisé comportent des points de suspension (...) en regard de celles-ci (Notez que les actions personnalisées comportent également des points de suspension).
 
@@ -266,15 +266,15 @@ Lorsque vous créez une évaluation, vous avez la possibilité de copier des inf
 
 Voici un exemple de l’évaluation pour Office 365 et ISO 27001. La première vue illustre la nouvelle vue actions dans le gestionnaire de conformité (aperçu).
 
-![Affichage des éléments d’action du gestionnaire de conformité](media/compliance-manager-action-items.png)
+![Affichage des éléments d’action du gestionnaire de conformité](../media/compliance-manager-action-items.png)
 
 Les actions sont répertoriées par ordre alphabétique et un score et un propriétaire sont attribués à chaque action. Sélectionnez le lien **en savoir plus** pour lire les détails de chaque action. 
 
-![Affichage des éléments d’action du gestionnaire de conformité](media/compliance-manager-actions-read-more.png)
+![Affichage des éléments d’action du gestionnaire de conformité](../media/compliance-manager-actions-read-more.png)
 
 Sélectionnez le lien **examiner** pour gérer, affecter, mettre en œuvre et tester l’action. Vous trouverez ci-dessous un exemple d’action.
 
-![Vue d’action du gestionnaire de conformité](media/compliance-manager-action.png)
+![Vue d’action du gestionnaire de conformité](../media/compliance-manager-action.png)
 
 Dans les versions précédentes du gestionnaire de conformité, le flux de travail pour l’implémentation des exigences a été effectué au niveau du contrôle. Un officier de conformité affecte un contrôle à une personne afin d’implémenter le contrôle. Il y avait deux inconvénients à cela :
 
@@ -295,7 +295,7 @@ Dans le gestionnaire de conformité (aperçu), le processus de flux de travail e
 
 Le gestionnaire de conformité (aperçu) inclut également le tableau croisé dynamique basé sur le contrôle dans les versions précédentes. Sélectionnez le tableau de bord informations sur les **contrôles** pour l’afficher. Vous pouvez afficher des informations sur les contrôles au niveau de l’évaluation et du modèle. Vous trouverez ci-dessous un exemple de tableau de bord d’informations des contrôles pour les évaluations.
 
-![Vue infos sur les contrôles du gestionnaire de conformité](media/compliance-manager-controls-info.png)
+![Vue infos sur les contrôles du gestionnaire de conformité](../media/compliance-manager-controls-info.png)
 
 Pour les évaluations, le tableau de bord informations sur les contrôles affiche les éléments suivants :
 
@@ -311,7 +311,7 @@ Pour les évaluations, le tableau de bord informations sur les contrôles affich
     - **Vos actions** affichent les actions du client que vous pouvez effectuer pour satisfaire une partie ou la totalité des exigences du contrôle. De nombreux contrôles ont plusieurs actions associées et toutes les actions associées à un contrôle sont affichées ici. Les actions indiquées ici ont la même interface utilisateur que celles répertoriées dans le tableau de bord actions.
     - **Actions Microsoft** : affiche la liste des contrôles de l’infrastructure interne de Microsoft qui s’appliquent au contrôle de certification sélectionné. Pour chaque contrôle interne, sélectionnez **implémenté** pour afficher les détails de l’implémentation et du test de Microsoft, ainsi que le résultat du test et la date du test, comme indiqué ci-dessous.
 
-![Gestionnaire de conformité-vue d’action Microsoft](media/compliance-manager-microsoft-action.png)
+![Gestionnaire de conformité-vue d’action Microsoft](../media/compliance-manager-microsoft-action.png)
 
 ### <a name="export-an-assessment"></a>Exporter une évaluation
 
@@ -329,7 +329,7 @@ Le rapport d’évaluation est téléchargé sous la forme d’un fichier Excel 
 
 Lorsque vous avez terminé d’utiliser un modèle ou une évaluation et que vous n’en avez plus besoin à des fins de conformité, vous pouvez le masquer à partir de votre affichage. Lorsqu’un modèle ou une évaluation est masquée, elle est supprimée de la vue par défaut et vous devez activer la case à cocher **inclure les masqués** pour l’afficher.
 
-![Affichage du modèle masqué du gestionnaire de conformité](media/compliance-manager-hidden-template.png "Modèle masqué du gestionnaire de conformité")
+![Affichage du modèle masqué du gestionnaire de conformité](../media/compliance-manager-hidden-template.png "Modèle masqué du gestionnaire de conformité")
 
 > [!IMPORTANT]
 > Les évaluations masquées ne conservent pas leurs liens vers les documents de preuve téléchargés. Il est vivement recommandé d’exporter l’évaluation avant de la masquer pour conserver les liens vers les documents de preuve dans le rapport.
@@ -367,7 +367,7 @@ Les contrôles et les actions sont les principaux tableaux croisés dynamiques u
 
 Les contrôles peuvent être affichés à partir du tableau de bord informations sur les contrôles. Les contrôles représentent les exigences d’une norme, d’une certification, d’une réglementation ou d’une infrastructure. Pour mapper ces exigences sur plusieurs normes, réglementations, etc., et les associer à des actions, tout est traité comme s’il s’agissait d’une infrastructure de contrôle. Par exemple, comme une infrastructure de contrôle, les réglementations, telles que HIPAA, ont été divisées par section, et les contrôles HIPAA du gestionnaire de conformité utilisent le même schéma de numérotation que ces sections, comme indiqué ci-dessous :
 
-![Détails des contrôles Microsoft du gestionnaire de conformité](media/compliance-manager-control-details.png)
+![Détails des contrôles Microsoft du gestionnaire de conformité](../media/compliance-manager-control-details.png)
 
 Il existe trois types de contrôles :
 
@@ -403,7 +403,7 @@ Cette fonction permet à une organisation de supprimer toutes les dépendances a
 
 Un modèle est l’objet de base dans le gestionnaire de conformité (aperçu) qui est associé à un produit et à une certification (par exemple, standard, réglementation, infrastructure de contrôle, etc.). Les modèles peuvent être affichés et ajoutés à partir du tableau de bord modèles.
 
-![Tableau de bord de modèles Microsoft du gestionnaire de conformité](media/compliance-manager-template-dashboard.png)
+![Tableau de bord de modèles Microsoft du gestionnaire de conformité](../media/compliance-manager-template-dashboard.png)
  
 Le tableau de bord affiche chaque modèle, ainsi que la certification et le produit associés au modèle, les dates auxquelles le modèle a été créé et modifié pour la dernière fois, le nombre de clients et les contrôles gérés par Microsoft, le score de conformité maximal pour le Modèle et état du modèle (par exemple, approuvé, en attente d’approbation, importé).
 
@@ -594,7 +594,7 @@ Vous pouvez exporter une évaluation vers un fichier Excel pour les parties pren
 2. Sélectionnez le groupe et l’évaluation dans les menus déroulants pour l’évaluation que vous souhaitez exporter.
 3. Sélectionnez Exporter. L’exportation de l’évaluation est téléchargée sous la forme d’un fichier Excel.
 
-![Rapport Excel d’évaluation du gestionnaire de conformité](media/compliance-manager-assessment-report.png)
+![Rapport Excel d’évaluation du gestionnaire de conformité](../media/compliance-manager-assessment-report.png)
 
 ## <a name="permissions"></a>Autorisations
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir de l’outil de conversation Bloomberg dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 9711442e75e5a60540c8c7debea83d90c89e7893
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e93802eaf3197139fe8b8384bc1ec3ee16b2d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596031"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079655"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurer un connecteur pour archiver les données Instant Bloomberg
 
@@ -29,7 +29,7 @@ Une fois que les données instantanées Bloomberg sont stockées dans des boîte
 
 La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver des données de conversation de messagerie instantanée Bloomberg dans Microsoft 365. 
 
-![Processus d’importation et d’archivage de Bloomberg instantané](media/InstantBloombergDataArchiving.png)
+![Processus d’importation et d’archivage de Bloomberg instantané](../media/InstantBloombergDataArchiving.png)
 
 1. Votre organisation travaille avec Bloomberg pour configurer un site Bloomberg SFTP. Vous allez également utiliser Bloomberg pour configurer la copie instantanée de messages de conversation sur votre site Bloomberg SFTP.
 

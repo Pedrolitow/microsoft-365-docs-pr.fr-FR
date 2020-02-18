@@ -1,5 +1,7 @@
 ---
 title: 'Étape 3 : Sécuriser et gérer les connexions de vos utilisateurs'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous pouvez sécuriser plus efficacement les connexions des utilisateurs aux appareils Windows et à Microsoft 365.
-ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c541f5b74fe3ea6e94b002212f21ec8645e8e87e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801729"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067291"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Étape 3 : Sécuriser et gérer les connexions de vos utilisateurs
 
-![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2 - Identité](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -53,7 +55,7 @@ Pour plus d’informations, reportez-vous à [Planifier le déploiement d’une 
 
 |||
 |:-------|:-----|
-|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide du laboratoire de test : authentification multifacteur Azure](multi-factor-authentication-microsoft-365-test-environment.md) |
+|![Guides de Laboratoire de Test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide du laboratoire de test : authentification multifacteur Azure](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-mfa) pour cette étape.
@@ -85,11 +87,11 @@ Les résultats de cette étape sont que vous avez activé Azure AD Identity Prot
 
 |||
 |:-------|:-----|
-|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
+|![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
 |||
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-ident-prot) pour cette étape.
 
 |||
 |:-------|:-----|
-|![Étape 4](./media/stepnumbers/Step4.png)| [Ajouter vos comptes d’utilisateurs](identity-add-user-accounts.md) |
+|![Étape 4](../media/stepnumbers/Step4.png)| [Ajouter vos comptes d’utilisateurs](identity-add-user-accounts.md) |

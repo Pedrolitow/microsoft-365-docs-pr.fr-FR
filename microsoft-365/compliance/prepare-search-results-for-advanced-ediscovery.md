@@ -17,17 +17,17 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Découvrez comment préparer les résultats d’une recherche de contenu dans le centre de sécurité & conformité dans Office 365 pour une analyse plus poussée avec l’outil eDiscovery avancé.
-ms.openlocfilehash: 115657a1ea8a603676ff168cce7653e56f5664ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ba115cf45aa3be7b9cb43b3a261687e073edba2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597741"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071009"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Préparation des résultats de recherche pour la découverte électronique avancée Office 365
 
 > [!IMPORTANT]
-> À mesure que nous continuons à investir dans les versions plus récentes de la découverte électronique avancée, nous annonçaons le retrait d’Office 365 Advanced eDiscovery (également appelé *Advanced eDiscovery v 1.0*). Si vous utilisez toujours Advanced eDiscovery v 1.0, effectuez une transition vers [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (également appelée *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2,0 contient des fonctionnalités similaires dans Advanced eDiscovery v 1.0, mais offre également de nombreuses nouvelles fonctionnalités telles que la gestion des dépositaires, la gestion des communications et les ensembles de révision. Pour en savoir plus sur le retrait de Advanced eDiscovery v 1.0, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> Au fur et à mesure que nous enquêtons dans les versions plus récentes d’Advanced eDiscovery, nous annonçons le retrait d’Office 365 Advanced eDiscovery (également connu sous le nom de *Advanced eDiscovery v 1.0*). Si vous utilisez Advanced eDiscovery v 1.0, veuillez faire la transition vers [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (également connu sous le nom de *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2.0 contient des fonctionnalités similaires à celles de Advanced eDiscovery v1.0, et elle offre également de nombreuses fonctions inédites telles que la gestion des consignataires, la gestion des communications et les jeux à réviser. Pour en savoir plus sur le retrait d’Advanced eDiscovery v1.0, voir la [Suppression des outils hérités eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
 
 Une fois qu’une recherche associée à un cas eDiscovery dans le centre de sécurité & conformité est exécutée correctement, vous pouvez préparer les résultats de la recherche pour une analyse plus poussée avec Office 365 Advanced eDiscovery, qui vous permet d’analyser des ensembles de données non structurés volumineux et de réduire la quantité de données correspondant à un cas juridique. Les fonctionnalités avancées de découverte électronique sont les suivantes :
   
@@ -98,11 +98,11 @@ Une fois la préparation terminée, l’étape suivante consiste à accéder à 
     
 3. Sur la page **Accueil** du cas, cliquez sur **Advanced eDiscovery**. 
     
-    ![Cliquez sur basculer vers Advanced eDiscovery pour ouvrir le cas dans Advanced eDiscovery](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![Cliquez sur basculer vers Advanced eDiscovery pour ouvrir le cas dans Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
     La barre **de progression de la connexion à Advanced eDiscovery** s’affiche. Lorsque vous êtes connecté à Advanced eDiscovery, une liste de conteneurs apparaît dans la page de configuration de l’incident. 
     
-    ![Le cas est affiché dans Advanced eDiscovery](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![Le cas est affiché dans Advanced eDiscovery](../media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
      Ces conteneurs représentent les résultats de recherche que vous avez préparés pour l’analyse dans Advanced eDiscovery à l’étape 1. Notez que le nom du conteneur porte le même nom que la recherche dans le cas dans le centre de sécurité & conformité. Les conteneurs de la liste sont ceux que vous avez préparés. Si un autre utilisateur a préparé des résultats de recherche pour Advanced eDiscovery, les conteneurs correspondants ne seront pas inclus dans la liste. 
     

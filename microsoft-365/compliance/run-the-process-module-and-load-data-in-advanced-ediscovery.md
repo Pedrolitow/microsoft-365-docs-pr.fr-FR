@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Découvrez comment utiliser le centre de sécurité &amp; conformité Office 365 pour accéder à Office 365 Advanced eDiscovery et exécuter le module process pour un cas.  '
-ms.openlocfilehash: e99071246e6c63292bf3ca1fbca0a0fd25eab5a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601591"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081519"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Exécuter le module de processus et charger des données dans Office 365 Advanced eDiscovery
 
@@ -49,7 +49,7 @@ Procédez comme suit pour exécuter le processus.
     
 4. Dans **préparer** \> **** \> **le**processus de préparation, sélectionnez un conteneur dans la liste des conteneurs disponibles.
     
-    ![Cliquez sur traiter pour ajouter les résultats de la recherche à la demande de devis](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![Cliquez sur traiter pour ajouter les résultats de la recherche à la demande de devis](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
 5. Cliquez sur **Paramètres avancés...** si vous voulez ajouter le conteneur comme fichiers de départ ou sous forme de fichiers pré-balisés. 
     
@@ -57,7 +57,7 @@ Procédez comme suit pour exécuter le processus.
     
     Utilisez des fichiers pré-balisés pour automatiser la formation à la pertinence. Vous devez marquer au moins 1 500 fichiers et conserver la proportion de fichiers pertinents pour les fichiers non pertinents le même que dans la collection ajoutée à la pertinence. Ces fichiers doivent être balisés manuellement, et vous devez être sûr de la qualité du marquage.
     
-    ![Capture d’écran de la page des paramètres avancés pour le traitement des fichiers de commandes](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![Capture d’écran de la page des paramètres avancés pour le traitement des fichiers de commandes](../media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - Dans la section **Seed** : 
     

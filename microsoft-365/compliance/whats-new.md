@@ -147,7 +147,7 @@ Si vous avez utilisé le centre de sécurité & conformité d’Office 365 pour 
 |Étiquettes de rétention et stratégies d’étiquette |Étiquettes de rétention > étiquettes de rétention > des étiquettes et des stratégies d’étiquette <br/> https://protection.office.com/retentionlabels |Onglets de gouvernance des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Vue d’ensemble des étiquettes de rétention](labels.md)|
 |Stratégies de conservation|Conservation des > de gouvernance des informations <br/> https://protection.office.com/retention |Onglet rétention > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Vue d’ensemble des stratégies de rétention](retention-policies.md)|
 |Types d’informations sensibles|Classification > types d’informations sensibles <br/> https://protection.office.com/sensitivetypes |Classification des données > onglet types d’informations sensibles <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)|
-|Étiquettes de confidentialité et stratégies d’étiquette|Étiquettes de sensibilité > de classification > les étiquettes et les onglets stratégies d’étiquette <br/> https://protection.office.com/sensitivity |Onglets de protection des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[En savoir plus sur les étiquettes de sensibilité](sensitivity-labels.md) |
+|Étiquettes de confidentialité et stratégies d’étiquette|Étiquettes de sensibilité > de classification > les étiquettes et les onglets stratégies d’étiquette <br/> https://protection.office.com/sensitivity |Onglets de protection des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md) |
 |Certification de service|Certification de service <br/> https://protection.office.com/serviceassurance/dashboard |Pour l’instant, les ressources de service assurance ne sont accessibles que dans le centre de conformité & Office 365 Security. |[Garantie de service dans le centre de sécurité & conformité](service-assurance.md)|
 |Surveillance|Surveillance <br/> https://protection.office.com/supervisoryreviewv2 |Conformité des communications <br/> https://compliance.microsoft.com/supervisoryreview |[Conformité de la communication dans Microsoft 365 (version d’évaluation)](communication-compliance.md) |
 
@@ -163,7 +163,7 @@ Lors de la configuration du chiffrement pour une étiquette de sensibilité, vou
 
 [En savoir plus](encryption-sensitivity-labels.md#let-users-assign-permissions)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="update-to-data-investigations"></a>Mise à jour des enquêtes de données
 

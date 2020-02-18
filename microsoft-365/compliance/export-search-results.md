@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
-ms.openlocfilehash: b1bd09777bd934cccf7f1247ed72201bcc4a081f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588194"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074029"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -267,11 +267,11 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
     
     Pour exporter des éléments partiellement indexés de tous les emplacements de contenu pour une recherche, configurez la recherche de sorte qu’elle renvoie tous les éléments (en supprimant les mots clés de la requête de recherche), puis exportez uniquement les éléments partiellement indexés lorsque vous exportez les résultats de la recherche.
     
-    ![Utiliser la troisième option d’exportation pour exporter uniquement les éléments non indexés](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Utiliser la troisième option d’exportation pour exporter uniquement les éléments non indexés](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - Lors de l’exportation des résultats de recherche à partir de sites SharePoint ou OneDrive entreprise, la possibilité d’exporter des éléments non indexés dépend également de l’option d’exportation que vous sélectionnez et selon que le site recherché contient un élément indexé correspondant aux critères de recherche. Par exemple, si vous recherchez des sites SharePoint ou OneDrive entreprise spécifiques et qu’aucun résultat de recherche n’est trouvé, les éléments non indexés de ces sites ne seront pas exportés si vous choisissez la deuxième option d’exportation pour exporter les éléments indexés et non indexés. Si un élément indexé d’un site correspond aux critères de recherche, tous les éléments non indexés de ce site seront exportés lors de l’exportation des éléments indexés et non indexés. L’illustration suivante décrit les options d’exportation selon qu’un site contient un élément indexé correspondant aux critères de recherche.
     
-    ![Choisissez l’option d’exportation en fonction du fait qu’un site contient un élément indexé correspondant aux critères de recherche.](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Choisissez l’option d’exportation en fonction du fait qu’un site contient un élément indexé correspondant aux critères de recherche.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
     a. Seuls les éléments indexés qui correspondent aux critères de recherche sont exportés. Aucun élément indexé partiellement n’est exporté.

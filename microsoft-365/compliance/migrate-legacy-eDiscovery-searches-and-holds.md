@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: f53d9cbf719b0e16749c9ea1dcae2533f8c48e50
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957189"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091381"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migration des recherches et des suspensions de découverte électronique héritées vers le centre de conformité Microsoft 365
 
@@ -58,7 +58,7 @@ Get-MailboxSearch
 
 La sortie de la cmdlet sera semblable à ce qui suit :
 
-![Exemple PowerShell Get-MailboxSearch](media/MigrateLegacyeDiscovery1.png)
+![Exemple PowerShell Get-MailboxSearch](../media/MigrateLegacyeDiscovery1.png)
 
 ## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>Étape 3 : obtenir des informations sur les recherches de découverte électronique inaltérable et les conservations inaltérables que vous souhaitez migrer
 
@@ -74,18 +74,19 @@ $search | FL
 
 La sortie de ces deux commandes est similaire à ce qui suit :
 
-![Exemple de sortie PowerShell de l’utilisation de Get-MailboxSearch pour une recherche individuelle](media/MigrateLegacyeDiscovery2.png)
+![Exemple de sortie PowerShell de l’utilisation de Get-MailboxSearch pour une recherche individuelle](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
 > La durée de la conservation inaltérable dans cet exemple est indéfinie (*ItemHoldPeriod : Unlimited*). C’est généralement le cas pour la découverte électronique et les scénarios d’enquête légale. Si la durée de la conservation est différente de la valeur indéfinie, la raison est probablement le fait que la conservation est utilisée pour conserver le contenu dans un scénario de rétention. Au lieu d’utiliser les applets de commande eDiscovery dans Office 365 Security & Centre de conformité PowerShell pour les scénarios de rétention, nous vous recommandons d’utiliser [New-retentioncompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) et [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) pour conserver le contenu. Le résultat de l’utilisation de ces cmdlets est similaire à celui de **New-CaseHoldPolicy** et **New-CaseHoldRule**, mais vous pouvez spécifier une période de rétention et une action de rétention, telles que la suppression de contenu après l’expiration de la période de rétention. En outre, l’utilisation des cmdlets de rétention n’exige pas que vous associiez les conservations de rétention à un cas eDiscovery.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Étape 4 : créer un cas dans le centre de conformité Microsoft 365
 
-Pour créer une conservation de découverte électronique, vous devez créer un cas de découverte électronique pour associer le blocage à. L’exemple suivant crée un cas de découverte électronique à l’aide d’un nom de votre choix. Nous allons stocker les propriétés du nouveau cas dans une variable pour une utilisation ultérieure. Vous pouvez afficher ces propriétés en exécutant la `$case | FL` commande après avoir créé le cas.
+Pour créer une conservation de découverte électronique, vous devez créer un cas eDiscovery pour associer le blocage à. L’exemple suivant crée un cas de découverte électronique à l’aide d’un nom de votre choix. Nous allons stocker les propriétés du nouveau cas dans une variable pour une utilisation ultérieure. Vous pouvez afficher ces propriétés en exécutant la `$case | FL` commande après avoir créé le cas.
 
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
+![Exemple d’exécution de la commande New-ComplianceCase](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>Étape 5 : créer le blocage eDiscovery
 
@@ -101,6 +102,8 @@ $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLo
 New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
 
+![Exemple d’utilisation des applets de commande NewCaseHoldPolicy et NewCaseHoldRule](../media/MigrateLegacyeDiscovery4.png)
+
 ## <a name="step-6-verify-the-ediscovery-hold"></a>Étape 6 : vérifier la conservation de la découverte électronique
 
 Pour vous assurer qu’il n’y a aucun problème lors de la création de la suspension, il est conseillé de vérifier que l’état de distribution de suspension est réussi. La distribution signifie que la conservation a été appliquée à tous les emplacements de contenu spécifiés dans le paramètre *exchangelocation permet* à l’étape précédente. Pour ce faire, vous pouvez exécuter la cmdlet **Get-CaseHoldPolicy** . Étant donné que les propriétés enregistrées dans la variable *$Policy* que vous avez créée à l’étape précédente ne sont pas automatiquement mises à jour dans la variable, vous devez réexécuter l’applet de commande pour vérifier que la distribution a réussi. La distribution des stratégies de conservation des dossiers peut prendre entre 5 minutes et 24 heures.
@@ -113,7 +116,7 @@ Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 
 La valeur de **Success** pour la propriété *DistributionStatus* indique que la conservation a été correctement placée sur les emplacements de contenu. Si la distribution n’est pas encore terminée, la valeur **en attente** est affichée.
 
-![Exemple PowerShell Get-CaseHoldPolicy](media/MigrateLegacyeDiscovery5.png)
+![Exemple PowerShell Get-CaseHoldPolicy](../media/MigrateLegacyeDiscovery5.png)
 
 ## <a name="step-7-create-the-search"></a>Étape 7 : créer la recherche
 
@@ -123,21 +126,21 @@ La dernière étape consiste à recréer la recherche que vous avez identifiée 
 New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxes -ContentMatchQuery $search.SearchQuery -Case $case.name
 ```
 
-![PowerShell New-ComplianceSearch-exemple](media/MigrateLegacyeDiscovery6.png)
+![PowerShell New-ComplianceSearch-exemple](../media/MigrateLegacyeDiscovery6.png)
 
 ## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Étape 8 : vérifier le cas, la mise en attente et la recherche dans le centre de conformité Microsoft 365
 
 Pour vous assurer que tout est correctement configuré, accédez au centre de conformité Microsoft 365 à l' [https://compliance.microsoft.com](https://compliance.microsoft.com)adresse, puis cliquez sur **eDiscovery > Core**.
 
-![Découverte électronique du centre de conformité Microsoft 365](media/MigrateLegacyeDiscovery7.png)
+![Découverte électronique du centre de conformité Microsoft 365](../media/MigrateLegacyeDiscovery7.png)
 
 Le cas que vous avez créé à l’étape 3 est affiché dans la page de **découverte électronique principale** . Ouvrez le cas, puis notez le blocage que vous avez créé à l’étape 4 de la figure de l’onglet **suspensions** . Vous pouvez cliquer sur le blocage pour afficher les détails, notamment le nombre de boîtes aux lettres auxquelles la conservation est appliquée et l’état de la distribution.
 
-![conservations eDiscovery dans le centre de conformité Microsoft 365](media/MigrateLegacyeDiscovery8.png)
+![conservations eDiscovery dans le centre de conformité Microsoft 365](../media/MigrateLegacyeDiscovery8.png)
 
 La recherche que vous avez créée à l’étape 7 est indiquée dans la boîte de l’onglet **recherches** du cas eDiscovery.
 
-![recherche de cas eDiscovery dans le centre de conformité Microsoft 365](media/MigrateLegacyeDiscovery9.png)
+![recherche de cas eDiscovery dans le centre de conformité Microsoft 365](../media/MigrateLegacyeDiscovery9.png)
 
 Si vous migrez une recherche de découverte électronique inaltérable, mais que vous ne l’associez pas à un cas de découverte électronique, celle-ci est indiquée sur la page recherche de contenu dans le centre de conformité Microsoft 365.
 

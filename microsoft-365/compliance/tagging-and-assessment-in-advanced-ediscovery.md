@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Examinez les étapes pour effectuer une formation à l’évaluation, notamment des fichiers de marquage, et en examinant les résultats de l’évaluation dans Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: b2eecb76416728f7319396f5c97054d0219b66e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 93780d42cd42ced692a81f5cfd739bcd8713c2c2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597421"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081031"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Balisage et évaluation dans Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Cette section décrit la procédure pour le module d’évaluation de la pertine
     
     Dans le cadre de cette procédure, un exemple d’ensemble d’évaluation de 500 fichiers est créé et l’onglet **balise** s’affiche, qui contient le panneau balisage, le contenu du fichier et d’autres options de marquage. 
     
-    ![Onglet Balise de pertinence pour l’évaluation](media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
+    ![Onglet Balise de pertinence pour l’évaluation](../media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
 2. Examinez chaque fichier dans l’exemple, déterminez la pertinence du fichier pour chaque problème de cas, et marquez le fichier à l’aide des boutons pertinence (R), non pertinent (NR) et ignorer dans le volet de **marquage** . 
     
@@ -47,14 +47,14 @@ Cette section décrit la procédure pour le module d’évaluation de la pertine
     
     La marge d’erreur et la richesse de l’évaluation actuelle sont calculées et affichées sous l’onglet de **suivi de pertinence** , avec des détails détaillés par problème, comme illustré ci-dessous. Plus de détails sur cette boîte de dialogue sont décrits dans la section « examen des résultats des évaluations » plus loin. 
     
-    ![Suivi de pertinence - Évaluation](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
+    ![Suivi de pertinence - Évaluation](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
     > Par défaut, nous vous recommandons de passer à l’étape suivante par défaut lorsque l’indicateur de progression de l’évaluation du problème est terminé, indiquant que l’exemple d’évaluation a été révisé et que des fichiers appropriés ont été marqués. > sinon, si vous souhaitez afficher les résultats de l’onglet de **suivi** et contrôler la marge d’erreur et l’étape suivante, cliquez sur **modifier** en regard de l' **étape suivante**, sélectionnez **continuer l’évaluation**, puis cliquez sur **OK**. 
   
 1. Cliquez sur **modifier** à droite de la case à cocher **évaluation** pour afficher et spécifier les paramètres d’évaluation par problème. Une boîte de dialogue de **niveau d’évaluation** s’affiche pour chaque problème, comme illustré dans l’exemple suivant : 
     
-    ![Problème de cas de niveau d’évaluation](media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
+    ![Problème de cas de niveau d’évaluation](../media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
   
     Les paramètres suivants du problème sont calculés et affichés dans la boîte de dialogue **niveau d’évaluation** : 
     
@@ -72,7 +72,7 @@ Cette section décrit la procédure pour le module d’évaluation de la pertine
     
 3. Cliquez sur **avancé** dans la boîte de dialogue **niveau d’évaluation** pour voir les paramètres et détails supplémentaires suivants : 
     
-    ![Vue avancée de problème de cas de niveau d’évaluation](media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
+    ![Vue avancée de problème de cas de niveau d’évaluation](../media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
   
     **Richesse estimée**: richesse estimée en fonction des résultats de l’évaluation actuelle
     
@@ -92,7 +92,7 @@ Cette section décrit la procédure pour le module d’évaluation de la pertine
     
     Lorsqu’il existe plusieurs problèmes, une fois que tous les problèmes ont été vérifiés ou ajustés, un **niveau d’évaluation : Résumé** s’affiche, comme illustré dans l’exemple suivant. 
     
-    ![Résumé de niveau d’évaluation](media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
+    ![Résumé de niveau d’évaluation](../media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
   
     Une fois l’évaluation terminée, passez à l’étape suivante de la formation pertinente.
     
