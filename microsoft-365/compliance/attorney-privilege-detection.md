@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilisez le modèle de détection des privilèges du client avocat pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans un cas avancé de découverte électronique.
-ms.openlocfilehash: b60fe72cf476b9a6cbbd5cae3ed1a1e541d6b313
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fb635e429af2ae4d796e9c847a34d949d8dd6d9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595961"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079252"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configuration de la détection des droits du client dans Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Le modèle produit les trois propriétés suivantes pour chaque document :
 
 Ces propriétés (et leurs valeurs correspondantes) sont ajoutées aux métadonnées de fichier des documents dans un jeu de révision, comme illustré dans la capture d’écran suivante :
 
-![Avocat-propriétés du privilège client affichées dans les métadonnées de fichier](media/AeDAttorneyClientPrivilegeMetadata.png)
+![Avocat-propriétés du privilège client affichées dans les métadonnées de fichier](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
 Ces trois propriétés peuvent également faire l’objet d’une recherche dans un jeu de révision. Pour plus d’informations, reportez-vous à [la rubrique Query the Data in a Review Set](review-set-search.md).
 
@@ -62,7 +62,7 @@ Une personne qui est un administrateur de découverte électronique dans votre o
 
 2. Sur la page d’accueil de la **découverte électronique avancée** , dans la vignette **paramètres** , cliquez sur **configurer les paramètres d’analyse globale**.
 
-   ![Sélectionnez « configurer les fonctionnalités expérimentales »](media/AeDExperimentalFeatures.png)
+   ![Sélectionnez « configurer les fonctionnalités expérimentales »](../media/AeDExperimentalFeatures.png)
 
 3. Dans l’onglet Paramètres de l' **analyse** , sélectionnez **gérer le paramètre de privilège client**.
 
@@ -80,7 +80,7 @@ Pour télécharger une liste d’avocats à utiliser par le modèle de détectio
 
    La page de **privilège avocat-client** s’affiche et le bouton bascule de **détection de privilège client** est activé.
 
-   ![Page de menu déroulant avocat-privilège client](media/AeDUploadAttorneyList.png)
+   ![Page de menu déroulant avocat-privilège client](../media/AeDUploadAttorneyList.png)
 
 3. Sélectionnez **Parcourir** , puis recherchez et sélectionnez le fichier. csv que vous avez créé à l’étape 1.
 
@@ -98,13 +98,13 @@ L’utilisation d’un groupe de balises actives est l’une des principales fa�
  
 2. Sous **balises**, sélectionnez la liste déroulante en regard de **Ajouter un groupe** , puis sélectionnez Ajouter un **groupe de balises actives**.
 
-   ![Sélectionnez « Ajouter un groupe de balises actives »](media/AeDCreateSmartTag.png)
+   ![Sélectionnez « Ajouter un groupe de balises actives »](../media/AeDCreateSmartTag.png)
 
 3. Sur la page **choisir un modèle pour la balise active** , choisissez Sélectionner en regard de l' **option** **avocat-client**.
 
    Un groupe de balises nommé **avocat-le privilège client** s’affiche. Il contient deux balises enfants nommées **positive** et **Negative**, qui correspondent aux résultats possibles produits par le modèle.
 
-   ![Groupe de balises actives de privilège de client pour les avocats](media/AeDAttorneyClientSmartTagGroup.png)
+   ![Groupe de balises actives de privilège de client pour les avocats](../media/AeDAttorneyClientSmartTagGroup.png)
 
 3. Renommez le groupe de balises et les balises en fonction de votre révision. Par exemple, vous pouvez renommer **positif** sur **privilégié** et **négatif** sur **non privilégié**.
 
@@ -126,8 +126,8 @@ Si le modèle détermine qu’un document ne contient pas de contenu légal ou q
 
 Par exemple, les captures d’écran suivantes illustrent deux documents. Le premier contient un contenu légal et un participant se trouve dans la liste des avocats. La seconde ne contient pas et, par conséquent, n’affiche aucune étiquette.
 
-![Document avec les étiquettes d’avocat et de contenu juridique](media/AeDTaggingPanelLegalContentAttorney.png)
+![Document avec les étiquettes d’avocat et de contenu juridique](../media/AeDTaggingPanelLegalContentAttorney.png)
 
-![Document sans étiquette](media/AeDTaggingPanelNegative.png)
+![Document sans étiquette](../media/AeDTaggingPanelNegative.png)
 
 Après avoir examiné un document pour voir s’il contient du contenu privilégié, vous pouvez le marquer avec la balise appropriée.

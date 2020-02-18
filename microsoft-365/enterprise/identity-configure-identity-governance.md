@@ -1,5 +1,7 @@
 ---
 title: 'Étape 7 : Configurer la gouvernance des identités'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre et configurer la gouvernance des identités pour votre client Azure AD.
-ms.openlocfilehash: d9a9a63f46230a07b35052a3b02231f7b5315d9e
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 5b7b1c91735611046133a0247ae028ed090106fd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302921"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067351"
 ---
 # <a name="step-6-configure-identity-governance"></a>Étape 6 : Configurer la gouvernance des identités
 
-![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2 - Identité](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 La gouvernance des identités s’intéresse à la protection, la surveillance et l’audit de l’accès aux ressources critiques, tout en assurant la productivité des employés. Par exemple, avec la gouvernance des identités, vous pouvez vous assurer que les utilisateurs appropriés disposent de l’accès approprié aux ressources adéquates et déterminer si cet accès change au fil du temps.
 

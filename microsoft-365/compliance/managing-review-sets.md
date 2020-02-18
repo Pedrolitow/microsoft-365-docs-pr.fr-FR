@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95c45034204e04a0b7fe6e0be5a9b3315c821b6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 06dc88e395ea31d40a4163565d7894a2720cb469
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582733"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081781"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gérer les ensembles de révision dans Advanced eDiscovery
 
@@ -41,15 +41,15 @@ Les ensembles de validation sont un ensemble statique de documents où vous pouv
 
 Vous pouvez créer des ensembles de réviseurs sous l’onglet **réviser les ensembles** en cliquant sur **+ Ajouter un jeu de révision**.
 
-![Ajouter un jeu de révision](media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![Ajouter un jeu de révision](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
 Sur la page **Ajouter un jeu** de réexamen, entrez un nom pour l’ensemble de vérification, puis cliquez sur **Enregistrer**. Le nouvel ensemble de révision est affiché dans la liste sous l’onglet **réviser les ensembles** .
 
-![Nouvel ensemble de réexamens figurant dans l’onglet Review Set](media/AeDnewreviewset.png)
+![Nouvel ensemble de réexamens figurant dans l’onglet Review Set](../media/AeDnewreviewset.png)
 
 Il existe trois manières différentes d’ajouter des données à un jeu de réexamen dans un cas avancé de découverte électronique.
 
-![Trois méthodes d’ajout à des ensembles de réviseurs](media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![Trois méthodes d’ajout à des ensembles de réviseurs](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [Ajouter des résultats de recherche à un jeu à réviser](add-data-to-review-set.md)
 

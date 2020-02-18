@@ -1,5 +1,7 @@
 ---
 title: Protection contre l’usurpation d’identité dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Cet article explique comment Office 365 prévient les attaques par hameçonnage utilisant des domaines d’expéditeur falsifiés, ou usurpés. Pour ce faire, Microsoft analyse les messages et bloque ceux qui ne peuvent être authentifiés ni à l’aide de méthodes d’authentification standard du courrier, ni à l’aide d’autres techniques basées sur la réputation des expéditeurs. Cette modification a été apportée afin de réduire le nombre d’attaques par hameçonnage auxquelles sont exposées les organisations utilisant Office 365.
-ms.openlocfilehash: cb978dd39e9645b8179490d498713137ab79af46
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233895"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087073"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection contre l’usurpation d’identité dans Office 365
 
@@ -41,13 +43,13 @@ Les messages usurpant une identité ont deux conséquences négatives pour les u
 
 Premièrement, un message usurpant une identité peut leurrer un utilisateur en l’incitant à cliquer sur un lien l’amenant à révéler ses identifiants, à télécharger un programme malveillant ou à répondre en révélant du contenu sensible (compromission de courrier professionnel). Par exemple, voici un message de hameçonnage dont l’expéditeur a usurpé l’adresse msoutlook94@service.outlook.com :
 
-![Message de hameçonnage usurpant le domaine service.outlook.com](../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+![Message de hameçonnage usurpant le domaine service.outlook.com](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
 Le courrier qui précède ne provient pas de service.outlook.com, mais le hameçonneur à l’origine de l’usurpation a fait en sorte qu’il semble provenir de ce domaine. Il tente de duper le destinataire en l’incitant à cliquer sur le lien contenu dans le message.
 
 L’exemple suivant usurpe le domaine contoso.com :
 
-![Message de hameçonnage – compromission de courrier professionnel](../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+![Message de hameçonnage – compromission de courrier professionnel](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
 Le message semble légitime, mais est en réalité une usurpation. Ce message de hameçonnage est du type compromission de courrier professionnel qui est une sous-catégorie du hameçonnage.
 
@@ -55,7 +57,7 @@ Le message semble légitime, mais est en réalité une usurpation. Ce message de
 
 Deuxièmement, les messages usurpant des identités créent une incertitude dans le chef des utilisateurs informés de l’existence de messages de hameçonnage mais incapables de faire la différence entre un message authentique et un message falsifié. Par exemple, voici un exemple de demande de réinitialisation de mot de passe authentique provenant de l’adresse e-mail du compte Microsoft Security :
 
-![Réinitialisation de mot de passe légitime de Microsoft](../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+![Réinitialisation de mot de passe légitime de Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
 Si le message ci-dessus provient effectivement de Microsoft, les utilisateurs sont habitués à recevoir des messages de hameçonnage susceptibles de les inciter à cliquer sur un lien les amenant à révéler leurs identifiants, à télécharger un programme malveillant ou à répondre en révélant du contenu sensible. En raison de la difficulté de faire la distinction entre une demande de réinitialisation de mot de passe authentique et une fausse demande, bon nombre d’utilisateurs ignorent ces messages, les marquent comme du courrier indésirable, ou les signalent à Microsoft comme des tentatives de hameçonnage.
 
@@ -63,7 +65,7 @@ Pour mettre fin aux usurpations d’identité, les experts en filtrage du courri
 
 Cependant, le problème est que les enregistrements d’authentification de courrier sont facultatifs et non obligatoires. Dès lors, si les domaines dotés de stratégies d’authentification fortes, tels que microsoft.com et skype.com, sont protégés contre l’usurpation d’identité, des domaines dont les stratégies d’authentification sont plus faibles, voire inexistantes, constituent des cibles idéales pour de telles usurpations. Depuis le mois de mars 2018, seuls 9 % des domaines des entreprises figurant au classement Fortune 500 ont publié des stratégies d’authentification fortes. Ainsi, un hameçonneur peut usurper le domaine des 91 % de domaines restants de sorte que, si le filtre de courrier ne détecte pas l’usurpation à l’aide d’une autre stratégie, le courrier peut être délivré à un utilisateur final et le tromper :
 
-![Stratégies DMARC des entreprises du Fortune 500](../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![Stratégies DMARC des entreprises du Fortune 500](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 La proportion de petites et moyennes entreprises non reprises au classement Fortune 500 et qui publient des stratégies d’authentification de courrier fortes est plus faible, et plus faible encore pour les domaines situés en dehors de l’Amérique du Nord et de l’Europe occidentale.
 
@@ -149,7 +151,7 @@ Cela se produit lorsque le domaine d’envoi figurant dans l’adresse De : est
 
 Dans les deux cas, le conseil de sécurité rouge suivant est estampillé dans le message, ou un conseil équivalent personnalisé en fonction de la langue de la boîte aux lettres du destinataire :
 
-![Conseil de sécurité rouge – détection de fraude](../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+![Conseil de sécurité rouge – détection de fraude](../../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
 
 Il n’est possible de faire la différence entre une usurpation intra-organisationnelle et une usurpation inter-domaines qu’en regardant l’adresse De : et en connaissant l’adresse e-mail du destinataire, ou en inspectant les en-têtes de l’e-mail.
 
@@ -221,7 +223,7 @@ To: receiver @ contoso.com
 
 Dans le client de courrier (Outlook, Outlook sur le web ou tout autre client), seul le domaine De : est affiché, pas le domaine dans SPF ou DKIM, ce qui peut induire l’utilisateur en erreur en lui faisant croire que le message provient de fabrikam.com, alors qu’il provient en réalité de DomaineMalveillant.com.
 
-![Message authentifié mais le domaine De : ne correspond pas à ce qu’ont transmis SPF ou DKIM](../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
+![Message authentifié mais le domaine De : ne correspond pas à ce qu’ont transmis SPF ou DKIM](../../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
 
 Pour cette raison, Office 365 requiert que le domaine dans l’adresse De : corresponde à celui figurant dans la signature SPF ou DKIM et, dans le cas contraire, que le message contienne d’autres signaux internes indiquant qu’il est légitime. Autrement, le message constitue un échec compauth.
 
@@ -259,17 +261,17 @@ Un message peut usurper une identité de différentes façons (voir [Différenci
 
 Pour créer ou mettre à jour vos paramètres de détection d’usurpation d’identité (inter-domaines), dans le Centre de sécurité et de conformité, sous l’onglet Gestion des menaces \> Stratégie, accédez aux paramètres Anti-hameçonnage \> Détection d’usurpation d’identité. Si vous n’avez jamais créé de paramètres anti-hameçonnage, vous devez en créer un :
 
-![Anti-hameçonnage – Créer une stratégie](../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![Anti-hameçonnage – Créer une stratégie](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
 Si vous avez déjà créé une stratégie, vous pouvez la sélectionner pour la modifier :
 
-![Anti-hameçonnage – Modifier une stratégie existante](../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![Anti-hameçonnage – Modifier une stratégie existante](../../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
 
 Sélectionnez la stratégie que vous venez de créer, puis suivez les étapes décrites dans la section [En savoir plus sur l’usurpation d’identité](learn-about-spoof-intelligence.md).
 
-![Activer ou désactiver la détection d’usurpation d’identité](../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![Activer ou désactiver la détection d’usurpation d’identité](../../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
 
-![Activer ou désactiver les conseils de sécurité de la détection d’usurpation d’identité](../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
+![Activer ou désactiver les conseils de sécurité de la détection d’usurpation d’identité](../../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
 
 Pour créer une nouvelle stratégie à l’aide de PowerShell :
 
@@ -295,11 +297,11 @@ Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 
 Depuis 2018, au lieu que vous ayez à créer une stratégie par défaut, une stratégie est créée pour vous et étendue à tous les destinataires au sein de votre organisation. Vous n’avez donc pas besoin de la spécifier manuellement (les captures d’écran peuvent différer légèrement de l’implémentation finale).
 
-![Stratégie de anti-hameçonnage par défaut](../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![Stratégie de anti-hameçonnage par défaut](../../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
 
 À la différence d’une stratégie que vous créez, vous ne pouvez pas supprimer la stratégie par défaut, modifier sa priorité ou choisir les utilisateurs, domaines ou groupes auxquels l’étendre.
 
-![Détails de la stratégie de anti-hameçonnage par défaut](../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![Détails de la stratégie de anti-hameçonnage par défaut](../../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
 
 Pour configurer votre protection par défaut à l’aide de PowerShell :
 
@@ -338,7 +340,7 @@ Pour des domaines externes, l’utilisateur usurpé est le domaine dans l’adre
 
 Pour autoriser cet expéditeur à envoyer un courrier non authentifié, remplacez **Non** par **Oui**.
 
-![Définition des expéditeurs autorisés par la paramètre](../media/d4334921-d820-4334-8217-788279701e94.jpg)
+![Définition des expéditeurs autorisés par la paramètre](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 Vous pouvez également utiliser PowerShell pour autoriser un expéditeur spécifique à usurper l’identité de votre domaine :
 
@@ -347,13 +349,13 @@ $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![Obtention d’expéditeurs usurpés de Powershell](../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![Obtention d’expéditeurs usurpés de Powershell](../../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
 
 Dans l’image précédente, des sauts de ligne supplémentaires ont été ajoutés pour faciliter la lisibilité de cette capture d’écran. Normalement, toutes les valeurs apparaissent sur une seule ligne.
 
 Editez le fichier et recherchez la ligne correspondant à outlook.com et bing.com, puis modifiez l’entrée AllowedToSpoof de Non à Oui :
 
-![Définition de l’autorisation d’usurpation sur Oui dans Powershell](../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![Définition de l’autorisation d’usurpation sur Oui dans Powershell](../../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
 
 Enregistrez le fichier, puis exécutez la cmdlet suivante :
 
@@ -380,7 +382,7 @@ S’il peut être difficile au début d’obtenir des domaines d’envoi qu’il
 
 Une fois votre stratégie de détection d’usurpation d’identité activée, vous pouvez utiliser l’enquête relative aux menaces pour obtenir des chiffres indiquant le nombre de messages marqués comme tentatives de hameçonnage. Pour ce faire, sous l’Explorateur&amp;du Centre de Sécurité et de Conformité (CSC) relatif à la Gestion des Menaces\>, définissez l’Affichage sur Hameçonnage, puis groupez par Domaine de l’expéditeur ou État de la protection :
 
-![Affichage du nombre de messages marqués comme hameçonnage](../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+![Affichage du nombre de messages marqués comme hameçonnage](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
 Vous pouvez interagir avec les différents rapports pour voir combien de messages ont été marqués comme hameçonnage, y compris les messages marqués comme SPOOF. Pour en savoir plus, voir [Prise en main d’Office 365 Enquête relative aux Menaces et réponse](office-365-ti.md).
 
@@ -388,7 +390,7 @@ Vous ne pouvez pas encore discriminer des messages marqués en raison d’une us
 
 La capture d’écran suivante pourrait différer de la version publiée :
 
-![Affichage des rapports de hameçonnage par type de détection](../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+![Affichage des rapports de hameçonnage par type de détection](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
 Pour les clients autres qu’Advanced Threat Protection et E5, ces rapports seront disponibles ultérieurement sous les rapports d’État de la protection contre les menaces, mais seront retardés d’au moins 24 heures. Cette page sera mise à jour au fur et à mesure de leur intégration dans le Centre de sécurité et de conformité.
 
@@ -398,9 +400,9 @@ Quand Office 365 aura mis à jour ses paramètres pour vous permettre de désac
 
 Cette fonctionnalité est en cours de développement. À mesure que davantage de détails seront définis, cette page sera mise à jour avec des captures d’écran du Centre de sécurité et conformité ainsi qu’avec des exemples PowerShell.
 
-![Rapport « What If » pour activer la détection d’usurpation d’identité](../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![Rapport « What If » pour activer la détection d’usurpation d’identité](../../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
 
-![Expérience utilisateur possible pour autoriser un expéditeur usurpé](../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+![Expérience utilisateur possible pour autoriser un expéditeur usurpé](../../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
 
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Scénarios légitimes pour désactiver la détection d’usurpation d’identité
 
@@ -410,23 +412,23 @@ C’est pourquoi, il est préférable de s’accommoder de faux positifs de dét
 
 Cependant, il existe un scénario légitime dans lequel la détection d’usurpation d’identité devrait être désactivée, à savoir quand il existe des produits de filtrage du courrier supplémentaires dans le routage des messages et qu’Office 365 n’est pas en première ligne dans le chemin d’accès au courrier :
 
-![L’enregistrement MX du client ne pointe pas vers Office 365](../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
+![L’enregistrement MX du client ne pointe pas vers Office 365](../../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
 
 L’autre serveur peut être un serveur de courrier Exchange local, un périphérique de filtrage du courrier tel qu’Ironport ou un autre service hébergé dans le cloud.
 
 Si l’enregistrement MX du domaine de destinataire ne pointe pas vers Office 365, il n’est pas nécessaire de désactiver la détection d’usurpation d’identité car Office 365 recherche l’enregistrement MX de votre domaine de destination et supprime la détection d’usurpation d’identité s’il pointe vers un autre service. Si vous ignorez si votre domaine dispose d’un autre serveur frontal, vous pouvez utiliser un site web tel que MX Toolbox pour rechercher l’enregistrement MX. Le résultat pourrait ressembler à ceci :
 
-![L’enregistrement MX indique que le domaine ne pointe pas vers Office 365](../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+![L’enregistrement MX indique que le domaine ne pointe pas vers Office 365](../../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
 
 Ce domaine possédant un enregistrement MX qui ne pointe pas vers Office 365, Office 365 n’appliquerait pas la détection d’usurpation d’identité.
 
 Toutefois, si l’enregistrement MX du domaine destinataire *pointe* vers Office 365, même s’il existe un autre service devant Office 365, vous devez désactiver la détection d’usurpation d’identité. L’exemple le plus courant est l’utilisation d’une réécriture de destinataire :
 
-![Diagramme de routage pour la réécriture de destinataire](../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+![Diagramme de routage pour la réécriture de destinataire](../../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
 
 L’enregistrement MX du domaine contoso.com pointe vers le serveur local, tandis que l’enregistrement MX du domaine @office365.contoso.net pointe vers Office 365 parce qu’il contient \*.protection.outlook.com ou \*.eo. outlook.com dans l’enregistrement MX :
 
-![L’enregistrement MX pointe vers Office 365, donc probablement réécriture de destinataire](../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+![L’enregistrement MX pointe vers Office 365, donc probablement réécriture de destinataire](../../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
 
 Veillez à bien distinguer quand un enregistrement MX de domaine de destinataire ne pointe pas vers Office 365 et quand il a subi une réécriture de destinataire. Il est important de faire la différence entre ces deux cas.
 
@@ -452,11 +454,11 @@ Si l’enregistrement MX ne contient aucune de ces valeurs, cela signifie qu’i
 
 Pour cet exemple particulier, ce qui suit indique que contoso.com, le domaine qui ressemble au destinataire puisqu’il s’agit de l’en-tête À:, a un enregistrement MX pointant vers un serveur local :
 
-![L’enregistrement MX pointe vers un serveur local](../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
+![L’enregistrement MX pointe vers un serveur local](../../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
 
 Cependant, le destinataire réel est office365.contoso.net dont l’enregistrement MX ne pointe pas vers Office 365 :
 
-![L’enregistrement MX pointe vers Office 365, doit être une réécriture de destinataire](../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+![L’enregistrement MX pointe vers Office 365, doit être une réécriture de destinataire](../../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
 
 Par conséquent, ce message a probablement subi une réécriture de destinataire.
 

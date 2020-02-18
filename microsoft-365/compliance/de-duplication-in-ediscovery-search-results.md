@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Vous avez la possibilité de dédupliquer les résultats de recherche de découverte électronique exportés de sorte qu’une seule copie d’un message électronique soit exportée même si plusieurs instances du même message ont pu être trouvées dans des boîtes aux lettres différentes.
-ms.openlocfilehash: bfd810d358a85c0cdfacab50fb512a8d2a9c8828
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: f3a0291c2c611814e35528e87f5a3897c4e8ba59
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892037"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076268"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Déduplication dans les résultats de recherche eDiscovery
 
@@ -45,11 +45,11 @@ Les graphiques suivants montrent comment les messages dupliqués sont affichés 
   
  ### <a name="resultscsv-report-viewed-in-excel"></a>Rapport results. csv (affiché dans Excel)
   
-![Affichage des informations sur les éléments en double dans le rapport results. csv](media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Affichage des informations sur les éléments en double dans le rapport results. csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
  ### <a name="manifestxml-report-viewed-in-excel"></a>Rapport manifest. XML (affiché dans Excel)
   
-![Affichage des informations sur les éléments en double dans le rapport manifest. Xml](media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Affichage des informations sur les éléments en double dans le rapport manifest. Xml](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 En outre, les autres propriétés des messages en double sont incluses dans les rapports d’exportation. Cela inclut la boîte aux lettres dans laquelle se trouve le doublon du message, si le message a été envoyé à un groupe de distribution et si le message a été envoyé à un autre utilisateur (CC) ou CCI.
   

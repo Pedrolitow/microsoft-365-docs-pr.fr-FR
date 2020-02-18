@@ -1,5 +1,7 @@
 ---
 title: 'Étape 4 : Ajouter vos comptes d’utilisateurs'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous pouvez ajouter des comptes d’utilisateurs et des groupes directement dans le Cloud ou par synchronisation avec votre répertoire local.
-ms.openlocfilehash: 04564d86031642276e964f3a70fa2729f6b16c00
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 324d4662f868a4a92693b43c6bc0f75c11f20519
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801839"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067368"
 ---
 # <a name="step-4-add-your-user-accounts"></a>Étape 4 : Ajouter vos comptes d’utilisateurs
 
-![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2 - Identité](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## <a name="create-your-user-accounts-for-cloud-only-identity"></a>Créer vos comptes d’utilisateur pour l’identité Cloud uniquement
@@ -42,7 +44,7 @@ Dans cette section, vous allez synchroniser votre instance locale de Services de
 
 Azure AD Connect est l’outil Microsoft pris en charge qui vous guide tout au long de la synchronisation des identités dont vous avez réellement besoin, des environnements AD DS à une ou plusieurs forêts à votre locataire Azure AD. La figure suivante illustre le processus de base de la synchronisation Azure AD Connect.
 
-![Comment Azure AD Connect synchronise votre annuaire local avec Azure AD](./media/identity-add-user-accounts/azure-ad-connect.png)
+![Comment Azure AD Connect synchronise votre annuaire local avec Azure AD](../media/identity-add-user-accounts/azure-ad-connect.png)
 
 1. Azure AD Connect exécuté sur un serveur interroge AD DS pour identifier les modifications apportées aux comptes, aux groupes et aux contacts.
 2. Azure AD Connect envoie ces modifications au locataire Azure AD de votre abonnement Microsoft 365.
@@ -74,7 +76,7 @@ Une fois vos groupes et utilisateurs locaux présents dans Azure AD, vous pouvez
 
 |||
 |:-------|:-----|
-|![Guides de Laboratoire de Test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : Synchronisation de hachage de mot de passe](password-hash-sync-m365-ent-test-environment.md)<br> [Guide de laboratoire de test : Authentification directe](pass-through-auth-m365-ent-test-environment.md) |
+|![Guides de Laboratoire de Test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide de laboratoire de test : Synchronisation de hachage de mot de passe](password-hash-sync-m365-ent-test-environment.md)<br> [Guide de laboratoire de test : Authentification directe](pass-through-auth-m365-ent-test-environment.md) |
 |||
 
 Comme point de contrôle intermédiaire, consultez les [critères de sortie](identity-exit-criteria.md#crit-identity-sync) correspondant à cette section.
@@ -86,7 +88,7 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](ide
 
 Dans cette section, vous allez installer un agent d’intégrité Azure AD Connect sur chacun de vos contrôleurs de domaine AD DS pour surveiller votre infrastructure d’identité et les services de synchronisation fournis par Azure AD Connect. Les informations de surveillance sont disponibles sur un portail Azure AD Connect Health, où vous pouvez afficher les alertes, surveiller les performances, analyser les utilisations, etc.
 
-![Composants d’Azure AD Connect Health](./media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
+![Composants d’Azure AD Connect Health](../media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
 
 La décision de conception clé concernant l’utilisation d’Azure AD Connect Health est basée sur la manière dont vous utilisez Azure AD Connect :
 
@@ -119,11 +121,11 @@ Pour obtenir plus d’informations et les instructions de configuration, consult
 
 |||
 |:-------|:-----|
-|![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide du laboratoire de test : Écriture différée de mot de passe](password-writeback-m365-ent-test-environment.md) |
+|![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guide du laboratoire de test : Écriture différée de mot de passe](password-writeback-m365-ent-test-environment.md) |
 |||
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](identity-exit-criteria.md#crit-identity-pw-writeback) pour cette étape.
 
 |||
 |:-------|:-----|
-|![Étape 5](./media/stepnumbers/Step5.png)| [Utiliser des groupes pour la gestion](identity-use-group-management.md) |
+|![Étape 5](../media/stepnumbers/Step5.png)| [Utiliser des groupes pour la gestion](identity-use-group-management.md) |

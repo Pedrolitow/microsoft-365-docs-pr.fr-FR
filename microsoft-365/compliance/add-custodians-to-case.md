@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3acd3b300c4472b32a261d28aeae6a9d94e17423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594057"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080219"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires à un cas avancé eDiscovery
 
@@ -29,7 +29,7 @@ Utilisez l’outil de gestion des dépositaires intégré dans Advanced eDiscove
 
 Utilisez le flux de travail suivant pour ajouter et gérer des dépositaires dans des cas avancés de découverte électronique. 
 
-![Onglet gestion des dépositaires](media/CustodianMgtPage.png)
+![Onglet gestion des dépositaires](../media/CustodianMgtPage.png)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -46,7 +46,7 @@ La première étape consiste à identifier et à ajouter des dépositaires à la
 
 3. Recherchez les dépositaires à ajouter au cas. Tapez la première partie du nom d’une personne pour afficher les utilisateurs de l’Azure Active Directory de votre organisation. Lorsque vous trouvez la personne appropriée, cliquez sur son nom pour l’ajouter à la liste.
 
-   ![Identifier les dépositaires potentiels](media/AddCustodianStep1.png)
+   ![Identifier les dépositaires potentiels](../media/AddCustodianStep1.png)
  
 4. Après avoir ajouté tous les dépositaires pertinents, cliquez sur **suivant** pour sélectionner les sources de données principales des dépositaires.
   
@@ -58,7 +58,7 @@ Pour identifier les sources de données des dépositaires :
 
 1. Pour sélectionner la boîte aux lettres Exchange pour tous les dépositaires, activez la case à cocher **Exchange** située en haut de la colonne. Vous pouvez alors désactiver la case à cocher de tout dépositaire spécifique pour supprimer une boîte aux lettres en tant qu’emplacement privative. Vous pouvez également laisser la case à cocher **Exchange** en haut de la colonne désélectionnée, puis activer la case à cocher pour les dépositaires individuels. 
  
-   ![Sélectionner des sources de données privatives de Troie](media/AddCustodianStep2.png)
+   ![Sélectionner des sources de données privatives de Troie](../media/AddCustodianStep2.png)
  
 2. Répétez la même opération pour les comptes OneDrive des dépositaires. 
 
@@ -74,7 +74,7 @@ Pour mapper des boîtes aux lettres, des sites ou des équipes à un dépositair
 
 1. Sur la page **Sélectionner des sources de données supplémentaires** , cliquez sur **Ajouter** dans la ligne du dépositaire spécifique. 
   
-   ![Mapper des sources de données supplémentaires](media/AddCustodianStep3.PNG)
+   ![Mapper des sources de données supplémentaires](../media/AddCustodianStep3.PNG)
 
 2. Sur la page de menu volant, vous pouvez spécifier une source de données à partir de l’un des services Office 365 suivants :
   
@@ -87,7 +87,7 @@ Pour mapper des boîtes aux lettres, des sites ou des équipes à un dépositair
      
      - **Teams** : cliquez sur **choisir teams** , puis cliquez sur **choisir les équipes** pour afficher la liste de Microsoft teams dont le dépositaire est actuellement membre. Sélectionnez les équipes que vous souhaitez ajouter à votre dépositaire. Une fois sélectionné, le système identifie automatiquement & sélectionnez le site SharePoint et la boîte aux lettres de groupe associés associés à cette équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
 
-       ![Mapper des sources de données](media/AddCustodianStep4.PNG)
+       ![Mapper des sources de données](../media/AddCustodianStep4.PNG)
         
       > [!NOTE]
       > Pour associer une équipe supplémentaire à un dépositaire, vous devez ajouter séparément la boîte aux lettres et le site associés à l’équipe à l’aide des emplacements de **messagerie Exchange** et de **sites SharePoint** .
@@ -102,7 +102,7 @@ Pour placer les dépositaires et les sources de données en conservation :
 
 1. Sur la page **bloquer les dépositaires sélectionnés** , activez la case à cocher **conservation** en haut de la colonne pour placer tous les dépositaires en attente. Vous pouvez alors désactiver la case à cocher de tout dépositaire spécifique à retirer de la suspension. Vous pouvez également laisser la case à cocher **suspendre** en haut de la colonne désélectionnée, puis activer la case à cocher pour les dépositaires individuels. 
  
-   ![Placer des suspensions](media/AddCustodianStep5.PNG)
+   ![Placer des suspensions](../media/AddCustodianStep5.PNG)
 
 2. Vérifiez que le dépositaire contient des sélections, puis cliquez sur **Terminer**.
 

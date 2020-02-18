@@ -1,5 +1,7 @@
 ---
 title: Prise en main - Déploiement Bureau
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Présentation du processus de déploiement du Bureau.
-ms.openlocfilehash: a9ad328f6a2548a24a981ee3b49665c3091277c9
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112528"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067483"
 ---
 # <a name="getting-started---desktop-deployment"></a>Prise en main - Déploiement Bureau
 
-![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
+![](../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>Prise en main : aide relative aux technologies, aux processus et aux utilisateurs</strong></p>
 <p>Découvrez les avantages de Windows 10 et Office 365 ProPlus, les modifications majeures et les aspects à prendre en compte par rapport aux déploiements précédents, ainsi que les bonnes pratiques à adopter pour assurer une transition fluide vers Windows 10 et Office 365 ProPlus.</p></td>
-<td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -111,7 +113,7 @@ Comme dans les mises à jour précédentes, l’outil de Migration état utilisa
 
 **[Étape 7 : Windows et Office en tant que Service](https://aka.ms/mdd7) ** cette valeur représente un changement majeur dans la façon de maintenir à jour le bureau des utilisateurs. Avec ce déplacement à Windows 10 et Office 365 ProPlus, vous pouvez passer à la gestion de Windows et Office en tant que service. À la place d’un changement massif de technologies tous les ans, vous aurez continuellement de nouvelles fonctionnalités et expériences, et des protections fiables pour vos utilisateurs. Les mises à jour semestrielles des fonctionnalités offrent de nouvelles fonctionnalités chaque automne et printemps, tandis que les mises à jour mensuelles de qualité cumulées contiendront sécurité, fiabilité et correctifs. Même si vous pouvez choisir de déployer le client Office 2019, nous vous recommandons vivement de passer à Office 365 ProPlus. Cela suit un plan de service similaire à Windows afin que vos utilisateurs reçoivent les mises à jour aux applications Office régulièrement.
 
-![](media/getting-started-media/getting-started-media-2.png)
+![](../media/getting-started-media/getting-started-media-2.png)
 
 [Vue d’ensemble de Windows en tant que service](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [vue d’ensemble d’Office en tant que service](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)

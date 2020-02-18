@@ -1,5 +1,7 @@
 ---
 title: 'Étape 1 : Définir les niveaux de protection des informations et de sécurité'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez les niveaux de protection des informations et de sécurité pour votre organisation.
-ms.openlocfilehash: 7f1f8a2099da8d99b1b7267e245a80d2143bb0ca
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: d3ba5f490b7aa80c9149a0451059914c78b8f2f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370391"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067211"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Étape 1 : Définir les niveaux de protection des informations et de sécurité
 
 *Cette étape est requise et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 6 : Protection des informations](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6 : Protection des informations](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Lors de cette étape, vous allez définir les niveaux de sécurité et de protection de votre organisation. Par exemple, un niveau de sécurité relativement faible peut suffire à votre service commercial. En revanche, votre service de recherche et sa précieuse propriété intellectuelle nécessitent probablement un niveau de sécurité élevé avec chiffrage des fichiers et limitation d’accès au seul personnel de recherche.
 
@@ -42,4 +44,4 @@ Comme point de contrôle intermédiaire, consultez les [critères de sortie](inf
 
 |||
 |:-------|:-----|
-|![Étape 2](./media/stepnumbers/Step2.png)|[Configurer la classification pour votre environnement](infoprotect-configure-classification.md)|
+|![Étape 2](../media/stepnumbers/Step2.png)|[Configurer la classification pour votre environnement](infoprotect-configure-classification.md)|

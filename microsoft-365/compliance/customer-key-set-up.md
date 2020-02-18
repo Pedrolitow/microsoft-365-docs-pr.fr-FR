@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour Office 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et les fichiers Teams.
-ms.openlocfilehash: a57fb5ee7eea1746a50ec0fb1e2c3e84495b4f2c
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: a360c2c7a6876669ce5d2ae6b52a730a3c7f45a5
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804787"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091287"
 ---
 # <a name="set-up-customer-key-for-office-365"></a>Configurer la clé client pour Office 365
 
@@ -124,7 +124,7 @@ Pour soumettre une offre d’activation de la clé client, procédez comme suit�
 
 La perte temporaire ou définitive de clés de chiffrement racine peut être très perturbatrice ou même catastrophique pour les opérations de service et peut entraîner une perte de données. Pour cette raison, les ressources utilisées avec la clé client nécessitent une protection renforcée. Toutes les ressources Azure utilisées avec les mécanismes de protection de l’offre de clé client au-delà de la configuration par défaut. Les abonnements Azure peuvent être balisés ou enregistrés de manière à empêcher toute annulation immédiate et irrévocable. Il s’agit de l’enregistrement pour une période de rétention obligatoire. Les étapes requises pour enregistrer les abonnements Azure pour une période de rétention obligatoire nécessitent une collaboration avec l’équipe Office 365. Ce processus peut prendre entre un et cinq jours ouvrés. Auparavant, il était parfois appelé « ne pas annuler ».
   
-Avant de contacter l’équipe Office 365, vous devez effectuer les étapes suivantes pour chaque abonnement Azure que vous utilisez avec la clé client. Vérifiez que le module Azure PowerShell AZ est installé avant de poursuivre (https://docs.microsoft.com/powershell/azure/new-azureps-module-az.
+Avant de contacter l’équipe Office 365, vous devez effectuer les étapes suivantes pour chaque abonnement Azure que vous utilisez avec la clé client. Assurez-vous que le module [Azure PowerShell AZ](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) est installé avant de commencer.
   
 1. Connectez-vous avec Azure PowerShell. Pour obtenir des instructions, consultez la rubrique [se connecter avec Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
@@ -132,7 +132,7 @@ Avant de contacter l’équipe Office 365, vous devez effectuer les étapes suiv
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
+   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.KeyVault
    ```
 
 3. Contactez Microsoft pour finaliser le processus. Pour l’équipe SharePoint et OneDrive entreprise, contactez [Spock@microsoft.com](mailto:spock@microsoft.com). Pour Exchange Online et Skype entreprise, contactez [exock@microsoft.com](mailto:exock@microsoft.com). Incluez les éléments suivants dans votre courrier :
@@ -144,18 +144,18 @@ Avant de contacter l’équipe Office 365, vous devez effectuer les étapes suiv
 
    Le contrat de niveau de service (SLA) pour la fin de ce processus est de cinq jours ouvrés une fois que Microsoft a été informé (et vérifié) que vous avez enregistré vos abonnements afin d’utiliser une période de rétention obligatoire.
 
-4. Une fois que vous recevez une notification de Microsoft que l’enregistrement est terminé, vérifiez l’état de votre inscription en exécutant la cmdlet Get-AzProviderFeature comme suit. Effectuez cette action pour chaque abonnement.
+4. Une fois que vous recevez une notification de Microsoft que l’enregistrement est terminé, vérifiez l’état de votre inscription en exécutant la commande Get-AzProviderFeature comme suit. Si elle est vérifiée, la commande Get-AzProviderFeature renvoie la valeur **inscrite** pour la propriété de l’état de l' **inscription** . Effectuez cette action pour chaque abonnement.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
    ```
 
-5. Après avoir vérifié que la propriété **d’État** de l’inscription de la cmdlet Get-AzProviderFeature renvoie la valeur **Registered**, exécutez la commande suivante pour terminer le processus. Effectuez cette action pour chaque abonnement.
+5. Pour terminer le processus, exécutez la commande Register-AzResourceProvider. Effectuez cette action pour chaque abonnement.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Register-AzResourceProvider -ProviderNamespace "Microsoft.KeyVault"
+   Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Créer un coffre-fort de clés Azure pour chaque abonnement

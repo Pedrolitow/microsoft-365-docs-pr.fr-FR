@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment le score de conformité Microsoft calcule un score personnalisé en fonction des actions entreprises pour traiter les risques et améliorer la position de votre conformité.
-ms.openlocfilehash: 1ee9410e3b40a8180d768945a643d3e52c29046b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca8615f8c15264104faa71d155d2656cd788bd53
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596241"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078631"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Calcul du score de conformité Microsoft (aperçu)
 
@@ -82,8 +82,8 @@ Chaque contrôle a une valeur affectée dans le score de conformité en fonction
 |:-----|:-----|
 | Préventif obligatoire | vingt |
 | Discrétionnaire préventif | 9  |
-| Détective obligatoire | 3  |
-| Discrétion de détective | 1  |
-| Correction obligatoire | 3  |
-| Correction discrétionnaire corrective | 1  |
+| Détective obligatoire | 3 |
+| Discrétion de détective | 0,1 |
+| Correction obligatoire | 3 |
+| Correction discrétionnaire corrective | 0,1 |
   

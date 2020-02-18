@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. La création d'une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés au sein de votre organisation. Cette rubrique décrit les concepts sous-jacents à la création d’une empreinte numérique de document et la manière d’en créer une à l’aide de PowerShell.
-ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892027"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074945"
 ---
 # <a name="document-fingerprinting"></a>Création d’une empreinte numérique de document
 
@@ -45,7 +45,7 @@ L’exemple suivant montre ce qui se passe si vous créez une empreinte numériq
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Exemple d’un document de brevet correspondant à l’empreinte numérique de document d’un modèle de brevet
 
-![Document-Fingerprinting-diagram. png](media/Document-Fingerprinting-diagram.png)
+![Document-Fingerprinting-diagram. png](../media/Document-Fingerprinting-diagram.png)
   
 Le modèle brevet contient les champs vides « titre du brevet », « stocks » et « description », ainsi que les descriptions pour chacun de ces champs, c’est-à-dire le modèle Word. Lorsque vous téléchargez le modèle de brevet d’origine, il se trouve dans l’un des types de fichier pris en charge et en texte brut. DLP convertit ce modèle Word en empreinte digitale de document, qui est un petit fichier XML Unicode contenant une valeur de hachage unique représentant le texte d’origine, et l’empreinte digitale est enregistrée en tant que classification des données dans Active Directory. (Par mesure de sécurité, le document d’origine n’est pas stocké sur le service ; seule la valeur de hachage est stockée et le document d’origine ne peut pas être reconstruit à partir de la valeur de hachage.) L’empreinte de brevet devient alors un type d’informations sensibles que vous pouvez associer à une stratégie DLP. Une fois que vous avez associé l’empreinte digitale à une stratégie DLP, DLP détecte tous les messages électroniques sortants contenant des documents qui correspondent à l’empreinte digitale du brevet et les traite en fonction de la stratégie de votre organisation. 
 

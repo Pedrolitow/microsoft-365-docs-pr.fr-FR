@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importer des données non-Office 365 vers un jeu de réexamen dans un cas avancé de découverte électronique.
-ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585683"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072205"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Charger des données autres qu’Office 365 dans un jeu à réviser
 
@@ -52,7 +52,7 @@ L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrit
 
    Où abraham.mcmahon@contoso.com, jewell.gordon@contoso.com et staci.gonzalez@contoso.com sont les adresses SMTP des dépositaires dans le cas.
 
-   ![Structure de dossier de téléchargement de données non Office 365](media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+   ![Structure de dossier de téléchargement de données non Office 365](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - Un compte qui est affecté au groupe de rôles gestionnaire eDiscovery (et ajouté en tant qu’administrateur eDiscovery).
 
@@ -69,17 +69,17 @@ L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrit
 
 4. Cliquez sur **Télécharger les fichiers** pour démarrer l’Assistant importation de données autres que Office 365.
 
-   ![Charger des fichiers](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+   ![Charger des fichiers](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
    La première étape de l’Assistant prépare un emplacement de stockage Azure sécurisé fourni par Microsoft pour télécharger les fichiers.  Une fois la préparation terminée, le bouton **suivant : charger les fichiers** devient actif.
 
-   ![Non-Office 365 Import : prepare](media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![Non-Office 365 Import : prepare](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 5. Cliquez sur **suivant : charger les fichiers**.
 
 6. Sur la page **Télécharger les fichiers** , procédez comme suit :
 
-   ![Importation non Office 365 : Télécharger des fichiers](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![Importation non Office 365 : Télécharger des fichiers](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
    a. Dans la zone **chemin d’accès à l’emplacement des fichiers** , vérifiez ou tapez l’emplacement du dossier racine dans lequel vous avez stocké les données non Office 365 que vous souhaitez télécharger. Par exemple, pour l’emplacement des fichiers d’exemple présentés dans la **section avant de commencer**, vous devez taper **%USERPROFILE\Downloads\nonO365**. La fourniture de l’emplacement correct garantit que la commande AzCopy affichée dans la zone sous le chemin est correctement mise à jour.
 
@@ -87,7 +87,7 @@ L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrit
 
 7. Démarrez une invite de commandes Windows, collez la commande que vous avez copiée à l’étape précédente, puis appuyez sur **entrée** pour démarrer la commande AzCopy.  Une fois que vous avez démarré la commande, les fichiers non-Office 365 sont téléchargés vers l’emplacement de stockage Azure préparé à l’étape 4.
 
-   ![Importation non-Office 365 : AzCopy](media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   ![Importation non-Office 365 : AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > Comme indiqué précédemment, vous devez utiliser AzCopy v 8.1 pour utiliser correctement la commande fournie dans la page **Télécharger les fichiers** . Si la commande AzCopy fournie échoue, reportez-vous à la rubrique [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -96,6 +96,6 @@ L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrit
 
 9. Effectuez le suivi de la progression du traitement des fichiers non-Office 365 sur la page des **fichiers de processus** ou sur l’onglet **travaux** en affichant un travail nommé **ajout de données non Office 365 à un jeu de révision**.  Une fois le travail terminé, les nouveaux fichiers seront disponibles dans l’ensemble de révision.
 
-   ![Importation non Office 365 : fichiers de processus](media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+   ![Importation non Office 365 : fichiers de processus](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
 10. Une fois le traitement terminé, vous pouvez fermer l’Assistant.

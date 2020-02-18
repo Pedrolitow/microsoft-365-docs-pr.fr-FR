@@ -1,5 +1,7 @@
 ---
 title: 'Phase 1 : Infrastructure réseau pour Microsoft 365 Entreprise'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes de déploiement de l’infrastructure réseau pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 9fe7f16aef8b9c82ded2c17ce562dffb2194eaa2
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 9a805ffbdbdc19ef5943a0c0ba0ff8f010d3e19b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033669"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066576"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>Phase 1 : Infrastructure réseau pour Microsoft 365 Entreprise
 
-![Phase 1 : Mise en réseau](./media/deploy-foundation-infrastructure/networking_icon.png)
+![Phase 1 : Mise en réseau](../media/deploy-foundation-infrastructure/networking_icon.png)
 
 Microsoft 365 Entreprise inclut Office 365, Microsoft Intune et de nombreux services d’identité et de sécurité de Microsoft Azure. Tous ces services cloud s’appuient sur la sécurité, les performances et la fiabilité des connexions à partir d’appareils clients via Internet ou des circuits dédiés. Pour héberger ces services et les rendre accessibles aux clients dans le monde entier, Microsoft a conçu une infrastructure réseau qui met en évidence les performances et l’intégration. 
 
@@ -37,11 +39,11 @@ Procédez comme suit pour déployer votre infrastructure réseau pour la configu
 
 |||
 |:-------|:-----|
-|![Étape 1](./media/stepnumbers/Step1.png)|[Préparer le réseau de votre organisation pour Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
-|![Étape 2](./media/stepnumbers/Step2.png)|[Configurer les connexions Internet locales pour chaque bureau](networking-dns-resolution-same-location.md)|
-|![Étape 3](./media/stepnumbers/Step3.png)|[Éviter les épingles de réseau](networking-avoid-network-hairpins.md)|
-|![Étape 4](./media/stepnumbers/Step4.png)|[Configurer le trafic de contournement](networking-configure-proxies-firewalls.md)|
-|![Étape 5](./media/stepnumbers/Step5.png)|[Optimiser les performances du service Office 365 et du client](networking-optimize-tcp-performance.md)|
+|![Étape 1](../media/stepnumbers/Step1.png)|[Préparer le réseau de votre organisation pour Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
+|![Étape 2](../media/stepnumbers/Step2.png)|[Configurer les connexions Internet locales pour chaque bureau](networking-dns-resolution-same-location.md)|
+|![Étape 3](../media/stepnumbers/Step3.png)|[Éviter les épingles de réseau](networking-avoid-network-hairpins.md)|
+|![Étape 4](../media/stepnumbers/Step4.png)|[Configurer le trafic de contournement](networking-configure-proxies-firewalls.md)|
+|![Étape 5](../media/stepnumbers/Step5.png)|[Optimiser les performances du service Office 365 et du client](networking-optimize-tcp-performance.md)|
 
 
 Lorsque vous avez terminé ces étapes, accédez aux [critères de sortie](networking-exit-criteria.md) de cette phase pour vous assurer que vous répondez aux conditions requises et facultatives pour Microsoft 365 Entreprise.
@@ -54,11 +56,11 @@ Découvrez Microsoft et découvrez comment cette entreprise a [optimisé le rés
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, [a optimisé ses appareils réseau et ses connexions Internet](contoso-networking.md) pour les services cloud Microsoft 365.
 
-![Société Contoso](./media/contoso-overview/contoso-icon.png)
+![Société Contoso](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Étape suivante
 
 |||
 |:-------|:-----|
-|![Étape 1](./media/stepnumbers/Step1.png)|[Préparer le réseau de votre organisation pour Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
+|![Étape 1](../media/stepnumbers/Step1.png)|[Préparer le réseau de votre organisation pour Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
 

@@ -1,5 +1,7 @@
 ---
 title: 'Phase 2 : Critères de sortie de l’infrastructure d’identités'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure et les services d’identités.
-ms.openlocfilehash: 540d3c01ea368634cebafb2ec3dd5562fcb0b73c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3fd4d0a1df50d55cb7a21668b609341d0c01aa35
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801749"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067304"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2 : Critères de sortie de l’infrastructure d’identités
 
-![Phase 2 - Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2 - Identité](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 Vérifiez que votre infrastructure d’identité répond aux critères suivants requis et que vous avez décidé ceux qui sont facultatifs.
 
@@ -121,7 +123,7 @@ Si nécessaire, l’[Étape 3](identity-secure-user-sign-ins.md#identity-mfa) pe
 5.  Supprimez le compte d’utilisateur test.
 
 <a name="crit-identity-ident-prot"></a>
-## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>Facultatif : Azure AD Identity Protection est activé pour vous protéger contre la compromission d’informations d’identification (Microsoft 365 E5 uniquement)
+## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>Facultatif : Azure AD Identity Protection est activé pour vous protéger contre la compromission d’informations d’identification (Microsoft 365 E5 uniquement)
 
 Vous avez activé Azure AD Identity Protection pour :
 
@@ -292,5 +294,5 @@ Votre infrastructure d’identité dans le cloud de Microsoft 365 utilise l’au
 
 |||
 |:-------|:-----|
-|![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| Si vous suivez les phases suivantes dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est la [Windows 10 Entreprise](windows10-infrastructure.md). |
+|![Phase 3 : Windows 10 Entreprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| Si vous suivez les phases suivantes dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est la [Windows 10 Entreprise](windows10-infrastructure.md). |
 

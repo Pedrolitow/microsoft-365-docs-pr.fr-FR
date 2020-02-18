@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Les organisations sont souvent soumises à des réglementations de conformité, juridiques ou autres qui les obligent à conserver des documents pendant une certaine période de temps. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique. Pour cette raison, votre organisation peut avoir créé une stratégie de suppression de documents pour votre site (par exemple, il se pourrait que les documents commerciaux généraux doivent être supprimés cinq ans après leur création).
-ms.openlocfilehash: 67bbe3339b492e5199799a21e5b3b249a3a98c08
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f04b693a68da36b37524fe5c1fd2e00fab6c2bc6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596071"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079836"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Application ou suppression d’une stratégie de suppression de documents pour un site
 
@@ -64,7 +64,7 @@ Votre organisation peut affecter des stratégies différentes à des collections
     
 Cette liste est en affichage uniquement, pour que le propriétaire de la collection de sites visualise toutes les stratégies et les règles disponibles. Pour appliquer une stratégie, consultez la section suivante.
   
-![Affichage des stratégies de suppression de documents affectées à une collection de sites](media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
+![Affichage des stratégies de suppression de documents affectées à une collection de sites](../media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
   
 ## <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Application ou suppression d’une stratégie de suppression de documents pour un site
 
@@ -83,13 +83,13 @@ En tant que propriétaire de site ou propriétaire de collection de sites, votre
     
     Une seule stratégie et une seule règle peuvent être actives simultanément dans un site. Votre organisation peut fournir plusieurs stratégies et règles à choisir, ou une seule stratégie ou règle.
     
-    ![Sélectionner l’option de stratégie](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
+    ![Sélectionner l’option de stratégie](../media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
   
   - **Pour désactiver une stratégie** Choisissez **opt-out : do Remarque Delete** \> **Save**.
     
     En tant que propriétaire de site, vous pouvez désactiver une stratégie de suppression de documents si vous estimez que la stratégie n’est pas applicable au contenu de votre site. Toutefois, vous ne pouvez pas désactiver une stratégie qui a été marquée comme **obligatoire**.
     
-    ![Option de désactivation](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
+    ![Option de désactivation](../media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
 ## <a name="document-deletion-policies-override-other-policies"></a>Les stratégies de suppression de documents remplacent les autres stratégies
 
@@ -113,7 +113,7 @@ Si votre site utilisait des stratégies de type de contenu et que ce message s�
     
 2. Sous **modèles de stratégie de type de contenu**d’administration \> de **site** .
     
-    ![Avertissement sur le site utilisé par les stratégies de suppression de documents](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
+    ![Avertissement sur le site utilisé par les stratégies de suppression de documents](../media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>Déterminer si les stratégies de gestion des informations sont ignorées
 
@@ -121,7 +121,7 @@ Si votre site utilisait des stratégies de gestion des informations et que ce me
   
 - Pour une liste ou une bibliothèque, dans les \> **paramètres** \> de \> la bibliothèque **d’onglets de la bibliothèque du** ruban, sous paramètres de stratégie de gestion des \> **informations**de **gestion et des autorisations** .
     
-    ![Avertissement sur le site utilisé par les stratégies de suppression de documents](media/3f043057-a741-4cd8-a165-6d139b986064.png)
+    ![Avertissement sur le site utilisé par les stratégies de suppression de documents](../media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
 ## <a name="see-also"></a>Voir également
 

@@ -1,6 +1,8 @@
 ---
 title: Identité de Contoso Corporation
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: dc893fb1e632cf15a612ebf13e911173933d9af3
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673210"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068447"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -30,7 +32,7 @@ Contoso utilise une seule forêt Windows Server Active Directory Domain Servic
 
 Voici la forêt et les domaines régionaux de Contoso dans les régions du monde où se trouvent des centres régionaux.
 
-![Forêt et domaines de Contoso dans le monde](./media/contoso-identity/contoso-identity-fig1.png)
+![Forêt et domaines de Contoso dans le monde](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contoso souhaitait utiliser les comptes et les groupes de la forêt contoso.com pour faciliter l’authentification et l’autorisation de ses services et de ses charges de travail Microsoft 365.
 
@@ -43,7 +45,7 @@ Contoso autorise les éléments suivants :
 
 Voici le réseau de périmètre de Contoso comprenant un site web public, un extranet des partenaires et des serveurs pour les services AD FS (services de fédération Active Directory). Le réseau de périmètre est connecté à Internet, qui contient des clients, des partenaires et des services Internet.
 
-![Prise en charge de l’authentification fédérée par Contoso pour ses clients et ses partenaires](./media/contoso-identity/contoso-identity-fig2.png)
+![Prise en charge de l’authentification fédérée par Contoso pour ses clients et ses partenaires](../media/contoso-identity/contoso-identity-fig2.png)
  
 Les serveurs AD FS du DMZ facilitent l’authentification des informations d’identification client par leurs fournisseurs d’identité pour accéder au site web public et des informations d’identification partenaires pour accéder à l’extranet des partenaires.
 
@@ -59,7 +61,7 @@ Pour effectuer la synchronisation d’annuaire en cours, Contoso a déployé l�
 
 Voici le serveur exécutant la connexion Azure Active Directory Connect interrogeant l’ensemble Contoso AD DS pour les modifications de l’interrogation et la synchronisation de ces modifications avec le client Azure AD.
 
-![Infrastructure de la synchronisation d’annuaires de synchronisation de hachage de mot de passe de Contoso](./media/contoso-identity/contoso-identity-fig4.png)
+![Infrastructure de la synchronisation d’annuaires de synchronisation de hachage de mot de passe de Contoso](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Stratégies d’accès conditionnel basé sur l’identité et l’appareil
 
@@ -71,7 +73,7 @@ Contoso a créé un jeu d’Azure AD et Intune [stratégies d’accès condition
 
 Voici l’ensemble de stratégies d’accès conditionnel basées sur l’identité et l’appareil de Contoso.
 
-![Stratégies d’accès conditionnel basées sur l’identité et l’appareil de Contoso](./media/contoso-identity/contoso-identity-fig5.png)
+![Stratégies d’accès conditionnel basées sur l’identité et l’appareil de Contoso](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>Étape suivante
 

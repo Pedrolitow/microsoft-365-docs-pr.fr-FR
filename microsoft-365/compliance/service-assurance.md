@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Télécharger des audits tiers, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, FINRA et FedRAMP lorsque vous utilisez Office 365.
-ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 823722fe49349a11e828ca56978240e662c8435c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601521"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081302"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantie de service dans le centre de sécurité & conformité
 
@@ -71,7 +71,7 @@ Lorsque vous accédez à l’assurance de service pour la première fois, la pre
   
 1. Une fois que vous avez accès à l’assurance de service, sélectionnez **paramètres** et la page Paramètres régionaux et industriels s’affiche, comme illustré dans la capture d’écran suivante. 
     
-    ![Affiche la page Paramètres du centre de protection.](media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
+    ![Affiche la page Paramètres du centre de protection.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
 2. Sur la page **paramètres** , sélectionnez la flèche vers le bas en regard de **région** et vérifiez les régions appropriées pour votre organisation. 
     
@@ -86,15 +86,15 @@ Pour vérifier et télécharger du contenu, sélectionnez une option dans le vol
   
 - **Rapports de conformité** pour afficher des audits indépendants et des évaluations d’Office 365 et d’autres services de Cloud Computing Microsoft, comme illustré dans la capture d’écran suivante. 
     
-    ![Affiche la page assurance de service : rapports de conformité des services.](media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
+    ![Affiche la page assurance de service : rapports de conformité des services.](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
 - **Faire confiance aux documents** pour afficher des informations sur la façon dont Microsoft exploite Office 365, comme illustré dans la capture d’écran suivante. 
     
-    ![Affiche la page assurance de service : documents de confiance fournis par Microsoft](media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Affiche la page assurance de service : documents de confiance fournis par Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **Contrôles audités** pour afficher des informations sur la façon dont les contrôles Office 365 répondent aux exigences de sécurité, de conformité et de confidentialité, comme illustré dans la capture d’écran suivante. 
     
-    ![Affiche l’écran des contrôles audités de l’assurance service.](media/4baf252b-603d-45e0-af12-32616154df65.png)
+    ![Affiche l’écran des contrôles audités de l’assurance service.](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
 Sélectionnez le rapport à télécharger, puis cliquez sur **Enregistrer** pour le télécharger sur votre ordinateur. Pour les contrôles audités, sélectionnez le rapport de votre choix, puis cliquez sur **Télécharger**. Le tableau ci-dessous décrit les rapports que vous pouvez trouver sur chaque page assurance de service. 
   
@@ -116,15 +116,15 @@ Pour accéder aux rapports par défaut qui sont généralement disponibles sur t
   
 1. Dans le centre de sécurité & conformité, sélectionnez **autorisations** dans le volet gauche, comme illustré dans la capture d’écran suivante. 
     
-    ![Menu &amp; des autorisations de conformité de sécurité](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
+    ![Menu &amp; des autorisations de conformité de sécurité](../media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
 2. Dans le volet droit, sélectionnez **utilisateur d’assurance de service**, puis **modifier le groupe de rôles**et, sous la section **membres** , sélectionnez **modifier** pour ajouter des membres au rôle d’utilisateur assurance de service, comme illustré dans la capture d’écran suivante. 
     
-    ![Service d’assurance-ajout utilisateur](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
+    ![Service d’assurance-ajout utilisateur](../media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
 3. Dans la boîte de dialogue suivante, recherchez et sélectionnez des individus ou des groupes qui doivent afficher les rapports de conformité de service assurance et les ressources d’approbation, puis sélectionnez **Ajouter** pour chaque sélection que vous effectuez et cliquez sur **X** dans le coin supérieur droit du volet lorsque vous avez terminé. 
     
-    ![Utilisateur de l’assurance de service : choisir un utilisateur](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
+    ![Utilisateur de l’assurance de service : choisir un utilisateur](../media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
 4. Chaque utilisateur ou groupe que vous avez ajouté au rôle d’utilisateur d’assurance de service peut désormais trouver des rapports et des rapports de sécurité de service et d’autres documents dans le centre de conformité &.
     
@@ -135,7 +135,7 @@ Revenir à la page **autorisations** à tout moment pour ajouter d’autres util
 
 [Contacter le support pour les entreprises-aide de l’administrateur](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
   
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Foire aux questions
 <a name="addother"> </a>
 
  **Pourquoi est-ce que je reçois une erreur indiquant que les documents provenant de l’assurance de service sont endommagés ?**

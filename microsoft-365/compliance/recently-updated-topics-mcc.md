@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Nous créons en permanence de nouveaux articles, en mettant à jour ceux existants et en apportant des modifications en fonction de vos commentaires. Découvrez les nouveautés et mises à jour ce mois-ci.
-ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b285b51ca20e2822be9d8193d33e634418adbeb3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601651"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081622"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -117,13 +117,13 @@ Ajout de nouveaux conseils aux articles suivants relatifs à la loi CCPA (Califo
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-[Appliquer une étiquette de sensibilité au contenu automatiquement](apply-sensitivity-label-automatically.md) (mis à jour)<br>Suppression des informations sur la prise en charge à venir de l’étiquetage recommandé dans Outlook. Suppression des informations de licence en double. Pointe maintenant vers des informations de référence dans les [étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md).
+[Appliquer une étiquette de sensibilité au contenu automatiquement](apply-sensitivity-label-automatically.md) (mis à jour)<br>Suppression des informations sur la prise en charge à venir de l’étiquetage recommandé dans Outlook. Suppression des informations de licence en double. Pointe maintenant vers des informations faisant autorité dans [utiliser des étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md).
 
 [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (](sensitivity-labels-sharepoint-onedrive-files.md) préversion publique) (nouveau)<br>Instructions relatives à la préparation de SharePoint et de OneDrive pour l’application d’étiquettes de sensibilité au contenu stocké dans ces emplacements.
 
 [Vue d’ensemble des étiquettes de confidentialité](sensitivity-labels.md) (mise à jour)<br>Ajout de détails supplémentaires sur la prise en charge des applications Office sur le Web, les groupes Microsoft Teams, les groupes Office 365, les sites SharePoint et les fichiers Office dans SharePoint et OneDrive.
 
-[Étiquettes de sensibilité dans les applications Office](sensitivity-labels-office-apps.md) (mise à jour)<br>Plusieurs mises à jour, y compris des détails sur les applications nouvellement prises en charge, les exigences en matière d’abonnement et de licence et l’interaction entre les modèles définis par l’administrateur (comme ceux des étiquettes de chiffrement et de confidentialité des messages Office 365).
+[Utiliser les étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md) (mise à jour)<br>Plusieurs mises à jour, y compris des détails sur les applications nouvellement prises en charge, les exigences en matière d’abonnement et de licence et l’interaction entre les modèles définis par l’administrateur (comme ceux des étiquettes de chiffrement et de confidentialité des messages Office 365).
 
 [Utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (](sensitivity-labels-teams-groups-sites.md) préversion publique) (nouveauté)<br>Informations détaillées sur la configuration et l’application d’étiquettes de confidentialité dans Microsoft Teams, les groupes Office 365 et les sites SharePoint.
 
@@ -133,7 +133,7 @@ Ajout de nouveaux conseils aux articles suivants relatifs à la loi CCPA (Califo
 
 [Configurer des stratégies de surveillance pour votre organisation](configure-supervision-policies.md) (mise à jour)<br>Suppression des détails sur l’utilisation d’Outlook pour effectuer des révisions. À la place, utilisez les options de révision et de marquage disponibles dans l’interface utilisateur de supervision.
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="auditing"></a>Audit
 

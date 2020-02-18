@@ -1,6 +1,8 @@
 ---
 title: Présentation de la société Contoso Corporation
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
-ms.openlocfilehash: f1c758b92915845a0786c24aec611cb221c70186
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673150"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068294"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Présentation de la société Contoso Corporation
 
-![Société Contoso](./media/contoso-overview/contoso-icon.png)
+![Société Contoso](../media/contoso-overview/contoso-icon.png)
 
 La société Contoso est une entreprise internationale dont le siège est à Paris. Il s’agit d’un conglomérat de production, de ventes et de service après-vente comptant plus de 100 000 produits.
 
@@ -30,7 +32,7 @@ La société Contoso est une entreprise internationale dont le siège est à Par
 
 Dans la Figure 1, le siège social de l’entreprise se situe à Paris, tandis que ses centres régionaux et ses succursales sont répartis sur plusieurs continents.
 
-![Bureaux internationaux de Contoso](./media/contoso-overview/contoso-overview-fig1.png)
+![Bureaux internationaux de Contoso](../media/contoso-overview/contoso-overview-fig1.png)
 
 **Figure 1 : bureaux internationaux de Contoso**
  

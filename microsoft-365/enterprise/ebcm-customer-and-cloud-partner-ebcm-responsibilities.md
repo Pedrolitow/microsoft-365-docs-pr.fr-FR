@@ -1,6 +1,8 @@
 ---
 title: Responsabilités des partenaires d’entreprise client et cloud en terme de continuité de l’activité
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre ce que fait Microsoft au cours d’un incident de service pour vous permettre de mieux préparer les plans de continuité de votre activité.
-ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831865"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067667"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Gestion de la continuité des activités de l’entreprise et responsabilités des partenaires client et cloud
 
@@ -53,7 +55,7 @@ Microsoft propose aux utilisateurs plusieurs canaux pour les communications sur 
  
 Le fait de donner l’accès aux services en ligne de Microsoft 365 représente un partenariat entre votre organisation et Microsoft. Le tableau suivant résume l’équilibre des responsabilités entre Microsoft et le client lors d’un incident de service et pendant l’exploitation normale.
 
-![équilibre des responsabilités entre Microsoft et le client](media/ebcm/responsibilities.png)
+![équilibre des responsabilités entre Microsoft et le client](../media/ebcm/responsibilities.png)
 
 ## <a name="your-environment---service-continuity"></a>Votre environnement – continuité de service
 Lorsque vous élaborez votre plan de continuité, pensez aux événements susceptibles d’avoir un impact sur votre organisation et sur sa capacité à communiquer. À un niveau élevé, trois facteurs peuvent avoir un impact sur votre activité.
@@ -69,6 +71,6 @@ Microsoft publie des [principes de connectivité réseau](https://docs.microsoft
 De nombreuses solutions de collaboration dépendent des systèmes, tels que le réseau étendu (WAN) de l’entreprise. Lorsque ces systèmes ne sont pas disponibles, comment votre organisation peut-elle répondre ?
 Ce graphique représente des problèmes qui peuvent avoir une incidence sur plusieurs zones. Le tableau joint fournit des exemples à prendre en considération.
 
-![diagramme de Venn](media/ebcm/venn-diagram.png)
+![diagramme de Venn](../media/ebcm/venn-diagram.png)
 
 Vos plans de continuité doivent prendre en compte chacune de ces zones. Par exemple, si vous voulez que les utilisateurs soient sur le réseau d’entreprise et qu’il y a une tempête de neige, comment ces utilisateurs peuvent-ils accéder aux ressources clés ? Si la neige empêche de venir au bureau et que les ingénieurs de service doivent se connecter au réseau d’entreprise, existe-t-il un programme prévoyant que leurs ordinateurs portables d’entreprise soient disponibles chez eux ?

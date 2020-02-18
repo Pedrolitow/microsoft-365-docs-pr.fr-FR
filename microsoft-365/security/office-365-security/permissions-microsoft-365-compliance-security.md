@@ -1,5 +1,7 @@
 ---
 title: Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En utilisant le Centre de sécurité Microsoft 365 ou le Centre de conformité Microsoft 365, vous pouvez gérer les autorisations de façon centralisée pour toutes les tâches liées à la sécurité ou à la conformité.
-ms.openlocfilehash: 070e9bb1f7bf070a1b95995c2010b79dee7cbc9b
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 6553020c215b3ffad0707a699414a6939ef368ca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572961"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082433"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft 365
 
@@ -27,7 +29,7 @@ Votre organisation doit gérer les scénarios de sécurité et de conformité qu
 
 Une fois que l’administrateur général a attribué ces rôles d’administrateur, les administrateurs ont accès à des fonctionnalités et données qui couvrent tous les services dans Microsoft 365, tels que le Centre de sécurité Microsoft 365, le Centre de conformité Microsoft 365, Azure, Office 365 et Enterprise Mobility + Security.
 
-![Page d’autorisations dans le Centre de sécurité Microsoft 365](../media/m365-security-permissions-page.png)
+![Page d’autorisations dans le Centre de sécurité Microsoft 365](../../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>Quels sont les rôles Microsoft 365 ?
 
@@ -128,13 +130,13 @@ Dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft
 
 Pour plus d’informations, consultez [Affichage et attribution des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
-![Lien pour gérer les autorisations dans Azure Active Directory](../media/permissions-manage-in-azure-ad-link.png)
+![Lien pour gérer les autorisations dans Azure Active Directory](../../media/permissions-manage-in-azure-ad-link.png)
 
 ## <a name="managing-roles-in-a-service-instead-of-azure-active-directory"></a>Gestion des rôles dans un service à la place d’Azure Active Directory
 
 Les rôles qui apparaissent dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft 365 apparaissent également dans les services où ils disposent d’autorisations. Par exemple, vous pouvez voir ces rôles dans le Centre de sécurité et conformité Office 365.
 
-![Rôles du Centre de sécurité et conformité Office 365](../media/m365-roles-in-o365-scc.png)
+![Rôles du Centre de sécurité et conformité Office 365](../../media/m365-roles-in-o365-scc.png)
 
 ### <a name="breaking-inheritance"></a>Annulation de l’héritage
 

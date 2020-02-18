@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3b047e9c3a56a6c03368c79c2c5a4622b396b6b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595621"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077546"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notice de suspension légale
 
 À l’aide de communications de conservateur de services eDiscovery avancées, les organisations peuvent gérer leur flux de travail pour communiquer avec des dépositaires. Grâce à l’outil de communication, les équipes juridiques peuvent envoyer, collecter et suivre systématiquement les notifications de conservation légale. Le processus de création flexible permet également à teams de personnaliser le flux de travail de notification de blocage et le contenu des notifications envoyées aux dépositaires. 
 
-![Page Communications](media/CommunicationPage.PNG)
+![Page Communications](../media/CommunicationPage.PNG)
 
 L’article décrit les étapes du flux de travail de notification de blocage.
 
@@ -35,7 +35,7 @@ L’article décrit les étapes du flux de travail de notification de blocage.
 
 La première étape consiste à spécifier les détails appropriés pour les notifications de suspension légale ou autres communications de dépositaire. 
 
-![Page communication de nom](media/NameCommunication.PNG)
+![Page communication de nom](../media/NameCommunication.PNG)
 
 1. Dans le centre de sécurité & conformité, accédez à **ediscovery > Advanced eDiscovery** pour afficher la liste des incidents de votre organisation.
    
@@ -53,7 +53,7 @@ La première étape consiste à spécifier les détails appropriés pour les not
 
 Ensuite, vous pouvez créer et ajouter le contenu de la notification de suspension. Dans la page **définir le contenu du portail** , dans l’assistant créer une **communication** , spécifiez le contenu de la notification de suspension. Ce contenu sera automatiquement ajouté aux notifications d’émission, de réémission, de rappel et de signalisation. De plus, ce contenu s’affichera dans le portail de conformité du dépositaire. 
 
-![Page contenu du portail](media/PortalContent.PNG)
+![Page contenu du portail](../media/PortalContent.PNG)
 
 Pour créer le contenu du portail :
 
@@ -127,7 +127,7 @@ Pour créer une notification de publication :
 
 Si vous le souhaitez, vous pouvez simplifier le flux de travail pour le suivi des dépositaires qui ne répondent pas en créant et en planifiant des notifications automatiques de rappel et de remontée.
 
-![Page rappel/escalade](media/ReminderEscalations.PNG)
+![Page rappel/escalade](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>Reminders
 
@@ -173,7 +173,7 @@ Pour planifier les escalades :
 
 Une fois que vous avez finalisé le contenu des notifications, sélectionnez les dépositaires que vous souhaitez envoyer. 
 
-![Sélectionner la page des dépositaires](media/SelectCustodians.PNG)
+![Sélectionner la page des dépositaires](../media/SelectCustodians.PNG)
 
 Pour ajouter des dépositaires :
 

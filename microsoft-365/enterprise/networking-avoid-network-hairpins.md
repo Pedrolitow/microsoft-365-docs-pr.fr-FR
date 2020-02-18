@@ -1,5 +1,7 @@
 ---
 title: 'Étape 3 : Éviter les épingles de réseau'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,22 +15,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez le fonctionnement des épingles de réseau et supprimez-les pour obtenir de meilleures performances.
-ms.openlocfilehash: 8d3c971c1295f8f1112c594635bfd791b251bd68
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: f9499fdb8e8c3f7b77e3349d6cc99f6dbf465870
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370331"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066707"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>Étape 3 : Éviter les épingles de réseau
 
 *Cette étape est requise et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 1 : Mise en réseau](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1 : Mise en réseau](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Une [épingle de réseau](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) se produit lorsque le trafic vers une destination est d’abord dirigé vers un autre emplacement intermédiaire, comme une pile de sécurité locale, un courtier d’accès au cloud ou une passerelle web basée sur le cloud. Voici un exemple.
 
-![Exemple d’épingle de réseau](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
+![Exemple d’épingle de réseau](../media/networking-avoid-network-hairpins/network-hairpin-example.png)
 
 Une épingle de réseau peut également se produire à cause d’un routage médiocre sur Internet dû à des fournisseurs de services réseau. 
 
@@ -44,7 +46,7 @@ Si vous utilisez les services de sécurité ou de réseau basés sur le cloud po
 
 Dès que possible, configurez vos routeurs périphériques pour envoyer le trafic Microsoft 365 approuvé directement, au lieu d’utiliser la transmission par proxy ou le tunneling via un cloud tiers ou un fournisseur de sécurité réseau basé sur le cloud qui traite votre trafic Internet. 
 
-![Exemple de contournement d’épingle de réseau](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+![Exemple de contournement d’épingle de réseau](../media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](networking-exit-criteria.md#crit-networking-step3) pour cette étape.
 
@@ -52,4 +54,4 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 
 |||
 |:-------|:-----|
-|![Étape 4](./media/stepnumbers/Step4.png)|[Configurer le trafic de contournement](networking-configure-proxies-firewalls.md)|
+|![Étape 4](../media/stepnumbers/Step4.png)|[Configurer le trafic de contournement](networking-configure-proxies-firewalls.md)|

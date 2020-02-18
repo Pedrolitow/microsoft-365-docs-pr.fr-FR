@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a012ec742d99a5b2ba35800c90e8614b503b93c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3153fc92cfae6e2feba122cc895e787c9b573ef7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597321"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080895"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Résolution des problèmes liés à AzCopy dans Advanced eDiscovery
 
 Lors du chargement de données ou de documents autres que Office 365 pour la correction d’erreur dans Advanced eDiscovery, l’interface utilisateur fournit une commande AzCopy Azure qui contient les paramètres de l’emplacement où les fichiers que vous souhaitez télécharger sont stockés et le stockage Azure emplacement vers lequel les fichiers seront téléchargés. Pour télécharger vos documents, copiez cette commande, puis exécutez-la dans une invite de commandes sur votre ordinateur local.  La capture d’écran suivante illustre un exemple de commande AzCopy :
 
-![Télécharger des fichiers non-Office 365](media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Télécharger des fichiers non-Office 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 En règle générale, la commande fournie fonctionne lorsque vous l’exécutez. Toutefois, il peut arriver que la commande affichée ne s’exécute pas correctement. Voici quelques raisons possibles.
 

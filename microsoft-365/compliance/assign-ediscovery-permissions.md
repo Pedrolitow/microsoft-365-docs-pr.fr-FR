@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
-ms.openlocfilehash: 0ba8defac50c4037f8a7100b5e4d0808eb0af362
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 234748b8390dcbc5742961c2f10a19a284e01f1c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595991"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079611"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -61,9 +61,9 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
     
 4. Sur la page de menu volant du **Gestionnaire eDiscovery** , effectuez l’une des opérations suivantes en fonction des autorisations de découverte électronique que vous souhaitez attribuer. 
   
-    **Pour faire d’un utilisateur un gestionnaire eDiscovery :** En regard de **Gestionnaire eDiscovery**, sélectionnez **modifier**. Dans la **section choisir un gestionnaire eDiscovery** , sélectionnez le lien hypertexte **choisir le gestionnaire eDiscovery** , ![puis ajouter](media/ITPro-EAC-AddIcon.gif) une icône **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis sélectionnez **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **terminé**. Ensuite, dans la page d’édition choisir le menu volant du **Gestionnaire eDiscovery** , sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery.
+    **Pour faire d’un utilisateur un gestionnaire eDiscovery :** En regard de **Gestionnaire eDiscovery**, sélectionnez **modifier**. Dans la **section choisir un gestionnaire eDiscovery** , sélectionnez le lien hypertexte **choisir le gestionnaire eDiscovery** , ![puis ajouter](../media/ITPro-EAC-AddIcon.gif) une icône **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis sélectionnez **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **terminé**. Ensuite, dans la page d’édition choisir le menu volant du **Gestionnaire eDiscovery** , sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery.
   
-    **Pour faire d’un utilisateur un administrateur de découverte électronique :** En regard de **Gestionnaire eDiscovery**, sélectionnez **modifier**. Dans la section **choisir un administrateur** eDiscovery, sous administrateurs de la **découverte électronique**, sélectionnez **choisir un administrateur eDiscovery**, sélectionnez ![ **modifier**,](media/ITPro-EAC-AddIcon.gif) puis ajouter une icône **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant qu' **administrateur de découverte électronique**, puis **Ajoutez**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **terminé**. Ensuite, dans la page d’édition choisir le menu volant **administrateur eDiscovery** , sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance de l’administrateur de découverte électronique.
+    **Pour faire d’un utilisateur un administrateur de découverte électronique :** En regard de **Gestionnaire eDiscovery**, sélectionnez **modifier**. Dans la section **choisir un administrateur** eDiscovery, sous administrateurs de la **découverte électronique**, sélectionnez **choisir un administrateur eDiscovery**, sélectionnez ![ **modifier**,](../media/ITPro-EAC-AddIcon.gif) puis ajouter une icône **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant qu' **administrateur de découverte électronique**, puis **Ajoutez**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **terminé**. Ensuite, dans la page d’édition choisir le menu volant **administrateur eDiscovery** , sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance de l’administrateur de découverte électronique.
       
 > [!NOTE]
 > Vous pouvez également utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour faire d’un utilisateur un administrateur de découverte électronique. Toutefois, l’utilisateur doit se voir attribuer le rôle de gestion des cas avant de pouvoir utiliser cette applet de commande pour en faire un administrateur eDiscovery. Pour plus d’informations, voir [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
@@ -76,14 +76,14 @@ Le tableau suivant répertorie les rôles RBAC liés à la découverte électron
     
 |**Role**|**Administrateur de conformité**|**Administrateur de & du gestionnaire eDiscovery**|**Gestion de l'organisation**|**Relecteur**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Gestion des cas <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Recherche de conformité <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Exporter <br/> | <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Suspension <br/>  |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Aperçu <br/>  | <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Révision <br/>  | <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|Déchiffrement RMS <br/>  ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|Recherche et purge <br/> | <br/> | <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
+|Gestion des cas <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Recherche de conformité <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Exporter <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Suspension <br/>  |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Aperçu <br/>  | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Révision <br/>  | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Déchiffrement RMS <br/>  ||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
+|Recherche et purge <br/> | <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
   
 Les sections suivantes décrivent chacun des rôles RBAC liés à la découverte électronique figurant dans le tableau précédent.

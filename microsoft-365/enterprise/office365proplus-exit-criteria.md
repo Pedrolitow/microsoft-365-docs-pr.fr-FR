@@ -1,5 +1,7 @@
 ---
 title: Critères de sortie du déploiement d’Office 365 ProPlus
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure Office 365 ProPlus.
-ms.openlocfilehash: 749d9661911bd6b69a3d6abff0b54e9ea1200adc
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 2f19de8c40c95f27e3b7578d384db39d5feb57e0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746580"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066481"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Critères de sortie du déploiement d’Office 365 ProPlus
 
-![Phase 4 : Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![Phase 4 : Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *Cela s’applique aux versions E3 et E5 de Microsoft 365 Entreprise et Microsoft 365 Éducation*
 
@@ -60,4 +62,4 @@ Vos appareils client des dernières disposent des versions Office 365 ProPlus le
 
 |||
 |:-------|:-----|
-|![Phase 5 : Gestion des appareils mobiles](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Si vous suivez les phases suivantes dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est la [gestion des appareils mobiles](mobility-infrastructure.md). |
+|![Phase 5 : Gestion des appareils mobiles](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Si vous suivez les phases suivantes dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est la [gestion des appareils mobiles](mobility-infrastructure.md). |

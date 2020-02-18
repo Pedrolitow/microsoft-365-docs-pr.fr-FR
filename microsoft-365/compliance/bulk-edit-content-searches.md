@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Utilisez l’éditeur de recherche en bloc dans le centre de sécurité et de conformité dans Office 365 ou Microsoft 365 pour modifier rapidement les emplacements de requête et de contenu pour une ou plusieurs recherches de contenu.
-ms.openlocfilehash: 40d3a6c04a57f368a4f53ae0bbc543b049b26d52
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5d1fd8a877ffb6c2012567583e46e561fb09836f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596271"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078977"
 ---
 # <a name="bulk-edit-content-searches"></a>Modifier en bloc les recherches de contenu
 
@@ -30,13 +30,13 @@ Pour plus d’informations sur l’utilisation de l’outil statistiques de rech
 
 1. Accédez à [https://protection.office.com](https://protection.office.com), puis sélectionnez recherche de **contenu**de **recherche** \> .
     
-2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur le bouton ![](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)éditeur de recherche en bloc de l' **éditeur de recherche en** bloc.
+2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur le bouton ![](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)éditeur de recherche en bloc de l' **éditeur de recherche en** bloc.
     
-    ![Sélectionnez une ou plusieurs recherches, puis éditeur de recherche en bloc](media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
+    ![Sélectionnez une ou plusieurs recherches, puis éditeur de recherche en bloc](../media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
   
     Les informations suivantes s’affichent dans la page **requêtes** de l’éditeur de recherche en bloc. 
     
-    ![La page de l’éditeur de recherche en bloc affiche les requêtes pour les recherches sélectionnées.](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
+    ![La page de l’éditeur de recherche en bloc affiche les requêtes pour les recherches sélectionnées.](../media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
     a. La colonne de **recherche** affiche le nom de la recherche de contenu. Comme indiqué précédemment, vous pouvez modifier la requête pour plusieurs recherches. 
     
@@ -71,7 +71,7 @@ Voici quelques conseils pour modifier les requêtes à l’aide de l’éditeur 
     
     Les informations suivantes s’affichent dans la page **emplacements** de l’éditeur de recherche en bloc. 
     
-    ![Sélectionnez Activer l’éditeur de l’emplacement en bloc, puis sélectionnez emplacements pour ajouter ou supprimer des emplacements de contenu.](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
+    ![Sélectionnez Activer l’éditeur de l’emplacement en bloc, puis sélectionnez emplacements pour ajouter ou supprimer des emplacements de contenu.](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
     a. **Boîtes aux lettres à rechercher** Cette section affiche une colonne pour chaque recherche de contenu sélectionnée et une ligne pour chaque boîte aux lettres incluse dans la recherche. Une coche indique que la boîte aux lettres est incluse dans la recherche. Vous pouvez ajouter des boîtes aux lettres à une recherche en tapant l’adresse de messagerie de la boîte aux lettres dans une ligne vide, puis en activant la case à cocher correspondant à la recherche de contenu à laquelle vous souhaitez l’ajouter. Ou vous pouvez supprimer une boîte aux lettres d’une recherche en désactivant la case à cocher.
     

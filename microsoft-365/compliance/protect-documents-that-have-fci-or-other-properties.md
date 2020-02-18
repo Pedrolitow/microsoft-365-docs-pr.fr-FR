@@ -96,7 +96,7 @@ Notez que les propriétés de document de condition **contiennent l’une de ces
   
 Pour plus d’informations sur ces cmdlets, consultez [la rubrique &amp; Office 365 Security Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Se connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Créez la stratégie à l' `New-DlpCompliancePolicy`aide de.
 

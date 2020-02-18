@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de migration des versions de Microsoft Office, des serveurs Office et de Windows vers Microsoft 365 Entreprise au sein de votre organisation.
-ms.openlocfilehash: 2f5b1b077346e3225252ef25a4e9e685c4892a7c
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 06cacbb45a98bb62f53866b0d2ab7ba393e609a0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148488"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066807"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migration vers Microsoft 365 Entreprise
 
@@ -151,9 +151,9 @@ Pour accéder à d’autres méthodes, voir [Scénarios de déploiement de Windo
 
 ## <a name="summary-of-options-for-office-2010-clients-and-servers-and-windows-7"></a>Résumé des options pour les clients et serveurs Office 2010 et Windows 7
 
-Pour consulter un résumé visuel des options de mise à niveau, de migration et de déplacement vers le Cloud pour ces produits, voir l’[affiche de fin du support technique](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
+Pour consulter un résumé visuel des options de mise à niveau, de migration et de déplacement vers le Cloud pour ces produits, voir l’[affiche de fin du support technique](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
-[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 Cette affiche d’une page est un moyen rapide de comprendre les différents chemins que vous pouvez prendre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’atteindre la fin du support, avec les chemins d’accès favoris et la prise en charge de la destination qui en résulte dans Microsoft 365 Entreprise mis en surbrillance.
 
@@ -171,9 +171,9 @@ Découvrez comment les experts informatiques de Microsoft ont migré l’entrepr
 
 ## <a name="transition-your-entire-organization"></a>Migration de l’organisation entière
 
-Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, téléchargez l’[affiche de transition](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, téléchargez l’[affiche de transition](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Image de l’affiche pour la transition vers Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Image de l’affiche pour la transition vers Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 Entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
 

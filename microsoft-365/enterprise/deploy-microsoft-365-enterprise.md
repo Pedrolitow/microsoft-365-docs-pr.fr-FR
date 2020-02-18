@@ -1,6 +1,8 @@
 ---
 title: Déployer Microsoft 365 pour entreprise
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 pour entreprise dans votre organisation.
-ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801919"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067955"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Déployer Microsoft 365 pour entreprise
 
@@ -65,7 +67,7 @@ Pour déployer Microsoft 365 pour entreprise vous-même, vous pouvez :
 
 Voici la relation entre l’infrastructure de base et les charges de travail et les scénarios.
 
-![Relation entre l’infrastructure de base et les charges de travail et les scénarios](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Relation entre l’infrastructure de base et les charges de travail et les scénarios](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 Scénarios et charges de travail fonctionnent sur la partie supérieure de l’infrastructure de base. Toutefois, pas besoin que toutes les phases de l’infrastructure de base soient prédéfinies pour commencer à utiliser des charges de travail pour la productivité et la collaboration.
 
@@ -83,13 +85,13 @@ Avec les guides de laboratoire de test, vous pouvez apprendre, personnaliser ou 
 
 Pour plus d’informations, consultez les [guides de laboratoire de test Microsoft 365 pour entreprise](m365-enterprise-test-lab-guides.md).
 
-![Guides de laboratoire de test pour Microsoft Cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## <a name="transition-your-entire-organization"></a>Migration de l’ensemble de votre organisation
 
-Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 pour entreprise, consultez l’affiche [Transition de votre organisation vers Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 pour entreprise, consultez l’affiche [Transition de votre organisation vers Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Affiche Transition de votre organisation vers Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Affiche Transition de votre organisation vers Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 pour entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
 

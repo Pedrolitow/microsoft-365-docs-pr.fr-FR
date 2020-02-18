@@ -1,6 +1,8 @@
 ---
 title: Déploiement de Windows 10 Entreprise pour Contoso
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso a utilisé Microsoft Endpoint Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
-ms.openlocfilehash: 2080562aeb2f6359aa2a4f836de3406e4ca2439c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5dc58a9090dd6976d7c521f7552181a10f22f5b2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672700"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068004"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 
@@ -49,7 +51,7 @@ Avant et pendant les mises à niveau sur place de Windows 10 Entreprise, Contos
 
   Identifie les appareils qui se bloquent fréquemment et qui, par conséquent, doivent être recréés ou remplacés et les pilotes de périphériques qui provoquent des blocages sur les appareils, avec des suggestions d’autres versions de ces pilotes susceptibles de réduire le nombre d’incidents. Fournit une notification de configurations incorrectes de la Protection des informations Windows qui envoient des invites à des utilisateurs finaux.
  
-Contoso possède une infrastructure Configuration Manager (branche actuelle) existante. Configuration Manager assure la mise à l’échelle des environnements de grande taille et permet de contrôler de manière étendue l’installation, les mises à jour et les paramètres. Il inclut également des fonctionnalités intégrées qui simplifient et optimisent le déploiement et la gestion de Windows 10 Entreprise.
+Contoso dispose d’une infrastructure Configuration Manager (branche actuelle) existante. Le gestionnaire de configuration s’adapte à des environnements volumineux et offre un contrôle extensif sur l’installation, les mises à jour et les paramètres. Il dispose également de fonctionnalités intégrées pour simplifier et accroître l’efficacité du déploiement et de la gestion de Windows 10 Entreprise.
 
 ## <a name="planning-process"></a>Processus de planification
 
@@ -77,7 +79,7 @@ Pour effectuer le déploiement de mises à niveau sur place de Windows 10 Entre
 
 Voici la mise à niveau sur place et l’architecture de déploiement de mises à jour en cours de Contoso.
 
-![Infrastructure de déploiement de Windows 10 Entreprise de Contoso](./media/contoso-win10/contoso-win10-fig1.png)
+![Infrastructure de déploiement de Windows 10 Entreprise de Contoso](../media/contoso-win10/contoso-win10-fig1.png)
 
 Cette infrastructure se compose des éléments suivants :
 

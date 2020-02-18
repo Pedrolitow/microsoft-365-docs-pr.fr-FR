@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Créer une stratégie d’archivage et de suppression dans Office 365 qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: 23732306abccbbdff654577ff120df8b79b78e6d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 53da9c027895421edaa99ebc18d17eafc0dbc679
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597481"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081201"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365
 
@@ -81,11 +81,11 @@ La première étape consiste à activer la boîte aux lettres d’archivage pour
     
 6. Cliquez sur **Oui** pour fermer le message d’avertissement et démarrer le processus pour activer la boîte aux lettres d’archivage pour chaque boîte aux lettres sélectionnée. 
     
-7. Une fois le processus terminé, cliquez sur **Actualiser** ![l’actualisation](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) pour mettre à jour la liste sur la page d' **archivage** . 
+7. Une fois le processus terminé, cliquez sur **Actualiser** ![l’actualisation](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) pour mettre à jour la liste sur la page d' **archivage** . 
     
     La boîte aux lettres d’archivage est activée pour tous les utilisateurs de votre organisation.
     
-    ![La liste des boîtes aux lettres avec la boîte aux lettres d’archivage activée](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
+    ![La liste des boîtes aux lettres avec la boîte aux lettres d’archivage activée](../media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
 8. Laissez le centre de sécurité & conformité ouvert. Vous l’utiliserez à l’étape suivante.
     
@@ -105,7 +105,7 @@ Pour créer des balises de rétention, vous devez utiliser le centre d’adminis
     
 2. Dans le volet de navigation de gauche du centre d’administration Microsoft 365, cliquez sur **centres d’administration**, puis cliquez sur **Exchange**.
     
-    ![Capture d’écran : affiche le centre d’administration Microsoft 365 avec l’option centres d’administration développée et Exchange sélectionné.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Capture d’écran : affiche le centre d’administration Microsoft 365 avec l’option centres d’administration développée et Exchange sélectionné.](../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. Dans le centre d’administration Exchange, accédez à **balises de rétention** de **gestion** \> de conformité
     
@@ -115,11 +115,11 @@ Pour créer des balises de rétention, vous devez utiliser le centre d’adminis
   
 Tout d’abord, vous allez créer une balise de stratégie d’archivage par défaut personnalisée (DPT) qui déplace les éléments vers la boîte aux lettres d’archivage après 3 ans. 
   
-1. Sur la **page balises de rétention** , cliquez](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur nouvelle icône nouvelle **balise**![, puis sélectionnez **appliqué automatiquement à la boîte aux lettres entière (par défaut)**. 
+1. Sur la **page balises de rétention** , cliquez](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur nouvelle icône nouvelle **balise**![, puis sélectionnez **appliqué automatiquement à la boîte aux lettres entière (par défaut)**. 
     
 2. Sur la page **nouvelle balise appliquée automatiquement à la boîte aux lettres entière (par défaut)** , renseignez les champs suivants : 
     
-    ![Paramètres permettant de créer une balise de stratégie d’archivage par défaut](media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![Paramètres permettant de créer une balise de stratégie d’archivage par défaut](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
 1. **Name (nom** ) Tapez un nom pour la nouvelle balise de rétention. 
     
@@ -137,11 +137,11 @@ Tout d’abord, vous allez créer une balise de stratégie d’archivage par dé
   
 Ensuite, vous allez créer un autre DPT personnalisé, mais celui-ci sera une stratégie de suppression qui supprime définitivement les éléments après 7 ans.
   
-1. Sur la **page balises de rétention** , cliquez](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur nouvelle icône nouvelle **balise**![, puis sélectionnez **appliqué automatiquement à la boîte aux lettres entière (par défaut)**. 
+1. Sur la **page balises de rétention** , cliquez](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur nouvelle icône nouvelle **balise**![, puis sélectionnez **appliqué automatiquement à la boîte aux lettres entière (par défaut)**. 
     
 2. Sur la page **nouvelle balise appliquée automatiquement à la boîte aux lettres entière (par défaut)** , renseignez les champs suivants : 
     
-    ![Paramètres permettant de créer une balise de stratégie par défaut de suppression](media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![Paramètres permettant de créer une balise de stratégie par défaut de suppression](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
 1. **Name (nom** ) Tapez un nom pour la nouvelle balise de rétention. 
     
@@ -159,11 +159,11 @@ Ensuite, vous allez créer un autre DPT personnalisé, mais celui-ci sera une st
   
 La dernière balise de rétention que vous allez créer est une balise de stratégie de rétention personnalisée (RPT) pour le dossier éléments supprimés. Cette balise supprime les éléments du dossier éléments supprimés après 5 ans et fournit une période de récupération lorsque les utilisateurs peuvent utiliser l’outil récupérer les éléments supprimés pour récupérer un élément.
   
-1. Sur la **page balises de rétention** , cliquez](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur nouvelle icône nouvelle **balise** ![, puis sélectionnez **appliqué automatiquement à un dossier par défaut**. 
+1. Sur la **page balises de rétention** , cliquez](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur nouvelle icône nouvelle **balise** ![, puis sélectionnez **appliqué automatiquement à un dossier par défaut**. 
     
 2. Sur la **nouvelle balise appliquée automatiquement à une page de dossier par défaut** , renseignez les champs suivants : 
     
-    ![Paramètres permettant de créer une nouvelle balise de stratégie de rétention pour le dossier éléments supprimés](media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Paramètres permettant de créer une nouvelle balise de stratégie de rétention pour le dossier éléments supprimés](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
 1. **Name (nom** ) Tapez un nom pour la nouvelle balise de rétention. 
     
@@ -185,17 +185,17 @@ Une fois que vous avez créé les balises de rétention personnalisées, l’ét
   
 1. Dans le centre d’administration Exchange, accédez à \> **stratégies de rétention**de **gestion de la conformité** .
     
-2. Sur la page **stratégies de rétention** , cliquez](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur **nouvelle** ![icône.
+2. Sur la page **stratégies de rétention** , cliquez](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur **nouvelle** ![icône.
     
 3. Dans la zone **nom** , tapez un nom pour la nouvelle stratégie de rétention ; par exemple, **stratégie d’archivage et de suppression Alpine House**. 
     
-4. Sous **balises de rétention**,](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)cliquez sur **Ajouter** ![une nouvelle icône.
+4. Sous **balises de rétention**,](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)cliquez sur **Ajouter** ![une nouvelle icône.
     
     Une liste des balises de rétention de votre organisation s’affiche. Remarque les balises personnalisées que vous avez créées à l’étape 2 sont affichées.
     
 5. Ajoutez les 9 balises de rétention mises en surbrillance dans la capture d’écran suivante (ces balises sont décrites plus en détail dans la section [plus d’informations](#more-information) ). Pour ajouter une balise de rétention, sélectionnez-la, puis cliquez sur **Ajouter**. 
     
-    ![Ajouter des balises de rétention à la nouvelle stratégie de rétention](media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
+    ![Ajouter des balises de rétention à la nouvelle stratégie de rétention](../media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
   
     > [!TIP]
     > Vous pouvez sélectionner plusieurs balises de rétention en maintenant enfoncée la touche **CTRL** , puis en cliquant sur chaque balise. 
@@ -206,7 +206,7 @@ Une fois que vous avez créé les balises de rétention personnalisées, l’ét
     
     La nouvelle stratégie de rétention est affichée dans la liste. Sélectionnez-le pour afficher les balises de rétention associées dans le volet d’informations.
     
-    ![La nouvelle stratégie de rétention et la liste des balises de rétention liées](media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
+    ![La nouvelle stratégie de rétention et la liste des balises de rétention liées](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
   
 ## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>Étape 4 : affecter la nouvelle stratégie de rétention aux boîtes aux lettres utilisateur
 
@@ -228,7 +228,7 @@ Lorsqu’une nouvelle boîte aux lettres est créée, une stratégie de rétenti
     
 7. Pour vérifier que la nouvelle stratégie de rétention a été affectée à des boîtes aux lettres, vous pouvez effectuer les opérations suivantes : sélectionnez une boîte aux lettres dans la page boîtes aux lettres, puis cliquez sur modifier. 
     
-1. Sélectionnez une boîte aux lettres dans la page **boîtes aux lettres** , **puis cliquez sur** ![modifier](media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png). 
+1. Sélectionnez une boîte aux lettres dans la page **boîtes aux lettres** , **puis cliquez sur** ![modifier](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png). 
     
 2. Dans la page des propriétés de boîte aux lettres de l’utilisateur sélectionné, cliquez sur **fonctionnalités de boîte aux lettres**.
     

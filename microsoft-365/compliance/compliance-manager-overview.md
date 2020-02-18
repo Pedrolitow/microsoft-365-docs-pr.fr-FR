@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595791"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078665"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -45,7 +45,7 @@ Le gestionnaire de conformité utilise plusieurs composants pour vous aider dans
 
 Le diagramme illustre les relations entre les principaux composants du gestionnaire de conformité :
 
-![Relations dans le gestionnaire de conformité version 3](media/compliance-manager-relationships.png)
+![Relations dans le gestionnaire de conformité version 3](../media/compliance-manager-relationships.png)
 
 ## <a name="groups"></a>Groupes
 
@@ -77,7 +77,7 @@ Les [contrôles](working-with-compliance-manager.md#controls-and-actions) sont d
 - **ID d’article**: ce champ est uniquement destiné aux évaluations RGPD et spécifie le numéro d’article RGPD correspondant.
 - **Description**: texte de contrôle à partir de la certification ou de la réglementation correspondante. En raison des restrictions de copyright, un lien vers des informations pertinentes est affiché pour les normes ISO.
 
-![Contrôles dans le gestionnaire de conformité version 3](media/compliance-manager-controls.png)
+![Contrôles dans le gestionnaire de conformité version 3](../media/compliance-manager-controls.png)
 
 Il existe trois types de contrôles dans le gestionnaire de conformité, les **contrôles gérés par Microsoft**, les **contrôles gérés par le client**et les **contrôles de gestion partagés**
 

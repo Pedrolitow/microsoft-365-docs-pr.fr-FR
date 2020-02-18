@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Pour les administrateurs : Découvrez comment activer l’archivage à extension automatique dans Office 365, qui permet à vos utilisateurs de disposer d’un espace de stockage illimité pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l’archivage à extension automatique pour l’ensemble de votre organisation ou uniquement pour des utilisateurs spécifiques.'
-ms.openlocfilehash: d37243c65770ff7bbcce4cbe4cfd593b68b7a869
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0ca31372d99f0727a6da48be4d8276a533fbe3f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593205"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074685"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Activer l’archivage illimité dans Office 365 — aide de l’administrateur
 
@@ -102,7 +102,7 @@ Gardez les points suivants à l’esprit après avoir activé l’archivage à e
     
 - De même, les valeurs des propriétés de boîte aux lettres *ArchiveQuota* et *ArchiveWarningQuota* ne sont pas modifiées lorsque vous activez l’archivage à extension automatique. En fait, lorsque vous activez l’archivage à extension automatique pour une boîte aux lettres ** utilisateur et que la propriété `True`AutoExpandingArchiveEnabled est définie sur, les propriétés *ArchiveQuota* et *ArchiveWarningQuota* sont ignorées. Voici un exemple de ces propriétés de boîte aux lettres après que l’archivage en développement automatique est activé pour la boîte aux lettres d’un utilisateur. 
     
-    ![Les propriétés ArchiveQuota et ArchiveWarningQuota sont ignorées après l’activation de l’archivage à extension automatique](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
+    ![Les propriétés ArchiveQuota et ArchiveWarningQuota sont ignorées après l’activation de l’archivage à extension automatique](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
 ## <a name="more-information"></a>Plus d’informations
