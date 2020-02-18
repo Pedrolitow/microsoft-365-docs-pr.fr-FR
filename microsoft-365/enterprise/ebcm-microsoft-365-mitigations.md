@@ -1,6 +1,8 @@
 ---
 title: Atténuation de la gestion de la continuité d’activité Microsoft 365 Entreprise
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Voici quelques exemples d’atténuation pour les scénarios d’incident de service Microsoft 365.
-ms.openlocfilehash: c2eaa51bd6980893780f6e0534f33cac636ad716
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: ea9804d4f22a11ea9ffcda9d9939d70574c2e87e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831975"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601061"
 ---
 # <a name="service-incident-mitigation-strategies"></a>Stratégies d’atténuation des incidents de service
 

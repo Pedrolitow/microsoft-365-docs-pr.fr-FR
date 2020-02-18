@@ -1,6 +1,8 @@
 ---
 title: Compréhension de la gestion de la continuité d’activité d’entreprise avec les services Cloud
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez en quoi la planification et l’implémentation de la continuité d’activité sont différentes lorsque les services Cloud font partie de votre offre informatique.
-ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: ced840852aeef9949d005e431125ad2d659cba33
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831835"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597001"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Gestion de la continuité d’activité d’entreprise (EBCM) avec les services Cloud
 

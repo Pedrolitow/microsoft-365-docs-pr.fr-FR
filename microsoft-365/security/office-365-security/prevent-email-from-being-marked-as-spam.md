@@ -1,5 +1,7 @@
 ---
 title: Comment empêcher les faux positifs de se produire dans Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le moyen d’empêcher les faux positifs et de conserver les e-mails véritables en dehors du courrier indésirable dans Office 365, Exchange Online et Exchange Online Protection (EOP) en mode autonome.
-ms.openlocfilehash: 483bad168aa421e3fba4b0cc51e0b2e286f5701d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bf6149d21a5088e4507b65c6474918327faf3510
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809278"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598691"
 ---
 # <a name="how-to-prevent-good-email-messages-from-being-marked-as-spam-in-office-365"></a>Éviter le marquage de courrier régulier comme courrier indésirable dans Office 365
 
