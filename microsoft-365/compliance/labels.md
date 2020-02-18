@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de rétention pour classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: d10b47ccf85493f22d9ef5bdfa0e36e4e954c8a7
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 27f680bf2acf844618f133b074faf6f5ec3f7e90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957169"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072513"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -69,11 +69,11 @@ Vous créez des étiquettes de rétention dans le Centre de conformité Microsof
 
 La mise à disposition d’étiquettes pour permettre aux membres de votre organisation de classifier du contenu est un processus en deux étapes : vous commencez par créer les étiquettes de rétention, puis vous les publiez dans les emplacements de votre choix. Lorsque vous publiez des étiquettes de rétention, une stratégie de rétention d’étiquette est créée.
   
-![Diagramme des rôles et des tâches pour les étiquettes](media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
+![Diagramme des rôles et des tâches pour les étiquettes](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
   
 Les étiquettes de rétention sont des éléments constitutifs indépendants et réutilisables qui sont inclus dans une ou plusieurs stratégies de rétention d’étiquette. L’objectif principal d’une stratégie de rétention d’étiquette est de regrouper un ensemble d’étiquettes de rétention et de spécifier les emplacements où vous souhaitez voir apparaître ces étiquettes.
   
-![Diagramme des étiquettes, des stratégies d’étiquette et des emplacements](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
+![Diagramme des étiquettes, des stratégies d’étiquette et des emplacements](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
 1. Lorsque vous publiez des étiquettes, celles-ci sont incluses dans une stratégie d’étiquette. Veuillez noter que les noms d’étiquettes de conservation sont définitifs et ne peuvent plus être modifiés une fois créés.
 
@@ -112,13 +112,13 @@ Lorsque vous publiez ou appliquez automatiquement des étiquettes de rétention,
 
 Si vous publiez des étiquettes de rétention sur SharePoint ou OneDrive, cela peut prendre un jour pour que ces étiquettes soient visibles pour les utilisateurs finals. De plus, si vous publiez des étiquettes de rétention sur Exchange, cela peut prendre 7 jours pour que ces étiquettes soient visibles pour les utilisateurs finals, et la boîte aux lettres doit contenir au moins 10 Mo de données.
   
-![Diagramme de la date d’effet des étiquettes manuelles](media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
+![Diagramme de la date d’effet des étiquettes manuelles](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 ### <a name="auto-apply-retention-labels"></a>Étiquettes de rétention appliquées automatiquement
 
 Si vous appliquez automatiquement des étiquettes de rétention à du contenu remplissant des critères spécifiques, l’application de ces étiquettes à ce contenu peut prendre jusqu’à 7 jours.
   
-![Diagramme indiquant quand les étiquettes d’application automatique prennent effet](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![Diagramme indiquant quand les étiquettes d’application automatique prennent effet](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Vérifier l’état des étiquettes de rétention publiées dans Exchange
 
@@ -168,7 +168,7 @@ En outre, une étiquette de rétention dispose de deux options de rétention qui
     
 - Démarrer la période de rétention à compter de la date d’étiquetage du contenu, au lieu de l’ancienneté du contenu ou de la date de sa dernière modification. Cette option s'applique uniquement au contenu des sites SharePoint et des comptes OneDrive. Pour la messagerie Exchange, la période de rétention est toujours basée sur la date à laquelle le message a été envoyé ou reçu, quelle que soit l’option choisie.
     
-![Paramètres de rétention avec les options spécifiques des étiquettes](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+![Paramètres de rétention avec les options spécifiques des étiquettes](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
 ## <a name="where-published-retention-labels-can-appear-to-end-users"></a>Emplacements des étiquettes de rétention publiées visibles pour les utilisateurs finals
 
@@ -190,11 +190,11 @@ Les sections indiquées ci-dessous montrent comment les étiquettes apparaissent
 
 Pour étiqueter un élément dans Outlook sur le web, cliquez sur l’élément \> **Affecter une stratégie** \> et choisissez l’étiquette de rétention. 
   
-![Menu Affecter une stratégie dans Outlook sur le web](media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
+![Menu Affecter une stratégie dans Outlook sur le web](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   
 Après avoir appliqué l’étiquette de rétention, vous pouvez l’afficher, ainsi que son action, en haut de l’élément. Si un e-mail est classé et associé à une période de rétention, vous pouvez connaître en un clin d’œil la date d’expiration de l’e-mail.
   
-![Étiquette affectée à un e-mail dans Outlook sur le web](media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
+![Étiquette affectée à un e-mail dans Outlook sur le web](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
 Vous pouvez également appliquer des étiquettes de rétention à des dossiers. Dans ce cas, tenez compte des points suivants :
   
@@ -210,7 +210,7 @@ Vous pouvez également appliquer des étiquettes de rétention à des dossiers. 
 
 Pour étiqueter un élément dans le client de bureau Outlook, sélectionnez l’élément. Sous l’onglet **Accueil** du ruban, cliquez sur **Attribuer une stratégie**, puis sélectionnez l’étiquette de rétention. 
   
-![Bouton Attribuer une stratégie](media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
+![Bouton Attribuer une stratégie](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
 Vous pouvez également cliquer avec le bouton droit sur un élément, cliquer sur **Attribuer une stratégie** dans le menu contextuel, puis choisir l’étiquette de rétention. 
 
@@ -220,19 +220,19 @@ Vous pouvez également appliquer des étiquettes de rétention à des dossiers. 
   
 ### <a name="onedrive-and-sharepoint"></a>OneDrive et SharePoint
 
-Pour étiqueter un document (notamment les fichiers OneNote) dans OneDrive ou SharePoint, sélectionnez l’élément \> dans le coin supérieur droit, sélectionnez **Ouvrir le volet d’informations**![icône Volet d’informations](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Appliquer une étiquette de rétention** \> et choisissez l’étiquette de rétention. 
+Pour étiqueter un document (notamment les fichiers OneNote) dans OneDrive ou SharePoint, sélectionnez l’élément \> dans le coin supérieur droit, sélectionnez **Ouvrir le volet d’informations**![icône Volet d’informations](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Appliquer une étiquette de rétention** \> et choisissez l’étiquette de rétention. 
   
 Vous pouvez également appliquer une étiquette de rétention à un ensemble de dossiers ou de documents, et vous pouvez définir une étiquette de rétention par défaut pour une bibliothèque de documents. Consultez la rubrique ci-dessous pour plus d’informations.
   
-![Liste Appliquer l’étiquette pour un élément dans SharePoint](media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
+![Liste Appliquer l’étiquette pour un élément dans SharePoint](../media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
   
 Après avoir appliqué une étiquette de rétention à un élément, vous pouvez l’afficher dans le volet d’informations lorsque cet élément est sélectionné.
   
-![Étiquette appliquée apparaissant dans le volet d’informations](media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
+![Étiquette appliquée apparaissant dans le volet d’informations](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 Vous pouvez également créer un affichage de la bibliothèque qui contient la colonne **Étiquettes** ou la colonne **Élément est un enregistrement**, afin que vous puissiez voir en un clin d’œil les étiquettes de rétention attribuées à tous les éléments, et les éléments qui sont des enregistrements. Toutefois, notez que vous ne pouvez pas filtrer l’affichage par la colonne **Élément est un enregistrement**. 
   
-![Colonne Bibliothèque pour les étiquettes apparaissant dans l’affichage personnalisé](media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
+![Colonne Bibliothèque pour les étiquettes apparaissant dans l’affichage personnalisé](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
 ### <a name="office-365-groups"></a>Groupes Office 365
 
@@ -246,7 +246,7 @@ De plus, il n’est pas possible d’utiliser l’emplacement Exchange pour incl
 
 L’une des fonctionnalités les plus puissantes des étiquettes de rétention est la possibilité d’appliquer celles-ci automatiquement à tout contenu correspondant à certaines conditions. Dans ce cas, les personnes au sein de votre organisation ne doivent pas appliquer les étiquettes de rétention. Office 365 s’en charge à leur place.
   
-![Diagramme des rôles et des tâches pour les étiquettes à appliquer automatiquement](media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![Diagramme des rôles et des tâches pour les étiquettes à appliquer automatiquement](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
 Les étiquettes de rétention à appliquer automatiquement sont puissantes pour les raisons suivantes :
   
@@ -262,7 +262,7 @@ Vous pouvez choisir d’appliquer automatiquement des étiquettes de rétention 
     
 - des mots clés spécifiques correspondant à une requête que vous créez.
     
-![Page Choisir une condition pour l’étiquette à appliquer automatiquement](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+![Page Choisir une condition pour l’étiquette à appliquer automatiquement](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 
 Les étiquettes de rétention à appliquer automatiquement requièrent un abonnement Office 365 Entreprise E5. Cela peut prendre jusqu’à sept jours pour que les étiquettes de rétention à appliquer automatiquement soient appliquées à tout le contenu remplissant les conditions, comme décrit ci-dessus.
@@ -274,7 +274,7 @@ Les étiquettes de rétention à appliquer automatiquement requièrent un abonne
 
 Lorsque vous créez des étiquettes de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données. Chaque modèle de stratégie est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Par exemple, le modèle illustré ici recherche les numéros ITIN, SSN et de passeport américains. Pour plus d’informations sur la protection contre la perte de données, voir [Vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md).
   
-![Modèles de stratégie avec des types d’informations sensibles](media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![Modèles de stratégie avec des types d’informations sensibles](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
   
 Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supprimer tout type d’informations sensibles, et vous pouvez modifier le nombre d’instances et la précision de correspondance. Dans l’exemple présenté ici, une étiquette de rétention sera appliquée automatiquement uniquement dans les cas suivants :
   
@@ -284,7 +284,7 @@ Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supp
     
 Pour plus d’informations relatives à ces options, voir[optimisation des règles afin de les rendre plus facile ou plus difficile à associer](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
-![Options permettant d’identifier les types d’informations sensibles](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
+![Options permettant d’identifier les types d’informations sensibles](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
 ### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Application automatique d’étiquettes au contenu comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche
 
@@ -308,7 +308,7 @@ Exemples de requêtes :
     - contenttype:contract
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
-![Éditeur de requête](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+![Éditeur de requête](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint
 
@@ -318,7 +318,7 @@ Pour une bibliothèque de documents, cette opération s’effectue sur la page *
   
 Par exemple, si vous avez une balise pour des documents marketing et vous savez qu’une bibliothèque de documents spécifique contient uniquement ce type de contenu, vous pouvez définir la balise Document marketing par défaut pour tous les documents de cette bibliothèque.
   
-![Option Appliquer l’étiquette sur la page Paramètres de la bibliothèque](media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
+![Option Appliquer l’étiquette sur la page Paramètres de la bibliothèque](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
 Si vous appliquez une étiquette de rétention par défaut à des éléments existants dans la bibliothèque, le dossier ou l’ensemble de documents, procédez comme suit :
   
@@ -340,7 +340,7 @@ Par exemple, vous pouvez créer une règle qui applique une étiquette de réten
   
 Pour créer une règle, faites un clic droit sur un élément \> **Règles** \> **Créer une règle** \> **Options avancées** \> **Assistant de règles** \> **appliquez la stratégie de rétention**.
   
-![Assistant de règles avec option pour appliquer les stratégies de rétention](media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
+![Assistant de règles avec option pour appliquer les stratégies de rétention](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
   
 ## <a name="classifying-content-without-applying-any-actions"></a>Classification de contenu sans appliquer d’action
 
@@ -348,7 +348,7 @@ Lorsque vous créez une étiquette de rétention, vous pouvez le faire sans acti
   
 Par exemple, vous pouvez créer une étiquette de rétention nommée « Réviser plus tard » sans action, puis appliquer automatiquement cette étiquette de rétention au contenu avec des types d’informations sensibles ou au contenu recherché.
   
-![Page Paramètres d’étiquette avec rétention désactivée](media/17ce863b-a823-426e-aaad-83718465f762.png)
+![Page Paramètres d’étiquette avec rétention désactivée](../media/17ce863b-a823-426e-aaad-83718465f762.png)
   
 ## <a name="using-retention-labels-for-records-management"></a>Utilisation d’étiquettes de rétention pour la gestion des enregistrements
     
@@ -370,7 +370,7 @@ Après avoir publié ou appliqué automatiquement vos étiquettes de rétention,
     
 - **Rapports de gouvernance des données**. Grâce à ces rapports, vous pouvez rapidement afficher les activités et les tendances des étiquettes de rétention pour tout le contenu dans Exchange, SharePoint et OneDrive Entreprise au cours des 90 derniers jours. Pour obtenir plus d’informations, consultez l’article [Affichage des rapports de gouvernance des données](view-the-data-governance-reports.md).
     
-![Explorateur d’activité des étiquettes](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+![Explorateur d’activité des étiquettes](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>Utilisation de la recherche de contenu pour rechercher tout le contenu portant une étiquette de rétention spécifique
 
@@ -378,13 +378,13 @@ Lorsque les étiquettes de rétention sont affectées au contenu par les utilisa
   
 Lorsque vous créez une recherche de contenu, sélectionnez la condition **Balise de conformité**, puis saisissez l’intégralité ou une partie du nom de l’étiquette et utilisez un caractère générique. Pour obtenir plus d’informations, consultez l’article [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
-![Condition Balise de conformité](media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Condition Balise de conformité](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Principes de rétention et priorité
 
 Il est possible, voire même probable, que le contenu fasse l’objet de plusieurs stratégies de rétention, chacune avec une action (conservation, suppression ou les deux) et une période de rétention différentes. Laquelle est prioritaire ? Au plus haut niveau, sachez que le contenu conservé par une stratégie ne peut pas être supprimé définitivement par une autre stratégie.
   
-![Diagramme des principes de rétention](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagramme des principes de rétention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 Pour comprendre comment les différentes étiquettes avec des actions de rétention s’appliquent au contenu, prenez en compte les principes de rétention suivants :
   

@@ -1,5 +1,7 @@
 ---
 title: 'Étape 6 : déploiement de système d’exploitation et mises à jour des fonctionnalités'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les options dédiées au déploiement de système d’exploitation et aux mises à jour des fonctionnalités.
-ms.openlocfilehash: 7da7c9ade2be43e8c60726bafd69cc7939b7bddc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112678"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085215"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Étape 6 : déploiement de système d’exploitation et mises à jour des fonctionnalités
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
 <td><p><strong>Étape 6 : déploiement du système d’exploitation et mises à jour des fonctionnalités</strong></p>
 <p>Le déploiement basé sur une séquence de tâches sert à automatiser un déploiement progressif à grande échelle pour les installations complètes, l’actualisation et le remplacement de PC. Les séquences de tâches de mise à niveau vous permettront également d’installer les principales mises à jour semi-annuelles. Windows Autopilot est un ajout récent qui modernise le processus d’acquisition d’un nouveau PC.</p></td>
-<td><a href="https://aka.ms/ddev6" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev6" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -81,7 +83,7 @@ La mise à niveau sur place utilise l’installation de Windows. Le moteur de co
 
 [Validation de la pré-mise à niveau de Windows 10 à l’aide de setup.exe](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/)
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-3.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-3.png)
 
 Le scénario de mise à niveau sur place peut être utilisé pour migrer vers Windows 10 à partir d’anciennes versions de Windows, ainsi que pour mettre à niveau des versions précédentes de Windows 10. Une fois que l’installation de Windows a terminé la mise à niveau, votre séquence de tâches peut continuer à s’exécuter et à mettre à niveau des applications comme Office, à remplacer des pilotes et à appliquer les paramètres de personnalisation. De même, vous pouvez utiliser la séquence de tâches de mise à niveau pour effectuer des tâches préalables à l’installation ou des vérifications avant de procéder à la mise à niveau.
 
@@ -93,7 +95,7 @@ Le scénario de mise à niveau sur place peut être utilisé pour migrer vers Wi
 
 À mesure de préparer votre déploiement, vous allez cibler des ordinateurs pour un déploiement complet, une actualisation, un remplacement et une mise à niveau. Dans ce cas, nous vous conseillons d’effectuer un déploiement progressif sur un ensemble d’ordinateurs similaires. Vous pourrez ainsi valider la compatibilité, la livraison et l’automatisation, l’acceptation des utilisateurs, la consommation de bande passante réseau et d’autres facteurs avant d’augmenter l’échelle de votre déploiement.
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
 ### <a name="recommended-tools-microsoft-endpoint-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Outils recommandés : Configuration Manager (Current Branch) et Microsoft Deployment Toolkit
 
@@ -103,7 +105,7 @@ Quel que soit le type de déploiement que vous choisissez, il est préférable q
 
   - L’autre option de déploiement populaire est l’application gratuite ** [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit) ** (MDT) qui est généralement utilisée par de petites et moyennes organisations pour le déploiement de système d’exploitation. Cette approche ne nécessite que très peu d’infrastructure. MDT s’intègre aux Services de déploiement Windows (WDS) pour le démarrage réseau. L’application prend en charge les quatre types de déploiement ainsi que l’installation d’applications, les pilotes et les paramètres. MDT peut même s’intégrer au gestionnaire de configuration.
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 

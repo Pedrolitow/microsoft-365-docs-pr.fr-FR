@@ -1,6 +1,8 @@
 ---
 title: Infrastructure informatique et besoins métier de Contoso
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la manière dont les besoins métier ont été satisfaits par Microsoft 365 Entreprise.
-ms.openlocfilehash: d98f401ae4a39e3e04b5840e8f76c1e3e1b1a24d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3cee0f3e6cd20b0d93038595cdab9270c8eb30aa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802069"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068384"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastructure informatique et besoins métier de Contoso
 
@@ -30,7 +32,7 @@ Contoso utilise une infrastructure informatique locale centralisée avec des cen
 
 La Figure 1 présente le siège social avec les centres de données d’applications, un DMZ et Internet.
 
-![Infrastructure informatique actuelle de Contoso](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Infrastructure informatique actuelle de Contoso](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **Figure 1 : Infrastructure informatique existante de Contoso**
  

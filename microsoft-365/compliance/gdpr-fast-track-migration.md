@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 89ddb00045e2a17821ef2e841ad9a9b4c38d2219
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c5b79c29c6946ae66e53073189376e858e3d978b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596461"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073293"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>Ensemble d’outils de migration FastTrack pour envoyer une demande de suppression
 
@@ -49,9 +49,9 @@ Microsoft prend en charge la version initiale de cet ensemble d’outils dans la
 
 Cet ensemble d’outils est disponible dans la galerie PowerShell sur l’application console PowerShell. Pour rechercher et charger ce module de cmdlet, ouvrez tout d’abord PowerShell en mode administrateur afin d’être autorisé à installer le module. Si vous n’avez jamais utilisé PowerShell, accédez à la barre des tâches Windows et saisissez « PowerShell » dans la zone de recherche. Faites un clic droit sur l’application console pour la sélectionner, choisissez **Exécuter en tant qu’administrateur**, puis cliquez sur **Oui** pour exécuter Windows PowerShell.
 
-![PowerShell : exécuter en tant qu’administrateur](media/fasttrack-powershell_image.png)
+![PowerShell : exécuter en tant qu’administrateur](../media/fasttrack-powershell_image.png)
 
-![PowerShell : autoriser l’application à apporter des modifications](media/fasttrack-run-powershell_image.png)
+![PowerShell : autoriser l’application à apporter des modifications](../media/fasttrack-run-powershell_image.png)
 
 À présent que la console est ouverte, vous devez définir des autorisations pour l’exécution des scripts. Saisissez la commande suivante pour autoriser l’exécution des scripts : « Set-ExecutionPolicy ; ExecutionPolicy: Bypass ; Scope: Process »
 
@@ -59,7 +59,7 @@ Vous serez invité à confirmer cette action, car l’administrateur peut modifi
 
 ***Définir la stratégie d’exécution***
 
-![Définir la modification de la stratégie d’exécution dans PowerShell](media/powershell-set-execution-policy_image.png)
+![Définir la modification de la stratégie d’exécution dans PowerShell](../media/powershell-set-execution-policy_image.png)
 
 À présent que la console est configurée pour autoriser le script, exécutez la commande suivante pour installer le module :
 

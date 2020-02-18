@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: 5e2a1e328888a6aadf5c3057bbe7882ac0f72fbe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d19e18fa2c701996306f5b2e567ea01708d96144
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079207"
+ms.locfileid: "42091315"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
@@ -61,9 +61,9 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal 
 
     ![La page Recherche dans le journal d’audit](../media/AuditLogRetentionPolicy1.png)
 
-3. Cliquez sur **Nouvelle stratégie de rétention**, puis complétez les champs suivants dans la page de menu volant :
+3. Cliquez sur **Nouvelle stratégie de rétention d'audit**, puis complétez les champs suivants dans la page de menu volant :
 
-    ![Page de menu volant de la stratégie de rétention de journal d'audit](../media/AuditLogRetentionPolicy2.png)
+    ![Page de menu volant de la stratégie de rétention d'audit](../media/AuditLogRetentionPolicy2.png)
 
    a. **Nom :** le nom de la stratégie de rétention du journal d’audit. Ce nom doit être unique dans toute votre organisation.
    

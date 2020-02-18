@@ -1,5 +1,7 @@
 ---
 title: Protéger des fichiers dans Teams avec des étiquettes de rétention et la protection contre la perte de données (DLP)
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Résumé : appliquez des étiquettes de rétention et des stratégies DLP à des fichiers dans Teams, avec différents niveaux de protection des informations.'
-ms.openlocfilehash: 89320a074d5d52062268a7585081849ac42d2025
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 94d8a02d0ea88fa8a05cd6a2c95a2db866d72fad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925780"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083395"
 ---
 # <a name="protect-files-in-teams-with-retention-labels-and-dlp"></a>Protéger des fichiers dans Teams avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 
@@ -114,7 +116,7 @@ Utilisez ces étapes pour appliquer les étiquettes de rétention aux dossiers d
     
 Voici la configuration finale.
   
-![Étiquettes de rétention des quatre types de sites SharePoint sous-jacents.](../media/retention-labels.png)
+![Étiquettes de rétention des quatre types de sites SharePoint sous-jacents.](../../media/retention-labels.png)
   
 ## <a name="dlp-policies-for-your-underlying-sharepoint-sites"></a>Stratégies DLP pour vos sites SharePoint sous-jacents
 
@@ -165,7 +167,7 @@ Suivez ces étapes pour configurer une stratégie DLP qui avertit les utilisate
     
 Voici le résultat de votre configuration pour les équipes sensibles.
   
-![Stratégie DLP pour équipe sensible utilisant l’étiquette de rétention Sensible](../media/retention-labels-sensitive-dlp.png)
+![Stratégie DLP pour équipe sensible utilisant l’étiquette de rétention Sensible](../../media/retention-labels-sensitive-dlp.png)
   
 Ensuite, suivez ces étapes pour configurer une stratégie DLP qui bloque les utilisateurs lorsqu’ils partagent un document sur un site SharePoint sous-jacent externe à l’organisation.
   
@@ -211,7 +213,7 @@ Ensuite, suivez ces étapes pour configurer une stratégie DLP qui bloque les u
     
 Voici le résultat de votre configuration pour les équipes Hautement confidentielles.
   
-![Stratégie DLP pour une équipe de haute confidentialité utilisant l’étiquette de rétention Hautement confidentiel](../media/retention-labels-highly-confidential-dlp.png)
+![Stratégie DLP pour une équipe de haute confidentialité utilisant l’étiquette de rétention Hautement confidentiel](../../media/retention-labels-highly-confidential-dlp.png)
   
 ## <a name="next-step"></a>Étape suivante
 

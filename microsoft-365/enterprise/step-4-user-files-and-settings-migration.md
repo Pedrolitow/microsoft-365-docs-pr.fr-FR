@@ -1,5 +1,7 @@
 ---
 title: 'Étape 4 : migration des paramètres et des fichiers utilisateur'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,25 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment migrer des paramètres et des fichiers utilisateur.
-ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112568"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085286"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Étape 4 : migration des paramètres et des fichiers utilisateur
 
 Le déplacement de fichiers et paramètres d’utilisateurs vers des ordinateurs nouveaux ou actualisés est un processus critique. Tout échec est exclu. Vous pouvez migrer chaque PC manuellement ou choisir l’un des modes d’automatisation du processus. Quelle que soit la méthode de migration choisie, vous devez prendre en compte trois grands aspects : le transfert des fichiers et paramètres des utilisateurs, la gestion du démarrage de Windows 10 et la disposition de la barre des tâches.
 
-![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
+![](../media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
 <td><p><strong>Étape 4 : paramètres et fichiers utilisateur</strong></p>
 <p>Lorsque vous actualisez ou remplacez des PC, gagnez du temps en automatisant la sauvegarde et la restauration de l’état utilisateur. De nouvelles options dédiées à la synchronisation des fichiers cloud vous permettent d’appliquer, par utilisateur, la synchronisation des dossiers Bureau, Documents et Images avec OneDrive afin d’assurer un accès transparent aux fichiers à partir de nouvelles installations de Windows.</p></td>
-<td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev4" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
 

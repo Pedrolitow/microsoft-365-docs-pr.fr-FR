@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les groupes Office 365, les groupes Yammer et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: 8de78da9328d7f8c0a76edab5703821bdb0e6099
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9fdf5359538209d0793211632979fae1b332d13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595721"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078389"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -52,9 +52,9 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
     
 2. Cliquez sur**Recherche** \> **Recherche de contenu**.
     
-3. Sur la page de**recherche**, cliquez sur la flèche en regard de ![ajouter une icône](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nouvelle recherche**. 
+3. Sur la page de**recherche**, cliquez sur la flèche en regard de ![ajouter une icône](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nouvelle recherche**. 
     
-    ![Liste déroulante Nouvelle recherche](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+    ![Liste déroulante Nouvelle recherche](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     Vous pouvez choisir l’une des options suivantes :
     
@@ -70,7 +70,7 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
     
 5. Sous **requête de recherche**, spécifiez les éléments suivants :
     
-    ![Spécifier les mots clés, les conditions et les emplacements à rechercher](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![Spécifier les mots clés, les conditions et les emplacements à rechercher](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
    - **Mots clés à Rechercher :** tapez une requête de recherche dans la zone**Mots clés**. Vous pouvez spécifier des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone du mot clé vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche.
     
@@ -89,7 +89,7 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
     
       - **Emplacements spécifiques :** Utilisez cette option pour rechercher des emplacements de contenu spécifiques. Vous pouvez effectuer une recherche dans tous les emplacements de contenu pour un service Office 365 spécifique (par exemple, la recherche dans toutes les boîtes aux lettres Exchange ou la recherche dans tous les sites SharePoint), ou vous pouvez rechercher du contenu dans des emplacements spécifiques de l’un des services Office 365 affichés. 
     
-        ![Interface utilisateur permettant de choisir les emplacements de contenu à rechercher](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![Interface utilisateur permettant de choisir les emplacements de contenu à rechercher](../media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
          Vous pouvez également ajouter des groupes de distribution à la liste des boîtes aux lettres Exchange dans laquelle effectuer la recherche. Pour les groupes de distribution, la recherche porte sur les boîtes aux lettres des membres du groupe. L’utilisation de groupes de distribution dynamique n’est pas prise en charge.
     
@@ -106,13 +106,13 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
     
 Pour accéder de nouveau à la recherche de contenu ou accéder aux recherches de contenu répertoriées sur la page **recherche de contenu**, sélectionnez la recherche, puis cliquez sur **Ouvrir**. 
   
-Pour effacer les résultats ou créer une autre recherche, cliquez sur ![ajouter une icône](media/O365-MDM-CreatePolicy-AddIcon.gif)**nouvelle recherche**. 
+Pour effacer les résultats ou créer une autre recherche, cliquez sur ![ajouter une icône](../media/O365-MDM-CreatePolicy-AddIcon.gif)**nouvelle recherche**. 
   
 ## <a name="preview-search-results"></a>Aperçu des résultats de la recherche
 
 Il y a deux paramètres de configuration pour afficher un aperçu des résultats de la recherche. Une fois que vous avez exécuté une nouvelle recherche ou ouvert une recherche existante, cliquez sur **Résultats individuels** pour afficher les paramètres d’aperçu suivants : 
   
-![Paramètres aperçu des résultats de la recherche](media/83519477-1c85-4442-8886-481f186fd758.png)
+![Paramètres aperçu des résultats de la recherche](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
 1. **Aperçu des résultats automatique** : ce paramètre affiche les résultats de la recherche après l’exécution d’une recherche.
     
@@ -157,7 +157,7 @@ Exporter les résultats de la recherche :
   
 1. Sur la page **Recherche de contenu**, cliquer sur la recherche dont les résultats doivent être exportés. 
     
-2. Dans la page flyout, cliquez sur l’icône![exporter les résultats de la recherche](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png), ** plus**, puis cliquez sur **Exporter les résultats**. Vous pouvez également exporter un rapport des résultats de la recherche.
+2. Dans la page flyout, cliquez sur l’icône![exporter les résultats de la recherche](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png), ** plus**, puis cliquez sur **Exporter les résultats**. Vous pouvez également exporter un rapport des résultats de la recherche.
     
 3. Complétez les sections sur la page de passage des **résultats à l’exportation**. Veillez à utiliser la barre de défilement pour afficher toutes les options d’exportation. 
     
@@ -217,21 +217,21 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
     
     **Incorrect**
     
-    ![Procédure incorrecte de mise en forme d’une liste de mots clés (en collant la liste dans la zone mot clé)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![Procédure incorrecte de mise en forme d’une liste de mots clés (en collant la liste dans la zone mot clé)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
     **Correct**
     
-    ![La façon correcte de mettre en forme une liste de mots clés (en sélectionnant la case à cocher, puis en collant la liste)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![La façon correcte de mettre en forme une liste de mots clés (en sélectionnant la case à cocher, puis en collant la liste)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
 - Vous pouvez également préparer une liste de mots clés ou d’expressions de mots clés dans un fichier Excel ou un fichier texte brut, puis copier et coller votre liste dans la liste de mots clés. Pour ce faire, vous devez activer la case à cocher **afficher la liste de mots clés**. Cliquez ensuite sur la première ligne de la liste de mots clés, puis collez votre liste. Chaque ligne du fichier Excel ou texte est copiée dans une ligne distincte de la liste des mots clés. 
     
 - Une fois que vous avez créé une requête à l’aide de la liste de mots clés, nous vous conseillons de vérifier la syntaxe de requête de recherche pour faire en sorte que la requête corresponde à ce que vous souhaitez. Dans la requête de recherche affichée sous **requête**, dans le volet Détails, les mots clés sont séparés par le texte **(c:s)**. Cela indique que les mots clés sont connectés à l’aide d’un opérateur logique similaire à une fonctionnalité à l’opérateur **ou**. De même, si votre requête de recherche inclut des conditions, les mots clés et les conditions sont séparés par le texte **(c:c)**. Cela indique que les mots clés sont connectés aux conditions à l’aide d’un opérateur logique similaire à une fonctionnalité à l’opérateur **ET**. Voici un exemple de requête de recherche (affichée dans le volet Détails) qui résulte de l’utilisation de la liste de mots clés et d’une condition. 
     
-    ![Exemple de requête créée lors de l’utilisation de la liste de mots clés et d’une condition](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Exemple de requête créée lors de l’utilisation de la liste de mots clés et d’une condition](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
 - Lorsque vous effectuez une recherche de contenu, Office 365 vérifie automatiquement la présence de caractères non pris en charge et d’opérateurs booléens qui ne sont pas en majuscules dans votre requête de recherche. En règle générale, les caractères non pris en charge sont masqués et entraînent une erreur ou renvoient des résultats inattendus. Pour plus d’informations sur les caractères non pris en charge qui ont été vérifiés, voir [vérifier la présence d’erreurs dans votre requête de recherche de contenu](check-your-content-search-query-for-errors.md).
     
-- Si vous avez une requête de recherche qui contient des mots clés pour les caractères non anglais (tels que les caractères chinois) , vous pouvez cliquer sur l'icône **langue-pays/région**![requête pays/région dans la recherche de contenu ](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionner une valeur de code de culture dans le pays/région pour la recherche. La langue/région par défaut est neutre. Comment savoir si vous avez besoin de modifier le paramètre de langue d’une recherche de contenu ? Si vous êtes certain que les emplacements de contenu contiennent les caractères non anglais que vous recherchez, mais que la recherche ne renvoie aucun résultat, le paramètre de langue peut être à l’origine du problème. 
+- Si vous avez une requête de recherche qui contient des mots clés pour les caractères non anglais (tels que les caractères chinois) , vous pouvez cliquer sur l'icône **langue-pays/région**![requête pays/région dans la recherche de contenu ](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionner une valeur de code de culture dans le pays/région pour la recherche. La langue/région par défaut est neutre. Comment savoir si vous avez besoin de modifier le paramètre de langue d’une recherche de contenu ? Si vous êtes certain que les emplacements de contenu contiennent les caractères non anglais que vous recherchez, mais que la recherche ne renvoie aucun résultat, le paramètre de langue peut être à l’origine du problème. 
   
 ### <a name="searching-onedrive-accounts"></a>Recherche de comptes OneDrive
 
@@ -299,17 +299,17 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
   Dans les résultats de la recherche, les résumés de la réunion sont identifiés en tant que **réunion** dans le**champ type** et les résumés d’appels sont identifiés en tant qu’**appel**. De plus, les conversations qui font partie d’une chaîne de Teams et de conversations 1xN sont identifiées en tant que **messages instantanés** dans le **champ type**.
   
-  ![Les réunions, les appels et les conversations 1xN de Teams sont identifiés dans le champ type.](media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Les réunions, les appels et les conversations 1xN de Teams sont identifiés dans le champ type.](../media/O365-ContentSearch-Teams-MessageKind.png)
 
 - Vous pouvez utiliser la propriété**type de courrier**ou la condition de recherche **type de message** pour rechercher spécifiquement du contenu dans Teams. 
   
   - Pour utiliser la propriété**Type** dans le cadre de la requête de recherche par mot clé, dans la zone **Mots clés** d'une requête de recherche, tapez`kind:microsoftteams`.
 
-    ![Utilisez type:microsoftteams dans la zone Mots clés](media/O365-ContentSearch-Teams-Keywords.png)
+    ![Utilisez type:microsoftteams dans la zone Mots clés](../media/O365-ContentSearch-Teams-Keywords.png)
   
   - Pour utiliser une condition de recherche, ajoutez la condition **type de message** et utilisez la valeur`microsoftteams`. 
 
-    ![Utilisez la condition type de message avec la valeur microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![Utilisez la condition type de message avec la valeur microsoftteams.](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 Les conditions sont logiquement connectées à la requête de mot clé par l’opérateur **et**. Cela signifie qu’un élément doit correspondre à la requête de mot clé et à la condition de recherche à renvoyer dans les résultats de la recherche. Pour obtenir plus d’informations, reportez-vous à la rubrique «Guide des conditions d’utilisation» dans[Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
@@ -326,15 +326,15 @@ Vous pouvez utiliser la propriété d’e-mail **ItemClass** ou la condition de 
   
     Par exemple, vous pouvez utiliser la requête de recherche suivante pour renvoyer des messages Yammer et des éléments de compliment Yammer :
 
-    ![Utiliser la propriété ItemClass pour rechercher des éléments Yammer](media/YammerContentSearch1.png)
+    ![Utiliser la propriété ItemClass pour rechercher des éléments Yammer](../media/YammerContentSearch1.png)
   
   - Vous pouvez également utiliser la condition de **Type** e-mail et sélectionner les **messages Yammer** pour renvoyer les éléments Yammer. Par exemple, la requête de recherche suivante renvoie tous les éléments de conversation Yammer qui contiennent le mot clé « confidentiel ». 
 
-    ![Utiliser la carte de condition Type pour rechercher des éléments de conversation Yammer](media/YammerContentSearch2.png)
+    ![Utiliser la carte de condition Type pour rechercher des éléments de conversation Yammer](../media/YammerContentSearch2.png)
 
 ### <a name="searching-inactive-mailboxes"></a>Recherche des boîtes aux lettres inactives
 
-Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Gouvernance des informations** \> **Rétention** dans le centre de sécurité & conformité, puis cliquer sur **Plus**![Barre de navigation : sélections](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **boîtes aux lettres inactives**.
+Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Gouvernance des informations** \> **Rétention** dans le centre de sécurité & conformité, puis cliquer sur **Plus**![Barre de navigation : sélections](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **boîtes aux lettres inactives**.
   
 Voici quelques éléments à prendre en considération lors de la recherche de boîtes aux lettres inactives.
 

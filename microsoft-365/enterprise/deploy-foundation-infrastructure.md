@@ -1,6 +1,8 @@
 ---
 title: Infrastructure de base de Microsoft 365 pour entreprise
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez les phases principales du déploiement de l’infrastructure de base Microsoft 365 pour entreprise au sein de votre organisation, également appelé déploiement de base.
-ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 26f95b9e7fb951910b983defb8b80162f39c37a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801959"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067974"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infrastructure de base de Microsoft 365 pour entreprise
 
@@ -28,12 +30,12 @@ Pour une trajectoire définie pour le déploiement de bout en bout, vous pouvez 
 
 | | Phase | Résultats |
 |:-------|:-----|:-----|
-|![Phase 1 : Mise en réseau](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1 : Mise en réseau](networking-infrastructure.md)| Votre réseau est optimisé pour l’accès aux services de Microsoft 365 basés sur le cloud. |
-|![Phase 2 : Identité](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2 : Identité](identity-infrastructure.md)| Vos comptes d’administrateur sont protégés, vos utilisateurs et groupes sont synchronisés, et l’authentification utilisateur est forte. |
-|![Phase 3 : Windows 10 Entreprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3 : Windows 10 Entreprise](windows10-infrastructure.md)| Vos ordinateurs exécutant Windows 10 ou Windows 10 peuvent bénéficier d’une mise à niveau vers Windows 10 Entreprise, et les nouveaux appareils sont installés avec Windows 10 Entreprise. |
-|![Phase 4 : Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4 : Office 365 ProPlus](office365proplus-infrastructure.md)| Vos utilisateurs existants de Microsoft Office peuvent bénéficier d’une mise à niveau vers Office 365 ProPlus. |
-|![Phase 5 : Gestion des appareils mobiles](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5 : Gestion des appareils mobiles](mobility-infrastructure.md)| Vos appareils peuvent être inscrit et gérés. |
-|![Phase 6 : Protection des informations](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6 : Protection des informations](infoprotect-infrastructure.md)| Les fonctionnalités de sécurité d’Office 365 sont activées et vos étiquettes et stratégies sont prêtes à protéger les documents et les courriers. |
+|![Phase 1 : Mise en réseau](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1 : Mise en réseau](networking-infrastructure.md)| Votre réseau est optimisé pour l’accès aux services de Microsoft 365 basés sur le cloud. |
+|![Phase 2 : Identité](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2 : Identité](identity-infrastructure.md)| Vos comptes d’administrateur sont protégés, vos utilisateurs et groupes sont synchronisés, et l’authentification utilisateur est forte. |
+|![Phase 3 : Windows 10 Entreprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3 : Windows 10 Entreprise](windows10-infrastructure.md)| Vos ordinateurs exécutant Windows 10 ou Windows 10 peuvent bénéficier d’une mise à niveau vers Windows 10 Entreprise, et les nouveaux appareils sont installés avec Windows 10 Entreprise. |
+|![Phase 4 : Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4 : Office 365 ProPlus](office365proplus-infrastructure.md)| Vos utilisateurs existants de Microsoft Office peuvent bénéficier d’une mise à niveau vers Office 365 ProPlus. |
+|![Phase 5 : Gestion des appareils mobiles](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5 : Gestion des appareils mobiles](mobility-infrastructure.md)| Vos appareils peuvent être inscrit et gérés. |
+|![Phase 6 : Protection des informations](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6 : Protection des informations](infoprotect-infrastructure.md)| Les fonctionnalités de sécurité d’Office 365 sont activées et vos étiquettes et stratégies sont prêtes à protéger les documents et les courriers. |
 
 Les phases commencent avec le plus fondamental (mise en réseau et identité), puis créer des couches de paramètres d’infrastructure et des groupes :
 
@@ -56,11 +58,11 @@ Pour voir comment le contenu est structuré, regardez cette courte vidéo.
 
 Voici l’infrastructure de base dans le guide de déploiement global de Microsoft 365 pour entreprise :
 
-![L’infrastructure de base dans le guide de déploiement global de Microsoft 365 pour entreprise](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![L’infrastructure de base dans le guide de déploiement global de Microsoft 365 pour entreprise](../media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>En un coup d’œil
 
-L’[affiche Microsoft 365 d’infrastructure de base pour entreprise](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) est un emplacement central où vous pouvez voir, pour chaque phase :
+L’[affiche Microsoft 365 d’infrastructure de base pour entreprise](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) est un emplacement central où vous pouvez voir, pour chaque phase :
 
 - Les objectifs généraux de la phase pour les administrateurs et les utilisateurs
 - Les services, les fonctionnalités et les outils
@@ -69,7 +71,7 @@ L’[affiche Microsoft 365 d’infrastructure de base pour entreprise](media/de
 - Le processus d’intégration des nouveaux utilisateurs
 - Comment surveiller et mettre à jour
 
-[![Image de l’affiche de l’infrastructure de base de Microsoft 365 pour entreprise](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![Image de l’affiche de l’infrastructure de base de Microsoft 365 pour entreprise](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: 8d87367f86d3fd0f9ec5aab19ccd191a1cd20f17
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 722afcb7bdebb6004d9a7ab365ac6038fe1d31a4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595421"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076540"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -57,7 +57,7 @@ Avec une stratégie DLP, vous pouvez :
     
 Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité et sécurité d’Office 365.
   
-![Page Protection contre la perte de données dans le Centre de conformité et sécurité Office 365](media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Page Protection contre la perte de données dans le Centre de conformité et sécurité Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
 ## <a name="what-a-dlp-policy-contains"></a>Contenu d’une stratégie DLP
 
@@ -75,13 +75,13 @@ Vous pouvez utiliser une règle pour répondre à une exigence de protection par
   
 Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la présence d’informations visées par la loi américaine sur l’assurance maladie (Health Insurance Portability Accountability Act, ou HIPAA). Cette stratégie DLP peut contribuer à protéger les données HIPAA (quoi) sur tous les sites SharePoint Online et tous les sites OneDrive Entreprise (où) en recherchant les documents contenant ces informations sensibles partagées avec des personnes extérieures à votre organisation (conditions), et en bloquant l’accès au document et en envoyant une notification (actions). Ces conditions sont stockées en tant que règles individuelles et regroupées sous la forme d’une stratégie DLP pour simplifier la gestion et la création de rapports.
   
-![Diagramme montrant que la stratégie DLP contient les règles et les emplacements](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![Diagramme montrant que la stratégie DLP contient les règles et les emplacements](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
 ### <a name="locations"></a>Emplacements
 
 Une stratégie DLP peut rechercher et protéger les informations sensibles dans Office 365, que ces informations se trouvent sur Exchange Online, SharePoint Online, OneDrive Entreprise ou Microsoft Teams. Vous pouvez choisir de protéger le contenu dans le courrier Exchange, les conversations et les messages de canal de Microsoft Teams, ainsi que toutes les bibliothèques SharePoint ou OneDrive, ou de sélectionner des emplacements spécifiques pour une stratégie.
   
-![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
  Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
 
@@ -95,7 +95,7 @@ Une règle fournit également des options pour informer les utilisateurs (avec d
   
 Les différents composants d’une règle sont décrits ci-dessous.
   
-![Sections de l’éditeur de règles DLP](media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
+![Sections de l’éditeur de règles DLP](../media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
   
 #### <a name="conditions"></a>Conditions
 
@@ -103,7 +103,7 @@ Les conditions sont importantes car elles déterminent les types d’information
   
 Les conditions concernent le **contenu**, par exemple les types d’informations sensibles que vous recherchez et aussi le **contexte**, par exemple les personnes avec lesquelles le document est partagé. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation. 
   
-![Liste affichant les conditions DLP disponibles](media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
+![Liste affichant les conditions DLP disponibles](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
 Les conditions actuellement disponibles peuvent déterminer si :
   
@@ -120,7 +120,7 @@ Les conditions actuellement disponibles peuvent déterminer si :
 
 Une stratégie DLP peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Office 365 inclut les définitions de nombreux types d’informations sensibles courants dans diverses régions, prêtes pour utilisation, comme les numéros de carte de crédit, numéros de compte bancaire, numéros de carte d’identité et numéros de passeport. 
   
-![Liste des types d’informations sensibles disponibles](media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
+![Liste des types d’informations sensibles disponibles](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
 Lorsqu’une stratégie DLP recherche un type d’informations sensibles tel qu’un numéro de carte de crédit, il ne recherche pas simplement un nombre à 16 chiffres. Chaque type d’information sensible est défini et détecté en utilisant une combinaison de :
   
@@ -138,23 +138,23 @@ La détection DLP peut ainsi atteindre un haut niveau de précision tout en réd
 
 Lorsque le contenu remplit une condition stipulée dans une règle, vous pouvez y appliquer des mesures de protection automatiques.
   
-![Liste des actions DLP disponibles](media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
+![Liste des actions DLP disponibles](../media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
   
 Avec les actions désormais disponibles, vous pouvez :
   
 - **Restreindre l’accès au contenu** Pour le contenu d’un site, cela signifie que les autorisations pour le document sont limitées pour tout le monde, sauf pour l’administrateur principal de la collection de sites, le propriétaire du document et la personne qui a modifié le document pour la dernière fois. Ces personnes peuvent supprimer les informations sensibles du document ou prendre des mesures correctives. Lorsque le document est conforme, les autorisations d’origine sont automatiquement restaurées. Lorsque l’accès à un document est bloqué, le document s’affiche avec une icône de conseil de stratégie spéciale dans la bibliothèque sur le site. 
     
-    ![Conseil de stratégie montrant que l’accès au document est bloqué](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+    ![Conseil de stratégie montrant que l’accès au document est bloqué](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
     Pour le contenu des messages électroniques, cette action bloque l’envoi du message. Selon la configuration de la règle DLP, l’expéditeur voit une notification d’échec de remise ou (si la règle utilise une notification) un conseil de stratégie et/ou une notification de messagerie.
     
-    ![Avertissement indiquant que les destinataires non autorisés doivent être supprimés du message](media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+    ![Avertissement indiquant que les destinataires non autorisés doivent être supprimés du message](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>Notifications de l’utilisateur et remplacements de l’utilisateur
 
 Vous pouvez utiliser les notifications et les remplacements pour informer vos utilisateurs sur les stratégies DLP et les aider à respecter les règles de conformité sans bloquer leur travail. Par exemple, si un utilisateur tente de partager un document contenant des informations sensibles, une stratégie DLP peut lui envoyer une notification par courrier électronique et afficher un conseil de stratégie dans le contexte de la bibliothèque de documents, qui lui permet de remplacer la stratégie s’il a une raison professionnelle de le faire.
   
-![Sections Notifications de l’utilisateur et Remplacements de l’utilisateur de l’éditeur de règles DLP](media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
+![Sections Notifications de l’utilisateur et Remplacements de l’utilisateur de l’éditeur de règles DLP](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
   
 Le message électronique permet de notifier les personnes qui ont envoyé, partagé ou modifié le contenu en dernier et, pour le contenu de site, l’administrateur de la collection de sites et le propriétaire du document. De plus, vous pouvez ajouter ou supprimer les destinataires de votre choix du courrier électronique de notification.
   
@@ -170,7 +170,7 @@ La notification par courrier électronique et le conseil de stratégie expliquen
   
 Dans un compte OneDrive Entreprise, un conseil de stratégie se présente comme ceci.
   
-![Conseil de stratégie pour un document dans un compte OneDrive](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
+![Conseil de stratégie pour un document dans un compte OneDrive](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
  Pour en savoir plus sur les notifications utilisateur et les conseils de stratégie en matière de stratégie DLP, voir [Utilisation des notifications et des conseils de stratégie](use-notifications-and-policy-tips.md).
 
@@ -178,7 +178,7 @@ Dans un compte OneDrive Entreprise, un conseil de stratégie se présente comme 
 
 Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Ce rapport comprend des informations sur l’élément qui a fait l’objet d’une correspondance, le contenu qui a satisfait à la règle ainsi que le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
   
-![Page de configuration de rapports d’incident](media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+![Page de configuration de rapports d’incident](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
   
 ## <a name="grouping-and-logical-operators"></a>Opérateurs logiques et opérateurs de regroupement
 
@@ -202,13 +202,13 @@ Vous pouvez facilement identifier ces données vaguement définies à l’aide d
 
 Dans un groupe, vous pouvez choisir si tout ou partie des conditions dans ce groupe doivent être satisfaites pour que le contenu corresponde à la règle.
   
-![Groupes avec l’opérateur dans le groupe](media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
+![Groupes avec l’opérateur dans le groupe](../media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
   
 ### <a name="adding-a-group"></a>Ajout d’un groupe
 
 Vous pouvez rapidement ajouter un groupe, qui peut avoir ses propres conditions et son propre opérateur au sein de ce groupe.
   
-![Bouton Ajouter un groupe](media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
+![Bouton Ajouter un groupe](../media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
   
 ### <a name="choosing-the-operator-between-groups"></a>Choix de l’opérateur entre les groupes
 
@@ -222,17 +222,17 @@ Par exemple, le type d’informations sensibles intégrées pour la réglementat
     
 - le groupe **termes médicaux** (au moins un mot-clé ICD-9-CM **OU** mot clé ICD-10-CM) 
     
-![Groupes avec l’opérateur entre les groupes](media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
+![Groupes avec l’opérateur entre les groupes](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>La priorité de traitement des règles
 
 Lorsque vous créez des règles dans une stratégie, chaque règle se voit attribuer une priorité en fonction de son ordre de création. Cela signifie que la première règle créée a priorité sur la deuxième et ainsi de suite. 
   
-![Règles dans l’ordre de priorité](media/dlp-rules-in-priority-order.png)
+![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
   
 Une fois que vous avez configuré plusieurs stratégies DLP, vous pouvez modifier la priorité d’une ou plusieurs stratégies. Pour ce faire, sélectionnez une stratégie, sélectionnez **Modifier la stratégie**, puis utilisez la liste **Priorité** pour préciser sa priorité.
 
-![Définition d’une priorité pour une stratégie](media/dlp-set-policy-priority.png)
+![Définition d’une priorité pour une stratégie](../media/dlp-set-policy-priority.png)
 
 Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles, celles-ci sont traitées dans l’ordre de priorité et l’action la plus restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 3 est appliquée, car c’est celle qui a la priorité la plus élevée et est la plus restrictive :
   
@@ -280,7 +280,7 @@ L’optimisation des règles à l’aide du nombre d’instances est simple :
     
 En règle générale, les actions moins restrictives, telles que l’envoi de notifications à l’utilisateur, s’utilisent dans une règle avec un nombre d’instances inférieur (par exemple, 1 à 9). Quant aux actions plus restrictives, telles que la limitation de l’accès au contenu sans autoriser les remplacements de l’utilisateur, elles s’utilisent dans une règle avec un nombre d’instances supérieur (par exemple, entre 10 et une valeur supérieure).
   
-![Nombre d’instances dans l’éditeur de règles](media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
+![Nombre d’instances dans l’éditeur de règles](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
   
 ### <a name="match-accuracy"></a>Précision de correspondance
 
@@ -312,7 +312,7 @@ Il est essentiel de comprendre que lorsqu’un type spécifique d’informations
     
 Par conséquent si vous voulez créer deux règles mutuellement exclusives pour les cartes bancaires, une pour la précision de correspondance de 65 % et une pour la précision de correspondance de 85 %, les plages de précision de correspondance se présenteraient comme suit. La première règle ne prend que les correspondances au modèle à 65 %. La deuxième règle prend les correspondances avec **au moins une** correspondance à 85 % et **peut éventuellement avoir** d’autres correspondances de confiance inférieure. 
   
-![Deux règles avec des plages différentes de précision de correspondance](media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
+![Deux règles avec des plages différentes de précision de correspondance](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
   
 Pour ces raisons, les conseils pour la création de règles avec des précisions de correspondance différentes sont les suivants :
   
@@ -335,7 +335,7 @@ Pour en savoir plus sur les étiquettes, consultez l’article [Vue d’ensemble
   
 Après avoir créé une étiquette, vous pouvez l’utiliser comme condition dans vos stratégies DLP. 
 
-![Étiquettes comme condition](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+![Étiquettes comme condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
 Dans les scénarios suivants, par exemple :
   
@@ -364,13 +364,13 @@ Plusieurs fonctionnalités peuvent être appliquées à du contenu comportant de
     
 - Et une stratégie DLP peut permettre d’y appliquer des mesures de **protection**. Avant l’application de ces mesures, une stratégie DLP peut exiger que d’autres conditions soient remplies en plus du contenu comportant une étiquette. 
     
-![Diagramme illustrant des fonctionnalités applicables aux informations sensibles](media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
+![Diagramme illustrant des fonctionnalités applicables aux informations sensibles](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
   
 Notez qu’une stratégie DLP offre des capacités de détection plus approfondies qu’une étiquette ou qu’une stratégie de rétention appliquées à des informations sensibles. Une stratégie DLP peut déclencher l’application de mesures de protection sur du contenu comportant des informations sensibles, et si les informations sensibles sont supprimées du contenu, ces mesures de protection sont annulées lors de l’analyse de contenu suivante. Mais si une stratégie de rétention ou une étiquette est appliquée au contenu comportant des informations sensibles, il s’agit d’une mesure unique qui ne peut pas être annulée, même si les informations sensibles sont supprimées.
   
 L’utilisation d’une étiquette comme condition dans une stratégie DLP vous permet d’appliquer des mesures de rétention et de protection au contenu associé à cette étiquette. Un contenu comportant une étiquette et un contenu comportant des informations sensibles sont semblables : l’étiquette et les informations sensibles sont des propriétés utilisées pour classifier le contenu dans le but d’y appliquer des mesures.
   
-![Diagramme illustrant une stratégie DLP qui utilise une étiquette comme condition](media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
+![Diagramme illustrant une stratégie DLP qui utilise une étiquette comme condition](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
   
 ## <a name="simple-settings-vs-advanced-settings"></a>Paramètres simples et paramètres avancés
 
@@ -388,7 +388,7 @@ Le scénario de protection contre la perte de données (DLP) de loin le plus cou
   
 Pour atteindre cet objectif plus facilement, vous pouvez choisir d’utiliser les **paramètres simples** lorsque vous créez une stratégie DLP. Ces paramètres proposent toutes les options nécessaires pour implémenter les stratégies DLP les plus courantes, sans avoir à ouvrir l’éditeur de règles.
   
-![Options DLP pour les paramètres simples et avancés](media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
+![Options DLP pour les paramètres simples et avancés](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
   
 ### <a name="advanced-settings"></a>Paramètres avancés
 
@@ -398,7 +398,7 @@ Les paramètres avancés présentent l’éditeur de règles, où vous contrôle
   
 Pour accéder rapidement à une section, cliquez sur un élément de la navigation supérieure de l’éditeur de règles.
   
-![Menu de navigation supérieur de l’éditeur de règles DLP](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
+![Menu de navigation supérieur de l’éditeur de règles DLP](../media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
 ## <a name="dlp-policy-templates"></a>Modèles de stratégie de protection contre la perte de données (DLP)
 
@@ -406,7 +406,7 @@ La première étape de la création d’une stratégie DLP consiste à choisir l
   
 Un modèle de stratégie DLP préconfiguré peut vous aider à détecter des types spécifiques d’informations sensibles, comme des données HIPAA, des données PCI-DSS, des données Gramm-Leach-Bliley Act ou même des informations d’identification personnelle propres aux paramètres régionaux. Pour faciliter la recherche et la protection des types d’informations sensibles courants, les modèles de stratégie inclus dans Office 365 contiennent déjà les types d’informations sensibles les plus courants, nécessaires pour commencer.
   
-![Liste des modèles de stratégies de protection contre la perte de données avec focus sur le modèle pour le Patriot Act des États-Unis](media/791b2403-430b-4987-8643-cc20abbd8148.png)
+![Liste des modèles de stratégies de protection contre la perte de données avec focus sur le modèle pour le Patriot Act des États-Unis](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
 Votre organisation peut également avoir ses exigences propres, auquel cas vous pouvez créer entièrement une stratégie DLP en choisissant l’option **Stratégie personnalisée**. Une stratégie personnalisée est vide et ne contient aucune règle prédéfinie. 
   
@@ -422,15 +422,15 @@ Si vous créez des stratégies DLP susceptibles d’avoir un impact important, n
     
 3. **Démarrez l’application complète des stratégies** afin que les actions dans les règles soient appliquées et le contenu protégé. Continuez de surveiller les rapports DLP et tous les rapports ou notifications d’incident pour vous assurer que les résultats correspondent à ce que vous aviez prévu. 
     
-![Options pour l’utilisation du mode de test et l’activation de la stratégie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+![Options pour l’utilisation du mode de test et l’activation de la stratégie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
 Vous pouvez désactiver une stratégie DLP à tout moment, ce qui a une incidence sur toutes les règles de la stratégie. Toutefois, chaque règle peut également être désactivée individuellement en basculant son état dans l’éditeur de règles.
   
-![Options de désactivation d’une règle dans une stratégie](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+![Options de désactivation d’une règle dans une stratégie](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
 Vous pouvez également modifier la priorité de plusieurs règles dans une stratégie. Pour ce faire, ouvrez une stratégie pour modification. Dans une ligne de règle, sélectionnez les points de suspension (**...**), puis choisissez une option, comme, par exemple, **Descendre** ou **Mettre à la fin**.
 
-![Définition d’une priorité de règle](media/dlp-set-rule-priority.png)
+![Définition d’une priorité de règle](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Rapports DLP
 
@@ -446,7 +446,7 @@ Grâce aux rapports DLP, vous pouvez obtenir une vue d’ensemble des activités
     
 En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP lorsque vous les exécutez.
   
-![Tableau de bord des rapports dans le Centre de sécurité et conformité](media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
+![Tableau de bord des rapports dans le Centre de sécurité et conformité](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
   
 ## <a name="how-dlp-policies-work"></a>Fonctionnement des stratégies DLP
 
@@ -480,7 +480,7 @@ Pour cette raison, les stratégies DLP vérifient les correspondances de straté
  
 Au fur et à mesure de l’ajout ou de la modification de documents dans ses sites, le moteur de recherche analyse le contenu de sorte que vous puissiez le rechercher ultérieurement. Pendant ce temps, le contenu est également analysé pour vérifier s’il présente des informations sensibles et s’il est partagé. Les informations sensibles trouvées sont stockées en toute sécurité dans l’index de recherche, afin que seule l’équipe de conformité puisse y accéder, et pas les utilisateurs standard. Chaque stratégie DLP que vous avez activée s’exécute en arrière-plan (de façon asynchrone), en vérifiant fréquemment le contenu qui correspond à une stratégie et en appliquant des actions pour le protéger de toute divulgation accidentelle.
   
-![Diagramme montrant comment la stratégie de protection contre la perte de données (DLP) évalue le contenu de façon asynchrone](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
+![Diagramme montrant comment la stratégie de protection contre la perte de données (DLP) évalue le contenu de façon asynchrone](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 <!-- conflict with a DLP policy is bad wording --> Enfin, les documents peuvent entrer en conflit avec une stratégie DLP, mais ils peuvent également y devenir conformes. Par exemple, si une personne ajoute des numéros de carte de crédit à un document, une stratégie DLP peut alors bloquer l’accès au document automatiquement. Toutefois, si cette personne supprime ensuite les informations sensibles, l’action (dans ce cas, le blocage) est annulée automatiquement à la prochaine évaluation du document par rapport à la stratégie.
   

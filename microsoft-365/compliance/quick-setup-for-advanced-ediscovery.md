@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Découvrez comment accéder à Office 365 Advanced eDiscovery à partir du Centre de sécurité &amp; conformité Office 365 et consultez un flux de travail classique dans Advanced eDiscovery.  '
-ms.openlocfilehash: 6df2d68639f2be9f6ba38ea7211654058bc73035
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e1af09caf57509bf472a766c9d9124ea969acc4e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597671"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070295"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Configuration rapide d’Office 365 Advanced eDiscovery
 
@@ -51,7 +51,7 @@ Pour accéder à un cas dans Advanced eDiscovery :
 
 Le diagramme suivant illustre le flux de travail courant pour gérer et utiliser des cas eDiscovery dans le Centre de sécurité &amp; conformité et dans Advanced eDiscovery. 
   
-![Ce diagramme présente les quatre phases de configuration d’Office 365 Advanced eDiscovery, à savoir la configuration des utilisateurs &amp; des cas, l’identification des données des cas, l’exportation et le traitement. Il indique ensuite les phases d’analyse et d’exportation vers l’ordinateur local.](media/76589ccc-789d-4581-b3a8-98d339b05979.png)
+![Ce diagramme présente les quatre phases de configuration d’Office 365 Advanced eDiscovery, à savoir la configuration des utilisateurs &amp; des cas, l’identification des données des cas, l’exportation et le traitement. Il indique ensuite les phases d’analyse et d’exportation vers l’ordinateur local.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
 Cette section de configuration décrit les quatre premières étapes du flux de travail. Pour en savoir plus sur les autres étapes du flux de travail, consultez les sections suivantes.
   

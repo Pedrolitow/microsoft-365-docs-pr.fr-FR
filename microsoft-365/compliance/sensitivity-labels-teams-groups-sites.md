@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez appliquer des étiquettes à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint.
-ms.openlocfilehash: 7fd19d9d8f84bd6463d61aec68dbd86c4fc627c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 297ccd3e17f6c5a747e18a46747e6f2c23311df0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601561"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069788"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)
 
@@ -54,9 +54,9 @@ Ces images présentent les éléments suivants :
 
 Par exemple :
 
-![Étiquette de confidentialité lors de la création d’un site d’équipe à partir de SharePoint](media/sensitivity-label-new-team-site.png)
+![Étiquette de confidentialité lors de la création d’un site d’équipe à partir de SharePoint](../media/sensitivity-label-new-team-site.png)
 
-![Étiquette de confidentialité affichée dans l’application de bureau Word](media/sensitivity-label-word.png)
+![Étiquette de confidentialité affichée dans l’application de bureau Word](../media/sensitivity-label-word.png)
 
 ## <a name="enable-this-preview"></a>Activer ce préversion
 
@@ -124,7 +124,7 @@ Une fois la préversion activée, procédez comme suit pour créer ou modifier d
     - Accès invité : vous pouvez contrôler si des invités peuvent être ajoutés à un groupe. [Découvrez comment gérer l'accès invité dans les Groupes Office 365](/office365/admin/create-groups/manage-guest-access-in-groups)
     - Appareils non gérés : ce paramètre vous permet de bloquer ou de limiter l’accès à du contenu SharePoint à partir d’appareils qui ne sont pas joints à AD hybride dans Intune. Si vous sélectionnez appareils non gérés, vous devez accéder à Azure AD pour terminer la configuration de la stratégie. SI vous souhaitez en savoir plus, veuillez consulter[Contrôler l’accès depuis des appareils enregistrés](/sharepoint/control-access-from-unmanaged-devices).
     
-    ![L'onglet Paramètres de site et de groupe](media/edit-sensitivity-label-site-group.png)
+    ![L'onglet Paramètres de site et de groupe](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
 > Seuls les paramètres de site et de groupe prennent effet lorsque vous appliquez une étiquette à une équipe, un groupe ou un site. Les autres paramètres, tels que le chiffrement et le marquage de contenu, ne sont pas appliqués à tout le contenu au sein de l’équipe, du groupe ou du site.
@@ -184,11 +184,11 @@ Les utilisateurs peuvent sélectionner des étiquettes de confidentialité lorsq
 
 [En savoir plus sur les étiquettes de niveau de confidentialité pour Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
-![Le paramètre de confidentialité lors de la création d’une équipe](media/privacy-setting-new-team.png)
+![Le paramètre de confidentialité lors de la création d’une équipe](../media/privacy-setting-new-team.png)
 
 Une fois l’équipe créée, l’étiquette de confidentialité s’affiche dans le coin supérieur droit de tous les canaux.
 
-![L'étiquette de confidentialité apparaît sur l'équipe](media/privacy-setting-teams.png)
+![L'étiquette de confidentialité apparaît sur l'équipe](../media/privacy-setting-teams.png)
 
 Le service applique automatiquement la même étiquette de confidentialité au groupe Office 365 et au site d’équipe SharePoint connecté.
 
@@ -196,7 +196,7 @@ Le service applique automatiquement la même étiquette de confidentialité au g
 
 Dans Outlook sur le web, la nouvelle boîte de dialogue **Confidentialité** contient des étiquettes publiées. Si les utilisateurs ont besoin d’informations supplémentaires, ils peuvent cliquer sur l’icône aide pour consulter des informations sur les étiquettes disponibles et les stratégies associées.
 
-![Création d'un groupe et sélection d'une option sous Confidentialité](media/sensitivity-label-new-group.png)
+![Création d'un groupe et sélection d'une option sous Confidentialité](../media/sensitivity-label-new-group.png)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-site"></a>Appliquez une étiquette de confidentialité à un nouveau site
 
@@ -206,17 +206,17 @@ Les administrateurs et les utilisateurs finaux peuvent sélectionner des étique
 
 Lorsque les utilisateurs créent des sites d’équipe et de communication modernes, une étiquette de confidentialité est déjà sélectionnée par défaut. Les utilisateurs peuvent sélectionner l’icône aide pour en savoir plus sur les étiquettes.
 
-![Création d'un site et sélection d'une option sous Confidentialité](media/sensitivity-label-new-communication-site.png)
+![Création d'un site et sélection d'une option sous Confidentialité](../media/sensitivity-label-new-communication-site.png)
 
 Lorsque les utilisateurs accèdent au site, ils peuvent voir le nom de l’étiquette et les stratégies appliquées.
 
-![Un site avec une étiquette de confidentialité appliquée](media/sensitivity-label-site.png)
+![Un site avec une étiquette de confidentialité appliquée](../media/sensitivity-label-site.png)
 
 ## <a name="manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Gérer les étiquettes de confidentialité dans le Centre d’administration SharePoint
 
 Pour afficher et modifier les étiquettes, utilisez la page sites actifs dans le nouveau Centre d’administration SharePoint.
 
-![Colonne Confidentialité de la page Sites actifs](media/manage-site-sensitivity-labels.png)
+![Colonne Confidentialité de la page Sites actifs](../media/manage-site-sensitivity-labels.png)
 
 [EN savoir plus sur la gestion des sites dans le nouveau Centre d’administration SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 

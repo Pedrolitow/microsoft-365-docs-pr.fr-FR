@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenez une vue d’ensemble de la protection des informations Office 365 pour le RGPD. Apprenez à découvrir, classer, protéger et surveiller les données personnelles.
-ms.openlocfilehash: 079ff7b7dab099f289bbd0366bba00d5ecf55b80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597861"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071162"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Protection des informations Office 365 pour le RGPD - Vue d’ensemble
 
@@ -47,7 +47,7 @@ La première étape vers la conformité au RGPD consiste à évaluer si le RGPD 
 
 Le Score de conformité fournit des outils pour suivre, implémenter et gérer les contrôles d’audit qui permettent à votre organisation d’être conforme à différentes normes, notamment au RGPD.
 
-![Utilisation du Score de conformité et le Gestionnaire de conformité pour afficher les exigences et suivre la progression](Media/Overview-image1.png)
+![Utilisation du Score de conformité et le Gestionnaire de conformité pour afficher les exigences et suivre la progression](../media/Overview-image1.png)
 
 Pour en savoir plus, consultez la section [Score de conformité](compliance-score.md).
 
@@ -59,7 +59,7 @@ Découvrez les données personnelles dans votre environnement qui sont soumises 
 
 - Optimiser les types de données sensibles et d’autres requêtes pour rechercher toutes les données personnelles dans votre environnement.
 
-![Utilisation de la recherche de contenu et des types d’informations sensibles pour rechercher des données personnelles](Media/Overview-image2.png)
+![Utilisation de la recherche de contenu et des types d’informations sensibles pour rechercher des données personnelles](../media/Overview-image2.png)
 
 Les types d’informations sensibles définissent la façon dont le processus automatisé reconnaît des types d’informations spécifiques tels que les numéros de sécurité sociale et les numéros de carte de crédit. Cet article inclut un ensemble de données que vous pouvez utiliser comme point de départ. De nombreux autres types d’informations sensibles seront prochainement disponibles pour les données personnelles dans les pays de l’Union européenne.
 
@@ -69,7 +69,7 @@ Pour plus d’informations, reportez-vous à la rubrique relative à la [recherc
 
 Certaines fonctionnalités utilisées pour la protection des informations dans Office 365 peuvent également servir à protéger les données sensibles dans d’autres applications SaaS.
 
-![Classification, protection et surveillance des données personnelles](Media/Overview-image3.png)
+![Classification, protection et surveillance des données personnelles](../media/Overview-image3.png)
 
 Cette illustration est décrite dans le reste cette section (étapes 3 à 5).
 

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les paramètres du filtre de courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables.
-ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957199"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086273"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configuration de vos stratégies de filtrage du courrier indésirable
 Les paramètres du filtre de courrier indésirable incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables. Les paramètres de la stratégie de filtrage de courrier indésirable sont appliqués uniquement aux messages entrants et sont de deux sortes :
@@ -109,10 +109,10 @@ Pour activer des paramètres plus personnalisés ou ajouter des stratégies pers
 
 6. Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie s'affiche dans le volet droit.
 
-Vous ne pouvez pas désactiver ou supprimer la stratégie par défaut et les stratégies personnalisées ont toujours priorité sur la stratégie par défaut. Pour les stratégies personnalisées, vous pouvez cocher ou décocher des cases dans la colonne **ACTIVÉ** afin de les activer ou désactiver. Par défaut, toutes les stratégies sont activées. Pour supprimer une stratégie par défaut, sélectionnez la police, cliquez sur **Supprimer** ![icône Supprimer](../media/ITPro-EAC-DeleteIcon.gif), puis confirmez sa suppression.
+Vous ne pouvez pas désactiver ou supprimer la stratégie par défaut et les stratégies personnalisées ont toujours priorité sur la stratégie par défaut. Pour les stratégies personnalisées, vous pouvez cocher ou décocher des cases dans la colonne **ACTIVÉ** afin de les activer ou désactiver. Par défaut, toutes les stratégies sont activées. Pour supprimer une stratégie par défaut, sélectionnez la police, cliquez sur **Supprimer** ![icône Supprimer](../../media/ITPro-EAC-DeleteIcon.gif), puis confirmez sa suppression.
 
 > [!TIP]
-> Vous pouvez modifier leur priorité (ordre d'exécution) en cliquant sur les flèches haut![Icône flèche vers le haut](../media/ITPro-EAC-UpArrowIcon.gif) et bas![Icône de flèche vers le bas](../media/ITPro-EAC-DownArrowIcon.gif). La stratégie dont la **PRIORITÉ** est **0** s’exécute d’abord, suivie des stratégies dont l’ordre de priorité est **1**, **2**, etc.
+> Vous pouvez modifier leur priorité (ordre d'exécution) en cliquant sur les flèches haut![Icône flèche vers le haut](../../media/ITPro-EAC-UpArrowIcon.gif) et bas![Icône de flèche vers le bas](../../media/ITPro-EAC-DownArrowIcon.gif). La stratégie dont la **PRIORITÉ** est **0** s’exécute d’abord, suivie des stratégies dont l’ordre de priorité est **1**, **2**, etc.
 
 ## <a name="use-powershell-to-configure-spam-filter-policies"></a>Utilisation de PowerShell pour configurer les stratégies de filtrage du courrier indésirable
 
@@ -150,18 +150,18 @@ Les listes verte et rouge sont configurées dans le cadre de la stratégie anti-
 
 1. Dans la section **Listes vertes**, vous pouvez indiquer des entrées, telles que des expéditeurs ou des domaines, qui seront toujours remises dans la boîte de réception. Le courrier électronique provenant de ces entrées n’est pas traité par le filtre de courrier indésirable.
 
-   - Ajoutez des expéditeurs approuvés à la liste des expéditeurs autorisés. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **Enregistrer** pour revenir à la page **Listes vertes**.
+   - Ajoutez des expéditeurs approuvés à la liste des expéditeurs autorisés. Cliquez sur **Modifier**![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **Enregistrer** pour revenir à la page **Listes vertes**.
 
-   - Ajoutez des domaines approuvés à la liste de domaines autorisés. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **Enregistrer** pour revenir à la page **Listes vertes**.
+   - Ajoutez des domaines approuvés à la liste de domaines autorisés. Cliquez sur **Modifier**![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **Enregistrer** pour revenir à la page **Listes vertes**.
 
    > [!CAUTION]
    > Vous ne devez jamais répertorier les domaines acceptés (domaines qui vous appartiennent) ou les domaines communs tels que Microsoft.com, office.com, etc. à une liste verte. Cela permettrait aux usurpateurs d’envoyer des courriers non restreints à votre organisation.
 
 2. Dans la page **Listes rouges**, vous pouvez indiquer des entrées, telles que des expéditeurs ou des domaines, qui seront toujours marquées comme courrier indésirable. Le service applique l’action configurée de courrier indésirable à probabilité élevée sur le courrier électronique correspondant à ces entrées.
 
-   - Ajoutez des expéditeurs indésirables à la liste de blocage des expéditeurs. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
+   - Ajoutez des expéditeurs indésirables à la liste de blocage des expéditeurs. Cliquez sur **Modifier**![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
 
-   - Ajoutez des domaines indésirables à la liste des domaines bloqués. Cliquez sur **Modifier**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
+   - Ajoutez des domaines indésirables à la liste des domaines bloqués. Cliquez sur **Modifier**![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l’aide d’un point-virgule ou d’un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**.
    
      > [!NOTE]
      > Dans la stratégie de filtrage du courrier indésirable, vous pouvez bloquer des expéditeurs ou des domaines spécifiques, mais vous ne pouvez pas utiliser de caractères génériques (\*). 

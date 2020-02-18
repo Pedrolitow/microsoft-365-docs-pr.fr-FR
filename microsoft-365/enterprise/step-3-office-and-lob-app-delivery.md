@@ -1,5 +1,7 @@
 ---
 title: 'Étape 3 : livraison d’Office et d’applications métier'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment livrer Office et des applications métier.
-ms.openlocfilehash: a4bc1a765edf6938ad37d91d8bf94950b6672bfe
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112584"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085322"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Étape 3 : livraison d’Office et d’applications métier
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>Étape 3 : livraison d’Office et d’applications métier</strong></p>
 <p>Vérifiez que vos applications sont empaquetées et prêtes pour l’installation automatisée. Découvrez comment l’empaquetage Démarrer en un clic avec Office 365 ProPlus vous offre de nouvelles options pour configurer, livrer et actualiser vos applications Office.</p></td>
-<td><a href="https://aka.ms/ddev3" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -51,13 +53,13 @@ Pour votre ligne d’applications métier, vous allez probablement utiliser des 
 
 Les outils de déploiement de logiciels tels que Microsoft Endpoint Configuration Manager et Microsoft Intune sont également optimisés pour livrer des applications empaquetées par MSI. Une fois que vous avez validé vos applications sur Windows 10, vous pouvez utiliser Microsoft Endpoint Configuration Manager (branche actuelle) pour la livraison des applications. Si vous utilisez le portail d’entreprise dans Microsoft Intune, vous pouvez étendre le choix des applications informatiques sanctionnées disponibles à votre organisation pour inclure les applications les plus récentes et permettre aux utilisateurs de sélectionner eux-mêmes ce dont ils ont besoin.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
 
 ## <a name="pc-imaging"></a>Imagerie PC
 
 Une autre méthode populaire de remise application est IMAGERIE PC. Dans ce cas, les applications sont soit installées via la séquence des tâches ou manuellement sur un échantillon PC, une image de système est capturée avec les applications requises déjà installées. L’approche d’images pour concevoir et capturer peut faire gagner du temps lors de la mise en service de nouveaux PC mais n’oubliez pas que les systèmes d’exploitation et les applications au sein de l’image peuvent devenir obsolètes rapidement. Le modèle de mise à jour Cumulative dans Windows 10 et Office 365 ProPlus vous aider avec ce problème, mais ne l’éliminez pas complètement. C’est pourquoi nous vous recommandons une approche d’images fines, où vos applications sont installées à partir de l’extérieur de l’image au moment du déploiement.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
 Si vous ne voulez pas inclure Office 365 ProPlus dans votre image, n’oubliez pas que cette approche utilise une activation utilisateur ; elle ne peut pas être activée au préalable par l’administrateur système. Utilisez l’outil Déploiement d’Office pour installer préalablement Office sur le périphérique dont vous présentez l’imagerie et ignorer la connexion utilisateur.  Une fois l’image déployée, les utilisateurs finaux peuvent se connecter à l’aide de leurs informations d’identification Office 365 et activer Office 365 ProPlus.
 
@@ -73,11 +75,11 @@ Les programmes remis via Click-to-Run réalisent des tâches dans un environneme
 
 Microsoft recommande l’utilisation de l’[outil de personnalisation Office](https://config.office.com/) pour personnaliser les paramètres de déploiement et de créer votre fichier XML de configuration. Via l’Outil de Personnalisation Office, vous pouvez définir les applications et les langues seront installées, comment les applications seront mis à jour, les préférences d’applications et les paramètres d’expérience d’installation.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
 Si vous utilisez l’outil Microsoft Endpoint Configuration Manager, vous pouvez toujours l’utiliser pour le déploiement large d’Office 365 ProPlus. Microsoft Endpoint Configuration Manager (branche actuelle) assure la prise en charge native de l’outil de personnalisation Office mis à jour, la personnalisation de package pour Démarrer en un clic au moment de l’installation et la prise en charge native pour la gestion des mises à jour logicielles après l’installation.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
 [Guide de déploiement pour Office 365 ProPlus](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 

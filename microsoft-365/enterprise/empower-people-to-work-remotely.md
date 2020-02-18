@@ -1,6 +1,8 @@
 ---
 title: Confiez des responsabilités aux travailleurs à distance
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/24/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 2544820b577b81062550a8c0a84513f2a8c28668
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: b86071b7e5a6101c328b43177e965856f74995d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831965"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067718"
 ---
 # <a name="empower-remote-workers"></a>Confiez des responsabilités aux travailleurs à distance
 
@@ -70,9 +72,9 @@ Pour répondre à ces critères pour les travailleurs à distance, utilisez les 
 
 Les phases suivantes vous guideront tout au long du déploiement des fonctionnalités de Microsoft 365 Entreprise pour l’accès à distance et de l’adoption par les travailleurs à distance. Si vous avez déjà déployé des éléments de ces phases, assurez-vous qu’ils répondent aux exigences établies avant de passer à l’élément suivant.
 
-<a name="poster"></a> Pour un résumé d’une page de ce scénario, voir l’affiche [Confiez des responsabilités aux travailleurs à distance](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
+<a name="poster"></a> Pour un résumé d’une page de ce scénario, voir l’affiche [Confiez des responsabilités aux travailleurs à distance](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
 
-[![Affiche Confiez des responsabilités aux travailleurs à distance](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+[![Affiche Confiez des responsabilités aux travailleurs à distance](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
 Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) ou [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
 
@@ -94,7 +96,7 @@ Pour la [Phase 2 : identité](identity-infrastructure.md), déployez les élém
 
 Voici la configuration obtenue avec les éléments d’identité mis en surbrillance.
 
-![Éléments d’identité pour les travailleurs à distance](./media/empower-people-to-work-remotely/remote-workers-id-phase.png)
+![Éléments d’identité pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
 Pour la [Phase 3 : Windows 10 Entreprise](windows10-infrastructure.md), déployez :
 
@@ -103,13 +105,13 @@ Pour la [Phase 3 : Windows 10 Entreprise](windows10-infrastructure.md), déploy
 
 Voici la configuration obtenue avec les appareils Windows 10 Entreprise.
 
-![Éléments de Windows 10 Entreprise pour les travailleurs à distance](./media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
+![Éléments de Windows 10 Entreprise pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
 Pour la [Phase 4 : Office 365 ProPlus](office365proplus-infrastructure.md), déployez l’infrastructure pour installer Office 365 ProPlus ou mettez à niveau votre suite Office actuellement installée (par exemple, Office 2010 ou Office 2013) vers Office 365 ProPlus sur les appareils de votre organisation. Cela permet à vos utilisateurs de tirer parti des meilleures expériences en matière de sécurité et de collaboration.
 
 Voici la configuration obtenue avec Office 365 ProPlus installé sur des appareils.
 
-![Éléments de Office 365 ProPlus pour les travailleurs à distance](./media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![Éléments de Office 365 ProPlus pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 Pour la [Phase 5 : gestion des appareils mobiles](mobility-infrastructure.md), déployez la gestion des appareils et applications Intune pour les éléments suivants :
 
@@ -119,7 +121,7 @@ Pour la [Phase 5 : gestion des appareils mobiles](mobility-infrastructure.md), 
 
 Voici la configuration obtenue avec les appareils et stratégies Intune inscrits mis en surbrillance.
 
-![Éléments de gestion des appareils mobiles pour les travailleurs à distance](./media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
+![Éléments de gestion des appareils mobiles pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
  
 Pour la [Phase 6 : protection des informations](infoprotect-infrastructure.md), concevez et configurez la protection de vos biens numériques avec les éléments suivants :
 
@@ -128,13 +130,13 @@ Pour la [Phase 6 : protection des informations](infoprotect-infrastructure.md),
 
 Voici la configuration obtenue avec les stratégies de protection contre la perte de données et les étiquettes de confidentialité mises en surbrillance.
 
-![Éléments de protection des informations pour les travailleurs à distance](./media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
+![Éléments de protection des informations pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
  
 Pour accéder aux applications locales, vous pouvez utiliser le [proxy d’application Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy), qui nécessite un environnement d’identité hybride.
 
 Voici la configuration obtenue avec les composants de proxy d’application mis en surbrillance.
 
-![Éléments de proxy d’application pour les travailleurs à distance](./media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
+![Éléments de proxy d’application pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
  
 ### <a name="step-2-workloads-for-remote-workers"></a>Étape 2 : charges de travail pour les travailleurs à distance
 
@@ -146,7 +148,7 @@ Pour [SharePoint et OneDrive](sharepoint-online-onedrive-workload.md), déployez
 
 Voici la configuration obtenue avec les charges de travail mises en surbrillance.
 
-![Charges de travail Microsoft 365 pour les travailleurs à distance](./media/empower-people-to-work-remotely/remote-workers-workloads.png)
+![Charges de travail Microsoft 365 pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-workloads.png)
  
 ### <a name="deployment-results"></a>Résultats du déploiement
 
@@ -165,11 +167,11 @@ En mode hors connexion (non connecté à Internet), vos travailleurs à distance
 
 Voici la configuration obtenue pour les travailleurs à distance de votre organisation si vous utilisez une identité hybride.
 
-![Configuration finale pour une organisation avec une identité hybride](./media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
+![Configuration finale pour une organisation avec une identité hybride](../media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
  
 Voici la configuration obtenue pour les travailleurs à distance de votre organisation si vous utilisez l’identité dans le Cloud uniquement.
 
-![Configuration finale pour une organisation avec une identité dans le Cloud uniquement](./media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
+![Configuration finale pour une organisation avec une identité dans le Cloud uniquement](../media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
 
 ## <a name="phase-2-drive-user-adoption-for-remote-workers"></a>Phase 2 : favoriser l’adoption par les utilisateurs pour les travailleurs à distance
 

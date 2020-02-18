@@ -1,5 +1,7 @@
 ---
 title: 'Étape 2 : Configurer les connexions Internet locales pour chaque bureau'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez votre résolution DNS pour de meilleures performances.
-ms.openlocfilehash: b47131b9a5f854c630f5d54bd4d3b4738ed953b3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370301"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066657"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>Étape 2 : Configurer les connexions Internet locales pour chaque bureau
 
 *Cette étape est requise et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 1 : Réseau](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1 : Réseau](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 À l’Étape 2, vous vérifiez que chacun de vos bureaux est équipé de connexions Internet locales et utilise des serveurs DNS locaux. Ces deux éléments sont requis pour réduire la latence de connexion et garantir que les ordinateurs clients locaux établissent des connexions avec le point d’entrée le plus proche aux services services cloud Microsoft 365.
 
@@ -32,13 +34,13 @@ Dans les réseaux classiques pour les grandes organisations, le trafic Internet 
 
 Le réseau mondial Microsoft inclut une infrastructure *de porte service distribuée*, une périphérie de réseau hautement disponible et évolutive avec des emplacements géographiquement répartis. Il met fin aux connexions des utilisateurs finaux sur un serveur frontal et achemine efficacement le trafic des utilisateurs finaux au sein du réseau mondial Microsoft.
 
-![Le réseau mondial Microsoft](./media/networking-dns-resolution-same-location/microsoft-global-network.png)
+![Le réseau mondial Microsoft](../media/networking-dns-resolution-same-location/microsoft-global-network.png)
 
 Pour de meilleures performances, les clients locaux doivent accéder à la porte principale la plus proche géographiquement, plutôt que d’envoyer le trafic sur une structure fondamentale du réseau et sur l’emplacement principal qui est le plus proche de la connexion Internet centrale de l’organisation.
 
 Voici un exemple.
 
-![Exemple d’utilisation du réseau mondial Microsoft](./media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
+![Exemple d’utilisation du réseau mondial Microsoft](../media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
 
 Lorsqu’un utilisateur de la succursale de Paris souhaite accéder à un site SharePoint Online :
 
@@ -61,4 +63,4 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 
 |||
 |:-------|:-----|
-|![Étape 3](./media/stepnumbers/Step3.png)|[Éviter les épingles de réseau](networking-avoid-network-hairpins.md)|
+|![Étape 3](../media/stepnumbers/Step3.png)|[Éviter les épingles de réseau](networking-avoid-network-hairpins.md)|
