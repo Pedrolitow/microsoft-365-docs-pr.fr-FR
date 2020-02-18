@@ -16,29 +16,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Instructions pour créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation.
-ms.openlocfilehash: 8018c18e976d0e6f9904923471bb07c8bb3cbc40
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
+ms.openlocfilehash: d2300a54583c0b2d12de86e3dbb5f3116daf6460
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091297"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101224"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
-Pour créer et publier vos [étiquettes de confidentialité](sensitivity-labels.md), accédez au centre d’administration des étiquettes tel que le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Vous pouvez également utiliser le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365.
+L'ensemble des solutions Microsoft Information Protection (parfois sous la forme abrégée MIP) sont mises en œuvre à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au centre d'administration des étiquettes, tel que le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Vous pouvez également utiliser le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365.
 
-Commencez par créer et configurer les étiquettes de confidentialité que vous souhaitez rendre disponibles pour les services et dans les applications Office. Puis créez une ou plusieurs stratégies d’étiquette contenant les étiquettes et paramètres de stratégie que vous configurez. La stratégie d’étiquette publie en effet les étiquettes et paramètres pour les utilisateurs et emplacements que vous sélectionnez.
+Commencez par créer et configurer les étiquettes de confidentialité que vous souhaitez rendre disponibles pour les applications et autres services. Par exemple, les étiquettes que vous voulez que les utilisateurs voient et appliquent à partir des applications Office. 
 
-## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Autorisations nécessaires pour la création et la gestion d'étiquettes de confidentialité
+Puis créez une ou plusieurs stratégies d’étiquette contenant les étiquettes et paramètres de stratégie que vous configurez. La stratégie d’étiquette publie en effet les étiquettes et paramètres pour les utilisateurs et emplacements que vous sélectionnez.
 
-Les membres de votre équipe de conformité qui créeront des étiquettes de confidentialité ont besoin d’autorisations dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365. 
+## <a name="before-you-begin"></a>Avant de commencer
 
-Par défaut, votre administrateur de clients a accès à ces centres d’administration et pourra accorder l’accès aux responsables de la conformité et à d’autres personnes sans leur octroyer toutes les autorisations d’un administrateur de clients. Pour accorder cet accès administrateur délégué limité, allez à la page **Autorisations** de l’un de ces centres d’administration, puis d’ajouter des membres au groupe de rôles **Administrateur des données de conformité**, **Administrateur de la conformité** ou **Administrateur de la sécurité**.
-
-À défaut d'utiliser les rôles, vous pouvez créer un groupe de rôles, puis ajouter les rôles d'**Administrateur d'étiquettes de confidentialité** ou de **Configuration d'organisation** à ce groupe. Pour obtenir des instructions, reportez-vous à la rubrique [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
-
-Ces autorisations sont seulement nécessaires pour créer et configurer des étiquettes de confidentialité et leurs stratégies d’étiquette. Elles ne sont pas requises pour l'application d'étiquettes dans des applications ou des services.
+L’administrateur général de votre organisation dispose des autorisations totales pour créer et gérer tous les aspects des étiquettes de confidentialité. Si vous ne vous connectez pas en tant qu’administrateur général, voir [Autorisations nécessaires pour créer et gérer des étiquettes de confidentialité](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Créer et configurer des étiquettes de confidentialité
 
