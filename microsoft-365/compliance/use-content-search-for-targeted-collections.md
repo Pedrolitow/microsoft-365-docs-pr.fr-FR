@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilisez la recherche de contenu dans le centre de sécurité & conformité pour effectuer des collections ciblées. Une collection ciblée signifie que vous êtes sûr que les éléments réactifs à un cas ou des éléments privilégiés se trouvent dans une boîte aux lettres ou un dossier de site spécifique. Utilisez le script de cet article pour obtenir l’ID de dossier ou le chemin d’accès de la boîte aux lettres ou des dossiers de site spécifiques sur lesquels vous souhaitez effectuer une recherche.
-ms.openlocfilehash: 66929911cdb1692ea1ee2a8920dad349d50ec156
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8afe9e65aa65c697d9c5cefbeaf89638c1782d4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597301"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080801"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utiliser la recherche de contenu dans Office 365 pour les collections ciblées
 
@@ -201,7 +201,7 @@ Si vous obtenez des ID de dossier de boîte aux lettres, le script se connecte �
   
 Voici un exemple de la sortie renvoyée par le script pour les dossiers de boîte aux lettres.
   
-![Exemple de liste des dossiers de boîte aux lettres et des ID de dossier renvoyés par le script](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![Exemple de liste des dossiers de boîte aux lettres et des ID de dossier renvoyés par le script](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
 L’exemple de l’étape 2 montre la requête utilisée pour rechercher le sous-dossier purges dans le dossier éléments récupérables de l’utilisateur.
   
@@ -211,7 +211,7 @@ Si vous obtenez le chemin d’accès de la propriété **documentlink** à parti
   
 Voici un exemple de la sortie renvoyée par le script pour les dossiers de site.
   
-![Exemple de liste de noms documentlink pour les dossiers de site renvoyés par le script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Exemple de liste de noms documentlink pour les dossiers de site renvoyés par le script](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Étape 2 : utiliser un ID de dossier ou documentlink pour effectuer une collection ciblée
 
@@ -221,7 +221,7 @@ Une fois que vous avez exécuté le script pour collecter une liste d’ID de do
     
 2. Connectez-vous à Office 365 à l’aide du compte et des informations d’identification que vous avez utilisés pour exécuter le script à l’étape 1.
     
-3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de **contenu**de **recherche** \> , puis cliquez sur](media/O365-MDM-CreatePolicy-AddIcon.gif) **nouvelle** ![icône Ajouter.
+3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de **contenu**de **recherche** \> , puis cliquez sur](../media/O365-MDM-CreatePolicy-AddIcon.gif) **nouvelle** ![icône Ajouter.
     
 4. Sur la page **Nouvelle recherche**, entrez un nom pour la recherche de contenu. Ce nom doit être unique dans votre organisation. 
     
@@ -239,7 +239,7 @@ Une fois que vous avez exécuté le script pour collecter une liste d’ID de do
     
     Par exemple, la requête de la capture d’écran suivante recherche tout élément dans le sous-dossier purges du dossier éléments récupérables de l’utilisateur (la valeur `folderid` de la propriété pour le sous-dossier purges est illustrée dans la capture d’écran de l’étape 1) :
     
-    ![Coller le FolderId ou documentlink dans la zone mot clé de la requête de recherche](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Coller le FolderId ou documentlink dans la zone mot clé de la requête de recherche](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Cliquez sur **Rechercher** pour lancer la recherche cible de la collection. 
   
