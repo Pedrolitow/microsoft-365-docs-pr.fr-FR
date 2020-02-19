@@ -15,12 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: dc781d9f800b3db938b253775b31df118c21fd03
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.date: 01/28/2020
+ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784701"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106847"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -33,15 +34,27 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 > [!TIP]
 > Vous n’avez pas encore Office 365 ATP ? [Contactez le service commercial pour commencer une version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## <a name="januaryfebruary-2020"></a>Janvier/février 2020
+
+- Améliorations apportées à l' [Explorateur de menaces](threat-explorer.md) pour permettre aux équipes des opérations de sécurité d’effectuer des recherches et des filtres sur plusieurs champs lors de l’enquête sur le [courrier électronique](investigate-malicious-email-that-was-delivered.md):
+    - Emplacement de remise et actions spéciales
+    - Direction (entrant, sortant ou intra-org)
+    - Substitutions (blocage ou autorisation de l’utilisateur)
+    - Menace d’URL (programme malveillant, hameçonnage, courrier indésirable ou aucun)
+    - Options non Filter avancé (il s’agit d’options de filtrage avancées qui incluent ne pas inclure, pas, etc.)
+    - Filtres de temps granulaire (jour, heure, demi-heure) 
+
+- Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & de la sécurité Office 365, accédez à la**vérification**de la **gestion** > des menaces.)
+
 ## <a name="december-2019"></a>Décembre 2019
 
 - [Exporter l’URL cliquez sur données pour une analyse hors ligne](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (plan 1 Office 365 DAV ou plan 2)
 
-- [Vues de campagne dans Office 365 DAV (**Aperçu**)](campaigns.md)
+- [Utiliser les vues de campagne dans Office 365 ATP (**Aperçu**)](campaigns.md)
 
 ## <a name="november-2019"></a>Novembre 2019
 
-- Découvrez [les nouvelles fonctionnalités de détection et de réponse utilisateur compromis (****](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) préversion) (Plan 2 d’Office 365 ATP)
+- Découvrez [les nouvelles fonctionnalités de détection et de réponse utilisateur compromis](address-compromised-users-quickly.md) (préversion **) (** Plan 2 d’Office 365 ATP)
 
 ## <a name="september-2019"></a>Septembre 2019
 
@@ -51,7 +64,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Afficher les en-têtes des messages électroniques et télécharger le corps du courrier](investigate-malicious-email-that-was-delivered.md) (plan 1 de l’ATP Office 365 ou plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Affichage de la chronologie de l’e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (plan 1 Office 365 DAV ou plan 2)
 
