@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Nous créons en permanence de nouveaux articles, en mettant à jour ceux existants et en apportant des modifications en fonction de vos commentaires. Découvrez les nouveautés et mises à jour ce mois-ci.
-ms.openlocfilehash: 36edcbc7106710ff62bc1a176fb76a17fd7076a6
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: ad9b6865b0afe5b49c2b02d3ee9adba4d62ef9eb
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101244"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106817"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -108,7 +108,7 @@ Nouveaux articles pour prendre en charge la version préliminaire de la solution
 
 ### <a name="mrm-in-exchange-online"></a>MRM dans Exchange Online
 
-[Placer une boîte aux lettres en conservation pour rétention](https://docs.microsoft.com/en-us/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled) (mise à jour)<br>Ajout d’une nouvelle section Comparaison des propriétés de boîte aux lettres ElcProcessingDisabled et RetentionHoldEnabled et de leur impact sur le traitement de l’Assistant dossier géré.
+[Placer une boîte aux lettres en conservation pour rétention](https://docs.microsoft.com/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled) (mise à jour)<br>Ajout d’une nouvelle section Comparaison des propriétés de boîte aux lettres ElcProcessingDisabled et RetentionHoldEnabled et de leur impact sur le traitement de l’Assistant dossier géré.
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
