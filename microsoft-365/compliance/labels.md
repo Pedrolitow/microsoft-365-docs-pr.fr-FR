@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de rétention pour classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: 27f680bf2acf844618f133b074faf6f5ec3f7e90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 162b9fed66fa3135829f422ccd04a396ddf7e632
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072513"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093453"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -44,9 +44,11 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
     
 - **Appliquer automatiquement des étiquettes de rétention au contenu** s’il répond à des conditions spécifiques, comme lorsque le contenu contient : 
     
-  - des types spécifiques d’informations sensibles ;
+    - des types spécifiques d’informations sensibles.
     
-  - des mots clés spécifiques correspondant à une requête que vous créez.
+    - des mots clés spécifiques correspondant à une requête que vous créez.
+    
+    - Le modèle correspond à un classifieur entraînable.
     
   La possibilité d’appliquer automatiquement des étiquettes de rétention à du contenu est importante pour les raisons suivantes :
     
@@ -57,13 +59,13 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
    - Les utilisateurs n’ont plus à connaître les stratégies de gouvernance des données : à la place, ils peuvent se concentrer sur leur travail.
 
   > [!NOTE]
-  > La fonction d'application automatique d'étiquettes nécessite la possession d'une licence Office 365 Entreprise E5 pour chaque utilisateur qui dispose des autorisations pour modifier du contenu qui a été automatiquement étiqueté dans un site ou lorsque sa boîte aux lettres est sélectionnée pour l'étiquetage automatique. Les utilisateurs qui ont simplement un accès en lecture seule pour le contenu ou la réponse à des e-mails étiquetés n’ont pas besoin de cette licence.
+  > Pour appliquer automatiquement des étiquettes, chaque utilisateur disposant des autorisations nécessaires pour modifier du contenu étiqueté automatiquement dans un site, ou sa boîte aux lettres est sélectionnée pour l'étiquetage automatique, doit disposer d’une licence Office 365 Entreprise E5 au minimum. Les utilisateurs qui ont simplement accès en lecture seule au contenu ou qui répondent aux messages étiquetés n’ont pas besoin de cette licence.
       
 - **Mettre en œuvre la gestion des enregistrements dans Office 365**, notamment les e-mails et les documents. Vous pouvez utiliser une étiquette de rétention pour classer du contenu en tant qu’enregistrement. Lorsque cela se produit, l’étiquette ne peut pas être modifiée ou supprimée, et le contenu ne peut pas être modifié ou supprimé. 
 
 - **Appliquer une étiquette de rétention par défaut à une bibliothèque de documents, dossier ou ensemble de documents** dans SharePoint, afin que tous les documents figurant dans cette bibliothèque obtiennent l’étiquette de rétention par défaut.  
     
-Vous créez des étiquettes de rétention dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365. Dans la zone de navigation gauche, sélectionnez **Classification** > **Étiquette de rétention** > **Créer une étiquette**.
+Vous créez des étiquettes de rétention dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365.
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>Fonctionnement des étiquettes avec les stratégies d’étiquette de rétention
 
@@ -250,7 +252,7 @@ L’une des fonctionnalités les plus puissantes des étiquettes de rétention e
   
 Les étiquettes de rétention à appliquer automatiquement sont puissantes pour les raisons suivantes :
   
-- Vous n’avez pas besoin de former les utilisateurs concernant l’ensemble de vos classifications.
+- Vous n’avez pas à former les utilisateurs à l’ensemble de vos classifications.
     
 - Vous n’avez pas à dépendre des utilisateurs pour classer tout le contenu correctement.
     
@@ -258,14 +260,17 @@ Les étiquettes de rétention à appliquer automatiquement sont puissantes pour 
     
 Vous pouvez choisir d’appliquer automatiquement des étiquettes de rétention au contenu quand celui-ci inclut :
   
-- des types spécifiques d’informations sensibles ;
+- [Types spécifiques d’informations sensibles](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
     
-- des mots clés spécifiques correspondant à une requête que vous créez.
+- [Mots clés spécifiques correspondant à une requête que vous créez](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [Correspondance pour les classifieurs entraînables](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
-![Page Choisir une condition pour l’étiquette à appliquer automatiquement](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+![Page Choisir une condition pour l'application automatique de l’étiquette](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
+Les étiquettes de rétention s'appliquant automatiquement qui sont configurées pour les deux premières options exigent un abonnement Office 365 Entreprise E5. Si vous utilisez l’option de classifieurs entraînables, cette fonctionnalité comporte des [conditions supplémentaires en matière de licences](classifier-getting-started-with.md#licensing-requirements).
 
-Les étiquettes de rétention à appliquer automatiquement requièrent un abonnement Office 365 Entreprise E5. Cela peut prendre jusqu’à sept jours pour que les étiquettes de rétention à appliquer automatiquement soient appliquées à tout le contenu remplissant les conditions, comme décrit ci-dessus.
+L’application automatique d'étiquettes de rétention à tout le contenu correspondant aux conditions que vous avez configurées peut prendre jusqu’à sept jours.
   
 > [!TIP]
 > Voir [Gérer le cycle de vie des documents SharePoint avec des étiquettes de rétention](auto-apply-retention-labels-scenario.md) pour un scénario détaillé sur l’utilisation de propriétés gérées dans SharePoint pour appliquer automatiquement des étiquettes de rétention et implémenter la rétention basée sur les événements.
@@ -309,6 +314,17 @@ Exemples de requêtes :
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
 ![Éditeur de requête](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
+
+Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sélectionner un classifieur intégré ou un classifieur personnalisé. Les classifieurs intégrés incluent : **Langage choquant**, **CV**, **SourceCode**, **Harcèlement**, **Blasphème** et la **Menace**.
+
+Pour appliquer automatiquement une étiquette à l’aide de cette option, les sites et boîtes aux lettres SharePoint Online doivent avoir au moins 10 Mo de données.
+
+Pour plus d’informations sur les classifieurs entraînables, voir [Prise en main des classifieurs entrainable (version d'évaluation)](classifier-getting-started-with.md).
+
+Pour consulter un exemple de configuration, consultez [Comment préparer un classifieur prêt à l'emploi](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint
 
