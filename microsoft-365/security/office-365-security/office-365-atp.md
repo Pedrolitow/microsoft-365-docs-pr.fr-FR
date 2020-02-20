@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: 7210cc2cfbb060ee6afe9042a5c8934ff6f53576
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9d7b2561c40e1322b7f15e72c48755268c119f24
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598741"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106837"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 – Protection avancée contre les menaces
 
@@ -101,7 +101,7 @@ Office 365 – Protection avancée contre les menaces Plan 2 inclut des [outil
 
 - **[Threat Explorer (ou détections en temps réel)](threat-explorer.md)** (également appelé Explorer) est un rapport en temps réel qui vous permet d’identifier et d’analyser les menaces récentes. Vous pouvez configurer Explorer pour afficher des données pour les périodes personnalisées.
 
-- **[Simulateur d’attaques](attack-simulator.md)** vous permet d’exécuter des scénarios d’attaques réalistes au sein de votre organisation afin d’identifier les vulnérabilités. Des simulations de types actuels d’attaques sont disponibles, notamment une [attaque par hameçonnage du nom d’affichage](attack-simulator.md#display-name-spear-phishing-attack), une [attaque par pulvérisation de mot de passe](attack-simulator.md#password-spray-attack), une [attaque de mot de passe par force brute](attack-simulator.md#brute-force-password-attack), et bien plus encore.
+- **[Simulateur d’attaques](attack-simulator.md)** vous permet d’exécuter des scénarios d’attaques réalistes au sein de votre organisation afin d’identifier les vulnérabilités. Des simulations de types actuels d’attaques sont disponibles, notamment une [attaque par hameçonnage de la récupération d’informations d’identification](attack-simulator.md#credential-harvest-spear-phishing-attack), une [attaque par pulvérisation de mot de passe](attack-simulator.md#password-spray-attack), une [attaque de mot de passe par force brute](attack-simulator.md#brute-force-password-attack), et bien plus encore.
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Gagner du temps avec l’examen et la réponse automatisé
 

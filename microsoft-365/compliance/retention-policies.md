@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
-ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
+ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42093437"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106878"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -189,7 +189,7 @@ Vous pouvez facilement appliquer une stratégie de rétention à l’ensemble d�
   
 ### <a name="org-wide-policy"></a>Stratégie mise en place à l’échelle de l’organisation
 
-L’une des fonctionnalités les plus puissantes d’une stratégie de rétention est que celle-ci s’applique par défaut aux emplacements au sein d’Office 365, notamment :
+L’une des fonctionnalités les plus puissantes d’une stratégie de rétention est que celle-ci peut s’appliquer aux emplacements au sein d’Office 365, notamment :
   
 - Messagerie électronique Exchange
     
@@ -202,7 +202,7 @@ L’une des fonctionnalités les plus puissantes d’une stratégie de rétentio
 - Dossiers publics Exchange
     
 
-![Option Tous les emplacements](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![Option Tous les emplacements](../media/retention-policies-all-locations.png)
 
 Voici d’autres fonctionnalités importantes d’une stratégie de rétention mise en place à l’échelle de l’organisation :
   
@@ -215,9 +215,7 @@ Voici d’autres fonctionnalités importantes d’une stratégie de rétention m
 Lorsque vous choisissez des emplacements, vous pouvez facilement inclure ou exclure un emplacement entier, tel que la messagerie Exchange ou les comptes OneDrive. Pour ce faire, basculez l’**état** de cet emplacement sur Activé ou Désactivé. 
   
 Comme pour une stratégie mise en place à l’échelle de l’organisation, si une stratégie s’applique à n’importe quelle combinaison d’emplacements entiers, il n’existe aucune limite au nombre de boîtes aux lettres ou de sites que la stratégie peut inclure. Par exemple, si une stratégie inclut toute la messagerie Exchange et tous les sites SharePoint, l’ensemble des sites et des boîtes aux lettres est également inclus, quel que soit le nombre. Et pour Exchange, toute nouvelle boîte aux lettres créée après la stratégie hérite automatiquement de la stratégie.
- 
-![Sélectionner des pages emplacements](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
-  
+
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou exclusions spécifiques
 
 Vous pouvez également appliquer une stratégie de rétention à des utilisateurs, groupes Office 365 ou sites spécifiques. Pour ce faire, activez le **Statut** de cet emplacement, puis utilisez les liens pour inclure ou exclure des utilisateurs, des groupes Office 365 ou des sites spécifiques. 
@@ -232,9 +230,11 @@ Bien que ces limites existent, notez que vous pouvez les contourner en appliquan
   
 ### <a name="skype-locations"></a>Emplacements Skype
 
-Contrairement à la messagerie Exchange, vous ne pouvez pas basculer le statut de l’emplacement Skype pour inclure tous les utilisateurs, mais vous pouvez activer cet emplacement, puis sélectionner manuellement les utilisateurs dont vous souhaitez conserver les conversations.
+Contrairement à la messagerie Exchange, vous ne pouvez pas basculer le statut de l’emplacement Skype pour inclure tous les utilisateurs, mais lorsque vous activez cet emplacement, vous sélectionnez manuellement les utilisateurs dont vous souhaitez conserver les conversations :
+
+![Choisir un emplacement Skype pour les stratégies de rétention](../media/skype-location-retention-policies.png)
   
-Lorsque vous choisissez des utilisateurs de Skype Entreprise, vous pouvez rapidement inclure tous les utilisateurs en activant la case à cocher **Nom** dans l’en-tête de colonne. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion spécifique dans la stratégie. Par conséquent, si vous incluez plus de 1 000 utilisateurs, les limites indiquées dans la section précédente s’appliquent. Le fait de sélectionner tous les utilisateurs Skype ici ne revient pas au même qu’une stratégie à l’échelle de l’organisation qui serait en mesure d’inclure tous les utilisateurs Skype par défaut. 
+Lorsque vous sélectionnez**Choisir les utilisateurs**, vous pouvez rapidement inclure tous les utilisateurs en activant la case à cocher **Nom** dans l’en-tête de colonne. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion spécifique dans la stratégie. Par conséquent, si vous incluez plus de 1 000 utilisateurs, les limites indiquées dans la section précédente s’appliquent. Le fait de sélectionner tous les utilisateurs Skype ici ne revient pas au même qu’une stratégie à l’échelle de l’organisation qui serait en mesure d’inclure tous les utilisateurs Skype par défaut. 
   
 ![Page Sélection des utilisateurs Skype](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
