@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité pour appliquer des paramètres de protection qui intègrent le chiffrement et les filigranes sur le contenu étiqueté.
-ms.openlocfilehash: fa04fdc2713cbba090ec56972cd87e6cbdc4387b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilisez les étiquettes de confidentialité de l'infrastructure Microsoft Information Protection pour classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises. Ces étiquettes peuvent appliquer des paramètres de protection incluant des marquages visuels de chiffrement, tels que des pieds de page et des filigranes.
+ms.openlocfilehash: 92bfb768cf044b6a4837e5dab6936c2d77424a25
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081440"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106827"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
 Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes au sein de l’organisation et en dehors de celle-ci. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
 
-Avec les étiquettes de confidentialité, vous pouvez classer et protéger les données de votre organisation, sans compromettre la productivité des membres et leur capacité à travailler ensemble.
+Les étiquettes de confidentialité de l'infrastructure Microsoft Information Protection vous permettent de classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises.
 
 Exemple montrant les étiquettes de confidentialité disponibles dans Excel à partir de l’onglet **Accueil** du ruban. Dans cet exemple, l’étiquette appliquée affiche dans la barre d’état :
 
@@ -100,7 +100,11 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     Pour plus d’informations sur les paramètres de **Prévention contre la perte de données du point de terminaison** lorsque vous créez ou modifiez une étiquette de confidentialité, y compris les conditions préalables importantes, voir [Comment la Protection des informations Windows protège des fichiers à l’aide d’une étiquette de confidentialité](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
-- **Appliquer automatiquement l’étiquette au contenu qui contient des informations sensibles.** Vous pouvez choisir quels types d’informations sensibles vous souhaitez étiqueter et pouvez appliquer l’étiquette automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte souhaité. Par exemple :
+- **Protégez du contenu dans des conteneurs tels que des sites et des groupes** lorsque vous choisissez la préversion pour [utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (version d'évaluation publique)](sensitivity-labels-teams-groups-sites.md).
+    
+    Les options de configuration pour les **paramètres de sites et de groupes** n’apparaissent pas si vous n'optez pas pour la préversion. N’oubliez pas que cette configuration d’étiquettes ne permet pas aux documents d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel les documents sont stockés. Ces paramètres incluent le niveau de confidentialité qui indique si un propriétaire de groupe Office 365 peut ajouter des invités au groupe et le niveau d’accès accordé à un appareil non géré.
+
+- **Appliquez automatiquement l’étiquette dans des applications Office ou recommandez une étiquette.** Vous pouvez choisir le type d’informations sensibles que vous voulez étiqueter. L'étiquette peut être appliquée automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte de votre choix. Par exemple :
     
     ![Invitation de mise à attribuer une étiquette requise](../media/Sensitivity-label-Prompt-for-required-label.png)
     
