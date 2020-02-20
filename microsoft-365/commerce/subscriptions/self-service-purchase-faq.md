@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: a9e49f5b9b518711f72c9b9a29e690c55acf3861
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b5289f4c9b7ea8c723dab8bf4bf97b83fef5b34c
+ms.sourcegitcommit: 290d95f9ba118336cb136f34313de265b97e869e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080305"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155623"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
 > [!NOTE]
 > Les informations contenues dans cet article s’appliquent uniquement aux abonnements Microsoft Power Platform (Power BI, Power Apps et Power automate).
 
-Les achats en libre-service sont désormais disponibles pour Power Platform aux États-Unis, en Australie, au Canada et au Japon.
+Les achats en libre-service sont désormais disponibles pour Power Platform dans plusieurs pays.
 
 ## <a name="general"></a>Général
 
@@ -146,3 +146,9 @@ Les utilisateurs valides continueront à utiliser pleinement l’achat en libre-
 ### <a name="whats-the-role-of-microsofts-partners-in-self-service-purchases"></a>Quel est le rôle des partenaires de Microsoft dans les achats en libre-service ?
 
 Les partenaires qui disposent de privilèges d’administration délégués peuvent voir les achats en libre-service dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration 365 de Microsoft</a>, tout comme un administrateur. Les partenaires peuvent aider une organisation qui souhaite centraliser les produits achetés via des achats en libre-service. En outre, les partenaires peuvent proposer des solutions pour étendre les capacités d’un achat en libre-service.
+
+## <a name="country-availability"></a>Disponibilité des pays
+
+### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>Dans quels pays puis-je faire un achat en libre-service ?
+
+Les achats en libre-service sont disponibles dans les pays suivants : Australie, Canada, Japon et États-Unis.
