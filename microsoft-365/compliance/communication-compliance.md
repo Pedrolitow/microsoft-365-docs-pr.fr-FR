@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078689"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179235"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -36,6 +36,8 @@ Les stratégies de conformité des communications dans Microsoft 365 vous aident
 - Application réglementaire et risques d’amendes
 
 Dans certaines organisations, le support informatique et le groupe de gestion de la conformité peuvent séparer les tâches. Microsoft 365 prend en charge la séparation entre la configuration de la conformité de la communication et la configuration des stratégies d’analyse des communications. Par exemple, le groupe informatique d’une organisation peut être responsable de la configuration des autorisations de rôle et des groupes afin de prendre en charge les stratégies de conformité de communication configurées et gérées par l’équipe de conformité de l’organisation.
+
+Pour une vue d’ensemble rapide de la conformité de la communication, voir la vidéo relative à la détection d’un lieu de [travail harcèlement et à la conformité des communications dans microsoft 365,](https://youtu.be/z33ji7a7Zho) sur le [canal des mécanismes Microsoft](https://www.youtube.com/user/OfficeGarageSeries).
 
 ## <a name="scenarios-for-communication-compliance"></a>Scénarios de conformité de la communication
 

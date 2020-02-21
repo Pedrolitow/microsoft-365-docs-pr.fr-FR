@@ -15,13 +15,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: 'Forum aux questions pour les administrateurs sur l’utilisation du service d’importation Office 365 pour importer les fichiers PST de votre Organizaiton dans des boîtes aux lettres Office 365. '
-ms.openlocfilehash: dcbc496273a08ea133cc11bacbb62f55eee58917
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 'Forum aux questions pour les administrateurs sur l’utilisation du service d’importation Office 365 pour importer les fichiers PST de votre organisation vers des boîtes aux lettres Office 365. '
+ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594585"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170484"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>FAQ sur l’importation de fichiers PST dans Office 365
 
@@ -50,7 +50,10 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
   
  **Où le chargement réseau est-il disponible ?**
   
-Le chargement réseau est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en France, en Europe, en Inde, à l’Asie de l’est, au sud-est, au Japon, en République de Corée et en Australie. Network upload will be available in more regions soon.
+Le chargement réseau est actuellement disponible dans les régions suivantes : États-Unis, Canada, Brésil, Royaume-Uni, France, Europe, Inde, Asie de l’est, sud-est, Japon, République de Corée et Australie. Network upload will be available in more regions soon.
+
+> [!NOTE]
+> Pour l’instant, le chargement réseau des fichiers PST n’est pas disponible en Allemagne et en Suisse. Ce Forum aux questions sera mis à jour lorsque le téléchargement réseau sera disponible dans ces pays.
   
  **À combien revient l’importation de fichiers PST via le chargement du réseau ?**
   
@@ -122,6 +125,9 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
  **Où l’expédition de disque est-elle disponible ?**
   
 L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. Ce service sera prochainement disponible dans d’autres régions.
+
+> [!NOTE]
+> Pour l’instant, l’expédition vers l’importation de fichiers PST n’est pas disponible en Allemagne et en Suisse. Ce Forum aux questions sera mis à jour lors de la mise à disposition des lecteurs dans ces pays.
   
  **Quels sont les contrats de licences commerciaux qui prennent en charge l’expédition de disque ?**
   
@@ -148,7 +154,7 @@ Cela dépend de plusieurs facteurs, comme votre proximité par rapport au centre
   
  **Une fois mon disque dur arrivé au centre de données de Microsoft, combien de temps faut-il pour charger mon fichiers PST dans Azure ?**
   
-Une fois votre disque dur réceptionné au centre de données de Microsoft, vous devrez patienter entre 7 et 10 jours ouvrable pour le chargement du fichier PST dans la zone de stockage Microsoft Azure de votre organisation. Les fichiers PST seront téléchargés vers un conteneur d’objets BLOB Azure nommé **ingestiondata**. 
+Une fois que votre disque dur est reçu dans le centre de données Microsoft, il faut entre 7 et 10 jours ouvrés pour télécharger les fichiers PST dans la zone de stockage Azure de votre organisation. Les fichiers PST seront téléchargés vers un conteneur d’objets BLOB Azure nommé **ingestiondata**. 
   
  **Combien de temps faut-il compter avant qu’un fichier PST soit importé dans une boîte aux lettres ?**
   
@@ -158,7 +164,7 @@ En présence de plusieurs fichiers PST et de plusieurs boîtes aux lettres cible
   
  **Une fois que Microsoft a chargé mes fichiers PST dans Azure, pendant combien de temps sont-ils conservés dans Azure avant d’être supprimés ?**
   
-Tous les fichiers PST de l’emplacement de stockage Azure de votre organisation (dans un conteneur BLOB nommé **ingestiondata** ) sont supprimés 30 jours après la création de la tâche d’importation la plus récente dans la page **Importer les fichiers PST** du centre de sécurité & conformité. 
+Tous les fichiers PST de l’emplacement de stockage Azure de votre organisation (dans un conteneur BLOB nommé **ingestiondata**) sont supprimés 30 jours après la création de la tâche d’importation la plus récente dans la page **Importer les fichiers PST** du centre de sécurité & conformité. 
   
 Cela veut aussi dire qu’après avoir été supprimés de la zone de stockage Azure, les fichiers PST ne figurent plus dans la liste des fichiers d’une tâche d’importation terminée dans le Centre de sécurité et de conformité. Même si une tâche d’importation figure toujours dans la page **Importer des fichiers PST** dans le Centre de sécurité et de conformité, il est possible que la liste de fichiers PST soit vide au moment d’afficher les détails d’anciennes tâches d’importation. 
   

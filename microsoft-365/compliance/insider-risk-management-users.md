@@ -1,5 +1,5 @@
 ---
-title: Utilisateurs de la gestion des risques Insiders (aperçu)
+title: Utilisateurs de la gestion des risques internes
 description: En savoir plus sur les utilisateurs de la gestion des risques internes dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
 localization_priority: Normal
@@ -12,19 +12,19 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a9ff7e38a99a5fe5bd8da5301bec5e19bc015cf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072785"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179105"
 ---
-# <a name="insider-risk-management-users-preview"></a>Utilisateurs de la gestion des risques Insiders (aperçu)
+# <a name="insider-risk-management-users"></a>Utilisateurs de la gestion des risques internes
 
 Les utilisateurs de la gestion des risques internes sont des employés de votre organisation qui sont inclus dans une ou plusieurs stratégies de gestion des risques Insiders. Utilisez le **tableau de bord utilisateurs** pour examiner rapidement les informations relatives aux risques des employés et pour ajouter un employé à une stratégie de gestion des risques inSided existante. Chaque utilisateur inclus dans une stratégie de gestion des risques inSided dispose des informations suivantes affichées dans le **tableau de bord utilisateurs**:
 
 - **Users**: nom d’utilisateur d’un utilisateur.
-- **Niveau de risque**: 
+- **Niveau de risque**: niveau de risque calculé actuel de l’utilisateur. Ce score est calculé toutes les 24 heures et utilise les scores de risque d’alerte de toutes les alertes actives associées à l’utilisateur.
 - **Alertes actives**: nombre d’alertes actives pour toutes les stratégies.
 - **Violations confirmées**: nombre de cas résolus comme *violation de stratégie confirmée* pour l’utilisateur.
 - **Cas**: dossier actif actuel de l’utilisateur.
@@ -54,5 +54,5 @@ Procédez comme suit pour ajouter un utilisateur à une stratégie d’Insider e
 2. Sélectionnez **Ajouter un utilisateur à une stratégie** dans la barre d’outils.
 3. Dans la boîte de dialogue **Ajouter un nouvel utilisateur** , commencez à taper un nom d’utilisateur dans le champ **utilisateur** . Sélectionnez l’utilisateur que vous souhaitez ajouter à une stratégie.
 4. Sélectionnez la flèche déroulante pour le champ de **stratégie** afin d’afficher les stratégies de gestion des risques d’Insider configurées. Sélectionnez la stratégie à laquelle ajouter l’utilisateur.
-5. Utilisez le contrôle Slider de la **fenêtre de surveillance** pour définir les...... La plage de la fenêtre de surveillance est comprise entre 5 et 30 jours.
+5. Utilisez le contrôle Slider de la **fenêtre d’activation** pour définir la durée pendant laquelle la stratégie est active pour cet utilisateur et elle est déclenchée lorsque l’utilisateur effectue la première activité correspondant à la stratégie. La plage de la fenêtre de surveillance est comprise entre 5 et 30 jours.
 6. Sélectionnez **Ajouter** , puis **confirmez** l’ajout de l’utilisateur à la stratégie.

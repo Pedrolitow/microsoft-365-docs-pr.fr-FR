@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072881"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179215"
 ---
-# <a name="insider-risk-management-alerts-preview"></a>Alertes de gestion des risques Insiders (aperçu)
+# <a name="insider-risk-management-alerts"></a>Alertes de gestion des risques internes
 
 Les alertes de gestion des risques initiés sont automatiquement générées par les indicateurs de risque définis dans les stratégies de gestion des risques internes. Ces alertes donnent aux analystes de conformité un aperçu de l’état actuel des risques et permettent à votre organisation de trier et de prendre des mesures pour les risques découverts.
 

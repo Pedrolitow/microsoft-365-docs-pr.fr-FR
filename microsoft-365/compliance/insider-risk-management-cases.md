@@ -1,5 +1,5 @@
 ---
-title: Cas d’Insider de gestion des risques (aperçu)
+title: Dossiers de gestion des risques initiés
 description: En savoir plus sur les cas de gestion des risques internes dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072843"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179175"
 ---
-# <a name="insider-risk-management-cases-preview"></a>Cas d’Insider de gestion des risques (aperçu)
+# <a name="insider-risk-management-cases"></a>Dossiers de gestion des risques initiés
 
 Les cas sont le cœur de la gestion des risques initiés et vous permettent d’approfondir et de prendre des mesures sur les problèmes générés par les indicateurs de risque définis dans vos stratégies. Les incidents sont créés manuellement à partir d’alertes dans les situations où une autre action est nécessaire pour résoudre un problème lié à la conformité pour un employé. Chaque cas est limité à un seul employé et plusieurs alertes peuvent être ajoutées à un incident existant ou à un autre cas. Après avoir examiné les détails d’un cas, vous pouvez prendre une mesure en envoyant un avis à l’employé, en le résolvant comme inoffensif ou en effectuant une enquête sur les données ou les employés.
 
@@ -96,7 +96,7 @@ L’onglet activité de l' **utilisateur** est l’un des outils les plus puissa
     - **Date** de l’activité de risque.
     - Catégorie de l' **activité de risque**. Par exemple, des *courriers électroniques avec des pièces jointes envoyées à l’extérieur de l’organisation* ou des *fichiers téléchargés à partir de SharePoint Online*.
     - **Score de risque** de l’alerte. Ce score est le score numérique du niveau de gravité des risques d’alerte.
-    - Nombre de **fichiers** ou d' **e-mails** associés à l’alerte. Des liens vers chaque fichier ou courrier électronique associé à l’activité de risque sont également disponibles.
+    - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou courrier électronique associé à l’activité de risque sont également disponibles.
 3. **Légende**de l’activité des risques : dans la partie inférieure du graphique d’activité de l’utilisateur, une légende de couleur vous permet de déterminer rapidement la catégorie de risque pour chaque alerte.
 4. **Chronologie**de l’activité des risques : la chronologie complète de toutes les alertes de risque associées à l’incident est répertoriée, y compris tous les détails disponibles dans la bulle d’alerte correspondante.
 5. **Actions de cas**: les options de résolution de l’incident figurent dans la barre d’outils action de l’incident. Vous pouvez résoudre un incident, envoyer une notification par courrier électronique à l’employé ou escalader le cas à une enquête sur les données ou les employés.

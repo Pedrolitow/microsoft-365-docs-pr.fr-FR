@@ -1,5 +1,5 @@
 ---
-title: Modèles d’avis de gestion des risques initiés (aperçu)
+title: Modèles d’avis de gestion des risques initiés
 description: Découvrez les modèles d’avis de gestion des risques inSided dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072804"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179085"
 ---
-# <a name="insider-risk-management-notice-templates-preview"></a>Modèles d’avis de gestion des risques initiés (aperçu)
+# <a name="insider-risk-management-notice-templates"></a>Modèles d’avis de gestion des risques initiés
 
 Les modèles d’avis de gestion des risques initiés vous permettent d’envoyer des messages électroniques aux employés lorsque leurs activités génèrent une mise en correspondance et une alerte de stratégie. Dans la plupart des cas, les actions de l’employé qui génèrent des alertes résultent d’erreurs ou d’activités involontaires sans avoir de mal. Les notifications servent de rappels simples aux employés pour être plus prudents ou fournir des liens ou des informations pour les ressources de la formation ou de la stratégie d’entreprise. Les notifications peuvent être une partie importante de votre programme de formation interne et peuvent vous aider à créer une piste d’audit documentée pour les employés ayant des activités de risque récurrent.
 

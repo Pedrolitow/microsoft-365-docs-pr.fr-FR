@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175707"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219175"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Accéder au centre de notifications pour afficher les actions de correction
 
@@ -42,9 +42,6 @@ Le centre de notifications offre une expérience de type « écran unique » p
 - Évaluation des actions de correction terminées.
 
 L’équipe en charge des opérations de sécurité peut fonctionner de façon plus efficace, car le centre de notifications offre une vue complète de la Protection Microsoft contre les menaces en fonctionnement.
-
-## <a name="remediation-actions"></a>Actions de correction
-
 
 ## <a name="go-to-the-action-center"></a>Accéder au centre de notifications
 

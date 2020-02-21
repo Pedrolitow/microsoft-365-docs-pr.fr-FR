@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le catalogue de solutions Microsoft 365, y compris son contenu, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071340"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179145"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
@@ -95,7 +95,7 @@ Si vous recherchez une solution de conformité existante et qu’elle n’est pa
 
 - **Examinez votre score de conformité Microsoft**, un score personnalisé basé sur les risques pour vous aider à comprendre l’état de conformité de votre organisation à l’aide des normes et réglementations clés. Il fournit les actions recommandées que vous pouvez prendre pour renforcer votre position globale de conformité et fournit des fonctionnalités de flux de travail pour vous aider à exécuter efficacement ces actions. Pour en savoir plus, consultez [la rubrique score de conformité (aperçu)](compliance-score.md).
 
-- **Configurez des stratégies de gestion des risques initiés** pour minimiser les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Voir [gestion des risques internes (](insider-risk-management.md)préversion).
+- **Configurez des stratégies de gestion des risques initiés** pour minimiser les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Consultez la rubrique [gestion des risques internes](insider-risk-management.md).
 
 - **Découvrez et créez des stratégies de conformité des communications** pour identifier et corriger rapidement les violations de la stratégie de code de conduite d’entreprise. Consultez [la rubrique communication Compliance](communication-compliance.md).
 

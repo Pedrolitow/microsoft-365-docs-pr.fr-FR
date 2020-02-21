@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La journalisation d’audit de boîte aux lettres est activée par défaut dans Office 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 1c1d9996ef72c686a6a543a30bcb34e265cc79cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 28823c3b2b43261d18352cb939c36f1cfc0b2c7c
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074711"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170574"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -111,7 +111,7 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l�
 |**Par défaut**||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque**: les enregistrements d’audit pour les actions de liaison de dossiers effectuées par des délégués sont consolidés. Un enregistrement d’audit est généré pour l’accès à un dossier individuel dans les 24 heures.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MailItemsAccessed**|Les données de messagerie sont accessibles par les clients et les protocoles de messagerie. Cette valeur est disponible uniquement pour les utilisateurs d’abonnement de complément de conformité E5 ou E5. Pour plus d’informations, consultez la rubrique [événements d’audit de valeur élevée](https://docs.microsoft.com/microsoft-365/compliance/advanced-audit#high-value-audit-events)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**MailItemsAccessed**|Les données de messagerie sont accessibles par les clients et les protocoles de messagerie. Cette valeur est disponible uniquement pour les utilisateurs d’abonnement de complément de conformité E5 ou E5. Pour plus d’informations, consultez la rubrique [accès aux événements cruciaux pour les enquêtes](advanced-audit.md#access-to-crucial-events-for-investigations).|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MailboxLogin**|L’utilisateur est connecté à sa boîte aux lettres. |||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MessageBind**|Un message a été affiché dans le volet de visualisation ou ouvert par un administrateur. **Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, ces actions ne sont plus enregistrées.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||

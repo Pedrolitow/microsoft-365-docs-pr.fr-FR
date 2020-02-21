@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072737"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179185"
 ---
-# <a name="insider-risk-management-in-microsoft-365-preview"></a>Gestion des risques internes dans Microsoft 365 (version d’évaluation)
+# <a name="insider-risk-management-in-microsoft-365"></a>Gestion des risques internes dans Microsoft 365
 
-La gestion des risques initiés est une solution de risque interne dans Microsoft 365 qui permet de réduire les risques internes en vous permettant de détecter, d’examiner et de prendre des mesures pour les activités à risque au sein de votre organisation. Les stratégies personnalisées vous permettent de détecter et de prendre des mesures concernant les activités de risque malveillant et involontaire au sein de votre organisation, y compris la signalisation des cas à d’autres solutions d’enquête Microsoft 365, le cas échéant. Les analystes de risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
+La gestion des risques initiés est une solution dans Microsoft 365 qui permet de réduire les risques internes en vous permettant de détecter, d’examiner et de prendre des mesures pour les activités à risque au sein de votre organisation. Les stratégies personnalisées vous permettent de détecter et de prendre des mesures concernant les activités malveillantes et les risques involontaires dans votre organisation, y compris la signalisation progressive de Microsoft Advanced eDiscovery, le cas échéant. Les analystes de risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
 
 Regardez la vidéo ci-dessous pour découvrir comment la gestion des risques des Insiders peut aider votre organisation à prévenir, détecter et concourir des risques tout en hiérarchisant les valeurs de votre organisation, la culture et l’expérience de l’employé :
 <br>
@@ -66,7 +66,7 @@ Vous pouvez sélectionner l’un des [modèles de stratégie](insider-risk-manag
 
 - Défaition des vols de données des employés
 - Fuites de données
-- Langage choquant dans la communication
+- Langage choquant dans le courrier électronique
 
 Pour plus d’informations, consultez la rubrique [stratégies de gestion des risques internes](insider-risk-management-policies.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Explorateur de contenu de gestion des risques Insiders (aperçu)
+title: Explorateur de contenu de gestion des risques Insiders
 description: Découvrez l’Explorateur de contenu de gestion des risques inSided dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a8c1c77bdfa3236ce8f2222fd21a7fba0535f149
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 68a472e4e6b7556fc1b738a49b3c82dcf4804842
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590645"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179075"
 ---
-# <a name="insider-risk-management-content-explorer-preview"></a>Explorateur de contenu de gestion des risques Insiders (aperçu)
+# <a name="insider-risk-management-content-explorer"></a>Explorateur de contenu de gestion des risques Insiders
 
 L’Explorateur de contenu de gestion des risques inSided permet aux analystes et aux investigateurs de risque d’examiner le contexte et les détails des communications capturées dans les alertes. Pour toutes les alertes, les copies de données et les fichiers de messages sont archivés en tant qu’instantanés dans le temps des éléments, tout en conservant les fichiers et les messages d’origine dans les sources de stockage. La copie des données et des messages est transparente pour l’employé associé à l’alerte et pour le propriétaire du contenu. Les paramètres d’autorisation et les droits d’accès pour les données sont conservés pour le contenu copié, ainsi que les messages et analystes de risques, et les investigateurs ont besoin de ces autorisations et droits s’ils doivent ouvrir et afficher les fichiers. Chaque fichier et message reçoit automatiquement un ID de fichier unique dans le cas d’une gestion des risques inSided à des fins de gestion.
 
@@ -51,19 +51,19 @@ Pour ajouter ou supprimer des en-têtes de colonne pour la file d’attente de c
 | **Dernière modification** | Date de la dernière modification apportée à un document. |
 | **Marqué comme représentant** | Un document de chaque ensemble de doublons exact est marqué comme représentant. |
 | **Type de message** | Type de message électronique à rechercher. Valeurs possibles : contacts, documents, courrier électronique, données externes, télécopies, messagerie instantanée, journaux, réunions, Microsoft Teams (renvoie les éléments des conversations, des réunions et des appels dans Microsoft Teams), notes, publications, RSSFeeds, tâches, messagerie vocale |
-| **Auront** | Liste de tous les participants d’un message ; par exemple, expéditeur, à, CC, CCI. |
+| **Participants** | Liste de tous les participants d’un message ; par exemple, expéditeur, à, CC, CCI. |
 | **ID de tableau croisé dynamique** | ID d’un tableau croisé dynamique. |
 | **Received** | Date à laquelle un message électronique a été reçu par un destinataire. Il s’agit de la même propriété que la propriété de messagerie Received. |
 | **Destinataires** | Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI. |
 | **ID représentatif** | Identificateur numérique de chaque ensemble de doublons exacts. |
-| **Expéditeur** | Expéditeur d’un message électronique. |
+| **Sender** | Expéditeur d’un message électronique. |
 | **Expéditeur/auteur** | Pour la messagerie électronique, personne ayant envoyé le message. Pour les documents, personne mentionnée dans le champ Auteur des documents Office. Vous pouvez saisir plusieurs noms, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur OR. |
 | **Sent** | Date à laquelle un message électronique a été envoyé par l’expéditeur. Il s’agit de la même propriété que la propriété de messagerie Sent. |
 | **Size** | Pour la messagerie électronique et les documents, taille de l’élément (en octets). |
 | **Subject** | Texte de la ligne d’objet d’un message électronique. |
 | **Subject/title** | Pour la messagerie électronique, texte de la ligne d’objet d’un message. Pour les documents, titre du document. Comme expliqué précédemment, la propriété Title est des métadonnées spécifiées dans les documents Microsoft Office. Vous pouvez taper le nom de plus d’un objet/titre, séparé par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur OR. |
 | **Liste des thèmes** | Liste des thèmes telle qu’elle est calculée pour l’analyse. |
-| **Title** | Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document. |
+| **Titre** | Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document. |
 | **To** | Destinataire d’un message électronique dans le champ à. |
 
 ## <a name="advanced-search-conditions"></a>Conditions de recherche avancées
@@ -122,10 +122,10 @@ Le tableau suivant répertorie les conditions de propriété de message électro
 | **Date de début de la réunion** | Date de début de réunion pour les réunions. |
 | **Type de message** | Type de message électronique à rechercher. Valeurs possibles : contacts, documents, courrier électronique, données externes, télécopies, messagerie instantanée, journaux, réunions, Microsoft Teams (renvoie les éléments des conversations, des réunions et des appels dans Microsoft Teams), notes, publications, RSSFeeds, tâches, messagerie vocale |
 | **Domaine du participant** | Liste de tous les domaines des participants d’un message. |
-| **Auront** | Tous les champs de personnes dans un message électronique. Ces champs sont from, to, CC et BCC. |
+| **Participants** | Tous les champs de personnes dans un message électronique. Ces champs sont from, to, CC et BCC. |
 | **Received** | Date à laquelle un message électronique a été reçu par un destinataire. |
 | **Domaines de destinataires** | Liste de tous les domaines de destinataires d’un message. |
-| **Expéditeur** | Champ sender (from) pour les types de message.  Le format **est \<DisplayName SmtpAddress>**. |
+| **Sender** | Champ sender (from) pour les types de message.  Le format **est \<DisplayName SmtpAddress>**. |
 | **Domaine de l’expéditeur** | Domaine de l’expéditeur. |
 | **Subject** | Texte de la ligne d’objet d’un message électronique.  <br/> **Remarque :** Lorsque vous utilisez la propriété Subject dans une requête, la recherche renvoie tous les messages dans lesquels la ligne d’objet contient le texte que vous recherchez. En d’autres termes, la requête ne renvoie que les messages qui ont une correspondance exacte. Par exemple, si vous recherchez `subject:"Quarterly Financials"`, vos résultats incluent les messages dont l’objet est « trimestriel financials 2018 ». |
 | **To** | Champ À d’un message électronique. |
@@ -168,6 +168,6 @@ Le tableau suivant répertorie les conditions de propriété documents disponibl
 | **ID représentatif** | Identificateur numérique de chaque ensemble de doublons exacts. |
 | **Tags** | Balises appliquées dans un jeu de révision. |
 | **Liste des thèmes** | Liste des thèmes telle qu’elle est calculée pour l’analyse. |
-| **Title** | Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document. |
+| **Titre** | Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document. |
 | **A été résolu** | True si l’élément a été résolu, sinon false. |
 | **Statistiques** | Nombre de mots dans un fichier. |

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vous pouvez désormais appliquer des stratégies DLP aux conversations et canaux Microsoft Teams. Lisez cet article pour en savoir plus sur son fonctionnement.
-ms.openlocfilehash: 30436659b8b1bd336823e8dc6be06c8fbc8e08e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2c530279dde03f357386f11b9e9af5d68be5ee7f
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075283"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170554"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft teams
 
@@ -31,7 +31,12 @@ Pour en savoir plus sur les conditions d’octroi de licences, consultez [Consei
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Vue d’ensemble de DLP pour Microsoft teams
 
-Récemment, les fonctionnalités de [protection contre la perte de données](data-loss-prevention-policies.md) (DLP) ont été étendues de façon à inclure la conversation Microsoft teams et les messages de canal. Si votre organisation dispose de DLP, vous pouvez maintenant définir des stratégies qui empêchent les utilisateurs de partager des informations sensibles dans un canal Microsoft teams ou une session de conversation. Voici quelques exemples illustrant le fonctionnement de cette protection :
+Récemment, les fonctionnalités de [protection contre la perte de données](data-loss-prevention-policies.md) (DLP) ont été étendues de façon à inclure la conversation Microsoft teams et les messages de canal.
+
+> [!NOTE]
+> DLP n’est pas pris en charge pour le moment pour les messages de canal privé.
+
+Si votre organisation dispose de DLP, vous pouvez maintenant définir des stratégies qui empêchent les utilisateurs de partager des informations sensibles dans un canal Microsoft teams ou une session de conversation. Voici quelques exemples illustrant le fonctionnement de cette protection :
 
 - **Exemple 1 : protection des informations sensibles dans les messages**. Supposons qu’une personne tente de partager des informations sensibles dans une conversation ou un canal de teams avec des invités (utilisateurs externes). Si vous avez défini une stratégie DLP pour éviter cela, les messages contenant des informations sensibles qui sont envoyés à des utilisateurs externes sont supprimés. Cela se produit automatiquement et en quelques secondes, en fonction de la configuration de votre stratégie DLP.
 
@@ -50,7 +55,7 @@ Dans ce cas, l’expéditeur a tenté de partager un numéro de sécurité socia
 
 ![Options de résolution des messages bloqués](../media/dlp-teams-blockedmessage-possibleactions.png)
 
-Dans votre organisation, vous pouvez choisir d’autoriser les utilisateurs à remplacer une stratégie DLP. Lorsque vous configurez vos stratégies DLP, vous pouvez utiliser les conseils de stratégie par défaut ou [personnaliser les conseils de stratégie](#to-customize-policy-tips) pour votre organisation. 
+Dans votre organisation, vous pouvez choisir d’autoriser les utilisateurs à remplacer une stratégie DLP. Lorsque vous configurez vos stratégies DLP, vous pouvez utiliser les conseils de stratégie par défaut ou [personnaliser les conseils de stratégie](#to-customize-policy-tips) pour votre organisation.
 
 Pour revenir à notre exemple, lorsqu’un expéditeur partage un numéro de sécurité sociale dans un canal Teams, voici ce que Saw le destinataire :
 
@@ -64,7 +69,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
 
-2. Choisissez**stratégie**de **protection contre** > la perte de données. 
+2. Choisissez**stratégie**de **protection contre** > la perte de données.
 
 3. Sélectionnez une stratégie, puis en regard de **paramètres de stratégie**, sélectionnez **modifier**.
 
@@ -72,7 +77,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 5. Dans l’onglet **notifications utilisateur** , sélectionnez **personnaliser le texte du message électronique** et/ou **personnaliser les options de texte du Conseil de stratégie** .<br/>![Personnaliser les notifications utilisateur et les conseils de stratégie](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
-6. Spécifiez le texte que vous souhaitez utiliser pour les notifications par courrier électronique et/ou les conseils de stratégie, puis cliquez sur **Enregistrer**. 
+6. Spécifiez le texte que vous souhaitez utiliser pour les notifications par courrier électronique et/ou les conseils de stratégie, puis cliquez sur **Enregistrer**.
 
 7. Dans l’onglet **paramètres de stratégie** , sélectionnez **Enregistrer**.
 
@@ -84,7 +89,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
 
-2. Choisissez**stratégie**de **protection contre** > la perte de données. 
+2. Choisissez**stratégie**de **protection contre** > la perte de données.
 
 3. Sélectionnez une stratégie, puis examinez les valeurs figurant dans la zone **emplacements**. Si vous voyez la **conversation teams et les messages de canal**, tous sont définis. Si ce n’est pas le cas, cliquez sur **modifier**.<br/>![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -102,11 +107,11 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
 
-2. Choisir une**stratégie** > de **protection contre** > la perte**de données + créer une stratégie**. 
+2. Choisir une**stratégie** > de **protection contre** > la perte**de données + créer une stratégie**.
 
 3. Choisissez un [modèle](data-loss-prevention-policies.md#dlp-policy-templates), puis cliquez sur **suivant**.<br/>Dans notre exemple, nous avons choisi le modèle de données des informations d’identification personnelle aux États-Unis.<br/>![Modèle de confidentialité pour la stratégie DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
-4. Dans l’onglet **nom de votre stratégie** , spécifiez un nom et une description pour la stratégie, puis cliquez sur **suivant**. 
+4. Dans l’onglet **nom de votre stratégie** , spécifiez un nom et une description pour la stratégie, puis cliquez sur **suivant**.
 
 5. Dans l’onglet **choisir les emplacements** , conservez le paramètre par défaut tous les emplacements ou sélectionnez **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.<br/>Si vous avez choisi des emplacements spécifiques, sélectionnez-les pour votre stratégie DLP, puis cliquez sur **suivant**.<br/>![Emplacements de stratégie DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
@@ -120,7 +125,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 8. Dans l' **onglet Paramètres de stratégie** , sous voulez- **vous activer la stratégie ou effectuer d’abord des tests ?**, indiquez si vous souhaitez activer la stratégie, la [Tester](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)ou la désactiver pour le moment, puis cliquez sur **suivant**.<br/>![Indiquez si la stratégie doit être activée ou non.](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
-9. Dans l’onglet **vérifier vos paramètres** , passez en revue les paramètres de votre nouvelle stratégie. Choisissez **modifier** pour apporter des modifications. Lorsque vous avez terminé, sélectionnez **créer**. 
+9. Dans l’onglet **vérifier vos paramètres** , passez en revue les paramètres de votre nouvelle stratégie. Choisissez **modifier** pour apporter des modifications. Lorsque vous avez terminé, sélectionnez **créer**.
 
 Prévoyez environ une heure pour que votre nouvelle stratégie fonctionne dans votre centre de données et synchronisez-vous avec les comptes d’utilisateur.
 
