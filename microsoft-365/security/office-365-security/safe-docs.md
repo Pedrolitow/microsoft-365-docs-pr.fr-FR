@@ -15,18 +15,24 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les documents sûrs dans Office 365 dav.
-ms.openlocfilehash: c76ae2c776c31cf798c21d7330bce488ad1e7cc6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3980746eb2f48e77c22f5139827bead5640dad61
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082366"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170474"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Documents approuvés dans Office 365 protection avancée contre les menaces
 
 Documents approuvés est une fonctionnalité d’Office 365 protection avancée contre les menaces qui utilise la [protection avancée contre les menaces de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) pour analyser les documents et les fichiers ouverts en [mode protégé](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+
+- Cette fonctionnalité est disponible uniquement pour les utilisateurs disposant de la licence de sécurité Microsoft 365 E5 ou Microsoft 365 E5.
+
+- Les documents approuvés sont actuellement disponibles pour la préversion publique, disponibles pour les utilisateurs qui font partie du [programme Office Insider](https://insider.office.com/en-us/join) sur le canal mensuel (ciblé) avec Office version 2002 (12527,20092) ou supérieur. Cette fonctionnalité est désactivée par défaut et doit être activée par l’administrateur de la sécurité.
+
+- Seule région américaine prise en charge pour le traitement de fichiers conformes (tous les fichiers sont acheminés vers la région américaine pour analyse). La prise en charge de la France/de la région de l’UE est prévue dans une prochaine mise à jour.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à Exchange Online Protection PowerShell, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 

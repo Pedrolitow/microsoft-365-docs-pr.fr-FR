@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083779"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175707"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Accéder au centre de notifications pour afficher les actions de correction
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="a-single-pane-of-glass-experience"></a>Expérience de type « écran unique »
 
@@ -47,11 +45,6 @@ L’équipe en charge des opérations de sécurité peut fonctionner de façon p
 
 ## <a name="remediation-actions"></a>Actions de correction
 
-Le tableau suivant répertorie les actions de correction actuellement prises en charge dans le centre de notifications : 
-
-|Actions de correction des points de terminaison  |Actions de correction des e-mails  |
-|---------|---------|
-|Fichier de quarantaine<br/>Supprimer une clé de Registre<br/>Processus d’arrêt <br/>Arrêter le service <br/>Supprimer une clé de Registre <br/>Désactiver le pilote <br/>Supprimer une tâche planifiée.      |Supprimer (récupération possible) le courrier ou des clusters<br/>Bloquer l’URL (heure du clic)<br/>Désactiver le transfert de courrier externe          |
 
 ## <a name="go-to-the-action-center"></a>Accéder au centre de notifications
 

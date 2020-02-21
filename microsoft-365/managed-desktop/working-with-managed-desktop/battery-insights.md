@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085727"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170594"
 ---
 # <a name="battery-insights"></a>Informations sur la batterie
 Cette vue fournit des mesures d’utilisation de l’alimentation, de la batterie et de l’application pour vos appareils de bureau gérés par Microsoft. À cette fin, une application est considérée « en cours d’utilisation » si elle est en cours d’exécution et en focus.
@@ -33,7 +33,7 @@ Le tableau indique la durée de vie de la batterie prévue (en heures), la duré
 
 ## <a name="top-energy-consumers"></a>Principaux consommateurs énergétiques
 
-Dans la zone **Consumer Energy Top** , vous trouverez les applications de votre environnement qui consomment le plus d’énergie en milliwatt-Hours (MWh). Les applications affichées sont déterminées par un appareil spécifique, que vous sélectionnez dans la section **durée de vie** de la batterie à gauche. Par exemple, pour voir la consommation par application de vos appareils de la surface de votre site, sélectionnez cette ligne dans la zone autonomie de la batterie. Si vous ne sélectionnez aucun modèle, les données de consommation de l’application affichées s’affichent pour toutes les applications pour lesquelles nous disposons de données collectives.
+Dans la zone **Consumer Energy Top** , vous trouverez les applications de votre environnement qui consomment le plus d’énergie en milliwatt-Hours (MWh). Les applications affichées sont déterminées par un appareil spécifique, que vous sélectionnez dans la section **durée de vie** de la batterie à gauche. Par exemple, pour voir la consommation par application de vos appareils Microsoft surface Book 2, sélectionnez cette ligne dans la zone autonomie de la batterie. Si vous ne sélectionnez aucun modèle, les données de consommation de l’application affichées s’affichent pour toutes les applications pour lesquelles nous disposons de données collectives.
 
  Pour chaque application, les segments colorés vous montrent la distribution de l’utilisation de l’énergie de l’application dans les catégories suivantes :
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Les administrateurs peuvent en savoir plus sur l’utilisation de S/MIME dans Exchange Online.
-ms.openlocfilehash: b135a9dc2c5ad8fbf190b38f9fe10161b95a7531
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598531"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170494"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME pour la signature et le chiffrement des messages dans Exchange Online
 
@@ -39,15 +39,15 @@ Vous pouvez configurer la norme S/MIME afin qu'elle fonctionne avec n'importe le
 
 Les étapes à suivre pour configurer S/MIME avec chacun de ces points de terminaison sont légèrement différentes. En règle générale, vous devez effectuer les étapes suivantes :
 
-- Installer une autorité de certification reposant sur Windows et configurer une infrastructure à clé publique pour émettre des certificats S/MIME. Les certificats délivrés par des fournisseurs de certificats tiers sont également pris en charge. Pour plus de détails, reportez-vous à [Vue d'ensemble des services de certificats Active Directory](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+1. Installer une autorité de certification reposant sur Windows et configurer une infrastructure à clé publique pour émettre des certificats S/MIME. Les certificats délivrés par des fournisseurs de certificats tiers sont également pris en charge. Pour plus de détails, reportez-vous à [Vue d'ensemble des services de certificats Active Directory](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
 
-- Publiez le certificat utilisateur dans un compte AD DS sur site dans les attributs **UserSMIMECertificate** et/ou **UserCertificate** .
+2. Publiez le certificat utilisateur dans un compte AD DS sur site dans les attributs **UserSMIMECertificate** et/ou **UserCertificate** .
 
-- Pour les organisations Exchange Online, synchronisez les certificats utilisateur entre AD DS et Azure Active Directory à l’aide d’une version appropriée de DirSync. Ces certificats seront ensuite synchronisés à partir d’Azure Active Directory vers l’annuaire Exchange Online et seront utilisés lors du chiffrement d’un message à un destinataire.
+3. Pour les organisations Exchange Online, synchronisez les certificats utilisateur entre AD DS et Azure Active Directory à l’aide d’une version appropriée d’Azure AD Connect. Ces certificats seront ensuite synchronisés à partir d’Azure Active Directory vers l’annuaire Exchange Online et seront utilisés lors du chiffrement d’un message à un destinataire.
 
-- Configurer une collection de certificats virtuelle afin de valider S/MIME. Ces informations sont utilisées par Outlook sur le web lorsqu'il valide la signature d'un courrier électronique et vérifie qu'il a été signé par un certificat approuvé.
+4. Configurer une collection de certificats virtuelle afin de valider S/MIME. Ces informations sont utilisées par Outlook sur le web lorsqu'il valide la signature d'un courrier électronique et vérifie qu'il a été signé par un certificat approuvé.
 
-- Configurer le point de terminaison Outlook ou EAS de sorte qu'il utilise S/MIME.
+5. Configurer le point de terminaison Outlook ou EAS de sorte qu'il utilise S/MIME.
 
 > [!NOTE]
 > Vous ne pouvez pas installer le contrôle S/MIME dans Outlook sur le Web sur Mac, iOS, Android ou d’autres appareils non-Windows. Pour plus d’informations, consultez [la rubrique chiffrer les messages à l’aide de S/MIME dans Outlook sur le Web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).

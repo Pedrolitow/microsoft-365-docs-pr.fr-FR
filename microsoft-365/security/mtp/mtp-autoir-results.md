@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 08aa1f0c252d931ab1abf078b1c0cfcf7d9b43a2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 062dd86de49eb3dfe47566aa8d7269780cf9995c
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083751"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175717"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Lorsqu'une enquête automatisée a lieu dans le Protection Microsoft contre les menaces, les détails concernant cet examen sont disponibles pendant et après le processus d'examen automatisé. Si vous disposez des [autorisations nécessaires](mtp-action-center.md#required-permissions-for-action-center-tasks), vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente. 
 

@@ -14,34 +14,27 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 4ca4cf6033b843b92a2edceaae27f43d6eed8e7d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8f781687047f39d4d038e293e50c9caad83d051a
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086805"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179245"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
-Les fonctionnalités d’analyse et de réponse automatisées (AIR) vous permettent d’exécuter des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. AIR peut aider votre équipe opérationnelle en matière de sécurité à fonctionner de manière plus efficace.
-- Pour obtenir une vue d’ensemble du fonctionnement de l’avion, utilisez cet article.
-- Pour commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
+À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. Parfois, les équipes d’opérations de sécurité peuvent être submergées par le volume des alertes déclenchées. Les fonctionnalités d’analyse et de réponse automatiques dans Office 365 peuvent vous aider. AIR permet à votre équipe des opérations de sécurité de fonctionner de manière plus efficace. Les fonctionnalités AIR incluent des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. Les actions de correction appropriées attendent l’approbation, ce qui permet à votre équipe des opérations de sécurité de répondre aux menaces détectées. 
+
+Cet article fournit une vue d’ensemble de l’AIR et de ses composants. Lorsque vous êtes prêt à commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
 
 > [!TIP]
 > Avez-vous Microsoft 365 E5 ou Microsoft 365 E3 conjointement avec identité et protection contre les menaces ? Nous recommandons d’utiliser [Protection Microsoft contre les menaces](../mtp/microsoft-threat-protection.md).
 
-## <a name="the-overall-flow-of-air"></a>Flux d’AIR global
+## <a name="at-a-high-level"></a>À un niveau élevé
 
-À un niveau élevé, le flux d’AIR fonctionne comme ceci :
+Comme les alertes sont déclenchées, les règles de sécurité entrent en vigueur. En fonction de la situation, un [processus d’enquête automatisé](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) peut commencer. Pendant et après une enquête automatisée, les [actions correctives](air-remediation-actions.md) sont recommandées. Aucune action n’est effectuée automatiquement dans Office 365 protection avancée contre les menaces. Votre équipe de gestion des opérations de sécurité examine, puis [approuve ou rejette chaque action de correction](air-remediation-actions.md#approve-or-reject-pending-actions), et lorsque cela est fait, chaque enquête se termine. Toutes ces activités sont suivies et affichables dans le centre de conformité Office 365 Security & (voir [afficher les détails d’une enquête](air-view-investigation-results.md#view-details-of-an-investigation)).
 
-|Phase  |Ce qui est impliqué  |
-|---------|---------|
-|0,1     |Une [alerte](#alerts) est déclenchée par un événement Office et un [Manuel de sécurité](#security-playbooks) lance une enquête automatisée pour les alertes sélectionnées. <br/><br/>Un analyste de la sécurité peut également [Démarrer une enquête automatisée manuellement](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), à partir d’un e-mail à partir de l' [Explorateur](threat-explorer.md).        |
-|n°2     |Lorsqu’une enquête automatisée s’exécute, elle recueille des données supplémentaires sur le courrier électronique et les entités associées à cet e-mail (fichiers, URL et destinataires).  L’étendue de l’enquête peut augmenter, car de nouvelles alertes associées sont déclenchées.         |
-|3     |Pendant et après une enquête automatisée, des [Détails et des résultats](#investigation-graph) peuvent être consultés. Les résultats incluent les [actions recommandées](#recommended-actions) qui peuvent être prises pour répondre et corriger les menaces détectées. De plus, un [Journal des manifestes](#playbook-log) est disponible pour suivre toutes les activités d’enquête.<br/><br/>Si votre organisation utilise une solution de création de rapports personnalisée ou une solution tierce, vous pouvez [utiliser l’API activité de gestion d’Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) pour afficher des informations sur les analyses et les menaces automatisées.         |
-|4      |Votre équipe de gestion des opérations de sécurité examine les résultats d’enquête et les recommandations, et approuve les actions de correction. Dans Office 365, les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation.         |
-
-Les sections suivantes fournissent plus d’informations sur AIR, notamment des informations sur les alertes, les règles de sécurité et les détails de l’enquête. De plus, deux exemples de fonctionnement de l’AIR sont inclus dans cet article. Pour commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
+Les sections suivantes fournissent plus d’informations sur les alertes, les règles de sécurité et des exemples d’AIR en action.
 
 ## <a name="alerts"></a>Alertes
 
@@ -59,7 +52,7 @@ Pour l’AIR, les alertes générées à partir des types de stratégies d’ale
 > [!NOTE]
 > Les alertes signalées par un astérisque (*) sont affectées d’une gravité *informatif* dans les stratégies d’alerte respectives dans le centre de sécurité & conformité, les notifications par courrier étant désactivées. Les notifications par courrier électronique peuvent être activées par le biais de la [Configuration des stratégies d’alerte](../../compliance/alert-policies.md#alert-policy-settings). Les alertes marquées avec un hachage (#) sont généralement des alertes disponibles associées aux règles de préversion publique.
 
-Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](#investigation-graph)correspondante.  
+Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](air-view-investigation-results.md#investigation-graph)correspondante.  
 
 > [!NOTE]
 > Les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, modifiez le filtrage des alertes de manière à inclure des alertes d’information.
@@ -98,193 +91,6 @@ Dans AIR, chaque manuel de sécurité inclut les éléments suivants :
 - actions de correction des menaces recommandées.
 
 Chaque étape de haut niveau inclut un certain nombre de sous-étapes qui sont exécutées pour fournir une réponse approfondie, détaillée et exhaustive aux menaces.
-
-## <a name="automated-investigations"></a>Analyses automatisées
-
-La page enquêtes automatiques indique les évaluations de votre organisation et leurs États actuels.
-
-![Page d’enquête principale pour l’AIR](../../media/air-maininvestigationpage.png) 
-  
-Vous pouvez :
-- Accédez directement à une enquête (sélectionnez un **ID d’enquête**).
-- Appliquer des filtres. Choisissez entre **type**d’enquête **, période**, **État**ou une combinaison de ces éléments.
-- Exportez les données dans un fichier. csv.
-
-L’état d’enquête indique la progression de l’analyse et des actions. Lors de l’exécution de l’enquête, les États changent pour indiquer si des menaces ont été détectées et si des actions ont été approuvées. 
-
-
-|Statut  |Signification  |
-|---------|---------|
-|Démarrage | L’enquête est mise en file d’attente pour commencer bientôt |
-|En cours d’exécution | L’enquête a commencé et mène son analyse |
-|Aucune menace détectée | L’enquête a terminé son analyse et aucune menace n’a été trouvée |
-|Terminé par le système | L’enquête n’a pas été fermée et a expiré après 7 jours |
-|Action en attente | L’enquête a détecté des menaces avec des actions recommandées.  L’enquête continue de s’exécuter une fois que les menaces initiales ont été détectées et les actions recommandées, vous devez donc vérifier le journal avant d’approuver les actions afin de déterminer si les analyseurs sont toujours en cours d’exécution. |
-|Menaces détectées | L’enquête a détecté des menaces, mais les menaces n’ont pas d’actions disponibles dans l’atmosphère.  Il s’agit des actions de l’utilisateur qui n’ont pas encore de mesure d’AIR de direction. |
-|Corrigé | L’enquête s’est terminée et a été entièrement corrigée (toutes les actions ont été approuvées) |
-|Partiellement résolu | L’enquête terminée et certaines des actions recommandées ont été approuvées |
-|Interrompu par l’utilisateur | Un administrateur a mis fin à l’enquête |
-|Échec | Une erreur s’est produite lors de l’enquête qui l’a empêché d’atteindre une conclusion sur les menaces |
-|Mise en file d’attente par limitation | L’enquête est en attente d’analyse en raison de limitations de traitement du système (pour protéger les performances du service) |
-|Interruption par la limitation | L’enquête n’a pas pu être terminée en temps suffisant en raison des limitations de traitement du volume et du système. Vous pouvez redéclencher l’enquête en sélectionnant l’e-mail dans l’Explorateur et en sélectionnant l’action examiner. |
-
-### <a name="investigation-graph"></a>Graphique de l'examen
-
-Lorsque vous ouvrez une enquête spécifique, vous voyez la page Graph de l’enquête. Cette page affiche toutes les entités différentes : les messages électroniques, les utilisateurs (ainsi que leurs activités) et les appareils qui ont été automatiquement analysés dans le cadre de l’alerte déclenchée.
-
-![Page graphique d’enquête sur l’AIR](../../media/air-investigationgraphpage.png)
-
-Vous pouvez :
-- Obtenir une vue d’ensemble visuelle de l’enquête actuelle.
-- Afficher un résumé de la durée de l’enquête.
-- Sélectionnez un nœud dans la visualisation pour afficher les détails de ce nœud.
-- Sélectionnez un onglet dans la partie supérieure pour afficher les détails de cet onglet.
-
-### <a name="alert-investigation"></a>Enquête sur les alertes
-
-Dans l’onglet **alertes** pour une enquête, vous pouvez voir des alertes relatives à l’enquête. Les détails incluent l’alerte qui a déclenché l’enquête et d’autres alertes corrélées, telles que la connexion à risque, les violations de stratégie DLP, etc., qui sont corrélées à l’enquête. À partir de cette page, un analyste de sécurité peut également afficher des détails supplémentaires sur des alertes individuelles.
-
-![Page alertes AÉRIENNEs](../../media/air-investigationalertspage.png)
-
-Vous pouvez :
-- Obtenir une vue d’ensemble visuelle de l’alerte de déclenchement actuelle et de toutes les alertes associées.
-- Sélectionnez une alerte dans la liste pour ouvrir une page de survol qui affiche les détails de l’alerte complète.
-
-### <a name="email-investigation"></a>Enquête par courrier électronique
-
-Dans l’onglet **e-mail** pour une enquête, vous pouvez voir les courriers électroniques d’origine et les clusters de messages similaires identifiés dans le cadre de l’enquête. 
-
-Étant donné le volume de courrier électronique que les utilisateurs d’une organisation envoient et reçoivent, ainsi que la nature multi-utilisateur des communications et des attaques de messagerie, le processus de 
-- mise en cluster de messages électroniques en fonction d’attributs similaires provenant d’un en-tête, d’un corps, d’une URL et de pièces jointes de message ; 
-- séparation du courrier électronique malveillant du courrier électronique approprié ; les 
-- prendre des mesures sur les messages électroniques malveillants 
-
-peut prendre beaucoup de temps. AIR automatise ce processus en enregistrant le temps et les efforts de l’équipe de sécurité de votre organisation. 
-
-Il est possible d’identifier deux types différents de clusters de messagerie lors de l’analyse du courrier : les clusters de similitudes et les clusters d’indicateurs. 
-- Les clusters de similarité sont des messages électroniques identifiés par la chasse aux courriers électroniques avec des attributs d’expéditeur et de contenu similaires. Ces clusters sont évalués pour le contenu malveillant en fonction des résultats de la détection d’origine. Les clusters de messagerie qui contiennent suffisamment de détections de courriers électroniques malveillants sont considérés comme malveillants.
-- Les clusters d’indicateurs sont des messages électroniques identifiés par la chasse à la même entité d’indicateur (hachage de fichier ou URL) à partir du message d’origine. Lorsque l’entité fichier/URL d’origine est identifiée comme malveillante, AIR applique le verdict de l’indicateur à l’ensemble du cluster de messages contenant cette entité. Un fichier identifié comme un programme malveillant signifie que le cluster de messages électroniques contenant ce fichier est traité comme un message électronique de programme malveillant.
-
-L’objectif du clustering est de rechercher d’autres messages électroniques associés envoyés par le même expéditeur dans le cadre d’une attaque ou d’une campagne.  Dans certains cas, les messages légitimes peuvent déclencher une enquête (par exemple, un utilisateur signale un courrier électronique marketing).  Dans ces scénarios, le clustering de messagerie doit identifier les clusters de messagerie qui ne sont pas malveillants : lorsqu’il le fait de manière appropriée, il n’indique **pas** de menace ni ne recommande la suppression des messages.
-
-L’onglet **courrier** électronique affiche également les éléments de courrier liés à l’enquête, tels que les détails du message électronique, le courrier électronique d’origine signalé, le ou les messages électroniques zapped en raison de programmes malveillants/hameçons, etc.
-
-Le nombre de messages identifiés dans l’onglet e-mail représente actuellement la somme totale de tous les messages électroniques affichés dans l’onglet **e-mail** . Étant donné que les messages électroniques sont présents dans plusieurs clusters, le nombre total réel de messages électroniques identifiés (et affectés par les actions de correction) est le nombre de messages électroniques uniques présents sur tous les clusters et les messages électroniques des destinataires d’origine. 
-
-L’Explorateur et l’AIR envoient les messages électroniques par destinataire, étant donné que les verdicts de sécurité, les actions et les emplacements de remise varient selon les destinataires. Par conséquent, un message électronique d’origine envoyé à trois utilisateurs est compté comme un total de trois messages électroniques au lieu d’un seul. Remarque dans certains cas, un courrier électronique est compté deux ou plusieurs fois, car le courrier électronique peut avoir plusieurs actions et il peut y avoir plusieurs copies de l’e-mail une fois toutes les actions effectuées. Par exemple, un courrier indésirable détecté lors de la remise peut entraîner le blocage du courrier électronique (mis en quarantaine) et le remplacement du courrier électronique (fichier de menace remplacé par un fichier d’avertissement, puis remis à la boîte aux lettres de l’utilisateur). Étant donné qu’il existe littéralement deux copies du courrier électronique dans le système, les deux peuvent être comptés dans le compte du cluster. 
-
-Le nombre de messages est calculé lors de l’enquête et certains comptes sont recalculés lorsque vous ouvrez des lanceurs d’investigation (sur la base d’une requête sous-jacente). Le nombre de messages affichés pour les clusters de courrier électronique sous l’onglet e-mail et la valeur de quantité de courrier électronique affichée dans le menu volant de cluster sont calculés lors de l’enquête et ne changent pas. Le nombre de courriers électroniques affiché en bas de l’onglet e-mail de la fenêtre mobile du cluster de messagerie et le nombre de messages électroniques affichés dans l’Explorateur reflètent les messages électroniques reçus après l’analyse initiale de l’enquête. Par conséquent, un cluster de messagerie qui affiche une quantité initiale de 10 messages électroniques affiche une liste de courriers au total 15 lorsque cinq autres messages électroniques arrivent entre la phase d’analyse de l’enquête et lorsque l’administrateur révise l’enquête.  De la même manière que les enquêtes anciennes peuvent commencer à avoir un nombre plus important que les requêtes de l’Explorateur s’affichent, puisque le service ATP P2 expire les données après 7 jours pour les tirages et 30 jours pour les licences payantes  L’affichage des compteurs historique et actuel dans différentes vues permet d’indiquer l’impact du courrier électronique au moment de l’examen et l’impact actuel jusqu’à l’exécution de la correction.
-
-À titre d’exemple, considérons le scénario suivant. Le premier cluster de trois messages électroniques était considéré comme un hameçonnage. Un autre cluster de messages similaires avec la même adresse IP et l’objet a été trouvé et considéré comme malveillant, car certains d’entre eux étaient identifiés comme des hameçons lors de la détection initiale. 
-
-![Page d’enquête sur le courrier électronique aérien](../../media/air-investigationemailpage.png)
-
-Vous pouvez :
-- Obtenir une vue d’ensemble visuelle des résultats de clustering actuels et des menaces détectées.
-- Cliquez sur une entité de cluster ou une liste de menaces pour ouvrir une page de survol qui affiche les détails de l’alerte complète.
-- Pour approfondir le cluster de messagerie, cliquez sur le lien « ouvrir dans l’Explorateur » en haut de l’onglet « Détails du cluster de messagerie ».
-
-![Courrier électronique d’enquête aérienne avec détails du menu volant](../../media/air-investigationemailpageflyoutdetails.png)
-
-> [!NOTE]
-> Dans le contexte de la messagerie électronique, vous pouvez voir une surface d’anomalie de volume dans le cadre de l’enquête. Une anomalie de volume indique un pic dans les messages électroniques similaires de la durée de l’événement d’enquête par rapport aux délais précédents. Ce pic dans le trafic de messagerie avec des caractéristiques similaires (par exemple, domaine d’objet et de l’expéditeur, similitude entre le corps et IP de l’expéditeur) est typique du début des campagnes ou des attaques par courrier électronique. Toutefois, les campagnes de courrier électronique, de courrier indésirable et légitimes partagent généralement ces caractéristiques. Les anomalies de volume représentent une menace potentielle et peuvent donc être moins sévères par rapport aux menaces de programmes malveillants ou hameçons identifiées à l’aide de moteurs antivirus, de détonation ou de réputation malveillante.
-
-### <a name="user-investigation"></a>Enquête utilisateur
-
-Sous l’onglet **utilisateurs** , vous pouvez voir tous les utilisateurs identifiés dans le cadre de l’enquête. Les comptes d’utilisateur apparaissent dans l’enquête lorsqu’il existe un événement ou une indication que ces comptes d’utilisateur peuvent être affectés ou compromis.
-
-Par exemple, dans l’image suivante, AIR a identifié des indicateurs de compromission et des anomalies en fonction d’une nouvelle règle de boîte de réception créée. Des détails supplémentaires (preuve) de l’enquête sont disponibles via des vues détaillées dans cet onglet. les indicateurs de compromis et d’anomalies peuvent également inclure des détections d’anomalies dans la [sécurité des applications Cloud de Microsoft](https://docs.microsoft.com/cloud-app-security).
-
-![Page des utilisateurs de l’enquête aérienne](../../media/air-investigationuserspage.png)
-
-Vous pouvez :
-- Obtenir une vue d’ensemble visuelle des résultats et des risques utilisateur identifiés.
-- Sélectionnez un utilisateur pour ouvrir une page de survol qui affiche les détails de l’alerte complète.
-
-### <a name="machine-investigation"></a>Enquête sur les machines
-
-Sous l’onglet **ordinateurs** , vous pouvez voir tous les ordinateurs identifiés dans le cadre de l’enquête. 
-
-![Page de l’ordinateur d’enquête aérien](../../media/air-investigationmachinepage.png)
-
-Dans certains cas, AIR établit une corrélation entre les menaces de messagerie et les appareils (par exemple, les programmes malveillants zapped). Par exemple, une enquête transmet un hachage de fichier malveillant à [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-) pour enquêter. Cela permet l’analyse automatisée des ordinateurs pertinents pour vos utilisateurs, afin de garantir que les menaces sont résolues à la fois dans le nuage et sur vos points de terminaison. 
-
-Vous pouvez :
-- Obtenir une vue d’ensemble visuelle des ordinateurs et menaces actuels détectés.
-- Sélectionnez un ordinateur pour ouvrir une vue dans les [recherches Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) associées dans le centre de sécurité Microsoft Defender.
-
-### <a name="entity-investigation"></a>Enquête d’entité
-
-Sous l’onglet **entités** , vous pouvez voir les entités identifiées et analysées dans le cadre de l’enquête. 
-
-Ici, vous pouvez voir les entités analysées et les détails des types d’entités, tels que les messages électroniques, les clusters, les adresses IP, les utilisateurs, et bien plus encore. Vous pouvez également voir le nombre d’entités analysées et les menaces associées à chacune d’elles. 
-
-![Page des entités d’enquête sur l’AIR](../../media/air-investigationentitiespage.png)
-
-Vous pouvez :
-- Obtenir une vue d’ensemble visuelle des entités d’enquête et des menaces détectées.
-- Sélectionnez une entité pour ouvrir une page de survol qui affiche les détails de l’entité associée.
-
-![Détails des entités d’enquête aérienne](../../media/air-investigationsentitiespagedetails.png)
-
-### <a name="playbook-log"></a>Journal des manifestes
-
-Sous l’onglet **Journal** , vous pouvez voir toutes les étapes du manuel qui ont eu lieu lors de l’enquête. Le journal capture un inventaire complet de tous les analyseurs et actions exécutés par les fonctionnalités d’enquête automatique d’Office 365 dans le cadre de l’AIR. Elle offre une vue claire de toutes les étapes effectuées, y compris l’action elle-même, une description et la durée du début à la fin. 
-
-![Page Journal d’enquête aérienne](../../media/air-investigationlogpage.png)
-
-Vous pouvez :
-- Obtenir une vue d’ensemble visuelle des étapes du manuel.
-- Exportez les résultats dans un fichier CSV.
-- Filtrer l’affichage.
-
-|L’analyseur | Description |
-|-----|-----|
-|Enquête sur les violations DLP |Examiner toutes les violations détectées par la [protection contre la perte de données](../../compliance/data-loss-prevention-policies.md) (DLP) d’Office 365 |
-|Extraction des indicateurs de courrier électronique |Extraire les indicateurs de l’en-tête, du corps et du contenu d’un message électronique à des fins d’enquête |
-|Réputation de hachage de fichier |Détecter les anomalies en fonction des hachages de fichiers pour les utilisateurs et les ordinateurs de votre organisation |
-|Identification du cluster de messagerie |Analyse du cluster de messagerie basée sur l’en-tête, le corps, le contenu et les URL |
-|Analyse du volume du cluster de messagerie |Analyse du cluster de messagerie en fonction des modèles de volume de flux de messagerie sortants |
-|Enquête de délégation de messagerie |Enquêter sur l’accès de délégation de messagerie pour les boîtes aux lettres utilisateur liées à cette enquête |
-|Enquête sur les règles de transfert de courrier |Examiner les règles de transfert de courrier pour les boîtes aux lettres utilisateur associées à cette enquête |
-|Programmes malveillants manqués détectés |Détecter les programmes malveillants manqués remis à la boîte aux lettres de l’utilisateur dans votre organisation |
-|Détonation à la demande |Détonation à la demande déclenchée pour les messages électroniques, les pièces jointes et les URL |
-|Analyse des anomalies de messages sortants |Détecter les anomalies en fonction de l’historique du flux de messagerie des modèles d’envoi pour les utilisateurs de votre organisation |
-|Détection des programmes malveillants sortants et des anomalies du courrier indésirable |Détecter les programmes malveillants, les hameçons et les courriers indésirables internes et sortants provenant des utilisateurs de votre organisation |
-|Enquête sur les domaines des expéditeurs |Vérification à la demande de la réputation de domaine à partir du [graphique de sécurité intelligent Microsoft](https://www.microsoft.com/security/operations/intelligence) et des sources externes de renseignement contre les menaces |
-|Enquête sur l’adresse IP de l’expéditeur | Vérification de la réputation de l’IP à la demande à partir du [graphique de sécurité intelligent Microsoft](https://www.microsoft.com/security/operations/intelligence) et des sources d’aide à la décision externes |
-|L’URL clique sur l’enquête | Examiner les clics des utilisateurs protégés par les [liens approuvés ATP d’Office 365](atp-safe-links.md) dans votre organisation |
-|Enquête de réputation d’URL |Vérification à la demande de la réputation de l’URL à partir de [Microsoft intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) et External Threat Intelligence sources |
-|Enquête sur l’activité des utilisateurs |Analyser les anomalies d’activité des utilisateurs dans [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) |
-|Extraction d’indicateurs de messages électroniques signalés par l’utilisateur |Extraire les indicateurs de l’en-tête, du corps et du contenu de la [messagerie signalée](enable-the-report-message-add-in.md) par l’utilisateur pour l’enquête |
-
-
-### <a name="recommended-actions"></a>Actions recommandées
-
-Sous l’onglet **actions** , vous pouvez voir toutes les actions de recherche qui sont recommandées pour la correction une fois l’enquête terminée. 
-
-Actions Capturez les étapes que Microsoft vous recommande de suivre à la fin de l’enquête. Vous pouvez prendre des mesures de correction ici en sélectionnant une ou plusieurs actions. Si vous cliquez sur **approuver** , le début de la correction est possible. (Les autorisations appropriées sont nécessaires : le rôle « recherche et purge » est requis pour exécuter des actions à partir de l’Explorateur et de l’AIR). Par exemple, un lecteur de sécurité peut afficher les actions mais pas les approuver. Remarque : vous n’avez pas besoin d’approuver toutes les actions. Si vous n’acceptez pas l’action recommandée ou si votre organisation ne choisit pas certains types d’actions, vous pouvez choisir de **refuser** les actions ou simplement les ignorer et n’effectuer aucune action. L’approbation et/ou le rejet de toutes les actions permet de faire en sorte que l’enquête se ferme complètement (l’État est résolu), tout en laissant certaines actions incomplètes dans l’état de l’enquête en passant à un état partiellement résolu.
-
-![Page action de l’enquête par avion](../../media/air-investigationactionspage.png)
-
-Vous pouvez :
-- Obtenir une vue d’ensemble visuelle des actions recommandées.
-- Sélectionnez une ou plusieurs actions.
-- Approuver ou rejeter les actions recommandées avec les commentaires.
-- Exportez les résultats dans un fichier CSV.
-- Filtrer l’affichage.
-
-## <a name="remediation-actions"></a>Actions de correction
-
-Lorsqu’une enquête automatisée est en cours d’exécution ou qu’elle est terminée, une ou plusieurs actions correctives s’affichent généralement. Le tableau suivant répertorie les actions de correction possibles dans Office 365 AIR.
-
-|Opération | Description |
-|-----|-----|
-|Bloquer l’URL (heure du clic) |Se protéger contre les e-mails et les documents contenant des URL malveillantes. Cela permet de bloquer les liens malveillants et les pages Web associées via [des liens fiables](atp-safe-links.md) lorsque l’utilisateur clique sur un lien dans un fichier Office existant ou dans un ancien message électronique. |
-|Courrier électronique de suppression douce  |Suppression logicielle de messages électroniques spécifiques de la boîte aux lettres d’un utilisateur|
-|Clusters de suppression de courrier électronique  |Suppression logicielle de messages électroniques malveillants correspondant à une requête de toutes les boîtes aux lettres des utilisateurs|
-|Désactiver le transfert de courrier externe |Supprime la règle de transfert d’une boîte aux lettres d’un utilisateur final spécifique.|
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exemple : un message hameçon signalé par un utilisateur lance un manuel d’enquête.
 
@@ -352,10 +158,6 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Prise en main de l’utilisation de l’AIR dans Office 365](office-365-air.md)
-- [En savoir plus sur AIR dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
+
 - [Consultez la feuille de route Microsoft 365 pour découvrir les éléments bientôt disponibles et à déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-## <a name="see-also"></a>Voir aussi
-
-- [Protection Microsoft contre les menaces](../mtp/microsoft-threat-protection.md)
-- [Recherche et correction automatisées (AIR) dans la protection contre les menaces Microsoft](../mtp/mtp-autoir.md)
