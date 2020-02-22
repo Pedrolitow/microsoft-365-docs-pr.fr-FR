@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de sensibilité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: 5ca3d7b68f931b7596bc61a587d5e4199aa5f70f
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101234"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225502"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -123,10 +123,15 @@ Si vous devez convertir des modèles de protection existants en étiquettes, uti
 
 Les utilisateurs peuvent appliquer une seule étiquette à la fois pour chaque document ou courrier électronique.
 
-Lorsque vous étiquetez un message électronique comportant des pièces jointes, les pièces jointes n’héritent pas de l’étiquette :
+Lorsque vous étiquetez un message électronique comportant des pièces jointes, les pièces jointes n’héritent pas de l’étiquette, à une exception près :
 
-- Si les pièces jointes ont une étiquette, elles conservent cette étiquette appliquée séparément.
-- Si les pièces jointes n’ont pas d’étiquette, les pièces jointes restent sans étiquette. Toutefois, si l’étiquette de l’e-mail applique la protection, cette protection est appliquée aux pièces jointes Office.
+- La pièce jointe est un document Office avec une étiquette qui n’applique pas le chiffrement et l’étiquette que vous appliquez au message électronique applique le chiffrement. Dans ce cas, le document Office envoyé par e-mail hérite de l’étiquette de l’e-mail avec ses paramètres de chiffrement.
+
+Sinon : 
+
+- Si les pièces jointes possèdent une étiquette, elles conservent leur étiquette d’origine.
+- Si les pièces jointes sont chiffrées sans étiquette, le chiffrement reste, mais ils ne sont pas étiquetés.
+- Si les pièces jointes n’ont pas d’étiquette, elles ne sont pas étiquetées.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilité des étiquettes de sensibilité
 

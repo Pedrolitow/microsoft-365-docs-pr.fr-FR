@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4aae95778a829203dc8d34fe1882528cf866b913
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 8794a51c60b778814d05a84d2332dc018b54a80a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851801"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222006"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Institut Cybersecurity (CSF) National Institute of Standards and Technology (CSF)
 
@@ -64,7 +64,7 @@ Cybersecurity reste un problème de gestion critique dans l’ère de la transfo
 
 - [Commencer à utiliser le score de conformité](compliance-score.md)
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Un évaluateur indépendant a-t-il validé qu’Azure Government, Dynamics 365 et Office 365 prennent en charge la configuration CSF CSF ?**
 
@@ -97,9 +97,9 @@ Les services dans l’étendue de la certification CSF NIST sont archivage Excha
 
 Microsoft fournit les offres les plus complètes par rapport aux autres fournisseurs de services Cloud. Pour suivre nos offres de conformité étendue dans les régions et les industries, nous incluons des services dans le cadre de nos efforts de garantie en fonction de la demande de marché, des commentaires des clients et du cycle de vie des produits. Si un service n’est pas inclus dans l’étendue actuelle d’une offre de conformité spécifique, votre organisation a la responsabilité d’évaluer les risques en fonction de vos obligations de conformité et de déterminer la façon dont vous traitez les données dans ce service. Nous recueillons continuellement des commentaires de clients et travaillons avec des autorités de réglementation et des auditeurs afin de développer notre couverture de conformité afin de répondre à vos besoins en matière de conformité et de sécurité.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
 
-[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle NIST CSF](https://go.microsoft.com/fwlink/?linkid=2117917) préconfiguré pour aider votre organisation à répondre aux exigences de la présente réglementation.
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle NIST CSF](https://go.microsoft.com/fwlink/?linkid=2117917) préconfiguré dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de la présente réglementation.
 
 ## <a name="resources"></a>Ressources
 
@@ -111,6 +111,6 @@ Microsoft fournit les offres les plus complètes par rapport aux autres fourniss
 - [Conditions d’utilisation d’Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf) (disponible uniquement en anglais pour le moment).

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d9d0c213fcca5b991b4912d5b9158e2d3836aff9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc5e8312f219176dbed7a84072c90e0ca165cd11
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602021"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228520"
 ---
 # <a name="us-section-508"></a>Section américaine 508
 
@@ -41,11 +41,11 @@ L’attention de Microsoft de la section américaine 508 dans le développement 
 - Intune
 - [Office 365 et Office 365 U.S. Governement](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Windows Server 2016
+- Windows Server 2016
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Rapports de conformité de l’accessibilité Microsoft
 
-Trouvez des [rapports de conformité](https://go.microsoft.com/fwlink/p/?linkid=2050974) pour tous nos produits et services.
+Trouvez des [rapports de conformité](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/) pour tous nos produits et services.
 
 ## <a name="resources"></a>Ressources
 

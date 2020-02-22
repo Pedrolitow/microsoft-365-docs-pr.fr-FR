@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 87bb8faa13f34fbe299b6de82bdd9099eaaff5aa
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 98b669a216b5c3a875cb1a42fd0cc97fb6112f1b
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851851"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222106"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Programme d’évaluation de la sécurité des informations pour le gouvernement australien (IRAP)
 
@@ -86,9 +86,9 @@ Commencez par [qu’est-ce que IRAP ?](https://www.cyber.gov.au/irap/what-irap)
 - [Qui fournit une formation IRAP ?](https://acsc.gov.au/infosec/irap/training.htm)
 - [Informations sur les exigences de conformité et de non-conformité](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
 
-[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle IRAP](https://go.microsoft.com/fwlink/?linkid=2117913) préconfiguré pour aider votre organisation à répondre aux exigences de la présente réglementation.
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle IRAP](https://go.microsoft.com/fwlink/?linkid=2117913) préconfiguré dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de cette réglementation.
 
 ## <a name="resources"></a>Ressources
 

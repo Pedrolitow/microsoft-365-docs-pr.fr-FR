@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e90d5e47c6aa5ac6c2813f150e8136b93214fa3d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851781"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42221996"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -57,15 +57,15 @@ Toute entité qui traite ou stocke les CUIs du gouvernement américain (institut
 
 - [Schéma NIST SP 800 – 171](https://aka.ms/NIST-800-171-Blueprint): obtenez de l’aide pour la mise en œuvre de charges de travail dans Azure qui sont conformes à NIST SP 800 – 171.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Puis-je utiliser Microsoft Compliance avec NIST SP 800 – 171 pour mon organisation ?**
 
 Oui. Les clients Microsoft peuvent utiliser les contrôles audités décrits dans les rapports issus d’organisations d’évaluation tierces indépendantes (3PAO) sur les normes FedRAMP dans le cadre de leur propre analyse des risques FedRAMP et NIST. Ces rapports attestent l’efficacité des contrôles que Microsoft a mis en œuvre dans ses services Cloud intégrés. Les clients sont chargés de s’assurer que leurs charges de travail CUI sont conformes aux directives NIST SP 800 – 171.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
 
-[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2117526) préconfiguré pour aider votre organisation à répondre aux exigences de la présente réglementation.
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2117526) préconfiguré dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de cette réglementation.
 
 ## <a name="resources"></a>Ressources
 
@@ -77,6 +77,6 @@ Oui. Les clients Microsoft peuvent utiliser les contrôles audités décrits dan
 - [Cloud Microsoft Service publique](https://www.microsoft.com/enterprise/government)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ) (disponible uniquement en anglais pour le moment).

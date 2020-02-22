@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: de9fcad3b1d54247114974ce4432068c136fdb2a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851841"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222026"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -58,7 +58,7 @@ Voici quelques étapes que vous pouvez suivre pour vous préparer au CCPA :
 - Configurez les étiquettes et les stratégies de façon à découvrir, classifier et étiqueter, ainsi que protéger les données sensibles à l’aide de Microsoft Information Protection.
 - Utilisez les fonctionnalités de chiffrement du courrier électronique pour contrôler davantage les informations sensibles.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Quel effet le CCPA aura-t-il sur mon entreprise ?**
 
@@ -93,9 +93,9 @@ Le CCPA exige des entreprises réglementées qui recueillent, transfèrent et ve
 - Le CCPA présente des obligations en matière de consentement parental en accord avec la réglementation COPPA (Children’s Online Privacy Protection Act) pour les enfants âgés de moins de 13 ans.
 - Pour les enfants de 13 à 16 ans, CCPA impose une nouvelle obligation d’obtenir l’autorisation d’adhésion de l’enfant.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
 
-[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle CCPA](https://go.microsoft.com/fwlink/?linkid=2118004) préconfiguré pour aider votre organisation à répondre aux exigences de la présente réglementation.
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle CCPA](https://go.microsoft.com/fwlink/?linkid=2118004) préconfiguré dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de cette réglementation.
 
 ## <a name="resources"></a>Ressources
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851821"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222067"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Conseil d’examen des institutions financières fédérales (FFIEC)
 
@@ -53,15 +53,15 @@ Pour vous aider à vous conformer aux exigences de FFIEC, les services de Cloud 
 
 Rapports d’attestations SOC Azure et Office 365.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Puis-je utiliser Microsoft Compliance avec des normes SOC pour respecter les obligations de conformité de FFIEC pour mon institution ?**
 
 Pour vous aider à répondre à ces obligations, Microsoft fournit les spécificités de notre conformité aux normes SOC, comme décrit ci-dessus. Toutefois, il incombe à vous de déterminer si nos services sont conformes aux lois et réglementations applicables à votre institution. Le FFIEC indique également que les utilisateurs des rapports d’audit ou des révisions ne doivent pas reposer uniquement sur les informations contenues dans le rapport pour vérifier l’environnement de contrôle interne du TSP. Elles doivent utiliser des procédures de vérification et de surveillance supplémentaires, décrites plus en détail dans le [livret des technologies d’externalisation](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) du Guide de l’examen informatique FFIEC.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
 
-[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle FFIEC Office 365](https://go.microsoft.com/fwlink/?linkid=2117912) préconfiguré et le [modèle FFIEC Intune](https://go.microsoft.com/fwlink/?linkid=2118101) pour aider votre organisation à répondre aux exigences de cette réglementation.
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle FFIEC Office 365](https://go.microsoft.com/fwlink/?linkid=2117912) préconfiguré et le [modèle FFIEC Intune](https://go.microsoft.com/fwlink/?linkid=2118101) dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de la présente réglementation.
 
 ## <a name="resources"></a>Ressources
 
@@ -75,11 +75,11 @@ Pour vous aider à répondre à ces obligations, Microsoft fournit les spécific
 ## <a name="other-microsoft-resources-for-financial-services"></a>Autres ressources Microsoft pour les services financiers
 
 - [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Conformité destinée au secteur des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Services Enterprise Cloud et financiers Microsoft](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Responsabilités partagées pour le cloud computing](https://aka.ms/sharedresponsibility)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf) (disponible uniquement en anglais pour le moment).

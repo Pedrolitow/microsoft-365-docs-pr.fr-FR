@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d6f6dc2cc8cb9a36816fa843fcea969d65c94dac
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 52752c31ae52fa75a3a50dbd6a4aa27605f6d921
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851891"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228510"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
@@ -49,7 +49,7 @@ Il n’existe actuellement aucune certification officielle pour la conformité a
 
 Les services Cloud d’entreprise de Microsoft sont également couverts par les évaluations FedRAMP. Microsoft Azure et les pouvoirs publics Microsoft Azure ont reçu une autorité provisoire pour fonctionner à partir du Conseil d’autorisation conjointe FedRAMP ; Microsoft Dynamics 365 le gouvernement américain a reçu une autorité de l’Agence pour opérer depuis le département américain de l’hébergement et du développement urbain, au fur et à mesure que Microsoft Office 365 le gouvernement américain du ministère américain des services médicaux et humains.
 
-Découvrez les avantages de HIPAA et du Hi-Tech sur le Cloud Microsoft : [lire le scénario de client de radiologie zwanger — Pesiri](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
+Pour savoir comment le Cloud Microsoft aide les clients à prendre en charge les normes HIPAA et Hi-Tech, consultez les [témoignages des clients Microsoft](https://customers.microsoft.com).
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
@@ -72,7 +72,7 @@ Commencez à tirer parti des avantages du Cloud pour les solutions de données d
 
 [Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Mon organisation peut-elle entrer dans un contrat avec Microsoft ?**
 
@@ -102,9 +102,9 @@ Pour aider les clients avec cette tâche, Microsoft a publié ces guides :
 - Le [Guide pratique de la conception de solutions d’intégrité sécurisée à l’aide de Microsoft Azure](https://aka.ms/azureindustrysecurity) vous permet de mieux comprendre ce qu’il faut faire pour adopter correctement un service Cloud de manière sécurisée.
 - [La gestion des exigences de sécurité et de confidentialité HIPAA dans le Cloud Microsoft](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offre une brève présentation des exigences en matière de réglementation. Elle fournit également une analyse détaillée de la façon dont les services Cloud de Microsoft ont été créés avec des méthodologies qui correspondent à ces exigences, ainsi que des instructions sur la création de solutions prêtes à la conformité.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utiliser le score de conformité Microsoft pour évaluer votre risque
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
 
-[Microsoft Compliance score](compliance-score.md) est une fonctionnalité d’aperçu dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), utilisez le [modèle HIPAA Office 365](https://go.microsoft.com/fwlink/?linkid=2118005) préconfiguré et le [modèle HIPAA Intune](https://go.microsoft.com/fwlink/?linkid=2118006) pour aider votre organisation à répondre aux exigences de cette réglementation.
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle d’Office 365 préconfiguré HIPAA](https://go.microsoft.com/fwlink/?linkid=2118005) et le [modèle HIPAA Intune](https://go.microsoft.com/fwlink/?linkid=2118006) dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de cette réglementation.
 
 ## <a name="resources"></a>Ressources
 
@@ -116,6 +116,6 @@ Pour aider les clients avec cette tâche, Microsoft a publié ces guides :
 - [Guide de mise en œuvre d’Azure HIPAA](https://aka.ms/azure-hipaa-guide)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
+## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 
 Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

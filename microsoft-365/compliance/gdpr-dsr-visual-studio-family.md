@@ -18,12 +18,12 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 08c6bfbcfc571103939d0b824d5fda0fcb789bb6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 159e7a69f0714b93913c36d745641485d7c80798
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596481"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225507"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD et le CCPA
 
@@ -47,7 +47,7 @@ Les termes du contrat de licence du logiciel Microsoft accompagnant les produits
 
 En qualité de responsable du traitement de données en vertu du RGPD, Microsoft collecte les données nécessaires auprès des utilisateurs pour améliorer Visual Studio, Visual Studio pour Mac, les extensions Microsoft de ces produits, ainsi que celles de Visual Studio Code. Il existe deux catégories de données : les données client et les journaux générés par le système. Les données client incluent des données de diagnostic utilisateur et des données fonctionnelles nécessaires à ces produits pour effectuer le service qu’ils fournissent. Par exemple, pour offrir aux utilisateurs des expériences personnalisées comme des paramètres d’itinérance, nous devons collecter des données de paramètres et d’informations du compte utilisateur. Les journaux générés par le système correspondant aux données d’utilisation ou de diagnostic utilisées pour vous aider à identifier et à résoudre les problèmes et à améliorer nos produits et services. Elles peuvent également contenir des informations d’identification personnelle sur les utilisateurs finals, comme le nom d’utilisateur. Les journaux générés par le système sont conservés pendant 18 mois maximum. Par exemple, les journaux générés par le système sont conservés pour chaque jour d’utilisation du produit et incluent la date d’utilisation, le produit utilisé (par exemple, « Visual Studio 2017 »), l’action que vous avez effectuée (par exemple, « vs/core/packagecostsummary/solutionload ») et la durée de l’action, comme illustrée dans cet exemple :
 
-```
+```Log
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
 "DevicePlatform":"Windows 10 Enterprise","IP":null,"InputMethod":null,
 "SearchTerm":null,"SearchResult":null}
