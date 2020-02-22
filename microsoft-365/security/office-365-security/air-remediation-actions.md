@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Découvrez les actions de correction dans les fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 1a39ffb5bf57e0f4ffa38a210c299480d3081345
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: e75ef1523247cbddcf6cb28d69a889db1de8e42f
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175921"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228530"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Actions de correction suite à une enquête automatisée dans Office 365
 
@@ -42,14 +42,13 @@ ms.locfileid: "42175921"
 Lors de l’affichage [des détails d’une enquête](air-view-investigation-results.md), vous pouvez approuver ou refuser les actions correctives en attente. Nous vous recommandons de le faire dès que possible pour que vos investigations automatiques soient terminées.
 
 > [!IMPORTANT]
-> Les autorisations appropriées sont requises pour approuver ou rejeter les actions correctives. Consultez la rubrique [Required Permissions to use air Capabilities](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
+> Les autorisations appropriées sont requises pour approuver ou rejeter les actions correctives. Consultez la rubrique [Required Permissions to use air Capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
 
 1. Sélectionnez l’onglet **actions** .
 
 2. Sélectionnez un élément dans la liste. (Cela active les boutons approuver et rejeter.)
 
 3. Examinez les informations disponibles pour les éléments que vous avez sélectionnés, puis approuvez ou rejetez la ou les actions. 
-
  - **Approuver** : le début de la correction.
  - Le **rejet** n’effectue aucune action supplémentaire
 

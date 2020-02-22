@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/28/2020
-ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.date: 02/21/2020
+ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106847"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42230067"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -45,6 +45,8 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
     - Filtres de temps granulaire (jour, heure, demi-heure) 
 
 - Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & de la sécurité Office 365, accédez à la**vérification**de la **gestion** > des menaces.)
+
+- [Documents approuvés dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(aperçu)**
 
 ## <a name="december-2019"></a>Décembre 2019
 

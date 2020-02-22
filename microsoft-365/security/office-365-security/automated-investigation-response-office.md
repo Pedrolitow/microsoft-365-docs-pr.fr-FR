@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 8f781687047f39d4d038e293e50c9caad83d051a
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 436d70934e32f8609d35532188ac71cbd590c345
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179245"
+ms.locfileid: "42228580"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
@@ -132,28 +132,6 @@ Autre exemple : Supposons que vous affichiez des données sur les messages éle
 ![Démarrage d’une enquête pour les programmes malveillants dans l’Explorateur](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 À l’instar des règles déclenchées par une alerte, les recherches automatiques déclenchées à partir d’une vue dans l’Explorateur incluent une enquête de racine, des étapes permettant d’identifier et de corréler les menaces, ainsi que les actions recommandées pour atténuer ces menaces.
-
-## <a name="how-to-get-air"></a>Comment obtenir de l’AIR
-
-Office 365 Examen et réponse automatisés est inclus dans les abonnements suivants :
-
-- Microsoft 365 E5
-- Office 365 E5
-- Protection Microsoft contre les menaces
-- Office 365 – Protection avancée contre les menaces Plan 2
-
-Si vous n’avez pas l’un de ces abonnements, [Démarrez une version d’évaluation gratuite](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
-
-Pour en savoir plus sur la disponibilité des fonctionnalités, consultez la rubrique [disponibilité des fonctionnalités dans les plans de protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-
-## <a name="required-permissions-to-use-air-capabilities"></a>Autorisations requises pour utiliser les fonctionnalités AIR
-
-Les autorisations sont accordées par le biais de certains rôles, tels que ceux décrits dans le tableau suivant : 
-
-|Tâche |Rôle (s) requis |
-|--|--|
-|Pour configurer les fonctionnalités AIR |Un des rôles suivants : <br/>- **Administrateur général**<br/>- **Administrateur de la sécurité** <br/>Ces rôles peuvent être attribués dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [Centre de conformité Office 365 Security &](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
-|Pour approuver ou rejeter des actions recommandées|L’un des rôles suivants, affecté dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [centre de sécurité & conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)) :<br/>- **Administrateur général** <br/>- **Administrateur de la sécurité**<br/>- **Lecteur de sécurité** <br/>--- et ---<br/>- **Recherche et purger** (ce rôle est affecté uniquement dans le [Centre de conformité Office 365 Security &](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Vous devrez peut-être créer un groupe de rôles à cet emplacement et ajouter le rôle de recherche et de purge à ce nouveau groupe de rôles.)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
