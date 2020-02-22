@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Pour les administrateurs : Découvrez comment utiliser le Service d’importation dans le Centre de sécurité et de conformité pour importer en bloc des données de courrier (fichiers PST) vers des boîtes aux lettres d’utilisateurs dans Exchange Online. Cette rubrique regroupe des questions fréquemment posées et explique le fonctionnement du processus d’importation de fichiers PST.'
-ms.openlocfilehash: 82e1ccc41d2df5986b54054d8fb98350608c642e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 94681af376d7c9ae32bdd2cbbb2a28da464712c1
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072953"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170544"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Vue d’ensemble de l’importation de fichiers PST de votre organisation dans Office 365
 
@@ -145,7 +145,10 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
   
  **Où le chargement réseau est-il disponible ?**
   
-Le chargement réseau est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. Ce service sera prochainement disponible dans d’autres régions.
+Le chargement réseau est actuellement disponible dans ces régions : États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. Ce service sera prochainement disponible dans d’autres régions.
+
+> [!NOTE]
+> À l'heure actuelle, le chargement réseau des fichiers PST n’est pas disponible en Allemagne et en Suisse. Ce Forum aux questions sera mis à jour lorsque le téléchargement réseau sera disponible dans ces pays.
   
  **À combien revient l’importation de fichiers PST via le chargement du réseau ?**
   
@@ -215,6 +218,9 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
  **Où l’expédition de disque est-elle disponible ?**
   
 L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. Ce service sera prochainement disponible dans d’autres régions.
+
+> [!NOTE]
+> À l'heure actuelle, l'envoi de lecteurs pour l'importation de fichiers PST n’est pas disponible en Allemagne et en Suisse. Ce Forum aux questions sera mis à jour lorsque l'envoi de lecteurs réseau sera disponible pour ces pays.
   
  **Quels sont les contrats de licences commerciaux qui prennent en charge l’expédition de disque ?**
   

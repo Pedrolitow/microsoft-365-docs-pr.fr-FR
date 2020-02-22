@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de rétention pour classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: 162b9fed66fa3135829f422ccd04a396ddf7e632
-ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
+ms.openlocfilehash: 0675601a888d19e6faaeb75169691909b071b92d
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42093453"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179205"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -342,7 +342,7 @@ Si vous appliquez une étiquette de rétention par défaut à des éléments exi
     
 - Si vous modifiez ou supprimez l’étiquette de rétention par défaut d’une bibliothèque, d’un dossier ou de l’ensemble de documents, l’étiquette est également modifiée ou supprimée pour tous les éléments dans la bibliothèque, le dossier ou l’ensemble de documents, **à l’exception** des éléments portant des étiquettes de rétention explicites (tels que les enregistrements).
     
-- Si vous déplacez un élément portant une étiquette de rétention par défaut d’une bibliothèque, d’un dossier ou d’un ensemble de documents vers une autre bibliothèque, un autre dossier ou un autre ensemble de documents, l’élément conserve son étiquette de rétention par défaut existante, même si l’étiquette par défaut du nouvel emplacement est différente.
+- Si vous déplacez un élément portant une étiquette de rétention par défaut d’une collection de sites, d'une bibliothèque, d’un dossier ou d’un ensemble de documents vers une autre collection de sites, bibliothèque, dossier ou un autre ensemble de documents ayant une étiquette différente, l’élément conserve l'étiquette de rétention par défaut existante, même si l’étiquette par défaut du nouvel emplacement est différente. Si l’élément n’a pas d’étiquette avant le déplacement, il utilise l’étiquette de rétention par défaut du nouvel emplacement.
 
 **Enregistrements :** si vous appliquez une étiquette d’enregistrement par défaut à une bibliothèque, un dossier ou un ensemble de documents, une étiquette d’enregistrement est ensuite appliquée à tous les éléments individuels de ces emplacements. Lorsque vous déplacez un nouvel élément vers un emplacement comportant une étiquette d’enregistrement, cet élément est étiqueté en tant qu’enregistrement. Toutefois, si vous remplacez l’étiquette de rétention par défaut par une étiquette ne déclarant pas de contenu en tant qu’enregistrement, cette action **ne** supprime pas l’étiquette d’enregistrement des éléments individuels ; ceux-ci conservent leur étiquette d’enregistrement. Seul un administrateur de collection de sites peut explicitement supprimer ou remplacer l’étiquette de rétention d'enregistrements.
 

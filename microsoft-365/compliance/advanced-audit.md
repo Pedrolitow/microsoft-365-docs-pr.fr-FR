@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960240"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170514"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
 La [fonctionnalité d'audit unifiée](search-the-audit-log-in-security-and-compliance.md) de Microsoft 365 offre aux organisations une visibilité dans de nombreux types d’activités auditées dans différents services de Microsoft 365. Avec la publication de l’audit avancé de Microsoft 365, nous offrons de nouvelles fonctionnalités d’audit pouvant aider votre organisation à effectuer des enquêtes de conformité et de légalité.
 
 > [!NOTE]
-> Advanced audit est à la disposition des organisations disposant d’un abonnement Office 365 ou Microsoft 365 Entreprise E5. De plus, un abonnement au composant Microsoft 365 E5 Conformité peut être attribué aux utilisateurs lorsqu'une licence par utilisateur est requise pour des fonctionnalités d’audit avancées, comme dans le cas de la conservation à long terme de journaux d’audit et d'événements d’audit à valeur élevée.
+> Advanced audit est à la disposition des organisations disposant d’un abonnement Office 365 ou Microsoft 365 Entreprise E5. De plus, un abonnement au composant Microsoft 365 E5 Conformité peut être attribué aux utilisateurs lorsqu'une licence par utilisateur est requise pour des fonctionnalités d’audit avancées, comme dans le cas de la conservation à long terme de journaux d’audit et d'un accès à des évènements essentiels lors d'enquêtes.
 
 Cet article offre une vue d’ensemble de ces fonctionnalités d'audit avancées.
 
@@ -49,9 +49,9 @@ Tous les enregistrements d’audit générés dans d’autres services qui ne so
 
 Vous pouvez également spécifier la durée de conservation des enregistrements d’audit qui correspondent à une stratégie et à un niveau de priorité pour que les stratégies spécifiques soient prioritaires sur les autres stratégies. Veuillez noter également que toute stratégie de rétention de journal d’audit personnalisée sera prioritaire sur la stratégie de rétention d’audit par défaut si vous devez conserver des enregistrements d’audit Exchange, SharePoint ou Azure Active Directory pendant au moins un an pour tout ou partie des utilisateurs de votre organisation. Pour plus d’informations, voir [Gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
 
-## <a name="high-value-audit-events"></a>Événements d’audit à valeur élevée
+## <a name="access-to-crucial-events-for-investigations"></a>Accès aux événements essentiels lors d'enquêtes
 
-Les événements d’audit relatifs à la sécurité et à la conformité de valeur élevée sont ceux pouvant vous aider à enquêter sur des violations éventuelles ou d'autres enquêtes légales. L'évènement d'audit *MailItemsAccessed* de la boîte aux lettres est le premier élément à valeur élevée en cours de publication. Cet événement se déclenche lorsque les données de courrier sont consultées par les clients et les protocoles de messagerie. L’événement MailItemsAccessed peut aider les enquêteurs à identifier les violations de données et à mesurer l’étendue des messages susceptibles d’être compromis. Si une personne malveillante a accès aux courriers électroniques, l’événement MailItemsAccessed se déclenche même s’il n’y a pas de signal explicite indiquant qu'un message a été réellement lu (en d’autres termes, le type d’accès via BIND ou synchrone, par exemple, est sauvegardé dans l’enregistrement d’audit).
+Les événements essentiels d’audit relatifs à la sécurité et à la conformité sont ceux pouvant vous aider à enquêter sur des violations éventuelles ou d'autres enquêtes légales. L'évènement d'audit *MailItemsAccessed* de la boîte aux lettres est le premier élément essentiel en cours de publication. Cet événement se déclenche lorsque les données de courrier sont consultées par les clients et les protocoles de messagerie. L’événement MailItemsAccessed peut aider les enquêteurs à identifier les violations de données et à mesurer l’étendue des messages susceptibles d’être compromis. Si une personne malveillante a accès aux courriers électroniques, l’événement MailItemsAccessed se déclenche même s’il n’y a pas de signal explicite indiquant qu'un message a été réellement lu (en d’autres termes, le type d’accès via BIND ou synchrone, par exemple, est sauvegardé dans l’enregistrement d’audit).
 
 La nouvelle action MailItemsAccessed de la boîte aux lettres remplace MessageBind dans la journalisation d’audit des boîtes aux lettres dans Exchange Online et offre les améliorations suivantes :
 
