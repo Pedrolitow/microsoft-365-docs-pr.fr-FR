@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091367"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219185"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -62,6 +62,8 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 - Activités utilisateur et administrateur dans Microsoft Power Apps
 
 - Activités utilisateur et administrateur dans Microsoft Forms
+
+- Activité des utilisateurs et des administrateurs relative aux étiquettes de confidentialité pour les sites qui utilisent SharePoint Online ou Microsoft Teams
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -311,7 +313,7 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
 |[Activités avancées eDiscovery](#advanced-ediscovery-activities)|[Activités dans Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Activités dans Microsoft Teams](#microsoft-teams-activities)|[Activités Santé Microsoft Teams](#microsoft-teams-healthcare-activities)|[Activités dans Yammer](#yammer-activities)|
 |[Activités Microsoft Power Automate](#microsoft-power-automate-activities)|[Activités Microsoft Power Apps](#microsoft-power-apps-activities)|[Activités de Microsoft Stream](#microsoft-stream-activities)|
-|[Activités Microsoft Forms](#microsoft-forms-activities)|[Activités administrateur Exchange](#exchange-admin-audit-log)|||
+|[Activités Microsoft Forms](#microsoft-forms-activities)|[Activités des étiquettes de confidentialité](#sensitivity-label-activities)|[Activités administrateur Exchange](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>Activités des fichiers et pages
@@ -332,7 +334,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Fichier supprimé de la Corbeille|FileDeletedFirstStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille d’un site.|
 |Fichier supprimé de la Corbeille second niveau|FileDeletedSecondStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille second niveau d’un site.|
 |Supprimer l’enregistrement de l’étiquette stratégie de conformité|ComplianceRecordDelete|Un document classifié en tant qu’enregistrement a été supprimé. Un document est considéré comme un enregistrement lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est appliqué au document.|
-|Détection de correspondance incorrecte des documents|DocumentSensitivityMismatchDetected|L’utilisateur charge un document classifié avec une étiquette de confidentialité ayant une priorité plus élevée que l’étiquette de confidentialité appliquée au site sur lequel le document est téléchargé. <br/><br/> Cet événement n’est pas déclenché si l’étiquette de confidentialité appliquée à un site a une priorité plus élevée que l’étiquette de confidentialité appliquée à un document téléchargé sur le site. Pour plus d’informations sur la priorité de l’étiquette de confidentialité, voir la section «priorité des étiquettes» dans [En savoir plus sur les étiquettes de confidentialité](sensitivity-labels.md#label-priority-order-matters).|
+|Détection de correspondance incorrecte des documents|DocumentSensitivityMismatchDetected|Un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et le document comprend une étiquette de confidentialité plus faible que le site. <br/><br/> Cet événement ne déclenche pas si l’étiquette de confidentialité appliquée au site a une priorité plus élevée que l’étiquette de confidentialité appliquée à un document téléchargé sur le site. Pour plus d’informations sur la priorité de l’étiquette de confidentialité, consultez la [Priorité d’étiquette (importance de l'ordre)](sensitivity-labels.md#label-priority-order-matters).|
 |Détection d’un programme malveillant dans le fichier|FileMalwareDetected|Le moteur antivirus de SharePoint détecte un programme malveillant dans un fichier.|
 |Extraction de fichier ignorée|FileCheckOutDiscarded|Un utilisateur ignore (ou annule) un fichier extrait. Les modifications qu’il a apportées au fichier le temps de son extraction sont ignorées et ne sont pas enregistrées dans la version du document dans la bibliothèque de documents.|
 |Fichier téléchargé|FileDownloaded|Un utilisateur télécharge un document à partir d’un site.|
@@ -352,6 +354,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Affichage signalé par le client|ClientViewSignaled|Le client d’un utilisateur (tel qu’un site Web ou une application mobile) a signalé que la page indiquée a été consultée par l’utilisateur. Cette activité est souvent journalisée à la suite d’un événement PagePrefetched pour une page. <br/><br/>**Remarque**: les événements ClientViewSignaled étant signalés par le client, plutôt que le serveur, il est possible que l’événement ne soit pas consigné par le serveur et, par conséquent, qu’il n’apparaisse pas dans le journal d’audit. Il est également possible que les informations dans l’enregistrement d’audit ne soient pas dignes de confiance. Toutefois, étant donné que l’identité de l’utilisateur est validée par le jeton utilisé pour créer le signal, l’identité de l’utilisateur répertoriée dans l’enregistrement d’audit correspondant est exacte. |
 |(aucun)|PagePrefetched|Le client d’un utilisateur (tel qu’un site Web ou une application mobile) a demandé la page indiquée afin de vous aider à améliorer les performances si l’utilisateur accède à celui-ci. Cet événement est enregistré pour indiquer que le contenu de la page a été servi au client de l’utilisateur. Cet événement n’indique pas si l’utilisateur a accédé à la page. <br/><br/> Lorsque le contenu de la page est affiché par le client (conformément à la demande de l’utilisateur), un événement ClientViewSignaled doit être généré. Tous les clients ne prennent pas en charge l’indication d’une pré-récupération ; par conséquent, certaines activités préalablement récupérées peuvent être enregistrées en tant qu’événements PageViewed.|
 ||||
+
 
 ### <a name="folder-activities"></a>Activités des dossiers
 
@@ -824,6 +827,18 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Réponse envoyée|SubmitResponse|Un utilisateur envoie une réponse à un formulaire. <br><br>La propriété IsInternalForm:boolean indique si le répondant fait partie de la même organisation que le propriétaire du formulaire.|
 ||||
 
+### <a name="sensitivity-label-activities"></a>Activités des étiquettes de confidentialité 
+
+Le tableau suivant répertorie les événements provoquant des activités d’étiquetage pour les sites SharePoint Online et Teams.
+
+|**Nom convivial**|**Opération**|**Description**|
+|:-----|:-----|:-----|
+|Étiquette de confidentialité appliquée au site|SensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un site SharePoint ou Teams.|
+|Suppression de l'étiquette de confidentialité sur le site|SensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée sur un site SharePoint ou Teams.|
+|Étiquette de confidentialité appliquée au fichier|FileSensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un document à l’aide d’Office sur le web.|
+|Étiquette de confidentialité modifiée appliquée au fichier|FileSensitivityLabelChanged|Une étiquette de confidentialité différente a été appliquée à un document à l’aide d’Office sur le Web.|
+|Suppression de l'étiquette de confidentialité sur le document|FileSensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée d’un document à l’aide d’Office sur le web.|
+
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange
 
 La journalisation d’audit de l’administrateur Exchange (activée par défaut dans Office 365) enregistre un événement dans le journal d’audit Office 365 lorsqu’un administrateur (ou un utilisateur auquel des autorisations d’administration ont été attribuées) apporte une modification dans votre organisation Exchange. Les modifications apportées à l’aide du Centre d’administration Exchange ou en exécutant une cmdlet dans Exchange Online PowerShell sont enregistrées dans le journal d’audit de l’administrateur Exchange. Les applets de commande qui commencent par les verbes **obtenir**, **rechercher** ou **tester** ne sont pas enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur la journalisation d’audit de l’administrateur dans Exchange, voir [Journalisation d’audit de l’administrateur](https://go.microsoft.com/fwlink/p/?LinkID=619225).
@@ -850,6 +865,7 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
    Gardez à l’esprit que les mêmes activités d’administrateur Exchange sont enregistrées dans le journal d’audit de l’administrateur Exchange et dans le journal d’audit d’Office 365.
+
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
