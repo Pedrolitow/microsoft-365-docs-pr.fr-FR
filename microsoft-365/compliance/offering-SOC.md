@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851881"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222046"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -131,7 +131,7 @@ Le [Kit de ressources SOC pour les organisations de services](https://aka.ms/soc
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
 
-[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir [configuré le score de conformité](compliance-score-setup.md), utilisez le [modèle préconfiguré SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) et le [modèle SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) pour aider votre organisation à respecter les conditions requises pour le présent règlement.
+[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après la [configuration du score de conformité](compliance-score-setup.md), sélectionnez le [modèle SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) pré-configuré et le [modèle SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) depuis le menu déroulant **Modèle** pour permettre à votre organisation de répondre aux exigences de cette règlementation.
 
 ## <a name="resources"></a>Ressources
 

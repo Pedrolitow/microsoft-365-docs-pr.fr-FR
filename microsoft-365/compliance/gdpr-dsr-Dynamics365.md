@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 1eeed6c1dfef1765089a5998200c93be595a719a
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722015"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225522"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par le traitement des données pour Dynamics 365 concernant le RGPD et le CCPA
 
@@ -82,10 +82,9 @@ La classification appropriée des données client est à la base de la gestion d
 
 Microsoft offre des fonctionnalités qui vous aident à répondre aux demandes de droits de la personne concernée par le traitement des données, et par conséquent d’accéder aux données client. Toutefois, il est de votre responsabilité de vérifier que les données personnelles sont localisées et classées de façon appropriée.
 
-L’offre ***Dynamics 365 for Customer Engagement*** fournit plusieurs méthodes qui vous permettent de rechercher des données personnelles dans des enregistrements, telles que : la recherche avancée, la recherche selon la pertinence et la recherche d’enregistrements. Toutes ces fonctions vous permettent d’identifier (rechercher) des données personnelles.
+L’offre ***Dynamics 365 for Customer Engagement*** fournit plusieurs méthodes qui vous permettent de rechercher des données personnelles dans des enregistrements, telles que : la recherche avancée et la recherche d’enregistrements. Toutes ces fonctions vous permettent d’identifier (rechercher) des données personnelles.
 
 - [Recherche avancée](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)
-- [Recherche selon la pertinence](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results), qui peut être enregistrée pour référence ultérieure à l’aide de tableaux de bord
 - [Recherche d’enregistrements](https://docs.microsoft.com/dynamics365/customer-engagement/basics/search-records) dans plusieurs types d’enregistrements
 
 Dans Dynamics 365 for Marketing, vous disposez des fonctionnalités supplémentaires suivantes :
