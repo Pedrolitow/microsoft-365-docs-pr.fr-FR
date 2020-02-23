@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: fe91f43d088242336d7e77e5422093979d34193b
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219185"
+ms.locfileid: "42228590"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -126,7 +126,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit d’Offi
   |Microsoft Project|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Power Apps||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Centre de sécurité et conformité|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sharepoint Online et OneDrive Entreprise|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -334,7 +334,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Fichier supprimé de la Corbeille|FileDeletedFirstStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille d’un site.|
 |Fichier supprimé de la Corbeille second niveau|FileDeletedSecondStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille second niveau d’un site.|
 |Supprimer l’enregistrement de l’étiquette stratégie de conformité|ComplianceRecordDelete|Un document classifié en tant qu’enregistrement a été supprimé. Un document est considéré comme un enregistrement lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est appliqué au document.|
-|Détection de correspondance incorrecte des documents|DocumentSensitivityMismatchDetected|Un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et le document comprend une étiquette de confidentialité plus faible que le site. <br/><br/> Cet événement ne déclenche pas si l’étiquette de confidentialité appliquée au site a une priorité plus élevée que l’étiquette de confidentialité appliquée à un document téléchargé sur le site. Pour plus d’informations sur la priorité de l’étiquette de confidentialité, consultez la [Priorité d’étiquette (importance de l'ordre)](sensitivity-labels.md#label-priority-order-matters).|
+|Détection de correspondance incorrecte des documents|DocumentSensitivityMismatchDetected|Un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et le document comprend une étiquette de confidentialité plus faible que celle du site. <br/><br/> Cet événement ne déclenche pas si l’étiquette de confidentialité appliquée au site a une priorité plus élevée que l’étiquette de confidentialité appliquée à un document téléchargé sur le site. Pour plus d’informations sur la priorité d'étiquettes de confidentialité, consultez la [Priorité d’étiquette (importance de l'ordre)](sensitivity-labels.md#label-priority-order-matters).|
 |Détection d’un programme malveillant dans le fichier|FileMalwareDetected|Le moteur antivirus de SharePoint détecte un programme malveillant dans un fichier.|
 |Extraction de fichier ignorée|FileCheckOutDiscarded|Un utilisateur ignore (ou annule) un fichier extrait. Les modifications qu’il a apportées au fichier le temps de son extraction sont ignorées et ne sont pas enregistrées dans la version du document dans la bibliothèque de documents.|
 |Fichier téléchargé|FileDownloaded|Un utilisateur télécharge un document à partir d’un site.|
@@ -727,7 +727,7 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 |Robot ajouté à une équipe|BotAddedToTeam|Un utilisateur ajoute un robot à une équipe.|
 |Canal ajouté|ChannelAdded|Un utilisateur ajoute un canal à une équipe.|
 |Connecteur ajouté|ConnectorAdded|Un utilisateur ajoute un connecteur à un canal.|
-|Membres ajoutés à l’équipe|MemberAdded|Un propriétaire d’équipe ajoute des membres à une équipe.|
+|Membres ajoutés|MemberAdded|Un propriétaire d’équipe ajoute des membres à une équipe ou à une conversation de groupe.|
 |Onglet ajouté|TabAdded|Un utilisateur ajoute un onglet à un canal.|
 |Paramètre de canal modifié|ChannelSettingChanged|L’opération ChannelSettingChanged est consignée lorsque les activités suivantes sont effectuées par un membre de l’équipe. Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>• Modifie le nom d’un canal d’équipe (**Nom de canal**). <br/><br/>• Modifie la description d’un canal d’équipe (**Description de canal**).|
 |Paramètre d’organisation modifié|TeamsTenantSettingChanged|L’opération TeamsTenantSettingChanged est consignée lorsque les activités suivantes sont effectuées par un administrateur général (à l’aide du centre d’administration Microsoft 365). Notez que ces activités affectent les paramètres de Microsoft Teams à l’échelle de l’organisation. Pour plus d’informations, voir [Paramètres de l’administrateur de Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2). <br/> Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>• Active ou désactive Microsoft Teams pour l’organisation (**Microsoft Teams**). <br/><br/>• Active ou désactive l’interopérabilité entre Microsoft Teams et Skype Entreprise pour l’organisation (**interopérabilité de Skype Entreprise**). <br/><br/>• Active ou désactive l’affichage de l’organigramme dans les clients Microsoft Teams (**organigramme hiérarchique). <br/> <br/>• Active ou désactive la possibilité pour les membres de l’équipe de planifier des réunions privées (** planification privée des réunions **). <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe de planifier des réunions de canal (planification des réunions de canal**). <br/><br/>• Active ou désactive les appels vidéo pendant les réunions Teams (Vidéo pour réunions Skype **). <br/><br/>• Active ou désactive le partage d’écran dans les rencontres Microsoft Teams pour l’organisation (** partage d’écran pour les réunions Skype **). <br/> <br/>• Active ou désactive la possibilité d’ajouter des images animées (appelées Giphys) aux conversations Teams (images animées**). <br/><br/>• Modifie le paramètre d’évaluation du contenu pour l’organisation (**Évaluation du contenu**). L’évaluation du contenu restreint les types d’images animées qui peuvent être affichées dans les conversations. <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des images personnalisables (appelées mèmes personnalisés) à partir d’Internet aux conversations d’équipe (personnalisation d’images à partir d’Internet **). <br/> <br/>• Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des images modifiables (appelées autocollants) aux conversations d’équipe (** images modifiables **).<br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’utiliser des robots dans les conversations et canaux Microsoft Teams (robots à l’échelle de l’organisation**). <br/><br/>• Active les robots spécifiques pour Microsoft Teams. Cela n’inclut pas T-Bot qui est le robot d’assistance de Teams disponible lorsque les robots sont activés pour l’organisation (**Robots individuels**). <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des extensions ou des onglets (**Extensions ou onglets**). <br/><br/>• Active ou désactive le chargement latéral des robots propriétaires pour Microsoft Teams (**Chargement latéral des robots**). <br/><br/>• Active ou désactive la possibilité pour les utilisateurs d’envoyer des messages électronique à un canal Microsoft Teams (**E-mail du canal**).|
@@ -738,7 +738,7 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 |Équipe supprimée|TeamDeleted|Un propriétaire d’équipe supprime une équipe.|
 |Robot supprimé l’équipe|BotRemovedFromTeam|Un utilisateur supprime un robot d’une d’une équipe.|
 |Connecteur supprimé|ConnectorRemoved|Un utilisateur supprime un connecteur d’un canal.|
-|Membres supprimés de l’équipe|MemberRemoved|Un propriétaire d’équipe supprime des membres d’une équipe.|
+|Membres supprimés|MemberRemoved|Un propriétaire d’équipe supprime des membres d’une équipe ou d'une conversation de groupe.|
 |Onglet supprimé|TabRemoved|Un utilisateur supprime un onglet d’un canal.|
 |Connecteur mis à jour|ConnectorUpdated|Un utilisateur a modifié un connecteur dans un canal.|
 |Onglet mis à jour|TabUpdated|Un utilisateur a modifié un onglet dans un canal.|
@@ -838,6 +838,7 @@ Le tableau suivant répertorie les événements provoquant des activités d’é
 |Étiquette de confidentialité appliquée au fichier|FileSensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un document à l’aide d’Office sur le web.|
 |Étiquette de confidentialité modifiée appliquée au fichier|FileSensitivityLabelChanged|Une étiquette de confidentialité différente a été appliquée à un document à l’aide d’Office sur le Web.|
 |Suppression de l'étiquette de confidentialité sur le document|FileSensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée d’un document à l’aide d’Office sur le web.|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange
 
