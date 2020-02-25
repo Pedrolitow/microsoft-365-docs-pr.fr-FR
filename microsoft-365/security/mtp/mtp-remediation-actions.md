@@ -1,6 +1,6 @@
 ---
-title: Actions de correction dans les fonctionnalités d’enquête et de réponse automatisées dans Microsoft Threat Protection
-description: Obtenez une vue d’ensemble des fonctionnalités d’examen et réponses automatisés dans Protection Microsoft contre les menaces
+title: Actions de correction suite à des enquêtes automatisées dans Microsoft Threat Protection
+description: Obtenir une vue d’ensemble des actions de correction qui suivent des enquêtes automatisées dans Microsoft Threat Protection
 keywords: automatisation, examen, alerte, déclencheur, action, correction
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -18,29 +18,49 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 65ace4bda091b3e000d25a984b706f26fe9c8696
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 76a4fe678ce0106c7345dd3bdf504673733b63b6
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225482"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266050"
 ---
-# <a name="remediation-actions-in-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Actions de correction dans les fonctionnalités d’enquête et de réponse automatisées dans Microsoft Threat Protection
+# <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Actions de correction suite à des enquêtes automatisées dans Microsoft Threat Protection
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-Les fonctionnalités d’analyse et de réponse automatisées dans Microsoft Threat Protection incluent certaines actions de correction. Certains types d’actions de correction sont pris sur les appareils, également appelés points de terminaison. D’autres actions de correction sont appliquées au contenu du courrier électronique.
+
+## <a name="remediation-actions"></a>Actions de correction
+
+Pendant et après une enquête automatisée dans Microsoft Threat Protection, les actions de correction sont identifiées pour les éléments malveillants ou suspects. Certains types d’actions de correction sont pris sur les appareils, également appelés points de terminaison. D’autres actions de correction sont appliquées au contenu du courrier électronique. Analyses automatiques terminées après que les actions de correction ont été effectuées, approuvées ou rejetées.
 
 Le tableau suivant récapitule les actions de correction actuellement prises en charge dans Microsoft Threat Protection : 
 
-|Actions de correction des points de terminaison  |Actions de correction des e-mails  |
+|Actions de correction du périphérique (point de terminaison)  |Actions de correction des e-mails  |
 |---------|---------|
 |Fichier de quarantaine<br/>Supprimer une clé de Registre<br/>Processus d’arrêt <br/>Arrêter le service <br/>Désactiver le pilote <br/>Supprimer une tâche planifiée.      |Supprimer (récupération possible) le courrier ou des clusters<br/>Bloquer l’URL (heure du clic)<br/>Désactiver le transfert de courrier externe          |
 
 Les actions de correction, qu’elles soient en attente d’approbation ou qui sont déjà terminées, peuvent être affichées dans le [Centre de notifications](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 
+## <a name="verdicts-and-outcomes-following-automated-investigations"></a>Verdicts et résultats après des enquêtes automatisées
+
+Lorsqu’un examen automatisé se termine, un verdict est atteint pour chaque élément de preuve impliqué et des actions de correction sont identifiées. Dans certains cas, des actions de correction sont effectuées automatiquement. dans d’autres cas, les actions de correction attendent une approbation. Le tableau suivant répertorie les verdicts et résultats possibles :
+
+|Verdict    |Domaine   |Résultats|
+|------|------|------|
+|Malveillant  |Appareils (points de terminaison)    |Les actions d'assainissement prennent automatiquement effet|
+|Malveillant  |Contenu de l’e-mail (URL ou pièces jointes) | Les actions de correction recommandées sont en attente d’approbation|
+|Suspect |Appareils ou contenu de l’e-mail |Les actions de correction recommandées sont en attente d’approbation|
+|Nettoyer  |Appareils ou contenu de l’e-mail   |Aucune action de correction n’est nécessaire|
+
+[Examiner une action en attente dans le centre de notifications](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
+
+> [!TIP]
+> Si vous pensez qu’un message a été manqué ou incorrectement détecté par les fonctionnalités d’analyse et de réponse automatiques dans Microsoft Threat Protection, faites-le nous savoir. [Signalez les faux positifs/négatifs](mtp-autoir-report-false-positives-negatives.md).
+
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Approuver ou refuser les actions liées à un examen et réponse automatisées](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
+- [Approuver ou rejeter des actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
+
 - [En savoir plus sur le centre de notifications](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).

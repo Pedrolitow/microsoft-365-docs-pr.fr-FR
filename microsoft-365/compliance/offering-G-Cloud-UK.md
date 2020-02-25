@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ecd8a362b0e77df846f486b0a424425f012ee68b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602351"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236884"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Gouvernement britannique-Cloud (G-Cloud)
 
@@ -49,7 +49,7 @@ Découvrez comment accélérer votre déploiement du Royaume-Uni G-Cloud V6 à l
 - Intune
 - Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Office 365 : Exchange Online, SharePoint Online et Skype entreprise Online
-- Service Cloud Power Apps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
@@ -64,17 +64,17 @@ Pour vérifier que les services de Cloud Computing Microsoft conservent leur con
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
-- [Environnement de risque de Cloud dans Dynamics 365 UK G](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
+- [Environnement de risque de Cloud dans Dynamics 365 UK G](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ### <a name="intune"></a>Intune
 
-- [Intune UK G environnement de risque pour le Cloud](https://aka.ms/IntuneUKGCloudRiskEnvironment)
+- [Intune UK G environnement de risque pour le Cloud](https://go.microsoft.com/fwlink/?linkid=2099702)
 - [Intune UK G risque résiduel dans le Cloud](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Résumé de l’évaluation de la sécurité du Cloud pour Azure UK G](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
-### <a name="office-365"></a>Office 365
+### <a name="office-365"></a>Office 365
 
-- [Environnement Office 365 UK G Risk Risk Environment](https://aka.ms/Office365UKGCloudRiskEnvironment)
+- [Environnement Office 365 UK G Risk Risk Environment](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ## <a name="accelerate-your-deployment-of-uk-g-cloud-solutions-on-azure"></a>Accélérez votre déploiement de solutions pour le Cloud G UK sur Azure
 
@@ -82,7 +82,7 @@ Le transfert de vos services gouvernementaux vers le nuage est désormais plus f
 
 [Commencer à utiliser le modèle Azure UK G-Cloud](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Qui est éligible pour utiliser le marché numérique ?**
 

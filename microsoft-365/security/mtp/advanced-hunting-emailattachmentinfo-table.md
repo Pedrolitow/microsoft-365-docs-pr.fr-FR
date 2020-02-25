@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c3c907b2ea2c636018223cb9e13e5785f5569b71
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d35313cf481ecd6892725ae385e7db1032565611
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087953"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234793"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 La table `EmailAttachmentInfo` dans le schéma de [repérage avancé](advanced-hunting-overview.md) contient des informations sur les pièces jointes des e-mails traités par Office 365 - Protection avancée contre les menaces. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 

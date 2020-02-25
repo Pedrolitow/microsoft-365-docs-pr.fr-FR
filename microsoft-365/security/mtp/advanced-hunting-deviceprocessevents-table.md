@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 460c1e76020457fb4f640c32df39c09adaaba32a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: eae1eff69fa6a91413e3f2dd6644c9c27549968e
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600401"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234773"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Le `DeviceProcessEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur la création de processus et les événements connexes. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 

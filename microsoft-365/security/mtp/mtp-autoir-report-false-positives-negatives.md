@@ -1,5 +1,5 @@
 ---
-title: Comment signaler les faux positifs ou les faux négatifs dans AIR dans la protection contre les menaces Microsoft
+title: Gérer les faux positifs ou les faux négatifs dans l’AIR dans la protection contre les menaces Microsoft
 description: Un message a-t-il été manqué ou incorrectement détecté par AIR dans la protection contre les menaces Microsoft ? Découvrez comment soumettre des faux positifs ou faux négatifs à Microsoft pour analyse.
 keywords: automatisation, analyse, alerte, déclencheur, action, correction, faux positif, faux négatif
 search.appverid: met150
@@ -19,23 +19,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 1177f552652e728928a2b1d322b4ce0217415509
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774190"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262001"
 ---
-# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées
+# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Gérer les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 La protection contre les menaces a-t-elle permis d’effectuer des [recherches et des réponses automatiques](mtp-autoir.md) dans Microsoft Threat Protection ? Il existe des étapes que vous pouvez suivre pour résoudre ce problème. Vous pouvez :
+
 - [Signaler un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+
 - [Ajustez vos alertes (le](#adjust-an-alert-to-prevent-false-positives-from-recurring) cas échéant); les 
+
 - [Annuler les actions correctives qui ont été effectuées sur les appareils](#undo-a-remediation-action-that-was-taken-on-a-device). 
 
 Utilisez cet article comme guide. 
@@ -81,5 +82,7 @@ Si une action de correction a été effectuée sur un appareil (tel qu’un appa
 ## <a name="related-articles"></a>Articles connexes
 
 - [Approuver ou refuser les actions liées à un examen et réponse automatisées](mtp-autoir-actions.md)
+
 - [En savoir plus sur le centre de notifications](mtp-action-center.md).
+
 - [Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces](advanced-hunting-overview.md)

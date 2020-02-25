@@ -13,13 +13,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Utilisez des classifieurs adaptés lorsque l’un des classifieurs de zone prêt à l’emploi ne répond pas à vos besoins. Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cette rubrique vous montre comment créer un classifieur personnalisé.
-ms.openlocfilehash: bbf2fac4e912e6619f3fe1c9a328aa61782cb640
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilisez des classifieurs pilotables lorsque l’un des classifieurs intégrés ne répond pas à vos besoins. Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cette rubrique vous montre comment créer un classifieur personnalisé.
+ms.openlocfilehash: 31fb4374290bcf92a5c68bc4e7531e9472622b0b
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078860"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266893"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Création d’un classifieur de formation (aperçu)
 

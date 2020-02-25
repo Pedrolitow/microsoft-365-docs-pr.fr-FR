@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: 75cf79e162c2e371821b4329fc1be949f0b3a81c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7ebd991fe70401b91c14673bcff8aabbdabbda6a
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078810"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266876"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -44,6 +44,8 @@ Les étiquettes de sensibilité et de rétention peuvent ensuite être appliqué
 
 Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifiable par les méthodes de correspondance manuelle ou automatisée. Cette méthode de classification est plus relative à la formation d’un classifieur permettant d’identifier un élément en fonction de ce que est l’élément, pas par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en examinant des centaines d’exemples du contenu que vous souhaitez classer. Commencez par alimenter des exemples qui sont tous dans la catégorie. Une fois qu’il les traite, vous les testez en leur donnant une combinaison des exemples de correspondance et de non-correspondance. Le classifieur effectue ensuite des prévisions quant à l’existence d’un élément donné dans la catégorie que vous créez. Ensuite, vérifiez ses résultats, en triant les positifs, les négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prévisions. Lorsque vous publiez le classifieur formé, il trie les éléments dans des emplacements comme SharePoint Online, Exchange et OneDrive, et classifie le contenu.
 
+<!-- add link in the below note to sensitivity label topic when carolb provides -->
+
 > [!IMPORTANT]
 > Les deux types de classifieurs sont disponibles en tant que condition pour la [stratégie d’étiquette de rétention automatique basée sur une condition et une](labels.md#applying-a-retention-label-automatically-based-on-conditions) conformité de [communication](communication-compliance.md).
 
@@ -56,14 +58,14 @@ Les classifieurs de formation sont une fonctionnalité de conformité Microsoft 
 
 ## <a name="types-of-classifiers"></a>Types de classifieurs
 
-Il est prêt à utiliser des classifieurs et des classifieurs de formation. L’obtention d’un classificateur de formation à un État publiable nécessite un investissement de temps pour le former. Pour vous aider à commencer à utiliser les classifieurs, Microsoft 365 est fourni avec quelques classifieurs prêts à l’emploi.
+Il existe des classifieurs intégrés et des classifieurs de formation. L’obtention d’un classificateur de formation à un État publiable nécessite un investissement de temps pour le former. Pour vous aider à commencer à utiliser les classifieurs, Microsoft 365 est fourni avec quelques classifieurs intégrés.
 
 > [!NOTE]
-> Avant d’utiliser un classificateur prêt à utiliser dans votre classification et votre flux de travail d’étiquetage, vous devez le tester par rapport à un exemple de votre contenu d’organisation correspondant à la catégorie afin de vérifier que ses prévisions de classification répondent à vos attentes.
+> Avant d’utiliser un classifieur intégré dans votre flux de travail de classification et d’étiquetage, vous devez le tester par rapport à un échantillon du contenu de votre organisation que vous jugez adapté à la catégorie afin de vérifier que ses prévisions de classification répondent à vos attentes.
 
-### <a name="understanding-ready-to-use-classifiers"></a>Présentation des classifieurs prêts à l’emploi
+### <a name="understanding-built-in-classifiers"></a>Présentation des classifieurs intégrés
 
-Microsoft 365 est fourni avec six classifieurs prêts à l’emploi suivants :
+Microsoft 365 est fourni avec six classifieurs intégrés :
 
 - **Offensant**: détecte les éléments de texte qui contiennent des blasphèmes, Slurs, taunts et des expressions déguisées (qui sont des expressions qui ont la même signification qu’un terme plus offensant).
 - **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, professionnelles, d’expérience professionnelle, ainsi que d’autres informations d’identification personnelle d’un demandeur.
@@ -79,15 +81,15 @@ Ces éléments apparaissent dans**la vue** classification des données `Ready to
 > [!IMPORTANT]
 > Veuillez noter que le langage offensant, le harcèlement, le catégoriseur et les classifieurs de menaces ne fonctionnent qu’avec le texte pouvant faire l’objet d’une recherche.  De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Tandis que les classifieurs peuvent aider votre organisation à surveiller le offensant et d’autres langues, les classifieurs ne traitent pas les conséquences de cette langue et ne sont pas destinés à fournir aux seuls moyens de surveillance ou de réponse à l’utilisation de cette langue. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’application, au blocage, à la suppression et à la rétention de tout contenu identifié par un classificateur pré-formé.
 
-#### <a name="process-flow-for-using-ready-to-use-classifiers"></a>Flux de processus pour l’utilisation de classifieurs prêts à l’emploi
+#### <a name="process-flow-for-using-built-in-classifiers"></a>Flux de processus pour l’utilisation de classifieurs intégrés
 
-Prêt à utiliser les classifieurs n’a pas besoin d’être formé, mais vous devez confirmer qu’ils identifient les types de contenu dont vous avez besoin avant de les utiliser dans des solutions de conformité. Le test d’un classificateur pré-qualifié suit ce flux.
+Les classifieurs intégrés n’ont pas besoin d’être formés, mais vous devez confirmer qu’ils identifient les types de contenu dont vous avez besoin avant de les utiliser dans des solutions de conformité. Le test d’un classificateur pré-qualifié suit ce flux.
 
 ![test du flux de processus d’un classificateur pré-formé](../media/classifier-pre-trained-classifier-flow.png)
 
 ### <a name="understanding-trainable-classifiers"></a>Présentation des classifieurs de formation
 
-Lorsque les classifieurs prêts à l’emploi ne répondent pas à vos besoins, vous pouvez créer et former vos propres classifieurs. La création de vos propres tâches est beaucoup plus importante, mais elles seront beaucoup mieux adaptées à vos besoins. Pour plus d’informations sur l’utilisation d’un classificateur pré-formé, consultez la rubrique [utilisation d’un classificateur prêt à utiliser](classifier-using-a-ready-to-use-classifier.md)
+Lorsque les classifieurs intégrés ne répondent pas à vos besoins, vous pouvez créer et former vos propres classifieurs. La création de vos propres tâches est beaucoup plus importante, mais elles seront beaucoup mieux adaptées à vos besoins. Pour plus d’informations sur l’utilisation d’un classificateur pré-formé, consultez la rubrique [utilisation d’un classifieur intégré](classifier-using-a-ready-to-use-classifier.md) .
 
 > [!IMPORTANT]
 > Seul l’utilisateur qui crée un classificateur de formation peut former et examiner les prévisions effectuées par ce classifieur.

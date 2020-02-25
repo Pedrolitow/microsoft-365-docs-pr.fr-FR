@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 83a4b7b52508002ad9bc5c27e1ebf68677808444
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0bbcef72fa305819c9f8e0813cfcdfd6c2b0fff3
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087933"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234723"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Repérer les menaces sur divers appareils et e-mails
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [Le repérage avancé](advanced-hunting-overview.md) dans la Protection Microsoft contre les menaces vous permet de rechercher de manière proactive les menaces qui pèsent sur vos appareils Windows et e-mails Office 365. Voici quelques scénarios de repérage et exemples de requêtes qui peuvent vous aider à découvrir comment créer des requêtes sur les appareils et les e-mails.
 

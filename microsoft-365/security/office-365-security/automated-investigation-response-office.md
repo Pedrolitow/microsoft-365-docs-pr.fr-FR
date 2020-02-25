@@ -14,21 +14,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 436d70934e32f8609d35532188ac71cbd590c345
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 49b7e95e1669c106ee7f7bf9191ff8e73ae4802f
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228580"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261971"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
 À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. Parfois, les équipes d’opérations de sécurité peuvent être submergées par le volume des alertes déclenchées. Les fonctionnalités d’analyse et de réponse automatiques dans Office 365 peuvent vous aider. AIR permet à votre équipe des opérations de sécurité de fonctionner de manière plus efficace. Les fonctionnalités AIR incluent des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. Les actions de correction appropriées attendent l’approbation, ce qui permet à votre équipe des opérations de sécurité de répondre aux menaces détectées. 
 
 Cet article fournit une vue d’ensemble de l’AIR et de ses composants. Lorsque vous êtes prêt à commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
-
-> [!TIP]
-> Avez-vous Microsoft 365 E5 ou Microsoft 365 E3 conjointement avec identité et protection contre les menaces ? Nous recommandons d’utiliser [Protection Microsoft contre les menaces](../mtp/microsoft-threat-protection.md).
 
 ## <a name="at-a-high-level"></a>À un niveau élevé
 

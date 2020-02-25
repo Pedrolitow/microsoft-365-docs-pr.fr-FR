@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’un classificateur prêt à l’emploi (préversion)
+title: Utilisation d’un classifieur intégré (aperçu)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,15 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 est fourni avec un certain nombre de classifieurs d’apprentissage automatique prêts à l’emploi que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs prêts à l’emploi.
-ms.openlocfilehash: 8f3df8e7851bf453add162df4088e11dc7745cee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 est fourni avec un certain nombre de classifieurs intégrés que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs.
+ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078791"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266730"
 ---
-# <a name="using-a-ready-to-use-classifier-preview"></a>Utilisation d’un classificateur prêt à l’emploi (préversion)
+# <a name="using-a-built-in-classifier-preview"></a>Utilisation d’un classifieur intégré (aperçu)
 
 Microsoft a formé et testé un certain nombre de classifieurs utilisant des exemples de jeux de données très volumineux, qui peuvent vous aider à identifier certaines catégories de contenu. Voir [Getting Started with trainable Classifiers (Preview)](classifier-getting-started-with.md). Ces classifieurs s’affichent dans `Ready to use` le groupe par défaut.
 
@@ -33,14 +33,14 @@ Microsoft a formé et testé un certain nombre de classifieurs utilisant des exe
 - **Menace**: détecte une catégorie spécifique d’éléments de texte de langue choquants liés aux menaces pour valider la violence ou causer des dégâts ou dommages physiques à une personne ou à une propriété,
 
 > [!NOTE]
-> Avant d’utiliser des classifieurs prêts à utiliser dans votre classification et votre flux de travail d’étiquetage, vous devez le tester par rapport à un échantillon du contenu de votre organisation que vous jugez adapté à la catégorie afin de vérifier que ses prévisions de classification répondent à vos attentes.
+> Avant d’utiliser des classifieurs intégrés dans votre flux de travail de classification et d’étiquetage, vous devez le tester par rapport à un échantillon du contenu de votre organisation que vous jugez adapté à la catégorie afin de vérifier que ses prévisions de classification répondent à vos attentes.
 
 > [!IMPORTANT]
 > Veuillez noter que le langage offensant, le harcèlement, le catégoriseur et les classifieurs de menaces ne fonctionnent qu’avec le texte pouvant faire l’objet d’une recherche. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Tandis que les classifieurs peuvent aider votre organisation à surveiller le offensant et d’autres langues, les classifieurs ne traitent pas les conséquences de cette langue et ne sont pas destinés à fournir aux seuls moyens de surveillance ou de réponse à l’utilisation de cette langue. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’application, au blocage, à la suppression et à la rétention de tout contenu identifié par un classificateur pré-formé.
 
-## <a name="how-to-prepare-for-and-use-a-ready-to-use-classifier"></a>Comment préparer et utiliser un classificateur prêt à utiliser
+## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>Comment préparer et utiliser un classifieur intégré
 
-1. Collecter les éléments de contenu de test jetables qui vous intéressent dans la catégorie du classifieur prêt à utiliser (correspondances positives) et ceux qui ne doivent pas être inclus (correspondances négatives) dans la catégorie que vous testez.
+1. Collecter les éléments de contenu de test jetables qui vous intéressent dans la catégorie du classifieur intégré (correspondances positives) et ceux qui ne doivent pas être inclus (correspondances négatives) dans la catégorie que vous testez.
 
 > [!IMPORTANT]
 > Les éléments de l’exemple ne doivent pas être chiffrés et doivent être en anglais.
@@ -65,7 +65,7 @@ Microsoft a formé et testé un certain nombre de classifieurs utilisant des exe
 
 10. Choisissez votre classifieur dans la liste, dans ce cas.`Source Code`
 
-11. Nommez la stratégie, par exemple « code source prêt à utiliser le test de classifieur ».
+11. Nommez la stratégie, par exemple « code source-test de classificateur intégré ».
 
 12. Choisissez `Let me choose specific locations`.
 

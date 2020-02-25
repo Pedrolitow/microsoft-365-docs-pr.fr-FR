@@ -1,0 +1,186 @@
+---
+title: Modifier les serveurs de noms pour configurer Office 365 avec 1&1 IONOS
+f1.keywords:
+- NOCSH
+ms.author: pebaum
+author: pebaum
+manager: mnirkhe
+audience: Admin
+ms.topic: get-started-article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+- Adm_O365_Setup
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
+description: Découvrez comment configurer Office 365 géré par 21Vianet pour gérer vos enregistrements DNS, quand 1&1 Internet est le fournisseur d’hébergement DNS.
+ms.openlocfilehash: 907e4fe097634d28ad44e4d44ba8c6ff2da9164d
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42242931"
+---
+# <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Modifier les serveurs de noms pour configurer Office 365 avec 1&1 IONOS
+
+ **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+  
+Suivez ces instructions si vous voulez laisser le soin à Office 365 de gérer vos enregistrements DNS Office 365 à votre place. (Si vous préférez, vous pouvez [gérer tous vos enregistrements DNS Office 365 à 1&1 Ionos](create-dns-records-at-1-1-internet.md).) 
+  
+
+    
+## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
+
+
+Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-ci vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d'enregistrement de domaines et à créer l'enregistrement DNS montre à Office 365 que le domaine vous appartient réellement.
+  
+> [!NOTE]
+> Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
+  
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 0:42)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+  
+1. Pour commencer, accédez à la page de vos domaines à l’adresse 1&1 IONOS via [ce lien](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). You'll be prompted to log in. 
+    
+2. Sous **Mes domaines**, sélectionnez **gérer les domaines**.
+    
+3. Sur la page **Centre de domaines** , recherchez le domaine que vous souhaitez mettre à jour ; Ensuite, sélectionnez le contrôle de **volet** ( **v**) pour ce domaine.
+    
+4. Dans la zone **paramètres du domaine** , sélectionnez Modifier les **paramètres DNS**.
+    
+5. Dans la section **txt and SRV Records (enregistrements TXT** ), sélectionnez **Add record (ajouter un enregistrement**).
+    
+    (You may have to scroll down.) 
+    
+6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
+    
+||||
+|:-----|:-----|:-----|
+|**Type** <br/> |**Prefix (Préfixe)** <br/> |**Name Value (Valeur de nom)** <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Remarque**: Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+
+   
+7. Sélectionnez **Enregistrer**, puis **Enregistrer** à nouveau. 
+    
+8. Dans la boîte de dialogue **modifier les paramètres DNS** , sélectionnez **Oui**.
+    
+9. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
+    
+Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+  
+When Office 365 finds the correct TXT record, your domain is verified.
+  
+1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+    
+2. Dans la page **domaines** , sélectionnez le domaine que vous vérifiez. 
+    
+3. Sur la page **installation** , sélectionnez **Démarrer l’installation**.
+    
+4. Sur la page **vérifier le domaine** , sélectionnez **vérifier**.
+    
+> [!NOTE]
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+  
+## <a name="change-your-domains-nameserver-ns-records"></a>Modifier les enregistrements de serveur de noms (NS) de votre domaine
+
+Pour finaliser la configuration de votre domaine avec Office 365, vous devez modifier les enregistrements de serveur de noms auprès de votre bureau d'enregistrement de domaines afin qu'ils pointent vers les serveurs de noms principal et secondaire Office 365. Office 365 est ainsi informé qu'il doit mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
+  
+> [!CAUTION]
+> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine de façon à ce qu'ils pointent vers les serveurs de noms Office 365, tous les services actuellement associés à votre domaine sont affectés. Par exemple, les messages envoyés à votre domaine (tel que thomas@ *votre_domaine*  .com) arriveront dans Office 365 une fois cette modification appliquée. 
+  
+Vous êtes prêt à modifier vos enregistrements NS de sorte que Office 365 puisse configurer votre domaine ? Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 2:47)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+  
+> [!IMPORTANT]
+>  La procédure suivante montre comment supprimer tous les autres serveurs de noms indésirables de la liste, et également comment ajouter les serveurs de noms corrects s’ils ne sont pas déjà répertoriés. > lorsque vous avez effectué les étapes de cette section, les seuls serveurs de noms qui doivent être répertoriés sont les quatre suivants : > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
+  
+1. Pour commencer, accédez à la page de vos domaines à l’adresse 1&1 IONOS à l’aide de [ce lien](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). You'll be prompted to log in. 
+    
+2. Sous **Mes domaines**, sélectionnez **gérer les domaines**.
+    
+3. Sur la page **Centre de domaine** , recherchez le domaine que vous souhaitez mettre à jour, puis sélectionnez le contrôle de **volet** ( **v**) pour ce domaine.
+    
+4. Dans la zone **paramètres du domaine** , sélectionnez Modifier les **paramètres DNS**.
+    
+5. Dans la section **Name Server Settings (Paramètres du serveur de noms)**, sélectionnez **Other name servers (Autres serveurs de noms)**.
+    
+    (Vous devrez peut-être faire défiler la page vers le bas.)
+    
+6. Suivez l'une des procédures suivantes en fonction du scénario qui s'applique à votre cas dans la page qui s'affiche :
+    
+  - Si **AUCUN** serveur de noms n'est encore répertorié, [Si AUCUN serveur de noms n'est encore répertorié](#if-there-are-no-nameservers-already-listed).
+    
+  - Si **DES** serveurs de noms sont déjà répertoriés, [Si DES serveurs de noms sont déjà répertoriés](#if-there-are-nameservers-already-listed).
+    
+### <a name="if-there-are-no-nameservers-already-listed"></a>Si AUCUN serveur de noms n'est encore répertorié
+
+1. Dans la zone **Name server 1 (Serveur de noms 1)**, tapez ou copiez-collez la valeur du tableau suivant. 
+    
+|||
+|:-----|:-----|
+|**Name server 1 (Serveur de noms 1)** <br/> |ns1.bdm.microsoftonline.com  <br/> |
+   
+   ![Saisie d’une valeur dans la zone Nom du serveur 1](../media/34509935-461f-427f-9796-c3cf840bd9be.png)
+  
+2. Dans le menu déroulant **Additional name servers (Autres serveurs de noms)**, sélectionnez **My secondary name servers (Mes serveurs de noms secondaires)**.
+    
+    ![Choosing My secondary name servers in the list](../media/7eb14856-86da-45c2-910c-c72312250a18.png)
+  
+3. Dans les zones **Serveur de noms (2, 3 et 4)**, tapez ou copiez-collez les valeurs du tableau suivant. 
+    
+|||
+|:-----|:-----|
+|**Name server 2 (Serveur de noms 2)** <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|**Serveur de noms 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|**Serveur de noms 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
+   
+    ![Entering name server values](../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+  
+4. Cliquez sur **Enregistrer**.
+    
+    ![Sélectionnez Enregistrer dans la page Paramètres du serveur de noms.](../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
+  
+5. Dans la boîte de dialogue **modifier les paramètres DNS** , sélectionnez **Oui**.
+    
+    ![Sélection de l’option Enregistrer dans la boîte de dialogue Modifier les paramètres DNS](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+  
+> [!NOTE]
+> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Vous pourrez ensuite utiliser votre messagerie et les autres services Office 365 avec votre domaine. 
+  
+### <a name="if-there-are-nameservers-already-listed"></a>Si DES serveurs de noms sont déjà répertoriés
+
+> [!CAUTION]
+> Suivez ces étapes  *uniquement*  si vous avez des serveurs de noms existants autres que les quatre serveurs de noms  *corrects*  . Autrement dit, ne supprimez  *que*  les serveurs de noms  *qui ne sont pas*  nommés **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com** ou **ns4.bdm.microsoftonline.com**. 
+  
+1. Si d'autres serveurs de noms sont répertoriés dans les zones **Name server (Serveur de noms)**, supprimez-les en les sélectionnant et en appuyant sur la touche **Suppr** du clavier. 
+    
+    ![Deleting name servers](../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
+  
+2. Dans les zones **Serveur de noms (1, 2, 3 et 4)**, tapez ou copiez-collez les valeurs du tableau suivant. 
+    
+|||
+|:-----|:-----|
+|**Name server 1 (Serveur de noms 1)** <br/> |ns1.bdm.microsoftonline.com  <br/> |
+|**Name server 2 (Serveur de noms 2)** <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|**Serveur de noms 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|**Serveur de noms 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
+   
+   ![Entrée de valeurs de serveur de noms](../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
+  
+3. Cliquez sur **Enregistrer**.
+    
+    ![Sélectionnez Enregistrer dans la page Paramètres du serveur de noms.](../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
+  
+4. Dans la boîte de dialogue **modifier les paramètres DNS** , sélectionnez **Oui**.
+    
+    ![Sélection de l’option Enregistrer dans la boîte de dialogue Modifier les paramètres DNS](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+  
+> [!NOTE]
+> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Vous pourrez ensuite utiliser votre messagerie et les autres services Office 365 avec votre domaine. 
+  
+
+

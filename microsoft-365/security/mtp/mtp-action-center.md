@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219175"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262021"
 ---
-# <a name="go-to-the-action-center-to-view-remediation-actions"></a>Accéder au centre de notifications pour afficher les actions de correction
+# <a name="the-action-center"></a>Centre de notifications
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-## <a name="a-single-pane-of-glass-experience"></a>Expérience de type « écran unique »
+Utilisez le centre de notifications pour afficher les résultats des enquêtes actuelles et antérieures sur les appareils et les boîtes aux lettres de votre organisation. Selon le type de menace et le verdict résultant, les [actions de correction](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) se produisent automatiquement ou après approbation de l’équipe des opérations de sécurité de votre organisation. Toutes les actions de correction, qu’elles soient en attente d’approbation ou qu’elles aient déjà été approuvées, sont regroupées dans le centre de notifications. 
 
 ![Centre de notifications](../../media/air-actioncenter.png)
 
-Utilisez le centre de notifications pour afficher les résultats des enquêtes actuelles et antérieures sur les appareils et les boîtes aux lettres de votre organisation. En fonction du type de menace et du [verdict résultant](mtp-autoir-results.md#remediation-actions-following-automated-investigation), des actions de correction sont effectuées automatiquement ou sur approbation par l’équipe en charge des opérations de sécurité de votre organisation. Toutes les actions de correction, qu’elles soient en attente d’approbation ou qu’elles aient déjà été approuvées, sont regroupées dans le centre de notifications. 
+## <a name="a-single-pane-of-glass-experience"></a>Expérience de type « écran unique »
 
 Le centre de notifications offre une expérience de type « écran unique » pour certaines tâches :
 - Approbation des actions de correction en attente ;
@@ -63,7 +63,6 @@ L’équipe en charge des opérations de sécurité peut fonctionner de façon p
 
     - Si l’enquête implique un appareil, les détails de l’enquête s’affichent dans le centre de sécurité ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-
 > [!TIP]
 > Si vous pensez qu’un message a été manqué ou incorrectement détecté par les fonctionnalités d’analyse et de réponse automatiques dans Microsoft Threat Protection, faites-le nous savoir. Découvrez [Comment signaler des faux positifs/négatifs dans les capacités d’inspection et de réponse automatiques de Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
@@ -82,6 +81,8 @@ Pour approuver ou rejeter des actions en attente dans le centre de notifications
 ## <a name="next-steps"></a>Étapes suivantes 
 
 - [En savoir plus sur les incidents dans la Protection Microsoft contre les menaces](incidents-overview.md)
+
 - [Afficher les résultats d’une enquête automatisée](mtp-autoir-results.md)
+
 - [En savoir plus sur le repérage dans la Protection Microsoft contre les menaces](advanced-hunting-overview.md)
 

@@ -1,0 +1,79 @@
+---
+title: Collaborer par message électronique dans Office 365
+f1.keywords:
+- NOCSH
+ms.author: kwekua
+author: kwekua
+manager: scotv
+audience: Admin
+ms.topic: overview
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+- MOW150
+- OWE150
+- OWP150
+- SPO160
+- BSA160
+- SPB160
+ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
+description: Découvrez les différents types de groupes et comment les utiliser avec les différentes fonctionnalités de collaboration d’Office 365.
+ms.openlocfilehash: 26f24f0a27981e0901f9f8f57fd7c6c22d15de21
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42253025"
+---
+# <a name="email-collaboration-in-office-365"></a>Collaborer par message électronique dans Office 365
+
+Office 365 encourage la collaboration par le biais de groupes dans Outlook, de listes de distribution (également appelés groupes de distribution), de boîtes aux lettres partagées et de dossiers publics. Chacune de ces options présente un objectif, une expérience utilisateur et un ensemble de fonctionnalités distincts. Les options qu'il convient d'utiliser dépendent de l'action que l'utilisateur doit effectuer et des outils fournis par votre organisation.
+  
+## <a name="summary-of-collaboration-options"></a>Résumé des options de collaboration
+<a name="BKMK_SUMMARYOFCOLLABORATIONOPTIONS"> </a>
+
+Ce tableau explique les différentes options de collaboration à votre disposition.
+  
+
+
+|**Outil de collaboration**|**Description**|
+|:-----|:-----|
+|Groupes dans Outlook  <br/> |Espace de travail englobant toutes les applications dans Office 365. Inclut une boîte aux lettres et un calendrier partagés, et un site OneDrive Entreprise pour le stockage des fichiers. Les utilisateurs peuvent créer, Rechercher et rejoindre des groupes dans Outlook directement à partir de leur courrier électronique ou de leur calendrier. Les utilisateurs nouveaux et existants disposant d’un abonnement Exchange Online ou Office 365 peuvent utiliser des groupes dans Outlook.  <br/> |
+|Boîte aux lettres partagée  <br/> |Boîte aux lettres qui permet à certains utilisateurs de lire et d'envoyer des messages électroniques, et de partager un calendrier. Les boîtes aux lettres partagées peuvent également servir d'adresse de messagerie générique (par exemple, info@contoso.com ou ventes@contoso.com) et permettre aux clients de demander des informations sur l'entreprise. Lorsque l'autorisation Envoyer en tant que est activée sur la boîte aux lettres partagée, les messages envoyés à partir de la boîte aux lettres utilisent l'adresse générique (par exemple, ventes@contoso.com).  <br/> |
+|Liste de distribution (ou groupe de distribution)  <br/> |Permet de distribuer les messages électroniques à plusieurs personnes simultanément. Les groupes de distribution sont également appelés groupes de distribution à extension messagerie. Une variante du groupe de distribution, appelée groupe de distribution dynamique, est un objet Groupe Active Directory qui permet d'envoyer des messages électroniques à un grand groupe de destinataires susceptible d'évoluer. Les destinataires sont déterminés à l'aide des filtres et conditions que vous spécifiez (par exemple, membres d'un site particulier ou employés à temps plein).<br/><br/> Les groupes Office 365 dans Outlook offrent une solution plus puissante pour la collaboration que les groupes de distribution. Pour en savoir plus, consultez [la rubrique pourquoi vous devez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx) et [migrer des listes de distribution vers des groupes Office 365](../manage/upgrade-distribution-lists.md).  <br/> |
+|Dossier public  <br/> |Conçu pour un accès partagé, les dossiers publics offrent un moyen simple et efficace de collecter, d’organiser et de partager des informations avec d’autres membres de votre organisation. Ils organisent le contenu au sein d'une hiérarchie étendue facile à parcourir et toujours visible dans l'affichage des dossiers Outlook. Les dossiers publics peuvent être à extension messagerie et ajoutés en tant que membres du groupe de distribution. Les messages envoyés au groupe de distribution sont ajoutés automatiquement au dossier public à des fins d'archivage ou de référence. Les dossiers publics fournissent également un partage de documents simple lorsque vous n'avez pas d'abonnement SharePoint Online.  <br/> |
+   
+## <a name="which-collaboration-tool-to-use"></a>Quel outil de collaboration devez-vous utiliser ?
+<a name="BKMK_SUMMARYOFCOLLABORATIONOPTIONS"> </a>
+
+Le tableau suivant présente un aperçu rapide des différents types de groupes et explique quand et comment les utiliser avec les différentes fonctionnalités de collaboration.
+  
+
+||**Groupes dans Outlook**|**Listes de distribution**|**Boîtes aux lettres partagées**|**Dossiers publics**|
+|:-----|:-----|:-----|:-----|:-----|
+|**Utilisateurs** <br/> |Utilisateurs qui souhaitent un espace de travail de collaboration pour leurs messages, fichiers et calendrier de groupe qui est intégré aux services qu’ils utilisent déjà (Outlook Web App, OneDrive entreprise)  <br/> |Utilisateurs devant envoyer un message électronique à un groupe de destinataires partageant des intérêts ou des caractéristiques communs.  <br/> |Les boîtes aux lettres partagées sont un excellent moyen de gérer les questions de messagerie des clients, car plusieurs personnes de votre organisation peuvent partager la responsabilité de l’analyse de la boîte aux lettres et de répondre aux requêtes. Vos questions client sont plus rapides et les e-mails associés sont tous stockés dans une seule boîte aux lettres.  <br/><br/> Délégués qui travaillent au nom d'une entité virtuelle, telle que support@contoso.com. Les délégués peuvent répondre aux messages électroniques en tant qu'identité de boîte aux lettres partagée.  <br/> |Dès lors qu'ils disposent des autorisations utiles, tous les membres de votre organisation peuvent accéder aux dossiers publics et y effectuer des recherches. Ils conviennent parfaitement à l'archivage des messages ou au partage des documents.  <br/> |
+|**Taille de groupe idéale** <br/> |Toute  <br/> |Grande  <br/> |Petit  <br/> |Grande  <br/> |
+|**Accès** <br/> |Utilisateurs d'Exchange Online et d'Office 365  <br/> |Pour les groupes de distribution, vous devez ajouter les membres manuellement. Pour les groupes de distribution dynamiques, les membres sont ajoutés d'après des critères de filtrage.  <br/> |Les autorisations Accès total et/ou Envoyer en tant que peuvent être octroyées aux utilisateurs. Si les autorisations Accès total, les utilisateurs doivent également ajouter la boîte aux lettres partagée à leur profil Outlook pour y accéder.  <br/> |Accessible par les membres de votre organisation  <br/> |
+|**Calendrier partagé ?** <br/> |Oui  <br/> |Non  <br/> |Oui  <br/> |Oui  <br/> |
+|**Les messages électroniques arrivent-ils dans la boîte de réception personnelle de l'utilisateur ?** <br/> |Non. Les utilisateurs peuvent s'abonner à un groupe, puis transférer tous les messages du groupe vers leur boîte de réception.  <br/> |Oui. Les messages électroniques arrivent dans la boîte de réception des membres du groupe de distribution.  <br/> |Non. Les messages électroniques arrivent dans la boîte de réception de la boîte aux lettres partagée.  <br/> |Non. Les messages électroniques arrivent dans le dossier public.  <br/> |
+|**Clients pris en charge** <br/> | Outlook 2016  <br/>  Outlook 2013 (transfert après abonnement)  <br/>  Outlook Web App  <br/>  Outlook 2010 (transfert après abonnement)  <br/>  Outlook 2007 (transfert après abonnement)  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> |
+
+  
+## <a name="related-articles"></a>Articles connexes
+
+[Gérer des groupes de distribution](https://technet.microsoft.com/library/bb124513%28v=exchg.150%29.aspx)
+    
+[Utiliser les groupes Office 365 au lieu des boîtes aux lettres de site](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx)
+    
+[Créer des boîtes aux lettres partagées dans Office 365](create-a-shared-mailbox.md)
+    
+[Dossiers publics dans Office 365 et Exchange Online](https://technet.microsoft.com/library/jj200758%28v=exchg.150%29.aspx)
+    
+

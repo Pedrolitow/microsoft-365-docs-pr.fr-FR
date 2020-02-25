@@ -1,5 +1,5 @@
 ---
-title: Approuver ou rejeter des actions en attente suite à une enquête automatisée
+title: Approuver ou rejeter les actions en attente à la suite d’une enquête automatisée
 description: Utiliser le centre d’actions pour gérer les actions liées à une enquête et une réponse automatisées
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5118f7fddaee0fa768675597dee862eb75e4ed96
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225492"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261981"
 ---
-# <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>Approuver ou rejeter des actions en attente provenant d’une enquête automatisée
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approuver ou rejeter les actions en attente à la suite d’une enquête automatisée
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -35,9 +35,7 @@ Lorsqu’une enquête automatisée s’exécute, elle peut engendrer une ou plus
 > [!TIP]
 > Si vous pensez qu’un message a été manqué ou incorrectement détecté par les fonctionnalités d’analyse et de réponse automatiques dans Microsoft Threat Protection, faites-le nous savoir. Découvrez [Comment signaler des faux positifs/négatifs dans les capacités d’inspection et de réponse automatiques de Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
-Les actions en attente peuvent être examinées et approuvées à l’aide de l’une des méthodes suivantes :
-- [Utiliser le Centre de notifications](#review-a-pending-action-in-the-action-center)
-- [Utiliser la vue Détails de l’enquête](#review-a-pending-action-in-the-investigation-details-view)
+Les actions en attente peuvent être révisées et approuvées à l’aide du [Centre de maintenance](#review-a-pending-action-in-the-action-center) ou de l' [Affichage détails](#review-a-pending-action-in-the-investigation-details-view)de l’enquête.
 
 > [!NOTE]
 > Vous devez disposer des [autorisations appropriées](mtp-action-center.md#required-permissions-for-action-center-tasks) pour approuver ou rejeter les actions de correction.
@@ -65,5 +63,7 @@ Les actions en attente peuvent être examinées et approuvées à l’aide de l�
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur le centre de notifications](mtp-action-center.md).
+
 - [En savoir plus sur les incidents](incidents-overview.md)
+
 - [En savoir plus sur le repérage](advanced-hunting-overview.md)

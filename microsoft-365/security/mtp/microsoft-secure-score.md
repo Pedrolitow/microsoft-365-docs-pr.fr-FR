@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6a0caa80d89ad40c3a2e2b0caa55c8dc2027a06d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8bcfd7229a6e27b2e68523754c2b29c1bb9c3cdc
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087262"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266100"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -38,7 +38,7 @@ Les organisations ont accès à des visualisations robustes de mesures et tendan
 
 En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). En savoir plus sur le [type de ressource de score sécurisé](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage des rapports) ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs.
 
@@ -138,79 +138,13 @@ Microsoft Secure score est un résumé numérique de votre position de sécurit�
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications.
 
+Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md)
+
 ### <a name="removed-not-scored-improvement-actions"></a>Suppression des actions d’amélioration « non notées »
 
 L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Le score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Les actions d’amélioration ne sont pas évaluées.  
 
 Pour ces raisons, toutes les actions d’amélioration qui n’ont pas été évaluées ont été supprimées. Aucune action n’est nécessaire de votre part.
-
-## <a name="whats-coming"></a>Qu’est-ce qui arrive ?
-
-Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité et améliore la convivialité, nous apportons des modifications dans le futur proche. Votre score et le score maximal possible seront modifiés. Toutefois, cela n’implique pas de modification de votre position de sécurité.
-
-### <a name="removing-improvement-actions-from-intune"></a>Suppression des actions d’amélioration d’Intune
-
-Après une évaluation des actions de Microsoft Secure scores improved fournies par Intune, il a été décidé de ne pas fournir une représentation utile de la position de sécurité des appareils dans les organisations. Au lieu de se concentrer sur les stratégies, nous nous efforcerons de mettre en place des contrôles de sécurité qui évaluent directement l’état de configuration des appareils.
-
-Les actions d’amélioration d’Intune suivantes seront supprimées :
-
-- Activer la gestion des appareils mobiles Microsoft Intune
-- Créer une stratégie de conformité Microsoft Intune pour Android
-- Créer une stratégie de conformité Microsoft Intune pour Android pour le travail
-- Créer une stratégie de protection des applications Microsoft Intune pour Android
-- Créer une stratégie de protection des applications Microsoft Intune pour iOS
-- Marquer les appareils sans aucune stratégie de conformité Microsoft Intune attribuée comme non conforme
-- Créer une stratégie de conformité Microsoft Intune pour iOS
-- Créer une stratégie de conformité Microsoft Intune pour macOS
-- Créer une stratégie de conformité Microsoft Intune pour Windows
-- Créer un profil de configuration Microsoft Intune pour Android
-- Créer un profil de configuration Microsoft Intune pour Android pour le travail
-- Créer un profil de configuration Microsoft Intune pour macOS
-- Créer un profil de configuration Microsoft Intune pour iOS
-- Créer un profil de configuration Microsoft Intune pour Windows
-- Activer la détection jailbreak améliorée dans Microsoft Intune
-- Exiger l’application des correctifs sur tous les appareils, les antivirus et les pare-feu activés
-- Activer l’intégration de Windows Defender ATP dans Microsoft Intune
-- Créer une stratégie de protection des informations Windows Microsoft Intune
-- Exiger que tous les appareils disposent de configurations de sécurité avancées
-- Vérifier toutes les semaines les périphériques bloqués
-
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable
-
-Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons les actions d’amélioration suivantes.
-
-- Activer l’enregistrement des données d’audit
-- Découverte des applications informatiques de clichés instantanés risquées et non conformes
-- Passer en revue les autorisations & bloquer les applications OAuth à risque connectées à votre environnement
-- Configurer le contrôle de version sur les bibliothèques de documents SharePoint Online
-- Stocker des documents utilisateur dans OneDrive entreprise
-- Ne pas autoriser la délégation de boîte aux lettres
-- Autoriser les liens de partage d’invités anonymes pour les sites et les documents
-- Configurer des stratégies de pièces jointes approuvées ATP Office 365
-- Configurer les liens fiables Office 365 pour vérifier les URL
-
-### <a name="mfa-improvement-action-updates"></a>Mises à jour de l’action d’amélioration MFA
-
-Pour refléter la nécessité pour les entreprises de garantir la sécurité maximale lors de l’application des stratégies qui fonctionnent avec leur entreprise, le score de sécurité Microsoft supprime trois actions d’amélioration axées sur l’authentification multifacteur et en ajoutant deux.
-
-Les trois qui seront supprimés :
-
-- Inscrire tous les utilisateurs pour l’authentification multifacteur
-- Exiger l’authentification multifacteur pour tous les utilisateurs
-- Exiger l’authentification multifacteur pour les rôles privilège Azure AD
-
-Nouvelles actions d’amélioration ajoutées :
-
-- S’assurer que tous les utilisateurs peuvent effectuer l’authentification multifacteur pour un accès sécurisé
-- Exiger MFA pour les rôles d’administration
-
- Ces nouvelles actions d’amélioration requièrent l’enregistrement de vos utilisateurs ou administrateurs pour l’authentification multifacteur (MFA) dans votre répertoire et l’établissement de l’ensemble approprié de stratégies répondant à vos besoins organisationnels. L’objectif principal est de la flexibilité tout en s’assurant que tous vos utilisateurs et administrateurs peuvent s’authentifier avec plusieurs facteurs ou des invites de vérification d’identité basées sur les risques. Cela peut prendre la forme de paramètres de sécurité par défaut qui permettent à Microsoft de déterminer quand il faut défier les utilisateurs à l’authentification multifacteur, ou si plusieurs stratégies appliquent des décisions délimitées.
-
-### <a name="removing-review-improvement-actions"></a>Suppression des actions d’amélioration « révision »
-
-L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Un score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Examiner les actions d’amélioration ne sont pas mesurées de la même façon que les autres actions d’amélioration.  
-
-Pour ces raisons, toutes les actions d’amélioration nécessitant une cadence de révision seront temporairement supprimées. Aucune action n’est nécessaire de votre part. 
 
 ### <a name="preview-features"></a>Fonctionnalités de préversion
 

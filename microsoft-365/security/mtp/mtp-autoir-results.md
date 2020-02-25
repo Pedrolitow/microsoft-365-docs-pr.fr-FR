@@ -1,5 +1,5 @@
 ---
-title: Consulter les détails et les résultats d'un examen automatisé
+title: Détails et résultats d’une enquête automatisée
 description: Pendant et après un examen automatisé, vous pouvez afficher les résultats et les principales conclusions
 keywords: automatisé, examen, résultats, analyse, détails, correction, autoair
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 062dd86de49eb3dfe47566aa8d7269780cf9995c
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 6b3bc068e5da99e02a64463891e32d137c448d64
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175717"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261061"
 ---
-# <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
+# <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -80,24 +80,9 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 |Journal    |Fournit une vue détaillée de toutes les étapes effectuées pendant l’examen, ainsi que de l’État.|
 |Actions en attente    |Répertorie les éléments qui nécessitent une approbation pour continuer.|
 
-## <a name="remediation-actions-following-automated-investigation"></a>Correction des actions en attente suite à un examen automatisé
-
-Lorsqu’un examen automatisé se termine, un verdict est atteint pour chaque élément de preuve impliqué et des actions de correction sont identifiées. Dans certains cas, des actions de correction sont effectuées automatiquement. dans d’autres cas, les actions de correction attendent une approbation. Le tableau suivant répertorie les verdicts et résultats possibles :
-
-|Verdict    |Domaine   |Résultats|
-|------|------|------|
-|Malveillant  |Appareils (points de terminaison)    |Les actions d'assainissement prennent automatiquement effet|
-|Malveillant  |Contenu de l’e-mail (URL ou pièces jointes) | Les actions de correction recommandées sont en attente d’approbation|
-|Suspect |Appareils ou contenu de l’e-mail |Les actions de correction recommandées sont en attente d’approbation|
-|Nettoyer  |Appareils ou contenu de l’e-mail   |Aucune action de correction n’est nécessaire|
-
-[Examiner une action en attente dans le centre de notifications](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
-
-> [!TIP]
-> Si vous pensez qu’un message a été manqué ou incorrectement détecté par les fonctionnalités d’analyse et de réponse automatiques dans Microsoft Threat Protection, faites-le nous savoir. Découvrez [Comment signaler des faux positifs/négatifs dans les capacités d’inspection et de réponse automatiques de Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
-
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Obtenir une vue d’ensemble des autorisations du centre de notifications](mtp-action-center.md#required-permissions-for-action-center-tasks)
+
 - [Approuver ou refuser les actions liées à un examen et réponse automatisées](mtp-autoir-actions.md)
 

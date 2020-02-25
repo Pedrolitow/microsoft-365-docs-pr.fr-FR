@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 7c165ec5869f8f53c28fb28414a04d73033a5772
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ef68143d185b6b716b8b5c8213b1e4f3ea1a5abd
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087604"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235073"
 ---
 # <a name="microsoft-threat-protection"></a>Protection Microsoft contre les menaces
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 La protection de Microsoft contre les menaces est une suite de défense d’entreprise pré-et post-violation unifiée qui s’intègre de manière native sur les points de terminaison, les identités, les messages électroniques et les applications pour détecter, prévenir, examiner et répondre automatiquement aux attaques sophistiquées.  
 
