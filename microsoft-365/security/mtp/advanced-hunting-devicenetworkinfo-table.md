@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 25349328cd128113de7846cba5c7c9ad74631092
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ce392ee074327114b0794edfeef9eb83091447d6
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600411"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234993"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Le `DeviceNetworkInfo` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur la configuration réseau des ordinateurs, y compris les cartes réseau, les adresses IP et Mac, ainsi que les réseaux ou domaines connectés. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 

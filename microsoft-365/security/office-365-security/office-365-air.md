@@ -1,5 +1,5 @@
 ---
-title: Analyse et réponse automatisées d’Office 365
+title: Recherche et réponse automatiques dans Office 365
 keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menaces, avancé, menace, protection
 f1.keywords:
 - NOCSH
@@ -15,16 +15,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 7bfa07880a302f77769ee15e9108db21dac2519c
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228566"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262011"
 ---
-# <a name="office-365-automated-investigation-and-response"></a>Analyse et réponse automatisées d’Office 365
+# <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
 [Office 365 protection avancée contre les menaces](office-365-atp.md) Le plan 2 inclut des fonctionnalités d’analyse et de réponse automatisées puissantes qui permettent d’économiser le temps et les efforts de votre équipe en matière de sécurité. Lorsque certaines alertes sont déclenchées, un ou plusieurs règles de sécurité se déclenchent et le processus d’enquête automatisé commence. Cela permet à votre équipe des opérations de sécurité de se concentrer sur les tâches à haute priorité sans perdre en visibilité les alertes déclenchées. 
+
+## <a name="the-overall-flow-of-air"></a>Flux d’AIR global
 
 À un niveau élevé, le flux d’AIR fonctionne comme ceci :
 

@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2a3a635b7fd189d380b4323fcf2dc09447e12efe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7f5912306700efa0db704fe8d0c0db006105fda6
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087943"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234763"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 La table `EmailUrlInfo` dans le schéma de [repérage avancé](advanced-hunting-overview.md) contient des informations sur les URL et les pièces jointes des e-mails traités par Office 365 - Protection avancée contre les menaces. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 

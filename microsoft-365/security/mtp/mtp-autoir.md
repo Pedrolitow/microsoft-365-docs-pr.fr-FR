@@ -1,5 +1,5 @@
 ---
-title: Examen et réponses automatisés dans Protection Microsoft contre les menaces
+title: Fonctionnalités d’analyse et de réponse automatisées dans Microsoft Threat Protection
 description: Obtenez une vue d’ensemble des fonctionnalités d’examen et réponses automatisés dans Protection Microsoft contre les menaces
 keywords: automatisation, examen, alerte, déclencheur, action, correction
 search.appverid: met150
@@ -18,23 +18,21 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: da7216aa94455a4b431e540b976f8a1662378a58
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f54ec3c0b318acaf6c81d26f32cfde5e87585a13
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600071"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261991"
 ---
-# <a name="automated-investigation-and-response-air-in-microsoft-threat-protection"></a>Examen et réponses automatisés (AIR) dans Protection Microsoft contre les menaces
+# <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>Fonctionnalités d’analyse et de réponse automatisées dans Microsoft Threat Protection
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+Lorsque des alertes de sécurité sont déclenchées, il incombe à l’équipe en charge des opérations de sécurité d’examiner ces alertes et de prendre des mesures nécessaires pour protéger votre organisation. La hiérarchisation et l’examen des alertes peuvent prendre beaucoup de temps, en particulier lorsque de nouvelles alertes continuent d’arriver pendant qu’un examen est en cours. Les équipes en charge des opérations de sécurité peuvent être submergées par le volume des menaces qu’elles doivent gérer. Les fonctionnalités d’analyse et de réponse automatisées de Microsoft Threat Protection peuvent vous aider. AIR est comme un analyste virtuel dans votre centre d’opérations sur la sécurité.
 
 ## <a name="your-virtual-analyst"></a>Votre analyste virtuel
-
-Lorsque des alertes de sécurité sont déclenchées, il incombe à l’équipe en charge des opérations de sécurité d’examiner ces alertes et de prendre des mesures nécessaires pour protéger votre organisation. La hiérarchisation et l’examen des alertes peuvent prendre beaucoup de temps, en particulier lorsque de nouvelles alertes continuent d’arriver pendant qu’un examen est en cours. Les équipes en charge des opérations de sécurité peuvent être submergées par le volume des menaces qu’elles doivent gérer. 
 
 Imaginez un analyste virtuel au sein de votre équipe de sécurité de niveau 1/2. L’analyste virtuel est fidèle aux étapes recommandées par les opérations de sécurité pour examiner et corriger les menaces. L’assistant virtuel peut fonctionner 24h/24, 7j/7, avec une capacité illimitée et une charge considérable d’examens et de correction des menaces. Un assistant virtuel pourrait considérablement réduire le temps de réponse, libérant ainsi l’équipe en charge des opérations de sécurité pour d’autres projets stratégiques importants. Si ce scénario ressemble à de la science-fiction, ce n’est pas le cas ! Cette analyste virtuel fait partie de votre suite Protection Microsoft contre les menaces, et son nom est *Examen et réponse automatisés* (AIR).
 
@@ -73,6 +71,7 @@ Pendant l’exécution d’un examen, les autres alertes associées qui apparais
 |Conditions d’abonnement |- Microsoft 365 E5 ou Microsoft 365 E3 conjointement avec identité et protection contre les menaces<br/>- Veuillez consulter [Plans Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans)|
 |Configuration réseau requise |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) activé<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) configuré<br/>- [MCAS intégré à Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
 |Configuration requise pour ordinateur Windows |-Windows 10, version 1709 ou version ultérieure (Consulter [Informations sur la publication de Windows 10](https://docs.microsoft.com/windows/release-information/))<br/>- [Microsoft Defender - Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) configuré <br/>- [Antivirus Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) configuré |
+|Protection du contenu de messagerie et des fichiers Office |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) configurée |
 |Autorisations |-Pour *configurer* AIR, vous devez disposer du rôle **Administrateur général** ou **Administrateur de Sécurité** affecté dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)).<br/><br/>- Pour *utiliser* le fonctionnalités de l’AIR, veuillez consulter [Autorisations requises pour les tâches du centre de notifications](mtp-action-center.md#required-permissions-for-action-center-tasks). |
 
 ## <a name="next-steps"></a>Étapes suivantes
