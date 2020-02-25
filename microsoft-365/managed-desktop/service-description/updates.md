@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 63e07ffd58a7add7f7f72aad20b6389cd22d2ca7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602751"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250474"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Gestion des mises à jour dans le bureau géré Microsoft
 
@@ -23,7 +23,7 @@ ms.locfileid: "41602751"
 
 <!--Update management -->
 
-Microsoft Managed Desktop connecte tous les périphériques à une infrastructure moderne basée sur le Cloud. La mise à jour des applications Windows, Office, des pilotes, du microprogramme et de Microsoft Store pour entreprises est un équilibre entre vitesse et stabilité. Les groupes de déploiement seront utilisés pour s’assurer que les mises à jour du système d’exploitation et les stratégies sont déployées de manière sécurisée. 
+Microsoft Managed Desktop connecte tous les périphériques à une infrastructure moderne basée sur le Cloud. La mise à jour des applications Windows, Office, des pilotes, du microprogramme et de Microsoft Store pour entreprises est un équilibre entre vitesse et stabilité. Les groupes de déploiement seront utilisés pour s’assurer que les mises à jour du système d’exploitation et les stratégies sont déployées de manière sécurisée. Pour plus d’informations à ce sujet, consultez la vidéo [Microsoft Managed Desktop change and Release process](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
 
 Les mises à jour publiées par Microsoft sont cumulatives et classées en tant que mises à jour de qualité ou de fonctionnalité.
 Pour plus d’informations, reportez-vous à la rubrique [Windows Update for Business : Update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
@@ -61,7 +61,7 @@ Fonctionnement du déploiement des mises à jour :
 <tr><td>Mises à jour de fonctionnalité pour le système d’exploitation</td><td>0 jour</td><td>30 jours</td><td>60 jours</td><td>90 jours</td></tr>
 <tr><td>Pilotes/microprogramme</td><td colspan="4">Suit la planification des mises à jour de la qualité</td></tr>
 <tr><td>Définition de la protection antivirus</td><td colspan="4">Mise à jour avec chaque analyse</td></tr>
-<tr><td>Office 365 ProPlus</td><td colspan="4">Suit le canal mensuel d’Office
+<tr><td>Office 365 ProPlus</td><td colspan="4">Suit le canal mensuel d’Office
 </table>
 
 Pour plus d’informations sur le canal mensuel pour Office 365 ProPlus, consultez la rubrique [vue d’ensemble des canaux de mise à jour pour office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).

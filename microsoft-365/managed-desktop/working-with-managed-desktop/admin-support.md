@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085707"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266090"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Prise en charge des administrateurs pour le bureau géré Microsoft
 
@@ -59,12 +59,7 @@ Une fois qu’un ticket est dans l’état **atténué** ou **résolu** , vous p
 
 ![Formulaire de commentaires](../../media/feedback_form.png)
 
-## <a name="provide-administrator-rights-to-specific-users"></a>Fournir des droits d’administrateur à des utilisateurs spécifiques
 
-Lors de l’utilisation du personnel du support technique, il se peut que vous deviez fournir des droits d’administrateur local à un utilisateur sur un appareil pour faciliter la résolution des problèmes. Pour ce faire, vous devez disposer des droits d’administrateur général ou d’administrateur de périphérique dans Microsoft Intune pour votre propre compte. Suivez l’une des étapes ci-dessous, en fonction de votre situation :
-
-- Si vos utilisateurs sont synchronisés à partir d’un compte Active Directory local, exécutez **net localgroup Administrators/Add « Contoso\username »** à partir d’une invite de commandes avec élévation de privilèges.
-- Si vos utilisateurs sont créés dans Azure Active Directory, exécutez **net localgroup Administrators/Add « AzureAD\UserUpn »** à partir d’une invite de commandes avec élévation de privilèges.
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Prise en charge de l’utilisateur final pour le bureau géré Microsoft](end-user-support.md). 
