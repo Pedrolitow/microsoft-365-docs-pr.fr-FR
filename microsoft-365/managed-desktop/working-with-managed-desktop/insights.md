@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085687"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250424"
 ---
 # <a name="work-with-insights"></a>Utiliser les informations
 
@@ -23,6 +23,10 @@ Ces tableaux de bord vous permettent de trouver les réponses aux questions suiv
 - Quelles sont les applications les plus utilisées et à quel moment ?
 - Quelles applications provoquent des problèmes en bloquant ou en raccrochant un lot ?
 - Comment Microsoft Managed Desktop Operations atténue-t-il ou résout ces problèmes ?
+- Quelles applications consomment le plus d’énergie ?
+- Quelle est la durée de vie de la batterie prévisible mes appareils ?
+- Quel est l’état actuel des mises à jour de sécurité sur les appareils ?
+- Combien de temps faut-il pour 95% des appareils pour obtenir la dernière mise à jour de sécurité ?
 
 Pour accéder à ces affichages à partir du centre d’administration Microsoft 365, sélectionnez **afficher les détails** dans la zone **rapports** :
 
@@ -46,3 +50,9 @@ En savoir plus sur les informations de [fiabilité](reliability-insights.md).
 Cette vue présente des informations sur la consommation d’énergie des applications et la durée de vie de la batterie pour les périphériques de votre environnement. Pour afficher ces informations, sélectionnez l’onglet **batterie** .
 
 En savoir plus sur les informations sur les [batteries](battery-insights.md).
+
+## <a name="windows-security-update-insights"></a>Informations sur les mises à jour de sécurité Windows
+
+Cet affichage vous montre des informations sur l’état des mises à jour de sécurité pour vos appareils de bureau gérés par Microsoft. Pour afficher ces informations, sélectionnez l’onglet **Windows Security udates** .
+
+En savoir plus sur les informations sur les [mises à jour de sécurité](security-update-insights.md).

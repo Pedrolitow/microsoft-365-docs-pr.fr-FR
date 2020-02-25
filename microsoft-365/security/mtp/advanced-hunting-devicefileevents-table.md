@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 035efb5b2404708010f5fbfd4c419d59df088393
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07569b93244bd420fe5961e20e6951ea84ae47d7
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600471"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235033"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Le `DeviceFileEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur la création de fichiers, la modification et d’autres événements de système de fichiers. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
