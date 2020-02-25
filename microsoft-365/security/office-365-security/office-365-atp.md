@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 02/24/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: 9d7b2561c40e1322b7f15e72c48755268c119f24
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 712fdf6935fa69bfb2079858d6384eee270776e6
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106837"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261031"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 – Protection avancée contre les menaces
 
@@ -39,7 +39,7 @@ Office 365 – Protection avancée contre les menaces (ATP) protège votre orga
 
 - **[Fonctionnalités de recherche et de réponse aux menaces](#use-threat-investigation-and-response-capabilities)**  : utilisez des outils de pointe pour étudier, comprendre, simuler et prévenir les menaces.
 
-- **[Fonctionnalités automatisées d’enquête et de réponse](#save-time-with-automated-investigation-and-response)**  : économisez du temps et des efforts pour investiguer et atténuer les menaces.
+- **[Fonctionnalités automatisées d’enquête et de réponse](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**  : économisez du temps et des efforts pour investiguer et atténuer les menaces.
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 – Protection avancée contre les menaces Plan 1 et Plan 2
 
@@ -47,7 +47,7 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 
 |Office 365 – Protection avancée contre les menaces (Plan 1) |Office 365 – Protection avancée contre les menaces (Plan 2)|
 |---------|---------|
-|Fonctionnalités de configuration, de protection et de détection :<br/>- [Pièces jointes fiables](atp-safe-attachments.md)<br/>- [Liens fiables](atp-safe-links.md)<br/>- [ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Protection avancée contre le hameçonnage](atp-anti-phishing.md)<br/>- [Détections en temps réel](threat-explorer.md)     |Fonctionnalités de l’offre Office 365 - Protection avancée contre les menaces (plan 1)<br/>--- plus ---<br/>Fonctionnalités d’automatisation, d’examen, de correction et de formation :<br/>- [Suivis de menace](threat-trackers.md)<br/>- [Explorateur de menaces](threat-explorer.md)<br/>- [Enquêtes et réponses automatisées](automated-investigation-response-office.md)<br/>- [Simulateur d’attaques](attack-simulator.md)|
+|Fonctionnalités de configuration, de protection et de détection :<br/>- [Pièces jointes fiables](atp-safe-attachments.md)<br/>- [Liens fiables](atp-safe-links.md)<br/>- [ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Protection avancée contre le hameçonnage](atp-anti-phishing.md)<br/>- [Détections en temps réel](threat-explorer.md)     |Fonctionnalités de l’offre Office 365 - Protection avancée contre les menaces (plan 1)<br/>--- plus ---<br/>Fonctionnalités d’automatisation, d’examen, de correction et de formation :<br/>- [Suivis de menace](threat-trackers.md)<br/>- [Explorateur de menaces](threat-explorer.md)<br/>- [Enquêtes et réponses automatisées](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [Simulateur d’attaques](attack-simulator.md)|
 
 - Office 365 – Protection avancée contre les menaces (Plan 2) est inclus dans Office 365 E5, Office 365 a5 et Microsoft 365 E5.
 
@@ -56,9 +56,6 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 - Le plan 1 Office 365 ATP et le Plan 2 Office 365 ATP sont, pour certains abonnements, disponibles sous forme de complément. Pour plus d’informations, consulter [Disponibilité des fonctionnalités pour les différents plans ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 - Si votre abonnement actuel n’inclut pas Office 365 ATP, [contactez le service ventes pour démarrer une version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkId=518644) et consultez l’ATP peut fonctionner pour votre organisation.
-
-> [!TIP]
-> Avez-vous Microsoft 365 E5 ou Microsoft 365 E3 conjointement avec identité et protection contre les menaces ? Nous recommandons d’utiliser [Protection Microsoft contre les menaces](../mtp/microsoft-threat-protection.md).
 
 ## <a name="configure-atp-policies"></a>Configurez des stratégies ATP
 
@@ -105,7 +102,7 @@ Office 365 – Protection avancée contre les menaces Plan 2 inclut des [outil
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Gagner du temps avec l’examen et la réponse automatisé
 
-(**NOUVEAU !**) Lorsque vous effectuez des recherches sur une attaque potentielle de sécurité sur Internet, le temps est essentiel. Plus vous pourrez identifier et atténuer les menaces rapidement, mieux votre organisation se portera. [Examen et réponse automatique aux incidents](automated-investigation-response-office.md) (AIR) inclut un ensemble de règles de sécurité qui peuvent être lancées automatiquement, par exemple lorsqu’une alerte est déclenchée, ou manuellement, par exemple à partir d’un affichage dans Explorer. Réponse automatique aux incidents permet à votre équipe spécialisée dans les opérations de sécurité d’économiser du temps et des efforts pour réduire efficacement les menaces. Pour en savoir plus, voir [Air dans Office 365](automated-investigation-response-office.md).
+(**NOUVEAU !**) Lorsque vous effectuez des recherches sur une attaque potentielle de sécurité sur Internet, le temps est essentiel. Plus vous pourrez identifier et atténuer les menaces rapidement, mieux votre organisation se portera. [Examen et réponse automatique aux incidents](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) inclut un ensemble de règles de sécurité qui peuvent être lancées automatiquement, par exemple lorsqu’une alerte est déclenchée, ou manuellement, par exemple à partir d’un affichage dans Explorer. Réponse automatique aux incidents permet à votre équipe spécialisée dans les opérations de sécurité d’économiser du temps et des efforts pour réduire efficacement les menaces. Pour en savoir plus, voir [Air dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).
 
 ## <a name="permissions-required-to-use-atp-features"></a>Autorisations requises pour utiliser les fonctionnalités ATP
 
