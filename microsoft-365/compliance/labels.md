@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de rétention pour classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: 0675601a888d19e6faaeb75169691909b071b92d
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 5dcd97400067645c48f02a31061721644bae553c
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179205"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42277441"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -324,7 +324,7 @@ Pour appliquer automatiquement une étiquette à l’aide de cette option, les s
 
 Pour plus d’informations sur les classifieurs entraînables, voir [Prise en main des classifieurs entrainable (version d'évaluation)](classifier-getting-started-with.md).
 
-Pour consulter un exemple de configuration, consultez [Comment préparer un classifieur prêt à l'emploi](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
+Pour consulter un exemple de configuration, voir [Comment préparer et utiliser un classifieur prêt à l'emploi](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier).
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint
 
