@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 9ecc74610c0d150dd511a8e24fb66037768587a4
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106878"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280202"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -275,7 +275,7 @@ Nous cherchons constamment à optimiser les fonctionnalités de rétention dans 
    > [!NOTE]
    > Auparavant, une stratégie de rétention ne pouvait pas supprimer du contenu de Teams qui avait moins de 30 jours, mais nous avons supprimé cette limitation. Vous pouvez désormais choisir le nombre de jours de la période de rétention du contenu de Teams, et ce peut être seulement un jour. Si vous avez une période de rétention d’un jour, il faudra jusqu’à trois jours après l’expiration de la période de rétention avant la suppression définitive des messages.
     
-Dans une équipe, les fichiers qui sont partagés au cours d’une conversation sont stockés dans le compte OneDrive de l’utilisateur qui partage le fichier. Les fichiers qui sont chargés dans des canaux sont stockés dans le site SharePoint associé à l’équipe. Par conséquent, pour conserver ou supprimer des fichiers dans une équipe, vous devez créer une stratégie de rétention qui s’applique spécifiquement aux emplacements SharePoint et OneDrive. Pour appliquer une stratégie aux fichiers d’une équipe spécifique, vous pouvez choisir le site SharePoint de l’équipe et les comptes OneDrive des utilisateurs qui font partie de l’équipe.
+Dans Teams, les fichiers partagés dans une conversation sont stockés sur le compte OneDrive de l'utilisateur qui a partagé le fichier. Les fichiers téléchargés dans les canaux sont stockés sur le site SharePoint associé à l’équipe. Par conséquent, pour conserver ou supprimer des fichiers dans Teams, vous devez créer une stratégie de rétention qui s’applique aux emplacements OneDrive et Groupe Office 365. Si vous voulez appliquer une stratégie aux fichiers partagés dans Teams par un utilisateur ou une équipe spécifique, vous pouvez choisir les emplacements OneDrive ou Groupe Office 365 et inclure l’utilisateur ou l’équipe spécifique.
   
 Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verrouillage de conservation](#locking-a-retention-policy).
   
@@ -402,7 +402,7 @@ Si vous utilisiez une stratégie de conservation, celle-ci a été automatiqueme
 
 Les membres de votre équipe de conformité appelés à créer des stratégies de rétention ont besoin d’autorisations pour accéder au [Centre de sécurité &amp;et de conformité](https://protection.office.com/). Par défaut, votre administrateur locataire a accès à cet emplacement et peut accorder aux responsables de la mise en conformité et à d’autres personnes l’accès au [Centre de sécurité&amp; et de conformité](https://protection.office.com/), sans leur donner toutes les autorisations d’un administrateur locataire. Pour ce faire, nous vous recommandons d’accéder à la page **Autorisations** du [Centre de sécurité&amp; et de conformité](https://protection.office.com/), de modifier le groupe de rôles **Administrateur de conformité** et d’ajouter des membres à ce groupe de rôles. 
   
-Pour plus d’informations, voir [Autoriser des utilisateurs à accéder au Centre de sécurité et conformité Office 365](/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
+Pour plus d’informations, voir [Autoriser des utilisateurs à accéder au Centre de sécurité et conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 Ces autorisations sont requises uniquement pour créer et appliquer une stratégie de rétention. L’application d’une stratégie ne nécessite pas d’accès au contenu.
   
