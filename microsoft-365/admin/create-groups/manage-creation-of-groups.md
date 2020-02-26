@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Découvrez comment contrôler quels utilisateurs peuvent créer des groupes Office 365.
-ms.openlocfilehash: 1f0d3109d1102c740a9be0b670e618eac982e6e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a211cb3b69348a4d4a401a3c318fe019d8fd257f
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239209"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42277191"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Gérer les personnes autorisées à créer des groupes Office 365
 
@@ -120,14 +120,20 @@ Pour obtenir les meilleurs résultats, nous vous recommandons de  *toujours*  ê
 2. Cliquez avec le bouton droit sur **Windows PowerShell**, puis sélectionnez **Exécuter en tant qu'administrateur**.
     
     ![Ouvrez PowerShell avec « Exécuter en tant qu'administrateur ».](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
+    
+3. Définissez la stratégie sur RemoteSigned à l’aide de [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy).
+    
+    ```
+    Set-ExecutionPolicy RemoteSigned
+    ```
   
-2. Vérifiez le module installé :
+4. Vérifiez le module installé :
     
     ```
     Get-InstalledModule -Name "AzureAD*"
     ```
 
-3. Pour désinstaller une version précédente de AzureADPreview ou AzureAD, exécutez la commande suivante :
+5. Pour désinstaller une version précédente de AzureADPreview ou AzureAD, exécutez la commande suivante :
   
     ```
     Uninstall-Module AzureADPreview
@@ -139,7 +145,7 @@ Pour obtenir les meilleurs résultats, nous vous recommandons de  *toujours*  ê
     Uninstall-Module AzureAD
     ```
 
-4. To install the latest version of AzureADPreview, run this command:
+6. To install the latest version of AzureADPreview, run this command:
   
     ```
     Install-Module AzureADPreview

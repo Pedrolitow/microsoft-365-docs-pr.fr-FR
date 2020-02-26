@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs Office 365 satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: 4351658f2637b86c9b3233f55916d8e0ac0f8cfb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
+ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252892"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42278760"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
@@ -82,9 +82,9 @@ Si vous ne souhaitez pas utiliser le rapport d’activation, vous pouvez demande
 Pour obtenir de l'aide concernant Office 365 ProPlus, voir [Conseils de dépannage pour Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
 
-### <a name="exchange-requirements"></a>Configuration requise pour Exchange
+### <a name="exchange-online-requirements"></a>Configuration requise pour Exchange Online
 
-Microsoft Exchange stocke les manifestes de complément au sein du client de votre organisation. L'administrateur qui déploie les compléments et les utilisateurs qui les reçoivent doivent utiliser une version d'Exchange Server prenant en charge l'authentification OAuth. Par défaut, les déploiements mutualisés et VNext dédiés d'Exchange prennent en charge l'authentification OAuth. Il est possible de configurer les déploiements locaux hérités dédiés et hybrides d'Exchange pour la prise en charge de l'authentification OAuth. Toutefois, il ne s'agit pas de la configuration par défaut.
+Microsoft Exchange stocke les manifestes des compléments au sein du client de votre organisation. L’administrateur déployant des compléments et les utilisateurs qui les reçoivent doivent se trouver sur une version d’Exchange Online qui prend en charge l’authentification OAuth. Par défaut, les déploiements VNext dédiés et multi-clients Exchange prennent en charge OAuth. 
   
 Pour connaître la configuration utilisée, consultez l'administrateur Exchange de votre organisation. Vous pouvez vérifier la connectivité OAuth de chaque utilisateur à l'aide de l'applet de commande PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
 
