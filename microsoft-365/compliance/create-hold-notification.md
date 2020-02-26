@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 3b047e9c3a56a6c03368c79c2c5a4622b396b6b0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilisez l’onglet communications dans un cas avancé de découverte électronique pour gérer le flux de travail de notification des dépositaires.
+ms.openlocfilehash: b4d3c4c3ed132914ebe46b03eb65d24e073ee687
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077546"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280232"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notice de suspension légale
 
@@ -33,19 +33,19 @@ L’article décrit les étapes du flux de travail de notification de blocage.
 
 ## <a name="step-1-specify-communication-details"></a>Étape 1 : spécifier les détails de communication
 
-La première étape consiste à spécifier les détails appropriés pour les notifications de suspension légale ou autres communications de dépositaire. 
+La première étape consiste à spécifier les détails appropriés pour les notifications de suspension légale ou autres communications de dépositaire.
 
 ![Page communication de nom](../media/NameCommunication.PNG)
 
 1. Dans le centre de sécurité & conformité, accédez à **ediscovery > Advanced eDiscovery** pour afficher la liste des incidents de votre organisation.
-   
-2. Cliquez sur l’onglet **communications** , puis sur **nouvelle communication**.
-   
+
+2. Sélectionnez un cas, cliquez sur l’onglet **communications** , puis cliquez sur **nouvelle communication**.
+
 3. Sur la page **communication de nom** , spécifiez les détails de communication (obligatoires) suivants.
 
     - **Name**: il s’agit du nom de la communication.
-    
-    - **Officier émetteur**: la liste déroulante affiche la liste des membres d’un cas. Chaque notification envoyée aux dépositaires est envoyée au nom de l’officier émetteur spécifié.
+
+    - **Officier émetteur**: la liste déroulante affiche une liste de membres de cas. Chaque notification envoyée aux dépositaires est envoyée au nom de l’officier émetteur spécifié.
 
 4. Cliquez sur **Suivant**.
 
@@ -79,33 +79,33 @@ Une fois la communication créée, la **notification d’émission** est initié
 Pour créer une notification d’émission :
 
 1. Dans la vignette **émission** , cliquez sur **modifier**.
-   
+
 2. Si nécessaire, ajoutez des membres de cas supplémentaires ou du personnel dans les champs **CC** et **CCI** . Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
-   
+
 3. Spécifiez l' **objet** de l’avis (obligatoire).
-   
-4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Notez que le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis d’émission. 
-   
-5. Cliquez sur **Enregistrer** 
 
-### <a name="re-issuance-notification"></a>Notification de nouvelle émission 
+4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis d’émission. 
 
-En cas de progression, les dépositaires peuvent être tenus de conserver des données supplémentaires ou moins que celles précédemment demandées. Une fois que vous avez mis à jour le contenu de la notification d’attente, la notification de nouvelle émission alerte les dépositaires des modifications apportées à leurs obligations de conservation.
-
-Pour créer une notification de ré-émission : 
-
-1. Dans la vignette de **réémission** , cliquez sur **modifier**.
-   
-2. Si nécessaire, ajoutez des membres de cas supplémentaires ou du personnel dans les champs **CC** et **CCI** . Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
-   
-3. Spécifiez l' **objet** de l’avis (obligatoire).
-   
-4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Notez que le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de ré-émission.
-   
 5. Cliquez sur **Enregistrer**.
 
->[!Note]
->Si une notification de mise en attente est modifiée, la notification de nouvelle émission est automatiquement envoyée à tous les dépositaires affectés à l’avis. Après l’envoi de la notification, les dépositaires seront invités à relancer leur avis de mise en attente. Si vous avez configuré des flux de travail de rappel ou de remontée, ceux-ci redémarrent également. 
+### <a name="re-issuance-notification"></a>Notification de nouvelle émission
+
+En cas de progression, les dépositaires peuvent être tenus de conserver des données supplémentaires ou moins que celles précédemment demandées. Une fois que vous avez mis à jour le contenu du portail, la notification de ré-émission est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
+
+Pour créer une notification de ré-émission :
+
+1. Dans la vignette de **réémission** , cliquez sur **modifier**.
+
+2. Si nécessaire, ajoutez des membres de cas supplémentaires ou du personnel dans les champs **CC** et **CCI** . Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
+
+3. Spécifiez l' **objet** de l’avis (obligatoire).
+
+4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de ré-émission.
+
+5. Cliquez sur **Enregistrer**.
+
+> [!NOTE]
+> Si le contenu du portail est modifié (dans la page **définir le contenu du portail** de l’Assistant modifier la **communication** ), la notification de ré-émission est automatiquement envoyée à tous les dépositaires affectés à l’avis. Après l’envoi de la notification, les dépositaires seront invités à relancer leur avis de mise en attente. Si vous avez configuré des flux de travail de rappel ou de remontée, ceux-ci redémarrent également. Pour plus d’informations sur les autres événements de gestion des cas qui déclenchent des communications, consultez la rubrique [événements qui déclenchent des notifications](#events-that-trigger-notifications).
 
 ### <a name="release-notification"></a>Notification de publication
 
@@ -114,14 +114,14 @@ Une fois qu’un problème est résolu ou qu’un dépositaire n’est plus soum
 Pour créer une notification de publication : 
 
 1. Dans la vignette de **publication** , cliquez sur **modifier**.
-   
+
 2. Si nécessaire, ajoutez des membres de cas supplémentaires ou du personnel dans les champs **CC** et **CCI** . Pour ajouter plusieurs utilisateurs à ces champs, séparez les adresses de messagerie par un point-virgule.
-   
+
 3. Spécifiez l' **objet** de l’avis (obligatoire).
-   
+
 4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire).
-   
-5. Cliquez sur **Enregistrer** et passez à l’étape suivante. 
+
+5. Cliquez sur **Enregistrer** et passez à l’étape suivante.
 
 ## <a name="optional-step-4-set-the-optional-notifications"></a>Module Étape 4 : définir les notifications facultatives
 
@@ -131,47 +131,47 @@ Si vous le souhaitez, vous pouvez simplifier le flux de travail pour le suivi de
 
 ### <a name="reminders"></a>Reminders
 
-Une fois que vous avez envoyé une notification de mise en attente, vous pouvez suivre l’absence de remise des dépositaires en définissant un flux de travail de rappel. 
+Une fois que vous avez envoyé une notification de mise en attente, vous pouvez suivre le blocage des dépositaires en définissant un flux de travail de rappel.
 
 Pour planifier les rappels :
 
 1. Dans la vignette **rappel** , cliquez sur **modifier**.
-   
+
 2. Activer le flux de travail de **rappel** en activant le bouton bascule d' **État** (obligatoire).
-   
-3. Spécifier l' **intervalle de rappel (en jours)** (requis). Il s’agit du nombre de jours d’attente avant l’envoi des premières notifications de rappel de suivi. Par exemple, si vous définissez l’intervalle de rappel sur 7 jours, le premier rappel sera envoyé 7 jours après l’émission initiale de la notification de blocage. Tous les rappels suivants seront également envoyés tous les 7 jours.
-   
-4. Spécifier le **nombre de rappels** (obligatoire). Ce champ indique le nombre de rappels à envoyer aux dépositaires non réactifs. Par exemple, si vous définissez le nombre de rappels sur 3, un dépositaire recevra un maximum de 3 rappels. Lorsqu’un dépositaire accuse réception de la notification de mise en attente, les rappels ne sont plus envoyés à cet utilisateur.
-   
+
+3. Spécifier l' **intervalle de rappel (en jours)** (requis). Il s’agit du nombre de jours d’attente avant l’envoi des premières notifications de rappel de suivi. Par exemple, si vous définissez l’intervalle de rappel sur sept jours, le premier rappel est envoyé sept jours après l’émission initiale de la notification de blocage. Tous les rappels suivants seront également envoyés tous les sept jours.
+
+4. Spécifier le **nombre de rappels** (obligatoire). Ce champ indique le nombre de rappels à envoyer à des dépositaires qui ne répondent pas. Par exemple, si vous définissez le nombre de rappels sur 3, un dépositaire recevra un maximum de trois rappels. Lorsqu’un dépositaire accuse réception de la notification de mise en attente, les rappels ne sont plus envoyés à cet utilisateur.
+
 5. Spécifiez l' **objet** de l’avis (obligatoire). 
-   
-6. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Notez que le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de rappel.
-   
+
+6. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de rappel.
+
 7. Cliquez sur **Enregistrer** et passez à l’étape suivante.
 
-### <a name="escalations"></a>Escalades 
+### <a name="escalations"></a>Escalades
 
-Dans certains cas, vous aurez peut-être besoin de moyens supplémentaires pour assurer le suivi des conservateurs qui ne répondent plus. Si un dépositaire n’accuse aucune notification de blocage après réception du nombre spécifié de rappels, l’équipe juridique peut spécifier un flux de travail pour envoyer automatiquement une notification d’escalade au dépositaire et à son responsable.
+Dans certains cas, vous aurez peut-être besoin de moyens supplémentaires pour suivre les dépositaires qui ne répondent plus. Si un dépositaire n’accuse aucune notification de blocage après réception du nombre spécifié de rappels, l’équipe juridique peut spécifier un flux de travail pour envoyer automatiquement une notification d’escalade au dépositaire et à son responsable.
 
 Pour planifier les escalades :
 
 1. Dans la vignette **escalade** , cliquez sur **modifier**.
-   
-2. Activez le flux de travail d' **escalade** en activant le bouton bascule d' **État** .
-   
-3. Spécifiez l' **intervalle de réaffectation (en jours)** (requis). 
-   
-4. Spécifiez le **nombre de remontées** (obligatoire). Ce champ indique le nombre de demandes d’envoi aux dépositaires non réactifs. Par exemple, si vous définissez le nombre de demandes d’escalade sur 3, une notification d’escalade est envoyée au dépositaire et à son responsable un maximum de 3 fois. Lorsqu’un dépositaire accuse réception de la notification de mise en attente, les escalades ne seront plus envoyées. 
-   
-5. Spécifiez l' **objet** de l’avis (obligatoire). 
-   
-6. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Notez que le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de remontée.
-   
-7. Cliquez sur **Enregistrer** et passez à l’étape suivante.
-   
-## <a name="step-5-assign-custodians"></a>Étape 5 : affecter des dépositaires 
 
-Une fois que vous avez finalisé le contenu des notifications, sélectionnez les dépositaires que vous souhaitez envoyer. 
+2. Activez le flux de travail d' **escalade** en activant le bouton bascule d' **État** .
+
+3. Spécifiez l' **intervalle de réaffectation (en jours)** (requis).
+
+4. Spécifiez le **nombre de remontées** (obligatoire). Ce champ indique le nombre d’escalades à envoyer à des dépositaires qui ne répondent pas. Par exemple, si vous définissez le nombre de demandes d’escalade sur 3, une notification d’escalade est envoyée au dépositaire et à son responsable un maximum de trois fois. Lorsqu’un dépositaire accuse réception de la notification de mise en attente, les escalades ne seront plus envoyées.
+
+5. Spécifiez l' **objet** de l’avis (obligatoire). 
+
+6. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de remontée.
+
+7. Cliquez sur **Enregistrer** et passez à l’étape suivante.
+
+## <a name="step-5-assign-custodians-to-receive-notifications"></a>Étape 5 : affecter des dépositaires pour recevoir des notifications
+
+Une fois que vous avez finalisé le contenu des notifications, sélectionnez les dépositaires auxquels vous souhaitez envoyer des notifications. 
 
 ![Sélectionner la page des dépositaires](../media/SelectCustodians.PNG)
 
@@ -180,12 +180,25 @@ Pour ajouter des dépositaires :
 1. Attribuer des dépositaires à la communication en cliquant sur la case à cocher en regard de leur nom.
 
     Une fois la communication créée, le flux de travail de notification s’applique automatiquement aux dépositaires sélectionnés.
-   
+
 2. Cliquez sur **suivant** pour passer en revue les paramètres et les détails de communication.
- 
+
 >[!NOTE]
 >Vous pouvez uniquement ajouter des dépositaires qui ont été ajoutés à l’incident et qui n’ont pas reçu d’autre notification dans le cas.
 
 ## <a name="step-6-review-settings"></a>Étape 6 : passez en revue les paramètres
 
 Une fois que vous avez vérifié les paramètres et cliqué sur **Envoyer** pour terminer la communication, le système démarrera automatiquement le flux de travail de communication en envoyant l’avis d’émission.
+
+## <a name="events-that-trigger-notifications"></a>Événements déclenchant des notifications
+
+Le tableau suivant décrit les événements dans le processus de gestion des cas qui se déclenchent lorsque les différents types de notifications sont envoyés aux dépositaires.
+
+|Type de communication|Déclencher |
+|:---------|:---------|
+|Notifications d’émission|Création initiale de la notification. Vous pouvez également renvoyer manuellement une notification de suspension. |
+|Notifications de ré-émission|Mise à jour du contenu du portail dans la page **définir le contenu du portail** dans l’Assistant modifier la **communication** .|
+|Notifications de publication|Le dépositaire est publié à partir du cas.|
+|Reminders|L’intervalle et le nombre de rappels configurés pour le rappel.|
+|Escalades|L’intervalle et le nombre de rappels configurés pour la réaffectation.|
+|||

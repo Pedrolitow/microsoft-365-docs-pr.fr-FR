@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: 7ebd991fe70401b91c14673bcff8aabbdabbda6a
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 877001784f30f4b51e0e8c9fdb15091ea6308bf5
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266876"
+ms.locfileid: "42277201"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -44,10 +44,8 @@ Les étiquettes de sensibilité et de rétention peuvent ensuite être appliqué
 
 Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifiable par les méthodes de correspondance manuelle ou automatisée. Cette méthode de classification est plus relative à la formation d’un classifieur permettant d’identifier un élément en fonction de ce que est l’élément, pas par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en examinant des centaines d’exemples du contenu que vous souhaitez classer. Commencez par alimenter des exemples qui sont tous dans la catégorie. Une fois qu’il les traite, vous les testez en leur donnant une combinaison des exemples de correspondance et de non-correspondance. Le classifieur effectue ensuite des prévisions quant à l’existence d’un élément donné dans la catégorie que vous créez. Ensuite, vérifiez ses résultats, en triant les positifs, les négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prévisions. Lorsque vous publiez le classifieur formé, il trie les éléments dans des emplacements comme SharePoint Online, Exchange et OneDrive, et classifie le contenu.
 
-<!-- add link in the below note to sensitivity label topic when carolb provides -->
-
 > [!IMPORTANT]
-> Les deux types de classifieurs sont disponibles en tant que condition pour la [stratégie d’étiquette de rétention automatique basée sur une condition et une](labels.md#applying-a-retention-label-automatically-based-on-conditions) conformité de [communication](communication-compliance.md).
+> Les deux types de classifieurs sont disponibles en tant que condition pour la [stratégie d’étiquette de rétention automatique basée sur une condition et une](labels.md#applying-a-retention-label-automatically-based-on-conditions) conformité de [communication](communication-compliance.md). Les étiquettes de sensibilité ne peuvent utiliser des classifieurs intégrés qu’en tant que condition, voir [appliquer automatiquement une étiquette de sensibilité au contenu](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
 > Les classifieurs pouvant être formés ne fonctionnent qu’avec des éléments qui ne sont pas chiffrés et qui sont en anglais.
@@ -100,7 +98,7 @@ La création et la publication d’un classificateur pour l’utilisation dans l
 
 ![classificateur de flux de processus](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Consultez aussi
 
 - [étiquettes de rétention](labels.md)
 - [stratégies de rétention](retention-policies.md)

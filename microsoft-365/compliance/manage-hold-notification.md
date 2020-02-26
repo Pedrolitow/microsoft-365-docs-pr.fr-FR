@@ -15,66 +15,75 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: f10995e5180afc0d8aa7de2b2fdb8040f0f838ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilisez le flux de travail de communication dans Advanced eDiscovery pour suivre l’état de vos notifications de conservation légale et, le cas échéant, mettez à jour et renvoyez-les.
+ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072011"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280112"
 ---
 # <a name="manage-hold-notifications"></a>Gérer les notifications de conservation
 
-Une fois que vous avez lancé votre flux de travail de notification de conservation légale, vous pouvez utiliser Advanced eDiscovery pour suivre l’état de vos communications. L’onglet Communications présente toutes les notifications de blocage dans votre cas de découverte électronique avancée. Ici, vous pouvez voir des détails, tels que le nombre de dépositaires qui ont été attribués ou ont accusé réception de l’avis.
+Une fois que vous avez lancé votre flux de travail de notification de conservation légale, vous pouvez utiliser le flux de travail de communication dans Advanced eDiscovery pour suivre l’état de vos communications. L’onglet communications contient une liste de toutes les notifications dans votre cas avancé de découverte électronique avancée. Vous pouvez afficher des informations telles que le nombre de dépositaires qui ont été attribués ou ont accusé réception de l’avis.
 
-## <a name="view-communication-details"></a>Afficher les détails de communication
+## <a name="monitor-acknowledgments"></a>Surveiller les accusés de réception
 
-### <a name="track-acknowledgements"></a>Suivi des accusés de réception
+Une fois que vous avez sélectionné une communication dans l’onglet **communications** , vous pouvez afficher la liste des dépositaires ayant accusé réception d’une notification de suspension. 
 
-Une fois que vous avez sélectionné une communication dans l’onglet **communications**, vous pouvez afficher la liste des dépositaires ayant accusé réception d’une notification de suspension. 
+1. Dans le centre de conformité, accédez à **ediscovery > Advanced eDiscovery**.
 
-### <a name="preview-acknowledgements"></a>Afficher un aperçu des accusés de réception
+2. Sélectionnez un cas, puis cliquez sur l’onglet **communications** .
 
-Dans la fenêtre mobile des détails de communication, vous pouvez prévisualiser les détails relatifs à votre communication de conservation légale. Dans le panneau **Aperçu** , vous pourrez voir un aperçu rapide de votre notification de conservation légale, ainsi que les paramètres et le contenu de vos notifications de flux de travail. Le panneau Aperçu indique également les détails concernant les dépositaires ayant déjà accusé réception du message.
+3. Sélectionnez une communication pour afficher la page de sélection de la **communication du dépositaire** .
 
-## <a name="taking-action-on-existing-communications"></a>Prendre des mesures sur les communications existantes
+La liste des dépositaires associés à la communication sélectionnée s’affiche sur la page mobile de communication. Cette page affiche également des informations et indique le nombre d’accusés de réception reçus et le nombre de pages en suspens. La page indique également quels dépositaires ont envoyé un accusé de réception indiquant qu’ils ont reçu la notification de mise en attente.
 
-### <a name="re-send-a-hold-notice"></a>Renvoyer une notification de suspension
+## <a name="re-send-a-hold-notice"></a>Renvoyer une notification de suspension
 
-Parfois, les dépositaires perdent leur courrier électronique dans leur travail quotidien. Ou, dans le cas d’un litige de longue durée, un dépositaire peut se joindre et vous demander de renvoyer un avis. Lorsque vous gérez votre flux de travail dans le cadre de notifications de mise en attente légale, il se peut que vous deviez renvoyer un avertissement pour le ramener à la « partie supérieure de la boîte aux lettres d’un utilisateur ».
+Parfois, les dépositaires perdent le suivi des messages électroniques dans leur travail quotidien. Ou pour un cas de litige de longue durée, un dépositaire peut vous contacter ou d’autres personnes et vous demander de renvoyer une notification. Lorsque vous gérez le flux de travail des communications pour les notifications de conservation légale, il se peut que vous deviez renvoyer un avertissement pour le ramener à la « partie supérieure de la boîte aux lettres d’un utilisateur ».
 
-Vous pouvez renvoyer une notification de suspension à votre dépositaire en procédant comme suit :
-1. Accédez à un cas dans le cadre de **la sécurité et de la conformité > Advanced eDiscovery**.
-2. Une fois que vous avez sélectionné un cas, accédez à l’onglet **communications** .
-3. Pour renvoyer un avis de suspension légale à un dépositaire, sélectionnez la communication, puis cliquez sur l’option **renvoyer** .
-4. Si un dépositaire n’a pas déjà accusé réception du message de notification d’attente, le rappel et le flux de remontée seront redémarrés. Si un dépositaire a déjà confirmé l’avis de suspension, le dépositaire recevra simplement une copie de l’avis de suspension initiale.
+Pour renvoyer une notification de suspension à un dépositaire, procédez comme suit :
+
+1. Dans Advanced eDiscovery, sélectionnez un cas, puis cliquez sur l’onglet **communications** .
+
+2. Sélectionnez une communication pour afficher la page de sélection de la **communication du dépositaire** .
+
+3. Cliquez sur **plus > relancer la notification de suspension**.
+
+4. Sur la page de menu **déroulante de retransmission des notifications de suspension** , sélectionnez les dépositaires que vous souhaitez renvoyer à l’avis et tapez une raison facultative.
+
+5. Cliquez **sur renvoyer pour** envoyer l’avertissement aux dépositaires sélectionnés.
+
+Si un dépositaire n’a pas reconnu la notification de blocage, le flux de rappel et le flux de travail de remontée des problèmes sont redémarrés. Si un dépositaire a accusé réception de la notification d’attente, le dépositaire reçoit une copie de l’avis de suspension d’origine.
 
 > [!NOTE]
-> Vous pouvez uniquement renvoyer une notification de suspension légale aux dépositaires affectés à la communication. 
+> Vous ne pouvez renvoyer une notification de suspension légale qu’aux dépositaires qui sont affectés à la communication. 
 
-### <a name="edit-a-communication"></a>Modifier une communication
-
-#### <a name="update-preservation-requirements"></a>Exigences en matière de conservation des mises à jour
+## <a name="update-preservation-requirements"></a>Exigences en matière de conservation des mises à jour
   
 En cas de progression, les dépositaires peuvent être tenus de conserver des données supplémentaires ou moins que celles précédemment demandées. Dans les termes eDiscovery, vous devez relancer l’avis de suspension avec du contenu mis à jour.
 
 Pour mettre à jour le contenu de l’avis de mise en attente initiale :
 
-1. Accédez à un cas dans le cadre de **la sécurité et de la conformité > Advanced eDiscovery**.
-2. Une fois que vous avez sélectionné un cas, accédez à l’onglet **communications** .
-3. Sélectionnez la notification de mise en attente que vous souhaitez mettre à jour, puis cliquez sur **modifier**.
-4. Dans le flux de travail de modification, sélectionnez **définir le contenu du portail** et mettre à jour le contenu de votre notification. 
-5. Cliquez sur **Enregistrer**. Une fois enregistré, l’avis de nouvelle émission est envoyé à tous les dépositaires qui sont actuellement affectés à la notification de conservation légale. En outre, si les notifications de rappel/rappel sont activées, ces flux de travail redémarrent également. 
+1. Dans Advanced eDiscovery, sélectionnez un cas, puis cliquez sur l’onglet **communications** .
 
+2. Sélectionnez la notification de mise en attente que vous souhaitez mettre à jour, puis cliquez sur **modifier** sur la page flyout de la **communication du dépositaire** .
 
-#### <a name="update-legal-hold-notifications-and-settings"></a>Mettre à jour les notifications et les paramètres de conservation légale
+3. Dans l’Assistant **modifier la communication** , cliquez sur définir le contenu du **portail** dans le volet gauche de l’Assistant, puis mettez à jour le contenu de l’avis.
 
-Lorsque vous mettez à jour le contenu ou les paramètres de l’émission, de la publication, du rappel, de la relance ou de la notification d’escalade, ces modifications s’appliquent à toutes les communications futures générées par le flux de travail.
+4. Cliquez sur **Enregistrer**.
 
-## <a name="related-information"></a>Informations connexes 
+L’avis de ré-émission est envoyé à tous les dépositaires affectés à la notification de suspension légale. En outre, si l’avis de rappel ou de notification d’escalade est activé, les flux de travail de ces types de notifications redémarreront.
+
+## <a name="update-legal-hold-notifications-and-settings"></a>Mettre à jour les notifications et les paramètres de conservation légale
+
+Lorsque vous mettez à jour le contenu ou les paramètres de l’émission, de la publication, de la réémission, de la relance ou de l’avis d’escalade, ces modifications s’appliquent à toutes les communications futures générées par le flux de travail.
+
+## <a name="more-information"></a>Plus d’informations
+
+- [Ajouter des consignataires à un cas](add-custodians-to-case.md)
 
 - [Créer une notice de suspension légale](create-hold-notification.md)
-    
+
 - [Reconnaitre une notification de conservation](acknowledge-hold-notification.md)
-    
-- [Ajouter des consignataires à un cas](add-custodians-to-case.md)

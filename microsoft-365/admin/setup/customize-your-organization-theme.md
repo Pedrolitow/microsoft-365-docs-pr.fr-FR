@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Découvrez comment modifier le thème par défaut d’Office 365 et le personnaliser pour qu’il corresponde au logo ou à la couleur de votre entreprise. '
-ms.openlocfilehash: b59efa21195c0c7bed12c98b9d360d84451b3d35
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243948"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280182"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Personnaliser le thème Office 365 pour votre organisation
 
@@ -43,7 +43,7 @@ Découvrez comment personnaliser votre thème dans le centre d’administration 
   - **Utiliser une image de logo personnalisée**: indiquez si vous souhaitez utiliser une image à partir d’une URL ou pour télécharger une image. Si vous utilisez une URL, vérifiez que l’URL utilise le protocole HTTPs et qu’il s’agit de 200 x 30 pixels de n’importe quel format de n’importe quelle taille. Vous pouvez télécharger un logo de moins de 10 Ko, 200 x 30 pixels au format JPG, PNG, GIF ou SVG.
 
     > [!NOTE]
-    > Pour que le logo apparaisse dans l’application mobile SharePoint, utilisez uniquement des images SVG. Les images téléchargées dans n’importe quel autre format ne sont pas affichées dans l’application. 
+    > Pour que le logo apparaisse dans l’application mobile SharePoint, utilisez uniquement des images SVG. Les images téléchargées dans n’importe quel autre format ne sont pas affichées dans l’application. Les logos ne sont pas cliquables dans l’application mobile SharePoint.
     
   - **Faire un clic sur le logo**: vous pouvez utiliser votre logo dans la barre de navigation en tant que lien vers toute ressource de la société. Vous pouvez entrer l’URL du logo ici, en commençant par http://ou https://. Cette étape est facultative.
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery facilite la gestion du flux de travail de notification de conservation légale concernant la notification des dépositaires en cours d’investigation.
-ms.openlocfilehash: 4ca3e5a8e500f6a8e5a5483ccc3efd070c05c5cd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3e9fb2bc67fc5eac181afab8ba5c78c4236fb980
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071581"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280122"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Utiliser les communications dans Advanced eDiscovery
 
@@ -37,32 +37,34 @@ Une organisation a le droit de conserver les informations pertinentes lorsqu’e
 
 Grâce à la fonctionnalité eDiscovery avancée, les équipes juridiques peuvent créer et personnaliser leur flux de travail de notification de conservation légale. L’outil de communication du dépositaire permet à teams de configurer les notifications et les flux de travail suivants :
 
-1. **Notice d’émission**: une notice légale est émise (ou engagée) par une notification du service juridique aux dépositaires qui peuvent avoir des informations pertinentes sur la cause de l’affaire. Cette note indique aux dépositaires de conserver les informations susceptibles d’être nécessaires à la découverte.
-   
-2.  **Notification de nouvelle émission**: pendant un cas, les dépositaires peuvent être tenus de conserver du contenu supplémentaire (ou moins de contenu) que celui précédemment demandé. Dans ce scénario, vous pouvez mettre à jour l’avis de suspension existant et le ré-émettre aux dépositaires.
+1. **Notification d’émission :** Une notice légale est émise (ou engagée) par une notification du service juridique aux dépositaires qui peuvent avoir des informations pertinentes sur la cause de l’affaire. Cette note indique aux dépositaires de conserver les informations susceptibles d’être nécessaires à la découverte.
 
-3.  **Avis de publication**: une fois qu’une question est résolue et que le dépositaire n’est plus soumis à une exigence de conservation, le dépositaire peut être libéré à partir du cas. En outre, vous pouvez informer le dépositaire qu’il n’est plus nécessaire de conserver le contenu et fournir des instructions sur la reprise de son activité professionnelle normale en ce qui concerne ses données.
+2. **Notification de nouvelle émission :** Pendant un cas, les dépositaires peuvent être tenus de conserver un contenu supplémentaire (ou moins de contenu) que celui précédemment demandé. Dans ce scénario, vous pouvez mettre à jour l’avis de suspension existant et le ré-émettre aux dépositaires.
 
-4. **Rappels et escalades**: dans certains cas, il suffit d’émettre une notification pour répondre aux exigences de la découverte légale. À chaque notification, les équipes juridiques peuvent planifier un ensemble de flux de travail de rappel et de signalisation pour assurer un suivi automatique des dépositaires qui ne répondent pas.
+3. **Notification de publication :** Une fois qu’une question est résolue et que le dépositaire n’est plus soumis à une exigence de conservation, le dépositaire peut être libéré à partir du cas. En outre, vous pouvez informer le dépositaire qu’il n’est plus nécessaire de conserver le contenu et fournir des instructions sur la reprise de son activité professionnelle normale en ce qui concerne ses données.
 
-    - **Rappels**: lorsqu’un avis de mise en attente légale a été émis ou réédité pour un ensemble de dépositaires, une organisation peut configurer des rappels pour prévenir les dépositaires qui ne répondent pas.
+4. **Rappels et escalades :** Dans certains cas, l’émission d’une notification n’est pas suffisante pour répondre aux exigences de la découverte légale. À chaque notification, les équipes juridiques peuvent planifier un ensemble de flux de travail de rappel et de signalisation pour assurer un suivi automatique des dépositaires qui ne répondent pas.
 
-    - **Escalades**: dans certains cas, si un dépositaire ne répond pas même après un certain laps de temps, l’équipe juridique peut configurer un flux de travail de signalisation pour informer les dépositaires qui ne répondent pas et leur responsable.
+   - **Rappels :** Une fois qu’un avis de mise en attente légale a été émis ou réédité pour un ensemble de dépositaires, une organisation peut configurer des rappels pour prévenir les dépositaires qui ne répondent pas.
 
-## <a name="role-groups-and-permissions"></a>Groupes de rôles et autorisations 
+   - **Escalades :** Dans certains cas, si un dépositaire ne répond pas, même après un ensemble de rappels sur une période de temps, l’équipe juridique peut configurer un flux de travail de signalisation pour informer les dépositaires qui ne répondent pas et leur responsable.
+
+## <a name="role-groups-and-permissions"></a>Groupes de rôles et autorisations
 
 Les équipes juridiques peuvent contrôler et isoler leur activité de cas à l’aide de groupes de rôles et d’autorisations liés à la découverte électronique dans le centre de conformité & Compliance Center. 
 
-Pour créer et gérer des notifications de conservation légale, un utilisateur doit faire partie des groupes de rôles suivants :
+Pour créer et gérer des notifications de conservation légale, un utilisateur doit être membre du groupe de rôles gestionnaire eDiscovery. Les membres de ce groupe de rôles peuvent créer et gérer des cas de découverte électronique avancée. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer des notifications de conservation légale, créer et modifier des recherches associées à un cas, ajouter des résultats de recherche à un jeu de réexamen, analyser des données dans un jeu de vérification, exporter et télécharger à partir d’une avancée cas de découverte électronique. 
 
-- **Gestionnaire eDiscovery** : les membres de ce groupe de rôles peuvent créer et gérer des cas eDiscovery. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer des notifications de conservation légale, créer et modifier des recherches de contenu associées à un cas, exporter les résultats d’une recherche de contenu et préparer des résultats de recherche pour analyse dans Advanced découverte. Il existe deux sous-groupes dans ce groupe de rôles. Ces sous-groupes ont différents rôles.
+Le groupe de rôles gestionnaire eDiscovery comporte deux sous-groupes. Ces sous-groupes ont différents rôles.
 
-  - **Gestionnaire eDiscovery** : permet d’afficher et de gérer les cas eDiscovery qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas de deuxième gestionnaire eDiscovery en tant que membre de ce dernier, le deuxième gestionnaire eDiscovery ne pourra pas afficher ou ouvrir le cas sur la page eDiscovery dans le centre de sécurité & Compliance Center. les gestionnaires eDiscovery peuvent également accéder à leurs incidents dans Advanced eDiscovery pour effectuer des tâches d’analyse.
+- **Gestionnaire eDiscovery :** Permet d’afficher et de gérer les cas avancés eDiscovery qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas de deuxième gestionnaire eDiscovery en tant que membre de ce dernier, le deuxième gestionnaire eDiscovery ne pourra pas afficher ou ouvrir le cas dans la page Advanced eDiscovery du centre de sécurité & Compliance Center.
 
-  - **administrateur eDiscovery** : peut effectuer toutes les tâches de gestion des dossiers qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
-    
-    - Afficher tous les cas répertoriés sur la page Découverte électronique.
-    - Gérez tous les cas dans l’organisation une fois qu’ils ont été ajoutés en tant que membre du cas.
-    - Accéder aux données de cas dans Advanced eDiscovery pour tous les cas de l’organisation.
+- **administrateur eDiscovery :** Peut effectuer toutes les tâches de gestion des dossiers qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
+
+  - Afficher tous les cas répertoriés sur la page Advanced eDiscovery.
+  
+  - Gérez tous les cas dans l’organisation une fois qu’ils ont été ajoutés en tant que membre du cas.
+
+  - Accéder à des données de cas et les exporter dans Advanced eDiscovery pour n’importe quel cas dans l’organisation.
 
 Pour plus d’informations, consultez [la rubrique attribution d’autorisations de découverte électronique dans le centre de sécurité & conformité](assign-ediscovery-permissions.md).
