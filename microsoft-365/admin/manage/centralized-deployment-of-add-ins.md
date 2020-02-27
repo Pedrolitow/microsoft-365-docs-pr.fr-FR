@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs Office 365 satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: 09487e0ff495f4b561e7a27eecf2c99fd4da10af
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278760"
+ms.locfileid: "42284385"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
@@ -84,7 +84,7 @@ Pour obtenir de l'aide concernant Office 365 ProPlus, voir [Conseils de dépanna
 
 ### <a name="exchange-online-requirements"></a>Configuration requise pour Exchange Online
 
-Microsoft Exchange stocke les manifestes des compléments au sein du client de votre organisation. L’administrateur déployant des compléments et les utilisateurs qui les reçoivent doivent se trouver sur une version d’Exchange Online qui prend en charge l’authentification OAuth. Par défaut, les déploiements VNext dédiés et multi-clients Exchange prennent en charge OAuth. 
+Microsoft Exchange stocke les manifestes des compléments au sein du client de votre organisation. L’administrateur déployant des compléments et les utilisateurs qui les reçoivent doivent se trouver sur une version d’Exchange Online qui prend en charge l’authentification OAuth.
   
 Pour connaître la configuration utilisée, consultez l'administrateur Exchange de votre organisation. Vous pouvez vérifier la connectivité OAuth de chaque utilisateur à l'aide de l'applet de commande PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ba50572405da05359594fea85fdba2d28f3b141b
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: c99ef0634c5858e458b9aa4aa622a7ab55c32088
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235223"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288542"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Conditions préalables pour la Protection Microsoft contre les menaces
 
@@ -36,11 +36,11 @@ ms.locfileid: "42235223"
 Découvrez la gestion des licences, la configuration matérielle et logicielle requise, ainsi que d’autres paramètres de configuration pour mettre en service et utiliser la protection contre les menaces Microsoft.
 
 ## <a name="licensing-requirements"></a>Critères de licence
-Pour utiliser Microsoft Threat Protection, vous avez besoin de l’une des licences ou de la combinaison de licences suivantes :
+Pour utiliser Microsoft Threat Protection, vous avez besoin de l' *une* des licences ou de la combinaison de licences suivantes :
 
 - Microsoft 365 E5
 - Microsoft 365 E5 Sécurité
-- Office 365 E5, Enterprise Mobility + Security E5 et Windows E5
+- Office 365 E5 et « Enterprise Mobility + Security E5 (EMS E5) » et Windows E5
 
 [Afficher les plans de service d’entreprise Microsoft 365](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 

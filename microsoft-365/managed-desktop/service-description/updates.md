@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0acbb82001d8856639f5b67daa99323f333e26ad
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250474"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284375"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Gestion des mises à jour dans le bureau géré Microsoft
 
@@ -32,7 +32,7 @@ Pour plus d’informations, reportez-vous à la rubrique [Windows Update for Bus
 
 Microsoft Managed Desktop utilise quatre groupes Azure AD pour gérer les mises à jour :
 
-- **Test**: permet de valider les modifications apportées à la stratégie de bureau géré Microsoft, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications envoyées au client. Aucun utilisateur final ne doit être placé dans le groupe de test. Le groupe test est exempté de tout contrat de niveau de service établi et de tout support utilisateur final. Ce groupe peut être utilisé pour valider la compatibilité des applications avec une nouvelle stratégie ou le système d’exploitation se bloque.  
+- **Test**: permet de valider les modifications apportées à la stratégie de bureau géré Microsoft, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications envoyées au client. Aucun utilisateur final ne doit être placé dans le groupe de test. Le groupe test est exempté de tout contrat de niveau de service établi et de tout support utilisateur final. Ce groupe peut être utilisé pour valider la compatibilité des applications avec de nouvelles modifications de stratégie ou de système d’exploitation.  
 - **Tout d’abord**: contient les dispositifs et les exposants logiciels susceptibles d’être soumis aux mises à jour de pré-publication. Les périphériques de ce groupe peuvent être confronté à des pannes s’il existe des scénarios qui n’ont pas été pris en compte lors des tests dans l’anneau de test.
 - **Fast**: hiérarchise la vitesse sur la stabilité. Utile pour détecter les problèmes de qualité avant de les proposer à l’ensemble du groupe. Ce groupe sert de couche de validation suivante, mais est généralement plus stable que le test et les premiers groupes. 
 - **Large**: dernier groupe avec des mises à jour de la qualité et des fonctionnalités disponibles. Ce groupe contient la majorité des utilisateurs dans le client, et favorise ainsi la stabilité de la vitesse pendant le déploiement. Le test des applications doit être réalisé ici, car l’environnement est le plus stable. 
@@ -61,7 +61,7 @@ Fonctionnement du déploiement des mises à jour :
 <tr><td>Mises à jour de fonctionnalité pour le système d’exploitation</td><td>0 jour</td><td>30 jours</td><td>60 jours</td><td>90 jours</td></tr>
 <tr><td>Pilotes/microprogramme</td><td colspan="4">Suit la planification des mises à jour de la qualité</td></tr>
 <tr><td>Définition de la protection antivirus</td><td colspan="4">Mise à jour avec chaque analyse</td></tr>
-<tr><td>Office 365 ProPlus</td><td colspan="4">Suit le canal mensuel d’Office
+<tr><td>Office 365 ProPlus</td><td colspan="4">Suit le canal mensuel d’Office
 </table>
 
 Pour plus d’informations sur le canal mensuel pour Office 365 ProPlus, consultez la rubrique [vue d’ensemble des canaux de mise à jour pour office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).

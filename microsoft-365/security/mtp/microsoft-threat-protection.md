@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: ef68143d185b6b716b8b5c8213b1e4f3ea1a5abd
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 62901a08b8e040266a94967170674336eb1035c8
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235073"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288592"
 ---
 # <a name="microsoft-threat-protection"></a>Protection Microsoft contre les menaces
 
@@ -34,6 +34,17 @@ ms.locfileid: "42235073"
 La protection de Microsoft contre les menaces est une suite de défense d’entreprise pré-et post-violation unifiée qui s’intègre de manière native sur les points de terminaison, les identités, les messages électroniques et les applications pour détecter, prévenir, examiner et répondre automatiquement aux attaques sophistiquées.  
 
 Avec la solution de protection Microsoft contre les menaces intégrée, les professionnels de la sécurité peuvent combiner les signaux de menace que chacun de ces produits reçoit et déterminer l’étendue et l’impact complets de la menace ; la manière dont il entre dans l’environnement, ce qu’il est affecté et la façon dont il influe actuellement sur l’organisation. Microsoft Threat Protection effectue une action automatique pour empêcher ou bloquer les boîtes aux lettres, les points de terminaison et les identités utilisateur affectés autoréparation.  
+
+
+<center><h2>Services de protection contre les menaces Microsoft</center></h2>
+<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Protection avancée contre les menaces Microsoft Defender</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 protection avancée contre les menaces</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure protection avancée contre les menaces</b></a></center></td>
+<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Sécurité des applications Cloud Microsoft</b></a></center></td>
+</tr>
+</table>
+<br>
+
 
 
 La suite Microsoft Threat Protection protège les éléments suivants : 
@@ -65,17 +76,8 @@ Les fonctionnalités interproduits de la protection contre les menaces Microsoft
 - **Autoréparation des appareils compromis, des identités des utilisateurs et des boîtes aux lettres** : Microsoft Threat Protection utilise des autoformations et des règles automatiques pour reconvertir les ressources affectées à un état sécurisé. La protection contre les menaces Microsoft exploite les capacités de correction automatique des produits suite pour garantir que tous les biens affectés à un incident sont automatiquement corrigés dès que possible.
 - **Menace sur les produits croisés** : les équipes de sécurité peuvent tirer parti de leurs connaissances organisationnelles uniques pour rechercher des signes de compromission en créant leurs propres requêtes personnalisées sur les données brutes collectées par les différents produits de protection. Microsoft Threat Protection offre un accès basé sur les requêtes aux 30 jours de signaux bruts et de données d’alerte sur les données de point de terminaison et Office 365 ATP. 
 
-<center><h2>Services de protection contre les menaces Microsoft</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Protection avancée contre les menaces Microsoft Defender</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 protection avancée contre les menaces</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure protection avancée contre les menaces</b></a></center></td>
-<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Sécurité des applications Cloud Microsoft</b></a></center></td>
-</tr>
-</table>
-<br>
-
 
 ## <a name="get-started"></a>Prise en main
-Les clients disposant d’une licence Microsoft 365 E5 ou équivalente peuvent utiliser la Protection Microsoft contre les menaces. Pour commencer, activez le service dans le centre de sécurité Microsoft 365 sur [Security.Microsoft.com](https://security.microsoft.com). Pour plus d’informations, consultez :
+Les exigences en matière de licences de protection de Microsoft contre les menaces doivent être respectées pour pouvoir activer le service dans le centre de sécurité Microsoft 365 sur [Security.Microsoft.com](https://security.microsoft.com). Pour plus d’informations, consultez :
 - [Conditions de licence](prerequisites.md#licensing-requirements)
 - [Activer la Protection Microsoft contre les menaces](mtp-enable.md)

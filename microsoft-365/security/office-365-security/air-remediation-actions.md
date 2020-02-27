@@ -15,18 +15,20 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Découvrez les actions de correction dans les fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 433813ed1a801117a88da696392030db5091b54b
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: 0db49a28fb90bcddcdd874ac54216957e4be5fa1
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261051"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288512"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Actions de correction suite à une enquête automatisée dans Office 365
 
 ## <a name="remediation-actions"></a>Actions de correction
 
-[Les fonctionnalités d’analyse et de réponse automatisées](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) dans Office 365 protection avancée contre les menaces incluent certaines actions de correction. Lorsqu’une enquête automatisée est en cours d’exécution ou qu’elle est terminée, vous verrez généralement une ou plusieurs actions correctives qui nécessitent l’approbation de votre équipe d’opérations de sécurité. Le tableau suivant récapitule les actions de correction actuellement disponibles dans Office 365 Advanced Threat Protection. 
+[Les fonctionnalités d’analyse et de réponse automatisées](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) dans Office 365 protection avancée contre les menaces incluent certaines actions de correction. Lorsqu’une enquête automatisée est en cours d’exécution ou qu’elle est terminée, vous verrez généralement une ou plusieurs actions correctives qui nécessitent l’approbation de votre équipe d’opérations de sécurité. 
+
+Le tableau suivant récapitule les actions de correction actuellement disponibles dans [Office 365 Advanced Threat Protection](office-365-atp.md). 
 
 |Opération | Description |
 |-----|-----|

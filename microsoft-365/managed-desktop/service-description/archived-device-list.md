@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 653b986de8d580a25a1032b77f34db8924d3ea0d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085783"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284365"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés Microsoft Managed Desktop
 
@@ -35,9 +35,12 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 
 | Modèle  | Caractéristiques minimales  | Autres conditions requises   | Date de déclassement |
 |---------|---------|---------|---------|
+| Dell Latitude 5490| 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | **9 janvier 2023** |
+| Dell Latitude 7390 7390 2-en-1/7490 | 256 Go/Intel i5/8 Go de RAM   | Appareil infrarouge requis | **9 janvier 2023** |
 |HP EliteBook 830/840/850 G5| 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis  | **15 février 2023** |
 |HP Elite x2 1013 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS03AV, appareil infrarouge obligatoire |**14 mai 2023** |
 |HP EliteBook x360 1030 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire |**14 mai 2023** |
+|HP EliteBook x360 1040 G5| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire | **23 octobre 2023** |
 |Surface Book 2| 256 Go/Intel i5/8 Go de RAM | Aucun | **16 novembre 2022** |
 |Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Aucun | **20 mai 2022** |
 |Surface Pro| 256 Go/Intel i5/8 Go de RAM | Aucun | **15 juin 2022** |
@@ -47,7 +50,7 @@ En outre, l’appareil doit également :
 
 - Disposer d’une image approuvée par le bureau géré Microsoft. Lorsque vous commandez des appareils, vérifiez que vous spécifiez qu’ils sont utilisés avec Microsoft Managed Desktop.
 - N’ont pas terminé l’expérience de première exécution de Windows.
-- Être inscrit auprès de Microsoft Managed destkop à l’aide de la fonctionnalité [d’inscription](https://aka.ms/mmddrhelp) de l’appareil.
+- Être inscrit auprès du bureau géré Microsoft à l’aide de la fonctionnalité [d’inscription](https://aka.ms/mmddrhelp) de l’appareil.
 
 #### <a name="additional-help"></a>Aide supplémentaire
 

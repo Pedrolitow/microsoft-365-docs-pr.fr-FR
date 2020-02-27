@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.custom: air
+ms.openlocfilehash: c06874ea5d55334d9049d6c5d9d5c55a499dae06
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262011"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288472"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
@@ -28,7 +29,9 @@ ms.locfileid: "42262011"
 
 ## <a name="the-overall-flow-of-air"></a>Flux d’AIR global
 
-À un niveau élevé, le flux d’AIR fonctionne comme ceci :
+Une alerte est déclenchée et un manifeste de sécurité démarre, qui lance une enquête automatisée. Ou un analyste de sécurité déclenche une enquête automatisée lors de l’utilisation de l’Explorateur de menaces. L’enquête automatisée s’exécute, et en général, certaines actions de correction sont identifiées. Ces actions sont examinées et approuvées par votre équipe de gestion des opérations de sécurité, et l’enquête se termine. 
+
+Le tableau suivant décrit le flux d’AIR global, étape par étape :
 
 |Étape  |Action exécutée  |
 |---------|---------|
