@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 4812f81140bc80a1437c13b7bce38a7ed101592d
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170514"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280156"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -51,7 +51,7 @@ Vous pouvez également spécifier la durée de conservation des enregistrements 
 
 ## <a name="access-to-crucial-events-for-investigations"></a>Accès aux événements essentiels lors d'enquêtes
 
-Les événements essentiels d’audit relatifs à la sécurité et à la conformité sont ceux pouvant vous aider à enquêter sur des violations éventuelles ou d'autres enquêtes légales. L'évènement d'audit *MailItemsAccessed* de la boîte aux lettres est le premier élément essentiel en cours de publication. Cet événement se déclenche lorsque les données de courrier sont consultées par les clients et les protocoles de messagerie. L’événement MailItemsAccessed peut aider les enquêteurs à identifier les violations de données et à mesurer l’étendue des messages susceptibles d’être compromis. Si une personne malveillante a accès aux courriers électroniques, l’événement MailItemsAccessed se déclenche même s’il n’y a pas de signal explicite indiquant qu'un message a été réellement lu (en d’autres termes, le type d’accès via BIND ou synchrone, par exemple, est sauvegardé dans l’enregistrement d’audit).
+Les événements essentiels d’audit relatifs à la sécurité et à la conformité sont ceux pouvant vous aider à enquêter sur des violations éventuelles ou d'autres enquêtes légales. Le premier événement essentiel qui est publié est l’action d’audit de la boîte aux lettres *MailItemsAccessed*. Cette action se déclenche quand les données des e-mails sont consultées par les protocoles et les clients de messagerie. L’action MailItemsAccessed peut aider les enquêteurs à identifier les violations de données et à mesurer l’étendue des messages susceptibles d’être compromis. Si une personne malveillante a accès aux e-mails, l’action MailItemsAccessed se déclenche même s’il n’y a pas de signal explicite indiquant qu'un message a été réellement lu (en d’autres termes, le type d’accès comme BIND ou synchrone, par exemple, est sauvegardé dans l’enregistrement d’audit).
 
 La nouvelle action MailItemsAccessed de la boîte aux lettres remplace MessageBind dans la journalisation d’audit des boîtes aux lettres dans Exchange Online et offre les améliorations suivantes :
 
@@ -59,9 +59,17 @@ La nouvelle action MailItemsAccessed de la boîte aux lettres remplace MessageBi
 
 - MessageBind ne prenait en charge que l'accès à un client de messagerie. Il ne s’appliquait pas aux activités synchrones. Les événements MailItemsAccessed sont déclenchés par les types d’accès BIND et synchrone.
 
-- Les actions MessageBind déclenchaient la création de plusieurs enregistrements d’audit lors de l’accès au même courrier, ce qui entraînait un audit « retentissant ». En revanche, les événements MailItemsAccessed sont regroupés dans un nombre réduit d’enregistrements d’audit.
+- Les actions MessageBind déclencheraient la création de plusieurs enregistrements d’audit lors de l’accès au même e-mail, ce qui entraînerait un audit « retentissant ». En revanche, les événements MailItemsAccessed sont regroupés dans un nombre réduit d’enregistrements d’audit.
 
 Pour plus d’informations sur la journalisation de l’audit des boîtes aux lettres, voir [Gérer l’audit des boîtes aux lettres](enable-mailbox-auditing.md).
+
+### <a name="search-for-mailitemsaccessed-audit-records"></a>Rechercher des enregistrements d’audit MailItemsAccessed
+
+Pour rechercher des enregistrements d’audit MailItemsAccessed, vous pouvez rechercher les activités des **éléments de la boîte aux lettres consultés** dans la liste déroulante des **activités de la boîte aux lettres Exchange** dans l’[outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de sécurité et conformité Office 365.
+
+![Recherche d’actions MailItemsAccessed dans l’outil de recherche du journal d’audit](../media/MailItemsAccessedSCC1.png)
+
+Vous pouvez également exécuter la commande [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) ou [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) dans Exchange Online PowerShell.
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Accès haut débit à l’API Activité de gestion Office 365
 
@@ -72,3 +80,53 @@ Grâce à la publication de l'audit avancé, nous allons passer d’une limite a
 Les organisations reçoivent une ligne de base de 2 000 demandes par minute. Cette limite augmentera de façon dynamique en fonction du nombre de sièges d’une organisation et du nombre de licences dans son abonnement. Les organisations E5 disposeront d’environ deux fois plus de bande passante que les autres organisations. La bande passante aura également un plafond maximal pour protéger l’état d’intégrité du service.
 
 Pour plus d’informations, consultez la rubrique « Limitation de l'API » dans la [Référence de l’API Activité de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+
+## <a name="faqs-for-advanced-audit"></a>FAQ pour l’audit avancé
+
+**Où puis-je accéder à l’audit avancé ?**
+
+Une fois l’audit avancé déployé dans votre organisation, vous pouvez créer des stratégies de rétention de journal d’audit et rechercher des enregistrements d’audit MailItemsAccessed à l’aide de l’outil de recherche du journal d’audit dans le [Centre de sécurité & conformité Office 365](https://protection.office.com). Nous faisons le nécessaire pour déployer l’audit avancé dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com) dans les prochaines semaines.
+
+**Est-ce que chaque utilisateur a besoin d'une licence E5 pour bénéficier de l'Audit avancé ?**
+
+Pour bénéficier des fonctionnalités d’audit avancées de niveau utilisateur, ce dernier doit se voir attribuer une licence E5. Certaines fonctionnalités vous permettront de vérifier la présence de la licence appropriée pour exposer la fonctionnalité à l’utilisateur. Par exemple, si vous essayez de conserver les enregistrements d’audit pour un utilisateur ne disposant pas d’une licence E5 pendant plus de 90 jours, le système renvoie un message d’erreur.
+
+**Pourquoi je ne vois pas l’audit avancé dans mon organisation, même si nous avons un abonnement E5 et des utilisateurs auxquels des licences E5 ont été attribuées ?**
+
+Il est possible que les fonctionnalités d’audit avancées (telles que la possibilité de créer des stratégies de rétention de journal d’audit et la journalisation des enregistrements d’audit MailItemsAccessed) ne soient pas disponibles dans votre organisation, même si les licences appropriées sont en place. Si cela vous arrive, c'est parce que le package d'audit avancé n'a pas encore été déployé dans votre organisation. Il s'agit d'un problème de remplacement temporaire de licence, qui devrait être résolu pour les organisations concernées au cours des prochaines semaines. Pour résoudre ce problème, procédez comme suit pour chaque utilisateur E5 :
+
+1. Dans le Centre d’administration Microsoft 365, accédez à **Utilisateurs > Utilisateurs actifs** et ensuite, sélectionnez l’utilisateur.
+
+2. Dans la page déroulante des propriétés de l’utilisateur, cliquez sur **licences et applications**.
+
+3. Développez la section **applications**, puis effectuez l’une des opérations suivantes :
+
+   a. Si la case à cocher **audit avancé Microsoft 365** n’est pas activée, sélectionnez-la, puis cliquez sur **enregistrer les modifications.** Les enregistrements d’audit pour les actions MailItemsAccessed pour cet utilisateur devraient pouvoir être recherchés dans les 24 heures.
+
+   b. Si la case**audit avancé Microsoft 365** est cochée, désactivez-la, puis cliquez sur **enregistrer les modifications.** Voir l’étape 4
+
+4. Si vous avez désactivé la case à cocher à l’étape 3, patientez 60 minutes, puis répétez l’étape 3a pour activer l’application d’audit avancé Microsoft 365.
+
+**Que se passe-t-il si mon organisation était en version d’évaluation privée pour une période de conservation d’un an des enregistrements d’audit ?**
+
+Les stratégies de rétention d’audit du programme d’évaluation sont conservées tant que vous ne les remplacez pas et ne les modifiez pas avec les stratégies de rétention personnalisées.
+
+**Que se passe-t-il si mon organisation souhaite conserver les journaux d’audit pendant plus d’un an ?**
+
+Nous explorons les options pour trouver comment, et si, nous pouvons proposer des périodes de rétention plus longues pour les enregistrements d’audit. Vous pouvez faire des commentaires sur la rétention plus longue des enregistrements d’audit auprès de [Office 365 User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance?category_id=137187).
+
+**Mon organisation dispose d'un abonnement E5. Dois-je faire quelque chose pour accéder aux enregistrements d'audit des événements MailItemsAccessed?**
+
+Pour les clients éligibles, il n'y a aucune action requise pour accéder aux événements MailItemsAccessed. Cependant, comme expliqué précédemment dans cette rubrique, la latence provoquée par le problème de renvoi de licence peut empêcher les enregistrements d'audit pour l'événement MailItemsAccessed d'être renvoyés dans une recherche dans le journal d'audit. Dans ce cas, suivez les instructions de la section Rechercher des enregistrements d’audit MailItemsAccessed.
+
+**Envisagez-vous de publier d’autres événements cette année ?**
+
+Oui, nous envisageons de publier de nouveaux événements essentiels pour les investigations dans les mois à venir. Nous publierons des informations sur ces nouveaux événements dans la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) à mesure que nous approcherons de la date de sortie.
+
+**Les nouveaux événements dans l’audit avancé sont-ils disponibles dans l’API Activité de gestion Office 365 ?**
+
+Oui. Tant que les enregistrements d’audit sont générés pour les utilisateurs disposant de la licence appropriée, vous pourrez accéder à ces enregistrements via l’API Activité de gestion Office 365.
+
+**Une bande passante élevée est-elle synonyme d’une meilleure latence ou d’un SLA supérieur ?**
+
+Pour le moment, lune bande passante élevée offre un meilleur pipeline, en particulier pour les organisations présentant un grand nombre de signaux d’audit et de modèles de consommation significatifs. Cela peut entraîner une meilleure latence. Cependant, il n’y a pas de SLA associé à une bande passante élevée. Les latences standard sont documentées et ne changent pas avec la version d’audit avancée.
