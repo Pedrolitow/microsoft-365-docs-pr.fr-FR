@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 380c424acbcb609944ebfc3ea775ca31ac02bfe8
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 0dc9173c03d93ebe79544f8d417842b407025054
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266740"
+ms.locfileid: "42277221"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -797,6 +797,9 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 
 Dans les descriptions ci-dessous, certaines opérations contiennent d’autres paramètres d’activité.
 
+> [!NOTE]
+> Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme, elle est enregistrée de façon légèrement différente. Pour plus d’informations, voir la section [Activités Forms réalisées par des co-auteurs ou des répondants anonymes](#forms-activities-performed-by-co-authors-and-anonymous-responders).
+
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
 |Commentaire créé|CreateComment|Le propriétaire du formulaire ajoute un commentaire ou une note à un questionnaire.|
@@ -828,7 +831,23 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Réponse envoyée|SubmitResponse|Un utilisateur envoie une réponse à un formulaire. <br><br>La propriété IsInternalForm:boolean indique si le répondant fait partie de la même organisation que le propriétaire du formulaire.|
 ||||
 
-### <a name="sensitivity-label-activities"></a>Activités des étiquettes de confidentialité 
+#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>Activités Forms réalisées par des co-auteurs ou des répondants anonymes
+
+Forms prend en charge la collaboration pendant la conception des formulaires et l’analyse des réponses. Un collaborateur de formulaire est appelé *co-auteur*. Les co-auteurs peuvent effectuer les mêmes actions que le propriétaire d’un formulaire, excepté supprimer ou déplacer un formulaire. Forms vous permet également de créer un formulaire dans lequel les répondants restent anonymes.  Ce qui signifie qu’un répondant n’a pas besoin d’être connecté à votre organisation pour répondre à un formulaire. 
+
+Le tableau suivant décrit les activités d’audit et les informations dans l’enregistrement d’audit pour les activités réalisées par les co-auteurs et les répondants anonymes.
+
+|**Type d’activité**|**Utilisateur interne ou externe**|**ID d’utilisateur connecté**|**Organisation connectée à**|**Type d’utilisateur Forms**|
+|:-----|:-----|:-----|:-----|:-----|
+|Activités de co-édition|Interne|UPN|Organisation du propriétaire du formulaire|Co-auteur|
+|Activités de co-édition|Externe|UPN<br>|Organisation du co-auteur<br>|Co-auteur|
+|Activités de co-édition|Externe|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(La deuxième partie de l’ID est hachée de façon différente selon les utilisateurs).|Organisation du propriétaire du formulaire<br>|Co-auteur|
+|Activités de réponse|Externe|UPN<br>|Organisation du répondant<br>|Répondant|
+|Activités de réponse|Externe|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(La deuxième partie de l’ID d’utilisateur est hachée de façon différente selon les utilisateurs).|Organisation du propriétaire du formulaire|Répondant|
+|Activités de réponse|Anonyme|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(La deuxième partie de l’ID d’utilisateur est hachée de façon différente selon les utilisateurs).|Organisation du propriétaire du formulaire|Répondant|
+||||
+
+### <a name="sensitivity-label-activities"></a>Activités des étiquettes de confidentialité
 
 Le tableau suivant répertorie les événements provoquant des activités d’étiquetage pour les sites SharePoint Online et Teams.
 
