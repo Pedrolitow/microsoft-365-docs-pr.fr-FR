@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle outil d’évaluation des données (aperçu) de Microsoft 365.
-ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071075"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328076"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Vue d’ensemble des enquêtes de données (aperçu) dans Microsoft 365
 
@@ -31,7 +31,7 @@ Cet article décrit l’utilisation des fonctionnalités de l’outil nouvelles 
 
 ## <a name="permissions"></a>Autorisations
 
-Pour accéder à une enquête de données et effectuer une enquête, vous devez être membre du groupe de rôles Data investigation. Pour plus d’informations, consultez la rubrique [Assign Permissions for Data investigations](permissions.md).
+Pour accéder à une enquête de données et effectuer une enquête, vous devez être membre du groupe de rôles Data investigation. Pour plus d’informations, consultez la rubrique [Assign Permissions for Data investigations](data-investigations-permissions.md).
 
 ## <a name="data-investigations-preview-workflow"></a>Flux de travail enquêtes de données (aperçu) 
 

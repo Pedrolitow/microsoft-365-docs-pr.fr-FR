@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ca08e84bf27a64ba7515b6f4c0307c94621601c
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 01c580cd671a84ef68c18b114e133f046a3e5b3b
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280102"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328066"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise pour les applications de bureau géré Microsoft
 
@@ -59,5 +59,5 @@ Sécurité :
 
 Microsoft Managed Desktop prend en charge uniquement les pilotes de périphériques disponibles via Windows Update ou la boîte de réception installée avec l’appareil géré Microsoft. 
 
-Si une application requiert un ou plusieurs pilotes pour l’exécuter, elle est considérée comme une application restreinte et nécessite le déploiement de Microsoft Managed Desktop. 
+Si une application requiert un ou plusieurs pilotes pour l’exécuter, elle est considérée comme une application restreinte et nécessite une exception avant d’être déployée sur le bureau géré Microsoft. 
 

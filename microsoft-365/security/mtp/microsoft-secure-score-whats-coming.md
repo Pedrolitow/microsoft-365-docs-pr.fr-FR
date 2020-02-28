@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55c7cb34c5484eaf8f6693be0ce439e33a82550f
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 4d445d4c917a46b12592308f599570725ace8e9d
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266966"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322563"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Qu’est-ce qui arrive dans le score de sécurité Microsoft ?
 
@@ -59,7 +59,7 @@ Les actions d’amélioration d’Intune suivantes seront supprimées :
 - Exiger que tous les appareils disposent de configurations de sécurité avancées
 - Vérifier toutes les semaines les périphériques bloqués
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable 
 
 Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons les actions d’amélioration suivantes.
 
@@ -93,7 +93,7 @@ Pour ces raisons, toutes les actions d’amélioration nécessitant une cadence 
 
 ## <a name="march-16th-2020"></a>16 mars 2020
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable ou ne fournissent pas une représentation utile de la position de la sécurité
 
 Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons les actions d’amélioration suivantes.
 
@@ -102,6 +102,7 @@ Pour vous assurer que le score de sécurité de Microsoft est significatif et qu
 - Configurer les liens fiables Office 365 pour vérifier les URL
 - Ne pas autoriser la délégation de boîte aux lettres
 - Autoriser les liens de partage d’invités anonymes pour les sites et les documents
+- Activer la console de sécurité des applications Cloud
 
 ### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Prise en charge des paramètres de sécurité par défaut pour les actions d’amélioration Azure AD
 

@@ -7,26 +7,26 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b20c3b3be7c4582c7adbfae183698c2725de4e7f
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982485"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328086"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Services Microsoft Managed Desktop Device
 
 Cette rubrique répertorie les services et les limitations de service pour les appareils de bureau gérés par Microsoft.
 
-## <a name="device-services"></a>Services d’appareil
+## <a name="device-services"></a>Services d’appareils
 
 Microsoft fournira ces services pour les appareils de bureau gérés par Microsoft. Pour plus d’informations sur les appareils de bureau gérés par Microsoft, consultez la rubrique [Microsoft Managed Desktop Devices](device-list.md).
 
  | 
  --- | ---
-Assistance | Les agents de support répondent aux questions directement liées à la fonctionnalité du périphérique et diagnostiquent les problèmes liés aux appareils.
+Support | Les agents de support répondent aux questions directement liées à la fonctionnalité du périphérique et diagnostiquent les problèmes liés aux appareils.
 Inventaire | Tous les appareils sont suivis dans le portail d’administration de bureau géré Microsoft pour le suivi de l’inventaire et de l’État.
-Mises à jour du microprogramme/pilote | Par défaut, les périphériques de bureau gérés par Microsoft reçoivent les mises à jour du microprogramme et des pilotes à partir de Windows Update. Tous les partenaires de matériel ne déploient pas leurs mises à jour via Windows Update ; ces mises à jour peuvent être demandées séparément.
+Mises à jour du microprogramme/pilote | Par défaut, les périphériques de bureau gérés par Microsoft reçoivent les mises à jour du microprogramme et des pilotes à partir de Windows Update. Tous les partenaires de matériel ne déploient pas leurs mises à jour via Windows Update. Les mises à jour qui ne sont pas publiées comme automatiques nécessitent une exception et doivent être déployées par le client.
 Installés | Les accessoires fournis avec votre appareil sont couverts par les mêmes services que le périphérique lui-même, mais les conditions de garantie peuvent varier. Reportez-vous aux conditions de garantie choisies lors de la sélection de vos appareils. 
 Configuration de l’appareil    | Les appareils seront préconfigurés avec la version actuelle de Windows et recevront leurs applications et configurations via le Cloud. 
 

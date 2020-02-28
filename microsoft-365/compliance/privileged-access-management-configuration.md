@@ -1,5 +1,5 @@
 ---
-title: Configuration de la gestion des accès privilégiés dans Office 365
+title: Prise en main de la gestion des accès privilégiés
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
-description: Utilisez cette rubrique pour en savoir plus sur la configuration de la gestion des accès privilégiés dans Office 365
-ms.openlocfilehash: 36a473369ba539230bc4bbb2a630d74830844fc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Utilisez cette rubrique pour en savoir plus sur la configuration de la gestion des accès privilégiés.
+ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601731"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322524"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a>Configuration de la gestion des accès privilégiés dans Office 365
+# <a name="get-started-with-privileged-access-management"></a>Prise en main de la gestion des accès privilégiés
 
 >[!IMPORTANT]
 >Cette rubrique traite des conseils de déploiement et de configuration pour les fonctionnalités uniquement disponibles dans Office 365 E5 et les SKU de conformité avancée.
