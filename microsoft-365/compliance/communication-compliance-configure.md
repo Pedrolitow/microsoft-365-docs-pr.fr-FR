@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1c53eded5e50d480cdce2ccbcb61f732bc899041
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4f456b44ed0d7b3fb83a20d9c66ab49ff8af4946
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078775"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333664"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -45,7 +45,7 @@ Procédez comme suit pour configurer et utiliser la conformité des communicatio
 >[!Important]
 >Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Les rôles attribués au cours de cette étape sont obligatoires avant toute accessibilité des fonctionnalités de conformité de la communication.
 
-Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365, vous devez disposer du rôle d' **administrateur examen de surveillance** . Vous devez créer un nouveau groupe de rôles pour les relecteurs avec les rôles **administrateur de révision de surveillance**, gestion des **cas**et **examen** pour examiner et corriger les messages avec des correspondances de stratégie.
+Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365, vous devez disposer du rôle d' **administrateur examen de surveillance** . Vous devez créer un nouveau groupe de rôles pour les relecteurs avec l' **administrateur de vérification de surveillance**, la gestion des **cas**, l' **administrateur de conformité**et les rôles de **révision** pour examiner et corriger les messages avec des correspondances de stratégie.
 
 ### <a name="create-a-new-role-group"></a>Créer un groupe de rôles
 
@@ -57,9 +57,9 @@ Pour que la conformité de la **communication** soit disponible sous la forme d�
 
 4. Dans le champ **nom** , attribuez un nom convivial au nouveau groupe de rôles. Sélectionnez **Suivant**.
 
-5. Sélectionnez **choisir les rôles** , puis **Ajouter**. Activez la case à cocher **administrateur de révision de surveillance**, gestion **des** **cas**, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
+5. Sélectionnez **choisir les rôles** , puis **Ajouter**. Activez la case à cocher **administrateur de vérification de surveillance**, gestion des **cas**, **administrateur de conformité**et **révision**, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
 
-    ![Groupes de rôles obligatoires de conformité de la communication](../media/communication-compliance-role-groups.png)
+    ![Groupes de rôles obligatoires de conformité de la communication](../media/communication-compliance-role-groups-1.png)
 
 6. Sélectionnez **choisir les membres** , puis **Ajouter**. Activez la case à cocher de tous les utilisateurs et groupes pour lesquels vous souhaitez créer des stratégies et gérer les messages avec des correspondances de stratégie, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
 

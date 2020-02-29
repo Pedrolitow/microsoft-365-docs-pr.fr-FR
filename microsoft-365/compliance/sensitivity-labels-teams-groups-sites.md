@@ -17,24 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez appliquer des étiquettes à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint.
-ms.openlocfilehash: 611876b7e403c8d877c602d21967675adef2d061
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 350e1906e4d645c444d772b1ade9a2ff9c850992
+ms.sourcegitcommit: 1b1425142ae06deae3da10a7d30dce4db029d6d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288564"
+ms.locfileid: "42313799"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)
 
-Lorsque vous créez des étiquettes de confidentialité dans le [Centre de conformité Microsoft 365](https://protection.office.com/), vous pouvez désormais les appliquer aux conteneurs suivants : Microsoft Teams, les groupes Office 365 et les sites SharePoint. Utilisez les paramètres d’étiquette pour contrôler les options suivantes de ces conteneurs :
+Lorsque vous créez des étiquettes de confidentialité dans le [Centre de conformité Microsoft 365](https://protection.office.com/), vous pouvez désormais les appliquer aux conteneurs suivants : Microsoft Teams, les groupes Office 365 et les sites SharePoint. Utilisez les paramètres d’étiquette pour contrôler les options suivantes pour ces conteneurs :
 
-- Confidentialité de sites d’équipes Office 365 connectés au groupe (privés ou publiques)
+- Confidentialité (privée ou publique) de sites d’équipes Office 365 connectés au groupe
 - Accès des utilisateurs externes
 - Accès à partir d’appareils enregistrés 
 
-Lorsque vous appliquez cette étiquette à l’un des conteneurs pris en charge, l’étiquette applique automatiquement les options configurées sur le site SharePoint ou le site d’équipe connecté. 
+Lorsque vous appliquez cette étiquette à l’un des conteneurs pris en charge, l’étiquette applique automatiquement les options configurées au site SharePoint ou au site d’équipe connecté. 
 
-Le contenu de ces conteneurs n’hérite toutefois pas des étiquettes pour des paramètres tels que le nom d’étiquette, les marques visuelles ou le chiffrement. Pour étiqueter des fichiers sur des sites SharePoint ou des sites d'équipes, consultez [Activer des étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Le contenu de ces conteneurs n’hérite toutefois pas des étiquettes pour les paramètres tels que le nom d’étiquette, les marques visuelles ou le chiffrement. Pour étiqueter des fichiers sur des sites SharePoint ou des sites d'équipes, consultez [Activer des étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>À propos de la préversion publique Microsoft Teams, les groupes Office 365 et les sites SharePoint
 
@@ -42,7 +42,7 @@ Les étiquettes de confidentialité pour Microsoft Teams, les groupes Office 365
 
 Avant d’activer cette préversion et de configurer des étiquettes de confidentialité pour les nouveaux paramètres, les utilisateurs peuvent afficher et appliquer des étiquettes de confidentialité dans leurs applications. Par exemple, à partir de Word :
 
-![Étiquette de confidentialité affichée dans l’application de bureau de Word](../media/sensitivity-label-word.png)
+![Étiquette de confidentialité affichée dans l’application de bureau Word](../media/sensitivity-label-word.png)
 
 Après avoir activé et configuré cette préversion, les utilisateurs peuvent également voir et appliquer des étiquettes de confidentialité à Microsoft Teams, à des groupes Office 365 et à des sites SharePoint. Par exemple, lorsque vous créez un nouveau site d’équipe à partir de SharePoint :
 
@@ -52,7 +52,7 @@ Après avoir activé et configuré cette préversion, les utilisateurs peuvent �
 
 1. Cette fonctionnalité utilisant une fonctionnalité Azure Active Directory, suivez les instructions de la documentation Azure Active Directory pour activer la préversion : [Attribuer des étiquettes de confidentialité à des groupes Office 365 dans Azure Active Directory (préversion)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. Dans une session PowerShell, connectez-vous au Centre de sécurité et de conformité à l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général. Pour obtenir des instructions, consultez [Se connecter au Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. Dans une session PowerShell, connectez-vous au Centre de sécurité et de conformité à l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général. Pour obtenir des instructions, veuillez consulter [Se connecter au Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 3. Exécutez les commandes suivantes pour synchroniser vos étiquettes avec Azure Active Directory afin de pouvoir les utiliser avec des groupes Office 365 :
     
@@ -80,7 +80,7 @@ Dans cette nouvelle page de **Paramètres de site et de groupe**, configurez les
 
 - **Appareils non gérés** : pour les [appareils non gérés](/sharepoint/control-access-from-unmanaged-devices), autorisez l’accès total, l’accès web uniquement ou bloquer totalement l’accès. 
 
-![Onglet Paramètres du site et du groupe](../media/edit-sensitivity-label-site-group.png)
+![L'onglet Paramètres de site et de groupe](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
 > Seuls ces paramètres de sites et de groupes prennent effet lorsque vous appliquez une étiquette à une équipe, un groupe ou un site. D'autres paramètres d'étiquette, tels que le chiffrement et le marquage de contenu, ne sont pas appliqués au contenu au sein de l’équipe, du groupe ou du site.
@@ -208,7 +208,7 @@ Lorsque vous apportez des modifications aux paramètres de site et de groupe pou
 Vous pouvez utiliser les étiquettes de confidentialité que vous avez configurées pour les paramètres de sites et de groupes avec les applications et services suivants :
 
 - SharePoint Online
-- Teams
+- Équipes
 - Outlook sur le web
 - Centre d’administration SharePoint
 - Centre d’administration d’Azure AD
@@ -232,7 +232,7 @@ Les autres services et applications dans lesquels vous ne pouvez pas à ce jour 
 
 ## <a name="classic-azure-ad-site-classification"></a>Classification classique de sites Azure Active Directory
 
-Office 365 ne prend plus en charge les anciennes classifications pour de nouveaux groupes et des sites SharePoint lorsque vous activez cette préversion. Toutefois, les groupes et sites existants affichent encore les anciennes classifications, sauf si vous les convertissez pour utiliser des étiquettes de confidentialité. Les anciennes classifications incluent la classification de sites « moderne » que vous avez configurée, par l’intermédiaire d’Azure AD PowerShell ou de la bibliothèque principale PnP, qui a défini des valeurs pour le paramètre `ClassificationList`.
+Office 365 ne prend plus en charge les anciennes classifications pour les nouveaux groupes et les sites SharePoint lorsque vous activez cette préversion. Toutefois, les groupes et sites existants affichent encore les anciennes classifications, sauf si vous les convertissez pour utiliser des étiquettes de confidentialité. Les anciennes classifications incluent la classification de sites « moderne » que vous avez configurée, par l’intermédiaire d’Azure AD PowerShell ou de la bibliothèque principale PnP, qui a défini des valeurs pour le paramètre `ClassificationList`.
 
 Par exemple, dans PowerShell :
 
