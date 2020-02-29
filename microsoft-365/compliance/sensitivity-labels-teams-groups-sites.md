@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez appliquer des étiquettes à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint.
-ms.openlocfilehash: 350e1906e4d645c444d772b1ade9a2ff9c850992
-ms.sourcegitcommit: 1b1425142ae06deae3da10a7d30dce4db029d6d3
+ms.openlocfilehash: 477b168435d36170a1506adff021ee4cb5ab5162
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42313799"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333711"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)
 
@@ -87,7 +87,7 @@ Dans cette nouvelle page de **Paramètres de site et de groupe**, configurez les
 > 
 > De la même façon, si vous créez une étiquette et que vous n’activez pas les paramètres de ces sites et de ces groupes, l’étiquette demeure disponible lorsque les utilisateurs créent des équipes, des groupes et des sites, mais seul le nom d'étiquette sera appliqué.
 
-Si votre étiquette n’est pas encore publiée, publiez-la dès maintenant en [l’ajoutant à une stratégie d'étiquette](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
+Si votre étiquette de confidentialité n’est pas encore publiée, publiez-la dès maintenant en [l’ajoutant à une stratégie d'étiquette de confidentialité](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). Les utilisateurs auxquels sont assignés une stratégie d’étiquette de confidentialité incluant cette étiquette pourront la sélectionner pour des sites et des groupes.
 
 ## <a name="sensitivity-label-management"></a>Gestion des étiquettes de confidentialité
 
