@@ -1,19 +1,19 @@
 ---
-title: Informations sur les mises à jour de sécurité Windows
+title: Perspectives sur la mise à jour de sécurité Windows
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 600491fbdd70315385587eb8cb443a1696c3bee6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254589"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341258"
 ---
-# <a name="windows-security-update-insights"></a>Informations sur les mises à jour de sécurité Windows
+# <a name="windows-security-update-insights"></a>Perspectives sur la mise à jour de sécurité Windows
 Cet affichage fournit une vue d’ensemble de l’état des mises à jour de sécurité pour vos appareils de bureau gérés par Microsoft. 
 
 Pour afficher les données d’utilisation, sélectionnez l’onglet <strong>mises à jour de sécurité Windows</strong> .
@@ -28,7 +28,7 @@ Nous catégoriserons l’activité de l’appareil dans le contexte de Windows U
 
 - <strong>Actif :</strong> Appareils ayant satisfait aux critères d’utilisation minimaux (six heures, deux en continu) pour la version la plus récente de la mise à jour de sécurité et qui ont archivé avec Microsoft Intune au moins tous les cinq jours
 - <strong>Synchronisés :</strong> Appareils ayant archivé avec Intune au cours des 28 derniers jours
-- <strong>Désynchronisation</strong> – appareils qui n’ont <i>pas</i> archivé avec Intune au cours des 28 derniers jours
+- <strong>Désynchronisation :</strong> Appareils qui <i>n’ont pas</i> archivé avec Intune au cours des 28 derniers jours
 
 
 

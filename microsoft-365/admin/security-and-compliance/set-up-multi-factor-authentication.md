@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment utiliser les paramètres par défaut de sécurité pour configurer multi-factor authentication pour les utilisateurs d’Office 365.
 monikerRange: o365-worldwide
-ms.openlocfilehash: bc906299e42929dd4dd09b94502a6d463a5971b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: cb2205e5f5b7df4f6e7d8f7263a91fb2f0f4d3e2
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254205"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341251"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurer Multi-factor Authentification (MFA)
   
@@ -88,11 +88,11 @@ Les applications clientes Office 2016 prennent en charge l'authentification mult
 
 2. Dans la section **utilisateurs actifs** , cliquez sur **authentification multifacteur**.
 
-3. Sur la page **authentification multifacteur** , sélectionnez **utilisateur** si vous activez cette option pour un utilisateur ou si vous pouvez effectuer une **mise à jour en bloc**.
+3. Sur la page **authentification multifacteur** , sélectionnez **utilisateur** si vous activez cette option pour un utilisateur ou sélectionnez **mise à jour en bloc** pour activer plusieurs utilisateurs.
 
 4. Cliquez sur **activer** sous **étapes rapides**.
 
-5. Dans la fenêtre contextuelle, CLickc sur **Enable Multi-Factor Authentication**.
+5. Dans la fenêtre contextuelle, cliquez sur **activer l’authentification multifacteur**.
 
 Une fois défini Multi-Factor Authentification pour votre organisation, vos utilisateurs doivent configurer la vérification en deux étapes. Pour en savoir plus, voir [Configurer la vérification en deux étapes pour Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
     

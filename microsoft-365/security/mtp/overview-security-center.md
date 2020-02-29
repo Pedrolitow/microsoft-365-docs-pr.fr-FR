@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7be52ae276fa00b8bad6f03b27c88ebba0f02880
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eb341e3f27ade163c6d646f759efed7504dad342
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086603"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333691"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Présentation du Centre de sécurité Microsoft 365
 
@@ -63,3 +63,6 @@ Explorez ces rubriques relatives à la surveillance, à l’examen et à la rép
 - [Signaler](monitoring-and-reporting.md) l’état de vos identités, données, périphériques, applications et infrastructure
 - [Recherche proactive de menaces](advanced-hunting-overview.md) pour les tentatives d’intrusion et l’activité de violation affectant votre courrier, vos données, vos périphériques et vos comptes
 - [Comprendre les dernières campagnes](latest-attack-campaigns.md) et techniques d’attaque avec l’analyse des menaces
+
+## <a name="related-topics"></a>Sujets associés
+- [Portails de sécurité Microsoft 365](portals.md)

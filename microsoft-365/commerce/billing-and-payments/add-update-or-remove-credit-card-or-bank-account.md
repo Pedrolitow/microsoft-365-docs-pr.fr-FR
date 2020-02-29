@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Découvrez comment gérer vos modes de paiement dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 7e217f5fcb7f93e91ec0ed3ab6d4a806597fbfb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 56ffbcc638ecfe304ff71273ec2ce00abd05ddca
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242523"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341226"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Ajouter, mettre à jour ou supprimer vos modes de paiement
 
@@ -42,6 +42,8 @@ Vous pouvez uniquement gérer les modes de paiement que vous avez ajoutés.
 > L’option de paiement avec un compte bancaire n’est pas disponible dans certains pays ou certaines régions.
 >
 > Vous devez utiliser une carte de crédit émise à partir du même pays que votre client.
+
+**Est-ce que l’interface que vous voyez ne correspond pas à celle décrite dans cet article ?** Si c’est le cas, consultez la rubrique [Manage Payment Methods](manage-payment-methods.md).
 
 ## <a name="add-a-payment-method"></a>Ajouter un mode de paiement
 
