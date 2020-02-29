@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: ef4b5c9768687864427a0805039a35958c476142
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: 5a9ebf1cb2333f4aa7ca98ce36171ad5fce8dad2
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278770"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328120"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
@@ -155,7 +155,10 @@ Lorsque vous attribuez des autorisations, vous pouvez choisir :
 - Tous les membres de votre organisation (tous les membres du client). Ce paramètre exclut les comptes Invité.
 - Tout utilisateur authentifié. Assurez-vous de bien comprendre la [configuration requise et les limitations](#requirements-and-limitations-for-add-any-authenticated-users) de ce paramètre avant de le sélectionner.
 - N’importe quel utilisateur, groupe de sécurité à extension messagerie, groupe de distribution, groupe Office 365 ou groupe de distribution dynamique. 
-- Une adresse e-mail ou un domaine en dehors de votre organisation, tels que gmail.com, hotmail.com ou outlook.com. 
+- Tout domaine ou adresse de messagerie. Utilisez cette option pour indiquer tous les utilisateurs d’une autre organisation qui utilisent Azure Active Directory, en entrant un nom de domaine dans cette organisation. Vous pouvez également utiliser cette option pour les fournisseurs de réseaux sociaux en entrant leur nom de domaine tel que par exemple, **gmail.com**, **hotmail.com**ou **outlook.com**.
+
+> [!NOTE]
+> Si vous indiquez le domaine d’une organisation qui utilise Azure Active Directory, vous ne pouvez pas limiter l’accès à ce domaine spécifique. Au lieu de cela, tous les domaines vérifiés dans Azure Active Directory sont automatiquement inclus pour le client possédant le nom de domaine que vous indiquez.
 
 Lorsque vous choisissez tous les membres de client ou parcourez l’annuaire, les utilisateurs ou les groupes doivent avoir une adresse e-mail.
 
@@ -163,7 +166,7 @@ Nous vous recommandons d’utiliser des groupes plutôt que des utilisateurs. En
 
 ##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Configuration requise et restrictions pour **Ajouter des utilisateurs authentifiés**
 
-Ce paramètre ne limite pas les personnes autorisées à accéder au contenu chiffré par l’étiquette, même s'il chiffre le contenu et vous propose des options permettant de limiter la façon dont le contenu peut être utilisé (autorisations) ou consulté (expiration et accès en mode hors connexion). Toutefois, l’application ouvrant le contenu chiffré doit pouvoir prendre en charge l’authentification utilisée. Pour cette raison, les réseaux sociaux tels que Google et l'authentification unique par mot de passe conviennent seulement pour la messagerie électronique, et uniquement lorsque vous utilisez Exchange Online et les nouvelles fonctionnalités du chiffrement de messages d’Office 365. Les comptes Microsoft peuvent être utilisés avec les applications Office 365 et le [visionneur Azure Information Protection](https://portal.azurerms.com/#/download).
+Ce paramètre ne limite pas les personnes autorisées à accéder au contenu chiffré par l’étiquette, même s'il chiffre le contenu et vous propose des options permettant de limiter la façon dont le contenu peut être utilisé (autorisations) ou consulté (expiration et accès en mode hors connexion). Toutefois, l’application ouvrant le contenu chiffré doit pouvoir prendre en charge l’authentification utilisée. Pour cette raison, les fournisseurs sociaux fédérés tels que Google, et l'authentification par numéro de code unique conviennent seulement pour la messagerie électronique, et uniquement lorsque vous utilisez Exchange Online. Les comptes Microsoft peuvent être utilisés avec les applications Office 365 et le [visionneur Azure Information Protection](https://portal.azurerms.com/#/download).
 
 Voici des scénarios classiques pour les paramètres des utilisateurs authentifiés :
 - Peu vous importe la personne qui affiche le contenu, mais vous souhaitez limiter son utilisation. Par exemple, vous ne voulez pas que le contenu soit modifié, copié ou imprimé.
@@ -175,9 +178,9 @@ Voici des scénarios classiques pour les paramètres des utilisateurs authentifi
 Lorsque vous choisissez les autorisations à attribuer à ces utilisateurs ou ces groupes, vous pouvez sélectionner :
 
 - Un [niveau d’autorisation prédéfini](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) avec un groupe de droits prédéfini, par exemple, Co-auteur ou Réviseur.
-- Un groupe d’autorisations personnalisé, avec lequel vous choisissez les autorisations que vous voulez.
+- Autorisations personnalisées dans lesquelles vous choisissez un ou plusieurs droits d’utilisation.
 
-Pour plus d’informations sur chacune des autorisations spécifiques, reportez-vous à [Descriptions et droits d’utilisation](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+Pour obtenir plus d'informations sur la sélection des autorisations appropriées, consultez les [Droits d'utilisation et descriptions](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
 ![Options de choix d’autorisations prédéfinies ou personnalisées](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -255,6 +258,97 @@ Pour l’étiquetage intégré, les utilisateurs consultent la même boîte de d
 - MacOS : onglet **Révision** > **Protection** > **Autorisations** > **Accès restreint**
 
 
+## <a name="example-configurations-for-the-encryption-settings"></a>Exemples de configurations pour paramètres de chiffrement
+
+Pour chaque exemple ci-dessous, effectuez la configuration à partir de la page sur le **Chiffrement** de l’Assistant lorsque vous [créez ou modifiez une étiquette de sensibilité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). Vérifiez tout d’abord que le **Chiffrement** est paramétré sur **Appliquer** :
+
+![Appliquez l'option de chiffrement dans l’Assistant étiquette de confidentialité](../media/apply-encryption-option.png)
+
+### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>Exemple 1 : étiquette qui s’applique Ne pas transférer pour envoyer un courrier électronique chiffré vers un compte Gmail
+
+Cette étiquette est uniquement disponible dans Outlook et Outlook sur le web. Vous devez de plus utiliser Exchange Online. Avisez les utilisateurs de sélectionner cette étiquette lorsqu’ils doivent envoyer un courrier électronique chiffré à des personnes utilisant un compte Gmail (ou tout autre compte de messagerie extérieur à celui de votre organisation). 
+
+Vos utilisateurs tapent l’adresse de messagerie Gmail dans la zone **À**.  Ils sélectionnent ensuite l’étiquette et l’option Ne pas transférer est automatiquement ajoutée au courrier. Les destinataires ne peuvent par conséquent pas transférer le courrier électronique ou l’imprimer, en faire une copie, ou enregistrer le message à l’extérieur de leur boîte aux lettres à l’aide de l’option **Enregistrer sous**. 
+
+1. Sur la page de **Chiffrement** : pour **Attribuer des autorisations maintenant ou autoriser les utilisateurs à choisir ?** sélectionnez **Autoriser les utilisateurs à attribuer des autorisations lorsqu’ils appliquent l’étiquette**.
+
+3. Sélectionnez la case à cocher : **Dans Outlook, appliquer des restrictions équivalant à l’option Ne pas transférer**.
+
+4. Si sélectionnée, désactivez la case à cocher : **Dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations**.
+
+5. Sélectionnez **Suivant** et terminez l’Assistant.
+
+
+### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>Exemple 2 : étiquette restreignant l’accès en lecture seule à tous les utilisateurs d’une autre organisation
+
+Cette étiquette est adaptée au partage de documents très sensibles en lecture seule. Une connexion internet doit toujours être utilisée pour afficher les documents.
+
+Cette étiquette ne peut pas être utilisée pour les courriers électroniques.
+
+1. Sur la page de **Chiffrement** : pour **Attribuer des autorisations maintenant ou autoriser les utilisateurs à choisir ?** sélectionnez **Attribuer maintenant des autorisations**.
+
+3. Pour **Autoriser l’accès en mode hors connexion**, sélectionnez **Jamais**.
+
+4. Sélectionnez **Attribuer des autorisations**.
+
+3. Dans le volet **Attribuer des autorisations**, sélectionnez **Ajouter ces adresses e-mail ou domaines**.
+
+4. Dans la zone de texte, entrez le nom de domaine de l’autre organisation, par exemple, **fabrikam.com**. Puis sélectionnez **Ajouter**.
+
+5. Sélectionnez **Choisir des autorisations à partir des autorisations présentes ou personnalisées**.
+
+6. Dans le volet **Sélectionner des autorisations à partir des autorisations présentes ou personnalisées**, sélectionnez la zone déroulante, puis sélectionnez **Visionneuse**, et **Enregistrer**.
+
+6. De nouveau dans le volet **Attribuer des autorisations**, sélectionnez **Enregistrer**.
+
+7. Sur la page **Chiffrement**, sélectionnez **Suivant** et terminez l’Assistant.
+
+
+### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>Exemple 3 : ajouter des utilisateurs externes à une étiquette existante qui chiffre du contenu
+
+Les nouveaux utilisateurs que vous ajoutez pourront ouvrir des documents et des messages électroniques déjà protégés par cette étiquette. Les autorisations accordées à ces utilisateurs peuvent être différentes de celles des utilisateurs existants.
+
+1. Sur la page de **Chiffrement** : pour **Attribuer des autorisations maintenant ou autoriser les utilisateurs à choisir ?** assurez-vous que l'option **Attribuer maintenant des autorisations est sélectionnée**.
+
+2. Sélectionnez **Attribuer des autorisations**.
+
+3. Dans le volet **Attribuer des autorisations**, sélectionnez **Ajouter ces adresses e-mail ou domaines**.
+
+4. Dans la zone de texte, entrez l’adresse de courrier du premier utilisateur (ou groupe) à ajouter, puis sélectionnez **Ajouter**.
+
+5. Sélectionnez **Choisir des autorisations à partir des autorisations présentes ou personnalisées**.
+
+6. Dans le volet **Sélectionner des autorisations à partir des autorisations présentes ou personnalisées**, sélectionnez les autorisations pour cet utilisateur (ou ce groupe), puis sélectionnez **Enregistrer**.
+
+7. De nouveau dans le volet **Attribuer des autorisations**, répétez les étapes 3 à 6 pour chaque utilisateur (ou groupe) que vous souhaitez ajouter à cette étiquette. Cliquez sur **Enregistrer**.
+
+8. Sur la page **Chiffrement**, sélectionnez **Suivant** et terminez l’Assistant.
+
+
+### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>Exemple 4 : étiquette qui chiffre du contenu, mais qui ne limite pas les personnes pouvant y accéder
+
+Cette configuration présente l’avantage de ne pas avoir à spécifier des utilisateurs, groupes ou domaines pour chiffrer un courrier électronique ou un document. Le contenu reste chiffré et vous pouvez spécifier les droits d’utilisation, la date d’expiration et l’accès hors connexion. 
+
+Utilisez seulement cette configuration lorsque vous n’avez pas besoin de restreindre les utilisateurs autorisés à ouvrir le document ou le courrier protégé. [Pour plus d'informations sur ce paramètre](#requirements-and-limitations-for-add-any-authenticated-users)
+
+1. Sur la page de **Chiffrement** : pour **Attribuer des autorisations maintenant ou autoriser les utilisateurs à choisir ?** assurez-vous que l'option **Attribuer maintenant des autorisations est sélectionnée**.
+
+2. Configurez les paramètres pour l'**Accès utilisateur au contenu expire** et **Autoriser l’accès hors connexion**, au besoin.
+
+3. Sélectionnez **Attribuer des autorisations**.
+
+4. Dans le volet **Attribuer des autorisations**, sélectionnez **Ajouter des utilisateurs authentifiés**. 
+    
+    Pour les **Utilisateurs et groupes**, vous remarquez que **AuthenticatedUsers** est automatiquement ajouté. Cette valeur ne peut pas être modifiée, mais vous pouvez la supprimer, ce qui annule la sélection **Ajouter des utilisateurs authentifiés**.
+
+5. Sélectionnez **Choisir des autorisations à partir des autorisations présentes ou personnalisées**.
+
+6. Dans le volet **Sélectionner des autorisations à partir des autorisations présentes ou personnalisées**, sélectionnez la zone déroulante, puis sélectionnez **Visionneuse** des autorisations souhaitées, et **Enregistrer**.
+
+7. De nouveau dans le volet **Attribuer des autorisations**, sélectionnez **Enregistrer**.
+
+8. Sur la page **Chiffrement**, sélectionnez **Suivant** et terminez l’Assistant.
+
 ## <a name="considerations-for-encrypted-content"></a>Considérations relatives au contenu chiffré
 
 Le chiffrement de vos documents et messages électroniques les plus confidentiels permet de s’assurer que seules les personnes autorisées peuvent accéder à ces données. Il existe toutefois des éléments dont vous devez tenir compte :
@@ -291,9 +385,9 @@ Pour que le chiffrement soit appliqué par les étiquettes de confidentialité, 
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>Configurer Exchange pour Azure Information Protection
 
-Il n’est pas nécessaire de configurer Exchange pour Azure Information Protection pour que les utilisateurs puissent appliquer des étiquettes dans Outlook pour protéger leurs e-mails. Toutefois, tant qu’Exchange n’a pas été configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités de protection Azure Rights Management avec Exchange.
+Il n’est pas nécessaire de configurer Exchange pour Azure Information Protection pour que les utilisateurs puissent appliquer des étiquettes dans Outlook afin de chiffrer leurs courriers électroniques. Cependant, aussi longtemps que Exchange n’est pas configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités d’utilisation de la protection d’Azure Rights Management avec Exchange.
  
-Par exemple, les utilisateurs ne peuvent pas afficher les e-mails protégés sur des téléphones mobiles ou avec Outlook sur le web, les messages e-mails protégés ne peuvent pas être indexés pour la recherche et vous ne pouvez pas configurer la protection contre la perte de données (DLP) Exchange Online pour la protection Rights Management. 
+Par exemple, les utilisateurs ne peuvent pas afficher les e-mails chiffrés sur des téléphones mobiles ou avec Outlook sur le web, les messages e-mails chiffrés ne peuvent pas être indexés pour la recherche et vous ne pouvez pas configurer la protection contre la perte de données (DLP) Exchange Online pour la protection Rights Management. 
 
 Pour vous assurer qu’Exchange est en mesure de prendre en charge ces scénarios supplémentaires, reportez-vous aux rubriques suivantes :
 
