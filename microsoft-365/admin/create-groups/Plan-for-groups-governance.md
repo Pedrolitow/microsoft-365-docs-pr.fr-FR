@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - BSA160
 description: Découvrez comment planifier la gouvernance de groupes Office 365.
-ms.openlocfilehash: 33c6562e85e98570e9f04e7b7ccb6d0fa882669d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b79da69995446aa7e61eea4d836e322743a7d2bb
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239264"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352905"
 ---
 # <a name="plan-for-governance-in-office-365-groups"></a>Plan de gouvernance dans les groupes Office 365
 
 Les groupes Office 365 disposent d’un ensemble complet d’outils permettant d’implémenter les fonctionnalités de gouvernance dont votre organisation peut avoir besoin. Cet article guide les professionnels de l’informatique pour poser les bonnes questions afin de déterminer leurs besoins en matière de gouvernance et comment les répondre en fonction de leur profil organisationnel.
 
 ## <a name="why-office-365-groups"></a>Pourquoi les groupes Office 365 ?
-![Description de l’image](../media/01.png)
+![Description de l’image](../../media/01.png)
 
 Nous connaissons que les organisations utilisent aujourd’hui un ensemble d’outils varié. Il existe une équipe de développeurs qui utilisent la conversation d’équipe, les cadres qui envoient du courrier électronique et l’ensemble de l’organisation qui se connecte via le réseau social de l’entreprise. Plusieurs outils de collaboration sont en cours d’utilisation, car chaque groupe est unique et possède ses propres besoins fonctionnels et sa propre pratique. Certains utiliseront uniquement le courrier électronique, tandis que d’autres seront principalement en conversation. 
 
@@ -71,7 +71,7 @@ Pour en savoir plus sur les ressources créées pour chaque groupe, consultez la
 ## <a name="where-to-start-a-conversation"></a>Où démarrer une conversation
 Il existe plusieurs emplacements de conversation dans Office 365. La compréhension de l’emplacement de démarrage d’une conversation peut aider les organisations à définir une stratégie de communication.
 
-![Description de l’image](../media/02.png)
+![Description de l’image](../../media/02.png)
 
 - Équipes : espace de travail de conversation (collaboration à haute vitesse) – boucle interne
    - Conçu pour la collaboration avec les personnes avec lesquelles vous travaillez tous les jours
@@ -92,7 +92,7 @@ Il existe plusieurs emplacements de conversation dans Office 365. La compréhens
   - Partager du contenu, créer des pages personnalisées et créer des actualités
   - [Connexion](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview) de sites d’équipe SharePoint existants à de nouveaux groupes Office 365
 
-![Description de l’image](../media/03.png)
+![Description de l’image](../../media/03.png)
 
 ##  <a name="managing-and-governing-office-365-at-scale"></a>Gestion et régie d’Office 365 à l’horizontale
 
@@ -111,7 +111,7 @@ Les groupes Office 365 disposent d’un ensemble complet d’outils permettant d
 ### <a name="control-who-can-create-office-365-groups"></a>Contrôler les personnes autorisées à créer des groupes Office 365
 Les utilisateurs finaux peuvent créer des groupes à partir de plusieurs points de terminaison, dont Outlook, SharePoint, Microsoft teams et d’autres environnements.
 
-![Description de l’image](../media/04.png)
+![Description de l’image](../../media/04.png)
 > [!Tip]
 >- Envisagez d’utiliser en libre-service les propriétaires de groupe.
 >- Documentez et communiquez comment demander un groupe.
@@ -131,8 +131,8 @@ Votre organisation peut avoir des exigences spécifiques pour implémenter des c
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../media/decision_point.png)|Points de décision|<ul><li>Quel modèle de mise en service répond aux besoins de votre organisation ?</li><li>Votre organisation a-t-elle besoin de limiter la création de groupes aux administrateurs ?</li><li>Votre organisation a-t-elle besoin de limiter la création de groupe aux membres du groupe de sécurité ?</li><li>Votre organisation a-t-elle besoin de créer des groupes de manière dynamique en fonction des attributs des utilisateurs, tels que service ?</li></ul>|
-|![Description de l’image](../media/next_steps.png)|Étapes suivantes|<ul><li>Documentez les besoins de votre organisation en matière de création de groupes et d’équipes.</li><li>Planifiez la mise en œuvre de ces exigences dans le cadre de votre déploiement de groupes.</li><li>Communiquer et publier vos stratégies pour informer les utilisateurs du comportement attendu</li><li>Planifier l’implémentation de l’appartenance dynamique, le cas échéant.</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Quel modèle de mise en service répond aux besoins de votre organisation ?</li><li>Votre organisation a-t-elle besoin de limiter la création de groupes aux administrateurs ?</li><li>Votre organisation a-t-elle besoin de limiter la création de groupe aux membres du groupe de sécurité ?</li><li>Votre organisation a-t-elle besoin de créer des groupes de manière dynamique en fonction des attributs des utilisateurs, tels que service ?</li></ul>|
+|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Documentez les besoins de votre organisation en matière de création de groupes et d’équipes.</li><li>Planifiez la mise en œuvre de ces exigences dans le cadre de votre déploiement de groupes.</li><li>Communiquer et publier vos stratégies pour informer les utilisateurs du comportement attendu</li><li>Planifier l’implémentation de l’appartenance dynamique, le cas échéant.</li></ul>|
 
 > [!Important]
 > La limitation de la création de groupes et d’équipes peut ralentir la productivité des utilisateurs, car de nombreux services Office 365 nécessitent la création de groupes pour que le service fonctionne. Pour en savoir plus, consultez la rubrique [Pourquoi contrôler qui crée des groupes Office 365 ?](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide%23why-control-who-creates-office-365-groups)
@@ -153,8 +153,8 @@ Si vous avez supprimé un groupe Office 365, ce dernier est conservé par défau
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../media/decision_point.png)|Points de décision|<ul><li>Avez-vous besoin que certains biens soient archivés pour le stockage à long terme ?</li><li>Existe-t-il des exigences en matière de rétention pour votre organisation ?</li></ul>|
-|![Description de l’image](../media/next_steps.png)|Étapes suivantes|<ul><li>Communiquer et publier les stratégies de suppression et de restauration pour informer les utilisateurs du comportement attendu </li><li> Consignez les besoins de votre organisation en matière de surveillance des groupes supprimés.</li><li>Prévoyez d’implémenter ces exigences dans le cadre de votre déploiement de groupes.</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Avez-vous besoin que certains biens soient archivés pour le stockage à long terme ?</li><li>Existe-t-il des exigences en matière de rétention pour votre organisation ?</li></ul>|
+|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Communiquer et publier les stratégies de suppression et de restauration pour informer les utilisateurs du comportement attendu </li><li> Consignez les besoins de votre organisation en matière de surveillance des groupes supprimés.</li><li>Prévoyez d’implémenter ces exigences dans le cadre de votre déploiement de groupes.</li></ul>|
 
 > [!Important]
 >Si un utilisateur tente d'accéder au site pendant la période de « suppression réversible », il verra un message d'erreur 403 Interdit. Après cette période, si l'utilisateur tente d'accéder au site, il obtiendra un message 404 Introuvable.
@@ -176,8 +176,8 @@ Une stratégie de noms peut vous aider, ainsi que vos utilisateurs, à identifie
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle besoin d’une convention d’affectation de noms spécifique pour les groupes ?</li><li>Votre organisation a-t-elle besoin de la Convention d’affectation de noms pour toutes les charges de travail ?</li><li>Votre organisation a-t-elle des mots spécifiques que vous souhaitez empêcher les utilisateurs d’utiliser ?</li></ul>|
-|![Description de l’image](../media/next_steps.png)|Étapes suivantes|<ul><li>Consignez les conditions requises de votre organisation pour les groupes d’affectation de noms. </li><li> Prévoyez d’implémenter ces exigences dans le cadre de votre déploiement de groupes.</li><li> Communiquez et publiez les stratégies et les normes d’appellation pour informer les utilisateurs.</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle besoin d’une convention d’affectation de noms spécifique pour les groupes ?</li><li>Votre organisation a-t-elle besoin de la Convention d’affectation de noms pour toutes les charges de travail ?</li><li>Votre organisation a-t-elle des mots spécifiques que vous souhaitez empêcher les utilisateurs d’utiliser ?</li></ul>|
+|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Consignez les conditions requises de votre organisation pour les groupes d’affectation de noms. </li><li> Prévoyez d’implémenter ces exigences dans le cadre de votre déploiement de groupes.</li><li> Communiquez et publiez les stratégies et les normes d’appellation pour informer les utilisateurs.</li></ul>|
 
 > [!Important]
 >La stratégie de noms est appliquée aux groupes qui sont créés dans toutes les charges de travail de groupe (comme Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). Elle est appliquée à la fois au nom de groupe et à l’alias de groupe. Elle est appliquée lorsqu’un utilisateur crée un groupe et lorsque le nom ou l’alias du groupe est modifié pour un groupe existant.
@@ -206,8 +206,8 @@ Une fois que vous avez défini un groupe pour qu’il expire :
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../media/decision_point.png)|Points de décision|<ul><li>Votre organisation souhaite-t-elle spécifier une date d’expiration pour les équipes ?</li><li>Déterminer la stratégie de traitement des groupes orphelins ?</li></ul>|
-|![Description de l’image](../media/next_steps.png)|Étapes suivantes|<ul><li>Consignez les exigences de votre organisation concernant l’expiration, la rétention des données et l’archivage des groupes.</li><li>Prévoyez d’implémenter ces exigences dans le cadre de votre déploiement de groupes.</li><li>Planifier l’implémentation d’un travail personnalisé à des rapports sur des groupes qui ont des propriétaires uniques ou qui sont propriétaires. </li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation souhaite-t-elle spécifier une date d’expiration pour les équipes ?</li><li>Déterminer la stratégie de traitement des groupes orphelins ?</li></ul>|
+|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Consignez les exigences de votre organisation concernant l’expiration, la rétention des données et l’archivage des groupes.</li><li>Prévoyez d’implémenter ces exigences dans le cadre de votre déploiement de groupes.</li><li>Planifier l’implémentation d’un travail personnalisé à des rapports sur des groupes qui ont des propriétaires uniques ou qui sont propriétaires. </li></ul>|
 
 > [!Important]
 >Lorsque vous modifiez la stratégie d’expiration, le service recalcule la date d’expiration pour chaque groupe. Il commence toujours à compter à partir de la date de création du groupe, puis applique la nouvelle stratégie d’expiration.
@@ -225,8 +225,8 @@ Les administrateurs peuvent contrôler s’il faut autoriser l’accès invité 
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../media/decision_point.png)|Points de décision|<ul><li>Avez-vous besoin de limiter la possibilité d’ajouter des invités à teams par groupe ?</li><li> Votre organisation a-t-elle besoin de présenter des clauses d’exclusion de responsabilité pertinentes pour les besoins légaux ou de conformité ?</li><li>Votre organisation a-t-elle besoin de réduire la charge administrative de l’ajout et de la suppression d’utilisateurs ?</li><li>Votre organisation prévoit-elle des contrôles d’audit pour l’accès invité/externe ?</li></ul>|
-|![Description de l’image](../media/next_steps.png)|Étapes suivantes|<ul><li>Documentez les conditions requises pour l’accès invité/externe pour certains groupes classifiés, y compris la période de rétention et l’occurrence.</li><li>Les exigences de l’organisation de documents pour lesquelles les groupes doivent utiliser les conditions d’utilisation et la révision d’accès. </li><li>Effectuer des révisions pour gérer efficacement les appartenances aux groupes pour les utilisateurs internes et invités.</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Avez-vous besoin de limiter la possibilité d’ajouter des invités à teams par groupe ?</li><li> Votre organisation a-t-elle besoin de présenter des clauses d’exclusion de responsabilité pertinentes pour les besoins légaux ou de conformité ?</li><li>Votre organisation a-t-elle besoin de réduire la charge administrative de l’ajout et de la suppression d’utilisateurs ?</li><li>Votre organisation prévoit-elle des contrôles d’audit pour l’accès invité/externe ?</li></ul>|
+|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Documentez les conditions requises pour l’accès invité/externe pour certains groupes classifiés, y compris la période de rétention et l’occurrence.</li><li>Les exigences de l’organisation de documents pour lesquelles les groupes doivent utiliser les conditions d’utilisation et la révision d’accès. </li><li>Effectuer des révisions pour gérer efficacement les appartenances aux groupes pour les utilisateurs internes et invités.</li></ul>|
 
 
 #### <a name="resources"></a>*Resources*
@@ -248,8 +248,8 @@ Les groupes Office 365 sont basés sur les fonctionnalités avancées de sécuri
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle des exigences d’utilisation spécifiques qui doivent être communiquées à tous les utilisateurs ?</li><li>Votre organisation a-t-elle besoin des classifications de tout le contenu ?</li><li>Votre organisation nécessite-t-elle la conservation du contenu pendant une période de temps spécifique ?</li><li>Votre organisation nécessite-t-elle des stratégies de rétention de données spécifiques ? plied à des groupes ?</li><li>Votre organisation a-t-elle besoin d’avoir la possibilité d’archiver des groupes inactifs pour conserver le contenu ?</li><li>Les créateurs de groupe doivent-ils pouvoir attribuer des classifications spécifiques de l’organisation à teams ?</li></ul>|
-|![Description de l’image](../media/next_steps.png)|Étapes suivantes|<ul><li>Documenter les instructions d’utilisation de votre organisation pour les groupes</li><li>Consignez les exigences de votre organisation en matière de classification.</li><li>Déterminer les stratégies à appliquer en fonction de la classification, par exemple, la sensibilité, la rétention et l’accès invité</li><li>Définissez les étiquettes de confidentialité de votre organisation et les paramètres de protection que vous souhaitez associer.</li><li>Définir une stratégie d’étiquette pour contrôler les utilisateurs et les groupes qui voient ces étiquettes.</li><li>Configurez l' [étiquette de sensibilité des groupes](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) et commencez à classer les groupes dans votre organisation.</li><li>Planifiez la mise en œuvre de ces exigences dans le cadre de votre déploiement de groupes.</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle des exigences d’utilisation spécifiques qui doivent être communiquées à tous les utilisateurs ?</li><li>Votre organisation a-t-elle besoin des classifications de tout le contenu ?</li><li>Votre organisation nécessite-t-elle la conservation du contenu pendant une période de temps spécifique ?</li><li>Votre organisation nécessite-t-elle des stratégies de rétention de données spécifiques ? plied à des groupes ?</li><li>Votre organisation a-t-elle besoin d’avoir la possibilité d’archiver des groupes inactifs pour conserver le contenu ?</li><li>Les créateurs de groupe doivent-ils pouvoir attribuer des classifications spécifiques de l’organisation à teams ?</li></ul>|
+|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Documenter les instructions d’utilisation de votre organisation pour les groupes</li><li>Consignez les exigences de votre organisation en matière de classification.</li><li>Déterminer les stratégies à appliquer en fonction de la classification, par exemple, la sensibilité, la rétention et l’accès invité</li><li>Définissez les étiquettes de confidentialité de votre organisation et les paramètres de protection que vous souhaitez associer.</li><li>Définir une stratégie d’étiquette pour contrôler les utilisateurs et les groupes qui voient ces étiquettes.</li><li>Configurez l' [étiquette de sensibilité des groupes](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) et commencez à classer les groupes dans votre organisation.</li><li>Planifiez la mise en œuvre de ces exigences dans le cadre de votre déploiement de groupes.</li></ul>|
 
 
 #### <a name="resources"></a>*Resources*
@@ -274,8 +274,8 @@ Pour les années, les organisations s’appuyaient sur les groupes de distributi
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle des listes de distribution qui [ne sont pas éligibles](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade) pour la mise à niveau ?<li>Déterminez le type de groupe sur lequel la liste de distribution est la mieux migrée.</li></ul>|
-|![Description de l’image](../media/next_steps.png)|Étapes suivantes|<ul><li>Identifiez les listes de distribution qui seront candidates pour la mise à niveau vers les groupes Office 365.</li><li>Analysez vos sites d’équipe SharePoint existants pour voir quels sites sont prêts à être connectés en groupe.</li><li>Informez les autres équipes de votre entreprise que vous avez mis à niveau votre groupe de distribution et les étapes que vous avez prises pour le réussir.</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle des listes de distribution qui [ne sont pas éligibles](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade) pour la mise à niveau ?<li>Déterminez le type de groupe sur lequel la liste de distribution est la mieux migrée.</li></ul>|
+|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Identifiez les listes de distribution qui seront candidates pour la mise à niveau vers les groupes Office 365.</li><li>Analysez vos sites d’équipe SharePoint existants pour voir quels sites sont prêts à être connectés en groupe.</li><li>Informez les autres équipes de votre entreprise que vous avez mis à niveau votre groupe de distribution et les étapes que vous avez prises pour le réussir.</li></ul>|
 
 
 #### <a name="resources"></a>*Resources*
@@ -299,8 +299,8 @@ Pour les années, les organisations s’appuyaient sur les groupes de distributi
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle besoin de rapports réguliers pour comprendre l’utilisation des groupes Office 365 ?<li>Votre organisation a-t-elle besoin de rapports sur tous les groupes qui ont des membres externes ?</li></ul>|
-|![Description de l’image](../media/next_steps.png)|Étapes suivantes|<ul><li>Documentez les conditions requises de votre organisation pour examiner régulièrement les rapports d’activité des groupes.</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle besoin de rapports réguliers pour comprendre l’utilisation des groupes Office 365 ?<li>Votre organisation a-t-elle besoin de rapports sur tous les groupes qui ont des membres externes ?</li></ul>|
+|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Documentez les conditions requises de votre organisation pour examiner régulièrement les rapports d’activité des groupes.</li></ul>|
 
 
 #### <a name="resources"></a>*Resources*

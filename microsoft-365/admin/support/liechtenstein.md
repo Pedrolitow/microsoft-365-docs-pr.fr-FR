@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 32924c0595898b4e1d644bf4a6f592fd3cab2aef
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5aeca73e5cfb0db9d3677fbe82d57511564456ca
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244585"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357925"
 ---
 # <a name="contact-support-for-liechtenstein"></a>Contacter le support technique pour le Liechtenstein
 

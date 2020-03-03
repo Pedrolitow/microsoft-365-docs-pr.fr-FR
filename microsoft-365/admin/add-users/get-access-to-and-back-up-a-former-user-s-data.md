@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Découvrez comment conserver les fichiers et les e-mails d’un employé lorsque la personne quitte votre organisation.
-ms.openlocfilehash: 92e863e3b849f6a89e6d67d805fdb5024879999f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239385"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353195"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Accéder aux données d'un ancien utilisateur et les sauvegarder.
 
@@ -46,7 +46,7 @@ Pour conserver les fichiers OneDrive d’un ancien utilisateur, commencez par vo
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
     
 2. Sélectionnez un utilisateur.
 
@@ -143,15 +143,15 @@ Pour enregistrer les messages électroniques, le calendrier, les tâches et les 
     
 2. Dans Outlook, sélectionnez **fichier**.
     
-    ![Voici à quoi ressemble le ruban dans Outlook 2016.](../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
+    ![Voici à quoi ressemble le ruban dans Outlook 2016.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
 3. Sélectionnez **ouvrir &amp; ** l' \> **importation/exportation**de l’exportation.
     
-    ![Commande d’importation/exportation en mode Backstage](../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Commande d’importation/exportation en mode Backstage](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. Sélectionnez **Exporter vers un fichier**, puis cliquez sur **suivant**.
     
-    ![Option Exporter vers un fichier dans l’Assistant d’importation et d’exportation](../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![Option Exporter vers un fichier dans l’Assistant d’importation et d’exportation](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. Sélectionnez **fichier de données Outlook (. pst)**, puis **suivant**.
     
@@ -160,7 +160,7 @@ Pour enregistrer les messages électroniques, le calendrier, les tâches et les 
     > [!NOTE]
     > Vous pouvez exporter un compte à la fois. Si vous souhaitez exporter plusieurs comptes, après l’exportation d’un compte, répétez ces étapes. 
   
-    ![Boîte de dialogue Exporter le fichier de données Outlook avec le dossier supérieur sélectionné et inclure les sous-dossiers activés](../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Boîte de dialogue Exporter le fichier de données Outlook avec le dossier supérieur sélectionné et inclure les sous-dossiers activés](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Sélectionnez **Suivant**.
     
@@ -195,7 +195,7 @@ Pour accorder l’accès aux messages électroniques, au calendrier, aux tâches
     
 2. Sélectionnez **Importer à partir d’un autre programme ou fichier**, puis cliquez sur **suivant**.
     
-    ![Assistant d’importation et d’exportation](../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![Assistant d’importation et d’exportation](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. Sélectionnez **fichier de données Outlook (. pst)**, puis cliquez sur **suivant**.
     

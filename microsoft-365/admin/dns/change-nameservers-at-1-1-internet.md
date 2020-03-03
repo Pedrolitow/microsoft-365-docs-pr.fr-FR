@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Découvrez comment configurer Office 365 géré par 21Vianet pour gérer vos enregistrements DNS, quand 1&1 Internet est le fournisseur d’hébergement DNS.
-ms.openlocfilehash: 907e4fe097634d28ad44e4d44ba8c6ff2da9164d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3678d5372b9edd8e9333ad78862694b450abe53a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242931"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352565"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Modifier les serveurs de noms pour configurer Office 365 avec 1&1 IONOS
 
@@ -62,7 +62,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 ||||
 |:-----|:-----|:-----|
 |**Type** <br/> |**Prefix (Préfixe)** <br/> |**Name Value (Valeur de nom)** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Remarque**: Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Remarque**: Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. Sélectionnez **Enregistrer**, puis **Enregistrer** à nouveau. 
@@ -71,20 +71,20 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
 9. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
-2. Dans la page **domaines** , sélectionnez le domaine que vous vérifiez. 
+2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
     
-3. Sur la page **installation** , sélectionnez **Démarrer l’installation**.
+3. Dans la page **Configuration**, sélectionnez **Démarrer la configuration**.
     
-4. Sur la page **vérifier le domaine** , sélectionnez **vérifier**.
+4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d'autres problèmes suite à l'ajout des enregistrements DNS, consultez [Rechercher et corriger les problèmes suite à l'ajout de votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modifier les enregistrements de serveur de noms (NS) de votre domaine
 
@@ -124,11 +124,11 @@ Vous êtes prêt à modifier vos enregistrements NS de sorte que Office 365 puis
 |:-----|:-----|
 |**Name server 1 (Serveur de noms 1)** <br/> |ns1.bdm.microsoftonline.com  <br/> |
    
-   ![Saisie d’une valeur dans la zone Nom du serveur 1](../media/34509935-461f-427f-9796-c3cf840bd9be.png)
+   ![Saisie d’une valeur dans la zone Nom du serveur 1](../../media/34509935-461f-427f-9796-c3cf840bd9be.png)
   
 2. Dans le menu déroulant **Additional name servers (Autres serveurs de noms)**, sélectionnez **My secondary name servers (Mes serveurs de noms secondaires)**.
     
-    ![Choosing My secondary name servers in the list](../media/7eb14856-86da-45c2-910c-c72312250a18.png)
+    ![Choosing My secondary name servers in the list](../../media/7eb14856-86da-45c2-910c-c72312250a18.png)
   
 3. Dans les zones **Serveur de noms (2, 3 et 4)**, tapez ou copiez-collez les valeurs du tableau suivant. 
     
@@ -138,15 +138,15 @@ Vous êtes prêt à modifier vos enregistrements NS de sorte que Office 365 puis
 |**Serveur de noms 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Serveur de noms 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
 4. Cliquez sur **Enregistrer**.
     
-    ![Sélectionnez Enregistrer dans la page Paramètres du serveur de noms.](../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
+    ![Sélectionnez Enregistrer dans la page Paramètres du serveur de noms.](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
 5. Dans la boîte de dialogue **modifier les paramètres DNS** , sélectionnez **Oui**.
     
-    ![Sélection de l’option Enregistrer dans la boîte de dialogue Modifier les paramètres DNS](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Sélection de l’option Enregistrer dans la boîte de dialogue Modifier les paramètres DNS](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Vous pourrez ensuite utiliser votre messagerie et les autres services Office 365 avec votre domaine. 
@@ -158,7 +158,7 @@ Vous êtes prêt à modifier vos enregistrements NS de sorte que Office 365 puis
   
 1. Si d'autres serveurs de noms sont répertoriés dans les zones **Name server (Serveur de noms)**, supprimez-les en les sélectionnant et en appuyant sur la touche **Suppr** du clavier. 
     
-    ![Deleting name servers](../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
+    ![Deleting name servers](../../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
   
 2. Dans les zones **Serveur de noms (1, 2, 3 et 4)**, tapez ou copiez-collez les valeurs du tableau suivant. 
     
@@ -169,15 +169,15 @@ Vous êtes prêt à modifier vos enregistrements NS de sorte que Office 365 puis
 |**Serveur de noms 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Serveur de noms 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Entrée de valeurs de serveur de noms](../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
+   ![Entrée de valeurs de serveur de noms](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
 3. Cliquez sur **Enregistrer**.
     
-    ![Sélectionnez Enregistrer dans la page Paramètres du serveur de noms.](../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
+    ![Sélectionnez Enregistrer dans la page Paramètres du serveur de noms.](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
 4. Dans la boîte de dialogue **modifier les paramètres DNS** , sélectionnez **Oui**.
     
-    ![Sélection de l’option Enregistrer dans la boîte de dialogue Modifier les paramètres DNS](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Sélection de l’option Enregistrer dans la boîte de dialogue Modifier les paramètres DNS](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Vous pourrez ensuite utiliser votre messagerie et les autres services Office 365 avec votre domaine. 

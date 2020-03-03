@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: abd9dd7eeb2982e1a0a1f38aa678885b4b3f67ff
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 640565ccf560ab51009a7a16dc921eb830fdd27d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244531"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357975"
 ---
 # <a name="contact-support-for-mauritius"></a>Contacter le support pour l’île Maurice
 

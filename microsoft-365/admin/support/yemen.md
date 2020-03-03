@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5b5fa8a205b9bddfeb535b87c776e2c1b814c9f6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 261c32ba640add67034437dcb3e615d02c086013
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244225"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355535"
 ---
 # <a name="contact-support-for-yemen"></a>Contacter le support pour le Yémen
 

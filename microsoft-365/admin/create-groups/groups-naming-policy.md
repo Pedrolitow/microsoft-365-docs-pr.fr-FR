@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Découvrez comment créer une stratégie d’attribution de noms pour les groupes Office 365.
-ms.openlocfilehash: 50ea076e22680a444cb9acf04466a7e7d052bb7a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 11e2907462d325e4ad421914ae5a0deb5013e695
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239225"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352715"
 ---
 # <a name="office-365-groups-naming-policy"></a>Stratégie de noms de groupes Office 365
 
@@ -125,7 +125,7 @@ Pour configurer une stratégie d’attribution de noms :
 5. Choisissez entre **attribut** et **chaîne** pour chaque ligne, puis spécifiez l’attribut ou la chaîne.
 6. Une fois que vous avez ajouté les préfixes et les suffixes dont vous avez besoin, cliquez sur **Enregistrer**.
 
-![Capture d’écran des paramètres de stratégie d’attribution de noms de groupes dans Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Capture d’écran des paramètres de stratégie d’attribution de noms de groupes dans Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 ## <a name="naming-policy-experiences-across-office-365-apps"></a>Application des stratégies d’appellation dans les applications Office 365
 
@@ -135,7 +135,7 @@ Les applications Office 365 ont été mises à jour pour afficher un aperçu du 
 
 Outlook sur le Web (anciennement appelé Outlook Web App ou OWA) affiche la stratégie d’appellation nom décoré lorsque l’utilisateur tape un nom de groupe ou un alias de groupe. Lorsqu’un utilisateur entre un mot bloqué personnalisé, un message d’erreur s’affiche dans l’interface utilisateur avec le mot bloqué pour permettre à l’utilisateur de le supprimer. Les captures instantanées d’une expérience Web Outlook sont illustrées ci-dessous.
 
-![Vue côte à côte de la stratégie de noms de groupes dans les groupes Office 365](../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
+![Vue côte à côte de la stratégie de noms de groupes dans les groupes Office 365](../../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
 
 ## <a name="outlook-desktop"></a>Bureau Outlook
 
@@ -145,19 +145,19 @@ Les groupes créés dans Outlook Desktop sont conformes à la stratégie d’att
 
 Microsoft teams affiche le nom décoré de la stratégie de nom lorsque l’utilisateur tape un nom d’équipe. Lorsqu’un utilisateur entre un mot bloqué personnalisé, un message d’erreur s’affiche avec le mot bloqué pour permettre à l’utilisateur de le supprimer.
 
-![Exemple de stratégie de noms de groupes dans Microsoft teams bloqué](../media/7c904546-5853-4642-949a-a55dbb004eca.png)
+![Exemple de stratégie de noms de groupes dans Microsoft teams bloqué](../../media/7c904546-5853-4642-949a-a55dbb004eca.png)
 
 ## <a name="sharepoint"></a>SharePoint
 
 SharePoint affiche le nom de la stratégie d’appellation lorsque l’utilisateur tape un nom de site ou une adresse de messagerie de groupe. Lorsqu’un utilisateur entre un mot bloqué personnalisé, un message d’erreur s’affiche, ainsi que le mot bloqué pour permettre à l’utilisateur de le supprimer.
 
-![Stratégie de noms de groupes-nom bloqué du site SharePoint](../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
+![Stratégie de noms de groupes-nom bloqué du site SharePoint](../../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
 Microsoft Stream affiche le nom décoré de la stratégie de nom lorsque l’utilisateur tape un nom de groupe ou un alias de messagerie de groupe. Lorsqu’un utilisateur entre un mot bloqué personnalisé, un message d’erreur s’affiche avec le mot bloqué pour permettre à l’utilisateur de le supprimer.
 
-![Exemple de stratégie de noms de groupes bloqué pour Microsoft Stream](../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
+![Exemple de stratégie de noms de groupes bloqué pour Microsoft Stream](../../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
 
 ## <a name="outlook-ios-and-android-app"></a>Application Outlook iOS et Android
 
@@ -167,13 +167,13 @@ Les groupes créés dans les applications Outlook sont conformes à la stratégi
 
 Le planificateur est conforme à la stratégie d’attribution de noms. Planner affiche l’aperçu de la stratégie d’appellation lors de la saisie du nom du plan. Lorsqu’un utilisateur entre un mot bloqué personnalisé, un message d’erreur s’affiche lors de la création du plan, afin que l’utilisateur puisse supprimer le mot bloqué.
 
-![Stratégie de noms de groupes-créer un exemple de blocage bloqué](../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
+![Stratégie de noms de groupes-créer un exemple de blocage bloqué](../../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
 
 ## <a name="dynamics-365-for-customer-engagement"></a>Dynamics 365 pour l’engagement client
 
 Dynamics 365 pour engagement client est conforme à la stratégie d’attribution de noms. Dynamics 365 affiche le nom décoré de la stratégie d’attribution de noms lorsque l’utilisateur tape un nom de groupe ou un alias de messagerie de groupe. Lorsque l’utilisateur entre un mot bloqué personnalisé, un message d’erreur s’affiche avec le mot bloqué pour permettre à l’utilisateur de le supprimer.
 
-![Dynamics 365](../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
+![Dynamics 365](../../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
 
 ## <a name="school-data-sync-sds"></a>School Data Sync (SDS)
 

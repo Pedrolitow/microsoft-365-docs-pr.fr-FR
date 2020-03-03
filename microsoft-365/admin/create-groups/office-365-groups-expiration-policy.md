@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les stratégies d’expiration des groupes Office 365.
-ms.openlocfilehash: 5a7a9f9a67e8436a8d4120551e306a68a015bcb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239181"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352585"
 ---
 # <a name="office-365-group-expiration-policy"></a>Stratégie de d’Expiration de groupe Office 365
 
@@ -66,7 +66,7 @@ Si le groupe n’a pas de propriétaire, les e-mails d’expiration seront envoy
 
 Vous pouvez définir la stratégie pour tous vos groupes, uniquement les groupes sélectionnés ou la désactiver complètement en sélectionnant **aucun**. Notez que vous ne pouvez pas utiliser actuellement des stratégies différentes pour différents groupes.
 
-![Capture d’écran des paramètres d’expiration des groupes dans Azure Active Directory](../media/azure-groups-expiration-settings.png)
+![Capture d’écran des paramètres d’expiration des groupes dans Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>Fonctionnement de l’expiration avec la stratégie de rétention
 

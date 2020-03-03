@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Découvrez comment acheter un module complémentaire pour ajouter des fonctionnalités supplémentaires à votre abonnement Office 365 pour les entreprises. Vous pouvez également mettre à jour et supprimer un module complémentaire.
 ms.custom: okr_SMB
-ms.openlocfilehash: 717290306eb981018739604d9491da9ab3372d70
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242368"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354805"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Acheter ou modifier un composant additionnel pour Office 365 pour les entreprises
 
@@ -69,7 +69,7 @@ ms.locfileid: "42242368"
 
 3. Dans le coin inférieur gauche des détails de l’abonnement, sélectionnez **compléments** \> **acheter des modules**complémentaires.
 
-    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration Microsoft 365.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Sur la page **acheter des services** , pointez avec la souris ou appuyez sur l’abonnement au module complémentaire que vous souhaitez acheter, puis sélectionnez **acheter maintenant**.
 
@@ -91,7 +91,7 @@ ms.locfileid: "42242368"
 
 3. Dans le coin inférieur gauche des détails de l’abonnement, sélectionnez **compléments** \> **acheter des modules**complémentaires.
 
-    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration Microsoft 365.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Sur la page **acheter des services** , pointez avec la souris ou appuyez sur l’abonnement au module complémentaire que vous souhaitez acheter, puis sélectionnez **acheter maintenant**.
 
@@ -143,14 +143,14 @@ Les *modules complémentaires autonomes* ne sont pas liés à un abonnement spé
 
 4. Sélectionnez le lien **modifier la quantité** pour le module complémentaire que vous souhaitez mettre à jour. 
 
-    ![Liens Modules complémentaires et Modifier la quantité](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Liens Modules complémentaires et Modifier la quantité](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Entrez le nombre de licences utilisateur dont vous avez besoin dans la zone, puis sélectionnez **Envoyer**.
 
     > [!TIP]
     > Vous pouvez utiliser les flèches haut et bas pour modifier le nombre de licences utilisateur, ou entrer simplement le nombre souhaité dans la zone.
   
-    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -166,14 +166,14 @@ Les *modules complémentaires autonomes* ne sont pas liés à un abonnement spé
 
 4. Sélectionnez le lien **modifier la quantité** pour le module complémentaire que vous souhaitez mettre à jour. 
 
-    ![Liens Modules complémentaires et Modifier la quantité](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Liens Modules complémentaires et Modifier la quantité](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Entrez le nombre de licences utilisateur dont vous avez besoin dans la zone, puis sélectionnez **Envoyer**.
 
     > [!TIP]
     > Vous pouvez utiliser les flèches haut et bas pour modifier le nombre de licences utilisateur, ou entrer simplement le nombre souhaité dans la zone.
   
-    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 
 ::: moniker-end
@@ -201,7 +201,7 @@ Les *modules complémentaires autonomes* ne sont pas liés à un abonnement spé
     > [!TIP]
     > Vous pouvez également utiliser la flèche vers le haut et la flèche vers le bas pour modifier la quantité de licences ou simplement entrer le nombre souhaité dans la zone.
   
-    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -216,7 +216,7 @@ Les *modules complémentaires autonomes* ne sont pas liés à un abonnement spé
     > [!TIP]
     > Vous pouvez également utiliser la flèche vers le haut et la flèche vers le bas pour modifier la quantité de licences ou simplement entrer le nombre souhaité dans la zone.
   
-    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Boîte de dialogue Nombre total de licences et bouton Envoyer dans la boîte de dialogue Ajouter ou supprimer des licences.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 

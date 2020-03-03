@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: En savoir plus sur la facture électronique Office 365 pour Taïwan pour Taïwan.
-ms.openlocfilehash: 3253e620236810a51b62fe958f76589309dfbe1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5b06d8634fef81027cff14170da4e50072a1b48e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242443"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354665"
 ---
 # <a name="understand-your-e-invoice-for-office-365-for-business-taiwan"></a>Comprendre votre facture électronique pour Office 365 pour les entreprises (Taïwan)
 
@@ -33,7 +33,7 @@ une facture électronique est une facture électronique émise par le vendeur ap
   
 Un exemple de copie de la facture électronique est inclus ici :
   
-![La facture électronique taïwanaise.](../../admin/media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
+![La facture électronique taïwanaise.](../../media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
   
 ## <a name="what-is-my-tax-rate"></a>Quel est le taux de t.v.a. ?
 

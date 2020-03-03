@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: 40660f8f04c51c61aeec2144f4e7f3da8fa39fd9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 749e0532cf379d1fcff0580c9d5ede7910cfa38b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239416"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353265"
 ---
 # <a name="get-started-with-the-roles-page"></a>Prise en main de la page rôles
 
 Sur la page rôles, vous pouvez accorder aux utilisateurs les autorisations nécessaires pour effectuer des tâches dans les centres d’administration. Cela permet à votre organisation de répartir les tâches vers les personnes appropriées et de sécuriser vos données.
 
-:::image type="content" source="../media/roles-main-page.png" alt-text="Figure illustrant les rôles d’administrateur":::
+:::image type="content" source="../../media/roles-main-page.png" alt-text="Figure illustrant les rôles d’administrateur":::
 
 > [!TIP]
 > Vous recherchez des descriptions de rôles détaillées ? Consultez la rubrique [autorisations de rôle d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) et [à propos des rôles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)d’administrateur.
@@ -38,7 +38,7 @@ Sur la page rôles, vous pouvez accorder aux utilisateurs les autorisations néc
 
 Vous pouvez exporter la liste d’administration, ainsi que Rechercher et filtrer par rôle.
 
-:::image type="content" source="../media/admin-role-page-options.png" alt-text="Filtrer ou importer des rôles d’administrateur":::
+:::image type="content" source="../../media/admin-role-page-options.png" alt-text="Filtrer ou importer des rôles d’administrateur":::
 
 |||
 |:-----|:-----|
@@ -95,6 +95,6 @@ Dans le centre d’administration :
 
 - Sélectionnez jusqu’à 3 rôles et choisissez **comparer les rôles** pour afficher les autorisations de chaque rôle.
 
-:::image type="content" source="../media/compare-roles-list.png" alt-text="Figure illustrant une comparaison des rôles d’administrateur":::
+:::image type="content" source="../../media/compare-roles-list.png" alt-text="Figure illustrant une comparaison des rôles d’administrateur":::
 
 ::: moniker-end

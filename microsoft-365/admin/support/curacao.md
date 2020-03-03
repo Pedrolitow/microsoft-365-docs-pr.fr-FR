@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c81ff28001fe627bfe952932ad0b9fa0618cac8c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 24f8eb25a296f800e2d9b56e4231baba1de21c23
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243738"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359265"
 ---
 # <a name="contact-support-for-curacao"></a>Contacter le support pour Curacao
 

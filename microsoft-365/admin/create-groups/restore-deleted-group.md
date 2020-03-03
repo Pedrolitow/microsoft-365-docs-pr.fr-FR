@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 'Découvrez comment restaurer un groupe Office 365 supprimé à l’aide du centre d’administration Exchange. '
-ms.openlocfilehash: 98eb00d90f5b607a58cd32728ce43cb4a1de1ff5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c88f10df27e5f3a0af79c93c7d0e347c5646abc9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242595"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352435"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>Restaurer un groupe Office 365 supprimé
 
@@ -56,7 +56,7 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Planificateur.
     
-- Équipes
+- Teams
 
 - Groupe Yammer et contenu de groupe (si le groupe Office 365 a été créé à partir de Yammer)
     
@@ -69,7 +69,7 @@ Vous pouvez [Supprimer un groupe Office 365 de manière définitive](#permanentl
 
 Vous devez disposer des autorisations d’administrateur global d’Office 365.
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d'administration Exchange</a>.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
     
 2. Dans le Centre d'administration Exchange, sélectionnez **destinataires**, puis sélectionnez **groupes**. Vous pouvez voir si le groupe est actif ou supprimé de manière récupérable. Si le groupe a été supprimé de manière définitive, il n'est pas répertorié.
   
@@ -77,9 +77,9 @@ Vous devez disposer des autorisations d’administrateur global d’Office 365.
       
 4. Sélectionnez le groupe que vous souhaitez restaurer, puis sélectionnez l’icône restaurer.
     
-    ![Sélectionnez le groupe que vous souhaitez restaurer, puis sélectionnez l’icône restaurer.](../media/restore-group.png)
+    ![Sélectionnez le groupe que vous souhaitez restaurer, puis sélectionnez l’icône restaurer.](../../media/restore-group.png)
   
-5. Sélectionnez actualiser ![Icône Actualiser](../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) pour mettre à jour les informations dans la page. Votre groupe aura l'état Actif. Les formulaires et les données de formulaire associés à votre groupe seront également restaurés.
+5. Sélectionnez actualiser ![Icône Actualiser](../../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) pour mettre à jour les informations dans la page. Votre groupe aura l'état Actif. Les formulaires et les données de formulaire associés à votre groupe seront également restaurés.
     
 ## <a name="restore-an-office-365-group-using-powershell"></a>Restaurer un groupe Office 365 via PowerShell
 

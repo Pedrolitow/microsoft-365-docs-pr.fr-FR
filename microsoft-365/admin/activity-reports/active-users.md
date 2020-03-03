@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Découvrez comment obtenir un rapport utilisateurs actifs à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration 365 Microsoft et déterminer le nombre de licences de produit utilisées.
-ms.openlocfilehash: 23637a3aeb7b8e03cfdb3ee9f6fbf7969896981c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6ac56f17e1d106eaa4d1c3a46ff603631532075f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239016"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353955"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Rapports Microsoft 365 dans le centre d’administration-utilisateurs actifs
 
@@ -50,7 +50,7 @@ Par exemple, vous pouvez utiliser le rapport **Utilisateurs actifs** pour déter
 |3.  <br/> |Le graphique **Utilisateurs actifs** présente les utilisateurs actifs chaque jour pendant la période sur laquelle porte le rapport, classés par produit.  <br/> Le graphique **Services** présente le nombre d'utilisateurs par type d'activité et service.  <br/> |
 |4.  <br/> | Sur le graphique **Utilisateurs actifs**, l'axe X indique la période sélectionnée pour le rapport, tandis que l'axe Y affiche les utilisateurs actifs chaque jour, classés par type de licence et distingués par un codage couleur.  <br/>  Sur le graphique d'activités **Services**, l'axe X indique les services individuels que vos utilisateurs sont autorisés à utiliser au cours de la période spécifiée, tandis que l'axe Y indique le nombre d'utilisateurs en fonction de l'état de l'activité, avec un codage couleur selon l'état de l'activité.  <br/> |
 |5.  <br/> |Vous pouvez filtrer la série que vous voyez sur le graphique en sélectionnant un élément dans la légende. Cette sélection ne modifie nullement les informations figurant dans le tableau grille.  <br/> |
-|6.  <br/> |Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** ![exporter vos données vers un](../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) fichier Excel. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter.  <br/> |
+|6.  <br/> |Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** ![exporter vos données vers un](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) fichier Excel. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter.  <br/> |
 |7.  <br/> |Vous pouvez modifier les informations affichées dans la grille à l'aide de contrôles de colonnes.  <br/> Si votre abonnement est géré par 21Vianet, vous ne verrez pas Yammer. <br/> <br/> |
 |||
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Découvrez comment acheter un autre abonnement Office 365 pour entreprise pour votre organisation lorsque vous disposez déjà d’un abonnement. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 5f134d69c83e3c3fbb62dbb794e40e22d544ad1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242395"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354645"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>Acheter un autre abonnement Office 365 pour les entreprises
 
@@ -66,11 +66,11 @@ Après avoir acheté un nouvel abonnement, vous devez attribuer aux utilisateurs
 
     Vous verrez les abonnements disponibles pour votre organisation. Tous les abonnements que vous avez achetés sont identifiés comme suit.
 
-    ![Bannière indiquant qu’un abonnement a déjà été acheté pour cette organisation.](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![Bannière indiquant qu’un abonnement a déjà été acheté pour cette organisation.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. Pointez avec la souris ou appuyez sur l’abonnement que vous souhaitez acheter, puis sélectionnez **acheter maintenant**.
 
-    ![Lien acheter maintenant sur la page acheter des services du centre d’administration Microsoft 365.](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Lien acheter maintenant sur la page acheter des services du centre d’administration Microsoft 365.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. Entrez le nombre de licences utilisateur dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’ensemble de l’année, puis sélectionnez **Ajouter au panier**.
 
@@ -92,11 +92,11 @@ Après avoir acheté un nouvel abonnement, vous devez attribuer aux utilisateurs
 
     Vous verrez les abonnements disponibles pour votre organisation. Tous les abonnements que vous avez achetés sont identifiés comme suit.
 
-    ![Bannière indiquant qu’un abonnement a déjà été acheté pour cette organisation.](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![Bannière indiquant qu’un abonnement a déjà été acheté pour cette organisation.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. Pointez avec la souris ou appuyez sur l’abonnement que vous souhaitez acheter, puis sélectionnez **acheter maintenant**.
 
-    ![Lien acheter maintenant sur la page acheter des services du centre d’administration Microsoft 365.](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Lien acheter maintenant sur la page acheter des services du centre d’administration Microsoft 365.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. Entrez le nombre de licences utilisateur dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’ensemble de l’année, puis sélectionnez **Ajouter au panier**.
 

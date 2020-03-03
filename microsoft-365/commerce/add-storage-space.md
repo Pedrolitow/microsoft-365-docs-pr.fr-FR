@@ -28,12 +28,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Découvrez comment ajouter et réduire le stockage de fichiers dans votre abonnement Office 365. Avec le stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
-ms.openlocfilehash: 9bf87715cb5acbcc5c6dd34ccd023d5aa5ce6c2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 64e98ff830b592b12e25620e4c2e89e09a161a3e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242547"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354845"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Ajouter de l’espace de stockage pour votre abonnement
 
@@ -118,14 +118,14 @@ Si vous n’avez pas encore acheté de stockage supplémentaire pour votre abonn
 
 2. Sur la page **abonnements** , choisissez l’abonnement auquel vous voulez ajouter de l’espace de stockage, puis sélectionnez **composants additionnels**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Si vous ne voyez pas les **modules**complémentaires et que votre abonnement a été acheté auprès d’un partenaire, sélectionnez Centre de gestion des **licences en volume (VLSC)**.
   
 3. Sélectionnez **acheter des modules complémentaires**.
 
-    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Sur la page **acheter des services** , pointez avec la souris ou appuyez sur le stockage de **fichiers supplémentaire Office 365**, puis sélectionnez **acheter maintenant**.
   
@@ -143,14 +143,14 @@ Si vous n’avez pas encore acheté de stockage supplémentaire pour votre abonn
 
 2. Sur la page **abonnements** , choisissez l’abonnement auquel vous voulez ajouter de l’espace de stockage, puis sélectionnez **composants additionnels**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Si vous ne voyez pas les **modules**complémentaires et que votre abonnement a été acheté auprès d’un partenaire, sélectionnez Centre de gestion des **licences en volume (VLSC)**.
   
 3. Sélectionnez **acheter des modules complémentaires**.
 
-    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Sur la page **acheter des services** , pointez avec la souris ou appuyez sur le stockage de **fichiers supplémentaire Office 365**, puis sélectionnez **acheter maintenant**.
   
@@ -189,14 +189,14 @@ Si vous avez déjà acheté le stockage de fichiers supplémentaire via le compl
 
 2. Sur la page **abonnements** , sélectionnez **composants additionnels**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Si vous ne voyez pas les **modules**complémentaires et que votre abonnement a été acheté auprès d’un partenaire, sélectionnez Centre de gestion des **licences en volume (VLSC)**.
   
 3. Sous **stockage de fichiers supplémentaire Office 365**, sélectionnez **modifier la quantité**.
 
-    ![Lien Modifier la quantité.](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Lien Modifier la quantité.](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. Dans le volet droit, entrez le nombre total de gigaoctets dont vous avez besoin, puis sélectionnez **Envoyer**.
 
@@ -212,14 +212,14 @@ Si vous avez déjà acheté le stockage de fichiers supplémentaire via le compl
 
 2. Sur la page **abonnements** , sélectionnez **composants additionnels**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Si vous ne voyez pas les **modules**complémentaires et que votre abonnement a été acheté auprès d’un partenaire, sélectionnez Centre de gestion des **licences en volume (VLSC)**.
   
 3. Sous **stockage de fichiers supplémentaire Office 365**, sélectionnez **modifier la quantité**.
 
-    ![Lien Modifier la quantité.](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Lien Modifier la quantité.](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. Dans le volet droit, entrez le nombre total de gigaoctets dont vous avez besoin, puis sélectionnez **Envoyer**.
 

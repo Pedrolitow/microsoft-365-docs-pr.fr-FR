@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9424c8decc617928c06ff87d48a702b8451ee3e1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8455d40bb3d162a0ac4c57e3b2af6265fe14fda8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244597"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358605"
 ---
 # <a name="contact-support-for-guatemala"></a>Contacter le support pour le Guatemala
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur NameCheap pour Office 365.
-ms.openlocfilehash: a913aa5f2d88be5bed246e813bebd590f401c07f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 26b8b6586c71636d97c423106e4799105a076a54
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242584"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42348395"
 ---
 # <a name="create-dns-records-at-namecheap-for-office-365"></a>Créer des enregistrements DNS sur NameCheap pour Office 365
 
@@ -50,62 +50,62 @@ Suivez la procédure ci-dessous.
   
 1. Pour commencer, accédez à la page de vos domaines sur NameCheap à l’aide de [ce lien](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Vous serez invité à vous connecter et à continuer.
     
-    ![NameCheap-BP-configure-1-1](../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
+    ![NameCheap-BP-configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
 2. Sur la page d' **Accueil** , sous **compte**, sélectionnez **liste de domaines** dans la liste déroulante. 
     
-    ![NameCheap-BP-configure-1-2](../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+    ![NameCheap-BP-configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. Dans la page **liste des domaines** , recherchez le nom du domaine que vous souhaitez modifier, puis sélectionnez **gérer**.
     
-    ![NameCheap-BP-configure-1-3](../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+    ![NameCheap-BP-configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Sélectionnez **DNS avancé**.
     
-    ![NameCheap-BP-configure-1-4](../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
+    ![NameCheap-BP-configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
 5. Dans la section **Host Records (enregistrements d’hôte** ), sélectionnez **Add New Record (ajouter un nouvel enregistrement**).
     
-    ![NameCheap-BP-configure-1-5](../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
+    ![NameCheap-BP-configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Dans la liste déroulante **type** , sélectionnez **enregistrement txt**.
     
     > [!NOTE]
     > La liste déroulante **type** s’affiche automatiquement lorsque vous sélectionnez **Ajouter un nouvel enregistrement**. 
   
-    ![NameCheap-BP-Verify-1-1](../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
+    ![NameCheap-BP-Verify-1-1](../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
   
-7. In the boxes for the new record, type or copy and paste the values from the following table.
+7. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
     (Choisissez la valeur **TTL (durée de vie** ) dans la liste déroulante.) 
     
     |**Type**|**Host (Hôte)**|**Valeur**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Remarque :** Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
        
-    ![NameCheap-BP-Verify-1-2](../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
+    ![NameCheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
 8. Sélectionnez le contrôle **enregistrer les modifications** (coche). 
     
-    ![NameCheap-BP-Verify-1-3](../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
+    ![NameCheap-BP-Verify-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
 9. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
-2. Dans la page **domaines** , sélectionnez le domaine que vous vérifiez. 
-    
-    
-  
-3. Sur la page **installation** , sélectionnez **Démarrer l’installation**.
+2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
     
     
   
-4. Sur la page **vérifier le domaine** , sélectionnez **vérifier**.
+3. Dans la page **Configuration**, sélectionnez **Démarrer la configuration**.
+    
+    
+  
+4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
     
   
@@ -120,29 +120,29 @@ Suivez la procédure ci-dessous.
   
 1. Pour commencer, accédez à la page de vos domaines sur NameCheap à l’aide de [ce lien](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Vous serez invité à vous connecter et à continuer.
     
-    ![NameCheap-BP-configure-1-1](../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
+    ![NameCheap-BP-configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
 2. Sur la page d' **Accueil** , sous **compte**, sélectionnez **liste de domaines** dans la liste déroulante. 
     
-    ![NameCheap-BP-configure-1-2](../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+    ![NameCheap-BP-configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. Dans la page **liste des domaines** , recherchez le nom du domaine que vous souhaitez modifier, puis sélectionnez **gérer**.
     
-    ![NameCheap-BP-configure-1-3](../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+    ![NameCheap-BP-configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Sélectionnez **DNS avancé**.
     
-    ![NameCheap-BP-configure-1-4](../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
+    ![NameCheap-BP-configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
 5. Dans la section **paramètres de messagerie** , sélectionnez **MX personnalisée** dans la liste déroulante **transfert du courrier** . 
     
     (You may have to scroll down.)
     
-    ![NameCheap-BP-configure-2-1](../media/40199e2c-42cf-4c3f-9936-3cbe5d4e81a4.png)
+    ![NameCheap-BP-configure-2-1](../../media/40199e2c-42cf-4c3f-9936-3cbe5d4e81a4.png)
   
 6. Sélectionnez **Ajouter un nouvel enregistrement**.
     
-    ![NameCheap-BP-configure-2-2-1](../media/8d169b81-ba48-4d51-84ea-a08fa1616457.png)
+    ![NameCheap-BP-configure-2-2-1](../../media/8d169b81-ba48-4d51-84ea-a08fa1616457.png)
   
 7. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
@@ -152,21 +152,21 @@ Suivez la procédure ci-dessous.
     |:-----|:-----|:-----|:-----|:-----|
     |MX Record (Enregistrement MX)  <br/> |@  <br/> |\<*Key*\>. mail.protection.Outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |30 min  <br/> |
        
-    ![NameCheap-BP-configure-2-2-2](../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
+    ![NameCheap-BP-configure-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
 8. Sélectionnez le contrôle **enregistrer les modifications** (coche). 
     
-    ![NameCheap-BP-configure-2-3](../media/ef4e3112-36d2-47c8-a478-136a565dd71d.png)
+    ![NameCheap-BP-configure-2-3](../../media/ef4e3112-36d2-47c8-a478-136a565dd71d.png)
   
 9. S'il existe d'autres enregistrements MX, utilisez le processus en deux étapes suivant pour supprimer chacun d'eux :
     
     Tout d’abord, sélectionnez l' **icône de suppression** (corbeille) pour l’enregistrement que vous souhaitez supprimer. 
     
-    ![NameCheap-BP-configure-2-4](../media/7a7a751f-29c2-495f-8f55-98ca37ce555a.png)
+    ![NameCheap-BP-configure-2-4](../../media/7a7a751f-29c2-495f-8f55-98ca37ce555a.png)
   
     Deuxièmement, sélectionnez **Oui** pour confirmer la suppression. 
     
-    ![NameCheap-BP-configure-2-5](../media/85ebc0c7-8787-43ee-9e7b-647375b3345c.png)
+    ![NameCheap-BP-configure-2-5](../../media/85ebc0c7-8787-43ee-9e7b-647375b3345c.png)
   
     Supprimez tous les enregistrements MX à l’exception de celui que vous avez ajouté précédemment dans cette procédure.
 
@@ -178,30 +178,30 @@ Suivez la procédure ci-dessous.
   
 1. Pour commencer, accédez à la page de vos domaines sur NameCheap à l’aide de [ce lien](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Vous serez invité à vous connecter et à continuer.
     
-    ![NameCheap-BP-configure-1-1](../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
+    ![NameCheap-BP-configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
 2. Sur la page d' **Accueil** , sous **compte**, sélectionnez **liste de domaines** dans la liste déroulante. 
     
-    ![NameCheap-BP-configure-1-2](../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+    ![NameCheap-BP-configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. Dans la page **liste des domaines** , recherchez le nom du domaine que vous souhaitez modifier, puis sélectionnez **gérer**.
     
-    ![NameCheap-BP-configure-1-3](../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+    ![NameCheap-BP-configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Sélectionnez **DNS avancé**.
     
-    ![NameCheap-BP-configure-1-4](../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
+    ![NameCheap-BP-configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
 5. Dans la section **Host Records (enregistrements d’hôte** ), sélectionnez **Add New Record (ajouter un nouvel enregistrement**).
     
-    ![NameCheap-BP-configure-1-5](../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
+    ![NameCheap-BP-configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Dans la liste déroulante **type** , sélectionnez **enregistrement CNAME**.
     
     > [!NOTE]
     > La liste déroulante **type** s’affiche automatiquement lorsque vous sélectionnez **Ajouter un nouvel enregistrement**. 
   
-    ![NameCheap-BP-configure-3-1](../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png)
+    ![NameCheap-BP-configure-3-1](../../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png)
   
 7. Dans les zones vides du nouvel enregistrement, sélectionnez le **Type d'enregistrement** **CNAME**, puis tapez ou copiez-collez les valeurs de la première ligne du tableau suivant.
     
@@ -213,20 +213,20 @@ Suivez la procédure ci-dessous.
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |
        
-    ![NameCheap-BP-configure-3-2](../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
+    ![NameCheap-BP-configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
   
 8. Sélectionnez le contrôle **enregistrer les modifications** (coche). 
     
-    ![NameCheap-BP-configure-3-3](../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
+    ![NameCheap-BP-configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
   
 9. À l’aide des quatre étapes précédentes et des valeurs des cinq autres lignes du tableau, ajoutez chacun des cinq autres enregistrements CNAMe.
 
   
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
 
 Suivez la procédure ci-dessous.
   
@@ -234,26 +234,26 @@ Suivez la procédure ci-dessous.
     
 2. Sur la page d' **Accueil** , sous **compte**, sélectionnez **liste de domaines** dans la liste déroulante. 
     
-    ![NameCheap-BP-configure-1-2](../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+    ![NameCheap-BP-configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. Dans la page **liste des domaines** , recherchez le nom du domaine que vous souhaitez modifier, puis sélectionnez **gérer**.
     
-    ![NameCheap-BP-configure-1-3](../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+    ![NameCheap-BP-configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Sélectionnez **DNS avancé**.
     
-    ![NameCheap-BP-configure-1-4](../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
+    ![NameCheap-BP-configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
 5. Dans la section **Host Records (enregistrements d’hôte** ), sélectionnez **Add New Record (ajouter un nouvel enregistrement**).
     
-    ![NameCheap-BP-configure-1-5](../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
+    ![NameCheap-BP-configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Dans la liste déroulante **type** , sélectionnez **enregistrement txt**.
     
     > [!NOTE]
     > La liste déroulante **type** s’affiche automatiquement lorsque vous sélectionnez **Ajouter un nouvel enregistrement**. 
   
-    ![NameCheap-BP-configure-4-1](../media/c5d1fddb-28b5-48ec-91c9-3e5d3955ac80.png)
+    ![NameCheap-BP-configure-4-1](../../media/c5d1fddb-28b5-48ec-91c9-3e5d3955ac80.png)
   
 7. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs suivantes du tableau suivant.
     
@@ -261,56 +261,56 @@ Suivez la procédure ci-dessous.
     
     |**Type**|**Host (Hôte)**|**Valeur**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** Nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |30 min  <br/> |
+    |TXT  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |30 min  <br/> |
        
-    ![NameCheap-BP-configure-4-2](../media/ea0829f1-990b-424b-b26e-9859468318dd.png)
+    ![NameCheap-BP-configure-4-2](../../media/ea0829f1-990b-424b-b26e-9859468318dd.png)
   
 8. Sélectionnez le contrôle **enregistrer les modifications** (coche). 
     
-    ![NameCheap-BP-configure-4-3](../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png)
+    ![NameCheap-BP-configure-4-3](../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajouter les 2 enregistrements SRV requis pour Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
 <a name="BKMK_add_SRV"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines sur NameCheap à l’aide de [ce lien](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to sign in.
     
-    ![NameCheap-BP-configure-1-1](../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
+    ![NameCheap-BP-configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
 2. Sur la page d' **Accueil** , sous **compte**, sélectionnez **liste de domaines** dans la liste déroulante. 
     
-    ![NameCheap-BP-configure-1-2](../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+    ![NameCheap-BP-configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. Dans la page **liste des domaines** , recherchez le nom du domaine que vous souhaitez modifier, puis sélectionnez **gérer**.
     
-    ![NameCheap-BP-configure-1-3](../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+    ![NameCheap-BP-configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Sélectionnez **DNS avancé**.
     
-    ![NameCheap-BP-configure-1-4](../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
+    ![NameCheap-BP-configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
 5. Dans la section **Host Records (enregistrements d’hôte** ), sélectionnez **Add New Record (ajouter un nouvel enregistrement**).
     
-    ![NameCheap-BP-configure-1-5](../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
+    ![NameCheap-BP-configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Dans la liste déroulante **type** , sélectionnez **enregistrement SRV**.
     
     > [!NOTE]
     > La liste déroulante **type** s’affiche automatiquement lorsque vous sélectionnez **Ajouter un nouvel enregistrement**. 
   
-    ![NameCheap-BP-configure-5-1](../media/fd55cd7c-2243-4de1-8d39-2c3f7ea3ae51.png)
+    ![NameCheap-BP-configure-5-1](../../media/fd55cd7c-2243-4de1-8d39-2c3f7ea3ae51.png)
   
 7. Dans les zones vides pour les nouveaux enregistrements, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant.
     
-    |**Service**|**Protocol (Protocole)**|**Priority (Priorité)**|**Weight (Poids)**|**Port**|**Target (Cible)**|**TTL (Durée de vie)**|
+    |**Service**|**Protocol (Protocole)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |30 min  <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |30 min  <br/> |
        
-    ![NameCheap-BP-configure-5-2](../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
+    ![NameCheap-BP-configure-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   
 8. Sélectionnez le contrôle **enregistrer les modifications** (coche). 
     
-    ![NameCheap-BP-configure-5-3](../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png)
+    ![NameCheap-BP-configure-5-3](../../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png)
   
 9. À l’aide des quatre étapes précédentes et des valeurs de la deuxième ligne du tableau, ajoutez l’autre enregistrement SRV.
     

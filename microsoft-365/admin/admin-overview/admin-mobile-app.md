@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Obtenez l’application d’administration de Microsoft 365 et apprenez à gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: 6f81da66ff8d60f1adc249c1e21542b0174050d6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239333"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353035"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’application mobile d’administration Microsoft 365
 
 Êtes-vous un administrateur qui est généralement en déplacement ? Ensuite, consultez l' [application d’administration Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216). Vous pouvez utiliser l’application pour gérer votre organisation en ligne à partir de votre téléphone ou tablette. Vous pouvez obtenir l’application à partir de la boutique Apple et de Google Play. <br> 
 
-![Capture d’écran de la page d’accueil de l’application mobile admin, affichant la recherche, les messages, l’intégrité et les liens rapides.](../media/admin-mobile-app-darkbg.png)
+![Capture d’écran de la page d’accueil de l’application mobile admin, affichant la recherche, les messages, l’intégrité et les liens rapides.](../../media/admin-mobile-app-darkbg.png)
 
 L’application d’administration est une application riche en fonctionnalités qui dispose de plus de 80 fonctionnalités pour vous aider à gérer votre organisation lorsque vous ne parvenez pas à accéder à un ordinateur. Voici une liste de quelques tâches que vous pouvez effectuer à partir de l’application :
 
@@ -60,7 +60,7 @@ Visionnez une courte vidéo sur l’installation de l’application mobile admin
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
  
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 Vous trouverez ci-dessous des réponses à des questions fréquemment posées sur l'application.
   

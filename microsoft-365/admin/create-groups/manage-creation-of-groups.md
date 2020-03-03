@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Découvrez comment contrôler quels utilisateurs peuvent créer des groupes Office 365.
-ms.openlocfilehash: a211cb3b69348a4d4a401a3c318fe019d8fd257f
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: a6016f6406b211aae216702910a696be50e1b82c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277191"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352635"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Gérer les personnes autorisées à créer des groupes Office 365
 
@@ -119,7 +119,7 @@ Pour obtenir les meilleurs résultats, nous vous recommandons de  *toujours*  ê
     
 2. Cliquez avec le bouton droit sur **Windows PowerShell**, puis sélectionnez **Exécuter en tant qu'administrateur**.
     
-    ![Ouvrez PowerShell avec « Exécuter en tant qu'administrateur ».](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
+    ![Ouvrez PowerShell avec « Exécuter en tant qu'administrateur ».](../../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
     
 3. Définissez la stratégie sur RemoteSigned à l’aide de [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy).
     
@@ -205,7 +205,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 La dernière ligne du script affiche les paramètres mis à jour :
 
-![This is what your settings will look like when you're done.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
+![This is what your settings will look like when you're done.](../../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
 Si, à l’avenir, vous souhaitez modifier le groupe de sécurité utilisé, vous pouvez réexécuter le script avec le nom du nouveau groupe de sécurité.
 

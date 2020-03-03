@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Découvrez comment passer à un nouvel abonnement Office 365 pour les entreprises.
-ms.openlocfilehash: 22b1d187c18743a467e9e13abbb5d2635b62da40
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254512"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354465"
 ---
 # <a name="switch-to-a-different-office-365-for-business-plan"></a>Basculer vers une autre offre Office 365 pour les entreprises
 
@@ -95,4 +95,4 @@ Si vous souhaitez passer à un plan avec moins de services, vous pouvez [changer
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Appeler le support technique pour changer d'offre
 
-![](../../admin/media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Prise en charge des appels](../../admin/contact-support-for-business-products.md) téléphoniques
+![](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Prise en charge des appels](../../admin/contact-support-for-business-products.md) téléphoniques

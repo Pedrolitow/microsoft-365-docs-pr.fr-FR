@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Découvrez comment gérer vos modes de paiement dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 56ffbcc638ecfe304ff71273ec2ce00abd05ddca
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 894b1cbf9033521c6978f54d0483fe61c3d6114d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341226"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354935"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Ajouter, mettre à jour ou supprimer vos modes de paiement
 
@@ -172,11 +172,11 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 
 2. Sélectionnez l’abonnement que vous souhaitez payer avec la nouvelle carte bancaire ou le nouveau compte bancaire, puis sélectionnez **mettre à jour les détails du paiement**.
 
-    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Sélectionnez la flèche déroulante sous **Ajouter ou sélectionner un mode de paiement**, puis sélectionnez **nouvelle carte de crédit** ou **nouveau compte bancaire**.
 
-    ![Menu déroulant qui affiche les nouvelles options de carte de crédit et de nouveau compte bancaire.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![Menu déroulant qui affiche les nouvelles options de carte de crédit et de nouveau compte bancaire.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Entrez les informations sur la nouvelle carte bancaire ou le nouveau compte bancaire, puis sélectionnez **Envoyer**.
 
@@ -203,11 +203,11 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 
 2. Sélectionnez l’abonnement que vous souhaitez payer avec la nouvelle carte bancaire ou le nouveau compte bancaire, puis sélectionnez **mettre à jour les détails du paiement**.
 
-    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Sélectionnez la flèche déroulante sous **Ajouter ou sélectionner un mode de paiement**, puis sélectionnez **nouvelle carte de crédit** ou **nouveau compte bancaire**.
 
-    ![Menu déroulant qui affiche les nouvelles options de carte de crédit et de nouveau compte bancaire.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![Menu déroulant qui affiche les nouvelles options de carte de crédit et de nouveau compte bancaire.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Entrez les informations sur la nouvelle carte bancaire ou le nouveau compte bancaire, puis sélectionnez **Envoyer**.
 
@@ -230,17 +230,17 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
     > [!NOTE]
     > Si un autre administrateur a acheté l'abonnement, vous ne serez pas en mesure de mettre à jour les informations de carte bancaire ou de compte bancaire pour cet abonnement. Si la carte de crédit est sur le paragraphe expire et que l’autre administrateur ne parvient pas à la mettre à jour, vous pouvez empêcher l’interruption de service si vous ajoutez une autre carte de crédit ou un nouveau compte bancaire pour l’abonnement.
   
-    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Sélectionnez la flèche déroulante sous **Ajouter ou sélectionner un mode de paiement**. Sélectionnez la carte bancaire ou le compte bancaire que vous souhaitez mettre à jour, puis sélectionnez **modifier les détails**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Mettez à jour vos informations de carte de crédit ou de compte bancaire (nom sur la carte bancaire ou le compte bancaire, adresse de facturation. Numéro de téléphone ou date d’expiration, si nécessaire, puis sélectionnez **Envoyer**.
 
 5. Un message de confirmation s'affiche. Si ce n'est pas le cas, voir [Résolution des problèmes liés aux cartes bancaires et aux comptes bancaires](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![Message de confirmation : « votre mode de paiement a été mis à jour avec succès ».](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![Message de confirmation : « votre mode de paiement a été mis à jour avec succès ».](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -258,17 +258,17 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
     > [!NOTE]
     > Si un autre administrateur a acheté l'abonnement, vous ne serez pas en mesure de mettre à jour les informations de carte bancaire ou de compte bancaire pour cet abonnement. Si la carte de crédit est sur le paragraphe expire et que l’autre administrateur ne parvient pas à la mettre à jour, vous pouvez empêcher l’interruption de service si vous ajoutez une autre carte de crédit ou un nouveau compte bancaire pour l’abonnement.
   
-    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Sélectionnez la flèche déroulante sous **Ajouter ou sélectionner un mode de paiement**. Sélectionnez la carte bancaire ou le compte bancaire que vous souhaitez mettre à jour, puis sélectionnez **modifier les détails**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Mettez à jour vos informations de carte de crédit ou de compte bancaire (nom sur la carte bancaire ou le compte bancaire, adresse de facturation. Numéro de téléphone ou date d’expiration, si nécessaire, puis sélectionnez **Envoyer**.
 
 5. Un message de confirmation s'affiche. Si ce n'est pas le cas, voir [Résolution des problèmes liés aux cartes bancaires et aux comptes bancaires](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![Message de confirmation : « votre mode de paiement a été mis à jour avec succès ».](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![Message de confirmation : « votre mode de paiement a été mis à jour avec succès ».](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -279,20 +279,20 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 
 2. Sélectionnez n’importe quel abonnement, puis **mettre à jour les détails du paiement**.
 
-    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Sélectionnez la flèche déroulante sous **Ajouter ou sélectionner un mode de paiement**.
 
 4. Sélectionnez la carte bancaire ou le compte bancaire, puis sélectionnez **supprimer**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 5. Sélectionnez à nouveau **supprimer** pour supprimer la carte bancaire ou le compte bancaire.
 
-    ![Les boutons supprimer et annuler.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![Les boutons supprimer et annuler.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > Vous ne pourrez pas supprimer une carte bancaire ou un compte bancaire s’il est actuellement utilisé pour payer un abonnement. Si vous essayez, vous verrez un message semblable à ![celui-ci : le message d’erreur qui s’affiche si vous essayez de supprimer un mode de paiement actuellement utilisé pour payer un abonnement actif.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > Vous ne pourrez pas supprimer une carte bancaire ou un compte bancaire s’il est actuellement utilisé pour payer un abonnement. Si vous essayez, vous verrez un message semblable à ![celui-ci : le message d’erreur qui s’affiche si vous essayez de supprimer un mode de paiement actuellement utilisé pour payer un abonnement actif.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > Pour supprimer la carte bancaire ou le compte bancaire, sélectionnez **retour** et suivez les étapes décrites dans cet article pour modifier la carte bancaire ou le compte bancaire que vous utilisez pour payer l’abonnement. Réessayez ensuite de supprimer la carte bancaire ou le compte bancaire.
 
 ::: moniker-end
@@ -304,20 +304,20 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 
 2. Sélectionnez n’importe quel abonnement, puis **mettre à jour les détails du paiement**.
 
-    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Sélectionnez la flèche déroulante sous **Ajouter ou sélectionner un mode de paiement**.
 
 4. Sélectionnez la carte bancaire ou le compte bancaire, puis sélectionnez **supprimer**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
 
 5. Sélectionnez à nouveau **supprimer** pour supprimer la carte bancaire ou le compte bancaire.
 
-    ![Les boutons supprimer et annuler.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![Les boutons supprimer et annuler.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > Vous ne pourrez pas supprimer une carte bancaire ou un compte bancaire s’il est actuellement utilisé pour payer un abonnement. Si vous essayez, vous verrez un message semblable à ![celui-ci : le message d’erreur qui s’affiche si vous essayez de supprimer un mode de paiement actuellement utilisé pour payer un abonnement actif.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > Vous ne pourrez pas supprimer une carte bancaire ou un compte bancaire s’il est actuellement utilisé pour payer un abonnement. Si vous essayez, vous verrez un message semblable à ![celui-ci : le message d’erreur qui s’affiche si vous essayez de supprimer un mode de paiement actuellement utilisé pour payer un abonnement actif.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > Pour supprimer la carte bancaire ou le compte bancaire, sélectionnez **retour** et suivez les étapes décrites dans cet article pour modifier la carte bancaire ou le compte bancaire que vous utilisez pour payer l’abonnement. Réessayez ensuite de supprimer la carte bancaire ou le compte bancaire.
 
 ::: moniker-end
@@ -329,11 +329,11 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 
 2. Sélectionnez l’abonnement que vous souhaitez payer avec la nouvelle carte de crédit ou le nouveau compte bancaire, puis sélectionnez **mettre à jour les détails du paiement**.
 
-    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Sélectionnez la flèche déroulante sous **Ajouter ou sélectionner un mode de paiement** , puis sélectionnez la carte bancaire ou le compte bancaire que vous souhaitez utiliser.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Sélectionnez **Envoyer**. Si la carte de crédit ou le compte bancaire que vous souhaitez utiliser n’est pas encore mentionné, sélectionnez **nouvelle carte de crédit** ou **nouveau compte bancaire** pour l’ajouter.
 
@@ -346,11 +346,11 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 
 2. Sélectionnez l’abonnement que vous souhaitez payer avec la nouvelle carte de crédit ou le nouveau compte bancaire, puis sélectionnez **mettre à jour les détails du paiement**.
 
-    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La section mode de paiement de la page abonnement qui affiche le lien modifier les détails du paiement.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Sélectionnez la flèche déroulante sous **Ajouter ou sélectionner un mode de paiement** , puis sélectionnez la carte bancaire ou le compte bancaire que vous souhaitez utiliser.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Sélectionnez **Envoyer**. Si la carte de crédit ou le compte bancaire que vous souhaitez utiliser n’est pas encore mentionné, sélectionnez **nouvelle carte de crédit** ou **nouveau compte bancaire** pour l’ajouter.
 

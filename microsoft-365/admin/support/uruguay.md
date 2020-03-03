@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cfa5b803783295c9ffb85337d6249ced0a1c4f06
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a90f8e803f18ad233552760b662c7b338cdbbdd2
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253174"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355705"
 ---
 # <a name="contact-support-for-uruguay"></a>Contacter le support pour l’Uruguay
 

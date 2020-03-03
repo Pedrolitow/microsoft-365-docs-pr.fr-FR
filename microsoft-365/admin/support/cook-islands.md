@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4cb5c1e2a0cb3038f22f175b50ab49fdd3826547
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a6d7523c65269777f990f2413b4643526680d58a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243745"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359335"
 ---
 # <a name="contact-support-for-cook-islands"></a>Contacter le support pour les îles Cook
 

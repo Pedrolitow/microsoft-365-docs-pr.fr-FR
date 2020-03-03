@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application de modèle d’analyse de l’utilisation 365 de Microsoft dans Power BI.
-ms.openlocfilehash: 651a820916f65a1695b7300772b1d2ce8aee92bb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 249fadce15ca2e4c979d6e1930ff0d14ccd9bc08
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243511"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355005"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
@@ -70,7 +70,7 @@ Pour lancer l’application de modèle, vous devez être un **administrateur gé
   
 3. Dans l’onglet **apps** , tapez Microsoft 365 dans la zone de recherche, puis sélectionnez analyse \> **** de **l’utilisation de Microsoft 365** .
 
-    [![Sélectionnez obtenir maintenant](../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![Sélectionnez obtenir maintenant](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
 4.  Une fois que l’application est installée. Cliquez sur la mosaïque pour l’ouvrir.
 
@@ -80,7 +80,7 @@ Pour lancer l’application de modèle, vous devez être un **administrateur gé
     
 7. Dans l’écran suivant, sélectionnez **oAuth2** comme \> **** **méthode d’authentification** . Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échouera.
     
-    ![Choose oAuth2 as authentication method](../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
   
 8. Une fois l’application de modèle instanciée, le tableau de bord d’analyse de l’utilisation de Microsoft 365 sera disponible dans Power BI sur le Web. Le chargement initial du tableau de bord prend entre 2 et 30 minutes.
   
@@ -94,4 +94,4 @@ Pour anonymiser les données collectées pour tous les rapports, vous devez êtr
     
 2. Sélectionnez **rapports**, puis choisissez d' **afficher les identificateurs anonymes**. Ce paramètre est appliqué à la fois aux rapports d’utilisation ainsi qu’à l’application de modèle.
   
-3. Sélectionnez **enregistrer les modifications**.
+3. Sélectionnez **Enregistrer les modifications**.

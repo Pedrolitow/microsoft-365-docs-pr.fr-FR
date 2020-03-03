@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Découvrez comment annuler votre abonnement Office 365 pour les entreprises ou Microsoft 365 (version d’évaluation ou abonnement payant).
-ms.openlocfilehash: d3590f224757265af3107566023413d276443c46
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239561"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354595"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
@@ -64,7 +64,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 3. Dans le menu **actions supplémentaires** , sélectionnez **Annuler l’abonnement**.
 
-    ![Fermez le menu autres actions.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Fermez le menu autres actions.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Examinez les dates importantes, fournissez des commentaires sur la raison de votre annulation, puis sélectionnez **Annuler l’abonnement**.
 
@@ -80,7 +80,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 3. Dans le menu **actions supplémentaires** , sélectionnez **Annuler l’abonnement**.
 
-    ![Fermez le menu autres actions.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Fermez le menu autres actions.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Examinez les dates importantes, fournissez des commentaires sur la raison de votre annulation, puis sélectionnez **Annuler l’abonnement**.
 

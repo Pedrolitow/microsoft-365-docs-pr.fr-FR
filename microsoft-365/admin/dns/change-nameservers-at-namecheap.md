@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
 description: 'Apprenez à configurer votre domaine personnalisé Office 365 avec NameCheap si vous souhaitez qu’Office 365 gère vos enregistrements DNS. '
-ms.openlocfilehash: caf0a484b82ecf10f2835ae8fd5dea98c16e61c3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3a26f2acb9bb52d05974f050b265dd3e1a0fc0cb
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242659"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351805"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-namecheap"></a>Modifier les serveurs de noms pour configurer Office 365 avec NameCheap
 
@@ -38,63 +38,63 @@ Suivez ces instructions si vous voulez laisser le soin à Office 365 de gérer v
 
 1. Pour commencer, accédez à la page de vos domaines sur NameCheap à l’aide de [ce lien](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Vous serez invité à vous connecter et à continuer.
     
-    ![NameCheap-BP-configure-1-1](../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
+    ![NameCheap-BP-configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
 2. Sur la page d' **Accueil** , sous **compte**, sélectionnez **liste de domaines** dans la liste déroulante. 
     
-    ![NameCheap-BP-configure-1-2](../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+    ![NameCheap-BP-configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. Dans la page **liste des domaines** , recherchez le nom du domaine que vous souhaitez modifier, puis sélectionnez **gérer**.
     
-    ![NameCheap-BP-configure-1-3](../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+    ![NameCheap-BP-configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Sélectionnez **DNS avancé**.
     
-    ![NameCheap-BP-configure-1-4](../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
+    ![NameCheap-BP-configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
 5. Dans la section **Host Records (enregistrements d’hôte** ), sélectionnez **Add New Record (ajouter un nouvel enregistrement**).
     
-    ![NameCheap-BP-configure-1-5](../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
+    ![NameCheap-BP-configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Dans la liste déroulante **type** , sélectionnez **enregistrement txt**.
     
     > [!NOTE]
     > La liste déroulante **type** s’affiche automatiquement lorsque vous sélectionnez **Ajouter un nouvel enregistrement**.
   
-    ![NameCheap-BP-Verify-1-1](../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
+    ![NameCheap-BP-Verify-1-1](../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
   
-7. In the boxes for the new record, type or copy and paste the values from the following table.
+7. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
     (Choisissez la valeur **TTL (durée de vie** ) dans la liste déroulante.) 
     
 |**Type**|**Host (Hôte)**|**Valeur**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque**: Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque**: Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
    
-   ![NameCheap-BP-Verify-1-2](../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
+   ![NameCheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
 8. Sélectionnez le contrôle **enregistrer les modifications** (coche). 
     
-    ![NameCheap-BP-Verify-1-3](../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
+    ![NameCheap-BP-Verify-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
 9. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
     
-2. Dans la page **domaines** , sélectionnez le domaine que vous vérifiez. 
+2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
     
     
   
-3. Sur la page **installation** , sélectionnez **Démarrer l’installation**.
+3. Dans la page **Configuration**, sélectionnez **Démarrer la configuration**.
     
     
   
-4. Sur la page **vérifier le domaine** , sélectionnez **vérifier**.
+4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
     
   
@@ -113,23 +113,23 @@ Pour finaliser la configuration de votre domaine avec Office 365, vous devez mod
   
 1. Pour commencer, accédez à la page de vos domaines sur NameCheap à l’aide de [ce lien](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Vous serez invité à vous connecter et à continuer.
     
-    ![NameCheap-BP-configure-1-1](../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
+    ![NameCheap-BP-configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
 2. Sur la page d' **Accueil** , sous **compte**, sélectionnez **liste de domaines** dans la liste déroulante. 
     
-    ![NameCheap-BP-configure-1-2](../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+    ![NameCheap-BP-configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. Dans la page **liste des domaines** , recherchez le nom du domaine que vous souhaitez modifier, puis sélectionnez **gérer**.
     
-    ![NameCheap-BP-configure-1-3](../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+    ![NameCheap-BP-configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Sélectionnez **domaine**.
     
-    ![NameCheap-BP-redelegate-1-1](../media/59588406-794e-4ae4-8526-35e3111b5791.png)
+    ![NameCheap-BP-redelegate-1-1](../../media/59588406-794e-4ae4-8526-35e3111b5791.png)
   
 5. Recherchez la section serveurs de **noms** , puis sélectionnez **personnalisée** dans la liste déroulante **NameCheap par défaut** . 
     
-    ![NameCheap-BP-redelegate-1-2](../media/7df56295-fdb3-472f-9442-13f780c2c93e.png)
+    ![NameCheap-BP-redelegate-1-2](../../media/7df56295-fdb3-472f-9442-13f780c2c93e.png)
   
 6. Selon qu’il y a déjà ou non des serveurs de noms répertoriés dans la page qui s’affiche maintenant, passez à l’une des deux procédures suivantes.
     
@@ -138,7 +138,7 @@ Pour finaliser la configuration de votre domaine avec Office 365, vous devez mod
 
 1. Sélectionnez **Ajouter** un serveur de noms à deux reprises pour ajouter deux nouvelles lignes.
     
-    ![NameCheap-BP-redelegate-1-3-1](../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
+    ![NameCheap-BP-redelegate-1-3-1](../../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
   
 2. Dans les zones serveur de **noms** , tapez ou copiez-collez les valeurs du tableau suivant.
     
@@ -149,11 +149,11 @@ Pour finaliser la configuration de votre domaine avec Office 365, vous devez mod
 |**Nameserver 3 (Serveur de noms 3)** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Nameserver 4 (Serveur de noms 4)** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![NameCheap-BP-redelegate-1-3-2](../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
+   ![NameCheap-BP-redelegate-1-3-2](../../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
   
 3. Sélectionnez le contrôle **Enregistrer** (case à cocher). 
     
-    ![NameCheap-BP-redelegate-1-5](../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
+    ![NameCheap-BP-redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
 > L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Vous pourrez ensuite utiliser votre messagerie et les autres services Office 365 avec votre domaine. 
@@ -165,11 +165,11 @@ Pour finaliser la configuration de votre domaine avec Office 365, vous devez mod
   
 1. Si d’autres serveurs de noms sont répertoriés dans les zones serveur de **noms** , supprimez-les en les sélectionnant et en appuyant sur la touche **Suppr** du clavier. 
     
-    ![NameCheap-BP-redelegate-1-4](../media/3270603a-c4f4-40b7-acad-733d56e2f53c.png)
+    ![NameCheap-BP-redelegate-1-4](../../media/3270603a-c4f4-40b7-acad-733d56e2f53c.png)
   
 2. Sélectionnez **Ajouter** un serveur de noms à deux reprises pour ajouter deux nouvelles lignes. 
     
-    ![NameCheap-BP-redelegate-1-3-1](../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
+    ![NameCheap-BP-redelegate-1-3-1](../../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
   
 3. Dans les zones serveur de **noms** , tapez ou copiez-collez les valeurs du tableau suivant.
  
@@ -181,11 +181,11 @@ Pour finaliser la configuration de votre domaine avec Office 365, vous devez mod
 |**Nameserver 3 (Serveur de noms 3)** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Nameserver 4 (Serveur de noms 4)** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![NameCheap-BP-redelegate-1-3-2](../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
+   ![NameCheap-BP-redelegate-1-3-2](../../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
   
 4. Sélectionnez le contrôle **Enregistrer** (case à cocher). 
     
-    ![NameCheap-BP-redelegate-1-5](../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
+    ![NameCheap-BP-redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
 > L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Vous pourrez ensuite utiliser votre messagerie et les autres services Office 365 avec votre domaine.

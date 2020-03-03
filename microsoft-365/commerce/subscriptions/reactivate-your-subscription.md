@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Découvrez comment réactiver votre abonnement Office 365 lorsqu’il arrive à expiration, ou si Microsoft le désactive, ou si vous l’annulez au milieu.
-ms.openlocfilehash: 7b902e210e39f41f6753958c5b6453c85a242f6c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239556"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354605"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
 
@@ -67,7 +67,7 @@ Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’
 
 2. Recherchez l’abonnement que vous souhaitez réactiver, puis sélectionnez **réactiver**.
 
-    ![En gros niveau sur une carte d’abonnement indiquant désactivé et une fonctionnalité réduite avec un bouton réactiver.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![En gros niveau sur une carte d’abonnement indiquant désactivé et une fonctionnalité réduite avec un bouton réactiver.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     Si l’option **réactiver** n’apparaît pas comme action disponible, [appelez le support technique](../../admin/contact-support-for-business-products.md) pour réactiver votre abonnement.
 
@@ -88,7 +88,7 @@ Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’
 
 2. Recherchez l’abonnement que vous souhaitez réactiver, puis sélectionnez **réactiver**.
 
-    ![En gros niveau sur une carte d’abonnement indiquant désactivé et une fonctionnalité réduite avec un bouton réactiver.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![En gros niveau sur une carte d’abonnement indiquant désactivé et une fonctionnalité réduite avec un bouton réactiver.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     Si l’option **réactiver** n’apparaît pas comme action disponible, [appelez le support technique](../../admin/contact-support-for-business-products.md) pour réactiver votre abonnement.
 

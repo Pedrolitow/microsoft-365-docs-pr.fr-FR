@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Découvrez comment afficher les rapports à l’aide des onglets de navigation et des filtres.
-ms.openlocfilehash: abd3cdf478f5a17d11af99428ec71bddd7eb339a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3abbd2362cb6216d5dd561c7792fa41588daac66
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253162"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355105"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Explorer et utiliser les rapports d’analyse sur l’utilisation de Microsoft 365
 
@@ -34,35 +34,35 @@ Pour commencer à utiliser vos rapports, voici quelques conseils :
 
 - Utilisez les onglets de navigation à gauche ou sur une mesure associée dans la page de **Résumé analytique** pour accéder à chaque rapport de niveau supérieur.
 
-    ![Affiche les onglets de navigation à gauche](../media/navigate-usage-analytics1.png)
+    ![Affiche les onglets de navigation à gauche](../../media/navigate-usage-analytics1.png)
 
 - Utilisez les onglets de navigation en haut de chaque rapport de niveau supérieur pour accéder à différents rapports au sein de ce niveau.
 
-    ![Affiche les onglets de navigation en haut de chaque rapport](../media/navigate-usage-analytics2.png)
+    ![Affiche les onglets de navigation en haut de chaque rapport](../../media/navigate-usage-analytics2.png)
 
 - De nombreux rapports contiennent un segment dans lequel vous pouvez filtrer le produit, l’attribut AAD ou l’activité que vous souhaitez afficher. Il peut s’agir d’une sélection unique ou d’une sélection multiple.
 
-    ![Affiche un segment](../media/navigate-usage-analytics3.png)
+    ![Affiche un segment](../../media/navigate-usage-analytics3.png)
 
-    ![Affiche un segment](../media/navigate-usage-analytics4.png)
+    ![Affiche un segment](../../media/navigate-usage-analytics4.png)
 
 
 - Placez le curseur sur des points de données pour afficher une légende contenant des détails.
 
-    ![Affiche un exemple de pointage](../media/navigate-usage-analytics6.png)
+    ![Affiche un exemple de pointage](../../media/navigate-usage-analytics6.png)
 
 L’utilisateur qui a instancié l’application de modèle aura la possibilité de personnaliser le rapport en fonction de ses besoins. Pour personnaliser l’application de modèle :
 
 - Sélectionnez **modifier le rapport** en haut du rapport.
 
-    ![Affiche le rapport de modification](../media/navigate-usage-analytics7.png)
+    ![Affiche le rapport de modification](../../media/navigate-usage-analytics7.png)
 
 
 - Créez vos propres éléments visuels à l'aide des [jeux de données](usage-analytics-data-model.md) sous-jacents.
 
 - Utilisez PowerBI Desktop pour accéder à vos propres sources de données.
 
-Pour partager vos rapports, il vous suffit de sélectionner le bouton partager ![Power BI Share icon](../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) en haut de la page.
+Pour partager vos rapports, il vous suffit de sélectionner le bouton partager ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) en haut de la page.
 
 Pour en savoir plus sur la personnalisation des rapports, consultez [la rubrique Customizing the reports in Microsoft 365 usage Analytics](customize-reports.md).
 

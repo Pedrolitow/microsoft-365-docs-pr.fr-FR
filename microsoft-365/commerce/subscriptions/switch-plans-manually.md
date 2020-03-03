@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Changez manuellement les abonnements Office 365 pour les entreprises en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: 5fe50cbc0a11c4fe9976be07bfb0ab752bae5bba
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254362"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354706"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Changer manuellement les offres Office 365 pour les entreprises
 
@@ -74,7 +74,7 @@ Assurez-vous que vous achetez un abonnement pour la même organisation que les u
 
    **Nouvel abonnement Office 365 pour les entreprises avec des licences disponibles**
 
-    ![Page d’abonnement indiquant le nombre de licences pour le nouvel abonnement.](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
+    ![Page d’abonnement indiquant le nombre de licences pour le nouvel abonnement.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
 3. **Vérifier que vous disposez de suffisamment de licences pour chaque utilisateur**
 
@@ -115,7 +115,7 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
     > [!TIP]
     > Pour limiter les services disponibles pour l’utilisateur, **désactivez** le bouton bascule pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur ait accès à tous les services disponibles à l’exception de Skype entreprise Online, vous pouvez activer **ou désactiver le** bouton bascule pour le service Skype entreprise online.
   
-    ![Définition des attributions de licence pour un utilisateur.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Définition des attributions de licence pour un utilisateur.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 5. Activer/ **Désactiver** le bouton bascule pour les licences dont cet utilisateur n’a plus besoin.
 
@@ -141,7 +141,7 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
     > - Pour limiter les services disponibles pour l’utilisateur, basculez en mode de basculement vers l' **arrêt** pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur ait accès à tous les services disponibles à l’exception de Skype entreprise Online, vous pouvez activer **ou désactiver le** bouton bascule pour le service Skype entreprise online.
     > - Les attributions de licences précédentes sont alors supprimées pour les utilisateurs sélectionnés.
   
-    ![Définition des attributions de licence pour un utilisateur.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Définition des attributions de licence pour un utilisateur.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. En bas du volet **Remplacer les produits existants**, sélectionnez **Remplacer** \> **Fermer**.
 

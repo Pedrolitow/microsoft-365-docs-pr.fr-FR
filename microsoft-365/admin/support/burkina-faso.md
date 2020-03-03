@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8bea526391eda00d9d8af5f72d0e6a22bfa2e1e8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4b25b2c055a770c677e23e143e153324830117f4
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253999"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359695"
 ---
 # <a name="contact-support-for-burkina-faso"></a>Contacter le support pour Burkina Faso
 

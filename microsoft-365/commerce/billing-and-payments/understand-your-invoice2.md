@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Découvrez comment interpréter les frais, la facturation et les informations de paiement sur votre facture Office 365 pour les entreprises, et comment modifier le numéro de commande d’achat.
-ms.openlocfilehash: 2cb95b49136c186158d3b8ba3fe868d2c863e0de
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242424"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354685"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>Comprendre votre facture pour Office 365 pour les entreprises
 
@@ -37,11 +37,11 @@ Chaque mois, vous recevez un courrier électronique qui vous indique que votre n
   
 Votre facture contient deux pages. Page 1 contient un résumé de la facture, ainsi que des informations générales sur la facture, la commande, le montant à payer, les méthodes de paiement et la façon de contacter le support technique.
   
-![Page 1 of a sample invoice.](../../admin/media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
+![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
 La page 2 contient des informations relatives à l'activité de facturation de chaque abonnement.
   
-![Page 2 of a sample invoice.](../../admin/media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
+![Page 2 of a sample invoice.](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
   
 Pour obtenir une description des champs et des termes inclus dans votre facture, consultez le [Glossaire des termes de la facture](#invoice-field-glossary) plus loin dans cet article.
   
@@ -66,7 +66,7 @@ Le tableau suivant décrit les termes pouvant figurer sur votre facture. Il est 
 > [!NOTE]
 > Le paiement par compte bancaire n’est pas disponible dans certains pays ou certaines régions.
   
-|**Name**|**Description**|
+|**Nom**|**Description**|
 |:-----|:-----|
 |Prix annuel|Les abonnements sont facturées mensuellement ou annuellement. Si vous avez choisi la facturation annuelle pendant l’achat de l’abonnement, le prix de la licence annuelle est reflété sur la facture. Si vous voulez modifier la périodicité de facturation, vous devrez annuler votre abonnement et le racheter en sélectionnant une autre périodicité de facturation.|
 |Période de facturation|La période de facturation correspond à la période écoulée depuis la date de la dernière facturation. La période de service représente la période pendant laquelle l'utilisation du service vous est facturée.|

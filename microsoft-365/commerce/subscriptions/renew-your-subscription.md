@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Découvrez comment renouveler votre abonnement Office 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
-ms.openlocfilehash: f9b80fa6cc28edbea955575016824532239ec2f9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254373"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354575"
 ---
 # <a name="renew-office-365-for-business"></a>Réactiver ou renouveler un abonnement Office 365 Entreprise
 
@@ -80,7 +80,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
  
 3. **Pour activer**la **facturation périodique**, activez le bouton bascule.
 
-    ![Fermeture d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Fermeture d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     Vous pouvez désactiver la **facturation périodique** en **désactivant**le bouton bascule.
 
@@ -103,7 +103,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
  
 3. **Pour activer**la **facturation périodique**, activez le bouton bascule.
 
-    ![Fermeture d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Fermeture d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     Vous pouvez désactiver la **facturation périodique** en **désactivant**le bouton bascule.
 
