@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fe40e4a972d205470474c6bcd137712e031b065b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f1abc4d885a1d9a1d915bdf5492e3492dc4318a6
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602001"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363020"
 ---
 # <a name="web-content-accessibility-guidelines"></a>Règles pour l’accessibilité des contenus web (WCAG)
 
@@ -51,7 +51,7 @@ Microsoft publie des rapports WCAG qui reflètent l’état d’un produit ou d�
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Rapports de conformité en matière d’accessibilité de Microsoft
 
-Lisez des rapports WCAG pour [tous nos produits et services](https://go.microsoft.com/fwlink/p/?linkid=205097).
+Lisez des rapports WCAG pour [tous nos produits et services](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/).
 
 ## <a name="resources"></a>Ressources
 

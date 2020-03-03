@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Office 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: 6962d8ed9632ae2e819f1ea1d0e0950d82ef7ad7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239085"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353965"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Rapports d’activité dans le Centre d’administration Microsoft 365
 
@@ -58,7 +58,7 @@ Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les
 ::: moniker-end
 
    
-2. Choisissez **Sélectionner un rapport** en haut du tableau de bord et sélectionnez l'un des rapports disponibles proposés. Vous pouvez également sélectionner un widget d'aperçu de l'activité pour un service (courrier, OneDrive, etc.) pour consulter plus d'informations. <br/>![Tableau de bord d’utilisation d’Office 365](../media/usage-report-dashboard.png)
+2. Choisissez **Sélectionner un rapport** en haut du tableau de bord et sélectionnez l'un des rapports disponibles proposés. Vous pouvez également sélectionner un widget d'aperçu de l'activité pour un service (courrier, OneDrive, etc.) pour consulter plus d'informations. <br/>![Tableau de bord d’utilisation d’Office 365](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Qui peut voir ces rapports ?
 
@@ -164,7 +164,7 @@ Si vous voulez masquer les informations concernant les utilisateurs individuels 
   
 Votre liste d’utilisateurs se présente comme suit :
   
-![Rapports Office 365 : liste d’utilisateurs rendus anonymes](../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Rapports Office 365 : liste d’utilisateurs rendus anonymes](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Quelques minutes sont nécessaires pour répercuter ces modifications dans les rapports du tableau de bord Rapports. Ce paramètre s’applique également à l’API Rapports.
   

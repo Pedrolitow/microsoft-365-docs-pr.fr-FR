@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 270894da77d9ddf2b35187d8409cd2fd878b0e6d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2ceec37928eafab0c4f02382dd24aa3fa91aa9cd
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253043"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362299"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
@@ -64,17 +64,17 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
     
 3. Dans la page **Boîtes aux lettres partagées**, sélectionnez **+ Ajouter une boîte aux lettres**. Entrez le nom de la boîte aux lettres partagée. L’Assistant choisit ensuite l’adresse de courrier, que vous pouvez modifier si vous le souhaitez.
     
-    ![Donnez un nom à votre boîte aux lettres partagée.](../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
+    ![Donnez un nom à votre boîte aux lettres partagée.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
 4. Sélectionnez **Ajouter**. Quelques minutes peuvent être nécessaires avant que vous ne puissiez ajouter des membres.
 
 5. Sous **Étapes suivantes**, sélectionnez **Ajouter des membres à cette boîte aux lettres**. Les membres représentent les personnes qui sont en mesure de consulter les courriers entrants dans cette boîte aux lettres partagée, ainsi que les réponses sortantes.
 
-   ![Sélectionnez Ajouter des membres](../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Sélectionnez Ajouter des membres](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. Sélectionnez le bouton **+Ajouter des membres**. Cochez la case en regard des personnes qui seront en mesure d'utiliser cette boîte aux lettres partagée, puis sélectionnez **Enregistrer**.
 
-   ![Attribuer des membres à la boîte aux lettres partagée](../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Attribuer des membres à la boîte aux lettres partagée](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Sélectionnez **Fermer**.
 
@@ -95,7 +95,7 @@ Mais que se passe-t-il si un administrateur se contente de réinitialiser le mot
 
 2. Dans la liste des comptes d’utilisateurs, recherchez le compte de la boîte aux lettres partagée (par exemple, remplacez le filtre par **Utilisateurs sans licence**).
 
-3. Sélectionnez l’utilisateur pour ouvrir son volet de propriétés, puis sélectionnez l’icône **Bloquer cet utilisateur** ![Capture d’écran de l’icône Bloquer cet utilisateur](../media/block-user-icon.png).
+3. Sélectionnez l’utilisateur pour ouvrir son volet de propriétés, puis sélectionnez l’icône **Bloquer cet utilisateur** ![Capture d’écran de l’icône Bloquer cet utilisateur](../../media/block-user-icon.png).
 
    **Remarque** : si le compte est déjà bloqué, **Connexion bloquée** s’affiche dans la partie supérieure et l’icône indique **Débloquer cet utilisateur**.
 

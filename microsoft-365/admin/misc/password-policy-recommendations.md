@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Découvrez comment renforcer la sécurité de votre organisation contre les attaques par mot de passe et la raison pour laquelle vous devez interdire les mots de passe courants et activer l’authentification multifacteur basée sur le risque.
-ms.openlocfilehash: 0d18605559cc58dd23b91446f2ef13dc28d144cb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7136243aa0a358a59e4be6c348f53ca459e8a65d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244086"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361325"
 ---
 # <a name="password-policy-recommendations-for-office-365"></a>Recommandations en matière de stratégie de mot de passe pour Office 365
  

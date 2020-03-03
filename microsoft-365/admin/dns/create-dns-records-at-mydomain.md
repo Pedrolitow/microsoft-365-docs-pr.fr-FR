@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9982191d-ed79-46a9-b2e7-317d1a3a9867
 description: Apprenez à vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et les autres services sur MyDomain pour Office 365.
-ms.openlocfilehash: 5a935ea456175f6d63926c9aa33280c4ec113abd
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c85c04d369add95d3aaa815229257fe90a24fb28
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245071"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42349863"
 ---
 # <a name="create-dns-records-at-mydomain-for-office-365"></a>Créer des enregistrements DNS auprès de MyDomain pour Office 365
 
@@ -102,7 +102,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
 5. Dans la liste déroulante **Modify** (Modifier), sélectionnez **MX Record** (Enregistrement MX).
     
-    ![MyDomain-BP-Configure-2-1](../media/bbfba978-8c53-471b-8c9e-8ae62e559d15.png)
+    ![MyDomain-BP-Configure-2-1](../../media/bbfba978-8c53-471b-8c9e-8ae62e559d15.png)
   
 6. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
@@ -110,19 +110,19 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     |:-----|:-----|:-----|
     |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Office 365. > [Comment puis-je trouver ceci ?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![MyDomain-BP-Configure-2-2](../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
+    ![MyDomain-BP-Configure-2-2](../../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
   
 7. Sélectionnez **Ajouter**.
     
-    ![MyDomain-BP-Configure-2-3](../media/1a1951a8-11d7-405d-bef5-285bbb053ce8.png)
+    ![MyDomain-BP-Configure-2-3](../../media/1a1951a8-11d7-405d-bef5-285bbb053ce8.png)
   
 8. S’il existe d’autres enregistrements MX, sélectionnez **Remove** (Supprimer) dans la colonne **Action** pour chacun d’eux afin de le supprimer. 
     
-    ![MyDomain-BP-Configure-2-4](../media/42576149-e056-4a81-a5fd-2c5dfac44e2e.png)
+    ![MyDomain-BP-Configure-2-4](../../media/42576149-e056-4a81-a5fd-2c5dfac44e2e.png)
   
 9. Sélectionnez **OK**.
     
-    ![MyDomain-BP-Configure-2-5](../media/d6b70eb7-b79c-499e-82ff-ecef2e300368.png)
+    ![MyDomain-BP-Configure-2-5](../../media/d6b70eb7-b79c-499e-82ff-ecef2e300368.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Ajouter les enregistrements CNAME requis pour Office 365
 <a name="BKMK_add_CNAME"> </a>
@@ -137,7 +137,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
 5. Dans la liste déroulante **Modify** (Modifier), sélectionnez **CNAME Alias** (Alias CNAME).
     
-    ![MyDomain-BP-Configure-3-1](../media/628267fc-d37b-42ef-bb92-265284e339ac.png)
+    ![MyDomain-BP-Configure-3-1](../../media/628267fc-d37b-42ef-bb92-265284e339ac.png)
   
 6. Ajoutez le premier enregistrement CNAME.
     
@@ -151,11 +151,11 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![MyDomain-BP-Configure-3-2](../media/3c8660b3-40bb-453d-8b99-4d22032bc4b3.png)
+    ![MyDomain-BP-Configure-3-2](../../media/3c8660b3-40bb-453d-8b99-4d22032bc4b3.png)
   
 7. Sélectionnez **Ajouter** pour ajouter le premier enregistrement. 
     
-    ![MyDomain-BP-Configure-3-3](../media/103a1d99-70da-4fdf-9291-7dd058ec6c4a.png)
+    ![MyDomain-BP-Configure-3-3](../../media/103a1d99-70da-4fdf-9291-7dd058ec6c4a.png)
   
 8. Ajoutez le deuxième enregistrement CNAME.
     
@@ -179,7 +179,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
 5. Dans la liste déroulante **Modify (Modifier)**, sélectionnez **TXT/SPF Record (Enregistrement TXT/SPF)**.
     
-    ![MyDomain-BP-Configure-4-1](../media/c461c762-52e6-4fde-b5bc-4dd5e5d62ed3.png)
+    ![MyDomain-BP-Configure-4-1](../../media/c461c762-52e6-4fde-b5bc-4dd5e5d62ed3.png)
   
 6. Sous **Content (Contenu)**, dans la zone du nouvel enregistrement, tapez ou copiez-collez la valeur du tableau suivant.
     
@@ -187,11 +187,11 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     |:-----|
     |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    
-    ![MyDomain-BP-Configure-4-2](../media/17d43106-88e6-47e5-aeba-0f18484acf3e.png)
+    ![MyDomain-BP-Configure-4-2](../../media/17d43106-88e6-47e5-aeba-0f18484acf3e.png)
   
 7. Sélectionnez **Ajouter**.
     
-    ![MyDomain-BP-Configure-4-3](../media/b3670563-b620-470c-a42b-2c77888981f8.png)
+    ![MyDomain-BP-Configure-4-3](../../media/b3670563-b620-470c-a42b-2c77888981f8.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
 <a name="BKMK_add_SRV"> </a>

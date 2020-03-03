@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365
-ms.openlocfilehash: 3aa8be9b53f2aa8f3fc6bf64744b36de5d912645
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598601"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372482"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Réponse à un compte de messagerie compromis dans Office 365
 
@@ -194,7 +194,7 @@ Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de s
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365](/security/office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+- [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Centre de plaintes contre la criminalité sur Internet ](https://www.ic3.gov/preventiontips.aspx)
 

@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Découvrez comment configurer votre abonnement Office 365 Business Premium, Office 365 Business Essentials, Office 365 Business ou Office 365 Éducation.
-ms.openlocfilehash: 28847b1b2773a0f725a5ac1a99dfc2a807f66b82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 303e736bb3296eba5ddb7ca7e9da8f86ebdc0217
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243919"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360445"
 ---
 # <a name="set-up-office-365-for-business"></a>Configurer Office 365 pour les entreprises
 
@@ -168,7 +168,7 @@ Si vous utilisez Office 365 géré par 21Vianet, connectez-vous sur la page [htt
 
 1. Sélectionnez **Courrier Outlook**.
 
-2. Dans la barre de navigation Outlook, sélectionnez **Paramètres**![Paramètres : mettre à jour votre profil, installer le logiciel et le connecter au cloud](../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> **Options**.
+2. Dans la barre de navigation Outlook, sélectionnez **Paramètres**![Paramètres : mettre à jour votre profil, installer le logiciel et le connecter au cloud](../../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> **Options**.
 
 3. Dans le volet gauche, sélectionnez **Courrier Outlook**, puis sous **Comptes**, sélectionnez **Comptes connectés**.
 

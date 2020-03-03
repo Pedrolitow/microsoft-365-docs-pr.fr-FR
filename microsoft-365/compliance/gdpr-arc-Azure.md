@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7c3be3d13e40c3a758edeb224aa2b8383908dd1f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef8a7695e3e54acda069f73eea88fd54b292ba8a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594525"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353935"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Liste de contrôle de la préparation d’Azure aux obligations du RGPD
 
@@ -145,7 +145,7 @@ Pour obtenir d’autres documents relatifs au RGPD, voir [https://aka.ms/gdprget
 | 12 <a name="12"> </a> | [Rapport d’audit type 2 SOC 2 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (complet) ISO/IEC 27001:2013 ISMS Détermination du domaine d’application](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Offres de conformité du Centre de confidentialité Microsoft](offering-home.md)  |
-| 15 <a name="15"> </a> | [Confidentialité et données à caractère personnel dans Intune](https://review.docs.microsoft.com/intune/privacy-personal-data) |
+| 15 <a name="15"> </a> | [Confidentialité et données à caractère personnel dans Intune](https://docs.microsoft.com/intune/privacy-personal-data) |
 | 16 <a name="16"> </a> | [Ensemble de contrôle complet du RGPD pour Azure téléchargeable](https://aka.ms/GDPRControls) ou [Score de conformité](compliance-score.md) |
 | 17 <a name="17"> </a> | [Informations relatives au délégué à la protection des données de Microsoft](https://aka.ms/GDPRDPO) |
 

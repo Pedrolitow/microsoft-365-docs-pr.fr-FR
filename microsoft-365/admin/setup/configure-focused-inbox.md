@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: "Découvrez la configuration d'une boîte de réception prioritaire pour tout ou partie des utilisateurs de votre organisation. "
-ms.openlocfilehash: 6762bf4e81254e962171ddc80027273542288f34
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 29f412b82121b8955c2ddabb5d152bbe6b2255e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254133"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360875"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurez la boîte de réception Prioritaire pour tous les membres de votre organisation
 
@@ -52,7 +52,7 @@ Get-OrganizationConfig
 
 4. Recherchez **FocusedInboxOn** pour afficher son paramètre actuel : 
     
-    ![Réponse de PowerShell sur l’état de la boîte de réception Prioritaire.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Réponse de PowerShell sur l’état de la boîte de réception Prioritaire.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Exécutez l'applet de commande suivante pour désactiver la boîte de réception Prioritaire.
     
@@ -74,11 +74,11 @@ Get-OrganizationConfig
 
 Vos utilisateurs ne verront l’affichage Prioritaire qu’après avoir fermé et redémarré Outlook. Un conseil leur donnant la possibilité d’utiliser la nouvelle boîte de réception Prioritaire apparaît alors dans l’interface utilisateur d’Outlook.
   
-![Image de la boîte de réception Prioritaire lorsqu’un utilisateur ouvre Outlook sur le web pour la première fois.](../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
+![Image de la boîte de réception Prioritaire lorsqu’un utilisateur ouvre Outlook sur le web pour la première fois.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
 Si vous passez du Courrier pêle-mêle à la boîte de réception Prioritaire, ils peuvent décider d'activer (« Essayer ») ou d'ignorer la fonctionnalité. Si l'utilisateur dispose de plusieurs clients (pris en charge), ils peuvent activer/désactiver la boîte de réception Prioritaire individuellement dans chacun d'eux. Le conseil se présente ainsi :
   
-![Une image illustrant l’apparence de la boîte de réception Prioritaire lorsqu’elle est déployée pour vos utilisateurs et qu’Outlook est rouvert.](../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
+![Une image illustrant l’apparence de la boîte de réception Prioritaire lorsqu’elle est déployée pour vos utilisateurs et qu’Outlook est rouvert.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
 Lorsqu’un utilisateur décide d’utiliser la boîte de réception Prioritaire, Courrier pêle-mêle est désactivé automatiquement. Le dossier Courrier pêle-mêle est converti en un dossier standard que l’utilisateur peut renommer ou supprimer.
   
@@ -98,7 +98,7 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
 
 4. Recherchez FocusedInboxOn pour afficher son paramètre actuel :
     
-    ![Réponse de PowerShell sur l’état de la boîte de réception Prioritaire.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Réponse de PowerShell sur l’état de la boîte de réception Prioritaire.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Exécutez l'applet de commande suivante pour désactiver la boîte de réception Prioritaire :
     
@@ -116,13 +116,13 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
     
-2. Accédez à **Flux de messagerie** \> **Règles**. Cliquez sur ![Ajouter icône EAC](../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif), puis sélectionnez **Créer une règle...** 
+2. Accédez à **Flux de messagerie** \> **Règles**. Cliquez sur ![Ajouter icône EAC](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif), puis sélectionnez **Créer une règle...** 
     
 3. Après avoir créé la règle, cliquez sur **Enregistrer** pour démarrer la règle. 
     
     L'image suivante présente un exemple permettant de remettre tous les messages des « Ressources Humaines » dans la boîte de réception Prioritaire.
     
-    ![paie focusedinbox](../media/focusedinbox-transport-rule.PNG)
+    ![paie focusedinbox](../../media/focusedinbox-transport-rule.PNG)
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Utilisez PowerShell pour créer une règle de transport permettant de diriger les messages e-mail vers l’affichage Prioritaire pour tous vos utilisateurs
 

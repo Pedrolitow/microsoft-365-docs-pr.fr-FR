@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Créer une boîte aux lettres de salle ou de ressource pour que tous les membres de l'organisation puissent réserver la salle ou l'équipement pour des réunions ou des événements à l'aide d'Outlook. "
-ms.openlocfilehash: b9f1ce531cb8ce94238b3dd35f2bfdc214d7693f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1690eba40b71972c18f28e02baf0a39d6557651a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252755"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361859"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Boîtes aux lettres de salle et de ressource
 
@@ -40,21 +40,21 @@ Pour utiliser les boîtes aux lettres de salle ou de ressource, ouvrez Outlook �
   
 1. Ouvrez **Outlook** sur votre ordinateur. 
     
-2. Dans l'onglet **Accueil**, sélectionnez **Nouveaux éléments** \> **Réunion**.<br/>![Pour planifier une réunion, dans l’onglet Accueil, dans le groupe Nouveau, sélectionnez Nouveaux éléments, puis Réunion.](../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>Vous pouvez également sélectionner **Nouvelle réunion** à partir de votre Calendrier.
+2. Dans l'onglet **Accueil**, sélectionnez **Nouveaux éléments** \> **Réunion**.<br/>![Pour planifier une réunion, dans l’onglet Accueil, dans le groupe Nouveau, sélectionnez Nouveaux éléments, puis Réunion.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>Vous pouvez également sélectionner **Nouvelle réunion** à partir de votre Calendrier.
     
-3. Dans le champ À, tapez le nom de la salle de conférence ou de l’équipement que vous voulez réserver, ainsi que les participants que vous voulez inviter.<br/>Vous pouvez également sélectionner **À**, puis double-cliquer sur la salle de conférence ou l'équipement dans la liste. Puis sélectionnez **OK**.<br/>![Réserver une boîte aux lettres de salle dans Outlook](../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+3. Dans le champ À, tapez le nom de la salle de conférence ou de l’équipement que vous voulez réserver, ainsi que les participants que vous voulez inviter.<br/>Vous pouvez également sélectionner **À**, puis double-cliquer sur la salle de conférence ou l'équipement dans la liste. Puis sélectionnez **OK**.<br/>![Réserver une boîte aux lettres de salle dans Outlook](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. Dans la ligne **Objet**, tapez l’objet de la réservation ou de la réunion. 
     
 5. Modifiez l’**emplacement** (facultatif). 
     
-6. Modifiez l’**heure de début** et l’**heure de fin**. Vous pouvez également sélectionner **Évènement d'une journée entière**. Pour répéter la réunion ou la réservation, sélectionnez **Périodicité** dans la partie supérieure.<br/>![Réserver une heure de réunion](../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Modifiez l’**heure de début** et l’**heure de fin**. Vous pouvez également sélectionner **Évènement d'une journée entière**. Pour répéter la réunion ou la réservation, sélectionnez **Périodicité** dans la partie supérieure.<br/>![Réserver une heure de réunion](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Tapez un message décrivant le but et joignez des fichiers si nécessaire.
     
 8. Pour autoriser d'autres personnes à participer en ligne ou par téléphone à la réunion, sélectionnez **Réunion Skype**.
     
-9. Pour vérifier la disponibilité de la salle, des ressources et des personnes que vous avez invitées, sélectionnez **Assistant Planification** dans la partie supérieure. Sélectionnez ensuite un horaire disponible dans le calendrier.<br/> ![Vérifier la disponibilité du matériel de la salle](../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>CONSEIL : dans le calendrier de planification, le bleu indique que la salle ou la ressource est réservée ou occupée. Sélectionnez un horaire libre (en blanc) sur le calendrier. 
+9. Pour vérifier la disponibilité de la salle, des ressources et des personnes que vous avez invitées, sélectionnez **Assistant Planification** dans la partie supérieure. Sélectionnez ensuite un horaire disponible dans le calendrier.<br/> ![Vérifier la disponibilité du matériel de la salle](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>CONSEIL : dans le calendrier de planification, le bleu indique que la salle ou la ressource est réservée ou occupée. Sélectionnez un horaire libre (en blanc) sur le calendrier. 
   
 10. Lorsque vous avez terminé, cliquez sur **Envoyer**.
     
@@ -66,7 +66,7 @@ Pour configurer une boîte aux lettres de salle ou de ressource, accédez au Cen
   
 2. Sélectionnez **Ajouter**.
     
-3. Remplissez les champs de la salle ou de la ressource :<br/>![Ajouter une boîte aux lettres de salle dans Office 365](../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Remplissez les champs de la salle ou de la ressource :<br/>![Ajouter une boîte aux lettres de salle dans Office 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Salle** ou **Ressource** : type de boîte aux lettres que vous voulez créer.
     
