@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes. '
-ms.openlocfilehash: d3abaa4fef1a50ab5aad4762e688efe451d0a4cf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 68e5061b7238d456ee0397a50eff37f07214d13f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244032"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361115"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>10 principales méthodes pour sécuriser les offres Office 365 et Microsoft 365 Entreprise
 
@@ -33,22 +33,22 @@ Si vous êtes une petite ou moyenne organisation utilisant l’un des plans de g
   
 Microsoft vous recommande d’effectuer les tâches indiquées dans le tableau suivant qui s’appliquent à votre plan de service. 
   
-||**Task**|**Office 365 Business Premium**|**Microsoft 365 Business**|
+||**Tâche**|**Office 365 Business Premium**|**Microsoft 365 Business**|
 |:-----|:-----|:-----|:-----|
-|0,1  <br/> |[Configurer l’authentification multifacteur](secure-your-business-data.md#setup) <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|n°2  <br/> |[Former vos utilisateurs](secure-your-business-data.md#train) <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3  <br/> |[Utiliser des comptes d’administration dédiés](secure-your-business-data.md#admin) <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|4  <br/> |[Augmenter le niveau de protection contre les programmes malveillants dans les messages](secure-your-business-data.md#malware) <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|disque  <br/> |[Protéger contre les ransomware](secure-your-business-data.md#ransomware) <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|6   <br/> |[Arrêter le transfert automatique pour le courrier électronique](secure-your-business-data.md#forwarding) <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|7   <br/> |[Utiliser le chiffrement de messages Office](secure-your-business-data.md#encryption) <br/> ||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|8   <br/> |[Protéger votre courrier électronique contre les attaques par hameçonnage](secure-your-business-data.md#phishing) <br/> ||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|9   <br/> |[Protection contre les pièces jointes et les fichiers malveillants avec des pièces jointes fiables ATP](secure-your-business-data.md#atp) <br/> ||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10   <br/> |[Protection contre les attaques de hameçonnage à l’aide de liens fiables ATP](secure-your-business-data.md#phishingatp) <br/> ||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|0,1  <br/> |[Configurer l’authentification multifacteur](secure-your-business-data.md#setup) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|n°2  <br/> |[Former vos utilisateurs](secure-your-business-data.md#train) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3  <br/> |[Utiliser des comptes d’administration dédiés](secure-your-business-data.md#admin) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|4  <br/> |[Augmenter le niveau de protection contre les programmes malveillants dans les messages](secure-your-business-data.md#malware) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|disque  <br/> |[Protéger contre les ransomware](secure-your-business-data.md#ransomware) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|6.x  <br/> |[Arrêter le transfert automatique pour le courrier électronique](secure-your-business-data.md#forwarding) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|7j/7  <br/> |[Utiliser le chiffrement de messages Office](secure-your-business-data.md#encryption) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|8bits  <br/> |[Protéger votre courrier électronique contre les attaques par hameçonnage](secure-your-business-data.md#phishing) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|4,9  <br/> |[Protection contre les pièces jointes et les fichiers malveillants avec des pièces jointes fiables ATP](secure-your-business-data.md#atp) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10   <br/> |[Protection contre les attaques de hameçonnage à l’aide de liens fiables ATP](secure-your-business-data.md#phishingatp) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 Avant de commencer, vérifiez votre [score de sécurité microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) dans le centre de sécurité Microsoft 365. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de vos identités, données, applications, périphériques et infrastructure Microsoft 365. Vous disposez de points pour la configuration des fonctionnalités de sécurité recommandées, l’exécution de tâches liées à la sécurité (telles que l’affichage de rapports) ou l’adressage de recommandations avec une application ou un logiciel tiers. Avec des informations supplémentaires et une meilleure visibilité sur un ensemble plus large de produits et services Microsoft, vous pouvez vous sentir confiant des rapports sur l’état de la sécurité de votre organisation.
   
-![Capture d’écran du score de sécurité Microsoft](../media/secure-score.png)
+![Capture d’écran du score de sécurité Microsoft](../../media/secure-score.png)
   
 ## <a name="1-set-up-multi-factor-authentication"></a>1 : configurer l’authentification multifacteur
 <a name="setup"> </a>
@@ -137,7 +137,7 @@ Vous pouvez vous protéger contre les ransomware en créant une ou plusieurs rè
     
 Pour créer une règle de transport de messagerie, affichez une [vidéo de formation courte](https://support.office.com/article/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)ou effectuez les étapes suivantes :
   
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d'administration Exchange</a>.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
 2. Dans la catégorie **flux de messagerie** , sélectionnez **règles**.
     
@@ -173,7 +173,7 @@ Les pirates qui accèdent à la boîte aux lettres d’un utilisateur peuvent ex
   
 Pour créer une règle de transport de messagerie :
   
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d'administration Exchange</a>.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
 2. Dans la catégorie **flux de messagerie** , sélectionnez **règles**.
     
@@ -210,11 +210,11 @@ Il se peut que votre organisation ait configuré des options supplémentaires qu
 
 Dans Outlook pour PC, sélectionnez les **options** dans le courrier électronique, puis choisissez **autorisations**. 
   
-![Chiffrement des messages électroniques dans Outlook](../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
+![Chiffrement des messages électroniques dans Outlook](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
   
 Dans Outlook.com, sélectionnez **protéger** dans le message électronique. La protection par défaut est **ne pas transférer**. Pour modifier ce chiffre, sélectionnez **modifier les autorisations** \> de **chiffrement**. 
   
-![Chiffrement des messages électroniques dans Outlook.com](../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
+![Chiffrement des messages électroniques dans Outlook.com](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
   
 ### <a name="to-receive-encrypted-email"></a>Pour recevoir des messages chiffrés
 
@@ -231,7 +231,7 @@ Si vous avez configuré un ou plusieurs domaines personnalisés pour votre envir
   
 Nous vous recommandons de prendre en main cette protection en créant une stratégie de protection des utilisateurs les plus importants et de votre domaine personnalisé. 
   
-![Création d’une stratégie anti-hameçonnage ATP](../media/security-and-compliance-center.png)
+![Création d’une stratégie anti-hameçonnage ATP](../../media/security-and-compliance-center.png)
   
 Pour créer une stratégie anti-hameçonnage ATP, affichez une [vidéo de formation courte](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)ou effectuez les étapes suivantes :
   

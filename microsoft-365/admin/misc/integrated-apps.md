@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Découvrez les applications intégrées et comment les activer pour permettre aux applications tierces d’accéder aux informations Office 365.
-ms.openlocfilehash: 932a99ec2c65b14e903ccffb86d291dac20ddfcf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3c7c92e16b375fc374563e87ea2f6166c7384a29
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244093"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361385"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Activer ou désactiver les applications intégrées
 
@@ -48,11 +48,11 @@ Lorsque les applications intégrées sont activées, une application utilisée d
 
 Deux types d'autorisations sont possibles lors de l'utilisation des applications intégrées dans Office 365 : les autorisations d'utilisateur et les autorisations d'administrateur. Par exemple, si les applications intégrées sont activées pour votre organisation et qu'un employé utilise une application tierce, l'application peut lui demander l'autorisation de lire ses informations de profil, de modifier ou supprimer ses fichiers, de lire les éléments présents dans les collections de sites, et d'envoyer des messages électroniques au nom de l'utilisateur.
 
-![Autorisations des utilisateurs pour les applications intégrées](../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
+![Autorisations des utilisateurs pour les applications intégrées](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
 
 Si un administrateur enregistre une application pour tous les utilisateurs d’une organisation, il est invité à indiquer que l’application accède aux informations et aux ressources de l’organisation. Les membres de l'organisation qui utilisent ensuite l'application en question ne sont pas sollicités pour accorder une autorisation. Lorsqu'un administrateur enregistre une application, il doit s'assurer qu'elle provient d'un éditeur approuvé. Pour plus d'informations sur l'enregistrement d'une application, voir [Ajouter, mettre à jour et supprimer une application](https://go.microsoft.com/fwlink/p/?LinkID=518600).
 
-![Autorisations des administrateurs pour les applications intégrées](../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
+![Autorisations des administrateurs pour les applications intégrées](../../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
 
 Si les applications intégrées sont désactivées, les applications déjà installées et autorisées à accéder aux informations ne seront pas désinstallées, et les autorisations ne seront pas supprimées. Même si les applications intégrées sont désactivées, les administrateurs peuvent toujours enregistrer les applications pour les mettre à la disposition des utilisateurs et leur donner accès aux informations de ces derniers. Pour plus d'informations sur la suppression d'une application enregistrée et de ses autorisations, voir [Ajouter, mettre à jour et supprimer une application](https://go.microsoft.com/fwlink/?LinkID=518600&amp;clcid=0x409).
 

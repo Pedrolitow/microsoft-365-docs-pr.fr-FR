@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Apprenez à créer, modifier ou supprimer un groupe de sécurité.
-ms.openlocfilehash: 26b431a65035f2546bb44af2ecf31bfd327e53b6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f51c21261a83e1a0034a67f9f1580dd297a3d583
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253031"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362279"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Créer, modifier ou supprimer un groupe de sécurité dans le centre d’administration Microsoft 365
 
@@ -135,7 +135,7 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Groupes dans Exchange Online et SharePoint Online
 
-Si vous souhaitez créer des groupes d’utilisateurs afin de pouvoir leur envoyer des courriers électroniques tous en même temps, vous pouvez le faire dans le centre d’administration Exchange en accédant à **groupes**de **destinataires** \> **Exchange** \> d' **administration** \> . Ensuite, sélectionnez **nouveau**![ajouter](../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png), puis sélectionnez le type de groupe que vous souhaitez créer : 
+Si vous souhaitez créer des groupes d’utilisateurs afin de pouvoir leur envoyer des courriers électroniques tous en même temps, vous pouvez le faire dans le centre d’administration Exchange en accédant à **groupes**de **destinataires** \> **Exchange** \> d' **administration** \> . Ensuite, sélectionnez **nouveau**![ajouter](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png), puis sélectionnez le type de groupe que vous souhaitez créer : 
   
 - **Groupe de distribution**: un groupe de distribution permet de distribuer des messages à un groupe d'utilisateurs. Il est également appelé *groupe de distribution à extension messagerie*ou, dans Office 365, une *liste de distribution*. Pour plus d'informations, voir [Gestion des groupes de distribution](https://technet.microsoft.com/library/bb124513.aspx).
     

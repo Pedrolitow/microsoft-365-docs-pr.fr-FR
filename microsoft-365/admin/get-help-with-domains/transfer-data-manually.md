@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Découvrez comment transférer des données manuellement entre deux comptes Office 365 lorsque vous avez modifié le plan ou le nom de la société, ou combiné plusieurs abonnements en un seul.
-ms.openlocfilehash: 004dd586c207678157afdb418e54f3c3b5353304
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 91f9d7b17a0296931393a89ff95d70628400c61a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252905"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362149"
 ---
 # <a name="transfer-data-manually-between-two-office-365-accounts"></a>Transférer des données manuellement entre deux comptes Office 365
 
@@ -59,7 +59,7 @@ Si vous transférez des données à partir d’Office 365 vers Office 365 Midmar
   
 Pour Office 365 entreprise et Office 365 moyenne entreprise :
   
-|**Emplacement**|**Objectif**|
+|**Location**|**Objectif**|
 |:-----|:-----|
 |**Paramètres du service** **Office 365** \> **admin** \> <br/> |Sélectionnez chaque onglet pour les paramètres de messagerie, sites, Lync, logiciel utilisateur, mots de passe, communauté, gestion des droits et mobile.  <br/> |
 |**Administrateur** \> **Exchange** <br/> | Paramètres Exchange Online  <br/> |
@@ -68,7 +68,7 @@ Pour Office 365 entreprise et Office 365 moyenne entreprise :
 
 Pour Office 365 petite entreprise
   
-|**Emplacement**|**Objectif**|
+|**Location**|**Objectif**|
 |:-----|:-----|
 |**Administration** \> **gérer les paramètres à l’échelle de l’organisation** <br/> |Paramètres d’administration  <br/> |
 

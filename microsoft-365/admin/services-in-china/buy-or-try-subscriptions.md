@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: Découvrez comment essayer un abonnement Office 365 ou l’acheter immédiatement, ajouter des abonnements ou obtenir des modules complémentaires sur un compte Office 365 existant géré par 21Vianet en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: b08a26752a5195208d562067ab8e26e4aa8cb2f8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0781430eaf2ccfeed7c31665029d514be9cc5f2e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244009"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360835"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>Acheter ou essayer des abonnements pour Office 365 géré par 21Vianet
 
@@ -48,11 +48,11 @@ Vous pouvez acheter un abonnement immédiatement ou vous pouvez essayer Office 3
 
 2. Si vous ne vous trouvez pas sur la page d'accueil, sélectionnez **Office 365** dans le coin supérieur gauche.
 
-    ![Bouton pour accéder à la page de démarrage d'Office 365](../media/2fc597ab-ae33-4e5a-aec1-e60e48beac62.png)
+    ![Bouton pour accéder à la page de démarrage d'Office 365](../../media/2fc597ab-ae33-4e5a-aec1-e60e48beac62.png)
 
 3. Dans le coin supérieur droit de la page, sous la barre de navigation, sélectionnez **Achat**.
 
-    ![Bouton permettant d'acheter votre version d'évaluation d'Office 365](../media/73fba4ad-6879-460b-8ef1-f2efb2ee4104.png)
+    ![Bouton permettant d'acheter votre version d'évaluation d'Office 365](../../media/73fba4ad-6879-460b-8ef1-f2efb2ee4104.png)
 
 4. La page **Acheter des abonnements** contient les différentes offres que vous pouvez acheter. L'offre que vous avez essayée est identifiée par la bannière **En évaluation**.
 

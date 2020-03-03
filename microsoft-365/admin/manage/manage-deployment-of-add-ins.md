@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le centre d’administration.
-ms.openlocfilehash: acb6febf03e40b37b167113666b3577e0b9fb61e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252826"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361949"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Gérer le déploiement de compléments Office 365 dans le Centre d’administration Microsoft 365
 
@@ -250,7 +250,7 @@ Word, Excel et PowerPoint 2013 pour Windows prend en charge les mêmes vérifica
   
 Si le complément prend en charge les commandes de complément, celles-ci apparaissent sur le ruban Office. Dans l'exemple suivant, la commande **Search Citation** (Rechercher une citation) apparaît pour le complément **Citations**. 
 
-![Ruban Office avec des citations de recherche](../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Ruban Office avec des citations de recherche](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
 Si le complément déployé ne prend pas en charge les commandes de complément ou si vous souhaitez afficher tous les compléments déployés, vous pouvez les consulter via **mes compléments**. 
   
@@ -260,11 +260,11 @@ Si le complément déployé ne prend pas en charge les commandes de complément 
     
 2. Sélectionnez l'onglet **Géré par l'administrateur** dans la fenêtre Compléments Office. 
     
-3. Double-cliquez sur le complément que vous avez déployé précédemment (dans cet exemple, **Citations** ). <br/>![Onglet géré par l’administrateur de la page compléments Office](../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. Double-cliquez sur le complément que vous avez déployé précédemment (dans cet exemple, **Citations** ). <br/>![Onglet géré par l’administrateur de la page compléments Office](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>Dans Outlook
 
-1. Sur le ruban **Accueil** , sélectionnez **obtenir des compléments**.<br/>![Bouton Store dans Outlook](../media/getaddinsicon.png)
+1. Sur le ruban **Accueil** , sélectionnez **obtenir des compléments**.<br/>![Bouton Store dans Outlook](../../media/getaddinsicon.png)
   
 2. Sélectionnez **géré** par l’administrateur dans le volet de navigation de gauche.
 

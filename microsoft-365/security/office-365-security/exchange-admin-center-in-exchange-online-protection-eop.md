@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Le Centre d'administration Exchange (CAE) est la console de gestion basée sur le web pour Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083265"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372492"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centre d’administration Exchange dans Exchange Online Protection
 
@@ -33,7 +33,7 @@ Vous recherchez la version Exchange Online de cette rubrique ? Consultez la rubr
 
 ## <a name="accessing-the-eac"></a>Accès au CAE
 
-Dans la plupart des cas, les clients EOP accèdent au centre d’administration Exchange par le biais du centre d’administration Microsoft 365. Un lien vers EOP est disponible dans le menu déroulant de la vignette **Administrateur**, située près de la vignette **Moi**. Cliquez sur la vignette **Administrateur** et sélectionnez **Exchange Online Protection** dans le menu déroulant pour accéder au CAE.
+Dans la plupart des cas, les clients EOP accèdent au centre d’administration Exchange par le biais du centre d’administration Microsoft 365. Un lien vers EOP est disponible dans le menu déroulant de la vignette **Administrateur**, située près de la vignette **Moi**. Cliquez sur la vignette admin et sélectionnez **Exchange Online Protection** dans le menu déroulant pour être redirigé vers le centre d' **administration** Exchange.
 
 Vous pouvez également accéder à la page de connexion du CAE directement via l'URL suivante : `https://admin.protection.outlook.com/ecp/<companydomain>`. Par exemple, `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. Après avoir indiqué vos informations de connexion d'utilisateur, vous être envoyé directement dans le CAE.
 

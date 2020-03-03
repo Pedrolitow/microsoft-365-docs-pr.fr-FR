@@ -18,12 +18,12 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Découvrez le nouveau centre d’administration Microsoft 365.
-ms.openlocfilehash: 1506dc63c2ba1e7e8926985b3c5e1cd7d6a11b52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254338"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361599"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>À propos du nouveau centre d’administration Microsoft 365
 
@@ -50,9 +50,9 @@ Nous serions ravis de participer au nouveau centre d’administration Microsoft 
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>Basculer vers le nouveau centre d’administration et inverser
 
-- Lorsque le nouveau centre d’administration Microsoft 365 est disponible, vous pouvez l’utiliser en sélectionnant le bouton **essayer le nouveau centre d’administration** situé en haut de la page d’accueil. Si vous vous déconnectez du centre d’administration, nous vous soumettrons votre sélection et vous vous reconnectez au nouveau centre d’administration. <br/><br/>![Le nouveau centre d’administration bascule de l’ancien centre d’administration](media/admin-center-toggle-off.png) 
+- Lorsque le nouveau centre d’administration Microsoft 365 est disponible, vous pouvez l’utiliser en sélectionnant le bouton **essayer le nouveau centre d’administration** situé en haut de la page d’accueil. Si vous vous déconnectez du centre d’administration, nous vous soumettrons votre sélection et vous vous reconnectez au nouveau centre d’administration. <br/><br/>![Le nouveau centre d’administration bascule de l’ancien centre d’administration](../media/admin-center-toggle-off.png) 
   
-- Revenez à l’ancien centre d’administration à partir de la page d’accueil en **désactivant le bouton bascule.** <br/><br/>![Le nouveau centre d’administration bascule activé](media/admin-center-toggle-on.png)
+- Revenez à l’ancien centre d’administration à partir de la page d’accueil en **désactivant le bouton bascule.** <br/><br/>![Le nouveau centre d’administration bascule activé](../media/admin-center-toggle-on.png)
 
 Lorsque vous êtes dans le nouveau centre d’administration, vous pouvez fournir des commentaires Microsoft sur votre expérience en sélectionnant **fournir des commentaires** directement en regard du bouton **besoin d’aide ?** en bas de chaque page. Dites-nous ce que vous aimez et ce que nous pouvons faire mieux. De plus, vous pouvez obtenir des enquêtes de fenêtres instantanées pour vous poser des questions sur vos impressions globales ou sur une expérience particulière qui vient d’être publiée. Vous pouvez également nous faire part de vos commentaires à la fin de cet article en sélectionnant **ces informations vous ont-elles été utiles ?**
   
@@ -63,7 +63,7 @@ Si vous souhaitez être un préversion dans le nouveau centre d’administration
   
 
    
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 Vos questions ne s’affichent pas ici ? Accédez à **was ces informations vous ont-elles été utiles ?** au bas de cette page et posez votre question. 
   

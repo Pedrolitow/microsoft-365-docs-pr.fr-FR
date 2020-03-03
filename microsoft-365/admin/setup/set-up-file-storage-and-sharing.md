@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers.
-ms.openlocfilehash: ec55e54fb15113589d7c9b68add511d2cfa9bc97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: be3c845710fdf5531b1a3d91b9579c55cdc4d203
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254083"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360495"
 ---
 # <a name="set-up-office-365-file-storage-and-sharing"></a>Configurer le stockage et le partage des fichiers dans Office 365
 
@@ -52,7 +52,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 OneDrive et les sites d’équipe fournissent un accès en tout lieu pour vous et vos employés.
   
-![Diagramme illustrant la façon dont les produits Office 365 peuvent utiliser OneDrive ou des sites d’équipe](../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Diagramme illustrant la façon dont les produits Office 365 peuvent utiliser OneDrive ou des sites d’équipe](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Voici des recommandations pour les éléments à stocker dans chaque emplacement lorsque vous utilisez OneDrive et les sites d’équipe ensemble :
   
@@ -81,7 +81,7 @@ Voici comment chaque personne de votre équipe peut configurer OneDrive et parta
 
 3. Dans OneDrive, les membres de l’équipe peuvent stocker leurs propres fichiers professionnels. Vous pouvez partager des fichiers individuels ou un dossier entier. Sélectionnez un fichier ou un dossier, cliquez avec le bouton droit, puis choisissez **partager**.
 
-    ![Partage d’un dossier](../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
+    ![Partage d’un dossier](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
 4. Sur la page **lien d’envoi** , conservez la sélection par défaut **quiconque avec le lien peut afficher et modifier**.
 
@@ -89,15 +89,15 @@ Voici comment chaque personne de votre équipe peut configurer OneDrive et parta
 
     Si vous souhaitez utiliser votre propre copie du courrier électronique, ajoutez votre adresse de courrier à la liste.
 
-    ![Boîte de dialogue partager un lien illustrant la saisie et la sélection d’un nom.](../media/877e6587-db9d-4903-a87b-11e570eee926.png)
+    ![Boîte de dialogue partager un lien illustrant la saisie et la sélection d’un nom.](../../media/877e6587-db9d-4903-a87b-11e570eee926.png)
   
 5. Lorsque vous avez terminé de saisir les personnes avec lesquelles vous souhaitez partager des fichiers, sélectionnez **Envoyer**. Le message électronique est envoyé immédiatement aux personnes que vous invitez.
 
-    ![Partager un lien, avec une liste de noms](../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![Partager un lien, avec une liste de noms](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. Voici à quoi ressemble le message électronique. 
 
-    ![Courrier électronique avec un lien vers le dossier OneDrive partagé](../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![Courrier électronique avec un lien vers le dossier OneDrive partagé](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>Télécharger des fichiers sur un site d’équipe pour la collaboration en ligne
 
@@ -138,15 +138,15 @@ Pour synchroniser des fichiers sur votre site d'équipe avec votre ordinateur de
   
 4. Si vous obtenez ensuite une invite de **configuration de OneDrive** , connectez-vous avec votre compte professionnel ou scolaire.
 
-    ![Écran de configuration OneDrive](../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![Écran de configuration OneDrive](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. Si vous n’avez pas encore synchronisé votre espace OneDrive, il se peut que vous voyez **s’afficher votre dossier onedrive** . Vérifiez que le chemin d’accès situé sous **votre dossier OneDrive est ici**. Sélectionnez **changer l’emplacement** , si vous voulez utiliser un autre chemin d’accès, puis cliquez sur **suivant**.
 
-    ![Modifier votre dossier local à cet écran](../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![Modifier votre dossier local à cet écran](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. Les fichiers de vos sites d’équipe apparaissent dans le volet gauche de l’Explorateur de fichiers sous le nom de votre organisation. Les fichiers dans OneDrive s’affichent sous « OneDrive \<-nom de\>l’Organisation »
 
-    ![Voir les éléments qui ont été synchronisés dans votre dossier local](../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![Voir les éléments qui ont été synchronisés dans votre dossier local](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. Testez la synchronisation en ouvrant un fichier dans le dossier de l’équipe sur votre ordinateur. Effectuez une modification, puis choisissez **Enregistrer**.
 

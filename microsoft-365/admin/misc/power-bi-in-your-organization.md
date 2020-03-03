@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Découvrez Power BI et comment les utilisateurs de votre organisation peuvent utiliser ce service Business Analytics.
-ms.openlocfilehash: 56a6dd1c90b8dcb810e74c36b5e7f93ab6a0eb2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4d89594812486d06629d614ab0c59fba09dcdad8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254271"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361335"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI dans votre organisation
 
@@ -102,7 +102,7 @@ Si un client a été créé par Microsoft, vous pouvez le revendiquer et le gér
     
 4. Sélectionnez l’icône du lanceur d’applications située en haut à gauche et choisissez **Administrateur**.
     
-    ![The Office 365 app launcher with the Admin app highlighted](../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![The Office 365 app launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Lisez les instructions de la page **devenir administrateur** , puis sélectionnez **Oui, je veux être administrateur**.
     
@@ -174,13 +174,13 @@ Si un utilisateur s'est inscrit à Power BI mais que vous ne souhaitez plus qu'i
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
     
 2. Recherchez l’utilisateur dont vous souhaitez supprimer la licence, puis sélectionnez son nom.
     
 3. Sous l’onglet **licences et applications** , désactivez la case à cocher **Microsoft Power bi** .
     
-4. Sélectionnez **enregistrer les modifications**.
+4. Sélectionnez **Enregistrer les modifications**.
 
 ::: moniker-end
 

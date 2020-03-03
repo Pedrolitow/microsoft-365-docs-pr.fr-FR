@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs Office 365 satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: 09487e0ff495f4b561e7a27eecf2c99fd4da10af
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284385"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362129"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
@@ -77,7 +77,7 @@ Le moyen le plus simple de détecter si Office 365 ProPlus est installé sur un 
   
 Si vous ne souhaitez pas utiliser le rapport d’activation, vous pouvez demander à un utilisateur d’ouvrir une application Office telle que Word sur son ordinateur, puis choisir le **compte**de **fichier** \> . Sous **Informations sur les produits**, vous devriez voir **Produit Abonnement** et **Microsoft Office 365 ProPlus**, comme illustré dans l'image suivante.
 
-![Informations sur le produit dans une application Office](../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
+![Informations sur le produit dans une application Office](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
 Pour obtenir de l'aide concernant Office 365 ProPlus, voir [Conseils de dépannage pour Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
@@ -140,18 +140,18 @@ Le déploiement centralisé prend en charge les affectations à des utilisateurs
    
 Examinons l'exemple suivant où un complément est affecté à Nicoletta, à Ariane et au groupe Service commercial. Le Service des ventes Région ouest étant un groupe imbriqué, aucun complément n'est affecté à Noël et Jérôme.
   
-![Diagramme du service des ventes](../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![Diagramme du service des ventes](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
    
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Déterminer si un groupe contient des groupes imbriqués
 
 La manière la plus simple de détecter si un groupe contient des groupes imbriqués consiste à afficher la carte de visite du groupe dans Outlook. Si vous entrez le nom du groupe dans le champ **à** d’un e-mail, puis que vous sélectionnez le nom du groupe lorsqu’il est résolu, il vous indique s’il contient des utilisateurs ou des groupes imbriqués. Dans l'exemple ci-dessous, l'onglet **Membres** de la carte de visite Outlook du groupe Test n'affiche aucun utilisateur et seulement deux sous-groupes. 
   
-![Onglet membres de la carte de visite Outlook](../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Onglet membres de la carte de visite Outlook](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
 Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l'exemple ci-dessous, vous pouvez voir sous l'onglet **Appartenance** de la carte de visite Outlook que le Sous-groupe 1 est membre du groupe Test. 
   
-![Onglet appartenance de la carte de visite Outlook](../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Onglet appartenance de la carte de visite Outlook](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
 Vous pouvez également utiliser l'API Graph Azure Active Directory pour exécuter des requêtes afin d'obtenir la liste des groupes au sein d'un groupe. Pour plus d'informations, voir [Opérations sur les groupes | Référence de l'API Graph](https://go.microsoft.com/fwlink/p/?linkid=846342).
   

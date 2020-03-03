@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers des groupes Office 365 dans Outlook, et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: 9e6867a5ccdb97586e3d58784a49312e078ae659
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7337d450cf1e9b249b2b9dc2ab66f32f5b1577e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252712"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361709"
 ---
 # <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>Transformer des listes de distribution en groupes Office 365
 
@@ -36,13 +36,13 @@ Vous pouvez mettre à niveau les listes de distribution une par une ou plusieurs
 
 Vous devez être un administrateur général d’Office 365 ou un administrateur Exchange pour mettre à niveau une liste de distribution. Pour effectuer une mise à niveau vers des groupes Office 365, un groupe de distribution doit avoir un propriétaire avec une boîte aux lettres. 
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d'administration Exchange</a>.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
-2. Dans le centre d’administration Exchange, accédez à **groupes**de **destinataires** \> .<br/>Vous verrez une notification indiquant que des listes de distribution (également appelées **groupes de distribution** ) sont éligibles pour être mises à niveau vers les groupes Office 365.<br/> ![Sélectionnez le bouton prise en main](../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Dans le centre d’administration Exchange, accédez à **groupes**de **destinataires** \> .<br/>Vous verrez une notification indiquant que des listes de distribution (également appelées **groupes de distribution** ) sont éligibles pour être mises à niveau vers les groupes Office 365.<br/> ![Sélectionnez le bouton prise en main](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-3. Sélectionnez une ou plusieurs listes de distribution (également appelées **groupe de distribution** ) dans la page **groupes** .<br/>![Sélectionner un groupe de distribution](../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+3. Sélectionnez une ou plusieurs listes de distribution (également appelées **groupe de distribution** ) dans la page **groupes** .<br/>![Sélectionner un groupe de distribution](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. Sélectionnez l’icône de mise à niveau.<br/>![Icône de mise à niveau vers les groupes Office 365](../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. Sélectionnez l’icône de mise à niveau.<br/>![Icône de mise à niveau vers les groupes Office 365](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. Dans la boîte de dialogue informations, sélectionnez **Oui** pour confirmer la mise à niveau. Le processus commence immédiatement. En fonction de la taille et du nombre de listes de distribution que vous mettez à niveau, le processus peut prendre des minutes ou des heures.<br/>Si la liste de distribution ne peut pas être mise à niveau, une boîte de dialogue s’affiche. [Quels sont les listes de distribution qui ne peuvent pas être mises à niveau ?](#which-distribution-lists-cannot-be-upgraded).
 
@@ -122,7 +122,7 @@ Get-DistributionGroup| Foreach-Object{
 
 Vous ne pouvez mettre à niveau que des listes de distribution non imbriquées gérées dans le Cloud, simples et non imbriquées. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent pas** être mises à niveau.
 
-|**Property**|**Exclus?**|
+|**Propriété**|**Exclus?**|
 |:-----|:-----|
 |Liste de distribution gérée locale.  <br/> |Non  <br/> |
 |Listes de distribution imbriquées. La liste de distribution a des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |

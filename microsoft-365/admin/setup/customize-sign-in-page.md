@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personnalisez la page de connexion à Office 365 à l’aide de l’Azure Active Directory. Vous pouvez ajouter une illustration, un logo et du texte à la page de connexion.
-ms.openlocfilehash: 7db1271cd3d009bdbf1a26166f95a99d44087421
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 97d1d1c7dcb5a31395c98295a250913bb8ab69f5
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243955"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360645"
 ---
 # <a name="add-your-company-branding-to-office-365-sign-in-page"></a>Ajouter l'identité de votre entreprise à la page de connexion d'Office 365
 
@@ -36,7 +36,7 @@ Si vous avez un abonnement payant à Office 365, Microsoft Dynamics CRM Online, 
   
 La figure suivante montre les parties de la page de connexion que vous pouvez modifier dans Azure.
   
-![Zones de la page de connexion à Office 365 que vous pouvez personnaliser.](../media/screenshotbranding.png)
+![Zones de la page de connexion à Office 365 que vous pouvez personnaliser.](../../media/screenshotbranding.png)
   
 1. Illustration de grande taille et/ou sa couleur d'arrière-plan
     

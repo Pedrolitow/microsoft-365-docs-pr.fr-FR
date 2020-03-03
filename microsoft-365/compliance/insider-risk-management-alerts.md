@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 74e84fc00e5fe633f0d70315cea9ad1329e2f639
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179215"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372012"
 ---
 # <a name="insider-risk-management-alerts"></a>Alertes de gestion des risques internes
 
@@ -35,6 +35,9 @@ Le tableau de **bord des alertes** sur les risques Insiders vous permet d’affi
     - Durée moyenne de résolution des alertes à faible gravité, indiquées en heures, jours ou mois.
 
 ![Tableau de bord d’alerte de gestion des risques Insiders](../media/insider-risk-alerts-dashboard.png)
+
+>[!NOTE]
+>La gestion des risques internes utilise la limitation des alertes intégrée pour protéger et optimiser votre expérience d’examen et de révision des risques. Cette limitation protège contre les problèmes susceptibles d’entraîner une surcharge des alertes de stratégie, telles que des connecteurs de données mal configurés ou des stratégies DLP. Par conséquent, l’affichage des nouvelles alertes pour un utilisateur peut prendre un certain temps.
 
 ## <a name="alert-status-and-severity"></a>État et gravité de l’alerte
 

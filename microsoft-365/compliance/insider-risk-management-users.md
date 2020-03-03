@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: f499cacd0ec63f9a192e2773b3604473d2153545
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179105"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370493"
 ---
 # <a name="insider-risk-management-users"></a>Utilisateurs de la gestion des risques internes
 
@@ -30,6 +30,9 @@ Les utilisateurs de la gestion des risques internes sont des employés de votre 
 - **Cas**: dossier actif actuel de l’utilisateur.
 
 ![Tableau de bord des utilisateurs de gestion des risques Insiders](../media/insider-risk-users-dashboard.png)
+
+>[!NOTE]
+>Le nombre d’utilisateurs affichés dans le tableau de bord de l’utilisateur peut être limité dans certains cas, en fonction du volume des alertes actives et des stratégies de correspondance. Les utilisateurs ayant des alertes actives sont affichés lors de la génération des alertes et il peut arriver que le nombre maximal d’utilisateurs affichés soit atteint. Si cela se produit, les utilisateurs ayant des alertes actives qui ne sont pas affichées seront ajoutés au tableau de bord utilisateur en tant qu’alertes utilisateur existantes.
 
 ## <a name="view-user-details"></a>Afficher les détails de l’utilisateur
 

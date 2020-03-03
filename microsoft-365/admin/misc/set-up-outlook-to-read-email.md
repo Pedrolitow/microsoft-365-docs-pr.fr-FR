@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Découvrez comment configurer un compte de messagerie dans Outlook pour Windows et Mac, et pour savoir comment installer les applications Office et accéder aux courriers électroniques en ligne.
-ms.openlocfilehash: 87a1bd45f763b4a802b083eb4936d67c50a92df3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254254"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361235"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurer Outlook pour lire le courrier électronique
 
@@ -44,7 +44,7 @@ Lire [l’article complet](https://support.office.com/article/6e27792a-9267-4aa4
 
 1. Accédez à [admin.Microsoft.com/ols/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).
     
-2. Connectez-vous à l'aide de votre compte professionnel ou scolaire.
+2. Connectez-vous avec votre compte professionnel ou scolaire.
     
 3. Sur gérer les installations, sélectionnez **installer**.
     
@@ -64,7 +64,7 @@ Lire [l’article complet](https://support.office.com/article/6e27792a-9267-4aa4
 
 Une fois connecté à Office 365, sélectionnez **Outlook**.
   
-![Page d’accueil Office 365 avec l’application Outlook mise en surbrillance](../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Page d’accueil Office 365 avec l’application Outlook mise en surbrillance](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
 Vous ne trouvez pas l’application que vous cherchez ? Dans le Lanceur d’applications, sélectionnez **Toutes les applications** pour afficher une liste alphabétique des applications Office 365 disponibles. À partir de là, vous pouvez rechercher une application spécifique. 
   

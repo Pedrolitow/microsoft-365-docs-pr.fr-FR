@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: En savoir plus sur Office 365 géré par 21Vianet qui est conçu pour répondre aux besoins des services Cloud sécurisés, fiables et évolutifs en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3c211421db74bc6ff916682d0670570d1de98568
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c473dacee7fe6f2e779960711a87368e261c3448
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243991"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360795"
 ---
-# <a name="office-365-operated-by-21vianet"></a>Office 365 géré 21Vianet
+# <a name="office-365-operated-by-21vianet"></a>Office 365 géré par 21Vianet
 
 Office 365 géré par 21Vianet est conçu pour répondre aux besoins des services Cloud sécurisés, fiables et évolutifs en Chine. Ce service fonctionne avec la technologie pour laquelle Microsoft a octroyé une licence à 21Vianet.
   
@@ -41,7 +41,7 @@ Microsoft ne fonctionne pas avec le service lui-même. 21Vianet fonctionne, four
   
 Scannez ce QR code pour suivre les discussions sur WeChat et obtenir les dernières mises à jour pour Office 365 géré par 21Vianet. 
   
-![Scannez ce code QR pour le suivre sur WeChat](../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
+![Scannez ce code QR pour le suivre sur WeChat](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
  **À propos des services dans Office 365 géré par 21Vianet**
   
@@ -128,11 +128,11 @@ Pour les organisations qui exécutent des versions anciennes ou mixtes d’Excha
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Oui  <br/> | Tous  <br/> |
 | Mixte 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Oui  <br/> | Tout, à l’exception de la fonctionnalité eDiscovery/archivage inaltérable, accès OWA (voir le tableau ci-dessous)  <br/> |
 | Mixte 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Oui  <br/> | Configuration manuelle uniquement des informations de disponibilité  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Oui  <br/> | Disponibilité uniquement  <br/> |
 | 2007  <br/> | 2013 SP1 ou 2010 SP3No  <br/> | N/A  <br/> | Non prise en charge  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | N/A  <br/> | Non prise en charge  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
 
    
 > [!IMPORTANT]

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Découvrez comment devenir administrateur et obtenir l’abonnement Office 365 pour votre organisation. '
-ms.openlocfilehash: 6fd85f79b32d0a51a5069cfbb55ca58e7cdb1b36
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254331"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361549"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>Devenir administrateur et acheter Office 365 pour votre organisation
 
@@ -55,16 +55,16 @@ Une fois que vous êtes l'administrateur, vous pouvez également ajouter des uti
   
 ## <a name="overview-of-the-steps"></a>Présentation des étapes
 
-![High-level view of the phases involved with becoming an admin and buying Office 365.](../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
+![High-level view of the phases involved with becoming an admin and buying Office 365.](../../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
   
 Un assistant vous guide dans le processus, mais voici un récapitulatif des étapes.
   
 |||
 |:-----|:-----|
-|![Number one in a pink circle](../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**S'inscrire** Avant de devenir l'administrateur, vous devez être inscrit à Réunions Skype avec votre adresse de courrier professionnelle.  <br/> |
-|![Number two in a pink circle.](../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Exécuter l'Assistant** Une fois inscrit, exécutez l'Assistant en effectuant l'une des opérations suivantes :  <br/>  Exécutez l’Assistant **devenir l’administrateur** qui apparaît après avoir sélectionné **administrateur** dans le lanceur d’applications.  <br/>  OU  <br/>  Choisissez d' **effectuer la mise à niveau vers Office 365** dans les réunions Skype, puis sélectionnez l’abonnement Office 365 auquel vous souhaitez effectuer la mise à niveau.  <br/> |
-|![Number three in a pink circle.](../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**Confirmer la propriété du domaine** Ensuite, vous devez confirmer auprès d'Office 365 que vous détenez ou gérez le nom de domaine (par exemple, contoso.com) associé aux adresses de courrier de votre organisation. Seul le propriétaire du nom de domaine dispose de l'autorité nécessaire pour ce faire.  <br/> |
-|![Number 4 in a pink circle.](../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**Acheter des licences** Dans le cadre de la dernière étape de l'Assistant, vous allez acheter des licences Office 365 pour chaque personne de votre organisation qui s'est inscrite à Réunions Skype avec son adresse de courrier professionnelle.  <br/> Par exemple, si deux utilisateurs se sont inscrits Réunions Skype avec leur adresse de courrier professionnelle, vous devez acheter deux licences (une par personne).  <br/> > [!NOTE]> Vous ne pouvez pas gérer Office 365 tant que vous n'avez pas acheté les licences.           |
+|![Number one in a pink circle](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**S'inscrire** Avant de devenir l'administrateur, vous devez être inscrit à Réunions Skype avec votre adresse de courrier professionnelle.  <br/> |
+|![Number two in a pink circle.](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Exécuter l'Assistant** Une fois inscrit, exécutez l'Assistant en effectuant l'une des opérations suivantes :  <br/>  Exécutez l’Assistant **devenir l’administrateur** qui apparaît après avoir sélectionné **administrateur** dans le lanceur d’applications.  <br/>  OU  <br/>  Choisissez d' **effectuer la mise à niveau vers Office 365** dans les réunions Skype, puis sélectionnez l’abonnement Office 365 auquel vous souhaitez effectuer la mise à niveau.  <br/> |
+|![Number three in a pink circle.](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**Confirmer la propriété du domaine** Ensuite, vous devez confirmer auprès d'Office 365 que vous détenez ou gérez le nom de domaine (par exemple, contoso.com) associé aux adresses de courrier de votre organisation. Seul le propriétaire du nom de domaine dispose de l'autorité nécessaire pour ce faire.  <br/> |
+|![Number 4 in a pink circle.](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**Acheter des licences** Dans le cadre de la dernière étape de l'Assistant, vous allez acheter des licences Office 365 pour chaque personne de votre organisation qui s'est inscrite à Réunions Skype avec son adresse de courrier professionnelle.  <br/> Par exemple, si deux utilisateurs se sont inscrits Réunions Skype avec leur adresse de courrier professionnelle, vous devez acheter deux licences (une par personne).  <br/> > [!NOTE]> Vous ne pouvez pas gérer Office 365 tant que vous n'avez pas acheté les licences.           |
 
 ## <a name="your-office-365-subscription"></a>Votre abonnement Office 365
 

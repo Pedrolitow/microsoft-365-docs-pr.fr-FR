@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Découvrez comment modifier le thème par défaut d’Office 365 et le personnaliser pour qu’il corresponde au logo ou à la couleur de votre entreprise. '
-ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 9d83abb919cfb9f6ea3c804d9c5d934614f35285
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280182"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360635"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Personnaliser le thème Office 365 pour votre organisation
 
 Découvrez comment personnaliser votre thème dans le centre d’administration 365 de Microsoft. En tant qu'administrateur de votre abonnement Office 365 pour les entreprises, vous pouvez modifier le thème par défaut qui s'affiche dans la barre de navigation supérieure pour tous les utilisateurs au sein de votre organisation. Vous pouvez ajouter le logo de votre entreprise et modifier les couleurs pour qu’elles correspondent au reste de votre marque. Vous pouvez même ajouter un lien de destination pour les utilisateurs auxquels ils peuvent accéder lorsqu’ils sélectionnent votre logo. Vous pouvez voir ici le thème par défaut et le résultat de thème personnalisé dans Office 365.
   
-![Thème Office 365 par défaut et thème Office 365 personnalisé](../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![Thème Office 365 par défaut et thème Office 365 personnalisé](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>Personnaliser votre thème dans le centre d’administration
 
@@ -62,7 +62,7 @@ Découvrez comment personnaliser votre thème dans le centre d’administration 
       
   - **Afficher le nom d’utilisateur**: choisissez d’afficher ou non le nom complet d’un utilisateur au niveau du point d’entrée au responsable de compte dans le coin supérieur droit de la page lorsque l’utilisateur est connecté. Par défaut, les utilisateurs verront leur photo ou leurs initiales si une photo n’a pas été téléchargée.
     
-4. Sélectionnez **enregistrer les modifications**.
+4. Sélectionnez **Enregistrer les modifications**.
     
 Vous verrez immédiatement votre nouveau thème sur le centre d’administration et après un court délai, vous le verrez dans Office 365, y compris les pages Outlook et SharePoint. Vous pouvez supprimer votre icône ou vos couleurs personnalisées à tout moment. Retournez simplement sur la page du thème et sélectionnez **Supprimer les thèmes personnalisés**.
   

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: 863d644a2dc3b7f756c61b8a9c3063a8545c1fb0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 03a8e68248458f5dfa1d7192a5c2771b46723129
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254223"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361315"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Score de productivité Microsoft (aperçu)
 
@@ -39,7 +39,7 @@ Le score et les informations sont présents dans deux catégories :
 
 - **Expérience technologique** (bientôt disponible) : vous aide à optimiser les expériences des appareils, telles que la correction proactive des problèmes courants du service d’assistance et l’amélioration des temps de démarrage des PC et de votre réseau pour garantir le bon fonctionnement de vos applications.  
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 ### <a name="areas-of-scoring"></a>Zones de notation 
 
@@ -84,7 +84,7 @@ Vous pouvez accéder à l’expérience utilisateur à partir de la maison d’a
 
 la page d’accueil des scores de productivité indique le score actuel et l’historique en pourcentage, les informations principales concernant les zones de chaque catégorie de score, complétées par les tests d’évaluation. 
 
-![Page d’accueil des scores de productivité](../media/pslanding.png)
+![Page d’accueil des scores de productivité](../../media/pslanding.png)
 
 1. la**note de productivité** est indiquée en pourcentage, ainsi que dans le <numerator> / <denominator> format, afin que vous puissiez également voir vos points absolus (numérateur) et les points les plus possibles.  
 1. Ce tableau croisé dynamique vous permet de sélectionner la catégorie de score que vous souhaitez mettre en évidence. Dans l’aperçu, vous pouvez uniquement afficher l’expérience de l' **employé**, mais la sélection sera bientôt développée afin d’inclure l' **expérience technologique**. 
@@ -113,7 +113,7 @@ De plus, toutes les informations contiennent les éléments suivants :
 
 ### <a name="area-detail-page--collaborating-on-content"></a>Page de détails de la zone : collaboration sur le contenu 
 
-![CollaborationG sur la page de contenu.](../media/pscollab.png)
+![CollaborationG sur la page de contenu.](../../media/pscollab.png)
 
 La page collaboration sur le contenu contient l’analyse principale de la page d’accueil des scores de productivité. Il comporte les composants suivants :
 
@@ -134,7 +134,7 @@ Les types de fichiers pris en compte pour la collaboration sont Word/Excel/Power
 
 ### <a name="area-detail-page--working-anywhere"></a>Page des détails de la zone : utilisation de n’importe où 
 
-![Page de travail n’importe où.](../media/psflexibility.png)
+![Page de travail n’importe où.](../../media/psflexibility.png)
 
 La page Working Anywhere quantifie les utilisateurs (sous la forme d’un pourcentage et de la valeur absolue) qui ont utilisé au moins une application de productivité sur deux ou plusieurs plateformes, qui sont des ordinateurs de bureau, des appareils mobiles et des sites Web. Les utilisateurs bénéficient d’un score plus élevé pour l’utilisation de plusieurs applications et plateformes. Les applications prises en compte sont Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. La base du Insight est les utilisateurs activés pour Office 365 ProPlus, Exchange, Yammer, Skype ou Teams.
 
@@ -147,7 +147,7 @@ La page Working Anywhere quantifie les utilisateurs (sous la forme d’un pource
 
 Afin de promouvoir une action complémentaire, chaque vue d’ensemble de la prise en charge est fournie avec des actions inline qui peuvent vous aider à transformer votre expérience d’employé dont certaines peuvent être des modifications de configuration ou des campagnes de sensibilisation. Si vous cliquez sur ces appels, les appels à l’action s’ouvrent dans les options de panneau actions recommandées que vous pouvez envisager. Actuellement, les actions de **collaboration sur le contenu** sont activées.
 
-![Page collaborer sur les documents Office.](../media/psactions1.png)
+![Page collaborer sur les documents Office.](../../media/psactions1.png)
 
 1. Les **actions d’affichage** mènent à un volet répertoriant toutes les actions liées à la collaboration sur le contenu.
 1. **Encouragez les utilisateurs à participer** à une liste de vidéos pédagogiques sur la collaboration avec des rubriques telles que la co-création et la @mentions. 
@@ -156,7 +156,7 @@ Afin de promouvoir une action complémentaire, chaque vue d’ensemble de la pri
 
 La sélection de l’un des boutons d’action ouvre le volet **actions recommandé** sur la droite, qui contient un résumé de chaque action et un lien vers les pages de documentation.
 
-![Volet actions recommandées.](../media/psacttions2.png)
+![Volet actions recommandées.](../../media/psacttions2.png)
 
 
 ## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés 

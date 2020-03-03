@@ -19,36 +19,39 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73f76dee8a59229138f906e593a84220c7f70aee
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 73c4c9864713432d318b0b3cec9fbaf395deff45
+ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235213"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42374144"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-
-
 La Protection Microsoft contre les menaces unifie votre processus de réponse aux incidents en intégrant les principales fonctionnalités de Microsoft Defender - Protection avancée contre les menaces (ATP), Office 365 - Protection avancée contre les menaces, Microsoft Cloud App Security et Azure ATP. Cette expérience unifiée ajoute des fonctionnalités puissantes auxquelles vous pouvez accéder dans le Centre de sécurité Microsoft 365.
 
-## <a name="check-license-eligibility-and-required-permissions"></a>Vérifier l’éligibilité de la licence et les autorisations requises
-Les clients disposant de Microsoft 365 E5, de Microsoft 365 E5 sécurité ou d’une combinaison équivalente de licences peuvent utiliser Microsoft Threat Protection. Pour plus d'informations, [lire les conditions relatives aux licences](prerequisites.md#licensing-requirements).
+Pour bénéficier de la meilleure protection et optimiser la protection Microsoft contre les menaces, nous vous recommandons de déployer tous les services pris en charge applicables sur votre réseau. Pour plus d’informations, consultez la rubrique [Deploying Supported services](deploy-supported-services.md).
 
-Vous devez être **administrateur général** ou administrateur de **sécurité** dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) pour activer Microsoft Threat Protection.
+## <a name="check-license-eligibility-and-required-permissions"></a>Vérifier l’éligibilité de la licence et les autorisations requises
+Une licence Microsoft 365 E5, E5 Security, a5 ou a5 ou une combinaison valide de licences donne accès aux services pris en charge et vous permet d’utiliser la protection Microsoft contre les menaces dans le centre de sécurité Microsoft 365.
+
+Pour obtenir des informations détaillées sur les licences, [Lisez les conditions relatives aux licences](prerequisites.md#licensing-requirements).
+
+### <a name="check-your-role"></a>Vérifier votre rôle
+Vous devez être **administrateur général** ou administrateur de **sécurité** dans Azure Active Directory pour activer Microsoft Threat Protection. [Afficher vos rôles dans Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="start-using-the-service"></a>Commencez à utiliser le service
 Microsoft Threat Protection agrège les données des différents services intégrés. Il traitera et stockera les données de manière centralisée afin d’identifier les nouvelles idées et de créer des flux de travail de réponse centralisée.
 
-Avant d’activer le service, le centre de sécurité Microsoft 365 ([Security.Microsoft.com](https://security.microsoft.com)) n’affiche pas les **incidents** ni les options du **Centre de notifications** dans le volet de navigation.
+Avant d’activer le service, le centre de sécurité Microsoft 365 ([Security.Microsoft.com](https://security.microsoft.com)) affiche la **page d’accueil** de la protection de Microsoft contre les menaces lorsque vous sélectionnez **incidents**, **Centre de maintenance**ou sélection dans le volet de navigation. Ces options de navigation ne s’affichent pas si vous n’êtes pas éligible à l’utilisation de la protection contre les menaces Microsoft.
 
-![Image du volet de navigation du centre de sécurité Microsoft 365 sans les](../../media/mtp-off.png)
-fonctionnalités Microsoft Threat Protection*Centre de sécurité Microsoft 365 avec la protection Microsoft contre les menaces désactivée*
+![Image de la page d’accueil de la protection de Microsoft contre les menaces affichée si Microsoft Threat](../../media/mtp-welcome.png)
+protection n’a pas été activé sur la*page d’accueil de Microsoft Threat Protection dans le centre de sécurité Microsoft 365*
 
-Pour activer Microsoft Threat Protection, sélectionnez **paramètres** dans le volet de navigation. Dans la **[page Paramètres](https://security.microsoft.com/settings)**, consultez la section**opt-in/opt-out**de la **protection de Microsoft contre** > les menaces.
+Pour activer Microsoft Threat Protection, terminez simplement le processus à partir de la page d’accueil. Vous pouvez également activer Microsoft Threat Protection en accédant aux **paramètres** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) dans le volet de navigation et en sélectionnant **Microsoft Threat Protection**.
 
 >[!NOTE]
 >Si vous ne voyez pas les **paramètres** dans le volet de navigation ou que vous n’avez pas accès à la page, vérifiez vos autorisations et licences.
@@ -63,7 +66,7 @@ Une fois le service configuré, il ajoute :
 
 - [Gestion des incidents](incidents-overview.md)
 - Centre de notifications pour la gestion des [examen et réponse automatisés](mtp-autoir.md)
-- La fonctionnalités de [repérage avancé](advanced-hunting-overview.md) à la page **Repérage**
+- Fonctionnalités de [chasse avancées](advanced-hunting-overview.md)
 
 ![Image du volet de navigation du centre de sécurité Microsoft 365 avec les](../../media/mtp-on.png)
 fonctionnalités de protection de Microsoft Threat*Centre de sécurité Microsoft 365 avec gestion des incidents et autres fonctionnalités de protection contre les menaces Microsoft*
@@ -75,7 +78,7 @@ Pour partager des données Azure ATP avec la Protection Microsoft contre les men
 ## <a name="turn-off-microsoft-threat-protection"></a>Désactiver la Protection Microsoft contre les menaces
 Pour cesser d’utiliser la Protection Microsoft contre les menaces, accédez à **Paramètres** > **Protection Microsoft contre les menaces** > **Accepter / Refuser** dans le Centre de sécurité Microsoft 365. Désélectionnez **Activer la Protection Microsoft contre les menaces** et enregistrez les modifications.
 
-Les données seront définitivement supprimées et les fonctionnalités correspondantes seront supprimées du centre de sécurité Microsoft 365.
+Les fonctionnalités correspondantes seront supprimées du centre de sécurité Microsoft 365.
 
 ## <a name="get-assistance"></a>Obtenir de l'aide
 
@@ -85,6 +88,7 @@ Le personnel du support Microsoft peut vous aider à mettre en service ou à met
 
 - [Vue d’ensemble de la Protection Microsoft contre les menaces](microsoft-threat-protection.md)
 - [Conditions requises et autres conditions préalables relatives aux licences](prerequisites.md)
+- [Déployer les services pris en charge](deploy-supported-services.md)
 - [Vue d’ensemble de Microsoft Defender - Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Vue d’ensemble d’Office 365 – Protection avancée contre les menaces](../office-365-security/office-365-atp.md)
 - [Vue d’ensemble de Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)

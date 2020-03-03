@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de publication pour les mises à jour de nouveaux produits et fonctionnalités dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 2d4940003c791e50926eff46aaf6a299e60fb9aa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252797"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361799"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>Configurer les options de publications standard et ciblée dans Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "42252797"
 
 Toute nouvelle version est d’abord testée et validée par l’équipe de fonctionnalité, puis par l’équipe de fonctionnalité Office 365, suivie par Microsoft. Un fois les tests et la validation internes accomplis, l'étape suivante consiste en une **publication ciblée** (anciennement nommée First Release) à destination des clients inscrits. À chaque cycle de publication, Microsoft recueille des commentaires, puis valide davantage la qualité en surveillant des métriques d'utilisation clés. Cette validation progressive est en place pour s'assurer que la publication à l'échelle mondiale est aussi robuste que possible. Les publications sont illustrées dans la figure suivante. 
   
-![Sonneries de validation de publication pour Office 365](../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Sonneries de validation de publication pour Office 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 Pour les mises à jour importantes, les clients Office sont initialement avertis par la feuille de [route Microsoft 365](https://products.office.com/business/office-365-roadmap). Une fois que la mise à jour s’avère plus proche du déploiement, elle est communiquée via votre [Centre de messages Office 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
