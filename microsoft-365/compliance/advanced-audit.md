@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 4812f81140bc80a1437c13b7bce38a7ed101592d
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280156"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370483"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -61,7 +61,7 @@ La nouvelle action MailItemsAccessed de la boîte aux lettres remplace MessageBi
 
 - Les actions MessageBind déclencheraient la création de plusieurs enregistrements d’audit lors de l’accès au même e-mail, ce qui entraînerait un audit « retentissant ». En revanche, les événements MailItemsAccessed sont regroupés dans un nombre réduit d’enregistrements d’audit.
 
-Pour plus d’informations sur la journalisation de l’audit des boîtes aux lettres, voir [Gérer l’audit des boîtes aux lettres](enable-mailbox-auditing.md).
+Si vous souhaitez en savoir plus sur les enregistrements d’audit pour les activités MailItemsAccessed, consultez [Utiliser l’audit avancé pour enquêter sur les comptes compromis](mailitemsaccessed-forensics-investigations.md).
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>Rechercher des enregistrements d’audit MailItemsAccessed
 
