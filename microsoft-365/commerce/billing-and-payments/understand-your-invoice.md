@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits Microsoft Business.
 keywords: comptes de facturation, informations sur l’organisation, factures
-ms.openlocfilehash: bf6f26b2f3bbeb3ac22273eca98b223383b88924
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594695"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409709"
 ---
 # <a name="understand-your-invoice"></a>Comprendre votre facture
 
 La facture fournit un résumé de vos frais et des instructions de paiement. Vous pouvez [afficher votre facture en ligne](#view-your-online-invoice) dans le centre d’administration 365 de Microsoft. Vous pouvez également le télécharger au format. pdf (portable document format) pour l’envoyer par courrier électronique.
 
-Si vous avez uniquement un abonnement Office 365, consultez [la rubrique consulter votre facture pour office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+Si vous avez uniquement un abonnement Office 365, consultez [la rubrique consulter votre facture pour office 365 pour les entreprises](view-your-bill-or-invoice.md).
 
 ## <a name="understand-the-invoice-header"></a>Comprendre l’en-tête de facture
 
@@ -102,7 +102,7 @@ Les factures sont disponibles en ligne. Un lien vers votre facture en ligne est 
 
 ### <a name="to-view-your-online-invoice"></a>Pour afficher votre facture en ligne
 
-1. Dans le centre d’administration, accédez à **la** \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">factures & paiement</a> .
+1. Dans le Centre d’administration, accédez à la page **Factures** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Factures & paiements</a>.
 
 2. Pour télécharger la version. pdf de votre facture, sélectionnez **Télécharger le fichier PDF** de la facture dans la ligne correspondant à la facture que vous souhaitez voir.
 
@@ -112,4 +112,4 @@ Les factures sont disponibles en ligne. Un lien vers votre facture en ligne est 
 
 Si vous avez des questions ou si vous avez besoin d’aide pour vos crédits Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créez une demande de support technique avec Azure</a>.
 
-Si vous avez des questions ou si vous avez besoin d’aide pour votre facture dans le centre d’administration Microsoft 365, [Contactez le support technique pour les produits professionnels](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Si vous avez des questions ou si vous avez besoin d’aide pour votre facture dans le centre d’administration Microsoft 365, [Contactez le support technique pour les produits professionnels](../../admin/contact-support-for-business-products.md).

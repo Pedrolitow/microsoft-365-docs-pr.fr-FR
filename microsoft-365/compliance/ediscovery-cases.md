@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le centre de sécurité & conformité pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l’incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse plus approfondie dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 7ae834e7f93c381cf6d386131e3a5c671e2bc529
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 22547a69b78e8ca8497dd2e2a6ae5d77f913a08f
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075033"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409739"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 
@@ -77,9 +77,6 @@ La première étape consiste à attribuer des autorisations liées à la découv
     - Accéder aux données de cas dans Advanced eDiscovery pour tous les cas de l’organisation.
     
     Consultez la section [More information](#more-information) pour connaître les raisons pour lesquelles vous pourriez avoir besoin d’un administrateur de découverte électronique dans votre organisation. 
-    
-> [!IMPORTANT]
-> Si une personne n’est pas membre de l’un de ces groupes de rôles liés à la découverte électronique, ou n’est pas membre d’un groupe de rôles auquel est attribué le rôle de réviseur, vous ne pouvez pas l’ajouter en tant que membre d’un cas de découverte électronique. 
 
 Pour plus d’informations sur les autorisations de découverte électronique, consultez la rubrique [attribution d’autorisations eDiscovery](assign-ediscovery-permissions.md).
   
@@ -117,28 +114,27 @@ L’étape suivante consiste à créer un cas de découverte électronique. Vous
     
     > [!TIP]
     > Une fois que vous avez créé un nouveau cas, vous pouvez le renommer à tout moment. Il vous suffit de cliquer sur le nom de la demande de devis dans la page **eDiscovery** . Sur la page de menu déroulante **gérer ce cas** , modifiez le nom affiché dans la zone sous **nom**, puis enregistrez la modification. 
-  
 ## <a name="step-3-add-members-to-a-case"></a>Étape 3 : ajouter des membres à un cas
 
-Une fois que vous avez créé un cas, l’étape suivante consiste à ajouter des membres au cas. Comme expliqué précédemment, seuls les utilisateurs membres des groupes de rôles Reviewer ou gestionnaire de découverte électronique peuvent être ajoutés en tant que membres du cas. Le gestionnaire eDiscovery qui a créé le cas est automatiquement ajouté en tant que membre.
+Une fois que vous avez créé un cas, l’étape suivante consiste à ajouter des membres au cas. Le gestionnaire eDiscovery qui a créé le cas est automatiquement ajouté en tant que membre. Comme expliqué précédemment, les membres doivent affecter les autorisations eDiscovery appropriées afin qu’ils puissent accéder au cas après les avoir ajoutés.
   
 1. Dans le \> **Centre de sécurité** & conformité, **cliquez sur eDiscovery eDiscovery pour** afficher la liste des cas dans votre organisation. 
-    
+
 2. Cliquez sur le nom de l’incident auquel vous souhaitez ajouter des membres.
-    
+
     La page flyout **gérer ce cas** s’affiche. 
-    
+
     ![Gérer une page de menu volant case](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
 3. Sous **gérer les membres**, ![cliquez sur](../media/ITPro-EAC-AddIcon.gif) ajouter une icône **Ajouter** pour ajouter des membres à la demande de devis. 
-    
+
     Vous pouvez également choisir d’ajouter un groupe de rôles à la demande de devis. Sous **gérer les groupes**de rôles ![, cliquez](../media/ITPro-EAC-AddIcon.gif) sur Ajouter une icône **Ajouter**.
-    
+
     > [!NOTE]
     > Les groupes de rôles contrôlent les personnes qui peuvent assigner des membres à un cas eDiscovery. Cela signifie que vous pouvez uniquement affecter les groupes de rôles dont vous êtes membre à un cas.
-    
+
 4. Dans la liste des personnes ou des groupes de rôles qui peuvent être ajoutés en tant que membres de la case, activez la case à cocher en regard des noms des personnes ou des groupes de rôles que vous souhaitez ajouter.
-    
+
     > [!TIP]
     > Si vous avez une grande liste de personnes pouvant être ajoutées en tant que membres, utilisez la zone de **recherche** pour rechercher une personne spécifique dans la liste. 
   
@@ -154,7 +150,7 @@ Vous pouvez utiliser un cas de découverte électronique pour créer des conserv
 
 > [!NOTE]
 > Une fois que vous avez placé un emplacement de contenu, la conservation prend effet jusqu’à 24 heures. 
->   
+
 Lorsque vous créez une suspension, vous disposez des options suivantes pour définir l’étendue du contenu qui se trouve dans les emplacements de contenu spécifiés :
   
 - Vous créez un blocage infini où tout le contenu est placé en conservation. Vous pouvez également créer une conservation basée sur une requête où seul le contenu qui correspond à une requête de recherche est mis en attente.

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: b385e5cae1f78f300655dd5c3a0dbf584dc69256
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: d08fd843c87806356759c9d0c66a41d136667d19
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288492"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400961"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
@@ -151,4 +151,4 @@ Les partenaires qui disposent de privilèges d’administration délégués peuv
 
 ### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>Dans quels pays puis-je faire un achat en libre-service ?
 
-Les achats en libre-service sont disponibles dans les pays suivants : Australie, Autriche, Belgique, Bulgarie, Canada, Croatie, Chypre, République tchèque, Danemark, Estonie, Finlande, France, Allemagne, Grèce, Hongrie, Islande, Irlande, Italie, Japon, Lettonie, Lituanie, Luxembourg, Malte, Pays-Bas, Norvège, Pologne, Portugal, Roumanie, Slovaquie, Slovénie, Espagne, Suède, Suisse, Royaume-Uni et États-Unis.
+Les achats en libre-service sont disponibles dans les pays suivants : Afghanistan, îles Åland, Albanie, Algérie, Samoa américaines, Andorre, Angola, Anguilla, Antarctique, Antigua-et-Barbuda, Argentine, Arménie, Aruba, Australie, Autriche, Azerbaïdjan, les Bahamas , Bahreïn, Bangladesh, Barbade, Belarus, Belgique, Bulgarie, Belize, Bénin, Bermudes, Bhoutan, Bolivie, Bonaire, Saint-Eustache et Saba, Bosnie-Herzégovine, Botswana, île de Bouvet, Brésil, territoire britannique de l’océan Indien, îles Vierges britanniques, Brunei, Burkina Faso, Burundi, Cabo Verde, Cambodge, Cameroun, Canada, Caïman îles, République centrafricaine, République centrafricaine, Tchad, Chili, Chine, île Christmas, îles Cocos (Keeling), Colombie, Comores, Congo, Congo (RDC), Cook Îles, Costa Rica, Côte-d’Ivoire, Croatie, Chypre, Curaçao, République tchèque, Danemark, Djibouti, Dominique, République dominicaine, Équateur, Égypte, El Salvador, Guinée équatoriale, Érythrée, Estonie, Éthiopie, îles Malouines, îles Féroé, Fidji, Finlande, France, Guyane française, Polynésie française, français Territoires méridionals, Gabon, Gambie, Géorgie, Allemagne, Ghana, Gibraltar, Groenland, Grèce, Grenade, Guadeloupe, Guam, Guatemala, Guernesey, Guinée, Guinée-Bissau, Guyane, Haïti, Île Heard et îles McDonald, Honduras, Hong Kong R.A.S., Hongrie, Islande , Indonésie, Irak, Irlande, île de Man, Israël, Italie, Jamaïque, Japon, Jersey, Jordanie, Kazakhstan, Kenya, Kiribati, Corée, Kosovo, Koweït, Kirghizistan, Laos, Lettonie, Liban, Lesotho, Liberia, Libye, Liechtenstein, Lituanie, Luxembourg, Macao (R.A.S.), Madagascar, Malawi, Malaisie, Maldives, Mali, Malte, îles Marshall, Martinique, Mauritanie, île Maurice, Mayotte, Mexique, Micronésie, Moldavie, Monaco, Mongolie, Monténégro, Montserrat, Maroc, Mozambique, Myanmar, Namibie, Nauru, Népal, Pays-Bas , Nouvelle-Calédonie, Nouvelle-Zélande, Pakistan, Niger, Nigeria, Niue, île Norfolk, Macédoine du Nord, îles Mariannes du Nord, Norvège, Oman, Pakistan, Palau, autorité palestinienne, Panama, Papouasie-Nouvelle-Guinée, Paraguay, Pérou, Philippines, Pitcairn (îles), Pologne, Portugal, Porto Rico, Qatar, réunion, Roumanie, Russie, Rwanda, Saint-Barthélemy, Saint-Kitts-et-Nevis, Sainte-Lucie, Sainte-Martin, Saint-Pierre-et-Miquelon, Saint-Vincent-et-les-Grenadines, Samoa, Saint-Marin, São Tomé et Príncipe, Arabie saoudite, Sénégal, Serbie, Seychelles, Sierra Leone, Singapour, Saint-Maarten, Slovaquie, Slovénie, Salomon (îles), Somalie, Afrique du Sud, îles Géorgie du Sud, Iles du sud-du-Soudan, Espagne, Sri Lanka, Sainte-Hélène, ascension, Tristan da Cunha, Suriname, Svalbard et Jan Mayen, Swaziland, Suède, Suisse, Taïwan, Tadjikistan, Tanzanie, Thaïlande, Timor-Leste, Tokelau, Tonga, Trinité-et-Tobago, Tunisie, Turquie, îles turques, îles Turks et Caicos, Tuvalu, Iles américaines, îles Vierges américaines, Ouganda, Ukraine, Émirats Arabes Unis, Royaume-Uni, États-Unis, Uruguay, Ouzbékistan, Vanuatu, cité du Vatican, Venezuela, Viêt Nam, Wallis-et-Futuna, Yémen, Zambie, Zimbabwe.

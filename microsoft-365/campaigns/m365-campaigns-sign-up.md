@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Vous inscrire pas à pas pour les campagnes Microsoft 365. Protégez votre campagne contre les menaces Cybersecurity pour la messagerie, les données et la communication.
-ms.openlocfilehash: e142adcc9b1858355414c28b7e94116a6505f1b9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080525"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409659"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>S’inscrire à Microsoft 365 pour les campagnes 
 
@@ -84,13 +84,10 @@ Si vous disposez déjà d’un abonnement à Office 365 pour les entreprises, pa
 4. Dans **quelle apparence ?** entrez le nombre d’utilisateurs dont vous disposez, puis cliquez sur **suivant**. Vous n’êtes pas obligé d’entrer un code promotionnel ici, car il est déjà inclus dans l’URL de l’invitation.
 5. Sur la page **Comment souhaitez-vous payer ?** , entrez votre mode de paiement, puis sélectionnez **passer une commande**.
 
-Une fois ces étapes terminées, vous êtes prêt à [affecter les nouvelles licences](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) à votre équipe de campagne. 
+Une fois ces étapes terminées, vous êtes prêt à [affecter les nouvelles licences](../admin/manage/assign-licenses-to-users.md) à votre équipe de campagne.
 
 
 ## <a name="whats-next"></a>Étape suivante
 - [Configurez microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) pour terminer la configuration de Microsoft 365 pour les campagnes marketing. 
 - [Ajoutez des utilisateurs](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) à votre plan. Incluez le candidat de la campagne, l’équipe de la campagne senior et toute personne ayant accès aux informations sensibles de la campagne ou de la partie.
 - [Protection contre les chocs pour votre campagne](m365-campaigns-security-overview.md)
-
-
-

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprenez les raisons pour lesquelles il est parfois nécessaire de changer de plan manuellement ou d’appeler le support technique.
-ms.openlocfilehash: d7c076a5ce003f7d5ce5317f4330857e632e53ad
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a78ce8614dcc7382543bfda5bdfdfb025b6e5077
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243147"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409619"
 ---
 # <a name="why-cant-i-switch-office-365-for-business-plans"></a>Pourquoi ne puis-je pas changer d'offre Office 365 pour les entreprises ?
 
@@ -41,12 +41,12 @@ Si le bouton **changer** de plan n’apparaît pas, votre offre ne peut pas êtr
   
 ::: moniker range="o365-worldwide"
 
- **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md) | [annuler les](cancel-your-subscription.md) | [abonnements](../subscriptions-and-billing.md) | aux abonnements et la[prise en charge des appels](../../admin/contact-support-for-business-products.md) de facturation
+ **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md) | [annuler les](cancel-your-subscription.md) | [abonnements](../index.yml) | aux abonnements et la[prise en charge des appels](../../admin/contact-support-for-business-products.md) de facturation
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md) | [annuler les](cancel-your-subscription.md) | [abonnements](../subscriptions-and-billing.md) | aux abonnements et la[prise en charge des appels](../../admin/contact-support-for-business-products.md) de facturation
+ **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md) | [annuler les](cancel-your-subscription.md) | [abonnements](../index.yml) | aux abonnements et la[prise en charge des appels](../../admin/contact-support-for-business-products.md) de facturation
 
 ::: moniker-end
 

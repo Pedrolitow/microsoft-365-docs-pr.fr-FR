@@ -1,5 +1,5 @@
 ---
-title: Annuler l'assignation des licences aux utilisateurs
+title: Annulation de l’attribution de licences aux utilisateurs
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Découvrez comment supprimer des licences de comptes d’utilisateur.
-ms.openlocfilehash: bd14b7c62672d08e608b476e9c5982ac4b5ce070
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252761"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400931"
 ---
-# <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
+# <a name="unassign-licenses-from-users"></a>Annulation de l’attribution de licences aux utilisateurs
 
 ::: moniker range="o365-worldwide"
 Vous pouvez supprimer ou annuler l’affectation des licences des utilisateurs sur la page **utilisateurs actifs** ou sur la page **licences** . La méthode à utiliser varie selon que vous souhaitez annuler l’affectation de licences de produits à des utilisateurs spécifiques ou supprimer l’affectation de licences aux utilisateurs de produits spécifiques.
@@ -55,7 +55,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez la ligne de l’utilisateur pour lequel vous souhaitez annuler l’affectation d’une licence.
 
@@ -100,7 +100,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les cercles en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de licences.
 
@@ -148,9 +148,11 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 - Vous pouvez également [supprimer des comptes d'utilisateurs](../add-users/delete-a-user.md) auxquels une licence a été attribuée afin de pouvoir réattribuer leur licence à d'autres utilisateurs. Lorsque vous supprimez un compte d'utilisateur, sa licence peut immédiatement être attribuée à un autre utilisateur.
 
-- Lorsqu’une licence est supprimée d’un utilisateur, les données associées à ce compte sont conservées pendant 30 jours. Après la période de grâce de 30 jours, les données sont supprimées et ne peuvent pas être récupérées. Les fichiers enregistrés dans OneDrive ou SharePoint Online ne sont pas supprimés. Pour plus d’informations, consultez la rubrique [OneDrive Retention and suppression](https://docs.microsoft.com/onedrive/retention-and-deletion)
+- Lorsqu’une licence est supprimée d’un utilisateur, les données associées à ce compte sont conservées pendant 30 jours. Après la période de grâce de 30 jours, les données sont supprimées et ne peuvent pas être récupérées.
 
-   De plus, la boîte aux lettres de l’utilisateur ne peut plus faire l’objet d’une recherche à l’aide d’un outil eDiscovery tel que la recherche de contenu ou Advanced eDiscovery lorsque la licence est supprimée. Pour plus d’informations, consultez la section « recherche de boîtes aux lettres déconnectées ou de sous-licence » dans [recherche de contenu dans Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Notez que les fichiers enregistrés dans OneDrive entreprise ne sont pas supprimés sauf si l’utilisateur est supprimé du centre d’administration 365 de Microsoft ou s’il est supprimé par le biais de la synchronisation Active Directory. Pour plus d’informations, consultez la rubrique [OneDrive Retention and suppression](https://docs.microsoft.com/onedrive/retention-and-deletion).
+
+- De plus, la boîte aux lettres de l’utilisateur ne peut plus faire l’objet d’une recherche à l’aide d’un outil eDiscovery tel que la recherche de contenu ou Advanced eDiscovery lorsque la licence est supprimée. Pour plus d’informations, consultez la section « recherche de boîtes aux lettres déconnectées ou de sous-licence » dans [recherche de contenu dans Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
 - Si vous disposez d’un abonnement Enterprise, comme Office 365 entreprise E3, Exchange Online vous permet de conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé en utilisant des [boîtes aux lettres inactives](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). Pour plus d’informations, consultez la rubrique [créer et gérer des boîtes aux lettres inactives dans Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
 

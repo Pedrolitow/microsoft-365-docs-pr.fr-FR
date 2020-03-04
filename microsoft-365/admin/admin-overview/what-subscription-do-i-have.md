@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Découvrez comment vérifier les abonnements de votre organisation en accédant à la page abonnements.
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a63b0b17333ad12846ba8bac2c83b2d8dfc67a8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: dad08784a775e590972d1f5dd554aeb2d147c28b
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352825"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409499"
 ---
 # <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
 
@@ -86,4 +86,4 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 
 ## <a name="related-articles"></a>Articles connexes
   
-[Abonnements et facturation](../../commerce/subscriptions-and-billing.md)
+[Abonnements et facturation](../../commerce/index.yml)

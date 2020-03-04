@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: 676581a5cfdf7308cf6c5cd71083dedae34836fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083997"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409579"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -50,7 +50,7 @@ Dans le centre de sécurité &amp; conformité Office 365, lorsque vous créez u
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Ajouter des notifications utilisateur à une stratégie DLP
 
-Lorsque vous créez une stratégie DLP, les notifications par courrier électronique et les conseils de stratégie font partie de la section **notifications** de l’utilisateur. 
+Lorsque vous créez une stratégie DLP, vous pouvez activer les **notifications**de l’utilisateur. Lorsque ce paramètre est activé, Microsoft 365 envoie les notifications par courrier électronique et les conseils de stratégie. Vous pouvez personnaliser la personne à laquelle les messages électroniques de notification sont envoyés, le texte de l’e-mail et le texte de l’info-bulle de la stratégie.
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     

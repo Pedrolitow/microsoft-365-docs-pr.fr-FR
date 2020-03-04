@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 51f62b9d3828636c0d78e12a9c7bf0d7bed65ce8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 416961ff3b7bbb72636fd7ee0058d86953357195
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41587904"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400991"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Plan d’action ISO 27001 de Microsoft 365 - Principales priorités pour vos premiers 30 jours, 90 jours et au-delà
 
@@ -26,7 +26,7 @@ L’organisation internationale de normalisation (ISO) est un développeur non g
 
 ISO/IEC 27001 est la norme internationale d’implémentation d’un système de gestion de sécurité des informations (ISMS). Un ISMS décrit les méthodes nécessaires utilisées et les preuves associées aux exigences qui sont essentielles pour une gestion fiable de la sécurité des ressources d’informations dans n’importe quel type d’organisation.  
 
-Cet article inclut un plan d’action hiérarchisé que vous pouvez suivre pour répondre aux exigences de la norme ISO/IEC 27001. Il a été développé en collaboration avec Protiviti, un partenaire Microsoft spécialisé dans la conformité réglementaire. Pour en savoir plus sur la façon d’utiliser ce plan d’action chez Microsoft Ignite, participez à la session relative à l’[organisation de votre stratégie de protection des informations et de votre parcours de conformité Microsoft 365](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions), présenté par Maithili Dandige (Microsoft) et Antonio Maio (Protiviti).
+Cet article inclut un plan d’action hiérarchisé que vous pouvez suivre pour répondre aux exigences de la norme ISO/IEC 27001. Il a été développé en collaboration avec Protiviti, un partenaire Microsoft spécialisé dans la conformité réglementaire. Pour en savoir plus sur la façon d’utiliser ce plan d’action chez Microsoft Ignite, participez à la session relative à l’[organisation de votre stratégie de protection des informations et de votre parcours de conformité Microsoft 365](https://myignite.techcommunity.microsoft.com/videos/65720), présenté par Maithili Dandige (Microsoft) et Antonio Maio (Protiviti).
 
 ## <a name="action-plan-outcomes"></a>Résultats du plan d’action
 

@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs au sein de leur organisation.
-ms.openlocfilehash: f3ccd1f8ab5f2f9fc78e2920182155ef7f6f16e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080331"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409629"
 ---
-# <a name="manage-self-service-purchases-admin"></a>Gérer les achats en libre-service (administrateur)
+# <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
 
 En tant qu’administrateur, vous pouvez voir les achats en libre-service effectués par les membres de votre organisation. Vous pouvez voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque achat en libre-service. Si cela est nécessaire pour votre organisation, vous pouvez désactiver l’achat en libre-service sur une base par produit via PowerShell. Vous disposez des mêmes stratégies de gestion des données et d’accès que les produits achetés via l’achat en libre-service ou de manière centralisée.
 
@@ -76,7 +76,7 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 
 5. Suivez les étapes de la procédure [affichage des licences pour un abonnement acheté en libre-service](#view-who-has-licenses-for-a-self-service-purchase-subscription) pour exporter une liste d’utilisateurs à référencer à l’étape 6.
 
-6. Attribuez des licences à toutes les personnes disposant d’une licence dans l’autre abonnement. Pour connaître les étapes complètes, consultez la rubrique [attribuer des licences aux utilisateurs](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+6. Attribuez des licences à toutes les personnes disposant d’une licence dans l’autre abonnement. Pour connaître les étapes complètes, consultez la rubrique [attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).
 
 7. Contactez la personne qui a acheté l’abonnement d’achat en libre-service et demandez-lui de l’annuler.
 
@@ -84,4 +84,4 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 
 Pour les questions courantes sur les achats en libre-service, voir [FAQ sur les achats en libre-service](self-service-purchase-faq.md).
 
-Si vous avez des questions ou si vous avez besoin d’aide pour des achats en libre-service, [Contactez le support technique](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Si vous avez des questions ou si vous avez besoin d’aide pour des achats en libre-service, [Contactez le support technique](../../admin/contact-support-for-business-products.md).

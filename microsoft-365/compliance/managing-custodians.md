@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: L’outil de gestion des dépositaires dans Advanced eDiscovery vous permet de gérer le flux de travail concernant l’identification, la préservation et la collecte des données associées aux personnes concernées dans un cas juridique.
-ms.openlocfilehash: fd796471ae4caeafbabc7b588dcf03b8cad80bc4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d8ac1c67b4ddc3395bccb5ab699ce7df63f331d
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600491"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400911"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Utiliser des dépositaires dans Advanced eDiscovery
 
 Lorsqu’une organisation répond à une enquête légale, le flux de travail concernant l’identification, la préservation et la collecte de contenu potentiellement pertinent est basé sur les personnes de l’organisation qui sont des dépositaires de données pertinentes. Dans eDiscovery, ces individus sont appelés « *dépositaires de données* » (ou simplement des *dépositaires*) et sont définis en tant que « personnes ayant le contrôle administratif d’un document ou d’un fichier électronique ». Par exemple, le dépositaire d’un message électronique peut être le propriétaire de la boîte aux lettres qui contient le message pertinent.  
 
-Lorsqu’une enquête commence, l’équipe eDiscovery doit identifier rapidement tous les dépositaires pertinents et les sources de données associées à l’incident. Au fil du temps, la liste des dépositaires et de leurs sources de données peut augmenter ou decreasse. Par conséquent, les organisations doivent maintenir un processus contrôlé concernant l’identification, la préservation et la collecte de contenu privative de temps pendant le cycle de vie d’un cas.
+Lorsqu’une enquête commence, l’équipe eDiscovery doit identifier rapidement tous les dépositaires pertinents et les sources de données associées à l’incident. Au fil du temps, la liste des dépositaires et de leurs sources de données peut augmenter ou diminuer. Par conséquent, les organisations doivent maintenir un processus contrôlé concernant l’identification, la préservation et la collecte de contenu privative de temps pendant le cycle de vie d’un cas.
 
 Dans un cas avancé eDiscovery, les équipes juridiques peuvent ajouter des personnes au sein de leur organisation en tant que dépositaires, et identifier et conserver automatiquement des sources de données privatives de ressources telles que des boîtes aux lettres Exchange, des comptes OneDrive et des sites SharePoint et Teams. À l’aide de l’outil de gestion des dépositaires intégré dans Advanced eDiscovery, les organisations peuvent sécuriser les informations stockées électroniquement d’une suppression involontaire (ou intentionnelle). Cela vous permet d’éliminer le processus de conservation du temps et source d’erreurs qui nécessite une utilisation manuelle. 
 

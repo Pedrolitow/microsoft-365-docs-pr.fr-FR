@@ -16,16 +16,25 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 205ec6b4f2049e18ee95f25505d8a58d7eb7ac77
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076425"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409689"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Utilisation de l’Explorateur de contenu de la classification des données (préversion)
 
 L’Explorateur de contenu de la classification des données vous permet d’afficher en mode natif les éléments qui ont été synthétisés dans la page vue d’ensemble.
+
+## <a name="prerequisites"></a>Conditions préalables
+
+Chaque compte accédant et utilisant l’Explorateur d’activités doit posséder une licence pour l’un de ces abonnements :
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Complément Conformité avancée (E5)
+- Complément Threat Intelligence avancé (E5)
 
 ## <a name="content-explorer"></a>Explorateur de contenu
 
@@ -58,6 +67,8 @@ Deux rôles accordent l'accès à l'explorateur de contenu :
 Le compte que vous utilisez pour accéder à l’Explorateur de contenu doit se trouver dans l’un des groupes de rôles ou les deux. Il s’agit de groupes de rôles indépendants qui ne sont pas cumulatifs. Par exemple, si vous voulez accorder à un compte la possibilité d’afficher les éléments et leur emplacement uniquement, attribuez des droits à la visionneuse de liste de l’Explorateur de contenu. Si vous souhaitez que ce même compte puisse également afficher le contenu des éléments de la liste, vous pouvez également octroyer des droits de visionneuse de contenu dans l’Explorateur de contenu.
 
 Vous pouvez également attribuer l’un ou l’autre des rôles (ou les deux) à un groupe de rôles personnalisé afin de personnaliser l’accès à l’Explorateur de contenu.
+
+Un administrateur général, un administrateur de conformité ou un administrateur de données peut attribuer l'appartenance nécessaire au groupe de rôle de la visionneuse de liste de l’explorateur de contenu et de la visionneuse de contenu de l'explorateur de contenu.
 
 ### <a name="how-to-use-content-explorer"></a>Utilisation de l’Explorateur de contenu
 
