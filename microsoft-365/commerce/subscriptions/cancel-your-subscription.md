@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Découvrez comment annuler votre abonnement Office 365 pour les entreprises ou Microsoft 365 (version d’évaluation ou abonnement payant).
-ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
+ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354595"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42415649"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
@@ -88,6 +88,19 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 ::: moniker-end
 
+## <a name="what-happens-when-you-cancel-a-subscription"></a>Que se passe-t-il lorsque vous annulez un abonnement ?
+
+Si vous annulez un abonnement avant la fin de votre terme, l’abonnement passe directement à l’état désactivé. Pour la plupart des abonnements et dans la plupart des pays et régions, l'état désactivé dure 90 jours. Quand un abonnement est en état désactivé, les administrateurs peuvent toujours consulter et sauvegarder les données pour leur organisation, mais nous recommandons que les administrateurs [sauvegardent les données](back-up-data-before-switching-plans.md) d'un abonnement avant l'annulation de celui-ci, en particulier s'il s'agit de leur seul abonnement. Toutes les données que vous laissez derrière vous pourront être supprimées après 180 jours, et le seront assurément au plus tard 180 jours après l'annulation.
+
+### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Voici ce à quoi vous et vos utilisateurs devez vous attendre si vous annulez un abonnement.
+  
+- **Accès administrateur** Les administrateurs peuvent toujours se connecter et accéder au centre d’administration, et acheter d’autres abonnements si nécessaire. En tant qu’administrateur général ou administrateur de facturation, vous disposez de 90 jours pour [réactiver l’abonnement](reactivate-your-subscription.md) avec toutes les données intactes. 
+    
+- **Accès utilisateur** Vos utilisateurs ne pourront pas utiliser des services tels que OneDrive entreprise ou accéder à des données client telles que des courriers électroniques ou des documents sur des sites d’équipe. Les applications Office, telles que Word et Excel, finissent par passer en mode d'utilisation en lecture seule avec fonctionnalités réduites, et affichent des [notifications Produit sans licence](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+    
+ **Important** Si vous voulez que les données de votre abonnement soient supprimées avant la fin de la période normale de désactivation, vous pouvez demander la suppression accélérée des privilèges d'accès. Si vous demandez la suppression accélérée des privilèges d'accès, les données de votre abonnement seront supprimées dans les 3 jours. Pour utiliser la mise en service accélérée, [appelez le support technique](../../admin/contact-support-for-business-products.md).
+  
+Pour en savoir plus, voir [qu’arrive-t-il à mes données et à l’accès quand mon abonnement prend fin ?](what-if-my-subscription-expires.md)
 
 ## <a name="other-steps-you-might-have-to-take"></a>Autres étapes que vous pouvez être amené à effectuer
 
@@ -132,5 +145,3 @@ Si vous avez annulé votre abonnement, et que vous n’avez pas déplacé les ut
 [Renouveler votre abonnement](renew-your-subscription.md)
 
 [Réactiver votre abonnement](reactivate-your-subscription.md)
-
-[Changer d'offre ou d'abonnement](switch-to-a-different-plan.md)

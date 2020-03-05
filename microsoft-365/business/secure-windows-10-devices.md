@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: 'Découvrez les paramètres par défaut et d’autres paramètres pour sécuriser les appareils Windows 10. '
-ms.openlocfilehash: 9560bb4e299dba8f92d435a64670261b0e7e0290
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Découvrez comment configurer les paramètres de la stratégie d’appareil par défaut que tout appareil Windows 10 recevra lors de la connexion à son compte professionnel ou scolaire.
+ms.openlocfilehash: 6c9dcd308db2fa41bad5f907b3c5a35577ac61f1
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593442"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417243"
 ---
 # <a name="secure-windows-10-devices"></a>Sécuriser les appareils Windows 10
 

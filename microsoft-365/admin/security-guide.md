@@ -11,16 +11,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom:
 - SMB_SuccessCenter
+- MARVEL_SEO_MAR
 search.appverid:
 - MET150
 - MOE150
-description: Découvrez les moyens faciles de protéger votre petite entreprise contre les menaces de sécurité.
-ms.openlocfilehash: a3923731e93962d1976d0cd163db4f97a07aaed2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Découvrez les menaces de sécurité auxquelles votre entreprise est face et vous pouvez facilement protéger vos données, vos comptes et vos appareils.
+ms.openlocfilehash: 0997f6bab379ccc5ff68d5bf890419772fd4aaaf
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360775"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417280"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Graphique des informations de sécurité pour les petites entreprises
 

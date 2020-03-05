@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: Apprenez à créer, modifier, supprimer ou supprimer des profils AutoPilot.
-ms.openlocfilehash: 28f5b679d58711d11d9af26dffb7022024b72c79
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Apprenez à créer un profil AutoPilot et à l’appliquer à un appareil, ainsi qu’à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
+ms.openlocfilehash: 6a8057969242d839ebbb4cbef8d26dd3f1858c59
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065886"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417333"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
 

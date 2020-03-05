@@ -1,5 +1,7 @@
 ---
 title: Configurer les appareils Windows 10
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -18,18 +20,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Découvrez les stratégies d’appareil pour Windows 10 qui s’appliquent à tous les utilisateurs de votre organisation.
-ms.openlocfilehash: ad092d2b2760a55e16c44a66350626c90c9ac7c5
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+description: Découvrez comment configurer des stratégies d’appareil pour Windows 10 qui s’appliquent à tous les utilisateurs de votre organisation afin de s’assurer qu’ils se connectent de manière sécurisée.
+ms.openlocfilehash: 9b690d34df6270731ea08bca1e59483d697b04d5
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38321361"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417263"
 ---
 # <a name="configure-windows-10-devices"></a>Configurer les appareils Windows 10
 
