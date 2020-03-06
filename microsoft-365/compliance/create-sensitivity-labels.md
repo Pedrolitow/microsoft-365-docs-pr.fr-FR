@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
 ms.openlocfilehash: d2300a54583c0b2d12de86e3dbb5f3116daf6460
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101224"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543150"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -41,7 +41,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
 1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
     
     - Centre de conformité Microsoft 365 : 
-        - **Solutions** > **protection des informations**
+        - **Solutions** > **Information protection**
         
         Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
     
@@ -114,7 +114,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
     
     - Centre de conformité Microsoft 365 : 
-        - **Solutions** > **protection des informations**
+        - **Solutions** > **Information protection**
         
         Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
     
