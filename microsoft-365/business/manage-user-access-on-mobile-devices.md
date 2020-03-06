@@ -19,18 +19,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
-description: Découvrez les stratégies de protection qui peuvent aider à sécuriser l’accès aux applications Office à partir d’appareils mobiles.
-ms.openlocfilehash: 39d28a3a78fb06d0020c484b1782b544f6a8c656
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Découvrez les stratégies de protection qui vous permettent de gérer la manière dont les utilisateurs accèdent aux applications Office et aux fichiers de travail à partir d’appareils mobiles.
+ms.openlocfilehash: 21e83114664d06aaeb27b08d9f4e2153eea02030
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593818"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550314"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>Gérer les accès des utilisateurs aux documents Office sur appareils mobiles
 

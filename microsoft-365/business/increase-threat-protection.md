@@ -1,5 +1,7 @@
 ---
 title: Renforcer la protection contre les menaces pour Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -14,16 +16,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
-description: Configurez Office 365 Advanced Threat Protection et protégez les données sensibles.
-ms.openlocfilehash: 87a5c79636a2eefe394b4a30e72971eb851e3ecb
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+description: Configurez Office 365 Advanced Threat Protection et protégez les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
+ms.openlocfilehash: 9d7bae60091c87fa0246a697f2a49e1cbc6e2f06
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704072"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550354"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -138,7 +141,7 @@ Pour créer une stratégie anti-hameçonnage ATP, regardez [cette vidéo de form
 6. Une fois que vous avez vérifié vos paramètres, sélectionnez **créer cette stratégie** ou **Enregistrer**, selon le cas.
     
 
-|**Paramètre ou option**<br/>|**Paramètre recommandé** <br/>|
+|**Paramètre ou option**<br/>|**Valeur recommandée** <br/>|
 |:-----|:-----|
 |Nom  <br/> |Domaine et équipe de campagne la plus intéressante  <br/> |
 |Description  <br/> |Assurez-vous que le personnel le plus important et que notre domaine ne sont pas empruntés.  <br/> |
@@ -170,7 +173,7 @@ Pour créer une stratégie de pièces jointes approuvées pour la protection ava
 7. Une fois que vous avez vérifié vos paramètres, choisissez **créer cette stratégie** ou **Enregistrer**, selon le cas.
     
 
-|**Paramètre ou option**|**Paramètre recommandé** <br/>|
+|**Paramètre ou option**|**Valeur recommandée** <br/>|
 |:-----|:-----|
 |Nom  <br/> |Bloquer les courriers électroniques actuels et futurs avec des programmes malveillants détectés.  <br/> |
 |Description  <br/> |Bloquer les e-mails et pièces jointes en cours et à venir avec des programmes malveillants détectés.  <br/> |
@@ -216,7 +219,7 @@ Pour créer une stratégie ciblée pour tous les destinataires de votre domaine,
     
 3. Cliquez sur **Enregistrer**. 
 
-|**Paramètre ou option**|**Paramètre recommandé** <br/>|
+|**Paramètre ou option**|**Valeur recommandée** <br/>|
 |:-----|:-----|
 |Nom  <br/> |Stratégie de liens fiables pour tous les destinataires dans le domaine  <br/> |
 |Sélectionner l’action pour les URL potentiellement malveillantes dans les messages  <br/> |Sélectionnez **les URL activées seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien**.  <br/> |

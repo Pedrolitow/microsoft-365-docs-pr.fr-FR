@@ -18,17 +18,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: Découvrez comment activer Microsoft 365 pour protéger les appareils Windows 10 joints à Active Directory.
-ms.openlocfilehash: 170703c7367f9c0e9cb4c10edbd81cb214aa1d3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Découvrez comment permettre à Microsoft 365 de protéger les appareils Windows 10 à annuaire Active Directory joints en quelques étapes seulement.
+ms.openlocfilehash: 8d7caefa1ddcadf684fdb5b712601b1bdd4fb5bd
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593798"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550244"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Activer la gestion des appareils Windows 10 associés à un domaine par Microsoft 365 Business
 

@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Ajoutez les résultats d’une recherche associée à un cas avancé eDiscovery. Les éléments sont copiés à partir de leur emplacement d’origine et copiés dans un emplacement de stockage Azure fourni par Microsoft. Les éléments sont également réindexés et Advanced eDiscovery procède à la reconnaissance optique de caractères (OCR) sur les fichiers image et télécharge le texte de l’image à des fins de révision et d’analyse.
 ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080148"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550455"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 

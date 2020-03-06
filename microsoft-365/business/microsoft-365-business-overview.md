@@ -22,23 +22,24 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Pour en savoir plus, consultez la rubrique Microsoft 365 Business.
-ms.openlocfilehash: bfda6801bee526084ad11ead819fcd04787d17ce
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez Microsoft 365 Business, un service d’abonnement qui inclut Office 365 et la protection avancée pour votre entreprise contre les menaces informatiques.
+ms.openlocfilehash: 508262daa9367ebd3b973a7a519fbb953d719fb1
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065645"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547848"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Vue d’ensemble de Microsoft 365 Business
 
 ## <a name="what-is-microsoft-365-business"></a>Qu’est-ce que Microsoft 365 entreprise
 
-Microsoft 365 Business est un service d’abonnement qui inclut des outils de productivité Office 365 ainsi que des fonctionnalités avancées pour vous aider à protéger votre entreprise contre cyber, protéger vos données et gérer les appareils.
+Microsoft 365 Business est un service d’abonnement qui inclut des outils de productivité Office 365 ainsi que des fonctionnalités avancées pour vous aider à protéger votre entreprise contre les menaces informatiques, protéger vos données et gérer les appareils.
 
 Regardez cette vidéo pour une présentation rapide de Microsoft 365 Business.<br><br>
 
@@ -103,7 +104,7 @@ Vos **appareils sont sécurisés** par les éléments suivants :
 
 Pour afficher la liste complète des fonctionnalités de sécurité, consultez la rubrique [Microsoft 365 Business Security Features](security-features.md). Une fois que vous avez [configuré Microsoft 365 entreprise](set-up.md), consultez la rubrique augmentation de la [protection contre les menaces](increase-threat-protection.md) et [configurez les fonctionnalités de conformité](set-up-compliance.md) pour commencer à utiliser les fonctionnalités de sécurité qui ne sont pas incluses dans la configuration guidée. Lisez également les [10 meilleures façons de sécuriser les plans Office 365 et Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) pour obtenir une excellente vue d’ensemble sur la façon de configurer les protections contre les cybercriminels et les pirates.
 
-## <a name="get-microsoft-365-business"></a>Obtenir Microsoft 365 Business
+## <a name="get-microsoft-365-business"></a>Obtenir Microsoft 365 Business
 
 - Si vous avez un partenaire, il obtiendra Microsoft 365 entreprise : [obtenir microsoft 365 entreprise à partir du centre de partenaires Microsoft](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 

@@ -21,17 +21,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Découvrez comment configurer Microsoft 365 Business.
-ms.openlocfilehash: 5491486c2bf8da1ee38fcd986d5ecd682d57c82e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez Microsoft 365 Business, comment le configurer et comment préparer les appareils et les ordinateurs de vos utilisateurs pour vous assurer qu’ils sont protégés par Microsoft 365 Business.
+ms.openlocfilehash: f6fd73762c0b57777c19d32886f758875e2e7e6a
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065605"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547708"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Prise en main de Microsoft 365 Entreprise
 
@@ -45,13 +46,13 @@ Regardez cette vidéo pour une présentation rapide de Microsoft 365 Business.<b
   
 Microsoft 365 Business est destiné à 300 licences. Si vous avez besoin de plus de licences, consultez la documentation de [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) pour plus d’informations. 
   
-## <a name="get-microsoft-365-business"></a>Obtenir Microsoft 365 Business
+## <a name="get-microsoft-365-business"></a>Obtenir Microsoft 365 Business
 
 - Si vous avez un partenaire, il obtiendra Microsoft 365 entreprise : [obtenir microsoft 365 entreprise à partir du centre de partenaires Microsoft](get-microsoft-365-business.md).
     
 - Si vous ne disposez pas d’un partenaire et que vous souhaitez obtenir Microsoft 365 entreprise, vous pouvez l' [acheter ici](https://www.microsoft.com/microsoft-365/business).
     
-## <a name="set-up-microsoft-365-business"></a>Configurer Microsoft 365 Business
+## <a name="set-up-microsoft-365-business"></a>Configurer Microsoft 365 Business
 
  **Vue d’ensemble de la configuration de Microsoft 365 Business Suite**
   

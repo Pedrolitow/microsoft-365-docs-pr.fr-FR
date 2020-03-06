@@ -19,21 +19,22 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Découvrez comment configurer des appareils Windows exécutant Windows 10 professionnel pour les utilisateurs professionnels de Microsoft 365. '
-ms.openlocfilehash: 427e1c25b5c6ad52ab280502133a0e2808bb48b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez comment configurer des appareils Windows exécutant Windows 10 professionnel pour les utilisateurs professionnels de Microsoft 365, ce qui permet des contrôles de sécurité et de gestion centralisés.
+ms.openlocfilehash: 62d909b1e5658131f9381d1a800a70fad6e16cab
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42090664"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550014"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>Conditions préalables à la configuration des appareils Windows pour les utilisateurs professionnels de Microsoft 365
 
 Avant de pouvoir configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business, vérifiez que tous les appareils Windows exécutent la version 1703 (Creators Update) de Windows 10 Professionnel. L'exécution de Windows 10 Professionnel est obligatoire pour déployer Windows 10 Business, c'est-à-dire, un ensemble de services cloud et de fonctionnalités de gestion des appareils qui complètent Windows 10 Professionnel et permettent d'activer les contrôles de sécurité et de gestion centralisée de Microsoft 365 Business.
   
@@ -125,6 +126,6 @@ Vérifiez que les appareils Windows 10 qui ont été mis à niveau vers Windows 
 
 Pour configurer vos appareils mobiles, voir [Configurer des appareils mobiles pour les utilisateurs de Microsoft 365 Business](set-up-mobile-devices.md). Pour définir des stratégies de protection des appareils ou des applications, voir [Gérer Microsoft 365 Business](manage.md).
   
-## <a name="see-also"></a>Voir aussi
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 entreprise
 
 [Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

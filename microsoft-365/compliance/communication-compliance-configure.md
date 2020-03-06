@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4f456b44ed0d7b3fb83a20d9c66ab49ff8af4946
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 3e3f16339d25c8cc592e937e30a446ed7e7cd333
+ms.sourcegitcommit: 0d7f27982fe9e18a4df423da23b86e0b15e77c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333664"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42542538"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -113,7 +113,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
     Si vous choisissez d’utiliser l’Assistant stratégie pour créer une stratégie personnalisée, vous devez :
 
     - Donnez un nom et une description à la stratégie. Les noms de stratégie ne peuvent pas être modifiés une fois la stratégie créée.
-    - Choisissez les utilisateurs ou les groupes à superviser, y compris tous les utilisateurs de votre organisation, des utilisateurs et des groupes spécifiques, ou d’autres utilisateurs et groupes que vous souhaitez exclure. -
+    - Choisissez les utilisateurs ou les groupes à superviser, y compris tous les utilisateurs de votre organisation, des utilisateurs et des groupes spécifiques, ou d’autres utilisateurs et groupes que vous souhaitez exclure.
     - Choisissez les relecteurs de la stratégie. Les relecteurs peuvent être des utilisateurs individuels ou des [groupes de sécurité à extension messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online.
     - Choisissez les canaux de communication à analyser, y compris Exchange, Microsoft teams ou Skype entreprise. Vous choisirez également d’analyser les sources tierces si vous avez configuré un connecteur dans Microsoft 365.
     - Choisissez la direction de communication à surveiller, y compris les communications entrantes, sortantes ou internes.

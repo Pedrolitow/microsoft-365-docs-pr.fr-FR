@@ -19,17 +19,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Découvrez comment valider les paramètres de protection des applications professionnelles Microsoft 365 sur les appareils Windows 10.
-ms.openlocfilehash: 1762382aec00a80e006cf38b66c28d02c0c25989
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez comment vérifier que les paramètres de protection des applications professionnelles de Microsoft 365 ont pris effet sur les appareils Windows 10 de vos utilisateurs.
+ms.openlocfilehash: 1b661b41a8042e81f653463cbd32fc6bf6428b53
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056652"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549954"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Valider les paramètres de protection des appareils sur des PC Windows 10
 
@@ -57,7 +58,7 @@ Une fois que vous avez [configuré les stratégies de périphériques](protectio
     
     ![Les paramètres de protection contre les virus et les menaces sont grisés.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Documentation et ressources pour Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
   

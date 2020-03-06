@@ -18,18 +18,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: Découvrez les paramètres disponibles pour protéger les fichiers de travail en cas de perte ou de vol de l’appareil d’un utilisateur.
-ms.openlocfilehash: 5f137354b51a0151e57e5e109b1ebbb043c68f60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Découvrez les paramètres disponibles dans Microsoft 365 Business pour protéger les fichiers de travail en cas de perte ou de vol du périphérique d’un utilisateur.
+ms.openlocfilehash: 244e4773f1efa9548dd2126e03a007aefb840b40
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593553"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550164"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Protéger les fichiers professionnels en cas de perte ou de vol de l'appareil mobile
 

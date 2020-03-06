@@ -1,5 +1,7 @@
 ---
 title: Conditions préalables à la protection des données sur les appareils avec Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -13,23 +15,24 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: Découvrez les conditions préalables à la configuration de votre organisation avec Microsoft 365 Business.
-ms.openlocfilehash: 874a85859e315ef17e10fdd8094860e1e6bf2560
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+description: Découvrez les conditions requises pour la configuration de votre organisation avec Microsoft 365 Business et la protection des données de travail sur les appareils de vos utilisateurs.
+ms.openlocfilehash: 9e35e3b1cd4f0df1c5852b0fec407a99c9bcf4f4
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640538"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550184"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Conditions préalables à la protection des données sur les appareils avec Microsoft 365 Business
 
 La première étape de la configuration de votre organisation avec Microsoft 365 Business est de vous assurer que vous pouvez répondre aux conditions préalables.
   
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="requirements-for-setting-up-your-organization-with-microsoft-365-business"></a>Conditions requises pour la configuration de votre organisation avec Microsoft 365 Business
 
 - Les appareils Windows doivent exécuter Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro.
     
