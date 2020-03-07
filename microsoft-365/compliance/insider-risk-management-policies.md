@@ -13,11 +13,11 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.openlocfilehash: 5e81c9ff65db6ecd4a1ac1995c8a592f4377ae1c
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179095"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543550"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 

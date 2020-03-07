@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365, à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Découvrez ce que nous avons fait dans ce mois-ci.
-ms.openlocfilehash: 2140b2b529ccec9a4d081a2e7b6ea1fdb7fb900f
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
+ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106807"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42552036"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Nouveautés du centre de conformité Microsoft 365
 
@@ -31,6 +31,36 @@ Nous ajoutons constamment de nouvelles fonctionnalités au [Centre de conformit�
 > [!TIP]
 > Que se passe-t-il dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 Consultez la feuille de [route de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités de Microsoft 365 qui ont été lancées, qui sont déployées, qui sont en cours de développement, qui ont été annulées ou qui ont déjà été publiées.
+
+## <a name="february-2020"></a>Février 2020
+
+### <a name="insider-risk-management-is-officially-released"></a>La gestion des risques initiés est officiellement publiée
+
+Rouleau à tambour, veuillez... La gestion des risques initiés est désormais disponible pour les organisations disposant des abonnements suivants :
+
+- [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (payant ou d’évaluation)
+- Abonnement Microsoft 365 entreprise E3 avec le [complément de conformité Microsoft E5](https://go.microsoft.com/fwlink/?linkid=2120432)
+
+Nous avons apporté des améliorations depuis la version d’évaluation, notamment [de nouveaux groupes de rôles](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) et de nouveaux [paramètres à l’échelle](insider-risk-management-configure.md#step-4-required-configure-insider-risk-settings)de la solution.
+
+Comme toujours, n’hésitez pas à nous faire part de vos commentaires lorsque vous utilisez la solution afin que nous puissions continuer à apporter des améliorations.
+
+### <a name="records-management"></a>Gestion des enregistrements
+
+Cette nouvelle solution confère toutes les fonctionnalités de gestion des enregistrements sous un seul parasol. Les points forts incluent l’introduction de la gestion des versions des enregistrements pour SharePoint et OneDrive et la preuve de la destruction des enregistrements.
+
+![Page gestion des enregistrements dans le centre de conformité Microsoft 365](../media/mcc-records-management-page.png)
+
+[En savoir plus sur la gestion des enregistrements](records-management.md)
+
+### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>Galerie de solutions : connecteurs de données pour Facebook et Twitter
+
+Connecteurs de données [publiés le mois dernier](#just-launched) et nous recherchons votre aide pour tester les connecteurs suivants afin de valider leur travail comme prévu.
+
+- [Pages d’entreprise Facebook](archive-facebook-data-with-sample-connector.md). Importe et archive les données des pages d’entreprise Facebook dans Microsoft 365. Avantages pour les solutions de conformité telles que la gestion des enregistrements et la découverte électronique.
+- [Twitter](archive-twitter-data-with-sample-connector.md). Importe et archive les données de Twitter vers Microsoft 365. Avantages pour les solutions de conformité telles que la gestion des enregistrements et la découverte électronique.
+
+Lors de la configuration et de la validation de ces connecteurs, n’hésitez pas à nous faire part de vos commentaires sur ce qui s’est passé, ce qui n’a pas fonctionné et ce que nous pouvons faire pour améliorer l’expérience.
 
 ## <a name="january-2020"></a>Janvier 2020
 
@@ -140,7 +170,7 @@ Si vous avez utilisé le centre de sécurité & conformité d’Office 365 pour 
 |Protection contre la perte de données|Protection contre la perte de données <br/> https://protection.office.com/datalossprevention |Protection contre la perte de données <br/> https://compliance.microsoft.com/datalossprevention |[Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)|
 |Demandes de la personne concernée |Confidentialité des données > demandes des personnes concernées <br/> https://protection.office.com/dsrcases |Demandes de la personne concernée <br/> https://compliance.microsoft.com/datasubjectrequest |[Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|découverte électronique > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |> de découverte électronique <br/> https://compliance.microsoft.com/classicediscovery |[Gérer des cas eDiscovery](ediscovery-cases.md) |
-|Events|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Vue d’ensemble des rétentions basées sur des événements](event-driven-retention.md)|
+|Événements|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Vue d’ensemble des rétentions basées sur des événements](event-driven-retention.md)|
 |Plan de gestion de fichiers|Gestion des enregistrements > plan de gestion des fichiers <br/> https://protection.office.com/fileplan |Onglet gestion des enregistrements > plan de fichiers <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Vue d’ensemble du gestionnaire de plan de gestion de fichiers](file-plan-manager.md)|
 |Importer des fichiers PST|Gouvernance des informations > importer des fichiers PST <br/> https://protection.office.com/importV2 |Onglet > d’importation de la gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Vue d’ensemble de l’importation des fichiers PST de votre organisation](importing-pst-files-to-office-365.md)|
 |Explorateur d’activité des étiquettes|Explorateur d’informations > d’activité des étiquettes <br/> https://protection.office.com/labelexplorer |Onglet Explorateur d’activités > classification des données <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Afficher l’activité sur votre contenu étiqueté (aperçu)](data-classification-activity-explorer.md)|
@@ -163,7 +193,7 @@ Lors de la configuration du chiffrement pour une étiquette de sensibilité, vou
 
 [En savoir plus](encryption-sensitivity-labels.md#let-users-assign-permissions)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="update-to-data-investigations"></a>Mise à jour des enquêtes de données
 

@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Configurez des paramètres eDiscovery avancés qui s’appliquent à tous les jeux de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
 ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550461"
+ms.locfileid: "42552064"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurer les paramètres de recherche et d’analyse
 
