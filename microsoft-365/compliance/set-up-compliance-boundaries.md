@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilisez des limites de conformité pour créer des limites logiques au sein d’une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher. Les limites de conformité utilisent le filtrage des autorisations de recherche (également appelé filtres de sécurité de conformité) pour contrôler les boîtes aux lettres, les sites SharePoint et les comptes OneDrive pouvant être recherchés par des utilisateurs spécifiques.
-ms.openlocfilehash: 9ca390dfc96307e6323e897e762813719f2b3ac0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069733"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557745"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365
+
+Les instructions de cet article peuvent être appliquées lors de l’utilisation de base eDiscovery ou Advanced eDiscovery pour gérer les enquêtes.
 
 Les limites de conformité créent des limites logiques au sein d’une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur (par exemple, les boîtes aux lettres, les sites SharePoint et les comptes OneDrive) que les gestionnaires eDiscovery peuvent rechercher. En outre, les limites de conformité contrôlent qui peut accéder à des cas eDiscovery utilisés pour gérer les enquêtes juridiques, les ressources humaines ou d’autres enquêtes au sein de votre organisation. Il est souvent nécessaire de respecter les frontières de conformité pour les sociétés multinationales qui doivent respecter des organisations et des réglementations géographiques, qui sont souvent divisées en différents organismes. Dans Office 365, les limites de conformité vous aident à répondre à ces exigences lors de la recherche de contenu et de la gestion des enquêtes avec des cas eDiscovery.
   
@@ -157,29 +159,29 @@ La dernière étape consiste à créer un cas eDiscovery dans le centre de sécu
 - Quand un membre du groupe de rôles affecté à un cas exécute une recherche associée à l’incident, il pourra uniquement effectuer des recherches dans les emplacements de contenu au sein de son agence (qui est défini par le filtre d’autorisations de recherche que vous avez créé à l’étape 4.)
 
 Pour créer un cas et affecter des membres :
-    
-1. Accédez à la page de **découverte électronique** dans le centre de sécurité & conformité et créez un cas. 
-    
+
+1. Accédez à la page **eDiscovery** ou **Advanced eDiscovery** du centre de sécurité & Compliance Center et créez un cas. 
+
 2. Dans la liste des cas de découverte électronique, cliquez sur le nom de la demande de devis que vous avez créée.
-    
+
 3. Dans la page de menu contextuel **gérer ce cas** , sous gérer les ![groupes de](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **rôles**, cliquez sur Ajouter une icône **Ajouter**.
-    
+
     ![Ajouter un groupe de rôles en tant que membre d’un cas de découverte électronique](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. Dans la liste des groupes de rôles, sélectionnez l’un des groupes de rôles que vous avez créés à l’étape 3, puis cliquez sur **Ajouter**.
-    
+
 5. Cliquez sur **Enregistrer** dans le menu volant **gérer cet incident** pour enregistrer la modification. 
 
 ## <a name="compliance-boundary-limitations"></a>Limitations des limites de conformité
 
 Gardez les limites suivantes à l’esprit lors de la gestion des cas eDiscovery et des investigations qui utilisent des limites de conformité.
   
-- Lors de la création et de l’exécution d’une recherche de contenu, vous pouvez sélectionner des emplacements de contenu qui se trouvent en dehors de votre Agence. Toutefois, en raison du filtre des autorisations de recherche, le contenu de ces emplacements n’est pas inclus dans les résultats de la recherche.
-    
+- Lors de la création et de l’exécution d’une recherche, vous pouvez sélectionner des emplacements de contenu qui se trouvent en dehors de votre Agence. Toutefois, en raison du filtre des autorisations de recherche, le contenu de ces emplacements n’est pas inclus dans les résultats de la recherche.
+
 - Les limites de conformité ne s’appliquent pas aux conservations dans les cas eDiscovery. Cela signifie qu’un gestionnaire de découverte électronique dans une Agence peut placer un utilisateur dans une autre agence en attente. Toutefois, la limite de conformité est appliquée si le gestionnaire eDiscovery recherche les emplacements de contenu de l’utilisateur qui a été placé en conservation. Cela signifie que le gestionnaire eDiscovery ne pourra pas rechercher les emplacements de contenu de l’utilisateur, même s’il était en mesure de mettre l’utilisateur en attente.
-    
+
     En outre, les statistiques de conservation s’appliquent uniquement aux emplacements de contenu de l’Agence.
-    
+
 - Les filtres d’autorisations de recherche ne sont pas appliqués aux dossiers publics Exchange.
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Recherche et exportation de contenu dans des environnements multigéographiques

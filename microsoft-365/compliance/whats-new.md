@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365, à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Découvrez ce que nous avons fait dans ce mois-ci.
-ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42552036"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557594"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Nouveautés du centre de conformité Microsoft 365
 
@@ -36,7 +36,7 @@ Consultez la feuille de [route de microsoft 365](https://www.microsoft.com/en-us
 
 ### <a name="insider-risk-management-is-officially-released"></a>La gestion des risques initiés est officiellement publiée
 
-Rouleau à tambour, veuillez... La gestion des risques initiés est désormais disponible pour les organisations disposant des abonnements suivants :
+Rouleau à tambour, veuillez...<br>La gestion des risques initiés est désormais disponible pour les organisations disposant des abonnements suivants :
 
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (payant ou d’évaluation)
 - Abonnement Microsoft 365 entreprise E3 avec le [complément de conformité Microsoft E5](https://go.microsoft.com/fwlink/?linkid=2120432)
@@ -47,7 +47,7 @@ Comme toujours, n’hésitez pas à nous faire part de vos commentaires lorsque 
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
-Cette nouvelle solution confère toutes les fonctionnalités de gestion des enregistrements sous un seul parasol. Les points forts incluent l’introduction de la gestion des versions des enregistrements pour SharePoint et OneDrive et la preuve de la destruction des enregistrements.
+Cette nouvelle solution offre toutes les fonctionnalités de gestion des enregistrements sous un seul parasol. Les points forts incluent l’introduction de la gestion des versions des enregistrements pour SharePoint et OneDrive et la preuve de la destruction des enregistrements.
 
 ![Page gestion des enregistrements dans le centre de conformité Microsoft 365](../media/mcc-records-management-page.png)
 
@@ -55,7 +55,7 @@ Cette nouvelle solution confère toutes les fonctionnalités de gestion des enre
 
 ### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>Galerie de solutions : connecteurs de données pour Facebook et Twitter
 
-Connecteurs de données [publiés le mois dernier](#just-launched) et nous recherchons votre aide pour tester les connecteurs suivants afin de valider leur travail comme prévu.
+Connecteurs de données [publiés le mois dernier](#just-launched) et nous recherchons votre aide pour tester les connecteurs suivants.
 
 - [Pages d’entreprise Facebook](archive-facebook-data-with-sample-connector.md). Importe et archive les données des pages d’entreprise Facebook dans Microsoft 365. Avantages pour les solutions de conformité telles que la gestion des enregistrements et la découverte électronique.
 - [Twitter](archive-twitter-data-with-sample-connector.md). Importe et archive les données de Twitter vers Microsoft 365. Avantages pour les solutions de conformité telles que la gestion des enregistrements et la découverte électronique.

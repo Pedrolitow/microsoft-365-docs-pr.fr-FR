@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: 'Découvrez les utilitaires d’Office 365 Advanced eDiscovery, notamment le journal des cas, les données claires, les erreurs de processus, la pertinence et l’analyse de la transparence.  '
-ms.openlocfilehash: 3952d1ec58b3f55f997079cec16f16ddb301ed89
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ce8eb00382bd6ff0514dfef99d18a8e4b2679cec
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601331"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557654"
 ---
-# <a name="use-office-365-advanced-ediscovery-utilities"></a>Utiliser les utilitaires eDiscovery avancés d’Office 365
+# <a name="use-advanced-ediscovery-classic-utilities"></a>Utiliser les utilitaires avancés de découverte électronique (classique)
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -109,7 +109,7 @@ Dans un scénario de cas à plusieurs problèmes, un rapport d’analyse de tran
     
 ## <a name="see-also"></a>Voir aussi
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
   
 [Définition des paramètres de cas et de client](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 

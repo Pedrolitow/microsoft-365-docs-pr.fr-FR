@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Découvrez les instructions relatives à la préparation des fichiers de cas des données Office 365 pour analyse avec Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 779f9ae4f93933063139b2d7d65deb2500b263e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: eb608eeac33e0d5d06dce9d0c35cd86f4e0bc280
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597581"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557814"
 ---
-# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Exécuter le module de processus dans Office 365 Advanced eDiscovery
+# <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Exécuter le module de processus dans Advanced eDiscovery (classique)
 
 Les fichiers case sont chargés dans la découverte électronique avancée lors de la **préparation** \> **.** 
   
@@ -74,7 +74,7 @@ Une étiquette définie par l’utilisateur peut être associée à un ensemble 
   
 ## <a name="see-also"></a>Voir aussi
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
   
 [Exécution du module de processus et chargement des données](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   

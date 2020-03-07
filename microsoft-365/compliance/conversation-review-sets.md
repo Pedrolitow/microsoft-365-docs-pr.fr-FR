@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ca8389bf6a7622d4db98bdf7422aea85942e8978
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078121"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556772"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Examiner les conversations dans Advanced eDiscovery 
 
@@ -79,8 +79,6 @@ Lorsque vous ajoutez des données de conversations à un ensemble de vérificati
   
 3. Une fois que les éléments ont été ajoutés à l’ensemble de vérification, vous pouvez passer en revue tous les messages individuels de *CRC1*. 
 
-
-
 Pour activer la récupération de conversation :
   
 1. Sous l’onglet **recherches** dans le cas avancé eDiscovery, sélectionnez une recherche, puis cliquez sur **Ajouter pour examiner le jeu** sur la page de menu volant.
@@ -91,7 +89,7 @@ Pour activer la récupération de conversation :
   
 4. Une fois que le travail **Ajouter au jeu de révision** sous l’onglet **travaux** a terminé, vous pouvez commencer à examiner les conversations.
 
-## <a name="step-4-review-conversations-in-the-review-set"></a>Étape 4 : examiner les conversations dans l’ensemble de révision
+## <a name="step-4-review-and-export-conversations-in-a-review-set"></a>Étape 4 : passer en revue et exporter les conversations dans un jeu de révision
 
 Une fois que le contenu a été traité et ajouté à l’ensemble de vérifications, vous pouvez commencer à examiner les données dans l’ensemble de révision. Les fonctionnalités de révision sont différentes selon que le contenu a été ajouté à un jeu de révision standard ou à un ensemble de révision de conversation. 
 
@@ -129,7 +127,6 @@ Dans un ensemble de révision de conversation, vous pouvez utiliser les options 
 
 - **Réexécuter la conversion de conversation :** Lorsque des messages sont ajoutés à un jeu de révision de conversation, une tâche de conversion est automatiquement exécutée pour créer le résumé lié aux threads et annoter les vues. Si le travail de reconstruction des conversations échoue, vous pouvez réexécuter ce travail en cliquant sur **Action > créer un fichier PDF de conversation** dans l’ensemble de révision.
 
-
 #### <a name="exporting-conversations"></a>Exportation de conversations
 
 Dans un ensemble de révision de conversation, vous pouvez définir les options suivantes pour exporter des conversations :
@@ -161,7 +158,7 @@ c. Autres options
 
 Pour en savoir plus sur l’examen des données de cas dans Advanced eDiscovery, consultez les articles suivants :
 
-- [Afficher les données d’un incident](view-documents-in-review-set.md) 
+- [Afficher les données d’un incident](view-documents-in-review-set.md)
 
 - [Analyser les données de cas](analyzing-data-in-review-set.md)
 

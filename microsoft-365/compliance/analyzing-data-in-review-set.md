@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fbc2ad99433e2bf296e2891b6f3e85e22b6af6df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0f9cb386ce57d6581ade5caa05e029511100d9b3
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079931"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556782"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analyser les données d’un ensemble de vérification dans Advanced eDiscovery
 
@@ -57,12 +57,18 @@ Pour afficher un rapport d’analyse pour un jeu de révisions :
 
 3. Cliquez sur **afficher le rapport**.
 
-L’État comprend quatre composants de l’analyse :
+Le rapport comprend sept composants de l’analyse :
 
-- **Répartition** : le nombre de messages électroniques, de pièces jointes et de documents en vrac a été trouvé dans l’ensemble de révision.
+- **Population cible :** Le nombre de messages électroniques, de pièces jointes et de documents en vrac trouvés dans l’ensemble de révision.
 
-- **Documents (à l’exception des pièces jointes)** : le nombre de documents en vrac était des tableaux croisés dynamiques, des doublons uniques proches d’un tableau croisé dynamique ou un doublon exact d’un autre document.
+- **Documents (à l’exception des pièces jointes) :** Nombre de documents en vrac, qui sont des tableaux croisés dynamiques, qui sont des doublons d’un tableau croisé dynamique ou un doublon exact d’un autre document.
 
-- **E-mails** : nombre de messages électroniques inclus, copies inclusives, déductions inclusives ou aucun des éléments ci-dessus.
+- **E-mails :** Nombre de messages électroniques inclus, de copies inclusives, inclusifs ou aucun des.
 
-- **Pièces jointes** : le nombre de pièces jointes de courrier électronique sont uniques ou des doublons d’une autre pièce jointe dans l’ensemble de révision.
+- **Pièces jointes :** Nombre de pièces jointes qui sont uniques ou des doublons d’une autre pièce jointe dans l’ensemble de révision.
+
+- **Nombre de fichiers par type :** Nombre de fichiers identifiés par extension de fichier.
+
+- **Documents par source :** Résumé du contenu par sa source de données d’origine.
+
+- **Documents agrégés par processus :** Résumé du contenu en revue les processus de jeu. 

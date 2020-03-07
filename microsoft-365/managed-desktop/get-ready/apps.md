@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112658"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557572"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le bureau géré Microsoft
 
@@ -23,7 +23,7 @@ ms.locfileid: "41112658"
 
 Microsoft inclut certaines applications clés, ainsi que la licence Microsoft 365 E3 ou E5 requise pour participer au bureau géré Microsoft. Toutefois, même si nous fournissons ces applications, vous avez toujours certaines responsabilités et actions à effectuer.
 
-Vous pouvez également déployer des applications supplémentaires non-Microsoft pour les utilisateurs finaux en libre-service via le portail de l’entreprise ou une installation en arrière-plan requise, tout en utilisant le pipeline de déploiement de Microsoft Intune. Si vous disposez de l’expertise, vous pouvez migrer les applications dont vous avez besoin. Si ni Microsoft Consulting Services (MCS) ni un fournisseur non-Microsoft ne seront heureux de vous aider dans un projet d’empaquetage et de migration. Pour plus d’informations sur l’utilisation de MCS, voir [Working with Microsoft Consulting Services](apps-MCS.md).
+Vous pouvez également déployer des applications supplémentaires non-Microsoft pour les utilisateurs finaux en libre-service via le portail de l’entreprise ou une installation en arrière-plan requise, tout en utilisant le pipeline de déploiement de Microsoft Intune. Si vous disposez de l’expertise, vous pouvez migrer les applications dont vous avez besoin par vous-même ; en guise d’alternative, Microsoft Consulting Services (MCS) ou des fournisseurs non-Microsoft seront ravis de vous aider dans un projet d’empaquetage et de migration. Pour plus d’informations sur l’utilisation de MCS, voir [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## <a name="apps-provided-by-microsoft"></a>Applications fournies par Microsoft

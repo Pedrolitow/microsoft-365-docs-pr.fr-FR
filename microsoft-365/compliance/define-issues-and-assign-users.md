@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Découvrez comment ajouter ou modifier un problème, y compris lui affecter des utilisateurs ou supprimer un problème pour un cas de découverte électronique dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: d0777f6829944a6f64c71bda805edd1b5d55de4b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5c7c15b765a0c129e8a58533951b6569b8766b45
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075888"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556972"
 ---
-# <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Définition des problèmes et affectation des utilisateurs dans Office 365 Advanced eDiscovery
+# <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Définition des problèmes et affectation des utilisateurs dans Advanced eDiscovery (classique)
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -76,7 +76,7 @@ Des problèmes peuvent être supprimés (c’est-à-dire supprimés de la base d
     
 ## <a name="see-also"></a>Voir aussi
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
   
 [Configuration des chargements pour ajouter des fichiers importés](set-up-loads-to-add-imported-files.md)
   

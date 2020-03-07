@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Examinez la valeur de similarité des documents, le niveau de ressemblance minimal entre deux fichiers devant être considérés comme étant des doublons, fonctionne dans Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e15eb119a569c7cd296f9d3546969848808652da
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080767"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557664"
 ---
-# <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Comprendre la similarité des documents dans Office 365 Advanced eDiscovery
+# <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Comprendre la similarité des documents dans Advanced eDiscovery (classique)
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -57,7 +57,7 @@ Une fois les ensembles fusionnés, le document croisé dynamique peut changer lo
   
 ## <a name="see-also"></a>Voir aussi
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
   
 [Définition des options d’analyse](set-analyze-options-in-advanced-ediscovery.md)
   

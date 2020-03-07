@@ -17,33 +17,33 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
-ms.openlocfilehash: 234748b8390dcbc5742961c2f10a19a284e01f1c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32dc7e9a01211fcd0d1441c2434385ecd611d585
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079611"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556812"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
-Si vous souhaitez que les utilisateurs puissent utiliser l’un des outils de découverte électronique dans le centre de sécurité & conformité dans Office 365, vous devez leur attribuer les autorisations appropriées. La méthode la plus simple consiste à ajouter la personne au groupe de rôles approprié sur la page des **autorisations** dans le centre de sécurité & conformité. Cette rubrique décrit les autorisations requises pour effectuer des tâches de recherche de contenu et de découverte électronique à l’aide du centre de sécurité & conformité. 
+Si vous souhaitez que les utilisateurs puissent utiliser l’un des outils de découverte électronique dans le centre de sécurité & conformité dans Office 365 ou le centre de conformité Microsoft 365, vous devez leur attribuer les autorisations appropriées. La méthode la plus simple consiste à ajouter la personne au groupe de rôles approprié sur la page des **autorisations** dans le centre de sécurité & conformité. Cette rubrique décrit les autorisations requises pour effectuer des tâches de recherche de contenu et de découverte électronique à l’aide du centre de sécurité & conformité. 
   
 Le groupe de rôles de découverte électronique principal dans le centre de sécurité & conformité est appelé **Gestionnaire eDiscovery**. Il existe deux sous-groupes dans ce groupe de rôles. 
   
-- **gestionnaires eDiscovery** : un gestionnaire eDiscovery peut utiliser l’outil de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher des emplacements de contenu dans l’organisation et effectuer diverses actions liées à la recherche, telles que l’aperçu et l’exportation des résultats de recherche. Les membres peuvent également créer et gérer des cas de découverte électronique, ajouter et supprimer des membres à un cas, créer des blocages de cas, exécuter des recherches de contenu associées à un cas et accéder à des données de cas dans Office 365 Advanced eDiscovery. les gestionnaires eDiscovery peuvent uniquement accéder aux incidents qu’ils créent et les gérer. Ils ne peuvent pas accéder aux dossiers créés par d’autres gestionnaires eDiscovery ni les gérer. 
+- **gestionnaires eDiscovery** : un gestionnaire eDiscovery peut utiliser l’outil de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher des emplacements de contenu dans l’organisation et effectuer diverses actions liées à la recherche, telles que l’aperçu et l’exportation des résultats de recherche. Les membres peuvent également créer et gérer des cas de découverte électronique et des cas de découverte électronique avancée, ajouter et supprimer des membres à un cas, créer des suspensions de cas, exécuter des recherches associées à un cas et accéder à des données de cas. les gestionnaires eDiscovery peuvent uniquement accéder aux incidents qu’ils créent et les gérer. Ils ne peuvent pas accéder aux dossiers créés par d’autres gestionnaires eDiscovery ni les gérer. 
     
 - **administrateurs eDiscovery** : un administrateur eDiscovery est membre du groupe de rôles gestionnaire eDiscovery et peut effectuer la même recherche de contenu et les mêmes tâches liées à la gestion des cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut : 
     
-  - Accédez à tous les cas répertoriés sur la page **cas de découverte électronique** dans le centre de sécurité & conformité. 
+  - Accédez à tous les cas répertoriés sur les pages **eDiscovery** et **eDiscovery avancées** dans le centre de conformité & Compliance Center. 
 
   - Accéder aux données de cas dans Advanced eDiscovery pour tous les cas de l’organisation.
     
-  - Gérer les cas de découverte électronique après s’être ajouté en tant que membre du cas.
+  - Gérez les cas eDiscovery après les avoir ajoutés en tant que membres du cas.
   
   Consultez la section [plus d’informations](#more-information) pour connaître les raisons pour lesquelles vous pouvez souhaiter des administrateurs de découverte électronique dans votre organisation. 
 
 > [!NOTE]
-> Pour analyser les données d’un utilisateur à l’aide de Advanced eDiscovery, l’utilisateur (le dépositaire des données) doit disposer d’une licence Office 365 E5. Par ailleurs, les utilisateurs disposant d’une licence Office 365 E1 ou E3 peuvent se voir attribuer une licence avancée eDiscovery autonome. Les administrateurs et les responsables de la mise en conformité qui sont affectés à des cas et utilisent Advanced eDiscovery pour analyser les données n’ont pas besoin d’une licence E5.  
+> Pour analyser les données d’un utilisateur à l’aide de Advanced eDiscovery, l’utilisateur (le dépositaire des données) doit disposer d’une licence Office 365 ou Microsoft E5. Par ailleurs, les utilisateurs disposant d’une licence Office 365 E1 ou E3 peuvent se voir attribuer une licence de module complémentaire de conformité avancée ; les utilisateurs disposant d’une licence Microsoft 365 E1 ou E3 peuvent se voir attribuer une licence de module complémentaire de conformité E5. Les administrateurs et les responsables de la mise en conformité qui sont affectés à des cas et utilisent Advanced eDiscovery pour analyser les données n’ont pas besoin d’une licence E5.  
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -74,7 +74,7 @@ Sur la page **autorisations** du centre de sécurité & conformité, vous pouvez
 
 Le tableau suivant répertorie les rôles RBAC liés à la découverte électronique dans le centre de sécurité & conformité et indique les groupes de rôles intégrés auxquels chaque rôle est affecté par défaut. 
     
-|**Role**|**Administrateur de conformité**|**Administrateur de & du gestionnaire eDiscovery**|**Gestion de l'organisation**|**Relecteur**|
+|**Rôle**|**Administrateur de conformité**|**Administrateur de & du gestionnaire eDiscovery**|**Gestion de l'organisation**|**Relecteur**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Gestion des cas <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Recherche de conformité <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
@@ -90,11 +90,11 @@ Les sections suivantes décrivent chacun des rôles RBAC liés à la découverte
 
 ### <a name="case-management"></a>Gestion des cas
 
-Ce rôle permet aux utilisateurs de créer, de modifier, de supprimer et de contrôler l’accès aux cas eDiscovery dans le centre de conformité & Compliance Center. Pour plus d’informations, consultez [la rubrique Manage eDiscovery cases dans le centre de conformité & Compliance Center](ediscovery-cases.md). Comme expliqué précédemment, un utilisateur doit se voir attribuer le rôle de gestion des cas avant de pouvoir utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery. 
+Ce rôle permet aux utilisateurs de créer, de modifier, de supprimer et de contrôler l’accès à la découverte électronique et aux cas avancés eDiscovery dans le centre de conformité & Compliance Center. Comme expliqué précédemment, un utilisateur doit se voir attribuer le rôle de gestion des cas avant de pouvoir utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery. 
 
 ### <a name="compliance-search"></a>Recherche de conformité
 
-Ce rôle permet aux utilisateurs d’exécuter l’outil de recherche de contenu dans le centre de conformité & Security pour rechercher des boîtes aux lettres et des dossiers publics, des sites SharePoint Online, des sites OneDrive entreprise, des conversations Skype entreprise, des groupes Office 365 et Microsoft Teams. Ce rôle permet à un utilisateur d’obtenir une estimation des résultats de la recherche et de créer des rapports d’exportation, mais des rôles supplémentaires sont nécessaires pour lancer des actions de recherche de contenu telles que l’aperçu, l’exportation ou la suppression de résultats de recherche.
+Ce rôle permet aux utilisateurs d’exécuter l’outil de recherche de contenu dans le centre de conformité & de sécurité pour rechercher des boîtes aux lettres et des dossiers publics, des sites SharePoint Online, des sites OneDrive entreprise, des conversations Skype entreprise, des groupes Office 365 et Microsoft Teams, ainsi que des groupes Yammer. Ce rôle permet à un utilisateur d’obtenir une estimation des résultats de la recherche et de créer des rapports d’exportation, mais des rôles supplémentaires sont nécessaires pour lancer des actions de recherche de contenu telles que l’aperçu, l’exportation ou la suppression de résultats de recherche.
 
 Les utilisateurs auxquels le rôle de recherche de conformité est attribué mais qui n’ont pas le rôle Aperçu peuvent prévisualiser les résultats d’une recherche dans laquelle l’action d’aperçu a été initiée par un utilisateur auquel le rôle aperçu a été attribué. L’utilisateur sans rôle d’aperçu peut prévisualiser les résultats pendant deux semaines après la création de l’action d’évaluation initiale.
 
@@ -115,7 +115,8 @@ Ce rôle permet aux utilisateurs de placer du contenu en conservation dans des b
 Pour plus d’informations sur les suspensions, voir :
 
 - [cas eDiscovery](ediscovery-cases.md) 
-- [Vue d’ensemble des stratégies de rétention](retention-policies.md)
+
+- [eDiscovery (découverte électronique) avancée](add-custodians-to-case.md#step-4-place-custodians-on-hold)
 
 ### <a name="preview"></a>Aperçu
 
@@ -123,10 +124,10 @@ Ce rôle permet aux utilisateurs d’afficher la liste des éléments renvoyés 
 
 ### <a name="review"></a>Révision
 
-Ce rôle permet aux utilisateurs d’accéder aux données de cas dans [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md) (également appelé Advanced eDiscovery v1). L’objectif principal de ce rôle est de permettre aux utilisateurs d’accéder à Office 365 Advanced eDiscovery. Les utilisateurs auxquels ce rôle est attribué peuvent afficher et ouvrir la liste des incidents sur la page de découverte électronique dans le centre de sécurité & conformité dont ils sont membres. Une fois que l’utilisateur accède à un cas dans le centre de sécurité & conformité, il peut sélectionner **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Office 365 Advanced eDiscovery. Ce rôle ne permet pas à l’utilisateur d’afficher un aperçu des résultats d’une recherche de contenu associée au cas ou d’autres tâches de recherche de contenu ou de gestion de dossier.
+Ce rôle permet aux utilisateurs d’accéder aux données de cas dans [Advanced eDiscovery (standard)](office-365-advanced-ediscovery.md) (également appelé *Advanced eDiscovery v1*). Le principal objectif de ce rôle est de permettre aux utilisateurs d’accéder à Advanced eDiscovery (classique). Les utilisateurs auxquels ce rôle est attribué peuvent afficher et ouvrir la liste des incidents sur la page de **découverte électronique** dans le centre de sécurité & conformité dont ils sont membres. Une fois que l’utilisateur accède à un cas dans le centre de sécurité & conformité, il peut sélectionner **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Advanced eDiscovery (classique). Ce rôle ne permet pas à l’utilisateur d’afficher un aperçu des résultats d’une recherche de contenu associée au cas ou d’autres tâches de recherche de contenu ou de gestion de dossier.
 
 > [!NOTE]
-> Pour l’instant, les utilisateurs auxquels le rôle de révision (ou membre du groupe de rôles réviseur) est affecté ne peuvent pas accéder aux données dans [Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md) (également appelé Advanced eDiscovery v2). Pour ajouter des membres à un cas dans Advanced eDiscovery v2 afin qu’ils puissent consulter les données d’un incident, un utilisateur doit être membre du groupe de rôles gestionnaire eDiscovery.
+> Pour l’instant, les utilisateurs auxquels le rôle de révision (ou membre du groupe de rôles réviseur) est affecté ne peuvent pas accéder aux données dans [Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md) (également appelé *Advanced eDiscovery v2*). Pour ajouter des membres à un cas dans Advanced eDiscovery v2 afin qu’ils puissent consulter les données d’un incident, un utilisateur doit être membre du groupe de rôles gestionnaire eDiscovery.
 
 ### <a name="rms-decrypt"></a>Déchiffrement RMS
 
@@ -136,16 +137,13 @@ Ce rôle permet aux utilisateurs de déchiffrer des messages électroniques prot
 
 Ce rôle permet aux utilisateurs de procéder à la suppression en bloc des données correspondant aux critères d’une recherche de contenu. Pour plus d’informations, consultez [la rubrique Rechercher et supprimer des messages électroniques dans votre organisation Office 365](search-for-and-delete-messages-in-your-organization.md). 
 
-
 ## <a name="more-information"></a>Plus d’informations
 
 - **Pourquoi créer un administrateur de découverte électronique ?** Comme indiqué précédemment, un administrateur de découverte électronique est membre du groupe de rôles de gestionnaire de découverte électronique, qui peut afficher tous les cas de découverte électronique, et y accéder, de votre organisation. Cette capacité d’accès à tous les cas de découverte électronique a deux objectifs importants : 
     
   - Si une personne qui est le seul membre d’un cas de découverte électronique quitte votre organisation, personne (y compris les membres du groupe de rôles de gestion de l’organisation ou un autre membre du groupe de rôles de gestionnaire de découverte électronique) ne peut accéder à ce cas, car personne n’en est alors membre. Dans ce cas, il n’y aurait aucun moyen d’accéder aux données dans le cas. Toutefois, étant donné qu’un administrateur de découverte électronique peut accéder à tous les cas eDiscovery au sein de l’organisation, il peut afficher le cas et s’ajouter eux-mêmes ou un autre gestionnaire eDiscovery en tant que membre du cas.
     
-  - Étant donné qu’un administrateur de découverte électronique peut afficher et accéder à tous les cas eDiscovery, ils peuvent auditer et superviser tous les cas et les recherches de conformité associées. Cela peut vous aider à éviter toute utilisation abusive de recherches de conformité ou de cas de découverte électronique. Étant donné que les administrateurs eDiscovery peuvent accéder à des informations potentiellement sensibles dans les résultats d’une recherche de conformité, vous devez limiter le nombre de personnes qui sont des administrateurs eDiscovery.
-    
-    En outre, les administrateurs eDiscovery sont automatiquement ajoutés en tant qu’administrateurs dans Advanced eDiscovery. Cela signifie qu’une personne doit être un administrateur eDiscovery pour effectuer des tâches administratives dans Advanced eDiscovery, telles que la configuration des utilisateurs, la création de cas et l’importation de données dans un cas.
+  - Étant donné qu’un administrateur de découverte électronique peut consulter et accéder à tous les cas eDiscovery et Advanced eDiscovery, ils peuvent auditer et superviser tous les cas et les recherches de conformité associées. Cela peut vous aider à éviter toute utilisation abusive de recherches de conformité ou de cas de découverte électronique. Étant donné que les administrateurs eDiscovery peuvent accéder à des informations potentiellement sensibles dans les résultats d’une recherche de conformité, vous devez limiter le nombre de personnes qui sont des administrateurs eDiscovery.
     
 - **Puis-je ajouter un groupe en tant que membre du groupe de rôles gestionnaire eDiscovery ?** Comme expliqué précédemment, vous pouvez ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles gestionnaire de découverte électronique à l’aide de la cmdlet **Add-RoleGroupMember** dans Security & PowerShell Center. Par exemple, vous pouvez exécuter la commande suivante pour ajouter un groupe de sécurité à extension messagerie au groupe de rôles gestionnaire eDiscovery. 
     
@@ -153,7 +151,7 @@ Ce rôle permet aux utilisateurs de procéder à la suppression en bloc des donn
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Les groupes de distribution Exchange et les groupes Office 365 ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à extension messagerie, que vous pouvez créer dans Exchange Online PowerShell à l' ` New-DistributionGroup -Type Security ` aide de la commande. Vous pouvez également créer un groupe de sécurité à extension messagerie (et ajouter des membres) dans le centre d’administration Exchange ou dans le centre d’administration Microsoft 365. La création d’une nouvelle sécurité à extension messagerie peut prendre jusqu’à 60 minutes après sa création pour pouvoir être ajoutée au groupe de rôles gestionnaires eDiscovery. 
+    Les groupes de distribution Exchange et les groupes Office 365 ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à extension messagerie, que vous pouvez créer dans Exchange Online PowerShell à l' `New-DistributionGroup -Type Security` aide de la commande. Vous pouvez également créer un groupe de sécurité à extension messagerie (et ajouter des membres) dans le centre d’administration Exchange ou dans le centre d’administration Microsoft 365. La création d’une nouvelle sécurité à extension messagerie peut prendre jusqu’à 60 minutes après sa création pour pouvoir être ajoutée au groupe de rôles gestionnaires eDiscovery. 
     
     Comme indiqué précédemment, vous ne pouvez pas faire d’un groupe de sécurité à extension messagerie un administrateur de découverte électronique à l’aide de la cmdlet **Add-eDiscoveryCaseAdmin** dans la sécurité & Centre de conformité PowerShell. Vous pouvez uniquement ajouter des utilisateurs individuels en tant qu’administrateurs eDiscovery. 
     

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le centre de sécurité & conformité pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l’incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse plus approfondie dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 22547a69b78e8ca8497dd2e2a6ae5d77f913a08f
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409739"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557738"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 
@@ -59,7 +59,7 @@ Utilisez le flux de travail suivant pour configurer et utiliser des cas eDiscove
 
 La première étape consiste à attribuer des autorisations liées à la découverte électronique appropriées à des personnes afin de les ajouter à un cas eDiscovery à l’étape 2. Vous devez être membre du groupe de rôles gestion de l’organisation (ou disposer du rôle de gestion des rôles) dans le centre de sécurité & conformité pour attribuer des autorisations eDiscovery. La liste suivante décrit les groupes de rôles liés à la découverte électronique dans le centre de sécurité & conformité. 
   
-- **Réviseur.** Ce groupe de rôles dispose des autorisations les plus restrictives liées à la découverte électronique. Le principal objectif de ce groupe de rôles est de permettre aux membres d’afficher et d’accéder aux données de cas dans [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md) (également appelé *Advanced eDiscovery v1*). Les membres de ce groupe ne peuvent voir et ouvrir que la liste des incidents figurant sur la page de **découverte électronique** dans le centre de sécurité & conformité dont ils sont membres. Une fois que l’utilisateur accède à un cas dans le centre de sécurité et de conformité, il peut cliquer sur **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Advanced eDiscovery. Ils ne peuvent pas créer de cas, ajouter des membres à un cas, créer des suspensions, créer des recherches, afficher un aperçu des résultats de la recherche, exporter des résultats de recherche ou préparer des résultats pour Advanced eDiscovery. 
+- **Réviseur.** Ce groupe de rôles dispose des autorisations les plus restrictives liées à la découverte électronique. Le principal objectif de ce groupe de rôles est de permettre aux membres d’afficher et d’accéder aux données de cas dans [Advanced eDiscovery (](office-365-advanced-ediscovery.md) également appelé *Advanced eDiscovery v1*). Les membres de ce groupe ne peuvent voir et ouvrir que la liste des incidents figurant sur la page de **découverte électronique** dans le centre de sécurité & conformité dont ils sont membres. Une fois que l’utilisateur accède à un cas dans le centre de sécurité et de conformité, il peut cliquer sur **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Advanced eDiscovery. Ils ne peuvent pas créer de cas, ajouter des membres à un cas, créer des suspensions, créer des recherches, afficher un aperçu des résultats de la recherche, exporter des résultats de recherche ou préparer des résultats pour Advanced eDiscovery. 
 
    > [!NOTE]
    > Pour l’instant, les utilisateurs membres du groupe de rôles réviseur ne peuvent pas accéder aux données dans [Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md) (également appelé *Advanced eDiscovery v2*). Pour ajouter des membres à un cas dans Advanced eDiscovery v2 afin qu’ils puissent consulter les données d’un incident, un utilisateur doit être membre du groupe de rôles gestionnaire eDiscovery.

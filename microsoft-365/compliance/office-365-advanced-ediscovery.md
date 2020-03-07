@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Découvrez comment Office 365 Advanced eDiscovery peut vous aider à analyser les données dans Office 365, rationaliser les révisions de documents et prendre des décisions pour une découverte électronique efficace.
-ms.openlocfilehash: a3a6291459005d60defe61a8bca40ce382b6d052
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2e84ada8c6ca004c0f3c50a79fa6908148770955
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597891"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557874"
 ---
-# <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
+# <a name="advanced-ediscovery-classic"></a>Découverte électronique avancée (classique)
 
 > [!IMPORTANT]
-> À mesure que nous continuons à investir dans les versions plus récentes de la découverte électronique avancée, nous annonçaons le retrait d’Office 365 Advanced eDiscovery (également appelé *Advanced eDiscovery v 1.0*). Si vous utilisez toujours Advanced eDiscovery v 1.0, effectuez une transition vers [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (également appelée *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2,0 contient des fonctionnalités similaires dans Advanced eDiscovery v 1.0, mais offre également de nombreuses nouvelles fonctionnalités telles que la gestion des dépositaires, la gestion des communications et les ensembles de révision. Pour en savoir plus sur le retrait de Advanced eDiscovery v 1.0, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> À mesure que nous continuons à investir dans les versions plus récentes de la découverte électronique avancée, nous annonçaons le retrait d’Office 365 Advanced eDiscovery, également appelé *Advanced eDiscovery (Classic)* ou *Advanced eDiscovery v 1.0*. Si vous utilisez Advanced eDiscovery v 1.0, veuillez faire la transition vers [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (également connu sous le nom de *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2.0 contient des fonctionnalités similaires à celles de Advanced eDiscovery v1.0, et elle offre également de nombreuses fonctions inédites telles que la gestion des consignataires, la gestion des communications et les jeux à réviser. Pour en savoir plus sur le retrait d’Advanced eDiscovery v1.0, voir la [Suppression des outils hérités eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
 Grâce à Advanced eDiscovery, vous pouvez mieux comprendre vos données Office 365 et réduire les coûts de découverte électronique. Advanced eDiscovery vous permet d’analyser les données non structurées dans Office 365, d’effectuer une révision plus efficace des documents et de prendre des décisions pour réduire la découverte électronique. Vous pouvez utiliser des données stockées dans Exchange Online, SharePoint Online, OneDrive entreprise, Skype entreprise, groupes Office 365 et Microsoft Teams. Vous pouvez effectuer une recherche de découverte électronique dans le centre de sécurité et de conformité pour rechercher du contenu dans des groupes, des boîtes aux lettres et des sites individuels, puis analyser les résultats de la recherche avec Advanced eDiscovery. Lorsque vous préparez des résultats de recherche pour analyse dans Advanced eDiscovery, la reconnaissance optique de caractères permet l’extraction de texte à partir d’images. Cette fonctionnalité permet d’appliquer les puissantes fonctionnalités d’analyse du texte d’Advanced eDiscovery à des fichiers image.
   

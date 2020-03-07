@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Procédure d’importation de contenu qui n’est pas stocké dans O365 dans un objet BLOB Azure afin qu’il puisse être analysé avec AeD
-ms.openlocfilehash: 7a06bff3abe70e58ab08edcc456bc167229b05f2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 529eb21117ed2cdfbb7f02caf058dbc6863d2d9b
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072981"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557894"
 ---
-# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importer du contenu non-Office 365 pour l’analyse eDiscovery avancée
+# <a name="import-non-office-365-content-for-advanced-ediscovery-classic-analysis"></a>Importer du contenu non-Office 365 pour l’analyse avancée eDiscovery (classique)
 
 Tous les documents que vous devrez peut-être analyser avec Office 365 Advanced eDiscovery seront inactifs dans Office 365. Avec la fonctionnalité d’importation de contenu non-Office 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne sont pas en ligne dans Office 365 (à l’exception des fichiers PST) dans un blob de stockage associé à une casse, et les analyser avec Advanced eDiscovery. Cette procédure vous montre comment mettre vos documents autres que Office 365 dans Advanced eDiscovery pour analyse.
   

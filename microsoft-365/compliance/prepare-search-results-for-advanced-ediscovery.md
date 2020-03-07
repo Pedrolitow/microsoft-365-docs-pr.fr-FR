@@ -17,17 +17,17 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Découvrez comment préparer les résultats d’une recherche de contenu dans le centre de sécurité & conformité dans Office 365 pour une analyse plus poussée avec l’outil eDiscovery avancé.
-ms.openlocfilehash: 3ba115cf45aa3be7b9cb43b3a261687e073edba2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 01a09da78198c31ff88b0e539ae9b149b2fbdd02
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071009"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557854"
 ---
-# <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Préparation des résultats de recherche pour la découverte électronique avancée Office 365
+# <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Préparation des résultats de recherche pour Advanced eDiscovery (classique)
 
 > [!IMPORTANT]
-> Au fur et à mesure que nous enquêtons dans les versions plus récentes d’Advanced eDiscovery, nous annonçons le retrait d’Office 365 Advanced eDiscovery (également connu sous le nom de *Advanced eDiscovery v 1.0*). Si vous utilisez Advanced eDiscovery v 1.0, veuillez faire la transition vers [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (également connu sous le nom de *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2.0 contient des fonctionnalités similaires à celles de Advanced eDiscovery v1.0, et elle offre également de nombreuses fonctions inédites telles que la gestion des consignataires, la gestion des communications et les jeux à réviser. Pour en savoir plus sur le retrait d’Advanced eDiscovery v1.0, voir la [Suppression des outils hérités eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> À mesure que nous continuons à investir dans les versions plus récentes de la découverte électronique avancée, nous annonçaons le retrait d’Office 365 Advanced eDiscovery, également appelé *Advanced eDiscovery (Classic)* ou *Advanced eDiscovery v 1.0*. Si vous utilisez Advanced eDiscovery v 1.0, veuillez faire la transition vers [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (également connu sous le nom de *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2.0 contient des fonctionnalités similaires à celles de Advanced eDiscovery v1.0, et elle offre également de nombreuses fonctions inédites telles que la gestion des consignataires, la gestion des communications et les jeux à réviser. Pour en savoir plus sur le retrait d’Advanced eDiscovery v1.0, voir la [Suppression des outils hérités eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
 
 Une fois qu’une recherche associée à un cas eDiscovery dans le centre de sécurité & conformité est exécutée correctement, vous pouvez préparer les résultats de la recherche pour une analyse plus poussée avec Office 365 Advanced eDiscovery, qui vous permet d’analyser des ensembles de données non structurés volumineux et de réduire la quantité de données correspondant à un cas juridique. Les fonctionnalités avancées de découverte électronique sont les suivantes :
   
@@ -110,7 +110,7 @@ Une fois la préparation terminée, l’étape suivante consiste à accéder à 
     
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que les résultats d’une recherche de découverte électronique sont ajoutés à un cas, l’étape suivante consiste à utiliser les outils avancés de découverte électronique pour analyser les données et identifier le contenu réactif à un cas juridique spécifique. Pour plus d’informations sur l’utilisation d’Advanced eDiscovery, voir [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md).
+Une fois que les résultats d’une recherche de découverte électronique sont ajoutés à un cas, l’étape suivante consiste à utiliser les outils avancés de découverte électronique pour analyser les données et identifier le contenu réactif à un cas juridique spécifique. Pour plus d’informations sur l’utilisation d’Advanced eDiscovery, reportez-vous à [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md).
   
 ## <a name="more-information"></a>Plus d’informations
 

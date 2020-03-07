@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ea6f4561a17acc81653e711d81d5c362c959f3ae
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5c8cd9e29b663c79d44a97d039bfdb5975e5d225
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073881"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558155"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Liste de vérification de préparation sur la responsabilité Dynamics 365 concernant le RGPD
 
@@ -152,5 +152,5 @@ Pour obtenir d’autres documents relatifs au RGPD, voir https://aka.ms/gdprgets
 
 ## <a name="learn-more"></a>En savoir plus
 
-- [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Sécuriser le portail d’approbation](https://aka.ms/gdprgetstarted)

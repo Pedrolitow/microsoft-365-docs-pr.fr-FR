@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Office 365 Advanced eDiscovery v 1.0 sont également en cours de retrait dans la même période.
 ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600561"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543204"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Déclassement des outils eDiscovery hérités
 
@@ -71,7 +71,7 @@ Conformément à l’annonce d’origine le 1er juillet 2017, la fonctionnalité
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline-for-retirement"></a>Chronologie de la retraite
 
@@ -168,7 +168,7 @@ Conformément à la note d’origine annoncée le 1er juillet 2017 dans le centr
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -242,7 +242,7 @@ La cmdlet **Search-Mailbox** dans Exchange Online PowerShell est en cours de ret
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -297,7 +297,7 @@ Ces trois API des services Web Exchange sont utilisées par la fonctionnalité d
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -317,7 +317,7 @@ Pour l’instant, nous vous recommandons de commencer la transition de votre flu
 
 - Organisations Office 365 et Microsoft 365 éducation
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
