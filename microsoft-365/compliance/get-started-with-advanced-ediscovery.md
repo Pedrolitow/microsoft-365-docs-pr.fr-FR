@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment commencer à utiliser Advanced eDiscovery dans Microsoft 365. Une fois que vous avez effectué quelques étapes rapides, l’outil eDiscovery avancé est prêt à être utilisé. La première étape consiste à créer un cas, puis à commencer à utiliser les fonctionnalités avancées de découverte électronique.
-ms.openlocfilehash: b351524f1bcaa54360d9f7422c0955c5c4a35254
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 2819fdd2f3b98ca82535aa0f08830bb37744c3f7
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557908"
+ms.locfileid: "42561664"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Prise en main de la découverte électronique avancée
 
@@ -94,7 +94,7 @@ Pour plus d’informations sur les autorisations de découverte électronique, a
 
 ## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>Étape 3 : configurer les paramètres globaux pour Advanced eDiscovery
 
-La dernière étape à effectuer avant que les personnes de votre organisation commencent à créer et à utiliser des cas, la configuration des paramètres globaux qui s’appliquent à tous les cas de votre organisation. Pour l’instant, le seul paramètre global disponible est *avocat-détection des privilèges client* (des paramètres globaux seront disponibles à l’avenir). Ce paramètre permet au modèle de privilège avocat-client de s’exécuter lorsque vous analysez les données d’un jeu de révision. Le modèle utilise l’apprentissage automatique d’ordinateur pour déterminer si un document contient du contenu juridique. Il compare également les participants des documents avec une liste de juristes (que vous envoyez lors de la configuration du modèle) afin de déterminer si un document a au moins un participant qui est un avocat.
+La dernière étape à effectuer avant que les personnes de votre organisation commencent à créer et à utiliser des cas, la configuration des paramètres globaux qui s’appliquent à tous les cas de votre organisation. Pour l’instant, le seul paramètre global est *avocat-détection des privilèges client* (des paramètres globaux seront disponibles prochainement). Ce paramètre permet au modèle de privilège avocat-client de s’exécuter lorsque vous analysez les données d’un jeu de révision. Le modèle utilise l’apprentissage automatique d’ordinateur pour déterminer si un document contient du contenu juridique. Il compare également les participants des documents avec une liste de juristes (que vous envoyez lors de la configuration du modèle) afin de déterminer si un document a au moins un participant qui est un avocat.
 
 Pour plus d’informations sur la configuration et l’utilisation du modèle de détection des privilèges du client avocat, voir [set up avocat-client privilege detection in Advanced eDiscovery](attorney-privilege-detection.md).
 

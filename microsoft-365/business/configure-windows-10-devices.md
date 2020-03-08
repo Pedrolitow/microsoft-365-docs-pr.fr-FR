@@ -20,19 +20,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: Découvrez comment configurer des stratégies d’appareil pour Windows 10 qui s’appliquent à tous les utilisateurs de votre organisation afin de s’assurer qu’ils se connectent de manière sécurisée.
-ms.openlocfilehash: 9b690d34df6270731ea08bca1e59483d697b04d5
-ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
+ms.openlocfilehash: 1d25e51b1f61f67ca2ebe6180d6c280c23facaa5
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417263"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560637"
 ---
 # <a name="configure-windows-10-devices"></a>Configurer les appareils Windows 10
 

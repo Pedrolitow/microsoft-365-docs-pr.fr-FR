@@ -15,18 +15,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: Découvrez les conditions requises pour la configuration de votre organisation avec Microsoft 365 Business et la protection des données de travail sur les appareils de vos utilisateurs.
-ms.openlocfilehash: 9e35e3b1cd4f0df1c5852b0fec407a99c9bcf4f4
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 9c96b8fa444b1525e82da5a148483feeac59a25d
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550184"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561377"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Conditions préalables à la protection des données sur les appareils avec Microsoft 365 Business
 

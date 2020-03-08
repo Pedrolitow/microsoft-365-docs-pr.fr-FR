@@ -20,19 +20,19 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
 description: Découvrez comment résoudre les erreurs que vous pouvez voir lors de l’utilisation de fichiers d’appareil AutoPilot dans Microsoft 365 Business.
-ms.openlocfilehash: 7569f18097a1f5959b3dd491958c78886e1e05d6
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: dc1abd508156c8525859f6ca7e291ab38fc8859c
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547468"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560697"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Résoudre les erreurs des appareils AutoPilot
 

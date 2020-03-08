@@ -1,9 +1,11 @@
 ---
 title: Transition d’un abonnement Fournisseur de solutions Cloud Microsoft365Business 
-description: Découvrez comment faire passer un abonnement Fournisseur de solutions Cloud Microsoft365Business de la version d’évaluation vers la version mise à disponibilité générale. 
+description: Découvrez comment vous pouvez passer d’un abonnement CSP Microsoft 365 Business à partir de la version d’évaluation à la disponibilité générale (GA).
 author: jasongroce
 f1.keywords:
 - NOCSH
+ms.custom:
+- seo-marvel-mar
 ms.author: jasgro
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -11,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, transition d’un abonnement Fournisseur de solutions Cloud
 ms.date: 11/01/2017
-ms.openlocfilehash: 7d8e04a0136f86d3c4bb51208081fd1dcbecf59d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 77b7b474a5ad17db58e283ea61b074c959905d1b
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42057214"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560777"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transition d’un abonnement Fournisseur de solutions Cloud Microsoft365Business
 

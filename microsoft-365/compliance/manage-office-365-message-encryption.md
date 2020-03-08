@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Une fois que vous avez terminé la configuration d’Office 365 message Encryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s’il faut activer des codes de passe unique, afficher le bouton protéger dans Outlook sur le Web, et bien plus encore. Les tâches décrites dans cet article expliquent comment procéder.
-ms.openlocfilehash: fa328abc36ffa0d22bb2c96114b3bbb3dfa12ed3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 102d57681e049bf803b377fea97cc0fdb11affb2
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600511"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562080"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 
@@ -173,27 +173,15 @@ Pour plus d’informations sur la façon dont Office 365 implémente le chiffrem
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
-## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only"></a>Vérifier que tous les destinataires externes utilisent le portail OME pour lire le courrier chiffré — Office 365 Advanced message Encryption only
+## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>Vérifier que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés
 
-Si vous disposez d’Office 365 Advanced message Encryption, vous pouvez utiliser des modèles personnalisés pour obliger les destinataires à recevoir un message de wrapper qui les oblige à lire des messages chiffrés dans le portail OME au lieu d’utiliser Outlook ou Outlook sur le Web. Vous souhaiterez peut-être procéder ainsi si vous avez besoin d’un plus grand contrôle sur la façon dont les destinataires utilisent les messages qu’ils reçoivent. Par exemple, si des destinataires externes affichent le courrier électronique dans le portail Web, vous pouvez définir une date d’expiration pour le courrier électronique et vous pouvez révoquer le courrier électronique. Ces fonctionnalités sont uniquement prises en charge par le biais du portail OME. Vous pouvez utiliser l’option chiffrer et l’option ne pas transférer lors de la création des règles de flux de messagerie.
+Vous pouvez utiliser des modèles personnalisés pour obliger les destinataires à recevoir un message de wrapper qui les achemine pour lire des messages chiffrés dans le portail OME au lieu d’utiliser Outlook ou Outlook sur le Web. Vous souhaiterez peut-être procéder ainsi si vous avez besoin d’un plus grand contrôle sur la façon dont les destinataires utilisent les messages qu’ils reçoivent. Par exemple, si des destinataires externes affichent le courrier électronique dans le portail Web, vous pouvez définir une date d’expiration pour le courrier électronique et vous pouvez révoquer le courrier électronique. Ces fonctionnalités sont uniquement prises en charge par le biais du portail OME. Vous pouvez utiliser l’option chiffrer et l’option ne pas transférer lors de la création des règles de flux de messagerie.
 
-### <a name="create-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email-to-be-revocable-and-expire-in-7-days"></a>Créer un modèle personnalisé pour obliger tous les destinataires externes à utiliser le portail OME et à révocabler les messages chiffrés et à les expirer dans 7 jours
+### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>Utiliser un modèle personnalisé pour obliger tous les destinataires externes à utiliser le portail OME et le courrier chiffré
 
 1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Exécutez la cmdlet New-OMEConfiguration :
-
-   ```powershell
-   New-OMEConfiguration -Identity "<template name>" -ExternalMailExpiryInDays 7
-   ```
-
-   où `template name` est le nom que vous souhaitez utiliser pour le modèle de personnalisation de Message Office 365. For example,
-
-   ```powershell
-   New-OMEConfiguration -Identity "<One week expiration>" -ExternalMailExpiryInDays 7
-   ```
-
-3. Exécutez la cmdlet New-TransportRule :
+2. Exécutez la cmdlet New-TransportRule :
 
    ```powershell
    New-TransportRule -name "<mail flow rule name>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "<option name>" -ApplyRightsProtectionCustomizationTemplate "<template name>"
@@ -205,18 +193,18 @@ Si vous disposez d’Office 365 Advanced message Encryption, vous pouvez utilise
 
    - `option name`est soit `Encrypt` ou `Do Not Forward`.
 
-   - `template name`est le nom que vous avez attribué au modèle personnalisé, par exemple `One week expiration`.
+   - `template name`est le nom que vous avez attribué au modèle personnalisé, par exemple `OME Configuration`.
 
-   Pour chiffrer tous les messages électroniques externes avec le modèle « expiration d’une semaine » et appliquer l’option de chiffrement uniquement :
+   Pour chiffrer tous les messages électroniques externes avec le modèle « une semaine » et appliquer l’option de chiffrement uniquement :
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
-   Pour chiffrer tous les messages électroniques externes avec le modèle « expiration d’une semaine » et appliquer l’option ne pas transférer :
+   Pour chiffrer tous les messages électroniques externes avec le modèle « configuration de OME » et appliquer l’option ne pas transférer :
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>Personnaliser l’apparence des messages électroniques et le portail OME
