@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
-ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
+ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42370483"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42551828"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
 La [fonctionnalité d'audit unifiée](search-the-audit-log-in-security-and-compliance.md) de Microsoft 365 offre aux organisations une visibilité dans de nombreux types d’activités auditées dans différents services de Microsoft 365. Avec la publication de l’audit avancé de Microsoft 365, nous offrons de nouvelles fonctionnalités d’audit pouvant aider votre organisation à effectuer des enquêtes de conformité et de légalité.
 
 > [!NOTE]
-> Advanced audit est à la disposition des organisations disposant d’un abonnement Office 365 ou Microsoft 365 Entreprise E5. De plus, un abonnement au composant Microsoft 365 E5 Conformité peut être attribué aux utilisateurs lorsqu'une licence par utilisateur est requise pour des fonctionnalités d’audit avancées, comme dans le cas de la conservation à long terme de journaux d’audit et d'un accès à des évènements essentiels lors d'enquêtes.
+> Advanced audit est à la disposition des organisations disposant d’un abonnement Office 365 E5 ou Microsoft 365 Entreprise E5. De plus, une licence pour le composant Microsoft 365 E5 Conformité peut être attribué aux utilisateurs lorsqu'une licence par utilisateur est requise pour des fonctionnalités d’audit avancées, comme dans le cas de la conservation à long terme de journaux d’audit et d'un accès à des évènements essentiels lors d'enquêtes.
 
 Cet article offre une vue d’ensemble de ces fonctionnalités d'audit avancées.
 
