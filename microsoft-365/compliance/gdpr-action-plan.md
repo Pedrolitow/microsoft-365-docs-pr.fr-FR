@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 36
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 0c0e5b64742b56d950702d67c26b61e1784ac37e
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 6bafb00e879831a21fa80a8005e53fff0e5d95f4
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558051"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558175"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Plan d’action RGPD Microsoft 365 - Principales priorités pour vos premiers 30 jours, 90 jours et au-delà
 
@@ -43,7 +45,7 @@ Ces tâches rapides et puissantes n’ont qu’un faible impact sur les utilisat
 |**Catégorie**|**Tasks**|
 |:-----|:-----|
 | **Intégrez les exigences en matière de RGPD et demandez conseil à un partenaire RGPD Microsoft.** |• Utilisez l’[outil d’évaluation de RGPD Microsoft](https://discover.microsoft.com/gdpr-readiness-assessment) pour évaluer en privé votre préparation et obtenir des recommandations pour les étapes suivantes.<br>• Évaluez et gérez vos risques de conformité en utilisant le [Score de conformité Microsoft](compliance-score.md) au sein du [Portail d’approbation de services](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) Microsoft pour effectuer une évaluation de votre organisation au regard du RGPD.<br>• Travaillez en collaboration avec votre [partenaire Microsoft conseiller en matière de RGPD](https://blogs.partner.microsoft.com/mpn/gdpr-leaders-needed-help-customers-navigate-gdpr-journey/) pour établir des directives internes en vue de répondre aux demandes de personnes concernées (DSR), ainsi que des exclusions en lien avec ces demandes.<br>• Travaillez en collaboration avec votre partenaire Microsoft conseiller en matière de RGPD pour effectuer une analyse d’écart en matière de conformité avec le RGPD pour votre organisation, et développez une feuille de route qui détermine votre parcours de mise en conformité avec le RGPD.<br>• Apprenez à utiliser la [fonctionnalité de demande d’objet de données et de tableau de bord RGPD](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c) dans le Centre de conformité Microsoft 365. |
-| **Commencez à découvrir les types de données à caractère personnel que vous stockez et l’emplacement où elles se trouvent pour répondre aux exigences des DSR.** |• Utilisez la [recherche de contenu](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) et les [cas de découverte électronique](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c) pour effectuer facilement des recherches dans les boîtes aux lettres, les dossiers publics, les Groupes Office 365, Microsoft Teams, les sites SharePoint Online, les sites OneDrive Entreprise et les conversations Skype Entreprise. Découvrez comment utiliser les [types d’informations sensibles](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data) pour rechercher des données personnelles de citoyens de l’UE.<br>•   Lorsque vous travaillez avec des quantités importantes de contenu, identifiez rapidement les documents pertinents par rapport à un sujet donné (par exemple, une enquête de conformité) et avec une meilleure précision que les recherches par mots clés traditionnelles à l’aide d’[Office 365 Advanced eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4), grâce aux technologies de Machine Learning.<br>• Prévisualisez les résultats de recherche, obtenez des statistiques de mot clé pour une ou plusieurs recherches, modifiez en bloc les recherches de contenu et [exportez les résultats](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278) à l’aide des centres de sécurité et de conformité Office 365.|
+| **Commencez à découvrir les types de données à caractère personnel que vous stockez et l’emplacement où elles se trouvent pour répondre aux exigences des DSR.** |• Utilisez la [recherche de contenu](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) et les [cas de découverte électronique](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c) pour effectuer facilement des recherches dans les boîtes aux lettres, les dossiers publics, les Groupes Office 365, Microsoft Teams, les sites SharePoint Online, les sites OneDrive Entreprise et les conversations Skype Entreprise. Découvrez comment utiliser les [types d’informations sensibles](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data) pour rechercher des données personnelles de citoyens de l’UE.<br>• Lorsque vous travaillez avec des quantités importantes de contenu, identifiez rapidement les documents pertinents par rapport à un sujet donné (par exemple, une enquête de conformité) et avec une meilleure précision que les recherches par mots clés traditionnelles à l’aide de[Advanced eDiscovery (classique)](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4), grâce aux technologies de Machine Learning.<br>• Prévisualisez les résultats de recherche, obtenez des statistiques de mot clé pour une ou plusieurs recherches, modifiez en bloc les recherches de contenu et [exportez les résultats](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278) à l’aide des centres de sécurité et de conformité Office 365.|
 
 ## <a name="90-days--enhanced-protections"></a>90 jours – Protections améliorées
 
@@ -68,4 +70,4 @@ Sécurisez les données personnelles au repos et en transit, détectez les viola
 - [Guide du règlement général sur la protection des données (RGPD)](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/) par le bureau du commissaire à l’information
 - [FAQ relative au règlement général sur la protection des données (RGPD) pour les petites organisations](https://ico.org.uk/for-organisations/business/guide-to-the-general-data-protection-regulation-gdpr-faqs/) par le bureau du commissaire à l’information
 - [Microsoft.com/RGPD](https://www.microsoft.com/trustcenter/Privacy/GDPR)
-- [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
