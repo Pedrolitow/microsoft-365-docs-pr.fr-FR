@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 2c69cc6f7e5b332819061e3bf92b9ab02a1dc8db
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42551830"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562019"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -342,7 +342,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |(aucun)|FileModifiedExtended|Cet événement est lié à l’activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est consigné lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
 |Fichier déplacé|FileMoved|Un utilisateur déplace un document de son emplacement actuel sur un site vers un nouvel emplacement.|
 |(aucun)|FilePreviewed|Un utilisateur affiche l’aperçu de fichiers sur un site SharePoint ou OneDrive Entreprise. Ces événements se produisent généralement dans des volumes élevés basés sur une activité unique, comme l’affichage d’une galerie d’images.|
-|Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention ou de conservation eDiscovery aux sites et comptes OneDrive, et lorsque les étiquettes de rétention ou de confidentialité sont automatiquement appliquées au contenu du site. Dans la plupart des cas, le nom du compte de service enregistré dans le champ Utilisateur de l’enregistrement d’audit est **app\@sharepoint**. </br></br> **Conseil :** les champs ApplicationDisplayName et EventData de l’enregistrement d’audit pour l’activité de requête de recherche effectuée peuvent vous aider à identifier le scénario ou le service ayant déclenché cet événement.|
+|Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention et de conservation eDiscovery aux sites et comptes OneDrive, et lors de l'application automatique d'étiquettes de rétention ou de confidentialité au contenu du site.|
 |Recyclage de toutes les versions mineures du fichier|FileVersionsAllMinorsRecycled|L’utilisateur supprime toutes les versions mineures de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage de toutes les versions du fichier|FileVersionsAllRecycled|L’utilisateur supprime toutes les versions de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage d’une version du fichier|FileVersionRecycled|L’utilisateur supprime une version de l’historique des versions d’un fichier. La version supprimée est déplacée vers la Corbeille du site.|
@@ -355,10 +355,25 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |(aucun)|PagePrefetched|Le client d’un utilisateur (comme un site web ou une application mobile) demande la page indiquée afin de vous aider à améliorer les performances lorsque l’utilisateur y accède. Cet événement est enregistré pour indiquer que le contenu de la page a été remis au client de l’utilisateur. Cet événement n’indique pas si l’utilisateur a accédé à la page. <br/><br/> Lorsque le contenu de la page est affiché par le client (conformément à la requête de l’utilisateur), un événement ClientViewSignaled est généré. Tous les clients ne prennent pas en charge l’indication d’une pré-récupération ; par conséquent, certaines activités préalablement récupérées peuvent être enregistrées en tant qu’événements PageViewed.|
 ||||
 
+#### <a name="the-appsharepoint-user-in-audit-records"></a>L’application\@sharepoint de l’utilisateur dans des enregistrements d’audit
+
+Dans les enregistrements d’audit relatives à certaines activités de fichier (et d’autres activités liées à SharePoint), vous pouvez remarquer que l’utilisateur ayant effectué l’activité (identifié dans les champs Utilisateur et UserId) est app@sharepoint. Cela indique que l' « Utilisateur » ayant effectué l’activité était une application. Dans ce cas, l’application a obtenu des autorisations dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. Ce processus d’octroi d’autorisations à une application est appelé accès par *Application SharePoint uniquement*. Cela signifie que l’authentification présentée à SharePoint pour effectuer une action a été faite par une application au lieu d’un utilisateur. C’est la raison pour laquelle l’utilisateur app@sharepoint est trouvé dans certains enregistrements d’audit. Pour obtenir plus d'informations, consultez [Accorder l’accès en utilisant l'application SharePoint uniquement](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+
+Par exemple, app@sharepoint est souvent considéré comme l’utilisateur des événements « Requête de recherche effectuée » et « Fichier consulté ». La raison est qu’une application de votre organisation avec accès Application SharePoint uniquement effectue des requêtes de recherche et accède à des fichiers lors de l’application de stratégies de rétention à des comptes OneDrive ainsi qu'à des sites.
+
+Voici d'autres scénarios dans lesquels app@sharepoint peut être identifié, dans un enregistrement d'audit, en tant qu'utilisateur ayant effectué une activité :
+
+- Groupes Office 365. Lorsqu’un utilisateur ou un administrateur crée un nouveau groupe, des enregistrements d’audit sont générés pour établir une collection de sites, mettre à jour des listes et ajouter des membres à un groupe SharePoint. Ces tâches exécutent une application pour le compte de l’utilisateur qui a créé le groupe.
+
+- Microsoft Teams. Comme pour les groupes Office 365, des enregistrements d’audit sont générés pour créer une collection de sites, mettre à jour des listes et ajouter des membres à un groupe SharePoint lorsqu'une équipe est créée.
+
+- Fonctionnalités de conformité. Lorsqu’un administrateur implémente des fonctionnalités de conformité, telles que les stratégies de rétention, les conservations eDiscovery et l’application automatique d'étiquettes de confidentialité.
+
+Dans ces scénarios et ainsi que d’autres, vous remarquerez également que plusieurs enregistrements d’audit avec app@sharepoint comme utilisateur spécifié ont été créés dans un laps de temps très court, souvent à quelques secondes les uns des autres. Cela indique également qu’ils ont probablement été déclenchés par un tâche initiée par le même utilisateur. En outre, les champs ApplicationDisplayName et EventData de l’enregistrement d’audit peuvent vous aider à identifier le scénario ou l'application ayant déclenché l'événement.
 
 ### <a name="folder-activities"></a>Activités des dossiers
 
-Le tableau suivant décrit les activités des fichiers dans SharePoint Online et OneDrive Entreprise.
+Le tableau suivant décrit les activités des fichiers dans SharePoint Online et OneDrive Entreprise. Comme expliqué précédemment, les enregistrements d’audit pour certaines activités SharePoint indiquent que l'utilisateur app@sharepoint a effectué l’activité de la part de l’utilisateur ou de l’administrateur ayant lancé l’action. Pour obtenir plus d'informations, consultez [L’application\@sharepoint de l’utilisateur dans des enregistrements d’audit](#the-appsharepoint-user-in-audit-records).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -375,7 +390,7 @@ Le tableau suivant décrit les activités des fichiers dans SharePoint Online et
 
 ### <a name="sharepoint-list-activities"></a>Activités de liste SharePoint
 
-Le tableau suivant décrit les activités liées à la façon dont les utilisateurs interagissent avec les listes et les éléments de liste dans SharePoint Online.
+Le tableau suivant décrit les activités liées à la façon dont les utilisateurs interagissent avec les listes et les éléments de liste dans SharePoint Online. Comme expliqué précédemment, les enregistrements d’audit pour certaines activités SharePoint indiquent que l'utilisateur app@sharepoint a effectué l’activité de la part de l’utilisateur ou de l’administrateur ayant lancé l’action. Pour obtenir plus d'informations, consultez [L’application\@sharepoint de l’utilisateur dans des enregistrements d’audit](#the-appsharepoint-user-in-audit-records).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -453,7 +468,7 @@ Le tableau suivant décrit les activités de synchronisation dans SharePoint Onl
 
 ### <a name="site-permissions-activities"></a>Activités d’autorisations de site
 
-Le tableau suivant répertorie les événements liés à l’attribution d’autorisations dans SharePoint et l’utilisation des groupes pour accorder (et révoquer) l’accès aux sites.
+Le tableau suivant répertorie les événements liés à l’attribution d’autorisations dans SharePoint et l’utilisation des groupes pour accorder (et révoquer) l’accès aux sites. Comme expliqué précédemment, les enregistrements d’audit pour certaines activités SharePoint indiquent que l'utilisateur app@sharepoint a effectué l’activité de la part de l’utilisateur ou de l’administrateur ayant lancé l’action. Pour obtenir plus d'informations, consultez [L’application\@sharepoint de l’utilisateur dans des enregistrements d’audit](#the-appsharepoint-user-in-audit-records).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -477,7 +492,7 @@ Le tableau suivant répertorie les événements liés à l’attribution d’aut
 
 ### <a name="site-administration-activities"></a>Activités d’administration des sites
 
-Le tableau suivant répertorie les événements qui résultent de tâches d’administration de site dans SharePoint Online.
+Le tableau suivant répertorie les événements qui résultent de tâches d’administration de site dans SharePoint Online. Comme expliqué précédemment, les enregistrements d’audit pour certaines activités SharePoint indiquent que l'utilisateur app@sharepoint a effectué l’activité de la part de l’utilisateur ou de l’administrateur ayant lancé l’action. Pour obtenir plus d'informations, consultez [L’application\@sharepoint de l’utilisateur dans des enregistrements d’audit](#the-appsharepoint-user-in-audit-records).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
