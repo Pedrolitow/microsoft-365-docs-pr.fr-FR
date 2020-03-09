@@ -24,7 +24,7 @@ description: Découvrez comment utiliser les paramètres par défaut de sécurit
 monikerRange: o365-worldwide
 ms.openlocfilehash: 4dc52c25c3a9351be1a9f4d094d664bc4ed527f9
 ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/02/2020
 ms.locfileid: "42361045"
@@ -72,7 +72,7 @@ Si vous avez déjà configuré Multi-Factor Authentication avec des stratégies 
 5. Accédez à la page [Propriétés d'Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 6. Au bas de la page, sélectionnez **Gérer les paramètres de sécurité par défaut**, et dans le volet **Activer les paramètres de sécurité par défaut**, définissez **Activer les paramètres de sécurité par défaut** sur **Oui**. 
 
-## <a name="enable-modern-authentication-for-your-organization"></a>Activer l’authentification moderne pour votre organisation
+## <a name="enable-modern-authentication-for-your-organization"></a>Activer Authentification moderme pour votre organisation
 
 Les applications clientes Office 2016 prennent en charge l'authentification multifacteur via l'utilisation de la bibliothèque ADAL (Active Directory Authentication Library). Par conséquent, les mots de passe d'application ne sont pas requis pour les clients Office 2016. Vous devez toutefois vous assurer que votre abonnement Office 365 est activé pour ADAL ou authentification moderne.
 
@@ -84,15 +84,15 @@ Les applications clientes Office 2016 prennent en charge l'authentification mult
     
 ## <a name="enable-multi-factor-authentication-for-your-organization"></a>Activer Azure Multi-Factor Authentification pour votre organisation
     
-1. Dans le [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=834822), sélectionnez **utilisateurs** et **utilisateurs actifs**.
+1. Dans le [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=834822), sélectionnez **Utilisateurs** et **Utilisateurs actifs**.
 
-2. Dans la section **utilisateurs actifs** , cliquez sur **authentification multifacteur**.
+2. Dans la section **Utilisateurs actifs**, cliquez sur **authentification multifacteur**.
 
-3. Sur la page **authentification multifacteur** , sélectionnez **utilisateur** si vous activez cette option pour un utilisateur ou sélectionnez **mise à jour en bloc** pour activer plusieurs utilisateurs.
+3. Sur la page **Authentification multifacteur**, sélectionnez **utilisateur** si vous activez cette option pour un utilisateur ou sélectionnez **Mise à jour en bloc** pour activer plusieurs utilisateurs.
 
-4. Cliquez sur **activer** sous **étapes rapides**.
+4. Cliquez sur **Activer** dans **Actions rapides**.
 
-5. Dans la fenêtre contextuelle, cliquez sur **activer l’authentification multifacteur**.
+5. Dans la fenêtre contextuelle, cliquez sur **Activer l’authentification multifacteur**.
 
 Une fois défini Multi-Factor Authentification pour votre organisation, vos utilisateurs doivent configurer la vérification en deux étapes. Pour en savoir plus, voir [Configurer la vérification en deux étapes pour Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
     
