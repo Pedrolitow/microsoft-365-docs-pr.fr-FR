@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Lisez les recommandations pour configurer l’entraînement Pertinence dans Office 365 Advanced eDiscovery pour qu’il note les fichiers selon leur pertinence et génère des résultats.
-ms.openlocfilehash: 1a88d554d06b575f3efb0d01534008b6c35032e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 49c7614eb1fec4e61fb374fb637093fd6e860619
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600501"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557884"
 ---
-# <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Gestion de la configuration de l’entraînement Pertinence dans Office 365 Advanced eDiscovery
+# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestion de la configuration de Pertinence dans Advanced eDiscovery (classique)
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -73,7 +73,7 @@ Une fois les paramètres définis, le réviseur-expert peut commencer à entraî
   
 ## <a name="see-also"></a>Voir aussi
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Définition des sujets et affectation des utilisateurs](define-issues-and-assign-users.md)
   
