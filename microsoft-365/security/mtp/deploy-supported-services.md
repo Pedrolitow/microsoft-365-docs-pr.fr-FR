@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19907517f94cc8b6dbf041cccf56f1d8e232f2f
-ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
+ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374204"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569042"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 
@@ -36,7 +36,7 @@ ms.locfileid: "42374204"
 [Microsoft Threat Protection](microsoft-threat-protection.md) intègre différents services de sécurité Microsoft pour fournir des fonctionnalités de détection, de prévention et d’enquête centralisées contre les attaques sophistiquées. Cet article décrit les services pris en charge, leurs exigences en matière de licences, les avantages et les limitations associés au déploiement d’un ou de plusieurs services, ainsi que des liens vers la façon de les déployer entièrement individuellement.
 
 ## <a name="supported-services"></a>Services pris en charge
-[Microsoft 365 E5, E5 sécurité, a5 ou a5 Security ou une combinaison valide de licences](prerequisites.md#licensing-requirements) donne accès aux services pris en charge suivants et vous permet d’utiliser Microsoft Threat Protection dans le centre de sécurité Microsoft 365.
+Une [licence microsoft 365 E5, E5 sécurité ou a5 ou une combinaison valide de licences](prerequisites.md#licensing-requirements) donne accès aux services pris en charge suivants et vous permet d’utiliser la protection Microsoft contre les menaces dans le centre de sécurité Microsoft 365.
 
 | Service pris en charge | Description |
 | ------ | ------ |

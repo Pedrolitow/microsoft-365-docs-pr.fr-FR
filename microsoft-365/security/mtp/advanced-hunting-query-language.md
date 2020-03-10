@@ -1,7 +1,7 @@
 ---
 title: Découvrez le langage de requête de repérage avancé dans la Protection Microsoft contre les menaces
 description: Créez votre première requête de repérage de menace et découvrez les opérateurs communs et les autres aspects du langage de requête de repérage avancé
-keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, langue, apprentissage, première requête, télémétrie, événements, télémétrie, détections personnalisées, schéma, Kusto, opérateurs, types de données
+keywords: recherche avancée, recherche de menace, recherche dans les menaces informatiques, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, langue, apprentissage, première requête, télémétrie, événements, télémétrie, détections personnalisées, schéma, Kusto, opérateurs, types de données, PowerShell exemple de téléchargement, de requête
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,83 +17,96 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: eda9b893057afd54a644f0091bf4e1b421bd5439
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 7f2cf7f62060774343354467d27b76456f6581fc
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234693"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "42567027"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-
-
 Le repérage avancé est basé sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/). Vous pouvez utiliser la syntaxe et les opérateurs Kusto pour créer des requêtes qui recherchent des informations dans le [schéma](advanced-hunting-schema-tables.md) spécifiquement structuré pour un repérage avancé. Pour mieux comprendre ces concepts, exécutez votre première requête.
 
 ## <a name="try-your-first-query"></a>Essayez votre première requête
 
-dans le Centre de sécurité Microsoft 365, placez-vous dans **Repérage** pour exécuter votre première requête. Consultez l’exemple qui suit :
+Dans le centre de sécurité Microsoft 365, accédez à la **recherche pour exécuter** votre première requête. Consultez l’exemple qui suit :
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents 
+// Finds PowerShell execution events that could involve a download
+union DeviceProcessEvents, DeviceNetworkEvents
 | where Timestamp > ago(7d)
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
 Voici son futur aspect dans le repérage avancé.
 
-![Image de la requête de repérage avancé Microsoft Defender – Protection avancée contre les menaces](../../media/advanced-hunting-query-example.png)
+![Image de la requête de recherche avancée Microsoft Threat Protection](../../media/advanced-hunting-query-example.png)
 
-La requête commence par un bref commentaire décrivant sa fonction. Cela vous permet de choisir ultérieurement d’enregistrer votre requête et de la partager avec d’autres dans votre organisation.
+Un bref commentaire a été ajouté au début de la requête pour décrire sa fonction. Cela vous permet de décider ultérieurement d’enregistrer la requête et de la partager avec d’autres membres de votre organisation. 
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents
+// Finds PowerShell execution events that could involve a download
 ```
 
-La requête elle-même commence généralement par un nom de table suivi d’une série d’éléments commençant par une barre verticale (`|`). Dans cet exemple, nous commençons par ajouter avec le nom de la table `DeviceProcessEvents` et ajoutons des éléments redirigés le cas échéant.
+La requête elle-même commence généralement par un nom de table suivi d’une série d’éléments commençant par une barre verticale (`|`). Dans cet exemple, nous commençons par créer une Union de deux tables `DeviceProcessEvents` , `DeviceNetworkEvents`et et ajoutons des éléments redirigés selon les besoins.
 
-Le premier élément redirigé est un filtre de temps étendu dans les sept jours précédents. La conservation d’un intervalle de temps le plus étroit possible permet de s’assurer que les requêtes fonctionnent bien, renvoient des résultats gérables et n’expirent pas.
+```kusto
+union DeviceProcessEvents, DeviceNetworkEvents
+```
+Le premier élément Redirigé est un filtre temporel étendu aux sept jours précédents. La conservation d’un intervalle de temps le plus étroit possible permet de s’assurer que les requêtes fonctionnent bien, renvoient des résultats gérables et n’expirent pas.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
-L’intervalle de temps est immédiatement suivi d’une recherche de fichiers représentant l’application PowerShell.
+La plage horaire est immédiatement suivie d’une recherche de noms de fichiers de processus représentant l’application PowerShell.
 
-```kusto
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
+```
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
-Par la suite, la requête recherche les lignes de commande généralement utilisées avec PowerShell pour télécharger les fichiers.
+Ensuite, la requête recherche des chaînes dans les lignes de commande qui sont généralement utilisées pour télécharger des fichiers à l’aide de PowerShell.
 
 ```kusto
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
 ```
-
-Maintenant que votre requête identifie clairement les données que vous recherchez, vous pouvez ajouter des éléments qui définissent l’apparence des résultats. `project` renvoie des colonnes spécifiques et `top` limite le nombre de résultats. De ce fait, les résultats sont bien mis en forme et raisonnablement volumineux et faciles à traiter.
+Maintenant que votre requête identifie clairement les données que vous recherchez, vous pouvez ajouter des éléments qui définissent l’apparence des résultats. `project`renvoie des colonnes spécifiques `top` et limite le nombre de résultats, ce qui permet de s’assurer que les résultats sont bien formatés et raisonnablement volumineux et faciles à traiter.
 
 ```kusto
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Cliquez sur **Exécuter la requête** pour afficher les résultats. Vous pouvez développer l’affichage à l’écran pour pouvoir vous concentrer sur votre requête de repérage et sur les résultats.
+Cliquez sur **Exécuter la requête** pour afficher les résultats. Sélectionnez l’icône développer en haut à droite de l’éditeur de requête pour vous concentrer sur votre requête de recherche et les résultats.
+
+![Image du contrôle Expand dans l’éditeur de requête de recherche avancée](../../media/advanced-hunting-expand.png)
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>Découvrir les opérateurs de requête courants pour le repérage avancé
 
