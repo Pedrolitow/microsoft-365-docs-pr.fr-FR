@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 8a64b92e8191000be2767f498fbaee179c3b9e69
-ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
+ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678918"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42587322"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -50,7 +50,7 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 |Action de détection de courrier d’hameçonnage|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier hameçon à haute fiabilité|Mettre en quarantaine le message|Mettre en quarantaine le message||
 |Action de détection de courrier en nombre|Déplacer le message dans le dossier Courrier indésirable|Mettre en quarantaine le message||
-|Définir le seuil de courrier électronique en masse sur|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).|
+|Définir le seuil de courrier électronique en masse sur|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine|30 jours|30 jours||
 |Conseils de sécurité|Activé|Activé||
 |Expéditeurs autorisés|Aucune|Aucune||
@@ -62,8 +62,8 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 |MarkAsSpamBulkMail|Activé|Activé|Ce paramètre est disponible uniquement dans PowerShell|
 
 La stratégie de blocage du courrier indésirable, appelée Advanced Spam Filter (ASF), comporte plusieurs autres paramètres qui sont en cours de désapprobation. Pour plus d’informations sur les chronologies de l’amortissement de ces fonctionnalités, reportez-vous à cette rubrique.
- 
- Nous vous **recommandons de désactiver ces paramètres pour** les niveaux standard et strict :
+
+Nous vous **recommandons de désactiver ces paramètres pour** les niveaux standard et strict :
 
 |Nom de la fonctionnalité de sécurité|Commentaires|
 |---------|---------|
@@ -145,10 +145,9 @@ Les clients EOP bénéficient d’une protection antiphishing de base comme déc
 |Activer la protection contre l’usurpation d’identité|Activé|Activé||
 |Activer l’expéditeur non authentifié (marquage)|Activé|Activé||
 |Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine|Déplacer le message vers les dossiers de courrier indésirable des destinataires|Mettre en quarantaine le message||
-|EnableAuthenticationSafetyTip|True|True|Ce paramètre est disponible uniquement dans PowerShell|
-|EnableAuthenticationSoftPassSafetyTip|False|Vrai|Ce paramètre est disponible uniquement dans PowerShell|
-|EnableSuspiciousSafetyTip|False|Vrai|Ce paramètre est disponible uniquement dans PowerShell|
+|EnableSuspiciousSafetyTip|False|True|Ce paramètre est disponible uniquement dans PowerShell|
 |TreatSoftPassAsAuthenticated|Vrai|False|Ce paramètre est disponible uniquement dans PowerShell|
+
 
 |Nom de la fonctionnalité de sécurité des paramètres avancés|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
@@ -170,7 +169,7 @@ Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables|Désactiv�
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
-|Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams.|Activé|Activé||
+|Activer PACM pour SharePoint, OneDrive et Microsoft Teams.|Activé|Activé||
 |Pièces jointes approuvées ATP réponse aux programmes malveillants inconnus|Bloc|Bloc||
 |Redirection de la pièce jointe sur la détection|Activé|Activé|Rediriger vers l’adresse de messagerie d’un administrateur de sécurité qui sait comment déterminer si la pièce jointe est un programme malveillant ou non|
 |Réponse aux pièces jointes approuvées ATP si l’analyse contre les pièces jointes expire ou si une erreur se produit|Activé|Activé||

@@ -5,16 +5,16 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b65724a1eee35149d473fb69ff646b5ef5751b2c
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085829"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583171"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Cycle de vie des produits bureau géré Microsoft
 
-Microsoft Managed Desktop propose aux utilisateurs finaux qu’ils utilisent toujours des appareils offrant les meilleures performances, la fiabilité, la conception et la sécurité (par exemple, la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, le bureau géré Microsoft gère un petit catalogue d' [appareils approuvés](device-list.md)mis à jour en permanence. 
+Les avantages du bureau géré Microsoft ont pour but de s’assurer qu’ils utilisent toujours des appareils offrant les meilleures performances, la fiabilité, la conception et la sécurité (par exemple, la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, le bureau géré Microsoft gère un petit catalogue d' [appareils approuvés](device-list.md)mis à jour en permanence. 
  
 Cette rubrique décrit en détail le cycle de vie des appareils à mesure qu’ils sont ajoutés et supprimés du catalogue approuvé. 
 
@@ -31,7 +31,7 @@ Cette rubrique décrit en détail le cycle de vie des appareils à mesure qu’i
 - [Retrait du produit](#product-retirement)
 
 
-La séquence entière est illustrée dans cette illustration :
+Cette illustration montre l’ensemble de la séquence :
 
 ![chronologie du cycle de vie : en commençant par la disponibilité générale du produit, la « disponibilité principale » est de deux ans. Pendant ce temps, la fenêtre de certification se termine et, à un moment donné, l’appareil est intégré. À la fin de la disponibilité principale, le produit est archivé et la « période de grâce » de trois ans commence. À partir du moment où l’appareil est intégré, il dispose d’une période d’utilisation de 3 ans jusqu’à ce qu’il soit retiré de la gestion. À la fin de la période de grâce, nous supprimons le produit du catalogue.](../../media/non-dark1-edits.PNG)
 
@@ -40,7 +40,7 @@ Les produits restent dans le catalogue pendant une période de 24 mois, mais les
 Ce tableau montre des exemples de dates pour un produit théorique :
 
 
-|Produit  |Date approuvée  |Fin de la disponibilité principale  |Fin de eligiblity  |
+|Produit  |Date approuvée  |Fin de la disponibilité principale  |Fin de l’éligibilité  |
 |---------|---------|---------|---------|
 |Ordinateur portable Fabrikam    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
 |Ordinateur portable adatum   | 1/1/2018 | 6/1/2020 | 6/1/2023  |
@@ -64,14 +64,14 @@ Pendant cette phase, l’équipe d’ingénierie de bureau géré Microsoft proc
   
 Microsoft Managed Desktop n’évalue que les appareils pour la certification dans les six premiers mois de disponibilité. Cela permet de s’assurer que nous focalisons toujours sur la dernière génération de matériel.
  
-À la fin de cette phase, le bureau géré Microsoft ajoute le produit à la [liste approuvée](device-list.md), libérant ainsi le produit pour les inscriptions client. Quelle que soit la date à laquelle un appareil est certifié, sa **Date approuvée** est la date de retour à la date de disponibilité générale des produits. 
+À la fin de cette phase, le bureau géré Microsoft ajoute le produit à la [liste approuvée](device-list.md), libérant ainsi le produit pour les inscriptions client. Quelle que soit la date de la certification d’un appareil, sa **Date d’approbation** est actualisée à la date de disponibilité générale du produit. 
 
 
 ## <a name="product-primary-availability-period"></a>Période de disponibilité principale du produit
 
 Cette période est le cœur de la disponibilité du produit :
 
-![chronologie de la durée de vie avec la disponibilité principale](../../media/non-dark4-edits.PNG)
+![chronologie de cycle de vie illustrant la disponibilité principale](../../media/non-dark4-edits.PNG)
 
 Tout périphérique inscrit pendant cette période reçoit les trois années de prise en charge complètes du bureau géré Microsoft (comme illustré par le scénario bleu). Cette période dure jusqu’à ce qu’une date de fin soit définie sur 24 mois à compter de la date de disponibilité générale.
 
@@ -88,7 +88,7 @@ Si vous avez récemment acheté un certain nombre d’appareils approuvés avant
 
 L’exemple de Fabrikam Laptop du tableau précédent illustre cette situation : 
 
-|Produit  |Date approuvée  |Fin de la disponibilité principale  |Fin de eligiblity  |
+|Produit  |Date approuvée  |Fin de la disponibilité principale  |Fin de l’éligibilité  |
 |---------|---------|---------|---------|
 |Ordinateur portable Fabrikam    | 6/1/2017 | 6/1/2019 | 6/1/2022 |
 
@@ -105,21 +105,10 @@ Le retrait du produit est la phase finale du cycle de vie. Dans cette phase, auc
 
 Un périphérique n’est pas conforme lorsque sa fenêtre autorisée pour la gestion de bureau géré Microsoft s’est écoulée. Cela se produit lorsque le périphérique a atteint les trois années de gestion ou lorsque ce type de produit est supprimé du catalogue d’appareils, selon ce qui se produit en premier. Vous devez toujours cibler vos cycles d’approvisionnement de manière à ce que les nouveaux appareils soient déployés avant les appareils actuels ne sont pas conformes.
 
-L’équipe de bureau géré Microsoft sait que les cycles d’approvisionnement sont longs et planifiés sur les budgets de longue durée. Pour vous assurer que vous êtes toujours conscient de l’état de votre population de périphériques, nous fournissons un [site Web](https://aka.ms/mmdportal) qui répertorie tous les périphériques sous gestion, la date de la retraite future et un état indiquant sa conformité. Cela signifie que vous avez toujours les dernières informations relatives à l’âge de l’appareil et que vous pouvez utiliser le rapport dans n’importe quel cycle de planification des approvisionnements. 
+L’équipe de bureau géré Microsoft sait que les cycles d’approvisionnement sont longs et planifiés sur les budgets de longue durée. Pour vous assurer que vous êtes toujours conscient de l’état de votre population de périphériques, nous fournissons un [site Web](https://aka.ms/mmdportal) qui répertorie chaque appareil sous gestion, son âge et un état indiquant sa conformité. Cela signifie que vous avez toujours les dernières informations relatives à l’âge de l’appareil et que vous pouvez utiliser le rapport dans n’importe quel cycle de planification des approvisionnements. 
 
 
-En outre, nous allons également effectuer les actions automatiques suivantes pour vous assurer que les nouveaux appareils sont déployés à temps :
 
-
-|Chronologie  |Action  |
-|---------|---------|
-|T-90     | Nous marquerons ce périphérique comme **expirant bientôt**, avec un marqueur jaune sur le site Web de l’inventaire des appareils.  |
-|T-60     | Nous marquerons ce périphérique comme **arrivant à expiration** avec un marqueur rouge sur le site Web de l’inventaire des appareils.       |
-|T-30     | Nous allons publier un message sur le portail d’administration indiquant que les appareils quittent la conformité de façon imminente.       |
-|0     |  Nous allons ajuster le portail d’administration pour dire que les appareils ont expiré redirigez d’abord les administrateurs vers les terrains sur la liste des appareils.       |
-|T + 30     |  Nous réduirons la fonctionnalité de portail d’administration jusqu’à ce que de nouveaux appareils soient déployés.       |
-|T + 60     |  Nous réduirons la fonctionnalité de portail d’administration jusqu’à ce que de nouveaux appareils soient déployés.       |
-|T + 90     |  Nous supprimons l’appareil de la gestion. À ce stade, le périphérique est uniquement votre propre responsabilité et vous ne devez plus le considérer comme sécurisé ou à jour. Par ailleurs, l’appareil sera dans un état inconnu, car chaque fournisseur de service de configuration contrôle ses propres paramètres.|
 
 
 

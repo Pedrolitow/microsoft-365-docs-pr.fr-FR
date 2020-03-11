@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: 0f7c2c59327874d279872d4fd9bb7d0b9d6eb863
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: ba65624d0c7a67eb4a5be55a7f3e08c217039e83
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410031"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583141"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)
 
 Avant cet aperçu, lorsque vous avez appliqué des étiquettes de confidentialité incluant le chiffrement aux fichiers Office stockés dans SharePoint et OneDrive, le service n’a pas pu traiter le contenu de ces fichiers. La co-création, la découverte électronique, la protection contre la perte de données, la recherche, l’Delve et d’autres fonctionnalités collaboratives ne fonctionnaient pas dans ces circonstances. Cet aperçu active ces fonctionnalités pour les fichiers nouveaux et modifiés pour lesquels une étiquette de sensibilité appliquée inclut le chiffrement avec une clé basée sur le Cloud :
 
-- SharePoint reconnaît les étiquettes de confidentialité appliquées aux fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive : lorsque le fichier est stocké dans SharePoint, le chiffrement de Azure information protection est supprimé afin que le contenu du fichier puisse être traité, et les paramètres de chiffrement de l’étiquette sont réappliqués lors du téléchargement du fichier. Pour plus d’informations sur la façon dont les documents sont protégés avant leur téléchargement, voir [chiffrement des données dans OneDrive entreprise et SharePoint Online](data-encryption-in-odb-and-spo.md).
- 
-- Pour que SharePoint déchiffre le fichier lors du chargement, l’utilisateur qui télécharge le fichier étiqueté et chiffré doit disposer des droits d’utilisation pour afficher au moins le fichier. SharePoint ne déchiffre pas les fichiers que l’utilisateur ne peut pas ouvrir en dehors de SharePoint.
+- SharePoint reconnaît les étiquettes de confidentialité appliquées aux fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive : lorsque le fichier est stocké dans SharePoint, le chiffrement à partir d’Azure information protection est supprimé afin que le contenu du fichier puisse être traité. Pour plus d’informations sur la façon dont les documents sont protégés pendant qu’ils sont stockés dans SharePoint, consultez la rubrique [chiffrement des données dans OneDrive entreprise et SharePoint Online](data-encryption-in-odb-and-spo.md).
 
-- Lorsque vous téléchargez ou accédez au fichier à partir de SharePoint ou de OneDrive, l’étiquette de sensibilité et tous les paramètres de chiffrement sont réappliqués avec le fichier, et ces paramètres restent en vigueur chaque fois que le fichier est enregistré.
+- Lorsque vous téléchargez ou accédez à ce fichier à partir de SharePoint ou de OneDrive, l’étiquette de sensibilité et tous les paramètres de chiffrement de l’étiquette sont réappliqués avec le fichier, et ces paramètres restent en vigueur chaque fois que le fichier est enregistré. En raison de ce comportement, assurez-vous de fournir des conseils aux utilisateurs pour utiliser exclusivement des étiquettes pour protéger des documents. Pour plus d’informations, consultez les options de la [gestion des droits relatifs à l’information (RIM) et les étiquettes de sensibilité](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+
+- Pour que SharePoint supprime le chiffrement du fichier lors du chargement, l’utilisateur qui télécharge le fichier étiqueté et chiffré doit disposer des droits d’utilisation pour afficher au moins le fichier. SharePoint ne supprime pas le chiffrement des fichiers si l’utilisateur ne peut pas les ouvrir en dehors de SharePoint.
 
 - Utilisez Office sur le Web (Word, Excel, PowerPoint) pour ouvrir et modifier les fichiers Office dont les étiquettes de confidentialité appliquent le chiffrement. Les autorisations qui ont été affectées au chiffrement sont appliquées. Avec Word sur le Web, vous pouvez également utiliser l’étiquetage automatique lorsque vous modifiez ces documents.
 
@@ -89,6 +89,8 @@ Pour cet aperçu, utilisez la version 19.002.0121.0008 ou une version ultérieur
 - Les applications de bureau Office et les applications mobiles ne prennent pas en charge la co-création. Au lieu de cela, ces applications continuent à ouvrir des fichiers en mode d’édition exclusive.
 
 - Si un document étiqueté est téléchargé vers SharePoint et que l’étiquette a été appliquée à l’aide d’un compte d’un nom principal de service, le document ne peut pas être ouvert dans Office sur le Web. Les exemples de scénarios incluent Microsoft Cloud App Security et un fichier envoyé à teams par courrier électronique.
+
+- Les utilisateurs peuvent rencontrer des problèmes d’enregistrement après avoir effectué une mise hors connexion ou en mode veille quand, au lieu d’utiliser Office pour le Web, ils utilisent le bureau et les applications mobiles pour Word, Excel ou PowerPoint. Pour ces utilisateurs, lorsqu’ils reprennent leur session d’application Office et essaient d’enregistrer les modifications, ils voient s’afficher un message d’échec de téléchargement avec une option permettant d’enregistrer une copie au lieu d’enregistrer le fichier d’origine. 
 
 - Les documents qui ont été chiffrés de la manière suivante ne peuvent pas être ouverts dans Office sur le Web :
     - Chiffrement qui utilise une clé locale (« conserver votre propre clé » ou HYOK)

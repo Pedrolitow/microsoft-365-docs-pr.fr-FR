@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: Découvrez comment conserver le contenu des boîtes aux lettres des anciens employés en transformant la boîte aux lettres en boîte aux lettres inactive. Pour ce faire, vous pouvez placer la boîte aux lettres en conservation pour litige ou appliquer une stratégie de rétention Office 365 à la boîte aux lettres, puis supprimer le compte Office 365 correspondant.
-ms.openlocfilehash: b5c6730a30ac0efba8f00abc01c0b2c26bf9e562
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 958572fc922f3bef140773369124b1c45147ad16
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072901"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583041"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Vue d’ensemble des boîtes aux lettres inactives dans Office 365
 
@@ -70,13 +70,21 @@ Vous pouvez envisager de créer une stratégie de rétention Office 365 destiné
 Si une conservation associée à un cas eDiscovery dans le centre de sécurité & conformité est placée dans une boîte aux lettres et que la boîte aux lettres ou le compte Office 365 de l’utilisateur est supprimé, la boîte aux lettres devient une boîte aux lettres inactive. However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. En outre, vous ne pouvez pas créer de conservation eDiscovery basée sur l’heure. Cela signifie que le contenu d’une boîte aux lettres inactive est conservé indéfiniment ou jusqu’à ce que la conservation soit supprimée et que la boîte aux lettres inactive soit supprimée. Therefore, we recommend using a Litigation Hold or an Office 365 retention policy for inactive mailboxes.
   
 Pour plus d’informations sur les cas de découverte électronique et les conservations, consultez la rubrique [cas eDiscovery](ediscovery-cases.md).
-  
+
 ## <a name="inactive-mailboxes-and-office-365-labels"></a>Boîtes aux lettres inactives et étiquettes Office 365
 
 Les étiquettes dans Office 365 vous aident à classer les données de messagerie de votre organisation à des fins de gouvernance et à appliquer des règles de rétention basées sur cette classification. Une étiquette peut être appliquée à un élément de courrier manuellement par les utilisateurs ou automatiquement par les administrateurs, et un élément de courrier électronique ne peut avoir qu’une seule étiquette affectée. Si une étiquette est attribuée à un seul élément de messagerie dans la boîte aux lettres d’un utilisateur (et qu’elle est configurée pour conserver ou conserver, puis supprimer l’élément) et que la boîte aux lettres ou le compte Office 365 de l’utilisateur est supprimé, la boîte aux lettres devient une boîte aux lettres inactive. De la même manière que pour les conservations de cas eDiscovery, il n’est pas recommandé d’utiliser des étiquettes pour désactiver une boîte aux lettres. Au lieu de cela, nous vous recommandons d’utiliser une conservation pour litige ou une stratégie de rétention Office 365. Dans le cas d’étiquettes, vous risquez de ne pas savoir qu’une étiquette a été appliquée à un élément de courrier électronique, puis une boîte aux lettres inactive par inadvertance lorsque vous supprimez le compte de l’utilisateur. 
   
 Pour en savoir plus sur les étiquettes, consultez la rubrique [Vue d'ensemble des étiquettes](labels.md).
   
+## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Boîtes aux lettres inactives et Archives à extension automatique
+
+Une boîte aux lettres inactive configurée avec une archive à extension automatique ne peut pas être récupérée ou restaurée. Dans les situations où il est nécessaire de récupérer des données à partir d’une boîte aux lettres inactive avec une archive à extension automatique, nous vous recommandons d’utiliser l’outil de recherche de contenu pour exporter les données de la boîte aux lettres, puis les importer vers une autre boîte aux lettres. Pour obtenir des instructions pas à pas sur la recherche d’une boîte aux lettres inactive et sur l’exportation des résultats de la recherche, voir :
+
+- [Recherche de contenu dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+
+- [Exporter les résultats de la recherche de contenu](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)
+
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>Boîtes aux lettres inactives et stratégies de rétention Exchange MRM
 
 Si une stratégie de rétention Exchange (la fonctionnalité de gestion des enregistrements de messagerie ou MRM, dans Exchange Online) a été appliquée à la boîte aux lettres lorsqu’elle était devenue inactive, les stratégies de suppression (qui sont des balises de rétention configurées avec une action de rétention de **suppression** ) continueront à être traitées sur la boîte aux lettres inactive. En d'autres termes, les éléments marqués avec une stratégie de suppression seront déplacés vers le dossier Éléments récupérables à l'expiration de la période de rétention. Ces éléments sont supprimés définitivement de la boîte aux lettres inactive à l'expiration de la durée de la conservation. Si aucune durée de conservation n'est spécifiée pour la boîte aux lettres inactive, les éléments du dossier Éléments récupérables seront conservés indéfiniment. 

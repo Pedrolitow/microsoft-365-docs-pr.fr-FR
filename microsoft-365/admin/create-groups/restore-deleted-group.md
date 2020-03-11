@@ -1,8 +1,7 @@
 ---
 title: Restaurer un groupe Office 365 supprimé
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -19,29 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: 'Découvrez comment restaurer un groupe Office 365 supprimé à l’aide du centre d’administration Exchange. '
-ms.openlocfilehash: c88f10df27e5f3a0af79c93c7d0e347c5646abc9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Découvrez comment restaurer un groupe Office 365 supprimé.
+ms.openlocfilehash: 31d6481f87d7da219e042eefa8f004425caee133
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352435"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583161"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>Restaurer un groupe Office 365 supprimé
 
-Si vous êtes le propriétaire d’un groupe Office 365, vous pouvez restaurer le groupe vous-même en suivant ces étapes.
-
-1. Sur la [page groupes supprimés](https://outlook.office.com/people/group/deleted), sélectionnez l’option **gérer les groupes** sous le nœud **groupes** , puis choisissez **supprimé**.
-2. Cliquez sur l’onglet **restaurer** en regard du groupe que vous souhaitez restaurer.
-
-Si le groupe supprimé n’apparaît pas ici, contactez un administrateur.
-  
-Si vous êtes un utilisateur qui souhaite restaurer un groupe Office 365, demandez à un administrateur de suivre ces étapes pour vous ou de contacter votre support technique.  
-   
 Si vous avez supprimé un groupe, il est conservé pendant 30 jours par défaut. Cette période de 30 jours est considérée comme une « suppression récupérable » car vous pouvez toujours restaurer le groupe. Après 30 jours, le groupe et le contenu associé sont supprimés définitivement et ne peuvent pas être restaurés.
-  
-Pendant la période de suppression « récupérable », si un utilisateur tente d’accéder au site, il obtiendra un message de 404 _interdit_ . Après cette période, si un utilisateur tente d’accéder au site, il obtiendra un message 404 _introuvable_ .
-  
+
 En cas de restauration d'un groupe, le contenu suivant est restauré :
   
 - Les groupes d’objets, propriétés et membres d’Azure Active Directory (AD) Office 365.
@@ -56,122 +44,26 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Planificateur.
     
-- Teams
+- Équipes
 
 - Groupe Yammer et contenu de groupe (si le groupe Office 365 a été créé à partir de Yammer)
-    
-Vous pouvez [Supprimer un groupe Office 365 de manière définitive](#permanently-delete-an-office-365-group) si vous voulez supprimer définitivement le contenu avant la fin de la période de rétention de 30 jours. 
 
-> [!NOTE]
-> Le propriétaire du groupe Office 365 supprimé peut également restaurer le groupe. Pour restaurer un groupe Office 365 à l’aide de l’autorisation propriétaire sans autorisation d’administrateur, voir [restaurer un groupe office 365 à l’aide de PowerShell](#restore-an-office-365-group-using-powershell).
+## <a name="restore-a-group-that-you-own-by-using-outlook"></a>Restaurer un groupe dont vous êtes propriétaire à l’aide d’Outlook
 
-## <a name="restore-an-office-365-group-using-the-exchange-admin-center"></a>Restaurer un groupe Office 365 via le Centre d'administration Exchange
+Si vous êtes le propriétaire d’un groupe Office 365, vous pouvez restaurer le groupe vous-même dans Outlook en procédant comme suit :
 
-Vous devez disposer des autorisations d’administrateur global d’Office 365.
+1. Sur la [page groupes supprimés](https://outlook.office.com/people/group/deleted), sélectionnez l’option **gérer les groupes** sous le nœud **groupes** , puis choisissez **supprimé**.
+2. Cliquez sur l’onglet **restaurer** en regard du groupe que vous souhaitez restaurer.
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
-    
-2. Dans le Centre d'administration Exchange, sélectionnez **destinataires**, puis sélectionnez **groupes**. Vous pouvez voir si le groupe est actif ou supprimé de manière récupérable. Si le groupe a été supprimé de manière définitive, il n'est pas répertorié.
-  
-3. Pour afficher l’heure exacte à laquelle le groupe a été supprimé de manière récupérable, sélectionnez le groupe et affichez les informations dans le volet droit.
-      
-4. Sélectionnez le groupe que vous souhaitez restaurer, puis sélectionnez l’icône restaurer.
-    
-    ![Sélectionnez le groupe que vous souhaitez restaurer, puis sélectionnez l’icône restaurer.](../../media/restore-group.png)
-  
-5. Sélectionnez actualiser ![Icône Actualiser](../../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) pour mettre à jour les informations dans la page. Votre groupe aura l'état Actif. Les formulaires et les données de formulaire associés à votre groupe seront également restaurés.
-    
-## <a name="restore-an-office-365-group-using-powershell"></a>Restaurer un groupe Office 365 via PowerShell
+Si le groupe supprimé n’apparaît pas ici, contactez un administrateur.
 
-Vous devez disposer des autorisations d’administrateur global d’Office 365 ou être un ancien propriétaire du groupe Office 365 supprimé.
+## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a>Restaurer un groupe dans le centre d’administration Microsoft 365
 
-> [!IMPORTANT]
-> Si vous utilisez Remove-MsolGroup dans PowerShell pour supprimer un groupe, le groupe est définitivement supprimé. Lorsque vous utilisez PowerShell pour supprimer des groupes, nous vous recommandons d'utiliser l'applet de commande **Remove-AzureADMSGroup** pour supprimer (suppression réversible) le groupe Office 365. Vous pourrez ainsi le restaurer, le cas échéant. 
-  
-### <a name="install-the-preview-version-of-the-azure-active-directory-powershell-for-graph"></a>Installer la version d'essai de Azure Active Directory PowerShell pour Graph
+Si vous êtes un administrateur général ou un administrateur de groupes, vous pouvez restaurer un groupe supprimé dans le centre d’administration 365 de Microsoft :
 
-> [!IMPORTANT]
-> Vous ne pouvez pas installer simultanément les versions aperçu et GA sur le même ordinateur.
-  
-En guise de meilleure pratique, nous vous recommandons de *toujours* rester à jour, c’est-à-dire de désinstaller l’ancienne AzureADPreview ou ancienne version AzureAD et d’obtenir la dernière version. 
-  
- 
-1. Dans la barre de recherche, tapez Windows PowerShell.
-    
-2. Cliquez avec le bouton droit sur **Windows PowerShell**, puis sélectionnez **Exécuter en tant qu'administrateur**.
-  
-2. Passez en revue vos modules installés :
-    
-  ```
-  Get-InstalledModule -Name "AzureAD*"
-  ```
-
-3. Pour désinstaller une version précédente de AzureADPreview ou AzureAD, exécutez la commande suivante :
-  
-```
-   Uninstall-Module AzureADPreview
-```
-
-ou
-  
-```
-   Uninstall-Module AzureAD
-```
-
-4. To install the latest version of AzureADPreview, run this command:
-  
-```
-   Install-Module AzureADPreview
-```
-
-
-
-At the message about an untrusted repository, type **Y**. It will take a minute or so for the new module to install. 
-  
-### <a name="restore-the-deleted-group"></a>Restaurer le groupe supprimé
-  
-1. Avez-vous installé le module **AzureADPreview** , comme indiqué dans la section previoius « installer la version d’évaluation du module Azure Active Directory pour Windows PowerShell » ?  Cette procédure ne fonctionne généralement pas si la version d' **évaluation** la plus récente du module est manquante. 
-    
-2. Si ce n'est pas déjà fait, ouvrez une fenêtre Windows PowerShell sur votre ordinateur (il peut s'agir d'une fenêtre Windows PowerShell standard ou d'une fenêtre que vous avez ouvert en sélectionnant **Exécuter en tant qu'administrateur**).
-    
-3. Exécutez les commandes suivantes en appuyant sur **entrée** après chacune d’elles : 
-    
-  ```
-  Import-Module AzureADPreview
-  ```
-
-  ```
-  Connect-AzureAD
-  ```
-
-
-
-  Dans l’écran Connectez-vous **à votre compte** qui s’ouvre, entrez le nom d’utilisateur et le mot de passe de votre compte administratif pour vous connecter à votre service Azure ad, puis sélectionnez **se connecter**.
-  
-4. Exécutez cette commande pour afficher tous les groupes Office 365 supprimés de votre organisation qui se trouvent encore dans la période de suppression logicielle de 30 jours :
-    
-  ```
-  Get-AzureADMSDeletedGroup
-  ```
-
-5. Prenez note de l'ID d'objet du ou des groupes que vous voulez restaurer. Si vous ne voyez pas le groupe que vous recherchez dans cette liste, il a probablement été définitivement purgé.
-    
-    > [!CAUTION]
-    > Si un groupe a été créé avec le même alias ou la même adresse SMTP que votre groupe supprimé, vous devez supprimer ce nouveau groupe pour pouvoir restaurer le groupe supprimé. 
-  
-6. Pour restaurer ce groupe, exécutez la commande suivante :
-    
-  ```
-  Restore-AzureADMSDeletedDirectoryObject -Id <objectId>
-  ```
-
-7. Ce processus ne prend généralement que quelques minutes, mais dans quelques rares cas, il peut prendre jusqu’à 24 heures pour être entièrement restauré. Pour vérifier que le groupe a été correctement restauré, exécutez la commande suivante dans PowerShell :
-    
-  ```
-  Get-AzureADGroup -ObjectId <objectId>
-  ```
-
-Une fois restauré, le groupe doit réapparaître dans le volet de navigation d'Outlook et d'Outlook sur le web. Tout le contenu restauré, y compris celui de SharePoint et du Planificateur, doivent être de nouveau accessibles aux membres du groupe.
+1. Accédez au Centre d’administration à l’adresse [https://admin.microsoft.com](Go to the admin center at https://admin.microsoft.com).
+2. Développez **groupes**, puis cliquez sur **groupes supprimés**.
+3. Sélectionnez le groupe que vous souhaitez restaurer, puis cliquez sur **restaurer le groupe**.
   
 ## <a name="permanently-delete-an-office-365-group"></a>Supprimer un groupe Office 365 de manière définitive
 
