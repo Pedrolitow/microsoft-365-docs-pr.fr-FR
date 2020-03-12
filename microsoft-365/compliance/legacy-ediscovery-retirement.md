@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Office 365 Advanced eDiscovery v 1.0 sont également en cours de retrait dans la même période.
-ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 92b6648b603286871956db64631d334df2384112
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543204"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605318"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Déclassement des outils eDiscovery hérités
 
@@ -278,6 +278,13 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </td>
 </tr>
 <tr class="odd">
+<td>Supprimer les messages électroniques en masse d’une boîte aux lettres</td>
+<td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Configurer une stratégie d’archivage et de suppression de boîtes aux lettres</span></a></p>
+<p></p></td>
+<td><p>Les administrateurs peuvent créer une stratégie d’archivage et de suppression qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur et supprime automatiquement les éléments de la boîte aux lettres.</p>
+</td>
+</tr>
+<tr class="even">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
 <td> </td>
 <td>Il n’existe pas de remplacement direct de cette fonctionnalité, car elle ne fournit pas d’accès à tous les services Microsoft 365. Consultez la FAQ dans la section <strong>*-MailboxSearch cmdlets</strong> pour obtenir d’autres solutions. </td>

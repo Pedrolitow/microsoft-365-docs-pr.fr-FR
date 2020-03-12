@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: 41d4231b163d85b55ed0cd68ffb551f67d30827a
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 858d2be23dcb3c3f2b0794e735ed8ca61d67b74d
+ms.sourcegitcommit: 794f2f416a258157cb44d962b5be6a348ee20fea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583151"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42594005"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -123,7 +123,7 @@ Si vous devez convertir des modèles de protection existants en étiquettes, uti
 
 Les étiquettes de sensibilité que vous configurez pour appliquer le chiffrement suppriment la complexité des utilisateurs pour spécifier leurs propres paramètres de chiffrement. Dans de nombreuses applications Office, ces paramètres de chiffrement individuels peuvent toujours être configurés manuellement par les utilisateurs à l’aide des options de gestion des droits relatifs à l’information (IRM). Par exemple, pour les applications Windows :
 
-- Pour un document : **** > **informations** > de fichier**protéger le document** > protéger**l’accès restreint**
+- Pour un document : **File** > **informations** > de fichier**protéger le document** > protéger**l’accès restreint**
 - pour un e-mail : sous l’onglet **Options** > **chiffrer** 
   
 Lorsque les utilisateurs étiquetent initialement un document ou un message électronique, ils peuvent toujours remplacer vos paramètres de configuration d’étiquette par leurs propres paramètres de chiffrement. Par exemple :
@@ -136,7 +136,7 @@ Lorsque les utilisateurs étiquetent initialement un document ou un message éle
 
 Si le document ou l’adresse de messagerie est déjà étiqueté, un utilisateur peut effectuer l’une des actions suivantes si le contenu n’est pas déjà chiffré ou s’il dispose de l’exportation [droite](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) ou contrôle total. 
 
-Pour une étiquette plus cohérente avec un rapport significatif, fournissez des étiquettes et des conseils appropriés pour appliquer des étiquettes exclusivement. Par exemple :
+Pour une étiquette plus cohérente avec un rapport significatif, fournissez des étiquettes et des conseils appropriés pour que les utilisateurs ne puissent appliquer que des étiquettes pour protéger des documents. Par exemple :
 
 - Pour les cas d’exception où les utilisateurs doivent affecter leurs propres autorisations, fournissez des étiquettes qui [permettent aux utilisateurs d’affecter leurs propres autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5861348bb7c447c878f7f203acfd39fdf4c0a5f8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 733abf925c80f90527b67660b84aea3e0482e906
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078761"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543753"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -65,14 +65,14 @@ Lorsque vous sélectionnez un groupe Office 365 pour les utilisateurs supervisé
 
 Avec les stratégies de conformité de communication, vous pouvez choisir d’analyser les messages d’une ou plusieurs des plateformes de communication suivantes en tant que groupe ou en tant que sources autonomes. Les communications capturées sur ces plateformes sont conservées pendant sept ans pour chaque stratégie par défaut, même si les utilisateurs quittent votre organisation et que leurs boîtes aux lettres sont supprimées.
 
-- **Microsoft teams**: les communications de conversation et les pièces jointes associées dans les canaux Microsoft teams publics et privés et dans des conversations individuelles peuvent être analysées. Les conversations de teams correspondant aux conditions de stratégie de conformité de communication sont traitées une fois toutes les 24 heures, puis disponibles dans les rapports de conformité des communications. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams :
+- **Microsoft teams**: les communications de conversation et les pièces jointes associées dans les canaux Microsoft teams publics et privés et dans des conversations individuelles peuvent être analysées. Les conversations et les pièces jointes de teams correspondant à des conditions de stratégie de conformité de communication peuvent prendre jusqu’à 24 heures pour être traitées. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams :
 
     - **Pour les communications de conversation de teams :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre est destiné aux relations utilisateur/conversation un-à-un ou un-à-plusieurs.
     - **Pour les communications de canal teams :** Affectez tous les groupes Microsoft Team Channel ou Office 365 que vous souhaitez analyser qui contiennent un utilisateur spécifique à la stratégie de conformité de communication. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft teams ou à des groupes Office 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de conformité des communications.
 
-- **Messagerie Exchange**: les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles pour l’analyse des messages. Les e-mails et les pièces jointes correspondant à des conditions de stratégie de conformité de communication sont immédiatement disponibles dans les rapports de conformité de communication. Les types de pièces jointes prises en charge pour la conformité de la communication sont les mêmes que ceux [pris en charge pour les inspections de contenu de règle de flux de messagerie Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+- **Messagerie Exchange**: les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles pour l’analyse des messages. Les messages électroniques et les pièces jointes Exchange correspondant à des conditions de stratégie de conformité de communication peuvent mettre jusqu’à 24 heures pour être traités. Les types de pièces jointes prises en charge pour la conformité de la communication sont les mêmes que ceux [pris en charge pour les inspections de contenu de règle de flux de messagerie Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
-- **Skype entreprise Online**: les communications de conversation et les pièces jointes associées dans Skype entreprise Online peuvent être surveillées. Les conversations Skype entreprise Online correspondant à des conditions de stratégie de conformité de communication sont traitées une fois toutes les 24 heures, puis disponibles dans les rapports de conformité des communications. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
+- **Skype entreprise Online**: les communications de conversation et les pièces jointes associées dans Skype entreprise Online peuvent être surveillées. Les conversations Skype entreprise Online qui correspondent à des conditions de stratégie de conformité des communications peuvent prendre jusqu’à 24 heures pour être traitées. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
 
     - **Pour les communications de conversation de Skype entreprise Online**: affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre est destiné aux relations utilisateur/conversation un-à-un ou un-à-plusieurs.
 
@@ -286,16 +286,16 @@ Pour afficher les activités de stratégie de conformité de communication, sél
 
 Vous pouvez également afficher les activités d’audit dans le journal d’audit unifié ou avec l’applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .
 
-Par exemple, l’exemple suivant montre comment renvoyer les activités de toutes les activités de vérification de surveillance (stratégies et règles) et répertorier les informations détaillées pour chacune d’elles :
+Par exemple, l’exemple suivant renvoie les activités de toutes les activités de vérification de surveillance (stratégies et règles) :
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -Operations SupervisoryReviewTag
 ```
 
 Cet exemple renvoie les activités de mise à jour pour vos stratégies de conformité de communication :
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?

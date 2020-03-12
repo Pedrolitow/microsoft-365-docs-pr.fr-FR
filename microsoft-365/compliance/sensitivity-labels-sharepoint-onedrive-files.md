@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: ba65624d0c7a67eb4a5be55a7f3e08c217039e83
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 1ef4a91206c676be0404e5e4e8c7fdf02cedf089
+ms.sourcegitcommit: 794f2f416a258157cb44d962b5be6a348ee20fea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583141"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42594006"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)
 
@@ -30,7 +30,7 @@ Avant cet aperçu, lorsque vous avez appliqué des étiquettes de confidentialit
 
 - SharePoint reconnaît les étiquettes de confidentialité appliquées aux fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive : lorsque le fichier est stocké dans SharePoint, le chiffrement à partir d’Azure information protection est supprimé afin que le contenu du fichier puisse être traité. Pour plus d’informations sur la façon dont les documents sont protégés pendant qu’ils sont stockés dans SharePoint, consultez la rubrique [chiffrement des données dans OneDrive entreprise et SharePoint Online](data-encryption-in-odb-and-spo.md).
 
-- Lorsque vous téléchargez ou accédez à ce fichier à partir de SharePoint ou de OneDrive, l’étiquette de sensibilité et tous les paramètres de chiffrement de l’étiquette sont réappliqués avec le fichier, et ces paramètres restent en vigueur chaque fois que le fichier est enregistré. En raison de ce comportement, assurez-vous de fournir des conseils aux utilisateurs pour utiliser exclusivement des étiquettes pour protéger des documents. Pour plus d’informations, consultez les options de la [gestion des droits relatifs à l’information (RIM) et les étiquettes de sensibilité](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+- Lorsque vous téléchargez ou accédez à ce fichier à partir de SharePoint ou de OneDrive, l’étiquette de sensibilité et tous les paramètres de chiffrement de l’étiquette sont réappliqués avec le fichier, et ces paramètres restent en vigueur chaque fois que le fichier est enregistré. En raison de ce comportement, assurez-vous de fournir des conseils aux utilisateurs pour utiliser exclusivement des étiquettes pour protéger des documents. Pour plus d’informations, consultez la rubrique [options de gestion des droits relatifs à l’information (IRM) et les étiquettes de confidentialité](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
 
 - Pour que SharePoint supprime le chiffrement du fichier lors du chargement, l’utilisateur qui télécharge le fichier étiqueté et chiffré doit disposer des droits d’utilisation pour afficher au moins le fichier. SharePoint ne supprime pas le chiffrement des fichiers si l’utilisateur ne peut pas les ouvrir en dehors de SharePoint.
 

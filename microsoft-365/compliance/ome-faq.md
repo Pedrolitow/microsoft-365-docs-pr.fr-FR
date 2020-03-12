@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages dans Office 365 fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: 032aa1dacc89aea63cf15080efb80de61e9a6f22
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8d0b65ad60365154f8a35c5afe0b71b5a50d29a8
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597811"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605347"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
@@ -115,7 +115,8 @@ OK! Vous pouvez activer le chiffrement des pièces jointes au format PDF pour vo
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-Le chiffrement PDF vous permet de protéger des documents PDF sensibles via une communication sécurisée ou une collaboration sécurisée. Les messages héritent de la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. Si un utilisateur Outlook ou Outlook sur le Web joint une pièce jointe au format PDF non protégé à un message protégé, le message hérite de la protection du message. Les utilisateurs peuvent uniquement ouvrir les pièces jointes chiffrées dans les applications qui prennent en charge les fichiers PDF protégés (par exemple, le portail OME et le visionneur Azure information protection).
+Le chiffrement PDF vous permet de protéger des documents PDF sensibles via une communication sécurisée ou une collaboration sécurisée. Pour tous les clients Outlook, les messages et les pièces jointes au format PDF non protégés héritent de la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. En outre, si un utilisateur d’Outlook sur le Web joint un document PDF non protégé et applique la protection au message, le message hérite de la protection du message. Les utilisateurs peuvent uniquement ouvrir les pièces jointes chiffrées dans les applications qui prennent en charge les fichiers PDF protégés (par exemple, le portail OME et le visionneur Azure information protection).
+
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Les pièces jointes OneDrive entreprise sont-elles prises en charge ?
 
@@ -161,7 +162,7 @@ Pas pour le moment.
 
 OK! Les messages chiffrés sont pris en charge pour une boîte aux lettres partagée.
 
-- Les utilisateurs peuvent ouvrir des messages protégés dans un mMailbox partagé où la boîte aux lettres partagée a reçu un message protégé dans le cadre d’un groupe de distribution.
+- Les utilisateurs peuvent ouvrir des messages protégés dans une boîte aux lettres partagée dans laquelle la boîte aux lettres partagée a reçu un message protégé dans le cadre d’un groupe de distribution.
 
 - Les utilisateurs peuvent afficher les pièces jointes qui héritent de la protection du courrier électronique lorsqu’ils utilisent Outlook pour Windows, Outlook pour Mac et Outlook sur le Web.
 

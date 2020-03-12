@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: dafc745d985c93e4665db469442b0b6dc2eda070
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 33cd1e9956410c66c21c6b4279416df5358f4adf
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081071"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604081"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de supervision dans Office 365
 
@@ -51,7 +51,6 @@ Les organisations qui utilisent des stratégies de surveillance dans Office 365 
 - La solution de supervision dans Office 365 sera entièrement remplacée par la solution de conformité de la communication dans Microsoft 365. Pour les organisations qui migrent vers la conformité des communications à partir de stratégies de surveillance, nous vous recommandons de créer de nouvelles stratégies dans la conformité de la communication ayant les mêmes *conditions* que les stratégies de surveillance existantes pour permettre de nouvelles recherches et améliorations. Lors de la transition vers la conformité de la communication dans Microsoft 365, vous devez planifier l’exportation des données de création de rapports à partir de la surveillance dans Office 365 si vous avez des exigences de stratégie de rétention de conformité internes.
 - Dans l’intervalle, les organisations peuvent utiliser les deux solutions côte à côte jusqu’à la migration complète, mais les stratégies utilisées dans chaque solution doivent avoir des *noms de stratégie uniques*. Les groupes et les dictionnaires de mots clés personnalisés peuvent être partagés entre les solutions pendant la période de transition.
 - Les messages enregistrés en supervision dans Office 365 les correspondances de stratégie ne peuvent pas être déplacés ou partagés dans la conformité de communication dans Microsoft 365.
-
 
 Pour plus d’informations sur la retraite de la surveillance dans Office 365, consultez la feuille de [route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour plus de détails.
 
@@ -82,7 +81,7 @@ Vous créez des stratégies de surveillance dans le centre de conformité. Ces s
 Avant de commencer à utiliser la surveillance, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Office 365, les listes de distribution Exchange et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de la surveillance avec un groupe supervisé ou une liste de groupes.
 
 >[!IMPORTANT]
->Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>Les utilisateurs analysés par les stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5, ou être inclus dans un abonnement Microsoft 365 E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Relecteurs
 
@@ -178,7 +177,7 @@ Le tableau suivant décrit plus en plus de chaque condition.
 | **La taille de la pièce jointe est supérieure à** <br><br> **La pièce jointe n’est pas supérieure à** | Pour examiner les messages en fonction de la taille de leurs pièces jointes, spécifiez la taille maximale ou minimale qu’une pièce jointe peut contenir avant que le message et ses pièces jointes soient soumis à révision. Par exemple, si vous spécifiez une **taille de pièce jointe supérieure** \> à **2,0 Mo**, tous les messages avec des pièces jointes 2,01 Mo et supérieures sont soumis à la révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Correspondance de mots et expressions avec des courriers électroniques ou des pièces jointes
-<a name="Matchwords"></a> Chaque mot que vous entrez et séparé par une virgule est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la condition de stratégie à appliquer à la messagerie ou à la pièce jointe). Par exemple, nous utilisons la condition, le **message contient l’un de ces mots**, avec les mots-clés « Banker » et « negociing Insider » séparé par une virgule (Banking, Insider Insider). La stratégie s’applique aux messages qui incluent le mot « Banker » ou l’expression « negociation Insiders ». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots contenus dans le message ou dans la pièce jointe doivent correspondre exactement à ce que vous entrez.
+<a name="Matchwords"> </a> Chaque mot que vous entrez et séparé par une virgule est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la condition de stratégie à appliquer à la messagerie ou à la pièce jointe). Par exemple, nous utilisons la condition, le **message contient l’un de ces mots**, avec les mots-clés « Banker » et « negociing Insider » séparé par une virgule (Banking, Insider Insider). La stratégie s’applique aux messages qui incluent le mot « Banker » ou l’expression « negociation Insiders ». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots contenus dans le message ou dans la pièce jointe doivent correspondre exactement à ce que vous entrez.
 
 Pour analyser les messages électroniques et les pièces jointes des mêmes mots clés, créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) avec un dictionnaire de [Mots clés personnalisé](create-a-keyword-dictionary.md) pour les termes que vous souhaitez surveiller. Cette configuration de stratégie identifie les mots clés définis qui apparaissent dans le message électronique **ou** dans la pièce jointe du courrier électronique. L’utilisation des paramètres de stratégie conditionnelle standard (le*message contient l’un de ces mots* et la *pièce jointe contient l’un de ces mots*) pour identifier les termes dans les messages et dans les pièces jointes exige que les termes soient **présents dans le** message et la pièce jointe.
   
@@ -206,7 +205,7 @@ Il est facile de surveiller les résultats de vos stratégies de surveillance et
 
 ### <a name="supervision-policy-dashboard"></a>Tableau de bord de stratégie de supervision
 
-Utilisez le tableau de bord de stratégie de supervision pour gérer les résultats de stratégie de surveillance et résoudre les éléments non traités. Ce tableau de bord permet aux relecteurs d’afficher les éléments devant être vérifiés, d’agir sur un élément et de passer en revue les résultats des éléments précédemment examinés et résolus pour chaque stratégie de surveillance. Vous pouvez accéder au tableau de bord de stratégie de supervision dans le centre de conformité à la **surveillance** > *de votre stratégie* > **** personnalisée.
+Utilisez le tableau de bord de stratégie de supervision pour gérer les résultats de stratégie de surveillance et résoudre les éléments non traités. Ce tableau de bord permet aux relecteurs d’afficher les éléments devant être vérifiés, d’agir sur un élément et de passer en revue les résultats des éléments précédemment examinés et résolus pour chaque stratégie de surveillance. Vous pouvez accéder au tableau de bord de stratégie de supervision dans le centre de conformité à la **surveillance** > *de votre stratégie* > **Open**personnalisée.
 
 #### <a name="dashboard-home"></a>Accueil du tableau de bord
 

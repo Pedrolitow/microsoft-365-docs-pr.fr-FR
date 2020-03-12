@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 'Résumé : description du chiffrement pour Skype, OneDrive, SharePoint et Exchange Online.'
-ms.openlocfilehash: cffaab87049f466794706ad6537e663e43d5de91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601841"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604161"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Chiffrement Office 365 pour Skype entreprise, OneDrive entreprise, SharePoint Online et Exchange Online
 
@@ -76,7 +76,7 @@ Les éléments de liste sont des plus petits blocs de données client qui sont c
 
 Dans OneDrive Entreprise et SharePoint Online, il existe deux scénarios dans lesquels les données entrent et sortent des centres de données.
 
-- **Communication client avec le serveur** : la communication vers OneDrive entreprise sur Internet utilise des connexions SSL/TLS. Toutes les connexions SSL sont établies à l’aide de clés 2 048 bits.
+- **Communication client avec le serveur-la** communication vers SharePoint Online et OneDrive entreprise sur Internet utilise des connexions TLS.
 - **Déplacement de données entre centres de données** : la principale raison de déplacer des données entre centres de données est la réplication géo pour activer la récupération d’urgence. Par exemple, les deltas de stockage d'objets blob et les journaux de transaction SQL Server transitent par ce canal. Alors que ces données sont déjà transmises par le biais d'un réseau privé, elles sont encore mieux protégées à l'aide du meilleur chiffrement de sa catégorie.
 
 ## <a name="exchange-online"></a>Exchange Online

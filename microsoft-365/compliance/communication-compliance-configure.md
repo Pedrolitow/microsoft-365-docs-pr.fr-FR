@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e3f16339d25c8cc592e937e30a446ed7e7cd333
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 69b3bbbbca98c3ef9e16f1cca4d67122ae14af3f
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42542538"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604201"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -34,7 +34,7 @@ Utilisez des stratégies de conformité des communications pour capturer les com
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Avant de commencer la mise en route de la conformité de la communication, vous devez confirmer votre abonnement Microsoft 365. Les utilisateurs inclus dans les stratégies de conformité des communications doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Microsoft 365 E5.
+Avant de commencer la mise en route de la conformité de la communication, vous devez confirmer votre abonnement Microsoft 365. Les utilisateurs inclus dans les stratégies de conformité des communications doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5 ou être inclus dans un Microsoft 365 de l’abonnement E5.
 
 Si vous ne disposez pas d’un plan Microsoft 365 entreprise E5 existant et que vous souhaitez essayer de gérer les risques internes, vous pouvez [Ajouter microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement Office 365 existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 entreprise E5.
   
@@ -159,6 +159,6 @@ Procédez comme suit pour tester votre stratégie de conformité de communicatio
     > [!NOTE]
     > Les communications de tous les canaux sources peuvent prendre jusqu’à 24 heures pour être entièrement traitées dans une stratégie.
 
-3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité de communication. Accédez à **** > **alertes** de conformité des communications pour afficher les alertes correspondant à vos stratégies.
+3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité de communication. Accédez à **Communication compliance** > **alertes** de conformité des communications pour afficher les alertes correspondant à vos stratégies.
 
 4. Corrigez l’alerte à l’aide des contrôles de correction et assurez-vous que l’alerte est correctement résolue.

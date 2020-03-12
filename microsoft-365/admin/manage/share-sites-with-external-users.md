@@ -21,20 +21,20 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Découvrez comment partager des sites et des fichiers avec des personnes extérieures à l’organisation. '
-ms.openlocfilehash: cb6faf14806f950f4b9a355e9f0fcdb660ec1d82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 83b111153389bf75a92bcc32af9563bf7432bf8a
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252724"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603991"
 ---
 # <a name="share-sites-and-files-externally"></a>Partager des sites et des fichiers en externe
 
 Pour collaborer avec des personnes extérieures à votre organisation, vous pouvez partager des sites entiers ou des fichiers spécifiques de manière externe. Si vous voulez passer directement à la configuration du partage, sélectionnez le scénario que vous voulez activer :
 
 - [Collaborer avec des invités sur un document](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [Collaborer avec des invités sur un site](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [Collaborer avec des invités au sein d’une équipe](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [Collaborer avec des invités sur un site](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
+- [Collaborer avec des invités au sein d’une équipe](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
   
 ## <a name="deciding-how-to-share-your-content"></a>Décider du mode de partage de votre contenu
 
