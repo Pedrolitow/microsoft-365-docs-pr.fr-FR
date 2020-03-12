@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 3/05/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 3e9dd5c02b3502eab2d3abfe5d65b5baebe18cda
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 6707a61ae2fd9f7dddb7aa63927a53f1795b5127
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "42569168"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583121"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -36,7 +36,7 @@ Lorsque vous êtes prêt à protéger les données de votre organisation en util
 
 1. **Créez les étiquettes.** Créez et nommez vos étiquettes de confidentialité conformément à la taxonomie de classification de votre organisation pour différents niveaux de confidentialité de contenu. Utilisez des noms ou termes courants qui ont du sens pour vos utilisateurs. Si vous n’avez pas encore établi de taxonomie, songez à commencer par des noms d’étiquettes tels que Personnel, Publique, Général, Confidentiel et Très confidentiel. Vous pouvez ensuite employer des sous-étiquettes pour regrouper par catégorie des étiquettes similaires. Lorsque vous créez une étiquette, utilisez le texte d’info-bulle pour aider les utilisateurs à sélectionner les étiquettes appropriées.
     
-    Pour obtenir des instructions plus détaillées sur la définition d’une taxonomie de classification, téléchargez le livre blanc « classification des données et taxonomie de l’étiquette de confidentialité » à partir du [Portail d’approbation de services](https://aka.ms/DataClassificationWhitepaper).
+    Pour obtenir des instructions plus détaillées sur la définition d’une taxonomie de classification, téléchargez le Livre blanc « Classification des données et taxonomie de l’étiquette de confidentialité » à partir du [Portail d’approbation de services](https://aka.ms/DataClassificationWhitepaper).
 
 2. **Définissez l’incidence possible de chaque étiquette.** Configurez les paramètres de protection que vous voulez associer à chaque étiquette. Par exemple, vous pouvez souhaiter que le contenu ayant un niveau de confidentialité inférieur (tel qu’une étiquette « Général ») puisse comporter un simple en-tête ou pied de page, tandis que le contenu d’un niveau de confidentialité supérieur (tel qu’une étiquette « Confidentiel ») devrait contenir un filigrane, un chiffrement ou l'application de la protection de point de terminaison.
 
@@ -55,6 +55,9 @@ Par défaut, les administrateurs généraux de votre client ont accès à ces ce
 À défaut d'utiliser les rôles, vous pouvez créer un groupe de rôles, puis ajouter les rôles d'**Administrateur d'étiquettes de confidentialité** ou de **Configuration d'organisation** à ce groupe. Pour obtenir des instructions, reportez-vous à la rubrique [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Ces autorisations sont seulement nécessaires pour créer et configurer des étiquettes de confidentialité et leurs stratégies d’étiquette. Elles ne sont pas requises pour l'application d'étiquettes dans des applications ou des services.
+
+> [!NOTE]
+> Le**Lecteur d’étiquette de confidentialité** est un nouveau rôle qui est actuellement déployé vers les clients et pris en charge pour les applets de commande PowerShell pour l’étiquetage, et par la suite pour les centres d’étiquetage d’administrateurs.
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scénarios courants relatifs aux étiquettes de confidentialité
 

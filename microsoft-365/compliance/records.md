@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour implémenter une stratégie de gestion des enregistrements dans votre organisation Microsoft ou Office 365, utilisez des étiquettes de rétention qui déclarent du contenu sous la forme d’un enregistrement. Ensuite, publiez ou appliquez automatiquement l’étiquette de rétention d’enregistrement.
-ms.openlocfilehash: 87bed90f4c9bf27eb960a2018b6a641ff3e06993
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081664"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42586724"
 ---
 # <a name="overview-of-records"></a>Vue d’ensemble des enregistrements
 
@@ -70,7 +70,7 @@ Quelques rappels à propos des enregistrements :
 
 ## <a name="using-retention-labels-to-declare-records"></a>Utilisation d’étiquettes de rétention pour déclarer des enregistrements
 
-Lorsque vous créez une étiquette de rétention, vous pouvez l’utiliser pour classer le contenu en tant qu’enregistrement. Pour déclarer du contenu sous la forme d’un enregistrement, vous devez effectuer les opérations suivantes :
+Lorsque vous créez une étiquette de rétention, vous pouvez l’utiliser pour classer le contenu en tant qu’enregistrement. Pour déclarer un contenu en tant qu'enregistrement, suivez la procédure suivante :
 
 1. Créer une étiquette de rétention. Dans le centre de conformité Microsoft 365, accédez à **Gestion des enregistrements** \> **plan de gestion de fichiers**. Sur la page **Plan de gestion de fichiers**, cliquez sur **Créer une étiquette**.
 
@@ -115,7 +115,7 @@ Le contrôle de version d’enregistrement est disponible automatiquement pour t
 
 ### <a name="locking-and-unlocking-a-record"></a>Verrouillage et déverrouillage d'un enregistrement
 
-Lorsqu’une étiquette d’enregistrement est attribuée à un document, tous les utilisateurs du groupe Membres par défaut (niveau d’autorisation Collaboration) peuvent déverrouiller un enregistrement ou verrouiller un enregistrement déverrouillé.
+Lorsqu’une étiquette d’enregistrement est attribuée à un document, tous les utilisateurs ayant des autorisations de collaboration ou un niveau d'autorisation plus réduit peuvent déverrouiller un enregistrement ou verrouiller un enregistrement déverrouillé.
 <br/><br/>
 
 ![Le statut de l’enregistrement indique que le document enregistré est déverrouillé](../media/recordversioning9.png)

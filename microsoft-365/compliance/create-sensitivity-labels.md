@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: d2300a54583c0b2d12de86e3dbb5f3116daf6460
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: b3f998ec7f52403c4b3676fb08976aacdc1f7d0f
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543150"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583131"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -154,6 +154,23 @@ L'utilisation de cette applet de commande vous permet de spécifier des [paramè
 
 Vous pouvez également utiliser cette applet de commande pour ajouter et supprimer des étiquettes vers ou à partir d'une stratégie d’étiquette.
 
+## <a name="removing-and-deleting-labels"></a>Retrait et suppression d’étiquettes
+
+Dans un environnement de production, il est peu probable que vous deviez supprimer des étiquettes de confidentialité d’une stratégie d’étiquette ou supprimer des étiquettes de confidentialité. Il est possible que vous deviez effectuer l’une ou l’autre de ces actions pendant une phase de test initiale. Assurez-vous de comprendre ce qui se passe lorsque vous effectuez l’une ou l’autre de ces actions.
+
+La retrait d’une étiquette d’une stratégie d’étiquette est moins risquée que sa suppression, et vous pouvez toujours l’ajouter à une stratégie d’étiquette ultérieurement si nécessaire :
+
+- Lorsque vous retirez une étiquette d’une stratégie d’étiquette afin que l’étiquette ne soit plus publiée aux utilisateurs spécifiés à l’origine, la prochaine fois que la stratégie d’étiquette est actualisée, les utilisateurs ne verront plus cette étiquette pour les sélectionner dans leur application Office. En revanche, si l’étiquette a été appliquée aux documents ou aux courriers électroniques, elle n’est pas retirée de ce contenu. Tout chiffrement appliqué par l’étiquette est conservé et le modèle de protection sous-jacent reste publié. 
+
+- Pour les étiquettes retirées mais qui ont été précédemment appliquées au contenu, les utilisateurs qui utilisent l’étiquetage prédéfini pour Word, Excel et PowerPoint affichent tout de même le nom d’étiquette appliqué dans la barre d’État. De même, les étiquettes qui ont été retirées et qui ont été appliquées aux sites SharePoint affichent encore le nom de l’étiquette dans la colonne **Sensibilité**.
+
+Par comparaison, lorsque vous supprimez une étiquette :
+
+- Si l’étiquette a appliqué le chiffrement, le modèle de protection sous-jacent est archivé de sorte que le contenu précédemment protégé puisse rester ouvert. En raison de ce modèle de protection archivé, vous ne pouvez pas créer de nouvelle étiquette portant le même nom. Bien qu’il soit possible de supprimer un modèle de protection à l’aide de [PowerShell](https://docs.microsoft.com/powershell/module/aipservice/remove-aipservicetemplate), ne procédez pas de la sorte, sauf si vous êtes sûr que vous n’avez pas besoin d’ouvrir le contenu chiffré avec le modèle archivé.
+
+- Pour les applications de bureau : les informations d’étiquette sont conservées dans les métadonnées, mais étant donné qu’un ID d’étiquette vers un mappage de nom n’est plus possible, les utilisateurs ne voient pas le nom d’étiquette appliqué affiché (par exemple, dans la barre d’État) de sorte que le contenu ne soit pas étiqueté. Si l’étiquette a appliqué le chiffrement, le chiffrement reste et une fois le contenu ouvert, utilise toujours le nom et la description du modèle de protection désormais archivé.
+
+- Pour Office sur le Web : les utilisateurs ne voient pas le nom de l’étiquette sur la barre d’État ni dans la colonne **Sensibilité**. Les informations d’étiquette dans les métadonnées restent uniquement si l’étiquette n’applique pas le chiffrement. Si l’étiquette a appliqué le chiffrement et que vous avez activé des [étiquettes de confidentialité pour SharePoint et Onedrive](sensitivity-labels-sharepoint-onedrive-files.md), les informations d’étiquette dans les métadonnées sont supprimées et le chiffrement est supprimé. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
