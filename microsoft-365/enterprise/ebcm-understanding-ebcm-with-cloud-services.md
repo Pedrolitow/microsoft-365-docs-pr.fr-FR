@@ -15,16 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez en quoi la planification et l’implémentation de la continuité d’activité sont différentes lorsque les services Cloud font partie de votre offre informatique.
-ms.openlocfilehash: ced840852aeef9949d005e431125ad2d659cba33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2236304647275f5e2b7ddde3af1804ba749254b0
+ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597001"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42588717"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Gestion de la continuité d’activité d’entreprise (EBCM) avec les services Cloud
 
-Dans le cadre de la transformation numérique de votre organisation, vous devez réexaminer et mettre à jour vos plans de récupération d’urgence et de continuité de votre activité afin de tenir compte du processus métier qui dépend des services Cloud Microsoft 365. Les services Cloud Microsoft 365, tels qu’Exchange Online, SharePoint Online et OneDrive Entreprise sont conçus et exploités pour être extrêmement résilients. Même avec cette résilience, des incidents de service peuvent survenir. Lorsque c’est le cas, votre organisation doit être prête et avoir une stratégie de continuité d’activité bien définie.
+Dans le cadre de la transformation numérique de votre organisation, vous devez réexaminer et mettre à jour vos plans de récupération d’urgence et de continuité de votre activité afin de tenir compte du processus métier qui dépend des services Cloud Microsoft 365. Les services Cloud Microsoft 365, tels qu’Exchange Online, SharePoint Online et OneDrive Entreprise sont conçus et exploités pour être extrêmement résilients.
+
+> [!NOTE]
+> Pour en savoir plus sur le plan EBCM de Microsoft, consultez le [livre blanc du programme Enterprise Business Continuity Management](https://go.microsoft.com/fwlink/?linkid=2121521). La connexion est nécessaire.
+
+Même avec cette résilience, des incidents de service peuvent survenir. Lorsque c’est le cas, votre organisation doit être prête et avoir une stratégie de continuité d’activité bien définie.
 
 Si vous n'avez pas encore mis à jour vos plans, cette série de rubriques vous aide à planifier votre stratégie pour que vos services puissent basculer vers un état connu en cas d’incident. Ces rubriques mettent en évidence les points essentiels pour améliorer la disponibilité de votre continuité.
 
