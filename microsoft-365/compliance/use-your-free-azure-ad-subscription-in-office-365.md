@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
-description: Découvrez comment accéder à Azure Active Directory, compris dans l’abonnement payant à Office 365 de votre organisation.
-ms.openlocfilehash: b8487b245001ffc73b975ed8f756b83e7093b1e7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrir comment accéder à Azure Active Directory, compris dans l’abonnement payant à Office 365 de votre organisation.
+ms.openlocfilehash: fe3829d349e5721ebdcf0688c1f5b2bd3c9f7f45
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069215"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604091"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Enregistrer votre abonnement gratuit Azure Active Directory dans Office 365
 
@@ -29,7 +29,7 @@ Si votre organisation a un abonnement payant à Office 365, Microsoft Dynamics
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Ouvrez une session de navigation privée pour accéder au Portail Azure (voir l’étape 1 ci-dessous). Ainsi, les informations d’identification utilisées pour vous connecter ne sont pas transmises à Azure. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou une session de navigation privée dans Mozilla FireFox, appuyez sur CTRL+MAJ+P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée mode navigation privée), appuyez sur CTRL+MAJ+N.
+Ouvrez une session de navigation privée pour accéder au Portail Azure (voir l’étape 1 ci-dessous). Ainsi, les informations d’identification utilisées pour vous connecter ne sont pas transmises à Azure. Pour ouvrir une session de navigation InPrivate dans Microsoft Edge, Internet Explorer ou Mozilla FireFox, appuyez sur CTRL+MAJ+P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée mode navigation privée), appuyez sur CTRL+MAJ+N.
 
 ## <a name="access-azure-active-directory"></a>Accès à Azure Active Directory
 
