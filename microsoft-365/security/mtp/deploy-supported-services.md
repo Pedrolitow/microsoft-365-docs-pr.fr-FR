@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 1c06562cc0ff8cdc43efb3a8f62924c435883408
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569042"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610561"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 
@@ -71,7 +71,7 @@ Le déploiement de chaque service nécessite généralement un approvisionnement
 
 | Service | Instructions de mise en service | Configuration initiale |
 | ------ | ------ | ------ |
-| Microsoft Defender - PACM | [Valider la mise en service des licences et terminer la configuration de Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/licensing) | *Voir les instructions de mise en service* |
+| Microsoft Defender - PACM | [Guide de déploiement de Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *Voir les instructions de mise en service* |
 | Office 365 – Protection avancée contre les menaces | *Aucun, configuré avec Office 365* | [Configurez des stratégies ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [QuickStart : créer votre instance Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *Voir les instructions de mise en service* |
 | Microsoft Cloud App Security | *Aucune* | [QuickStart : prise en main de la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |

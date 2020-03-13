@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Résumé : Découvrez comment déployer un nouveau site d’équipe SharePoint Online isolé en suivant ces instructions détaillées.'
-ms.openlocfilehash: 39cf33ce3314e2eb0cd313ff0382f50d7cb8487a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 07867b4646926468f808f8f34086cf9267d7ab7b
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088792"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612614"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Déploiement d’un site d’équipe SharePoint Online isolé
 
@@ -72,13 +72,13 @@ Vous devez créer les groupes d’accès suivants dans Azure AD :
     
 4. Sur le **nouveau** panneau de groupe :
     
-  - Sélectionnez **Sécurité** dans **Type de groupe**.
-    
-  - Tapez le nom du groupe dans **nom**.
-    
-  - Tapez une description du groupe dans **Description du groupe**.
-    
-  - Sélectionnez **Affecté** dans le champ **Type d’appartenance**.
+    - Sélectionnez **Sécurité** dans **Type de groupe**.
+
+    - Tapez le nom du groupe dans **nom**.
+
+    - Tapez une description du groupe dans **Description du groupe**.
+
+    - Sélectionnez **Affecté** dans le champ **Type d’appartenance**.
     
 5. Cliquez sur **Créer** et fermez le panneau **Groupe**.
     
@@ -155,59 +155,63 @@ Voici la configuration obtenue avec les trois groupes d’accès au site renseig
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Phase 2 : création et configuration du site d’équipe isolé
 
-Au cours de cette phase, vous allez créer le site SharePoint Online isolé et configurer les niveaux d’autorisation SharePoint Online par défaut pour utiliser vos nouveaux groupes d’accès Azure AD.
+Au cours de cette phase, vous allez créer le site SharePoint Online isolé et configurer les niveaux d’autorisation SharePoint Online par défaut pour utiliser vos nouveaux groupes d’accès Azure AD. Par défaut, les nouveaux sites d’équipe incluent un groupe Office 365 et d’autres ressources associées, mais dans ce cas, nous allons créer un site d’équipe sans un groupe Office 365. Cela permet de gérer les autorisations entièrement via SharePoint.
   
 Commencez par créer le site d’équipe SharePoint Online en suivant ces étapes.
   
-1. Connectez-vous au centre d’administration avec un compte qui servira également à gérer le site d’équipe SharePoint Online (par un administrateur SharePoint Online). Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous au centre d’administration Microsoft 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+
+2. Dans le centre d’administration 365 de Microsoft, sous **centres d’administration**, cliquez sur **SharePoint**.
+
+3. Dans le centre d’administration SharePoint, développez **sites** , puis cliquez sur **sites actifs**.
+
+4. Cliquez sur **créer**, puis choisissez **autres options**.
+
+5. Dans la liste **choisir un modèle** , choisissez **site d’équipe**.
+   
+6. Dans **nom du site**, tapez un nom pour le site d’équipe. 
     
-2. Dans la liste des vignettes, cliquez sur **SharePoint**.
-    
-3. Sous le nouvel onglet **SharePoint** de votre navigateur, cliquez sur **+ Créer un site**.
-    
-4. Dans la page **Créer un site**, cliquez sur **Site d’équipe**.
-    
-5. Dans **nom du site**, tapez un nom pour le site d’équipe. 
-    
-6. Dans **Description du site d’équipe,** tapez une description facultative de l’objectif du site.
-    
-7. Dans **Paramètres de confidentialité**, sélectionnez **Privé - Seuls les membres peuvent accéder à ce site**, puis cliquez sur **Suivant**.
-    
-8. Dans le volet **Qui voulez-vous ajouter ?**, cliquez sur **Terminer**.
+7. Dans **administrateur principal**, tapez le compte avec lequel vous vous connectez.
+ 
+8. Cliquez sur**Terminer**.
     
 Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les autorisations.
   
 1. Dans la barre d’outils, cliquez sur l’icône Paramètres, puis cliquez sur **Paramètres du site**.
+
+2. Sous **partage du site**, cliquez sur **modifier la façon dont les membres peuvent partager**.
+
+3. Choisissez les **seuls propriétaires de site peuvent partager des fichiers, des dossiers et le site**.
+
+4. Définissez la valeur **autoriser les demandes d’accès** sur **désactivé**.
+
+5. Cliquez sur **Enregistrer**.
     
-2. Dans le volet **Autorisations du site**, cliquez sur **Paramètres d’autorisations avancés**.
+6. Dans le volet **autorisations** , cliquez sur **paramètres d’autorisations avancés**.
     
-3. Sous le nouvel onglet **Autorisations** dans votre navigateur, cliquez sur **Paramètres des demandes d’accès**.
+7. Dans l’onglet **autorisations** de votre navigateur, cliquez sur ** \<nom du site> membres** de la liste.
     
-4. Dans la boîte de dialogue **Paramètres de demande d’accès**, désélectionnez les cases **Autoriser les membres à partager le site et les fichiers et dossiers individuels** et **Autoriser les demandes d’accès** (les trois cases doivent être décochées), puis cliquez sur **OK**.
+8. Dans **Personnes et groupes**, cliquez sur **Nouveau**.
     
-5. Dans l’onglet **autorisations** de votre navigateur, cliquez sur ** \<nom du site> membres** de la liste.
+9. Dans la boîte de dialogue **Partager**, saisissez le nom du groupe d’accès Membres du site, sélectionnez-le, puis cliquez sur **Partager**.
     
-6. Dans **Personnes et groupes**, cliquez sur **Nouveau**.
+10. Cliquez sur le bouton de retour de votre navigateur.
     
-7. Dans la boîte de dialogue **Partager**, saisissez le nom du groupe d’accès Membres du site, sélectionnez-le, puis cliquez sur **Partager**.
+11. Cliquez sur ** \<nom du site> propriétaires** dans la liste.
     
-8. Cliquez sur le bouton de retour de votre navigateur.
+12. Dans **Personnes et groupes**, cliquez sur **Nouveau**.
     
-9. Cliquez sur ** \<nom du site> propriétaires** dans la liste.
+13. Dans la boîte de dialogue **Partager**, saisissez le nom du groupe d’accès Administrateurs du site, sélectionnez-le, puis cliquez sur **Partager**.
     
-10. Dans **Personnes et groupes**, cliquez sur **Nouveau**.
+14. Cliquez sur le bouton de retour de votre navigateur.
     
-11. Dans la boîte de dialogue **Partager**, saisissez le nom du groupe d’accès Administrateurs du site, sélectionnez-le, puis cliquez sur **Partager**.
+15. Cliquez sur ** \<nom du site> visiteurs** de la liste.
     
-12. Cliquez sur le bouton de retour de votre navigateur.
+16. Dans **Utilisateurs et groupes**, cliquez sur **Nouveau**.
     
-13. Cliquez sur ** \<nom du site> visiteurs** de la liste.
+17. Dans la boîte de dialogue **Partager**, saisissez le nom du groupe d’accès Visiteurs du site, sélectionnez-le, puis cliquez sur **Partager**.
     
-14. Dans **Utilisateurs et groupes**, cliquez sur **Nouveau**.
-    
-15. Dans la boîte de dialogue **Partager**, saisissez le nom du groupe d’accès Visiteurs du site, sélectionnez-le, puis cliquez sur **Partager**.
-    
-16. Fermez l’onglet **Autorisations** de votre navigateur.
+18. Fermez l’onglet **Autorisations** de votre navigateur.
     
 Voici les résultats que vous devez escompter :
   
@@ -233,7 +237,7 @@ Si vous avez besoin de modifier les membres du groupe d’accès du site ou de c
 
 [Sites d’équipe SharePoint Online isolés](isolated-sharepoint-online-team-sites.md)
   
-[Conception d’un site d’équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md)
+[Conception d'un site d'équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md)
   
 [Gestion d’un site d’équipe SharePoint Online isolé](manage-an-isolated-sharepoint-online-team-site.md)
   

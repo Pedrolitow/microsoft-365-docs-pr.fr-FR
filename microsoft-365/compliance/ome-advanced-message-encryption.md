@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Le chiffrement de messages avancé dans Office 365 aide les organisations à respecter leurs obligations de conformité en permettant aux administrateurs de faire encore plus avec des messages protégés.
-ms.openlocfilehash: 580803d7b15608ebb0852896cdbd9a43ee5a2ff4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 99dacc928c8549157ff0d9d1d9a7c07fc33c2600
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601801"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610601"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Chiffrement de messages avancé Office 365
 
@@ -45,4 +45,4 @@ Avec le chiffrement de messages avancé, vous n’êtes pas limité à un seul m
 
 [Révoquer le courrier électronique chiffré par le chiffrement de messages avancé Office 365](revoke-ome-encrypted-mail.md). Contrôlez les messages électroniques sensibles partagés hors de l’organisation et améliorez la protection en révoquant l’accès via un portail Web sécurisé à des e-mails chiffrés.  
 
-Avec le chiffrement de messages avancé Office 365, à chaque fois que vous appliquez un modèle de personnalisation personnalisé, Office 365 applique un wrapper aux courriers électroniques correspondant à la règle de flux de messagerie à laquelle vous appliquez le modèle. Vous pouvez uniquement révoquer des messages et appliquer des dates d’expiration aux messages que les utilisateurs reçoivent via le portail. En d’autres termes, le courrier électronique auquel un modèle de personnalisation personnalisé est appliqué. Pour plus d’informations et un exemple, reportez-vous à l’aide pour [vérifier que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés, à savoir le chiffrement de messages avancé Office 365 uniquement](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only).
+Avec le chiffrement de messages avancé Office 365, à chaque fois que vous appliquez un modèle de personnalisation personnalisé, Office 365 applique un wrapper aux courriers électroniques correspondant à la règle de flux de messagerie à laquelle vous appliquez le modèle. Vous pouvez uniquement révoquer des messages et appliquer des dates d’expiration aux messages que les utilisateurs reçoivent via le portail. En d’autres termes, le courrier électronique auquel un modèle de personnalisation personnalisé est appliqué. Pour plus d’informations et un exemple, reportez-vous à l’aide pour [vérifier que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail).

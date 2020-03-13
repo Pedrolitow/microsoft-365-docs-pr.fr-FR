@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Découvrez comment utiliser la gestion des droits relatifs à l’information (IRM) de SharePoint Online via Microsoft Azure Active Directory Rights Management Services (RMS) pour protéger les listes et les bibliothèques de documents SharePoint.
-ms.openlocfilehash: f5aae2ba78997a8277989dcc3b5e68e00f0bfcb4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3705c08b64ffbf719dbce91396c86976db14fea0
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069605"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610621"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -68,7 +68,10 @@ SharePoint Online prend en charge le chiffrement des types de fichiers suivants�
 - Formats Office Open XML pour les programmes Microsoft Office suivants : Word, Excel et PowerPoint
     
 - Format XPS (XML Paper Specification)
-    
+ 
+> [!NOTE]
+> La protection IRM ne peut pas être appliquée aux documents protégés (comme les fichiers PDF signés numériquement) car SharePoint doit ouvrir le document au chargement. 
+
 ## <a name="next-steps"></a>Étapes suivantes
 <a name="__toc220831191"> </a>
 
@@ -77,4 +80,3 @@ Une fois que vous avez activé la gestion des droits relatifs à l’information
 Le nouveau client de synchronisation OneDrive pour Windows prend désormais en charge la synchronisation des bibliothèques de documents SharePoint et des emplacements OneDrive protégés par IRM (tant que le paramètre IRM de la bibliothèque n’est pas défini pour faire expirer les droits d’accès au document). Pour plus d’informations ou pour commencer à déployer le nouveau client de synchronisation, voir [Deploy The New OneDrive Sync client for Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
   
 [Haut de la page](#introduction)  
-

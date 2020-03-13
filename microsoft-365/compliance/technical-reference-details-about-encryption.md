@@ -15,13 +15,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
-description: Affichez les détails techniques sur ENCYPTION dans Office 365.
-ms.openlocfilehash: a1eaa10f35a70688bc26967b7344cd90b2ad8343
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Afficher les détails techniques sur le chiffrement dans Office 365.
+ms.openlocfilehash: afd02ba6480e692bf16bf6dd94f192a5889590ee
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601391"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610581"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Détails techniques de référence sur le chiffrement dans Office 365
 
@@ -53,6 +53,8 @@ Les protocoles TLS (Transport Layer Security) et SSL (antérieur au protocole 
 - TLS version 1.0 (TLS 1.0)
     
  La prise en charge de TLS 1,0 et TLS 1,1 sera déconseillée le 31 octobre 2018. Pour plus d’informations, reportez-vous à [la section dépréciation de la prise en charge de TLS 1,0 et 1,1](technical-reference-details-about-encryption.md#TLS11and12deprecation) . 
+ 
+ La version TLS 1,3 (TLS 1,3) n’est pas prise en charge actuellement.
   
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>Dépréciation de la prise en charge de TLS 1,0 et 1,1 et ce que cela signifie pour vous
 <a name="TLS11and12deprecation"> </a>
@@ -65,7 +67,10 @@ TLS 1,0 et TLS 1,1 seront officiellement déconseillés aux dates indiquées ci-
 - Le 1er juin 2020 pour les clients dans les environnements mondiaux et GCC.
 - 15 janvier 2020 pour les clients dans les environnements de GCC High et DoD souverains. 
 
+Assurez-vous que toutes les combinaisons client-serveur et navigateur-serveur utilisent TLS 1,2 et des suites de chiffrement modernes pour maintenir une connexion sécurisée aux services 365 Office. Vous devrez peut-être mettre à jour certaines combinaisons client-serveur et navigateur-serveur. Pour plus d’informations sur la façon dont cela vous affecte, consultez [la rubrique préparation de l’utilisation obligatoire de TLS 1,2 dans Office 365](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365).
+
 Assurez-vous que toutes les combinaisons client-serveur et navigateur-serveur utilisent TLS 1,2 (ou une version ultérieure) pour maintenir la connexion aux services 365 Office. Vous devrez peut-être mettre à jour certaines combinaisons client-serveur et navigateur-serveur. Pour plus d’informations sur la façon dont cela vous affecte, consultez [la rubrique préparation de l’utilisation obligatoire de TLS 1,2 dans Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+
   
 ## <a name="deprecating-support-for-3des"></a>Dépréciation de la prise en charge 3DES
 <a name="TLS11and12deprecation"> </a>
@@ -83,7 +88,7 @@ Depuis juin 2016, Office 365 n’accepte plus de certificat SHA-1 pour les conne
 Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisés par le protocole TLS pour établir des connexions sécurisées. Les suites de chiffrement prises en charge par Office 365 sont répertoriées dans le tableau suivant, par ordre de force, avec la suite de chiffrement la plus forte répertoriée en premier. Quand Office 365 reçoit une demande de connexion, il tente tout d’abord de se connecter à l’aide de la première suite de chiffrement, puis en cas d’échec, il utilise la deuxième suite de chiffrement dans la liste, et ainsi de suite. Quand Office 365 envoie une demande de connexion à un autre serveur ou à un client, il incombe au client ou au serveur de réception de choisir la suite de chiffrement ou de déterminer s’il convient d’utiliser le protocole TLS.
 
 > [!IMPORTANT]
-> N’oubliez pas que les versions de TLS sont déconseillées et que les versions déconseillées ne *doivent pas être utilisées* lorsque des versions plus récentes sont disponibles. En d’autres termes, où qu’ils soient répertoriés, les protocoles TLS 1,0, 1,1 et 1,2 sont pris en charge, choisissez la version la *plus récente* (TLS 1,2).
+> N’oubliez pas que les versions de TLS sont déconseillées et que les versions déconseillées ne *doivent pas être utilisées* lorsque des versions plus récentes sont disponibles. En d’autres termes, où qu’ils soient répertoriés, les protocoles TLS 1,0, 1,1 et 1,2 sont pris en charge, choisissez la version la *plus récente* prise en charge (TLS 1,2). TLS n’est pas pris en charge actuellement. Si vos services hérités ne requièrent pas TLS 1,0 ou 1,1, vous devez envisager de les désactiver. 
   
 |**Protocoles**|**Nom de suite de chiffrement**|**Algorithme/force d’échange de clés**|**Prise en charge du secret de transfert parfait**|**Algorithme/force d’authentification**|**Chiffrement/force**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -94,12 +99,12 @@ Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisé
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Oui  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |Oui  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/128  <br/> |
    
 ## <a name="related-topics"></a>Voir aussi
-[Suites de chiffrement TLS dans Windows 10 v1607](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
+[Suites de chiffrement TLS dans Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Chiffrement dans Office 365](encryption.md)
   
@@ -109,4 +114,5 @@ Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisé
   
 [Améliorations de chiffrement TLS/SSL (centre informatique Windows)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
+ [Préparation du protocole TLS 1,2 dans Office 365 et Office 365 GCC](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
 

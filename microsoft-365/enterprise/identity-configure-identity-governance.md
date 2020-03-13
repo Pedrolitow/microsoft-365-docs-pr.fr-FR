@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Comprendre et configurer la gouvernance des identités pour votre client Azure AD.
 ms.openlocfilehash: 5b7b1c91735611046133a0247ae028ed090106fd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067351"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543993"
 ---
 # <a name="step-6-configure-identity-governance"></a>Étape 6 : Configurer la gouvernance des identités
 

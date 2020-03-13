@@ -16,11 +16,11 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601021"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544023"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Tâches préalables à l’implémentation de stratégies d’accès aux identités et aux appareils
 
@@ -72,7 +72,7 @@ Les clients de messagerie suivants prennent en charge l’authentification moder
 |**Windows**|Outlook|2016, 2013 [activer l’authentification moderne](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), les [mises à jour requises](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook pour iOS|[La plus récente](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook pour Android|[La plus récente](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
-|**OS**|Outlook|2016|
+|**macOS**|Outlook|2016|
 |**Linux**|Non pris en charge||
 |||
 
@@ -88,7 +88,7 @@ Les clients suivants sont recommandés lorsqu’une stratégie de documents séc
 |Windows Phone 10|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
 |Android|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
 |iOS|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
-|OS|Préversion publique|Préversion publique|N/A|N/A|Non prise en charge|
+|macOS|Préversion publique|Préversion publique|N/A|N/A|Non prise en charge|
 |Linux|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
 
 <sup>*</sup>En savoir plus sur l’utilisation de l’accès conditionnel avec le [client de synchronisation OneDrive](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
