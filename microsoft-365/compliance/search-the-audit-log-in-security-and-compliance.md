@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
 ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42562019"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634752"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 

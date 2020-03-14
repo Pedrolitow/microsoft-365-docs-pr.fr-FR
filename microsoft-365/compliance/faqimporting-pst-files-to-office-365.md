@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Forum aux questions pour les administrateurs sur l’utilisation du service d’importation Office 365 pour importer les fichiers PST de votre organisation vers des boîtes aux lettres Office 365. '
 ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170484"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634432"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>FAQ sur l’importation de fichiers PST dans Office 365
 
@@ -53,7 +53,7 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
 Le chargement réseau est actuellement disponible dans les régions suivantes : États-Unis, Canada, Brésil, Royaume-Uni, France, Europe, Inde, Asie de l’est, sud-est, Japon, République de Corée et Australie. Network upload will be available in more regions soon.
 
 > [!NOTE]
-> Pour l’instant, le chargement réseau des fichiers PST n’est pas disponible en Allemagne et en Suisse. Ce Forum aux questions sera mis à jour lorsque le téléchargement réseau sera disponible dans ces pays.
+> À l'heure actuelle, le chargement réseau des fichiers PST n’est pas disponible en Allemagne et en Suisse. Ce Forum aux questions sera mis à jour lorsque le téléchargement réseau sera disponible dans ces pays.
   
  **À combien revient l’importation de fichiers PST via le chargement du réseau ?**
   
@@ -127,7 +127,7 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
 L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. Ce service sera prochainement disponible dans d’autres régions.
 
 > [!NOTE]
-> Pour l’instant, l’expédition vers l’importation de fichiers PST n’est pas disponible en Allemagne et en Suisse. Ce Forum aux questions sera mis à jour lors de la mise à disposition des lecteurs dans ces pays.
+> À l'heure actuelle, l'envoi de lecteurs pour l'importation de fichiers PST n’est pas disponible en Allemagne et en Suisse. Ce Forum aux questions sera mis à jour lorsque l'envoi de lecteurs réseau sera disponible pour ces pays.
   
  **Quels sont les contrats de licences commerciaux qui prennent en charge l’expédition de disque ?**
   

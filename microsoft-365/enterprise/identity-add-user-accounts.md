@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Vous pouvez ajouter des comptes d’utilisateurs et des groupes directement dans le Cloud ou par synchronisation avec votre répertoire local.
 ms.openlocfilehash: 324d4662f868a4a92693b43c6bc0f75c11f20519
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544003"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633102"
 ---
 # <a name="step-4-add-your-user-accounts"></a>Étape 4 : Ajouter vos comptes d’utilisateurs
 

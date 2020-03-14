@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Découvrez comment modifier le thème par défaut d’Office 365 et le personnaliser pour qu’il corresponde au logo ou à la couleur de votre entreprise. '
-ms.openlocfilehash: 9d83abb919cfb9f6ea3c804d9c5d934614f35285
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: fc50519190abe1b827bd3a5f93a6a82f8c22f0b6
+ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360635"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42640026"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Personnaliser le thème Office 365 pour votre organisation
 
@@ -40,31 +40,35 @@ Découvrez comment personnaliser votre thème dans le centre d’administration 
 
 3. Dans le panneau **thèmes de douane** , modifiez les éléments de thème souhaités pour votre organisation :
     
-  - **Utiliser une image de logo personnalisée**: indiquez si vous souhaitez utiliser une image à partir d’une URL ou pour télécharger une image. Si vous utilisez une URL, vérifiez que l’URL utilise le protocole HTTPs et qu’il s’agit de 200 x 30 pixels de n’importe quel format de n’importe quelle taille. Vous pouvez télécharger un logo de moins de 10 Ko, 200 x 30 pixels au format JPG, PNG, GIF ou SVG.
+    - **Utiliser une image de logo personnalisée**: indiquez si vous souhaitez utiliser une image à partir d’une URL ou pour télécharger une image. Si vous utilisez une URL, vérifiez que l’URL utilise le protocole HTTPs et qu’il s’agit de 200 x 30 pixels de n’importe quel format de n’importe quelle taille. Vous pouvez télécharger un logo de moins de 10 Ko, 200 x 30 pixels au format JPG, PNG, GIF ou SVG.
 
-    > [!NOTE]
-    > Pour que le logo apparaisse dans l’application mobile SharePoint, utilisez uniquement des images SVG. Les images téléchargées dans n’importe quel autre format ne sont pas affichées dans l’application. Les logos ne sont pas cliquables dans l’application mobile SharePoint.
-    
-  - **Faire un clic sur le logo**: vous pouvez utiliser votre logo dans la barre de navigation en tant que lien vers toute ressource de la société. Vous pouvez entrer l’URL du logo ici, en commençant par http://ou https://. Cette étape est facultative.
-    
-  - **Sélectionnez image d’arrière-plan**: sélectionnez l’image et téléchargez votre propre fichier jpg, png ou gif avec une résolution de 1366 x 50 pixels, ne dépassant pas 15 Ko. l'image d'arrière-plan s'affiche dans la barre de navigation supérieure de chaque page.
-    
-    > [!NOTE]
-    > Il se peut que les images qui contiennent du texte ne s’affichent pas comme prévu. Les éléments intégrés qui apparaissent à gauche et à droite de la barre de navigation peuvent varier d’un service à l’autre et votre texte peut être dissimulé par ces éléments. En raison de la nature dynamique de la barre de navigation, nous ne sommes pas en mesure à l’heure actuelle de fournir des instructions de remplissage d’image qui offriraient une expérience cohérente. 
-    
-  - **Couleur**de la barre de navigation : sélectionnez une couleur à utiliser pour l’arrière-plan de la barre de navigation. Celle-ci apparaît en haut de chaque page.
-    
-  - **Texte et icônes** : Sélectionnez la couleur à utiliser pour le texte et les icônes de la barre de navigation supérieure.
-    
-  - **Couleur d’accentuation**: sélectionnez une couleur à utiliser pour le bouton de la barre de navigation, la couleur de pointage et les accents comme les boutons et le texte de certaines applications.
+      > [!NOTE]
+      > Pour que le logo apparaisse dans l’application mobile SharePoint, utilisez uniquement des images SVG. Les images téléchargées dans n’importe quel autre format ne sont pas affichées dans l’application. Les logos ne sont pas cliquables dans l’application mobile SharePoint.
 
-   - **Empêcher les utilisateurs de remplacer le thème**: inverser ce bouton pour empêcher les utilisateurs de choisir leur propre thème à partir de notre sélection de thème. Cela n’empêche pas les utilisateurs de définir un thème à contraste élevé.
-      
-  - **Afficher le nom d’utilisateur**: choisissez d’afficher ou non le nom complet d’un utilisateur au niveau du point d’entrée au responsable de compte dans le coin supérieur droit de la page lorsque l’utilisateur est connecté. Par défaut, les utilisateurs verront leur photo ou leurs initiales si une photo n’a pas été téléchargée.
+    - **Faire un clic sur le logo**: vous pouvez utiliser votre logo dans la barre de navigation en tant que lien vers toute ressource de la société. Vous pouvez entrer l’URL du logo ici, en commençant par http://ou https://. Cette étape est facultative.
+
+    - **Sélectionnez image d’arrière-plan**: sélectionnez l’image et téléchargez votre propre fichier jpg, png ou gif avec une résolution de 1366 x 50 pixels, ne dépassant pas 15 Ko. l'image d'arrière-plan s'affiche dans la barre de navigation supérieure de chaque page.
+
+      > [!NOTE]
+      > Il se peut que les images qui contiennent du texte ne s’affichent pas comme prévu. Les éléments intégrés qui apparaissent à gauche et à droite de la barre de navigation peuvent varier d’un service à l’autre et votre texte peut être dissimulé par ces éléments. En raison de la nature dynamique de la barre de navigation, nous ne sommes pas en mesure à l’heure actuelle de fournir des instructions de remplissage d’image qui offriraient une expérience cohérente. 
+
+    - **Couleur**de la barre de navigation : sélectionnez une couleur à utiliser pour l’arrière-plan de la barre de navigation. Celle-ci apparaît en haut de chaque page.
+
+    - **Texte et icônes** : Sélectionnez la couleur à utiliser pour le texte et les icônes de la barre de navigation supérieure.
+
+    - **Couleur d’accentuation**: sélectionnez une couleur à utiliser pour le bouton de la barre de navigation, la couleur de pointage et les accents comme les boutons et le texte de certaines applications.
+
+     - **Empêcher les utilisateurs de remplacer le thème**: inverser ce bouton pour empêcher les utilisateurs de choisir leur propre thème à partir de notre sélection de thème. Cela n’empêche pas les utilisateurs de définir un thème à contraste élevé.
+
+    - **Afficher le nom d’utilisateur**: choisissez d’afficher ou non le nom complet d’un utilisateur au niveau du point d’entrée au responsable de compte dans le coin supérieur droit de la page lorsque l’utilisateur est connecté. Par défaut, les utilisateurs verront leur photo ou leurs initiales si une photo n’a pas été téléchargée.
     
 4. Sélectionnez **Enregistrer les modifications**.
     
-Vous verrez immédiatement votre nouveau thème sur le centre d’administration et après un court délai, vous le verrez dans Office 365, y compris les pages Outlook et SharePoint. Vous pouvez supprimer votre icône ou vos couleurs personnalisées à tout moment. Retournez simplement sur la page du thème et sélectionnez **Supprimer les thèmes personnalisés**.
+Vous verrez immédiatement votre nouveau thème sur le centre d’administration et après un court délai, vous le verrez dans Office 365, y compris les pages dans Outlook, SharePoint et les applications mobiles SharePoint pour iOS et Android. L’image suivante met en surbrillance les éléments de thème que vous pouvez personnaliser pour les applications mobiles SharePoint.
+
+![Thème Office 365 par défaut et thème Office 365 personnalisé pour les applications mobiles SharePoint]()
+
+Vous pouvez supprimer votre icône ou vos couleurs personnalisées à tout moment. Retournez simplement sur la page du thème et sélectionnez **Supprimer les thèmes personnalisés**.
   
 ## <a name="best-practices"></a>Meilleures pratiques
 

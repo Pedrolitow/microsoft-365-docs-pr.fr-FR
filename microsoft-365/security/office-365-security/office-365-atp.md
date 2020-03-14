@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: 712fdf6935fa69bfb2079858d6384eee270776e6
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: aac4cb43386577851d74e424d6435d0c15762bab
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261031"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612604"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 – Protection avancée contre les menaces
 
@@ -98,7 +98,7 @@ Office 365 – Protection avancée contre les menaces Plan 2 inclut des [outil
 
 - **[Threat Explorer (ou détections en temps réel)](threat-explorer.md)** (également appelé Explorer) est un rapport en temps réel qui vous permet d’identifier et d’analyser les menaces récentes. Vous pouvez configurer Explorer pour afficher des données pour les périodes personnalisées.
 
-- **[Simulateur d’attaques](attack-simulator.md)** vous permet d’exécuter des scénarios d’attaques réalistes au sein de votre organisation afin d’identifier les vulnérabilités. Des simulations de types actuels d’attaques sont disponibles, notamment une [attaque par hameçonnage de la récupération d’informations d’identification](attack-simulator.md#credential-harvest-spear-phishing-attack), une [attaque par pulvérisation de mot de passe](attack-simulator.md#password-spray-attack), une [attaque de mot de passe par force brute](attack-simulator.md#brute-force-password-attack), et bien plus encore.
+- **[Simulateur d’attaques](attack-simulator.md)** vous permet d’exécuter des scénarios d’attaques réalistes au sein de votre organisation afin d’identifier les vulnérabilités. Des simulations des types d'attaques actuels sont disponibles, notamment des attaques de récupération des informations d'identification et de connexion par hameçonnage et des attaques par pulvérisation de mots de passe et par mot de passe par force brute.
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Gagner du temps avec l’examen et la réponse automatisé
 

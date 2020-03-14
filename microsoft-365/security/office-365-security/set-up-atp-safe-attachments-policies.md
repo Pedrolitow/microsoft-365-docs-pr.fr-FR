@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Définir des stratégies de pièces jointes approuvées pour protéger votre organisation contre les fichiers malveillants par courrier électronique.
-ms.openlocfilehash: ad90ffb4e3503021923470238626d6025e9820fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: c5001823979c19ec68cd15a10bf7c2d7e54cae1d
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957179"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637317"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
 
@@ -45,11 +45,13 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 
 - Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez être affecté à un rôle de gestion de l’organisation Exchange Online (l’administrateur général Office 365 est affecté à ce rôle par défaut) ou aux rôles d’administrateur de sécurité et de gestion de l’hygiène d’Exchange Online. Pour plus d’informations, consultez le tableau suivant :
 
-  |Role|WHERE/How Assigned|
-  |---------|---------|
+  |||
+  |---|---|
+  |**Rôle**|**WHERE/How Assigned**|
   |Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
   |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
   |Gestion de l’organisation Exchange Online, gestion de l’hygiène Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |
 
   Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
 
@@ -87,15 +89,17 @@ Envisagez de configurer plusieurs stratégies de pièces jointes approuvées pou
 
 Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous pouvez choisir parmi plusieurs options, notamment surveiller, bloquer, remplacer, remise dynamique, etc. Si vous vous posez des éventuelles précisions sur la signification de ces options, le tableau suivant résume chacun et ses effets.
 
+||||
+|---|---|---|
 |**Option**|**Effect**|**À utiliser lorsque vous souhaitez :**|
-|:-----|:-----|:-----|
-|**Désactivé**|N’analyse pas les pièces jointes pour les programmes malveillants  <br/> Ne retarde pas la remise des messages|Désactivation de l’analyse pour les expéditeurs internes, les scanneurs, les télécopies ou les hôtes actifs qui envoient uniquement des pièces jointes connues ou connues  <br/> Empêcher les retards inutiles dans le routage du courrier interne  <br/> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Elle vous permet d’activer l’analyse des pièces jointes sûres ATP pour un petit groupe d’expéditeurs internes.**|
+|**Désactivé**|N’analyse pas les pièces jointes pour les programmes malveillants  <br/> Ne retarde pas la remise des messages|Désactivation de l’analyse pour les scanneurs, les télécopies ou les hôtes actifs qui envoient uniquement des pièces jointes connues et appropriées  <br/> Éviter les retards inutiles dans le routage du courrier interne.  <br/> **Nous ne recommandons pas cette option pour la plupart des utilisateurs. Cette option ne doit être utilisée que pour désactiver l’analyse des pièces jointes approuvées ATP pour un petit groupe d’expéditeurs approuvés.**|
 |**Moniteur**|Remet les messages avec des pièces jointes, puis suit ce qui se produit avec des programmes malveillants détectés|Afficher l’emplacement où les programmes malveillants sont détectés dans votre organisation|
 |**Bloc**|Empêche la poursuite des messages contenant des pièces jointes malveillantes détectées  <br/> Envoie des messages avec une mise en quarantaine aux programmes malveillants détectés [dans Office 365](manage-quarantined-messages-and-files.md) où un administrateur ou un analyste de la sécurité peut consulter et publier (ou supprimer) ces messages.  <br/> Bloque automatiquement les messages et pièces jointes futurs|Protection de votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes|
 |**Replace**|Supprime les pièces jointes de programmes malveillants détectées  <br/> Avertir les destinataires que des pièces jointes ont été supprimées  <br/> Envoie des messages avec une mise en quarantaine aux programmes malveillants détectés [dans Office 365](manage-quarantined-messages-and-files.md) où un administrateur ou un analyste de la sécurité peut consulter et publier (ou supprimer) ces messages.|Augmenter la visibilité aux destinataires pour lesquels les pièces jointes ont été supprimées en raison d’un programme malveillant détecté|
 |**Remise dynamique**|Remet immédiatement les messages  <br/> Remplace les pièces jointes par un fichier d’espace réservé jusqu’à ce que l’analyse soit terminée, puis rattache les pièces jointes si aucun programme malveillant n’est détecté  <br/> Inclut les fonctionnalités d’aperçu des pièces jointes pour la plupart des fichiers PDF et Office lors de l’analyse  <br/> Envoie des messages avec des programmes malveillants détectés en quarantaine lorsqu’un administrateur ou un analyste de la sécurité peut consulter et libérer (ou supprimer) ces messages.  <br/> [En savoir plus sur la remise et l’aperçu dynamiques avec des pièces jointes fiables ATP](dynamic-delivery-and-previewing.md) <br/> |Éviter les retards de message tout en protégeant les destinataires des fichiers malveillants  <br/> Autoriser les destinataires à prévisualiser les pièces jointes en mode sans échec lors de l’analyse|
 |**Activer la redirection**|S’applique lorsque l’option surveiller, bloquer ou remplacer est sélectionnée  <br/> Envoie des pièces jointes à une adresse de messagerie spécifique que les administrateurs de sécurité ou les analystes peuvent examiner|Activer les administrateurs de la sécurité et les analystes pour rechercher des pièces jointes suspectes|
 |**Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit**|Applique l’action configurée pour les pièces jointes unasfe aux pièces jointes qui ne peuvent pas être analysées (en raison d’un délai d’expiration ou d’une erreur)|
+|
 
 ## <a name="next-steps"></a>Étapes suivantes
 

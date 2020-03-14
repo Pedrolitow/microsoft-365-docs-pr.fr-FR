@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
 ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42587322"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632942"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -175,7 +175,7 @@ Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables|Désactiv�
 |Réponse aux pièces jointes approuvées ATP si l’analyse contre les pièces jointes expire ou si une erreur se produit|Activé|Activé||
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - Vous recherchez les meilleures pratiques avec des **règles de transport Exchange mail Flow/Exchange**? Pour plus d’informations, consultez [cet article](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) .
 

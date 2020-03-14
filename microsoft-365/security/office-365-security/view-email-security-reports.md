@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
 ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084582"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634062"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 
@@ -142,7 +142,7 @@ Sous le graphique, vous verrez les expéditeurs et destinataires de courriers le
 
 Le rapport des **détections d’usurpation** indique le nombre de messages d’usurpation d’identité détectés et ceux qui ont été considérés comme « corrects » (courrier infalsifiable pour des raisons professionnelles légitimes). 
   
-Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez **à rapports** \> **tableau de bord** \> **** des rapports.
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez **à rapports** \> **tableau de bord** \> **Spoof Mail**des rapports.
   
 ![Dans le centre &amp; de sécurité conformité, accédez à \> rapports \> tableau de bord de courrier frauduleux](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -198,9 +198,9 @@ Des détails sont disponibles pour chaque message, notamment la raison de remise
   
 Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), effectuez l’une des opérations suivantes :
   
-- Accédez au **** \> **tableau de bord** \> gestion **des menaces-messages signalés par l’utilisateur**.
+- Accédez au **Threat management** \> **tableau de bord** \> gestion **des menaces-messages signalés par l’utilisateur**.
     
-- Accédez à **** \> **examen** \> **des menaces-messages signalés par l’utilisateur**.
+- Accédez à **Threat management** \> **examen** \> **des menaces-messages signalés par l’utilisateur**.
     
 ![Dans le centre &amp; de sécurité conformité, choisissez gestion \> des \> menaces-vérifier les messages signalés par l’utilisateur](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
@@ -233,7 +233,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique [Protégez-vous contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Protection contre le courrier indésirable pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
   

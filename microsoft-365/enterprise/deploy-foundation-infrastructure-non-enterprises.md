@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez les phases simplifiées de l’infrastructure de base pour Microsoft 365 pour entreprise pour les organisations tierces.
-ms.openlocfilehash: 2620b210c40d5c838cf1a4be4fcd67bf3de03d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068108"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612644"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Infrastructure de base de Microsoft 365 pour entreprise pour les non-entreprises
 
@@ -113,7 +113,7 @@ Voici la liste des stratégies d’accès conditionnel Azure AD à activer ou à
 | Stratégie d’accès conditionnel Azure AD | Groupes auxquels elle s’applique |
 |:------|:-----|
 | Stratégie de référence: exiger l’authentification multifacteur pour les administrateurs | Cette stratégie s’applique aux rôles d’administrateur, de sorte qu’aucun groupe ne doit être spécifié. Cette stratégie doit juste être activée. Toutes les stratégies suivantes doivent être créées et activées. |
-| Bloquer les clients ne prenant pas en charge l’authentification moderne | Dans les paramètres de stratégie, sélectionnez «tous les utilisateurs». |
+| Bloquer les clients ne prenant pas en charge l’authentification moderne | Dans les paramètres de stratégie, sélectionnez « Tous les utilisateurs ». |
 | Exiger l’authentification multifacteur lorsque les risques de connexion sont moyens ou élevés (requiert Microsoft 365 E5) | RÉFÉRENCE |
 | Exiger l’authentification multifacteur lorsque les risques de connexion sont faibles, moyens ou élevés (requiert Microsoft 365 E5) | SENSIBLE |
 | Toujours exiger l’authentification multifacteur  | HAUTEMENT RÉGLEMENTÉ |
@@ -126,7 +126,7 @@ Voici la Azure Active Directory Identity Protection (requiert Microsoft 365 E5)
 
 | Stratégie d’utilisateur à risque Azure AD Identity Protection | Groupes auxquels elle s’applique |
 |:------|:-----|
-| Les utilisateurs à risque élevé doivent modifier leur mot de passe | Dans les paramètres de stratégie, sélectionnez «tous les utilisateurs». |
+| Les utilisateurs à risque élevé doivent modifier leur mot de passe | Dans les paramètres de stratégie, sélectionnez « Tous les utilisateurs ». |
 |||
 
 Voir [Stratégies d’accès aux identités et aux appareils communes](identity-access-policies.md) pour les instructions.
@@ -371,7 +371,7 @@ L’employé existant doit déjà être ajouté aux groupes de travail appropri�
 
 Vous pouvez ajouter un compte d’utilisateur à plusieurs groupes Azure AD dans le centre d’administration Microsoft 365. Dans les propriétés du compte d’utilisateur, cliquez sur **Gérer les groupes > Ajouter des groupes**.
 
-Si vous voulez utiliser PowerShell, consultez ce [classeur Excel téléchargeable](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx)qui génère les commandes PowerShell sur la base d’un compte d’utilisateur spécifié et des noms de groupes sélectionnés.
+Si vous voulez utiliser PowerShell, consultez ce [classeur Excel téléchargeable](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx)qui génère les commandes PowerShell sur la base d’un compte d’utilisateur spécifié et des noms de groupes sélectionnés.
 
 ### <a name="new-employee-with-a-cloud-only-user-account"></a>Nouvel employé avec un compte réservé au cloud.
 

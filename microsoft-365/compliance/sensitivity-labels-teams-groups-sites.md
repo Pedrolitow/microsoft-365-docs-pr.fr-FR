@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des groupes Office 365.
-ms.openlocfilehash: 934999f3c1b55c738ebc30eb9b87c65c5cc08376
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: b1bac1cbe094a1e56c05dd7fd1aa5377f0a85ce5
+ms.sourcegitcommit: 62eac95c27295ba285e28cec5acf815314fbfd00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550421"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42601351"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)
 
@@ -329,4 +329,8 @@ Si vous ne parvenez toujours pas à voir la nouvelle étiquette de confidentiali
 
 ### <a name="team-group-or-sharepoint-site-creation-errors"></a>Erreurs de création d'équipe, de groupe ou de site SharePoint
 Si vous rencontrez des erreurs de création lors de préversion publique, vous pouvez désactiver les étiquettes de confidentialité pour les Microsoft Teams, les groupes Office 365 et les sites SharePoint en utilisant les instructions suivante : [Activer la prise en charge des étiquettes de confidentialité dans PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Toutefois, pour désactiver la préversion, à l’étape 5, désactivez la fonctionnalité à l’aide de `$setting["EnableMIPLabels"] = "False"`.
+
+## <a name="additional-resources"></a>Ressources supplémentaires
+
+Regardez l’enregistrement du webinaire et les questions traitées pour [Utilisation d’étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint Online](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 

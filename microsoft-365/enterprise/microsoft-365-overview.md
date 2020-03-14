@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de Microsoft 365 pour les entreprises
+title: Vue d’ensemble de Microsoft 365 pour entreprise
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,13 +14,13 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour les entreprises.
 ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066887"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633302"
 ---
-# <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour les entreprises
+# <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
 Microsoft 365 for Enterprise est une solution complète et intelligente qui permet à chacun d’être créatif et de collaborer en toute sécurité. 
 

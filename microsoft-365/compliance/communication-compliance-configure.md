@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 69b3bbbbca98c3ef9e16f1cca4d67122ae14af3f
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 027189a10e34687833e6a266d5fe4382a1e14e3a
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604201"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632895"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -107,7 +107,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
 
     - Vérifiez ou mettez à jour le nom de la stratégie. Les noms de stratégie ne peuvent pas être modifiés une fois la stratégie créée.
     - Choisissez les utilisateurs ou les groupes à superviser, y compris le choix des utilisateurs ou des groupes que vous souhaitez exclure.
-    - Choisissez les relecteurs de la stratégie. Les relecteurs peuvent être des utilisateurs individuels ou des [groupes de sécurité à extension messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online.
+    - Choisissez les relecteurs de la stratégie. Les relecteurs peuvent être des utilisateurs individuels ou des [groupes de sécurité à extension messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online. Les relecteurs ajoutés ici sont les relecteurs que vous pouvez choisir lors de la réaffectation d’une alerte dans le flux de travail d’enquête et de correction.
     - Choisissez un champ de condition limité, généralement un type d’informations sensibles ou un dictionnaire de mots clés à appliquer à la stratégie.
 
     Si vous choisissez d’utiliser l’Assistant stratégie pour créer une stratégie personnalisée, vous devez :

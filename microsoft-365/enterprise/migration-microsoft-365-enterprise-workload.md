@@ -13,11 +13,11 @@ ms.collection:
 ms.custom: ''
 description: Suivez le processus de migration des versions de Microsoft Office, des serveurs Office et de Windows vers Microsoft 365 Entreprise au sein de votre organisation.
 ms.openlocfilehash: 06cacbb45a98bb62f53866b0d2ab7ba393e609a0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066807"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633242"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migration vers Microsoft 365 Entreprise
 

@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utiliser le filtrage des autorisations de recherche de contenu pour permettre à un gestionnaire eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation Office 365.
 ms.openlocfilehash: 670dd2e5d0c88c520234cd7e71805cfa97ad9ec9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601761"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634262"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configuration du filtrage des autorisations pour la recherche de contenu
 

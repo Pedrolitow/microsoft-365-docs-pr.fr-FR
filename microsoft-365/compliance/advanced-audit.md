@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: ''
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
 ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42551828"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634542"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 

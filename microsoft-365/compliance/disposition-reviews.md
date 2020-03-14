@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Microsoft 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
 ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075386"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634972"
 ---
 # <a name="overview-of-disposition-reviews"></a>Vue d’ensemble des révisions de destruction
 
@@ -76,7 +76,7 @@ Pour plus d’informations sur les étiquettes de rétention, voir [vue d’ense
 
 ## <a name="disposing-content"></a>Suppression du contenu
 
-Lorsqu’un réviseur est averti par courrier électronique que le contenu est prêt à être révisé, il peut **** accéder à la page de disposition &amp; dans le centre de sécurité et de conformité. Les relecteurs peuvent voir le nombre d’éléments pour chaque étiquette de rétention en attente de destruction, puis sélectionner une étiquette de rétention pour afficher l’ensemble du contenu portant cette étiquette.
+Lorsqu’un réviseur est averti par courrier électronique que le contenu est prêt à être révisé, il peut **Disposition** accéder à la page de disposition &amp; dans le centre de sécurité et de conformité. Les relecteurs peuvent voir le nombre d’éléments pour chaque étiquette de rétention en attente de destruction, puis sélectionner une étiquette de rétention pour afficher l’ensemble du contenu portant cette étiquette.
 
 Une fois que vous avez sélectionné une étiquette de rétention, la page suivante affiche toutes les impositions en attente pour cette étiquette.
 

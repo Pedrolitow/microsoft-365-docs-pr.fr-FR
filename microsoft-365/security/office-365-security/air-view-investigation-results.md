@@ -16,11 +16,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Pendant et après une enquête automatisée dans Office 365, vous pouvez afficher les résultats et les résultats clés.
 ms.openlocfilehash: 638559efe5f7028a647b466c030a339c677601ce
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179255"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633842"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Détails et résultats d’une enquête automatisée dans Office 365
 
@@ -32,9 +32,9 @@ Lorsqu’une [enquête automatisée](office-365-air.md) se produit dans [Office 
 
 2. Effectuez l’une des opérations suivantes :
 
-    - Accédez au **** > **tableau de bord**gestion des menaces. Cela vous amène au [tableau de bord de sécurité](security-dashboard.md). Vos widgets d’AIR s’affichent dans la partie supérieure du [tableau de bord de sécurité](security-dashboard.md). Sélectionnez un widget, par exemple, **Résumé des enquêtes**.
+    - Accédez au **Threat management** > **tableau de bord**gestion des menaces. Cela vous amène au [tableau de bord de sécurité](security-dashboard.md). Vos widgets d’AIR s’affichent dans la partie supérieure du [tableau de bord de sécurité](security-dashboard.md). Sélectionnez un widget, par exemple, **Résumé des enquêtes**.
 
-    - Accédez aux **** > **enquêtes**de gestion des menaces. 
+    - Accédez aux **Threat management** > **enquêtes**de gestion des menaces. 
 
     L’une ou l’autre de ces méthodes vous permet d’accéder à une liste d’investigations.
 
@@ -52,7 +52,7 @@ Certains types d’alertes déclenchent une enquête automatisée dans Office 36
 
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
 
-2. Accédez aux **** > **enquêtes**de gestion des menaces.
+2. Accédez aux **Threat management** > **enquêtes**de gestion des menaces.
 
 3. Dans la liste des enquêtes, sélectionnez un élément dans la colonne **ID** . 
 

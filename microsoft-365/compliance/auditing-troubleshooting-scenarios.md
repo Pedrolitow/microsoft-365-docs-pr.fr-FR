@@ -17,11 +17,11 @@ search.appverid:
 - MOE150
 description: Vous pouvez utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à résoudre les problèmes courants, tels que l’enquête sur un compte compromis, la personne qui configure le transfert de courrier pour une boîte aux lettres ou la manière dont un utilisateur externe a réussi à se connecter à votre organisation.
 ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079149"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634482"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Rechercher dans le journal d’audit Office 365 pour identifier les problèmes de prise en charge courants
 

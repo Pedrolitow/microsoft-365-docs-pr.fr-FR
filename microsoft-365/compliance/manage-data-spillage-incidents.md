@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Cet article décrit l’utilisation de l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & Compliance pour gérer un incident de déversement de données.
 ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543365"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634292"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gérer un incident de fuite de données dans Microsoft 365
 

@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations. Ensuite, vous pouvez afficher et gérer les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d’une stratégie d’alerte.
 ms.openlocfilehash: a5ac38f30d42ceff67f982c6c9ac9b03507d34cb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080015"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634512"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le centre de sécurité et conformité
 
@@ -49,7 +49,7 @@ Voici un aperçu rapide du fonctionnement des stratégies d’alerte et des aler
 
 ## <a name="alert-policy-settings"></a>Paramètres de stratégie d’alerte
 
-Une stratégie d’alerte est constituée d’un ensemble de règles et de conditions qui définissent l’activité de l’utilisateur ou de l’administrateur qui génère une alerte, la liste des utilisateurs qui déclenchent l’alerte si elles effectuent l’activité et un seuil qui définit le nombre de fois que l’activité doit avoir lieu avant une alerte.  est déclenchée. Vous pouvez également catégoriser la stratégie et lui attribuer un niveau de gravité. Ces deux paramètres vous aident à gérer les stratégies d’alerte (et les alertes déclenchées lorsque les conditions de la stratégie sont respectées), car vous pouvez filtrer ces paramètres lors de la gestion des stratégies et de l’affichage des alertes dans le centre de sécurité et de conformité. Par exemple, vous pouvez afficher les alertes qui répondent aux conditions de la même catégorie ou afficher les alertes ayant le même niveau de gravité.
+Une stratégie d’alerte est constituée d’un ensemble de règles et de conditions qui définissent l’activité de l’utilisateur ou de l’administrateur qui génère une alerte, la liste des utilisateurs qui déclenchent l’alerte si elles effectuent l’activité et un seuil qui définit le nombre de fois que l’activité doit avoir lieu avant une alerte. est déclenchée. Vous pouvez également catégoriser la stratégie et lui attribuer un niveau de gravité. Ces deux paramètres vous aident à gérer les stratégies d’alerte (et les alertes déclenchées lorsque les conditions de la stratégie sont respectées), car vous pouvez filtrer ces paramètres lors de la gestion des stratégies et de l’affichage des alertes dans le centre de sécurité et de conformité. Par exemple, vous pouvez afficher les alertes qui répondent aux conditions de la même catégorie ou afficher les alertes ayant le même niveau de gravité.
 
 Pour afficher et créer des stratégies d’alerte, [https://protection.office.com](https://protection.office.com) accédez à, puis sélectionnez alertes d' **alerte**des **alertes** \> .
 

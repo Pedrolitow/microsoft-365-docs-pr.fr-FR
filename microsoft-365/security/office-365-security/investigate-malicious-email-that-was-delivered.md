@@ -1,5 +1,5 @@
 ---
-title: 'Rechercher et identifier les courriers électroniques malveillants qui ont été remis dans Office 365, correction, remède, correction, '
+title: Recherche et examen des courriers électroniques malveillants remis dans Office 365, correction, remède, correction, protection contre les menaces, Explorateur de menaces, protection
 keywords: TIMailData-Inline, incident de sécurité, incident, PowerShell ATP, programmes malveillants de messagerie, utilisateurs compromis, hameçonnage par courrier électronique, programmes malveillants de messagerie, lire les en-têtes de courrier électronique, lire les en-têtes, lire les en-têtes de messages électroniques
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: 1cb7c418e9c4ae5f2223748d512e8718f81b010c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 178bdbfd97bea654959cf71da560a80e686a5fde
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409749"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632915"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Examiner et résoudre les courriers électroniques malveillants remis dans Office 365
 
@@ -56,6 +56,9 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Rechercher et supprimer les e-mails suspects qui ont été remis
 
 L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs objectifs, tels que la recherche et la suppression de messages, l’identification de l’adresse IP d’un expéditeur de courrier malveillant ou le démarrage d’un incident en vue d’une nouvelle enquête. La procédure suivante décrit l’utilisation de l’Explorateur pour rechercher et supprimer les messages malveillants des boîtes aux lettres du destinataire.
+
+> [!NOTE]
+> Les recherches par défaut dans l’explorateur n’incluent actuellement pas les éléments zapped.  Cela s’applique à tous les affichages, par exemple les affichages de programmes malveillants ou de hameçonnage. Pour inclure les éléments zapped, vous devez ajouter une « action de remise » définie sur inclure « supprimé par ZAP ». Si vous incluez toutes les options, vous verrez tous les résultats d’action de remise, y compris les éléments zapped.
 
 1. **Accédez à l’Explorateur de menaces**: [https://protection.office.com](https://protection.office.com) accédez à et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité &amp; conformité.
 
@@ -249,7 +252,7 @@ To access your message header and email download options, follow these steps:
 > This capability doesn't show up for email messages that were never found in a user's mailbox, which can happen if an email was dropped or its delivery failed. In cases where email messages were deleted from users' mailboxes, admins see a "Mail not found" error message.
 -->
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Protection avancée contre les menaces dans Office 365](office-365-ti.md)
   

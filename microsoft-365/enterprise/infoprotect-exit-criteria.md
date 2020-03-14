@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Examinez les critères de l’infrastructure et des services de protection des informations pour vérifier que votre configuration remplit les conditions requises de Microsoft 365 Entreprise.
 ms.openlocfilehash: 28eff02ea870dcfca7e2e32580ed6a3a9e8a9484
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544163"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633352"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Critères de sortie de l’infrastructure de protection des informations
 

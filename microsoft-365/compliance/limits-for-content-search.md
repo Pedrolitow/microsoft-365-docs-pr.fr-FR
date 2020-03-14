@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Découvrez les limites en vigueur pour la fonctionnalité de recherche de contenu dans le centre de sécurité & conformité dans Office 365, comme le nombre maximal de recherches simultanées. '
 ms.openlocfilehash: a560e26b6a02e48ca50033acad554e3c7bb2ec6e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600551"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634732"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Limites de recherche de contenu dans le centre de sécurité & conformité
 
@@ -39,10 +39,10 @@ Le tableau suivant répertorie les limites de recherche dans le centre de sécur
 |:-----|:-----|
 |Nombre maximal de boîtes aux lettres ou de sites qui peuvent être recherchées dans une recherche de contenu unique  <br/> |Sans limite  <br/> |
 |Nombre maximal de recherches de contenu pouvant être exécutées en même temps dans votre organisation.  <br/> |Sans limite  <br/> |
-|Nombre maximal de recherches de contenu qu’un utilisateur peut démarrer simultanément. Notez que cette limite est probablement atteinte lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **get \| -ComplianceSearch Start-ComplianceSearch** dans la sécurité & PowerShell du centre de conformité.  <br/> |10   <br/> |
+|Nombre maximal de recherches de contenu qu’un utilisateur peut démarrer simultanément. Notez que cette limite est probablement atteinte lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **get \| -ComplianceSearch Start-ComplianceSearch** dans la sécurité & PowerShell du centre de conformité.  <br/> |10   <br/> |
 |Nombre maximal d’éléments par boîte aux lettres utilisateur qui s’affichent dans la page d’aperçu lors de la prévisualisation des résultats de la recherche de contenu.  <br/> |100  <br/> |
-|Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres utilisateur qui s’affichent dans la page d’aperçu lors de la prévisualisation des résultats de la recherche de contenu. Les éléments les plus récents sont affichés.  <br/> |1 000  <br/> |
-|Nombre maximal de boîtes aux lettres d’utilisateur dont vous pouvez afficher un aperçu des résultats de recherche. S'il existe plus de 1 000 boîtes aux lettres dont le contenu correspond à la requête de recherche, seules les 1 000 premières boîtes aux lettres contenant la majorité des résultats seront disponibles pour l'aperçu.  <br/> |1 000  <br/> |
+|Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres utilisateur qui s’affichent dans la page d’aperçu lors de la prévisualisation des résultats de la recherche de contenu. Les éléments les plus récents sont affichés.  <br/> |1,000  <br/> |
+|Nombre maximal de boîtes aux lettres d’utilisateur dont vous pouvez afficher un aperçu des résultats de recherche. S'il existe plus de 1 000 boîtes aux lettres dont le contenu correspond à la requête de recherche, seules les 1 000 premières boîtes aux lettres contenant la majorité des résultats seront disponibles pour l'aperçu.  <br/> |1,000  <br/> |
 |Nombre maximal d’éléments trouvés dans SharePoint et de sites OneDrive entreprise affichés dans la page d’aperçu lors de la prévisualisation des résultats de la recherche de contenu. Les éléments les plus récents sont affichés.  <br/> |200  <br/> |
 |Nombre maximal de sites (dans SharePoint et OneDrive entreprise) pouvant être prévisualisés pour les résultats de la recherche. S’il existe plus de 200 total de sites qui contiennent du contenu correspondant à la requête de recherche, seuls les premiers sites 200 avec le plus de résultats de recherche seront disponibles pour l’aperçu.  <br/> |200  <br/> |
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics affichés dans la page d’aperçu lors de la prévisualisation des résultats de la recherche de contenu.  <br/> |100  <br/> |
@@ -50,7 +50,7 @@ Le tableau suivant répertorie les limites de recherche dans le centre de sécur
 |Nombre maximal de boîtes aux lettres publiques pouvant être prévisualisées pour les résultats de la recherche. S’il y a plus de 500 boîtes aux lettres de dossiers publics qui contiennent du contenu correspondant à la requête de recherche, seules les 500 premières boîtes aux lettres de dossiers publics avec le plus de résultats de recherche seront disponibles pour l’aperçu.  <br/> |500  <br/> |
 |Nombre maximal de caractères pour la requête de recherche (y compris les opérateurs et les conditions) pour une recherche de contenu.  <br/><br/> **Remarque :** Cette limite prend effet après l’extension de la requête, ce qui signifie que la requête est développée par rapport à chacun des mots clés. Par exemple, si une requête de recherche comporte 15 Mots clés et des paramètres et conditions supplémentaires, la requête est développée 15 fois, chacune avec les autres paramètres et conditions de la requête. Par conséquent, même si le nombre de caractères dans la requête de recherche est inférieur à la limite, il s’agit de la requête étendue susceptible de contribuer au dépassement de cette limite.  <br/> |**Boîtes aux lettres :** 10 000  <br/> **Sites :** 4 000 lors de la recherche sur tous les sites ou 2 000 lors de la recherche sur 20 sites <sup>1</sup> <br/> |
 |Nombre maximal de variantes renvoyées lors de l’utilisation d’un caractère générique de préfixe pour rechercher une expression exacte dans une requête de recherche ou lorsque vous utilisez un caractère générique de préfixe et l’opérateur booléen **near** ou **ONEAR** .  <br/> |10 000 <sup>2</sup> <br/> |
-|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, `time*` `one*`, ou `set*`.  <br/> |3   <br/> |
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, `time*` `one*`, ou `set*`.  <br/> |3  <br/> |
 |Nombre maximal de boîtes aux lettres dans une recherche de contenu que vous pouvez supprimer des éléments à l’aide d’une action de recherche et de purge (à l’aide de la commande **New-ComplianceSearchAction-purge** ). Si la recherche de contenu pour laquelle vous effectuez une action de vidage pour a plus de boîtes aux lettres source que cette limite, l’action de vidage échouera. Pour plus d’informations sur la recherche et le vidage, voir [Rechercher et supprimer des messages électroniques dans votre organisation Office 365](search-for-and-delete-messages-in-your-organization.md).  <br/> |50 000  <br/> |
    
 > [!NOTE]

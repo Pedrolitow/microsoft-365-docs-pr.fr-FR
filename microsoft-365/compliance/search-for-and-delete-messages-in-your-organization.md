@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité d’Office 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
 ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601551"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634162"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Recherche et suppression de messages électroniques dans votre organisation Office 365
 

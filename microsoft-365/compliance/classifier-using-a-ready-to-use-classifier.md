@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Microsoft 365 est fourni avec un certain nombre de classifieurs intégrés que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs.
 ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266730"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634462"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>Utilisation d’un classifieur intégré (aperçu)
 

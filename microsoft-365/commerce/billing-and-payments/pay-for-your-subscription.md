@@ -25,11 +25,11 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242435"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633712"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>Régler votre abonnement Office 365 pour les entreprises
 
@@ -51,7 +51,7 @@ Si vous payez par carte bancaire et que cette dernière est refusée, vous recev
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Recherchez l’abonnement avec le solde impayé. Dans la section **facturation** , en regard de l’option **abonnement a un paiement échu**, sélectionnez **régler le solde**.
 
@@ -68,7 +68,7 @@ Si vous payez par carte bancaire et que cette dernière est refusée, vous recev
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez modifier. Dans la section **mon facture** , sélectionnez **payer maintenant**.
 

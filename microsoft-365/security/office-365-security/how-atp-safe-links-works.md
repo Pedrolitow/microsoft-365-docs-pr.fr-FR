@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: La fonctionnalité liens fiables permet de vérifier le temps de cliquer sur les liens hypertexte dans les documents Office et dans les messages électroniques. Lisez cet article pour découvrir le fonctionnement des liens fiables ATP.
 ms.openlocfilehash: c87eef2afbb3a694d9906de0c6c43bfeb576782b
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333681"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633972"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Fonctionnement des liaisons approuvées ATP Office 365
 > [!IMPORTANT] 

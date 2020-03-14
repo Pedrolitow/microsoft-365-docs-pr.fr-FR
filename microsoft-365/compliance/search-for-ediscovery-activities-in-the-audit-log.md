@@ -15,11 +15,11 @@ search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Découvrez comment rechercher dans le journal d’audit Office 365 des événements consignés lorsque les administrateurs de la conformité effectuent des tâches de recherche de contenu et de cas eDiscovery dans le centre de sécurité & Compliance Center.
 ms.openlocfilehash: ef9c40debb8c28f0d017423d29016ca4f52b7a17
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601531"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634152"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Rechercher des activités eDiscovery dans le journal d’audit Office 365
 
@@ -174,7 +174,7 @@ Le tableau suivant décrit les propriétés qui sont incluses lorsque vous cliqu
 |ObjectType  <br/> |Type d’objet eDiscovery que l’utilisateur a créé, supprimé ou modifié ; par exemple, une action de recherche de contenu (aperçu, exportation ou purge), un cas eDiscovery ou une recherche de contenu.  <br/> |
 |Opération  <br/> |Nom de l’opération qui correspond à l’activité eDiscovery effectuée.  <br/> |
 |OrganizationId  <br/> |GUID de votre organisation Office 365.  <br/> |
-|Parameters  <br/> |Le nom et la valeur des paramètres qui ont été utilisés avec la cmdlet correspondante.  <br/> |
+|Paramètres  <br/> |Le nom et la valeur des paramètres qui ont été utilisés avec la cmdlet correspondante.  <br/> |
 |PublicFolderLocations  <br/> |Emplacements de dossiers publics dans Exchange Online inclus dans une recherche de contenu ou mis en attente dans un cas eDiscovery.  <br/> |
 |Requête  <br/> |Requête de recherche associée à l’activité, telle qu’une recherche de contenu ou une conservation basée sur une requête.  <br/> |
 |RecordType  <br/> |Type d’opération indiqué par l’enregistrement. La valeur de **18** indique un événement lié à une activité indiquée dans la section activités de l’applet de commande [eDiscovery](#ediscovery-cmdlet-activities) . La valeur **24** indique un événement lié à une activité indiquée dans la section [How to Search for and View eDiscovery Activities](#how-to-search-for-and-view-ediscovery-activities) .  <br/> |

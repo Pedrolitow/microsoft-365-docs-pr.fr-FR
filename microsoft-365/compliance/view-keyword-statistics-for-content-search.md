@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Utilisez la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans le centre de sécurité & conformité. Vous pouvez également configurer la liste de mots clés lors de la création ou de la modification d’une requête de recherche pour obtenir des statistiques améliorées qui indiquent le nombre d’éléments correspondant à chaque expression de mot clé ou mot clé.
 ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068941"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634122"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 
@@ -37,7 +37,7 @@ Pour afficher les statistiques des recherches de contenu :
   
 1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu**de **recherche** \> .
     
-2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur ****![le bouton](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche.
+2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur **Search statistics**![le bouton](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche.
     
     ![Sélectionnez plusieurs recherches, puis cliquez sur statistiques de recherche.](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
@@ -109,7 +109,7 @@ Pour créer une liste de mots clés et afficher les statistiques de mots clés p
   
 1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu**de **recherche** \> .
     
-2. Dans la liste des recherches de contenu, cliquez sur et sur une recherche, **** ![puis sur modifier](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)l’icône modifier.
+2. Dans la liste des recherches de contenu, cliquez sur et sur une recherche, **Edit** ![puis sur modifier](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)l’icône modifier.
     
 3. Cliquez sur **requête** , puis effectuez les opérations suivantes : 
     
@@ -121,7 +121,7 @@ Pour créer une liste de mots clés et afficher les statistiques de mots clés p
     
 4. Après avoir ajouté les mots clés pour lesquels vous souhaitez effectuer une recherche et obtenir des statistiques, cliquez sur **Rechercher** pour exécuter la recherche révisée. 
     
-5. Une fois la recherche terminée, sélectionnez-la dans la liste des recherches, puis cliquez **** ![sur le bouton](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche. Vous pouvez également afficher et comparer des statistiques de mots clés pour plusieurs recherches.
+5. Une fois la recherche terminée, sélectionnez-la dans la liste des recherches, puis cliquez **Search statistics** ![sur le bouton](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche. Vous pouvez également afficher et comparer des statistiques de mots clés pour plusieurs recherches.
     
 6. Sur la page **statistiques de recherche** , cliquez sur **requête** pour afficher les statistiques des mots-clés des recherches sélectionnées. 
     

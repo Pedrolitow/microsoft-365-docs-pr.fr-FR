@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078724"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632855"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -39,8 +39,8 @@ La première étape pour examiner les problèmes détectés par vos stratégies 
     - Éléments résolus affichés par nom de stratégie.
     - Escalades indiquées par nom de stratégie.
     - Utilisateurs avec le plus grand nombre de correspondances de stratégie, classés par ordre décroissant de correspondance.
-- **Onglet Alertes**: accédez à **** > **alertes** de conformité des communications pour afficher les alertes groupées en fonction de la stratégie de conformité de communication correspondante. Cet affichage vous permet de voir rapidement les stratégies de conformité des communications qui génèrent le plus d’alertes classées par gravité.  Pour démarrer les actions de correction, développez une stratégie pour sélectionner une alerte spécifique et pour lancer la page Détails de l’alerte.
-- **Onglet stratégies**: accédez à **** > **stratégies** de conformité des communications pour afficher les stratégies de conformité de communication configurées pour votre organisation Microsoft 365. Chaque stratégie indiquée inclut le nombre d’alertes qui doivent être réexaminées. La sélection d’une stratégie affiche toutes les alertes en attente concernant la stratégie, la sélection d’une alerte spécifique pour le lancement de la page de détails de stratégie et le démarrage des actions de correction.
+- **Onglet Alertes**: accédez à **Communication compliance** > **alertes** de conformité des communications pour afficher les alertes groupées en fonction de la stratégie de conformité de communication correspondante. Cet affichage vous permet de voir rapidement les stratégies de conformité des communications qui génèrent le plus d’alertes classées par gravité.  Pour démarrer les actions de correction, développez une stratégie pour sélectionner une alerte spécifique et pour lancer la page Détails de l’alerte.
+- **Onglet stratégies**: accédez à **Communication compliance** > **stratégies** de conformité des communications pour afficher les stratégies de conformité de communication configurées pour votre organisation Microsoft 365. Chaque stratégie indiquée inclut le nombre d’alertes qui doivent être réexaminées. La sélection d’une stratégie affiche toutes les alertes en attente concernant la stratégie, la sélection d’une alerte spécifique pour le lancement de la page de détails de stratégie et le démarrage des actions de correction.
 
 ### <a name="using-filters"></a>Utilisation de filtres
 
@@ -115,7 +115,7 @@ Quelle que soit l’endroit où vous commencez à examiner les alertes ou le fil
     - **Faux positif**: vous pouvez toujours résoudre un message en tant que faux positif à tout moment pendant le flux de travail de révision des messages. Le message ne peut pas être rouvert et tous les faux positifs sont affichés sous l’onglet **résolu** .
     - **Balise comme**: balise le message comme étant *conforme*, *non conforme*ou comme étant *question* en relation avec les stratégies et les normes de votre organisation. L’ajout de balises et de commentaires de marquage peut vous aider à filtrer les alertes de stratégie pour les escalades ou dans d’autres processus de révision interne. Une fois le marquage terminé, vous pouvez également choisir de résoudre le message pour le déplacer de la file d’attente de révision en attente.
     - **Notifier**: vous pouvez utiliser le contrôle **Notify** pour affecter un modèle d’avertissement personnalisé à l’alerte et envoyer un avertissement à l’utilisateur. Choisissez le modèle d’avertissement approprié, puis sélectionnez **Envoyer pour envoyer** un rappel à l’employé qui a envoyé le message et résoudre le problème.
-    - **Escalade**: à l’aide du contrôle d' **escalade** , vous pouvez choisir les autres personnes de votre organisation qui doivent consulter le message. Dans la liste des relecteurs configurés, effectuez une sélection pour envoyer une notification par courrier électronique demandant une révision supplémentaire de l’alerte de message. Le réviseur sélectionné peut utiliser un lien dans la notification par courrier électronique pour accéder directement aux éléments qui y sont réaffectés à des fins de révision.
+    - **Escalade**: à l’aide du contrôle d' **escalade** , vous pouvez choisir les autres personnes de votre organisation qui doivent consulter le message. Dans la liste des relecteurs configurés dans la stratégie de conformité des communications, effectuez une sélection dans une liste pour envoyer une notification par courrier électronique demandant une révision supplémentaire de l’alerte de message. Le réviseur sélectionné peut utiliser un lien dans la notification par courrier électronique pour accéder directement aux éléments qui y sont réaffectés à des fins de révision.
     - **Créer un cas**: à l’aide du contrôle **créer un cas** , vous pouvez créer un nouveau [cas eDiscovery avancé](overview-ediscovery-20.md) pour un ou plusieurs messages. Vous fournirez un nom et des remarques pour le nouvel incident, et l’utilisateur qui a envoyé le message correspondant à la stratégie est automatiquement affecté comme dépositaire de cas. Vous n’avez pas besoin d’autorisations supplémentaires pour gérer le cas. La création d’un cas ne permet pas de résoudre ou de créer une nouvelle balise pour le message.
 
 4. **Déterminez si les détails du message doivent être archivés en dehors de la conformité de la communication**: les détails du message peuvent être exportés ou téléchargés si vous devez archiver les messages dans une solution de stockage distincte. La sélection du contrôle de **Téléchargement** ajoute automatiquement les messages sélectionnés à un. Fichier ZIP qui peut être enregistré en dehors de Microsoft 365.

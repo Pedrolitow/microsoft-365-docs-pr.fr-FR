@@ -16,15 +16,15 @@ ms.custom:
 - Ent_TLGs
 description: Configurez l’authentification multifacteur à l’aide de messages texte envoyés à un téléphone intelligent dans votre environnement de test Microsoft 365 Enterprise.
 ms.openlocfilehash: ea2041a463b224781df101251dab0f4d9f0e8753
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066731"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633192"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Authentification multifacteur pour votre environnement de test Microsoft 365 Enterprise
 
-*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Entreprise et Office 365 Entreprise*.
+*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Enterprise et Office 365 Enterprise.*
 
 Pour un niveau de sécurité supplémentaire pour la connexion à Microsoft 365 ou tout service ou application qui utilise le client Azure AD pour votre abonnement, vous pouvez activer l’authentification multifacteur Azure, qui nécessite plus qu’un nom d’utilisateur et un mot de passe pour vérifier une comptes. 
 

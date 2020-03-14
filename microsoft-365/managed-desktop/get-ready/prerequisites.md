@@ -7,11 +7,11 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: b729712a188c105fdf8a38e208124c2ef4c27a33
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085873"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632962"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Configuration requise pour le Bureau géré Microsoft
 
@@ -49,7 +49,7 @@ Microsoft Managed Desktop requiert certaines options de licence pour fonctionner
 |Microsoft Intune | -Microsoft 365 E5<br>-Module complémentaire de sécurité Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Microsoft Intune  |  Nécessité d’enregistrer les périphériques, de déployer les mises à jour et de gérer les appareils       |
 |Windows 10 Entreprise  |-Microsoft 365 E5<br>-Module complémentaire de sécurité Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 entreprise E3<br>-Windows 10 entreprise E5 | Fournit des fonctionnalités d’entreprise de Windows 10       |
 |Microsoft Defender – Protection avancée contre les menaces | -Microsoft 365 E5<br>-Module complémentaire de sécurité Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 entreprise E5<br>-Protection avancée contre les menaces Microsoft Defender   |  Fournit la détection, la surveillance, l’alerte et la réponse aux menaces  |
-|Office 365 ProPlus  |-Microsoft 365 E5<br>-Microsoft 365 E3<br>-Office 365 E5<br>-Office 365 E3| Active Office et les outils de productivité et de collaboration    |
+|Office 365 ProPlus  |-Microsoft 365 E5<br>-Microsoft 365 E3<br>-Office 365 E5<br>-Office 365 E3| Active Office et les outils de productivité et de collaboration    |
 
 > [!TIP]
 > Votre gestionnaire de compte Microsoft vous aide à consulter vos licences et plans de service actuels et à trouver le chemin le plus efficace pour obtenir les licences ou plans de service supplémentaires dont vous pouvez avoir besoin, tout en évitant la duplication.

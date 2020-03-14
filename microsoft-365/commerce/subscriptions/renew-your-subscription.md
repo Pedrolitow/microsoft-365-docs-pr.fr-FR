@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Découvrez comment renouveler votre abonnement Office 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
 ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354575"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633702"
 ---
 # <a name="renew-office-365-for-business"></a>Réactiver ou renouveler un abonnement Office 365 Entreprise
 
@@ -51,7 +51,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Choisissez l’abonnement pour lequel vous souhaitez gérer la facturation périodique.
  
@@ -70,7 +70,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-germany"
   
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
     Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
@@ -93,7 +93,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-21vianet"
   
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
     Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 

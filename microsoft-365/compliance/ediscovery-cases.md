@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le centre de sécurité & conformité pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l’incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse plus approfondie dans Office 365 Advanced eDiscovery.
 ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557738"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634952"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 

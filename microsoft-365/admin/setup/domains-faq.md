@@ -23,11 +23,11 @@ ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Pour plus d’informations sur les domaines dans Office 365, recherchez les réponses à vos questions dans FAQ.
 ms.custom: okr_smb
 ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254108"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633182"
 ---
 # <a name="domains-faq"></a>Foire aux questions domaines
 
@@ -107,7 +107,7 @@ Veuillez noter qu’une requête *Whois* affiche un bureau d’enregistrement de
   
 Suivez les étapes ci-dessous pour obtenir le code sur Office 365, puis accédez au site Web du Bureau d’enregistrement de domaine pour configurer le transfert de votre nom de domaine vers ce serveur d’inscriptions.
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
     Si vous utilisez Office 365 Germany, accédez à la page de ces <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domaines</a> . 
     
@@ -137,7 +137,7 @@ Suivez les étapes ci-dessous pour obtenir le code sur Office 365, puis accédez
     
 3. Suivez un lien pour accéder à l’Assistant Configuration des domaines :
     
-4. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+4. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
     Si vous utilisez Office 365 Germany, accédez à la page de ces <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domaines</a> . 
     
@@ -154,7 +154,7 @@ Suivez les étapes ci-dessous pour obtenir le code sur Office 365, puis accédez
 
 ### <a name="change-dns-management-to-office-365"></a>Modifier la gestion du DNS vers Office 365
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
     Si vous utilisez Office 365 Germany, accédez à la page de ces <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domaines</a> . 
     
@@ -222,7 +222,7 @@ Fournisseurs qui prennent en charge tous les enregistrements DNS requis :
 
 Vous devez avoir au moins un domaine personnalisé que vous avez ajouté à Office 365 avant de pouvoir choisir un domaine par défaut.
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
     Si vous utilisez Office 365 Germany, accédez à la page de ces <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domaines</a> . 
     

@@ -18,15 +18,15 @@ ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces &amp; dans le centre de sécurité conformité.
 ms.openlocfilehash: 1531a70439ae1c093ee472923696895eda0bc644
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081873"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634082"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
-Si votre organisation dispose d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) et que vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-the-atp-reports), vous pouvez utiliser plusieurs rapports ATP dans &amp; le centre de sécurité conformité. (Accédez au **** \> **tableau de bord**rapports.)
+Si votre organisation dispose d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) et que vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-the-atp-reports), vous pouvez utiliser plusieurs rapports ATP dans &amp; le centre de sécurité conformité. (Accédez au **Reports** \> **tableau de bord**rapports.)
   
 ![Le tableau &amp; de bord du centre de sécurité conformité peut vous aider à déterminer le fonctionnement de la protection avancée contre les menaces](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -162,7 +162,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir des [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées ATP](set-up-atp-safe-attachments-policies.md) définies afin que la protection ATP soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

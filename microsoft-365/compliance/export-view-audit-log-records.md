@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Après avoir exporté et téléchargé les résultats d’une recherche de journal d’audit Office 365 dans un fichier CSV, vous pouvez utiliser la fonctionnalité transformation JSON de l’éditeur de la requête Power dans Excel pour fractionner chaque propriété de l’objet JSON dans la colonne AuditData en sa propre colonne. Cela peut vous aider à localiser rapidement les données d’audit spécifiques que vous recherchez.
 ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074075"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634922"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exporter, configurer et afficher des enregistrements du journal d’audit
 

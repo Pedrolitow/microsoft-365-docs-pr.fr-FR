@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez Campaign Views dans Office 365 - Protection avancée contre les menaces.
-ms.openlocfilehash: 350f4f9007bf6f09836080af65802a9757532dcc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083539"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637327"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Campaign Views dans Office 365 - Protection avancée contre les menaces
 
@@ -60,9 +60,9 @@ Les vues de campagne sont disponibles dans le [Centre de sécurité & conformit�
 
 Vous pouvez également accéder à la vue campagnes à partir de :
 
-- **** \> **** \> **** Affichage \> des **campagnes marketing** dans l’Explorateur de gestion des menaces
+- **Threat management** \> **Explorer** \> **View** Affichage \> des **campagnes marketing** dans l’Explorateur de gestion des menaces
 
-- **** \> **** Explorateur \> de gestion des menaces **Afficher** \> **toutes les** \> **campagnes** de messagerie
+- **Threat management** \> **Explorer** Explorateur \> de gestion des menaces **Afficher** \> **toutes les** \> **campagnes** de messagerie
 
 > [!TIP]
 > Si aucune donnée de campagne n’apparaît, essayez de modifier la plage de dates.
@@ -125,24 +125,24 @@ Le diagramme contient les informations suivantes :
 
 - **Domaines de l’expéditeur**
 
-- **Filtrer les verdicts**: les valeurs ici sont liées aux verdicts de filtre anti-hameçonnage et anti-courrier indésirable disponibles, comme décrit dans [En-têtes des messages anti-courrier indésirable](anti-spam-message-headers.md). Les valeurs disponibles sont décrites dans le tableau suivant :
+- **Filtrer les verdicts**: les valeurs indiquées ici sont liées aux verdicts de hameçonnage et de filtrage du courrier indésirable disponibles, comme décrit dans [les en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md). Les valeurs disponibles sont décrites dans le tableau suivant :
 
   |Valeur|Verdict du filtre de courrier indésirable|Description|
   |:-----|:-----|:-----|
-  | **Autorisé**|`SFV:SKN` <br/><br/> `SFV:SKI`|Le message a été marqué comme n’étant pas un courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtre de courrier indésirable (par exemple, par une règle de flux de messagerie, également appelée règle de transport).<br/><br/>Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons (par exemple, l’expéditeur et le destinataire semblent être dans la même organisation).|
-  |**Blocked**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtre de courrier indésirable (par exemple, par une règle de flux de messagerie).|
-  |**Détecté**|`SFV:SPM`|Le message a été marqué comme courrier indésirable par le filtre de courrier indésirable.|
-  |**Non détecté**|`SFV:NSPM`|Le message a été marqué comme n’étant pas un courrier indésirable par le filtre de courrier indésirable.|
+  | **Autorisé**|`SFV:SKN` <br/><br/> `SFV:SKI`|Le message a été marqué comme n’étant pas un courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable (par exemple, par une règle de flux de messagerie, également appelée règle de transport).<br/><br/>Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons (par exemple, l’expéditeur et le destinataire semblent être dans la même organisation).|
+  |**Blocked**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable (par exemple, par une règle de flux de messagerie).|
+  |**Détecté**|`SFV:SPM`|Le message a été marqué comme courrier indésirable par le filtrage du courrier indésirable.|
+  |**Non détecté**|`SFV:NSPM`|Le message a été marqué comme non courrier indésirable par le filtrage du courrier indésirable.|
   |**A**|`SFV:SKQ`|Le message a ignoré le filtrage du courrier indésirable, car il a été mis en quarantaine.|
-  |**Autoriser le client**<sup>\*</sup>|`SFV:SKA`|Le message a ignoré le filtrage du courrier indésirable en raison de la configuration de la stratégie de filtrage du courrier indésirable (par exemple, l’expéditeur ou le domaine se trouvait dans la liste d' **expéditeurs autorisés** ).|
-  |**Bloc de locataire**<sup>\*\*</sup>|`SFV:SKA`|Le message a été bloqué par le filtrage du courrier indésirable en raison de la configuration de la stratégie de filtrage du courrier indésirable (par exemple, l’expéditeur ou le domaine se trouvait dans la liste des **expéditeurs bloqués** ).|
+  |**Autoriser le client**<sup>\*</sup>|`SFV:SKA`|Le message a ignoré le filtrage du courrier indésirable en raison des paramètres de stratégie de blocage du courrier indésirable (par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou le domaine autorisé).|
+  |**Bloc de locataire**<sup>\*\*</sup>|`SFV:SKA`|Le message a été bloqué par le filtrage du courrier indésirable en raison des paramètres de stratégie de blocage du courrier indésirable (par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou le domaine autorisé).|
   |**Autorisation de l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des expéditeurs approuvés d’un utilisateur dans Outlook.|
   |**Bloc utilisateur**<sup>\*\*</sup>|`SFV:BLK`|Le message a été bloqué par le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des expéditeurs bloqués d’un utilisateur dans Outlook.|
-  |**ZAP**|s/o|La [purge automatique à zéro heure (ZAP)](zero-hour-auto-purge.md) a effectué une action sur le message remis en fonction de la configuration de votre stratégie de filtrage du courrier indésirable (déplacée vers le dossier courrier indésirable ou mis en quarantaine).|
+  |**ZAP**|s/o|La [purge automatique à zéro heure (ZAP)](zero-hour-auto-purge.md) a effectué une action sur le message remis en fonction de vos paramètres de stratégie anti-courrier indésirable (déplacés vers le dossier courrier indésirable ou mis en quarantaine).|
 
-  <sup>\*</sup>Examinez vos paramètres de configuration de stratégie de filtrage du courrier indésirable, car le message autorisé aurait probablement été bloqué par le service.
+  <sup>\*</sup>Examinez vos stratégies de blocage du courrier indésirable, car le message autorisé aurait probablement été bloqué par le service.
 
-  <sup>\*\*</sup>Examinez vos paramètres de configuration de stratégie de filtrage du courrier indésirable, car ces messages doivent être mis en quarantaine et non remis.
+  <sup>\*\*</sup>Examinez vos stratégies de blocage du courrier indésirable, car ces messages doivent être mis en quarantaine et non remis.
 
 - **Emplacements de remise**: vous souhaiterez peut-être examiner les messages qui ont été remis aux destinataires (soit dans la boîte de réception, soit dans le dossier courrier indésirable), même si les utilisateurs n'ont pas cliqué sur l'URL de la charge utile dans le message. Vous pouvez également supprimer les messages mis en quarantaine en quarantaine. Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md).
 

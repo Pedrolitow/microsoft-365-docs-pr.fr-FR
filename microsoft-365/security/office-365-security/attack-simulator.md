@@ -16,18 +16,18 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Utilisez un simulateur d’attaque pour exécuter des attaques simulant le hameçonnage et les mots de passe dans votre organisation plan 2 Office 365 E5 ou ATP, ce qui peut vous aider à identifier les utilisateurs vulnérables avant qu’une véritable attaque ne touche votre entreprise.
-ms.openlocfilehash: 5e924ebe43a6d7fd1af460b304e862207baffb61
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612634"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637337"
 ---
 # <a name="attack-simulator-in-office-365-atp"></a>Simulateur d’attaque dans Office 365 ATP
 
 Le simulateur d’attaque dans Office 365 Advanced Threat Protection Plan 2 (ATP plan 2) vous permet d’exécuter des campagnes d’hameçonnage et de mot de passe réalistes, mais simulées dans votre organisation. Vous pouvez utiliser les résultats des campagnes pour identifier et former les utilisateurs vulnérables.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
 - Pour ouvrir le centre de sécurité & conformité d’Office 365, <https://protection.office.com/>accédez à. Le simulateur d’attaque est disponible dans le **simulateur d’attaques** **Threat Management** \> .
 
@@ -186,7 +186,7 @@ Si vous envisagez d’utiliser l’un des modèles intégrés ou de créer le me
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Toutes les URL sont intentionnellement http, et non HTTPS.</li><li>Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs Web pris en charge avant d’utiliser l’URL d’une campagne de hameçonnage.</li><li>Vous devez sélectionner une URL. Pour les campagnes de **hameçonnage (de pièces jointes)** , vous pouvez supprimer le lien du corps du message à l’étape suivante (dans le cas contraire, le message contiendra un lien **et** une pièce jointe).</li></ul>
+     > <ul><li>Toutes les URL sont intentionnellement http, et non HTTPS.</li><li>Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs Web pris en charge avant d’utiliser l’URL d’une campagne de hameçonnage.</li><li>Vous devez sélectionner une URL. Pour les campagnes de <b>hameçonnage (de pièces jointes)</b> , vous pouvez supprimer le lien du corps du message à l’étape suivante (dans le cas contraire, le message contiendra un lien <b>et</b> une pièce jointe).</li></ul>
 
    - **Type de pièce jointe**: ce paramètre est disponible uniquement dans les campagnes de **hameçonnage (de pièces jointes)** . Cliquez sur le menu déroulant et sélectionnez **. DOCX** ou **. PDF** à partir de la liste.
 
@@ -220,7 +220,7 @@ Une *attaque par mot de passe* tente de deviner les mots de passe des comptes d�
 
 Dans un simulateur d’attaque, deux types différents de campagnes d’attaque de mot de passe sont disponibles pour vous permettre de tester la complexité des mots de passe des utilisateurs :
 
-- **Mot de passe en force (attaque de dictionnaire)**: une attaque *brutale** ou une attaque de *dictionnaire* utilise un fichier dictionnaire volumineux de mots de passe sur un compte d’utilisateur en espérant que l’un d’entre eux fonctionnera (de nombreux mots de passe par rapport à un compte). Le verrouillage de mot de passe incorrect permet de dissuader les attaques de mot de passe en force.
+- **Mot de passe en force (attaque de dictionnaire)**: une attaque en *force ou une* attaque de *dictionnaire* utilise un fichier dictionnaire volumineux de mots de passe sur un compte d’utilisateur en espérant que l’un d’entre eux fonctionnera (de nombreux mots de passe par rapport à un compte). Le verrouillage de mot de passe incorrect permet de dissuader les attaques de mot de passe en force.
 
   Pour l’attaque de dictionnaire, vous pouvez spécifier un ou plusieurs mots de passe à essayer (entrés manuellement ou dans un fichier téléchargé) et vous pouvez spécifier un ou plusieurs utilisateurs.
 

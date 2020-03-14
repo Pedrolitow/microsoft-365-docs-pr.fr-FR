@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: "Pour les administrateurs : supprimer des éléments dans une \n\ndossier éléments récupérables de er pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s’agit d’un moyen efficace de supprimer des données accidentellement propagées dans Office 365."
 ms.openlocfilehash: 5c8614c0faf8ea0f807b09cb24ccd3409dd7facb
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409649"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635062"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en attente-aide de l’administrateur
 

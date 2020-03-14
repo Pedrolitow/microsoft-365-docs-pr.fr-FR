@@ -1,5 +1,5 @@
 ---
-title: Récupération après une attaque par ransomware
+title: Récupérer des attaques par ransomware
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs d’Office 365 peuvent découvrir comment effectuer une récupération à partir d’une attaque par ransomware.
-ms.openlocfilehash: 04cfd2f2417b0c2e084a88f9ee156521339b18c4
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
+ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932369"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42640016"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Récupération suite à une attaque de ransomware dans Office 365
 
@@ -74,11 +74,7 @@ Une fois que vous avez terminé l’étape précédente pour supprimer la charge
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Étape 5 : récupération de vos fichiers dans OneDrive entreprise
 
-OneDrive entreprise vous permettra de récupérer tous les fichiers que vous y avez stockés. Vous disposez de deux options :
-
-- Utilisez le [site Web OneDrive](https://support.office.com/article/159cad6d-d76e-4981-88ef-de6e96c93893).
-
-- Si un grand nombre de fichiers ont été affectés, vous pouvez créer une demande de support pour une « restauration de collection de sites ». Cette demande permet de restaurer des fichiers jusqu’à 14 jours dans le passé.
+La restauration des fichiers dans OneDrive entreprise vous permet de restaurer l’intégralité de votre OneDrive à un point antérieur dans le temps au cours des 30 derniers jours. Pour plus d’informations, consultez [la rubrique restaurer votre espace OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>Étape 6 : récupérer les messages électroniques supprimés
 

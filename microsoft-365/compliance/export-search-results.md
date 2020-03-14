@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
 ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074029"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634932"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -212,7 +212,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
     
 - Par défaut, la taille maximale d’un fichier PST pouvant être exporté est de 10 Go. Cela signifie que si les résultats de la recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de la recherche de la boîte aux lettres seront exportés dans deux (ou plusieurs) fichiers PST distincts. Si vous choisissez d’exporter tous les résultats de recherche dans un seul fichier PST, le fichier PST sera Spilt dans des fichiers PST supplémentaires si la taille totale des résultats de la recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Consultez [la rubrique modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     
-    De plus, les résultats de recherche d’une boîte aux lettres spécifique ne sont pas réparties entre plusieurs fichiers PST, sauf si le contenu d’une boîte aux lettres unique est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST pour qui contient tous les messages dans un seul dossier et que les résultats de la recherche sont supérieurs à 10 Go, les éléments sont toujours organisés par ordre chronologique, de sorte qu’ils seront Spilt dans des fichiers PST supplémentaires en fonction du d r.
+    De plus, les résultats de recherche d’une boîte aux lettres spécifique ne sont pas réparties entre plusieurs fichiers PST, sauf si le contenu d’une boîte aux lettres unique est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST pour qui contient tous les messages dans un seul dossier et que les résultats de la recherche sont supérieurs à 10 Go, les éléments sont toujours organisés par ordre chronologique, de sorte qu’ils seront Spilt dans des fichiers PST supplémentaires en fonction de l’élément envoyé jours.
      
  ### <a name="export-reports"></a>Exporter des rapports
   

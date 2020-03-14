@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Découvrez comment autoriser les membres à envoyer des messages électroniques en tant que groupe Office 365 ou envoyer des courriers électroniques de la part d’un groupe Office 365.
 ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352755"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633782"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou envoyer de la part d’un groupe
 

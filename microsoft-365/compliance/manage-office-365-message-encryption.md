@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Une fois que vous avez terminé la configuration d’Office 365 message Encryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s’il faut activer des codes de passe unique, afficher le bouton protéger dans Outlook sur le Web, et bien plus encore. Les tâches décrites dans cet article expliquent comment procéder.
 ms.openlocfilehash: c235205535b4871deb1963a9113a82429917b75e
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42605358"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634342"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 

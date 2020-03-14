@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: Découvrez comment configurer et protéger vos comptes d’administrateur.
 ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080573"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633752"
 ---
 # <a name="protect-your-administrator-accounts"></a>Protéger vos comptes d’administrateur
 
@@ -57,7 +57,7 @@ Pour créer des comptes d’administration supplémentaires :
 
     ![Choisir le rôle d’administrateur](../media/adminroles.png)
     
-4. Dans la section **licences de produit** , déplacez le sélecteur de **Microsoft 365 entreprise** sur **désactivé** et l' **utilisateur créer sans licence de produit** sur activé. ****
+4. Dans la section **licences de produit** , déplacez le sélecteur de **Microsoft 365 entreprise** sur **désactivé** et l' **utilisateur créer sans licence de produit** sur activé. **On**
 
     ![Choisir la licence de produit](../media/productlicense.png)
 

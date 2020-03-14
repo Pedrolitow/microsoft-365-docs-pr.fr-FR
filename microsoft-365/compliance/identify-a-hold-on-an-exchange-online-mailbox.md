@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Office 365. Ces types de conservation incluent les conservations pour litige, la découverte électronique et les stratégies de rétention d’Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d’une stratégie de rétention à l’échelle de l’organisation.
 ms.openlocfilehash: f45310547d41d8ec1092a3fecfaa0b50c4439559
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596501"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634862"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -73,7 +73,7 @@ Le tableau suivant décrit comment identifier différents types de suspensions e
 
 |Type de conservation  |Exemple de valeur  |Comment identifier la conservation  |
 |---------|---------|---------|
-|Conservation pour litige     |    `True`     |     La conservation pour litige est activée pour une boîte ** aux lettres lorsque la propriété `True`LitigationHoldEnabled est définie sur.    |
+|Conservation pour litige     |    `True`     |     La conservation pour litige est activée pour une boîte *LitigationHoldEnabled* aux lettres lorsque la propriété `True`LitigationHoldEnabled est définie sur.    |
 |conservation eDiscovery     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *propriété InPlaceHolds* contient le GUID de n’importe quelle conservation associée à un cas eDiscovery dans le centre de sécurité et de conformité. Vous pouvez indiquer qu’il s’agit d’une conservation eDiscovery, car le `UniH` GUID commence par le préfixe (qui désigne une conservation unifiée).      |
 |Blocage local     |     `c0ba3ce811b6432a8751430937152491` <br/> ou <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La propriété *InPlaceHolds* contient le GUID de la conservation inaltérable qui est placée sur la boîte aux lettres. Vous pouvez indiquer qu’il s’agit d’une conservation inaltérable, car le GUID ne commence pas par un préfixe ou il `cld` commence par le préfixe.     |
 |Stratégie de rétention Office 365 spécifiquement appliquée à la boîte aux lettres     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> ou <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La propriété InPlaceHolds contient les GUID de n’importe quelle stratégie de rétention d’emplacement spécifique qui est appliquée à la boîte aux lettres. Vous pouvez identifier les stratégies de rétention, car `mbx` le GUID `skp` commence par le ou le préfixe. Le `skp` préfixe indique que la stratégie de rétention est appliquée aux conversations Skype entreprise dans la boîte aux lettres de l’utilisateur.    |
@@ -235,7 +235,7 @@ Gardez les points suivants à l’esprit lors de la gestion d’une boîte aux l
 
 Une fois que vous avez identifié les conservations qui sont appliquées à une boîte aux lettres, vous pouvez effectuer des tâches telles que la modification de la durée de la suspension, la suppression temporaire ou définitive de la conservation, ou l’exclusion d’une boîte aux lettres inactive d’une stratégie de rétention Office 365. Pour plus d’informations sur l’exécution de tâches relatives aux suspensions, consultez l’une des rubriques suivantes :
 
-- Exécutez la commande [Set-retentioncompliancepolicy permet- \<AddExchangeLocationException user Mailbox>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps) dans Security & Centre de conformité PowerShell pour exclure une boîte aux lettres d’une stratégie de rétention Office 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention ** pour lesquelles la valeur `All`de la propriété exchangelocation permet est égale à.
+- Exécutez la commande [Set-retentioncompliancepolicy permet- \<AddExchangeLocationException user Mailbox>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps) dans Security & Centre de conformité PowerShell pour exclure une boîte aux lettres d’une stratégie de rétention Office 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention *ExchangeLocation* pour lesquelles la valeur `All`de la propriété exchangelocation permet est égale à.
 
 - Exécutez la commande [Set-Mailbox- \<ExcludeFromOrgHolds Hold en attente sans préfixe ou suffixe>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) dans Exchange Online PowerShell pour exclure une boîte aux lettres inactive d’une stratégie de rétention Office 365 à l’échelle de l’organisation.
 
