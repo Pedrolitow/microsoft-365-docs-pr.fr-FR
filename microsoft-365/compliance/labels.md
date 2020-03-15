@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de rétention pour classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: 5dcd97400067645c48f02a31061721644bae553c
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: 4052cf691e9123e3d840d5fa6759ff7f032b67c2
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277441"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634302"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -58,9 +58,6 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
     
    - Les utilisateurs n’ont plus à connaître les stratégies de gouvernance des données : à la place, ils peuvent se concentrer sur leur travail.
 
-  > [!NOTE]
-  > Pour appliquer automatiquement des étiquettes, chaque utilisateur disposant des autorisations nécessaires pour modifier du contenu étiqueté automatiquement dans un site, ou sa boîte aux lettres est sélectionnée pour l'étiquetage automatique, doit disposer d’une licence Office 365 Entreprise E5 au minimum. Les utilisateurs qui ont simplement accès en lecture seule au contenu ou qui répondent aux messages étiquetés n’ont pas besoin de cette licence.
-      
 - **Mettre en œuvre la gestion des enregistrements dans Office 365**, notamment les e-mails et les documents. Vous pouvez utiliser une étiquette de rétention pour classer du contenu en tant qu’enregistrement. Lorsque cela se produit, l’étiquette ne peut pas être modifiée ou supprimée, et le contenu ne peut pas être modifié ou supprimé. 
 
 - **Appliquer une étiquette de rétention par défaut à une bibliothèque de documents, dossier ou ensemble de documents** dans SharePoint, afin que tous les documents figurant dans cette bibliothèque obtiennent l’étiquette de rétention par défaut.  
@@ -268,8 +265,6 @@ Vous pouvez choisir d’appliquer automatiquement des étiquettes de rétention 
     
 ![Page Choisir une condition pour l'application automatique de l’étiquette](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-Les étiquettes de rétention s'appliquant automatiquement qui sont configurées pour les deux premières options exigent un abonnement Office 365 Entreprise E5. Si vous utilisez l’option de classifieurs entraînables, cette fonctionnalité comporte des [conditions supplémentaires en matière de licences](classifier-getting-started-with.md#licensing-requirements).
-
 L’application automatique d'étiquettes de rétention à tout le contenu correspondant aux conditions que vous avez configurées peut prendre jusqu’à sept jours.
   
 > [!TIP]
@@ -318,7 +313,9 @@ Exemples de requêtes :
 
 ### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
 
-Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sélectionner un classifieur intégré ou un classifieur personnalisé. Les classifieurs intégrés incluent : **Langage choquant**, **CV**, **SourceCode**, **Harcèlement**, **Blasphème** et la **Menace**.
+Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sélectionner un classifieur intégré ou un classifieur personnalisé. Les classifieurs intégrés incluent : **Langage choquant**, **CV**, **SourceCode**, **Harcèlement ciblé**, **Blasphème** et la **Menace** :
+
+![Sélectionnez un classificateur pouvant être formé](../media/retention-label-classifers.png)
 
 Pour appliquer automatiquement une étiquette à l’aide de cette option, les sites et boîtes aux lettres SharePoint Online doivent avoir au moins 10 Mo de données.
 
@@ -328,7 +325,7 @@ Pour consulter un exemple de configuration, voir [Comment préparer et utiliser 
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint
 
-En plus de permettre aux utilisateurs d’appliquer une étiquette de rétention à des documents individuels, vous pouvez également appliquer une étiquette de rétention par défaut à une bibliothèque, à un dossier ou à un ensemble de documents SharePoint, afin que tous les documents dans cet emplacement héritent de cette étiquette de rétention par défaut (les étiquettes par défaut sont une fonctionnalité E5).
+En plus de permettre aux utilisateurs d’appliquer une étiquette de rétention à des documents individuels, vous pouvez également appliquer une étiquette de rétention par défaut à une bibliothèque, à un dossier ou à un ensemble de documents SharePoint, afin que tous les documents dans cet emplacement héritent de cette étiquette de rétention par défaut.
   
 Pour une bibliothèque de documents, cette opération s’effectue sur la page **Paramètres de la bibliothèque** d’une bibliothèque de documents. Lorsque vous choisissez l’étiquette de rétention par défaut, vous pouvez également choisir de l’appliquer aux éléments présents dans la bibliothèque. 
   

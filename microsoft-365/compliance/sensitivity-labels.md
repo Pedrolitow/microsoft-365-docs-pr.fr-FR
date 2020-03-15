@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité de l'infrastructure Microsoft Information Protection pour classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises. Ces étiquettes peuvent appliquer des paramètres de protection incluant des marquages visuels de chiffrement, tels que des pieds de page et des filigranes.
-ms.openlocfilehash: 3b8e5e39ef6e2cb2e452fbf1764d53bd51ad24d8
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 7593774b4cb0786cc82988442bbca522ce534cc8
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543160"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634642"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -190,6 +190,9 @@ Si vous utilisez des étiquettes de rétention en plus des étiquettes de confid
 Si vous avez déployé des étiquettes à l’aide d’Azure Information Protection, consultez les sections suivantes pour obtenir de l'aide avant de commencer à utiliser les étiquettes de confidentialité.
 
 ### <a name="azure-information-protection-labels"></a>Étiquettes Azure Information Protection
+
+> [!NOTE]
+> La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le Portail Microsoft Azure fera l’objet d’un retrait le **31 mars 2021**. Pour plus d’informations, consultez l’[avis de dépréciation](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) officiel.
 
 Si vous utilisez des étiquettes Azure Information Protection car votre client n’est pas encore sur la [plateforme d’étiquetage unifié](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), nous vous recommandons d’éviter la création d'étiquettes de confidentialité tant que l’étiquetage unifié n’est pas activé. Dans ce scénario, les étiquettes que vous voyez dans le portail Microsoft Azure sont les étiquettes Azure Information Protection au lieu des étiquettes de confidentialité. Ces étiquettes peuvent être utilisées par le client Azure Information Protection (classique) sur des ordinateurs Windows, mais ne peuvent pas être utilisées par des appareils exécutant macOS, iOS ou Android. Pour résoudre ce problème, [migrez ces étiquettes](/azure/information-protection/configure-policy-migrate-labels) vers les étiquettes de confidentialité. 
 

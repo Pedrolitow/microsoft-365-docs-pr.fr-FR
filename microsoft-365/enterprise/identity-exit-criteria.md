@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure et les services d’identités.
-ms.openlocfilehash: 3fd4d0a1df50d55cb7a21668b609341d0c01aa35
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 433dec5e84c88dc6422619293f435f2d7199ea2e
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544063"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637287"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2 : Critères de sortie de l’infrastructure d’identités
 
@@ -118,7 +118,7 @@ Si nécessaire, l’[Étape 3](identity-secure-user-sign-ins.md#identity-mfa) pe
 
 1.  Créez un compte d’utilisateur test et attribuez-lui une licence. 
 2.  Configurez l’authentification multifacteur Azure pour le compte d’utilisateur test avec la méthode de vérification supplémentaire que vous utilisez pour les comptes d’utilisateur réels, comme l’envoi d’un SMS sur votre téléphone. 
-3.  Connectez-vous au portail Office 36 avec le compte d’utilisateur test.
+3.  Connectez-vous au portail Office 365 avec le compte d’utilisateur test.
 4.  Vérifiez que l’authentification multifacteur vous invite à saisir les informations de vérification supplémentaires et que l’authentification s’effectue sans problèmes. 
 5.  Supprimez le compte d’utilisateur test.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: 9ecc74610c0d150dd511a8e24fb66037768587a4
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: e7e6de977e8fad231ecb544a95f15caca5e56d13
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280202"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634692"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -94,7 +94,7 @@ Lorsqu’une stratégie de rétention est affectée à un compte OneDrive ou à 
     > [!NOTE]
     > Nous avons récemment modifié la manière dont le contenu est supprimé de la bibliothèque de conservation et de préservation. Pour éviter toute perte de données par inadvertance, nous ne supprimons plus définitivement le contenu de la bibliothèque de conservation. Au lieu de cela, nous ne supprimons définitivement que le contenu de la corbeille de façon à ce que tout le contenu de la bibliothèque de conservation et de préservation passe transmis par la corbeille second niveau .
     
-2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention, il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette Corbeille (action également nommée « purge »), le document est déplacé vers la Corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et par conséquent que la recherche n’y trouve pas de contenu. Cela signifie qu’une conservation eDiscovery ne trouve aucun contenu à conserver dans la Corbeille. 
+2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention, il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette Corbeille (action également nommée « purge »), le document est déplacé vers la Corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas utilisée et par conséquent que la recherche n’y trouve pas de contenu. Cela signifie qu’une conservation eDiscovery ne trouve aucun contenu à conserver dans la Corbeille. 
     
 ### <a name="content-in-mailboxes-and-public-folders"></a>Contenu dans les boîtes aux lettres et les dossiers publics
 
@@ -106,16 +106,28 @@ Un processus évalue régulièrement les éléments du dossier Éléments récup
   
 Lorsqu’une personne tente de modifier certaines propriétés d’un élément de boîte aux lettres (objet, corps, pièces jointes, expéditeurs et destinataires ou la date d’envoi ou de réception d’un message), une copie de l’élément d’origine est enregistré dans le dossier des Éléments récupérables avant la validation de la modification. Cette action se produit à chaque modification ultérieure. À la fin de la période de rétention, les copies dans le dossier Éléments récupérables sont supprimées définitivement.
   
-Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, la boîte aux lettres devient inactive lorsque le compte d’utilisateur Office 365 est supprimé. Le contenu d’une boîte aux lettres inactive est toujours soumis à une stratégie de rétention placée sur la boîte aux lettres avant que celle-ci ne devienne inactive et ce contenu est disponible pour une recherche eDiscovery. Pour obtenir plus d’informations, consultez l’article [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
-  
 Lorsqu’une stratégie de rétention est affectée à une boîte aux lettres ou à un dossier public, le contenu suit l’un des deux chemins suivants :
 
 ![Diagramme du flux de rétention dans la messagerie et les dossiers publics](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Si l’élément est modifié ou supprimé définitivement** par l’utilisateur (par MAJ + SUPPR ou supprimé du dossier Éléments supprimés) pendant la période de rétention, l’élément est déplacé (ou copié, dans le cas d’une modification) vers le dossier Éléments récupérables. Ici, un processus s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours.
     
-2. **Si l’élément n’est ni modifié ni supprimé** pendant la période de rétention, ce même processus s’exécute régulièrement sur tous les dossiers de la boîte aux lettres et identifie les éléments dont la période de rétention a expiré. Ceux-ci sont alors supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré jusqu’à 30 jours. 
-    
+2. **Si l’élément n’est pas modifié ou supprimé** pendant la période de rétention, le même processus s’exécute régulièrement sur tous les dossiers dans la boîte aux lettres et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours. 
+
+### <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation
+
+**Exchange** 
+
+Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, celle-ci devient inactive lorsque le compte Office 365 de l’utilisateur est supprimé. Le contenu d’une boîte aux lettres inactive reste soumis à toute stratégie de rétention qui a été appliquée à la boîte aux lettres avant sa désactivation, et le contenu est accessible aux recherches eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
+
+**OneDrive**
+
+Si un utilisateur quitte votre organisation, tous les fichiers soumis à une stratégie de rétention ou contenant des étiquettes de rétention sont conservés pendant toute la durée de la stratégie ou de l’étiquette. Pendant cette période, tous les accès partagés continuent de fonctionner. À expiration de la période de rétention, le contenu est placé dans la Corbeille de collections de sites et n’est accessible à personne, à l’exception de l’administrateur. Si un document est marqué en tant qu’enregistrement par une stratégie de rétention, il est conservé jusqu’à la fin de la période de rétention, après quoi le contenu est définitivement supprimé.
+
+**SharePoint**
+
+Lorsqu’un utilisateur quitte votre organisation, le contenu qu’il a créé n’est pas affecté car SharePoint est considéré comme un environnement collaboratif, contrairement à la boîte aux lettres ou au compte OneDrive de l’utilisateur.
+
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>Fonctionnement d’une stratégie de rétention avec les versions d’un document dans un site
 
 Le contrôle de version est une fonctionnalité de toutes les bibliothèques de documents dans SharePoint Online et OneDrive Entreprise. Par défaut, le contrôle de version conserve au moins les 500 versions principales, même si vous pouvez augmenter cette limite. Pour plus d'informations, voir [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
@@ -189,17 +201,17 @@ Vous pouvez facilement appliquer une stratégie de rétention à l’ensemble d�
   
 ### <a name="org-wide-policy"></a>Stratégie mise en place à l’échelle de l’organisation
 
-L’une des fonctionnalités les plus puissantes d’une stratégie de rétention est que celle-ci peut s’appliquer aux emplacements au sein d’Office 365, notamment :
+Ce qui fait la force d’une stratégie de rétention, c’est que vous pouvez l’appliquer simultanément à tous les emplacements Office 365 suivants :
   
-- Messagerie électronique Exchange
+- La messagerie électronique Exchange
     
-- Vue d’ensemble des collections de sites SharePoint
+- Les collections de sites SharePoint
     
-- Comptes OneDrive
+- Les comptes OneDrive
     
-- Groupes Office 365 (s’applique au contenu de la boîte aux lettres et du site SharePoint associé.)
+- Les groupes Office 365 (la stratégie s’applique au contenu de la boîte aux lettres et du site SharePoint associé)
     
-- Dossiers publics Exchange
+- Les dossiers publics Exchange
     
 
 ![Option Tous les emplacements](../media/retention-policies-all-locations.png)
@@ -230,15 +242,25 @@ Bien que ces limites existent, notez que vous pouvez les contourner en appliquan
   
 ### <a name="skype-locations"></a>Emplacements Skype
 
-Contrairement à la messagerie Exchange, vous ne pouvez pas basculer le statut de l’emplacement Skype pour inclure tous les utilisateurs, mais lorsque vous activez cet emplacement, vous sélectionnez manuellement les utilisateurs dont vous souhaitez conserver les conversations :
+À la différence de la messagerie Exchange, l’activation de l’emplacement Skype ne s’applique pas à l’ensemble de vos utilisateurs. Après avoir activé l’emplacement Skype, vous devez sélectionner manuellement chaque utilisateur dont vous souhaitez conserver les conversations :
 
 ![Choisir un emplacement Skype pour les stratégies de rétention](../media/skype-location-retention-policies.png)
   
-Lorsque vous sélectionnez**Choisir les utilisateurs**, vous pouvez rapidement inclure tous les utilisateurs en activant la case à cocher **Nom** dans l’en-tête de colonne. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion spécifique dans la stratégie. Par conséquent, si vous incluez plus de 1 000 utilisateurs, les limites indiquées dans la section précédente s’appliquent. Le fait de sélectionner tous les utilisateurs Skype ici ne revient pas au même qu’une stratégie à l’échelle de l’organisation qui serait en mesure d’inclure tous les utilisateurs Skype par défaut. 
+Après avoir sélectionné **Choisir des utilisateurs**, vous pouvez inclure rapidement tous les utilisateurs en cochant la case **Nom** située dans l’en-tête de colonne. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion spécifique dans la stratégie. Par conséquent, si vous incluez plus de 1 000 utilisateurs, les limites indiquées dans la section précédente s’appliquent. Le fait de sélectionner tous les utilisateurs Skype ici ne revient pas au même qu’une stratégie à l’échelle de l’organisation qui serait en mesure d’inclure tous les utilisateurs Skype par défaut. 
   
 ![Page Sélection des utilisateurs Skype](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
 Notez que **Historique des conversations**, un dossier dans Outlook, est une fonctionnalité qui n’a rien à voir avec l’archivage Skype. La fonctionnalité **Historique des conversations** peut être désactivée par l’utilisateur final, mais l’archivage pour Skype s’effectue en stockant une copie des conversations Skype dans un dossier masqué inaccessible à l’utilisateur, mais disponible pour eDiscovery.
+
+### <a name="sharepoint-locations"></a>Emplacements SharePoint
+
+Votre stratégie de rétention peut conserver le contenu des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Office 365 et des sites classiques. Cette option ne prend pas en charge les sites d’équipe connectés par des groupes Office 365. Utilisez plutôt des emplacements de **groupes Office 365**.
+
+Si vous spécifiez des sites non pris en charge, ceux-ci sont ignorés par la stratégie de rétention.
+
+Lorsque vous spécifiez vos emplacements pour les sites SharePoint, aucune autorisation n’est nécessaire pour accéder au site, et aucune validation n’intervient au moment où vous spécifiez l’URL sur la page **Modifier les emplacements**. Toutefois, les sites doivent être indexés, et l’existence des sites que vous spécifiez est vérifiée à la fin de l’Assistant.
+
+Si cette vérification échoue, un message apparaît pour vous informer que la validation de l’URL entrée a échoué, et que l’Assistant ne créera pas la stratégie de rétention tant que la vérification de validation n’aura pas abouti. Si ce message apparaît, revenez à l’Assistant pour modifier l’URL ou supprimer le site.
 
 ### <a name="teams-locations"></a>Emplacements Teams
 
@@ -293,7 +315,7 @@ De plus, il n’est pas possible d’utiliser l’emplacement Exchange pour incl
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Exclusion de types spécifiques d’éléments Exchange d’une stratégie de rétention
 À l’aide de PowerShell, vous pouvez exclure des types spécifiques d’éléments Exchange d’une stratégie de rétention. Par exemple, vous pouvez exclure des messages vocaux, des conversations par messagerie instantanée et d’autre contenu Skype Entreprise Online dans les boîtes aux lettres. Vous pouvez également exclure des éléments de calendrier, de note et de tâche. Cette fonctionnalité est disponible uniquement à l’aide de PowerShell ; elle n’est pas disponible dans l’interface utilisateur lorsque vous créez une stratégie de rétention.
   
-Pour ce faire, utilisez le paramètre `ExcludedItemClasses` des cmdlets `New-RetentionComplianceRule` et `Set-RetentionComplianceRule`. Pour obtenir plus d’informations sur PowerShell, consultez la section [Trouver les cmdlets PowerShell pour les stratégies de rétention](#find-the-powershell-cmdlets-for-retention-policies) indiquée ci-après.
+Pour ce faire, utilisez le paramètre `ExcludedItemClasses` des applets de commande `New-RetentionComplianceRule` et `Set-RetentionComplianceRule`.
 
 ## <a name="locking-a-retention-policy"></a>Verrouillage d’une stratégie de rétention
 Certaines organisations doivent respecter des règles définies par des organismes de réglementation, comme la règle 17a-4 de la SEC (Securities and Exchange Commission), stipulant qu’après l’activation d’une stratégie de rétention, celle-ci ne peut pas être désactivée ni rendue moins restrictive. Grâce au verrouillage de conservation, vous pouvez verrouiller la stratégie afin que personne ne puisse la désactiver ni la rendre moins restrictive, pas même l’administrateur.
@@ -314,7 +336,7 @@ Ensuite, pour afficher une liste de vos stratégies de rétention et rechercher 
 
 Enfin, pour placer un Verrouillage de Conservation sur la stratégie de rétention, exécutez `Set-RetentionCompliancePolicy` avec le`RestrictiveRetention` paramètre défini sur true. Par exemple :
 
-`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+`Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true`
 
 ![Paramètre RestrictiveRetention dans PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
@@ -324,7 +346,7 @@ Après avoir exécuté cette applet de commande, vous voyez une invite de confir
 
 Un verrouillage de conservation est désormais placé sur la stratégie de rétention. Si vous exécutez `Get-RetentionCompliancePolicy`, le paramètre `RestrictiveRetention` est défini sur true. Par exemple :
 
-`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+`Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl`
 
 ![Stratégie verrouillée avec tous les paramètres affichés dans PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
@@ -405,15 +427,7 @@ Les membres de votre équipe de conformité appelés à créer des stratégies d
 Pour plus d’informations, voir [Autoriser des utilisateurs à accéder au Centre de sécurité et conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 Ces autorisations sont requises uniquement pour créer et appliquer une stratégie de rétention. L’application d’une stratégie ne nécessite pas d’accès au contenu.
-  
-## <a name="find-the-powershell-cmdlets-for-retention-policies"></a>Trouver les cmdlets PowerShell pour les stratégies de rétention
 
-Pour utiliser les cmdlets des stratégies de rétention, vous devez effectuer les étapes suivantes :
-  
-1. [Se connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
-    
-2. Utiliser ces [cmdlets du Centre de sécurité &amp; conformité Office 365](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
-    
 ## <a name="more-information"></a>Plus d’informations
 
 - [Vue d’ensemble des étiquettes](labels.md)
