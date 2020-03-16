@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: ae268c1368933c729177d6083294e7e7a8735958
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
+ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074921"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "42651838"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées de document dans Advanced eDiscovery
 
 Le tableau suivant répertorie les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery. Le tableau fournit les informations suivantes :
 
-- Nom du **champ** et **nom du champ d’affichage :** nom du champ de métadonnées et nom du champ affiché lors de l’affichage des métadonnées de fichier d’un document sélectionné dans un jeu de révision. Notez que certains champs de métadonnées ne sont pas inclus lors de l’affichage des métadonnées de fichier d’un document. Ces champs sont mis en surbrillance avec un astérisque (*).
+- Nom du **champ** et **nom du champ d’affichage :** nom du champ de métadonnées et nom du champ affiché lors de l’affichage des métadonnées de fichier d’un document sélectionné dans un jeu de révision. Certains champs de métadonnées ne sont pas inclus lors de l’affichage des métadonnées de fichier d’un document. Ces champs sont mis en surbrillance avec un astérisque (*).
 
 - **Nom du champ pouvant** faire l’objet d’une recherche : Nom de la propriété que vous pouvez rechercher lors de l’exécution d’une [requête Review Set](review-set-search.md). Une cellule vide signifie que vous ne pouvez pas rechercher le champ dans une requête d’ensemble de révision.
 
--  **Nom du champ exporté :** Nom du champ de métadonnées qui est inclus lors de l’exportation des documents.  Une cellule vide signifie que le champ n’est pas inclus dans les métadonnées exportées.
+- **Nom du champ exporté :** Nom du champ de métadonnées qui est inclus lors de l’exportation des documents.  Une cellule vide signifie que le champ n’est pas inclus dans les métadonnées exportées.
 
 - **Description :** Description du champ de métadonnées.
 
@@ -77,7 +77,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Sécurité de messagerie|EmailSecurity|Email_security|Paramètre de sécurité du message : **0** -aucun ; **1** -signé ; **2** -chiffrée ; **3** -chiffrés et signés.|
 |Sensibilité du courrier électronique|EmailSensitivity|email_sensitivity|Paramètre de confidentialité du message : **0** -aucun ; **1** personnel ; **2** -privé ; **3** -CompanyConfidential.|
 |Message électronique|EmailSet|Email_set|ID de groupe pour tous les messages dans le même groupe de courriers.|
-|EmailThread*||Email_thread|Position du message dans le jeu de courriers électroniques ; se compose d’ID de nœud de la racine vers le message actuel ; , séparés par un point.|
+|EmailThread*||Email_thread|Position du message dans le jeu de courriers électroniques ; se compose d’ID de nœud de la racine vers le message actuel et est séparé par des points (.).|
 |Type de contenu extrait||Extracted_content_type|Type de contenu extrait sous la forme d’un type MIME ; par exemple, **image/JPEG**|
 |ExtractedTextLength*||Extracted_text_length|Nombre de caractères dans le texte extrait.|
 |Problème avec le score de pertinence de la famille 1 *||Family_relevance_score_case_issue_1|Pertinence du scénario de pertinence de la famille 1 par rapport à la pertinence.|
@@ -93,14 +93,14 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Avec pièce jointe|HasAttachment|Email_has_attachment|Indique si le message contient des pièces jointes.|
 |A un avocat|HasAttorney||**True** lorsqu’au moins un des participants figure dans la liste des avocats ; Sinon, la valeur est **false**.|
 |Telle||Has_text|Indique si l’élément contient du texte ou non. les valeurs possibles sont **true** et **false**.|
-|ID non modifiable|ImmutableId|Immutable_ID|ID non modifiable tel qu’il est stocké dans Office 365.|
+|ID non modifiable||Immutable_ID|Cet ID est utilisé pour identifier de manière unique un document au sein d’un ensemble de révision. Ce champ ne peut pas être utilisé dans une recherche de jeu de révision et l’ID ne peut pas être utilisé pour accéder à un document dans son emplacement d’origine.|
 |Type inclusif|InclusiveType|Inclusive_type|Type inclusif calculé pour l’analyse : **0** -non inclus ; **1** -inclus ; **2** -inclus moins ; copie **3** -inclusive.|
 |En réponse à l’ID||In_reply_to_ID|En réponse à l’ID du message.|
 |Est représentatif|IsRepresentative|Is_representative|Un document dans chaque ensemble de doublons exact est marqué comme représentatif.|
 |Classe de l’élément|ItemClass|Item_class|Classe d’élément fournie par Exchange Server ; par exemple, **IPM. Note**|
 |Dernière modification|LastModifiedDate|Doc_date_modified|Date de dernière modification à partir des métadonnées de document.|
 |ID de chargement|LoadId|Load_ID|ID du jeu de charges dans lequel l’élément a été ajouté à un jeu de révision.|
-|L’emplacement|L’emplacement|L’emplacement|Chaîne qui indique le type d’emplacement à partir duquel les documents ont été issus.<br /><br />Données **importées** -données non Office 365<br />**Teams** -Microsoft teams<br />**Exchange** -boîtes aux lettres Exchange<br />**SharePoint** -sites SharePoint<br />**Onedrive** -comptes onedrive|
+|Emplacement|Emplacement|Emplacement|Chaîne qui indique le type d’emplacement à partir duquel les documents ont été issus.<br /><br />Données **importées** -données non Office 365<br />**Teams** -Microsoft teams<br />**Exchange** -boîtes aux lettres Exchange<br />**SharePoint** -sites SharePoint<br />**Onedrive** -comptes onedrive|
 |Nom de l’emplacement|LocationName|Location_name|Chaîne qui identifie la source de l’élément. Pour Exchange, il s’agit de l’adresse SMTP de la boîte aux lettres ; pour SharePoint et OneDrive, l’URL de la collection de sites.|
 |Marqué comme représentant|MarkAsRepresentative||Un document de chaque ensemble de doublons exact est marqué comme représentant.|
 |Marqué comme problème pré-balisé 1 *||Marked_as_pre_tagged_Case_issue_1|Marqué comme prébalisage du problème 1 de la pertinence.|
@@ -111,8 +111,8 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Extension Native|NativeExtension|Native_extension|Extension native de l’élément.|
 |Nom de fichier natif|NativeFileName|Native_file_name|Nom de fichier natif de l’élément.|
 |NativeMD5||Native_MD5|Hachage MD5 du flux de fichier.|
-|ND/ET tri : exclusion des pièces jointes|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concaténation du jeu de messages électroniques et de la définition de l’adresse de messagerie pour un tri efficace lors de la révision ; **D** est ajouté en tant que préfixe aux ensembles ND et **E** est ajouté aux ensembles de messages électroniques.|
-|Tri ND/ET : pièces jointes incluses|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation du jeu de messages électroniques et de la définition de l’adresse de messagerie pour un tri efficace lors de la révision ; **D** est ajouté en tant que préfixe aux ensembles ND et **E** est ajouté aux ensembles de messages électroniques. Chaque e-mail dans un ensemble de courriers est suivi des pièces jointes appropriées.|
+|ND/ET tri : exclusion des pièces jointes|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concaténation du thread de courrier (ET) défini et du jeu de quasi-doublon (ND). Ce champ est utilisé pour un tri efficace lors de la révision. Un **D** est préfixé à des jeux ND et un **E** est préfixé sur et définit.|
+|Tri ND/ET : pièces jointes incluses|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’une série de threads de messagerie (ET) définie et d’un jeu de quasi-doublon (ND). Ce champ est utilisé pour un tri efficace lors de la révision. Un **D** est préfixé à des jeux ND et un **E** est préfixé sur et définit. Chaque élément de messagerie dans un ET un ensemble est suivi des pièces jointes appropriées.|
 |Problème 1 de cas de score de pertinence normalisé||Normalized_relevance_score_case_issue_1|Note de pertinence normalisée problème 1 par rapport à la pertinence.|
 |Auteurs O365||O365_authors|Auteur à partir de SharePoint.|
 |O365 créé par||O365_created_by|Créé par à partir de SharePoint.|
@@ -149,7 +149,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Subject|Subject|Email_subject|Objet du message.|
 |Subject/title|SubjectTitle||Champ calculé constitué de l’objet ou du titre de l’élément.|
 |Marqué par le problème 1||Tagged_by_Case_issue_1|Utilisateur qui a balisé ce document pour le problème 1 en pertinence.|
-|Tags|Tags|Tags|Balises appliquées dans un jeu de révision.|
+|Balises|Balises|Balises|Balises appliquées dans un jeu de révision.|
 |Liste des thèmes|ThemesList|Themes_list|Liste des thèmes telle qu’elle est calculée pour l’analyse.|
 |Titre|Titre|Doc_title|Titre des métadonnées du document.|
 |À|À|Email_to|Champ à pour les types de message. Le format **est\<DisplayName SmtpAddress>**|
