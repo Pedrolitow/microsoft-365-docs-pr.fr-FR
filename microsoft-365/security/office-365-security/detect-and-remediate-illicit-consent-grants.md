@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger le consentement illicite accorde une attaque dans Office 365.
-ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363050"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710523"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Détecter et résoudre les problèmes d’octroi illégal de consentement dans Office 365
 
@@ -29,7 +29,12 @@ ms.locfileid: "42363050"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Qu’est-ce que l’attaque d’octroi de consentement illicite dans Office 365 ?
 
-Dans le cadre d’une attaque d’octroi de consentement illicite, l’agresseur crée une application inscrite à Azure qui demande l’accès à des données, telles que des informations de contact, des courriers électroniques ou des documents. L’agresseur examine ensuite un utilisateur final pour lui accorder l’autorisation d’accéder à ses données par le biais d’une attaque par hameçonnage ou en injectant du code illicite dans un site Web de confiance. Une fois que l’application illicite a reçu l’autorisation, elle dispose d’un accès aux données au niveau du compte sans avoir besoin d’un compte organisationnel. Les étapes de correction normales, comme la réinitialisation des mots de passe pour les comptes violés ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces qui sont externes à l’organisation. Ces attaques exploitent un modèle d’interaction qui suppose que l’entité qui appelle les informations est Automation et non humain.
+Dans le cadre d’une attaque d’octroi de consentement illicite, l’agresseur crée une application inscrite à Azure qui demande l’accès à des données, telles que des informations de contact, des courriers électroniques ou des documents. L’agresseur examine ensuite un utilisateur final pour lui accorder l’autorisation d’accéder à ses données par le biais d’une attaque par hameçonnage ou en injectant du code illicite dans un site Web de confiance. Une fois que l’application illicite a reçu l’autorisation, elle dispose d’un accès aux données au niveau du compte sans avoir besoin d’un compte organisationnel. Les étapes de correction normales, comme la réinitialisation des mots de passe pour les comptes violés ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces qui sont externes à l’organisation. 
+
+Ces attaques exploitent un modèle d’interaction qui suppose que l’entité qui appelle les informations est Automation et non humain.
+
+> [!IMPORTANT]
+> Pensez-vous que vous rencontrez des problèmes avec des subventions illicites à partir d’une application, maintenant ? Microsoft Cloud App Security (MCAS) comporte des outils permettant de détecter, d’examiner et de corriger les applications OAuth. Cet article de la MCAS contient un didacticiel qui explique comment effectuer des recherches sur les [applications OAuth risquées](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth). Vous pouvez également définir des [stratégies d’application OAuth](https://docs.microsoft.com/cloud-app-security/app-permission-policy) pour examiner les autorisations demandées par l’application, que les utilisateurs autorisent ces applications, et qui approuvent ou bloquent largement ces demandes d’autorisations.
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>À quoi ressemble une attaque d’octroi de consentement illicite dans Office 365 ?
 
@@ -48,7 +53,7 @@ Vous devez rechercher dans le **Journal d’audit** Office 365 pour rechercher d
 5. Cliquez sur le résultat pour afficher les détails de l’activité. Cliquez sur **informations supplémentaires** pour obtenir les détails de l’activité. Vérifiez si IsAdminContent est défini sur true.
 
 > [!NOTE]
-> • Cette opération peut prendre jusqu’à 30 minutes ou jusqu’à 24 heures après l’exécution d’un événement pour que l’entrée du journal d’audit correspondante s’affiche dans les résultats de la recherche. <br/><br/> • La durée pendant laquelle un enregistrement d’audit est conservé et pouvant faire l’objet d’une recherche dans le journal d’audit dépend de votre abonnement Office 365, ainsi que du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * L’affichage de l’entrée du journal d’audit correspondante dans les résultats de la recherche après un événement peut prendre entre 30 minutes et 24 heures. <br/><br/> La durée pendant laquelle un enregistrement d’audit est conservé et utilisable dans le journal d’audit dépend de votre abonnement Office 365, ainsi que du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 Si cette valeur est true, cela signifie qu’une personne disposant d’un accès administrateur général peut avoir accordé un accès étendu aux données. Si cette opération est inattendue, prenez les mesures nécessaires pour [confirmer une attaque](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Procédure de confirmation d’une attaque
@@ -98,7 +103,7 @@ Le moyen le plus simple de vérifier l’attaque d’octroi de consentement illi
 - Administrateur local sur l’ordinateur à partir duquel exécutera les scripts.
 
 > [!IMPORTANT]
-> Nous vous recommandons vivement de demander une authentification multifacteur sur votre compte d’administrateur. Ce script prend en charge l’authentification MFA.
+> Nous ***vous recommandons vivement*** de demander une authentification multifacteur sur votre compte d’administrateur. Ce script prend en charge l’authentification MFA.
 
 1. Connectez-vous à l’ordinateur à partir duquel vous allez exécuter le script avec des droits d’administrateur local.
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés depuis le système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c1a44ad1e27d2d1002680faee56ae88e3e0921
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073012"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710543"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -35,7 +35,7 @@ Vous pouvez configurer un connecteur de données dans le centre de conformité M
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Étape 1 : créer une application dans Azure Active Directory
 
-La première étape consiste à créer et à enregistrer une nouvelle application dans Azure Active Directory (AAD). L’application correspond au connecteur RH que vous créez à l’étape 3.  La création de cette application permettra à AAD d’authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application est également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour télécharger vos données RH dans le Cloud de Microsoft. Lors de la création de cette application AAD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
+La première étape consiste à créer et à enregistrer une nouvelle application dans Azure Active Directory (AAD). L’application correspond au connecteur RH que vous créez à l’étape 3. La création de cette application permettra à AAD d’authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application est également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour télécharger vos données RH dans le Cloud de Microsoft. Lors de la création de cette application AAD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
 
 - ID de l’application AAD (également *appelé ID de* l’application ou *ID client*)
 
@@ -43,7 +43,7 @@ La première étape consiste à créer et à enregistrer une nouvelle applicatio
 
 - ID de client (également appelé *ID d’annuaire*)
 
-Pour obtenir des instructions pas à pas pour la création d’une application dans AAD, voir [Creating an AAD application](https://docs.microsoft.com/azure/kusto/management/access-control/how-to-provision-aad-app) .
+Pour obtenir des instructions détaillées sur la création d’une application dans AAD, consultez [la rubrique enregistrer une application avec la plateforme d’identité Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Étape 2 : préparer un fichier CSV avec vos données RH
 
@@ -128,7 +128,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   |**Parameter**|**Description**
+   |**Paramètre**|**Description**
    |:-----|:-----|:-----|
    |`tenantId`|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir le tenantId pour votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
    |`appId` |Il s’agit de l’ID d’application AAD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 
@@ -159,7 +159,7 @@ Après avoir créé le connecteur RH et exécuté le script pour charger vos don
 
    ![Le fichier journal du connecteur RH affiche les lignes numériques à partir du fichier CSV qui ont été téléchargées](../media/HRConnectorLogFile.png)
 
-   Le champ **RecordsSaved** indique le nombre de lignes du fichier CSV téléchargé. Par exemple, si le fichier CSV contient 4 lignes, la valeur des champs **RecordsSaved** est 4, si le script a téléchargé avec succès toutes les lignes dans le fichier CSV.
+   Le champ **RecordsSaved** indique le nombre de lignes du fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs **RecordsSaved** est 4, si le script a téléchargé avec succès toutes les lignes dans le fichier CSV.
 
 Si vous n’avez pas exécuté le script à l’étape 4, un lien vers le téléchargement du script est affiché lors de la **dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes de l’étape 4 pour l’exécuter.
 

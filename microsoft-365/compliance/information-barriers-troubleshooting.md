@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez cet article pour résoudre les problèmes liés aux barrières relatives aux informations.
-ms.openlocfilehash: b4c9bb46bc1e3c13cdc8b46a95733558714a44df
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c601ddedf3acc816181f287c74f8f4df207a6b5
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600591"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692661"
 ---
 # <a name="troubleshooting-information-barriers"></a>Résolution des problèmes d’obstacles aux informations
 
@@ -171,11 +171,46 @@ Assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d�
 
 3. [Afficher l’état des comptes d’utilisateur, des segments, des stratégies ou de l’application de stratégie](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>Problème : la stratégie de barrière des informations n’est pas appliquée à tous les utilisateurs désignés
+
+Une fois que vous avez défini des segments, défini des stratégies de barrière des informations et que vous avez tenté d’appliquer ces stratégies, vous pouvez constater que la stratégie s’applique à certains destinataires, mais pas à d’autres.
+Lorsque vous exécutez l' `Get-InformationBarrierPoliciesApplicationStatus` applet de commande, recherchez dans la sortie le texte suivant.
+
+> Identification`<application guid>`
+>
+> Nombre total de destinataires : 81527
+>
+> Destinataires ayant échoué : 2
+>
+> Catégorie d’échec : aucun
+>
+> État : terminé
+
+### <a name="what-to-do"></a>Procédure
+
+1. Recherchez dans le journal d’audit `<application guid>`. Vous pouvez copier ce code PowerShell et le modifier pour vos variables.
+
+```powershell
+$DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
+```
+
+2. Consultez la sortie détaillée du journal d’audit pour connaître les valeurs des `"UserId"` champs `"ErrorDetails"` et. Cela vous permettra d’obtenir la raison de l’échec. Vous pouvez copier ce code PowerShell et le modifier pour vos variables.
+
+```powershell
+   $DetailedLogs[1] |fl
+```
+ Par exemple :
+
+> « UserId » : utilisateur1
+> 
+>« ErrorDetails » : «Status : IBPolicyConflict. Erreur : le segment IB "segment ID1" et IB segment "segment ID2" a un conflit et ne peut pas être affecté au destinataire. 
+
+3. En règle générale, vous constaterez qu’un utilisateur a été inclus dans plusieurs segments. Vous pouvez résoudre ce problème en mettant à `-UserGroupFilter` jour la `OrganizationSegments`valeur dans.
+
+4. Réappliquer les stratégies de barrière des informations à l’aide de ces procédures : [informations sur les stratégies de barrières](information-barriers-policies.md#part-3-apply-information-barrier-policies).
+
+## <a name="related-topics"></a>Sujets associés
 
 [Définir des stratégies pour les barrières d’informations dans Microsoft teams](information-barriers-policies.md)
 
 [Obstacles aux informations](information-barriers.md)
-
-
-

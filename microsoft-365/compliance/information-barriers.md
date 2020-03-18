@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble des barrières de l’information
+title: En savoir plus sur les barrières relatives aux informations
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: 95d3268830fe506000416e2281a49325fb95efec
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600661"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692651"
 ---
-# <a name="information-barriers"></a>Obstacles aux informations
+# <a name="learn-about-information-barriers"></a>En savoir plus sur les barrières relatives aux informations
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -36,7 +36,7 @@ Les barrières de l’information sont désormais déployées à partir de Micro
 Pour tous ces exemples de scénarios (et plus), des stratégies de barrière des informations peuvent être définies pour empêcher ou autoriser les communications dans Microsoft Teams. De telles stratégies peuvent empêcher les personnes d’appeler ou de converser avec celles qu’ils ne doivent pas utiliser, ou d’autoriser les utilisateurs à communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec des stratégies de barrière des informations en vigueur, chaque fois que des utilisateurs couverts par ces stratégies tentent de communiquer avec d’autres personnes dans Microsoft Teams, des vérifications sont effectuées pour empêcher (ou autoriser) la communication (comme défini par les stratégies de barrière des informations). Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!IMPORTANT]
-> Actuellement, les barrières de l’information ne s’appliquent pas aux communications de messagerie ou au partage de fichiers via SharePoint Online ou OneDrive. En outre, les barrières de l’information sont indépendantes des [limites de conformité](tagging-and-assessment-in-advanced-ediscovery.md).<p>Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d’adresses Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en vigueur. (Les barrières d’informations sont basées sur les stratégies de carnet d’adresses.) 
+> Actuellement, les barrières de l’information ne s’appliquent pas aux communications de messagerie ou au partage de fichiers via SharePoint Online ou OneDrive. En outre, les barrières de l’information sont indépendantes des [limites de conformité](set-up-compliance-boundaries.md).<p>Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d’adresses Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en vigueur. (Les barrières d’informations sont basées sur les stratégies de carnet d’adresses.) 
 
 ## <a name="what-happens-with-information-barriers"></a>Qu’en est-il des barrières de l’information ?
 
