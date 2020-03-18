@@ -17,27 +17,27 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité d’Office 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634162"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710513"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Recherche et suppression de messages électroniques dans votre organisation Office 365
+# <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
 **Cet article est destiné aux administrateurs. Vous essayez de rechercher des éléments à supprimer dans votre boîte aux lettres ? Voir [Rechercher un message ou un élément avec la Recherche instantanée](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
 Vous pouvez utiliser la fonctionnalité de recherche de contenu dans Office 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation. Cela peut vous aider à rechercher et supprimer les messages potentiellement nuisibles ou à haut risque, tels que :
   
 - Messages contenant des virus ou des pièces jointes dangereuses
-    
+
 - Messages de hameçonnage
-    
+
 - Messages qui contiennent des données sensibles
-    
+
 > [!CAUTION]
-> La fonction Rechercher et vider est puissante et permet à toute personne qui reçoit les autorisations nécessaires de supprimer des messages électroniques dans des boîtes aux lettres de votre organisation. 
+> La fonction Rechercher et vider est puissante et permet à toute personne qui reçoit les autorisations nécessaires de supprimer des messages électroniques dans des boîtes aux lettres de votre organisation.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
