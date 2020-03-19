@@ -2,8 +2,8 @@
 title: FAQ sur la mise en quarantaine
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -15,62 +15,62 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: Cette rubrique présente les questions fréquemment posées ainsi que les réponses au sujet de la mise en quarantaine hébergée.
-ms.openlocfilehash: b4112bf785a6ee2f4c833ab08d2c199388585093
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Réponses aux questions fréquemment posées sur la mise en quarantaine dans Office 365.
+ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598661"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856904"
 ---
-# <a name="quarantine-faq"></a>FAQ sur la mise en quarantaine
+# <a name="quarantine-faq-in-office-365"></a>FAQ sur la mise en quarantaine dans Office 365
 
-Cette rubrique présente les questions fréquemment posées ainsi que les réponses au sujet de la mise en quarantaine hébergée. Les réponses sont applicables pour les clients Microsoft Exchange Online et Exchange Online Protection.
+Cette rubrique fournit des questions fréquemment posées et des réponses sur la mise en quarantaine pour les clients Office 365 avec des boîtes aux lettres dans Exchange Online ou des clients Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online.
 
- **Q. Comment puis-je gérer les messages mis en quarantaine contre les programmes malveillants ?**
+## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>Q : Comment puis-je gérer les messages mis en quarantaine pour les programmes malveillants ?
 
-Vous devez utiliser le centre de sécurité & conformité afin d’afficher et de manipuler les messages qui ont été envoyés en quarantaine car ils contiennent des programmes malveillants. Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md).
+Seuls les administrateurs peuvent gérer les messages mis en quarantaine pour les programmes malveillants. Pour plus d’informations, consultez la rubrique [gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md).
 
- **Q. Comment puis-je configurer le service pour envoyer des messages de courrier indésirable mis en quarantaine vers la mise en quarantaine ?**
+## <a name="q-how-do-i-quarantine-spam"></a>Q : comment mettre en quarantaine le courrier indésirable ?
 
-R. Par défaut, les messages dont le contenu est filtré sont envoyés vers le dossier de courrier indésirable des destinataires. Toutefois, les administrateurs peuvent configurer des stratégies de filtrage de contenu pour envoyer le courrier indésirable mis en quarantaine vers la mise en quarantaine. Pour plus d'informations sur les différentes actions qui peuvent être menées sur les messages dont le contenu est filtré, voir [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
+A. Par défaut, les messages classés comme courriers indésirables ou en masse par filtrage du courrier indésirable sont remis à la boîte aux lettres de l’utilisateur et sont déplacés vers le dossier courrier indésirable. Toutefois, vous pouvez créer et configurer des stratégies de blocage du courrier indésirable pour mettre en quarantaine les messages électroniques en masse ou le courrier indésirable. Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
- **Q. Le service permet-il une gestion par un administrateur ou un utilisateur final des messages de courrier indésirable mis en quarantaine ?**
+## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>Q : comment accorder aux utilisateurs l’accès à la mise en quarantaine ?
 
-A. En tant qu’administrateur, vous pouvez rechercher et afficher des détails sur tous les messages électroniques mis en quarantaine dans le centre de sécurité et de conformité (SCC). Après avoir localisé un message, vous pouvez le débloquer pour l'envoyer à des utilisateurs spécifiques et, si vous le souhaitez, le signaler comme faux positif (message légitime) à l'équipe d'analyse du courrier indésirable de Microsoft. Pour plus d’informations, consultez la rubrique [gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md).
+A. Un utilisateur doit disposer d’un compte valide pour accéder à ses propres messages en quarantaine. La fonctionnalité EOP autonome nécessite que les utilisateurs soient représentés en tant qu’utilisateurs de messagerie dans EOP (création manuelle ou création via la synchronisation d’annuaires). Pour plus d’informations sur la gestion des utilisateurs dans les environnements autonomes EOP, consultez la rubrique [gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).
 
-En tant qu'utilisateur final, vous pouvez gérer vos propres messages mis en quarantaine via :
+## <a name="q-what-messages-can-end-users-access-in-quarantine"></a>Q : quels messages les utilisateurs finaux peuvent-ils accéder en quarantaine ?
 
-- L'interface utilisateur de mise en quarantaine du courrier électronique. Pour plus d’informations, consultez [la rubrique Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Office 365](find-and-release-quarantined-messages-as-a-user.md).
+A. Les utilisateurs peuvent accéder aux messages de courrier indésirable, de courrier en nombre et (à partir d’avril, 2020) dans lesquels ils sont destinataires. Les utilisateurs finaux ne peuvent pas accéder aux programmes malveillants mis en quarantaine, à la confiance élevée ou aux messages mis en quarantaine en raison de la **remise du message à l’action de mise en quarantaine hébergée dans les** règles de flux de messagerie (également appelées règles de transport). Pour plus d’informations sur les utilisateurs qui accèdent aux messages mis en quarantaine, consultez [la rubrique Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
- **Q. Comment puis-je accorder l’accès à la mise en quarantaine pour mes utilisateurs finaux ?**
+## <a name="q-how-long-are-messages-kept-in-the-quarantine"></a>Q : combien de temps les messages sont-ils conservés en quarantaine ?
 
-A. Pour pouvoir accéder à la mise en quarantaine du courrier indésirable de l’utilisateur final, les utilisateurs finaux doivent disposer d’un ID d’utilisateur et d’un mot de passe Office 365 valides. Les clients EOP qui protègent les boîtes aux lettres locales doivent être des utilisateurs de messagerie valides créés via la synchronisation d’annuaires ou le centre d’administration Exchange. Pour plus d’informations sur la gestion des utilisateurs, les administrateurs EOP peuvent se référer à la rubrique [gérer les utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Pour les clients autonomes EOP, nous vous recommandons d’utiliser la synchronisation d’annuaires et d’activer le blocage du périmètre basé sur l’annuaire ; Pour plus d’informations, consultez la rubrique [utiliser le blocage du périmètre basé sur l’annuaire pour rejeter les messages envoyés à des destinataires non valides](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+A. Vous configurez la durée pendant laquelle les courriers indésirables, les messages hameçons et les messages électroniques en masse sont conservés en quarantaine à l’aide de stratégies de blocage du courrier indésirable. La valeur par défaut est 30 jours, ce qui est également le maximum. Pour plus d’informations, consultez la rubrique [Configuration des stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md)
 
- **Q. Quels messages les utilisateurs finaux peuvent-ils accéder en quarantaine ?**
+Pour les messages mis en quarantaine par l’action de règle de flux de messagerie, **remet le message à la quarantaine hébergée**, les messages sont conservés en quarantaine pendant 30 jours. Vous ne pouvez pas configurer cette durée.
 
-A. Les utilisateurs finaux peuvent accéder à leurs propres messages hameçons, de courrier indésirable et de courrier en nombre. Les utilisateurs finaux ne peuvent pas accéder à leur propre programme malveillant, à la confiance élevée ou aux messages qui correspondent à une règle de flux de messagerie (également appelée règle de transport); celles-ci sont disponibles uniquement dans la mise en quarantaine de l’administrateur. 
+Une fois la période expirée, les messages sont supprimés et ne sont pas récupérables.
 
- **Q. Pendant combien de temps les messages sont-ils mis en quarantaine ?**
+## <a name="q-can-i-release-or-report-more-than-one-quarantined-message-at-a-time"></a>Q : puis-je publier ou signaler plusieurs messages en quarantaine à la fois ?
 
-A. Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 30 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 30 jours, en fonction de la période de rétention définie dans votre stratégie de filtrage de contenu par défaut. Une fois cette période écoulée, les messages sont supprimés et ne sont pas récupérables. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n’est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, voir [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
+A. Dans le centre de sécurité & conformité, vous pouvez sélectionner et publier jusqu’à 100 messages à la fois.
 
- **Q. Est-ce que je peux libérer ou signaler plusieurs messages mis en quarantaine à la fois ?**
+Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) et [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) dans Exchange Online PowerShell ou un environnement autonome Exchange Online Protection PowerShell pour rechercher et débloquer des messages mis en quarantaine en bloc, et pour signaler des faux positifs en bloc.
 
-R. Oui, jusqu’à 100 messages peuvent être publiés en même temps dans le portail de mise en quarantaine. De plus, les administrateurs peuvent créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) pour rechercher des messages, et la cmdlet [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) pour les libérer.
+## <a name="q-are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>Q : est-ce que les caractères génériques sont pris en charge lors de la recherche de messages mis en quarantaine ? Puis-je rechercher des messages mis en quarantaine pour un domaine spécifique ?
 
- **Q. Are wildcards supported when searching for quarantined messages? Can I search for quarantined messages for a specific domain?**
+A. Les caractères génériques ne sont pas pris en charge dans le centre de sécurité & conformité. Par exemple, lors de la recherche d’un expéditeur, vous devez spécifier l’adresse de messagerie complète. Toutefois, vous pouvez utiliser des caractères génériques dans Exchange Online PowerShell ou Exchange Online Protection PowerShell.
 
-R. Les caractères génériques ne sont pas pris en charge lors de la spécification des critères de recherche dans le Centre d'administration Exchange. Par exemple, si vous recherchez un expéditeur, vous devez indiquer l'adresse électronique complète.
-
-Le recours à Windows PowerShell à distance permet aux administrateurs d'utiliser la cmdlet [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) pour rechercher des messages mis en quarantaine pour un domaine spécifique (par exemple, contoso.com) :
+Par exemple, exécutez la commande suivante pour rechercher les messages de courrier indésirable mis en quarantaine à partir de tous les expéditeurs dans le domaine contoso.com :
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
 ```
 
-Les résultats peuvent être transmis à la cmdlet [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage). Incluez le paramètre -ReleaseToAll pour débloquer le message et l'envoyer à tous ses destinataires. Une fois qu'un message est débloqué, il ne peut plus l'être de nouveau.
+Ensuite, exécutez la commande suivante pour libérer ces messages à tous les destinataires d’origine :
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
 ```
+
+Une fois que vous avez publié un message, vous ne pouvez plus le libérer.

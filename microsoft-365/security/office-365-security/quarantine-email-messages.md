@@ -17,31 +17,30 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: Vous pouvez configurer une mise en quarantaine pour les messages électroniques entrants dans Office 365 où les messages électroniques entrants qui ont été filtrés en tant que courrier indésirable, Bulk, phishing et programmes malveillants peuvent être conservés à des fins de révision ultérieure.
-ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+description: La mise en quarantaine dans Office 365 contient des messages potentiellement dangereux ou indésirables. Les administrateurs et les utilisateurs finaux peuvent accéder à la mise en quarantaine.
+ms.openlocfilehash: 9c82ba9821c42fe6c3dd78dbcecf63327d176e93
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957429"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857308"
 ---
-# <a name="quarantine-email-messages-in-office-365"></a>Mise en quarantaine des messages électroniques dans Office 365
+# <a name="quarantine-in-office-365"></a>Mise en quarantaine dans Office 365
 
-Vous pouvez configurer la mise en quarantaine pour les messages électroniques entrants dans Office 365 où les messages qui ont été filtrés comme courrier indésirable, le courrier en nombre, le courrier électronique de hameçonnage, le courrier électronique contenant des programmes malveillants et les messages qui correspondent à une règle de flux de messagerie spécifiée (également appelée règle trasport) peuvent être conservés ultérieurement. Veuillez.
-  
-Par défaut, les messages qui ont été filtrés pour le hameçonnage, les programmes malveillants et les règles de flux de messagerie sont envoyés en quarantaine, tandis que les messages qui ont été filtrés en tant que courrier indésirable et messages en bloc sont envoyés vers le dossier de courrier indésirable des destinataires. En tant qu’administrateur, vous pouvez configurer des stratégies de filtrage du courrier indésirable (également appelées stratégies de filtrage de contenu) pour envoyer des courriers indésirables et des messages en nombre à la mise en quarantaine. Pour plus d’informations, consulter [Configurer vos stratégies de filtre de courrier indésirable](configure-your-spam-filter-policies.md).
-  
-Les utilisateurs et les administrateurs peuvent travailler avec des messages mis en quarantaine. Les utilisateurs peuvent utiliser uniquement leurs propres messages filtrés en quarantaine. Les administrateurs peuvent rechercher et gérer les messages mis en quarantaine pour tous les utilisateurs.
+Si vous êtes un client Office 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, la mise en quarantaine est disponible pour le blocage des messages potentiellement dangereux ou indésirables.
 
-> [!NOTE]
-> Programmes malveillants, messages hameçons de confiance élevée et messages mis en quarantaine par les actions de règle de flux de messagerie sont uniquement disponibles dans la mise en quarantaine de l’administrateur. Les utilisateurs peuvent accéder à leurs propres messages hameçons, de courrier indésirable et de courrier en nombre. 
-  
-En savoir plus sur l’utilisation des messages mis en quarantaine :
-  
-- [Gérer les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)
+Les stratégies de protection contre les programmes malveillants configurent automatiquement un message si *une* pièce jointe contient un programme malveillant. Pour plus d’informations, consultez la rubrique [configure anti-malware Policies in Office 365](configure-anti-malware-policies.md).
 
-- [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur](find-and-release-quarantined-messages-as-a-user.md)
+Par défaut, les stratégies de blocage du courrier indésirable mettent en quarantaine les messages d’hameçonnage et délivrent les messages de courrier indésirable et de courrier en nombre dans le dossier de courrier indésirable de l’utilisateur. Toutefois, vous pouvez également créer et personnaliser des stratégies de blocage du courrier indésirable pour mettre en quarantaine le courrier indésirable et les messages électroniques en bloc. Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
-- [Utiliser les notifications de courrier indésirable utilisateur pour publier et signaler les messages de courrier indésirable mis en quarantaine](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+Les utilisateurs et les administrateurs peuvent travailler avec des messages mis en quarantaine :
 
-- [FAQ sur la mise en quarantaine](quarantine-faq.md)
+- Les administrateurs peuvent utiliser tous les types de messages mis en quarantaine pour tous les utilisateurs. Seuls les administrateurs peuvent travailler avec des messages mis en quarantaine en tant que programme malveillant, hameçonnage à haute fiabilité ou suite à des règles de flux de messagerie (également appelées règles de transport). Pour plus d’informations, consultez la rubrique [gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md).
+
+- Les utilisateurs peuvent travailler avec des messages mis en quarantaine, où ils sont destinataires si le message a été mis en quarantaine en tant que courrier indésirable, message électronique en masse ou (depuis avril, 2020). Pour plus d’informations, consultez [la rubrique Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Office 365](find-and-release-quarantined-messages-as-a-user.md).
+
+  Pour empêcher les utilisateurs de gérer leurs propres messages de hameçonnage mis en quarantaine, les administrateurs peuvent configurer une autre action pour le verdict de filtrage du **courrier électronique de hameçonnage** dans les stratégies de blocage du courrier indésirable. Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+
+- Les administrateurs et les utilisateurs peuvent signaler des faux positifs à Microsoft en quarantaine.
+
+Pour plus d’informations sur la mise en quarantaine, consultez la rubrique [mise en quarantaine](quarantine-faq.md).

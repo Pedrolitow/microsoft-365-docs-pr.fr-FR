@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Déterminez le montant des taxes à payer pour votre abonnement Office 365 pour les entreprises dans différentes régions. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 88997eb69cbbee1b7ec4520773c167609434e0a4
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710557"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826312"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -90,7 +90,7 @@ Ces pays peuvent fournir leur numéro de TVA ou leur équivalent local sur leurs
 
 ## <a name="what-tax-will-i-be-charged"></a>Quelles taxes seront appliquées ?
 
-[] Consultez les taxes appliquées dans les régions suivantes. Vous pouvez également [demander une exonération de taxe](apply-for-tax-exempt-status.md) en fournissant un dossier complet au support technique.
+[] Consultez les taxes appliquées dans les régions suivantes. Vous pouvez également [demander une exonération de taxe](tax-information.md#apply-for-tax-exempt-status) en fournissant un dossier complet au support technique.
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>Europe, Moyen Orient et Afrique (EMEA)
 
@@ -114,7 +114,7 @@ Vous pouvez prétendre à un taux de TVA de 0 % :
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Ajouter votre numéro de TVA (pays de l'UE uniquement)
 
-1. Dans le centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Recherchez la carte d’abonnement pour l’abonnement que vous souhaitez mettre à jour.
 
@@ -128,7 +128,7 @@ Vous pouvez prétendre à un taux de TVA de 0 % :
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Ajouter votre numéro de TVA (pays de l'UE uniquement)
   
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez le nom de l’abonnement, puis sélectionnez **autres actions** \> **modifier le numéro de TVA**.
   

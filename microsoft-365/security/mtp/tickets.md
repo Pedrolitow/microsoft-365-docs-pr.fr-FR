@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
+ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086925"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42836879"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gérer les tickets via ServiceNow
 
@@ -141,6 +141,10 @@ Si votre entreprise a activé l’authentification unique et que vous recevez un
 
 1. Créez un utilisateur avec des privilèges d’administrateur de sécurité dans Azure Active Directory. L’utilisateur doit avoir les mêmes nom et adresse de messagerie que l’utilisateur d’intégration que vous avez créé à partir de la liste de vérification d’installation. Vous pouvez supprimer le rôle d’administrateur de sécurité une fois la connexion et la connexion terminées.
 2. Connectez-vous au centre de sécurité Microsoft 365 en tant qu’utilisateur et suivez les étapes de configuration.
+
+### <a name="ip-filtering"></a>Filtrage IP
+
+Si vous avez activé le filtrage IP, vous devrez peut-être autoriser explicitement les adresses IP. Pour plus d’informations sur l’autorisation des plages IP dans ServiceNow, voir [contrôle d’accès aux adresses IP](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/login/task/t_AccessControl.html) . Consultez la rubrique [Azure IP Ranges and service Tags-public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519) pour obtenir la liste des adresses IP à autoriser.
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>L’installation est terminée, mais ne vois pas les tickets et ne peut pas partager
 

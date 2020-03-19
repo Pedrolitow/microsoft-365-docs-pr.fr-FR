@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Découvrez les comptes de facturation et comment les gérer.
-ms.openlocfilehash: 1470549bf77a6f58fb2c023ef7b85bd41ac10ee9
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: ce7b9d2a2cc35261c7e6e3f5547574ea9c49e658
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280245"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826266"
 ---
 # <a name="manage-billing-accounts"></a>Gérer les comptes de facturation
 
@@ -42,14 +42,14 @@ Le tableau suivant répertorie les termes importants que vous voyez sur la page 
 
 | Nom du champ | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Adresse de vente | Entité juridique chargée du paiement et identifiée sur la facture. L’adresse fournie ici est utilisée pour déterminer votre taux de t.v.a. à moins que vous n’ayez choisi de fournir une adresse de livraison alternative pendant votre achat. Pour plus d’informations, consultez la rubrique [Tax information](#tax-information). |
+| Adresse de vente | Entité juridique chargée du paiement et identifiée sur la facture. L’adresse fournie ici est utilisée pour déterminer votre taux de t.v.a. à moins que vous n’ayez choisi de fournir une adresse de livraison alternative pendant votre achat. Pour plus d’informations, consultez la rubrique [Tax information](billing-and-payments/tax-information.md). |
 | Segment | Champ en lecture seule qui identifie le segment commercial de votre organisation (commercial, éducation, gouvernement ou non lucratif). |
 | État du compte | Champ en lecture seule qui spécifie l’état de votre compte commercial auprès de Microsoft. |
-| ID de taxe | Si vous n’êtes pas aux États-Unis, vous devez fournir une T.V.A. ou une équivalence locale. Pour plus d’informations, consultez la rubrique [Tax information](#tax-information). |
+| ID de taxe | Si vous n’êtes pas aux États-Unis, vous devez fournir une T.V.A. ou une équivalence locale. Pour plus d’informations, consultez la rubrique [Tax information](billing-and-payments/tax-information.md). |
 | Contrat | Lorsqu’un compte de facturation est créé, par le biais d’un achat direct ou d’un contrat de licence en volume, un signataire de l’Organisation accepte, ou signe, un accord qui décrit les termes & conditions du compte. Le cas échéant, cet affichage répertorie un historique des accords. Si vous devez accepter les termes mis à jour, un lien pour **approuver un accord** s’affiche. |
 | Profils de facturation | Un profil de facturation définit les propriétés de votre facture, comme le destinataire de la facture, le mode de remise de la facture, les conditions de paiement et un numéro de bon de commande. Pour répartir la facturation au sein de votre organisation, vous pouvez créer plusieurs profils de facturation et identifier le profil de facturation approprié au moment de l’achat. Pour plus d’informations sur les profils de facturation et sur la façon dont vous pouvez les utiliser pour créer des options de facturation plus flexibles pour votre organisation, [Gérez les profils de facturation](billing-and-payments/manage-billing-profiles.md). |
 
-> [!NOTE] 
+> [!NOTE]
 > Si vous souhaitez modifier le nom ou l’adresse du **vendu** , mais ne voyez pas de lien de **modification** , vous devez [contacter le support technique](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) pour le modifier. Les demandes d’un changement de nom **vendu** nécessitent une vérification de solvabilité. Lorsque vous contactez le support technique, préparez l’un des documents suivants :
 >
 > - Document d’annonce externe qui indique toute modification apportée au nom de la société ou à la structure de l’entreprise
@@ -73,88 +73,8 @@ Vous pouvez fournir aux autres utilisateurs l’accès au compte de facturation 
 > [!Note]
 > Les rôles de compte de facturation s’appliquent uniquement aux comptes de facturation, et ne s’appliquent pas aux autres scénarios du centre d’administration 365 de Microsoft.
 
-## <a name="tax-information"></a>Informations fiscales
+## <a name="related-articles"></a>Articles connexes
 
-Taxes pour le centre d’administration Microsoft 365 les achats que vous effectuez via Microsoft sont déterminés par votre adresse professionnelle ou, si elle est différente, par votre adresse d’expédition. Si vous êtes aux États-Unis, vous devez indiquer un numéro d’identification d’employeur fédéral (FEIN).
+[Informations fiscales](billing-and-payments/tax-information.md)
 
-Les entreprises de ces pays peuvent fournir leur numéro de TVA :
-
-:::row:::
-    :::column:::
-- Autriche
-- Belgique
-- Bulgarie
-- Croatie
-- Chypre
-- République tchèque
-- Danemark
-- Estonie
-- Finlande
-- France
-- Allemagne
-- Grèce
-- Hongrie
-- Irlande
-- Italie
-- Lettonie
-    :::column-end:::
-    :::column:::
-- Liechtenstein
-- Lituanie
-- Luxembourg
-- Malte
-- Monaco
-- Pays-Bas
-- Norvège
-- Pologne
-- Portugal
-- Roumanie
-- Slovaquie
-- Afrique du Sud
-- Espagne
-- Suède
-- Suisse
-- Royaume-Uni
-    :::column-end:::
-:::row-end:::
-
-Ces pays peuvent fournir leur numéro de TVA ou leur équivalent local sur leurs informations de compte de facturation.
-
-|Loyale| Identifiant de la taxe |
-|------|----------------|
-| Australie | ABN (facultatif) |
-| Brésil | CNPJ (obligatoire) |
-| Inde | GSTIN (facultatif), ID de panoramique (obligatoire) |
-| Île de Man | Numéro de TVA (facultatif) |
-| Nouvelle-Zélande | Numéro d’enregistrement TPS (facultatif) |
-| Monaco | Numéro de TVA (facultatif) |
-| Taïwan | Numéro de TVA (facultatif) |
-
-> [!Note]
-> Si vous avez besoin de contacter le support technique, votre FEIN, numéro de TVA ou équivalent local est prêt à être accordé à l’agent de support.
-
-## <a name="tax-exempt-status"></a>Statut exonéré de taxe
-
-Si vous êtes admissible à un statut d’exemption de taxe sur votre marché, [lancez une demande de service](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) pour établir le statut d’exemption de taxe pour votre organisation.
-
-Préparez la documentation suivante :
-
-|Pays ou paramètres régionaux | Documentation |
-|------------------|----------------|
-| États-Unis | Certificat d’exemption de taxe de vente |
-| Canada | Certificat de dispense (ou lettre d’autorisation équivalente) |
-| Irlande | Certificat d’exonération fiscale 13B/56A|
-| Organisations internationales qui détiennent la taxe | Certification/lettre de l’administration fiscale locale |
-| Porto Rico | Certificado de Compras exentas |
-
-## <a name="calculate-taxes"></a>Calculer les taxes
-
-Les taxes de vente sont calculées par rapport au prix unitaire, puis agrégées.
-
-Par exemple :
-
->*(prix unitaire X taux de taxe) Quantité X = taxe de vente totale*
-
-- ou -
-
->($1,29 X 0,095) X 100 = $12,25
+[Gérer les profils de facturation](billing-and-payments/manage-billing-profiles.md)

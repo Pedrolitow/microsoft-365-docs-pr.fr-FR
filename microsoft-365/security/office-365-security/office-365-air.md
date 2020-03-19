@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: 8871329d254057a0f9d6f10d3ae7acc10139832e
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 45a2bc0e581916493a0170a5f86c152d02403efe
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710533"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826348"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
@@ -47,7 +47,7 @@ Cet article décrit le [flux](#the-overall-flow-of-air) d’air global, la [faç
 
     Si votre organisation utilise une solution de création de rapports personnalisée ou une solution tierce, vous pouvez [utiliser l’API activité de gestion d’Office 365](air-custom-reporting.md) pour afficher des informations sur les analyses et les menaces automatisées.
 
-4. Votre équipe de gestion des opérations de sécurité examine les [résultats de l’enquête](air-view-investigation-results.md), puis [approuve ou rejette les actions correctives](air-remediation-actions.md#approve-or-reject-pending-actions). 
+4. Votre équipe de gestion des opérations de sécurité examine les [résultats de l’enquête](air-view-investigation-results.md), puis [approuve ou rejette les actions correctives](air-review-approve-pending-completed-actions.md). 
 
     Comme les actions de correction en attente sont approuvées (ou rejetées), l’enquête automatisée se termine.
 
@@ -60,7 +60,7 @@ Pendant et après un processus d’enquête automatisé, votre équipe de sécur
 
 - [Afficher les détails des résultats d’une enquête](air-view-investigation-results.md#view-details-of-an-investigation)
 
-- [Passer en revue et approuver les actions à la suite d’une enquête](air-remediation-actions.md#approve-or-reject-pending-actions)
+- [Passer en revue et approuver les actions à la suite d’une enquête](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
 > Pour plus d’informations, consultez la rubrique fonctionnement de [l’air](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).

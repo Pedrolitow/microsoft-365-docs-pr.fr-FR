@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 est fourni avec un certain nombre de classifieurs intégrés que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs.
-ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b8e4b51300bee86682924245bbf530e1e954b483
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634462"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826245"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>Utilisation d’un classifieur intégré (aperçu)
 
@@ -27,7 +27,16 @@ Microsoft a formé et testé un certain nombre de classifieurs utilisant des exe
 
 - **Offensant**: détecte les éléments de texte qui contiennent des blasphèmes, Slurs, taunts et des expressions déguisées (qui sont des expressions qui ont la même signification qu’un terme plus offensant).
 - **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, professionnelles, d’expérience professionnelle, ainsi que d’autres informations d’identification personnelle d’un demandeur.
-- **Sourcecode**: détecte des éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans des langages de programmation informatique largement utilisés.
+- **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub.
+
+|nom de la langue|||||
+|---------|---------|---------|---------|---------|
+|3.0|C        |C#       |C++     |Clojure  |
+|CoffeeScript|CSS     |Activer       |Haskell |HTML     |
+|Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
+|Langage     |PHP      |Python   |R        |Ruby     |
+|Scalaire    |Shell    |Rapide    |6,7      |Script vim|
+
 - **Harcèlement**: détecte une catégorie spécifique d’éléments de texte de langue choquants liés à un comportement offensant ciblant une ou plusieurs personnes en fonction des caractéristiques suivantes : race, ethnique, religion, origine nationale, sexe, orientation sexuelle, âge, invalidité.
 - **Blasphème**: détecte une catégorie spécifique d’éléments de texte en langue choquante qui contiennent des expressions qui déportent la plupart des gens.
 - **Menace**: détecte une catégorie spécifique d’éléments de texte de langue choquants liés aux menaces pour valider la violence ou causer des dégâts ou dommages physiques à une personne ou à une propriété,

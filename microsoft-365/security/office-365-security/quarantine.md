@@ -16,12 +16,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Découvrez la mise en quarantaine hébergée pour Exchange Online et Exchange Online Protection.
-ms.openlocfilehash: bcbd0db1c05834882c464fa28012b82a13929d7f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea803a4681a12647f57cf17839d26fb391222364
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598651"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856880"
 ---
 # <a name="quarantine"></a>Quarantaine
 
@@ -29,7 +29,7 @@ Les rubriques suivantes fournissent des informations sur la quarantaine héberg�
 
 - [FAQ sur la mise en quarantaine](quarantine-faq.md) : fournit des questions générales sur la mise en quarantaine et leurs réponses aux administrateurs et aux utilisateurs finaux
 
-- [Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur](find-and-release-quarantined-messages-as-an-administrator.md): explique comment les administrateurs peuvent rechercher et débloquer les messages qui se trouvent en quarantaine dans le centre d’administration Exchange, et éventuellement les signaler comme message faux positif (non légitime) à Microsoft.
+- [Gérer les messages et les fichiers mis en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md): explique comment les administrateurs peuvent rechercher et débloquer les messages qui se trouvent en quarantaine dans le centre d’administration Exchange, et éventuellement les signaler en tant que message faux positif (non légitime) à Microsoft.
 
 - [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Office 365](find-and-release-quarantined-messages-as-a-user.md): explique comment les utilisateurs finals peuvent rechercher et libérer leurs propres messages indésirables mis en quarantaine dans l’interface utilisateur de mise en quarantaine du courrier indésirable et les signaler comme légitimes à Microsoft.
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b653575e9e79ffe3448f622ca5be2cef37999dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c482e46cf51cbf11960c02663221df0c136b067c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633952"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857178"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Conditions préalables pour la Protection Microsoft contre les menaces
 
@@ -34,12 +34,20 @@ ms.locfileid: "42633952"
 Découvrez la gestion des licences, la configuration matérielle et logicielle requise, ainsi que d’autres paramètres de configuration pour mettre en service et utiliser la protection contre les menaces Microsoft.
 
 ## <a name="licensing-requirements"></a>Critères de licence
-Pour utiliser Microsoft Threat Protection, vous avez besoin de l' *une* des licences ou de la combinaison de licences suivantes :
+Pour utiliser la protection contre les menaces Microsoft, vous avez besoin d’une licence unique ou d’une combinaison de licences.
 
-- Microsoft 365 E5
-- Microsoft 365 E5 Sécurité
-- Office 365 E5 et « Enterprise Mobility + Security E5 (EMS E5) » et Windows E5
-- Microsoft 365 A5
+### <a name="single-license"></a>Licence unique
+Vous pouvez utiliser l' *une* des licences suivantes :
+
+- Microsoft 365 E5 ou a5
+- Microsoft 365 E5 sécurité ou a5 sécurité
+
+### <a name="combination-of-licenses"></a>Combinaison de licences
+Vous pouvez également utiliser une combinaison de licences pour les abonnements E5 ou a5 à Office 365, *Enterprise Mobility + Security (EMS)* et Windows. La combinaison de licences doit inclure *toutes* ces licences :
+
+- Office 365 E5 ou a5
+- *Enterprise Mobility + Security (EMS)* E5 ou a5
+- Windows E5 ou a5
 
 Pour plus d’informations, [consultez les plans de services d’entreprise Microsoft 365](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 

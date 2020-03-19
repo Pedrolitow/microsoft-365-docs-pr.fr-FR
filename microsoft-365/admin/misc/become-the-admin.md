@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre messagerie et de votre domaine pour prendre le relais d’un locataire non géré dans Office 365
-ms.openlocfilehash: e3c89e122264808e2a8631c07269ea263c87fdaa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0f7932b9ba727db62f81ac15b99a5f5ca276f09f
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244117"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857402"
 ---
 # <a name="perform-an-internal-admin-takeover-in-office-365"></a>Effectuer un rachat administratif interne dans Office 365
 
@@ -71,7 +71,7 @@ YouTube : [3 steps to do an IT Admin Takeover for Power BI and Office 365 (Prise
 
 [Prise en compte de l’administrateur dans Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Obtenir de l’aide sur les domaines Office 365](../get-help-with-domains/get-help-with-domains.md)
+[Obtenir de l’aide sur les domaines Office 365](../get-help-with-domains/get-help-with-domains.yml)
 
 [Utilisation de l’authentification en libre-service dans votre organisation](self-service-sign-up.md)
   

@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Découvrez comment votre organisation adopte les services Microsoft 365 pour communiquer et collaborer.
-ms.openlocfilehash: 8770d3f49c50ffcab46c1aba302320a49cff8312
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 0481f894a4841488b20af90cd7c00619d2ad5c98
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633422"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826380"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 ---
-Microsoft 365 l’analyse de l’utilisation est également disponible pour la communauté du gouvernement américain Microsoft 365.
+L’analyse de l’utilisation de Microsoft 365 n’est pas encore disponible pour la communauté du gouvernement américain Microsoft 365.
  
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Vue d'ensemble de l'analyse de l'utilisation de Microsoft 365
 
@@ -51,7 +51,7 @@ Ce résumé vous permet de comprendre rapidement les modèles d’utilisation da
 
 ![Image du Résumé exécutif de l’utilisation de Microsoft 365.](../../media/office365usage-exec-summary.png)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 Le rapport de vue d’ensemble de Microsoft 365 contient les rapports suivants. Vous pouvez les afficher en cliquant sur l’onglet en haut de la page du rapport. Toutes les valeurs du mois figurant dans la section supérieure du rapport font référence au dernier mois complet.
 

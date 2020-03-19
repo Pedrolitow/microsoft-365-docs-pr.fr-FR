@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: 159f0935a2191c668c317fac17096a9427a0f889
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 6706fe25194191d57ffd91f07f13d22fe5ec6cfd
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409719"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826255"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -36,7 +36,7 @@ Cette catégorie de mécanismes de classification inclut la recherche de contenu
 - Mots clés ou valeurs de métadonnées (langage de requête par mot clé)
 - utilisation de modèles d’informations sensibles précédemment identifiés comme des numéros de sécurité sociale, de carte bancaire ou de compte bancaire [(types d’informations sensibles)](what-the-sensitive-information-types-look-for.md)
 - Reconnaissance d’un élément car il s’agit d’une variante d’un modèle [(impression des doigts de document)](document-fingerprinting.md)
-- à l’aide de la présence de chaînes exactes [(correspondance de données exacte)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- utilisation de la présence de chaînes exactes [(correspondance exacte de données)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md). '
 
 Les étiquettes de sensibilité et de rétention peuvent ensuite être appliquées automatiquement pour que le contenu soit disponible dans la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md) et les [stratégies de rétention](retention-policies.md).
 
@@ -67,7 +67,17 @@ Microsoft 365 est fourni avec six classifieurs intégrés :
 
 - **Offensant**: détecte les éléments de texte qui contiennent des blasphèmes, Slurs, taunts et des expressions déguisées (qui sont des expressions qui ont la même signification qu’un terme plus offensant).
 - **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, professionnelles, d’expérience professionnelle, ainsi que d’autres informations d’identification personnelle d’un demandeur.
-- **Sourcecode**: détecte des éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans des langages de programmation informatique largement utilisés.
+- **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub.
+
+|nom de la langue|||||
+|---------|---------|---------|---------|---------|
+|3.0|C        |C#       |C++     |Clojure  |
+|CoffeeScript|CSS     |Activer       |Haskell |HTML     |
+|Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
+|Langage     |PHP      |Python   |R        |Ruby     |
+|Scalaire    |Shell    |Rapide    |6,7      |Script vim|
+
+
 - **Harcèlement**: détecte une catégorie spécifique d’éléments de texte de langue choquants liés à un comportement offensant ciblant une ou plusieurs personnes en fonction des caractéristiques suivantes : race, ethnique, religion, origine nationale, sexe, orientation sexuelle, âge, invalidité.
 - **Blasphème**: détecte une catégorie spécifique d’éléments de texte en langue choquante qui contiennent des expressions qui déportent la plupart des gens.
 - **Menace**: détecte une catégorie spécifique d’éléments de texte de langue choquants liés aux menaces pour valider la violence ou causer des dégâts ou des dommages physiques à une personne ou à une propriété.
