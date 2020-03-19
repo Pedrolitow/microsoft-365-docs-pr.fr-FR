@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Découvrez comment devenir administrateur et obtenir l’abonnement Office 365 pour votre organisation. '
-ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361549"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857414"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>Devenir administrateur et acheter Office 365 pour votre organisation
 
@@ -87,7 +87,7 @@ Maintenant que vous êtes l’administrateur, vous pouvez effectuer les opérati
 |Ajouter ou supprimer des licences  <br/> |Vous pouvez [ajouter plus de licences](../../commerce/licenses/buy-licenses.md) pour les utilisateurs qui n’utilisent pas encore Office 365 ou [supprimer des licences d’utilisateurs](../manage/remove-licenses-from-users.md) que vous ne voulez pas utiliser l’abonnement Office 365 de votre organisation.  <br/> |
 |Contacter des utilisateurs déjà inscrits  <br/> |Adressez-vous aux autres utilisateurs pour les informer que vous gérez leur abonnement Office 365 et qu'ils ont été mis à niveau. [Procédez comme suit](../add-users/add-users.md) pour afficher la liste des **Utilisateurs actifs** et leurs adresses de courrier.  <br/> |
 |Commencer à utiliser Office 365  <br/> |Pour découvrir comment vous connecter, consulter le courrier électronique, partager des documents, et bien plus, voir l'[Espace formations Office 365](https://support.office.com/learn/office365-for-business). Ce site vous permet, ainsi qu'à vos utilisateurs, de commencer à utiliser Office 365.  <br/> |
-|Gérer votre abonnement Office 365  <br/> |Visitez le [Centre d’aide d’administration d’Office 365](../admin-home.md) et découvrez les tâches d’administration courantes, telles que l’ajout et la suppression d’utilisateurs, la réinitialisation des mots de passe et la configuration des appareils mobiles.  <br/> |
+|Gérer votre abonnement Office 365  <br/> |Visitez le [Centre d’aide d’administration d’Office 365](../admin-home.yml) et découvrez les tâches d’administration courantes, telles que l’ajout et la suppression d’utilisateurs, la réinitialisation des mots de passe et la configuration des appareils mobiles.  <br/> |
 
 ## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
 

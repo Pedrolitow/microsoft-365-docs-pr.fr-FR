@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a42646c423c08298a619e8bd559cd819ba3c47db
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633982"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857462"
 ---
 # <a name="the-action-center"></a>Le Centre de notifications
 
@@ -49,7 +49,7 @@ L’équipe en charge des opérations de sécurité peut fonctionner de façon p
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-3. Deux onglets s’affichent dans le centre de notifications : **En attente** et **Historique**.
+3. Dans le centre de maintenance, deux onglets s’affichent : **en attente** et **historique**.
 
     - L’onglet **En attente** répertorie les enquêtes devant être réexaminées et approuvées par un membre de l’équipe en charge des opérations de sécurité pour continuer. Veillez à examiner les éléments en attente affichés ici et à effectuer les actions appropriées.
 
@@ -72,11 +72,11 @@ Pour approuver ou rejeter des actions en attente dans le centre de notifications
 
 |Action de correction |Rôles et des autorisations requis |
 |--|----|
-|Correction de Microsoft Defender – Protection avancée contre les menaces (appareils) |Rôle **Administrateur de la sécurité** attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- ou ---<br/>Rôle **Actions de correction actives** attribué dans Microsoft Defender – Protection avancée contre les menaces <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles (Microsoft Defender – Protection avancée contre les menaces)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Correction Office 365 – Protection avancée contre les menaces (contenu et courrier Office)  |Rôle **Administrateur de la sécurité** attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>Rôle **Rechercher et vider** attribué dans le Centre de sécurité et conformité Office 365 ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT** : si le rôle Administrateur de la sécurité vous est attribué uniquement dans le Centre de sécurité et conformité Office 365, vous ne pourrez pas accéder aux fonctionnalités du centre de maintenance ou de Protection Microsoft contre les menaces. Vous devez avoir le rôle Administrateur de la sécurité attribué dans Azure Active Directory ou dans le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité et conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Correction de Microsoft Defender – Protection avancée contre les menaces (appareils) |Rôle Administrateur de la sécurité attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- ou ---<br/>Rôle Actions de correction actives attribué dans Microsoft Defender – Protection avancée contre les menaces <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles (Microsoft Defender – Protection avancée contre les menaces)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Correction Office 365 – Protection avancée contre les menaces (contenu et courrier Office)  |Rôle Administrateur de la sécurité attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>Rôle Rechercher et vider attribué dans le Centre de sécurité et conformité Office 365 ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT** : si le rôle Administrateur de la sécurité vous est attribué uniquement dans le Centre de sécurité et conformité Office 365, vous ne pourrez pas accéder aux fonctionnalités du centre de maintenance ou de Protection Microsoft contre les menaces. Vous devez avoir le rôle Administrateur de la sécurité attribué dans Azure Active Directory ou dans le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité et conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
-> Les utilisateurs qui ont le rôle **Administrateur général** attribué dans Azure Active Directory peuvent approuver ou rejeter toute action en attente dans le centre de notifications. Toutefois, il est recommandé à votre organisation de limiter le nombre de personnes auxquelles le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les rôles **Administrateur de la sécurité**, **Actions de correction actives** et **Rechercher et purger** répertoriés ci-dessus pour les autorisations du centre de notifications.
+> Les utilisateurs qui ont le rôle Administrateur général attribué dans Azure Active Directory peuvent approuver ou rejeter toute action en attente dans le centre de notifications. Toutefois, il est recommandé à votre organisation de limiter le nombre de personnes auxquelles le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les rôles Administrateur de la sécurité, Actions de correction actives et Rechercher et purger répertoriés ci-dessus pour les autorisations du centre de notifications.
 
 ## <a name="next-steps"></a>Étapes suivantes 
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1c06562cc0ff8cdc43efb3a8f62924c435883408
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c2798238f0e3cb10edab7f98bf096474a80fa006
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610561"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857474"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 
@@ -36,14 +36,14 @@ ms.locfileid: "42610561"
 [Microsoft Threat Protection](microsoft-threat-protection.md) intègre différents services de sécurité Microsoft pour fournir des fonctionnalités de détection, de prévention et d’enquête centralisées contre les attaques sophistiquées. Cet article décrit les services pris en charge, leurs exigences en matière de licences, les avantages et les limitations associés au déploiement d’un ou de plusieurs services, ainsi que des liens vers la façon de les déployer entièrement individuellement.
 
 ## <a name="supported-services"></a>Services pris en charge
-Une [licence microsoft 365 E5, E5 sécurité ou a5 ou une combinaison valide de licences](prerequisites.md#licensing-requirements) donne accès aux services pris en charge suivants et vous permet d’utiliser la protection Microsoft contre les menaces dans le centre de sécurité Microsoft 365.
+Une licence de sécurité Microsoft 365 E5, E5 Security, a5 ou a5 ou une combinaison valide de licences donne accès aux services pris en charge suivants et vous permet d’utiliser Microsoft Threat Protection dans le centre de sécurité Microsoft 365. [Consulter les conditions requises en matière de licences](prerequisites.md#licensing-requirements)
 
 | Service pris en charge | Description |
 | ------ | ------ |
 | Microsoft Defender - PACM | Suite de protection de point de terminaison basée sur des capteurs de comportement puissants, sur l’analyse de Cloud et sur l’intelligence des menaces |
 | Office 365 – Protection avancée contre les menaces | Protection avancée de vos applications et données dans Office 365, y compris la messagerie et d’autres outils de collaboration |
 | Azure ATP | Protection contre les menaces avancées, les identités compromises et les Insiders malveillants à l’aide de signaux Active Directory corrélés |
-| Microsoft Cloud App Security | Identifie et combat Cyber dans vos services Cloud tiers et Microsoft |
+| Microsoft Cloud App Security | Identifie et combat Cyber dans vos services Cloud tiers et Microsoft |
 
 ## <a name="deployed-services-and-functionality"></a>Fonctionnalités et services déployés
 La protection contre les menaces Microsoft offre une meilleure visibilité, corrélation et correction lorsque vous déployez des services plus pris en charge.
@@ -64,7 +64,7 @@ Le tableau ci-dessous répertorie la façon dont chaque service pris en charge f
 | Microsoft Defender - PACM | -États de point de terminaison et événements bruts<br />-Détections de point de terminaison et alertes, y compris antivirus, EDR, réduction de surface d’attaque<br />-Infos sur les fichiers et les autres entités observées sur les points de terminaison | Points de terminaison |
 | Office 365 – Protection avancée contre les menaces | -États de messagerie et de boîte aux lettres et événements bruts<br />-Détections de messages électroniques, de pièces jointes et de liens | -Boîtes aux lettres<br />-Comptes Office 365 |
 | Azure ATP | -Signaux Active Directory, y compris les événements d’authentification<br />-Détections comportementales liées à l’identité | Identités |
-| Microsoft Cloud App Security | -Détection d’applications Cloud & services insanctionnées (clichés instantanés)<br />-Exposition des données aux applications Cloud<br />-Applications Cloud associées aux activités de menace | Applications cloud |
+| Microsoft Cloud App Security | -Détection d’applications Cloud & services insanctionnées (clichés instantanés)<br />-Exposition des données aux applications Cloud<br />-Applications Cloud associées aux activités de menace | Applications cloud |
 
 ## <a name="deploy-the-services"></a>Déployer les services
 Le déploiement de chaque service nécessite généralement un approvisionnement de votre client et une configuration initiale. Consultez le tableau suivant pour comprendre la façon dont chacun de ces services est déployé.
@@ -74,7 +74,7 @@ Le déploiement de chaque service nécessite généralement un approvisionnement
 | Microsoft Defender - PACM | [Guide de déploiement de Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *Voir les instructions de mise en service* |
 | Office 365 – Protection avancée contre les menaces | *Aucun, configuré avec Office 365* | [Configurez des stratégies ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [QuickStart : créer votre instance Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *Voir les instructions de mise en service* |
-| Microsoft Cloud App Security | *Aucune* | [QuickStart : prise en main de la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Cloud App Security | *Aucune* | [QuickStart : prise en main de la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
 
 Une fois que vous avez déployé les services pris en charge, [activez Microsoft Threat Protection](mtp-enable.md).
 

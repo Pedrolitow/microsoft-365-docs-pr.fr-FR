@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Découvrez comment acheter un nom de domaine dans Office 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 8b2b23e2e699723d54ecb7ca2807296641178664
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1982ac054ca64f2442e108b457553a58ebcb234c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252976"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857438"
 ---
 # <a name="buy-a-domain-name-in-office-365"></a>Acheter un nom de domaine dans Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "42252976"
   
 ### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Se connecter et accéder aux paramètres \> domaines \> acheter un domaine
 
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
 3. Dans la page **domaines** , sélectionnez **acheter un domaine**.
     
@@ -121,4 +121,4 @@ Une fois votre domaine enregistré (auprès d'un bureau d'enregistrement), vous 
 
 [Foire aux questions domaines](../setup/domains-faq.md)
 
-[Obtenir de l’aide sur les domaines Office 365](get-help-with-domains.md)
+[Obtenir de l’aide sur les domaines Office 365](get-help-with-domains.yml)

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine d’Office 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
-ms.openlocfilehash: c012d7a8484026d04bbe216ff28715e9df0de15c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: efbd49daa28b5d15989e1531929cb2d9355aeb8f
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362209"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857426"
 ---
 # <a name="remove-a-domain-from-office-365"></a>Supprimer un domaine d'Office 365
 
@@ -100,7 +100,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>.
 
-2. Accédez à **** \> utilisateurs **actifs**, puis sélectionnez votre compte dans la liste.
+2. Accédez à **Users** \> utilisateurs **actifs**, puis sélectionnez votre compte dans la liste.
 
 3. Dans l’onglet **compte** , sélectionnez **gérer le nom d’utilisateur**, puis choisissez un autre domaine.
   
@@ -114,7 +114,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-germany"
 
-1. Accédez à **** \> utilisateurs **actifs**, puis sélectionnez votre nom dans la liste.
+1. Accédez à **Users** \> utilisateurs **actifs**, puis sélectionnez votre nom dans la liste.
 
 2. Dans la section **nom d’utilisateur/adresse de messagerie** , sélectionnez **modifier**, puis choisissez un autre domaine.
 
@@ -130,7 +130,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-21vianet"
 
-1. Accédez à **** \> utilisateurs **actifs**, puis sélectionnez votre nom dans la liste.
+1. Accédez à **Users** \> utilisateurs **actifs**, puis sélectionnez votre nom dans la liste.
 
 2. Dans la section **nom d’utilisateur/adresse de messagerie** , sélectionnez **modifier**, puis choisissez un autre domaine.
 
@@ -229,7 +229,7 @@ Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine 
 
 [Foire aux questions domaines](../setup/domains-faq.md)
 
-[Obtenir de l’aide sur les domaines Office 365](get-help-with-domains.md)
+[Obtenir de l’aide sur les domaines Office 365](get-help-with-domains.yml)
 
 [Basculer vers une autre offre Office 365 pour les entreprises](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
