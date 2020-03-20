@@ -2,10 +2,10 @@
 title: Rechercher et débloquer les messages en quarantaine en tant qu’utilisateur dans Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 05/19/2018
+ms.date: ''
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,104 +16,164 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 'En tant qu’utilisateur Office 365, vous pouvez gérer votre propre courrier indésirable mis en quarantaine de deux manières : en répondant aux notifications de courrier indésirable qui vous sont directement envoyées (si votre administrateur l’a configuré) ou en utilisant la fonction de quarantaine du courrier indésirable dans le &amp;Centre de sécurité et conformité.'
-ms.openlocfilehash: 277af18d2061e8bd13386ab96e37d982d68e0b52
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: En tant qu'utilisateur Office 365, vous pouvez afficher, déplacer et supprimer les messages mis en quarantaine (les messages dont vous êtes le destinataire et qui sont en quarantaine car considérés comme du courrier indésirable ou comme des e-mails de masse). Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Centre de sécurité et de conformité.
+ms.openlocfilehash: e74358d57b96c8655fbf6a3f7f0b6eedb5e65ede
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599291"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857332"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Rechercher et débloquer les messages en quarantaine en tant qu’utilisateur dans Office 365
+# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Rechercher et déplacer les messages en quarantaine en tant qu’utilisateur dans Office 365
 
-En tant qu’utilisateur Office 365, vous pouvez gérer les messages mis en quarantaine plutôt que les messages qui vous sont envoyés de deux manières : en [répondant aux notifications de courrier indésirable qui vous sont directement envoyées](use-spam-notifications-to-release-and-report-quarantined-messages.md)(si votre administrateur l’a configuré) ou en utilisant le &amp;Centre de sécurité et conformité.
+La quarantaine contient des messages potentiellement dangereux ou indésirables dans les organisations Office 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans Office 365](quarantine-email-messages.md).
 
-> [!NOTE]
-> En tant qu’administrateur, vous pouvez [gérer les messages en quarantaine](manage-quarantined-messages-and-files.md) pour d’autres utilisateurs de votre organisation.
+En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les messages mis en quarantaine car considérés comme du courrier indésirable, des e-mails de masse, ou (à partir d’avril 2020) de l’hameçonnage, si vous en êtes le destinataire. Vous pouvez également signaler les faux positifs à Microsoft.
 
-## <a name="view-messages-that-were-sent-to-quarantine-instead-of-to-you"></a>Afficher les messages mis en quarantaine, sans vous avoir été envoyés
+Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Centre de sécurité et de conformité.
 
-1. Connectez-vous à Office 365 et[accédez au Centre de sécurité et conformité](../../compliance/go-to-the-securitycompliance-center.md)à l’aide de votre compte professionnel ou scolaire.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-2. À gauche, développez **Gestion des menaces**, sélectionnez **Révision**, puis **Quarantaine**.
+- Pour ouvrir le Centre de sécurité et conformité Office 365, accédez à <https://protection.office.com>. Pour ouvrir la page de quarantaine directement, accédez à <https://protection.office.com/quarantine>.
 
-    > [!TIP]
-    > Pour accéder directement à la page **Quarantaine** du Centre de sécurité&amp; et conformité, utilisez cette URL : [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+- Les administrateurs peuvent configurer la durée pendant laquelle les messages sont conservés dans la quarantaine avant d’être définitivement supprimés (stratégies anti-courrier indésirable). Les messages dont la mise en quarantaine est arrivée à expiration ne peuvent pas être récupérés. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
-Par défaut, le Centre de sécurité&amp; et conformité affiche tous les messages e-mail mis en quarantaine en tant que courrier indésirable. Les messages sont triés du plus récent au plus ancien en fonction de leur **date** de réception. **Expéditeur**, **Objet** et la date d’expiration (sous **Expire**) sont également affichés pour chaque message. Vous pouvez trier un champ en cliquant sur l’en-tête de colonne correspondant. Cliquez une deuxième fois sur un en-tête de colonne pour inverser l’ordre de tri.
+- Les administrateurs peuvent également [activer les notifications de courrier indésirable pour l’utilisateur final](configure-your-spam-filter-policies.md) dans les stratégies anti-courrier indésirable. Depuis octobre 2019, vous ne pouvez plus déplacer les messages mis en quarantaine directement à partir de ces notifications. Vous pouvez cliquer sur **Examiner** dans la notification, ce qui vous permet d’accéder à la quarantaine dans le Centre de sécurité & conformité. Si vous souhaitez en savoir plus, consultez l’article [Notifications de courrier indésirable pour l’utilisateur final dans Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-Vous pouvez afficher la liste de tous les messages en quarantaine ou rechercher des messages spécifiques à l’aide du filtrage. Les opérations en bloc se limitent à 100 éléments et dès lors, le filtrage permet de réduire votre jeu de résultats en présence de plus d’éléments. Vous pouvez rapidement filtrer les messages pour une même raison de mise en quarantaine en sélectionnant une option à partir de la liste déroulante. Les options suivantes sont disponibles : 
+- Les messages mis en quarantaine car considérés comme de l’hameçonnage, des programmes malveillants ou par règles de flux de messagerie (également appelés règles de transport) ne sont disponibles que pour les administrateurs. Si vous souhaitez en savoir plus, consultez l’article [Rechercher et déplacer les messages en quarantaine en tant qu'administrateur dans Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
 
-- Courrier identifié comme courrier indésirable. Ces messages en quarantaine s’affichent par défaut.
+- Vous ne pouvez déplacer un message et le signaler comme faux positif (légitime) qu'une seule fois.
 
-- Courrier identifié comme courrier en nombre.
+## <a name="view-your-quarantined-messages"></a>Afficher les messages en quarantaine
 
-Après avoir trouvé un message en quarantaine spécifique, cliquez sur ce message pour afficher des détails le concernant et effectuer des actions. Vous pouvez diffuser le message dans votre boîte de réception, afficher un aperçu du message, télécharger le message ou supprimer immédiatement le message en quarantaine.
+1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Examiner** \> **Quarantaine**.
 
-> [!NOTE]
-> Dans Office 365, vous devez disposer d’autorisations d’administrateur pour utiliser les messages en quarantaine envoyés à d’autres utilisateurs.
+2. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
 
-## <a name="to-filter-and-find-quarantined-messages"></a>Filtrer et rechercher les messages en quarantaine
+   - **Reçu**<sup>\*</sup>
 
-En présence de nombreux éléments en quarantaine, vous pouvez limiter leur nombre en les filtrant.
+   - **Expéditeur**<sup>\*</sup>
 
-1. Sur la page **Quarantaine**, indiquez si vous souhaitez afficher les messages en quarantaine liés au **courrier indésirable** ou au **courrier en nombre**.
+   - **Sujet**<sup>\*</sup>
 
-2. Sous **Trier les résultats par**, sélectionnez une combinaison de conditions en définissant les filtres qui conviennent (actuellement, vous ne pouvez pas utiliser de caractères génériques). Vous pouvez choisir parmi plusieurs conditions, notamment les suivantes :
+   - **Raison de la quarantaine**<sup>\*</sup>
 
-   - **ID du message** : utilisez cet ID pour sélectionner un message spécifique, sous réserve de le connaître.
+   - **Déplacer ?**<sup>\*</sup>
 
-     Par exemple, si un message est envoyé par un utilisateur de votre organisation, ou adressé à ce dernier mais n'a jamais atteint sa destination, vous pouvez rechercher le message à l'aide d’un suivi des messages. (voir [Suivi des messages dans le Centre de sécurité et conformité](message-trace-scc.md)). Si vous découvrez que le message a été mis en quarantaine, parce qu'il correspond à une règle de messagerie ou a été identifié comme un courrier indésirable, vous pouvez facilement le retrouver en spécifiant son ID. Veillez à inclure la chaîne ID complète du message. Celle-ci peut comprendre des crochets (\<\>), par exemple : 
+   - **Type de stratégie**<sup>\*</sup>
 
-     `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
+   - **Expire**<sup>\*</sup>
 
-   - **Adresse e-mail de l’expéditeur** : optez pour un filtrage basé sur l’adresse e-mail d’un seul expéditeur.
+   - **Destinataire**
 
-   - **Adresse e-mail du destinataire** : optez pour un filtrage basé sur l’adresse e-mail d’un seul destinataire.
+   - **ID de message**
 
-   - **Objet** : entrez l’objet d’une adresse e-mail que vous souhaitez trouver.
+   - **Nom de la stratégie**
 
-   - **Plage de dates** : vous pouvez choisir de filtrer selon la date à laquelle le message a été mis en quarantaine. Vous pouvez spécifier la date ou un intervalle de temps, avec dates et heures.
+   - **Taille**
 
-   - **Date d’expiration** : pour effectuer un filtrage par date d’expiration, sélectionnez **Filtre avancé**. Vous pouvez sélectionner les messages qui seront supprimés de la quarantaine au cours des prochaines 24 heures (**Aujourd’hui**), au cours des prochaines 48 heures (**2 prochains jours**), au cours de la semaine à venir (**7 prochains jours**) ou vous pouvez sélectionner un intervalle de temps personnalisé.
+   - **Direction**
 
-     > [!IMPORTANT]
-     > Par défaut, le courrier indésirable et le courrier en nombre restent en quarantaine pendant 30 jours. Toutefois, cet intervalle de temps peut être configuré et votre administrateur peut avoir défini une période de rétention en quarantaine différente. Quand Office 365 supprime un message en quarantaine, vous ne pouvez pas le récupérer.
+   Lorsque vous avez terminé, cliquez sur **Enregistrer** ou sur **Définir par défaut**.
 
-## <a name="view-details-for-a-specific-message"></a>Afficher des détails pour un message spécifique
+3. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
 
-Après avoir sélectionné un message, vous pouvez consulter un récapitulatif de ses propriétés dans un volet à droite de la page.
+   - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
 
-- **ID du message** : identificateur unique du message.
+     - **Aujourd’hui**
 
-- **Adresse de l’expéditeur** : personne qui a envoyé le message.
+     - **Dans les 2 prochains jours**
 
-- **Reçu** : date de réception du message.
+     - **Dans les 7 prochains jours**
 
-- **Objet** : texte de la ligne d’objet du message.
+     - **Personnaliser**: Entrer une **Date de début** et une **Date de fin**.
 
-- **Raison de mise en quarantaine** : indique si un message a été identifié comme **courrier indésirable** ou **courrier en nombre**.
+   - **Heure de réception**: Entrer une **Date de début** et une **Date de fin**.
 
-- **Expire** : date à laquelle le message sera supprimé de la quarantaine.
+   - **Raison de la mise en quarantaine :**
 
-- **Diffusé à** : toutes les adresses e-mail (le cas échéant) auxquelles le message a été diffusé.
+     - **E-mail de masse**
 
-- **Pas encore diffusé à** : toutes les adresses e-mail (le cas échéant) auxquelles le message n’a pas encore été diffusé. Sélectionnez **Diffuser** si vous souhaitez que le message apparaisse dans votre boîte de réception (pour plus d’informations sur la diffusion de messages, voir la section suivante).
+     - **Courrier indésirable**
 
-Pour obtenir plus de détails sur le message, sélectionnez l’une des options suivantes :
+     - **Hameçonnage** (à partir d’avril 2020)
 
-- **Afficher l’en-tête du message** : sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser l’en-tête en détail, copiez le texte d’en-tête du message dans votre Presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft**pour accéder à l’Analyseur de connectivité à distance (cliquez avec le bouton droit et sélectionnez Ouvrir dans un nouvel onglet si vous ne souhaitez pas laisser Office 365 accomplir cette tâche). Collez l’en-tête du message dans la section Analyseur d’en-tête de message de la page, puis sélectionnez Analyser les en-têtes.
+   Pour effacer le filtre, cliquez sur **Effacer**. Pour masquer le menu déroulant de filtrage, cliquez de nouveau sur **Filtrer**.
 
-- **Aperçu du message** : permet de consulter les versions brutes ou HTML du texte du corps du message. Au format HTML, les liens sont désactivés.
+4. Utilisez **Trier les résultats par** (le bouton **ID de message** par défaut) et une valeur correspondante pour rechercher des messages spécifiques. Les caractères génériques ne sont pas pris en charge. Vous pouvez effectuer une recherche sur les valeurs suivantes :
 
-## <a name="manage-your-quarantined-messages"></a>Gérer vos messages en quarantaine
+   - **ID du message** : l’identificateur global unique du message. Si vous sélectionnez un message dans la liste, la valeur **ID du message** apparaît dans le volet déroulant **Détails** qui s’affiche. Les administrateurs peuvent utiliser le [suivi des messages](message-trace-scc.md) pour rechercher les messages et les valeurs d’ID de message correspondantes.
 
-Après avoir sélectionné un message ou un groupe de messages, vous disposez de plusieurs options pour gérer les messages en quarantaine.
+   - **Adresse e-mail de l'expéditeur** : adresse e-mail d'un seul expéditeur.
 
-- Ne rien faire. Si vous choisissez de ne rien faire, Office 365 supprimera automatiquement le message arrivé à expiration. Pour rappel, quand Office 365 supprime un message mis en quarantaine, vous ne pouvez pas le récupérer.
+   - **Adresse e-mail du destinataire** : adresse e-mail d'un seul destinataire.
 
-- **Diffuser un message** : diffusez un message (ou plusieurs messages) mis en quarantaine pour l’envoyer vers votre boîte de réception. Lorsque vous diffusez un message, vous avez la possibilité de signaler ce message à Microsoft à des fins d’analyse.
+   - **Sujet** : utiliser l'intégralité du sujet du message. La recherche n’est pas sensible à la casse.
 
-    Lorsque vous choisissez de signaler un message de type faux positif, le message est signalé à l’équipe d’analyse de courrier indésirable de Microsoft. Cette équipe évalue et analyse les messages de type faux positif, et selon les résultats de l’analyse, les règles de filtrage du courrier indésirable du service peuvent être ajustées pour permettre l’acheminement des messages.
+   Après avoir entrer les critères de recherche, cliquez sur le ![Bouton actualiser](../media/scc-quarantine-refresh.png) **Actualiser** pour filtrer les résultats.
 
-- **Supprimer de la mise en quarantaine** : supprime immédiatement le message de la mise en quarantaine, sans diffuser le message dans votre boîte de réception.
+Une fois le message spécifique mis en quarantaine trouvé, sélectionnez-le pour afficher des détails à son sujet et pour prendre des mesures (par exemple, afficher, déplacer, télécharger ou supprimer le message).
+
+### <a name="export-message-results"></a>Exporter les résultats de message
+
+1. Sélectionnez les messages qui vous intéressent, puis cliquez sur **Exporter les résultats**.
+
+2. Cliquez sur **Oui** dans le message de confirmation qui vous avertit que la fenêtre du navigateur reste ouverte.
+
+3. Lorsque l’exportation est prête, vous pouvez nommer et choisir l’emplacement de téléchargement du fichier .csv.
+
+### <a name="view-quarantined-message-details"></a>Afficher les détails des messages mis en quarantaine
+
+Lorsque vous sélectionnez un message électronique dans la liste, les détails de message suivants s’affichent dans le volet déroulant **Détails** :
+
+- **ID du message** : l’identificateur global unique pour le message.
+
+- **Adresse de l’expéditeur**
+
+- **Reçu** : Date et heure de réception du message.
+
+- **Subject**
+
+- **Raison de la mise en quarantaine** : indique si un message a été identifié comme **Courrier indésirable**, **E-mail de masse** ou (à partir d’avril 2020) **Hameçonnage**.
+
+- **Destinataires** : si le message contient plusieurs destinataires, vous devez cliquer sur **Prévisualiser le message** ou **Afficher l’en-tête du message** pour afficher la liste complète des destinataires.
+
+- **Expires** : Date et heure auxquelles le message sera automatiquement et définitivement supprimé de la quarantaine.
+
+- **Déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message a été envoyé.
+
+- **Pas encore déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message n'a pas encore été envoyé.
+
+### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
+
+Après avoir sélectionné un message, vous pouvez effectuer les actions suivantes dans le volet déroulant **Détails** :
+
+- **Déplacer le message** : dans le volet déroulant qui s’affiche, indiquez si vous souhaitez **Signaler les messages à Microsoft pour analyse**. Cette option est sélectionnée par défaut et signale à Microsoft le message mis en quarantaine par erreur comme un faux positif.
+
+  Lorsque vous avez terminé, cliquez sur **Déplacer les messages**.
+
+- **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Office 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
+
+- **Prévisualiser le message** : dans le volet déroulant qui apparaît, choisissez l’une des options suivantes :
+
+  - **Mode Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
+  
+  - **Mode texte** : affiche le corps du message au format texte brut.
+
+- **Télécharger le message** : dans le volet déroulant qui s’affiche, sélectionnez **Je comprends les risques liés au téléchargement de ce message** pour enregistrer une copie locale du message au format .eml.
+
+- **Supprimer de la quarantaine** : Le message est supprimé dès que vous cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
+
+Lorsque vous avez terminé, cliquez sur **Fermer**.
+
+Si vous ne déplacez pas ou ne supprimez pas le message, il sera supprimé après l'expiration de la période de conservation de quarantaine par défaut.
+
+#### <a name="take-action-on-multiple-quarantined-email-messages"></a>Effectuer une action sur plusieurs courriers électroniques mis en quarantaine
+
+Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (jusqu’à 100), le volet déroulant **Actions groupées** s’affiche et vous pouvez effectuer les actions suivantes :
+
+- **Déplacer les messages** : Les options sont les mêmes que lorsque vous déplacez un seul message, sauf que vous ne pouvez pas sélectionner **Déplacer les messages pour des destinataires spécifiques**. Vous pouvez seulement sélectionner **Déplacer le message pour tous les destinataires** ou **Déplacer les messages pour d'autres personnes**.
+
+- **Supprimer des messages** : le message est immédiatement supprimé sans être envoyé aux destinataires d’origine dès que vous cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
+
+Lorsque vous avez terminé, cliquez sur **Fermer**.
