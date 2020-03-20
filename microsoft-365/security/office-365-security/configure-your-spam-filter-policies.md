@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les paramètres du filtre de courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables.
-ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa597887a75ff71d768d4df0b1ac4f17fe9ef13
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086273"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857356"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configuration de vos stratégies de filtrage du courrier indésirable
 Les paramètres du filtre de courrier indésirable incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables. Les paramètres de la stratégie de filtrage de courrier indésirable sont appliqués uniquement aux messages entrants et sont de deux sortes :
@@ -83,7 +83,7 @@ Pour activer des paramètres plus personnalisés ou ajouter des stratégies pers
    - **Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. Il s’agit de l’action par défaut pour les hameçons. Si vous sélectionnez cette option, dans la zone d'entrée **Conserver les courriers indésirables pendant (jours)**, spécifiez le nombre de jours pendant lesquels le courrier indésirable restera en quarantaine. (Il sera automatiquement supprimé à l'issue de cette période. La valeur par défaut est 30 jours, ce qui est également la valeur maximale. La valeur minimale est 1 jour.)
 
      > [!TIP]
-     > Pour plus d'informations sur la manière dont les administrateurs peuvent gérer les messages électroniques en quarantaine, consultez les rubriques [Quarantaine](quarantine.md) et [Rechercher et débloquer des messages mis en quarantaine en tant qu'administrateur](find-and-release-quarantined-messages-as-an-administrator.md). <br/><br/> Pour plus d’informations sur la configuration des messages de notification de courrier indésirable pour les utilisateurs, voir [Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP](configure-end-user-spam-notifications-in-eop.md) ou [configurer des notifications de courrier indésirable pour l’utilisateur final dans Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
+     > Si vous souhaitez en savoir plus sur la façon dont les administrateurs peuvent gérer les messages électroniques en quarantaine, consultez les articles [Quarantaine](quarantine.md) et [Gérer les messages et les fichiers en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md) <br/><br/> Pour plus d’informations sur la configuration des messages de notification de courrier indésirable pour les utilisateurs, voir [Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP](configure-end-user-spam-notifications-in-eop.md) ou [configurer des notifications de courrier indésirable pour l’utilisateur final dans Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
 
    - Configurer **sélectionnez le seuil** pour déterminer la façon dont vous voulez traiter les courriers électroniques en bloc comme du courrier indésirable, en fonction du niveau de réclamation en bloc (BCL) du message. Vous pouvez choisir un paramètre de seuil compris allant de 1 et 9, où 1 marque la plupart des messages électroniques en nombre en tant que courrier indésirable, et 9 autorise la remise de la plupart des messages électroniques en nombre. Le service effectue ensuite l’action configurée, comme par exemple l’envoi du message dans le dossier Courrier indésirable du destinataire. Pour plus de détails, consultez [Valeurs BCL](bulk-complaint-level-values.md) et [Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 

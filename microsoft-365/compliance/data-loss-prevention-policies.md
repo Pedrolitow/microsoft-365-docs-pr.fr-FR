@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: 722afcb7bdebb6004d9a7ab365ac6038fe1d31a4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 574a3376aa54311db3edc581e0a3e602cb1ac383
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635092"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826289"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -179,6 +179,8 @@ Dans un compte OneDrive Entreprise, un conseil de stratégie se présente comme 
 Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Ce rapport comprend des informations sur l’élément qui a fait l’objet d’une correspondance, le contenu qui a satisfait à la règle ainsi que le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
   
 ![Page de configuration de rapports d’incident](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+
+DLP n’analyse pas les messages électronique de la même façon que les éléments dans SharePoint Online ou OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux messages électroniques et génère un rapport en cas de correspondance de stratégie. DLP ***ne peut pas*** analyser ou mettre en correspondance les éléments de messagerie existants qui sont stockés dans une boîte aux lettres ou une archive.
   
 ## <a name="grouping-and-logical-operators"></a>Opérateurs logiques et opérateurs de regroupement
 

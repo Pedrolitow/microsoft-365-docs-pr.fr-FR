@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3f59a6038da8600923f5fcc0d18f1de5ab5dc06c
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634912"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826235"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
@@ -59,7 +59,7 @@ Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super 
 - **Supprimer** : supprime le chiffrement si le document ou le courrier est chiffré.
 
 > [!NOTE]
-> L’option **Supprimer** est uniquement prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Lorsque vous utilisez l’étiquetage intégré, une étiquette incluant cette option est visible dans les applications Office et, si l'option est sélectionnée, le comportement de chiffrement est identique à **Aucun**.
+> L’option **Supprimer** est uniquement prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Lorsque vous utilisez l’étiquetage intégré, une étiquette incluant cette option est visible dans les applications et les services Office et, si l'option est sélectionnée, le comportement de chiffrement est identique à **Aucun**.
 
 Configuration des options de chiffrement :
 
