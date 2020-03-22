@@ -1,12 +1,10 @@
 ---
 title: Gérer l’accès invité dans les groupes Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 12/18/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Office 365, afficher les utilisateurs invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610611"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894502"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>Gérer l’accès invité dans les groupes Office 365
 
@@ -50,11 +48,9 @@ L’accès invité dans des groupes est souvent utilisé dans le cadre d’un sc
 
 Si vous souhaitez activer ou désactiver l’accès invité dans des groupes, vous pouvez le faire dans le centre d’administration 365 de Microsoft.
 
-1. Dans le centre d’administration, accédez à la page **paramètres** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">& des compléments</a> .
-
-2. Sélectionnez **groupes Office 365**.
+1. Dans le centre d’administration, accédez aux **Settings** \> **paramètres** paramètres et sélectionnez **groupes Office 365**.
   
-3. Sur la page **groupes Office 365** , indiquez si vous souhaitez autoriser les personnes extérieures à votre organisation à accéder aux ressources de groupe ou les propriétaires de groupes à ajouter des personnes en dehors de votre organisation à des groupes.
+2. Sur la page **groupes Office 365** , indiquez si vous souhaitez autoriser les personnes extérieures à votre organisation à accéder aux ressources de groupe ou les propriétaires de groupes à ajouter des personnes en dehors de votre organisation à des groupes.
 
 ## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>Ajouter des invités à un groupe Office 365 à partir du centre d’administration
 
@@ -62,7 +58,7 @@ Si l’invité existe déjà dans votre répertoire, vous pouvez l’ajouter à 
   
 1. Dans le centre d’administration, accédez > à **la page groupes de****groupes.**
   
-2. Sélectionnez le groupe auquel vous souhaitez ajouter l’invité, puis sélectionnez **Afficher tout et gérer les membres** sous l’onglet **membres** . 
+2. Cliquez sur le groupe auquel vous souhaitez ajouter l’invité, puis sélectionnez **Afficher tout et gérer les membres** sous l’onglet **membres** . 
   
 4. Sélectionnez **Ajouter des membres**, puis choisissez le nom de l’invité que vous souhaitez ajouter.
     
@@ -76,7 +72,7 @@ Si vous souhaitez modifier les informations d’un invité, vous pouvez [Ajouter
 
 Si vous souhaitez autoriser l’accès invité à la plupart des groupes, mais que vous souhaitez empêcher l’accès invité à la plupart des groupes à l’aide de Microsoft PowerShell.
 
-Vous devez utiliser la version d’évaluation d' [Azure Active Directory PowerShell pour Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (nom de module **AzureADPreview**) pour modifier le paramètre d’accès invité au niveau du groupe :
+Vous devez utiliser la version d’évaluation d' [Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (nom de module **AzureADPreview**) pour modifier le paramètre accès invité au niveau du groupe :
 
 - Si vous n’avez jamais installé une version du module Azure AD PowerShell, consultez [l’installation du module Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) et suivez les instructions d’installation de la préversion publique.
 

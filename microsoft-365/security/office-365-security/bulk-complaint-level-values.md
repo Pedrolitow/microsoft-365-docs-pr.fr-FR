@@ -15,30 +15,29 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: Découvrez les valeurs de niveau de courrier en bloc (BCL) dans Office 365.
-ms.openlocfilehash: b0eb922323421834eae77b8c5430f1bd8f48c8ee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: En savoir plus sur les valeurs de niveau bomplain (BCL) dans Office 365.
+ms.openlocfilehash: 6b90064db7dd9b27fdc729b65fb798dfbe756da7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599721"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895392"
 ---
-# <a name="bulk-complaint-level-values"></a>Valeurs BCL
+# <a name="bulk-complaint-level-bcl-in-office-365"></a>Niveau de réclamation en bloc (BCL) dans Office 365
 
-Les vers de publipostage en bloc ont des modèles d'envoi différents, ainsi que des pratiques de création de contenu et d'acquisition de liste variées. Certains sont de bons vers de publipostage en bloc et envoient des messages désirés comportant un contenu pertinent à leurs abonnés. Ces messages entraînent peu de réclamations de la part des destinataires. D'autres vers de publipostage en bloc envoient des messages non sollicités qui s'apparentent fortement à du courrier indésirable et entraînent de nombreuses réclamations de la part des destinataires.
+Les expéditeurs de courriers électroniques varient en fonction de leurs modèles d’envoi, de création de contenu et d’acquisition de destinataires. Certains sont des expéditeurs de publipostage en bloc qui envoient des messages désirés avec du contenu pertinent à leurs abonnés. Ces messages entraînent peu de réclamations de la part des destinataires. D'autres vers de publipostage en bloc envoient des messages non sollicités qui s'apparentent fortement à du courrier indésirable et entraînent de nombreuses réclamations de la part des destinataires. Les messages provenant d’un expéditeur de courrier indésirable sont connus sous le nom de courrier en nombre ou de courrier gris.
 
-Pour distinguer ces types de vers de publipostage en bloc, une évaluation BCL (Bulk Complaint Level) est réalisée sur les messages qui en proviennent. Les évaluations BCL vont de 1 à 9 selon la probabilité de réclamations dues au ver de publipostage en bloc. Un expéditeur disposant d'une évaluation BCL de 9 peut entraîner un grand nombre de réclamations de la part des destinataires, tandis qu'un autre expéditeur ayant une évaluation BCL de 3 n'en générera probablement pas beaucoup. Microsoft utilise des sources internes et tierces pour identifier le courrier en masse et déterminer l'évaluation BCL appropriée. Pour plus d'informations sur cet en-tête de message, voir [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md).
+Pour distinguer les messages provenant de différents types de publipostages en bloc, le courrier électronique entrant en provenance de courriers électroniques entrants vers Office 365 (Exchange Online ou autonome Exchange Online Protection (EOP) sans boîte aux lettres Exchange Online) est affecté à un niveau de réclamation en bloc (BCL) qui est ajouté à message dans un en-tête X. Le BCL est similaire au [seuil de probabilité de courrier indésirable (SCL)](spam-confidence-levels.md) utilisé pour identifier les messages comme courrier indésirable. Une BCL plus élevée indique qu’un message en bloc est plus susceptible de générer des plaintes (et, par conséquent, plus vraisemblablement un courrier indésirable). Microsoft utilise des sources internes et tierces pour identifier le courrier en nombre et déterminer le BCL approprié.
 
-Dans la mesure où un expéditeur de courrier en nombre avec une note de 9 est susceptible de générer des plaintes, le BCL par défaut est 7. Cela signifie que les courriers en masse seront acceptés jusqu’à ce que le niveau de réclamation de 7 et que le courrier ne soit accepté par la suite. Plus le taux est faible, moins le courrier en masse est accepté. Si vos utilisateurs sont, et que leur travail est, confidentiel à envoyer du courrier en nombre et que votre BCL est défini sur 4, aucun courrier en masse avec une BCL plus élevée ne sera accepté.
+ Le filtrage du courrier indésirable marque les messages en tant que **courrier en masse** en fonction du seuil BCL (valeur par défaut ou valeur que vous spécifiez) et prend l’action spécifiée sur le message (l’action par défaut consiste à envoyer le message vers le dossier de courrier indésirable du destinataire). Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md) et [quelle est la différence entre le courrier indésirable et le courrier électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-Vous pouvez vous servir des valeurs BCL pour définir le niveau de filtrage en bloc souhaité pour votre organisation en suivant les étapes décrites dans la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
-
-Le tableau suivant décrit les valeurs BCL actuellement utilisées.
+Les seuils BCL sont décrits dans le tableau suivant.
 
 |||
-|:-----|:-----|
-|**Valeur BCL**|**Description**|
+|:---:|---|
+|**BCL**|**Description**|
 |0|Le message ne provient pas d'un expéditeur en bloc.|
 |1, 2, 3|Le message provient d'un expéditeur en bloc qui génère peu de réclamations.|
 |4, 5, 6, 7|Le message provient d'un expéditeur en bloc qui génère un nombre moyen de réclamations.|
 |8, 9|Le message provient d’un expéditeur en bloc qui génère un grand nombre de réclamations.|
+|

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le centre de sécurité & conformité pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l’incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse plus approfondie dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634952"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894963"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 
@@ -549,9 +549,16 @@ Si le cas que vous essayez de supprimer contient toujours des conservations, vou
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation  <br/> |Sans limite  <br/> |
   |Nombre maximal de blocages pour une organisation  <br/> |10 000  <br/> |
-  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1,000  <br/> |
+  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1 000  <br/> |
   |Nombre maximal de sites SharePoint et OneDrive entreprise en une seule suspension de cas  <br/> |100  <br/> |
-   
+  |Nombre maximal de cas affichés sur la page d’accueil eDiscovery et nombre maximal d’éléments affichés dans les onglets conservations, recherches et exporter dans un cas. <sup>0,1</sup> |1 000|
+  |||
+
+   > [!NOTE]
+   > <sup>1</sup> pour afficher une liste de plus de 1 000 cas, de suspensions, de recherches ou d’exportations, vous pouvez utiliser la cmdlet Office 365 Security & Compliance PowerShell correspondante :<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+
+
+
 - **Qu’en est-il des cas qui ont été créés sur la page de gestion des dossiers dans Advanced eDiscovery ?** Vous pouvez accéder à la liste des anciens cas de découverte électronique avancée en cliquant sur le lien situé en bas de la page **découverte électronique** dans le centre de sécurité & conformité. Toutefois, pour effectuer un travail dans un cas plus ancien, vous devez contacter le support Office 365 et demander que le cas soit déplacé vers un nouveau cas eDiscovery dans le centre de sécurité & conformité. 
     
 - **Pourquoi créer un administrateur de découverte électronique ?** Comme indiqué précédemment, un administrateur de découverte électronique est membre du groupe de rôles de gestionnaire de découverte électronique, qui peut afficher tous les cas de découverte électronique, et y accéder, de votre organisation. Cette capacité d’accès à tous les cas de découverte électronique a deux objectifs importants :

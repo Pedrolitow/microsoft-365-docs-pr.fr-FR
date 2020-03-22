@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7ab3f63008c65fca1a99128cc6f11f83bc86b2b4
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1dfb567c8e6b8573397d503ae27c0aceb447c916
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857606"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895462"
 ---
-# <a name="machine-profile-page"></a>Page de profil d’ordinateur
+# <a name="machine-profile-page"></a>Page de profil de l’appareil
 
 Le portail de sécurité Microsoft 365 vous fournit des pages de profil d’ordinateur, afin que vous puissiez évaluer l’intégrité et l’état des appareils sur votre réseau. Chaque page de profil d’ordinateur contient une multitude d’informations sur l’appareil.
 
@@ -29,9 +29,7 @@ Vous pouvez également utiliser le profil d’ordinateur pour effectuer des tâc
 
 ## <a name="navigating-the-machine-profile-page"></a>Navigation dans la page de profil d’ordinateur
 
-Vous pouvez accéder à la page profil de l’ordinateur en sélectionnant directement un nom de périphérique dans la liste ordinateurs ou en choisissant **ouvrir la page** de l’ordinateur dans le menu volant liste des ordinateurs.
-
-Une fois la page ouverte, vous constaterez qu’elle est divisée en trois sections.
+La page profil de l’ordinateur est divisée en trois sections.
 
 ![Image de la page de profil de l’ordinateur avec (1) barre d’onglets (2) et (3) actions mises en surbrillance en rouge](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 

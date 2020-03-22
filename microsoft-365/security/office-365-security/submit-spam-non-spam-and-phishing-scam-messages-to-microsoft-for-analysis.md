@@ -16,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Vous et vos utilisateurs pouvez soumettre des messages indésirables faux positifs et faux positifs à Microsoft pour analyse. '
-ms.openlocfilehash: 7b53f74be78bc1203189815c6a7adf3337decd21
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856868"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893645"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse
 
@@ -36,7 +36,7 @@ Les administrateurs peuvent envoyer des courriers électroniques, des URL et des
 
 Si vous recevez un message transmis par le biais de filtres de courrier indésirable qui doivent être considérés comme des courriers indésirables ou des tentatives de hameçonnage, vous pouvez envoyer le message « faux Negative » à l’analyse du courrier indésirable Microsoft et aux équipes d’analyse du hameçonnage Microsoft, selon le cas. Les analystes examineront le message et l’ajouteront aux filtres à l’échelle du service s’il répond aux critères de classification.
 
-Pour plus de paramètres de courrier indésirable qui s’appliquent à l’ensemble de l’organisation, voir [bloquer le courrier indésirable avec le filtre de courrier indésirable Office 365 pour éviter les problèmes négatifs](reduce-spam-email.md). Cet article contient des conseils pour éviter les faux négatifs.
+Pour plus de paramètres de courrier indésirable qui s’appliquent à l’ensemble de l’organisation, consultez la rubrique [protection contre le courrier indésirable dans Office 365](anti-spam-protection.md). Cet article contient des conseils pour éviter les faux négatifs.
 
 Vous pouvez soumettre des courriers indésirables en procédant comme suit :
 
@@ -59,16 +59,16 @@ Pour soumettre un courrier indésirable ou une tentative de hameçonnage à Micr
 3. Copiez et collez le message d’hameçonnage ou de courrier indésirable dans le nouveau message en tant que pièce jointe.
 
    > [!NOTE]
-   > • Vous pouvez joindre plusieurs messages dans le nouveau message. Assurez-vous que tous les messages sont du même type : les messages de hameçonnage ou les messages électroniques de courrier indésirable. <br/><br/>• Laissez le corps du nouveau message vide. <br/><br/>• Utilisez les formats. MSG (format Outlook par défaut) ou. eml (Outlook sur le format Web par défaut) pour les messages joints.
+   > * Vous pouvez joindre plusieurs messages dans le nouveau message. Assurez-vous que tous les messages sont du même type : les messages de hameçonnage ou les messages électroniques de courrier indésirable. <br/><br/>* Laissez le corps du nouveau message vide. <br/><br/>* Utilisez les formats. MSG (format Outlook par défaut) ou. eml (Outlook sur le format Web par défaut) pour les messages joints.
 
 4. Cliquez sur **Envoyer**.
 
 ## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>Soumission de messages marqués comme courrier indésirable mais qui auraient dû être transmis 
 
 Si un message a été identifié de manière incorrecte comme courrier indésirable, vous pouvez envoyer le message « faux positif » à l’équipe d’analyse du courrier indésirable de Microsoft. Les analystes vont évaluer et analyser le message. Selon les résultats de l'analyse, les règles de filtrage de contenu du courrier indésirable du service peuvent être ajustées pour autoriser le message.
-  
-Les administrateurs peuvent examiner davantage d’informations sur les paramètres du courrier indésirable qui s’appliquent à une organisation entière. Découvrez [Comment vous assurer qu’un message n’est pas marqué comme courrier indésirable](prevent-email-from-being-marked-as-spam.md). Ces informations sont utiles si vous disposez d'un contrôle de niveau administrateur et si vous souhaitez éviter les faux positifs ou les faux négatifs.
-  
+
+Les administrateurs peuvent examiner davantage d’informations sur les paramètres du courrier indésirable qui s’appliquent à une organisation entière. Consultez la rubrique [créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md). Ces informations sont utiles si vous disposez d'un contrôle de niveau administrateur et si vous souhaitez éviter les faux positifs ou les faux négatifs.
+
 Vous pouvez envoyer des messages de courrier non indésirable de la manière suivante :
 
 - Si vous utilisez l’action **déplacer le message vers le dossier courrier indésirable** lorsque vous configurez vos filtres de contenu (il s’agit de l’action par défaut), les utilisateurs peuvent publier des messages faux positifs dans le dossier courrier indésirable Outlook ou Outlook sur le Web (anciennement Outlook Web App).
@@ -113,15 +113,4 @@ Après avoir examiné ces informations, l’équipe de courrier indésirable peu
 
 [Vidéo de l’équipe de courrier indésirable Microsoft Exchange](https://youtu.be/-TpX_-GMC7o?hd=1)
 
-L’évaluation du courrier indésirable est un processus permanent qui s’applique quels que soient la langue et le jeu de caractères d’origine. Lorsque le message de courrier indésirable est vague ou manque de texte dans la ligne d’objet ou le corps, l’équipe de courrier indésirable s’appuie sur d’autres caractéristiques du message pour effectuer le filtrage. Cela signifie qu’après que l’équipe de courrier indésirable a balisé un message donné comme courrier indésirable et apporté les modifications nécessaires à sa base de règles, ce message reste bloqué jusqu’à ce que ses caractéristiques aient été suffisamment modifiées pour échapper à nos filtres. De nouvelles règles de courrier indésirable sont déployées en permanence. Les périodes pour les règles relatives aux soumissions individuelles dépendent de la quantité et de la qualité des soumissions. Comme les nouvelles règles de courrier indésirable sont définies globalement pour tous les utilisateurs, les diverses soumissions de courrier indésirable n’entraînent pas toutes l’introduction de nouvelles règles de courrier indésirable.
-
-## <a name="for-more-information"></a>Pour plus d'informations
-
-[Protection contre le courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md)
-  
-[Comment s'assurer qu'un message n'est pas marqué comme du courrier indésirable](prevent-email-from-being-marked-as-spam.md)
-  
-[Bloquer le courrier indésirable à l'aide du filtre d'Office 365 afin d'éviter les problèmes de faux négatifs](reduce-spam-email.md)
-  
-
-[Bloquer le courrier indésirable à l'aide du filtre d'Office 365 afin d'éviter les problèmes de faux négatifs](reduce-spam-email.md)
+L'évaluation du courrier indésirable est un processus permanent qui s'applique quels que soient la langue et le jeu de caractères d'origine. Lorsque le message de courrier indésirable est vague ou manque de texte dans la ligne d'objet ou le corps, l'équipe de courrier indésirable s'appuie sur d'autres caractéristiques du message pour effectuer le filtrage. Cela signifie qu'après que l'équipe de courrier indésirable a balisé un message donné comme courrier indésirable et apporté les modifications nécessaires à sa base de règles, ce message reste bloqué jusqu'à ce que ses caractéristiques aient été suffisamment modifiées pour échapper à nos filtres. De nouvelles règles de courrier indésirable sont déployées en permanence. Les périodes pour les règles relatives aux soumissions individuelles dépendent de la quantité et de la qualité des soumissions. Comme les nouvelles règles de courrier indésirable sont définies globalement pour tous les utilisateurs, les diverses soumissions de courrier indésirable n'entraînent pas toutes l'introduction de nouvelles règles de courrier indésirable.

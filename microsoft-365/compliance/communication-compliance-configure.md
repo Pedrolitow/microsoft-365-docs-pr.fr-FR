@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 027189a10e34687833e6a266d5fe4382a1e14e3a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5f105912c5163b69368683cd4c6eaebf96250e3c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632895"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894829"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -83,7 +83,7 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Office 365 | Groupes de distribution dynamique |
-| Relecteurs | Groupes de sécurité à extension messagerie  | Groupes de distribution <br> groupes de distribution dynamiques |
+| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
   
 Lorsque vous sélectionnez un groupe Office 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres Office 365 partagée et les canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.
 

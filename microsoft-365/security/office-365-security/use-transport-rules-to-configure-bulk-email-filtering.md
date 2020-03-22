@@ -1,9 +1,9 @@
 ---
-title: Utiliser des règles de flux de messagerie pour configurer le filtrage du courrier en nombre dans Exchange Online Protection
+title: Utiliser des règles de flux de messagerie pour filtrer les messages électroniques en masse dans Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -15,132 +15,161 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie dans Exchange Online Protection pour le filtrage de courrier en nombre.
-ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081816"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895046"
 ---
-# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utiliser des règles de flux de messagerie pour configurer le filtrage du courrier en nombre dans Exchange Online Protection
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>Utiliser des règles de flux de messagerie pour filtrer les messages électroniques en masse dans Office 365
 
-Vous pouvez définir des filtres de contenu à l'échelle de l'entreprise pour le courrier indésirable et le courrier en masse à l'aide des stratégies de filtrage de contenu du courrier indésirable par défaut. Consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) et [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) sur la façon de définir les stratégies de filtrage de contenu.
+Si vous êtes un client Office 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, EOP utilise des stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) pour analyser messages entrants pour le courrier indésirable et le courrier en nombre (également appelé courrier gris). Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
-Si vous souhaitez utiliser davantage d’options pour filtrer les messages en masse, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour rechercher des modèles de texte ou des expressions fréquemment trouvées dans les messages électroniques en masse. Tout message contenant ces caractéristiques sera marqué comme courrier indésirable. L'utilisation de ces règles peut aider à réduire la quantité de messages électroniques indésirables que reçoit votre organisation.
+Si vous souhaitez utiliser davantage d’options pour filtrer les messages en masse, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour rechercher des modèles de texte ou des expressions fréquemment trouvées dans le courrier en nombre et marquer ces messages comme courrier indésirable. Pour plus d’informations sur le courrier en nombre, consultez [la rubrique quelle est la différence entre courrier indésirable et courrier électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md) et [BCL (Bulk Complaint Level) dans Office 365](bulk-complaint-level-values.md).
 
-> [!IMPORTANT]
-> Avant de créer les règles de flux de messagerie décrites dans cette rubrique, nous vous recommandons de lire [d’abord la différence entre le courrier indésirable et le courrier électronique en](what-s-the-difference-between-junk-email-and-bulk-email.md) masse, ainsi que les [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).<br>Les procédures suivantes permettent de marquer un message comme indésirable à l'échelle de votre organisation toute entière. Toutefois, vous pouvez ajouter une condition afin de n'appliquer ces règles qu'à des destinataires spécifiques de votre organisation. De cette façon, les paramètres de filtrage restrictif des messages électroniques ne s'appliqueront qu'à quelques utilisateurs particulièrement ciblés et le reste de vos utilisateurs (qui reçoivent en général les messages électroniques en masse auxquels ils se sont inscrits) ne seront pas concernés.
+Cette rubrique explique comment créer ces règles de flux de messagerie dans le centre d’administration Exchange et PowerShell (les clients Exchange Online PowerShell pour Office 365 ; Exchange Online Protection PowerShell pour les clients EOP autonomes).
 
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Créer une règle de flux de messagerie pour filtrer les messages électroniques en masse en fonction des modèles de texte
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-1. Dans le Centre d’administration Exchange, accédez à **Flux de messagerie** \> **Règles**.
+- Pour pouvoir effectuer ces procédures, vous devez disposer d’autorisations dans Exchange Online. Plus précisément, vous devez disposer du rôle **de règles de transport** , qui est affecté aux rôles de gestion de l' **organisation**, de gestion de **la conformité**et de **gestion des enregistrements** par défaut. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-2. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
+- Pour ouvrir le centre d’administration Exchange dans Exchange Online, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-3. Indiquez le nom de la règle.
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à l’environnement de ligne de commande Exchange Online Protection PowerShell autonome, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-4. Cliquez sur **plus** ![d’options.](../../media/ITPro-EAC-MoreOptionsIcon.png)icône autres options. Sous **Appliquer cette règle si**, sélectionnez **L'objet ou le corps** \> **l'objet ou le corps correspond à ces modèles de texte**.
+- Pour plus d’informations sur les règles de flux de messagerie dans Exchange Online et dans la version autonome d’EOP, consultez les rubriques suivantes :
 
-5. Dans la boîte de dialogue **spécifier des mots ou des expressions** , ajoutez une par une les expressions régulières suivantes généralement présentes dans les messages électroniques en masse, puis cliquez sur **OK** lorsque vous avez fini :
+  - [Règles de flux de messagerie (règles de transport) dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-   - `If you are unable to view the content of this email\, please`
+  - [Conditions de règle de flux de messagerie et exceptions (prédicats) dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-   - `\>(safe )?unsubscribe( here)?\</a\>`
+  - [Actions de règle de flux de messagerie dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-   - `If you do not wish to receive further communications like this\, please`
+- La liste des mots et des modèles de texte utilisés pour identifier le courrier en nombre dans les exemples n’est pas exhaustive ; vous pouvez ajouter et supprimer des entrées si nécessaire. Toutefois, ils constituent un point de départ approprié.
 
-   - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
+- La recherche de mots clés ou de modèles de texte dans l’objet ou dans d’autres champs d’en-tête du message est effectuée *après* que le codage utilisé avec la méthode MIME pour transmettre le message binaire entre les serveurs SMTP a été décodé en texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages.
 
-   - `To stop receiving these+emails\:http\://`
+- Les procédures suivantes marquent un message en bloc comme courrier indésirable pour l’ensemble de votre organisation. Toutefois, vous pouvez ajouter une autre condition pour appliquer ces règles à des destinataires spécifiques, de sorte que vous pouvez utiliser un filtrage agressif sur quelques utilisateurs hautement ciblés, tandis que les autres utilisateurs (qui obtiennent principalement le courrier en nombre auquel ils étaient inscrits) ne sont pas concernés.
 
-   - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
-
-   - `no longer (wish )?(to )?(be sent|receive) w+ email`
-
-   - `If you are unable to view the content of this email\, please click here`
-
-   - `To ensure you receive (your daily deals|our e-?mails)\, add`
-
-   - `If you no longer wish to receive these emails`
-
-   - `to change your (subscription preferences|preferences or unsubscribe)`
-
-   - `click (here to|the) unsubscribe`
-
-   La liste ci-dessus n’est pas un ensemble exhaustif d’expressions régulières trouvées dans les messages électroniques en masse ; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, ils constituent un bon point de départ.
-
-   La recherche de mots clés ou de modèles de texte dans l’objet ou dans d’autres champs d’en-tête du message est effectuée *après* que le codage utilisé avec la méthode MIME pour transmettre le message binaire entre les serveurs SMTP a été décodé en texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages.
-
-6. Sous **Effectuer les opérations suivantes**, sélectionnez **Modifier les propriétés des messages** \> **Définir le seuil de probabilité de courrier indésirable (SCL)**.
-
-7. Dans la boîte de dialogue **spécifier la valeur SCL**, définissez la valeur SCL sur **5**, **6** ou **9**, puis cliquez sur **OK**.
-
-   La définition du SCL sur 5 ou 6 déclenche l'action **Courrier indésirable**, tandis qu'une définition sur 9 déclenche l'action **Courrier indésirable à niveau de confiance élevé**, comme configuré dans la stratégie de filtrage du contenu. Le service effectue l'action définie dans la stratégie de filtrage de contenu. L'action par défaut consiste à placer le message dans le dossier Courrier indésirable des destinataires, mais différentes actions peuvent être configurées, comme décrit dans [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
-
-   Si votre action configurée consiste à mettre le message en quarantaine au lieu de l’envoyer au dossier de courrier indésirable des destinataires, le message est envoyé à la mise en quarantaine de l’administrateur en tant que correspondance de règle de flux de messagerie et n’est pas disponible dans le cadre de la mise en quarantaine du courrier indésirable de l’utilisateur final ou via l’utilisateur final notifications de courrier indésirable.
-
-   Pour plus d'informations sur les valeurs SCL, voir [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).
-
-8. Enregistrez la règle.
-
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>Créer une règle de flux de messagerie pour filtrer les messages électroniques en masse en fonction des expressions
+## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a>Utiliser le centre d’administration Exchange pour créer des règles de flux de messagerie qui filtrent les messages électroniques en masse
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
+2. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.png) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
 
-3. Indiquez le nom de la règle.
+3. Dans la page **Nouvelle règle** qui s'ouvre, configurez les paramètres suivants :
 
-4. Cliquez sur **Plus d'options**. Sous **Appliquer cette règle si**, sélectionnez **L'objet ou le corps** \> **l'objet ou le corps inclut l'un de ces mots**.
+   - **Nom**: entrez un nom unique et descriptif pour la règle.
 
-5. Dans la boîte de dialogue **spécifier des mots ou des expressions**, ajoutez une par une les expressions suivantes, qui figurent généralement dans les messages électroniques en masse, et cliquez sur **OK** lorsque vous avez terminé :
+   - Cliquez sur **Autres options**.
 
-   - `to change your preferences or unsubscribe`
+   - **Appliquer cette règle si**: configurez l’un des paramètres suivants pour rechercher du contenu dans les messages à l’aide d’expressions régulières (Regex) ou de mots ou d’expressions :
 
-   - `Modify email preferences or unsubscribe`
+     - **L’objet ou** \> le corps de l’objet ou du corps **correspond à ces modèles de texte**: dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, puis cliquez sur **Ajouter** ![une icône](../../media/ITPro-EAC-AddIcon.png)et répétez l’opération autant de fois que nécessaire.
 
-   - `This is a promotional email`
+       - `If you are unable to view the content of this email\, please`
 
-   - `You are receiving this email because you requested a subscription`
+       - `\>(safe )?unsubscribe( here)?\</a\>`
 
-   - `click here to unsubscribe`
+       - `If you do not wish to receive further communications like this\, please`
 
-   - `You have received this email because you are subscribed`
+       - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
 
-   - `If you no longer wish to receive our email newsletter`
+       - `To stop receiving these+emails\:http\://`
 
-   - `to unsubscribe from this newsletter`
+       - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
 
-   - `If you have trouble viewing this email`
+       - `no longer (wish )?(to )?(be sent|receive) w+ email`
 
-   - `This is an advertisement`
+       - `If you are unable to view the content of this email\, please click here`
 
-   - `you would like to unsubscribe or change your`
+       - `To ensure you receive (your daily deals|our e-?mails)\, add`
 
-   - `view this email as a webpage`
+       - `If you no longer wish to receive these emails`
 
-   - `You are receiving this email because you are subscribed`
+       - `to change your (subscription preferences|preferences or unsubscribe)`
 
-   Cette liste n’est pas un ensemble exhaustif d’expressions trouvées dans les messages électroniques en masse ; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, ils constituent un bon point de départ.
+       - `click (here to|the) unsubscribe`
 
-6. Sous **Effectuer les opérations suivantes**, sélectionnez **Modifier les propriétés des messages** \> **Définir le seuil de probabilité de courrier indésirable (SCL)**.
+      Pour modifier une entrée, sélectionnez-la et **Edit** ![cliquez sur modifier](../../media/ITPro-EAC-EditIcon.png)l’icône modifier. Pour supprimer une entrée, sélectionnez-la et **Remove** ![cliquez sur supprimer](../../media/ITPro-EAC-DeleteIcon.png)l’icône Supprimer.
 
-7. Dans la boîte de dialogue **spécifier la valeur SCL**, définissez la valeur SCL sur **5**, **6** ou **9**, puis cliquez sur **OK**.
+       Lorsque vous avez terminé, cliquez sur **OK**.
 
-   La définition du SCL sur 5 ou 6 déclenche l'action **Courrier indésirable**, tandis qu'une définition sur 9 déclenche l'action **Courrier indésirable à niveau de confiance élevé**, comme configuré dans la stratégie de filtrage du contenu. Le service effectue l'action définie dans la stratégie de filtrage de contenu. L'action par défaut consiste à placer le message dans le dossier Courrier indésirable des destinataires, mais différentes actions peuvent être configurées, comme décrit dans [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
+     - **L’objet ou** \> le corps **de texte ou le corps de texte comprend l’un des mots**suivants : dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, cliquez sur **Ajouter** ![une icône](../../media/ITPro-EAC-AddIcon.png), puis répétez l’opération autant de fois que nécessaire.
 
-   Si votre action configurée consiste à mettre le message en quarantaine au lieu de l’envoyer au dossier de courrier indésirable des destinataires, le message est envoyé à la mise en quarantaine de l’administrateur en tant que correspondance de règle de flux de messagerie et n’est pas disponible dans le cadre de la mise en quarantaine du courrier indésirable de l’utilisateur final ou via l’utilisateur final notifications de courrier indésirable.
+       - `to change your preferences or unsubscribe`
 
-   Pour plus d'informations sur les valeurs SCL, voir [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).
+       - `Modify email preferences or unsubscribe`
 
-8. Enregistrez la règle.
+       - `This is a promotional email`
 
-## <a name="for-more-information"></a>Pour plus d'informations
+       - `You are receiving this email because you requested a subscription`
 
-[Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+       - `click here to unsubscribe`
 
-[Valeurs BCL](bulk-complaint-level-values.md)
+       - `You have received this email because you are subscribed`
 
-[Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md)
+       - `If you no longer wish to receive our email newsletter`
 
-[Options de filtrage avancé du courrier indésirable](advanced-spam-filtering-asf-options.md)
+       - `to unsubscribe from this newsletter`
+
+       - `If you have trouble viewing this email`
+
+       - `This is an advertisement`
+
+       - `you would like to unsubscribe or change your`
+
+       - `view this email as a webpage`
+
+       - `You are receiving this email because you are subscribed`
+
+      Pour modifier une entrée, sélectionnez-la et **Edit** ![cliquez sur modifier](../../media/ITPro-EAC-EditIcon.png)l’icône modifier. Pour supprimer une entrée, sélectionnez-la et **Remove** ![cliquez sur supprimer](../../media/ITPro-EAC-DeleteIcon.png)l’icône Supprimer.
+
+       Lorsque vous avez terminé, cliquez sur **OK**.
+
+   - **Procédez comme suit**: sélectionnez **modifier les propriétés** \> du message **définir le seuil de probabilité de courrier indésirable (SCL)**. Dans la boîte de dialogue spécifier la valeur **SCL** qui s’affiche, configurez l’un des paramètres suivants :
+
+     - Pour marquer les messages comme **courrier indésirable**, sélectionnez **6**. L’action que vous avez configurée pour le filtrage du **courrier indésirable** dans vos stratégies de blocage du courrier indésirable est appliquée aux messages (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable**).
+
+     - Pour marquer les messages comme **courriers indésirables à niveau de confiance élevé** , sélectionnez **9**. L’action que vous avez configurée pour le filtrage du **courrier indésirable à niveau de confiance élevé** est appliquée aux messages dans vos stratégies de blocage du courrier indésirable (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable**).
+
+    Pour plus d’informations sur les valeurs SCL, voir [taux de probabilité de courrier indésirable (SCL) dans Office 365](spam-confidence-levels.md).
+
+   Lorsque vous avez terminé, cliquez sur **Enregistrer** .
+
+## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a>Utiliser PowerShell pour créer des règles de flux de messagerie qui filtrent les messages électroniques en masse
+
+Utilisez la syntaxe suivante pour créer une des règles de flux de messagerie ou les deux (expressions régulières et mots) :
+
+```powershell
+New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPrhase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
+```
+
+Cet exemple crée une nouvelle règle nommée « Bulk Email Filtering-RegEx » qui utilise la même liste d’expressions régulières que celle décrite plus haut dans la rubrique pour définir les messages comme **courrier indésirable**.
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? sr\c=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
+```
+
+Cet exemple crée une règle nommée « filtrage des courriers électroniques en bloc » qui utilise la même liste de mots que précédemment dans la rubrique pour définir les messages comme **courrier indésirable à niveau de confiance élevé**.
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+
+## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
+
+Pour vérifier que vous avez configuré les règles de flux de messagerie pour filtrer les messages électroniques en masse, effectuez l’une des opérations suivantes :
+
+- Dans le centre d’administration Exchange, accédez à **règles** \> de **flux** \> de **Edit** ![messagerie sélectionnez la](../../media/ITPro-EAC-EditIcon.png)règle \> , cliquez sur modifier l’icône d’édition et vérifiez les paramètres.
+
+- Dans PowerShell, remplacez \<nom\> de la règle par le nom de la règle, puis exécutez la commande suivante pour vérifier les paramètres :
+
+  ```powershell
+  Get-TransportRule -Identity "<Rule Name>" | Format-List
+  ```
+
+- À partir d’un compte externe, envoyez un message de test à un destinataire affecté qui contient l’une des expressions ou des modèles de texte, puis vérifiez les résultats.

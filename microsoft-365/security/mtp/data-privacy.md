@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b715cd2dcbc41e2aa5a4ae829677dfe250394346
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235133"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894263"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Sécurité et confidentialité des données de la Protection Microsoft contre les menaces
 
@@ -33,12 +33,9 @@ ms.locfileid: "42235133"
 
 
 
-En utilisant la préversion Protection Microsoft contre les menaces, vous acceptez les conditions suivantes :
+En utilisant la protection contre les menaces Microsoft, vous acceptez les termes suivants :
 
-Vos données client applicables (telles que définies dans les conditions du service en ligne (« OST »)) seront transférées d’autres services Microsoft dans la Protection Microsoft contre les menaces et de cette dernière de nouveau vers les services Microsoft applicables. Pendant toute la durée de cette préversion, l’utilisation de vos données client dans la Protection Microsoft contre les menaces suivra les normes et engagements en matière de gestion des données pour Microsoft Defender - Protection avancée contre les menaces. Vous reconnaissez qu’il est possible que ces engagements diffèrent des services à partir desquels les données client sont transférées. De plus, les données client stockées dans la Protection Microsoft contre les menace seront stockées dans la zone géographique que vous avez sélectionnée pour le stockage de vos données client Microsoft Defender - Protection avancée contre les menaces, lesquelles peuvent différer de celle que vous avez sélectionnée en connexion avec d’autres services. Microsoft ne transférera pas les données client à l’extérieur de ce type de zone géographique, sauf indication contraire dans la section « emplacement des données » du centre de gestion de la confidentialité Microsoft dans [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center).
-
-De plus, lorsque vous déterminez lequel de vos utilisateurs peut accéder à la Protection Microsoft contre les menaces, celle-ci ne permet pas le contrôle de l’accès basé sur les rôles (« RBAC ») actuellement. Vous reconnaissez que, dans la mesure où la Protection Microsoft contre les menaces reçoit les données d’un service Microsoft qui prend en charge RBAC, les niveaux d’accès dans ce service ne s’appliquent pas à la Protection Microsoft contre les menaces.
-
+En activant Microsoft Threat Protection (MTP), vous acceptez les termes suivants. Vos données client applicables telles que définies dans les conditions de service en ligne (OST) seront transférées à partir d’autres services Microsoft dans le mode MTP. L’utilisation de vos données client dans le service MTP respecte les normes de gestion des données et les engagements de la protection avancée contre les menaces Microsoft Defender (Microsoft Defender ATP). Vous reconnaissez qu’il est possible que ces engagements diffèrent des services à partir desquels les données client sont transférées. De plus, les données client stockées dans le service MTP sont stockées dans le reste de la zone géographique sélectionnée pour le stockage de vos données client MDATP, qui peuvent différer de celle que vous avez sélectionnée en relation avec d’autres services. Microsoft ne transfère pas les données client en dehors de cette région, sauf indication contraire dans la section emplacement des données du centre de gestion de la [confidentialité Microsoft](https://www.microsoft.com/trust-center) .
 
 Pour plus d’informations sur le stockage des données et la confidentialité concernant les produits spécifiques, voir :
 - [Stockage de données et confidentialité Microsoft Defender - Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

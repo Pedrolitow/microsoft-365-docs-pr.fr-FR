@@ -1,8 +1,7 @@
 ---
 title: Planifier la gouvernance de groupes Office 365
 ms.reviewer: johasand
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Découvrez comment planifier la gouvernance de groupes Office 365.
-ms.openlocfilehash: b79da69995446aa7e61eea4d836e322743a7d2bb
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2608f3803e13319a349e9a915392778b9793e847
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352905"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894732"
 ---
 # <a name="plan-for-governance-in-office-365-groups"></a>Plan de gouvernance dans les groupes Office 365
 
@@ -42,16 +41,16 @@ Les groupes Office 365 autorisent les utilisateurs et réduisent le risque de cl
 
 ## <a name="technical-architecture"></a>Architecture technique
 
-Il existe trois modalités de communication principales prises en charge par les groupes Office 365. Il est possible de créer des groupes au sein de ces expériences et de les utiliser dans la suite Office 365 :
-- [Outlook](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): collaboration par courrier électronique avec une boîte aux lettres et un calendrier de groupe partagé
-- [Microsoft teams](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): un espace de travail de conversation permanente dans lequel vous pouvez avoir des conversations informelles, en temps réel, autour de plusieurs sujets, organisés par sous-groupes spécifiques
-- [Yammer](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): expérience sociale d’entreprise pour la collaboration
+Il existe trois méthodes de communication principales prises en charge par les groupes Office 365. Il est possible de créer des groupes au sein de ces expériences et de les utiliser dans Office 365 :
+- Outlook : collaboration par courrier électronique avec une boîte aux lettres et un calendrier de groupe partagé
+- Microsoft teams : un espace de travail de conversation permanente dans lequel vous pouvez avoir des conversations informelles, en temps réel, autour de plusieurs sujets, organisés par sous-groupes spécifiques
+- Yammer : expérience sociale d’entreprise pour la collaboration
 
 > [!NOTE]
-> La création d’un groupe via d’autres applications d’équipe, telles que SharePoint, Planner ou Stream-, crée un groupe avec une modalité de communication Outlook avec la possibilité de se connecter à Microsoft Teams.
+> La création d’un groupe via d’autres applications d’équipe, telles que SharePoint, Planner ou Stream-, crée un groupe avec une boîte de réception Outlook et la possibilité de se connecter à Microsoft Teams.
 
 En fonction de l’emplacement de création d’un groupe, certaines ressources sont configurées automatiquement, telles que :
-- [Boîte de réception](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) -pour les conversations par courrier électronique entre vos membres. Cette boîte de réception dispose d’une adresse de messagerie et peut être configurée pour accepter les messages provenant de personnes extérieures au groupe et même en dehors de votre organisation, comme une liste de distribution traditionnelle.
+- [Boîte de réception](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) -pour les conversations par courrier électronique entre les membres du groupe. Cette boîte de réception dispose d’une adresse de messagerie et peut être configurée pour accepter les messages provenant de personnes extérieures au groupe et même en dehors de votre organisation, comme une liste de distribution traditionnelle.
  - [Calendrier](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a) : pour la planification des événements associés au groupe.
 - [Site d’équipe SharePoint](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e) : référentiel central d’informations, de liens et de contenu concernant votre groupe
 - [Bibliothèque de documents SharePoint](https://support.office.com/article/share-group-files-749bc73b-90c9-4760-9b6f-9aa1cf01b403) : emplacement central pour le groupe où stocker et partager des fichiers
@@ -63,21 +62,18 @@ En fonction de l’emplacement de création d’un groupe, certaines ressources 
 Pour en savoir plus sur les ressources créées pour chaque groupe, consultez la [rubrique en savoir plus sur les groupes Office 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 > [!NOTE]
-> Lorsqu’un nouveau groupe Office 365 est créé via Yammer ou Teams, le groupe n’est pas visible dans Outlook ou dans le carnet d’adresses, car la communication principale entre ces utilisateurs se produit dans leurs clients respectifs.
-
-> [!IMPORTANT]
-> Lorsqu’un nouveau groupe Yammer est créé, le groupe Office 365 ne crée pas de ressource de calendrier ou de boîte aux lettres de groupe. Par conséquent, un groupe Yammer ne peut pas être connecté à Microsoft Teams. Voir [Yammer et groupes](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups)
+> Lorsqu’un nouveau groupe Office 365 est créé via Yammer ou Teams, le groupe n’est pas visible dans Outlook ou dans le carnet d’adresses, car la communication principale entre ces utilisateurs se produit dans leurs clients respectifs. Les groupes Yammer ne peuvent pas être connectés à Microsoft Teams.
 
 ## <a name="where-to-start-a-conversation"></a>Où démarrer une conversation
 Il existe plusieurs emplacements de conversation dans Office 365. La compréhension de l’emplacement de démarrage d’une conversation peut aider les organisations à définir une stratégie de communication.
 
-![Description de l’image](../../media/02.png)
+![Description de l’image](../../media/03.png)
 
 - Équipes : espace de travail de conversation (collaboration à haute vitesse) – boucle interne
    - Conçu pour la collaboration avec les personnes avec lesquelles vous travaillez tous les jours
   - Met des informations à portée de main sur les utilisateurs en une seule expérience
   - Ajouter des onglets, des connecteurs et des bots
-  - Conversation en direct, conférence audio/vidéo, réunions enregistrées.
+  - Conversation en direct, conférence audio/vidéo, réunions enregistrées
 
 - Yammer : se connecter à l’échelle de l’organisation (entreprise social) – boucle externe
   - Communautés de personnes : groupes interfonctionnels de personnes qui partagent un intérêt ou une expertise commune, mais qui ne travaillent pas nécessairement ensemble sur une base quotidienne
@@ -91,8 +87,6 @@ Il existe plusieurs emplacements de conversation dans Office 365. La compréhens
   - Chaque groupe obtient un site d’équipe SharePoint connecté.
   - Partager du contenu, créer des pages personnalisées et créer des actualités
   - [Connexion](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview) de sites d’équipe SharePoint existants à de nouveaux groupes Office 365
-
-![Description de l’image](../../media/03.png)
 
 ##  <a name="managing-and-governing-office-365-at-scale"></a>Gestion et régie d’Office 365 à l’horizontale
 
@@ -108,8 +102,8 @@ Les groupes Office 365 disposent d’un ensemble complet d’outils permettant d
 - [Mettre à niveau les outils de collaboration traditionnels](https://docs.microsoft.com/office365/admin/create-groups/plan-for-groups-governance#upgrade-traditional-collaboration-tools)
 - [Création de rapports de groupes](https://docs.microsoft.com/office365/admin/create-groups/plan-for-groups-governance#groups-reporting)
 
-### <a name="control-who-can-create-office-365-groups"></a>Contrôler les personnes autorisées à créer des groupes Office 365
-Les utilisateurs finaux peuvent créer des groupes à partir de plusieurs points de terminaison, dont Outlook, SharePoint, Microsoft teams et d’autres environnements.
+### <a name="control-who-can-create-office-365-groups"></a><a name="control-who-can-create-office-365-groups"></a>Contrôler les personnes autorisées à créer des groupes Office 365
+Les utilisateurs finaux peuvent créer des groupes à partir de plusieurs points de terminaison, dont Outlook, SharePoint, teams et d’autres environnements.
 
 ![Description de l’image](../../media/04.png)
 > [!Tip]
@@ -117,9 +111,9 @@ Les utilisateurs finaux peuvent créer des groupes à partir de plusieurs points
 >- Documentez et communiquez comment demander un groupe.
 >- Reportez-vous aux personnes qui peuvent créer des groupes lors de votre parcours sur le Cloud.
 >- Envisagez d’utiliser l’appartenance dynamique pour configurer les membres du groupe de sécurité afin de contrôler la création de groupes.
->- Évaluer les groupes que les scénarios peuvent gérer via une appartenance dynamique et autoriser le reste.
+>- Évaluez les groupes de scénarios pouvant être gérés via une appartenance dynamique et autorisez le reste.
 
-Il existe trois modèles principaux de mise en service dans Groups : Open, IT-del ou controled. Le tableau suivant décrit les avantages de chaque modèle.
+Il existe trois modèles principaux de mise en service dans les groupes : Open, del et contrôlée. Le tableau suivant décrit les avantages de chaque modèle.
 
 | Modèle          | Avantages                                                   |
 | -------------- | ------------------------------------------------------------ |
@@ -143,7 +137,7 @@ Votre organisation peut avoir des exigences spécifiques pour implémenter des c
 - [Comment faire pour modifier le paramètre par défaut des groupes Office 365 pour Outlook, public ou privé](https://support.office.com/article/office-365-groups-in-outlook-private-by-default-36236e39-26d3-420b-b0ac-8072d2d2bedc)
 - [Synchronisation des groupes de sécurité avec l’appartenance à une équipe](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Syncing-Security-Groups-with-team-membership/ba-p/241959)
 
-### <a name="group-soft-delete-and-restore"></a>Regrouper la suppression et la restauration logicielles
+### <a name="group-soft-delete-and-restore"></a><a name="group-soft-delete-and-restore"></a>Regrouper la suppression et la restauration logicielles
 Si vous avez supprimé un groupe Office 365, ce dernier est conservé par défaut pendant 30 jours. Cette période de 30 jours est appelée « suppression réversible », car vous avez encore la possibilité de le restaurer. Après cette période de 30 jours, le groupe et le contenu associé sont supprimés de manière définitive et ne peuvent plus être restaurés.
 
 > [!Tip]
@@ -164,7 +158,7 @@ Si vous avez supprimé un groupe Office 365, ce dernier est conservé par défau
 - [Restaurer un groupe Office 365 supprimé dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Supprimer des groupes à l'aide de l'applet de commande Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 
-### <a name="group-naming-policy"></a>Stratégie de noms de groupes
+### <a name="group-naming-policy"></a><a name="group-naming-policy"></a>Stratégie de noms de groupes
 Une stratégie de noms peut vous aider, ainsi que vos utilisateurs, à identifier la fonction du groupe, de l’appartenance, de la région géographique ou de la personne qui a créé le groupe. La stratégie d’attribution de noms peut également aider à catégoriser les groupes dans le carnet d’adresses. Vous pouvez utiliser la stratégie pour empêcher l’utilisation de mots spécifiques dans les alias et les noms de groupes.
 
 > [!Tip]
@@ -188,8 +182,8 @@ Une stratégie de noms peut vous aider, ainsi que vos utilisateurs, à identifie
 - [Cmdlets Azure Active Directory pour la configuration de paramètres de groupe](https://go.microsoft.com/fwlink/?linkid=868341)
 - [Fonctionnalités d’aperçu pour les noms de groupes](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/NamingPolicy)
 
-### <a name="group-expiration-policy"></a>Stratégie d’expiration de groupe
-Les administrateurs peuvent spécifier une période d’expiration et n’importe quel groupe qui atteint la fin de cette période, et n’est pas renouvelé. La période d’expiration commence lorsque le groupe est créé, ou à la date à laquelle il a été renouvelé pour la dernière fois. Les propriétaires de groupe reçoivent automatiquement un courrier électronique avant l’expiration qui leur permet de renouveler le groupe pour un autre intervalle d’expiration.
+### <a name="group-expiration-policy"></a><a name="group-expiration-policy"></a>Stratégie d’expiration de groupe
+Les administrateurs peuvent spécifier une période d’expiration et n’importe quel groupe qui atteint la fin de cette période, et n’est pas renouvelé. La période d’expiration commence lorsque le groupe est créé, ou à la date à laquelle il a été renouvelé pour la dernière fois. Les propriétaires de groupe reçoivent automatiquement un courrier électronique avant l’expiration qui leur permet de renouveler le groupe pour un autre intervalle d’expiration. Les groupes actifs se renouvellent automatiquement.
 
 Une fois que vous avez défini un groupe pour qu’il expire :
 - Les propriétaires du groupe sont avertis de renouveler le groupe à mesure que l’expiration s’approche
@@ -206,7 +200,7 @@ Une fois que vous avez défini un groupe pour qu’il expire :
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation souhaite-t-elle spécifier une date d’expiration pour les équipes ?</li><li>Déterminer la stratégie de traitement des groupes orphelins ?</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation souhaite-t-elle spécifier une date d’expiration pour les équipes ?</li><li>Déterminez la stratégie de traitement des groupes orphelins.</li></ul>|
 |![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Consignez les exigences de votre organisation concernant l’expiration, la rétention des données et l’archivage des groupes.</li><li>Prévoyez d’implémenter ces exigences dans le cadre de votre déploiement de groupes.</li><li>Planifier l’implémentation d’un travail personnalisé à des rapports sur des groupes qui ont des propriétaires uniques ou qui sont propriétaires. </li></ul>|
 
 > [!Important]
@@ -216,7 +210,7 @@ Une fois que vous avez défini un groupe pour qu’il expire :
 - [Stratégie de d’Expiration de groupe Office 365](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
 - [Configurer la stratégie d’expiration pour les groupes Office 365](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
-### <a name="group-guest-access"></a>Accès invité de groupe
+### <a name="group-guest-access"></a><a name="group-guest-access"></a>Accès invité de groupe
 Les administrateurs peuvent contrôler s’il faut autoriser l’accès invité aux groupes Office 365 pour l’ensemble de l’organisation ou pour des groupes Office 365 individuels. Ils peuvent également déterminer qui peut autoriser l’ajout d’invités aux groupes.
 >[!Tip]
 >- Activer l’accès invité au niveau du client. Si nécessaire, bloquez des groupes spécifiques.
@@ -230,15 +224,14 @@ Les administrateurs peuvent contrôler s’il faut autoriser l’accès invité 
 
 
 #### <a name="resources"></a>*Resources*
+- [Collaboration avec des personnes extérieures à votre organisation](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 - [Gérer l’accès invité dans les groupes Office 365](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups)
 - [Accès invité dans les groupes Office 365](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
-- [Accès invité dans les groupes Office 365 : aide de l’administrateur](https://support.office.com/article/Guest-access-to-Office-365-groups-Admin-Help-7c713d74-a144-4eab-92e7-d50df526ff96)
 - [Access reviews Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 - [Conditions d’utilisation d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-tou)
 - [Google Federation](https://docs.microsoft.com/azure/active-directory/b2b/google-federation)
-- [Autoriser l’accès invité dans Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-dependencies)
 
-### <a name="group-policies--information-protection"></a>Stratégies de groupe & protection des informations
+### <a name="group-policies--information-protection"></a><a name="group-policies--information-protection"></a>Stratégies de groupe & protection des informations
 Les groupes Office 365 sont basés sur les fonctionnalités avancées de sécurité et de conformité d’Office 365 et prennent en charge les classifications, l’audit et la création de rapports, la recherche de contenu de conformité, la découverte électronique, la conservation légale et les stratégies de rétention.
 >[!Tip]
 >- Configurez la classification, les instructions d’utilisation et les étiquettes alignées sur les besoins de votre organisation.
@@ -248,8 +241,8 @@ Les groupes Office 365 sont basés sur les fonctionnalités avancées de sécuri
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle des exigences d’utilisation spécifiques qui doivent être communiquées à tous les utilisateurs ?</li><li>Votre organisation a-t-elle besoin des classifications de tout le contenu ?</li><li>Votre organisation nécessite-t-elle la conservation du contenu pendant une période de temps spécifique ?</li><li>Votre organisation nécessite-t-elle des stratégies de rétention de données spécifiques ? plied à des groupes ?</li><li>Votre organisation a-t-elle besoin d’avoir la possibilité d’archiver des groupes inactifs pour conserver le contenu ?</li><li>Les créateurs de groupe doivent-ils pouvoir attribuer des classifications spécifiques de l’organisation à teams ?</li></ul>|
-|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Documenter les instructions d’utilisation de votre organisation pour les groupes</li><li>Consignez les exigences de votre organisation en matière de classification.</li><li>Déterminer les stratégies à appliquer en fonction de la classification, par exemple, la sensibilité, la rétention et l’accès invité</li><li>Définissez les étiquettes de confidentialité de votre organisation et les paramètres de protection que vous souhaitez associer.</li><li>Définir une stratégie d’étiquette pour contrôler les utilisateurs et les groupes qui voient ces étiquettes.</li><li>Configurez l' [étiquette de sensibilité des groupes](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) et commencez à classer les groupes dans votre organisation.</li><li>Planifiez la mise en œuvre de ces exigences dans le cadre de votre déploiement de groupes.</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle des exigences d’utilisation spécifiques qui doivent être communiquées à tous les utilisateurs ?</li><li>Votre organisation a-t-elle besoin des classifications de tout le contenu ?</li><li>Votre organisation nécessite-t-elle la conservation du contenu pendant une période de temps spécifique ?</li><li>Votre organisation a-t-elle besoin d’appliquer des stratégies de rétention de données spécifiques à des groupes ?</li><li>Votre organisation a-t-elle besoin d’avoir la possibilité d’archiver des groupes inactifs pour conserver le contenu ?</li><li>Les créateurs de groupe doivent-ils pouvoir attribuer des classifications spécifiques de l’organisation à teams ?</li></ul>|
+|![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Documenter les instructions d’utilisation de votre organisation pour les groupes</li><li>Consignez les exigences de votre organisation en matière de classification.</li><li>Déterminez les stratégies à appliquer en fonction de la classification, par exemple, la sensibilité, la rétention et l’accès invité.</li><li>Définissez les étiquettes de confidentialité de votre organisation et les paramètres de protection que vous souhaitez associer.</li><li>Définir une stratégie d’étiquette pour contrôler les utilisateurs et les groupes qui voient ces étiquettes.</li><li>Configurez l' [étiquette de sensibilité des groupes](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) et commencez à classer les groupes dans votre organisation.</li><li>Planifiez la mise en œuvre de ces exigences dans le cadre de votre déploiement de groupes.</li></ul>|
 
 
 #### <a name="resources"></a>*Resources*
@@ -265,7 +258,7 @@ Les groupes Office 365 sont basés sur les fonctionnalités avancées de sécuri
 - [Exécuter une recherche de contenu dans le Centre de sécurité et de conformité Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/content-search)
 - [Création et publication en bloc d’étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 
-### <a name="upgrade-traditional-collaboration-tools"></a>Mettre à niveau les outils de collaboration traditionnels
+### <a name="upgrade-traditional-collaboration-tools"></a><a name="upgrade-traditional-collaboration-tools"></a>Mettre à niveau les outils de collaboration traditionnels
 Pour les années, les organisations s’appuyaient sur les groupes de distribution pour communiquer et collaborer avec des groupes de personnes à la fois à l’intérieur et à l’extérieur de l’entreprise. À présent, toutefois, les groupes Office 365 dans Outlook offrent une solution plus puissante pour la collaboration. En outre, la possibilité de connecter un groupe Office 365 à un site SharePoint existant est importante si vous souhaitez moderniser ce site.
 
 >[!Tip]
@@ -274,20 +267,19 @@ Pour les années, les organisations s’appuyaient sur les groupes de distributi
 
 |         |         |         |
 |---------|---------|---------|
-|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle des listes de distribution qui [ne sont pas éligibles](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade) pour la mise à niveau ?<li>Déterminez le type de groupe sur lequel la liste de distribution est la mieux migrée.</li></ul>|
+|![Description de l’image](../../media/decision_point.png)|Points de décision|<ul><li>Votre organisation a-t-elle des listes de distribution qui [ne sont pas éligibles](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade) pour la mise à niveau ?<li>Déterminez quel type de groupe est la liste de distribution la mieux migrée vers.</li></ul>|
 |![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Identifiez les listes de distribution qui seront candidates pour la mise à niveau vers les groupes Office 365.</li><li>Analysez vos sites d’équipe SharePoint existants pour voir quels sites sont prêts à être connectés en groupe.</li><li>Informez les autres équipes de votre entreprise que vous avez mis à niveau votre groupe de distribution et les étapes que vous avez prises pour le réussir.</li></ul>|
 
 
 #### <a name="resources"></a>*Resources*
-- [Mettre à niveau les listes de distribution (DL) vers des groupes dans Outlook](https://aka.ms/whyupgradedls):
-- [Pourquoi devez-vous mettre à niveau votre DL vers des groupes dans Outlook ?](https://aka.ms/whyupgradedls)
-- Mise à niveau d’un seul clic via le centre d’administration Exchange ou via des [scripts PowerShell](https://support.office.com/article/Migrate-distribution-lists-to-Office-365-Groups-Admin-help-787d7a75-e201-46f3-a242-f698162ff09f?ui=en-US&rs=en-US&ad=US)
+- [Mettre à niveau les listes de distribution (DL) vers des groupes dans Outlook](https://aka.ms/whyupgradedls)
+- Mise à niveau d’un seul clic via le centre d’administration Exchange ou via des [scripts PowerShell](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
 - [Migrer des listes de distribution vers des groupes Office 365-aide de l’administrateur](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 - [Connecter des sites SharePoint existants à des groupes Office 365 :](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group)
 - [Étude et utilisation des données de l’analyseur](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group-scanner)
 - [Scanneur de modernisation SharePoint](https://github.com/SharePoint/sp-dev-modernization/tree/master/Tools/SharePoint.Modernization) (outil situé sur GitHub)
 
-### <a name="groups-reporting"></a>Création de rapports de groupes
+### <a name="groups-reporting"></a><a name="groups-reporting"></a>Création de rapports de groupes
 [] Le tableau de bord Rapports d'Office 365 offre une vue d'ensemble de l'activité sur les produits Office 365 au sein de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit.
 > [!TIP]
 >- Vous pouvez utiliser les rapports d’activité de groupes pour obtenir des informations sur l’activité des groupes Office 365 dans votre organisation et voir le nombre de groupes créés et utilisés.
@@ -317,7 +309,7 @@ Pour les années, les organisations s’appuyaient sur les groupes de distributi
 Les groupes Office 365 fournissent un ensemble complet de fonctionnalités de gouvernance dont votre organisation peut avoir besoin. Considérez les profils d’organisation suivants comme des conseils pour comprendre les meilleures pratiques, posez-vous les questions appropriées pour déterminer les exigences de gouvernance et comment les répondre.
 
 **Considérez les profils d’organisation suivants :**
-- Petite Entreprise
+- Petite entreprise
 - Moyennes entreprises
 - Réglementé ou entreprise
 
@@ -326,19 +318,19 @@ Imaginez une organisation qui a déployé Office 365 avec au moins des licences 
 
 | Phase | Description |
 | --------------- | ------------------------------------------------------------ |
-| Conseils |<ul><li>Envisager un modèle de mise en service en libre service</li><li> Les groupes dans Outlook & les sites SharePoint sont [privés par défaut](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395).</li><li> Les groupes peuvent être créés en mettant à niveau des listes de distribution existantes (DL) un-par-un ou en bloc via PowerShell. Consultez la rubrique [mettre à niveau des listes de distribution vers des groupes Office 365](https://support.office.com/article/Upgrade-distribution-lists-to-Office-365-Groups-in-Outlook-787D7A75-E201-46F3-A242-F698162FF09F).</li><li> Activez l’accès invité mais en déterminant l’utilisation des domaines invités autoriser/bloquer.</li><li> Utilisez les rapports de groupe pour obtenir des informations sur la façon dont les utilisateurs utilisent des groupes.</li><li> Envisagez de créer une équipe à l’échelle de l’organisation Microsoft teams pour que tous les utilisateurs fassent partie d’une équipe unique pour la collaboration. </li></ul>|
-| Étapes suivantes      |<ul><li>Envisagez d’utiliser [des conceptions de site et des scripts de site](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview) pour définir la conception par défaut des contrôles à l’aide des actions définies dans la [référence de schéma JSON](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema).</li><li>Examen des [rapports de groupes](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)</li><li>Suivre le nombre total de groupes et de groupes inactifs/actifs</li><li>Effectuer le suivi du stockage Exchange et SharePoint utilisé</li><li>Afficher l’activité des groupes dans les conversations de boîte aux lettres de groupe, l’activité des sites de groupe/fichiers, etc.</li></ul> |
+| Conseils |<ul><li>Envisagez un modèle de mise en service en libre service.</li><li> Les groupes dans Outlook & les sites SharePoint sont [privés par défaut](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395).</li><li> Les groupes peuvent être créés en mettant à niveau des listes de distribution existantes (DL) un-par-un ou en bloc via PowerShell. Consultez la rubrique [mettre à niveau des listes de distribution vers des groupes Office 365](https://support.office.com/article/Upgrade-distribution-lists-to-Office-365-Groups-in-Outlook-787D7A75-E201-46F3-A242-F698162FF09F).</li><li> Activez l’accès invité mais en déterminant l’utilisation des domaines invités autoriser/bloquer.</li><li> Utilisez les rapports de groupe pour obtenir des informations sur la façon dont les utilisateurs utilisent des groupes.</li><li> Envisagez de créer une équipe Team teams de l’organisation à l’échelle de l’organisation afin que tous les utilisateurs fassent partie d’une équipe unique pour la collaboration. </li></ul>|
+| Étapes suivantes      |<ul><li>Envisagez d’utiliser [des conceptions de site et des scripts de site](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview) pour définir la conception par défaut des contrôles à l’aide des actions définies dans la [référence de schéma JSON](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema).</li><li>Passez en revue les [rapports de groupes](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</li><li>Suivre le nombre total de groupes et de groupes inactifs/actifs.</li><li>Effectuez le suivi du stockage Exchange et SharePoint utilisé.</li><li>Afficher l’activité des groupes dans les conversations de boîte aux lettres de groupe, l’activité des sites de groupe/fichiers, etc.</li></ul> |
 
 ### <a name="medium-sized-business"></a>Moyennes entreprises
 Outre les recommandations ci-dessus, vous devez tenir compte des points suivants pour les entreprises de taille moyenne ayant déployé Office 365 avec au moins une entreprise E3/E5 avec des licences Azure Active Directory Premium P1.
 
 | Phase | Description |
 | --------------- | ------------------------------------------------------------ |
-| Conseils |<ul><li>Déterminez un modèle de mise en service à l’ouverture ou à la décision de l’informatique.</li><li> Envisagez de créer certains groupes liés aux [règles d’appartenance dynamique](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership) en fonction des attributs Azure ad, comme Department.</li><li> Définir les classifications au sein de votre organisation, par exemple, hautement confidentiel, confidentiel (par défaut), général.</li><li>  Définissez les stratégies en fonction de la classification, telle que la rétention et la sensibilité.</li><li> SharePoint est le service de contenu pour chaque groupe Office 365. Envisagez [de concevoir et de déployer des sites SharePoint Online pour trois niveaux de protection (de](https://docs.microsoft.com/office365/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection) planification, sensibles et hautement confidentiels). Pour plus d’informations sur ces trois niveaux de protection, consultez [Sécuriser des sites et des fichiers SharePoint Online](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files).</li><li> Par défaut, les groupes public et privé sont répertoriés dans la liste d’adresses globale. Déterminez les groupes que vous souhaitez voir apparaître dans la liste d’adresses globale créé en dehors de Microsoft Teams.  Utiliser l’applet de commande [Set-UnifiedGroup](https://technet.microsoft.com/library/mt238274(v=exchg.160).aspx) « HiddenFromAddressListsEnabled » ou « HidefromExchangeClients » pour masquer des groupes spécifiques </li></ul> |
+| Conseils |<ul><li>Déterminez un modèle de mise en service à l’ouverture ou à la décision de l’informatique.</li><li> Envisagez de créer certains groupes liés aux [règles d’appartenance dynamique](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership) en fonction des attributs Azure ad, comme Department.</li><li> Définir les classifications au sein de votre organisation, par exemple, hautement confidentiel, confidentiel (par défaut), général.</li><li>  Définissez les stratégies en fonction de la classification, telle que la rétention et la sensibilité.</li><li> SharePoint est le service de contenu pour chaque groupe Office 365. Envisagez [de concevoir et de déployer des sites SharePoint Online pour trois niveaux de protection (de](https://docs.microsoft.com/office365/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection) planification, sensibles et hautement confidentiels). Pour plus d’informations sur ces trois niveaux de protection, consultez [Sécuriser des sites et des fichiers SharePoint Online](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files).</li><li> Par défaut, les groupes public et privé sont répertoriés dans la liste d’adresses globale. Déterminez les groupes que vous souhaitez voir apparaître dans la liste d’adresses globale créé en dehors de Microsoft Teams.  Utilisez l’applet de commande [Set-UnifiedGroup](https://technet.microsoft.com/library/mt238274(v=exchg.160).aspx) « HiddenFromAddressListsEnabled » ou « HidefromExchangeClients » pour masquer des groupes spécifiques.</li></ul> |
 | Étapes suivantes      |<ul><li>Définir les [instructions d’utilisation](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets) pour informer vos utilisateurs sur les meilleures pratiques qui permettent de conserver leurs groupes efficaces et de les informer sur les stratégies de contenu internes. Par exemple, comprendre les classifications, les stratégies et les procédures. </li><li>Définir la période de cycle de vie de groupe que les groupes doivent être renouvelés ou seront supprimés-stratégie d’expiration.</li><li>Envisagez de créer les travaux personnalisés suivants pour implémenter des stratégies basées sur les classifications.</li><li>Définir la confidentialité sur privé.</li><li>Désactivez l’appartenance/partage externe. </li><li>Messages électroniques pour avertir les membres du groupe pour les groupes sans [propriétaire](https://support.office.com/article/Assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732).</li><li>Appliquer la stratégie de propriété (propriétaires min. 2).</li><li> Définir des stratégies de rétention pour les groupes en fonction de la classification. </li><li>Vue d’ensemble des stratégies de rétention.</li><li>Utilisation de PowerShell pour identifier les groupes avec une classification et [Set-retentioncompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps).</li><li>Envisagez d’utiliser des conceptions de site et des scripts de site pour définir les contrôles à l’aide des actions définies dans la [référence de schéma JSON](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema).</li><li>Envisagez [de créer un annuaire de sites simple à l’aide d’une conception de site](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial) et de Microsoft Flow. Chaque fois qu’un site est créé à l’aide de cette conception de site, les informations du site sont capturées et inscrites dans une liste. </li></ul>|
 
 ### <a name="regulated-or-enterprise"></a>Réglementé ou entreprise
-Outre les recommandations ci-dessus, vous devez tenir compte des points suivants pour les services hautement réglementés ou les plus grands, tels que le gouvernement, les services financiers ou la santé ayant déployé Office 365 avec au moins une entreprise E3/E5 avec Azure Active Directory Premium P1/P2 licences.
+Outre les recommandations ci-dessus, vous devez tenir compte des points suivants pour les services hautement réglementés ou les plus grands, tels que le gouvernement, les services financiers ou les soins de santé qui ont déployé Office 365 avec au moins une entreprise E3/E5 avec des licences Azure Active Directory Premium P1/P2.
 
 | Phase | Description |
 | --------------- | ------------------------------------------------------------ |

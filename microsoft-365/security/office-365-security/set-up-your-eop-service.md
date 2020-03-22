@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 135f3ce2d966c2c2918199f4680678031d9dc8d4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a28bc606b22b044515e737bf1ddf8250452f250
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598301"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895142"
 ---
 # <a name="set-up-your-eop-service"></a>Configurer votre service EOP
 
@@ -68,11 +68,11 @@ Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la
 > [!TIP]
 > Configurez les paramètres du serveur SMTP en définissant l'expiration du délai de connexion sur 60 secondes. Ce paramètre est acceptable pour la plupart des situations, ce qui permet un certain délai dans le cas d’un message envoyé avec une pièce jointe de grande taille, par exemple.
 
-## <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Étape 5 : Utiliser l'environnement de ligne de commande Exchange Management Shell pour vérifier que le courrier indésirable est routé vers le dossier Courrier indésirable de chaque utilisateur
+## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Étape 5 : vérifier que le courrier indésirable est acheminé vers le dossier de courrier indésirable de chaque utilisateur
 
-Pour vous assurer que le courrier indésirable est correctement routé vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez effectuer quelques opérations de configuration. Les étapes sont fournies dans la procédure [vous assurer que le courrier indésirable est acheminé vers le dossier de courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+Pour vous assurer que le courrier indésirable est correctement routé vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez effectuer quelques opérations de configuration. Les étapes sont fournies dans [configure standalone EOP pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-Si vous ne souhaitez pas déplacer les messages vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de filtrage de contenu dans le Centre d'administration Exchange. Pour plus d’informations, consulter [Configurer vos stratégies de filtre de courrier indésirable](configure-your-spam-filter-policies.md).
+Si vous ne souhaitez pas déplacer les messages vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de filtrage de contenu dans le Centre d'administration Exchange. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6 : utiliser le centre d’administration Microsoft 365 pour faire pointer votre enregistrement MX vers EOP
 

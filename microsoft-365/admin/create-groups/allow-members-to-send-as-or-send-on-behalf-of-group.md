@@ -1,8 +1,7 @@
 ---
 title: Autoriser les membres à envoyer en tant que ou envoyer de la part d’un groupe
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Découvrez comment autoriser les membres à envoyer des messages électroniques en tant que groupe Office 365 ou envoyer des courriers électroniques de la part d’un groupe Office 365.
-ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 41e8bd34ed7ba28cdaa736bf8f4c88433f56a47e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633782"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894656"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou envoyer de la part d’un groupe
 
-Un membre d’un groupe Office 365 auquel ont été accordées des autorisations **Envoyer en tant** que ou **Envoyer de la part** de peuvent désormais envoyer des courriers électroniques en tant que groupe ou au nom du groupe. Cette rubrique explique comment un administrateur peut définir ces autorisations.
+Un membre d’un groupe Office 365 auquel ont été accordées des autorisations **Envoyer en tant** que ou **Envoyer de la part** de peuvent envoyer des messages électroniques en tant que groupe ou pour le compte du groupe. Cette rubrique explique comment un administrateur peut définir ces autorisations.
   
 Par exemple, si Megan Bowen fait partie du groupe **formation** Office 365 et qu’il dispose des autorisations **Envoyer en tant** que pour le groupe, si elle envoie un message électronique en tant que groupe, il ressemblera au groupe de **formation** qui a envoyé le message. 
   
@@ -39,7 +38,7 @@ L’autorisation **Envoyer de la part** de permet à un utilisateur d’envoyer 
 > Vous pouvez configurer la fonction **Envoyer en tant que** ou **Envoyer de la part** de pour un utilisateur donné, mais pas les deux. Si vous configurez les deux, il s’agit par défaut de la valeur **Envoyer en tant que**.
 
 > [!TIP]
-> Consultez les étapes de la procédure [envoyer 365 un courrier électronique à partir de ou pour](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) pour savoir comment utiliser Outlook et Outlook sur le Web pour envoyer des courriers électroniques à partir d’un groupe.
+> Pour savoir comment utiliser Outlook et Outlook sur le Web pour envoyer des courriers électroniques à partir d’un groupe, consultez la rubrique [Envoyer un courrier électronique à partir de ou pour le compte d’un groupe Office 365](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) .
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Autoriser les membres à envoyer des messages électroniques en tant que groupe
 

@@ -1,11 +1,11 @@
 ---
-title: Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
+title: Utiliser des règles de flux de messagerie pour le SCL dans les messages
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,56 +16,55 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à définir la valeur SCL des messages dans Exchange Online Protection.
-ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b7ea9a0f046e5a48f0de8d4ac9ae6d53821f03c0
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081976"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895094"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
 
-Vous pouvez créer une règle de flux de messagerie (également appelée règle de transport) qui définit le seuil de probabilité de courrier indésirable (SCL) d’un message électronique. Le SCL mesure la probabilité qu'un message soit un courrier indésirable. Le courrier indésirable représente les messages électroniques non sollicités (et généralement indésirables). Le service prend différentes mesures en ce qui concerne le message en fonction de la notation SCL. Par exemple, vous pouvez contourner le filtrage de contenu de courrier indésirable pour les messages envoyés par des membres de votre organisation, car vous pensez qu'un message envoyé en interne par un collègue n'est pas un courrier indésirable. La définition de la valeur SCL d’un message à l’aide de règles de flux de messagerie vous permet de contrôler le traitement du courrier indésirable.
+Si vous êtes un client Office 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, EOP utilise des stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) pour analyser messages entrants pour le courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
- **Ce qu'il faut savoir avant de commencer**
+Si vous souhaitez marquer des messages spécifiques comme courrier indésirable avant qu’ils soient encore analysés par le filtrage du courrier indésirable, ou marquer les messages de sorte qu’ils ignorent le filtrage du courrier indésirable, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour identifier les messages et définir le seuil de probabilité de courrier indésirable. Pour plus d’informations sur la valeur SCL, consultez la rubrique [Spam Confidence Level (SCL) in Office 365](spam-confidence-levels.md).
 
-- Durée estimée de la procédure : 10 minutes.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- You need to be assigned permissions before you can perform this procedure or procedures. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée « règles de flux de messagerie » dans [autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) ou [autorisations des fonctionnalités dans EOP](feature-permissions-in-eop.md).
+- Pour pouvoir effectuer ces procédures, vous devez disposer d’autorisations dans Exchange Online. Plus précisément, vous devez disposer du rôle **de règles de transport** , qui est affecté aux rôles de gestion de l' **organisation**, de gestion de **la conformité**et de **gestion des enregistrements** par défaut. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Pour ouvrir le centre d’administration Exchange dans Exchange Online, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Pour créer une règle de flux de messagerie qui définit la valeur SCL d’un message
+- Pour plus d’informations sur les règles de flux de messagerie dans Exchange Online, consultez la rubrique [mail Flow Rules (règles de transport) dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) .
 
-1. Dans le Centre d'administration Exchange (CAE), choisissez **Flux de messagerie** \> **Règles**.
+## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Utiliser le centre d’administration Exchange pour créer une règle de flux de messagerie qui définit la valeur SCL d’un message
 
-2. Cliquez sur **Nouveau**![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
+1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-3. Indiquez le nom de la règle.
+2. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.png) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
 
-4. Choisissez **Plus d'options** et, sous **Appliquer cette règle si**, indiquez une condition qui déclenchera l'action que vous allez définir pour cette règle (c'est-à-dire la valeur SCL).
+3. Dans la page **Nouvelle règle** qui s'ouvre, configurez les paramètres suivants :
 
-   Par exemple, vous pouvez définir **L'expéditeur** \> **est interne/externe** et, dans la boîte de dialogue **Sélectionner l'emplacement de l'expéditeur**, choisir **À l'intérieur de l'organisation**, puis cliquer sur **OK**.<br/>
-   ![Sélectionner l'emplacement de l'expéditeur](../../media/EOP-ETR-SetSCL-1.jpg)
+   - **Nom**: entrez un nom unique et descriptif pour la règle.
 
-5. Sous **Effectuer les opérations suivantes**, sélectionnez **Modifier les propriétés des messages** \> **Définir le seuil de probabilité de courrier indésirable (SCL)**.
+   - Cliquez sur **Autres options**.
 
-6. Dans le champ spécifier la valeur **SCL** , sélectionnez l’une des valeurs suivantes, puis cliquez sur **OK**:
+   - **Appliquer cette règle si**: sélectionnez une ou plusieurs conditions pour identifier les messages. Pour plus d’informations, consultez la rubrique [mail Flow Rule conditions and exceptions (prédicats) dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-   - **Contournement du filtrage du courrier indésirable**: définit la valeur SCL sur-1, ce qui signifie que le filtrage du contenu ne sera pas effectué.
+   - **Procédez comme suit**: sélectionnez **modifier les propriétés** \> du message **définir le seuil de probabilité de courrier indésirable (SCL)**. Dans la boîte de dialogue spécifier la valeur **SCL** qui s’affiche, configurez l’une des valeurs suivantes :
 
-   - **0-4**: le message est transmis au filtre de contenu en vue d’un traitement supplémentaire.
+   - **Contournement du filtrage du courrier indésirable**: définit la valeur SCL sur-1, ce qui signifie que les messages ignorent le filtrage du courrier indésirable.
 
-   - **5-6**: l’action spécifiée pour le **courrier indésirable** dans les stratégies de filtrage de contenu applicables est appliquée. Par défaut, l'action consiste à envoyer le message vers le dossier Courrier indésirable du destinataire.
+     > [!CAUTION]
+     > Soyez très vigilant lorsque vous autorisez les messages à ignorer le filtrage du courrier indésirable. Les attaquants peuvent utiliser cette vulnérabilité pour envoyer du hameçonnage et d’autres messages malveillants dans votre organisation. Les règles de flux de messagerie nécessitent plus que l’adresse de messagerie ou le domaine de l’expéditeur. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).
 
-   - **7-9**: l’action spécifiée pour le **courrier indésirable à niveau de confiance élevé** dans les stratégies de filtrage de contenu applicables est appliquée. Par défaut, l'action consiste à envoyer le message vers le dossier Courrier indésirable du destinataire.
+   - **0 à 4**: le message est envoyé par le biais du filtrage du courrier indésirable pour un traitement supplémentaire.
 
-   Pour plus d'informations sur la configuration des stratégies de filtre de contenu, voir [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md). Pour plus d'informations sur les valeurs SCL du service, voir [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).
+   - **5 ou 6**: le message est marqué comme **courrier indésirable**. L’action que vous avez configurée pour le filtrage du **courrier indésirable** dans vos stratégies de blocage du courrier indésirable est appliquée au message (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable**).
 
-7. Spécifiez des propriétés supplémentaires pour la règle, puis choisissez **enregistrer**.
+   - **7 à 9**: le message est marqué comme **courrier indésirable à niveau de confiance élevé**. L’action que vous avez configurée pour le filtrage du **courrier indésirable à niveau de confiance élevé** les valeurs de votre stratégie de blocage du courrier indésirable est appliquée au message (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable**).
 
-   > [!TIP]
-   > Pour plus d’informations sur les propriétés supplémentaires que vous pouvez sélectionner ou spécifier pour cette règle, reportez-vous [à la rubrique utiliser le centre d’administration Exchange pour créer des règles de flux de messagerie](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules).
+4. Spécifiez les propriétés supplémentaires souhaitées pour la règle. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
 ## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 

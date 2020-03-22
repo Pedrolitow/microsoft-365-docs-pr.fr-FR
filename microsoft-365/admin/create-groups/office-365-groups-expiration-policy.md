@@ -1,8 +1,7 @@
 ---
 title: Stratégie de d’Expiration de groupe Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -19,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les stratégies d’expiration des groupes Office 365.
-ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352585"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894514"
 ---
-# <a name="office-365-group-expiration-policy"></a>Stratégie de d’Expiration de groupe Office 365
+# <a name="office-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Office 365
 
 Avec l’augmentation de l’utilisation des groupes Office 365, les administrateurs et les utilisateurs ont besoin d’un moyen de nettoyer les groupes inutilisés. Les stratégies d’expiration permettent de supprimer des groupes inactifs du système et de simplifier les choses.
 
-Lorsqu’un groupe expire, tous ses services associés (la boîte aux lettres, le planificateur, le site SharePoint, etc.) sont également supprimés.
+Lorsqu’un groupe expire, tous ses services associés (la boîte aux lettres, le planificateur, le site SharePoint, l’équipe, etc.) sont également supprimés.
 
 Lorsqu’un groupe expire, il est « supprimé de manière récupérable », ce qui signifie qu’il peut toujours être récupéré pendant 30 jours maximum.
 
@@ -44,7 +43,7 @@ Les groupes qui sont actifs en cours d’utilisation sont automatiquement renouv
 > [!IMPORTANT]
 > Lorsque vous modifiez la stratégie d’expiration, le service recalcule la date d’expiration pour chaque groupe. Il commence toujours à compter à partir de la date de création du groupe, puis applique la nouvelle stratégie d’expiration.
 
-Il est important de comprendre que l’expiration est désactivée par défaut. Les administrateurs doivent l’activer pour leur client s’ils veulent l’utiliser.
+Il est important de comprendre que l’expiration est désactivée par défaut. Les administrateurs doivent l’activer pour leur organisation s’ils souhaitent l’utiliser.
 
 > [!NOTE]
 > La configuration et l’utilisation de la stratégie d’expiration pour les groupes Office 365 nécessitent de posséder, mais pas nécessairement, des licences Azure AD Premium pour les membres de tous les groupes auxquels la stratégie d’expiration est appliquée. Pour plus d’informations, consultez la rubrique [prise en main d’Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).

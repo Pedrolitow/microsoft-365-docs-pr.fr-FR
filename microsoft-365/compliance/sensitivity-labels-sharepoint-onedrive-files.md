@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: 288f70ccfcd7852102dc5261e225e9e84182b365
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 840087be38c6e50244437fea63de655d8cd9363e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826213"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894296"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)
 
@@ -124,12 +124,15 @@ Avant d’activer l’aperçu, vérifiez que vous exécutez SharePoint Online Ma
 Pour activer l’aperçu, utilisez l’applet de commande Set-SPOTenant :
 
 1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général ou d’administrateur SharePoint dans Office 365, connectez-vous à SharePoint. Pour savoir comment procéder, reportez-vous à l’article [Prise en main de SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+    
+    Remarque : Si vous disposez d’Office 365 multi-géo, utilisez le paramètre-URL avec [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)et spécifiez l’URL du site Centre d’administration SharePoint Online pour l’un de vos emplacements géographiques.
 
 2. Exécutez la commande suivante :
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
+3. Pour Office 365 multi-géo : Répétez les étapes 1 et 2 pour chacun de vos emplacements géographiques restants.
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Planifier le déploiement après la création ou la modification d’une étiquette de sensibilité
 

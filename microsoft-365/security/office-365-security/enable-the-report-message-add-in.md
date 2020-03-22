@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l’ensemble de votre organisation.
-ms.openlocfilehash: 94dbe7d9dcd5cf3dc8bd5874550880d813f879f5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32b4ab318237ca220b63c87bd4a664cfb69d0b45
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086342"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893753"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
@@ -32,20 +32,20 @@ ms.locfileid: "42086342"
 
 Le complément de message de rapport pour Outlook et Outlook sur le Web (anciennement appelé Outlook Web App) permet aux utilisateurs de signaler facilement les messages électroniques mal classés, qu’ils soient fiables ou malveillants, à Microsoft et à ses filiales pour analyse. Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie. En outre, si votre organisation utilise [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) ou [plan 2](office-365-ti.md), le complément Report message fournit à l’équipe de sécurité de votre organisation des informations utiles qu’il peut utiliser pour examiner et mettre à jour les stratégies de sécurité.
 
-Par exemple, supposons que des personnes signalent un grand nombre de messages comme hameçonnage. Ces informations sont représentées dans le [tableau de bord de sécurité](security-dashboard.md) et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies de détection d’hameçonnage doivent être mises à jour. Ou bien, si des personnes signalent un grand nombre de messages marqués comme légitimes comme légitimes à l’aide du complément de message de rapport, il se peut que l’équipe de sécurité de votre organisation doive ajuster les [stratégies de blocage du courrier](configure-the-anti-spam-policies.md)indésirable.
+Par exemple, supposons que des personnes signalent un grand nombre de messages comme hameçonnage. Ces informations sont représentées dans le [tableau de bord de sécurité](security-dashboard.md) et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies de détection d’hameçonnage doivent être mises à jour. Ou bien, si des personnes signalent un grand nombre de messages marqués comme légitimes comme légitimes à l’aide du complément de message de rapport, il se peut que l’équipe de sécurité de votre organisation doive ajuster les [stratégies de blocage du courrier](configure-your-spam-filter-policies.md)indésirable.
 
 Le complément de message de rapport fonctionne avec la plupart des abonnements Office 365 et les produits suivants :
 
- - Outlook sur le web
- - Outlook 2013 SP1
- - Outlook 2016
- - Outlook 2016 pour Mac
- - Outlook inclus avec Office 365 ProPlus
+- Outlook sur le web
+- Outlook 2013 SP1
+- Outlook 2016
+- Outlook 2016 pour Mac
+- Outlook inclus avec Office 365 ProPlus
 
 Le complément de message de rapport n’est pas disponible pour l’instant :
 
- - Boîtes aux lettres dans l’organisation Exchange locale
- - Abonnements GCC, GCC HIGH ou DoD
+- Boîtes aux lettres dans l’organisation Exchange locale
+- Abonnements GCC, GCC HIGH ou DoD
 
 Votre navigateur Web existant doit être suffisant pour que le complément de message de rapport fonctionne ; Toutefois, si vous remarquez que le complément n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
 
@@ -189,7 +189,7 @@ Vous pouvez consulter et modifier les paramètres par défaut du complément de 
 
    ![Paramètres du complément de message de rapport](../../media/EditReportMessageAddIn.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Utiliser le complément de message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 

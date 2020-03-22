@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632942"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895226"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "42632942"
 Bien que nous permettons aux administrateurs de sécurité de personnaliser leurs paramètres de sécurité, il existe deux niveaux de sécurité dans EOP et Office 365 ATP qui nous sont recommandés : **standard** et **strict**. L’environnement et les besoins de chaque client sont différents, mais nous pensons que ces niveaux de configurations de filtrage des messages empêchent le courrier indésirable d’atteindre la boîte de réception de vos employés dans la plupart des cas.
 
 > [!IMPORTANT]
-> La configuration du courrier indésirable doit être activée sur la boîte aux lettres afin que le filtrage fonctionne correctement. Cette option est activée par défaut, mais elle doit être vérifiée si le filtrage ne semble pas fonctionner. Consultez [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) pour en savoir plus. 
+> La règle de courrier indésirable doit être activée sur une boîte aux lettres pour que le filtrage fonctionne correctement. Il est activé par défaut, mais vous devez le vérifier si le filtrage ne semble pas fonctionner. Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 Cette rubrique décrit ces paramètres recommandés par Microsoft pour vous aider à protéger vos utilisateurs Office 365.
 
@@ -43,64 +43,80 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 
 ### <a name="eop-anti-spam-policy-settings"></a>Paramètres de la stratégie anti-courrier indésirable EOP
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
-|---------|---------|---------|---------|
-|Action de détection du courrier indésirable|Déplacer le message dans le dossier Courrier indésirable|Mettre en quarantaine le message||
-|Action de détection de courrier indésirable à fiabilité élevée|Mettre en quarantaine le message|Mettre en quarantaine le message||
-|Action de détection de courrier d’hameçonnage|Mettre en quarantaine le message|Mettre en quarantaine le message||
-|Action de détection de courrier hameçon à haute fiabilité|Mettre en quarantaine le message|Mettre en quarantaine le message||
-|Action de détection de courrier en nombre|Déplacer le message dans le dossier Courrier indésirable|Mettre en quarantaine le message||
-|Définir le seuil de courrier électronique en masse sur|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).|
-|Période de rétention de quarantaine|30 jours|30 jours||
-|Conseils de sécurité|Activé|Activé||
-|Expéditeurs autorisés|Aucune|Aucune||
-|Domaines d’expéditeurs autorisés|Aucune|Aucune|L’ajout de domaines dont vous êtes propriétaire (également appelés _domaines acceptés_) à la liste des expéditeurs autorisés n’est pas obligatoire. En fait, il est considéré comme un risque élevé, car il permet aux acteurs incorrects de vous envoyer des messages qui seraient autrement filtrés. Utilisez l’Assistant d' [usurpation d’identité](learn-about-spoof-intelligence.md) dans le centre de sécurité & conformité de la page **paramètres anti-courrier indésirable** pour examiner tous les expéditeurs qui usurpent l’identité des domaines qui font partie de votre organisation ou qui usurpent des domaines externes.|
-|Expéditeurs bloqués|Aucune|Aucune||
-|Domaines des expéditeurs bloqués|Aucune|Aucune||
-|Fréquence de notification de courrier indésirable de l’utilisateur final|Activé|Activé|3 jours|
-|Purge automatique sans heure|Activé|Activé|Pour le courrier indésirable et les hameçons ZAP|
-|MarkAsSpamBulkMail|Activé|Activé|Ce paramètre est disponible uniquement dans PowerShell|
+Pour créer et configurer des stratégies de blocage du courrier indésirable, consultez la rubrique [configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
-La stratégie de blocage du courrier indésirable, appelée Advanced Spam Filter (ASF), comporte plusieurs autres paramètres qui sont en cours de désapprobation. Pour plus d’informations sur les chronologies de l’amortissement de ces fonctionnalités, reportez-vous à cette rubrique.
+|||||
+|---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
+|Action de détection du **courrier indésirable** <br/><br/> _SpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
+|Action de détection de **courrier indésirable à fiabilité élevée** <br/><br/> _HighConfidenceSpamAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
+|Action de détection de **courrier d’hameçonnage** <br/><br/> _PhishSpamAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
+|Action de détection de **courrier d’hameçonnage à haut niveau de fiabilité** <br/><br/> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
+|Action de détection de **courrier en nombre** <br/><br/> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
+|Seuil de courrier électronique en masse <br/><br/> _BulkThreshold_|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Période de rétention de quarantaine <br/><br/> _QuarantineRetentionPeriod_|30 jours|30 jours||
+|**Conseils de sécurité** <br/><br/> _InlineSafetyTipsEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|Expéditeurs autorisés <br/><br/> _AllowedSenders_|Aucune|Aucune||
+|Domaines d’expéditeur autorisés <br/><br/> _AllowedSenderDomains_|Aucune|Aucune|L’ajout de domaines dont vous êtes propriétaire (également appelés _domaines acceptés_) à la liste des expéditeurs autorisés n’est pas obligatoire. En fait, il est considéré comme un risque élevé, car il permet aux acteurs incorrects de vous envoyer des messages qui seraient autrement filtrés. Utilisez l’Assistant d' [usurpation d’identité](learn-about-spoof-intelligence.md) dans le centre de sécurité & conformité de la page **paramètres anti-courrier indésirable** pour examiner tous les expéditeurs qui usurpent l’identité des domaines qui font partie de votre organisation ou qui usurpent des domaines externes.|
+|Expéditeurs bloqués <br/><br/> _BlockedSenders_|Aucune|Aucune||
+|Domaines des expéditeurs bloqués <br/><br/> _BlockedSenderDomains_|Aucune|Aucune||
+|**Activer les notifications de courrier indésirable à l’utilisateur final** <br/><br/> _EnableEndUserSpamNotifications_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|**Envoyer des notifications de courrier indésirable à l’utilisateur final tous les (jours)** <br/><br/> _EndUserSpamNotificationFrequency_|3 jours|3 jours||
+|**Blocage du courrier indésirable** <br/><br/> _SpamZapEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|**Hameçon ZAP** <br/><br/> _PhishZapEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|_MarkAsSpamBulkMail_|Activé|Activé|Ce paramètre est disponible uniquement dans PowerShell.|
+|
 
-Nous vous **recommandons de désactiver ces paramètres pour** les niveaux standard et strict :
+Il existe plusieurs autres paramètres de filtre de courrier indésirable (ASF) dans les stratégies de blocage du courrier indésirable qui sont en cours de désapprobation. Pour plus d’informations sur les chronologies de l’amortissement de ces fonctionnalités, reportez-vous à cette rubrique.
 
-|Nom de la fonctionnalité de sécurité|Commentaires|
-|---------|---------|
-|IncreaseScoreWithImageLinks||
-|IncreaseScoreWithNumericIps||
-|IncreaseScoreWithRedirectToOtherPort||
-|IncreaseScoreWithBizOrInfoUrls||
-|MarkAsSpamEmptyMessages||
-|MarkAsSpamJavaScriptInHtml||
-|MarkAsSpamFramesInHtml||
-|MarkAsSpamObjectTagsInHtml||
-|MarkAsSpamEmbedTagsInHtml||
-|MarkAsSpamFormTagsInHtml||
-|MarkAsSpamWebBugsInHtml||
-|MarkAsSpamSensitiveWordList||
-|MarkAsSpamFromAddressAuthFail||
-|MarkAsSpamNdrBackscatter||
-|MarkAsSpamSpfRecordHardFail||
+Nous vous **recommandons de désactiver ces paramètres ASF** pour les niveaux **standard** et **strict** . Pour plus d’informations sur les paramètres ASF, voir [paramètres de filtre de courrier indésirable avancés (ASF) dans Office 365](advanced-spam-filtering-asf-options.md).
 
-#### <a name="eop-outbound-spam-filter-policy-settings"></a>Paramètres de stratégie de filtrage du courrier indésirable sortant EOP
+|||
+|----|---|
+|**Nom de la fonctionnalité de sécurité**|**Comments**|
+|**Liens d’image vers des sites distants** (_IncreaseScoreWithImageLinks_)||
+|**Adresse IP numérique dans l’URL** (_IncreaseScoreWithNumericIps_)||
+|**Redirection UL vers un autre port** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**URL vers les sites Web. biz ou. info** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Messages vides** (_MarkAsSpamEmptyMessages_)||
+|**JavaScript ou VBScript en HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Balises Frame ou IFRAME en HTML** (_MarkAsSpamFramesInHtml_)||
+|**Balises d’objet dans le code html** (_MarkAsSpamObjectTagsInHtml_)||
+|**Balises embed en HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Balises de formulaire dans le code html** (_MarkAsSpamFormTagsInHtml_)||
+|**Bogues Web dans le code html** (_MarkAsSpamWebBugsInHtml_)||
+|**Appliquer la liste de mots sensibles** (_MarkAsSpamSensitiveWordList_)||
+|**Enregistrement SPF : échec matériel** (_MarkAsSpamSpfRecordHardFail_)||
+|**Filtrage des ID de l’expéditeur conditionnel : échec matériel** (_MarkAsSpamFromAddressAuthFail_)||
+|Notification de **non-remise rétrodiffusion** (_MarkAsSpamNdrBackscatter_)||
+|
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
-|---------|---------|---------|---------|
-|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire externe|500|400||
-|Limites de destinataires de stratégie de courrier indésirable sortant-limite horaire interne|1000|800||
-|Limites de destinataires de stratégie de courrier indésirable sortant-limite journalière|1000|800||
-|Action lorsqu’un utilisateur dépasse les limites|Empêcher l’utilisateur d’envoyer des messages|Empêcher l’utilisateur d’envoyer des messages||
+#### <a name="eop-outbound-spam-policy-settings"></a>Paramètres de stratégie de courrier indésirable sortant EOP
+
+Pour créer et configurer des stratégies de courrier indésirable sortant, consultez la rubrique [configuration du filtrage du courrier indésirable sortant dans Office 365](configure-the-outbound-spam-policy.md).
+
+||||
+|---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
+|**Nombre maximal de destinataires par utilisateur : limite horaire externe** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
+|**Nombre maximal de destinataires par utilisateur : limite horaire interne** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
+|**Nombre maximal de destinataires par utilisateur : limite quotidienne** <br/><br/> _RecipientLimitPerDay_|1000|800||
+|**Action lorsqu’un utilisateur dépasse les limites** <br/><br/> _ActionWhenThresholdReached_|**Empêcher l’utilisateur d’envoyer des messages** <br/><br/> `BlockUser`|**Empêcher l’utilisateur d’envoyer des messages** <br/><br/> `BlockUser`||
+|
 
 ### <a name="eop-anti-malware-policy-settings"></a>Paramètres de stratégie anti-programme malveillant EOP
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
-|---------|---------|---------|---------|
-|Réponse de détection de programmes malveillants|Non|Non|Si un programme malveillant est détecté dans une pièce jointe, le message est mis en quarantaine et ne peut être libéré que par un administrateur.|
-|« Filtre de types de pièces jointes courantes » pour bloquer les types de fichiers suspects|Activé|Activé||
-|Purge automatique contre les programmes malveillants à zéro heure|Activé|Activé||
-|Informer les expéditeurs internes du message non remis|Désactivé|Désactivé||
-|Informer les expéditeurs externes du message non remis|Désactivé|Désactivé||
+Pour créer et configurer des stratégies de protection contre les programmes malveillants, consultez la rubrique [configure anti-malware Policies in Office 365](configure-anti-malware-policies.md).
+
+|||||
+|---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
+|**Voulez-vous avertir les destinataires si leurs messages sont mis en quarantaine ?** <br/><br/> _Action_|Non <br/><br/> _DeleteMessage_|Non <br/><br/> _DeleteMessage_|Si un programme malveillant est détecté dans une pièce jointe, le message est mis en quarantaine et ne peut être libéré que par un administrateur.|
+|**Filtre de types de pièces jointes courantes** <br/><br/> _EnableFileFilter_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Ce paramètre met en quarantaine les messages qui contiennent des pièces jointes exécutables en fonction du type de fichier, quel que soit le contenu des pièces jointes.|
+|**Purge automatique contre les programmes malveillants à zéro heure** <br/><br/> _ZapEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|**Informer les expéditeurs internes** du message non remis <br/><br/> _EnableInternalSenderNotifications_|Désactivé <br/><br/> `$false`|Désactivé <br/><br/> `$false`||
+|**Informer les expéditeurs externes** du message non remis <br/><br/> _Paramètre enableexternalsendernotifications_|Désactivé <br/><br/> `$false`|Désactivé <br/><br/> `$false`||
+|
 
 ### <a name="eop-anti-phishing-policy-settings"></a>Paramètres de la stratégie anti-hameçonnage EOP
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La journalisation d’audit de boîte aux lettres est activée par défaut dans Office 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 6a1c435ca3be16ef2f4926cce56afe180c576f15
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2b69d63e63e049566c9827f08d2ead592b918684
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634962"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894919"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -107,9 +107,9 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l�
 |**AddFolderPermissions**|**Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
 |**ApplyRecord**|Un élément est étiqueté en tant qu’enregistrement.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Copier**|Un message a été copié dans un autre dossier.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**Create**|Un élément a été créé dans le dossier calendrier, contacts, notes ou tâches dans la boîte aux lettres (par exemple, une nouvelle demande de réunion est créée). Notez que la création, l’envoi ou la réception d’un message n’est pas audité. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Create**|Un élément a été créé dans le dossier calendrier, contacts, notes ou tâches dans la boîte aux lettres (par exemple, une nouvelle demande de réunion est créée). Notez que la création, l’envoi ou la réception d’un message ne sont pas audités. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Par défaut**||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque**: les enregistrements d’audit pour les actions de liaison de dossiers effectuées par des délégués sont consolidés. Un enregistrement d’audit est généré pour l’accès à un dossier individuel dans les 24 heures.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque**: les enregistrements d’audit pour les actions de liaison de dossiers effectuées par des délégués sont consolidés. Un enregistrement d’audit est généré pour un accès individuel aux dossiers au cours d’une période de 24 heures.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|Les données de messagerie sont accessibles par les clients et les protocoles de messagerie. Cette valeur est disponible uniquement pour les utilisateurs d’abonnement de complément de conformité E5 ou E5. Pour plus d’informations, consultez la rubrique [accès aux événements cruciaux pour les enquêtes](advanced-audit.md#access-to-crucial-events-for-investigations).|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailboxLogin**|L’utilisateur est connecté à sa boîte aux lettres. |||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -141,7 +141,7 @@ N’oubliez pas qu’un administrateur disposant d’une autorisation d’accès
 
 |**Action de boîte aux lettres**|**Description**|**Administrateur**|**Délégué**|**Owner**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**Create**|Création d’un élément de calendrier. Notez que la création, l’envoi ou la réception d’un message n’est pas audité.|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**Create**|Création d’un élément de calendrier. Notez que la création, l’envoi ou la réception d’un message ne sont pas audités.|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|Un message a été envoyé à l’aide de l’autorisation Envoyer en tant que.|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Case à cocher](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
@@ -167,7 +167,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 La valeur `Admin, Delegate, Owner` indique :
 
-- Les actions de boîte aux lettres par défaut pour les trois types d’ouverture de session sont auditées. Notez qu’il s’agit de la seule valeur que vous verrez sur les boîtes aux lettres de groupe Office 365.
+- Les actions de boîte aux lettres par défaut pour les trois types d’ouverture de session sont auditées. Il s’agit de la seule valeur que vous verrez sur les boîtes aux lettres de groupe Office 365.
 
 - Un administrateur n' *a pas* modifié les actions de boîte aux lettres auditées pour tout type d’ouverture de session sur une boîte aux lettres d’utilisateur ou une boîte aux lettres partagée. Remarque Il s’agit de l’État par défaut après activation initiale de l’audit des boîtes aux lettres dans votre organisation.
 
@@ -343,8 +343,11 @@ La valeur **true** indique que l’enregistrement d’audit de boîte aux lettre
 
   Pour récupérer les entrées du journal d’audit de boîte aux lettres pour les utilisateurs sans licence E5, vous pouvez :
 
-  - Utilisez les recherches dans le journal d’audit dans le centre de sécurité & conformité ou via l’API d’activité de gestion d’Office 365 **après avoir** activé manuellement l’audit des boîtes aux lettres sur les boîtes aux lettres individuelles.
-
+  - Activez manuellement l’audit des boîtes aux lettres sur des boîtes aux lettres individuelles `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`(exécutez la commande). Une fois cette opération effectué, vous pouvez utiliser les recherches dans le journal d’audit dans le centre de sécurité & conformité ou via l’API activité de gestion d’Office 365.
+  
+    > [!NOTE]
+    > Si l’audit de boîte aux lettres semble déjà activé sur la boîte aux lettres, mais que vos recherches ne renvoient aucun résultat _AuditEnabled_ , modifiez la `$false` valeur du paramètre AuditEnabled `$true`sur, puis revenez à.
+  
   - Utilisez les applets de commande suivantes dans Exchange Online PowerShell :
 
     - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) pour rechercher des utilisateurs spécifiques dans le journal d’audit de boîte aux lettres.
@@ -361,7 +364,7 @@ La valeur **true** indique que l’enregistrement d’audit de boîte aux lettre
 
   Si vous augmentez la limite d’âge, vous devez utiliser la cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) dans Exchange Online PowerShell pour rechercher dans le journal d’audit de la boîte aux lettres de l’utilisateur des enregistrements datant de plus de 90 jours.
 
-- Si vous avez modifié la propriété *AuditLogAgeLimit* d’une boîte aux lettres avant que l’audit des boîtes aux lettres soit activé par défaut pour l’organisation, la limite d’âge de journal d’audit existante de la boîte aux lettres n’est pas modifiée. En d’autres termes, l’audit de boîte aux lettres sur par défaut n’a pas d’effet sur la limite d’âge actuelle pour les enregistrements d’audit de boîte aux lettres.
+- Si vous avez modifié la propriété *AuditLogAgeLimit* d’une boîte aux lettres avant que l’audit des boîtes aux lettres soit activé par défaut pour l’organisation, la limite d’âge de journal d’audit existante de la boîte aux lettres n’est pas modifiée. En d’autres termes, l’audit de boîte aux lettres sur par défaut n’affecte pas la limite d’âge actuelle pour les enregistrements d’audit de boîte aux lettres.
 
 - Pour modifier la valeur *AuditLogAgeLimit* sur une boîte aux lettres de groupe Office 365, vous devez `-GroupMailbox` inclure le commutateur dans la commande **Set-Mailbox** .
 
@@ -387,3 +390,5 @@ La valeur **true** indique que l’enregistrement d’audit de boîte aux lettre
     - Vous ne pouvez pas accéder directement à un enregistrement de journal d’audit dans le dossier éléments récupérables ; à la place, vous utilisez la cmdlet **Search-MailboxAuditLog** ou recherchez dans le journal d’audit Office 365 pour rechercher et afficher des enregistrements d’audit de boîte aux lettres.
 
 - Si une boîte aux lettres est placée en conservation ou affectée à une stratégie de rétention dans le centre de conformité, les enregistrements du journal d’audit sont toujours conservés pendant la durée définie par la propriété *AuditLogAgeLimit* de la boîte aux lettres (90 jours par défaut). Pour conserver les enregistrements du journal d’audit plus longtemps pour les boîtes aux lettres en attente, vous devez augmenter la valeur *AuditLogAgeLimit* de la boîte aux lettres.
+
+- Dans un environnement multi-géo, l’audit de boîte aux lettres entre forêts n’est pas pris en charge. Par exemple, si un utilisateur se voit attribuer des autorisations d’accès à une boîte aux lettres partagée dans un autre emplacement géographique, les actions de boîte aux lettres effectuées par cet utilisateur ne sont pas consignées dans le journal d’audit de la boîte aux lettres partagée.

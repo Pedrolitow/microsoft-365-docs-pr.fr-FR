@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: efb75f26d66258880c9defa94869f27e18685052
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372002"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895440"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Qu’est-ce qui arrive dans le score de sécurité Microsoft ?
 
@@ -30,26 +30,31 @@ Pour faire en sorte que Microsoft Secure score un meilleur représentant de votr
 
 Pour en savoir plus sur les modifications récentes, consultez [la rubrique what’s New in Microsoft Secure score ?](microsoft-secure-score.md#whats-new)
 
-## <a name="march-16th-2020"></a>16 mars 2020
+## <a name="april-21st-2020"></a>21 avril 2020
 
 ### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable ou ne fournissent pas une représentation utile de la position de la sécurité
 
 Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons les actions d’amélioration suivantes.
 
-- Stocker des documents utilisateur dans OneDrive entreprise
-- Configurer des stratégies de pièces jointes approuvées ATP Office 365
-- Configurer les liens fiables Office 365 pour vérifier les URL
-- Ne pas autoriser la délégation de boîte aux lettres
-- Autoriser les liens de partage d’invités anonymes pour les sites et les documents
-- Activer la console de sécurité des applications Cloud
-- Configurer le délai d’expiration pour les liens de partage externe
+- Supprimer/bloquer les comptes non utilisés au cours des 30 derniers jours
+- Désigner moins de 5 administrateurs globaux
+- Appliquer des protections IRM aux documents
+- Appliquer des stratégies de protection contre la perte de données
 
-### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Prise en charge des paramètres de sécurité par défaut pour les actions d’amélioration Azure AD
+### <a name="adding-additional-control-support-in-the-preview-version"></a>Ajout de la prise en charge de contrôles supplémentaires dans la version d’évaluation
+- Ne pas autoriser les utilisateurs à accorder un consentement aux applications non gérées (actuellement disponible dans la version publiée)
 
-Le score de sécurité Microsoft mettra à jour les actions d’amélioration afin de prendre en charge les paramètres de [sécurité par défaut dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), ce qui facilite la protection de votre organisation à l’aide de paramètres de sécurité préconfigurés pour les attaques courantes.
+#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>Prise en charge d’autres actions d’amélioration de la sécurité des applications Cloud Microsoft
+- Désactiver le service spouleur d’impression sur les contrôleurs de domaine
+- Modifier les délégations Kerberos non sécurisées pour empêcher l’emprunt d’identité
+- Protéger et gérer les mots de passe d’administrateur local avec Microsoft couvre
+- Réduire le risque de trajet latéral vers les entités sensibles
+- Supprimer des comptes dormants de groupes sensibles
+- Supprimer les attributs d’historique SID non sécurisé des entités
+- Résoudre les attributs de compte non sécurisé
+- Arrêter l’exposition en texte clair des informations d’identification
+- Arrêter la communication des protocoles hérités
+- Arrêter l’utilisation du chiffrement faible
 
-Cela aura une incidence sur les actions d’amélioration suivantes :
-
-- S’assurer que tous les utilisateurs peuvent effectuer l’authentification multifacteur pour un accès sécurisé
-- Exiger MFA pour les rôles d’administration
-- Activer la stratégie pour bloquer l’authentification héritée
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Prise en charge des recommandations de sécurité de la & la gestion des vulnérabilités de Microsoft Defender ATP (TVM)
+- Toutes les recommandations de sécurité fournies par la TVM seront désormais également disponibles dans Microsoft Secure score

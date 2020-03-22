@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment gérer vos modes de paiement dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 61c6d0b4fb21762eaeee96d8923eda7702fc70bb
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341576"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894840"
 ---
 # <a name="manage-payment-methods"></a>Créer des méthodes de paiement
 
@@ -35,6 +35,15 @@ Lorsque vous achetez des produits ou services d’entreprise auprès de Microsof
 > L’option de paiement avec un compte bancaire n’est pas disponible dans certains pays ou certaines régions.
 >
 > Vous devez utiliser un mode de paiement émis par le même pays que votre client.
+
+## <a name="add-a-payment-method"></a>Ajouter un mode de paiement
+
+L’ajout d’un mode de paiement n’associe pas d’abonnements à celui-ci. Pour affecter un seul abonnement au mode de paiement, reportez-vous à la rubrique [modifier un mode de paiement pour un seul abonnement](#change-a-payment-method-for-a-single-subscription). Pour remplacer tous les abonnements utilisant un autre mode de paiement par le nouveau, reportez-vous à la rubrique [remplacement d’un mode de paiement](#replace-a-payment-method).
+
+1. Dans le centre d’administration, accédez à **la** > page**factures &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">paiement</a> des paiements.
+2. Sélectionnez **Ajouter ou sélectionner un mode de paiement**.
+3. Sur la page **Modes de paiement**, sélectionnez un mode de paiement dans le menu déroulant.
+4. Entrez les informations pour la nouvelle carte ou le nouveau compte bancaire, puis sélectionnez **Ajouter**.
 
 ## <a name="update-payment-method-details"></a>Mettre à jour les détails du mode de paiement
 
@@ -97,7 +106,7 @@ Si un mode de paiement est associé à des abonnements ou des profils de factura
 5. Pour ajouter un nouveau mode de paiement, sélectionnez **Ajouter un mode de paiement**.
 6. Choisissez le type de mode de paiement que vous souhaitez ajouter, entrez les informations de compte, puis sélectionnez **Enregistrer**.
 7. Le nouveau mode de paiement est déjà sélectionné dans la liste déroulante. Sélectionnez **Suivant**.
-8. Sélectionnez **supprimer**.
+8. Sélectionnez **Supprimer**.
 
 ## <a name="troubleshoot-payment-methods"></a>Résolution des problèmes liés aux modes de paiement
 

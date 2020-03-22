@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Pendant et après une enquête automatisée dans Office 365, vous pouvez afficher les résultats et les résultats clés.
-ms.openlocfilehash: 638559efe5f7028a647b466c030a339c677601ce
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 104be669dcb6d22cba00974075418e2d14ed629c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633842"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894227"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Détails et résultats d’une enquête automatisée dans Office 365
 
@@ -248,6 +248,6 @@ Vous pouvez :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Vérifier et approuver les actions en attente](air-remediation-actions.md)
+- [Vérifier et approuver les actions en attente](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)
 
 - [En savoir plus sur l’analyse et la réponse automatisées dans Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

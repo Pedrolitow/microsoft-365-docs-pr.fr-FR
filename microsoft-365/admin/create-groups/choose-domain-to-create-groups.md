@@ -1,8 +1,7 @@
 ---
 title: Choisir le domaine à utiliser lors de la création de groupes Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 'Découvrez comment choisir le domaine à utiliser lors de la création de groupes Office 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell. '
-ms.openlocfilehash: 55fc99cd201e66166e7da164777cfba2f763609c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239236"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894644"
 ---
 # <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>Choisir le domaine à utiliser lors de la création de groupes Office 365
 
@@ -113,7 +112,7 @@ Voici quelques éléments à prendre en compte :
     
 - Les administrateurs et les utilisateurs peuvent également modifier les domaines lorsqu’ils créent des groupes.
     
-- Le groupe d’utilisateurs est déterminé à l’aide des requêtes standard (propriétés de l’utilisateur) qui sont déjà disponibles. Consultez [les propriétés filtrables pour le paramètre-RecipientFilter pour les](https://go.microsoft.com/fwlink/p/?LinkId=785918) pProperties filtrables pris en charge. 
+- Le groupe d’utilisateurs est déterminé à l’aide des requêtes standard (propriétés de l’utilisateur) qui sont déjà disponibles. Consultez [les propriétés filtrables pour le paramètre-RecipientFilter pour les](https://go.microsoft.com/fwlink/p/?LinkId=785918) propriétés filtrables prises en charge. 
     
 - Si vous ne configurez aucun EAPs pour les groupes, le domaine accepté par défaut est sélectionné pour la création de groupe.
     
