@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
-ms.openlocfilehash: 044801416c7db4ddec8936a496862c432a63acde
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f4ebd34104cd4f3c5b3976a10e8bf64da990342c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077598"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894941"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -76,49 +76,49 @@ La préparation et la configuration de la classification EDM impliquent d’enre
 
 3. Définissez le schéma pour la base de données d’informations sensibles dans un fichier XML (comme dans l’exemple ci-dessous). Nommez ce fichier de schéma **edm.xml** et configurez-le de telle sorte que pour chaque colonne de la base de données, une ligne utilise la syntaxe : 
 
-`\<Field name="" searchable=""/\>`.
+      `\<Field name="" searchable=""/\>`.
 
-- Utilisez des noms de colonne pour les valeurs  *Nom de champ* .
-- Utilisez  *searchable="true"*  pour jusqu’à 5 champs dont vous voulez qu’il puissent faire l’objet d’une recherche. Vous devez spécifier au moins un champ comme pouvant faire l’objet d’une recherche.
+      - Utilisez des noms de colonne pour les valeurs  *Nom de champ* .
+      - Utilisez  *searchable="true"*  pour jusqu’à 5 champs dont vous voulez qu’il puissent faire l’objet d’une recherche. Vous devez spécifier au moins un champ comme pouvant faire l’objet d’une recherche.
 
-Par exemple, le fichier. xml suivant définit le schéma d’une base de données de dossiers de patients, avec cinq champs pouvant faire l’objet d’une recherche :  *PatientID*,  *MRN*,  *SSN*,  *Phone* et  *DOB*
+      Par exemple, le fichier. xml suivant définit le schéma d’une base de données de dossiers de patients, avec cinq champs pouvant faire l’objet d’une recherche :  *PatientID*,  *MRN*,  *SSN*,  *Phone* et  *DOB*
 
-(vous pouvez copier, modifier et utiliser notre exemple).
+      (vous pouvez copier, modifier et utiliser notre exemple).
 
- ```xml
-<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
-      <DataStore name="PatientRecords" description="Schema for patient records" version="1">
-            <Field name="PatientID" searchable="true" />
-            <Field name="MRN" searchable="true" />
-            <Field name="FirstName" />
-            <Field name="LastName" />
-            <Field name="SSN" searchable="true" />
-            <Field name="Phone" searchable="true" />
-            <Field name="DOB" searchable="true" />
-            <Field name="Gender" />
-            <Field name="Address" />
-      </DataStore>
-</EdmSchema>
-```
+      ```xml
+      <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+            <DataStore name="PatientRecords" description="Schema for patient records" version="1">
+                  <Field name="PatientID" searchable="true" />
+                  <Field name="MRN" searchable="true" />
+                  <Field name="FirstName" />
+                  <Field name="LastName" />
+                  <Field name="SSN" searchable="true" />
+                  <Field name="Phone" searchable="true" />
+                  <Field name="DOB" searchable="true" />
+                  <Field name="Gender" />
+                  <Field name="Address" />
+            </DataStore>
+      </EdmSchema>
+      ```
 
 4. [Connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 5. Pour charger le schéma de base de données, exécutez les cmdlets suivantes, l’une après l’autre :
 
-```powershell
-$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-```
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
 
-Vous êtes invité à confirmer comme suit :
+      Vous êtes invité à confirmer comme suit :
 
-> Confirmer
->
-> Êtes-vous sûr de vouloir effectuer cette action ?
->
-> Un nouveau schéma EDM pour le magasin de données « patientrecords » va être importé.
->
-> \[Y\] Oui \[A\] Oui pour tout \[N\] Non \[L\] Non pour tout \[?\] Aide (par défaut « Y ») :
+      > Confirmer
+      >
+      > Êtes-vous sûr de vouloir effectuer cette action ?
+      >
+      > Un nouveau schéma EDM pour le magasin de données « patientrecords » va être importé.
+      >
+      > \[Y\] Oui \[A\] Oui pour tout \[N\] Non \[L\] Non pour tout \[?\] Aide (par défaut « Y ») :
 
 > [!TIP]
 > Si vous souhaitez que vos modifications se produisent sans confirmation, à l’étape 5, utilisez plutôt la cmdlet New-DlpEdmSchema -FileData $edmSchemaXml
@@ -138,26 +138,26 @@ Si vous souhaitez modifier votre fichier **edm.xml**, par exemple pour changer l
 
 3. Pour mettre à jour votre schéma de base de données, exécutez les cmdlets suivantes, l’une après l’autre :
 
-```powershell
-$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-```
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
 
-Vous êtes invité à confirmer comme suit :
+      Vous êtes invité à confirmer comme suit :
 
-> Confirmer
->
-> Êtes-vous sûr de vouloir effectuer cette action ?
->
-> Le schéma EDM pour le magasin de données « patientrecords » va être mis à jour.
->
-> \[Y\] Oui \[A\] Oui pour tout \[N\] Non \[L\] Non pour tout \[?\] Aide (par défaut « Y ») :
+      > Confirmer
+      >
+      > Êtes-vous sûr de vouloir effectuer cette action ?
+      >
+      > Le schéma EDM pour le magasin de données « patientrecords » va être mis à jour.
+      >
+      > \[Y\] Oui \[A\] Oui pour tout \[N\] Non \[L\] Non pour tout \[?\] Aide (par défaut « Y ») :
 
-> [!TIP]
-> Si vous souhaitez que vos modifications se produisent sans confirmation, à l’étape 3, utilisez plutôt la cmdlet Set-DlpEdmSchema -FileData $edmSchemaXml
+      > [!TIP]
+      > Si vous souhaitez que vos modifications se produisent sans confirmation, à l’étape 3, utilisez plutôt la cmdlet Set-DlpEdmSchema -FileData $edmSchemaXml
 
-> [!NOTE]
-> La mise à jour du schéma EDMS avec les ajouts peut prendre de 10 à 60 minutes. Vous devez l’effectuer avant d’exécuter les étapes qui utilisent les ajouts.
+      > [!NOTE]
+      > La mise à jour du schéma EDMS avec les ajouts peut prendre de 10 à 60 minutes. Vous devez l’effectuer avant d’exécuter les étapes qui utilisent les ajouts.
 
 ## <a name="removing-the-schema-for-edm-based-classification"></a>Suppression du schéma pour la classification EDM
 
@@ -167,89 +167,89 @@ Vous êtes invité à confirmer comme suit :
 
 2. Exécutez les cmdlets PowerShell suivantes, en remplaçant le nom de magasin de données « patientrecords » par celui que vous voulez supprimer :
 
-```powershell
-Remove-DlpEdmSchema -Identity patientrecords
-```
+      ```powershell
+      Remove-DlpEdmSchema -Identity patientrecords
+      ```
 
-Vous êtes invité à confirmer comme suit :
+      Vous êtes invité à confirmer comme suit :
 
-> Confirmer
->
-> Êtes-vous sûr de vouloir effectuer cette action ?
->
-> Le schéma EDM pour le magasin de données « patientrecords » va être supprimé.
->
-> \[Y\] Oui \[A\] Oui pour tout \[N\] Non \[L\] Non pour tout \[?\] Aide (par défaut « Y ») :
+      > Confirmer
+      >
+      > Êtes-vous sûr de vouloir effectuer cette action ?
+      >
+      > Le schéma EDM pour le magasin de données « patientrecords » va être supprimé.
+      >
+      > \[Y\] Oui \[A\] Oui pour tout \[N\] Non \[L\] Non pour tout \[?\] Aide (par défaut « Y ») :
 
-> [!TIP]
->  Si vous souhaitez que vos modifications se produisent sans confirmation, à l’étape 2, utilisez plutôt la cmdlet Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
+      > [!TIP]
+      >  Si vous souhaitez que vos modifications se produisent sans confirmation, à l’étape 2, utilisez plutôt la cmdlet Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
 
 ### <a name="set-up-a-rule-package"></a>Configurer un package de règles
 
 1. Créez un package de règles dans un fichier .xml (avec codage Unicode) similaire à l’exemple suivant (vous pouvez copier, modifier et utiliser notre exemple).
 
-Lorsque vous configurez votre package de règles, veillez à référencer correctement vos fichier .csv et **edm.xml**. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de fichier xml, les champs suivants doivent être personnalisés pour créer votre type sensible d’EDM :
+      Lorsque vous configurez votre package de règles, veillez à référencer correctement vos fichier .csv et **edm.xml**. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de fichier xml, les champs suivants doivent être personnalisés pour créer votre type sensible d’EDM :
 
-- **RulePack id & ExactMatch id** : utilisez  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  pour générer un GUID.
+      - **RulePack id & ExactMatch id** : utilisez  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  pour générer un GUID.
 
-- **Datastore** : ce champ spécifie le magasin de données de recherche EDM à utiliser. Vous indiquez un nom de source de données ou un schéma EDM configuré.
+      - **Datastore** : ce champ spécifie le magasin de données de recherche EDM à utiliser. Vous indiquez un nom de source de données ou un schéma EDM configuré.
 
-- **idMatch** : ce champ pointe vers l’élément principal pour EDM.
-  - Matches : spécifie le champ à utiliser dans la recherche exacte. Vous fournissez un nom de champ pouvant faire l’objet d’une recherche dans le schéma EDM pour le magasin de données.
-  - Classification : ce champ spécifie la correspondance de type sensible qui déclenche la recherche EDM. Vous pouvez fournir le nom ou le GUID d’une classification personnalisée ou prédéfinie existante.
+      - **idMatch** : ce champ pointe vers l’élément principal pour EDM.
+        - Matches : spécifie le champ à utiliser dans la recherche exacte. Vous fournissez un nom de champ pouvant faire l’objet d’une recherche dans le schéma EDM pour le magasin de données.
+        - Classification : ce champ spécifie la correspondance de type sensible qui déclenche la recherche EDM. Vous pouvez fournir le nom ou le GUID d’une classification personnalisée ou prédéfinie existante.
 
-- **Match :** ce champ pointe vers d’autres preuves à proximité d’idMatch.
-  - Matches : vous indiquez un nom de champ dans le schéma EDM pour DataStore.
-- **Resource :** cette section spécifie le nom et la description du type sensible dans plusieurs paramètres régionaux.
-  - idRef : fournissez un GUID pour ExactMatch id.
-  - Name & Editing the schema descriptions : personnalisez en fonction des besoins.
+      - **Match :** ce champ pointe vers d’autres preuves à proximité d’idMatch.
+        - Matches : vous indiquez un nom de champ dans le schéma EDM pour DataStore.
+      - **Resource :** cette section spécifie le nom et la description du type sensible dans plusieurs paramètres régionaux.
+        - idRef : fournissez un GUID pour ExactMatch ID.
+        - Nom et descriptions : personnalisez si nécessaire.
 
-```xml
-<RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
-  <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
-    <Version build="0" major="2" minor="0" revision="0" />
-    <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
-    <Details defaultLangCode="en-us">
-      <LocalizedDetails langcode="en-us">
-        <PublisherName>IP DLP</PublisherName>
-        <Name>Health Care EDM Rulepack</Name>
-        <Description>This rule package contains the EDM sensitive type for health care sensitive types.</Description>
-      </LocalizedDetails>
-    </Details>
-  </RulePack>
-  <Rules>
-    <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
-      <Pattern confidenceLevel="65">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-      </Pattern>
-      <Pattern confidenceLevel="75">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-        <Any minMatches ="3" maxMatches ="100">
-          <match matches="PatientID" />
-          <match matches="MRN"/>
-          <match matches="FirstName"/>
-          <match matches="LastName"/>
-          <match matches="Phone"/>
-          <match matches="DOB"/>
-        </Any>
-      </Pattern>
-    </ExactMatch>
-    <LocalizedStrings>
-      <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB371">
-        <Name default="true" langcode="en-us">Patient SSN Exact Match.</Name>
-        <Description default="true" langcode="en-us">EDM Sensitive type for detecting Patient SSN.</Description>
-      </Resource>
-    </LocalizedStrings>
-  </Rules>
-</RulePackage>
-```
+      ```xml
+      <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
+        <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
+          <Version build="0" major="2" minor="0" revision="0" />
+          <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
+          <Details defaultLangCode="en-us">
+            <LocalizedDetails langcode="en-us">
+              <PublisherName>IP DLP</PublisherName>
+              <Name>Health Care EDM Rulepack</Name>
+              <Description>This rule package contains the EDM sensitive type for health care sensitive types.</Description>
+            </LocalizedDetails>
+          </Details>
+        </RulePack>
+        <Rules>
+          <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
+            <Pattern confidenceLevel="65">
+              <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+            </Pattern>
+            <Pattern confidenceLevel="75">
+              <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+              <Any minMatches ="3" maxMatches ="100">
+                <match matches="PatientID" />
+                <match matches="MRN"/>
+                <match matches="FirstName"/>
+                <match matches="LastName"/>
+                <match matches="Phone"/>
+                <match matches="DOB"/>
+              </Any>
+            </Pattern>
+          </ExactMatch>
+          <LocalizedStrings>
+            <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB371">
+              <Name default="true" langcode="en-us">Patient SSN Exact Match.</Name>
+              <Description default="true" langcode="en-us">EDM Sensitive type for detecting Patient SSN.</Description>
+            </Resource>
+          </LocalizedStrings>
+        </Rules>
+      </RulePackage>
+      ```
 
 1. Téléchargez le package de règles en exécutant les cmdlets PowerShell suivantes, l’une après l’autre :
 
-```powershell
-$rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
-New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
-```
+      ```powershell
+      $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
+      New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
+      ```
 
 À ce stade, vous avez configuré la classification EDM. L’étape suivante consiste à indexer les données sensibles, puis à charger les données indexées.
 
@@ -304,8 +304,8 @@ Au cours de cette phase, vous configurez un groupe de sécurité personnalisé e
 
 1. Téléchargez et installez l’[agent EDM de chargement](https://go.microsoft.com/fwlink/?linkid=2088639). Par défaut, l’emplacement d’installation doit être  **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
 
-> [!TIP]
-> Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent. exe ».
+      > [!TIP]
+      > Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent. exe ».
 
 2. Pour autoriser l’agent de téléchargement EDM, ouvrez l’invite de commandes Windows (en tant qu’administrateur), puis exécutez la commande suivante :
 
@@ -331,7 +331,7 @@ Pour indexer les données sensibles, exécutez la commande suivante dans l’inv
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-par exemple,
+Par exemple :
 
 > **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
@@ -339,7 +339,7 @@ Pour charger les données indexées, exécutez la commande suivante dans l’inv
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-par exemple, 
+Par exemple :
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
@@ -361,16 +361,16 @@ Vous pouvez actualiser quotidiennement ou hebdomadairement votre base de donnée
 
 2. Exportez de nouveau les données vers une application, telle que Microsoft Excel, et enregistrez le fichier au format. csv. Conservez le même nom de fichier et l’emplacement que vous avez utilisé lorsque vous avez suivi les étapes décrites dans  [Indexer et charger les données sensibles](#index-and-upload-the-sensitive-data).
 
-> [!NOTE]
-> S’il n’y a pas de modifications apportées à la structure (noms de champs) du fichier .csv, vous n’avez pas besoin d’apporter des modifications à votre fichier de schéma de base de données lorsque vous actualisez les données. Si vous devez apporter des modifications, assurez-vous de modifier le schéma de base de données et votre package de règles en conséquence.
+      > [!NOTE]
+      > S’il n’y a pas de modifications apportées à la structure (noms de champs) du fichier .csv, vous n’avez pas besoin d’apporter des modifications à votre fichier de schéma de base de données lorsque vous actualisez les données. Si vous devez apporter des modifications, assurez-vous de modifier le schéma de base de données et votre package de règles en conséquence.
 
 3. Utilisez le  [Planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page)  pour automatiser les étapes 2 et 3 dans la procédure  [Indexer et charger les données sensibles](#index-and-upload-the-sensitive-data) . Vous pouvez planifier des tâches à l’aide de plusieurs méthodes :
 
-| **Méthode**             | **Procédure**                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows PowerShell     | Voir la documentation  [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps)  et l’ [exemple de script PowerShell](#example-powershell-script-for-task-scheduler)  dans cet article |
-| API Planificateur de tâches     | Consultez la documentation relative au  [Planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)                                                                                                                                                                                                                                                                                 |
-| Interface utilisateur Windows | Dans Windows, cliquez sur  **Démarrer**, puis tapez Planificateur de tâches. Dans la liste des résultats, cliquez avec le bouton droit sur  **Planificateur de tâches**, puis sélectionnez  **Exécuter en tant qu’administrateur**.                                                                                                                                                                                                                                                                           |
+      | **Méthode**             | **Procédure**                                                                                                                                                                                                                                                                                                                                                                                                                     |
+      | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+      | Windows PowerShell     | Voir la documentation  [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps)  et l’ [exemple de script PowerShell](#example-powershell-script-for-task-scheduler)  dans cet article |
+      | API Planificateur de tâches     | Consultez la documentation relative au  [Planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)                                                                                                                                                                                                                                                                                 |
+      | Interface utilisateur Windows | Dans Windows, cliquez sur  **Démarrer**, puis tapez Planificateur de tâches. Dans la liste des résultats, cliquez avec le bouton droit sur  **Planificateur de tâches**, puis sélectionnez  **Exécuter en tant qu’administrateur**.                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>Exemple de script PowerShell pour le planificateur de tâches
 
@@ -473,7 +473,9 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 
 9. Dans la section **Nom** , spécifiez un nom et une description pour la règle.
 
-10. Dans la section  **Conditions** , dans la liste  **+ Ajouter une condition** , sélectionnez  **Le contenu contient un type sensible**.<br/>![Le contenu contient des types d’informations sensibles](../media/edm-dlp-newrule-conditions.png)<br/>
+10. Dans la section  **Conditions** , dans la liste  **+ Ajouter une condition** , sélectionnez  **Le contenu contient un type sensible**.
+
+      ![Le contenu contient des types d’informations sensibles](../media/edm-dlp-newrule-conditions.png)
 
 11. Recherchez le type d’informations sensibles que vous avez créé lorsque vous avez configuré votre package de règles, puis sélectionnez  **+ Ajouter**.  
     Ensuite, sélectionnez  **Terminé**.

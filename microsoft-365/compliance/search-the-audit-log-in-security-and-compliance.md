@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 13a65f5a6a82eed748eaa79a3683ebdf2fe7ed9a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634752"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894395"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -313,7 +313,8 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
 |[Activités avancées eDiscovery](#advanced-ediscovery-activities)|[Activités dans Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Activités dans Microsoft Teams](#microsoft-teams-activities)|[Activités Santé Microsoft Teams](#microsoft-teams-healthcare-activities)|[Activités dans Yammer](#yammer-activities)|
 |[Activités Microsoft Power Automate](#microsoft-power-automate-activities)|[Activités Microsoft Power Apps](#microsoft-power-apps-activities)|[Activités de Microsoft Stream](#microsoft-stream-activities)|
-|[Activités Microsoft Forms](#microsoft-forms-activities)|[Activités des étiquettes de confidentialité](#sensitivity-label-activities)|[Activités administrateur Exchange](#exchange-admin-audit-log)||
+|[Activités de l’Explorateur de contenu](#content-explorer-activities)|[Activités Microsoft Forms](#microsoft-forms-activities)|[Activités des étiquettes de confidentialité](#sensitivity-label-activities)|
+|[Activités administrateur Exchange](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>Activités des fichiers et pages
@@ -804,7 +805,16 @@ Vous pouvez effectuer une recherche dans le journal d’audit pour consulter les
 
 ### <a name="microsoft-stream-activities"></a>Activités de Microsoft Stream
 
-Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Microsoft Stream. Ces activités incluent les activités de vidéo effectuées par les utilisateurs, les activités de canal de groupe et les activités d’administrateur telles que la gestion des utilisateurs, la gestion des paramètres d’organisation et l’exportation de rapports. Pour obtenir une description de ces activités, voir la section «activités enregistrées dans Microsoft Stream» dans [journaux d’audit dans Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Microsoft Stream. Ces activités incluent les activités de vidéo effectuées par les utilisateurs, les activités de canal de groupe et les activités d’administrateur telles que la gestion des utilisateurs, la gestion des paramètres d’organisation et l’exportation de rapports. Pour obtenir une description de ces activités, voir «Actions enregistrées dans Stream» dans [Journaux d’audit dans Microsoft Stream](https://docs.microsoft.com/stream/audit-logs#actions-logged-in-stream).
+
+### <a name="content-explorer-activities"></a>Activités de l’Explorateur de contenu
+
+Le tableau suivant répertorie les activités de l’Explorateur de contenu qui sont enregistrées dans le journal d’audit Office 365. Explorateur de contenu, accessible sur l’outil classifications de données, dans le Centre de conformité Microsoft 365. Pour plus d’informations, voir [Utilisation de l’Explorateur de contenu](data-classification-content-explorer.md).
+
+|**Nom convivial**|**Opération**|**Description**|
+|:-----|:-----|:-----|
+|Élément consulté|AccessedItem|Un administrateur (ou utilisateur membre du groupe de rôles Visionneuse de contenu de l’Explorateur de contenu) utilise l’Explorateur de contenu pour afficher un e-mail ou un document SharePoint/OneDrive.|
+||||
 
 ### <a name="microsoft-forms-activities"></a>Activités Microsoft Forms
 

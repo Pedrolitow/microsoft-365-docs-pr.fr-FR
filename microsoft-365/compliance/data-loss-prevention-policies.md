@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: 574a3376aa54311db3edc581e0a3e602cb1ac383
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826289"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894885"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -87,7 +87,10 @@ Une stratégie DLP peut rechercher et protéger les informations sensibles dans 
 
 Si vous optez pour l’inclusion ou l’exclusion de sites SharePoint ou de comptes OneDrive spécifiques, notez qu’une stratégie DLP ne peut pas contenir plus de 100 inclusions et exclusions. Vous pouvez néanmoins contourner cette limite en appliquant une stratégie mise en place à l’échelle de l’organisation ou une stratégie qui s’applique aux emplacements entiers.
   
-### <a name="rules"></a>Rules
+### <a name="rules"></a>Règles
+
+> [!NOTE]
+> Le comportement par défaut d’une stratégie DLP, lorsque aucune alerte n’est configurée, n’est pas une alerte, ni un déclenchement. Cela s’applique uniquement aux types d’informations par défaut. Pour les types d’informations personnalisés, le système émet une alerte même si aucune action n’est définie dans la stratégie.
 
 Les règles appliquent vos exigences professionnelles au contenu de votre organisation. Une stratégie contient une ou plusieurs règles et chaque règle se compose de conditions et d’actions. Pour chaque règle, lorsque les conditions sont remplies, les actions sont exécutées automatiquement. Les règles sont exécutées de façon séquentielle, en commençant par la règle de priorité la plus élevée dans chaque stratégie.
   
@@ -423,16 +426,16 @@ Si vous créez des stratégies DLP susceptibles d’avoir un impact important, n
 2. **Passez en mode test avec notifications et conseils de stratégie** pour commencer à faire découvrir vos stratégies de conformité aux utilisateurs et les préparer pour les règles qui vont être appliquées. À ce stade, vous pouvez également demander aux utilisateurs de signaler les faux positifs afin d’affiner les règles. 
     
 3. **Démarrez l’application complète des stratégies** afin que les actions dans les règles soient appliquées et le contenu protégé. Continuez de surveiller les rapports DLP et tous les rapports ou notifications d’incident pour vous assurer que les résultats correspondent à ce que vous aviez prévu. 
-    
-![Options pour l’utilisation du mode de test et l’activation de la stratégie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
-  
-Vous pouvez désactiver une stratégie DLP à tout moment, ce qui a une incidence sur toutes les règles de la stratégie. Toutefois, chaque règle peut également être désactivée individuellement en basculant son état dans l’éditeur de règles.
-  
-![Options de désactivation d’une règle dans une stratégie](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-Vous pouvez également modifier la priorité de plusieurs règles dans une stratégie. Pour ce faire, ouvrez une stratégie pour modification. Dans une ligne de règle, sélectionnez les points de suspension (**...**), puis choisissez une option, comme, par exemple, **Descendre** ou **Mettre à la fin**.
+    ![Options pour l’utilisation du mode de test et l’activation de la stratégie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
-![Définition d’une priorité de règle](../media/dlp-set-rule-priority.png)
+    Vous pouvez désactiver une stratégie DLP à tout moment, ce qui a une incidence sur toutes les règles de la stratégie. Toutefois, chaque règle peut également être désactivée individuellement en basculant son état dans l’éditeur de règles.
+
+    ![Options de désactivation d’une règle dans une stratégie](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+    Vous pouvez également modifier la priorité de plusieurs règles dans une stratégie. Pour ce faire, ouvrez une stratégie pour modification. Dans une ligne de règle, sélectionnez les points de suspension (**...**), puis choisissez une option, comme, par exemple, **Descendre** ou **Mettre à la fin**.
+
+    ![Définition d’une priorité de règle](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Rapports DLP
 
@@ -534,9 +537,9 @@ Toutefois, les rapports DLP doivent extraire des d’Office 365, y compris Exch
     
 2. Utilisez l’une de ces applets de commande pour les rapports DLP :
     
-  - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
-    
-  - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>Plus d’informations
 
@@ -554,4 +557,3 @@ Toutefois, les rapports DLP doivent extraire des d’Office 365, y compris Exch
     
 - [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md)
     
-
