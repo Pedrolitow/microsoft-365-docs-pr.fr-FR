@@ -1,8 +1,7 @@
 ---
 title: Comparer des groupes dans Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Découvrez les types de groupes que vous pouvez utiliser dans Office 365.
-ms.openlocfilehash: 5b8a3a7859a510a07b579f3b1da255e555d6ae1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7d0a18606918884381b0bf7863cfac6cafb29c29
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239233"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894598"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
@@ -33,15 +32,15 @@ Dans la section **Groupes** du Centre d’administration Microsoft 365, vous po
 
 - Les **Groupes Office 365** sont utilisés pour la collaboration entre utilisateurs, que ce soit à l’intérieur ou à l’extérieur de votre entreprise.
 - Les **Groupes de distribution** sont utilisés pour envoyer des notifications à un groupe de personnes.
-- Les **Groupes de sécurité** sont utilisés pour accorder l’accès aux ressources SharePoint.
-- Les **Groupes de sécurité à extension courrier** sont utilisés pour accorder l’accès aux ressources SharePoint et envoyer par e-mail des notifications à ces utilisateurs.
+- Les **Groupes de sécurité** sont utilisés pour accorder l’accès aux ressources telles que les sites SharePoint.
+- Les **Groupes de sécurité à extension courrier** sont utilisés pour accorder l’accès aux ressources telles que SharePoint et envoyer par e-mail des notifications à ces utilisateurs.
 - Les **Boîtes aux lettres partagées** sont utilisées lorsque plusieurs personnes doivent accéder à la même boîte aux lettres, par exemple, une information d’entreprise ou une adresse de courrier du support technique.
 
 ## <a name="office-365-groups"></a>Groupes Office 365
 
 Les Groupes Office 365 sont utilisés pour la collaboration entre utilisateurs, que ce soit à l’intérieur ou à l’extérieur de votre entreprise. Pour chaque groupe Office 365, les membres bénéficient d’un e-mail de groupe et d’un espace de travail partagé pour les conversations, les fichiers et les événements de calendrier, ainsi que d’un Planificateur.
 
-Vous pouvez ajouter des utilisateurs externes à votre entreprise dans le cadre d’un groupe, à partir du moment où cela est [Activé par l'administrateur](manage-guest-access-in-groups.md). Vous pouvez également permettre aux expéditeurs externes d’envoyer des e-mails vers l’adresse de messagerie du groupe.
+Vous pouvez ajouter des personnes externes à votre organisation dans le cadre d’un groupe, à partir du moment où cette fonction est [activée par l'administrateur](manage-guest-access-in-groups.md). Vous pouvez également permettre aux expéditeurs externes d’envoyer des e-mails vers l’adresse de messagerie du groupe.
 
 Les groupes Office 365 peuvent être [configurés pour l’appartenance dynamique à Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), ce qui permet aux membres d’un groupe d’être ajoutés ou supprimés automatiquement en fonction de leurs attributs, tels que le service, le lieu, le titre, etc.
 
@@ -77,7 +76,7 @@ Les boîtes aux lettres partagées peuvent recevoir des e-mails externes si l’
 
 Les utilisateurs disposant d’autorisations sur la boîte aux lettres du groupe peuvent Envoyer en tant que ou Envoyer de la part pour le compte de l’adresse de messagerie de la boîte aux lettres si l’administrateur leur a accordé cette autorisation. Cette fonctionnalité est particulièrement utile pour les boîtes aux lettres d’aide et de support, car les utilisateurs peuvent envoyer des e-mails à partir du « Support technique de Contoso » ou du « Bureau d'accueil du bâtiment A ».
 
-Il n’est pour l'instant pas possible de migrer une boîte aux lettres partagée vers un groupe Office 365. Est-ce une fonction que vous souhaitez avoir ? Faites-le nous savoir. **[Votez ici](https://go.microsoft.com/fwlink/?linkid=871518)**
+Il n’est pour l'instant pas possible de migrer une boîte aux lettres partagée vers un groupe Office 365. Est-ce une fonction que vous souhaitez avoir ? Faites-le nous savoir. **[Votez ici](https://go.microsoft.com/fwlink/?linkid=871518)**.
 
 ## <a name="related-articles"></a>Articles connexes
 
