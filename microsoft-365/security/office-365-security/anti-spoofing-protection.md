@@ -2,8 +2,8 @@
 title: Protection contre l’usurpation d’identité dans Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTtracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Cet article explique comment Office 365 prévient les attaques par hameçonnage utilisant des domaines d’expéditeur falsifiés, ou usurpés. Pour ce faire, Microsoft analyse les messages et bloque ceux qui ne peuvent être authentifiés ni à l’aide de méthodes d’authentification standard du courrier, ni à l’aide d’autres techniques basées sur la réputation des expéditeurs. Cette modification a été apportée afin de réduire le nombre d’attaques par hameçonnage auxquelles sont exposées les organisations utilisant Office 365.
-ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9e1a4cf31c2565eeb6be53b5c43bda0154f9ea6f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087073"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894137"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection contre l’usurpation d’identité dans Office 365
 
@@ -89,10 +89,9 @@ Pour lire l’annonce générale de Microsoft, voir [A Sea of Phish Part 2 – E
 
 Si les filtrages SPF, DKIM et DMARC sont utiles en soi, ils ne communiquent pas suffisamment l’état d’authentification quand un message n’a pas d’enregistrement d’authentification explicite. C’est pourquoi Microsoft a développé un algorithme combinant plusieurs signaux en une valeur unique appelée Authentification composite, abrégée en Compauth. Les clients d’Office 365 ont des valeurs compauth estampillées dans l’en-tête *Authentication-Results*, à l’intérieur des en-têtes de message.
 
-```
+```text
 Authentication-Results:
   compauth=<fail|pass|softpass|none> reason=<yyy>
-
 ```
 
 |**Résultat CompAuth**|**Description**|
@@ -380,7 +379,7 @@ S’il peut être difficile au début d’obtenir des domaines d’envoi qu’il
 
 ### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>Affichage de rapports sur le nombre de messages marqués comme usurpés
 
-Une fois votre stratégie de détection d’usurpation d’identité activée, vous pouvez utiliser l’enquête relative aux menaces pour obtenir des chiffres indiquant le nombre de messages marqués comme tentatives de hameçonnage. Pour ce faire, sous l’Explorateur&amp;du Centre de Sécurité et de Conformité (CSC) relatif à la Gestion des Menaces\>, définissez l’Affichage sur Hameçonnage, puis groupez par Domaine de l’expéditeur ou État de la protection :
+Une fois votre stratégie de détection d’usurpation d’identité activée, vous pouvez utiliser l’enquête relative aux menaces pour obtenir des chiffres indiquant le nombre de messages marqués comme tentatives de hameçonnage. Pour ce faire, placez-vous dans Centre de Sécurité et de Conformité (CSC) sous l’Explorateur \> Gestion des menaces, définissez l’affichage sur Hameçonnage, puis groupez par domaine de l’expéditeur ou état de la protection :
 
 ![Affichage du nombre de messages marqués comme hameçonnage](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
@@ -650,9 +649,11 @@ Malheureusement, non, car les hameçonneurs s’adaptent en recourant à d’aut
 
 Presque tous les grands destinataires de courrier implémentent les filtrages SPF, DKIM et DMARC traditionnels. Certains destinataires disposent d’autres contrôles plus stricts que ces normes, mais rares sont ceux qui vont aussi loin qu’Office 365 pour bloquer le courrier non authentifié et le traiter comme une usurpation d’identité. Cependant, la plupart des entreprises du secteur deviennent de plus en plus strictes avec ce type particulier de courrier, en raison notamment du problème de hameçonnage.
 
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>Ai-je toujours besoin d’activer l’option Filtrage avancé du courrier indésirable pour « Enregistrement SPF : échec sévère » si j’active la détection d’usurpation d’identité?
+### <a name="do-i-still-need-to-enable-the-advanced-spam-filter-asf-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Est-ce que je dois toujours activer le paramètre Filtre de courrier indésirable avancé « Enregistrement SPF : échec sévère » (_MarkAsSpamSpfRecordHardFail_) si j’active la fonctionnalité anti-usurpation ?
 
-Non, cette option n’est plus requise car la fonction de détection d’usurpation d’identité considère non seulement les échecs sévères SPF, mais aussi un ensemble de critères beaucoup plus large. Si vous avez activé la détection d’usurpation d’identité et l’option Enregistrement SPF : échec sévère, vous obtiendrez probablement davantage de faux positifs. Nous vous recommandons de désactiver cette fonctionnalité car elle ne produirait pratiquement aucune capture supplémentaire de courrier indésirable ou de hameçonnage et générerait plutôt essentiellement des faux positifs.
+Non, cette option n’est plus requise car la fonction de détection d’usurpation d’identité considère non seulement les échecs sévères SPF, mais aussi un ensemble de critères beaucoup plus large. Si vous avez activé la détection d’usurpation d’identité et l’option **Enregistrement SPF : échec sévère** (_MarkAsSpamSpfRecordHardFail_), vous obtiendrez probablement davantage de faux positifs.
+
+Nous vous recommandons de désactiver cette fonctionnalité car elle ne produirait pratiquement aucune capture supplémentaire de courrier indésirable ou de hameçonnage et générerait à la place essentiellement des faux positifs. Pour plus d’informations, voir [Paramètres de filtre de courrier indésirable avancé (ASF) dans Office 365](advanced-spam-filtering-asf-options.md).
 
 ### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>Est-ce que le Schéma de réécriture de l’expéditeur aide à corriger le problème de courrier transféré ?
 
