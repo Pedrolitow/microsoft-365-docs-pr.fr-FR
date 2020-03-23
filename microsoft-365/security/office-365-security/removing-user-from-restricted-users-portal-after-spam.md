@@ -1,11 +1,11 @@
 ---
-title: Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
+title: Retirer les utilisateurs bloqués du portail des utilisateurs restreints
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 07/10/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -17,39 +17,39 @@ search.appverid:
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
-description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: 6fad4b9d3554228bdbf474bce2b4b2d0f29f7e2b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Les administrateurs peuvent découvrir comment supprimer des utilisateurs du portail des utilisateurs restreints dans Office 365. Les utilisateurs sont ajoutés au portail Utilisateurs restreints pour avoir envoyé du courrier indésirable sortant, généralement en raison de la compromission d’un compte.
+ms.openlocfilehash: f1f869a81ef5b01733bf9060117cf3706094b961
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598581"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895202"
 ---
-# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
+# <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Retirer les utilisateurs bloqués du portail Utilisateurs restreints dans Office 365
 
-Si un utilisateur envoie continuellement des courriers électroniques qui sont classés comme courrier indésirable d’Office 365, il ne pourra pas envoyer de courriers électroniques, mais pourra toujours en recevoir. L’utilisateur est répertorié dans le service comme expéditeur sortant incorrect et reçoit une notification d’échec de remise (NDR) qui indique :
+Si un utilisateur dépasse l’une des limites d’envoi sortant, comme spécifié dans [les limites de service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou dans [les stratégies anti-courrier indésirable sortantes](configure-the-outbound-spam-policy.md), l’utilisateur ne peut pas envoyer d’e-mails, mais il peut continuer à en recevoir.
+
+L’utilisateur est ajouté au portail Utilisateurs restreints dans le Centre de sécurité et conformité Office 365. Lorsqu’il essaie d’envoyer des e-mail, le message est renvoyé dans une notification d’échec de remise (ou notification de non-remise) avec le code d’erreur [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) et le texte suivant :
 
 > «Votre message n’a pas pu être remis parce que vous n’avez pas été reconnu comme expéditeur valide. Le plus souvent, il est possible que votre adresse de messagerie soit susceptible d’envoyer du courrier indésirable et qu’elle ne soit plus autorisée à envoyer du courrier électronique.  Contactez votre administrateur pour obtenir de l’aide. Le serveur distant a renvoyé' 550 5.1.8 accès refusé, expéditeur sortant incorrect».
 
+Les administrateurs peuvent supprimer des utilisateurs du portail Expéditeurs restreints dans le centre de sécurité et conformité ou dans Exchange Online PowerShell.
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
-<a name="sectionSection0"> </a>
 
-Durée d’exécution estimée : 5 minutes
+- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page **Utilisateurs restreints**, utilisez <https://protection.office.com/restrictedusers>.
 
-Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Anti-spam » dans la rubrique [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-La procédure suivante peut également être exécutée via le service PowerShell à distance. Utilisez l’applet de commande Get-BlockedSenderAddress pour obtenir la liste des utilisateurs avec accès restreint et Remove-BlockedSenderAddress pour supprimer la restriction. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour supprimer des utilisateurs du portail Utilisateurs restreints, vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour l’accès en lecture seule au portail Utilisateurs restreints, vous devez être membre du groupe de rôles **Lecteur de sécurité**. Pour plus d’informations sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité Office 365](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Supprimer les restrictions pour un compte de courrier Office 365 bloqué
+- Un expéditeur dépassant la limite du nombre de messages sortants est un indicateur de compte compromis. Avant de supprimer l’utilisateur du portail Utilisateurs restreints, veillez à suivre les étapes nécessaires pour reprendre le contrôle de son compte. Pour plus informations, voir [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md).
 
-Vous devez effectuer cette tâche dans le centre de sécurité & conformité (SCC). Pour plus d’informations sur SCC,[accédez au centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md). Vous devez être dans le groupe de rôles **Gestion de l’organisation** ou **administrateur de la sécurité** pour effectuer ces fonctions. Pour plus d’informations sur les groupes de rôles SCC,[accédez au centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+## <a name="use-the-security--compliance-center-to-remove-a-user-from-the-restricted-users-list"></a>Utiliser le Centre de sécurité et conformité pour supprimer un utilisateur de la liste Utilisateurs restreints
 
-1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général Office 365, connectez-vous au centre de sécurité et conformité Office 365, puis dans la liste à gauche, développez **Gestion des menaces**, choisir** révision**, puis sélectionnez **utilisateurs avec accès restreint**.
+1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Examiner** \> **Utilisateurs restreints**.
 
-    > [!TIP]
-    > Pour accéder directement à la page **Utilisateurs avec accès restreint** (autrefois appelée Centre d’actions) dans le centre de conformité&amp; et de sécurité, utilisez l’URL suivante : [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
-
-2. Cette page contient la liste des utilisateurs qui ont été bloqués pour l’envoi de messages électroniques.  Recherchez l’utilisateur dont vous voulez supprimer les restrictions, puis sélectionnez **débloquer**.
+2. Recherchez et sélectionnez l’utilisateur que vous souhaitez débloquer. Dans la colonne **Actions**, cliquez sur **Débloquer**.
 
 3. Une fenêtre permet d’accéder aux informations relatives au compte dont l’envoi est restreint. Nous vous conseillons de suivre les recommandations afin de vous assurer que vous effectuez les actions appropriées au cas où le compte serait réellement compromis. Sélectionnez **Suivant** lorsque vous avez terminé.
 
@@ -57,36 +57,56 @@ Vous devez effectuer cette tâche dans le centre de sécurité & conformité (SC
 
 5. Cliquez sur **Oui** pour confirmer la modification.
 
-    > [!NOTE]
-    > L’opération peut prendre jusqu’à 30 minutes avant la suppression des restrictions.
+   > [!NOTE]
+   > L’opération peut prendre jusqu’à 30 minutes avant la suppression des restrictions.
 
-## <a name="making-sure-admins-are-alerted-when-this-happens"></a>Vérifier que les administrateurs sont avertis lorsque cela se produit
+## <a name="verify-the-alert-settings-for-restricted-users"></a>Vérifier les paramètres d’alerte pour les utilisateurs restreints
 
-Une alerte «utilisateur restreint à l’envoi de courrier électronique» est disponible sous la forme d’une stratégie sous la page de stratégies d’alertes de conformité & sécurité d’Office 365. Il s’agissait autrefois de la stratégie anti-courrier indésirable sortant, qui est désormais native pour la plateforme d’alertes Office 365. Pour plus d’informations sur les alertes, accédez à[stratégies d’alertes dans le centre de sécurité & conformité](../../compliance/alert-policies.md).
+La stratégie d’alerte par défaut nommée **Utilisateur pour lequel l’envoi de courrier est restreint** avertit automatiquement les administrateurs lorsque les utilisateurs ne peuvent pas envoyer de messages sortants. Vous pouvez vérifier ces paramètres et ajouter des utilisateurs à avertir. Pour plus d’informations sur les stratégies d’alerte, accédez à [Stratégies d’alerte dans le centre de sécurité et conformité](../../compliance/alert-policies.md).
 
 > [!IMPORTANT]
-> Pour que les alertes fonctionnent, la recherche dans le journal d’audit doit être activée. Pour plus d'informations, voir [Activer ou désactiver la recherche dans le journal d’audit Office 365](../../compliance/turn-audit-log-search-on-or-off.md).
+> Pour que les alertes fonctionnent, la recherche dans le journal d’audit doit être activée. Pour plus d’informations, voir [Activer ou désactiver la recherche dans un journal d’audit Office 365](../../compliance/turn-audit-log-search-on-or-off.md).
 
-La stratégie pour cette alerte est une stratégie par défaut et est fournie avec tous les clients Office 365 et n’a pas besoin d’être configurée. C’est une alerte de gravité élevée et sera envoyée par courrier électronique au groupe TenantAdmins configuré lorsque l’alerte est déclenchée chaque fois qu’un utilisateur a été empêché d’envoyer des messages. Les administrateurs peuvent mettre à jour le groupe averti lorsque cette alerte se produit en accédant à l’alerte sous le portail SCC > Alertes > les stratégies d’alerte > utilisateurs qui ne sont pas autorisés à envoyer des messages électroniques.
+1. Dans le Centre de sécurité et conformité, accédez à **Alertes** \> **Stratégies d’alerte**.
 
-Vous pourrez modifier l’alerte en effectuant les actions suivantes :
-- Activer/désactiver les notifications par courrier électronique
-- Envoyer un courrier électronique aux destinataires requis
-- Limiter les notifications que vous obtenez par jour
+2. Recherchez et sélectionnez l’alerte **Utilisateur pour lequel l’envoi de courrier est restreint**.
 
-## <a name="checking-for-and-removing-restrictions-using-powershell"></a>Vérification et suppression des restrictions à l’aide de PowerShell
-Les commandes PowerShell pour les utilisateurs avec accès restreint sont les suivantes :
-- `Get-BlockedSenderAddress` : exécuter pour récupérer la liste des utilisateurs qui ne sont pas autorisés à envoyer des messages électroniques
-- `Remove-BlockedSenderAddress`: Exécuter pour supprimer des utilisateurs d’un accès restreint
+3. Dans le menu volant qui apparaît, vérifiez ou configurez les paramètres suivants :
 
-## <a name="for-more-information"></a>Pour plus d'informations
+   - **État** : vérifiez que l’alerte est activée ![Activer](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
 
-[Réponse à un compte de messagerie compromis](responding-to-a-compromised-email-account.md)
+   - **Destinataires de courrier** : cliquez sur **Modifier** et vérifiez ou configurez les paramètres suivants dans le menu volant **Modifier les destinataires** qui apparaît :
 
-[Présentation de l’alerte l’utilisateur n’est pas autorisé à envoyer des messages](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
+     - **Envoyer des notifications par courrier** : vérifiez que la case est cochée (**Activé**).
 
-[Pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
+     - **Destinataires du courrier** : la valeur par défaut est **TenantAdmins** (c’est-à-dire membres de type **Administrateur général**). Pour ajouter des destinataires, cliquez sur une zone vide de la zone. Une liste de destinataires apparaît, puis vous pouvez commencer à saisir un nom pour filtrer et sélectionner un destinataire. Vous pouvez supprimer un destinataire existant de la zone en cliquant sur ![Icône Supprimer](../../media/scc-remove-icon.png) en regard de son nom.
 
-[Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
+     - **Limite quotidienne de notification** : la valeur par défaut est **Aucune limite**, mais vous pouvez sélectionner une limite pour le nombre maximal de notifications par jour.
 
-[Stratégies d’alerte dans le Centre de sécurité et de conformité](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
+     Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+
+4. De retour dans le menu roulant **Utilisateur pour lequel l’envoi de courrier est restreint**, cliquez sur **Fermer**.
+
+## <a name="use-exchange-online-powershell-to-view-and-remove-users-from-the-restricted-users-list"></a>Utiliser Exchange Online PowerShell pour afficher et supprimer des utilisateurs de la liste Utilisateurs restreints
+
+Pour afficher cette liste d’utilisateurs pour lesquels l’envoi de courrier est restreint, exécutez la commande suivante :
+
+```powershell
+Get-BlockedSenderAddress
+```
+
+Pour afficher les détails d’un utilisateur spécifique, remplacez \<emailaddress\> par son adresse e-mail, puis exécutez la commande suivante :
+
+```powershell
+Get-BlockedSenderAddress -SenderAddress <emailaddress>
+```
+
+Pour des informations détaillées sur la syntaxe et les paramètres, voir [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-blockedsenderaddress).
+
+Pour supprimer un utilisateur de la liste Utilisateurs restreints, remplacez \<emailaddress\> par son adresse e-mail, puis exécutez la commande suivante :
+
+```powershell
+Remove-BlockedSenderAddress -SenderAddress <emailaddress>
+```
+
+Pour des informations détaillées sur la syntaxe et les paramètres, voir [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-blockedsenderaddress).
