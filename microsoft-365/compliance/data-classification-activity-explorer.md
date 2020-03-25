@@ -1,5 +1,5 @@
 ---
-title: Utiliser l’explorateur d’activité de classification des données
+title: Prise en main de l’Explorateur d’activités (préversion)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: L’explorateur d’activité complète les fonctionnalités de classification des données en vous permettant de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 68304bc75d33c993db52895828ec49e3b5203a4c
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076760"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929458"
 ---
-# <a name="view-activity-on-your-labeled-content-preview"></a>Afficher l’activité sur votre contenu étiqueté (aperçu)
+# <a name="get-started-with-activity-explorer-preview"></a>Prise en main de l’Explorateur d’activités (préversion)
 
 Les onglets vue d’ensemble de la classification des données et explorateur de contenu vous permettent de voir quel contenu a été découvert et étiqueté, ainsi que son emplacement. L’explorateur d’activité complète cette suite de fonctionnalités en vous permettant de contrôler les opérations effectuées avec votre contenu étiqueté. L’Explorateur d’activité permet de voir votre historique.
 
