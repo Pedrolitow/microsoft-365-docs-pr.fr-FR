@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7f2cf7f62060774343354467d27b76456f6581fc
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: e093bd9c5a76b44cf66591b4212f37014189186e
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "42567027"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928995"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -153,7 +153,8 @@ La section **Prise en main** fournit quelques requêtes simples utilisant des op
 Pour plus d’informations sur le langage de requête Kusto et les opérateurs pris en charge, voir [documentation sur le langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/).
 
 ## <a name="related-topics"></a>Sujets associés
-- [Repérage proactif des menaces](advanced-hunting-overview.md)
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
+- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bb3eae9fff658ee1cbb7f80fa3ff15f2335a9a3a
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 0b28cf2ce96e4c040fac0999d669623cef066fe4
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234683"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929491"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -39,6 +39,12 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 
 | Nom du tableau | Description |
 |------------|-------------|
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertes de Microsoft Defender ATP, Office 365 ATP, sécurité de l’application Cloud Microsoft et Azure ATP, y compris les informations de gravité et la catégorisation des menaces  |
+| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Fichiers, adresses IP, URL, utilisateurs ou périphériques associés à des alertes |
+| **[AccountInfo](advanced-hunting-accountinfo-table.md)** | Informations de compte provenant de différentes sources, notamment Azure Active Directory |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Événements d’e-mails Office 365, y compris les événements de remise et de blocage d’e-mail |
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Informations sur les fichiers joints aux e-mails Office 365 |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Informations sur les URL des e-mails Office 365 |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Informations sur l’ordinateur, y compris les informations de système d’exploitation |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propriétés réseau des ordinateurs, y compris les adaptateurs, les adresses IP et MAC, ainsi que les réseaux et domaines connectés |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Création de processus et événements associés |
@@ -49,17 +55,19 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Événements de chargement de DLL |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Plusieurs types d’événements, y compris les événements déclenchés par des contrôles de sécurité tels que l’Antivirus Windows Defender et la protection contre l’exploitation |
 | **[DeviceFileCertificateInfoBeta](advanced-hunting-devicefilecertificateinfobeta-table.md)** | Informations de certificat des fichiers signés provenant d’événements de vérification de certificat sur les points de terminaison |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Événements d’e-mails Office 365, y compris les événements de remise et de blocage d’e-mail |
-| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Informations sur les fichiers joints aux e-mails Office 365 |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Informations sur les URL des e-mails Office 365 |
 | **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | Inventaire des logiciels sur les appareils, ainsi que les vulnérabilités connues dans ces produits logiciels |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-tvm-softwarevulnerability-table.md)** | Base de connaissances des vulnérabilités révélées publiquement, notamment si le code d’exploitation est disponible au public |
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Menace et événements d’évaluation de la gestion des vulnérabilités, indiquant l’état de plusieurs configurations de sécurité sur les appareils |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-tvm-secureconfigkb-table.md)** | Base de connaissances de plusieurs configurations de sécurité utilisées par les menaces et la gestion des vulnérabilités pour évaluer les appareils ; inclut les mappages vers différentes normes et points de référence  |
+| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Activités liées aux fichiers dans les applications et les services Cloud |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Événements d’authentification enregistrés par Active Directory et d’autres services Microsoft Online |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Activités de requête exécutées sur des objets Active Directory, tels que des utilisateurs, des groupes, des appareils et des domaines |
+
 
 ## <a name="related-topics"></a>Sujets associés
-- [Repérage proactif des menaces](advanced-hunting-overview.md)
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
+- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

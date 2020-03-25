@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2e7999fef43adb372947d9edf92b84ac67f347fe
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: d5e3327f4b4e066b3e4c14f646ad8db78ff3804a
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235003"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929039"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -46,7 +46,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `RemoteUrl` | string | URL ou nom de domaine complet (FQDN) à laquelle/auquel la connexion était en cours |
 | `LocalIP` | string | Adresse IP affectée à l’ordinateur local utilisée pendant la communication |
 | `LocalPort` | int | Port TCP sur l’ordinateur local utilisé pendant la communication |
-| `Protocol` | string | Protocole IP utilisé, qu’il s’agisse de TCP ou UDP |
+| `Protocol` | string | Protocole utilisé pendant la communication |
 | `LocalIPType` | string | Type d’adresse IP, par exemple public, Private, reserved, Loopback, Teredo, FourToSixMapping et Broadcast |
 | `RemoteIPType` | string | Type d’adresse IP, par exemple public, Private, reserved, Loopback, Teredo, FourToSixMapping et Broadcast |
 | `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |

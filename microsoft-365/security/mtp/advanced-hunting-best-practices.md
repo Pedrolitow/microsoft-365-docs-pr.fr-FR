@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a859aa201b43813d6c66a797cbfee160051d5103
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 9d7f6ee67e231ce7aa9bce1decc4de2f2d5a6d41
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235063"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929503"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -95,8 +95,9 @@ DeviceProcessEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 ## <a name="related-topics"></a>Sujets associés
-- [Repérage proactif des menaces](advanced-hunting-overview.md)
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
+- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

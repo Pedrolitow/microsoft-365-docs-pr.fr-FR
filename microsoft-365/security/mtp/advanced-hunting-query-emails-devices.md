@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0bbcef72fa305819c9f8e0813cfcdfd6c2b0fff3
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234723"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928983"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Repérer les menaces sur divers appareils et e-mails
 
@@ -94,8 +94,9 @@ DeviceProcessEvents
 ```
 
 ## <a name="related-topics"></a>Sujets associés
-- [Repérage proactif des menaces](advanced-hunting-overview.md)
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
+- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
