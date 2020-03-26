@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Office 365 Advanced eDiscovery v 1.0 sont également en cours de retrait dans la même période.
-ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894851"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955543"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Déclassement des outils eDiscovery hérités
 
@@ -135,7 +135,13 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <p>
 <p>Vous pouvez également exporter les résultats de recherche vers des fichiers PST, puis utiliser le service d’importation Microsoft 365 pour importer les fichiers PST dans une boîte aux lettres de découverte. Pour obtenir des instructions pas à pas, reportez-vous à la rubrique <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">utiliser le chargement réseau pour importer des fichiers PST vers Office 365</a>.
 </tr>
-<tr class="even">
+<tr class=even>
+  <td>Copier des messages à partir d’une boîte aux lettres vers une autre boîte aux lettres</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Attribuer des autorisations à une boîte aux lettres</a></td>
+  <td>Pour accorder à une personne l’accès à la messagerie d’un autre utilisateur (par exemple, lorsqu’un employé quitte votre organisation et que vous devez lui donner accès à l’e-mail de l’ancien employé), nous vous recommandons de lui attribuer des autorisations d’accès à l’ancien employé. lettres. Par conséquent, au lieu de copier des éléments de boîte aux lettres vers une autre boîte aux lettres d’utilisateur ou une boîte aux lettres partagée, affectez simplement des autorisations utilisateur pour accéder à la boîte aux lettres source.</td>
+  
+  </tr>
+<tr class="odd">
 <td>Restaurer des éléments à partir du dossier éléments récupérables</td>
   <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>Vous pouvez restaurer des éléments supprimés définitivement (également appelés éléments <i>supprimés</i> ) dans les boîtes aux lettres, tant que la période de rétention des éléments supprimés d’un élément n’a pas expiré. Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">dossier éléments récupérables dans Exchange Online</a>.</td>
@@ -213,9 +219,16 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
-<td>Aucun</td>
+<td>Aucune</td>
 <td>Il n’existe pas de remplacement direct de cette fonctionnalité, car elle ne fournit pas d’accès à tous les services Microsoft 365. Consultez le Forum aux questions ci-dessous pour obtenir d’autres solutions.</td>
 </tr>
+  <tr class=even>
+  <td>Copier des messages à partir d’une boîte aux lettres vers une autre boîte aux lettres</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Attribuer des autorisations à une boîte aux lettres</a></td>
+  <td>Pour accorder à une personne l’accès à la messagerie d’un autre utilisateur (par exemple, lorsqu’un employé quitte votre organisation et que vous devez lui donner accès à l’e-mail de l’ancien employé), nous vous recommandons de lui attribuer des autorisations d’accès à l’ancien employé. lettres. Par conséquent, au lieu de copier des éléments de boîte aux lettres vers une autre boîte aux lettres d’utilisateur ou une boîte aux lettres partagée, affectez simplement des autorisations utilisateur pour accéder à la boîte aux lettres source.</td>
+  
+  </tr>
+
 </tbody>
 </table>
 

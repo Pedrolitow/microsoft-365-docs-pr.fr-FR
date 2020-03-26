@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes de déploiement de l’infrastructure d’identité pour Microsoft 365 Entreprise.
-ms.openlocfilehash: f32df9a35e09b438b5034ad963523879a639a3fc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0189da0814d1d526d9e07ad35dbbabcbfe82a4cd
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067324"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952029"
 ---
 # <a name="phase-2-identity"></a>Phase 2 : Identité
 
@@ -44,7 +44,7 @@ Pour plus d’informations sur les fonctionnalités d’identité de chaque offr
 
 Cette affiche en double page permet de bien comprendre les concepts et configurations d’identités pour Microsoft 365 Entreprise.
 
-Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/identity-infrastructure/M365E-ID-Infra.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a>Planifier et déployer votre infrastructure d’identités de Microsoft 365 Entreprise 
 

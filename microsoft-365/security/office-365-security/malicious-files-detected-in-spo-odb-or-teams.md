@@ -2,8 +2,8 @@
 title: Afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou Microsoft teams
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou teams et comment effectuer des actions sur ces fichiers.
-ms.openlocfilehash: 49c7e1668602a63b8b82339ad0cc7823146212a4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3a14c7d69c7081be6bd08840eb8f52c5e11d4be7
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599011"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955554"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou Microsoft teams
 
@@ -53,13 +53,13 @@ Pour afficher l’État et des informations détaillées sur les fichiers qui on
     
 4. Choisissez une action disponible.
     
-  - Choisissez **Release file** pour débloquer le fichier. 
-    
-    Sélectionnez **Envoyer le rapport à Microsoft** pour signaler le fichier comme faux positif à Microsoft. 
-    
-  - Choisissez **Télécharger un fichier** pour rechercher plus d’renseignements sur le fichier. 
-    
-  - Sélectionnez **supprimer de la quarantaine** pour supprimer le fichier de la liste des éléments mis en quarantaine. Si vous choisissez cette option, vous devez également supprimer le fichier de sa bibliothèque respective dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Cette option ne débloque pas l’ouverture ou le partage d’un fichier. 
+    - Choisissez **Release file** pour débloquer le fichier. 
+
+      Sélectionnez **Envoyer le rapport à Microsoft** pour signaler le fichier comme faux positif à Microsoft. 
+
+    - Choisissez **Télécharger un fichier** pour rechercher plus d’renseignements sur le fichier. 
+
+    - Sélectionnez **supprimer de la quarantaine** pour supprimer le fichier de la liste des éléments mis en quarantaine. Si vous choisissez cette option, vous devez également supprimer le fichier de sa bibliothèque respective dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Cette option ne débloque pas l’ouverture ou le partage d’un fichier. 
     
 5. Cliquez sur **Fermer** pour fermer les détails d’un élément sélectionné. 
   

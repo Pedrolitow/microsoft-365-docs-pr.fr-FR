@@ -2,8 +2,8 @@
 title: Afficher les rapports pour la protection avancée contre les menaces Office 365, les rapports de programmes malveillants, les rapports de hameçonnage, les comptes compromis, l’état de protection des URL, les rapports de menace, les menaces de rapports
 f1.keywords:
 - CSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 02/07/2020
 audience: ITPro
@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: 1531a70439ae1c093ee472923696895eda0bc644
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: d65df770b91faf4530701b982e8ba6fa15ddf333
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634082"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955508"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 

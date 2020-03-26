@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 76a4fe678ce0106c7345dd3bdf504673733b63b6
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266050"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955590"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Actions de correction suite à des enquêtes automatisées dans Microsoft Threat Protection
 
@@ -43,16 +43,16 @@ Le tableau suivant récapitule les actions de correction actuellement prises en 
 
 Les actions de correction, qu’elles soient en attente d’approbation ou qui sont déjà terminées, peuvent être affichées dans le [Centre de notifications](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 
-## <a name="verdicts-and-outcomes-following-automated-investigations"></a>Verdicts et résultats après des enquêtes automatisées
+## <a name="remediation-actions-follow-automated-investigations"></a>Les actions de correction suivent les enquêtes automatiques
 
 Lorsqu’un examen automatisé se termine, un verdict est atteint pour chaque élément de preuve impliqué et des actions de correction sont identifiées. Dans certains cas, des actions de correction sont effectuées automatiquement. dans d’autres cas, les actions de correction attendent une approbation. Le tableau suivant répertorie les verdicts et résultats possibles :
 
-|Verdict    |Domaine   |Résultats|
+|Verdict    |Domaine    |Résultats|
 |------|------|------|
-|Malveillant  |Appareils (points de terminaison)    |Les actions d'assainissement prennent automatiquement effet|
-|Malveillant  |Contenu de l’e-mail (URL ou pièces jointes) | Les actions de correction recommandées sont en attente d’approbation|
-|Suspect |Appareils ou contenu de l’e-mail |Les actions de correction recommandées sont en attente d’approbation|
-|Nettoyer  |Appareils ou contenu de l’e-mail   |Aucune action de correction n’est nécessaire|
+|Malveillant    |Appareils (points de terminaison)    |Les actions d'assainissement prennent automatiquement effet|
+|Malveillant    |Contenu de l’e-mail (URL ou pièces jointes) | Les actions de correction recommandées sont en attente d’approbation|
+|Suspect    |Appareils ou contenu de l’e-mail |Les actions de correction recommandées sont en attente d’approbation|
+|Aucune menace détectée    |Appareils ou contenu de l’e-mail    |Aucune action de correction n’est nécessaire|
 
 [Examiner une action en attente dans le centre de notifications](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 

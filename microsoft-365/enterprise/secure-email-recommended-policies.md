@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8370744d244ce424fa21e496e8dfd4f470de88e6
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084307"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959181"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 
@@ -40,10 +40,10 @@ Si vous avez inclus Exchange Online et Outlook dans l’étendue des stratégies
 
 |Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Référence**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation d’applications Cloud|
+|**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation d’applications Cloud|
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inclure Exchange Online dans l’affectation d’applications Cloud|
 |        |[Définir les stratégies de protection des applications](identity-access-policies.md#high-risk-users-must-change-password)|Assurez-vous qu’Outlook est inclus dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
-|        |[Exiger les applications approuvées](identity-access-policies.md#require-approved-apps)|Inclure Exchange Online dans la liste des applications Cloud|
+|        |[Exiger les applications qui prennent en charge les stratégies de protection des applications Intune](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Inclure Exchange Online dans la liste des applications Cloud|
 |        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure Exchange Online dans la liste des applications Cloud|
 |        |[Bloquer les clients ActiveSync](#block-activesync-clients)|Ajouter cette nouvelle stratégie| 
 |**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Inclure Exchange Online dans l’affectation d’applications Cloud|
@@ -52,31 +52,9 @@ Si vous avez inclus Exchange Online et Outlook dans l’étendue des stratégies
 
 ## <a name="block-activesync-clients"></a>Bloquer les clients ActiveSync
 
-Cette stratégie empêche les clients ActiveSync de contourner les autres règles d’accès conditionnel. La configuration de la règle s’applique uniquement aux clients ActiveSync. En sélectionnant **exiger l’application cliente approuvée**, cette stratégie bloque les clients ActiveSync. Pour configurer cette stratégie :
+Cette stratégie empêche les clients ActiveSync de contourner les autres règles d’accès conditionnel. La configuration de la règle s’applique uniquement aux clients ActiveSync. En sélectionnant **[exiger la stratégie de protection des applications](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, cette stratégie bloque les clients ActiveSync. Pour plus d’informations sur la création de cette stratégie, voir [require application protection Policy for Cloud App Access with ConditionalAttribute Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s’affiche.
-
-2. Dans le menu de gauche, choisissez **Azure Active Directory**.
-
-3. Sous la section **Sécurité**, choisissez **Accès conditionnel**.
-
-4. Choisissez **Nouvelle stratégie**.
-
-5. Entrez un nom de stratégie et choisissez les **Utilisateurs et groupes** auxquels vous souhaitez appliquer la stratégie.
-
-6. Choisissez **Applications cloud**.
-
-7. Sélectionnez **Sélectionner les applications**, sélectionnez **Office 365 Exchange Online**. Choisissez **Sélectionner** et **Terminer**.
-
-8. Choisissez **conditions**, puis **applications clientes**.
-
-9. Pour **configurer**, sélectionnez **Oui**. Vérifiez uniquement les éléments suivants : les **applications mobiles et les clients de bureau** et **les clients Exchange ActiveSync**. Choisissez **OK**.
-
-10. Choisissez **Accorder** dans la section **Contrôles d’accès**.
-
-11. Sélectionnez **accorder l’accès**, sélectionnez **demander une application client approuvée**.  Pour plusieurs contrôles, sélectionnez **exiger les contrôles sélectionnés**, puis choisissez **Sélectionner**.
-
-12. Sélectionnez **Créer**.
+1. Suivez « étape 2 : configuration d’une stratégie d’accès conditionnel Azure AD pour Exchange Online avec ActiveSync (EAS) » dans le [scénario 1 : les applications Office 365 nécessitent des applications approuvées avec des stratégies de protection d’application](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), ce qui empêche les clients Exchange ActiveSync qui utilisent l’authentification de base de se connecter à Exchange Online.
 
 ## <a name="setup-office-365-message-encryption"></a>Configurer le chiffrement de messages Office 365
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 pour entreprise dans votre organisation.
-ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9ea96af7cef0e497e8f7560ef87239828789b117
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067955"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951933"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Déployer Microsoft 365 pour entreprise
 
@@ -95,7 +95,7 @@ Pour tirer le meilleur parti de la migration de l’ensemble de votre organisati
 
 Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 pour entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
 
-Vous pouvez également [télécharger cette affiche de transition](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez également [télécharger cette affiche de transition](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="how-did-others-do-it"></a>Comment d’autres ont-ils procédé ?
 

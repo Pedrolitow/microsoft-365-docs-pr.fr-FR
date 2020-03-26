@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Découvrez comment renouveler votre abonnement Office 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
-ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633702"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959215"
 ---
 # <a name="renew-office-365-for-business"></a>Réactiver ou renouveler un abonnement Office 365 Entreprise
 
 [] Cet article s'applique uniquement à la plupart des abonnements Office 365 pour les entreprises payants.
   
-Pour renouveler votre abonnement à l’aide d’une clé de produit achetée auprès d’un détaillant ou d’un partenaire Office 365, consultez [EFind et entrez votre clé de produit](../enter-your-product-key.md).
+Pour renouveler un abonnement à l’aide d’une clé de produit achetée auprès d’un détaillant ou d’un partenaire Office 365, voir [Rechercher et entrer votre clé de produit](../enter-your-product-key.md).
 
 > [!NOTE]
 > Le paiement par compte bancaire n’est pas disponible dans certains pays ou certaines régions.
@@ -51,7 +51,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Choisissez l’abonnement pour lequel vous souhaitez gérer la facturation périodique.
  
@@ -70,7 +70,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-germany"
   
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
     Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
@@ -93,7 +93,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-21vianet"
   
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
     Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
@@ -118,9 +118,9 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 [Réactiver votre abonnement](reactivate-your-subscription.md)
   
-[Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+[Ajouter, mettre à jour ou supprimer une carte de crédit ou un compte bancaire](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
-[Qu’arrive-t-il à mes données et à l’accès quand mysubscription se termine ?](what-if-my-subscription-expires.md)
+[Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md)
 
 [Ajouter, mettre à jour ou supprimer vos modes de paiement](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 

@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Découvrez comment gérer vos modes de paiement dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 49f1c0847ef53bea9a16a6aedb20f7d3a96d6e2c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409699"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952005"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Ajouter, mettre à jour ou supprimer vos modes de paiement
 
@@ -66,7 +66,7 @@ Vous pouvez modifier le mode de paiement utilisé pour payer un seul abonnement.
 
 ### <a name="change-the-payment-method-used-for-a-single-subscription"></a>Modifier le mode de paiement utilisé pour un abonnement unique
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 2. Sélectionnez l’abonnement que vous souhaitez payer avec la nouvelle carte ou le nouveau compte bancaire. Sous **facturation**, en regard de mode de paiement, sélectionnez **modifier**.
 3. En regard de votre mode de paiement existant, sélectionnez **modifier**.
 4. Dans le menu déroulant, sélectionnez un autre mode de paiement ou choisissez d’ajouter un mode de paiement.
@@ -107,7 +107,7 @@ Si votre mode de paiement est associé à des abonnements et que vous n’avez p
 6. Sélectionnez le nouveau mode de paiement dans la liste déroulante, puis sélectionnez **modifier**.
     > [!WARNING]
     > Cette opération déplace tous les abonnements vers le nouveau mode de paiement.
-7. Sélectionnez **supprimer**.
+7. Sélectionnez **Supprimer**.
 
 ### <a name="change-the-payment-method-used-to-pay-for-subscriptions"></a>Modifier le mode de paiement utilisé pour payer les abonnements
 
@@ -120,7 +120,7 @@ Si votre mode de paiement est associé à des abonnements et que vous disposez d
 5. Sélectionnez un autre mode de paiement dans la liste déroulante, puis sélectionnez **modifier**.
     > [!WARNING]
     > Cette opération déplace tous les abonnements à l’autre mode de paiement.
-6. Sélectionnez **supprimer**.
+6. Sélectionnez **Supprimer**.
 
 ### <a name="change-the-payment-method-for-a-billing-profile"></a>Modifier le mode de paiement pour un profil de facturation
 
@@ -158,9 +158,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 [] Pour effectuer les tâches décrites dans cet article, vous devez être administrateur général ou administrateur de facturation.
   
  **Vous n'êtes pas administrateur ?** Contactez votre administrateur informatique pour obtenir de l’aide. [Qui dispose des autorisations d’administrateur dans mon entreprise ?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- **Pour Office 365 famille ou personnel**, consultez [la rubrique modifier le mode de paiement ou la carte de crédit liée à votre compte Microsoft](https://support.microsoft.com/help/4026594).
-  
+
 > [!NOTE]
 > L’option de paiement avec un compte bancaire n’est pas disponible dans certains pays ou certaines régions.
 >
@@ -168,7 +166,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 
 ## <a name="add-a-credit-card-or-bank-account"></a>Ajouter une carte bancaire ou un compte bancaire
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez payer avec la nouvelle carte bancaire ou le nouveau compte bancaire, puis sélectionnez **mettre à jour les détails du paiement**.
 
@@ -181,7 +179,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 4. Entrez les informations sur la nouvelle carte bancaire ou le nouveau compte bancaire, puis sélectionnez **Envoyer**.
 
     > [!NOTE]
-    > La nouvelle carte de crédit ou le nouveau compte bancaire ne sera utilisé que pour l’abonnement Office 365 que vous avez choisi à l’étape 2. Si vous avez d'autres abonnements pour lesquels vous voulez utiliser la nouvelle carte bancaire ou le nouveau compte bancaire, suivez les étapes décrites dans cet article pour modifier la carte bancaire ou le compte bancaire utilisé pour payer chaque abonnement.
+    > La nouvelle carte de crédit ou le nouveau compte bancaire ne sera utilisé que pour l’abonnement que vous avez choisi à l’étape 2. Si vous avez d'autres abonnements pour lesquels vous voulez utiliser la nouvelle carte bancaire ou le nouveau compte bancaire, suivez les étapes décrites dans cet article pour modifier la carte bancaire ou le compte bancaire utilisé pour payer chaque abonnement.
 
 ::: moniker-end
 
@@ -192,14 +190,12 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
   
  **Vous n'êtes pas administrateur ?** Demandez de l'aide à votre administrateur informatique. [Au sein de mon entreprise, qui dispose d'autorisations d'administration ?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
   
- **Pour Office 365 famille ou personnel**, consultez [la rubrique modifier le mode de paiement ou la carte de crédit liée à votre compte Microsoft](https://support.microsoft.com/help/4026594).
-  
 > [!NOTE]
 > L’option de paiement avec un compte bancaire n’est pas disponible dans certains pays ou certaines régions.
 >
 > Vous devez utiliser une carte de crédit émise à partir du même pays que votre client.
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez payer avec la nouvelle carte bancaire ou le nouveau compte bancaire, puis sélectionnez **mettre à jour les détails du paiement**.
 
@@ -212,7 +208,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 4. Entrez les informations sur la nouvelle carte bancaire ou le nouveau compte bancaire, puis sélectionnez **Envoyer**.
 
     > [!NOTE]
-    > La nouvelle carte de crédit ou le nouveau compte bancaire ne sera utilisé que pour l’abonnement Office 365 que vous avez choisi à l’étape 2. Si vous avez d'autres abonnements pour lesquels vous voulez utiliser la nouvelle carte bancaire ou le nouveau compte bancaire, suivez les étapes décrites dans cet article pour modifier la carte bancaire ou le compte bancaire utilisé pour payer chaque abonnement.
+    > La nouvelle carte de crédit ou le nouveau compte bancaire ne sera utilisé que pour l’abonnement que vous avez choisi à l’étape 2. Si vous avez d'autres abonnements pour lesquels vous voulez utiliser la nouvelle carte bancaire ou le nouveau compte bancaire, suivez les étapes décrites dans cet article pour modifier la carte bancaire ou le compte bancaire utilisé pour payer chaque abonnement.
 
 ::: moniker-end
 
@@ -223,7 +219,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 > Vous ne pouvez pas modifier le numéro d'une carte bancaire ou d'un compte bancaire existant. Si le numéro de carte de crédit ou de compte bancaire a changé, ajoutez-le en tant que nouvelle carte bancaire ou compte bancaire. Ensuite, sélectionnez-le en tant qu’option de paiement pour votre abonnement, puis supprimez la carte bancaire ou le compte bancaire existant.
 > Vous devez utiliser une carte de crédit émise à partir du même pays que votre client.
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous avez acheté avec le compte bancaire que vous souhaitez mettre à jour, puis sélectionnez **mettre à**jour les détails du paiement.
 
@@ -251,7 +247,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 > Vous ne pouvez pas modifier le numéro d'une carte bancaire ou d'un compte bancaire existant. Si le numéro de carte de crédit ou de compte bancaire a changé, ajoutez-le en tant que nouvelle carte bancaire ou compte bancaire. Ensuite, sélectionnez-le en tant qu’option de paiement pour votre abonnement, puis supprimez la carte bancaire ou le compte bancaire existant.
 > Vous devez utiliser une carte de crédit émise à partir du même pays que votre client.
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous avez acheté avec le compte bancaire que vous souhaitez mettre à jour, puis sélectionnez **mettre à**jour les détails du paiement.
 
@@ -275,7 +271,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 ::: moniker range="o365-21vianet"
 ## <a name="remove-a-credit-card-or-bank-account"></a>Supprimer une carte bancaire ou un compte bancaire
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez n’importe quel abonnement, puis **mettre à jour les détails du paiement**.
 
@@ -300,7 +296,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 ::: moniker range="o365-germany"
 ## <a name="remove-a-credit-card-or-bank-account"></a>Supprimer une carte bancaire ou un compte bancaire
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez n’importe quel abonnement, puis **mettre à jour les détails du paiement**.
 
@@ -325,7 +321,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 ::: moniker range="o365-21vianet"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>Modifier la carte bancaire ou le compte bancaire utilisé pour payer un abonnement
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez payer avec la nouvelle carte de crédit ou le nouveau compte bancaire, puis sélectionnez **mettre à jour les détails du paiement**.
 
@@ -342,7 +338,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
 ::: moniker range="o365-germany"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>Modifier la carte bancaire ou le compte bancaire utilisé pour payer un abonnement
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez payer avec la nouvelle carte de crédit ou le nouveau compte bancaire, puis sélectionnez **mettre à jour les détails du paiement**.
 

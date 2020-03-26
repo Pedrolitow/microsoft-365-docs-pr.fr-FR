@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826402"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955570"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
@@ -92,7 +92,7 @@ Chaque étape de haut niveau inclut un certain nombre de sous-étapes qui sont e
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exemple : un message hameçon signalé par un utilisateur lance un manuel d’enquête.
 
-Lorsqu’un utilisateur de votre organisation soumet un message électronique et le signale à Microsoft à l’aide du [complément de message de rapport pour Outlook ou Outlook Web App](enable-the-report-message-add-in.md), le rapport est également envoyé à votre système et est visible dans l’Explorateur dans la vue signalée par l’utilisateur. Ce message signalée par l’utilisateur déclenche désormais une alerte d’information basée sur le système, qui lance automatiquement le manuel d’enquête.
+Supposons qu’un utilisateur de votre organisation reçoit un message indiquant qu’il s’agit d’une tentative de hameçonnage. L’utilisateur, formé pour signaler de tels messages, utilise le [complément de message de rapport pour Outlook ou Outlook Web App](enable-the-report-message-add-in.md) pour l’envoyer à Microsoft pour analyse. L’envoi est également envoyé à votre système et est visible dans l’Explorateur dans l’affichage des **soumissions** (anciennement appelé vue **signalée** par l’utilisateur). En outre, le message signalée par l’utilisateur déclenche désormais une alerte d’information basée sur le système, qui lance automatiquement le manuel d’enquête.
 
 Lors de la phase d’enquête de racine, différents aspects du courrier électronique sont évalués. Cela inclut ce qui suit :
 - Détermination du type de menace susceptible de se présenter ;
@@ -121,13 +121,13 @@ La correction est la phase finale du manuel. Pendant cette phase, les étapes de
 
 En plus des recherches automatiques déclenchées par une alerte, l’équipe des opérations de sécurité de votre organisation peut déclencher une enquête automatique à partir d’une vue dans l' [Explorateur de menaces](threat-explorer.md).
 
-Par exemple, supposons que vous affichiez des données dans l’Explorateur à propos des messages signalés par l’utilisateur. Vous pouvez sélectionner un élément dans la liste des résultats, puis cliquer sur **Rechercher** dans le menu Action (en supposant que vous disposez des autorisations de correction appropriées).
+Par exemple, supposons que vous utilisiez l’affichage **programmes malveillants** dans l’Explorateur de menaces. À l’aide des onglets situés sous le graphique, sélectionnez l’onglet **courrier électronique** . Si vous sélectionnez un ou plusieurs éléments dans la liste, le bouton **+ actions** est activé. 
 
-![Messages signalés par l’utilisateur dans l’Explorateur avec le bouton Rechercher](../../media/Explorer-UserReported-Investigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Explorateur avec des messages sélectionnés":::
 
-Autre exemple : Supposons que vous affichiez des données sur les messages électroniques détectés comme contenant des programmes malveillants, et que plusieurs messages électroniques soient détectés comme contenant des programmes malveillants. Vous pouvez sélectionner l’onglet **courrier électronique** , sélectionner un ou plusieurs messages, puis, dans le menu **actions** , sélectionner **examiner**. 
+Dans le menu **actions** , vous pouvez sélectionner l' **enquête du déclencheur**.
 
-![Démarrage d’une enquête pour les programmes malveillants dans l’Explorateur](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Menu actions pour les messages sélectionnés":::
 
 À l’instar des règles déclenchées par une alerte, les recherches automatiques déclenchées à partir d’une vue dans l’Explorateur incluent une enquête de racine, des étapes permettant d’identifier et de corréler les menaces, ainsi que les actions recommandées pour atténuer ces menaces.
 

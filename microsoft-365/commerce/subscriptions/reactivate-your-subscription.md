@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: Découvrez comment réactiver votre abonnement Office 365 lorsqu’il arrive à expiration, ou si Microsoft le désactive, ou si vous l’annulez au milieu.
-ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Découvrez comment réactiver votre abonnement lorsqu’il arrive à expiration, ou si Microsoft le désactive, ou si vous l’annulez au milieu.
+ms.openlocfilehash: 6126c9ccc05a1ee0927f928b045bd1c383479893
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354605"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952041"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
 
@@ -43,7 +43,7 @@ Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Dans la page **produits & services** , recherchez l’abonnement que vous souhaitez réactiver. Dans la section **facturation** , sélectionnez **réactiver**.
   
@@ -63,7 +63,7 @@ Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’
 
 ::: moniker range="o365-germany"
   
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Recherchez l’abonnement que vous souhaitez réactiver, puis sélectionnez **réactiver**.
 
@@ -84,7 +84,7 @@ Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’
 
 ::: moniker range="o365-21vianet"
   
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Recherchez l’abonnement que vous souhaitez réactiver, puis sélectionnez **réactiver**.
 

@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4c72e340092bbd366277114a56aae7574d43dab5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 052edafa64f2704fb5a6df525b0ad5609ddc72b9
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085081"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959193"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers teams
 
@@ -51,8 +51,8 @@ Il s’agit des services dépendants à inclure dans l’affectation d’applica
 
 - Microsoft Teams
 - Sharepoint Online et OneDrive Entreprise
-- Exchange Online
-- Skype Entreprise Online
+- Exchange Online
+- Skype Entreprise Online
 - Microsoft Stream (enregistrements de réunions)
 - Planificateur Microsoft (tâches du planificateur et données de plan)
 
@@ -60,11 +60,11 @@ Ce tableau répertorie les stratégies qui doivent être revisitées, ainsi que 
 
 |Niveau de protection|Stratégies|Informations supplémentaires pour l’implémentation de teams|
 |:---------------|:-------|:----------------|
-|**Référence**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications. Les équipes disposent également d’un accès invité et de règles d’accès externe à prendre en compte pour en savoir plus à ce sujet plus loin dans cet article.|
+|**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications. Les équipes disposent également d’un accès invité et de règles d’accès externe à prendre en compte pour en savoir plus à ce sujet plus loin dans cet article.|
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluez les équipes et les services dépendants dans l’affectation d’applications Cloud.|
 |        |[Les utilisateurs à haut risque doivent changer leur mot de passe](identity-access-policies.md#high-risk-users-must-change-password)|Force les utilisateurs de teams à modifier leur mot de passe lors de la connexion si une activité à haut risque est détectée pour leur compte. Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications.|
 |        |[Définir les stratégies de protection des applications](identity-access-policies.md#define-app-protection-policies)|Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications. Mettez à jour la stratégie pour chaque plateforme (iOS, Android, Windows).|
-|        |[Exiger les applications approuvées](identity-access-policies.md#require-approved-apps)|Incluez les équipes et les services dépendants dans cette stratégie.|
+|        |[Exiger les applications qui prennent en charge les stratégies de protection des applications Intune](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Incluez les équipes et les services dépendants dans cette stratégie.|
 |        |[Définir les stratégies de conformité des appareils](identity-access-policies.md#define-device-compliance-policies)|Incluez les équipes et les services dépendants dans cette stratégie.|
 |        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluez les équipes et les services dépendants dans cette stratégie.|
 |**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Les équipes disposent également d’un accès invité et de règles d’accès externe à prendre en compte pour en savoir plus à ce sujet plus loin dans cet article. Incluez les équipes et les services dépendants dans cette stratégie.|

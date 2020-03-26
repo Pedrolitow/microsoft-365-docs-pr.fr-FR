@@ -23,20 +23,20 @@ search.appverid:
 - BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: Découvrez comment ajouter des licences à votre abonnement Office 365.
-ms.openlocfilehash: 93c2929ae575282716cad7b6f64519f5974e3158
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Découvrez comment ajouter des licences à votre abonnement.
+ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242344"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951945"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Ajouter des licences ou prolonger un abonnement payé pour l’utilisation d’une clé de produit
 
 Les licences prépayées vous sont émises sous la forme d’un code alphanumérique de 25 caractères. Une fois que vous avez acheté les licences dont vous avez besoin, vous pouvez les ajouter à votre abonnement. Vous pouvez également utiliser une clé de produit pour prolonger la date d’expiration de votre abonnement.
 
 > [!NOTE]
-> Si vous ne souhaitez pas acheter une nouvelle clé de produit, vous pouvez toujours choisir d’ajouter une carte bancaire ou un compte bancaire à votre abonnement afin de payer plus de licences ou de prolonger la date d’expiration de votre abonnement. Pour plus d’informations, reportez-vous à la rubrique [renouveler Office 365 pour les entreprises](../subscriptions/renew-your-subscription.md).
+> Si vous ne souhaitez pas acheter une nouvelle clé de produit, vous pouvez toujours choisir d’ajouter une carte bancaire ou un compte bancaire à votre abonnement afin de payer plus de licences ou de prolonger la date d’expiration de votre abonnement. Pour plus d’informations, consultez [la rubrique renouveler votre abonnement](../subscriptions/renew-your-subscription.md).
   
 ## <a name="add-licenses-to-your-subscription"></a>Ajouter des licences à votre abonnement
 
@@ -45,7 +45,7 @@ Les licences prépayées vous sont émises sous la forme d’un code alphanumér
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Recherchez l’abonnement auquel vous souhaitez ajouter des licences. Dans la section **licences** , sélectionnez **ajouter d’autres licences**.
 
@@ -62,7 +62,7 @@ Les licences prépayées vous sont émises sous la forme d’un code alphanumér
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits et services</a>.
 
 2. Recherchez l’abonnement auquel vous souhaitez ajouter des licences. Sélectionnez la liste déroulante **actions supplémentaires** , puis cliquez sur **renouveler ou sur Ajouter une licence avec un jeton**.
 
@@ -105,7 +105,7 @@ Les licences prépayées vous sont émises sous la forme d’un code alphanumér
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Recherchez l’abonnement que vous souhaitez étendre. Dans la section **facturation** , sélectionnez **prolonger la date de fin**.
 
@@ -122,7 +122,7 @@ Les licences prépayées vous sont émises sous la forme d’un code alphanumér
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits et services</a>.
 
 2. Recherchez l’abonnement que vous souhaitez étendre. Sélectionnez la liste déroulante **actions supplémentaires** , puis cliquez **sur renouveler ou sur Ajouter une licence avec un jeton**.
 
@@ -141,7 +141,7 @@ Les licences prépayées vous sont émises sous la forme d’un code alphanumér
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits et services</a>.
 
 2. Recherchez l’abonnement que vous souhaitez étendre. Sélectionnez la liste déroulante **actions supplémentaires** , puis cliquez **sur renouveler ou sur Ajouter une licence avec un jeton**.
 

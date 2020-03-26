@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 272e8a76cdb3a1555f561bd56e63422f14394904
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 772c4c5785115995593a4946bfbac49312ad15f3
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067407"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959227"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
@@ -43,11 +43,11 @@ Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de me
 
 |Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Référence**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
+|**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les règles d’accès conditionnel, c’est pourquoi il est important de bloquer ces|
 |        |[Les utilisateurs à haut risque doivent changer leur mot de passe](#high-risk-users-must-change-password)|Force les utilisateurs à modifier leur mot de passe lors de la connexion en cas de détection d’une activité à haut risque pour leur compte.|
 |        |[Définir les stratégies de protection des applications](#define-app-protection-policies)|Une stratégie par plateforme (iOS, Android, Windows).|
-|        |[Exiger les applications approuvées](#require-approved-apps)|Applique la protection des applications mobiles pour les téléphones et les tablettes|
+|        |[Exiger les applications qui prennent en charge les stratégies de protection des applications Intune](#require-apps-that-support-intune-app-protection-policies)|Applique la protection des applications mobiles pour les téléphones et les tablettes|
 |        |[Définir les stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme|
 |        |[Exiger des PC conformes](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applique la gestion Intune des PC|
 |**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
@@ -104,7 +104,7 @@ Appliquez les paramètres en fonction du niveau de protection que vous ciblez.
 
 |Propriété|Niveau de protection|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Niveau de risque|Référence|Élevé, moyen|Cocher les deux|
+|Niveau de risque|Baseline|Élevé, moyen|Cocher les deux|
 | |Sensible|Élevé, moyen, faible|Cocher les trois|
 | |Hautement réglementé| |Laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur|
 
@@ -179,7 +179,7 @@ Connectez-vous au [portail Microsoft Azure (https://portal.azure.com)](https://p
 | Type | Propriétés | Valeurs                  | Remarques |
 |:-----|:-----------|:------------------------|:------|
 |      | Access     | Autoriser l'accès            | Vrai  |
-|      | Access     | Exiger le changement du mot de passe | True  |
+|      | Accès     | Exiger le changement du mot de passe | True  |
 
 **Révision :** non applicable
 
@@ -187,87 +187,41 @@ Connectez-vous au [portail Microsoft Azure (https://portal.azure.com)](https://p
 > N’oubliez pas d’activer cette stratégie en sélectionnant **activé**. Vous pouvez également utiliser l’outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
 
 ## <a name="define-app-protection-policies"></a>Définir les stratégies de protection des applications
-Les stratégies de protection des applications définissent les applications autorisées et les actions qu’elles peuvent effectuer sur les données de votre organisation. Créez des stratégies Intune App protection à partir du portail Azure. 
+Les stratégies de protection des applications (APP) définissent les applications autorisées et les actions qu’elles peuvent effectuer sur les données de votre organisation. Les choix disponibles dans l’application permettent aux organisations de personnaliser la protection en fonction de leurs besoins spécifiques. Pour certains, il se peut que les paramètres de stratégie requis pour implémenter un scénario complet ne soient pas évidents. Pour aider les organisations à hiérarchiser le renforcement des points de terminaison des clients mobiles, Microsoft a introduit la taxonomie de son application Data Protection Framework pour iOS et Android Mobile App Management. 
 
-Créez une stratégie pour chaque plateforme :
-- iOS
-- Android
-- Windows 10
+L’infrastructure Data Protection Framework est organisée en trois niveaux de configuration distincts, chaque niveau étant créé à partir du niveau précédent : 
 
-Pour créer une stratégie de protection des applications, connectez-vous au portail Microsoft Azure avec vos informations d’identification d’administrateur, puis accédez à >  **applications clientes****stratégies de protection**des applications. Choisissez **créer une stratégie**.
+- La protection des données de base d’entreprise garantit que les applications sont protégées par un code confidentiel et qu’elles sont chiffrées et effectue des opérations de réinitialisation sélective. Pour les appareils Android, ce niveau valide l’attestation d’appareil Android. Il s’agit d’une configuration de niveau d’entrée qui fournit un contrôle de protection des données similaire dans les stratégies de boîte aux lettres Exchange Online et l’affiche, ainsi que la population de l’utilisateur vers l’application. 
+- Enterprise Enhanced Data Protection introduit les mécanismes de prévention des fuites de données d’application et les exigences minimales de système d’exploitation. Il s’agit de la configuration applicable à la plupart des utilisateurs mobiles qui accèdent aux données professionnelles ou scolaires. 
+- Enterprise High Data Protection introduit des mécanismes de protection avancée des données, une configuration de code confidentiel améliorée et une défense contre les menaces pour les applications mobiles. Cette configuration est souhaitable pour les utilisateurs qui accèdent à des données à haut risque. 
 
-Les options de stratégie de protection des applications présentent de légères différences entre iOS et Android. La stratégie ci-dessous est conçue spécifiquement pour Android. Utilisez-le comme guide pour vos autres stratégies.
+Pour voir les recommandations spécifiques pour chaque niveau de configuration et les applications minimales à protéger, examinez [Data Protection Framework à l’aide de stratégies de protection des applications](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
 
-La liste d’applications recommandée inclut les éléments suivants :
-- PowerPoint
-- Excel
-- Word
-- Microsoft Teams
-- Microsoft SharePoint
-- Visionneuse Microsoft Visio
-- OneDrive
-- OneNote
-- Outlook
+À l’aide des principes décrits dans les [configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de protection de base et sensibles sont mappés en étroite collaboration avec les paramètres de protection avancée des données de niveau 2 entreprise. Le niveau de protection hautement réglementé est étroitement associé aux paramètres de protection des données élevés de niveau 3.
 
-Les tableaux suivants décrivent les paramètres recommandés :
+|Niveau de protection |Stratégie de protection des applications  |Plus d’informations  |
+|---------|---------|---------|
+|Baseline     | [Niveau 2 protection des données améliorée](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou met à jour uniquement les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
+|Sensible     | [Niveau 2 protection des données améliorée](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou met à jour uniquement les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.        |
+|Hautement réglementé     | [Niveau 3 entreprise protection élevée des données](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et 2 et ajoutent ou met à jour uniquement les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.        |
 
-|Type|Propriétés|Valeurs|Remarques|
-|:---|:---------|:-----|:----|
-|Réadressage des données|Interdire la sauvegarde Android|Oui|Sur iOS, ceci appelle spécifiquement iTunes et iCloud|
-||Autoriser l'application à transférer des données vers d'autres applications|Applications gérées par la stratégie||
-||Autoriser l'application à recevoir des données d'autres applications|Applications gérées par la stratégie||
-||Interdire l’option Enregistrer sous|Oui||
-||Sélectionnez dans quels services de stockage les données d'entreprise peuvent être enregistrées|OneDrive entreprise, SharePoint||
-||Restreindre les opérations Couper, Copier et Coller avec d’autres applications|Applications gérées par une stratégie avec l’application de collage||
-||Afficher le contenu web uniquement dans Managed Browser|Non||
-||Chiffrer les données de l'application|Oui|Sur iOS, sélectionner l’option Quand l’appareil est verrouillé|
-||Désactiver le chiffrement d’application lorsque l’appareil est activé|Oui|Désactivez ce paramètre pour éviter le double chiffrement|
-||Désactiver la synchronisation des contacts|Non||
-||Désactiver l’impression|Non||
-|Accès|Exiger un code confidentiel d’accès|Oui||
-||Sélectionner un type|Numérique||
-||Autoriser un code PIN simple|Non||
-||Longueur du code PIN|6 ||
-||Autoriser une empreinte digitale à la place du code confidentiel|Oui||
-||Désactiver le code confidentiel de l’application lorsque le code confidentiel de l’appareil est géré|Oui||
-||Exiger des informations d’identification d’entreprise pour l’accès|Non||
-||Revérifier l’exigence d’accès après (minutes)|0,30||
-||Bloquer la capture d’écran et l’Assistant Android|Non|Sur iOS, cette option n’est pas disponible|
-|Exigences en matière de sécurité de connexion|Nombre maximal de tentatives de code confidentiel|5 |Réinitialiser le code confidentiel|
-||Période de grâce hors connexion|720|Bloquer l’accès|
-||Intervalle hors connexion (jours) avant la réinitialisation des données d'application|90|Effacer les données|
-||Un jailbreak/périphériques enracinés| |Effacer les données|
+Pour créer une stratégie de protection des applications pour chaque plateforme (iOS et Android) dans le gestionnaire de points de terminaison de Microsoft à l’aide des paramètres Data Protection Framework, les administrateurs peuvent :
+1. Créez manuellement les stratégies en suivant les étapes de la [procédure de création et de déploiement des stratégies de protection des applications avec Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies).
+2. Importez les modèles JSON de l’exemple de [configuration de stratégie de protection des applications Intune App](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) avec les [scripts PowerShell d’Intune](https://github.com/microsoftgraph/powershell-intune-samples).
 
-Lorsque vous avez terminé, n’oubliez pas de sélectionner « créer ». Répétez les étapes ci-dessus et remplacez la plateforme sélectionnée (dropdown) par iOS. Cela crée deux stratégies d’application, de sorte qu’une fois la stratégie créée, affectez des groupes à la stratégie et déployez-la.
+## <a name="require-apps-that-support-intune-app-protection-policies"></a>Exiger les applications qui prennent en charge les stratégies de protection des applications Intune
+Grâce à l’accès conditionnel, les organisations peuvent restreindre l’accès aux applications clientes iOS et Android approuvées (Modern Authentication compatible) avec les stratégies Intune App protection appliquées. Plusieurs stratégies d’accès conditionnel sont requises, chaque stratégie ciblant tous les utilisateurs potentiels. Pour plus d’informations sur la création de ces stratégies, voir [require application protection Policy for Cloud App Access with ConditionalAttribute Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-Pour modifier les stratégies et affecter ces stratégies aux utilisateurs, voir [comment créer et affecter des stratégies de protection des applications](https://docs.microsoft.com/intune/app-protection-policies). 
+1. Suivez « étape 1 : configurer une stratégie d’accès conditionnel Azure AD pour Office 365 » dans le [scénario 1 : les applications office 365 nécessitent des applications approuvées avec des stratégies de protection d’application](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), ce qui permet d’utiliser Outlook pour iOS et Android, mais empêche les clients Exchange ActiveSync compatibles OAuth de se connecter à Exchange Online.
 
-## <a name="require-approved-apps"></a>Exiger les applications approuvées
-Pour exiger des applications approuvées :
+   > [!NOTE]
+   > Cette stratégie permet aux utilisateurs mobiles d’accéder à tous les points de terminaison Office à l’aide des applications applicables.
 
-1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s’affiche.
+2. Si vous activez l’accès mobile à Exchange Online, implémentez [bloquer les clients ActiveSync] (Secure-email-Recommended-Policies. MD # Block-ActiveSync-clients), ce qui empêche les clients Exchange ActiveSync qui utilisent l’authentification de base de se connecter à Exchange Online.
 
-2. Dans le menu de gauche, choisissez **Azure Active Directory**.
+   Les stratégies ci-dessus exploitent les contrôles d’octroi [nécessitent une application client approuvée](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) et [nécessitent une stratégie de protection des applications](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-3. Sous la section **Sécurité**, choisissez **Accès conditionnel**.
-
-4. Choisissez **Nouvelle stratégie**.
-
-5. Entrez un nom de stratégie et choisissez les **Utilisateurs et groupes** auxquels vous souhaitez appliquer la stratégie.
-
-6. Choisissez **Applications cloud**.
-
-7. Sélectionnez **Sélectionner les applications**, sélectionnez les applications souhaitées dans la liste **applications Cloud** . Par exemple, sélectionnez Office 365 Exchange Online. Choisissez **Sélectionner** et **Terminer**.
-
-8. Sélectionnez **conditions**, sélectionnez **plateformes d’appareils**, puis sélectionnez **configurer** .
-
-9. Sous **inclure**, choisissez **Sélectionner les plateformes**de l’appareil, sélectionnez **Android** et **iOS**. Cliquez **** sur OK **, puis** de nouveau sur Terminer.
-
-10. Choisissez **Accorder** dans la section **Contrôles d’accès**.
-
-11. Sélectionnez **accorder l’accès**, sélectionnez **demander une application client approuvée**. Pour plusieurs contrôles, sélectionnez **exiger les contrôles sélectionnés**, puis choisissez **Sélectionner**. 
-
-12. Sélectionnez **Créer**.
+3. Désactivez l’authentification héritée pour les autres applications clientes sur les appareils iOS et Android. Pour plus d’informations, consultez la rubrique [bloquer les clients qui ne prennent pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication).
 
 ## <a name="define-device-compliance-policies"></a>Définir des stratégies de conformité des appareils
 
@@ -307,13 +261,13 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Mot de passe|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
+|Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
 ||Mots de passe simples|Bloc||
 ||Type de mot de passe|Valeur par défaut du périphérique||
-||Longueur minimale du mot de passe|6 ||
-||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
+||Longueur minimale du mot de passe|6 ||
+||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
 ||Expiration du mot de passe (jours)|41||
-||Nombre de mots de passe précédents pour empêcher la réutilisation|5 ||
+||Nombre de mots de passe précédents pour empêcher la réutilisation|5 ||
 ||Exiger un mot de passe lorsque l’appareil revient de l’état inactif (mobile et holographique)|Require (Rendre obligatoire)|Disponible pour Windows 10 et versions ultérieures|
 |Chiffrement|Chiffrement du stockage des données sur l’appareil|Require (Rendre obligatoire)||
 |Sécurité de l’appareil|-|Require (Rendre obligatoire)||
