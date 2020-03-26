@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 446af9ad49649487f4df1982613f8e84fdf39910
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 22693bbf8acdf8872b621ae214dd8d7a62b98b40
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857190"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929549"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -119,6 +119,7 @@ Vous devrez probablement affecter les rôles suivants au sein de votre organisat
 |Administrateur Power BI    |   Accès complet aux tâches de gestion de Power BI, gère les demandes de service et surveille l’état d’intégrité du service.   |
 |Administrateur de plateformes Power     |    Accès total aux stratégies de protection contre la perte de données, à Microsoft Dynamics 365, PowerApps et Microsoft Flow.     |
 |Administrateur de rôle privilégié     |    Gère les affectations de rôle et accès total à toutes les fonctionnalités de contrôle de la Gestion des identités privilégiées.     |
+|Administrateur d'authentification privilégié     |    Réinitialise les mots de passe, met à jour les informations d’identification autres que les mots de passe, oblige les utilisateurs à se déconnecter et surveille l’état d’intégrité du service et gère les demandes de service.     |
 |Lecteur de rapports     |   Lit les données des rapports d’utilisation du tableau de bord des rapports, du pack de contenu Adoption de PowerBI, des rapports de connexion et de l’API de création de rapports Microsoft Graph.      |
 |Administrateur de recherche     |    Accès total à la Recherche Microsoft, attribue les rôles d’administrateur de recherche et d’éditeur de recherche, gère le contenu éditorial, surveille l’intégrité du service et crée des demandes de service.     |
 |Éditeur de recherche     |    Peut uniquement créer, modifier et supprimer du contenu pour la Recherche Microsoft, tel que les signets, Q&R et les emplacements.     |
