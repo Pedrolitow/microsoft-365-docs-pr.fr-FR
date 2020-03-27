@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Si un ancien employé revient à votre organisation, ou si un nouvel employé est embauché pour prendre en charge les responsabilités d’un employé à l’origine de la demande, vous pouvez récupérer le contenu de la boîte aux lettres inactive dans Office 365. Lorsque vous récupérez une boîte aux lettres inactive, elle est convertie en une nouvelle boîte aux lettres qui contient le contenu de la boîte aux lettres inactive. '
-ms.openlocfilehash: f7e7b36a1f1a3258cac18b84c3c8881355ecbb43
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5048df8c17f4f44c1bbed33753da51dac53c7789
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070091"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978144"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Récupérer une boîte aux lettres inactive dans Office 365
 
@@ -32,9 +32,6 @@ Une boîte aux lettres inactive (c'est-à-dire un type de boîte aux lettres sup
 - **Restaurer une boîte aux lettres inactive** Si un autre employé assume les responsabilités de l’ancien employé ou si un autre utilisateur a besoin d’accéder au contenu de la boîte aux lettres inactive, vous pouvez restaurer (ou fusionner) le contenu de la boîte aux lettres inactive vers une boîte aux lettres existante. Vous pouvez également restaurer l'archive d'une boîte aux lettres inactive. Pour connaître les procédures de cette méthode, consultez la rubrique [restaurer une boîte aux lettres inactive dans Office 365](restore-an-inactive-mailbox.md).
     
 Consultez la section [Plus d'informations](#more-information) pour obtenir d'autres détails concernant les différences entre la restauration et la récupération d'une boîte aux lettres inactive et une description de la récupération d'une boîte aux lettres inactive.
-  
-> [!NOTE]
-> Nous avons repoussé l’échéance de création de nouvelles conservations inactives pour désactiver une boîte aux lettres. Toutefois, à l’avenir, vous ne pourrez pas créer de nouvelles conservations inaltérables dans Exchange Online. À ce stade, seuls les stratégies de conservation pour litige et Office 365 peuvent être utilisées pour créer une boîte aux lettres inactive. Toutefois, les boîtes aux lettres inactives existantes qui sont en conservation inaltérable sont toujours prises en charge, et vous pouvez continuer à gérer les conservations inactives sur les boîtes aux lettres inactives. Cela inclut le changement de la durée d’une conservation inaltérable et la suppression définitive d’une boîte aux lettres inactive en supprimant la conservation inaltérable. 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -87,7 +84,7 @@ Après la récupération d'une boîte aux lettres inactive, un compte d'utilisat
     
   - Le blocage de rétention est activé et la durée du blocage de rétention est définie sur 30 jours. Cela signifie que la stratégie de rétention Exchange par défaut, ainsi que toutes les stratégies de rétention Office 365 à l’échelle de l’organisation ou à l’échelle de l’organisation qui sont affectées à la nouvelle boîte aux lettres ne seront pas traitées pendant 30 jours. L'employé de retour ou le nouveau propriétaire de la boîte aux lettres inactive récupérée a ainsi le temps de gérer les anciens messages. Dans le cas contraire, la stratégie de rétention Exchange ou Office 365 peut supprimer les anciens éléments de boîte aux lettres (ou déplacer les éléments vers la boîte aux lettres d’archivage si elle est activée) qui ont expiré en fonction des paramètres configurés pour les stratégies de rétention Exchange ou Office 365. Après 30 jours, le blocage de rétention expire, la propriété de boîte aux lettres **RetentionHoldEnabled** est définie sur **false**et l’Assistant dossier géré commence à traiter les stratégies attribuées à la boîte aux lettres. Si vous n'avez pas besoin de ce temps supplémentaire, il vous suffit de supprimer le blocage de rétention. Vous pouvez également augmenter la durée du blocage de rétention à l'aide de la commande **Set-Mailbox -EndDateForRetentionHold**. Pour plus d'informations, consultez la rubrique [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300).
     
-- **Placez une conservation sur la boîte aux lettres récupérée si vous devez conserver l'état d'origine de la boîte aux lettres inactive.** Pour empêcher le nouveau propriétaire de la boîte aux lettres ou la stratégie de rétention de supprimer définitivement les messages de la boîte aux lettres inactive Récupérée, vous pouvez placer la boîte aux lettres en conservation pour litige pour plus d’informations, consultez la rubrique [placer une boîte aux lettres en conservation pour litige](https://go.microsoft.com/fwlink/?linkid=856286).
+- **Placez une conservation sur la boîte aux lettres récupérée si vous devez conserver l'état d'origine de la boîte aux lettres inactive.** Pour empêcher le nouveau propriétaire de la boîte aux lettres ou la stratégie de rétention de supprimer définitivement les messages de la boîte aux lettres inactive Récupérée, vous pouvez placer la boîte aux lettres en conservation pour litige. Pour plus d'informations, voir [Placement d'une boîte aux lettres en conservation pour litige](https://go.microsoft.com/fwlink/?linkid=856286).
     
 - **Quel identifiant utilisateur pouvez-vous utiliser pour récupérer une boîte aux lettres inactive ?** Lorsque vous récupérez une boîte aux lettres inactive, la valeur que vous spécifiez pour le paramètre *MicrosoftOnlineServicesID* peut être différente de l’image d’origine associée à la boîte aux lettres inactive. Vous pouvez également utiliser l'identifiant utilisateur d'origine. Toutefois, comme indiqué précédemment, assurez-vous que les valeurs utilisées pour *Name* et *MicrosoftOnlineServicesID* sont uniques au sein de votre organisation lorsque vous récupérez la boîte aux lettres inactive. 
     

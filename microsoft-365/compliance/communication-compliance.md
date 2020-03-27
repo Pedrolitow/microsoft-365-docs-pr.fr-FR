@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179235"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982047"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -53,7 +53,7 @@ Les stratégies de conformité des communications peuvent vous aider à examiner
 
 - **Conformité réglementaire**
 
-    La plupart des organisations doivent se conformer à certains types de normes de conformité réglementaire dans le cadre de leurs procédures d’utilisation normales. Ces réglementations obligent souvent les organisations à mettre en place un certain type de processus de surveillance ou de supervision pour la messagerie appropriée pour leur secteur d’activité. La règle 3110 de l’autorité réglementaire du secteur financier (FINRA) est un excellent exemple d’une obligation pour les organisations de mettre en place des procédures de surveillance pour analyser les communications des employés et les types d’entreprises dans lesquelles elle s’engage. Un autre exemple peut être un besoin de passer en revue les communications avec des concessionnaires de courtiers dans votre organisation afin de se protéger contre le blanchiment potentiel, les opérations d’initiés, les opérations de collusion ou les actions de corruption. Les stratégies de conformité des communications peuvent aider votre organisation à répondre à ces exigences en fournissant un processus à l’analyse et à la création de rapports sur les communications d’entreprise.
+    La plupart des organisations doivent se conformer à certains types de normes de conformité réglementaire dans le cadre de leurs procédures d’utilisation normales. Ces réglementations obligent souvent les organisations à mettre en place un certain type de processus de surveillance ou de supervision pour la messagerie appropriée pour leur secteur d’activité. La règle 3110 de l’autorité réglementaire du secteur financier (FINRA) est un excellent exemple d’une obligation pour les organisations de mettre en place des procédures de surveillance pour analyser les communications des employés et les types d’entreprises dans lesquelles elle s’engage. Un autre exemple peut être un besoin de passer en revue les communications avec des concessionnaires de courtiers dans votre organisation afin de se protéger contre le blanchiment potentiel, les opérations d’initiés, les opérations de collusion ou les actions de corruption. Les stratégies de conformité des communications peuvent aider votre organisation à répondre à ces exigences en fournissant un processus à l’analyse et à la création de rapports sur les communications d’entreprise. Pour plus d’informations sur la prise en charge des organisations financières, consultez [la rubrique Key Compliance and Security Considerations for US Bank and Capital Markets](../solutions/financial-services-secure-collaboration.md).
 
 ## <a name="new-enhancements"></a>Nouvelles améliorations
 
@@ -155,4 +155,4 @@ Le suivi et la gestion des problèmes de conformité identifiés par les straté
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
-Pour configurer la conformité de la communication pour votre organisation Microsoft 365, consultez la rubrique [configure communication Compliance for microsoft 365](communication-compliance-configure.md).
+Pour configurer la conformité de la communication pour votre organisation Microsoft 365, consultez la rubrique [configure communication Compliance for Microsoft 365](communication-compliance-configure.md) ou consultez l' [étude de cas pour Contoso](communication-compliance-case-study.md) , ainsi que la manière dont ils ont configuré rapidement une stratégie de conformité des communications pour surveiller le langage choquant dans Microsoft teams et les communications Exchange Online.
