@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 13a65f5a6a82eed748eaa79a3683ebdf2fe7ed9a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894395"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955683"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -313,8 +313,8 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
 |[Activités avancées eDiscovery](#advanced-ediscovery-activities)|[Activités dans Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Activités dans Microsoft Teams](#microsoft-teams-activities)|[Activités Santé Microsoft Teams](#microsoft-teams-healthcare-activities)|[Activités dans Yammer](#yammer-activities)|
 |[Activités Microsoft Power Automate](#microsoft-power-automate-activities)|[Activités Microsoft Power Apps](#microsoft-power-apps-activities)|[Activités de Microsoft Stream](#microsoft-stream-activities)|
-|[Activités de l’Explorateur de contenu](#content-explorer-activities)|[Activités Microsoft Forms](#microsoft-forms-activities)|[Activités des étiquettes de confidentialité](#sensitivity-label-activities)|
-|[Activités administrateur Exchange](#exchange-admin-audit-log)||
+|[Activités de l’Explorateur de contenu](#content-explorer-activities)|[Activités de mise en quarantaine](#quarantine-activities)|[Activités Microsoft Forms](#microsoft-forms-activities)
+|[Activités des étiquettes de confidentialité](#sensitivity-label-activities)|[Activités administrateur Exchange](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Activités des fichiers et pages
@@ -813,7 +813,20 @@ Le tableau suivant répertorie les activités de l’Explorateur de contenu qui 
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
-|Élément consulté|AccessedItem|Un administrateur (ou utilisateur membre du groupe de rôles Visionneuse de contenu de l’Explorateur de contenu) utilise l’Explorateur de contenu pour afficher un e-mail ou un document SharePoint/OneDrive.|
+|Élément consulté|LabelContentExplorerAccessedItem|Un administrateur (ou utilisateur membre du groupe de rôles Visionneuse de contenu de l’Explorateur de contenu) utilise l’Explorateur de contenu pour afficher un e-mail ou un document SharePoint/OneDrive.|
+||||
+
+### <a name="quarantine-activities"></a>Activités de mise en quarantaine
+
+Le tableau suivant illustre une liste d’activités que vous pouvez rechercher dans le journal d’audit. Pour plus d’informations sur la mise en quarantaine, voir [mettre en quarantaine des courriers électroniques dans Office 365](../security/office-365-security/quarantine-email-messages.md).
+
+|**Nom convivial**|**Opération**|**Description**|
+|:-----|:-----|:-----|
+|Message de quarantaine supprimé|QuarantineDelete|Un utilisateur a supprimé un message électronique considéré comme dangereux.|
+|Message de quarantaine exporté|QuarantineExport|Un utilisateur a exporté un message électronique considéré comme dangereux.|
+|Message de quarantaine visualisé|QuarantinePreview|Un utilisateur a visualisé un message électronique considéré comme dangereux.|
+|Message de quarantaine publié|QuarantineRelease|Un utilisateur a publié un message électronique de quarantaine considéré comme dangereux.|
+|En-tête du message de quarantaine consulté|QuarantineViewHeader|Un utilisateur a affiché l’en-tête d’un message électronique considéré comme dangereux.|
 ||||
 
 ### <a name="microsoft-forms-activities"></a>Activités Microsoft Forms
