@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084200"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035122"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour sécuriser les sites et les fichiers SharePoint
 
@@ -45,9 +45,9 @@ Le tableau suivant répertorie les stratégies dont vous avez besoin pour vérif
 
 |Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Référence**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online lors de l’affectation d’applications Cloud|
+|**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online lors de l’affectation d’applications Cloud|
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inclure SharePoint Online lors de l’affectation d’applications Cloud|
-|        |[Définir les stratégies de protection des applications](identity-access-policies.md#define-app-protection-policies)|Assurez-vous que toutes les applications recommandées sont incluses dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
+|        |[Appliquer des stratégies de protection des données d’application](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous que toutes les applications recommandées sont incluses dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
 |        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure SharePoint Online dans la liste des applications Cloud|
 |        |[Utiliser des restrictions appliquées par l’application dans SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Ajoutez cette nouvelle stratégie. Cette option indique à Azure AD d’utiliser les paramètres spécifiés dans SharePoint Online. Cette règle s’applique à tous les utilisateurs, mais affecte uniquement l’accès aux sites inclus dans les stratégies d’accès SharePoint Online.|
 |**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online dans les affectations d’applications Cloud|
