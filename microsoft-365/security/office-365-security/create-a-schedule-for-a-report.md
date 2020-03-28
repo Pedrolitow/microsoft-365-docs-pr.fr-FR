@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer une planification pour un rapport dans le centre de sécurité &amp; conformité.
-ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3e09dee36e14ca1e25f6ea20c8f2b5843dc7edaa
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083461"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030163"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Créer une planification pour un rapport dans le centre &amp; de sécurité conformité
 
@@ -57,7 +57,8 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
     
     ![Créer une planification](../../media/atpfiletypes-createschedule.png)
 
-    (Remarque : tous les rapports ne disposent pas du bouton **+ créer une planification** .)
+    > [!NOTE]
+    > Tous les rapports n’ont pas le bouton **+ créer une planification** .
   
     La boîte de dialogue **créer une planification** s’ouvre. 
     
@@ -69,7 +70,7 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
     
 Une fois que vous avez créé une planification pour un rapport, ce rapport est remis automatiquement par courrier électronique aux adresses de messagerie des destinataires. 
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

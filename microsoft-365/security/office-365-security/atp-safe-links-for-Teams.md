@@ -2,7 +2,7 @@
 title: Liens fiables Office 365 ATP pour Teams, safelinks, les liens fiables, bloquer les liens malveillants, Office 365 ATP, teams de liens approuvés, empêcher les utilisateurs de cliquer sur liens incorrects, liens malveillants
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 02/28/2020
 ms.topic: overview
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les équipes auront désormais accès à des liens fiables au moment de votre clic. Que vous utilisiez des conversations de conversation 1-on-1, entre des groupes ou des canaux, et des onglets, si vous disposez d’un abonnement à la protection avancée contre les menaces pour Office 365, vous pouvez activer et utiliser cette fonctionnalité de sécurité.
-ms.openlocfilehash: ba7ef2ae63b788ec94fbbb15c3c00312177a59d5
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341583"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030138"
 ---
 <!--06/21/2019-->
 
@@ -30,7 +30,7 @@ ms.locfileid: "42341583"
 
 Microsoft Teams, une application Cloud Office 365 pour la gestion de votre travail, utilise déjà des pièces jointes fiables (pour Office 365), mais il aura maintenant accès à des liens fiables au moment de votre clic. Que vous utilisiez des conversations de conversation 1-on-1, entre des groupes ou des canaux, et des onglets, si vous disposez d’un abonnement à la protection avancée contre les menaces pour Office 365, vous pouvez activer et utiliser cette mesure de sécurité.
 
-Voici comment cela fonctionne : 
+Voici le principe de fonctionnement : 
 
 1. Lorsque vous démarrez l’application Teams, Office 365 vérifie que l’utilisateur appartient à une organisation disposant d’Office 365 ATP et que l’utilisateur fait partie d’une stratégie de liens approuvés active avec sa protection activée pour Microsoft Teams.
 

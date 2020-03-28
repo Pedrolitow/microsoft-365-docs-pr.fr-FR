@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 8/23/2019
 audience: ITPro
 ms.topic: article
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: En savoir plus sur les valeurs de niveau bomplain (BCL) dans Office 365.
-ms.openlocfilehash: 6b90064db7dd9b27fdc729b65fb798dfbe756da7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: En savoir plus sur les valeurs de niveau de conformité en bloc dans Office 365.
+ms.openlocfilehash: aa839fc1bcab141fe71c76e7f27b4f6bb23048b2
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895392"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030150"
 ---
 # <a name="bulk-complaint-level-bcl-in-office-365"></a>Niveau de réclamation en bloc (BCL) dans Office 365
 
@@ -29,7 +29,7 @@ Les expéditeurs de courriers électroniques varient en fonction de leurs modèl
 
 Pour distinguer les messages provenant de différents types de publipostages en bloc, le courrier électronique entrant en provenance de courriers électroniques entrants vers Office 365 (Exchange Online ou autonome Exchange Online Protection (EOP) sans boîte aux lettres Exchange Online) est affecté à un niveau de réclamation en bloc (BCL) qui est ajouté à message dans un en-tête X. Le BCL est similaire au [seuil de probabilité de courrier indésirable (SCL)](spam-confidence-levels.md) utilisé pour identifier les messages comme courrier indésirable. Une BCL plus élevée indique qu’un message en bloc est plus susceptible de générer des plaintes (et, par conséquent, plus vraisemblablement un courrier indésirable). Microsoft utilise des sources internes et tierces pour identifier le courrier en nombre et déterminer le BCL approprié.
 
- Le filtrage du courrier indésirable marque les messages en tant que **courrier en masse** en fonction du seuil BCL (valeur par défaut ou valeur que vous spécifiez) et prend l’action spécifiée sur le message (l’action par défaut consiste à envoyer le message vers le dossier de courrier indésirable du destinataire). Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md) et [quelle est la différence entre le courrier indésirable et le courrier électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+ Le filtrage du courrier indésirable marque les messages en tant que **courrier en masse** en fonction du seuil BCL (valeur par défaut ou valeur que vous spécifiez) et prend l’action spécifiée sur le message (l’action par défaut consiste à envoyer le message vers le dossier de courrier indésirable du destinataire). Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du](configure-your-spam-filter-policies.md) courrier indésirable dans Office 365 et [quelle est la différence entre courrier indésirable et courrier électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 Les seuils BCL sont décrits dans le tableau suivant.
 
