@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Office 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353965"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029859"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Rapports d’activité dans le Centre d’administration Microsoft 365
 
@@ -75,6 +75,10 @@ Les personnes disposant des autorisations suivantes :
 - Lecteur général
     
 - Lecteur de rapports
+
+- Administrateur du service Teams
+
+- Administrateur des communications Teams
     
 Pour plus d'informations, voir [À propos des rôles d'administrateur](../add-users/about-admin-roles.md) et [Attribuer des rôles d'administrateur](../add-users/assign-admin-roles.md).
   

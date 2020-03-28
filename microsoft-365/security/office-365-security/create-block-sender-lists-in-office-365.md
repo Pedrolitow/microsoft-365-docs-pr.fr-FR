@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Les administrateurs peuvent en savoir plus sur les options disponibles dans Office 365 et EOP pour bloquer les messages entrants.
-ms.openlocfilehash: a588c9c869dae39ab60fc7ad68b6496f57ae015a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893861"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033421"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs bloqués dans Office 365
 
@@ -30,12 +30,12 @@ La meilleure méthode pour bloquer les expéditeurs varie en fonction de l’ét
 
 2. Listes des expéditeurs bloqués ou des listes de domaines bloqués (stratégies anti-courrier indésirable)
 
-3. Règles de flux de mai
+3. Règles de flux de messagerie
 
 4. Liste d’adresses IP bloquées (filtrage des connexions)
 
 > [!NOTE]
-> Bien que vous puissiez utiliser les paramètres de blocage à l’échelle de l’Organisation pour résoudre les faux négatifs (courrier indésirable manqué), vous devez également envoyer ces messages à Microsoft pour analyse. La gestion des faux négatifs à l’aide de listes rouges augmente considérablement votre charge administrative. Si vous utilisez des listes rouges pour déviation du courrier indésirable manqué, vous devez conserver la rubrique relative à la soumission de courrier indésirable, de courrier [non indésirable et de courrier indésirable à Microsoft à des fins d’analyse](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), à l’aide du prêt.
+> Bien que vous puissiez utiliser les paramètres de blocage à l’échelle de l’Organisation pour résoudre les faux négatifs (courrier indésirable manqué), vous devez également envoyer ces messages à Microsoft pour analyse. La gestion des faux négatifs à l’aide de listes rouges augmente considérablement votre charge administrative. Si vous utilisez des listes rouges pour déviation du courrier indésirable manqué, vous devez conserver la rubrique [signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) à l’adresse.
 
 En revanche, vous disposez également de plusieurs options pour toujours autoriser les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs approuvés_. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).
 

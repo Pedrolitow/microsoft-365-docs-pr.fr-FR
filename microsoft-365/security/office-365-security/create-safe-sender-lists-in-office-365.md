@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Les administrateurs peuvent en savoir plus sur les options disponibles dans Office 365 et EOP qui permettent aux messages entrants d’ignorer le filtrage du courrier indésirable.
-ms.openlocfilehash: 2b7463165bb376655fd7f63ac0bdd79a8eccb617
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f9178dae93f8eb33996d05034d27fceed66edd39
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893849"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033409"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs approuvés dans Office 365
 
@@ -38,9 +38,9 @@ Les listes d’expéditeurs approuvés disponibles sont décrites dans la liste 
 Les règles de flux de messagerie offrent une flexibilité maximale pour garantir que seuls les messages corrects sont autorisés. Les listes d’expéditeurs autorisés et de domaines autorisés dans les stratégies de blocage du courrier indésirable ne sont pas aussi sécurisées que la liste d’adresses IP autorisées, car le domaine de messagerie de l’expéditeur est facilement falsifié. Toutefois, la liste d’adresses IP autorisées présente également un risque, car les messages provenant de _n’importe quel_ domaine qui est envoyé à partir de cette adresse IP contourneront le filtrage du courrier indésirable.
 
 > [!IMPORTANT]
-> <ul><li>Faites attention et surveillez *toutes les* exceptions que vous souhaitez filtrage du courrier indésirable à l’aide des listes d’expéditeurs autorisés.</li><li>Bien que vous puissiez utiliser des listes d’expéditeurs approuvés pour vous aider à obtenir des faux positifs (courrier électronique marqué comme courrier indésirable), vous devez envisager d’utiliser des listes d’expéditeurs approuvés comme solution temporaire qui doit être évitée dans la mesure du possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs approuvés, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous insistez sur l’utilisation de listes d’expéditeurs approuvés pour gérer les faux positifs, vous devez être vigilant et conserver la rubrique relative à l’envoi de courriers indésirables [, non indésirables et de hameçonnage à Microsoft à des fins d’analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) à l’aide de l’analyseur prêt.</li><li>Pour autoriser un domaine à envoyer des courriers électroniques non authentifiés (ignorer la protection contre l’usurpation d’identité) mais ne pas contourner les vérifications anti-courrier indésirable et anti-programme malveillant, vous pouvez l’ajouter à la [liste des expéditeurs approuvés AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)</li><li>EOP et Outlook inspectent les différentes propriétés des messages pour déterminer l’expéditeur du message. Pour plus d’informations, consultez la section [considérations relatives à l’envoi en nombre de messages électroniques](#considerations-for-bulk-email) plus loin dans cette rubrique.</li></ul>
+> <ul><li>Faites attention et surveillez *toutes les* exceptions que vous souhaitez filtrage du courrier indésirable à l’aide des listes d’expéditeurs autorisés.</li><li>Bien que vous puissiez utiliser des listes d’expéditeurs approuvés pour vous aider à obtenir des faux positifs (courrier électronique marqué comme courrier indésirable), vous devez envisager d’utiliser des listes d’expéditeurs approuvés comme solution temporaire qui doit être évitée dans la mesure du possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs approuvés, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous insistez sur l’utilisation de listes d’expéditeurs approuvés pour gérer les faux positifs, vous devez être vigilant et conserver la rubrique [signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) à l’adresse.</li><li>Pour autoriser un domaine à envoyer des courriers électroniques non authentifiés (ignorer la protection contre l’usurpation d’identité) mais ne pas contourner les vérifications anti-courrier indésirable et anti-programme malveillant, vous pouvez l’ajouter à la [liste des expéditeurs approuvés AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)</li><li>EOP et Outlook inspectent les différentes propriétés des messages pour déterminer l’expéditeur du message. Pour plus d’informations, consultez la section [considérations relatives à l’envoi en nombre de messages électroniques](#considerations-for-bulk-email) plus loin dans cette rubrique.</li></ul>
 
-En revanche, vous disposez également de plusieurs options pour bloquer les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs bloqués_. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md).
+En revanche, vous disposez également de plusieurs options pour bloquer les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs bloqués_. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>Recommandation Utiliser des règles de flux de messagerie
 

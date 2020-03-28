@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: 5d3abe41680a8399600fdea51df6f3b85fbd6b94
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692651"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029838"
 ---
 # <a name="learn-about-information-barriers"></a>En savoir plus sur les barrières relatives aux informations
 
@@ -28,10 +28,13 @@ Les services de Cloud Computing Microsoft incluent de puissantes fonctionnalité
 
 Les barrières de l’information sont désormais déployées à partir de Microsoft Teams. Si votre [abonnement](#required-licenses-and-permissions) inclut des barrières d’informations, un administrateur de conformité ou un administrateur des barrières de l’information peut définir des stratégies pour autoriser ou empêcher les communications entre les groupes d’utilisateurs dans Microsoft Teams. Les stratégies de barrière des informations peuvent être utilisées pour des situations comme celles-ci :
 
-- Un commerçant en journée ne peut pas appeler une personne de l’équipe marketing
-- Le personnel financier travaillant sur les informations confidentielles d’une société ne peut pas recevoir d’appels de certains groupes au sein de son organisation
-- Une équipe interne avec des éléments secrets commerciaux ne peut pas appeler ou converser en ligne avec des personnes appartenant à certains groupes au sein de leur organisation.
-- Une équipe de recherche peut uniquement appeler ou converser en ligne avec une équipe de développement de produit
+- L’utilisateur dans le groupe de la journée du commerçant ne doit pas communiquer avec l’équipe marketing
+- Le personnel financier travaillant sur les informations confidentielles de l’entreprise ne doit pas communiquer avec certains groupes au sein de son organisation
+- Une équipe interne avec des éléments secrets commerciaux ne doit pas appeler ou converser en ligne avec des personnes appartenant à certains groupes au sein de leur organisation
+- Une équipe de recherche doit uniquement appeler ou converser en ligne avec une équipe de développement de produit
+
+> [!IMPORTANT]
+> Les barrières d’informations ***ne prennent en charge que*** les restrictions bidirectionnelles. Les restrictions d’une seule manière, telles que marketing, peuvent communiquer avec les négociants, mais les heures de non communication avec le service marketing ne ***sont pas prises en charge***.
 
 Pour tous ces exemples de scénarios (et plus), des stratégies de barrière des informations peuvent être définies pour empêcher ou autoriser les communications dans Microsoft Teams. De telles stratégies peuvent empêcher les personnes d’appeler ou de converser avec celles qu’ils ne doivent pas utiliser, ou d’autoriser les utilisateurs à communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec des stratégies de barrière des informations en vigueur, chaque fois que des utilisateurs couverts par ces stratégies tentent de communiquer avec d’autres personnes dans Microsoft Teams, des vérifications sont effectuées pour empêcher (ou autoriser) la communication (comme défini par les stratégies de barrière des informations). Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 

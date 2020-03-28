@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft a développé diverses stratégies, procédures et a adopté plusieurs meilleures pratiques du secteur afin de protéger les utilisateurs contre des courriers indésirables, indésirables ou malveillants.
-ms.openlocfilehash: e6e5565b032af656b2204ce448581014595013de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598611"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033745"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
 
@@ -89,7 +89,7 @@ Microsoft collabore activement avec des organismes et fournisseurs de services d
 
 ## <a name="abuse-and-spam-reporting"></a>Création de rapport de courrier indésirable et de mauvaise utilisation
 
-Pour signaler un courrier électronique illégal, abusif, indésirable ou malveillant, [signalez le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). L’envoi de ces types de communications est une violation de la stratégie de Microsoft et des mesures appropriées seront prises sur des rapports confirmés.
+Pour signaler des courriers indésirables, injurieux, indésirables ou malveillants, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md). L’envoi de ces types de communications est une violation de la stratégie Microsoft et des mesures appropriées seront prises sur les rapports confirmés.
 
 ## <a name="law-enforcement"></a>Application des lois
 

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs d’Office 365 peuvent découvrir comment effectuer une récupération à partir d’une attaque par ransomware.
-ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42640016"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032875"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Récupération suite à une attaque de ransomware dans Office 365
 
@@ -122,7 +122,7 @@ Si votre pays n’est pas indiqué, demandez à vos organismes d’application d
 
 ### <a name="submit-email-messages-to-microsoft"></a>Envoyer des messages électroniques à Microsoft
 
-Vous pouvez signaler un message d’hameçonnage contenant des ransomware en suivant les instructions de la soumission des messages indésirables, des courriers [indésirables et des tentatives de hameçonnage à Microsoft pour analyse](https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
+Vous pouvez signaler un message de hameçonnage contenant des ransomware à l’aide de l’une des méthodes suivantes. Pour plus d’informations, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Pour vous donner un maximum de chances de succès et éviter les erreurs courantes de configuration, suivez ces recommandations relatives aux meilleures pratiques pour Exchange Online Protection (EOP).
-ms.openlocfilehash: b4b1f02e3b034b7e89d605a2164b6add3f20dae5
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887301"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033433"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Meilleures pratiques pour la configuration de EOP et Office 365 ATP
 
@@ -61,11 +61,9 @@ Ces paramètres couvrent un éventail de fonctionnalités en dehors des stratég
 
 Résoudre les problèmes et tendances généraux à l’aide des rapports dans le centre d’administration. Pour trouver des données concernant un point précis d'un message, utilisez l'outil de suivi des messages. Pour plus d'informations sur la génération de rapports, consultez la rubrique [Création de rapports et suivi des messages dans Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Pour plus d’informations sur l’outil de suivi des messages [, consultez la rubrique suivi des messages dans le centre de sécurité & Compliance Center](message-trace-scc.md).
 
-## <a name="reporting-false-positive-and-false-negatives-to-microsoft"></a>Signalement des faux positifs et faux négatifs à Microsoft
+## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>Signaler les faux positifs et faux négatifs à Microsoft
 
-Les administrateurs doivent envoyer des faux négatifs (courrier indésirable) et faux positifs (non indésirables) à Microsoft via notre portail d’envoi administratif. Les e-mails, les fichiers et les URL peuvent être envoyés pour aider les administrateurs à déterminer la raison pour laquelle nous avons remis ou ne fournissons pas de messages aux utilisateurs finaux. Pour plus d’informations, reportez-vous à [la rubrique Procédure d’envoi de courrier indésirable, de hameçonnage, d’URL et de fichiers à Microsoft pour Office 365](admin-submission.md).
-
-Les utilisateurs finaux peuvent également signaler directement à Microsoft les faux négatifs (courrier indésirable) et les faux positifs (non du courrier indésirable) en cas d’échec des verdicts. Pour plus d’informations, consultez la rubrique soumettre des messages de courrier indésirable, des courriers [indésirables et des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Pour améliorer le filtrage du courrier indésirable dans le service pour tout le monde, vous devez signaler les faux positifs (courrier électronique marqué comme incorrect) et les faux négatifs (courrier incorrect autorisé) à Microsoft pour analyse. Pour plus d’informations, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="create-mail-flow-rules"></a>Création de règles de flux de messagerie
 

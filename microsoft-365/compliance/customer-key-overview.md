@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Office 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft.
-ms.openlocfilehash: 0910374051073cb67ee4d2a4fac0a88871a2fd73
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: df47f0df0f30de3529982099cb59efe2a741cd34
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333651"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029870"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Chiffrement de service avec clé client dans Office 365
 
@@ -49,7 +49,7 @@ La clé client chiffre uniquement les données au repos dans le Cloud. La clé c
 
 ## <a name="about-the-data-encryption-policy-dep"></a>À propos de la stratégie de chiffrement des données (DEP)
 
-Une stratégie de chiffrement de données définit la hiérarchie de chiffrement pour chiffrer les données à l’aide de chacune des clés que vous fournissez, ainsi que la clé de disponibilité protégée par Microsoft. Vous créez DEPs à l’aide d’applets de commande PowerShell, qui sont différentes pour chaque service, et vous les attribuez pour chiffrer les données d’application. Par exemple :
+Une stratégie de chiffrement de données définit la hiérarchie de chiffrement pour chiffrer les données à l’aide de chacune des clés que vous fournissez, ainsi que la clé de disponibilité protégée par Microsoft. Vous créez DEPs à l’aide d’applets de commande PowerShell, qui sont différentes pour chaque service, et attribuez ces DEPs pour chiffrer les données d’application. Par exemple :
 
 **Exchange Online et Skype entreprise** Vous pouvez créer jusqu’à 50 DEPs par client. Vous associez DEPs à vos clés de client dans le coffre de clés Azure, puis vous affectez DEPs à des boîtes aux lettres individuelles. Lorsque vous affectez une DEP à une boîte aux lettres :
 

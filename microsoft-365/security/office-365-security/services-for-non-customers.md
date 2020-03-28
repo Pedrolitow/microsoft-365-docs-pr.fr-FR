@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
-ms.openlocfilehash: f6dc3cdb4ffb20fba1dbaa8d57d5041bf1cdbeae
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e7985aed7c0b5b5c14c64d49e70ec6c731cb8b9
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598391"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032791"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Services pour les non clients qui envoient des messages vers Office 365
 
@@ -60,4 +60,4 @@ Il s'agit d'un portail en libre-service que vous pouvez utiliser pour vous suppr
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online
 
-Office 365 est parfois utilisé par des tiers pour envoyer du courrier indésirable, en violation de nos conditions d'utilisation et de notre stratégie. Si vous recevez un courrier indésirable provenant d'Office 365, vous pouvez signaler ces messages à [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com). Veuillez joindre les messages posant problème, y compris l'en-tête complet du message au format RFC 5322 ou ARF. Outlook sur les utilisateurs web peut utiliser les outils intégrés pour signaler des messages de courrier indésirable. Pour plus d’informations, consultez [la rubrique signaler le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+Office 365 est parfois utilisé par des tiers pour envoyer du courrier indésirable, en violation de nos conditions d'utilisation et de notre stratégie. Si vous recevez un courrier indésirable d’Office 365, vous pouvez signaler ces messages à Microsoft. Pour obtenir des instructions, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).

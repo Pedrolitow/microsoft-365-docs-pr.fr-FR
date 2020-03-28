@@ -1,5 +1,5 @@
 ---
-title: 'Etude de cas : contoso configure rapidement une stratégie de langue offensante'
+title: 'Etude de cas : contoso configure rapidement une stratégie de langage offensant pour Microsoft teams et les communications Exchange'
 description: Une étude de cas pour contoso et la façon dont ils configurent rapidement une stratégie de conformité des communications pour surveiller le langage choquant dans Microsoft teams et les communications Exchange Online
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6b5ce3b9ca738ddf94edbb035daeb730f5e3f96a
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 6f23bece83f0c0fc25ddb26b8ceddcb1c956bc5e
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982354"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024344"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy"></a>Etude de cas : contoso configure rapidement une stratégie de langue offensante
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Etude de cas : contoso configure rapidement une stratégie de langage offensant pour Microsoft teams et les communications Exchange
 
 La conformité de la communication dans Microsoft 365 aide à réduire les risques de communication en vous aidant à détecter, capturer et prendre des mesures correctives pour les messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications internes et externes des correspondances de stratégie pour qu’elles puissent être examinées par les relecteurs désignés. Les relecteurs peuvent analyser les e-mails analysés, Microsoft teams ou les communications tierces au sein de votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’ils sont conformes aux standards de messages de votre organisation.
 

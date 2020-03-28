@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception des messages de hameçonnage, ainsi que la marche à suivre pour éviter d’autres messages de phishing à l’avenir.
-ms.openlocfilehash: 94c28bf63ad7ba87d06298576cf7989b6848f8e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082023"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033649"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Réglage de la protection anti-hameçonnage dans Office 365
 
@@ -39,11 +39,7 @@ Vérifiez que ces fonctionnalités ATP sont activées.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Signaler le message de hameçonnage à Microsoft
 
-La création de rapports sur les messages de hameçonnage est utile pour régler les filtres utilisés pour protéger tous les clients dans Office 365.
-
-Envoyer le message de hameçonnage _en tant que pièce jointe_ dans un nouveau message, autrement vide, dans **Phish@office365.microsoft.com**. Ne transférez pas uniquement le message d’origine ; dans le cas contraire, nous ne pouvons pas examiner les en-têtes de message d’origine. Vous pouvez également utiliser le complément de [message de rapport](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in) dans Outlook ou Outlook sur le Web (anciennement appelé Outlook Web App).
-
-Pour plus d'informations, consultez la rubrique [Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+La création de rapports sur les messages de hameçonnage est utile pour régler les filtres utilisés pour protéger tous les clients dans Office 365. Pour obtenir des instructions, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="inspect-the-message-headers"></a>Inspecter les en-têtes de message
 

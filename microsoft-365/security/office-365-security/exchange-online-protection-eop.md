@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Voici quelques éléments que vous devez connaître avant de commencer à utiliser EOP.
-ms.openlocfilehash: 9c027d6c1ded10becd7c73dc3468270ff50edb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599341"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032863"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
@@ -63,12 +63,8 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
 
 Le contenu de l’aide permettant de guider les utilisateurs finaux d’EOP dans la gestion du courrier indésirable contient les rubriques suivantes :
 
-- [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur](find-and-release-quarantined-messages-as-a-user.md): décrit la façon dont les utilisateurs finaux peuvent trouver et libérer leurs propres messages indésirables mis en quarantaine dans l’interface utilisateur de mise en quarantaine du courrier indésirable et les signaler comme légitimes à Microsoft.
+- [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md)
 
-- Soumission des courriers indésirables, des courriers [indésirables et des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): décrit les différentes façons dont les utilisateurs finaux peuvent soumettre des messages de courrier indésirable (junk) et non de courrier indésirable à Microsoft. Cette rubrique contient des liens vers les outils de création de rapports disponibles dans Microsoft Outlook et Outlook sur le Web (anciennement Outlook Web App).
-
-- [Soumission de programmes malveillants et non malveillants à Microsoft pour analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): décrit la façon dont les utilisateurs finaux peuvent soumettre un programme malveillant qui a passé les filtres, ou envoyer un fichier qui a été identifié de manière incorrecte en tant que programme malveillant.
-
-- Les utilisateurs finaux peuvent ajouter des utilisateurs ou des domaines spécifiques à une liste d’expéditeurs approuvés ou à une liste d’expéditeurs bloqués en configurant leurs paramètres de courrier indésirable dans Outlook ou Outlook sur le Web. Notez que les messages envoyés par des expéditeurs bloqués sont marqués comme courrier indésirable, et non rejetés, ce qui signifie qu’ils peuvent être récupérés à partir du dossier courrier indésirable ou mis en quarantaine (en fonction de l’emplacement où votre administrateur a configuré le service pour envoyer du courrier indésirable). Pour plus d’informations, consultez [la rubrique utiliser le complément de message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Les utilisateurs finaux peuvent ajouter des expéditeurs à leur propre liste des expéditeurs approuvés ou liste des expéditeurs bloqués dans Outlook ou Outlook sur le Web. Les administrateurs peuvent également modifier ces listes dans les boîtes aux lettres des utilisateurs. Pour plus d’informations, consultez la rubrique [à propos des paramètres du courrier indésirable dans Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook).
 
 - [Aide et support pour EOP](help-and-support-for-eop.md) Fournit des informations sur la manière d'obtenir de l'aide et un support technique.

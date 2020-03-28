@@ -18,16 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c1279b0258047ed4653e0bb3d4d95333b28af643
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894819"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029848"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
 ## <a name="policies"></a>Stratégies
+
+>[!Important]
+>L’utilisation de PowerShell pour créer et gérer des stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité de communication Microsoft 365](https://compliance.microsoft.com/supervisoryreview).
 
 Vous créez des stratégies de conformité des communications pour les organisations Microsoft 365 dans le centre de conformité Microsoft 365. Si vous disposez d’une organisation Office 365, vous [configurerez des stratégies de surveillance](configure-supervision-policies.md) dans le centre de sécurité & conformité d’Office 365. Les stratégies de conformité des communications définissent les communications et les utilisateurs qui font l’objet d’un examen au sein de votre organisation, définissent les conditions personnalisées auxquelles doivent répondre les communications et indiquent qui doit effectuer des révisions. Les utilisateurs inclus dans le groupe de rôles d' **administrateur de vérification de surveillance** peuvent configurer des stratégies, et toute personne à laquelle ce rôle est attribué peut accéder à la page conformité de la **communication** dans le centre de conformité Microsoft 365. Si nécessaire, vous pouvez exporter l’historique des modifications apportées à une stratégie dans un fichier. csv qui inclut également l’état des alertes en attente de révision, des éléments escaladés et des éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées lorsqu’elles ne sont plus nécessaires.
 

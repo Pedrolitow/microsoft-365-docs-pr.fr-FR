@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Découvrez les paramètres de blocage du courrier indésirable et les filtres qui vous permettront d’éviter le courrier indésirable dans Exchange Online et Office 365. Vous recevez trop de courrier indésirable dans Office 365 ? Vous pouvez personnaliser vos filtres de courrier indésirable et de blocage du courrier indésirable.
-ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: bb2b714273af5177d8c69c4b89b0daec87c31650
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894069"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033469"
 ---
 # <a name="anti-spam-protection-in-office-365"></a>Protection contre le courrier indésirable dans Office 365
 
@@ -49,7 +49,7 @@ Les paramètres de blocage du courrier indésirable dans EOP sont les suivants 
 - **Filtrage du courrier indésirable (filtrage du contenu)**: EOP utilise le filtrage du courrier indésirable : **le courrier indésirable, le**courrier indésirable à **fiabilité élevée**, le courrier électronique **en masse**, le courrier électronique de **hameçonnage** et le **courrier électronique de hameçonnage à haute** Vous pouvez configurer les actions à effectuer en fonction de ces verdicts, et vous pouvez configurer les options de notification de l’utilisateur final pour les messages mis en quarantaine au lieu d’être remis. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
-  > Par défaut, le filtrage du courrier indésirable est configuré pour envoyer des messages marqués comme courrier indésirable dans le dossier courrier indésirable du destinataire. Toutefois, dans les environnements hybrides où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer deux règles de flux de messagerie (également appelées règles de transport) dans votre organisation Exchange locale afin de reconnaître les en-têtes de courrier indésirable EOP ajoutés aux messages. Pour plus d’informations, consultez [la rubrique Configure standalone EOP to Deliver courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+  > Par défaut, le filtrage du courrier indésirable est configuré pour envoyer des messages marqués comme courrier indésirable dans le dossier courrier indésirable du destinataire. Toutefois, dans les environnements hybrides où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer deux règles de flux de messagerie (également appelées règles de transport) dans votre organisation Exchange locale afin de reconnaître les en-têtes de courrier indésirable EOP ajoutés aux messages. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 - **Filtrage du courrier indésirable sortant**: EOP vérifie également que les utilisateurs n’envoient pas de courrier indésirable, que ce soit dans le contenu de messages sortants ou en dépassant les limites de messages sortants. Pour plus d’informations, consultez la rubrique [configurer le filtrage du courrier indésirable sortant dans Office 365](configure-the-outbound-spam-policy.md).
 
@@ -61,7 +61,7 @@ Il est possible que des messages corrects puissent être identifiés comme courr
 
 Voici quelques-unes des meilleures pratiques qui s’appliquent à l’un ou l’autre scénario :
 
-- Envoyez toujours des messages mal classés à Microsoft. Les administrateurs peuvent utiliser l' [Explorateur de propositions](admin-submission.md)ou les utilisateurs peuvent signaler des messages à l’aide du [complément utiliser le message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Envoyez toujours des messages mal classés à Microsoft. Pour plus d’informations, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - **Examinez les en-têtes de message anti-courrier indésirable**: ces valeurs vous indiquent pourquoi un message a été marqué comme courrier indésirable, ou pourquoi il a ignoré le filtrage du courrier indésirable. Pour plus d’informations, consultez la rubrique [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md).
 
@@ -83,13 +83,13 @@ Voici quelques-unes des meilleures pratiques qui s’appliquent à l’un ou l�
 
 - **Vérifiez les paramètres de votre organisation**: Méfiez-vous des paramètres permettant aux messages d’ignorer le filtrage du courrier indésirable (par exemple, si vous ajoutez votre propre domaine à la liste des domaines autorisés dans les stratégies de blocage du courrier indésirable). Pour connaître les paramètres recommandés, reportez-vous aux [paramètres recommandés pour EOP et office 365 sécurité ATP](recommended-settings-for-eop-and-office365-atp.md) et [créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).
 
-- **Vérifier que la règle de courrier indésirable est activée dans la boîte aux lettres de l’utilisateur**: elle est activée par défaut, mais si ce n’est pas le message marqué comme courrier indésirable ne peut pas être déplacé dans le dossier courrier indésirable. Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Vérifier que la règle de courrier indésirable est activée dans la boîte aux lettres de l’utilisateur**: elle est activée par défaut, mais si ce n’est pas le message marqué comme courrier indésirable ne peut pas être déplacé dans le dossier courrier indésirable. Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Utiliser les listes d’expéditeurs bloqués disponibles**: pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md).
 
 - **Annuler l’abonnement à des messages électroniques en masse** S’il s’agissait d’un message que l’utilisateur s’est inscrit (bulletins d’information, annonces de produits, etc.) et qu’il contient un lien de résiliation d’abonnement provenant d’une source fiable, demandez-lui simplement de se désabonner.
 
-- **EOP autonome : créer des règles de flux de messagerie dans un échange local pour le filtrage du courrier indésirable EOP**: dans les environnements EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans Exchange sur site afin de traduire le verdict de filtrage du courrier indésirable. Pour plus d’informations, consultez [la rubrique Configure standalone EOP to Deliver courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- **EOP autonome : créer des règles de flux de messagerie dans un échange local pour le filtrage du courrier indésirable EOP**: dans les environnements EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans Exchange sur site afin de traduire le verdict de filtrage du courrier indésirable. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>Empêcher l’identification du courrier électronique en tant que courrier indésirable
 

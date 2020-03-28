@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Présente des conseils de sécurité pour les messages électroniques filtrés par le filtre de courrier indésirable EOP et Office 365.
-ms.openlocfilehash: bd493fba7a41f9452f915ff456c9483f48e299f5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895190"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032815"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Conseils de sécurité dans les messages électroniques dans Office 365
 
@@ -60,4 +60,4 @@ Le Conseil de sécurité, un message codé en couleur, vous avertit des messages
 
 Les conseils de sécurité sont toujours activés pour Outlook sur le Web, même si tous les messages ne recevront pas tous les messages. Les administrateurs d’Office 365 peuvent désactiver les conseils de sécurité pour d’autres clients de messagerie, tels qu’Outlook. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
-Si vous n’êtes pas d’accord avec la façon dont Office 365 et EOP ont catégorisé un message (c’est-à-dire qu’il ne s’agit pas d’un courrier indésirable ou qu’il n’est pas légitime), vous pouvez envoyer les messages pour analyse afin de faciliter votre expérience. Pour plus d’informations, voir [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Vous pouvez également cliquer sur le lien Commentaires dans le Conseil de sécurité pour envoyer des commentaires directement à Microsoft afin de nous aider à améliorer.
+Si vous n’êtes pas d’accord avec la façon dont EOP a catégorisé un message (autrement dit, le message n’est pas du courrier indésirable ou il doit avoir été marqué comme courrier indésirable), vous pouvez envoyer les messages à Microsoft pour analyse afin d’améliorer votre expérience. Pour obtenir des instructions, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md). Vous pouvez également cliquer sur le lien Commentaires dans le Conseil de sécurité pour envoyer des commentaires directement à Microsoft afin de nous aider à améliorer.

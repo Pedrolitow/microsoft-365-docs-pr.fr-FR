@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: 3dc59a78d25045f3816b48705b5427141a1caea7
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710503"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029880"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
 
@@ -247,7 +247,7 @@ Les stratégies de barrière des informations ne sont pas appliquées tant que v
 
     Syntaxe`Start-InformationBarrierPoliciesApplication`
 
-    Après une demi-heure environ, les stratégies sont appliquées, utilisateur par utilisateur, pour votre organisation. Si votre organisation est volumineuse, cette opération peut prendre 24 heures (ou plus). (En règle générale, il faut environ une heure pour traiter les comptes d’utilisateur 5 000.)
+    Après l’exécution `Start-InformationBarrierPoliciesApplication` de la période de 30 minutes, le système commence à appliquer les stratégies. Le système applique les stratégies utilisateur par utilisateur. En règle générale, le système traite les comptes d’utilisateur 5 000 par heure.
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>Afficher l’état des comptes d’utilisateurs, des segments, des stratégies ou de l’application de stratégie
 
@@ -316,7 +316,7 @@ Une fois les segments définis, contoso passe à définir des stratégies.
 
 Contoso définit trois stratégies, comme décrit dans le tableau suivant :
 
-|Stratégie  |Définition de la stratégie  |
+|Politique  |Définition de la stratégie  |
 |---------|---------|
 |Stratégie 1 : empêcher les ventes de communiquer avec la recherche     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, la stratégie de barrière des informations est appelée *Sales-Research*. Lorsque cette stratégie est active et appliquée, cela permet d’empêcher les utilisateurs qui se trouvent dans le segment des ventes de communiquer avec les utilisateurs du segment de recherche. Il s’agit d’une stratégie à sens unique ; Il n’empêchera pas la recherche de communiquer avec les ventes. Pour cela, la stratégie 2 est requise.      |
 |Policy 2 : empêcher les recherches de communiquer avec les ventes     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> Dans cet exemple, la stratégie de barrière des informations est appelée *Research-Sales*. Lorsque cette stratégie est active et appliquée, cela permet d’empêcher les utilisateurs qui se trouvent dans le segment de recherche de communiquer avec les utilisateurs du segment de ventes.       |

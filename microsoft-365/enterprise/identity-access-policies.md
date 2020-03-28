@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
+ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978265"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43022920"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
@@ -178,7 +178,7 @@ Connectez-vous au [portail Microsoft Azure (https://portal.azure.com)](https://p
 
 | Type | Propriétés | Valeurs                  | Remarques |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | Autoriser l'accès            | Vrai  |
+|      | Accès     | Autoriser l'accès            | Vrai  |
 |      | Accès     | Exiger le changement du mot de passe | True  |
 
 **Révision :** non applicable
@@ -225,18 +225,22 @@ Grâce à l’accès conditionnel, les organisations peuvent restreindre l’acc
 
 ## <a name="define-device-compliance-policies"></a>Définir des stratégies de conformité des appareils
 
-Les stratégies de conformité des appareils définissent les exigences auxquelles les appareils doivent adhérer afin d’être marqués comme étant conformes. Créez des stratégies de conformité d’appareil Intune à partir du portail Azure. 
+Les stratégies de conformité des appareils définissent les exigences auxquelles les appareils doivent adhérer afin d’être marqués comme étant conformes. Créez des stratégies de conformité d’appareil Intune à partir du centre d’administration du gestionnaire de points de terminaison Microsoft.
 
 Créez une stratégie pour chaque plateforme :
-- Android
+- Administrateur d’appareils Android
 - Android Enterprise
-- iOS
+- iOS/iPad
 - macOS
 - Ce paramètre est disponible sur les types d’appareils suivants :
 - Windows 8,1 et versions ultérieures
 - Windows 10 et versions ultérieures
 
-Pour créer des stratégies de conformité des appareils, connectez-vous au portail Microsoft Azure avec vos informations d’identification d’administrateur, puis accédez à **Intune > la conformité des appareils**. Sélectionnez **Créer**.
+Pour créer des stratégies de conformité des appareils, connectez-vous au [Centre d’administration du gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) avec vos informations d’identification, puis accédez à périphériques stratégies de**conformité** > **Policies**des **appareils** > . Sélectionnez **créer une stratégie**.
+
+Pour que les stratégies de conformité des appareils soient déployées, elles doivent être affectées à des groupes d’utilisateurs. Vous affectez une stratégie après l’avoir créée et enregistrée. Dans le centre d’administration, sélectionnez la stratégie, puis sélectionnez **affectations**. Après avoir sélectionné les groupes pour lesquels vous souhaitez recevoir la stratégie, sélectionnez **Enregistrer** pour enregistrer l’affectation de groupe et déployer la stratégie.
+
+Pour obtenir des instructions pas à pas sur la création de stratégies de conformité dans Intune, voir [Create a Compliance Policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) dans la documentation Intune.
 
 Les paramètres suivants sont recommandés pour Windows 10.
 
@@ -255,8 +259,6 @@ Les paramètres suivants sont recommandés pour Windows 10.
 |:---|:---------|:-----|:----|
 |Version du système d'exploitation|Tous|Non configuré||
 
-Pour que toutes les stratégies ci-dessus soient considérées comme déployées, elles doivent cibler des groupes d’utilisateurs. Pour ce faire, vous pouvez créer la stratégie (à l’enregistrement) ou une version ultérieure en sélectionnant **gérer le déploiement** dans la section **stratégie** (même niveau que ajouter).
-
 **Sécurité système**
 
 |Type|Propriétés|Valeurs|Remarques|
@@ -273,9 +275,9 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 |Sécurité de l’appareil|-|Require (Rendre obligatoire)||
 ||Antivirus|Require (Rendre obligatoire)||
 ||Logiciel anti-espion|Require (Rendre obligatoire)|Ce paramètre nécessite une solution de protection contre les logiciels espions inscrite auprès du centre de sécurité Windows|
-|Defender|Logiciel anti-programme malveillant Windows Defender|Require (Rendre obligatoire)||
-||Version minimale du logiciel anti-programme malveillant Windows Defender||Uniquement pris en charge pour les ordinateurs de bureau Windows 10. Microsoft recommande une version qui n’est pas plus de cinq par rapport à la version la plus récente.|
-||Mise à jour de la signature du logiciel anti-programme malveillant Windows Defender|Require (Rendre obligatoire)||
+|Defender|Logiciel anti-programme malveillant Microsoft Defender|Require (Rendre obligatoire)||
+||Version minimale du logiciel anti-programme malveillant de Microsoft Defender||Uniquement pris en charge pour les ordinateurs de bureau Windows 10. Microsoft recommande une version qui n’est pas plus de cinq par rapport à la version la plus récente.|
+||Mise à jour de la signature du logiciel anti-programme malveillant Microsoft Defender|Require (Rendre obligatoire)||
 ||Protection en temps réel|Require (Rendre obligatoire)|Prise en charge uniquement pour les ordinateurs de bureau Windows 10|
 
 **Microsoft Defender - PACM**
@@ -283,6 +285,7 @@ Pour que toutes les stratégies ci-dessus soient considérées comme déployées
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
 |Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyenne||
+
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Exiger des PC conformes (mais pas les téléphones et les tablettes conformes)
 Avant d’ajouter une stratégie pour exiger des PC conformes, veillez à inscrire les appareils pour la gestion dans Intune. L’utilisation de l’authentification multifacteur est recommandée avant l’inscriptions de périphériques dans Intune pour garantir que l’appareil est en possession de l’utilisateur prévu. 

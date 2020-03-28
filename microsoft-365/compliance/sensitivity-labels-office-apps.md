@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: 8c37ea146447a7b38b10224db94f9995fd985e6e
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 2b77d273cdc589409506dc709669536fcea6c006
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826174"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030119"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -68,7 +68,7 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Fournir un lien aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marquer le contenu](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Aperçu : dans le [canal mensuel (ciblé)](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)            | Aperçu : dans [Office Insider](https://office.com/insider)        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
+|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Déploiement sur le [canal mensuel](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus) (2003 +) | Déploiement sur le [canal mensuel](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus) (16.35 +)   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : dans [Office Insider](https://office.com/insider)                                  | En cours de révision | En cours de révision | En cours de révision | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -91,7 +91,7 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : déploiement vers [Office Insider](https://office.com/insider)                       | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
 |
 
-## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client d’étiquetage Office intégré et le client Azure information protection
+## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Client d’étiquetage Office intégré et autres solutions d’étiquetage
 
 Le client d’étiquetage Office intégré télécharge les étiquettes de confidentialité et les paramètres de stratégie d’étiquette de confidentialité à partir des centres d’administration suivants :
 
@@ -99,19 +99,25 @@ Le client d’étiquetage Office intégré télécharge les étiquettes de confi
 - Centre de sécurité Microsoft 365
 - Centre de sécurité et conformité Office 365
 
-Pour utiliser le client d’étiquetage Office intégré, une ou plusieurs stratégies d’étiquette doivent être [publiées](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) pour les utilisateurs à partir de l’un des centres d’administration affichés.
+Pour utiliser le client d’étiquetage Office intégré, une ou plusieurs stratégies d’étiquette doivent être [publiées](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) pour les utilisateurs à partir d’un des centres d’administration et d’une [version prise en charge d’Office](#support-for-sensitivity-label-capabilities-in-apps).
 
-Toutefois, si les utilisateurs ont installé l’un des clients Azure information protection[(ou client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) [classique](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), par défaut, le client d’étiquetage intégré est désactivé dans leurs applications Office. Pour utiliser l’étiquetage intégré plutôt que le client Azure information protection pour les applications Office, désactivez ou désinstallez le complément Office pour Azure information protection :
+Si ces deux conditions sont remplies, mais que vous devez désactiver le client d’étiquetage Office intégré, utilisez le paramètre de stratégie de groupe suivant :
 
-1. Effectuez l’une des options suivantes :
-    
-    - **Pour plusieurs ordinateurs :** Configurez le paramètre **utiliser la fonctionnalité de confidentialité dans Office pour appliquer et afficher les étiquettes de confidentialité** . Recherchez ce paramètre sous **Configuration utilisateur/modèles d’administration/Microsoft Office 2016/paramètres de sécurité**. Déployez ce paramètre par le biais d’une stratégie de groupe ou à l’aide du [service de stratégie de Cloud Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
-    
-    - **Pour un ordinateur unique :** Voir « afficher, gérer et installer des compléments dans les programmes Office » pour plus d’informations sur la façon de [désactiver ou de supprimer définitivement](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) le complément Azure information protection sur un seul ordinateur.
+1. Accédez à **Configuration utilisateur/modèles d’administration/Microsoft Office 2016/paramètres de sécurité**
 
-2. Redémarrez toutes les applications Office.
+2. Set **Utilisez la fonctionnalité de sensibilité dans Office pour appliquer et afficher les étiquettes de confidentialité** à **0**. 
+ 
+Déployer ce paramètre à l’aide de la stratégie de groupe ou à l’aide du [service de stratégie de Cloud Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service). Le paramètre prend effet lorsque les applications Office redémarrent.
 
-Lorsque vous désactivez ou désinstallez ce complément Office, le client Azure information protection reste installé de sorte que vous puissiez continuer à étiqueter les fichiers en dehors de vos applications Office. Par exemple, à l’aide de l’Explorateur de fichiers ou de PowerShell.
+### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client d’étiquetage Office intégré et le client Azure information protection
+
+Si les utilisateurs ont un des clients Azure information protection[installés (ou client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) [classique](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), par défaut, le client d’étiquetage intégré est désactivé dans leurs applications Office. 
+
+Pour utiliser l’étiquetage intégré plutôt que le client Azure information protection pour les applications Office, suivez les instructions de la section précédente, mais définissez le paramètre de stratégie de groupe **Utilisez la fonctionnalité de confidentialité dans Office pour appliquer et afficher les étiquettes de confidentialité** à **1**. 
+
+Vous pouvez également désactiver ou supprimer le complément Office, **Azure information protection**. Cette méthode est adaptée à un seul ordinateur et à un test ad hoc. Pour obtenir des instructions, consultez la rubrique [afficher, gérer et installer des compléments dans les programmes Office](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
+
+Lorsque vous désactivez ou supprimez ce complément Office, le client Azure information protection reste installé de sorte que vous puissiez continuer à étiqueter les fichiers en dehors de vos applications Office. Par exemple, à l’aide de l’Explorateur de fichiers ou de PowerShell.
 
 Pour plus d’informations sur les fonctionnalités prises en charge par les clients Azure information protection et le client d’étiquetage Office intégré, reportez-vous à la rubrique [Choose the Labeling client to use for Windows Computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure information protection documentation.
 

@@ -17,12 +17,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: La fonctionnalité pièces jointes fiables permet de vérifier le temps de cliquer sur les pièces jointes des messages électroniques. Utilisez des pièces jointes fiables pour protéger votre organisation des fichiers malveillants envoyés ou reçus par courrier électronique.
-ms.openlocfilehash: c95287b3dd05cce28bad6761ca7e69ce9cc2f914
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60a5a95af846fe6dbe8c2c7aa6dced9deaae1a2d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599811"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033457"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Pièces jointes sécurisées ATP Office 365
 
@@ -68,4 +68,4 @@ Le tableau suivant décrit certains exemples de scénarios. Dans tous ces cas, n
 
 - Si vous recevez un fichier que vous souhaitez demander à Microsoft d’analyser, consultez [la section soumettre un fichier pour l’analyse contre les programmes malveillants](https://aka.ms/wdsi/submit).
 
-- Si vous recevez un message électronique (avec ou sans pièce jointe) que vous souhaitez envoyer à Microsoft pour analyse, utilisez le [complément Report message](enable-the-report-message-add-in.md).
+- Si vous recevez un message électronique (avec ou sans pièce jointe) que vous souhaitez envoyer à Microsoft pour analyse, reportez-vous à la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).

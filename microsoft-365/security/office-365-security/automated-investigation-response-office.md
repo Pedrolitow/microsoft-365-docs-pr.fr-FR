@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955570"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033445"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
@@ -92,7 +92,7 @@ Chaque étape de haut niveau inclut un certain nombre de sous-étapes qui sont e
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exemple : un message hameçon signalé par un utilisateur lance un manuel d’enquête.
 
-Supposons qu’un utilisateur de votre organisation reçoit un message indiquant qu’il s’agit d’une tentative de hameçonnage. L’utilisateur, formé pour signaler de tels messages, utilise le [complément de message de rapport pour Outlook ou Outlook Web App](enable-the-report-message-add-in.md) pour l’envoyer à Microsoft pour analyse. L’envoi est également envoyé à votre système et est visible dans l’Explorateur dans l’affichage des **soumissions** (anciennement appelé vue **signalée** par l’utilisateur). En outre, le message signalée par l’utilisateur déclenche désormais une alerte d’information basée sur le système, qui lance automatiquement le manuel d’enquête.
+Supposons qu’un utilisateur de votre organisation reçoit un message indiquant qu’il s’agit d’une tentative de hameçonnage. L’utilisateur, formé pour signaler de tels messages, utilise le [complément de message de rapport](enable-the-report-message-add-in.md) pour l’envoyer à Microsoft pour analyse. L’envoi est également envoyé à votre système et est visible dans l’Explorateur dans l’affichage des **soumissions** (anciennement appelé vue **signalée** par l’utilisateur). En outre, le message signalée par l’utilisateur déclenche désormais une alerte d’information basée sur le système, qui lance automatiquement le manuel d’enquête.
 
 Lors de la phase d’enquête de racine, différents aspects du courrier électronique sont évalués. Cela inclut ce qui suit :
 - Détermination du type de menace susceptible de se présenter ;

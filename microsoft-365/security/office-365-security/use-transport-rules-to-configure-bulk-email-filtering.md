@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie dans Exchange Online Protection pour le filtrage de courrier en nombre.
-ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b08edfdd88f6f522d3bf212b209ee4b293d7198a
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895046"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033637"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>Utiliser des règles de flux de messagerie pour filtrer les messages électroniques en masse dans Office 365
 
@@ -36,7 +36,7 @@ Cette rubrique explique comment créer ces règles de flux de messagerie dans le
 
 - Pour ouvrir le centre d’administration Exchange dans Exchange Online, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à l’environnement de ligne de commande Exchange Online Protection PowerShell autonome, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection autonome, voir [Se connecter à PowerShell d’Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Pour plus d’informations sur les règles de flux de messagerie dans Exchange Online et dans la version autonome d’EOP, consultez les rubriques suivantes :
 
@@ -66,7 +66,7 @@ Cette rubrique explique comment créer ces règles de flux de messagerie dans le
 
    - **Appliquer cette règle si**: configurez l’un des paramètres suivants pour rechercher du contenu dans les messages à l’aide d’expressions régulières (Regex) ou de mots ou d’expressions :
 
-     - **L’objet ou** \> le corps de l’objet ou du corps **correspond à ces modèles de texte**: dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, puis cliquez sur **Ajouter** ![une icône](../../media/ITPro-EAC-AddIcon.png)et répétez l’opération autant de fois que nécessaire.
+     - **L’objet ou le corps** \> **ou le corps correspond à ces modèles de texte**: dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, puis cliquez sur **Ajouter** ![une icône](../../media/ITPro-EAC-AddIcon.png)et répétez l’opération jusqu’à ce que vous ayez entré toutes les valeurs.
 
        - `If you are unable to view the content of this email\, please`
 
@@ -96,7 +96,7 @@ Cette rubrique explique comment créer ces règles de flux de messagerie dans le
 
        Lorsque vous avez terminé, cliquez sur **OK**.
 
-     - **L’objet ou** \> le corps **de texte ou le corps de texte comprend l’un des mots**suivants : dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, cliquez sur **Ajouter** ![une icône](../../media/ITPro-EAC-AddIcon.png), puis répétez l’opération autant de fois que nécessaire.
+     - **L’objet ou** \> le corps **ou le corps de texte comprend l’un des mots**suivants : dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, cliquez sur **Ajouter** ![une icône](../../media/ITPro-EAC-AddIcon.png)ajouter, puis répétez l’opération jusqu’à ce que vous ayez entré toutes les valeurs.
 
        - `to change your preferences or unsubscribe`
 
@@ -138,7 +138,7 @@ Cette rubrique explique comment créer ces règles de flux de messagerie dans le
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer** .
 
-## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a>Utiliser PowerShell pour créer des règles de flux de messagerie qui filtrent les messages électroniques en masse
+## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>Utiliser PowerShell pour créer des règles de flux de messagerie qui filtrent les messages électroniques en masse
 
 Utilisez la syntaxe suivante pour créer une des règles de flux de messagerie ou les deux (expressions régulières et mots) :
 

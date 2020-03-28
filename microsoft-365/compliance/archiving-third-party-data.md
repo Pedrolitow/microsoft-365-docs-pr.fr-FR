@@ -16,28 +16,28 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Les administrateurs peuvent importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents vers des boîtes aux lettres de votre organisation Microsoft 365. Cela vous permet d’archiver des données à partir de Facebook, de Twitter et d’autres sources de données tierces dans Microsoft 365. Vous pouvez ensuite utiliser et appliquer les fonctionnalités de conformité de Microsoft 365 (telles que la conservation légale, la découverte électronique, l’archivage inaltérable et les stratégies de rétention) pour les données tierces.
-ms.openlocfilehash: ac732110dac8d590ac30cfb062251d2e970bdd3d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72afb48f74a30bac2904e857a33487a83eba48cd
+ms.sourcegitcommit: f9b5eca20e025acc36635cbd1786ff3407295857
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596001"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43027654"
 ---
 # <a name="archive-third-party-data"></a>Archiver des données tierces
 
 Microsoft 365 permet aux administrateurs d’importer et d’archiver des données tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents, vers des boîtes aux lettres de votre organisation Microsoft 365. Les exemples de sources de données tierces que vous pouvez importer dans Microsoft 365 incluent les services suivants : 
   
-- **Social :** Facebook, LinkedIn, Twitter et Yammer 
+- **Social :** Facebook, LinkedIn, Twitter et Yammer
 
-- **Messagerie instantanée :** Yahoo Messenger, GoogleTalk et Cisco Jabber 
+- **Messagerie instantanée :** Yahoo Messenger et GoogleTalk
 
-- **Collaboration sur les documents :** Boîte et DropBox 
+- **Collaboration sur les documents :** Boîte et DropBox
 
-- **Secteurs verticaux :** Gestion des relations client (par exemple, Salesforce chatter) et services financiers (par exemple, Bloomberg et Thomson Reuters) 
+- **Secteurs verticaux :** Gestion des relations client (par exemple, Salesforce chatter) et services financiers (par exemple, Bloomberg et Thomson Reuters)
 
-- **Messagerie SMS/texte :** BlackBerry 
+- **Messagerie SMS/texte :** BlackBerry
 
-Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités&mdash;de conformité de Microsoft 365 telles que la conservation pour litige, la découverte électronique, l’archivage inaltérable, l'&mdash;audit, la conformité de la communication et les stratégies de rétention à ces données. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez effectuer des recherches dans des données tierces à l’aide des outils eDiscovery de Microsoft. Vous pouvez également appliquer des stratégies d’archivage et de rétention à des données tierces, comme vous pouvez le faire pour Microsoft Data. En bref, l’archivage des données tierces dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, la découverte électronique, l’archivage inaltérable, l’audit, la conformité de la communication et les stratégies de rétention à ces données. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez effectuer des recherches dans des données tierces à l’aide des outils eDiscovery de Microsoft. Vous pouvez également appliquer des stratégies d’archivage et de rétention à des données tierces, comme vous pouvez le faire pour Microsoft Data. En bref, l’archivage des données tierces dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 Il existe deux façons d’importer et d’archiver des données tierces dans Microsoft 365 :
 

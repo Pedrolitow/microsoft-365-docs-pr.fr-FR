@@ -2,10 +2,10 @@
 title: Quelle est la différence entre courrier indésirable et message électronique en masse ?
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 1/7/2015
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,35 +15,36 @@ search.appverid:
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
-description: Les clients askwhat parfois la différence entre le courrier indésirable et les messages électroniques en masse ? L’objectif de cette rubrique est d’expliquer la différence et de fournir des informations sur les différentes options disponibles dans Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: 55924ac5e83ca109fd66d1723cdb7c5f43f20df6
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Cette rubrique explique la différence entre le courrier indésirable (courrier indésirable) et le courrier électronique en masse, et les contrôles associés dans Office 365.
+ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895034"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033625"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Quelle est la différence entre courrier indésirable et message électronique en masse ?
 
-Les clients s'interrogent parfois sur la différence entre le courrier indésirable et les messages électroniques en masse. Cette rubrique a pour but d'expliquer cette différence et de fournir des informations sur les différentes options disponibles dans Exchange Online et Exchange Online Protection (EOP).
-  
- **Qu'est-ce que le courrier indésirable ?**
-  
-Il s'agit de messages électroniques non sollicités (et généralement non désirés) filtrés par le service, aussi appelés « spam ». Par défaut, le service rejettera le message indésirable sur la base de la réputation de l'adresse IP d'expédition. Toutefois, s'il n'est pas détecté lors de l'inspection de l'adresse IP mais qu'il est classé comme indésirable par les filtres de contenu, le message est envoyé vers le dossier Courrier indésirable des destinataires. 
-  
-> [!NOTE]
-> L’action effectuée sur les messages filtrés sur le contenu est configurable via les stratégies de filtrage de contenu dans le centre d’administration Exchange, comme décrit dans [configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md). En outre, si vous estimez que le courrier indésirable n'est pas classé correctement, vous pouvez signaler les messages que vous considérez indésirables ou non à Microsoft de plusieurs façons, comme décrit dans la rubrique [Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
-  
- **Que sont les messages électroniques en masse ?**
-  
-Les messages électroniques en masse, aussi appelés « messages gris » (graymail), sont plus difficiles à classer. Tandis que le courrier indésirable constitue une menace constante, les messages électroniques en masse contiennent généralement une annonce ou un message publicitaire qui ne sera normalement pas envoyé à plusieurs reprises. Certains utilisateurs considèrent les messages électroniques en masse comme indésirables, mais d'autres les sollicitent et se sont d'ailleurs peut-être volontairement inscrits pour les recevoir. Par exemple, certains utilisateurs souhaiteront recevoir des messages publicitaires de la société Contoso ou des invitations à une conférence à venir sur la cybersécurité, tandis que d'autres considèreront ces messages comme indésirables.
-  
+Les clients Office 365 avec des boîtes aux lettres dans Exchange Online ou des clients Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online demandent parfois : « quelle est la différence entre le courrier indésirable et le courrier électronique en masse ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
+
+- Le courrier **indésirable** est du courrier indésirable, qui sont des messages non sollicités et universellement indésirables (lorsqu’ils sont identifiés correctement). Par défaut, EOP rejette le courrier indésirable en fonction de la réputation du serveur de messagerie source. Si un message passe l’inspection IP source, il est envoyé au filtrage du courrier indésirable. Si le message est classé comme courrier indésirable par filtrage du courrier indésirable, le message est remis (par défaut) aux destinataires concernés et déplacé vers le dossier courrier indésirable.
+
+  - Vous pouvez configurer les actions à effectuer sur le filtrage du courrier indésirable. Pour obtenir des instructions, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+
+  - Si vous n’êtes pas d’accord avec le filtrage du courrier indésirable, vous pouvez signaler à Microsoft les messages que vous considérez comme courrier indésirable ou non indésirables, comme décrit dans la section [rapports de messages et de fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+
+- Le **courrier en masse** (également appelé _courrier gris_) est plus difficile à classer. Tandis que le courrier indésirable est une menace constante, les messages électroniques en masse sont souvent des publicités à usage unique ou des messages marketing. Certains utilisateurs veulent des messages électroniques en nombre (et en fait, ils se sont délibérément inscrits pour les recevoir), tandis que d’autres utilisateurs considèrent le courrier en masse comme du courrier indésirable. Par exemple, certains utilisateurs souhaitent recevoir des messages publicitaires de la société Contoso Corporation ou des invitations à une conférence à venir sur la cyber sécurité, tandis que d’autres utilisateurs considèrent ces mêmes messages comme du courrier indésirable.
+
+  Pour plus d’informations sur la façon dont le courrier en masse est identifié, voir [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).
+
 ## <a name="how-to-manage-bulk-email"></a>Gestion des messages électroniques en masse
 
-La gestion des messages électroniques en masse n'est pas facile, car s'ils sont tous sont classés comme indésirables, les utilisateurs qui les sollicitent peuvent se plaindre et les soumettre comme des faux positif, identifiés à tort comme courrier indésirable. À l'inverse, si tous les messages électroniques en masse sont autorisés à passer, les utilisateurs qui ne les ont pas sollicités peuvent se plaindre et les soumettre comme des faux négatifs, arrivés à tort dans leur boîte de réception.
-  
-### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Activer le contrôle de sensibilité des messages électroniques en masse dans la stratégie de filtrage de contenu
+En raison de la réaction mixte au courrier en masse, il n’existe pas de conseils universels qui s’appliquent à chaque organisation.
 
-En fonction de la stratégie de votre entreprise en matière de messages électroniques en nombre, les administrateurs peuvent sélectionner un seuil à attribuer aux messages électroniques en nombre. Le paramètre est configurable via stratégies de filtrage de contenu dans le centre d’administration Exchange. Consultez [configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md) pour les étapes. Vous pouvez choisir un paramètre de seuil de 1-9, où 1 marque la plupart des messages électroniques en masse comme courrier indésirable, et 9 la plupart des messages électroniques en nombre à être remis. Le service effectue ensuite l'action configurée, comme par exemple l'envoi du message dans le dossier Courrier indésirable du destinataire. 
-  
+Les stratégies de blocage du courrier indésirable ont un seuil BCL par défaut qui est utilisé pour identifier le courrier en nombre comme du courrier indésirable. Les administrateurs peuvent augmenter ou diminuer le seuil. Pour plus d’informations, voir les rubriques suivantes :
 
+- [Configurez les stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+
+- [Paramètres de la stratégie anti-courrier indésirable EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+
+Une autre option facile à oublier : si un utilisateur se plaint de recevoir du courrier en masse, mais que les messages proviennent d’expéditeurs dignes de réputation qui passent le filtrage du courrier indésirable dans EOP, demandez à l’utilisateur de vérifier une option de désinscription dans le message électronique en masse.
