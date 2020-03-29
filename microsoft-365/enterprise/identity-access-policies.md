@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: eb06db140e4e3c9c245b7689edecf4b0cb86b674
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: 803edd6fdf3d711a67b2ba4ff2e35f15c683c414
+ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035139"
+ms.lasthandoff: 03/29/2020
+ms.locfileid: "43036348"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
