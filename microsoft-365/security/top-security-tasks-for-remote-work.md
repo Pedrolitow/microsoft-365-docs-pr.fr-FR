@@ -1,5 +1,5 @@
 ---
-title: 12 premières tâches pour les équipes de sécurité à prendre en charge le travail à domicile
+title: 12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 'Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes. '
-ms.openlocfilehash: 73f2ae19a7424d392bb365d7a24a83532a1950bf
-ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
+ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
+ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/29/2020
-ms.locfileid: "43036383"
+ms.locfileid: "43037475"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
@@ -116,7 +116,7 @@ Vous devrez collaborer avec votre administrateur Exchange Online et votre admini
 À présent que vous disposez d’Office 365 ATP et d’Azure ATP configurés, vous pouvez afficher les signaux combinés à partir de ces fonctionnalités dans un tableau de bord. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) rassemble des alertes, des incidents, une enquête et une réponse automatiques, ainsi qu’une recherche avancée sur les charges de travail (Azure ATP, Office 365 ATP, Microsoft Defender ATP et Microsoft Cloud App Security) dans un seul volet sur [Security.Microsoft.com](https://security.microsoft.com). 
 <br>
 
-![Illustration de tableau de bord MTP](../media/top-10-security-remote-work-mtp-dashboard.png)
+![Illustration de tableau de bord MTP](../media/top-ten-security-remote-work-mtp-dashboard.png)
 <br><br>
 Une fois que vous avez configuré un ou plusieurs services de protection avancée contre les menaces, activez le service MTP. De nouvelles fonctionnalités sont ajoutées en continu à la fonction MTP ; envisagez d’opter pour recevoir des fonctionnalités d’aperçu.
 
@@ -181,7 +181,7 @@ Certaines des protections traditionnellement fournies par le routage du trafic v
 
 Pour plus d’informations, reportez-vous à ces ressources sur docs :
 - [Vue d’ensemble : optimiser la connectivité Office 365 pour les utilisateurs distants à l’aide du tunneling VPN Split](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implémentation du tunneling VPN Split pour Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Implémentation de la segmentation du tunnel par VPN pour Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Articles de blog récents sur cette rubrique :
 - [Comment optimiser rapidement le trafic Office 365 pour le personnel à distance & réduire la charge sur votre infrastructure](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
