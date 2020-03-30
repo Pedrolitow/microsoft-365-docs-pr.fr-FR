@@ -21,12 +21,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: Obtenir le rapport d’utilisation de OneDrive pour votre organisation et connaître l’activité de chaque utilisateur OneDrive, le nombre de fichiers partagés et l’utilisation du stockage.
-ms.openlocfilehash: b51071fe8c91b0064d6680b628b58df1f370c73d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b94e5e34f7599cc372b506c2c365503ea1334685
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353585"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047084"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité OneDrive entreprise
 
@@ -40,7 +40,7 @@ Par exemple, vous pouvez comprendre l'activité de chaque utilisateur titulaire 
 Si vous voulez connaître le volume d'activité et l'utilisation du stockage sur chaque compte OneDrive, consultez le [Rapport Utilisation de OneDrive](onedrive-for-business-usage.md).
   
 > [!NOTE]
-> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint ou Skype entreprise pour afficher des rapports. 
+> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports.  
  
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>Comment accéder au Rapport Activité OneDrive ?
 
@@ -64,7 +64,7 @@ Vous pouvez suivre l'activité sur OneDrive Entreprise en examinant les vues **F
 |5.  <br/> | Sur le graphique **Fichiers**, l'axe Y représente le nombre de fichiers enregistrés, synchronisés, modifiés ou partagés par un utilisateur.  <br/>  Sur le graphique **Utilisateurs**, l'axe Y indique le nombre d'utilisateurs qui ont interagi avec un fichier (enregistré, synchronisé, modifié ou partagé) sur un compte OneDrive.  <br/>  L'axe X sur tous les graphiques représente la plage de dates sélectionnée pour ce rapport particulier.  <br/> |
 |6.  <br/> |Vous pouvez filtrer la série que vous voyez sur le graphique en sélectionnant un élément dans la légende. Par exemple, dans le graphique **fichiers** , sélectionnez **visionné ou modifié** ou **synchronisé** pour afficher uniquement les informations relatives à chacun d’eux. La modification de cette sélection ne modifie pas les informations du tableau grille.  <br/> |
 |7.  <br/> | Le tableau présente une répartition des données au niveau utilisateur. Vous pouvez ajouter ou supprimer des colonnes.   <br/>  **Username** est le nom d’utilisateur du propriétaire du compte OneDrive.  <br/> **Date de dernière activité (UTC)** indique la dernière date à laquelle une activité de fichier a été effectuée sur le compte OneDrive dans la plage de dates sélectionnée. Pour voir l'activité qui s'est produite à une date spécifique, sélectionnez celle-ci directement dans le graphique.  <br/> ![Sélection d’une date spécifique dans le graphique](../../media/29e54c4b-8dc2-4ed8-9367-1f66f2988fac.png)  <br/>  Cette opération filtre le tableau pour afficher les données d’activité des fichiers uniquement pour les utilisateurs ayant effectué l’activité à ce jour spécifique.  <br/> **Fichiers consultés ou modifiés** indique le nombre de fichiers chargés, téléchargés, modifiés ou consultés par l'utilisateur.  <br/> **Fichiers synchronisés** indique le nombre de fichiers qui ont été synchronisés à partir de l'appareil local d'un utilisateur sur le compte OneDrive.  <br/> Les **fichiers partagés en interne** sont le nombre de fichiers qui ont été partagés avec des utilisateurs au sein de l’organisation ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> **Fichiers partagés en externe** indique le nombre fichiers qui ont été partagés avec des utilisateurs extérieurs à l'organisation.  <br/> **Supprimé** indique que la licence de l'utilisateur a été supprimée.  <br/> Remarque : l’activité d’un utilisateur supprimé reste affichée dans un rapport tant qu’il a été concédé sous licence à un moment donné au cours de la période sélectionnée. La colonne **Supprimé** permet de voir que, si l'utilisateur n'est peut-être plus actif, il a été pris en compte dans les données du rapport.<br/>**Date de suppression** indique la date à laquelle la licence de l'utilisateur a été supprimée.  <br/> Le **produit affecté** est les produits Microsoft 365 qui sont sous licence pour l’utilisateur.  <br/>  Si les stratégies de votre organisation vous empêchent d’afficher des rapports où les informations utilisateur sont identifiables, vous pouvez modifier le paramètre de confidentialité de tous ces rapports. Consultez la section **comment masquer les détails au niveau de l’utilisateur ?** dans les [rapports d’activité du centre d’administration 365 de Microsoft](activity-reports.md).  <br/> |
-|8.  <br/> |Sélectionnez l' **** icône ![gérer les colonnes gérer](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) les colonnes pour ajouter ou supprimer des colonnes dans le rapport.  <br/> |
+|8.  <br/> |Sélectionnez l' **Manage columns** icône ![gérer les colonnes gérer](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) les colonnes pour ajouter ou supprimer des colonnes dans le rapport.  <br/> |
 |9.  <br/> |Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter.  <br/> |
 |||
    

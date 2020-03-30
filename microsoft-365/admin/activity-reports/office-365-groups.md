@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenez un rapport des groupes Microsoft 365 sur les groupes et leurs activités.
-ms.openlocfilehash: b76bd83dfbd215a6645bd73b2f9b2fb4be0c493b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 23b72d960a693ddeb8b05d261bd90f180b7c731d
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353665"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047130"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Rapports Microsoft 365 dans le centre d’administration-groupes Microsoft 365
 
 Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport groupes Microsoft 365, vous pouvez obtenir des informations sur l’activité des groupes dans votre organisation et voir le nombre de groupes créés et utilisés.
   
 > [!NOTE]
-> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint ou Skype entreprise pour afficher des rapports. 
+> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports.  
   
 ## <a name="how-to-get-to-the-groups-report"></a>Comment accéder au rapport groupes
 

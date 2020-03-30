@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: 601e110719e4d69a647cfd55ecd4ae6db2568947
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42402315"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046938"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité des formulaires
 
@@ -32,7 +32,7 @@ Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l�
 Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulaire d’une licence pour utiliser Microsoft Forms en examinant leur interaction avec les formulaires. Elle vous aide également à comprendre le niveau de collaboration en examinant le nombre de formulaires créés et les formulaires auxquels l’utilisateur a répondu.
   
 > [!NOTE]
-> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint ou Skype entreprise pour afficher des rapports. 
+> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports. 
 
 ## <a name="how-to-get-to-the-forms-activity-report"></a>Comment accéder au rapport d’activité de formulaires
 

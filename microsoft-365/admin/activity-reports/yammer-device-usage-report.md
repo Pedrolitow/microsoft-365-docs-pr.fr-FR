@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
 description: 'Obtenir le rapport d’utilisation de Yammer sur les appareils sur lesquels vos utilisateurs utilisent Yammer. '
-ms.openlocfilehash: 42fc4b1f9a4d782c50eabd892f6a49d1c474be01
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1dfd72c8974aa10b3774d2cdb17ac1bf82b9501b
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353375"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047010"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Rapports Microsoft 365 dans le centre d’administration-rapport d’utilisation de Yammer Device
 
@@ -31,7 +31,7 @@ Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l�
 Les rapports d'utilisation de Yammer sur les appareils vous donnent des informations sur les appareils sur lesquels vos utilisateurs utilisent Yammer. Vous pouvez afficher le nombre d'utilisateurs quotidiens par type d'appareil et le nombre d'utilisateurs par type d'appareil. Vous pouvez afficher les deux sur une période donnée. Vous pouvez également consulter les détails par utilisateur.
   
 > [!NOTE]
-> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint ou Skype entreprise pour afficher des rapports. 
+> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports. 
   
 ## <a name="how-do-i-get-to-the-yammer-device-usage-report"></a>Comment accéder au rapport d'utilisation de Yammer sur les appareils ?
 

@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Découvrez comment obtenir un rapport d’utilisation des boîtes aux lettres pour connaître les activités des utilisateurs à l’aide d’une boîte aux lettres utilisateur.
-ms.openlocfilehash: d7d36359801fe72ac1c3ffc210c7795030f0b2e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239168"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046926"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation des boîtes aux lettres
 
 Le **rapport d’utilisation des boîtes aux lettres** fournit des informations sur les utilisateurs disposant d’une boîte aux lettres utilisateur et le niveau d’activité de chacun d’eux en fonction des e-mails envoyer, lire, créer un rendez-vous, envoyer une réunion, accepter une réunion, refuser une réunion et annuler une activité de réunion. Il fournit également des informations sur l'espace de stockage utilisé par chaque boîte aux lettres utilisateur et sur le nombre de boîtes aux lettres proches de leurs quotas de stockage. 
   
 > [!NOTE]
-> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint ou Skype entreprise pour afficher des rapports. 
+> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports. 
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>Comment accéder au rapport Utilisation des boîtes aux lettres ?
 

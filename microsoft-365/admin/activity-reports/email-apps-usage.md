@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Découvrez comment obtenir des rapports d’utilisation des applications de messagerie électronique à propos des applications de messagerie qui se connectent à Exchange Online et à la version d’Outlook utilisée par les utilisateurs.
-ms.openlocfilehash: bb75b28e41de37d4f21acedd4705db71f6c2c303
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5bdd62d150cf103cd3c3520cf5a0c593dceb8e66
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353785"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046854"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation des applications de messagerie
 
 Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d’utilisation des applications de messagerie, vous pouvez voir le nombre d’applications de messagerie qui se connectent à Exchange Online. Vous pouvez également afficher les informations relatives à la version des applications Outlook utilisées, ce qui vous permet d'assurer le suivi des personnes utilisant des versions non prises en charge pour installer les versions prises en charge d'Outlook.
   
 > [!NOTE]
-> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint ou Skype entreprise pour afficher des rapports. 
+> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports.  
  
 ## <a name="how-to-get-to-the-email-apps-report"></a>Comment accéder au rapport des applications de messagerie
 
