@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de migration des versions de Microsoft Office, des serveurs Office et de Windows vers Microsoft 365 Entreprise au sein de votre organisation.
-ms.openlocfilehash: 3a501ec7919972e5b8b289bbddb3bf7e6ae9a8f0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 7506d374391e05202be685d8ebfe8a04e8d62761
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952017"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053082"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migration vers Microsoft 365 Entreprise
 
@@ -30,7 +30,7 @@ Afin d’optimiser la valeur commerciale de la suite intégrée Microsoft 365 
 - Windows 7 et Windows 8.1 sur vos appareils vers Windows 10 Entreprise
 
 >[!Note]
->Windows 7 arrive à la fin du support le **14 janvier 2020**. Pour plus d’informations, cliquez [ici](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
+>Windows 7 a atteint la fin du support le **14 janvier 2020**. Pour plus d’informations, cliquez [ici](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
 Effectuer toutes ces migrations au fil du temps permet à votre entreprise de bénéficier d’un [espace de travail moderne](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), ainsi que d’un environnement intégré et sécurisé qui favorise le travail d’équipe et la créativité dans votre organisation, grâce à Microsoft 365 Entreprise. 
@@ -145,7 +145,7 @@ Pour les produits serveurs de la version Office 2016, la fin de l’assistance 
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Migration pour Microsoft Windows 7 et 8.1
 
-Windows 7 arrive à la fin du support le **14 janvier 2020**. Pour migrer vos appareils exécutant Windows 7 ou Windows 8.1, vous pouvez effectuer une [mise à niveau sur place](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
+Windows 7 a atteint la fin du support le **14 janvier 2020**. Pour migrer vos appareils exécutant Windows 7 ou Windows 8.1, vous pouvez effectuer une [mise à niveau sur place](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
 
 Pour accéder à d’autres méthodes, voir [Scénarios de déploiement de Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Vous pouvez également [planifier le déploiement de Windows 10](https://aka.ms/planforwin10deployment) par vous-même.
 
