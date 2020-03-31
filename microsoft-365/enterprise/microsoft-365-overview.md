@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951993"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053094"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -72,7 +72,7 @@ L' [affiche de Microsoft 365 pour entreprise](../media/m365-poster/Microsoft365E
 Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
-## <a name="transition-your-entire-organization"></a>Migration de l’organisation entière
+## <a name="transition-your-entire-organization"></a>Migration de l’ensemble de votre organisation
 
 Pour obtenir une meilleure idée de la façon de déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 pour les entreprises, téléchargez l' [affiche de transition](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
@@ -88,7 +88,7 @@ Les produits suivants ont atteint la fin du support le **14 janvier 2020**:
 
 - [Windows 7](https://aka.ms/win7upgrade)
 
-Les produits suivants ont atteint la fin du support le **13 octobre 2020**:
+Les produits suivants vont atteindre la fin du support le **13 octobre 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)

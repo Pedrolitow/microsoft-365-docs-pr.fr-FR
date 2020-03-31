@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 3f60c40ecd1810d630a4607d6b0915d6f3089a99
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372042"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058904"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Présentation du Centre de sécurité Microsoft 365
 
@@ -45,7 +45,7 @@ Le Centre de sécurité Microsoft 365 inclut les éléments suivants :
 
 * **Accueil** : obtenez un aperçu rapide de l’état global de la sécurité de votre organisation.
 * **Incidents** : Découvrez l’histoire plus large d’une attaque en reliant les points vus sur des alertes individuelles sur des entités. Vous saurez exactement où une attaque a commencé, quels appareils ont un impact, quels sont les utilisateurs concernés et où la menace s’est dépassée.
-* **Alertes** : bénéficiez d’une meilleure visibilité sur toutes les alertes dans votre environnement Microsoft 356, notamment les alertes de sécurité de l’application Cloud Microsoft, Office 365 ATP, Azure ad, Azure ATP et Microsoft Defender ATP. Disponible pour les clients E3 et E5.  
+* **Alertes** : bénéficiez d’une meilleure visibilité sur toutes les alertes dans votre environnement Microsoft 365, notamment les alertes de sécurité de l’application Cloud Microsoft, Office 365 ATP, Azure ad, Azure ATP et Microsoft Defender ATP. Disponible pour les clients E3 et E5.  
 * **Centre de notifications** -réduisez le volume des alertes que votre équipe de sécurité doit adresser manuellement, ce qui permet à l’équipe des opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur.
 * **Rapports** : obtenez les détails et les informations dont vous avez besoin pour mieux protéger vos utilisateurs, appareils, applications et bien plus encore.
 * **Degré de sécurisation** : améliorez votre niveau de sécurité global grâce au degré de sécurisation Microsoft. Cette page fournit un résumé de tous les différentes fonctionnalités et fonctionnalités de sécurité que vous avez activées et inclut des recommandations pour les domaines à améliorer.
@@ -64,5 +64,5 @@ Explorez ces rubriques relatives à la surveillance, à l’examen et à la rép
 - [Recherche proactive de menaces](advanced-hunting-overview.md) pour les tentatives d’intrusion et l’activité de violation affectant votre courrier, vos données, vos périphériques et vos comptes
 - [Comprendre les dernières campagnes](latest-attack-campaigns.md) et techniques d’attaque avec l’analyse des menaces
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 - [Portails de sécurité Microsoft](portals.md)
