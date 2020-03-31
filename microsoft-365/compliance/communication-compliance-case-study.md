@@ -15,15 +15,16 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- remotework
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6f23bece83f0c0fc25ddb26b8ceddcb1c956bc5e
-ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
+ms.openlocfilehash: 4a119e0ec082893d393d1b43af76b41dc93c76a1
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43024344"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053071"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Etude de cas : contoso configure rapidement une stratégie de langage offensant pour Microsoft teams et les communications Exchange
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Forum aux questions pour les administrateurs sur l’utilisation du service d’importation Office 365 pour importer les fichiers PST de votre organisation vers des boîtes aux lettres Office 365. '
-ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 439a321c3890d85f7ca0f7da0074af80f6b7fed5
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634432"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058915"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>FAQ sur l’importation de fichiers PST dans Office 365
 
@@ -79,6 +79,10 @@ Cela dépend de la capacité de votre réseau, mais le chargement de chaque tér
   
 En présence de plusieurs fichiers PST et de plusieurs boîtes aux lettres cibles, le processus d’importation s’exécute en parallèle ; en d’autres termes, chaque paire PST/boîte aux lettres est importée simultanément. De même, si plusieurs fichiers PST sont importés dans une même boîte aux lettres, ils sont importés simultanément.
   
+ **Comment le processus d’importation PST gère-t-il les éléments de courrier en double ?**
+
+Le processus d’importation PST vérifie les éléments dupliqués et ne copie pas les éléments d’un fichier PST vers la boîte aux lettres ou l’archive si un élément correspondant existe dans le dossier cible de la boîte aux lettres cible ou de l’archive cible. Si vous réimportez le même fichier PST et spécifiez un autre dossier cible (à l’aide de la propriété TargetRootFolder dans le fichier de mappage d’importation PST) que celui que vous avez spécifié dans un travail d’importation précédent, tous les éléments du fichier PST seront réimportés.
+
  **Y a-t-il une limite de taille applicable aux messages lors de l’importation de fichiers PST ?**
   
 Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément sera ignoré lors du processus d’importation.
@@ -178,6 +182,10 @@ Par ailleurs, les fichiers PST issus d’Outlook version 2007 et ultérieures p
   
 Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément sera ignoré lors du processus d’importation.
   
+  **Comment le processus d’importation PST gère-t-il les éléments de courrier en double ?**
+
+Le processus d’importation PST vérifie les éléments dupliqués et ne copie pas les éléments d’un fichier PST vers la boîte aux lettres ou l’archive si un élément correspondant existe dans le dossier cible de la boîte aux lettres cible ou de l’archive cible. Si vous réimportez le même fichier PST et spécifiez un autre dossier cible (à l’aide de la propriété TargetRootFolder dans le fichier de mappage d’importation PST) que celui que vous avez spécifié dans un travail d’importation précédent, tous les éléments du fichier PST seront réimportés.
+ 
  **Les propriétés des messages, comme la date d’envoi ou de réception, la liste de destinataires, etc., sont-elles conservées après l’importation de fichiers PST dans une boîte aux lettres Office 365 ?**
   
 Oui. Les métadonnées du message d’origine sont inchangées pendant l’importation
