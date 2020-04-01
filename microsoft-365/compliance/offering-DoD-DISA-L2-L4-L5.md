@@ -1,7 +1,7 @@
 ---
 title: Autorisation provisoire du ministère américain de la défense (DoD)
 description: Microsoft a reçu des autorisations provisoires du ministère de la défense (DoD) aux niveaux d’impact 5, 4 et 2.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0cd96d9b7d769f75d5b7f26bb364cf517844e29d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bfcad9829c32a7a4f91e4d7dee7dec922059cd18
+ms.sourcegitcommit: 397b22cea138cadef026128d878650f8f609a329
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602521"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068572"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorisation provisoire du ministère américain de la défense aux niveaux d’impact 2, 4 et 5
 
@@ -35,8 +35,8 @@ La prise en charge du service Cloud DoD définit les stratégies, les contrôles
 
 Les services Cloud de Microsoft sont conformes aux exigences des exigences du ministère américain de la défense, des niveaux d’impact 2 à 5, ce qui permet aux organismes de défense américains de tirer parti de l’économie de coûts et de la sécurité rigoureuse du Cloud Microsoft. En déployant des services protégés, dont le gouvernement Azure, Office 365 le gouvernement américain et Dynamics 365 Government, les agences de défense peuvent utiliser une gamme complète de services conformes.
 
-- Découvrez les avantages de DoD DISA L2, L4, n5 sur le Cloud Microsoft : [Télécharger les concepts du département de la défense DISA](https://aka.ms/disa-backgrounder)
-- Découvrez comment accélérer votre déploiement DoD DISA L2, L4, n5 avec notre plan de sécurité et de conformité Azure : [Télécharger les implémentations de contrôle de sécurité de niveau 5 Azure DoD](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
+- Découvrez les avantages de DoD DISA L2, L4 sur le Cloud Microsoft : [Télécharger la documentation de la DISA du ministère des défenses](https://aka.ms/disa-backgrounder)
+- Découvrez comment accélérer votre déploiement DoD DISA L2, L4 avec notre [modèle DoD DoD](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>Niveau d’autorisation provisoire de DoD
 
@@ -58,7 +58,7 @@ En fonction des autorisations FedRAMP, DISA service de Cloud Computing a accord�
 
 Le niveau d’impact 2 couvre les informations non classifiées non contrôlées, c’est-à-dire les données qui sont autorisées pour la publication publique. Elle couvre également d’autres informations non classées qui, bien qu’elles ne sont pas considérées comme critiques, continuent à avoir un niveau de contrôle d’accès minimal. Cette autorisation permet aux clients du secteur public fédéral de déployer des informations non sensibles et des sites Web de défense de base sur les services Cloud de Microsoft à l’échelle de l’étendue.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services cloud Microsoft concernés
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Services couverts pour le niveau d’impact DoD 5
 
@@ -83,17 +83,17 @@ Une fois qu’un DoD PA est accordé, les services de Cloud Computing Microsoft 
 
 ## <a name="fast-track-your-deployment-of-dod-solutions-on-azure"></a>Suivi rapide de votre déploiement de solutions DoD sur Azure
 
-Prenez le temps de tirer parti des avantages du Cloud dans le secteur public avec le plan de défense du département de sécurité et de conformité Azure. Ce plan fournit des outils et des conseils pour vous aider à créer des solutions conformes au DoD dès aujourd’hui. [Commencez à utiliser le modèle Azure DoD](https://aka.ms/Azure-Blueprint-DoD-NIST).
+Prenez le temps de tirer parti des avantages du Cloud dans le secteur public avec le plan de défense du département de sécurité et de conformité Azure. Ce plan fournit des outils et des conseils pour vous aider à créer des solutions conformes au DoD dès aujourd’hui. [Commencez à utiliser le modèle Azure DoD](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-**Puis-je tirer profit de la conformité Microsoft dans le processus de certification de mon organisation ?**
+**Puis-je utiliser la conformité de Microsoft dans le processus de certification de mon organisation ?**
 
 Oui. Toutes les agences DoD peuvent compter sur les certifications des services de Cloud Computing de Microsoft comme base de tout programme ou initiative nécessitant une autorisation DoD. (Ceci s’applique également aux autres organisations qui prennent en charge DoD et qui nécessitent des services Cloud.) Toutefois, vous devez obtenir vos propres autorisations pour les composants en dehors de ces services.
 
 **La certification DoD de Microsoft est-elle conforme aux exigences du NIST 800 – 171 ?**
 
-En octobre 2016, le ministère de la défense (DoD) promulgué une règle finale mettant en œuvre les clauses de DFARS (Defense Federal acquisition Regulation Supplement) qui s’appliquent à tous les entrepreneurs de DoD qui traitent, stockent ou transmettent « les informations de défense couvertes » via leurs systèmes d’information. La règle indique que ces systèmes doivent respecter les exigences de sécurité définies dans NIST SP 800 – 171, [protégeant les informations non classifiées contrôlées dans les organisations et les systèmes d’information non fédéraux](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), ou une mesure de sécurité alternative, mais également efficace, approuvée par le directeur contractuel DoD. Et lorsqu’un entrepreneur DoD utilise un fournisseur de services Cloud externe pour traiter, stocker ou transmettre les informations de défense couvertes, ce fournisseur doit répondre aux exigences de sécurité qui sont équivalentes à la base de référence modérée FedRAMP.
+En octobre 2016, le ministère de la défense (DoD) promulgué une règle finale mettant en œuvre les clauses de DFARS (Defense Federal acquisition Regulation Supplement) qui s’appliquent à tous les fournisseurs DoD qui traitent, stockent ou transmettent « les informations de défense couvertes » via leurs systèmes d’information. La règle indique que ces systèmes doivent respecter les exigences de sécurité définies dans NIST SP 800 – 171, [protégeant les informations non classifiées contrôlées dans les organisations et les systèmes d’information non fédéraux](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), ou une mesure de sécurité alternative, mais également efficace, approuvée par le directeur contractuel DoD. Et lorsqu’un entrepreneur DoD utilise un fournisseur de services Cloud externe pour traiter, stocker ou transmettre les informations de défense couvertes, ce fournisseur doit répondre aux exigences de sécurité qui sont équivalentes à la base de référence modérée FedRAMP.
 
 Les services de Cloud Computing Microsoft suivants ont reçu une autorisation FedRAMP modérée : Azure, Azure Governance, Dynamics 365 365 U.S. MT, Office 365 Government Government, Office 365 u.s. Governance Defense.
 
