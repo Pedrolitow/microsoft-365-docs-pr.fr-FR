@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de rétention pour classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: 3bcaee41ab178ae79b1f2ef46871dadb107f3f5b
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: e41c71a1f8bc0175b179ecd760dac7098551bc91
+ms.sourcegitcommit: 6b7eecad7162c065af80721204fbabdd2e31e42b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929448"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43065640"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -74,7 +74,7 @@ Les étiquettes de rétention sont des éléments constitutifs indépendants et 
   
 ![Diagramme des étiquettes, des stratégies d’étiquette et des emplacements](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Lorsque vous publiez des étiquettes, celles-ci sont incluses dans une stratégie d’étiquette. Veuillez noter que les noms d’étiquettes de conservation sont définitifs et ne peuvent plus être modifiés une fois créés.
+1. Lorsque vous publiez des étiquettes, celles-ci sont incluses dans une stratégie d’étiquette. Les noms des étiquettes de rétention sont immuables, ce qui signifie qu’ils ne peuvent pas être modifiés une fois créés.
 
 
 2. Une étiquette de conservation peut être incluse dans de nombreuses stratégies d’étiquette de rétention.
@@ -97,7 +97,7 @@ Il est important de savoir que du contenu tel qu’un e-mail ou un document ne p
     
 Les étiquettes affectées manuellement sont affectées explicitement. Les étiquettes à appliquer automatiquement sont affectées implicitement. Une étiquette de rétention explicite est prioritaire sur une étiquette implicite. Pour obtenir plus d’informations, consultez la section [Principes de rétention et priorité](#the-principles-of-retention-or-what-takes-precedence) indiquée ci-après.
 
-Toutes les informations de cette section s’appliquent uniquement aux étiquettes de rétention. Un élément de contenu peut également porter une étiquette de niveau de confidentialité, en plus d’une étiquette de rétention.
+Toutes les informations de cette section s’appliquent uniquement aux étiquettes de rétention. Notez qu’un élément de contenu peut également porter une étiquette de niveau de confidentialité, en plus d’une étiquette de rétention.
   
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Délai d’activation des étiquettes de rétention
 
@@ -183,7 +183,7 @@ Si votre étiquette de rétention est affectée au contenu par les utilisateurs 
     
 - Les groupes Office 365 (le site de groupe et la boîte aux lettres de groupe dans Outlook sur le web)
     
-Les sections indiquées ci-dessous montrent comment les étiquettes apparaissent pour les membres de votre organisation dans différentes applications.
+Les sections suivantes expliquent comment les étiquettes apparaissent aux membres de votre organisation dans les différentes applications.
   
 ### <a name="outlook-on-the-web"></a>Outlook sur le web
 
@@ -416,7 +416,19 @@ Pour comprendre comment les différentes étiquettes avec des actions de rétent
 Notez que les principes de rétention opèrent comme un flux de partage du haut vers le bas : si les règles appliquées par toutes les stratégies ou étiquettes sont identiques sur un même niveau, le flux passe au niveau inférieur pour déterminer la règle prioritaire à appliquer.
   
 Enfin, une stratégie de rétention ou une étiquette ne peut pas supprimer définitivement du contenu placé en conservation pour eDiscovery. Lorsque cette conservation est levée, le contenu est de nouveau éligible pour le processus de nettoyage décrit ci-dessus.
-  
+
+### <a name="precedence-for-auto-labeling-with-trainable-classifiers"></a>Priorité pour l’étiquetage automatique avec les classifieurs présentant une capacité d’apprentissage
+
+Toutes les étiquettes de rétention configurées pour les classifieurs présentant une capacité d’apprentissage sont évaluées en même temps. Si un élément est détecté par plusieurs classifieurs présentant une capacité d’apprentissage, les critères suivants sont utilisés pour déterminer l’étiquette de rétention à appliquer :
+
+1. Les étiquettes de rétention configurées pour être conservées uniquement ou pour être conservées puis supprimées ont une priorité plus élevée que les étiquettes de rétention configurées pour être supprimées uniquement.
+
+2. Les étiquettes de rétention qui sont configurées pour être conservées uniquement ou pour être conservées puis supprimées, l'étiquette de rétention qui est configurée pour la plus longue période de rétention prime.
+
+3. Les étiquettes de rétention qui sont configurées pour être supprimées uniquement, l'étiquette de rétention qui est configurée pour la plus courte période de rétention prime.
+
+4. Les étiquettes de rétention ayant la même action et la même période entraînent une sélection non déterministe des étiquettes de rétention.
+
 ## <a name="use-retention-labels-instead-of-these-features"></a>Utilisation des étiquettes de rétention au lieu de ces fonctionnalités
 
 Les étiquettes de rétention peuvent facilement être rendues disponibles pour l’ensemble d’une organisation et son contenu dans Office 365, y compris Exchange, SharePoint, OneDrive et les groupes Office 365. Si vous devez classer du contenu ou gérer des enregistrements dans Office 365, nous vous recommandons d’utiliser des étiquettes de rétention.
