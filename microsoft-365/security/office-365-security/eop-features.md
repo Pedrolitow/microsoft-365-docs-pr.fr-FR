@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
-ms.openlocfilehash: f8a9165cd377549d355a72da5428b777e7c1a505
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1bab584c62114c74c0eb4d9937acef4f17b89073
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032887"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081447"
 ---
 # <a name="eop-features"></a>Fonctionnalités EOP
 
@@ -91,4 +91,4 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 |**Autres fonctionnalités**||
 |Réseau de serveurs mondial géo-redondant|EOP s'exécute sur un réseau mondial de centres de données conçus pour contribuer à offrir une disponibilité optimale. Pour plus d'informations, consultez la section « Centres de données EOP » dans [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md).  |
 |Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages en différé restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
-|Chiffrement de messages Office 365 disponible sous forme de service de module complémentaire|Pour plus d'informations, voir [Chiffrement dans Office 365](https://docs.microsoft.com/office365/securitycompliance/encryption).|
+|Chiffrement de messages Office 365 disponible sous forme de service de module complémentaire|Pour plus d'informations, voir [Chiffrement dans Office 365](../../compliance/encryption.md).|

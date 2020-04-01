@@ -11,13 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- remotework
 description: 'Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes. '
-ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
-ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
+ms.openlocfilehash: 3bbd5951ac6005f20584d53e17ac55927acd4c89
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "43037475"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081303"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
@@ -165,8 +166,8 @@ Vous pouvez également tirer parti de ces didacticiels :
 - [Utiliser les fonctionnalités d’inscription d’appareil entreprise d’Apple dans le gestionnaire d’entreprise (ABM) pour inscrire des appareils iOS/iPad dans Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 Une fois les périphériques déployés, utilisez les instructions des [stratégies courantes d’identité et d’accès](../enterprise/identity-access-policies.md) aux appareils pour créer ces stratégies :
-- [Définir des stratégies de conformité des appareils](../enterprise/identity-access-policies.md#define-device-compliance-policies)
-- [Exiger des PC conformes](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) (règle d’accès conditionnel)
+- [Définir les stratégies de conformité des appareils](../enterprise/identity-access-policies.md#define-device-compliance-policies) : les paramètres recommandés pour Windows 10 incluent la protection antivirus. Si vous disposez de Microsoft 365 E5, utilisez Microsoft Defender protection avancée contre les menaces pour surveiller l’état des appareils des employés. Assurez-vous que les stratégies de conformité pour d’autres systèmes d’exploitation incluent la protection antivirus et le logiciel de protection du point de terminaison. 
+- [Exiger des PC conformes](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) : il s’agit de la règle d’accès conditionnel dans Azure ad qui applique les stratégies de conformité des appareils.
 
 Une seule organisation peut gérer un appareil ; Veillez donc à exclure les comptes invités de la règle d’accès conditionnel dans Azure AD. Si vous n’excluez pas les utilisateurs invités et externes des stratégies qui nécessitent une conformité de l’appareil, ces stratégies bloqueront ces utilisateurs. Pour plus d’informations, reportez-vous à [la rubrique mise à jour des stratégies communes pour autoriser et protéger les invités et l’accès externe](../enterprise/identity-access-policies-guest-access.md).
 
@@ -200,7 +201,7 @@ Microsoft 365 fournit les ressources suivantes pour aider les utilisateurs au se
 |---------|---------|
 |Microsoft 365     |[Voies de formation personnalisables](https://docs.microsoft.com/office365/customlearning/) <p>Ces ressources peuvent vous aider à réunir des formations pour les utilisateurs finaux de votre organisation.        |
 |Sécurité Microsoft 365 |[Module d’apprentissage : sécurisez votre organisation à l’aide de la sécurité intégrée et intelligente de Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire les fonctionnalités de sécurité de Microsoft 365 et d’expliquer les avantages de ces fonctionnalités de sécurité. |
-|	Authentification multifacteur     | [Vérification en deux étapes : qu’est-ce que la page de vérification supplémentaire ?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Cet article permet aux utilisateurs finaux de comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée au sein de votre organisation.    |
+|Authentification multifacteur     | [Vérification en deux étapes : qu’est-ce que la page de vérification supplémentaire ?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Cet article permet aux utilisateurs finaux de comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée au sein de votre organisation.    |
 | | |
 
 En plus de ces conseils, Microsoft recommande à vos utilisateurs d’effectuer les actions décrites dans cet article : [protéger votre compte et vos appareils contre les pirates et les programmes malveillants](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Ces actions incluent :

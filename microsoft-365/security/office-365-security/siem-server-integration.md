@@ -16,14 +16,14 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: Obtenir une vue d’ensemble de l’intégration du serveur des informations de sécurité et de la gestion des événements (SIEM) à vos applications et services Cloud Microsoft 365
-ms.openlocfilehash: d5adf0a72ac78475cb47f06732375ce01c0d72be
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a4ef144d02ebf0481481861c3dfa60a43b4f3ace
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082193"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081219"
 ---
-#  <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration du serveur de gestion des événements et des informations de sécurité (SIEM) aux services et applications Microsoft 365
+# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration du serveur de gestion des événements et des informations de sécurité (SIEM) aux services et applications Microsoft 365
 
 ## <a name="summary"></a>Résumé
 
@@ -36,31 +36,33 @@ Votre organisation utilise-t-elle ou envisage-t-elle un serveur de gestion des �
 
 La nécessité d’un serveur SIEM dépend de nombreux facteurs, tels que les exigences de sécurité de votre organisation et l’emplacement de stockage de vos données. Microsoft 365 inclut un large éventail de fonctionnalités de sécurité qui répondent aux besoins de sécurité de plusieurs organisations sans serveurs supplémentaires, tels qu’un serveur SIEM. Certaines organisations ont des circonstances spéciales qui nécessitent l’utilisation d’un serveur SIEM. Voici quelques exemples :
 
-- *Fabrikam* dispose de contenu et d’applications sur site, et d’autres dans le Cloud (ils ont un déploiement Cloud hybride). Pour obtenir des rapports de sécurité sur tous les contenus et applications, Fabrikam a implémenté un serveur SIEM. 
+- *Fabrikam* dispose de contenu et d’applications sur site, et d’autres dans le Cloud (ils ont un déploiement Cloud hybride). Pour obtenir des rapports de sécurité sur tous les contenus et applications, Fabrikam a implémenté un serveur SIEM.
 
 - *Contoso* est une organisation de services financiers présentant des exigences de sécurité particulièrement strictes. Ils ont ajouté un serveur SIEM à leur environnement pour tirer parti de la protection de sécurité supplémentaire dont ils ont besoin.
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>Intégration de serveur SIEM à Microsoft 365
 
-Un serveur SIEM peut recevoir des données à partir d’un large éventail de services et d’applications Microsoft 365. Le tableau suivant répertorie plusieurs applications et services Microsoft 365, ainsi que des ressources et des entrées de serveur SIEM pour en savoir plus. 
+Un serveur SIEM peut recevoir des données à partir d’un large éventail de services et d’applications Microsoft 365. Le tableau suivant répertorie plusieurs applications et services Microsoft 365, ainsi que des ressources et des entrées de serveur SIEM pour en savoir plus.
 
-| Service ou application Microsoft 365 | Entrées/méthodes du serveur SIEM | Ressources pour en savoir plus |
-| --- | --- | --- |
-| [Protection avancée contre les menaces dans Office 365](office-365-atp.md)  | Journaux d'audit | [Intégration SIEM avec Office 365 protection avancée contre les menaces](siem-integration-with-office-365-ti.md) |
-| [Microsoft Defender – Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/) | Point de terminaison HTTPs hébergé dans Azure <br/>API REST| [Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
-| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Intégration des journaux | [Intégration SIEM à la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/siem) |
+||||
+|---|---|---|
+|**Service ou application Microsoft 365**|**Entrées/méthodes du serveur SIEM**|**Ressources pour en savoir plus**|
+|[Protection avancée contre les menaces dans Office 365](office-365-atp.md)|Journaux d'audit|[Intégration SIEM avec Office 365 protection avancée contre les menaces](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender – Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/)|Point de terminaison HTTPs hébergé dans Azure <br/>API REST|[Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Intégration des journaux|[Intégration SIEM à la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/siem)|
+|
 
 > [!TIP]
 > Jetez un œil à [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure sentinelle inclut des connecteurs pour les solutions Microsoft. Ces connecteurs sont disponibles « en l’absence de » et permettent une intégration en temps réel. Vous pouvez utiliser Azure Sentinel avec vos solutions de protection contre les menaces Microsoft et les services Microsoft 365, notamment Office 365, Azure AD, Azure ATP, sécurité des applications Cloud Microsoft, et bien plus encore.
 
 ### <a name="audit-logging-must-be-turned-on"></a>La journalisation d’audit doit être activée.
 
-Assurez-vous que la journalisation d’audit est activée avant de configurer l’intégration de serveur SIEM. 
+Assurez-vous que la journalisation d’audit est activée avant de configurer l’intégration de serveur SIEM.
 
-- Pour SharePoint Online, OneDrive entreprise et Azure Active Directory, [la journalisation d’audit est activée dans le centre de sécurité & conformité](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
+- Pour SharePoint Online, OneDrive entreprise et Azure Active Directory, [la journalisation d’audit est activée dans le centre de sécurité & conformité](../../compliance/turn-audit-log-search-on-or-off.md).
 
-- Pour Exchange Online, la [journalisation d’audit est activée avec Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
- 
+- Pour Exchange Online, consultez la rubrique [Manage Mailbox Auditing](../../compliance/enable-mailbox-auditing.md).
+
 ## <a name="more-resources"></a>Autres ressources
 
 [Intégrer des solutions de sécurité dans Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)

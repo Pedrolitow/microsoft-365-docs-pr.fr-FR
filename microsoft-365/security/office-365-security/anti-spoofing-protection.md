@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Cet article explique comment Office 365 prévient les attaques par hameçonnage utilisant des domaines d’expéditeur falsifiés, ou usurpés. Pour ce faire, Microsoft analyse les messages et bloque ceux qui ne peuvent être authentifiés ni à l’aide de méthodes d’authentification standard du courrier, ni à l’aide d’autres techniques basées sur la réputation des expéditeurs. Cette modification a été apportée afin de réduire le nombre d’attaques par hameçonnage auxquelles sont exposées les organisations utilisant Office 365.
-ms.openlocfilehash: a81c22d83e0a476657aa89823e52d3eb6afc4514
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 5d4b9f0c94a68d457aa59b768444746627dffb9d
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033481"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081363"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection contre l’usurpation d’identité dans Office 365
 
@@ -61,7 +61,7 @@ Deuxièmement, les messages usurpant des identités créent une incertitude dans
 
 Si le message ci-dessus provient effectivement de Microsoft, les utilisateurs sont habitués à recevoir des messages de hameçonnage susceptibles de les inciter à cliquer sur un lien les amenant à révéler leurs identifiants, à télécharger un programme malveillant ou à répondre en révélant du contenu sensible. En raison de la difficulté de faire la distinction entre une demande de réinitialisation de mot de passe authentique et une fausse demande, bon nombre d’utilisateurs ignorent ces messages, les marquent comme du courrier indésirable, ou les signalent à Microsoft comme des tentatives de hameçonnage.
 
-Pour mettre fin aux usurpations d’identité, les experts en filtrage du courrier ont développé des protocoles d’authentification tels que [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) et [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC empêche l’usurpation d’identité pour étudier l’expéditeur d’un message. Autrement dit, l’expéditeur figurant parmi les clients de messagerie des utilisateurs (dans les exemples ci-dessus, il s’agit de service.outlook.com, outlook.com et accountprotection.microsoft.com). Par ailleurs, les utilisateurs peuvent également voir que le domaine a franchi les protocoles SPF ou DKIM, ce qui signifie qu’il a été authentifié et n’est donc pas falsifié. Pour une présentation plus complète, voir la section « *Pourquoi l’authentification du courrier ne suffit pas toujours pour empêcher l’usurpation* », plus loin dans cet article.
+Pour mettre fin aux usurpations d’identité, les experts en filtrage du courrier ont développé des protocoles d’authentification tels que [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) et [DMARC](use-dmarc-to-validate-email.md). DMARC empêche l’usurpation d’identité pour étudier l’expéditeur d’un message. Autrement dit, l’expéditeur figurant parmi les clients de messagerie des utilisateurs (dans les exemples ci-dessus, il s’agit de service.outlook.com, outlook.com et accountprotection.microsoft.com). Par ailleurs, les utilisateurs peuvent également voir que le domaine a franchi les protocoles SPF ou DKIM, ce qui signifie qu’il a été authentifié et n’est donc pas falsifié. Pour une présentation plus complète, voir la section « *Pourquoi l’authentification du courrier ne suffit pas toujours pour empêcher l’usurpation* », plus loin dans cet article.
 
 Cependant, le problème est que les enregistrements d’authentification de courrier sont facultatifs et non obligatoires. Dès lors, si les domaines dotés de stratégies d’authentification fortes, tels que microsoft.com et skype.com, sont protégés contre l’usurpation d’identité, des domaines dont les stratégies d’authentification sont plus faibles, voire inexistantes, constituent des cibles idéales pour de telles usurpations. Depuis le mois de mars 2018, seuls 9 % des domaines des entreprises figurant au classement Fortune 500 ont publié des stratégies d’authentification fortes. Ainsi, un hameçonneur peut usurper le domaine des 91 % de domaines restants de sorte que, si le filtre de courrier ne détecte pas l’usurpation à l’aide d’une autre stratégie, le courrier peut être délivré à un utilisateur final et le tromper :
 

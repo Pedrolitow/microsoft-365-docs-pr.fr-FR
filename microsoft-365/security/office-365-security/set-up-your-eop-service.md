@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 5a28bc606b22b044515e737bf1ddf8250452f250
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6686e95f343a116a53991957e7746ef841e858ba
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895142"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081231"
 ---
 # <a name="set-up-your-eop-service"></a>Configurer votre service EOP
 
@@ -62,8 +62,7 @@ Vérifiez le flux de messagerie entre le service et votre environnement. Pour pl
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l’accès SMTP entrant sur le port 25
 
-Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la propagation de vos mises à jour d'enregistrement DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges
-). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
+Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la propagation de vos mises à jour d'enregistrement DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
 
 > [!TIP]
 > Configurez les paramètres du serveur SMTP en définissant l'expiration du délai de connexion sur 60 secondes. Ce paramètre est acceptable pour la plupart des situations, ce qui permet un certain délai dans le cas d’un message envoyé avec une pièce jointe de grande taille, par exemple.

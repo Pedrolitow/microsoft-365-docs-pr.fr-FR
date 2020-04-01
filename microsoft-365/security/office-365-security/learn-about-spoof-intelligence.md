@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Utilisez l’Assistant usurpation d’identité &amp; dans le centre de sécurité conformité de la page Paramètres anti-courrier indésirable pour examiner tous les expéditeurs qui usurpent l’identité des domaines qui font partie de votre organisation ou qui usurpent des domaines externes. L’intelligence d’usurpation d’identité est disponible dans le cadre d’Office 365 entreprise E5 ou séparément dans le cadre de la protection avancée contre les menaces et d’Exchange Online Protection.
-ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a58f98852f321791615c5f0064b69e8510aadbe5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082956"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081459"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>En savoir plus sur l’usurpation d’identité
 
@@ -59,7 +59,7 @@ La stratégie d’aide à la décision que vous configurez est toujours appliqu�
 
 Vous pouvez vérifier les expéditeurs qui usurpent votre domaine, ou des domaines externes, puis décider si chaque expéditeur doit être autorisé à le faire à l’aide du centre de &amp; sécurité conformité. Pour chaque compte d’utilisateur usurpé qu’un expéditeur usurpe à partir de votre domaine ou d’un domaine externe, vous pouvez afficher les informations dans le tableau suivant.
 
-|**Parameter**|**Description**|
+|**Paramètre**|**Description**|
 |:-----|:-----|
 |Expéditeur  <br/> |Également appelé véritable expéditeur. Il s’agit généralement du domaine à l’origine de l’usurpation du courrier électronique. Office 365 détermine le domaine de l’enregistrement DNS du pointeur (PTR) de l’adresse IP d’envoi qui usurpe l’identité de votre organisation. Si aucun domaine n’est trouvé, le rapport affiche à la place l’adresse IP de l’expéditeur.  <br/> |
 |Utilisateur usurpé  <br/> |Le compte d’utilisateur qui est usurpé par l’expéditeur.  <br/> Onglet **interne** uniquement. Ce champ contient une adresse de messagerie unique, ou si l’expéditeur usurpe plusieurs comptes d’utilisateur, il en contient **plusieurs**.  <br/> Onglet **externe** uniquement. Les domaines externes contiennent uniquement un domaine d’envoi et ne contiennent pas d’adresse de messagerie complète.  <br/> **TETE! Pour les administrateurs avancés.** L’utilisateur usurpé est l’adresse de (5322. from) qui est également l’adresse de l’expéditeur par le client de messagerie. Il s’agit parfois de l’adresse d’en-tête. from. La validité de cette adresse n’est pas vérifiée par SPF.           |
@@ -101,7 +101,7 @@ Vous pouvez vérifier les expéditeurs qui usurpent votre domaine, ou des domain
 
 6. Sélectionnez **Enregistrer** pour enregistrer les modifications.
 
-Si vous disposez d’un abonnement Office 365 entreprise E5 ou si la protection avancée contre les menaces est achetée séparément en tant que module complémentaire, vous pouvez également gérer les expéditeurs qui usurpent votre domaine via la fonction d’aide à la [décision](https://docs.microsoft.com/office365/securitycompliance/walkthrough-spoof-intelligence-insight).
+Si vous disposez d’un abonnement Office 365 entreprise E5 ou si la protection avancée contre les menaces est achetée séparément en tant que module complémentaire, vous pouvez également gérer les expéditeurs qui usurpent votre domaine via la fonction d’aide à la [décision](walkthrough-spoof-intelligence-insight.md).
 
 ## <a name="configuring-the-anti-spoofing-policy"></a>Configuration de la stratégie d’usurpation d’identité
 <a name="Managespooflist"> </a>

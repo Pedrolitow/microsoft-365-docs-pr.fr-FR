@@ -22,15 +22,18 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment utiliser les paramètres par défaut de sécurité pour configurer multi-factor authentication pour les utilisateurs d’Office 365.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 4dc52c25c3a9351be1a9f4d094d664bc4ed527f9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
-ms.translationtype: HT
+ms.openlocfilehash: 914d01bf2f045c6752aba4f2df3a204c6a21d09c
+ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361045"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43075607"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurer Multi-factor Authentification (MFA)
   
+> [!IMPORTANT]
+> Si vous avez acheté votre abonnement ou une version d’évaluation après le 21 octobre 2019 et que vous êtes invité de manière inattendue à utiliser l’authentification multifacteur, les [paramètres de sécurité par défaut](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) ont été automatiquement activés pour votre abonnement.
+
 Les paramètres de sécurité par défaut sont automatiquement activés avec tout nouvel abonnement Office 365 pour les entreprises ou Microsoft 365 Entreprise. Chaque utilisateur doit ainsi configurer multi-factor authentication (MFA) et installer l’application de l’Authenticator sur son appareil mobile. Pour en savoir plus, voir [Configurer la vérification en deux étapes pour Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 Les neuf rôles d’administrateur suivants sont nécessaires pour effectuer une authentification supplémentaire lorsqu’ils se connectent :
@@ -50,7 +53,10 @@ Tous les autres utilisateurs seront invités à effectuer une authentification s
 > Vous devez être un administrateur général Office 365 pour configurer ou modifier Multi-Factor Authentification. <br><br>
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-Si vous avez déjà configuré Multi-Factor Authentication avec des stratégies de référence, [vous devez les désactiver et activer les paramètres de sécurité par défaut](#move-from-baseline-policies-to-security-defaults). Toutefois, si vous avez Microsoft 365 Entreprise ou si votre abonnement inclut [Azure Active Directory Premium 1 ou Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/), vous pouvez également configurer les stratégies d'[accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). Pour utiliser les stratégies d’accès conditionnel, vous devez vous assurer que [l’authentification moderne est activée](#enable-multi-factor-authentication-for-your-organization).
+Si vous avez déjà configuré Multi-Factor Authentication avec des stratégies de référence, [vous devez les désactiver et activer les paramètres de sécurité par défaut](#move-from-baseline-policies-to-security-defaults). Toutefois, si vous avez Microsoft 365 Entreprise ou si votre abonnement inclut [Azure Active Directory Premium 1 ou Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/), vous pouvez également configurer les stratégies d'[accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). Pour utiliser des stratégies d’accès conditionnel, vous devez vous assurer que [l’authentification moderne](#enable-modern-authentication-for-your-organization) est activée.
+
+> [!TIP]
+> Pour expliquer la configuration de l’application Authenticator à vos utilisateurs, consultez [Utiliser Microsoft Authenticator avec Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1).
 
 ## <a name="manage-security-defaults"></a>Gérer les paramètres de sécurité par défaut
 
@@ -82,24 +88,6 @@ Les applications clientes Office 2016 prennent en charge l'authentification mult
 
     ![Panneau d’authentification moderne avec la case Activer cochée.](../../media/enablemodernauth.png)
     
-## <a name="enable-multi-factor-authentication-for-your-organization"></a>Activer Azure Multi-Factor Authentification pour votre organisation
-    
-1. Dans le [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=834822), sélectionnez **Utilisateurs** et **Utilisateurs actifs**.
-
-2. Dans la section **Utilisateurs actifs**, cliquez sur **authentification multifacteur**.
-
-3. Sur la page **Authentification multifacteur**, sélectionnez **utilisateur** si vous activez cette option pour un utilisateur ou sélectionnez **Mise à jour en bloc** pour activer plusieurs utilisateurs.
-
-4. Cliquez sur **Activer** dans **Actions rapides**.
-
-5. Dans la fenêtre contextuelle, cliquez sur **Activer l’authentification multifacteur**.
-
-Une fois défini Multi-Factor Authentification pour votre organisation, vos utilisateurs doivent configurer la vérification en deux étapes. Pour en savoir plus, voir [Configurer la vérification en deux étapes pour Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
-    
-> [!TIP]
-> Pour expliquer la configuration de l’application Authenticator à vos utilisateurs, consultez [Utiliser Microsoft Authenticator avec Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1).
-
-
 > [!IMPORTANT]
 > Depuis août 2017, tous les nouveaux clients Office 365 qui incluent Skype Entreprise Online et Exchange Online ont l’authentification moderne activée par défaut. Pour vérifier le statut de votre authentification moderne pour Skype Entreprise Online, vous pouvez utiliser PowerShell Skype Entreprise Online avec les informations d’identification d’Administrateur général. Exécutez Get-CsOAuthConfiguration pour vérifier la sortie de-ClientADALAuthOverride. Si-ClientADALAuthOverride est « Autorisé », votre authentification moderne est activée.
 Pour vérifier l’état de votre MA pour Exchange Online, consultez [Activer l’authentification moderne dans Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
