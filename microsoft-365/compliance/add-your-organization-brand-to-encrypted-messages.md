@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 4/1/2020
 search.appverid:
 - MET150
 - MOE150
@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: En tant qu’administrateur général Office 365, vous pouvez appliquer la personnalisation de votre organisation aux messages électroniques chiffrés de votre organisation et au contenu du portail de chiffrement.
-ms.openlocfilehash: 23b6cd205c4ae3a0ca08aab2209e0152a3f78b63
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5a3f5426fecd6ce5df6ace5b0080de33fb50e21f
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079975"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106016"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Ajouter la marque de votre organisation à vos messages chiffrés
 
@@ -32,6 +32,8 @@ En tant qu’administrateur Exchange Online ou Exchange Online Protection, vous 
 - Le texte d’introduction du message électronique contenant le message chiffré
 
 - Le texte d’exclusion de responsabilité du message électronique contentant le message chiffré
+
+- URL de la déclaration de confidentialité de votre organisation
 
 - Texte qui apparaît dans le portail OME
 
@@ -79,7 +81,8 @@ Utilisez Windows PowerShell pour modifier un modèle de personnalisation à la f
 |Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formats de fichier pris en charge : .png, .jpg, .bmp ou .tiff  <br/> Taille optimale de fichier de logo : moins de 40 ko  <br/> Taille optimale de l’image de logo : 170x70 pixels. Si votre image dépasse ces dimensions, le service redimensionne votre logo pour qu’il s’affiche dans le portail. Le service ne modifie pas le fichier graphique lui-même. Pour obtenir de meilleurs résultats, utilisez la taille optimale.|
 |Texte en regard du nom et de l’adresse de messagerie de l’expéditeur|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |Texte qui apparaît sur le bouton « Lire le message »|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|Texte qui apparaît au-dessus du bouton « Lire le message »|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|Texte qui apparaît sous le bouton « Lire le message »|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|URL du lien déclaration de confidentialité|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PrivacyStatementURL "<URL>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
 |Déclaration de non-responsabilité du message électronique qui contient le message chiffré|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
 |Texte qui s’affiche en haut du portail d’affichage du message chiffré|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
 |Pour activer ou désactiver l’authentification avec un code d’accès unique pour ce modèle personnalisé|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **Exemples :** <br/>Pour activer les codes secrets à usage unique pour ce modèle personnalisé <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> Pour désactiver les codes secrets à usage unique pour ce modèle personnalisé <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Créez des liens rapides vers vos courriers électroniques, vos documents, vos applications, vos sites SharePoint, vos sites externes et d’autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications. '
-ms.openlocfilehash: 65c8da7aa0cdb68f4bf32a52b21140413a38a69a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e52bad5cdd1809e8aa0d97c681b69daa5143d3fd
+ms.sourcegitcommit: 4b73f070747a66874c03fdf670ffdf16f736585a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361979"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43103074"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Ajouter des vignettes personnalisées au lanceur d'applications
 
@@ -37,7 +37,7 @@ Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant ver
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Ajouter une vignette personnalisée au lanceur d'applications
 
-1. Dans le centre d’administration, accédez à **** > **paramètres** des paramètres et sélectionnez l’onglet Profil de l' **organisation** .
+1. Dans le centre d’administration, accédez à **Settings** > **paramètres** des paramètres et sélectionnez l’onglet Profil de l' **organisation** .
     
 2. Sous l’onglet Profil de l' **organisation** , choisissez les **vignettes du lanceur d’applications personnalisé**.
   
@@ -69,7 +69,7 @@ Celle-ci apparaît désormais dans l'onglet **Toutes** du lanceur d'applications
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Dans le centre d’administration, accédez à la page<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">profil d’organisation</a> des **paramètres** > .
+1. Dans le centre d’administration, accédez à l’onglet<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">profil d’organisation</a> des**paramètres** > de **paramètres** > .
     
 2. Sur la page profil de l' **organisation** , en regard de **Ajouter des vignettes personnalisées pour votre organisation**, sélectionnez **modifier**.
 

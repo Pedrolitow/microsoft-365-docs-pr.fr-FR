@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et dans SharePoint ou OneDrive entreprise à l’aide de l’outil de recherche de contenu dans le centre de conformité & Compliance Center.  '
-ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 83cd28ba45de027cb899fa6d84369dae9dfc50fc
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634362"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105996"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -65,7 +65,7 @@ Le tableau suivant répertorie les propriétés de message électronique pouvant
 |Kind| Type de message électronique à rechercher. Valeurs possibles :  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (renvoie les éléments des conversations, réunions et appels dans Microsoft Teams)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|Le premier exemple renvoie des messages électroniques qui répondent aux critères de recherche. Le deuxième exemple renvoie les messages électroniques, les conversations de messagerie instantanée (y compris les conversations et conversations Skype entreprise dans Microsoft Teams) et les messages vocaux correspondant aux critères de recherche. Le troisième exemple renvoie les éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir de sources de données tierces, telles que Twitter, Facebook et Cisco Jabber, qui répondent aux critères de recherche. Pour plus d’informations, consultez la rubrique [archivage de données tierces dans Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918).|
 |Participants|Tous les champs de personnes dans un message électronique. Les champs de, à, CC et CCI.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Messages envoyés par ou envoyés à garthf@contoso.com. Le deuxième exemple renvoie tous les messages envoyés par ou envoyés à un utilisateur dans le domaine contoso.com.|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Messages reçus le 15 avril 2016. Le deuxième exemple renvoie tous les messages reçus entre le 1er janvier 2016 et le 31 mars 2016.|
-|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires dans le domaine contoso.com.|
+|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires dans le domaine contoso.com.|
 |Sent|Date à laquelle un message électronique a été envoyé par l'expéditeur.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Messages envoyés à la date indiquée ou entre les dates spécifiées.|
 |Size|Taille d'un élément, en octets.|`size>26214400`  <br/> `size:1..1048567`|Messages supérieurs à 25 ? Mbit. Le deuxième exemple renvoie les messages dont la taille est comprise entre 1 et 1 048 567 octets (1 Mo).|
 |Subject|Texte de la ligne d'objet d'un message électronique.  <br/> **Remarque :** Lorsque vous utilisez la propriété Subject dans une requête, la recherche renvoie tous les messages dans lesquels la ligne d’objet contient le texte que vous recherchez. En d’autres termes, la requête ne renvoie que les messages qui ont une correspondance exacte. Par exemple, si vous recherchez `subject:"Quarterly Financials"`, vos résultats incluent les messages dont l’objet est « trimestriel financials 2018 ».|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Messages contenant l’expression « trimestriel Financials » n’importe où dans le texte de la ligne d’objet. Le deuxième exemple renvoie tous les messages contenant le mot « northwind » dans la ligne d'objet.|
@@ -207,7 +207,7 @@ Créer une condition à l’aide des propriétés de messagerie lors de la reche
 |Participants|Tous les champs de personnes dans un message électronique. Ces champs sont from, to, CC et BCC.|
 |Type|Propriété de classe de message pour un élément de courrier électronique. Il s’agit de la même propriété que la propriété de messagerie ItemClass. Il s’agit également d’une condition à valeurs multiples. Pour sélectionner plusieurs classes de message, maintenez la touche **CTRL** enfoncée, puis cliquez sur au moins deux classes de messages dans la liste déroulante que vous souhaitez ajouter à la condition. Chaque classe de message que vous sélectionnez dans la liste est logiquement connectée par l’opérateur **or** dans la requête de recherche correspondante.  <br/> Pour obtenir la liste des classes de message (et de leur ID de classe de message correspondant) utilisées par Exchange et que vous pouvez sélectionner dans la liste de **classes de message** , voir [types d’éléments et classes de messages](https://go.microsoft.com/fwlink/?linkid=848143).|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire. Il s’agit de la même propriété que la propriété de messagerie Received.|
-|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.|
+|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.|
 |Expéditeur|Expéditeur d’un message électronique.|
 |Sent|Date à laquelle un message électronique a été envoyé par l’expéditeur. Il s’agit de la même propriété que la propriété de messagerie Sent.|
 |Subject|Texte de la ligne d'objet d'un message électronique.|
@@ -292,7 +292,7 @@ Cet exemple renvoie des documents sur des sites SharePoint et OneDrive entrepris
   
  **Syntaxe de requête de recherche**
   
- `SensitiveType:"Credit Card Number(c:c)(lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2016-01-01)`
   
  **Logique de requête de recherche**
   

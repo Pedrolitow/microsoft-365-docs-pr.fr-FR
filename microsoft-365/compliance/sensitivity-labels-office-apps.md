@@ -15,38 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: 2b77d273cdc589409506dc709669536fcea6c006
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 595381984390321ed810af61f6234428f31551f3
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030119"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106090"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
+
+>*[Guide des licences Microsoft 365 pour la sécurité & conformité](https://aka.ms/ComplianceSD).*
 
 Lorsque vous avez [publié](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) des étiquettes de confidentialité à partir du centre de conformité Microsoft 365 ou d’un centre d’étiquetage équivalent, ils commencent à apparaître dans les applications Office pour permettre aux utilisateurs de classer et de protéger les données lors de leur création ou modification.
 
 Utilisez les informations contenues dans cet article pour vous aider à gérer correctement les étiquettes de confidentialité dans les applications Office. Par exemple, identifiez les versions minimales des applications dont vous avez besoin pour prendre en charge l’étiquetage intégré et comprenez les interactions avec le client d’étiquetage unifié Azure information protection et la compatibilité avec d’autres applications et services.
-
-## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Exigences en matière d’abonnement et de gestion des licences pour les étiquettes de sensibilité
-
-Les utilisateurs doivent avoir au moins une des licences suivantes affectées :
-
-- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) ou version supérieure
-
-- [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) ou version supérieure
-
-- [Azure information protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) ou version supérieure
-
-Le client d’étiquetage Office intégré prend en charge les étiquettes de confidentialité avec une édition d’abonnement d’Office. Ce client d’étiquetage ne prend pas en charge les éditions autonomes d’Office, comme Office 2016 ou Office 2019. Pour utiliser les étiquettes de confidentialité avec ces éditions d’Office sur des ordinateurs Windows, installez le client d’étiquetage unifié Azure information protection.
-
-Pour utiliser l’étiquette de sensibilité automatique ou recommandée, vos utilisateurs ont besoin d’une des licences suivantes :
-
-- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) ou version ultérieure
-
-- [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) ou version ultérieure
-
-- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Prise en charge des fonctionnalités d’étiquette de sensibilité dans les applications
 

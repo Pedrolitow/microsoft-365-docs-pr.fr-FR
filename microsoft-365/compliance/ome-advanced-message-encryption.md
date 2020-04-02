@@ -16,16 +16,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Le chiffrement de messages avancé dans Office 365 aide les organisations à respecter leurs obligations de conformité en permettant aux administrateurs de faire encore plus avec des messages protégés.
-ms.openlocfilehash: 99dacc928c8549157ff0d9d1d9a7c07fc33c2600
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: 3b7f4d595b8c3592530b107dd7f71aeb8d0dc57e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610601"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106172"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Chiffrement de messages avancé Office 365
 
-Le chiffrement de messages avancé Office 365 est inclus dans [microsoft 365 entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel pour les personnes travaillant), Office 365 entreprise E5 (tarification du personnel pour les personnes à but lucratif) et Office 365 éducation a5. Si votre organisation dispose d’un abonnement qui n’inclut pas le chiffrement de messages avancé Office 365, vous pouvez l’acheter avec le complément Microsoft 365 E5 Compliance SKU pour Microsoft 365 E3, Microsoft 365 E3 (tarification du personnel pour les salariés) ou Office 365 Advanced Module complémentaire de référence SKU de conformité pour Microsoft 365 E3, Microsoft 365 E3 (tarifs du personnel pour les salariés) ou Office 365 SKU.
+Le chiffrement de messages avancé Office 365 est inclus dans [microsoft 365 entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel pour les personnes travaillant), Office 365 entreprise E5 (tarification du personnel pour les personnes à but lucratif) et Office 365 éducation a5. Si votre organisation dispose d’un abonnement qui n’inclut pas le chiffrement de messages avancé Office 365, vous pouvez l’acheter avec le complément Microsoft 365 E5 Compliance SKU pour Microsoft 365 E3, Microsoft 365 E3 (tarification du personnel pour les personnes à but lucratif) ou le complément Office 365 Advanced Compliance SKU pour Microsoft 365 E3, Microsoft 365 E3 (tarification du personnel pour les personnes à but lucratif), Office 365 SKU ou le complément Microsoft 365 E5/a5 information Protection and Governance SKU pour Microsoft 365 a3/E3.
 
 Le chiffrement de messages avancé dans Office 365 aide les clients à respecter les obligations de conformité nécessitant des contrôles plus flexibles pour les destinataires externes et leur accès aux e-mails chiffrés. Avec le chiffrement de messages avancé dans Office 365, vous pouvez contrôler les e-mails sensibles partagés hors de l’organisation à l’aide de stratégies automatiques. Vous configurez ces stratégies pour identifier les types d’informations sensibles tels que les informations personnelles, les ID financiers ou les ID d’intégrité, ou vous pouvez utiliser des mots clés pour améliorer la protection. Une fois que vous avez configuré les stratégies, vous associez des stratégies à des modèles de courrier personnalisés personnalisés, puis vous ajoutez une date d’expiration pour un contrôle supplémentaire des courriers électroniques correspondant à la stratégie. De plus, les administrateurs peuvent contrôler les messages électroniques chiffrés accessibles en externe via un portail Web sécurisé en révoquant l’accès au courrier à tout moment.
 

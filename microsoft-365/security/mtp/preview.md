@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 86a74051b4febbf469449a35cd14620f3e78932c
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 43c6f5db64c929fcdb8a9f64e9fc27d472d65ba8
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288605"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100898"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -43,12 +43,16 @@ Vous aurez accès aux fonctionnalités à venir, sur lesquelles vous pouvez fair
 
 Activez le paramètre aperçu de l’expérience pour commencer à utiliser les fonctionnalités à venir.
 
-1. Dans le volet de navigation, sélectionnez**fonctionnalités d’aperçu**des **paramètres** > .
+1. Dans le volet de navigation, sélectionnez **paramètres**.
 
-2. Sélectionnez **activer les fonctionnalités d’aperçu**. 
+2. Sélectionnez **Microsoft Threat Protection**.
+
+
+3. Sélectionnez **aperçu des fonctionnalités** > **activer les fonctionnalités d’aperçu**. 
 
 3. Cliquez sur **Enregistrer**.
 
 
 ## <a name="preview-features"></a>Fonctionnalités de préversion
 Cette section est mise à jour avec la liste des fonctionnalités qui sont en aperçu dès qu’elles sont disponibles. 
+

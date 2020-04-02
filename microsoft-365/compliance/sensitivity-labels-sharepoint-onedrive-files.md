@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: 840087be38c6e50244437fea63de655d8cd9363e
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: e6e13ef14ed9ed3e60f2918df0c25c0601d0225e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894296"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106100"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)
+
+>*[Guide des licences Microsoft 365 pour la sécurité & conformité](https://aka.ms/ComplianceSD).*
 
 Avant cet aperçu, lorsque vous avez appliqué des étiquettes de confidentialité incluant le chiffrement aux fichiers Office stockés dans SharePoint et OneDrive, le service n’a pas pu traiter le contenu de ces fichiers. La co-création, la découverte électronique, la protection contre la perte de données, la recherche, l’Delve et d’autres fonctionnalités collaboratives ne fonctionnaient pas dans ces circonstances. Cet aperçu active ces fonctionnalités pour les fichiers nouveaux et modifiés pour lesquels une étiquette de sensibilité appliquée inclut le chiffrement avec une clé basée sur le Cloud :
 

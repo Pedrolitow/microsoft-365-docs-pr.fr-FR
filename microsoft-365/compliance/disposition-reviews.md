@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Microsoft 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
-ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634972"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105661"
 ---
 # <a name="overview-of-disposition-reviews"></a>Vue d’ensemble des révisions de destruction
+
+>*[Guide des licences Microsoft 365 pour la sécurité & conformité](https://aka.ms/ComplianceSD).*
 
 Lorsque le contenu atteint la fin de sa période de rétention, il existe plusieurs raisons pour lesquelles vous pouvez souhaiter examiner ce contenu pour décider s’il peut être supprimé en toute sécurité (« supprimé »). Par exemple, vous devrez peut-être :
   
@@ -51,9 +53,6 @@ Lorsque vous créez une étiquette de rétention dans le centre de conformité M
     
 - Les relecteurs peuvent afficher les suppressions en attente ou terminées, puis les exporter sous forme de fichier. csv.
 
-> [!NOTE]
-> Les révisions de destruction nécessitent un abonnement Office 365 entreprise E5.
-  
 Une révision de disposition peut inclure du contenu dans des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et des groupes Office 365. Le contenu en attente d’une révision de disposition dans ces emplacements est supprimé uniquement lorsqu’un relecteur choisit de supprimer définitivement le contenu.
   
 ![Page des dispositions dans le centre de sécurité et conformité](../media/Retention-Dispositions-v2-page.png)

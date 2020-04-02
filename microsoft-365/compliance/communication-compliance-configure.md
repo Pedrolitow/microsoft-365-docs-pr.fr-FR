@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029890"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100877"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -34,11 +34,23 @@ Utilisez des stratégies de conformité des communications pour capturer les com
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Avant de commencer la mise en route de la conformité de la communication, vous devez confirmer votre abonnement Microsoft 365. Les utilisateurs inclus dans les stratégies de conformité des communications doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5 ou être inclus dans un Microsoft 365 de l’abonnement E5.
+Avant de commencer la mise en route de la conformité de la communication, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) et tous les modules complémentaires. Pour accéder à la conformité de la communication et l’utiliser, votre organisation doit disposer de l’un des abonnements ou des modules complémentaires suivants :
+
+- Abonnement Microsoft 365 E5 (payant ou version d’évaluation)
+- Microsoft 365 E3 subscription + le complément de conformité Microsoft 365 E5
+- Microsoft 365 E3 subscription + le complément de gestion des risques de Microsoft 365 E5 Insider
+- Abonnement Microsoft 365 a5 (payant ou version d’évaluation)
+- Abonnement Microsoft 365 a3 + complément Microsoft 365 a5 Compliance
+- Abonnement Microsoft 365 a3 + complément de gestion des risques Microsoft 365 a5 Insider
+- Office 365 entreprise E5 abonnement (payant ou version d’évaluation)
+- Office 365 entreprise E3 abonnement + le complément Office 365 Advanced Compliance
+
+Les utilisateurs inclus dans les stratégies de conformité des communications doivent disposer de l’une des licences ci-dessus.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels arrivent à expiration, les clients doivent effectuer une transition vers l’un des abonnements ci-dessus, qui contiennent les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
 
 Si vous ne disposez pas d’un plan Microsoft 365 entreprise E5 existant et que vous souhaitez essayer de gérer les risques internes, vous pouvez [Ajouter microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement Office 365 existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 entreprise E5.
-  
-Procédez comme suit pour configurer et utiliser la conformité des communications dans votre organisation Microsoft 365 :
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Étape 1 (obligatoire) : activer les autorisations pour la conformité de la communication
 
@@ -82,7 +94,7 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Office 365 | Groupes de distribution dynamique |
-| Relecteurs | Néant | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
   
 Lorsque vous sélectionnez un groupe Office 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres Office 365 partagée et les canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.
 

@@ -16,25 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importer des données non-Office 365 vers un jeu de réexamen dans un cas avancé de découverte électronique.
-ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 816519fcaa8dc5172dbb5c369a3ec191585d3647
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072205"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097227"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Charger des données autres qu’Office 365 dans un jeu à réviser
 
 Tous les documents que vous devez analyser dans Advanced eDiscovery sont situés dans Office 365. Avec la fonctionnalité d’importation de données non-Office 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne se trouvent pas dans Office 365 vers un jeu de révision. Cet article vous explique comment mettre vos documents autres que Office 365 dans Advanced eDiscovery pour analyse.
 
->[!Note]
->Advanced eDiscovery nécessite un abonnement Microsoft 365 ou Office 365 E5 pour votre organisation ou un abonnement E3 avec l’abonnement de complément de conformité avancé. Si vous ne disposez pas de ce plan et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5.
-
 ## <a name="before-you-begin"></a>Avant de commencer
 
 L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrite dans cet article requiert les éléments suivants :
 
-- Tous les dépositaires auxquels vous souhaitez associer un contenu non-Office 365 doivent se voir attribuer une licence E5 ou une licence E3 avec une licence de module complémentaire de conformité avancée.
+- Tous les dépositaires auxquels vous souhaitez associer du contenu non-Office 365 doivent disposer de la licence appropriée. Pour plus d’informations, reportez-vous à la rubrique [prise en main de Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
 - Un cas de découverte électronique avancé existant.
 
@@ -61,7 +58,7 @@ L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrit
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Chargement de contenu non-Office 365 dans Advanced eDiscovery
 
-1. En tant que gestionnaire eDiscovery ou administrateur eDiscovery, ouvrez Advanced eDiscovery, puis le cas où les données non Office 365 seront téléchargées vers.  
+1. En tant que gestionnaire eDiscovery ou administrateur eDiscovery, ouvrez Advanced eDiscovery, puis accédez au cas où les données non Office 365 seront téléchargées vers.  
 
 2. Cliquez sur **réviser les ensembles**, puis sélectionnez le jeu de révision pour lequel télécharger les données non Office 365.  Si vous n’avez pas d’ensemble de révision, vous pouvez en créer un. 
  

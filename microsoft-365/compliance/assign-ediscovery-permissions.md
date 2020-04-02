@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
-ms.openlocfilehash: 32dc7e9a01211fcd0d1441c2434385ecd611d585
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556812"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097207"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -30,9 +30,9 @@ Si vous souhaitez que les utilisateurs puissent utiliser l’un des outils de d�
   
 Le groupe de rôles de découverte électronique principal dans le centre de sécurité & conformité est appelé **Gestionnaire eDiscovery**. Il existe deux sous-groupes dans ce groupe de rôles. 
   
-- **gestionnaires eDiscovery** : un gestionnaire eDiscovery peut utiliser l’outil de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher des emplacements de contenu dans l’organisation et effectuer diverses actions liées à la recherche, telles que l’aperçu et l’exportation des résultats de recherche. Les membres peuvent également créer et gérer des cas de découverte électronique et des cas de découverte électronique avancée, ajouter et supprimer des membres à un cas, créer des suspensions de cas, exécuter des recherches associées à un cas et accéder à des données de cas. les gestionnaires eDiscovery peuvent uniquement accéder aux incidents qu’ils créent et les gérer. Ils ne peuvent pas accéder aux dossiers créés par d’autres gestionnaires eDiscovery ni les gérer. 
+- **gestionnaires eDiscovery** : un gestionnaire eDiscovery peut utiliser l’outil de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher des emplacements de contenu dans l’organisation et effectuer diverses actions liées à la recherche, telles que l’aperçu et l’exportation des résultats de recherche. Les membres peuvent également créer et gérer des cas de découverte électronique et des cas de découverte électronique avancée, ajouter et supprimer des membres à un cas, créer des suspensions de cas, exécuter des recherches associées à un cas et accéder à des données de cas. les gestionnaires eDiscovery peuvent uniquement accéder aux incidents qu’ils créent et les gérer. Ils ne peuvent pas accéder aux dossiers créés par d’autres gestionnaires eDiscovery ni les gérer.
     
-- **administrateurs eDiscovery** : un administrateur eDiscovery est membre du groupe de rôles gestionnaire eDiscovery et peut effectuer la même recherche de contenu et les mêmes tâches liées à la gestion des cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut : 
+- **administrateurs eDiscovery** : un administrateur eDiscovery est membre du groupe de rôles gestionnaire eDiscovery et peut effectuer la même recherche de contenu et les mêmes tâches liées à la gestion des cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
     
   - Accédez à tous les cas répertoriés sur les pages **eDiscovery** et **eDiscovery avancées** dans le centre de conformité & Compliance Center. 
 
@@ -40,10 +40,10 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
     
   - Gérez les cas eDiscovery après les avoir ajoutés en tant que membres du cas.
   
-  Consultez la section [plus d’informations](#more-information) pour connaître les raisons pour lesquelles vous pouvez souhaiter des administrateurs de découverte électronique dans votre organisation. 
+  Consultez la section [plus d’informations](#more-information) pour connaître les raisons pour lesquelles vous pouvez souhaiter des administrateurs de découverte électronique dans votre organisation.
 
 > [!NOTE]
-> Pour analyser les données d’un utilisateur à l’aide de Advanced eDiscovery, l’utilisateur (le dépositaire des données) doit disposer d’une licence Office 365 ou Microsoft E5. Par ailleurs, les utilisateurs disposant d’une licence Office 365 E1 ou E3 peuvent se voir attribuer une licence de module complémentaire de conformité avancée ; les utilisateurs disposant d’une licence Microsoft 365 E1 ou E3 peuvent se voir attribuer une licence de module complémentaire de conformité E5. Les administrateurs et les responsables de la mise en conformité qui sont affectés à des cas et utilisent Advanced eDiscovery pour analyser les données n’ont pas besoin d’une licence E5.  
+> Pour analyser les données d’un utilisateur à l’aide de Advanced eDiscovery, l’utilisateur (le dépositaire des données) doit disposer d’une licence Office 365 E5 ou Microsoft E5. Par ailleurs, les utilisateurs disposant d’une licence E1 ou E3 peuvent se voir attribuer une licence de complément E5. Les administrateurs, les responsables de la mise en conformité ou le personnel juridique qui sont affectés à des cas en tant que membres et utilisent Advanced eDiscovery pour collecter, afficher et analyser des données n’ont pas besoin d’une licence E5. Pour plus d’informations sur les licences, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://aka.ms/complianceSD).
   
 ## <a name="before-you-begin"></a>Avant de commencer
 

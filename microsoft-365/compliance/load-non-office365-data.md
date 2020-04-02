@@ -16,27 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4db0b40d485c4c1107bdcb0d49616cadb15b1915
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7d2f4fe685e17690b76124517468e0eceec8b414
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072157"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097217"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>Charger des données non-Office 365 dans une preuve
 
 Tous les documents que vous devrez peut-être analyser dans une enquête sur les données se trouvent dans Office 365. Avec la fonctionnalité d’importation de contenu autre que Office 365, vous pouvez télécharger des documents qui ne résident pas dans Office 365 dans des preuves afin qu’ils puissent être analysés lors d’une enquête de données.
 
->[!Note]
->L’enquête sur les données nécessite une offre Office 365 E3 avec le complément de conformité avancé ou un abonnement E5 pour votre organisation. Si vous ne disposez pas de ce plan et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5.
-
 ## <a name="before-you-begin"></a>Avant de commencer
 
 L’utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit dans cette procédure nécessite que vous ayez les éléments suivants :
 
-- Un Office 365 E3 avec le complément de conformité avancé ou l’abonnement E5.
+- Un abonnement Microsoft 365 ou Office 365 E5.
 
-- Tous les dépositaires dont le contenu n’est pas Office 365 seront chargés doivent disposer de E3 avec un complément de conformité avancé ou des licences E5.
+- Tous les intérêts dont le contenu n’est pas Office 365 seront téléchargés doivent disposer de la licence de complément E5 ou E5 appropriée.
 
 - Un cas eDiscovery existant.
 
@@ -48,7 +45,7 @@ L’utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit
 
 ## <a name="upload-non-office-365-content-in-to-a-data-investigation"></a>Télécharger du contenu non-Office 365 dans une enquête de données
 
-1. Open * * * * enquêtes de données * *, l’enquête sur laquelle les données non Office 365 seront téléchargées.  Cliquez sur l’onglet **Evidence** , puis sélectionnez l’ensemble de preuves sur lequel vous souhaitez charger les données Non Office 365.  Si vous n’avez pas encore créé d’ensemble de preuves, vous pouvez le faire maintenant.  Enfin, cliquez sur **gérer les preuves** , puis sur Afficher les **téléchargements** dans la section données non-Office 365
+1. Ouvrez les **enquêtes de données** et accédez à l’enquête sur laquelle les données non Office 365 seront téléchargées.  Cliquez sur l’onglet **Evidence** , puis sélectionnez l’ensemble de preuves sur lequel vous souhaitez charger les données Non Office 365.  Si vous n’avez pas encore créé d’ensemble de preuves, vous pouvez le faire maintenant.  Enfin, cliquez sur **gérer les preuves** , puis sur Afficher les **téléchargements** dans la section données non-Office 365
 
 2. Cliquez sur le bouton **Télécharger les fichiers** pour démarrer l’Assistant importation de données autres que Office 365.
 

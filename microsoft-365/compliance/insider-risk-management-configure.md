@@ -12,30 +12,32 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4b8bd0f8d540434410d9ebc2365789a669f455e1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634772"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097189"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques initiés
 
-Utilisez des stratégies de gestion des risques internes pour identifier les activités à risque et les outils de gestion qui permettent de prendre des mesures concernant les alertes de risque au sein de votre organisation. Procédez comme suit pour configurer les conditions préalables et configurer une stratégie de gestion des risques inSided.
+Utilisez les stratégies de gestion des risques internes pour identifier les activités risquées et les outils de gestion afin d’agir sur les alertes de risque au sein de votre organisation. Procédez comme suit pour configurer les conditions préalables et configurer une stratégie de gestion des risques inSided.
 
 >[!IMPORTANT]
->La solution de gestion des risques Microsoft 365 Insider offre une option de niveau client pour aider les clients à faciliter la gouvernance interne au niveau de l’utilisateur. Les administrateurs de niveau client peuvent configurer des autorisations pour permettre l’accès à cette solution pour les membres de votre organisation et configurer des connecteurs de données dans le centre de conformité Microsoft 365 pour importer des données pertinentes afin de prendre en charge l’identification de niveau utilisateur potentiellement activité à risque. Les clients reconnaissent les informations relatives au comportement, au caractère ou aux performances des utilisateurs individuels liés à l’emploi, peuvent être calculées par l’administrateur et mises à la disposition des autres membres de l’organisation.
+>La solution de gestion des risques Microsoft 365 Insider offre une option de niveau client pour aider les clients à faciliter la gouvernance interne au niveau de l’utilisateur. Les administrateurs de niveau client peuvent configurer des autorisations pour permettre l’accès à cette solution pour les membres de votre organisation et configurer des connecteurs de données dans le centre de conformité Microsoft 365 afin d’importer des données pertinentes afin de prendre en charge l’identification des activités potentiellement dangereuses. Les clients reconnaissent les informations relatives au comportement, au caractère ou aux performances des utilisateurs individuels liés à l’emploi, peuvent être calculées par l’administrateur et mises à la disposition des autres membres de l’organisation.
 
 Pour plus d’informations sur la façon dont les stratégies de risque d’initié peuvent vous aider à gérer les risques au sein de votre organisation, consultez la rubrique [gestion des risques internes dans Microsoft 365](insider-risk-management.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Avant de commencer à gérer les risques initiaux, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans). Pour accéder à la gestion des risques initiés et l’utiliser, votre organisation doit disposer de l’un des abonnements suivants :
+Avant de commencer à gérer les risques initiaux, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) et tous les modules complémentaires. Pour accéder à la gestion des risques initiés et l’utiliser, votre organisation doit disposer de l’un des abonnements ou des modules complémentaires suivants :
 
 - Abonnement Microsoft 365 E5 (payant ou version d’évaluation)
-- Abonnement Microsoft 365 entreprise E3 avec le [complément de conformité Microsoft E5](https://signup.microsoft.com/signup/?offerid=57806d24-4357-4eff-b0a3-4054ebdf2abe&DL=INFORMATION_PROTECTION_COMPLIANCE&ali=1)
+- Microsoft 365 E3 subscription + le complément de conformité Microsoft 365 E5
+- Abonnement Microsoft 365 a5 (payant ou version d’évaluation)
+- Abonnement Microsoft 365 a3 + complément Microsoft 365 a5 Compliance
 
-Les utilisateurs inclus dans les stratégies de gestion des risques internes doivent disposer d’une licence de conformité Microsoft 365 E5 ou être inclus dans un abonnement Microsoft 365 E5.
+Les utilisateurs inclus dans les stratégies de gestion des risques internes doivent disposer de l’une des licences ci-dessus.
 
 Si vous ne disposez pas d’un plan Microsoft 365 entreprise E5 existant et que vous souhaitez essayer de gérer les risques internes, vous pouvez [Ajouter microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement Office 365 existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 entreprise E5.
 
@@ -56,7 +58,7 @@ En fonction de la structure de votre équipe de gestion de la conformité, vous 
 
 Procédez comme suit pour ajouter des utilisateurs à un groupe de rôles de gestion des risques Insider :
 
-1. Connectez- [https://protection.office.com/permissions](https://protection.office.com/permissions) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+1. Connectez- [https://protection.office.com/permissions](https://protection.office.com/permissions) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365. "" "" "" ""
 
 2. Dans le centre de sécurité et conformité Microsoft Office 365, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
@@ -87,17 +89,17 @@ La gestion des risques internes prend en charge l’importation des données d�
 Consultez la rubrique [configurer un connecteur pour importer des données RH](import-hr-data.md) pour obtenir des instructions détaillées sur la configuration du connecteur rh Microsoft 365 pour votre organisation. Une fois que vous avez configuré le connecteur RH, revenez à ces étapes de configuration.
 
 >[!IMPORTANT]
->Si vous configurez une stratégie à l’aide du modèle de *vol de données des employés qui fait partie* du, vous devez configurer le connecteur RH pour qu’il utilise les fonctionnalités de détection de signal complètes du modèle de stratégie. Si vous configurez plusieurs connecteurs RH pour votre organisation, la gestion des risques internes extrait automatiquement les indicateurs de tous les connecteurs RH.
+>Si vous configurez un p’licy à l’aide du modèle de *vol de données emplo’ee* , vous devez configurer le connecteur RH de sorte qu’il utilise les fonctionnalités de détection de signal complètes du modèle de stratégie. Si vous configurez plusieurs connecteurs RH pour votre organisation, la gestion des risques internes extrait automatiquement les indicateurs de tous les connecteurs RH.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurer les stratégies de protection contre la perte de données (DLP)
 
-La gestion des risques internes prend en charge l’utilisation des stratégies DLP pour identifier l’exposition intentionnelle ou accidentelle d’informations sensibles aux parties indésirables. Lors de la configuration d’une stratégie de gestion des risques inSided avec le modèle *fuites de données* , vous devez affecter une stratégie DLP spécifique à la stratégie. Cette stratégie permet de piloter les indicateurs d’alerte pour les informations sensibles est une partie importante de la configuration de la couverture complète de la gestion des risques dans votre organisation.
+Risques internes man’gement prend en charge l’utilisation de stratégies DLP pour identifier l’exposition intentionnelle ou accidentelle d’informations sensibles à des parties indésirables. Lors de la configuration d’une stratégie de gestion des risques inSided avec le modèle *fuites de données* , vous devez affecter une stratégie DLP spécifique à la stratégie. Cette stratégie permet de piloter les indicateurs d’alerte pour les informations sensibles est une partie importante de la configuration de la couverture complète de la gestion des risques dans votre organisation.
 
-Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation. Une fois que vous avez configuré une stratégie DLP, revenez à ces étapes de configuration.
+Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation. Une fois que vous avez configuré une stratégie DLP, revenez à ces instructions de configuration "ration". "" "" "" "" "" "
 
 >[!IMPORTANT]
 >Si vous configurez une stratégie à l’aide du modèle *fuites de données* , vous devez configurer au moins une stratégie DLP pour utiliser les fonctionnalités de détection de signal complètes du modèle de stratégie. Si vous configurez plusieurs stratégies DLP pour votre organisation, vous devez attribuer une stratégie de gestion des risques inSided par stratégie DLP.
-
+""""""""
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Étape 4 (obligatoire) : configure Insider Risk Settings
 
 Les [paramètres des risques internes](insider-risk-management-policies.md#policy-settings) s’appliquent à toutes les stratégies de gestion des risques internes, quel que soit le modèle que vous avez choisi lors de la création d’une stratégie. Les paramètres sont configurés à l’aide du contrôle des **paramètres des risques Insiders** situé en haut de tous les onglets de gestion des risques Insiders. Ces paramètres contrôlent la confidentialité, les indicateurs, les fenêtres de surveillance et les détections intelligentes.

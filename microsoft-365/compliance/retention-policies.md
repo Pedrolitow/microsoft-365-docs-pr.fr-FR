@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: e7e6de977e8fad231ecb544a95f15caca5e56d13
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c012f3ddea19edb9ff22dd4e8353a0de1f3b3812
+ms.sourcegitcommit: 748bc3484b7ccbd65b558f495b6fa42196c3c571
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634692"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43083651"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -52,10 +52,9 @@ Lorsque le contenu est soumis à une stratégie de rétention, les utilisateurs 
   
 Enfin, certaines organisations doivent respecter des réglementations telles que la règle 17a-4 de la SEC (Securities and Exchange Commission), stipulant qu’après l’activation d’une stratégie de rétention, celle-ci ne peut pas être désactivée ni rendue moins restrictive. Pour remplir cette obligation, vous pouvez utiliser le verrouillage de conservation. Une fois la stratégie verrouillée, personne ne peut la désactiver ni la rendre moins restrictive, pas même l’administrateur.
   
-La création et la gestion des stratégies de rétention s’effectuent sur :
+Vous pouvez créer et gérer les stratégies de rétention à partir du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) : **Rétention** > ** des données** > ** des stratégies**
 
-- la page **Stratégies** du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/).
-- la page **Rétention** sous **Gouvernance des informations** du [Centre de sécurité &amp;et de conformité Office 365](https://protection.office.com/).
+Vous pouvez également accéder au même endroit dans le Centre de conformité Microsoft 365 à l’aide de l’onglet **Rétention** > ** de la gouvernance de l'information** > ** relatives aux solutions**. 
 
 **Si vous souhaitez réviser le contenu avant sa suppression définitive,** vous pouvez utiliser les [étiquettes de rétention](labels.md) plutôt qu’une stratégie de rétention. Lorsque vous créez une étiquette de rétention, vous pouvez configurer une [révision avant destruction](disposition-reviews.md) pour examiner le contenu à la fin de la période de rétention.
 
@@ -75,27 +74,43 @@ Remarques :
     
 ### <a name="content-in-onedrive-accounts-and-sharepoint-sites"></a>Contenu des comptes OneDrive et des sites SharePoint
 
-Une stratégie de rétention est appliquée au niveau de la collection d’un site. Lorsque vous incluez une collection de sites SharePoint ou un compte OneDrive dans une stratégie de rétention, une bibliothèque de conservation et de préservation est créée, s’il n’en existe pas. Vous pouvez afficher cette bibliothèque sur la page **Site.contents** dans le site de niveau supérieur de la collection de sites. La plupart des utilisateurs ne peuvent pas visualiser la bibliothèque de conservation et de préservation car elle est visible uniquement pour les administrateurs de collection de sites.
+Une stratégie de rétention est appliquée au niveau de la collection d’un site. Lorsque vous incluez une collection de sites SharePoint ou un compte OneDrive dans une stratégie de rétention, une bibliothèque de conservation et de préservation est utilisée pour conserver les documents. Cette bibliothèque est automatiquement créée si elle n'existe pas encore. Vous pouvez afficher cette bibliothèque sur la page **Site.contents** dans le site de niveau supérieur de la collection de sites. La plupart des utilisateurs ne peuvent pas visualiser la bibliothèque de conservation et de préservation car elle est visible uniquement pour les administrateurs de collection de sites.
   
-Si une personne tente de modifier ou de supprimer le contenu dans un site qui est soumis à une stratégie de rétention, la stratégie vérifie d’abord si le contenu a été modifié depuis qu’elle a été appliquée. S’il s’agit du premier changement depuis l’application de la stratégie, la stratégie de rétention copie le contenu dans la bibliothèque de conservation et de préservation, et permet ensuite à la personne de modifier ou de supprimer le contenu d’origine. Tout contenu dans la collection du site peut être copié dans la bibliothèque de conservation et de préservation, même si le contenu ne correspond pas à la requête utilisée par la stratégie de rétention.
-  
-Ensuite, un travail du minuteur nettoie la bibliothèque de conservation et de préservation. Le travail du minuteur s’exécute périodiquement et compare tout le contenu de la bibliothèque de conservation aux requêtes utilisées par les stratégies de rétention sur le site. À moins que le contenu corresponde à au moins une des requêtes, le travail du minuteur supprime définitivement le contenu de la bibliothèque de conservation.
-  
-Le précédent s’applique au contenu qui existe lorsque la stratégie de rétention est appliquée. En outre, tout contenu qui est créé ou ajouté au site après avoir été inclus dans la stratégie sera conservé après la suppression. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation des documents la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver les versions de tous les fichiers, vous devez activer le contrôle de version (consultez la section ci-après sur le contrôle de version).
+Si une personne tente de modifier ou de supprimer le contenu d'un site soumis à la stratégie de rétention et de suppression, ou de rétention uniquement, la stratégie vérifie d'abord si le contenu a été modifié depuis l'application de la stratégie. S’il s’agit du premier changement depuis l’application de la stratégie, la stratégie de rétention copie le contenu dans la bibliothèque de conservation et de préservation, et permet ensuite à la personne de modifier ou de supprimer le contenu d’origine. Tout contenu dans la collection du site peut être copié dans la bibliothèque de conservation et de préservation, même si le contenu ne correspond pas à la requête utilisée par la stratégie de rétention.
+
+La copie du contenu dans la bibliothèque de conservation et de préservation s'applique au contenu qui existe lors de l’application de la stratégie de rétention. En outre, tout contenu qui est créé ou ajouté au site après avoir été inclus dans la stratégie sera conservé après la suppression. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver toutes les versions d'un fichier, activez le contrôle de version, comme expliqué dans une [section](#how-a-retention-policy-works-with-document-versions-in-a-site-collection) suivante.
   
 Notez qu’un utilisateur reçoit une erreur s’il tente de supprimer une bibliothèque, une liste, un dossier ou un site soumis à une stratégie de rétention. Un utilisateur peut supprimer un dossier s’il déplace ou supprime d’abord les fichiers du dossier qui sont soumis à la stratégie. De plus, la bibliothèque de conservation et de préservation est créée uniquement lorsque le premier élément doit être copié dans la bibliothèque, et non lorsque vous créez la stratégie de rétention. Par conséquent, pour tester votre stratégie, vous devez d’abord modifier ou supprimer un document d’un site soumis à la stratégie, puis parcourir la bibliothèque de conservation et de préservation pour afficher la copie conservée.
   
-Lorsqu’une stratégie de rétention est affectée à un compte OneDrive ou à un site SharePoint, le contenu suit l’un des deux chemins suivants :
+Une fois qu’une stratégie de rétention est attribuée à un compte OneDrive ou un site SharePoint, les chemins d’accès au contenu sont fonction de la politique de rétention qui consiste à conserver et à supprimer, à conserver uniquement ou à supprimer uniquement.
+
+Lorsque la stratégie de rétention doit conserver et supprimer :
 
 ![Diagramme de cycle de vie de contenu dans SharePoint et OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
-1. **Si le contenu est modifié ou supprimé** pendant la période de rétention, une copie du contenu d’origine tel qu’il existait lors de l’attribution de la stratégie de rétention est créée dans la bibliothèque de conservation et de préservation des documents. Ici, un travail de minuteur s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont déplacés vers la Corbeille second niveau où ils sont ensuite supprimés définitivement au bout de 93 jours. La corbeille second niveau n’est pas visible par les utilisateurs finaux (seule le premier niveau de la corbeille l’est), mais les administrateurs de collection de sites peuvent afficher et restaurer du contenu à partir de cet emplacement.
+1. **Si le contenu est modifié ou supprimé** pendant la période de rétention : une copie du contenu d’origine tel qu’il existait lors de l’attribution de la stratégie de rétention est créée dans la bibliothèque de conservation et de préservation. Là, un travail du minuteur s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré. Ces éléments sont ensuite déplacés vers la corbeille second niveau, où ils sont définitivement supprimés au bout de 93 jours. La corbeille second niveau n’est pas visible par les utilisateurs finaux (seule le premier niveau de la corbeille l’est), mais les administrateurs de collection de sites peuvent afficher et restaurer du contenu à partir de cet emplacement.
 
     > [!NOTE]
-    > Nous avons récemment modifié la manière dont le contenu est supprimé de la bibliothèque de conservation et de préservation. Pour éviter toute perte de données par inadvertance, nous ne supprimons plus définitivement le contenu de la bibliothèque de conservation. Au lieu de cela, nous ne supprimons définitivement que le contenu de la corbeille de façon à ce que tout le contenu de la bibliothèque de conservation et de préservation passe transmis par la corbeille second niveau .
+    > Pour éviter toute perte de données par inadvertance, le contenu n’est jamais automatiquement supprimé de la bibliothèque de conservation et de préservation, mais il est déplacé vers la corbeille second niveau. Là, la période de grâce de 93 jours permet aux administrateurs de récupérer ce contenu, le cas échéant.
     
-2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention, il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette Corbeille (action également nommée « purge »), le document est déplacé vers la Corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas utilisée et par conséquent que la recherche n’y trouve pas de contenu. Cela signifie qu’une conservation eDiscovery ne trouve aucun contenu à conserver dans la Corbeille. 
-    
+2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention, il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette Corbeille (action également nommée « purge »), le document est déplacé vers la Corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas utilisée et par conséquent que la recherche n’y trouve pas de contenu. Cela signifie qu’une conservation eDiscovery ne trouve aucun contenu à conserver dans la Corbeille.
+
+2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention : il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille (action également nommée « purge »), le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et par conséquent que la recherche n’y trouve pas de contenu. Cela signifie qu’une conservation eDiscovery ne trouve aucun contenu à conserver dans la Corbeille. 
+
+Lorsque la stratégie de rétention consiste à conserver uniquement ou à supprimer uniquement, les chemins d'accès au contenu sont des variantes de rétention et de suppression :
+
+#### <a name="content-paths-for-retain-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de conservation uniquement
+
+1. **Si le contenu est modifié ou supprimé** pendant la période de rétention : une copie du document d’origine est créée dans la bibliothèque de conservation et de préservation et conservée jusqu’à la fin de la période de rétention, lorsque celle-ci est déplacée vers la corbeille second niveau et supprimée définitivement après 93 jours.
+
+2. **Si le contenu n’est pas modifié ou supprimé** pendant la période de rétention : rien ne se passe avant et après la période de rétention ; le document reste à son emplacement d’origine.
+
+#### <a name="content-paths-for-delete-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de suppression uniquement
+
+1. **Si le contenu est supprimé** pendant la période de rétention : le document est déplacé vers la corbeille premier niveau. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille, le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). Si le contenu est modifié pendant la période de rétention, il suit le même chemin de suppression après l’expiration du contenu.
+
+2. **Si le contenu n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers la corbeille premier niveau. Si le contenu est supprimé pendant la période de rétention, le document est immédiatement déplacé vers la corbeille premier niveau. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille (action également nommée « purge »), le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et par conséquent que la recherche n’y trouve pas de contenu. Cela signifie qu’une conservation eDiscovery ne trouve aucun contenu à conserver dans la Corbeille.
+
 ### <a name="content-in-mailboxes-and-public-folders"></a>Contenu dans les boîtes aux lettres et les dossiers publics
 
 Pour le courrier, le calendrier et d’autres éléments d’un utilisateur, une stratégie de rétention est appliquée au niveau d’une boîte aux lettres. Pour un dossier public, une stratégie de rétention est appliquée au niveau du dossier, et non au niveau de la boîte aux lettres. Les boîtes aux lettres et les dossiers publics utilisent le dossier Éléments récupérables pour conserver des éléments. Seules les personnes disposant d’autorisations eDiscovery peuvent afficher les éléments dans le dossier Éléments récupérables d’un autre utilisateur.
@@ -106,13 +121,25 @@ Un processus évalue régulièrement les éléments du dossier Éléments récup
   
 Lorsqu’une personne tente de modifier certaines propriétés d’un élément de boîte aux lettres (objet, corps, pièces jointes, expéditeurs et destinataires ou la date d’envoi ou de réception d’un message), une copie de l’élément d’origine est enregistré dans le dossier des Éléments récupérables avant la validation de la modification. Cette action se produit à chaque modification ultérieure. À la fin de la période de rétention, les copies dans le dossier Éléments récupérables sont supprimées définitivement.
   
-Lorsqu’une stratégie de rétention est affectée à une boîte aux lettres ou à un dossier public, le contenu suit l’un des deux chemins suivants :
+Lorsque la stratégie de rétention doit conserver et supprimer :
 
 ![Diagramme du flux de rétention dans la messagerie et les dossiers publics](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Si l’élément est modifié ou supprimé définitivement** par l’utilisateur (par MAJ + SUPPR ou supprimé du dossier Éléments supprimés) pendant la période de rétention, l’élément est déplacé (ou copié, dans le cas d’une modification) vers le dossier Éléments récupérables. Ici, un processus s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours.
     
-2. **Si l’élément n’est pas modifié ou supprimé** pendant la période de rétention, le même processus s’exécute régulièrement sur tous les dossiers dans la boîte aux lettres et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours. 
+2. **Si l’élément n’est ni modifié ni supprimé** pendant la période de rétention, ce même processus s’exécute régulièrement sur tous les dossiers de la boîte aux lettres et identifie les éléments dont la période de rétention a expiré. Ceux-ci sont alors supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré jusqu’à 30 jours. Lorsque la stratégie de rétention consiste à conserver uniquement ou à supprimer uniquement, les chemins d'accès au contenu sont des variantes de rétention et de suppression :
+
+#### <a name="content-paths-for-retain-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de conservation uniquement
+
+1. **Si l’élément est modifié ou supprimé** pendant la période de rétention : une copie de l’élément d’origine est créée dans le dossier Éléments récupérables et conservée jusqu’à la fin de la période de rétention, lorsque la copie dans le dossier Éléments récupérables est définitivement supprimée dans un délai de 14 jours après l’expiration de l’élément. 
+
+2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention : rien ne se passe avant et après la période de rétention ; le document reste à son emplacement d’origine.
+
+#### <a name="content-paths-for-delete-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de suppression uniquement
+
+1. **Si le contenu n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers le dossier Éléments récupérables. 
+
+2. **Si l’élément est supprimé** pendant la période de rétention, l’élément est placé immédiatement dans le dossier Éléments récupérables. Si un utilisateur supprime l’élément à partir de là ou vide le dossier Éléments récupérables, l’élément est définitivement supprimé. Dans le cas contraire, l’élément est définitivement supprimé après avoir été placé dans le dossier Éléments récupérables pendant 14 jours. 
 
 ### <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation
 
