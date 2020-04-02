@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Découvrez comment détecter les problèmes que vous rencontrez lors de la configuration d’un domaine personnalisé en vous assurant que les enregistrements DNS sont correctement configurés.
-ms.openlocfilehash: 277e87ad6b06db0b1ef3b3cb5eaaa45a2e77ed6f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a93318d54b950b908319fe50a0cfedefe8586036
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252958"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115971"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records-in-office-365"></a>Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS dans Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "42252958"
 [] La configuration de votre domaine pour qu'il fonctionne avec Office 365 peut présenter des difficultés. Le système DNS est exigeant et la configuration DNS pour votre domaine a une incidence sur les activités professionnelles importantes, comme le courrier.
 
 > [!NOTE]
-> Vous pouvez vérifier les problèmes liés à votre domaine en vérifiant son état. Accédez à **paramètres** > **Domains** et affichez les notifications dans la colonne **État** . Si vous voyez un problème, sélectionnez autres actions (trois points), puis sélectionnez **vérifier l’intégrité**. Le volet qui s’ouvre décrit tous les problèmes liés à votre domaine.
+> Vous pouvez vérifier les problèmes liés à votre domaine en vérifiant son état. Accédez à **configurer** > les**domaines** et affichez les notifications dans la colonne **État** . Si vous voyez un problème, sélectionnez autres actions (trois points), puis sélectionnez **vérifier l’intégrité**. Le volet qui s’ouvre décrit tous les problèmes liés à votre domaine.
   
 ## <a name="whats-going-on"></a>Que se passe-t-il ?
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 'Remplacez votre adresse de messagerie initiale par une adresse de messagerie conviviale telle que tom@fourthcoffee.com. Pour ce faire, vous devez acheter un nom de domaine et l’ajouter à Office 365. '
-ms.openlocfilehash: 3e01f0bfb97fbef762fbd7162944ca25d882f142
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1c3c77f9626cdf292e0fb9400070cef3df05a9d6
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253090"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115972"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Changer votre adresse de courrier pour utiliser votre domaine personnalisé
 
@@ -77,7 +77,7 @@ Pour effectuer ces étapes, vous devez disposer d’un compte d’administrateur
 
 ::: moniker-end 
 
-2. Accédez à la page **paramètres** > des**domaines** . 
+2. Accédez à la page**domaines** **d’installation** > . 
 
 3. Dans la page **domaines** , sélectionnez **Ajouter un domaine**.
     
