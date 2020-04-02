@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053094"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113516"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -72,9 +72,9 @@ L' [affiche de Microsoft 365 pour entreprise](../media/m365-poster/Microsoft365E
 Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
-## <a name="transition-your-entire-organization"></a>Migration de l’ensemble de votre organisation
+## <a name="transition-your-entire-organization"></a>Migration de l’organisation entière
 
-Pour obtenir une meilleure idée de la façon de déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 pour les entreprises, téléchargez l' [affiche de transition](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Pour obtenir une meilleure idée de la façon de déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 pour les entreprises, consultez l' [affiche de transition](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Image de l’affiche pour la transition vers Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
@@ -150,6 +150,6 @@ Pour plus d’informations sur le déploiement, voir How :
 
 Si vous effectuez le déploiement vous-même, commencez votre [déploiement de Microsoft 365 pour les entreprises](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Page du produit Microsoft 365 pour entreprise](https://www.microsoft.com/microsoft-365/enterprise)

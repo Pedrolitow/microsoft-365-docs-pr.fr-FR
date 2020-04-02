@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Découvrez comment gérer vos modes de paiement dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952005"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106047"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Ajouter, mettre à jour ou supprimer vos modes de paiement
 
@@ -234,7 +234,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
   
 4. Mettez à jour vos informations de carte de crédit ou de compte bancaire (nom sur la carte bancaire ou le compte bancaire, adresse de facturation. Numéro de téléphone ou date d’expiration, si nécessaire, puis sélectionnez **Envoyer**.
 
-5. Un message de confirmation s'affiche. Si ce n'est pas le cas, voir [Résolution des problèmes liés aux cartes bancaires et aux comptes bancaires](#troubleshooting-credit-cards-and-bank-accounts).
+5. Un message de confirmation s'affiche. Si ce n’est pas le cas, consultez « résolution des problèmes liés aux cartes de crédit et aux comptes bancaires » plus loin dans cet article.
 
     ![Message de confirmation : « votre mode de paiement a été mis à jour avec succès ».](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
@@ -262,7 +262,7 @@ Si votre mode de paiement est associé à un profil de facturation et est égale
   
 4. Mettez à jour vos informations de carte de crédit ou de compte bancaire (nom sur la carte bancaire ou le compte bancaire, adresse de facturation. Numéro de téléphone ou date d’expiration, si nécessaire, puis sélectionnez **Envoyer**.
 
-5. Un message de confirmation s'affiche. Si ce n'est pas le cas, voir [Résolution des problèmes liés aux cartes bancaires et aux comptes bancaires](#troubleshooting-credit-cards-and-bank-accounts).
+5. Un message de confirmation s'affiche. Si ce n’est pas le cas, consultez « résolution des problèmes liés aux cartes de crédit et aux comptes bancaires » plus loin dans cet article.
 
     ![Message de confirmation : « votre mode de paiement a été mis à jour avec succès ».](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 

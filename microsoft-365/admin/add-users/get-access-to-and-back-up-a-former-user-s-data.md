@@ -1,5 +1,5 @@
 ---
-title: Accéder aux données d'un ancien utilisateur et les sauvegarder.
+title: Accéder aux données d'un ancien utilisateur et les sauvegarder
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Découvrez comment conserver les fichiers et les e-mails d’un employé lorsque la personne quitte votre organisation.
-ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2b608b51060e746d0b69fd887882b51735578496
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353195"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105758"
 ---
-# <a name="get-access-to-and-back-up-a-former-users-data"></a>Accéder aux données d'un ancien utilisateur et les sauvegarder.
+# <a name="get-access-to-and-back-up-a-former-users-data"></a>Accéder aux données d'un ancien utilisateur et les sauvegarder
 
 
 Quand un employé quitte votre organisation, vous voudrez probablement accéder à ses données (documents et courriers électroniques) et les consulter, les sauvegarder ou les transmettre à un nouvel employé.
@@ -102,11 +102,15 @@ En tant qu’administrateur général, vous pouvez vous accorder l’accès au c
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration</a> en tant qu’administrateur général ou administrateur SharePoint. 
 
+    Si vous recevez un message indiquant que vous n’êtes pas autorisé à accéder au centre d’administration, vous ne disposez pas des autorisations d’administrateur dans votre organisation.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a> en tant qu’administrateur général ou administrateur SharePoint.
+
+    Si vous recevez un message indiquant que vous n’êtes pas autorisé à accéder au centre d’administration, vous ne disposez pas des autorisations d’administrateur dans votre organisation.
 
 ::: moniker-end
 
@@ -114,9 +118,9 @@ En tant qu’administrateur général, vous pouvez vous accorder l’accès au c
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a> en tant qu’administrateur général ou administrateur SharePoint.
 
-::: moniker-end
+    Si vous recevez un message indiquant que vous n’êtes pas autorisé à accéder au centre d’administration, vous ne disposez pas des autorisations d’administrateur dans votre organisation.
 
-   Si vous recevez un message indiquant que vous n’êtes pas autorisé à accéder au centre d’administration, vous ne disposez pas des autorisations d’administrateur dans votre organisation.
+::: moniker-end
 
 2. Dans le volet gauche, sélectionnez **centres** \> d’administration **SharePoint**. (Vous devrez peut-être sélectionner **Afficher tout** pour afficher la liste des centres d’administration.)
 
@@ -181,6 +185,10 @@ Outlook commence l’exportation immédiatement sauf si un nouveau fichier de do
     
 Découvrez comment [exporter ou sauvegarder des courriers électroniques, des contacts et des calendriers dans un fichier. pst Outlook](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) dans Outlook 2010. 
   
+  
+  > [!NOTE]
+  > Par défaut, votre courrier électronique est disponible hors connexion pendant une période de 12 mois. Si nécessaire, reportez-vous à la rubrique Comment [augmenter les données disponibles hors connexion](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
+ 
 ## <a name="give-another-user-access-to-a-former-users-email"></a>Accorder à un autre utilisateur l’accès à l’adresse de messagerie d’un ancien utilisateur 
 
 Pour accorder l’accès aux messages électroniques, au calendrier, aux tâches et aux contacts de l’ancien employé à un autre employé, importez les informations dans la boîte de réception Outlook d’un autre employé.
@@ -210,6 +218,9 @@ Pour accorder l’accès aux messages électroniques, au calendrier, aux tâches
 8. Définir les options d’importation des éléments. Il n’est généralement pas nécessaire de modifier les paramètres par défaut.
     
 9. Sélectionnez **Terminer**.
+
+> [!NOTE]
+> Les étapes restent les mêmes pour accéder aux données de messagerie et à OneDrive d’un utilisateur existant.
     
 > [!TIP]
 > Si vous souhaitez importer ou restaurer uniquement quelques éléments à partir d’un fichier de données Outlook (. pst), vous pouvez ouvrir le fichier de données Outlook. Ensuite, dans le volet de navigation, faites glisser les éléments des dossiers du fichier de données Outlook vers vos dossiers Outlook existants. 
@@ -224,4 +235,3 @@ Pour accorder l’accès aux messages électroniques, au calendrier, aux tâches
   
 [Rétention et suppression de OneDrive](/onedrive/retention-and-deletion)
   
-

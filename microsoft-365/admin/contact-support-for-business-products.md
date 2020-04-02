@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Obtenez un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre région ou votre pays, en envoyant une demande de service en ligne ou en accédant à la Boutique Microsoft.
 feedback_system: None
-ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352945"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106059"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur
 
@@ -95,7 +95,7 @@ La portée de l'assistance de l'équipe de support technique  21Vianet Office 36
 
 ### <a name="community-and-self-service-support-options"></a>Communauté et options d’assistance en libre service
 
-L’assistance en libre service est disponible pour tout Office 365 exploités par les utilisateurs 21Vianet, et inclut des vidéos et des outils de dépannage, des vidéos et des articles d’aide ainsi que des forums et des wikis dans la[ Communauté d’Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Pour plus d’informations sur les ressources d’assistance en libre service, consultez[Plus d’informations sur Office 365 géré par 21Vianet](/services-in-china/services-in-china.md).
+L’assistance en libre service est disponible pour tout Office 365 exploités par les utilisateurs 21Vianet, et inclut des vidéos et des outils de dépannage, des vidéos et des articles d’aide ainsi que des forums et des wikis dans la[ Communauté d’Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Pour plus d’informations sur les ressources d’assistance en libre service, consultez[Plus d’informations sur Office 365 géré par 21Vianet](services-in-china/services-in-china.md).
 
 ### <a name="pre-sales-support"></a>Assistance avant-vente
 

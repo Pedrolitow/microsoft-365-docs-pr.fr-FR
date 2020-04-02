@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
-ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42230067"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106183"
 ---
-# <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
+# <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
 **S’applique à :**
 
@@ -36,6 +35,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 ## <a name="januaryfebruary-2020"></a>Janvier/février 2020
 
+- [Disponibilité générale des vues de campagne dans Office 365 DAV](campaigns.md)
 - Améliorations apportées à l' [Explorateur de menaces](threat-explorer.md) pour permettre aux équipes des opérations de sécurité d’effectuer des recherches et des filtres sur plusieurs champs lors de l’enquête sur le [courrier électronique](investigate-malicious-email-that-was-delivered.md):
     - Emplacement de remise et actions spéciales
     - Direction (entrant, sortant ou intra-org)
@@ -66,7 +66,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Afficher les en-têtes des messages électroniques et télécharger le corps du courrier](investigate-malicious-email-that-was-delivered.md) (plan 1 de l’ATP Office 365 ou plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Affichage de la chronologie de l’e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (plan 1 Office 365 DAV ou plan 2)
 
@@ -82,7 +82,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 Saviez-vous qu’Office 365 ATP est disponible dans deux plans ? [En savoir plus sur ce que chaque plan inclut](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
