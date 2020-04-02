@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de rétention, vous pouvez baser une période de rétention sur la survenue d’un type d’événement spécifique. L’événement déclenche le début de la période de rétention, et tout le contenu portant une étiquette définie pour ce type d’événement se voit appliquer les actions de rétention de l’étiquette. La rétention basée sur un événement est généralement utilisée dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: da5e10735e8980199a829ac50d096052abe93d14
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4389f3639de3e9e036491026455ce62a9e258432
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074505"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105621"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 Lorsque vous conservez du contenu, la période de rétention est souvent basée sur l’ancienneté du contenu. Par exemple, vous pouvez conserver des documents pendant sept ans à compter de leur création, puis les supprimer. Cependant, dans Office 365, vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement grâce aux étiquettes. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement.
   

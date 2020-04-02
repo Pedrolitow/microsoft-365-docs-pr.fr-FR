@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour implémenter une stratégie de gestion des enregistrements dans votre organisation Microsoft ou Office 365, utilisez des étiquettes de rétention qui déclarent du contenu sous la forme d’un enregistrement. Ensuite, publiez ou appliquez automatiquement l’étiquette de rétention d’enregistrement.
-ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42586724"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106142"
 ---
 # <a name="overview-of-records"></a>Vue d’ensemble des enregistrements
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 La gestion des enregistrements dans Microsoft 365 aide les organisations à respecter les stratégies d’entreprise, les obligations légales et réglementaires, tout en réduisant les risques et la responsabilité juridique.
 
@@ -79,10 +81,6 @@ Lorsque vous créez une étiquette de rétention, vous pouvez l’utiliser pour 
    ![Cliquez sur la case à cocher Utiliser une étiquette pour classer du contenu en tant qu’Enregistrement](../media/recordversioning6.png)
 
 3. [Publier](labels.md#how-retention-labels-work-with-retention-label-policies) ou [appliquer automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) l’étiquette de rétention aux sites SharePoint et/ou aux comptes OneDrive.
-
-> [!NOTE]
-> La déclaration d’un élément en tant qu’enregistrement à l’aide d' [étiquettes de rétention](labels.md) nécessite une licence Office 365 Entreprise E5 ou équivalente pour chaque utilisateur autorisé à modifier le contenu dans cet emplacement. Les utilisateurs disposant d’un accès en lecture seule n’ont pas besoin de licence.
-
 
 ### <a name="applying-a-retention-label-to-content"></a>Application d’une étiquette de rétention au contenu
 

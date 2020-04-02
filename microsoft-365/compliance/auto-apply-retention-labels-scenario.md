@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Ce scénario de solution illustre comment gérer le cycle de vie de documents relatifs aux produits stockés dans SharePoint Online à l’aide d’étiquettes de rétention Office 365. Pour ce faire, vous pouvez utiliser les métadonnées de document pour classifier le contenu, et spécifiquement en appliquant automatiquement des étiquettes de rétention Office 365 et en configurant la rétention basée sur les événements.
-ms.openlocfilehash: aa73feecbfaa830b2297a5c64f653c4da4d4b325
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079407"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106036"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gérer le cycle de vie des documents SharePoint avec étiquettes de rétention
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 Cet article vous explique comment gérer le cycle de vie de documents relatifs à des produits stockés dans SharePoint Online à l’aide d’étiquettes de rétention d’Office 365 et en particulier de l’application automatique d’étiquettes et de la configuration de la rétention basée sur les événements. La fonctionnalité d’application automatique utilise la classification de documents en utilisant des métadonnées SharePoint. Le scénario décrit dans cet article est basé sur des documents relatifs à des produits, mais les mêmes concepts peuvent être utilisés dans d’autres scénarios. Par exemple, dans l’industrie pétrolière et gazière, vous pouvez gérer le cycle de vie des documents relatifs aux biens matériels tels que les plateformes pétrolières, les registres de forage ou les licences de production. Le secteur des services financiers, vous permet de gérer les documents associés aux comptes bancaires, aux hypothèques ou aux contrats d’assurance. Dans le secteur public, vous pouvez gérer les documents relatifs aux permis de construction ou aux formulaires fiscaux.
 
