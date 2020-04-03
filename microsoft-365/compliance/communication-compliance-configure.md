@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
-ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
+ms.openlocfilehash: 31444d677e7cd775f5364796c6821cb82b6dc654
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43100877"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113571"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -42,8 +42,11 @@ Avant de commencer la mise en route de la conformité de la communication, vous 
 - Abonnement Microsoft 365 a5 (payant ou version d’évaluation)
 - Abonnement Microsoft 365 a3 + complément Microsoft 365 a5 Compliance
 - Abonnement Microsoft 365 a3 + complément de gestion des risques Microsoft 365 a5 Insider
+- Abonnement Microsoft 365 G5 (payant ou version d’évaluation)
+- Abonnement Microsoft 365 G5 + le complément de conformité Microsoft 365 G5
+- Abonnement Microsoft 365 G5 + le complément de gestion des risques Microsoft 365 G5 Insider
 - Office 365 entreprise E5 abonnement (payant ou version d’évaluation)
-- Office 365 entreprise E3 abonnement + le complément Office 365 Advanced Compliance
+- Office 365 entreprise E3 abonnement + le complément Office 365 Advanced Compliance (qui n’est plus disponible pour les nouveaux abonnements, reportez-vous à la rubrique note)
 
 Les utilisateurs inclus dans les stratégies de conformité des communications doivent disposer de l’une des licences ci-dessus.
 
@@ -94,7 +97,7 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Office 365 | Groupes de distribution dynamique |
-| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Néant | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
   
 Lorsque vous sélectionnez un groupe Office 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres Office 365 partagée et les canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.
 

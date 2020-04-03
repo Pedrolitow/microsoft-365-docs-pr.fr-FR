@@ -17,16 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes de référentiel sécurisé du client qui vous permettent de contrôler la manière dont un technicien du support technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: 8906fde608e6e6c26604450eed063915e4617d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076830"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113561"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Référentiel sécurisé du client dans Office 365
 
-Cet article fournit des conseils de déploiement et de configuration pour une fonctionnalité actuellement disponible uniquement pour les organisations qui ont un abonnement Microsoft 365 E5, Office 365 E5, protection et conformité des informations ou un abonnement de complément de conformité avancé. Customer Lockbox prend en charge les demandes d’accès aux données dans Exchange Online, SharePoint Online et OneDrive entreprise. Pour recommander la prise en charge d’autres services Office 365, envoyez une demande auprès d' [office 365 UserVoice](https://office365.uservoice.com/).
+Cet article fournit des instructions de déploiement et de configuration pour le référentiel sécurisé du client. Customer Lockbox prend en charge les demandes d’accès aux données dans Exchange Online, SharePoint Online et OneDrive entreprise. Pour recommander la prise en charge d’autres services Office 365, envoyez une demande auprès d' [office 365 UserVoice](https://office365.uservoice.com/).
+
+Pour voir les options permettant aux utilisateurs de bénéficier des offres de conformité de Microsoft 365, dont celui-ci, depuis le 1er avril 2020, consultez les [conseils relatifs aux licences microsoft 365 pour la sécurité & la conformité](https://aka.ms/ComplianceSD).
 
 Le référentiel sécurisé du client garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer une opération de service sans votre approbation explicite. Le référentiel sécurisé du client vous fournit le flux de travail d’approbation pour les demandes d’accès à votre contenu.
 
@@ -152,7 +154,7 @@ Lorsqu’une personne de votre organisation approuve ou refuse une demande de r�
 | Adresse IP | Adresse IP de la machine que l’approbateur a utilisé pour approuver ou refuser une demande. |
 | Utilisateur       | Le compte de service\[BOXServiceAccount@\]customerforest. prod.Outlook.com.            |
 | Activité   | Set-AccessToCustomerDataRequest ; Il s’agit de l’activité d’audit qui est enregistrée lorsque vous approuvez ou refusez une demande de référentiel sécurisé d’un client.                                |
-| Option       | GUID de la demande de référentiel sécurisé du client                             |
+| Item       | GUID de la demande de référentiel sécurisé du client                             |
 
 La capture d’écran suivante montre un exemple d’enregistrement de journal d’audit correspondant à une demande approuvée de client Lockbox. Si une demande de référentiel sécurisé du client a été refusée, la valeur du paramètre **ApprovalDecision** serait **Deny**.
 
@@ -171,7 +173,7 @@ Les actions effectuées par un technicien Microsoft après l’approbation d’u
 | Adresse IP | Adresse IP de l’ordinateur utilisé par Microsoft Engineer. |
 | Utilisateur       | Opérateur Microsoft ; Cette valeur indique que cet enregistrement est lié à une demande de référentiel sécurisé du client.                                  |
 | Activité   | Nom de l’activité effectuée par l’ingénieur Microsoft.|
-| Option       | \<éliminer\>                                             |
+| Item       | \<éliminer\>                                             |
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 

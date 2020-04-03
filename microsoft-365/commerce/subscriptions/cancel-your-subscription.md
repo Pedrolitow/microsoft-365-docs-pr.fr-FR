@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Découvrez comment annuler votre abonnement Office 365 pour les entreprises ou Microsoft 365 (version d’évaluation ou abonnement payant).
-ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
+ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42415649"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117943"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
@@ -46,7 +46,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Recherchez l’abonnement que vous souhaitez annuler et sous **paramètres & Actions**, sélectionnez Annuler l' **abonnement**.
 
@@ -58,7 +58,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sur la page **abonnements** , sélectionnez un abonnement.
 
@@ -74,7 +74,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sur la page **abonnements** , sélectionnez un abonnement.
 
@@ -94,13 +94,14 @@ Si vous annulez un abonnement avant la fin de votre terme, l’abonnement passe 
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Voici ce à quoi vous et vos utilisateurs devez vous attendre si vous annulez un abonnement.
   
-- **Accès administrateur** Les administrateurs peuvent toujours se connecter et accéder au centre d’administration, et acheter d’autres abonnements si nécessaire. En tant qu’administrateur général ou administrateur de facturation, vous disposez de 90 jours pour [réactiver l’abonnement](reactivate-your-subscription.md) avec toutes les données intactes. 
-    
+- **Accès administrateur** Les administrateurs peuvent toujours se connecter et accéder au centre d’administration, et acheter d’autres abonnements si nécessaire. En tant qu’administrateur général ou administrateur de facturation, vous disposez de 90 jours pour [réactiver l’abonnement](reactivate-your-subscription.md) avec toutes les données intactes.
+
 - **Accès utilisateur** Vos utilisateurs ne pourront pas utiliser des services tels que OneDrive entreprise ou accéder à des données client telles que des courriers électroniques ou des documents sur des sites d’équipe. Les applications Office, telles que Word et Excel, finissent par passer en mode d'utilisation en lecture seule avec fonctionnalités réduites, et affichent des [notifications Produit sans licence](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
-    
- **Important** Si vous voulez que les données de votre abonnement soient supprimées avant la fin de la période normale de désactivation, vous pouvez demander la suppression accélérée des privilèges d'accès. Si vous demandez la suppression accélérée des privilèges d'accès, les données de votre abonnement seront supprimées dans les 3 jours. Pour utiliser la mise en service accélérée, [appelez le support technique](../../admin/contact-support-for-business-products.md).
-  
+
 Pour en savoir plus, voir [qu’arrive-t-il à mes données et à l’accès quand mon abonnement prend fin ?](what-if-my-subscription-expires.md)
+
+> [!IMPORTANT]
+> Si vous souhaitez que les données de votre abonnement soient supprimées avant la fin de la période standard désactivée, vous pouvez [fermer votre compte](../close-your-account.md).
 
 ## <a name="other-steps-you-might-have-to-take"></a>Autres étapes que vous pouvez être amené à effectuer
 

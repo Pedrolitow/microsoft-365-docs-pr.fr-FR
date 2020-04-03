@@ -17,17 +17,14 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la gestion des accès privilégiés dans Office 365
-ms.openlocfilehash: 8d1b6bbda57cbe51167c87a29e140e6b5f871bca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 547f3f3179252c767d56b45d4ad64d67b3c82b7d
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070961"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116024"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gestion des accès privilégiés dans Office 365
-
-> [!IMPORTANT]
-> Cette rubrique traite des conseils de déploiement et de configuration pour les fonctionnalités uniquement disponibles dans Office 365 E5 et les SKU de conformité avancée.
 
 La gestion des accès privilégiés permet le contrôle d’accès granulaire sur les tâches d’administration privilégiée dans Office 365. Elle peut aider à protéger votre organisation contre les violations de l’utilisation de comptes d’administrateur privilégié existants avec un accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. La gestion des accès privilégiés demande aux utilisateurs de demander un accès juste-à-temps pour effectuer des tâches élevées et privilégiées par le biais d’un flux de travail d’approbation à forte échelle de temps. Cette configuration offre aux utilisateurs juste-à-temps l’accès à l’exécution de la tâche, sans risquer d’exposer les données sensibles ou les paramètres de configuration critiques. L’activation de la gestion des accès privilégiés dans Office 365 permet à votre organisation de fonctionner avec des privilèges permanents et de fournir une couche de défense contre les vulnérabilités d’accès administratif permanentes.
 
@@ -77,7 +74,7 @@ Pour une demande approuvée, la tâche est traitée par l’instance d’exécut
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Quels sont les SKU pouvant utiliser l’accès privilégié dans Office 365 ?
 
-La gestion des accès privilégiés est disponible pour les clients disposant d’Office 365 E5 et de SKU de conformité avancée.
+La gestion des accès privilégiés est disponible pour les clients pour une large sélection des abonnements et des modules complémentaires de Microsoft 365 et Office 365. Pour plus d’informations, consultez la rubrique [prise en main de la gestion des accès privilégiés](privileged-access-management-configuration.md) .
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>Quand les accès privilégiés prennent-ils en charge les charges de travail Office 365 au-delà d’Exchange ?
 

@@ -17,18 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: e6e13ef14ed9ed3e60f2918df0c25c0601d0225e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d0496a194cc734304f8ba6f09e6497c8d4f233bc
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106100"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126021"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)
 
->*[Guide des licences Microsoft 365 pour la sécurité & conformité](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Avant cet aperçu, lorsque vous avez appliqué des étiquettes de confidentialité incluant le chiffrement aux fichiers Office stockés dans SharePoint et OneDrive, le service n’a pas pu traiter le contenu de ces fichiers. La co-création, la découverte électronique, la protection contre la perte de données, la recherche, l’Delve et d’autres fonctionnalités collaboratives ne fonctionnaient pas dans ces circonstances. Cet aperçu active ces fonctionnalités pour les fichiers nouveaux et modifiés pour lesquels une étiquette de sensibilité appliquée inclut le chiffrement avec une clé basée sur le Cloud :
+Avant cet aperçu, vous n’avez pas pu appliquer vos [étiquettes de confidentialité](sensitivity-labels.md) dans Office sur le Web. Vous n’avez pas affiché l’option de **critère de diffusion** sur le ruban ou le nom d’étiquette appliqué sur la barre d’État. En outre, si vous avez utilisé des applications de bureau pour étiqueter vos fichiers, puis les enregistrer sur SharePoint ou Onedrive, le service n’a pas pu traiter le contenu de ces fichiers si l’étiquette a appliqué le chiffrement. La co-création, la découverte électronique, la protection contre la perte de données, la recherche, l’Delve et d’autres fonctionnalités collaboratives ne fonctionnaient pas dans ces circonstances. 
+
+Cet aperçu active toutes ces fonctionnalités. En plus de l’affichage des étiquettes de confidentialité pour les utilisateurs, pour les fichiers nouveaux et modifiés dont l’étiquette de sensibilité est appliquée et qui inclut le chiffrement avec une clé basée sur le Cloud :
 
 - SharePoint reconnaît les étiquettes de confidentialité appliquées aux fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive : lorsque le fichier est stocké dans SharePoint, le chiffrement à partir d’Azure information protection est supprimé afin que le contenu du fichier puisse être traité. Pour plus d’informations sur la façon dont les documents sont protégés pendant qu’ils sont stockés dans SharePoint, consultez la rubrique [chiffrement des données dans OneDrive entreprise et SharePoint Online](data-encryption-in-odb-and-spo.md).
 
@@ -40,23 +42,21 @@ Avant cet aperçu, lorsque vous avez appliqué des étiquettes de confidentialit
 
 - Office 365 eDiscovery prend en charge la recherche de texte intégral pour ces fichiers. Les stratégies de protection contre la perte de données couvrent le contenu de ces fichiers.
 
-- Trois nouveaux [événements d’audit](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) sont disponibles pour la surveillance des étiquettes de confidentialité qui sont appliquées à l’aide d’Office sur le Web :
-  - **Étiquette de confidentialité appliquée au fichier**
-  - **Étiquette de confidentialité modifiée appliquée au fichier**
-  - **Suppression de l'étiquette de confidentialité sur le document**
-
 > [!NOTE]
-> Si le chiffrement n’a pas été appliqué avec une clé basée sur le Cloud, mais une clé locale, une topologie de gestion de clés est souvent appelée « conserver votre propre clé » (HYOK), le comportement de SharePoint ne change pas avec cet aperçu.
+> Si le chiffrement n’a pas été appliqué avec une clé basée sur le Cloud, mais une clé locale, une topologie de gestion de clés est souvent appelée « conserver votre propre clé » (HYOK), le comportement de SharePoint pour le traitement du contenu du fichier n’est pas modifié avec cet aperçu.
 >
 > Le comportement de SharePoint n’est pas modifié pour les fichiers étiquetés et chiffrés existants dans SharePoint avant l’activation de l’aperçu. Pour que ces fichiers bénéficient des nouvelles fonctionnalités, vous devez les télécharger et les charger ou les modifier après avoir activé l’aperçu. Par exemple, ils seront renvoyés dans les résultats de recherche et de découverte électronique.
 
-Vous pouvez également appliquer des étiquettes de confidentialité à Microsoft Teams, aux groupes Office 365 et aux sites SharePoint. Pour plus d’informations sur cet aperçu distinct, voir [use sensitive labels with Microsoft Teams, Office 365 Groups et SharePoint sites (public Preview)](sensitivity-labels-teams-groups-sites.md).
-
-Vous pouvez toujours choisir de désactiver cet aperçu à tout moment.
+Lorsque vous activez cet aperçu, trois nouveaux [événements d’audit](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) sont disponibles pour la surveillance des étiquettes de confidentialité qui sont appliquées à l’aide d’Office sur le Web :
+- **Étiquette de confidentialité appliquée au fichier**
+- **Étiquette de confidentialité modifiée appliquée au fichier**
+- **Suppression de l'étiquette de confidentialité sur le document**
 
 Regardez la vidéo suivante (pas de son) pour voir ces nouvelles fonctionnalités en action :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
+
+Vous pouvez toujours choisir de désactiver cet aperçu à tout moment.
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -66,7 +66,9 @@ Pour cet aperçu, utilisez la version 19.002.0121.0008 ou une version ultérieur
 
 ## <a name="limitations"></a>Limites
 
-- Lorsque vous activez cet aperçu, les utilisateurs qui modifient une étiquette sur un fichier dans un dossier de synchronisation OneDrive peuvent ne pas être en mesure d’enregistrer les autres modifications qu’ils ont apportées au fichier.  Les utilisateurs voient un [cercle rouge avec une erreur d’icône en croix blanche](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)et ils sont invités à enregistrer les nouvelles modifications en tant que copie distincte.  En plus des modifications apportées aux étiquettes par les utilisateurs, le même comportement peut se produire si un administrateur modifie les paramètres d’une étiquette publiée qui est déjà appliquée aux fichiers téléchargés sur le client de synchronisation des utilisateurs.
+- Lorsque vous activez cet aperçu, les utilisateurs qui modifient une étiquette sur un fichier dans un dossier de synchronisation OneDrive peuvent ne pas être en mesure d’enregistrer les autres modifications qu’ils ont apportées au fichier. Ce scénario s’applique aux fichiers étiquetés avec chiffrement, ainsi que la modification de l’étiquette d’une étiquette qui n’a pas appliqué le chiffrement à une étiquette qui applique le chiffrement. Les utilisateurs voient un [cercle rouge avec une erreur d’icône en croix blanche](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)et ils sont invités à enregistrer les nouvelles modifications en tant que copie distincte.  
+    
+    En plus des modifications apportées aux étiquettes par les utilisateurs, le même comportement peut se produire si un administrateur modifie les paramètres d’une étiquette publiée qui est déjà appliquée aux fichiers téléchargés sur le client de synchronisation des utilisateurs.
     
     Pour éviter de perdre le travail de ces scénarios, effectuez l’une des actions suivantes :
     - Pour appliquer des étiquettes, utilisez les versions Web des applications Office.
@@ -88,7 +90,7 @@ Pour cet aperçu, utilisez la version 19.002.0121.0008 ou une version ultérieur
 
 - Le site de suivi des documents Azure information protection n’est pas pris en charge.
 
-- Les applications de bureau Office et les applications mobiles ne prennent pas en charge la co-création. Au lieu de cela, ces applications continuent à ouvrir des fichiers en mode d’édition exclusive.
+- Les applications de bureau Office et les applications mobiles ne prennent pas en charge la co-création pour les fichiers étiquetés avec le chiffrement. Ces applications continuent à ouvrir des fichiers étiquetés et chiffrés en mode d’édition exclusive.
 
 - Si un document étiqueté est téléchargé vers SharePoint et que l’étiquette a été appliquée à l’aide d’un compte d’un nom principal de service, le document ne peut pas être ouvert dans Office sur le Web. Les exemples de scénarios incluent Microsoft Cloud App Security et un fichier envoyé à teams par courrier électronique.
 
