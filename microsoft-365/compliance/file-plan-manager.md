@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation.
-ms.openlocfilehash: 26c34d40359d00b540b30e0f6e3ddf3878e80f9a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 23aa0e242464ebd450a0930bcda4274c026c7535
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634422"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105641"
 ---
 # <a name="overview-of-file-plan-manager"></a>Vue d’ensemble du gestionnaire de plan de gestion de fichiers
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation. 
 
@@ -33,11 +35,7 @@ Pour accéder au gestionnaire du plan de gestion des fichiers dans le centre de 
 
 ## <a name="accessing-file-plan-manager"></a>Accès au gestionnaire de plan de fichiers
 
-Les deux conditions requises pour accéder au gestionnaire de plan de gestion de fichiers sont les suivantes :
-
-- Un abonnement Office 365 Entreprise E5.
-
-- L’affectation de l’un des rôles suivants dans le centre de sécurité et de conformité à l’utilisateur :
+Pour accéder au gestionnaire de plan de fichiers, vous devez posséder l’un des rôles d’administrateur suivants :
     
     - Gestionnaire de conservation
     

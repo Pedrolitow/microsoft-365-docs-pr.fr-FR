@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 7edfa83648ecb86ab23a898299edb63df851d123
-ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
+ms.openlocfilehash: a087d142843ce74de3a930aea9286034b8617db6
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43022931"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106070"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette au contenu ayant des informations sensibles, ou vous pouvez inviter les utilisateurs à appliquer celle que vous recommandez.
 
