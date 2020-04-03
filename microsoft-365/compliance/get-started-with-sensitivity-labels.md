@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 6707a61ae2fd9f7dddb7aa63927a53f1795b5127
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 4d3f2f84daf1415e7a5f48d66f1fb9d86c612d67
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634452"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105986"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 Pour en savoir plus sur les étiquettes de confidentialité et la façon dont elles peuvent vous aider à protéger les données de votre organisation, voir [Plus d'informations sur les étiquettes de confidentialité](sensitivity-labels.md).
 
@@ -45,6 +47,12 @@ Lorsque vous êtes prêt à protéger les données de votre organisation en util
 Flux de base pour le déploiement et l'application d'étiquettes de confidentialité :
 
 ![Diagramme illustrant le flux de travail des étiquettes de confidentialité](../media/Sensitivity-label-flow.png)
+
+## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Configuration requise pour les abonnements et les licences pour les étiquettes de confidentialité
+
+Différents abonnements prennent en charge les étiquettes de confidentialité et les conditions requises pour les licences des utilisateurs dépendent des fonctionnalités utilisées.
+
+Pour afficher les options de licence permettant à vos utilisateurs de bénéficier des fonctionnalités de conformité de Microsoft 365 à partir du 1er avril 2020, voir les [Conseils de licence Microsoft 365 pour la sécurité & la conformité](https://aka.ms/ComplianceSD). Pour les étiquettes de confidentialité, voir la section sur la [Protection des informations](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) et le fichier PDF associé à télécharger.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Autorisations nécessaires pour la création et la gestion d'étiquettes de confidentialité
 
