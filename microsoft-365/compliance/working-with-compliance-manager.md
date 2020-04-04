@@ -13,36 +13,33 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire relatives aux produits Microsoft.
-ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail. Utilisez-le pour suivre, affecter et vérifier les activités de conformité réglementaire relatives aux produits Microsoft.
+ms.openlocfilehash: aaae5f1123872367ad98466833f9e06210bfb652
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634132"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142659"
 ---
-# <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
+# <a name="working-with-microsoft-compliance-manager-preview"></a>Utilisation du gestionnaire de conformité Microsoft (aperçu)
 
 > [!IMPORTANT]
-> Le gestionnaire de conformité Microsoft est un tableau de bord et un outil de gestion qui fournit un résumé de votre stature de protection et de conformité des données afin d’améliorer la protection et la conformité des données. Les actions client fournies dans le gestionnaire de conformité sont des recommandations ; Il revient à votre organisation d’évaluer l’efficacité de ces recommandations dans son environnement réglementaire respectif avant la mise en œuvre. Les recommandations figurant dans le gestionnaire de conformité ne doivent pas être interprétées comme garantie de conformité.
+> Le gestionnaire de conformité Microsoft est un tableau de bord et un outil de gestion qui fournit un résumé de votre stature de protection et de conformité des données afin d’améliorer la protection et la conformité des données. Les actions client fournies dans le gestionnaire de conformité sont des recommandations. Il revient à votre organisation d’évaluer l’efficacité de ces recommandations dans son environnement réglementaire respectif avant la mise en œuvre. Les recommandations figurant dans le gestionnaire de conformité ne doivent pas être interprétées comme garantie de conformité.
 
 ## <a name="access-compliance-manager"></a>Gestionnaire de conformité des accès
 
-Le Gestionnaire de conformité est accessible depuis le Portail d’approbation de services. Toute personne ayant un compte Microsoft ou un compte professionnel Azure Active Directory peut accéder au Gestionnaire de conformité.
-  
-1. Accédez à [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
+Le gestionnaire de conformité est accessible à partir du portail d’approbation de service Microsoft. Tout utilisateur disposant d’un compte Microsoft ou d’un compte d’organisation Azure Active Directory peut accéder au gestionnaire de conformité.
+
+1. Accédez à [https://servicetrust.microsoft.com/ComplianceManager/V3](https://servicetrust.microsoft.com/ComplianceManager/V3).
 
 2. Connectez-vous à l’aide de votre compte de service Microsoft, qui est votre compte d’utilisateur Office 365, Microsoft 365 ou Azure Active Directory (Azure AD).
 
-3. Dans le portail d’approbation de service, nous vous recommandons de sélectionner le **Gestionnaire de conformité**, qui est la version d’évaluation avec les fonctionnalités les plus récentes. Le **Gestionnaire de conformité (classique)** vous permet d’accéder à la version précédente du gestionnaire de conformité.
-
-4. Lorsque l’accord de non-divulgation est affiché, lisez-le et sélectionnez **accepter**, qui affiche ensuite votre tableau de bord gestionnaire de conformité.
-
-Pour vous aider à démarrer, une évaluation ISO/IEC 27001:2103 pour Office 365 s’affiche par défaut pour votre organisation.
+> [!NOTE]
+> Dans le portail d’approbation de service, sélectionnez **Gestionnaire de conformité**, version d’évaluation avec les fonctionnalités les plus récentes. Ne sélectionnez pas le **Gestionnaire de conformité (classique)**, qui contient des fonctionnalités héritées qui ne sont pas couvertes par cette documentation.
 
 ## <a name="administration"></a>Administration
 
-Il existe des fonctions d’administration spécifiques qui sont uniquement disponibles pour l’administrateur général et ne sont visibles que lorsque vous êtes connecté avec un compte d’administrateur général. L’administrateur général peut attribuer des autorisations d’utilisateur et peut activer des mises à jour automatiques du score de sécurité pour toutes les actions.
+Il existe des fonctions d’administration spécifiques qui sont uniquement disponibles pour l’administrateur général et ne sont visibles que lorsque vous êtes connecté avec un compte d’administrateur général. L’administrateur général peut attribuer des autorisations utilisateur et activer les mises à jour automatiques du score de sécurité.
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Affectation des rôles du Gestionnaire de conformité aux utilisateurs
 
@@ -96,7 +93,7 @@ Si vous choisissez **définir par action,** suivez ces étapes supplémentaires 
 
 **Remarque :** Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions de manière globale.
 
-## <a name="groups"></a>Groupes
+## <a name="groups"></a>Groups
 
 Les groupes sont des conteneurs qui vous permettent d’organiser des évaluations et de partager des informations communes et des tâches de flux de travail entre les évaluations qui ont le même ou les mêmes contrôles gérés par le client.
 
@@ -110,17 +107,21 @@ Vous pouvez regrouper les évaluations d’une manière logique pour vous, par e
   - Office 365 + ISO 27018:2014
 
 > [!NOTE]
-> Nous vous recommandons de déterminer une stratégie de regroupement pour votre organisation *avant* d’ajouter de nouvelles évaluations. Par défaut, un groupe nommé « groupe par défaut » est disponible pour vos évaluations initiales.
+> Nous vous recommandons de déterminer une stratégie de regroupement pour votre organisation *avant* d’ajouter de nouvelles évaluations.
+
+Pour vous aider à démarrer, un groupe **par défaut** est configuré pour vous, qui contient la base de données de protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des normes et des réglementations industrielles communes ([en savoir plus](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
 ### <a name="how-to-create-a-group"></a>Procédure de création d’un groupe
 
-Les groupes ne peuvent pas être créés en tant qu’entités autonomes. Un groupe doit toujours contenir au moins une évaluation, donc pour créer un groupe, vous devez d’abord créer une évaluation à placer dans le groupe. Suivez les étapes ci-dessous pour créer un groupe :
+Les groupes ne peuvent pas être créés en tant qu’entités autonomes. Un groupe doit toujours contenir au moins une évaluation, donc pour créer un groupe, vous devez d’abord créer une évaluation à placer dans le groupe.
+
+Suivez les étapes ci-dessous pour créer un groupe :
 
 1. Créez une nouvelle évaluation en sélectionnant **+ Ajouter une évaluation** dans la partie supérieure de votre tableau de bord.
 2. Dans le volet flyout d' **évaluation** , entrez un titre pour votre évaluation et sélectionnez un modèle dans le menu déroulant.
 3. Sur **Sélectionnez un groupe ou ajouter un nouveau groupe**, sélectionnez **Ajouter un nouveau groupe** , puis entrez le nom de votre groupe dans le champ ci-dessous.
 4. Pour copier des informations à partir d’un groupe existant, faites basculer la **copie des données d’un groupe existant** vers **.** Sélectionnez le groupe à copier dans le menu déroulant, puis activez les cases à cocher de tous les champs que vous souhaitez reporter dans la nouvelle évaluation de votre nouveau groupe.
-5. Cliquez sur **Enregistrer**. Une fois l’opération terminée, le volet flyout se ferme et votre nouveau groupe s’affiche automatiquement sur votre tableau de bord.
+5. Cliquez sur **Enregistrer**. Une fois l’opération terminée, le volet flyout se ferme et vous verrez votre nouveau groupe sur votre tableau de bord.
 
 Éléments à connaître lors de l’utilisation de groupes :
   
@@ -132,27 +133,25 @@ Les groupes ne peuvent pas être créés en tant qu’entités autonomes. Un gro
 - Les groupes peuvent contenir des évaluations pour la même certification ou la même réglementation, mais chaque groupe ne peut contenir qu’une seule évaluation pour une paire de certification de produit spécifique. Par exemple, un groupe ne peut pas contenir deux évaluations pour Office 365 et l’infrastructure NIST. Un groupe peut contenir plusieurs évaluations pour le même produit uniquement si la certification ou la réglementation correspondante est différente.
 - Le masquage d’une évaluation rompt la relation entre cette évaluation et le groupe. Les autres mises à jour apportées à d’autres évaluations associées ne sont plus reflétées dans l’évaluation cachée. ([Découvrez comment masquer les évaluations.](#hide-a-template-or-an-assessment))
 - Les groupes ne peuvent pas être supprimés.
+- Lorsqu’une modification est apportée à un élément d’action qui apparaît dans plusieurs groupes, cette modification est reflétée dans toutes les instances de cet élément d’action.
 
-## <a name="tenant-management"></a>Gestion des clients
+## <a name="tenant-management-of-dimensions-owners--customer-actions"></a>Gestion des clients pour les dimensions, les propriétaires & les actions des clients
 
-Le gestionnaire de conformité (Preview) inclut une nouvelle interface de gestion des nouveaux éléments de données appelée **gestion des clients**. Cette interface vous permet de gérer les paramètres à l’échelle du client :
+L’interface de **gestion des clients** vous permet de gérer ces paramètres à l’échelle de l’Organisation :
 
 - **Dimensions :** Affichez les métadonnées des modèles, des évaluations et des éléments d’action qui vous permettent de créer des tableaux croisés dynamiques personnalisés pour les filtres.
-- **Propriétaires :** Spécifiez un propriétaire pour chaque élément d’action.
+- **Propriétaires :** Remplissez une liste de parties responsables pouvant être associées à des actions.
 - **Actions des clients :** Gérez la liste complète des éléments actions inclus dans le gestionnaire de conformité (aperçu) et activez/désactivez la surveillance du score sécurisé pour les actions intégrées à un score sécurisé.
 
-Sélectionnez **gestion des clients** pour ouvrir l’interface de gestion et suivez les étapes ci-dessous pour gérer les **dimensions**, les **propriétaires**et les **actions des clients**.
+Sélectionnez **gestion des clients** dans le coin supérieur droit de l’écran pour ouvrir l’interface de gestion et suivez les étapes ci-dessous pour gérer les **dimensions**, les **propriétaires**et les **actions des clients**.
 
 ### <a name="dimensions"></a>Dimensions
 
-Les dimensions sont des ensembles de métadonnées qui fournissent des informations sur un modèle, une évaluation ou un élément d’action. Les dimensions utilisent le concept de clés et de valeurs, où la clé de dimension représente une propriété et la valeur de dimension représente des valeurs valides pour la propriété. Par exemple, dans le gestionnaire de conformité, il existe trois types d’actions. Elles sont définies par une clé de dimension de **type action** et des valeurs de dimension de **documentation**, d' **exploitation**et **technique**. Vous pouvez modifier ou supprimer des dimensions existantes.
-
-> [!IMPORTANT]
-> Vous pouvez ajouter de nouvelles dimensions et les affecter à des modèles que vous avez déjà importés. Vous pouvez également ajouter de nouvelles dimensions à tous les nouveaux modèles que vous créez.
+Les dimensions sont des ensembles de métadonnées qui fournissent des informations sur un modèle, une évaluation ou un élément d’action. Les dimensions utilisent le concept de clés et de valeurs, où la clé de dimension représente une propriété et la valeur de dimension représente des valeurs valides pour la propriété. Par exemple, dans le gestionnaire de conformité, il existe trois types d’actions. Elles sont définies par une clé de dimension de l' **objectif d’action** et des valeurs de dimension de **préventive**, de **détective**et de **Correction**.
 
 ### <a name="owners"></a>Propriétaires
 
-Les propriétaires sont utilisés pour identifier la partie responsable de chaque contrôle. Tous les contrôles intégrés appartiennent à Microsoft, aux clients ou aux deux. Vous pouvez créer des valeurs personnalisées pour les propriétaires qui peuvent être utilisées pour spécifier des responsabilités plus granulaires au sein de votre organisation. Par exemple, vous pouvez créer des propriétaires qui représentent des groupes, des équipes ou des divisions spécifiques au sein de votre organisation.
+Les propriétaires sont utilisés pour identifier la personne responsable de chaque contrôle. Tous les contrôles intégrés appartiennent à Microsoft, aux clients ou aux deux. Vous pouvez créer des valeurs personnalisées pour les propriétaires qui peuvent être utilisées pour spécifier des responsabilités plus granulaires au sein de votre organisation. Par exemple, vous pouvez créer des propriétaires qui représentent des groupes, des équipes ou des divisions spécifiques au sein de votre organisation.
 
 #### <a name="add-an-owner"></a>Ajouter un propriétaire
 
@@ -192,24 +191,57 @@ Lorsque les organisations déploient d’abord Microsoft 365 ou Office 365, il f
 
 Toutes les actions qui ne sont pas prises en charge par l’intégration de la note sécurisée peuvent être implémentées manuellement. Une implémentation manuelle concerne le score du groupe de cette action.
 
-#### <a name="add-a-customer-action"></a>Ajouter une action client
-
-1. Sélectionnez **+ Ajouter une action client**.
-2. Fournissez un titre unique pour l’action dans le champ **titre** .
-3. Fournissez un score de conformité pour l’action dans le champ **score de conformité maximal** (il peut s’agir d’un nombre quelconque compris entre 1-99).
-4. Utilisez la liste déroulante **type d’action** pour spécifier le type d’action que vous ajoutez. Si le type d’action n’existe pas, vous pouvez l’ajouter en ajoutant la valeur à la clé de dimension type d’action.
-5. Utilisez la liste déroulante **dimensions** pour spécifier ou ajouter des clés et des valeurs de dimension pour l’action.
-6. Utilisez la liste déroulante **propriétaire** pour spécifier le propriétaire de l’action.
-7. Sélectionnez **+** cette option pour ajouter une description et un titre de description pour l’action.
-8. Sélectionnez le **X** pour fermer le panneau de description.
-9. Sélectionnez **Enregistrer** pour enregistrer l’action du client.
-
-#### <a name="delete-a-customer-action"></a>Supprimer une action client
-
-1. Sélectionnez les points de suspension (...) correspondant à l’action que vous souhaitez modifier, puis sélectionnez **supprimer**.
-2. Lorsque le message de confirmation s’affiche, sélectionnez **supprimer**.
-
 ## <a name="assessments"></a>Évaluations
+
+Cette section explique comment afficher et utiliser vos évaluations, notamment comment en ajouter de nouvelles, les exporter, copier des informations à partir d’évaluations existantes et les conserver mises à jour via le contrôle de version.
+
+### <a name="view-an-assessment-and-action-details"></a>Afficher les détails de l’évaluation et de l’action
+  
+Dans le tableau de bord **évaluations** , sélectionnez le nom de l’évaluation pour l’ouvrir et afficher les éléments d’action et les informations de contrôle.
+
+Voici un exemple de l’évaluation pour Office 365 et ISO 27001. La première vue illustre la nouvelle vue actions dans le gestionnaire de conformité (aperçu).
+
+![Affichage des éléments d’action du gestionnaire de conformité](../media/compliance-manager-action-items.png)
+
+Les actions sont répertoriées par ordre alphabétique et un score et un propriétaire sont attribués à chaque action. Sélectionnez le lien **en savoir plus** pour lire les détails de chaque action.
+
+![Affichage des éléments d’action du gestionnaire de conformité](../media/compliance-manager-actions-read-more.png)
+
+Sélectionnez le lien **examiner** pour gérer, affecter, mettre en œuvre et tester l’action. Vous trouverez ci-dessous un exemple d’action.
+
+![Vue d’action du gestionnaire de conformité](../media/compliance-manager-action.png)
+
+Utilisez les champs suivants pour gérer le flux de travail d’action :
+
+- **Attribuer un utilisateur :** Sélectionnez ce champ pour choisir ou entrer l’utilisateur auquel cette action doit être affectée. Vous pouvez faire défiler la liste ou taper un nom pour le trouver, puis le sélectionner.
+- **Gérer les documents :** Vous pouvez charger des preuves de l’implémentation sous la forme de documents Office, de fichiers image et de captures d’écran, de sorties PowerShell au format CSV ou TXT, et de fichiers PDF.
+- **État de l’implémentation :** Permet d’indiquer l’état actuel de l’implémentation. Les valeurs possibles ne sont pas implémentées, implémentées, une implémentation alternative, planifiée et non dans l’étendue.
+- **Date d’implémentation :** Date à laquelle l’action a été effectuée.
+- **Résultat du test :** Permet d’indiquer les résultats de la validation de l’implémentation. Les valeurs possibles ne sont pas calculées, transmises, échec-faible risque, échec moyen-risque, échec à haut risque et non dans l’étendue.
+- **Date du test :** Date à laquelle la validation s’est produite.
+- **Remarques sur l’implémentation :** Entrez les détails d’implémentation de votre organisation, ainsi que les notes que vous souhaitez inclure.
+- **Plan de test :** Entrez les détails du plan de test pour cette action, ainsi que les notes que vous souhaitez inclure.
+- **Informations supplémentaires :** Entrez des informations supplémentaires sur cette action ou la manière dont elle a été implémentée dans votre organisation, ainsi que les notes que vous souhaitez inclure.
+
+Dans le tableau de bord informations sur les **contrôles** , vous pouvez afficher des informations sur les contrôles au niveau de l’évaluation et du modèle. Vous trouverez ci-dessous un exemple de tableau de bord d’informations des contrôles pour les évaluations.
+
+![Vue infos sur les contrôles du gestionnaire de conformité](../media/compliance-manager-controls-info.png)
+
+Pour les évaluations, le tableau de bord informations sur les contrôles affiche les informations suivantes :
+
+- Une liste déroulante de **groupe** pour sélectionner le groupe à afficher (en cas d’utilisation de plusieurs groupes).
+- Liste déroulante d' **évaluation** permettant de sélectionner l’évaluation à afficher.
+- Métadonnées relatives à l’évaluation sélectionnée, notamment :
+    - Indicateur de progression pour les **contrôles évalués** illustrant le nombre de contrôles évalués sur le nombre total de contrôles.
+    - Score de **conformité** actuel pour l’évaluation, affiché sous la forme d’un pourcentage.
+    - Détails sur la **certification** et le **produit** utilisés dans l’évaluation.
+    - **État** actuel et date de dernière **modification** de l’évaluation.
+- Une liste des **services dans l’étendue** pour l’évaluation.
+- Détails des contrôles, regroupés par famille de contrôle, avec des liens vers les actions client et les détails de la mise en œuvre de Microsoft :
+    - **Vos actions** affichent les actions du client que vous pouvez effectuer pour satisfaire une partie ou la totalité des exigences du contrôle. De nombreux contrôles ont plusieurs actions associées et toutes les actions associées à un contrôle sont affichées ici. Les actions indiquées ici ont la même interface utilisateur que celles répertoriées dans le tableau de bord actions.
+    - **Actions Microsoft** : affiche la liste des contrôles de l’infrastructure interne de Microsoft qui s’appliquent au contrôle de certification sélectionné. Pour chaque contrôle interne, sélectionnez **implémenté** pour afficher les détails de l’implémentation et du test de Microsoft, ainsi que le résultat du test et la date du test, comme indiqué ci-dessous.
+
+![Gestionnaire de conformité-vue d’action Microsoft](../media/compliance-manager-microsoft-action.png)
 
 ### <a name="add-an-assessment"></a>Ajouter une évaluation
   
@@ -238,7 +270,7 @@ Toutes les actions qui ne sont pas prises en charge par l’intégration de la n
 
 ### <a name="copying-information-from-existing-assessments"></a>Copie des informations des évaluations existantes
 
-Lorsque vous créez une évaluation, vous avez la possibilité de copier des informations à partir d’un groupe existant. Cela vous permet d’appliquer les informations entrées dans l’évaluation copiée aux mêmes contrôles dans la nouvelle évaluation. Par exemple, si vous avez un groupe pour toutes les évaluations liées à FFIEC dans votre organisation, vous pouvez copier les informations suivantes à partir d’évaluations existantes :
+Lorsque vous créez une évaluation, vous avez la possibilité de copier des informations à partir d’un groupe existant. La copie vous permet d’appliquer les informations entrées dans l’évaluation copiée aux mêmes contrôles dans la nouvelle évaluation. Par exemple, si vous avez un groupe pour toutes les évaluations liées à FFIEC dans votre organisation, vous pouvez copier les informations suivantes à partir d’évaluations existantes :
 
 - Détails de l’implémentation
 - Plan de test & des informations supplémentaires
@@ -260,62 +292,21 @@ Lorsque vous créez une évaluation, vous avez la possibilité de copier des inf
 
 3. Sélectionnez **Enregistrer** pour créer l’évaluation.
 
-### <a name="view-an-assessment"></a>Afficher une évaluation
-  
-1. Dans le tableau de bord évaluations, sélectionnez le nom de l’évaluation pour l’ouvrir et afficher les éléments d’action et les informations de contrôle.
+### <a name="versioning-alerts-for-assessment-updates"></a>Alertes de versioning pour les mises à jour d’évaluation
 
-Voici un exemple de l’évaluation pour Office 365 et ISO 27001. La première vue illustre la nouvelle vue actions dans le gestionnaire de conformité (aperçu).
+Lorsqu’une mise à jour est disponible pour une évaluation, une icône d’alerte vous signale qu’une mise à jour est prête. Lorsque vous cliquez sur cette icône, une fenêtre contextuelle explique la mise à jour et vous invite à accepter. Voici un exemple d’alerte de contrôle de version pour une évaluation :
 
-![Affichage des éléments d’action du gestionnaire de conformité](../media/compliance-manager-action-items.png)
+![Score de conformité-alerte de contrôle de version](../media/compliance-score-assessment-version.png "Alerte de mise à jour de version d’évaluation")
 
-Les actions sont répertoriées par ordre alphabétique et un score et un propriétaire sont attribués à chaque action. Sélectionnez le lien **en savoir plus** pour lire les détails de chaque action. 
+La sélection de l’icône d’alerte révèle un volet flyout expliquant la mise à jour et vous invitant à accepter les éléments suivants :
 
-![Affichage des éléments d’action du gestionnaire de conformité](../media/compliance-manager-actions-read-more.png)
+![Score de conformité-menu volant de gestion des versions](../media/compliance-score-assessment-version-accept.png "Volet de confirmation de mise à jour d’évaluation")
 
-Sélectionnez le lien **examiner** pour gérer, affecter, mettre en œuvre et tester l’action. Vous trouverez ci-dessous un exemple d’action.
-
-![Vue d’action du gestionnaire de conformité](../media/compliance-manager-action.png)
-
-Dans les versions précédentes du gestionnaire de conformité, le flux de travail pour l’implémentation des exigences a été effectué au niveau du contrôle. Un officier de conformité affecte un contrôle à une personne afin d’implémenter le contrôle. Il y avait deux inconvénients à cela :
-
-- Les contrôles ont souvent été associés à plusieurs actions, et l’utilisateur auquel un contrôle a été affecté n’est peut-être pas la personne appropriée pour effectuer toutes les actions requises pour implémenter le contrôle
-- La combinaison de tâches distinctes en une seule action a empêché la collecte des signaux et de la télémétrie qui est utilisée pour enregistrer automatiquement les modifications de configuration du client dans le gestionnaire de conformité (aperçu).
-
-Dans le gestionnaire de conformité (aperçu), le processus de flux de travail est passé du niveau de contrôle au niveau d’action. Lors de l’examen d’une action, les champs suivants peuvent être utilisés pour gérer le flux de travail d’action :
-
-- **Attribuer un utilisateur :** Sélectionnez ce champ pour choisir ou entrer l’utilisateur auquel cette action doit être affectée. Vous pouvez faire défiler la liste ou taper un nom pour le trouver, puis le sélectionner.
-- **Gérer les documents :** Vous pouvez charger des preuves de l’implémentation sous la forme de documents Office, de fichiers image et de captures d’écran, de sorties PowerShell au format CSV ou TXT, et de fichiers PDF.
-- **État de l’implémentation :** Permet d’indiquer l’état actuel de l’implémentation. Les valeurs possibles ne sont pas implémentées, implémentées, une implémentation alternative, planifiée et non dans l’étendue.
-- **Date d’implémentation :** Date à laquelle l’action a été effectuée.
-- **Résultat du test :** Permet d’indiquer les résultats de la validation de l’implémentation. Les valeurs possibles ne sont pas calculées, transmises, échec-faible risque, échec moyen-risque, échec à haut risque et non dans l’étendue.
-- **Date du test :** Date à laquelle la validation s’est produite.
-- **Remarques sur l’implémentation :** Entrez les détails d’implémentation de votre organisation, ainsi que les notes que vous souhaitez inclure.
-- **Plan de test :** Entrez les détails du plan de test pour cette action, ainsi que les notes que vous souhaitez inclure.
-- **Informations supplémentaires :** Entrez des informations supplémentaires sur cette action ou la manière dont elle a été implémentée dans votre organisation, ainsi que les notes que vous souhaitez inclure.
-
-Le gestionnaire de conformité (aperçu) inclut également le tableau croisé dynamique basé sur le contrôle dans les versions précédentes. Sélectionnez le tableau de bord informations sur les **contrôles** pour l’afficher. Vous pouvez afficher des informations sur les contrôles au niveau de l’évaluation et du modèle. Vous trouverez ci-dessous un exemple de tableau de bord d’informations des contrôles pour les évaluations.
-
-![Vue infos sur les contrôles du gestionnaire de conformité](../media/compliance-manager-controls-info.png)
-
-Pour les évaluations, le tableau de bord informations sur les contrôles affiche les éléments suivants :
-
-- Une liste déroulante de **groupe** pour sélectionner le groupe à afficher (en cas d’utilisation de plusieurs groupes).
-- Liste déroulante d' **évaluation** permettant de sélectionner l’évaluation à afficher.
-- Métadonnées relatives à l’évaluation sélectionnée, notamment :
-    - Indicateur de progression pour les **contrôles évalués** illustrant le nombre de contrôles évalués sur le nombre total de contrôles.
-    - Score de **conformité** actuel pour l’évaluation, affiché sous la forme d’un pourcentage.
-    - Détails sur la **certification** et le **produit** utilisés dans l’évaluation.
-    - **État** actuel et date de dernière **modification** de l’évaluation.
-- Une liste des **services dans l’étendue** pour l’évaluation.
-- Détails des contrôles, regroupés par famille de contrôle, avec des liens vers les actions client et les détails de la mise en œuvre de Microsoft :
-    - **Vos actions** affichent les actions du client que vous pouvez effectuer pour satisfaire une partie ou la totalité des exigences du contrôle. De nombreux contrôles ont plusieurs actions associées et toutes les actions associées à un contrôle sont affichées ici. Les actions indiquées ici ont la même interface utilisateur que celles répertoriées dans le tableau de bord actions.
-    - **Actions Microsoft** : affiche la liste des contrôles de l’infrastructure interne de Microsoft qui s’appliquent au contrôle de certification sélectionné. Pour chaque contrôle interne, sélectionnez **implémenté** pour afficher les détails de l’implémentation et du test de Microsoft, ainsi que le résultat du test et la date du test, comme indiqué ci-dessous.
-
-![Gestionnaire de conformité-vue d’action Microsoft](../media/compliance-manager-microsoft-action.png)
+Nous vous recommandons vivement d’accepter toutes les mises à jour lorsque vous recevez des notifications de mise à jour.
 
 ### <a name="export-an-assessment"></a>Exporter une évaluation
 
-Vous pouvez exporter une évaluation vers un fichier Excel pour les parties prenantes en conformité dans votre organisation ou pour les auditeurs et régulateurs externes. Le rapport est une capture instantanée de l’évaluation à compter de la date et de l’heure de création du rapport. Le rapport contient les détails de tous les contrôles gérés par Microsoft et par le client pour l’évaluation, le contrôle de l’état de l’implémentation, le contrôle de la date de test, les résultats des tests et fournit des liens vers les documents de preuve téléchargés. Vous devez exporter le rapport d’évaluation avant d’archiver une évaluation car les évaluations archivées ne retiennent pas les liens vers les documents téléchargés.
+Vous pouvez exporter une évaluation vers un fichier Excel pour les parties prenantes en conformité dans votre organisation ou pour les auditeurs et régulateurs externes. Le rapport est une capture instantanée de l’évaluation à compter de la date et de l’heure de création du rapport. Le rapport contient les détails de tous les contrôles gérés par Microsoft et par le client pour l’évaluation, le contrôle de l’état de l’implémentation, le contrôle de la date de test, les résultats des tests et fournit des liens vers les documents de preuve téléchargés.
   
 ### <a name="export-an-assessment-report"></a>Exporter un rapport d’évaluation
   
@@ -332,7 +323,7 @@ Lorsque vous avez terminé d’utiliser un modèle ou une évaluation et que vou
 ![Affichage du modèle masqué du gestionnaire de conformité](../media/compliance-manager-hidden-template.png "Modèle masqué du gestionnaire de conformité")
 
 > [!IMPORTANT]
-> Les évaluations masquées ne conservent pas leurs liens vers les documents de preuve téléchargés. Il est vivement recommandé d’exporter l’évaluation avant de la masquer pour conserver les liens vers les documents de preuve dans le rapport.
+> Les évaluations masquées ne conservent pas leurs liens vers les documents de preuve téléchargés. Nous vous recommandons vivement d’exporter une évaluation avant de la masquer pour conserver des liens vers des documents de preuve dans le rapport.
   
 #### <a name="hiding-a-template"></a>Masquage d’un modèle
 
@@ -383,7 +374,7 @@ Actions les éléments sont les tâches recommandées pour la mise en œuvre des
   
 1. Dans le tableau de bord **éléments d’action** , sélectionnez le **groupe** contenant les évaluations dont vous souhaitez affecter l’action.
 2. Dans la liste déroulante **évaluation** , sélectionnez l’évaluation dont vous souhaitez affecter l’action ou sélectionnez **toutes** dans la liste déroulante pour afficher toutes les actions disponibles.
-3. Localisez l’action que vous souhaitez attribuer, puis dans la colonne **propriétaire** , sélectionnez le lien pour **révision**, **implémenté** ou **test**.
+3. Localisez l’action que vous souhaitez attribuer, puis dans la colonne **propriétaire** , sélectionnez le lien à **réviser**, * * implémenté ou **test**.
 4. Sélectionnez le champ **affecter un utilisateur** , et une liste d’utilisateurs de votre organisation apparaît. Faites défiler la liste et sélectionnez utilisateur ou filtrez la liste pour sélectionner un utilisateur en tapant son nom.
 5. Dans le champ Remarques d’implémentation, entrez les remarques que vous souhaitez transmettre à l’utilisateur affecté.
 6. Sélectionnez **Enregistrer** pour affecter l’action.
@@ -399,194 +390,190 @@ Cette fonction permet à une organisation de supprimer toutes les dépendances a
 5. Dans le champ Remarques d’implémentation, entrez les remarques que vous souhaitez transmettre à l’utilisateur.
 6. Sélectionnez **Enregistrer** pour réaffecter l’action.
 
+#### <a name="common-action-items-synch-status-across-groups"></a>Éléments d’action courants synchronisés entre les groupes
+
+Si votre organisation dispose de plusieurs groupes d’évaluations, il existe un comportement des actions techniques (c’est-à-dire, des actions affectant l’ensemble de votre organisation). Toutes les actions en double entre les groupes sont désormais regroupées en une seule action. Cette action unique contient toutes les notes téléchargées et les preuves provenant de versions déjà dupliquées. Toute modification apportée à l’action dans un groupe ou une évaluation est reflétée dans toutes les instances de cette action. Les champs **État**de l’implémentation, **Date de mise en œuvre**, **État du test**et date du **test** reflètent les mises à jour les plus récentes.
+
 ## <a name="templates"></a>Modèles
 
-Un modèle est l’objet de base dans le gestionnaire de conformité (aperçu) qui est associé à un produit et à une certification (par exemple, standard, réglementation, infrastructure de contrôle, etc.). Les modèles peuvent être affichés et ajoutés à partir du tableau de bord modèles.
+Un modèle est l’objet de base dans le gestionnaire de conformité (aperçu) qui est associé à un produit et à une certification (par exemple, standard, réglementation, infrastructure de contrôle, etc.). Les modèles peuvent être affichés et ajoutés à partir du tableau de bord **modèles** .
 
 ![Tableau de bord de modèles Microsoft du gestionnaire de conformité](../media/compliance-manager-template-dashboard.png)
  
-Le tableau de bord affiche chaque modèle, ainsi que la certification et le produit associés au modèle, les dates auxquelles le modèle a été créé et modifié pour la dernière fois, le nombre de clients et les contrôles gérés par Microsoft, le score de conformité maximal pour le Modèle et état du modèle (par exemple, approuvé, en attente d’approbation, importé).
-
-Les modèles intégrés disposent chacun d’une évaluation intégrée, mais vous pouvez créer des évaluations supplémentaires basées sur des modèles prédéfinis, et vous pouvez importer vos propres modèles, et créer des évaluations personnalisées en fonction de ces modèles.
+Le tableau de bord affiche chaque modèle, ainsi que la certification et le produit associés au modèle, les dates auxquelles le modèle a été créé et modifié pour la dernière fois, le nombre de clients et les contrôles gérés par Microsoft, le score de conformité maximal pour le modèle et l’état du modèle (par exemple, approuvé, en attente d’approbation, importé).
 
 ### <a name="create-a-template"></a>Créer un modèle
 
-Vous pouvez créer un modèle en copiant un modèle existant ou en important un modèle personnalisé. Il existe un format et un schéma spécifiques qui doivent être utilisés pour les données de modèle ou qui ne seront pas importées dans le gestionnaire de conformité. Un fichier avec le schéma correct et des exemples de données peuvent être téléchargés à partir d’ici.
-Chaque modèle personnalisé doit se trouver dans un classeur Excel distinct (au format. xls ou. xlsx) qui contient cinq onglets :
+Il existe trois façons de travailler avec des modèles pour créer des évaluations :
 
-1. Modèle-évaluation
-2. ControlFamily
-3. Actions
-4. Propriété
-5. Dimensions
+1. Utilisez l’un des modèles préconfigurés fournis par Microsoft.
+2. Personnaliser un modèle préconfiguré avec vos propres actions et contrôles via le processus d’extension.
+3. Créez votre propre modèle et importez-le dans le gestionnaire de conformité.
 
-Le schéma utilisé dans chaque onglet est décrit ci-dessous.
+#### <a name="use-a-microsoft-pre-configured-template"></a>Utiliser un modèle préconfiguré Microsoft
 
-#### <a name="template-assessment-tab"></a>Modèle-onglet évaluation
+Les modèles préconfigurés sont disponibles dans le tableau de bord **modèles** . Afficher la [liste actuelle des modèles](compliance-manager-overview.md#templates), qui est mise à jour chaque fois qu’un nouveau modèle est disponible.
 
-Cet onglet comporte une seule colonne :
-
-- **inScopeServices**: liste, délimitée par des virgules, de produits ou de services qui sont dans l’étendue pour le modèle.
-
-#### <a name="controlfamily-tab"></a>Onglet ControlFamily
-
-Cet onglet inclut des colonnes qui définissent les contrôles mappés aux actions répertoriées sous l’onglet actions, et inclut des détails comme nom de contrôle, famille, titre et description.  Les colonnes de cet onglet, qui doivent être organisées dans Excel dans l’ordre indiqué ci-dessous, sont les suivantes : 
-
-- **nomcontrôle :** Nom du contrôle de certification/standard/réglementation, etc.
-- **controlFamily :** Famille de contrôle à partir de la certification/norme, réglementation, etc.
-- **controlTitle :** Titre de contrôle à partir de certification/standard/réglementation, etc.
-- **controlDescription :** Description du contrôle de certification/standard/réglementation, etc.
-- **controlVersion :** Informations de version de contrôle facultatives.  Exemple : pour le NIST 800-53, la valeur actuelle est Rev 4, de sorte que la valeur de controlVersion est 4.  Pour le CCM CCM, il s’agit de 3.0.1.
-- **isDisabled :** Utilisez TRUE ou FALSe pour indiquer si le contrôle a été désactivé.
-- **ControlType :** Utilisez CC pour indiquer qu’il s’agit de contrôles gérés par le client.
-- **controlComplianceScore :** Somme du score de toutes les actions affectées au contrôle.
-- **controlActionTitle :** Double liste délimitée par des points-virgules de tous les actionTitles de ce contrôle, tel qu’il est répertorié dans l’onglet actions. 
-
-#### <a name="actions-tab"></a>Onglet actions
-
-Cet onglet comprend des colonnes qui définissent des actions individuelles, ainsi que des détails comme le titre de l’action, la propriété et des dimensions. Les colonnes de cet onglet, qui doivent être organisées dans Excel dans l’ordre indiqué ci-dessous, sont les suivantes : 
-
-- **actionTitle :** Titre de l’action. Chaque titre doit être unique et nous vous recommandons d’utiliser la casse Pascal.
-- **actionRelatedODVs :** Double liste délimitée par des points-virgules de actionTitles qui sont parents de l’enfant répertorié dans la colonne actionTitle. Dans une relation parent/enfant, le parent représente la limite supérieure. Par conséquent, si vous effectuez une action parente, vous terminez également toutes les actions enfants. Par exemple, si vous avez des exigences similaires, mais des valeurs définies standard différentes, telles que la longueur du mot de passe, où un standard/Règlement requiert un minimum de 15 caractères, et un autre au minimum 12 ou 10. 15 serait le parent dans cet exemple, et si vous configurez un minimum de 15 caractères, vous répondez également aux actions qui recommandent 12 ou 10 caractères dans les autres évaluations.
-
-    > [!NOTE]
-    > La colonne actionRelatedODVs est une colonne obligatoire pour le schéma ; Toutefois, la fonctionnalité (actions associées) n’est pas disponible dans le gestionnaire de conformité (aperçu).  Elle est planifiée pour être ajoutée dans une version ultérieure.
-
-- **actionDimensionValues :** Double liste délimitée par des points-virgules des dimensions applicables à partir de l’onglet dimensions, selon le format suivant :
-
-    ```Markdown
-    Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
-    ```
-    
-    Par exemple :
-
-    ```Markdown
-    Product::Office 365;;Certification::NIST CSF
-    ```
-
-    Toutes les dimensions utilisées dans un modèle personnalisé doivent être répertoriées sous l’onglet dimensions du fichier d’importation, même si elles sont déjà répertoriées dans le tableau de bord dimensions.
-- **actionScore :** Valeur numérique de chaque action, qui représente le score de cette action. Nous vous recommandons de suivre le modèle de notation utilisé par les évaluations intégrées, qui est basé sur l’objectif et l’application de chaque action.
-- **actionOwnership :** Double liste délimitée par des points-virgules. Tous les propriétaires répertoriés doivent être inclus dans l’onglet appartenance.
-- **actionDescription :** Texte de chaque action, qui doit être unique. Ce champ prend en charge la langue de démarque comme décrit ci-dessous.
-
-#### <a name="ownership-tab"></a>Onglet appartenance
-
-Cet onglet inclut des colonnes qui définissent les propriétaires de chaque action.  Les colonnes de cet onglet, qui doivent être organisées dans Excel dans l’ordre indiqué ci-dessous, sont les suivantes :
-
-- **ownershipName :** Nom unique du propriétaire/partie responsable.
-- **ownershipDescription :** Description du propriétaire/partie responsable.
-
-#### <a name="dimensions-tab"></a>Onglet dimensions
-
-Cet onglet comprend des colonnes qui définissent les dimensions pouvant être associées à une action.  Les colonnes de cet onglet, qui doivent être organisées dans Excel dans l’ordre indiqué ci-dessous, sont les suivantes :
-
-- **dimensionKey :** Liste des clés utilisées pour les dimensions. Par exemple, produit, certification, etc.
-- **dimensionValue :** Valeur unique pour chaque clé de dimension. Par exemple, Office 365, Intune, Azure, produit personnalisé, etc.
-- **allowMultiSelect :** Utilisez TRUE ou FALSe pour indiquer que plusieurs valeurs de dimension peuvent être sélectionnées pour une clé de dimension unique.
-
-#### <a name="using-markdown-language-in-description-fields"></a>Utilisation de la langue de démarque dans les champs Description
-
-Les modèles et les évaluations prennent en charge l’utilisation de la langue de démarque pour certains éléments et la mise en forme de texte.  Il existe trois éléments de mise en forme du langage de démarque qui sont utilisés dans le gestionnaire de conformité :
-
-- Puces et listes numérotées
-- Liens hypertexte
-- Gras
-
-Les puces sont représentées sous la forme d’astérisques au lieu de puces Word ou Excel. Par exemple :
-
-```Markdown
-* Item A
-* Item B
-* Item C
-```
-
-Les numéros sont représentés sous forme de nombres, mais avec des espaces pour la mise en retrait (trois espaces par niveau) et uniquement des nombres utilisés pour tous les sous-niveaux (par exemple, aucune lettre).  Par exemple :
-   1. Élément A
-   2. Élément B
-      1. Sous-élément A
-      2. Sous-élément B
-   3. Élément C
-   4. Élément D
-      1. Sous-élément A
-      2. Sous-élément B
-   5. Élément E
-
-Les liens hypertexte sont créés en plaçant des crochets entourant le texte du lien hypertexte et le lien hypertexte lui-même entre parenthèses, immédiatement en regard du crochet fermant.  Par exemple :
-
-```Markdown
-Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
-```
-Ce texte s’affiche de la manière suivante : cliquez [ici](https://www.microsoft.com) pour accéder à la page d’accueil de Microsoft.
-
-Comme indiqué dans l’exemple ci-dessus, le gestionnaire de conformité ne restitue pas les URL avec un soulignement.
-
-Le texte en gras est deux astérisques de chaque côté du texte à mettre en gras.  Par exemple :
-
-```Markdown
-**This text will render in bold**
-```
-**Ce texte s’affiche en gras**
-
-### <a name="create-a-template"></a>Créer un modèle
-
-Vous pouvez créer un modèle en copiant un modèle existant ou en important des données de modèle à partir d’Excel. Lors de l’importation de données à partir d’Excel, le modèle nécessite deux administrateurs de gestionnaire de conformité différents pour publier les données (un à publier et un à approuver).
-
-#### <a name="create-a-template-by-copying-an-existing-template"></a>Créer un modèle en copiant un modèle existant
+#### <a name="customize-a-template-through-the-extension-process"></a>Personnaliser un modèle via le processus d’extension
 
 1. Ouvrez le tableau de bord **modèles** et sélectionnez **+ Ajouter un modèle**.
-2. Dans le champ **entrer le nom du modèle** , indiquez un nom unique pour le modèle.
-3. Activez la case à cocher **copier à partir d’un modèle existant** et sélectionnez le modèle à copier dans la liste déroulante.
-4. Ajoutez éventuellement des dimensions supplémentaires.
-5. Sélectionnez **Ajouter au tableau de bord**.
+2. Dans le volet flyout de modèle, activez la case à cocher **créer une extension à partir du modèle global** .
+3. Dans le menu déroulant, sélectionnez le modèle que vous souhaitez étendre.
+4. Si vous n’avez pas déjà mis en forme les données de votre modèle dans Excel, sélectionnez le lien dans le volet flyout pour télécharger un fichier Excel. Remplissez la feuille de calcul en fonction des instructions d' [importation de données de modèle avec Excel](#import-template-data-with-excel) ci-dessous et enregistrez-la sur votre lecteur local.
+5. Importez les données de votre modèle personnalisé en sélectionnant **Parcourir** pour charger votre fichier Excel.
+6. Sélectionnez **Ajouter au tableau de bord**. Votre nouveau modèle est ensuite ajouté à votre tableau de bord **modèles** .
 
-#### <a name="create-a-template-by-importing-data"></a>Créer un modèle en important des données
+#### <a name="create-your-own-template-and-import-it-into-compliance-manager"></a>Créez votre propre modèle et importez-le dans le gestionnaire de conformité
 
 1. Ouvrez le tableau de bord **modèles** et sélectionnez **+ Ajouter un modèle**.
-2. Dans le champ **entrer le nom du modèle** , indiquez un nom unique pour le modèle.
-3. Sélectionnez au moins une dimension dans la liste disponible.
-4. Sélectionnez **Parcourir** pour accéder à l’emplacement du fichier d’importation, sélectionnez-le, puis sélectionnez **ouvrir**.
-5. Le fichier d’importation est validé et indique le nombre de contrôles et de familles de contrôle détectés. S’il existe des erreurs, un lien sera fourni à une version modifiée du fichier d’importation qui inclut les détails de l’erreur. Toutes les erreurs doivent être résolues avant que les données ne soient importées.
-6. Une fois que les données ont été validées, sélectionnez **Ajouter au tableau de bord**.
-7. Le modèle importé apparaît sur le tableau de bord **modèles** et son état est **importé**. Sélectionnez les points de suspension (...) et sélectionnez **publier** pour publier le modèle. Lorsque le message de confirmation s’affiche, sélectionnez **publier**. L’état du modèle devient **approbation en attente**.
-8. Un autre utilisateur disposant du rôle d’administrateur du gestionnaire de conformité doit approuver le modèle dans le tableau de bord modèles. Ils doivent sélectionner les points de suspension (...) et sélectionner **approuver**. Lorsque le message de confirmation s’affiche, sélectionnez **approuver**. Le modèle est maintenant prêt à être utilisé.
+2. Dans le volet flyout de modèle, sélectionnez **créer un nouveau modèle**.
+3. Importez les données de votre modèle en sélectionnant **Parcourir** pour charger votre fichier Excel contenant les données (voir [Import template Data with Excel](#import-template-data-with-excel) ci-dessous).
+4. Sélectionnez **Ajouter au tableau de bord**. Votre nouveau modèle est ensuite ajouté à votre tableau de bord **modèles** .
+
+#### <a name="import-template-data-with-excel"></a>Importer des données de modèle avec Excel
+
+Pour modifier un modèle ou créer votre propre modèle, vous allez utiliser une [feuille de calcul Excel](https://go.microsoft.com/fwlink/?linkid=2124865) pour capturer les données nécessaires et les charger dans le gestionnaire de conformité. Ce modèle de feuille de calcul a un format et un schéma spécifiques qui doivent être utilisés ou qui ne seront pas importés dans le gestionnaire de conformité.
 
 > [!IMPORTANT]
-> Lors de la création d’un modèle, vous devez inclure des dimensions pour le **produit** et la **certification** afin de garantir l’affichage du modèle dans le score de conformité.
+> Si vous avez déjà créé ou personnalisé des modèles dans le gestionnaire de conformité, **ce processus a été mis à jour** dans le cadre de la version du gestionnaire de conformité d’avril 2020 (aperçu). **Veuillez consulter attentivement cette section.**
 
-### <a name="customize-a-template"></a>Personnaliser un modèle
+La feuille de calcul contient quatre onglets, trois étant obligatoires :
 
-Les modèles peuvent être personnalisés par le biais des contrôles personnalisés supplémentaires. Tous les contrôles personnalisés sont considérés comme des contrôles gérés par le client.
+1. Modèle (obligatoire)
+2. ControlFamily (obligatoire)
+3. Actions (obligatoire)
+4. Dimensions (facultatif)
 
-#### <a name="add-a-custom-control-to-a-template"></a>Ajouter un contrôle personnalisé à un modèle
+Votre feuille **de calcul doit inclure les onglets dans cet ordre**, sinon vos données ne peuvent pas être correctement importées dans un modèle.
 
-1. Ouvrez le **modèle** que vous souhaitez modifier.
-2. Sélectionnez **+ Ajouter** un contrôle personnalisé.
-3. Sélectionnez une **famille de contrôle** dans la liste déroulante ou entrez une nouvelle famille de contrôle si elle n’existe pas.
-4. Fournissez un nom ou un ID unique pour le contrôle dans le champ **ID de contrôle** .
-5. Indiquez le titre du contrôle dans le champ **titre** .
-6. Indiquez les conditions requises et les autres informations relatives au contrôle dans le champ **Description** .
-7. Sélectionnez **affecter un client** .
-8. Recherchez la ou les actions que vous souhaitez affecter au contrôle :
-    - Utilisez **Filtrer par dimension** pour utiliser des dimensions attribuées à la ou aux actions pour les localiser et les répertorier.
-    - Utilisez **Filtrer par propriétaire** pour utiliser le ou les propriétaires affectés à la ou aux actions pour les localiser et les répertorier.
-    - Sélectionnez un **type d’action** dans la liste déroulante pour répertorier les actions par type.
-    - Entrez le titre de l’action pour la trouver et la répertorier.
-9. À l’aide des critères de l’étape 8, une liste d' **actions correspondantes** s’affiche. Sélectionnez la première action à affecter au contrôle.
-10. Les détails de l’action apparaissent. Sélectionnez la **Description** que vous souhaitez utiliser et sélectionnez **Terminer**.
-11. Répétez les étapes 9 et 10 pour chaque action supplémentaire que vous souhaitez attribuer.
-12. Lorsque toutes les actions applicables ont été sélectionnées, sélectionnez **affecter**.
-13. Sélectionnez **Enregistrer** pour enregistrer le nouveau contrôle.
+##### <a name="template-tab"></a>Onglet modèle
+
+L’onglet **modèle** est obligatoire. Les informations de cet onglet fournissent des métadonnées sur le modèle. Il y a quatre colonnes obligatoires. Les colonnes doivent conserver la commande sur la feuille Excel, comme indiqué ci-dessous. Vous pouvez ajouter votre propre colonne **après** les quatre colonnes pour fournir vos propres dimensions. Si vous procédez ainsi, veillez à les ajouter à l’onglet **dimensions** en suivant les [instructions ci-dessous](#dimensions-tab).
+
+- **titre**: il s’agit du titre de votre modèle, qui doit être unique. Il ne peut pas partager un nom avec un autre modèle que vous avez dans le gestionnaire de conformité, qu’il s’agisse d’un modèle que vous avez déjà créé ou d’un modèle préconfiguré fourni par Microsoft.
+
+- **Product**: il s’agit d’une dimension obligatoire. Répertoriez le produit associé au modèle.
+
+- **certification**: il s’agit de la règle que vous utilisez pour le modèle.
+
+- **inScopeServices**: il s’agit des services du produit que cette évaluation adresse (par exemple, si vous avez répertorié Office 365 comme produit, Microsoft teams pourrait être un service dans l’étendue). Vous pouvez répertorier plusieurs services séparés par deux points-virgules.
 
 > [!NOTE]
-> Les modifications apportées à un modèle ne seront pas reflétées dans les évaluations existantes. Les mises à jour de modèle doivent être effectuées en premier, puis appliquées à une nouvelle évaluation, afin que les modifications soient visibles.
+> En ce qui concerne les produits et la certification : les données que vous insérez dans le **produit** et les cellules de **certification** ne peuvent pas être modifiées une fois la feuille de calcul importée pour créer ou personnaliser un modèle. De plus, un groupe ne peut pas contenir deux évaluations qui ont la même combinaison de **produit/certification** . Vous pouvez avoir plusieurs modèles qui ont la même combinaison de produit/certification.
+
+##### <a name="controlfamily-tab"></a>Onglet ControlFamily
+
+L’onglet **ControlFamily** est obligatoire.  Les colonnes obligatoires de cet onglet, qui doivent respecter l’ordre indiqué dans l’exemple de feuille de calcul, sont les suivantes :
+
+- **nomcontrôle**: nom de contrôle de la certification, de la norme ou de la réglementation, qui est généralement un type d’ID. Les noms de contrôle doivent être uniques dans un modèle. Vous ne pouvez pas avoir plusieurs contrôles portant le même nom dans la feuille de calcul.
+
+- **controlFamily**: fournissez un mot ou une expression pour le controlFamily, qui identifie un large regroupement de contrôles. Un controlFamily ne doit pas nécessairement être unique ; elle peut être affichée plusieurs fois dans une feuille de calcul. Le même controlFamily peut également être mis en vente dans plusieurs modèles, même s’ils n’ont pas de relation les uns avec les autres. Chaque controlFamily doit être mappé à au moins un contrôle.
+
+- **controlTitle**: fournissez un titre pour le contrôle. Alors que NomContrôle est un code de référence, le titre est un format de texte enrichi généralement visible dans les réglementations.
+
+- **controlDescription**: fournissez une description du contrôle.
+
+- **controlActionTitle**: il s’agit du titre d’une action que vous souhaitez associer à ce contrôle. Vous pouvez ajouter plusieurs actions en séparant par deux points-virgules sans espace. Chaque contrôle que vous répertoriez doit inclure au moins une action, et l’action doit exister (ce qui signifie que vous pouvez répertorier une action que vous répertoriez sous l’onglet **actions** de la même feuille de calcul, une action qui existe dans un autre modèle ou une action créée par Microsoft). Différents contrôles peuvent faire référence à la même action.
+
+##### <a name="actions-tab"></a>Onglet actions
+
+L’onglet **actions** est obligatoire.  Il désigne les actions de votre organisation et non pas les actions de Microsoft, qui existent déjà dans le gestionnaire de conformité. Les colonnes requises pour cet onglet, qui doivent respecter l’ordre indiqué dans l’exemple de feuille de calcul, sont les suivantes :
+
+- **actionTitle**: il s’agit du titre de votre action et est un champ obligatoire. Le titre que vous fournissez doit être unique. **Important**: Si vous faites référence à une action que vous possédez déjà (par exemple, dans un autre modèle) et que vous modifiez l’un de ses éléments dans les colonnes suivantes, ces modifications seront répercutées dans la même action dans d’autres modèles.
+
+- **implementationType**: dans ce champ obligatoire, répertoriez l’un des trois types d’implémentation ci-dessous :
+    - **Opérations-actions** mises en œuvre par des personnes et des processus pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes, des biens, des données et du personnel de l’organisation (exemple : sensibilisation et formation à la sécurité)
+    - **Techniques** : actions accomplies via l’utilisation de technologies et de mécanismes contenus dans les composants matériels, logiciels ou microprogrammes du système d’information afin de protéger la confidentialité, l’intégrité et la disponibilité des systèmes et des données de l’organisation (exemple : authentification multifacteur)
+    - **Documentation** -actions mises en œuvre via des stratégies et des procédures documentées qui établissent et définissent les contrôles requis pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes, des biens, des données et du personnel de l’organisation (exemple : une stratégie de sécurité des informations)
+
+- **actionScore**: dans ce champ obligatoire, fournissez une valeur de score numérique pour votre action. Il doit être un nombre entier compris entre 1 et 99 ; il ne peut pas être égal à 0, null ou vide. Plus le nombre est élevé, plus sa valeur augmente pour améliorer la conformité. Pour obtenir des instructions, voir ci-dessous comment Microsoft note ses contrôles :
+
+![Contrôle du gestionnaire de conformité-valeurs de points](../media/compliance-score-controls-scoring.png "Contrôle du gestionnaire de conformité-valeurs de points")
+
+- **actionDescriptionTitle**: il s’agit du titre de la description et est obligatoire. Ce titre de description vous permet d’avoir la même action dans plusieurs modèles et de faire apparaître une description différente dans chaque modèle.  Ce champ vous permet de clarifier le modèle référencé par la description. Dans la plupart des cas, vous pouvez placer le nom du modèle que vous créez dans ce champ.
+
+- **actionDescription**: fournissez une description de l’action. Vous pouvez appliquer une mise en forme telle que le texte gras et les liens hypertexte. Champ obligatoire.
+
+- **dimension-action d’action**: il s’agit d’un champ facultatif. Si vous l’incluez, l’en-tête doit inclure le préfixe « dimension- ». Toutes les dimensions que vous incluez ici seront utilisées en tant que [filtres dans le score de conformité](compliance-score-setup.md#filtering-your-dashboard-view) et apparaissent sur la [page des détails des actions d’amélioration dans le score de conformité](working-with-compliance-score.md#view-your-improvement-actions).
+
+##### <a name="dimensions-tab"></a>Onglet dimensions
+
+L’onglet **dimensions** est facultatif. Toutefois, si vous référencez une dimension ailleurs, vous devez la spécifier ici si elle n’existe pas dans un modèle que vous avez déjà créé ou dans un modèle Microsoft. Les colonnes de cet onglet sont répertoriées ci-dessous :
+
+- **dimensionKey**: liste en tant que « produit », « certifications », « objectif de l’action »
+- **dimensionValue**: exemples : Office 365, HIPPA, préventive, détective
+
+Vous pouvez afficher vos dimensions existantes en accédant à **gestion des clients** et en sélectionnant l’onglet **dimensions** . Par ailleurs, chaque fois que vous exportez un modèle existant, la feuille de calcul exportée aura l’onglet **dimensions** , qui répertorie toutes les dimensions utilisées dans le modèle.
+
+### <a name="modify-an-existing-template"></a>Modifier un modèle existant
+
+Pour modifier un modèle que vous avez créé ou personnalisé à l’aide du processus d’importation décrit ci-dessus, vous devez utiliser la même procédure pour importer ces modifications dans votre modèle.
+
+> [!NOTE]
+> Il existe plusieurs facteurs importants à prendre en compte lors de la modification des composants de modèle, c’est pourquoi nous vous recommandons de consulter attentivement cette section.
+
+#### <a name="general-process-for-modifying-a-template"></a>Processus général de modification d’un modèle
+
+Pour modifier l’un des modèles existants de votre organisation, le processus général est le suivant :
+
+1. Dans votre tableau de bord **modèles** , sélectionnez le modèle que vous souhaitez modifier, qui affiche le tableau de bord **informations sur les contrôles** affichant votre onglet **modèle** .
+2. À partir de là, sélectionnez **Exporter**. Une feuille Excel avec toutes vos données de modèle seront téléchargées.
+3. Pour modifier, ajouter ou supprimer une action, consultez les sections ci-dessous.
+4. Lorsque vous avez terminé d’apporter des modifications à votre fichier Excel, importez le fichier dans le modèle en sélectionnant le modèle dans votre tableau de bord et en sélectionnant **Importer**. Votre modèle inclut désormais les modifications que vous avez apportées.
+
+#### <a name="to-edit-template-attributes"></a>Pour modifier les attributs de modèle
+
+Sous l’onglet **modèles** , vous pouvez modifier n’importe quel élément dans la colonne **titre** , la colonne **inScopeServices** , ainsi que dans n’importe quelle autre colonne que vous avez peut-être ajoutée. Toutefois, vous ne pouvez rien modifier dans les colonnes de **produit** ou de **certification** .
+
+#### <a name="to-add-an-action-to-a-template"></a>Pour ajouter une action à un modèle
+
+1. Accédez à l’onglet **actions** et ajoutez vos informations dans les champs obligatoires de la première ligne vide sous vos actions existantes.
+2. Accédez à l’onglet **ControlFamily** . Recherchez la ligne contenant le contrôle auquel votre action est mappée. Ajoutez votre nouvelle action à la colonne **controlActionTitle** de cette ligne (n’oubliez pas de séparer plusieurs actions de ce champ par deux points-virgules, sans espace entre).
+3. Enregistrez votre feuille de calcul sur votre ordinateur local.
+
+#### <a name="to-edit-an-actions-information"></a>Pour modifier les informations d’une action
+
+Vous pouvez modifier les informations d’une action *, à l’exception de son titre*. Vous pouvez modifier une cellule à partir des colonnes B et, lorsque vous réimportez le fichier dans le modèle, les actions de ce modèle contiendront désormais les données mises à jour.
+
+Vous ne pouvez pas modifier la **actionTitle** (colonne A) car si vous le faites, le gestionnaire de conformité considère qu’il s’agit d’une nouvelle action. Si vous souhaitez modifier le nom d’une action, consultez les instructions immédiatement en dessous.
+
+#### <a name="to-change-the-name-of-an-action"></a>Pour modifier le nom d’une action
+
+Si vous souhaitez modifier le nom d’une action, vous devez explicitement indiquer dans la feuille de calcul que vous remplacez un nom existant par un nouveau nom. Pour modifier le nom d’une action, procédez comme suit :
+
+1. Dans l’onglet **actions** de votre feuille de calcul, ajoutez une nouvelle colonne à la feuille de calcul après la colonne a.
+2. Dans cette nouvelle colonne, qui est maintenant la colonne B, placée en tant qu’en-tête dans la ligne 1 : **oldActionTitle**.
+3. Copiez le contenu de la colonne A et collez-le dans la colonne B. Cela place les titres d’action existants, qui sont les éléments que vous souhaitez modifier, dans la colonne B.
+4. Dans la colonne A, **actionTitle**, supprimez l’ancien nom et remplacez-le par le nouveau nom de l’action.
+
+#### <a name="to-remove-an-action-from-a-template"></a>Pour supprimer une action d’un modèle
+
+La suppression d’une action d’une ligne dans une feuille de calcul **ne supprime pas** l’action du modèle que vous modifiez. Au lieu de cela, suivez la procédure ci-dessous pour supprimer une action :
+
+1. Sous l’onglet **actions** , insérez une nouvelle colonne en tant que colonne a **et put dans** la ligne d’en-tête, qui est le numéro de ligne 1.
+2. Sur la ligne de l’action que vous souhaitez supprimer, placez **supprimer** dans la colonne A pour cette ligne.
+3. Assurez-vous que cette action n’est plus référencée par un contrôle. Accédez à l’onglet **ControlFamily** et recherchez le titre de votre action dans la colonne F, qui est **controlActionTitle**.
+4. Lorsque vous trouvez les actions indiquées dans la colonne **controlActionTitle** , supprimez-les.
+5. Enregistrez votre feuille de calcul sur votre ordinateur local.
+
+Lorsque vous importez de nouveau votre feuille de calcul dans le modèle, votre action est supprimée du modèle. La suppression d’une action d’un modèle ne supprime pas complètement l’action. Cette action peut toujours être référencée par un autre modèle.
+
+Si vous supprimez la dernière action référencée par un contrôle, vous devez supprimer le contrôle.
+
+> [!NOTE]
+> Pour supprimer un contrôle, procédez de la même manière que pour supprimer une action comme indiqué ci-dessus. Dans l’onglet **ControlFamily** , ajoutez une colonne **opération** et placez la **suppression** en regard du contrôle que vous souhaitez supprimer.
+
+### <a name="updates-to-templates"></a>Mises à jour des modèles
+
+Chaque fois qu’une évaluation est mise à jour via le processus de contrôle de version, votre évaluation personnalisée hérite de ces mises à jour et conserve vos contrôles personnalisés. Consultez la rubrique [gestion des versions des alertes pour les mises à jour d’évaluation](#versioning-alerts-for-assessment-updates).
 
 ### <a name="export-a-template-to-json"></a>Exporter un modèle vers JSON
 
-Le gestionnaire de conformité (aperçu) prend également en charge l’exportation des modèles au format JSON (JavaScript Object Notation). Cela vous permet d’échanger des données du gestionnaire de conformité avec d’autres systèmes qui prennent en charge JSON.
+Gestionnaire de conformité (aperçu) prend en charge l’exportation des modèles au format JSON (JavaScript Object Notation). Cela vous permet d’échanger des données du gestionnaire de conformité avec d’autres systèmes qui prennent en charge JSON.
 
 ## <a name="reports"></a>Rapports
 
-Vous pouvez exporter une évaluation vers un fichier Excel pour les parties prenantes en conformité dans votre organisation ou pour les auditeurs et régulateurs externes. Le rapport est une capture instantanée de l’évaluation à compter de la date et de l’heure de l’exportation. Le rapport contient les détails de Microsoft et des contrôles gérés par le client pour l’évaluation, le contrôle de l’état de l’implémentation, le contrôle de la date de test, les résultats des tests et les liens vers les documents de preuve téléchargés. Vous devez exporter les évaluations avant de les archiver car les évaluations archivées ne retiennent pas les liens vers les documents téléchargés.
+Vous pouvez exporter une évaluation vers un fichier Excel pour les parties prenantes en conformité dans votre organisation ou pour les auditeurs et régulateurs externes. Le rapport est une capture instantanée de l’évaluation à compter de la date et de l’heure de l’exportation. Le rapport contient les détails de Microsoft et des contrôles gérés par le client pour l’évaluation, le contrôle de l’état de l’implémentation, le contrôle de la date de test, les résultats des tests et les liens vers les documents de preuve téléchargés. Étant donné que les évaluations masquées ne retiennent pas les liens vers les documents téléchargés, vous devez exporter l’évaluation avant de la masquer.
 
 ### <a name="export-an-assessment"></a>Exporter une évaluation
 
@@ -594,7 +581,7 @@ Vous pouvez exporter une évaluation vers un fichier Excel pour les parties pren
 2. Sélectionnez le groupe et l’évaluation dans les menus déroulants pour l’évaluation que vous souhaitez exporter.
 3. Sélectionnez Exporter. L’exportation de l’évaluation est téléchargée sous la forme d’un fichier Excel.
 
-![Rapport Excel d’évaluation du gestionnaire de conformité](../media/compliance-manager-assessment-report.png)
+![Rapport Excel d’évaluation du gestionnaire de conformité](../media/compliance-manager-assessment-report.png "Rapport Excel d’évaluation du gestionnaire de conformité")
 
 ## <a name="permissions"></a>Autorisations
 

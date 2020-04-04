@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Obtenez un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre région ou votre pays, en envoyant une demande de service en ligne ou en accédant à la Boutique Microsoft.
 feedback_system: None
-ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4bb35f6d8c2895ec7adf37c6b4e149962fb616bc
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106059"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142550"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur
 
@@ -39,9 +39,6 @@ ms.locfileid: "43106059"
 ## <a name="online-support"></a>[ Support en ligne](#tab/online)
 
 Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons à trouver une solution, ou vous connecter avec un spécialiste qui vous contactera par e-mail ou téléphone. [En savoir plus sur les délais de réponse d’assistance initiales](https://go.microsoft.com/fwlink/p/?LinkId=518251).
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. [Au sein de mon entreprise, qui dispose d’autorisations d’administration ?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
@@ -80,8 +77,6 @@ Vous pouvez désormais prendre un rendez-vous dans votre Microsoft Store local 
 2. Saisissez votre emplacement et lancez la recherche pour trouver un Microsoft Store près de chez vous.
 
 3. Sélectionnez votre boutique, puis sélectionnez **Planifier un rendez-vous de service maintenant**.
-
----
 
 ::: moniker-end
 

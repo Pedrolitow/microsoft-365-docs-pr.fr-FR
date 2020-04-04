@@ -5,12 +5,12 @@ keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
-ms.translationtype: HT
+ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204233"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142682"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le Bureau géré Microsoft ?
 
@@ -74,6 +74,7 @@ Si Bureau géré Microsoft semble convenir à votre organisation, vous pouvez co
 - [Rôles et responsabilités de Bureau géré Microsoft](roles-and-responsibilities.md)
 - [Technologies associées de Bureau géré Microsoft](technologies.md)
 - [Bureau géré Microsoft et ITIL](../MMD-and-ITSM.md)
+- [Conformité](compliance.md)
 - [Description du service Bureau géré Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **Préparez-vous à l'inscription :** ces sujets décrivent les étapes à suivre dans votre organisation pour vous préparer à l'inscription, notamment la vérification du fait que votre environnement respecte les principales conditions préalables, la configuration des réseaux, la mise en place des certificats et la préparation de vos applications.
@@ -100,7 +101,7 @@ Si Bureau géré Microsoft semble convenir à votre organisation, vous pouvez co
 
 - [Aide administrateur pour Bureau géré Microsoft](../working-with-managed-desktop/admin-support.md)
 - [Obtenir de l’aide pour les utilisateurs finaux](../working-with-managed-desktop/end-user-support.md)
-- [Paramètres configurables – Bureau géré Microsoft](../working-with-managed-desktop/config-setting-overview.md)
+- [Paramètres configurables : Bureau géré Microsoft](../working-with-managed-desktop/config-setting-overview.md)
 
 
 

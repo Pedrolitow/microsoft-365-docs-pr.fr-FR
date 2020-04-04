@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/19/2019
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,18 +17,19 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Affichez la liste complète des certificats racines et des autorités de certification dans Office 365.
-ms.openlocfilehash: 7b3aeb4012f510b8ccd3d7e608a9aa9be04b01ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593195"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131507"
 ---
 # <a name="office-365-encryption-chains"></a>Chaînes de chiffrement Office 365
 
 Office 365 tire parti d’un certain nombre de fournisseurs de certificats. La liste complète des certificats racines Office 365 connus que les clients peuvent rencontrer lors de l’accès à Office 365 est décrite ci-dessous. Pour plus d’informations sur les certificats que vous devrez peut-être installer dans votre propre infrastructure, voir [planifier les certificats SSL tiers pour Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). Les informations de certificat suivantes s’appliquent à toutes les instances mondiales et nationales de Cloud d’Office 365.
 
-**Clients ITAR (défense & GCC High) :** veuillez contacter votre responsable TAM ou votre SDM pour le package.
+>[!NOTE]
+>Pour obtenir des informations sur les certificats qui s’appliquent aux clients **haute qualité DOD et GCC** , consultez la rubrique [chaînes de chiffrement Office 365-DOD et GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Type de certificat** | **Téléchargement de la fichier. p7b** | **Points de terminaison CRL** | **Points de terminaison OCSP** | **Points de terminaison AIA** |
 | --- | --- | --- | --- | --- |

@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de migration des versions de Microsoft Office, des serveurs Office et de Windows vers Microsoft 365 Entreprise au sein de votre organisation.
-ms.openlocfilehash: 7506d374391e05202be685d8ebfe8a04e8d62761
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053082"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113496"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migration vers Microsoft 365 Entreprise
 
@@ -171,7 +171,7 @@ Découvrez comment les experts informatiques de Microsoft ont migré l’entrepr
 
 ## <a name="transition-your-entire-organization"></a>Migration de l’organisation entière
 
-Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, téléchargez l’[affiche de transition](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 Entreprise, consultez l’[affiche de transition](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Image de l’affiche pour la transition vers Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 

@@ -14,35 +14,54 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 3fc16e92e912676d7aedc861ffe8306d68388c95
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: de69d4c7e5938d8bfd3fed74b9ae44288e48019c
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635142"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141539"
 ---
-# <a name="release-notes-for-compliance-manager-preview"></a>Notes de publication pour le gestionnaire de conformité (aperçu)
+# <a name="microsoft-compliance-manager-preview-release-notes"></a>Notes de publication du gestionnaire de conformité Microsoft (version préliminaire)
 
-La préversion publique du gestionnaire de conformité vous permet d’accéder en avant-première aux fonctionnalités et mises à jour à venir.
+La préversion publique du gestionnaire de conformité vous permet d’accéder en avant-première aux fonctionnalités et mises à jour à venir. Cette page contient des mises à jour sur les nouvelles fonctionnalités, des fonctionnalités améliorées et des problèmes connus avec la version actuelle.
 
-Vous pouvez utiliser l’outil [Gestionnaire de conformité](https://servicetrust.microsoft.com/ComplianceManager) mis à jour sur le [portail d’approbation de service](https://servicetrust.microsoft.com) pour suivre, attribuer et vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
+Vous pouvez utiliser l’outil [Gestionnaire de conformité](https://servicetrust.microsoft.com/ComplianceManager) sur le portail d’approbation de [service](https://servicetrust.microsoft.com) pour suivre, attribuer et vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
 
-## <a name="whats-new-in-compliance-manager-preview"></a>Nouveautés du gestionnaire de conformité (aperçu)
+## <a name="improved-template-creation-and-update-process"></a>Amélioration du processus de création et de mise à jour des modèles
 
-- **Accès basé sur les rôles au gestionnaire de conformité :** Le rôle d' **accès invité** par défaut a été supprimé. Pour qu’un utilisateur puisse accéder au gestionnaire de conformité, l’administrateur global doit [attribuer une autorisation à chaque utilisateur](compliance-manager-overview.md#permissions).
+Nous avons mis à jour le processus d’importation, d’exportation et de modification des modèles pour les évaluations. La nouvelle expérience simplifiée vous permettra d’apporter plus facilement vos propres évaluations à votre flux de travail et de les maintenir à jour.
 
-- **Note de conformité mise à jour**: le score de conformité inclut désormais les scores pour les actions gérées par Microsoft. Votre score augmente en conséquence.
+### <a name="the-old-process"></a>Ancien processus
 
-- **Éléments d’action :** Les éléments d’action sont maintenant des éléments individuels et de nombreux incluent une collection de télémétrie provenant de l’API graphique Microsoft Secure score. Dans la mesure du possible, les recommandations d’action technique ont maintenant des liens vers la page de configuration applicable dans le service Office 365.
+Il existe deux façons de créer un modèle dans le gestionnaire de conformité. Vous pouvez copier un modèle existant ou importer des données de modèle à partir d’une feuille de calcul Excel dans un nouveau modèle. À partir de votre page **modèles** , sélectionnez **Ajouter un modèle** pour créer un nouveau modèle en saisissant un nom, en sélectionnant dimensions et en téléchargeant un fichier Excel avec un format et un schéma spécifiques. Vous pouvez également activer la case à cocher **copier à partir d’un modèle existant** , sélectionner un modèle à copier et vérifier les dimensions. Personnalisation de la conception votre modèle nécessite un processus en plusieurs étapes qui a commencé en sélectionnant **Ajouter un contrôle personnalisé** après la création de votre modèle.
 
-- **Gestion des clients :** Nouvelle interface de gestion des nouveaux éléments de données dans le gestionnaire de conformité (aperçu) :
-    - **Dimensions :** Afficher, ajouter et personnaliser des métadonnées pour des modèles, des évaluations et des éléments d’action qui vous permettent de créer des tableaux croisés dynamiques personnalisés pour les filtres.
-    - **Propriétaires :** Spécifiez un propriétaire pour chaque élément d’action.
-    - **Actions des clients :** Gérez la liste complète des éléments actions inclus dans le gestionnaire de conformité (Preview) et activez/désactivez la surveillance du score sécurisé pour les éléments d’action intégrés avec le score sécurisé.
+### <a name="the-new-process"></a>Le nouveau processus
+
+Nous avons facilité la création de nouveaux modèles. Dans le processus d' **extension** en une étape, vous pouvez ajouter une feuille de calcul avec vos actions et contrôles à un modèle Microsoft existant pour créer votre propre version personnalisée. Sur la page des **modèles** dans le gestionnaire de conformité, sélectionnez **+ Ajouter un modèle**. Dans le volet flyout de **modèle** , activez la case à cocher **créer une extension à partir du modèle global** . Vous pouvez ajouter des personnalisations avec un nouveau format Excel moins complexe que le précédent. Ce nouveau processus remplace l’ancienne **copie à partir d’un modèle existant** et ajoute des fonctions de **contrôle personnalisé** .
+
+Chaque fois que l’évaluation d’origine est mise à jour via le processus de gestion des versions décrit ci-dessous, votre évaluation personnalisée hérite de ces mises à jour et conserve vos contrôles personnalisés.
+
+Il est également plus facile de modifier vos propres modèles existants. Vous pouvez exporter votre modèle, apporter des modifications dans le même classeur, puis l’importer avec vos modifications enregistrées.
+
+Affichez les instructions détaillées sur la [création de modèles](working-with-compliance-manager.md#templates) avec ce nouveau processus.
+
+## <a name="versioning-notice-and-control"></a>Notification et contrôle de version
+
+Votre organisation a reçu des évaluations mises à jour dans la version d’avril 2020 du gestionnaire de conformité afin de vous aider à vous aligner sur les mises à jour de certification et de réglementation. À l’avenir, nous vous fournirons une façon claire de comprendre et d’accepter toutes les futures mises à jour via des **alertes de gestion des versions**.
+
+Lorsqu’une mise à jour est disponible pour le modèle d’une évaluation ou une action d’amélioration, une icône d’alerte vous signale qu’une mise à jour est prête. Lorsque vous cliquez sur cette icône, une fenêtre contextuelle explique la mise à jour et vous invite à accepter. La sélection de l’icône d’alerte révèle un volet flyout expliquant la mise à jour et vous invitant à accepter. En savoir plus sur l' [acceptation de mises à jour pour les évaluations](working-with-compliance-manager.md#versioning-alerts-for-assessment-updates).
+
+## <a name="common-actions-will-synch-status-across-groups"></a>Les actions courantes synchronisent l’état entre les groupes
+
+Si votre organisation dispose de plusieurs groupes d’évaluations, le comportement des actions **techniques** (c’est-à-dire, des actions affectant l’ensemble de votre organisation) a changé. Toutes les actions dupliquées entre les groupes ont été regroupées en une seule action. Cette action unique contient toutes les notes et preuves téléchargées des versions en double. Avec cette modification, les actions techniques se comporteront désormais comme lorsqu’elles appartenaient au même groupe. Toutes les modifications apportées à l’action dans un groupe ou une évaluation apparaissent maintenant dans toutes les instances. L' **État de mise en œuvre**, la **Date de mise en œuvre**, l' **État du test**et la **Date de test** reflètent les mises à jour les plus récentes.
+
+## <a name="language-support"></a>Prise en charge linguistique
+
+Le gestionnaire de conformité est désormais disponible dans les langues suivantes, en plus de l’anglais : chinois (simplifié), chinois (traditionnel), français, allemand, italien, japonais, coréen, portugais (Brésil), russe et espagnol.
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>Problèmes connus dans le gestionnaire de conformité (aperçu)
 
-Les sections suivantes couvrent les problèmes connus à résoudre dans les prochaines versions du gestionnaire de conformité.
+La section suivante décrit les problèmes connus dans la version actuelle du gestionnaire de conformité.
 
 ### <a name="compliance-score"></a>Score de conformité
 
@@ -58,26 +77,6 @@ Les sections suivantes couvrent les problèmes connus à résoudre dans les proc
 - Lors de la création d’évaluations, les scores incluent automatiquement les scores de contrôle gérés par Microsoft et l’intégration de la note de sécurité.
 - Toutes les actions qui ne sont pas prises en charge par l’intégration de la note sécurisée peuvent être implémentées manuellement. Une implémentation manuelle concerne le score du groupe de cette action.
 
-### <a name="microsoft-managed-controls"></a>Contrôles gérés par Microsoft
-
-- La date de test pour les contrôles gérés par Microsoft n’apparaît pas dans l’interface utilisateur, même si elle est incluse dans l’évaluation. Pour afficher les informations de date de test, vous devez exporter l’évaluation.
-
-### <a name="customization"></a>Personnalisation
-
-- L’ajout de contrôles personnalisés permet d’ajouter un nouveau contrôle à une famille de contrôle existante, mais il ne vous permet pas d’ajouter une nouvelle famille de contrôle.
-- Cette version ne prend pas en charge la liaison d’éléments d’action ou l’ajout d’éléments d’action ou de contrôles à une évaluation.
-- Si vous créez une action personnalisée, vous ne pouvez pas la modifier ou la supprimer.
-
-### <a name="control-families-not-shown-in-assessments"></a>Familles de contrôle non affichées dans les évaluations
-
-- Lorsque vous importez un modèle, toutes les évaluations basées sur ce modèle reflètent toutes les familles de contrôle qui font partie du modèle. Toutefois, si vous ajoutez de nouvelles familles de contrôle au modèle, les évaluations existantes ne refléteront pas les modifications. Seules les nouvelles évaluations créées à partir du modèle mis à jour reflètent les modifications.
-
-### <a name="templates"></a>Modèles
-
-- Lors de la création d’un modèle, vous devez inclure des dimensions pour le **produit** et la **certification** afin de garantir l’affichage du modèle dans le score de conformité.
-- Les modèles archivés sont modifiables et ils ne doivent pas être modifiables.
-- Les modèles verrouillés permettent la création d’une évaluation dès qu’ils ne le sont pas. Le verrouillage d’un modèle est destiné à empêcher son utilisation pour créer des évaluations.
-
 ### <a name="export"></a>Exporter
 
 - L’exportation de modèle vers JSON échoue lorsque l’état du modèle est défini sur **importé** ou **en attente d’approbation**.
@@ -92,7 +91,3 @@ Les sections suivantes couvrent les problèmes connus à résoudre dans les proc
 ### <a name="session-timeout"></a>Délai d’expiration de session
 
 - Lorsqu’une session arrive à expiration, une erreur « un problème est survenu » peut apparaître. Pour résoudre ce dernier, accédez au [Gestionnaire de conformité](https://servicetrust.microsoft.com/ComplianceManager) et reconnectez-vous.
- 
-### <a name="language-support"></a>Prise en charge linguistique
-
-- Toutes les langues ne sont pas prises en charge pour toutes les pages Web. Si votre langue locale n’est pas prise en charge, affichez-la en anglais (États-Unis).

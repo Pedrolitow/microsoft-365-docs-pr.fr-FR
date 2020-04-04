@@ -14,23 +14,29 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635152"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141611"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
 > [!IMPORTANT]
 > Le Gestionnaire de conformité n’est pas disponible dans Office 365 géré par 21Vianet, Office 365 Germany, Office 365 U.S. GCC High ou Office 365 Department of Defense.
 
-[Microsoft Compliance Manager (Preview)](https://servicetrust.microsoft.com/ComplianceManager) est un outil d’évaluation des risques gratuit basé sur un flux de travail, qui vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft. Partie de votre abonnement Microsoft 365, Office 365 ou Azure Active Directory, le gestionnaire de conformité vous aide à gérer la conformité réglementaire dans le cadre du modèle de responsabilité partagé pour les services Cloud de Microsoft. Le gestionnaire de conformité offre un tableau de bord centralisé pour l’affichage des normes, les réglementations et les détails de l’implémentation des contrôles, ainsi que les résultats des tests pour les évaluations de service Microsoft. Il inclut également des outils qui vous permettent de gérer les implémentations de contrôles personnalisés et le suivi de la conformité propres à votre organisation.
+**Dans cet article**, lisez cet article pour découvrir le gestionnaire de conformité et comprendre ses principaux composants.
+
+**En savoir plus sur les mises à jour**: nous avons publié plusieurs mises à jour dans la version préliminaire publique d’avril 2020. Consultez les [notes de publication du gestionnaire de conformité](compliance-manager-release-notes.md) pour découvrir les problèmes connus et les nouveautés.
+
+## <a name="what-is-compliance-manager"></a>Qu’est-ce que le gestionnaire de conformité
+
+[Microsoft Compliance Manager (Preview)](https://servicetrust.microsoft.com/ComplianceManager) est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft pour la gestion des activités de conformité réglementaire liées aux services Cloud de Microsoft. Partie de votre abonnement Microsoft 365, Office 365 ou Azure Active Directory, le gestionnaire de conformité vous aide à gérer la conformité réglementaire dans le cadre du modèle de responsabilité partagé pour les services Cloud de Microsoft.
 
 Avec le gestionnaire de conformité, votre organisation peut :
   
-- Combinez les informations de conformité détaillées fournies aux auditeurs et aux autorités de réglementation concernant ses services Cloud avec votre auto-évaluation de conformité pour les normes et réglementations applicables à votre organisation. Il s’agit des normes et réglementations définies par l’Organisation internationale de normalisation (ISO), le NIST (National Institute of Standards and Technology), le HIPAA (Health Insurance Portability and Accountability Act), les données générales Règlement sur la protection (RGPD), et bien d’autres.
+- Combinez les informations de conformité détaillées fournies aux auditeurs et aux autorités de réglementation concernant ses services Cloud avec votre auto-évaluation de conformité pour les normes et réglementations applicables à votre organisation. Il s’agit des normes et réglementations définies par l’Organisation internationale de normalisation (ISO), le NIST (National Institute of Standards and Technology), le HIPAA (Health Insurance Portability and Accountability Act), le règlement général sur la protection des données (RGPD), et bien d’autres.
 - Vous permet d’affecter, de suivre et d’enregistrer les activités de conformité et d’évaluation, qui peuvent aider votre organisation à atteindre vos objectifs de conformité.
 - Fournir un score de conformité pour vous aider à suivre votre progression et à hiérarchiser les contrôles d’audit qui permettent de réduire l’exposition aux risques de votre organisation.
 - Fournir un référentiel sécurisé pour le téléchargement et la gestion des preuves et d’autres artefacts liés à vos activités de conformité.
@@ -39,7 +45,16 @@ Avec le gestionnaire de conformité, votre organisation peut :
 > [!NOTE]
 > Les actions client fournies dans le gestionnaire de conformité sont des recommandations ; Il revient à votre organisation d’évaluer l’efficacité de ces recommandations dans son environnement réglementaire respectif avant la mise en œuvre. Les recommandations figurant dans le gestionnaire de conformité ne doivent pas être interprétées comme garantie de conformité.
 
-## <a name="compliance-manager-relationships"></a>Relations du gestionnaire de conformité
+## <a name="relationship-to-compliance-score"></a>Relation avec le score de conformité
+
+[Microsoft Compliance score (Preview)](compliance-score.md) est une fonctionnalité du centre de conformité Microsoft 365 qui fournit une vue de niveau supérieur à la position de conformité de votre organisation. Il calcule un score basé sur les risques mesurant votre progression dans la réalisation d’actions qui contribuent à réduire les risques liés à la protection des données et aux normes réglementaires. Connaître votre score de conformité global permet à votre organisation de comprendre et de gérer la conformité. Comprendre [Comment le score de conformité est calculé](compliance-score-methodology.md).
+
+Le gestionnaire de conformité partage le même serveur principal avec le score de conformité. Lors de la phase d’aperçu public pour les deux outils, le gestionnaire de conformité est l’endroit où vous allez gérer vos évaluations et les implémentations de contrôles personnalisés. En savoir plus sur la [relation entre le score de conformité et le gestionnaire de conformité](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
+  
+> [!IMPORTANT]
+> Le score de conformité n’exprime pas une mesure absolue de la conformité de l’organisation avec une norme ou réglementation particulière. Elle exprime la mesure dans laquelle vous avez adopté des contrôles qui peuvent réduire les risques pour les données personnelles et la confidentialité individuelle. Aucun service ne peut garantir la conformité avec une norme ou une réglementation, et le score de conformité ne doit pas être interprété comme une garantie de quelque façon que ce soit.
+
+## <a name="compliance-manager-components"></a>Composants du gestionnaire de conformité
 
 Le gestionnaire de conformité utilise plusieurs composants pour vous aider dans vos activités de gestion de la conformité. Ces composants fonctionnent ensemble pour fournir un flux de travail de gestion complet et des rapports de conformité sans tracas pour les auditeurs.
 
@@ -47,7 +62,7 @@ Le diagramme illustre les relations entre les principaux composants du gestionna
 
 ![Relations dans le gestionnaire de conformité version 3](../media/compliance-manager-relationships.png)
 
-## <a name="groups"></a>Groupes
+## <a name="groups"></a>Groups
 
 Les [groupes](working-with-compliance-manager.md#groups) sont des conteneurs qui vous permettent d’organiser des évaluations et de partager des informations communes et des tâches de flux de travail entre les évaluations qui ont le même ou les mêmes contrôles gérés par le client. Lorsque deux évaluations différentes dans le même groupe partagent le contrôle géré par le client, l’exécution des détails de l’implémentation, des tests et de l’état du contrôle est automatiquement synchronisée avec le même contrôle dans n’importe quelle autre évaluation dans le groupe. Cette opération unifie les éléments d’action attribués pour chaque contrôle au sein du groupe et réduit le travail de duplication. Vous pouvez également choisir d’utiliser des groupes pour organiser. Évaluations par année, zone, norme de conformité ou autres groupements pour faciliter l’organisation de votre travail de conformité.
 
@@ -61,11 +76,11 @@ Par défaut, le gestionnaire de conformité crée les évaluations suivantes pou
 - Office 365 NIST 800-53
 - Office 365 RGPD
 
-Les évaluations incluent plusieurs composants :
+Les évaluations comportent plusieurs composants :
   
 - **Services dans l’étendue**: chaque évaluation s’applique à un ensemble spécifique de services Microsoft.
 - **Contrôles gérés par Microsoft**: pour chaque service Cloud, Microsoft implémente et gère un ensemble de contrôles de conformité pour les normes et réglementations applicables.
-- **Contrôles gérés**par le client : il s’agit de la collection de contrôles implémentée par votre organisation lorsque vous effectuez des actions pour chaque contrôle.
+- **Contrôles gérés**par le client : ces contrôles sont implémentés par votre organisation lorsque vous effectuez des actions pour chaque contrôle.
 - **Score d’évaluation**: pourcentage de la note totale possible pour les contrôles gérés par le client dans l’évaluation. Cela vous aide à effectuer le suivi de l’implémentation des actions affectées à chaque contrôle.
 
 ## <a name="controls"></a>Contrôles
@@ -79,7 +94,7 @@ Les [contrôles](working-with-compliance-manager.md#controls-and-actions) sont d
 
 ![Contrôles dans le gestionnaire de conformité version 3](../media/compliance-manager-controls.png)
 
-Il existe trois types de contrôles dans le gestionnaire de conformité, les **contrôles gérés par Microsoft**, les **contrôles gérés par le client**et les **contrôles de gestion partagés**
+Il existe trois types de contrôles dans le gestionnaire de conformité, les **contrôles gérés par Microsoft**, les **contrôles gérés par le client**et les **contrôles de gestion partagés**.
 
 ### <a name="microsoft-managed-controls"></a>Contrôles gérés par Microsoft
 
@@ -87,7 +102,7 @@ Pour chaque service Cloud, Microsoft implémente et gère un ensemble de contrô
 
 ### <a name="customer-managed-controls"></a>Contrôles gérés par le client
 
-Il s’agit de la collection de contrôles gérés par votre organisation. Votre organisation est responsable de l’implémentation des contrôles gérés par le client dans le cadre de votre processus de conformité pour une norme ou une réglementation donnée. Les contrôles gérés par le client sont organisés en familles de contrôle pour la certification ou la réglementation correspondante. Utilisez les contrôles gérés par le client pour mettre en œuvre les actions recommandées suggérées par Microsoft dans le cadre de vos activités de conformité. Votre organisation peut utiliser les instructions et les actions client recommandées dans chaque contrôle géré par le client pour gérer le processus d’implémentation et d’évaluation de ce contrôle.
+Les contrôles gérés par le client sont gérés par votre organisation. Votre organisation est responsable de l’implémentation des contrôles gérés par le client dans le cadre de votre processus de conformité pour une norme ou une réglementation donnée. Les contrôles gérés par le client sont organisés en familles de contrôle pour la certification ou la réglementation correspondante. Utilisez les contrôles gérés par le client pour mettre en œuvre les actions recommandées suggérées par Microsoft dans le cadre de vos activités de conformité. Votre organisation peut utiliser les instructions et les actions client recommandées dans chaque contrôle géré par le client pour gérer le processus d’implémentation et d’évaluation de ce contrôle.
 
 Les contrôles gérés par le client dans les évaluations disposent également de fonctionnalités de gestion de flux de travail intégrées que vous pouvez utiliser pour gérer et suivre la progression de l’évaluation. Avec cette fonctionnalité de flux de travail, vous pouvez :
 
@@ -111,6 +126,8 @@ Les membres de votre organisation peuvent utiliser le gestionnaire de conformit�
 
 Les contrôles de certification sont généralement mis en œuvre par une personne et testés par un autre. Par exemple, après l’exécution des éléments d’action initialement affectés à une personne pour l’implémentation, ces éléments d’action sont affectés à la personne suivante pour tester et télécharger des preuves. Tout utilisateur disposant des autorisations suffisantes pour les affectations de contrôle peut affecter et réaffecter des éléments d’action. Cela permet la gestion centrale des affectations de contrôle et le routage décentralisé des éléments d’action entre les implémenteurs et les testeurs.
 
+Notez que les **actions d’amélioration** dans le score de conformité sont l’équivalent des éléments d' **action** dans le gestionnaire de conformité.
+
 ## <a name="permissions"></a>Autorisations
 
 Le Gestionnaire de conformité utilise un modèle d’autorisation de contrôle d’accès basé sur les rôles. Seuls les utilisateurs dotés d’un rôle d’utilisateur peuvent accéder au Gestionnaire de conformité et les actions autorisées par utilisateur sont limitées par type de rôle. [Afficher un tableau](working-with-compliance-manager.md#permissions) illustrant les actions autorisées pour chaque autorisation.
@@ -120,7 +137,7 @@ L’administrateur du portail du gestionnaire de conformité peut définir des a
 1. Dans le menu déroulant de **plus** haut, sélectionnez **administrateur**, puis **paramètres**.
 2. À partir de là, sélectionnez le rôle que vous souhaitez attribuer, puis ajoutez l’employé que vous souhaitez attribuer à ce rôle. Les utilisateurs peuvent alors effectuer certaines actions.
 
-En outre, les utilisateurs auxquels le [rôle de lecteur global est affecté dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) disposent d’autorisations en lecture seule pour accéder au gestionnaire de conformité. Toutefois, ils ne peuvent pas modifier les données ou effectuer des actions dans le gestionnaire de conformité.
+Les utilisateurs auxquels le [rôle de lecteur global est affecté dans Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) disposent d’autorisations en lecture seule pour accéder au gestionnaire de conformité. Toutefois, ils ne peuvent pas modifier les données ou effectuer des actions dans le gestionnaire de conformité.
 
 Il n’existe plus de rôle d' **accès invité** par défaut. Chaque utilisateur doit se voir attribuer un rôle afin de pouvoir utiliser le Gestionnaire de conformité.
   
@@ -148,13 +165,6 @@ Les modèles préconfigurés inclus dans le gestionnaire de conformité sont les
 12. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (aperçu)
 13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (version préliminaire)
 14. [Base de données de protection des données Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-
-## <a name="compliance-score"></a>Score de conformité
-
-[Microsoft Compliance score (Preview)](compliance-score.md) est une fonctionnalité du centre de conformité Microsoft 365 qui vous aide à comprendre la position de la conformité de votre organisation. Il calcule un score basé sur les risques mesurant votre progression dans la réalisation d’actions qui contribuent à réduire les risques liés à la protection des données et aux normes réglementaires. Connaître votre score de conformité global permet à votre organisation de comprendre et de gérer la conformité. Comprendre [Comment le score de conformité est calculé](compliance-score-methodology.md).
-  
-> [!IMPORTANT]
-> Le score de conformité n’exprime pas une mesure absolue de la conformité de l’organisation avec une norme ou réglementation particulière. Elle exprime la mesure dans laquelle vous avez adopté des contrôles qui peuvent réduire les risques pour les données personnelles et la confidentialité individuelle. Aucun service ne peut garantir la conformité avec une norme ou une réglementation, et le score de conformité ne doit pas être interprété comme une garantie de quelque façon que ce soit.
 
 ## <a name="secure-score-integration"></a>Intégration de la note sécurisée
 

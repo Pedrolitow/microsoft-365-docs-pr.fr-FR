@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Le score de conformité Microsoft aide les organisations à simplifier et à automatiser les évaluations des risques et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635112"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141569"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Score de conformité Microsoft (aperçu)
 
-Le score de conformité Microsoft contribue à simplifier la gestion de la conformité et à réduire les risques de conformité grâce à une expérience conviviale. Le score de conformité est désormais disponible pour la version préliminaire publique dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md).
+Le [score de conformité Microsoft](https://compliance.microsoft.com/compliancescore) contribue à simplifier la gestion de la conformité et à réduire les risques de conformité grâce à une expérience conviviale. Le score de conformité est disponible pour la préversion publique dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md).
 
 **Dans cet article :** Lisez cet article pour comprendre le score de conformité et comment le configurer pour votre organisation.
 
-**En savoir plus sur les mises à jour :** Accédez aux [notes de publication du score de conformité](compliance-score-release-notes.md) pour voir les nouveautés et problèmes connus liés à la version d’évaluation du score de conformité.
+**En savoir plus sur les mises à jour :** Nous avons publié plusieurs mises à jour dans la version d’avril 2020. Consultez les [notes de publication du score de conformité](compliance-score-release-notes.md) pour découvrir les problèmes nouveaux et connus liés à la version d’évaluation du score de conformité.
 
 ## <a name="what-is-compliance-score"></a>Qu’est-ce que le score de conformité
 
@@ -58,7 +58,7 @@ Considérez le score de conformité comme une version simplifiée du gestionnair
 
 Le score de conformité partage le même serveur principal avec le gestionnaire de conformité, de sorte que toutes les données que vous avez peut-être déjà dans le gestionnaire de conformité seront affichées dans le score de conformité.
 
-Lors de la préversion publique, certaines fonctionnalités demeurent uniquement dans le gestionnaire de conformité, telles que la gestion des évaluations et la création de modèles. Nous vous recommandons de commencer toutes les activités de gestion de la conformité dans le score de conformité. Lorsque vous accédez à des fonctions gérées par le gestionnaire de conformité, vous êtes guidé vers cet outil. Pour cette raison, une partie de cette documentation vous dirige vers les rubriques du gestionnaire de conformité.
+Certaines fonctionnalités demeurent uniquement dans le gestionnaire de conformité lors de la préversion publique, comme la gestion des évaluations et la création de modèles. Nous vous recommandons de commencer toutes les activités de gestion de la conformité dans le score de conformité. Lorsque vous accédez à des fonctions gérées par le gestionnaire de conformité, vous serez guidé vers cet outil. Pour cette raison, une partie de cette documentation vous dirige vers les rubriques du gestionnaire de conformité.
 
 En savoir plus sur la relation entre le score de conformité et le gestionnaire de conformité dans les [notes de publication du score de conformité](compliance-score-release-notes.md).
 
@@ -73,13 +73,11 @@ En savoir plus sur [la façon dont votre score de conformité est calculé et su
 
 ## <a name="key-components-controls-assessments-templates-groups"></a>Composants clés : contrôles, évaluations, modèles, groupes
 
-Le score de conformité utilise plusieurs composants pour vous aider à gérer vos activités de conformité. Lorsque vous utilisez le score de conformité pour affecter, tester et surveiller les activités de conformité, il est utile de posséder une compréhension de base de ces composants clés. Ce diagramme montre les relations entre eux :
-
-![Relations dans le gestionnaire de conformité version 3](../media/compliance-manager-relationships.png "Composants du score de conformité")
+Le score de conformité utilise plusieurs composants pour vous aider à gérer vos activités de conformité. Lorsque vous utilisez le score de conformité pour affecter, tester et surveiller les activités de conformité, il est utile de comprendre les principaux composants : contrôles, évaluations, modèles et groupes.
 
 ### <a name="controls"></a>Contrôles
 
-Un contrôle définit le mode d’évaluation et de gestion de la configuration système, du processus organisationnel et de la responsabilité des personnes afin de répondre à une exigence spécifique d’un règlement, d’une stratégie standard ou d’une stratégie interne.
+Un contrôle définit le mode d’évaluation et de gestion de la configuration du système, du processus organisationnel et des personnes chargées de répondre à une exigence spécifique d’un règlement, d’une stratégie standard ou d’une stratégie interne.
 
 Le score de conformité effectue le suivi de deux types de contrôles :
 
@@ -90,9 +88,9 @@ Le score de conformité effectue le suivi de deux types de contrôles :
 
 Une évaluation est une évaluation d’un modèle qui lance le processus de notation pour votre organisation. Les évaluations regroupent les actions nécessaires pour répondre aux exigences d’une norme, d’une réglementation ou d’une loi. Par exemple, vous pouvez avoir une évaluation qui, lorsque vous terminez toutes les actions qu’elle contient, présente vos paramètres Office 365 conformément à la configuration ISO 27001 requise.
 
-Par défaut, le score de conformité fournit à votre organisation une évaluation basée sur la base de données de protection des données Microsoft 365, une recommandation pour la réduction de vos risques de protection et de conformité des données ([en savoir plus](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
+Le score de conformité fournit à votre organisation une évaluation initiale basée sur la base de données de protection des données Microsoft 365. Cette évaluation est une recommandation permettant de réduire les risques de protection et de conformité des données ([en savoir plus](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
-Les évaluations incluent plusieurs composants :
+Les évaluations comportent plusieurs composants :
 
 - **Services dans l’étendue**: l’ensemble spécifique des services Microsoft applicables à l’évaluation
 - **Contrôles gérés par Microsoft**: contrôles mis en œuvre et testés par Microsoft
@@ -102,13 +100,11 @@ Les évaluations incluent plusieurs composants :
 > [!NOTE]
 > Le score de conformité affiche vos évaluations et la façon dont elles font partie de votre score global. Toutefois, pendant la préversion publique, vous serez dirigé vers le gestionnaire de conformité pour gérer vos évaluations.
 
-Afficher des instructions détaillées sur [l’utilisation des évaluations dans le gestionnaire de conformité](working-with-compliance-manager.md#assessments).
+Affichez les instructions détaillées pour [la gestion des évaluations dans le gestionnaire de conformité](working-with-compliance-manager.md#assessments).
 
 ### <a name="templates"></a>Modèles
 
-Le score de conformité fournit des modèles préconfigurés pour les évaluations. Le score de conformité vous permet également de créer des modèles pour vos propres évaluations en fonction de vos besoins. Par exemple, vous pouvez créer un modèle pour votre contrôle de processus d’entreprise ou un modèle pour une norme de conformité et de protection des données régionale qui n’est pas couverte par l’un des modèles préconfigurés.  En créant vos propres modèles, vous pouvez créer des évaluations personnalisées pour vous assurer que le score de conformité suit non seulement les évaluations de Cloud Microsoft, mais également d’autres évaluations des risques dans l’étendue de votre organisation.
-
-Vous pouvez créer des modèles en copiant un modèle existant ou en important des informations de contrôles à partir d’un fichier Excel. Afficher des instructions détaillées sur [la création de modèles dans le gestionnaire de conformité](working-with-compliance-manager.md#templates).
+Le score de conformité fournit des modèles préconfigurés pour les évaluations. Vous pouvez également personnaliser un modèle préconfiguré en ajoutant vos propres contrôles et actions. Par exemple, vous pouvez créer un modèle pour votre contrôle de processus d’entreprise ou un modèle pour une norme de conformité et de protection des données régionale qui n’est pas couverte par l’un des modèles préconfigurés. En plaçant vos propres modèles dans le score de conformité, vous pouvez suivre non seulement les évaluations de Microsoft Cloud, mais également d’autres évaluations des risques dans l’étendue de votre organisation.
 
 Les modèles préconfigurés pour le score de conformité sont les suivants :
 
@@ -130,14 +126,13 @@ Les modèles préconfigurés pour le score de conformité sont les suivants :
 16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
 17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
-> [!NOTE]
-> Lors de la préversion publique, accédez au gestionnaire de conformité pour créer et gérer vos modèles.
+Affichez [des instructions détaillées sur la création de modèles](working-with-compliance-manager.md#templates), qui se produit dans le gestionnaire de conformité.
 
-### <a name="groups"></a>Groupes
+### <a name="groups"></a>Groups
 
 Les groupes vous permettent d’organiser des évaluations de manière logique. Par exemple, vous pouvez choisir de regrouper les évaluations par année, standard de conformité, service, teams au sein de votre organisation ou une autre méthode.
 
-Lorsque deux évaluations différentes dans le même groupe partagent des actions gérées par le client, l’exécution des détails de l’implémentation, des tests et de l’état de l’action dans une évaluation se synchronise automatiquement à la même action dans n’importe quelle autre évaluation dans le groupe. Cela unifie les actions d’amélioration affectées dans le groupe et réduit le travail de duplication.
+Lorsque deux évaluations différentes dans le même groupe partagent des actions gérées par le client, les mises à jour effectuées dans les détails de l’implémentation, les tests et l’état de l’action dans une évaluation sont automatiquement synchronisées avec la même action dans toute autre évaluation du groupe. La synchronisation des actions de cette manière unifie les actions d’amélioration affectées dans le groupe et réduit le travail de duplication.
 
 Découvrez comment [créer des groupes dans le gestionnaire de conformité](working-with-compliance-manager.md#groups). Une fois que vous avez créé des groupes, vous pouvez [filtrer votre tableau de bord de score de conformité](compliance-score-setup.md#filtering-your-dashboard-view) pour afficher votre score par un ou plusieurs groupes.
 

@@ -14,26 +14,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment utiliser les outils de flux de travail dans le score de conformité Microsoft pour vous aider à gérer la conformité de votre organisation.
-ms.openlocfilehash: 046a370fe1294220ee4ee6150311df5f51905674
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fe36f0cdf5e204e0fa6150141cc348b0d0e325f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601191"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142585"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Utilisation du score de conformité Microsoft (aperçu)
 
-## <a name="managing-your-workflow-with-improvement-actions"></a>Gestion de votre flux de travail avec des actions d’amélioration
+Cet article explique comment utiliser les éléments clés du score de conformité. Vous apprendrez à utiliser les **actions d’amélioration** pour gérer votre flux de travail de conformité. Vous apprendrez également à utiliser les informations de vos **solutions** et des pages d' **évaluation** , et à créer des rapports.
 
-L’utilisation d’actions d’amélioration dans le score de conformité centralise vos flux de travail de conformité. Les actions d’amélioration suggèrent des actions recommandées pour s’aligner sur les normes et réglementations en matière de protection des données, et fournissent des conseils détaillés. Vous pouvez les affecter aux utilisateurs pour effectuer les opérations d’implémentation et de test nécessaires. Vous pouvez également stocker la documentation et les notes, et enregistrer les mises à jour de l’État directement dans l’action d’amélioration proprement dite.
+## <a name="manage-your-workflow-with-improvement-actions"></a>Gérer votre flux de travail avec des actions d’amélioration
+
+Les **actions d’amélioration** centralisent vos activités de conformité. Chaque action d’amélioration fournit des conseils détaillés sur la mise en œuvre pour vous aider à vous aligner sur les normes et réglementations sur la protection des données. Des actions peuvent être attribuées à des utilisateurs de votre organisation pour effectuer le travail d’implémentation et de test. Vous pouvez également stocker la documentation, les notes et les mises à jour de l’état des enregistrements au cours de l’action d’amélioration.
 
 ## <a name="view-your-improvement-actions"></a>Afficher vos actions d’amélioration
 
 Le tableau de bord de score de conformité affiche vos **actions d’amélioration clés**, c’est-à-dire celles dont les points sont les plus disponibles et qui traitent des problèmes les plus importants.
 
-Pour afficher toutes vos actions d’amélioration, sélectionnez l’onglet **actions d’amélioration** de votre tableau de bord ou sélectionnez **afficher toutes les actions d’amélioration** sous la liste des actions d’amélioration de clé dans votre tableau de bord. Cela vous amène à la page **actions d’amélioration** , qui vous permet d’afficher toutes les actions d’amélioration de votre organisation.
+Pour afficher toutes vos actions d’amélioration sur votre page **actions d’amélioration** , sélectionnez l’onglet actions d' **amélioration** de votre tableau de bord. Sinon, sélectionnez **afficher toutes les actions d’amélioration** sous la liste des actions d’amélioration de clé sur votre tableau de bord.
 
-Si vous avez une longue liste d’actions, il peut être utile de filtrer votre vue. Pour ce faire, sélectionnez **filtre** dans le coin supérieur droit de la liste actions. Lorsque le volet flyout **filtres** apparaît, sélectionnez les critères souhaités en fonction des réglementations, des normes, de la solution et du groupe. Vous pouvez également personnaliser votre affichage en sélectionnant **groupe** dans le coin supérieur droit et, dans le menu déroulant, sélectionnez pour afficher par groupe, solution, catégorie, type d’action ou état.
+Si vous avez une longue liste d’actions, il peut être utile de filtrer votre vue. Sélectionnez **filtre** dans le coin supérieur droit de la liste actions. Lorsque le volet flyout **filtres** apparaît, sélectionnez vos critères en fonction des réglementations, des normes, de la solution et du groupe. Vous pouvez également personnaliser votre affichage en sélectionnant **groupe** dans le coin supérieur droit. Dans le menu déroulant, sélectionnez pour afficher par groupe, solution, catégorie, type d’action ou état.
 
 L’affichage par défaut de cette page n’affiche pas les actions d’amélioration dont l’état de test est **réussite**. Pour afficher les actions qui ont été testées, activez la case à cocher **passé** dans le volet flyout **filtres** . Uniquement les actions dont l’état de test est **passé** vers votre score.
 
@@ -56,9 +58,9 @@ La page actions d’amélioration affiche les points de données suivants pour c
 
 ### <a name="improvement-actions-details"></a>Détails des actions d’amélioration
 
-Chaque action d’amélioration dispose d’une page de détails. Cette page contient des instructions d’implémentation détaillées, qui expliquent comment effectuer les actions recommandées pour répondre aux exigences de conformité et aux normes associées indiquées dans la rubrique **at a Glance** Header.
+Chaque action d’amélioration dispose d’une page de détails. Cette page contient des instructions d’implémentation détaillées pour effectuer les actions recommandées afin de répondre aux exigences de conformité et aux normes associées indiquées dans l’en-tête d' **un coup d’œil** .
 
-La page de détails est l’endroit où vous pouvez lancer l’action recommandée ou attribuer le travail à un autre utilisateur, mettre à jour l’État et joindre des notes et de la documentation.
+La page Détails est l’endroit où vous pouvez lancer l’action recommandée. Vous pouvez également attribuer le travail à un autre utilisateur, mettre à jour l’État et joindre des notes et de la documentation.
 
 Pour afficher la page de détails d’une action d’amélioration :
 
@@ -73,7 +75,7 @@ Pour commencer la mise en œuvre d’une action d’amélioration, vous pouvez e
 
 - Le propriétaire d’une stratégie d’entreprise
 - Un ingénieur informatique
-- Un autre employé responsable de l’exécution de la tâche 
+- Un autre employé responsable de l’exécution de la tâche
 
 Une fois que la personne appropriée est identifiée, assurez-vous qu’elle détient un [rôle](compliance-score-setup.md#set-user-permissions-and-assign-roles) suffisant dans le score de conformité (administrateur de conformité, administrateur des données de conformité, administrateur de la sécurité ou administrateur général) pour effectuer le travail, puis procédez comme suit : 
 
@@ -87,7 +89,7 @@ L’utilisateur affecté peut alors effectuer les actions recommandées décrite
 
 ## <a name="perform-work-and-store-documentation"></a>Effectuer une documentation de travail et de magasin
 
-Lorsque vous effectuez l’implémentation, vous pouvez télécharger des fichiers et des notes directement à l’aide de la section **Notes et documentation** . Cela fournit un référentiel centralisé sécurisé pour vous aider à démontrer la satisfaction des contrôles pour respecter les normes et réglementations en matière de conformité. Tout utilisateur disposant d’un accès en lecture seule peut lire le contenu de cette section. La possibilité de télécharger, de télécharger ou de supprimer des champs, ou d’entrer ou de modifier des notes, est limitée aux rôles avec des droits d’édition.
+Lorsque vous effectuez l’implémentation, vous pouvez télécharger des fichiers et des notes directement à l’aide de la section **Notes et documentation** .  Cet environnement est un référentiel centralisé sécurisé qui vous permet de démontrer la satisfaction des contrôles pour répondre aux normes et réglementations en matière de conformité. Tout utilisateur disposant d’un accès en lecture seule peut lire le contenu de cette section. Seuls les utilisateurs disposant de droits de modification peuvent télécharger et télécharger des fichiers et entrer ou modifier des notes.
 
 Les champs de la section **Notes et documentation sont les** suivants :
 
@@ -104,7 +106,7 @@ Les champs de la section **Notes et documentation sont les** suivants :
 
 **Implémentation, test et notes supplémentaires**
 
-- Pour ajouter des notes dans l’un de ces trois champs, sélectionnez **modifier les notes d’implémentation** sous l’un des champs thse.
+- Pour ajouter des notes dans l’un de ces champs, sélectionnez **modifier les notes de mise en œuvre** sous l’un de ces champs.
 - Lorsque le volet flyout s’ouvre, entrez des notes dans le champ texte, puis sélectionnez **enregistrer et fermer**.
 - Pour modifier des notes, sélectionnez **modifier les notes d’implémentation**, apporter vos modifications, puis cliquez sur **enregistrer et fermer**.
 
@@ -157,7 +159,7 @@ La page solutions indique le partage des points gagnés et potentiels, tel qu’
 
 ### <a name="filtering-your-solutions-view"></a>Filtrage de l’affichage des solutions
 
-Pour filtrer les solutions, procédez comme suit : 
+Pour filtrer les solutions, procédez comme suit :
 
 1. Sélectionnez **filtre** dans le coin supérieur gauche de votre liste évaluations.
 2. Dans le volet des **filtres** de menu volant, activez les cases à cocher en regard des critères de votre choix (normes et réglementations, solution, type d’action, groupe du gestionnaire de conformité, catégorie).
@@ -167,13 +169,13 @@ Vous pouvez également modifier votre vue pour afficher les évaluations par gro
 
 ### <a name="taking-actions-from-the-solutions-page"></a>Exécution d’actions à partir de la page solutions
 
-La page solutions affiche les solutions de votre organisation qui sont connectées à des actions d’amélioration. Le tableau répertorie chaque contribution de chaque solution à votre score global, les points d’amélioration de score obtenus et possibles au sein de cette solution, ainsi que le nombre d’actions d’amélioration restantes regroupées dans cette solution qui peuvent augmenter votre score. 
+La page solutions affiche les solutions de votre organisation qui sont connectées à des actions d’amélioration. Le tableau répertorie chaque contribution de chaque solution à votre score global, les points d’amélioration de score obtenus et possibles au sein de cette solution, ainsi que le nombre d’actions d’amélioration restantes regroupées dans cette solution qui peuvent augmenter votre score.
 
 Il existe deux façons d’effectuer une action à partir de cet écran :
 
-1. Sur la ligne de la solution souhaitée, sous la colonne **actions restantes** , cliquez ou appuyez sur le numéro du lien hypertexte. Cette action vous permet d’accéder à une vue filtrée de l’écran actions d’amélioration affichant les actions d’amélioration non testées pour cette solution.
+1. Sur la ligne de la solution souhaitée, sous la colonne **actions restantes** , sélectionnez le numéro du lien hypertexte. Vous verrez une vue filtrée de l’écran actions d’amélioration montrant les actions d’amélioration non testées pour cette solution.
 
-2. Sur la ligne de la solution voulue, sous la colonne **ouvrir une solution** , sélectionnez **ouvrir**. Vous accédez à la solution ou à l’emplacement dans les centres de sécurité et de conformité de Microsoft 365 et Office 365, où vous pouvez prendre l’action recommandée.
+2. Sur la ligne de la solution voulue, sous la colonne **ouvrir une solution** , sélectionnez **ouvrir**. Vous verrez la solution ou l’emplacement dans les centres de sécurité et de conformité Microsoft 365 et Office 365, où vous pouvez prendre l’action recommandée.
 
 ## <a name="assessments-page"></a>Page évaluations
 
@@ -185,7 +187,7 @@ Sur cette page, vous pouvez rapidement afficher des informations importantes sur
 
 - **État**: l’État vers la fin de toutes les actions d’amélioration dans l’évaluation est défini comme suit :
     - **Non conforme**: les actions d’amélioration dans l’évaluation n’ont pas été mises en œuvre et testées avec succès ; le travail n’a pas encore commencé
-    - **En cours**: le travail est en cours lors de l’implémentation ou du test des actions d’amélioration ; Cela peut signifier, par exemple, qu’une action d’amélioration apportée à l’évaluation a été affectée au travail, qu’elle est en cours d’implémentation et de test.
+    - **En cours**: le travail est en cours lors de l’implémentation ou du test des actions d’amélioration ; par exemple, une action d’amélioration dans l’évaluation a été affectée au travail, est en cours d’implémentation et de test.
 - **Avancement**de l’évaluation : pourcentage du travail effectué jusqu’à la fin de l’évaluation finale, mesuré par le nombre de contrôles correctement testés.
 - **Actions gérées par le client**: nombre d’actions terminées pour répondre à l’implémentation de vos contrôles gérés par le client
 - **Actions gérées par Microsoft**: nombre d’actions terminées pour répondre à l’implémentation des contrôles gérés par Microsoft
@@ -195,15 +197,15 @@ Sur cette page, vous pouvez rapidement afficher des informations importantes sur
 
 ### <a name="default-assessments"></a>Évaluations par défaut
 
-Par défaut, l’évaluation de la base de données de protection des données Microsoft 365 s’affiche sur la page évaluations. Le score de conformité fournit également plusieurs évaluations prédéfinies ([afficher la liste complète](compliance-score.md#templates)). Si vous souhaitez ajouter d’autres évaluations afin de répondre à des réglementations et des normes supplémentaires, vous pouvez le faire dans le gestionnaire de conformité.
+Par défaut, l’évaluation de la base de données de protection des données Microsoft 365 s’affiche sur la page évaluations. Le score de conformité fournit également plusieurs évaluations préconfigurées ([afficher la liste complète](compliance-score.md#templates)). Vous pouvez ajouter d’autres évaluations afin de répondre à des réglementations et des normes supplémentaires dans le gestionnaire de conformité.
 
 ### <a name="managing-assessments"></a>Gestion des évaluations
 
-Lors de la préversion publique, les fonctionnalités d’affichage, de création, d’exportation et d’archivage sont conservées dans l’outil Gestionnaire de conformité. 
+Lors de la préversion publique, vous accédez à l’outil Gestionnaire de conformité pour créer, personnaliser et gérer vos évaluations.
 
-Pour gérer vos évaluations, sélectionnez **gérer les évaluations dans le gestionnaire de conformité** en haut de la liste évaluations.
+Sur la page **évaluations** du score de conformité, sélectionnez **gérer les évaluations dans le gestionnaire de conformité** en haut de votre liste des évaluations. Ce lien vous dirige vers le tableau de bord **évaluations** dans le gestionnaire de conformité.
 
-Le premier lien en haut de la liste des évaluations, **actions Microsoft dans le gestionnaire de conformité**, vous permet d’accéder à la page du gestionnaire de conformité affichant les contrôles Microsoft qui contribuent à votre score de conformité.
+Le premier lien en haut de la liste des évaluations, **actions Microsoft dans le gestionnaire de conformité**, vous permet d’accéder à votre tableau de bord informations sur les **contrôles** dans le gestionnaire de conformité et affichant les contrôles Microsoft qui contribuent à votre score de conformité.
 
 ### <a name="filtering-your-assessments-view"></a>Filtrage de l’affichage des évaluations
 
@@ -221,6 +223,11 @@ Dans la liste évaluation, sous la colonne **actions gérées par le client** , 
 
 ## <a name="reporting"></a>Reporting
 
-Vous pouvez exporter un rapport de toutes vos actions d’amélioration dans le score de conformité. Dans la page **actions d’amélioration** , sélectionnez **Exporter** dans le coin supérieur gauche de votre écran, au-dessus de votre liste d’actions. Cette opération génère une feuille de calcul Excel avec toutes vos actions d’amélioration et les catégories de filtre indiquées dans la page **actions d’amélioration** , que vous pouvez afficher et enregistrer sur votre ordinateur local.
+Vous pouvez exporter un rapport de toutes vos actions d’amélioration dans le score de conformité. Dans la page **actions d’amélioration** , sélectionnez **Exporter** dans le coin supérieur gauche de votre écran, au-dessus de votre liste d’actions. Cette opération génère une feuille de calcul Excel avec toutes vos actions d’amélioration et les catégories de filtre indiquées dans la page **actions d’amélioration** .
 
-Vous pouvez également exporter un rapport à partir du gestionnaire de conformité. Dans le gestionnaire de conformité, accédez à l’onglet **paramètres** et sélectionnez **Exporter** dans la partie supérieure droite de l’écran. Cela génère une feuille de calcul Excel que vous pouvez afficher et enregistrer.
+Vous pouvez également exporter un rapport à partir du gestionnaire de conformité en procédant comme suit :
+
+1. Dans le gestionnaire de conformité, accédez à votre tableau de bord informations sur les **contrôles** .
+2. Vous verrez un onglet **évaluation** et un onglet **modèle** .  
+3. Pour exporter une évaluation : sélectionnez l’onglet **évaluation** . Utilisez les menus déroulants **groupe** et **évaluation** pour sélectionner l’évaluation à exporter. Sélectionnez **Exporter** vers le haut à droite de l’écran. Un fichier Excel est téléchargé. Elle inclut une liste d’actions, regroupées par contrôle, avec vos informations d’implémentation et de test.
+4. Pour exporter un modèle : sélectionnez l’onglet **modèle** , puis choisissez le modèle à exporter dans le menu déroulant **modèle** . Sélectionnez **Exporter** vers le haut à droite de l’écran. Un fichier Excel est téléchargé. Elle inclut une liste d’actions, regroupées par contrôle, avec vos informations d’implémentation et de test.

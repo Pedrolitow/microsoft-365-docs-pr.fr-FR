@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment migrer des paramètres et des fichiers utilisateur.
-ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085286"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113540"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Étape 4 : migration des paramètres et des fichiers utilisateur
 
@@ -49,7 +49,7 @@ Pour décider ce qu’il faut conserver lors du transfert vers un nouveau PC ou 
 
 La disponibilité ou non-disponibilité de cette option dans votre organisation dépend de l’échelle de la migration planifiée. Elle est clairement limitée par le temps et les raisons physiques impliquées dans le travail direct avec les utilisateurs pour comprendre leurs besoins, copier les fichiers vers leur nouveau PC ou leur PC mis à jour récemment.
 
-Si vous optez pour une migration manuelle, vous devez évaluer si vous pourrez terminer la tâche d’ici janvier 2020, lorsque la prise en charge de Windows 7 prendra fin. Si vous en doutez, envisagez d’utiliser l’une des options automatisées ci-après ou demandez de l’aide à d’autres personnes.
+Si vous optez pour une migration manuelle, examinez l’une des options automatisées ci-dessous ou demandez à d’autres personnes de vous aider.
 
 ## <a name="automated-migration-using-usmt"></a>Migration automatisée à l’aide d’USMT 
 
@@ -89,8 +89,8 @@ Windows 10 inclut de nombreuses applications intégrées utiles dans le cadre d
 
 ## <a name="next-step"></a>Étape suivante
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[Étape 5 : considérations relatives à la sécurité et à la conformité](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[Étape 5 : considérations relatives à la sécurité et à la conformité](https://aka.ms/mdd5)
 
 ## <a name="previous-step"></a>Étape précédente
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[Étape 3 : livraison d’Office et d’applications métier](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[Étape 3 : livraison d’Office et d’applications métier](https://aka.ms/mdd3)

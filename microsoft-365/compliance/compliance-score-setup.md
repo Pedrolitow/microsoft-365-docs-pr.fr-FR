@@ -13,13 +13,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment vous connecter, configurer des autorisations et comprendre votre tableau de bord pour le score de conformité Microsoft, ce qui vous permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Découvrez comment configurer et commencer à utiliser le score de conformité Microsoft, ce qui permet de simplifier et d’automatiser les évaluations des risques.
+ms.openlocfilehash: 334eb47ebf5057bfa1c426715e8f404979ceaf5b
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635122"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141519"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Programme d’installation du score de conformité Microsoft (aperçu)
 
@@ -32,15 +32,17 @@ L’administrateur général de Microsoft 365 de votre organisation sera probabl
 1. Accédez au [Centre de conformité microsoft 365](https://compliance.microsoft.com/) et **Connectez-vous** à l’aide de votre compte d’administrateur global Microsoft 365.
 2. Sélectionnez **score de conformité** dans le volet de navigation de gauche. Vous devez ensuite voir votre [tableau de bord de score de conformité avec votre score](#understand-the-compliance-score-dashboard).
 
+Le lien direct vers le score de conformité à [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore)Access est :.
+
 ## <a name="set-user-permissions-and-assign-roles"></a>Définir les autorisations utilisateur et affecter des rôles
 
 Le score de conformité utilise un modèle d’autorisation de contrôle d’accès basé sur un rôle (RBAC). Seuls les utilisateurs auxquels un rôle est attribué peuvent accéder au score de conformité, et les actions autorisées par chaque utilisateur sont restreintes par type de rôle.
 
 ### <a name="where-to-set-permissions"></a>Où définir les autorisations
 
-L’administrateur général de votre organisation peut définir des autorisations utilisateur dans le centre de conformité Microsoft 365 ou dans Azure Active Directory (Azure AD). Une fois les rôles définis dans l’un de ces emplacements, les utilisateurs peuvent accéder au score de conformité (ainsi qu’au gestionnaire de conformité).
+L’administrateur général de votre organisation peut définir des autorisations utilisateur dans le centre de conformité Microsoft 365 ou dans Azure Active Directory (Azure AD). Une fois les rôles définis dans l’un de ces emplacements, les utilisateurs peuvent accéder au score de conformité ainsi qu’au gestionnaire de conformité.
 
-Notez que les rôles du gestionnaire de conformité existants **ne sont pas** transférés vers le score de conformité.  Cela signifie que si vous avez déjà affecté un rôle dans le gestionnaire de conformité, ce rôle ne vous accordera pas l’accès au score de conformité. Votre administrateur global devra définir des autorisations et un rôle pour vous dans le centre de conformité Microsoft 365 ou Azure AD pour pouvoir accéder au score de conformité.
+Notez que les rôles du gestionnaire de conformité existants **ne sont pas** transférés vers le score de conformité. Si vous avez un rôle dans le gestionnaire de conformité et que vous débutez avec le score de conformité, votre rôle de gestionnaire de conformité ne vous permettra pas d’accéder au score de conformité. Votre administrateur global devra définir des autorisations et un rôle pour vous dans le centre de conformité Microsoft 365 ou Azure AD pour pouvoir accéder au score de conformité.
 
 ### <a name="role-types"></a>Types de rôles
 
@@ -68,7 +70,7 @@ Pour définir des autorisations dans le centre de conformité Microsoft 365 :
 
 ## <a name="configure-automatic-secure-score-updates"></a>Configurer les mises à jour automatiques du score de sécurité
 
-Par défaut, les mises à jour automatiques des [scores sécurisés](../security/mtp/microsoft-secure-score.md) sont activées pour tous les nouveaux clients. Cela signifie que toutes les actions qui sont surveillées par le score sécurisé mettent automatiquement à jour l’état de la même action dans le score de conformité.
+Par défaut, les mises à jour automatiques des [scores sécurisés](../security/mtp/microsoft-secure-score.md) sont activées pour tous les nouveaux clients. Toutes les actions surveillées par le score sécurisé mettent automatiquement à jour l’état de la même action dans le score de conformité.
 
 Votre administrateur général peut gérer ce paramètre pour désactiver les mises à jour automatiques pour toutes les actions ou définir des mises à jour pour les actions individuellement.
 
@@ -84,7 +86,7 @@ Pour gérer les mises à jour automatiques du score de sécurité, procédez com
 
 Si vous choisissez **définir par action,** suivez ces étapes supplémentaires pour activer les mises à jour du score de sécurité pour des actions individuelles :
 
-4. Sélectionnez **Gestionnaire de conformité** dans le menu supérieur (Remarque : ne sélectionnez pas « gestionnaire de conformité (classique) »).
+4. Sélectionnez **Gestionnaire de conformité** dans le menu supérieur (ne sélectionnez pas le gestionnaire de conformité (classique), qui est un produit hérité).
 
 5. Sélectionnez **gestion des clients** dans le coin supérieur droit de votre écran.
 
@@ -106,7 +108,7 @@ Le tableau de bord de score de conformité est conçu pour vous offrir une vue i
 
 ### <a name="overall-compliance-score"></a>Score de conformité global
 
-Votre score de conformité, présenté en évidence en haut, indique un pourcentage basé sur les points qui sont parfaits pour terminer les actions d’amélioration en fonction des normes et des réglementations clés en matière de protection des données.
+Votre score de conformité est bien visible en haut. Elle indique un pourcentage basé sur des points réalisables pour effectuer les actions d’amélioration qui répondent aux normes et réglementations clés en matière de protection des données.
 
 Lorsque vous accédez au score de conformité pour la première fois, votre score initial est basé sur la base de données de protection des données Microsoft 365 intégrée, un ensemble de contrôles qui inclut des normes et des réglementations industrielles communes. Étant donné que le score de conformité analyse votre système de solutions Microsoft 365 existantes, il fournit une évaluation initiale de votre position de conformité en fonction des paramètres de confidentialité et de sécurité actuellement activés par votre organisation.
 
@@ -114,11 +116,11 @@ Lorsque vous accédez au score de conformité pour la première fois, votre scor
 
 ### <a name="key-improvement-actions"></a>Actions d’amélioration clés
 
-Cette section répertorie les principales actions d’amélioration que vous pouvez effectuer dès à présent pour tirer le plus grand impact positif sur votre score de conformité global. Il répertorie les actions qui ne sont pas terminées ou qui ont échoué avec l’évaluation avec des risques élevés.
+Cette section répertorie les principales actions d’amélioration que vous pouvez effectuer dès à présent pour tirer le plus grand impact positif sur votre score de conformité global.
 
 ### <a name="solutions-that-affect-your-score"></a>Solutions ayant une incidence sur votre score
 
-Cette section présente les solutions qui contiennent des actions les plus susceptibles d’avoir un impact positif sur votre score, ainsi que le nombre d’actions d’amélioration en suspens dans chaque solution.
+Cette section présente les solutions qui contiennent les actions les plus précieuses pour avoir un impact positif sur votre score, ainsi que le nombre d’actions d’amélioration en suspens dans chaque solution.
 
 ### <a name="compliance-score-breakdown"></a>Répartition du score de conformité
 
@@ -134,9 +136,9 @@ Vous pouvez filtrer votre vue de tableau de bord pour n’afficher que les élé
 Pour appliquer des filtres :
 
 1. Sélectionnez **filtre** dans le coin supérieur droit du tableau de bord.
-2. Sélectionnez vos critères de filtre dans le volet **filtres** de menu volant, puis sélectionnez **appliquer**.
+2. Sélectionnez vos critères de filtre dans le volet flyout **filtres** , puis sélectionnez **appliquer**.
 
-Une fois qu’un filtre est appliqué, votre score est ajusté en temps réel. Le pourcentage du score de conformité et les informations de répartition, ainsi que les actions et les solutions d’amélioration, ne concernent désormais que les données couvertes par vos critères de filtre. Si vous vous déconnectez du score de conformité, l’affichage filtré reste lorsque vous vous reconnectez.
+Une fois que vous avez appliqué un filtre, vous verrez votre score ajusté en temps réel. Le pourcentage du score de conformité et les informations de répartition, ainsi que les actions et les solutions d’amélioration, ne concernent désormais que les données couvertes par vos critères de filtre. Si vous vous déconnectez du score de conformité, l’affichage filtré reste lorsque vous vous reconnectez.
 
 Pour supprimer des filtres :
 

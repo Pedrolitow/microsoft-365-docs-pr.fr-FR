@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Mises à niveau automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
-ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085619"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113480"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Mises à niveau locales automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
 
-À partir du 14 janvier 2020, les mises à jour de sécurité ou la prise en charge des PC exécutant Windows 7 ne seront plus fournies. Avec quelques mois pour passer de Windows 7 vers Windows 10 et face à plusieurs options de déploiement, une question fréquente dans la communauté informatique est la suivante : «quel est le moyen le plus rapide de migrer Windows 7 vers Windows 10 ?» La réponse est d’effectuer des mises à niveau locales pour les PC existants, vous pouvez ainsi réduire le focus sur plusieurs aspects du processus de déploiement de bureau.
+Depuis le 14 janvier 2020, les mises à jour de sécurité ou la prise en charge des PC exécutant Windows 7 ne sont plus fournies. Pour la migration de Windows 7 vers Windows 10 avec plusieurs options de déploiement, une question fréquente dans la communauté informatique est la suivante : «quel est le moyen le plus rapide de migrer Windows 7 vers Windows 10 ?» La réponse est d’effectuer des mises à niveau locales pour les PC existants, vous pouvez ainsi réduire le focus sur plusieurs aspects du processus de déploiement de bureau.
 
 <center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
@@ -38,7 +38,7 @@ Les tâches grisées dans l’image de la roue du processus de déploiement ci-d
 
 ## <a name="in-place-upgrade-reliability-safeguards-and-scale"></a>Fiabilité de la mise à niveau locale, sécurité et évolutivité
 
-Les mises à niveau sur place vers Windows 10 constituent une approche fiable pour déplacer un appareil existant exécutant Windows 7 ou une version ultérieure vers Windows 10, sans nécessiter de migration de fichiers ou de réinstallation d’applications. Après une mise à niveau sur place, les fichiers, paramètres et applications disponibles de l’utilisateur sont cohérents avec l’installation précédente de Windows 7. Même si vous souhaitez profiter de l’occasion pour faire le tri dans vos applications ou paramètres, comme nous nous rapprochons de la date de fin de validité de Windows 7 en janvier 2020, il n’y a plus beaucoup de temps pour chercher d’autres options. Les mises à niveau fonctionnent également lorsque vous passez d’une architecture similaire (32 bits à 32 bits ou 64 bits à 64 bits) et des éditions similaires à celles de Windows (Professionnel vers Pro ou Entreprise à Entreprise).
+Les mises à niveau sur place vers Windows 10 constituent une approche fiable pour déplacer un appareil existant exécutant Windows 7 ou une version ultérieure vers Windows 10, sans nécessiter de migration de fichiers ou de réinstallation d’applications. Après une mise à niveau sur place, les fichiers, paramètres et applications disponibles de l’utilisateur sont cohérents avec l’installation précédente de Windows 7. Les mises à niveau fonctionnent également lorsque vous passez d’une architecture similaire (32 bits à 32 bits ou 64 bits à 64 bits) et des éditions similaires à celles de Windows (Professionnel vers Pro ou Entreprise à Entreprise).
 
 Par défaut, le processus de mise à niveau sauvegarde votre installation précédente de Windows dans le cadre de la mise à niveau, par conséquent, en cas d’échec de la mise à niveau ou si un appareil ou une application ne fonctionne pas correctement après la mise à niveau, l’ordinateur peut revenir à Windows 7. Les Pc mis à jour par défaut disposent de 10 jours pour vous permettre de relancer manuellement une restauration vers Windows 7 si nécessaire.
 
@@ -106,4 +106,4 @@ Les résultats des journaux eux-mêmes sont les suivants :
 
 Une fois que vous avez déployé des séquences de mise en cache préalables avec des analyses de compatibilité sur un grand nombre de PC dans une collection, vous pouvez commencer à analyser les fichiers journaux pour la préparation de l’appareil. En utilisant les résultats répertoriés ci-dessus, \#1 (0xC1900210) peut être défini comme «prêt pour le déploiement» et \# 4 (0xC190020E) peuvent être actionnés en libérant de l’espace disque. Dans ce cas, vous devez prendre en considération les éléments à supprimer ; Windows Update cleanup, corbeille et Fichiers temporaires sont des lieux de démarrage, et de nombreux cas fournissent suffisamment d’espace pour assurer la réussite de la mise à niveau. Vous pouvez exécuter l’analyse de compatibilité autant de fois que nécessaire jusqu’à ce que le PC soit disponible pour la mise à niveau sur place. Pour plus d’informations sur les options de ligne de commande du programme d’installation de Windows, voir <https://aka.ms/setupswitches>
 
-## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[Desktop Deployment Center](https://aka.ms/howtoshift)
+## <a name="desktop-deployment-center"></a>[Desktop Deployment Center](https://aka.ms/howtoshift)
