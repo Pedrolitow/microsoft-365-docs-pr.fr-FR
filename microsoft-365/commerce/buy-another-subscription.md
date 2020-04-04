@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Découvrez comment acheter un autre abonnement Office 365 pour entreprise pour votre organisation lorsque vous disposez déjà d’un abonnement. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354645"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142262"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>Acheter un autre abonnement Office 365 pour les entreprises
 
@@ -41,30 +41,27 @@ Après avoir acheté un nouvel abonnement, vous devez attribuer aux utilisateurs
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
+1. Dans le centre d’administration, accédez à la page **facturation ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">services d’achat</a> de **facturation** \> .
+2. Dans la page **Acheter des services**, sélectionnez l’abonnement que vous souhaitez acheter, puis sélectionnez **Acheter**.
 
-2. Dans la page **acheter des services** , sélectionnez l’abonnement que vous souhaitez acheter, puis sélectionnez **acheter**.
+3. Entrez le nombre de licences utilisateur dont vous avez besoin, puis choisissez si vous souhaitez régler de façon mensuelle ou annuelle. Choisissez si vous souhaiter attribuer automatiquement des licences à tous vos utilisateurs qui n’en ont pas actuellement. Puis sélectionnez **Payer maintenant**.
 
-3. Entrez le nombre de licences dont vous avez besoin et indiquez si vous devez payer chaque mois ou pour l’ensemble de l’année. Indiquez si vous souhaitez attribuer automatiquement des licences à toutes les personnes qui ne disposent pas d’une licence. Ensuite, sélectionnez **extraire**.
+4. Votre panier s’affiche. Si votre panier disparaît de l’écran, sélectionnez **panier** pour l’afficher de nouveau, vérifiez votre commande, puis sélectionnez **Validation de la commande**.
 
-4. Votre panier s'ouvre. Si votre chariot disparaît de l’écran, sélectionnez **panier** pour le rouvrir, vérifiez l’ordre, puis sélectionnez **extraire**.
+5. Vérifiez les informations concernant le tarif et sélectionnez **Suivant**.
 
-5. Passez en revue les informations de tarification, puis sélectionnez **suivant**.
-
-6. Fournissez vos informations de paiement, puis sélectionnez passer la **commande** \> **sur Accueil de l’administration**.
+6. Renseignez vos informations de paiement, puis sélectionnez **Passer la commande** \> **Accéder à la Page d’accueil Administrateur**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
-2. Sur la page **abonnement** , sélectionnez **Ajouter des abonnements**.
+2. Sur la page **Abonnements**, sélectionnez **Ajouter des abonnements**.
 
-    Vous verrez les abonnements disponibles pour votre organisation. Tous les abonnements que vous avez achetés sont identifiés comme suit.
+    Vous verrez alors les abonnements disponibles pour votre organisation. Tous les abonnements que vous avez achetés sont identifiés comme suit.
 
     ![Bannière indiquant qu’un abonnement a déjà été acheté pour cette organisation.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
@@ -72,25 +69,25 @@ Après avoir acheté un nouvel abonnement, vous devez attribuer aux utilisateurs
 
     ![Lien acheter maintenant sur la page acheter des services du centre d’administration Microsoft 365.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
-4. Entrez le nombre de licences utilisateur dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’ensemble de l’année, puis sélectionnez **Ajouter au panier**.
+4. Entrez le nombre de licences utilisateur dont vous avez besoin, choisissez si vous souhaitez régler de façon mensuelle ou annuelle, puis sélectionnez **Ajouter au panier**.
 
-5. Votre panier s'ouvre. Si votre chariot disparaît de l’écran, sélectionnez **panier** pour le rouvrir, vérifiez l’ordre, puis sélectionnez **extraire**.
+5. Votre panier s’affiche. Si votre panier disparaît de l’écran, sélectionnez **panier** pour l’afficher de nouveau, vérifiez votre commande, puis sélectionnez **Validation de la commande**.
 
-6. Passez en revue les informations de tarification, puis sélectionnez **suivant**.
+6. Vérifiez les informations concernant le tarif et sélectionnez **Suivant**.
 
-7. Fournissez vos informations de paiement, puis sélectionnez **passer une commande**.
+7. Entrez vos informations de paiement, puis sélectionnez **Passer la commande**.
 
-8. Sur la page confirmation, sélectionnez **accéder à la page d’accueil de l’administrateur**.
+8. Sur la page de confirmation, sélectionnez **Accédez à la page d'accueil Administrateur**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
-2. Sur la page **abonnement** , sélectionnez **Ajouter des abonnements**.
+2. Sur la page **Abonnements**, sélectionnez **Ajouter des abonnements**.
 
-    Vous verrez les abonnements disponibles pour votre organisation. Tous les abonnements que vous avez achetés sont identifiés comme suit.
+    Vous verrez alors les abonnements disponibles pour votre organisation. Tous les abonnements que vous avez achetés sont identifiés comme suit.
 
     ![Bannière indiquant qu’un abonnement a déjà été acheté pour cette organisation.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
@@ -98,18 +95,17 @@ Après avoir acheté un nouvel abonnement, vous devez attribuer aux utilisateurs
 
     ![Lien acheter maintenant sur la page acheter des services du centre d’administration Microsoft 365.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
-4. Entrez le nombre de licences utilisateur dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’ensemble de l’année, puis sélectionnez **Ajouter au panier**.
+4. Entrez le nombre de licences utilisateur dont vous avez besoin, choisissez si vous souhaitez régler de façon mensuelle ou annuelle, puis sélectionnez **Ajouter au panier**.
 
-5. Votre panier s'ouvre. Si votre chariot disparaît de l’écran, sélectionnez **panier** pour le rouvrir, vérifiez l’ordre, puis sélectionnez **extraire**.
+5. Votre panier s’affiche. Si votre panier disparaît de l’écran, sélectionnez **panier** pour l’afficher de nouveau, vérifiez votre commande, puis sélectionnez **Validation de la commande**.
 
-6. Passez en revue les informations de tarification, puis sélectionnez **suivant**.
+6. Vérifiez les informations concernant le tarif et sélectionnez **Suivant**.
 
-7. Fournissez vos informations de paiement, puis sélectionnez **passer une commande**.
+7. Entrez vos informations de paiement, puis sélectionnez **Passer la commande**.
 
-8. Sur la page confirmation, sélectionnez **accéder à la page d’accueil de l’administrateur**.
+8. Sur la page de confirmation, sélectionnez **Accédez à la page d'accueil Administrateur**.
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>Articles connexes
 

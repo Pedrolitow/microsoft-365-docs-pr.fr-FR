@@ -22,18 +22,20 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Changez manuellement les abonnements Office 365 pour les entreprises en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354706"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142102"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Changer manuellement les offres Office 365 pour les entreprises
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le nouveau centre d’administration, consultez la rubrique [modifier les plans manuellement](change-plans-manually.md). Le nouveau centre d’administration est accessible à tous les administrateurs de Microsoft 365, et vous pouvez vous abonner en sélectionnant le bouton **essayer le nouveau centre d’administration** situé en haut de la page d’accueil. Pour plus d’informations, voir [À propos du nouveau Centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le nouveau centre d’administration, consultez la rubrique [modifier les plans manuellement](change-plans-manually.md). Le nouveau Centre d’administration est accessible à tous les administrateurs Microsoft 365. Pour plus d’informations, voir [À propos du nouveau Centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Étape 1 : décider du mode de changement des offres
@@ -62,7 +64,7 @@ Assurez-vous que vous achetez un abonnement pour la même organisation que les u
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Étape 3 : vérifier votre nouvel abonnement et vos nouvelles licences
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
     Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 

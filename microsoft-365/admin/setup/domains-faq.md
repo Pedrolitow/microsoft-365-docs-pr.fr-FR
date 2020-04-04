@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Pour plus d’informations sur les domaines dans Office 365, recherchez les réponses à vos questions dans FAQ.
 ms.custom: okr_smb
-ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3e1d5dce6de41e28ad4c04104cf0212c2b657615
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633182"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142502"
 ---
 # <a name="domains-faq"></a>Foire aux questions domaines
 
@@ -230,7 +230,7 @@ Vous devez avoir au moins un domaine personnalisé que vous avez ajouté à Offi
     
 2. Dans la page **domaines** , sélectionnez le domaine que vous souhaitez définir par défaut pour les nouvelles adresses de messagerie. 
     
-3. Sélectionnez **définir par défaut**.
+3. Sélectionnez **Définir par défaut**.
     
 ::: moniker range="o365-worldwide"
 
@@ -285,9 +285,9 @@ Lorsque vous ajoutez plusieurs domaines à Office 365, vous pouvez héberger des
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Pourquoi ai-je un domaine « onmicrosoft.com » ?
 
-Office 365 crée un domaine pour vous, comme *contoso.onmicrosoft.com*, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple *Alan@contoso.onmicrosoft.com*. 
+Office 365 crée un domaine pour vous, comme _contoso.onmicrosoft.com_, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple _alan\@contoso.onmicrosoft.com_. 
   
- **Si vous voulez faire ressembler votre courrier *électronique\@Alan contoso.com*:** [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou simplement suivre les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà propriétaire. 
+ __Si vous voulez faire ressembler votre courrier _électronique\@Alan contoso.com_:__ [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou simplement suivre les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà propriétaire. 
   
 - **Vous ne pouvez pas renommer le domaine onmicrosoft après l’inscription.** Par exemple, si le domaine initial que vous avez choisi était fourthcoffee.onmicrosoft.com, vous ne pouvez pas le modifier pour qu’il soit fabrikam.onmicrosoft.com. Pour utiliser un autre domaine onmicrosoft.com, vous devez démarrer un nouvel abonnement avec Office 365. 
     
@@ -300,11 +300,12 @@ Vous pouvez continuer à utiliser le domaine onmicrosoft.com initial même aprè
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Pourquoi ai-je un domaine « onmicrosoft.de » ?
 
-Office 365 crée un domaine pour vous, comme *contoso.onmicrosoft.de*, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple *Alan@contoso.onmicrosoft.de*. 
+Office 365 crée un domaine pour vous, comme *contoso.onmicrosoft.de*, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple « alan@contoso.onmicrosoft.de ». 
   
- **Si vous souhaitez que votre courrier électronique ressemble à *Alan@contoso.de*:** [achetez le domaine](../get-help-with-domains/buy-a-domain-name.md) ou suivez simplement les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà propriétaire. 
+Si vous souhaitez que votre courrier électronique ressemble à « alan@contoso.de » : [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou suivre les étapes de la section [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà 
   
 - **Vous ne pouvez pas renommer le domaine onmicrosoft après l’inscription.** Par exemple, si le domaine initial que vous avez choisi était fourthcoffee.onmicrosoft.de, vous ne pouvez pas le modifier pour qu’il soit fabrikam.onmicrosoft.de. Pour utiliser un autre domaine onmicrosoft.de, vous devez démarrer un nouvel abonnement avec Office 365. 
     
@@ -444,7 +445,7 @@ Vous pouvez, mais il existe des limitations :
         
     4. Testez le courrier électronique à une personne qui se trouve sur l’autre système de courrier. Par exemple, envoyez un message électronique à l’utilisateur C. Ce message électronique doit être remis à la boîte aux lettres de l’utilisateur C sur votre serveur de messagerie d’origine.
         
-    5. À partir d’un compte extérieur ou du compte de messagerie d’un employé sur l’autre système de courrier, vérifiez que le transfert est correctement configuré sur l’autre système de messagerie. Par exemple, à partir du compte de serveur origninal de l’utilisateur C ou d’un compte Hotmail, envoyez un courrier électronique à l’utilisateur et vérifiez qu’il arrive dans la boîte aux lettres Office 365 de l’utilisateur A.
+    5. À partir d’un compte extérieur ou du compte de messagerie d’un employé sur l’autre système de courrier, vérifiez que le transfert est correctement configuré sur l’autre système de messagerie. Par exemple, à partir du compte de serveur d’origine ou d’un compte Hotmail de l’utilisateur, envoyez un courrier électronique à l’utilisateur et vérifiez qu’il arrive dans la boîte aux lettres Office 365 de l’utilisateur A.
         
 9. Déplacer le contenu de la boîte aux lettres
     

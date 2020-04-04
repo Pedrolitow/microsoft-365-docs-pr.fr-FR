@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b6c4e737d0bcc9f7373a669e8dcd20661733b294
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634062"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142707"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 
@@ -31,7 +31,8 @@ Un grand nombre de rapports sont disponibles dans [le &amp; Centre de sécurité
 ![Tableau de bord où se trouve le fonctionnement de la protection avancée contre les menaces](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Vos rapports de sécurité de messagerie incluent les éléments suivants :
-- [Rapport sur les utilisateurs compromis (**nouveau !**)](#compromised-users-report-new)
+- [Rapport d’URL de protection contre les menaces](#url-threat-protection-report-new) (**nouveau !**)
+- [Rapport sur les utilisateurs compromis](#compromised-users-report)
 - [Rapport de chiffrement](#encryption-report)
 - [Rapport sur l’état de la protection contre les menaces](#threat-protection-status-report) 
 - [Rapport de détection des programmes malveillants](#malware-detections-report) 
@@ -43,9 +44,30 @@ Vos rapports de sécurité de messagerie incluent les éléments suivants :
 - [Rapport sur les messages signalés par l’utilisateur](#user-reported-messages-report)
 
 
-## <a name="compromised-users-report-new"></a>Rapport sur les utilisateurs compromis (**nouveau !**) 
+## <a name="url-threat-protection-report-new"></a>Rapport d’URL de protection contre les menaces (**nouveau !**)
 
-Ce rapport, accessible à tous les utilisateurs disposant d’Exchange Online Protection, indique le nombre de comptes d’utilisateur marqués comme suspects ou utilisateurs restreints, données particulièrement utiles en tant que comptes entrez l’un des États indiquant que le compte d’utilisateur peut être problématique, voire compromis. Dans le cas d’une utilisation fréquente, le rapport de l’utilisateur compromis peut repérer des pics, voire des tendances, dans des comptes marqués dans des États suspects ou restreints, donnant des preuves à un problème de sécurité et du bien-être de votre client.
+Le rapport URL protection contre les menaces est disponible pour tous les utilisateurs :
+
+- Un module complémentaire de protection avancée contre *les menaces et* Exchange Online (plan 1 *ou* plan 2) 
+- Un abonnement Microsoft 365 E5
+
+Il s’agit d’un rapport « centré sur les clic » qui comporte deux vues agrégées.
+ 
+1. La première vue est par *action de protection par clic sur les URL*, qui est axée sur l’affichage du nombre de clics d’URL par les utilisateurs au sein du client, ainsi que le résultat du clic. Un clic indique que l’utilisateur a cliqué sur la page bloquer pour le site Web malveillant (il peut être désactivé par l’administrateur au sein d’une stratégie de liens fiables).
+ 
+2. La deuxième vue est *URL Click by applications*, qui affiche le nombre d’URL cliquez dans différentes applications qui prennent en charge les liens fiables dès aujourd’hui, comme dans un client de messagerie ou dans Microsoft Word. Les données dans les deux vues agrégées sont actualisées toutes les 4 heures.
+
+Le tableau des détails du rapport URL protection protection fournit une vue quasi en temps réel de tous les clics effectués au sein du client, ainsi que des informations d’identification telles que le *nom d’utilisateur*, l' *URL*, l' *ID de message réseau* (si l’URL a cliqué dans un e-mail), ainsi que d’autres informations précieuses utiles pour les analyses et les analyses.  
+
+Par défaut, le rapport affiche uniquement les données sur les clics à partir d’URL bloquées par les liens fiables, mais il est également possible d’afficher des informations pour tous les clics d’URL en sélectionnant *URL autorisées* dans les filtres.  
+
+Ce rapport ne disposera pas de données de clics à partir des utilisateurs pour lesquels la stratégie de liens fiables est sélectionnée lorsque l’option *ne pas suivre les clics utilisateur* est sélectionnée.
+
+![Graphique du rapport URL protection contre les menaces en action.](../../media/tp-URLThreatProRpt1.PNG)
+
+## <a name="compromised-users-report"></a>Rapport sur les utilisateurs compromis 
+
+Ce rapport, accessible à tous les utilisateurs disposant d’Exchange Online Protection, indique le nombre de comptes d’utilisateur marqués comme suspects ou utilisateurs restreints, données particulièrement utiles en tant que comptes entrez l’un des États qui indique que le compte d’utilisateur peut être problématique, voire compromis. Dans le cas d’une utilisation fréquente, le rapport de l’utilisateur compromis peut repérer des pics, voire des tendances, dans des comptes marqués dans des États suspects ou restreints, donnant des preuves à un problème de sécurité et du bien-être de votre client.
 
 ![Rapport des utilisateurs compromis tel qu’il apparaît dans Office 365.](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
@@ -205,7 +227,7 @@ Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https
 ![Dans le centre &amp; de sécurité conformité, choisissez gestion \> des \> menaces-vérifier les messages signalés par l’utilisateur](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> Pour que le rapport des messages signalés par l’utilisateur fonctionne correctement, la **journalisation d’audit doit être activée** pour votre environnement Office 365. Cette opération est généralement réalisée par une personne disposant du rôle journaux d’audit dans Exchange Online. Pour plus d’informations, voir [activer ou désactiver la recherche dans le journal d’audit Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
+> Pour que le rapport des messages signalés par l’utilisateur fonctionne correctement, la **journalisation d’audit doit être activée** pour votre environnement Office 365. Cette opération est généralement réalisée par une personne disposant du rôle journaux d’audit dans Exchange Online. Pour plus d’informations, voir [Activer ou désactiver la recherche dans un journal d’audit Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles sont les autorisations nécessaires pour afficher ces rapports ?
 
@@ -233,7 +255,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique [Protégez-vous contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Protection contre le courrier indésirable pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
   

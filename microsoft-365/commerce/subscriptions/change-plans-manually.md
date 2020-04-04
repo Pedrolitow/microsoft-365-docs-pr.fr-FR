@@ -21,17 +21,14 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: 0042e0fd2fa5ac10be512246c252bc1d0f679709
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239557"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142150"
 ---
 # <a name="change-plans-manually"></a>Modifier les offres manuellement
-
-> [!NOTE]
-> Cet article s’applique au nouveau centre d’administration. Le nouveau centre d’administration est accessible à tous les administrateurs de Microsoft 365, et vous pouvez vous abonner en sélectionnant **essayer le nouveau centre d’administration** bascule en haut de la page d’accueil. Pour plus d’informations, voir [À propos du nouveau Centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md). Pour afficher l’article à propos de l’ancien centre d’administration, voir [changer manuellement les offres Office 365 pour les entreprises](switch-plans-manually.md).
 
 ## <a name="step-1-decide-how-to-change-plans"></a>Étape 1 : décider de la façon de modifier les offres
 
@@ -52,7 +49,7 @@ Pour poursuivre une modification manuelle, lisez l' [étape 2 : acheter un nouv
 
 **Vous avez déjà acheté ?** Si vous disposez déjà d’un abonnement auquel vous souhaitez déplacer des utilisateurs, ignorez cette étape et passez à [l’étape 3 : Vérifiez votre nouvel abonnement et vos licences](#step-3-check-your-new-subscription-and-licenses) dans cette rubrique.
 
-OU
+OR
 
 **Acheter un nouvel abonnement et des licences :** Suivez les étapes de la procédure [acheter un autre abonnement Office 365 pour les entreprises](../buy-another-subscription.md) pour acheter un nouvel abonnement.
 
@@ -61,7 +58,7 @@ Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Étape 3 : vérifier votre nouvel abonnement et vos nouvelles licences
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement à partir duquel vous déplacez les utilisateurs et l’abonnement vers lequel vous déplacez les utilisateurs doivent être regroupés. Si le nouvel abonnement n’est pas présent lors de la vérification initiale, réessayez ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas indiqué, ou n’est pas actif](#the-new-subscription-isnt-listed-or-isnt-active).
 
@@ -117,4 +114,5 @@ Si vous avez déplacé tous les utilisateurs d’un abonnement vers un autre, et
 Si vous avez déplacé uniquement certains utilisateurs vers un autre abonnement, [supprimez les licences](../licenses/remove-licenses-from-subscription.md) dont vous n’avez plus besoin.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Appeler le support pour vous aider à modifier les offres
+
 [Appeler le support Microsoft](../../admin/contact-support-for-business-products.md)

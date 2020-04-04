@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Découvrez comment obtenir une version d’évaluation gratuite ou acheter un abonnement pour Microsoft 365.
-ms.openlocfilehash: 1b494457b20a1e75ad002b2832fd69ad0a284b53
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254488"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141622"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Essayer ou acheter un abonnement Microsoft 365
 
@@ -42,9 +42,6 @@ Lorsque vous ajoutez un abonnement via le centre d’administration, le nouvel a
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
 1. Connectez-vous au centre d’administration [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339), puis accédez à **facturation** \> **Purchase services**.
 
 2. Sur la page **acheter des services** , les abonnements disponibles pour votre organisation sont répertoriés. Choisissez le plan Microsoft 365 que vous souhaitez essayer ou acheter.
@@ -56,7 +53,7 @@ Lorsque vous ajoutez un abonnement via le centre d’administration, le nouvel a
   
 4. Si vous achetez, entrez le nombre de licences utilisateur dont vous avez besoin et indiquez si vous devez payer chaque mois ou pour l’ensemble de l’année, puis sélectionnez **Extraire maintenant**.
 
-5. Votre panier s'ouvre. Passez en revue les informations de tarification, puis sélectionnez **suivant**.
+5. Votre panier s’affiche. Vérifiez les informations concernant le tarif et sélectionnez **Suivant**.
 
 6. Fournissez vos informations de paiement, puis sélectionnez **passer une commande**.
 
@@ -70,16 +67,13 @@ Lorsque vous ajoutez un abonnement via le centre d’administration, le nouvel a
 
 11. Sur la page **bon de commande** , sélectionnez **Continuer**.
 
-#### <a name="not-using-the-new-admin-center-yet"></a>Vous n’utilisez pas encore le nouveau centre d’administration ?
-
-Si le nouveau centre d’administration est désactivé, regardez les vidéos de cet article pour en savoir plus sur la façon de s’inscrire à un abonnement à la version d’évaluation de Microsoft 365 : s' [inscrire à un abonnement](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 1. Connectez-vous au centre d’administration [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686), puis accédez à **facturation** \> **Purchase services**.
 
-2. Sur la page **acheter des services** , les abonnements disponibles pour votre organisation sont répertoriés. 
+2. Sur la page **acheter des services** , les abonnements disponibles pour votre organisation sont répertoriés.
 
 3. Sélectionnez les ellipses sous le plan Microsoft 365 que vous souhaitez essayer ou acheter, puis sélectionnez Démarrer la **version d’évaluation gratuite**, qui vous donne 25 licences utilisateur pour un délai d’un mois, ou vous pouvez sélectionner **acheter maintenant**.
 
@@ -88,7 +82,7 @@ Si le nouveau centre d’administration est désactivé, regardez les vidéos de
   
 4. Si vous achetez, entrez le nombre de licences utilisateur dont vous avez besoin et indiquez si vous devez payer chaque mois ou pour l’ensemble de l’année, puis sélectionnez **Extraire maintenant**.
 
-5. Votre panier s'ouvre. Passez en revue les informations de tarification, puis sélectionnez **suivant**.
+5. Votre panier s’affiche. Vérifiez les informations concernant le tarif et sélectionnez **Suivant**.
 
 6. Fournissez vos informations de paiement, puis sélectionnez **passer une commande**.
 
@@ -105,6 +99,7 @@ Si le nouveau centre d’administration est désactivé, regardez les vidéos de
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
+
 1. Connectez-vous au centre d’administration [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628), puis accédez à **facturation** \> **Purchase services**.
 
 2. Sur la page **acheter des services** , les abonnements disponibles pour votre organisation sont répertoriés. 
@@ -116,7 +111,7 @@ Si le nouveau centre d’administration est désactivé, regardez les vidéos de
   
 4. Si vous achetez, entrez le nombre de licences utilisateur dont vous avez besoin et indiquez si vous devez payer chaque mois ou pour l’ensemble de l’année, puis sélectionnez **Extraire maintenant**.
 
-5. Votre panier s'ouvre. Passez en revue les informations de tarification, puis sélectionnez **suivant**.
+5. Votre panier s’affiche. Vérifiez les informations concernant le tarif et sélectionnez **Suivant**.
 
 6. Fournissez vos informations de paiement, puis sélectionnez **passer une commande**.
 
@@ -132,10 +127,9 @@ Si le nouveau centre d’administration est désactivé, regardez les vidéos de
 
 ::: moniker-end
 
-
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que vous avez obtenu le nouvel abonnement, vous devez attribuer une licence aux utilisateurs qui utiliseront cet abonnement. Pour savoir comment procéder, consultez la rubrique [attribuer des licences aux utilisateurs](../admin/manage/assign-licenses-to-users.md) .
+Une fois que vous avez obtenu le nouvel abonnement, vous devez attribuer une licence aux utilisateurs qui utiliseront cet abonnement. Pour savoir comment procéder, consultez la rubrique [attribuer des licences aux utilisateurs](../admin/manage/assign-licenses-to-users.md).
 
 ## <a name="related-articles"></a>Articles connexes
 
@@ -144,4 +138,3 @@ Une fois que vous avez obtenu le nouvel abonnement, vous devez attribuer une lic
 [Acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](buy-or-edit-an-add-on.md)
 
 [Ajouter de l’espace de stockage pour votre abonnement](add-storage-space.md)
-

@@ -2,8 +2,8 @@
 title: Ajouter des vignettes personnalisées au lanceur d'applications
 f1.keywords:
 - CSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Créez des liens rapides vers vos courriers électroniques, vos documents, vos applications, vos sites SharePoint, vos sites externes et d’autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications. '
-ms.openlocfilehash: e52bad5cdd1809e8aa0d97c681b69daa5143d3fd
-ms.sourcegitcommit: 4b73f070747a66874c03fdf670ffdf16f736585a
+ms.openlocfilehash: fff65c7263e40bf376f53e5f150daea7a24ff55d
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43103074"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131530"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Ajouter des vignettes personnalisées au lanceur d'applications
 

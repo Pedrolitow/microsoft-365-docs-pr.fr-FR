@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Découvrez comment mettre à jour vos adresses de facturation pour Office 365 pour les entreprises. Vous pouvez également mettre à jour l’adresse de messagerie utilisée pour recevoir des notifications de facturation.
 ms.custom: okr_SMB
-ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409639"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142310"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>Modifier vos adresses de facturation pour Office 365 pour les entreprises
 
@@ -62,9 +62,6 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
 ::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>Modifier votre adresse de vente
@@ -91,7 +88,7 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez modifier, puis sélectionnez **modifier les détails du paiement**.
 
@@ -111,7 +108,7 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez modifier, puis sélectionnez **modifier les détails du paiement**.
 
@@ -127,7 +124,7 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Recherchez l’abonnement que vous souhaitez modifier. Dans la section **paramètres & Actions** , sélectionnez **modifier l’adresse d’utilisation du service**.
 
@@ -137,7 +134,7 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez modifier, sélectionnez **autres actions**, puis **modifier l’adresse d’utilisation du service**.
 
@@ -149,7 +146,7 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez modifier, sélectionnez **autres actions**, puis **modifier l’adresse d’utilisation du service**.
 
@@ -176,12 +173,24 @@ Par défaut, les notifications de facturation pour votre organisation sont envoy
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Modifier l'adresse de messagerie de secours pour un autre administrateur
 
 Vous pouvez également modifier l'adresse de messagerie de secours d'autres administrateurs généraux et de facturation de votre organisation.
-  
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notifications de facturation</a> de la **facturation** \> .
 
-    Si vous utilisez Office 365 Germany, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">notifications de facturation</a> .
+::: moniker range="o365-worldwide"
 
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">notifications de facturation</a> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notifications de facturation</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">notifications de facturation</a> de la **facturation** \> .
+
+::: moniker-end
 
 2. Sur la page **notifications de facturation** , sélectionnez l’administrateur que vous souhaitez modifier.
 
@@ -193,6 +202,4 @@ Vous pouvez également modifier l'adresse de messagerie de secours d'autres admi
 
 [Comprendre votre facture](understand-your-invoice2.md)
 
-[Payer pour yoursubscription](pay-for-your-subscription.md)
-
-[Abonnements et aide à l’administrateur de facturation](../index.yml)
+[Payer votre abonnement](pay-for-your-subscription.md)

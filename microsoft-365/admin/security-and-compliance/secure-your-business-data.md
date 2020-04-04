@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes. '
-ms.openlocfilehash: 68e5061b7238d456ee0397a50eff37f07214d13f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 938a6d58c8781fcc04f6b86e15db88b5de523cdf
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361115"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142514"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>10 principales méthodes pour sécuriser les offres Office 365 et Microsoft 365 Entreprise
 
@@ -155,7 +155,8 @@ Pour créer une règle de transport de messagerie, affichez une [vidéo de forma
 |Appliquez cette règle si. . .  <br/> |N’importe quelle pièce jointe. . . l’extension de fichier correspond à. . .  <br/> |N’importe quelle pièce jointe. . . l’extension de fichier correspond à. . .  <br/> |
 |Spécifier des mots ou des expressions  <br/> |Ajoutez les types de fichiers suivants :  <br/> dotm, docm, xlsm, SLTM, xla, xlam, XLL, pptm, potm, ppam, PPSM, sldm  <br/> |Ajoutez les types de fichiers suivants :  <br/> ADE, ADP, Ani, bas, bat, chm, cmd, com, cpl, CRT, HLP, HT, HTA, inf, ins, fournisseur de services Internet, Job, js, jse, lnk, MDA, de mdb, MDE, mdz, MSC, MSI, MSP, MST, PCD, reg, SCR, SCT, SHS, URL, VB, VBE, vbs, WSC, wsf, WSH  <br/> |
 |Procédez comme suit. . .  <br/> |Avertir le destinataire avec un message  <br/> |Bloquer le message. . . rejeter le message et inclure une explication  <br/> |
-|Fournir le texte du message  <br/> |N’ouvrez pas ces types de fichiers (sauf s’ils vous attendiez), car les fichiers peuvent contenir du code malveillant et connaître l’expéditeur n’est pas une garantie de sécurité.  <br/> ||
+|Fournir le texte du message  <br/> |N’ouvrez pas ces types de fichiers (sauf s’ils vous attendiez), car les fichiers peuvent contenir du code malveillant et connaître l’expéditeur n’est pas une garantie de sécurité.  <br/>|
+|
    
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programmes malveillants à l' [étape 4](#4-raise-the-level-of-protection-against-malware-in-mail).
@@ -247,8 +248,16 @@ Pour créer une stratégie anti-hameçonnage ATP, affichez une [vidéo de format
     
 6. Une fois que vous avez vérifié vos paramètres, sélectionnez **créer cette stratégie** ou **Enregistrer**, selon le cas.
     
-| | | Paramètre **ou option**|**recommandée** <br/>
-| Nom  <br/> | Domaine et équipe de campagne la plus intéressante  <br/> | | Description  <br/> | Assurez-vous que le personnel le plus important et que notre domaine ne sont pas empruntés.  <br/> | | Ajouter des utilisateurs à protéger  <br/> | Sélectionnez **+ Ajouter une condition, le destinataire est**. Tapez noms d’utilisateur ou entrez l’adresse de messagerie du candidat, du gestionnaire de campagnes et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.  <br/> | | Ajouter des domaines à protéger  <br/> | Sélectionnez **+ Ajouter une condition, le domaine du destinataire est**. Entrez le domaine personnalisé associé à votre abonnement Microsoft 365, si vous en avez défini un. Vous pouvez entrer plusieurs domaines.  <br/> | | Choisir les actions  <br/> | Si un message électronique est envoyé par un utilisateur représenté : sélectionnez **Rediriger le message vers une autre adresse de messagerie**, puis tapez l’adresse de messagerie de l’administrateur de sécurité ; par exemple, securityadmin@contoso.com.          Si le courrier électronique est envoyé par un domaine emprunté : sélectionnez **mettre en quarantaine le message**.  <br/> | | Intelligence des boîtes aux lettres  <br/> | Par défaut, l’intelligence de boîte aux lettres est activée lorsque vous créez une nouvelle stratégie anti-hameçonnage. Laissez ce paramètre **activé** pour obtenir de meilleurs résultats.  <br/> | | Ajouter des expéditeurs et des domaines approuvés  <br/> | Pour cet exemple, ne définissez aucune substitution.  <br/> | | Appliqué à  <br/> | Sélectionnez **le domaine du destinataire**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Activez la case à cocher en regard du nom du domaine, par exemple, contoso.com, dans la liste, puis sélectionnez **Ajouter**. Sélectionnez **Terminé**.  <br/> |
+|**Paramètre ou option**|**Valeur recommandée** <br/>|
+| :-------| :-----|
+|Nom  <br/> |Domaine et équipe de campagne la plus intéressante  <br/> |
+|Description  <br/> |Assurez-vous que le personnel le plus important et que notre domaine ne sont pas empruntés.  <br/> |
+|Ajouter des utilisateurs à protéger  <br/> |Sélectionnez **+ Ajouter une condition, le destinataire est**. Tapez noms d’utilisateur ou entrez l’adresse de messagerie du candidat, du gestionnaire de campagnes et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.  <br/> |
+|Ajouter des domaines à protéger  <br/> |Sélectionnez **+ Ajouter une condition, le domaine du destinataire est**. Entrez le domaine personnalisé associé à votre abonnement Microsoft 365, si vous en avez défini un. Vous pouvez entrer plusieurs domaines.  <br/> |
+|Choisir des actions  <br/> |Si un message électronique est envoyé par un utilisateur représenté : sélectionnez **Rediriger le message vers une autre adresse de messagerie**, puis tapez l’adresse de messagerie de l’administrateur de sécurité ; par exemple, securityadmin@contoso.com.          Si le courrier électronique est envoyé par un domaine emprunté : sélectionnez **mettre en quarantaine le message**.  <br/> |
+|Veille des boîtes aux lettres  <br/> |Par défaut, la veille des boîtes aux lettres est activée lorsque vous créez une stratégie anti-hameçonnage. Laissez ce paramètre **activé** pour obtenir de meilleurs résultats.  <br/> |
+|Ajouter des expéditeurs et domaines de confiance  <br/> |Pour cet exemple, ne définissez pas de remplacement.  <br/> |
+|Appliqué à  <br/> |Sélectionnez **Le domaine du destinataire est**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Activez la case à cocher en regard du nom du domaine, par exemple, contoso.com, dans la liste, puis sélectionnez **Ajouter**. Sélectionnez **Terminé**.  <br/> |
    
 Pour plus d’informations, reportez-vous à la rubrique [set up Office 365 ATP anti-phishing Policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -272,8 +281,15 @@ Pour créer une stratégie de pièces jointes approuvées ATP, affichez une [vid
 6. Appliquez les paramètres dans le tableau suivant. 
     
 7. Une fois que vous avez vérifié vos paramètres, sélectionnez **créer cette stratégie** ou **Enregistrer**, selon le cas.
-    
-| | | Paramètre **ou option**|**recommandée** <br/>| | Nom  <br/> | Bloquer les courriers électroniques actuels et futurs avec des programmes malveillants détectés.  <br/> | | Description  <br/> | Bloquer les e-mails et pièces jointes en cours et à venir avec des programmes malveillants détectés.  <br/> | | Enregistrer les pièces jointes réponse inconnue contre les programmes malveillants  <br/> | Sélectionnez **bloquer-bloquer les courriers électroniques et pièces jointes actuels et futurs avec des programmes malveillants détectés**.  <br/> | | Redirection de la pièce jointe sur la détection  <br/> | Activer la redirection (activez cette case à cocher) Entrez le compte administrateur ou une configuration de boîte aux lettres pour la mise en quarantaine.          Appliquer la sélection ci-dessus si l’analyse anti-programmes malveillants pour les pièces jointes expire ou si une erreur se produit (sélectionnez cette case).  <br/> | | Appliqué à  <br/> | Le domaine du destinataire est. . . Sélectionnez votre domaine.  <br/> |
+
+|**Paramètre ou option**|**Valeur recommandée** <br/>|
+| :-------| :-----|
+|Nom  <br/> |Bloquer les courriers électroniques actuels et futurs avec des programmes malveillants détectés.  <br/> |
+|Description  <br/> |Bloquer les e-mails et pièces jointes en cours et à venir avec des programmes malveillants détectés.  <br/> |
+|Enregistrer les pièces jointes réponse inconnue contre les programmes malveillants  <br/> |Sélectionnez **bloquer-bloquer les courriers électroniques et pièces jointes actuels et futurs avec des programmes malveillants détectés**.  <br/> |
+|Redirection de la pièce jointe sur la détection  <br/> |Activer la redirection (activez cette case à cocher) Entrez le compte administrateur ou une configuration de boîte aux lettres pour la mise en quarantaine.          Appliquer la sélection ci-dessus si l’analyse anti-programmes malveillants pour les pièces jointes expire ou si une erreur se produit (sélectionnez cette case).  <br/> |
+|Appliqué à  <br/> |Le domaine du destinataire est. . . Sélectionnez votre domaine.  <br/> |
+|
    
 Pour plus d’informations, reportez-vous à la rubrique [set up Office 365 ATP anti-phishing Policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -312,6 +328,12 @@ Pour créer une stratégie ciblée pour tous les destinataires de votre domaine,
     
 3. Cliquez sur **Enregistrer**. 
     
-| | | Paramètre **ou option**|**recommandée** <br/>| | Nom  <br/> | Stratégie de liens fiables pour tous les destinataires dans le domaine  <br/> | | Sélectionner l’action pour les URL potentiellement malveillantes dans les messages  <br/> | Sélectionnez **les URL activées seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien**.  <br/> | | Utiliser les pièces jointes fiables pour analyser le contenu téléchargeable  <br/> | Activez cette case à cocher.  <br/> | | Appliqué à  <br/> | Le domaine du destinataire est. . . Sélectionnez votre domaine.  <br/> |
+**Paramètre ou option**|**Valeur recommandée** <br/>|
+| :-------| :-----|
+|Nom  <br/> |Stratégie de liens fiables pour tous les destinataires dans le domaine  <br/> |
+|Sélectionner l’action pour les URL potentiellement malveillantes dans les messages  <br/> |Sélectionnez **les URL activées seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien**.  <br/> |
+|Utiliser les pièces jointes fiables pour analyser le contenu téléchargeable  <br/> |Activez cette case à cocher.  <br/> |
+|Appliqué à  <br/> |Le domaine du destinataire est. . . Sélectionnez votre domaine.  <br/> |
+|
    
 Pour plus d’informations, reportez-vous à la rubrique [Office 365 ATP Safe Links](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).

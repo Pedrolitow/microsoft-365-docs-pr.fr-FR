@@ -1,5 +1,5 @@
 ---
-title: Basculer vers une autre offre Office 365 pour les entreprises
+title: Basculer vers une autre offre Office 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,34 +24,37 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Découvrez comment passer à un nouvel abonnement Office 365 pour les entreprises.
-ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e851ebaa89719f7dae62ed99bf72e2e2a4f361a2
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633402"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142090"
 ---
-# <a name="switch-to-a-different-office-365-for-business-plan"></a>Basculer vers une autre offre Office 365 pour les entreprises
+# <a name="switch-to-a-different-office-365-for-business-plan"></a>Basculer vers une autre offre Office 365 pour les entreprises
 
 Lorsque votre entreprise change ou que vous avez besoin de davantage de fonctionnalités, vous pouvez changer d’offre.  
 
-Le moyen le plus simple de changer de plan est d’utiliser le bouton **changer de plan** dans le centre d’administration. L'utilisation du bouton **Changer de plan** n'est toutefois pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez éventuellement changer d'offre manuellement.
+La manière la plus simple de procéder est d'utiliser le bouton **Changer de plan** dans le Centre d'administration. L'utilisation du bouton **Changer de plan** n'est toutefois pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez éventuellement changer d'offre manuellement.
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le nouveau centre d’administration, reportez-vous à la rubrique [mise à niveau vers une autre](upgrade-to-different-plan.md)offre. Le nouveau centre d’administration est accessible à tous les administrateurs de Microsoft 365, et vous pouvez vous abonner en sélectionnant le bouton **essayer le nouveau centre d’administration** situé en haut de la page d’accueil. Pour plus d’informations, consultez[la rubrique à propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md) 
+> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le nouveau centre d’administration, reportez-vous à la rubrique [mise à niveau vers une autre](upgrade-to-different-plan.md)offre. Le nouveau Centre d’administration est accessible à tous les administrateurs Microsoft 365. Pour plus d’informations, consultez[la rubrique à propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+
 ::: moniker-end
 
 **Vous avez besoin d'autres informations ?**
+
 - [Annuler votre abonnement](cancel-your-subscription.md)
 - [Mettre à niveau Office 365 pour les particuliers vers un abonnement pour les entreprises](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Appelez le Support Microsoft](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>Utiliser le bouton changer de plan
 
-Lorsque vous utilisez le bouton **Changer de plan**, vous suivez le processus d'achat d'une nouvelle offre qui remplacera votre offre actuelle. Tous les utilisateurs reçoivent automatiquement des licences dans la nouvelle offre et votre ancienne offre est annulée automatiquement. 
+Lorsque vous utilisez le bouton **Changer de plan**, vous suivez le processus d'achat d'une nouvelle offre qui remplacera votre offre actuelle. Tous les utilisateurs reçoivent automatiquement des licences dans la nouvelle offre et votre ancienne offre est annulée automatiquement.
   
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
     Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
@@ -95,4 +98,4 @@ Si vous souhaitez passer à un plan avec moins de services, vous pouvez [changer
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Appeler le support technique pour changer d'offre
 
-![](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Prise en charge des appels](../../admin/contact-support-for-business-products.md) téléphoniques
+[Appeler le support technique](../../admin/contact-support-for-business-products.md)

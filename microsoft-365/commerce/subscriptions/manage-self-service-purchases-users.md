@@ -1,5 +1,5 @@
 ---
-title: Gérer les achats en libre-service (utilisateurs)
+title: Gérer les achats libre-service (utilisateurs)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,19 +14,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
-ms.openlocfilehash: cdc50144179dd4c0f9b6355501167e9420ff0b50
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080321"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142138"
 ---
-# <a name="manage-self-service-purchases-users"></a>Gérer les achats en libre-service (utilisateurs)
+# <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
 En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements à des personnes de votre équipe. Vous êtes responsable du paiement des achats en libre-service que vous effectuez. Vous pouvez gérer vos abonnements dans le centre d’administration Microsoft 365 sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.Microsoft.com</a>.
-
-> [!NOTE]
-> Vous devez activer le nouveau centre d’administration.
 
 Votre administrateur dispose d’une vue en lecture seule dans les abonnements que vous achetez. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque abonnement que vous achetez.
 

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Découvrez comment ajouter et supprimer des licences pour votre abonnement Office 365 pour les entreprises.
-ms.openlocfilehash: 2f9c6b58a478b18fa1844c33689a8a4974a5917a
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410041"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142174"
 ---
 # <a name="manage-subscription-licenses"></a>Gérer les licences d’abonnement
 
@@ -40,12 +40,9 @@ Vous pouvez ajouter ou supprimer des licences de vos abonnements à l’aide de 
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Ce que vous devez savoir sur l’achat de licences pour votre abonnement professionnel
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Dans la page **produits & services** , recherchez l’abonnement auquel vous voulez ajouter ou supprimer des licences, puis sélectionnez **Ajouter/supprimer des licences**.
 
@@ -59,7 +56,7 @@ Une fois que vous avez acheté de nouvelles licences, veillez à [attribuer les 
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sur la page **abonnements** , sélectionnez l’abonnement auquel vous voulez ajouter ou supprimer des licences, puis sélectionnez **Ajouter/supprimer des licences**.
 
@@ -73,7 +70,7 @@ Une fois que vous avez acheté de nouvelles licences, veillez à [attribuer les 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sur la page **abonnements** , sélectionnez l’abonnement auquel vous voulez ajouter ou supprimer des licences, puis sélectionnez **Ajouter/supprimer des licences**.
 
@@ -87,7 +84,7 @@ Une fois que vous avez acheté de nouvelles licences, veillez à [attribuer les 
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>Que faire si le lien Ajouter/Supprimer des licences n'est pas disponible ?
 
-Ce tableau décrit les raisons pour lesquelles le lien **Ajouter/supprimer des licences** n’est peut-être pas disponible, et ce que vous pouvez faire. 
+Ce tableau décrit les raisons pour lesquelles le lien **Ajouter/supprimer des licences** n’est peut-être pas disponible, et ce que vous pouvez faire.
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
@@ -109,7 +106,7 @@ Ce tableau décrit les raisons pour lesquelles le lien **Ajouter/supprimer des l
 - Si vous réglez le montant de votre abonnement par carte de crédit ou par compte bancaire, les nouvelles licences que vous achetez sont disponibles dès que vous recevez une confirmation de commande. Si vous payez par facture, il est possible que vous deviez attendre la vérification de votre solvabilité avant que les nouvelles licences ne soient disponibles et utilisables.
 
   > [!NOTE]
-  > Le paiement par compte bancaire n’est pas disponible dans certains pays ou certaines régions.
+  > Le règlement par compte bancaire n’est pas disponible dans certains pays ou régions.
 
 - Si vous avez prépayé votre abonnement avec une clé de produit, vous pouvez ajouter des licences supplémentaires en ajoutant une carte bancaire ou un compte bancaire pour traiter les frais supplémentaires des nouvelles licences. Une fois que vous avez acheté les nouvelles licences, nous ajoutons un deuxième abonnement avec le nombre de nouvelles licences que vous venez d'ajouter. Par exemple, si vous avez un abonnement prépayé avec 5 licences et que vous avez acheté 10 licences supplémentaires, vous verrez deux abonnements répertoriés : un avec cinq licences prépayées et l'autre avec les 10 nouvelles licences.
 

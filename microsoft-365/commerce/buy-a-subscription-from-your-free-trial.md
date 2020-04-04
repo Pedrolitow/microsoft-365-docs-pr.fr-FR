@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Achetez un abonnement Office 365 pour les entreprises. Vous pouvez acheter le même type d’abonnement que vous avez essayé, ou une autre offre.
-ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
-ms.translationtype: HT
+ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549801"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142286"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>Acheter un abonnement à Office 365 pour les entreprises à partir de votre version d’évaluation gratuite
 
@@ -98,9 +98,6 @@ Si vous achetez un abonnement d'un type différent de celui de votre version d'�
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
 1. Dans le centre d’administration, accédez à la page **facturation ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
 
 2. Dans la page **Acheter des services**, sélectionnez l’abonnement que vous souhaitez acheter, puis sélectionnez **Acheter**.
@@ -139,7 +136,6 @@ Si vous achetez un abonnement d'un type différent de celui de votre version d'�
 
 ::: moniker range="o365-21vianet"
 
-
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sur la page **Abonnements**, sélectionnez **Ajouter des abonnements**.
@@ -159,7 +155,6 @@ Si vous achetez un abonnement d'un type différent de celui de votre version d'�
 8. Sur la page de confirmation, sélectionnez **Accédez à la page d'accueil Administrateur**.
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>Articles connexes
 

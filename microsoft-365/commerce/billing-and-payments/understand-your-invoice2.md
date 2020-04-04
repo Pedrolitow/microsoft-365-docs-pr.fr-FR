@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Découvrez comment interpréter les frais, la facturation et les informations de paiement sur votre facture Office 365 pour les entreprises, et comment modifier le numéro de commande d’achat.
-ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354685"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142298"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>Comprendre votre facture pour Office 365 pour les entreprises
 
@@ -64,9 +64,9 @@ Si vous avez passé plusieurs commandes, vous recevez une facture pour chaque co
 Le tableau suivant décrit les termes pouvant figurer sur votre facture. Il est possible que certains termes répertoriés ici ne figurent pas sur votre facture, selon que vous payez par virement, carte bancaire ou compte bancaire.
   
 > [!NOTE]
-> Le paiement par compte bancaire n’est pas disponible dans certains pays ou certaines régions.
+> Le règlement par compte bancaire n’est pas disponible dans certains pays ou régions.
   
-|**Nom**|**Description**|
+|**Name**|**Description**|
 |:-----|:-----|
 |Prix annuel|Les abonnements sont facturées mensuellement ou annuellement. Si vous avez choisi la facturation annuelle pendant l’achat de l’abonnement, le prix de la licence annuelle est reflété sur la facture. Si vous voulez modifier la périodicité de facturation, vous devrez annuler votre abonnement et le racheter en sélectionnant une autre périodicité de facturation.|
 |Période de facturation|La période de facturation correspond à la période écoulée depuis la date de la dernière facturation. La période de service représente la période pendant laquelle l'utilisation du service vous est facturée.|
@@ -104,9 +104,7 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 ::: moniker range="o365-worldwide"
 
-### <a name="use-the-new-admin-center-to-change-your-purchase-order-number"></a>Utiliser le nouveau centre d’administration pour modifier votre numéro de bon de commande
-
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Si vous êtes en mode **table** , sélectionnez **cartes** pour basculer entre les vues.
 
@@ -116,21 +114,11 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 5. Au bas du volet **modifier les détails du paiement** , saisissez votre numéro de bon de commande, puis sélectionnez **Enregistrer**.
 
-### <a name="use-the-old-admin-center-to-change-your-purchase-order-number"></a>Utiliser l’ancien centre d’administration pour modifier votre numéro de bon de commande
-
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abonnements</a> de **facturation** > .
-
-2. Sélectionnez l’abonnement que vous souhaitez modifier, puis, dans la section **mode de paiement** , sélectionnez **mettre à jour les détails du paiement**.
-
-3. Dans le volet d’informations de paiement de la **mise à jour** , sélectionnez **non merci**.
-
-4. Au bas du volet d' **informations sur le paiement** , saisissez votre numéro de bon de commande, sélectionnez **Envoyer**, puis **Fermer**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez modifier, puis, dans la section **mode de paiement** , sélectionnez Modifier les détails du **paiement**.
 
@@ -140,7 +128,7 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement que vous souhaitez modifier, puis, dans la section **mode de paiement** , sélectionnez Modifier les détails du **paiement**.
 

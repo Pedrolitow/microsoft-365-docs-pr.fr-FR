@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Découvrez comment renouveler votre abonnement Office 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
-ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959215"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142114"
 ---
 # <a name="renew-office-365-for-business"></a>Réactiver ou renouveler un abonnement Office 365 Entreprise
 
@@ -47,9 +47,6 @@ Si vous payez par carte de crédit ou compte bancaire, la **facturation périodi
 Si vous avez prépayé votre abonnement avec une clé de produit, votre abonnement arrivera à expiration à la fin de cette période. Vous pouvez activer la **facturation périodique** et fournir des informations sur la carte de crédit ou le compte bancaire de sorte que votre abonnement reste facturé tous les ans le jour de l’abonnement. Vous avez également la possibilité de payer tous les mois, ou de payer pour l’ensemble de l’année en amont. Votre carte ou votre compte bancaire ne sera pas débité avant l'expiration de votre période d'abonnement initiale.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
@@ -117,9 +114,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 ## <a name="related-articles"></a>Articles connexes
 
 [Réactiver votre abonnement](reactivate-your-subscription.md)
-  
-[Ajouter, mettre à jour ou supprimer une carte de crédit ou un compte bancaire](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-  
+
 [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md)
 
 [Ajouter, mettre à jour ou supprimer vos modes de paiement](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
