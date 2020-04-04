@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: 7c0f0fa97df1c5e57879b222dd117d9b31116260
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: dc06a8c2cd893bb93ef826c6900531240a138efb
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106162"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126031"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -293,6 +293,9 @@ Si cette vérification échoue, un message apparaît pour vous informer que la v
 
 ### <a name="teams-locations"></a>Emplacements Teams
 
+> [!NOTE]
+> Nous ne prenons pas en charge la configuration de la conservation des messages de canal privé pour le moment. La conservation des fichiers partagés dans des canaux privés est prise en charge.
+
 Vous pouvez utiliser une stratégie de rétention pour conserver des conversations et des messages de canal dans Teams. Les conversations Teams sont stockées dans un dossier masqué dans la boîte aux lettres de chaque utilisateur inclus dans la conversation, et les messages de canal Teams sont stockés dans un dossier masqué similaire dans la boîte aux lettres de groupe de l’équipe. Toutefois, il est important de comprendre que Teams utilise un service de conversation basé sur Azure qui stocke également ces données. Par défaut, ce service stocke les données indéfiniment. Pour cette raison, nous vous recommandons vivement d’utiliser l’emplacement Teams pour conserver et supprimer des données Teams. Utiliser l’emplacement Teams permet de supprimer définitivement des données à partir de boîtes aux lettres Exchange et du service de conversation basé sur Azure. Pour obtenir plus d’informations, consultez l’article [Présentation de la sécurité et de la conformité dans Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258).
   
 Les conversations et les messages de canal Teams ne sont pas affectés par les stratégies de rétention appliquées aux boîtes aux lettres d’utilisateur ou de groupe dans les emplacements Exchange ou les groupes Office 365. Même si les conversations et les messages de canal Teams sont stockés dans Exchange, ces éléments sont uniquement affectés par une stratégie de rétention appliquée à l’emplacement Teams.
@@ -448,7 +451,31 @@ Sur les sites SharePoint, vous utilisez peut-être des [stratégies de gestion d
 ## <a name="what-happened-to-preservation-policies"></a>Qu’est-il advenu des stratégies de conservation ?
 
 Si vous utilisiez une stratégie de conservation, celle-ci a été automatiquement convertie en stratégie de rétention qui utilise uniquement l’action de conservation : la stratégie ne supprimera pas le contenu. La stratégie de conservation continue de fonctionner et de conserver votre contenu sans que vous ayez à apporter la moindre modification. Vous trouverez ces stratégies sur la page **Stratégies** du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) ou sur la page**Rétention** sous **Gouvernance des Informations** du [Centre de sécurité &amp; et de conformité](https://protection.office.com/). Vous pouvez modifier une stratégie de conservation afin de changer la période de rétention, mais vous ne pouvez pas apporter d’autres modifications ; par exemple, vous ne pouvez pas ajouter ou supprimer des emplacements. 
+
+## <a name="find-the-powershell-cmdlets-for-retention-policies"></a>Rechercher les cmdlets PowerShell pour les stratégies de conservation
+
+Pour utiliser les cmdlets des stratégies de conservation :
   
+1. [Connexion au Centre de sécurité et de conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+    
+2. Utilisez les cmdlets ci-après du Centre de sécurité et de conformité Office 365 :
+    
+    - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
+    
+    - [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)
+    
+    - [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancepolicy)
+    
+    - [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy)
+    
+    - [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule)
+    
+    - [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)
+    
+    - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancerule)
+    
+    - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)
+
 ## <a name="permissions"></a>Autorisations
 
 Les membres de votre équipe de conformité appelés à créer des stratégies de rétention ont besoin d’autorisations pour accéder au [Centre de sécurité &amp;et de conformité](https://protection.office.com/). Par défaut, votre administrateur locataire a accès à cet emplacement et peut accorder aux responsables de la mise en conformité et à d’autres personnes l’accès au [Centre de sécurité&amp; et de conformité](https://protection.office.com/), sans leur donner toutes les autorisations d’un administrateur locataire. Pour ce faire, nous vous recommandons d’accéder à la page **Autorisations** du [Centre de sécurité&amp; et de conformité](https://protection.office.com/), de modifier le groupe de rôles **Administrateur de conformité** et d’ajouter des membres à ce groupe de rôles. 
@@ -459,6 +486,7 @@ Ces autorisations sont requises uniquement pour créer et appliquer une stratég
 
 ## <a name="more-information"></a>Plus d’informations
 
+- [Stratégies de conservation dans Microsoft Teams](/microsoftteams/retention-policies#using-powershell )
 - [Vue d’ensemble des étiquettes](labels.md)
 - [Limites de SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limites et spécifications de Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
