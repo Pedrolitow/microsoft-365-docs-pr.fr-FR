@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez les phases principales du déploiement de l’infrastructure de base Microsoft 365 pour entreprise au sein de votre organisation, également appelé déploiement de base.
-ms.openlocfilehash: 966fa8ad26d54328bf4d2e95c95b497e5d283e52
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951957"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153843"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infrastructure de base de Microsoft 365 pour entreprise
 
@@ -91,7 +91,7 @@ Par exemple, vous créez les paramètres pour :
 | Identité | Synchronisation des comptes et des groupes pour les stratégies d’accès conditionnel basé sur l’identité. |
 | Windows 10 Entreprise | Groupes de mise à niveau automatique pour les ordinateurs exécutant Windows 7 ou Windows 8.1 vers Windows 10 Entreprise en place. |
 | Office 365 ProPlus | Groupes pour déployer automatiquement Office 365 ProPlus pour les utilisateurs avec Office 2010, Office 2013 ou Office 2016. |
-| Gestion des appareils mobiles | Groupes pour l’inscription des appareils et stratégies d’accès conditionnel basé sur l’appareil. |
+| Gestion des appareils mobiles | Groupes pour l’inscription des appareils et des stratégies d’accès conditionnel basé sur l’appareil. |
 | Protection des informations | Groupes pour les étiquettes de confidentialité d’Office 365. |
 
 Lorsque vous êtes prêt à déployer des éléments de cette infrastructure à des utilisateurs, vous :
